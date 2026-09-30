@@ -6,9 +6,11 @@ range simultaneously. The honour-fill step is retried first; if it keeps
 missing, the generator draws a new shape and tries again. sp uses the 5/3/1
 shortness scale (renonce/singleton/dobbelt).
 
-export_pool() writes the trainer's hand pool: hands for the auctions
-1NT – 2♣/2♦/2♥ – pas – 2NT – pas – ?, each with its correct rebid worked out
-from the Jyderup Bridgeklub multiforsvar card.
+export_pool() writes the trainer's hand pool: hands where you are either the
+overcaller (1NT – ?, or the rebid after partner's 2NT ask) or the advancer
+(1NT – X/2♣/2♦/2♥ – pas – ?), each with its correct call worked out from the
+Jyderup Bridgeklub multiforsvar card. Thresholds the card leaves open are
+constants at the top of the 'indmelding' section.
 
 Verified runnable in this sandbox — no pip install required.
 """
@@ -196,60 +198,292 @@ def answer_after_2hj(hand, hp):
     return call, (f"{strength(hp)}, og din sidefarve er {SUIT_NAME[minor]}. Efter 2♥ – 2NT: 3♣ = min med klør, "
                   f"3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder.")
 
+# --- Facit: indmelding over 1NT og svar på makkers indmelding ---------------
+# Grænser som dokumentet ikke giver tal for — ret dem her.
+
+DOUBLE_MIN = 15        # D: "mindst samme styrke som sansåbner"; 15–16 dobler kun uden fordelingsmelding
+PREEMPT_HP = (6, 9)    # 3M spær: 7+ major, under indmeldingsstyrke
+GAME_MAJOR_HP = 13     # 4M: 7+ major og 13–16 hp; 7+ major med 10–12 melder 2♦
+ADV_STRONG = 11        # svarer: 11+ hp = udgangsinteresse (2NT spørger, 3mi krav osv.)
+ADV_3NT = {"2kl": 13, "2ru": 14}   # svarer: 3NT for at spille uden majorfit
+ADV_INVITE = 8         # svarer efter 2♦: 2♠ = invit med hjerter, 8–10 hp
+ADV_PREEMPT_MAX = 7    # svarer efter 2♦: 3♥ = spær i makkers farve, 0–7 hp
+NILSLAND_MAX = 7       # svarer efter D (fjenden spiller Nilsland): svage hænder 0–7 hp
+
+def longer(L, a, b):
+    """The longer of two suits; ties go to the higher-ranking one."""
+    return a if L[a] >= L[b] else b
+
+def classify_overcall(hand, hp):
+    """1NT – ? : multiforsvarets indmeldinger (10–16, fordeling kan kompensere)."""
+    L = lengths_of(hand)
+    S, H, D, C = L['S'], L['H'], L['D'], L['C']
+    major, minor = longer(L, 'S', 'H'), longer(L, 'D', 'C')
+    if hp > 16:
+        return "X", f"{hp} hp er over indmeldingsstyrke (10–16). D viser mindst samme styrke som sansåbneren."
+    if PREEMPT_HP[0] <= hp <= PREEMPT_HP[1] and L[major] >= 7:
+        return f"3{SUIT_SYM[major]}", f"{L[major]} {SUIT_NAME[major]} og kun {hp} hp: 3{SUIT_SYM[major]} er spær."
+    if hp < 10:
+        return "Pas", f"{hp} hp er under indmeldingsstyrke (10–16), og hånden har ikke en spærrefarve."
+    if L[major] >= 7 and hp >= GAME_MAJOR_HP:
+        return f"4{SUIT_SYM[major]}", f"{L[major]} {SUIT_NAME[major]} og {hp} hp: 4{SUIT_SYM[major]} for at spille."
+    if L[minor] >= 7 and {14, 13, 12} <= set(hand[minor]):
+        return "3NT", f"Gående {SUIT_NAME[minor]}farve (E K D + {L[minor] - 3}): 3NT for at spille."
+    if S >= 4 and H >= 4 and (max(S, H) >= 5 or min(D, C) <= 1):
+        kind = "5-4 i majorerne" if max(S, H) >= 5 else "marmic med begge majorer"
+        return "2♣", f"{hp} hp og {kind}: 2♣ viser begge majorer, typisk 5-4 eller god marmic."
+    if L[major] >= 6:
+        return "2♦", f"{L[major]} {SUIT_NAME[major]} og {hp} hp: 2♦ viser en énfarvet major."
+    for M in ('S', 'H'):
+        if L[M] == 5 and L[minor] >= 4:
+            return f"2{SUIT_SYM[M]}", (f"5 {SUIT_NAME[M]} og {L[minor]} {SUIT_NAME[minor]}: 2{SUIT_SYM[M]} viser "
+                                       f"{SUIT_NAME[M]} + minor 5-4.")
+    if D >= 4 and C >= 4 and max(D, C) >= 5:
+        return "2NT", f"{D} ruder og {C} klør: 2NT viser begge minorer, 5/4+."
+    if L[minor] >= 6:
+        return f"3{SUIT_SYM[minor]}", f"{L[minor]} {SUIT_NAME[minor]} og {hp} hp: 3{SUIT_SYM[minor]} er naturligt."
+    if hp >= DOUBLE_MIN:
+        return "X", f"{hp} hp uden en fordeling, der passer til en indmelding: D viser mindst samme styrke som sansåbneren."
+    return "Pas", f"{hp} hp, men ingen fordeling, der passer til en indmelding — og for svag til D."
+
+def classify_after_2kl(hand, hp):
+    """1NT – 2♣ – pas – ? : makker har begge majorer."""
+    L = lengths_of(hand)
+    S, H = L['S'], L['H']
+    major, minor = longer(L, 'S', 'H'), longer(L, 'D', 'C')
+    if hp >= ADV_STRONG:
+        if max(S, H) <= 3 and L[minor] >= 5:
+            return f"3{SUIT_SYM[minor]}", f"{hp} hp og {L[minor]} {SUIT_NAME[minor]} uden majorfit: 3{SUIT_SYM[minor]} er naturligt, 5+ farve og krav."
+        if max(S, H) <= 3 and hp >= ADV_3NT["2kl"]:
+            return "3NT", f"{hp} hp uden majorfit: 3NT for at spille."
+        return "2NT", f"{hp} hp giver udgangsinteresse: 2NT spørger om makkers styrke og fordeling."
+    if L[major] >= 5:
+        return f"3{SUIT_SYM[major]}", f"Svag hånd med {L[major]} {SUIT_NAME[major]} — mindst 9 kort sammen: 3{SUIT_SYM[major]} er spær."
+    if S == H:
+        return "2♦", f"Svag hånd med lige mange spar og hjerter ({S}-{H}): 2♦ beder makker vælge farve."
+    return f"2{SUIT_SYM[major]}", f"Svag hånd med flest {SUIT_NAME[major]} ({S} spar, {H} hjerter): 2{SUIT_SYM[major]} for at spille."
+
+def classify_after_2ru(hand, hp):
+    """1NT – 2♦ – pas – ? : makker har en énfarvet major."""
+    L = lengths_of(hand)
+    S, H = L['S'], L['H']
+    major, minor = longer(L, 'S', 'H'), longer(L, 'D', 'C')
+    if hp >= ADV_STRONG:
+        if L[major] >= 6:
+            return f"4{SUIT_SYM[major]}", f"{hp} hp og {L[major]} {SUIT_NAME[major]}: 4{SUIT_SYM[major]} for at spille i egen farve."
+        if L[minor] >= 5:
+            return f"3{SUIT_SYM[minor]}", f"{hp} hp og {L[minor]} {SUIT_NAME[minor]}: 3{SUIT_SYM[minor]} er naturligt, 5+ farve og krav."
+        if hp >= ADV_3NT["2ru"]:
+            return "3NT", f"{hp} hp og ingen lang farve: 3NT for at spille."
+        return "2NT", f"{hp} hp giver udgangsinteresse: 2NT spørger."
+    if hp <= ADV_PREEMPT_MAX and S >= 3 and H >= 3 and max(S, H) >= 4:
+        return "3♥", f"Svag hånd med fit i begge majorer ({S} spar, {H} hjerter): 3♥ er spær i makkers farve."
+    if hp >= ADV_INVITE and H >= 3 and S >= 2:
+        return "2♠", f"{hp} hp med {H} hjerter: 2♠ er invit med hjerter — makker passer, hvis farven er spar."
+    return "2♥", f"Svag hånd ({hp} hp): 2♥ søger makkers farve for at spille."
+
+def classify_after_2hj(hand, hp):
+    """1NT – 2♥ – pas – ? : makker har hjerter + minor 5-4."""
+    L = lengths_of(hand)
+    S, H, D, C = L['S'], L['H'], L['D'], L['C']
+    if hp >= ADV_STRONG:
+        if S >= 5 and H <= 2:
+            return "2♠", f"{hp} hp og {S} spar uden hjertefit: 2♠ er naturligt og krav."
+        if D >= 5 and H <= 2:
+            return "3♦", f"{hp} hp og {D} ruder uden hjertefit: 3♦ er egen minorfarve og krav."
+        return "2NT", f"{hp} hp giver udgangsinteresse: 2NT spørger."
+    if H >= 4:
+        return "3♥", f"Svag hånd med {H} hjerter: 3♥ er spær."
+    if H <= 1 and D >= 3 and C >= 3:
+        return "3♣", f"Svag hånd med kun {H} hjerter, men plads i begge minorer: 3♣ søger makkers minorfarve."
+    return "Pas", f"Svag hånd ({hp} hp) med {H} hjerter: pas og spil 2♥."
+
+def classify_after_double(hand, hp):
+    """1NT – D – pas – ? (fjenden spiller Nilsland): svage hænder."""
+    L = lengths_of(hand)
+    if hp > NILSLAND_MAX:
+        return None
+    long_suits = [s for s in SUITS if L[s] >= 4]
+    if len(long_suits) == 1 and L[long_suits[0]] >= 5:
+        s = long_suits[0]
+        return f"2{SUIT_SYM[s]}", f"Svag énfarvet hånd med {L[s]} {SUIT_NAME[s]}: 1NT – D – pas – 2{SUIT_SYM[s]}."
+    if len(long_suits) == 2:
+        a, b = long_suits
+        return "Pas", (f"Svag tofarvet hånd ({SUIT_NAME[a]} og {SUIT_NAME[b]}): pas nu, og efter RD – pas – pas "
+                       f"meldes 2 i den laveste farve.")
+    return None
+
+# --- Situationer ------------------------------------------------------------
+
+BONUS = {
+    "2kl": {"q": "Hvad viser 2♣-indmeldingen?",
+            "correct": "Begge majorer, typisk 5-4 eller god marmic",
+            "options": ["Begge majorer, typisk 5-4 eller god marmic", "Énfarvet major", "Begge minorer, 5/4+"],
+            "why": "2♣ viser begge majorer, typisk 5-4 eller god marmic — 10–16 hp, fordeling kan kompensere."},
+    "2ru": {"q": "Hvad viser 2♦-indmeldingen?",
+            "correct": "Énfarvet major",
+            "options": ["Énfarvet major", "Naturlig ruderfarve", "Begge majorer, typisk 5-4"],
+            "why": "2♦ viser en énfarvet major — 10–16 hp, fordeling kan kompensere."},
+    "2hj": {"q": "Hvad viser 2♥-indmeldingen?",
+            "correct": "Hjerter + minor, 5-4",
+            "options": ["Hjerter + minor, 5-4", "Énfarvet hjerter", "Begge majorer, typisk 5-4"],
+            "why": "2♥ viser hjerter + en minor, 5-4 — 10–16 hp, fordeling kan kompensere."},
+    "indmelding": {"q": "Hvilken styrke viser multiforsvarets indmeldinger (andre end D)?",
+            "correct": "10–16 hp, fordeling kan kompensere",
+            "options": ["10–16 hp, fordeling kan kompensere", "8–12 hp", "Mindst samme styrke som sansåbner"],
+            "why": "Alle meldinger i multiforsvaret viser 10–16 hp (fordeling kan kompensere) — undtagen D, som viser mindst samme styrke som sansåbneren."},
+    "dobling": {"q": "Hvad sker der, når makker dobler 1NT?",
+            "correct": "Der er etableret semikrav, og senere doblinger er straf",
+            "options": ["Der er etableret semikrav, og senere doblinger er straf", "Du skal altid melde en farve", "Doblingen er til udspil"],
+            "why": "Når makker dobler, er der etableret semikrav. I det videre meldeforløb benyttes strafdoblinger."},
+}
+
+PAS = ["Modstander", "Pas"]
 SITUATIONS = {
-    "2kl": {
-        "auction": ["1NT", "2♣", "2NT"],
-        "calls": ["3♣", "3♦", "3♥", "3♠", "3NT", "4♣", "4♦"],
-        "bonus": {"q": "Hvad viste din 2♣-indmelding?",
-                  "correct": "Begge majorer, typisk 5-4 eller god marmic",
-                  "options": ["Begge majorer, typisk 5-4 eller god marmic", "Énfarvet major", "Begge minorer, 5/4+"],
-                  "why": "2♣ viser begge majorer, typisk 5-4 eller god marmic — 10–16 hp, fordeling kan kompensere."},
+    "indmelding": {"auction": [["Modstander", "1NT"]], "allowX": True,
+                   "calls": ["X", "Pas", "2♣", "2♦", "2♥", "2♠", "2NT", "3♣", "3♦", "3♥", "3♠", "3NT", "4♥", "4♠"],
+                   "bonus": BONUS["indmelding"]},
+    "gen_2kl": {"auction": [["Modstander", "1NT"], ["Dig", "2♣"], PAS, ["Makker", "2NT"], PAS],
+                "calls": ["3♣", "3♦", "3♥", "3♠", "3NT", "4♣", "4♦"], "bonus": BONUS["2kl"]},
+    "gen_2ru": {"auction": [["Modstander", "1NT"], ["Dig", "2♦"], PAS, ["Makker", "2NT"], PAS],
+                "calls": ["3♣", "3♦", "3♥", "3♠"], "bonus": BONUS["2ru"]},
+    "gen_2hj": {"auction": [["Modstander", "1NT"], ["Dig", "2♥"], PAS, ["Makker", "2NT"], PAS],
+                "calls": ["3♣", "3♦", "3♥", "3♠"], "bonus": BONUS["2hj"]},
+    "svar_2kl": {"auction": [["Modstander", "1NT"], ["Makker", "2♣"], PAS],
+                 "calls": ["2♦", "2♥", "2♠", "2NT", "3♣", "3♦", "3♥", "3♠", "3NT"], "bonus": BONUS["2kl"]},
+    "svar_2ru": {"auction": [["Modstander", "1NT"], ["Makker", "2♦"], PAS],
+                 "calls": ["2♥", "2♠", "2NT", "3♣", "3♦", "3♥", "3NT", "4♥", "4♠"], "bonus": BONUS["2ru"]},
+    "svar_2hj": {"auction": [["Modstander", "1NT"], ["Makker", "2♥"], PAS],
+                 "calls": ["Pas", "2♠", "2NT", "3♣", "3♦", "3♥"], "bonus": BONUS["2hj"]},
+    "svar_dobling": {"auction": [["Modstander", "1NT"], ["Makker", "X"], PAS],
+                     "calls": ["Pas", "2♣", "2♦", "2♥", "2♠"], "bonus": BONUS["dobling"]},
+}
+
+CLASSIFIERS = {
+    "indmelding": classify_overcall,
+    "gen_2kl": answer_after_2kl, "gen_2ru": answer_after_2ru, "gen_2hj": answer_after_2hj,
+    "svar_2kl": classify_after_2kl, "svar_2ru": classify_after_2ru,
+    "svar_2hj": classify_after_2hj, "svar_dobling": classify_after_double,
+}
+
+# --- Samplers: rough shapes per target call; the classifier has the last word -
+
+def deal_random(hp_range):
+    """A plain random 13-card hand within hp_range."""
+    for _ in range(2000):
+        cards = random.sample([(s, r) for s in SUITS for r in RANKS], 13)
+        hand = {s: sorted((r for x, r in cards if x == s), reverse=True) for s in SUITS}
+        hp = hp_of([r for _, r in cards])
+        if hp_range[0] <= hp <= hp_range[1]:
+            return hand, hp, sp_of(lengths_of(hand), hp)
+    return None
+
+def template(fixed, hp_range):
+    """Deal suit lengths within fixed bounds, then fill honours to hp_range."""
+    for _ in range(50):
+        lengths = deal_suit_lengths(fixed)
+        if lengths:
+            return fill_hand(lengths, hp_range, (0, 40))
+    return None
+
+def rnd(hp_range):
+    return lambda: deal_random(hp_range)
+
+def tpl(hp_range, **bounds):
+    fixed = {s: bounds.get(s, (0, 3)) for s in SUITS}
+    return lambda: template(fixed, hp_range)
+
+def either(*samplers):
+    return lambda: random.choice(samplers)()
+
+def two_suiter(hp_range):
+    def sample():
+        a, b = random.sample(SUITS, 2)
+        return template({s: (4, 5) if s in (a, b) else (0, 3) for s in SUITS}, hp_range)
+    return sample
+
+SAMPLERS = {
+    "indmelding": {
+        "X": rnd((15, 19)), "Pas": rnd((4, 14)),
+        "2♣": either(gen_5_4_majors, gen_marmic_majors), "2♦": gen_one_suited_major,
+        "2♥": either(tpl((10, 16), H=(5, 5), D=(4, 5)), tpl((10, 16), H=(5, 5), C=(4, 5))),
+        "2♠": either(tpl((10, 16), S=(5, 5), D=(4, 5)), tpl((10, 16), S=(5, 5), C=(4, 5))),
+        "2NT": tpl((10, 16), D=(4, 6), C=(4, 6)),
+        "3♣": tpl((10, 16), C=(6, 7)), "3♦": tpl((10, 16), D=(6, 7)),
+        "3♥": tpl(PREEMPT_HP, H=(7, 8)), "3♠": tpl(PREEMPT_HP, S=(7, 8)),
+        "3NT": either(tpl((10, 16), C=(7, 8)), tpl((10, 16), D=(7, 8))),
+        "4♥": tpl((GAME_MAJOR_HP, 16), H=(7, 8)), "4♠": tpl((GAME_MAJOR_HP, 16), S=(7, 8)),
     },
-    "2ru": {
-        "auction": ["1NT", "2♦", "2NT"],
-        "calls": ["3♣", "3♦", "3♥", "3♠"],
-        "bonus": {"q": "Hvad viste din 2♦-indmelding?",
-                  "correct": "Énfarvet major",
-                  "options": ["Énfarvet major", "Naturlig ruderfarve", "Begge majorer, typisk 5-4"],
-                  "why": "2♦ viser en énfarvet major — 10–16 hp, fordeling kan kompensere."},
+    "svar_2kl": {
+        "2♦": rnd((0, 10)), "2♥": rnd((0, 10)), "2♠": rnd((0, 10)), "2NT": rnd((11, 16)),
+        "3♣": tpl((11, 16), C=(5, 6), D=(0, 4)), "3♦": tpl((11, 16), D=(5, 6), C=(0, 4)),
+        "3♥": tpl((0, 10), H=(5, 6), D=(0, 4), C=(0, 4)), "3♠": tpl((0, 10), S=(5, 6), D=(0, 4), C=(0, 4)),
+        "3NT": tpl((13, 17), S=(2, 3), H=(2, 3), D=(2, 4), C=(2, 4)),
     },
-    "2hj": {
-        "auction": ["1NT", "2♥", "2NT"],
-        "calls": ["3♣", "3♦", "3♥", "3♠"],
-        "bonus": {"q": "Hvad viste din 2♥-indmelding?",
-                  "correct": "Hjerter + minor, 5-4",
-                  "options": ["Hjerter + minor, 5-4", "Énfarvet hjerter", "Begge majorer, typisk 5-4"],
-                  "why": "2♥ viser hjerter + en minor, 5-4 — 10–16 hp, fordeling kan kompensere."},
+    "svar_2ru": {
+        "2♥": rnd((0, 10)), "2♠": rnd((ADV_INVITE, 10)), "2NT": rnd((11, 13)),
+        "3♣": tpl((11, 16), C=(5, 6), S=(0, 4), H=(0, 4), D=(0, 4)),
+        "3♦": tpl((11, 16), D=(5, 6), S=(0, 4), H=(0, 4), C=(0, 4)),
+        "3♥": tpl((0, ADV_PREEMPT_MAX), S=(3, 4), H=(3, 4), D=(0, 5), C=(0, 5)),
+        "3NT": tpl((14, 17), S=(2, 4), H=(2, 4), D=(2, 4), C=(2, 4)),
+        "4♥": tpl((11, 16), H=(6, 7)), "4♠": tpl((11, 16), S=(6, 7)),
+    },
+    "svar_2hj": {
+        "2♠": tpl((11, 16), S=(5, 6), H=(0, 2), D=(0, 4), C=(0, 4)), "2NT": rnd((11, 15)),
+        "3♣": tpl((0, 10), H=(0, 1), D=(3, 6), C=(3, 6), S=(0, 5)),
+        "3♦": tpl((11, 16), D=(5, 6), H=(0, 2), S=(0, 4), C=(0, 4)),
+        "3♥": tpl((0, 10), H=(4, 5), S=(0, 5), D=(0, 5), C=(0, 5)), "Pas": rnd((0, 10)),
+    },
+    "svar_dobling": {
+        "2♣": tpl((0, NILSLAND_MAX), C=(5, 6)), "2♦": tpl((0, NILSLAND_MAX), D=(5, 6)),
+        "2♥": tpl((0, NILSLAND_MAX), H=(5, 6)), "2♠": tpl((0, NILSLAND_MAX), S=(5, 6)),
+        "Pas": two_suiter((0, NILSLAND_MAX)),
     },
 }
 
-# situation, generator, facit, antal hænder (halvdelen minimum, halvdelen maximum)
-POOL_PLAN = [
-    ("2kl", gen_5_4_majors, answer_after_2kl, 60),
-    ("2kl", gen_marmic_majors, answer_after_2kl, 40),
-    ("2ru", gen_one_suited_major, answer_after_2ru, 50),
-    ("2hj", gen_hearts_minor, answer_after_2hj, 50),
+# Genmelding efter 2NT: situation, generator, antal (halvdelen minimum, halvdelen maximum)
+REBID_PLAN = [
+    ("gen_2kl", gen_5_4_majors, 8), ("gen_2kl", gen_marmic_majors, 6),
+    ("gen_2ru", gen_one_suited_major, 8), ("gen_2hj", gen_hearts_minor, 8),
 ]
+# Hænder pr. meldning i de øvrige situationer (indmelder 70 + 30 genmeldinger, svarer 100)
+PER_CALL = {"indmelding": 5, "svar_2kl": 4, "svar_2ru": 4, "svar_2hj": 3, "svar_dobling": 2}
 
 def export_pool(path):
     import json
     hands, seen = [], set()
-    for situation, gen, answer, count in POOL_PLAN:
+
+    def add(situation, r, target=None):
+        if not r:
+            return False
+        hand, hp, sp = r
+        key = tuple(tuple(hand[s]) for s in SUITS)
+        if key in seen:
+            return False
+        res = CLASSIFIERS[situation](hand, hp)
+        if not res or (target and res[0] != target):
+            return False
+        seen.add(key)
+        hands.append({"situation": situation, "hand": {s: hand[s] for s in SUITS},
+                      "hp": hp, "sp": sp, "correct": res[0], "why": res[1]})
+        return True
+
+    for situation, n in PER_CALL.items():
+        for call, sampler in SAMPLERS[situation].items():
+            made = tries = 0
+            while made < n and tries < 20000:
+                tries += 1
+                made += add(situation, sampler(), call)
+            if made < n:
+                print(f"Advarsel: kun {made}/{n} hænder til {situation} {call}")
+
+    for situation, gen, count in REBID_PLAN:
         for hp_range, n in ((MIN_RANGE, count // 2), (MAX_RANGE, count - count // 2)):
-            made, tries = 0, 0
+            made = tries = 0
             while made < n and tries < n * 30:
                 tries += 1
-                r = gen(hp_range=hp_range)
-                if not r: continue
-                hand, hp, sp = r
-                key = tuple(tuple(hand[s]) for s in SUITS)
-                if key in seen: continue
-                seen.add(key)
-                correct, why = answer(hand, hp)
-                hands.append({"situation": situation,
-                              "hand": {s: hand[s] for s in SUITS},
-                              "hp": hp, "sp": sp, "correct": correct, "why": why})
-                made += 1
+                made += add(situation, gen(hp_range=hp_range))
+
     with open(path, 'w', encoding='utf-8') as f:
         json.dump({"situations": SITUATIONS, "hands": hands}, f, ensure_ascii=False, indent=1)
     counts = {}
@@ -258,24 +492,20 @@ def export_pool(path):
     return counts
 
 def main():
-    samples = [
-        ("1NT – 2♣ – 2NT: 5-4 i majorerne", gen_5_4_majors, answer_after_2kl),
-        ("1NT – 2♣ – 2NT: marmic med begge majorer", gen_marmic_majors, answer_after_2kl),
-        ("1NT – 2♦ – 2NT: énfarvet major", gen_one_suited_major, answer_after_2ru),
-        ("1NT – 2♥ – 2NT: hjerter + minor", gen_hearts_minor, answer_after_2hj),
-    ]
-    for title, gen, answer in samples:
-        print(f"=== {title} ===")
-        for _ in range(4):
-            r = gen()
+    for situation in ("indmelding", "svar_2kl", "svar_2ru", "svar_2hj", "svar_dobling"):
+        print(f"=== {situation} ===")
+        for call, sampler in list(SAMPLERS[situation].items())[:4]:
+            r = sampler()
             if r:
                 hand, hp, sp = r
-                print(f"{fmt(hand)}   [{hp} hp / {sp} sp]  → {answer(hand, hp)[0]}")
+                res = CLASSIFIERS[situation](hand, hp)
+                print(f"{fmt(hand)}   [{hp} hp]  → {res[0] if res else '—'}")
         print()
 
     print("=== Eksport til JSON-pulje ===")
     path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'hand_pool_sample.json')
-    print(export_pool(path))
+    counts = export_pool(path)
+    print(counts, "i alt", sum(counts.values()))
 
 if __name__ == '__main__':
     main()

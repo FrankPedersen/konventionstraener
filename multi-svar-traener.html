@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Svar på 2NT — Multitræner</title>
+<title>Multiforsvar — Træner</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -189,10 +189,10 @@
 <body>
 <div class="wrap">
 
-  <div class="brand"><span class="name">Bridgesystem</span><span class="part">Multiforsvar · genmelding efter makkers 2NT</span></div>
+  <div class="brand"><span class="name">Bridgesystem</span><span class="part">Multiforsvar mod 1NT</span></div>
 
-  <h1>Hvad svarer du?</h1>
-  <p class="sub">Du har meldt ind over modstanderens 1NT, og makker spørger med 2NT om styrke og fordeling. Minimum er 10–13 hp, maximum 14–16 hp. Tryk på pæren for et hint, hvis du er i tvivl.</p>
+  <h1>Hvad melder du?</h1>
+  <p class="sub">Modstanderen åbner 1NT. Nogle gange er det dig, der melder ind, andre gange svarer du på makkers indmelding — se meldeforløbet. Indmeldinger viser 10–16 hp (fordeling kan kompensere). Tryk på pæren for et hint, hvis du er i tvivl.</p>
 
   <div class="progress" id="progress"></div>
 
@@ -253,7 +253,8 @@ function buildQuestion(h, sit){
   const others = shuffle(sit.calls.filter(c => c !== h.correct)).slice(0, 3);
   return {
     auction: sit.auction,
-    lowest: callRank(sit.auction[sit.auction.length - 1]) + 1,
+    lowest: Math.max(...sit.auction.map(([, call]) => callRank(call))) + 1,
+    allowX: !!sit.allowX,
     hand: POOL_SUITS.map(([k, sym]) => [sym, h.hand[k].map(r => RANK_NAMES[r] || r).join(' ') || '—']),
     hp: h.hp, sp: h.sp,
     correct: h.correct,
@@ -296,9 +297,8 @@ function renderProgress(){
 }
 
 function renderAuction(q){
-  const who = ['Modstander', 'Dig', 'Makker'];
-  const slots = q.auction.map((call, i) =>
-    `<div class="slot"><span class="who">${who[i]}</span><div class="bidcard${i === 0 ? ' them' : ''}">${fmtCall(call)}</div></div>`);
+  const slots = q.auction.map(([who, call]) =>
+    `<div class="slot"><span class="who">${who}</span><div class="bidcard${who === 'Modstander' ? ' them' : ''}">${fmtCall(call)}</div></div>`);
   slots.push(`<div class="slot"><span class="who">Dig</span><div class="bidcard" style="opacity:.35;">?</div></div>`);
   auctionEl.innerHTML = slots.join('<span class="arrow">→</span>');
 }
@@ -331,8 +331,9 @@ function render(){
     const btn = document.createElement('button');
     btn.className = 'cell';
     btn.textContent = call;
-    if (call !== 'Pas'){ btn.disabled = true; }
-    else btn.addEventListener('click', () => choose(call, btn));
+    const legal = call === 'Pas' || (call === 'X' && q.allowX);
+    btn.disabled = !legal;
+    if (legal) btn.addEventListener('click', () => choose(call, btn));
     specialEl.appendChild(btn);
   });
 
