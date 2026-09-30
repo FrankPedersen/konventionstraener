@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Træning — Konventionstræner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;1,400&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&text=%E2%99%A0%E2%99%A5%E2%99%A6%E2%99%A3&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  .trainer{ max-width:40rem; }
+  .hero{ padding:1.6rem 0 1rem; margin-bottom:1.2rem; }
+  .hero h1{ font-size:clamp(1.8rem,4.6vw,2.6rem); }
+  .hero .deck{ font-size:1.05rem; }
+
+  .progress{ display:flex; gap:6px; margin-bottom:1rem; }
+  .progress i{ flex:1; height:4px; border-radius:2px; background:var(--line-strong); position:relative; overflow:hidden; }
+  .progress i.done::after, .progress i.current::after{ content:""; position:absolute; inset:0; background:var(--felt); }
+  .progress i.wrong::after{ background:var(--bad); }
+
+  .board{ border:1px solid var(--line-strong); border-radius:.6rem; padding:1.1rem 1rem 1rem; background:var(--panel); }
+  .rolechip{ display:inline-block; font-family:var(--sans); font-weight:800; font-size:.8rem; letter-spacing:.06em; text-transform:uppercase;
+             color:#fff; background:var(--felt-deep); padding:.15rem .6rem; border-radius:999px; margin-bottom:.8rem; }
+
+  .auction{ display:flex; flex-wrap:wrap; gap:.6rem .7rem; align-items:flex-end; margin-bottom:1rem; }
+  .auction .slot{ display:flex; flex-direction:column; align-items:center; gap:.25rem; }
+  .auction .who{ font-family:var(--sans); font-size:.72rem; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); }
+  .auction .bc{ font-size:1.05rem; min-width:2.6em; padding:.35em .4em; }
+  .auction .bc.them{ opacity:.7; }
+  .auction .bc.ask{ opacity:.4; }
+
+  .toprow{ display:flex; gap:.9rem; flex-wrap:wrap; align-items:flex-start; margin-bottom:1rem; }
+  .hand{ flex:1 1 11rem; max-width:15rem; background:var(--card); border:1px solid var(--card-edge); border-radius:.5rem; box-shadow:var(--shadow);
+         padding:.7rem .9rem; font-family:var(--sans); font-size:1.12rem; font-weight:700; line-height:1.45; }
+  .hand .row{ display:flex; gap:.6rem; }
+  .hand .s{ width:1.1em; text-align:center; font-family:var(--sym); font-weight:400; }
+
+  .bonus{ flex:1 1 13rem; border-left:3px solid var(--gold); background:var(--paper); border-radius:0 .45rem .45rem 0; padding:.7rem .9rem; }
+  .bonus .label{ font-family:var(--sans); font-weight:800; font-size:.8rem; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); margin:0 0 .3rem; }
+  .bonus .bq{ font-size:1rem; margin:0 0 .5rem; line-height:1.35; }
+  .bonus .opts{ display:grid; gap:.4rem; }
+  .bopt{ font-family:var(--sans); font-size:.95rem; text-align:left; background:var(--card); color:var(--ink); border:1px solid var(--card-edge);
+         border-radius:.35rem; padding:.45rem .6rem; cursor:pointer; }
+  .bopt:hover:not(:disabled){ border-color:var(--felt); }
+  .bopt:disabled{ cursor:default; }
+  .bopt.correct, .cell.correct{ background:var(--good-bg); border-color:var(--good); color:var(--good-ink); }
+  .bopt.incorrect, .cell.incorrect{ background:var(--bad-bg); border-color:var(--bad); color:var(--bad-ink); }
+  .bfeedback{ margin-top:.5rem; font-size:.95rem; line-height:1.45; color:var(--muted); display:none; }
+  .bfeedback.show{ display:block; }
+
+  .qrow{ display:flex; align-items:center; justify-content:space-between; gap:.6rem; margin:0 0 .5rem; }
+  .qtext{ font-family:var(--sans); font-weight:700; font-size:1.05rem; margin:0; }
+  .hint-btn{ background:var(--paper); border:1px solid var(--line-strong); color:var(--gold); border-radius:999px; width:2.2rem; height:2.2rem;
+             font-size:1rem; cursor:pointer; flex:none; }
+  .hint-btn:hover{ border-color:var(--gold); }
+  .hint-btn[aria-pressed="true"]{ background:var(--gold); color:#23180a; }
+  .hintinfo{ font-family:var(--sans); font-size:.95rem; color:var(--ink); background:var(--paper); border-left:3px solid var(--gold);
+             padding:.4rem .7rem; margin:0 0 .6rem; display:none; }
+  .hintinfo.show{ display:block; }
+
+  .box{ display:grid; grid-template-columns:repeat(5,1fr); gap:4px; margin-bottom:4px; }
+  .specialrow{ display:grid; grid-template-columns:repeat(3,1fr); gap:4px; }
+  .cell{ font-family:var(--sans); font-weight:800; font-size:.95rem; background:var(--card); color:var(--ink);
+         border:1px solid var(--card-edge); border-radius:.3rem; padding:.35rem .1rem; cursor:pointer; }
+  .cell:hover:not(:disabled){ border-color:var(--felt); box-shadow:var(--shadow); }
+  .cell:disabled{ opacity:.35; cursor:default; }
+  .cell.correct, .cell.incorrect{ opacity:1; }
+  .cell.hinted:not(:disabled){ outline:2px solid var(--gold); outline-offset:1px; }
+  .cell.pas{ background:var(--pas); color:#fff; border-color:transparent; }
+  .cell.dbl{ background:var(--dbl); color:#fff; border-color:transparent; }
+  .cell.pas.correct, .cell.dbl.correct{ outline:3px solid var(--good); outline-offset:1px; }
+  .cell.pas.incorrect, .cell.dbl.incorrect{ outline:3px solid var(--bad); outline-offset:1px; }
+
+  .feedback{ margin-top:.9rem; padding:.75rem .9rem; border-radius:.45rem; font-size:1.02rem; line-height:1.5; display:none; }
+  .feedback.show{ display:block; }
+  .feedback.ok{ background:var(--good-bg); color:var(--good-ink); }
+  .feedback.no{ background:var(--bad-bg); color:var(--bad-ink); }
+  .feedback b{ display:block; font-family:var(--sans); margin-bottom:.2rem; }
+
+  .next{ margin-top:.9rem; display:none; width:100%; background:var(--felt-deep); color:#fff; border:none; border-radius:.45rem; padding:.8rem;
+         font-family:var(--sans); font-weight:800; font-size:1.02rem; cursor:pointer; }
+  .next:hover{ filter:brightness(1.1); }
+  .next.show{ display:block; }
+
+  .done{ text-align:center; padding:.6rem 0 .2rem; }
+  .done .score{ font-family:var(--serif); font-weight:800; font-size:3rem; color:var(--felt); margin:.2rem 0; }
+  .done .actions{ display:flex; gap:.6rem; justify-content:center; flex-wrap:wrap; margin-top:1rem; }
+  .btn{ font-family:var(--sans); font-weight:800; font-size:1rem; border-radius:.45rem; padding:.65rem 1.1rem; cursor:pointer; text-decoration:none;
+        border:1px solid var(--line-strong); background:var(--paper); color:var(--ink); }
+  .btn.primary{ background:var(--felt-deep); color:#fff; border-color:transparent; }
+  .source{ margin-top:1.2rem; }
+</style>
+</head>
+<body>
+<header class="site-head"><div class="in">
+  <a class="brand" href="./">Konventionstræner</a>
+  <nav><a href="./#traen" aria-current="page">Træn</a><a href="viden/">Viden</a></nav>
+</div></header>
+
+<div class="wrap trainer">
+  <section class="hero">
+    <p class="eyebrow" id="group"></p>
+    <h1 id="title">Træning</h1>
+    <p class="deck" id="desc"></p>
+  </section>
+
+  <div class="progress" id="progress"></div>
+
+  <div class="board" id="board">
+    <span class="rolechip" id="role"></span>
+    <div class="auction" id="auction"></div>
+    <div class="toprow">
+      <div class="hand" id="hand"></div>
+      <div class="bonus">
+        <p class="label">Bonusspørgsmål</p>
+        <p class="bq" id="bonusQ"></p>
+        <div class="opts" id="bonusOpts"></div>
+        <div class="bfeedback" id="bonusFeedback"></div>
+      </div>
+    </div>
+    <div class="qrow">
+      <p class="qtext">Hvad melder du?</p>
+      <button class="hint-btn" id="hintBtn" title="Vis fire mulige meldinger" aria-pressed="false">💡</button>
+    </div>
+    <div class="hintinfo" id="hintInfo"></div>
+    <div class="box" id="box"></div>
+    <div class="specialrow" id="special"></div>
+    <div class="feedback" id="feedback"></div>
+    <button class="next" id="nextBtn">Næste hånd →</button>
+  </div>
+
+  <p class="small source" id="source"></p>
+</div>
+
+<script>
+const STRAINS = ['♣','♦','♥','♠','NT'];
+function suitClass(s){ return (s === '♥' || s === '♦') ? 'r' : 'k'; }
+function rank(level, strainIdx){ return level*5 + strainIdx; }
+function parseCall(call){
+  if (call === 'Pas' || call === 'X' || call === 'XX') return null;
+  const level = parseInt(call[0],10);
+  const strain = call.slice(1);
+  return { level, strain, idx: STRAINS.indexOf(strain) };
+}
+function callRank(call){
+  const p = parseCall(call);
+  return p ? rank(p.level, p.idx) : -1;
+}
+
+// Each round draws ROUND_SIZE random hands from pools/<konvention>.json (made by build_pools.py)
+const ROUND_SIZE = 8;
+const POOL_SUITS = [['S','♠'],['H','♥'],['D','♦'],['C','♣']];
+const RANK_NAMES = { 14: 'E', 13: 'K', 12: 'D', 11: 'B' };
+
+function shuffle(arr){
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function buildQuestion(h, sit){
+  const others = shuffle(sit.calls.filter(c => c !== h.correct)).slice(0, 3);
+  return {
+    role: sit.rolle || '',
+    auction: sit.auction,
+    lowest: Math.max(...sit.auction.map(([, call]) => callRank(call))) + 1,
+    allowX: !!sit.allowX,
+    hand: POOL_SUITS.map(([k, sym]) => [sym, h.hand[k].map(r => RANK_NAMES[r] || r).join(' ') || '—']),
+    hp: h.hp, sp: h.sp,
+    correct: h.correct,
+    hints: shuffle([h.correct, ...others]),
+    why: h.why,
+    bonus: { ...sit.bonus, options: shuffle(sit.bonus.options) }
+  };
+}
+
+let Q = [];
+let idx = 0, score = 0, answered = false, results = [], hintOn = false;
+
+const $ = id => document.getElementById(id);
+const progressEl = $('progress'), auctionEl = $('auction'), handEl = $('hand'), boxEl = $('box'),
+      specialEl = $('special'), feedbackEl = $('feedback'), nextBtn = $('nextBtn'), hintBtn = $('hintBtn'),
+      boardEl = $('board');
+
+function fmtCall(call){
+  if (call === 'X' || call === 'XX' || call === 'Pas') return call;
+  const p = parseCall(call);
+  return p.strain === 'NT' ? `${p.level}NT` : `${p.level}<span class="su ${suitClass(p.strain)}">${p.strain}</span>`;
+}
+function callClass(call){ return call === 'Pas' ? ' pas' : (call === 'X' || call === 'XX') ? ' dbl' : ''; }
+
+function renderProgress(){
+  progressEl.innerHTML = '';
+  for (let i = 0; i < Q.length; i++){
+    const el = document.createElement('i');
+    if (i < results.length) el.className = results[i] ? 'done' : 'done wrong';
+    else if (i === idx) el.className = 'current';
+    progressEl.appendChild(el);
+  }
+}
+
+function renderAuction(q){
+  const slots = q.auction.map(([who, call]) =>
+    `<div class="slot"><span class="who">${who}</span><span class="bc${callClass(call)}${who === 'Modstander' && call !== 'Pas' ? ' them' : ''}">${fmtCall(call)}</span></div>`);
+  slots.push(`<div class="slot"><span class="who">Dig</span><span class="bc ask">?</span></div>`);
+  auctionEl.innerHTML = slots.join('');
+}
+
+function render(){
+  answered = false; hintOn = false;
+  hintBtn.setAttribute('aria-pressed','false');
+  const q = Q[idx];
+  renderProgress();
+  $('role').textContent = q.role ? `Du er ${q.role.toLowerCase()}` : '';
+  $('role').style.display = q.role ? '' : 'none';
+  renderAuction(q);
+  handEl.innerHTML = q.hand.map(([s,c]) => `<div class="row"><span class="s ${suitClass(s)}">${s}</span><span>${c}</span></div>`).join('');
+  $('hintInfo').className = 'hintinfo';
+
+  boxEl.innerHTML = '';
+  for (let lvl = 1; lvl <= 7; lvl++){
+    STRAINS.forEach((s, sIdx) => {
+      const call = lvl + s;
+      const btn = document.createElement('button');
+      btn.className = 'cell';
+      btn.dataset.call = call;
+      btn.innerHTML = fmtCall(call);
+      const legal = rank(lvl, sIdx) >= q.lowest;
+      btn.disabled = !legal;
+      if (legal) btn.addEventListener('click', () => choose(call, btn));
+      boxEl.appendChild(btn);
+    });
+  }
+  specialEl.innerHTML = '';
+  ['Pas','X','XX'].forEach(call => {
+    const btn = document.createElement('button');
+    btn.className = 'cell' + callClass(call);
+    btn.dataset.call = call;
+    btn.textContent = call;
+    const legal = call === 'Pas' || (call === 'X' && q.allowX);
+    btn.disabled = !legal;
+    if (legal) btn.addEventListener('click', () => choose(call, btn));
+    specialEl.appendChild(btn);
+  });
+
+  feedbackEl.className = 'feedback';
+  feedbackEl.innerHTML = '';
+  nextBtn.className = 'next';
+
+  $('bonusQ').textContent = q.bonus.q;
+  const bOptsEl = $('bonusOpts');
+  bOptsEl.innerHTML = '';
+  q.bonus.options.forEach(opt => {
+    const b = document.createElement('button');
+    b.className = 'bopt';
+    b.textContent = opt;
+    b.addEventListener('click', () => chooseBonus(opt, b));
+    bOptsEl.appendChild(b);
+  });
+  $('bonusFeedback').className = 'bfeedback';
+  $('bonusFeedback').textContent = '';
+}
+
+function allCells(){ return [...boxEl.children, ...specialEl.children]; }
+
+hintBtn.addEventListener('click', () => {
+  if (answered) return;
+  hintOn = !hintOn;
+  hintBtn.setAttribute('aria-pressed', hintOn ? 'true' : 'false');
+  const q = Q[idx];
+  allCells().forEach(b => b.classList.toggle('hinted', hintOn && q.hints.includes(b.dataset.call)));
+  $('hintInfo').textContent = `Din hånd: ${q.hp} hp / ${q.sp} sp`;
+  $('hintInfo').className = hintOn ? 'hintinfo show' : 'hintinfo';
+});
+
+function choose(call, btn){
+  if (answered) return;
+  answered = true;
+  const q = Q[idx];
+  const isCorrect = call === q.correct;
+  results[idx] = isCorrect;
+  if (isCorrect) score++;
+  allCells().forEach(b => {
+    if (b.dataset.call === q.correct) b.classList.add('correct');
+    b.disabled = true;
+  });
+  if (!isCorrect) btn.classList.add('incorrect');
+  feedbackEl.className = 'feedback show ' + (isCorrect ? 'ok' : 'no');
+  feedbackEl.innerHTML = `<b>${isCorrect ? 'Rigtigt — ' + q.correct : 'Facit: ' + q.correct}</b>${q.why}`;
+  nextBtn.className = 'next show';
+  nextBtn.textContent = idx === Q.length - 1 ? 'Se resultat →' : 'Næste hånd →';
+  renderProgress();
+}
+
+function chooseBonus(opt, btn){
+  const q = Q[idx];
+  const opts = [...$('bonusOpts').children];
+  if (opts[0].disabled) return; // already answered
+  opts.forEach(b => {
+    b.disabled = true;
+    if (b.textContent === q.bonus.correct) b.classList.add('correct');
+  });
+  if (opt !== q.bonus.correct) btn.classList.add('incorrect');
+  $('bonusFeedback').className = 'bfeedback show';
+  $('bonusFeedback').textContent = q.bonus.why;
+}
+
+nextBtn.addEventListener('click', () => {
+  idx++;
+  if (idx >= Q.length){ renderDone(); return; }
+  render();
+});
+
+function renderDone(){
+  boardEl.innerHTML = `
+    <div class="done">
+      <p class="qtext">Du klarede</p>
+      <div class="score">${score} / ${Q.length}</div>
+      <p>${score === Q.length ? 'Hele svarstrukturen sidder.' : 'Gennemgå forklaringerne igen, og prøv en gang til.'}</p>
+      <div class="actions">
+        <button class="btn primary" id="restartBtn">Ny omgang</button>
+        <a class="btn" href="./#traen">Vælg konvention</a>
+      </div>
+    </div>`;
+  $('restartBtn').addEventListener('click', () => location.reload());
+}
+
+function fail(msg){
+  boardEl.innerHTML = `<p class="qtext">${msg}</p><p class="small"><a href="./#traen">← Tilbage til konventionerne</a></p>`;
+}
+
+const id = new URLSearchParams(location.search).get('k') || 'multiforsvar';
+fetch('data/konventioner.json')
+  .then(r => r.json())
+  .then(list => {
+    const k = list.find(x => x.id === id);
+    if (!k || k.status !== 'klar') throw new Error('ukendt');
+    document.title = `${k.titel} — Konventionstræner`;
+    $('group').textContent = k.gruppe;
+    $('title').textContent = k.titel;
+    $('desc').textContent = k.beskrivelse;
+    if (k.viden) $('source').innerHTML = `Aftalerne står i <a href="${k.viden}">vores bridgesystem</a>.`;
+    return fetch(`pools/${k.id}.json`).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+  })
+  .then(pool => {
+    Q = shuffle(pool.hands).slice(0, ROUND_SIZE).map(h => buildQuestion(h, pool.situations[h.situation]));
+    render();
+  })
+  .catch(e => fail(e.message === 'ukendt'
+    ? 'Den konvention findes ikke – eller den er ikke klar endnu.'
+    : 'Kunne ikke hente hånd-puljen. Åbn siden via GitHub Pages eller en lokal webserver — ikke direkte som fil.'));
+</script>
+</body>
+</html>

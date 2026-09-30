@@ -1,67 +1,16 @@
 """
-Minimal constraint-based bridge hand dealer — no external dependencies.
-Builds a hand to match a shape first (incl. "free suit" roles like marmic's
-unspecified short suit), then fills honours to hit an hp AND sp target
-range simultaneously. The honour-fill step is retried first; if it keeps
-missing, the generator draws a new shape and tries again. sp uses the 5/3/1
-shortness scale (renonce/singleton/dobbelt).
+Multiforsvar mod 1NT (Jyderup Bridgeklub / systemkortets afsnit 8.1).
 
-export_pool() writes the trainer's hand pool: hands where you are either the
-overcaller (1NT – ?, or the rebid after partner's 2NT ask) or the advancer
-(1NT – X/2♣/2♦/2♥ – pas – ?), each with its correct call worked out from the
-Jyderup Bridgeklub multiforsvar card. Thresholds the card leaves open are
-constants at the top of the 'indmelding' section.
-
-Verified runnable in this sandbox — no pip install required.
+Puljen dækker hænder, hvor du enten er indmelder (1NT – ?, eller genmeldingen
+efter makkers 2NT-spørgsmål) eller svarer (1NT – X/2♣/2♦/2♥ – pas – ?).
+Facit regnes ud af klassifikatorerne herunder. Grænser, som systemkortet ikke
+angiver, står som konstanter i afsnittet 'indmelding'.
 """
-import os
 import random
 
-SUITS = ['S', 'H', 'D', 'C']  # spar, hjerter, ruder, klør
-RANKS = list(range(2, 15))     # 2..14 (14 = es)
-HP = {14: 4, 13: 3, 12: 2, 11: 1}
-SHORTNESS_SP = {0: 5, 1: 3, 2: 1}  # renonce / singleton / dobbeltton
-
-def hp_of(cards):
-    return sum(HP.get(r, 0) for r in cards)
-
-def sp_of(lengths, hp):
-    short = sum(SHORTNESS_SP.get(l, 0) for l in lengths.values())
-    return hp + short
-
-def deal_suit_lengths(fixed):
-    """fixed: dict suit -> (min,max). Returns a concrete length per suit
-    summing to 13, respecting each suit's bounds."""
-    remaining = 13
-    lengths = {}
-    suits = list(fixed.keys())
-    random.shuffle(suits)
-    for i, s in enumerate(suits):
-        lo, hi = fixed[s]
-        # leave enough room for the remaining suits' minimums
-        rest_min = sum(fixed[x][0] for x in suits[i+1:])
-        hi_eff = min(hi, remaining - rest_min)
-        lo_eff = max(lo, 0)
-        if lo_eff > hi_eff:
-            return None
-        lengths[s] = random.randint(lo_eff, hi_eff)
-        remaining -= lengths[s]
-    if remaining != 0:
-        return None
-    return lengths
-
-def fill_hand(lengths, hp_range, sp_range, max_tries=400):
-    """Given fixed suit lengths, deal random cards per suit until the
-    resulting hp and sp both land in range."""
-    for _ in range(max_tries):
-        hand = {}
-        for s in SUITS:
-            hand[s] = sorted(random.sample(RANKS, lengths[s]), reverse=True)
-        hp = hp_of([r for cs in hand.values() for r in cs])
-        sp = sp_of(lengths, hp)
-        if hp_range[0] <= hp <= hp_range[1] and sp_range[0] <= sp <= sp_range[1]:
-            return hand, hp, sp
-    return None
+from .core import (SUITS, SUIT_SYM, SUIT_NAME, deal_suit_lengths, fill_hand, fmt,
+                   lengths_of, longer, deal_random, template, rnd, tpl, either,
+                   two_suiter, export)
 
 def gen_5_4_majors(hp_range=(10,16), sp_range=(0,37), shape_tries=20):
     """Multi 2♣: begge majorer, 5-4 (den ene vej eller den anden).
@@ -136,27 +85,14 @@ def gen_hearts_minor(hp_range=(10,16), sp_range=(0,37), shape_tries=20):
         if r: return r
     return None
 
-def fmt(hand):
-    names = {14:'E',13:'K',12:'D',11:'B',10:'10'}
-    out = []
-    for s in SUITS:
-        cards = hand[s]
-        out.append(''.join(names.get(r, str(r)) for r in cards) or '—')
-    return ' / '.join(f"{s}:{c}" for s, c in zip(['♠','♥','♦','♣'], out))
-
 # --- Facit: genmelding efter makkers 2NT-spørgsmål ------------------------
 
-SUIT_SYM = {'S': '♠', 'H': '♥', 'D': '♦', 'C': '♣'}
-SUIT_NAME = {'S': 'spar', 'H': 'hjerter', 'D': 'ruder', 'C': 'klør'}
 MIN_RANGE, MAX_RANGE = (10, 13), (14, 16)
 
 def strength(hp):
     if hp >= MAX_RANGE[0]:
         return f"{hp} hp er maximum (14–16)"
     return f"{hp} hp er minimum (10–13)"
-
-def lengths_of(hand):
-    return {s: len(hand[s]) for s in SUITS}
 
 def answer_after_2kl(hand, hp):
     """2kl – 2nt: 3kl min 5-4/4-5, 3ru min 4-4, 3hj max 4-5, 3sp max 5-4,
@@ -209,10 +145,6 @@ ADV_3NT = {"2kl": 13, "2ru": 14}   # svarer: 3NT for at spille uden majorfit
 ADV_INVITE = 8         # svarer efter 2♦: 2♠ = invit med hjerter, 8–10 hp
 ADV_PREEMPT_MAX = 7    # svarer efter 2♦: 3♥ = spær i makkers farve, 0–7 hp
 NILSLAND_MAX = 7       # svarer efter D (fjenden spiller Nilsland): svage hænder 0–7 hp
-
-def longer(L, a, b):
-    """The longer of two suits; ties go to the higher-ranking one."""
-    return a if L[a] >= L[b] else b
 
 def classify_overcall(hand, hp):
     """1NT – ? : multiforsvarets indmeldinger (10–16, fordeling kan kompensere)."""
@@ -340,22 +272,22 @@ BONUS = {
 
 PAS = ["Modstander", "Pas"]
 SITUATIONS = {
-    "indmelding": {"auction": [["Modstander", "1NT"]], "allowX": True,
+    "indmelding": {"rolle": "Indmelder", "auction": [["Modstander", "1NT"]], "allowX": True,
                    "calls": ["X", "Pas", "2♣", "2♦", "2♥", "2♠", "2NT", "3♣", "3♦", "3♥", "3♠", "3NT", "4♥", "4♠"],
                    "bonus": BONUS["indmelding"]},
-    "gen_2kl": {"auction": [["Modstander", "1NT"], ["Dig", "2♣"], PAS, ["Makker", "2NT"], PAS],
+    "gen_2kl": {"rolle": "Indmelder", "auction": [["Modstander", "1NT"], ["Dig", "2♣"], PAS, ["Makker", "2NT"], PAS],
                 "calls": ["3♣", "3♦", "3♥", "3♠", "3NT", "4♣", "4♦"], "bonus": BONUS["2kl"]},
-    "gen_2ru": {"auction": [["Modstander", "1NT"], ["Dig", "2♦"], PAS, ["Makker", "2NT"], PAS],
+    "gen_2ru": {"rolle": "Indmelder", "auction": [["Modstander", "1NT"], ["Dig", "2♦"], PAS, ["Makker", "2NT"], PAS],
                 "calls": ["3♣", "3♦", "3♥", "3♠"], "bonus": BONUS["2ru"]},
-    "gen_2hj": {"auction": [["Modstander", "1NT"], ["Dig", "2♥"], PAS, ["Makker", "2NT"], PAS],
+    "gen_2hj": {"rolle": "Indmelder", "auction": [["Modstander", "1NT"], ["Dig", "2♥"], PAS, ["Makker", "2NT"], PAS],
                 "calls": ["3♣", "3♦", "3♥", "3♠"], "bonus": BONUS["2hj"]},
-    "svar_2kl": {"auction": [["Modstander", "1NT"], ["Makker", "2♣"], PAS],
+    "svar_2kl": {"rolle": "Svarer", "auction": [["Modstander", "1NT"], ["Makker", "2♣"], PAS],
                  "calls": ["2♦", "2♥", "2♠", "2NT", "3♣", "3♦", "3♥", "3♠", "3NT"], "bonus": BONUS["2kl"]},
-    "svar_2ru": {"auction": [["Modstander", "1NT"], ["Makker", "2♦"], PAS],
+    "svar_2ru": {"rolle": "Svarer", "auction": [["Modstander", "1NT"], ["Makker", "2♦"], PAS],
                  "calls": ["2♥", "2♠", "2NT", "3♣", "3♦", "3♥", "3NT", "4♥", "4♠"], "bonus": BONUS["2ru"]},
-    "svar_2hj": {"auction": [["Modstander", "1NT"], ["Makker", "2♥"], PAS],
+    "svar_2hj": {"rolle": "Svarer", "auction": [["Modstander", "1NT"], ["Makker", "2♥"], PAS],
                  "calls": ["Pas", "2♠", "2NT", "3♣", "3♦", "3♥"], "bonus": BONUS["2hj"]},
-    "svar_dobling": {"auction": [["Modstander", "1NT"], ["Makker", "X"], PAS],
+    "svar_dobling": {"rolle": "Svarer", "auction": [["Modstander", "1NT"], ["Makker", "X"], PAS],
                      "calls": ["Pas", "2♣", "2♦", "2♥", "2♠"], "bonus": BONUS["dobling"]},
 }
 
@@ -365,42 +297,6 @@ CLASSIFIERS = {
     "svar_2kl": classify_after_2kl, "svar_2ru": classify_after_2ru,
     "svar_2hj": classify_after_2hj, "svar_dobling": classify_after_double,
 }
-
-# --- Samplers: rough shapes per target call; the classifier has the last word -
-
-def deal_random(hp_range):
-    """A plain random 13-card hand within hp_range."""
-    for _ in range(2000):
-        cards = random.sample([(s, r) for s in SUITS for r in RANKS], 13)
-        hand = {s: sorted((r for x, r in cards if x == s), reverse=True) for s in SUITS}
-        hp = hp_of([r for _, r in cards])
-        if hp_range[0] <= hp <= hp_range[1]:
-            return hand, hp, sp_of(lengths_of(hand), hp)
-    return None
-
-def template(fixed, hp_range):
-    """Deal suit lengths within fixed bounds, then fill honours to hp_range."""
-    for _ in range(50):
-        lengths = deal_suit_lengths(fixed)
-        if lengths:
-            return fill_hand(lengths, hp_range, (0, 40))
-    return None
-
-def rnd(hp_range):
-    return lambda: deal_random(hp_range)
-
-def tpl(hp_range, **bounds):
-    fixed = {s: bounds.get(s, (0, 3)) for s in SUITS}
-    return lambda: template(fixed, hp_range)
-
-def either(*samplers):
-    return lambda: random.choice(samplers)()
-
-def two_suiter(hp_range):
-    def sample():
-        a, b = random.sample(SUITS, 2)
-        return template({s: (4, 5) if s in (a, b) else (0, 3) for s in SUITS}, hp_range)
-    return sample
 
 SAMPLERS = {
     "indmelding": {
@@ -450,7 +346,6 @@ REBID_PLAN = [
 PER_CALL = {"indmelding": 5, "svar_2kl": 4, "svar_2ru": 4, "svar_2hj": 3, "svar_dobling": 2}
 
 def export_pool(path):
-    import json
     hands, seen = [], set()
 
     def add(situation, r, target=None):
@@ -484,28 +379,4 @@ def export_pool(path):
                 tries += 1
                 made += add(situation, gen(hp_range=hp_range))
 
-    with open(path, 'w', encoding='utf-8') as f:
-        json.dump({"situations": SITUATIONS, "hands": hands}, f, ensure_ascii=False, indent=1)
-    counts = {}
-    for h in hands:
-        counts[h["situation"]] = counts.get(h["situation"], 0) + 1
-    return counts
-
-def main():
-    for situation in ("indmelding", "svar_2kl", "svar_2ru", "svar_2hj", "svar_dobling"):
-        print(f"=== {situation} ===")
-        for call, sampler in list(SAMPLERS[situation].items())[:4]:
-            r = sampler()
-            if r:
-                hand, hp, sp = r
-                res = CLASSIFIERS[situation](hand, hp)
-                print(f"{fmt(hand)}   [{hp} hp]  → {res[0] if res else '—'}")
-        print()
-
-    print("=== Eksport til JSON-pulje ===")
-    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'hand_pool_sample.json')
-    counts = export_pool(path)
-    print(counts, "i alt", sum(counts.values()))
-
-if __name__ == '__main__':
-    main()
+    return export(path, SITUATIONS, hands)

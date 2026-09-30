@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Standard 2 over 1 i dansk version</title>
+<meta name="description" content="Meldesystemet 2 over 1 med 10+ hp: honnørpoint for åbner og svarer, i fred og efter indblanding, med eksempler og diagrammer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;1,400&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&text=%E2%99%A0%E2%99%A5%E2%99%A6%E2%99%A3&display=swap">
+<style>
+:root{
+  --paper:#ffffff; --panel:#f3f6f4; --ink:#1c1c1c; --muted:#58615c; --line:#e2e7e3; --line-strong:#cdd6d0;
+  --felt:#1f6b45; --felt-deep:#1b5c3c; --gold:#b8913a;
+  --red:#c00000; --blk:#000000;
+  --k-gron:#e2f1e5; --k-bla:#dde8f6; --k-gul:#fff0bd; --k-brun:#f0e3d2; --k-rosa:#fadbe5; --k-gra:#eceeed;
+  --kb-gron:#5fae78; --kb-bla:#5f8fcf; --kb-gul:#d9ae2c; --kb-brun:#b0875c; --kb-rosa:#d27397; --kb-gra:#9aa39e;
+  --card:#ffffff; --card-edge:#c9d2cc; --shadow:0 1px 0 rgba(0,0,0,.05), 0 8px 16px -10px rgba(0,0,0,.35);
+  --pas:#2e8b57; --dbl:#c62828; --rdbl:#1f5bb5;
+  --vul:#c00000; --nonvul:#d6dfd9;
+  --serif:"Alegreya", Georgia, "Times New Roman", serif;
+  --sans:"Alegreya Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --sym:"Noto Sans Symbols 2", "Segoe UI Symbol", "Apple Symbols", "DejaVu Sans", sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#101512; --panel:#18201b; --ink:#e6ebe7; --muted:#a2aca6; --line:#29322c; --line-strong:#3a453e;
+    --felt:#7fd0a3; --felt-deep:#1d5a3b; --gold:#d1ad5a;
+    --red:#ff7b7b; --blk:#f1f1f1;
+    --k-gron:#1d3326; --k-bla:#1b2a3e; --k-gul:#3a3218; --k-brun:#35291d; --k-rosa:#3b2029; --k-gra:#242a26;
+    --card:#1b221e; --card-edge:#3b463f; --shadow:0 1px 0 rgba(0,0,0,.4), 0 8px 16px -10px rgba(0,0,0,.8);
+    --nonvul:#34403a; --vul:#e05555;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#101512; --panel:#18201b; --ink:#e6ebe7; --muted:#a2aca6; --line:#29322c; --line-strong:#3a453e;
+  --felt:#7fd0a3; --felt-deep:#1d5a3b; --gold:#d1ad5a;
+  --red:#ff7b7b; --blk:#f1f1f1;
+  --k-gron:#1d3326; --k-bla:#1b2a3e; --k-gul:#3a3218; --k-brun:#35291d; --k-rosa:#3b2029; --k-gra:#242a26;
+  --card:#1b221e; --card-edge:#3b463f; --shadow:0 1px 0 rgba(0,0,0,.4), 0 8px 16px -10px rgba(0,0,0,.8);
+  --nonvul:#34403a; --vul:#e05555;
+}
+html{ scroll-padding-top:env(safe-area-inset-top,0px); -webkit-text-size-adjust:100%; }
+*,*::before,*::after{ box-sizing:inherit; }
+body{ margin:0; background:var(--paper); color:var(--ink); font-family:var(--serif);
+  font-size:1.125rem; line-height:1.58; text-rendering:optimizeLegibility; }
+img,svg{ max-width:100%; }
+a{ color:var(--felt); text-decoration-thickness:1px; text-underline-offset:.15em; }
+a:focus-visible, summary:focus-visible{ outline:2px solid var(--felt); outline-offset:3px; border-radius:2px; }
+.su{ font-family:var(--sym); font-style:normal; font-weight:400; font-variant-emoji:text; }
+.su-s,.su-c{ color:var(--blk); } .su-h,.su-d{ color:var(--red); }
+
+/* ---------- page frame ---------- */
+.page{ max-width:78rem; margin:0 auto; padding:0 1.25rem 5rem; display:grid; grid-template-columns:minmax(0,1fr); }
+main{ min-width:0; }
+.prose{ max-width:44rem; }
+@media (min-width:1120px){
+  .page{ grid-template-columns:13rem minmax(0,1fr); column-gap:3.2rem; }
+  .toc{ position:sticky; top:calc(env(safe-area-inset-top,0px) + 1.6rem); align-self:start;
+        max-height:calc(100vh - 3.2rem); overflow:auto; padding-top:2.4rem; }
+}
+
+/* ---------- table of contents ---------- */
+.toc{ font-family:var(--sans); font-size:.95rem; line-height:1.35; }
+.toc .toc-h{ font-weight:800; color:var(--felt); margin:0 0 .5rem; font-size:1rem; }
+.toc ol{ list-style:none; margin:0; padding:0; }
+.toc li{ margin:0; }
+.toc a{ display:grid; grid-template-columns:1.4rem 1fr; padding:.28rem 0; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line); }
+.toc a:hover{ color:var(--felt); }
+.toc a .n{ color:var(--felt); font-weight:800; font-variant-numeric:tabular-nums; }
+@media (max-width:1119px){
+  .toc{ order:2; margin:1.2rem 0 0; padding:1rem 1.1rem; background:var(--panel); border-radius:.5rem; }
+  .toc ol{ columns:2; column-gap:1.6rem; }
+  .toc li{ break-inside:avoid; }
+  main{ order:3; }
+  .hero{ order:1; }
+}
+@media (max-width:520px){ .toc ol{ columns:1; } }
+
+/* ---------- hero ---------- */
+.hero{ display:grid; grid-template-columns:minmax(0,1fr); gap:1.6rem; align-items:end; padding:2.6rem 0 1.4rem; border-bottom:1px solid var(--gold); }
+@media (min-width:860px){ .hero{ grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); } }
+@media (min-width:1120px){ .page > .hero{ grid-column:1 / -1; } }
+h1{ font-family:var(--serif); font-weight:800; font-size:clamp(2.2rem,5.4vw,3.7rem); line-height:1.04; letter-spacing:-.012em; margin:0 0 .9rem; }
+.deck{ font-size:clamp(1.12rem,2vw,1.32rem); line-height:1.5; margin:0; max-width:36rem; color:var(--ink); }
+.tray{ display:flex; gap:clamp(.6rem,2vw,1.1rem); align-items:flex-end; justify-content:flex-start; }
+@media (min-width:860px){ .tray{ justify-content:flex-end; } }
+.tray figure{ margin:0; text-align:center; font-family:var(--sans); font-size:.85rem; color:var(--muted); }
+.tray .bc{ font-size:clamp(1.9rem,5.6vw,3rem); min-width:2.35em; height:3.15em; flex-direction:column; border-radius:.16em; }
+.tray .bc.pas{ font-size:clamp(1.25rem,3.6vw,1.9rem); height:4.97em; min-width:3.7em; }
+.tray figcaption{ margin-top:.45rem; }
+.tray-note{ grid-column:1 / -1; font-family:var(--sans); font-size:.98rem; color:var(--muted); margin:0; }
+
+/* ---------- bidding-box cards ---------- */
+.bc{ display:inline-flex; align-items:center; justify-content:center; gap:.04em; min-width:2.5em; padding:.12em .45em;
+     border:1px solid var(--card-edge); border-radius:.3em; background:var(--card); color:var(--ink);
+     font-family:var(--sans); font-weight:800; line-height:1.1; box-shadow:var(--shadow); white-space:nowrap; }
+.bc.pas{ background:var(--pas); color:#fff; border-color:transparent; font-weight:700; }
+.bc.dbl{ background:var(--dbl); color:#fff; border-color:transparent; }
+.bc.rdbl{ background:var(--rdbl); color:#fff; border-color:transparent; }
+
+/* ---------- headings & text ---------- */
+section.chap{ border-top:1px solid var(--gold); margin-top:3.4rem; padding-top:.3rem; }
+h2{ font-weight:800; font-size:clamp(1.6rem,3.1vw,2.1rem); line-height:1.15; margin:1.1rem 0 .9rem; letter-spacing:-.005em; }
+h2 .no{ color:var(--felt); font-family:var(--sans); font-weight:800; margin-right:.45rem; font-variant-numeric:tabular-nums; }
+h3{ font-weight:700; font-size:1.32rem; line-height:1.25; margin:2.1rem 0 .55rem; }
+h4{ font-family:var(--sans); font-weight:800; font-size:1.02rem; margin:0 0 .35rem; }
+p{ margin:.7rem 0; }
+.lead{ font-size:1.22rem; line-height:1.55; }
+.small{ font-size:.95rem; color:var(--muted); }
+ul.tight, ol.tight{ margin:.5rem 0; padding-left:1.2rem; }
+ul.tight li, ol.tight li{ margin:.25rem 0; }
+strong{ font-weight:700; }
+
+/* ---------- notes ---------- */
+.note{ border-left:3px solid var(--gold); background:var(--panel); padding:.85rem 1.05rem; margin:1.3rem 0; font-size:1.03rem; border-radius:0 .35rem .35rem 0; }
+.note p{ margin:.35rem 0; }
+.note.model{ border-left-color:var(--felt); }
+.note.warn{ border-left-color:var(--red); }
+.note .src{ font-family:var(--sans); font-size:.85rem; color:var(--muted); }
+
+/* ---------- tables ---------- */
+.tw{ overflow-x:auto; -webkit-overflow-scrolling:touch; margin:1rem 0 1.2rem; }
+table.t{ width:100%; border-collapse:collapse; font-family:var(--sans); font-size:1.02rem; line-height:1.38; }
+table.t th{ text-align:left; color:var(--felt); font-weight:800; border-bottom:2px solid var(--felt); padding:.45rem .65rem; white-space:nowrap; }
+table.t td{ padding:.48rem .65rem; border-bottom:1px solid var(--line); vertical-align:top; }
+table.t .num{ text-align:center; white-space:nowrap; font-variant-numeric:tabular-nums; }
+table.t td.bid{ font-weight:700; white-space:nowrap; }
+table.t tr.grp td{ font-weight:800; color:var(--muted); font-size:.92rem; padding-top:1.05rem; border-bottom:1px solid var(--line-strong); }
+.k-gron{ background:var(--k-gron); } .k-bla{ background:var(--k-bla); } .k-gul{ background:var(--k-gul); }
+.k-brun{ background:var(--k-brun); } .k-rosa{ background:var(--k-rosa); } .k-gra{ background:var(--k-gra); }
+table.cmp td:first-child{ font-weight:700; }
+table.cmp td{ width:36%; } table.cmp td:first-child{ width:28%; }
+
+/* ---------- legend ---------- */
+.legend{ display:flex; flex-wrap:wrap; gap:.4rem .5rem; font-family:var(--sans); font-size:.9rem; margin:.8rem 0 0; padding:0; list-style:none; }
+.legend li{ padding:.18rem .55rem; border-radius:.25rem; }
+
+/* ---------- overview matrix ---------- */
+.matrix{ display:grid; grid-template-columns:6.5rem repeat(3,minmax(0,1fr)); font-family:var(--sans); font-size:1rem; line-height:1.42; margin:1.2rem 0; }
+.matrix .mh{ color:var(--felt); font-weight:800; padding:.45rem .7rem; border-bottom:2px solid var(--felt); }
+.matrix .role{ font-weight:800; font-size:1.08rem; padding:.8rem .7rem; border-bottom:1px solid var(--line-strong); }
+.matrix .cell{ padding:.8rem .7rem; border-bottom:1px solid var(--line-strong); }
+.matrix .cell ul{ margin:0; padding-left:1rem; } .matrix .cell li{ margin:.18rem 0; }
+@media (max-width:860px){
+  .matrix{ grid-template-columns:minmax(0,1fr); }
+  .matrix .mh{ display:none; }
+  .matrix .role{ border-bottom:2px solid var(--felt); padding-left:0; margin-top:.8rem; color:var(--felt); }
+  .matrix .cell{ padding-left:0; }
+  .matrix .cell::before{ content:attr(data-col); display:block; font-weight:800; font-size:.9rem; color:var(--muted); margin-bottom:.15rem; }
+}
+
+/* ---------- honour tiles ---------- */
+.tiles{ display:flex; gap:.7rem; flex-wrap:wrap; margin:1rem 0 .4rem; }
+.tile{ width:4.3rem; height:5.6rem; border:1px solid var(--card-edge); border-radius:.45rem; background:var(--card); box-shadow:var(--shadow);
+       display:flex; flex-direction:column; align-items:center; justify-content:center; font-family:var(--sans); }
+.tile .r{ font-size:2rem; font-weight:800; line-height:1; }
+.tile .v{ font-size:.9rem; color:var(--muted); margin-top:.35rem; }
+
+/* ---------- zone bars & ladder ---------- */
+.zlabel{ font-family:var(--sans); font-weight:700; font-size:.95rem; margin:1rem 0 .25rem; }
+.zbar{ display:flex; font-family:var(--sans); font-size:.9rem; line-height:1.25; border-radius:.35rem; overflow:hidden; }
+.zbar > span{ padding:.5rem .55rem; border-right:2px solid var(--paper); min-width:0; }
+.zbar > span:last-child{ border-right:0; }
+.zbar b{ display:block; font-size:1.02rem; font-variant-numeric:tabular-nums; }
+.ladder{ position:relative; margin:1.6rem 0 1rem; padding-top:1.9rem; }
+.ladder .mk{ position:absolute; top:0; transform:translateX(-50%); font-family:var(--sans); font-size:.82rem; font-weight:700; white-space:nowrap; color:var(--felt); }
+.ladder .mk::after{ content:""; position:absolute; left:50%; top:1.25rem; height:.9rem; border-left:2px solid var(--felt); }
+@media (max-width:560px){
+  .zbar.stack{ flex-direction:column; }
+  .zbar.stack > span{ border-right:0; border-bottom:2px solid var(--paper); flex:none !important; }
+  .ladder{ padding-top:0; } .ladder .mk{ display:none; }
+  .ladder-note{ display:block !important; }
+}
+.ladder-note{ display:none; font-family:var(--sans); font-size:.9rem; color:var(--felt); font-weight:700; margin:.4rem 0 0; }
+
+/* ---------- inline hands ---------- */
+.ihand{ font-family:var(--sans); white-space:normal; }
+.ih{ white-space:nowrap; margin-right:.55em; }
+
+/* ---------- boards ---------- */
+.board{ margin:2.4rem 0 3rem; padding-top:1rem; border-top:1px solid var(--line-strong); }
+.board h3{ margin:0 0 1rem; }
+.board h3 .bn{ font-family:var(--sans); color:var(--felt); font-weight:800; margin-right:.4rem; }
+.board-grid{ display:grid; grid-template-columns:minmax(0,1fr); gap:1.3rem 2.4rem; align-items:start; }
+@media (min-width:780px){ .board-grid{ grid-template-columns:auto minmax(15rem,1fr); } }
+.deal{ display:grid; grid-template-columns:auto auto auto; grid-template-areas:"info n ." "w tbl e" ". s ."; gap:.55rem 1rem;
+       align-items:center; justify-content:start; font-family:var(--sans); }
+.deal .info{ grid-area:info; align-self:start; font-size:.82rem; line-height:1.35; color:var(--muted); }
+.deal .h-n{ grid-area:n; } .deal .h-s{ grid-area:s; } .deal .h-w{ grid-area:w; } .deal .h-e{ grid-area:e; }
+.deal .tblx{ grid-area:tbl; justify-self:center; }
+.hand{ font-size:1.02rem; line-height:1.33; white-space:nowrap; }
+.hand .who{ font-size:.8rem; color:var(--muted); margin-bottom:.12rem; }
+.hand .who b{ color:var(--ink); font-weight:700; }
+.hl{ display:flex; gap:.3rem; }
+.hl .hs{ display:inline-block; width:1.05em; text-align:center; }
+.felt{ position:relative; width:5.4rem; height:5.4rem; border-radius:.55rem; background:var(--felt-deep); border:5px solid var(--nonvul);
+       color:#fff; font-family:var(--sans); font-weight:800; font-size:.95rem; }
+.felt.vns{ border-top-color:var(--vul); border-bottom-color:var(--vul); }
+.felt.vew{ border-left-color:var(--vul); border-right-color:var(--vul); }
+.felt.vall{ border-color:var(--vul); }
+.felt span{ position:absolute; line-height:1; padding:.12rem .22rem; border-radius:50%; }
+.felt .n{ top:.18rem; left:50%; transform:translateX(-50%); }
+.felt .s{ bottom:.18rem; left:50%; transform:translateX(-50%); }
+.felt .w{ left:.22rem; top:50%; transform:translateY(-50%); }
+.felt .e{ right:.22rem; top:50%; transform:translateY(-50%); }
+.felt .giver{ box-shadow:0 0 0 2px var(--gold); }
+@media (max-width:430px){
+  .deal{ gap:.45rem .55rem; }
+  .hand{ font-size:.94rem; }
+  .felt{ width:4.4rem; height:4.4rem; font-size:.85rem; }
+}
+table.auc{ border-collapse:collapse; font-family:var(--sans); font-size:1.05rem; }
+table.auc th{ color:var(--felt); font-weight:800; border-bottom:2px solid var(--felt); padding:.3rem .95rem .3rem .2rem; text-align:left; }
+table.auc td{ padding:.26rem .95rem .26rem .2rem; border-bottom:1px solid var(--line); min-width:3rem; }
+table.auc .pas{ color:var(--muted); }
+table.auc .x{ font-weight:800; }
+.result{ font-family:var(--sans); font-size:.98rem; margin:.9rem 0 0; }
+.result b{ color:var(--felt); }
+.calc{ font-family:var(--sans); font-size:.98rem; display:inline-block; background:var(--panel); padding:.35rem .7rem; border-radius:.3rem; margin:.3rem 0 0; }
+.diag-key{ font-family:var(--sans); font-size:.9rem; color:var(--muted); }
+
+/* ---------- gallery ---------- */
+.northline{ font-family:var(--sans); background:var(--panel); padding:.7rem .9rem; border-radius:.4rem; margin:1rem 0; }
+.gallery{ display:grid; grid-template-columns:repeat(auto-fill,minmax(15rem,1fr)); gap:.9rem; margin:1rem 0; }
+.gcard{ border:1px solid var(--line-strong); border-left-width:4px; border-radius:.45rem; padding:.75rem .9rem .8rem; background:var(--paper); }
+.gcard.c-gron{ border-left-color:var(--kb-gron); } .gcard.c-bla{ border-left-color:var(--kb-bla); } .gcard.c-gul{ border-left-color:var(--kb-gul); }
+.gcard.c-brun{ border-left-color:var(--kb-brun); } .gcard.c-rosa{ border-left-color:var(--kb-rosa); }
+.gcard .top{ display:flex; justify-content:space-between; align-items:center; gap:.6rem; margin-bottom:.55rem; }
+.gcard .top .bc{ font-size:1.15rem; }
+.gcard .pts{ font-family:var(--sans); font-size:.9rem; color:var(--muted); text-align:right; line-height:1.25; }
+.gcard .pts b{ color:var(--ink); }
+.gcard .hand{ font-size:1rem; }
+.gcard p{ font-size:.98rem; line-height:1.45; margin:.55rem 0 0; }
+
+/* ---------- quiz ---------- */
+.quiz{ display:grid; grid-template-columns:repeat(auto-fill,minmax(19rem,1fr)); gap:1rem; margin:1rem 0; }
+.q{ border:1px solid var(--line-strong); border-radius:.45rem; padding:.9rem 1rem; }
+.q .qn{ font-family:var(--sans); font-weight:800; color:var(--felt); }
+.q .seq{ font-family:var(--sans); font-weight:700; margin:.25rem 0 .5rem; }
+.q .hand{ margin:.4rem 0 .6rem; }
+.q details{ border-top:1px solid var(--line); padding-top:.5rem; }
+.q summary{ cursor:pointer; font-family:var(--sans); font-weight:700; color:var(--felt); }
+.q details p{ margin:.45rem 0 0; font-size:1rem; }
+
+/* ---------- conclusions ---------- */
+ol.concl{ counter-reset:c; list-style:none; padding:0; margin:1rem 0; }
+ol.concl li{ counter-increment:c; position:relative; padding:.7rem 0 .7rem 2.6rem; border-bottom:1px solid var(--line); }
+ol.concl li::before{ content:counter(c); position:absolute; left:0; top:.62rem; font-family:var(--sans); font-weight:800; color:var(--felt); font-size:1.25rem; font-variant-numeric:tabular-nums; }
+ol.concl li strong{ display:block; }
+.sources li{ margin:.35rem 0; font-size:1rem; }
+
+@media print{
+  .toc{ display:none; } .page{ display:block; max-width:none; padding:0; }
+  body{ font-size:10.5pt; background:#fff; color:#000; }
+  section.chap{ break-before:auto; }
+  .board, .gcard, .q, .note, .matrix, table{ break-inside:avoid; }
+  a{ color:inherit; text-decoration:none; }
+}
+@media (prefers-reduced-motion:reduce){ *{ scroll-behavior:auto !important; } }
+
+/* zone colours for ladders and bars (neutral progression, separate from the bid colour key) */
+.z0{ background:#eceeed; } .z1{ background:#dcefe2; } .z2{ background:#c3e2cd; } .z3{ background:#f1e1b2; } .z4{ background:#e6cb85; }
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .z0{ background:#232a26; } :root:not([data-theme="light"]) .z1{ background:#1d3326; }
+  :root:not([data-theme="light"]) .z2{ background:#24442f; } :root:not([data-theme="light"]) .z3{ background:#3d3419; }
+  :root:not([data-theme="light"]) .z4{ background:#4e4118; }
+}
+:root[data-theme="dark"] .z0{ background:#232a26; } :root[data-theme="dark"] .z1{ background:#1d3326; }
+:root[data-theme="dark"] .z2{ background:#24442f; } :root[data-theme="dark"] .z3{ background:#3d3419; }
+:root[data-theme="dark"] .z4{ background:#4e4118; }
+
+/* ---------- refinements ---------- */
+.hand{ font-family:var(--sans); }
+.seqn{ white-space:nowrap; }
+@media (min-width:780px){ .deal .hand{ font-size:1.07rem; } .felt{ width:5.8rem; height:5.8rem; } }
+@media (max-width:640px){
+  table.t th{ white-space:normal; }
+  table.mt3 thead{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+  table.mt3, table.mt3 tbody, table.mt3 tr, table.mt3 td{ display:block; }
+  table.mt3 tr{ border-bottom:1px solid var(--line); padding-bottom:.4rem; }
+  table.mt3 td{ border-bottom:0; padding:.3rem .55rem 0; }
+  table.mt3 td.num{ display:none; }
+  table.mt3 td.bid{ display:flex; justify-content:space-between; align-items:baseline; gap:.8rem; white-space:normal;
+                    border-radius:.3rem; margin-top:.45rem; padding:.35rem .55rem; }
+  table.mt3 td.bid::after{ content:attr(data-pts); font-weight:600; white-space:nowrap; font-variant-numeric:tabular-nums; }
+  table.mt3 tr.grp{ padding-bottom:.2rem; }
+  table.mt3 tr.grp td{ padding:1rem 0 .1rem; }
+  table.cmp thead{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+  table.cmp, table.cmp tbody, table.cmp tr, table.cmp td{ display:block; width:auto !important; }
+  table.cmp tr{ border-bottom:1px solid var(--line); padding:.55rem 0; }
+  table.cmp td{ border:0; padding:.1rem 0; }
+  table.cmp td[data-l]::before{ content:attr(data-l) ": "; font-weight:800; color:var(--felt); }
+}
+@media (max-width:640px){ table.t th.num{ white-space:normal; } table.t th, table.t td{ padding-left:.5rem; padding-right:.5rem; } }
+
+</style>
+<style>
+/* Konventionstrænerens menu */
+.site-head{ border-bottom:1px solid var(--gold); font-family:var(--sans); }
+.site-head .in{ max-width:78rem; margin:0 auto; padding:.8rem 1.25rem; display:flex; align-items:baseline; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
+.site-head .brand{ font-weight:800; font-size:1.05rem; letter-spacing:.06em; text-transform:uppercase; color:var(--felt); text-decoration:none; }
+.site-head nav{ display:flex; gap:1.2rem; font-weight:700; font-size:1rem; }
+.site-head nav a{ color:var(--ink); text-decoration:none; padding-bottom:.15rem; border-bottom:2px solid transparent; }
+.site-head nav a:hover, .site-head nav a[aria-current="page"]{ color:var(--felt); border-bottom-color:var(--felt); }
+@media print{ .site-head{ display:none; } }
+</style>
+</head>
+<body>
+<header class="site-head"><div class="in">
+  <a class="brand" href="../">Konventionstræner</a>
+  <nav><a href="../#traen">Træn</a><a href="./" aria-current="page">Viden</a></nav>
+</div></header>
+
+<div class="page">
+<header class="hero">
+  <div>
+    <h1>Standard 2 over 1 i dansk version</h1>
+    <p class="deck">Ny farve på 2-trinnet lover 10 honnørpoint og kræver én melderunde mere – ikke udgang. Her er, hvad pointene betyder for åbner og svarer, i fred og når modparten blander sig.</p>
+  </div>
+  <div class="tray" role="img" aria-label="Meldingerne 1 spar fra Nord, pas fra Øst og 2 ruder fra Syd">
+    <figure><span class="bc ">1<span class="su su-s">♠︎</span></span><figcaption>Nord</figcaption></figure>
+    <figure><span class="bc pas">pas</span><figcaption>Øst</figcaption></figure>
+    <figure><span class="bc ">2<span class="su su-d">♦︎</span></span><figcaption>Syd</figcaption></figure>
+  </div>
+</header>
+<nav class="toc" aria-label="Indhold"><p class="toc-h">Indhold</p><ol><li><a href="#overblik"><span class="n"></span><span>Overblik</span></a></li><li><a href="#point"><span class="n">1</span><span>Pointene</span></a></li><li><a href="#aabner"><span class="n">2</span><span>Åbneren i fred</span></a></li><li><a href="#svar"><span class="n">3</span><span>Svarene på 1<span class="su su-h">♥︎</span> og 1<span class="su su-s">♠︎</span></span></a></li><li><a href="#toverone"><span class="n">4</span><span>2 over 1 – videre</span></a></li><li><a href="#spil-fred"><span class="n">5</span><span>Spil i fred</span></a></li><li><a href="#indblanding"><span class="n">6</span><span>Når modparten blander sig</span></a></li><li><a href="#spil-konkurrence"><span class="n">7</span><span>Spil efter indblanding</span></a></li><li><a href="#test"><span class="n">8</span><span>Test dig selv</span></a></li><li><a href="#konklusioner"><span class="n">9</span><span>Konklusioner</span></a></li><li><a href="#aftal"><span class="n"></span><span>Aftal med makker</span></a></li><li><a href="#kilder"><span class="n"></span><span>Kilder</span></a></li></ol></nav>
+<main>
+
+<section class="chap-intro" id="intro">
+<div class="prose">
+<p class="lead">Den danske udgave af 2 over 1 er et naturligt system med femkorts major og 1NT 15–17. Det hele hviler på én aftale: <strong>en ny farve fra svarer er krav, og på 2-trinnet lover den 10 honnørpoint.</strong> Mere lover den ikke. Svarer kan derfor vise sin farve tidligt og sin styrke bagefter, mens åbner i anden melderunde fortæller, om han har minimum eller tillæg.</p>
+<p>Hæftet går fra pointbegreberne over åbners og svarers intervaller i fred til det, der ændrer sig, når modparten melder ind eller dobler. Undervejs er der syv fuldstændige spil, alle kontrolleret med dobbeltdummy-analyse, og til sidst en lille prøve og de vigtigste konklusioner.</p>
+<div class="note"><h4>Et ord om »10+«</h4><p>Kravet til 2 over 1 måles i honnørpoint (hp). Støttepoint (sp) kommer først i spil, når I har fundet en trumffarve. Derfor står der hp ved de nye farver og sp ved alle støttemeldinger i skemaerne.</p></div>
+<p class="small">Farverne i skemaerne følger farvenøglen fra jeres systemdokument. Modpartens meldinger står i parentes, og E K D B betyder es, konge, dame og bonde.</p>
+<ul class="legend"><li class="k-gron">naturlig / støtte</li><li class="k-bla">rundekrav / kaptajn</li><li class="k-gul">specialaftale, alertér</li><li class="k-brun">sans / jævn</li><li class="k-rosa">spærrende / advarsel</li><li class="k-gra">definition</li></ul>
+</div>
+</section>
+
+<section class="chap" id="overblik">
+<h2>Overblik: hvad pointene lover</h2>
+<div class="prose"><p>Skemaet er hæftets korte version. Hvert felt bliver uddybet i kapitlerne nedenfor.</p></div>
+<div class="matrix">
+<div class="mh"></div><div class="mh">I fred</div><div class="mh">Efter indmelding</div><div class="mh">Efter oplysningsdobling</div>
+<div class="role">Åbner</div>
+<div class="cell" data-col="I fred"><ul>
+<li>12–21 hp. 1<span class="su su-h">♥︎</span> og 1<span class="su su-s">♠︎</span> lover 5+ kort.</li>
+<li>Efter svar på 1-trinnet: 12–15 minimum, 16–18 tillæg, 19–21 maksimum.</li>
+<li>Efter 2 over 1 kun to trin: 12–15 afmelder, 16+ kræver.</li></ul></div>
+<div class="cell" data-col="Efter indmelding"><ul>
+<li>Samme åbningskrav.</li>
+<li>Efter makkers negative dobling: 12–15 billigst, 16–18 spring, 19+ udgang.</li>
+<li>Pas med fire gode kort i deres farve er straf.</li>
+<li>Kort i deres farve: genåbn med dobling, når indmeldingen går rundt.</li></ul></div>
+<div class="cell" data-col="Efter oplysningsdobling"><ul>
+<li>Efter makkers redobling er spillet jeres: pas er krav, dobling er straf.</li>
+<li>Efter makkers støtte: meld kun videre med reelt tillæg – hans spring kan være spærrende.</li></ul></div>
+<div class="role">Svarer</div>
+<div class="cell" data-col="I fred"><ul>
+<li>0–5 pas.</li>
+<li>6–9 begrænset: 1NT eller 2 i makkers major (sp).</li>
+<li>6+ ny farve på 1-trinnet og 10+ ny farve på 2-trinnet – begge krav.</li>
+<li>10–12 sp springstøtte, 13+ sp 2NT eller udgang.</li></ul></div>
+<div class="cell" data-col="Efter indmelding"><ul>
+<li>Fri ny farve: 6+ på 1-trinnet, 10+ på 2-trinnet, ca. 11+ på 3-trinnet – altid med god farve.</li>
+<li>Negativ dobling: 6+, 8+ eller 10+ efter trinnet.</li>
+<li>Støtte: 6–9 sp simpel, spring spærrende, overmelding i deres farve 10+ sp.</li>
+<li>1NT: 8–10 med hold.</li></ul></div>
+<div class="cell" data-col="Efter oplysningsdobling"><ul>
+<li>2 over 1 er slået fra.</li>
+<li>10+ uden fit: redobling. 10+ sp med 4+ støtte: 2NT.</li>
+<li>6–9 sp: simpel støtte. Spring i makkers major: spærrende.</li>
+<li>Ny farve: 6–9, ikke krav.</li></ul></div>
+</div>
+</section>
+
+<section class="chap" id="point">
+<h2><span class="no">1</span>Pointene – hvad tæller vi?</h2>
+<div class="prose">
+<h3>Honnørpoint (hp)</h3>
+<div class="tiles" role="img" aria-label="Es 4, konge 3, dame 2 og bonde 1 honnørpoint">
+<div class="tile"><span class="r">E</span><span class="v">4 hp</span></div>
+<div class="tile"><span class="r">K</span><span class="v">3 hp</span></div>
+<div class="tile"><span class="r">D</span><span class="v">2 hp</span></div>
+<div class="tile"><span class="r">B</span><span class="v">1 hp</span></div></div>
+<p>Der er 40 hp i spillet – i gennemsnit 10 pr. hånd. Honnørpointene måler stikstyrken, når der ikke er nogen trumffarve, og de er grundmålet i alle meldinger, indtil I har fundet en. Tre tal skal sidde på rygraden: en åbning lover 12, et svar på 1-trinnet 6 og et svar på 2-trinnet 10.</p>
+
+<h3>Støttepoint (sp)</h3>
+<p>Når makkerparret har fundet mindst otte kort i samme farve, får de korte farver værdi, fordi de kan stjæle. Den, der støtter, lægger korthedspoint til sine honnørpoint:</p>
+<div class="tw"><table class="t"><thead><tr><th scope="col">Korthed</th><th scope="col" class="num">med 4+ trumf</th><th scope="col" class="num">med 3 trumf</th></tr></thead>
+<tbody><tr><td>Dobbeltton</td><td class="num">+1</td><td class="num">+1</td></tr>
+<tr><td>Singleton</td><td class="num">+3</td><td class="num">+2</td></tr>
+<tr><td>Renonce</td><td class="num">+5</td><td class="num">+3</td></tr></tbody></table></div>
+<p>Åbner gør det samme, når makker har støttet: han tæller sine korte farver med, og hver trumf ud over fem er værd omkring et point. Summen hedder støttepoint (sp). Tæl dem aldrig, før fittet er bekræftet – og aldrig i sans.</p>
+<div class="note">
+<h4>Samme hånd, to værdier</h4>
+<p><span class="ihand"><span class="ih"><span class="su su-s">♠︎</span> D 9 7 4</span> <span class="ih"><span class="su su-h">♥︎</span> 5</span> <span class="ih"><span class="su su-d">♦︎</span> K 8 6 3</span> <span class="ih"><span class="su su-c">♣︎</span> K 10 6 4</span></span></p>
+<p><strong>Makker åbner 1<span class="su su-s">♠︎</span>:</strong> fire trumf og singleton hjerter giver 3 ekstra point. Hånden er 11 sp, og svaret er 3<span class="su su-s">♠︎</span> – ikke 2<span class="su su-s">♠︎</span>.</p>
+<p><strong>Makker åbner 1<span class="su su-h">♥︎</span>:</strong> intet fit, og singletonen i hans farve er ingen gevinst. Hånden er 8 hp, og svaret er 1<span class="su su-s">♠︎</span>.</p>
+</div>
+<div class="note model">
+<h4>Fra jeres egen model</h4>
+<p>Simuleringen i MODEL.md bekræfter skalaen 5-3-1 for korthed og viser, at korthed skal tælles i begge hænder, når fittet er bekræftet. Trumflængden er næsten et helt stik værd: ved 23–26 hp giver otte trumf i snit 9,79 stik og ni trumf 10,49.</p>
+</div>
+
+<h3>I sans tæller kun honnørpointene</h3>
+<p>Lange farver og korthed giver ingen ekstra point i sans. Til gengæld skal alle fire farver være stoppet. Jeres simulering viser det tydeligt: med 24–26 hp holder 3NT i 60 % af spillene, når alle farver er stoppet – men kun i 31 %, når én farve står åben.</p>
+
+<h3>Pointtrappen</h3>
+<p>Tallene gælder makkerparrets samlede point.</p>
+</div>
+<div class="ladder" role="img" aria-label="Pointtrappen: under 25 delkontrakt, 25 til 28 udgang i sans eller major, 29 til 32 også udgang i minor, 33 lilleslem, 37 storeslem">
+<span class="mk" style="left:calc(11.90%)">22 = 12 + 10</span>
+<span class="mk" style="left:calc(30.95%)">26 = 16 + 10</span>
+<div class="zbar stack">
+<span class="z0" style="flex:5"><b>under 25</b>delkontrakt</span>
+<span class="z1" style="flex:4"><b>25–28</b>udgang i 3NT og major</span>
+<span class="z2" style="flex:4"><b>29–32</b>også 5<span class="su su-c">♣︎</span> og 5<span class="su su-d">♦︎</span></span>
+<span class="z3" style="flex:4"><b>33–36</b>lilleslem</span>
+<span class="z4" style="flex:4"><b>37+</b>storeslem</span>
+</div>
+<p class="ladder-note">22 = 12 + 10 og 26 = 16 + 10</p>
+</div>
+<div class="prose">
+<p>To regnestykker bærer hele systemet. <strong>12 + 10 = 22:</strong> to hænder, der har vist minimum, hører hjemme i en delkontrakt. <strong>16 + 10 = 26:</strong> en åbner med tillæg over for en 2 over 1 hører hjemme i udgang.</p>
+
+<h3>Begrænset eller ubegrænset – og hvem er kaptajn?</h3>
+<p>En <strong>begrænset</strong> melding lover et interval, fx 6–9 eller 12–14. En <strong>ubegrænset</strong> melding lover kun et minimum, fx 6+ eller 10+. Den, der kender makkers interval, er kaptajn og vælger niveauet. Svarers ubegrænsede meldinger er krav: åbner må ikke passe. I kapitel 3 står de to slags svar hver for sig.</p>
+</div>
+</section>
+
+<section class="chap" id="aabner">
+<h2><span class="no">2</span>Åbneren i fred</h2>
+<div class="prose">
+<p>Åbneren lover 12–21 hp. Farveåbningen fortæller, hvor længden er; styrken inden for intervallet viser han først i anden melderunde.</p>
+</div>
+<div class="tw"><table class="t mt3 "><thead><tr><th scope="col">Åbning</th><th scope="col" class="num">Styrke</th><th scope="col">Hånden</th></tr></thead><tbody><tr><td class="bid k-gron" data-pts="12–21 hp"><span class="bt">1<span class="su su-c">♣︎</span></span></td><td class="num">12–21 hp</td><td class="">2+ kort, forberedende – ofte en jævn hånd uden femfarve i major</td></tr><tr><td class="bid k-gron" data-pts="12–21 hp"><span class="bt">1<span class="su su-d">♦︎</span></span></td><td class="num">12–21 hp</td><td class="">4+ kort</td></tr><tr><td class="bid k-gron" data-pts="12–21 hp"><span class="bt">1<span class="su su-h">♥︎</span> / 1<span class="su su-s">♠︎</span></span></td><td class="num">12–21 hp</td><td class="">5+ kort</td></tr><tr><td class="bid k-brun" data-pts="15–17 hp"><span class="bt">1NT</span></td><td class="num">15–17 hp</td><td class="">jævn, kan rumme en femfarve i major</td></tr><tr><td class="bid k-gul" data-pts="20+ hp"><span class="bt">2<span class="su su-c">♣︎</span></span></td><td class="num">20+ hp</td><td class="">kraftåbning; jævne hænder fra 22 hp</td></tr><tr><td class="bid k-rosa" data-pts="5–11 hp"><span class="bt">2<span class="su su-d">♦︎</span> / 2<span class="su su-h">♥︎</span> / 2<span class="su su-s">♠︎</span></span></td><td class="num">5–11 hp</td><td class="">svag 2: god sekskortsfarve</td></tr><tr><td class="bid k-brun" data-pts="20–21 hp"><span class="bt">2NT</span></td><td class="num">20–21 hp</td><td class="">jævn</td></tr></tbody></table></div>
+<div class="prose">
+<p class="small">Semiskæve 11-pointshænder må åbnes efter 20-reglen: honnørpoint plus antallet af kort i de to længste farver skal give mindst 20. Med 11 hp og 5-4 er summen netop 20.</p>
+<h3>Åbners zoner – og hvorfor 2 over 1 fjerner den midterste</h3>
+<p class="zlabel">Efter svar på 1-trinnet (6+)</p>
+<div class="zbar stack"><span class="z1" style="flex:4"><b>12–15</b>minimum</span><span class="z2" style="flex:3"><b>16–18</b>tillæg</span><span class="z3" style="flex:3"><b>19–21</b>maksimum</span></div>
+<p class="zlabel">Efter 2 over 1 (10+)</p>
+<div class="zbar stack"><span class="z1" style="flex:4"><b>12–15</b>afmelding – svarer beslutter</span><span class="z3" style="flex:6"><b>16–21</b>krav – der skal meldes udgang</span></div>
+<p>Efter et svar på 1-trinnet kan svarer have 6, og åbner har brug for tre trin: minimum, tillæg og maksimum. Efter 2 over 1 har svarer vist 10, og så er der kun to. Med 16 ved åbner, at der er mindst 26 hp, og han skal sørge for, at meldingerne ikke går i stå under udgang. Med 12–15 afmelder han og lader svarer bestemme. <strong>Invitationszonen er ikke væk – den er flyttet over til svarer.</strong></p>
+</div>
+</section>
+
+<section class="chap" id="svar">
+<h2><span class="no">3</span>Svarene på 1<span class="su su-h">♥︎</span> og 1<span class="su su-s">♠︎</span></h2>
+<div class="prose">
+<p>Svarers første opgave er at fortælle, hvilken af fire styrker han har. Med støtte måles styrken i sp, uden støtte i hp.</p>
+<div class="zbar stack" role="img" aria-label="Svarers fire styrker: 0 til 5 pas, 6 til 9 begrænset svar, 10 til 12 invit, 13 og derover udgang">
+<span class="z0" style="flex:6"><b>0–5</b>pas</span><span class="z1" style="flex:4"><b>6–9</b>begrænset svar</span><span class="z2" style="flex:3"><b>10–12</b>invit</span><span class="z3" style="flex:5"><b>13+</b>udgang</span></div>
+</div>
+<div class="tw"><table class="t mt3 "><thead><tr><th scope="col">Svar</th><th scope="col" class="num">Point</th><th scope="col">Viser</th></tr></thead><tbody><tr class="grp"><td colspan="3">Begrænsede svar – åbner er kaptajn</td></tr><tr><td class="bid k-gra" data-pts="0–5 hp"><span class="bt">pas</span></td><td class="num">0–5 hp</td><td class="">–</td></tr><tr><td class="bid k-brun" data-pts="6–9 hp"><span class="bt">1NT</span></td><td class="num">6–9 hp</td><td class="">ingen trekortsstøtte; efter 1<span class="su su-h">♥︎</span> heller ikke fire spar. Ikke krav</td></tr><tr><td class="bid k-gron" data-pts="6–9 sp"><span class="bt">2 i makkers major</span></td><td class="num">6–9 sp</td><td class="">3+ støtte. Ikke krav</td></tr><tr><td class="bid k-gron" data-pts="10–12 sp"><span class="bt">3 i makkers major</span></td><td class="num">10–12 sp</td><td class="">4+ støtte. Invit</td></tr><tr><td class="bid k-brun" data-pts="13–15 hp"><span class="bt">3NT</span></td><td class="num">13–15 hp</td><td class="">jævn, præcis to kort i makkers major. Slutmelding</td></tr><tr><td class="bid k-rosa" data-pts="højst 9 hp"><span class="bt">4 i makkers major</span></td><td class="num">højst 9 hp</td><td class="">5+ støtte, ofte korthed. Spærrende</td></tr><tr class="grp"><td colspan="3">Ubegrænsede svar – krav</td></tr><tr><td class="bid k-bla" data-pts="6+ hp"><span class="bt">1<span class="su su-s">♠︎</span> (efter 1<span class="su su-h">♥︎</span>)</span></td><td class="num">6+ hp</td><td class="">4+ spar. Rundekrav</td></tr><tr><td class="bid k-bla" data-pts="10+ hp"><span class="bt">2<span class="su su-c">♣︎</span> / 2<span class="su su-d">♦︎</span></span></td><td class="num">10+ hp</td><td class="">4+ kort – 2<span class="su su-c">♣︎</span> undtagelsesvis tre med jævn hånd. Rundekrav</td></tr><tr><td class="bid k-bla" data-pts="10+ hp"><span class="bt">2<span class="su su-h">♥︎</span> (efter 1<span class="su su-s">♠︎</span>)</span></td><td class="num">10+ hp</td><td class="">5+ hjerter. Rundekrav</td></tr><tr><td class="bid k-gul" data-pts="13+ sp"><span class="bt">2NT</span></td><td class="num">13+ sp</td><td class="">4+ støtte, stærk støttemelding (Jacoby / Bekkasin). Udgangskrav, alertér</td></tr></tbody></table></div>
+<div class="prose">
+<ul class="tight">
+<li><strong>Firfarve i spar går forud.</strong> Over 1<span class="su su-h">♥︎</span> svarer du 1<span class="su su-s">♠︎</span> med 6+ – også når du har 10 eller mere.</li>
+<li><strong>10–12 sp med tre trumf:</strong> meld 2 over 1 først, og støt bagefter (spil 4).</li>
+<li><strong>13+ sp med tre trumf:</strong> meld 2 over 1 først, og meld udgang bagefter (spil 3).</li>
+<li><strong>Spring i ny farve</strong> er ikke med i grundpakken. Aftal selv, om det er stærkt eller svagt.</li>
+</ul>
+<h3>Samme åbning – otte svar</h3>
+<p>Nord åbner 1<span class="su su-s">♠︎</span> med hånden herunder. Se, hvordan Syds svar skifter med pointene – og med antallet af trumf.</p>
+<p class="northline"><b>Nord, 14 hp:</b> <span class="ihand"><span class="ih"><span class="su su-s">♠︎</span> E K 10 8 6</span> <span class="ih"><span class="su su-h">♥︎</span> K 7 4</span> <span class="ih"><span class="su su-d">♦︎</span> D 9</span> <span class="ih"><span class="su su-c">♣︎</span> D 5 2</span></span></p>
+</div>
+<div class="gallery"><div class="gcard c-brun">
+  <div class="top"><span class="bc ">1NT</span><span class="pts">9 hp</span></div>
+  <div class="hand"><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">7</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">D 10 8 5</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">K B 6 3</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">K 9 4 3</span></div></div>
+  <p>Én spar og kun 9 hp: hverken støtte eller 2 over 1. 1NT er det eneste svar.</p>
+</div><div class="gcard c-gron">
+  <div class="top"><span class="bc ">2<span class="su su-s">♠︎</span></span><span class="pts">7 hp<br><b>8 sp</b></span></div>
+  <div class="hand"><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">D 7 3</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">E 8 6 5</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">10 7 5 2</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">B 3</span></div></div>
+  <p>Tre trumf og dobbeltton klør: 7 + 1 = 8 sp. Simpel støtte.</p>
+</div><div class="gcard c-gron">
+  <div class="top"><span class="bc ">3<span class="su su-s">♠︎</span></span><span class="pts">8 hp<br><b>11 sp</b></span></div>
+  <div class="hand"><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">D 9 7 4</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">5</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">K 8 6 3</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">K 10 6 4</span></div></div>
+  <p>Fire trumf og singleton hjerter: 8 + 3 = 11 sp. Springstøtte, invit.</p>
+</div><div class="gcard c-rosa">
+  <div class="top"><span class="bc ">4<span class="su su-s">♠︎</span></span><span class="pts">3 hp</span></div>
+  <div class="hand"><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">D 9 7 5 3</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">6</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">B 10 8 6 4 3</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">7</span></div></div>
+  <p>Fem trumf og to singletons. Spær – modparten har mindst halvdelen af pointene.</p>
+</div><div class="gcard c-gul">
+  <div class="top"><span class="bc ">2NT</span><span class="pts">14 hp<br><b>15 sp</b></span></div>
+  <div class="hand"><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">D B 7 4</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">E 6</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">E K 8 3</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">10 6 4</span></div></div>
+  <p>Fire trumf og åbningsstyrke: stærk støtte og udgangskrav. Nu beskriver åbner sin hånd.</p>
+</div><div class="gcard c-bla">
+  <div class="top"><span class="bc ">2<span class="su su-d">♦︎</span></span><span class="pts">10 hp</span></div>
+  <div class="hand"><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">7 3</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">E 9 5</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">E B 10 8 5</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">B 7 3</span></div></div>
+  <p>Nok til 2 over 1, men ikke mere. Afmelder Nord, kan Syd højst invitere – eller passe.</p>
+</div><div class="gcard c-bla">
+  <div class="top"><span class="bc ">2<span class="su su-d">♦︎</span></span><span class="pts">13 hp</span></div>
+  <div class="hand"><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">4</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">E D 8</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">E K 10 7 5 3</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">9 6 3</span></div></div>
+  <p>Samme første melding – men nu ved Syd, at der er udgang (13 + 12), og sørger for at nå den.</p>
+</div><div class="gcard c-bla">
+  <div class="top"><span class="bc ">2<span class="su su-h">♥︎</span></span><span class="pts">11 hp</span></div>
+  <div class="hand"><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">5</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">E D B 9 3</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">K 7 6</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">B 9 8 4</span></div></div>
+  <p>Efter 1<span class="su su-s">♠︎</span> lover 2<span class="su su-h">♥︎</span> altid fem hjerter, så åbner kan støtte med tre.</p>
+</div></div>
+<div class="prose">
+<div class="note warn">
+<h4>Systemets dyreste fejl: 2 over 1 på 8 hp</h4>
+<p><span class="ihand"><span class="ih"><span class="su su-s">♠︎</span> 6</span> <span class="ih"><span class="su su-h">♥︎</span> 8 5 2</span> <span class="ih"><span class="su su-d">♦︎</span> K D 10 8 7 4</span> <span class="ih"><span class="su su-c">♣︎</span> K 6 3</span></span> – makker åbner 1<span class="su su-s">♠︎</span>.</p>
+<p>Det kribler for at melde 2<span class="su su-d">♦︎</span>, men 2<span class="su su-d">♦︎</span> lover 10. Makker regner med mindst 22 hp tilsammen og bliver ved – med 16 går han mod udgang. Svar 1NT, og vis ruderne næste gang billigst muligt: <span class="seqn">1<span class="su su-s">♠︎</span> – 1NT – 2<span class="su su-c">♣︎</span> – 2<span class="su su-d">♦︎</span></span> eller <span class="seqn">1<span class="su su-s">♠︎</span> – 1NT – 2<span class="su su-h">♥︎</span> – 3<span class="su su-d">♦︎</span></span>. Den rækkefølge viser netop 6–9 med lang ruder, og åbner skal passe.</p>
+</div>
+</div>
+</section>
+
+<section class="chap" id="toverone">
+<h2><span class="no">4</span>2 over 1 – sådan fortsætter meldingerne</h2>
+<div class="prose">
+<h3>Hvad lover 2 over 1?</h3>
+<p>Ny farve på 2-trinnet fra en svarer, der ikke har passet, lover <strong>10+ hp og mindst en firfarve</strong> – efter 1<span class="su su-s">♠︎</span> lover 2<span class="su su-h">♥︎</span> dog en femfarve. Meldingen er <strong>rundekrav</strong>: åbner skal melde igen. Den er <strong>ikke udgangskrav</strong>: har begge vist minimum, må meldingerne gerne stoppe under udgang. Det gælder alle 2 over 1-sekvenser: <span class="seqn">1<span class="su su-d">♦︎</span> – 2<span class="su su-c">♣︎</span></span>, <span class="seqn">1<span class="su su-h">♥︎</span> – 2<span class="su su-c">♣︎</span></span> og 2<span class="su su-d">♦︎</span>, <span class="seqn">1<span class="su su-s">♠︎</span> – 2<span class="su su-c">♣︎</span></span>, 2<span class="su su-d">♦︎</span> og 2<span class="su su-h">♥︎</span>.</p>
+<p>Hvorfor netop 10? Fordi 10 + 12 = 22 er nok til at spille på 2- eller 3-trinnet, og fordi 10 + 16 = 26 er udgang. Tallet passer præcis til åbners to zoner.</p>
+<h3>Åbners genmelding: 12–15 eller 16+</h3>
+</div>
+<div class="tw"><table class="t mt3 "><thead><tr><th scope="col">Genmelding</th><th scope="col" class="num">Point</th><th scope="col">Viser</th></tr></thead><tbody><tr class="grp"><td colspan="3">Afmelding, 12–15 – svarer må passe med 10–11</td></tr><tr><td class="bid k-gron" data-pts="12–15"><span class="bt">2 i åbningsfarven</span></td><td class="num">12–15</td><td class="">6+ kort – eller 5-4, hvor sidefarven kun kan vises på 3-trinnet</td></tr><tr><td class="bid k-brun" data-pts="12–14"><span class="bt">2NT</span></td><td class="num">12–14</td><td class="">jævn, hold i de umeldte farver</td></tr><tr><td class="bid k-gron" data-pts="12–15"><span class="bt">3 i svarers farve</span></td><td class="num">12–15</td><td class="">støtte: 4+ til en minor, 3+ til hjerter efter <span class="seqn">1<span class="su su-s">♠︎</span> – 2<span class="su su-h">♥︎</span></span></td></tr><tr class="grp"><td colspan="3">Bred, 12–18 – svarer skal melde igen</td></tr><tr><td class="bid k-bla" data-pts="12–18"><span class="bt">ny lavere farve på 2-trinnet</span></td><td class="num">12–18</td><td class="">4+ kort, fx <span class="seqn">1<span class="su su-s">♠︎</span> – 2<span class="su su-c">♣︎</span> – 2<span class="su su-h">♥︎</span></span></td></tr><tr class="grp"><td colspan="3">Krav, 16+</td></tr><tr><td class="bid k-bla" data-pts="16+"><span class="bt">revers: ny højere farve på 2-trinnet</span></td><td class="num">16+</td><td class="">5-4 eller bedre, fx <span class="seqn">1<span class="su su-h">♥︎</span> – 2<span class="su su-c">♣︎</span> – 2<span class="su su-s">♠︎</span></span></td></tr><tr><td class="bid k-bla" data-pts="16+"><span class="bt">ny farve på 3-trinnet</span></td><td class="num">16+</td><td class="">4+ kort, fx <span class="seqn">1<span class="su su-s">♠︎</span> – 2<span class="su su-d">♦︎</span> – 3<span class="su su-c">♣︎</span></span></td></tr><tr><td class="bid k-bla" data-pts="16+"><span class="bt">spring i åbningsfarven</span></td><td class="num">16+</td><td class="">god sekskortsfarve, fx <span class="seqn">1<span class="su su-s">♠︎</span> – 2<span class="su su-c">♣︎</span> – 3<span class="su su-s">♠︎</span></span></td></tr><tr><td class="bid k-brun" data-pts="18–19"><span class="bt">3NT</span></td><td class="num">18–19</td><td class="">jævn, hold i de umeldte farver</td></tr><tr><td class="bid k-gron" data-pts="16+"><span class="bt">udgang i svarers major</span></td><td class="num">16+</td><td class="">3+ støtte, fx <span class="seqn">1<span class="su su-s">♠︎</span> – 2<span class="su su-h">♥︎</span> – 4<span class="su su-h">♥︎</span></span></td></tr></tbody></table></div>
+<div class="prose">
+<p>Reglen for åbner er den samme hver gang: har du 16, må meldingerne ikke kunne gå i stå under udgang. Har du 12–15, så begræns hånden og lad svarer bestemme.</p>
+<h3>Svarers anden melding: 10–12 eller 13+</h3>
+</div>
+<div class="tw"><table class="t mt3 "><thead><tr><th scope="col">Melding</th><th scope="col" class="num">Point</th><th scope="col">Viser</th></tr></thead><tbody><tr class="grp"><td colspan="3">Afmelding eller invit, 10–12</td></tr><tr><td class="bid k-gra" data-pts="10–11"><span class="bt">pas</span></td><td class="num">10–11</td><td class="">åbner har afmeldt, og der er ingen udgang</td></tr><tr><td class="bid k-gron" data-pts="10–12"><span class="bt">2 i åbners major</span></td><td class="num">10–12</td><td class="">præference med 2–3 kort efter åbners nye farve. Ikke krav</td></tr><tr><td class="bid k-brun" data-pts="10–12"><span class="bt">2NT</span></td><td class="num">10–12</td><td class="">jævn, hold i de umeldte farver. Invit</td></tr><tr><td class="bid k-gron" data-pts="10–12"><span class="bt">3 i åbners major</span></td><td class="num">10–12</td><td class="">støtte efter åbners 2 i farven. Invit</td></tr><tr><td class="bid k-gron" data-pts="10–12"><span class="bt">3 i egen farve</span></td><td class="num">10–12</td><td class="">god sekskortsfarve. Invit</td></tr><tr class="grp"><td colspan="3">Udgang, 13+</td></tr><tr><td class="bid k-brun" data-pts="13–15"><span class="bt">3NT</span></td><td class="num">13–15</td><td class="">hold i de umeldte farver</td></tr><tr><td class="bid k-gron" data-pts="13–15"><span class="bt">4 i åbners major</span></td><td class="num">13–15</td><td class="">støtte, ingen sleminteresse</td></tr><tr><td class="bid k-bla" data-pts="13+"><span class="bt">spring i åbners major</span></td><td class="num">13+</td><td class="">støtte og sleminteresse, fx <span class="seqn">1<span class="su su-s">♠︎</span> – 2<span class="su su-c">♣︎</span> – 2<span class="su su-d">♦︎</span> – 3<span class="su su-s">♠︎</span></span></td></tr><tr class="grp"><td colspan="3">Krav</td></tr><tr><td class="bid k-bla" data-pts="10+"><span class="bt">ny farve</span></td><td class="num">10+</td><td class="">rundekrav; den fjerde farve er kunstig (fjerde farve krav)</td></tr></tbody></table></div>
+<div class="prose">
+<p>Pas på med 3<span class="su su-s">♠︎</span>: efter åbners 2<span class="su su-s">♠︎</span> er svarers 3<span class="su su-s">♠︎</span> et almindeligt løft og betyder invit. Efter åbners nye farve, fx <span class="seqn">1<span class="su su-s">♠︎</span> – 2<span class="su su-c">♣︎</span> – 2<span class="su su-d">♦︎</span></span>, er 3<span class="su su-s">♠︎</span> et spring og lover 13+.</p>
+<div class="note"><h4>Makkeraftale: må svarer passe?</h4><p>I Dansk Bridge Standard må svarer passe åbners afmelding med 10–11, når der ikke er udgang. Nogle par – blandt andet efter den amerikanske SAYC – aftaler i stedet, at 2 over 1 lover én melding til, så meldingerne aldrig stopper under 2NT. Begge dele virker; det vigtige er, at I spiller det samme.</p></div>
+<div class="note"><h4>Efter forhåndspas</h4><p>Har svarer passet i første runde, er ny farve på 2-trinnet ikke krav. Den viser 10–11 hp og en god farve, og åbner må passe med minimum.</p></div>
+<h3>Dansk og amerikansk 2 over 1</h3>
+</div>
+<div class="tw"><table class="t cmp"><thead><tr><th scope="col"></th><th scope="col">Dansk (10+)</th><th scope="col">Amerikansk (udgangskrav)</th></tr></thead><tbody>
+<tr><td>2 over 1</td><td data-l="Dansk">10+ hp, rundekrav</td><td data-l="Amerikansk">12–13+ hp, udgangskrav</td></tr>
+<tr><td>1NT-svaret</td><td data-l="Dansk">6–9 hp, kan passes</td><td data-l="Amerikansk">6–12 hp, krav eller semikrav</td></tr>
+<tr><td>Svarer med 10–12 uden fit</td><td data-l="Dansk">2 over 1 – og invit bagefter</td><td data-l="Amerikansk">1NT – og invit bagefter</td></tr>
+<tr><td>Åbners 2 i egen farve efter 2 over 1</td><td data-l="Dansk">12–15, afmelding</td><td data-l="Amerikansk">12+, afventende – kan ikke passes</td></tr>
+<tr><td>Styrken</td><td data-l="Dansk">enkelt og naturligt, stopper lavt</td><td data-l="Amerikansk">plads til at undersøge slem</td></tr>
+</tbody></table></div>
+<div class="prose"><p class="small">Jeres systemdokument, <i>2 over 1 – Moderne majorstøtte</i>, bruger den amerikanske model: 2 over 1 er 13+ og udgangskrav, og 1NT-svaret er semikrav med 6–12 hp.</p></div>
+</section>
+
+<section class="chap" id="spil-fred">
+<h2><span class="no">5</span>Spil i fred</h2>
+<div class="prose"><p class="diag-key">Sådan læser du diagrammerne: tallet ved hver hånd er honnørpoint. Rød kant om bordet betyder, at parret på den led er i zonen, og guldringen markerer giver.</p></div>
+
+<article class="board" id="spil-1">
+  <h3><span class="bn">Spil 1</span> Svarer har 10 – stop i delkontrakt</h3>
+  <div class="board-grid">
+    <div class="deal" role="group" aria-label="Spillet rundt om bordet. Giver Nord, zone Ingen."><div class="info">Giver: Nord<br>Zone: Ingen</div><div class="hand h-n"><div class="who">Nord <b>13 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">K B 4</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">E D 9 6 3</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">K 10 5</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">7 2</span></div></div><div class="hand h-w"><div class="who">Vest <b>7 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">9 5 2</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">10 5 2</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">E D 8 3</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">B 8 4</span></div></div><div class="tblx"><div class="felt" aria-hidden="true"><span class="n giver">N</span><span class="s">S</span><span class="w">V</span><span class="e">Ø</span></div></div><div class="hand h-e"><div class="who">Øst <b>10 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">E 10 8 6</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">K B 7</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">9 7 4</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">D 10 5</span></div></div><div class="hand h-s"><div class="who">Syd <b>10 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">D 7 3</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">8 4</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">B 6 2</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">E K 9 6 3</span></div></div></div>
+    <div><table class="auc"><thead><tr><th scope="col" class="ew">V</th><th scope="col" class="ns">N</th><th scope="col" class="ew">Ø</th><th scope="col" class="ns">S</th></tr></thead><tbody><tr><td class="ew"></td><td class="ns"><b>1<span class="su su-h">♥︎</span></b></td><td class="ew"><span class="pas">pas</span></td><td class="ns"><b>2<span class="su su-c">♣︎</span></b></td></tr><tr><td class="ew"><span class="pas">pas</span></td><td class="ns"><b>2NT</b></td><td class="ew"><span class="pas">pas</span></td><td class="ns"><span class="pas">pas</span></td></tr><tr><td class="ew"><span class="pas">pas</span></td><td class="ns"></td><td class="ew"></td><td class="ns"></td></tr></tbody></table><p class="result"><b>Dobbeltdummy:</b> 8 stik i sans til Nord – 2NT hjemme, 3NT én ned.</p></div>
+  </div>
+  <div class="tw"><table class="t mt2 "><thead><tr><th scope="col">Melding</th><th scope="col">Betydning</th></tr></thead><tbody><tr><td class="bid k-gron"><span class="bt">1<span class="su su-h">♥︎</span></span></td><td class="">13 hp og fem hjerter.</td></tr><tr><td class="bid k-bla"><span class="bt">2<span class="su su-c">♣︎</span></span></td><td class="">10 hp og fem klør. 2 over 1: 10+, rundekrav.</td></tr><tr><td class="bid k-brun"><span class="bt">2NT</span></td><td class="">12–14, jævn, hold i spar og ruder. Afmelding.</td></tr><tr><td class="bid k-gra"><span class="bt">pas</span></td><td class="">10 + 12–14 = 22–24. Der er ingen udgang.</td></tr></tbody></table></div>
+  <div class="prose"><p>Syd har præcis det, han har lovet, og passer. Med 12 hp havde han hævet til 3NT; med 11 afgør kvaliteten af klørfarven. Læg mærke til, at Syd aldrig var i tvivl om sin første melding: 10 hp er nok til 2<span class="su su-c">♣︎</span>, fordi rundekravet ikke forpligter nogen til udgang.</p><p class="calc">Nord 13 + Syd 10 = 23 hp: delkontrakt.</p></div>
+</article>
+<article class="board" id="spil-2">
+  <h3><span class="bn">Spil 2</span> Åbner har 16 – nu skal der meldes udgang</h3>
+  <div class="board-grid">
+    <div class="deal" role="group" aria-label="Spillet rundt om bordet. Giver Nord, zone Nord-Syd."><div class="info">Giver: Nord<br>Zone: Nord-Syd</div><div class="hand h-n"><div class="who">Nord <b>16 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">E K 10 7 5</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">8</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">K 4</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">E D 9 6 3</span></div></div><div class="hand h-w"><div class="who">Vest <b>3 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">4 2</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">B 9 6 3</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">B 5 3 2</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">B 7 2</span></div></div><div class="tblx"><div class="felt vns" aria-hidden="true"><span class="n giver">N</span><span class="s">S</span><span class="w">V</span><span class="e">Ø</span></div></div><div class="hand h-e"><div class="who">Øst <b>10 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">B 9 8</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">E D 7 4</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">10 8 6</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">K 10 5</span></div></div><div class="hand h-s"><div class="who">Syd <b>11 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">D 6 3</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">K 10 5 2</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">E D 9 7</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">8 4</span></div></div></div>
+    <div><table class="auc"><thead><tr><th scope="col" class="ew">V</th><th scope="col" class="ns">N</th><th scope="col" class="ew">Ø</th><th scope="col" class="ns">S</th></tr></thead><tbody><tr><td class="ew"></td><td class="ns"><b>1<span class="su su-s">♠︎</span></b></td><td class="ew"><span class="pas">pas</span></td><td class="ns"><b>2<span class="su su-d">♦︎</span></b></td></tr><tr><td class="ew"><span class="pas">pas</span></td><td class="ns"><b>3<span class="su su-c">♣︎</span></b></td><td class="ew"><span class="pas">pas</span></td><td class="ns"><b>3<span class="su su-s">♠︎</span></b></td></tr><tr><td class="ew"><span class="pas">pas</span></td><td class="ns"><b>4<span class="su su-s">♠︎</span></b></td><td class="ew"><span class="pas">pas</span></td><td class="ns"><span class="pas">pas</span></td></tr><tr><td class="ew"><span class="pas">pas</span></td><td class="ns"></td><td class="ew"></td><td class="ns"></td></tr></tbody></table><p class="result"><b>Dobbeltdummy:</b> 11 stik i spar – 4<span class="su su-s">♠︎</span> med overstik, men ingen slem.</p></div>
+  </div>
+  <div class="tw"><table class="t mt2 "><thead><tr><th scope="col">Melding</th><th scope="col">Betydning</th></tr></thead><tbody><tr><td class="bid k-gron"><span class="bt">1<span class="su su-s">♠︎</span></span></td><td class="">16 hp, 5-5 i de sorte farver. Med to femfarver åbnes den højeste.</td></tr><tr><td class="bid k-bla"><span class="bt">2<span class="su su-d">♦︎</span></span></td><td class="">11 hp. To firfarver meldes nedefra – 2<span class="su su-h">♥︎</span> ville kræve fem hjerter.</td></tr><tr><td class="bid k-bla"><span class="bt">3<span class="su su-c">♣︎</span></span></td><td class="">Ny farve på 3-trinnet: 16+ og krav. 16 + 10 = 26.</td></tr><tr><td class="bid k-gron"><span class="bt">3<span class="su su-s">♠︎</span></span></td><td class="">Trekortsstøtte.</td></tr><tr><td class="bid k-gron"><span class="bt">4<span class="su su-s">♠︎</span></span></td><td class="">Udgang.</td></tr></tbody></table></div>
+  <div class="prose"><p>Med 13 hp havde Nord genmeldt 2<span class="su su-s">♠︎</span>, og så kunne Syd med 11 hp højst have inviteret. Med 16 kan Nord ikke risikere, at meldingerne går i stå, så han vælger en melding, der er krav. Syds 3<span class="su su-s">♠︎</span> er vigtig: Nord hører om støtten, før han vælger udgang.</p><p class="calc">Nord 16 + Syd 11 = 27 hp: udgang, ikke slem.</p></div>
+</article>
+<article class="board" id="spil-3">
+  <h3><span class="bn">Spil 3</span> Svarer har 14 – 2 over 1 først, udgang bagefter</h3>
+  <div class="board-grid">
+    <div class="deal" role="group" aria-label="Spillet rundt om bordet. Giver Nord, zone Alle."><div class="info">Giver: Nord<br>Zone: Alle</div><div class="hand h-n"><div class="who">Nord <b>12 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">9 4</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">E D B 8 6 3</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">K 7</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">D 5 2</span></div></div><div class="hand h-w"><div class="who">Vest <b>8 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">D B 10 2</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">2</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">B 10 5 2</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">E 7 6 3</span></div></div><div class="tblx"><div class="felt vall" aria-hidden="true"><span class="n giver">N</span><span class="s">S</span><span class="w">V</span><span class="e">Ø</span></div></div><div class="hand h-e"><div class="who">Øst <b>6 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">K 8 6 3</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">10 7 5</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">D 9 4</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">B 9 8</span></div></div><div class="hand h-s"><div class="who">Syd <b>14 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">E 7 5</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">K 9 4</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">E 8 6 3</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">K 10 4</span></div></div></div>
+    <div><table class="auc"><thead><tr><th scope="col" class="ew">V</th><th scope="col" class="ns">N</th><th scope="col" class="ew">Ø</th><th scope="col" class="ns">S</th></tr></thead><tbody><tr><td class="ew"></td><td class="ns"><b>1<span class="su su-h">♥︎</span></b></td><td class="ew"><span class="pas">pas</span></td><td class="ns"><b>2<span class="su su-d">♦︎</span></b></td></tr><tr><td class="ew"><span class="pas">pas</span></td><td class="ns"><b>2<span class="su su-h">♥︎</span></b></td><td class="ew"><span class="pas">pas</span></td><td class="ns"><b>4<span class="su su-h">♥︎</span></b></td></tr><tr><td class="ew"><span class="pas">pas</span></td><td class="ns"><span class="pas">pas</span></td><td class="ew"><span class="pas">pas</span></td><td class="ns"></td></tr></tbody></table><p class="result"><b>Dobbeltdummy:</b> 11 stik i hjerter, 9 i sans.</p></div>
+  </div>
+  <div class="tw"><table class="t mt2 "><thead><tr><th scope="col">Melding</th><th scope="col">Betydning</th></tr></thead><tbody><tr><td class="bid k-gron"><span class="bt">1<span class="su su-h">♥︎</span></span></td><td class="">12 hp og seks hjerter.</td></tr><tr><td class="bid k-bla"><span class="bt">2<span class="su su-d">♦︎</span></span></td><td class="">14 hp og kun tre hjerter. 2NT kræver fire trumf, så Syd melder sin firfarve først.</td></tr><tr><td class="bid k-gron"><span class="bt">2<span class="su su-h">♥︎</span></span></td><td class="">12–15 og 6+ hjerter. Afmelding.</td></tr><tr><td class="bid k-gron"><span class="bt">4<span class="su su-h">♥︎</span></span></td><td class="">13–15 med støtte, ingen sleminteresse. Slutmelding.</td></tr></tbody></table></div>
+  <div class="prose"><p>Syd vidste fra første melding, at der var udgang: 14 + mindst 12. Rundekravet købte ham tid til at finde ud af, hvor udgangen skulle spilles. Havde han haft to hjerter i stedet for tre, var slutmeldingen blevet 3NT.</p><p class="calc">Nord 12 + Syd 14 = 26 hp: udgang.</p></div>
+</article>
+<article class="board" id="spil-4">
+  <h3><span class="bn">Spil 4</span> Tre trumf og 11 hp – 2 over 1, så invit</h3>
+  <div class="board-grid">
+    <div class="deal" role="group" aria-label="Spillet rundt om bordet. Giver Nord, zone Ingen."><div class="info">Giver: Nord<br>Zone: Ingen</div><div class="hand h-n"><div class="who">Nord <b>13 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">E D 10 9 7 4</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">K 6</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">K B 5</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">8 3</span></div></div><div class="hand h-w"><div class="who">Vest <b>7 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">2</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">B 9 3 2</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">D 10 4 3</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">E 9 6 2</span></div></div><div class="tblx"><div class="felt" aria-hidden="true"><span class="n giver">N</span><span class="s">S</span><span class="w">V</span><span class="e">Ø</span></div></div><div class="hand h-e"><div class="who">Øst <b>9 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">B 8 6</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">D 10 7 5</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">E 9 8</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">D 7 4</span></div></div><div class="hand h-s"><div class="who">Syd <b>11 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">K 5 3</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">E 8 4</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">7 6 2</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">K B 10 5</span></div></div></div>
+    <div><table class="auc"><thead><tr><th scope="col" class="ew">V</th><th scope="col" class="ns">N</th><th scope="col" class="ew">Ø</th><th scope="col" class="ns">S</th></tr></thead><tbody><tr><td class="ew"></td><td class="ns"><b>1<span class="su su-s">♠︎</span></b></td><td class="ew"><span class="pas">pas</span></td><td class="ns"><b>2<span class="su su-c">♣︎</span></b></td></tr><tr><td class="ew"><span class="pas">pas</span></td><td class="ns"><b>2<span class="su su-s">♠︎</span></b></td><td class="ew"><span class="pas">pas</span></td><td class="ns"><b>3<span class="su su-s">♠︎</span></b></td></tr><tr><td class="ew"><span class="pas">pas</span></td><td class="ns"><b>4<span class="su su-s">♠︎</span></b></td><td class="ew"><span class="pas">pas</span></td><td class="ns"><span class="pas">pas</span></td></tr><tr><td class="ew"><span class="pas">pas</span></td><td class="ns"></td><td class="ew"></td><td class="ns"></td></tr></tbody></table><p class="result"><b>Dobbeltdummy:</b> 10 stik i spar – 4<span class="su su-s">♠︎</span> hjemme.</p></div>
+  </div>
+  <div class="tw"><table class="t mt2 "><thead><tr><th scope="col">Melding</th><th scope="col">Betydning</th></tr></thead><tbody><tr><td class="bid k-gron"><span class="bt">1<span class="su su-s">♠︎</span></span></td><td class="">13 hp og seks spar.</td></tr><tr><td class="bid k-bla"><span class="bt">2<span class="su su-c">♣︎</span></span></td><td class="">11 hp og tre spar. For stærk til 2<span class="su su-s">♠︎</span>, for få trumf til 3<span class="su su-s">♠︎</span>, som lover fire.</td></tr><tr><td class="bid k-gron"><span class="bt">2<span class="su su-s">♠︎</span></span></td><td class="">12–15 og 6+ spar. Afmelding.</td></tr><tr><td class="bid k-gron"><span class="bt">3<span class="su su-s">♠︎</span></span></td><td class="">10–12 med støtte. Invit.</td></tr><tr><td class="bid k-gron"><span class="bt">4<span class="su su-s">♠︎</span></span></td><td class="">Accept. Sekskortsfarven med 10 og 9 er et point værd, og ni trumf tilsammen er næsten et stik bedre end otte.</td></tr></tbody></table></div>
+  <div class="prose"><p>Invitationen lægger beslutningen hos åbner, der nu kender begge hænders interval. Nederst i intervallet passer man normalt – men tæl længden med, når fittet er fundet. Med samme hånd og kun fem spar havde Nord passet 3<span class="su su-s">♠︎</span>.</p><p class="calc">Nord 13 + Syd 11 = 24 hp – plus ni trumf og en sekskortsfarve: udgang.</p></div>
+</article>
+</section>
+
+<section class="chap" id="indblanding">
+<h2><span class="no">6</span>Når modparten blander sig</h2>
+<div class="prose">
+<p>Indblanding ændrer mindre ved pointene, end man skulle tro, men meget ved meldingerne. Fire principper dækker det meste:</p>
+<ul class="tight">
+<li><strong>Pointkravene står næsten fast.</strong> En fri ny farve på 2-trinnet lover stadig 10+ og er stadig rundekrav. Men farven skal være god, fordi den negative dobling tager sig af hænderne med en firfarve i umeldt major.</li>
+<li><strong>Støtten skifter udtryk.</strong> Et spring i makkers major er nu spærrende, og den stærke støtte går gennem deres farve. Vis støtten, før du viser noget andet.</li>
+<li><strong>Pas er en melding.</strong> Svarer kan passe med styrke i deres farve – lurepas – fordi åbner genåbner med dobling, når han er kort i farven.</li>
+<li><strong>Efter oplysningsdobling er 2 over 1 slået fra.</strong> 10+ uden fit vises med redobling, 10+ sp med fire trumf med 2NT, og en ny farve på 2-trinnet er nu svag.</li>
+</ul>
+<h3>Svarer efter indmelding i farve</h3>
+<p class="small">Fx <span class="seqn">1<span class="su su-h">♥︎</span> – (1<span class="su su-s">♠︎</span>) – ?</span> eller <span class="seqn">1<span class="su su-s">♠︎</span> – (2<span class="su su-d">♦︎</span>) – ?</span></p>
+</div>
+<div class="tw"><table class="t mt3 "><thead><tr><th scope="col">Melding</th><th scope="col" class="num">Point</th><th scope="col">Betydning</th></tr></thead><tbody><tr class="grp"><td colspan="3">Farve og sans</td></tr><tr><td class="bid k-bla" data-pts="6+ hp"><span class="bt">ny farve på 1-trinnet</span></td><td class="num">6+ hp</td><td class="">4+ kort, rundekrav. Efter <span class="seqn">1<span class="su su-c">♣︎</span>/1<span class="su su-d">♦︎</span> – (1<span class="su su-h">♥︎</span>)</span> lover 1<span class="su su-s">♠︎</span> fem kort; dobling viser præcis fire</td></tr><tr><td class="bid k-bla" data-pts="10+ hp"><span class="bt">ny farve på 2-trinnet</span></td><td class="num">10+ hp</td><td class="">god 5+ farve, rundekrav</td></tr><tr><td class="bid k-bla" data-pts="ca. 11+ hp"><span class="bt">ny farve på 3-trinnet</span></td><td class="num">ca. 11+ hp</td><td class="">god 5+ farve, krav</td></tr><tr><td class="bid k-brun" data-pts="8–10 hp"><span class="bt">1NT</span></td><td class="num">8–10 hp</td><td class="">hold i deres farve</td></tr><tr><td class="bid k-brun" data-pts="11–12 hp"><span class="bt">2NT</span></td><td class="num">11–12 hp</td><td class="">hold i deres farve. Invit</td></tr><tr><td class="bid k-brun" data-pts="13–15 hp"><span class="bt">3NT</span></td><td class="num">13–15 hp</td><td class="">hold i deres farve</td></tr><tr class="grp"><td colspan="3">Støtte</td></tr><tr><td class="bid k-gron" data-pts="6–9 sp"><span class="bt">simpel støtte</span></td><td class="num">6–9 sp</td><td class="">3+ støtte</td></tr><tr><td class="bid k-rosa" data-pts="højst 9 sp"><span class="bt">spring i makkers farve</span></td><td class="num">højst 9 sp</td><td class="">4+ støtte. Spærrende</td></tr><tr><td class="bid k-gul" data-pts="10+ sp"><span class="bt">overmelding i deres farve</span></td><td class="num">10+ sp</td><td class="">støtte, mindst invit</td></tr><tr class="grp"><td colspan="3">Dobling og pas</td></tr><tr><td class="bid k-gul" data-pts="6+ / 8+ / 10+"><span class="bt">negativ dobling</span></td><td class="num">6+ / 8+ / 10+</td><td class="">de umeldte farver, især en firfarve i umeldt major. Kravet stiger med trinnet: 1-, 2- og 3-trinnet</td></tr><tr><td class="bid k-gra" data-pts="0–7 hp"><span class="bt">pas</span></td><td class="num">0–7 hp</td><td class="">ingen god melding – eller lurepas med styrke i deres farve</td></tr></tbody></table></div>
+<div class="prose">
+<h3>Svarer efter oplysningsdobling</h3>
+<p class="small">Fx <span class="seqn">1<span class="su su-h">♥︎</span> – (dbl) – ?</span></p>
+</div>
+<div class="tw"><table class="t mt3 "><thead><tr><th scope="col">Melding</th><th scope="col" class="num">Point</th><th scope="col">Betydning</th></tr></thead><tbody><tr class="grp"><td colspan="3">Med 10+</td></tr><tr><td class="bid k-bla" data-pts="10+ hp"><span class="bt">redobling</span></td><td class="num">10+ hp</td><td class="">uden fit – spillet er vores</td></tr><tr><td class="bid k-gul" data-pts="10+ sp"><span class="bt">2NT</span></td><td class="num">10+ sp</td><td class="">4+ støtte, mindst invit. Alertér</td></tr><tr class="grp"><td colspan="3">Med støtte, under 10</td></tr><tr><td class="bid k-gron" data-pts="6–9 sp"><span class="bt">2 i makkers major</span></td><td class="num">6–9 sp</td><td class="">3+ støtte</td></tr><tr><td class="bid k-rosa" data-pts="højst 9 sp"><span class="bt">3 i makkers major</span></td><td class="num">højst 9 sp</td><td class="">4+ støtte. Spærrende</td></tr><tr><td class="bid k-rosa" data-pts="højst 9 hp"><span class="bt">4 i makkers major</span></td><td class="num">højst 9 hp</td><td class="">5+ støtte. Spærrende</td></tr><tr class="grp"><td colspan="3">Uden støtte, under 10</td></tr><tr><td class="bid k-gron" data-pts="6–9 hp"><span class="bt">ny farve på 1-trinnet</span></td><td class="num">6–9 hp</td><td class="">4+ kort. Ikke krav</td></tr><tr><td class="bid k-rosa" data-pts="6–9 hp"><span class="bt">ny farve på 2-trinnet</span></td><td class="num">6–9 hp</td><td class="">god sekskortsfarve. Ikke krav – 2 over 1 er slået fra</td></tr><tr><td class="bid k-brun" data-pts="6–9 hp"><span class="bt">1NT</span></td><td class="num">6–9 hp</td><td class="">jævn, ingen støtte</td></tr><tr><td class="bid k-gra" data-pts="0–5 hp"><span class="bt">pas</span></td><td class="num">0–5 hp</td><td class="">–</td></tr></tbody></table></div>
+<div class="prose">
+<p>Efter redoblingen er kontrakten jeres. Flygter modparten, må ingen af jer lade dem spille udoblet: pas er krav og beder makker doble eller melde.</p>
+<h3>Når de spærrer højere</h3>
+<p>Springer modparten til 3-trinnet, fx <span class="seqn">1<span class="su su-s">♠︎</span> – (3<span class="su su-c">♣︎</span>) – ?</span>, er pladsen væk, og nogle meldinger må gættes. Dobling er negativ og viser ca. 10+ med den umeldte major, en ny farve lover ca. 11+ og en god farve og er krav, og 3NT er til at spille. En fri farve på 3-trinnet skal stadig kunne tåle at blive trumf.</p>
+<h3>Åbneren, når modparten blander sig</h3>
+</div>
+<div class="tw"><table class="t mt3 "><thead><tr><th scope="col">Melding</th><th scope="col" class="num">Point</th><th scope="col">Betydning</th></tr></thead><tbody><tr class="grp"><td colspan="3">Efter makkers negative dobling</td></tr><tr><td class="bid k-gron" data-pts="12–15"><span class="bt">støtte billigst i hans major</span></td><td class="num">12–15</td><td class="">fire kort</td></tr><tr><td class="bid k-gron" data-pts="16–18"><span class="bt">spring i hans major</span></td><td class="num">16–18</td><td class="">fire kort</td></tr><tr><td class="bid k-gron" data-pts="19+"><span class="bt">udgang i hans major</span></td><td class="num">19+</td><td class="">fire kort</td></tr><tr><td class="bid k-brun" data-pts="12–15"><span class="bt">sans billigst</span></td><td class="num">12–15</td><td class="">jævn, hold i deres farve</td></tr><tr><td class="bid k-gra" data-pts="12–14"><span class="bt">pas</span></td><td class="num">12–14</td><td class="">fire gode kort i deres farve – straf</td></tr><tr class="grp"><td colspan="3">Efter <span class="seqn">1<span class="su su-h">♥︎</span> – (pas) – 1<span class="su su-s">♠︎</span> – (2<span class="su su-c">♣︎</span>)</span></td></tr><tr><td class="bid k-gul" data-pts="alle"><span class="bt">dobling</span></td><td class="num">alle</td><td class="">støttedobling: præcis tre spar</td></tr><tr><td class="bid k-gron" data-pts="12–15"><span class="bt">2<span class="su su-s">♠︎</span></span></td><td class="num">12–15</td><td class="">fire spar</td></tr><tr class="grp"><td colspan="3">Indmeldingen går rundt: <span class="seqn">1<span class="su su-s">♠︎</span> – (2<span class="su su-c">♣︎</span>) – pas – (pas)</span></td></tr><tr><td class="bid k-bla" data-pts="12+"><span class="bt">dobling</span></td><td class="num">12+</td><td class="">genåbning: højst to kort i deres farve</td></tr><tr><td class="bid k-gra" data-pts="–"><span class="bt">pas</span></td><td class="num">–</td><td class="">tre eller flere kort i deres farve</td></tr><tr class="grp"><td colspan="3">Indmelding over makkers 2 over 1: <span class="seqn">1<span class="su su-s">♠︎</span> – (pas) – 2<span class="su su-d">♦︎</span> – (2<span class="su su-h">♥︎</span>)</span></td></tr><tr><td class="bid k-gra" data-pts="12–15"><span class="bt">pas</span></td><td class="num">12–15</td><td class="">intet at tilføje – svarer får en ny chance</td></tr><tr><td class="bid k-bla" data-pts="12+"><span class="bt">dobling</span></td><td class="num">12+</td><td class="">straf: gode hjerter</td></tr><tr><td class="bid k-gron" data-pts="som ellers"><span class="bt">andre meldinger</span></td><td class="num">som ellers</td><td class="">naturlige, som uden indmelding</td></tr></tbody></table></div>
+<div class="prose">
+<h3>Loven – når begge sider har fit</h3>
+<p>I kampen om delkontrakten melder man efter trumflængde, ikke efter point: 8 trumf tilsammen giver 2-trinnet, 9 giver 3-trinnet og 10 giver 4-trinnet. Det er derfor, springstøtten efter indmelding kan være svag – den viser fire trumf, ikke point.</p>
+</div>
+</section>
+
+<section class="chap" id="spil-konkurrence">
+<h2><span class="no">7</span>Spil efter indblanding</h2>
+
+<article class="board" id="spil-5">
+  <h3><span class="bn">Spil 5</span> Indmelding – den stærke støtte går gennem deres farve</h3>
+  <div class="board-grid">
+    <div class="deal" role="group" aria-label="Spillet rundt om bordet. Giver Nord, zone Ingen."><div class="info">Giver: Nord<br>Zone: Ingen</div><div class="hand h-n"><div class="who">Nord <b>12 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">E K 9 7 4</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">K 8 6</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">8 5</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">D 7 3</span></div></div><div class="hand h-w"><div class="who">Vest <b>5 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">B 10 3 2</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">D B 10 2</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">B 4 2</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">10 8</span></div></div><div class="tblx"><div class="felt" aria-hidden="true"><span class="n giver">N</span><span class="s">S</span><span class="w">V</span><span class="e">Ø</span></div></div><div class="hand h-e"><div class="who">Øst <b>12 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">6</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">9 5 4</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">E K D 10 7</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">K 9 6 5</span></div></div><div class="hand h-s"><div class="who">Syd <b>11 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">D 8 5</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">E 7 3</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">9 6 3</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">E B 4 2</span></div></div></div>
+    <div><table class="auc"><thead><tr><th scope="col" class="ew">V</th><th scope="col" class="ns">N</th><th scope="col" class="ew">Ø</th><th scope="col" class="ns">S</th></tr></thead><tbody><tr><td class="ew"></td><td class="ns"><b>1<span class="su su-s">♠︎</span></b></td><td class="ew"><b>2<span class="su su-d">♦︎</span></b></td><td class="ns"><b>3<span class="su su-d">♦︎</span></b></td></tr><tr><td class="ew"><span class="pas">pas</span></td><td class="ns"><b>3<span class="su su-s">♠︎</span></b></td><td class="ew"><span class="pas">pas</span></td><td class="ns"><span class="pas">pas</span></td></tr><tr><td class="ew"><span class="pas">pas</span></td><td class="ns"></td><td class="ew"></td><td class="ns"></td></tr></tbody></table><p class="result"><b>Dobbeltdummy:</b> 9 stik i spar – 3<span class="su su-s">♠︎</span> hjemme, 4<span class="su su-s">♠︎</span> én ned.</p></div>
+  </div>
+  <div class="tw"><table class="t mt2 "><thead><tr><th scope="col">Melding</th><th scope="col">Betydning</th></tr></thead><tbody><tr><td class="bid k-gron"><span class="bt">1<span class="su su-s">♠︎</span></span></td><td class="">12 hp og fem spar.</td></tr><tr><td class="bid k-gra"><span class="bt">(2<span class="su su-d">♦︎</span>)</span></td><td class="">Indmelding med god femfarve.</td></tr><tr><td class="bid k-gul"><span class="bt">3<span class="su su-d">♦︎</span></span></td><td class="">Overmelding i deres farve: 10+ sp med sparstøtte. Et spring til 3<span class="su su-s">♠︎</span> ville nu være spærrende.</td></tr><tr><td class="bid k-gron"><span class="bt">3<span class="su su-s">♠︎</span></span></td><td class="">Minimum. Afmelding.</td></tr><tr><td class="bid k-gra"><span class="bt">pas</span></td><td class="">Syd har 11 sp: 11 + 12 = 23.</td></tr></tbody></table></div>
+  <div class="prose"><p>Uden indmeldingen havde Syd meldt 2<span class="su su-c">♣︎</span> og støttet bagefter, som i spil 4. Nu er pladsen væk, og overmeldingen i deres farve siger »mindst invit med støtte« i én melding. Med 14–15 hp havde Nord meldt 4<span class="su su-s">♠︎</span>.</p><p class="calc">Nord 12 + Syd 11 = 23 hp: delkontrakt.</p></div>
+</article>
+<article class="board" id="spil-6">
+  <h3><span class="bn">Spil 6</span> Oplysningsdobling – 10+ vises med redobling</h3>
+  <div class="board-grid">
+    <div class="deal" role="group" aria-label="Spillet rundt om bordet. Giver Nord, zone Øst-Vest."><div class="info">Giver: Nord<br>Zone: Øst-Vest</div><div class="hand h-n"><div class="who">Nord <b>14 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">K 7 2</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">E D B 8 6 3</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">E 5 3</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">4</span></div></div><div class="hand h-w"><div class="who">Vest <b>0 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">10 6 4</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">10 9 5 2</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">8</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">9 7 6 5 3</span></div></div><div class="tblx"><div class="felt vew" aria-hidden="true"><span class="n giver">N</span><span class="s">S</span><span class="w">V</span><span class="e">Ø</span></div></div><div class="hand h-e"><div class="who">Øst <b>14 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">E D 9 8</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">7</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">D B 9 6 4</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">E B 2</span></div></div><div class="hand h-s"><div class="who">Syd <b>12 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">B 5 3</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">K 4</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">K 10 7 2</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">K D 10 8</span></div></div></div>
+    <div><table class="auc"><thead><tr><th scope="col" class="ew">V</th><th scope="col" class="ns">N</th><th scope="col" class="ew">Ø</th><th scope="col" class="ns">S</th></tr></thead><tbody><tr><td class="ew"></td><td class="ns"><b>1<span class="su su-h">♥︎</span></b></td><td class="ew"><span class="x">dbl</span></td><td class="ns"><span class="x">rdbl</span></td></tr><tr><td class="ew"><b>2<span class="su su-c">♣︎</span></b></td><td class="ns"><span class="pas">pas</span></td><td class="ew"><span class="pas">pas</span></td><td class="ns"><span class="x">dbl</span></td></tr><tr><td class="ew"><span class="pas">pas</span></td><td class="ns"><span class="pas">pas</span></td><td class="ew"><span class="pas">pas</span></td><td class="ns"></td></tr></tbody></table><p class="result"><b>Dobbeltdummy:</b> Vest får 5 stik i 2<span class="su su-c">♣︎</span> doblet – tre ned i zonen, 800 til Nord-Syd. 4<span class="su su-h">♥︎</span> ville give 450.</p></div>
+  </div>
+  <div class="tw"><table class="t mt2 "><thead><tr><th scope="col">Melding</th><th scope="col">Betydning</th></tr></thead><tbody><tr><td class="bid k-gron"><span class="bt">1<span class="su su-h">♥︎</span></span></td><td class="">14 hp og seks hjerter.</td></tr><tr><td class="bid k-gra"><span class="bt">(dbl)</span></td><td class="">Oplysningsdobling.</td></tr><tr><td class="bid k-bla"><span class="bt">rdbl</span></td><td class="">10+ hp uden fit. Spillet er vores.</td></tr><tr><td class="bid k-gra"><span class="bt">(2<span class="su su-c">♣︎</span>)</span></td><td class="">Flugt.</td></tr><tr><td class="bid k-bla"><span class="bt">pas</span></td><td class="">Kravpas: Nord har ingen klør at doble med og overlader beslutningen til Syd.</td></tr><tr><td class="bid k-bla"><span class="bt">dbl</span></td><td class="">Straf. Syd har K D 10 8 i klør.</td></tr></tbody></table></div>
+  <div class="prose"><p>Uden doblingen havde Syd meldt 2<span class="su su-c">♣︎</span> som 2 over 1. Efter doblingen er en ny farve på 2-trinnet svag, så 10+ skal vises med redobling. Bagefter er kontrakten Nord-Syds: ingen af dem må lade Øst-Vest spille udoblet.</p><p class="calc">Nord 14 + Syd 12 = 26 hp – og Øst-Vest er i zonen: straffen slår udgangen.</p></div>
+</article>
+<article class="board" id="spil-7">
+  <h3><span class="bn">Spil 7</span> Lurepas og genåbning</h3>
+  <div class="board-grid">
+    <div class="deal" role="group" aria-label="Spillet rundt om bordet. Giver Nord, zone Ingen."><div class="info">Giver: Nord<br>Zone: Ingen</div><div class="hand h-n"><div class="who">Nord <b>13 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">E K 10 8 3</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">K 9 4</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">D B 7 2</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">6</span></div></div><div class="hand h-w"><div class="who">Vest <b>4 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">D B 6 5</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">B 8 7 5</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">9 8 4</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">5 2</span></div></div><div class="tblx"><div class="felt" aria-hidden="true"><span class="n giver">N</span><span class="s">S</span><span class="w">V</span><span class="e">Ø</span></div></div><div class="hand h-e"><div class="who">Øst <b>13 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">7 2</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">E 10 3</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">K 6</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">E D 9 7 4 3</span></div></div><div class="hand h-s"><div class="who">Syd <b>10 hp</b></div><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">9 4</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">D 6 2</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">E 10 5 3</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">K B 10 8</span></div></div></div>
+    <div><table class="auc"><thead><tr><th scope="col" class="ew">V</th><th scope="col" class="ns">N</th><th scope="col" class="ew">Ø</th><th scope="col" class="ns">S</th></tr></thead><tbody><tr><td class="ew"></td><td class="ns"><b>1<span class="su su-s">♠︎</span></b></td><td class="ew"><b>2<span class="su su-c">♣︎</span></b></td><td class="ns"><span class="pas">pas</span></td></tr><tr><td class="ew"><span class="pas">pas</span></td><td class="ns"><span class="x">dbl</span></td><td class="ew"><span class="pas">pas</span></td><td class="ns"><span class="pas">pas</span></td></tr><tr><td class="ew"><span class="pas">pas</span></td><td class="ns"></td><td class="ew"></td><td class="ns"></td></tr></tbody></table><p class="result"><b>Dobbeltdummy:</b> Øst får 4 stik – fire ned, 800. 3NT med overstik ville give 430.</p></div>
+  </div>
+  <div class="tw"><table class="t mt2 "><thead><tr><th scope="col">Melding</th><th scope="col">Betydning</th></tr></thead><tbody><tr><td class="bid k-gron"><span class="bt">1<span class="su su-s">♠︎</span></span></td><td class="">13 hp, fem spar og kort klør.</td></tr><tr><td class="bid k-gra"><span class="bt">(2<span class="su su-c">♣︎</span>)</span></td><td class="">Indmelding med seks klør.</td></tr><tr><td class="bid k-gra"><span class="bt">pas</span></td><td class="">Lurepas. Syd har 10 hp og K B 10 8 i klør. En dobling ville være negativ og love fire hjerter, og der er ingen god farve at melde.</td></tr><tr><td class="bid k-bla"><span class="bt">dbl</span></td><td class="">Genåbning: Nord er kort i klør og ved, at Syd kan sidde med netop denne hånd.</td></tr><tr><td class="bid k-bla"><span class="bt">pas</span></td><td class="">Straf.</td></tr></tbody></table></div>
+  <div class="prose"><p>Genåbningen hører med til aftalen om negative doblinger: svarer kan ikke strafdoble selv, så åbner holder meldingerne i live, når han er kort i deres farve. Med tre eller flere klør havde Nord passet.</p><p class="calc">Nord 13 + Syd 10 = 23 hp – men klørerne sidder bag indmelderen: straffen slår udgangen.</p></div>
+</article>
+</section>
+
+<section class="chap" id="test">
+<h2><span class="no">8</span>Test dig selv</h2>
+<div class="prose"><p>Tæl pointene selv, før du åbner svaret.</p></div>
+<div class="quiz"><div class="q">
+  <div class="qn">Opgave 1</div>
+  <div class="seq">Makker åbner 1<span class="su su-h">♥︎</span>. Hvad svarer du?</div>
+  <div class="hand"><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">5</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">K D 8 6</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">E 9 7 4 3</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">8 6 2</span></div></div>
+  <details><summary>Se svaret</summary><p><b>3<span class="su su-h">♥︎</span>.</b> Du har 9 hp, men fire trumf og singleton spar giver 12 sp – springstøtte, invit. 2<span class="su su-h">♥︎</span> ville kun vise 6–9.</p></details>
+</div><div class="q">
+  <div class="qn">Opgave 2</div>
+  <div class="seq">Du åbnede 1<span class="su su-h">♥︎</span>, og makker svarede 2<span class="su su-c">♣︎</span>. Hvad melder du?</div>
+  <div class="hand"><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">E K 7 2</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">E D B 8 4</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">K 6</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">5 3</span></div></div>
+  <details><summary>Se svaret</summary><p><b>2<span class="su su-s">♠︎</span></b> – revers, 16+ og krav. Du har 17 hp, og 17 + 10 = 27: der er udgang, og reversen sørger for, at makker ikke passer.</p></details>
+</div><div class="q">
+  <div class="qn">Opgave 3</div>
+  <div class="seq">Makker åbner 1<span class="su su-s">♠︎</span>, og Øst melder 2<span class="su su-d">♦︎</span>. Hvad melder du?</div>
+  <div class="hand"><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">K 8 4</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">E 7 6 2</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">9 5</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">K D 7 3</span></div></div>
+  <details><summary>Se svaret</summary><p><b>3<span class="su su-d">♦︎</span></b> – overmelding i deres farve: 10+ sp med sparstøtte. Du har 12 hp og 13 sp, så afmelder makker i 3<span class="su su-s">♠︎</span>, melder du 4<span class="su su-s">♠︎</span>. Støtten kommer før hjerterne.</p></details>
+</div><div class="q">
+  <div class="qn">Opgave 4</div>
+  <div class="seq">Makker åbner 1<span class="su su-h">♥︎</span>, og Øst dobler. Hvad melder du?</div>
+  <div class="hand"><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">K D 10 4</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">6</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">E 10 8 3</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">D 9 7 2</span></div></div>
+  <details><summary>Se svaret</summary><p><b>Redobling</b> – 10+ uden fit. Med 11 hp, singleton hjerter og værdier i de tre andre farver har modparten intet sikkert sted at flygte hen.</p></details>
+</div><div class="q">
+  <div class="qn">Opgave 5</div>
+  <div class="seq">Du svarede 2<span class="su su-d">♦︎</span> på makkers 1<span class="su su-h">♥︎</span>, og han genmeldte 2<span class="su su-h">♥︎</span>. Hvad melder du?</div>
+  <div class="hand"><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">K 5</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">K 7 3</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">K D 10 8 4</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">9 6 2</span></div></div>
+  <details><summary>Se svaret</summary><p><b>3<span class="su su-h">♥︎</span></b> – 10–12 med støtte, invit. Du har 11 hp. Makker har vist 12–15: med 14–15 melder han udgang, med 12–13 passer han.</p></details>
+</div><div class="q">
+  <div class="qn">Opgave 6</div>
+  <div class="seq">Du svarede 2<span class="su su-c">♣︎</span> på makkers 1<span class="su su-s">♠︎</span>, og han genmeldte 2NT. Hvad melder du?</div>
+  <div class="hand"><div class="hl"><span class="hs"><span class="su su-s">♠︎</span></span><span class="hc">8 3</span></div><div class="hl"><span class="hs"><span class="su su-h">♥︎</span></span><span class="hc">K 7 4</span></div><div class="hl"><span class="hs"><span class="su su-d">♦︎</span></span><span class="hc">E 9 5</span></div><div class="hl"><span class="hs"><span class="su su-c">♣︎</span></span><span class="hc">K D 10 6 2</span></div></div>
+  <details><summary>Se svaret</summary><p><b>3NT.</b> 12 + 12–14 = 24–26, og klørfarven er god. Med 10 hp ville du passe; med 11 afgør farvens kvalitet.</p></details>
+</div></div>
+</section>
+
+<section class="chap" id="konklusioner">
+<h2><span class="no">9</span>Konklusioner</h2>
+<div class="prose">
+<ol class="concl">
+<li><strong>10 hp er adgangsbilletten til 2-trinnet.</strong> 2 over 1 lover 10+ og kræver én runde mere – ikke udgang.</li>
+<li><strong>Efter 2 over 1 har åbner kun to styrker.</strong> 12–15 afmelder, 16+ kræver. 16 + 10 = 26.</li>
+<li><strong>Svarer med 10–12 inviterer, svarer med 13+ sørger for udgang.</strong> 13 + 12 = 25.</li>
+<li><strong>Honnørpoint styrer, indtil I har fundet en trumffarve.</strong> Derefter tæller I støttepoint – men aldrig i sans.</li>
+<li><strong>6–9 hp med en lang farve er 1NT, ikke 2 over 1.</strong> Det er systemets dyreste fejl.</li>
+<li><strong>Efter indmelding står pointkravene stort set fast, men meldingerne skifter job.</strong> Negativ dobling viser majoren, overmelding i deres farve viser stærk støtte, og springet er spærrende.</li>
+<li><strong>Efter oplysningsdobling forsvinder 2 over 1.</strong> 10+ vises med redobling eller 2NT – og så er kontrakten jeres.</li>
+<li><strong>Pas kan være den stærkeste melding.</strong> Lurepas og genåbning giver ofte mere end udgang.</li>
+</ol>
+</div>
+</section>
+
+<section class="chap" id="aftal">
+<h2>Aftal med makker</h2>
+<div class="prose">
+<p>Seks punkter, hvor gode par spiller forskelligt. Tag stilling til dem, før I sætter jer ved bordet.</p>
+<ul class="tight">
+<li>Må svarer passe åbners afmelding efter 2 over 1 – eller lover 2 over 1 altid en melding til?</li>
+<li>Er 2NT stærk støtte (Jacoby / Bekkasin) eller naturlig 11–12?</li>
+<li>Hvad betyder spring i ny farve fra svarer?</li>
+<li>Er ny farve på 1-trinnet efter oplysningsdobling krav, eller viser den 6–9?</li>
+<li>Hvor meget lover en fri 1NT efter indmelding – 6–10 eller 8–10?</li>
+<li>Spiller I støttedobling – og til og med hvilket trin?</li>
+</ul>
+</div>
+</section>
+
+<section class="chap" id="kilder">
+<h2>Kilder</h2>
+<div class="prose">
+<ul class="tight sources">
+<li>Torben Erlandsson: <a target="_blank" rel="noopener" href="http://vodskov.wp.bridge.dk/wp-content/uploads/sites/6/2014/11/DBS.pdf">Dansk Bridge Standard</a> (rev. 2009) – pointgrænserne for 2 over 1 og åbners afmeldings- og kravhånd.</li>
+<li>ACBL: <a target="_blank" rel="noopener" href="https://www.pellebye.dk/bridge/SAYC/DK/da.htm">Standard American Yellow Card</a>, dansk oversættelse ved Preben Ellebye – aftalen om, at svarer melder igen efter 2 over 1.</li>
+<li>Projektets egne filer: <i>2 over 1 – Moderne majorstøtte</i> (konkurrenceaftalerne og farvenøglen) og MODEL.md (tallene om korthed, trumflængde og sans).</li>
+<li>Alle syv spil er kontrolleret med dobbeltdummy-analyse i endplay 0.5.12 (Bo Haglunds DDS).</li>
+</ul>
+</div>
+</section>
+
+</main>
+</div>
+
+</body>
+</html>

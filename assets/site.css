@@ -1,0 +1,90 @@
+/* Konventionstræner — fælles layout. Typografi og farver fra notatet »Standard 2 over 1 i dansk version«. */
+:root{
+  --paper:#ffffff; --panel:#f3f6f4; --ink:#1c1c1c; --muted:#58615c; --line:#e2e7e3; --line-strong:#cdd6d0;
+  --felt:#1f6b45; --felt-deep:#1b5c3c; --gold:#b8913a;
+  --red:#c00000; --blk:#000000;
+  --card:#ffffff; --card-edge:#c9d2cc; --shadow:0 1px 0 rgba(0,0,0,.05), 0 8px 16px -10px rgba(0,0,0,.35);
+  --pas:#2e8b57; --dbl:#c62828;
+  --good:#2e7d46; --good-bg:#e4f2e7; --good-ink:#1f4a2d;
+  --bad:#b0212f; --bad-bg:#fbeae8; --bad-ink:#5c1620;
+  --serif:"Alegreya", Georgia, "Times New Roman", serif;
+  --sans:"Alegreya Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --sym:"Noto Sans Symbols 2", "Segoe UI Symbol", "Apple Symbols", "DejaVu Sans", sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#101512; --panel:#18201b; --ink:#e6ebe7; --muted:#a2aca6; --line:#29322c; --line-strong:#3a453e;
+    --felt:#7fd0a3; --felt-deep:#1d5a3b; --gold:#d1ad5a;
+    --red:#ff7b7b; --blk:#f1f1f1;
+    --card:#1b221e; --card-edge:#3b463f; --shadow:0 1px 0 rgba(0,0,0,.4), 0 8px 16px -10px rgba(0,0,0,.8);
+    --good:#7fd0a3; --good-bg:#1d3326; --good-ink:#cdeedb;
+    --bad:#ff7b7b; --bad-bg:#3b2029; --bad-ink:#f6d3d8;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#101512; --panel:#18201b; --ink:#e6ebe7; --muted:#a2aca6; --line:#29322c; --line-strong:#3a453e;
+  --felt:#7fd0a3; --felt-deep:#1d5a3b; --gold:#d1ad5a;
+  --red:#ff7b7b; --blk:#f1f1f1;
+  --card:#1b221e; --card-edge:#3b463f; --shadow:0 1px 0 rgba(0,0,0,.4), 0 8px 16px -10px rgba(0,0,0,.8);
+  --good:#7fd0a3; --good-bg:#1d3326; --good-ink:#cdeedb;
+  --bad:#ff7b7b; --bad-bg:#3b2029; --bad-ink:#f6d3d8;
+}
+html{ -webkit-text-size-adjust:100%; }
+*,*::before,*::after{ box-sizing:inherit; }
+body{ margin:0; background:var(--paper); color:var(--ink); font-family:var(--serif);
+  font-size:1.125rem; line-height:1.58; text-rendering:optimizeLegibility; }
+a{ color:var(--felt); text-decoration-thickness:1px; text-underline-offset:.15em; }
+a:focus-visible, button:focus-visible{ outline:2px solid var(--felt); outline-offset:3px; border-radius:2px; }
+.su{ font-family:var(--sym); font-style:normal; font-weight:400; }
+.su-s,.su-c,.k{ color:var(--blk); } .su-h,.su-d,.r{ color:var(--red); }
+
+/* ---------- site header ---------- */
+.site-head{ border-bottom:1px solid var(--gold); }
+.site-head .in{ max-width:62rem; margin:0 auto; padding:.8rem 1rem; display:flex; align-items:baseline; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
+.site-head .brand{ font-family:var(--sans); font-weight:800; font-size:1.05rem; letter-spacing:.06em; text-transform:uppercase; color:var(--felt); text-decoration:none; }
+.site-head nav{ display:flex; gap:1.2rem; font-family:var(--sans); font-weight:700; font-size:1rem; }
+.site-head nav a{ color:var(--ink); text-decoration:none; padding-bottom:.15rem; border-bottom:2px solid transparent; }
+.site-head nav a:hover, .site-head nav a[aria-current="page"]{ color:var(--felt); border-bottom-color:var(--felt); }
+
+/* ---------- page frame ---------- */
+.wrap{ max-width:62rem; margin:0 auto; padding:0 1rem 4rem; }
+.hero{ padding:2.4rem 0 1.4rem; border-bottom:1px solid var(--gold); margin-bottom:2rem; }
+h1{ font-family:var(--serif); font-weight:800; font-size:clamp(2rem,5vw,3.2rem); line-height:1.05; letter-spacing:-.012em; margin:0 0 .8rem; }
+.deck{ font-size:clamp(1.08rem,2vw,1.28rem); line-height:1.5; margin:0; max-width:40rem; }
+h2{ font-weight:800; font-size:clamp(1.5rem,3vw,2rem); line-height:1.15; margin:2.4rem 0 .8rem; }
+h3{ font-weight:700; font-size:1.25rem; line-height:1.25; margin:1.8rem 0 .5rem; }
+p{ margin:.7rem 0; }
+.small{ font-size:.95rem; color:var(--muted); }
+.eyebrow{ font-family:var(--sans); font-weight:800; font-size:.85rem; letter-spacing:.08em; text-transform:uppercase; color:var(--gold); margin:0 0 .3rem; }
+
+/* ---------- bidding-box cards ---------- */
+.bc{ display:inline-flex; align-items:center; justify-content:center; gap:.04em; min-width:2.5em; padding:.12em .45em;
+     border:1px solid var(--card-edge); border-radius:.3em; background:var(--card); color:var(--ink);
+     font-family:var(--sans); font-weight:800; line-height:1.1; box-shadow:var(--shadow); white-space:nowrap; }
+.bc.pas{ background:var(--pas); color:#fff; border-color:transparent; font-weight:700; }
+.bc.dbl{ background:var(--dbl); color:#fff; border-color:transparent; }
+
+/* ---------- tiles (forside, viden) ---------- */
+.tiles{ display:grid; grid-template-columns:repeat(auto-fill,minmax(16rem,1fr)); gap:1rem; margin:1rem 0; }
+.tile{ display:block; border:1px solid var(--line-strong); border-left-width:4px; border-left-color:var(--felt);
+       border-radius:.45rem; padding:.9rem 1rem 1rem; background:var(--paper); color:var(--ink); text-decoration:none; }
+a.tile:hover{ border-color:var(--felt); box-shadow:var(--shadow); }
+.tile .grp{ font-family:var(--sans); font-size:.82rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); }
+.tile h3{ margin:.2rem 0 .35rem; font-size:1.2rem; }
+.tile p{ margin:.3rem 0 0; font-size:1rem; line-height:1.45; }
+.tile .meta{ margin-top:.6rem; font-family:var(--sans); font-size:.9rem; font-weight:700; color:var(--felt); }
+.tile.soon{ border-left-color:var(--line-strong); opacity:.72; }
+.tile.soon .meta{ color:var(--muted); font-weight:600; }
+
+/* ---------- notes & tables (prose pages) ---------- */
+.prose{ max-width:46rem; }
+.note{ border-left:3px solid var(--gold); background:var(--panel); padding:.85rem 1.05rem; margin:1.3rem 0; font-size:1.03rem; border-radius:0 .35rem .35rem 0; }
+.tw{ overflow-x:auto; -webkit-overflow-scrolling:touch; margin:1rem 0 1.2rem; }
+table.t{ width:100%; border-collapse:collapse; font-family:var(--sans); font-size:1.02rem; line-height:1.38; }
+table.t th{ text-align:left; color:var(--felt); font-weight:800; border-bottom:2px solid var(--felt); padding:.45rem .65rem; }
+table.t td{ padding:.48rem .65rem; border-bottom:1px solid var(--line); vertical-align:top; }
+
+@media print{ .site-head{ display:none; } body{ font-size:10.5pt; } }

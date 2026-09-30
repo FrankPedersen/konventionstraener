@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Konventionstræner</title>
+<meta name="description" content="Træn bridgekonventioner med tilfældige meldeforløb – som indmelder og som svarer – og slå op i vores aftaler og notater.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;1,400&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&text=%E2%99%A0%E2%99%A5%E2%99%A6%E2%99%A3&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  .grouphead{ font-family:var(--sans); font-weight:800; font-size:1rem; color:var(--felt); margin:1.6rem 0 .2rem; }
+  .roles{ display:flex; gap:.35rem; flex-wrap:wrap; margin-top:.55rem; }
+  .roles span{ font-family:var(--sans); font-size:.8rem; font-weight:700; padding:.1rem .5rem; border-radius:999px; background:var(--panel); color:var(--muted); }
+  .tray{ display:flex; gap:.7rem; margin-top:1.4rem; }
+  .tray .bc{ font-size:1.6rem; min-width:2.3em; height:2.9em; }
+</style>
+</head>
+<body>
+<header class="site-head"><div class="in">
+  <a class="brand" href="./">Konventionstræner</a>
+  <nav><a href="#traen">Træn</a><a href="viden/">Viden</a></nav>
+</div></header>
+
+<div class="wrap">
+  <section class="hero">
+    <p class="eyebrow">Karina &amp; Frank · bridgesystem</p>
+    <h1>Træn konventionerne, til de sidder</h1>
+    <p class="deck">Vælg en konvention, og få 8 tilfældige meldeforløb. Nogle gange melder du ind eller åbner, andre gange svarer du makker. Under <a href="viden/">Viden</a> ligger vores aftaler og notater.</p>
+    <div class="tray" aria-hidden="true">
+      <span class="bc">1NT</span><span class="bc">2<span class="su su-c">♣</span></span><span class="bc pas">pas</span><span class="bc">?</span>
+    </div>
+  </section>
+
+  <section id="traen">
+    <h2>Træn</h2>
+    <p class="small">En omgang er 8 hænder, trukket tilfældigt fra en pulje med facit regnet ud efter vores system.</p>
+    <div id="konventioner"></div>
+  </section>
+
+  <section id="viden">
+    <h2>Viden</h2>
+    <div class="tiles" id="videnTiles"></div>
+    <p><a href="viden/">Alle aftaler og notater →</a></p>
+  </section>
+</div>
+
+<script>
+function esc(s){ return String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c])); }
+// Colour suit symbols in plain text from the data files
+function suits(s){
+  return esc(s).replace(/[♠♥♦♣]/g, c => `<span class="su ${c === '♥' || c === '♦' ? 'su-h' : 'su-s'}">${c}</span>`);
+}
+
+fetch('data/konventioner.json').then(r => r.json()).then(list => {
+  const groups = {};
+  list.forEach(k => (groups[k.gruppe] = groups[k.gruppe] || []).push(k));
+  document.getElementById('konventioner').innerHTML = Object.entries(groups).map(([g, ks]) => `
+    <p class="grouphead">${esc(g)}</p>
+    <div class="tiles">${ks.map(k => {
+      const roles = `<div class="roles">${k.roller.map(r => `<span>${esc(r)}</span>`).join('')}</div>`;
+      return k.status === 'klar'
+        ? `<a class="tile" href="traener.html?k=${encodeURIComponent(k.id)}"><h3>${suits(k.titel)}</h3><p>${suits(k.beskrivelse)}</p>${roles}<div class="meta">Træn 8 hænder →</div></a>`
+        : `<div class="tile soon"><h3>${suits(k.titel)}</h3><p>${suits(k.beskrivelse)}</p>${roles}<div class="meta">Kommer</div></div>`;
+    }).join('')}</div>`).join('');
+}).catch(() => {
+  document.getElementById('konventioner').innerHTML = '<p class="small">Kunne ikke hente listen over konventioner. Åbn siden via GitHub Pages eller en lokal webserver.</p>';
+});
+
+fetch('data/viden.json').then(r => r.json()).then(list => {
+  document.getElementById('videnTiles').innerHTML = list.map(d =>
+    `<a class="tile" href="${esc(d.href)}"><div class="grp">${esc(d.type)}</div><h3>${suits(d.titel)}</h3><p>${suits(d.beskrivelse)}</p></a>`).join('');
+}).catch(() => {});
+</script>
+</body>
+</html>

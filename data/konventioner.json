@@ -1,0 +1,29 @@
+[
+  {
+    "id": "multiforsvar",
+    "titel": "Multiforsvar mod 1NT",
+    "gruppe": "Konkurrence",
+    "beskrivelse": "Modstanderen åbner 1NT. Meld ind med D, 2♣–2NT eller på 3-trinnet – eller svar på makkers indmelding.",
+    "roller": ["Indmelder", "Svarer"],
+    "status": "klar",
+    "viden": "viden/bridgesystem.html#multiforsvar"
+  },
+  { "id": "michaels", "titel": "Michaels cuebid", "gruppe": "Konkurrence",
+    "beskrivelse": "Overmelding i åbners farve med to femfarver.", "roller": ["Indmelder", "Svarer"], "status": "kommer" },
+  { "id": "usaedvanlig-2nt", "titel": "Usædvanlig 2NT", "gruppe": "Konkurrence",
+    "beskrivelse": "2NT over en farveåbning viser de to laveste umeldte farver.", "roller": ["Indmelder", "Svarer"], "status": "kommer" },
+  { "id": "lebensohl", "titel": "Lebensohl", "gruppe": "Konkurrence",
+    "beskrivelse": "Svar, når makker har oplysningsdoblet en svag 2-åbning.", "roller": ["Dobler", "Svarer"], "status": "kommer" },
+  { "id": "omvendt-bergen", "titel": "Omvendt Bergen", "gruppe": "Majorstøtte",
+    "beskrivelse": "3♣ og 3♦ som støttemeldinger over 1♥/1♠.", "roller": ["Åbner", "Svarer"], "status": "kommer" },
+  { "id": "bekkasin", "titel": "Bekkasin 2NT", "gruppe": "Majorstøtte",
+    "beskrivelse": "Stærk støtte over 1♥/1♠ – åbner beskriver kortfarve og styrke.", "roller": ["Åbner", "Svarer"], "status": "kommer" },
+  { "id": "xy-sans", "titel": "XY-sans", "gruppe": "Videre meldeforløb",
+    "beskrivelse": "Relæ efter åbners 1NT-genmelding.", "roller": ["Åbner", "Svarer"], "status": "kommer" },
+  { "id": "fjerde-farve", "titel": "4. farve", "gruppe": "Videre meldeforløb",
+    "beskrivelse": "Den fjerde farve er kunstig og krav.", "roller": ["Åbner", "Svarer"], "status": "kommer" },
+  { "id": "svar-paa-1nt", "titel": "Stayman og transfer", "gruppe": "Svar på 1NT",
+    "beskrivelse": "Stayman, majortransfer og minortransfer over makkers 1NT.", "roller": ["Åbner", "Svarer"], "status": "kommer" },
+  { "id": "1430", "titel": "1430 og trumfdame", "gruppe": "Slem",
+    "beskrivelse": "Nøglekortspørgsmål, trumfdamespørgsmål og kongespørgsmål.", "roller": ["Spørger", "Svarer"], "status": "kommer" }
+]
