@@ -1,0 +1,6739 @@
+{
+ "situations": {
+  "svar_1nt": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "Pas",
+    "2♣",
+    "2♦",
+    "2♥",
+    "2NT",
+    "3NT"
+   ],
+   "bonus": {
+    "q": "Hvad viser makkers 1NT-åbning?",
+    "correct": "15–17 hp jævn – kan rumme 5-farve i major",
+    "options": [
+     "15–17 hp jævn – kan rumme 5-farve i major",
+     "12–14 hp jævn",
+     "15–17 hp jævn – aldrig 5-farve i major"
+    ],
+    "why": "1NT er 15–17 jævn, og alle jævne hænder åbnes 1NT – også med 5-farve i major. Derfor undersøger ASS hele majorfordelingen."
+   }
+  },
+  "aabner": {
+   "rolle": "Åbner",
+   "auction": [
+    [
+     "Dig",
+     "1NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "2♦",
+    "2♥",
+    "2♠",
+    "2NT",
+    "3NT"
+   ],
+   "bonus": {
+    "q": "Hvad lover makkers 2♣ (ASS)?",
+    "correct": "Mindst invit – ikke nødvendigvis en 4-farve i major",
+    "options": [
+     "Mindst invit – ikke nødvendigvis en 4-farve i major",
+     "Altid en 4-farve i major, ingen pointkrav",
+     "Lang klør, svag hånd"
+    ],
+    "why": "ASS er mindst invitation til udgang og lover ikke nødvendigvis en 4-farve i major."
+   }
+  },
+  "svar_2ru": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "2♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "2♥",
+    "2♠",
+    "2NT",
+    "3♥",
+    "3♠",
+    "3NT"
+   ],
+   "bonus": {
+    "q": "Hvad viste åbners 2♦?",
+    "correct": "Mindst én 4-farve i major",
+    "options": [
+     "Mindst én 4-farve i major",
+     "Ingen 4-farve i major",
+     "5 ruder"
+    ],
+    "why": "2♦ viser mindst én 4-farve i major. Svarer fortsætter krydsvendt: 2♥ = 4 spar, 2♠ = 4 hjerter."
+   }
+  },
+  "svar_2hj": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "2♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "2NT",
+    "3♥",
+    "3NT",
+    "4♥",
+    "Pas"
+   ],
+   "bonus": {
+    "q": "Hvad viste åbners 2♥/2♠?",
+    "correct": "Præcis 5 kort i den viste major",
+    "options": [
+     "Præcis 5 kort i den viste major",
+     "4 kort i den viste major",
+     "Maksimum og 4 kort i major"
+    ],
+    "why": "2♥/2♠ som svar på ASS viser præcis 5 kort i den viste major."
+   }
+  },
+  "svar_2sp": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "2♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "2NT",
+    "3♠",
+    "3NT",
+    "4♠",
+    "Pas"
+   ],
+   "bonus": {
+    "q": "Hvad viste åbners 2♥/2♠?",
+    "correct": "Præcis 5 kort i den viste major",
+    "options": [
+     "Præcis 5 kort i den viste major",
+     "4 kort i den viste major",
+     "Maksimum og 4 kort i major"
+    ],
+    "why": "2♥/2♠ som svar på ASS viser præcis 5 kort i den viste major."
+   }
+  },
+  "svar_2nt": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "2♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "Pas",
+    "3♥",
+    "3♠",
+    "3NT"
+   ],
+   "bonus": {
+    "q": "Hvad viste åbners 2NT?",
+    "correct": "Ingen 4-farve i major, minimum",
+    "options": [
+     "Ingen 4-farve i major, minimum",
+     "Ingen 4-farve i major, maksimum",
+     "Begge majorer"
+    ],
+    "why": "2NT viser ingen 4-farve i major og minimum; 3NT viser det samme med maksimum."
+   }
+  }
+ },
+ "hands": [
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     11,
+     9,
+     4,
+     2
+    ],
+    "H": [
+     10,
+     7,
+     2
+    ],
+    "D": [
+     13,
+     11,
+     4
+    ],
+    "C": [
+     9,
+     3,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 5,
+   "correct": "Pas",
+   "why": "5 hp – ASS kræver mindst invit (9+). Pas."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     12,
+     11,
+     5
+    ],
+    "H": [
+     8,
+     7,
+     4
+    ],
+    "D": [
+     13,
+     9,
+     6
+    ],
+    "C": [
+     7,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 6,
+   "correct": "Pas",
+   "why": "Jævn hånd med 6 hp: sansstigen siger pas (0–8)."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     10,
+     9
+    ],
+    "H": [
+     11,
+     6,
+     5
+    ],
+    "D": [
+     14,
+     10,
+     9,
+     7,
+     5
+    ],
+    "C": [
+     12,
+     4,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "Pas",
+   "why": "Jævn hånd med 7 hp: sansstigen siger pas (0–8)."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     8,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     10,
+     9,
+     4,
+     3
+    ],
+    "D": [
+     10,
+     8,
+     2
+    ],
+    "C": [
+     14,
+     9
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "Pas",
+   "why": "4 hp – ASS kræver mindst invit (9+). Pas."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
+     8,
+     6
+    ],
+    "H": [
+     4,
+     3
+    ],
+    "D": [
+     10,
+     8,
+     7,
+     6,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     8
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "Pas",
+   "why": "Jævn hånd med 5 hp: sansstigen siger pas (0–8)."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     11,
+     9,
+     5
+    ],
+    "H": [
+     13,
+     9,
+     6
+    ],
+    "D": [
+     7,
+     6,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     8
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "Pas",
+   "why": "Jævn hånd med 6 hp: sansstigen siger pas (0–8)."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     8,
+     3
+    ],
+    "H": [
+     12,
+     8,
+     3
+    ],
+    "D": [
+     12,
+     9,
+     2
+    ],
+    "C": [
+     9,
+     7,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "Pas",
+   "why": "Jævn hånd med 4 hp: sansstigen siger pas (0–8)."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     12,
+     10,
+     8
+    ],
+    "H": [
+     9,
+     6,
+     3
+    ],
+    "D": [
+     10,
+     9,
+     7,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     7
+    ]
+   },
+   "hp": 5,
+   "sp": 5,
+   "correct": "Pas",
+   "why": "Jævn hånd med 5 hp: sansstigen siger pas (0–8)."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
+     9,
+     7,
+     6
+    ],
+    "H": [
+     10,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     7,
+     3
+    ],
+    "C": [
+     14,
+     6,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♣",
+   "why": "4 spar og 12 hp – mindst invit: 2♣ (ASS) undersøger åbners majorfordeling."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11
+    ],
+    "H": [
+     12,
+     9,
+     7,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     9,
+     5,
+     2
+    ],
+    "C": [
+     10
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2♣",
+   "why": "4 hjerter og 12 hp – mindst invit: 2♣ (ASS) undersøger åbners majorfordeling."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     6
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     9
+    ],
+    "C": [
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2♣",
+   "why": "4 hjerter og 4 spar og 13 hp – mindst invit: 2♣ (ASS) undersøger åbners majorfordeling."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
+     8
+    ],
+    "H": [
+     13,
+     8,
+     7,
+     2
+    ],
+    "D": [
+     12,
+     10,
+     4
+    ],
+    "C": [
+     14,
+     9,
+     5,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♣",
+   "why": "4 hjerter og 12 hp – mindst invit: 2♣ (ASS) undersøger åbners majorfordeling."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     12,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     10
+    ],
+    "D": [
+     12,
+     7,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     10,
+     8
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2♣",
+   "why": "4 spar og 10 hp – mindst invit: 2♣ (ASS) undersøger åbners majorfordeling."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     7
+    ],
+    "H": [
+     5,
+     2
+    ],
+    "D": [
+     7,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     7,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "2♣",
+   "why": "4 spar og 12 hp – mindst invit: 2♣ (ASS) undersøger åbners majorfordeling."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     7,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     5
+    ],
+    "C": [
+     8,
+     6,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 14,
+   "correct": "2♣",
+   "why": "4 hjerter og 14 hp – mindst invit: 2♣ (ASS) undersøger åbners majorfordeling."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7,
+     6
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     10,
+     7,
+     5,
+     4
+    ],
+    "C": [
+     12,
+     10,
+     6,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "2♣",
+   "why": "4 spar og 9 hp – mindst invit: 2♣ (ASS) undersøger åbners majorfordeling."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
+     11,
+     6
+    ],
+    "H": [
+     13,
+     11,
+     3
+    ],
+    "D": [
+     10,
+     5
+    ],
+    "C": [
+     12,
+     8,
+     7,
+     5,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2NT",
+   "why": "Jævn hånd uden 4-farve i major og 10 hp: 2NT er invit (9–10)."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     10,
+     7,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     8
+    ],
+    "D": [
+     6,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     9,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "correct": "2NT",
+   "why": "Jævn hånd uden 4-farve i major og 9 hp: 2NT er invit (9–10)."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     8,
+     4
+    ],
+    "H": [
+     11,
+     9,
+     4
+    ],
+    "D": [
+     10,
+     9,
+     8,
+     7,
+     6
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2NT",
+   "why": "Jævn hånd uden 4-farve i major og 9 hp: 2NT er invit (9–10)."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     7,
+     5
+    ],
+    "H": [
+     13,
+     9,
+     3
+    ],
+    "D": [
+     12,
+     8
+    ],
+    "C": [
+     10,
+     7,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2NT",
+   "why": "Jævn hånd uden 4-farve i major og 9 hp: 2NT er invit (9–10)."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     10,
+     9
+    ],
+    "H": [
+     13,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2NT",
+   "why": "Jævn hånd uden 4-farve i major og 10 hp: 2NT er invit (9–10)."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
+     8,
+     6
+    ],
+    "H": [
+     7,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     10,
+     6
+    ],
+    "C": [
+     5,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2NT",
+   "why": "Jævn hånd uden 4-farve i major og 10 hp: 2NT er invit (9–10)."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     9,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     5
+    ],
+    "D": [
+     12,
+     7,
+     6,
+     4
+    ],
+    "C": [
+     11,
+     4,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "correct": "2NT",
+   "why": "Jævn hånd uden 4-farve i major og 10 hp: 2NT er invit (9–10)."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     9,
+     3,
+     2
+    ],
+    "H": [
+     11,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     11
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     4,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2NT",
+   "why": "Jævn hånd uden 4-farve i major og 9 hp: 2NT er invit (9–10)."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     12,
+     8,
+     5
+    ],
+    "H": [
+     12,
+     11,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     6
+    ],
+    "C": [
+     8,
+     7,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 12,
+   "correct": "3NT",
+   "why": "Jævn hånd uden 4-farve i major og 12 hp: 3NT (11–15)."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     9,
+     8,
+     2
+    ],
+    "H": [
+     11,
+     10,
+     5
+    ],
+    "D": [
+     13,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     9,
+     8
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3NT",
+   "why": "Jævn hånd uden 4-farve i major og 11 hp: 3NT (11–15)."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     11,
+     10,
+     7
+    ],
+    "H": [
+     14,
+     11,
+     2
+    ],
+    "D": [
+     12,
+     8
+    ],
+    "C": [
+     13,
+     7,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3NT",
+   "why": "Jævn hånd uden 4-farve i major og 11 hp: 3NT (11–15)."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     7,
+     2
+    ],
+    "H": [
+     11,
+     7,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     3
+    ],
+    "C": [
+     12,
+     8,
+     7,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 14,
+   "correct": "3NT",
+   "why": "Jævn hånd uden 4-farve i major og 14 hp: 3NT (11–15)."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     5,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     5,
+     2
+    ],
+    "C": [
+     10,
+     5,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3NT",
+   "why": "Jævn hånd uden 4-farve i major og 11 hp: 3NT (11–15)."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
+     9,
+     8
+    ],
+    "H": [
+     14,
+     8,
+     6
+    ],
+    "D": [
+     12,
+     8,
+     2
+    ],
+    "C": [
+     14,
+     9,
+     8,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "Jævn hånd uden 4-farve i major og 13 hp: 3NT (11–15)."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     12,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     6,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "Jævn hånd uden 4-farve i major og 12 hp: 3NT (11–15)."
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     12,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     5,
+     2
+    ],
+    "D": [
+     12,
+     9
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     5,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "3NT",
+   "why": "Jævn hånd uden 4-farve i major og 13 hp: 3NT (11–15)."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     12,
+     8,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     2
+    ],
+    "D": [
+     9,
+     8
+    ],
+    "C": [
+     14,
+     13,
+     7,
+     6
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "4-farve i hjerter: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     9
+    ],
+    "H": [
+     13,
+     11,
+     6,
+     4
+    ],
+    "D": [
+     12,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     5
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "4-farve i hjerter: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     8,
+     2
+    ],
+    "D": [
+     14,
+     5
+    ],
+    "C": [
+     13,
+     8,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "4-farve i hjerter og spar: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     13,
+     12,
+     4
+    ],
+    "H": [
+     13,
+     11,
+     8,
+     6
+    ],
+    "D": [
+     12,
+     11,
+     10
+    ],
+    "C": [
+     12,
+     11,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 15,
+   "correct": "2♦",
+   "why": "4-farve i hjerter: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9
+    ],
+    "H": [
+     14,
+     9,
+     8,
+     4
+    ],
+    "D": [
+     13,
+     8
+    ],
+    "C": [
+     12,
+     9,
+     4,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "4-farve i hjerter: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     4,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     5
+    ],
+    "D": [
+     13,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     5,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "4-farve i hjerter: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     12,
+     3
+    ],
+    "H": [
+     13,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     8
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     5
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "4-farve i hjerter: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     12,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     8
+    ],
+    "D": [
+     12,
+     9,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     11
+    ]
+   },
+   "hp": 16,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "4-farve i spar: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     11,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     2
+    ],
+    "D": [
+     13,
+     11,
+     6,
+     4
+    ],
+    "C": [
+     14,
+     11,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "4-farve i hjerter: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     13,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     6
+    ],
+    "D": [
+     8,
+     4
+    ],
+    "C": [
+     12,
+     10,
+     8,
+     6
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "4-farve i hjerter: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     7
+    ],
+    "H": [
+     13,
+     6
+    ],
+    "D": [
+     13,
+     11,
+     5
+    ],
+    "C": [
+     14,
+     10,
+     9,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "4-farve i spar: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     12,
+     10
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     8
+    ],
+    "C": [
+     11,
+     9,
+     8
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "4-farve i hjerter: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     13,
+     6,
+     2
+    ],
+    "H": [
+     13,
+     2
+    ],
+    "D": [
+     13,
+     11,
+     9,
+     6
+    ],
+    "C": [
+     11,
+     9,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "4-farve i spar: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     12,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     13
+    ],
+    "D": [
+     13,
+     9,
+     2
+    ],
+    "C": [
+     14,
+     9,
+     8,
+     6
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "4-farve i spar: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     6,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     6
+    ],
+    "C": [
+     6,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "4-farve i hjerter: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10,
+     7
+    ],
+    "H": [
+     12,
+     11,
+     8,
+     3
+    ],
+    "D": [
+     13,
+     11,
+     10
+    ],
+    "C": [
+     14,
+     10
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "4-farve i hjerter og spar: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     13,
+     9,
+     6,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     8
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "4-farve i hjerter: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     7,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     4
+    ],
+    "C": [
+     13,
+     10,
+     7,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "4-farve i hjerter: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     7,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     6,
+     5
+    ],
+    "C": [
+     13,
+     8,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "4-farve i hjerter: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     9,
+     3
+    ],
+    "H": [
+     12,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "4-farve i hjerter: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     12,
+     3
+    ],
+    "H": [
+     12,
+     8,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     9,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     12
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "Præcis 5 hjerter: 2♥."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     12,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     5,
+     4
+    ],
+    "C": [
+     3,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "Præcis 5 hjerter: 2♥."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11
+    ],
+    "H": [
+     14,
+     11,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     10,
+     2
+    ],
+    "C": [
+     10,
+     9
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "Præcis 5 hjerter: 2♥."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     13,
+     12,
+     6
+    ],
+    "H": [
+     14,
+     9,
+     8,
+     5,
+     4
+    ],
+    "D": [
+     11,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     7
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "2♥",
+   "why": "Præcis 5 hjerter: 2♥."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     13,
+     6,
+     5
+    ],
+    "H": [
+     13,
+     11,
+     9,
+     8,
+     5
+    ],
+    "D": [
+     14,
+     7,
+     2
+    ],
+    "C": [
+     14,
+     7
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♥",
+   "why": "Præcis 5 hjerter: 2♥."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     8,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     9
+    ],
+    "C": [
+     12,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "Præcis 5 hjerter: 2♥."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     8,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     10,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     10
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♥",
+   "why": "Præcis 5 hjerter: 2♥."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     12,
+     10
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     9,
+     8
+    ],
+    "D": [
+     13,
+     12,
+     11
+    ],
+    "C": [
+     12,
+     11,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "2♥",
+   "why": "Præcis 5 hjerter: 2♥."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     12,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     11,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     7,
+     5
+    ],
+    "C": [
+     14,
+     10
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♥",
+   "why": "Præcis 5 hjerter: 2♥."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11
+    ],
+    "H": [
+     12,
+     9,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     5
+    ],
+    "C": [
+     14,
+     9,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♥",
+   "why": "Præcis 5 hjerter: 2♥."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     4,
+     3
+    ],
+    "D": [
+     7,
+     6,
+     4
+    ],
+    "C": [
+     13,
+     4,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "Præcis 5 hjerter: 2♥."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     9
+    ],
+    "H": [
+     14,
+     8,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     3
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "2♥",
+   "why": "Præcis 5 hjerter: 2♥."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     9,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     7
+    ],
+    "D": [
+     13,
+     7,
+     4
+    ],
+    "C": [
+     14,
+     10
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "2♥",
+   "why": "Præcis 5 hjerter: 2♥."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     12,
+     11,
+     4
+    ],
+    "H": [
+     14,
+     8,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     11
+    ],
+    "C": [
+     12,
+     8
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "Præcis 5 hjerter: 2♥."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     11,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     8,
+     4
+    ],
+    "D": [
+     10,
+     6
+    ],
+    "C": [
+     14,
+     7,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♥",
+   "why": "Præcis 5 hjerter: 2♥."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     9,
+     5
+    ],
+    "H": [
+     12,
+     11,
+     9,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     14,
+     5,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "Præcis 5 hjerter: 2♥."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     12,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     10,
+     7
+    ],
+    "D": [
+     12,
+     4
+    ],
+    "C": [
+     11,
+     9,
+     8
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "Præcis 5 hjerter: 2♥."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     6,
+     5
+    ],
+    "H": [
+     13,
+     11,
+     8,
+     6,
+     4
+    ],
+    "D": [
+     6,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     8
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♥",
+   "why": "Præcis 5 hjerter: 2♥."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     11,
+     9
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     8,
+     7
+    ],
+    "D": [
+     12,
+     6
+    ],
+    "C": [
+     12,
+     10,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♥",
+   "why": "Præcis 5 hjerter: 2♥."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     13,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     6,
+     2
+    ],
+    "D": [
+     9,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♥",
+   "why": "Præcis 5 hjerter: 2♥."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     13,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     2
+    ],
+    "D": [
+     11,
+     10,
+     4
+    ],
+    "C": [
+     12,
+     10
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2♠",
+   "why": "Præcis 5 spar: 2♠."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     9,
+     6,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     13,
+     8,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     12
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2♠",
+   "why": "Præcis 5 spar: 2♠."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     7
+    ],
+    "D": [
+     13,
+     4,
+     2
+    ],
+    "C": [
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2♠",
+   "why": "Præcis 5 spar: 2♠."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     8,
+     4
+    ],
+    "H": [
+     14,
+     11,
+     7
+    ],
+    "D": [
+     12,
+     11,
+     4
+    ],
+    "C": [
+     11,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "Præcis 5 spar: 2♠."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     6,
+     4
+    ],
+    "H": [
+     10,
+     7,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     8
+    ],
+    "C": [
+     11,
+     7
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "Præcis 5 spar: 2♠."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     12,
+     10,
+     8,
+     6,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     3
+    ],
+    "D": [
+     14,
+     13
+    ],
+    "C": [
+     11,
+     6,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "Præcis 5 spar: 2♠."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     12,
+     6
+    ],
+    "D": [
+     14,
+     12,
+     9
+    ],
+    "C": [
+     12,
+     11,
+     8
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "Præcis 5 spar: 2♠."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     12,
+     11,
+     7,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     6
+    ],
+    "D": [
+     13,
+     2
+    ],
+    "C": [
+     12,
+     4,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "Præcis 5 spar: 2♠."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     8
+    ],
+    "D": [
+     10,
+     9
+    ],
+    "C": [
+     12,
+     10,
+     9
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2♠",
+   "why": "Præcis 5 spar: 2♠."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     9,
+     7
+    ],
+    "H": [
+     14,
+     10,
+     4
+    ],
+    "D": [
+     14,
+     11
+    ],
+    "C": [
+     10,
+     4,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "Præcis 5 spar: 2♠."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     6
+    ],
+    "D": [
+     9,
+     8,
+     7
+    ],
+    "C": [
+     13,
+     8
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "Præcis 5 spar: 2♠."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     13,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     8,
+     4
+    ],
+    "C": [
+     14,
+     7
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "Præcis 5 spar: 2♠."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     10,
+     2
+    ],
+    "D": [
+     14,
+     7
+    ],
+    "C": [
+     13,
+     10,
+     9
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "Præcis 5 spar: 2♠."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     12
+    ],
+    "D": [
+     13,
+     7,
+     5
+    ],
+    "C": [
+     12,
+     8,
+     6
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "2♠",
+   "why": "Præcis 5 spar: 2♠."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     9,
+     3
+    ],
+    "D": [
+     13,
+     10,
+     9
+    ],
+    "C": [
+     14,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2♠",
+   "why": "Præcis 5 spar: 2♠."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     9
+    ],
+    "D": [
+     13,
+     7,
+     3
+    ],
+    "C": [
+     14,
+     5,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "2♠",
+   "why": "Præcis 5 spar: 2♠."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     9,
+     4
+    ],
+    "H": [
+     10,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     5
+    ],
+    "C": [
+     12,
+     5,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "Præcis 5 spar: 2♠."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9,
+     8,
+     6
+    ],
+    "H": [
+     13,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     2
+    ],
+    "C": [
+     14,
+     6,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "Præcis 5 spar: 2♠."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     11,
+     10,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     10
+    ],
+    "D": [
+     14,
+     9,
+     2
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2♠",
+   "why": "Præcis 5 spar: 2♠."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     3,
+     2
+    ],
+    "H": [
+     8,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     9
+    ],
+    "C": [
+     14,
+     12,
+     6
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "Præcis 5 spar: 2♠."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     13,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     6
+    ],
+    "D": [
+     13,
+     7,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     10,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Ingen 4-farve i major og 15 hp – minimum: 2NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     12,
+     3
+    ],
+    "H": [
+     12,
+     6,
+     4
+    ],
+    "D": [
+     13,
+     11
+    ],
+    "C": [
+     13,
+     11,
+     9,
+     5,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "Ingen 4-farve i major og 16 hp – minimum: 2NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     13,
+     8
+    ],
+    "H": [
+     13,
+     10,
+     3
+    ],
+    "D": [
+     13,
+     7,
+     6
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     4,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Ingen 4-farve i major og 15 hp – minimum: 2NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     8,
+     4,
+     3
+    ],
+    "H": [
+     10,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     13
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     10,
+     6
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "Ingen 4-farve i major og 16 hp – minimum: 2NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     4
+    ],
+    "H": [
+     13,
+     10,
+     2
+    ],
+    "D": [
+     13,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     7,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "Ingen 4-farve i major og 16 hp – minimum: 2NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10
+    ],
+    "H": [
+     8,
+     6
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     8,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "Ingen 4-farve i major og 16 hp – minimum: 2NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     7,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     7
+    ],
+    "D": [
+     8,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     7,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Ingen 4-farve i major og 15 hp – minimum: 2NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     13,
+     5
+    ],
+    "H": [
+     11,
+     7,
+     5
+    ],
+    "D": [
+     14,
+     6
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     8,
+     7
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Ingen 4-farve i major og 15 hp – minimum: 2NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     13,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     8
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "Ingen 4-farve i major og 16 hp – minimum: 2NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     8,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     2
+    ],
+    "D": [
+     12,
+     9,
+     6
+    ],
+    "C": [
+     14,
+     10,
+     8,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Ingen 4-farve i major og 15 hp – minimum: 2NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     13,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     3
+    ],
+    "D": [
+     11,
+     6,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "Ingen 4-farve i major og 16 hp – minimum: 2NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     2
+    ],
+    "D": [
+     8,
+     5,
+     2
+    ],
+    "C": [
+     11,
+     10,
+     9,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Ingen 4-farve i major og 15 hp – minimum: 2NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     10,
+     9,
+     4
+    ],
+    "H": [
+     12,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     2
+    ],
+    "C": [
+     14,
+     8,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Ingen 4-farve i major og 15 hp – minimum: 2NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     10,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     12
+    ],
+    "D": [
+     10,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     4,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Ingen 4-farve i major og 15 hp – minimum: 2NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     13,
+     3
+    ],
+    "H": [
+     14,
+     4,
+     3
+    ],
+    "D": [
+     12,
+     10,
+     6,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     7,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Ingen 4-farve i major og 15 hp – minimum: 2NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8
+    ],
+    "H": [
+     11,
+     5
+    ],
+    "D": [
+     11,
+     6,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     10,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "Ingen 4-farve i major og 16 hp – minimum: 2NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     7,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     4
+    ],
+    "C": [
+     8,
+     6,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Ingen 4-farve i major og 15 hp – minimum: 2NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     12,
+     4
+    ],
+    "H": [
+     12,
+     11,
+     9
+    ],
+    "D": [
+     12,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     9,
+     5,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Ingen 4-farve i major og 15 hp – minimum: 2NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     12,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     8
+    ],
+    "D": [
+     13,
+     11,
+     9,
+     7,
+     2
+    ],
+    "C": [
+     13,
+     10,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "Ingen 4-farve i major og 16 hp – minimum: 2NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     9,
+     2
+    ],
+    "H": [
+     14,
+     8,
+     4
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     9,
+     7
+    ],
+    "C": [
+     13,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Ingen 4-farve i major og 15 hp – minimum: 2NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     11,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     2
+    ],
+    "D": [
+     13,
+     4
+    ],
+    "C": [
+     12,
+     7,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Ingen 4-farve i major og 17 hp – maksimum: 3NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     13,
+     5
+    ],
+    "H": [
+     14,
+     8,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     6
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Ingen 4-farve i major og 17 hp – maksimum: 3NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     6,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     7
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     6,
+     3
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Ingen 4-farve i major og 17 hp – maksimum: 3NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7
+    ],
+    "H": [
+     13,
+     11,
+     9
+    ],
+    "D": [
+     10,
+     7,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     8,
+     6
+    ]
+   },
+   "hp": 17,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "Ingen 4-farve i major og 17 hp – maksimum: 3NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     12,
+     10,
+     4
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     13,
+     11,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     8,
+     7
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Ingen 4-farve i major og 17 hp – maksimum: 3NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     10
+    ],
+    "H": [
+     13,
+     9,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     10
+    ],
+    "C": [
+     14,
+     11,
+     8,
+     5,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Ingen 4-farve i major og 17 hp – maksimum: 3NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     9,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     5
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     9
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Ingen 4-farve i major og 17 hp – maksimum: 3NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     11
+    ],
+    "H": [
+     14,
+     12,
+     9
+    ],
+    "D": [
+     13,
+     11,
+     9,
+     5
+    ],
+    "C": [
+     12,
+     9,
+     7,
+     5
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Ingen 4-farve i major og 17 hp – maksimum: 3NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9
+    ],
+    "H": [
+     12,
+     6,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     9,
+     6
+    ],
+    "C": [
+     6,
+     3
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Ingen 4-farve i major og 17 hp – maksimum: 3NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     13,
+     12,
+     2
+    ],
+    "H": [
+     14,
+     11
+    ],
+    "D": [
+     13,
+     11,
+     4
+    ],
+    "C": [
+     13,
+     9,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Ingen 4-farve i major og 17 hp – maksimum: 3NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     13,
+     12
+    ],
+    "H": [
+     8,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     8,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     10
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Ingen 4-farve i major og 17 hp – maksimum: 3NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     11,
+     9,
+     5
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     9,
+     5
+    ],
+    "C": [
+     13,
+     10,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Ingen 4-farve i major og 17 hp – maksimum: 3NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     13,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     7,
+     6
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Ingen 4-farve i major og 17 hp – maksimum: 3NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     7,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     9
+    ],
+    "D": [
+     14,
+     7,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     4,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Ingen 4-farve i major og 17 hp – maksimum: 3NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     10,
+     3
+    ],
+    "H": [
+     13,
+     8,
+     7
+    ],
+    "D": [
+     14,
+     11,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     9,
+     6
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Ingen 4-farve i major og 17 hp – maksimum: 3NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     11,
+     5
+    ],
+    "H": [
+     14,
+     10,
+     7
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     7
+    ],
+    "C": [
+     13,
+     10,
+     5,
+     3
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Ingen 4-farve i major og 17 hp – maksimum: 3NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     11,
+     5
+    ],
+    "H": [
+     14,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     3,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Ingen 4-farve i major og 17 hp – maksimum: 3NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     11,
+     6
+    ],
+    "H": [
+     12,
+     7
+    ],
+    "D": [
+     14,
+     13,
+     11
+    ],
+    "C": [
+     12,
+     10,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Ingen 4-farve i major og 17 hp – maksimum: 3NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     14,
+     3
+    ],
+    "H": [
+     13,
+     9,
+     6
+    ],
+    "D": [
+     14,
+     6,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     11
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Ingen 4-farve i major og 17 hp – maksimum: 3NT."
+  },
+  {
+   "situation": "aabner",
+   "hand": {
+    "S": [
+     12,
+     6
+    ],
+    "H": [
+     13,
+     8,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     8,
+     5
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Ingen 4-farve i major og 17 hp – maksimum: 3NT."
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     14,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     10,
+     6,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     8,
+     4,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "2♥",
+   "why": "Krydsvendt: 2♥ viser 4 spar."
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     12,
+     10,
+     7,
+     2
+    ],
+    "H": [
+     11,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     11,
+     6
+    ],
+    "C": [
+     14,
+     7,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "correct": "2♥",
+   "why": "Krydsvendt: 2♥ viser 4 spar."
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     11,
+     7,
+     6,
+     2
+    ],
+    "H": [
+     11,
+     2
+    ],
+    "D": [
+     14,
+     13
+    ],
+    "C": [
+     13,
+     9,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "Krydsvendt: 2♥ viser 4 spar."
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     14,
+     8,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     10,
+     9
+    ],
+    "D": [
+     13,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     9
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "Krydsvendt: 2♥ viser 4 spar."
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     12,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     12,
+     11,
+     8,
+     6,
+     4
+    ],
+    "C": [
+     14,
+     8,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2♥",
+   "why": "Krydsvendt: 2♥ viser 4 spar."
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     11,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     9
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     14,
+     10,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "Krydsvendt: 2♥ viser 4 spar."
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9,
+     8
+    ],
+    "H": [
+     9,
+     8,
+     4
+    ],
+    "D": [
+     13,
+     9,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2♥",
+   "why": "Krydsvendt: 2♥ viser 4 spar."
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     5
+    ],
+    "H": [
+     13,
+     10,
+     8,
+     7
+    ],
+    "D": [
+     12,
+     5,
+     2
+    ],
+    "C": [
+     7,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "Krydsvendt: 2♥ viser 4 spar – at du også har 4 hjerter, må makker gætte, for 2♥ benægter dem ikke."
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     6
+    ],
+    "H": [
+     11,
+     10,
+     7
+    ],
+    "D": [
+     12,
+     11,
+     2
+    ],
+    "C": [
+     11,
+     8,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "Krydsvendt: 2♥ viser 4 spar."
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     12,
+     9,
+     7,
+     5
+    ],
+    "H": [
+     8
+    ],
+    "D": [
+     14,
+     9,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "Krydsvendt: 2♥ viser 4 spar."
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     12,
+     10,
+     9
+    ],
+    "H": [
+     14,
+     10,
+     7,
+     5
+    ],
+    "D": [
+     13,
+     8
+    ],
+    "C": [
+     13,
+     12,
+     10,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2♠",
+   "why": "Krydsvendt: 2♠ viser 4 hjerter og benægter 4 spar."
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     10,
+     9
+    ],
+    "H": [
+     11,
+     10,
+     8,
+     7
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "Krydsvendt: 2♠ viser 4 hjerter og benægter 4 spar."
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     13,
+     2
+    ],
+    "H": [
+     10,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     9,
+     6,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "Krydsvendt: 2♠ viser 4 hjerter og benægter 4 spar."
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     10
+    ],
+    "H": [
+     14,
+     9,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     9
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     9,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "Krydsvendt: 2♠ viser 4 hjerter og benægter 4 spar."
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     2
+    ],
+    "D": [
+     11,
+     7,
+     5
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     8,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "Krydsvendt: 2♠ viser 4 hjerter og benægter 4 spar."
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     14,
+     9,
+     6
+    ],
+    "H": [
+     11,
+     8,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     5,
+     2
+    ],
+    "C": [
+     7,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2♠",
+   "why": "Krydsvendt: 2♠ viser 4 hjerter og benægter 4 spar."
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     11,
+     9,
+     7,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     8,
+     6
+    ],
+    "C": [
+     11,
+     5,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2♠",
+   "why": "Krydsvendt: 2♠ viser 4 hjerter og benægter 4 spar."
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     11,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     8,
+     5,
+     2
+    ],
+    "D": [
+     11,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     8,
+     7
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "correct": "2♠",
+   "why": "Krydsvendt: 2♠ viser 4 hjerter og benægter 4 spar."
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     5,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "Krydsvendt: 2♠ viser 4 hjerter og benægter 4 spar."
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     10,
+     9,
+     8
+    ],
+    "H": [
+     12,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     9
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     5,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "Krydsvendt: 2♠ viser 4 hjerter og benægter 4 spar."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     12,
+     8,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     7
+    ],
+    "D": [
+     13,
+     11,
+     9
+    ],
+    "C": [
+     8,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2NT",
+   "why": "Kun 2 hjerter – intet fit – og 10 hp er invit: 2NT."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     10,
+     9,
+     3,
+     2
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     8,
+     7,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Kun 1 hjerter – intet fit – og 10 hp er invit: 2NT."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     13,
+     9,
+     7,
+     6
+    ],
+    "H": [
+     13,
+     4
+    ],
+    "D": [
+     13,
+     10,
+     5,
+     3
+    ],
+    "C": [
+     8,
+     7,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2NT",
+   "why": "Kun 2 hjerter – intet fit – og 9 hp er invit: 2NT."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     11,
+     9,
+     5,
+     3
+    ],
+    "H": [
+     8
+    ],
+    "D": [
+     12,
+     9,
+     7
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     7,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "Kun 1 hjerter – intet fit – og 9 hp er invit: 2NT."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     3
+    ],
+    "H": [
+     10,
+     7
+    ],
+    "D": [
+     8,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     8,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "Kun 2 hjerter – intet fit – og 10 hp er invit: 2NT."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     13,
+     8,
+     4,
+     2
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     11,
+     9,
+     7,
+     6
+    ],
+    "C": [
+     14,
+     8,
+     6,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Kun 1 hjerter – intet fit – og 10 hp er invit: 2NT."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     12,
+     11,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     5,
+     4
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     14,
+     10,
+     5,
+     4,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "3♥",
+   "why": "3 hjerter giver fit med åbners 5-farve, og 9 hp er invit: 3♥."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     8,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     6
+    ],
+    "D": [
+     7,
+     5
+    ],
+    "C": [
+     13,
+     7,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♥",
+   "why": "4 hjerter giver fit med åbners 5-farve, og 10 hp er invit: 3♥."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     6,
+     5
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     6
+    ],
+    "D": [
+     12,
+     11
+    ],
+    "C": [
+     12,
+     8,
+     7,
+     6,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "3♥",
+   "why": "4 hjerter giver fit med åbners 5-farve, og 9 hp er invit: 3♥."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     12,
+     9,
+     6,
+     4
+    ],
+    "H": [
+     13,
+     11,
+     8,
+     2
+    ],
+    "D": [
+     14,
+     7,
+     5,
+     4
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♥",
+   "why": "4 hjerter giver fit med åbners 5-farve, og 10 hp er invit: 3♥."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     13,
+     6,
+     4
+    ],
+    "H": [
+     11,
+     9,
+     8,
+     7
+    ],
+    "D": [
+     13,
+     11,
+     7
+    ],
+    "C": [
+     12,
+     7,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "correct": "3♥",
+   "why": "4 hjerter giver fit med åbners 5-farve, og 10 hp er invit: 3♥."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     3
+    ],
+    "H": [
+     11,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     13,
+     12,
+     10,
+     5,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♥",
+   "why": "4 hjerter giver fit med åbners 5-farve, og 10 hp er invit: 3♥."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     14,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     13,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     7,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3NT",
+   "why": "Kun 1 hjerter – intet fit – og 13 hp er udgang: 3NT."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8,
+     2
+    ],
+    "H": [
+     14,
+     7
+    ],
+    "D": [
+     5,
+     3
+    ],
+    "C": [
+     14,
+     10,
+     8,
+     6,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "3NT",
+   "why": "Kun 2 hjerter – intet fit – og 12 hp er udgang: 3NT."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     7,
+     2
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     12,
+     8,
+     7,
+     6
+    ],
+    "C": [
+     11,
+     10,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3NT",
+   "why": "Kun 2 hjerter – intet fit – og 11 hp er udgang: 3NT."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     12,
+     9,
+     8,
+     3
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     14,
+     13,
+     7,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3NT",
+   "why": "Kun 1 hjerter – intet fit – og 11 hp er udgang: 3NT."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     11,
+     10,
+     8,
+     5
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     10,
+     4
+    ],
+    "C": [
+     10,
+     7,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3NT",
+   "why": "Kun 1 hjerter – intet fit – og 12 hp er udgang: 3NT."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     4
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     12,
+     7,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3NT",
+   "why": "Kun 1 hjerter – intet fit – og 11 hp er udgang: 3NT."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     10,
+     2
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     3
+    ],
+    "D": [
+     14,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     9,
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "4 hjerter giver fit, og 14 hp er udgang: 4♥."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     13,
+     5
+    ],
+    "H": [
+     14,
+     10,
+     7,
+     3
+    ],
+    "D": [
+     14,
+     2
+    ],
+    "C": [
+     11,
+     9,
+     8,
+     7,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "4♥",
+   "why": "4 hjerter giver fit, og 12 hp er udgang: 4♥."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     12,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     8
+    ],
+    "D": [
+     9,
+     7,
+     4
+    ],
+    "C": [
+     14,
+     3,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "4♥",
+   "why": "3 hjerter giver fit, og 13 hp er udgang: 4♥."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     12,
+     7,
+     6
+    ],
+    "H": [
+     11,
+     9,
+     7,
+     5
+    ],
+    "D": [
+     14,
+     11,
+     7
+    ],
+    "C": [
+     13,
+     3,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "correct": "4♥",
+   "why": "4 hjerter giver fit, og 11 hp er udgang: 4♥."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     13,
+     12,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     9,
+     8
+    ],
+    "C": [
+     13,
+     9,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "4♥",
+   "why": "4 hjerter giver fit, og 11 hp er udgang: 4♥."
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     2
+    ],
+    "H": [
+     13,
+     11,
+     9,
+     8
+    ],
+    "D": [
+     13,
+     11,
+     6
+    ],
+    "C": [
+     13,
+     12,
+     8,
+     3,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "4 hjerter giver fit, og 13 hp er udgang: 4♥."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     6
+    ],
+    "D": [
+     11,
+     6,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     7,
+     3,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "Kun 1 spar – intet fit – og 9 hp er invit: 2NT."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     12
+    ],
+    "H": [
+     11,
+     7,
+     5,
+     2
+    ],
+    "D": [
+     12,
+     6,
+     5
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     4,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "Kun 1 spar – intet fit – og 9 hp er invit: 2NT."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     12,
+     11
+    ],
+    "H": [
+     14,
+     11,
+     4,
+     2
+    ],
+    "D": [
+     11,
+     9,
+     8,
+     5,
+     3
+    ],
+    "C": [
+     8,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "2NT",
+   "why": "Kun 2 spar – intet fit – og 9 hp er invit: 2NT."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     12,
+     11
+    ],
+    "H": [
+     11,
+     9,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     9,
+     8,
+     3
+    ],
+    "C": [
+     13,
+     6,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2NT",
+   "why": "Kun 2 spar – intet fit – og 10 hp er invit: 2NT."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     11
+    ],
+    "H": [
+     14,
+     9,
+     5,
+     2
+    ],
+    "D": [
+     11,
+     10,
+     3
+    ],
+    "C": [
+     14,
+     6,
+     5,
+     4,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Kun 1 spar – intet fit – og 10 hp er invit: 2NT."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     13,
+     7
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     7
+    ],
+    "D": [
+     9,
+     6,
+     4
+    ],
+    "C": [
+     12,
+     9,
+     8,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2NT",
+   "why": "Kun 2 spar – intet fit – og 10 hp er invit: 2NT."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     9,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     11,
+     6,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     5,
+     2
+    ],
+    "C": [
+     13,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "3♠",
+   "why": "4 spar giver fit med åbners 5-farve, og 9 hp er invit: 3♠."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     14,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     2
+    ],
+    "D": [
+     12,
+     10,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "3♠",
+   "why": "4 spar giver fit med åbners 5-farve, og 9 hp er invit: 3♠."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     9,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     6
+    ],
+    "C": [
+     10,
+     9,
+     6,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "3♠",
+   "why": "4 spar giver fit med åbners 5-farve, og 9 hp er invit: 3♠."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     7,
+     5,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     2
+    ],
+    "D": [
+     11,
+     6,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     11
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♠",
+   "why": "3 spar giver fit med åbners 5-farve, og 10 hp er invit: 3♠."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     8,
+     7,
+     3
+    ],
+    "H": [
+     8,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     5,
+     2
+    ],
+    "C": [
+     13,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "3♠",
+   "why": "3 spar giver fit med åbners 5-farve, og 9 hp er invit: 3♠."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     11,
+     10,
+     8,
+     2
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     14,
+     11,
+     6,
+     4,
+     2
+    ],
+    "C": [
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♠",
+   "why": "4 spar giver fit med åbners 5-farve, og 10 hp er invit: 3♠."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     7,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     6,
+     4
+    ],
+    "D": [
+     6,
+     5
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     6,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "Kun 2 spar – intet fit – og 11 hp er udgang: 3NT."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     13,
+     9
+    ],
+    "H": [
+     13,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     9
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3NT",
+   "why": "Kun 2 spar – intet fit – og 14 hp er udgang: 3NT."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     13,
+     8
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     2
+    ],
+    "D": [
+     11,
+     8,
+     5
+    ],
+    "C": [
+     13,
+     9,
+     8,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "Kun 2 spar – intet fit – og 12 hp er udgang: 3NT."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     14,
+     3
+    ],
+    "H": [
+     13,
+     11,
+     8,
+     5
+    ],
+    "D": [
+     11,
+     7,
+     4
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "3NT",
+   "why": "Kun 2 spar – intet fit – og 13 hp er udgang: 3NT."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     11
+    ],
+    "H": [
+     12,
+     10,
+     9,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     6,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     7
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Kun 1 spar – intet fit – og 15 hp er udgang: 3NT."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     5
+    ],
+    "D": [
+     14,
+     11,
+     9,
+     4,
+     2
+    ],
+    "C": [
+     8,
+     6,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "Kun 1 spar – intet fit – og 14 hp er udgang: 3NT."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10
+    ],
+    "H": [
+     13,
+     10,
+     5,
+     4
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     14,
+     10,
+     8,
+     6,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "4♠",
+   "why": "3 spar giver fit, og 15 hp er udgang: 4♠."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     5,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     7,
+     3
+    ],
+    "D": [
+     12,
+     10,
+     8,
+     3
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "4♠",
+   "why": "4 spar giver fit, og 13 hp er udgang: 4♠."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     2
+    ],
+    "H": [
+     12,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     7
+    ],
+    "C": [
+     9,
+     8,
+     4,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♠",
+   "why": "4 spar giver fit, og 15 hp er udgang: 4♠."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     7,
+     4
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     14,
+     12,
+     8,
+     7,
+     2
+    ],
+    "C": [
+     8,
+     4,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "4♠",
+   "why": "4 spar giver fit, og 11 hp er udgang: 4♠."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     12,
+     9,
+     5
+    ],
+    "H": [
+     14,
+     10,
+     8,
+     4
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     13,
+     12,
+     10,
+     6,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "4♠",
+   "why": "3 spar giver fit, og 11 hp er udgang: 4♠."
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     12,
+     9,
+     7,
+     3
+    ],
+    "H": [
+     12,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "4♠",
+   "why": "4 spar giver fit, og 11 hp er udgang: 4♠."
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
+     10,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     14,
+     12,
+     4
+    ],
+    "C": [
+     14,
+     8,
+     7,
+     5,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "Åbner har minimum og ingen 4-farve i major; med 10 hp er der hverken fit eller styrke til mere: pas."
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     4
+    ],
+    "H": [
+     13,
+     10
+    ],
+    "D": [
+     12,
+     11,
+     10,
+     7,
+     3
+    ],
+    "C": [
+     9,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "Åbner har minimum og ingen 4-farve i major; med 9 hp er der hverken fit eller styrke til mere: pas."
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     14,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     10,
+     9,
+     8,
+     4
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     8
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "Åbner har minimum og ingen 4-farve i major; med 10 hp er der hverken fit eller styrke til mere: pas."
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
+     12,
+     9,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     6
+    ],
+    "D": [
+     12,
+     9,
+     5,
+     4
+    ],
+    "C": [
+     12,
+     8,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "Åbner har minimum og ingen 4-farve i major; med 10 hp er der hverken fit eller styrke til mere: pas."
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
+     14,
+     12,
+     4,
+     2
+    ],
+    "H": [
+     11,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     12,
+     10,
+     8,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "Åbner har minimum og ingen 4-farve i major; med 10 hp er der hverken fit eller styrke til mere: pas."
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
+     13,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     12,
+     10
+    ],
+    "D": [
+     9,
+     7
+    ],
+    "C": [
+     14,
+     10,
+     9,
+     5,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "Åbner har minimum og ingen 4-farve i major; med 9 hp er der hverken fit eller styrke til mere: pas."
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
+     8,
+     7,
+     2
+    ],
+    "H": [
+     14,
+     9,
+     7,
+     3
+    ],
+    "D": [
+     7
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     7,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "Pas",
+   "why": "Åbner har minimum og ingen 4-farve i major; med 9 hp er der hverken fit eller styrke til mere: pas."
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
+     9,
+     8
+    ],
+    "H": [
+     13,
+     10,
+     8,
+     6
+    ],
+    "D": [
+     11,
+     10,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     8
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "Åbner har minimum og ingen 4-farve i major; med 9 hp er der hverken fit eller styrke til mere: pas."
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
+     13,
+     12,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     9,
+     7,
+     6
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     12,
+     11,
+     7,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3NT",
+   "why": "12 hp er udgang, selv over et minimum: 3NT."
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
+     13,
+     8,
+     5
+    ],
+    "H": [
+     8,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     7,
+     6
+    ],
+    "C": [
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3NT",
+   "why": "11 hp er udgang, selv over et minimum: 3NT."
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
+     13,
+     12,
+     6,
+     5
+    ],
+    "H": [
+     12,
+     11
+    ],
+    "D": [
+     10,
+     6,
+     3
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     8
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3NT",
+   "why": "11 hp er udgang, selv over et minimum: 3NT."
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
+     2
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     8,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "14 hp er udgang, selv over et minimum: 3NT."
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
+     14,
+     8,
+     6,
+     5
+    ],
+    "H": [
+     12,
+     11,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     4,
+     3
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3NT",
+   "why": "11 hp er udgang, selv over et minimum: 3NT."
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
+     12,
+     11,
+     8
+    ],
+    "H": [
+     13,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     11,
+     7
+    ],
+    "C": [
+     13,
+     12,
+     6,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "12 hp er udgang, selv over et minimum: 3NT."
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
+     14,
+     3
+    ],
+    "H": [
+     13,
+     9,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     6
+    ],
+    "C": [
+     11,
+     8,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "12 hp er udgang, selv over et minimum: 3NT."
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10,
+     7
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     8
+    ],
+    "C": [
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "14 hp er udgang, selv over et minimum: 3NT."
+  }
+ ]
+}

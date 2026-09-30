@@ -126,16 +126,30 @@
   "viden": "viden/2-over-1-flemming.html#afsnit-5a"
  },
  {
-  "id": "svar-paa-1nt",
-  "titel": "Stayman og transfer",
+  "id": "stayman",
+  "system": "kf",
+  "titel": "Stayman",
   "gruppe": "Svar på 1NT",
-  "beskrivelse": "Stayman, majortransfer og minortransfer over makkers 1NT.",
+  "beskrivelse": "2♣ over makkers 1NT spørger efter en 4-farve i major; åbner melder en 5-farve, som var det en 4-farve.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "klar",
+  "viden": "viden/bridgesystem.html#3-svar-paa-1nt"
+ },
+ {
+  "id": "transfer",
+  "system": "kf",
+  "titel": "Transfer",
+  "gruppe": "Svar på 1NT",
+  "beskrivelse": "2♦/2♥ transfer til major, 2♠ minortransfer til klør, 3♣ til ruder.",
   "roller": [
    "Åbner",
    "Svarer"
   ],
   "status": "kommer",
-  "system": "kf"
+  "viden": "viden/bridgesystem.html#3-svar-paa-1nt"
  },
  {
   "id": "1430",
@@ -232,12 +246,12 @@
   "system": "ff",
   "titel": "Amerikansk Stayman (ASS)",
   "gruppe": "Svar på 1NT",
-  "beskrivelse": "2♣ over 1NT er mindst invit og undersøger åbners hele majorfordeling.",
+  "beskrivelse": "2♣ over 1NT er mindst invit og undersøger åbners hele majorfordeling: 2♦ 4-farve, 2♥/2♠ præcis 5-farve, 2NT/3NT ingen – og svarers krydsvendte fortsættelse.",
   "roller": [
    "Åbner",
    "Svarer"
   ],
-  "status": "kommer",
+  "status": "klar",
   "viden": "viden/2-over-1-flemming.html#afsnit-9"
  },
  {
