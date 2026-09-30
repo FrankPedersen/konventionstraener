@@ -340,13 +340,16 @@ Promise.all(['data/konventioner.json', 'data/systemer.json'].map(u => fetch(u).t
   .then(([list, systems]) => {
     const k = list.find(x => x.id === id);
     if (!k || k.status !== 'klar') throw new Error('ukendt');
-    const sys = systems.find(x => x.id === k.system);
-    backLink = `./?system=${k.system}#traen`;
+    const ids = Array.isArray(k.system) ? k.system : [k.system];
+    const sys = ids.length > 1 ? { navn: 'Fælles' } : systems.find(x => x.id === ids[0]);
+    let current = null;
+    try { current = localStorage.getItem('system'); } catch (e) {}
+    backLink = `./?system=${ids.includes(current) ? current : ids[0]}#traen`;
     document.title = `${k.titel} — Konventionstræner`;
     $('group').textContent = sys ? `${sys.navn} · ${k.gruppe}` : k.gruppe;
     $('title').textContent = k.titel;
     $('desc').textContent = k.beskrivelse;
-    if (k.viden) $('source').innerHTML = `Aftalerne står i <a href="${k.viden}">${sys ? sys.navn + 's' : 'vores'} system</a>.`;
+    if (k.viden) $('source').innerHTML = `Aftalerne står i <a href="${k.viden}">${ids.length > 1 ? 'systemdokumentet' : sys ? sys.navn + 's system' : 'vores system'}</a>.`;
     return fetch(`pools/${k.id}.json`).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
   })
   .then(pool => {

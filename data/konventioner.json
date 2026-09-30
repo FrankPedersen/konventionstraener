@@ -64,26 +64,49 @@
   "id": "bekkasin",
   "titel": "Bekkasin 2NT",
   "gruppe": "Majorstøtte",
-  "beskrivelse": "Vælg støttemelding over makkers 1♥/1♠ – og beskriv kortfarve og styrke som åbner efter 1M – 2NT.",
+  "beskrivelse": "13+ sp og 4+ korts støtte. Som åbner: minimum, tillæg eller korthed. Som svarer: 3♦-spørgsmål eller cuebid ved slemambition.",
   "roller": [
    "Åbner",
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/bridgesystem.html#4-5-bekkasin-1m-2nt",
-  "system": "kf"
+  "viden": "viden/2-over-1-flemming.html#afsnit-2",
+  "system": [
+   "kf",
+   "ff"
+  ]
  },
  {
   "id": "xy-sans",
-  "titel": "XY-sans",
+  "system": [
+   "kf",
+   "ff"
+  ],
+  "titel": "xy sans",
   "gruppe": "Videre meldeforløb",
-  "beskrivelse": "Relæ efter åbners 1NT-genmelding.",
+  "beskrivelse": "Efter 1♣/1♦ – 1♠ – 1NT: pas, 2♣ relæ eller 2♦ udgangskrav – og åbners trinsvar på 2♦.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "klar",
+  "viden": "viden/2-over-1-flemming.html#afsnit-6a"
+ },
+ {
+  "id": "cuebids",
+  "system": [
+   "kf",
+   "ff"
+  ],
+  "titel": "Cuebids",
+  "gruppe": "Slem",
+  "beskrivelse": "Enhver kontrol – es, konge, singleton eller renonce – billigst muligt, før RKC. Trænes indtil videre i Bekkasin.",
   "roller": [
    "Åbner",
    "Svarer"
   ],
   "status": "kommer",
-  "system": "kf"
+  "viden": "viden/2-over-1-flemming.html#afsnit-7"
  },
  {
   "id": "fjerde-farve",
@@ -133,19 +156,6 @@
   ],
   "status": "kommer",
   "viden": "viden/2-over-1-flemming.html#afsnit-1"
- },
- {
-  "id": "ff-bekkasin",
-  "system": "ff",
-  "titel": "Bekkasin 2NT",
-  "gruppe": "Majorstøtte",
-  "beskrivelse": "13+ sp og 4+ korts støtte. Åbner: 3♣ minimum, 3♦ tillæg, 3♥ kort klør, 3♠ kort ruder, 3NT kort i den anden major.",
-  "roller": [
-   "Åbner",
-   "Svarer"
-  ],
-  "status": "kommer",
-  "viden": "viden/2-over-1-flemming.html#afsnit-2"
  },
  {
   "id": "ff-trial-bids",
@@ -226,19 +236,6 @@
   "viden": "viden/2-over-1-flemming.html#afsnit-6"
  },
  {
-  "id": "ff-xyz",
-  "system": "ff",
-  "titel": "xy sans og XYZ",
-  "gruppe": "Videre meldeforløb",
-  "beskrivelse": "2♣ relæ og 2♦ udgangskrav efter åbners genmelding på 1-trinnet.",
-  "roller": [
-   "Åbner",
-   "Svarer"
-  ],
-  "status": "kommer",
-  "viden": "viden/2-over-1-flemming.html#afsnit-6a"
- },
- {
   "id": "ff-ass",
   "system": "ff",
   "titel": "Amerikansk Stayman (ASS)",
@@ -313,7 +310,7 @@
    "Indmelder",
    "Svarer"
   ],
-  "status": "kommer",
+  "status": "klar",
   "viden": "viden/2-over-1-flemming.html#afsnit-15a"
  },
  {
@@ -389,19 +386,6 @@
   "beskrivelse": "Nøglekort, spørgsmål efter trumfdamen og 5NT kongespørgsmål.",
   "roller": [
    "Spørger",
-   "Svarer"
-  ],
-  "status": "kommer",
-  "viden": "viden/2-over-1-flemming.html#afsnit-7"
- },
- {
-  "id": "ff-cuebids",
-  "system": "ff",
-  "titel": "Cuebids",
-  "gruppe": "Slem",
-  "beskrivelse": "Enhver kontrol – es, konge, singleton eller renonce – billigst muligt, før RKC.",
-  "roller": [
-   "Åbner",
    "Svarer"
   ],
   "status": "kommer",

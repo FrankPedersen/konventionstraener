@@ -22,6 +22,7 @@
   .systabs button[aria-selected="true"]{ background:var(--felt-deep); border-color:transparent; color:#fff; }
   .syskort{ font-family:var(--sans); font-size:1rem; color:var(--muted); margin:.4rem 0 0; }
   .syskort a{ font-weight:700; }
+  .roles .shared{ background:var(--felt-deep); color:#fff; }
   .tile .sys{ font-family:var(--sans); font-size:.8rem; font-weight:800; color:var(--gold); }
 </style>
 </head>
@@ -79,11 +80,13 @@ function renderSystem(id){
   document.getElementById('syskort').innerHTML = `${suits(sys.kort)} · <a href="${esc(sys.viden)}">Læs aftalerne</a>`;
 
   const groups = {};
-  CONVENTIONS.filter(k => k.system === sys.id).forEach(k => (groups[k.gruppe] = groups[k.gruppe] || []).push(k));
+  const systemsOf = k => Array.isArray(k.system) ? k.system : [k.system];
+  CONVENTIONS.filter(k => systemsOf(k).includes(sys.id)).forEach(k => (groups[k.gruppe] = groups[k.gruppe] || []).push(k));
   document.getElementById('konventioner').innerHTML = Object.entries(groups).map(([g, ks]) => `
     <p class="grouphead">${esc(g)}</p>
     <div class="tiles">${ks.map(k => {
-      const roles = `<div class="roles">${k.roller.map(r => `<span>${esc(r)}</span>`).join('')}</div>`;
+      const shared = systemsOf(k).length > 1 ? '<span class="shared">Fælles for begge systemer</span>' : '';
+      const roles = `<div class="roles">${k.roller.map(r => `<span>${esc(r)}</span>`).join('')}${shared}</div>`;
       return k.status === 'klar'
         ? `<a class="tile" href="traener.html?k=${encodeURIComponent(k.id)}"><h3>${suits(k.titel)}</h3><p>${suits(k.beskrivelse)}</p>${roles}<div class="meta">Træn 8 hænder →</div></a>`
         : `<div class="tile soon"><h3>${suits(k.titel)}</h3><p>${suits(k.beskrivelse)}</p>${roles}<div class="meta">Kommer${k.viden ? ` · <a href="${esc(k.viden)}">Aftalen</a>` : ''}</div></div>`;

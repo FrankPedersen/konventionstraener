@@ -121,3 +121,28 @@ def export(path, situations, hands):
     for h in hands:
         counts[h["situation"]] = counts.get(h["situation"], 0) + 1
     return counts
+
+def build_pool(path, situations, classifiers, samplers, per_call):
+    """Draw hands per target call until each call has per_call[situation] distinct hands whose
+    classifier agrees with the target, then write the pool file."""
+    hands, seen = [], set()
+    for situation, n in per_call.items():
+        for call, sampler in samplers[situation].items():
+            made = tries = 0
+            while made < n and tries < 20000:
+                tries += 1
+                r = sampler()
+                if not r:
+                    continue
+                hand, hp, sp = r
+                key = tuple(tuple(hand[s]) for s in SUITS)
+                res = classifiers[situation](hand, hp)
+                if key in seen or not res or res[0] != call:
+                    continue
+                seen.add(key)
+                hands.append({"situation": situation, "hand": {s: hand[s] for s in SUITS},
+                              "hp": hp, "sp": sp, "correct": res[0], "why": res[1]})
+                made += 1
+            if made < n:
+                print(f"Advarsel: kun {made}/{n} hænder til {situation} {call}")
+    return export(path, situations, hands)

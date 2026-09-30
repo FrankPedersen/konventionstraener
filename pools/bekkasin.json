@@ -26,19 +26,17 @@
     "3♥",
     "3♠",
     "3NT",
-    "4♣",
-    "4♦",
     "4♥"
    ],
    "bonus": {
     "q": "Hvad viser makkers 2NT?",
-    "correct": "12+ sp og støtte – Bekkasin",
+    "correct": "13+ sp og 4+ korts støtte – Bekkasin",
     "options": [
-     "12+ sp og støtte – Bekkasin",
+     "13+ sp og 4+ korts støtte – Bekkasin",
      "11–12 hp jævn, invit",
-     "7–10 sp med 4-korts støtte"
+     "10–12 sp med præcis 3 korts støtte"
     ],
-    "why": "2NT er Bekkasin: 12+ sp (inkl. kortfarvepoint) og støtte til majoren. Åbner beskriver nu kortfarve og styrke."
+    "why": "2NT er Bekkasin: 13+ støttepoint og mindst 4 korts støtte. Åbner beskriver i ét træk: minimum, tillæg uden korthed eller tillæg med korthed."
    }
   },
   "spm_1h": {
@@ -85,16 +83,16 @@
    ],
    "bonus": {
     "q": "Hvad spørger makkers 3♦ om?",
-    "correct": "Om dit minimum alligevel har en kortfarve",
+    "correct": "Om dit minimum alligevel har en korthed",
     "options": [
-     "Om dit minimum alligevel har en kortfarve",
+     "Om dit minimum alligevel har en korthed",
      "Om du har tillæg",
      "Om du har hold i ruder"
     ],
-    "why": "Efter 3♣ (minimum) er 3♦ krav og spørger efter kortfarve. Svarene er de samme trin som ved tillæg."
+    "why": "Efter 3♣ (minimum) er 3♦ krav og spørger efter korthed. Trinene er de samme som ved tillæg, og 4 i trumffarven viser en helt jævn hånd."
    }
   },
-  "svar_1h": {
+  "svar_min_1h": {
    "rolle": "Svarer",
    "auction": [
     [
@@ -104,24 +102,223 @@
     [
      "Modstander",
      "Pas"
+    ],
+    [
+     "Dig",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "3♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
     ]
    ],
    "calls": [
-    "2NT",
-    "3♣",
     "3♦",
     "3♥",
+    "3♠",
+    "3NT",
     "4♥"
    ],
    "bonus": {
-    "q": "Hvad lover makkers åbning i major?",
-    "correct": "12(11)–21 hp og 5+ kort",
+    "q": "Hvad er en kontrol, når I cuebidder?",
+    "correct": "Es, konge, singleton eller renonce",
     "options": [
-     "12(11)–21 hp og 5+ kort",
-     "12–21 hp og 4+ kort",
-     "15–17 hp, jævn"
+     "Es, konge, singleton eller renonce",
+     "Kun esser og renoncer",
+     "Es eller konge – aldrig korthed"
     ],
-    "why": "Åbning på 1♥/1♠ er 12(11)–21 hp med 5+ kort i farven; 20-reglen anvendes."
+    "why": "Vi viser enhver kontrol – es, konge, singleton eller renonce – uden at skelne mellem 1. og 2. rundes kontrol. Billigste kontrolfarve først; en oversprunget farve benægter kontrol."
+   }
+  },
+  "svar_3d_1h": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "3♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "3♥",
+    "3♠",
+    "3NT",
+    "4♣",
+    "4♦",
+    "4♥"
+   ],
+   "bonus": {
+    "q": "Hvad er en kontrol, når I cuebidder?",
+    "correct": "Es, konge, singleton eller renonce",
+    "options": [
+     "Es, konge, singleton eller renonce",
+     "Kun esser og renoncer",
+     "Es eller konge – aldrig korthed"
+    ],
+    "why": "Vi viser enhver kontrol – es, konge, singleton eller renonce – uden at skelne mellem 1. og 2. rundes kontrol. Billigste kontrolfarve først; en oversprunget farve benægter kontrol."
+   }
+  },
+  "svar_3h_1h": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "3♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "3♠",
+    "3NT",
+    "4♣",
+    "4♦",
+    "4♥"
+   ],
+   "bonus": {
+    "q": "Hvad er en kontrol, når I cuebidder?",
+    "correct": "Es, konge, singleton eller renonce",
+    "options": [
+     "Es, konge, singleton eller renonce",
+     "Kun esser og renoncer",
+     "Es eller konge – aldrig korthed"
+    ],
+    "why": "Vi viser enhver kontrol – es, konge, singleton eller renonce – uden at skelne mellem 1. og 2. rundes kontrol. Billigste kontrolfarve først; en oversprunget farve benægter kontrol."
+   }
+  },
+  "svar_3s_1h": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "3♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "3NT",
+    "4♣",
+    "4♦",
+    "4♥"
+   ],
+   "bonus": {
+    "q": "Hvad er en kontrol, når I cuebidder?",
+    "correct": "Es, konge, singleton eller renonce",
+    "options": [
+     "Es, konge, singleton eller renonce",
+     "Kun esser og renoncer",
+     "Es eller konge – aldrig korthed"
+    ],
+    "why": "Vi viser enhver kontrol – es, konge, singleton eller renonce – uden at skelne mellem 1. og 2. rundes kontrol. Billigste kontrolfarve først; en oversprunget farve benægter kontrol."
+   }
+  },
+  "svar_3nt_1h": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "3NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "Pas",
+    "4♣",
+    "4♦",
+    "4♥"
+   ],
+   "bonus": {
+    "q": "Hvad er en kontrol, når I cuebidder?",
+    "correct": "Es, konge, singleton eller renonce",
+    "options": [
+     "Es, konge, singleton eller renonce",
+     "Kun esser og renoncer",
+     "Es eller konge – aldrig korthed"
+    ],
+    "why": "Vi viser enhver kontrol – es, konge, singleton eller renonce – uden at skelne mellem 1. og 2. rundes kontrol. Billigste kontrolfarve først; en oversprunget farve benægter kontrol."
    }
   },
   "aabner_1s": {
@@ -150,19 +347,17 @@
     "3♥",
     "3♠",
     "3NT",
-    "4♣",
-    "4♦",
-    "4♥"
+    "4♠"
    ],
    "bonus": {
     "q": "Hvad viser makkers 2NT?",
-    "correct": "12+ sp og støtte – Bekkasin",
+    "correct": "13+ sp og 4+ korts støtte – Bekkasin",
     "options": [
-     "12+ sp og støtte – Bekkasin",
+     "13+ sp og 4+ korts støtte – Bekkasin",
      "11–12 hp jævn, invit",
-     "7–10 sp med 4-korts støtte"
+     "10–12 sp med præcis 3 korts støtte"
     ],
-    "why": "2NT er Bekkasin: 12+ sp (inkl. kortfarvepoint) og støtte til majoren. Åbner beskriver nu kortfarve og styrke."
+    "why": "2NT er Bekkasin: 13+ støttepoint og mindst 4 korts støtte. Åbner beskriver i ét træk: minimum, tillæg uden korthed eller tillæg med korthed."
    }
   },
   "spm_1s": {
@@ -209,16 +404,16 @@
    ],
    "bonus": {
     "q": "Hvad spørger makkers 3♦ om?",
-    "correct": "Om dit minimum alligevel har en kortfarve",
+    "correct": "Om dit minimum alligevel har en korthed",
     "options": [
-     "Om dit minimum alligevel har en kortfarve",
+     "Om dit minimum alligevel har en korthed",
      "Om du har tillæg",
      "Om du har hold i ruder"
     ],
-    "why": "Efter 3♣ (minimum) er 3♦ krav og spørger efter kortfarve. Svarene er de samme trin som ved tillæg."
+    "why": "Efter 3♣ (minimum) er 3♦ krav og spørger efter korthed. Trinene er de samme som ved tillæg, og 4 i trumffarven viser en helt jævn hånd."
    }
   },
-  "svar_1s": {
+  "svar_min_1s": {
    "rolle": "Svarer",
    "auction": [
     [
@@ -228,24 +423,226 @@
     [
      "Modstander",
      "Pas"
+    ],
+    [
+     "Dig",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "3♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
     ]
    ],
    "calls": [
-    "2NT",
-    "3♣",
     "3♦",
+    "3♥",
     "3♠",
+    "3NT",
     "4♠"
    ],
    "bonus": {
-    "q": "Hvad lover makkers åbning i major?",
-    "correct": "12(11)–21 hp og 5+ kort",
+    "q": "Hvad er en kontrol, når I cuebidder?",
+    "correct": "Es, konge, singleton eller renonce",
     "options": [
-     "12(11)–21 hp og 5+ kort",
-     "12–21 hp og 4+ kort",
-     "15–17 hp, jævn"
+     "Es, konge, singleton eller renonce",
+     "Kun esser og renoncer",
+     "Es eller konge – aldrig korthed"
     ],
-    "why": "Åbning på 1♥/1♠ er 12(11)–21 hp med 5+ kort i farven; 20-reglen anvendes."
+    "why": "Vi viser enhver kontrol – es, konge, singleton eller renonce – uden at skelne mellem 1. og 2. rundes kontrol. Billigste kontrolfarve først; en oversprunget farve benægter kontrol."
+   }
+  },
+  "svar_3d_1s": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "3♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "3♥",
+    "3♠",
+    "3NT",
+    "4♣",
+    "4♦",
+    "4♥",
+    "4♠"
+   ],
+   "bonus": {
+    "q": "Hvad er en kontrol, når I cuebidder?",
+    "correct": "Es, konge, singleton eller renonce",
+    "options": [
+     "Es, konge, singleton eller renonce",
+     "Kun esser og renoncer",
+     "Es eller konge – aldrig korthed"
+    ],
+    "why": "Vi viser enhver kontrol – es, konge, singleton eller renonce – uden at skelne mellem 1. og 2. rundes kontrol. Billigste kontrolfarve først; en oversprunget farve benægter kontrol."
+   }
+  },
+  "svar_3h_1s": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "3♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "3♠",
+    "3NT",
+    "4♣",
+    "4♦",
+    "4♥",
+    "4♠"
+   ],
+   "bonus": {
+    "q": "Hvad er en kontrol, når I cuebidder?",
+    "correct": "Es, konge, singleton eller renonce",
+    "options": [
+     "Es, konge, singleton eller renonce",
+     "Kun esser og renoncer",
+     "Es eller konge – aldrig korthed"
+    ],
+    "why": "Vi viser enhver kontrol – es, konge, singleton eller renonce – uden at skelne mellem 1. og 2. rundes kontrol. Billigste kontrolfarve først; en oversprunget farve benægter kontrol."
+   }
+  },
+  "svar_3s_1s": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "3♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "3NT",
+    "4♣",
+    "4♦",
+    "4♥",
+    "4♠"
+   ],
+   "bonus": {
+    "q": "Hvad er en kontrol, når I cuebidder?",
+    "correct": "Es, konge, singleton eller renonce",
+    "options": [
+     "Es, konge, singleton eller renonce",
+     "Kun esser og renoncer",
+     "Es eller konge – aldrig korthed"
+    ],
+    "why": "Vi viser enhver kontrol – es, konge, singleton eller renonce – uden at skelne mellem 1. og 2. rundes kontrol. Billigste kontrolfarve først; en oversprunget farve benægter kontrol."
+   }
+  },
+  "svar_3nt_1s": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "3NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "4♣",
+    "4♦",
+    "4♥",
+    "4♠"
+   ],
+   "bonus": {
+    "q": "Hvad er en kontrol, når I cuebidder?",
+    "correct": "Es, konge, singleton eller renonce",
+    "options": [
+     "Es, konge, singleton eller renonce",
+     "Kun esser og renoncer",
+     "Es eller konge – aldrig korthed"
+    ],
+    "why": "Vi viser enhver kontrol – es, konge, singleton eller renonce – uden at skelne mellem 1. og 2. rundes kontrol. Billigste kontrolfarve først; en oversprunget farve benægter kontrol."
    }
   }
  },
@@ -254,1839 +651,3186 @@
    "situation": "aabner_1h",
    "hand": {
     "S": [
+     11,
+     8
+    ],
+    "H": [
+     14,
      13,
-     11,
-     4,
-     3
-    ],
-    "H": [
-     14,
-     11,
-     9,
-     6,
-     4
-    ],
-    "D": [
-     14,
-     4
-    ],
-    "C": [
-     4,
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "3♣",
-   "why": "13 hp er minimum (12–14) uden renonce: 3♣."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     14,
-     10
-    ],
-    "H": [
-     14,
      12,
-     11,
      10,
-     5,
-     3
-    ],
-    "D": [
-     8
-    ],
-    "C": [
-     12,
-     11,
      9,
-     6
-    ]
-   },
-   "hp": 14,
-   "sp": 18,
-   "correct": "3♣",
-   "why": "14 hp er minimum (12–14) uden renonce: 3♣. Singletonen i ruder kan makker spørge efter med 3♦."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     13,
-     4,
-     3
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     8,
-     7,
-     4
+     8
     ],
     "D": [
-     7,
-     5
+     13,
+     10,
+     9
     ],
     "C": [
-     12,
-     8
+     11,
+     5
     ]
    },
    "hp": 14,
    "sp": 16,
    "correct": "3♣",
-   "why": "14 hp er minimum (12–14) uden renonce: 3♣."
+   "why": "14 hp er minimum (højst 15): 3♣ – med eller uden korthed."
   },
   {
    "situation": "aabner_1h",
    "hand": {
     "S": [
-     14,
-     5,
-     4
-    ],
-    "H": [
-     13,
-     12,
-     8,
+     11,
+     10,
      5,
      2
     ],
-    "D": [
-     12,
-     10,
-     5
-    ],
-    "C": [
-     13,
-     3
-    ]
-   },
-   "hp": 14,
-   "sp": 15,
-   "correct": "3♣",
-   "why": "14 hp er minimum (12–14) uden renonce: 3♣."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     13,
-     9,
-     5,
-     3
-    ],
     "H": [
      14,
+     13,
      11,
      10,
-     6,
-     3
-    ],
-    "D": [
-     14,
-     9
-    ],
-    "C": [
-     14,
-     2
-    ]
-   },
-   "hp": 16,
-   "sp": 18,
-   "correct": "3♦",
-   "why": "16 hp er tillæg (15+) uden kortfarve: 3♦."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     14,
-     10,
-     9
-    ],
-    "H": [
-     13,
-     11,
-     7,
-     4,
-     2
-    ],
-    "D": [
-     14,
-     4
-    ],
-    "C": [
-     13,
-     12,
-     7
-    ]
-   },
-   "hp": 17,
-   "sp": 18,
-   "correct": "3♦",
-   "why": "17 hp er tillæg (15+) uden kortfarve: 3♦."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     13,
-     10,
-     4
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     10,
-     4
-    ],
-    "D": [
-     14,
-     6
-    ],
-    "C": [
-     11,
-     9,
-     2
-    ]
-   },
-   "hp": 17,
-   "sp": 18,
-   "correct": "3♦",
-   "why": "17 hp er tillæg (15+) uden kortfarve: 3♦."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     14,
-     4
-    ],
-    "H": [
-     14,
-     12,
-     9,
-     3,
-     2
-    ],
-    "D": [
-     12,
-     2
-    ],
-    "C": [
-     14,
-     13,
-     8,
-     3
-    ]
-   },
-   "hp": 19,
-   "sp": 21,
-   "correct": "3♦",
-   "why": "19 hp er tillæg (15+) uden kortfarve: 3♦."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     10,
-     8,
-     5
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     10,
-     9,
      6
     ],
     "D": [
-     14
-    ],
-    "C": [
-     14,
-     12,
-     4
-    ]
-   },
-   "hp": 19,
-   "sp": 22,
-   "correct": "3♥",
-   "why": "19 hp er tillæg (15+) med singleton ruder: 3♥."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     8
-    ],
-    "H": [
-     14,
-     10,
-     9,
-     7,
-     4,
      3
     ],
-    "D": [
-     5
-    ],
     "C": [
      13,
-     5
-    ]
-   },
-   "hp": 16,
-   "sp": 20,
-   "correct": "3♥",
-   "why": "16 hp er tillæg (15+) med singleton ruder: 3♥."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     14,
-     13,
-     4
-    ],
-    "H": [
-     14,
-     13,
-     12,
      11,
      10
-    ],
-    "D": [
-     4
-    ],
-    "C": [
-     11,
-     8,
-     7,
-     6
-    ]
-   },
-   "hp": 18,
-   "sp": 21,
-   "correct": "3♥",
-   "why": "18 hp er tillæg (15+) med singleton ruder: 3♥."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     11,
-     10,
-     9,
-     4
-    ],
-    "H": [
-     14,
-     13,
-     7,
-     3,
-     2
-    ],
-    "D": [
-     14
-    ],
-    "C": [
-     13,
-     10,
-     8
-    ]
-   },
-   "hp": 15,
-   "sp": 18,
-   "correct": "3♥",
-   "why": "15 hp er tillæg (15+) med singleton ruder: 3♥."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     13,
-     2
-    ],
-    "H": [
-     13,
-     12,
-     7,
-     6,
-     4,
-     2
-    ],
-    "D": [
-     14,
-     10,
-     9,
-     7
-    ],
-    "C": [
-     14
-    ]
-   },
-   "hp": 16,
-   "sp": 20,
-   "correct": "3♠",
-   "why": "16 hp er tillæg (15+) med singleton klør: 3♠."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     14,
-     11,
-     8,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     11,
-     10,
-     3
-    ],
-    "D": [
-     12,
-     8,
-     4
-    ],
-    "C": [
-     3
-    ]
-   },
-   "hp": 15,
-   "sp": 18,
-   "correct": "3♠",
-   "why": "15 hp er tillæg (15+) med singleton klør: 3♠."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     13,
-     12,
-     9
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     8,
-     6,
-     5
-    ],
-    "D": [
-     13,
-     11,
-     9
-    ],
-    "C": [
-     2
-    ]
-   },
-   "hp": 18,
-   "sp": 21,
-   "correct": "3♠",
-   "why": "18 hp er tillæg (15+) med singleton klør: 3♠."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     14,
-     11,
-     5
-    ],
-    "H": [
-     13,
-     12,
-     11,
-     7,
-     6,
-     3
-    ],
-    "D": [
-     13,
-     8,
-     5
-    ],
-    "C": [
-     11
-    ]
-   },
-   "hp": 15,
-   "sp": 18,
-   "correct": "3♠",
-   "why": "15 hp er tillæg (15+) med singleton klør: 3♠."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     14
-    ],
-    "H": [
-     14,
-     11,
-     9,
-     5,
-     3
-    ],
-    "D": [
-     14,
-     12,
-     8,
-     7
-    ],
-    "C": [
-     11,
-     9,
-     5
-    ]
-   },
-   "hp": 16,
-   "sp": 19,
-   "correct": "3NT",
-   "why": "16 hp er tillæg (15+) med singleton spar: 3NT."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     5
-    ],
-    "H": [
-     14,
-     12,
-     9,
-     6,
-     5,
-     3
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     10
-    ],
-    "C": [
-     10,
-     4
-    ]
-   },
-   "hp": 15,
-   "sp": 19,
-   "correct": "3NT",
-   "why": "15 hp er tillæg (15+) med singleton spar: 3NT."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     3
-    ],
-    "H": [
-     14,
-     11,
-     7,
-     6,
-     2
-    ],
-    "D": [
-     14,
-     12,
-     10,
-     5
-    ],
-    "C": [
-     14,
-     3,
-     2
-    ]
-   },
-   "hp": 15,
-   "sp": 18,
-   "correct": "3NT",
-   "why": "15 hp er tillæg (15+) med singleton spar: 3NT."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     13
-    ],
-    "H": [
-     14,
-     12,
-     8,
-     6,
-     5
-    ],
-    "D": [
-     12,
-     11,
-     10
-    ],
-    "C": [
-     14,
-     10,
-     6,
-     5
-    ]
-   },
-   "hp": 16,
-   "sp": 19,
-   "correct": "3NT",
-   "why": "16 hp er tillæg (15+) med singleton spar: 3NT."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     11,
-     10,
-     9,
-     6
-    ],
-    "H": [
-     14,
-     10,
-     6,
-     5,
-     3,
-     2
-    ],
-    "D": [
-     14,
-     13,
-     3
-    ],
-    "C": []
-   },
-   "hp": 12,
-   "sp": 17,
-   "correct": "4♣",
-   "why": "Renonce i klør: renonce cuebiddes på 4-trinnet, så du melder 4♣ — uanset styrke."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     13,
-     10,
-     9,
-     6
-    ],
-    "H": [
-     14,
-     13,
-     9,
-     7,
-     6
-    ],
-    "D": [
-     12,
-     7,
-     6,
-     3
-    ],
-    "C": []
-   },
-   "hp": 12,
-   "sp": 17,
-   "correct": "4♣",
-   "why": "Renonce i klør: renonce cuebiddes på 4-trinnet, så du melder 4♣ — uanset styrke."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     13,
-     11,
-     2
-    ],
-    "H": [
-     13,
-     12,
-     6,
-     5,
-     2
-    ],
-    "D": [
-     13,
-     12,
-     10,
-     8,
-     7
-    ],
-    "C": []
-   },
-   "hp": 14,
-   "sp": 19,
-   "correct": "4♣",
-   "why": "Renonce i klør: renonce cuebiddes på 4-trinnet, så du melder 4♣ — uanset styrke."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     12,
-     8,
-     6
-    ],
-    "H": [
-     14,
-     13,
-     11,
-     10,
-     9,
-     2
-    ],
-    "D": [
-     13,
-     12,
-     11,
-     9
-    ],
-    "C": []
-   },
-   "hp": 16,
-   "sp": 21,
-   "correct": "4♣",
-   "why": "Renonce i klør: renonce cuebiddes på 4-trinnet, så du melder 4♣ — uanset styrke."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [
-     14,
-     12,
-     10
-    ],
-    "H": [
-     14,
-     6,
-     5,
-     4,
-     3
-    ],
-    "D": [],
-    "C": [
-     12,
-     11,
-     8,
-     4,
-     3
     ]
    },
    "hp": 13,
-   "sp": 18,
-   "correct": "4♦",
-   "why": "Renonce i ruder: renonce cuebiddes på 4-trinnet, så du melder 4♦ — uanset styrke."
+   "sp": 16,
+   "correct": "3♣",
+   "why": "13 hp er minimum (højst 15): 3♣ – med eller uden korthed. Makker kan spørge efter din korthed i ruder med 3♦."
   },
   {
    "situation": "aabner_1h",
    "hand": {
     "S": [
      13,
+     8,
+     6
+    ],
+    "H": [
      12,
+     11,
+     8,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     14,
+     12,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "12 hp er minimum (højst 15): 3♣ – med eller uden korthed. Makker kan spørge efter din korthed i ruder med 3♦."
+  },
+  {
+   "situation": "aabner_1h",
+   "hand": {
+    "S": [
+     11,
      10
     ],
     "H": [
+     14,
+     12,
+     8,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     8
+    ],
+    "C": [
+     12,
+     8,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "13 hp er minimum (højst 15): 3♣ – med eller uden korthed."
+  },
+  {
+   "situation": "aabner_1h",
+   "hand": {
+    "S": [
+     6,
+     5
+    ],
+    "H": [
+     14,
      13,
      12,
-     11,
-     7,
-     2
+     10,
+     6,
+     5
     ],
-    "D": [],
+    "D": [
+     5
+    ],
     "C": [
-     14,
-     9,
+     13,
+     12,
      8,
-     7,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "3♣",
+   "why": "14 hp er minimum (højst 15): 3♣ – med eller uden korthed. Makker kan spørge efter din korthed i ruder med 3♦."
+  },
+  {
+   "situation": "aabner_1h",
+   "hand": {
+    "S": [
+     14,
+     11,
+     6,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     8,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     13,
      6
     ]
    },
    "hp": 15,
-   "sp": 20,
-   "correct": "4♦",
-   "why": "Renonce i ruder: renonce cuebiddes på 4-trinnet, så du melder 4♦ — uanset styrke."
+   "sp": 19,
+   "correct": "3♣",
+   "why": "15 hp er minimum (højst 15): 3♣ – med eller uden korthed. Makker kan spørge efter din korthed i ruder med 3♦."
+  },
+  {
+   "situation": "aabner_1h",
+   "hand": {
+    "S": [
+     12,
+     10,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     7,
+     6
+    ],
+    "D": [
+     13,
+     3
+    ],
+    "C": [
+     14,
+     6
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "3♦",
+   "why": "16 hp er tillæg (16+) uden korthed: 3♦."
   },
   {
    "situation": "aabner_1h",
    "hand": {
     "S": [
      14,
-     13
+     12
+    ],
+    "H": [
+     13,
+     8,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     9,
+     7
+    ],
+    "C": [
+     14,
+     7,
+     6
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3♦",
+   "why": "17 hp er tillæg (16+) uden korthed: 3♦."
+  },
+  {
+   "situation": "aabner_1h",
+   "hand": {
+    "S": [
+     12,
+     2
     ],
     "H": [
      14,
      13,
-     9,
-     6,
-     5,
+     11,
+     10,
      2
     ],
-    "D": [],
+    "D": [
+     14,
+     13
+    ],
     "C": [
      14,
-     13,
      10,
-     7,
-     3
+     9,
+     7
     ]
    },
    "hp": 21,
-   "sp": 27,
-   "correct": "4♦",
-   "why": "Renonce i ruder: renonce cuebiddes på 4-trinnet, så du melder 4♦ — uanset styrke."
+   "sp": 23,
+   "correct": "3♦",
+   "why": "21 hp er tillæg (16+) uden korthed: 3♦."
   },
   {
    "situation": "aabner_1h",
    "hand": {
     "S": [
-     14,
-     11,
-     7
-    ],
-    "H": [
-     12,
-     10,
      9,
-     8,
-     7,
-     2
-    ],
-    "D": [],
-    "C": [
-     14,
-     12,
-     6,
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 18,
-   "correct": "4♦",
-   "why": "Renonce i ruder: renonce cuebiddes på 4-trinnet, så du melder 4♦ — uanset styrke."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [],
-    "H": [
-     14,
-     13,
-     12,
-     11,
-     5,
-     4
-    ],
-    "D": [
-     13,
-     8,
-     5
-    ],
-    "C": [
-     11,
-     8,
-     4,
-     3
-    ]
-   },
-   "hp": 14,
-   "sp": 19,
-   "correct": "4♥",
-   "why": "Renonce i spar: renonce cuebiddes på 4-trinnet, så du melder 4♥ — uanset styrke."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [],
-    "H": [
-     14,
-     13,
-     11,
-     8,
-     4
-    ],
-    "D": [
-     14,
-     5,
-     4,
-     3,
-     2
-    ],
-    "C": [
-     7,
-     3,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 17,
-   "correct": "4♥",
-   "why": "Renonce i spar: renonce cuebiddes på 4-trinnet, så du melder 4♥ — uanset styrke."
-  },
-  {
-   "situation": "aabner_1h",
-   "hand": {
-    "S": [],
-    "H": [
-     12,
-     9,
-     6,
-     5,
-     3,
-     2
-    ],
-    "D": [
-     14,
-     13,
-     10,
-     8,
-     7
-    ],
-    "C": [
-     13,
      6
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     7,
+     4
+    ],
+    "C": [
+     14,
+     12
     ]
    },
-   "hp": 12,
-   "sp": 18,
-   "correct": "4♥",
-   "why": "Renonce i spar: renonce cuebiddes på 4-trinnet, så du melder 4♥ — uanset styrke."
+   "hp": 17,
+   "sp": 19,
+   "correct": "3♦",
+   "why": "17 hp er tillæg (16+) uden korthed: 3♦."
   },
   {
    "situation": "aabner_1h",
    "hand": {
-    "S": [],
+    "S": [
+     14,
+     6
+    ],
     "H": [
-     12,
+     14,
+     13,
      11,
      8,
-     7,
-     5,
-     4
+     5
     ],
     "D": [
      14,
-     10,
-     9
+     13,
+     11,
+     5
     ],
     "C": [
-     14,
-     13,
-     4,
-     2
+     10,
+     8
     ]
    },
-   "hp": 14,
-   "sp": 19,
-   "correct": "4♥",
-   "why": "Renonce i spar: renonce cuebiddes på 4-trinnet, så du melder 4♥ — uanset styrke."
+   "hp": 20,
+   "sp": 22,
+   "correct": "3♦",
+   "why": "20 hp er tillæg (16+) uden korthed: 3♦."
   },
   {
-   "situation": "aabner_1s",
+   "situation": "aabner_1h",
    "hand": {
     "S": [
-     14,
-     12,
-     11,
-     9,
-     6,
+     13,
      3
     ],
     "H": [
+     14,
+     12,
+     10,
      9,
-     5
+     5,
+     3
     ],
     "D": [
-     13,
-     7,
-     5
-    ],
-    "C": [
      13,
      10
+    ],
+    "C": [
+     14,
+     10,
+     7
     ]
    },
-   "hp": 13,
-   "sp": 15,
-   "correct": "3♣",
-   "why": "13 hp er minimum (12–14) uden renonce: 3♣."
+   "hp": 16,
+   "sp": 18,
+   "correct": "3♦",
+   "why": "16 hp er tillæg (16+) uden korthed: 3♦."
   },
   {
-   "situation": "aabner_1s",
+   "situation": "aabner_1h",
    "hand": {
     "S": [
-     12,
+     10,
      8,
-     7,
-     6,
-     5,
-     3
+     7
     ],
     "H": [
-     12,
-     4
+     14,
+     13,
+     10,
+     9,
+     7
     ],
     "D": [
      14,
-     6,
-     4,
-     3
+     11,
+     8,
+     5
     ],
     "C": [
      14
     ]
    },
-   "hp": 12,
-   "sp": 16,
-   "correct": "3♣",
-   "why": "12 hp er minimum (12–14) uden renonce: 3♣. Singletonen i klør kan makker spørge efter med 3♦."
+   "hp": 16,
+   "sp": 19,
+   "correct": "3♥",
+   "why": "16 hp er tillæg (16+) med korthed i klør: 3♥."
   },
   {
-   "situation": "aabner_1s",
+   "situation": "aabner_1h",
    "hand": {
     "S": [
-     14,
+     13,
      12,
-     9,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     7,
      5,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     5
+    ],
+    "C": []
+   },
+   "hp": 17,
+   "sp": 22,
+   "correct": "3♥",
+   "why": "17 hp er tillæg (16+) med korthed i klør: 3♥."
+  },
+  {
+   "situation": "aabner_1h",
+   "hand": {
+    "S": [
+     12,
+     11,
+     6
+    ],
+    "H": [
+     13,
+     10,
+     8,
      4,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     11,
+     4
+    ],
+    "C": []
+   },
+   "hp": 16,
+   "sp": 21,
+   "correct": "3♥",
+   "why": "16 hp er tillæg (16+) med korthed i klør: 3♥."
+  },
+  {
+   "situation": "aabner_1h",
+   "hand": {
+    "S": [
+     9,
+     7,
+     5
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     10,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     9
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "3♥",
+   "why": "16 hp er tillæg (16+) med korthed i klør: 3♥."
+  },
+  {
+   "situation": "aabner_1h",
+   "hand": {
+    "S": [
+     13,
+     12,
      3
     ],
     "H": [
      12,
-     11,
+     10,
+     9,
+     6,
      5
     ],
     "D": [
-     3
+     14,
+     13,
+     12,
+     9,
+     7
+    ],
+    "C": []
+   },
+   "hp": 16,
+   "sp": 21,
+   "correct": "3♥",
+   "why": "16 hp er tillæg (16+) med korthed i klør: 3♥."
+  },
+  {
+   "situation": "aabner_1h",
+   "hand": {
+    "S": [
+     14,
+     7,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     10,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     8
     ],
     "C": [
-     13,
-     10,
      6
     ]
    },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♣",
-   "why": "12 hp er minimum (12–14) uden renonce: 3♣. Singletonen i ruder kan makker spørge efter med 3♦."
+   "hp": 16,
+   "sp": 19,
+   "correct": "3♥",
+   "why": "16 hp er tillæg (16+) med korthed i klør: 3♥."
   },
   {
-   "situation": "aabner_1s",
+   "situation": "aabner_1h",
+   "hand": {
+    "S": [
+     14,
+     11,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     9,
+     7
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     14,
+     11,
+     5
+    ]
+   },
+   "hp": 20,
+   "sp": 23,
+   "correct": "3♠",
+   "why": "20 hp er tillæg (16+) med korthed i ruder: 3♠."
+  },
+  {
+   "situation": "aabner_1h",
    "hand": {
     "S": [
      12,
      11,
+     8
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     8,
+     3
+    ],
+    "D": [],
+    "C": [
+     14,
+     13,
+     9,
      6,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 21,
+   "correct": "3♠",
+   "why": "16 hp er tillæg (16+) med korthed i ruder: 3♠."
+  },
+  {
+   "situation": "aabner_1h",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     2
+    ],
+    "H": [
+     14,
+     9,
+     7,
+     4,
+     3
+    ],
+    "D": [],
+    "C": [
+     14,
+     13,
+     12,
+     11
+    ]
+   },
+   "hp": 21,
+   "sp": 26,
+   "correct": "3♠",
+   "why": "21 hp er tillæg (16+) med korthed i ruder: 3♠."
+  },
+  {
+   "situation": "aabner_1h",
+   "hand": {
+    "S": [
+     13,
+     12,
+     7,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     8,
+     7,
+     4
+    ],
+    "D": [],
+    "C": [
+     14,
+     9,
+     6
+    ]
+   },
+   "hp": 16,
+   "sp": 21,
+   "correct": "3♠",
+   "why": "16 hp er tillæg (16+) med korthed i ruder: 3♠."
+  },
+  {
+   "situation": "aabner_1h",
+   "hand": {
+    "S": [
+     13,
+     12
+    ],
+    "H": [
+     14,
+     12,
+     9,
      4,
      2
     ],
-    "H": [
-     12,
-     7
-    ],
     "D": [
-     14,
-     12,
-     6
+     13
     ],
     "C": [
-     12,
+     13,
      8,
+     4,
+     3,
      2
     ]
    },
-   "hp": 13,
-   "sp": 14,
-   "correct": "3♣",
-   "why": "13 hp er minimum (12–14) uden renonce: 3♣."
+   "hp": 17,
+   "sp": 21,
+   "correct": "3♠",
+   "why": "17 hp er tillæg (16+) med korthed i ruder: 3♠."
   },
   {
-   "situation": "aabner_1s",
+   "situation": "aabner_1h",
    "hand": {
     "S": [
-     13,
-     12,
      11,
-     10,
-     6
+     2
     ],
     "H": [
      14,
+     13,
      12,
-     5,
-     4
+     9,
+     6,
+     5
     ],
     "D": [
-     11,
      7
     ],
     "C": [
      14,
-     12
+     13,
+     12,
+     5
     ]
    },
    "hp": 19,
-   "sp": 21,
-   "correct": "3♦",
-   "why": "19 hp er tillæg (15+) uden kortfarve: 3♦."
+   "sp": 23,
+   "correct": "3♠",
+   "why": "19 hp er tillæg (16+) med korthed i ruder: 3♠."
   },
   {
-   "situation": "aabner_1s",
+   "situation": "aabner_1h",
    "hand": {
     "S": [
-     14,
-     12,
-     9,
-     8,
-     5
-    ],
-    "H": [
-     11,
-     9
-    ],
-    "D": [
-     14,
-     12,
-     8,
-     2
-    ],
-    "C": [
-     13,
-     8
-    ]
-   },
-   "hp": 16,
-   "sp": 18,
-   "correct": "3♦",
-   "why": "16 hp er tillæg (15+) uden kortfarve: 3♦."
-  },
-  {
-   "situation": "aabner_1s",
-   "hand": {
-    "S": [
-     14,
-     13,
-     7,
-     6,
-     4
-    ],
-    "H": [
-     12,
-     9
-    ],
-    "D": [
-     14,
-     12,
-     7
-    ],
-    "C": [
-     10,
-     9,
-     6
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "3♦",
-   "why": "15 hp er tillæg (15+) uden kortfarve: 3♦."
-  },
-  {
-   "situation": "aabner_1s",
-   "hand": {
-    "S": [
-     14,
-     13,
-     10,
-     8,
-     2
-    ],
-    "H": [
-     14,
-     12,
-     11,
-     4
-    ],
-    "D": [
-     11,
-     7
-    ],
-    "C": [
-     7,
-     4
-    ]
-   },
-   "hp": 15,
-   "sp": 17,
-   "correct": "3♦",
-   "why": "15 hp er tillæg (15+) uden kortfarve: 3♦."
-  },
-  {
-   "situation": "aabner_1s",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     11,
-     2
-    ],
-    "H": [
-     11,
-     10,
-     6,
-     2
-    ],
-    "D": [
-     8
-    ],
-    "C": [
-     14,
-     11,
-     8
-    ]
-   },
-   "hp": 16,
-   "sp": 19,
-   "correct": "3♥",
-   "why": "16 hp er tillæg (15+) med singleton ruder: 3♥."
-  },
-  {
-   "situation": "aabner_1s",
-   "hand": {
-    "S": [
-     14,
-     11,
-     9,
-     7,
-     5,
-     2
-    ],
-    "H": [
-     13,
-     12,
-     11,
-     7
-    ],
-    "D": [
      13
     ],
-    "C": [
+    "H": [
+     12,
      11,
-     5
-    ]
-   },
-   "hp": 15,
-   "sp": 19,
-   "correct": "3♥",
-   "why": "15 hp er tillæg (15+) med singleton ruder: 3♥."
-  },
-  {
-   "situation": "aabner_1s",
-   "hand": {
-    "S": [
+     10,
+     8,
+     6
+    ],
+    "D": [
      14,
      13,
      12,
-     9,
+     8,
      5
     ],
-    "H": [
-     14,
-     10,
-     8,
-     2
-    ],
-    "D": [
-     12
-    ],
     "C": [
-     12,
-     10,
+     14,
      8
     ]
    },
-   "hp": 17,
-   "sp": 20,
-   "correct": "3♥",
-   "why": "17 hp er tillæg (15+) med singleton ruder: 3♥."
-  },
-  {
-   "situation": "aabner_1s",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     10,
-     8,
-     7
-    ],
-    "H": [
-     13,
-     11,
-     6
-    ],
-    "D": [
-     10
-    ],
-    "C": [
-     14,
-     10,
-     7
-    ]
-   },
-   "hp": 17,
-   "sp": 20,
-   "correct": "3♥",
-   "why": "17 hp er tillæg (15+) med singleton ruder: 3♥."
-  },
-  {
-   "situation": "aabner_1s",
-   "hand": {
-    "S": [
-     13,
-     11,
-     10,
-     9,
-     5,
-     3
-    ],
-    "H": [
-     9,
-     3,
-     2
-    ],
-    "D": [
-     14,
-     13,
-     7
-    ],
-    "C": [
-     14
-    ]
-   },
-   "hp": 15,
-   "sp": 18,
-   "correct": "3♠",
-   "why": "15 hp er tillæg (15+) med singleton klør: 3♠."
-  },
-  {
-   "situation": "aabner_1s",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     10,
-     8
-    ],
-    "H": [
-     9,
-     5,
-     2
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     3
-    ],
-    "C": [
-     6
-    ]
-   },
-   "hp": 18,
-   "sp": 21,
-   "correct": "3♠",
-   "why": "18 hp er tillæg (15+) med singleton klør: 3♠."
-  },
-  {
-   "situation": "aabner_1s",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     7,
-     5,
-     4
-    ],
-    "H": [
-     13,
-     2
-    ],
-    "D": [
-     12,
-     8,
-     7,
-     6
-    ],
-    "C": [
-     12
-    ]
-   },
-   "hp": 16,
-   "sp": 20,
-   "correct": "3♠",
-   "why": "16 hp er tillæg (15+) med singleton klør: 3♠."
-  },
-  {
-   "situation": "aabner_1s",
-   "hand": {
-    "S": [
-     13,
-     12,
-     9,
-     6,
-     5,
-     2
-    ],
-    "H": [
-     13,
-     12,
-     9,
-     2
-    ],
-    "D": [
-     13,
-     12
-    ],
-    "C": [
-     10
-    ]
-   },
-   "hp": 15,
-   "sp": 19,
-   "correct": "3♠",
-   "why": "15 hp er tillæg (15+) med singleton klør: 3♠."
-  },
-  {
-   "situation": "aabner_1s",
-   "hand": {
-    "S": [
-     14,
-     13,
-     9,
-     7,
-     3,
-     2
-    ],
-    "H": [
-     9
-    ],
-    "D": [
-     13,
-     3
-    ],
-    "C": [
-     14,
-     12,
-     8,
-     5
-    ]
-   },
-   "hp": 16,
-   "sp": 20,
+   "hp": 19,
+   "sp": 23,
    "correct": "3NT",
-   "why": "16 hp er tillæg (15+) med singleton hjerter: 3NT."
+   "why": "19 hp er tillæg (16+) med korthed i spar: 3NT."
   },
   {
-   "situation": "aabner_1s",
+   "situation": "aabner_1h",
    "hand": {
     "S": [
-     12,
-     11,
-     7,
-     5,
-     4,
-     2
-    ],
-    "H": [
-     14
-    ],
-    "D": [
-     14,
-     4
-    ],
-    "C": [
-     14,
-     13,
-     10,
-     9
-    ]
-   },
-   "hp": 18,
-   "sp": 22,
-   "correct": "3NT",
-   "why": "18 hp er tillæg (15+) med singleton hjerter: 3NT."
-  },
-  {
-   "situation": "aabner_1s",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     11,
-     10,
-     6
-    ],
-    "H": [
-     9
-    ],
-    "D": [
-     13,
-     11,
-     3
-    ],
-    "C": [
-     14,
-     8,
-     7
-    ]
-   },
-   "hp": 18,
-   "sp": 21,
-   "correct": "3NT",
-   "why": "18 hp er tillæg (15+) med singleton hjerter: 3NT."
-  },
-  {
-   "situation": "aabner_1s",
-   "hand": {
-    "S": [
-     13,
-     12,
-     10,
-     9,
-     4
-    ],
-    "H": [
-     5
-    ],
-    "D": [
-     14,
-     12,
-     5
-    ],
-    "C": [
-     14,
-     13,
-     9,
-     4
-    ]
-   },
-   "hp": 18,
-   "sp": 21,
-   "correct": "3NT",
-   "why": "18 hp er tillæg (15+) med singleton hjerter: 3NT."
-  },
-  {
-   "situation": "aabner_1s",
-   "hand": {
-    "S": [
-     14,
-     12,
-     7,
-     5,
-     3,
-     2
-    ],
-    "H": [
-     13,
-     5,
-     4,
-     2
-    ],
-    "D": [
-     13,
-     11,
-     10
-    ],
-    "C": []
-   },
-   "hp": 13,
-   "sp": 18,
-   "correct": "4♣",
-   "why": "Renonce i klør: renonce cuebiddes på 4-trinnet, så du melder 4♣ — uanset styrke."
-  },
-  {
-   "situation": "aabner_1s",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11,
-     8,
-     3
-    ],
-    "H": [
-     14,
-     12,
-     5
-    ],
-    "D": [
-     10,
-     8,
-     7,
-     4,
-     3
-    ],
-    "C": []
-   },
-   "hp": 13,
-   "sp": 18,
-   "correct": "4♣",
-   "why": "Renonce i klør: renonce cuebiddes på 4-trinnet, så du melder 4♣ — uanset styrke."
-  },
-  {
-   "situation": "aabner_1s",
-   "hand": {
-    "S": [
-     14,
-     11,
-     9,
-     7,
-     5,
-     4
-    ],
-    "H": [
-     14,
-     9,
-     5
-    ],
-    "D": [
-     12,
-     11,
-     10,
-     9
-    ],
-    "C": []
-   },
-   "hp": 12,
-   "sp": 17,
-   "correct": "4♣",
-   "why": "Renonce i klør: renonce cuebiddes på 4-trinnet, så du melder 4♣ — uanset styrke."
-  },
-  {
-   "situation": "aabner_1s",
-   "hand": {
-    "S": [
-     13,
-     10,
-     9,
-     7,
-     5,
-     4
-    ],
-    "H": [
-     14,
-     13
-    ],
-    "D": [
-     12,
-     10,
-     8,
-     6,
-     2
-    ],
-    "C": []
-   },
-   "hp": 12,
-   "sp": 18,
-   "correct": "4♣",
-   "why": "Renonce i klør: renonce cuebiddes på 4-trinnet, så du melder 4♣ — uanset styrke."
-  },
-  {
-   "situation": "aabner_1s",
-   "hand": {
-    "S": [
-     14,
-     11,
-     7,
-     3,
-     2
-    ],
-    "H": [
-     13,
-     12,
-     11,
-     7
-    ],
-    "D": [],
-    "C": [
-     12,
-     11,
-     8,
-     7
-    ]
-   },
-   "hp": 14,
-   "sp": 19,
-   "correct": "4♦",
-   "why": "Renonce i ruder: renonce cuebiddes på 4-trinnet, så du melder 4♦ — uanset styrke."
-  },
-  {
-   "situation": "aabner_1s",
-   "hand": {
-    "S": [
-     14,
-     13,
-     6,
-     3,
-     2
-    ],
-    "H": [
-     12,
-     7,
-     4
-    ],
-    "D": [],
-    "C": [
-     14,
-     9,
-     8,
-     7,
-     4
-    ]
-   },
-   "hp": 13,
-   "sp": 18,
-   "correct": "4♦",
-   "why": "Renonce i ruder: renonce cuebiddes på 4-trinnet, så du melder 4♦ — uanset styrke."
-  },
-  {
-   "situation": "aabner_1s",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
-     10,
-     7,
-     2
-    ],
-    "H": [
-     13,
      11
     ],
-    "D": [],
+    "H": [
+     14,
+     13,
+     11,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     7,
+     5
+    ],
     "C": [
+     5,
+     4
+    ]
+   },
+   "hp": 17,
+   "sp": 21,
+   "correct": "3NT",
+   "why": "17 hp er tillæg (16+) med korthed i spar: 3NT."
+  },
+  {
+   "situation": "aabner_1h",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     13,
+     11,
+     10,
+     8,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     8
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     9
+    ]
+   },
+   "hp": 16,
+   "sp": 21,
+   "correct": "3NT",
+   "why": "16 hp er tillæg (16+) med korthed i spar: 3NT."
+  },
+  {
+   "situation": "aabner_1h",
+   "hand": {
+    "S": [],
+    "H": [
      14,
      13,
      11,
      3,
      2
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     7
+    ],
+    "C": [
+     13,
+     12,
+     7,
+     4
     ]
    },
-   "hp": 18,
-   "sp": 24,
-   "correct": "4♦",
-   "why": "Renonce i ruder: renonce cuebiddes på 4-trinnet, så du melder 4♦ — uanset styrke."
+   "hp": 20,
+   "sp": 25,
+   "correct": "3NT",
+   "why": "20 hp er tillæg (16+) med korthed i spar: 3NT."
   },
   {
-   "situation": "aabner_1s",
+   "situation": "aabner_1h",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     13,
+     10,
+     9,
+     5,
+     4
+    ],
+    "D": [
+     5,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     8,
+     6
+    ]
+   },
+   "hp": 16,
+   "sp": 22,
+   "correct": "3NT",
+   "why": "16 hp er tillæg (16+) med korthed i spar: 3NT."
+  },
+  {
+   "situation": "aabner_1h",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     14,
+     12,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     11,
+     8,
+     7,
+     6
+    ],
+    "C": [
+     14,
+     8
+    ]
+   },
+   "hp": 19,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "19 hp er tillæg (16+) med korthed i spar: 3NT."
+  },
+  {
+   "situation": "spm_1h",
+   "hand": {
+    "S": [
+     14,
+     9,
+     7,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     9,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     3
+    ],
+    "C": []
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "3♥",
+   "why": "Korthed i klør: 3♥. Du har stadig minimum."
+  },
+  {
+   "situation": "spm_1h",
    "hand": {
     "S": [
      14,
      12,
+     2
+    ],
+    "H": [
+     12,
+     9,
+     8,
+     7,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     5
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "Korthed i klør: 3♥. Du har stadig minimum."
+  },
+  {
+   "situation": "spm_1h",
+   "hand": {
+    "S": [
+     12,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     5
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "Korthed i klør: 3♥. Du har stadig minimum."
+  },
+  {
+   "situation": "spm_1h",
+   "hand": {
+    "S": [
+     11,
+     8
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     8,
+     7,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     5,
+     4
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "3♥",
+   "why": "Korthed i klør: 3♥. Du har stadig minimum."
+  },
+  {
+   "situation": "spm_1h",
+   "hand": {
+    "S": [
+     10,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     7
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "Korthed i klør: 3♥. Du har stadig minimum."
+  },
+  {
+   "situation": "spm_1h",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8
+    ],
+    "H": [
+     11,
      9,
      6,
-     4
+     4,
+     3
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     13,
+     12,
+     6,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "Korthed i ruder: 3♠. Du har stadig minimum."
+  },
+  {
+   "situation": "spm_1h",
+   "hand": {
+    "S": [
+     10,
+     9,
+     6,
+     5
     ],
     "H": [
      14,
-     7,
+     13,
+     12,
+     10,
+     8,
+     7
+    ],
+    "D": [
      2
+    ],
+    "C": [
+     13,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "Korthed i ruder: 3♠. Du har stadig minimum."
+  },
+  {
+   "situation": "spm_1h",
+   "hand": {
+    "S": [
+     14,
+     9,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10,
+     8,
+     7
     ],
     "D": [],
     "C": [
-     14,
-     11,
-     6,
-     4,
+     12,
+     7,
+     5,
      2
     ]
    },
    "hp": 15,
    "sp": 20,
-   "correct": "4♦",
-   "why": "Renonce i ruder: renonce cuebiddes på 4-trinnet, så du melder 4♦ — uanset styrke."
+   "correct": "3♠",
+   "why": "Korthed i ruder: 3♠. Du har stadig minimum."
   },
   {
-   "situation": "aabner_1s",
+   "situation": "spm_1h",
+   "hand": {
+    "S": [
+     14,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     8,
+     7,
+     2
+    ],
+    "D": [],
+    "C": [
+     13,
+     9,
+     4,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "Korthed i ruder: 3♠. Du har stadig minimum."
+  },
+  {
+   "situation": "spm_1h",
    "hand": {
     "S": [
      14,
      12,
+     10,
+     7
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     8,
+     5
+    ],
+    "D": [],
+    "C": [
      11,
+     9,
+     6,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "Korthed i ruder: 3♠. Du har stadig minimum."
+  },
+  {
+   "situation": "spm_1h",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     14,
+     12,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     9,
+     6
+    ],
+    "C": [
+     8,
+     6,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3NT",
+   "why": "Korthed i spar: 3NT. Du har stadig minimum."
+  },
+  {
+   "situation": "spm_1h",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     14,
+     10,
+     8,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     11,
+     3
+    ],
+    "C": [
+     14,
+     9,
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3NT",
+   "why": "Korthed i spar: 3NT. Du har stadig minimum."
+  },
+  {
+   "situation": "spm_1h",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     12,
+     11,
+     7,
+     6,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     7,
+     4
+    ],
+    "C": [
+     7,
+     6,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "Korthed i spar: 3NT. Du har stadig minimum."
+  },
+  {
+   "situation": "spm_1h",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     8,
+     7
+    ],
+    "D": [
+     14,
+     6
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     9,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "Korthed i spar: 3NT. Du har stadig minimum."
+  },
+  {
+   "situation": "spm_1h",
+   "hand": {
+    "S": [
+     10
+    ],
+    "H": [
+     14,
+     13,
+     6,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     6,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     8
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3NT",
+   "why": "Korthed i spar: 3NT. Du har stadig minimum."
+  },
+  {
+   "situation": "spm_1h",
+   "hand": {
+    "S": [
+     7,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     8,
+     2
+    ],
+    "D": [
+     10,
+     7,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "4♥",
+   "why": "Ingen korthed – helt jævn minimumshånd: 4♥. Svarer passer normalt."
+  },
+  {
+   "situation": "spm_1h",
+   "hand": {
+    "S": [
+     13,
+     6
+    ],
+    "H": [
+     13,
+     9,
+     8,
+     6,
+     3
+    ],
+    "D": [
+     13,
+     8
+    ],
+    "C": [
+     14,
+     9,
+     7,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "4♥",
+   "why": "Ingen korthed – helt jævn minimumshånd: 4♥. Svarer passer normalt."
+  },
+  {
+   "situation": "spm_1h",
+   "hand": {
+    "S": [
+     12,
+     11,
+     6
+    ],
+    "H": [
+     11,
+     9,
+     8,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     9
+    ],
+    "C": [
+     14,
+     9,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "4♥",
+   "why": "Ingen korthed – helt jævn minimumshånd: 4♥. Svarer passer normalt."
+  },
+  {
+   "situation": "spm_1h",
+   "hand": {
+    "S": [
+     4,
+     3
+    ],
+    "H": [
+     12,
+     9,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     7,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "4♥",
+   "why": "Ingen korthed – helt jævn minimumshånd: 4♥. Svarer passer normalt."
+  },
+  {
+   "situation": "spm_1h",
+   "hand": {
+    "S": [
+     8,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     10,
      8,
      5,
      4
     ],
-    "H": [],
     "D": [
+     13,
+     8,
+     2
+    ],
+    "C": [
+     13,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "4♥",
+   "why": "Ingen korthed – helt jævn minimumshånd: 4♥. Svarer passer normalt."
+  },
+  {
+   "situation": "svar_min_1h",
+   "hand": {
+    "S": [
+     11,
+     3
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     9
+    ],
+    "C": [
+     14,
+     7,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "15 sp giver slemambition over et minimum: 3♦ spørger, om åbner alligevel har en korthed."
+  },
+  {
+   "situation": "svar_min_1h",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     11,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     12,
+     10,
+     8
+    ],
+    "C": [
+     14,
+     11,
+     8,
+     6,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "3♦",
+   "why": "17 sp giver slemambition over et minimum: 3♦ spørger, om åbner alligevel har en korthed."
+  },
+  {
+   "situation": "svar_min_1h",
+   "hand": {
+    "S": [
+     14,
+     9,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     8,
+     4
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     4,
+     3
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♦",
+   "why": "18 sp giver slemambition over et minimum: 3♦ spørger, om åbner alligevel har en korthed."
+  },
+  {
+   "situation": "svar_min_1h",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     9,
+     7,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     9
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "3♦",
+   "why": "17 sp giver slemambition over et minimum: 3♦ spørger, om åbner alligevel har en korthed."
+  },
+  {
+   "situation": "svar_min_1h",
+   "hand": {
+    "S": [
+     12,
+     9
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     5
+    ],
+    "D": [
+     12,
+     9
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     8,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3♦",
+   "why": "17 sp giver slemambition over et minimum: 3♦ spørger, om åbner alligevel har en korthed."
+  },
+  {
+   "situation": "svar_min_1h",
+   "hand": {
+    "S": [
+     13,
+     12
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     8
+    ],
+    "D": [
+     13,
+     8,
+     6
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     4
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "correct": "3♦",
+   "why": "19 sp giver slemambition over et minimum: 3♦ spørger, om åbner alligevel har en korthed."
+  },
+  {
+   "situation": "svar_min_1h",
+   "hand": {
+    "S": [
+     11,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10
+    ],
+    "D": [
+     14,
+     9
+    ],
+    "C": [
+     9,
+     8,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "16 sp giver slemambition over et minimum: 3♦ spørger, om åbner alligevel har en korthed."
+  },
+  {
+   "situation": "svar_min_1h",
+   "hand": {
+    "S": [
+     11,
+     7,
+     4
+    ],
+    "H": [
+     12,
+     11,
+     9,
+     6,
+     3
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     13,
+     8,
+     6,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "4♥",
+   "why": "14 sp og åbner har minimum: 4♥ som afmelding."
+  },
+  {
+   "situation": "svar_min_1h",
+   "hand": {
+    "S": [
+     14,
+     9,
+     7
+    ],
+    "H": [
+     13,
+     11,
+     9,
+     2
+    ],
+    "D": [
+     11,
+     7,
+     4
+    ],
+    "C": [
+     14,
+     9,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "4♥",
+   "why": "13 sp og åbner har minimum: 4♥ som afmelding."
+  },
+  {
+   "situation": "svar_min_1h",
+   "hand": {
+    "S": [
+     13,
+     9,
+     2
+    ],
+    "H": [
+     12,
+     10,
+     8,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     7,
+     4,
+     2
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "4♥",
+   "why": "14 sp og åbner har minimum: 4♥ som afmelding."
+  },
+  {
+   "situation": "svar_min_1h",
+   "hand": {
+    "S": [
+     12,
+     10,
+     7
+    ],
+    "H": [
+     14,
+     12,
+     7,
      5,
+     3
+    ],
+    "D": [
+     13,
+     8,
+     5,
+     2
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "4♥",
+   "why": "14 sp og åbner har minimum: 4♥ som afmelding."
+  },
+  {
+   "situation": "svar_min_1h",
+   "hand": {
+    "S": [
+     8,
+     7,
+     4
+    ],
+    "H": [
+     14,
+     8,
+     5,
+     4
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     12,
+     11,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "4♥",
+   "why": "13 sp og åbner har minimum: 4♥ som afmelding."
+  },
+  {
+   "situation": "svar_min_1h",
+   "hand": {
+    "S": [
+     14,
+     8,
+     2
+    ],
+    "H": [
+     8,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     5,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "4♥",
+   "why": "14 sp og åbner har minimum: 4♥ som afmelding."
+  },
+  {
+   "situation": "svar_min_1h",
+   "hand": {
+    "S": [
+     12
+    ],
+    "H": [
+     11,
+     10,
+     9,
+     8,
+     5
+    ],
+    "D": [
+     12,
+     11,
+     10,
+     6,
+     5
+    ],
+    "C": [
+     14,
+     6
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "4♥",
+   "why": "14 sp og åbner har minimum: 4♥ som afmelding."
+  },
+  {
+   "situation": "svar_3d_1h",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     13,
+     11,
+     10,
+     5
+    ],
+    "D": [
+     13,
+     11,
+     9,
+     8,
+     5
+    ],
+    "C": [
+     14,
+     11,
+     5
+    ]
+   },
+   "hp": 17,
+   "sp": 22,
+   "correct": "3♠",
+   "why": "22 sp giver slemambition: cuebid i billigste kontrolfarve – 3♠ viser renonce i spar."
+  },
+  {
+   "situation": "svar_3d_1h",
+   "hand": {
+    "S": [
+     13,
+     11,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     6,
+     3
+    ],
+    "C": [
+     7
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "18 sp giver slemambition: cuebid i billigste kontrolfarve – 3♠ viser konge i spar."
+  },
+  {
+   "situation": "svar_3d_1h",
+   "hand": {
+    "S": [],
+    "H": [
+     10,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     11,
+     9,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "3♠",
+   "why": "19 sp giver slemambition: cuebid i billigste kontrolfarve – 3♠ viser renonce i spar."
+  },
+  {
+   "situation": "svar_3d_1h",
+   "hand": {
+    "S": [
+     12,
+     7,
+     4
+    ],
+    "H": [
+     13,
+     7,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     9
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "4♣",
+   "why": "20 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser singleton i klør. Farver, du springer over (spar), benægter kontrol."
+  },
+  {
+   "situation": "svar_3d_1h",
+   "hand": {
+    "S": [
+     9,
+     6
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     5,
+     4
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     5,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "4♣",
+   "why": "18 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser es i klør. Farver, du springer over (spar), benægter kontrol."
+  },
+  {
+   "situation": "svar_3d_1h",
+   "hand": {
+    "S": [
+     11,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     8,
+     6
+    ],
+    "D": [
+     14,
+     8,
+     5,
+     2
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "4♣",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser singleton i klør. Farver, du springer over (spar), benægter kontrol."
+  },
+  {
+   "situation": "svar_3d_1h",
+   "hand": {
+    "S": [
+     12,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     8,
+     7
+    ],
+    "D": [
+     14,
+     13,
+     2
+    ],
+    "C": [
+     11,
+     10
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4♦",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser es i ruder. Farver, du springer over (spar, klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3d_1h",
+   "hand": {
+    "S": [
+     12,
+     11,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     6
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     8,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "4♦",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser singleton i ruder. Farver, du springer over (spar, klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3d_1h",
+   "hand": {
+    "S": [
+     12,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     8
+    ],
+    "C": [
+     11,
+     3,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4♦",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser es i ruder. Farver, du springer over (spar, klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3d_1h",
+   "hand": {
+    "S": [
+     10,
+     9
+    ],
+    "H": [
+     13,
+     9,
+     8,
+     6,
+     4
+    ],
+    "D": [
+     12,
      3
     ],
     "C": [
      14,
      12,
      11,
+     9
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "4♥",
+   "why": "14 sp – ikke nok til slem over åbners tillæg: 4♥ som afmelding."
+  },
+  {
+   "situation": "svar_3d_1h",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     11,
      10,
+     8,
+     5
+    ],
+    "D": [
+     12,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     8,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "4♥",
+   "why": "14 sp – ikke nok til slem over åbners tillæg: 4♥ som afmelding."
+  },
+  {
+   "situation": "svar_3d_1h",
+   "hand": {
+    "S": [
+     14,
+     4,
+     2
+    ],
+    "H": [
+     8,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     4,
+     3
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "4♥",
+   "why": "15 sp – ikke nok til slem over åbners tillæg: 4♥ som afmelding."
+  },
+  {
+   "situation": "svar_3h_1h",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     7,
+     5
+    ],
+    "D": [
+     8,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "3♠",
+   "why": "19 sp giver slemambition: cuebid i billigste kontrolfarve – 3♠ viser singleton i spar."
+  },
+  {
+   "situation": "svar_3h_1h",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     12,
+     11,
+     9,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     9,
+     2
+    ],
+    "C": [
+     11,
+     9,
      4
     ]
    },
-   "hp": 14,
-   "sp": 20,
-   "correct": "4♥",
-   "why": "Renonce i hjerter: renonce cuebiddes på 4-trinnet, så du melder 4♥ — uanset styrke."
+   "hp": 16,
+   "sp": 21,
+   "correct": "3♠",
+   "why": "21 sp giver slemambition: cuebid i billigste kontrolfarve – 3♠ viser renonce i spar."
   },
   {
-   "situation": "aabner_1s",
+   "situation": "svar_3h_1h",
    "hand": {
     "S": [
+     14,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     10,
+     9,
+     8,
+     5
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "18 sp giver slemambition: cuebid i billigste kontrolfarve – 3♠ viser es i spar."
+  },
+  {
+   "situation": "svar_3h_1h",
+   "hand": {
+    "S": [
+     12,
+     10,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10
+    ],
+    "D": [
+     6,
+     5
+    ],
+    "C": [
+     14,
+     11,
+     4,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4♣",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser es i klør. Farver, du springer over (spar), benægter kontrol."
+  },
+  {
+   "situation": "svar_3h_1h",
+   "hand": {
+    "S": [
+     12,
+     5,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     8,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     10
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "4♣",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser singleton i klør. Farver, du springer over (spar), benægter kontrol."
+  },
+  {
+   "situation": "svar_3h_1h",
+   "hand": {
+    "S": [
+     10,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     12
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "4♣",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser konge i klør. Farver, du springer over (spar), benægter kontrol."
+  },
+  {
+   "situation": "svar_3h_1h",
+   "hand": {
+    "S": [
+     12,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     4
+    ],
+    "D": [
+     13,
+     11,
+     9,
+     8
+    ],
+    "C": [
+     12,
+     10,
+     6
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4♦",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser konge i ruder. Farver, du springer over (spar, klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3h_1h",
+   "hand": {
+    "S": [
+     12,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     7
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     2
+    ],
+    "C": [
+     12,
+     8,
+     7
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "4♦",
+   "why": "18 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser es i ruder. Farver, du springer over (spar, klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3h_1h",
+   "hand": {
+    "S": [
+     12,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     6
+    ],
+    "D": [
+     14,
+     12,
+     8
+    ],
+    "C": [
+     11,
+     7,
+     4,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4♦",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser es i ruder. Farver, du springer over (spar, klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3h_1h",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     14,
+     10,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     4,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     10,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "4♥",
+   "why": "15 sp – ikke nok til slem over åbners tillæg: 4♥ som afmelding."
+  },
+  {
+   "situation": "svar_3h_1h",
+   "hand": {
+    "S": [
+     7,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     8,
+     4
+    ],
+    "D": [
+     6,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     7,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "16 sp – ikke nok til slem over åbners tillæg: 4♥ som afmelding."
+  },
+  {
+   "situation": "svar_3h_1h",
+   "hand": {
+    "S": [
+     10,
+     7
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     6,
+     3
+    ],
+    "C": [
+     5,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "4♥",
+   "why": "13 sp – ikke nok til slem over åbners tillæg: 4♥ som afmelding."
+  },
+  {
+   "situation": "svar_3s_1h",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     7,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     11,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     8,
+     7
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "4♣",
+   "why": "20 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser es i klør."
+  },
+  {
+   "situation": "svar_3s_1h",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     4
+    ],
+    "C": [
+     13,
+     8,
+     5,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "4♣",
+   "why": "20 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser konge i klør."
+  },
+  {
+   "situation": "svar_3s_1h",
+   "hand": {
+    "S": [
+     14,
+     11,
+     9
+    ],
+    "H": [
+     13,
+     9,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     9
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "4♣",
+   "why": "20 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser es i klør."
+  },
+  {
+   "situation": "svar_3s_1h",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8
+    ],
+    "H": [
+     13,
+     8,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     12,
+     9,
+     4,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "4♦",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser singleton i ruder. Farver, du springer over (klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3s_1h",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     12,
+     10,
+     5,
+     3
+    ],
+    "D": [
      14,
      13,
      12,
      10,
      7
     ],
-    "H": [],
+    "C": [
+     10,
+     7,
+     6
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "4♦",
+   "why": "20 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser es i ruder. Farver, du springer over (klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3s_1h",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     6
+    ],
     "D": [
      14,
-     13,
-     9,
-     8
+     10,
+     8,
+     5
     ],
     "C": [
-     13,
+     12,
      9,
-     8,
      4
     ]
    },
    "hp": 19,
-   "sp": 24,
+   "sp": 20,
+   "correct": "4♦",
+   "why": "20 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser es i ruder. Farver, du springer over (klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3s_1h",
+   "hand": {
+    "S": [
+     14,
+     8
+    ],
+    "H": [
+     13,
+     10,
+     5,
+     4
+    ],
+    "D": [
+     11,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
    "correct": "4♥",
-   "why": "Renonce i hjerter: renonce cuebiddes på 4-trinnet, så du melder 4♥ — uanset styrke."
+   "why": "13 sp – ikke nok til slem over åbners tillæg: 4♥ som afmelding."
+  },
+  {
+   "situation": "svar_3s_1h",
+   "hand": {
+    "S": [],
+    "H": [
+     11,
+     7,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     11
+    ],
+    "C": [
+     12,
+     11,
+     8,
+     7,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "4♥",
+   "why": "15 sp – ikke nok til slem over åbners tillæg: 4♥ som afmelding."
+  },
+  {
+   "situation": "svar_3s_1h",
+   "hand": {
+    "S": [
+     12,
+     10,
+     8
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     9,
+     8
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "4♥",
+   "why": "15 sp – ikke nok til slem over åbners tillæg: 4♥ som afmelding."
+  },
+  {
+   "situation": "svar_3nt_1h",
+   "hand": {
+    "S": [
+     14,
+     7,
+     3
+    ],
+    "H": [
+     12,
+     10,
+     9,
+     7
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     7,
+     2
+    ]
+   },
+   "hp": 18,
+   "sp": 21,
+   "correct": "4♣",
+   "why": "21 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser es i klør."
+  },
+  {
+   "situation": "svar_3nt_1h",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     4
+    ],
+    "D": [
+     13,
+     10,
+     8,
+     5
+    ],
+    "C": [
+     13,
+     12,
+     10,
+     7
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "4♣",
+   "why": "18 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser konge i klør."
+  },
+  {
+   "situation": "svar_3nt_1h",
+   "hand": {
+    "S": [
+     11,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     9,
+     8,
+     3
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     13,
+     12,
+     10,
+     7,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "4♣",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser konge i klør."
+  },
+  {
+   "situation": "svar_3nt_1h",
+   "hand": {
+    "S": [
+     12
+    ],
+    "H": [
+     13,
+     12,
+     8,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     8,
+     7
+    ],
+    "C": [
+     12,
+     10,
+     9
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "4♦",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser konge i ruder. Farver, du springer over (klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3nt_1h",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     4
+    ],
+    "D": [
+     13,
+     10,
+     8
+    ],
+    "C": [
+     11,
+     10,
+     8,
+     7,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "4♦",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser konge i ruder. Farver, du springer over (klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3nt_1h",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     12,
+     8,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     9
+    ],
+    "C": [
+     12,
+     9,
+     8,
+     6,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "4♦",
+   "why": "20 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser es i ruder. Farver, du springer over (klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3nt_1h",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9
+    ],
+    "H": [
+     12,
+     9,
+     8,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     5,
+     3,
+     2
+    ],
+    "C": []
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "16 sp – ikke nok til slem over åbners tillæg: 4♥ som afmelding."
+  },
+  {
+   "situation": "svar_3nt_1h",
+   "hand": {
+    "S": [
+     14,
+     8
+    ],
+    "H": [
+     13,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     10,
+     8,
+     7,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "4♥",
+   "why": "13 sp – ikke nok til slem over åbners tillæg: 4♥ som afmelding."
+  },
+  {
+   "situation": "svar_3nt_1h",
+   "hand": {
+    "S": [
+     14,
+     8,
+     5
+    ],
+    "H": [
+     13,
+     11,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     13,
+     9,
+     7,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "4♥",
+   "why": "15 sp – ikke nok til slem over åbners tillæg: 4♥ som afmelding."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9,
+     4,
+     3
+    ],
+    "H": [
+     4,
+     2
+    ],
+    "D": [
+     14,
+     2
+    ],
+    "C": [
+     14,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "12 hp er minimum (højst 15): 3♣ – med eller uden korthed."
   },
   {
    "situation": "aabner_1s",
@@ -2095,27 +3839,827 @@
      14,
      13,
      10,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     9,
+     6,
+     5
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     13,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "3♣",
+   "why": "14 hp er minimum (højst 15): 3♣ – med eller uden korthed. Makker kan spørge efter din korthed i ruder med 3♦."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     9,
+     7,
+     5
+    ],
+    "H": [
+     12,
+     4
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     11,
+     7,
+     6,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "3♣",
+   "why": "13 hp er minimum (højst 15): 3♣ – med eller uden korthed. Makker kan spørge efter din korthed i ruder med 3♦."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     9,
+     8
+    ],
+    "D": [
+     13,
+     6
+    ],
+    "C": [
+     14,
+     12,
+     5,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "14 hp er minimum (højst 15): 3♣ – med eller uden korthed."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     6,
+     2
+    ],
+    "H": [
+     13,
+     9,
+     3
+    ],
+    "D": [
+     13,
+     3
+    ],
+    "C": [
+     14,
+     5,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "15 hp er minimum (højst 15): 3♣ – med eller uden korthed."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     14,
+     11,
+     7,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     10,
+     6
+    ],
+    "C": [
+     13,
+     10
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "12 hp er minimum (højst 15): 3♣ – med eller uden korthed."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     8,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     7,
+     5
+    ],
+    "D": [
+     11,
+     10
+    ],
+    "C": [
+     13,
+     12
+    ]
+   },
+   "hp": 19,
+   "sp": 21,
+   "correct": "3♦",
+   "why": "19 hp er tillæg (16+) uden korthed: 3♦."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     12
+    ],
+    "D": [
+     8,
+     6
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     5
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "3♦",
+   "why": "17 hp er tillæg (16+) uden korthed: 3♦."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     7,
+     2
+    ],
+    "H": [
+     6,
+     3
+    ],
+    "D": [
+     14,
+     7,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     10
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3♦",
+   "why": "17 hp er tillæg (16+) uden korthed: 3♦."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     11,
+     10
+    ],
+    "D": [
+     13,
+     12,
+     7
+    ],
+    "C": [
+     13,
+     8,
+     7
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "3♦",
+   "why": "16 hp er tillæg (16+) uden korthed: 3♦."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     13,
+     8,
+     7,
      5,
      4
     ],
-    "H": [],
+    "H": [
+     14,
+     11,
+     7
+    ],
+    "D": [
+     13,
+     12,
+     3
+    ],
+    "C": [
+     13,
+     12
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "correct": "3♦",
+   "why": "18 hp er tillæg (16+) uden korthed: 3♦."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     4
+    ],
+    "D": [
+     13,
+     6
+    ],
+    "C": [
+     14,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "3♦",
+   "why": "16 hp er tillæg (16+) uden korthed: 3♦."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     9,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     5
+    ],
     "D": [
      14,
      13,
      12,
+     10
+    ],
+    "C": []
+   },
+   "hp": 20,
+   "sp": 25,
+   "correct": "3♥",
+   "why": "20 hp er tillæg (16+) med korthed i klør: 3♥."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     13,
+     11,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     8,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     6
+    ],
+    "C": []
+   },
+   "hp": 16,
+   "sp": 21,
+   "correct": "3♥",
+   "why": "16 hp er tillæg (16+) med korthed i klør: 3♥."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     7,
+     6
+    ],
+    "H": [
+     13,
+     12,
+     8,
+     4
+    ],
+    "D": [
+     13,
      8,
      5
     ],
     "C": [
+     14
+    ]
+   },
+   "hp": 21,
+   "sp": 24,
+   "correct": "3♥",
+   "why": "21 hp er tillæg (16+) med korthed i klør: 3♥."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
      12,
+     9,
      8,
+     4
+    ],
+    "H": [
+     12,
      6
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     2
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 17,
+   "sp": 21,
+   "correct": "3♥",
+   "why": "17 hp er tillæg (16+) med korthed i klør: 3♥."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     9,
+     7,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     7
+    ],
+    "C": []
+   },
+   "hp": 17,
+   "sp": 22,
+   "correct": "3♥",
+   "why": "17 hp er tillæg (16+) med korthed i klør: 3♥."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     14,
+     6,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     3,
+     2
+    ],
+    "C": []
+   },
+   "hp": 18,
+   "sp": 23,
+   "correct": "3♥",
+   "why": "18 hp er tillæg (16+) med korthed i klør: 3♥."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     14,
+     10,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     8
+    ],
+    "D": [],
+    "C": [
+     14,
+     11,
+     10,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 21,
+   "correct": "3♠",
+   "why": "16 hp er tillæg (16+) med korthed i ruder: 3♠."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     11,
+     10,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     10
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     6,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 21,
+   "correct": "3♠",
+   "why": "17 hp er tillæg (16+) med korthed i ruder: 3♠."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     7
+    ],
+    "D": [],
+    "C": [
+     13,
+     12,
+     4
     ]
    },
    "hp": 18,
    "sp": 23,
-   "correct": "4♥",
-   "why": "Renonce i hjerter: renonce cuebiddes på 4-trinnet, så du melder 4♥ — uanset styrke."
+   "correct": "3♠",
+   "why": "18 hp er tillæg (16+) med korthed i ruder: 3♠."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     6,
+     2
+    ],
+    "D": [],
+    "C": [
+     14,
+     13,
+     11,
+     7
+    ]
+   },
+   "hp": 19,
+   "sp": 24,
+   "correct": "3♠",
+   "why": "19 hp er tillæg (16+) med korthed i ruder: 3♠."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     11,
+     9,
+     6
+    ],
+    "D": [],
+    "C": [
+     14,
+     13,
+     8,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 21,
+   "correct": "3♠",
+   "why": "16 hp er tillæg (16+) med korthed i ruder: 3♠."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     14,
+     11,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     6
+    ],
+    "D": [],
+    "C": [
+     14,
+     13,
+     10,
+     6
+    ]
+   },
+   "hp": 17,
+   "sp": 22,
+   "correct": "3♠",
+   "why": "17 hp er tillæg (16+) med korthed i ruder: 3♠."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     9
+    ],
+    "D": [
+     14,
+     5
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     7
+    ]
+   },
+   "hp": 16,
+   "sp": 20,
+   "correct": "3NT",
+   "why": "16 hp er tillæg (16+) med korthed i hjerter: 3NT."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     13,
+     11,
+     8,
+     7,
+     4,
+     3
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     14,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 20,
+   "correct": "3NT",
+   "why": "16 hp er tillæg (16+) med korthed i hjerter: 3NT."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     8,
+     5,
+     3
+    ],
+    "H": [],
+    "D": [
+     13,
+     12,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "17 hp er tillæg (16+) med korthed i hjerter: 3NT."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     9,
+     5,
+     4
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     2
+    ],
+    "C": [
+     13,
+     11
+    ]
+   },
+   "hp": 16,
+   "sp": 20,
+   "correct": "3NT",
+   "why": "16 hp er tillæg (16+) med korthed i hjerter: 3NT."
+  },
+  {
+   "situation": "aabner_1s",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9,
+     8,
+     7,
+     2
+    ],
+    "H": [],
+    "D": [
+     13,
+     11,
+     8
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     9
+    ]
+   },
+   "hp": 17,
+   "sp": 22,
+   "correct": "3NT",
+   "why": "17 hp er tillæg (16+) med korthed i hjerter: 3NT."
   },
   {
    "situation": "aabner_1s",
@@ -2124,3985 +4668,2469 @@
      14,
      13,
      12,
-     9,
-     6,
-     4
+     11,
+     3
     ],
     "H": [],
     "D": [
-     13,
-     11
+     14,
+     11,
+     8
     ],
     "C": [
-     10,
+     14,
+     11,
      9,
-     8,
-     4,
+     6,
      3
     ]
    },
-   "hp": 13,
-   "sp": 19,
-   "correct": "4♥",
-   "why": "Renonce i hjerter: renonce cuebiddes på 4-trinnet, så du melder 4♥ — uanset styrke."
+   "hp": 20,
+   "sp": 25,
+   "correct": "3NT",
+   "why": "20 hp er tillæg (16+) med korthed i hjerter: 3NT."
   },
   {
-   "situation": "spm_1h",
+   "situation": "spm_1s",
    "hand": {
     "S": [
-     14,
      13,
-     11,
-     7
+     12,
+     8,
+     7,
+     4,
+     3
     ],
     "H": [
-     14,
-     10,
+     13,
      8,
-     6,
-     3,
      2
     ],
     "D": [
-     9
+     14,
+     10,
+     6
     ],
     "C": [
-     4,
      2
     ]
    },
    "hp": 12,
-   "sp": 16,
+   "sp": 15,
    "correct": "3♥",
-   "why": "Singleton ruder: 3♥ viser kortfarven. Du har stadig minimum."
+   "why": "Korthed i klør: 3♥. Du har stadig minimum."
   },
   {
-   "situation": "spm_1h",
+   "situation": "spm_1s",
    "hand": {
     "S": [
-     14,
-     12,
-     9,
-     8
-    ],
-    "H": [
-     9,
-     8,
-     6,
-     5,
-     4,
+     13,
+     11,
+     10,
+     7,
      2
     ],
+    "H": [
+     12,
+     6
+    ],
     "D": [
+     14,
+     12,
+     10,
+     8,
+     6
+    ],
+    "C": [
      13
-    ],
-    "C": [
-     13,
-     5
-    ]
-   },
-   "hp": 12,
-   "sp": 16,
-   "correct": "3♥",
-   "why": "Singleton ruder: 3♥ viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1h",
-   "hand": {
-    "S": [
-     12,
-     11
-    ],
-    "H": [
-     14,
-     11,
-     10,
-     9,
-     7,
-     6
-    ],
-    "D": [
-     4
-    ],
-    "C": [
-     13,
-     12,
-     5,
-     4
-    ]
-   },
-   "hp": 13,
-   "sp": 17,
-   "correct": "3♥",
-   "why": "Singleton ruder: 3♥ viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1h",
-   "hand": {
-    "S": [
-     14,
-     6,
-     3
-    ],
-    "H": [
-     11,
-     10,
-     9,
-     6,
-     5,
-     3
-    ],
-    "D": [
-     4
-    ],
-    "C": [
-     14,
-     13,
-     11
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "3♥",
-   "why": "Singleton ruder: 3♥ viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1h",
-   "hand": {
-    "S": [
-     13,
-     8
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     5,
-     4,
-     3
-    ],
-    "D": [
-     12,
-     10,
-     7,
-     6
-    ],
-    "C": [
-     10
-    ]
-   },
-   "hp": 14,
-   "sp": 18,
-   "correct": "3♠",
-   "why": "Singleton klør: 3♠ viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1h",
-   "hand": {
-    "S": [
-     14,
-     10,
-     8,
-     4
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     11,
-     10,
-     4
-    ],
-    "D": [
-     9,
-     2
-    ],
-    "C": [
-     10
-    ]
-   },
-   "hp": 14,
-   "sp": 18,
-   "correct": "3♠",
-   "why": "Singleton klør: 3♠ viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1h",
-   "hand": {
-    "S": [
-     12,
-     7,
-     5,
-     4
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     11,
-     7,
-     6
-    ],
-    "D": [
-     9,
-     5
-    ],
-    "C": [
-     8
-    ]
-   },
-   "hp": 12,
-   "sp": 16,
-   "correct": "3♠",
-   "why": "Singleton klør: 3♠ viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1h",
-   "hand": {
-    "S": [
-     7,
-     6,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     9,
-     6,
-     5
-    ],
-    "D": [
-     14,
-     12,
-     4,
-     3
-    ],
-    "C": [
-     6
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "3♠",
-   "why": "Singleton klør: 3♠ viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1h",
-   "hand": {
-    "S": [
-     14
-    ],
-    "H": [
-     14,
-     12,
-     9,
-     6,
-     4,
-     2
-    ],
-    "D": [
-     12,
-     6
-    ],
-    "C": [
-     10,
-     9,
-     7,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 16,
-   "correct": "3NT",
-   "why": "Singleton spar: 3NT viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1h",
-   "hand": {
-    "S": [
-     10
-    ],
-    "H": [
-     14,
-     12,
-     8,
-     5,
-     4,
-     3
-    ],
-    "D": [
-     14,
-     12,
-     9,
-     4
-    ],
-    "C": [
-     10,
-     7
-    ]
-   },
-   "hp": 12,
-   "sp": 16,
-   "correct": "3NT",
-   "why": "Singleton spar: 3NT viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1h",
-   "hand": {
-    "S": [
-     6
-    ],
-    "H": [
-     13,
-     12,
-     9,
-     8,
-     5,
-     2
-    ],
-    "D": [
-     9,
-     6,
-     3
-    ],
-    "C": [
-     14,
-     13,
-     6
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3NT",
-   "why": "Singleton spar: 3NT viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1h",
-   "hand": {
-    "S": [
-     10
-    ],
-    "H": [
-     13,
-     9,
-     8,
-     7,
-     3
-    ],
-    "D": [
-     14,
-     13,
-     6,
-     4
-    ],
-    "C": [
-     13,
-     9,
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "3NT",
-   "why": "Singleton spar: 3NT viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1h",
-   "hand": {
-    "S": [
-     13,
-     12,
-     8,
-     2
-    ],
-    "H": [
-     14,
-     10,
-     8,
-     4,
-     3
-    ],
-    "D": [
-     12,
-     3
-    ],
-    "C": [
-     12,
-     7
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "4♥",
-   "why": "Ingen kortfarve — jævn minimumshånd: 4♥. Svarer passer normalt."
-  },
-  {
-   "situation": "spm_1h",
-   "hand": {
-    "S": [
-     10,
-     8
-    ],
-    "H": [
-     14,
-     11,
-     10,
-     9,
-     6,
-     4
-    ],
-    "D": [
-     14,
-     11
-    ],
-    "C": [
-     12,
-     11,
-     5
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "4♥",
-   "why": "Ingen kortfarve — jævn minimumshånd: 4♥. Svarer passer normalt."
-  },
-  {
-   "situation": "spm_1h",
-   "hand": {
-    "S": [
-     12,
-     10,
-     6
-    ],
-    "H": [
-     14,
-     11,
-     9,
-     8,
-     2
-    ],
-    "D": [
-     12,
-     11,
-     10
-    ],
-    "C": [
-     12,
-     7
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "4♥",
-   "why": "Ingen kortfarve — jævn minimumshånd: 4♥. Svarer passer normalt."
-  },
-  {
-   "situation": "spm_1h",
-   "hand": {
-    "S": [
-     13,
-     9
-    ],
-    "H": [
-     14,
-     10,
-     5,
-     4,
-     3
-    ],
-    "D": [
-     12,
-     11,
-     8
-    ],
-    "C": [
-     12,
-     10,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "4♥",
-   "why": "Ingen kortfarve — jævn minimumshånd: 4♥. Svarer passer normalt."
-  },
-  {
-   "situation": "spm_1s",
-   "hand": {
-    "S": [
-     13,
-     12,
-     10,
-     6,
-     2
-    ],
-    "H": [
-     14,
-     8,
-     6
-    ],
-    "D": [
-     2
-    ],
-    "C": [
-     13,
-     11,
-     8,
-     3
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "3♥",
-   "why": "Singleton ruder: 3♥ viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1s",
-   "hand": {
-    "S": [
-     12,
-     11,
-     9,
-     8,
-     5,
-     2
-    ],
-    "H": [
-     14,
-     11
-    ],
-    "D": [
-     4
-    ],
-    "C": [
-     13,
-     11,
-     10,
-     5
-    ]
-   },
-   "hp": 12,
-   "sp": 16,
-   "correct": "3♥",
-   "why": "Singleton ruder: 3♥ viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1s",
-   "hand": {
-    "S": [
-     14,
-     13,
-     9,
-     6,
-     4,
-     2
-    ],
-    "H": [
-     8,
-     2
-    ],
-    "D": [
-     14
-    ],
-    "C": [
-     12,
-     8,
-     7,
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 17,
-   "correct": "3♥",
-   "why": "Singleton ruder: 3♥ viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1s",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     5,
-     3
-    ],
-    "H": [
-     12,
-     11,
-     4
-    ],
-    "D": [
-     11
-    ],
-    "C": [
-     11,
-     6,
-     5,
-     2
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "3♥",
-   "why": "Singleton ruder: 3♥ viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1s",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11,
-     10,
-     9,
-     5
-    ],
-    "H": [
-     14,
-     10
-    ],
-    "D": [
-     13,
-     9,
-     8,
-     5
-    ],
-    "C": [
-     6
-    ]
-   },
-   "hp": 14,
-   "sp": 18,
-   "correct": "3♠",
-   "why": "Singleton klør: 3♠ viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1s",
-   "hand": {
-    "S": [
-     11,
-     10,
-     7,
-     5,
-     4,
-     2
-    ],
-    "H": [
-     13,
-     11,
-     10,
-     8
-    ],
-    "D": [
-     13,
-     4
-    ],
-    "C": [
-     14
-    ]
-   },
-   "hp": 12,
-   "sp": 16,
-   "correct": "3♠",
-   "why": "Singleton klør: 3♠ viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1s",
-   "hand": {
-    "S": [
-     13,
-     12,
-     6,
-     3,
-     2
-    ],
-    "H": [
-     13,
-     11,
-     2
-    ],
-    "D": [
-     12,
-     11,
-     8,
-     2
-    ],
-    "C": [
-     11
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "3♠",
-   "why": "Singleton klør: 3♠ viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1s",
-   "hand": {
-    "S": [
-     13,
-     6,
-     4,
-     3,
-     2
-    ],
-    "H": [
-     12,
-     9,
-     5
-    ],
-    "D": [
-     13,
-     7,
-     3,
-     2
-    ],
-    "C": [
-     14
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♠",
-   "why": "Singleton klør: 3♠ viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1s",
-   "hand": {
-    "S": [
-     14,
-     13,
-     10,
-     6,
-     5,
-     3
-    ],
-    "H": [
-     10
-    ],
-    "D": [
-     11,
-     10,
-     8,
-     7
-    ],
-    "C": [
-     14,
-     10
-    ]
-   },
-   "hp": 12,
-   "sp": 16,
-   "correct": "3NT",
-   "why": "Singleton hjerter: 3NT viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1s",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
-     7,
-     4,
-     2
-    ],
-    "H": [
-     8
-    ],
-    "D": [
-     13,
-     2
-    ],
-    "C": [
-     13,
-     10,
-     5,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 16,
-   "correct": "3NT",
-   "why": "Singleton hjerter: 3NT viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1s",
-   "hand": {
-    "S": [
-     14,
-     13,
-     10,
-     8,
-     6,
-     4
-    ],
-    "H": [
-     4
-    ],
-    "D": [
-     14,
-     12,
-     6,
-     2
-    ],
-    "C": [
-     8,
-     6
-    ]
-   },
-   "hp": 13,
-   "sp": 17,
-   "correct": "3NT",
-   "why": "Singleton hjerter: 3NT viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1s",
-   "hand": {
-    "S": [
-     14,
-     12,
-     10,
-     9,
-     3
-    ],
-    "H": [
-     6
-    ],
-    "D": [
-     11,
-     9,
-     2
-    ],
-    "C": [
-     14,
-     11,
-     9,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3NT",
-   "why": "Singleton hjerter: 3NT viser kortfarven. Du har stadig minimum."
-  },
-  {
-   "situation": "spm_1s",
-   "hand": {
-    "S": [
-     13,
-     9,
-     7,
-     6,
-     4
-    ],
-    "H": [
-     13,
-     3
-    ],
-    "D": [
-     14,
-     6,
-     5,
-     2
-    ],
-    "C": [
-     14,
-     4
-    ]
-   },
-   "hp": 14,
-   "sp": 16,
-   "correct": "4♠",
-   "why": "Ingen kortfarve — jævn minimumshånd: 4♠. Svarer passer normalt."
-  },
-  {
-   "situation": "spm_1s",
-   "hand": {
-    "S": [
-     13,
-     12,
-     9,
-     8,
-     4
-    ],
-    "H": [
-     14,
-     6
-    ],
-    "D": [
-     6,
-     2
-    ],
-    "C": [
-     14,
-     11,
-     9,
-     3
-    ]
-   },
-   "hp": 14,
-   "sp": 16,
-   "correct": "4♠",
-   "why": "Ingen kortfarve — jævn minimumshånd: 4♠. Svarer passer normalt."
-  },
-  {
-   "situation": "spm_1s",
-   "hand": {
-    "S": [
-     14,
-     11,
-     7,
-     5,
-     4
-    ],
-    "H": [
-     13,
-     12
-    ],
-    "D": [
-     7,
-     6,
-     4
-    ],
-    "C": [
-     14,
-     6,
-     5
-    ]
-   },
-   "hp": 14,
-   "sp": 15,
-   "correct": "4♠",
-   "why": "Ingen kortfarve — jævn minimumshånd: 4♠. Svarer passer normalt."
-  },
-  {
-   "situation": "spm_1s",
-   "hand": {
-    "S": [
-     12,
-     11,
-     8,
-     6,
-     3
-    ],
-    "H": [
-     14,
-     13,
-     4
-    ],
-    "D": [
-     12,
-     4,
-     2
-    ],
-    "C": [
-     5,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "4♠",
-   "why": "Ingen kortfarve — jævn minimumshånd: 4♠. Svarer passer normalt."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     6,
-     5
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     6
-    ],
-    "D": [
-     12,
-     11,
-     10,
-     3
-    ],
-    "C": [
-     12,
-     9,
-     8
-    ]
-   },
-   "hp": 14,
-   "sp": 15,
-   "correct": "2NT",
-   "why": "4+ korts støtte og 15 sp: 2NT – Bekkasin, 12+ sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     7,
-     5
-    ],
-    "H": [
-     14,
-     12,
-     10,
-     3,
-     2
-    ],
-    "D": [
-     13,
-     9,
-     6,
-     3
-    ],
-    "C": [
-     12,
-     2
-    ]
-   },
-   "hp": 11,
-   "sp": 13,
-   "correct": "2NT",
-   "why": "4+ korts støtte og 13 sp: 2NT – Bekkasin, 12+ sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     10,
-     5
-    ],
-    "H": [
-     14,
-     8,
-     7,
-     6,
-     4
-    ],
-    "D": [
-     14,
-     12,
-     11,
-     9
-    ],
-    "C": [
-     9,
-     6
-    ]
-   },
-   "hp": 11,
-   "sp": 13,
-   "correct": "2NT",
-   "why": "4+ korts støtte og 13 sp: 2NT – Bekkasin, 12+ sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     11,
-     9
-    ],
-    "H": [
-     14,
-     12,
-     9,
-     2
-    ],
-    "D": [
-     13,
-     12,
-     8
-    ],
-    "C": [
-     14,
-     9,
-     7,
-     5
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "2NT",
-   "why": "4+ korts støtte og 17 sp: 2NT – Bekkasin, 12+ sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     7
-    ],
-    "H": [
-     14,
-     8,
-     7,
-     5
-    ],
-    "D": [
-     13,
-     12,
-     10,
-     3
-    ],
-    "C": [
-     12,
-     8,
-     4,
-     3
-    ]
-   },
-   "hp": 11,
-   "sp": 14,
-   "correct": "2NT",
-   "why": "4+ korts støtte og 14 sp: 2NT – Bekkasin, 12+ sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     7
-    ],
-    "H": [
-     13,
-     10,
-     4,
-     3
-    ],
-    "D": [
-     14,
-     13,
-     7,
-     4
-    ],
-    "C": [
-     11,
-     4,
-     3,
-     2
-    ]
-   },
-   "hp": 11,
-   "sp": 14,
-   "correct": "2NT",
-   "why": "4+ korts støtte og 14 sp: 2NT – Bekkasin, 12+ sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     13,
-     10,
-     8
-    ],
-    "H": [
-     13,
-     9,
-     6,
-     3
-    ],
-    "D": [
-     13,
-     12,
-     4,
-     2
-    ],
-    "C": [
-     13,
-     11
     ]
    },
    "hp": 15,
-   "sp": 16,
-   "correct": "2NT",
-   "why": "4+ korts støtte og 16 sp: 2NT – Bekkasin, 12+ sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     13,
-     11,
-     7
-    ],
-    "H": [
-     13,
-     12,
-     7,
-     2
-    ],
-    "D": [
-     13,
-     12,
-     8,
-     3
-    ],
-    "C": [
-     12,
-     10
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "2NT",
-   "why": "4+ korts støtte og 17 sp: 2NT – Bekkasin, 12+ sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     12,
-     8,
-     3
-    ],
-    "H": [
-     13,
-     12,
-     6,
-     5,
-     3
-    ],
-    "D": [
-     12,
-     11,
-     7,
-     5
-    ],
-    "C": [
-     6
-    ]
-   },
-   "hp": 10,
-   "sp": 13,
-   "correct": "2NT",
-   "why": "4+ korts støtte og 13 sp: 2NT – Bekkasin, 12+ sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     14,
-     11
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     8,
-     4
-    ],
-    "D": [
-     3,
-     2
-    ],
-    "C": [
-     11,
-     8,
-     6,
-     2
-    ]
-   },
-   "hp": 15,
-   "sp": 17,
-   "correct": "2NT",
-   "why": "4+ korts støtte og 17 sp: 2NT – Bekkasin, 12+ sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     11,
-     9,
-     6
-    ],
-    "H": [
-     14,
-     11,
-     6,
-     2
-    ],
-    "D": [
-     14,
-     8,
-     2
-    ],
-    "C": [
-     11,
-     7,
-     2
-    ]
-   },
-   "hp": 11,
-   "sp": 11,
-   "correct": "3♣",
-   "why": "4+ korts støtte og 11 sp: 3♣ – Omvendt Bergen, 10–11 sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     14,
-     7,
-     2
-    ],
-    "H": [
-     13,
-     12,
-     11,
-     2
-    ],
-    "D": [
-     6,
-     2
-    ],
-    "C": [
-     6,
-     5,
-     3,
-     2
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "correct": "3♣",
-   "why": "4+ korts støtte og 11 sp: 3♣ – Omvendt Bergen, 10–11 sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     6
-    ],
-    "H": [
-     14,
-     11,
-     6,
-     5
-    ],
-    "D": [
-     13,
-     10,
-     9,
-     7
-    ],
-    "C": [
-     6,
-     4,
-     3,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 11,
-   "correct": "3♣",
-   "why": "4+ korts støtte og 11 sp: 3♣ – Omvendt Bergen, 10–11 sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     10,
-     4,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     7,
-     3
-    ],
-    "D": [
-     12,
-     11,
-     4,
-     3
-    ],
-    "C": [
-     8,
-     2
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "correct": "3♣",
-   "why": "4+ korts støtte og 11 sp: 3♣ – Omvendt Bergen, 10–11 sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     11,
-     9,
-     3
-    ],
-    "H": [
-     13,
-     10,
-     6,
-     2
-    ],
-    "D": [
-     13,
-     12,
-     11,
-     6
-    ],
-    "C": [
-     8,
-     3
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "correct": "3♣",
-   "why": "4+ korts støtte og 11 sp: 3♣ – Omvendt Bergen, 10–11 sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     14,
-     10,
-     3
-    ],
-    "H": [
-     11,
-     8,
-     7,
-     3
-    ],
-    "D": [
-     14,
-     11,
-     9,
-     6
-    ],
-    "C": [
-     5,
-     2
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "correct": "3♣",
-   "why": "4+ korts støtte og 11 sp: 3♣ – Omvendt Bergen, 10–11 sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     13,
-     11,
-     7
-    ],
-    "H": [
-     12,
-     10,
-     7,
-     2
-    ],
-    "D": [
-     12,
-     11,
-     5
-    ],
-    "C": [
-     12,
-     8,
-     5
-    ]
-   },
-   "hp": 11,
-   "sp": 11,
-   "correct": "3♣",
-   "why": "4+ korts støtte og 11 sp: 3♣ – Omvendt Bergen, 10–11 sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     6,
-     4
-    ],
-    "H": [
-     13,
-     8,
-     7,
-     3
-    ],
-    "D": [
-     14,
-     8,
-     3,
-     2
-    ],
-    "C": [
-     13,
-     10,
-     5
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "correct": "3♣",
-   "why": "4+ korts støtte og 11 sp: 3♣ – Omvendt Bergen, 10–11 sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     9,
-     8,
-     2
-    ],
-    "H": [
-     14,
-     9,
-     7,
-     2
-    ],
-    "D": [
-     14,
-     4
-    ],
-    "C": [
-     12,
-     10,
-     7,
-     3
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "correct": "3♣",
-   "why": "4+ korts støtte og 11 sp: 3♣ – Omvendt Bergen, 10–11 sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     10,
-     9,
-     5
-    ],
-    "H": [
-     7,
-     6,
-     5,
-     4
-    ],
-    "D": [
-     11,
-     8
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     5
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "correct": "3♣",
-   "why": "4+ korts støtte og 11 sp: 3♣ – Omvendt Bergen, 10–11 sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     9,
-     5,
-     2
-    ],
-    "H": [
-     12,
-     8,
-     7,
-     6
-    ],
-    "D": [
-     14,
-     7,
-     6,
-     2
-    ],
-    "C": [
-     8,
-     7
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "3♦",
-   "why": "4+ korts støtte og 7 sp: 3♦ – Omvendt Bergen, 7–10 sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     12,
-     3,
-     2
-    ],
-    "H": [
-     11,
-     10,
-     8,
-     3
-    ],
-    "D": [
-     13,
-     11,
-     8,
-     4
-    ],
-    "C": [
-     8,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "3♦",
-   "why": "4+ korts støtte og 8 sp: 3♦ – Omvendt Bergen, 7–10 sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     11,
-     10,
-     9
-    ],
-    "H": [
-     11,
-     7,
-     4,
-     2
-    ],
-    "D": [
-     9,
-     5,
-     4,
-     2
-    ],
-    "C": [
-     14,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "3♦",
-   "why": "4+ korts støtte og 7 sp: 3♦ – Omvendt Bergen, 7–10 sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     11,
-     4
-    ],
-    "H": [
-     11,
-     9,
-     5,
-     2
-    ],
-    "D": [
-     12,
-     10,
-     8,
-     2
-    ],
-    "C": [
-     13,
-     8,
-     3
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "3♦",
-   "why": "4+ korts støtte og 8 sp: 3♦ – Omvendt Bergen, 7–10 sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     13,
-     7
-    ],
-    "H": [
-     12,
-     8,
-     4,
-     2
-    ],
-    "D": [
-     12,
-     10,
-     6,
-     2
-    ],
-    "C": [
-     10,
-     9,
-     8
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "3♦",
-   "why": "4+ korts støtte og 8 sp: 3♦ – Omvendt Bergen, 7–10 sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     12,
-     2
-    ],
-    "H": [
-     11,
-     7,
-     3,
-     2
-    ],
-    "D": [
-     11,
-     10,
-     8,
-     4
-    ],
-    "C": [
-     12,
-     8,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "3♦",
-   "why": "4+ korts støtte og 7 sp: 3♦ – Omvendt Bergen, 7–10 sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     3
-    ],
-    "H": [
-     14,
-     11,
-     6,
-     3
-    ],
-    "D": [
-     11,
-     10,
-     9,
-     6
-    ],
-    "C": [
-     10,
-     9,
-     4,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 9,
-   "correct": "3♦",
-   "why": "4+ korts støtte og 9 sp: 3♦ – Omvendt Bergen, 7–10 sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     4,
-     3
-    ],
-    "H": [
-     10,
-     8,
-     7,
-     6
-    ],
-    "D": [
-     12,
-     11,
-     3
-    ],
-    "C": [
-     13,
-     9,
-     4,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "3♦",
-   "why": "4+ korts støtte og 7 sp: 3♦ – Omvendt Bergen, 7–10 sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     11,
-     6,
-     4
-    ],
-    "H": [
-     14,
-     12,
-     8,
-     2
-    ],
-    "D": [
-     10,
-     5,
-     4,
-     3
-    ],
-    "C": [
-     11,
-     9
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "3♦",
-   "why": "4+ korts støtte og 9 sp: 3♦ – Omvendt Bergen, 7–10 sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     9,
-     5,
-     2
-    ],
-    "H": [
-     13,
-     11,
-     5,
-     3
-    ],
-    "D": [
-     13,
-     9,
-     5
-    ],
-    "C": [
-     7,
-     6,
-     4
-    ]
-   },
-   "hp": 7,
-   "sp": 7,
-   "correct": "3♦",
-   "why": "4+ korts støtte og 7 sp: 3♦ – Omvendt Bergen, 7–10 sp."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     9,
-     5,
-     3
-    ],
-    "H": [
-     12,
-     7,
-     5,
-     2
-    ],
-    "D": [
-     14,
-     10,
-     5
-    ],
-    "C": [
-     9,
-     6,
-     5
-    ]
-   },
-   "hp": 6,
-   "sp": 6,
+   "sp": 19,
    "correct": "3♥",
-   "why": "4-korts støtte og 6 sp: 3♥ er destruktivt (0–6 sp)."
+   "why": "Korthed i klør: 3♥. Du har stadig minimum."
   },
   {
-   "situation": "svar_1h",
+   "situation": "spm_1s",
    "hand": {
     "S": [
-     8,
-     5,
-     2
-    ],
-    "H": [
+     14,
      12,
-     10,
-     9,
-     2
-    ],
-    "D": [
-     14,
-     10,
-     6
-    ],
-    "C": [
-     6,
-     5,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 6,
-   "correct": "3♥",
-   "why": "4-korts støtte og 6 sp: 3♥ er destruktivt (0–6 sp)."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     9,
-     7,
-     6
-    ],
-    "H": [
-     8,
-     7,
-     5,
-     4
-    ],
-    "D": [
-     14,
-     4,
-     3
-    ],
-    "C": [
-     9,
-     7,
-     2
-    ]
-   },
-   "hp": 4,
-   "sp": 4,
-   "correct": "3♥",
-   "why": "4-korts støtte og 4 sp: 3♥ er destruktivt (0–6 sp)."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     4,
-     3
-    ],
-    "H": [
      11,
-     10,
-     7,
-     4
-    ],
-    "D": [
-     12,
-     7,
-     6,
-     2
-    ],
-    "C": [
-     9,
-     6,
-     2
-    ]
-   },
-   "hp": 3,
-   "sp": 4,
-   "correct": "3♥",
-   "why": "4-korts støtte og 4 sp: 3♥ er destruktivt (0–6 sp)."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     13,
-     9,
-     3
-    ],
-    "H": [
-     10,
-     7,
-     6,
-     4
-    ],
-    "D": [
-     6,
      3,
      2
     ],
-    "C": [
-     13,
-     4,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 6,
-   "correct": "3♥",
-   "why": "4-korts støtte og 6 sp: 3♥ er destruktivt (0–6 sp)."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     8,
-     4
-    ],
     "H": [
-     13,
-     7,
-     6,
-     5
-    ],
-    "D": [
      12,
-     8,
-     7
-    ],
-    "C": [
-     10,
-     9,
-     7,
-     4
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "3♥",
-   "why": "4-korts støtte og 6 sp: 3♥ er destruktivt (0–6 sp)."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     8,
-     7,
-     5
-    ],
-    "H": [
-     9,
-     8,
-     7,
-     3
-    ],
-    "D": [
-     11,
-     10,
-     6,
-     3
-    ],
-    "C": [
-     12,
-     11
-    ]
-   },
-   "hp": 4,
-   "sp": 5,
-   "correct": "3♥",
-   "why": "4-korts støtte og 5 sp: 3♥ er destruktivt (0–6 sp)."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     10,
-     3
-    ],
-    "H": [
-     13,
-     8,
-     4,
-     3
-    ],
-    "D": [
-     10,
-     8,
-     3
-    ],
-    "C": [
-     11,
-     10,
-     9,
-     3
-    ]
-   },
-   "hp": 4,
-   "sp": 5,
-   "correct": "3♥",
-   "why": "4-korts støtte og 5 sp: 3♥ er destruktivt (0–6 sp)."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     10,
-     8,
-     7
-    ],
-    "H": [
-     10,
-     9,
      8,
      6
     ],
     "D": [
-     13,
-     4
-    ],
-    "C": [
-     9,
-     7,
-     3,
-     2
-    ]
-   },
-   "hp": 3,
-   "sp": 4,
-   "correct": "3♥",
-   "why": "4-korts støtte og 4 sp: 3♥ er destruktivt (0–6 sp)."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     13,
-     4
-    ],
-    "H": [
-     12,
-     7,
-     6,
-     4
-    ],
-    "D": [
-     5,
-     3,
-     2
-    ],
-    "C": [
-     6,
-     5,
-     4,
-     2
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "3♥",
-   "why": "4-korts støtte og 6 sp: 3♥ er destruktivt (0–6 sp)."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     11,
-     10,
-     4
-    ],
-    "H": [
-     13,
-     11,
-     9,
-     8,
-     6,
-     3
-    ],
-    "D": [
-     10,
-     2
-    ],
-    "C": [
-     4,
-     3
-    ]
-   },
-   "hp": 5,
-   "sp": 7,
-   "correct": "4♥",
-   "why": "6-korts støtte og 7 sp: 4♥ er destruktivt (0–9 sp)."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     8
-    ],
-    "H": [
-     13,
-     11,
-     10,
-     8,
-     4,
-     3
-    ],
-    "D": [
-     11,
-     8
-    ],
-    "C": [
-     10,
-     6,
-     3,
-     2
-    ]
-   },
-   "hp": 5,
-   "sp": 9,
-   "correct": "4♥",
-   "why": "6-korts støtte og 9 sp: 4♥ er destruktivt (0–9 sp)."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     9,
-     6,
-     2
-    ],
-    "H": [
-     11,
-     5,
-     4,
-     3,
-     2
-    ],
-    "D": [
-     3
-    ],
-    "C": [
-     12,
-     11,
-     4,
-     3
-    ]
-   },
-   "hp": 4,
-   "sp": 7,
-   "correct": "4♥",
-   "why": "5-korts støtte og 7 sp: 4♥ er destruktivt (0–9 sp)."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
      14,
      11,
-     8
-    ],
-    "H": [
-     10,
-     7,
-     6,
-     5,
-     3
-    ],
-    "D": [
-     11,
-     10,
-     5,
-     3
-    ],
-    "C": [
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 9,
-   "correct": "4♥",
-   "why": "5-korts støtte og 9 sp: 4♥ er destruktivt (0–9 sp)."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     10,
-     4,
-     3
-    ],
-    "H": [
-     12,
      9,
-     7,
-     6,
-     5
-    ],
-    "D": [
-     10,
-     4
-    ],
-    "C": [
-     9,
-     7,
+     8,
      2
-    ]
+    ],
+    "C": []
    },
-   "hp": 2,
-   "sp": 3,
-   "correct": "4♥",
-   "why": "5-korts støtte og 3 sp: 4♥ er destruktivt (0–9 sp)."
+   "hp": 14,
+   "sp": 19,
+   "correct": "3♥",
+   "why": "Korthed i klør: 3♥. Du har stadig minimum."
   },
   {
-   "situation": "svar_1h",
+   "situation": "spm_1s",
    "hand": {
     "S": [
-     12,
-     4,
-     3
-    ],
-    "H": [
-     11,
+     13,
      10,
      8,
-     6,
-     5,
-     4
+     4,
+     2
+    ],
+    "H": [
+     14,
+     8,
+     7,
+     6
     ],
     "D": [
-     9,
-     8,
+     14,
+     11,
      7,
      4
     ],
     "C": []
    },
-   "hp": 3,
-   "sp": 8,
-   "correct": "4♥",
-   "why": "6-korts støtte og 8 sp: 4♥ er destruktivt (0–9 sp)."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     8,
-     2
-    ],
-    "H": [
-     11,
-     8,
-     6,
-     3,
-     2
-    ],
-    "D": [
-     8,
-     6,
-     5,
-     2
-    ],
-    "C": [
-     7,
-     3
-    ]
-   },
-   "hp": 1,
-   "sp": 3,
-   "correct": "4♥",
-   "why": "5-korts støtte og 3 sp: 4♥ er destruktivt (0–9 sp)."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     11,
-     4
-    ],
-    "H": [
-     11,
-     8,
-     7,
-     6,
-     3
-    ],
-    "D": [
-     11,
-     10,
-     9,
-     6
-    ],
-    "C": [
-     12,
-     11
-    ]
-   },
-   "hp": 6,
-   "sp": 8,
-   "correct": "4♥",
-   "why": "5-korts støtte og 8 sp: 4♥ er destruktivt (0–9 sp)."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     13,
-     12,
-     6
-    ],
-    "H": [
-     11,
-     9,
-     8,
-     7,
-     5
-    ],
-    "D": [
-     7,
-     4,
-     3
-    ],
-    "C": [
-     8,
-     7
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "4♥",
-   "why": "5-korts støtte og 7 sp: 4♥ er destruktivt (0–9 sp)."
-  },
-  {
-   "situation": "svar_1h",
-   "hand": {
-    "S": [
-     12,
-     11,
-     3
-    ],
-    "H": [
-     12,
-     9,
-     7,
-     6,
-     4,
-     3
-    ],
-    "D": [
-     10
-    ],
-    "C": [
-     9,
-     7,
-     2
-    ]
-   },
-   "hp": 5,
-   "sp": 8,
-   "correct": "4♥",
-   "why": "6-korts støtte og 8 sp: 4♥ er destruktivt (0–9 sp)."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     14,
-     12,
-     10,
-     7,
-     6
-    ],
-    "H": [
-     9,
-     4,
-     2
-    ],
-    "D": [
-     14,
-     12
-    ],
-    "C": [
-     13,
-     10,
-     9
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "2NT",
-   "why": "4+ korts støtte og 16 sp: 2NT – Bekkasin, 12+ sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
-     8,
-     6
-    ],
-    "H": [
-     8,
-     6,
-     2
-    ],
-    "D": [
-     13
-    ],
-    "C": [
-     13,
-     10,
-     9,
-     8
-    ]
-   },
    "hp": 12,
-   "sp": 15,
-   "correct": "2NT",
-   "why": "4+ korts støtte og 15 sp: 2NT – Bekkasin, 12+ sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     13,
-     11,
-     8,
-     6,
-     2
-    ],
-    "H": [
-     14,
-     12,
-     4
-    ],
-    "D": [
-     14,
-     11,
-     10,
-     9
-    ],
-    "C": [
-     12
-    ]
-   },
-   "hp": 17,
-   "sp": 20,
-   "correct": "2NT",
-   "why": "4+ korts støtte og 20 sp: 2NT – Bekkasin, 12+ sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     14,
-     13,
-     10,
-     7,
-     6
-    ],
-    "H": [
-     9,
-     6,
-     4
-    ],
-    "D": [
-     13
-    ],
-    "C": [
-     13,
-     8,
-     7,
-     6
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "2NT",
-   "why": "4+ korts støtte og 16 sp: 2NT – Bekkasin, 12+ sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     14,
-     9,
-     5,
-     4,
-     2
-    ],
-    "H": [
-     10,
-     7,
-     3
-    ],
-    "D": [
-     13,
-     12,
-     5
-    ],
-    "C": [
-     13,
-     8
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2NT",
-   "why": "4+ korts støtte og 13 sp: 2NT – Bekkasin, 12+ sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     13,
-     12,
-     6,
-     2
-    ],
-    "H": [
-     12,
-     7,
-     6
-    ],
-    "D": [
-     11,
-     6,
-     4,
-     3
-    ],
-    "C": [
-     13,
-     2
-    ]
-   },
-   "hp": 11,
-   "sp": 12,
-   "correct": "2NT",
-   "why": "4+ korts støtte og 12 sp: 2NT – Bekkasin, 12+ sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     13,
-     9,
-     6,
-     5
-    ],
-    "H": [
-     14
-    ],
-    "D": [
-     14,
-     11,
-     8,
-     5
-    ],
-    "C": [
-     13,
-     11,
-     7,
-     4
-    ]
-   },
-   "hp": 16,
-   "sp": 19,
-   "correct": "2NT",
-   "why": "4+ korts støtte og 19 sp: 2NT – Bekkasin, 12+ sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     14,
-     13,
-     7,
-     3,
-     2
-    ],
-    "H": [
-     12,
-     8,
-     4
-    ],
-    "D": [
-     14,
-     12,
-     9,
-     8
-    ],
-    "C": [
-     2
-    ]
-   },
-   "hp": 15,
-   "sp": 18,
-   "correct": "2NT",
-   "why": "4+ korts støtte og 18 sp: 2NT – Bekkasin, 12+ sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     8,
-     4,
-     3,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     5
-    ],
-    "D": [
-     14,
-     10
-    ],
-    "C": [
-     14,
-     11,
-     10,
-     6
-    ]
-   },
-   "hp": 16,
    "sp": 17,
-   "correct": "2NT",
-   "why": "4+ korts støtte og 17 sp: 2NT – Bekkasin, 12+ sp."
+   "correct": "3♥",
+   "why": "Korthed i klør: 3♥. Du har stadig minimum."
   },
   {
-   "situation": "svar_1s",
+   "situation": "spm_1s",
    "hand": {
     "S": [
      13,
-     12,
      8,
      7,
+     6,
      3
     ],
     "H": [
-     11,
-     3
+     12,
+     10,
+     9,
+     5
     ],
     "D": [
      14,
-     13
+     12,
+     11
     ],
     "C": [
-     8,
-     7,
-     5,
-     2
+     5
     ]
    },
-   "hp": 13,
+   "hp": 12,
    "sp": 15,
-   "correct": "2NT",
-   "why": "4+ korts støtte og 15 sp: 2NT – Bekkasin, 12+ sp."
+   "correct": "3♥",
+   "why": "Korthed i klør: 3♥. Du har stadig minimum."
   },
   {
-   "situation": "svar_1s",
+   "situation": "spm_1s",
    "hand": {
     "S": [
      14,
      12,
-     9,
-     5
-    ],
-    "H": [
      11,
-     7
-    ],
-    "D": [
-     9,
-     8,
      7,
-     2
-    ],
-    "C": [
-     13,
-     7,
-     4
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "correct": "3♣",
-   "why": "4+ korts støtte og 11 sp: 3♣ – Omvendt Bergen, 10–11 sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     12,
-     6,
-     3,
-     2
-    ],
-    "H": [
-     11
-    ],
-    "D": [
-     13,
-     11,
-     9,
-     8
-    ],
-    "C": [
-     11,
-     9,
-     6,
-     5
-    ]
-   },
-   "hp": 8,
-   "sp": 11,
-   "correct": "3♣",
-   "why": "4+ korts støtte og 11 sp: 3♣ – Omvendt Bergen, 10–11 sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     14,
-     12,
-     10,
+     5,
      3
     ],
     "H": [
-     11,
-     6,
-     3
-    ],
-    "D": [
-     12,
-     11,
-     3,
-     2
-    ],
-    "C": [
-     8,
+     10,
      5
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "correct": "3♣",
-   "why": "4+ korts støtte og 11 sp: 3♣ – Omvendt Bergen, 10–11 sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     14,
-     13,
-     8,
-     4
     ],
-    "H": [
-     10,
-     3
-    ],
-    "D": [
-     13,
-     8,
-     2
-    ],
+    "D": [],
     "C": [
-     10,
-     9,
+     14,
+     11,
      7,
-     4
+     5,
+     2
     ]
    },
-   "hp": 10,
-   "sp": 11,
-   "correct": "3♣",
-   "why": "4+ korts støtte og 11 sp: 3♣ – Omvendt Bergen, 10–11 sp."
+   "hp": 12,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "Korthed i ruder: 3♠. Du har stadig minimum."
   },
   {
-   "situation": "svar_1s",
+   "situation": "spm_1s",
    "hand": {
     "S": [
-     14,
-     9,
+     12,
+     8,
+     7,
      4,
      3
     ],
     "H": [
-     13
+     14,
+     12,
+     8
     ],
     "D": [
-     7,
+     2
+    ],
+    "C": [
+     14,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♠",
+   "why": "Korthed i ruder: 3♠. Du har stadig minimum."
+  },
+  {
+   "situation": "spm_1s",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     10,
+     4
+    ],
+    "D": [],
+    "C": [
+     14,
+     12,
+     11,
+     10,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "3♠",
+   "why": "Korthed i ruder: 3♠. Du har stadig minimum."
+  },
+  {
+   "situation": "spm_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     6,
      5,
      4,
      3
     ],
-    "C": [
+    "H": [
+     14,
      11,
      6,
-     3,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 11,
-   "correct": "3♣",
-   "why": "4+ korts støtte og 11 sp: 3♣ – Omvendt Bergen, 10–11 sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     13,
-     11,
-     9,
-     8
-    ],
-    "H": [
-     10,
      4
     ],
     "D": [
-     14,
-     10,
      5
     ],
     "C": [
-     12,
-     10,
-     8,
-     7
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "correct": "3♣",
-   "why": "4+ korts støtte og 11 sp: 3♣ – Omvendt Bergen, 10–11 sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     14,
      11,
-     10,
      4
-    ],
-    "H": [
-     12,
-     11
-    ],
-    "D": [
-     10,
-     4,
-     2
-    ],
-    "C": [
-     12,
-     10,
-     4,
-     3
     ]
    },
-   "hp": 10,
-   "sp": 11,
-   "correct": "3♣",
-   "why": "4+ korts støtte og 11 sp: 3♣ – Omvendt Bergen, 10–11 sp."
+   "hp": 12,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "Korthed i ruder: 3♠. Du har stadig minimum."
   },
   {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     7,
-     6,
-     4,
-     3
-    ],
-    "H": [
-     3
-    ],
-    "D": [
-     13,
-     12,
-     10,
-     7
-    ],
-    "C": [
-     13,
-     10,
-     7,
-     3
-    ]
-   },
-   "hp": 8,
-   "sp": 11,
-   "correct": "3♣",
-   "why": "4+ korts støtte og 11 sp: 3♣ – Omvendt Bergen, 10–11 sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     8,
-     4,
-     3,
-     2
-    ],
-    "H": [
-     12,
-     7
-    ],
-    "D": [
-     11,
-     5,
-     2
-    ],
-    "C": [
-     14,
-     13,
-     8,
-     5
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "correct": "3♣",
-   "why": "4+ korts støtte og 11 sp: 3♣ – Omvendt Bergen, 10–11 sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     13,
-     10,
-     6,
-     4
-    ],
-    "H": [
-     8,
-     3
-    ],
-    "D": [
-     12,
-     9,
-     2
-    ],
-    "C": [
-     14,
-     11,
-     6,
-     2
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "correct": "3♣",
-   "why": "4+ korts støtte og 11 sp: 3♣ – Omvendt Bergen, 10–11 sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     14,
-     7,
-     4,
-     2
-    ],
-    "H": [
-     8,
-     2
-    ],
-    "D": [
-     11,
-     9,
-     6,
-     4
-    ],
-    "C": [
-     11,
-     9,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "3♦",
-   "why": "4+ korts støtte og 7 sp: 3♦ – Omvendt Bergen, 7–10 sp."
-  },
-  {
-   "situation": "svar_1s",
+   "situation": "spm_1s",
    "hand": {
     "S": [
      14,
      12,
-     10,
-     2
-    ],
-    "H": [
-     10,
-     9,
-     8
-    ],
-    "D": [
      11,
      9,
      8,
      6
     ],
-    "C": [
-     11,
-     8
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "3♦",
-   "why": "4+ korts støtte og 9 sp: 3♦ – Omvendt Bergen, 7–10 sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     13,
-     11,
-     9,
-     5
-    ],
     "H": [
      14,
-     10,
-     8
-    ],
-    "D": [
-     8,
-     5,
-     4
-    ],
-    "C": [
-     10,
-     8,
-     6
-    ]
-   },
-   "hp": 8,
-   "sp": 8,
-   "correct": "3♦",
-   "why": "4+ korts støtte og 8 sp: 3♦ – Omvendt Bergen, 7–10 sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     7,
-     5,
-     4,
-     2
-    ],
-    "H": [
-     13,
-     10,
-     3
-    ],
-    "D": [
      12,
-     10,
-     8,
-     7
-    ],
-    "C": [
-     12,
-     10
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "3♦",
-   "why": "4+ korts støtte og 8 sp: 3♦ – Omvendt Bergen, 7–10 sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     10,
-     8,
-     5,
-     4
-    ],
-    "H": [
-     6,
-     5
-    ],
-    "D": [
-     14,
-     11,
-     7,
-     4
-    ],
-    "C": [
-     12,
-     9,
-     3
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "3♦",
-   "why": "4+ korts støtte og 8 sp: 3♦ – Omvendt Bergen, 7–10 sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     11,
-     10,
-     6,
-     4
-    ],
-    "H": [
-     12,
-     6,
-     2
-    ],
-    "D": [
-     3,
-     2
-    ],
-    "C": [
-     13,
-     9,
-     5,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "3♦",
-   "why": "4+ korts støtte og 7 sp: 3♦ – Omvendt Bergen, 7–10 sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     7,
-     6,
-     4,
-     3
-    ],
-    "H": [
-     8
-    ],
-    "D": [
-     13,
-     6,
-     5,
-     4
-    ],
-    "C": [
-     12,
-     11,
-     3,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 9,
-   "correct": "3♦",
-   "why": "4+ korts støtte og 9 sp: 3♦ – Omvendt Bergen, 7–10 sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     10,
-     9,
-     7,
-     4
-    ],
-    "H": [
-     13,
-     9
-    ],
-    "D": [
-     13,
-     11,
-     10,
-     8
-    ],
-    "C": [
-     11,
-     4,
-     3
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "3♦",
-   "why": "4+ korts støtte og 9 sp: 3♦ – Omvendt Bergen, 7–10 sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     10,
-     9,
-     5,
-     4
-    ],
-    "H": [
-     13,
-     9,
-     7
-    ],
-    "D": [
-     13,
-     12,
-     8
-    ],
-    "C": [
-     11,
-     9,
-     3
-    ]
-   },
-   "hp": 9,
-   "sp": 9,
-   "correct": "3♦",
-   "why": "4+ korts støtte og 9 sp: 3♦ – Omvendt Bergen, 7–10 sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     13,
-     5,
-     4,
-     3
-    ],
-    "H": [
      11,
      10
     ],
     "D": [
-     10,
-     7,
-     6
+     10
     ],
     "C": [
-     12,
-     11,
-     10,
-     5
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "3♦",
-   "why": "4+ korts støtte og 8 sp: 3♦ – Omvendt Bergen, 7–10 sp."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     11,
-     9,
-     8,
-     2
-    ],
-    "H": [
-     8
-    ],
-    "D": [
-     11,
-     8,
-     6,
-     4
-    ],
-    "C": [
-     11,
-     8,
-     6,
-     5
-    ]
-   },
-   "hp": 3,
-   "sp": 6,
-   "correct": "3♠",
-   "why": "4-korts støtte og 6 sp: 3♠ er destruktivt (0–6 sp)."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     14,
-     8,
-     7,
-     6
-    ],
-    "H": [
-     11,
-     7,
-     6
-    ],
-    "D": [
-     6,
-     4,
-     3
-    ],
-    "C": [
-     7,
-     5,
-     2
-    ]
-   },
-   "hp": 5,
-   "sp": 5,
-   "correct": "3♠",
-   "why": "4-korts støtte og 5 sp: 3♠ er destruktivt (0–6 sp)."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     8,
-     7,
-     5,
-     3
-    ],
-    "H": [
-     12,
-     9,
-     3
-    ],
-    "D": [
-     6,
-     4,
-     3
-    ],
-    "C": [
-     14,
-     5,
-     4
-    ]
-   },
-   "hp": 6,
-   "sp": 6,
-   "correct": "3♠",
-   "why": "4-korts støtte og 6 sp: 3♠ er destruktivt (0–6 sp)."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     11,
-     8,
      3,
      2
-    ],
-    "H": [
-     13,
-     4
-    ],
-    "D": [
-     11,
-     8,
-     7,
-     2
-    ],
-    "C": [
-     10,
-     8,
-     5
     ]
    },
-   "hp": 5,
-   "sp": 6,
+   "hp": 14,
+   "sp": 18,
    "correct": "3♠",
-   "why": "4-korts støtte og 6 sp: 3♠ er destruktivt (0–6 sp)."
+   "why": "Korthed i ruder: 3♠. Du har stadig minimum."
   },
   {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     9,
-     6,
-     4,
-     2
-    ],
-    "H": [
-     9,
-     8,
-     2
-    ],
-    "D": [
-     14,
-     9,
-     2
-    ],
-    "C": [
-     9,
-     5,
-     2
-    ]
-   },
-   "hp": 4,
-   "sp": 4,
-   "correct": "3♠",
-   "why": "4-korts støtte og 4 sp: 3♠ er destruktivt (0–6 sp)."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     10,
-     7,
-     6,
-     2
-    ],
-    "H": [
-     12,
-     7,
-     6
-    ],
-    "D": [
-     9,
-     8,
-     7,
-     2
-    ],
-    "C": [
-     13,
-     5
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "3♠",
-   "why": "4-korts støtte og 6 sp: 3♠ er destruktivt (0–6 sp)."
-  },
-  {
-   "situation": "svar_1s",
+   "situation": "spm_1s",
    "hand": {
     "S": [
      13,
      11,
-     8,
-     4
-    ],
-    "H": [
-     11,
-     10,
-     6
-    ],
-    "D": [
-     10,
-     7,
-     5,
-     2
-    ],
-    "C": [
-     8,
-     7
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "3♠",
-   "why": "4-korts støtte og 6 sp: 3♠ er destruktivt (0–6 sp)."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     12,
-     8,
-     5,
-     3
-    ],
-    "H": [
-     14,
-     8,
-     5
-    ],
-    "D": [
-     8,
-     7,
-     4
-    ],
-    "C": [
      9,
-     8,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 6,
-   "correct": "3♠",
-   "why": "4-korts støtte og 6 sp: 3♠ er destruktivt (0–6 sp)."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     13,
-     11,
-     10,
-     4
-    ],
-    "H": [
      8,
      7
     ],
-    "D": [
-     8,
-     5,
-     3
-    ],
-    "C": [
-     11,
-     8,
-     7,
-     3
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "3♠",
-   "why": "4-korts støtte og 6 sp: 3♠ er destruktivt (0–6 sp)."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     9,
-     8,
-     5,
-     2
-    ],
     "H": [
-     12,
-     11,
-     3
+     12
     ],
     "D": [
-     6,
-     2
+     13,
+     6
     ],
     "C": [
-     11,
-     4,
-     3,
-     2
-    ]
-   },
-   "hp": 4,
-   "sp": 5,
-   "correct": "3♠",
-   "why": "4-korts støtte og 5 sp: 3♠ er destruktivt (0–6 sp)."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
+     14,
      12,
-     11,
-     9,
-     8,
-     6,
-     3
-    ],
-    "H": [
-     9,
-     2
-    ],
-    "D": [
-     10,
-     4,
-     2
-    ],
-    "C": [
-     5,
-     4
-    ]
-   },
-   "hp": 3,
-   "sp": 5,
-   "correct": "4♠",
-   "why": "6-korts støtte og 5 sp: 4♠ er destruktivt (0–9 sp)."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     12,
-     9,
-     8,
-     5,
-     4
-    ],
-    "H": [
-     9,
-     6,
-     4
-    ],
-    "D": [
-     8
-    ],
-    "C": [
      9,
      7,
-     3,
-     2
+     6
     ]
    },
-   "hp": 2,
-   "sp": 5,
-   "correct": "4♠",
-   "why": "5-korts støtte og 5 sp: 4♠ er destruktivt (0–9 sp)."
+   "hp": 15,
+   "sp": 19,
+   "correct": "3NT",
+   "why": "Korthed i hjerter: 3NT. Du har stadig minimum."
   },
   {
-   "situation": "svar_1s",
+   "situation": "spm_1s",
    "hand": {
     "S": [
+     14,
      12,
-     10,
-     6,
+     11,
      5,
      3,
      2
     ],
     "H": [],
     "D": [
-     9,
-     5,
-     4
-    ],
-    "C": [
-     12,
-     8,
-     4,
-     3
-    ]
-   },
-   "hp": 4,
-   "sp": 9,
-   "correct": "4♠",
-   "why": "6-korts støtte og 9 sp: 4♠ er destruktivt (0–9 sp)."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     12,
      10,
-     7,
-     6,
-     2
-    ],
-    "H": [
-     11,
-     2
-    ],
-    "D": [
-     12,
-     10,
-     9,
      8
     ],
     "C": [
+     14,
+     12,
+     11,
+     9,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 20,
+   "correct": "3NT",
+   "why": "Korthed i hjerter: 3NT. Du har stadig minimum."
+  },
+  {
+   "situation": "spm_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     3,
+     2
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     14,
+     8,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     7,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Korthed i hjerter: 3NT. Du har stadig minimum."
+  },
+  {
+   "situation": "spm_1s",
+   "hand": {
+    "S": [
+     13,
+     11,
+     7,
+     6,
+     3,
+     2
+    ],
+    "H": [],
+    "D": [
+     3,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     12,
      10,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 19,
+   "correct": "3NT",
+   "why": "Korthed i hjerter: 3NT. Du har stadig minimum."
+  },
+  {
+   "situation": "spm_1s",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     14,
+     8,
+     6
+    ],
+    "C": [
+     14,
+     11,
      9
     ]
    },
-   "hp": 5,
-   "sp": 7,
-   "correct": "4♠",
-   "why": "5-korts støtte og 7 sp: 4♠ er destruktivt (0–9 sp)."
+   "hp": 15,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Korthed i hjerter: 3NT. Du har stadig minimum."
   },
   {
-   "situation": "svar_1s",
+   "situation": "spm_1s",
    "hand": {
     "S": [
      13,
-     8,
-     6,
-     5,
-     3
+     12,
+     9,
+     4,
+     2
     ],
     "H": [
-     10,
+     14,
+     4,
      2
     ],
     "D": [
+     14,
      8,
-     7
+     5
     ],
     "C": [
-     10,
-     5,
-     4,
-     3
+     7,
+     5
     ]
    },
-   "hp": 3,
-   "sp": 5,
+   "hp": 13,
+   "sp": 14,
    "correct": "4♠",
-   "why": "5-korts støtte og 5 sp: 4♠ er destruktivt (0–9 sp)."
+   "why": "Ingen korthed – helt jævn minimumshånd: 4♠. Svarer passer normalt."
   },
   {
-   "situation": "svar_1s",
+   "situation": "spm_1s",
+   "hand": {
+    "S": [
+     12,
+     10,
+     9,
+     7,
+     5
+    ],
+    "H": [
+     13,
+     9,
+     5
+    ],
+    "D": [
+     14,
+     10,
+     4
+    ],
+    "C": [
+     13,
+     12
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "4♠",
+   "why": "Ingen korthed – helt jævn minimumshånd: 4♠. Svarer passer normalt."
+  },
+  {
+   "situation": "spm_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     8
+    ],
+    "D": [
+     3,
+     2
+    ],
+    "C": [
+     9,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "4♠",
+   "why": "Ingen korthed – helt jævn minimumshånd: 4♠. Svarer passer normalt."
+  },
+  {
+   "situation": "spm_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     8,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     10
+    ],
+    "D": [
+     10,
+     9,
+     6
+    ],
+    "C": [
+     14,
+     11
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "4♠",
+   "why": "Ingen korthed – helt jævn minimumshånd: 4♠. Svarer passer normalt."
+  },
+  {
+   "situation": "spm_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     13,
+     8,
+     6
+    ],
+    "D": [
+     14,
+     10,
+     2
+    ],
+    "C": [
+     11,
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "4♠",
+   "why": "Ingen korthed – helt jævn minimumshånd: 4♠. Svarer passer normalt."
+  },
+  {
+   "situation": "svar_min_1s",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8,
+     5
+    ],
+    "H": [
+     12,
+     10,
+     7
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     7,
+     2
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "16 sp giver slemambition over et minimum: 3♦ spørger, om åbner alligevel har en korthed."
+  },
+  {
+   "situation": "svar_min_1s",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9,
+     5,
+     2
+    ],
+    "H": [],
+    "D": [
+     14,
+     13,
+     10,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 21,
+   "correct": "3♦",
+   "why": "21 sp giver slemambition over et minimum: 3♦ spørger, om åbner alligevel har en korthed."
+  },
+  {
+   "situation": "svar_min_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     4
+    ],
+    "H": [
+     10,
+     8,
+     6
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     10,
+     9
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "16 sp giver slemambition over et minimum: 3♦ spørger, om åbner alligevel har en korthed."
+  },
+  {
+   "situation": "svar_min_1s",
    "hand": {
     "S": [
      14,
      12,
      11,
-     10,
-     9,
-     3
+     8,
+     4
     ],
     "H": [
-     8,
-     7
+     13,
+     12,
+     8
     ],
-    "D": [
-     10,
-     6
-    ],
+    "D": [],
     "C": [
-     10,
+     14,
+     8,
+     7,
      3,
      2
     ]
    },
-   "hp": 7,
-   "sp": 9,
-   "correct": "4♠",
-   "why": "6-korts støtte og 9 sp: 4♠ er destruktivt (0–9 sp)."
+   "hp": 16,
+   "sp": 21,
+   "correct": "3♦",
+   "why": "21 sp giver slemambition over et minimum: 3♦ spørger, om åbner alligevel har en korthed."
   },
   {
-   "situation": "svar_1s",
+   "situation": "svar_min_1s",
+   "hand": {
+    "S": [
+     11,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     9,
+     2
+    ],
+    "D": [
+     13,
+     9,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     12
+    ]
+   },
+   "hp": 17,
+   "sp": 17,
+   "correct": "3♦",
+   "why": "17 sp giver slemambition over et minimum: 3♦ spørger, om åbner alligevel har en korthed."
+  },
+  {
+   "situation": "svar_min_1s",
+   "hand": {
+    "S": [
+     14,
+     11,
+     7,
+     2
+    ],
+    "H": [
+     9
+    ],
+    "D": [
+     14,
+     13,
+     7,
+     2
+    ],
+    "C": [
+     10,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "15 sp giver slemambition over et minimum: 3♦ spørger, om åbner alligevel har en korthed."
+  },
+  {
+   "situation": "svar_min_1s",
+   "hand": {
+    "S": [
+     12,
+     10,
+     8,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     11
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     6,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "3♦",
+   "why": "18 sp giver slemambition over et minimum: 3♦ spørger, om åbner alligevel har en korthed."
+  },
+  {
+   "situation": "svar_min_1s",
    "hand": {
     "S": [
      13,
+     10,
+     9,
+     8,
+     7
+    ],
+    "H": [
+     11,
+     9
+    ],
+    "D": [
+     13,
+     12,
+     7,
+     5
+    ],
+    "C": [
+     12,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "4♠",
+   "why": "13 sp og åbner har minimum: 4♠ som afmelding."
+  },
+  {
+   "situation": "svar_min_1s",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9,
+     4
+    ],
+    "H": [
+     12,
+     8
+    ],
+    "D": [
+     13,
+     12,
      11,
      10,
+     7
+    ],
+    "C": [
+     10,
+     8
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "4♠",
+   "why": "13 sp og åbner har minimum: 4♠ som afmelding."
+  },
+  {
+   "situation": "svar_min_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     8,
+     3
+    ],
+    "H": [
+     12,
+     8
+    ],
+    "D": [
+     6,
+     5
+    ],
+    "C": [
+     9,
+     8,
+     6,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "4♠",
+   "why": "13 sp og åbner har minimum: 4♠ som afmelding."
+  },
+  {
+   "situation": "svar_min_1s",
+   "hand": {
+    "S": [
+     10,
+     9,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     9,
+     4
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     14,
+     12,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "4♠",
+   "why": "13 sp og åbner har minimum: 4♠ som afmelding."
+  },
+  {
+   "situation": "svar_min_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     2
+    ],
+    "H": [
+     8
+    ],
+    "D": [
+     11,
+     8,
+     7
+    ],
+    "C": [
+     14,
+     11,
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "4♠",
+   "why": "14 sp og åbner har minimum: 4♠ som afmelding."
+  },
+  {
+   "situation": "svar_min_1s",
+   "hand": {
+    "S": [
+     11,
+     8,
+     6,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     11
+    ],
+    "D": [
+     14,
+     10,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "4♠",
+   "why": "14 sp og åbner har minimum: 4♠ som afmelding."
+  },
+  {
+   "situation": "svar_min_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     2
+    ],
+    "H": [
+     8
+    ],
+    "D": [
+     14,
+     10,
+     9,
+     4,
+     3
+    ],
+    "C": [
+     11,
+     8,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "4♠",
+   "why": "14 sp og åbner har minimum: 4♠ som afmelding."
+  },
+  {
+   "situation": "svar_3d_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     5
+    ],
+    "D": [
+     12,
+     11,
+     5,
+     4
+    ],
+    "C": [
+     11,
+     10
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 3♥ viser es i hjerter."
+  },
+  {
+   "situation": "svar_3d_1s",
+   "hand": {
+    "S": [
+     13,
+     9,
+     7,
+     4,
+     3
+    ],
+    "H": [],
+    "D": [
+     14,
+     13,
+     11,
+     9,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "3♥",
+   "why": "19 sp giver slemambition: cuebid i billigste kontrolfarve – 3♥ viser renonce i hjerter."
+  },
+  {
+   "situation": "svar_3d_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     7,
+     2
+    ],
+    "H": [
+     14,
+     9,
+     8
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     12,
+     11,
+     6
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "correct": "3♥",
+   "why": "19 sp giver slemambition: cuebid i billigste kontrolfarve – 3♥ viser es i hjerter."
+  },
+  {
+   "situation": "svar_3d_1s",
+   "hand": {
+    "S": [
+     14,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     5,
+     4
+    ],
+    "D": [
+     14,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     6,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "4♣",
+   "why": "18 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser es i klør. Farver, du springer over (hjerter), benægter kontrol."
+  },
+  {
+   "situation": "svar_3d_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     8
+    ],
+    "H": [
+     8,
+     5
+    ],
+    "D": [
+     14,
+     11
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     7,
+     2
+    ]
+   },
+   "hp": 18,
+   "sp": 20,
+   "correct": "4♣",
+   "why": "20 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser es i klør. Farver, du springer over (hjerter), benægter kontrol."
+  },
+  {
+   "situation": "svar_3d_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     2
+    ],
+    "H": [
+     12,
+     8,
+     5
+    ],
+    "D": [
+     13,
+     6
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4♣",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser es i klør. Farver, du springer over (hjerter), benægter kontrol."
+  },
+  {
+   "situation": "svar_3d_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     4,
+     2
+    ],
+    "H": [
+     7,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     12
+    ],
+    "C": [
+     12,
+     5,
+     4
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "correct": "4♦",
+   "why": "19 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser es i ruder. Farver, du springer over (hjerter, klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3d_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     6
+    ],
+    "H": [
+     6,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     3
+    ],
+    "C": [
+     8,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4♦",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser es i ruder. Farver, du springer over (hjerter, klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3d_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7,
+     6
+    ],
+    "H": [
+     6,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     6,
+     5
+    ],
+    "C": [
+     9,
+     7
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "4♦",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser es i ruder. Farver, du springer over (hjerter, klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3d_1s",
+   "hand": {
+    "S": [
+     13,
+     10,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     10,
+     9
+    ],
+    "D": [
+     14,
+     8,
+     3
+    ],
+    "C": [
+     13,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "4♠",
+   "why": "15 sp – ikke nok til slem over åbners tillæg: 4♠ som afmelding."
+  },
+  {
+   "situation": "svar_3d_1s",
+   "hand": {
+    "S": [
+     9,
+     6,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     13,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "4♠",
+   "why": "16 sp – ikke nok til slem over åbners tillæg: 4♠ som afmelding."
+  },
+  {
+   "situation": "svar_3d_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     8,
+     4
+    ],
+    "H": [
+     14,
+     10,
+     7
+    ],
+    "D": [
+     12,
+     11,
+     3,
+     2
+    ],
+    "C": [
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "4♠",
+   "why": "16 sp – ikke nok til slem over åbners tillæg: 4♠ som afmelding."
+  },
+  {
+   "situation": "svar_3h_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     6,
+     2
+    ],
+    "H": [],
+    "D": [
+     14,
+     8,
+     7,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     8
+    ]
+   },
+   "hp": 19,
+   "sp": 24,
+   "correct": "4♣",
+   "why": "24 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser es i klør."
+  },
+  {
+   "situation": "svar_3h_1s",
+   "hand": {
+    "S": [
+     11,
+     10,
+     8,
+     6
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     7,
+     2
+    ],
+    "C": [
+     14,
+     7,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "4♣",
+   "why": "19 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser es i klør."
+  },
+  {
+   "situation": "svar_3h_1s",
+   "hand": {
+    "S": [
+     14,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     8,
+     5,
+     3
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "4♣",
+   "why": "18 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser singleton i klør."
+  },
+  {
+   "situation": "svar_3h_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     9,
+     6
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     5
+    ],
+    "C": [
+     12,
+     4,
+     3
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "4♦",
+   "why": "20 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser es i ruder. Farver, du springer over (klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3h_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     9,
+     3
+    ],
+    "H": [
+     8
+    ],
+    "D": [
+     14,
+     7,
+     6
+    ],
+    "C": [
+     11,
+     9,
+     7,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "4♦",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser es i ruder. Farver, du springer over (klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3h_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     3,
+     2
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     7,
+     5
+    ],
+    "C": [
+     10,
+     6,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "4♦",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser es i ruder. Farver, du springer over (klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3h_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     2
+    ],
+    "D": [
+     12,
+     10,
+     3
+    ],
+    "C": [
+     11,
+     10
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4♥",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♥ viser es i hjerter. Farver, du springer over (klør, ruder), benægter kontrol."
+  },
+  {
+   "situation": "svar_3h_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11,
+     6
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     10,
+     9,
+     7,
+     5,
+     2
+    ],
+    "C": [
+     12,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "4♥",
+   "why": "18 sp giver slemambition: cuebid i billigste kontrolfarve – 4♥ viser singleton i hjerter. Farver, du springer over (klør, ruder), benægter kontrol."
+  },
+  {
+   "situation": "svar_3h_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     8,
+     6
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     12,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     5,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "4♥",
+   "why": "18 sp giver slemambition: cuebid i billigste kontrolfarve – 4♥ viser singleton i hjerter. Farver, du springer over (klør, ruder), benægter kontrol."
+  },
+  {
+   "situation": "svar_3h_1s",
+   "hand": {
+    "S": [
+     13,
+     10,
+     7,
+     3
+    ],
+    "H": [
+     14,
+     12
+    ],
+    "D": [
+     13,
+     2
+    ],
+    "C": [
+     11,
+     10,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "4♠",
+   "why": "15 sp – ikke nok til slem over åbners tillæg: 4♠ som afmelding."
+  },
+  {
+   "situation": "svar_3h_1s",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     7
+    ],
+    "H": [
+     13,
+     11,
+     7
+    ],
+    "D": [
+     13,
+     9,
+     8,
+     7,
+     5
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "4♠",
+   "why": "14 sp – ikke nok til slem over åbners tillæg: 4♠ som afmelding."
+  },
+  {
+   "situation": "svar_3h_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     7,
+     5
+    ],
+    "D": [
+     11,
+     5
+    ],
+    "C": [
+     14,
+     12,
+     4,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "4♠",
+   "why": "14 sp – ikke nok til slem over åbners tillæg: 4♠ som afmelding."
+  },
+  {
+   "situation": "svar_3s_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     8
+    ],
+    "D": [
+     12,
+     11,
+     6,
+     4,
+     3
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "4♣",
+   "why": "18 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser singleton i klør."
+  },
+  {
+   "situation": "svar_3s_1s",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8,
+     2
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     13,
+     11,
+     9
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     7,
+     6
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "4♣",
+   "why": "20 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser es i klør."
+  },
+  {
+   "situation": "svar_3s_1s",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     8,
+     6
+    ],
+    "H": [
+     13,
+     6,
+     2
+    ],
+    "D": [],
+    "C": [
+     14,
+     13,
+     9,
+     4,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♣",
+   "why": "19 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser es i klør."
+  },
+  {
+   "situation": "svar_3s_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     9
+    ],
+    "D": [],
+    "C": [
+     12,
+     8,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♦",
+   "why": "19 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser renonce i ruder. Farver, du springer over (klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3s_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     9,
+     6
+    ],
+    "H": [
+     12,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     9
+    ]
+   },
+   "hp": 18,
+   "sp": 20,
+   "correct": "4♦",
+   "why": "20 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser konge i ruder. Farver, du springer over (klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3s_1s",
+   "hand": {
+    "S": [
+     14,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     3,
+     2
+    ],
+    "C": [
+     10,
+     4,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "4♦",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser es i ruder. Farver, du springer over (klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3s_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     12
+    ],
+    "D": [
+     11,
+     9,
+     7,
+     3
+    ],
+    "C": [
+     9,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "4♥",
+   "why": "18 sp giver slemambition: cuebid i billigste kontrolfarve – 4♥ viser es i hjerter. Farver, du springer over (klør, ruder), benægter kontrol."
+  },
+  {
+   "situation": "svar_3s_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     6,
+     2
+    ],
+    "H": [
+     13,
+     12
+    ],
+    "D": [
+     12,
+     11,
+     3
+    ],
+    "C": [
+     11,
+     8,
+     6
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4♥",
+   "why": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♥ viser konge i hjerter. Farver, du springer over (klør, ruder), benægter kontrol."
+  },
+  {
+   "situation": "svar_3s_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     10,
+     2
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     12,
+     11
+    ],
+    "C": [
+     12,
+     11,
+     8,
+     4,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "4♥",
+   "why": "18 sp giver slemambition: cuebid i billigste kontrolfarve – 4♥ viser singleton i hjerter. Farver, du springer over (klør, ruder), benægter kontrol."
+  },
+  {
+   "situation": "svar_3s_1s",
+   "hand": {
+    "S": [
+     12,
+     11,
+     7,
+     5,
+     2
+    ],
+    "H": [],
+    "D": [
+     8,
+     7,
+     6,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "4♠",
+   "why": "15 sp – ikke nok til slem over åbners tillæg: 4♠ som afmelding."
+  },
+  {
+   "situation": "svar_3s_1s",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8,
+     2
+    ],
+    "H": [
+     8,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     6,
+     4
+    ],
+    "C": [
+     12,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "4♠",
+   "why": "16 sp – ikke nok til slem over åbners tillæg: 4♠ som afmelding."
+  },
+  {
+   "situation": "svar_3s_1s",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     5,
+     2
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     14,
+     11,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "4♠",
+   "why": "16 sp – ikke nok til slem over åbners tillæg: 4♠ som afmelding."
+  },
+  {
+   "situation": "svar_3nt_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     9,
+     4
+    ],
+    "H": [
+     6,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     6,
+     4,
+     2
+    ],
+    "C": []
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♣",
+   "why": "19 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser renonce i klør."
+  },
+  {
+   "situation": "svar_3nt_1s",
+   "hand": {
+    "S": [
+     14,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     8
+    ]
+   },
+   "hp": 18,
+   "sp": 21,
+   "correct": "4♣",
+   "why": "21 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser es i klør."
+  },
+  {
+   "situation": "svar_3nt_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     7,
+     6
+    ],
+    "H": [
+     13,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     10,
+     2
+    ],
+    "C": [
+     10
+    ]
+   },
+   "hp": 16,
+   "sp": 20,
+   "correct": "4♣",
+   "why": "20 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser singleton i klør."
+  },
+  {
+   "situation": "svar_3nt_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
      7,
      5,
      4
     ],
     "H": [
-     5,
-     2
+     14
     ],
     "D": [
-     13,
-     8,
-     6
+     14,
+     9,
+     4
     ],
     "C": [
-     9,
-     6
-    ]
-   },
-   "hp": 7,
-   "sp": 9,
-   "correct": "4♠",
-   "why": "6-korts støtte og 9 sp: 4♠ er destruktivt (0–9 sp)."
-  },
-  {
-   "situation": "svar_1s",
-   "hand": {
-    "S": [
-     8,
-     7,
-     5,
-     3,
-     2
-    ],
-    "H": [
      11,
      9,
-     6
+     3,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "4♦",
+   "why": "18 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser es i ruder. Farver, du springer over (klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3nt_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     8,
+     7
+    ],
+    "H": [],
+    "D": [
+     14,
+     11,
+     7,
+     5
+    ],
+    "C": [
+     12,
+     11,
+     7,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♦",
+   "why": "19 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser es i ruder. Farver, du springer over (klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3nt_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     7
+    ],
+    "H": [],
+    "D": [
+     13,
+     12,
+     11,
+     10,
+     9
+    ],
+    "C": [
+     11,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♦",
+   "why": "19 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser konge i ruder. Farver, du springer over (klør), benægter kontrol."
+  },
+  {
+   "situation": "svar_3nt_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     10,
+     4
+    ],
+    "H": [
+     14,
+     11,
+     10
     ],
     "D": [
+     12,
+     11,
      10
     ],
     "C": [
-     13,
-     8,
-     4,
-     3
+     12,
+     2
     ]
    },
-   "hp": 4,
-   "sp": 7,
-   "correct": "4♠",
-   "why": "5-korts støtte og 7 sp: 4♠ er destruktivt (0–9 sp)."
+   "hp": 19,
+   "sp": 20,
+   "correct": "4♥",
+   "why": "20 sp giver slemambition: cuebid i billigste kontrolfarve – 4♥ viser es i hjerter. Farver, du springer over (klør, ruder), benægter kontrol."
   },
   {
-   "situation": "svar_1s",
+   "situation": "svar_3nt_1s",
    "hand": {
     "S": [
-     12,
+     14,
+     13,
      6,
-     5,
-     4,
-     3
+     5
     ],
     "H": [
-     10,
-     8,
-     6
+     14,
+     13,
+     12
     ],
     "D": [
+     12,
+     11,
+     6,
+     3
+    ],
+    "C": [
+     8,
+     5
+    ]
+   },
+   "hp": 19,
+   "sp": 20,
+   "correct": "4♥",
+   "why": "20 sp giver slemambition: cuebid i billigste kontrolfarve – 4♥ viser es i hjerter. Farver, du springer over (klør, ruder), benægter kontrol."
+  },
+  {
+   "situation": "svar_3nt_1s",
+   "hand": {
+    "S": [
      14,
+     13,
+     12,
+     11,
+     10
+    ],
+    "H": [
+     13,
+     11
+    ],
+    "D": [
+     10,
+     5
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     8
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "4♥",
+   "why": "19 sp giver slemambition: cuebid i billigste kontrolfarve – 4♥ viser konge i hjerter. Farver, du springer over (klør, ruder), benægter kontrol."
+  },
+  {
+   "situation": "svar_3nt_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     9,
+     6
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     8,
+     5,
      4
     ],
     "C": [
+     14,
      11,
-     6,
-     5
+     5,
+     3
     ]
    },
-   "hp": 7,
-   "sp": 8,
+   "hp": 11,
+   "sp": 14,
    "correct": "4♠",
-   "why": "5-korts støtte og 8 sp: 4♠ er destruktivt (0–9 sp)."
+   "why": "14 sp – ikke nok til slem over åbners tillæg: 4♠ som afmelding."
   },
   {
-   "situation": "svar_1s",
+   "situation": "svar_3nt_1s",
    "hand": {
     "S": [
-     12,
-     8,
-     5,
+     14,
+     13,
+     9,
+     2
+    ],
+    "H": [],
+    "D": [
+     10,
+     9,
      4,
      3
     ],
-    "H": [
-     14,
-     7
-    ],
-    "D": [
-     11,
-     7,
-     2
-    ],
     "C": [
-     9,
-     6,
+     14,
+     10,
+     8,
+     7,
      5
     ]
    },
-   "hp": 7,
-   "sp": 8,
+   "hp": 11,
+   "sp": 16,
    "correct": "4♠",
-   "why": "5-korts støtte og 8 sp: 4♠ er destruktivt (0–9 sp)."
+   "why": "16 sp – ikke nok til slem over åbners tillæg: 4♠ som afmelding."
+  },
+  {
+   "situation": "svar_3nt_1s",
+   "hand": {
+    "S": [
+     14,
+     10,
+     6,
+     4,
+     2
+    ],
+    "H": [],
+    "D": [
+     12,
+     10,
+     7,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "4♠",
+   "why": "16 sp – ikke nok til slem over åbners tillæg: 4♠ som afmelding."
   }
  ]
 }
