@@ -1,30 +1,449 @@
 [
-  {
-    "id": "multiforsvar",
-    "titel": "Multiforsvar mod 1NT",
-    "gruppe": "Konkurrence",
-    "beskrivelse": "Modstanderen åbner 1NT. Meld ind med D, 2♣–2NT eller på 3-trinnet – eller svar på makkers indmelding.",
-    "roller": ["Indmelder", "Svarer"],
-    "status": "klar",
-    "viden": "viden/bridgesystem.html#multiforsvar"
-  },
-  { "id": "michaels", "titel": "Michaels cuebid", "gruppe": "Konkurrence",
-    "beskrivelse": "Overmelding i åbners farve med to femfarver.", "roller": ["Indmelder", "Svarer"], "status": "kommer" },
-  { "id": "usaedvanlig-2nt", "titel": "Usædvanlig 2NT", "gruppe": "Konkurrence",
-    "beskrivelse": "2NT over en farveåbning viser de to laveste umeldte farver.", "roller": ["Indmelder", "Svarer"], "status": "kommer" },
-  { "id": "lebensohl", "titel": "Lebensohl", "gruppe": "Konkurrence",
-    "beskrivelse": "Svar, når makker har oplysningsdoblet en svag 2-åbning.", "roller": ["Dobler", "Svarer"], "status": "kommer" },
-  { "id": "omvendt-bergen", "titel": "Omvendt Bergen", "gruppe": "Majorstøtte",
-    "beskrivelse": "3♣ og 3♦ som støttemeldinger over 1♥/1♠.", "roller": ["Åbner", "Svarer"], "status": "kommer" },
-  { "id": "bekkasin", "titel": "Bekkasin 2NT", "gruppe": "Majorstøtte",
-    "beskrivelse": "Vælg støttemelding over makkers 1♥/1♠ – og beskriv kortfarve og styrke som åbner efter 1M – 2NT.",
-    "roller": ["Åbner", "Svarer"], "status": "klar", "viden": "viden/bridgesystem.html#4-5-bekkasin-1m-2nt" },
-  { "id": "xy-sans", "titel": "XY-sans", "gruppe": "Videre meldeforløb",
-    "beskrivelse": "Relæ efter åbners 1NT-genmelding.", "roller": ["Åbner", "Svarer"], "status": "kommer" },
-  { "id": "fjerde-farve", "titel": "4. farve", "gruppe": "Videre meldeforløb",
-    "beskrivelse": "Den fjerde farve er kunstig og krav.", "roller": ["Åbner", "Svarer"], "status": "kommer" },
-  { "id": "svar-paa-1nt", "titel": "Stayman og transfer", "gruppe": "Svar på 1NT",
-    "beskrivelse": "Stayman, majortransfer og minortransfer over makkers 1NT.", "roller": ["Åbner", "Svarer"], "status": "kommer" },
-  { "id": "1430", "titel": "1430 og trumfdame", "gruppe": "Slem",
-    "beskrivelse": "Nøglekortspørgsmål, trumfdamespørgsmål og kongespørgsmål.", "roller": ["Spørger", "Svarer"], "status": "kommer" }
+ {
+  "id": "multiforsvar",
+  "titel": "Multiforsvar mod 1NT",
+  "gruppe": "Konkurrence",
+  "beskrivelse": "Modstanderen åbner 1NT. Meld ind med D, 2♣–2NT eller på 3-trinnet – eller svar på makkers indmelding.",
+  "roller": [
+   "Indmelder",
+   "Svarer"
+  ],
+  "status": "klar",
+  "viden": "viden/bridgesystem.html#multiforsvar",
+  "system": "kf"
+ },
+ {
+  "id": "michaels",
+  "titel": "Michaels cuebid",
+  "gruppe": "Konkurrence",
+  "beskrivelse": "Overmelding i åbners farve med to femfarver.",
+  "roller": [
+   "Indmelder",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "system": "kf"
+ },
+ {
+  "id": "usaedvanlig-2nt",
+  "titel": "Usædvanlig 2NT",
+  "gruppe": "Konkurrence",
+  "beskrivelse": "2NT over en farveåbning viser de to laveste umeldte farver.",
+  "roller": [
+   "Indmelder",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "system": "kf"
+ },
+ {
+  "id": "lebensohl",
+  "titel": "Lebensohl",
+  "gruppe": "Konkurrence",
+  "beskrivelse": "Svar, når makker har oplysningsdoblet en svag 2-åbning.",
+  "roller": [
+   "Dobler",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "system": "kf"
+ },
+ {
+  "id": "omvendt-bergen",
+  "titel": "Omvendt Bergen",
+  "gruppe": "Majorstøtte",
+  "beskrivelse": "3♣ og 3♦ som støttemeldinger over 1♥/1♠.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "system": "kf"
+ },
+ {
+  "id": "bekkasin",
+  "titel": "Bekkasin 2NT",
+  "gruppe": "Majorstøtte",
+  "beskrivelse": "Vælg støttemelding over makkers 1♥/1♠ – og beskriv kortfarve og styrke som åbner efter 1M – 2NT.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "klar",
+  "viden": "viden/bridgesystem.html#4-5-bekkasin-1m-2nt",
+  "system": "kf"
+ },
+ {
+  "id": "xy-sans",
+  "titel": "XY-sans",
+  "gruppe": "Videre meldeforløb",
+  "beskrivelse": "Relæ efter åbners 1NT-genmelding.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "system": "kf"
+ },
+ {
+  "id": "fjerde-farve",
+  "titel": "4. farve",
+  "gruppe": "Videre meldeforløb",
+  "beskrivelse": "Den fjerde farve er kunstig og krav.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "system": "kf"
+ },
+ {
+  "id": "svar-paa-1nt",
+  "titel": "Stayman og transfer",
+  "gruppe": "Svar på 1NT",
+  "beskrivelse": "Stayman, majortransfer og minortransfer over makkers 1NT.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "system": "kf"
+ },
+ {
+  "id": "1430",
+  "titel": "1430 og trumfdame",
+  "gruppe": "Slem",
+  "beskrivelse": "Nøglekortspørgsmål, trumfdamespørgsmål og kongespørgsmål.",
+  "roller": [
+   "Spørger",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "system": "kf"
+ },
+ {
+  "id": "ff-majorstoette",
+  "system": "ff",
+  "titel": "Støtte til 1♥/1♠",
+  "gruppe": "Majorstøtte",
+  "beskrivelse": "2M 6–9 sp · 3♣ 10–12 sp med præcis 3 kort · 3♦ 10–12 sp med 4+ · 3M og 4M spærrende.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-1"
+ },
+ {
+  "id": "ff-bekkasin",
+  "system": "ff",
+  "titel": "Bekkasin 2NT",
+  "gruppe": "Majorstøtte",
+  "beskrivelse": "13+ sp og 4+ korts støtte. Åbner: 3♣ minimum, 3♦ tillæg, 3♥ kort klør, 3♠ kort ruder, 3NT kort i den anden major.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-2"
+ },
+ {
+  "id": "ff-trial-bids",
+  "system": "ff",
+  "titel": "Longsuit trial bids",
+  "gruppe": "Majorstøtte",
+  "beskrivelse": "Ny farve efter 1M – 2M beder om hjælp i farven.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-3"
+ },
+ {
+  "id": "ff-two-over-one",
+  "system": "ff",
+  "titel": "Two over One udgangskrav",
+  "gruppe": "Videre meldeforløb",
+  "beskrivelse": "Ny farve på 2-trinnet: 13+ hp og udgangskrav – ikke 10+ som hos Karina & Frank.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-5"
+ },
+ {
+  "id": "ff-fast-arrival",
+  "system": "ff",
+  "titel": "Fast og slow arrival",
+  "gruppe": "Videre meldeforløb",
+  "beskrivelse": "I udgangskrav betyder hurtig udgang minimum, langsom ankomst tillæg.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-5b"
+ },
+ {
+  "id": "ff-staerke-genmeldinger",
+  "system": "ff",
+  "titel": "Åbners stærke genmeldinger og 3♣ checkback",
+  "gruppe": "Videre meldeforløb",
+  "beskrivelse": "Spring viser styrke; 3♣ checkback efter åbners 2NT-genmelding.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-4"
+ },
+ {
+  "id": "ff-fjerde-farve",
+  "system": "ff",
+  "titel": "Fjerde farve krav",
+  "gruppe": "Videre meldeforløb",
+  "beskrivelse": "Den fjerde farve er kunstig: rundekrav på 2-trinnet, udgangskrav på 3-trinnet.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-5a"
+ },
+ {
+  "id": "ff-omvendt-minor",
+  "system": "ff",
+  "titel": "Omvendt minor",
+  "gruppe": "Videre meldeforløb",
+  "beskrivelse": "2 i åbningsfarven er stærk støtte (10+ sp), 3 i farven spærrende.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-6"
+ },
+ {
+  "id": "ff-xyz",
+  "system": "ff",
+  "titel": "xy sans og XYZ",
+  "gruppe": "Videre meldeforløb",
+  "beskrivelse": "2♣ relæ og 2♦ udgangskrav efter åbners genmelding på 1-trinnet.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-6a"
+ },
+ {
+  "id": "ff-ass",
+  "system": "ff",
+  "titel": "Amerikansk Stayman (ASS)",
+  "gruppe": "Svar på 1NT",
+  "beskrivelse": "2♣ over 1NT er mindst invit og undersøger åbners hele majorfordeling.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-9"
+ },
+ {
+  "id": "ff-overfoeringer",
+  "system": "ff",
+  "titel": "Overføringer",
+  "gruppe": "Svar på 1NT",
+  "beskrivelse": "2♦/2♥ til major med superaccept, 2♠/3♣ til minor som flugt.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-10"
+ },
+ {
+  "id": "ff-gerber",
+  "system": "ff",
+  "titel": "Gerber",
+  "gruppe": "Svar på 1NT",
+  "beskrivelse": "4♣ spørger om esser efter sansåbning.",
+  "roller": [
+   "Spørger",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-11"
+ },
+ {
+  "id": "ff-2kl",
+  "system": "ff",
+  "titel": "2♣ stærkåbning og 2♦ waiting",
+  "gruppe": "Åbninger",
+  "beskrivelse": "20+ hp; 2♦ waiting og det andet negative.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-14"
+ },
+ {
+  "id": "ff-ogust",
+  "system": "ff",
+  "titel": "Ogust 2NT",
+  "gruppe": "Åbninger",
+  "beskrivelse": "Svarers 2NT over svag 2 spørger om styrke og tophonnører.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-13"
+ },
+ {
+  "id": "ff-dont",
+  "system": "ff",
+  "titel": "DONT mod 1NT",
+  "gruppe": "Konkurrence",
+  "beskrivelse": "D = én lang farve, 2♣/2♦ = farven + en højere, 2♥ = majorerne, 2NT = minorerne.",
+  "roller": [
+   "Indmelder",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-15a"
+ },
+ {
+  "id": "ff-michaels",
+  "system": "ff",
+  "titel": "Michaels cuebid og usædvanlig 2NT",
+  "gruppe": "Konkurrence",
+  "beskrivelse": "To-farvede indmeldinger, mindst 5-5, 8–15 hp eller 17+.",
+  "roller": [
+   "Indmelder",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-15b"
+ },
+ {
+  "id": "ff-genaabning",
+  "system": "ff",
+  "titel": "Genåbning i 4. hånd",
+  "gruppe": "Konkurrence",
+  "beskrivelse": "Lån ca. 3 hp af makker; genåbnings-1NT er 11–14.",
+  "roller": [
+   "Genåbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-15c"
+ },
+ {
+  "id": "ff-doblinger",
+  "system": "ff",
+  "titel": "Negativ dobling, støttedobling og redobling",
+  "gruppe": "Konkurrence",
+  "beskrivelse": "De fem doblingstyper og svarene på dem.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-17"
+ },
+ {
+  "id": "ff-kravpas",
+  "system": "ff",
+  "titel": "Kravpas og Loven",
+  "gruppe": "Konkurrence",
+  "beskrivelse": "Hvornår pas er krav, og hvor højt man melder efter antal trumfer.",
+  "roller": [
+   "Spiller",
+   "Makker"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-18"
+ },
+ {
+  "id": "ff-lebensohl",
+  "system": "ff",
+  "titel": "Lebensohl mod svag 2",
+  "gruppe": "Konkurrence",
+  "beskrivelse": "Simpel udgave: 2NT relæ til 3♣ med svage hænder (bilag C4).",
+  "roller": [
+   "Dobler",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-c4"
+ },
+ {
+  "id": "ff-1430",
+  "system": "ff",
+  "titel": "RKC 1430, trumfdame og konger",
+  "gruppe": "Slem",
+  "beskrivelse": "Nøglekort, spørgsmål efter trumfdamen og 5NT kongespørgsmål.",
+  "roller": [
+   "Spørger",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-7"
+ },
+ {
+  "id": "ff-cuebids",
+  "system": "ff",
+  "titel": "Cuebids",
+  "gruppe": "Slem",
+  "beskrivelse": "Enhver kontrol – es, konge, singleton eller renonce – billigst muligt, før RKC.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-7"
+ },
+ {
+  "id": "ff-flannery",
+  "system": "ff",
+  "titel": "Flannery",
+  "gruppe": "Forslag (bilag B)",
+  "beskrivelse": "2♦ (eller 2♥ i B4-pakken) viser 5 hjerter og 4 spar, 11–15 hp.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-b1"
+ },
+ {
+  "id": "ff-multi-2ru",
+  "system": "ff",
+  "titel": "Multi 2♦",
+  "gruppe": "Forslag (bilag B)",
+  "beskrivelse": "Svag 2 i en ukendt major; svarer melder pas-eller-ret.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-b2"
+ },
+ {
+  "id": "ff-muiderberg",
+  "system": "ff",
+  "titel": "Muiderberg 2♠",
+  "gruppe": "Forslag (bilag B)",
+  "beskrivelse": "5 spar og en 4+ minor, 5–10 hp.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-flemming.html#afsnit-b4"
+ }
 ]

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Konventionstræner</title>
-<meta name="description" content="Træn bridgekonventioner med tilfældige meldeforløb – som indmelder og som svarer – og slå op i vores aftaler og notater.">
+<meta name="description" content="Træn bridgekonventioner med tilfældige meldeforløb – som indmelder, åbner og svarer – og slå op i vores aftaler og notater.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;1,400&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap">
@@ -16,6 +16,13 @@
   .roles span{ font-family:var(--sans); font-size:.8rem; font-weight:700; padding:.1rem .5rem; border-radius:999px; background:var(--panel); color:var(--muted); }
   .tray{ display:flex; gap:.7rem; margin-top:1.4rem; }
   .tray .bc{ font-size:1.6rem; min-width:2.3em; height:2.9em; }
+  .systabs{ display:flex; gap:.5rem; flex-wrap:wrap; margin:1rem 0 .4rem; }
+  .systabs button{ font-family:var(--sans); font-weight:800; font-size:1rem; padding:.5rem 1rem; border-radius:999px; cursor:pointer;
+                   border:1px solid var(--line-strong); background:var(--paper); color:var(--ink); }
+  .systabs button[aria-selected="true"]{ background:var(--felt-deep); border-color:transparent; color:#fff; }
+  .syskort{ font-family:var(--sans); font-size:1rem; color:var(--muted); margin:.4rem 0 0; }
+  .syskort a{ font-weight:700; }
+  .tile .sys{ font-family:var(--sans); font-size:.8rem; font-weight:800; color:var(--gold); }
 </style>
 </head>
 <body>
@@ -26,9 +33,9 @@
 
 <div class="wrap">
   <section class="hero">
-    <p class="eyebrow">Karina &amp; Frank · bridgesystem</p>
+    <p class="eyebrow">Karina &amp; Frank · Flemming &amp; Frank</p>
     <h1>Træn konventionerne, til de sidder</h1>
-    <p class="deck">Vælg en konvention, og få 8 tilfældige meldeforløb. Nogle gange melder du ind eller åbner, andre gange svarer du makker. Under <a href="viden/">Viden</a> ligger vores aftaler og notater.</p>
+    <p class="deck">Vælg system og konvention, og få 8 tilfældige meldeforløb. Nogle gange melder du ind eller åbner, andre gange svarer du makker. Under <a href="viden/">Viden</a> ligger aftalerne og notaterne.</p>
     <div class="tray" aria-hidden="true">
       <span class="bc">1NT</span><span class="bc">2<span class="su su-c">♣</span></span><span class="bc pas">pas</span><span class="bc">?</span>
     </div>
@@ -36,14 +43,16 @@
 
   <section id="traen">
     <h2>Træn</h2>
-    <p class="small">En omgang er 8 hænder, trukket tilfældigt fra en pulje med facit regnet ud efter vores system.</p>
+    <p class="small">Systemerne har hver deres aftaler – også når konventionen hedder det samme, fx 2 over 1 og Bekkasin.</p>
+    <div class="systabs" role="tablist" aria-label="System" id="systabs"></div>
+    <p class="syskort" id="syskort"></p>
     <div id="konventioner"></div>
   </section>
 
   <section id="viden">
     <h2>Viden</h2>
     <div class="tiles" id="videnTiles"></div>
-    <p><a href="viden/">Alle aftaler og notater →</a></p>
+    <p><a href="viden/">Alle aftaler og notater – og forskellene mellem systemerne →</a></p>
   </section>
 </div>
 
@@ -53,26 +62,45 @@ function esc(s){ return String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;', '<':'&
 function suits(s){
   return esc(s).replace(/[♠♥♦♣]/g, c => `<span class="su ${c === '♥' || c === '♦' ? 'su-h' : 'su-s'}">${c}</span>`);
 }
+function stored(){ try { return localStorage.getItem('system'); } catch (e) { return null; } }
+function store(v){ try { localStorage.setItem('system', v); } catch (e) {} }
 
-fetch('data/konventioner.json').then(r => r.json()).then(list => {
+let SYSTEMS = [], CONVENTIONS = [];
+
+function renderSystem(id){
+  const sys = SYSTEMS.find(s => s.id === id) || SYSTEMS[0];
+  store(sys.id);
+  document.getElementById('systabs').innerHTML = SYSTEMS.map(s =>
+    `<button role="tab" data-id="${s.id}" aria-selected="${s.id === sys.id}">${esc(s.navn)}</button>`).join('');
+  document.querySelectorAll('#systabs button').forEach(b => b.addEventListener('click', () => {
+    history.replaceState(null, '', `?system=${b.dataset.id}#traen`);
+    renderSystem(b.dataset.id);
+  }));
+  document.getElementById('syskort').innerHTML = `${suits(sys.kort)} · <a href="${esc(sys.viden)}">Læs aftalerne</a>`;
+
   const groups = {};
-  list.forEach(k => (groups[k.gruppe] = groups[k.gruppe] || []).push(k));
+  CONVENTIONS.filter(k => k.system === sys.id).forEach(k => (groups[k.gruppe] = groups[k.gruppe] || []).push(k));
   document.getElementById('konventioner').innerHTML = Object.entries(groups).map(([g, ks]) => `
     <p class="grouphead">${esc(g)}</p>
     <div class="tiles">${ks.map(k => {
       const roles = `<div class="roles">${k.roller.map(r => `<span>${esc(r)}</span>`).join('')}</div>`;
       return k.status === 'klar'
         ? `<a class="tile" href="traener.html?k=${encodeURIComponent(k.id)}"><h3>${suits(k.titel)}</h3><p>${suits(k.beskrivelse)}</p>${roles}<div class="meta">Træn 8 hænder →</div></a>`
-        : `<div class="tile soon"><h3>${suits(k.titel)}</h3><p>${suits(k.beskrivelse)}</p>${roles}<div class="meta">Kommer</div></div>`;
+        : `<div class="tile soon"><h3>${suits(k.titel)}</h3><p>${suits(k.beskrivelse)}</p>${roles}<div class="meta">Kommer${k.viden ? ` · <a href="${esc(k.viden)}">Aftalen</a>` : ''}</div></div>`;
     }).join('')}</div>`).join('');
-}).catch(() => {
-  document.getElementById('konventioner').innerHTML = '<p class="small">Kunne ikke hente listen over konventioner. Åbn siden via GitHub Pages eller en lokal webserver.</p>';
-});
+}
 
-fetch('data/viden.json').then(r => r.json()).then(list => {
-  document.getElementById('videnTiles').innerHTML = list.map(d =>
-    `<a class="tile" href="${esc(d.href)}"><div class="grp">${esc(d.type)}</div><h3>${suits(d.titel)}</h3><p>${suits(d.beskrivelse)}</p></a>`).join('');
-}).catch(() => {});
+Promise.all(['data/systemer.json', 'data/konventioner.json', 'data/viden.json'].map(u => fetch(u).then(r => r.json())))
+  .then(([systems, conventions, docs]) => {
+    SYSTEMS = systems; CONVENTIONS = conventions;
+    renderSystem(new URLSearchParams(location.search).get('system') || stored() || systems[0].id);
+    const name = id => (systems.find(s => s.id === id) || {}).navn || '';
+    document.getElementById('videnTiles').innerHTML = docs.map(d =>
+      `<a class="tile" href="${esc(d.href)}"><div class="grp">${esc(d.type)} · <span class="sys">${esc(name(d.system))}</span></div><h3>${suits(d.titel)}</h3><p>${suits(d.beskrivelse)}</p></a>`).join('');
+  })
+  .catch(() => {
+    document.getElementById('konventioner').innerHTML = '<p class="small">Kunne ikke hente listen over konventioner. Åbn siden via GitHub Pages eller en lokal webserver.</p>';
+  });
 </script>
 </body>
 </html>

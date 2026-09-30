@@ -324,7 +324,7 @@ function renderDone(){
       <p>${score === Q.length ? 'Hele svarstrukturen sidder.' : 'Gennemgå forklaringerne igen, og prøv en gang til.'}</p>
       <div class="actions">
         <button class="btn primary" id="restartBtn">Ny omgang</button>
-        <a class="btn" href="./#traen">Vælg konvention</a>
+        <a class="btn" href="${backLink}">Vælg konvention</a>
       </div>
     </div>`;
   $('restartBtn').addEventListener('click', () => location.reload());
@@ -335,16 +335,18 @@ function fail(msg){
 }
 
 const id = new URLSearchParams(location.search).get('k') || 'multiforsvar';
-fetch('data/konventioner.json')
-  .then(r => r.json())
-  .then(list => {
+let backLink = './#traen';
+Promise.all(['data/konventioner.json', 'data/systemer.json'].map(u => fetch(u).then(r => r.json())))
+  .then(([list, systems]) => {
     const k = list.find(x => x.id === id);
     if (!k || k.status !== 'klar') throw new Error('ukendt');
+    const sys = systems.find(x => x.id === k.system);
+    backLink = `./?system=${k.system}#traen`;
     document.title = `${k.titel} — Konventionstræner`;
-    $('group').textContent = k.gruppe;
+    $('group').textContent = sys ? `${sys.navn} · ${k.gruppe}` : k.gruppe;
     $('title').textContent = k.titel;
     $('desc').textContent = k.beskrivelse;
-    if (k.viden) $('source').innerHTML = `Aftalerne står i <a href="${k.viden}">vores bridgesystem</a>.`;
+    if (k.viden) $('source').innerHTML = `Aftalerne står i <a href="${k.viden}">${sys ? sys.navn + 's' : 'vores'} system</a>.`;
     return fetch(`pools/${k.id}.json`).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
   })
   .then(pool => {
