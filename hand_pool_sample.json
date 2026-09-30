@@ -1,1621 +1,6043 @@
 {
-  "multi_2klor_54": [
-    {
-      "hand": {
-        "S": [
-          14,
-          13,
-          6,
-          3
-        ],
-        "H": [
-          13,
-          6,
-          5,
-          4,
-          2
-        ],
-        "D": [
-          10,
-          9,
-          6
-        ],
-        "C": [
-          14
-        ]
-      },
-      "hp": 14,
-      "sp": 17
-    },
-    {
-      "hand": {
-        "S": [
-          11,
-          6,
-          5,
-          2
-        ],
-        "H": [
-          14,
-          12,
-          11,
-          5,
-          2
-        ],
-        "D": [
-          10,
-          8,
-          5
-        ],
-        "C": [
-          14
-        ]
-      },
-      "hp": 12,
-      "sp": 15
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          13,
-          11,
-          7,
-          6
-        ],
-        "H": [
-          14,
-          12,
-          9,
-          8
-        ],
-        "D": [
-          7,
-          5
-        ],
-        "C": [
-          12,
-          9
-        ]
-      },
-      "hp": 16,
-      "sp": 18
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          13,
-          7,
-          4,
-          2
-        ],
-        "H": [
-          10,
-          6,
-          3,
-          2
-        ],
-        "D": [
-          13,
-          3
-        ],
-        "C": [
-          8,
-          7
-        ]
-      },
-      "hp": 10,
-      "sp": 12
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          9,
-          8,
-          3,
-          2
-        ],
-        "H": [
-          13,
-          11,
-          8,
-          7
-        ],
-        "D": [
-          14,
-          4,
-          2
-        ],
-        "C": [
-          7
-        ]
-      },
-      "hp": 12,
-      "sp": 15
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          11,
-          8,
-          7,
-          4
-        ],
-        "H": [
-          12,
-          10,
-          7,
-          2
-        ],
-        "D": [
-          12,
-          6
-        ],
-        "C": [
-          12,
-          10
-        ]
-      },
-      "hp": 11,
-      "sp": 13
-    },
-    {
-      "hand": {
-        "S": [
-          11,
-          6,
-          5,
-          3,
-          2
-        ],
-        "H": [
-          14,
-          12,
-          4,
-          2
-        ],
-        "D": [
-          13
-        ],
-        "C": [
-          9,
-          3,
-          2
-        ]
-      },
-      "hp": 10,
-      "sp": 13
-    },
-    {
-      "hand": {
-        "S": [
-          13,
-          10,
-          8,
-          7,
-          3
-        ],
-        "H": [
-          14,
-          9,
-          7,
-          3
-        ],
-        "D": [
-          10
-        ],
-        "C": [
-          14,
-          12,
-          7
-        ]
-      },
-      "hp": 13,
-      "sp": 16
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          9,
-          7,
-          3
-        ],
-        "H": [
-          13,
-          12,
-          10,
-          9,
-          2
-        ],
-        "D": [
-          8
-        ],
-        "C": [
-          12,
-          6,
-          5
-        ]
-      },
-      "hp": 11,
-      "sp": 14
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          11,
-          7,
-          5,
-          3
-        ],
-        "H": [
-          12,
-          11,
-          8,
-          4
-        ],
-        "D": [
-          9,
-          2
-        ],
-        "C": [
-          14,
-          5
-        ]
-      },
-      "hp": 12,
-      "sp": 14
-    },
-    {
-      "hand": {
-        "S": [
-          13,
-          12,
-          6,
-          5
-        ],
-        "H": [
-          14,
-          7,
-          4,
-          3,
-          2
-        ],
-        "D": [
-          13,
-          8
-        ],
-        "C": [
-          6,
-          2
-        ]
-      },
-      "hp": 12,
-      "sp": 14
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          11,
-          4,
-          2
-        ],
-        "H": [
-          13,
-          12,
-          11,
-          4,
-          3
-        ],
-        "D": [
-          12,
-          9,
-          5
-        ],
-        "C": [
-          6
-        ]
-      },
-      "hp": 13,
-      "sp": 16
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          11,
-          5,
-          2
-        ],
-        "H": [
-          14,
-          9,
-          8,
-          7,
-          5
-        ],
-        "D": [
-          12,
-          8,
-          4
-        ],
-        "C": [
-          7
-        ]
-      },
-      "hp": 11,
-      "sp": 14
-    },
-    {
-      "hand": {
-        "S": [
-          11,
-          10,
-          8,
-          5
-        ],
-        "H": [
-          14,
-          12,
-          8,
-          5,
-          2
-        ],
-        "D": [
-          12
-        ],
-        "C": [
-          14,
-          12,
-          8
-        ]
-      },
-      "hp": 15,
-      "sp": 18
-    },
-    {
-      "hand": {
-        "S": [
-          13,
-          12,
-          11,
-          9,
-          6
-        ],
-        "H": [
-          10,
-          9,
-          4,
-          3
-        ],
-        "D": [
-          12,
-          7,
-          6
-        ],
-        "C": [
-          13
-        ]
-      },
-      "hp": 11,
-      "sp": 14
-    },
-    {
-      "hand": {
-        "S": [
-          13,
-          12,
-          9,
-          6,
-          4
-        ],
-        "H": [
-          11,
-          10,
-          6,
-          2
-        ],
-        "D": [
-          14,
-          5
-        ],
-        "C": [
-          12,
-          8
-        ]
-      },
-      "hp": 12,
-      "sp": 14
-    },
-    {
-      "hand": {
-        "S": [
-          13,
-          11,
-          9,
-          8,
-          5
-        ],
-        "H": [
-          14,
-          13,
-          6,
-          5
-        ],
-        "D": [
-          10,
-          9,
-          8
-        ],
-        "C": [
-          5
-        ]
-      },
-      "hp": 11,
-      "sp": 14
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          11,
-          8,
-          7,
-          4
-        ],
-        "H": [
-          14,
-          10,
-          8,
-          4
-        ],
-        "D": [
-          11,
-          7
-        ],
-        "C": [
-          11,
-          7
-        ]
-      },
-      "hp": 11,
-      "sp": 13
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          13,
-          12,
-          4
-        ],
-        "H": [
-          12,
-          7,
-          6,
-          5,
-          3
-        ],
-        "D": [
-          6,
-          2
-        ],
-        "C": [
-          13,
-          7
-        ]
-      },
-      "hp": 14,
-      "sp": 16
-    },
-    {
-      "hand": {
-        "S": [
-          13,
-          10,
-          5,
-          3,
-          2
-        ],
-        "H": [
-          14,
-          12,
-          9,
-          5
-        ],
-        "D": [
-          14,
-          2
-        ],
-        "C": [
-          7,
-          6
-        ]
-      },
-      "hp": 13,
-      "sp": 15
-    }
-  ],
-  "multi_2klor_marmic": [
-    {
-      "hand": {
-        "S": [
-          14,
-          12,
-          5,
-          3
-        ],
-        "H": [
-          11,
-          9,
-          7,
-          3
-        ],
-        "D": [
-          14
-        ],
-        "C": [
-          13,
-          9,
-          4,
-          3
-        ]
-      },
-      "hp": 14,
-      "sp": 17
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          9,
-          7,
-          3
-        ],
-        "H": [
-          10,
-          5,
-          4,
-          2
-        ],
-        "D": [
-          13,
-          12,
-          8,
-          6
-        ],
-        "C": [
-          12
-        ]
-      },
-      "hp": 11,
-      "sp": 14
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          13,
-          12,
-          9
-        ],
-        "H": [
-          13,
-          9,
-          8,
-          5,
-          3
-        ],
-        "D": [
-          12,
-          4,
-          3,
-          2
-        ],
-        "C": []
-      },
-      "hp": 14,
-      "sp": 19
-    },
-    {
-      "hand": {
-        "S": [
-          12,
-          11,
-          9,
-          4,
-          2
-        ],
-        "H": [
-          11,
-          9,
-          4,
-          2
-        ],
-        "D": [
-          14,
-          13,
-          6,
-          3
-        ],
-        "C": []
-      },
-      "hp": 11,
-      "sp": 16
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          10,
-          8,
-          2
-        ],
-        "H": [
-          13,
-          7,
-          6,
-          5
-        ],
-        "D": [
-          14,
-          11,
-          10,
-          9
-        ],
-        "C": [
-          2
-        ]
-      },
-      "hp": 12,
-      "sp": 15
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          12,
-          6,
-          4,
-          3
-        ],
-        "H": [
-          12,
-          6,
-          5,
-          4
-        ],
-        "D": [
-          14,
-          10,
-          9,
-          3
-        ],
-        "C": []
-      },
-      "hp": 12,
-      "sp": 17
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          9,
-          6,
-          5
-        ],
-        "H": [
-          12,
-          6,
-          5,
-          2
-        ],
-        "D": [
-          13,
-          12,
-          8,
-          5
-        ],
-        "C": [
-          13
-        ]
-      },
-      "hp": 14,
-      "sp": 17
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          13,
-          12,
-          8
-        ],
-        "H": [
-          13,
-          7,
-          3,
-          2
-        ],
-        "D": [
-          11
-        ],
-        "C": [
-          9,
-          4,
-          3,
-          2
-        ]
-      },
-      "hp": 13,
-      "sp": 16
-    },
-    {
-      "hand": {
-        "S": [
-          13,
-          12,
-          11,
-          6
-        ],
-        "H": [
-          11,
-          10,
-          9,
-          3
-        ],
-        "D": [
-          12,
-          11,
-          5,
-          3
-        ],
-        "C": [
-          9
-        ]
-      },
-      "hp": 10,
-      "sp": 13
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          9,
-          5,
-          2
-        ],
-        "H": [
-          12,
-          7,
-          4,
-          3
-        ],
-        "D": [
-          3
-        ],
-        "C": [
-          14,
-          11,
-          8,
-          3
-        ]
-      },
-      "hp": 11,
-      "sp": 14
-    },
-    {
-      "hand": {
-        "S": [
-          13,
-          12,
-          11,
-          8,
-          7
-        ],
-        "H": [
-          14,
-          10,
-          5,
-          4
-        ],
-        "D": [],
-        "C": [
-          9,
-          6,
-          5,
-          2
-        ]
-      },
-      "hp": 10,
-      "sp": 15
-    },
-    {
-      "hand": {
-        "S": [
-          13,
-          9,
-          8,
-          4
-        ],
-        "H": [
-          13,
-          11,
-          9,
-          6
-        ],
-        "D": [
-          13
-        ],
-        "C": [
-          13,
-          12,
-          11,
-          9
-        ]
-      },
-      "hp": 16,
-      "sp": 19
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          7,
-          6,
-          5
-        ],
-        "H": [
-          14,
-          7,
-          6,
-          3
-        ],
-        "D": [
-          13,
-          8,
-          6,
-          4
-        ],
-        "C": [
-          9
-        ]
-      },
-      "hp": 11,
-      "sp": 14
-    },
-    {
-      "hand": {
-        "S": [
-          13,
-          9,
-          3,
-          2
-        ],
-        "H": [
-          14,
-          12,
-          11,
-          8,
-          4
-        ],
-        "D": [
-          14,
-          12,
-          10,
-          2
-        ],
-        "C": []
-      },
-      "hp": 16,
-      "sp": 21
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          6,
-          4,
-          2
-        ],
-        "H": [
-          14,
-          11,
-          10,
-          4
-        ],
-        "D": [],
-        "C": [
-          12,
-          10,
-          9,
-          6,
-          5
-        ]
-      },
-      "hp": 11,
-      "sp": 16
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          13,
-          12,
-          10,
-          7
-        ],
-        "H": [
-          12,
-          7,
-          6,
-          4
-        ],
-        "D": [
-          13,
-          9,
-          7,
-          6
-        ],
-        "C": []
-      },
-      "hp": 14,
-      "sp": 19
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          13,
-          11,
-          5
-        ],
-        "H": [
-          12,
-          11,
-          3,
-          2
-        ],
-        "D": [
-          14,
-          9,
-          7,
-          2
-        ],
-        "C": [
-          5
-        ]
-      },
-      "hp": 15,
-      "sp": 18
-    },
-    {
-      "hand": {
-        "S": [
-          13,
-          10,
-          7,
-          2
-        ],
-        "H": [
-          13,
-          12,
-          10,
-          4
-        ],
-        "D": [
-          12,
-          11,
-          8,
-          3
-        ],
-        "C": [
-          11
-        ]
-      },
-      "hp": 12,
-      "sp": 15
-    },
-    {
-      "hand": {
-        "S": [
-          13,
-          11,
-          10,
-          3
-        ],
-        "H": [
-          12,
-          8,
-          4,
-          3
-        ],
-        "D": [
-          4
-        ],
-        "C": [
-          14,
-          5,
-          4,
-          3
-        ]
-      },
-      "hp": 10,
-      "sp": 13
-    },
-    {
-      "hand": {
-        "S": [
-          13,
-          9,
-          5,
-          4
-        ],
-        "H": [
-          13,
-          9,
-          8,
-          7
-        ],
-        "D": [
-          5
-        ],
-        "C": [
-          14,
-          10,
-          8,
-          7
-        ]
-      },
-      "hp": 10,
-      "sp": 13
-    }
-  ],
-  "dobling_2klor_relae": [
-    {
-      "hand": {
-        "S": [
-          14,
-          5,
-          4,
-          2
-        ],
-        "H": [
-          3
-        ],
-        "D": [
-          14,
-          11,
-          8,
-          3
-        ],
-        "C": [
-          8,
-          7,
-          5,
-          4
-        ]
-      },
-      "hp": 9,
-      "sp": 12
-    },
-    {
-      "hand": {
-        "S": [
-          11,
-          10,
-          2
-        ],
-        "H": [
-          12,
-          9,
-          8
-        ],
-        "D": [
-          10,
-          9,
-          4,
-          3
-        ],
-        "C": [
-          14,
-          6,
-          4
-        ]
-      },
-      "hp": 7,
-      "sp": 7
-    },
-    {
-      "hand": {
-        "S": [
-          12,
-          6,
-          5
-        ],
-        "H": [
-          9,
-          8,
-          7
-        ],
-        "D": [
-          11,
-          4,
-          2
-        ],
-        "C": [
-          11,
-          9,
-          8,
-          7
-        ]
-      },
-      "hp": 4,
-      "sp": 4
-    },
-    {
-      "hand": {
-        "S": [
-          11,
-          9,
-          4,
-          2
-        ],
-        "H": [
-          9,
-          8
-        ],
-        "D": [
-          13,
-          9,
-          7
-        ],
-        "C": [
-          12,
-          9,
-          8,
-          5
-        ]
-      },
-      "hp": 6,
-      "sp": 7
-    },
-    {
-      "hand": {
-        "S": [
-          12,
-          7,
-          2
-        ],
-        "H": [
-          12,
-          5
-        ],
-        "D": [
-          12,
-          11,
-          9,
-          3
-        ],
-        "C": [
-          11,
-          9,
-          7,
-          3
-        ]
-      },
-      "hp": 8,
-      "sp": 9
-    },
-    {
-      "hand": {
-        "S": [
-          12,
-          5
-        ],
-        "H": [
-          12,
-          7,
-          2
-        ],
-        "D": [
-          13,
-          12,
-          8,
-          6
-        ],
-        "C": [
-          9,
-          5,
-          4,
-          2
-        ]
-      },
-      "hp": 9,
-      "sp": 10
-    },
-    {
-      "hand": {
-        "S": [
-          13,
-          8,
-          4,
-          2
-        ],
-        "H": [
-          6,
-          5,
-          4,
-          3
-        ],
-        "D": [
-          4
-        ],
-        "C": [
-          14,
-          10,
-          9,
-          7
-        ]
-      },
-      "hp": 7,
-      "sp": 10
-    },
-    {
-      "hand": {
-        "S": [
-          13,
-          12,
-          5
-        ],
-        "H": [
-          9,
-          7,
-          6,
-          3
-        ],
-        "D": [
-          13,
-          10,
-          9,
-          5
-        ],
-        "C": [
-          10,
-          6
-        ]
-      },
-      "hp": 8,
-      "sp": 9
-    },
-    {
-      "hand": {
-        "S": [
-          13,
-          10,
-          6,
-          2
-        ],
-        "H": [
-          12,
-          10,
-          9,
-          3
-        ],
-        "D": [
-          8,
-          2
-        ],
-        "C": [
-          13,
-          8,
-          6
-        ]
-      },
-      "hp": 8,
-      "sp": 9
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          10,
-          4,
-          3
-        ],
-        "H": [
-          13,
-          8
-        ],
-        "D": [
-          11,
-          6,
-          4
-        ],
-        "C": [
-          9,
-          6,
-          4,
-          3
-        ]
-      },
-      "hp": 8,
-      "sp": 9
-    },
-    {
-      "hand": {
-        "S": [
-          12,
-          6,
-          4,
-          3
-        ],
-        "H": [
-          13,
-          11,
-          6,
-          3
-        ],
-        "D": [
-          8
-        ],
-        "C": [
-          12,
-          8,
-          7,
-          2
-        ]
-      },
-      "hp": 8,
-      "sp": 11
-    },
-    {
-      "hand": {
-        "S": [
-          12,
-          6,
-          4,
-          2
-        ],
-        "H": [
-          14,
-          12,
-          9,
-          5
-        ],
-        "D": [
-          4,
-          3
-        ],
-        "C": [
-          10,
-          7,
-          3
-        ]
-      },
-      "hp": 8,
-      "sp": 9
-    },
-    {
-      "hand": {
-        "S": [
-          8,
-          6,
-          4,
-          2
-        ],
-        "H": [
-          7
-        ],
-        "D": [
-          10,
-          7,
-          5,
-          3
-        ],
-        "C": [
-          12,
-          11,
-          9,
-          4
-        ]
-      },
-      "hp": 3,
-      "sp": 6
-    },
-    {
-      "hand": {
-        "S": [
-          8,
-          7,
-          4,
-          3
-        ],
-        "H": [
-          14,
-          8,
-          6,
-          4
-        ],
-        "D": [
-          12,
-          6,
-          4,
-          3
-        ],
-        "C": [
-          3
-        ]
-      },
-      "hp": 6,
-      "sp": 9
-    },
-    {
-      "hand": {
-        "S": [
-          13,
-          8,
-          5
-        ],
-        "H": [
-          14,
-          11,
-          3
-        ],
-        "D": [
-          10,
-          6,
-          4,
-          3
-        ],
-        "C": [
-          9,
-          8,
-          5
-        ]
-      },
-      "hp": 8,
-      "sp": 8
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          10,
-          7
-        ],
-        "H": [
-          11,
-          8,
-          6,
-          3
-        ],
-        "D": [
-          13,
-          6,
-          2
-        ],
-        "C": [
-          9,
-          6,
-          2
-        ]
-      },
-      "hp": 8,
-      "sp": 8
-    },
-    {
-      "hand": {
-        "S": [
-          13,
-          12,
-          4,
-          2
-        ],
-        "H": [
-          6,
-          3
-        ],
-        "D": [
-          12,
-          10,
-          8,
-          7
-        ],
-        "C": [
-          9,
-          6,
-          3
-        ]
-      },
-      "hp": 7,
-      "sp": 8
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          12,
-          9,
-          2
-        ],
-        "H": [
-          5,
-          3
-        ],
-        "D": [
-          11,
-          6,
-          3
-        ],
-        "C": [
-          12,
-          5,
-          4,
-          3
-        ]
-      },
-      "hp": 9,
-      "sp": 10
-    },
-    {
-      "hand": {
-        "S": [
-          14,
-          13,
-          8,
-          4
-        ],
-        "H": [
-          4,
-          2
-        ],
-        "D": [
-          12,
-          10,
-          4,
-          2
-        ],
-        "C": [
-          8,
-          7,
-          2
-        ]
-      },
-      "hp": 9,
-      "sp": 10
-    },
-    {
-      "hand": {
-        "S": [
-          13,
-          8,
-          7,
-          2
-        ],
-        "H": [
-          12,
-          7,
-          5
-        ],
-        "D": [
-          13,
-          8,
-          6
-        ],
-        "C": [
-          11,
-          8,
-          7
-        ]
-      },
-      "hp": 9,
-      "sp": 9
-    }
-  ]
+ "situations": {
+  "2kl": {
+   "auction": [
+    "1NT",
+    "2♣",
+    "2NT"
+   ],
+   "calls": [
+    "3♣",
+    "3♦",
+    "3♥",
+    "3♠",
+    "3NT",
+    "4♣",
+    "4♦"
+   ],
+   "bonus": {
+    "q": "Hvad viste din 2♣-indmelding?",
+    "correct": "Begge majorer, typisk 5-4 eller god marmic",
+    "options": [
+     "Begge majorer, typisk 5-4 eller god marmic",
+     "Énfarvet major",
+     "Begge minorer, 5/4+"
+    ],
+    "why": "2♣ viser begge majorer, typisk 5-4 eller god marmic — 10–16 hp, fordeling kan kompensere."
+   }
+  },
+  "2ru": {
+   "auction": [
+    "1NT",
+    "2♦",
+    "2NT"
+   ],
+   "calls": [
+    "3♣",
+    "3♦",
+    "3♥",
+    "3♠"
+   ],
+   "bonus": {
+    "q": "Hvad viste din 2♦-indmelding?",
+    "correct": "Énfarvet major",
+    "options": [
+     "Énfarvet major",
+     "Naturlig ruderfarve",
+     "Begge majorer, typisk 5-4"
+    ],
+    "why": "2♦ viser en énfarvet major — 10–16 hp, fordeling kan kompensere."
+   }
+  },
+  "2hj": {
+   "auction": [
+    "1NT",
+    "2♥",
+    "2NT"
+   ],
+   "calls": [
+    "3♣",
+    "3♦",
+    "3♥",
+    "3♠"
+   ],
+   "bonus": {
+    "q": "Hvad viste din 2♥-indmelding?",
+    "correct": "Hjerter + minor, 5-4",
+    "options": [
+     "Hjerter + minor, 5-4",
+     "Énfarvet hjerter",
+     "Begge majorer, typisk 5-4"
+    ],
+    "why": "2♥ viser hjerter + en minor, 5-4 — 10–16 hp, fordeling kan kompensere."
+   }
+  }
+ },
+ "hands": [
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     6,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     6,
+     4
+    ],
+    "D": [
+     9,
+     3,
+     2
+    ],
+    "C": [
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "11 hp er minimum (10–13) med 5 spar og 4 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     11,
+     9,
+     8,
+     6,
+     5
+    ],
+    "H": [
+     13,
+     8,
+     3,
+     2
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     13,
+     8,
+     7
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "11 hp er minimum (10–13) med 5 spar og 4 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     8,
+     4
+    ],
+    "D": [
+     8,
+     7,
+     6
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "10 hp er minimum (10–13) med 4 spar og 5 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     6,
+     4
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     14,
+     8,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "13 hp er minimum (10–13) med 4 spar og 5 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     9,
+     7
+    ],
+    "H": [
+     8,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     14,
+     10,
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "13 hp er minimum (10–13) med 5 spar og 4 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     7
+    ],
+    "H": [
+     12,
+     11,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     12,
+     9,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "11 hp er minimum (10–13) med 4 spar og 5 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10,
+     8,
+     5
+    ],
+    "H": [
+     14,
+     8,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     5
+    ],
+    "C": [
+     10,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "10 hp er minimum (10–13) med 5 spar og 4 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8,
+     3
+    ],
+    "H": [
+     13,
+     11,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     11,
+     8,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "10 hp er minimum (10–13) med 4 spar og 5 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     11,
+     10,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     7,
+     6,
+     4
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     13,
+     8,
+     7
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "10 hp er minimum (10–13) med 4 spar og 5 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     7,
+     3
+    ],
+    "H": [
+     9,
+     7,
+     5,
+     2
+    ],
+    "D": [
+     9,
+     4
+    ],
+    "C": [
+     14,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "10 hp er minimum (10–13) med 5 spar og 4 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     8,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     10,
+     5
+    ],
+    "D": [
+     14,
+     10,
+     3
+    ],
+    "C": [
+     6
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "10 hp er minimum (10–13) med 4 spar og 5 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     6,
+     3
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     11,
+     9,
+     6
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "10 hp er minimum (10–13) med 5 spar og 4 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     8,
+     7
+    ],
+    "H": [
+     10,
+     9,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     8
+    ],
+    "C": [
+     11,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "11 hp er minimum (10–13) med 5 spar og 4 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     9,
+     8,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     5
+    ],
+    "D": [
+     12,
+     9
+    ],
+    "C": [
+     13,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "10 hp er minimum (10–13) med 5 spar og 4 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     4
+    ],
+    "H": [
+     12,
+     10,
+     9,
+     8,
+     6
+    ],
+    "D": [
+     6,
+     3
+    ],
+    "C": [
+     13,
+     8
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "10 hp er minimum (10–13) med 4 spar og 5 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     12,
+     11,
+     8,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     5,
+     4
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     12,
+     8,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "11 hp er minimum (10–13) med 4 spar og 5 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     7,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     8,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     11,
+     4
+    ],
+    "C": [
+     14,
+     11
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "12 hp er minimum (10–13) med 4 spar og 5 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     10,
+     6,
+     4
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     9,
+     8,
+     7
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "10 hp er minimum (10–13) med 5 spar og 4 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     8,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     6,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     11
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "12 hp er minimum (10–13) med 4 spar og 5 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     7,
+     3
+    ],
+    "D": [
+     8,
+     3
+    ],
+    "C": [
+     14,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "10 hp er minimum (10–13) med 4 spar og 5 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     8,
+     5
+    ],
+    "H": [
+     10,
+     8,
+     7,
+     2
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     13,
+     10,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "13 hp er minimum (10–13) med 5 spar og 4 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     9,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     2
+    ],
+    "D": [
+     7,
+     6,
+     5
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "10 hp er minimum (10–13) med 5 spar og 4 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     8
+    ],
+    "D": [
+     12,
+     5
+    ],
+    "C": [
+     8,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "11 hp er minimum (10–13) med 5 spar og 4 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     6,
+     2
+    ],
+    "H": [
+     9,
+     7,
+     4,
+     3
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     13,
+     8,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "12 hp er minimum (10–13) med 5 spar og 4 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     5
+    ],
+    "H": [
+     13,
+     10,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     12,
+     8,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "13 hp er minimum (10–13) med 4 spar og 5 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9,
+     6,
+     5
+    ],
+    "H": [
+     13,
+     8,
+     7,
+     5
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     14,
+     11,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "11 hp er minimum (10–13) med 5 spar og 4 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     5,
+     4
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     7,
+     5,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "11 hp er minimum (10–13) med 4 spar og 5 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     8,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     8
+    ],
+    "C": [
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "10 hp er minimum (10–13) med 4 spar og 5 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     9,
+     7,
+     6,
+     2
+    ],
+    "H": [
+     11,
+     8,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     7
+    ],
+    "C": [
+     12,
+     8
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "10 hp er minimum (10–13) med 5 spar og 4 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     12,
+     8,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     10,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     8,
+     2
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "12 hp er minimum (10–13) med 4 spar og 5 hjerter. 3♣ viser minimum med 5-4 eller 4-5 — makker kan derefter søge 5-farven med 3♦."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     12,
+     8,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     8
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     14,
+     11,
+     8
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "15 hp er maximum (14–16) med 5 spar og 4 hjerter. 3♠ viser maximum med 5-4."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     9,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     9
+    ],
+    "D": [
+     11,
+     9
+    ],
+    "C": [
+     9,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "15 hp er maximum (14–16) med 5 spar og 4 hjerter. 3♠ viser maximum med 5-4."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     7
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     4
+    ],
+    "C": [
+     6,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "15 hp er maximum (14–16) med 4 spar og 5 hjerter. 3♥ viser maximum med 4-5."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     4
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     5,
+     2
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     13,
+     11,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♥",
+   "why": "15 hp er maximum (14–16) med 4 spar og 5 hjerter. 3♥ viser maximum med 4-5."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     12,
+     10,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     8
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     14,
+     12,
+     11
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "14 hp er maximum (14–16) med 5 spar og 4 hjerter. 3♠ viser maximum med 5-4."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     6
+    ],
+    "H": [
+     10,
+     8,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     11,
+     3
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "14 hp er maximum (14–16) med 4 spar og 5 hjerter. 3♥ viser maximum med 4-5."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     10,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     5,
+     4
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     13,
+     10,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♥",
+   "why": "15 hp er maximum (14–16) med 4 spar og 5 hjerter. 3♥ viser maximum med 4-5."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     8,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     10
+    ],
+    "C": [
+     10,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "14 hp er maximum (14–16) med 5 spar og 4 hjerter. 3♠ viser maximum med 5-4."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     5
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     6
+    ],
+    "C": [
+     10
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "14 hp er maximum (14–16) med 4 spar og 5 hjerter. 3♥ viser maximum med 4-5."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9,
+     3
+    ],
+    "H": [
+     14,
+     9,
+     7,
+     6,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     10
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "3♥",
+   "why": "16 hp er maximum (14–16) med 4 spar og 5 hjerter. 3♥ viser maximum med 4-5."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     8,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     8
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "15 hp er maximum (14–16) med 5 spar og 4 hjerter. 3♠ viser maximum med 5-4."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     6
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     8,
+     5
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     13,
+     5,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "14 hp er maximum (14–16) med 4 spar og 5 hjerter. 3♥ viser maximum med 4-5."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     12,
+     11,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     5
+    ],
+    "D": [
+     14,
+     11,
+     6
+    ],
+    "C": [
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "14 hp er maximum (14–16) med 5 spar og 4 hjerter. 3♠ viser maximum med 5-4."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     6,
+     2
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     7
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     14,
+     7,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "15 hp er maximum (14–16) med 5 spar og 4 hjerter. 3♠ viser maximum med 5-4."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     7,
+     2
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     13,
+     11,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♥",
+   "why": "15 hp er maximum (14–16) med 4 spar og 5 hjerter. 3♥ viser maximum med 4-5."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     7,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     2
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "14 hp er maximum (14–16) med 5 spar og 4 hjerter. 3♠ viser maximum med 5-4."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     11,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     14,
+     13,
+     11
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "3♥",
+   "why": "16 hp er maximum (14–16) med 4 spar og 5 hjerter. 3♥ viser maximum med 4-5."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     6,
+     5
+    ],
+    "H": [
+     11,
+     10,
+     9,
+     4
+    ],
+    "D": [
+     14,
+     6,
+     5
+    ],
+    "C": [
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "14 hp er maximum (14–16) med 5 spar og 4 hjerter. 3♠ viser maximum med 5-4."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     4
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     4,
+     3
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     12,
+     6,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "14 hp er maximum (14–16) med 4 spar og 5 hjerter. 3♥ viser maximum med 4-5."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     5
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     8,
+     4
+    ],
+    "D": [
+     13,
+     4
+    ],
+    "C": [
+     8,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♥",
+   "why": "14 hp er maximum (14–16) med 4 spar og 5 hjerter. 3♥ viser maximum med 4-5."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     6,
+     3
+    ],
+    "H": [
+     13,
+     8,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     10
+    ],
+    "C": [
+     10,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "16 hp er maximum (14–16) med 5 spar og 4 hjerter. 3♠ viser maximum med 5-4."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     8,
+     7,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     8,
+     5
+    ],
+    "D": [
+     14,
+     5,
+     3
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "14 hp er maximum (14–16) med 4 spar og 5 hjerter. 3♥ viser maximum med 4-5."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     10,
+     3
+    ],
+    "D": [
+     14,
+     5
+    ],
+    "C": [
+     4,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "15 hp er maximum (14–16) med 4 spar og 5 hjerter. 3♥ viser maximum med 4-5."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     4,
+     2
+    ],
+    "H": [
+     11,
+     10,
+     7,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     2
+    ],
+    "C": [
+     13,
+     10
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♥",
+   "why": "14 hp er maximum (14–16) med 4 spar og 5 hjerter. 3♥ viser maximum med 4-5."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     10,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     10,
+     8
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "3♥",
+   "why": "16 hp er maximum (14–16) med 4 spar og 5 hjerter. 3♥ viser maximum med 4-5."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     4
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♥",
+   "why": "15 hp er maximum (14–16) med 4 spar og 5 hjerter. 3♥ viser maximum med 4-5."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     12,
+     9,
+     8,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     11
+    ],
+    "C": [
+     6,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "14 hp er maximum (14–16) med 5 spar og 4 hjerter. 3♠ viser maximum med 5-4."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     9
+    ],
+    "D": [
+     11,
+     10,
+     6
+    ],
+    "C": [
+     7
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♥",
+   "why": "15 hp er maximum (14–16) med 4 spar og 5 hjerter. 3♥ viser maximum med 4-5."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8,
+     7,
+     3
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     7
+    ],
+    "D": [
+     14,
+     12,
+     10
+    ],
+    "C": [
+     9
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "14 hp er maximum (14–16) med 5 spar og 4 hjerter. 3♠ viser maximum med 5-4."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     5,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     8,
+     7
+    ],
+    "D": [
+     12,
+     10,
+     2
+    ],
+    "C": [
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "14 hp er maximum (14–16) med 5 spar og 4 hjerter. 3♠ viser maximum med 5-4."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     10,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     7,
+     5,
+     3
+    ],
+    "D": [],
+    "C": [
+     14,
+     12,
+     10,
+     8,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "4♦",
+   "why": "Du har renonce i ruder. Efter 2♣ – 2NT viser 4♦ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     10,
+     6,
+     2
+    ],
+    "H": [
+     13,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     12,
+     10,
+     5,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "13 hp er minimum (10–13), og majorerne er lige lange (4-4). 3♦ viser minimum med 4-4."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     12,
+     10,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     5,
+     3,
+     2
+    ],
+    "D": [],
+    "C": [
+     11,
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "4♦",
+   "why": "Du har renonce i ruder. Efter 2♣ – 2NT viser 4♦ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     9,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     4
+    ],
+    "D": [
+     11,
+     8,
+     7,
+     6,
+     5
+    ],
+    "C": []
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "4♣",
+   "why": "Du har renonce i klør. Efter 2♣ – 2NT viser 4♣ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     12,
+     8,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     3
+    ],
+    "D": [
+     11,
+     9,
+     8,
+     7
+    ],
+    "C": [
+     6
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♦",
+   "why": "10 hp er minimum (10–13), og majorerne er lige lange (4-4). 3♦ viser minimum med 4-4."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9,
+     4
+    ],
+    "H": [
+     13,
+     9,
+     7,
+     6
+    ],
+    "D": [
+     13,
+     10,
+     5,
+     3,
+     2
+    ],
+    "C": []
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "4♣",
+   "why": "Du har renonce i klør. Efter 2♣ – 2NT viser 4♣ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     9,
+     6,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     7,
+     4
+    ],
+    "C": []
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "4♣",
+   "why": "Du har renonce i klør. Efter 2♣ – 2NT viser 4♣ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     3,
+     2
+    ],
+    "D": [],
+    "C": [
+     13,
+     12,
+     9,
+     8
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "4♦",
+   "why": "Du har renonce i ruder. Efter 2♣ – 2NT viser 4♦ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     9,
+     8,
+     6
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     6
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     11,
+     8,
+     6,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "12 hp er minimum (10–13), og majorerne er lige lange (4-4). 3♦ viser minimum med 4-4."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     7,
+     3
+    ],
+    "H": [
+     13,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     7,
+     6,
+     2
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "4♣",
+   "why": "Du har renonce i klør. Efter 2♣ – 2NT viser 4♣ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     9,
+     6,
+     3
+    ],
+    "H": [
+     11,
+     7,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     7,
+     4
+    ],
+    "C": []
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "4♣",
+   "why": "Du har renonce i klør. Efter 2♣ – 2NT viser 4♣ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     12,
+     8,
+     7,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     11,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     5,
+     3
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "4♣",
+   "why": "Du har renonce i klør. Efter 2♣ – 2NT viser 4♣ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     10,
+     6,
+     5
+    ],
+    "H": [
+     12,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     14,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♦",
+   "why": "11 hp er minimum (10–13), og majorerne er lige lange (4-4). 3♦ viser minimum med 4-4."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     12,
+     10,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     9
+    ],
+    "D": [
+     7
+    ],
+    "C": [
+     14,
+     8,
+     7,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "13 hp er minimum (10–13), og majorerne er lige lange (4-4). 3♦ viser minimum med 4-4."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     10,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     12,
+     11,
+     4,
+     3
+    ],
+    "D": [],
+    "C": [
+     14,
+     13,
+     12,
+     11,
+     10
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "4♦",
+   "why": "Du har renonce i ruder. Efter 2♣ – 2NT viser 4♦ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     8,
+     7,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     8,
+     2
+    ],
+    "C": [
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "13 hp er minimum (10–13), og majorerne er lige lange (4-4). 3♦ viser minimum med 4-4."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     8,
+     4,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     8,
+     7,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     10
+    ],
+    "C": []
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "4♣",
+   "why": "Du har renonce i klør. Efter 2♣ – 2NT viser 4♣ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     12,
+     9,
+     8,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     6,
+     4
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     9
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♦",
+   "why": "11 hp er minimum (10–13), og majorerne er lige lange (4-4). 3♦ viser minimum med 4-4."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     5,
+     4
+    ],
+    "H": [
+     13,
+     9,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     7,
+     4,
+     3,
+     2
+    ],
+    "C": []
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "4♣",
+   "why": "Du har renonce i klør. Efter 2♣ – 2NT viser 4♣ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     3
+    ],
+    "H": [
+     13,
+     11,
+     6,
+     4
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     11,
+     10,
+     7,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♦",
+   "why": "10 hp er minimum (10–13), og majorerne er lige lange (4-4). 3♦ viser minimum med 4-4."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     3,
+     2
+    ],
+    "D": [],
+    "C": [
+     14,
+     12,
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "4♦",
+   "why": "Du har renonce i ruder. Efter 2♣ – 2NT viser 4♦ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     10,
+     6,
+     3
+    ],
+    "H": [
+     13,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     14,
+     11,
+     8,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "14 hp er maximum (14–16), og majorerne er lige lange (4-4). 3NT viser maximum med lige længde."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     4,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     9
+    ],
+    "D": [],
+    "C": [
+     13,
+     8,
+     7,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♦",
+   "why": "Du har renonce i ruder. Efter 2♣ – 2NT viser 4♦ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     12,
+     10,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     4
+    ],
+    "C": [
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "14 hp er maximum (14–16), og majorerne er lige lange (4-4). 3NT viser maximum med lige længde."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     8
+    ],
+    "H": [
+     10,
+     9,
+     7,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     6,
+     4
+    ],
+    "C": [
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "15 hp er maximum (14–16), og majorerne er lige lange (4-4). 3NT viser maximum med lige længde."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     6,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     9
+    ],
+    "D": [
+     7
+    ],
+    "C": [
+     14,
+     12,
+     4,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "14 hp er maximum (14–16), og majorerne er lige lange (4-4). 3NT viser maximum med lige længde."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     9,
+     7
+    ],
+    "H": [
+     12,
+     10,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     8,
+     4,
+     3
+    ],
+    "C": []
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♣",
+   "why": "Du har renonce i klør. Efter 2♣ – 2NT viser 4♣ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     8,
+     5
+    ],
+    "H": [
+     11,
+     6,
+     5,
+     2
+    ],
+    "D": [],
+    "C": [
+     14,
+     13,
+     11,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 21,
+   "correct": "4♦",
+   "why": "Du har renonce i ruder. Efter 2♣ – 2NT viser 4♦ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     12,
+     10,
+     6,
+     5
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     6
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     14,
+     10,
+     7,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "15 hp er maximum (14–16), og majorerne er lige lange (4-4). 3NT viser maximum med lige længde."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     4,
+     3
+    ],
+    "H": [
+     11,
+     9,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     9
+    ],
+    "C": []
+   },
+   "hp": 16,
+   "sp": 21,
+   "correct": "4♣",
+   "why": "Du har renonce i klør. Efter 2♣ – 2NT viser 4♣ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     2
+    ],
+    "H": [
+     13,
+     9,
+     8,
+     6,
+     3
+    ],
+    "D": [],
+    "C": [
+     14,
+     13,
+     12,
+     10
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "4♦",
+   "why": "Du har renonce i ruder. Efter 2♣ – 2NT viser 4♦ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     10,
+     7,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     7,
+     3
+    ],
+    "C": []
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♣",
+   "why": "Du har renonce i klør. Efter 2♣ – 2NT viser 4♣ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     6
+    ],
+    "D": [
+     14,
+     12,
+     7,
+     6,
+     4
+    ],
+    "C": []
+   },
+   "hp": 16,
+   "sp": 21,
+   "correct": "4♣",
+   "why": "Du har renonce i klør. Efter 2♣ – 2NT viser 4♣ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     10,
+     8,
+     7
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     6,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     7,
+     2
+    ],
+    "C": []
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "4♣",
+   "why": "Du har renonce i klør. Efter 2♣ – 2NT viser 4♣ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     5
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     9,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "14 hp er maximum (14–16), og majorerne er lige lange (4-4). 3NT viser maximum med lige længde."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     8,
+     3
+    ],
+    "C": []
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "4♣",
+   "why": "Du har renonce i klør. Efter 2♣ – 2NT viser 4♣ renonce i farven."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     6
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     5
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     11,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "14 hp er maximum (14–16), og majorerne er lige lange (4-4). 3NT viser maximum med lige længde."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     3
+    ],
+    "H": [
+     14,
+     9,
+     7,
+     5
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "14 hp er maximum (14–16), og majorerne er lige lange (4-4). 3NT viser maximum med lige længde."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     6
+    ],
+    "H": [
+     11,
+     10,
+     8,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     9
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "3NT",
+   "why": "16 hp er maximum (14–16), og majorerne er lige lange (4-4). 3NT viser maximum med lige længde."
+  },
+  {
+   "situation": "2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     10,
+     8,
+     5
+    ],
+    "D": [
+     13,
+     11,
+     9,
+     8,
+     4
+    ],
+    "C": []
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "4♣",
+   "why": "Du har renonce i klør. Efter 2♣ – 2NT viser 4♣ renonce i farven."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     9,
+     8,
+     6,
+     2
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     10,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "11 hp er minimum (10–13), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     6,
+     5
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "12 hp er minimum (10–13), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     12,
+     10,
+     7
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     8,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     12,
+     11
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "12 hp er minimum (10–13), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     9,
+     7,
+     5
+    ],
+    "H": [
+     13,
+     11
+    ],
+    "D": [
+     11,
+     6,
+     2
+    ],
+    "C": [
+     9,
+     8
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "10 hp er minimum (10–13), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     6,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     12,
+     9,
+     8
+    ],
+    "C": [
+     8,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "3♦",
+   "why": "10 hp er minimum (10–13), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     8,
+     7,
+     4
+    ],
+    "D": [
+     10,
+     8,
+     7
+    ],
+    "C": [
+     8,
+     5,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "11 hp er minimum (10–13), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     10,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     9,
+     8
+    ],
+    "D": [
+     14,
+     7,
+     4
+    ],
+    "C": []
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "3♦",
+   "why": "13 hp er minimum (10–13), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     10,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     7,
+     4
+    ],
+    "C": [
+     9,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "12 hp er minimum (10–13), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     7,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     10,
+     9,
+     2
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "3♣",
+   "why": "12 hp er minimum (10–13), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     13,
+     9
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     6,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     8,
+     6
+    ],
+    "C": [
+     10
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "3♣",
+   "why": "13 hp er minimum (10–13), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     13,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     10,
+     7
+    ],
+    "C": [
+     8,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "10 hp er minimum (10–13), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     9,
+     7,
+     6,
+     2
+    ],
+    "H": [
+     6,
+     2
+    ],
+    "D": [
+     11,
+     10,
+     3
+    ],
+    "C": [
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "3♦",
+   "why": "10 hp er minimum (10–13), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9,
+     8,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     6,
+     4
+    ],
+    "D": [
+     14,
+     7
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "11 hp er minimum (10–13), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     7,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     10,
+     3
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     14,
+     6,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "3♦",
+   "why": "13 hp er minimum (10–13), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     10,
+     8,
+     6,
+     4
+    ],
+    "D": [
+     10,
+     6
+    ],
+    "C": [
+     13,
+     3,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "10 hp er minimum (10–13), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10,
+     9,
+     5,
+     3,
+     2
+    ],
+    "H": [],
+    "D": [
+     14,
+     6,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "10 hp er minimum (10–13), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     13,
+     9,
+     8,
+     6,
+     3,
+     2
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     13,
+     12,
+     7
+    ],
+    "C": [
+     13,
+     10,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♦",
+   "why": "11 hp er minimum (10–13), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     14,
+     10,
+     8,
+     7,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     10,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "11 hp er minimum (10–13), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     8,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     5
+    ],
+    "D": [
+     12,
+     6,
+     5
+    ],
+    "C": []
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "11 hp er minimum (10–13), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8,
+     7,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     10
+    ],
+    "D": [
+     10,
+     7
+    ],
+    "C": [
+     13,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♦",
+   "why": "11 hp er minimum (10–13), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10,
+     8,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     10,
+     9
+    ],
+    "D": [
+     13,
+     11,
+     9
+    ],
+    "C": []
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "11 hp er minimum (10–13), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     9,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     8,
+     7
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     12,
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "3♦",
+   "why": "13 hp er minimum (10–13), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     8,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     7,
+     6,
+     4
+    ],
+    "D": [
+     13,
+     6,
+     4
+    ],
+    "C": []
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "10 hp er minimum (10–13), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     6
+    ],
+    "H": [
+     12,
+     10,
+     8,
+     7,
+     6,
+     5
+    ],
+    "D": [
+     12,
+     4
+    ],
+    "C": [
+     4,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "11 hp er minimum (10–13), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     13,
+     11,
+     7,
+     6,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     3,
+     2
+    ],
+    "D": [
+     7,
+     6
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "3♦",
+   "why": "10 hp er minimum (10–13), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     8,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     5
+    ],
+    "D": [
+     11,
+     3,
+     2
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "15 hp er maximum (14–16), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     13,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     6,
+     5,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     8
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "3♥",
+   "why": "14 hp er maximum (14–16), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     13,
+     4
+    ],
+    "H": [
+     11,
+     10,
+     8,
+     7,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     14,
+     13,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "3♥",
+   "why": "14 hp er maximum (14–16), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     8,
+     7,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     11,
+     8
+    ],
+    "D": [
+     8,
+     6
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "3♠",
+   "why": "15 hp er maximum (14–16), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     9,
+     7,
+     3
+    ],
+    "H": [
+     12,
+     7,
+     6
+    ],
+    "D": [
+     13,
+     11,
+     10
+    ],
+    "C": [
+     9
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "15 hp er maximum (14–16), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     10,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     12,
+     10,
+     7
+    ],
+    "D": [
+     14,
+     12,
+     2
+    ],
+    "C": []
+   },
+   "hp": 16,
+   "sp": 21,
+   "correct": "3♠",
+   "why": "16 hp er maximum (14–16), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     6,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     2
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♥",
+   "why": "15 hp er maximum (14–16), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     9,
+     6,
+     3
+    ],
+    "D": [
+     13,
+     9,
+     6
+    ],
+    "C": [
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "14 hp er maximum (14–16), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     13,
+     8,
+     6,
+     5,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     14,
+     13,
+     8
+    ],
+    "C": [
+     13,
+     8
+    ]
+   },
+   "hp": 16,
+   "sp": 20,
+   "correct": "3♠",
+   "why": "16 hp er maximum (14–16), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     7,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     5
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     14,
+     13,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "3♠",
+   "why": "15 hp er maximum (14–16), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     7
+    ],
+    "H": [
+     12,
+     11,
+     8,
+     7,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     9,
+     8
+    ],
+    "C": [
+     14,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♥",
+   "why": "14 hp er maximum (14–16), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8,
+     7,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     6
+    ],
+    "D": [
+     8,
+     6
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "15 hp er maximum (14–16), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     9,
+     8,
+     6,
+     3
+    ],
+    "H": [],
+    "D": [
+     9,
+     8,
+     7
+    ],
+    "C": [
+     14,
+     12,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "3♠",
+   "why": "14 hp er maximum (14–16), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     9,
+     7,
+     5
+    ],
+    "D": [
+     8,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     6
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "15 hp er maximum (14–16), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     9,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     3,
+     2
+    ],
+    "D": [],
+    "C": [
+     12,
+     6,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "3♠",
+   "why": "15 hp er maximum (14–16), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     13,
+     8,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     8,
+     6,
+     4
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     14,
+     12,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♥",
+   "why": "15 hp er maximum (14–16), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     9,
+     8,
+     7,
+     6,
+     3
+    ],
+    "H": [],
+    "D": [
+     13,
+     12,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "3♠",
+   "why": "14 hp er maximum (14–16), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     8,
+     6,
+     3,
+     2
+    ],
+    "H": [
+     9,
+     5,
+     2
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "14 hp er maximum (14–16), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     13,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     8,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     7
+    ],
+    "C": [
+     10,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♥",
+   "why": "14 hp er maximum (14–16), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     9,
+     3,
+     2
+    ],
+    "H": [
+     9,
+     6,
+     5
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     13,
+     12,
+     8
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "3♠",
+   "why": "16 hp er maximum (14–16), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     7,
+     5
+    ],
+    "C": [
+     8,
+     6,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "14 hp er maximum (14–16), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     6
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     7,
+     6,
+     4,
+     2
+    ],
+    "D": [],
+    "C": [
+     14,
+     11,
+     10
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "3♥",
+   "why": "15 hp er maximum (14–16), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     8,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     7
+    ],
+    "D": [],
+    "C": [
+     14,
+     8,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "3♠",
+   "why": "15 hp er maximum (14–16), og din farve er spar. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     6,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     10,
+     7
+    ],
+    "D": [
+     12,
+     7,
+     3
+    ],
+    "C": [
+     13,
+     10
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "15 hp er maximum (14–16), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2ru",
+   "hand": {
+    "S": [
+     11,
+     10
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     9,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     9,
+     5
+    ],
+    "C": [
+     14,
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♥",
+   "why": "14 hp er maximum (14–16), og din farve er hjerter. Efter 2♦ – 2NT: 3♣ = min med hjerter, 3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     7,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     9,
+     8
+    ],
+    "D": [
+     10,
+     9,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     6
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "10 hp er minimum (10–13), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     10
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     10,
+     3
+    ],
+    "D": [
+     11,
+     9,
+     8,
+     3
+    ],
+    "C": [
+     14,
+     10,
+     9
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♦",
+   "why": "11 hp er minimum (10–13), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     7
+    ],
+    "H": [
+     8,
+     7,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     14,
+     13,
+     7,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "11 hp er minimum (10–13), og din sidefarve er klør. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     13,
+     10,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     8,
+     2
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     14,
+     7,
+     6,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "13 hp er minimum (10–13), og din sidefarve er klør. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     13,
+     11,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     11,
+     10,
+     6,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♦",
+   "why": "11 hp er minimum (10–13), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     10,
+     9
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     7,
+     6
+    ],
+    "D": [
+     8,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "10 hp er minimum (10–13), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     6,
+     2
+    ],
+    "H": [
+     13,
+     8,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     3
+    ],
+    "C": [
+     14,
+     10,
+     9,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "10 hp er minimum (10–13), og din sidefarve er klør. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     9,
+     7,
+     6,
+     5
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♦",
+   "why": "10 hp er minimum (10–13), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     13,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     7,
+     6
+    ],
+    "D": [
+     13,
+     9,
+     5,
+     2
+    ],
+    "C": [
+     7
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♦",
+   "why": "11 hp er minimum (10–13), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     7,
+     5
+    ],
+    "H": [
+     13,
+     12,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     9
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "3♦",
+   "why": "11 hp er minimum (10–13), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     12
+    ],
+    "H": [
+     14,
+     10,
+     8,
+     5,
+     3
+    ],
+    "D": [
+     11,
+     8,
+     7
+    ],
+    "C": [
+     14,
+     10,
+     7,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "11 hp er minimum (10–13), og din sidefarve er klør. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     3
+    ],
+    "C": [
+     12,
+     9,
+     8,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "13 hp er minimum (10–13), og din sidefarve er klør. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     2
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     8,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     5
+    ],
+    "C": [
+     13,
+     12,
+     6,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "13 hp er minimum (10–13), og din sidefarve er klør. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     12,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     8,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     9
+    ],
+    "C": [
+     14,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "10 hp er minimum (10–13), og din sidefarve er klør. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     10
+    ],
+    "H": [
+     12,
+     9,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     10
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♦",
+   "why": "10 hp er minimum (10–13), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     12,
+     9,
+     8,
+     4,
+     2
+    ],
+    "D": [
+     5,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     8,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "11 hp er minimum (10–13), og din sidefarve er klør. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     6,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     10,
+     6
+    ],
+    "C": [
+     11,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "3♦",
+   "why": "11 hp er minimum (10–13), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     14,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     8,
+     7
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "13 hp er minimum (10–13), og din sidefarve er klør. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     6,
+     5
+    ],
+    "C": [
+     13,
+     10,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "13 hp er minimum (10–13), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     13,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     8,
+     4,
+     3
+    ],
+    "C": [
+     9,
+     8
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "13 hp er minimum (10–13), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     12,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     10,
+     8
+    ],
+    "D": [
+     11,
+     9,
+     8,
+     6
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♦",
+   "why": "11 hp er minimum (10–13), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     13,
+     10,
+     6
+    ],
+    "H": [
+     14,
+     10,
+     8,
+     6,
+     3
+    ],
+    "D": [
+     11,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♦",
+   "why": "10 hp er minimum (10–13), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     13,
+     3
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     6,
+     2
+    ],
+    "D": [
+     4,
+     2
+    ],
+    "C": [
+     14,
+     9,
+     3,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "11 hp er minimum (10–13), og din sidefarve er klør. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     10,
+     9,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     9,
+     7
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     2
+    ],
+    "C": [
+     9
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♦",
+   "why": "10 hp er minimum (10–13), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     12
+    ],
+    "H": [
+     13,
+     12,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     9,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     8
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "10 hp er minimum (10–13), og din sidefarve er klør. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11
+    ],
+    "H": [
+     10,
+     9,
+     8,
+     6,
+     2
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     14,
+     13,
+     7,
+     6
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "3♥",
+   "why": "16 hp er maximum (14–16), og din sidefarve er klør. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     10
+    ],
+    "H": [
+     11,
+     8,
+     7,
+     6,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     11
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "14 hp er maximum (14–16), og din sidefarve er klør. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     14,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     7,
+     4
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     14,
+     12,
+     6,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "3♥",
+   "why": "16 hp er maximum (14–16), og din sidefarve er klør. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     8,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     8
+    ],
+    "C": [
+     12,
+     8,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "14 hp er maximum (14–16), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     14,
+     8,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     11,
+     5
+    ],
+    "C": [
+     13,
+     10,
+     8,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "14 hp er maximum (14–16), og din sidefarve er klør. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     8,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     10,
+     9
+    ],
+    "D": [
+     12,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "14 hp er maximum (14–16), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     13,
+     12,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     10
+    ],
+    "C": [
+     13,
+     8,
+     4,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♥",
+   "why": "15 hp er maximum (14–16), og din sidefarve er klør. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     8,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     9,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     7,
+     4
+    ],
+    "C": [
+     8,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "14 hp er maximum (14–16), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     14,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     4,
+     3
+    ],
+    "D": [
+     11,
+     5
+    ],
+    "C": [
+     5,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♥",
+   "why": "14 hp er maximum (14–16), og din sidefarve er klør. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     14,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     9,
+     8
+    ],
+    "D": [
+     14,
+     11,
+     6,
+     2
+    ],
+    "C": [
+     9,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "14 hp er maximum (14–16), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     12,
+     10,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     9
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♥",
+   "why": "15 hp er maximum (14–16), og din sidefarve er klør. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     8,
+     6
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "15 hp er maximum (14–16), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     7,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     7,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     8,
+     4
+    ],
+    "C": [
+     14,
+     7
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "16 hp er maximum (14–16), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     13,
+     9,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     8,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     3
+    ],
+    "C": [
+     6
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "15 hp er maximum (14–16), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     14,
+     11,
+     5
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     4,
+     2
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "14 hp er maximum (14–16), og din sidefarve er klør. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10
+    ],
+    "H": [
+     14,
+     11,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     5
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "14 hp er maximum (14–16), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     13,
+     12,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     7,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     8
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♥",
+   "why": "15 hp er maximum (14–16), og din sidefarve er klør. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     9,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     10,
+     4
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     14,
+     8,
+     3,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "14 hp er maximum (14–16), og din sidefarve er klør. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     13,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     8,
+     3
+    ],
+    "D": [
+     13,
+     7,
+     5,
+     4
+    ],
+    "C": [
+     6
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "15 hp er maximum (14–16), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     9,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     9,
+     5
+    ],
+    "C": [
+     14,
+     12,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "14 hp er maximum (14–16), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     11,
+     8,
+     7
+    ],
+    "C": [
+     12,
+     9,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "15 hp er maximum (14–16), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     4,
+     3
+    ],
+    "D": [
+     10,
+     9,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     11,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "14 hp er maximum (14–16), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     14,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     8,
+     6
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     2
+    ],
+    "C": [
+     10,
+     7
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "15 hp er maximum (14–16), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     13,
+     10,
+     6
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     10,
+     6
+    ],
+    "D": [
+     14,
+     7,
+     5,
+     3
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "15 hp er maximum (14–16), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  },
+  {
+   "situation": "2hj",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     12,
+     8,
+     7,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     7,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     12
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "15 hp er maximum (14–16), og din sidefarve er ruder. Efter 2♥ – 2NT: 3♣ = min med klør, 3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder."
+  }
+ ]
 }

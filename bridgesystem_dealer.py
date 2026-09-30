@@ -3,7 +3,12 @@ Minimal constraint-based bridge hand dealer — no external dependencies.
 Builds a hand to match a shape first (incl. "free suit" roles like marmic's
 unspecified short suit), then fills honours to hit an hp AND sp target
 range simultaneously. The honour-fill step is retried first; if it keeps
-missing, the generator draws a new shape and tries again. sp uses the 5/3/1 shortness scale (renonce/singleton/dobbelt).
+missing, the generator draws a new shape and tries again. sp uses the 5/3/1
+shortness scale (renonce/singleton/dobbelt).
+
+export_pool() writes the trainer's hand pool: hands for the auctions
+1NT – 2♣/2♦/2♥ – pas – 2NT – pas – ?, each with its correct rebid worked out
+from the Jyderup Bridgeklub multiforsvar card.
 
 Verified runnable in this sandbox — no pip install required.
 """
@@ -99,6 +104,36 @@ def gen_double_relay_hand(hp_range=(0,9), sp_range=(0,12)):
             if r: return r
     return None
 
+def gen_one_suited_major(hp_range=(10,16), sp_range=(0,37), shape_tries=20):
+    """Multi 2♦: énfarvet major — 6-7 kort i majoren, ingen anden 4-farve."""
+    for _ in range(shape_tries):
+        major = random.choice(['S','H'])
+        fixed = {x: (0,3) for x in SUITS}
+        fixed[major] = (6,7)
+        lengths = None
+        for _ in range(50):
+            lengths = deal_suit_lengths(fixed)
+            if lengths: break
+        if not lengths: continue
+        r = fill_hand(lengths, hp_range, sp_range)
+        if r: return r
+    return None
+
+def gen_hearts_minor(hp_range=(10,16), sp_range=(0,37), shape_tries=20):
+    """Multi 2♥: 5 hjerter + 4-korts minor."""
+    for _ in range(shape_tries):
+        minor = random.choice(['D','C'])
+        fixed = {'S': (0,3), 'H': (5,5), 'D': (0,3), 'C': (0,3)}
+        fixed[minor] = (4,4)
+        lengths = None
+        for _ in range(50):
+            lengths = deal_suit_lengths(fixed)
+            if lengths: break
+        if not lengths: continue
+        r = fill_hand(lengths, hp_range, sp_range)
+        if r: return r
+    return None
+
 def fmt(hand):
     names = {14:'E',13:'K',12:'D',11:'B',10:'10'}
     out = []
@@ -107,50 +142,140 @@ def fmt(hand):
         out.append(''.join(names.get(r, str(r)) for r in cards) or '—')
     return ' / '.join(f"{s}:{c}" for s, c in zip(['♠','♥','♦','♣'], out))
 
-def export_pool(path, n_per_category=20):
+# --- Facit: genmelding efter makkers 2NT-spørgsmål ------------------------
+
+SUIT_SYM = {'S': '♠', 'H': '♥', 'D': '♦', 'C': '♣'}
+SUIT_NAME = {'S': 'spar', 'H': 'hjerter', 'D': 'ruder', 'C': 'klør'}
+MIN_RANGE, MAX_RANGE = (10, 13), (14, 16)
+
+def strength(hp):
+    if hp >= MAX_RANGE[0]:
+        return f"{hp} hp er maximum (14–16)"
+    return f"{hp} hp er minimum (10–13)"
+
+def lengths_of(hand):
+    return {s: len(hand[s]) for s in SUITS}
+
+def answer_after_2kl(hand, hp):
+    """2kl – 2nt: 3kl min 5-4/4-5, 3ru min 4-4, 3hj max 4-5, 3sp max 5-4,
+    3nt max lige længde, 4mi renonce."""
+    L = lengths_of(hand)
+    voids = [m for m in ('D', 'C') if L[m] == 0]
+    if voids:
+        m = voids[0]
+        return f"4{SUIT_SYM[m]}", (f"Du har renonce i {SUIT_NAME[m]}. Efter 2♣ – 2NT viser "
+                                  f"4{SUIT_SYM[m]} renonce i farven.")
+    maximum = hp >= MAX_RANGE[0]
+    s, h = L['S'], L['H']
+    if s == h:
+        if maximum:
+            return "3NT", f"{strength(hp)}, og majorerne er lige lange ({s}-{h}). 3NT viser maximum med lige længde."
+        return "3♦", f"{strength(hp)}, og majorerne er lige lange ({s}-{h}). 3♦ viser minimum med 4-4."
+    if not maximum:
+        return "3♣", (f"{strength(hp)} med {s} spar og {h} hjerter. 3♣ viser minimum med 5-4 eller 4-5 "
+                      f"— makker kan derefter søge 5-farven med 3♦.")
+    if s > h:
+        return "3♠", f"{strength(hp)} med 5 spar og 4 hjerter. 3♠ viser maximum med 5-4."
+    return "3♥", f"{strength(hp)} med 4 spar og 5 hjerter. 3♥ viser maximum med 4-5."
+
+def answer_after_2ru(hand, hp):
+    """2ru – 2nt: 3kl min hjerter, 3ru min spar, 3hj max hjerter, 3sp max spar."""
+    L = lengths_of(hand)
+    major = 'S' if L['S'] >= 6 else 'H'
+    maximum = hp >= MAX_RANGE[0]
+    call = {('H', False): '3♣', ('S', False): '3♦', ('H', True): '3♥', ('S', True): '3♠'}[(major, maximum)]
+    return call, (f"{strength(hp)}, og din farve er {SUIT_NAME[major]}. Efter 2♦ – 2NT: 3♣ = min med hjerter, "
+                  f"3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar.")
+
+def answer_after_2hj(hand, hp):
+    """2hj – 2nt: 3kl min klør, 3ru min ruder, 3hj max klør, 3sp max ruder."""
+    L = lengths_of(hand)
+    minor = 'C' if L['C'] == 4 else 'D'
+    maximum = hp >= MAX_RANGE[0]
+    call = {('C', False): '3♣', ('D', False): '3♦', ('C', True): '3♥', ('D', True): '3♠'}[(minor, maximum)]
+    return call, (f"{strength(hp)}, og din sidefarve er {SUIT_NAME[minor]}. Efter 2♥ – 2NT: 3♣ = min med klør, "
+                  f"3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder.")
+
+SITUATIONS = {
+    "2kl": {
+        "auction": ["1NT", "2♣", "2NT"],
+        "calls": ["3♣", "3♦", "3♥", "3♠", "3NT", "4♣", "4♦"],
+        "bonus": {"q": "Hvad viste din 2♣-indmelding?",
+                  "correct": "Begge majorer, typisk 5-4 eller god marmic",
+                  "options": ["Begge majorer, typisk 5-4 eller god marmic", "Énfarvet major", "Begge minorer, 5/4+"],
+                  "why": "2♣ viser begge majorer, typisk 5-4 eller god marmic — 10–16 hp, fordeling kan kompensere."},
+    },
+    "2ru": {
+        "auction": ["1NT", "2♦", "2NT"],
+        "calls": ["3♣", "3♦", "3♥", "3♠"],
+        "bonus": {"q": "Hvad viste din 2♦-indmelding?",
+                  "correct": "Énfarvet major",
+                  "options": ["Énfarvet major", "Naturlig ruderfarve", "Begge majorer, typisk 5-4"],
+                  "why": "2♦ viser en énfarvet major — 10–16 hp, fordeling kan kompensere."},
+    },
+    "2hj": {
+        "auction": ["1NT", "2♥", "2NT"],
+        "calls": ["3♣", "3♦", "3♥", "3♠"],
+        "bonus": {"q": "Hvad viste din 2♥-indmelding?",
+                  "correct": "Hjerter + minor, 5-4",
+                  "options": ["Hjerter + minor, 5-4", "Énfarvet hjerter", "Begge majorer, typisk 5-4"],
+                  "why": "2♥ viser hjerter + en minor, 5-4 — 10–16 hp, fordeling kan kompensere."},
+    },
+}
+
+# situation, generator, facit, antal hænder (halvdelen minimum, halvdelen maximum)
+POOL_PLAN = [
+    ("2kl", gen_5_4_majors, answer_after_2kl, 60),
+    ("2kl", gen_marmic_majors, answer_after_2kl, 40),
+    ("2ru", gen_one_suited_major, answer_after_2ru, 50),
+    ("2hj", gen_hearts_minor, answer_after_2hj, 50),
+]
+
+def export_pool(path):
     import json
-    cats = {
-        "multi_2klor_54": gen_5_4_majors,
-        "multi_2klor_marmic": gen_marmic_majors,
-        "dobling_2klor_relae": gen_double_relay_hand,
-    }
-    pool = {}
-    for key, fn in cats.items():
-        hands = []
-        tries = 0
-        while len(hands) < n_per_category and tries < n_per_category * 30:
-            tries += 1
-            r = fn()
-            if r:
+    hands, seen = [], set()
+    for situation, gen, answer, count in POOL_PLAN:
+        for hp_range, n in ((MIN_RANGE, count // 2), (MAX_RANGE, count - count // 2)):
+            made, tries = 0, 0
+            while made < n and tries < n * 30:
+                tries += 1
+                r = gen(hp_range=hp_range)
+                if not r: continue
                 hand, hp, sp = r
-                hands.append({
-                    "hand": {s: hand[s] for s in SUITS},
-                    "hp": hp, "sp": sp
-                })
-        pool[key] = hands
+                key = tuple(tuple(hand[s]) for s in SUITS)
+                if key in seen: continue
+                seen.add(key)
+                correct, why = answer(hand, hp)
+                hands.append({"situation": situation,
+                              "hand": {s: hand[s] for s in SUITS},
+                              "hp": hp, "sp": sp, "correct": correct, "why": why})
+                made += 1
     with open(path, 'w', encoding='utf-8') as f:
-        json.dump(pool, f, ensure_ascii=False, indent=2)
-    return {k: len(v) for k, v in pool.items()}
+        json.dump({"situations": SITUATIONS, "hands": hands}, f, ensure_ascii=False, indent=1)
+    counts = {}
+    for h in hands:
+        counts[h["situation"]] = counts.get(h["situation"], 0) + 1
+    return counts
 
 def main():
     samples = [
-        ("2♣: 5-4 i majorerne", gen_5_4_majors),
-        ("2♣: marmic med begge majorer", gen_marmic_majors),
-        ("Dobling: 2♣-relæ (svag, ingen 5-farve)", gen_double_relay_hand),
+        ("1NT – 2♣ – 2NT: 5-4 i majorerne", gen_5_4_majors, answer_after_2kl),
+        ("1NT – 2♣ – 2NT: marmic med begge majorer", gen_marmic_majors, answer_after_2kl),
+        ("1NT – 2♦ – 2NT: énfarvet major", gen_one_suited_major, answer_after_2ru),
+        ("1NT – 2♥ – 2NT: hjerter + minor", gen_hearts_minor, answer_after_2hj),
     ]
-    for title, fn in samples:
+    for title, gen, answer in samples:
         print(f"=== {title} ===")
         for _ in range(4):
-            r = fn()
+            r = gen()
             if r:
                 hand, hp, sp = r
-                print(f"{fmt(hand)}   [{hp} hp / {sp} sp]")
+                print(f"{fmt(hand)}   [{hp} hp / {sp} sp]  → {answer(hand, hp)[0]}")
         print()
 
     print("=== Eksport til JSON-pulje ===")
     path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'hand_pool_sample.json')
-    counts = export_pool(path, n_per_category=20)
-    print(counts)
+    print(export_pool(path))
 
 if __name__ == '__main__':
     main()

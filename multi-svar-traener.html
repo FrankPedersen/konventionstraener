@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Svar på doblingen — Multitræner</title>
+<title>Svar på 2NT — Multitræner</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -82,7 +82,7 @@
   .table { background: linear-gradient(180deg, var(--bg-2), var(--bg)); border: 1px solid rgba(199,154,63,0.28); border-radius: 18px; padding: 24px 20px 20px; box-shadow: 0 20px 50px -24px rgba(0,0,0,0.6); }
 
   /* Auction strip */
-  .auction { display: flex; gap: 22px; margin-bottom: 20px; align-items: flex-end; }
+  .auction { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; align-items: flex-end; }
   .auction .slot { display: flex; flex-direction: column; align-items: center; gap: 6px; }
   .auction .who { font-size: 11px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--ink-dim); }
   .bidcard {
@@ -170,10 +170,6 @@
   .feedback.ok { background: var(--good-bg); color: var(--good-ink); }
   .feedback.no { background: var(--bad-bg); color: var(--bad-ink); }
   .feedback b { display: block; margin-bottom: 4px; }
-  .partnerhand { margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(0,0,0,0.12); }
-  .partnerhand .ph-label { font-size: 12.5px; font-weight: 600; margin-bottom: 4px; }
-  .partnerhand .ph-row { display: flex; gap: 8px; font-weight: 600; }
-  .partnerhand .ph-row .red { color: var(--red-suit); }
 
   .next { margin-top: 14px; display: none; width: 100%; background: var(--gold); color: #23180A; border: none; border-radius: 10px; padding: 13px; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 14.5px; cursor: pointer; }
   .next:hover { background: #D6AB52; }
@@ -193,10 +189,10 @@
 <body>
 <div class="wrap">
 
-  <div class="brand"><span class="name">Bridgesystem</span><span class="part">Multiforsvar · svar på makkers melding</span></div>
+  <div class="brand"><span class="name">Bridgesystem</span><span class="part">Multiforsvar · genmelding efter makkers 2NT</span></div>
 
-  <h1>Hvad vil du melde?</h1>
-  <p class="sub">Modstanderen åbner 1NT, makker melder. Vælg dit svar i meldekassen — tryk på pæren for et hint, hvis du er i tvivl.</p>
+  <h1>Hvad svarer du?</h1>
+  <p class="sub">Du har meldt ind over modstanderens 1NT, og makker spørger med 2NT om styrke og fordeling. Minimum er 10–13 hp, maximum 14–16 hp. Tryk på pæren for et hint, hvis du er i tvivl.</p>
 
   <div class="progress" id="progress"></div>
 
@@ -239,121 +235,36 @@ function callRank(call){
   return p ? rank(p.level, p.idx) : -1;
 }
 
-const Q = [
-  {
-    theirBid: "1NT", partnerBid: "X", lowest: rank(2,0),
-    hand: [["♠","B 6 5 2"],["♥","10 8 4"],["♦","K 7 3"],["♣","9 8 5"]],
-    hp: 4, sp: 4,
-    correct: "2♣",
-    hints: ["2♣","Pas","2NT","2♠"],
-    why: "2♣ er relæet. Hånden har ingen egen farve og for få point til at spørge videre — beder makker vise eller vælge farve, uden selv at afsløre noget. Pas er ikke i spil: efter doblingen er I i semikrav, og kun en god egen farve eller gode kort i deres farve gør pas rimeligt.",
-    bonus: { q: "Hvad viser makkers dobling?", correct: "Mindst 15 hp, fri fordeling",
-      options: ["Mindst 15 hp, altid balanceret","Mindst 15 hp, fri fordeling","12–14 hp, fri fordeling"],
-      why: "Doblingen viser mindst 15 hp uden krav til fordeling — makker kan have en hvilken som helst hånd, bare den er stærk nok." }
-  },
-  {
-    theirBid: "1NT", partnerBid: "X", lowest: rank(2,0),
-    hand: [["♠","K B 9 8 6 5"],["♥","7 2"],["♦","9 4 3"],["♣","8 6"]],
-    hp: 4, sp: 6,
-    correct: "2♠",
-    hints: ["2♣","2♠","3♠","2NT"],
-    why: "2♠ — for at spille. God 6-farve i spar, men for få point til at spørge videre med 2NT eller tvinge på 3-trinnet. Farven er allerede fundet; relæet ville kun spilde plads.",
-    bonus: { q: "Hvad viser makkers dobling?", correct: "Mindst 15 hp, fri fordeling",
-      options: ["10–16 hp, fri fordeling","17+ hp, altid balanceret","Mindst 15 hp, fri fordeling"],
-      why: "Doblingen viser mindst 15 hp uden krav til fordeling — makker kan have en hvilken som helst hånd, bare den er stærk nok." }
-  },
-  {
-    theirBid: "1NT", partnerBid: "X", lowest: rank(2,0),
-    hand: [["♠","E 10 7 4"],["♥","K 9 2"],["♦","D 8 5"],["♣","10 6 3"]],
-    hp: 9, sp: 9,
-    correct: "2NT",
-    hints: ["2♣","3NT","2♠","2NT"],
-    why: "2NT spørger om styrke og fordeling. Hånden er for stærk til bare at vælge en farve på må og få, men har ikke selv en klar 5-farve at melde naturligt — det rette værktøj er spørgsmålet, ikke et gæt.",
-    bonus: { q: "Hvad viser makkers dobling?", correct: "Mindst 15 hp, fri fordeling",
-      options: ["Mindst 15 hp, fri fordeling","15–17 hp, altid balanceret","Mindst 15 hp, men skal have begge majorer"],
-      why: "Doblingen viser mindst 15 hp uden krav til fordeling — makker kan have en hvilken som helst hånd, bare den er stærk nok." }
-  },
-  {
-    theirBid: "1NT", partnerBid: "X", lowest: rank(2,0),
-    hand: [["♠","7 2"],["♥","8 3"],["♦","E D B 8 6 3"],["♣","K 9 4"]],
-    hp: 10, sp: 12,
-    correct: "3♦",
-    hints: ["2♣","2NT","3♥","3♦"],
-    why: "3♦ er naturligt og krav. En god 6-farve i ruder og nok point til at tvinge videre til mindst 3-trinnet — for stærk og for ensidig til blot at spørge med 2NT.",
-    bonus: { q: "Hvad viser makkers dobling?", correct: "Mindst 15 hp, fri fordeling",
-      options: ["12–14 hp, fri fordeling","Mindst 15 hp, fri fordeling","Mindst 15 hp, altid balanceret"],
-      why: "Doblingen viser mindst 15 hp uden krav til fordeling — makker kan have en hvilken som helst hånd, bare den er stærk nok." }
-  },
-  {
-    theirBid: "1NT", partnerBid: "X", lowest: rank(2,0),
-    hand: [["♠","K D B 9 8 6 5"],["♥","4"],["♦","7 2"],["♣","9 8 3"]],
-    hp: 6, sp: 10,
-    correct: "3♠",
-    hints: ["2♠","2♣","3NT","3♠"],
-    why: "3♠ er spærrende. Syv kort i spar og næsten intet andet — springet tager pladsen fra modstanderne uden at love styrke. Med så meget længde er 2♠ for forsigtigt; hånden vil forstyrre, ikke bare spille billigt.",
-    bonus: { q: "Hvad viser makkers dobling?", correct: "Mindst 15 hp, fri fordeling",
-      options: ["Mindst 15 hp, fri fordeling","10–16 hp, fri fordeling","17+ hp, altid balanceret"],
-      why: "Doblingen viser mindst 15 hp uden krav til fordeling — makker kan have en hvilken som helst hånd, bare den er stærk nok." }
-  },
-  {
-    theirBid: "1NT", partnerBid: "X", lowest: rank(2,0),
-    hand: [["♠","D B 8"],["♥","E D 9"],["♦","K 8 6 3"],["♣","9 7 2"]],
-    hp: 12, sp: 12,
-    correct: "3NT",
-    hints: ["2NT","3♦","3NT","2♣"],
-    why: "3NT — for at spille. Jævn hånd med udgangsstyrke og ingen særlig farve at fremhæve. Du ved allerede nok til at vælge kontrakten selv; 2NT ville kun spørge om noget, du ikke har brug for at vide.",
-    bonus: { q: "Hvad viser makkers dobling?", correct: "Mindst 15 hp, fri fordeling",
-      options: ["15–17 hp, altid balanceret","Mindst 15 hp, men skal have begge majorer","Mindst 15 hp, fri fordeling"],
-      why: "Doblingen viser mindst 15 hp uden krav til fordeling — makker kan have en hvilken som helst hånd, bare den er stærk nok." }
-  },
-  {
-    theirBid: "1NT", partnerBid: "2♣", lowest: rank(2,1),
-    hand: [["♠","K D 8 6 4"],["♥","9"],["♦","K D 7 4"],["♣","8 5 2"]],
-    hp: 10, sp: 13,
-    correct: "4♠",
-    hints: ["4♠","3♠","2♥","Pas"],
-    partnerPool: { multi_2klor_54: "5–4 i majorerne", multi_2klor_marmic: "marmic med begge majorer" },
-    why: "2♣ viser begge majorer, typisk 5–4. Med fem spar og 10 hp er et fit på mindst otte kort næsten sikkert, og samlet styrke rækker til udgang direkte — makkers interval (10–16) gør en invit for forsigtig. Bridgesystem har ikke en tabel for selve opsummeringen her; det er almindelig vurdering af den viste fordeling, som når man avancerer Michaels.",
-    bonus: { q: "Hvad viser makkers 2♣?", correct: "Begge majorer, 10–16 hp",
-      options: ["Begge minorer, 10–16 hp","Begge majorer, 10–16 hp","Énfarvet major, 10–16 hp"],
-      why: "2♣ viser specifikt begge majorer, typisk 5–4, eller en skæv hånd med begge majorer (marmic) — 10–16 hp." }
-  },
-  {
-    theirBid: "1NT", partnerBid: "2NT", lowest: rank(3,0),
-    hand: [["♠","8 3 2"],["♥","9 4"],["♦","K 8 6 4"],["♣","K 7 5 2"]],
-    hp: 6, sp: 7,
-    correct: "3♦",
-    hints: ["3♦","3♣","Pas","3NT"],
-    why: "2NT viser begge minorer, 5–4 eller mere. Hånden er jævnt fordelt mellem ruder og klør, men kongen i ruder gør den til den bedre farve at lande i — en almindelig, konkurrerende støtte, ikke en tvungen melding. For svag til 3NT, for god til at springe helt over.",
-    bonus: { q: "Hvad viser makkers 2NT?", correct: "Begge minorer, 10–16 hp",
-      options: ["Begge majorer, 10–16 hp","Mindst 15 hp, fri fordeling","Begge minorer, 10–16 hp"],
-      why: "2NT viser specifikt begge minorer, mindst 5–4 — 10–16 hp." }
-  }
-];
-
-let idx = 0, score = 0, answered = false, results = [], hintOn = false;
-
-// Hand pool generated by bridgesystem_dealer.py — optional; the trainer works without it
-let POOL = null;
-fetch('hand_pool_sample.json').then(r => r.ok ? r.json() : null).then(p => { POOL = p; }).catch(() => {});
-
+// Each round draws ROUND_SIZE random hands from hand_pool_sample.json (made by bridgesystem_dealer.py)
+const ROUND_SIZE = 8;
 const POOL_SUITS = [['S','♠'],['H','♥'],['D','♦'],['C','♣']];
 const RANK_NAMES = { 14: 'E', 13: 'K', 12: 'D', 11: 'B' };
 
-function partnerExampleHtml(q){
-  if (!q.partnerPool || !POOL) return '';
-  const choices = [];
-  for (const [key, label] of Object.entries(q.partnerPool)){
-    (POOL[key] || []).forEach(h => choices.push({ h, label }));
+function shuffle(arr){
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
   }
-  if (!choices.length) return '';
-  const { h, label } = choices[Math.floor(Math.random() * choices.length)];
-  const rows = POOL_SUITS.map(([k, sym]) => {
-    const cards = h.hand[k].map(r => RANK_NAMES[r] || r).join(' ') || '—';
-    return `<div class="ph-row"><span class="${suitClass(sym)}">${sym}</span><span>${cards}</span></div>`;
-  }).join('');
-  return `<div class="partnerhand"><div class="ph-label">Makker kunne fx have (${label}, ${h.hp} hp / ${h.sp} sp):</div>${rows}</div>`;
+  return a;
 }
+
+function buildQuestion(h, sit){
+  const others = shuffle(sit.calls.filter(c => c !== h.correct)).slice(0, 3);
+  return {
+    auction: sit.auction,
+    lowest: callRank(sit.auction[sit.auction.length - 1]) + 1,
+    hand: POOL_SUITS.map(([k, sym]) => [sym, h.hand[k].map(r => RANK_NAMES[r] || r).join(' ') || '—']),
+    hp: h.hp, sp: h.sp,
+    correct: h.correct,
+    hints: shuffle([h.correct, ...others]),
+    why: h.why,
+    bonus: { ...sit.bonus, options: shuffle(sit.bonus.options) }
+  };
+}
+
+let Q = [];
+let idx = 0, score = 0, answered = false, results = [], hintOn = false;
 
 const progressEl = document.getElementById('progress');
 const auctionEl = document.getElementById('auction');
@@ -385,13 +296,11 @@ function renderProgress(){
 }
 
 function renderAuction(q){
-  auctionEl.innerHTML = `
-    <div class="slot"><span class="who">Modstander</span><div class="bidcard them">${fmtCall(q.theirBid)}</div></div>
-    <span class="arrow">→</span>
-    <div class="slot"><span class="who">Makker</span><div class="bidcard">${fmtCall(q.partnerBid)}</div></div>
-    <span class="arrow">→</span>
-    <div class="slot"><span class="who">Dig</span><div class="bidcard" style="opacity:.35;">?</div></div>
-  `;
+  const who = ['Modstander', 'Dig', 'Makker'];
+  const slots = q.auction.map((call, i) =>
+    `<div class="slot"><span class="who">${who[i]}</span><div class="bidcard${i === 0 ? ' them' : ''}">${fmtCall(call)}</div></div>`);
+  slots.push(`<div class="slot"><span class="who">Dig</span><div class="bidcard" style="opacity:.35;">?</div></div>`);
+  auctionEl.innerHTML = slots.join('<span class="arrow">→</span>');
 }
 
 function render(){
@@ -432,7 +341,6 @@ function render(){
   nextBtn.className = 'next';
 
   // bonus question — visible from the start, next to the hand
-  const bonusEl = document.getElementById('bonus');
   document.getElementById('bonusQ').textContent = q.bonus.q;
   const bOptsEl = document.getElementById('bonusOpts');
   bOptsEl.innerHTML = '';
@@ -485,7 +393,7 @@ function choose(call, btn){
   if (!isCorrect) btn.classList.add('incorrect');
 
   feedbackEl.className = 'feedback show ' + (isCorrect ? 'ok' : 'no');
-  feedbackEl.innerHTML = `<b>${isCorrect ? 'Rigtigt — ' + q.correct : 'Facit: ' + q.correct}</b>${q.why}${partnerExampleHtml(q)}`;
+  feedbackEl.innerHTML = `<b>${isCorrect ? 'Rigtigt — ' + q.correct : 'Facit: ' + q.correct}</b>${q.why}`;
   nextBtn.className = 'next show';
   nextBtn.textContent = idx === Q.length - 1 ? 'Se resultat →' : 'Næste hånd →';
   renderProgress();
@@ -518,12 +426,20 @@ function renderDone(){
       <p class="qtext" style="margin-bottom:0;">Du klarede</p>
       <div class="score">${score} / ${Q.length}</div>
       <p>${score === Q.length ? 'Hele svarstrukturen sidder.' : 'Gennemgå forklaringerne igen, og prøv en gang til.'}</p>
-      <button class="restart" id="restartBtn">Forfra</button>
+      <button class="restart" id="restartBtn">Ny omgang</button>
     </div>`;
   document.getElementById('restartBtn').addEventListener('click', () => location.reload());
 }
 
-render();
+fetch('hand_pool_sample.json')
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(pool => {
+    Q = shuffle(pool.hands).slice(0, ROUND_SIZE).map(h => buildQuestion(h, pool.situations[h.situation]));
+    render();
+  })
+  .catch(() => {
+    tableEl.innerHTML = '<p class="qtext">Kunne ikke hente hånd-puljen. Åbn siden via GitHub Pages eller en lokal webserver — ikke direkte som fil.</p>';
+  });
 </script>
 </body>
 </html>
