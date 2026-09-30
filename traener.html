@@ -10,39 +10,46 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&text=%E2%99%A0%E2%99%A5%E2%99%A6%E2%99%A3&display=swap">
 <link rel="stylesheet" href="assets/site.css">
 <style>
-  .trainer{ max-width:40rem; }
-  .hero{ padding:1.6rem 0 1rem; margin-bottom:1.2rem; }
-  .hero h1{ font-size:clamp(1.8rem,4.6vw,2.6rem); }
-  .hero .deck{ font-size:1.05rem; }
+  .trainer{ max-width:64rem; padding-bottom:2rem; }
+  .hero{ padding:.9rem 0 .6rem; margin-bottom:.8rem; }
+  .hero .eyebrow{ margin:0; }
+  .hero h1{ font-size:clamp(1.4rem,3.4vw,1.9rem); margin:.1rem 0 .2rem; }
+  .hero .deck{ font-size:.98rem; line-height:1.4; }
+  @media (max-width:600px){ .hero .deck{ display:none; } }
 
-  .progress{ display:flex; gap:6px; margin-bottom:1rem; }
+  .progress{ display:flex; gap:6px; margin-bottom:.7rem; }
   .progress i{ flex:1; height:4px; border-radius:2px; background:var(--line-strong); position:relative; overflow:hidden; }
   .progress i.done::after, .progress i.current::after{ content:""; position:absolute; inset:0; background:var(--felt); }
   .progress i.wrong::after{ background:var(--bad); }
 
-  .board{ border:1px solid var(--line-strong); border-radius:.6rem; padding:1.1rem 1rem 1rem; background:var(--panel); }
-  .rolechip{ display:inline-block; font-family:var(--sans); font-weight:800; font-size:.8rem; letter-spacing:.06em; text-transform:uppercase;
-             color:#fff; background:var(--felt-deep); padding:.15rem .6rem; border-radius:999px; margin-bottom:.8rem; }
+  .board{ border:1px solid var(--line-strong); border-radius:.6rem; padding:.9rem; background:var(--panel);
+          display:flex; flex-direction:column; gap:.9rem; }
+  @media (min-width:860px){
+    .board{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.1fr); grid-template-areas:"play bid" "play bonus";
+            align-items:start; column-gap:1.4rem; row-gap:.9rem; padding:1rem 1.1rem; }
+    .play{ grid-area:play; } .bidding{ grid-area:bid; } .bonus{ grid-area:bonus; }
+  }
+  .rolechip{ display:inline-block; font-family:var(--sans); font-weight:800; font-size:.75rem; letter-spacing:.06em; text-transform:uppercase;
+             color:#fff; background:var(--felt-deep); padding:.12rem .55rem; border-radius:999px; margin-bottom:.6rem; }
 
-  .auction{ display:flex; flex-wrap:wrap; gap:.6rem .7rem; align-items:flex-end; margin-bottom:1rem; }
+  .auction{ display:flex; flex-wrap:wrap; gap:.45rem .55rem; align-items:flex-end; margin-bottom:.8rem; }
   .auction .slot{ display:flex; flex-direction:column; align-items:center; gap:.25rem; }
   .auction .who{ font-family:var(--sans); font-size:.72rem; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); }
-  .auction .bc{ font-size:1.05rem; min-width:2.6em; padding:.35em .4em; }
+  .auction .bc{ font-size:.98rem; min-width:2.5em; padding:.28em .35em; }
   .auction .bc.them{ opacity:.7; }
   .auction .bc.ask{ opacity:.4; }
 
-  .toprow{ display:flex; gap:.9rem; flex-wrap:wrap; align-items:flex-start; margin-bottom:1rem; }
-  .hand{ flex:1 1 11rem; max-width:15rem; background:var(--card); border:1px solid var(--card-edge); border-radius:.5rem; box-shadow:var(--shadow);
-         padding:.7rem .9rem; font-family:var(--sans); font-size:1.12rem; font-weight:700; line-height:1.45; }
+  .hand{ max-width:15rem; background:var(--card); border:1px solid var(--card-edge); border-radius:.5rem; box-shadow:var(--shadow);
+         padding:.55rem .85rem; font-family:var(--sans); font-size:1.08rem; font-weight:700; line-height:1.4; }
   .hand .row{ display:flex; gap:.6rem; }
   .hand .s{ width:1.1em; text-align:center; font-family:var(--sym); font-weight:400; }
 
-  .bonus{ flex:1 1 13rem; border-left:3px solid var(--gold); background:var(--paper); border-radius:0 .45rem .45rem 0; padding:.7rem .9rem; }
+  .bonus{ border-left:3px solid var(--gold); background:var(--paper); border-radius:0 .45rem .45rem 0; padding:.6rem .85rem; }
   .bonus .label{ font-family:var(--sans); font-weight:800; font-size:.8rem; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); margin:0 0 .3rem; }
   .bonus .bq{ font-size:1rem; margin:0 0 .5rem; line-height:1.35; }
-  .bonus .opts{ display:grid; gap:.4rem; }
-  .bopt{ font-family:var(--sans); font-size:.95rem; text-align:left; background:var(--card); color:var(--ink); border:1px solid var(--card-edge);
-         border-radius:.35rem; padding:.45rem .6rem; cursor:pointer; }
+  .bonus .opts{ display:grid; gap:.35rem; }
+  .bopt{ font-family:var(--sans); font-size:.92rem; text-align:left; background:var(--card); color:var(--ink); border:1px solid var(--card-edge);
+         border-radius:.35rem; padding:.35rem .6rem; cursor:pointer; }
   .bopt:hover:not(:disabled){ border-color:var(--felt); }
   .bopt:disabled{ cursor:default; }
   .bopt.correct, .cell.correct{ background:var(--good-bg); border-color:var(--good); color:var(--good-ink); }
@@ -50,9 +57,9 @@
   .bfeedback{ margin-top:.5rem; font-size:.95rem; line-height:1.45; color:var(--muted); display:none; }
   .bfeedback.show{ display:block; }
 
-  .qrow{ display:flex; align-items:center; justify-content:space-between; gap:.6rem; margin:0 0 .5rem; }
+  .qrow{ display:flex; align-items:center; justify-content:space-between; gap:.6rem; margin:0 0 .4rem; }
   .qtext{ font-family:var(--sans); font-weight:700; font-size:1.05rem; margin:0; }
-  .hint-btn{ background:var(--paper); border:1px solid var(--line-strong); color:var(--gold); border-radius:999px; width:2.2rem; height:2.2rem;
+  .hint-btn{ background:var(--paper); border:1px solid var(--line-strong); color:var(--gold); border-radius:999px; width:2rem; height:2rem;
              font-size:1rem; cursor:pointer; flex:none; }
   .hint-btn:hover{ border-color:var(--gold); }
   .hint-btn[aria-pressed="true"]{ background:var(--gold); color:#23180a; }
@@ -60,10 +67,10 @@
              padding:.4rem .7rem; margin:0 0 .6rem; display:none; }
   .hintinfo.show{ display:block; }
 
-  .box{ display:grid; grid-template-columns:repeat(5,1fr); gap:4px; margin-bottom:4px; }
-  .specialrow{ display:grid; grid-template-columns:repeat(3,1fr); gap:4px; }
-  .cell{ font-family:var(--sans); font-weight:800; font-size:.95rem; background:var(--card); color:var(--ink);
-         border:1px solid var(--card-edge); border-radius:.3rem; padding:.35rem .1rem; cursor:pointer; }
+  .box{ display:grid; grid-template-columns:repeat(5,1fr); gap:3px; margin-bottom:3px; }
+  .specialrow{ display:grid; grid-template-columns:repeat(3,1fr); gap:3px; }
+  .cell{ font-family:var(--sans); font-weight:800; font-size:.88rem; line-height:1.2; background:var(--card); color:var(--ink);
+         border:1px solid var(--card-edge); border-radius:.28rem; padding:.24rem .1rem; cursor:pointer; }
   .cell:hover:not(:disabled){ border-color:var(--felt); box-shadow:var(--shadow); }
   .cell:disabled{ opacity:.35; cursor:default; }
   .cell.correct, .cell.incorrect{ opacity:1; }
@@ -73,13 +80,13 @@
   .cell.pas.correct, .cell.dbl.correct{ outline:3px solid var(--good); outline-offset:1px; }
   .cell.pas.incorrect, .cell.dbl.incorrect{ outline:3px solid var(--bad); outline-offset:1px; }
 
-  .feedback{ margin-top:.9rem; padding:.75rem .9rem; border-radius:.45rem; font-size:1.02rem; line-height:1.5; display:none; }
+  .feedback{ margin-top:.7rem; padding:.6rem .8rem; border-radius:.45rem; font-size:.98rem; line-height:1.45; display:none; }
   .feedback.show{ display:block; }
   .feedback.ok{ background:var(--good-bg); color:var(--good-ink); }
   .feedback.no{ background:var(--bad-bg); color:var(--bad-ink); }
   .feedback b{ display:block; font-family:var(--sans); margin-bottom:.2rem; }
 
-  .next{ margin-top:.9rem; display:none; width:100%; background:var(--felt-deep); color:#fff; border:none; border-radius:.45rem; padding:.8rem;
+  .next{ margin-top:.7rem; display:none; width:100%; background:var(--felt-deep); color:#fff; border:none; border-radius:.45rem; padding:.65rem;
          font-family:var(--sans); font-weight:800; font-size:1.02rem; cursor:pointer; }
   .next:hover{ filter:brightness(1.1); }
   .next.show{ display:block; }
@@ -90,7 +97,7 @@
   .btn{ font-family:var(--sans); font-weight:800; font-size:1rem; border-radius:.45rem; padding:.65rem 1.1rem; cursor:pointer; text-decoration:none;
         border:1px solid var(--line-strong); background:var(--paper); color:var(--ink); }
   .btn.primary{ background:var(--felt-deep); color:#fff; border-color:transparent; }
-  .source{ margin-top:1.2rem; }
+  .source{ margin-top:.8rem; }
 </style>
 </head>
 <body>
@@ -109,26 +116,28 @@
   <div class="progress" id="progress"></div>
 
   <div class="board" id="board">
-    <span class="rolechip" id="role"></span>
-    <div class="auction" id="auction"></div>
-    <div class="toprow">
+    <div class="play">
+      <span class="rolechip" id="role"></span>
+      <div class="auction" id="auction"></div>
       <div class="hand" id="hand"></div>
-      <div class="bonus">
-        <p class="label">Bonusspørgsmål</p>
-        <p class="bq" id="bonusQ"></p>
-        <div class="opts" id="bonusOpts"></div>
-        <div class="bfeedback" id="bonusFeedback"></div>
+    </div>
+    <div class="bidding">
+      <div class="qrow">
+        <p class="qtext">Hvad melder du?</p>
+        <button class="hint-btn" id="hintBtn" title="Vis fire mulige meldinger" aria-pressed="false">💡</button>
       </div>
+      <div class="hintinfo" id="hintInfo"></div>
+      <div class="box" id="box"></div>
+      <div class="specialrow" id="special"></div>
+      <div class="feedback" id="feedback"></div>
+      <button class="next" id="nextBtn">Næste hånd →</button>
     </div>
-    <div class="qrow">
-      <p class="qtext">Hvad melder du?</p>
-      <button class="hint-btn" id="hintBtn" title="Vis fire mulige meldinger" aria-pressed="false">💡</button>
+    <div class="bonus">
+      <p class="label">Bonusspørgsmål</p>
+      <p class="bq" id="bonusQ"></p>
+      <div class="opts" id="bonusOpts"></div>
+      <div class="bfeedback" id="bonusFeedback"></div>
     </div>
-    <div class="hintinfo" id="hintInfo"></div>
-    <div class="box" id="box"></div>
-    <div class="specialrow" id="special"></div>
-    <div class="feedback" id="feedback"></div>
-    <button class="next" id="nextBtn">Næste hånd →</button>
   </div>
 
   <p class="small source" id="source"></p>
@@ -224,6 +233,7 @@ function render(){
 
   boxEl.innerHTML = '';
   for (let lvl = 1; lvl <= 7; lvl++){
+    if (rank(lvl, 4) < q.lowest) continue;   // hele rækken ligger under laveste lovlige melding
     STRAINS.forEach((s, sIdx) => {
       const call = lvl + s;
       const btn = document.createElement('button');
@@ -317,6 +327,7 @@ nextBtn.addEventListener('click', () => {
 });
 
 function renderDone(){
+  boardEl.style.display = 'block';
   boardEl.innerHTML = `
     <div class="done">
       <p class="qtext">Du klarede</p>

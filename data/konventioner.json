@@ -52,13 +52,14 @@
   "id": "omvendt-bergen",
   "titel": "Omvendt Bergen",
   "gruppe": "Majorstøtte",
-  "beskrivelse": "3♣ og 3♦ som støttemeldinger over 1♥/1♠.",
+  "beskrivelse": "Støtte til 1♥/1♠: 3♦ 7–10 sp og 3♣ 10–11 sp med 4+ korts støtte · 3M og 4M destruktive.",
   "roller": [
    "Åbner",
    "Svarer"
   ],
   "status": "kommer",
-  "system": "kf"
+  "system": "kf",
+  "viden": "viden/bridgesystem.html#4-3-majorstoette-omvendt-bergen"
  },
  {
   "id": "bekkasin",
@@ -149,11 +150,11 @@
   "system": "kf"
  },
  {
-  "id": "ff-majorstoette",
+  "id": "ff-revideret-omvendt-bergen",
   "system": "ff",
-  "titel": "Støtte til 1♥/1♠",
+  "titel": "Revideret omvendt Bergen",
   "gruppe": "Majorstøtte",
-  "beskrivelse": "2M 6–9 sp · 3♣ 10–12 sp med præcis 3 kort · 3♦ 10–12 sp med 4+ · 3M og 4M spærrende.",
+  "beskrivelse": "Støtte til 1♥/1♠: 2M 6–9 sp · 3♣ 10–12 sp med præcis 3 kort · 3♦ 10–12 sp med 4+ · 3M og 4M spærrende.",
   "roller": [
    "Åbner",
    "Svarer"
