@@ -10,10 +10,11 @@ tilføjes i CONVENTIONS herunder og i data/konventioner.json.
 import os
 import sys
 
-from dealer import multiforsvar
+from dealer import bekkasin, multiforsvar
 
 CONVENTIONS = {
     "multiforsvar": multiforsvar,
+    "bekkasin": bekkasin,
 }
 
 def main(names):
