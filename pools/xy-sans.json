@@ -89,6 +89,7 @@
     "2♦",
     "2♠",
     "2NT",
+    "3♣",
     "3NT"
    ],
    "bonus": {
@@ -100,6 +101,70 @@
      "18–19 hp, jævn"
     ],
     "why": "1NT-genmeldingen viser 12–14 jævn – med 15–17 havde åbner åbnet 1NT. Det brede interval er grunden til relæet."
+   }
+  },
+  "relae_1kl": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "1NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "2♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "2♥",
+    "2♠",
+    "2NT",
+    "3♣",
+    "3♦",
+    "3♥",
+    "3NT"
+   ],
+   "bonus": {
+    "q": "Hvad viste åbners 2♦?",
+    "correct": "Tvunget relæsvar – siger intet om hånden",
+    "options": [
+     "Tvunget relæsvar – siger intet om hånden",
+     "Naturlig ruderfarve",
+     "Udgangskrav"
+    ],
+    "why": "2♣ er relæ og tvinger åbner til 2♦, som intet siger. Nu beskriver svarer sin invitationshånd på lavt niveau."
    }
   },
   "aabner_1ru": {
@@ -191,6 +256,7 @@
     "2♦",
     "2♠",
     "2NT",
+    "3♣",
     "3NT"
    ],
    "bonus": {
@@ -203,6 +269,70 @@
     ],
     "why": "1NT-genmeldingen viser 12–14 jævn – med 15–17 havde åbner åbnet 1NT. Det brede interval er grunden til relæet."
    }
+  },
+  "relae_1ru": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "1NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "2♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "2♥",
+    "2♠",
+    "2NT",
+    "3♣",
+    "3♦",
+    "3♥",
+    "3NT"
+   ],
+   "bonus": {
+    "q": "Hvad viste åbners 2♦?",
+    "correct": "Tvunget relæsvar – siger intet om hånden",
+    "options": [
+     "Tvunget relæsvar – siger intet om hånden",
+     "Naturlig ruderfarve",
+     "Udgangskrav"
+    ],
+    "why": "2♣ er relæ og tvinger åbner til 2♦, som intet siger. Nu beskriver svarer sin invitationshånd på lavt niveau."
+   }
   }
  },
  "hands": [
@@ -210,25 +340,115 @@
    "situation": "aabner_1kl",
    "hand": {
     "S": [
+     14,
+     8
+    ],
+    "H": [
+     13,
      12,
+     11,
      2
+    ],
+    "D": [
+     9,
+     8,
+     7
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2♥",
+   "why": "Fire hjerter: 2♥."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     12,
+     8
     ],
     "H": [
      14,
-     13,
-     12,
-     6
+     9,
+     6,
+     5
     ],
     "D": [
      11,
-     5,
+     8,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "Fire hjerter: 2♥."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     14,
+     8,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     4
+    ],
+    "D": [
+     7,
+     4
+    ],
+    "C": [
+     14,
+     8,
+     6,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2♥",
+   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     10,
+     8
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     5
+    ],
+    "D": [
+     12,
+     4,
      3
     ],
     "C": [
-     8,
-     6,
-     3,
-     2
+     14,
+     11,
+     9,
+     7
     ]
    },
    "hp": 12,
@@ -240,25 +460,265 @@
    "situation": "aabner_1kl",
    "hand": {
     "S": [
+     12,
+     11,
+     9
+    ],
+    "H": [
+     14,
+     8,
+     6,
+     3
+    ],
+    "D": [
+     8,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8
+    ],
+    "H": [
+     12,
+     10,
+     6,
+     4
+    ],
+    "D": [
+     12,
+     8
+    ],
+    "C": [
+     13,
+     11,
+     7,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     12,
+     8,
+     6
+    ],
+    "H": [
      14,
      13,
+     6,
+     3
+    ],
+    "D": [
+     10,
+     8,
+     3
+    ],
+    "C": [
+     14,
+     10,
      8
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     2
+    ],
+    "D": [
+     11,
+     5
+    ],
+    "C": [
+     10,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     13,
+     10
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     2
+    ],
+    "D": [
+     12,
+     10,
+     9
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "Fire hjerter: 2♥."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     7,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     3
+    ],
+    "D": [
+     14,
+     8
+    ],
+    "C": [
+     13,
+     9,
+     8,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2♥",
+   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     12,
+     2
+    ],
+    "H": [
+     13,
+     9,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     6,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2♥",
+   "why": "Fire hjerter: 2♥."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     13,
+     3
+    ],
+    "H": [
+     12,
+     10,
+     8,
+     5
+    ],
+    "D": [
+     10,
+     8,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "Fire hjerter: 2♥."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     7,
+     6,
+     3
     ],
     "H": [
      14,
      10,
-     9,
-     5
+     8,
+     4
     ],
     "D": [
      13,
      10,
-     8
+     7
     ],
     "C": [
-     10,
-     9,
-     6
+     14,
+     13,
+     4
     ]
    },
    "hp": 14,
@@ -270,115 +730,25 @@
    "situation": "aabner_1kl",
    "hand": {
     "S": [
-     14,
-     8
-    ],
-    "H": [
-     14,
-     11,
-     9,
-     2
-    ],
-    "D": [
-     14,
-     9,
-     2
-    ],
-    "C": [
-     9,
-     5,
-     4,
-     3
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2♥",
-   "why": "Fire hjerter: 2♥."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     12,
-     10,
-     6
-    ],
-    "H": [
-     12,
-     11,
+     13,
      4,
      2
     ],
-    "D": [
-     13,
+    "H": [
+     12,
+     10,
+     7,
      4
     ],
-    "C": [
+    "D": [
      14,
-     7,
-     6,
-     3
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2♥",
-   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
+     8
+    ],
+    "C": [
+     13,
      9,
      5,
      2
-    ],
-    "H": [
-     14,
-     13,
-     6,
-     2
-    ],
-    "D": [
-     12,
-     8,
-     4
-    ],
-    "C": [
-     13,
-     11,
-     8
-    ]
-   },
-   "hp": 13,
-   "sp": 13,
-   "correct": "2♥",
-   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     13,
-     10,
-     4
-    ],
-    "H": [
-     14,
-     10,
-     5,
-     4
-    ],
-    "D": [
-     9,
-     2
-    ],
-    "C": [
-     13,
-     12,
-     7,
-     4
     ]
    },
    "hp": 12,
@@ -391,118 +761,58 @@
    "hand": {
     "S": [
      12,
-     8
+     10,
+     9
     ],
     "H": [
-     10,
-     9,
      7,
-     6
-    ],
-    "D": [
-     14,
-     8,
-     3
-    ],
-    "C": [
-     14,
-     12,
-     8,
-     6
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2♥",
-   "why": "Fire hjerter: 2♥."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     12,
-     10,
-     4
-    ],
-    "H": [
-     14,
-     10,
-     8,
-     4
-    ],
-    "D": [
-     10,
-     8
-    ],
-    "C": [
-     14,
-     12,
-     6,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2♥",
-   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     13,
-     4
-    ],
-    "H": [
-     13,
-     8,
-     6,
-     3
-    ],
-    "D": [
-     11,
-     9,
-     8
-    ],
-    "C": [
-     14,
-     12,
-     8,
-     4
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2♥",
-   "why": "Fire hjerter: 2♥."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     7,
-     3
-    ],
-    "H": [
-     14,
-     5,
      4,
+     3,
      2
     ],
     "D": [
-     14,
-     10,
-     3
+     11,
+     10
     ],
     "C": [
+     14,
      13,
      12,
-     8,
-     4
+     9
     ]
    },
-   "hp": 13,
-   "sp": 14,
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     13,
+     12
+    ],
+    "H": [
+     12,
+     9,
+     8,
+     5
+    ],
+    "D": [
+     14,
+     7,
+     2
+    ],
+    "C": [
+     11,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
    "correct": "2♥",
    "why": "Fire hjerter: 2♥."
   },
@@ -510,24 +820,114 @@
    "situation": "aabner_1kl",
    "hand": {
     "S": [
-     13,
-     12,
-     4
-    ],
-    "H": [
-     13,
-     9,
-     5,
-     3
-    ],
-    "D": [
      11,
      8,
      2
     ],
+    "H": [
+     13,
+     11,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     10,
+     7
+    ],
     "C": [
+     14,
+     11,
+     9
+    ]
+   },
+   "hp": 14,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     11,
+     3
+    ],
+    "H": [
+     14,
      13,
      10,
+     5
+    ],
+    "D": [
+     11,
+     10,
+     7
+    ],
+    "C": [
+     13,
+     9,
+     8,
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "Fire hjerter: 2♥."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     9,
+     4
+    ],
+    "H": [
+     14,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     11,
+     10
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "Fire hjerter: 2♥."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9
+    ],
+    "H": [
+     12,
+     9,
+     8,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     2
+    ],
+    "C": [
+     10,
+     6,
      4
     ]
    },
@@ -541,104 +941,13 @@
    "hand": {
     "S": [
      14,
-     9
-    ],
-    "H": [
      8,
-     6,
-     5,
-     2
-    ],
-    "D": [
-     14,
-     13,
-     7
-    ],
-    "C": [
-     12,
-     11,
-     10,
-     2
-    ]
-   },
-   "hp": 14,
-   "sp": 15,
-   "correct": "2♥",
-   "why": "Fire hjerter: 2♥."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     14,
-     13,
-     10
-    ],
-    "H": [
-     13,
-     11,
-     9,
-     2
-    ],
-    "D": [
-     7,
-     6
-    ],
-    "C": [
-     12,
-     6,
-     5,
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2♥",
-   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     13,
-     7
-    ],
-    "H": [
-     14,
-     10,
-     5,
      4
     ],
-    "D": [
-     12,
-     10,
-     3
-    ],
-    "C": [
-     14,
-     9,
-     6,
-     3
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2♥",
-   "why": "Fire hjerter: 2♥."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     12,
-     11,
-     6
-    ],
     "H": [
      14,
-     10,
      7,
-     4
+     6
     ],
     "D": [
      12,
@@ -646,129 +955,10 @@
     ],
     "C": [
      13,
-     10,
-     5,
-     3
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2♥",
-   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     12,
-     8,
-     5
-    ],
-    "H": [
-     13,
-     10,
-     8
-    ],
-    "D": [
-     8,
-     2
-    ],
-    "C": [
-     14,
-     12,
      11,
-     5,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     14,
-     7,
-     4
-    ],
-    "H": [
-     10,
-     5,
-     4
-    ],
-    "D": [
-     14,
-     6
-    ],
-    "C": [
-     13,
-     12,
-     7,
-     5,
-     4
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     13,
-     7,
-     3
-    ],
-    "H": [
-     12,
-     10
-    ],
-    "D": [
-     14,
-     8,
-     5
-    ],
-    "C": [
-     14,
-     10,
      6,
      4,
      3
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     11,
-     7,
-     5
-    ],
-    "H": [
-     14,
-     9,
-     8
-    ],
-    "D": [
-     12,
-     11
-    ],
-    "C": [
-     13,
-     12,
-     11,
-     9,
-     5
     ]
    },
    "hp": 14,
@@ -781,24 +971,24 @@
    "hand": {
     "S": [
      13,
-     11,
+     10,
      7
     ],
     "H": [
-     14,
-     10
+     12,
+     6
     ],
     "D": [
      13,
      11,
-     8
+     7
     ],
     "C": [
+     13,
      12,
-     10,
-     9,
-     7,
-     6
+     8,
+     6,
+     4
     ]
    },
    "hp": 14,
@@ -811,88 +1001,28 @@
    "hand": {
     "S": [
      14,
-     9,
-     7
-    ],
-    "H": [
-     11,
-     10,
-     4
-    ],
-    "D": [
-     12,
-     8,
-     6
-    ],
-    "C": [
-     14,
-     11,
-     8,
-     3
-    ]
-   },
-   "hp": 12,
-   "sp": 12,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     12,
      10,
      6
     ],
     "H": [
      13,
-     3
-    ],
-    "D": [
-     5,
-     4,
-     3
-    ],
-    "C": [
-     14,
-     13,
-     11,
-     6,
-     4
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     10,
      9,
-     2
-    ],
-    "H": [
-     12,
-     8,
-     2
+     6
     ],
     "D": [
-     13,
-     10,
-     7
+     14,
+     8
     ],
     "C": [
-     14,
-     13,
+     12,
+     11,
+     7,
      5,
-     4
+     3
     ]
    },
-   "hp": 12,
-   "sp": 12,
+   "hp": 14,
+   "sp": 15,
    "correct": "2♠",
    "why": "Tre spar og ikke fire hjerter: 2♠."
   },
@@ -900,85 +1030,25 @@
    "situation": "aabner_1kl",
    "hand": {
     "S": [
-     12,
+     14,
      10,
      9
     ],
     "H": [
-     14,
      13,
-     3
-    ],
-    "D": [
-     3,
-     2
-    ],
-    "C": [
-     13,
-     10,
      7,
-     4,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     12,
-     9,
-     8
-    ],
-    "H": [
-     12,
-     6,
-     2
+     4
     ],
     "D": [
      5,
-     4
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     9,
-     8
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     13,
-     4,
-     2
-    ],
-    "H": [
-     9,
-     5
-    ],
-    "D": [
-     14,
-     8,
      3
     ],
     "C": [
-     13,
-     12,
-     4,
-     3,
-     2
+     14,
+     11,
+     8,
+     6,
+     5
     ]
    },
    "hp": 12,
@@ -990,89 +1060,59 @@
    "situation": "aabner_1kl",
    "hand": {
     "S": [
+     13,
      12,
-     11,
-     10
+     8
     ],
     "H": [
-     14,
-     13,
-     10
-    ],
-    "D": [
-     12,
-     10
-    ],
-    "C": [
      9,
-     7,
-     6,
-     3,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     11,
-     6,
      4
     ],
-    "H": [
+    "D": [
      14,
      13,
      12
     ],
-    "D": [
-     12,
-     4,
-     3
-    ],
     "C": [
      10,
-     6,
-     4,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 12,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     13,
-     4,
-     3
-    ],
-    "H": [
-     14,
      9,
-     7
-    ],
-    "D": [
-     13,
-     3
-    ],
-    "C": [
-     13,
      8,
      7,
-     4,
-     3
+     6
     ]
    },
-   "hp": 13,
-   "sp": 14,
+   "hp": 14,
+   "sp": 15,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     12,
+     11,
+     6
+    ],
+    "H": [
+     8,
+     4,
+     2
+    ],
+    "D": [
+     4,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     7,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
    "correct": "2♠",
    "why": "Tre spar og ikke fire hjerter: 2♠."
   },
@@ -1081,28 +1121,28 @@
    "hand": {
     "S": [
      14,
-     11,
+     9,
      2
     ],
     "H": [
-     13,
-     11,
+     12,
      3
     ],
     "D": [
-     11,
-     4,
-     2
+     12,
+     7,
+     3
     ],
     "C": [
-     12,
+     14,
      10,
+     9,
      8,
-     2
+     6
     ]
    },
    "hp": 12,
-   "sp": 12,
+   "sp": 13,
    "correct": "2♠",
    "why": "Tre spar og ikke fire hjerter: 2♠."
   },
@@ -1110,505 +1150,1045 @@
    "situation": "aabner_1kl",
    "hand": {
     "S": [
+     14,
+     13,
+     2
+    ],
+    "H": [
+     10,
+     3
+    ],
+    "D": [
+     14,
      11,
      4
     ],
-    "H": [
+    "C": [
+     10,
+     9,
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
      14,
-     13,
-     6
+     8,
+     7
+    ],
+    "H": [
+     8,
+     5,
+     3
     ],
     "D": [
-     12,
      11,
-     8
+     3
     ],
     "C": [
+     14,
+     13,
+     9,
+     8,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
      12,
-     11,
-     4,
      3,
      2
-    ]
-   },
-   "hp": 14,
-   "sp": 15,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     11,
-     4
     ],
     "H": [
-     11,
-     10,
-     3
+     13,
+     2
     ],
     "D": [
      13,
      11,
-     4
-    ],
-    "C": [
-     14,
-     13,
-     10,
-     8,
-     4
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     11,
      5
     ],
-    "H": [
-     14,
+    "C": [
+     13,
      12,
-     3
-    ],
-    "D": [
-     13,
-     7,
-     5
-    ],
-    "C": [
-     14,
      10,
-     9,
-     6,
+     7,
      5
     ]
    },
    "hp": 14,
    "sp": 15,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
   },
   {
    "situation": "aabner_1kl",
    "hand": {
     "S": [
-     4,
+     13,
+     12,
      2
     ],
     "H": [
-     10,
-     7,
-     4
+     14,
+     11,
+     6
     ],
     "D": [
-     14,
-     13,
-     9
+     11,
+     10,
+     4
     ],
     "C": [
-     14,
      12,
+     11,
      8,
-     3,
      2
     ]
    },
-   "hp": 13,
+   "hp": 14,
    "sp": 14,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
   },
   {
    "situation": "aabner_1kl",
    "hand": {
     "S": [
      13,
+     7,
      6
     ],
     "H": [
+     14,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     7,
+     2
+    ],
+    "C": [
      12,
-     6,
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     9,
+     8,
      5
+    ],
+    "H": [
+     11,
+     6
     ],
     "D": [
      14,
      6,
-     3
+     4
     ],
     "C": [
      14,
-     8,
-     7,
+     13,
+     10,
      5,
      2
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     10,
-     6
-    ],
-    "H": [
-     12,
-     9,
-     3
-    ],
-    "D": [
-     14,
-     12,
-     4
-    ],
-    "C": [
-     13,
-     11,
-     10,
-     4,
-     3
     ]
    },
    "hp": 12,
    "sp": 13,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
   },
   {
    "situation": "aabner_1kl",
    "hand": {
     "S": [
+     12,
      6,
      4
     ],
     "H": [
-     13,
-     12,
-     8
-    ],
-    "D": [
-     14,
      7,
-     3
-    ],
-    "C": [
-     13,
-     11,
-     9,
-     8,
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     5,
-     2
-    ],
-    "H": [
-     6,
-     4,
-     3
+     4
     ],
     "D": [
-     13,
-     11,
-     8
+     12,
+     8,
+     4
     ],
     "C": [
      14,
      13,
      11,
-     5,
-     3
+     10,
+     7
     ]
    },
    "hp": 12,
    "sp": 13,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
   },
   {
    "situation": "aabner_1kl",
    "hand": {
     "S": [
+     13,
      12,
-     5
+     10
     ],
     "H": [
-     14,
-     12,
-     7
+     5,
+     2
     ],
     "D": [
-     14,
+     13,
      12,
-     4
+     3
     ],
     "C": [
+     14,
      10,
-     8,
-     6,
-     5,
-     3
+     9,
+     7,
+     4
     ]
    },
    "hp": 14,
    "sp": 15,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
   },
   {
    "situation": "aabner_1kl",
    "hand": {
     "S": [
-     12,
-     7
+     13,
+     10,
+     6
     ],
     "H": [
-     12,
-     8,
-     4
+     11,
+     6,
+     2
     ],
     "D": [
-     14,
-     10,
-     9
-    ],
-    "C": [
-     13,
-     12,
-     10,
+     11,
      4,
      2
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     9,
-     6
-    ],
-    "H": [
-     14,
-     9,
-     3
-    ],
-    "D": [
-     13,
-     9,
-     5
     ],
     "C": [
      14,
-     12,
-     9,
-     7,
-     3
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     10,
-     7
-    ],
-    "H": [
-     14,
-     12,
-     6
-    ],
-    "D": [
      13,
      12,
      9
-    ],
-    "C": [
-     12,
-     9,
-     8,
-     7,
-     3
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     13,
-     8
-    ],
-    "H": [
-     14,
-     5,
-     4
-    ],
-    "D": [
-     14,
-     7,
-     4
-    ],
-    "C": [
-     13,
-     10,
-     7,
-     4,
-     3
     ]
    },
    "hp": 14,
-   "sp": 15,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+   "sp": 14,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
   },
   {
    "situation": "aabner_1kl",
    "hand": {
     "S": [
-     13,
-     4
-    ],
-    "H": [
-     10,
-     4,
-     3
-    ],
-    "D": [
      14,
-     7,
-     3
-    ],
-    "C": [
-     14,
-     11,
-     7,
-     6,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1kl",
-   "hand": {
-    "S": [
-     10,
-     6
-    ],
-    "H": [
-     13,
-     12,
-     8
-    ],
-    "D": [
-     12,
-     10,
-     6
-    ],
-    "C": [
-     14,
-     11,
-     9,
-     8,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     11,
-     10,
-     7,
-     4
-    ],
-    "H": [
      13,
      11
     ],
+    "H": [
+     7,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     7
+    ],
+    "C": [
+     10,
+     7,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     9
+    ],
+    "H": [
+     12,
+     10,
+     4
+    ],
     "D": [
      11,
+     10,
+     7
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     12,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     8
+    ],
+    "D": [
+     14,
+     11,
+     9
+    ],
+    "C": [
+     12,
+     11,
+     8,
+     6,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     8
+    ],
+    "H": [
      6,
      5,
      2
     ],
+    "D": [
+     12,
+     10
+    ],
     "C": [
+     14,
+     13,
+     10,
+     9,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     13,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     10
+    ],
+    "D": [
+     12,
+     11,
+     3
+    ],
+    "C": [
+     14,
+     8,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     5,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     9
+    ],
+    "D": [
+     14,
+     12,
+     9
+    ],
+    "C": [
+     11,
+     10,
+     9,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     14,
+     4
+    ],
+    "H": [
+     14,
+     8,
+     4
+    ],
+    "D": [
+     5,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     9,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     14,
+     5
+    ],
+    "H": [
+     13,
+     6,
+     3
+    ],
+    "D": [
+     6,
+     3,
+     2
+    ],
+    "C": [
+     14,
      12,
      9,
+     8,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     3,
+     2
+    ],
+    "H": [
+     12,
+     7,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     4
+    ],
+    "C": [
+     13,
+     11,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     14,
+     4
+    ],
+    "H": [
+     13,
+     10,
+     9
+    ],
+    "D": [
+     9,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     4,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     11,
+     7
+    ],
+    "H": [
+     13,
+     12,
+     10
+    ],
+    "D": [
+     14,
+     10,
+     8
+    ],
+    "C": [
+     13,
+     9,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     10,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     3
+    ],
+    "D": [
+     13,
+     9,
+     6
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     5,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     14,
+     10
+    ],
+    "H": [
+     13,
+     9,
+     4
+    ],
+    "D": [
+     4,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     12,
+     8
+    ],
+    "H": [
+     13,
+     11,
+     3
+    ],
+    "D": [
+     13,
+     10,
+     6
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     6,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     12,
+     8
+    ],
+    "H": [
+     13,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     7,
+     6
+    ],
+    "C": [
+     14,
+     10,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     12,
+     11
+    ],
+    "H": [
+     14,
+     11,
+     6
+    ],
+    "D": [
+     13,
+     9,
+     7
+    ],
+    "C": [
+     12,
+     10,
+     8,
+     7,
      6
     ]
    },
-   "hp": 8,
-   "sp": 9,
-   "correct": "Pas",
-   "why": "8 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
+   "hp": 13,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     12,
+     2
+    ],
+    "H": [
+     13,
+     5,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     9
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     6,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     9,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     9
+    ],
+    "D": [
+     13,
+     6,
+     5
+    ],
+    "C": [
+     13,
+     10,
+     7,
+     6,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     12,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     5
+    ],
+    "D": [
+     14,
+     11,
+     4
+    ],
+    "C": [
+     12,
+     8,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     7,
+     6
+    ],
+    "H": [
+     11,
+     5,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     9
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     6,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     10,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     6
+    ],
+    "D": [
+     14,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     3,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     13,
+     4
+    ],
+    "H": [
+     11,
+     10,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     6
+    ],
+    "C": [
+     13,
+     10,
+     8,
+     7,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     9,
+     6,
+     2
+    ],
+    "D": [
+     10,
+     9,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     8,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1kl",
+   "hand": {
+    "S": [
+     14,
+     8
+    ],
+    "H": [
+     11,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     7,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     7,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
   },
   {
    "situation": "svar_1kl",
    "hand": {
     "S": [
-     10,
+     12,
      9,
-     8,
-     3
+     5,
+     4
     ],
     "H": [
-     8,
-     5,
-     2
+     14,
+     10
     ],
     "D": [
-     12,
-     7,
-     5
+     13,
+     8,
+     6,
+     2
     ],
     "C": [
-     14,
      6,
-     3
+     4,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "9 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     11,
+     9,
+     8,
+     2
+    ],
+    "H": [
+     11,
+     10,
+     6
+    ],
+    "D": [
+     5,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     11,
+     5
     ]
    },
    "hp": 6,
@@ -1620,115 +2200,25 @@
    "situation": "svar_1kl",
    "hand": {
     "S": [
-     12,
-     11,
-     10,
-     9
-    ],
-    "H": [
-     8,
-     2
-    ],
-    "D": [
-     7,
-     5,
-     2
-    ],
-    "C": [
      14,
-     11,
      10,
+     9,
      3
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "Pas",
-   "why": "8 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     10,
-     8,
-     4,
-     2
     ],
     "H": [
-     11,
-     9
-    ],
-    "D": [
      13,
      12,
-     4,
      3
     ],
-    "C": [
-     9,
-     7,
-     5
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "Pas",
-   "why": "6 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     11,
-     9,
-     5,
-     4
-    ],
-    "H": [
-     7,
-     5,
-     2
-    ],
     "D": [
-     11,
      10,
-     3,
-     2
-    ],
-    "C": [
-     14,
-     7
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "Pas",
-   "why": "6 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     12,
-     6,
-     4,
-     2
-    ],
-    "H": [
-     9,
-     5
-    ],
-    "D": [
-     9,
-     6,
+     8,
+     7,
      4
     ],
     "C": [
-     14,
-     12,
-     11,
-     8
+     9,
+     3
     ]
    },
    "hp": 9,
@@ -1741,144 +2231,54 @@
    "hand": {
     "S": [
      12,
-     10,
-     6,
-     3
-    ],
-    "H": [
-     14,
      11,
-     4
-    ],
-    "D": [
-     7,
-     6,
-     5,
-     3
-    ],
-    "C": [
-     8,
-     6
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "Pas",
-   "why": "7 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     13,
-     10,
-     5,
-     2
-    ],
-    "H": [
-     12,
-     7,
-     6
-    ],
-    "D": [
-     10,
-     3
-    ],
-    "C": [
-     11,
-     10,
-     7,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "Pas",
-   "why": "6 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     11,
-     10,
-     8,
-     6
-    ],
-    "H": [
-     14,
      9,
+     3
+    ],
+    "H": [
+     11,
+     7,
      6
     ],
     "D": [
-     10,
-     5
-    ],
-    "C": [
-     11,
-     10,
-     5,
-     4
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "Pas",
-   "why": "6 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     11,
-     10,
-     5,
-     2
-    ],
-    "H": [
-     13,
-     11,
-     5
-    ],
-    "D": [
-     10,
-     8,
-     7,
+     6,
      4
     ],
     "C": [
      12,
-     6
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "Pas",
-   "why": "7 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     11,
-     10,
-     6,
-     4
-    ],
-    "H": [
      11,
      3,
      2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "Pas",
+   "why": "7 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     10,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     11,
+     8,
+     7
     ],
     "D": [
-     14,
      10,
-     9
+     8,
+     2
     ],
     "C": [
-     9,
-     8,
-     6
+     13,
+     12,
+     4
     ]
    },
    "hp": 6,
@@ -1890,55 +2290,25 @@
    "situation": "svar_1kl",
    "hand": {
     "S": [
-     13,
      12,
-     10,
-     2
-    ],
-    "H": [
-     10,
-     7
-    ],
-    "D": [
      6,
      5,
+     4
+    ],
+    "H": [
      4,
      2
     ],
-    "C": [
-     11,
-     10,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "Pas",
-   "why": "6 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     13,
-     10,
-     6,
-     4
-    ],
-    "H": [
-     11,
-     5
-    ],
     "D": [
+     14,
      12,
-     10,
-     5,
+     7,
      3
     ],
     "C": [
-     12,
-     10,
-     4
+     7,
+     4,
+     2
     ]
    },
    "hp": 8,
@@ -1951,54 +2321,24 @@
    "hand": {
     "S": [
      13,
-     11,
+     12,
      10,
-     4
+     3
     ],
     "H": [
-     10,
+     12,
+     9,
      6
     ],
     "D": [
-     14,
      8,
-     4,
+     7,
+     5,
      2
     ],
     "C": [
-     6,
-     5,
-     3
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "Pas",
-   "why": "8 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     14,
-     9,
-     6,
-     3
-    ],
-    "H": [
-     14,
-     3
-    ],
-    "D": [
-     8,
-     6,
-     5,
-     4
-    ],
-    "C": [
-     11,
-     9,
-     3
+     12,
+     8
     ]
    },
    "hp": 9,
@@ -2010,24 +2350,114 @@
    "situation": "svar_1kl",
    "hand": {
     "S": [
+     13,
      11,
-     9,
-     5,
-     4,
+     7,
+     5
+    ],
+    "H": [
+     7,
      3
     ],
-    "H": [],
+    "D": [
+     13,
+     9,
+     3,
+     2
+    ],
+    "C": [
+     10,
+     6,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "Pas",
+   "why": "7 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     14,
+     7,
+     5,
+     4
+    ],
+    "H": [
+     10,
+     2
+    ],
     "D": [
      12,
      10,
-     8,
-     4
+     4,
+     3,
+     2
     ],
     "C": [
      14,
+     6
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "2♣",
+   "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     9,
+     6,
+     5
+    ],
+    "H": [
      13,
-     5,
-     3
+     2
+    ],
+    "D": [
+     10,
+     4
+    ],
+    "C": [
+     11,
+     7,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "2♣",
+   "why": "11 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7,
+     4
+    ],
+    "H": [],
+    "D": [
+     13,
+     12,
+     11,
+     10,
+     5
+    ],
+    "C": [
+     10,
+     9,
+     7,
+     6
     ]
    },
    "hp": 10,
@@ -2041,23 +2471,53 @@
     "S": [
      13,
      11,
-     9,
-     5
+     10,
+     6,
+     4,
+     3
     ],
     "H": [
-     14,
-     6
+     10
     ],
     "D": [
      13,
+     12,
      9,
+     3
+    ],
+    "C": [
+     12,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "2♣",
+   "why": "11 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     14,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     13,
      5,
      2
     ],
+    "D": [
+     11,
+     10
+    ],
     "C": [
+     12,
+     11,
      9,
-     5,
-     2
+     6
     ]
    },
    "hp": 11,
@@ -2069,23 +2529,3578 @@
    "situation": "svar_1kl",
    "hand": {
     "S": [
+     14,
+     12,
      11,
+     6
+    ],
+    "H": [
+     13,
      9,
-     8,
-     7,
      2
     ],
-    "H": [],
     "D": [
-     12,
+     9,
      8,
      7,
      5,
      2
     ],
     "C": [
+     10
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "2♣",
+   "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
      14,
      13,
+     12,
+     11,
+     7,
+     6
+    ],
+    "H": [
+     6,
+     5
+    ],
+    "D": [
+     11,
+     7,
+     5
+    ],
+    "C": [
+     8,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "2♣",
+   "why": "11 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     14,
+     9,
+     6,
+     2
+    ],
+    "H": [
+     12,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     11,
+     7
+    ],
+    "C": [
+     9,
+     4,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "correct": "2♣",
+   "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     9,
+     4
+    ],
+    "H": [],
+    "D": [
+     12,
+     10,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "13 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     7,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     3
+    ],
+    "D": [
+     11,
+     10,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "14 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     10,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     6,
+     4
+    ],
+    "C": []
+   },
+   "hp": 13,
+   "sp": 19,
+   "correct": "2♦",
+   "why": "13 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     8,
+     6,
+     4
+    ],
+    "H": [],
+    "D": [
+     13,
+     11,
+     8,
+     5,
+     3
+    ],
+    "C": [
+     11,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 19,
+   "correct": "2♦",
+   "why": "13 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     8,
+     7
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     12,
+     7,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     9
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "15 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     9,
+     2
+    ],
+    "H": [
+     10,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     7,
+     6
+    ],
+    "C": []
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "13 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7,
+     4
+    ],
+    "H": [
+     13,
+     7
+    ],
+    "D": [
+     12,
+     6
+    ],
+    "C": [
+     14,
+     9,
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "15 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     6,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     2
+    ],
+    "D": [
+     12,
+     6,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "14 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     8,
+     6,
+     4,
+     2
+    ],
+    "H": [],
+    "D": [
+     12,
+     7,
+     5
+    ],
+    "C": [
+     9,
+     5,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "Svag hånd med 7 spar: 2♠ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     11,
+     10,
+     6,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     8
+    ],
+    "D": [
+     7,
+     5,
+     2
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "2♠",
+   "why": "Svag hånd med 6 spar: 2♠ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9,
+     7,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     10,
+     3
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     7,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "2♠",
+   "why": "Svag hånd med 7 spar: 2♠ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     12,
+     11,
+     8,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     11,
+     10
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     12,
+     6,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "Svag hånd med 6 spar: 2♠ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     12,
+     9,
+     8,
+     7,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     12
+    ],
+    "D": [
+     9,
+     8,
+     5
+    ],
+    "C": [
+     11,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "2♠",
+   "why": "Svag hånd med 6 spar: 2♠ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     8,
+     7,
+     6
+    ],
+    "H": [
+     13,
+     9,
+     3
+    ],
+    "D": [
+     11,
+     3,
+     2
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "Svag hånd med 6 spar: 2♠ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     7,
+     6,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     10,
+     3
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     13,
+     11,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "2♠",
+   "why": "Svag hånd med 7 spar: 2♠ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     13,
+     10,
+     7,
+     6,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     10,
+     7
+    ],
+    "D": [
+     10,
+     4,
+     2
+    ],
+    "C": []
+   },
+   "hp": 7,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "Svag hånd med 7 spar: 2♠ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     6,
+     4
+    ],
+    "H": [
+     11,
+     6
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     12,
+     9,
+     6,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "Svag hånd med 6 klør: 3♣ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10,
+     4
+    ],
+    "H": [
+     11,
+     6
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "Svag hånd med 6 klør: 3♣ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     9,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     3,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     8,
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "Svag hånd med 6 klør: 3♣ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     13,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     6,
+     5
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "Svag hånd med 6 klør: 3♣ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     10,
+     8,
+     5,
+     2
+    ],
+    "H": [
+     12,
+     10
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     8,
+     7,
+     6
+    ]
+   },
+   "hp": 7,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "Svag hånd med 6 klør: 3♣ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9,
+     4
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     12,
+     9
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     7,
+     4,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "Svag hånd med 6 klør: 3♣ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     10,
+     9,
+     8,
+     4
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     9,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "Svag hånd med 6 klør: 3♣ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1kl",
+   "hand": {
+    "S": [
+     9,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     11,
+     7
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     14,
+     13,
+     8,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "Svag hånd med 6 klør: 3♣ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "relae_1kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     8,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "2♠",
+   "why": "6 spar og 11 hp: 2♠ viser 5-farven, invit."
+  },
+  {
+   "situation": "relae_1kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     8,
+     6,
+     3
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     13,
+     9,
+     8,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "2♠",
+   "why": "5 spar og 10 hp: 2♠ viser 5-farven, invit."
+  },
+  {
+   "situation": "relae_1kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10,
+     7,
+     6
+    ],
+    "H": [
+     2
+    ],
+    "D": [
+     13,
+     10,
+     8,
+     7
+    ],
+    "C": [
+     13,
+     10,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "2♠",
+   "why": "5 spar og 10 hp: 2♠ viser 5-farven, invit."
+  },
+  {
+   "situation": "relae_1kl",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     2
+    ],
+    "D": [
+     10,
+     6
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "5 spar og 10 hp: 2♠ viser 5-farven, invit."
+  },
+  {
+   "situation": "relae_1kl",
+   "hand": {
+    "S": [
+     14,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     10,
+     5
+    ],
+    "D": [
+     14,
+     9,
+     7,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     7
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2NT",
+   "why": "10 hp uden 5-farve: 2NT er invit."
+  },
+  {
+   "situation": "relae_1kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     2
+    ],
+    "H": [
+     10,
+     8,
+     6
+    ],
+    "D": [
+     11,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     10
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "11 hp uden 5-farve: 2NT er invit."
+  },
+  {
+   "situation": "relae_1kl",
+   "hand": {
+    "S": [
+     11,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     7,
+     4
+    ],
+    "D": [
+     11,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2NT",
+   "why": "10 hp uden 5-farve: 2NT er invit."
+  },
+  {
+   "situation": "relae_1kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     8
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     11,
+     9,
+     6,
+     3
+    ],
+    "C": [
+     11,
+     8,
+     7
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "11 hp uden 5-farve: 2NT er invit."
+  },
+  {
+   "situation": "relae_1kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     3,
+     2
+    ],
+    "H": [
+     9,
+     7
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     8,
+     7
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "5 spar og 5 klør: 3♣ viser 5-5, invit eller bedre."
+  },
+  {
+   "situation": "relae_1kl",
+   "hand": {
+    "S": [
+     9,
+     7,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     2
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     5,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "5 spar og 5 klør: 3♣ viser 5-5, invit eller bedre."
+  },
+  {
+   "situation": "relae_1kl",
+   "hand": {
+    "S": [
+     12,
+     8,
+     7,
+     4,
+     2
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     12,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     8,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "5 spar og 5 klør: 3♣ viser 5-5, invit eller bedre."
+  },
+  {
+   "situation": "relae_1kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     7,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     8,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "5 spar og 5 klør: 3♣ viser 5-5, invit eller bedre."
+  },
+  {
+   "situation": "relae_1kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8,
+     5,
+     3
+    ],
+    "H": [],
+    "D": [
+     12,
+     9,
+     7,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     5,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "5 spar og 5 ruder: 3♦ viser 5-5, invit eller bedre."
+  },
+  {
+   "situation": "relae_1kl",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9,
+     7,
+     6
+    ],
+    "H": [],
+    "D": [
+     14,
+     12,
+     11,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "5 spar og 5 ruder: 3♦ viser 5-5, invit eller bedre."
+  },
+  {
+   "situation": "relae_1kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     7,
+     5
+    ],
+    "H": [
+     8,
+     7
+    ],
+    "D": [
+     14,
+     10,
+     9,
+     8,
+     4
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "5 spar og 5 ruder: 3♦ viser 5-5, invit eller bedre."
+  },
+  {
+   "situation": "relae_1kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     8,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     7,
+     2
+    ],
+    "C": []
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "5 spar og 5 ruder: 3♦ viser 5-5, invit eller bedre."
+  },
+  {
+   "situation": "relae_1kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     6,
+     4,
+     3,
+     2
+    ],
+    "D": [],
+    "C": [
+     11,
+     6,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "5 spar og 5 hjerter: 3♥ viser 5-5, invit eller bedre."
+  },
+  {
+   "situation": "relae_1kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     8,
+     7
+    ],
+    "H": [
+     13,
+     10,
+     7,
+     5,
+     2
+    ],
+    "D": [],
+    "C": [
+     9,
+     5,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "5 spar og 5 hjerter: 3♥ viser 5-5, invit eller bedre."
+  },
+  {
+   "situation": "relae_1kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     8,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     7,
+     6,
+     4
+    ],
+    "D": [],
+    "C": [
+     9,
+     5,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "5 spar og 5 hjerter: 3♥ viser 5-5, invit eller bedre."
+  },
+  {
+   "situation": "relae_1kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     7,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     8,
+     7,
+     6
+    ],
+    "C": []
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "5 spar og 5 hjerter: 3♥ viser 5-5, invit eller bedre."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     7,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     11,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     9
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     5
+    ],
+    "D": [
+     12,
+     9,
+     8,
+     5
+    ],
+    "C": [
+     10,
+     8
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10
+    ],
+    "H": [
+     12,
+     8,
+     7,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     8,
+     2
+    ],
+    "C": [
+     13,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     12,
+     9
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     4,
+     2
+    ],
+    "C": [
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "Fire hjerter: 2♥."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     14,
+     9,
+     5
+    ],
+    "H": [
+     14,
+     11,
+     5,
+     4
+    ],
+    "D": [
+     12,
+     11,
+     7,
+     5
+    ],
+    "C": [
+     5,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     11,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     4
+    ],
+    "D": [
+     14,
+     11,
+     5,
+     3
+    ],
+    "C": [
+     4,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     14,
+     7
+    ],
+    "H": [
+     14,
+     9,
+     8,
+     6
+    ],
+    "D": [
+     12,
+     8,
+     6,
+     3
+    ],
+    "C": [
+     13,
+     7,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "Fire hjerter: 2♥."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     14,
+     7
+    ],
+    "H": [
+     14,
+     8,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     10,
+     7,
+     6
+    ],
+    "C": [
+     12,
+     11,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "Fire hjerter: 2♥."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     12,
+     8
+    ],
+    "H": [
+     14,
+     9,
+     8,
+     6
+    ],
+    "D": [
+     14,
+     7,
+     5,
+     2
+    ],
+    "C": [
+     13,
+     8,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "Fire hjerter: 2♥."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     13,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     6,
+     5
+    ],
+    "D": [
+     14,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2♥",
+   "why": "Fire hjerter: 2♥."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     10,
+     7
+    ],
+    "H": [
+     13,
+     9,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     5,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "Fire hjerter: 2♥."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9
+    ],
+    "H": [
+     8,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     9,
+     7,
+     5
+    ],
+    "C": [
+     12,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     8,
+     7
+    ],
+    "H": [
+     11,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     11,
+     8,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     11
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "Fire hjerter: 2♥."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     14,
+     11
+    ],
+    "H": [
+     13,
+     11,
+     6,
+     4
+    ],
+    "D": [
+     11,
+     10,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     5,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "Fire hjerter: 2♥."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     14,
+     7,
+     5
+    ],
+    "H": [
+     13,
+     11,
+     6,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     8,
+     6
+    ],
+    "C": [
+     6,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     13,
+     6,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     7
+    ],
+    "D": [
+     12,
+     11,
+     8,
+     2
+    ],
+    "C": [
+     12,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2♥",
+   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     2
+    ],
+    "D": [
+     11,
+     8,
+     7,
+     2
+    ],
+    "C": [
+     13,
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2♥",
+   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     14,
+     4
+    ],
+    "H": [
+     12,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     3
+    ],
+    "C": [
+     10,
+     4,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "Fire hjerter: 2♥."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     14,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     7
+    ],
+    "D": [
+     10,
+     9,
+     8,
+     2
+    ],
+    "C": [
+     13,
+     12
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2♥",
+   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7
+    ],
+    "H": [
+     14,
+     8,
+     5,
+     2
+    ],
+    "D": [
+     10,
+     8,
+     7,
+     6
+    ],
+    "C": [
+     12,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     14,
+     10,
+     4
+    ],
+    "H": [
+     14,
+     8,
+     6
+    ],
+    "D": [
+     14,
+     9,
+     7,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     8
+    ],
+    "H": [
+     11,
+     10,
+     7
+    ],
+    "D": [
+     14,
+     12,
+     7,
+     3
+    ],
+    "C": [
+     13,
+     9,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     11,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     10,
+     5
+    ],
+    "D": [
+     11,
+     9,
+     6,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9
+    ],
+    "H": [
+     12,
+     11
+    ],
+    "D": [
+     12,
+     11,
+     9,
+     8,
+     6
+    ],
+    "C": [
+     12,
+     11,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     12,
+     7,
+     4
+    ],
+    "H": [
+     12,
+     8,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     5
+    ],
+    "C": [
+     11,
+     5,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     11,
+     8,
+     3
+    ],
+    "H": [
+     14,
+     8,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     5,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     9
+    ]
+   },
+   "hp": 14,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     2
+    ],
+    "H": [
+     4,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     7,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     12,
+     8,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     6
+    ],
+    "D": [
+     12,
+     7,
+     6,
+     2
+    ],
+    "C": [
+     13,
+     8,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7
+    ],
+    "H": [
+     10,
+     8,
+     5
+    ],
+    "D": [
+     12,
+     7,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     9,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     6
+    ],
+    "H": [
+     13,
+     12,
+     10
+    ],
+    "D": [
+     13,
+     9,
+     8,
+     4
+    ],
+    "C": [
+     9,
+     7,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     12,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     9
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     7,
+     2
+    ],
+    "C": [
+     5,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9
+    ],
+    "H": [
+     10,
+     8,
+     3
+    ],
+    "D": [
+     14,
+     9,
+     6,
+     3
+    ],
+    "C": [
+     14,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     4
+    ],
+    "H": [
+     12,
+     9,
+     8
+    ],
+    "D": [
+     10,
+     9,
+     7,
+     3
+    ],
+    "C": [
+     14,
+     7,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     13,
+     7,
+     3
+    ],
+    "H": [
+     10,
+     8,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     9,
+     2
+    ],
+    "C": [
+     14,
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     13,
+     8,
+     3
+    ],
+    "H": [
+     10,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     10
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     9,
+     8,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     9
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     7,
+     2
+    ],
+    "C": [
+     13,
+     10
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     13,
+     8,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     2
+    ],
+    "D": [
+     13,
+     9,
+     5,
+     2
+    ],
+    "C": [
+     12,
+     6,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     13,
+     8,
+     3
+    ],
+    "H": [
+     14,
+     8,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     8,
+     5
+    ],
+    "C": [
+     11,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     9,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     11
+    ],
+    "D": [
+     13,
+     10,
+     7,
+     5
+    ],
+    "C": [
+     14,
+     9,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     10,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     9
+    ],
+    "D": [
+     11,
+     7,
+     6,
+     5
+    ],
+    "C": [
+     14,
+     11,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "2♠",
+   "why": "Tre spar og ikke fire hjerter: 2♠."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     12,
+     11
+    ],
+    "H": [
+     13,
+     11,
+     6
+    ],
+    "D": [
+     13,
+     11,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     10,
+     9
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     8,
+     5
+    ],
+    "H": [
+     14,
+     8,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     12,
+     10
+    ],
+    "H": [
+     12,
+     8,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     11,
+     8
+    ],
+    "C": [
+     10,
+     4,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     13,
+     7
+    ],
+    "H": [
+     9,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     10,
+     5
+    ],
+    "C": [
+     13,
+     8,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     11,
+     2
+    ],
+    "H": [
+     14,
+     10,
+     9
+    ],
+    "D": [
+     14,
+     11,
+     9,
+     6,
+     5
+    ],
+    "C": [
+     13,
+     10,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     9,
+     7,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     10,
+     9,
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     12,
+     4
+    ],
+    "H": [
+     14,
+     10,
+     3
+    ],
+    "D": [
+     14,
+     9,
+     7,
+     6,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     14,
+     5
+    ],
+    "H": [
+     11,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     9,
+     8,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     14,
+     5
+    ],
+    "H": [
+     11,
+     10,
+     4
+    ],
+    "D": [
+     13,
+     7,
+     6,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     9
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     9,
+     7
+    ],
+    "H": [
+     14,
+     8,
+     6
+    ],
+    "D": [
+     13,
+     9,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     9,
+     7
+    ],
+    "H": [
+     7,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     8,
+     6,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     12
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     11,
+     2
+    ],
+    "H": [
+     14,
+     9,
+     7
+    ],
+    "D": [
+     14,
+     12,
+     8,
+     7,
+     6
+    ],
+    "C": [
+     13,
+     10,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     14,
+     8
+    ],
+    "H": [
+     13,
+     11,
+     8
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     8,
+     6
+    ],
+    "C": [
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     12,
+     11
+    ],
+    "H": [
+     13,
+     11,
+     7
+    ],
+    "D": [
+     14,
+     11,
+     7,
+     3,
+     2
+    ],
+    "C": [
+     10,
+     9,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     3,
+     2
+    ],
+    "H": [
+     14,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     11,
+     7,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     8,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     14,
+     10
+    ],
+    "H": [
+     13,
+     8,
+     2
+    ],
+    "D": [
+     13,
+     11,
+     7,
+     4,
+     2
+    ],
+    "C": [
+     11,
+     7,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     14,
+     4
+    ],
+    "H": [
+     11,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     8,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     13,
+     6
+    ],
+    "H": [
+     13,
+     11,
+     3
+    ],
+    "D": [
+     13,
+     10,
+     7,
+     6,
+     4
+    ],
+    "C": [
+     12,
+     11,
+     9
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     13,
+     3
+    ],
+    "H": [
+     9,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     6,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "aabner_1ru",
+   "hand": {
+    "S": [
+     6,
+     5
+    ],
+    "H": [
+     9,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     8,
+     7
+    ],
+    "C": [
+     13,
+     11,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     11,
+     9,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     10,
+     9,
+     4
+    ],
+    "C": [
+     12,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "Pas",
+   "why": "7 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9,
+     2
+    ],
+    "H": [
+     10,
+     5,
+     2
+    ],
+    "D": [
+     4,
+     3
+    ],
+    "C": [
+     14,
+     10,
+     8,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "Pas",
+   "why": "7 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     10,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     12
+    ],
+    "D": [
+     10,
+     7,
+     4,
+     2
+    ],
+    "C": [
+     10,
+     9,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "Pas",
+   "why": "6 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     11,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     10,
+     8,
+     5
+    ],
+    "D": [
+     13,
+     10,
+     9,
+     8
+    ],
+    "C": [
+     12,
+     6
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "Pas",
+   "why": "6 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     11,
+     7,
+     5,
+     4
+    ],
+    "H": [
+     13,
+     6,
+     4
+    ],
+    "D": [
+     11,
+     7,
+     4
+    ],
+    "C": [
+     13,
+     9,
+     8
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "correct": "Pas",
+   "why": "8 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     11,
+     9,
+     6,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     9
+    ],
+    "D": [
+     8,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     5,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "9 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     13,
+     8,
+     6,
+     4
+    ],
+    "H": [
+     7,
+     2
+    ],
+    "D": [
+     9,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     5,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "Pas",
+   "why": "8 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     10,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     11,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     8
+    ],
+    "C": [
+     12,
+     8,
+     4,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "Pas",
+   "why": "8 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     14,
+     10,
+     8,
+     3
+    ],
+    "H": [],
+    "D": [
+     10,
+     8,
+     7,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     7,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "2♣",
+   "why": "11 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     10,
+     8,
+     3
+    ],
+    "H": [],
+    "D": [
+     10,
+     8,
+     7
+    ],
+    "C": [
+     14,
+     7,
+     6,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "2♣",
+   "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     5,
+     4
+    ],
+    "D": [
+     9
+    ],
+    "C": [
+     13,
+     10,
+     5,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "2♣",
+   "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     7,
+     3
+    ],
+    "H": [
+     6,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     9,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     8
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "2♣",
+   "why": "11 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     10,
+     9,
+     5,
+     3
+    ],
+    "H": [],
+    "D": [
+     14,
+     13,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     4,
      2
     ]
    },
@@ -2095,237 +6110,57 @@
    "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
   },
   {
-   "situation": "svar_1kl",
+   "situation": "svar_1ru",
    "hand": {
     "S": [
      13,
+     10,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     13,
      11,
-     8,
      5
     ],
-    "H": [
-     11
-    ],
-    "D": [
-     11,
-     8,
-     3
-    ],
+    "D": [],
     "C": [
      13,
-     11,
-     8,
-     4,
-     3
-    ]
-   },
-   "hp": 10,
-   "sp": 13,
-   "correct": "2♣",
-   "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     14,
-     12,
-     10,
-     9,
-     6
-    ],
-    "H": [
-     9,
-     7,
-     2
-    ],
-    "D": [
-     14,
-     9,
-     4
-    ],
-    "C": [
-     4,
-     2
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "correct": "2♣",
-   "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
      10,
      7,
      6,
      2
-    ],
-    "H": [
-     2
-    ],
-    "D": [
-     14,
-     10,
-     8
-    ],
-    "C": [
-     14,
-     13,
-     8,
-     7,
-     5
     ]
    },
-   "hp": 11,
-   "sp": 14,
+   "hp": 10,
+   "sp": 15,
    "correct": "2♣",
-   "why": "11 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
+   "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
   },
   {
-   "situation": "svar_1kl",
+   "situation": "svar_1ru",
    "hand": {
     "S": [
      13,
-     11,
+     7,
      6,
+     5
+    ],
+    "H": [
      5,
      4
     ],
-    "H": [
-     10,
-     9
-    ],
     "D": [
-     3
-    ],
-    "C": [
      13,
-     12,
      11,
-     3,
-     2
-    ]
-   },
-   "hp": 10,
-   "sp": 14,
-   "correct": "2♣",
-   "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     14,
-     10,
-     6,
-     5
-    ],
-    "H": [
-     11,
-     9
-    ],
-    "D": [
-     9,
      4
     ],
     "C": [
-     13,
-     12,
-     10,
-     6,
-     5
-    ]
-   },
-   "hp": 10,
-   "sp": 12,
-   "correct": "2♣",
-   "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
      14,
-     10,
-     8,
-     7,
-     4,
-     3
-    ],
-    "H": [],
-    "D": [
-     10,
-     6
-    ],
-    "C": [
-     14,
-     12,
-     7,
-     6,
-     5
-    ]
-   },
-   "hp": 10,
-   "sp": 16,
-   "correct": "2♣",
-   "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     13,
-     10,
-     7,
-     6,
-     3,
-     2
-    ],
-    "H": [
-     11,
-     9,
-     3
-    ],
-    "D": [
-     11,
-     7
-    ],
-    "C": [
-     14,
-     12
-    ]
-   },
-   "hp": 11,
-   "sp": 13,
-   "correct": "2♣",
-   "why": "11 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     12,
      8,
      3,
      2
-    ],
-    "H": [
-     11,
-     10,
-     3
-    ],
-    "D": [
-     14,
-     11
-    ],
-    "C": [
-     12,
-     11,
-     10,
-     6
     ]
    },
    "hp": 11,
@@ -2334,115 +6169,26 @@
    "why": "11 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
   },
   {
-   "situation": "svar_1kl",
+   "situation": "svar_1ru",
    "hand": {
     "S": [
-     14,
-     7,
-     6,
-     3
-    ],
-    "H": [],
-    "D": [
-     14,
+     12,
      10,
-     7,
-     4,
-     3
-    ],
-    "C": [
-     13,
-     10,
+     9,
      5,
-     4
-    ]
-   },
-   "hp": 11,
-   "sp": 16,
-   "correct": "2♣",
-   "why": "11 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     14,
-     6,
-     5,
-     2
-    ],
-    "H": [
-     9,
-     6,
-     2
-    ],
-    "D": [
-     13,
-     8,
-     4
-    ],
-    "C": [
-     14,
-     10,
-     3
-    ]
-   },
-   "hp": 11,
-   "sp": 11,
-   "correct": "2♣",
-   "why": "11 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11,
-     8,
-     6
-    ],
-    "H": [
-     11
-    ],
-    "D": [
-     12,
-     9,
-     8,
-     2
-    ],
-    "C": [
-     11,
-     8,
-     6
-    ]
-   },
-   "hp": 11,
-   "sp": 14,
-   "correct": "2♣",
-   "why": "11 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
-     9,
      4,
      2
     ],
     "H": [],
     "D": [
      14,
-     10
+     13,
+     11,
+     6,
+     2
     ],
     "C": [
-     10,
-     8,
-     6,
-     3,
+     5,
      2
     ]
    },
@@ -2452,58 +6198,28 @@
    "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
   },
   {
-   "situation": "svar_1kl",
+   "situation": "svar_1ru",
    "hand": {
     "S": [
      14,
      12,
+     11,
      10,
-     9
+     7
     ],
     "H": [
-     12,
-     7,
-     2
-    ],
-    "D": [
      11
     ],
+    "D": [
+     13,
+     5
+    ],
     "C": [
-     14,
-     8,
-     5,
+     12,
+     11,
+     7,
      4,
      2
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "2♦",
-   "why": "13 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     8,
-     6
-    ],
-    "H": [
-     8,
-     6
-    ],
-    "D": [
-     6
-    ],
-    "C": [
-     13,
-     12,
-     6,
-     5,
-     3
     ]
    },
    "hp": 14,
@@ -2512,2666 +6228,91 @@
    "why": "14 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
   },
   {
-   "situation": "svar_1kl",
+   "situation": "svar_1ru",
    "hand": {
     "S": [
-     13,
-     12,
+     14,
      7,
-     5,
-     2
-    ],
-    "H": [
-     10,
-     6
-    ],
-    "D": [
-     14,
-     12,
-     10,
-     8,
-     7
-    ],
-    "C": [
-     12
-    ]
-   },
-   "hp": 13,
-   "sp": 17,
-   "correct": "2♦",
-   "why": "13 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     14,
-     12,
-     8,
-     7,
-     6,
-     3
-    ],
-    "H": [
-     7,
-     6,
-     2
-    ],
-    "D": [
-     13
-    ],
-    "C": [
-     13,
-     12,
-     7
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "2♦",
-   "why": "14 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     14,
-     11,
-     10,
-     7,
-     3
-    ],
-    "H": [
-     13,
-     10,
-     4
-    ],
-    "D": [
-     11,
-     8,
-     4,
-     3
-    ],
-    "C": [
-     14
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "2♦",
-   "why": "13 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     14,
-     12,
-     10,
-     9,
-     8,
-     4
-    ],
-    "H": [
-     11,
-     7
-    ],
-    "D": [
-     14
-    ],
-    "C": [
-     13,
-     9,
-     6,
-     4
-    ]
-   },
-   "hp": 14,
-   "sp": 18,
-   "correct": "2♦",
-   "why": "14 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     14,
-     10,
-     9,
-     8
-    ],
-    "H": [],
-    "D": [
-     11,
-     9,
-     8,
-     6
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     8,
-     3
-    ]
-   },
-   "hp": 14,
-   "sp": 19,
-   "correct": "2♦",
-   "why": "14 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     13,
-     12,
-     10,
-     9,
-     8,
-     6
-    ],
-    "H": [
-     2
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     6,
-     2
-    ],
-    "C": [
-     10
-    ]
-   },
-   "hp": 14,
-   "sp": 20,
-   "correct": "2♦",
-   "why": "14 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     14,
-     11,
-     9,
      3,
      2
     ],
     "H": [],
     "D": [
+     13,
+     9,
      8,
-     5,
-     4
+     2
     ],
     "C": [
      14,
-     13,
      12,
-     7,
+     9,
+     5,
      2
     ]
    },
-   "hp": 14,
-   "sp": 19,
-   "correct": "2♦",
-   "why": "14 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11,
-     10,
-     6
-    ],
-    "H": [
-     8,
-     4
-    ],
-    "D": [
-     13,
-     4
-    ],
-    "C": [
-     14,
-     9,
-     7,
-     6
-    ]
-   },
-   "hp": 14,
-   "sp": 16,
-   "correct": "2♦",
-   "why": "14 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     9,
-     7
-    ],
-    "H": [
-     11,
-     9,
-     8
-    ],
-    "D": [
-     13
-    ],
-    "C": [
-     9,
-     6,
-     5,
-     4
-    ]
-   },
    "hp": 13,
-   "sp": 16,
+   "sp": 18,
    "correct": "2♦",
    "why": "13 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
   },
   {
-   "situation": "svar_1kl",
+   "situation": "svar_1ru",
    "hand": {
     "S": [
      14,
-     9,
-     7,
-     5
-    ],
-    "H": [
-     14
-    ],
-    "D": [
-     13,
-     11,
-     10,
+     12,
+     8,
      4,
      3
     ],
-    "C": [
-     12,
-     7,
-     2
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "2♦",
-   "why": "14 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
-  },
-  {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     14,
-     13,
-     11,
-     9,
-     4
-    ],
     "H": [
-     12,
-     9
+     14,
+     13
     ],
     "D": [
-     14
+     10,
+     9
     ],
     "C": [
      13,
+     11,
      10,
-     9,
-     8,
      4
     ]
    },
    "hp": 17,
-   "sp": 21,
+   "sp": 19,
    "correct": "2♦",
    "why": "17 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
   },
   {
-   "situation": "svar_1kl",
-   "hand": {
-    "S": [
-     12,
-     11,
-     7,
-     5
-    ],
-    "H": [
-     14,
-     12
-    ],
-    "D": [
-     11,
-     8,
-     7,
-     3,
-     2
-    ],
-    "C": [
-     13,
-     9
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "2♦",
-   "why": "13 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
-  },
-  {
-   "situation": "svar_1kl",
+   "situation": "svar_1ru",
    "hand": {
     "S": [
      14,
      13,
      12,
-     10,
-     7
-    ],
-    "H": [
-     5
-    ],
-    "D": [
-     9,
-     8,
-     7,
-     2
-    ],
-    "C": [
-     13,
-     11,
-     8
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "2♦",
-   "why": "13 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     14,
-     8
-    ],
-    "H": [
-     14,
-     4,
-     3,
-     2
-    ],
-    "D": [
-     12,
-     11,
-     10,
-     7
-    ],
-    "C": [
-     12,
-     11,
-     2
-    ]
-   },
-   "hp": 14,
-   "sp": 15,
-   "correct": "2♥",
-   "why": "Fire hjerter: 2♥."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     14,
-     11,
-     7
-    ],
-    "H": [
-     14,
-     11,
-     6,
-     3
-    ],
-    "D": [
-     10,
-     9,
-     7,
-     3
-    ],
-    "C": [
-     14,
-     3
-    ]
-   },
-   "hp": 14,
-   "sp": 15,
-   "correct": "2♥",
-   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     11,
-     5
-    ],
-    "H": [
-     12,
-     9,
-     5,
-     3
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     9
-    ],
-    "C": [
-     9,
-     6,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2♥",
-   "why": "Fire hjerter: 2♥."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     11,
-     10
-    ],
-    "H": [
-     13,
-     9,
-     5,
-     3
-    ],
-    "D": [
-     13,
-     12,
-     4,
-     3
-    ],
-    "C": [
-     12,
-     11,
-     8
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2♥",
-   "why": "Fire hjerter: 2♥."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     13,
-     2
-    ],
-    "H": [
-     13,
-     9,
-     4,
-     3
-    ],
-    "D": [
-     12,
-     11,
-     9,
-     3
-    ],
-    "C": [
-     13,
-     6,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2♥",
-   "why": "Fire hjerter: 2♥."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     10,
-     5
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     3
-    ],
-    "D": [
-     8,
-     7,
-     6,
-     4
-    ],
-    "C": [
-     12,
-     11,
-     10
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2♥",
-   "why": "Fire hjerter: 2♥."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     11,
-     4,
-     3
-    ],
-    "H": [
-     13,
-     11,
-     8,
-     3
-    ],
-    "D": [
-     13,
-     12,
-     7,
-     2
-    ],
-    "C": [
-     13,
-     11
-    ]
-   },
-   "hp": 14,
-   "sp": 15,
-   "correct": "2♥",
-   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     14,
-     10,
-     5
-    ],
-    "H": [
-     9,
-     8,
-     6,
-     3
-    ],
-    "D": [
-     14,
-     11,
-     7,
-     2
-    ],
-    "C": [
-     14,
-     4
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2♥",
-   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     14,
-     13
-    ],
-    "H": [
-     10,
-     9,
-     5,
-     4
-    ],
-    "D": [
-     14,
-     11,
-     9,
-     2
-    ],
-    "C": [
-     8,
-     4,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2♥",
-   "why": "Fire hjerter: 2♥."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     9,
-     6,
-     5
-    ],
-    "H": [
-     13,
-     7,
-     5,
-     3
-    ],
-    "D": [
-     14,
-     12,
-     5,
-     2
-    ],
-    "C": [
-     13,
-     5
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2♥",
-   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     12,
-     9
-    ],
-    "H": [
-     13,
-     11,
-     9,
-     6
-    ],
-    "D": [
-     12,
-     9,
-     4,
-     3
-    ],
-    "C": [
-     14,
-     10,
-     9
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2♥",
-   "why": "Fire hjerter: 2♥."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     10,
-     6
-    ],
-    "H": [
-     14,
-     8,
-     4,
-     3
-    ],
-    "D": [
-     14,
-     12,
-     10,
-     9
-    ],
-    "C": [
-     13,
-     11,
-     8
-    ]
-   },
-   "hp": 14,
-   "sp": 15,
-   "correct": "2♥",
-   "why": "Fire hjerter: 2♥."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     11,
-     6
-    ],
-    "H": [
-     14,
-     10,
-     8,
-     5
-    ],
-    "D": [
-     12,
-     9,
-     8,
-     4
-    ],
-    "C": [
-     14,
-     12,
-     3
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2♥",
-   "why": "Fire hjerter: 2♥."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     13,
-     5,
-     4
-    ],
-    "H": [
-     14,
-     9,
-     6,
-     4
-    ],
-    "D": [
-     11,
-     10,
-     7,
-     2
-    ],
-    "C": [
-     14,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2♥",
-   "why": "Fire hjerter – du har også tre spar, men hjerterne kommer først: 2♥."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     13,
-     9
-    ],
-    "H": [
-     14,
-     10,
-     6,
-     3
-    ],
-    "D": [
-     13,
-     10,
-     8,
-     2
-    ],
-    "C": [
-     13,
-     4,
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2♥",
-   "why": "Fire hjerter: 2♥."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     5
-    ],
-    "H": [
-     8,
-     4,
-     3
-    ],
-    "D": [
-     12,
-     9,
-     5,
-     4
-    ],
-    "C": [
-     13,
-     11,
-     5
-    ]
-   },
-   "hp": 13,
-   "sp": 13,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     9,
-     7,
-     4
-    ],
-    "H": [
-     11,
-     3
-    ],
-    "D": [
-     14,
-     12,
-     11,
-     10,
-     2
-    ],
-    "C": [
-     14,
-     5,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     14,
-     11,
-     2
-    ],
-    "H": [
-     10,
-     9,
-     5
-    ],
-    "D": [
-     14,
-     7,
-     6,
-     2
-    ],
-    "C": [
-     13,
-     6,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 12,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     13,
-     12,
-     5
-    ],
-    "H": [
-     12,
-     8,
-     4
-    ],
-    "D": [
-     13,
-     12,
-     7,
-     6,
-     4
-    ],
-    "C": [
-     10,
-     8
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     10,
-     8,
-     2
-    ],
-    "H": [
-     9,
-     4
-    ],
-    "D": [
-     14,
-     12,
-     11,
-     6,
-     4
-    ],
-    "C": [
-     14,
-     12,
-     10
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     13,
-     8,
-     3
-    ],
-    "H": [
-     7,
-     5,
-     4
-    ],
-    "D": [
-     14,
-     12,
-     11,
-     10,
-     9
-    ],
-    "C": [
-     12,
-     3
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
      6,
      5,
-     4
-    ],
-    "H": [
-     13,
-     5
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     10,
-     8
-    ],
-    "C": [
-     12,
-     8,
-     5
-    ]
-   },
-   "hp": 14,
-   "sp": 15,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     13,
-     12,
-     4
-    ],
-    "H": [
-     13,
-     7,
-     3
-    ],
-    "D": [
-     14,
-     10,
-     8,
-     7
-    ],
-    "C": [
-     9,
-     8,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 12,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     13,
-     10,
-     5
-    ],
-    "H": [
-     12,
-     11,
      2
     ],
-    "D": [
-     12,
-     11,
-     7,
-     6,
-     5
-    ],
-    "C": [
-     14,
-     4
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     5,
-     4,
-     3
-    ],
     "H": [
-     14,
-     6,
-     5
-    ],
-    "D": [
-     14,
-     13,
-     7,
-     6
-    ],
-    "C": [
-     13,
-     6,
-     3
-    ]
-   },
-   "hp": 14,
-   "sp": 14,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     8,
-     6,
-     5
-    ],
-    "H": [
-     13,
-     4,
-     2
-    ],
-    "D": [
      12,
-     11,
-     5,
-     3
-    ],
-    "C": [
-     14,
-     13,
-     5
-    ]
-   },
-   "hp": 13,
-   "sp": 13,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     14,
-     7,
-     3
-    ],
-    "H": [
-     13,
-     8,
-     5
-    ],
-    "D": [
-     10,
-     9,
-     5,
-     4,
-     3
-    ],
-    "C": [
-     14,
-     13
-    ]
-   },
-   "hp": 14,
-   "sp": 15,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     14,
-     10,
-     3
-    ],
-    "H": [
-     13,
-     12,
-     5
-    ],
-    "D": [
-     12,
-     9,
-     5,
-     3
-    ],
-    "C": [
-     12,
-     11,
-     3
-    ]
-   },
-   "hp": 14,
-   "sp": 14,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     12,
-     6,
-     4
-    ],
-    "H": [
-     14,
-     13,
      11
     ],
     "D": [
      12,
-     9,
-     6,
-     3
-    ],
-    "C": [
-     10,
-     7,
-     6
-    ]
-   },
-   "hp": 12,
-   "sp": 12,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     13,
-     7,
-     6
-    ],
-    "H": [
-     12,
-     9
-    ],
-    "D": [
-     13,
-     11,
-     10,
-     7,
-     5
-    ],
-    "C": [
-     12,
-     11,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2♠",
-   "why": "Tre spar og ikke fire hjerter: 2♠."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     9,
-     4
-    ],
-    "H": [
-     14,
-     11,
-     2
-    ],
-    "D": [
-     14,
-     12,
      8,
-     5,
-     4
-    ],
-    "C": [
-     12,
-     10,
-     4
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     13,
-     4
-    ],
-    "H": [
-     12,
-     10,
-     5
-    ],
-    "D": [
-     12,
-     6,
-     5,
-     4,
-     2
-    ],
-    "C": [
-     14,
-     13,
-     10
-    ]
-   },
-   "hp": 14,
-   "sp": 15,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     11,
-     3
-    ],
-    "H": [
-     14,
-     13,
-     12
-    ],
-    "D": [
-     13,
-     11,
      7,
-     6,
-     2
+     4
     ],
     "C": [
-     8,
-     6,
      3
     ]
    },
    "hp": 14,
-   "sp": 15,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     4,
-     2
-    ],
-    "H": [
-     12,
-     6,
-     2
-    ],
-    "D": [
-     14,
-     12,
-     11,
-     10,
-     2
-    ],
-    "C": [
-     13,
-     8,
-     5
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     9,
-     6
-    ],
-    "H": [
-     13,
-     3,
-     2
-    ],
-    "D": [
-     14,
-     12,
-     8,
-     5,
-     3
-    ],
-    "C": [
-     13,
-     11,
-     4
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     12,
-     7
-    ],
-    "H": [
-     10,
-     9,
-     7
-    ],
-    "D": [
-     14,
-     12,
-     7,
-     6,
-     3
-    ],
-    "C": [
-     13,
-     12,
-     10
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     10,
-     7
-    ],
-    "H": [
-     14,
-     10,
-     6
-    ],
-    "D": [
-     14,
-     12,
-     11,
-     10,
-     3
-    ],
-    "C": [
-     13,
-     10,
-     2
-    ]
-   },
-   "hp": 14,
-   "sp": 15,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     7,
-     4
-    ],
-    "H": [
-     11,
-     10,
-     4
-    ],
-    "D": [
-     14,
-     13,
-     11,
-     6,
-     5
-    ],
-    "C": [
-     13,
-     7,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     14,
-     4
-    ],
-    "H": [
-     11,
-     10,
-     6
-    ],
-    "D": [
-     14,
-     9,
-     7,
-     4,
-     3
-    ],
-    "C": [
-     13,
-     8,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     14,
-     2
-    ],
-    "H": [
-     13,
-     11,
-     7
-    ],
-    "D": [
-     9,
-     7,
-     5,
-     3,
-     2
-    ],
-    "C": [
-     14,
-     8,
-     3
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     14,
-     2
-    ],
-    "H": [
-     13,
-     9,
-     5
-    ],
-    "D": [
-     13,
-     12,
-     8,
-     6,
-     4
-    ],
-    "C": [
-     11,
-     7,
-     3
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     12,
-     8
-    ],
-    "H": [
-     13,
-     5,
-     4
-    ],
-    "D": [
-     14,
-     13,
-     5,
-     4,
-     2
-    ],
-    "C": [
-     6,
-     5,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     14,
-     11
-    ],
-    "H": [
-     11,
-     9,
-     4
-    ],
-    "D": [
-     13,
-     12,
-     11,
-     8,
-     6
-    ],
-    "C": [
-     12,
-     10,
-     8
-    ]
-   },
-   "hp": 14,
-   "sp": 15,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     8,
-     3
-    ],
-    "H": [
-     13,
-     8,
-     3
-    ],
-    "D": [
-     13,
-     12,
-     7,
-     6,
-     2
-    ],
-    "C": [
-     14,
-     12,
-     7
-    ]
-   },
-   "hp": 14,
-   "sp": 15,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "aabner_1ru",
-   "hand": {
-    "S": [
-     5,
-     2
-    ],
-    "H": [
-     9,
-     8,
-     5
-    ],
-    "D": [
-     14,
-     13,
-     11,
-     10,
-     3
-    ],
-    "C": [
-     14,
-     9,
-     7
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "2NT",
-   "why": "Hverken tre spar (2) eller fire hjerter (3): 2NT."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     14,
-     8,
-     7,
-     4
-    ],
-    "H": [
-     4,
-     3
-    ],
-    "D": [
-     13,
-     7,
-     3
-    ],
-    "C": [
-     12,
-     8,
-     5,
-     3
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "correct": "Pas",
-   "why": "9 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     10,
-     6,
-     3,
-     2
-    ],
-    "H": [
-     12,
-     4
-    ],
-    "D": [
-     14,
-     9,
-     3
-    ],
-    "C": [
-     8,
-     6,
-     4,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "Pas",
-   "why": "6 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     13,
-     12,
-     9,
-     2
-    ],
-    "H": [
-     9,
-     8,
-     2
-    ],
-    "D": [
-     12,
-     7
-    ],
-    "C": [
-     11,
-     9,
-     6,
-     4
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "Pas",
-   "why": "8 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     11,
-     7,
-     5,
-     3
-    ],
-    "H": [
-     10,
-     6,
-     3
-    ],
-    "D": [
-     12,
-     8,
-     2
-    ],
-    "C": [
-     13,
-     11,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 7,
-   "correct": "Pas",
-   "why": "7 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     13,
-     11,
-     7,
-     3
-    ],
-    "H": [
-     14,
-     8,
-     3
-    ],
-    "D": [
-     4,
-     3
-    ],
-    "C": [
-     6,
-     4,
-     3,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "Pas",
-   "why": "8 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     11,
-     9,
-     7,
-     2
-    ],
-    "H": [
-     10,
-     2
-    ],
-    "D": [
-     11,
-     8,
-     6,
-     3
-    ],
-    "C": [
-     14,
-     7,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "Pas",
-   "why": "6 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     14,
-     10,
-     9,
-     2
-    ],
-    "H": [
-     6,
-     2
-    ],
-    "D": [
-     13,
-     12,
-     10,
-     6
-    ],
-    "C": [
-     10,
-     8,
-     4
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "correct": "Pas",
-   "why": "9 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     12,
-     10,
-     9,
-     7
-    ],
-    "H": [
-     12,
-     9,
-     8
-    ],
-    "D": [
-     13,
-     11,
-     8
-    ],
-    "C": [
-     6,
-     5,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 8,
-   "correct": "Pas",
-   "why": "8 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     12,
-     8,
-     7,
-     2
-    ],
-    "H": [
-     13,
-     11,
-     8
-    ],
-    "D": [
-     9,
-     5,
-     3,
-     2
-    ],
-    "C": [
-     12,
-     3
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "Pas",
-   "why": "8 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     10,
-     9,
-     5,
-     2
-    ],
-    "H": [
-     13,
-     9,
-     4
-    ],
-    "D": [
-     9,
-     8,
-     3,
-     2
-    ],
-    "C": [
-     14,
-     8
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "Pas",
-   "why": "7 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     13,
-     9,
-     7,
-     2
-    ],
-    "H": [
-     13,
-     9,
-     4
-    ],
-    "D": [
-     8,
-     7,
-     3,
-     2
-    ],
-    "C": [
-     5,
-     4
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "Pas",
-   "why": "6 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     14,
-     9,
-     6,
-     5
-    ],
-    "H": [
-     5,
-     4,
-     3
-    ],
-    "D": [
-     10,
-     6,
-     4,
-     3
-    ],
-    "C": [
-     13,
-     12
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "correct": "Pas",
-   "why": "9 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     11,
-     9,
-     7,
-     4
-    ],
-    "H": [
-     5,
-     2
-    ],
-    "D": [
-     11,
-     7,
-     5
-    ],
-    "C": [
-     14,
-     10,
-     9,
-     8
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "Pas",
-   "why": "6 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     13,
-     11,
-     3,
-     2
-    ],
-    "H": [
-     14,
-     5
-    ],
-    "D": [
-     11,
-     7,
-     3
-    ],
-    "C": [
-     10,
-     9,
-     8,
-     2
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "correct": "Pas",
-   "why": "9 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     14,
-     12,
-     3,
-     2
-    ],
-    "H": [
-     13,
-     4
-    ],
-    "D": [
-     9,
-     8,
-     7,
-     4
-    ],
-    "C": [
-     9,
-     8,
-     7
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "correct": "Pas",
-   "why": "9 hp og ingen lang farve: pas – 1NT er en fin kontrakt."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     13,
-     7,
-     4,
-     3
-    ],
-    "H": [
-     10,
-     6,
-     2
-    ],
-    "D": [
-     14,
-     9,
-     8,
-     2
-    ],
-    "C": [
-     14,
-     4
-    ]
-   },
-   "hp": 11,
-   "sp": 12,
-   "correct": "2♣",
-   "why": "11 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     12,
-     9,
-     6,
-     5
-    ],
-    "H": [
-     8,
-     6
-    ],
-    "D": [
-     14,
-     10,
-     8,
-     5,
-     4
-    ],
-    "C": [
-     14,
-     2
-    ]
-   },
-   "hp": 10,
-   "sp": 12,
-   "correct": "2♣",
-   "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     13,
-     11,
-     10,
-     9,
-     4
-    ],
-    "H": [
-     9
-    ],
-    "D": [
-     14,
-     13,
-     4
-    ],
-    "C": [
-     10,
-     8,
-     4,
-     3
-    ]
-   },
-   "hp": 11,
-   "sp": 14,
-   "correct": "2♣",
-   "why": "11 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11,
-     8,
-     5,
-     3
-    ],
-    "H": [],
-    "D": [
-     8,
-     7,
-     5,
-     4,
-     2
-    ],
-    "C": [
-     13,
-     3
-    ]
-   },
-   "hp": 10,
-   "sp": 16,
-   "correct": "2♣",
-   "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     12,
-     11,
-     5,
-     4,
-     3
-    ],
-    "H": [
-     13,
-     11
-    ],
-    "D": [
-     12,
-     11,
-     3,
-     2
-    ],
-    "C": [
-     5,
-     3
-    ]
-   },
-   "hp": 10,
-   "sp": 12,
-   "correct": "2♣",
-   "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     9,
-     6,
-     5,
-     4,
-     3
-    ],
-    "H": [
-     14,
-     13,
-     12
-    ],
-    "D": [
-     11,
-     9,
-     5,
-     3
-    ],
-    "C": [
-     3
-    ]
-   },
-   "hp": 10,
-   "sp": 13,
-   "correct": "2♣",
-   "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     13,
-     12,
-     8,
-     3
-    ],
-    "H": [
-     8,
-     6,
-     3
-    ],
-    "D": [
-     14,
-     11
-    ],
-    "C": [
-     10,
-     9,
-     5,
-     3
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "correct": "2♣",
-   "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     12,
-     9,
-     7,
-     6,
-     4,
-     2
-    ],
-    "H": [
-     12
-    ],
-    "D": [
-     14,
-     12,
-     11,
-     6,
-     4
-    ],
-    "C": [
-     4
-    ]
-   },
-   "hp": 11,
-   "sp": 17,
-   "correct": "2♣",
-   "why": "11 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     12,
-     10,
-     6,
-     3
-    ],
-    "H": [
-     8
-    ],
-    "D": [
-     13,
-     12,
-     8,
-     5,
-     2
-    ],
-    "C": [
-     14,
-     10,
-     6
-    ]
-   },
-   "hp": 11,
-   "sp": 14,
-   "correct": "2♣",
-   "why": "11 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     14,
-     12,
-     6,
-     2
-    ],
-    "H": [
-     11,
-     3
-    ],
-    "D": [
-     7,
-     3
-    ],
-    "C": [
-     13,
-     9,
-     7,
-     6,
-     2
-    ]
-   },
-   "hp": 10,
-   "sp": 12,
-   "correct": "2♣",
-   "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     12,
-     9,
-     7,
-     6,
-     4,
-     2
-    ],
-    "H": [
-     12,
-     6,
-     4
-    ],
-    "D": [
-     5
-    ],
-    "C": [
-     14,
-     12,
-     11
-    ]
-   },
-   "hp": 11,
-   "sp": 14,
-   "correct": "2♣",
-   "why": "11 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     14,
-     12,
-     9,
-     5,
-     2
-    ],
-    "H": [
-     7,
-     6,
-     3
-    ],
-    "D": [
-     14,
-     10,
-     7,
-     5,
-     3
-    ],
-    "C": []
-   },
-   "hp": 10,
-   "sp": 15,
-   "correct": "2♣",
-   "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     14,
-     11,
-     10,
-     8,
-     7,
-     5
-    ],
-    "H": [
-     11,
-     7
-    ],
-    "D": [
-     14,
-     9,
-     3
-    ],
-    "C": [
-     9,
-     6
-    ]
-   },
-   "hp": 10,
-   "sp": 12,
-   "correct": "2♣",
-   "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     13,
-     12,
-     10,
-     2
-    ],
-    "H": [
-     11,
-     7,
-     5
-    ],
-    "D": [
-     13,
-     6,
-     5
-    ],
-    "C": [
-     11,
-     8,
-     2
-    ]
-   },
-   "hp": 10,
-   "sp": 10,
-   "correct": "2♣",
-   "why": "10 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     12,
-     11,
-     5,
-     4,
-     3,
-     2
-    ],
-    "H": [
-     14,
-     3
-    ],
-    "D": [
-     14,
-     6,
-     5,
-     4,
-     3
-    ],
-    "C": []
-   },
-   "hp": 11,
-   "sp": 17,
-   "correct": "2♣",
-   "why": "11 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     14,
-     11,
-     7,
-     6,
-     5
-    ],
-    "H": [],
-    "D": [
-     14,
-     10,
-     6,
-     5
-    ],
-    "C": [
-     14,
-     11,
-     4,
-     2
-    ]
-   },
-   "hp": 14,
-   "sp": 19,
+   "sp": 18,
    "correct": "2♦",
    "why": "14 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
   },
@@ -5180,24 +6321,53 @@
    "hand": {
     "S": [
      14,
-     9,
-     8,
-     4,
-     2
-    ],
-    "H": [
      13,
-     12,
-     7
+     10,
+     6,
+     5
     ],
+    "H": [],
     "D": [
-     12,
-     9,
-     4,
+     13,
+     5,
      3
     ],
     "C": [
+     13,
+     7,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "13 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     6,
+     5
+    ],
+    "H": [
      14
+    ],
+    "D": [
+     13,
+     11,
+     8
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     8,
+     6
     ]
    },
    "hp": 15,
@@ -5211,55 +6381,56 @@
     "S": [
      14,
      13,
-     11,
-     8,
-     5,
-     4
+     10,
+     9,
+     2
     ],
-    "H": [],
+    "H": [
+     8
+    ],
     "D": [
      13,
-     12,
-     5,
-     4,
-     3
+     12
     ],
     "C": [
-     14,
-     8
+     12,
+     10,
+     8,
+     6,
+     2
     ]
    },
-   "hp": 17,
-   "sp": 23,
+   "hp": 14,
+   "sp": 18,
    "correct": "2♦",
-   "why": "17 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
+   "why": "14 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
   },
   {
    "situation": "svar_1ru",
    "hand": {
     "S": [
      14,
+     10,
      9,
      8,
-     7,
-     4
+     5,
+     2
     ],
     "H": [
-     13,
      12,
-     5
+     10
     ],
     "D": [],
     "C": [
      14,
+     13,
      10,
-     8,
-     7,
+     4,
      3
     ]
    },
    "hp": 13,
-   "sp": 18,
+   "sp": 19,
    "correct": "2♦",
    "why": "13 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
   },
@@ -5267,90 +6438,120 @@
    "situation": "svar_1ru",
    "hand": {
     "S": [
-     14,
-     13,
-     11,
-     9,
-     7,
-     5
-    ],
-    "H": [],
-    "D": [
-     13,
-     12,
-     10
-    ],
-    "C": [
      11,
      10,
-     9,
-     6
-    ]
-   },
-   "hp": 14,
-   "sp": 19,
-   "correct": "2♦",
-   "why": "14 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     10,
-     4
-    ],
-    "H": [
-     7
-    ],
-    "D": [
-     12,
-     9,
      8,
-     7,
-     4
-    ],
-    "C": [
-     13,
-     8
-    ]
-   },
-   "hp": 14,
-   "sp": 18,
-   "correct": "2♦",
-   "why": "14 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
-     8,
+     6,
      4,
+     3,
      2
     ],
     "H": [
-     9
+     14
     ],
     "D": [
-     12,
-     10,
-     7
+     13,
+     3,
+     2
     ],
     "C": [
-     14,
-     11,
-     10
+     10,
+     9
     ]
    },
-   "hp": 13,
-   "sp": 16,
-   "correct": "2♦",
-   "why": "13 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
+   "hp": 8,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "Svag hånd med 7 spar: 2♠ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     6,
+     5,
+     2
+    ],
+    "D": [
+     9,
+     7,
+     2
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "2♠",
+   "why": "Svag hånd med 6 spar: 2♠ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     9,
+     8,
+     5,
+     2
+    ],
+    "H": [
+     8,
+     7,
+     6
+    ],
+    "D": [
+     11,
+     9,
+     8
+    ],
+    "C": []
+   },
+   "hp": 9,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "Svag hånd med 7 spar: 2♠ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     9,
+     5,
+     4
+    ],
+    "H": [
+     9,
+     5,
+     4
+    ],
+    "D": [
+     9,
+     8,
+     2
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "Svag hånd med 6 spar: 2♠ – stop, du afslutter i din lange farve."
   },
   {
    "situation": "svar_1ru",
@@ -5358,235 +6559,948 @@
     "S": [
      14,
      11,
+     10,
+     9,
      7,
+     6
+    ],
+    "H": [
+     8,
+     6,
+     5
+    ],
+    "D": [
+     9
+    ],
+    "C": [
+     13,
+     9,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "correct": "2♠",
+   "why": "Svag hånd med 6 spar: 2♠ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     13,
+     11,
+     8,
+     7,
+     5,
+     4
+    ],
+    "H": [
+     13,
+     10,
+     7
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "2♠",
+   "why": "Svag hånd med 6 spar: 2♠ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     12,
+     10
+    ],
+    "D": [
+     11,
+     2
+    ],
+    "C": [
+     9,
+     7,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 8,
+   "correct": "2♠",
+   "why": "Svag hånd med 6 spar: 2♠ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     7,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     13,
+     11,
+     2
+    ],
+    "C": [
+     11,
+     9,
+     7
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "correct": "2♠",
+   "why": "Svag hånd med 6 spar: 2♠ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     13,
      6,
      5,
      4
     ],
     "H": [
-     11,
      10,
-     5
-    ],
-    "D": [],
-    "C": [
-     14,
-     13,
-     8,
-     7
-    ]
-   },
-   "hp": 13,
-   "sp": 18,
-   "correct": "2♦",
-   "why": "13 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
-  },
-  {
-   "situation": "svar_1ru",
-   "hand": {
-    "S": [
-     13,
-     7,
-     5,
-     3
-    ],
-    "H": [
-     11
+     4
     ],
     "D": [
+     2
+    ],
+    "C": [
      13,
      12,
      11,
-     5
-    ],
-    "C": [
-     13,
-     11,
-     10,
-     3
+     9,
+     5,
+     2
     ]
    },
-   "hp": 14,
-   "sp": 17,
-   "correct": "2♦",
-   "why": "14 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
+   "hp": 9,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "Svag hånd med 6 klør: 3♣ – stop, du afslutter i din lange farve."
   },
   {
    "situation": "svar_1ru",
    "hand": {
     "S": [
-     14,
-     10,
-     7,
-     5
+     13,
+     8,
+     6,
+     3
     ],
     "H": [
      9
     ],
     "D": [
      13,
-     12,
-     11,
-     4
+     3
     ],
     "C": [
      12,
-     11,
-     10,
-     7
+     8,
+     7,
+     6,
+     4,
+     3
     ]
    },
-   "hp": 13,
-   "sp": 16,
-   "correct": "2♦",
-   "why": "13 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
+   "hp": 8,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "Svag hånd med 6 klør: 3♣ – stop, du afslutter i din lange farve."
   },
   {
    "situation": "svar_1ru",
    "hand": {
     "S": [
+     7,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     8,
+     6
+    ],
+    "D": [
+     4
+    ],
+    "C": [
      14,
      13,
      12,
-     3
-    ],
-    "H": [
-     3
-    ],
-    "D": [
-     13,
-     10,
-     6
-    ],
-    "C": [
-     11,
-     10,
      8,
      3,
      2
     ]
    },
-   "hp": 13,
-   "sp": 16,
-   "correct": "2♦",
-   "why": "13 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
+   "hp": 9,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "Svag hånd med 6 klør: 3♣ – stop, du afslutter i din lange farve."
   },
   {
    "situation": "svar_1ru",
    "hand": {
     "S": [
+     9,
+     8,
+     6,
+     5
+    ],
+    "H": [
+     13,
+     8
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     14,
+     10,
+     9,
+     7,
+     4,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "Svag hånd med 6 klør: 3♣ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     11,
+     8,
+     7,
+     3
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     5,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     5,
+     4,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "Svag hånd med 6 klør: 3♣ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     12,
+     10,
+     7,
+     5
+    ],
+    "H": [
+     3,
+     2
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "Svag hånd med 6 klør: 3♣ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     12,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     14,
+     7
+    ],
+    "C": [
+     10,
+     8,
+     7,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "Svag hånd med 6 klør: 3♣ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "svar_1ru",
+   "hand": {
+    "S": [
+     11,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     10,
+     5
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "Svag hånd med 6 klør: 3♣ – stop, du afslutter i din lange farve."
+  },
+  {
+   "situation": "relae_1ru",
+   "hand": {
+    "S": [
+     11,
+     5,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     11,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     3
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "5 spar og 11 hp: 2♠ viser 5-farven, invit."
+  },
+  {
+   "situation": "relae_1ru",
+   "hand": {
+    "S": [
+     14,
+     7,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     10,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     8
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "5 spar og 11 hp: 2♠ viser 5-farven, invit."
+  },
+  {
+   "situation": "relae_1ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     8,
+     4
+    ],
+    "H": [
+     2
+    ],
+    "D": [
+     14,
+     10,
+     9,
+     4
+    ],
+    "C": [
+     10,
+     9,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "5 spar og 11 hp: 2♠ viser 5-farven, invit."
+  },
+  {
+   "situation": "relae_1ru",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     11,
+     4,
+     2
+    ],
+    "D": [
+     12,
+     8,
+     2
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "2♠",
+   "why": "6 spar og 10 hp: 2♠ viser 5-farven, invit."
+  },
+  {
+   "situation": "relae_1ru",
+   "hand": {
+    "S": [
+     11,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     8,
+     3
+    ],
+    "D": [
+     14,
+     8
+    ],
+    "C": [
+     13,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "11 hp uden 5-farve: 2NT er invit."
+  },
+  {
+   "situation": "relae_1ru",
+   "hand": {
+    "S": [
+     11,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     6,
+     2
+    ],
+    "D": [
+     12,
+     9,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     8
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "11 hp uden 5-farve: 2NT er invit."
+  },
+  {
+   "situation": "relae_1ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     8,
+     7
+    ],
+    "H": [
+     7,
+     6
+    ],
+    "D": [
+     12,
+     11,
+     8,
+     7
+    ],
+    "C": [
+     14,
+     8,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2NT",
+   "why": "10 hp uden 5-farve: 2NT er invit."
+  },
+  {
+   "situation": "relae_1ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     5
+    ],
+    "H": [
+     13,
+     10,
+     2
+    ],
+    "D": [
+     5,
+     2
+    ],
+    "C": [
+     9,
+     8,
+     7,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "11 hp uden 5-farve: 2NT er invit."
+  },
+  {
+   "situation": "relae_1ru",
+   "hand": {
+    "S": [
+     13,
+     10,
+     7,
+     5,
+     4
+    ],
+    "H": [],
+    "D": [
+     14,
+     7,
+     5
+    ],
+    "C": [
+     14,
+     9,
+     8,
+     4,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "5 spar og 5 klør: 3♣ viser 5-5, invit eller bedre."
+  },
+  {
+   "situation": "relae_1ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     6,
+     5
+    ],
+    "H": [
+     10,
+     6,
+     4
+    ],
+    "D": [],
+    "C": [
+     13,
+     11,
+     10,
+     9,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "5 spar og 5 klør: 3♣ viser 5-5, invit eller bedre."
+  },
+  {
+   "situation": "relae_1ru",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8,
+     7,
+     5
+    ],
+    "H": [],
+    "D": [
+     14,
+     5,
+     4
+    ],
+    "C": [
+     12,
+     10,
+     8,
+     7,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "5 spar og 5 klør: 3♣ viser 5-5, invit eller bedre."
+  },
+  {
+   "situation": "relae_1ru",
+   "hand": {
+    "S": [
+     14,
+     8,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     6,
+     3
+    ],
+    "D": [],
+    "C": [
+     13,
+     10,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "5 spar og 5 klør: 3♣ viser 5-5, invit eller bedre."
+  },
+  {
+   "situation": "relae_1ru",
+   "hand": {
+    "S": [
+     10,
+     9,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     7
+    ],
+    "D": [
      13,
      9,
      5,
      4,
      2
     ],
-    "H": [],
-    "D": [
-     14,
-     13,
-     7,
-     4
-    ],
-    "C": [
-     13,
-     10,
-     6,
-     3
-    ]
+    "C": []
    },
-   "hp": 13,
-   "sp": 18,
-   "correct": "2♦",
-   "why": "13 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "5 spar og 5 ruder: 3♦ viser 5-5, invit eller bedre."
   },
   {
-   "situation": "svar_1ru",
+   "situation": "relae_1ru",
    "hand": {
     "S": [
      13,
-     11,
-     8,
+     12,
+     9,
+     6,
      3
     ],
     "H": [],
     "D": [
      14,
-     13,
-     10,
      8,
+     6,
+     3,
      2
     ],
     "C": [
-     13,
      12,
-     9,
+     10,
      3
     ]
    },
-   "hp": 16,
-   "sp": 21,
-   "correct": "2♦",
-   "why": "16 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "5 spar og 5 ruder: 3♦ viser 5-5, invit eller bedre."
   },
   {
-   "situation": "svar_1ru",
+   "situation": "relae_1ru",
    "hand": {
     "S": [
-     13,
+     14,
+     12,
+     8,
+     7,
+     3
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     14,
+     9,
+     7,
+     3,
+     2
+    ],
+    "C": [
+     7,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "3♦",
+   "why": "5 spar og 5 ruder: 3♦ viser 5-5, invit eller bedre."
+  },
+  {
+   "situation": "relae_1ru",
+   "hand": {
+    "S": [
+     14,
+     12,
      10,
+     3,
+     2
+    ],
+    "H": [],
+    "D": [
+     13,
+     11,
+     9,
+     4,
+     2
+    ],
+    "C": [
      8,
      7,
      4
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "5 spar og 5 ruder: 3♦ viser 5-5, invit eller bedre."
+  },
+  {
+   "situation": "relae_1ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     9,
+     3
     ],
     "H": [
      14,
-     11
+     8,
+     5,
+     4,
+     3
     ],
-    "D": [
-     13,
-     12,
-     10
-    ],
+    "D": [],
     "C": [
-     11,
-     10,
-     6
+     5,
+     4,
+     2
     ]
    },
-   "hp": 14,
+   "hp": 10,
    "sp": 15,
-   "correct": "2♦",
-   "why": "14 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
+   "correct": "3♥",
+   "why": "5 spar og 5 hjerter: 3♥ viser 5-5, invit eller bedre."
   },
   {
-   "situation": "svar_1ru",
+   "situation": "relae_1ru",
+   "hand": {
+    "S": [
+     13,
+     10,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     10,
+     9,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     11
+    ],
+    "C": []
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "5 spar og 5 hjerter: 3♥ viser 5-5, invit eller bedre."
+  },
+  {
+   "situation": "relae_1ru",
    "hand": {
     "S": [
      13,
      11,
      10,
-     9,
-     8,
-     6
+     6,
+     2
     ],
     "H": [
-     12,
-     6
-    ],
-    "D": [],
-    "C": [
-     14,
-     12,
+     13,
      11,
      8,
-     3
-    ]
+     6,
+     5
+    ],
+    "D": [
+     12,
+     5,
+     4
+    ],
+    "C": []
    },
-   "hp": 13,
-   "sp": 19,
-   "correct": "2♦",
-   "why": "13 hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "5 spar og 5 hjerter: 3♥ viser 5-5, invit eller bedre."
+  },
+  {
+   "situation": "relae_1ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     9,
+     8,
+     7
+    ],
+    "C": []
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♥",
+   "why": "5 spar og 5 hjerter: 3♥ viser 5-5, invit eller bedre."
   }
  ]
 }
