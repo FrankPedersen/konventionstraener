@@ -19,5 +19,12 @@
   "type": "Vores aftaler",
   "beskrivelse": "Parsystemet, udgave 3: trumf- og sanskontrakter, spærremeldinger, indmeldinger, doblinger og modspil. Two over One er udgangskrav.",
   "href": "viden/2-over-1-flemming.html"
+ },
+ {
+  "system": "forslag",
+  "titel": "2♣ med kontrolsvar",
+  "type": "Notat",
+  "beskrivelse": "Svarstrukturen efter den stærke 2♣: kontrolsvar (es = 2, konge = 1), overføringer, åbners genmeldinger, konkurrence og fem eksempler. Bygger på Michael Staub.",
+  "href": "viden/forslag-2klor-kontrolsvar.html"
  }
 ]

@@ -1,0 +1,8018 @@
+{
+ "situations": {
+  "svar_1": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "2♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "2♦",
+    "2♥",
+    "2♠",
+    "2NT",
+    "3♣",
+    "3♦",
+    "3♥",
+    "3♠",
+    "3NT",
+    "4♣",
+    "4♦",
+    "4♥",
+    "4♠"
+   ],
+   "bonus": {
+    "q": "Hvordan tæller I kontroller?",
+    "correct": "Es = 2, konge = 1",
+    "options": [
+     "Es = 2, konge = 1",
+     "Es = 1, konge = 1",
+     "Es = 4, konge = 3, dame = 2"
+    ],
+    "why": "Es = 2 kontroller, konge = 1. Damer og knægte tæller ikke – de stopper sjældent tabere i slem."
+   }
+  },
+  "aabner_2ru": {
+   "rolle": "Åbner",
+   "auction": [
+    [
+     "Dig",
+     "2♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "2♥",
+    "2♠",
+    "2NT",
+    "3NT",
+    "4NT",
+    "5NT"
+   ],
+   "bonus": {
+    "q": "Hvad viste makkers 2♦?",
+    "correct": "0–1 kontrol",
+    "options": [
+     "0–1 kontrol",
+     "Waiting – intet om styrken",
+     "Præcis 2 kontroller"
+    ],
+    "why": "2♦ viser 0–1 kontrol: intet es og højst én konge."
+   }
+  },
+  "aabner_2hj": {
+   "rolle": "Åbner",
+   "auction": [
+    [
+     "Dig",
+     "2♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "2♠",
+    "2NT",
+    "3♣",
+    "3♦",
+    "3NT"
+   ],
+   "bonus": {
+    "q": "Hvad viste makkers 2♥?",
+    "correct": "Præcis 2 kontroller",
+    "options": [
+     "Præcis 2 kontroller",
+     "5+ hjerter",
+     "0–1 kontrol"
+    ],
+    "why": "2♥ viser præcis 2 kontroller – ét es eller to konger."
+   }
+  },
+  "aabner_2sp": {
+   "rolle": "Åbner",
+   "auction": [
+    [
+     "Dig",
+     "2♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "2NT",
+    "3♣",
+    "3♦",
+    "3♥",
+    "3NT"
+   ],
+   "bonus": {
+    "q": "Hvad viste makkers 2♠?",
+    "correct": "Præcis 3 kontroller",
+    "options": [
+     "Præcis 3 kontroller",
+     "5+ spar",
+     "Præcis 2 kontroller"
+    ],
+    "why": "2♠ viser præcis 3 kontroller – es og konge, eller tre konger."
+   }
+  },
+  "trumf_hj": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "2♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "2♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "3♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "3♠",
+    "3NT",
+    "4♣",
+    "4♦",
+    "4♥",
+    "4♠"
+   ],
+   "bonus": {
+    "q": "Hvad viser udgang i trumffarven her?",
+    "correct": "0 kontroller, negativ hånd",
+    "options": [
+     "0 kontroller, negativ hånd",
+     "Maksimum og god støtte",
+     "Kontrol i alle farver"
+    ],
+    "why": "Når åbner har fastlagt trumf, viser udgang i trumf 0 kontroller og en negativ hånd; 3NT viser 0 kontroller med 4+ hp i damer og knægte."
+   }
+  },
+  "trumf_sp": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "2♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "2♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "3♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "3NT",
+    "4♣",
+    "4♦",
+    "4♥",
+    "4♠",
+    "5♣"
+   ],
+   "bonus": {
+    "q": "Hvad viser udgang i trumffarven her?",
+    "correct": "0 kontroller, negativ hånd",
+    "options": [
+     "0 kontroller, negativ hånd",
+     "Maksimum og god støtte",
+     "Kontrol i alle farver"
+    ],
+    "why": "Når åbner har fastlagt trumf, viser udgang i trumf 0 kontroller og en negativ hånd; 3NT viser 0 kontroller med 4+ hp i damer og knægte."
+   }
+  },
+  "konk_ru": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "2♣"
+    ],
+    [
+     "Modstander",
+     "2♦"
+    ]
+   ],
+   "allowX": true,
+   "calls": [
+    "Pas",
+    "X",
+    "2NT",
+    "2♥",
+    "2♠",
+    "3♣"
+   ],
+   "bonus": {
+    "q": "Hvad betyder din dobling efter deres indmelding?",
+    "correct": "Præcis 2 kontroller uden hæderlig langfarve",
+    "options": [
+     "Præcis 2 kontroller uden hæderlig langfarve",
+     "Straf",
+     "Mindst 3 kontroller"
+    ],
+    "why": "Kontrolsvaret oversættes: pas afløser 2♦, dobling afløser 2♥ (ikke straf), og laveste sans dækker 3+ kontroller."
+   }
+  },
+  "konk_hj": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "2♣"
+    ],
+    [
+     "Modstander",
+     "2♥"
+    ]
+   ],
+   "allowX": true,
+   "calls": [
+    "Pas",
+    "X",
+    "2NT",
+    "2♠",
+    "3♣",
+    "3♦"
+   ],
+   "bonus": {
+    "q": "Hvad betyder din dobling efter deres indmelding?",
+    "correct": "Præcis 2 kontroller uden hæderlig langfarve",
+    "options": [
+     "Præcis 2 kontroller uden hæderlig langfarve",
+     "Straf",
+     "Mindst 3 kontroller"
+    ],
+    "why": "Kontrolsvaret oversættes: pas afløser 2♦, dobling afløser 2♥ (ikke straf), og laveste sans dækker 3+ kontroller."
+   }
+  },
+  "konk_sp": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "2♣"
+    ],
+    [
+     "Modstander",
+     "2♠"
+    ]
+   ],
+   "allowX": true,
+   "calls": [
+    "Pas",
+    "X",
+    "2NT",
+    "3♣",
+    "3♦",
+    "3♥"
+   ],
+   "bonus": {
+    "q": "Hvad betyder din dobling efter deres indmelding?",
+    "correct": "Præcis 2 kontroller uden hæderlig langfarve",
+    "options": [
+     "Præcis 2 kontroller uden hæderlig langfarve",
+     "Straf",
+     "Mindst 3 kontroller"
+    ],
+    "why": "Kontrolsvaret oversættes: pas afløser 2♦, dobling afløser 2♥ (ikke straf), og laveste sans dækker 3+ kontroller."
+   }
+  }
+ },
+ "hands": [
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     9,
+     7,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     6,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     2
+    ]
+   },
+   "hp": 3,
+   "sp": 6,
+   "correct": "2♦",
+   "why": "Du har 0 kontroller (es = 2, konge = 1): 2♦ viser 0–1 kontrol."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     2
+    ],
+    "H": [
+     13,
+     7,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     10,
+     6
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     6,
+     5
+    ]
+   },
+   "hp": 5,
+   "sp": 9,
+   "correct": "2♦",
+   "why": "Du har 1 kontrol (es = 2, konge = 1): 2♦ viser 0–1 kontrol."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     12,
+     10,
+     9,
+     8,
+     4
+    ],
+    "H": [
+     9,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     4
+    ],
+    "C": [
+     3,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 7,
+   "correct": "2♦",
+   "why": "Du har 1 kontrol (es = 2, konge = 1): 2♦ viser 0–1 kontrol."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     12,
+     11,
+     4,
+     2
+    ],
+    "H": [
+     11,
+     10,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     11,
+     8,
+     6
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "correct": "2♦",
+   "why": "Du har 0 kontroller (es = 2, konge = 1): 2♦ viser 0–1 kontrol."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     14,
+     10,
+     4,
+     2
+    ],
+    "H": [
+     8,
+     6
+    ],
+    "D": [
+     12,
+     10,
+     4
+    ],
+    "C": [
+     9,
+     8,
+     7,
+     6
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "2♥",
+   "why": "Du har 2 kontroller (es = 2, konge = 1): 2♥ viser præcis 2."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     13,
+     10
+    ],
+    "H": [
+     13,
+     11,
+     9,
+     7
+    ],
+    "D": [
+     12,
+     10
+    ],
+    "C": [
+     10,
+     9,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "2♥",
+   "why": "Du har 2 kontroller (es = 2, konge = 1): 2♥ viser præcis 2."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     10
+    ],
+    "H": [
+     13,
+     10,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     13,
+     10,
+     9
+    ],
+    "C": [
+     11,
+     10,
+     9,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "2♥",
+   "why": "Du har 2 kontroller (es = 2, konge = 1): 2♥ viser præcis 2."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     9,
+     8,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     9
+    ],
+    "D": [
+     10,
+     8,
+     7,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     10
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "correct": "2♥",
+   "why": "Du har 2 kontroller (es = 2, konge = 1): 2♥ viser præcis 2."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     9,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     14,
+     9,
+     5
+    ],
+    "C": [
+     13,
+     12,
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "Du har 3 kontroller (es = 2, konge = 1): 2♠ viser præcis 3."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     13,
+     9
+    ],
+    "H": [
+     9,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     10,
+     4
+    ],
+    "C": [
+     13,
+     11,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2♠",
+   "why": "Du har 3 kontroller (es = 2, konge = 1): 2♠ viser præcis 3."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     11,
+     10,
+     4
+    ],
+    "H": [
+     13,
+     9,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     6
+    ],
+    "C": [
+     10
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "Du har 3 kontroller (es = 2, konge = 1): 2♠ viser præcis 3."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     3
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     11,
+     8,
+     6,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     8,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "2♠",
+   "why": "Du har 3 kontroller (es = 2, konge = 1): 2♠ viser præcis 3."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     13,
+     12,
+     7,
+     6,
+     4
+    ],
+    "D": [
+     8,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Du har 4 kontroller (es = 2, konge = 1): 2NT viser præcis 4."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     9,
+     4
+    ],
+    "H": [
+     9,
+     8,
+     5
+    ],
+    "D": [
+     13,
+     3
+    ],
+    "C": [
+     9,
+     6,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2NT",
+   "why": "Du har 4 kontroller (es = 2, konge = 1): 2NT viser præcis 4."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     12,
+     11,
+     7,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     6,
+     2
+    ],
+    "D": [
+     10,
+     5
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Du har 4 kontroller (es = 2, konge = 1): 2NT viser præcis 4."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     7,
+     5
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     13,
+     11,
+     8,
+     4
+    ],
+    "C": [
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Du har 4 kontroller (es = 2, konge = 1): 2NT viser præcis 4."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     7,
+     4
+    ],
+    "H": [
+     13,
+     7,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     12,
+     2
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 16,
+   "sp": 20,
+   "correct": "3♣",
+   "why": "Du har 5 kontroller (es = 2, konge = 1): 3♣ viser 5+ – krav til lilleslem."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     14,
+     12,
+     5
+    ],
+    "H": [
+     8,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     9
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     8,
+     6
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "Du har 5 kontroller (es = 2, konge = 1): 3♣ viser 5+ – krav til lilleslem."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     8
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     13,
+     11,
+     9,
+     5
+    ],
+    "C": [
+     13,
+     11,
+     5,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♣",
+   "why": "Du har 5 kontroller (es = 2, konge = 1): 3♣ viser 5+ – krav til lilleslem."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     2
+    ],
+    "H": [
+     11,
+     8
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     9,
+     8
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     7,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "3♣",
+   "why": "Du har 5 kontroller (es = 2, konge = 1): 3♣ viser 5+ – krav til lilleslem."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     9,
+     4,
+     3
+    ],
+    "H": [
+     9,
+     4,
+     3
+    ],
+    "D": [
+     12,
+     2
+    ],
+    "C": [
+     12,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♥",
+   "why": "To af de tre øverste i spar (6 kort), men ikke gående: 3♥ er overføring til spar."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     5,
+     4
+    ],
+    "D": [
+     11,
+     7,
+     2
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♥",
+   "why": "To af de tre øverste i spar (6 kort), men ikke gående: 3♥ er overføring til spar."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     4,
+     3,
+     2
+    ],
+    "D": [
+     10,
+     7,
+     5
+    ],
+    "C": [
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "correct": "3♥",
+   "why": "To af de tre øverste i spar (6 kort), men ikke gående: 3♥ er overføring til spar."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     9,
+     4,
+     3
+    ],
+    "C": [
+     8,
+     4,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "correct": "3♥",
+   "why": "To af de tre øverste i spar (6 kort), men ikke gående: 3♥ er overføring til spar."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     9,
+     8,
+     4
+    ],
+    "D": [
+     9,
+     7,
+     6,
+     5
+    ],
+    "C": [
+     6,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "To af de tre øverste i hjerter (6 kort), men ikke gående: 3♦ er overføring til hjerter."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     11,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     7,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     5
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♦",
+   "why": "To af de tre øverste i hjerter (6 kort), men ikke gående: 3♦ er overføring til hjerter."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     6,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     10,
+     5,
+     3
+    ],
+    "D": [],
+    "C": [
+     12,
+     7,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "To af de tre øverste i hjerter (6 kort), men ikke gående: 3♦ er overføring til hjerter."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     8,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     11,
+     10,
+     5
+    ],
+    "C": []
+   },
+   "hp": 7,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "To af de tre øverste i hjerter (6 kort), men ikke gående: 3♦ er overføring til hjerter."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     9,
+     8,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     9,
+     8
+    ]
+   },
+   "hp": 6,
+   "sp": 10,
+   "correct": "3NT",
+   "why": "To af de tre øverste i ruder (6 kort), men ikke gående: 3NT er overføring til ruder."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [],
+    "H": [
+     8,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     9,
+     8,
+     6
+    ],
+    "C": [
+     12,
+     6,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "3NT",
+   "why": "To af de tre øverste i ruder (6 kort), men ikke gående: 3NT er overføring til ruder."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     10
+    ],
+    "H": [
+     12,
+     11
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     10,
+     4,
+     3
+    ],
+    "C": [
+     11,
+     10,
+     6,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "3NT",
+   "why": "To af de tre øverste i ruder (6 kort), men ikke gående: 3NT er overføring til ruder."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     11,
+     9,
+     5,
+     3
+    ],
+    "H": [],
+    "D": [
+     13,
+     12,
+     9,
+     8,
+     7,
+     3
+    ],
+    "C": [
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 11,
+   "correct": "3NT",
+   "why": "To af de tre øverste i ruder (6 kort), men ikke gående: 3NT er overføring til ruder."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     11,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     4,
+     2
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 10,
+   "correct": "3♠",
+   "why": "To af de tre øverste i klør (6 kort), men ikke gående: 3♠ er overføring til klør."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     8,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     7,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     10,
+     5,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 10,
+   "correct": "3♠",
+   "why": "To af de tre øverste i klør (6 kort), men ikke gående: 3♠ er overføring til klør."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     11,
+     4,
+     2
+    ],
+    "H": [
+     10,
+     6,
+     4,
+     3
+    ],
+    "D": [],
+    "C": [
+     14,
+     12,
+     10,
+     9,
+     8,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "correct": "3♠",
+   "why": "To af de tre øverste i klør (6 kort), men ikke gående: 3♠ er overføring til klør."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     12,
+     11,
+     8,
+     5
+    ],
+    "D": [
+     11,
+     6
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     7,
+     4,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "3♠",
+   "why": "To af de tre øverste i klør (6 kort), men ikke gående: 3♠ er overføring til klør."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11,
+     9,
+     5,
+     4
+    ],
+    "H": [],
+    "D": [
+     10,
+     6,
+     4,
+     3
+    ],
+    "C": [
+     9,
+     6
+    ]
+   },
+   "hp": 10,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "Gående sparfarve: 4♥ er overføring og viser den."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11,
+     10,
+     3,
+     2
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     7,
+     2
+    ],
+    "C": [
+     9,
+     4,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "4♥",
+   "why": "Gående sparfarve: 4♥ er overføring og viser den."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     10,
+     9,
+     4,
+     2
+    ],
+    "H": [
+     9,
+     8,
+     7,
+     5
+    ],
+    "D": [
+     10,
+     3
+    ],
+    "C": []
+   },
+   "hp": 9,
+   "sp": 15,
+   "correct": "4♥",
+   "why": "Gående sparfarve: 4♥ er overføring og viser den."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     7,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     8,
+     7,
+     3
+    ],
+    "D": [],
+    "C": [
+     9,
+     8,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 14,
+   "correct": "4♥",
+   "why": "Gående sparfarve: 4♥ er overføring og viser den."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     10,
+     5,
+     4
+    ],
+    "D": [
+     10,
+     8,
+     7
+    ],
+    "C": [
+     9,
+     8,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "4♦",
+   "why": "Gående hjerterfarve: 4♦ er overføring og viser den."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     10,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     9,
+     8,
+     5,
+     4
+    ],
+    "D": [
+     9
+    ],
+    "C": [
+     10
+    ]
+   },
+   "hp": 9,
+   "sp": 15,
+   "correct": "4♦",
+   "why": "Gående hjerterfarve: 4♦ er overføring og viser den."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     9,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10,
+     9,
+     8,
+     7
+    ],
+    "D": [
+     10,
+     7
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "4♦",
+   "why": "Gående hjerterfarve: 4♦ er overføring og viser den."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     9,
+     7,
+     6,
+     5
+    ],
+    "D": [
+     8,
+     4,
+     2
+    ],
+    "C": [
+     8,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "4♦",
+   "why": "Gående hjerterfarve: 4♦ er overføring og viser den."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     4,
+     3,
+     2
+    ],
+    "H": [
+     11,
+     10,
+     7
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     10,
+     9,
+     5,
+     4
+    ],
+    "C": []
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "4♣",
+   "why": "Gående ruderfarve: 4♣ er overføring og viser den."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     11,
+     8,
+     5,
+     4
+    ],
+    "H": [],
+    "D": [
+     14,
+     13,
+     12,
+     9,
+     8,
+     6,
+     4
+    ],
+    "C": [
+     10,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 16,
+   "correct": "4♣",
+   "why": "Gående ruderfarve: 4♣ er overføring og viser den."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     10,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     10,
+     8,
+     6,
+     2
+    ],
+    "C": [
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 15,
+   "correct": "4♣",
+   "why": "Gående ruderfarve: 4♣ er overføring og viser den."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     9,
+     7
+    ],
+    "H": [
+     9,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     11,
+     9,
+     8,
+     6
+    ],
+    "C": [
+     9,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "4♣",
+   "why": "Gående ruderfarve: 4♣ er overføring og viser den."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     5,
+     3
+    ],
+    "H": [
+     8
+    ],
+    "D": [
+     10,
+     8,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     11,
+     9,
+     6,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "4♠",
+   "why": "Gående klørfarve: 4♠ er overføring og viser den."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     7,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     9,
+     8,
+     6,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 16,
+   "correct": "4♠",
+   "why": "Gående klørfarve: 4♠ er overføring og viser den."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     10,
+     7
+    ],
+    "D": [
+     8,
+     7,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     11,
+     9,
+     6,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "4♠",
+   "why": "Gående klørfarve: 4♠ er overføring og viser den."
+  },
+  {
+   "situation": "svar_1",
+   "hand": {
+    "S": [
+     8,
+     7,
+     3
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     10,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     11,
+     10,
+     6,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "4♠",
+   "why": "Gående klørfarve: 4♠ er overføring og viser den."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     9
+    ],
+    "H": [
+     10,
+     9
+    ],
+    "D": [
+     14,
+     13,
+     11
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     5
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "2NT",
+   "why": "Sanshånd med 22 hp efter makkers 2♦ (0–1 kontrol): 2NT viser 22–23 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     9
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     10,
+     4
+    ],
+    "C": [
+     11,
+     5
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "2NT",
+   "why": "Sanshånd med 22 hp efter makkers 2♦ (0–1 kontrol): 2NT viser 22–23 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     7
+    ],
+    "C": [
+     14,
+     12,
+     3
+    ]
+   },
+   "hp": 23,
+   "sp": 23,
+   "correct": "2NT",
+   "why": "Sanshånd med 23 hp efter makkers 2♦ (0–1 kontrol): 2NT viser 22–23 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     11
+    ],
+    "H": [
+     13,
+     12,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     12
+    ],
+    "C": [
+     14,
+     8,
+     7,
+     5
+    ]
+   },
+   "hp": 23,
+   "sp": 24,
+   "correct": "2NT",
+   "why": "Sanshånd med 23 hp efter makkers 2♦ (0–1 kontrol): 2NT viser 22–23 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     6
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     9
+    ],
+    "C": [
+     14,
+     13,
+     8
+    ]
+   },
+   "hp": 23,
+   "sp": 24,
+   "correct": "2NT",
+   "why": "Sanshånd med 23 hp efter makkers 2♦ (0–1 kontrol): 2NT viser 22–23 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     9,
+     3
+    ],
+    "D": [
+     14,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     10
+    ]
+   },
+   "hp": 23,
+   "sp": 24,
+   "correct": "2NT",
+   "why": "Sanshånd med 23 hp efter makkers 2♦ (0–1 kontrol): 2NT viser 22–23 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     7,
+     4
+    ],
+    "H": [
+     11,
+     7
+    ],
+    "D": [
+     14,
+     13,
+     12
+    ],
+    "C": [
+     14,
+     12,
+     6
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "2NT",
+   "why": "Sanshånd med 22 hp efter makkers 2♦ (0–1 kontrol): 2NT viser 22–23 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     2
+    ],
+    "D": [
+     14,
+     8
+    ],
+    "C": [
+     14,
+     13,
+     8
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "2NT",
+   "why": "Sanshånd med 22 hp efter makkers 2♦ (0–1 kontrol): 2NT viser 22–23 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9
+    ],
+    "H": [
+     13,
+     11
+    ],
+    "D": [
+     14,
+     7,
+     6,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     9
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "2NT",
+   "why": "Sanshånd med 22 hp efter makkers 2♦ (0–1 kontrol): 2NT viser 22–23 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     9
+    ],
+    "H": [
+     14,
+     13,
+     5,
+     2
+    ],
+    "D": [
+     6,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     8
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "2NT",
+   "why": "Sanshånd med 22 hp efter makkers 2♦ (0–1 kontrol): 2NT viser 22–23 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     5
+    ],
+    "H": [
+     13,
+     10,
+     9
+    ],
+    "D": [
+     14,
+     13,
+     7,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     9
+    ]
+   },
+   "hp": 23,
+   "sp": 23,
+   "correct": "2NT",
+   "why": "Sanshånd med 23 hp efter makkers 2♦ (0–1 kontrol): 2NT viser 22–23 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     3
+    ],
+    "H": [
+     13,
+     11
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     5,
+     4
+    ],
+    "C": [
+     13,
+     9,
+     2
+    ]
+   },
+   "hp": 23,
+   "sp": 24,
+   "correct": "2NT",
+   "why": "Sanshånd med 23 hp efter makkers 2♦ (0–1 kontrol): 2NT viser 22–23 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11
+    ],
+    "H": [
+     14,
+     10,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     3
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "2NT",
+   "why": "Sanshånd med 22 hp efter makkers 2♦ (0–1 kontrol): 2NT viser 22–23 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11,
+     9
+    ],
+    "H": [
+     14,
+     12,
+     2
+    ],
+    "D": [
+     12,
+     11
+    ],
+    "C": [
+     14,
+     8,
+     7
+    ]
+   },
+   "hp": 23,
+   "sp": 24,
+   "correct": "2NT",
+   "why": "Sanshånd med 23 hp efter makkers 2♦ (0–1 kontrol): 2NT viser 22–23 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     12
+    ],
+    "D": [
+     14,
+     13,
+     10
+    ],
+    "C": [
+     13,
+     11,
+     7
+    ]
+   },
+   "hp": 25,
+   "sp": 26,
+   "correct": "3NT",
+   "why": "Sanshånd med 25 hp efter makkers 2♦ (0–1 kontrol): 3NT viser 24–25 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     13,
+     12
+    ],
+    "H": [
+     14,
+     13,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     7
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "3NT",
+   "why": "Sanshånd med 24 hp efter makkers 2♦ (0–1 kontrol): 3NT viser 24–25 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     10
+    ],
+    "D": [
+     14,
+     11
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     7,
+     3
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "3NT",
+   "why": "Sanshånd med 24 hp efter makkers 2♦ (0–1 kontrol): 3NT viser 24–25 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     7
+    ],
+    "D": [
+     14,
+     12,
+     8,
+     4
+    ],
+    "C": [
+     14,
+     2
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "3NT",
+   "why": "Sanshånd med 24 hp efter makkers 2♦ (0–1 kontrol): 3NT viser 24–25 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     8,
+     7
+    ],
+    "D": [
+     14,
+     6,
+     4
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "3NT",
+   "why": "Sanshånd med 24 hp efter makkers 2♦ (0–1 kontrol): 3NT viser 24–25 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     8,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     6
+    ],
+    "C": [
+     14,
+     8
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "3NT",
+   "why": "Sanshånd med 24 hp efter makkers 2♦ (0–1 kontrol): 3NT viser 24–25 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     6
+    ],
+    "H": [
+     14,
+     9
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     11
+    ],
+    "C": [
+     14,
+     11,
+     3,
+     2
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "3NT",
+   "why": "Sanshånd med 24 hp efter makkers 2♦ (0–1 kontrol): 3NT viser 24–25 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     9,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     13
+    ],
+    "D": [
+     14,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     12
+    ]
+   },
+   "hp": 25,
+   "sp": 26,
+   "correct": "3NT",
+   "why": "Sanshånd med 25 hp efter makkers 2♦ (0–1 kontrol): 3NT viser 24–25 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     9
+    ],
+    "D": [
+     12,
+     9,
+     5
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "3NT",
+   "why": "Sanshånd med 24 hp efter makkers 2♦ (0–1 kontrol): 3NT viser 24–25 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12
+    ],
+    "H": [
+     13,
+     12,
+     5
+    ],
+    "D": [
+     13,
+     10,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     8,
+     6
+    ]
+   },
+   "hp": 24,
+   "sp": 24,
+   "correct": "3NT",
+   "why": "Sanshånd med 24 hp efter makkers 2♦ (0–1 kontrol): 3NT viser 24–25 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     9,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     12
+    ],
+    "C": [
+     8,
+     6
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "3NT",
+   "why": "Sanshånd med 24 hp efter makkers 2♦ (0–1 kontrol): 3NT viser 24–25 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     12
+    ],
+    "C": [
+     14,
+     8,
+     2
+    ]
+   },
+   "hp": 25,
+   "sp": 26,
+   "correct": "3NT",
+   "why": "Sanshånd med 25 hp efter makkers 2♦ (0–1 kontrol): 3NT viser 24–25 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9
+    ],
+    "H": [
+     14,
+     12
+    ],
+    "D": [
+     14,
+     11,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     2
+    ]
+   },
+   "hp": 25,
+   "sp": 26,
+   "correct": "3NT",
+   "why": "Sanshånd med 25 hp efter makkers 2♦ (0–1 kontrol): 3NT viser 24–25 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8
+    ],
+    "H": [
+     14,
+     11,
+     3
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     10,
+     6
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "3NT",
+   "why": "Sanshånd med 24 hp efter makkers 2♦ (0–1 kontrol): 3NT viser 24–25 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     2
+    ],
+    "C": [
+     13,
+     11,
+     5
+    ]
+   },
+   "hp": 26,
+   "sp": 27,
+   "correct": "4NT",
+   "why": "Sanshånd med 26 hp efter makkers 2♦ (0–1 kontrol): 4NT viser 26–27 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     8,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     12
+    ],
+    "D": [
+     13,
+     12,
+     9
+    ],
+    "C": [
+     13,
+     8
+    ]
+   },
+   "hp": 26,
+   "sp": 27,
+   "correct": "4NT",
+   "why": "Sanshånd med 26 hp efter makkers 2♦ (0–1 kontrol): 4NT viser 26–27 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     4
+    ],
+    "H": [
+     14,
+     13
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     5
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     3
+    ]
+   },
+   "hp": 27,
+   "sp": 28,
+   "correct": "4NT",
+   "why": "Sanshånd med 27 hp efter makkers 2♦ (0–1 kontrol): 4NT viser 26–27 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     13,
+     11,
+     5
+    ],
+    "H": [
+     14,
+     12
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     11,
+     8
+    ],
+    "C": [
+     14,
+     12,
+     10
+    ]
+   },
+   "hp": 26,
+   "sp": 27,
+   "correct": "4NT",
+   "why": "Sanshånd med 26 hp efter makkers 2♦ (0–1 kontrol): 4NT viser 26–27 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12
+    ],
+    "H": [
+     14,
+     13,
+     9
+    ],
+    "D": [
+     14,
+     13,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     7
+    ]
+   },
+   "hp": 27,
+   "sp": 28,
+   "correct": "4NT",
+   "why": "Sanshånd med 27 hp efter makkers 2♦ (0–1 kontrol): 4NT viser 26–27 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     14,
+     13,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     9
+    ]
+   },
+   "hp": 26,
+   "sp": 27,
+   "correct": "4NT",
+   "why": "Sanshånd med 26 hp efter makkers 2♦ (0–1 kontrol): 4NT viser 26–27 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     4
+    ],
+    "H": [
+     14,
+     13
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     5
+    ],
+    "C": [
+     14,
+     6,
+     3
+    ]
+   },
+   "hp": 26,
+   "sp": 27,
+   "correct": "4NT",
+   "why": "Sanshånd med 26 hp efter makkers 2♦ (0–1 kontrol): 4NT viser 26–27 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     4
+    ],
+    "H": [
+     14,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     9
+    ]
+   },
+   "hp": 26,
+   "sp": 27,
+   "correct": "4NT",
+   "why": "Sanshånd med 26 hp efter makkers 2♦ (0–1 kontrol): 4NT viser 26–27 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11
+    ],
+    "H": [
+     14,
+     13,
+     10
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     8,
+     5
+    ],
+    "C": [
+     14,
+     2
+    ]
+   },
+   "hp": 26,
+   "sp": 27,
+   "correct": "4NT",
+   "why": "Sanshånd med 26 hp efter makkers 2♦ (0–1 kontrol): 4NT viser 26–27 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 27,
+   "sp": 28,
+   "correct": "4NT",
+   "why": "Sanshånd med 27 hp efter makkers 2♦ (0–1 kontrol): 4NT viser 26–27 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     9,
+     7
+    ],
+    "H": [
+     14,
+     12,
+     11
+    ],
+    "D": [
+     13,
+     9,
+     3
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 26,
+   "sp": 27,
+   "correct": "4NT",
+   "why": "Sanshånd med 26 hp efter makkers 2♦ (0–1 kontrol): 4NT viser 26–27 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     6
+    ],
+    "D": [
+     14,
+     10
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     11
+    ]
+   },
+   "hp": 26,
+   "sp": 27,
+   "correct": "4NT",
+   "why": "Sanshånd med 26 hp efter makkers 2♦ (0–1 kontrol): 4NT viser 26–27 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     8,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     6
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
+   "hp": 26,
+   "sp": 27,
+   "correct": "4NT",
+   "why": "Sanshånd med 26 hp efter makkers 2♦ (0–1 kontrol): 4NT viser 26–27 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     2
+    ],
+    "H": [
+     13,
+     12
+    ],
+    "D": [
+     14,
+     13,
+     4
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     4
+    ]
+   },
+   "hp": 26,
+   "sp": 27,
+   "correct": "4NT",
+   "why": "Sanshånd med 26 hp efter makkers 2♦ (0–1 kontrol): 4NT viser 26–27 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     7,
+     3
+    ],
+    "H": [
+     14,
+     12
+    ],
+    "D": [
+     14,
+     12,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     10
+    ]
+   },
+   "hp": 28,
+   "sp": 29,
+   "correct": "5NT",
+   "why": "Sanshånd med 28 hp efter makkers 2♦ (0–1 kontrol): 5NT viser 28–29 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     12
+    ],
+    "C": [
+     13,
+     12,
+     6,
+     2
+    ]
+   },
+   "hp": 28,
+   "sp": 29,
+   "correct": "5NT",
+   "why": "Sanshånd med 28 hp efter makkers 2♦ (0–1 kontrol): 5NT viser 28–29 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     13
+    ],
+    "C": [
+     14,
+     13,
+     11
+    ]
+   },
+   "hp": 29,
+   "sp": 30,
+   "correct": "5NT",
+   "why": "Sanshånd med 29 hp efter makkers 2♦ (0–1 kontrol): 5NT viser 28–29 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     3
+    ],
+    "H": [
+     14,
+     9
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     8
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     9
+    ]
+   },
+   "hp": 28,
+   "sp": 29,
+   "correct": "5NT",
+   "why": "Sanshånd med 28 hp efter makkers 2♦ (0–1 kontrol): 5NT viser 28–29 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     2
+    ],
+    "D": [
+     13,
+     10
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     2
+    ]
+   },
+   "hp": 28,
+   "sp": 29,
+   "correct": "5NT",
+   "why": "Sanshånd med 28 hp efter makkers 2♦ (0–1 kontrol): 5NT viser 28–29 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     7
+    ],
+    "D": [
+     14,
+     13,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     11
+    ]
+   },
+   "hp": 28,
+   "sp": 29,
+   "correct": "5NT",
+   "why": "Sanshånd med 28 hp efter makkers 2♦ (0–1 kontrol): 5NT viser 28–29 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     9,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     7
+    ],
+    "D": [
+     14,
+     13,
+     11
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 28,
+   "sp": 29,
+   "correct": "5NT",
+   "why": "Sanshånd med 28 hp efter makkers 2♦ (0–1 kontrol): 5NT viser 28–29 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     9,
+     7
+    ],
+    "D": [
+     14,
+     12,
+     9
+    ],
+    "C": [
+     14,
+     13,
+     11
+    ]
+   },
+   "hp": 29,
+   "sp": 30,
+   "correct": "5NT",
+   "why": "Sanshånd med 29 hp efter makkers 2♦ (0–1 kontrol): 5NT viser 28–29 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     14,
+     13,
+     12
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     11,
+     9
+    ],
+    "C": [
+     13,
+     6,
+     3
+    ]
+   },
+   "hp": 29,
+   "sp": 30,
+   "correct": "5NT",
+   "why": "Sanshånd med 29 hp efter makkers 2♦ (0–1 kontrol): 5NT viser 28–29 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9
+    ],
+    "H": [
+     14,
+     13,
+     12
+    ],
+    "D": [
+     14,
+     13,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     11
+    ]
+   },
+   "hp": 28,
+   "sp": 28,
+   "correct": "5NT",
+   "why": "Sanshånd med 28 hp efter makkers 2♦ (0–1 kontrol): 5NT viser 28–29 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     12,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     12
+    ],
+    "D": [
+     14,
+     13,
+     11
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     9,
+     8
+    ]
+   },
+   "hp": 28,
+   "sp": 29,
+   "correct": "5NT",
+   "why": "Sanshånd med 28 hp efter makkers 2♦ (0–1 kontrol): 5NT viser 28–29 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     11
+    ],
+    "C": [
+     14,
+     10
+    ]
+   },
+   "hp": 29,
+   "sp": 30,
+   "correct": "5NT",
+   "why": "Sanshånd med 29 hp efter makkers 2♦ (0–1 kontrol): 5NT viser 28–29 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11
+    ],
+    "H": [
+     14,
+     11
+    ],
+    "D": [
+     14,
+     12,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     9,
+     6
+    ]
+   },
+   "hp": 28,
+   "sp": 29,
+   "correct": "5NT",
+   "why": "Sanshånd med 28 hp efter makkers 2♦ (0–1 kontrol): 5NT viser 28–29 hp."
+  },
+  {
+   "situation": "aabner_2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11
+    ],
+    "H": [
+     14,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     10
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     3
+    ]
+   },
+   "hp": 28,
+   "sp": 29,
+   "correct": "5NT",
+   "why": "Sanshånd med 28 hp efter makkers 2♦ (0–1 kontrol): 5NT viser 28–29 hp."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     5
+    ],
+    "H": [
+     12,
+     10
+    ],
+    "D": [
+     14,
+     13,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     2
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "2NT",
+   "why": "24 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     8,
+     6
+    ],
+    "D": [
+     13,
+     10,
+     3
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 25,
+   "sp": 26,
+   "correct": "2NT",
+   "why": "25 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     4
+    ],
+    "D": [
+     14,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     9
+    ]
+   },
+   "hp": 25,
+   "sp": 25,
+   "correct": "2NT",
+   "why": "25 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     2
+    ],
+    "D": [
+     14,
+     13
+    ],
+    "C": [
+     13,
+     11,
+     9
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "2NT",
+   "why": "24 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     11
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 26,
+   "sp": 27,
+   "correct": "2NT",
+   "why": "26 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     5
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     14,
+     12,
+     2
+    ]
+   },
+   "hp": 25,
+   "sp": 26,
+   "correct": "2NT",
+   "why": "25 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     5
+    ],
+    "D": [
+     12,
+     10,
+     7
+    ],
+    "C": [
+     14,
+     12,
+     9
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "2NT",
+   "why": "24 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     14,
+     13,
+     12
+    ],
+    "D": [
+     12,
+     11,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "2NT",
+   "why": "24 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     6
+    ],
+    "H": [
+     13,
+     11,
+     2
+    ],
+    "D": [
+     14,
+     13
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     9,
+     8
+    ]
+   },
+   "hp": 26,
+   "sp": 27,
+   "correct": "2NT",
+   "why": "26 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     11
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     8,
+     6
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
+   "hp": 25,
+   "sp": 26,
+   "correct": "2NT",
+   "why": "25 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     14,
+     13,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     11
+    ],
+    "C": [
+     13,
+     11,
+     6,
+     3
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "2NT",
+   "why": "24 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     9
+    ],
+    "H": [
+     14,
+     13,
+     8
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     9,
+     7
+    ],
+    "C": [
+     14,
+     9,
+     4
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "2NT",
+   "why": "24 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     10,
+     3
+    ],
+    "D": [
+     13,
+     11,
+     6
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "2NT",
+   "why": "24 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     13
+    ],
+    "C": [
+     14,
+     5,
+     3
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "2NT",
+   "why": "24 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     14,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     11
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     9,
+     4
+    ]
+   },
+   "hp": 25,
+   "sp": 26,
+   "correct": "2NT",
+   "why": "25 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11
+    ],
+    "H": [
+     13,
+     12,
+     10
+    ],
+    "D": [
+     14,
+     6
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     3
+    ]
+   },
+   "hp": 25,
+   "sp": 26,
+   "correct": "2NT",
+   "why": "25 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     4
+    ],
+    "D": [
+     12,
+     9,
+     8,
+     3
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     13,
+     9,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     7
+    ],
+    "D": [
+     13,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     11
+    ]
+   },
+   "hp": 22,
+   "sp": 22,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     9,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     9
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11,
+     2
+    ],
+    "H": [
+     14,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     11
+    ],
+    "C": [
+     14,
+     10,
+     4
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     7
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     8
+    ],
+    "C": [
+     13,
+     11,
+     10
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     13,
+     10,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     9
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     5
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     13,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     7,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     12
+    ],
+    "C": [
+     14,
+     10,
+     3
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12
+    ],
+    "H": [
+     14,
+     8,
+     4
+    ],
+    "D": [
+     14,
+     9
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     9,
+     8
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     5
+    ],
+    "H": [
+     13,
+     12,
+     10
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     11,
+     8
+    ],
+    "C": [
+     12,
+     9
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     8,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     9
+    ],
+    "C": [
+     14,
+     13,
+     7,
+     5
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     4
+    ],
+    "D": [
+     13,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     7
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     14,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     11,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     4
+    ],
+    "H": [
+     14,
+     12
+    ],
+    "D": [
+     14,
+     9,
+     8,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     8
+    ]
+   },
+   "hp": 23,
+   "sp": 24,
+   "correct": "3NT",
+   "why": "23 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11
+    ],
+    "H": [
+     11,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     4
+    ],
+    "C": [
+     14,
+     11,
+     6,
+     5
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     13,
+     12
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     7
+    ],
+    "D": [
+     13,
+     12,
+     10
+    ],
+    "C": [
+     13,
+     12,
+     4,
+     2
+    ]
+   },
+   "hp": 23,
+   "sp": 24,
+   "correct": "3NT",
+   "why": "23 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2hj",
+   "hand": {
+    "S": [
+     14,
+     8,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     5
+    ],
+    "D": [
+     14,
+     10
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     2
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     2
+    ],
+    "D": [
+     14,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     7,
+     5,
+     4
+    ]
+   },
+   "hp": 25,
+   "sp": 26,
+   "correct": "2NT",
+   "why": "25 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     11,
+     4
+    ],
+    "D": [
+     13,
+     11
+    ],
+    "C": [
+     14,
+     13,
+     12
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "2NT",
+   "why": "24 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     6
+    ],
+    "H": [
+     12,
+     10
+    ],
+    "D": [
+     14,
+     13,
+     10
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     9,
+     7
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "2NT",
+   "why": "24 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     10
+    ],
+    "D": [
+     14,
+     12,
+     9
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 27,
+   "sp": 28,
+   "correct": "2NT",
+   "why": "27 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     7
+    ],
+    "H": [
+     14,
+     12,
+     2
+    ],
+    "D": [
+     14,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     4
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "2NT",
+   "why": "24 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     14,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     8,
+     7
+    ],
+    "D": [
+     14,
+     12,
+     5
+    ],
+    "C": [
+     13,
+     12,
+     11
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "2NT",
+   "why": "24 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     14,
+     8
+    ],
+    "H": [
+     13,
+     12,
+     7
+    ],
+    "D": [
+     14,
+     13,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     2
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "2NT",
+   "why": "24 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     7,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     7
+    ],
+    "D": [
+     13,
+     9
+    ],
+    "C": [
+     14,
+     12,
+     3
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "2NT",
+   "why": "24 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     13,
+     12
+    ],
+    "H": [
+     14,
+     13,
+     10
+    ],
+    "D": [
+     14,
+     12,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     9,
+     4
+    ]
+   },
+   "hp": 27,
+   "sp": 28,
+   "correct": "2NT",
+   "why": "27 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     13
+    ],
+    "D": [
+     12,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     11
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "2NT",
+   "why": "24 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     5
+    ],
+    "D": [
+     14,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     3
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "2NT",
+   "why": "24 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     12
+    ],
+    "D": [
+     14,
+     13,
+     10
+    ],
+    "C": [
+     12,
+     10,
+     2
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "2NT",
+   "why": "24 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     5
+    ],
+    "H": [
+     14,
+     11,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     9
+    ]
+   },
+   "hp": 24,
+   "sp": 24,
+   "correct": "2NT",
+   "why": "24 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     7
+    ],
+    "D": [
+     14,
+     12,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     12
+    ]
+   },
+   "hp": 25,
+   "sp": 25,
+   "correct": "2NT",
+   "why": "25 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     10
+    ],
+    "D": [
+     13,
+     10
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     4
+    ]
+   },
+   "hp": 24,
+   "sp": 25,
+   "correct": "2NT",
+   "why": "24 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10,
+     8
+    ],
+    "D": [
+     14,
+     7,
+     6
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 25,
+   "sp": 26,
+   "correct": "2NT",
+   "why": "25 hp efter et positivt svar: 2NT viser 24+ og giver plads til slemundersøgelsen."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     7
+    ],
+    "D": [
+     13,
+     10,
+     3
+    ],
+    "C": [
+     12,
+     9,
+     2
+    ]
+   },
+   "hp": 22,
+   "sp": 22,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     5
+    ],
+    "H": [
+     14,
+     11,
+     8
+    ],
+    "D": [
+     11,
+     8
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     5
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     13,
+     12
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     3
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     10,
+     9
+    ],
+    "H": [
+     13,
+     11,
+     10
+    ],
+    "D": [
+     14,
+     13,
+     11
+    ],
+    "C": [
+     13,
+     3
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     3
+    ],
+    "D": [
+     14,
+     11
+    ],
+    "C": [
+     14,
+     13,
+     7,
+     4
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     3
+    ],
+    "C": [
+     12,
+     3
+    ]
+   },
+   "hp": 23,
+   "sp": 24,
+   "correct": "3NT",
+   "why": "23 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     9
+    ],
+    "H": [
+     14,
+     12,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     6
+    ],
+    "C": [
+     13,
+     11,
+     2
+    ]
+   },
+   "hp": 22,
+   "sp": 22,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     13,
+     12
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     8,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     10
+    ],
+    "C": [
+     14,
+     12,
+     11
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     3
+    ],
+    "D": [
+     11,
+     8
+    ],
+    "C": [
+     14,
+     13,
+     8
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     8
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     9
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     13,
+     8,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     8
+    ],
+    "D": [
+     14,
+     12,
+     6,
+     4
+    ],
+    "C": [
+     14,
+     11
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     13,
+     10,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     9
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 23,
+   "sp": 24,
+   "correct": "3NT",
+   "why": "23 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     9,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     5
+    ],
+    "C": [
+     12,
+     7
+    ]
+   },
+   "hp": 23,
+   "sp": 24,
+   "correct": "3NT",
+   "why": "23 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     9
+    ],
+    "H": [
+     14,
+     10,
+     7
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     9
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     13,
+     11
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     12
+    ],
+    "C": [
+     12,
+     10,
+     9
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "3NT",
+   "why": "22 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "aabner_2sp",
+   "hand": {
+    "S": [
+     13,
+     10
+    ],
+    "H": [
+     14,
+     12,
+     10
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     9
+    ]
+   },
+   "hp": 23,
+   "sp": 24,
+   "correct": "3NT",
+   "why": "23 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+  },
+  {
+   "situation": "trumf_hj",
+   "hand": {
+    "S": [
+     8,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     11,
+     6
+    ],
+    "D": [
+     12,
+     6,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     5,
+     3
+    ]
+   },
+   "hp": 3,
+   "sp": 5,
+   "correct": "4♥",
+   "why": "0 kontroller og en negativ hånd (3 hp): udgang i trumf, 4♥."
+  },
+  {
+   "situation": "trumf_hj",
+   "hand": {
+    "S": [
+     9,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     8,
+     7
+    ],
+    "D": [
+     9,
+     7
+    ],
+    "C": [
+     11,
+     10,
+     8,
+     7,
+     6
+    ]
+   },
+   "hp": 1,
+   "sp": 3,
+   "correct": "4♥",
+   "why": "0 kontroller og en negativ hånd (1 hp): udgang i trumf, 4♥."
+  },
+  {
+   "situation": "trumf_hj",
+   "hand": {
+    "S": [
+     5,
+     4,
+     2
+    ],
+    "H": [
+     10,
+     9,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     10,
+     8,
+     7
+    ],
+    "C": [
+     8,
+     4
+    ]
+   },
+   "hp": 0,
+   "sp": 1,
+   "correct": "4♥",
+   "why": "0 kontroller og en negativ hånd (0 hp): udgang i trumf, 4♥."
+  },
+  {
+   "situation": "trumf_hj",
+   "hand": {
+    "S": [
+     11,
+     10
+    ],
+    "H": [
+     12,
+     11,
+     5,
+     3
+    ],
+    "D": [
+     9,
+     5
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     5,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "3NT",
+   "why": "0 kontroller, men 7 hp i damer og knægte: 3NT."
+  },
+  {
+   "situation": "trumf_hj",
+   "hand": {
+    "S": [
+     9,
+     8,
+     2
+    ],
+    "H": [
+     12,
+     9,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     6,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     6
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "3NT",
+   "why": "0 kontroller, men 4 hp i damer og knægte: 3NT."
+  },
+  {
+   "situation": "trumf_hj",
+   "hand": {
+    "S": [
+     12,
+     10,
+     2
+    ],
+    "H": [
+     12,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     8,
+     6,
+     2
+    ],
+    "C": [
+     8,
+     4,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 4,
+   "correct": "3NT",
+   "why": "0 kontroller, men 4 hp i damer og knægte: 3NT."
+  },
+  {
+   "situation": "trumf_hj",
+   "hand": {
+    "S": [
+     9,
+     7,
+     3
+    ],
+    "H": [
+     11,
+     10,
+     9,
+     8
+    ],
+    "D": [
+     12,
+     4
+    ],
+    "C": [
+     13,
+     7,
+     4,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "4♣",
+   "why": "Trumf er fastlagt, og du har klør konge: 4♣ viser kontrollen."
+  },
+  {
+   "situation": "trumf_hj",
+   "hand": {
+    "S": [
+     8,
+     7,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     10,
+     9,
+     7,
+     6
+    ],
+    "D": [
+     7,
+     6
+    ],
+    "C": [
+     13,
+     4
+    ]
+   },
+   "hp": 3,
+   "sp": 5,
+   "correct": "4♣",
+   "why": "Trumf er fastlagt, og du har klør konge: 4♣ viser kontrollen."
+  },
+  {
+   "situation": "trumf_hj",
+   "hand": {
+    "S": [
+     6,
+     5,
+     3
+    ],
+    "H": [
+     12,
+     10,
+     2
+    ],
+    "D": [
+     10,
+     7
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     8,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "4♣",
+   "why": "Trumf er fastlagt, og du har klør konge: 4♣ viser kontrollen."
+  },
+  {
+   "situation": "trumf_hj",
+   "hand": {
+    "S": [
+     9,
+     8,
+     7,
+     4
+    ],
+    "H": [
+     10,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     10,
+     2
+    ],
+    "C": [
+     9,
+     3
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "correct": "4♦",
+   "why": "Trumf er fastlagt, og du har ruder konge: 4♦ viser kontrollen."
+  },
+  {
+   "situation": "trumf_hj",
+   "hand": {
+    "S": [
+     11,
+     9,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     10,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     8,
+     4
+    ],
+    "C": [
+     5,
+     3
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "4♦",
+   "why": "Trumf er fastlagt, og du har ruder konge: 4♦ viser kontrollen."
+  },
+  {
+   "situation": "trumf_hj",
+   "hand": {
+    "S": [
+     10,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     3,
+     2
+    ],
+    "D": [
+     13,
+     8,
+     4
+    ],
+    "C": [
+     10,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "correct": "4♦",
+   "why": "Trumf er fastlagt, og du har ruder konge: 4♦ viser kontrollen."
+  },
+  {
+   "situation": "trumf_hj",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     7
+    ],
+    "H": [
+     8,
+     7,
+     6
+    ],
+    "D": [
+     6,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 5,
+   "correct": "3♠",
+   "why": "Trumf er fastlagt, og du har spar konge: 3♠ viser kontrollen."
+  },
+  {
+   "situation": "trumf_hj",
+   "hand": {
+    "S": [
+     13,
+     10,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     11,
+     7,
+     3
+    ],
+    "D": [
+     7,
+     6,
+     3
+    ],
+    "C": [
+     10,
+     8
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "3♠",
+   "why": "Trumf er fastlagt, og du har spar konge: 3♠ viser kontrollen."
+  },
+  {
+   "situation": "trumf_hj",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     7,
+     3
+    ],
+    "H": [
+     12,
+     8,
+     7
+    ],
+    "D": [
+     8,
+     7
+    ],
+    "C": [
+     11,
+     10,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "3♠",
+   "why": "Trumf er fastlagt, og du har spar konge: 3♠ viser kontrollen."
+  },
+  {
+   "situation": "trumf_sp",
+   "hand": {
+    "S": [
+     9,
+     7,
+     3
+    ],
+    "H": [
+     11,
+     7
+    ],
+    "D": [
+     8,
+     4,
+     3
+    ],
+    "C": [
+     10,
+     8,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 1,
+   "sp": 2,
+   "correct": "4♠",
+   "why": "0 kontroller og en negativ hånd (1 hp): udgang i trumf, 4♠."
+  },
+  {
+   "situation": "trumf_sp",
+   "hand": {
+    "S": [
+     8,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     6,
+     4
+    ],
+    "D": [
+     12,
+     8,
+     6
+    ],
+    "C": [
+     10,
+     9,
+     4,
+     3
+    ]
+   },
+   "hp": 2,
+   "sp": 3,
+   "correct": "4♠",
+   "why": "0 kontroller og en negativ hånd (2 hp): udgang i trumf, 4♠."
+  },
+  {
+   "situation": "trumf_sp",
+   "hand": {
+    "S": [
+     4,
+     2
+    ],
+    "H": [
+     11,
+     5,
+     2
+    ],
+    "D": [
+     10,
+     5,
+     2
+    ],
+    "C": [
+     12,
+     8,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "correct": "4♠",
+   "why": "0 kontroller og en negativ hånd (3 hp): udgang i trumf, 4♠."
+  },
+  {
+   "situation": "trumf_sp",
+   "hand": {
+    "S": [
+     12,
+     10,
+     9,
+     7,
+     6
+    ],
+    "H": [
+     11,
+     9,
+     6,
+     5
+    ],
+    "D": [
+     12,
+     5
+    ],
+    "C": [
+     10,
+     6
+    ]
+   },
+   "hp": 5,
+   "sp": 7,
+   "correct": "3NT",
+   "why": "0 kontroller, men 5 hp i damer og knægte: 3NT."
+  },
+  {
+   "situation": "trumf_sp",
+   "hand": {
+    "S": [
+     8,
+     5
+    ],
+    "H": [
+     11,
+     5
+    ],
+    "D": [
+     11,
+     7,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     6,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 6,
+   "correct": "3NT",
+   "why": "0 kontroller, men 4 hp i damer og knægte: 3NT."
+  },
+  {
+   "situation": "trumf_sp",
+   "hand": {
+    "S": [
+     12,
+     10
+    ],
+    "H": [
+     12,
+     10,
+     6,
+     4
+    ],
+    "D": [
+     10,
+     7
+    ],
+    "C": [
+     11,
+     10,
+     7,
+     3,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 7,
+   "correct": "3NT",
+   "why": "0 kontroller, men 5 hp i damer og knægte: 3NT."
+  },
+  {
+   "situation": "trumf_sp",
+   "hand": {
+    "S": [
+     11,
+     8,
+     7
+    ],
+    "H": [
+     10,
+     7,
+     2
+    ],
+    "D": [
+     10,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     9,
+     8
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "4♣",
+   "why": "Trumf er fastlagt, og du har klør konge: 4♣ viser kontrollen."
+  },
+  {
+   "situation": "trumf_sp",
+   "hand": {
+    "S": [
+     9,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     4,
+     2
+    ],
+    "D": [
+     6,
+     5
+    ],
+    "C": [
+     13,
+     8,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 3,
+   "sp": 5,
+   "correct": "4♣",
+   "why": "Trumf er fastlagt, og du har klør konge: 4♣ viser kontrollen."
+  },
+  {
+   "situation": "trumf_sp",
+   "hand": {
+    "S": [
+     4,
+     3,
+     2
+    ],
+    "H": [
+     11,
+     7,
+     4,
+     3
+    ],
+    "D": [
+     10,
+     2
+    ],
+    "C": [
+     13,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "4♣",
+   "why": "Trumf er fastlagt, og du har klør konge: 4♣ viser kontrollen."
+  },
+  {
+   "situation": "trumf_sp",
+   "hand": {
+    "S": [
+     9,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     11,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     3
+    ],
+    "C": [
+     10,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "4♦",
+   "why": "Trumf er fastlagt, og du har ruder konge: 4♦ viser kontrollen."
+  },
+  {
+   "situation": "trumf_sp",
+   "hand": {
+    "S": [
+     4,
+     2
+    ],
+    "H": [
+     11,
+     9,
+     7,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     10
+    ],
+    "C": [
+     11,
+     10,
+     7,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 7,
+   "correct": "4♦",
+   "why": "Trumf er fastlagt, og du har ruder konge: 4♦ viser kontrollen."
+  },
+  {
+   "situation": "trumf_sp",
+   "hand": {
+    "S": [
+     11,
+     4
+    ],
+    "H": [
+     9,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     3,
+     2
+    ],
+    "C": [
+     5,
+     4
+    ]
+   },
+   "hp": 6,
+   "sp": 8,
+   "correct": "4♦",
+   "why": "Trumf er fastlagt, og du har ruder konge: 4♦ viser kontrollen."
+  },
+  {
+   "situation": "trumf_sp",
+   "hand": {
+    "S": [
+     10,
+     6
+    ],
+    "H": [
+     13,
+     9,
+     8,
+     6,
+     5
+    ],
+    "D": [
+     11,
+     8
+    ],
+    "C": [
+     9,
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 4,
+   "sp": 6,
+   "correct": "4♥",
+   "why": "Trumf er fastlagt, og du har hjerter konge: 4♥ viser kontrollen."
+  },
+  {
+   "situation": "trumf_sp",
+   "hand": {
+    "S": [
+     10,
+     9,
+     7,
+     5
+    ],
+    "H": [
+     13,
+     9,
+     8,
+     5
+    ],
+    "D": [
+     9,
+     7,
+     3
+    ],
+    "C": [
+     9,
+     6
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "correct": "4♥",
+   "why": "Trumf er fastlagt, og du har hjerter konge: 4♥ viser kontrollen."
+  },
+  {
+   "situation": "trumf_sp",
+   "hand": {
+    "S": [
+     9,
+     2
+    ],
+    "H": [
+     13,
+     6
+    ],
+    "D": [
+     11,
+     10,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     6,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 8,
+   "correct": "4♥",
+   "why": "Trumf er fastlagt, og du har hjerter konge: 4♥ viser kontrollen."
+  },
+  {
+   "situation": "konk_ru",
+   "hand": {
+    "S": [
+     11,
+     10,
+     5,
+     4
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     12,
+     8,
+     5,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     7,
+     6
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "correct": "Pas",
+   "why": "0 kontroller: pas afløser 2♦-svaret."
+  },
+  {
+   "situation": "konk_ru",
+   "hand": {
+    "S": [
+     13,
+     7,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     9,
+     8,
+     6,
+     4,
+     3
+    ],
+    "C": [
+     11,
+     10
+    ]
+   },
+   "hp": 4,
+   "sp": 8,
+   "correct": "Pas",
+   "why": "1 kontrol: pas afløser 2♦-svaret."
+  },
+  {
+   "situation": "konk_ru",
+   "hand": {
+    "S": [
+     5,
+     3,
+     2
+    ],
+    "H": [
+     9
+    ],
+    "D": [
+     11,
+     8,
+     7,
+     5,
+     2
+    ],
+    "C": [
+     10,
+     7,
+     4,
+     2
+    ]
+   },
+   "hp": 1,
+   "sp": 4,
+   "correct": "Pas",
+   "why": "0 kontroller: pas afløser 2♦-svaret."
+  },
+  {
+   "situation": "konk_ru",
+   "hand": {
+    "S": [
+     11,
+     8,
+     7,
+     6,
+     2
+    ],
+    "H": [
+     9,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     11
+    ],
+    "C": [
+     11,
+     8,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "X",
+   "why": "Præcis 2 kontroller uden hæderlig langfarve: dobling – den erstatter 2♥ og er ikke straf."
+  },
+  {
+   "situation": "konk_ru",
+   "hand": {
+    "S": [
+     11,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     6
+    ],
+    "D": [
+     11,
+     7,
+     5
+    ],
+    "C": [
+     8,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "X",
+   "why": "Præcis 2 kontroller uden hæderlig langfarve: dobling – den erstatter 2♥ og er ikke straf."
+  },
+  {
+   "situation": "konk_ru",
+   "hand": {
+    "S": [
+     11,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     7
+    ],
+    "D": [
+     12,
+     10,
+     7,
+     6,
+     3
+    ],
+    "C": [
+     11,
+     10,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "X",
+   "why": "Præcis 2 kontroller uden hæderlig langfarve: dobling – den erstatter 2♥ og er ikke straf."
+  },
+  {
+   "situation": "konk_ru",
+   "hand": {
+    "S": [
+     13,
+     8,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     11,
+     7
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     8
+    ],
+    "C": [
+     5,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "4 kontroller: laveste sans viser mindst 3 kontroller."
+  },
+  {
+   "situation": "konk_ru",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7,
+     3
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     13,
+     12,
+     8,
+     2
+    ],
+    "C": [
+     9,
+     8,
+     5,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "3 kontroller: laveste sans viser mindst 3 kontroller."
+  },
+  {
+   "situation": "konk_ru",
+   "hand": {
+    "S": [
+     13,
+     9,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     4,
+     2
+    ],
+    "D": [
+     9,
+     3
+    ],
+    "C": [
+     10,
+     8
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "correct": "2NT",
+   "why": "3 kontroller: laveste sans viser mindst 3 kontroller."
+  },
+  {
+   "situation": "konk_ru",
+   "hand": {
+    "S": [
+     10,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     10,
+     9,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     8,
+     7,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "3♣",
+   "why": "Hæderlig 5-farve i klør og 1 kontrol: 3♣."
+  },
+  {
+   "situation": "konk_ru",
+   "hand": {
+    "S": [
+     8,
+     7,
+     6,
+     2
+    ],
+    "H": [
+     7,
+     6,
+     2
+    ],
+    "D": [
+     7
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     10,
+     8
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "3♣",
+   "why": "Hæderlig 5-farve i klør og 2 kontroller: 3♣."
+  },
+  {
+   "situation": "konk_ru",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9,
+     6
+    ],
+    "H": [
+     4,
+     3,
+     2
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     8,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "3♣",
+   "why": "Hæderlig 5-farve i klør og 1 kontrol: 3♣."
+  },
+  {
+   "situation": "konk_ru",
+   "hand": {
+    "S": [
+     9,
+     8,
+     4
+    ],
+    "H": [
+     13,
+     11,
+     9,
+     7,
+     3
+    ],
+    "D": [
+     7,
+     4,
+     2
+    ],
+    "C": [
+     9,
+     5
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "2♥",
+   "why": "Hæderlig 5-farve i hjerter og 1 kontrol: 2♥."
+  },
+  {
+   "situation": "konk_ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     5,
+     3
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     11,
+     8,
+     7,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "2♥",
+   "why": "Hæderlig 5-farve i hjerter og 2 kontroller: 2♥."
+  },
+  {
+   "situation": "konk_ru",
+   "hand": {
+    "S": [
+     12,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     6,
+     3
+    ],
+    "D": [
+     9,
+     6
+    ],
+    "C": [
+     14,
+     8,
+     6,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "2♥",
+   "why": "Hæderlig 5-farve i hjerter og 2 kontroller: 2♥."
+  },
+  {
+   "situation": "konk_ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10,
+     7,
+     2
+    ],
+    "H": [
+     14,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     11,
+     9,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "Hæderlig 5-farve i spar og 2 kontroller: 2♠."
+  },
+  {
+   "situation": "konk_ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     3,
+     2
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     10,
+     7,
+     5
+    ],
+    "C": [
+     10,
+     8,
+     6,
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "correct": "2♠",
+   "why": "Hæderlig 5-farve i spar og 1 kontrol: 2♠."
+  },
+  {
+   "situation": "konk_ru",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9,
+     4,
+     2
+    ],
+    "H": [
+     6,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     9,
+     7,
+     6
+    ],
+    "C": [
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "2♠",
+   "why": "Hæderlig 5-farve i spar og 2 kontroller: 2♠."
+  },
+  {
+   "situation": "konk_hj",
+   "hand": {
+    "S": [
+     7,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     6,
+     5,
+     4
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     11,
+     10,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 1,
+   "sp": 4,
+   "correct": "Pas",
+   "why": "0 kontroller: pas afløser 2♦-svaret."
+  },
+  {
+   "situation": "konk_hj",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9,
+     6,
+     4
+    ],
+    "H": [
+     12,
+     7
+    ],
+    "D": [
+     6,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     5,
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 7,
+   "correct": "Pas",
+   "why": "0 kontroller: pas afløser 2♦-svaret."
+  },
+  {
+   "situation": "konk_hj",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     10,
+     8,
+     7,
+     4
+    ],
+    "D": [
+     11,
+     5,
+     4
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     4,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 7,
+   "correct": "Pas",
+   "why": "0 kontroller: pas afløser 2♦-svaret."
+  },
+  {
+   "situation": "konk_hj",
+   "hand": {
+    "S": [
+     5,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     9,
+     4,
+     2
+    ],
+    "C": [
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "correct": "X",
+   "why": "Præcis 2 kontroller uden hæderlig langfarve: dobling – den erstatter 2♥ og er ikke straf."
+  },
+  {
+   "situation": "konk_hj",
+   "hand": {
+    "S": [
+     9,
+     8,
+     6,
+     3
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     14,
+     9,
+     4,
+     3
+    ],
+    "C": [
+     8,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 7,
+   "correct": "X",
+   "why": "Præcis 2 kontroller uden hæderlig langfarve: dobling – den erstatter 2♥ og er ikke straf."
+  },
+  {
+   "situation": "konk_hj",
+   "hand": {
+    "S": [
+     11,
+     8,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     5
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     12,
+     8,
+     5,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "correct": "X",
+   "why": "Præcis 2 kontroller uden hæderlig langfarve: dobling – den erstatter 2♥ og er ikke straf."
+  },
+  {
+   "situation": "konk_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     10,
+     5
+    ],
+    "H": [
+     9,
+     7
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     10,
+     8,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "3 kontroller: laveste sans viser mindst 3 kontroller."
+  },
+  {
+   "situation": "konk_hj",
+   "hand": {
+    "S": [
+     13,
+     9,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     7,
+     2
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     6,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "3 kontroller: laveste sans viser mindst 3 kontroller."
+  },
+  {
+   "situation": "konk_hj",
+   "hand": {
+    "S": [
+     10,
+     7
+    ],
+    "H": [
+     7,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     6,
+     4,
+     3
+    ],
+    "C": [
+     5,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "2NT",
+   "why": "3 kontroller: laveste sans viser mindst 3 kontroller."
+  },
+  {
+   "situation": "konk_hj",
+   "hand": {
+    "S": [
+     13,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     13,
+     9,
+     5
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     8,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "Hæderlig 5-farve i klør og 2 kontroller: 3♣."
+  },
+  {
+   "situation": "konk_hj",
+   "hand": {
+    "S": [
+     7,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     2
+    ],
+    "D": [
+     8,
+     4
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     6,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "Hæderlig 5-farve i klør og 2 kontroller: 3♣."
+  },
+  {
+   "situation": "konk_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     8,
+     7
+    ],
+    "H": [
+     2
+    ],
+    "D": [
+     9,
+     8,
+     4
+    ],
+    "C": [
+     13,
+     11,
+     8,
+     7,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "Hæderlig 5-farve i klør og 2 kontroller: 3♣."
+  },
+  {
+   "situation": "konk_hj",
+   "hand": {
+    "S": [
+     9,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     13,
+     11,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     12,
+     8,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "3♦",
+   "why": "Hæderlig 5-farve i ruder og 1 kontrol: 3♦."
+  },
+  {
+   "situation": "konk_hj",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     9,
+     8,
+     7,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     7,
+     5
+    ],
+    "C": [
+     12,
+     9,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "Hæderlig 5-farve i ruder og 2 kontroller: 3♦."
+  },
+  {
+   "situation": "konk_hj",
+   "hand": {
+    "S": [
+     13,
+     7,
+     2
+    ],
+    "H": [
+     10,
+     9,
+     5,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     9,
+     7,
+     6
+    ],
+    "C": [
+     7
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "3♦",
+   "why": "Hæderlig 5-farve i ruder og 1 kontrol: 3♦."
+  },
+  {
+   "situation": "konk_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     9,
+     3,
+     2
+    ],
+    "D": [
+     9,
+     7,
+     3
+    ],
+    "C": [
+     11,
+     9
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "2♠",
+   "why": "Hæderlig 5-farve i spar og 1 kontrol: 2♠."
+  },
+  {
+   "situation": "konk_hj",
+   "hand": {
+    "S": [
+     12,
+     11,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     11,
+     10,
+     3
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "2♠",
+   "why": "Hæderlig 5-farve i spar og 1 kontrol: 2♠."
+  },
+  {
+   "situation": "konk_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     7,
+     2
+    ],
+    "H": [
+     9,
+     8,
+     7,
+     3
+    ],
+    "D": [
+     9,
+     7,
+     4
+    ],
+    "C": [
+     6
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "2♠",
+   "why": "Hæderlig 5-farve i spar og 2 kontroller: 2♠."
+  },
+  {
+   "situation": "konk_sp",
+   "hand": {
+    "S": [
+     6,
+     5
+    ],
+    "H": [
+     11,
+     9,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     11,
+     7,
+     6,
+     4
+    ],
+    "C": [
+     11,
+     10
+    ]
+   },
+   "hp": 3,
+   "sp": 5,
+   "correct": "Pas",
+   "why": "0 kontroller: pas afløser 2♦-svaret."
+  },
+  {
+   "situation": "konk_sp",
+   "hand": {
+    "S": [
+     9,
+     7
+    ],
+    "H": [
+     10,
+     8,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     11,
+     9,
+     2
+    ],
+    "C": [
+     11,
+     10,
+     7
+    ]
+   },
+   "hp": 2,
+   "sp": 3,
+   "correct": "Pas",
+   "why": "0 kontroller: pas afløser 2♦-svaret."
+  },
+  {
+   "situation": "konk_sp",
+   "hand": {
+    "S": [
+     9,
+     8
+    ],
+    "H": [
+     9
+    ],
+    "D": [
+     12,
+     10,
+     7,
+     6,
+     4
+    ],
+    "C": [
+     12,
+     11,
+     8,
+     4,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 9,
+   "correct": "Pas",
+   "why": "0 kontroller: pas afløser 2♦-svaret."
+  },
+  {
+   "situation": "konk_sp",
+   "hand": {
+    "S": [
+     13,
+     11,
+     6,
+     5
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     8,
+     6
+    ],
+    "D": [
+     8,
+     6
+    ],
+    "C": [
+     8,
+     6
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "X",
+   "why": "Præcis 2 kontroller uden hæderlig langfarve: dobling – den erstatter 2♥ og er ikke straf."
+  },
+  {
+   "situation": "konk_sp",
+   "hand": {
+    "S": [
+     9,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     13,
+     10,
+     3
+    ],
+    "C": [
+     11,
+     9,
+     8,
+     7,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "X",
+   "why": "Præcis 2 kontroller uden hæderlig langfarve: dobling – den erstatter 2♥ og er ikke straf."
+  },
+  {
+   "situation": "konk_sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     3
+    ],
+    "H": [
+     11,
+     5,
+     4
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     8,
+     7,
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "correct": "X",
+   "why": "Præcis 2 kontroller uden hæderlig langfarve: dobling – den erstatter 2♥ og er ikke straf."
+  },
+  {
+   "situation": "konk_sp",
+   "hand": {
+    "S": [
+     12
+    ],
+    "H": [
+     11,
+     10,
+     9,
+     8,
+     4
+    ],
+    "D": [
+     14,
+     2
+    ],
+    "C": [
+     13,
+     11,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "3 kontroller: laveste sans viser mindst 3 kontroller."
+  },
+  {
+   "situation": "konk_sp",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     8,
+     7,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     9,
+     2
+    ],
+    "C": [
+     13,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "3 kontroller: laveste sans viser mindst 3 kontroller."
+  },
+  {
+   "situation": "konk_sp",
+   "hand": {
+    "S": [
+     13,
+     11,
+     3
+    ],
+    "H": [
+     14,
+     8,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     10,
+     4
+    ],
+    "C": [
+     14,
+     7,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "5 kontroller: laveste sans viser mindst 3 kontroller."
+  },
+  {
+   "situation": "konk_sp",
+   "hand": {
+    "S": [
+     9,
+     7
+    ],
+    "H": [
+     7,
+     6,
+     2
+    ],
+    "D": [
+     12,
+     10,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     5,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "3♣",
+   "why": "Hæderlig 5-farve i klør og 2 kontroller: 3♣."
+  },
+  {
+   "situation": "konk_sp",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
+     10,
+     9,
+     8,
+     7
+    ],
+    "D": [
+     13,
+     7,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     10,
+     8
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "Hæderlig 5-farve i klør og 2 kontroller: 3♣."
+  },
+  {
+   "situation": "konk_sp",
+   "hand": {
+    "S": [
+     11,
+     9,
+     2
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     8,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     7,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "3♣",
+   "why": "Hæderlig 5-farve i klør og 2 kontroller: 3♣."
+  },
+  {
+   "situation": "konk_sp",
+   "hand": {
+    "S": [
+     13,
+     10,
+     3,
+     2
+    ],
+    "H": [
+     4,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     10,
+     3,
+     2
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "3♦",
+   "why": "Hæderlig 5-farve i ruder og 1 kontrol: 3♦."
+  },
+  {
+   "situation": "konk_sp",
+   "hand": {
+    "S": [
+     12,
+     8
+    ],
+    "H": [
+     8,
+     7,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     8,
+     7,
+     4
+    ],
+    "C": [
+     11,
+     9,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "3♦",
+   "why": "Hæderlig 5-farve i ruder og 2 kontroller: 3♦."
+  },
+  {
+   "situation": "konk_sp",
+   "hand": {
+    "S": [
+     13,
+     11,
+     6,
+     4
+    ],
+    "H": [
+     8,
+     5
+    ],
+    "D": [
+     12,
+     11,
+     8,
+     7,
+     5
+    ],
+    "C": [
+     4,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "3♦",
+   "why": "Hæderlig 5-farve i ruder og 1 kontrol: 3♦."
+  },
+  {
+   "situation": "konk_sp",
+   "hand": {
+    "S": [
+     9,
+     7
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     6,
+     5
+    ],
+    "D": [
+     4,
+     3
+    ],
+    "C": [
+     13,
+     9,
+     7,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "correct": "3♥",
+   "why": "Hæderlig 5-farve i hjerter og 2 kontroller: 3♥."
+  },
+  {
+   "situation": "konk_sp",
+   "hand": {
+    "S": [
+     6,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     6,
+     3
+    ],
+    "D": [
+     9,
+     8,
+     5,
+     2
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "3♥",
+   "why": "Hæderlig 5-farve i hjerter og 1 kontrol: 3♥."
+  },
+  {
+   "situation": "konk_sp",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     9,
+     8
+    ],
+    "D": [
+     6,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     8,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "3♥",
+   "why": "Hæderlig 5-farve i hjerter og 1 kontrol: 3♥."
+  }
+ ]
+}

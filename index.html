@@ -77,7 +77,7 @@ function renderSystem(id){
     history.replaceState(null, '', `?system=${b.dataset.id}#traen`);
     renderSystem(b.dataset.id);
   }));
-  document.getElementById('syskort').innerHTML = `${suits(sys.kort)} · <a href="${esc(sys.viden)}">Læs aftalerne</a>`;
+  document.getElementById('syskort').innerHTML = `${suits(sys.kort)} · <a href="${esc(sys.viden)}">${sys.id === 'forslag' ? 'Læs forslagene' : 'Læs aftalerne'}</a>`;
 
   const groups = {};
   const systemsOf = k => Array.isArray(k.system) ? k.system : [k.system];

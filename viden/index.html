@@ -30,7 +30,7 @@
   <section class="hero">
     <p class="eyebrow">Viden</p>
     <h1>Aftaler og notater</h1>
-    <p class="deck">To makkerskaber, to systemer. De ligner hinanden, men flere meldinger med samme navn betyder noget forskelligt – se tabellen nederst.</p>
+    <p class="deck">To makkerskaber, to systemer – og forslag, I endnu ikke har vedtaget. Systemerne ligner hinanden, men flere meldinger med samme navn betyder noget forskelligt – se tabellen nederst.</p>
   </section>
 
   <div id="docs"></div>
@@ -60,7 +60,7 @@ function esc(s){ return String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;', '<':'&
 Promise.all(['../data/systemer.json', '../data/viden.json'].map(u => fetch(u).then(r => r.json())))
   .then(([systems, docs]) => {
     document.getElementById('docs').innerHTML = systems.map(s => `
-      <h2>${esc(s.navn)}</h2>
+      <h2 id="${esc(s.id)}">${esc(s.navn)}</h2>
       <div class="tiles">${docs.filter(d => d.system === s.id).map(d =>
         `<a class="tile" href="../${esc(d.href)}"><div class="grp">${esc(d.type)}</div><h3>${esc(d.titel)}</h3><p>${esc(d.beskrivelse)}</p></a>`).join('')}
       </div>`).join('');

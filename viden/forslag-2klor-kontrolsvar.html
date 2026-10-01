@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2♣ med kontrolsvar — Forslag</title>
+<style>
+/* Notat: 2<span class="k">♣</span> med kontrolsvar — farver følger Word-versionen */
+:root {
+  --ink: #1d1d1b;
+  --muted: #595959;
+  --paper: #ffffff;
+  --rule: #ededed;
+  --red: #c00000;
+  --title: #2e7d32;      /* titel og overskrifter */
+  --kicker: #bf9000;     /* guldlinje og kicker */
+  --abner: #1f5f99;      --abner-t: #eaf1f8; --abner-r: #ccdcec;
+  --svarer: #2e7d32;     --svarer-t: #edf5ee; --svarer-r: #cfe3d0;
+  --konk: #a33b6b;       --konk-t: #f8ecf2;  --konk-r: #ebcfdc;
+  --eks: #8f6c00;        --eks-t: #fbf5e3;   --eks-r: #eadfbf;
+  --font: "Calibri", "Carlito", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e8e8e4; --muted: #a8a8a2; --paper: #17181a; --rule: #2c2e31; --red: #ff6b6b;
+    --title: #6fbf73; --kicker: #d9ac2b;
+    --abner: #7db4ea; --abner-t: #1b2736; --abner-r: #2c3f56;
+    --svarer: #6fbf73; --svarer-t: #1b2a1d; --svarer-r: #2f4a32;
+    --konk: #e68bb4; --konk-t: #301d27; --konk-r: #52303f;
+    --eks: #e0b64a; --eks-t: #2a2414; --eks-r: #4d4224;
+  }
+}
+* { box-sizing: border-box; }
+html { background: var(--paper); }
+body {
+  margin: 0; color: var(--ink); background: var(--paper);
+  font: 17px/1.55 var(--font);
+}
+main { max-width: 52rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+p { margin: 0 0 .7rem; max-width: 70ch; }
+a { color: var(--title); }
+a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.r { color: var(--red); }
+.k { color: inherit; }
+.suit, .r, .k { font-family: Arial, "Segoe UI Symbol", sans-serif; }
+
+.title { border-bottom: 1.5px solid var(--kicker); padding-bottom: 1.1rem; margin-bottom: 1.3rem; }
+.kicker { color: var(--kicker); font-weight: 700; letter-spacing: .3em; font-size: .78rem; margin: 0 0 .2rem; text-transform: uppercase; }
+h1 { color: var(--title); font-size: 2.4rem; line-height: 1.1; margin: 0 0 .3rem; }
+.sub { color: var(--muted); font-style: italic; font-size: 1.1rem; margin: 0 0 .2rem; }
+.src { margin: 0; font-size: .95rem; }
+
+h2 { color: var(--title); font-size: 1.45rem; line-height: 1.2; margin: 2.2rem 0 .7rem; }
+h3 { color: var(--ink); font-size: 1.1rem; margin: 0 0 .6rem; }
+.tag { margin: 2.2rem 0 0; font-size: .75rem; font-weight: 700; letter-spacing: .22em; }
+.tag.abner { color: var(--abner); } .tag.svarer { color: var(--svarer); }
+.tag.konk { color: var(--konk); }  .tag.eks { color: var(--eks); }
+.tag + h2 { margin-top: .15rem; }
+section { scroll-margin-top: 1rem; }
+
+.note { color: var(--muted); font-style: italic; margin-top: .9rem; }
+.note .r { color: var(--red); }
+.lead { margin-top: 1rem; }
+
+/* farvenøgle */
+.legend { list-style: none; margin: .6rem 0 0; padding: 0; display: grid; gap: .5rem; grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr)); }
+.legend li { padding: .55rem .7rem .6rem; border-top: 3px solid; display: flex; flex-direction: column; font-size: .9rem; }
+.legend li span:last-child { color: var(--muted); font-size: .82rem; }
+.legend .abner  { border-color: var(--abner);  background: var(--abner-t);  color: var(--abner); }
+.legend .svarer { border-color: var(--svarer); background: var(--svarer-t); color: var(--svarer); }
+.legend .konk   { border-color: var(--konk);   background: var(--konk-t);   color: var(--konk); }
+.legend .eks    { border-color: var(--eks);    background: var(--eks-t);    color: var(--eks); }
+
+/* tabeller */
+.table-wrap, table { width: 100%; }
+table { border-collapse: collapse; margin: .3rem 0 .6rem; font-size: .95rem; }
+th, td { text-align: left; vertical-align: top; padding: .32rem .6rem; border-bottom: 1px solid var(--rule); }
+thead th { border-bottom: 2px solid; font-weight: 700; }
+tbody th[scope="row"] { font-weight: 700; width: 29%; }
+.c { text-align: center; }
+table.abner thead th { color: var(--abner); border-color: var(--abner); }
+table.svarer thead th { color: var(--svarer); border-color: var(--svarer); }
+table.konk thead th { color: var(--konk); border-color: var(--konk); }
+table.ex thead th { color: var(--eks); border-color: var(--eks); }
+tr.group th { background: var(--svarer-t); color: var(--svarer); border-bottom-color: var(--svarer-r); padding-top: .45rem; }
+table.abner tr.group th { background: var(--abner-t); color: var(--abner); border-bottom-color: var(--abner-r); }
+table.konk tr.group th { background: var(--konk-t); color: var(--konk); border-bottom-color: var(--konk-r); }
+@media (max-width: 36rem) {
+  table { font-size: .88rem; }
+  tbody th[scope="row"] { width: 34%; }
+}
+
+/* sansboks */
+.box { margin: 1.1rem 0 .6rem; padding: .8rem 1rem .4rem; border: 1px solid var(--abner); border-left-width: 6px; background: var(--abner-t); }
+.box p { margin-bottom: .5rem; }
+.box table { margin: 0; }
+.box th, .box td { border-bottom-color: var(--abner-r); }
+.box tr:last-child td, .box tr:last-child th { border-bottom: 0; }
+
+/* eksempler */
+.example { margin: 2rem 0 0; padding-top: .9rem; border-top: 1.5px solid var(--kicker); break-inside: avoid; }
+.example h3 { color: var(--ink); }
+.deal {
+  display: grid; gap: .5rem .8rem; margin: .4rem 0 .8rem; align-items: center;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-areas: "meta n ctl" "v comp o" "blank s res";
+  font-size: .95rem;
+}
+.deal-meta { grid-area: meta; align-self: start; color: var(--muted); font-size: .85rem; }
+.deal-meta strong, .deal-ctl strong, .deal-res strong { color: var(--eks); font-size: .95rem; }
+.deal-ctl, .deal-res { color: var(--muted); font-size: .85rem; text-align: right; }
+.deal-ctl { grid-area: ctl; align-self: start; }
+.deal-res { grid-area: res; align-self: end; }
+.deal-n { grid-area: n; justify-self: center; }
+.deal-s { grid-area: s; justify-self: center; }
+.deal-v { grid-area: v; justify-self: end; }
+.deal-o { grid-area: o; justify-self: start; }
+.hand div { white-space: nowrap; letter-spacing: .06em; }
+.compass {
+  grid-area: comp; position: relative; width: 5.2rem; height: 4.2rem;
+  border: 1.5px solid var(--eks); background: var(--eks-t); color: var(--eks); font-size: .8rem;
+}
+.compass b { position: absolute; line-height: 1; }
+.cn { top: .3rem; left: 50%; transform: translateX(-50%); }
+.cs { bottom: .3rem; left: 50%; transform: translateX(-50%); }
+.cv { left: .45rem; top: 50%; transform: translateY(-50%); }
+.co { right: .45rem; top: 50%; transform: translateY(-50%); }
+@media (max-width: 34rem) {
+  .deal { grid-template-columns: 1fr; grid-template-areas: "meta" "ctl" "n" "v" "comp" "o" "s" "res"; justify-items: start; }
+  .deal > * { justify-self: start; text-align: left; }
+  .compass { display: none; }
+}
+table.bid { margin-bottom: 1rem; }
+table.bid th, table.bid td { text-align: center; font-weight: 400; }
+table.bid th { font-weight: 700; }
+table.bid td { font-weight: 700; }
+
+.konklusion { max-width: none; margin: .8rem 0 0; padding: .65rem .9rem; background: var(--eks-t); border-left: 5px solid var(--eks); }
+.konklusion strong { color: var(--eks); }
+
+.kilder ol { padding-left: 1.4rem; font-size: .95rem; }
+.kilder li { margin-bottom: .45rem; }
+.kilder a { overflow-wrap: anywhere; font-size: .85rem; }
+
+@media print {
+  html { background: #fff; }
+  body { font-size: 10.5pt; color: #000; }
+  main { max-width: none; padding: 0; }
+  .example { break-inside: avoid; page-break-inside: avoid; }
+  h2, .tag { break-after: avoid; }
+  a { color: inherit; text-decoration: none; }
+}
+
+</style>
+<style>
+/* Konventionstrænerens menu */
+.site-head{ border-bottom:1.5px solid var(--kicker); font-family:var(--font); background:var(--paper); }
+.site-head .in{ max-width:52rem; margin:0 auto; padding:.8rem 1.25rem; display:flex; align-items:baseline; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
+.site-head .brand{ font-weight:700; font-size:1rem; letter-spacing:.06em; text-transform:uppercase; color:var(--title); text-decoration:none; }
+.site-head nav{ display:flex; gap:1.2rem; font-weight:700; font-size:.95rem; }
+.site-head nav a{ color:var(--ink); text-decoration:none; padding-bottom:.15rem; border-bottom:2px solid transparent; }
+.site-head nav a:hover, .site-head nav a[aria-current="page"]{ color:var(--title); border-bottom-color:var(--title); }
+@media print{ .site-head{ display:none; } }
+</style>
+</head>
+<body>
+<header class="site-head"><div class="in">
+  <a class="brand" href="../">Konventionstræner</a>
+  <nav><a href="../#traen">Træn</a><a href="./" aria-current="page">Viden</a></nav>
+</div></header>
+<main>
+<header class="title">
+  <p class="kicker">Bridge · Notat · Forslag</p>
+  <h1>2<span class="k">♣</span> med kontrolsvar</h1>
+  <p class="sub">Svarstrukturen efter den stærke kravåbning — med fem eksempler</p>
+  <p class="src">Bygger på Michael Staub: <em>Åbning 2<span class="k">♣</span> med kontrolsvar</em>, www.Staub.one (2019)</p>
+</header>
+
+<p>Dette notat beskriver kontrolsvar efter 2<span class="k">♣</span>: tælleregel og åbning (afsnit 1–2), svarstruktur (3), åbners genmeldinger (4), svarers fortsættelser (5) og indmeldinger (6). Afsnit 7 sætter kontrolsvar i forhold til vores nuværende system, og afsnit 8 viser fem eksempler.</p>
+<p><strong>Farvenøgle.</strong> Mærket over hvert afsnit og farven i tabellernes overskriftsrække viser, hvilke meldinger afsnittet handler om:</p>
+<ul class="legend"><li class="abner"><strong><span aria-hidden="true">■</span> Åbner</strong><span>Åbningen og åbners genmeldinger</span></li><li class="svarer"><strong><span aria-hidden="true">■</span> Svarer</strong><span>Kontrolsvar og svarers fortsættelser</span></li><li class="konk"><strong><span aria-hidden="true">■</span> Konkurrence</strong><span>Når modparten melder ind</span></li><li class="eks"><strong><span aria-hidden="true">■</span> Eksempler</strong><span>Spil, meldeforløb og konklusioner</span></li></ul>
+
+<section id="idéen">
+<h2>1 · Idéen</h2>
+<p>Med 2<span class="k">♣</span> som eneste kravåbning har åbner typisk en hånd, hvor spørgsmålet er, om der er slem — og det afgøres oftere af esser og konger end af damer og knægte. Kontrolsvar lader svarer tælle sine kontroller i første melding, så åbner allerede efter én runde ved, om han skal bruge pladsen til en slemundersøgelse (slow arrival) eller hurtigst muligt finde den rigtige udgang (fast arrival).</p>
+<p><strong>Tælleregel:</strong> es = 2 kontroller, konge = 1 kontrol. Damer og knægte tæller ikke.</p>
+<p>Begrundelsen er, at damer og knægte sjældent forhindrer tabere i slemkontrakter. En slem går typisk ned, fordi modparten kan tage to hurtige stik i samme farve — og dem stopper kun esset (i første runde) og kongen (i anden runde). Damen kontrollerer først farven i tredje runde.</p>
+<p class="note">Vores egen dobbeltdummy-model (Håndevaluering i bridge, afsnit 4) peger samme vej: i farvekontrakt giver data tabervægtene 1,00 for et manglende es, 0,52 for en manglende konge og 0,24 for en manglende dame. Es og konge står altså næsten præcis i forholdet 2 : 1, mens damen vejer under det halve af en konge.</p>
+<p class="lead"><strong>Hurtig optælling.</strong> Samme antal kontroller kan komme fra forskellige honnører — og giver samme svar:</p>
+<table class="svarer">
+<thead><tr>
+<th>Honnører</th>
+<th class="c">Kontroller</th>
+<th>Svar</th>
+</tr></thead><tbody>
+<tr>
+<td>Ét es</td>
+<td class="c">2</td>
+<td><strong>2<span class="r">♥</span></strong></td>
+</tr>
+<tr>
+<td>To konger</td>
+<td class="c">2</td>
+<td><strong>2<span class="r">♥</span></strong></td>
+</tr>
+<tr>
+<td>Es og konge</td>
+<td class="c">3</td>
+<td><strong>2<span class="k">♠</span></strong></td>
+</tr>
+<tr>
+<td>Tre konger</td>
+<td class="c">3</td>
+<td><strong>2<span class="k">♠</span></strong></td>
+</tr>
+<tr>
+<td>Es og to konger</td>
+<td class="c">4</td>
+<td><strong>2NT</strong></td>
+</tr>
+<tr>
+<td>To esser</td>
+<td class="c">4</td>
+<td><strong>2NT</strong></td>
+</tr>
+</tbody></table>
+</section>
+
+<section id="åbningen">
+<p class="tag abner"><span aria-hidden="true">■</span> ÅBNER</p>
+<h2>2 · Åbningen</h2>
+<p>2<span class="k">♣</span> er kunstig og siger intet om klør. Åbningen lover kun styrke — hvilken af de tre håndtyper åbner har, viser han først i sin genmelding (afsnit 4).</p>
+<table class="abner">
+<thead><tr>
+<th>Håndtype</th>
+<th>Krav</th>
+</tr></thead><tbody>
+<tr>
+<th scope="row">Sanshånd</th>
+<td>22+ hp. Må rumme en 5-farve i major (5-3-3-2) eller 4-4-4-1 med singleton E, K eller D. En 5-farve i minor (5-3-3-2) er også en sanshånd</td>
+</tr>
+<tr>
+<th scope="row">Enfarvet hånd</th>
+<td>6+ kort med højst én taber i farven (fx E D B 10 9 7) og mindst 8½ spillestik</td>
+</tr>
+<tr>
+<th scope="row">Flerfarvet hånd</th>
+<td>Mindst én 5-farve, fx 5-4-4-0, 6-4-2-1 eller 7-4-1-1, og mindst 8½ spillestik</td>
+</tr>
+</tbody></table>
+<p><strong>8½ spillestik</strong> er de stik, hånden forventes at tage med sin lange farve som trumf og uden hjælp fra makker. Tæl i den lange farve kortene minus taberne og i sidefarverne topstikkene. En taber, der afhænger af, hvor en honnør hos modparten sidder — som kongen over for E-D — tæller ½.</p>
+<p class="note">Eksempel: <span class="k">♠</span> E D B 10 9 7 · <span class="r">♥</span> E K 4 · <span class="r">♦</span> E 5 · <span class="k">♣</span> 8 3. Spar giver 6 − ½ = 5½, hjerter 2, ruder 1 og klør 0 — i alt 8½ spillestik. Hånden er en 2<span class="k">♣</span>-åbning med kun 18 hp.</p>
+</section>
+
+<section id="svarers-første-melding">
+<p class="tag svarer"><span aria-hidden="true">■</span> SVARER</p>
+<h2>3 · Svarers første melding</h2>
+<table class="svarer">
+<thead><tr>
+<th>Svar</th>
+<th class="c">Kontroller</th>
+<th>Typisk</th>
+</tr></thead><tbody>
+<tr>
+<th scope="row">2<span class="r">♦</span></th>
+<td class="c">0–1</td>
+<td>Intet es; højst én konge</td>
+</tr>
+<tr>
+<th scope="row">2<span class="r">♥</span></th>
+<td class="c">2</td>
+<td>Ét es, eller to konger</td>
+</tr>
+<tr>
+<th scope="row">2<span class="k">♠</span></th>
+<td class="c">3</td>
+<td>Es og konge, eller tre konger</td>
+</tr>
+<tr>
+<th scope="row">2NT</th>
+<td class="c">4</td>
+<td>To esser, eller es og to konger</td>
+</tr>
+<tr>
+<th scope="row">3<span class="k">♣</span></th>
+<td class="c">5+</td>
+<td>Krav til mindst lilleslem</td>
+</tr>
+</tbody></table>
+<p class="note">Svarene er præcise: 2<span class="r">♥</span> lover præcis 2 kontroller, 2<span class="k">♠</span> præcis 3 og 2NT præcis 4 — kun 2<span class="r">♦</span> (0–1) og 3<span class="k">♣</span> (5+) dækker et interval. Præcisionen er pointen: når svarers kontroller senere vises én ad gangen, ved åbner, hvornår de er brugt op (<a href="#eksempel-2">eksempel 2</a>).</p>
+<p>Svarer kan i stedet vise en god langfarve med overføring. Meldingen viser farven lige over den meldte <em>(alertér)</em>:</p>
+<table class="svarer">
+<thead><tr>
+<th>Svar</th>
+<th>Viser</th>
+</tr></thead><tbody>
+<tr>
+<th scope="row">3<span class="r">♦</span> / 3<span class="r">♥</span> / 3<span class="k">♠</span> / 3NT</th>
+<td>H-H-x-x-x-x i hhv. hjerter / spar / klør / ruder — men ikke en gående farve. H-H er to af de tre øverste honnører: E-K, E-D eller K-D, ikke nødvendigvis E-K</td>
+</tr>
+<tr>
+<th scope="row">4<span class="k">♣</span> / 4<span class="r">♦</span> / 4<span class="r">♥</span> / 4<span class="k">♠</span></th>
+<td>Gående farve (fx E K D B 10 x eller E K D x x x x) i hhv. ruder / hjerter / spar / klør</td>
+</tr>
+</tbody></table>
+<p class="note">Efter overføringen accepterer åbner farven som trumf ved at melde den billigst muligt med tillæg — eller ved at melde udgang i den med præcis 8½ spillestik.</p>
+<p class="lead"><strong>Hvorfor overføring?</strong> I stedet for at tælle kontroller viser svarer farven med det samme. Det giver fire gevinster:</p>
+<table class="svarer">
+<thead><tr>
+<th>Gevinst</th>
+<th>Hvorfor</th>
+</tr></thead><tbody>
+<tr>
+<th scope="row">Trumf i første runde</th>
+<td>Farven og dens kvalitet vises i ét svar, så trumf kan fastlægges med det samme — ikke først senere og højere oppe (<a href="#eksempel-4">eksempel 4</a>)</td>
+</tr>
+<tr>
+<th scope="row">Åbner kan tælle stik</th>
+<td>H-H-x-x-x-x siger præcis, hvad farven er værd. Har åbner selv den tredje tophonnør, ved han, at ingen tophonnør mangler</td>
+</tr>
+<tr>
+<th scope="row">Plads til slemundersøgelse</th>
+<td>Åbner accepterer på laveste trin og har hele 4-trinnet til kontrolvisning og RKC</td>
+</tr>
+<tr>
+<th scope="row">Den stærke hånd spiller</th>
+<td>Åbner bliver spilfører, så hans hånd er skjult, og udspillet kommer op i den</td>
+</tr>
+</tbody></table>
+</section>
+
+<section id="åbners-genmelding">
+<p class="tag abner"><span aria-hidden="true">■</span> ÅBNER</p>
+<h2>4 · Åbners genmelding</h2>
+<table class="abner">
+<thead><tr>
+<th>Åbners melding</th>
+<th>Efter 2<span class="r">♦</span> (0–1 kt)</th>
+<th>Efter 2<span class="r">♥</span> og højere (2+ kt)</th>
+</tr></thead><tbody>
+<tr>
+<th scope="row">2<span class="r">♥</span> / 2<span class="k">♠</span></th>
+<td>5+ i farven, ubalanceret</td>
+<td>(2<span class="k">♠</span> efter 2<span class="r">♥</span>): 5+ spar, ubalanceret</td>
+</tr>
+<tr>
+<th scope="row">2NT</th>
+<td>22–23 hp</td>
+<td>24+ hp — lavt, fordi udgangskravet allerede er etableret</td>
+</tr>
+<tr>
+<th scope="row">3NT</th>
+<td>24–25 hp</td>
+<td>22–23 hp — fast arrival</td>
+</tr>
+<tr>
+<th scope="row">3<span class="k">♣</span> / 3<span class="r">♦</span></th>
+<td>5+ i farven; med kun 5 kort er der en kortere sidefarve</td>
+<td>Samme</td>
+</tr>
+<tr>
+<th scope="row">3<span class="r">♥</span> / 3<span class="k">♠</span> / 4<span class="k">♣</span> / 4<span class="r">♦</span></th>
+<td>Fastlægger farven som trumf</td>
+<td>Samme</td>
+</tr>
+</tbody></table>
+<aside class="box abner">
+<p><strong>Bemærk: sansintervallerne vender.</strong> Efter 2<span class="r">♥</span> og højere er der udgangskrav, og åbner melder derfor lavt med de stærkeste sanshænder: 2NT viser 24+ og giver plads til undersøgelsen, mens 3NT er fast arrival med 22–23.</p>
+<table class="abner">
+<thead><tr>
+<th>Sansmelding</th>
+<th>Efter 2<span class="r">♦</span> (0–1 kt)</th>
+<th>Efter 2<span class="r">♥</span> og højere (2+ kt)</th>
+</tr></thead><tbody>
+<tr>
+<th scope="row">2NT</th>
+<td>22–23 hp</td>
+<td>24+ hp</td>
+</tr>
+<tr>
+<th scope="row">3NT</th>
+<td>24–25 hp</td>
+<td>22–23 hp — fast arrival</td>
+</tr>
+<tr>
+<th scope="row">4NT</th>
+<td>26–27 hp</td>
+<td>— (24+ går over 2NT)</td>
+</tr>
+<tr>
+<th scope="row">5NT</th>
+<td>28–29 hp</td>
+<td>— (24+ går over 2NT)</td>
+</tr>
+</tbody></table>
+</aside>
+</section>
+
+<section id="svarers-videre-meldinger">
+<p class="tag svarer"><span aria-hidden="true">■</span> SVARER</p>
+<h2>5 · Svarers videre meldinger</h2>
+<table class="svarer">
+<thead><tr>
+<th>Melding</th>
+<th>Betydning</th>
+</tr></thead><tbody>
+<tr class="group"><th colspan="2">Når åbner har fastlagt trumf</th></tr>
+<tr>
+<th scope="row">Ny farve</th>
+<td>Viser kontrol i farven</td>
+</tr>
+<tr>
+<th scope="row">Udgang i trumffarven</th>
+<td>0 kontroller, negativ hånd</td>
+</tr>
+<tr>
+<th scope="row">Sans</th>
+<td>0 kontroller, men 4+ hp i damer og knægte</td>
+</tr>
+<tr>
+<th scope="row">Spring i ny farve</th>
+<td>Splinter: singleton eller renonce i farven (ikke blank konge) og mindst x-x-x i trumf</td>
+</tr>
+<tr class="group"><th colspan="2">Når åbner har meldt en farve uden at fastlægge trumf</th></tr>
+<tr>
+<th scope="row">Farven over åbners farve</th>
+<td>Relæ. Benægter egen meldbar farve (hæderlig 5-farve på 3-trinnet, god 5-farve på 4-trinnet). Bruges også med svag støtte</td>
+</tr>
+<tr>
+<th scope="row">3NT i anden runde</th>
+<td>Mindst hæderlig 5-farve i relæfarven. Undtagelse fra fast arrival: 3NT viser her farven, ikke styrke</td>
+</tr>
+<tr>
+<th scope="row">Ny farve på 4-trinnet</th>
+<td>Naturlig fra åbner uden fundet fit — cuebid fra svarer</td>
+</tr>
+</tbody></table>
+<p class="note">Hvorfor benægter relæet en farve? Relæet er svarers ventemelding: den billigste melding, som lader åbner fortsætte sin beskrivelse. Fordi alle hænder uden noget at vise går over relæet — også hænder med svag støtte — kan svarers øvrige meldinger vise noget bestemt: en farvemelding lover en meldbar farve, og en direkte støtte er ikke svag. Relæet optager farven lige over åbners; har svarer netop den farve, viser han den med 3NT.</p>
+<p class="lead"><strong>Eksempler på svarers anden melding</strong> (modparten passer hele vejen):</p>
+<table class="svarer">
+<thead><tr>
+<th>Meldeforløb</th>
+<th>Svarers sidste melding viser</th>
+</tr></thead><tbody>
+<tr>
+<th scope="row">2<span class="k">♣</span> – 2<span class="r">♦</span> – 3<span class="k">♠</span> – 4<span class="k">♣</span></th>
+<td><strong>Kontrolvisning:</strong> kontrol i klør. Efter 2<span class="r">♦</span> kan det kun være <span class="k">♣</span>K — med et es havde svarer meldt 2<span class="r">♥</span></td>
+</tr>
+<tr>
+<th scope="row">2<span class="k">♣</span> – 2<span class="r">♦</span> – 3<span class="r">♥</span> – 4<span class="r">♥</span></th>
+<td><strong>Negativ udgang:</strong> 0 kontroller og negativ hånd (<a href="#eksempel-3">eksempel 3</a>)</td>
+</tr>
+<tr>
+<th scope="row">2<span class="k">♣</span> – 2<span class="r">♦</span> – 3<span class="r">♥</span> – 3NT</th>
+<td><strong>Sans:</strong> 0 kontroller, men 4+ hp i damer og knægte</td>
+</tr>
+<tr>
+<th scope="row">2<span class="k">♣</span> – 2<span class="r">♦</span> – 3<span class="r">♥</span> – 4<span class="k">♠</span></th>
+<td><strong>Splinter:</strong> singleton eller renonce i spar (ikke blank konge) og mindst x-x-x i hjerter</td>
+</tr>
+<tr>
+<th scope="row">2<span class="k">♣</span> – 2<span class="r">♦</span> – 2<span class="r">♥</span> – 2<span class="k">♠</span></th>
+<td><strong>Relæ:</strong> ingen meldbar farve, evt. svag hjertestøtte. Åbner beskriver sin hånd videre</td>
+</tr>
+<tr>
+<th scope="row">2<span class="k">♣</span> – 2<span class="r">♦</span> – 2<span class="r">♥</span> – 3NT</th>
+<td><strong>Relæfarven:</strong> mindst hæderlig 5-farve i spar — den farve, svarer ikke kunne melde naturligt</td>
+</tr>
+</tbody></table>
+</section>
+
+<section id="når-modparten-melder-ind">
+<p class="tag konk"><span aria-hidden="true">■</span> KONKURRENCE</p>
+<h2>6 · Når modparten melder ind</h2>
+<table class="konk">
+<thead><tr>
+<th>Melding</th>
+<th>Betydning</th>
+</tr></thead><tbody>
+<tr class="group"><th colspan="2">Indmelding på 2- eller 3-trinnet — svarers melding</th></tr>
+<tr>
+<th scope="row">Pas</th>
+<td>0–1 kontrol — afløser 2<span class="r">♦</span>-svaret</td>
+</tr>
+<tr>
+<th scope="row">Dobling</th>
+<td>Præcis 2 kontroller uden hæderlig langfarve. Doblingen er ikke straf — den erstatter 2<span class="r">♥</span>. Derefter som normalt: sanssystem eller relæ i farven over</td>
+</tr>
+<tr>
+<th scope="row">Ny farve</th>
+<td>Mindst hæderlig 5-farve og 1–2 kontroller. Derefter relæ som normalt, men 3NT er naturlig</td>
+</tr>
+<tr>
+<th scope="row">Ny farve på 4-trinnet</th>
+<td>Som ny farve, men med stærk 5-farve eller hæderlig 6-farve</td>
+</tr>
+<tr>
+<th scope="row">Laveste sans</th>
+<td>Mindst 3 kontroller. Derefter relæ som normalt</td>
+</tr>
+<tr>
+<th scope="row">Spring i farve</th>
+<td>E K D x x x(x), ingen sidekontroller</td>
+</tr>
+<tr>
+<th scope="row">Overmelding i deres farve</th>
+<td>3-farvet hånd, singleton/renonce i deres farve, 1–2 kontroller</td>
+</tr>
+<tr class="group"><th colspan="2">Indmelding på 4-trinnet — svarers melding</th></tr>
+<tr>
+<th scope="row">Pas</th>
+<td>Afmelding</td>
+</tr>
+<tr>
+<th scope="row">Dobling</th>
+<td>Positiv: mindst 2 kontroller og 7–8 hp</td>
+</tr>
+<tr>
+<th scope="row">Ny farve på 5-trinnet</th>
+<td>Mindst to tophonnører sjette og mindst 2 kontroller</td>
+</tr>
+<tr>
+<th scope="row">4NT</th>
+<td>Den 3-farvede hånd med singleton/renonce i deres farve</td>
+</tr>
+<tr>
+<th scope="row">Kunstig indmelding</th>
+<td>Skemaet gælder uændret: meldingerne følger niveauet, ikke hvad indmeldingen viser (vores tilføjelse, ikke fra Staub)</td>
+</tr>
+<tr class="group"><th colspan="2">Åbners videre meldinger</th></tr>
+<tr>
+<th scope="row">Dobling</th>
+<td>Straf, typisk med sanshånd — også når svarer har passet</td>
+</tr>
+<tr>
+<th scope="row">2NT efter svarers pas</th>
+<td>22–24 hp uden straflyst</td>
+</tr>
+<tr>
+<th scope="row">Farve efter svarers pas</th>
+<td>Meldingerne fortsætter, som om svarer havde svaret 2<span class="r">♦</span></td>
+</tr>
+<tr>
+<th scope="row">Pas</th>
+<td>Krav: svarer skal som hovedregel doble (straf), også uden store trumfværdier — åbner lader kun doblingen stå med en stærk jævn hånd. Har åbner i stedet en farve, passede han for at give svarer chancen for at vise en lavere farve</td>
+</tr>
+</tbody></table>
+<p class="note">Grundtanken er, at kontrolsvaret oversættes: pas afløser 2<span class="r">♦</span>, dobling afløser 2<span class="r">♥</span>, og laveste sans dækker alle hænder med 3+ kontroller. De øvrige meldinger viser farver og fordeling.</p>
+</section>
+
+<section id="forhold-til-vores-system">
+<h2>7 · Forhold til vores system</h2>
+<p>Vores system bruger i dag <strong>2<span class="r">♦</span> waiting</strong> med det andet negative (afsnit 14), og begrundelsen er, at stærkåbningens hænder oftest er ubalancerede, så åbner bør beskrive sin fordeling før esserne tælles. Kontrolsvar vender prioriteten: kontrollerne først, fordelingen bagefter. Notatet er et diskussionsoplæg — et skift vil også ændre sanstrappen efter 2<span class="r">♦</span> (22–24 / 25–27) og skal i givet fald føres ind i Bilag C.</p>
+</section>
+
+<section id="eksempler">
+<p class="tag eks"><span aria-hidden="true">■</span> EKSEMPLER</p>
+<h2>8 · Eksempler</h2>
+<p>I alle eksempler er Nord giver, ingen i zonen. Resultatet til højre under diagrammet er beregnet dobbeltdummy. Øverst til højre står Nord-Syds kontroller, og hvert eksempel slutter med en kort konklusion.</p>
+
+<article class="example" id="eksempel-1">
+<h3>Eksempel 1 · Negativ hånd og sanshånd</h3>
+<div class="deal">
+  <div class="deal-meta"><strong>Spil 1</strong><br>Giver: Nord<br>Zone: Ingen</div>
+  <div class="deal-n"><div class="hand"><div><span class="k">♠</span> E K 5</div><div><span class="r">♥</span> E D 4</div><div><span class="r">♦</span> K B 7 2</div><div><span class="k">♣</span> E D 2</div></div></div>
+  <div class="deal-ctl"><strong>Kontroller</strong><br>Nord 8 · Syd 0<br>I alt 8 af 12</div>
+  <div class="deal-v"><div class="hand"><div><span class="k">♠</span> B 10 7 3</div><div><span class="r">♥</span> K 8 6</div><div><span class="r">♦</span> E 9 5</div><div><span class="k">♣</span> K 10 8</div></div></div>
+  <div class="compass" aria-hidden="true"><b class="cn">N</b><b class="cv">V</b><b class="co">Ø</b><b class="cs">S</b></div>
+  <div class="deal-o"><div class="hand"><div><span class="k">♠</span> 9 4 2</div><div><span class="r">♥</span> 10 7 3</div><div><span class="r">♦</span> D 6 3</div><div><span class="k">♣</span> 9 6 5 4</div></div></div>
+  <div class="deal-s"><div class="hand"><div><span class="k">♠</span> D 8 6</div><div><span class="r">♥</span> B 9 5 2</div><div><span class="r">♦</span> 10 8 4</div><div><span class="k">♣</span> B 7 3</div></div></div>
+  <div class="deal-res"><strong>Kontrakt</strong><br>3NT · Nord<br>Dobbeltdummy: 9 stik</div>
+</div>
+<table class="bid ex"><thead><tr><th>Vest</th><th>Nord</th><th>Øst</th><th>Syd</th></tr></thead><tbody><tr><td></td><td>2<span class="k">♣</span></td><td>pas</td><td>2<span class="r">♦</span></td></tr><tr><td>pas</td><td>2NT</td><td>pas</td><td>3NT</td></tr><tr><td>pas</td><td>pas</td><td>pas</td><td></td></tr></tbody></table>
+<table class="ex">
+<thead><tr>
+<th>Melding</th>
+<th>Betydning</th>
+</tr></thead><tbody>
+<tr>
+<th scope="row">2<span class="r">♦</span></th>
+<td>0–1 kontroller — Syd har ingen</td>
+</tr>
+<tr>
+<th scope="row">2NT</th>
+<td>22–23 hp jævn efter det negative svar</td>
+</tr>
+<tr>
+<th scope="row">3NT</th>
+<td>4 hp er nok til udgang; der er intet at undersøge</td>
+</tr>
+</tbody></table>
+<p class="note">Syds dame og to knægte er værdiløse som kontroller, men de er nok til at løfte 23 hp til udgang. Havde Syd svaret 2<span class="r">♥</span> (to kontroller), ville samme Nordhånd have meldt 3NT direkte — 2NT var da blevet reserveret til 24+.</p>
+<p class="konklusion"><strong>Konklusion:</strong> Kontroller afgør slem, point afgør udgang. Syds nul kontroller udelukker slem, men hans 4 hp i damer og knægte er nok til 3NT.</p>
+</article>
+<article class="example" id="eksempel-2">
+<h3>Eksempel 2 · To kontroller og fastlagt trumf</h3>
+<div class="deal">
+  <div class="deal-meta"><strong>Spil 2</strong><br>Giver: Nord<br>Zone: Ingen</div>
+  <div class="deal-n"><div class="hand"><div><span class="k">♠</span> E K D B 9 7</div><div><span class="r">♥</span> K D 4</div><div><span class="r">♦</span> 5</div><div><span class="k">♣</span> E K D</div></div></div>
+  <div class="deal-ctl"><strong>Kontroller</strong><br>Nord 7 · Syd 2<br>I alt 9 af 12</div>
+  <div class="deal-v"><div class="hand"><div><span class="k">♠</span> 10 8 5</div><div><span class="r">♥</span> B 10 9 7</div><div><span class="r">♦</span> E K 10</div><div><span class="k">♣</span> B 10 8</div></div></div>
+  <div class="compass" aria-hidden="true"><b class="cn">N</b><b class="cv">V</b><b class="co">Ø</b><b class="cs">S</b></div>
+  <div class="deal-o"><div class="hand"><div><span class="k">♠</span> 3</div><div><span class="r">♥</span> 6 3 2</div><div><span class="r">♦</span> D 8 6 3 2</div><div><span class="k">♣</span> 6 4 3 2</div></div></div>
+  <div class="deal-s"><div class="hand"><div><span class="k">♠</span> 6 4 2</div><div><span class="r">♥</span> E 8 5</div><div><span class="r">♦</span> B 9 7 4</div><div><span class="k">♣</span> 9 7 5</div></div></div>
+  <div class="deal-res"><strong>Kontrakt</strong><br>6<span class="k">♠</span> · Nord<br>Dobbeltdummy: 12 stik</div>
+</div>
+<table class="bid ex"><thead><tr><th>Vest</th><th>Nord</th><th>Øst</th><th>Syd</th></tr></thead><tbody><tr><td></td><td>2<span class="k">♣</span></td><td>pas</td><td>2<span class="r">♥</span></td></tr><tr><td>pas</td><td>3<span class="k">♠</span></td><td>pas</td><td>4<span class="r">♥</span></td></tr><tr><td>pas</td><td>6<span class="k">♠</span></td><td>pas</td><td>pas</td></tr><tr><td>pas</td><td></td><td></td><td></td></tr></tbody></table>
+<table class="ex">
+<thead><tr>
+<th>Melding</th>
+<th>Betydning</th>
+</tr></thead><tbody>
+<tr>
+<th scope="row">2<span class="r">♥</span></th>
+<td>Præcis 2 kontroller — ét es eller to konger</td>
+</tr>
+<tr>
+<th scope="row">3<span class="k">♠</span></th>
+<td>Fastlægger spar som trumf</td>
+</tr>
+<tr>
+<th scope="row">4<span class="r">♥</span></th>
+<td>Viser kontrollen: <span class="r">♥</span>E. Dermed er de to kontroller placeret</td>
+</tr>
+<tr>
+<th scope="row">6<span class="k">♠</span></th>
+<td>Nord ved, at kun <span class="r">♦</span> mangler kontrol — én taber, slem</td>
+</tr>
+</tbody></table>
+<p class="note">Da 2<span class="r">♥</span> lovede præcis to kontroller, og Nord selv har <span class="r">♥</span>K, må Syds hjertekontrol være <span class="r">♥</span>E — og dermed er begge kontroller brugt. Syd kan ikke have <span class="r">♦</span>E eller <span class="r">♦</span>K. Nord taber derfor præcis ét ruderstik og kan melde lilleslem uden RKC. Seks spar, tre hjerter og tre klør giver tolv stik.</p>
+<p class="konklusion"><strong>Konklusion:</strong> Præcise svar gør kontrolvisning til optælling. 2<span class="r">♥</span> lovede præcis to kontroller, så ét cuebid placerer dem begge, og slemmen kan meldes uden RKC.</p>
+</article>
+<article class="example" id="eksempel-3">
+<h3>Eksempel 3 · Nul kontroller stopper slemjagten</h3>
+<div class="deal">
+  <div class="deal-meta"><strong>Spil 3</strong><br>Giver: Nord<br>Zone: Ingen</div>
+  <div class="deal-n"><div class="hand"><div><span class="k">♠</span> E K</div><div><span class="r">♥</span> E K D B 7 6</div><div><span class="r">♦</span> E K 5</div><div><span class="k">♣</span> 8 4</div></div></div>
+  <div class="deal-ctl"><strong>Kontroller</strong><br>Nord 9 · Syd 0<br>I alt 9 af 12</div>
+  <div class="deal-v"><div class="hand"><div><span class="k">♠</span> B 10 8 4</div><div><span class="r">♥</span> 10 8 3</div><div><span class="r">♦</span> B 7 6</div><div><span class="k">♣</span> E D 9</div></div></div>
+  <div class="compass" aria-hidden="true"><b class="cn">N</b><b class="cv">V</b><b class="co">Ø</b><b class="cs">S</b></div>
+  <div class="deal-o"><div class="hand"><div><span class="k">♠</span> 9 6 2</div><div><span class="r">♥</span> 4</div><div><span class="r">♦</span> 10 9 3 2</div><div><span class="k">♣</span> K 10 6 5 2</div></div></div>
+  <div class="deal-s"><div class="hand"><div><span class="k">♠</span> D 7 5 3</div><div><span class="r">♥</span> 9 5 2</div><div><span class="r">♦</span> D 8 4</div><div><span class="k">♣</span> B 7 3</div></div></div>
+  <div class="deal-res"><strong>Kontrakt</strong><br>4<span class="r">♥</span> · Nord<br>Dobbeltdummy: 11 stik</div>
+</div>
+<table class="bid ex"><thead><tr><th>Vest</th><th>Nord</th><th>Øst</th><th>Syd</th></tr></thead><tbody><tr><td></td><td>2<span class="k">♣</span></td><td>pas</td><td>2<span class="r">♦</span></td></tr><tr><td>pas</td><td>3<span class="r">♥</span></td><td>pas</td><td>4<span class="r">♥</span></td></tr><tr><td>pas</td><td>pas</td><td>pas</td><td></td></tr></tbody></table>
+<table class="ex">
+<thead><tr>
+<th>Melding</th>
+<th>Betydning</th>
+</tr></thead><tbody>
+<tr>
+<th scope="row">2<span class="r">♦</span></th>
+<td>0–1 kontroller</td>
+</tr>
+<tr>
+<th scope="row">3<span class="r">♥</span></th>
+<td>Fastlægger hjerter som trumf og beder svarer vise kontroller</td>
+</tr>
+<tr>
+<th scope="row">4<span class="r">♥</span></th>
+<td>Udgang i trumffarven = 0 kontroller, negativ hånd</td>
+</tr>
+</tbody></table>
+<p class="note">Nord mangler kun <span class="k">♣</span>E og <span class="k">♣</span>K. Med én kontrol hos Syd — <span class="k">♣</span>K — ville slem have været god. 2<span class="r">♦</span> kunne dække over netop den konge, men 4<span class="r">♥</span> afklarer, at Syd har nul, og Nord passer i god tro: 11 stik, ikke 12.</p>
+<p class="konklusion"><strong>Konklusion:</strong> Her ser vi, hvordan kontrolvisning stopper slemjagten. Nord-Syd har 9 af 12 kontroller — præcis som i eksempel 2 — men her mangler både <span class="k">♣</span>E og <span class="k">♣</span>K over for Nords doubleton, og det giver to tabere.</p>
+</article>
+<article class="example" id="eksempel-4">
+<h3>Eksempel 4 · Overføring til spar med H-H-x-x-x-x</h3>
+<div class="deal">
+  <div class="deal-meta"><strong>Spil 4</strong><br>Giver: Nord<br>Zone: Ingen</div>
+  <div class="deal-n"><div class="hand"><div><span class="k">♠</span> E 4</div><div><span class="r">♥</span> E K D</div><div><span class="r">♦</span> E K D 5</div><div><span class="k">♣</span> K D B 2</div></div></div>
+  <div class="deal-ctl"><strong>Kontroller</strong><br>Nord 9 · Syd 1<br>I alt 10 af 12</div>
+  <div class="deal-v"><div class="hand"><div><span class="k">♠</span> B 9 7</div><div><span class="r">♥</span> B 10 9</div><div><span class="r">♦</span> B 10 9 7</div><div><span class="k">♣</span> E 10 9</div></div></div>
+  <div class="compass" aria-hidden="true"><b class="cn">N</b><b class="cv">V</b><b class="co">Ø</b><b class="cs">S</b></div>
+  <div class="deal-o"><div class="hand"><div><span class="k">♠</span> 5 2</div><div><span class="r">♥</span> 8 6 4 3 2</div><div><span class="r">♦</span> 6 3 2</div><div><span class="k">♣</span> 8 6 5</div></div></div>
+  <div class="deal-s"><div class="hand"><div><span class="k">♠</span> K D 10 8 6 3</div><div><span class="r">♥</span> 7 5</div><div><span class="r">♦</span> 8 4</div><div><span class="k">♣</span> 7 4 3</div></div></div>
+  <div class="deal-res"><strong>Kontrakt</strong><br>6<span class="k">♠</span> · Nord<br>Dobbeltdummy: 12 stik</div>
+</div>
+<table class="bid ex"><thead><tr><th>Vest</th><th>Nord</th><th>Øst</th><th>Syd</th></tr></thead><tbody><tr><td></td><td>2<span class="k">♣</span></td><td>pas</td><td>3<span class="r">♥</span></td></tr><tr><td>pas</td><td>3<span class="k">♠</span></td><td>pas</td><td>4<span class="k">♠</span></td></tr><tr><td>pas</td><td>4NT</td><td>pas</td><td>5<span class="k">♣</span></td></tr><tr><td>pas</td><td>6<span class="k">♠</span></td><td>pas</td><td>pas</td></tr><tr><td>pas</td><td></td><td></td><td></td></tr></tbody></table>
+<table class="ex">
+<thead><tr>
+<th>Melding</th>
+<th>Betydning</th>
+</tr></thead><tbody>
+<tr>
+<th scope="row">3<span class="r">♥</span></th>
+<td>Overføring: H-H-x-x-x-x i spar, ikke gående</td>
+</tr>
+<tr>
+<th scope="row">3<span class="k">♠</span></th>
+<td>Åbner accepterer spar som trumf, med tillæg</td>
+</tr>
+<tr>
+<th scope="row">4<span class="k">♠</span></th>
+<td>Ingen kontroller uden for trumf</td>
+</tr>
+<tr>
+<th scope="row">4NT / 5<span class="k">♣</span></th>
+<td>RKC 1430: ét nøglekort (<span class="k">♠</span>K)</td>
+</tr>
+<tr>
+<th scope="row">6<span class="k">♠</span></th>
+<td><span class="k">♣</span>E mangler — lilleslem, ikke storeslem</td>
+</tr>
+</tbody></table>
+<p class="note">Med <span class="k">♠</span>E selv ved Nord efter 3<span class="r">♥</span>, at Syd har <span class="k">♠</span>K og <span class="k">♠</span>D. 4<span class="k">♠</span> benægter sidekontroller, og RKC bekræfter, at <span class="k">♣</span>E er det eneste manglende nøglekort. Uden overføringen havde Syd svaret 2<span class="r">♦</span> (én kontrol), og Nord skulle have fundet sparfarven senere og højere oppe.</p>
+<p class="konklusion"><strong>Konklusion:</strong> Eksemplet viser værdien af overføringer. Farven og dens kvalitet er kendt efter første svar, trumf fastlægges på 3-trinnet, og RKC finder det manglende nøglekort. Samtidig bliver den stærke hånd spilfører.</p>
+</article>
+<article class="example" id="eksempel-5">
+<h3>Eksempel 5 · Indmelding over 2<span class="k">♣</span></h3>
+<div class="deal">
+  <div class="deal-meta"><strong>Spil 5</strong><br>Giver: Nord<br>Zone: Ingen</div>
+  <div class="deal-n"><div class="hand"><div><span class="k">♠</span> E D 10</div><div><span class="r">♥</span> E K 5</div><div><span class="r">♦</span> K D 8 4</div><div><span class="k">♣</span> K D 6</div></div></div>
+  <div class="deal-ctl"><strong>Kontroller</strong><br>Nord 7 · Syd 2<br>I alt 9 af 12</div>
+  <div class="deal-v"><div class="hand"><div><span class="k">♠</span> 3 2</div><div><span class="r">♥</span> B 10 6 2</div><div><span class="r">♦</span> B 7 3</div><div><span class="k">♣</span> B 9 7 2</div></div></div>
+  <div class="compass" aria-hidden="true"><b class="cn">N</b><b class="cv">V</b><b class="co">Ø</b><b class="cs">S</b></div>
+  <div class="deal-o"><div class="hand"><div><span class="k">♠</span> K B 9 8 6 5</div><div><span class="r">♥</span> 7 4</div><div><span class="r">♦</span> 10 9</div><div><span class="k">♣</span> E 10 4</div></div></div>
+  <div class="deal-s"><div class="hand"><div><span class="k">♠</span> 7 4</div><div><span class="r">♥</span> D 9 8 3</div><div><span class="r">♦</span> E 6 5 2</div><div><span class="k">♣</span> 8 5 3</div></div></div>
+  <div class="deal-res"><strong>Kontrakt</strong><br>3NT · Nord<br>Dobbeltdummy: 10 stik</div>
+</div>
+<table class="bid ex"><thead><tr><th>Vest</th><th>Nord</th><th>Øst</th><th>Syd</th></tr></thead><tbody><tr><td></td><td>2<span class="k">♣</span></td><td>2<span class="k">♠</span></td><td>dbl</td></tr><tr><td>pas</td><td>3NT</td><td>pas</td><td>pas</td></tr><tr><td>pas</td><td></td><td></td><td></td></tr></tbody></table>
+<table class="ex">
+<thead><tr>
+<th>Melding</th>
+<th>Betydning</th>
+</tr></thead><tbody>
+<tr>
+<th scope="row">dbl</th>
+<td>Præcis 2 kontroller uden hæderlig langfarve — ikke straf</td>
+</tr>
+<tr>
+<th scope="row">3NT</th>
+<td>22–23 hp med hold i spar. Svarer har vist 2 kontroller, så 3NT er den lave ende — fast arrival</td>
+</tr>
+</tbody></table>
+<p class="note">Doblingen erstatter 2<span class="r">♥</span>-svaret, og sansintervallerne følger med: med 24+ havde Nord meldt noget langsommere. Syd har intet at tilføje og passer. Sparholdet E-D-10 over Østs konge sikrer to stik i farven.</p>
+<p class="konklusion"><strong>Konklusion:</strong> Fast arrival virker også i konkurrence. Doblingen overtager 2<span class="r">♥</span>-svarets betydning, sanstrappen gælder uændret, og 3NT med 22–23 hp lukker meldingen hurtigst muligt.</p>
+</article>
+</section>
+
+<section id="kilder" class="kilder">
+<h2>Kilder</h2>
+<ol>
+<li>Staub, Michael (2019): »Åbning 2<span class="k">♣</span> med kontrolsvar«. www.Staub.one — notatets grundlag. <a href="https://www.staub.one/2019/01/16/aabning-2%E2%99%A3%EF%B8%8E-med-kontrolsvar/">staub.one/2019/01/16/aabning-2<span class="k">♣</span>-med-kontrolsvar</a></li>
+<li>Kromann, Jens U.: »2<span class="k">♣</span> med kontrolsvar«. Bridge Konventioner — variant med samme kontroltælling og second negative. <a href="https://bridge.kromann.info/Convention/1000482">bridge.kromann.info/Convention/1000482</a></li>
+<li>Kromann, Jens U.: »2<span class="k">♣</span> med forskellige svarsystemer« — sammenligning af pointsvar, kontrolsvar og relæsvar. <a href="https://bridge.kromann.info/show/uq1o">bridge.kromann.info/show/uq1o</a></li>
+<li>Kromann, Jens U.: »2<span class="k">♣</span> med relæsvar« — alternativet med 2<span class="r">♦</span> som fast relæ. <a href="https://www.bridge.kromann.info/Convention/1000481">bridge.kromann.info/Convention/1000481</a></li>
+<li>Egen model: »Håndevaluering i bridge — en datadrevet model« (projektmateriale), afsnit 4 — dobbeltdummy-vægte for manglende es, konge og dame.</li>
+</ol>
+</section>
+</main>
+</body>
+</html>

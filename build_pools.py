@@ -10,7 +10,7 @@ tilføjes i CONVENTIONS herunder og i data/konventioner.json.
 import os
 import sys
 
-from dealer import ass, bekkasin, dont, multiforsvar, stayman, xysans
+from dealer import ass, bekkasin, dont, kontrolsvar, multiforsvar, stayman, xysans
 
 CONVENTIONS = {
     "multiforsvar": multiforsvar,
@@ -19,6 +19,7 @@ CONVENTIONS = {
     "ff-dont": dont,
     "stayman": stayman,
     "ff-ass": ass,
+    "forslag-2kl-kontrolsvar": kontrolsvar,
 }
 
 def main(names):

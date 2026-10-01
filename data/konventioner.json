@@ -435,5 +435,18 @@
   ],
   "status": "kommer",
   "viden": "viden/2-over-1-flemming.html#afsnit-b4"
+ },
+ {
+  "id": "forslag-2kl-kontrolsvar",
+  "system": "forslag",
+  "titel": "2♣ med kontrolsvar",
+  "gruppe": "Åbninger",
+  "beskrivelse": "Tæl kontroller (es = 2, konge = 1) og svar på makkers 2♣ – eller vis en god farve med overføring. Åbners sansmeldinger, kontrolvisning og svar efter indmelding.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "klar",
+  "viden": "viden/forslag-2klor-kontrolsvar.html"
  }
 ]
