@@ -7,9 +7,18 @@ Svarer over makkers 1♥/1♠:
 Svar på åbners spørgsmål:
   1M – 3♣ – 3♦: 3M minimum (10 sp) · 4M maksimum (11 sp)
   1♠ – 3♦ – 3♥: 3♠ minimum (7–8 sp) · 4♠ maksimum (9–10 sp)
-Støttepoint: hp + korthed, 5/3/1 med 4+ trumf og 3/2/1 med 3 trumf (notatets skala).
+Åbners valg (udgang ved 25 samlet):
+  første beslutning i hp, fordi 3♣/3♦ er kunstige – svarer har endnu ikke meldt farven:
+    1♠ – 3♦ (7–10): 3♠ afmelding 12–14 · 3♥ spørger 15–17 · 4♠ udgang 18+
+    1♥ – 3♦ (7–10): 3♥ afmelding 12–15 · 4♥ udgang 16+ (ingen plads til at spørge)
+    1M – 3♣ (10–11): 3M afmelding 12–13 · 3♦ spørger 14 · 4M udgang 15+
+  efter 1♠ – 3♦ – 3♥ – 3♠ (minimum) har svarer meldt farven, og åbner tæller støttepoint: udgang, hvis
+  åbners sp + 8 når 25, ellers pas. (Efter 1M – 3♣ – 3♦ – 3M giver 14 hp + doubleton altid 25 – ingen beslutning.)
+Støttepoint: hp + korthed, 5/3/1 med 4+ trumf og 3/2/1 med 3 trumf (notatets skala); åbner lægger
+1 til for hver trumf ud over fem.
 Ikke med: præcis 10 sp med 4-korts støtte (svarer vælger selv), 12 sp (hverken 3♣ eller Bekkasin dækker),
-3-korts støtte med 10+ sp (meldes 2 over 1 først) og åbners valg mellem afmelding og udgang.
+3-korts støtte med 10+ sp (meldes 2 over 1 først). Cuebid efter 3♣ kræver 22+ (33 samlet), hvilket
+åbner på 1-trinnet ikke har.
 """
 from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool
 
@@ -108,6 +117,78 @@ CLASSIFIERS["spm3ru_sp"] = answer_3ru
 SAMPLERS["spm3ru_sp"] = {"3♠": tpl((5, 8), S=(4, 4), H=(0, 3), D=(1, 5), C=(1, 5)),
                          "4♠": tpl((6, 10), S=(4, 4), H=(0, 3), D=(1, 5), C=(1, 5))}
 PER_CALL["spm3ru_sp"] = 14
+
+# --- Åbners valg -------------------------------------------------------------
+
+GAME = 25
+SUPPORT = {"3♦": (7, 10), "3♣": (10, 11)}
+MIN_ANSWER = {"3♦": (7, 8), "3♣": (10, 10)}
+
+def opener_sp(hand, hp, M):
+    L = lengths_of(hand)
+    return hp + sum({0: 5, 1: 3, 2: 1}.get(L[s], 0) for s in SUITS if s != M) + max(0, L[M] - 5)
+
+def opener_first(M, bid):
+    sym = SUIT_SYM[M]
+    lo, hi = SUPPORT[bid]
+    ask = {"3♦": "3♥", "3♣": "3♦"}[bid] if not (M == 'H' and bid == "3♦") else None
+    def classify(hand, hp):
+        L = lengths_of(hand)
+        if L[M] < 5 or not (12 <= hp <= 21):
+            return None
+        if hp + hi < GAME:
+            return f"3{sym}", f"{hp} hp + højst {hi} hos makker er under {GAME}: afmeld i 3{sym}."
+        if hp + lo >= GAME:
+            return f"4{sym}", f"{hp} hp + mindst {lo} hos makker giver {GAME}+: udgang, 4{sym}."
+        if ask:
+            return ask, f"{hp} hp: udgang afhænger af, om makker har minimum eller maksimum – {ask} spørger."
+        mid = (lo + hi + 1) // 2
+        if hp + mid >= GAME:
+            return f"4{sym}", f"{hp} hp, og der er ikke plads til at spørge: med {hp} + {mid} (midt i makkers {lo}–{hi}) meldes 4{sym}."
+        return f"3{sym}", f"{hp} hp, og der er ikke plads til at spørge: med {hp} + {mid} (midt i makkers {lo}–{hi}) afmeldes i 3{sym}."
+    return classify
+
+def opener_after_min(M, bid):
+    sym = SUIT_SYM[M]
+    lo, hi = MIN_ANSWER[bid]
+    def classify(hand, hp):
+        L = lengths_of(hand)
+        if L[M] < 5 or not opener_first(M, bid)(hand, hp) or opener_first(M, bid)(hand, hp)[0] in (f"3{sym}", f"4{sym}"):
+            return None      # åbner har kun spurgt med de point, der giver spørgsmålet
+        sp = opener_sp(hand, hp, M)
+        if sp + hi >= GAME:
+            return f"4{sym}", f"Makker har meldt farven, så du tæller støttepoint: {sp} sp + højst {hi} = {sp + hi} – udgang, 4{sym}."
+        return "Pas", f"Makker har meldt farven, så du tæller støttepoint: {sp} sp + højst {hi} = {sp + hi} – under {GAME}, pas."
+    return classify
+
+BONUS["aab"] = {"q": "Hvornår må åbner tælle støttepoint?",
+                "correct": "Når svarer har meldt farven",
+                "options": ["Når svarer har meldt farven", "Allerede efter 3♣/3♦", "Aldrig – kun honnørpoint"],
+                "why": "3♣/3♦ er kunstige, så åbner tæller honnørpoint i første runde. Når svarer har meldt farven (fx 3M som svar), tæller åbner støttepoint. Udgang ved 25."}
+
+for M, key in (('H', 'hj'), ('S', 'sp')):
+    sym, om = SUIT_SYM[M], OTHER[M]
+    ophand = lambda hp, M=M: tpl(hp, **{M: (5, 6), **{s: (1, 4) for s in SUITS if s != M}})
+    for bid, bkey in (("3♦", "3ru"), ("3♣", "3kl")):
+        ask = "3♥" if bid == "3♦" else "3♦"
+        has_ask = not (M == 'H' and bid == "3♦")
+        sk = f"aab_{bkey}_{key}"
+        calls = [f"3{sym}", f"4{sym}", "3NT"] + ([ask] if has_ask else ["Pas"])
+        SITUATIONS[sk] = {"rolle": "Åbner", "auction": [["Dig", f"1{sym}"], PAS, ["Makker", bid], PAS],
+                          "calls": sorted(set(calls), key=lambda c: (c == "Pas", c)), "bonus": BONUS["aab"]}
+        CLASSIFIERS[sk] = opener_first(M, bid)
+        SAMPLERS[sk] = {f"3{sym}": ophand((12, 15)), f"4{sym}": ophand((15, 21))}
+        if has_ask:
+            SAMPLERS[sk][ask] = ophand((14, 17))
+        PER_CALL[sk] = 14
+        if has_ask and bid == "3♦":   # efter 3♣ – 3♦ – 3M giver 14 hp + doubleton altid 25: ingen beslutning
+            sk2 = f"aab_min_{bkey}_{key}"
+            SITUATIONS[sk2] = {"rolle": "Åbner",
+                               "auction": [["Dig", f"1{sym}"], PAS, ["Makker", bid], PAS, ["Dig", ask], PAS, ["Makker", f"3{sym}"], PAS],
+                               "calls": ["Pas", "3NT", f"4{sym}", f"5{sym}"], "bonus": BONUS["aab"]}
+            CLASSIFIERS[sk2] = opener_after_min(M, bid)
+            SAMPLERS[sk2] = {"Pas": ophand((14, 17)), f"4{sym}": ophand((14, 17))}
+            PER_CALL[sk2] = 16
 
 def export_pool(path):
     return build_pool(path, SITUATIONS, CLASSIFIERS, SAMPLERS, PER_CALL)
