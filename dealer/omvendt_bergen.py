@@ -8,12 +8,12 @@ Svar på åbners spørgsmål:
   1M – 3♣ – 3♦: 3M minimum (10 sp) · 4M maksimum (11 sp)
   1♠ – 3♦ – 3♥: 3♠ minimum (7–8 sp) · 4♠ maksimum (9–10 sp)
 Åbners valg (udgang ved 25 samlet):
-  første beslutning i hp, fordi 3♣/3♦ er kunstige – svarer har endnu ikke meldt farven:
-    1♠ – 3♦ (7–10): 3♠ afmelding 12–14 · 3♥ spørger 15–17 · 4♠ udgang 18+
-    1♥ – 3♦ (7–10): 3♥ afmelding 12–15 · 4♥ udgang 16+ (ingen plads til at spørge)
-    1M – 3♣ (10–11): 3M afmelding 12–13 · 3♦ spørger 14 · 4M udgang 15+
-  efter 1♠ – 3♦ – 3♥ – 3♠ (minimum) har svarer meldt farven, og åbner tæller støttepoint: udgang, hvis
-  åbners sp + 8 når 25, ellers pas. (Efter 1M – 3♣ – 3♦ – 3M giver 14 hp + doubleton altid 25 – ingen beslutning.)
+  åbner tæller støttepoint allerede i anden melding, fordi 3♣/3♦ viser støtte til majoren:
+    1♠ – 3♦ (7–10): 3♠ afmelding ≤14 sp · 3♥ spørger 15–17 sp · 4♠ udgang 18+ sp
+    1♥ – 3♦ (7–10): 3♥ afmelding ≤15 sp · 4♥ udgang 16+ sp (ingen plads til at spørge)
+    1M – 3♣ (10–11): 3M afmelding ≤13 sp · 3♦ spørger 14 sp · 4M udgang 15+ sp
+  efter 1♠ – 3♦ – 3♥ – 3♠ (minimum 7–8): udgang, hvis åbners sp + 8 når 25, ellers pas.
+  (Efter 1M – 3♣ – 3♦ – 3M giver 14 sp + 10 altid 24 – åbner passer altid, så den er ikke med.)
 Støttepoint: hp + korthed, 5/3/1 med 4+ trumf og 3/2/1 med 3 trumf (notatets skala); åbner lægger
 1 til for hver trumf ud over fem.
 Ikke med: præcis 10 sp med 4-korts støtte (svarer vælger selv), 12 sp (hverken 3♣ eller Bekkasin dækker),
@@ -136,16 +136,18 @@ def opener_first(M, bid):
         L = lengths_of(hand)
         if L[M] < 5 or not (12 <= hp <= 21):
             return None
-        if hp + hi < GAME:
-            return f"3{sym}", f"{hp} hp + højst {hi} hos makker er under {GAME}: afmeld i 3{sym}."
-        if hp + lo >= GAME:
-            return f"4{sym}", f"{hp} hp + mindst {lo} hos makker giver {GAME}+: udgang, 4{sym}."
+        sp = opener_sp(hand, hp, M)
+        pts = f"{sp} sp ({hp} hp + korthed og ekstra trumf)" if sp != hp else f"{sp} sp"
+        if sp + hi < GAME:
+            return f"3{sym}", f"{pts} + højst {hi} hos makker er under {GAME}: afmeld i 3{sym}."
+        if sp + lo >= GAME:
+            return f"4{sym}", f"{pts} + mindst {lo} hos makker giver {GAME}+: udgang, 4{sym}."
         if ask:
-            return ask, f"{hp} hp: udgang afhænger af, om makker har minimum eller maksimum – {ask} spørger."
+            return ask, f"{pts}: udgang afhænger af, om makker har minimum eller maksimum – {ask} spørger."
         mid = (lo + hi + 1) // 2
-        if hp + mid >= GAME:
-            return f"4{sym}", f"{hp} hp, og der er ikke plads til at spørge: med {hp} + {mid} (midt i makkers {lo}–{hi}) meldes 4{sym}."
-        return f"3{sym}", f"{hp} hp, og der er ikke plads til at spørge: med {hp} + {mid} (midt i makkers {lo}–{hi}) afmeldes i 3{sym}."
+        if sp + mid >= GAME:
+            return f"4{sym}", f"{pts}, og der er ikke plads til at spørge: {sp} + {mid} (midt i makkers {lo}–{hi}) – meld 4{sym}."
+        return f"3{sym}", f"{pts}, og der er ikke plads til at spørge: {sp} + {mid} (midt i makkers {lo}–{hi}) – afmeld i 3{sym}."
     return classify
 
 def opener_after_min(M, bid):
@@ -157,14 +159,14 @@ def opener_after_min(M, bid):
             return None      # åbner har kun spurgt med de point, der giver spørgsmålet
         sp = opener_sp(hand, hp, M)
         if sp + hi >= GAME:
-            return f"4{sym}", f"Makker har meldt farven, så du tæller støttepoint: {sp} sp + højst {hi} = {sp + hi} – udgang, 4{sym}."
-        return "Pas", f"Makker har meldt farven, så du tæller støttepoint: {sp} sp + højst {hi} = {sp + hi} – under {GAME}, pas."
+            return f"4{sym}", f"Makker har minimum ({lo}–{hi}): {sp} sp + {hi} = {sp + hi} – udgang, 4{sym}."
+        return "Pas", f"Makker har minimum ({lo}–{hi}): {sp} sp + højst {hi} = {sp + hi} – under {GAME}, pas."
     return classify
 
-BONUS["aab"] = {"q": "Hvornår må åbner tælle støttepoint?",
-                "correct": "Når svarer har meldt farven",
-                "options": ["Når svarer har meldt farven", "Allerede efter 3♣/3♦", "Aldrig – kun honnørpoint"],
-                "why": "3♣/3♦ er kunstige, så åbner tæller honnørpoint i første runde. Når svarer har meldt farven (fx 3M som svar), tæller åbner støttepoint. Udgang ved 25."}
+BONUS["aab"] = {"q": "Må åbner tælle støttepoint efter makkers 3♣/3♦?",
+                "correct": "Ja – meldingerne viser støtte til majoren",
+                "options": ["Ja – meldingerne viser støtte til majoren", "Nej – de er kunstige, så kun honnørpoint", "Kun hvis makker har vist maksimum"],
+                "why": "3♣ og 3♦ er kunstige, men de viser 4+ korts støtte. Åbner tæller derfor støttepoint i sin anden melding. Udgang ved 25."}
 
 for M, key in (('H', 'hj'), ('S', 'sp')):
     sym, om = SUIT_SYM[M], OTHER[M]
@@ -177,17 +179,17 @@ for M, key in (('H', 'hj'), ('S', 'sp')):
         SITUATIONS[sk] = {"rolle": "Åbner", "auction": [["Dig", f"1{sym}"], PAS, ["Makker", bid], PAS],
                           "calls": sorted(set(calls), key=lambda c: (c == "Pas", c)), "bonus": BONUS["aab"]}
         CLASSIFIERS[sk] = opener_first(M, bid)
-        SAMPLERS[sk] = {f"3{sym}": ophand((12, 15)), f"4{sym}": ophand((15, 21))}
+        SAMPLERS[sk] = {f"3{sym}": ophand((12, 14)), f"4{sym}": ophand((13, 21))}
         if has_ask:
-            SAMPLERS[sk][ask] = ophand((14, 17))
+            SAMPLERS[sk][ask] = ophand((12, 16))
         PER_CALL[sk] = 14
-        if has_ask and bid == "3♦":   # efter 3♣ – 3♦ – 3M giver 14 hp + doubleton altid 25: ingen beslutning
+        if has_ask and bid == "3♦":   # efter 3♣ – 3♦ – 3M giver 14 sp + 10 altid 24: åbner passer altid
             sk2 = f"aab_min_{bkey}_{key}"
             SITUATIONS[sk2] = {"rolle": "Åbner",
                                "auction": [["Dig", f"1{sym}"], PAS, ["Makker", bid], PAS, ["Dig", ask], PAS, ["Makker", f"3{sym}"], PAS],
                                "calls": ["Pas", "3NT", f"4{sym}", f"5{sym}"], "bonus": BONUS["aab"]}
             CLASSIFIERS[sk2] = opener_after_min(M, bid)
-            SAMPLERS[sk2] = {"Pas": ophand((14, 17)), f"4{sym}": ophand((14, 17))}
+            SAMPLERS[sk2] = {"Pas": ophand((12, 15)), f"4{sym}": ophand((12, 16))}
             PER_CALL[sk2] = 16
 
 def export_pool(path):
