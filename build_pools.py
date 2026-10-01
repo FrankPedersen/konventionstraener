@@ -10,7 +10,10 @@ tilføjes i CONVENTIONS herunder og i data/konventioner.json.
 import os
 import sys
 
-from dealer import ass, bekkasin, dont, kontrolsvar, multiforsvar, stayman, xysans
+from types import SimpleNamespace
+
+from dealer import (ass, bekkasin, cuebids, dont, fjerde_farve, kontrolsvar, lebensohl, multiforsvar,
+                    omvendt_bergen, rkc1430, stayman, tofarvet, transfer, xysans)
 
 CONVENTIONS = {
     "multiforsvar": multiforsvar,
@@ -20,6 +23,14 @@ CONVENTIONS = {
     "stayman": stayman,
     "ff-ass": ass,
     "forslag-2kl-kontrolsvar": kontrolsvar,
+    "michaels": SimpleNamespace(export_pool=tofarvet.export_michaels),
+    "usaedvanlig-2nt": SimpleNamespace(export_pool=tofarvet.export_unusual),
+    "lebensohl": lebensohl,
+    "omvendt-bergen": omvendt_bergen,
+    "transfer": transfer,
+    "1430": rkc1430,
+    "cuebids": cuebids,
+    "fjerde-farve": fjerde_farve,
 }
 
 def main(names):

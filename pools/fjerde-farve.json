@@ -1,0 +1,6510 @@
+{
+ "situations": {
+  "svar_ru": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "1♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "2♣",
+    "2♥",
+    "2♠",
+    "2NT",
+    "3♦",
+    "3NT"
+   ],
+   "bonus": {
+    "q": "Hvornår bruger du fjerde farve krav?",
+    "correct": "Med 11+ hp uden fit og uden naturlig melding",
+    "options": [
+     "Med 11+ hp uden fit og uden naturlig melding",
+     "Altid med 4 kort i farven",
+     "Kun med svag hånd"
+    ],
+    "why": "Fjerde farve skaber et krav, når der ikke er fundet fit, og der ikke er en naturlig kravmelding – fx sans med hold."
+   }
+  },
+  "aab_ru": {
+   "rolle": "Åbner",
+   "auction": [
+    [
+     "Dig",
+     "1♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "1♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "2♦",
+    "2♥",
+    "2♠",
+    "2NT",
+    "3♣",
+    "3NT"
+   ],
+   "bonus": {
+    "q": "Hvad siger makkers fjerde farve om farven?",
+    "correct": "Intet – den er kunstig og krav",
+    "options": [
+     "Intet – den er kunstig og krav",
+     "Mindst 4 kort i farven",
+     "Hold i farven"
+    ],
+    "why": "Fjerde farve er kunstig og krav: rundekrav på 2-trinnet (11+), udgangskrav på 3-trinnet (13+). Den siger intet om farven."
+   }
+  },
+  "svar_kl": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "1♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "2♦",
+    "2♥",
+    "2♠",
+    "2NT",
+    "3♣",
+    "3NT"
+   ],
+   "bonus": {
+    "q": "Hvornår bruger du fjerde farve krav?",
+    "correct": "Med 11+ hp uden fit og uden naturlig melding",
+    "options": [
+     "Med 11+ hp uden fit og uden naturlig melding",
+     "Altid med 4 kort i farven",
+     "Kun med svag hånd"
+    ],
+    "why": "Fjerde farve skaber et krav, når der ikke er fundet fit, og der ikke er en naturlig kravmelding – fx sans med hold."
+   }
+  },
+  "aab_kl": {
+   "rolle": "Åbner",
+   "auction": [
+    [
+     "Dig",
+     "1♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "1♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "2♥",
+    "2♠",
+    "2NT",
+    "3♣",
+    "3♦",
+    "3NT"
+   ],
+   "bonus": {
+    "q": "Hvad siger makkers fjerde farve om farven?",
+    "correct": "Intet – den er kunstig og krav",
+    "options": [
+     "Intet – den er kunstig og krav",
+     "Mindst 4 kort i farven",
+     "Hold i farven"
+    ],
+    "why": "Fjerde farve er kunstig og krav: rundekrav på 2-trinnet (11+), udgangskrav på 3-trinnet (13+). Den siger intet om farven."
+   }
+  }
+ },
+ "hands": [
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     7,
+     3
+    ],
+    "D": [
+     12,
+     10,
+     7
+    ],
+    "C": [
+     9,
+     8,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2♣",
+   "why": "11 hp, intet fit og intet hold i klør: 2♣ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     8,
+     2
+    ],
+    "D": [
+     9,
+     8,
+     4
+    ],
+    "C": [
+     10,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2♣",
+   "why": "11 hp, intet fit og intet hold i klør: 2♣ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     2
+    ],
+    "H": [
+     12,
+     9,
+     8,
+     7,
+     5
+    ],
+    "D": [
+     12,
+     10
+    ],
+    "C": [
+     10,
+     8,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2♣",
+   "why": "11 hp, intet fit og intet hold i klør: 2♣ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10,
+     9
+    ],
+    "D": [
+     8,
+     5
+    ],
+    "C": [
+     10,
+     6,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♣",
+   "why": "15 hp, intet fit og intet hold i klør: 2♣ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     10,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     13,
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2♣",
+   "why": "12 hp, intet fit og intet hold i klør: 2♣ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     8,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     5,
+     2
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     9
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2♣",
+   "why": "13 hp, intet fit og intet hold i klør: 2♣ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     11,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     10,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     2
+    ],
+    "C": [
+     11,
+     7,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "2♣",
+   "why": "13 hp, intet fit og intet hold i klør: 2♣ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     9,
+     6
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     13,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2♣",
+   "why": "12 hp, intet fit og intet hold i klør: 2♣ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     11
+    ],
+    "H": [
+     12,
+     10,
+     8,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     9,
+     5
+    ],
+    "C": [
+     11,
+     9,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2♣",
+   "why": "11 hp, intet fit og intet hold i klør: 2♣ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     6,
+     5,
+     4
+    ],
+    "H": [
+     13,
+     8,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2♣",
+   "why": "12 hp, intet fit og intet hold i klør: 2♣ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     7,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     13,
+     7,
+     4,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "2♣",
+   "why": "15 hp, intet fit og intet hold i klør: 2♣ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     12,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10,
+     3
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     11,
+     10,
+     8,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2♣",
+   "why": "12 hp, intet fit og intet hold i klør: 2♣ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     4
+    ],
+    "H": [
+     13,
+     8,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     5
+    ],
+    "C": [
+     9,
+     6,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "2♣",
+   "why": "13 hp, intet fit og intet hold i klør: 2♣ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11
+    ],
+    "H": [
+     14,
+     7,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     11,
+     10,
+     6,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "2♣",
+   "why": "11 hp, intet fit og intet hold i klør: 2♣ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     9,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     7
+    ],
+    "D": [
+     14,
+     8,
+     7
+    ],
+    "C": [
+     9,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2♣",
+   "why": "11 hp, intet fit og intet hold i klør: 2♣ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     4,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     10,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     13,
+     11,
+     6,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2♣",
+   "why": "12 hp, intet fit og intet hold i klør: 2♣ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     9,
+     6
+    ],
+    "H": [
+     13,
+     10,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     4
+    ],
+    "C": [
+     11,
+     6,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 12,
+   "correct": "2♣",
+   "why": "12 hp, intet fit og intet hold i klør: 2♣ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     5
+    ],
+    "H": [
+     13,
+     11,
+     4,
+     3
+    ],
+    "D": [
+     11,
+     8
+    ],
+    "C": [
+     14,
+     9,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hold i klør og 12 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     8,
+     7
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     4
+    ],
+    "D": [
+     6,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     6,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hold i klør og 11 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     9,
+     6
+    ],
+    "H": [
+     13,
+     12,
+     8,
+     6
+    ],
+    "D": [
+     11,
+     7
+    ],
+    "C": [
+     12,
+     10,
+     5,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hold i klør og 12 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     6,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     9,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     6
+    ],
+    "C": [
+     13,
+     10,
+     6,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "Hold i klør og 11 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     9,
+     3
+    ],
+    "H": [
+     13,
+     11,
+     9,
+     8,
+     5
+    ],
+    "D": [
+     11,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "Hold i klør og 11 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     12
+    ],
+    "H": [
+     12,
+     9,
+     8,
+     6
+    ],
+    "D": [
+     6,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     8,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hold i klør og 12 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     6
+    ],
+    "H": [
+     12,
+     9,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     6
+    ],
+    "C": [
+     12,
+     10,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hold i klør og 11 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     12,
+     8
+    ],
+    "H": [
+     12,
+     11,
+     8,
+     6
+    ],
+    "D": [
+     6,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     8
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hold i klør og 12 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     6,
+     5,
+     2
+    ],
+    "H": [
+     12,
+     8,
+     7,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "Hold i klør og 12 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     9,
+     6
+    ],
+    "H": [
+     14,
+     11,
+     7,
+     2
+    ],
+    "D": [
+     12,
+     5
+    ],
+    "C": [
+     13,
+     11,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hold i klør og 11 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     5
+    ],
+    "D": [
+     11,
+     6,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     7,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hold i klør og 12 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     8,
+     4
+    ],
+    "H": [
+     13,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     5,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hold i klør og 12 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     5,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     6
+    ],
+    "D": [
+     12,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "Hold i klør og 12 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     4,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     5
+    ],
+    "C": [
+     12,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hold i klør og 12 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     12,
+     10,
+     2
+    ],
+    "H": [
+     13,
+     10,
+     6,
+     3
+    ],
+    "D": [
+     12,
+     8
+    ],
+    "C": [
+     14,
+     9,
+     5,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "Hold i klør og 11 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     11,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     7,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     4
+    ],
+    "C": [
+     13,
+     9,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hold i klør og 12 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     10,
+     2
+    ],
+    "H": [
+     13,
+     8,
+     7,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     14,
+     10,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hold i klør og 12 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     12,
+     11
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "Hold i klør og 16 hp: 3NT."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     12,
+     7
+    ],
+    "H": [
+     13,
+     9,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     10,
+     8,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "3NT",
+   "why": "Hold i klør og 13 hp: 3NT."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     2
+    ],
+    "H": [
+     11,
+     10,
+     9,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     8
+    ],
+    "C": [
+     13,
+     11
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "Hold i klør og 16 hp: 3NT."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     11,
+     3
+    ],
+    "H": [
+     13,
+     11,
+     5,
+     2
+    ],
+    "D": [
+     8,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     7,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3NT",
+   "why": "Hold i klør og 13 hp: 3NT."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     8
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     7
+    ],
+    "D": [
+     13,
+     11,
+     5
+    ],
+    "C": [
+     13,
+     11,
+     7,
+     6
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "Hold i klør og 16 hp: 3NT."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     2
+    ],
+    "D": [
+     12,
+     9,
+     3
+    ],
+    "C": [
+     12,
+     8,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 16,
+   "correct": "3NT",
+   "why": "Hold i klør og 16 hp: 3NT."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     12,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     7,
+     6
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     11,
+     9,
+     7,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Hold i klør og 16 hp: 3NT."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     11,
+     9
+    ],
+    "H": [
+     14,
+     9,
+     8,
+     4
+    ],
+    "D": [
+     13,
+     10
+    ],
+    "C": [
+     13,
+     12,
+     10,
+     9,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3NT",
+   "why": "Hold i klør og 13 hp: 3NT."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     4
+    ],
+    "H": [
+     13,
+     9,
+     8,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "3NT",
+   "why": "Hold i klør og 14 hp: 3NT."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     11,
+     8,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     9
+    ],
+    "D": [
+     12,
+     8
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "3NT",
+   "why": "Hold i klør og 14 hp: 3NT."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     12,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     6,
+     4
+    ],
+    "D": [
+     13,
+     9
+    ],
+    "C": [
+     14,
+     12,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "3NT",
+   "why": "Hold i klør og 15 hp: 3NT."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     5
+    ],
+    "D": [
+     10,
+     9
+    ],
+    "C": [
+     13,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "3NT",
+   "why": "Hold i klør og 14 hp: 3NT."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     9,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     5,
+     3
+    ],
+    "D": [
+     11,
+     10
+    ],
+    "C": [
+     14,
+     12,
+     6,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Hold i klør og 16 hp: 3NT."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     11,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     8
+    ],
+    "D": [
+     8,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     10,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "Hold i klør og 15 hp: 3NT."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     8,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     7,
+     6
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     13,
+     11,
+     8,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "Hold i klør og 15 hp: 3NT."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     13,
+     11,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     4
+    ],
+    "C": [
+     12,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Hold i klør og 16 hp: 3NT."
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     6,
+     4
+    ],
+    "H": [
+     13,
+     6,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     8
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "Hold i klør og 15 hp: 3NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13,
+     11,
+     7,
+     5
+    ],
+    "H": [
+     11,
+     8,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     9,
+     3
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     9,
+     6,
+     3
+    ],
+    "H": [
+     13,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     2
+    ],
+    "C": [
+     13,
+     7
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     10,
+     8,
+     2
+    ],
+    "H": [
+     10,
+     9,
+     4
+    ],
+    "D": [
+     14,
+     8,
+     7,
+     3
+    ],
+    "C": [
+     14,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     10,
+     7
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     9,
+     3
+    ],
+    "C": [
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     7,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     6
+    ],
+    "D": [
+     12,
+     9,
+     7,
+     4,
+     2
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     12,
+     10,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     7,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     9,
+     2
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     4
+    ],
+    "H": [
+     12,
+     11,
+     5
+    ],
+    "D": [
+     14,
+     10,
+     9,
+     3
+    ],
+    "C": [
+     7,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     6
+    ],
+    "H": [
+     4,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     7,
+     3
+    ],
+    "C": [
+     13,
+     8
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     8
+    ],
+    "H": [
+     8,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     10,
+     8
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     8
+    ],
+    "H": [
+     14,
+     8,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     5,
+     4
+    ],
+    "C": [
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     12,
+     10,
+     8,
+     4
+    ],
+    "H": [
+     11,
+     10,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     4
+    ],
+    "C": [
+     12,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9,
+     8
+    ],
+    "H": [
+     12,
+     10,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     10
+    ],
+    "C": [
+     12,
+     7
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9,
+     7
+    ],
+    "H": [
+     14,
+     12
+    ],
+    "D": [
+     11,
+     10,
+     8,
+     6,
+     3
+    ],
+    "C": [
+     13,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Hold i klør og minimum (13 hp): 2NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     9
+    ],
+    "H": [
+     11,
+     3
+    ],
+    "D": [
+     12,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     4,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hold i klør og minimum (13 hp): 2NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     9,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     6,
+     4
+    ],
+    "C": [
+     13,
+     8,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Hold i klør og minimum (12 hp): 2NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     3
+    ],
+    "H": [
+     6,
+     5
+    ],
+    "D": [
+     14,
+     11,
+     9,
+     2
+    ],
+    "C": [
+     12,
+     8,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Hold i klør og minimum (14 hp): 2NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     12,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     12,
+     9,
+     8,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     10,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Hold i klør og minimum (13 hp): 2NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13,
+     10,
+     7,
+     6
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     12,
+     11,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     9,
+     5,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Hold i klør og minimum (13 hp): 2NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     9,
+     6,
+     5
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     14,
+     7,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Hold i klør og minimum (12 hp): 2NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     6,
+     3,
+     2
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     12,
+     10,
+     8,
+     3
+    ],
+    "C": [
+     12,
+     8,
+     7,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Hold i klør og minimum (12 hp): 2NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     12,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     6
+    ],
+    "C": [
+     13,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Hold i klør og minimum (12 hp): 2NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13,
+     11,
+     7,
+     6
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     13,
+     9,
+     8,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Hold i klør og minimum (13 hp): 2NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9,
+     4
+    ],
+    "H": [
+     9
+    ],
+    "D": [
+     14,
+     11,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "Hold i klør og minimum (14 hp): 2NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     12,
+     10,
+     9,
+     8
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     9,
+     6,
+     4
+    ],
+    "C": [
+     13,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "Hold i klør og minimum (13 hp): 2NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     6
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     12,
+     9,
+     8,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     8,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "3NT",
+   "why": "Hold i klør og tillæg (16 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13,
+     11,
+     8,
+     2
+    ],
+    "H": [
+     7,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     7
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Hold i klør og tillæg (17 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     9
+    ],
+    "H": [
+     7,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     6
+    ],
+    "C": [
+     13,
+     9,
+     4
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Hold i klør og tillæg (17 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     12
+    ],
+    "D": [
+     12,
+     11,
+     9,
+     6,
+     4,
+     2
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 17,
+   "sp": 21,
+   "correct": "3NT",
+   "why": "Hold i klør og tillæg (17 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13,
+     11,
+     6,
+     2
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "3NT",
+   "why": "Hold i klør og tillæg (16 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     4
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     13,
+     12,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     8
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "3NT",
+   "why": "Hold i klør og tillæg (17 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     6,
+     4
+    ],
+    "H": [
+     12,
+     9
+    ],
+    "D": [
+     14,
+     12,
+     7,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     12
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Hold i klør og tillæg (16 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     3
+    ],
+    "H": [
+     8
+    ],
+    "D": [
+     14,
+     11,
+     9,
+     8,
+     7
+    ],
+    "C": [
+     13,
+     10,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Hold i klør og tillæg (15 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     9,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     10
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     9
+    ],
+    "C": [
+     14,
+     12,
+     9
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "Hold i klør og tillæg (16 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     9,
+     3,
+     2
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     14,
+     8,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     5
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "3NT",
+   "why": "Hold i klør og tillæg (17 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     6
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     13,
+     12,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "3NT",
+   "why": "Hold i klør og tillæg (16 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     10,
+     9,
+     8,
+     3
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     14,
+     10,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Hold i klør og tillæg (15 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     4
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     10,
+     9,
+     4
+    ],
+    "C": [
+     5,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 20,
+   "correct": "2♦",
+   "why": "6 ruder, intet hold og ingen støtte: gentag farven – 2♦."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     7,
+     2
+    ],
+    "H": [
+     8,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     9
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "6 ruder, intet hold og ingen støtte: gentag farven – 2♦."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     10,
+     9,
+     7,
+     3
+    ],
+    "H": [
+     13,
+     7
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     8,
+     6,
+     2
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "6 ruder, intet hold og ingen støtte: gentag farven – 2♦."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     7,
+     3,
+     2
+    ],
+    "C": [
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "6 ruder, intet hold og ingen støtte: gentag farven – 2♦."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     2
+    ],
+    "H": [
+     5,
+     4
+    ],
+    "D": [
+     13,
+     11,
+     7,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "6 ruder, intet hold og ingen støtte: gentag farven – 2♦."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     9,
+     3
+    ],
+    "H": [
+     12,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     8,
+     4,
+     3
+    ],
+    "C": [
+     6
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "2♦",
+   "why": "6 ruder, intet hold og ingen støtte: gentag farven – 2♦."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "2♦",
+   "why": "6 ruder, intet hold og ingen støtte: gentag farven – 2♦."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     8,
+     7,
+     5
+    ],
+    "H": [
+     11,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     8,
+     7,
+     5
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "6 ruder, intet hold og ingen støtte: gentag farven – 2♦."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     11,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     10,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "6 ruder, intet hold og ingen støtte: gentag farven – 2♦."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     8
+    ],
+    "H": [
+     8,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     7,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     9
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "6 ruder, intet hold og ingen støtte: gentag farven – 2♦."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     3
+    ],
+    "H": [
+     9
+    ],
+    "D": [
+     14,
+     13,
+     6,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     9,
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "6 ruder, intet hold og ingen støtte: gentag farven – 2♦."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     12,
+     9,
+     5,
+     4
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     8,
+     6,
+     5
+    ],
+    "C": [
+     6,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "6 ruder, intet hold og ingen støtte: gentag farven – 2♦."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     12,
+     9,
+     5,
+     4
+    ],
+    "C": [
+     9,
+     8,
+     6,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "3♣",
+   "why": "4 klør: meld den fjerde farve naturligt – 3♣ (sidste udvej)."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     4
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     13,
+     12,
+     6,
+     2
+    ],
+    "C": [
+     7,
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♣",
+   "why": "4 klør: meld den fjerde farve naturligt – 3♣ (sidste udvej)."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     9,
+     4,
+     2
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     14,
+     10,
+     9,
+     4
+    ],
+    "C": [
+     8,
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "4 klør: meld den fjerde farve naturligt – 3♣ (sidste udvej)."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     4
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     12,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     9,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "4 klør: meld den fjerde farve naturligt – 3♣ (sidste udvej)."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     5
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     14,
+     12,
+     6,
+     5
+    ],
+    "C": [
+     7,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "3♣",
+   "why": "4 klør: meld den fjerde farve naturligt – 3♣ (sidste udvej)."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     13,
+     8,
+     7,
+     3
+    ],
+    "C": [
+     10,
+     9,
+     5,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "4 klør: meld den fjerde farve naturligt – 3♣ (sidste udvej)."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     8
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     8
+    ],
+    "C": [
+     8,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♣",
+   "why": "4 klør: meld den fjerde farve naturligt – 3♣ (sidste udvej)."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     6,
+     3
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     14,
+     7,
+     3,
+     2
+    ],
+    "C": [
+     10,
+     9,
+     6,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "4 klør: meld den fjerde farve naturligt – 3♣ (sidste udvej)."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     5
+    ],
+    "H": [
+     2
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     2
+    ],
+    "C": [
+     8,
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "4 klør: meld den fjerde farve naturligt – 3♣ (sidste udvej)."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     8
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     7
+    ],
+    "C": [
+     10,
+     7,
+     4,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "3♣",
+   "why": "4 klør: meld den fjerde farve naturligt – 3♣ (sidste udvej)."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     2
+    ],
+    "C": [
+     10,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "4 klør: meld den fjerde farve naturligt – 3♣ (sidste udvej)."
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     6
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     14,
+     9,
+     6,
+     4
+    ],
+    "C": [
+     6,
+     5,
+     4,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "4 klør: meld den fjerde farve naturligt – 3♣ (sidste udvej)."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     6,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     7,
+     3
+    ],
+    "D": [
+     7,
+     6,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♦",
+   "why": "12 hp, intet fit og intet hold i ruder: 2♦ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     5
+    ],
+    "H": [
+     13,
+     6,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     9,
+     3,
+     2
+    ],
+    "C": [
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "2♦",
+   "why": "11 hp, intet fit og intet hold i ruder: 2♦ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     10,
+     9,
+     8
+    ],
+    "H": [
+     11,
+     10,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     3
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "14 hp, intet fit og intet hold i ruder: 2♦ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     14,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     10,
+     7,
+     5,
+     4
+    ],
+    "C": [
+     7,
+     3,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2♦",
+   "why": "11 hp, intet fit og intet hold i ruder: 2♦ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     9,
+     5
+    ],
+    "D": [
+     11,
+     9,
+     8,
+     5
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "14 hp, intet fit og intet hold i ruder: 2♦ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     5
+    ],
+    "H": [
+     13,
+     9,
+     7,
+     2
+    ],
+    "D": [
+     10,
+     8,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     10
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2♦",
+   "why": "11 hp, intet fit og intet hold i ruder: 2♦ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10
+    ],
+    "H": [
+     13,
+     12,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     4,
+     3
+    ],
+    "C": [
+     14,
+     4,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♦",
+   "why": "13 hp, intet fit og intet hold i ruder: 2♦ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     5
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     6,
+     4
+    ],
+    "D": [
+     13,
+     10,
+     7,
+     6
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "13 hp, intet fit og intet hold i ruder: 2♦ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     11,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     3
+    ],
+    "D": [
+     11,
+     9,
+     7
+    ],
+    "C": [
+     13,
+     12,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 14,
+   "correct": "2♦",
+   "why": "14 hp, intet fit og intet hold i ruder: 2♦ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     11,
+     7,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     9,
+     7
+    ],
+    "D": [
+     9,
+     7
+    ],
+    "C": [
+     14,
+     10,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2♦",
+   "why": "14 hp, intet fit og intet hold i ruder: 2♦ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9
+    ],
+    "H": [
+     14,
+     7,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     5,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♦",
+   "why": "13 hp, intet fit og intet hold i ruder: 2♦ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     9,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     9,
+     7,
+     5
+    ],
+    "C": [
+     12,
+     8
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♦",
+   "why": "12 hp, intet fit og intet hold i ruder: 2♦ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     5,
+     2
+    ],
+    "D": [
+     10,
+     5,
+     4
+    ],
+    "C": [
+     10,
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2♦",
+   "why": "14 hp, intet fit og intet hold i ruder: 2♦ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7
+    ],
+    "H": [
+     13,
+     12,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     13,
+     11,
+     9,
+     8
+    ],
+    "C": [
+     9
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "15 hp, intet fit og intet hold i ruder: 2♦ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     10,
+     6
+    ],
+    "H": [
+     12,
+     11,
+     8,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     8,
+     6
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "2♦",
+   "why": "11 hp, intet fit og intet hold i ruder: 2♦ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     4
+    ],
+    "H": [
+     13,
+     7,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     11,
+     7
+    ],
+    "C": [
+     12,
+     11,
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♦",
+   "why": "12 hp, intet fit og intet hold i ruder: 2♦ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10
+    ],
+    "H": [
+     13,
+     12,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     8,
+     5,
+     4
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "15 hp, intet fit og intet hold i ruder: 2♦ – fjerde farve, rundekrav."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     7,
+     2
+    ],
+    "H": [
+     8,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     10,
+     4
+    ],
+    "C": [
+     13,
+     9
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hold i ruder og 11 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     4
+    ],
+    "H": [
+     12,
+     7,
+     6,
+     5
+    ],
+    "D": [
+     14,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     6,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "Hold i ruder og 11 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     11,
+     10,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     6,
+     3
+    ],
+    "D": [
+     13,
+     7
+    ],
+    "C": [
+     10,
+     6,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "Hold i ruder og 11 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     5,
+     2
+    ],
+    "H": [
+     14,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     9,
+     8,
+     7
+    ],
+    "C": [
+     13,
+     9
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hold i ruder og 12 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     9,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     10,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     8,
+     7
+    ],
+    "C": [
+     14,
+     10,
+     8
+    ]
+   },
+   "hp": 12,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "Hold i ruder og 12 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     12,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     2
+    ],
+    "D": [
+     12,
+     8,
+     7,
+     4,
+     3
+    ],
+    "C": [
+     10,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hold i ruder og 11 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     3
+    ],
+    "D": [
+     14,
+     7,
+     6,
+     4
+    ],
+    "C": [
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hold i ruder og 12 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     6,
+     4
+    ],
+    "D": [
+     14,
+     7,
+     4
+    ],
+    "C": [
+     10,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hold i ruder og 12 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     8
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     5
+    ],
+    "D": [
+     12,
+     11,
+     7,
+     2
+    ],
+    "C": [
+     11,
+     3,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "Hold i ruder og 11 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     9,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     9
+    ],
+    "D": [
+     14,
+     11,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "Hold i ruder og 11 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     12,
+     11,
+     8
+    ],
+    "H": [
+     10,
+     8,
+     7,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     6
+    ],
+    "C": [
+     12,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hold i ruder og 12 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10
+    ],
+    "H": [
+     10,
+     9,
+     7,
+     4,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     6
+    ],
+    "C": [
+     11,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "Hold i ruder og 11 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     9,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     9,
+     7,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     7
+    ],
+    "C": [
+     13,
+     9,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "Hold i ruder og 12 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     8,
+     7,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     3
+    ],
+    "D": [
+     14,
+     9,
+     5
+    ],
+    "C": [
+     12,
+     9,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "correct": "2NT",
+   "why": "Hold i ruder og 11 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     7,
+     4
+    ],
+    "C": [
+     9,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "Hold i ruder og 11 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     9,
+     3
+    ],
+    "D": [
+     13,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "Hold i ruder og 11 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     6,
+     5
+    ],
+    "H": [
+     13,
+     10,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     10,
+     3
+    ],
+    "C": [
+     11,
+     8
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hold i ruder og 11 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     9,
+     3
+    ],
+    "H": [
+     13,
+     11,
+     9,
+     7
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Hold i ruder og 16 hp: 3NT."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     8
+    ],
+    "H": [
+     11,
+     8,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     7,
+     5
+    ],
+    "C": [
+     14,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Hold i ruder og 16 hp: 3NT."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     10
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     3
+    ],
+    "D": [
+     11,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     5,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "3NT",
+   "why": "Hold i ruder og 14 hp: 3NT."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     8,
+     4
+    ],
+    "H": [
+     14,
+     11,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     6
+    ],
+    "C": [
+     14,
+     5,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "3NT",
+   "why": "Hold i ruder og 14 hp: 3NT."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     6,
+     4
+    ],
+    "H": [
+     13,
+     10,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     6
+    ],
+    "C": [
+     6,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "3NT",
+   "why": "Hold i ruder og 13 hp: 3NT."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     11,
+     3
+    ],
+    "H": [
+     6,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     7,
+     3
+    ],
+    "C": [
+     14,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3NT",
+   "why": "Hold i ruder og 13 hp: 3NT."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     10
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     9,
+     8
+    ],
+    "D": [
+     14,
+     12,
+     7,
+     3
+    ],
+    "C": [
+     5,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3NT",
+   "why": "Hold i ruder og 13 hp: 3NT."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     12,
+     6
+    ],
+    "H": [
+     13,
+     11,
+     8,
+     7
+    ],
+    "D": [
+     14,
+     9,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "3NT",
+   "why": "Hold i ruder og 15 hp: 3NT."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     3
+    ],
+    "H": [
+     14,
+     8,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     5,
+     2
+    ],
+    "C": [
+     12,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "Hold i ruder og 15 hp: 3NT."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     10,
+     7
+    ],
+    "H": [
+     13,
+     8,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     7,
+     6
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3NT",
+   "why": "Hold i ruder og 13 hp: 3NT."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     9,
+     4
+    ],
+    "C": [
+     13,
+     10,
+     8
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "3NT",
+   "why": "Hold i ruder og 15 hp: 3NT."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     11
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     8,
+     7
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     8
+    ],
+    "C": [
+     9,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Hold i ruder og 16 hp: 3NT."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     8
+    ],
+    "H": [
+     13,
+     11,
+     7,
+     5
+    ],
+    "D": [
+     13,
+     11,
+     5,
+     2
+    ],
+    "C": [
+     13,
+     4,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "3NT",
+   "why": "Hold i ruder og 15 hp: 3NT."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     9,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     10,
+     5
+    ],
+    "C": [
+     14,
+     11,
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "3NT",
+   "why": "Hold i ruder og 14 hp: 3NT."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     12,
+     11
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     9,
+     6
+    ],
+    "D": [
+     13,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     8,
+     6
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "Hold i ruder og 16 hp: 3NT."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9
+    ],
+    "H": [
+     7,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     12,
+     10,
+     8,
+     2
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "3NT",
+   "why": "Hold i ruder og 13 hp: 3NT."
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     12,
+     3
+    ],
+    "H": [
+     14,
+     10,
+     8,
+     5
+    ],
+    "D": [
+     14,
+     8,
+     5,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "3NT",
+   "why": "Hold i ruder og 15 hp: 3NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     4,
+     3,
+     2
+    ],
+    "D": [
+     7
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     10,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     9,
+     4,
+     3
+    ],
+    "H": [
+     11,
+     7,
+     5
+    ],
+    "D": [
+     12,
+     9,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     8
+    ]
+   },
+   "hp": 12,
+   "sp": 12,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     6,
+     2
+    ],
+    "H": [
+     10,
+     6,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     9
+    ],
+    "C": [
+     14,
+     7,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 16,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7,
+     3
+    ],
+    "H": [
+     11,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     8
+    ],
+    "C": [
+     10,
+     9,
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     12,
+     7,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     9
+    ],
+    "D": [
+     12,
+     11
+    ],
+    "C": [
+     13,
+     10,
+     5,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     7
+    ],
+    "D": [
+     11,
+     5
+    ],
+    "C": [
+     13,
+     11,
+     8,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10,
+     2
+    ],
+    "H": [
+     14,
+     6,
+     3
+    ],
+    "D": [
+     8,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     8,
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     2
+    ],
+    "H": [
+     10,
+     9,
+     7
+    ],
+    "D": [
+     14,
+     7,
+     5
+    ],
+    "C": [
+     14,
+     8,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9,
+     3
+    ],
+    "H": [
+     13,
+     8,
+     3
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     14,
+     10,
+     9,
+     6,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     3
+    ],
+    "H": [
+     11,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     11
+    ],
+    "C": [
+     11,
+     8,
+     5,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     5
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     13,
+     9,
+     8,
+     7,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     10,
+     8,
+     2
+    ],
+    "H": [
+     13,
+     10,
+     4
+    ],
+    "D": [
+     14,
+     11,
+     7
+    ],
+    "C": [
+     12,
+     11,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 15,
+   "correct": "2♥",
+   "why": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13,
+     8,
+     7,
+     6
+    ],
+    "H": [
+     8
+    ],
+    "D": [
+     14,
+     13
+    ],
+    "C": [
+     14,
+     8,
+     7,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "2NT",
+   "why": "Hold i ruder og minimum (14 hp): 2NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     4,
+     2
+    ],
+    "H": [
+     4,
+     3
+    ],
+    "D": [
+     14,
+     5,
+     4
+    ],
+    "C": [
+     12,
+     10,
+     7,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hold i ruder og minimum (12 hp): 2NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9,
+     4
+    ],
+    "H": [
+     12,
+     9
+    ],
+    "D": [
+     14,
+     9,
+     7
+    ],
+    "C": [
+     13,
+     10,
+     7,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "Hold i ruder og minimum (12 hp): 2NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     7
+    ],
+    "H": [
+     7,
+     3
+    ],
+    "D": [
+     14,
+     11
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     6,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Hold i ruder og minimum (14 hp): 2NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13,
+     9,
+     8,
+     2
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     12,
+     8,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     3,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "Hold i ruder og minimum (14 hp): 2NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9,
+     6
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     13,
+     7,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     4,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Hold i ruder og minimum (12 hp): 2NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     3
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     13,
+     12,
+     9
+    ],
+    "C": [
+     11,
+     9,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Hold i ruder og minimum (13 hp): 2NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     12,
+     11,
+     3,
+     2
+    ],
+    "H": [
+     2
+    ],
+    "D": [
+     13,
+     12,
+     8
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     3,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "Hold i ruder og minimum (14 hp): 2NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     12,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     2
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     14,
+     9,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Hold i ruder og minimum (14 hp): 2NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     7,
+     6,
+     2
+    ],
+    "H": [
+     2
+    ],
+    "D": [
+     13,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     9,
+     6,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "2NT",
+   "why": "Hold i ruder og minimum (14 hp): 2NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8,
+     7
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     13,
+     12,
+     10
+    ],
+    "C": [
+     14,
+     9,
+     8,
+     7,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "Hold i ruder og minimum (14 hp): 2NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9,
+     6
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     14,
+     8
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "Hold i ruder og minimum (13 hp): 2NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     11,
+     10,
+     5,
+     3
+    ],
+    "H": [
+     12,
+     2
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     14,
+     12,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "Hold i ruder og tillæg (15 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     6
+    ],
+    "H": [
+     9,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     4
+    ],
+    "C": [
+     13,
+     10,
+     8,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "3NT",
+   "why": "Hold i ruder og tillæg (15 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     12,
+     11,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     7
+    ],
+    "D": [
+     14,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     5,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Hold i ruder og tillæg (16 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8,
+     4
+    ],
+    "H": [
+     13,
+     9
+    ],
+    "D": [
+     14,
+     11,
+     3
+    ],
+    "C": [
+     14,
+     10,
+     8,
+     6
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "Hold i ruder og tillæg (16 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     13,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 21,
+   "correct": "3NT",
+   "why": "Hold i ruder og tillæg (17 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     8,
+     6,
+     4
+    ],
+    "H": [
+     9
+    ],
+    "D": [
+     14,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     8,
+     3,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "3NT",
+   "why": "Hold i ruder og tillæg (15 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     6,
+     2
+    ],
+    "H": [
+     9,
+     8
+    ],
+    "D": [
+     14,
+     13,
+     11
+    ],
+    "C": [
+     13,
+     11,
+     7,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "Hold i ruder og tillæg (16 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     4
+    ],
+    "H": [
+     10,
+     9
+    ],
+    "D": [
+     13,
+     12,
+     8
+    ],
+    "C": [
+     13,
+     12,
+     10,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "Hold i ruder og tillæg (16 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8,
+     3
+    ],
+    "H": [
+     9,
+     2
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     8,
+     6,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "3NT",
+   "why": "Hold i ruder og tillæg (15 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7,
+     3
+    ],
+    "H": [
+     7,
+     3
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 20,
+   "correct": "3NT",
+   "why": "Hold i ruder og tillæg (16 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10,
+     4
+    ],
+    "H": [
+     14,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     10
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     4
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "3NT",
+   "why": "Hold i ruder og tillæg (17 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8,
+     5
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     13,
+     12,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     6,
+     5
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "3NT",
+   "why": "Hold i ruder og tillæg (17 hp): spring til 3NT."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     2
+    ],
+    "H": [
+     8,
+     7
+    ],
+    "D": [
+     9
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     5,
+     4,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "6 klør, intet hold og ingen støtte: gentag farven – 3♣."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     2
+    ],
+    "H": [
+     12,
+     3
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     8,
+     4,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "3♣",
+   "why": "6 klør, intet hold og ingen støtte: gentag farven – 3♣."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     9,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     11,
+     6,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "3♣",
+   "why": "6 klør, intet hold og ingen støtte: gentag farven – 3♣."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13,
+     7,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     7
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     10,
+     7,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "3♣",
+   "why": "6 klør, intet hold og ingen støtte: gentag farven – 3♣."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     7,
+     5
+    ],
+    "H": [
+     13,
+     11
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     8,
+     7,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "3♣",
+   "why": "6 klør, intet hold og ingen støtte: gentag farven – 3♣."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     2
+    ],
+    "H": [
+     13,
+     7
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     10,
+     6,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "3♣",
+   "why": "6 klør, intet hold og ingen støtte: gentag farven – 3♣."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     5,
+     2
+    ],
+    "H": [
+     11,
+     8
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     10,
+     5,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "3♣",
+   "why": "6 klør, intet hold og ingen støtte: gentag farven – 3♣."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     10,
+     9,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     8,
+     4,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "3♣",
+   "why": "6 klør, intet hold og ingen støtte: gentag farven – 3♣."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "3♣",
+   "why": "6 klør, intet hold og ingen støtte: gentag farven – 3♣."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7,
+     3
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     12,
+     4
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     8,
+     7,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "6 klør, intet hold og ingen støtte: gentag farven – 3♣."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     3
+    ],
+    "H": [
+     12,
+     4
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "6 klør, intet hold og ingen støtte: gentag farven – 3♣."
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     12,
+     8
+    ],
+    "C": [
+     12,
+     9,
+     7,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "6 klør, intet hold og ingen støtte: gentag farven – 3♣."
+  }
+ ]
+}
