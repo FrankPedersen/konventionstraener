@@ -7,13 +7,13 @@ Svarer over makkers 1♥/1♠:
 Svar på åbners spørgsmål:
   1M – 3♣ – 3♦: 3M minimum (10 sp) · 4M maksimum (11 sp)
   1♠ – 3♦ – 3♥: 3♠ minimum (7–8 sp) · 4♠ maksimum (9–10 sp)
-Åbners valg (udgang ved 25 samlet):
+Åbners valg (udgang ved 26 samlet – 25–26 er et skøn efter mellemkort og sekvenser; træneren bruger 26):
   åbner tæller støttepoint allerede i anden melding, fordi 3♣/3♦ viser støtte til majoren:
-    1♠ – 3♦ (7–10): 3♠ afmelding ≤14 sp · 3♥ spørger 15–17 sp · 4♠ udgang 18+ sp
-    1♥ – 3♦ (7–10): 3♥ afmelding ≤15 sp · 4♥ udgang 16+ sp (ingen plads til at spørge)
-    1M – 3♣ (10–11): 3M afmelding ≤13 sp · 3♦ spørger 14 sp · 4M udgang 15+ sp
-  efter 1♠ – 3♦ – 3♥ – 3♠ (minimum 7–8): udgang, hvis åbners sp + 8 når 25, ellers pas.
-  (Efter 1M – 3♣ – 3♦ – 3M giver 14 sp + 10 altid 24 – åbner passer altid, så den er ikke med.)
+    1♠ – 3♦ (7–10): 3♠ afmelding ≤15 sp · 3♥ spørger 16–18 sp · 4♠ udgang 19+ sp
+    1♥ – 3♦ (7–10): 3♥ afmelding ≤16 sp · 4♥ udgang 17+ sp (ingen plads til at spørge; midten 9)
+    1M – 3♣ (10–11): 3M afmelding ≤14 sp · 3♦ spørger 15 sp · 4M udgang 16+ sp
+  efter 1♠ – 3♦ – 3♥ – 3♠ (minimum 7–8): udgang, hvis åbners sp + 8 når 26, ellers pas.
+  (Efter 1M – 3♣ – 3♦ – 3M giver 15 sp + 10 altid 25 – åbner passer altid, så den er ikke med.)
 Støttepoint: hp + korthed, 5/3/1 med 4+ trumf og 3/2/1 med 3 trumf (notatets skala); åbner lægger
 1 til for hver trumf ud over fem.
 Ikke med: præcis 10 sp med 4-korts støtte (svarer vælger selv), 12 sp (hverken 3♣ eller Bekkasin dækker),
@@ -120,7 +120,7 @@ PER_CALL["spm3ru_sp"] = 14
 
 # --- Åbners valg -------------------------------------------------------------
 
-GAME = 25
+GAME = 26
 SUPPORT = {"3♦": (7, 10), "3♣": (10, 11)}
 MIN_ANSWER = {"3♦": (7, 8), "3♣": (10, 10)}
 
@@ -176,7 +176,7 @@ def opener_after_min(M, bid):
 BONUS["aab"] = {"q": "Må åbner tælle støttepoint efter makkers 3♣/3♦?",
                 "correct": "Ja – meldingerne viser støtte til majoren",
                 "options": ["Ja – meldingerne viser støtte til majoren", "Nej – de er kunstige, så kun honnørpoint", "Kun hvis makker har vist maksimum"],
-                "why": "3♣ og 3♦ er kunstige, men de viser 4+ korts støtte. Åbner tæller derfor støttepoint i sin anden melding. Udgang ved 25."}
+                "why": "3♣ og 3♦ er kunstige, men de viser 4+ korts støtte. Åbner tæller derfor støttepoint i sin anden melding. Udgang ved 26 (25 med gode mellemkort)."}
 
 for M, key in (('H', 'hj'), ('S', 'sp')):
     sym, om = SUIT_SYM[M], OTHER[M]
@@ -184,7 +184,7 @@ for M, key in (('H', 'hj'), ('S', 'sp')):
     # minimumshænder, der når udgang på fordelingen: renonce (5 sp) eller single (3 sp) i en sidefarve
     shorthand = lambda hp, n, M=M: either(*[tpl(hp, **{M: (5, 6), **{x: (n, n) if x == s else (2, 6) for x in SUITS if x != M}})
                                             for s in SUITS if s != M])
-    distr = lambda M=M: either(ophand((13, 21), M), shorthand((12, 14), 0, M), shorthand((12, 15), 1, M))
+    distr = lambda M=M: either(ophand((14, 21), M), shorthand((12, 15), 0, M), shorthand((13, 16), 1, M))
     for bid, bkey in (("3♦", "3ru"), ("3♣", "3kl")):
         ask = "3♥" if bid == "3♦" else "3♦"
         has_ask = not (M == 'H' and bid == "3♦")
@@ -193,17 +193,17 @@ for M, key in (('H', 'hj'), ('S', 'sp')):
         SITUATIONS[sk] = {"rolle": "Åbner", "auction": [["Dig", f"1{sym}"], PAS, ["Makker", bid], PAS],
                           "calls": sorted(set(calls), key=lambda c: (c == "Pas", c)), "bonus": BONUS["aab"]}
         CLASSIFIERS[sk] = opener_first(M, bid)
-        SAMPLERS[sk] = {f"3{sym}": ophand((12, 14)), f"4{sym}": distr()}
+        SAMPLERS[sk] = {f"3{sym}": ophand((12, 15)), f"4{sym}": distr()}
         if has_ask:
-            SAMPLERS[sk][ask] = ophand((12, 16))
+            SAMPLERS[sk][ask] = ophand((13, 17))
         PER_CALL[sk] = 14
-        if has_ask and bid == "3♦":   # efter 3♣ – 3♦ – 3M giver 14 sp + 10 altid 24: åbner passer altid
+        if has_ask and bid == "3♦":   # efter 3♣ – 3♦ – 3M giver 15 sp + 10 altid 25: åbner passer altid
             sk2 = f"aab_min_{bkey}_{key}"
             SITUATIONS[sk2] = {"rolle": "Åbner",
                                "auction": [["Dig", f"1{sym}"], PAS, ["Makker", bid], PAS, ["Dig", ask], PAS, ["Makker", f"3{sym}"], PAS],
                                "calls": ["Pas", "3NT", f"4{sym}", f"5{sym}"], "bonus": BONUS["aab"]}
             CLASSIFIERS[sk2] = opener_after_min(M, bid)
-            SAMPLERS[sk2] = {"Pas": ophand((12, 15)), f"4{sym}": ophand((12, 16))}
+            SAMPLERS[sk2] = {"Pas": ophand((13, 16)), f"4{sym}": ophand((13, 17))}
             PER_CALL[sk2] = 16
 
 def export_pool(path):
