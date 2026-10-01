@@ -262,25 +262,25 @@
   "system": "ff",
   "titel": "Overføringer",
   "gruppe": "Svar på 1NT",
-  "beskrivelse": "2♦/2♥ til major med superaccept, 2♠/3♣ til minor som flugt.",
+  "beskrivelse": "2♦/2♥ til major med superaccept, 2♠/3♣ til minor som flugt – og svarers 2. melding: pas, 2NT/3M invit eller udgang.",
   "roller": [
    "Åbner",
    "Svarer"
   ],
-  "status": "kommer",
+  "status": "klar",
   "viden": "viden/2-over-1-flemming.html#afsnit-10"
  },
  {
   "id": "ff-gerber",
   "system": "ff",
-  "titel": "Gerber",
+  "titel": "Gerber og sansstigen",
   "gruppe": "Svar på 1NT",
-  "beskrivelse": "4♣ spørger om esser efter sansåbning.",
+  "beskrivelse": "Svarers sansstige over 1NT (pas, 2NT, 3NT, 4NT, 6NT, 5NT, 7NT) og åbners svar på Gerber 4♣ og kongespørgsmålet 5♣.",
   "roller": [
    "Spørger",
    "Svarer"
   ],
-  "status": "kommer",
+  "status": "klar",
   "viden": "viden/2-over-1-flemming.html#afsnit-11"
  },
  {
@@ -288,25 +288,25 @@
   "system": "ff",
   "titel": "2♣ stærkåbning og 2♦ waiting",
   "gruppe": "Åbninger",
-  "beskrivelse": "20+ hp; 2♦ waiting og det andet negative.",
+  "beskrivelse": "20+ hp; 2♦ waiting eller positivt svar, åbners genmelding og svarers 2. melding med det andet negative.",
   "roller": [
    "Åbner",
    "Svarer"
   ],
-  "status": "kommer",
+  "status": "klar",
   "viden": "viden/2-over-1-flemming.html#afsnit-14"
  },
  {
   "id": "ff-ogust",
   "system": "ff",
-  "titel": "Ogust 2NT",
+  "titel": "Ogust 2NT og svar på svag 2",
   "gruppe": "Åbninger",
-  "beskrivelse": "Svarers 2NT over svag 2 spørger om styrke og tophonnører.",
+  "beskrivelse": "Åbners svar på Ogust (1-2-1-2-3) og svarers valg over svag 2: Ogust, ny farve eller spærring efter Loven.",
   "roller": [
    "Åbner",
    "Svarer"
   ],
-  "status": "kommer",
+  "status": "klar",
   "viden": "viden/2-over-1-flemming.html#afsnit-13"
  },
  {
@@ -392,12 +392,12 @@
   "system": "ff",
   "titel": "RKC 1430, trumfdame og konger",
   "gruppe": "Slem",
-  "beskrivelse": "Nøglekort, spørgsmål efter trumfdamen og 5NT kongespørgsmål.",
+  "beskrivelse": "Svar på 4NT (5 nøglekort som 5♥/5♠), damespørgsmålet og 5NT-kongespørgsmålet.",
   "roller": [
    "Spørger",
    "Svarer"
   ],
-  "status": "kommer",
+  "status": "klar",
   "viden": "viden/2-over-1-flemming.html#afsnit-7"
  },
  {

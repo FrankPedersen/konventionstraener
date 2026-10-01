@@ -14,7 +14,8 @@ from types import SimpleNamespace
 
 from dealer import (ass, bekkasin, cuebids, dont, fjerde_farve, kontrolsvar, lebensohl, multiforsvar,
                     omvendt_bergen, rkc1430, stayman, tofarvet, transfer, xysans,
-                    ff_bergen, ff_trial, ff_fast, ff_2over1, ff_genmeld, ff_minor)
+                    ff_bergen, ff_trial, ff_fast, ff_2over1, ff_genmeld, ff_minor,
+                    ff_transfer, ff_gerber, ff_2kl, ff_ogust, ff_rkc)
 
 CONVENTIONS = {
     "multiforsvar": multiforsvar,
@@ -38,6 +39,11 @@ CONVENTIONS = {
     "ff-two-over-one": ff_2over1,
     "ff-staerke-genmeldinger": ff_genmeld,
     "ff-omvendt-minor": ff_minor,
+    "ff-overfoeringer": ff_transfer,
+    "ff-gerber": ff_gerber,
+    "ff-2kl": ff_2kl,
+    "ff-ogust": ff_ogust,
+    "ff-1430": ff_rkc,
 }
 
 def main(names):

@@ -1,0 +1,7728 @@
+{
+ "situations": {
+  "aab_4nt_1h": {
+   "rolle": "Åbner",
+   "auction": [
+    [
+     "Dig",
+     "1♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "3♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "4NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "5♣",
+    "5♦",
+    "5♥",
+    "5♠",
+    "5NT"
+   ],
+   "bonus": {
+    "q": "Hvad viser 5♣ som svar på 1430?",
+    "correct": "1 eller 4 nøglekort",
+    "options": [
+     "1 eller 4 nøglekort",
+     "0 eller 3 nøglekort",
+     "2 nøglekort med trumfdame"
+    ],
+    "why": "1430: 5♣ = 1 eller 4, 5♦ = 0 eller 3, 5♥ = 2 uden trumfdame, 5♠ = 2 med trumfdame."
+   }
+  },
+  "aab_dame_kl_1h": {
+   "rolle": "Åbner",
+   "auction": [
+    [
+     "Dig",
+     "1♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "3♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "4NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "5♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "5♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "5♥",
+    "5♠",
+    "5NT",
+    "6♣",
+    "6♦",
+    "6♥"
+   ],
+   "bonus": {
+    "q": "Hvad viser 5NT som svar på damespørgsmålet?",
+    "correct": "Trumfdamen, men ingen konger",
+    "options": [
+     "Trumfdamen, men ingen konger",
+     "Ingen trumfdame",
+     "Kongespørgsmål"
+    ],
+    "why": "Billigste genmelding = ingen dame · billigste konge = dame + konge(r) · 5NT = dame uden konger · lilleslem = dame, intet yderligere at vise."
+   }
+  },
+  "svar_4nt_1h": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "4NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "5♣",
+    "5♦",
+    "5♥",
+    "5♠",
+    "5NT"
+   ],
+   "bonus": {
+    "q": "Hvad viser 5♣ som svar på 1430?",
+    "correct": "1 eller 4 nøglekort",
+    "options": [
+     "1 eller 4 nøglekort",
+     "0 eller 3 nøglekort",
+     "2 nøglekort med trumfdame"
+    ],
+    "why": "1430: 5♣ = 1 eller 4, 5♦ = 0 eller 3, 5♥ = 2 uden trumfdame, 5♠ = 2 med trumfdame."
+   }
+  },
+  "svar_dame_kl_1h": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "4NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "5♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "5♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "5♥",
+    "5♠",
+    "5NT",
+    "6♣",
+    "6♦",
+    "6♥"
+   ],
+   "bonus": {
+    "q": "Hvad viser 5NT som svar på damespørgsmålet?",
+    "correct": "Trumfdamen, men ingen konger",
+    "options": [
+     "Trumfdamen, men ingen konger",
+     "Ingen trumfdame",
+     "Kongespørgsmål"
+    ],
+    "why": "Billigste genmelding = ingen dame · billigste konge = dame + konge(r) · 5NT = dame uden konger · lilleslem = dame, intet yderligere at vise."
+   }
+  },
+  "aab_4nt_1s": {
+   "rolle": "Åbner",
+   "auction": [
+    [
+     "Dig",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "3♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "4NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "5♣",
+    "5♦",
+    "5♥",
+    "5♠",
+    "5NT"
+   ],
+   "bonus": {
+    "q": "Hvad viser 5♣ som svar på 1430?",
+    "correct": "1 eller 4 nøglekort",
+    "options": [
+     "1 eller 4 nøglekort",
+     "0 eller 3 nøglekort",
+     "2 nøglekort med trumfdame"
+    ],
+    "why": "1430: 5♣ = 1 eller 4, 5♦ = 0 eller 3, 5♥ = 2 uden trumfdame, 5♠ = 2 med trumfdame."
+   }
+  },
+  "aab_dame_kl_1s": {
+   "rolle": "Åbner",
+   "auction": [
+    [
+     "Dig",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "3♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "4NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "5♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "5♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "5♥",
+    "5♠",
+    "5NT",
+    "6♣",
+    "6♦",
+    "6♥",
+    "6♠"
+   ],
+   "bonus": {
+    "q": "Hvad viser 5NT som svar på damespørgsmålet?",
+    "correct": "Trumfdamen, men ingen konger",
+    "options": [
+     "Trumfdamen, men ingen konger",
+     "Ingen trumfdame",
+     "Kongespørgsmål"
+    ],
+    "why": "Billigste genmelding = ingen dame · billigste konge = dame + konge(r) · 5NT = dame uden konger · lilleslem = dame, intet yderligere at vise."
+   }
+  },
+  "aab_dame_ru_1s": {
+   "rolle": "Åbner",
+   "auction": [
+    [
+     "Dig",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "3♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "4NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "5♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "5♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "5♠",
+    "5NT",
+    "6♣",
+    "6♦",
+    "6♥",
+    "6♠"
+   ],
+   "bonus": {
+    "q": "Hvad viser 5NT som svar på damespørgsmålet?",
+    "correct": "Trumfdamen, men ingen konger",
+    "options": [
+     "Trumfdamen, men ingen konger",
+     "Ingen trumfdame",
+     "Kongespørgsmål"
+    ],
+    "why": "Billigste genmelding = ingen dame · billigste konge = dame + konge(r) · 5NT = dame uden konger · lilleslem = dame, intet yderligere at vise."
+   }
+  },
+  "svar_4nt_1s": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "4NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "5♣",
+    "5♦",
+    "5♥",
+    "5♠",
+    "5NT"
+   ],
+   "bonus": {
+    "q": "Hvad viser 5♣ som svar på 1430?",
+    "correct": "1 eller 4 nøglekort",
+    "options": [
+     "1 eller 4 nøglekort",
+     "0 eller 3 nøglekort",
+     "2 nøglekort med trumfdame"
+    ],
+    "why": "1430: 5♣ = 1 eller 4, 5♦ = 0 eller 3, 5♥ = 2 uden trumfdame, 5♠ = 2 med trumfdame."
+   }
+  },
+  "svar_dame_kl_1s": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "4NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "5♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "5♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "5♥",
+    "5♠",
+    "5NT",
+    "6♣",
+    "6♦",
+    "6♥",
+    "6♠"
+   ],
+   "bonus": {
+    "q": "Hvad viser 5NT som svar på damespørgsmålet?",
+    "correct": "Trumfdamen, men ingen konger",
+    "options": [
+     "Trumfdamen, men ingen konger",
+     "Ingen trumfdame",
+     "Kongespørgsmål"
+    ],
+    "why": "Billigste genmelding = ingen dame · billigste konge = dame + konge(r) · 5NT = dame uden konger · lilleslem = dame, intet yderligere at vise."
+   }
+  },
+  "svar_dame_ru_1s": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "4NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "5♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "5♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "5♠",
+    "5NT",
+    "6♣",
+    "6♦",
+    "6♥",
+    "6♠"
+   ],
+   "bonus": {
+    "q": "Hvad viser 5NT som svar på damespørgsmålet?",
+    "correct": "Trumfdamen, men ingen konger",
+    "options": [
+     "Trumfdamen, men ingen konger",
+     "Ingen trumfdame",
+     "Kongespørgsmål"
+    ],
+    "why": "Billigste genmelding = ingen dame · billigste konge = dame + konge(r) · 5NT = dame uden konger · lilleslem = dame, intet yderligere at vise."
+   }
+  },
+  "aab_konge_kl_1h": {
+   "rolle": "Åbner",
+   "auction": [
+    [
+     "Dig",
+     "1♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "3♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "4NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "5♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "5NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "6♣",
+    "6♦",
+    "6♥",
+    "7♥"
+   ],
+   "bonus": {
+    "q": "Hvad garanterer 5NT efter RKC-svaret?",
+    "correct": "Alle fem nøglekort – invitation til storeslem",
+    "options": [
+     "Alle fem nøglekort – invitation til storeslem",
+     "Trumfdamen",
+     "Invit til 6NT"
+    ],
+    "why": "5NT spørger om konger og garanterer, at parret har alle fem nøglekort. Svar: 6 i billigste farve med konge, 6 i trumf uden konger."
+   }
+  },
+  "aab_konge_sp_1h": {
+   "rolle": "Åbner",
+   "auction": [
+    [
+     "Dig",
+     "1♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "3♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "4NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "5♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "5NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "6♣",
+    "6♦",
+    "6♥",
+    "7♥"
+   ],
+   "bonus": {
+    "q": "Hvad garanterer 5NT efter RKC-svaret?",
+    "correct": "Alle fem nøglekort – invitation til storeslem",
+    "options": [
+     "Alle fem nøglekort – invitation til storeslem",
+     "Trumfdamen",
+     "Invit til 6NT"
+    ],
+    "why": "5NT spørger om konger og garanterer, at parret har alle fem nøglekort. Svar: 6 i billigste farve med konge, 6 i trumf uden konger."
+   }
+  },
+  "aab_konge_kl_1s": {
+   "rolle": "Åbner",
+   "auction": [
+    [
+     "Dig",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "3♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "4NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "5♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "5NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "6♣",
+    "6♦",
+    "6♥",
+    "6♠",
+    "7♠"
+   ],
+   "bonus": {
+    "q": "Hvad garanterer 5NT efter RKC-svaret?",
+    "correct": "Alle fem nøglekort – invitation til storeslem",
+    "options": [
+     "Alle fem nøglekort – invitation til storeslem",
+     "Trumfdamen",
+     "Invit til 6NT"
+    ],
+    "why": "5NT spørger om konger og garanterer, at parret har alle fem nøglekort. Svar: 6 i billigste farve med konge, 6 i trumf uden konger."
+   }
+  },
+  "aab_konge_sp_1s": {
+   "rolle": "Åbner",
+   "auction": [
+    [
+     "Dig",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "3♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "4NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "5♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "5NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "6♣",
+    "6♦",
+    "6♥",
+    "6♠",
+    "7♠"
+   ],
+   "bonus": {
+    "q": "Hvad garanterer 5NT efter RKC-svaret?",
+    "correct": "Alle fem nøglekort – invitation til storeslem",
+    "options": [
+     "Alle fem nøglekort – invitation til storeslem",
+     "Trumfdamen",
+     "Invit til 6NT"
+    ],
+    "why": "5NT spørger om konger og garanterer, at parret har alle fem nøglekort. Svar: 6 i billigste farve med konge, 6 i trumf uden konger."
+   }
+  }
+ },
+ "hands": [
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     6
+    ],
+    "H": [
+     11,
+     9,
+     8,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     13
+    ],
+    "C": [
+     12,
+     11
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "5♣",
+   "why": "1 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     14,
+     10
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     6,
+     5
+    ],
+    "D": [
+     12,
+     9
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     9
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "5♣",
+   "why": "4 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     13,
+     9,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     10
+    ],
+    "C": [
+     13,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "5♣",
+   "why": "1 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     5
+    ],
+    "H": [
+     13,
+     11,
+     9,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     12,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "5♣",
+   "why": "1 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     14,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     8,
+     4,
+     2
+    ],
+    "D": [
+     12,
+     7
+    ],
+    "C": [
+     14,
+     12,
+     9
+    ]
+   },
+   "hp": 19,
+   "sp": 21,
+   "correct": "5♣",
+   "why": "4 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     11,
+     10
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     8,
+     4
+    ],
+    "D": [
+     14,
+     10
+    ],
+    "C": [
+     14,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "5♣",
+   "why": "4 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     12,
+     10
+    ],
+    "H": [
+     13,
+     10,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     11
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     3
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     14,
+     11
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     6,
+     3
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     14,
+     6
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     8,
+     7
+    ],
+    "D": [
+     13,
+     12,
+     4
+    ],
+    "C": [
+     14,
+     8,
+     2
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     11,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10,
+     5,
+     3
+    ],
+    "D": [
+     6,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     7
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     13,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     4,
+     3
+    ],
+    "C": [
+     8,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     11,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     7,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     9,
+     6
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 18,
+   "sp": 20,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     14,
+     12,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     8,
+     7,
+     5
+    ],
+    "D": [
+     14,
+     9
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 24,
+   "sp": 19,
+   "correct": "5♥",
+   "why": "5 nøglekort uden trumfdamen: 5♥ (2 eller 5 uden dame)."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     14,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     8,
+     7
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     14,
+     11,
+     4,
+     3
+    ]
+   },
+   "hp": 22,
+   "sp": 18,
+   "correct": "5♥",
+   "why": "5 nøglekort uden trumfdamen: 5♥ (2 eller 5 uden dame)."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     6
+    ],
+    "C": [
+     14,
+     8
+    ]
+   },
+   "hp": 19,
+   "sp": 17,
+   "correct": "5♥",
+   "why": "5 nøglekort uden trumfdamen: 5♥ (2 eller 5 uden dame)."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     14,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     6,
+     4
+    ],
+    "D": [
+     14,
+     9,
+     8,
+     7
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 23,
+   "sp": 16,
+   "correct": "5♥",
+   "why": "5 nøglekort uden trumfdamen: 5♥ (2 eller 5 uden dame)."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     10,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     11
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "5♥",
+   "why": "2 nøglekort uden trumfdamen: 5♥."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     14,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     8,
+     7
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     8
+    ],
+    "C": [
+     14,
+     9
+    ]
+   },
+   "hp": 21,
+   "sp": 16,
+   "correct": "5♥",
+   "why": "5 nøglekort uden trumfdamen: 5♥ (2 eller 5 uden dame)."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     10,
+     6
+    ],
+    "D": [
+     14,
+     9
+    ],
+    "C": [
+     14,
+     5
+    ]
+   },
+   "hp": 24,
+   "sp": 18,
+   "correct": "5♠",
+   "why": "5 nøglekort og trumfdamen: 5♠ (2 eller 5 med dame)."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     14,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     10,
+     9
+    ],
+    "D": [
+     14,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     7
+    ]
+   },
+   "hp": 25,
+   "sp": 19,
+   "correct": "5♠",
+   "why": "5 nøglekort og trumfdamen: 5♠ (2 eller 5 med dame)."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     14,
+     10,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     7
+    ],
+    "D": [
+     14,
+     10
+    ],
+    "C": [
+     14,
+     11
+    ]
+   },
+   "hp": 23,
+   "sp": 17,
+   "correct": "5♠",
+   "why": "5 nøglekort og trumfdamen: 5♠ (2 eller 5 med dame)."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     14,
+     11
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     9,
+     6
+    ],
+    "D": [
+     14,
+     9,
+     7,
+     5
+    ],
+    "C": [
+     14,
+     8
+    ]
+   },
+   "hp": 22,
+   "sp": 17,
+   "correct": "5♠",
+   "why": "5 nøglekort og trumfdamen: 5♠ (2 eller 5 med dame)."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     10,
+     8
+    ],
+    "D": [
+     14,
+     7,
+     4
+    ],
+    "C": [
+     14,
+     9
+    ]
+   },
+   "hp": 24,
+   "sp": 17,
+   "correct": "5♠",
+   "why": "5 nøglekort og trumfdamen: 5♠ (2 eller 5 med dame)."
+  },
+  {
+   "situation": "aab_4nt_1h",
+   "hand": {
+    "S": [
+     8,
+     7
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     7,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     7
+    ],
+    "C": [
+     13,
+     12,
+     11
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "5♠",
+   "why": "2 nøglekort og trumfdamen: 5♠."
+  },
+  {
+   "situation": "aab_dame_kl_1h",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     3
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     5
+    ],
+    "C": [
+     14,
+     5
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "5♥",
+   "why": "Du har ikke trumfdamen: billigste genmelding, 5♥."
+  },
+  {
+   "situation": "aab_dame_kl_1h",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     5
+    ],
+    "C": [
+     9,
+     6
+    ]
+   },
+   "hp": 19,
+   "sp": 21,
+   "correct": "5♥",
+   "why": "Du har ikke trumfdamen: billigste genmelding, 5♥."
+  },
+  {
+   "situation": "aab_dame_kl_1h",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     8
+    ],
+    "H": [
+     13,
+     9,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     3
+    ],
+    "C": [
+     14,
+     9
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "5♥",
+   "why": "Du har ikke trumfdamen: billigste genmelding, 5♥."
+  },
+  {
+   "situation": "aab_dame_kl_1h",
+   "hand": {
+    "S": [
+     12,
+     9
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     9,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     8
+    ],
+    "C": [
+     13,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♣",
+   "why": "Trumfdamen og klør konge: billigste konge, 6♣."
+  },
+  {
+   "situation": "aab_dame_kl_1h",
+   "hand": {
+    "S": [
+     14,
+     11,
+     4
+    ],
+    "H": [
+     12,
+     7,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     11,
+     9
+    ],
+    "C": [
+     13,
+     12
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "6♣",
+   "why": "Trumfdamen og klør konge: billigste konge, 6♣."
+  },
+  {
+   "situation": "aab_dame_kl_1h",
+   "hand": {
+    "S": [
+     12,
+     10,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     8,
+     3
+    ],
+    "D": [
+     13,
+     5
+    ],
+    "C": [
+     13,
+     12
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♣",
+   "why": "Trumfdamen og klør konge: billigste konge, 6♣."
+  },
+  {
+   "situation": "aab_dame_kl_1h",
+   "hand": {
+    "S": [
+     14,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     9,
+     8
+    ],
+    "D": [
+     13,
+     9,
+     8,
+     5
+    ],
+    "C": [
+     14,
+     5
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "6♦",
+   "why": "Trumfdamen og ruder konge: billigste konge, 6♦."
+  },
+  {
+   "situation": "aab_dame_kl_1h",
+   "hand": {
+    "S": [
+     14,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     8,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     5,
+     2
+    ],
+    "C": [
+     9,
+     6
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "6♦",
+   "why": "Trumfdamen og ruder konge: billigste konge, 6♦."
+  },
+  {
+   "situation": "aab_dame_kl_1h",
+   "hand": {
+    "S": [
+     5,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     9
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     2
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "6♦",
+   "why": "Trumfdamen og ruder konge: billigste konge, 6♦."
+  },
+  {
+   "situation": "aab_dame_kl_1h",
+   "hand": {
+    "S": [
+     14,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     9
+    ],
+    "D": [
+     12,
+     3
+    ],
+    "C": [
+     14,
+     8,
+     7,
+     5
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "5NT",
+   "why": "Trumfdamen, men ingen konger uden for trumf: 5NT."
+  },
+  {
+   "situation": "aab_dame_kl_1h",
+   "hand": {
+    "S": [
+     14,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     10,
+     4
+    ],
+    "D": [
+     14,
+     4
+    ],
+    "C": [
+     14,
+     11,
+     7,
+     5
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "5NT",
+   "why": "Trumfdamen, men ingen konger uden for trumf: 5NT."
+  },
+  {
+   "situation": "aab_dame_kl_1h",
+   "hand": {
+    "S": [
+     14,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     8
+    ],
+    "C": [
+     10,
+     8
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "5NT",
+   "why": "Trumfdamen, men ingen konger uden for trumf: 5NT."
+  },
+  {
+   "situation": "aab_dame_kl_1h",
+   "hand": {
+    "S": [
+     13,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     9,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     13
+    ],
+    "C": [
+     13,
+     9,
+     7,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "5♠",
+   "why": "Trumfdamen og spar konge: billigste konge, 5♠."
+  },
+  {
+   "situation": "aab_dame_kl_1h",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9
+    ],
+    "H": [
+     14,
+     12,
+     7,
+     6,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     10
+    ],
+    "C": [
+     13,
+     6
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "correct": "5♠",
+   "why": "Trumfdamen og spar konge: billigste konge, 5♠."
+  },
+  {
+   "situation": "aab_dame_kl_1h",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10
+    ],
+    "H": [
+     12,
+     11,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "correct": "5♠",
+   "why": "Trumfdamen og spar konge: billigste konge, 5♠."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     14,
+     13,
+     6
+    ],
+    "H": [
+     12,
+     8,
+     5,
+     4
+    ],
+    "D": [
+     10,
+     8,
+     5,
+     4
+    ],
+    "C": [
+     13,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "5♣",
+   "why": "1 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     13,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     7,
+     5
+    ],
+    "D": [
+     13,
+     9,
+     2
+    ],
+    "C": [
+     6,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "5♣",
+   "why": "1 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     10,
+     8,
+     7
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     13,
+     8,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "5♣",
+   "why": "1 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     14,
+     11,
+     2
+    ],
+    "H": [
+     11,
+     10,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     7
+    ],
+    "C": [
+     11,
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "5♣",
+   "why": "1 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     12,
+     10,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     12,
+     10
+    ],
+    "C": [
+     13,
+     10,
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "5♣",
+   "why": "1 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     12,
+     7,
+     4
+    ],
+    "H": [
+     12,
+     11,
+     8,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     9
+    ],
+    "C": [
+     12,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♣",
+   "why": "1 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     4,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     3
+    ],
+    "D": [
+     14,
+     6,
+     4,
+     2
+    ],
+    "C": [
+     11,
+     7,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     14,
+     4
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     3
+    ],
+    "C": [
+     13,
+     8,
+     6
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     10,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     8,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     8,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     2
+    ],
+    "C": [
+     14,
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     12,
+     7
+    ],
+    "H": [
+     11,
+     10,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     10
+    ],
+    "C": [
+     13,
+     12,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "5♦",
+   "why": "0 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     10,
+     6,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     14,
+     5,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     12,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     9,
+     8,
+     2
+    ],
+    "D": [
+     9,
+     8,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     11
+    ]
+   },
+   "hp": 14,
+   "sp": 14,
+   "correct": "5♥",
+   "why": "2 nøglekort uden trumfdamen: 5♥."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     13,
+     12,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     4
+    ],
+    "D": [
+     10,
+     9,
+     8
+    ],
+    "C": [
+     8,
+     6,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 12,
+   "correct": "5♥",
+   "why": "2 nøglekort uden trumfdamen: 5♥."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     7,
+     4
+    ],
+    "H": [
+     13,
+     9,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     7
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "5♥",
+   "why": "2 nøglekort uden trumfdamen: 5♥."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     14,
+     7,
+     6
+    ],
+    "H": [
+     13,
+     9,
+     8,
+     7,
+     5
+    ],
+    "D": [
+     13,
+     11,
+     10
+    ],
+    "C": [
+     11,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "5♥",
+   "why": "2 nøglekort uden trumfdamen: 5♥."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     10,
+     9
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     7,
+     4
+    ],
+    "D": [
+     12,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     8,
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "5♥",
+   "why": "2 nøglekort uden trumfdamen: 5♥."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     6,
+     4
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     7,
+     6
+    ],
+    "D": [
+     13,
+     11,
+     10
+    ],
+    "C": [
+     14,
+     11,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "5♥",
+   "why": "2 nøglekort uden trumfdamen: 5♥."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     12,
+     10
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     5,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     9,
+     6
+    ],
+    "C": [
+     14,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "5♠",
+   "why": "2 nøglekort og trumfdamen: 5♠."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     7,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     8
+    ],
+    "D": [
+     13,
+     11,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     6,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "5♠",
+   "why": "2 nøglekort og trumfdamen: 5♠."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     12,
+     7
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     10,
+     6
+    ],
+    "D": [
+     14,
+     5
+    ],
+    "C": [
+     13,
+     8,
+     3,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "5♠",
+   "why": "2 nøglekort og trumfdamen: 5♠."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     7,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     8,
+     3
+    ],
+    "C": [
+     11,
+     9
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "5♠",
+   "why": "2 nøglekort og trumfdamen: 5♠."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     14,
+     9,
+     3
+    ],
+    "H": [
+     12,
+     10,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     6,
+     3
+    ],
+    "C": [
+     14,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "5♠",
+   "why": "2 nøglekort og trumfdamen: 5♠."
+  },
+  {
+   "situation": "svar_4nt_1h",
+   "hand": {
+    "S": [
+     14,
+     10,
+     8
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     7
+    ],
+    "D": [
+     12,
+     10,
+     2
+    ],
+    "C": [
+     12,
+     7,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 14,
+   "correct": "5♠",
+   "why": "2 nøglekort og trumfdamen: 5♠."
+  },
+  {
+   "situation": "svar_dame_kl_1h",
+   "hand": {
+    "S": [
+     12,
+     11
+    ],
+    "H": [
+     11,
+     6,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     8
+    ],
+    "C": [
+     12,
+     7,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "5♥",
+   "why": "Du har ikke trumfdamen: billigste genmelding, 5♥."
+  },
+  {
+   "situation": "svar_dame_kl_1h",
+   "hand": {
+    "S": [
+     12,
+     11
+    ],
+    "H": [
+     10,
+     7,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     11
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "5♥",
+   "why": "Du har ikke trumfdamen: billigste genmelding, 5♥."
+  },
+  {
+   "situation": "svar_dame_kl_1h",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7
+    ],
+    "H": [
+     8,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     5
+    ],
+    "C": [
+     12,
+     10,
+     5,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "5♥",
+   "why": "Du har ikke trumfdamen: billigste genmelding, 5♥."
+  },
+  {
+   "situation": "svar_dame_kl_1h",
+   "hand": {
+    "S": [
+     6,
+     4
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     8,
+     4
+    ],
+    "D": [
+     12,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "6♣",
+   "why": "Trumfdamen og klør konge: billigste konge, 6♣."
+  },
+  {
+   "situation": "svar_dame_kl_1h",
+   "hand": {
+    "S": [
+     12,
+     11,
+     5
+    ],
+    "H": [
+     12,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     7,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     8
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "6♣",
+   "why": "Trumfdamen og klør konge: billigste konge, 6♣."
+  },
+  {
+   "situation": "svar_dame_kl_1h",
+   "hand": {
+    "S": [
+     9,
+     8,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     7,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     5
+    ],
+    "C": [
+     13,
+     9
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "6♣",
+   "why": "Trumfdamen og klør konge: billigste konge, 6♣."
+  },
+  {
+   "situation": "svar_dame_kl_1h",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     5
+    ],
+    "D": [
+     13,
+     5
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "6♦",
+   "why": "Trumfdamen og ruder konge: billigste konge, 6♦."
+  },
+  {
+   "situation": "svar_dame_kl_1h",
+   "hand": {
+    "S": [
+     11,
+     8,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     9
+    ],
+    "C": [
+     11,
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "6♦",
+   "why": "Trumfdamen og ruder konge: billigste konge, 6♦."
+  },
+  {
+   "situation": "svar_dame_kl_1h",
+   "hand": {
+    "S": [
+     8,
+     7,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     8,
+     4
+    ],
+    "C": [
+     14,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "6♦",
+   "why": "Trumfdamen og ruder konge: billigste konge, 6♦."
+  },
+  {
+   "situation": "svar_dame_kl_1h",
+   "hand": {
+    "S": [
+     12,
+     11
+    ],
+    "H": [
+     12,
+     11,
+     7,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     5
+    ],
+    "C": [
+     14,
+     9,
+     7,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "5NT",
+   "why": "Trumfdamen, men ingen konger uden for trumf: 5NT."
+  },
+  {
+   "situation": "svar_dame_kl_1h",
+   "hand": {
+    "S": [
+     14,
+     11
+    ],
+    "H": [
+     12,
+     11,
+     7,
+     4
+    ],
+    "D": [
+     11,
+     7,
+     5,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "5NT",
+   "why": "Trumfdamen, men ingen konger uden for trumf: 5NT."
+  },
+  {
+   "situation": "svar_dame_kl_1h",
+   "hand": {
+    "S": [
+     12,
+     3
+    ],
+    "H": [
+     12,
+     10,
+     9,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     4
+    ],
+    "C": [
+     12,
+     10,
+     6,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "5NT",
+   "why": "Trumfdamen, men ingen konger uden for trumf: 5NT."
+  },
+  {
+   "situation": "svar_dame_kl_1h",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10
+    ],
+    "H": [
+     12,
+     9,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     6
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     7
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "5♠",
+   "why": "Trumfdamen og spar konge: billigste konge, 5♠."
+  },
+  {
+   "situation": "svar_dame_kl_1h",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     12,
+     9,
+     6,
+     3
+    ],
+    "D": [
+     12,
+     5,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     4,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "5♠",
+   "why": "Trumfdamen og spar konge: billigste konge, 5♠."
+  },
+  {
+   "situation": "svar_dame_kl_1h",
+   "hand": {
+    "S": [
+     13,
+     7,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     4,
+     2
+    ],
+    "D": [
+     11,
+     10,
+     5,
+     4
+    ],
+    "C": [
+     13,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "5♠",
+   "why": "Trumfdamen og spar konge: billigste konge, 5♠."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     9,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     8
+    ],
+    "D": [
+     13,
+     10
+    ],
+    "C": [
+     14,
+     12,
+     9
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "5♣",
+   "why": "4 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     2
+    ],
+    "D": [
+     14,
+     13
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     3
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "5♣",
+   "why": "4 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     8,
+     3
+    ],
+    "H": [
+     14,
+     7
+    ],
+    "D": [
+     14,
+     12,
+     8,
+     5
+    ],
+    "C": [
+     10,
+     8
+    ]
+   },
+   "hp": 18,
+   "sp": 20,
+   "correct": "5♣",
+   "why": "4 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     10
+    ],
+    "D": [
+     14,
+     2
+    ],
+    "C": [
+     14,
+     9,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "5♣",
+   "why": "4 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     12,
+     11,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     13,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     6
+    ],
+    "C": [
+     14,
+     12,
+     11
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "correct": "5♣",
+   "why": "1 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10,
+     9,
+     6
+    ],
+    "H": [
+     13,
+     12,
+     7
+    ],
+    "D": [
+     4,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     12
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "5♣",
+   "why": "1 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     11
+    ],
+    "D": [
+     13,
+     11,
+     9,
+     3
+    ],
+    "C": [
+     8,
+     3
+    ]
+   },
+   "hp": 18,
+   "sp": 20,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     7
+    ],
+    "D": [
+     14,
+     11
+    ],
+    "C": [
+     13,
+     9,
+     7
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     6,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     9
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     2
+    ],
+    "C": [
+     13,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     10,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     4
+    ],
+    "C": [
+     12,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     12,
+     5
+    ],
+    "C": [
+     14,
+     10,
+     4,
+     3
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     6,
+     4
+    ],
+    "H": [
+     12,
+     9,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     4
+    ],
+    "C": [
+     14,
+     8
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     7,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     9,
+     7
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     14,
+     9
+    ]
+   },
+   "hp": 22,
+   "sp": 18,
+   "correct": "5♥",
+   "why": "5 nøglekort uden trumfdamen: 5♥ (2 eller 5 uden dame)."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     9,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     12
+    ],
+    "D": [
+     14,
+     5
+    ],
+    "C": [
+     14,
+     11,
+     5
+    ]
+   },
+   "hp": 23,
+   "sp": 19,
+   "correct": "5♥",
+   "why": "5 nøglekort uden trumfdamen: 5♥ (2 eller 5 uden dame)."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     10,
+     8
+    ],
+    "H": [
+     14,
+     9,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     2
+    ],
+    "C": [
+     14,
+     9
+    ]
+   },
+   "hp": 20,
+   "sp": 17,
+   "correct": "5♥",
+   "why": "5 nøglekort uden trumfdamen: 5♥ (2 eller 5 uden dame)."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     8,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     7
+    ],
+    "D": [
+     14,
+     12,
+     3
+    ],
+    "C": [
+     14,
+     11
+    ]
+   },
+   "hp": 23,
+   "sp": 17,
+   "correct": "5♥",
+   "why": "5 nøglekort uden trumfdamen: 5♥ (2 eller 5 uden dame)."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     13
+    ],
+    "D": [
+     14,
+     10,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     9
+    ]
+   },
+   "hp": 25,
+   "sp": 17,
+   "correct": "5♥",
+   "why": "5 nøglekort uden trumfdamen: 5♥ (2 eller 5 uden dame)."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     9
+    ],
+    "D": [
+     14,
+     6,
+     4
+    ],
+    "C": [
+     14,
+     6,
+     2
+    ]
+   },
+   "hp": 19,
+   "sp": 15,
+   "correct": "5♥",
+   "why": "5 nøglekort uden trumfdamen: 5♥ (2 eller 5 uden dame)."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     6
+    ],
+    "C": [
+     13,
+     8
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "5♠",
+   "why": "2 nøglekort og trumfdamen: 5♠."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     9,
+     3
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     6
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
+   "hp": 23,
+   "sp": 19,
+   "correct": "5♠",
+   "why": "5 nøglekort og trumfdamen: 5♠ (2 eller 5 med dame)."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     9,
+     4
+    ],
+    "H": [
+     14,
+     9
+    ],
+    "D": [
+     14,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     4,
+     3
+    ]
+   },
+   "hp": 23,
+   "sp": 16,
+   "correct": "5♠",
+   "why": "5 nøglekort og trumfdamen: 5♠ (2 eller 5 med dame)."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     7,
+     6
+    ],
+    "H": [
+     13,
+     12,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     9
+    ],
+    "C": [
+     11,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "5♠",
+   "why": "2 nøglekort og trumfdamen: 5♠."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11,
+     3
+    ],
+    "H": [
+     14,
+     7
+    ],
+    "D": [
+     14,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     7,
+     2
+    ]
+   },
+   "hp": 24,
+   "sp": 17,
+   "correct": "5♠",
+   "why": "5 nøglekort og trumfdamen: 5♠ (2 eller 5 med dame)."
+  },
+  {
+   "situation": "aab_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     4
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 21,
+   "sp": 17,
+   "correct": "5♠",
+   "why": "5 nøglekort og trumfdamen: 5♠ (2 eller 5 med dame)."
+  },
+  {
+   "situation": "aab_dame_kl_1s",
+   "hand": {
+    "S": [
+     12,
+     11,
+     8,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     11
+    ],
+    "D": [
+     12,
+     4
+    ],
+    "C": [
+     13,
+     11
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "5♥",
+   "why": "Trumfdamen og hjerter konge: billigste konge, 5♥."
+  },
+  {
+   "situation": "aab_dame_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     8,
+     6
+    ],
+    "H": [
+     13,
+     4
+    ],
+    "D": [
+     13,
+     11,
+     9
+    ],
+    "C": [
+     13,
+     12,
+     4
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "correct": "5♥",
+   "why": "Trumfdamen og hjerter konge: billigste konge, 5♥."
+  },
+  {
+   "situation": "aab_dame_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     7,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     5,
+     3
+    ],
+    "D": [
+     12,
+     3
+    ],
+    "C": [
+     13,
+     11
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "5♥",
+   "why": "Trumfdamen og hjerter konge: billigste konge, 5♥."
+  },
+  {
+   "situation": "aab_dame_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     7,
+     6
+    ],
+    "D": [
+     13,
+     12,
+     11
+    ],
+    "C": [
+     13,
+     12
+    ]
+   },
+   "hp": 18,
+   "sp": 20,
+   "correct": "6♣",
+   "why": "Trumfdamen og klør konge: billigste konge, 6♣."
+  },
+  {
+   "situation": "aab_dame_kl_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     6,
+     4
+    ],
+    "H": [
+     11,
+     2
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     8
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♣",
+   "why": "Trumfdamen og klør konge: billigste konge, 6♣."
+  },
+  {
+   "situation": "aab_dame_kl_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     8,
+     3
+    ],
+    "H": [
+     12,
+     7
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     13,
+     11,
+     6,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "6♣",
+   "why": "Trumfdamen og klør konge: billigste konge, 6♣."
+  },
+  {
+   "situation": "aab_dame_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11,
+     8,
+     4
+    ],
+    "H": [
+     9,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     6
+    ],
+    "C": [
+     14,
+     2
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "6♦",
+   "why": "Trumfdamen og ruder konge: billigste konge, 6♦."
+  },
+  {
+   "situation": "aab_dame_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     9,
+     8
+    ],
+    "H": [
+     11,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     8
+    ],
+    "C": [
+     12,
+     8
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♦",
+   "why": "Trumfdamen og ruder konge: billigste konge, 6♦."
+  },
+  {
+   "situation": "aab_dame_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     6
+    ],
+    "D": [
+     13,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     5
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "6♦",
+   "why": "Trumfdamen og ruder konge: billigste konge, 6♦."
+  },
+  {
+   "situation": "aab_dame_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     7,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     3
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     10,
+     8,
+     5
+    ]
+   },
+   "hp": 19,
+   "sp": 21,
+   "correct": "5NT",
+   "why": "Trumfdamen, men ingen konger uden for trumf: 5NT."
+  },
+  {
+   "situation": "aab_dame_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     10,
+     5
+    ],
+    "H": [
+     10,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     5
+    ],
+    "C": [
+     14,
+     10
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "5NT",
+   "why": "Trumfdamen, men ingen konger uden for trumf: 5NT."
+  },
+  {
+   "situation": "aab_dame_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     4,
+     3
+    ],
+    "D": [
+     14,
+     10
+    ],
+    "C": [
+     14,
+     11,
+     10
+    ]
+   },
+   "hp": 18,
+   "sp": 20,
+   "correct": "5NT",
+   "why": "Trumfdamen, men ingen konger uden for trumf: 5NT."
+  },
+  {
+   "situation": "aab_dame_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     10,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     5
+    ],
+    "D": [
+     14,
+     5
+    ],
+    "C": [
+     8,
+     2
+    ]
+   },
+   "hp": 19,
+   "sp": 21,
+   "correct": "5♠",
+   "why": "Du har ikke trumfdamen: billigste genmelding, 5♠."
+  },
+  {
+   "situation": "aab_dame_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     10,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     8
+    ],
+    "C": [
+     13,
+     8
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "5♠",
+   "why": "Du har ikke trumfdamen: billigste genmelding, 5♠."
+  },
+  {
+   "situation": "aab_dame_kl_1s",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     7
+    ],
+    "D": [
+     14,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     3
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "correct": "5♠",
+   "why": "Du har ikke trumfdamen: billigste genmelding, 5♠."
+  },
+  {
+   "situation": "aab_dame_ru_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     7,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     8
+    ],
+    "D": [
+     11,
+     9
+    ],
+    "C": [
+     14,
+     10
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "6♥",
+   "why": "Trumfdamen og hjerter konge: billigste konge, 6♥."
+  },
+  {
+   "situation": "aab_dame_ru_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     13,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     5
+    ],
+    "C": [
+     6,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♥",
+   "why": "Trumfdamen og hjerter konge: billigste konge, 6♥."
+  },
+  {
+   "situation": "aab_dame_ru_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     10,
+     6
+    ],
+    "H": [
+     14,
+     13
+    ],
+    "D": [
+     5,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     8,
+     2
+    ]
+   },
+   "hp": 19,
+   "sp": 21,
+   "correct": "6♥",
+   "why": "Trumfdamen og hjerter konge: billigste konge, 6♥."
+  },
+  {
+   "situation": "aab_dame_ru_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     8,
+     6
+    ],
+    "D": [
+     9,
+     2
+    ],
+    "C": [
+     13,
+     10
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "6♣",
+   "why": "Trumfdamen og klør konge: billigste konge, 6♣."
+  },
+  {
+   "situation": "aab_dame_ru_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     12,
+     3
+    ],
+    "D": [
+     13,
+     10
+    ],
+    "C": [
+     13,
+     7,
+     3
+    ]
+   },
+   "hp": 21,
+   "sp": 22,
+   "correct": "6♣",
+   "why": "Trumfdamen og klør konge: billigste konge, 6♣."
+  },
+  {
+   "situation": "aab_dame_ru_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     10,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     11,
+     10
+    ],
+    "C": [
+     13,
+     12,
+     2
+    ]
+   },
+   "hp": 19,
+   "sp": 21,
+   "correct": "6♣",
+   "why": "Trumfdamen og klør konge: billigste konge, 6♣."
+  },
+  {
+   "situation": "aab_dame_ru_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     10,
+     9
+    ],
+    "H": [
+     4,
+     3
+    ],
+    "D": [
+     13,
+     9
+    ],
+    "C": [
+     14,
+     10,
+     6,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♦",
+   "why": "Trumfdamen og ruder konge: billigste konge, 6♦."
+  },
+  {
+   "situation": "aab_dame_ru_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     8,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     3
+    ],
+    "C": [
+     14,
+     8
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "6♦",
+   "why": "Trumfdamen og ruder konge: billigste konge, 6♦."
+  },
+  {
+   "situation": "aab_dame_ru_1s",
+   "hand": {
+    "S": [
+     12,
+     9,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     6,
+     5
+    ],
+    "C": [
+     14,
+     7
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "6♦",
+   "why": "Trumfdamen og ruder konge: billigste konge, 6♦."
+  },
+  {
+   "situation": "aab_dame_ru_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     8,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     8
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "5NT",
+   "why": "Trumfdamen, men ingen konger uden for trumf: 5NT."
+  },
+  {
+   "situation": "aab_dame_ru_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     8,
+     7
+    ],
+    "H": [
+     12,
+     10
+    ],
+    "D": [
+     14,
+     11,
+     9,
+     6
+    ],
+    "C": [
+     14,
+     5
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "5NT",
+   "why": "Trumfdamen, men ingen konger uden for trumf: 5NT."
+  },
+  {
+   "situation": "aab_dame_ru_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     10
+    ],
+    "D": [
+     12,
+     3,
+     2
+    ],
+    "C": [
+     6,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "5NT",
+   "why": "Trumfdamen, men ingen konger uden for trumf: 5NT."
+  },
+  {
+   "situation": "aab_dame_ru_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     8,
+     7,
+     4
+    ],
+    "H": [
+     12,
+     11
+    ],
+    "D": [
+     14,
+     13
+    ],
+    "C": [
+     12,
+     9,
+     8
+    ]
+   },
+   "hp": 19,
+   "sp": 21,
+   "correct": "5♠",
+   "why": "Du har ikke trumfdamen: billigste genmelding, 5♠."
+  },
+  {
+   "situation": "aab_dame_ru_1s",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     8,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     3
+    ],
+    "D": [
+     14,
+     9
+    ],
+    "C": [
+     14,
+     6,
+     3
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "5♠",
+   "why": "Du har ikke trumfdamen: billigste genmelding, 5♠."
+  },
+  {
+   "situation": "aab_dame_ru_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     9,
+     4
+    ],
+    "H": [
+     14,
+     5
+    ],
+    "D": [
+     13,
+     10,
+     9
+    ],
+    "C": [
+     13,
+     8,
+     7
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "correct": "5♠",
+   "why": "Du har ikke trumfdamen: billigste genmelding, 5♠."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     8,
+     3
+    ],
+    "H": [
+     13,
+     6
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     9,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "5♣",
+   "why": "1 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     11,
+     8,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     3
+    ],
+    "D": [
+     13,
+     9,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "5♣",
+   "why": "1 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     12,
+     9,
+     6,
+     3
+    ],
+    "H": [
+     10,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     5
+    ],
+    "C": [
+     14,
+     11,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "5♣",
+   "why": "1 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10,
+     4
+    ],
+    "H": [
+     5,
+     4,
+     2
+    ],
+    "D": [
+     12,
+     11
+    ],
+    "C": [
+     13,
+     12,
+     7,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "5♣",
+   "why": "1 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     12,
+     10,
+     9,
+     5,
+     3
+    ],
+    "H": [
+     12,
+     9,
+     8
+    ],
+    "D": [
+     13,
+     6
+    ],
+    "C": [
+     14,
+     12,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "5♣",
+   "why": "1 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     8
+    ],
+    "H": [
+     6,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     8
+    ],
+    "C": [
+     13,
+     10,
+     5,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "5♣",
+   "why": "1 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     6,
+     4
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     11,
+     10,
+     4
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     13,
+     11,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     8
+    ],
+    "D": [
+     14,
+     5,
+     3
+    ],
+    "C": [
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     7,
+     4
+    ],
+    "H": [
+     7,
+     4
+    ],
+    "D": [
+     5,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     8
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     6
+    ],
+    "H": [
+     11,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     9,
+     7
+    ],
+    "C": [
+     10,
+     9,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 12,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     7,
+     5
+    ],
+    "H": [
+     8,
+     3
+    ],
+    "D": [
+     14,
+     8,
+     7
+    ],
+    "C": [
+     14,
+     6,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "5♦",
+   "why": "3 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     12,
+     10,
+     9,
+     5,
+     2
+    ],
+    "H": [
+     12,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     11
+    ],
+    "C": [
+     12,
+     8,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "5♦",
+   "why": "0 nøglekort: 5♦ viser 0 eller 3."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     9,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     13,
+     10,
+     3
+    ],
+    "D": [
+     13,
+     10,
+     8
+    ],
+    "C": [
+     14,
+     11
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♥",
+   "why": "2 nøglekort uden trumfdamen: 5♥."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     6,
+     3
+    ],
+    "H": [
+     7,
+     2
+    ],
+    "D": [
+     11,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     7,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "5♥",
+   "why": "2 nøglekort uden trumfdamen: 5♥."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     13,
+     9,
+     8,
+     7,
+     3
+    ],
+    "H": [
+     11,
+     10,
+     5
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     14,
+     12,
+     9
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♥",
+   "why": "2 nøglekort uden trumfdamen: 5♥."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     9,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     7,
+     5
+    ],
+    "D": [
+     13,
+     10,
+     3
+    ],
+    "C": [
+     11,
+     8,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 12,
+   "correct": "5♥",
+   "why": "2 nøglekort uden trumfdamen: 5♥."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     10,
+     8,
+     7,
+     6
+    ],
+    "H": [
+     13,
+     7
+    ],
+    "D": [
+     12,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     5,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "5♥",
+   "why": "2 nøglekort uden trumfdamen: 5♥."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     13,
+     9,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     8,
+     2
+    ],
+    "D": [
+     12,
+     6
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "5♥",
+   "why": "2 nøglekort uden trumfdamen: 5♥."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10,
+     7,
+     4
+    ],
+    "H": [
+     9,
+     6
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     2
+    ],
+    "C": [
+     14,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "5♠",
+   "why": "2 nøglekort og trumfdamen: 5♠."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     12,
+     10,
+     9,
+     4
+    ],
+    "H": [
+     14,
+     7
+    ],
+    "D": [
+     14,
+     10,
+     8
+    ],
+    "C": [
+     13,
+     10,
+     3,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "5♠",
+   "why": "2 nøglekort og trumfdamen: 5♠."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     7
+    ],
+    "H": [
+     14,
+     12,
+     10
+    ],
+    "D": [
+     12,
+     6,
+     3
+    ],
+    "C": [
+     13,
+     3,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 17,
+   "correct": "5♠",
+   "why": "2 nøglekort og trumfdamen: 5♠."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     6
+    ],
+    "H": [
+     11,
+     7
+    ],
+    "D": [
+     13,
+     11,
+     9,
+     5
+    ],
+    "C": [
+     9,
+     7,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "5♠",
+   "why": "2 nøglekort og trumfdamen: 5♠."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8,
+     7,
+     5
+    ],
+    "H": [
+     13,
+     10
+    ],
+    "D": [
+     14,
+     10
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     7
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "5♠",
+   "why": "2 nøglekort og trumfdamen: 5♠."
+  },
+  {
+   "situation": "svar_4nt_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     5,
+     4
+    ],
+    "D": [
+     12,
+     9
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "5♠",
+   "why": "2 nøglekort og trumfdamen: 5♠."
+  },
+  {
+   "situation": "svar_dame_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     9,
+     5
+    ],
+    "D": [
+     9,
+     5
+    ],
+    "C": [
+     13,
+     11,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "5♥",
+   "why": "Trumfdamen og hjerter konge: billigste konge, 5♥."
+  },
+  {
+   "situation": "svar_dame_kl_1s",
+   "hand": {
+    "S": [
+     12,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     3
+    ],
+    "D": [
+     12,
+     10
+    ],
+    "C": [
+     14,
+     10,
+     6,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "5♥",
+   "why": "Trumfdamen og hjerter konge: billigste konge, 5♥."
+  },
+  {
+   "situation": "svar_dame_kl_1s",
+   "hand": {
+    "S": [
+     12,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     13,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     13
+    ],
+    "C": [
+     13,
+     8,
+     5,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♥",
+   "why": "Trumfdamen og hjerter konge: billigste konge, 5♥."
+  },
+  {
+   "situation": "svar_dame_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     9
+    ],
+    "H": [
+     10,
+     9,
+     3
+    ],
+    "D": [
+     12,
+     8
+    ],
+    "C": [
+     13,
+     12,
+     4,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "6♣",
+   "why": "Trumfdamen og klør konge: billigste konge, 6♣."
+  },
+  {
+   "situation": "svar_dame_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     9,
+     2
+    ],
+    "H": [
+     9,
+     8
+    ],
+    "D": [
+     13,
+     7
+    ],
+    "C": [
+     13,
+     10,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "6♣",
+   "why": "Trumfdamen og klør konge: billigste konge, 6♣."
+  },
+  {
+   "situation": "svar_dame_kl_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     3
+    ],
+    "H": [
+     11,
+     7
+    ],
+    "D": [
+     7,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "6♣",
+   "why": "Trumfdamen og klør konge: billigste konge, 6♣."
+  },
+  {
+   "situation": "svar_dame_kl_1s",
+   "hand": {
+    "S": [
+     12,
+     10,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     7
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     4
+    ],
+    "C": [
+     3,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "6♦",
+   "why": "Trumfdamen og ruder konge: billigste konge, 6♦."
+  },
+  {
+   "situation": "svar_dame_kl_1s",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9,
+     5,
+     4
+    ],
+    "H": [
+     11,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     4
+    ],
+    "C": [
+     14,
+     11,
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "6♦",
+   "why": "Trumfdamen og ruder konge: billigste konge, 6♦."
+  },
+  {
+   "situation": "svar_dame_kl_1s",
+   "hand": {
+    "S": [
+     12,
+     8,
+     7,
+     6
+    ],
+    "H": [
+     12,
+     7
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "6♦",
+   "why": "Trumfdamen og ruder konge: billigste konge, 6♦."
+  },
+  {
+   "situation": "svar_dame_kl_1s",
+   "hand": {
+    "S": [
+     12,
+     11,
+     8,
+     5
+    ],
+    "H": [
+     12,
+     10
+    ],
+    "D": [
+     14,
+     12,
+     11
+    ],
+    "C": [
+     10,
+     9,
+     4,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "5NT",
+   "why": "Trumfdamen, men ingen konger uden for trumf: 5NT."
+  },
+  {
+   "situation": "svar_dame_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     6,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     9
+    ],
+    "D": [
+     5,
+     4
+    ],
+    "C": [
+     12,
+     11,
+     6,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "5NT",
+   "why": "Trumfdamen, men ingen konger uden for trumf: 5NT."
+  },
+  {
+   "situation": "svar_dame_kl_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8,
+     3
+    ],
+    "H": [
+     12,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     9
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "5NT",
+   "why": "Trumfdamen, men ingen konger uden for trumf: 5NT."
+  },
+  {
+   "situation": "svar_dame_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     11,
+     7,
+     2
+    ],
+    "H": [
+     11,
+     5,
+     3
+    ],
+    "D": [
+     12,
+     10,
+     7,
+     6
+    ],
+    "C": [
+     13,
+     11
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "5♠",
+   "why": "Du har ikke trumfdamen: billigste genmelding, 5♠."
+  },
+  {
+   "situation": "svar_dame_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     9,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     8,
+     2
+    ],
+    "D": [
+     13,
+     11
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "5♠",
+   "why": "Du har ikke trumfdamen: billigste genmelding, 5♠."
+  },
+  {
+   "situation": "svar_dame_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     10,
+     7
+    ],
+    "H": [
+     14,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     8
+    ],
+    "C": [
+     11,
+     5,
+     4
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "5♠",
+   "why": "Du har ikke trumfdamen: billigste genmelding, 5♠."
+  },
+  {
+   "situation": "svar_dame_ru_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     5
+    ],
+    "D": [
+     14,
+     3
+    ],
+    "C": [
+     10,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♥",
+   "why": "Trumfdamen og hjerter konge: billigste konge, 6♥."
+  },
+  {
+   "situation": "svar_dame_ru_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     6,
+     2
+    ],
+    "H": [
+     13,
+     8,
+     5
+    ],
+    "D": [
+     11,
+     4
+    ],
+    "C": [
+     14,
+     5,
+     3
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "6♥",
+   "why": "Trumfdamen og hjerter konge: billigste konge, 6♥."
+  },
+  {
+   "situation": "svar_dame_ru_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     9
+    ],
+    "D": [
+     10,
+     8,
+     7,
+     5
+    ],
+    "C": [
+     14,
+     11
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "6♥",
+   "why": "Trumfdamen og hjerter konge: billigste konge, 6♥."
+  },
+  {
+   "situation": "svar_dame_ru_1s",
+   "hand": {
+    "S": [
+     12,
+     11,
+     8,
+     7
+    ],
+    "H": [
+     12,
+     10,
+     5
+    ],
+    "D": [
+     13,
+     11,
+     9,
+     3
+    ],
+    "C": [
+     13,
+     12
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "6♣",
+   "why": "Trumfdamen og klør konge: billigste konge, 6♣."
+  },
+  {
+   "situation": "svar_dame_ru_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     3
+    ],
+    "H": [
+     14,
+     10,
+     2
+    ],
+    "D": [
+     10,
+     7,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     10
+    ]
+   },
+   "hp": 16,
+   "sp": 16,
+   "correct": "6♣",
+   "why": "Trumfdamen og klør konge: billigste konge, 6♣."
+  },
+  {
+   "situation": "svar_dame_ru_1s",
+   "hand": {
+    "S": [
+     12,
+     10,
+     8,
+     6,
+     4
+    ],
+    "H": [
+     13,
+     11
+    ],
+    "D": [
+     13,
+     9,
+     7
+    ],
+    "C": [
+     13,
+     11,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "6♣",
+   "why": "Trumfdamen og klør konge: billigste konge, 6♣."
+  },
+  {
+   "situation": "svar_dame_ru_1s",
+   "hand": {
+    "S": [
+     12,
+     8,
+     6,
+     3
+    ],
+    "H": [
+     12,
+     7
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     4
+    ],
+    "C": [
+     12,
+     11,
+     9
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "6♦",
+   "why": "Trumfdamen og ruder konge: billigste konge, 6♦."
+  },
+  {
+   "situation": "svar_dame_ru_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     5,
+     2
+    ],
+    "H": [
+     11,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     2
+    ],
+    "C": [
+     14,
+     8
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "6♦",
+   "why": "Trumfdamen og ruder konge: billigste konge, 6♦."
+  },
+  {
+   "situation": "svar_dame_ru_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     9,
+     4
+    ],
+    "D": [
+     13,
+     3,
+     2
+    ],
+    "C": [
+     9,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "6♦",
+   "why": "Trumfdamen og ruder konge: billigste konge, 6♦."
+  },
+  {
+   "situation": "svar_dame_ru_1s",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     7
+    ],
+    "H": [
+     14,
+     10
+    ],
+    "D": [
+     14,
+     11,
+     9,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     10
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "5NT",
+   "why": "Trumfdamen, men ingen konger uden for trumf: 5NT."
+  },
+  {
+   "situation": "svar_dame_ru_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     10
+    ],
+    "D": [
+     14,
+     4
+    ],
+    "C": [
+     8,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "5NT",
+   "why": "Trumfdamen, men ingen konger uden for trumf: 5NT."
+  },
+  {
+   "situation": "svar_dame_ru_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     9,
+     4
+    ],
+    "H": [
+     10,
+     7
+    ],
+    "D": [
+     14,
+     7,
+     6,
+     5
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "5NT",
+   "why": "Trumfdamen, men ingen konger uden for trumf: 5NT."
+  },
+  {
+   "situation": "svar_dame_ru_1s",
+   "hand": {
+    "S": [
+     13,
+     8,
+     6,
+     3
+    ],
+    "H": [
+     9,
+     3
+    ],
+    "D": [
+     14,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     8,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "5♠",
+   "why": "Du har ikke trumfdamen: billigste genmelding, 5♠."
+  },
+  {
+   "situation": "svar_dame_ru_1s",
+   "hand": {
+    "S": [
+     14,
+     11,
+     9,
+     8,
+     2
+    ],
+    "H": [
+     14,
+     9
+    ],
+    "D": [
+     14,
+     9
+    ],
+    "C": [
+     12,
+     10,
+     7,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "5♠",
+   "why": "Du har ikke trumfdamen: billigste genmelding, 5♠."
+  },
+  {
+   "situation": "svar_dame_ru_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     9,
+     7
+    ],
+    "H": [
+     7,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     7
+    ],
+    "C": [
+     13,
+     10,
+     4
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "5♠",
+   "why": "Du har ikke trumfdamen: billigste genmelding, 5♠."
+  },
+  {
+   "situation": "aab_konge_kl_1h",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     12,
+     11,
+     9,
+     8,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     5
+    ],
+    "C": [
+     13,
+     11,
+     5
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "6♣",
+   "why": "Konge i klør: 6♣ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_kl_1h",
+   "hand": {
+    "S": [
+     13,
+     11,
+     8,
+     4
+    ],
+    "H": [
+     14,
+     9,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     2
+    ],
+    "C": [
+     13,
+     12
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♣",
+   "why": "Konge i klør: 6♣ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_kl_1h",
+   "hand": {
+    "S": [
+     14,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     9,
+     8,
+     3
+    ],
+    "D": [
+     14,
+     4
+    ],
+    "C": [
+     13,
+     10,
+     3
+    ]
+   },
+   "hp": 18,
+   "sp": 20,
+   "correct": "6♣",
+   "why": "Konge i klør: 6♣ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_kl_1h",
+   "hand": {
+    "S": [
+     13,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     8,
+     6,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     10
+    ],
+    "C": [
+     11,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♦",
+   "why": "Konge i ruder: 6♦ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_kl_1h",
+   "hand": {
+    "S": [
+     14,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     8,
+     6,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     5
+    ],
+    "C": [
+     5,
+     2
+    ]
+   },
+   "hp": 18,
+   "sp": 20,
+   "correct": "6♦",
+   "why": "Konge i ruder: 6♦ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_kl_1h",
+   "hand": {
+    "S": [
+     14,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     7
+    ],
+    "C": [
+     11,
+     3
+    ]
+   },
+   "hp": 19,
+   "sp": 21,
+   "correct": "6♦",
+   "why": "Konge i ruder: 6♦ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_kl_1h",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     11
+    ],
+    "C": [
+     14,
+     6
+    ]
+   },
+   "hp": 18,
+   "sp": 20,
+   "correct": "6♥",
+   "why": "Ingen konger uden for trumf: 6♥."
+  },
+  {
+   "situation": "aab_konge_kl_1h",
+   "hand": {
+    "S": [
+     14,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     8,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     9
+    ],
+    "C": [
+     11,
+     4,
+     3
+    ]
+   },
+   "hp": 19,
+   "sp": 20,
+   "correct": "6♥",
+   "why": "Ingen konger uden for trumf: 6♥."
+  },
+  {
+   "situation": "aab_konge_kl_1h",
+   "hand": {
+    "S": [
+     11,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     9,
+     6
+    ],
+    "D": [
+     14,
+     9
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     5
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "6♥",
+   "why": "Ingen konger uden for trumf: 6♥."
+  },
+  {
+   "situation": "aab_konge_sp_1h",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     9,
+     6
+    ],
+    "D": [
+     12,
+     3
+    ],
+    "C": [
+     13,
+     7
+    ]
+   },
+   "hp": 19,
+   "sp": 21,
+   "correct": "6♣",
+   "why": "Konge i klør: 6♣ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_sp_1h",
+   "hand": {
+    "S": [
+     14,
+     9
+    ],
+    "H": [
+     12,
+     11,
+     9,
+     6,
+     5
+    ],
+    "D": [
+     14,
+     10
+    ],
+    "C": [
+     13,
+     12,
+     6,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♣",
+   "why": "Konge i klør: 6♣ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_sp_1h",
+   "hand": {
+    "S": [
+     13,
+     11
+    ],
+    "H": [
+     13,
+     12,
+     7,
+     5,
+     2
+    ],
+    "D": [
+     8,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     9
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "6♣",
+   "why": "Konge i klør: 6♣ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_sp_1h",
+   "hand": {
+    "S": [
+     14,
+     7
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     6,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     8
+    ],
+    "C": [
+     11,
+     8
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♦",
+   "why": "Konge i ruder: 6♦ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_sp_1h",
+   "hand": {
+    "S": [
+     12,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10,
+     8
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     11,
+     7,
+     3
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "6♦",
+   "why": "Konge i ruder: 6♦ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_sp_1h",
+   "hand": {
+    "S": [
+     12,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "6♦",
+   "why": "Konge i ruder: 6♦ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_sp_1h",
+   "hand": {
+    "S": [
+     11,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     8
+    ],
+    "D": [
+     12,
+     11,
+     6,
+     2
+    ],
+    "C": [
+     12,
+     10
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♥",
+   "why": "Ingen konger uden for trumf: 6♥."
+  },
+  {
+   "situation": "aab_konge_sp_1h",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     7,
+     5,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     3
+    ],
+    "C": [
+     12,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♥",
+   "why": "Ingen konger uden for trumf: 6♥."
+  },
+  {
+   "situation": "aab_konge_sp_1h",
+   "hand": {
+    "S": [
+     12,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     7,
+     5,
+     2
+    ],
+    "D": [
+     12,
+     4
+    ],
+    "C": [
+     12,
+     11,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♥",
+   "why": "Ingen konger uden for trumf: 6♥."
+  },
+  {
+   "situation": "aab_konge_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     10,
+     9,
+     7
+    ],
+    "H": [
+     14,
+     5
+    ],
+    "D": [
+     14,
+     3
+    ],
+    "C": [
+     13,
+     8,
+     4
+    ]
+   },
+   "hp": 19,
+   "sp": 21,
+   "correct": "6♣",
+   "why": "Konge i klør: 6♣ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     10,
+     7
+    ],
+    "H": [
+     14,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     7
+    ],
+    "C": [
+     13,
+     11,
+     5
+    ]
+   },
+   "hp": 20,
+   "sp": 21,
+   "correct": "6♣",
+   "why": "Konge i klør: 6♣ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     13,
+     10
+    ],
+    "D": [
+     13,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     6,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♣",
+   "why": "Konge i klør: 6♣ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_kl_1s",
+   "hand": {
+    "S": [
+     13,
+     5,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     10
+    ],
+    "D": [
+     14,
+     13,
+     11
+    ],
+    "C": [
+     14,
+     9,
+     5
+    ]
+   },
+   "hp": 19,
+   "sp": 20,
+   "correct": "6♦",
+   "why": "Konge i ruder: 6♦ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     13,
+     11,
+     8
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     11,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♦",
+   "why": "Konge i ruder: 6♦ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     8,
+     4
+    ],
+    "C": [
+     14,
+     6
+    ]
+   },
+   "hp": 19,
+   "sp": 20,
+   "correct": "6♦",
+   "why": "Konge i ruder: 6♦ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     5
+    ],
+    "D": [
+     9,
+     7,
+     4
+    ],
+    "C": [
+     14,
+     9
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "correct": "6♥",
+   "why": "Konge i hjerter: 6♥ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     2
+    ],
+    "D": [
+     7,
+     2
+    ],
+    "C": [
+     14,
+     5
+    ]
+   },
+   "hp": 18,
+   "sp": 20,
+   "correct": "6♥",
+   "why": "Konge i hjerter: 6♥ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11,
+     10
+    ],
+    "H": [
+     13,
+     4
+    ],
+    "D": [
+     14,
+     10
+    ],
+    "C": [
+     14,
+     8,
+     7,
+     6
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "6♥",
+   "why": "Konge i hjerter: 6♥ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     6
+    ],
+    "D": [
+     11,
+     2
+    ],
+    "C": [
+     14,
+     6
+    ]
+   },
+   "hp": 18,
+   "sp": 20,
+   "correct": "6♠",
+   "why": "Ingen konger uden for trumf: 6♠."
+  },
+  {
+   "situation": "aab_konge_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     5,
+     2
+    ],
+    "H": [
+     12,
+     8
+    ],
+    "D": [
+     14,
+     3
+    ],
+    "C": [
+     14,
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 19,
+   "sp": 21,
+   "correct": "6♠",
+   "why": "Ingen konger uden for trumf: 6♠."
+  },
+  {
+   "situation": "aab_konge_kl_1s",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     10,
+     7,
+     4
+    ],
+    "H": [
+     14,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     7
+    ],
+    "C": [
+     12,
+     8
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "6♠",
+   "why": "Ingen konger uden for trumf: 6♠."
+  },
+  {
+   "situation": "aab_konge_sp_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     10,
+     6
+    ],
+    "H": [
+     13,
+     8
+    ],
+    "D": [
+     14,
+     7,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     8
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "6♣",
+   "why": "Konge i klør: 6♣ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_sp_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     10,
+     4
+    ],
+    "H": [
+     14,
+     3
+    ],
+    "D": [
+     6,
+     5
+    ],
+    "C": [
+     13,
+     12,
+     5,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♣",
+   "why": "Konge i klør: 6♣ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_sp_1s",
+   "hand": {
+    "S": [
+     12,
+     8,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     12
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     7
+    ],
+    "C": [
+     13,
+     12
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "6♣",
+   "why": "Konge i klør: 6♣ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_sp_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     9,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     12
+    ],
+    "D": [
+     13,
+     8
+    ],
+    "C": [
+     11,
+     8
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "6♦",
+   "why": "Konge i ruder: 6♦ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_sp_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     4,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     2
+    ],
+    "C": [
+     12,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♦",
+   "why": "Konge i ruder: 6♦ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_sp_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     7,
+     3
+    ],
+    "H": [
+     11,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     9
+    ],
+    "C": [
+     11,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♦",
+   "why": "Konge i ruder: 6♦ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_sp_1s",
+   "hand": {
+    "S": [
+     12,
+     9,
+     8,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     7
+    ],
+    "D": [
+     14,
+     10
+    ],
+    "C": [
+     12,
+     11
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♥",
+   "why": "Konge i hjerter: 6♥ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_sp_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     8,
+     6
+    ],
+    "H": [
+     13,
+     12
+    ],
+    "D": [
+     11,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     7,
+     5
+    ]
+   },
+   "hp": 18,
+   "sp": 20,
+   "correct": "6♥",
+   "why": "Konge i hjerter: 6♥ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_sp_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     6,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     7
+    ],
+    "D": [
+     12,
+     3
+    ],
+    "C": [
+     12,
+     8
+    ]
+   },
+   "hp": 18,
+   "sp": 20,
+   "correct": "6♥",
+   "why": "Konge i hjerter: 6♥ – billigste konge først."
+  },
+  {
+   "situation": "aab_konge_sp_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     8,
+     7,
+     6
+    ],
+    "H": [
+     12,
+     11,
+     9
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     10,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♠",
+   "why": "Ingen konger uden for trumf: 6♠."
+  },
+  {
+   "situation": "aab_konge_sp_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     11
+    ],
+    "D": [
+     12,
+     11,
+     7,
+     3
+    ],
+    "C": [
+     12,
+     5
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "6♠",
+   "why": "Ingen konger uden for trumf: 6♠."
+  },
+  {
+   "situation": "aab_konge_sp_1s",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     12,
+     5
+    ],
+    "D": [
+     14,
+     6
+    ],
+    "C": [
+     12,
+     11,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "6♠",
+   "why": "Ingen konger uden for trumf: 6♠."
+  }
+ ]
+}
