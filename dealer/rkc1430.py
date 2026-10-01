@@ -3,11 +3,12 @@
 
 Nøglekort = 4 esser + trumfkonge. Svar på 4NT: 5♣ 1 eller 4 · 5♦ 0 eller 3 · 5♥ 2 uden trumfdame ·
 5♠ 2 med trumfdame. Efter 5♣/5♦ spørger nærmeste trin efter trumfdamen:
-  billigste genmelding (trumf) = har ikke damen · billigste konge = dame + konge(r) · lilleslem = dame, ingen konger
+  billigste genmelding (trumf) = har ikke damen · billigste konge = dame + konge(r) · 5NT = dame, ingen konger ·
+  lilleslem = dame, intet yderligere at vise (kongerne ligger over 6 i trumf) – som hos Flemming & Frank
 Trumf er fastlagt med Bekkasin, og 4NT stilles enten af svarer (efter åbners 3♦) eller af åbner
 (direkte over 2NT) – så du træner som både åbner og svarer.
 Ikke med: 5 nøglekort, damespørgsmål efter 5♦ med hjerter som trumf (spørgsmålet bliver 5♠ og
-genmeldingen 6♥ falder sammen med lilleslem) og konger, der ikke kan vises under 6 i trumf.
+genmeldingen 6♥ falder sammen med lilleslem).
 """
 from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool
 
@@ -46,14 +47,14 @@ def answer_queen(M, shown, ask):
             return call, f"Du har ikke trumfdamen: billigste genmelding, {call}."
         kings = [s for s in SUITS if s != M and 13 in hand[s]]
         if not kings:
-            return f"6{sym}", "Trumfdamen, men ingen konger uden for trumf: lilleslem."
+            return "5NT", "Trumfdamen, men ingen konger uden for trumf: 5NT."
         bids = []
         for s in kings:
             call = next(f"{lv}{SUIT_SYM[s]}" for lv in (5, 6) if rank(f"{lv}{SUIT_SYM[s]}") > rank(ask))
             if rank(call) < rank(f"6{sym}"):
                 bids.append((rank(call), call, s))
         if not bids:
-            return None
+            return f"6{sym}", f"Trumfdamen, men kongen kan ikke vises under 6{sym}: lilleslem – intet yderligere at vise."
         _, call, s = min(bids)
         return call, f"Trumfdamen og {SUIT_NAME[s]} konge: billigste konge, {call}."
     return classify
@@ -63,10 +64,10 @@ BONUS = {
             "correct": "1 eller 4 nøglekort",
             "options": ["1 eller 4 nøglekort", "0 eller 3 nøglekort", "2 nøglekort med trumfdame"],
             "why": "1430: 5♣ = 1 eller 4, 5♦ = 0 eller 3, 5♥ = 2 uden trumfdame, 5♠ = 2 med trumfdame."},
-    "dame": {"q": "Hvad viser lilleslem som svar på damespørgsmålet?",
+    "dame": {"q": "Hvad viser 5NT som svar på damespørgsmålet?",
              "correct": "Trumfdamen, men ingen konger",
-             "options": ["Trumfdamen, men ingen konger", "Ingen trumfdame", "Trumfdamen og alle konger"],
-             "why": "Billigste genmelding = ingen dame · billigste konge = dame + konge(r) · lilleslem = dame uden konger."},
+             "options": ["Trumfdamen, men ingen konger", "Ingen trumfdame", "Kongespørgsmål"],
+             "why": "Billigste genmelding = ingen dame · billigste konge = dame + konge(r) · 5NT = dame uden konger · lilleslem = dame, intet yderligere at vise."},
 }
 
 PAS = ["Modstander", "Pas"]
@@ -102,7 +103,7 @@ for M, key in (('H', 'h'), ('S', 's')):
                               "calls": calls_from(ask, f"6{sym}"), "bonus": BONUS["dame"]}
             CLASSIFIERS[sk] = answer_queen(M, shown, ask)
             pool = {}
-            reachable = {f"6{sym}"}      # dame uden konger
+            reachable = {"5NT"}          # dame uden konger
             for s in ORDER:              # hver farves billigste melding over spørgsmålet
                 c = next(f"{lv}{SUIT_SYM[s]}" for lv in (5, 6) if rank(f"{lv}{SUIT_SYM[s]}") > rank(ask))
                 if rank(c) <= rank(f"6{sym}"):

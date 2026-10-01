@@ -4,9 +4,10 @@ Transfer – Karina & Frank, systemkortets afsnit 3.
 Over makkers 1NT (15–17):
   2♦ transfer til hjerter (5+) · 2♥ transfer til spar (5+) · 2♠ minortransfer til klør (6+) · 3♣ minortransfer til ruder (6+)
 Åbner fuldfører transferen: 2♦ → 2♥ · 2♥ → 2♠ · 2♠ → 3♣ · 3♣ → 3♦.
+Superaccept (som hos Flemming & Frank): med 4-korts støtte og maksimum (17 hp) springer åbner til 3M efter
+2♦/2♥. Minortransfererne fuldføres altid.
 Antagelser: transfer bruges uanset styrke; minortransfer kun uden 4-farve i major; hænder med 5-5 eller
-5-4 i majorerne er ikke med (kortet siger ikke, om Stayman eller transfer går først). Kortet nævner ikke
-superaccept, så åbner fuldfører altid.
+5-4 i majorerne er ikke med (kortet siger ikke, om Stayman eller transfer går først).
 """
 from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, build_pool
 
@@ -35,7 +36,12 @@ def opener(call):
         L = lengths_of(hand)
         if sorted(L.values()) not in ([3, 3, 3, 4], [2, 3, 4, 4], [2, 3, 3, 5]) or not (15 <= hp <= 17):
             return None
-        done = COMPLETE[call]
+        done, T = COMPLETE[call], TARGET[call]
+        if T in ('H', 'S') and L[T] == 4 and hp == 17:
+            jump = f"3{SUIT_SYM[T]}"
+            return jump, f"4 {SUIT_NAME[T]} og maksimum (17 hp): superaccept – spring til {jump}."
+        if T in ('H', 'S') and L[T] == 4:
+            return done, f"4 {SUIT_NAME[T]}, men ikke maksimum ({hp} hp): ingen superaccept – du melder {done}."
         return done, f"Makkers {call} er transfer til {SUIT_NAME[TARGET[call]]}: du melder {done}."
     return classify
 
@@ -45,9 +51,9 @@ BONUS = {
              "options": ["Minortransfer til klør", "Naturlig spar", "Stayman"],
              "why": "2♠ er minortransfer til klør og 3♣ minortransfer til ruder. 2♦/2♥ er transfer til hjerter/spar."},
     "aabner": {"q": "Hvad skal du gøre efter makkers transfer?",
-               "correct": "Melde farven, makker viste",
-               "options": ["Melde farven, makker viste", "Passe", "Melde din egen længste farve"],
-               "why": "Transferen beder åbner melde den viste farve; svarer beslutter derefter."},
+               "correct": "Melde farven – med 4-korts støtte og 17 hp springe (superaccept)",
+               "options": ["Melde farven – med 4-korts støtte og 17 hp springe (superaccept)", "Passe", "Melde din egen længste farve"],
+               "why": "Transferen beder åbner melde den viste farve. Kun med 4-korts støtte og maksimum må åbner springe et trin – superaccept. Minortransfer fuldføres altid."},
 }
 
 PAS = ["Modstander", "Pas"]
@@ -63,7 +69,7 @@ PER_CALL = {"svar_1nt": 25}
 for call, key in (("2♦", "2ru"), ("2♥", "2hj"), ("2♠", "2sp"), ("3♣", "3kl")):
     sk = f"aabner_{key}"
     SITUATIONS[sk] = {"rolle": "Åbner", "auction": [["Dig", "1NT"], PAS, ["Makker", call], PAS],
-                      "calls": sorted({"2♥", "2♠", "2NT", "3♣", "3♦", "3♥", "3NT"} - {call},
+                      "calls": sorted({"2♥", "2♠", "2NT", "3♣", "3♦", "3♥", "3♠", "3NT"} - {call},
                                       key=lambda c: int(c[0]) * 5 + ['♣', '♦', '♥', '♠', 'NT'].index(c[1:])),
                       "bonus": BONUS["aabner"]}
     SITUATIONS[sk]["calls"] = [c for c in SITUATIONS[sk]["calls"] if int(c[0]) * 5 + ['♣', '♦', '♥', '♠', 'NT'].index(c[1:])
@@ -73,6 +79,10 @@ for call, key in (("2♦", "2ru"), ("2♥", "2hj"), ("2♠", "2sp"), ("3♣", "3
     CLASSIFIERS[sk] = opener(call)
     SAMPLERS[sk] = {COMPLETE[call]: tpl((15, 17), S=(2, 5), H=(2, 5), D=(2, 5), C=(2, 5))}
     PER_CALL[sk] = 25
+    if TARGET[call] in ('H', 'S'):
+        T = TARGET[call]
+        SAMPLERS[sk][f"3{SUIT_SYM[T]}"] = tpl((17, 17), **{x: (4, 4) if x == T else (2, 4) for x in SUITS})
+        PER_CALL[sk] = 13
 
 def export_pool(path):
     return build_pool(path, SITUATIONS, CLASSIFIERS, SAMPLERS, PER_CALL)

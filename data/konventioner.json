@@ -145,7 +145,7 @@
   "system": "kf",
   "titel": "Transfer",
   "gruppe": "Svar på 1NT",
-  "beskrivelse": "2♦/2♥ transfer til major, 2♠ minortransfer til klør, 3♣ til ruder.",
+  "beskrivelse": "2♦/2♥ transfer til major (superaccept med 4-korts støtte og 17 hp), 2♠ minortransfer til klør, 3♣ til ruder.",
   "roller": [
    "Åbner",
    "Svarer"
@@ -157,7 +157,7 @@
   "id": "1430",
   "titel": "1430 og trumfdame",
   "gruppe": "Slem",
-  "beskrivelse": "Svar på 4NT (1430) og på spørgsmålet efter trumfdamen: billigste genmelding, billigste konge eller lilleslem.",
+  "beskrivelse": "Svar på 4NT (1430) og på spørgsmålet efter trumfdamen: billigste genmelding, billigste konge eller 5NT (dame uden konger).",
   "roller": [
    "Åbner",
    "Svarer"
@@ -402,9 +402,9 @@
  },
  {
   "id": "ff-flannery",
-  "system": "ff",
+  "system": "forslag",
   "titel": "Flannery",
-  "gruppe": "Forslag (bilag B)",
+  "gruppe": "2♦-åbninger (Flemming & Frank, bilag B)",
   "beskrivelse": "2♦ (eller 2♥ i B4-pakken) viser 5 hjerter og 4 spar, 11–15 hp.",
   "roller": [
    "Åbner",
@@ -415,9 +415,9 @@
  },
  {
   "id": "ff-multi-2ru",
-  "system": "ff",
+  "system": "forslag",
   "titel": "Multi 2♦",
-  "gruppe": "Forslag (bilag B)",
+  "gruppe": "2♦-åbninger (Flemming & Frank, bilag B)",
   "beskrivelse": "Svag 2 i en ukendt major; svarer melder pas-eller-ret.",
   "roller": [
    "Åbner",
@@ -428,9 +428,9 @@
  },
  {
   "id": "ff-muiderberg",
-  "system": "ff",
+  "system": "forslag",
   "titel": "Muiderberg 2♠",
-  "gruppe": "Forslag (bilag B)",
+  "gruppe": "2♦-åbninger (Flemming & Frank, bilag B)",
   "beskrivelse": "5 spar og en 4+ minor, 5–10 hp.",
   "roller": [
    "Åbner",
