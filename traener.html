@@ -179,6 +179,7 @@ function buildQuestion(h, sit){
     auction: sit.auction,
     lowest: Math.max(...sit.auction.map(([, call]) => callRank(call))) + 1,
     allowX: !!sit.allowX,
+    allowXX: !!sit.allowXX,
     hand: POOL_SUITS.map(([k, sym]) => [sym, h.hand[k].map(r => RANK_NAMES[r] || r).join(' ') || '—']),
     hp: h.hp, sp: h.sp,
     correct: h.correct,
@@ -252,7 +253,7 @@ function render(){
     btn.className = 'cell' + callClass(call);
     btn.dataset.call = call;
     btn.textContent = call;
-    const legal = call === 'Pas' || (call === 'X' && q.allowX);
+    const legal = call === 'Pas' || (call === 'X' && q.allowX) || (call === 'XX' && q.allowXX);
     btn.disabled = !legal;
     if (legal) btn.addEventListener('click', () => choose(call, btn));
     specialEl.appendChild(btn);

@@ -1,0 +1,9276 @@
+{
+ "situations": {
+  "gen_hj": {
+   "rolle": "Genåbner",
+   "auction": [
+    [
+     "Modstander",
+     "1♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "allowX": true,
+   "calls": [
+    "X",
+    "Pas",
+    "1♠",
+    "1NT",
+    "2♣",
+    "2♦",
+    "2♥",
+    "2NT"
+   ],
+   "bonus": {
+    "q": "Hvor mange point lånes af makker ved genåbning?",
+    "correct": "Ca. 3 hp",
+    "options": [
+     "Ca. 3 hp",
+     "Ingen – samme krav som direkte",
+     "Ca. 6 hp"
+    ],
+    "why": "Makker kan sidde med 8–11 hp uden en brugbar melding. Genåbneren låner ca. 3 hp – derfor dobling fra 8 hp og 1NT 11–14."
+   }
+  },
+  "svar_hj": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Modstander",
+     "1♥"
+    ],
+    [
+     "Dig",
+     "Pas"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "X"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "Pas",
+    "1♠",
+    "2♣",
+    "2♦",
+    "2♠",
+    "3♣",
+    "3♦"
+   ],
+   "bonus": {
+    "q": "Hvordan vurderer du hånden efter makkers genåbning?",
+    "correct": "Træk 3 hp fra – makker har lånt dem",
+    "options": [
+     "Træk 3 hp fra – makker har lånt dem",
+     "Læg 3 hp til",
+     "Som efter en direkte dobling"
+    ],
+    "why": "Genåbning sker på lånte point. Svar som om du har 3 hp færre – ellers straffer du makker for at genåbne."
+   }
+  },
+  "gen_sp": {
+   "rolle": "Genåbner",
+   "auction": [
+    [
+     "Modstander",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "allowX": true,
+   "calls": [
+    "X",
+    "Pas",
+    "1NT",
+    "2♣",
+    "2♦",
+    "2♥",
+    "2♠",
+    "2NT"
+   ],
+   "bonus": {
+    "q": "Hvor mange point lånes af makker ved genåbning?",
+    "correct": "Ca. 3 hp",
+    "options": [
+     "Ca. 3 hp",
+     "Ingen – samme krav som direkte",
+     "Ca. 6 hp"
+    ],
+    "why": "Makker kan sidde med 8–11 hp uden en brugbar melding. Genåbneren låner ca. 3 hp – derfor dobling fra 8 hp og 1NT 11–14."
+   }
+  },
+  "svar_sp": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Modstander",
+     "1♠"
+    ],
+    [
+     "Dig",
+     "Pas"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "X"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "Pas",
+    "2♣",
+    "2♦",
+    "2♥",
+    "3♣",
+    "3♦",
+    "3♥"
+   ],
+   "bonus": {
+    "q": "Hvordan vurderer du hånden efter makkers genåbning?",
+    "correct": "Træk 3 hp fra – makker har lånt dem",
+    "options": [
+     "Træk 3 hp fra – makker har lånt dem",
+     "Læg 3 hp til",
+     "Som efter en direkte dobling"
+    ],
+    "why": "Genåbning sker på lånte point. Svar som om du har 3 hp færre – ellers straffer du makker for at genåbne."
+   }
+  }
+ },
+ "hands": [
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     11,
+     5,
+     3
+    ],
+    "H": [
+     11,
+     6
+    ],
+    "D": [
+     14,
+     11,
+     7,
+     5
+    ],
+    "C": [
+     14,
+     12,
+     7,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "X",
+   "why": "13 hp og højst 2 hjerter: dobling – hovedmeldingen i genåbning (8+)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     12,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     8
+    ],
+    "D": [
+     13,
+     12,
+     7,
+     6
+    ],
+    "C": [
+     13,
+     12,
+     6,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "X",
+   "why": "12 hp og højst 2 hjerter: dobling – hovedmeldingen i genåbning (8+)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     7
+    ],
+    "H": [
+     8,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     6
+    ],
+    "C": [
+     10,
+     6,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "X",
+   "why": "14 hp og højst 2 hjerter: dobling – hovedmeldingen i genåbning (8+)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     2
+    ],
+    "H": [
+     10,
+     6
+    ],
+    "D": [
+     14,
+     9,
+     6,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     9
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "X",
+   "why": "13 hp og højst 2 hjerter: dobling – hovedmeldingen i genåbning (8+)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     11,
+     9,
+     7,
+     5
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     13,
+     10,
+     8,
+     2
+    ],
+    "C": [
+     13,
+     11,
+     7,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "X",
+   "why": "9 hp og højst 2 hjerter: dobling – hovedmeldingen i genåbning (8+)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     6,
+     3,
+     2
+    ],
+    "H": [
+     11,
+     7
+    ],
+    "D": [
+     14,
+     10,
+     7,
+     6
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     7
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "X",
+   "why": "11 hp og højst 2 hjerter: dobling – hovedmeldingen i genåbning (8+)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7,
+     2
+    ],
+    "H": [
+     5,
+     4
+    ],
+    "D": [
+     11,
+     8,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     9
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "X",
+   "why": "8 hp og højst 2 hjerter: dobling – hovedmeldingen i genåbning (8+)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     11,
+     8,
+     6,
+     2
+    ],
+    "H": [
+     10,
+     6
+    ],
+    "D": [
+     9,
+     8,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     7
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "X",
+   "why": "9 hp og højst 2 hjerter: dobling – hovedmeldingen i genåbning (8+)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     11,
+     9,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     9
+    ],
+    "D": [
+     11,
+     10,
+     9,
+     2
+    ],
+    "C": [
+     13,
+     11,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "X",
+   "why": "9 hp og højst 2 hjerter: dobling – hovedmeldingen i genåbning (8+)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     11,
+     8,
+     4
+    ],
+    "H": [
+     12,
+     8
+    ],
+    "D": [
+     14,
+     11,
+     8,
+     5
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     7
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "X",
+   "why": "10 hp og højst 2 hjerter: dobling – hovedmeldingen i genåbning (8+)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     12,
+     11
+    ],
+    "H": [
+     13,
+     12,
+     4
+    ],
+    "D": [
+     9,
+     7,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "1NT",
+   "why": "12 hp jævn med hold i hjerter: 1NT (11–14 i genåbning)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     9,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     7,
+     3
+    ],
+    "C": [
+     14,
+     8,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "1NT",
+   "why": "12 hp jævn med hold i hjerter: 1NT (11–14 i genåbning)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     11,
+     10,
+     3
+    ],
+    "C": [
+     12,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "1NT",
+   "why": "11 hp jævn med hold i hjerter: 1NT (11–14 i genåbning)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     2
+    ],
+    "H": [
+     11,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     9,
+     6
+    ],
+    "C": [
+     14,
+     10,
+     4,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "1NT",
+   "why": "11 hp jævn med hold i hjerter: 1NT (11–14 i genåbning)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     13,
+     6,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     7
+    ],
+    "D": [
+     7,
+     5
+    ],
+    "C": [
+     12,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "1NT",
+   "why": "12 hp jævn med hold i hjerter: 1NT (11–14 i genåbning)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7,
+     5
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     2
+    ],
+    "D": [
+     9,
+     5,
+     4
+    ],
+    "C": [
+     12,
+     8
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "1NT",
+   "why": "12 hp jævn med hold i hjerter: 1NT (11–14 i genåbning)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     12,
+     8
+    ],
+    "H": [
+     14,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     9,
+     4
+    ],
+    "C": [
+     12,
+     10,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "1NT",
+   "why": "13 hp jævn med hold i hjerter: 1NT (11–14 i genåbning)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     10,
+     6,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     10
+    ],
+    "D": [
+     11,
+     10,
+     8
+    ],
+    "C": [
+     14,
+     13,
+     7,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "1NT",
+   "why": "11 hp jævn med hold i hjerter: 1NT (11–14 i genåbning)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     11,
+     10,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     11
+    ],
+    "D": [
+     14,
+     13,
+     7,
+     4
+    ],
+    "C": [
+     11,
+     10,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "1NT",
+   "why": "14 hp jævn med hold i hjerter: 1NT (11–14 i genåbning)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     12,
+     8,
+     7
+    ],
+    "H": [
+     12,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     11,
+     10
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "1NT",
+   "why": "13 hp jævn med hold i hjerter: 1NT (11–14 i genåbning)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     3
+    ],
+    "H": [
+     3,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     7,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     12
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "17 hp: cuebid 2♥ – den stærke hånd, krav (15+)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     7
+    ],
+    "H": [],
+    "D": [
+     13,
+     11,
+     8,
+     4
+    ],
+    "C": [
+     14,
+     9,
+     7,
+     4,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "2♥",
+   "why": "15 hp: cuebid 2♥ – den stærke hånd, krav (15+)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     11,
+     4
+    ],
+    "H": [
+     11,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "15 hp: cuebid 2♥ – den stærke hånd, krav (15+)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     5,
+     3,
+     2
+    ],
+    "H": [],
+    "D": [
+     14,
+     12,
+     9,
+     8
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     7,
+     6
+    ]
+   },
+   "hp": 17,
+   "sp": 22,
+   "correct": "2♥",
+   "why": "17 hp: cuebid 2♥ – den stærke hånd, krav (15+)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     11,
+     8
+    ],
+    "H": [
+     14,
+     8
+    ],
+    "D": [
+     14,
+     10,
+     7,
+     5,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     10
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "15 hp: cuebid 2♥ – den stærke hånd, krav (15+)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8,
+     5
+    ],
+    "H": [
+     14,
+     11
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     3,
+     2
+    ],
+    "C": [
+     5,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "2♥",
+   "why": "16 hp: cuebid 2♥ – den stærke hånd, krav (15+)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     11,
+     9,
+     8
+    ],
+    "H": [],
+    "D": [
+     14,
+     13,
+     12,
+     9,
+     8
+    ],
+    "C": [
+     13,
+     11,
+     6,
+     2
+    ]
+   },
+   "hp": 18,
+   "sp": 23,
+   "correct": "2♥",
+   "why": "18 hp: cuebid 2♥ – den stærke hånd, krav (15+)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     7,
+     4
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     13,
+     12,
+     7
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     6
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "2♥",
+   "why": "15 hp: cuebid 2♥ – den stærke hånd, krav (15+)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11,
+     3
+    ],
+    "H": [
+     11,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     3
+    ],
+    "C": [
+     11,
+     9
+    ]
+   },
+   "hp": 18,
+   "sp": 20,
+   "correct": "2♥",
+   "why": "18 hp: cuebid 2♥ – den stærke hånd, krav (15+)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     4,
+     3
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     14,
+     12,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     3,
+     2
+    ]
+   },
+   "hp": 18,
+   "sp": 21,
+   "correct": "2♥",
+   "why": "18 hp: cuebid 2♥ – den stærke hånd, krav (15+)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     11,
+     4
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     6,
+     5
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     10,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "2NT",
+   "why": "5-5 i minorerne og 14 hp: 2NT – usædvanlig, som i direkte position."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     11,
+     10,
+     8
+    ],
+    "H": [],
+    "D": [
+     14,
+     13,
+     10,
+     7,
+     4
+    ],
+    "C": [
+     14,
+     10,
+     7,
+     6,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "5-5 i minorerne og 12 hp: 2NT – usædvanlig, som i direkte position."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     13,
+     4
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     13,
+     9,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     8,
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "5-5 i minorerne og 11 hp: 2NT – usædvanlig, som i direkte position."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     12,
+     10
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     12,
+     7,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     9,
+     7
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "5-5 i minorerne og 11 hp: 2NT – usædvanlig, som i direkte position."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8
+    ],
+    "H": [],
+    "D": [
+     14,
+     12,
+     9,
+     8,
+     7
+    ],
+    "C": [
+     11,
+     9,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "2NT",
+   "why": "5-5 i minorerne og 14 hp: 2NT – usædvanlig, som i direkte position."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     8,
+     4
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     7,
+     6
+    ],
+    "C": [
+     9,
+     8,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "5-5 i minorerne og 8 hp: 2NT – usædvanlig, som i direkte position."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     7,
+     6
+    ],
+    "H": [
+     2
+    ],
+    "D": [
+     14,
+     11,
+     9,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     8,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "5-5 i minorerne og 10 hp: 2NT – usædvanlig, som i direkte position."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     13,
+     12
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     9,
+     4
+    ],
+    "C": [
+     11,
+     10,
+     5,
+     4,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "2NT",
+   "why": "5-5 i minorerne og 14 hp: 2NT – usædvanlig, som i direkte position."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     9,
+     4,
+     2
+    ],
+    "H": [],
+    "D": [
+     13,
+     10,
+     8,
+     6,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     7,
+     5,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "5-5 i minorerne og 9 hp: 2NT – usædvanlig, som i direkte position."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     5
+    ],
+    "H": [],
+    "D": [
+     13,
+     12,
+     6,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     8,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "2NT",
+   "why": "5-5 i minorerne og 14 hp: 2NT – usædvanlig, som i direkte position."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     10,
+     4
+    ],
+    "H": [
+     12,
+     9,
+     8,
+     3
+    ],
+    "D": [
+     6,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     6,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "Pas",
+   "why": "6 hp uden god 5-farve: pas."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     12,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     10,
+     9,
+     8
+    ],
+    "D": [
+     8,
+     5
+    ],
+    "C": [
+     11,
+     10,
+     9,
+     2
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "correct": "Pas",
+   "why": "3 hp uden god 5-farve: pas."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     6,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     8
+    ],
+    "D": [
+     13,
+     10,
+     8,
+     2
+    ],
+    "C": [
+     10,
+     9,
+     7,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "Pas",
+   "why": "7 hp uden god 5-farve: pas."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     11,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     13,
+     4
+    ],
+    "D": [
+     11,
+     8,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     8,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "Pas",
+   "why": "7 hp uden god 5-farve: pas."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     2
+    ],
+    "H": [
+     11,
+     3,
+     2
+    ],
+    "D": [
+     9,
+     8
+    ],
+    "C": [
+     7,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "3 hjerter: længde i deres farve – pas."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     9,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     7,
+     5
+    ],
+    "D": [
+     11,
+     8,
+     4
+    ],
+    "C": [
+     13,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "Pas",
+   "why": "4 hjerter: længde i deres farve – pas."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     10,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     5,
+     3
+    ],
+    "D": [
+     12,
+     10,
+     6
+    ],
+    "C": [
+     14,
+     11,
+     10
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "5 hjerter: længde i deres farve – pas."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     10,
+     9,
+     4
+    ],
+    "H": [
+     12,
+     2
+    ],
+    "D": [
+     14,
+     6,
+     4,
+     3
+    ],
+    "C": [
+     9,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "Pas",
+   "why": "6 hp uden god 5-farve: pas."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     8,
+     3
+    ],
+    "H": [
+     9,
+     8,
+     4
+    ],
+    "D": [
+     13,
+     8,
+     7,
+     5
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "3 hjerter: længde i deres farve – pas."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     10,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     4
+    ],
+    "D": [
+     9,
+     8,
+     5
+    ],
+    "C": [
+     9,
+     8,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "Pas",
+   "why": "4 hjerter: længde i deres farve – pas."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     7,
+     5
+    ],
+    "H": [
+     13,
+     4
+    ],
+    "D": [
+     10,
+     9,
+     6,
+     4
+    ],
+    "C": [
+     6,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "correct": "1♠",
+   "why": "God 5-farve i spar og 8 hp: 1♠ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     3,
+     2
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     11,
+     8,
+     7
+    ],
+    "C": [
+     12,
+     8,
+     5,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "1♠",
+   "why": "God 5-farve i spar og 11 hp: 1♠ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     6,
+     4
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     13,
+     3,
+     2
+    ],
+    "C": [
+     7,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "1♠",
+   "why": "God 5-farve i spar og 9 hp: 1♠ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     14,
+     9,
+     6,
+     5
+    ],
+    "C": [
+     11,
+     7,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "1♠",
+   "why": "God 5-farve i spar og 10 hp: 1♠ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     10,
+     4
+    ],
+    "H": [
+     11,
+     7
+    ],
+    "D": [
+     8,
+     4
+    ],
+    "C": [
+     9,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "1♠",
+   "why": "God 5-farve i spar og 9 hp: 1♠ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     9,
+     8
+    ],
+    "H": [
+     8
+    ],
+    "D": [
+     13,
+     10,
+     4
+    ],
+    "C": [
+     14,
+     7,
+     6,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "1♠",
+   "why": "God 5-farve i spar og 12 hp: 1♠ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     12,
+     7,
+     4
+    ],
+    "D": [
+     10,
+     3
+    ],
+    "C": [
+     13,
+     4,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "1♠",
+   "why": "God 5-farve i spar og 10 hp: 1♠ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     9,
+     4
+    ],
+    "H": [
+     12,
+     7
+    ],
+    "D": [
+     12,
+     11,
+     4,
+     3
+    ],
+    "C": [
+     10,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "1♠",
+   "why": "God 5-farve i spar og 11 hp: 1♠ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     8,
+     3
+    ],
+    "H": [
+     7,
+     4
+    ],
+    "D": [
+     11,
+     10,
+     8,
+     6
+    ],
+    "C": [
+     9,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "1♠",
+   "why": "God 5-farve i spar og 7 hp: 1♠ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     8,
+     3
+    ],
+    "H": [
+     12,
+     9
+    ],
+    "D": [
+     13,
+     12,
+     6,
+     3
+    ],
+    "C": [
+     8,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "1♠",
+   "why": "God 5-farve i spar og 12 hp: 1♠ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     10,
+     6,
+     3
+    ],
+    "H": [
+     8,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     10,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♦",
+   "why": "God 5-farve i ruder og 12 hp: 2♦ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     9,
+     8,
+     5
+    ],
+    "H": [
+     14,
+     10,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     8,
+     6,
+     2
+    ],
+    "C": [
+     11,
+     10
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2♦",
+   "why": "God 5-farve i ruder og 10 hp: 2♦ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     12,
+     4
+    ],
+    "H": [
+     11,
+     9,
+     7
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     6,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♦",
+   "why": "God 5-farve i ruder og 12 hp: 2♦ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10,
+     3
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     6,
+     2
+    ],
+    "C": [
+     13,
+     6,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "2♦",
+   "why": "God 5-farve i ruder og 11 hp: 2♦ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     11,
+     9,
+     6,
+     4
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     6,
+     4
+    ],
+    "C": [
+     14,
+     11,
+     9
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "God 5-farve i ruder og 13 hp: 2♦ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     12,
+     11,
+     7
+    ],
+    "H": [
+     10,
+     9,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     7,
+     3
+    ],
+    "C": [
+     13,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♦",
+   "why": "God 5-farve i ruder og 13 hp: 2♦ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     10,
+     8,
+     5
+    ],
+    "H": [
+     11,
+     9,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     9,
+     3
+    ],
+    "C": [
+     7,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2♦",
+   "why": "God 5-farve i ruder og 9 hp: 2♦ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     11
+    ],
+    "H": [
+     8,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     7,
+     5
+    ],
+    "C": [
+     11,
+     10,
+     6,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "2♦",
+   "why": "God 5-farve i ruder og 13 hp: 2♦ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     11,
+     8
+    ],
+    "H": [
+     9,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     8,
+     7,
+     2
+    ],
+    "C": [
+     10,
+     9,
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "2♦",
+   "why": "God 5-farve i ruder og 7 hp: 2♦ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     12,
+     8
+    ],
+    "H": [
+     10,
+     9,
+     7
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     5,
+     4
+    ],
+    "C": [
+     11,
+     9,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♦",
+   "why": "God 5-farve i ruder og 8 hp: 2♦ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     13,
+     5
+    ],
+    "H": [
+     11,
+     7,
+     4
+    ],
+    "D": [
+     9,
+     8,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2♣",
+   "why": "God 5-farve i klør og 9 hp: 2♣ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     13,
+     5
+    ],
+    "H": [
+     10,
+     4
+    ],
+    "D": [
+     13,
+     8,
+     5,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     10,
+     8,
+     7
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "2♣",
+   "why": "God 5-farve i klør og 11 hp: 2♣ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     12,
+     5,
+     4
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     12,
+     9,
+     7,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     9,
+     8
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "2♣",
+   "why": "God 5-farve i klør og 11 hp: 2♣ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     12,
+     5
+    ],
+    "H": [
+     9,
+     4,
+     2
+    ],
+    "D": [
+     10,
+     9,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     5,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2♣",
+   "why": "God 5-farve i klør og 11 hp: 2♣ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     4,
+     3
+    ],
+    "H": [
+     12,
+     8,
+     6
+    ],
+    "D": [
+     10,
+     8,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     8,
+     7
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♣",
+   "why": "God 5-farve i klør og 8 hp: 2♣ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     5,
+     3
+    ],
+    "H": [
+     11,
+     7
+    ],
+    "D": [
+     11,
+     9,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     6,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♣",
+   "why": "God 5-farve i klør og 13 hp: 2♣ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     11,
+     10,
+     7,
+     2
+    ],
+    "H": [
+     11,
+     2
+    ],
+    "D": [
+     11,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     4,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "2♣",
+   "why": "God 5-farve i klør og 9 hp: 2♣ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     14,
+     3
+    ],
+    "H": [
+     5,
+     2
+    ],
+    "D": [
+     12,
+     7,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     8,
+     7,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "2♣",
+   "why": "God 5-farve i klør og 12 hp: 2♣ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     12,
+     8,
+     2
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     11,
+     10,
+     9,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     8,
+     5,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "2♣",
+   "why": "God 5-farve i klør og 9 hp: 2♣ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_hj",
+   "hand": {
+    "S": [
+     10,
+     8,
+     3
+    ],
+    "H": [
+     10,
+     4,
+     3
+    ],
+    "D": [
+     10,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "2♣",
+   "why": "God 5-farve i klør og 7 hp: 2♣ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     5,
+     4
+    ],
+    "H": [
+     7,
+     4
+    ],
+    "D": [
+     8,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "1♠",
+   "why": "6 hp – devalueret 3: 5 spar billigst, 1♠."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     12,
+     9,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     10
+    ],
+    "D": [
+     14,
+     11,
+     6
+    ],
+    "C": [
+     8,
+     7,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "1♠",
+   "why": "9 hp – devalueret 6: 5 spar billigst, 1♠."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     10,
+     7,
+     6
+    ],
+    "D": [
+     9,
+     8,
+     3
+    ],
+    "C": [
+     13,
+     7
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "1♠",
+   "why": "9 hp – devalueret 6: 5 spar billigst, 1♠."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     11,
+     8,
+     5,
+     2
+    ],
+    "H": [
+     9,
+     4,
+     2
+    ],
+    "D": [
+     9,
+     8,
+     4
+    ],
+    "C": [
+     14,
+     5,
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 5,
+   "correct": "1♠",
+   "why": "5 hp – devalueret 2: 4 spar billigst, 1♠."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     9,
+     8,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     12,
+     9,
+     7
+    ],
+    "D": [
+     12,
+     10,
+     2
+    ],
+    "C": [
+     9,
+     4
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "1♠",
+   "why": "4 hp – devalueret 1: 5 spar billigst, 1♠."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9,
+     5,
+     3
+    ],
+    "H": [
+     8,
+     3,
+     2
+    ],
+    "D": [
+     10,
+     8,
+     2
+    ],
+    "C": [
+     4,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "1♠",
+   "why": "4 hp – devalueret 1: 5 spar billigst, 1♠."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     13,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     11,
+     10,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     10
+    ],
+    "C": [
+     10,
+     4,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "correct": "1♠",
+   "why": "9 hp – devalueret 6: 4 spar billigst, 1♠."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     5,
+     2
+    ],
+    "H": [
+     10,
+     5,
+     3
+    ],
+    "D": [
+     9,
+     2
+    ],
+    "C": [
+     11,
+     9,
+     7
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "1♠",
+   "why": "8 hp – devalueret 5: 5 spar billigst, 1♠."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     12,
+     9,
+     7,
+     4,
+     2
+    ],
+    "H": [
+     10,
+     9,
+     8
+    ],
+    "D": [
+     7,
+     5
+    ],
+    "C": [
+     14,
+     10,
+     4
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "1♠",
+   "why": "6 hp – devalueret 3: 5 spar billigst, 1♠."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     12,
+     8,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     10,
+     9,
+     7
+    ],
+    "D": [
+     12,
+     11
+    ],
+    "C": [
+     13,
+     5,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "1♠",
+   "why": "8 hp – devalueret 5: 5 spar billigst, 1♠."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     8,
+     7,
+     5
+    ],
+    "H": [
+     12,
+     7,
+     5
+    ],
+    "D": [
+     10,
+     9,
+     6
+    ],
+    "C": [
+     4,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "1♠",
+   "why": "6 hp – devalueret 3: 5 spar billigst, 1♠."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     5,
+     4
+    ],
+    "H": [
+     9,
+     8,
+     5
+    ],
+    "D": [
+     3,
+     2
+    ],
+    "C": [
+     9,
+     8,
+     6
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "1♠",
+   "why": "7 hp – devalueret 4: 5 spar billigst, 1♠."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     11,
+     2
+    ],
+    "D": [
+     13,
+     6,
+     3
+    ],
+    "C": [
+     12,
+     8,
+     6
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2♠",
+   "why": "10 hp – devalueret 7 (7–10): spring til 2♠ i spar."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     9,
+     8
+    ],
+    "H": [
+     9,
+     8,
+     5
+    ],
+    "D": [
+     14,
+     8,
+     7
+    ],
+    "C": [
+     4,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "11 hp – devalueret 8 (7–10): spring til 2♠ i spar."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10,
+     3,
+     2
+    ],
+    "H": [
+     7,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     4
+    ],
+    "C": [
+     14,
+     10,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "11 hp – devalueret 8 (7–10): spring til 2♠ i spar."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9,
+     6,
+     2
+    ],
+    "H": [
+     10,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     4
+    ],
+    "C": [
+     14,
+     11,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "11 hp – devalueret 8 (7–10): spring til 2♠ i spar."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     7,
+     2
+    ],
+    "H": [
+     8,
+     7,
+     4
+    ],
+    "D": [
+     13,
+     6,
+     4
+    ],
+    "C": [
+     13,
+     7
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "11 hp – devalueret 8 (7–10): spring til 2♠ i spar."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     13,
+     10,
+     7,
+     4
+    ],
+    "H": [
+     9,
+     7,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     5
+    ],
+    "C": [
+     11,
+     5,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "correct": "2♠",
+   "why": "11 hp – devalueret 8 (7–10): spring til 2♠ i spar."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7,
+     6,
+     2
+    ],
+    "H": [
+     11,
+     9,
+     3
+    ],
+    "D": [
+     13,
+     7,
+     3
+    ],
+    "C": [
+     9,
+     6
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2♠",
+   "why": "10 hp – devalueret 7 (7–10): spring til 2♠ i spar."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8,
+     6,
+     2
+    ],
+    "H": [
+     11,
+     10,
+     6
+    ],
+    "D": [
+     10,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     7
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "11 hp – devalueret 8 (7–10): spring til 2♠ i spar."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     8,
+     5
+    ],
+    "H": [
+     10,
+     9,
+     4
+    ],
+    "D": [
+     6,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "11 hp – devalueret 8 (7–10): spring til 2♠ i spar."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     6,
+     5
+    ],
+    "H": [
+     7,
+     3,
+     2
+    ],
+    "D": [
+     11,
+     8,
+     7
+    ],
+    "C": [
+     5,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2♠",
+   "why": "10 hp – devalueret 7 (7–10): spring til 2♠ i spar."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     13,
+     8,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     12,
+     11
+    ],
+    "D": [
+     14,
+     9,
+     7
+    ],
+    "C": [
+     11,
+     7,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "11 hp – devalueret 8 (7–10): spring til 2♠ i spar."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     11,
+     8,
+     7,
+     6
+    ],
+    "H": [
+     11,
+     6,
+     5
+    ],
+    "D": [
+     14,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "correct": "2♠",
+   "why": "11 hp – devalueret 8 (7–10): spring til 2♠ i spar."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     8,
+     7
+    ],
+    "H": [
+     8,
+     6,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     10,
+     5,
+     3
+    ],
+    "C": [
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "correct": "2♦",
+   "why": "3 hp – devalueret 0: 5 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     11,
+     9
+    ],
+    "H": [
+     14,
+     10,
+     6
+    ],
+    "D": [
+     9,
+     7,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "2♦",
+   "why": "5 hp – devalueret 2: 5 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     8,
+     4,
+     2
+    ],
+    "H": [
+     12,
+     10,
+     8
+    ],
+    "D": [
+     14,
+     7,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     7,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "2♦",
+   "why": "7 hp – devalueret 4: 4 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     10,
+     8,
+     5
+    ],
+    "H": [
+     11,
+     5,
+     3
+    ],
+    "D": [
+     12,
+     8,
+     6,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "2♦",
+   "why": "6 hp – devalueret 3: 5 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     4,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     9
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     7,
+     3
+    ],
+    "C": [
+     8,
+     5,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♦",
+   "why": "8 hp – devalueret 5: 5 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     11,
+     6,
+     5
+    ],
+    "H": [
+     12,
+     9,
+     7
+    ],
+    "D": [
+     11,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     12,
+     4,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 6,
+   "correct": "2♦",
+   "why": "6 hp – devalueret 3: 4 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     10,
+     5,
+     2
+    ],
+    "H": [
+     12,
+     4,
+     2
+    ],
+    "D": [
+     11,
+     10,
+     8,
+     6
+    ],
+    "C": [
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 3,
+   "sp": 3,
+   "correct": "2♦",
+   "why": "3 hp – devalueret 0: 4 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     14,
+     9,
+     5
+    ],
+    "H": [
+     6,
+     3
+    ],
+    "D": [
+     11,
+     10,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     9,
+     8,
+     7
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "2♦",
+   "why": "5 hp – devalueret 2: 5 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     14,
+     10
+    ],
+    "H": [
+     6,
+     4,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     10,
+     4,
+     2
+    ],
+    "C": [
+     11,
+     5,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♦",
+   "why": "8 hp – devalueret 5: 5 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     12,
+     3
+    ],
+    "H": [
+     11,
+     6,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     7,
+     4,
+     2
+    ],
+    "C": [
+     11,
+     10,
+     7
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "2♦",
+   "why": "7 hp – devalueret 4: 5 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     9,
+     8
+    ],
+    "H": [
+     12,
+     6,
+     4
+    ],
+    "D": [
+     7,
+     6,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     10,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "2♦",
+   "why": "5 hp – devalueret 2: 5 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     10,
+     5
+    ],
+    "H": [
+     12,
+     8,
+     4
+    ],
+    "D": [
+     12,
+     11,
+     8,
+     7,
+     5
+    ],
+    "C": [
+     13,
+     9,
+     7
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♦",
+   "why": "8 hp – devalueret 5: 5 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     11,
+     8,
+     6
+    ],
+    "D": [
+     11,
+     10,
+     9,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     4,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     11,
+     9,
+     4
+    ],
+    "H": [
+     11,
+     9,
+     5
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     4
+    ],
+    "C": [
+     14,
+     10,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "correct": "3♦",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8
+    ],
+    "H": [
+     10,
+     9,
+     7
+    ],
+    "D": [
+     11,
+     10,
+     9,
+     8,
+     5
+    ],
+    "C": [
+     12,
+     6
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     11,
+     6,
+     2
+    ],
+    "H": [
+     9,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     7,
+     6
+    ],
+    "C": [
+     11,
+     6,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     8,
+     7
+    ],
+    "H": [
+     7,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     11,
+     9
+    ],
+    "C": [
+     10,
+     9,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     12,
+     8
+    ],
+    "H": [
+     8,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     8,
+     6,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     7
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     6
+    ],
+    "H": [
+     9,
+     6
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     9,
+     3
+    ],
+    "C": [
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     9,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     4
+    ],
+    "D": [
+     14,
+     11,
+     9,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     4,
+     3
+    ],
+    "H": [
+     10,
+     9,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     7,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     9
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     11,
+     10,
+     3
+    ],
+    "H": [
+     10,
+     9,
+     4
+    ],
+    "D": [
+     14,
+     7,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     6
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "correct": "3♦",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     14,
+     6,
+     2
+    ],
+    "H": [
+     11,
+     8,
+     5
+    ],
+    "D": [
+     13,
+     11,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     8,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     14,
+     6
+    ],
+    "H": [
+     10,
+     9,
+     6
+    ],
+    "D": [
+     12,
+     11,
+     8,
+     6,
+     4
+    ],
+    "C": [
+     13,
+     7,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9
+    ],
+    "H": [
+     13,
+     5
+    ],
+    "D": [
+     14,
+     10,
+     8
+    ],
+    "C": [
+     10,
+     9,
+     8,
+     6,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♣",
+   "why": "8 hp – devalueret 5: 5 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     13,
+     9,
+     2
+    ],
+    "H": [
+     11,
+     9
+    ],
+    "D": [
+     12,
+     10,
+     2
+    ],
+    "C": [
+     10,
+     9,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "2♣",
+   "why": "6 hp – devalueret 3: 5 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     7,
+     3,
+     2
+    ],
+    "H": [
+     9,
+     6
+    ],
+    "D": [
+     13,
+     6,
+     4
+    ],
+    "C": [
+     11,
+     9,
+     7,
+     3,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "2♣",
+   "why": "4 hp – devalueret 1: 5 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     10,
+     8,
+     6
+    ],
+    "H": [
+     12,
+     3
+    ],
+    "D": [
+     13,
+     11,
+     5
+    ],
+    "C": [
+     9,
+     8,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "2♣",
+   "why": "6 hp – devalueret 3: 5 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     9,
+     3,
+     2
+    ],
+    "H": [
+     11,
+     7,
+     5
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     11,
+     9,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "2♣",
+   "why": "7 hp – devalueret 4: 5 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     10,
+     5
+    ],
+    "H": [
+     11,
+     10,
+     8
+    ],
+    "D": [
+     13,
+     9,
+     7
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     8,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2♣",
+   "why": "9 hp – devalueret 6: 5 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     9,
+     2
+    ],
+    "H": [
+     12,
+     3,
+     2
+    ],
+    "D": [
+     8,
+     7,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     6,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♣",
+   "why": "8 hp – devalueret 5: 5 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     9,
+     7,
+     3
+    ],
+    "H": [
+     10,
+     7
+    ],
+    "D": [
+     14,
+     13,
+     5
+    ],
+    "C": [
+     9,
+     5,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "2♣",
+   "why": "7 hp – devalueret 4: 5 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     4,
+     3,
+     2
+    ],
+    "H": [
+     3,
+     2
+    ],
+    "D": [
+     13,
+     8,
+     6
+    ],
+    "C": [
+     9,
+     8,
+     7,
+     6,
+     5
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "correct": "2♣",
+   "why": "3 hp – devalueret 0: 5 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     9,
+     5
+    ],
+    "H": [
+     13,
+     9,
+     4
+    ],
+    "D": [
+     11,
+     5,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     7,
+     6,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "2♣",
+   "why": "7 hp – devalueret 4: 5 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     5,
+     2
+    ],
+    "H": [
+     12,
+     9,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     2
+    ],
+    "C": [
+     11,
+     9,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "2♣",
+   "why": "6 hp – devalueret 3: 5 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     9,
+     8,
+     2
+    ],
+    "H": [
+     11,
+     2
+    ],
+    "D": [
+     11,
+     8,
+     4
+    ],
+    "C": [
+     9,
+     7,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 2,
+   "sp": 3,
+   "correct": "2♣",
+   "why": "2 hp – devalueret 0: 5 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     7
+    ],
+    "H": [
+     8,
+     6,
+     5
+    ],
+    "D": [
+     11,
+     5
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     8,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     12,
+     8,
+     7
+    ],
+    "H": [
+     10,
+     6,
+     3
+    ],
+    "D": [
+     9,
+     6,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "correct": "3♣",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     14,
+     7,
+     3
+    ],
+    "H": [
+     11,
+     4,
+     3
+    ],
+    "D": [
+     11,
+     4
+    ],
+    "C": [
+     14,
+     10,
+     9,
+     6,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     12,
+     4
+    ],
+    "H": [
+     10,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     10
+    ],
+    "C": [
+     11,
+     9,
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     4
+    ],
+    "H": [
+     5,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     2
+    ],
+    "C": [
+     11,
+     9,
+     5,
+     4,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10
+    ],
+    "H": [
+     10,
+     8,
+     4
+    ],
+    "D": [
+     13,
+     6,
+     3
+    ],
+    "C": [
+     14,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "correct": "3♣",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     8,
+     3
+    ],
+    "H": [
+     8,
+     6,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     8,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     8,
+     5,
+     3
+    ],
+    "H": [
+     6,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     7
+    ],
+    "H": [
+     8,
+     7
+    ],
+    "D": [
+     12,
+     9,
+     4
+    ],
+    "C": [
+     13,
+     11,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7
+    ],
+    "H": [
+     4,
+     2
+    ],
+    "D": [
+     9,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     8,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     10,
+     7,
+     4
+    ],
+    "H": [
+     5,
+     4
+    ],
+    "D": [
+     13,
+     9,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     5,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     11,
+     10,
+     3
+    ],
+    "H": [
+     11,
+     2
+    ],
+    "D": [
+     12,
+     10,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     8,
+     7,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     14,
+     10,
+     6,
+     3
+    ],
+    "D": [
+     13,
+     10,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "X",
+   "why": "14 hp og højst 2 spar: dobling – hovedmeldingen i genåbning (8+)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     12,
+     6
+    ],
+    "H": [
+     9,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     5
+    ],
+    "C": [
+     11,
+     9,
+     4,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "X",
+   "why": "8 hp og højst 2 spar: dobling – hovedmeldingen i genåbning (8+)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     11,
+     6
+    ],
+    "H": [
+     13,
+     9,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     8,
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "X",
+   "why": "13 hp og højst 2 spar: dobling – hovedmeldingen i genåbning (8+)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     11,
+     5
+    ],
+    "H": [
+     13,
+     8,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     8,
+     4
+    ],
+    "C": [
+     14,
+     8,
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "X",
+   "why": "12 hp og højst 2 spar: dobling – hovedmeldingen i genåbning (8+)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     3
+    ],
+    "D": [
+     12,
+     9,
+     7,
+     6
+    ],
+    "C": [
+     12,
+     10,
+     7,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "X",
+   "why": "11 hp og højst 2 spar: dobling – hovedmeldingen i genåbning (8+)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     12,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     4
+    ],
+    "D": [
+     13,
+     7,
+     6,
+     3
+    ],
+    "C": [
+     11,
+     9,
+     8,
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "X",
+   "why": "13 hp og højst 2 spar: dobling – hovedmeldingen i genåbning (8+)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     13,
+     11,
+     8,
+     2
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     6
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "X",
+   "why": "14 hp og højst 2 spar: dobling – hovedmeldingen i genåbning (8+)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     5,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     8
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "X",
+   "why": "14 hp og højst 2 spar: dobling – hovedmeldingen i genåbning (8+)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     8,
+     6
+    ],
+    "H": [
+     12,
+     11,
+     7,
+     3
+    ],
+    "D": [
+     12,
+     9,
+     6,
+     3
+    ],
+    "C": [
+     14,
+     7,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "X",
+   "why": "9 hp og højst 2 spar: dobling – hovedmeldingen i genåbning (8+)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     12,
+     9
+    ],
+    "H": [
+     11,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     11,
+     8,
+     6
+    ],
+    "C": [
+     13,
+     8,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "X",
+   "why": "10 hp og højst 2 spar: dobling – hovedmeldingen i genåbning (8+)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     14,
+     9,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     7,
+     3
+    ],
+    "D": [
+     13,
+     11,
+     8,
+     3
+    ],
+    "C": [
+     5,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "1NT",
+   "why": "11 hp jævn med hold i spar: 1NT (11–14 i genåbning)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     5,
+     3
+    ],
+    "H": [
+     10,
+     9
+    ],
+    "D": [
+     13,
+     11,
+     9
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "1NT",
+   "why": "12 hp jævn med hold i spar: 1NT (11–14 i genåbning)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     12,
+     7,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     10,
+     8
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     2
+    ],
+    "C": [
+     3,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "1NT",
+   "why": "11 hp jævn med hold i spar: 1NT (11–14 i genåbning)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7,
+     6
+    ],
+    "H": [
+     13,
+     9,
+     5,
+     4
+    ],
+    "D": [
+     11,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "1NT",
+   "why": "14 hp jævn med hold i spar: 1NT (11–14 i genåbning)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7
+    ],
+    "H": [
+     12,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     7,
+     6
+    ],
+    "C": [
+     10,
+     7,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "1NT",
+   "why": "13 hp jævn med hold i spar: 1NT (11–14 i genåbning)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     12,
+     9,
+     2
+    ],
+    "H": [
+     8,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     11
+    ],
+    "C": [
+     6,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "1NT",
+   "why": "12 hp jævn med hold i spar: 1NT (11–14 i genåbning)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     14,
+     10
+    ],
+    "H": [
+     11,
+     7,
+     6,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     3
+    ],
+    "C": [
+     10,
+     5,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "1NT",
+   "why": "12 hp jævn med hold i spar: 1NT (11–14 i genåbning)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     12,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     13,
+     5
+    ],
+    "D": [
+     13,
+     11,
+     7
+    ],
+    "C": [
+     14,
+     9,
+     7,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "1NT",
+   "why": "13 hp jævn med hold i spar: 1NT (11–14 i genåbning)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     13,
+     11,
+     3
+    ],
+    "H": [
+     12,
+     8
+    ],
+    "D": [
+     14,
+     8,
+     6,
+     4
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "1NT",
+   "why": "13 hp jævn med hold i spar: 1NT (11–14 i genåbning)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     12,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     8,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "1NT",
+   "why": "13 hp jævn med hold i spar: 1NT (11–14 i genåbning)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     13,
+     4
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     6,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "2♠",
+   "why": "16 hp: cuebid 2♠ – den stærke hånd, krav (15+)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     12,
+     11,
+     10
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     5
+    ],
+    "C": [
+     13,
+     11,
+     9,
+     8,
+     7
+    ]
+   },
+   "hp": 16,
+   "sp": 21,
+   "correct": "2♠",
+   "why": "16 hp: cuebid 2♠ – den stærke hånd, krav (15+)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     2
+    ],
+    "H": [
+     14,
+     10,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     9
+    ],
+    "C": [
+     13,
+     11,
+     6,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "2♠",
+   "why": "15 hp: cuebid 2♠ – den stærke hånd, krav (15+)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     12
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     4
+    ],
+    "C": [
+     10,
+     9,
+     7,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "2♠",
+   "why": "15 hp: cuebid 2♠ – den stærke hånd, krav (15+)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     11,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     9
+    ],
+    "C": [
+     13,
+     8
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "2♠",
+   "why": "16 hp: cuebid 2♠ – den stærke hånd, krav (15+)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     12,
+     6
+    ],
+    "H": [
+     13,
+     10,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     7,
+     3
+    ],
+    "C": [
+     14,
+     7
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "2♠",
+   "why": "16 hp: cuebid 2♠ – den stærke hånd, krav (15+)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     10,
+     6,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     11,
+     2
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     6
+    ]
+   },
+   "hp": 17,
+   "sp": 22,
+   "correct": "2♠",
+   "why": "17 hp: cuebid 2♠ – den stærke hånd, krav (15+)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     13,
+     9
+    ],
+    "H": [
+     14,
+     11,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     7
+    ],
+    "C": [
+     9,
+     6
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "2♠",
+   "why": "15 hp: cuebid 2♠ – den stærke hånd, krav (15+)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     12,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     6,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "2♠",
+   "why": "17 hp: cuebid 2♠ – den stærke hånd, krav (15+)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     9,
+     8,
+     4
+    ],
+    "D": [
+     14,
+     8,
+     6,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     10,
+     6
+    ]
+   },
+   "hp": 16,
+   "sp": 21,
+   "correct": "2♠",
+   "why": "16 hp: cuebid 2♠ – den stærke hånd, krav (15+)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     13,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     7,
+     6,
+     5
+    ],
+    "C": [
+     12,
+     10,
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "5-5 i minorerne og 10 hp: 2NT – usædvanlig, som i direkte position."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     10,
+     7
+    ],
+    "D": [
+     14,
+     13,
+     7,
+     5,
+     4
+    ],
+    "C": [
+     11,
+     8,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "5-5 i minorerne og 12 hp: 2NT – usædvanlig, som i direkte position."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     10,
+     8,
+     7
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     8,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     9,
+     8,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "5-5 i minorerne og 10 hp: 2NT – usædvanlig, som i direkte position."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     13,
+     11
+    ],
+    "D": [
+     12,
+     9,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     7,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "5-5 i minorerne og 13 hp: 2NT – usædvanlig, som i direkte position."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     5,
+     4
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     7,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     11,
+     9
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "2NT",
+   "why": "5-5 i minorerne og 14 hp: 2NT – usædvanlig, som i direkte position."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     5,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     7,
+     5
+    ],
+    "C": [
+     11,
+     9,
+     8,
+     6,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "5-5 i minorerne og 10 hp: 2NT – usædvanlig, som i direkte position."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     13,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     5,
+     3
+    ],
+    "C": [
+     10,
+     9,
+     8,
+     7,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "2NT",
+   "why": "5-5 i minorerne og 14 hp: 2NT – usædvanlig, som i direkte position."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     11
+    ],
+    "H": [
+     6,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     5,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     8,
+     5,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "5-5 i minorerne og 13 hp: 2NT – usædvanlig, som i direkte position."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     9,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     7,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "5-5 i minorerne og 11 hp: 2NT – usædvanlig, som i direkte position."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     7,
+     6
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     4,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "5-5 i minorerne og 11 hp: 2NT – usædvanlig, som i direkte position."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     11,
+     7,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     7,
+     6,
+     3
+    ],
+    "C": [
+     5,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "Pas",
+   "why": "7 hp uden god 5-farve: pas."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     13,
+     11,
+     4,
+     2
+    ],
+    "H": [
+     6,
+     5
+    ],
+    "D": [
+     14,
+     8,
+     7
+    ],
+    "C": [
+     10,
+     9,
+     5,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "Pas",
+   "why": "4 spar: længde i deres farve – pas."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     10,
+     8,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     2
+    ],
+    "D": [
+     12,
+     10
+    ],
+    "C": [
+     8,
+     7
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "5 spar: længde i deres farve – pas."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     11,
+     3
+    ],
+    "H": [
+     8,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     9,
+     8,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     4
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "Pas",
+   "why": "6 hp uden god 5-farve: pas."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     8,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     6,
+     5
+    ],
+    "D": [
+     11,
+     7,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     4
+    ]
+   },
+   "hp": 6,
+   "sp": 6,
+   "correct": "Pas",
+   "why": "6 hp uden god 5-farve: pas."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     12,
+     10,
+     2
+    ],
+    "H": [
+     8,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     11,
+     9,
+     7,
+     5
+    ],
+    "C": [
+     7,
+     6
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "correct": "Pas",
+   "why": "3 hp uden god 5-farve: pas."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     12,
+     10,
+     9,
+     3
+    ],
+    "H": [
+     8,
+     7,
+     6
+    ],
+    "D": [
+     11,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "Pas",
+   "why": "5 hp uden god 5-farve: pas."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     10,
+     7,
+     4,
+     2
+    ],
+    "H": [
+     10,
+     9,
+     7,
+     5
+    ],
+    "D": [
+     11,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     11
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "Pas",
+   "why": "4 hp uden god 5-farve: pas."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     11,
+     10,
+     8
+    ],
+    "H": [
+     10,
+     7
+    ],
+    "D": [
+     12,
+     11,
+     7,
+     2
+    ],
+    "C": [
+     7,
+     5,
+     4,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "Pas",
+   "why": "4 hp uden god 5-farve: pas."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     14,
+     11,
+     9,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     6
+    ],
+    "D": [
+     4,
+     2
+    ],
+    "C": [
+     9,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "5 spar: længde i deres farve – pas."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     8,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10,
+     9
+    ],
+    "D": [
+     12,
+     5,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "God 5-farve i hjerter og 13 hp: 2♥ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     7,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     10,
+     8,
+     7,
+     5
+    ],
+    "C": [
+     12,
+     6
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "2♥",
+   "why": "God 5-farve i hjerter og 7 hp: 2♥ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     11,
+     10,
+     8
+    ],
+    "H": [
+     13,
+     12,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     12,
+     10,
+     6
+    ],
+    "C": [
+     9,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♥",
+   "why": "God 5-farve i hjerter og 8 hp: 2♥ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     10,
+     9,
+     8
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     4
+    ],
+    "C": [
+     11,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2♥",
+   "why": "God 5-farve i hjerter og 10 hp: 2♥ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     7,
+     3
+    ],
+    "D": [
+     10,
+     7,
+     4
+    ],
+    "C": [
+     10,
+     9,
+     6,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "2♥",
+   "why": "God 5-farve i hjerter og 9 hp: 2♥ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     10
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     6,
+     2
+    ],
+    "D": [
+     12,
+     8,
+     4
+    ],
+    "C": [
+     12,
+     7,
+     4,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "God 5-farve i hjerter og 10 hp: 2♥ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     6,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     7,
+     5
+    ],
+    "D": [
+     6,
+     3
+    ],
+    "C": [
+     11,
+     9,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♥",
+   "why": "God 5-farve i hjerter og 8 hp: 2♥ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     10,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     7,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     8,
+     6
+    ],
+    "C": [
+     8,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2♥",
+   "why": "God 5-farve i hjerter og 9 hp: 2♥ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     2
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     5,
+     3
+    ],
+    "D": [
+     8,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "God 5-farve i hjerter og 10 hp: 2♥ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     11,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     7,
+     2
+    ],
+    "D": [
+     11,
+     8
+    ],
+    "C": [
+     8,
+     7,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2♥",
+   "why": "God 5-farve i hjerter og 9 hp: 2♥ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     5,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     8,
+     6,
+     5
+    ],
+    "C": [
+     10,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♦",
+   "why": "God 5-farve i ruder og 8 hp: 2♦ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     13,
+     10,
+     7
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     10,
+     7
+    ],
+    "C": [
+     12,
+     10,
+     5,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "God 5-farve i ruder og 13 hp: 2♦ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     12,
+     7,
+     6
+    ],
+    "H": [
+     7,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     6,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2♦",
+   "why": "God 5-farve i ruder og 10 hp: 2♦ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     10,
+     9,
+     8
+    ],
+    "H": [
+     14,
+     9,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     8,
+     6
+    ],
+    "C": [
+     14,
+     8
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♦",
+   "why": "God 5-farve i ruder og 13 hp: 2♦ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     6,
+     5
+    ],
+    "H": [
+     12,
+     10,
+     7,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     9,
+     3
+    ],
+    "C": [
+     8,
+     7
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "correct": "2♦",
+   "why": "God 5-farve i ruder og 8 hp: 2♦ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     8,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     8,
+     5,
+     4
+    ],
+    "C": [
+     5,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "2♦",
+   "why": "God 5-farve i ruder og 13 hp: 2♦ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     6,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     9,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "2♦",
+   "why": "God 5-farve i ruder og 11 hp: 2♦ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     13,
+     8,
+     2
+    ],
+    "H": [
+     7,
+     6
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     9,
+     8
+    ],
+    "C": [
+     8,
+     7,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♦",
+   "why": "God 5-farve i ruder og 8 hp: 2♦ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     10,
+     8,
+     4
+    ],
+    "H": [
+     8,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     8,
+     7
+    ],
+    "C": [
+     13,
+     10
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2♦",
+   "why": "God 5-farve i ruder og 9 hp: 2♦ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
+     13,
+     10,
+     7,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     9,
+     6
+    ],
+    "C": [
+     13,
+     10,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2♦",
+   "why": "God 5-farve i ruder og 12 hp: 2♦ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     10,
+     9,
+     7,
+     4
+    ],
+    "D": [
+     13,
+     8,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     5,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "2♣",
+   "why": "God 5-farve i klør og 10 hp: 2♣ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     12,
+     5
+    ],
+    "H": [
+     8,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     10,
+     9
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     8,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "correct": "2♣",
+   "why": "God 5-farve i klør og 8 hp: 2♣ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     13,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     10,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     8,
+     6,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2♣",
+   "why": "God 5-farve i klør og 13 hp: 2♣ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     13,
+     10,
+     4
+    ],
+    "H": [
+     9,
+     7,
+     3
+    ],
+    "D": [
+     4,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     8,
+     6,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2♣",
+   "why": "God 5-farve i klør og 10 hp: 2♣ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     11,
+     5,
+     3
+    ],
+    "H": [
+     8,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     8
+    ],
+    "C": [
+     13,
+     12,
+     8,
+     4,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2♣",
+   "why": "God 5-farve i klør og 10 hp: 2♣ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     10,
+     8,
+     4
+    ],
+    "H": [
+     13,
+     10,
+     8
+    ],
+    "D": [
+     3,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     4,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2♣",
+   "why": "God 5-farve i klør og 10 hp: 2♣ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     9,
+     8,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     2
+    ],
+    "D": [
+     8,
+     6
+    ],
+    "C": [
+     13,
+     12,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2♣",
+   "why": "God 5-farve i klør og 12 hp: 2♣ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     11,
+     5
+    ],
+    "H": [
+     9,
+     5,
+     2
+    ],
+    "D": [
+     11,
+     9,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     6,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♣",
+   "why": "God 5-farve i klør og 8 hp: 2♣ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     11,
+     8,
+     2
+    ],
+    "H": [
+     12,
+     7,
+     5
+    ],
+    "D": [
+     13,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2♣",
+   "why": "God 5-farve i klør og 13 hp: 2♣ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "gen_sp",
+   "hand": {
+    "S": [
+     8,
+     4,
+     2
+    ],
+    "H": [
+     12,
+     6
+    ],
+    "D": [
+     10,
+     6,
+     5
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     8,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♣",
+   "why": "God 5-farve i klør og 8 hp: 2♣ – genåbning i farve (6–13)."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     9,
+     7,
+     3
+    ],
+    "H": [
+     11,
+     9,
+     7,
+     3
+    ],
+    "D": [
+     11,
+     9,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     9
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "correct": "2♥",
+   "why": "8 hp – devalueret 5: 4 hjerter billigst, 2♥."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     9,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     7,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     3
+    ],
+    "C": [
+     10,
+     7,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2♥",
+   "why": "9 hp – devalueret 6: 5 hjerter billigst, 2♥."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     6,
+     4,
+     2
+    ],
+    "H": [
+     11,
+     10,
+     8,
+     6,
+     5
+    ],
+    "D": [
+     14,
+     10
+    ],
+    "C": [
+     13,
+     11,
+     7
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2♥",
+   "why": "9 hp – devalueret 6: 5 hjerter billigst, 2♥."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     7,
+     2
+    ],
+    "H": [
+     10,
+     8,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     12,
+     9,
+     4
+    ],
+    "C": [
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 2,
+   "sp": 3,
+   "correct": "2♥",
+   "why": "2 hp – devalueret 0: 5 hjerter billigst, 2♥."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     7,
+     6,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     8,
+     7,
+     4
+    ],
+    "D": [
+     13,
+     6
+    ],
+    "C": [
+     12,
+     11,
+     8
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2♥",
+   "why": "9 hp – devalueret 6: 5 hjerter billigst, 2♥."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     13,
+     10
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     8,
+     3
+    ],
+    "D": [
+     8,
+     6,
+     4
+    ],
+    "C": [
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♥",
+   "why": "8 hp – devalueret 5: 5 hjerter billigst, 2♥."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     6,
+     5,
+     4
+    ],
+    "H": [
+     10,
+     8,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     13,
+     8,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2♥",
+   "why": "9 hp – devalueret 6: 5 hjerter billigst, 2♥."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     9,
+     3
+    ],
+    "H": [
+     14,
+     9,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     7,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     10,
+     6
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "2♥",
+   "why": "5 hp – devalueret 2: 5 hjerter billigst, 2♥."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     11,
+     5,
+     2
+    ],
+    "H": [
+     12,
+     9,
+     7,
+     6,
+     4
+    ],
+    "D": [
+     12,
+     11,
+     3
+    ],
+    "C": [
+     9,
+     8
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "2♥",
+   "why": "6 hp – devalueret 3: 5 hjerter billigst, 2♥."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     10,
+     8,
+     2
+    ],
+    "H": [
+     11,
+     10,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     12,
+     10,
+     8
+    ],
+    "C": [
+     9,
+     4
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "correct": "2♥",
+   "why": "3 hp – devalueret 0: 5 hjerter billigst, 2♥."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     11,
+     9,
+     7
+    ],
+    "H": [
+     14,
+     9,
+     7,
+     6
+    ],
+    "D": [
+     10,
+     9,
+     8
+    ],
+    "C": [
+     12,
+     4,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "2♥",
+   "why": "7 hp – devalueret 4: 4 hjerter billigst, 2♥."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     13,
+     6,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     9,
+     4
+    ],
+    "D": [
+     4,
+     2
+    ],
+    "C": [
+     7,
+     6,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♥",
+   "why": "8 hp – devalueret 5: 5 hjerter billigst, 2♥."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     8,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     9,
+     7
+    ],
+    "D": [
+     11,
+     10,
+     6
+    ],
+    "C": [
+     12,
+     8,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♥",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♥ i hjerter."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     11,
+     8,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     8
+    ],
+    "D": [
+     10,
+     7,
+     3
+    ],
+    "C": [
+     14,
+     7,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "correct": "3♥",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♥ i hjerter."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     7,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     8,
+     5,
+     4
+    ],
+    "D": [
+     12,
+     10,
+     7
+    ],
+    "C": [
+     13,
+     11,
+     6
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "correct": "3♥",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♥ i hjerter."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     11,
+     10,
+     8
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     10,
+     4
+    ],
+    "D": [
+     6,
+     3
+    ],
+    "C": [
+     13,
+     6,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♥",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♥ i hjerter."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     11,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     9,
+     6,
+     4
+    ],
+    "D": [
+     12,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♥",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♥ i hjerter."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     10,
+     5,
+     4
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     8
+    ],
+    "D": [
+     14,
+     12,
+     7
+    ],
+    "C": [
+     12,
+     10,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "correct": "3♥",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♥ i hjerter."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     11,
+     7,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     7,
+     3
+    ],
+    "D": [
+     12,
+     8,
+     7
+    ],
+    "C": [
+     11,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♥",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♥ i hjerter."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     10,
+     9,
+     5
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     6,
+     2
+    ],
+    "D": [
+     11,
+     10
+    ],
+    "C": [
+     14,
+     11,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♥",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♥ i hjerter."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     11,
+     9,
+     3
+    ],
+    "H": [
+     14,
+     10,
+     8,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     8,
+     4
+    ],
+    "C": [
+     12,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♥",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♥ i hjerter."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     11,
+     10,
+     6
+    ],
+    "H": [
+     11,
+     10,
+     9,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     7
+    ],
+    "C": [
+     13,
+     8,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "correct": "3♥",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♥ i hjerter."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     10,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     6,
+     3
+    ],
+    "D": [
+     8,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♥",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♥ i hjerter."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     11,
+     4
+    ],
+    "H": [
+     6,
+     5,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♥",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♥ i hjerter."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     12,
+     4,
+     3
+    ],
+    "H": [
+     9,
+     8,
+     3
+    ],
+    "D": [
+     13,
+     9,
+     8,
+     3
+    ],
+    "C": [
+     12,
+     6,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "2♦",
+   "why": "7 hp – devalueret 4: 4 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     12,
+     7,
+     5
+    ],
+    "H": [
+     10,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     7,
+     6,
+     3
+    ],
+    "C": [
+     6,
+     5
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "2♦",
+   "why": "5 hp – devalueret 2: 5 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     11,
+     9,
+     2
+    ],
+    "H": [
+     6,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     9,
+     8
+    ],
+    "C": [
+     12,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♦",
+   "why": "8 hp – devalueret 5: 5 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     10,
+     9,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     6
+    ],
+    "D": [
+     11,
+     8,
+     7,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     8
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "2♦",
+   "why": "6 hp – devalueret 3: 5 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     10,
+     6,
+     3
+    ],
+    "H": [
+     11,
+     8,
+     6
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     6,
+     4
+    ],
+    "C": [
+     13,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♦",
+   "why": "8 hp – devalueret 5: 5 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     11,
+     7
+    ],
+    "H": [
+     12,
+     9,
+     5
+    ],
+    "D": [
+     12,
+     10,
+     8,
+     6,
+     2
+    ],
+    "C": [
+     10,
+     6,
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "2♦",
+   "why": "5 hp – devalueret 2: 5 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     5,
+     4,
+     3
+    ],
+    "H": [
+     9,
+     7,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     4
+    ],
+    "C": [
+     10,
+     8,
+     7
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "2♦",
+   "why": "7 hp – devalueret 4: 4 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     11,
+     6
+    ],
+    "H": [
+     10,
+     7,
+     5
+    ],
+    "D": [
+     11,
+     7,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     9,
+     6,
+     3
+    ]
+   },
+   "hp": 2,
+   "sp": 3,
+   "correct": "2♦",
+   "why": "2 hp – devalueret 0: 5 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     14,
+     5,
+     4
+    ],
+    "H": [
+     10,
+     8,
+     3
+    ],
+    "D": [
+     11,
+     9,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     9,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "2♦",
+   "why": "5 hp – devalueret 2: 5 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     11,
+     6,
+     2
+    ],
+    "H": [
+     9,
+     8,
+     6
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     7,
+     2
+    ],
+    "C": [
+     3,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "2♦",
+   "why": "6 hp – devalueret 3: 5 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     11,
+     8
+    ],
+    "H": [
+     9,
+     8,
+     5
+    ],
+    "D": [
+     8,
+     7,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     10,
+     8
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "2♦",
+   "why": "5 hp – devalueret 2: 5 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     10,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     9,
+     3
+    ],
+    "D": [
+     11,
+     7,
+     6,
+     5
+    ],
+    "C": [
+     13,
+     10,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "2♦",
+   "why": "7 hp – devalueret 4: 4 ruder billigst, 2♦."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     11,
+     8
+    ],
+    "H": [
+     11,
+     10,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     6,
+     5
+    ],
+    "C": [
+     12,
+     9,
+     8
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     12,
+     7
+    ],
+    "H": [
+     10,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     12,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     8,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     11,
+     4,
+     3
+    ],
+    "H": [
+     6,
+     5
+    ],
+    "D": [
+     12,
+     11,
+     10,
+     7,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     9
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     10,
+     6,
+     2
+    ],
+    "H": [
+     7,
+     6
+    ],
+    "D": [
+     14,
+     10,
+     7,
+     6,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     6
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     12,
+     11
+    ],
+    "H": [
+     12,
+     9,
+     4
+    ],
+    "D": [
+     13,
+     11,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     7,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     11,
+     9,
+     7
+    ],
+    "H": [
+     14,
+     10
+    ],
+    "D": [
+     11,
+     7,
+     6,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     9,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     11,
+     9,
+     8
+    ],
+    "H": [
+     14,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     10,
+     7,
+     5
+    ],
+    "C": [
+     13,
+     4,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     9,
+     2
+    ],
+    "H": [
+     8,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     8,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     10,
+     9,
+     2
+    ],
+    "H": [
+     13,
+     12
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     6,
+     2
+    ],
+    "C": [
+     10,
+     8,
+     7
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     10,
+     9,
+     7
+    ],
+    "H": [
+     11,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     10
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "correct": "3♦",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     12,
+     11
+    ],
+    "H": [
+     13,
+     10,
+     7
+    ],
+    "D": [
+     12,
+     9,
+     8,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     8,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     6,
+     3,
+     2
+    ],
+    "H": [
+     8,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     6
+    ],
+    "C": [
+     13,
+     4,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "correct": "3♦",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♦ i ruder."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     8,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     11,
+     7
+    ],
+    "D": [
+     7,
+     2
+    ],
+    "C": [
+     11,
+     10,
+     9,
+     4,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "2♣",
+   "why": "6 hp – devalueret 3: 5 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     12,
+     9,
+     2
+    ],
+    "H": [
+     11,
+     8
+    ],
+    "D": [
+     8,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     7,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♣",
+   "why": "8 hp – devalueret 5: 5 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     10,
+     2
+    ],
+    "H": [
+     7,
+     4,
+     2
+    ],
+    "D": [
+     10,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     7,
+     6
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "2♣",
+   "why": "7 hp – devalueret 4: 5 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     10,
+     7
+    ],
+    "H": [
+     14,
+     10,
+     9
+    ],
+    "D": [
+     11,
+     6,
+     5
+    ],
+    "C": [
+     11,
+     8,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "2♣",
+   "why": "6 hp – devalueret 3: 5 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     6,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     9
+    ],
+    "D": [
+     8,
+     7,
+     4
+    ],
+    "C": [
+     12,
+     10,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "2♣",
+   "why": "4 hp – devalueret 1: 5 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     12,
+     10,
+     3
+    ],
+    "H": [
+     6,
+     3,
+     2
+    ],
+    "D": [
+     7,
+     6,
+     4
+    ],
+    "C": [
+     9,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 2,
+   "sp": 2,
+   "correct": "2♣",
+   "why": "2 hp – devalueret 0: 4 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     9,
+     5,
+     4
+    ],
+    "H": [
+     13,
+     10,
+     9
+    ],
+    "D": [
+     9,
+     3
+    ],
+    "C": [
+     10,
+     6,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "correct": "2♣",
+   "why": "3 hp – devalueret 0: 5 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     9,
+     7,
+     4
+    ],
+    "H": [
+     11,
+     10,
+     6
+    ],
+    "D": [
+     12,
+     11,
+     5
+    ],
+    "C": [
+     13,
+     9,
+     7,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "2♣",
+   "why": "7 hp – devalueret 4: 4 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     7,
+     6
+    ],
+    "H": [
+     10,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     8,
+     6
+    ],
+    "C": [
+     10,
+     9,
+     8,
+     6,
+     2
+    ]
+   },
+   "hp": 2,
+   "sp": 3,
+   "correct": "2♣",
+   "why": "2 hp – devalueret 0: 5 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     14,
+     9,
+     7
+    ],
+    "H": [
+     7,
+     4
+    ],
+    "D": [
+     12,
+     10,
+     5
+    ],
+    "C": [
+     11,
+     10,
+     8,
+     6,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "2♣",
+   "why": "7 hp – devalueret 4: 5 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     12,
+     7,
+     6
+    ],
+    "H": [
+     13,
+     12,
+     11
+    ],
+    "D": [
+     7,
+     4
+    ],
+    "C": [
+     8,
+     7,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♣",
+   "why": "8 hp – devalueret 5: 5 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     7,
+     6,
+     2
+    ],
+    "H": [
+     9,
+     6,
+     2
+    ],
+    "D": [
+     10,
+     9,
+     2
+    ],
+    "C": [
+     10,
+     9,
+     6,
+     5
+    ]
+   },
+   "hp": 0,
+   "sp": 0,
+   "correct": "2♣",
+   "why": "0 hp – devalueret 0: 4 klør billigst, 2♣."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     8,
+     5
+    ],
+    "H": [
+     7,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     11
+    ],
+    "C": [
+     12,
+     10,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     11,
+     10,
+     2
+    ],
+    "H": [
+     14,
+     12
+    ],
+    "D": [
+     11,
+     8,
+     4
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     8,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     9,
+     6,
+     4
+    ],
+    "H": [
+     13,
+     5,
+     3
+    ],
+    "D": [
+     11,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     9,
+     8,
+     3
+    ],
+    "H": [
+     5,
+     4
+    ],
+    "D": [
+     13,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     8,
+     7,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     9,
+     3
+    ],
+    "H": [
+     14,
+     9,
+     8
+    ],
+    "D": [
+     7,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     7,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     8,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     10,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     2
+    ],
+    "C": [
+     8,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "correct": "3♣",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     7,
+     4
+    ],
+    "H": [
+     14,
+     7,
+     5
+    ],
+    "D": [
+     13,
+     11,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     5,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     9,
+     7,
+     3
+    ],
+    "H": [
+     11,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     7,
+     6
+    ],
+    "H": [
+     13,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     10
+    ],
+    "C": [
+     11,
+     9,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     11,
+     6,
+     5
+    ],
+    "H": [
+     13,
+     4
+    ],
+    "D": [
+     13,
+     7,
+     3
+    ],
+    "C": [
+     13,
+     9,
+     8,
+     7,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     11,
+     9,
+     2
+    ],
+    "H": [
+     14,
+     9,
+     3
+    ],
+    "D": [
+     13,
+     7
+    ],
+    "C": [
+     13,
+     9,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "11 hp – devalueret 8 (7–10): spring til 3♣ i klør."
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     9,
+     8,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     4
+    ],
+    "D": [
+     11,
+     5
+    ],
+    "C": [
+     12,
+     11,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "10 hp – devalueret 7 (7–10): spring til 3♣ i klør."
+  }
+ ]
+}
