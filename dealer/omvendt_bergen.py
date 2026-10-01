@@ -128,6 +128,16 @@ def opener_sp(hand, hp, M):
     L = lengths_of(hand)
     return hp + sum({0: 5, 1: 3, 2: 1}.get(L[s], 0) for s in SUITS if s != M) + max(0, L[M] - 5)
 
+def sp_detail(hand, hp, M):
+    L = lengths_of(hand)
+    parts = [f"{hp} hp"]
+    for s in SUITS:
+        if s != M and L[s] <= 2:
+            parts.append(f"{['renonce', 'single', 'double'][L[s]]} {SUIT_SYM[s]} = {[5, 3, 1][L[s]]}")
+    if L[M] > 5:
+        parts.append(f"{L[M] - 5} ekstra trumf")
+    return " + ".join(parts)
+
 def opener_first(M, bid):
     sym = SUIT_SYM[M]
     lo, hi = SUPPORT[bid]
@@ -137,7 +147,7 @@ def opener_first(M, bid):
         if L[M] < 5 or not (12 <= hp <= 21):
             return None
         sp = opener_sp(hand, hp, M)
-        pts = f"{sp} sp ({hp} hp + korthed og ekstra trumf)" if sp != hp else f"{sp} sp"
+        pts = f"{sp} sp ({sp_detail(hand, hp, M)})" if sp != hp else f"{sp} sp"
         if sp + hi < GAME:
             return f"3{sym}", f"{pts} + højst {hi} hos makker er under {GAME}: afmeld i 3{sym}."
         if sp + lo >= GAME:
@@ -171,6 +181,10 @@ BONUS["aab"] = {"q": "Må åbner tælle støttepoint efter makkers 3♣/3♦?",
 for M, key in (('H', 'hj'), ('S', 'sp')):
     sym, om = SUIT_SYM[M], OTHER[M]
     ophand = lambda hp, M=M: tpl(hp, **{M: (5, 6), **{s: (1, 4) for s in SUITS if s != M}})
+    # minimumshænder, der når udgang på fordelingen: renonce (5 sp) eller single (3 sp) i en sidefarve
+    shorthand = lambda hp, n, M=M: either(*[tpl(hp, **{M: (5, 6), **{x: (n, n) if x == s else (2, 6) for x in SUITS if x != M}})
+                                            for s in SUITS if s != M])
+    distr = lambda M=M: either(ophand((13, 21), M), shorthand((12, 14), 0, M), shorthand((12, 15), 1, M))
     for bid, bkey in (("3♦", "3ru"), ("3♣", "3kl")):
         ask = "3♥" if bid == "3♦" else "3♦"
         has_ask = not (M == 'H' and bid == "3♦")
@@ -179,7 +193,7 @@ for M, key in (('H', 'hj'), ('S', 'sp')):
         SITUATIONS[sk] = {"rolle": "Åbner", "auction": [["Dig", f"1{sym}"], PAS, ["Makker", bid], PAS],
                           "calls": sorted(set(calls), key=lambda c: (c == "Pas", c)), "bonus": BONUS["aab"]}
         CLASSIFIERS[sk] = opener_first(M, bid)
-        SAMPLERS[sk] = {f"3{sym}": ophand((12, 14)), f"4{sym}": ophand((13, 21))}
+        SAMPLERS[sk] = {f"3{sym}": ophand((12, 14)), f"4{sym}": distr()}
         if has_ask:
             SAMPLERS[sk][ask] = ophand((12, 16))
         PER_CALL[sk] = 14
