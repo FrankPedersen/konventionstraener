@@ -1,0 +1,3844 @@
+{
+ "situations": {
+  "gif_ru": {
+   "rolle": "Genåbner",
+   "auction": [
+    [
+     "Modstander",
+     "1♦"
+    ],
+    [
+     "Makker",
+     "Pas"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "allowX": true,
+   "calls": [
+    "X",
+    "Pas",
+    "1♥",
+    "1♠",
+    "1NT",
+    "2♣",
+    "2♥",
+    "2♠",
+    "2NT"
+   ],
+   "bonus": {
+    "q": "Hvad låner du ved genåbning i fjerde hånd?",
+    "correct": "3–4 hp af makker – men ikke på jævne hænder",
+    "options": [
+     "3–4 hp af makker – men ikke på jævne hænder",
+     "Intet – samme krav som direkte",
+     "3–4 hp, også på jævne hænder"
+    ],
+    "why": "Lånet kompenserer for fordeling, ikke for point. Jævne hænder melder efter rene hp: pas under 11, 1NT 11–14, X 15–18, 2NT 19–21."
+   }
+  },
+  "gif_hj": {
+   "rolle": "Genåbner",
+   "auction": [
+    [
+     "Modstander",
+     "1♥"
+    ],
+    [
+     "Makker",
+     "Pas"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "allowX": true,
+   "calls": [
+    "X",
+    "Pas",
+    "1♠",
+    "1NT",
+    "2♣",
+    "2♦",
+    "2♠",
+    "2NT"
+   ],
+   "bonus": {
+    "q": "Hvad låner du ved genåbning i fjerde hånd?",
+    "correct": "3–4 hp af makker – men ikke på jævne hænder",
+    "options": [
+     "3–4 hp af makker – men ikke på jævne hænder",
+     "Intet – samme krav som direkte",
+     "3–4 hp, også på jævne hænder"
+    ],
+    "why": "Lånet kompenserer for fordeling, ikke for point. Jævne hænder melder efter rene hp: pas under 11, 1NT 11–14, X 15–18, 2NT 19–21."
+   }
+  },
+  "gif_sp": {
+   "rolle": "Genåbner",
+   "auction": [
+    [
+     "Modstander",
+     "1♠"
+    ],
+    [
+     "Makker",
+     "Pas"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "allowX": true,
+   "calls": [
+    "X",
+    "Pas",
+    "1NT",
+    "2♣",
+    "2♦",
+    "2♥",
+    "2NT"
+   ],
+   "bonus": {
+    "q": "Hvad låner du ved genåbning i fjerde hånd?",
+    "correct": "3–4 hp af makker – men ikke på jævne hænder",
+    "options": [
+     "3–4 hp af makker – men ikke på jævne hænder",
+     "Intet – samme krav som direkte",
+     "3–4 hp, også på jævne hænder"
+    ],
+    "why": "Lånet kompenserer for fordeling, ikke for point. Jævne hænder melder efter rene hp: pas under 11, 1NT 11–14, X 15–18, 2NT 19–21."
+   }
+  }
+ },
+ "hands": [
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     14,
+     8,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     6
+    ],
+    "D": [
+     9,
+     8,
+     7
+    ],
+    "C": [
+     11,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "Jævn hånd med 10 hp: pas – ved GIF låner du ikke på jævne hænder (under 11).",
+   "aftale": true
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     11,
+     4,
+     2
+    ],
+    "H": [
+     12,
+     7,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     10,
+     4
+    ],
+    "C": [
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 6,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "Jævn hånd med 6 hp: pas – for lidt til at genåbne."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     9,
+     8
+    ],
+    "H": [
+     9,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     8,
+     3
+    ],
+    "C": [
+     11,
+     10,
+     5
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "Jævn hånd med 4 hp: pas – for lidt til at genåbne."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     11,
+     6,
+     3
+    ],
+    "H": [
+     13,
+     10,
+     8,
+     6
+    ],
+    "D": [
+     10,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "Jævn hånd med 9 hp: pas – ved GIF låner du ikke på jævne hænder (under 11).",
+   "aftale": true
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     8,
+     7,
+     2
+    ],
+    "H": [
+     13,
+     7,
+     5
+    ],
+    "D": [
+     13,
+     6,
+     3
+    ],
+    "C": [
+     8,
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 6,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "Jævn hånd med 6 hp: pas – for lidt til at genåbne."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     12,
+     7,
+     4
+    ],
+    "H": [
+     9,
+     6,
+     4
+    ],
+    "D": [
+     14,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     6,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "zone": "ns",
+   "correct": "1NT",
+   "why": "Jævn hånd med 13 hp: 1NT (11–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     6,
+     3
+    ],
+    "D": [
+     9,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 14,
+   "zone": "ingen",
+   "correct": "1NT",
+   "why": "Jævn hånd med 14 hp: 1NT (11–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     9,
+     7,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     4,
+     3
+    ],
+    "D": [
+     9,
+     8,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "zone": "ov",
+   "correct": "1NT",
+   "why": "Jævn hånd med 13 hp: 1NT (11–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     6
+    ],
+    "H": [
+     7,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "zone": "ns",
+   "correct": "1NT",
+   "why": "Jævn hånd med 13 hp: 1NT (11–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     7,
+     5
+    ],
+    "D": [
+     4,
+     2
+    ],
+    "C": [
+     12,
+     8,
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "zone": "ov",
+   "correct": "1NT",
+   "why": "Jævn hånd med 13 hp: 1NT (11–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     9,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     5
+    ],
+    "D": [
+     14,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     7
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "zone": "ov",
+   "correct": "X",
+   "why": "Jævn hånd med 18 hp: dobling – og sans billigst bagefter (15–18)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     8,
+     7
+    ],
+    "H": [
+     11,
+     9,
+     5,
+     3
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "zone": "ov",
+   "correct": "X",
+   "why": "10 hp og kort i ruder: dobling – du låner 3–4 hp af makker (nedre grænse ca. 9)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     12,
+     8,
+     7,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     5,
+     3
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     14,
+     9,
+     5,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "zone": "alle",
+   "correct": "X",
+   "why": "13 hp og kort i ruder: dobling – du låner 3–4 hp af makker (nedre grænse ca. 9)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     3
+    ],
+    "H": [
+     12,
+     8,
+     6
+    ],
+    "D": [
+     10,
+     8,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     10
+    ]
+   },
+   "hp": 16,
+   "sp": 16,
+   "zone": "ov",
+   "correct": "X",
+   "why": "Jævn hånd med 16 hp: dobling – og sans billigst bagefter (15–18)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     14,
+     9,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     9
+    ],
+    "C": [
+     14,
+     13,
+     6
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "Jævn hånd med 15 hp: dobling – og sans billigst bagefter (15–18)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     13,
+     10,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     6
+    ],
+    "D": [
+     14,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     8,
+     4
+    ]
+   },
+   "hp": 20,
+   "sp": 21,
+   "zone": "ov",
+   "correct": "2NT",
+   "why": "Jævn hånd med 20 hp: 2NT (19–21)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     10
+    ],
+    "D": [
+     14,
+     9,
+     2
+    ],
+    "C": [
+     11,
+     7,
+     6
+    ]
+   },
+   "hp": 19,
+   "sp": 19,
+   "zone": "ov",
+   "correct": "2NT",
+   "why": "Jævn hånd med 19 hp: 2NT (19–21)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11
+    ],
+    "H": [
+     9,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     10
+    ]
+   },
+   "hp": 19,
+   "sp": 19,
+   "zone": "ns",
+   "correct": "2NT",
+   "why": "Jævn hånd med 19 hp: 2NT (19–21)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     5
+    ],
+    "H": [
+     12,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     13,
+     11,
+     3
+    ]
+   },
+   "hp": 19,
+   "sp": 20,
+   "zone": "ov",
+   "correct": "2NT",
+   "why": "Jævn hånd med 19 hp: 2NT (19–21)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     13,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     5,
+     4
+    ],
+    "D": [
+     12,
+     11
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     10
+    ]
+   },
+   "hp": 20,
+   "sp": 21,
+   "zone": "ns",
+   "correct": "2NT",
+   "why": "Jævn hånd med 20 hp: 2NT (19–21)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     10,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     2
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     9,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "zone": "ingen",
+   "correct": "2♣",
+   "why": "5 klør og 8 hp: 2♣ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     9,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     7,
+     6,
+     4
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     14,
+     10,
+     9,
+     6,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "zone": "ns",
+   "correct": "2♣",
+   "why": "5 klør og 12 hp: 2♣ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     13,
+     7,
+     4,
+     3
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     13,
+     12,
+     3
+    ],
+    "C": [
+     13,
+     8,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "zone": "ov",
+   "correct": "2♣",
+   "why": "5 klør og 11 hp: 2♣ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     7,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     11,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "5 klør og 12 hp: 2♣ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     14,
+     9,
+     5
+    ],
+    "H": [
+     11,
+     10,
+     9,
+     2
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     14,
+     9,
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "5 klør og 9 hp: 2♣ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     12,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     11,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     10,
+     2
+    ],
+    "C": [
+     6,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "zone": "ingen",
+   "correct": "1♥",
+   "why": "5 hjerter og 7 hp: 1♥ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     8,
+     5
+    ],
+    "H": [
+     11,
+     10,
+     8,
+     6,
+     5
+    ],
+    "D": [
+     11,
+     9
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "zone": "ov",
+   "correct": "1♥",
+   "why": "5 hjerter og 9 hp: 1♥ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     7,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     9,
+     5
+    ],
+    "D": [
+     13,
+     10
+    ],
+    "C": [
+     11,
+     10,
+     9,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "1♥",
+   "why": "5 hjerter og 7 hp: 1♥ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     13,
+     11,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     7,
+     4
+    ],
+    "D": [
+     9,
+     3
+    ],
+    "C": [
+     8,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "1♥",
+   "why": "5 hjerter og 9 hp: 1♥ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     8,
+     5
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     13,
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "zone": "ns",
+   "correct": "1♥",
+   "why": "5 hjerter og 12 hp: 1♥ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     11,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     8,
+     7,
+     4
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     13,
+     8,
+     4,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "Seksfarve og 11 hp: spring til 2♥ – efter to passer er spring konstruktive (11–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     10,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     10,
+     8
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "zone": "alle",
+   "correct": "2♥",
+   "why": "Seksfarve og 11 hp: spring til 2♥ – efter to passer er spring konstruktive (11–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     13,
+     10,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     11,
+     10
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "Seksfarve og 12 hp: spring til 2♥ – efter to passer er spring konstruktive (11–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     12,
+     9,
+     8,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     7
+    ],
+    "C": [
+     14,
+     8,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "zone": "ingen",
+   "correct": "2♥",
+   "why": "Seksfarve og 12 hp: spring til 2♥ – efter to passer er spring konstruktive (11–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     10,
+     7,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     10,
+     9,
+     7
+    ],
+    "D": [
+     10,
+     8
+    ],
+    "C": [
+     14,
+     11
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "zone": "ingen",
+   "correct": "2♥",
+   "why": "Seksfarve og 11 hp: spring til 2♥ – efter to passer er spring konstruktive (11–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     11,
+     9,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     13,
+     12,
+     8
+    ],
+    "C": [
+     10,
+     7,
+     4,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "zone": "ingen",
+   "correct": "1♠",
+   "why": "5 spar og 10 hp: 1♠ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     9,
+     4
+    ],
+    "H": [
+     11,
+     9,
+     8,
+     7
+    ],
+    "D": [
+     13,
+     5,
+     2
+    ],
+    "C": [
+     9
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "zone": "alle",
+   "correct": "1♠",
+   "why": "5 spar og 10 hp: 1♠ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     7
+    ],
+    "D": [
+     9,
+     4,
+     2
+    ],
+    "C": [
+     9
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "zone": "ns",
+   "correct": "1♠",
+   "why": "5 spar og 12 hp: 1♠ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     9,
+     8
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     13,
+     6,
+     2
+    ],
+    "C": [
+     10,
+     9,
+     6,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "1♠",
+   "why": "5 spar og 9 hp: 1♠ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     9,
+     5,
+     3
+    ],
+    "H": [
+     11,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     13,
+     4,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "zone": "ingen",
+   "correct": "1♠",
+   "why": "5 spar og 12 hp: 1♠ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     13,
+     9,
+     6,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     14,
+     13,
+     9
+    ],
+    "C": [
+     12,
+     9,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "zone": "ingen",
+   "correct": "2♠",
+   "why": "Seksfarve og 12 hp: spring til 2♠ – efter to passer er spring konstruktive (11–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     7,
+     4,
+     3
+    ],
+    "H": [
+     11,
+     7,
+     5
+    ],
+    "D": [
+     3,
+     2
+    ],
+    "C": [
+     14,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "zone": "ns",
+   "correct": "2♠",
+   "why": "Seksfarve og 11 hp: spring til 2♠ – efter to passer er spring konstruktive (11–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     9,
+     8,
+     7
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     11,
+     9,
+     8
+    ],
+    "C": [
+     10,
+     6,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "zone": "alle",
+   "correct": "2♠",
+   "why": "Seksfarve og 12 hp: spring til 2♠ – efter to passer er spring konstruktive (11–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     8,
+     6,
+     3
+    ],
+    "H": [
+     10,
+     9,
+     8
+    ],
+    "D": [
+     13,
+     3
+    ],
+    "C": [
+     14,
+     9
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "zone": "alle",
+   "correct": "2♠",
+   "why": "Seksfarve og 14 hp: spring til 2♠ – efter to passer er spring konstruktive (11–14)."
+  },
+  {
+   "situation": "gif_ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     13,
+     10,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     8
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "zone": "alle",
+   "correct": "2♠",
+   "why": "Seksfarve og 13 hp: spring til 2♠ – efter to passer er spring konstruktive (11–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     13,
+     8,
+     7,
+     5
+    ],
+    "H": [
+     10,
+     7,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     4
+    ],
+    "C": [
+     11,
+     9,
+     6
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "Jævn hånd med 7 hp: pas – for lidt til at genåbne."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     9,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     6
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     10,
+     8,
+     5,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "6 hp uden femfarve: pas."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     10,
+     5,
+     2
+    ],
+    "H": [
+     13,
+     10,
+     7,
+     6
+    ],
+    "D": [
+     10,
+     8,
+     7
+    ],
+    "C": [
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 3,
+   "sp": 3,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "Jævn hånd med 3 hp: pas – for lidt til at genåbne."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     10,
+     7,
+     6,
+     2
+    ],
+    "H": [
+     11,
+     9,
+     7,
+     5
+    ],
+    "D": [
+     10,
+     4
+    ],
+    "C": [
+     13,
+     9,
+     8
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "Jævn hånd med 4 hp: pas – for lidt til at genåbne."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     9,
+     8,
+     6,
+     2
+    ],
+    "H": [
+     13,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     7,
+     5
+    ],
+    "C": [
+     9,
+     8
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "Jævn hånd med 6 hp: pas – for lidt til at genåbne."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     11,
+     9,
+     2
+    ],
+    "H": [
+     10,
+     9,
+     8
+    ],
+    "D": [
+     13,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     9
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "zone": "ov",
+   "correct": "1NT",
+   "why": "Jævn hånd med 13 hp: 1NT (11–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     14,
+     7,
+     2
+    ],
+    "H": [
+     8,
+     4
+    ],
+    "D": [
+     13,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "zone": "ns",
+   "correct": "1NT",
+   "why": "Jævn hånd med 12 hp: 1NT (11–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     5
+    ],
+    "H": [
+     14,
+     10
+    ],
+    "D": [
+     13,
+     9,
+     8,
+     2
+    ],
+    "C": [
+     11,
+     9,
+     5,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "zone": "alle",
+   "correct": "1NT",
+   "why": "Jævn hånd med 12 hp: 1NT (11–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8,
+     5
+    ],
+    "H": [
+     10,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     5
+    ],
+    "C": [
+     13,
+     9,
+     8,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "zone": "alle",
+   "correct": "1NT",
+   "why": "Jævn hånd med 14 hp: 1NT (11–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     14,
+     11,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     8
+    ],
+    "D": [
+     12,
+     9,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "zone": "ov",
+   "correct": "1NT",
+   "why": "Jævn hånd med 13 hp: 1NT (11–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7
+    ],
+    "H": [
+     12,
+     10,
+     4
+    ],
+    "D": [
+     14,
+     10,
+     6
+    ],
+    "C": [
+     14,
+     7,
+     3,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 16,
+   "zone": "alle",
+   "correct": "X",
+   "why": "Jævn hånd med 16 hp: dobling – og sans billigst bagefter (15–18)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     14,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     7
+    ],
+    "C": [
+     10,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "11 hp og kort i hjerter: dobling – du låner 3–4 hp af makker (nedre grænse ca. 9)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     5,
+     4
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     12,
+     9,
+     8,
+     7
+    ],
+    "C": [
+     12,
+     10,
+     8,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "zone": "ns",
+   "correct": "X",
+   "why": "10 hp og kort i hjerter: dobling – du låner 3–4 hp af makker (nedre grænse ca. 9)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     14,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     8,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     11
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     4
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "zone": "ov",
+   "correct": "X",
+   "why": "Jævn hånd med 17 hp: dobling – og sans billigst bagefter (15–18)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9
+    ],
+    "H": [
+     12,
+     10,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     8
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 16,
+   "zone": "ov",
+   "correct": "X",
+   "why": "Jævn hånd med 16 hp: dobling – og sans billigst bagefter (15–18)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7,
+     3
+    ],
+    "H": [
+     9,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     8
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     9
+    ]
+   },
+   "hp": 20,
+   "sp": 21,
+   "zone": "ingen",
+   "correct": "2NT",
+   "why": "Jævn hånd med 20 hp: 2NT (19–21)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12
+    ],
+    "H": [
+     12,
+     10,
+     7
+    ],
+    "D": [
+     12,
+     7,
+     6
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     9
+    ]
+   },
+   "hp": 19,
+   "sp": 19,
+   "zone": "ingen",
+   "correct": "2NT",
+   "why": "Jævn hånd med 19 hp: 2NT (19–21)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     5
+    ],
+    "H": [
+     11,
+     8,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     5
+    ],
+    "C": [
+     13,
+     12,
+     5
+    ]
+   },
+   "hp": 19,
+   "sp": 19,
+   "zone": "ov",
+   "correct": "2NT",
+   "why": "Jævn hånd med 19 hp: 2NT (19–21)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     14,
+     9,
+     7
+    ],
+    "H": [
+     13,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     4,
+     2
+    ]
+   },
+   "hp": 21,
+   "sp": 22,
+   "zone": "ov",
+   "correct": "2NT",
+   "why": "Jævn hånd med 21 hp: 2NT (19–21)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     8
+    ],
+    "C": [
+     12,
+     10,
+     4
+    ]
+   },
+   "hp": 20,
+   "sp": 21,
+   "zone": "ns",
+   "correct": "2NT",
+   "why": "Jævn hånd med 20 hp: 2NT (19–21)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     8,
+     6,
+     2
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     11,
+     9,
+     8,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     7,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "zone": "ns",
+   "correct": "2♣",
+   "why": "5 klør og 11 hp: 2♣ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     12,
+     10,
+     6,
+     3
+    ],
+    "H": [
+     12,
+     2
+    ],
+    "D": [
+     6,
+     4
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     5,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "5 klør og 9 hp: 2♣ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     11,
+     9,
+     8,
+     4
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     14,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "5 klør og 9 hp: 2♣ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     14,
+     8,
+     7,
+     3
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     11,
+     10,
+     6
+    ],
+    "C": [
+     13,
+     11,
+     8,
+     7,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "zone": "ov",
+   "correct": "2♣",
+   "why": "5 klør og 13 hp: 2♣ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     11,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     11,
+     10,
+     3
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     10,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "zone": "ns",
+   "correct": "2♣",
+   "why": "5 klør og 11 hp: 2♣ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
+     6,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     11,
+     7,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     8,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "5 ruder og 8 hp: 2♦ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     8
+    ],
+    "H": [
+     13,
+     5
+    ],
+    "D": [
+     12,
+     10,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     9,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "5 ruder og 10 hp: 2♦ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     11,
+     10,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     7,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     8,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "5 ruder og 11 hp: 2♦ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     8,
+     6,
+     3
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     13,
+     11,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     10,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "5 ruder og 9 hp: 2♦ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     8,
+     7
+    ],
+    "H": [
+     8,
+     4
+    ],
+    "D": [
+     13,
+     10,
+     8,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "5 ruder og 8 hp: 2♦ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     7,
+     3
+    ],
+    "H": [
+     7,
+     6
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     12,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "zone": "alle",
+   "correct": "1♠",
+   "why": "5 spar og 12 hp: 1♠ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     10,
+     9,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     8,
+     7,
+     4
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "zone": "ov",
+   "correct": "1♠",
+   "why": "5 spar og 12 hp: 1♠ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     10,
+     8,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     8,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "zone": "ov",
+   "correct": "1♠",
+   "why": "5 spar og 11 hp: 1♠ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     8,
+     4
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     11,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "zone": "alle",
+   "correct": "1♠",
+   "why": "5 spar og 11 hp: 1♠ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     10,
+     8,
+     7,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     10
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     12,
+     9,
+     7,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "zone": "ns",
+   "correct": "1♠",
+   "why": "5 spar og 7 hp: 1♠ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     8,
+     7,
+     3
+    ],
+    "H": [
+     12,
+     2
+    ],
+    "D": [
+     13,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "zone": "alle",
+   "correct": "2♠",
+   "why": "Seksfarve og 13 hp: spring til 2♠ – efter to passer er spring konstruktive (11–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     8,
+     5,
+     2
+    ],
+    "H": [
+     11,
+     4
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     13,
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "zone": "ns",
+   "correct": "2♠",
+   "why": "Seksfarve og 12 hp: spring til 2♠ – efter to passer er spring konstruktive (11–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     9
+    ],
+    "D": [
+     12,
+     8
+    ],
+    "C": [
+     10,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "zone": "alle",
+   "correct": "2♠",
+   "why": "Seksfarve og 14 hp: spring til 2♠ – efter to passer er spring konstruktive (11–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     7,
+     6,
+     2
+    ],
+    "H": [
+     11,
+     7
+    ],
+    "D": [
+     10,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     11
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "zone": "ov",
+   "correct": "2♠",
+   "why": "Seksfarve og 13 hp: spring til 2♠ – efter to passer er spring konstruktive (11–14)."
+  },
+  {
+   "situation": "gif_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     8,
+     4,
+     2
+    ],
+    "H": [
+     8,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     11,
+     8
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "zone": "ns",
+   "correct": "2♠",
+   "why": "Seksfarve og 13 hp: spring til 2♠ – efter to passer er spring konstruktive (11–14)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     10,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     9,
+     2
+    ],
+    "D": [
+     10,
+     6,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     9
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "Jævn hånd med 9 hp: pas – ved GIF låner du ikke på jævne hænder (under 11).",
+   "aftale": true
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     9,
+     2
+    ],
+    "H": [
+     12,
+     9,
+     6,
+     2
+    ],
+    "D": [
+     5,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     6,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "Jævn hånd med 6 hp: pas – for lidt til at genåbne."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     12,
+     10,
+     6,
+     4
+    ],
+    "H": [
+     7,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     7,
+     6
+    ],
+    "C": [
+     11,
+     9,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 6,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "Jævn hånd med 6 hp: pas – for lidt til at genåbne."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     9,
+     8,
+     5
+    ],
+    "H": [
+     10,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     10,
+     9,
+     7
+    ],
+    "C": [
+     14,
+     6,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "Jævn hånd med 7 hp: pas – for lidt til at genåbne."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     11,
+     10,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     11
+    ],
+    "D": [
+     10,
+     8,
+     7,
+     5
+    ],
+    "C": [
+     10,
+     8,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "Jævn hånd med 9 hp: pas – ved GIF låner du ikke på jævne hænder (under 11).",
+   "aftale": true
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8
+    ],
+    "H": [
+     14,
+     12,
+     4,
+     3
+    ],
+    "D": [
+     11,
+     10,
+     4
+    ],
+    "C": [
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "1NT",
+   "why": "Jævn hånd med 12 hp: 1NT (11–14)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     8,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     3
+    ],
+    "D": [
+     13,
+     8,
+     3
+    ],
+    "C": [
+     11,
+     9,
+     6,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "zone": "ingen",
+   "correct": "1NT",
+   "why": "Jævn hånd med 13 hp: 1NT (11–14)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     12,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     7
+    ],
+    "D": [
+     8,
+     6,
+     2
+    ],
+    "C": [
+     13,
+     10,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "zone": "ingen",
+   "correct": "1NT",
+   "why": "Jævn hånd med 11 hp: 1NT (11–14)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     13,
+     11
+    ],
+    "H": [
+     13,
+     5,
+     4
+    ],
+    "D": [
+     11,
+     9,
+     8,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "zone": "ns",
+   "correct": "1NT",
+   "why": "Jævn hånd med 13 hp: 1NT (11–14)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     2
+    ],
+    "H": [
+     11,
+     9,
+     3,
+     2
+    ],
+    "D": [
+     11,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     8
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "zone": "alle",
+   "correct": "1NT",
+   "why": "Jævn hånd med 13 hp: 1NT (11–14)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     13,
+     12
+    ],
+    "H": [
+     14,
+     13,
+     8
+    ],
+    "D": [
+     12,
+     7,
+     6,
+     4
+    ],
+    "C": [
+     14,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "zone": "ns",
+   "correct": "X",
+   "why": "Jævn hånd med 18 hp: dobling – og sans billigst bagefter (15–18)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     14,
+     7,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     9
+    ],
+    "D": [
+     11,
+     9,
+     6
+    ],
+    "C": [
+     14,
+     8,
+     4
+    ]
+   },
+   "hp": 18,
+   "sp": 18,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "Jævn hånd med 18 hp: dobling – og sans billigst bagefter (15–18)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     11,
+     10,
+     8
+    ],
+    "H": [
+     13,
+     12,
+     10
+    ],
+    "D": [
+     14,
+     12,
+     8,
+     6
+    ],
+    "C": [
+     13,
+     11,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 16,
+   "zone": "ns",
+   "correct": "X",
+   "why": "Jævn hånd med 16 hp: dobling – og sans billigst bagefter (15–18)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     13,
+     8,
+     7,
+     3
+    ],
+    "D": [
+     13,
+     11,
+     6,
+     4
+    ],
+    "C": [
+     13,
+     11,
+     9,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "zone": "ns",
+   "correct": "X",
+   "why": "11 hp og kort i spar: dobling – du låner 3–4 hp af makker (nedre grænse ca. 9)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     5,
+     4
+    ],
+    "H": [
+     14,
+     8,
+     6,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     9
+    ],
+    "C": [
+     13,
+     6,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "zone": "ns",
+   "correct": "X",
+   "why": "Jævn hånd med 16 hp: dobling – og sans billigst bagefter (15–18)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     14,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     7,
+     4
+    ],
+    "C": [
+     14,
+     11,
+     7
+    ]
+   },
+   "hp": 20,
+   "sp": 20,
+   "zone": "ov",
+   "correct": "2NT",
+   "why": "Jævn hånd med 20 hp: 2NT (19–21)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     14,
+     6
+    ],
+    "H": [
+     13,
+     10,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     8,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     9
+    ]
+   },
+   "hp": 19,
+   "sp": 20,
+   "zone": "ingen",
+   "correct": "2NT",
+   "why": "Jævn hånd med 19 hp: 2NT (19–21)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     14,
+     11,
+     5
+    ],
+    "H": [
+     12,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     3
+    ]
+   },
+   "hp": 19,
+   "sp": 19,
+   "zone": "alle",
+   "correct": "2NT",
+   "why": "Jævn hånd med 19 hp: 2NT (19–21)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     4
+    ],
+    "D": [
+     14,
+     9,
+     7
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     6
+    ]
+   },
+   "hp": 20,
+   "sp": 21,
+   "zone": "alle",
+   "correct": "2NT",
+   "why": "Jævn hånd med 20 hp: 2NT (19–21)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     13,
+     10
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     8
+    ],
+    "D": [
+     14,
+     12,
+     8,
+     4
+    ],
+    "C": [
+     14,
+     11,
+     3
+    ]
+   },
+   "hp": 19,
+   "sp": 20,
+   "zone": "alle",
+   "correct": "2NT",
+   "why": "Jævn hånd med 19 hp: 2NT (19–21)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     7,
+     5
+    ],
+    "H": [
+     14,
+     10,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     9
+    ],
+    "C": [
+     12,
+     7,
+     5,
+     4,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "zone": "ov",
+   "correct": "2♣",
+   "why": "5 klør og 9 hp: 2♣ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     8,
+     4
+    ],
+    "H": [
+     11,
+     8
+    ],
+    "D": [
+     12,
+     10,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     10,
+     5,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "5 klør og 8 hp: 2♣ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     14,
+     13,
+     6,
+     3
+    ],
+    "D": [
+     9,
+     8,
+     6
+    ],
+    "C": [
+     11,
+     10,
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "zone": "ov",
+   "correct": "2♣",
+   "why": "5 klør og 8 hp: 2♣ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     10,
+     3,
+     2
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     13,
+     12,
+     8,
+     6
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     7,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "zone": "ingen",
+   "correct": "2♣",
+   "why": "5 klør og 8 hp: 2♣ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     10,
+     9,
+     2
+    ],
+    "H": [
+     14,
+     10,
+     7,
+     2
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     14,
+     11,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "5 klør og 11 hp: 2♣ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     14,
+     6,
+     3
+    ],
+    "H": [
+     10,
+     8,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     9,
+     7,
+     6,
+     4
+    ],
+    "C": [
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "5 ruder og 8 hp: 2♦ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     11,
+     9
+    ],
+    "H": [
+     12,
+     9,
+     6,
+     4
+    ],
+    "D": [
+     13,
+     10,
+     9,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     7
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "5 ruder og 8 hp: 2♦ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     12,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     7,
+     5
+    ],
+    "C": [
+     10,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "5 ruder og 7 hp: 2♦ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     6,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     8,
+     5
+    ],
+    "D": [
+     11,
+     10,
+     8,
+     7,
+     5
+    ],
+    "C": [
+     13,
+     10
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "5 ruder og 8 hp: 2♦ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     12,
+     7,
+     4
+    ],
+    "H": [
+     8
+    ],
+    "D": [
+     13,
+     12,
+     8,
+     5,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     8,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "5 ruder og 9 hp: 2♦ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     14,
+     10,
+     6
+    ],
+    "H": [
+     14,
+     9,
+     7,
+     5,
+     2
+    ],
+    "D": [
+     12,
+     7,
+     6,
+     3
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "5 hjerter og 10 hp: 2♥ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     13,
+     11,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     9,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     8,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "zone": "alle",
+   "correct": "2♥",
+   "why": "5 hjerter og 12 hp: 2♥ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     13,
+     9,
+     3
+    ],
+    "H": [
+     13,
+     9,
+     8,
+     5,
+     4
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     14,
+     10,
+     7,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "5 hjerter og 10 hp: 2♥ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     12
+    ],
+    "H": [
+     14,
+     8,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     8,
+     7,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "zone": "alle",
+   "correct": "2♥",
+   "why": "5 hjerter og 9 hp: 2♥ – farvemelding i fjerde hånd (ca. 7–14)."
+  },
+  {
+   "situation": "gif_sp",
+   "hand": {
+    "S": [
+     8,
+     4
+    ],
+    "H": [
+     12,
+     9,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     9
+    ],
+    "C": [
+     11,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "zone": "alle",
+   "correct": "2♥",
+   "why": "5 hjerter og 9 hp: 2♥ – farvemelding i fjerde hånd (ca. 7–14)."
+  }
+ ]
+}

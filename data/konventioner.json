@@ -2,7 +2,7 @@
  {
   "id": "multiforsvar",
   "titel": "Multiforsvar mod 1NT",
-  "gruppe": "Konkurrence",
+  "gruppe": "Forsvar mod 1NT",
   "beskrivelse": "Modstanderen åbner 1NT. Meld ind med D, 2♣–2NT eller på 3-trinnet – eller svar på makkers indmelding.",
   "roller": [
    "Indmelder",
@@ -10,7 +10,11 @@
   ],
   "status": "klar",
   "viden": "viden/bridgesystem.html#multiforsvar",
-  "system": "kf"
+  "system": [
+   "kf",
+   "kamp"
+  ],
+  "layout": "bord"
  },
  {
   "id": "michaels",
@@ -311,16 +315,20 @@
  },
  {
   "id": "ff-dont",
-  "system": "ff",
+  "system": [
+   "ff",
+   "kamp"
+  ],
   "titel": "DONT mod 1NT",
-  "gruppe": "Konkurrence",
+  "gruppe": "Forsvar mod 1NT",
   "beskrivelse": "D = én lang farve, 2♣/2♦ = farven + en højere, 2♥ = majorerne, 2NT = minorerne.",
   "roller": [
    "Indmelder",
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-15a"
+  "viden": "viden/2-over-1-flemming.html#afsnit-15a",
+  "layout": "bord"
  },
  {
   "id": "ff-michaels",
@@ -451,5 +459,148 @@
   ],
   "status": "klar",
   "viden": "viden/forslag-2klor-kontrolsvar.html"
+ },
+ {
+  "id": "kamp-landy",
+  "system": "kamp",
+  "titel": "Landy",
+  "gruppe": "Forsvar mod 1NT",
+  "beskrivelse": "2♣ = begge majorer (mindst 5-4), X straf, øvrige farver naturlige – og makkers svar: vælg major, 2♦ lige lange, 2NT spørger, 3M invit.",
+  "roller": [
+   "Indmelder",
+   "Svarer"
+  ],
+  "status": "klar",
+  "viden": "viden/kampen-om-kontrakten.html#14-forsvar-mod-modstandernes-1ut-aftale",
+  "layout": "bord"
+ },
+ {
+  "id": "kamp-stoette-def",
+  "system": "kamp",
+  "titel": "Støtte efter makkers indmelding",
+  "gruppe": "Moderne støtter",
+  "beskrivelse": "Enkeltstøtte 3 trumf, spring 4 trumf, udgang 5 trumf – alle 6–9. Med 10+ og støtte meldes fjendens farve. Spring i ny farve er udgangskrav.",
+  "roller": [
+   "Fortsætter"
+  ],
+  "status": "klar",
+  "viden": "viden/kampen-om-kontrakten.html#5-1-defensiven-svar-paa-makkers-simple-indmelding",
+  "layout": "bord",
+  "profiler": true
+ },
+ {
+  "id": "kamp-stoette-off",
+  "system": "kamp",
+  "titel": "Støtte efter indmelding over makkers åbning",
+  "gruppe": "Moderne støtter",
+  "beskrivelse": "2M, 3M og 4M viser 3, 4 og 5 trumf (6–9), fjendens farve 10+ med støtte, negativ dobling – og Stenberg 2NT i Turnering.",
+  "roller": [
+   "Svarer"
+  ],
+  "status": "klar",
+  "viden": "viden/kampen-om-kontrakten.html#5-2-offensiven-makker-har-aabnet-modparten-meldt-ind",
+  "layout": "bord",
+  "profiler": true
+ },
+ {
+  "id": "kamp-stoette-minor",
+  "system": "kamp",
+  "titel": "Minorstøtte og negativ dobling",
+  "gruppe": "Moderne støtter",
+  "beskrivelse": "Én trumf mere end i major på hvert trin, og majoren vises først. Efter 1♦ (1♠) lover doblingen fire eller flere hjerter.",
+  "roller": [
+   "Svarer"
+  ],
+  "status": "klar",
+  "viden": "viden/kampen-om-kontrakten.html#5-4-stoette-i-minor-i-offensiven",
+  "layout": "bord",
+  "profiler": true
+ },
+ {
+  "id": "kamp-efter-od",
+  "system": "kamp",
+  "titel": "Efter modpartens oplysningsdobling",
+  "gruppe": "Moderne støtter",
+  "beskrivelse": "Støtterne viser antal trumf, 2NT firkortstøtte 10+, XX 10+ uden firkortstøtte, 1♠ rundekrav og konstruktiv seksfarve i minor.",
+  "roller": [
+   "Svarer"
+  ],
+  "status": "klar",
+  "viden": "viden/kampen-om-kontrakten.html#5-3-efter-modpartens-oplysende-dobling",
+  "layout": "bord",
+  "profiler": true
+ },
+ {
+  "id": "kamp-gif",
+  "system": "kamp",
+  "titel": "GIF – genåbning i fjerde hånd",
+  "gruppe": "Konkurrence",
+  "beskrivelse": "Lån 3–4 hp på ujævne hænder: dobling fra 9 hp, farve 7–14, konstruktive spring. Jævne hænder: pas under 11, 1NT 11–14, X 15–18, 2NT 19–21.",
+  "roller": [
+   "Genåbner"
+  ],
+  "status": "klar",
+  "viden": "viden/kampen-om-kontrakten.html#7-gif-genaabning-i-fjerde-haand",
+  "layout": "bord",
+  "profiler": true
+ },
+ {
+  "id": "kamp-2020",
+  "system": "kamp",
+  "titel": "20-20 – kampen om delkontrakten",
+  "gruppe": "Konkurrence",
+  "beskrivelse": "Sælg ikke ud under 2♠, når de har fundet tilpasning – og meld efter trumfreglen og zonen, når I selv kæmper videre.",
+  "roller": [
+   "Fjerde hånd",
+   "Åbner"
+  ],
+  "status": "klar",
+  "viden": "viden/kampen-om-kontrakten.html#4-20-20-situationer",
+  "layout": "bord",
+  "profiler": true
+ },
+ {
+  "id": "kamp-doblinger",
+  "system": "kamp",
+  "titel": "Doblinger – position og oplysende",
+  "gruppe": "Konkurrence",
+  "beskrivelse": "Oplysningsdobling i anden hånd kræver 12–17, doblinger er oplysende når de har støttet hinanden, og med én umeldt farve viser doblingen den og medløb.",
+  "roller": [
+   "Anden hånd",
+   "Fjerde hånd",
+   "Fortsætter"
+  ],
+  "status": "klar",
+  "viden": "viden/kampen-om-kontrakten.html#6-doblinger-tag-makker-med-paa-raad",
+  "layout": "bord",
+  "profiler": true
+ },
+ {
+  "id": "kamp-1ut-indmeldt",
+  "system": "kamp",
+  "titel": "Fjenden melder 1NT ind",
+  "gruppe": "Sans",
+  "beskrivelse": "Efter makkers åbning og deres 1NT: dobling er straf og stærkest (9+), støtte naturlig, spring destruktivt og ny farve den svageste melding.",
+  "roller": [
+   "Svarer"
+  ],
+  "status": "klar",
+  "viden": "viden/kampen-om-kontrakten.html#8-fjenden-indmelder-1ut-efter-makkers-aabning",
+  "layout": "bord",
+  "profiler": true
+ },
+ {
+  "id": "kamp-1ut-forsvar",
+  "system": "kamp",
+  "titel": "Indmelding over vores 1NT",
+  "gruppe": "Sans",
+  "beskrivelse": "Stayman og transfers bortfalder: ny farve billigst = at spille, spring = krav, fjendens farve søger hold – og Lebensohl i Turnering. Plus flugt efter strafdobling.",
+  "roller": [
+   "Svarer"
+  ],
+  "status": "klar",
+  "viden": "viden/kampen-om-kontrakten.html#9-forsvar-mod-indmeldinger-efter-egen-1ut-aabning",
+  "layout": "bord",
+  "profiler": true
  }
 ]

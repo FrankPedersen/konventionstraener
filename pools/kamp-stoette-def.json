@@ -1,0 +1,4592 @@
+{
+ "situations": {
+  "def_kl_hj": {
+   "rolle": "Fortsætter",
+   "auction": [
+    [
+     "Modstander",
+     "1♣"
+    ],
+    [
+     "Makker",
+     "1♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "Pas",
+    "1♠",
+    "1NT",
+    "2♣",
+    "2♦",
+    "2♥",
+    "3♥",
+    "4♥"
+   ],
+   "bonus": {
+    "q": "Hvad viser et spring i makkers indmeldte farve?",
+    "correct": "Firkortstøtte og 6–9 – spærrende",
+    "options": [
+     "Firkortstøtte og 6–9 – spærrende",
+     "Invit, 10–12",
+     "Udgangskrav"
+    ],
+    "why": "Direkte støtter viser alle 6–9 og adskiller sig kun på antal trumfer. Stærkere hænder går via fjendens farve. Spring i ny farve er derimod udgangskrav."
+   }
+  },
+  "def_ru_sp": {
+   "rolle": "Fortsætter",
+   "auction": [
+    [
+     "Modstander",
+     "1♦"
+    ],
+    [
+     "Makker",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "Pas",
+    "1NT",
+    "2♣",
+    "2♦",
+    "2♥",
+    "2♠",
+    "3♠",
+    "4♠"
+   ],
+   "bonus": {
+    "q": "Hvad viser et spring i makkers indmeldte farve?",
+    "correct": "Firkortstøtte og 6–9 – spærrende",
+    "options": [
+     "Firkortstøtte og 6–9 – spærrende",
+     "Invit, 10–12",
+     "Udgangskrav"
+    ],
+    "why": "Direkte støtter viser alle 6–9 og adskiller sig kun på antal trumfer. Stærkere hænder går via fjendens farve. Spring i ny farve er derimod udgangskrav."
+   }
+  },
+  "def_kl_sp": {
+   "rolle": "Fortsætter",
+   "auction": [
+    [
+     "Modstander",
+     "1♣"
+    ],
+    [
+     "Makker",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "Pas",
+    "1NT",
+    "2♣",
+    "2♦",
+    "2♥",
+    "2♠",
+    "3♠",
+    "4♠"
+   ],
+   "bonus": {
+    "q": "Hvad viser et spring i makkers indmeldte farve?",
+    "correct": "Firkortstøtte og 6–9 – spærrende",
+    "options": [
+     "Firkortstøtte og 6–9 – spærrende",
+     "Invit, 10–12",
+     "Udgangskrav"
+    ],
+    "why": "Direkte støtter viser alle 6–9 og adskiller sig kun på antal trumfer. Stærkere hænder går via fjendens farve. Spring i ny farve er derimod udgangskrav."
+   }
+  }
+ },
+ "hands": [
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9,
+     4
+    ],
+    "H": [
+     11,
+     10,
+     9
+    ],
+    "D": [
+     12,
+     10,
+     7,
+     2
+    ],
+    "C": [
+     9,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "3 trumf og 7 hp: 2♥ – enkeltstøtte, 6–9."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     8
+    ],
+    "H": [
+     11,
+     9,
+     8
+    ],
+    "D": [
+     6,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     11,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "3 trumf og 7 hp: 2♥ – enkeltstøtte, 6–9."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     11,
+     7,
+     5
+    ],
+    "H": [
+     13,
+     7,
+     2
+    ],
+    "D": [
+     9,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     10,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "zone": "ingen",
+   "correct": "2♥",
+   "why": "3 trumf og 7 hp: 2♥ – enkeltstøtte, 6–9."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     10,
+     9,
+     7
+    ],
+    "H": [
+     12,
+     7,
+     5
+    ],
+    "D": [
+     12,
+     9,
+     8,
+     4
+    ],
+    "C": [
+     14,
+     8,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "zone": "ingen",
+   "correct": "2♥",
+   "why": "3 trumf og 8 hp: 2♥ – støtten går forud for 1NT (fit før sansforbedring).",
+   "aftale": true
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     13,
+     8,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     10,
+     5
+    ],
+    "D": [
+     10,
+     7,
+     5
+    ],
+    "C": [
+     11,
+     9,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "zone": "ov",
+   "correct": "2♥",
+   "why": "3 trumf og 8 hp: 2♥ – enkeltstøtte, 6–9."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     13,
+     10,
+     5,
+     2
+    ],
+    "H": [
+     6,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "zone": "ingen",
+   "correct": "2♥",
+   "why": "3 trumf og 9 hp: 2♥ – støtten går forud for 1NT (fit før sansforbedring).",
+   "aftale": true
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     5
+    ],
+    "H": [
+     12,
+     8,
+     6,
+     2
+    ],
+    "D": [
+     8,
+     7,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     10
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "3♥",
+   "why": "4 trumf og 8 hp: springstøtte 3♥ – 6–9 med fire trumf."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     10,
+     7,
+     4
+    ],
+    "H": [
+     13,
+     10,
+     6,
+     5
+    ],
+    "D": [
+     6,
+     4
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "alle",
+   "correct": "3♥",
+   "why": "4 trumf og 6 hp: springstøtte 3♥ – 6–9 med fire trumf."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     8,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     8
+    ],
+    "D": [
+     12,
+     8,
+     5
+    ],
+    "C": [
+     8,
+     5,
+     4,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "ov",
+   "correct": "3♥",
+   "why": "4 trumf og 7 hp: springstøtte 3♥ – 6–9 med fire trumf."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     5,
+     3,
+     2
+    ],
+    "C": [
+     9,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ingen",
+   "correct": "3♥",
+   "why": "4 trumf og 9 hp: springstøtte 3♥ – 6–9 med fire trumf."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     11,
+     10
+    ],
+    "H": [
+     13,
+     10,
+     4,
+     3
+    ],
+    "D": [
+     9,
+     6,
+     5
+    ],
+    "C": [
+     14,
+     11,
+     8,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "3♥",
+   "why": "4 trumf og 9 hp: springstøtte 3♥ – 6–9 med fire trumf."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     14,
+     7,
+     2
+    ],
+    "H": [
+     11,
+     10,
+     6,
+     2
+    ],
+    "D": [
+     6,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     6,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "3♥",
+   "why": "4 trumf og 8 hp: springstøtte 3♥ – 6–9 med fire trumf."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     11,
+     10,
+     9,
+     8,
+     2
+    ],
+    "D": [
+     10,
+     8,
+     5
+    ],
+    "C": [
+     13,
+     9,
+     8,
+     7
+    ]
+   },
+   "hp": 4,
+   "sp": 7,
+   "zone": "alle",
+   "correct": "4♥",
+   "why": "5 trumf og kun 4 hp: 4♥ – direkte udgang er destruktiv (0–9).",
+   "aftale": true
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     10,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     12,
+     9,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     8,
+     3
+    ],
+    "C": []
+   },
+   "hp": 5,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "4♥",
+   "why": "5 trumf og kun 5 hp: 4♥ – direkte udgang er destruktiv (0–9).",
+   "aftale": true
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     5,
+     2
+    ],
+    "H": [
+     10,
+     9,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     9,
+     8,
+     7,
+     6
+    ],
+    "C": []
+   },
+   "hp": 6,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "4♥",
+   "why": "5 trumf og 6 hp: 4♥ – direkte udgang er destruktiv, aldrig konstruktiv."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     11,
+     9,
+     8,
+     4
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     4,
+     2
+    ],
+    "D": [
+     10,
+     9,
+     4
+    ],
+    "C": [
+     4
+    ]
+   },
+   "hp": 4,
+   "sp": 7,
+   "zone": "ns",
+   "correct": "4♥",
+   "why": "5 trumf og kun 4 hp: 4♥ – direkte udgang er destruktiv (0–9).",
+   "aftale": true
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     9,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     8,
+     3
+    ],
+    "D": [
+     10,
+     9,
+     8,
+     5
+    ],
+    "C": [
+     8,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "4♥",
+   "why": "5 trumf og 8 hp: 4♥ – direkte udgang er destruktiv, aldrig konstruktiv."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     10,
+     9,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     9,
+     4,
+     3
+    ],
+    "D": [
+     10,
+     8,
+     7
+    ],
+    "C": [
+     9
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "zone": "ov",
+   "correct": "4♥",
+   "why": "5 trumf og kun 5 hp: 4♥ – direkte udgang er destruktiv (0–9).",
+   "aftale": true
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     7
+    ],
+    "D": [
+     10,
+     8,
+     7,
+     3
+    ],
+    "C": [
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "zone": "ov",
+   "correct": "2♣",
+   "why": "4 hjerter og 11 hp: overmelding i fjendens farve – støtte og 10+."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     8
+    ],
+    "D": [
+     10,
+     6,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     5,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "zone": "ingen",
+   "correct": "2♣",
+   "why": "4 hjerter og 11 hp: overmelding i fjendens farve – støtte og 10+."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     14,
+     11,
+     5
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     7
+    ],
+    "D": [
+     7,
+     5,
+     2
+    ],
+    "C": [
+     10,
+     9,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "zone": "ov",
+   "correct": "2♣",
+   "why": "4 hjerter og 10 hp: overmelding i fjendens farve – støtte og 10+."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     2
+    ],
+    "H": [
+     12,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     12,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "zone": "ns",
+   "correct": "2♣",
+   "why": "4 hjerter og 10 hp: overmelding i fjendens farve – støtte og 10+."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     5
+    ],
+    "H": [
+     12,
+     8,
+     5,
+     3
+    ],
+    "D": [
+     10,
+     5,
+     4
+    ],
+    "C": [
+     12,
+     6,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "zone": "ns",
+   "correct": "2♣",
+   "why": "4 hjerter og 10 hp: overmelding i fjendens farve – støtte og 10+."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     7,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     2
+    ],
+    "D": [
+     10,
+     4
+    ],
+    "C": [
+     13,
+     7,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "zone": "ns",
+   "correct": "2♣",
+   "why": "4 hjerter og 12 hp: overmelding i fjendens farve – støtte og 10+."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     8
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     12,
+     7,
+     6,
+     3
+    ],
+    "C": [
+     14,
+     10,
+     7,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "zone": "ingen",
+   "correct": "1NT",
+   "why": "10 hp og hold i klør: 1NT – forbedring af kontrakten (8–11)."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     14,
+     8,
+     6,
+     2
+    ],
+    "H": [
+     11,
+     9
+    ],
+    "D": [
+     12,
+     10,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     5,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "1NT",
+   "why": "9 hp og hold i klør: 1NT – forbedring af kontrakten (8–11)."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     13,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     8,
+     6
+    ],
+    "D": [
+     14,
+     8,
+     2
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ingen",
+   "correct": "1NT",
+   "why": "10 hp og hold i klør: 1NT – forbedring af kontrakten (8–11)."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     11,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     5
+    ],
+    "D": [
+     12,
+     11,
+     9
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "ov",
+   "correct": "1NT",
+   "why": "11 hp og hold i klør: 1NT – forbedring af kontrakten (8–11)."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     8,
+     6,
+     5
+    ],
+    "H": [
+     13,
+     8
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     6
+    ],
+    "C": [
+     12,
+     9,
+     7,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ingen",
+   "correct": "1NT",
+   "why": "9 hp og hold i klør: 1NT – forbedring af kontrakten (8–11)."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     5
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     9,
+     7,
+     6,
+     5
+    ],
+    "C": [
+     11,
+     8,
+     7,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "zone": "ov",
+   "correct": "1NT",
+   "why": "11 hp og hold i klør: 1NT – forbedring af kontrakten (8–11)."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     8,
+     6
+    ],
+    "H": [
+     7,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     10,
+     6,
+     2
+    ],
+    "C": [
+     11,
+     8,
+     5
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "Kun 3 hp: pas."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     10,
+     7,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     12,
+     9,
+     7
+    ],
+    "C": [
+     11,
+     5
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "Kun 5 hp: pas."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     10,
+     9,
+     6,
+     2
+    ],
+    "H": [
+     10,
+     8,
+     6
+    ],
+    "D": [
+     6,
+     4
+    ],
+    "C": [
+     10,
+     7,
+     6,
+     5
+    ]
+   },
+   "hp": 0,
+   "sp": 1,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "Kun 0 hp: pas."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     7,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     8,
+     7,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     9,
+     4
+    ],
+    "C": [
+     7
+    ]
+   },
+   "hp": 4,
+   "sp": 7,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "Kun 4 hp: pas."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     13,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     10,
+     4,
+     3
+    ],
+    "D": [
+     9,
+     4
+    ],
+    "C": [
+     10,
+     9,
+     7,
+     5
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "Kun 5 hp: pas."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     12,
+     5,
+     4
+    ],
+    "H": [
+     10,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     11,
+     10,
+     5,
+     2
+    ],
+    "C": [
+     6,
+     4
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "Kun 3 hp: pas."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     9,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     3
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     10,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "6 ruder og 8 hp: 2♦ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     10,
+     9,
+     6,
+     4
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     8,
+     7,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "5 ruder og 9 hp: 2♦ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     11,
+     8,
+     4
+    ],
+    "H": [
+     14,
+     9
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     6,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "6 ruder og 13 hp: 2♦ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     14,
+     11,
+     6,
+     5
+    ],
+    "H": [
+     8,
+     7
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     7,
+     6,
+     3
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "zone": "ov",
+   "correct": "2♦",
+   "why": "6 ruder og 9 hp: 2♦ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     13,
+     9,
+     8,
+     3
+    ],
+    "H": [
+     14,
+     13
+    ],
+    "D": [
+     13,
+     9,
+     7,
+     5,
+     3
+    ],
+    "C": [
+     10,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "5 ruder og 13 hp: 2♦ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     14,
+     6,
+     2
+    ],
+    "H": [
+     7,
+     5
+    ],
+    "D": [
+     12,
+     10,
+     9,
+     8,
+     5,
+     2
+    ],
+    "C": [
+     12,
+     7
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "6 ruder og 8 hp: 2♦ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     3,
+     2
+    ],
+    "D": [
+     12,
+     8,
+     7
+    ],
+    "C": [
+     14,
+     11
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "zone": "ov",
+   "correct": "1♠",
+   "why": "6 spar og 11 hp: 1♠ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9,
+     6,
+     3
+    ],
+    "H": [
+     11,
+     5
+    ],
+    "D": [
+     9,
+     8,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     6
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "alle",
+   "correct": "1♠",
+   "why": "5 spar og 10 hp: 1♠ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     9,
+     7,
+     3
+    ],
+    "H": [
+     13,
+     3
+    ],
+    "D": [
+     13,
+     10,
+     4,
+     2
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "zone": "alle",
+   "correct": "1♠",
+   "why": "6 spar og 11 hp: 1♠ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     14,
+     7,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     3
+    ],
+    "D": [
+     14,
+     9,
+     8,
+     2
+    ],
+    "C": [
+     13,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "zone": "ov",
+   "correct": "1♠",
+   "why": "5 spar og 13 hp: 1♠ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     5
+    ],
+    "D": [
+     4,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     8,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ns",
+   "correct": "1♠",
+   "why": "5 spar og 9 hp: 1♠ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     9,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     5
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "zone": "ingen",
+   "correct": "1♠",
+   "why": "6 spar og 12 hp: 1♠ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     14,
+     5,
+     4
+    ],
+    "H": [
+     11,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     4
+    ],
+    "C": [
+     8,
+     6,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "zone": "alle",
+   "correct": "2♠",
+   "why": "3 trumf og 8 hp: 2♠ – støtten går forud for 1NT (fit før sansforbedring).",
+   "aftale": true
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     11,
+     6,
+     4
+    ],
+    "H": [
+     12,
+     8,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     6,
+     3
+    ],
+    "C": [
+     11,
+     8,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "zone": "ov",
+   "correct": "2♠",
+   "why": "3 trumf og 8 hp: 2♠ – støtten går forud for 1NT (fit før sansforbedring).",
+   "aftale": true
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     6,
+     5,
+     4
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     4
+    ],
+    "D": [
+     11,
+     8,
+     7
+    ],
+    "C": [
+     13,
+     6,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "zone": "alle",
+   "correct": "2♠",
+   "why": "3 trumf og 8 hp: 2♠ – enkeltstøtte, 6–9."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     13,
+     9,
+     2
+    ],
+    "H": [
+     10,
+     9,
+     8
+    ],
+    "D": [
+     7,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     6,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "2♠",
+   "why": "3 trumf og 9 hp: 2♠ – enkeltstøtte, 6–9."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8
+    ],
+    "H": [
+     13,
+     12,
+     8,
+     6
+    ],
+    "D": [
+     8,
+     5,
+     2
+    ],
+    "C": [
+     11,
+     9,
+     8
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "2♠",
+   "why": "3 trumf og 9 hp: 2♠ – enkeltstøtte, 6–9."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     5
+    ],
+    "H": [
+     9,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     11,
+     9,
+     6
+    ],
+    "C": [
+     13,
+     8,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "2♠",
+   "why": "3 trumf og 9 hp: 2♠ – enkeltstøtte, 6–9."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9,
+     3
+    ],
+    "H": [
+     11,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     13,
+     9,
+     7,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "zone": "ov",
+   "correct": "3♠",
+   "why": "4 trumf og 7 hp: springstøtte 3♠ – 6–9 med fire trumf."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     12,
+     9,
+     5,
+     3
+    ],
+    "H": [
+     10,
+     9,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     9,
+     2
+    ],
+    "C": [
+     12,
+     7
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "ov",
+   "correct": "3♠",
+   "why": "4 trumf og 7 hp: springstøtte 3♠ – 6–9 med fire trumf."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     9,
+     8,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     5,
+     2
+    ],
+    "D": [
+     12,
+     5
+    ],
+    "C": [
+     10,
+     8,
+     6,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "ns",
+   "correct": "3♠",
+   "why": "4 trumf og 6 hp: springstøtte 3♠ – 6–9 med fire trumf."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     10,
+     6,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     4
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     11,
+     9,
+     4,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "zone": "ingen",
+   "correct": "3♠",
+   "why": "4 trumf og 6 hp: springstøtte 3♠ – 6–9 med fire trumf."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     10,
+     8,
+     7,
+     5
+    ],
+    "H": [
+     13,
+     7,
+     3
+    ],
+    "D": [
+     13,
+     10,
+     4
+    ],
+    "C": [
+     10,
+     3,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 6,
+   "zone": "ingen",
+   "correct": "3♠",
+   "why": "4 trumf og 6 hp: springstøtte 3♠ – 6–9 med fire trumf."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     10,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     5
+    ],
+    "C": [
+     10,
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "zone": "ingen",
+   "correct": "3♠",
+   "why": "4 trumf og 6 hp: springstøtte 3♠ – 6–9 med fire trumf."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     7,
+     5
+    ],
+    "H": [
+     11,
+     10,
+     8,
+     7
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     11,
+     10,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "4♠",
+   "why": "5 trumf og 9 hp: 4♠ – direkte udgang er destruktiv, aldrig konstruktiv."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     11,
+     10,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     9,
+     7,
+     4,
+     2
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     8,
+     7,
+     6
+    ]
+   },
+   "hp": 3,
+   "sp": 6,
+   "zone": "ingen",
+   "correct": "4♠",
+   "why": "5 trumf og kun 3 hp: 4♠ – direkte udgang er destruktiv (0–9).",
+   "aftale": true
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     13,
+     8
+    ],
+    "D": [
+     8,
+     5
+    ],
+    "C": [
+     11,
+     8,
+     7,
+     6
+    ]
+   },
+   "hp": 5,
+   "sp": 7,
+   "zone": "ns",
+   "correct": "4♠",
+   "why": "5 trumf og kun 5 hp: 4♠ – direkte udgang er destruktiv (0–9).",
+   "aftale": true
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     8,
+     6,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     3,
+     2
+    ],
+    "D": [
+     6,
+     3
+    ],
+    "C": [
+     14,
+     8,
+     5,
+     4
+    ]
+   },
+   "hp": 4,
+   "sp": 6,
+   "zone": "ingen",
+   "correct": "4♠",
+   "why": "5 trumf og kun 4 hp: 4♠ – direkte udgang er destruktiv (0–9).",
+   "aftale": true
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     13,
+     8,
+     7,
+     6,
+     2
+    ],
+    "H": [
+     8,
+     6,
+     4
+    ],
+    "D": [
+     5,
+     4
+    ],
+    "C": [
+     8,
+     6,
+     4
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "zone": "alle",
+   "correct": "4♠",
+   "why": "5 trumf og kun 3 hp: 4♠ – direkte udgang er destruktiv (0–9).",
+   "aftale": true
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     12,
+     8,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     10,
+     7,
+     6
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     14,
+     10,
+     6,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "zone": "alle",
+   "correct": "4♠",
+   "why": "5 trumf og 8 hp: 4♠ – direkte udgang er destruktiv, aldrig konstruktiv."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     14,
+     7,
+     4
+    ],
+    "H": [
+     12,
+     9,
+     7,
+     3
+    ],
+    "D": [
+     11,
+     6
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "3 spar og 14 hp: overmelding i fjendens farve – støtte og 10+."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     13,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     4
+    ],
+    "D": [
+     9,
+     8,
+     5
+    ],
+    "C": [
+     14,
+     11,
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 14,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "3 spar og 14 hp: overmelding i fjendens farve – støtte og 10+."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     14,
+     9,
+     5,
+     2
+    ],
+    "H": [
+     12,
+     10,
+     7
+    ],
+    "D": [
+     12,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "ov",
+   "correct": "2♦",
+   "why": "4 spar og 11 hp: overmelding i fjendens farve – støtte og 10+."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8
+    ],
+    "H": [
+     6,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     6
+    ],
+    "C": [
+     14,
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "3 spar og 14 hp: overmelding i fjendens farve – støtte og 10+."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     13,
+     9,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     10
+    ],
+    "D": [
+     13,
+     10,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     7,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "zone": "ov",
+   "correct": "2♦",
+   "why": "4 spar og 12 hp: overmelding i fjendens farve – støtte og 10+."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     13,
+     8,
+     7,
+     3
+    ],
+    "H": [
+     12,
+     10,
+     7
+    ],
+    "D": [
+     11,
+     5
+    ],
+    "C": [
+     14,
+     9,
+     6,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "4 spar og 10 hp: overmelding i fjendens farve – støtte og 10+."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     10,
+     6
+    ],
+    "H": [
+     13,
+     3,
+     2
+    ],
+    "D": [
+     11,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "1NT",
+   "why": "8 hp og hold i ruder: 1NT – forbedring af kontrakten (8–11)."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     12,
+     9,
+     4,
+     2
+    ],
+    "D": [
+     11,
+     7,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "1NT",
+   "why": "8 hp og hold i ruder: 1NT – forbedring af kontrakten (8–11)."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     13,
+     2
+    ],
+    "H": [
+     14,
+     10,
+     4
+    ],
+    "D": [
+     11,
+     9,
+     6,
+     5
+    ],
+    "C": [
+     12,
+     9,
+     5,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ingen",
+   "correct": "1NT",
+   "why": "10 hp og hold i ruder: 1NT – forbedring af kontrakten (8–11)."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     4,
+     2
+    ],
+    "H": [
+     12,
+     6,
+     4
+    ],
+    "D": [
+     13,
+     11,
+     9,
+     3
+    ],
+    "C": [
+     12,
+     9,
+     7,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ingen",
+   "correct": "1NT",
+   "why": "8 hp og hold i ruder: 1NT – forbedring af kontrakten (8–11)."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     7,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     7
+    ],
+    "D": [
+     14,
+     10,
+     4,
+     3
+    ],
+    "C": [
+     10,
+     5,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "1NT",
+   "why": "11 hp og hold i ruder: 1NT – forbedring af kontrakten (8–11)."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     14,
+     5
+    ],
+    "H": [
+     10,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     10,
+     8,
+     4
+    ],
+    "C": [
+     11,
+     7,
+     6,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "1NT",
+   "why": "8 hp og hold i ruder: 1NT – forbedring af kontrakten (8–11)."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     10,
+     4
+    ],
+    "H": [
+     13,
+     9,
+     4,
+     2
+    ],
+    "D": [
+     8,
+     6,
+     5
+    ],
+    "C": [
+     10,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "3 hp uden støtte og uden farve: pas."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     12,
+     7
+    ],
+    "H": [
+     12,
+     10,
+     9,
+     8
+    ],
+    "D": [
+     11,
+     8,
+     5,
+     4
+    ],
+    "C": [
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "5 hp uden støtte og uden farve: pas."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     11,
+     9,
+     4
+    ],
+    "H": [
+     11,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     8,
+     7,
+     3
+    ],
+    "C": [
+     10,
+     3
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "Kun 4 hp: pas."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     11,
+     9,
+     4,
+     3
+    ],
+    "H": [
+     8,
+     3,
+     2
+    ],
+    "D": [
+     11,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     8,
+     5
+    ]
+   },
+   "hp": 5,
+   "sp": 5,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "Kun 5 hp: pas."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     10,
+     7,
+     5,
+     4
+    ],
+    "H": [
+     8,
+     6,
+     3
+    ],
+    "D": [
+     12,
+     10,
+     7,
+     6
+    ],
+    "C": [
+     11,
+     5
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "Kun 3 hp: pas."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     9,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     6,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     10,
+     9,
+     2
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "Kun 5 hp: pas."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     14,
+     9,
+     5,
+     4
+    ],
+    "D": [
+     5,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     10,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "5 klør og 13 hp: 2♣ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     6,
+     3
+    ],
+    "H": [
+     14,
+     10,
+     7
+    ],
+    "D": [
+     9,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "zone": "ns",
+   "correct": "2♣",
+   "why": "6 klør og 11 hp: 2♣ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     7,
+     3
+    ],
+    "H": [
+     13,
+     7,
+     6,
+     4
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     14,
+     12,
+     8,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "zone": "ov",
+   "correct": "2♣",
+   "why": "6 klør og 9 hp: 2♣ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     12
+    ],
+    "H": [
+     11,
+     10,
+     7
+    ],
+    "D": [
+     10,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     10,
+     7,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "zone": "ns",
+   "correct": "2♣",
+   "why": "6 klør og 9 hp: 2♣ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     5,
+     3
+    ],
+    "H": [
+     6,
+     5
+    ],
+    "D": [
+     14,
+     10,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     7,
+     3,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "zone": "ov",
+   "correct": "2♣",
+   "why": "6 klør og 13 hp: 2♣ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     11,
+     10,
+     8
+    ],
+    "D": [
+     12,
+     6,
+     4
+    ],
+    "C": [
+     11,
+     9,
+     5,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 13,
+   "zone": "ns",
+   "correct": "2♣",
+   "why": "6 klør og 8 hp: 2♣ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     9,
+     4
+    ],
+    "H": [
+     14,
+     9,
+     8,
+     7,
+     2
+    ],
+    "D": [
+     8,
+     5
+    ],
+    "C": [
+     13,
+     12,
+     10,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "zone": "alle",
+   "correct": "2♥",
+   "why": "5 hjerter og 9 hp: 2♥ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     4,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10,
+     9,
+     3
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     10,
+     8,
+     6,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "zone": "ingen",
+   "correct": "2♥",
+   "why": "6 hjerter og 11 hp: 2♥ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     12,
+     11,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     8,
+     6
+    ],
+    "C": [
+     13,
+     11,
+     7,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "zone": "ov",
+   "correct": "2♥",
+   "why": "5 hjerter og 11 hp: 2♥ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     12
+    ],
+    "H": [
+     14,
+     11,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     10,
+     8
+    ],
+    "C": [
+     11,
+     9,
+     8,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "zone": "ov",
+   "correct": "2♥",
+   "why": "5 hjerter og 10 hp: 2♥ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     10
+    ],
+    "H": [
+     13,
+     12,
+     8,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     9,
+     4
+    ],
+    "C": [
+     14,
+     8,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "zone": "ingen",
+   "correct": "2♥",
+   "why": "6 hjerter og 13 hp: 2♥ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_ru_sp",
+   "hand": {
+    "S": [
+     8,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     8,
+     6,
+     4
+    ],
+    "D": [
+     14,
+     5,
+     2
+    ],
+    "C": [
+     7,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "zone": "ingen",
+   "correct": "2♥",
+   "why": "6 hjerter og 9 hp: 2♥ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     12,
+     6,
+     5
+    ],
+    "H": [
+     10,
+     5,
+     2
+    ],
+    "D": [
+     11,
+     10,
+     7,
+     5
+    ],
+    "C": [
+     14,
+     10,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "zone": "ingen",
+   "correct": "2♠",
+   "why": "3 trumf og 7 hp: 2♠ – enkeltstøtte, 6–9."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     12,
+     11,
+     4
+    ],
+    "H": [
+     11,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     6,
+     2
+    ],
+    "C": [
+     5,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "ingen",
+   "correct": "2♠",
+   "why": "3 trumf og 7 hp: 2♠ – enkeltstøtte, 6–9."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     10,
+     7,
+     5
+    ],
+    "H": [
+     13,
+     7,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     6,
+     4,
+     2
+    ],
+    "C": [
+     9,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "ns",
+   "correct": "2♠",
+   "why": "3 trumf og 7 hp: 2♠ – enkeltstøtte, 6–9."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     12,
+     8,
+     4
+    ],
+    "H": [
+     10,
+     8,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     5,
+     2
+    ],
+    "C": [
+     10,
+     8
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ns",
+   "correct": "2♠",
+   "why": "3 trumf og 9 hp: 2♠ – enkeltstøtte, 6–9."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     12,
+     10,
+     6
+    ],
+    "H": [
+     11,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     5
+    ],
+    "C": [
+     10,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "2♠",
+   "why": "3 trumf og 8 hp: 2♠ – enkeltstøtte, 6–9."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     11,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     2
+    ],
+    "C": [
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "2♠",
+   "why": "3 trumf og 9 hp: 2♠ – enkeltstøtte, 6–9."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     12,
+     11,
+     5,
+     2
+    ],
+    "H": [
+     10,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     3
+    ],
+    "C": [
+     11,
+     10,
+     7,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "alle",
+   "correct": "3♠",
+   "why": "4 trumf og 7 hp: springstøtte 3♠ – 6–9 med fire trumf."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     13,
+     9,
+     8,
+     7
+    ],
+    "H": [
+     9,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     8
+    ],
+    "C": [
+     12,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "3♠",
+   "why": "4 trumf og 8 hp: springstøtte 3♠ – 6–9 med fire trumf."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     13,
+     11,
+     7,
+     4
+    ],
+    "H": [
+     10,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     11,
+     10,
+     3,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "3♠",
+   "why": "4 trumf og 6 hp: springstøtte 3♠ – 6–9 med fire trumf."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     12,
+     11,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     9,
+     2
+    ],
+    "D": [
+     10,
+     5
+    ],
+    "C": [
+     11,
+     10,
+     9,
+     7
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "3♠",
+   "why": "4 trumf og 8 hp: springstøtte 3♠ – 6–9 med fire trumf."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     7,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     6
+    ],
+    "D": [
+     7,
+     5
+    ],
+    "C": [
+     12,
+     9,
+     7,
+     4
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "ingen",
+   "correct": "3♠",
+   "why": "4 trumf og 6 hp: springstøtte 3♠ – 6–9 med fire trumf."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     8,
+     7,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     11
+    ],
+    "D": [
+     12,
+     9,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "3♠",
+   "why": "4 trumf og 9 hp: springstøtte 3♠ – 6–9 med fire trumf."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     10,
+     7,
+     6,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     11,
+     9,
+     7
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     11,
+     6,
+     2
+    ]
+   },
+   "hp": 2,
+   "sp": 5,
+   "zone": "ns",
+   "correct": "4♠",
+   "why": "5 trumf og kun 2 hp: 4♠ – direkte udgang er destruktiv (0–9).",
+   "aftale": true
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     11,
+     7,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     3,
+     2
+    ],
+    "D": [
+     12,
+     9,
+     8,
+     3
+    ],
+    "C": [
+     13,
+     8
+    ]
+   },
+   "hp": 6,
+   "sp": 8,
+   "zone": "ingen",
+   "correct": "4♠",
+   "why": "5 trumf og 6 hp: 4♠ – direkte udgang er destruktiv, aldrig konstruktiv."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     12,
+     9,
+     7,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     2
+    ],
+    "D": [
+     11,
+     2
+    ],
+    "C": [
+     8,
+     5,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 7,
+   "zone": "ns",
+   "correct": "4♠",
+   "why": "5 trumf og kun 5 hp: 4♠ – direkte udgang er destruktiv (0–9).",
+   "aftale": true
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     7,
+     5
+    ],
+    "H": [
+     12,
+     8,
+     5,
+     2
+    ],
+    "D": [
+     11,
+     9,
+     7,
+     4
+    ],
+    "C": []
+   },
+   "hp": 9,
+   "sp": 14,
+   "zone": "ingen",
+   "correct": "4♠",
+   "why": "5 trumf og 9 hp: 4♠ – direkte udgang er destruktiv, aldrig konstruktiv."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     11,
+     10,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     7,
+     5,
+     2
+    ],
+    "D": [
+     10,
+     8,
+     5
+    ],
+    "C": [
+     6
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "zone": "ns",
+   "correct": "4♠",
+   "why": "5 trumf og kun 5 hp: 4♠ – direkte udgang er destruktiv (0–9).",
+   "aftale": true
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     10,
+     8,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     11,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     4,
+     2
+    ],
+    "C": [
+     14,
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 7,
+   "zone": "ingen",
+   "correct": "4♠",
+   "why": "5 trumf og kun 5 hp: 4♠ – direkte udgang er destruktiv (0–9).",
+   "aftale": true
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     5
+    ],
+    "H": [
+     9,
+     6
+    ],
+    "D": [
+     8,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "3 spar og 14 hp: overmelding i fjendens farve – støtte og 10+."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     3
+    ],
+    "H": [
+     5,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     5
+    ],
+    "C": [
+     10,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "2♣",
+   "why": "4 spar og 10 hp: overmelding i fjendens farve – støtte og 10+."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     12,
+     9,
+     4
+    ],
+    "H": [
+     13,
+     10,
+     5
+    ],
+    "D": [
+     11,
+     7,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "3 spar og 13 hp: overmelding i fjendens farve – støtte og 10+."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     9,
+     8,
+     6
+    ],
+    "H": [
+     12,
+     9,
+     7,
+     5
+    ],
+    "D": [
+     13,
+     9,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     11
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "zone": "ov",
+   "correct": "2♣",
+   "why": "3 spar og 13 hp: overmelding i fjendens farve – støtte og 10+."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     11,
+     10,
+     6,
+     2
+    ],
+    "H": [
+     8,
+     6,
+     3
+    ],
+    "D": [
+     13,
+     10
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     8
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "4 spar og 11 hp: overmelding i fjendens farve – støtte og 10+."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     14,
+     10,
+     4
+    ],
+    "H": [
+     13,
+     11,
+     5
+    ],
+    "D": [
+     12,
+     7,
+     3
+    ],
+    "C": [
+     9,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "3 spar og 10 hp: overmelding i fjendens farve – støtte og 10+."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     11,
+     2
+    ],
+    "H": [
+     10,
+     8,
+     5,
+     4
+    ],
+    "D": [
+     5,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "1NT",
+   "why": "9 hp og hold i klør: 1NT – forbedring af kontrakten (8–11)."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     11,
+     10,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     8,
+     5
+    ],
+    "C": [
+     13,
+     9,
+     7,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "1NT",
+   "why": "9 hp og hold i klør: 1NT – forbedring af kontrakten (8–11)."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     12,
+     8
+    ],
+    "H": [
+     13,
+     7,
+     5
+    ],
+    "D": [
+     10,
+     8,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     4,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ov",
+   "correct": "1NT",
+   "why": "10 hp og hold i klør: 1NT – forbedring af kontrakten (8–11)."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     10,
+     7
+    ],
+    "H": [
+     10,
+     9,
+     8,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     3
+    ],
+    "C": [
+     13,
+     8,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "1NT",
+   "why": "8 hp og hold i klør: 1NT – forbedring af kontrakten (8–11)."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     7,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     6
+    ],
+    "D": [
+     9,
+     8,
+     5
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ingen",
+   "correct": "1NT",
+   "why": "8 hp og hold i klør: 1NT – forbedring af kontrakten (8–11)."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     14,
+     7
+    ],
+    "H": [
+     11,
+     8,
+     7,
+     5
+    ],
+    "D": [
+     6,
+     5,
+     4
+    ],
+    "C": [
+     13,
+     9,
+     8,
+     7
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "1NT",
+   "why": "8 hp og hold i klør: 1NT – forbedring af kontrakten (8–11)."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     10,
+     4,
+     3
+    ],
+    "H": [
+     4,
+     2
+    ],
+    "D": [
+     13,
+     11,
+     9,
+     5
+    ],
+    "C": [
+     10,
+     8,
+     4,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "Kun 4 hp: pas."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     9,
+     8,
+     3
+    ],
+    "H": [
+     12,
+     10,
+     9,
+     2
+    ],
+    "D": [
+     11,
+     9,
+     8,
+     4
+    ],
+    "C": [
+     12,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "Kun 5 hp: pas."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9
+    ],
+    "H": [
+     10,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     11,
+     9,
+     8,
+     2
+    ],
+    "C": [
+     10,
+     4
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "Kun 4 hp: pas."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     10,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     8,
+     5,
+     4
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     8,
+     7,
+     5,
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "Kun 5 hp: pas."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     8,
+     7
+    ],
+    "H": [
+     10,
+     8,
+     7,
+     5
+    ],
+    "D": [
+     9,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     9,
+     4
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "4 hp uden støtte og uden farve: pas."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     9,
+     5
+    ],
+    "H": [
+     11,
+     7,
+     4,
+     3
+    ],
+    "D": [
+     9,
+     6,
+     4
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     5
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "4 hp uden støtte og uden farve: pas."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     12,
+     6
+    ],
+    "H": [
+     12,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     7,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "5 ruder og 12 hp: 2♦ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     10
+    ],
+    "H": [
+     14,
+     11,
+     10
+    ],
+    "D": [
+     8,
+     7,
+     6,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     8
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "6 ruder og 9 hp: 2♦ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
+     14,
+     10,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     7,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     10
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "5 ruder og 11 hp: 2♦ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     12,
+     4
+    ],
+    "H": [
+     12,
+     10,
+     8,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     7,
+     4,
+     2
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "6 ruder og 9 hp: 2♦ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     9,
+     4
+    ],
+    "H": [
+     12,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     7,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "6 ruder og 9 hp: 2♦ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     13,
+     3
+    ],
+    "H": [
+     12,
+     11
+    ],
+    "D": [
+     12,
+     10,
+     8,
+     7,
+     4,
+     3
+    ],
+    "C": [
+     11,
+     7,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "6 ruder og 9 hp: 2♦ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     10,
+     9,
+     6
+    ],
+    "D": [
+     12,
+     10,
+     8
+    ],
+    "C": [
+     11,
+     9,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "zone": "ov",
+   "correct": "2♥",
+   "why": "6 hjerter og 9 hp: 2♥ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     12
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     8,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     7
+    ],
+    "C": [
+     10,
+     9,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "6 hjerter og 12 hp: 2♥ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     12,
+     9,
+     8,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     11,
+     10,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     7
+    ]
+   },
+   "hp": 8,
+   "sp": 13,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "6 hjerter og 8 hp: 2♥ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     12,
+     5
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     11,
+     6,
+     2
+    ],
+    "C": [
+     13,
+     6
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "zone": "alle",
+   "correct": "2♥",
+   "why": "6 hjerter og 10 hp: 2♥ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     12,
+     7
+    ],
+    "H": [
+     13,
+     11,
+     8,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     7,
+     6,
+     2
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "zone": "alle",
+   "correct": "2♥",
+   "why": "6 hjerter og 10 hp: 2♥ – ny farve, ikke krav."
+  },
+  {
+   "situation": "def_kl_sp",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     9,
+     5,
+     4
+    ],
+    "D": [
+     11,
+     10,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "6 hjerter og 11 hp: 2♥ – ny farve, ikke krav."
+  }
+ ]
+}

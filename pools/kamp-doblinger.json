@@ -1,0 +1,3194 @@
+{
+ "situations": {
+  "direkte": {
+   "rolle": "Anden hånd",
+   "auction": [
+    [
+     "Modstander",
+     "1♦"
+    ]
+   ],
+   "allowX": true,
+   "calls": [
+    "Pas",
+    "X",
+    "1♥",
+    "1♠",
+    "1NT",
+    "2♣"
+   ],
+   "bonus": {
+    "q": "Hvad betyder en dobling, når modparten har meldt og støttet hinanden?",
+    "correct": "Oplysende – tag makker med på råd",
+    "options": [
+     "Oplysende – tag makker med på råd",
+     "Straf",
+     "Viser en stærk jævn hånd"
+    ],
+    "why": "Så snart modparten har fundet tilpasning, er alle doblinger i de tidlige runder oplysende – også højt oppe. Grænsen går over 4 i major."
+   }
+  },
+  "hoejt": {
+   "rolle": "Fjerde hånd",
+   "auction": [
+    [
+     "Modstander",
+     "1♠"
+    ],
+    [
+     "Makker",
+     "Pas"
+    ],
+    [
+     "Modstander",
+     "4♠"
+    ]
+   ],
+   "allowX": true,
+   "calls": [
+    "Pas",
+    "X",
+    "4NT",
+    "5♣",
+    "5♦",
+    "5♥"
+   ],
+   "bonus": {
+    "q": "Hvad betyder en dobling, når modparten har meldt og støttet hinanden?",
+    "correct": "Oplysende – tag makker med på råd",
+    "options": [
+     "Oplysende – tag makker med på råd",
+     "Straf",
+     "Viser en stærk jævn hånd"
+    ],
+    "why": "Så snart modparten har fundet tilpasning, er alle doblinger i de tidlige runder oplysende – også højt oppe. Grænsen går over 4 i major."
+   }
+  },
+  "umeldt": {
+   "rolle": "Fortsætter",
+   "auction": [
+    [
+     "Modstander",
+     "1♣"
+    ],
+    [
+     "Makker",
+     "1♥"
+    ],
+    [
+     "Modstander",
+     "1♠"
+    ]
+   ],
+   "allowX": true,
+   "calls": [
+    "Pas",
+    "X",
+    "1NT",
+    "2♣",
+    "2♦",
+    "2♥"
+   ],
+   "bonus": {
+    "q": "Hvad betyder en dobling, når modparten har meldt og støttet hinanden?",
+    "correct": "Oplysende – tag makker med på råd",
+    "options": [
+     "Oplysende – tag makker med på råd",
+     "Straf",
+     "Viser en stærk jævn hånd"
+    ],
+    "why": "Så snart modparten har fundet tilpasning, er alle doblinger i de tidlige runder oplysende – også højt oppe. Grænsen går over 4 i major."
+   }
+  }
+ },
+ "hands": [
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     6
+    ],
+    "H": [
+     13,
+     11,
+     3,
+     2
+    ],
+    "D": [
+     6,
+     5
+    ],
+    "C": [
+     13,
+     7,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "zone": "alle",
+   "correct": "X",
+   "why": "14 hp og kort i ruder: oplysningsdobling – i anden hånd skal du selv have værdierne (12–17)."
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     10,
+     8,
+     7,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     3
+    ],
+    "C": [
+     14,
+     9,
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "zone": "alle",
+   "correct": "X",
+   "why": "14 hp og kort i ruder: oplysningsdobling – i anden hånd skal du selv have værdierne (12–17)."
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     7
+    ],
+    "H": [
+     13,
+     5,
+     4
+    ],
+    "D": [
+     10,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     8,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "zone": "alle",
+   "correct": "X",
+   "why": "15 hp og kort i ruder: oplysningsdobling – i anden hånd skal du selv have værdierne (12–17)."
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     14,
+     13,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     9,
+     8,
+     6
+    ],
+    "D": [
+     11,
+     4
+    ],
+    "C": [
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "12 hp og kort i ruder: oplysningsdobling – i anden hånd skal du selv have værdierne (12–17)."
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     13,
+     11,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     6,
+     4
+    ],
+    "D": [
+     8,
+     6
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "zone": "alle",
+   "correct": "X",
+   "why": "12 hp og kort i ruder: oplysningsdobling – i anden hånd skal du selv have værdierne (12–17)."
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     10,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     11,
+     7,
+     6
+    ],
+    "D": [
+     12,
+     11
+    ],
+    "C": [
+     14,
+     11,
+     8,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "zone": "alle",
+   "correct": "X",
+   "why": "13 hp og kort i ruder: oplysningsdobling – i anden hånd skal du selv have værdierne (12–17)."
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     13,
+     11,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     3
+    ],
+    "D": [
+     13,
+     4
+    ],
+    "C": [
+     11,
+     9,
+     6,
+     5
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "zone": "ns",
+   "correct": "X",
+   "why": "17 hp og kort i ruder: oplysningsdobling – i anden hånd skal du selv have værdierne (12–17)."
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     12,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     10,
+     5
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     8
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "zone": "ov",
+   "correct": "X",
+   "why": "16 hp og kort i ruder: oplysningsdobling – i anden hånd skal du selv have værdierne (12–17)."
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     13,
+     7,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     5
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     14,
+     11,
+     6,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "12 hp og kort i ruder: oplysningsdobling – i anden hånd skal du selv have værdierne (12–17)."
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9,
+     7
+    ],
+    "H": [
+     13,
+     12,
+     4
+    ],
+    "D": [
+     7,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     6,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "zone": "ov",
+   "correct": "X",
+   "why": "14 hp og kort i ruder: oplysningsdobling – i anden hånd skal du selv have værdierne (12–17)."
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     12,
+     11,
+     7,
+     4
+    ],
+    "H": [
+     12,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "zone": "ns",
+   "correct": "X",
+   "why": "14 hp og kort i ruder: oplysningsdobling – i anden hånd skal du selv have værdierne (12–17)."
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     6
+    ],
+    "H": [
+     12,
+     8,
+     4
+    ],
+    "D": [
+     14,
+     8
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "zone": "ns",
+   "correct": "X",
+   "why": "14 hp og kort i ruder: oplysningsdobling – i anden hånd skal du selv have værdierne (12–17)."
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9
+    ],
+    "H": [
+     14,
+     8,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     2
+    ],
+    "C": [
+     13,
+     11,
+     6,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "zone": "ov",
+   "correct": "X",
+   "why": "13 hp og kort i ruder: oplysningsdobling – i anden hånd skal du selv have værdierne (12–17)."
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7,
+     3
+    ],
+    "H": [
+     10,
+     7,
+     4,
+     2
+    ],
+    "D": [
+     7
+    ],
+    "C": [
+     14,
+     12,
+     7,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "zone": "ns",
+   "correct": "X",
+   "why": "12 hp og kort i ruder: oplysningsdobling – i anden hånd skal du selv have værdierne (12–17)."
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8,
+     4
+    ],
+    "H": [
+     13,
+     11,
+     2
+    ],
+    "D": [
+     13,
+     8
+    ],
+    "C": [
+     12,
+     9,
+     8,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "zone": "ns",
+   "correct": "X",
+   "why": "13 hp og kort i ruder: oplysningsdobling – i anden hånd skal du selv have værdierne (12–17)."
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     11,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     8,
+     3
+    ],
+    "D": [
+     14,
+     10
+    ],
+    "C": [
+     14,
+     12,
+     7,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "15 hp og kort i ruder: oplysningsdobling – i anden hånd skal du selv have værdierne (12–17)."
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     7
+    ],
+    "H": [
+     13,
+     12,
+     7,
+     6
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     9,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "Kun 8 hp: pas – direkte i anden hånd kræver dobling 12–17. (I fjerde hånd efter to passer kunne du låne.)"
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     13,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     2
+    ],
+    "D": [
+     8,
+     4
+    ],
+    "C": [
+     9,
+     7,
+     6,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "Kun 10 hp: pas – direkte i anden hånd kræver dobling 12–17. (I fjerde hånd efter to passer kunne du låne.)"
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     12,
+     10,
+     7,
+     2
+    ],
+    "H": [
+     13,
+     10,
+     7
+    ],
+    "D": [
+     9,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     7,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "Kun 9 hp: pas – direkte i anden hånd kræver dobling 12–17. (I fjerde hånd efter to passer kunne du låne.)"
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     7
+    ],
+    "H": [
+     12,
+     9,
+     6
+    ],
+    "D": [
+     12,
+     5
+    ],
+    "C": [
+     7,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "Kun 11 hp: pas – direkte i anden hånd kræver dobling 12–17. (I fjerde hånd efter to passer kunne du låne.)"
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     12,
+     7,
+     5
+    ],
+    "H": [
+     13,
+     10,
+     8,
+     7
+    ],
+    "D": [
+     10,
+     8
+    ],
+    "C": [
+     14,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "Kun 9 hp: pas – direkte i anden hånd kræver dobling 12–17. (I fjerde hånd efter to passer kunne du låne.)"
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     14,
+     9,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     12,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "Kun 9 hp: pas – direkte i anden hånd kræver dobling 12–17. (I fjerde hånd efter to passer kunne du låne.)"
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     13,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     5
+    ],
+    "D": [
+     5,
+     4
+    ],
+    "C": [
+     7,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "Kun 8 hp: pas – direkte i anden hånd kræver dobling 12–17. (I fjerde hånd efter to passer kunne du låne.)"
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     12,
+     10,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     7
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "Kun 11 hp: pas – direkte i anden hånd kræver dobling 12–17. (I fjerde hånd efter to passer kunne du låne.)"
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     11,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     2
+    ],
+    "D": [
+     13,
+     11
+    ],
+    "C": [
+     6,
+     5,
+     4,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "Kun 10 hp: pas – direkte i anden hånd kræver dobling 12–17. (I fjerde hånd efter to passer kunne du låne.)"
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     9
+    ],
+    "H": [
+     11,
+     8,
+     6,
+     2
+    ],
+    "D": [
+     5,
+     3
+    ],
+    "C": [
+     14,
+     10,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "Kun 11 hp: pas – direkte i anden hånd kræver dobling 12–17. (I fjerde hånd efter to passer kunne du låne.)"
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     14,
+     8,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     3
+    ],
+    "D": [
+     8,
+     6
+    ],
+    "C": [
+     12,
+     10,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "Kun 11 hp: pas – direkte i anden hånd kræver dobling 12–17. (I fjerde hånd efter to passer kunne du låne.)"
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     10,
+     9,
+     7
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     4
+    ],
+    "D": [
+     11,
+     4
+    ],
+    "C": [
+     12,
+     10,
+     7,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "Kun 8 hp: pas – direkte i anden hånd kræver dobling 12–17. (I fjerde hånd efter to passer kunne du låne.)"
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     14,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     6,
+     4
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     12,
+     11,
+     3,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "Kun 10 hp: pas – direkte i anden hånd kræver dobling 12–17. (I fjerde hånd efter to passer kunne du låne.)"
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     12,
+     10,
+     4,
+     2
+    ],
+    "H": [
+     7,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     12,
+     4
+    ],
+    "C": [
+     14,
+     6,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "Kun 8 hp: pas – direkte i anden hånd kræver dobling 12–17. (I fjerde hånd efter to passer kunne du låne.)"
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     8
+    ],
+    "H": [
+     10,
+     9,
+     5,
+     4
+    ],
+    "D": [
+     12,
+     9
+    ],
+    "C": [
+     14,
+     9,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "Kun 10 hp: pas – direkte i anden hånd kræver dobling 12–17. (I fjerde hånd efter to passer kunne du låne.)"
+  },
+  {
+   "situation": "direkte",
+   "hand": {
+    "S": [
+     13,
+     7,
+     5,
+     4
+    ],
+    "H": [
+     13,
+     9,
+     5,
+     3
+    ],
+    "D": [
+     12,
+     10
+    ],
+    "C": [
+     7,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "Kun 8 hp: pas – direkte i anden hånd kræver dobling 12–17. (I fjerde hånd efter to passer kunne du låne.)"
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     8,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     8,
+     6,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "zone": "alle",
+   "correct": "X",
+   "why": "Kort i spar og plads til de tre andre farver (15 hp): dobling er oplysende – de har meldt og støttet."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     13,
+     9,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     9,
+     8,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     8,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "Kort i spar og plads til de tre andre farver (15 hp): dobling er oplysende – de har meldt og støttet."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     9
+    ],
+    "C": [
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "zone": "ns",
+   "correct": "X",
+   "why": "Kort i spar og plads til de tre andre farver (12 hp): dobling er oplysende – de har meldt og støttet."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     11,
+     10,
+     9
+    ],
+    "D": [
+     14,
+     12,
+     8,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     11,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "zone": "ov",
+   "correct": "X",
+   "why": "Kort i spar og plads til de tre andre farver (17 hp): dobling er oplysende – de har meldt og støttet."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     8,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     7
+    ],
+    "C": [
+     14,
+     9,
+     5,
+     4,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "zone": "alle",
+   "correct": "X",
+   "why": "Kort i spar og plads til de tre andre farver (15 hp): dobling er oplysende – de har meldt og støttet."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     12,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     9
+    ],
+    "C": [
+     13,
+     8,
+     5,
+     4,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "zone": "ov",
+   "correct": "X",
+   "why": "Kort i spar og plads til de tre andre farver (14 hp): dobling er oplysende – de har meldt og støttet."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     13,
+     12,
+     7,
+     6
+    ],
+    "D": [
+     11,
+     10,
+     7,
+     5,
+     4
+    ],
+    "C": [
+     12,
+     5,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "Kort i spar og plads til de tre andre farver (12 hp): dobling er oplysende – de har meldt og støttet."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     10,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "Kort i spar og plads til de tre andre farver (12 hp): dobling er oplysende – de har meldt og støttet."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     11
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     6
+    ],
+    "D": [
+     12,
+     10,
+     9,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     9
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "Kort i spar og plads til de tre andre farver (13 hp): dobling er oplysende – de har meldt og støttet."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     13,
+     10,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     4,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "zone": "ns",
+   "correct": "X",
+   "why": "Kort i spar og plads til de tre andre farver (13 hp): dobling er oplysende – de har meldt og støttet."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     11,
+     9,
+     4
+    ],
+    "D": [
+     12,
+     11,
+     8,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     8,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "zone": "ov",
+   "correct": "X",
+   "why": "Kort i spar og plads til de tre andre farver (12 hp): dobling er oplysende – de har meldt og støttet."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     12,
+     9,
+     6
+    ],
+    "D": [
+     14,
+     12,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     6,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "Kort i spar og plads til de tre andre farver (14 hp): dobling er oplysende – de har meldt og støttet."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     10
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     6,
+     4
+    ],
+    "D": [
+     13,
+     8,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     9,
+     8
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "Kort i spar og plads til de tre andre farver (12 hp): dobling er oplysende – de har meldt og støttet."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     12,
+     9,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     6,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     5,
+     4
+    ]
+   },
+   "hp": 17,
+   "sp": 22,
+   "zone": "alle",
+   "correct": "X",
+   "why": "Kort i spar og plads til de tre andre farver (17 hp): dobling er oplysende – de har meldt og støttet."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     14,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "zone": "ov",
+   "correct": "X",
+   "why": "Kort i spar og plads til de tre andre farver (12 hp): dobling er oplysende – de har meldt og støttet."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     14,
+     7,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     7,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "Kort i spar og plads til de tre andre farver (15 hp): dobling er oplysende – de har meldt og støttet."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     8,
+     7,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     8,
+     6
+    ],
+    "D": [
+     11,
+     4
+    ],
+    "C": [
+     11,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "6 hp: pas."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     7,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     3
+    ],
+    "D": [
+     6,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "7 hp: pas."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     14,
+     12,
+     6,
+     2
+    ],
+    "D": [
+     11,
+     9,
+     8,
+     5
+    ],
+    "C": [
+     8,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "7 hp: pas."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     9,
+     8,
+     5,
+     4
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     3
+    ],
+    "D": [
+     4,
+     2
+    ],
+    "C": [
+     12,
+     8,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "6 hp: pas."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     12,
+     8
+    ],
+    "H": [
+     12,
+     6,
+     3
+    ],
+    "D": [
+     10,
+     9,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     8,
+     6,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "8 hp: pas."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     10,
+     9,
+     8,
+     4
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     9,
+     7,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     9,
+     6,
+     5
+    ]
+   },
+   "hp": 4,
+   "sp": 7,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "4 hp: pas."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     9,
+     8,
+     5
+    ],
+    "H": [
+     7,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     9,
+     2
+    ],
+    "C": [
+     9,
+     2
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "3 hp: pas."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     4
+    ],
+    "D": [
+     9,
+     8,
+     3,
+     2
+    ],
+    "C": [
+     9,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "7 hp: pas."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     12,
+     9,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     4,
+     3
+    ],
+    "D": [
+     11,
+     4
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "9 hp: pas."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     9,
+     6,
+     3
+    ],
+    "H": [
+     11,
+     7,
+     3
+    ],
+    "D": [
+     10,
+     7,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     4
+    ]
+   },
+   "hp": 3,
+   "sp": 3,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "3 hp: pas."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     2
+    ],
+    "H": [
+     11,
+     9,
+     8,
+     3
+    ],
+    "D": [
+     9,
+     4
+    ],
+    "C": [
+     8,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "8 hp: pas."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     12,
+     11,
+     3,
+     2
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     9,
+     7,
+     6,
+     4
+    ],
+    "C": [
+     12,
+     10,
+     3,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "5 hp: pas."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     11,
+     9,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     9,
+     6,
+     4
+    ],
+    "C": [
+     9,
+     8,
+     5,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "5 hp: pas."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     11,
+     10,
+     6,
+     3
+    ],
+    "H": [
+     10,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     7
+    ],
+    "C": [
+     12,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "9 hp: pas."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     14,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     8,
+     6,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     9,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "8 hp: pas."
+  },
+  {
+   "situation": "hoejt",
+   "hand": {
+    "S": [
+     13,
+     9,
+     6,
+     5
+    ],
+    "H": [
+     13,
+     8,
+     7,
+     5
+    ],
+    "D": [
+     12,
+     11,
+     9
+    ],
+    "C": [
+     8,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "9 hp: pas."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     6,
+     5
+    ],
+    "H": [
+     12,
+     10,
+     6,
+     4
+    ],
+    "D": [
+     13,
+     9,
+     6,
+     5
+    ],
+    "C": [
+     11,
+     10,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "ingen",
+   "correct": "2♥",
+   "why": "4 hjerter og 6 hp: 2♥ – støt med støtte."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     14,
+     11,
+     9
+    ],
+    "H": [
+     13,
+     10,
+     7,
+     6
+    ],
+    "D": [
+     9,
+     7,
+     6,
+     3
+    ],
+    "C": [
+     11,
+     10
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "4 hjerter og 9 hp: 2♥ – støt med støtte."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     11,
+     10,
+     4
+    ],
+    "H": [
+     8,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     7,
+     6
+    ],
+    "C": [
+     13,
+     8,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "3 hjerter og 7 hp: 2♥ – støt med støtte."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     9,
+     7,
+     6
+    ],
+    "H": [
+     7,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     7,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "3 hjerter og 9 hp: 2♥ – støt med støtte."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     10,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     11,
+     6,
+     2
+    ],
+    "D": [
+     8,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     10
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ingen",
+   "correct": "2♥",
+   "why": "4 hjerter og 9 hp: 2♥ – støt med støtte."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     6,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     9,
+     5
+    ],
+    "C": [
+     7,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "alle",
+   "correct": "2♥",
+   "why": "4 hjerter og 7 hp: 2♥ – støt med støtte."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     12,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     5
+    ],
+    "D": [
+     7,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "2♥",
+   "why": "4 hjerter og 9 hp: 2♥ – støt med støtte."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     12,
+     10,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     5,
+     2
+    ],
+    "D": [
+     9,
+     7,
+     3
+    ],
+    "C": [
+     11,
+     10,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 6,
+   "zone": "ov",
+   "correct": "2♥",
+   "why": "4 hjerter og 6 hp: 2♥ – støt med støtte."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     12,
+     6
+    ],
+    "H": [
+     14,
+     8,
+     5,
+     3
+    ],
+    "D": [
+     11,
+     10,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     7,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "2♥",
+   "why": "4 hjerter og 8 hp: 2♥ – støt med støtte."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     5,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     9,
+     7,
+     4
+    ],
+    "D": [
+     13,
+     10,
+     9
+    ],
+    "C": [
+     13,
+     6,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "zone": "alle",
+   "correct": "2♥",
+   "why": "4 hjerter og 8 hp: 2♥ – støt med støtte."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     13,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     10,
+     5,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     7
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "2♥",
+   "why": "4 hjerter og 9 hp: 2♥ – støt med støtte."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     13,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     11,
+     5
+    ],
+    "D": [
+     11,
+     6,
+     4,
+     2
+    ],
+    "C": [
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "3 hjerter og 9 hp: 2♥ – støt med støtte."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     12,
+     7,
+     4
+    ],
+    "H": [
+     12,
+     3
+    ],
+    "D": [
+     13,
+     9,
+     8,
+     6,
+     3
+    ],
+    "C": [
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "ns",
+   "correct": "X",
+   "why": "Ruder og H-x i hjerter: dobling viser den sidste farve med lidt medløb i makkers farve."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     5,
+     4,
+     3
+    ],
+    "H": [
+     11,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     8,
+     7
+    ],
+    "C": [
+     10,
+     6,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "X",
+   "why": "Ruder og H-x i hjerter: dobling viser den sidste farve med lidt medløb i makkers farve."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     11,
+     5,
+     4
+    ],
+    "H": [
+     11,
+     4
+    ],
+    "D": [
+     12,
+     11,
+     8,
+     7,
+     5
+    ],
+    "C": [
+     12,
+     8,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "alle",
+   "correct": "X",
+   "why": "Ruder og H-x i hjerter: dobling viser den sidste farve med lidt medløb i makkers farve."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     13,
+     8,
+     3
+    ],
+    "H": [
+     12,
+     9
+    ],
+    "D": [
+     11,
+     7,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     9,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "Ruder og H-x i hjerter: dobling viser den sidste farve med lidt medløb i makkers farve."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     12,
+     6,
+     2
+    ],
+    "H": [
+     11,
+     8
+    ],
+    "D": [
+     12,
+     11,
+     8,
+     7,
+     3
+    ],
+    "C": [
+     8,
+     7,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "Ruder og H-x i hjerter: dobling viser den sidste farve med lidt medløb i makkers farve."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     12,
+     11,
+     2
+    ],
+    "H": [
+     11,
+     4
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     8,
+     5
+    ],
+    "C": [
+     11,
+     9,
+     7
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ov",
+   "correct": "X",
+   "why": "Ruder og H-x i hjerter: dobling viser den sidste farve med lidt medløb i makkers farve."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     11,
+     9,
+     2
+    ],
+    "H": [
+     13,
+     10
+    ],
+    "D": [
+     12,
+     8,
+     7,
+     6,
+     3
+    ],
+    "C": [
+     12,
+     9,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "Ruder og H-x i hjerter: dobling viser den sidste farve med lidt medløb i makkers farve."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     6,
+     5,
+     4
+    ],
+    "H": [
+     13,
+     8
+    ],
+    "D": [
+     13,
+     12,
+     8,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     7,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "X",
+   "why": "Ruder og H-x i hjerter: dobling viser den sidste farve med lidt medløb i makkers farve."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9
+    ],
+    "H": [
+     11,
+     7
+    ],
+    "D": [
+     9,
+     8,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     10,
+     6
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "ns",
+   "correct": "X",
+   "why": "Ruder og H-x i hjerter: dobling viser den sidste farve med lidt medløb i makkers farve."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     14,
+     11,
+     5
+    ],
+    "H": [
+     12,
+     2
+    ],
+    "D": [
+     9,
+     7,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     11,
+     8,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "X",
+   "why": "Ruder og H-x i hjerter: dobling viser den sidste farve med lidt medløb i makkers farve."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     10,
+     6,
+     2
+    ],
+    "H": [
+     13,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     9,
+     2
+    ],
+    "C": [
+     10,
+     7,
+     6
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "X",
+   "why": "Ruder og H-x i hjerter: dobling viser den sidste farve med lidt medløb i makkers farve."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     11,
+     10,
+     2
+    ],
+    "H": [
+     14,
+     8
+    ],
+    "D": [
+     11,
+     10,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "Ruder og H-x i hjerter: dobling viser den sidste farve med lidt medløb i makkers farve."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     13,
+     9,
+     2
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     5,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     9,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "7 ruder uden medløb i hjerter: 2♦ – meld din egen farve naturligt."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     12,
+     10,
+     8
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     14,
+     9,
+     5,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "6 ruder uden medløb i hjerter: 2♦ – meld din egen farve naturligt."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     14,
+     5,
+     3
+    ],
+    "H": [],
+    "D": [
+     13,
+     12,
+     11,
+     10,
+     9,
+     4,
+     2
+    ],
+    "C": [
+     10,
+     4,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "7 ruder uden medløb i hjerter: 2♦ – meld din egen farve naturligt."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     11,
+     4,
+     2
+    ],
+    "H": [],
+    "D": [
+     14,
+     13,
+     9,
+     7,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 13,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "7 ruder uden medløb i hjerter: 2♦ – meld din egen farve naturligt."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     14,
+     11,
+     9
+    ],
+    "H": [
+     9
+    ],
+    "D": [
+     11,
+     9,
+     8,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     10,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "6 ruder uden medløb i hjerter: 2♦ – meld din egen farve naturligt."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     14,
+     13,
+     3
+    ],
+    "H": [],
+    "D": [
+     13,
+     11,
+     10,
+     9,
+     6,
+     4,
+     3
+    ],
+    "C": [
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 16,
+   "zone": "ov",
+   "correct": "2♦",
+   "why": "7 ruder uden medløb i hjerter: 2♦ – meld din egen farve naturligt."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     9,
+     4
+    ],
+    "H": [
+     2
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     8,
+     7,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     7,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "zone": "ov",
+   "correct": "2♦",
+   "why": "7 ruder uden medløb i hjerter: 2♦ – meld din egen farve naturligt."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     12,
+     9,
+     4
+    ],
+    "H": [],
+    "D": [
+     14,
+     12,
+     11,
+     10,
+     9,
+     7,
+     5
+    ],
+    "C": [
+     12,
+     6,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 16,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "7 ruder uden medløb i hjerter: 2♦ – meld din egen farve naturligt."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     12,
+     9,
+     3
+    ],
+    "H": [
+     9
+    ],
+    "D": [
+     14,
+     11,
+     9,
+     6,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     8,
+     6
+    ]
+   },
+   "hp": 7,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "7 ruder uden medløb i hjerter: 2♦ – meld din egen farve naturligt."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     14,
+     10,
+     2
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     6,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "6 ruder uden medløb i hjerter: 2♦ – meld din egen farve naturligt."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     12,
+     11,
+     3
+    ],
+    "H": [],
+    "D": [
+     13,
+     11,
+     10,
+     9,
+     8,
+     5,
+     4
+    ],
+    "C": [
+     7,
+     5,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "7 ruder uden medløb i hjerter: 2♦ – meld din egen farve naturligt."
+  },
+  {
+   "situation": "umeldt",
+   "hand": {
+    "S": [
+     12,
+     7,
+     2
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     7,
+     5,
+     4
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "6 ruder uden medløb i hjerter: 2♦ – meld din egen farve naturligt."
+  }
+ ]
+}

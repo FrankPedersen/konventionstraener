@@ -85,7 +85,8 @@ function renderSystem(id){
   document.getElementById('konventioner').innerHTML = Object.entries(groups).map(([g, ks]) => `
     <p class="grouphead">${esc(g)}</p>
     <div class="tiles">${ks.map(k => {
-      const shared = systemsOf(k).length > 1 ? '<span class="shared">Fælles for begge systemer</span>' : '';
+      const others = systemsOf(k).filter(x => x !== sys.id).map(x => (SYSTEMS.find(s => s.id === x) || {}).navn).filter(Boolean);
+      const shared = others.length ? `<span class="shared">Også i ${esc(others.join(' og '))}</span>` : '';
       const roles = `<div class="roles">${k.roller.map(r => `<span>${esc(r)}</span>`).join('')}${shared}</div>`;
       return k.status === 'klar'
         ? `<a class="tile" href="traener.html?k=${encodeURIComponent(k.id)}"><h3>${suits(k.titel)}</h3><p>${suits(k.beskrivelse)}</p>${roles}<div class="meta">Træn 8 hænder →</div></a>`

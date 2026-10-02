@@ -98,6 +98,38 @@
         border:1px solid var(--line-strong); background:var(--paper); color:var(--ink); }
   .btn.primary{ background:var(--felt-deep); color:#fff; border-color:transparent; }
   .source{ margin-top:.8rem; }
+
+  /* profilvalg (Kampen om kontrakten) */
+  .profiles{ display:none; gap:.4rem; align-items:center; flex-wrap:wrap; font-family:var(--sans); font-size:.9rem; margin:.3rem 0 .2rem; }
+  .profiles.show{ display:flex; }
+  .profiles .lbl{ color:var(--muted); margin-right:.2rem; }
+  .profiles button{ font-family:var(--sans); font-weight:700; font-size:.85rem; border:1px solid var(--line-strong); background:var(--paper);
+                    color:var(--ink); border-radius:999px; padding:.2rem .7rem; cursor:pointer; }
+  .profiles button[aria-pressed="true"]{ background:var(--felt-deep); color:#fff; border-color:transparent; }
+  .aftale{ display:inline-block; font-family:var(--sans); font-size:.75rem; font-weight:800; letter-spacing:.05em; text-transform:uppercase;
+           color:#23180a; background:var(--gold); border-radius:999px; padding:.05rem .5rem; margin-left:.4rem; vertical-align:middle; }
+
+  /* bordvisning som i notatet */
+  .table-view{ display:flex; gap:1rem; align-items:flex-start; flex-wrap:wrap; margin-bottom:.8rem; }
+  .felt{ position:relative; width:5rem; height:5rem; flex:none; border-radius:.55rem; background:var(--felt-deep); border:5px solid #d6dfd9;
+         color:#fff; font-family:var(--sans); font-weight:800; font-size:.9rem; }
+  .felt.vns{ border-top-color:#c00000; border-bottom-color:#c00000; }
+  .felt.vov{ border-left-color:#c00000; border-right-color:#c00000; }
+  .felt.valle{ border-color:#c00000; }
+  .felt span{ position:absolute; line-height:1; padding:.12rem .22rem; border-radius:50%; }
+  .felt .n{ top:.15rem; left:50%; transform:translateX(-50%); } .felt .s{ bottom:.15rem; left:50%; transform:translateX(-50%); }
+  .felt .w{ left:.2rem; top:50%; transform:translateY(-50%); } .felt .e{ right:.2rem; top:50%; transform:translateY(-50%); }
+  .felt .giver{ box-shadow:0 0 0 2px var(--gold); }
+  .tinfo{ font-family:var(--sans); font-size:.8rem; line-height:1.35; color:var(--muted); margin-top:.35rem; }
+  table.auc{ border-collapse:collapse; font-family:var(--sans); font-size:.98rem; }
+  table.auc th{ color:var(--felt); font-weight:800; border-bottom:2px solid var(--felt); padding:.2rem .8rem .2rem .2rem; text-align:left; }
+  table.auc td{ padding:.2rem .8rem .2rem .2rem; border-bottom:1px solid var(--line); min-width:2.4rem; }
+  table.auc .pas{ color:var(--muted); }
+  table.auc .x{ font-weight:800; color:var(--dbl); }
+  table.auc .me{ font-weight:800; }
+  table.auc .ask{ color:var(--gold); font-weight:800; }
+  .compact .cell{ font-size:.8rem; padding:.18rem .1rem; }
+  .compact .box, .compact .specialrow{ max-width:20rem; }
 </style>
 </head>
 <body>
@@ -111,6 +143,7 @@
     <p class="eyebrow" id="group"></p>
     <h1 id="title">Træning</h1>
     <p class="deck" id="desc"></p>
+    <div class="profiles" id="profiles"><span class="lbl">Profil:</span></div>
   </section>
 
   <div class="progress" id="progress"></div>
@@ -119,6 +152,7 @@
     <div class="play">
       <span class="rolechip" id="role"></span>
       <div class="auction" id="auction"></div>
+      <div class="table-view" id="tableView" style="display:none"></div>
       <div class="hand" id="hand"></div>
     </div>
     <div class="bidding">
@@ -172,6 +206,15 @@ function shuffle(arr){
   return a;
 }
 
+// Profiler (Kampen om kontrakten): Grund = kun bogens regler, Klub = + faste aftaler, Turnering = + toggles
+const PROFILES = ['grund','klub','turnering'];
+const PROFILE_NAMES = { grund:'Grund', klub:'Klub', turnering:'Turnering' };
+function resolveForProfile(h, profile){
+  if (h.only && !h.only.includes(profile)) return null;
+  if (h[profile]) return { ...h, correct: h[profile].correct, why: h[profile].why, aftale: profile !== 'grund' && !!h.aftale };
+  if (profile === 'grund' && h.aftale) return null;
+  return h;
+}
 function buildQuestion(h, sit){
   const others = shuffle(sit.calls.filter(c => c !== h.correct)).slice(0, 3);
   return {
@@ -184,7 +227,7 @@ function buildQuestion(h, sit){
     hp: h.hp, sp: h.sp,
     correct: h.correct,
     hints: shuffle([h.correct, ...others]),
-    why: h.why,
+    why: h.why, zone: h.zone, aftale: !!h.aftale,
     bonus: { ...sit.bonus, options: shuffle(sit.bonus.options) }
   };
 }
@@ -221,6 +264,33 @@ function renderAuction(q){
   auctionEl.innerHTML = slots.join('');
 }
 
+// Bord: Dig sidder Syd. Sæderne regnes baglæns fra Syd ud fra meldingernes rækkefølge.
+const SEATS = ['N','Ø','S','V'];
+const SEAT_NAMES = ['Nord','Øst','Syd','Vest'];
+function renderTable(q){
+  const n = q.auction.length;
+  const seatOf = i => ((2 - (n - i)) % 4 + 4) % 4;          // indeks i meldeforløbet -> sæde (N=0, Ø=1, S=2, V=3)
+  const dealer = seatOf(0);
+  const zone = q.zone || null;
+  const zcls = zone === 'ns' ? ' vns' : zone === 'ov' ? ' vov' : zone === 'alle' ? ' valle' : '';
+  const zname = { ingen:'Ingen', ns:'Nord-Syd', ov:'Øst-Vest', alle:'Alle' }[zone];
+  const zrel = { ingen:'ingen i zonen', ns:'I er i zonen', ov:'de er i zonen', alle:'alle i zonen' }[zone];
+  const seatSpan = (k, cls) => `<span class="${cls}${dealer === SEATS.indexOf(k) ? ' giver' : ''}">${k}</span>`;
+  const felt = `<div><div class="felt${zcls}" role="img" aria-label="Giver ${SEAT_NAMES[dealer]}${zone ? ', zone ' + zname : ''}">${seatSpan('N','n')}${seatSpan('Ø','e')}${seatSpan('S','s')}${seatSpan('V','w')}</div>
+    <div class="tinfo">Giver: ${SEAT_NAMES[dealer]}${zone ? `<br>Zone: ${zname}<br><b>${zrel}</b>` : ''}<br>Du er Syd</div></div>`;
+  const col = seat => (seat + 1) % 4;                         // kolonner V N Ø S
+  const cells = [];
+  for (let c = 0; c < col(dealer); c++) cells.push('<td></td>');
+  q.auction.forEach(([who, call]) => {
+    const cls = call === 'Pas' ? 'pas' : (call === 'X' || call === 'XX') ? 'x' : who === 'Dig' ? 'me' : '';
+    cells.push(`<td class="${cls}">${call === 'Pas' ? 'pas' : fmtCall(call)}</td>`);
+  });
+  cells.push('<td class="ask">?</td>');
+  let rows = '';
+  for (let i = 0; i < cells.length; i += 4) rows += '<tr>' + cells.slice(i, i + 4).join('') + '</tr>';
+  $('tableView').innerHTML = felt + `<table class="auc"><thead><tr><th>V</th><th>N</th><th>Ø</th><th>S</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+
 function render(){
   answered = false; hintOn = false;
   hintBtn.setAttribute('aria-pressed','false');
@@ -228,7 +298,8 @@ function render(){
   renderProgress();
   $('role').textContent = q.role ? `Du er ${q.role.toLowerCase()}` : '';
   $('role').style.display = q.role ? '' : 'none';
-  renderAuction(q);
+  if (LAYOUT === 'bord'){ auctionEl.style.display = 'none'; $('tableView').style.display = ''; renderTable(q); }
+  else renderAuction(q);
   handEl.innerHTML = q.hand.map(([s,c]) => `<div class="row"><span class="s ${suitClass(s)}">${s}</span><span>${c}</span></div>`).join('');
   $('hintInfo').className = 'hintinfo';
 
@@ -302,7 +373,7 @@ function choose(call, btn){
   });
   if (!isCorrect) btn.classList.add('incorrect');
   feedbackEl.className = 'feedback show ' + (isCorrect ? 'ok' : 'no');
-  feedbackEl.innerHTML = `<b>${isCorrect ? 'Rigtigt — ' + q.correct : 'Facit: ' + q.correct}</b>${q.why}`;
+  feedbackEl.innerHTML = `<b>${isCorrect ? 'Rigtigt — ' + q.correct : 'Facit: ' + q.correct}${q.aftale ? '<span class="aftale" title="Facit hviler på jeres aftale, ikke bogens regel">Aftale</span>' : ''}</b>${q.why}`;
   nextBtn.className = 'next show';
   nextBtn.textContent = idx === Q.length - 1 ? 'Se resultat →' : 'Næste hånd →';
   renderProgress();
@@ -348,6 +419,26 @@ function fail(msg){
 
 const id = new URLSearchParams(location.search).get('k') || 'multiforsvar';
 let backLink = './#traen';
+let LAYOUT = 'liste', PROFILE = null, POOL = null;
+function getProfile(){ try { const p = localStorage.getItem('profil'); if (PROFILES.includes(p)) return p; } catch (e) {} return 'klub'; }
+function setupProfiles(){
+  const el = $('profiles');
+  el.className = 'profiles show';
+  PROFILES.forEach(p => {
+    const b = document.createElement('button');
+    b.textContent = PROFILE_NAMES[p];
+    b.setAttribute('aria-pressed', p === PROFILE ? 'true' : 'false');
+    b.title = { grund:'Kun bogens entydige regler', klub:'Bogen + jeres faste aftaler', turnering:'Klub + Stenberg og Lebensohl' }[p];
+    b.addEventListener('click', () => { try { localStorage.setItem('profil', p); } catch (e) {} location.reload(); });
+    el.appendChild(b);
+  });
+}
+function startRound(){
+  let hands = POOL.hands;
+  if (PROFILE) hands = hands.map(h => resolveForProfile(h, PROFILE)).filter(Boolean);
+  Q = shuffle(hands).slice(0, ROUND_SIZE).map(h => buildQuestion(h, POOL.situations[h.situation]));
+  render();
+}
 Promise.all(['data/konventioner.json', 'data/systemer.json'].map(u => fetch(u).then(r => r.json())))
   .then(([list, systems]) => {
     const k = list.find(x => x.id === id);
@@ -361,13 +452,12 @@ Promise.all(['data/konventioner.json', 'data/systemer.json'].map(u => fetch(u).t
     $('group').textContent = sys ? `${sys.navn} · ${k.gruppe}` : k.gruppe;
     $('title').textContent = k.titel;
     $('desc').textContent = k.beskrivelse;
-    if (k.viden) $('source').innerHTML = `Aftalerne står i <a href="${k.viden}">${ids.length > 1 ? 'systemdokumentet' : sys ? sys.navn + 's system' : 'vores system'}</a>.`;
+    if (k.layout === 'bord'){ LAYOUT = 'bord'; boardEl.classList.add('compact'); }
+    if (k.profiler){ PROFILE = getProfile(); setupProfiles(); }
+    if (k.viden) $('source').innerHTML = `Aftalerne står i <a href="${k.viden}">${ids.length > 1 ? 'systemdokumentet' : sys && sys.id === 'kamp' ? 'referencelaget Kampen om kontrakten' : sys ? sys.navn + 's system' : 'vores system'}</a>.`;
     return fetch(`pools/${k.id}.json`).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
   })
-  .then(pool => {
-    Q = shuffle(pool.hands).slice(0, ROUND_SIZE).map(h => buildQuestion(h, pool.situations[h.situation]));
-    render();
-  })
+  .then(pool => { POOL = pool; startRound(); })
   .catch(e => fail(e.message === 'ukendt'
     ? 'Den konvention findes ikke – eller den er ikke klar endnu.'
     : 'Kunne ikke hente hånd-puljen. Åbn siden via GitHub Pages eller en lokal webserver — ikke direkte som fil.'));

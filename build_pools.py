@@ -16,7 +16,8 @@ from dealer import (ass, bekkasin, cuebids, dont, fjerde_farve, kontrolsvar, leb
                     omvendt_bergen, rkc1430, stayman, tofarvet, transfer, xysans,
                     ff_bergen, ff_trial, ff_fast, ff_2over1, ff_genmeld, ff_minor,
                     ff_transfer, ff_gerber, ff_2kl, ff_ogust, ff_rkc,
-                    ff_michaels, ff_genaabning, ff_doblinger, ff_kravpas, ff_lebensohl)
+                    ff_michaels, ff_genaabning, ff_doblinger, ff_kravpas, ff_lebensohl,
+                    landy, kamp_stoette, kamp_konk)
 
 CONVENTIONS = {
     "multiforsvar": multiforsvar,
@@ -50,6 +51,16 @@ CONVENTIONS = {
     "ff-doblinger": ff_doblinger,
     "ff-kravpas": ff_kravpas,
     "ff-lebensohl": ff_lebensohl,
+    "kamp-landy": landy,
+    "kamp-stoette-def": SimpleNamespace(export_pool=kamp_stoette.exporter("def")),
+    "kamp-stoette-off": SimpleNamespace(export_pool=kamp_stoette.exporter("off")),
+    "kamp-stoette-minor": SimpleNamespace(export_pool=kamp_stoette.exporter("minor")),
+    "kamp-efter-od": SimpleNamespace(export_pool=kamp_stoette.exporter("od")),
+    "kamp-gif": SimpleNamespace(export_pool=kamp_konk.exporter("gif")),
+    "kamp-2020": SimpleNamespace(export_pool=kamp_konk.exporter("2020")),
+    "kamp-doblinger": SimpleNamespace(export_pool=kamp_konk.exporter("dobl")),
+    "kamp-1ut-indmeldt": SimpleNamespace(export_pool=kamp_konk.exporter("ut8")),
+    "kamp-1ut-forsvar": SimpleNamespace(export_pool=kamp_konk.exporter("ut9")),
 }
 
 def main(names):

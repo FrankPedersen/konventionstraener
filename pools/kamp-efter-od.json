@@ -1,0 +1,3792 @@
+{
+ "situations": {
+  "od_hj": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1♥"
+    ],
+    [
+     "Modstander",
+     "X"
+    ]
+   ],
+   "allowXX": true,
+   "calls": [
+    "Pas",
+    "XX",
+    "1♠",
+    "2♣",
+    "2♦",
+    "2♥",
+    "2NT",
+    "3♥",
+    "4♥"
+   ],
+   "bonus": {
+    "q": "Hvad viser redobling efter modpartens oplysningsdobling?",
+    "correct": "10+ hp uden firkortstøtte",
+    "options": [
+     "10+ hp uden firkortstøtte",
+     "Svag hånd, flugt",
+     "Firkortstøtte og udgangskrav"
+    ],
+    "why": "XX = 10+ med højst trekortstøtte. Med firkortstøtte og 10+ meldes 2NT. Direkte støtter viser 6–9 og antallet af trumf."
+   }
+  },
+  "od_sp": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "X"
+    ]
+   ],
+   "allowXX": true,
+   "calls": [
+    "Pas",
+    "XX",
+    "2♣",
+    "2♦",
+    "2♠",
+    "2NT",
+    "3♠",
+    "4♠"
+   ],
+   "bonus": {
+    "q": "Hvad viser redobling efter modpartens oplysningsdobling?",
+    "correct": "10+ hp uden firkortstøtte",
+    "options": [
+     "10+ hp uden firkortstøtte",
+     "Svag hånd, flugt",
+     "Firkortstøtte og udgangskrav"
+    ],
+    "why": "XX = 10+ med højst trekortstøtte. Med firkortstøtte og 10+ meldes 2NT. Direkte støtter viser 6–9 og antallet af trumf."
+   }
+  }
+ },
+ "hands": [
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     7,
+     2
+    ],
+    "H": [
+     12,
+     9,
+     6
+    ],
+    "D": [
+     13,
+     10,
+     8,
+     6
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     9
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "3 trumf og 8 hp: 2♥ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7,
+     2
+    ],
+    "H": [
+     14,
+     10,
+     5
+    ],
+    "D": [
+     6,
+     5
+    ],
+    "C": [
+     11,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "3 trumf og 9 hp: 2♥ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     8
+    ],
+    "H": [
+     14,
+     10,
+     2
+    ],
+    "D": [
+     6,
+     5,
+     3
+    ],
+    "C": [
+     9,
+     6,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "3 trumf og 9 hp: 2♥ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     9,
+     8,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     7
+    ],
+    "D": [
+     11,
+     8,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     7,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "zone": "ov",
+   "correct": "2♥",
+   "why": "3 trumf og 8 hp: 2♥ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10,
+     7
+    ],
+    "H": [
+     10,
+     8,
+     7
+    ],
+    "D": [
+     11,
+     8,
+     6,
+     5
+    ],
+    "C": [
+     12,
+     7
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "alle",
+   "correct": "2♥",
+   "why": "3 trumf og 7 hp: 2♥ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     9,
+     8,
+     6
+    ],
+    "H": [
+     13,
+     12,
+     4
+    ],
+    "D": [
+     11,
+     9,
+     7
+    ],
+    "C": [
+     11,
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "3 trumf og 7 hp: 2♥ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     10,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     11,
+     9,
+     7
+    ],
+    "D": [
+     14,
+     9
+    ],
+    "C": [
+     13,
+     9,
+     4,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "2♥",
+   "why": "3 trumf og 8 hp: 2♥ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     13,
+     9,
+     7,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     2
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     9,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "zone": "ov",
+   "correct": "3♥",
+   "why": "4 trumf og 7 hp: 3♥ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     7,
+     3
+    ],
+    "H": [
+     12,
+     9,
+     7,
+     5
+    ],
+    "D": [
+     10,
+     9,
+     6
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "3♥",
+   "why": "4 trumf og 8 hp: 3♥ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     10,
+     8,
+     6,
+     2
+    ],
+    "H": [
+     13,
+     10,
+     7,
+     4
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     14,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "zone": "ingen",
+   "correct": "3♥",
+   "why": "4 trumf og 7 hp: 3♥ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     10,
+     9,
+     7,
+     3
+    ],
+    "H": [
+     13,
+     8,
+     5,
+     2
+    ],
+    "D": [
+     9,
+     8,
+     6,
+     5
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "zone": "ingen",
+   "correct": "3♥",
+   "why": "4 trumf og 6 hp: 3♥ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     6,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     6,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "3♥",
+   "why": "4 trumf og 6 hp: 3♥ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     11,
+     9,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     4
+    ],
+    "D": [
+     9,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     9,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "zone": "ingen",
+   "correct": "3♥",
+   "why": "4 trumf og 9 hp: 3♥ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     11,
+     9
+    ],
+    "H": [
+     11,
+     9,
+     7,
+     3
+    ],
+    "D": [
+     9,
+     8,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "alle",
+   "correct": "3♥",
+   "why": "4 trumf og 6 hp: 3♥ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     8,
+     4
+    ],
+    "H": [
+     13,
+     11,
+     8,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     7,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ingen",
+   "correct": "4♥",
+   "why": "5 trumf og 9 hp: 4♥ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     13,
+     9,
+     5
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     7,
+     6
+    ],
+    "D": [
+     9,
+     6
+    ],
+    "C": [
+     11,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ingen",
+   "correct": "4♥",
+   "why": "5 trumf og 8 hp: 4♥ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     12,
+     9,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     9,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     9
+    ],
+    "C": [
+     11,
+     5,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "4♥",
+   "why": "5 trumf og 6 hp: 4♥ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
+     14,
+     9,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     7,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     6,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "zone": "ingen",
+   "correct": "4♥",
+   "why": "5 trumf og 7 hp: 4♥ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     11,
+     10,
+     9,
+     8,
+     4
+    ],
+    "D": [
+     11,
+     10,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     9,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "4♥",
+   "why": "5 trumf og 6 hp: 4♥ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     12,
+     10,
+     3
+    ],
+    "H": [
+     11,
+     9,
+     8,
+     3,
+     2
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     13,
+     7,
+     6,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "4♥",
+   "why": "5 trumf og 6 hp: 4♥ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     14,
+     10,
+     8,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     8
+    ],
+    "C": [
+     9,
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "zone": "ns",
+   "correct": "4♥",
+   "why": "5 trumf og 9 hp: 4♥ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     8,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     12,
+     9,
+     5
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "zone": "ov",
+   "correct": "2NT",
+   "why": "5 trumf og 10 hp: 2NT – firkortstøtte og mindst 10."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     12,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     9,
+     6
+    ],
+    "D": [
+     11,
+     5
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "zone": "alle",
+   "correct": "2NT",
+   "why": "5 trumf og 13 hp: 2NT – firkortstøtte og mindst 10."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     9,
+     4
+    ],
+    "H": [
+     11,
+     9,
+     8,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     7
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "ns",
+   "correct": "2NT",
+   "why": "4 trumf og 11 hp: 2NT – firkortstøtte og mindst 10."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     11,
+     8,
+     7,
+     6,
+     5
+    ],
+    "D": [
+     11,
+     9,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     9
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "zone": "alle",
+   "correct": "2NT",
+   "why": "5 trumf og 10 hp: 2NT – firkortstøtte og mindst 10."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     9,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     10
+    ],
+    "D": [
+     10,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "zone": "ns",
+   "correct": "2NT",
+   "why": "4 trumf og 12 hp: 2NT – firkortstøtte og mindst 10."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     14,
+     7
+    ],
+    "H": [
+     13,
+     10,
+     7,
+     2
+    ],
+    "D": [
+     10,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "zone": "alle",
+   "correct": "2NT",
+   "why": "4 trumf og 14 hp: 2NT – firkortstøtte og mindst 10."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     12
+    ],
+    "H": [
+     14,
+     10,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     8,
+     2
+    ],
+    "C": [
+     11,
+     10,
+     8,
+     7
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "zone": "ingen",
+   "correct": "2NT",
+   "why": "5 trumf og 10 hp: 2NT – firkortstøtte og mindst 10."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     13,
+     8,
+     7
+    ],
+    "H": [
+     9,
+     8,
+     2
+    ],
+    "D": [
+     13,
+     8,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     7,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "zone": "ns",
+   "correct": "XX",
+   "why": "3 trumf og 10 hp: redobling – 10+ med højst trekortstøtte.",
+   "aftale": true
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8
+    ],
+    "H": [
+     13,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     7,
+     5
+    ],
+    "C": [
+     10,
+     9,
+     6,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "zone": "ov",
+   "correct": "XX",
+   "why": "3 trumf og 13 hp: redobling – 10+ med højst trekortstøtte.",
+   "aftale": true
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     13,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     8,
+     3
+    ],
+    "D": [
+     13,
+     11,
+     6,
+     2
+    ],
+    "C": [
+     10,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "XX",
+   "why": "3 trumf og 10 hp: redobling – 10+ med højst trekortstøtte.",
+   "aftale": true
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     14,
+     8,
+     3
+    ],
+    "H": [
+     11,
+     5
+    ],
+    "D": [
+     12,
+     10,
+     7,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     6,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "zone": "alle",
+   "correct": "XX",
+   "why": "14 hp uden støtte: redobling – 10+, ofte interesseret i at straffe."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     10,
+     7,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     2
+    ],
+    "D": [
+     14,
+     8,
+     2
+    ],
+    "C": [
+     14,
+     9,
+     7,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "zone": "ns",
+   "correct": "XX",
+   "why": "12 hp uden støtte: redobling – 10+, ofte interesseret i at straffe."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     11,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     12,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "XX",
+   "why": "3 trumf og 11 hp: redobling – 10+ med højst trekortstøtte.",
+   "aftale": true
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     12,
+     9,
+     7
+    ],
+    "H": [
+     14,
+     11,
+     10
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     9
+    ],
+    "C": [
+     12,
+     9,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 14,
+   "zone": "ingen",
+   "correct": "XX",
+   "why": "3 trumf og 14 hp: redobling – 10+ med højst trekortstøtte.",
+   "aftale": true
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     9,
+     8
+    ],
+    "H": [
+     10,
+     5
+    ],
+    "D": [
+     14,
+     7,
+     5
+    ],
+    "C": [
+     14,
+     10,
+     7,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "6 klør og 8 hp: 2♣ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     10,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     11
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     10,
+     8,
+     7,
+     6,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "7 klør og 5 hp: 2♣ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     12,
+     9
+    ],
+    "H": [
+     10,
+     9
+    ],
+    "D": [
+     12,
+     11,
+     8
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     8,
+     4,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "2♣",
+   "why": "6 klør og 7 hp: 2♣ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     11,
+     9,
+     6
+    ],
+    "H": [
+     2
+    ],
+    "D": [
+     13,
+     10,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "6 klør og 9 hp: 2♣ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     14,
+     6
+    ],
+    "H": [],
+    "D": [
+     10,
+     9,
+     7,
+     3
+    ],
+    "C": [
+     12,
+     9,
+     6,
+     5,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "2♣",
+   "why": "7 klør og 6 hp: 2♣ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     9,
+     3
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     11,
+     9,
+     7
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     9,
+     8,
+     6,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "2♣",
+   "why": "7 klør og 7 hp: 2♣ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     10,
+     9,
+     4
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     9,
+     8,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     8,
+     7,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "2♣",
+   "why": "6 klør og 6 hp: 2♣ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     10,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     10,
+     9,
+     5,
+     4
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "7 ruder og 8 hp: 2♦ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     13,
+     6
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     14,
+     8,
+     6,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     10,
+     9,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "6 ruder og 8 hp: 2♦ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
+     5,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     10,
+     8,
+     6,
+     5
+    ],
+    "C": [
+     11,
+     5,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "7 ruder og 9 hp: 2♦ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [],
+    "H": [
+     6,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     6,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     7
+    ]
+   },
+   "hp": 8,
+   "sp": 14,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "7 ruder og 8 hp: 2♦ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     8,
+     4
+    ],
+    "H": [],
+    "D": [
+     14,
+     11,
+     8,
+     6,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     5,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 13,
+   "zone": "ov",
+   "correct": "2♦",
+   "why": "7 ruder og 7 hp: 2♦ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     8
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     8,
+     7,
+     6,
+     5
+    ],
+    "C": [
+     11,
+     10,
+     5,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 14,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "7 ruder og 8 hp: 2♦ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     7,
+     2
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     12,
+     11,
+     9,
+     7,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     7,
+     6
+    ]
+   },
+   "hp": 6,
+   "sp": 10,
+   "zone": "ov",
+   "correct": "2♦",
+   "why": "7 ruder og 6 hp: 2♦ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     12,
+     8,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     4,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     8,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "5 hp: pas."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     8,
+     7,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     6,
+     4
+    ],
+    "D": [
+     13,
+     9,
+     5,
+     4
+    ],
+    "C": [
+     11,
+     8
+    ]
+   },
+   "hp": 4,
+   "sp": 6,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "4 hp: pas."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     5,
+     4,
+     3
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     7,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     5,
+     4
+    ]
+   },
+   "hp": 2,
+   "sp": 5,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "2 hp: pas."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     7,
+     2
+    ],
+    "H": [],
+    "D": [
+     10,
+     8,
+     7,
+     5,
+     3
+    ],
+    "C": [
+     8,
+     6,
+     5
+    ]
+   },
+   "hp": 5,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "5 hp: pas."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     13,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     8,
+     7
+    ],
+    "D": [
+     7,
+     6,
+     5
+    ],
+    "C": [
+     12,
+     9,
+     8,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "5 hp: pas."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9,
+     7,
+     6
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     12,
+     9,
+     8,
+     6,
+     5
+    ],
+    "C": [
+     12,
+     10
+    ]
+   },
+   "hp": 5,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "5 hp: pas."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     11,
+     8,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     6,
+     4
+    ],
+    "D": [
+     8,
+     7,
+     6,
+     3
+    ],
+    "C": [
+     7,
+     5
+    ]
+   },
+   "hp": 1,
+   "sp": 3,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "1 hp: pas."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     9,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     6,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "zone": "ingen",
+   "correct": "1♠",
+   "why": "4 spar og 8 hp: 1♠ – naturligt rundekrav."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     13,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     8,
+     7
+    ],
+    "D": [
+     14,
+     11,
+     8,
+     5
+    ],
+    "C": [
+     10,
+     5,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ingen",
+   "correct": "1♠",
+   "why": "4 spar og 8 hp: 1♠ – naturligt rundekrav."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     13,
+     8,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     9
+    ],
+    "D": [
+     12,
+     10,
+     6,
+     2
+    ],
+    "C": [
+     10,
+     7,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "ns",
+   "correct": "1♠",
+   "why": "4 spar og 7 hp: 1♠ – naturligt rundekrav."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     10,
+     9,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     13,
+     11,
+     6
+    ],
+    "C": [
+     12,
+     9,
+     6,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "1♠",
+   "why": "5 spar og 6 hp: 1♠ – naturligt rundekrav."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     11,
+     2
+    ],
+    "D": [
+     13,
+     11,
+     9,
+     4
+    ],
+    "C": [
+     8,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "zone": "ov",
+   "correct": "1♠",
+   "why": "5 spar og 9 hp: 1♠ – naturligt rundekrav."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     5,
+     3
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     9,
+     7,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     10,
+     8,
+     7
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "zone": "alle",
+   "correct": "1♠",
+   "why": "4 spar og 8 hp: 1♠ – naturligt rundekrav."
+  },
+  {
+   "situation": "od_hj",
+   "hand": {
+    "S": [
+     11,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     9,
+     5
+    ],
+    "C": [
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "1♠",
+   "why": "4 spar og 9 hp: 1♠ – naturligt rundekrav."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     7,
+     6,
+     2
+    ],
+    "H": [
+     7,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     9
+    ],
+    "C": [
+     14,
+     11,
+     6,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "zone": "ov",
+   "correct": "2♠",
+   "why": "3 trumf og 8 hp: 2♠ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     12,
+     6,
+     2
+    ],
+    "H": [
+     13,
+     9,
+     4
+    ],
+    "D": [
+     13,
+     8,
+     4
+    ],
+    "C": [
+     8,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "zone": "ingen",
+   "correct": "2♠",
+   "why": "3 trumf og 8 hp: 2♠ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     11,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     5,
+     3
+    ],
+    "D": [
+     12,
+     10,
+     3
+    ],
+    "C": [
+     11,
+     10,
+     5,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "zone": "ov",
+   "correct": "2♠",
+   "why": "3 trumf og 8 hp: 2♠ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9
+    ],
+    "H": [
+     4,
+     3,
+     2
+    ],
+    "D": [
+     10,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "zone": "alle",
+   "correct": "2♠",
+   "why": "3 trumf og 8 hp: 2♠ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     13,
+     10,
+     5
+    ],
+    "H": [
+     13,
+     12,
+     6
+    ],
+    "D": [
+     11,
+     9,
+     8,
+     3
+    ],
+    "C": [
+     10,
+     9,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "zone": "ingen",
+   "correct": "2♠",
+   "why": "3 trumf og 9 hp: 2♠ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     10,
+     9,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     5
+    ],
+    "D": [
+     7,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     10,
+     7,
+     6
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "zone": "ingen",
+   "correct": "2♠",
+   "why": "3 trumf og 7 hp: 2♠ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     11,
+     9,
+     4
+    ],
+    "H": [
+     13,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     12,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     5,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "ov",
+   "correct": "2♠",
+   "why": "3 trumf og 6 hp: 2♠ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7,
+     4
+    ],
+    "H": [
+     12,
+     10,
+     7,
+     2
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     10,
+     9,
+     6,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "3♠",
+   "why": "4 trumf og 6 hp: 3♠ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     13,
+     11,
+     7,
+     6
+    ],
+    "H": [
+     7,
+     6,
+     3
+    ],
+    "D": [
+     13,
+     8,
+     7,
+     2
+    ],
+    "C": [
+     11,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "3♠",
+   "why": "4 trumf og 8 hp: 3♠ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     13,
+     11,
+     3,
+     2
+    ],
+    "H": [
+     11,
+     3
+    ],
+    "D": [
+     11,
+     9,
+     4
+    ],
+    "C": [
+     13,
+     10,
+     6,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ov",
+   "correct": "3♠",
+   "why": "4 trumf og 9 hp: 3♠ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10,
+     5
+    ],
+    "H": [
+     11,
+     4
+    ],
+    "D": [
+     14,
+     9,
+     4
+    ],
+    "C": [
+     10,
+     7,
+     6,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "3♠",
+   "why": "4 trumf og 8 hp: 3♠ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     12,
+     11,
+     8,
+     5
+    ],
+    "H": [
+     12,
+     5
+    ],
+    "D": [
+     11,
+     7,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     7,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ingen",
+   "correct": "3♠",
+   "why": "4 trumf og 9 hp: 3♠ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     12,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     11,
+     7,
+     4
+    ],
+    "D": [
+     13,
+     8,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ingen",
+   "correct": "3♠",
+   "why": "4 trumf og 9 hp: 3♠ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     3,
+     2
+    ],
+    "H": [
+     10,
+     9,
+     6,
+     5
+    ],
+    "D": [
+     5,
+     2
+    ],
+    "C": [
+     13,
+     11,
+     10
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "3♠",
+   "why": "4 trumf og 9 hp: 3♠ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     10,
+     9,
+     8,
+     6,
+     3
+    ],
+    "H": [
+     10,
+     7,
+     6
+    ],
+    "D": [
+     12,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "ov",
+   "correct": "4♠",
+   "why": "5 trumf og 6 hp: 4♠ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     8,
+     6
+    ],
+    "H": [
+     2
+    ],
+    "D": [
+     8,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     11,
+     10,
+     7
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "zone": "ns",
+   "correct": "4♠",
+   "why": "5 trumf og 7 hp: 4♠ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     12,
+     8,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     8,
+     6
+    ],
+    "D": [
+     10,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     6
+    ]
+   },
+   "hp": 6,
+   "sp": 8,
+   "zone": "ov",
+   "correct": "4♠",
+   "why": "5 trumf og 6 hp: 4♠ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     12,
+     9,
+     8,
+     5,
+     4
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     12,
+     11,
+     7,
+     2
+    ],
+    "C": [
+     12,
+     4,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "zone": "ingen",
+   "correct": "4♠",
+   "why": "5 trumf og 7 hp: 4♠ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     11,
+     10,
+     8,
+     7
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     14,
+     8,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "zone": "ns",
+   "correct": "4♠",
+   "why": "5 trumf og 9 hp: 4♠ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     13,
+     9,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     9,
+     7,
+     2
+    ],
+    "D": [
+     11,
+     9,
+     3
+    ],
+    "C": [
+     12,
+     11
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "ov",
+   "correct": "4♠",
+   "why": "5 trumf og 7 hp: 4♠ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     12,
+     11,
+     8,
+     6,
+     4
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     14,
+     10,
+     2
+    ],
+    "C": [
+     10,
+     8,
+     6,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "4♠",
+   "why": "5 trumf og 7 hp: 4♠ – støtten viser antallet af trumf."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     8,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     9
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "zone": "ingen",
+   "correct": "2NT",
+   "why": "4 trumf og 13 hp: 2NT – firkortstøtte og mindst 10."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     14,
+     10,
+     8,
+     6
+    ],
+    "H": [
+     12,
+     4
+    ],
+    "D": [
+     13,
+     10,
+     5
+    ],
+    "C": [
+     11,
+     8,
+     7,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ov",
+   "correct": "2NT",
+   "why": "4 trumf og 10 hp: 2NT – firkortstøtte og mindst 10."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     3
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     11,
+     10,
+     9,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     8,
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "zone": "alle",
+   "correct": "2NT",
+   "why": "4 trumf og 13 hp: 2NT – firkortstøtte og mindst 10."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     5
+    ],
+    "D": [
+     10,
+     8,
+     4
+    ],
+    "C": [
+     10,
+     3,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "zone": "ingen",
+   "correct": "2NT",
+   "why": "4 trumf og 11 hp: 2NT – firkortstøtte og mindst 10."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9,
+     5,
+     2
+    ],
+    "H": [
+     13,
+     8,
+     2
+    ],
+    "D": [
+     14,
+     13
+    ],
+    "C": [
+     10,
+     7,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "zone": "ns",
+   "correct": "2NT",
+   "why": "5 trumf og 13 hp: 2NT – firkortstøtte og mindst 10."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     7,
+     3
+    ],
+    "H": [
+     13,
+     10,
+     7,
+     2
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     10,
+     6,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "zone": "ingen",
+   "correct": "2NT",
+   "why": "5 trumf og 10 hp: 2NT – firkortstøtte og mindst 10."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     14,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     13,
+     12,
+     4,
+     3
+    ],
+    "C": [
+     11,
+     10,
+     6,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "zone": "ns",
+   "correct": "2NT",
+   "why": "4 trumf og 11 hp: 2NT – firkortstøtte og mindst 10."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     14,
+     11,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     9,
+     7
+    ],
+    "D": [
+     12,
+     3,
+     2
+    ],
+    "C": [
+     10,
+     8,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "XX",
+   "why": "3 trumf og 10 hp: redobling – 10+ med højst trekortstøtte.",
+   "aftale": true
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8
+    ],
+    "H": [
+     13,
+     9,
+     7,
+     6
+    ],
+    "D": [
+     13,
+     6
+    ],
+    "C": [
+     9,
+     8,
+     6,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "zone": "ingen",
+   "correct": "XX",
+   "why": "3 trumf og 12 hp: redobling – 10+ med højst trekortstøtte.",
+   "aftale": true
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     4
+    ],
+    "H": [
+     13,
+     10,
+     5
+    ],
+    "D": [
+     14,
+     5,
+     2
+    ],
+    "C": [
+     8,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 12,
+   "zone": "ns",
+   "correct": "XX",
+   "why": "3 trumf og 12 hp: redobling – 10+ med højst trekortstøtte.",
+   "aftale": true
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     10
+    ],
+    "D": [
+     12,
+     3
+    ],
+    "C": [
+     9,
+     8,
+     5,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "ov",
+   "correct": "XX",
+   "why": "3 trumf og 11 hp: redobling – 10+ med højst trekortstøtte.",
+   "aftale": true
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     3
+    ],
+    "D": [
+     9,
+     7,
+     6,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "zone": "ingen",
+   "correct": "XX",
+   "why": "14 hp uden støtte: redobling – 10+, ofte interesseret i at straffe."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     11,
+     3
+    ],
+    "H": [
+     12,
+     8,
+     5,
+     4
+    ],
+    "D": [
+     12,
+     10,
+     9
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "zone": "ns",
+   "correct": "XX",
+   "why": "12 hp uden støtte: redobling – 10+, ofte interesseret i at straffe."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     13,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     8,
+     7,
+     3
+    ],
+    "D": [
+     13,
+     6
+    ],
+    "C": [
+     13,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "zone": "ns",
+   "correct": "XX",
+   "why": "3 trumf og 13 hp: redobling – 10+ med højst trekortstøtte.",
+   "aftale": true
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     12
+    ],
+    "H": [
+     5,
+     3
+    ],
+    "D": [
+     12,
+     9,
+     8,
+     7
+    ],
+    "C": [
+     13,
+     11,
+     9,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "zone": "ns",
+   "correct": "2♣",
+   "why": "6 klør og 8 hp: 2♣ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     4,
+     3,
+     2
+    ],
+    "D": [
+     9,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     8,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 10,
+   "zone": "ns",
+   "correct": "2♣",
+   "why": "7 klør og 5 hp: 2♣ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     8,
+     7
+    ],
+    "H": [
+     11,
+     8
+    ],
+    "D": [
+     11,
+     8,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     9,
+     8,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "zone": "ingen",
+   "correct": "2♣",
+   "why": "6 klør og 9 hp: 2♣ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     12,
+     10,
+     9,
+     6
+    ],
+    "D": [
+     12,
+     10
+    ],
+    "C": [
+     14,
+     9,
+     8,
+     6,
+     5,
+     4,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 14,
+   "zone": "ingen",
+   "correct": "2♣",
+   "why": "7 klør og 8 hp: 2♣ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     9,
+     6,
+     5
+    ],
+    "D": [
+     9,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "6 klør og 6 hp: 2♣ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     13,
+     5
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     11,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     8,
+     5,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "7 klør og 9 hp: 2♣ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     11,
+     3
+    ],
+    "H": [
+     9
+    ],
+    "D": [
+     12,
+     8,
+     6,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     10,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "zone": "ns",
+   "correct": "2♣",
+   "why": "6 klør og 8 hp: 2♣ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     12,
+     10,
+     7,
+     6,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     6,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 13,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "7 ruder og 7 hp: 2♦ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     12,
+     7
+    ],
+    "H": [
+     13,
+     10,
+     7,
+     2
+    ],
+    "D": [
+     11,
+     10,
+     5,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 10,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "6 ruder og 6 hp: 2♦ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     4
+    ],
+    "D": [
+     12,
+     10,
+     9,
+     8,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     11,
+     9,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 15,
+   "zone": "ov",
+   "correct": "2♦",
+   "why": "7 ruder og 9 hp: 2♦ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     12,
+     7,
+     5
+    ],
+    "D": [
+     14,
+     9,
+     8,
+     7,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     11,
+     7
+    ]
+   },
+   "hp": 7,
+   "sp": 11,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "7 ruder og 7 hp: 2♦ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     13,
+     10,
+     9,
+     8,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     13,
+     8,
+     7,
+     6
+    ]
+   },
+   "hp": 7,
+   "sp": 13,
+   "zone": "ov",
+   "correct": "2♦",
+   "why": "7 ruder og 7 hp: 2♦ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     6,
+     5
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     12,
+     10,
+     8,
+     7,
+     6,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     6,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "7 ruder og 5 hp: 2♦ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     11,
+     3
+    ],
+    "D": [
+     11,
+     10,
+     8,
+     7,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     5,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 12,
+   "zone": "ov",
+   "correct": "2♦",
+   "why": "7 ruder og 6 hp: 2♦ – konstruktiv, ikke krav.",
+   "aftale": true
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     10,
+     8,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     6,
+     3
+    ],
+    "C": [
+     10,
+     7,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 3,
+   "sp": 8,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "3 hp: pas."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     6,
+     3
+    ],
+    "H": [
+     9,
+     4,
+     3
+    ],
+    "D": [
+     11,
+     9,
+     8,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     5,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "4 hp: pas."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     12,
+     9
+    ],
+    "H": [
+     10,
+     6,
+     2
+    ],
+    "D": [
+     11,
+     10,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "3 hp: pas."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     9,
+     4
+    ],
+    "H": [
+     10,
+     9,
+     7,
+     6,
+     4
+    ],
+    "D": [
+     8,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     11,
+     8
+    ]
+   },
+   "hp": 1,
+   "sp": 3,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "1 hp: pas."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     6,
+     4
+    ],
+    "H": [
+     11,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     10,
+     3,
+     2
+    ],
+    "C": [
+     10,
+     7,
+     4,
+     2
+    ]
+   },
+   "hp": 1,
+   "sp": 2,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "1 hp: pas."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     8,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     10,
+     9,
+     7,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "5 hp: pas."
+  },
+  {
+   "situation": "od_sp",
+   "hand": {
+    "S": [
+     14,
+     2
+    ],
+    "H": [
+     10,
+     8,
+     7,
+     4,
+     3
+    ],
+    "D": [
+     8,
+     4
+    ],
+    "C": [
+     9,
+     8,
+     6,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 6,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "4 hp: pas."
+  }
+ ]
+}
