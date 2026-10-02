@@ -1,47 +1,143 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="da">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Bridgesystem — Konventionstræner</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bridgesystem · Karina &amp; Frank — Konventionstræner</title>
 <meta name="description" content="Vores bridgesystem: åbninger, svar, støtte, konkurrence, doblinger, udspil og markeringer.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;1,400&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&text=%E2%99%A0%E2%99%A5%E2%99%A6%E2%99%A3&display=swap">
-<link rel="stylesheet" href="../assets/site.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Lora:wght@400;600&display=swap" rel="stylesheet">
 <style>
-  .doc h1{ font-size:clamp(1.5rem,3vw,2rem); margin:2.6rem 0 .8rem; padding-top:.4rem; border-top:1px solid var(--gold); }
-  .doc h1.doc-title{ font-size:clamp(2rem,5vw,3.2rem); border:0; margin:.4rem 0 .4rem; padding:0; }
-  .doc h2{ font-size:1.35rem; margin:1.8rem 0 .5rem; color:var(--felt); }
-  .doc h3{ font-size:1.1rem; }
-  .doc table{ width:100%; border-collapse:collapse; font-family:var(--sans); font-size:1rem; line-height:1.4; margin:.8rem 0 1.2rem; display:block; overflow-x:auto; }
-  .doc table colgroup{ display:none; }
-  .doc th{ text-align:left; color:var(--felt); font-weight:800; border-bottom:2px solid var(--felt); padding:.4rem .6rem; }
-  .doc td{ padding:.42rem .6rem; border-bottom:1px solid var(--line); vertical-align:top; }
-  .doc td em{ color:var(--muted); }
-  .doc h1, .doc h2{ scroll-margin-top:1rem; }
-  .doc-toc{ background:var(--panel); border-radius:.5rem; padding:.9rem 1.1rem; margin:1.4rem 0; font-family:var(--sans); }
-  .doc-toc ol{ list-style:none; margin:0; padding:0; columns:2; column-gap:1.6rem; }
-  .doc-toc li{ break-inside:avoid; }
-  .doc-toc a{ display:block; padding:.2rem 0; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line); }
-  .doc-toc a:hover{ color:var(--felt); }
-  @media (max-width:560px){ .doc-toc ol{ columns:1; } }
+:root{ --font-heading:"Cormorant Garamond"; --font-body:"Lora"; --color-bg:#f3f2f2; --color-text:#201f1d; }
+*{ box-sizing:border-box; }
+body{ margin:0; background:var(--color-bg); color:var(--color-text); font-family:var(--font-body),Lora,Georgia,serif; font-size:15px; line-height:1.55; }
+a{ color:#2C5446; } a:hover{ color:#b68235; }
+::selection{ background:rgba(182,130,53,0.22); }
+.top{ border-bottom:1px solid rgba(32,31,29,0.16); }
+.top .in{ display:flex; align-items:center; justify-content:space-between; gap:20px; max-width:1560px; margin:0 auto; padding:14px clamp(14px,3vw,44px); }
+.top .brand{ font-family:var(--font-heading),Georgia,serif; font-size:21px; font-weight:600; color:#2C5446; text-decoration:none; }
+.top nav{ display:flex; gap:6px; font-size:14px; }
+.top nav a{ padding:6px 12px; border:1px solid transparent; border-radius:4px; color:#201f1d; text-decoration:none; }
+.top nav a[aria-current]{ border-color:#b68235; color:#2C5446; }
+.top nav a:hover{ background:rgba(182,130,53,0.09); color:#2C5446; }
+.wrap{ display:flex; flex-wrap:wrap; align-items:flex-start; max-width:1560px; margin:0 auto; padding:0 clamp(14px,3vw,44px) 90px; }
+aside{ flex:0 0 292px; min-width:0; padding:26px 24px 48px 0; }
+main{ flex:1 1 620px; min-width:0; padding:0 0 0 clamp(0px,3vw,44px); border-left:1px solid rgba(32,31,29,0.16); }
+@media (min-width:960px){ aside{ position:sticky; top:0; max-height:100vh; overflow:auto; } }
+@media (max-width:959px){ aside{ flex:1 1 100%; padding-right:0; } .toc{ max-height:40vh; overflow:auto; } main{ border-left:0; padding-left:0; } }
+.k{ font-family:var(--font-heading),Georgia,serif; font-size:10px; letter-spacing:0.28em; color:#9A7B3F; text-transform:uppercase; margin-bottom:10px; }
+.t1{ font-family:var(--font-heading),Georgia,serif; font-size:26px; line-height:1.05; color:#122E42; }
+.t2{ font-family:var(--font-heading),Georgia,serif; font-size:16px; line-height:1.2; color:#0E3A52; margin-bottom:16px; }
+#q{ width:100%; padding:8px 10px; font:13.5px var(--font-body),Georgia,serif; color:#201f1d; background:transparent; border:1px solid rgba(32,31,29,0.2); border-radius:4px; margin-bottom:6px; }
+#q:focus{ outline:2px solid #b68235; outline-offset:2px; }
+#cnt{ font-size:11.5px; letter-spacing:0.06em; color:rgba(32,31,29,0.5); padding:4px 0 14px; border-bottom:1px solid rgba(32,31,29,0.16); }
+.toc{ display:flex; flex-direction:column; gap:2px; padding-top:12px; }
+.tp{ display:flex; flex-direction:column; gap:1px; padding-bottom:10px; }
+.toc a{ display:block; text-decoration:none; padding:4px 10px 4px 11px; border-left:2px solid transparent; border-radius:2px; }
+.toc a.lp{ font-family:var(--font-heading),Georgia,serif; font-size:16.5px; font-weight:600; line-height:1.25; color:#201f1d; }
+.toc a.li{ font-size:13.5px; line-height:1.45; color:rgba(32,31,29,0.7); }
+.toc a:hover{ color:#2C5446; background:rgba(182,130,53,0.09); }
+.toc a.on{ color:#2C5446; border-left-color:#b68235; background:rgba(182,130,53,0.11); }
+.toc .hide{ display:none; }
+.hero{ padding:52px 0 34px; border-bottom:1px solid rgba(32,31,29,0.18); }
+.hero .k{ font-size:11px; letter-spacing:0.34em; }
+.hero h1{ font-family:var(--font-heading),Georgia,serif; font-size:clamp(46px,7vw,82px); font-weight:400; line-height:0.98; letter-spacing:-0.02em; color:#122E42; margin:18px 0 6px; }
+.hero .sub{ font-family:var(--font-heading),Georgia,serif; font-size:clamp(24px,3.4vw,36px); line-height:1.1; color:#0E3A52; margin-bottom:24px; }
+.hero .d{ display:flex; flex-direction:column; gap:6px; font-size:14.5px; line-height:1.6; color:#5A6B76; max-width:70ch; }
+.hero .m{ display:flex; flex-wrap:wrap; gap:22px; margin-top:26px; padding-top:16px; border-top:1px solid rgba(32,31,29,0.14); font-size:13px; letter-spacing:0.04em; color:#5A6B76; }
+@media print{ .top, aside{ display:none; } main{ border:0; padding:0; } }
+
+.doc h1{ font-family:var(--font-heading),Georgia,serif; font-size:40px; font-weight:400; line-height:1.1; letter-spacing:-0.005em; color:#2C5446; margin:0 0 22px; }
+.doc section.part{ padding:44px 0 8px; border-top:1px solid rgba(32,31,29,0.18); margin-top:40px; }
+.doc h2{ font-family:var(--font-heading),Georgia,serif; font-size:29px; font-weight:400; line-height:1.15; color:#3D6E58; margin:34px 0 14px; }
+.doc h3, .doc h4{ font-family:var(--font-heading),Georgia,serif; font-size:20px; font-weight:600; color:#3D6E58; margin:28px 0 10px; }
+.doc h1, .doc h2, .doc section{ scroll-margin-top:20px; }
+.doc p{ margin:0 0 14px; line-height:1.75; max-width:78ch; text-wrap:pretty; }
+.doc ul, .doc ol{ line-height:1.7; max-width:78ch; }
+.doc table{ display:block; overflow-x:auto; width:100%; border-collapse:collapse; font-size:15px; line-height:1.55; margin:20px 0 26px; }
+.doc table colgroup{ display:none; }
+.doc th{ text-align:left; vertical-align:bottom; padding:0 14px 9px; border-bottom:1.5px solid #2C5446; font-family:var(--font-heading),Georgia,serif; font-size:17px; font-weight:600; color:#2C5446; }
+.doc td{ padding:11px 14px; border-bottom:1px solid rgba(32,31,29,0.13); vertical-align:top; }
+.doc tbody tr:nth-child(odd) td{ background:rgba(237,243,233,0.55); }
+.doc td strong{ color:#122E42; }
+.doc td em{ color:#555555; }
+/* enkeltcellede noter */
+.doc table:not(:has(thead)) td{ background:transparent !important; border-bottom:0; border-top:1px solid rgba(182,130,53,0.38); padding:11px 0 0; font-size:14.5px; line-height:1.7; color:#555555; }
+.su{ font-style:normal; } .su-h, .su-d{ color:#C00000; }
 </style>
 </head>
 <body>
-<header class="site-head"><div class="in">
+<header class="top"><div class="in">
   <a class="brand" href="../">Konventionstræner</a>
   <nav><a href="../#traen">Træn</a><a href="./" aria-current="page">Viden</a></nav>
 </div></header>
 <div class="wrap">
-<main class="doc prose">
-<p class="eyebrow">Systembeskrivelse</p>
-<h1 class="doc-title">BRIDGESYSTEM</h1>
-<p>Karina &amp; Frank</p>
-<p>Meldesystem · Konventioner · Udspil og markeringer</p>
-<p>Version 1.6 · September 2026</p>
-<nav class="doc-toc" aria-label="Indhold"><p class="eyebrow">Indhold</p><ol><li><a href="#1-systemoversigt">1. Systemoversigt</a></li><li><a href="#2-aabningsmeldinger">2. Åbningsmeldinger</a></li><li><a href="#3-svar-paa-1nt">3. Svar på 1NT</a></li><li><a href="#4-stoette-og-videre-meldeforloeb">4. Støtte og videre meldeforløb</a></li><li><a href="#5-slemudforskning-1430">5. Slemudforskning – 1430</a></li><li><a href="#6-konkurrencemeldinger">6. Konkurrencemeldinger</a></li><li><a href="#7-doblinger">7. Doblinger</a></li><li><a href="#8-forsvar-og-systemet-ved-indblanding">8. Forsvar og systemet ved indblanding</a></li><li><a href="#9-udspil-og-markeringer">9. Udspil og markeringer</a></li></ol></nav>
+  <aside>
+    <div class="k">Bridge · Parsystem</div>
+    <div class="t1">Bridgesystem</div>
+    <div class="t2">Karina &amp; Frank</div>
+    <input id="q" type="search" placeholder="Søg i indholdet…" aria-label="Søg i indholdet">
+    <div id="cnt">38 overskrifter · 9 dele</div>
+    <nav class="toc" id="toc">
+<div class="tp"><a class="lp" href="#1-systemoversigt">1. Systemoversigt</a>
+</div>
+<div class="tp"><a class="lp" href="#2-aabningsmeldinger">2. Åbningsmeldinger</a>
+<a class="li" href="#2-1-farveaabninger-paa-1-trinnet">2.1 Farveåbninger på 1-trinnet</a>
+<a class="li" href="#2-2-sansaabninger">2.2 Sansåbninger</a>
+<a class="li" href="#2-3-sansgenmeldinger">2.3 Sansgenmeldinger</a>
+<a class="li" href="#2-4-2-den-staerke-aabning">2.4 2♣ – den stærke åbning</a>
+<a class="li" href="#2-5-spaerremeldinger">2.5 Spærremeldinger</a>
+<a class="li" href="#2-6-svar-paa-spaerremeldinger">2.6 Svar på spærremeldinger</a>
+</div>
+<div class="tp"><a class="lp" href="#3-svar-paa-1nt">3. Svar på 1NT</a>
+</div>
+<div class="tp"><a class="lp" href="#4-stoette-og-videre-meldeforloeb">4. Støtte og videre meldeforløb</a>
+<a class="li" href="#4-1-svar-paa-1-i-major-samlet-oversigt">4.1 Svar på 1 i major – samlet oversigt</a>
+<a class="li" href="#4-2-aabners-genmelding-efter-2-over-1-10-hp">4.2 Åbners genmelding efter 2-over-1 (10+ hp)</a>
+<a class="li" href="#4-3-majorstoette-omvendt-bergen">4.3 Majorstøtte – Omvendt Bergen</a>
+<a class="li" href="#4-4-majorstoette-direkte-loeft">4.4 Majorstøtte – direkte løft</a>
+<a class="li" href="#4-5-bekkasin-1m-2nt">4.5 Bekkasin – 1M – 2NT</a>
+<a class="li" href="#4-6-svar-paa-1-i-minor-samlet-oversigt">4.6 Svar på 1 i minor – samlet oversigt</a>
+<a class="li" href="#4-7-xy-sans-efter-1nt-genmelding">4.7 XY-sans (efter 1NT-genmelding)</a>
+<a class="li" href="#4-8-4-farve">4.8 4. farve</a>
+</div>
+<div class="tp"><a class="lp" href="#5-slemudforskning-1430">5. Slemudforskning – 1430</a>
+</div>
+<div class="tp"><a class="lp" href="#6-konkurrencemeldinger">6. Konkurrencemeldinger</a>
+<a class="li" href="#6-1-indmeldinger">6.1 Indmeldinger</a>
+<a class="li" href="#6-2-svar-paa-indmelding">6.2 Svar på indmelding</a>
+<a class="li" href="#6-3-overmelding-i-modstandernes-farve">6.3 Overmelding i modstandernes farve</a>
+<a class="li" href="#6-4-michaels-cuebid">6.4 Michaels cuebid</a>
+<a class="li" href="#6-5-usaedvanlig-2nt">6.5 Usædvanlig 2NT</a>
+<a class="li" href="#6-6-gif-genaabning-efter-to-passer">6.6 GIF – genåbning efter to passer</a>
+<a class="li" href="#6-7-aabning-i-3-haand">6.7 Åbning i 3. hånd</a>
+</div>
+<div class="tp"><a class="lp" href="#7-doblinger">7. Doblinger</a>
+<a class="li" href="#7-1-oplysningsdobling">7.1 Oplysningsdobling</a>
+<a class="li" href="#7-2-oevrige-doblinger">7.2 Øvrige doblinger</a>
+</div>
+<div class="tp"><a class="lp" href="#8-forsvar-og-systemet-ved-indblanding">8. Forsvar og systemet ved indblanding</a>
+<a class="li" href="#multiforsvar">8.1 Mod modstandernes 1NT – Multiforsvar</a>
+<a class="li" href="#8-2-mod-modstandernes-spaerremeldinger">8.2 Mod modstandernes spærremeldinger</a>
+<a class="li" href="#8-3-naar-modstanderne-melder-over-vores-1nt">8.3 Når modstanderne melder over vores 1NT</a>
+<a class="li" href="#8-4-hvad-gaelder-ved-indblanding">8.4 Hvad gælder ved indblanding?</a>
+</div>
+<div class="tp"><a class="lp" href="#9-udspil-og-markeringer">9. Udspil og markeringer</a>
+<a class="li" href="#9-1-udspil">9.1 Udspil</a>
+<a class="li" href="#9-2-markeringer">9.2 Markeringer</a>
+</div>
+    </nav>
+  </aside>
+  <main class="doc">
+    <header class="hero">
+      <div class="k">Systembeskrivelse · Karina &amp; Frank</div>
+      <h1 style="font-size:clamp(46px,7vw,82px);line-height:0.98;letter-spacing:-0.02em;color:#122E42;margin:18px 0 6px">Bridgesystem</h1>
+      <div class="sub">Karina &amp; Frank</div>
+      <div class="d"><div>Meldesystem · Konventioner · Udspil og markeringer</div>
+      <div>2 over 1 med 10+ hp · Omvendt Bergen · Bekkasin · Multiforsvar · 1430</div></div>
+      <div class="m"><div>Version 1.6</div><div>September 2026</div></div>
+    </header>
+<section class="part">
 <h1 id="1-systemoversigt">1. Systemoversigt</h1>
 <p>Kort resumé af systemets hovedelementer. Detaljerne følger i afsnit
 2–9.</p>
@@ -107,6 +203,8 @@ afkast</td>
 </tr>
 </tbody>
 </table>
+</section>
+<section class="part">
 <h1 id="2-aabningsmeldinger">2. Åbningsmeldinger</h1>
 <h2 id="2-1-farveaabninger-paa-1-trinnet">2.1 Farveåbninger på 1-trinnet</h2>
 <table>
@@ -297,6 +395,8 @@ noget i.</td>
 </tr>
 </tbody>
 </table>
+</section>
+<section class="part">
 <h1 id="3-svar-paa-1nt">3. Svar på 1NT</h1>
 <table>
 <colgroup>
@@ -345,6 +445,8 @@ meldeforløbet – se afsnit 8.</em></td>
 </tr>
 </tbody>
 </table>
+</section>
+<section class="part">
 <h1 id="4-stoette-og-videre-meldeforloeb">4. Støtte og videre meldeforløb</h1>
 <h2 id="4-1-svar-paa-1-i-major-samlet-oversigt">4.1 Svar på 1 i major – samlet oversigt</h2>
 <p>Oversigten samler alle svar på 1<span class="su su-h">♥</span>/1♠ i ét skema. Point-grænserne er
@@ -1023,6 +1125,8 @@ tillæg</td>
 </tr>
 </tbody>
 </table>
+</section>
+<section class="part">
 <h1 id="5-slemudforskning-1430">5. Slemudforskning – 1430</h1>
 <table>
 <colgroup>
@@ -1079,6 +1183,8 @@ tilsvarende: 6NT eller 7NT.</em></td>
 </tr>
 </tbody>
 </table>
+</section>
+<section class="part">
 <h1 id="6-konkurrencemeldinger">6. Konkurrencemeldinger</h1>
 <h2 id="6-1-indmeldinger">6.1 Indmeldinger</h2>
 <table>
@@ -1342,6 +1448,8 @@ passer, hvis det er en 20–20-situation.</p>
 </table>
 <h2 id="6-7-aabning-i-3-haand">6.7 Åbning i 3. hånd</h2>
 <p>Vi låner 4 hp af makker, når vi åbner i 3. hånd.</p>
+</section>
+<section class="part">
 <h1 id="7-doblinger">7. Doblinger</h1>
 <h2 id="7-1-oplysningsdobling">7.1 Oplysningsdobling</h2>
 <p>12+ hp og højst 2 kort i modstandernes farve.</p>
@@ -1412,6 +1520,8 @@ Se 8.1</td>
 </tr>
 </tbody>
 </table>
+</section>
+<section class="part">
 <h1 id="8-forsvar-og-systemet-ved-indblanding">8. Forsvar og systemet ved indblanding</h1>
 <h2 id="multiforsvar">8.1 Mod modstandernes 1NT – Multiforsvar</h2>
 <p>2♣ til 2NT viser 10–16 hp, hvor fordeling kan kompensere for
@@ -1653,6 +1763,8 @@ Omvendt Bergen – kun XY-sans gælder fortsat.</em></td>
 </tr>
 </tbody>
 </table>
+</section>
+<section class="part">
 <h1 id="9-udspil-og-markeringer">9. Udspil og markeringer</h1>
 <h2 id="9-1-udspil">9.1 Udspil</h2>
 <table>
@@ -1844,7 +1956,25 @@ antal</td>
 </tr>
 </tbody>
 </table>
-</main>
+</section>
+  </main>
 </div>
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('#toc a'));
+  var ids=links.map(function(a){return a.getAttribute('href').slice(1);});
+  function spy(){ var cur=ids[0];
+    ids.forEach(function(id){ var el=document.getElementById(id); if(el && el.getBoundingClientRect().top<=130) cur=id; });
+    links.forEach(function(a){ a.classList.toggle('on', a.getAttribute('href')==='#'+cur); }); }
+  window.addEventListener('scroll',spy,{passive:true}); spy();
+  var q=document.getElementById('q'), cnt=document.getElementById('cnt'), base=cnt.textContent;
+  q.addEventListener('input',function(){ var v=q.value.trim().toLowerCase(), n=0;
+    [].slice.call(document.querySelectorAll('#toc .tp')).forEach(function(g){
+      var as=[].slice.call(g.querySelectorAll('a')), self=as[0].textContent.toLowerCase().indexOf(v)>=0, any=false;
+      as.slice(1).forEach(function(a){ var ok=!v||self||a.textContent.toLowerCase().indexOf(v)>=0; a.classList.toggle('hide',!ok); if(ok){any=true;n++;} });
+      var show=!v||self||any; as[0].classList.toggle('hide',!show); if(show) n++; });
+    cnt.textContent = v ? n+' af 38 overskrifter' : base; });
+})();
+</script>
 </body>
 </html>
