@@ -195,6 +195,11 @@
 <script>
 const STRAINS = ['♣','♦','♥','♠','NT'];
 function suitClass(s){ return (s === '♥' || s === '♦') ? 'r' : 'k'; }
+// Fritekst fra puljer og data: escapes og farver kulørsymbolerne (♥♦ røde, ♠♣ sorte)
+function suits(t){
+  return String(t).replace(/[&<>"]/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]))
+    .replace(/[♠♥♦♣]/g, c => `<span class="su ${suitClass(c)}">${c}</span>`);
+}
 function rank(level, strainIdx){ return level*5 + strainIdx; }
 function parseCall(call){
   if (call === 'Pas' || call === 'X' || call === 'XX') return null;
@@ -349,13 +354,14 @@ function render(){
   feedbackEl.innerHTML = '';
   nextBtn.className = 'next';
 
-  $('bonusQ').textContent = q.bonus.q;
+  $('bonusQ').innerHTML = suits(q.bonus.q);
   const bOptsEl = $('bonusOpts');
   bOptsEl.innerHTML = '';
   q.bonus.options.forEach(opt => {
     const b = document.createElement('button');
     b.className = 'bopt';
-    b.textContent = opt;
+    b.innerHTML = suits(opt);
+    b.dataset.opt = opt;
     b.addEventListener('click', () => chooseBonus(opt, b));
     bOptsEl.appendChild(b);
   });
@@ -388,7 +394,7 @@ function choose(call, btn){
   });
   if (!isCorrect) btn.classList.add('incorrect');
   feedbackEl.className = 'feedback show ' + (isCorrect ? 'ok' : 'no');
-  feedbackEl.innerHTML = `<b>${isCorrect ? 'Rigtigt — ' + q.correct : 'Facit: ' + q.correct}${q.aftale ? '<span class="aftale" title="Facit hviler på jeres aftale, ikke bogens regel">Aftale</span>' : ''}</b>${q.why}`;
+  feedbackEl.innerHTML = `<b>${isCorrect ? 'Rigtigt — ' + fmtCall(q.correct) : 'Facit: ' + fmtCall(q.correct)}${q.aftale ? '<span class="aftale" title="Facit hviler på jeres aftale, ikke bogens regel">Aftale</span>' : ''}</b>${suits(q.why)}`;
   nextBtn.className = 'next show';
   nextBtn.textContent = idx === Q.length - 1 ? 'Se resultat →' : 'Næste hånd →';
   renderProgress();
@@ -400,11 +406,11 @@ function chooseBonus(opt, btn){
   if (opts[0].disabled) return; // already answered
   opts.forEach(b => {
     b.disabled = true;
-    if (b.textContent === q.bonus.correct) b.classList.add('correct');
+    if (b.dataset.opt === q.bonus.correct) b.classList.add('correct');
   });
   if (opt !== q.bonus.correct) btn.classList.add('incorrect');
   $('bonusFeedback').className = 'bfeedback show';
-  $('bonusFeedback').textContent = q.bonus.why;
+  $('bonusFeedback').innerHTML = suits(q.bonus.why);
 }
 
 nextBtn.addEventListener('click', () => {
@@ -457,15 +463,15 @@ function setupChooser(k, list, systems){
   const ch = $('chooser');
   ch.style.display = '';
   ch.innerHTML = `<h2>${k.valg || 'Vælg metode'}</h2><div class="opts3">${vars.map(v =>
-    `<button data-id="${v.id}" class="${v.id === last ? 'last' : ''}"><b>${v.navn}</b><span>${v.k.beskrivelse}</span>${v.id === last ? '<div class="lastnote">Sidst valgt</div>' : ''}</button>`).join('')}</div>`;
+    `<button data-id="${v.id}" class="${v.id === last ? 'last' : ''}"><b>${v.navn}</b><span>${suits(v.k.beskrivelse)}</span>${v.id === last ? '<div class="lastnote">Sidst valgt</div>' : ''}</button>`).join('')}</div>`;
   ch.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
     const v = vars.find(x => x.id === b.dataset.id);
     try { localStorage.setItem('variant-' + k.id, v.id); } catch (e) {}
     ch.style.display = 'none';
     $('progress').style.display = ''; boardEl.style.display = '';
-    $('title').textContent = `${k.titel}: ${v.navn}`;
+    $('title').innerHTML = suits(`${k.titel}: ${v.navn}`);
     document.title = `${k.titel}: ${v.navn} — Konventionstræner`;
-    $('desc').innerHTML = `${v.k.beskrivelse} <span class="switch">· <a href="${location.href}">Skift forsvar</a></span>`;
+    $('desc').innerHTML = `${suits(v.k.beskrivelse)} <span class="switch">· <a href="${location.href}">Skift forsvar</a></span>`;
     if (v.k.viden) $('source').innerHTML = `Aftalerne står i <a href="${v.k.viden}">${v.navn}-aftalen</a>.`;
     fetch(`pools/${v.id}.json`).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(pool => { POOL = pool; startRound(); })
@@ -488,9 +494,9 @@ Promise.all(['data/konventioner.json', 'data/systemer.json'].map(u => fetch(u).t
     try { current = localStorage.getItem('system'); } catch (e) {}
     backLink = `./?system=${ids.includes(current) ? current : ids[0]}#traen`;
     document.title = `${k.titel} — Konventionstræner`;
-    $('group').textContent = sys ? `${sys.navn} · ${k.gruppe}` : k.gruppe;
-    $('title').textContent = k.titel;
-    $('desc').textContent = k.beskrivelse;
+    $('group').innerHTML = suits(sys ? `${sys.navn} · ${k.gruppe}` : k.gruppe);
+    $('title').innerHTML = suits(k.titel);
+    $('desc').innerHTML = suits(k.beskrivelse);
     if (k.layout === 'bord'){ LAYOUT = 'bord'; boardEl.classList.add('compact'); }
     if (k.profiler){ PROFILE = getProfile(); setupProfiles(); }
     if (k.varianter){ setupChooser(k, list, systems); return null; }

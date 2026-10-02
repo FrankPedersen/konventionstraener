@@ -23,10 +23,11 @@ nav = json.loads(js[js.index('=') + 1:i].strip().rstrip(';'))
 body = json.loads(js[js.index('=', i) + 1:].strip().rstrip(';'))
 
 toc = []
+red = lambda t: re.sub(r'([♥♦])', r'<span style="color:#C00000"></span>', H.escape(t))
 for p in nav:
-    toc.append('<div class="tp"><a class="lp" href="#%s">%s</a>' % (p['id'], H.escape(p['title'])))
+    toc.append('<div class="tp"><a class="lp" href="#%s">%s</a>' % (p['id'], red(p['title'])))
     for it in p['items']:
-        toc.append('<a class="li" href="#%s">%s</a>' % (it['id'], H.escape(it['title'])))
+        toc.append('<a class="li" href="#%s">%s</a>' % (it['id'], red(it['title'])))
     toc.append('</div>')
 total = sum(1 + len(p['items']) for p in nav)
 

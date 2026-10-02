@@ -111,8 +111,8 @@ def main():
         p['title'] = plain(p['title'])
         for it in p['items']:
             it['title'] = plain(it['title'])
-        toc.append('<div class="tp"><a class="lp" href="#%s">%s</a>' % (p['id'], H.escape(p['title'])))
-        toc += ['<a class="li" href="#%s">%s</a>' % (it['id'], H.escape(it['title'])) for it in p['items']]
+        toc.append('<div class="tp"><a class="lp" href="#%s">%s</a>' % (p['id'], re.sub(r'([♥♦])', r'<span class="su su-h"></span>', H.escape(p['title']))))
+        toc += ['<a class="li" href="#%s">%s</a>' % (it['id'], re.sub(r'([♥♦])', r'<span class="su su-h"></span>', H.escape(it['title']))) for it in p['items']]
         toc.append('</div>')
     CSS += """
 .doc h1{ font-family:var(--font-heading),Georgia,serif; font-size:36px; font-weight:400; line-height:1.1; color:#2C5446; margin:0 0 18px; }
