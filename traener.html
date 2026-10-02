@@ -103,6 +103,19 @@
   .profiles{ display:none; gap:.4rem; align-items:center; flex-wrap:wrap; font-family:var(--sans); font-size:.9rem; margin:.3rem 0 .2rem; }
   .profiles.show{ display:flex; }
   .profiles .lbl{ color:var(--muted); margin-right:.2rem; }
+
+  /* valg af metode inden runden (fx forsvar mod 1NT) */
+  .chooser{ margin:1rem 0 1.4rem; }
+  .chooser h2{ font-size:1.3rem; margin:0 0 .7rem; }
+  .chooser .opts3{ display:grid; grid-template-columns:repeat(auto-fit,minmax(13rem,1fr)); gap:.8rem; }
+  .chooser button{ display:flex; flex-direction:column; justify-content:flex-start; text-align:left; font:inherit; background:var(--paper); border:1px solid var(--line-strong); border-left:4px solid var(--felt);
+                   border-radius:.5rem; padding:.8rem 1rem; cursor:pointer; color:var(--ink); }
+  .chooser button:hover, .chooser button:focus-visible{ border-color:var(--felt); box-shadow:0 2px 10px rgba(0,0,0,.08); }
+  .chooser button b{ display:block; font-family:var(--sans); font-size:1.05rem; color:var(--felt-deep); margin-bottom:.25rem; }
+  .chooser button span{ font-size:.92rem; line-height:1.45; color:var(--muted); }
+  .chooser button.last{ border-left-color:var(--gold); }
+  .chooser .lastnote{ font-family:var(--sans); font-size:.75rem; color:var(--gold); font-weight:800; text-transform:uppercase; letter-spacing:.05em; }
+  .switch{ font-family:var(--sans); font-size:.9rem; margin:.3rem 0 .2rem; }
   .profiles button{ font-family:var(--sans); font-weight:700; font-size:.85rem; border:1px solid var(--line-strong); background:var(--paper);
                     color:var(--ink); border-radius:999px; padding:.2rem .7rem; cursor:pointer; }
   .profiles button[aria-pressed="true"]{ background:var(--felt-deep); color:#fff; border-color:transparent; }
@@ -145,6 +158,8 @@
     <p class="deck" id="desc"></p>
     <div class="profiles" id="profiles"><span class="lbl">Profil:</span></div>
   </section>
+
+  <div class="chooser" id="chooser" style="display:none"></div>
 
   <div class="progress" id="progress"></div>
 
@@ -433,6 +448,30 @@ function setupProfiles(){
     el.appendChild(b);
   });
 }
+// Konventioner med varianter (fx forsvar mod 1NT): metoden vælges, før hænderne vises
+function setupChooser(k, list, systems){
+  let last = null;
+  try { last = localStorage.getItem('variant-' + k.id); } catch (e) {}
+  const vars = k.varianter.map(v => ({ ...v, k: list.find(x => x.id === v.id) })).filter(v => v.k);
+  $('progress').style.display = 'none'; boardEl.style.display = 'none';
+  const ch = $('chooser');
+  ch.style.display = '';
+  ch.innerHTML = `<h2>${k.valg || 'Vælg metode'}</h2><div class="opts3">${vars.map(v =>
+    `<button data-id="${v.id}" class="${v.id === last ? 'last' : ''}"><b>${v.navn}</b><span>${v.k.beskrivelse}</span>${v.id === last ? '<div class="lastnote">Sidst valgt</div>' : ''}</button>`).join('')}</div>`;
+  ch.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+    const v = vars.find(x => x.id === b.dataset.id);
+    try { localStorage.setItem('variant-' + k.id, v.id); } catch (e) {}
+    ch.style.display = 'none';
+    $('progress').style.display = ''; boardEl.style.display = '';
+    $('title').textContent = `${k.titel}: ${v.navn}`;
+    document.title = `${k.titel}: ${v.navn} — Konventionstræner`;
+    $('desc').innerHTML = `${v.k.beskrivelse} <span class="switch">· <a href="${location.href}">Skift forsvar</a></span>`;
+    if (v.k.viden) $('source').innerHTML = `Aftalerne står i <a href="${v.k.viden}">${v.navn}-aftalen</a>.`;
+    fetch(`pools/${v.id}.json`).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(pool => { POOL = pool; startRound(); })
+      .catch(() => fail('Kunne ikke hente hånd-puljen.'));
+  }));
+}
 function startRound(){
   let hands = POOL.hands;
   if (PROFILE) hands = hands.map(h => resolveForProfile(h, PROFILE)).filter(Boolean);
@@ -454,10 +493,11 @@ Promise.all(['data/konventioner.json', 'data/systemer.json'].map(u => fetch(u).t
     $('desc').textContent = k.beskrivelse;
     if (k.layout === 'bord'){ LAYOUT = 'bord'; boardEl.classList.add('compact'); }
     if (k.profiler){ PROFILE = getProfile(); setupProfiles(); }
+    if (k.varianter){ setupChooser(k, list, systems); return null; }
     if (k.viden) $('source').innerHTML = `Aftalerne står i <a href="${k.viden}">${ids.length > 1 ? 'systemdokumentet' : sys && sys.id === 'kamp' ? 'referencelaget Kampen om kontrakten' : sys ? sys.navn + 's system' : 'vores system'}</a>.`;
     return fetch(`pools/${k.id}.json`).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
   })
-  .then(pool => { POOL = pool; startRound(); })
+  .then(pool => { if (pool){ POOL = pool; startRound(); } })
   .catch(e => fail(e.message === 'ukendt'
     ? 'Den konvention findes ikke – eller den er ikke klar endnu.'
     : 'Kunne ikke hente hånd-puljen. Åbn siden via GitHub Pages eller en lokal webserver — ikke direkte som fil.'));

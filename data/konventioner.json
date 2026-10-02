@@ -2,7 +2,7 @@
  {
   "id": "multiforsvar",
   "titel": "Multiforsvar mod 1NT",
-  "gruppe": "Forsvar mod 1NT",
+  "gruppe": "Konkurrence",
   "beskrivelse": "Modstanderen åbner 1NT. Meld ind med D, 2♣–2NT eller på 3-trinnet – eller svar på makkers indmelding.",
   "roller": [
    "Indmelder",
@@ -10,11 +10,7 @@
   ],
   "status": "klar",
   "viden": "viden/bridgesystem.html#multiforsvar",
-  "system": [
-   "kf",
-   "kamp"
-  ],
-  "layout": "bord"
+  "system": "kf"
  },
  {
   "id": "michaels",
@@ -315,20 +311,16 @@
  },
  {
   "id": "ff-dont",
-  "system": [
-   "ff",
-   "kamp"
-  ],
+  "system": "ff",
   "titel": "DONT mod 1NT",
-  "gruppe": "Forsvar mod 1NT",
+  "gruppe": "Konkurrence",
   "beskrivelse": "D = én lang farve, 2♣/2♦ = farven + en højere, 2♥ = majorerne, 2NT = minorerne.",
   "roller": [
    "Indmelder",
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-15a",
-  "layout": "bord"
+  "viden": "viden/2-over-1-flemming.html#afsnit-15a"
  },
  {
   "id": "ff-michaels",
@@ -462,7 +454,7 @@
  },
  {
   "id": "kamp-landy",
-  "system": "kamp",
+  "system": [],
   "titel": "Landy",
   "gruppe": "Forsvar mod 1NT",
   "beskrivelse": "2♣ = begge majorer (mindst 5-4), X straf, øvrige farver naturlige – og makkers svar: vælg major, 2♦ lige lange, 2NT spørger, 3M invit.",
@@ -473,6 +465,35 @@
   "status": "klar",
   "viden": "viden/kampen-om-kontrakten.html#14-forsvar-mod-modstandernes-1ut-aftale",
   "layout": "bord"
+ },
+ {
+  "id": "kamp-forsvar-1ut",
+  "system": "kamp",
+  "titel": "Forsvar mod 1NT",
+  "gruppe": "Forsvar mod 1NT",
+  "beskrivelse": "Vælg jeres forsvar mod modstandernes 1NT – Landy, DONT eller Multi – før hænderne vises. Du er skiftevis indmelder og svarer.",
+  "roller": [
+   "Indmelder",
+   "Svarer"
+  ],
+  "status": "klar",
+  "layout": "bord",
+  "viden": "viden/kampen-om-kontrakten.html#14-forsvar-mod-modstandernes-1ut-aftale",
+  "valg": "Hvilket forsvar mod 1NT spiller I?",
+  "varianter": [
+   {
+    "id": "kamp-landy",
+    "navn": "Landy"
+   },
+   {
+    "id": "ff-dont",
+    "navn": "DONT"
+   },
+   {
+    "id": "multiforsvar",
+    "navn": "Multi"
+   }
+  ]
  },
  {
   "id": "kamp-stoette-def",
