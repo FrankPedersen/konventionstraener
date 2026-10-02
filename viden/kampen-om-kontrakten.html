@@ -49,6 +49,7 @@ main{ flex:1 1 620px; min-width:0; padding:0 0 0 clamp(0px,3vw,44px); border-lef
 
 .doc h1{ font-family:var(--font-heading),Georgia,serif; font-size:36px; font-weight:400; line-height:1.1; color:#2C5446; margin:0 0 18px; }
 .doc section.part{ padding:40px 0 8px; border-top:1px solid rgba(32,31,29,0.18); margin-top:36px; }
+.doc header.hero + section.part{ border-top:0; margin-top:0; }
 .doc h2{ font-family:var(--font-heading),Georgia,serif; font-size:26px; font-weight:400; line-height:1.15; color:#3D6E58; margin:30px 0 12px; }
 .doc h1, .doc h2{ scroll-margin-top:20px; }
 .doc p, .doc li{ line-height:1.75; max-width:78ch; }
@@ -74,12 +75,8 @@ main{ flex:1 1 620px; min-width:0; padding:0 0 0 clamp(0px,3vw,44px); border-lef
     <div class="t1">Kampen om kontrakten</div>
     <div class="t2">20-20 · konkurrerende meldeforløb</div>
     <input id="q" type="search" placeholder="Søg i indholdet…" aria-label="Søg i indholdet">
-    <div id="cnt">35 overskrifter · 16 dele</div>
+    <div id="cnt">31 overskrifter · 13 dele</div>
     <nav class="toc" id="toc">
-<div class="tp"><a class="lp" href="#saadan-laeses-dokumentet">Sådan læses dokumentet</a>
-</div>
-<div class="tp"><a class="lp" href="#kildestatus">Kildestatus</a>
-</div>
 <div class="tp"><a class="lp" href="#1-fundamentet-regnskabet">1. Fundamentet: regnskabet</a>
 </div>
 <div class="tp"><a class="lp" href="#2-hovedtesen">2. Hovedtesen</a>
@@ -116,13 +113,10 @@ main{ flex:1 1 620px; min-width:0; padding:0 0 0 clamp(0px,3vw,44px); border-lef
 </div>
 <div class="tp"><a class="lp" href="#11-smaa-offermeldinger">11. Små offermeldinger</a>
 </div>
-<div class="tp"><a class="lp" href="#12-datamodel-til-appen">12. Datamodel til appen</a>
-<a class="li" href="#principkatalog">Principkatalog</a>
+<div class="tp"><a class="lp" href="#12-vedtagne-beslutninger">12. Vedtagne beslutninger</a>
+<a class="li" href="#typiske-faelder">Typiske fælder</a>
 </div>
-<div class="tp"><a class="lp" href="#13-vedtagne-beslutninger">13. Vedtagne beslutninger</a>
-<a class="li" href="#faelder-til-egne-opgavegrupper">Fælder til egne opgavegrupper</a>
-</div>
-<div class="tp"><a class="lp" href="#14-forsvar-mod-modstandernes-1ut-aftale">14. Forsvar mod modstandernes 1ut (aftale)</a>
+<div class="tp"><a class="lp" href="#13-forsvar-mod-modstandernes-1ut-aftale">13. Forsvar mod modstandernes 1ut (aftale)</a>
 <a class="li" href="#landy">Landy</a>
 <a class="li" href="#svar-paa-landy-2">Svar på Landy 2♣</a>
 <a class="li" href="#dont-og-multiforsvar">DONT og Multiforsvar</a>
@@ -135,22 +129,13 @@ main{ flex:1 1 620px; min-width:0; padding:0 0 0 clamp(0px,3vw,44px); border-lef
       <h1 style="font-size:clamp(42px,6.5vw,76px);line-height:0.98;letter-spacing:-0.02em;color:#122E42;margin:18px 0 6px">Kampen om kontrakten</h1>
       <div class="sub">Forsvar og indmelding</div>
       <div class="d"><div>Kilde: <em>20-20 – kampen om kontrakten</em> (opfølger til <em>Kampen ved bridgebordet</em>, 2017), omskrevet til regelform.</div>
-      <div>Profiler: Grund = bogens regler · Klub = + faste aftaler · Turnering = + Stenberg og Lebensohl</div></div>
+      <div>Profiler: Grund = bogens regler · Klub = + faste aftaler · Turnering = + Stenberg og Lebensohl</div>
+      <div><strong>(aftale)</strong> = vores beslutning, hvor bogen ikke tager stilling · ⚠ = kendt fælde</div></div>
       <div class="m"><div><a href="../?system=kamp#traen">Træn emnerne →</a></div></div>
     </header>
-<p>Kilde: <em>20-20 – kampen om kontrakten</em> (opfølger til <em>Kampen ved bridgebordet</em>, 2017). Omskrevet til regelform til brug som app-logik.</p>
-<p>Kortnotation: dansk (E K D B T 9…2). Mapping: E=A, K=K, D=Q, B=J, T=10.</p>
-<section class="part"><h1 id="saadan-laeses-dokumentet">Sådan læses dokumentet</h1>
-<p>Umarkerede regler står i bogen. Afvigelser og tilføjelser er mærket:</p>
-<ul><li><strong>(aftale)</strong> — vores beslutning, ikke bogens regel. Bogen efterlod hullet.</li><li><strong>(toggle: Turnering)</strong> — kun aktiv i profil Turnering; slået fra i Grund og Klub.</li><li>⚠ — kendt fælde eller hyppig forveksling; kandidat til egen opgavegruppe.</li></ul>
-<p><strong>Profiler:</strong> Grund = kun bogens entydige regler, ingen konventioner. Klub = Grund + faste aftaler. Turnering = Klub + toggles.</p>
-</section>
-<section class="part"><h1 id="kildestatus">Kildestatus</h1>
-<table><thead><tr><th>Dækning</th><th>Status</th></tr></thead><tbody><tr><td>s. 1-27, 29-81</td><td>Læsbar, verificeret på originaltekst</td></tr><tr><td>s. 82-93 (opgavesæt, register, ordliste)</td><td>Ikke scannet</td></tr><tr><td>Renskrevet tekstudtræk</td><td>Sekundær, kun til krydstjek</td></tr></tbody></table>
-</section>
 <section class="part"><h1 id="1-fundamentet-regnskabet">1. Fundamentet: regnskabet</h1>
 <table><thead><tr><th>Kontrakt</th><th>Score</th></tr></thead><tbody><tr><td>1ut</td><td>90</td></tr><tr><td>2 minor</td><td>90</td></tr><tr><td>2 major</td><td>110</td></tr><tr><td>3 minor</td><td>110</td></tr><tr><td>3 major</td><td>140</td></tr><tr><td>4 minor</td><td>130</td></tr><tr><td>3ut</td><td>400 / 600</td></tr><tr><td>4 major</td><td>420 / 620</td></tr><tr><td>5 minor</td><td>400 / 600</td></tr></tbody></table>
-<p>Beter, udoblet: 50/100/150 (u.z.) — 100/200/300 (iz.) Beter, doblet: 100/300/500 (u.z.) — 200/500/800 (iz.)</p>
+<ul><li>Beter, udoblet: 50/100/150 (u.z.) — 100/200/300 (iz.)</li><li>Beter, doblet: 100/300/500 (u.z.) — 200/500/800 (iz.)</li></ul>
 <p><strong>Kernekonsekvens:</strong> 2<span class="su su-h">♥</span>/♠ med 8 stik til modparten giver −110, så én bet til −50 eller −100 er at foretrække. Bogens turneringseksempel: 3♠ én ned (−50) mod modpartens 3<span class="su su-h">♥</span> (−140) flyttede parret fra 5 til 11 parpoint. Strafdoblet u.z. (−100) var offermeldingen stadig en succes; i zonen (−200) var den en top til modparten.</p>
 </section>
 <section class="part"><h1 id="2-hovedtesen">2. Hovedtesen</h1>
@@ -172,7 +157,6 @@ main{ flex:1 1 620px; min-width:0; padding:0 0 0 clamp(0px,3vw,44px); border-lef
 </section>
 <section class="part"><h1 id="4-20-20-situationer">4. 20-20-situationer</h1>
 <p><strong>Definition:</strong> Modparten finder tilpasning, stopper på 2-trinnet, og har typisk 18-22 hp tilsammen. Dermed sidder jeres side med ca. halvdelen af pointene.</p>
-<p><strong>Genkendelsesmønstre (app-tags):</strong> <code>2020-fit-fundet</code> · <code>2020-fit-i-farve-2</code> · <code>2020-efter-1ut-aabning</code> · <code>2020-efter-egen-indmelding</code> · <code>2020-efter-OD</code> · <code>2020-uden-afsloeret-fit</code></p>
 <p><strong>Seks leveregler:</strong></p>
 <ol><li>Sælg "aldrig" ud på 1-trinnet — evt. til 1ut.</li><li>Sælg "aldrig" ud under 2♠, når modparten har fundet tilpasning.</li><li>Straf ikke makker for at genåbne.</li><li>Vær opmærksom på zonestillingen (se §2).</li><li>Offermeldinger er tilladt på alle niveauer.</li><li>Det er hånden med fordelingen, der skal kæmpe.</li></ol>
 <p><strong>Konklusionsregler:</strong> Har modparten tilpasning, har I også tilpasning. Meld på fordeling, ikke honnørpoint. Dobling = tag makker med på råd. Mange trumfer = mange stik.</p>
@@ -196,7 +180,7 @@ main{ flex:1 1 620px; min-width:0; padding:0 0 0 clamp(0px,3vw,44px); border-lef
 <h2 id="5-2-offensiven-makker-har-aabnet-modparten-meldt-ind">5.2 Offensiven — makker har åbnet, modparten meldt ind</h2>
 <p>Eksempel efter 1<span class="su su-h">♥</span> (2♣):</p>
 <table><thead><tr><th>Melding</th><th>Betydning</th></tr></thead><tbody><tr><td>2<span class="su su-h">♥</span></td><td>trekortstøtte, 6-9</td></tr><tr><td>3<span class="su su-h">♥</span></td><td>firkortstøtte, 6-9</td></tr><tr><td>4<span class="su su-h">♥</span></td><td>femkortstøtte, 6-9</td></tr><tr><td>3♣ (fjendens farve)</td><td>mindst 10 point og tilpasning</td></tr><tr><td>2ut</td><td>naturlig invitation — <strong>eller Stenberg, se nedenfor</strong></td></tr><tr><td>Ny farve, 1-trinnet</td><td>6+</td></tr><tr><td>Ny farve, 2-trinnet</td><td>10+</td></tr><tr><td>Ny farve, 3-trinnet billigst muligt</td><td>udgangskrav</td></tr><tr><td>Dobling</td><td>negativ dobling</td></tr></tbody></table>
-<p><strong>Stenberg (toggle: Turnering).</strong> 2ut = firkortstøtte + udgangskrav. Konsekvens: overmeldingen (3♣) bliver <strong>præcis inviterende, ca. 10-12</strong>, og systemets bredeste bøtte lukkes. Slået fra: 2ut er naturlig invitation, og 3♣ dækker 10+ uden loft.</p>
+<p><strong>Stenberg (kun i profil Turnering).</strong> 2ut = firkortstøtte + udgangskrav. Konsekvens: overmeldingen (3♣) bliver <strong>præcis inviterende, ca. 10-12</strong>, og systemets bredeste bøtte lukkes. Slået fra: 2ut er naturlig invitation, og 3♣ dækker 10+ uden loft.</p>
 <p>Med 10+ og støtte er det sjældent vigtigt at spærre. Det er de <strong>små</strong> hænder med 6-9, der skal støtte fuldt ud.</p>
 <h2 id="5-3-efter-modpartens-oplysende-dobling">5.3 Efter modpartens oplysende dobling</h2>
 <p>Efter 1<span class="su su-h">♥</span> (D):</p>
@@ -226,7 +210,6 @@ main{ flex:1 1 620px; min-width:0; padding:0 0 0 clamp(0px,3vw,44px); border-lef
 <table><thead><tr><th>Position</th><th>Meldeforløb</th><th>Styrke</th><th>Mekanisme</th></tr></thead><tbody><tr><td><strong>Anden hånd, direkte</strong></td><td>(1<span class="su su-h">♦</span>) D</td><td>12-17</td><td>Ingen har meldt. Makker er ubegrænset, så du skal have værdierne selv.</td></tr><tr><td><strong>Fjerde hånd, GIF</strong></td><td>(1<span class="su su-h">♦</span>) Pas (Pas) D</td><td>ca. 9+</td><td>Makker kan have op til 17 uden naturlig melding. Du låner 3-4 hp.</td></tr><tr><td><strong>Fjerde hånd, 20-20</strong></td><td>(1<span class="su su-h">♦</span>) Pas (2<span class="su su-h">♦</span>) Pas (Pas) D</td><td>ingen nedre grænse på point</td><td>Modparten har vist 18-22. Der meldes på <strong>fordeling og fællesskabets værdier</strong>, ikke på lån.</td></tr></tbody></table>
 <p><strong>Nøglen til de to fjerdehåndssituationer</strong> ligger i, hvad tredje hånd har gjort:</p>
 <ul><li><strong>Tredje hånd har passet</strong> → svarhånden har benægtet 6 hp. Udgang er stadig mulig hos jer, og makker kan gemme på op til 17. Derfor låner du. Effektivt viser din 9-punkts dobling 12-13 — altså <strong>samme reelle styrke som den direkte OD i anden hånd</strong>. Lånesystemet er kalibreret præcis derefter.</li><li><strong>Tredje hånd har støttet</strong> → modparten har fundet tilpasning og har 18-22 tilsammen. Makker er dermed begrænset, og der er ingen udgang i kortene. Her gælder lånet <strong>ikke</strong>: bogen siger eksplicit, at du i 20-20-situationer ikke fokuserer på at låne et es hos makker, hvis du selv er svag, men på at fællesskabet har omtrent halvdelen af pointene. Det afgørende er fordelingen, ikke pointtallet.</li></ul>
-<p><strong>Konsekvens for appen:</strong> en opgave med oplysningsdobling er uløselig uden positionen. Feltet <code>meldeforloeb</code> skal derfor altid vises fuldt ud, aldrig forkortet — og <code>underemne</code> bør indeholde positionen (<code>od-anden-haand</code> / <code>od-gif</code> / <code>od-2020</code>).</p>
 <h2 id="tre-kampsituationer">Tre kampsituationer</h2>
 <p><strong>1. Modparten har meldt og støttet hinanden</strong> — alle doblinger oplysende: <code>(1♠) Pas (4♠) OD</code> · <code>(1♠) 2<span class="su su-h">♥</span> (2♠) OD</code> · <code>(1<span class="su su-h">♦</span>) OD (2<span class="su su-h">♦</span>) OD</code></p>
 <p>Højt oppe melder makker kun med fem- eller seksfarve. Lavt er fokus bedste tilpasning i delkontrakten.</p>
@@ -257,7 +240,7 @@ main{ flex:1 1 620px; min-width:0; padding:0 0 0 clamp(0px,3vw,44px); border-lef
 <h2 id="7-4-svar-efter-od-i-fjerde-haand">7.4 Svar efter OD i fjerde hånd</h2>
 <p>Svarhånden trækker 3 hp fra.</p>
 <table><thead><tr><th>Melding</th><th>Betydning</th></tr></thead><tbody><tr><td>2 i major</td><td>9-12 point efter fratræk</td></tr><tr><td>Springstøtte 3 i major</td><td>firkortstøtte, kortfarve, 8-9 hp</td></tr><tr><td>Overmelding i fjendens farve</td><td>stærk jævn 12-14 med tilpasning</td></tr><tr><td>1ut</td><td>hold, op til 12-13</td></tr><tr><td>2ut</td><td>13-14</td></tr></tbody></table>
-<p>⚠ <strong>Springstøtte lover færre point end simpel støtte</strong> (8-9 mod 9-12). Bevidst: springet er fordelingsbaseret med kortfarve. Kontraintuitivt — egen opgavegruppe.</p>
+<p>⚠ <strong>Springstøtte lover færre point end simpel støtte</strong> (8-9 mod 9-12). Bevidst: springet er fordelingsbaseret med kortfarve. Kontraintuitivt.</p>
 <h2 id="7-5-farvemelding-i-fjerde-haand">7.5 Farvemelding i fjerde hånd</h2>
 <p>Ca. 7-15 hp. Makker svarer: støtte til 2 i farve = 9-12 efter fratræk; overmelding i fjendens farve = stærk jævn; sans = hold; springstøtte = firkortstøtte, kortfarve, 8-9 hp.</p>
 </section>
@@ -271,7 +254,7 @@ main{ flex:1 1 620px; min-width:0; padding:0 0 0 clamp(0px,3vw,44px); border-lef
 <p><strong>Stayman og transfers bortfalder efter en indmelding.</strong></p>
 <ul><li>Ny farve billigst = ønske om at spille den kontrakt</li><li>Ny farve med spring = krav, mindst 5-farve</li><li>Udgangsmeldinger = slutkontrakter</li><li>Dobling = oplysende</li><li>Overmelding i fjendens farve = udgangskrav, søger hold</li><li>2ut = inviterende</li></ul>
 <p>Bogen erkender selv, at der ikke er plads til at skelne stopmeldinger fra invitter.</p>
-<p><strong>Lebensohl (toggle: Turnering).</strong> 2ut = relæ til 3♣. Direkte 3-melding = krav; via 2ut = stopmelding. Løser bogens erkendte hul fuldstændigt. Slået fra: bogens skema med den uløste tvetydighed.</p>
+<p><strong>Lebensohl (kun i profil Turnering).</strong> 2ut = relæ til 3♣. Direkte 3-melding = krav; via 2ut = stopmelding. Løser bogens erkendte hul fuldstændigt. Slået fra: bogens skema med den uløste tvetydighed.</p>
 <p><strong>Efter modpartens strafdobling af 1ut:</strong></p>
 <ul><li>RD = 7+ hp, lægger op til strafdobling hvis fjenden løber</li><li>2♣/<span class="su su-h">♦</span>/<span class="su su-h">♥</span>/♠ = svage, 0-5(6) med 5-farve — flygt altid i femfarven</li><li>Er doblingen konventionel, fastholdes sanssystemet</li></ul>
 </section>
@@ -285,42 +268,12 @@ main{ flex:1 1 620px; min-width:0; padding:0 0 0 clamp(0px,3vw,44px); border-lef
 <p>Fokusér på <strong>grad af tilpasning</strong> frem for zonestilling, når I overvejer at kæmpe en gang til. Undtagelsen fra trumfreglen: bevidst melde videre til 3-trinnet med kun otte trumfer, når modparten har fundet tilpasning på 2-trinnet.</p>
 <p><em>Modificeret af zonejusteringen i §2: gælder u.z.</em></p>
 </section>
-<section class="part"><h1 id="12-datamodel-til-appen">12. Datamodel til appen</h1>
-<pre>opgave {
-  id            string
-  system        enum   // 2020 | andet — hvilken kilde/system opgaven hører til
-  kildekonflikt bool   // sand hvis kilderne er uenige om facit
-  profil        enum   // grund | klub | turnering — laveste profil hvor opgaven vises
-  emne          enum   // gif | 2020 | stoetter-def | stoetter-off | stoetter-minor
-                       // | efter-OD | doblinger | 1ut-indmeldt | 1ut-forsvar
-                       // | mixede | offer | indmelding
-  underemne     string
-  duEr          enum
-  zone          enum|null
-  haand         { spar, hjerter, ruder, kloer }
-  hp            int
-  meldeforloeb  [[V,N,Ø,S], …]
-  korrekt       string
-  korrektAlt    { turnering: string }   // afvigende facit når en toggle er aktiv
-  alternativer  [string]
-  begrundelse   string
-  erAftale      bool   // sand hvis facit hviler på vores aftale, ikke bogens regel
-  principper    [string]
-  svaerhed      1-3
-  kilde         { bog, side }
-}</pre>
-<p><strong>Om <code>erAftale</code>:</strong> appen skal kunne sige "det her er en aftale, du bør træffe med din makker" frem for at påstå, der findes ét svar. Afgørende når kursister er brugere.</p>
-<p><strong>Om <code>system</code> og <code>kildekonflikt</code>:</strong> forbereder indarbejdelse af den kommende indmeldingskilde. Modsiger to kilder hinanden i et grænsetilfælde, er det ikke en fejl at skjule — det er godt undervisningsmateriale.</p>
-<p><strong>Om <code>korrektAlt</code>:</strong> kun nødvendig for opgaver, hvor Stenberg, Lebensohl eller RD-udvidelsen ændrer facit. Formentlig under 15 % af banken.</p>
-<h2 id="principkatalog">Principkatalog</h2>
-<p><code>trumfregel-8-9-10-11</code> · <code>zonejustering</code> · <code>stoet-med-stoette</code> · <code>pas-er-definitiv</code> · <code>hand-med-fordeling-kaemper</code> · <code>saelg-ikke-under-2s</code> · <code>straf-ikke-makker</code> · <code>regnskab-minus50-slaar-minus110</code> · <code>raket-kun-i-offensiven</code> · <code>stoette-6-9-antal-trumfer</code> · <code>direkte-udgang-er-destruktiv</code> · <code>fjendens-farve-viser-styrke</code> · <code>fit-foer-sansforbedring</code> · <code>minorstoette-en-trumf-mere</code> · <code>major-foer-minorstoette</code> · <code>negativ-dobling-umeldt-major</code> · <code>dobling-tag-makker-med-paa-raad</code> · <code>alle-doblinger-oplysende-naar-de-har-fit</code> · <code>en-umeldt-farve-kraever-medloeb</code> · <code>graense-oplysende-straf</code> · <code>laan-3-4-hp</code> · <code>laan-kompenserer-fordeling</code> · <code>gif-jaevn-laaner-ikke</code> · <code>gif-sansskelet</code> · <code>gif-spring-konstruktivt</code> · <code>gif-svarhaand-traekker-3</code> · <code>gif-springstoette-lavere-end-simpel</code> · <code>1ut-indmeldt-dobler-er-staerkest</code> · <code>stayman-bortfalder</code> · <code>flygt-i-femfarven</code> · <code>ny-farve-ikke-krav-naar-alle-melder</code></p>
-</section>
-<section class="part"><h1 id="13-vedtagne-beslutninger">13. Vedtagne beslutninger</h1>
-<table><thead><tr><th>#</th><th>Beslutning</th><th>Type</th><th>Vedtaget</th></tr></thead><tbody><tr><td>1</td><td>Ny farve i defensiven</td><td>Fast</td><td>Ikke krav (bogens variant)</td></tr><tr><td>2</td><td>Stenberg 2ut</td><td>Toggle</td><td>Til fra profil Turnering</td></tr><tr><td>3</td><td>2♣/2<span class="su su-h">♦</span> efter OD</td><td>Fast</td><td>Konstruktiv 5-9, seksfarve</td></tr><tr><td>4</td><td>Lebensohl</td><td>Toggle</td><td>Til fra profil Turnering</td></tr><tr><td>5</td><td>Minor-transponering</td><td>Fast</td><td>Firfarve i umeldt major; "præcis fire" kun når 1-trins femfarvemelding findes</td></tr><tr><td>6</td><td>Trekortstøtte 10+ efter OD</td><td>Toggle</td><td>RD = 10+ med højst trekortstøtte</td></tr><tr><td>7</td><td>0-5 med femkortstøtte</td><td>Fast</td><td>4 i major sænkes til 0-9</td></tr><tr><td>8</td><td>Krav mod 1ut-indmelding</td><td>Fast</td><td>D efterfulgt af ny farve</td></tr><tr><td>9</td><td>Jævn 8-10 i GIF</td><td>Fast</td><td>Pas, med eksplicit begrundelse</td></tr><tr><td>10</td><td>Oplysende vs. straf</td><td>Fast</td><td>Regelsæt i §6</td></tr><tr><td>11</td><td>Zonejustering</td><td>Fast</td><td>Én ekstra trumf i zonen</td></tr></tbody></table>
-<h2 id="faelder-til-egne-opgavegrupper">Fælder til egne opgavegrupper</h2>
+<section class="part"><h1 id="12-vedtagne-beslutninger">12. Vedtagne beslutninger</h1>
+<table><thead><tr><th>#</th><th>Beslutning</th><th>Type</th><th>Vedtaget</th></tr></thead><tbody><tr><td>1</td><td>Ny farve i defensiven</td><td>Fast</td><td>Ikke krav (bogens variant)</td></tr><tr><td>2</td><td>Stenberg 2ut</td><td>Profil</td><td>Kun i Turnering</td></tr><tr><td>3</td><td>2♣/2<span class="su su-h">♦</span> efter OD</td><td>Fast</td><td>Konstruktiv 5-9, seksfarve</td></tr><tr><td>4</td><td>Lebensohl</td><td>Profil</td><td>Kun i Turnering</td></tr><tr><td>5</td><td>Minor-transponering</td><td>Fast</td><td>Firfarve i umeldt major; "præcis fire" kun når 1-trins femfarvemelding findes</td></tr><tr><td>6</td><td>Trekortstøtte 10+ efter OD</td><td>Fast</td><td>RD = 10+ med højst trekortstøtte</td></tr><tr><td>7</td><td>0-5 med femkortstøtte</td><td>Fast</td><td>4 i major sænkes til 0-9</td></tr><tr><td>8</td><td>Krav mod 1ut-indmelding</td><td>Fast</td><td>D efterfulgt af ny farve</td></tr><tr><td>9</td><td>Jævn 8-10 i GIF</td><td>Fast</td><td>Pas, med eksplicit begrundelse</td></tr><tr><td>10</td><td>Oplysende vs. straf</td><td>Fast</td><td>Regelsæt i §6</td></tr><tr><td>11</td><td>Zonejustering</td><td>Fast</td><td>Én ekstra trumf i zonen</td></tr></tbody></table>
+<h2 id="typiske-faelder">Typiske fælder</h2>
 <p>Tre-trins-raketten gælder kun i offensiven · Springstøtte i GIF lover færre point end simpel støtte · Direkte udgang er altid destruktiv · Minorstøtte kræver én trumf mere · Ny farve er svagest mod 1ut-indmelding</p>
 </section>
-<section class="part"><h1 id="14-forsvar-mod-modstandernes-1ut-aftale">14. Forsvar mod modstandernes 1ut (aftale)</h1>
+<section class="part"><h1 id="13-forsvar-mod-modstandernes-1ut-aftale">13. Forsvar mod modstandernes 1ut (aftale)</h1>
 <p>Bogen tager ikke stilling til forsvaret mod modstandernes 1ut-åbning. I træneren kan I vælge mellem tre metoder: <strong>Landy</strong>, <strong>DONT</strong> (Flemming &amp; Frank) og <strong>Multiforsvar</strong> (Karina &amp; Frank).</p>
 <h2 id="landy">Landy</h2>
 <table><thead><tr><th>Melding</th><th>Betydning</th></tr></thead><tbody><tr><td>X</td><td>Straf, 15+ hp</td></tr><tr><td>2♣</td><td>Begge majorer, mindst 5-4, 8–14 hp</td></tr><tr><td>2<span class="su su-h">♦</span> / 2<span class="su su-h">♥</span> / 2♠</td><td>Naturlig seksfarve, 8–14 hp</td></tr><tr><td>2ut</td><td>Begge minorer, mindst 5-5</td></tr><tr><td>Pas</td><td>Under 8 hp eller ingen melding</td></tr></tbody></table>
@@ -345,7 +298,7 @@ main{ flex:1 1 620px; min-width:0; padding:0 0 0 clamp(0px,3vw,44px); border-lef
       var as=[].slice.call(g.querySelectorAll('a')), self=as[0].textContent.toLowerCase().indexOf(v)>=0, any=false;
       as.slice(1).forEach(function(a){ var ok=!v||self||a.textContent.toLowerCase().indexOf(v)>=0; a.classList.toggle('hide',!ok); if(ok){any=true;n++;} });
       var show=!v||self||any; as[0].classList.toggle('hide',!show); if(show) n++; });
-    cnt.textContent = v ? n+' af 35 overskrifter' : base; });
+    cnt.textContent = v ? n+' af 31 overskrifter' : base; });
 })();
 </script>
 </body>

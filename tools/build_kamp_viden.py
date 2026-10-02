@@ -117,6 +117,7 @@ def main():
     CSS += """
 .doc h1{ font-family:var(--font-heading),Georgia,serif; font-size:36px; font-weight:400; line-height:1.1; color:#2C5446; margin:0 0 18px; }
 .doc section.part{ padding:40px 0 8px; border-top:1px solid rgba(32,31,29,0.18); margin-top:36px; }
+.doc header.hero + section.part{ border-top:0; margin-top:0; }
 .doc h2{ font-family:var(--font-heading),Georgia,serif; font-size:26px; font-weight:400; line-height:1.15; color:#3D6E58; margin:30px 0 12px; }
 .doc h1, .doc h2{ scroll-margin-top:20px; }
 .doc p, .doc li{ line-height:1.75; max-width:78ch; }
@@ -163,7 +164,8 @@ def main():
       <h1 style="font-size:clamp(42px,6.5vw,76px);line-height:0.98;letter-spacing:-0.02em;color:#122E42;margin:18px 0 6px">Kampen om kontrakten</h1>
       <div class="sub">Forsvar og indmelding</div>
       <div class="d"><div>Kilde: <em>20-20 – kampen om kontrakten</em> (opfølger til <em>Kampen ved bridgebordet</em>, 2017), omskrevet til regelform.</div>
-      <div>Profiler: Grund = bogens regler · Klub = + faste aftaler · Turnering = + Stenberg og Lebensohl</div></div>
+      <div>Profiler: Grund = bogens regler · Klub = + faste aftaler · Turnering = + Stenberg og Lebensohl</div>
+      <div><strong>(aftale)</strong> = vores beslutning, hvor bogen ikke tager stilling · ⚠ = kendt fælde</div></div>
       <div class="m"><div><a href="../?system=kamp#traen">Træn emnerne →</a></div></div>
     </header>
 """ + body + """

@@ -1,30 +1,5 @@
 # Referencelag: konkurrerende meldeforløb (forsvar og indmelding)
 
-Kilde: *20-20 – kampen om kontrakten* (opfølger til *Kampen ved bridgebordet*, 2017).
-Omskrevet til regelform til brug som app-logik.
-
-Kortnotation: dansk (E K D B T 9…2). Mapping: E=A, K=K, D=Q, B=J, T=10.
-
-## Sådan læses dokumentet
-
-Umarkerede regler står i bogen. Afvigelser og tilføjelser er mærket:
-
-- **(aftale)** — vores beslutning, ikke bogens regel. Bogen efterlod hullet.
-- **(toggle: Turnering)** — kun aktiv i profil Turnering; slået fra i Grund og Klub.
-- ⚠ — kendt fælde eller hyppig forveksling; kandidat til egen opgavegruppe.
-
-**Profiler:** Grund = kun bogens entydige regler, ingen konventioner. Klub = Grund + faste aftaler. Turnering = Klub + toggles.
-
-## Kildestatus
-
-| Dækning | Status |
-|---|---|
-| s. 1-27, 29-81 | Læsbar, verificeret på originaltekst |
-| s. 82-93 (opgavesæt, register, ordliste) | Ikke scannet |
-| Renskrevet tekstudtræk | Sekundær, kun til krydstjek |
-
----
-
 ## 1. Fundamentet: regnskabet
 
 | Kontrakt | Score |
@@ -39,8 +14,8 @@ Umarkerede regler står i bogen. Afvigelser og tilføjelser er mærket:
 | 4 major | 420 / 620 |
 | 5 minor | 400 / 600 |
 
-Beter, udoblet: 50/100/150 (u.z.) — 100/200/300 (iz.)
-Beter, doblet: 100/300/500 (u.z.) — 200/500/800 (iz.)
+- Beter, udoblet: 50/100/150 (u.z.) — 100/200/300 (iz.)
+- Beter, doblet: 100/300/500 (u.z.) — 200/500/800 (iz.)
 
 **Kernekonsekvens:** 2♥/♠ med 8 stik til modparten giver −110, så én bet til −50 eller −100 er at foretrække. Bogens turneringseksempel: 3♠ én ned (−50) mod modpartens 3♥ (−140) flyttede parret fra 5 til 11 parpoint. Strafdoblet u.z. (−100) var offermeldingen stadig en succes; i zonen (−200) var den en top til modparten.
 
@@ -90,9 +65,6 @@ Bogens erklæret vigtigste princip. Du viser **graden af støtte med det samme**
 ## 4. 20-20-situationer
 
 **Definition:** Modparten finder tilpasning, stopper på 2-trinnet, og har typisk 18-22 hp tilsammen. Dermed sidder jeres side med ca. halvdelen af pointene.
-
-**Genkendelsesmønstre (app-tags):**
-`2020-fit-fundet` · `2020-fit-i-farve-2` · `2020-efter-1ut-aabning` · `2020-efter-egen-indmelding` · `2020-efter-OD` · `2020-uden-afsloeret-fit`
 
 **Seks leveregler:**
 1. Sælg "aldrig" ud på 1-trinnet — evt. til 1ut.
@@ -162,7 +134,7 @@ Eksempel efter 1♥ (2♣):
 | Ny farve, 3-trinnet billigst muligt | udgangskrav |
 | Dobling | negativ dobling |
 
-**Stenberg (toggle: Turnering).** 2ut = firkortstøtte + udgangskrav. Konsekvens: overmeldingen (3♣) bliver **præcis inviterende, ca. 10-12**, og systemets bredeste bøtte lukkes. Slået fra: 2ut er naturlig invitation, og 3♣ dækker 10+ uden loft.
+**Stenberg (kun i profil Turnering).** 2ut = firkortstøtte + udgangskrav. Konsekvens: overmeldingen (3♣) bliver **præcis inviterende, ca. 10-12**, og systemets bredeste bøtte lukkes. Slået fra: 2ut er naturlig invitation, og 3♣ dækker 10+ uden loft.
 
 Med 10+ og støtte er det sjældent vigtigt at spærre. Det er de **små** hænder med 6-9, der skal støtte fuldt ud.
 
@@ -243,8 +215,6 @@ Bemærk: bogens eksempel på 4-trinnet er oplysende, så grænsen ligger **over*
 - **Tredje hånd har passet** → svarhånden har benægtet 6 hp. Udgang er stadig mulig hos jer, og makker kan gemme på op til 17. Derfor låner du. Effektivt viser din 9-punkts dobling 12-13 — altså **samme reelle styrke som den direkte OD i anden hånd**. Lånesystemet er kalibreret præcis derefter.
 - **Tredje hånd har støttet** → modparten har fundet tilpasning og har 18-22 tilsammen. Makker er dermed begrænset, og der er ingen udgang i kortene. Her gælder lånet **ikke**: bogen siger eksplicit, at du i 20-20-situationer ikke fokuserer på at låne et es hos makker, hvis du selv er svag, men på at fællesskabet har omtrent halvdelen af pointene. Det afgørende er fordelingen, ikke pointtallet.
 
-**Konsekvens for appen:** en opgave med oplysningsdobling er uløselig uden positionen. Feltet `meldeforloeb` skal derfor altid vises fuldt ud, aldrig forkortet — og `underemne` bør indeholde positionen (`od-anden-haand` / `od-gif` / `od-2020`).
-
 ### Tre kampsituationer
 
 **1. Modparten har meldt og støttet hinanden** — alle doblinger oplysende:
@@ -322,7 +292,7 @@ Svarhånden trækker 3 hp fra.
 | 1ut | hold, op til 12-13 |
 | 2ut | 13-14 |
 
-⚠ **Springstøtte lover færre point end simpel støtte** (8-9 mod 9-12). Bevidst: springet er fordelingsbaseret med kortfarve. Kontraintuitivt — egen opgavegruppe.
+⚠ **Springstøtte lover færre point end simpel støtte** (8-9 mod 9-12). Bevidst: springet er fordelingsbaseret med kortfarve. Kontraintuitivt.
 
 ### 7.5 Farvemelding i fjerde hånd
 Ca. 7-15 hp. Makker svarer: støtte til 2 i farve = 9-12 efter fratræk; overmelding i fjendens farve = stærk jævn; sans = hold; springstøtte = firkortstøtte, kortfarve, 8-9 hp.
@@ -359,7 +329,7 @@ Dobling er her **straf**, ikke oplysende.
 
 Bogen erkender selv, at der ikke er plads til at skelne stopmeldinger fra invitter.
 
-**Lebensohl (toggle: Turnering).** 2ut = relæ til 3♣. Direkte 3-melding = krav; via 2ut = stopmelding. Løser bogens erkendte hul fuldstændigt. Slået fra: bogens skema med den uløste tvetydighed.
+**Lebensohl (kun i profil Turnering).** 2ut = relæ til 3♣. Direkte 3-melding = krav; via 2ut = stopmelding. Løser bogens erkendte hul fuldstændigt. Slået fra: bogens skema med den uløste tvetydighed.
 
 **Efter modpartens strafdobling af 1ut:**
 - RD = 7+ hp, lægger op til strafdobling hvis fjenden løber
@@ -390,67 +360,28 @@ Fokusér på **grad af tilpasning** frem for zonestilling, når I overvejer at k
 
 ---
 
-## 12. Datamodel til appen
-
-```
-opgave {
-  id            string
-  system        enum   // 2020 | andet — hvilken kilde/system opgaven hører til
-  kildekonflikt bool   // sand hvis kilderne er uenige om facit
-  profil        enum   // grund | klub | turnering — laveste profil hvor opgaven vises
-  emne          enum   // gif | 2020 | stoetter-def | stoetter-off | stoetter-minor
-                       // | efter-OD | doblinger | 1ut-indmeldt | 1ut-forsvar
-                       // | mixede | offer | indmelding
-  underemne     string
-  duEr          enum
-  zone          enum|null
-  haand         { spar, hjerter, ruder, kloer }
-  hp            int
-  meldeforloeb  [[V,N,Ø,S], …]
-  korrekt       string
-  korrektAlt    { turnering: string }   // afvigende facit når en toggle er aktiv
-  alternativer  [string]
-  begrundelse   string
-  erAftale      bool   // sand hvis facit hviler på vores aftale, ikke bogens regel
-  principper    [string]
-  svaerhed      1-3
-  kilde         { bog, side }
-}
-```
-
-**Om `erAftale`:** appen skal kunne sige "det her er en aftale, du bør træffe med din makker" frem for at påstå, der findes ét svar. Afgørende når kursister er brugere.
-
-**Om `system` og `kildekonflikt`:** forbereder indarbejdelse af den kommende indmeldingskilde. Modsiger to kilder hinanden i et grænsetilfælde, er det ikke en fejl at skjule — det er godt undervisningsmateriale.
-
-**Om `korrektAlt`:** kun nødvendig for opgaver, hvor Stenberg, Lebensohl eller RD-udvidelsen ændrer facit. Formentlig under 15 % af banken.
-
-### Principkatalog
-`trumfregel-8-9-10-11` · `zonejustering` · `stoet-med-stoette` · `pas-er-definitiv` · `hand-med-fordeling-kaemper` · `saelg-ikke-under-2s` · `straf-ikke-makker` · `regnskab-minus50-slaar-minus110` · `raket-kun-i-offensiven` · `stoette-6-9-antal-trumfer` · `direkte-udgang-er-destruktiv` · `fjendens-farve-viser-styrke` · `fit-foer-sansforbedring` · `minorstoette-en-trumf-mere` · `major-foer-minorstoette` · `negativ-dobling-umeldt-major` · `dobling-tag-makker-med-paa-raad` · `alle-doblinger-oplysende-naar-de-har-fit` · `en-umeldt-farve-kraever-medloeb` · `graense-oplysende-straf` · `laan-3-4-hp` · `laan-kompenserer-fordeling` · `gif-jaevn-laaner-ikke` · `gif-sansskelet` · `gif-spring-konstruktivt` · `gif-svarhaand-traekker-3` · `gif-springstoette-lavere-end-simpel` · `1ut-indmeldt-dobler-er-staerkest` · `stayman-bortfalder` · `flygt-i-femfarven` · `ny-farve-ikke-krav-naar-alle-melder`
-
----
-
-## 13. Vedtagne beslutninger
+## 12. Vedtagne beslutninger
 
 | # | Beslutning | Type | Vedtaget |
 |---|---|---|---|
 | 1 | Ny farve i defensiven | Fast | Ikke krav (bogens variant) |
-| 2 | Stenberg 2ut | Toggle | Til fra profil Turnering |
+| 2 | Stenberg 2ut | Profil | Kun i Turnering |
 | 3 | 2♣/2♦ efter OD | Fast | Konstruktiv 5-9, seksfarve |
-| 4 | Lebensohl | Toggle | Til fra profil Turnering |
+| 4 | Lebensohl | Profil | Kun i Turnering |
 | 5 | Minor-transponering | Fast | Firfarve i umeldt major; "præcis fire" kun når 1-trins femfarvemelding findes |
-| 6 | Trekortstøtte 10+ efter OD | Toggle | RD = 10+ med højst trekortstøtte |
+| 6 | Trekortstøtte 10+ efter OD | Fast | RD = 10+ med højst trekortstøtte |
 | 7 | 0-5 med femkortstøtte | Fast | 4 i major sænkes til 0-9 |
 | 8 | Krav mod 1ut-indmelding | Fast | D efterfulgt af ny farve |
 | 9 | Jævn 8-10 i GIF | Fast | Pas, med eksplicit begrundelse |
 | 10 | Oplysende vs. straf | Fast | Regelsæt i §6 |
 | 11 | Zonejustering | Fast | Én ekstra trumf i zonen |
 
-### Fælder til egne opgavegrupper
+### Typiske fælder
 Tre-trins-raketten gælder kun i offensiven · Springstøtte i GIF lover færre point end simpel støtte · Direkte udgang er altid destruktiv · Minorstøtte kræver én trumf mere · Ny farve er svagest mod 1ut-indmelding
 
 ---
 
-## 14. Forsvar mod modstandernes 1ut (aftale)
+## 13. Forsvar mod modstandernes 1ut (aftale)
 
 Bogen tager ikke stilling til forsvaret mod modstandernes 1ut-åbning. I træneren kan I vælge mellem tre metoder: **Landy**, **DONT** (Flemming & Frank) og **Multiforsvar** (Karina & Frank).
 
