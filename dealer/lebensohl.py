@@ -47,7 +47,7 @@ def advance(X):
         if ORDER.index(s) > ORDER.index(X):
             return f"2{ss}", f"Svag hånd ({hp} hp) med {L[s]} {SUIT_NAME[s]} – højere end deres farve: 2{ss}, naturligt og svagt."
         return "2NT", (f"Svag hånd ({hp} hp) med {L[s]} {SUIT_NAME[s]} – lavere end deres farve: 2NT relæ. "
-                       f"Makker melder 3♣, og du passer eller retter til 3{ss}.")
+                       + ("Makker melder 3♣, og du passer." if s == 'C' else f"Makker melder 3♣, og du retter til 3{ss}."))
     return classify
 
 BONUS = {"q": "Hvad betyder 2NT, når makker har doblet deres svage 2?",

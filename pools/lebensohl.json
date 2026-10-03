@@ -138,7 +138,7 @@
    "hp": 7,
    "sp": 9,
    "correct": "2NT",
-   "why": "Svag hånd (7 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♣."
+   "why": "Svag hånd (7 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer."
   },
   {
    "situation": "svar_ru",
@@ -168,7 +168,7 @@
    "hp": 3,
    "sp": 6,
    "correct": "2NT",
-   "why": "Svag hånd (3 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♣."
+   "why": "Svag hånd (3 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer."
   },
   {
    "situation": "svar_ru",
@@ -198,7 +198,7 @@
    "hp": 6,
    "sp": 9,
    "correct": "2NT",
-   "why": "Svag hånd (6 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♣."
+   "why": "Svag hånd (6 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer."
   },
   {
    "situation": "svar_ru",
@@ -228,7 +228,7 @@
    "hp": 7,
    "sp": 10,
    "correct": "2NT",
-   "why": "Svag hånd (7 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♣."
+   "why": "Svag hånd (7 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer."
   },
   {
    "situation": "svar_ru",
@@ -258,7 +258,7 @@
    "hp": 6,
    "sp": 8,
    "correct": "2NT",
-   "why": "Svag hånd (6 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♣."
+   "why": "Svag hånd (6 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer."
   },
   {
    "situation": "svar_ru",
@@ -288,7 +288,7 @@
    "hp": 8,
    "sp": 10,
    "correct": "2NT",
-   "why": "Svag hånd (8 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♣."
+   "why": "Svag hånd (8 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer."
   },
   {
    "situation": "svar_ru",
@@ -318,7 +318,7 @@
    "hp": 8,
    "sp": 10,
    "correct": "2NT",
-   "why": "Svag hånd (8 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♣."
+   "why": "Svag hånd (8 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer."
   },
   {
    "situation": "svar_ru",
@@ -348,7 +348,7 @@
    "hp": 8,
    "sp": 10,
    "correct": "2NT",
-   "why": "Svag hånd (8 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♣."
+   "why": "Svag hånd (8 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer."
   },
   {
    "situation": "svar_ru",
@@ -378,7 +378,7 @@
    "hp": 7,
    "sp": 9,
    "correct": "2NT",
-   "why": "Svag hånd (7 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♣."
+   "why": "Svag hånd (7 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer."
   },
   {
    "situation": "svar_ru",
@@ -2298,7 +2298,7 @@
    "hp": 4,
    "sp": 5,
    "correct": "2NT",
-   "why": "Svag hånd (4 hp) med 5 ruder – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♦."
+   "why": "Svag hånd (4 hp) med 5 ruder – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du retter til 3♦."
   },
   {
    "situation": "svar_hj",
@@ -2328,7 +2328,7 @@
    "hp": 7,
    "sp": 9,
    "correct": "2NT",
-   "why": "Svag hånd (7 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♣."
+   "why": "Svag hånd (7 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer."
   },
   {
    "situation": "svar_hj",
@@ -2358,7 +2358,7 @@
    "hp": 2,
    "sp": 4,
    "correct": "2NT",
-   "why": "Svag hånd (2 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♣."
+   "why": "Svag hånd (2 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer."
   },
   {
    "situation": "svar_hj",
@@ -2388,7 +2388,7 @@
    "hp": 4,
    "sp": 5,
    "correct": "2NT",
-   "why": "Svag hånd (4 hp) med 5 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♣."
+   "why": "Svag hånd (4 hp) med 5 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer."
   },
   {
    "situation": "svar_hj",
@@ -2418,7 +2418,7 @@
    "hp": 7,
    "sp": 10,
    "correct": "2NT",
-   "why": "Svag hånd (7 hp) med 6 ruder – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♦."
+   "why": "Svag hånd (7 hp) med 6 ruder – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du retter til 3♦."
   },
   {
    "situation": "svar_hj",
@@ -2448,7 +2448,7 @@
    "hp": 3,
    "sp": 6,
    "correct": "2NT",
-   "why": "Svag hånd (3 hp) med 6 ruder – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♦."
+   "why": "Svag hånd (3 hp) med 6 ruder – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du retter til 3♦."
   },
   {
    "situation": "svar_hj",
@@ -2478,7 +2478,7 @@
    "hp": 8,
    "sp": 9,
    "correct": "2NT",
-   "why": "Svag hånd (8 hp) med 5 ruder – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♦."
+   "why": "Svag hånd (8 hp) med 5 ruder – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du retter til 3♦."
   },
   {
    "situation": "svar_hj",
@@ -2508,7 +2508,7 @@
    "hp": 6,
    "sp": 9,
    "correct": "2NT",
-   "why": "Svag hånd (6 hp) med 6 ruder – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♦."
+   "why": "Svag hånd (6 hp) med 6 ruder – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du retter til 3♦."
   },
   {
    "situation": "svar_hj",
@@ -2538,7 +2538,7 @@
    "hp": 4,
    "sp": 6,
    "correct": "2NT",
-   "why": "Svag hånd (4 hp) med 6 ruder – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♦."
+   "why": "Svag hånd (4 hp) med 6 ruder – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du retter til 3♦."
   },
   {
    "situation": "svar_hj",
@@ -4188,7 +4188,7 @@
    "hp": 4,
    "sp": 5,
    "correct": "2NT",
-   "why": "Svag hånd (4 hp) med 5 hjerter – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♥."
+   "why": "Svag hånd (4 hp) med 5 hjerter – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du retter til 3♥."
   },
   {
    "situation": "svar_sp",
@@ -4218,7 +4218,7 @@
    "hp": 4,
    "sp": 7,
    "correct": "2NT",
-   "why": "Svag hånd (4 hp) med 6 ruder – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♦."
+   "why": "Svag hånd (4 hp) med 6 ruder – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du retter til 3♦."
   },
   {
    "situation": "svar_sp",
@@ -4248,7 +4248,7 @@
    "hp": 6,
    "sp": 9,
    "correct": "2NT",
-   "why": "Svag hånd (6 hp) med 6 ruder – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♦."
+   "why": "Svag hånd (6 hp) med 6 ruder – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du retter til 3♦."
   },
   {
    "situation": "svar_sp",
@@ -4278,7 +4278,7 @@
    "hp": 6,
    "sp": 9,
    "correct": "2NT",
-   "why": "Svag hånd (6 hp) med 6 hjerter – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♥."
+   "why": "Svag hånd (6 hp) med 6 hjerter – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du retter til 3♥."
   },
   {
    "situation": "svar_sp",
@@ -4308,7 +4308,7 @@
    "hp": 8,
    "sp": 9,
    "correct": "2NT",
-   "why": "Svag hånd (8 hp) med 5 hjerter – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♥."
+   "why": "Svag hånd (8 hp) med 5 hjerter – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du retter til 3♥."
   },
   {
    "situation": "svar_sp",
@@ -4338,7 +4338,7 @@
    "hp": 8,
    "sp": 9,
    "correct": "2NT",
-   "why": "Svag hånd (8 hp) med 5 hjerter – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♥."
+   "why": "Svag hånd (8 hp) med 5 hjerter – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du retter til 3♥."
   },
   {
    "situation": "svar_sp",
@@ -4368,7 +4368,7 @@
    "hp": 5,
    "sp": 7,
    "correct": "2NT",
-   "why": "Svag hånd (5 hp) med 6 ruder – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♦."
+   "why": "Svag hånd (5 hp) med 6 ruder – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du retter til 3♦."
   },
   {
    "situation": "svar_sp",
@@ -4398,7 +4398,7 @@
    "hp": 7,
    "sp": 8,
    "correct": "2NT",
-   "why": "Svag hånd (7 hp) med 5 hjerter – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♥."
+   "why": "Svag hånd (7 hp) med 5 hjerter – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du retter til 3♥."
   },
   {
    "situation": "svar_sp",
@@ -4428,7 +4428,7 @@
    "hp": 5,
    "sp": 6,
    "correct": "2NT",
-   "why": "Svag hånd (5 hp) med 5 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer eller retter til 3♣."
+   "why": "Svag hånd (5 hp) med 5 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer."
   },
   {
    "situation": "svar_sp",
