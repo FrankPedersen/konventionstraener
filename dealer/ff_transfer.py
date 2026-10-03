@@ -1,12 +1,12 @@
 """
-Overføringer – Flemming & Frank, afsnit 10.
+Overføringer – Makker 2 & mig, afsnit 10.
 
 Over makkers 1NT (15–17): 2♦ → hjerter (5+) · 2♥ → spar (5+) · 2♠ → klør (6+, svag) · 3♣ → ruder (6+, svag).
 Åbner melder farven; med 4-korts støtte og maksimum (17) superaccepterer han med spring (kun i major).
 Svarers 2. melding efter majoroverføringen:
   5-farve: pas 0–7 · 2NT invit 8–9 · 3NT udgang 10–15 (åbner vælger)
   6-farve: pas 0–7 · 3M invit 8–9 · 4M udgang 10–15
-Svarerens og åbnerens første melding trænes som i Transfer (samme regler som Karina & Frank).
+Svarerens og åbnerens første melding trænes som i Transfer (samme regler som Makker 1 & mig).
 Antagelser: invit = 8–9 hp over 15–17; svarerhænder med en 4-farve ved siden af (ny farve =
 udgangskrav) er ikke med i 2. melding.
 """

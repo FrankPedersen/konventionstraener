@@ -1,5 +1,5 @@
 """
-Importerer Flemming & Franks system fra en Claude Design-eksport til viden/2-over-1-flemming.html.
+Importerer systemet for Makker 2 & mig fra en Claude Design-eksport til viden/2-over-1-makker2.html.
 
     python tools/import_design.py "C:/Users/frank/Downloads/2 over 1 - Moderne majorstotte.html"
 
@@ -10,7 +10,7 @@ Ankrene (afsnit-1, bilag-b, afsnit-c4 …) skal bevares – trænerens »Læs af
 import base64, gzip, json, os, re, sys, html as H
 
 src = sys.argv[1]
-out = sys.argv[2] if len(sys.argv) > 2 else os.path.join(os.path.dirname(__file__), '..', 'viden', '2-over-1-flemming.html')
+out = sys.argv[2] if len(sys.argv) > 2 else os.path.join(os.path.dirname(__file__), '..', 'viden', '2-over-1-makker2.html')
 bundle = open(src, encoding='utf-8').read()
 manifest = json.loads(re.search(r'<script type="__bundler/manifest">\s*(\{.*?\})\s*</script>', bundle, re.S).group(1))
 ext = json.loads(re.search(r'<script type="__bundler/ext_resources">\s*(\[.*?\])\s*</script>', bundle, re.S).group(1))
@@ -95,7 +95,7 @@ page = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>2 over 1 · Moderne majorstøtte — Flemming &amp; Frank</title>
+<title>2 over 1 · Moderne majorstøtte — Makker 2 &amp; mig</title>
 <!-- Genereret fra Claude Design-eksporten »2 over 1 - Moderne majorstotte.html« (udgave 3).
      Opdatering: eksportér igen fra Claude Design og kør build_ff_page.py. -->
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -120,7 +120,7 @@ page = """<!DOCTYPE html>
   </aside>
   <main>
     <header class="hero">
-      <div class="k">Bridge · Parsystem · Flemming &amp; Frank</div>
+      <div class="k">Bridge · Parsystem · Makker 2 &amp; mig</div>
       <h1>2 over 1</h1>
       <div class="sub">Moderne majorstøtte</div>
       <div class="d"><div>Trumfkontrakter · Sanskontrakter · Spærremeldinger · Indmeldinger · Modspil</div>

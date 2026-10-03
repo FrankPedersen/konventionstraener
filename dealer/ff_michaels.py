@@ -1,5 +1,5 @@
 """
-Michaels cuebid og usædvanlig 2NT – Flemming & Frank, afsnit 15b.
+Michaels cuebid og usædvanlig 2NT – Makker 2 & mig, afsnit 15b.
 
   ind_*  – indmelder over 1-farve, mindst 5-5, 8–15 hp eller 17+ (under 8: pas):
            Michaels: over 1♣/1♦ begge majorer · over 1♥ spar + minor · over 1♠ hjerter + minor

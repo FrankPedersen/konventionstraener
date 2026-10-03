@@ -1,5 +1,5 @@
 """
-Fast og slow arrival – Flemming & Frank, afsnit 5b.
+Fast og slow arrival – Makker 2 & mig, afsnit 5b.
 
 I et udgangskrævende forløb betyder hurtig udgang minimum og langsom ankomst tillæg.
   svar_* – svarer efter 1M – 2X (Two over One) – 2M med 3 korts støtte:

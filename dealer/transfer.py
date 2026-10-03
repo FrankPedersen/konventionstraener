@@ -1,10 +1,10 @@
 """
-Transfer – Karina & Frank, systemkortets afsnit 3.
+Transfer – Makker 1 & mig, systemkortets afsnit 3.
 
 Over makkers 1NT (15–17):
   2♦ transfer til hjerter (5+) · 2♥ transfer til spar (5+) · 2♠ minortransfer til klør (6+) · 3♣ minortransfer til ruder (6+)
 Åbner fuldfører transferen: 2♦ → 2♥ · 2♥ → 2♠ · 2♠ → 3♣ · 3♣ → 3♦.
-Superaccept (som hos Flemming & Frank): med 4-korts støtte og maksimum (17 hp) springer åbner til 3M efter
+Superaccept (som hos Makker 2 & mig): med 4-korts støtte og maksimum (17 hp) springer åbner til 3M efter
 2♦/2♥. Minortransfererne fuldføres altid.
 Antagelser: transfer bruges uanset styrke; minortransfer kun uden 4-farve i major; hænder med 5-5 eller
 5-4 i majorerne er ikke med (kortet siger ikke, om Stayman eller transfer går først).

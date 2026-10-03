@@ -1,5 +1,5 @@
 """
-Negativ dobling, støttedobling og redobling – Flemming & Frank, afsnit 17.
+Negativ dobling, støttedobling og redobling – Makker 2 & mig, afsnit 17.
 
   neg_*   – svarer efter makkers åbning og en indmelding: negativ dobling med 4-farve i den uviste
             major (6+ hp efter indmelding på 1-trinnet, 8+ på 2-trinnet) · 1♠ med 5+ spar · pas ellers

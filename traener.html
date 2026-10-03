@@ -500,7 +500,7 @@ Promise.all(['data/konventioner.json', 'data/systemer.json'].map(u => fetch(u).t
     if (k.layout === 'bord'){ LAYOUT = 'bord'; boardEl.classList.add('compact'); }
     if (k.profiler){ PROFILE = getProfile(); setupProfiles(); }
     if (k.varianter){ setupChooser(k, list, systems); return null; }
-    if (k.viden) $('source').innerHTML = `Aftalerne står i <a href="${k.viden}">${ids.length > 1 ? 'systemdokumentet' : sys && sys.id === 'kamp' ? 'referencelaget Kampen om kontrakten' : sys ? sys.navn + 's system' : 'vores system'}</a>.`;
+    if (k.viden) $('source').innerHTML = `Aftalerne står i <a href="${k.viden}">${ids.length > 1 ? 'systemdokumentet' : sys && sys.id === 'kamp' ? 'referencelaget Kampen om kontrakten' : sys ? 'systemet for ' + sys.navn : 'vores system'}</a>.`;
     return fetch(`pools/${k.id}.json`).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
   })
   .then(pool => { if (pool){ POOL = pool; startRound(); } })

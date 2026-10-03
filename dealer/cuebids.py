@@ -1,5 +1,5 @@
 """
-Cuebids – fælles for begge systemer, efter Flemming & Franks afsnit 7.
+Cuebids – fælles for begge systemer, efter afsnit 7 hos Makker 2 & mig.
 
 Kontrol = es, konge, singleton eller renonce. Billigste kontrolfarve først; en oversprunget farve
 benægter kontrol. Makkerne cuebidder på skift, indtil én afmelder i trumf.

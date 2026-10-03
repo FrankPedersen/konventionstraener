@@ -73,7 +73,7 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-2",
+  "viden": "viden/2-over-1-makker2.html#afsnit-2",
   "system": [
    "kf",
    "ff"
@@ -93,7 +93,7 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-6a"
+  "viden": "viden/2-over-1-makker2.html#afsnit-6a"
  },
  {
   "id": "cuebids",
@@ -109,7 +109,7 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-7"
+  "viden": "viden/2-over-1-makker2.html#afsnit-7"
  },
  {
   "id": "fjerde-farve",
@@ -125,7 +125,7 @@
    "kf",
    "ff"
   ],
-  "viden": "viden/2-over-1-flemming.html#afsnit-5a"
+  "viden": "viden/2-over-1-makker2.html#afsnit-5a"
  },
  {
   "id": "stayman",
@@ -177,7 +177,7 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-1"
+  "viden": "viden/2-over-1-makker2.html#afsnit-1"
  },
  {
   "id": "ff-trial-bids",
@@ -190,20 +190,20 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-3"
+  "viden": "viden/2-over-1-makker2.html#afsnit-3"
  },
  {
   "id": "ff-two-over-one",
   "system": "ff",
   "titel": "Two over One udgangskrav",
   "gruppe": "Videre meldeforløb",
-  "beskrivelse": "Ny farve på 2-trinnet: 13+ hp og udgangskrav – ikke 10+ som hos Karina & Frank.",
+  "beskrivelse": "Ny farve på 2-trinnet: 13+ hp og udgangskrav – ikke 10+ som hos Makker 1 & mig.",
   "roller": [
    "Åbner",
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-5"
+  "viden": "viden/2-over-1-makker2.html#afsnit-5"
  },
  {
   "id": "ff-fast-arrival",
@@ -216,7 +216,7 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-5b"
+  "viden": "viden/2-over-1-makker2.html#afsnit-5b"
  },
  {
   "id": "ff-staerke-genmeldinger",
@@ -229,7 +229,7 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-4"
+  "viden": "viden/2-over-1-makker2.html#afsnit-4"
  },
  {
   "id": "ff-omvendt-minor",
@@ -242,7 +242,7 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-6"
+  "viden": "viden/2-over-1-makker2.html#afsnit-6"
  },
  {
   "id": "ff-ass",
@@ -255,7 +255,7 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-9"
+  "viden": "viden/2-over-1-makker2.html#afsnit-9"
  },
  {
   "id": "ff-overfoeringer",
@@ -268,7 +268,7 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-10"
+  "viden": "viden/2-over-1-makker2.html#afsnit-10"
  },
  {
   "id": "ff-gerber",
@@ -281,7 +281,7 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-11"
+  "viden": "viden/2-over-1-makker2.html#afsnit-11"
  },
  {
   "id": "ff-2kl",
@@ -294,7 +294,7 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-14"
+  "viden": "viden/2-over-1-makker2.html#afsnit-14"
  },
  {
   "id": "ff-ogust",
@@ -307,7 +307,7 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-13"
+  "viden": "viden/2-over-1-makker2.html#afsnit-13"
  },
  {
   "id": "ff-dont",
@@ -320,7 +320,7 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-15a"
+  "viden": "viden/2-over-1-makker2.html#afsnit-15a"
  },
  {
   "id": "ff-michaels",
@@ -333,7 +333,7 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-15b"
+  "viden": "viden/2-over-1-makker2.html#afsnit-15b"
  },
  {
   "id": "ff-genaabning",
@@ -346,7 +346,7 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-15c"
+  "viden": "viden/2-over-1-makker2.html#afsnit-15c"
  },
  {
   "id": "ff-doblinger",
@@ -359,7 +359,7 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-17"
+  "viden": "viden/2-over-1-makker2.html#afsnit-17"
  },
  {
   "id": "ff-kravpas",
@@ -372,7 +372,7 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-18"
+  "viden": "viden/2-over-1-makker2.html#afsnit-18"
  },
  {
   "id": "ff-lebensohl",
@@ -385,7 +385,7 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-c4"
+  "viden": "viden/2-over-1-makker2.html#afsnit-c4"
  },
  {
   "id": "ff-1430",
@@ -398,46 +398,46 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-flemming.html#afsnit-7"
+  "viden": "viden/2-over-1-makker2.html#afsnit-7"
  },
  {
   "id": "ff-flannery",
   "system": "forslag",
   "titel": "Flannery",
-  "gruppe": "2♦-åbninger (Flemming & Frank, bilag B)",
+  "gruppe": "2♦-åbninger (Makker 2 & mig, bilag B)",
   "beskrivelse": "2♦ (eller 2♥ i B4-pakken) viser 5 hjerter og 4 spar, 11–15 hp.",
   "roller": [
    "Åbner",
    "Svarer"
   ],
   "status": "kommer",
-  "viden": "viden/2-over-1-flemming.html#afsnit-b1"
+  "viden": "viden/2-over-1-makker2.html#afsnit-b1"
  },
  {
   "id": "ff-multi-2ru",
   "system": "forslag",
   "titel": "Multi 2♦",
-  "gruppe": "2♦-åbninger (Flemming & Frank, bilag B)",
+  "gruppe": "2♦-åbninger (Makker 2 & mig, bilag B)",
   "beskrivelse": "Svag 2 i en ukendt major; svarer melder pas-eller-ret.",
   "roller": [
    "Åbner",
    "Svarer"
   ],
   "status": "kommer",
-  "viden": "viden/2-over-1-flemming.html#afsnit-b2"
+  "viden": "viden/2-over-1-makker2.html#afsnit-b2"
  },
  {
   "id": "ff-muiderberg",
   "system": "forslag",
   "titel": "Muiderberg 2♠",
-  "gruppe": "2♦-åbninger (Flemming & Frank, bilag B)",
+  "gruppe": "2♦-åbninger (Makker 2 & mig, bilag B)",
   "beskrivelse": "5 spar og en 4+ minor, 5–10 hp.",
   "roller": [
    "Åbner",
    "Svarer"
   ],
   "status": "kommer",
-  "viden": "viden/2-over-1-flemming.html#afsnit-b4"
+  "viden": "viden/2-over-1-makker2.html#afsnit-b4"
  },
  {
   "id": "forslag-2kl-kontrolsvar",

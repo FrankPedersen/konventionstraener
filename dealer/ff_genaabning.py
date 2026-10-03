@@ -1,5 +1,5 @@
 """
-Genåbning i 4. hånd – Flemming & Frank, afsnit 15c.
+Genåbning i 4. hånd – Makker 2 & mig, afsnit 15c.
 
   gen_*  – 1♥/1♠ – pas – pas – ?:
            cuebid 15+ (krav) · 1NT 11–14 jævn med hold i deres farve · 2NT 5-5 i minorerne, 8–14 ·

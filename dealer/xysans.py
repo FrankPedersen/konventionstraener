@@ -1,5 +1,5 @@
 """
-xy sans – fælles for begge systemer, efter Flemming & Franks afsnit 6a.
+xy sans – fælles for begge systemer, efter afsnit 6a hos Makker 2 & mig.
 
 Forløbet 1♣/1♦ – 1♠ – 1NT (12–14 jævn). Puljen dækker:
   svar_1x   – svarers melding over 1NT: pas (svag, 4 spar, ingen lang farve) · 2♠ / 3♣ stop (svag, egen

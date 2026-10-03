@@ -1,5 +1,5 @@
 """
-Michaels cuebid og usædvanlig 2NT – Karina & Frank, systemkortets afsnit 6.4 og 6.5.
+Michaels cuebid og usædvanlig 2NT – Makker 1 & mig, systemkortets afsnit 6.4 og 6.5.
 
 Indmelder (modstanderen åbner 1-farve):
   Michaels: over 1♣/1♦ begge majorer · over 1♥ spar + minor · over 1♠ hjerter + minor

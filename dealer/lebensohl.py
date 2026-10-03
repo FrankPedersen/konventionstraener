@@ -1,5 +1,5 @@
 """
-Lebensohl – Karina & Frank, systemkortets afsnit 8.2.
+Lebensohl – Makker 1 & mig, systemkortets afsnit 8.2.
 
 Modstanderen åbner en svag 2 (2♦/2♥/2♠), makker oplysningsdobler, og næste mand passer. Svarer:
   farve på 2-trinnet – naturligt og svagt, 0–8 hp

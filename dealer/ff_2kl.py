@@ -1,5 +1,5 @@
 """
-Stærkåbning 2♣ og 2♦ waiting – Flemming & Frank, afsnit 14.
+Stærkåbning 2♣ og 2♦ waiting – Makker 2 & mig, afsnit 14.
 
   svar_2kl  – svarer over 2♣: 2♦ waiting (alt andet) · 2♥/2♠/3♣/3♦ positivt: 8+ hp med god 5-farve ·
               2NT positivt: 8+ hp jævn uden 5-farve · 3NT gående 7-farve i minor (E-K-D) uden værdier udenfor

@@ -1,5 +1,5 @@
 """
-Longsuit trial bids – Flemming & Frank, afsnit 1 og 3.
+Longsuit trial bids – Makker 2 & mig, afsnit 1 og 3.
 
 Efter 1M – 2M (6–9 sp, 3 korts støtte):
   aab_*  – åbner: pas 12–14 sp · trial bid 15–16 sp i en sidefarve med 3+ kort og 2–3 tabere (den

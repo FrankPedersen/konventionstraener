@@ -1,5 +1,5 @@
 """
-Bekkasin 2NT – fælles for begge systemer, efter Flemming & Franks afsnit 2 og 7.
+Bekkasin 2NT – fælles for begge systemer, efter afsnit 2 og 7 hos Makker 2 & mig.
 
 1♥/1♠ – 2NT lover 13+ sp og 4+ korts støtte. Puljen dækker, begge majorer:
   aabner_1x  – åbners svar: 3♣ minimum (12–15) · 3♦ tillæg (16+) uden korthed ·

@@ -1,5 +1,5 @@
 """
-Omvendt minor – Flemming & Frank, afsnit 6.
+Omvendt minor – Makker 2 & mig, afsnit 6.
 
 1♣ lover 2+ kort, 1♦ 4+. Støtte = 5+ klør / 4+ ruder.
   svar_* – svarer: 4-farve i major meldes først (1♥/1♠; over 1♣ også 1♦ med 4+ ruder) ·
@@ -17,7 +17,7 @@ from .lebensohl import stopper
 ORDER = ['C', 'D', 'H', 'S']
 PAS = ["Modstander", "Pas"]
 BONUS = {
-    "svar": {"q": "Hvad viser 1♦ – 2♦ hos Flemming & Frank?",
+    "svar": {"q": "Hvad viser 1♦ – 2♦ hos Makker 2 & mig?",
              "correct": "10+ sp med stærk støtte – udgangskrav",
              "options": ["10+ sp med stærk støtte – udgangskrav", "6–9 sp, svag støtte", "Naturlig, 5+ ruder og svag"],
              "why": "Omvendt minor: 2 i åbningsfarven er stærk (10+ sp), 3 i farven er spærrende (6–9 sp)."},

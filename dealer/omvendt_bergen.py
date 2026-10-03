@@ -1,5 +1,5 @@
 """
-Omvendt Bergen – Karina & Frank, systemkortets afsnit 4.1, 4.3 og 4.4.
+Omvendt Bergen – Makker 1 & mig, systemkortets afsnit 4.1, 4.3 og 4.4.
 
 Svarer over makkers 1♥/1♠:
   pas 0–5 hp (uden 4-korts støtte) · 2M 6–9 sp med 3-korts støtte · 3M 0–6 sp med 4-korts støtte (destruktivt) ·

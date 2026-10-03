@@ -1,5 +1,5 @@
 """
-Fjerde farve krav – fælles for begge systemer (Karina & Franks afsnit 4.8, Flemming & Franks afsnit 5a).
+Fjerde farve krav – fælles for begge systemer (afsnit 4.8 hos Makker 1 & mig, afsnit 5a hos Makker 2 & mig).
 
 Forløbene 1♦ – 1♥ – 1♠ – ? og 1♣ – 1♥ – 1♠ – ?; den fjerde farve er klør hhv. ruder.
   svar_*  – svarer: fjerde farve på 2-trinnet er rundekrav, 11+ hp. Med hold i den fjerde farve meldes

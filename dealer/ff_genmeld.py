@@ -1,5 +1,5 @@
 """
-Åbners stærke genmeldinger og 3♣ checkback – Flemming & Frank, afsnit 4 og 8.
+Åbners stærke genmeldinger og 3♣ checkback – Makker 2 & mig, afsnit 4 og 8.
 
   aab_*   – åbner efter 1♦ – 1♠ (uden 4 spar):
             1NT jævn 12–14 · 2NT jævn 18–19 · 2♦ 6-farve 12–15 · 3♦ god 6-farve 16–18 ·

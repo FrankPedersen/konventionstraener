@@ -1,5 +1,5 @@
 """
-Two over One udgangskrav – Flemming & Frank, afsnit 1 og 5.
+Two over One udgangskrav – Makker 2 & mig, afsnit 1 og 5.
 
   svar_* – svarer over makkers 1♥/1♠ uden 3 korts støtte:
            pas 0–5 · 1NT 6–12 (semikrav) · 1♠ over 1♥ med 4+ spar · 3NT over 1♠: 13–15 jævn med
@@ -14,10 +14,10 @@ from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_poo
 
 ORDER = ['C', 'D', 'H', 'S']
 PAS = ["Modstander", "Pas"]
-BONUS = {"q": "Hvad lover Two over One hos Flemming & Frank?",
+BONUS = {"q": "Hvad lover Two over One hos Makker 2 & mig?",
          "correct": "13+ hp og udgangskrav",
          "options": ["13+ hp og udgangskrav", "10+ hp, rundekrav", "11–12 hp, invit"],
-         "why": "Ny farve på 2-trinnet fra en uforhåndspasset svarer er udgangskrav med 13+ hp (hos Karina & Frank er det 10+ og rundekrav)."}
+         "why": "Ny farve på 2-trinnet fra en uforhåndspasset svarer er udgangskrav med 13+ hp (hos Makker 1 & mig er det 10+ og rundekrav)."}
 
 def balanced(L):
     return sorted(L.values()) in ([3, 3, 3, 4], [2, 3, 4, 4], [2, 3, 3, 5])

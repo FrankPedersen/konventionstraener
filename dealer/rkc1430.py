@@ -1,10 +1,10 @@
 """
-1430 og trumfdame – Karina & Frank, systemkortets afsnit 5.
+1430 og trumfdame – Makker 1 & mig, systemkortets afsnit 5.
 
 Nøglekort = 4 esser + trumfkonge. Svar på 4NT: 5♣ 1 eller 4 · 5♦ 0 eller 3 · 5♥ 2 uden trumfdame ·
 5♠ 2 med trumfdame. Efter 5♣/5♦ spørger nærmeste trin efter trumfdamen:
   billigste genmelding (trumf) = har ikke damen · billigste konge = dame + konge(r) · 5NT = dame, ingen konger ·
-  lilleslem = dame, intet yderligere at vise (kongerne ligger over 6 i trumf) – som hos Flemming & Frank
+  lilleslem = dame, intet yderligere at vise (kongerne ligger over 6 i trumf) – som hos Makker 2 & mig
 Trumf er fastlagt med Bekkasin, og 4NT stilles enten af svarer (efter åbners 3♦) eller af åbner
 (direkte over 2NT) – så du træner som både åbner og svarer.
 Ikke med: 5 nøglekort, damespørgsmål efter 5♦ med hjerter som trumf (spørgsmålet bliver 5♠ og

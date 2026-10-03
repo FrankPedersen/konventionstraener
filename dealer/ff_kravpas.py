@@ -1,5 +1,5 @@
 """
-Kravpas og Loven – Flemming & Frank, afsnit 18 og 18a.
+Kravpas og Loven – Makker 2 & mig, afsnit 18 og 18a.
 
   lov_svar_* – svarer efter makkers 1♥ – (1♠) eller 1♠ – (2♥): støt efter Loven – 3 trumf (8 i alt) på
                2-trinnet · 4 trumf (9) på 3-trinnet · 5 trumf (10) på 4-trinnet · pas under 6 sp

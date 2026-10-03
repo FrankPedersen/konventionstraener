@@ -1,7 +1,7 @@
 """
-RKC 1430, trumfdame og konger – Flemming & Frank, afsnit 7.
+RKC 1430, trumfdame og konger – Makker 2 & mig, afsnit 7.
 
-Som 1430 hos Karina & Frank (svar på 4NT og på damespørgsmålet), men:
+Som 1430 hos Makker 1 & mig (svar på 4NT og på damespørgsmålet), men:
   5♥/5♠ viser 2 eller 5 nøglekort (uden/med trumfdamen)
   5NT efter RKC-svaret er kongespørgsmål: 6 i billigste farve med konge · 6 i trumf = ingen konger
 Antagelser: kongespørgsmålet stilles af svarer efter Bekkasin (1M – 2NT – 3♦ – 4NT – svar – 5NT);

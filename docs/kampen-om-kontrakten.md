@@ -383,7 +383,7 @@ Tre-trins-raketten gælder kun i offensiven · Springstøtte i GIF lover færre 
 
 ## 13. Forsvar mod modstandernes 1ut (aftale)
 
-Bogen tager ikke stilling til forsvaret mod modstandernes 1ut-åbning. I træneren kan I vælge mellem tre metoder: **Landy**, **DONT** (Flemming & Frank) og **Multiforsvar** (Karina & Frank).
+Bogen tager ikke stilling til forsvaret mod modstandernes 1ut-åbning. I træneren kan I vælge mellem tre metoder: **Landy**, **DONT** (Makker 2 & mig) og **Multiforsvar** (Makker 1 & mig).
 
 ### Landy
 

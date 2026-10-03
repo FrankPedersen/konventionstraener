@@ -1,12 +1,12 @@
 """
-Revideret omvendt Bergen – Flemming & Frank, afsnit 1.
+Revideret omvendt Bergen – Makker 2 & mig, afsnit 1.
 
 Svarer over makkers 1♥/1♠:
   Pas 0–5 · 2M 6–9 sp med 3 korts støtte · 3♣ 10–12 sp med præcis 3 · 3♦ 10–12 sp med 4+ ·
   3M 6–9 sp med 4 – spærrende · 4M 4–9 sp med 5+ – spærrende · 2NT Bekkasin 13+ sp med 4+ ·
   1NT 6–12 hp uden 3 korts støtte (over 1♥ også uden 4 spar) · 1♠ over 1♥ med 4+ spar
 Åbner efter 3♣/3♦ (10–12): er kaptajn – 3M med minimum, 4M med tillæg. Åbner tæller støttepoint
-(som i Karina & Franks Omvendt Bergen) og regner med midten af makkers 10–12: 4M, når sp + 11 når 26.
+(som i Omvendt Bergen hos Makker 1 & mig) og regner med midten af makkers 10–12: 4M, når sp + 11 når 26.
 Antagelser: 2M lover 3 kort og 3M 4 kort (skemaet giver 3–4 hhv. 4+); med 5 trumfer og 4–9 sp meldes 4M;
 støttepoint 5/3/1 med 4+ trumf og 3/2/1 med 3 trumf. 3 korts støtte med 13+ (Two over One først),
 4+ trumf med 0–3 sp og cuebid/slem efter 3♣/3♦ er ikke med.
@@ -17,7 +17,7 @@ from .omvendt_bergen import support_points, opener_sp, sp_detail
 GAME = 26
 PAS = ["Modstander", "Pas"]
 BONUS = {
-    "svar": {"q": "Hvad er forskellen på 3♣ og 3♦ hos Flemming & Frank?",
+    "svar": {"q": "Hvad er forskellen på 3♣ og 3♦ hos Makker 2 & mig?",
              "correct": "3♣ = præcis 3 kort, 3♦ = 4+ kort – begge 10–12 sp",
              "options": ["3♣ = præcis 3 kort, 3♦ = 4+ kort – begge 10–12 sp", "3♣ = 10–11 sp, 3♦ = 7–10 sp", "3♣ er naturlig klør"],
              "why": "I revideret omvendt Bergen viser 3♣ og 3♦ samme styrke (10–12 sp). Forskellen er trumflængden: 3♣ præcis 3, 3♦ 4+."},

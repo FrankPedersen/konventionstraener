@@ -1,5 +1,5 @@
 """
-Ogust 2NT og svar på svag 2 – Flemming & Frank, afsnit 12 og 13.
+Ogust 2NT og svar på svag 2 – Makker 2 & mig, afsnit 12 og 13.
 
   aab_*  – åbner med svag 2 (6-farve, 5–11 hp) efter makkers 2NT:
            3♣ dårlig (5–7) med én af E-K-D · 3♦ dårlig med to · 3♥ god (8–11) med én · 3♠ god med to ·

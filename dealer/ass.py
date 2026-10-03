@@ -1,5 +1,5 @@
 """
-Amerikansk Stayman (ASS) – Flemming & Frank, afsnit 8 og 9.
+Amerikansk Stayman (ASS) – Makker 2 & mig, afsnit 8 og 9.
 
 1NT = 15–17 jævn og kan rumme en 5-farve i major. 2♣ er mindst invit og lover ikke nødvendigvis
 en 4-farve i major. Puljen dækker:

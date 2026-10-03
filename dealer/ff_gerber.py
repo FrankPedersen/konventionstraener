@@ -1,5 +1,5 @@
 """
-Gerber og sansstigen – Flemming & Frank, afsnit 8 og 11.
+Gerber og sansstigen – Makker 2 & mig, afsnit 8 og 11.
 
   svar_1nt  – svarer med en jævn hånd uden 4-farve i major over 1NT (15–17), sansstigen:
               pas 0–8 · 2NT 9–10 · 3NT 11–15 · 4NT 16–17 (invit til 6NT) · 6NT 18–19 · 5NT 20–21 · 7NT 22+

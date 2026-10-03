@@ -1,5 +1,5 @@
 """
-Stayman – Karina & Frank, systemkortets afsnit 2.2 og 3.
+Stayman – Makker 1 & mig, systemkortets afsnit 2.2 og 3.
 
 1NT = 15–17 og må rumme en 5-farve i major. 2♣ er Stayman; med 5-farve i major melder åbner den,
 som var det en 4-farve. 2NT er naturlig invit, 8–9 hp jævn uden 4-farve i major. Puljen dækker:

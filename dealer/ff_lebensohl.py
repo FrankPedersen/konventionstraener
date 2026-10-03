@@ -1,5 +1,5 @@
 """
-Lebensohl mod svag 2 (simpel udgave) – Flemming & Frank, bilag C4.
+Lebensohl mod svag 2 (simpel udgave) – Makker 2 & mig, bilag C4.
 
 Modparten åbner svag 2♥/2♠, makker dobler, næste mand passer.
   svar_*   – svarer: farve højere end deres (billigst) = naturligt og svagt · 2NT relæ = svag hånd (0–7)

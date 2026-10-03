@@ -1,5 +1,5 @@
 """
-DONT mod modstandernes 1NT – Flemming & Frank, afsnit 15a.
+DONT mod modstandernes 1NT – Makker 2 & mig, afsnit 15a.
 
   indmelding – 1NT – ?: D én ukendt farve 6+ (10–16) · 2♣ klør + højere 5-4 · 2♦ ruder + højere 5-4 ·
                2♥ hjerter + spar 5-4 · 2♠ spar alene 6+ · 2NT begge minorer 5-5 (8–15) · pas ellers
