@@ -6,63 +6,9 @@
 <title>Kampen om kontrakten — Konventionstræner</title>
 <!-- Genereret af tools/build_kamp_viden.py fra docs/kampen-om-kontrakten.md – ret i markdown-filen. -->
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Lora:wght@400;600&display=swap" rel="stylesheet">
-<style>
-:root{ --font-heading:"Cormorant Garamond"; --font-body:"Lora"; --color-bg:#f3f2f2; --color-text:#201f1d; }
-*{ box-sizing:border-box; }
-body{ margin:0; background:var(--color-bg); color:var(--color-text); font-family:var(--font-body),Lora,Georgia,serif; font-size:15px; line-height:1.55; }
-a{ color:#2C5446; } a:hover{ color:#b68235; }
-::selection{ background:rgba(182,130,53,0.22); }
-.top{ border-bottom:1px solid rgba(32,31,29,0.16); }
-.top .in{ display:flex; align-items:center; justify-content:space-between; gap:20px; max-width:1560px; margin:0 auto; padding:14px clamp(14px,3vw,44px); }
-.top .brand{ font-family:var(--font-heading),Georgia,serif; font-size:21px; font-weight:600; color:#2C5446; text-decoration:none; }
-.top nav{ display:flex; gap:6px; font-size:14px; }
-.top nav a{ padding:6px 12px; border:1px solid transparent; border-radius:4px; color:#201f1d; text-decoration:none; }
-.top nav a[aria-current]{ border-color:#b68235; color:#2C5446; }
-.top nav a:hover{ background:rgba(182,130,53,0.09); color:#2C5446; }
-.wrap{ display:flex; flex-wrap:wrap; align-items:flex-start; max-width:1560px; margin:0 auto; padding:0 clamp(14px,3vw,44px) 90px; }
-aside{ flex:0 0 292px; min-width:0; padding:26px 24px 48px 0; }
-main{ flex:1 1 620px; min-width:0; padding:0 0 0 clamp(0px,3vw,44px); border-left:1px solid rgba(32,31,29,0.16); }
-@media (min-width:960px){ aside{ position:sticky; top:0; max-height:100vh; overflow:auto; } }
-@media (max-width:959px){ aside{ flex:1 1 100%; padding-right:0; } .toc{ max-height:40vh; overflow:auto; } main{ border-left:0; padding-left:0; } }
-.k{ font-family:var(--font-heading),Georgia,serif; font-size:10px; letter-spacing:0.28em; color:#9A7B3F; text-transform:uppercase; margin-bottom:10px; }
-.t1{ font-family:var(--font-heading),Georgia,serif; font-size:26px; line-height:1.05; color:#122E42; }
-.t2{ font-family:var(--font-heading),Georgia,serif; font-size:16px; line-height:1.2; color:#0E3A52; margin-bottom:16px; }
-#q{ width:100%; padding:8px 10px; font:13.5px var(--font-body),Georgia,serif; color:#201f1d; background:transparent; border:1px solid rgba(32,31,29,0.2); border-radius:4px; margin-bottom:6px; }
-#q:focus{ outline:2px solid #b68235; outline-offset:2px; }
-#cnt{ font-size:11.5px; letter-spacing:0.06em; color:rgba(32,31,29,0.5); padding:4px 0 14px; border-bottom:1px solid rgba(32,31,29,0.16); }
-.toc{ display:flex; flex-direction:column; gap:2px; padding-top:12px; }
-.tp{ display:flex; flex-direction:column; gap:1px; padding-bottom:10px; }
-.toc a{ display:block; text-decoration:none; padding:4px 10px 4px 11px; border-left:2px solid transparent; border-radius:2px; }
-.toc a.lp{ font-family:var(--font-heading),Georgia,serif; font-size:16.5px; font-weight:600; line-height:1.25; color:#201f1d; }
-.toc a.li{ font-size:13.5px; line-height:1.45; color:rgba(32,31,29,0.7); }
-.toc a:hover{ color:#2C5446; background:rgba(182,130,53,0.09); }
-.toc a.on{ color:#2C5446; border-left-color:#b68235; background:rgba(182,130,53,0.11); }
-.toc .hide{ display:none; }
-.hero{ padding:52px 0 34px; border-bottom:1px solid rgba(32,31,29,0.18); }
-.hero .k{ font-size:11px; letter-spacing:0.34em; }
-.hero h1{ font-family:var(--font-heading),Georgia,serif; font-size:clamp(46px,7vw,82px); font-weight:400; line-height:0.98; letter-spacing:-0.02em; color:#122E42; margin:18px 0 6px; }
-.hero .sub{ font-family:var(--font-heading),Georgia,serif; font-size:clamp(24px,3.4vw,36px); line-height:1.1; color:#0E3A52; margin-bottom:24px; }
-.hero .d{ display:flex; flex-direction:column; gap:6px; font-size:14.5px; line-height:1.6; color:#5A6B76; max-width:70ch; }
-.hero .m{ display:flex; flex-wrap:wrap; gap:22px; margin-top:26px; padding-top:16px; border-top:1px solid rgba(32,31,29,0.14); font-size:13px; letter-spacing:0.04em; color:#5A6B76; }
-@media print{ .top, aside{ display:none; } main{ border:0; padding:0; } }
-
-.doc h1{ font-family:var(--font-heading),Georgia,serif; font-size:36px; font-weight:400; line-height:1.1; color:#2C5446; margin:0 0 18px; }
-.doc section.part{ padding:40px 0 8px; border-top:1px solid rgba(32,31,29,0.18); margin-top:36px; }
-.doc header.hero + section.part{ border-top:0; margin-top:0; }
-.doc h2{ font-family:var(--font-heading),Georgia,serif; font-size:26px; font-weight:400; line-height:1.15; color:#3D6E58; margin:30px 0 12px; }
-.doc h1, .doc h2{ scroll-margin-top:20px; }
-.doc p, .doc li{ line-height:1.75; max-width:78ch; }
-.doc p{ margin:0 0 14px; }
-.doc table{ display:block; overflow-x:auto; border-collapse:collapse; font-size:15px; line-height:1.55; margin:18px 0 24px; }
-.doc th{ text-align:left; padding:0 14px 9px; border-bottom:1.5px solid #2C5446; font-family:var(--font-heading),Georgia,serif; font-size:17px; font-weight:600; color:#2C5446; }
-.doc td{ padding:9px 14px; border-bottom:1px solid rgba(32,31,29,0.13); vertical-align:top; }
-.doc tbody tr:nth-child(odd) td{ background:rgba(237,243,233,0.55); }
-.doc blockquote{ margin:18px 0; padding:12px 18px; border-left:3px solid #b68235; background:rgba(182,130,53,0.08); font-family:var(--font-heading),Georgia,serif; font-size:21px; color:#122E42; }
-.doc code{ font-size:13px; background:rgba(32,31,29,0.06); padding:1px 5px; border-radius:3px; }
-.doc pre{ font-size:13px; background:rgba(32,31,29,0.05); padding:12px 14px; border-radius:4px; overflow-x:auto; }
-.su-h{ color:#C00000; }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&text=%E2%99%A0%E2%99%A5%E2%99%A6%E2%99%A3&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/doc-sg.css">
 </head>
 <body>
 <header class="top"><div class="in">
@@ -126,7 +72,7 @@ main{ flex:1 1 620px; min-width:0; padding:0 0 0 clamp(0px,3vw,44px); border-lef
   <main class="doc">
     <header class="hero">
       <div class="k">Referencelag · konkurrerende meldeforløb</div>
-      <h1 style="font-size:clamp(42px,6.5vw,76px);line-height:0.98;letter-spacing:-0.02em;color:#122E42;margin:18px 0 6px">Kampen om kontrakten</h1>
+      <h1>Kampen om kontrakten</h1>
       <div class="sub">Forsvar og indmelding</div>
       <div class="d"><div>Kilde: <em>20-20 – kampen om kontrakten</em> (opfølger til <em>Kampen ved bridgebordet</em>, 2017), omskrevet til regelform.</div>
       <div>Profiler: Grund = bogens regler · Klub = + faste aftaler · Turnering = + Stenberg og Lebensohl</div>

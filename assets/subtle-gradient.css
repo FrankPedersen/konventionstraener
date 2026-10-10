@@ -1,0 +1,27 @@
+/* Subtle Gradient – farver, skrift, afstande og hjørner fra designsystemet i Claude Design
+   (https://claude.ai/artifact/1hqGCpSbRroTLwm79Yr9q3). Kun lyst tema.
+   Skrifterne hentes på hver side: Manrope 800 og Inter 400/600 fra Google Fonts.
+   Bridgefarverne (--suit-red, --suit-black, --bid-pas, --bid-dbl) er ikke en del af designsystemet:
+   røde og sorte kulører og grønne/røde meldekort er bridgens egne konventioner. */
+:root{
+  color-scheme: light;
+  --sg-primary:#ff9f4a; --sg-on-primary:#1a1a1a; --sg-primary-active:#ffc48f; --sg-primary-neutral:#f7b87a; --sg-primary-pale:#fff1e3;
+  --sg-ink:#1a1a1a; --sg-ink-deep:#0f0f0f; --sg-body:#4a4a4a; --sg-mute:#8a8a8a;
+  --sg-canvas:#ffffff; --sg-canvas-soft:#f2f3f4;
+  --sg-positive:#2ead4b; --sg-positive-deep:#054d28;
+  --sg-warning:#ffd11a; --sg-warning-deep:#b86700; --sg-warning-content:#4a3b1c;
+  --sg-negative:#d03238; --sg-negative-deep:#a72027; --sg-negative-darkest:#a7000d; --sg-negative-bg:#320707;
+
+  --sg-display:Manrope, Inter, system-ui, sans-serif;
+  --sg-sans:Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --sg-sym:"Noto Sans Symbols 2", "Segoe UI Symbol", "Apple Symbols", "DejaVu Sans", sans-serif;
+
+  --sg-space-xxs:2px; --sg-space-xs:4px; --sg-space-sm:8px; --sg-space-md:12px; --sg-space-lg:16px;
+  --sg-space-xl:24px; --sg-space-2xl:32px; --sg-space-3xl:48px;
+  --sg-radius-sm:8px; --sg-radius-md:12px; --sg-radius-lg:16px; --sg-radius-xl:24px; --sg-radius-pill:9999px;
+  --sg-shadow-float:0 12px 32px -16px rgba(15,15,15,.35);
+  --sg-hairline:rgba(26,26,26,.12);
+
+  --suit-red:#c00000; --suit-black:#1a1a1a;
+  --bid-pas:#054d28; --bid-dbl:#a72027;
+}

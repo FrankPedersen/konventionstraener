@@ -6,8 +6,14 @@ Importerer systemet for Makker 2 & mig fra en Claude Design-eksport til viden/2-
 Eksporten er en »bundled page«: indholdet ligger gzip'et i manifestet (doc-content.js med nav og html).
 Scriptet pakker det ud og skriver en almindelig statisk side med sitets topmenu, indholdsfortegnelse og søgning.
 Ankrene (afsnit-1, bilag-b, afsnit-c4 …) skal bevares – trænerens »Læs aftalen«-links peger på dem.
+Layoutet er designsystemet Subtle Gradient: assets/doc-sg.css, og tools/sg_restyle.py oversætter eksportens farver.
+Rettelser lavet direkte i den færdige side (fx tilføjelserne i C4 · Lebensohl) skal også ind i Claude Design-
+dokumentet – ellers forsvinder de ved næste import.
 """
 import base64, gzip, json, os, re, sys, html as H
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from sg_restyle import restyle
 
 src = sys.argv[1]
 out = sys.argv[2] if len(sys.argv) > 2 else os.path.join(os.path.dirname(__file__), '..', 'viden', '2-over-1-makker2.html')
@@ -23,7 +29,7 @@ nav = json.loads(js[js.index('=') + 1:i].strip().rstrip(';'))
 body = json.loads(js[js.index('=', i) + 1:].strip().rstrip(';'))
 
 toc = []
-red = lambda t: re.sub(r'([♥♦])', r'<span style="color:#C00000"></span>', H.escape(t))
+red = lambda t: re.sub(r'([♥♦])', r'<span style="color:#C00000">\1</span>', H.escape(t))
 for p in nav:
     toc.append('<div class="tp"><a class="lp" href="#%s">%s</a>' % (p['id'], red(p['title'])))
     for it in p['items']:
@@ -31,46 +37,6 @@ for p in nav:
     toc.append('</div>')
 total = sum(1 + len(p['items']) for p in nav)
 
-CSS = """
-:root{ --font-heading:"Cormorant Garamond"; --font-body:"Lora"; --color-bg:#f3f2f2; --color-text:#201f1d; }
-*{ box-sizing:border-box; }
-body{ margin:0; background:var(--color-bg); color:var(--color-text); font-family:var(--font-body),Lora,Georgia,serif; font-size:15px; line-height:1.55; }
-a{ color:#2C5446; } a:hover{ color:#b68235; }
-::selection{ background:rgba(182,130,53,0.22); }
-.top{ border-bottom:1px solid rgba(32,31,29,0.16); }
-.top .in{ display:flex; align-items:center; justify-content:space-between; gap:20px; max-width:1560px; margin:0 auto; padding:14px clamp(14px,3vw,44px); }
-.top .brand{ font-family:var(--font-heading),Georgia,serif; font-size:21px; font-weight:600; color:#2C5446; text-decoration:none; }
-.top nav{ display:flex; gap:6px; font-size:14px; }
-.top nav a{ padding:6px 12px; border:1px solid transparent; border-radius:4px; color:#201f1d; text-decoration:none; }
-.top nav a[aria-current]{ border-color:#b68235; color:#2C5446; }
-.top nav a:hover{ background:rgba(182,130,53,0.09); color:#2C5446; }
-.wrap{ display:flex; flex-wrap:wrap; align-items:flex-start; max-width:1560px; margin:0 auto; padding:0 clamp(14px,3vw,44px) 90px; }
-aside{ flex:0 0 292px; min-width:0; padding:26px 24px 48px 0; }
-main{ flex:1 1 620px; min-width:0; padding:0 0 0 clamp(0px,3vw,44px); border-left:1px solid rgba(32,31,29,0.16); }
-@media (min-width:960px){ aside{ position:sticky; top:0; max-height:100vh; overflow:auto; } }
-@media (max-width:959px){ aside{ flex:1 1 100%; padding-right:0; } .toc{ max-height:40vh; overflow:auto; } main{ border-left:0; padding-left:0; } }
-.k{ font-family:var(--font-heading),Georgia,serif; font-size:10px; letter-spacing:0.28em; color:#9A7B3F; text-transform:uppercase; margin-bottom:10px; }
-.t1{ font-family:var(--font-heading),Georgia,serif; font-size:26px; line-height:1.05; color:#122E42; }
-.t2{ font-family:var(--font-heading),Georgia,serif; font-size:16px; line-height:1.2; color:#0E3A52; margin-bottom:16px; }
-#q{ width:100%; padding:8px 10px; font:13.5px var(--font-body),Georgia,serif; color:#201f1d; background:transparent; border:1px solid rgba(32,31,29,0.2); border-radius:4px; margin-bottom:6px; }
-#q:focus{ outline:2px solid #b68235; outline-offset:2px; }
-#cnt{ font-size:11.5px; letter-spacing:0.06em; color:rgba(32,31,29,0.5); padding:4px 0 14px; border-bottom:1px solid rgba(32,31,29,0.16); }
-.toc{ display:flex; flex-direction:column; gap:2px; padding-top:12px; }
-.tp{ display:flex; flex-direction:column; gap:1px; padding-bottom:10px; }
-.toc a{ display:block; text-decoration:none; padding:4px 10px 4px 11px; border-left:2px solid transparent; border-radius:2px; }
-.toc a.lp{ font-family:var(--font-heading),Georgia,serif; font-size:16.5px; font-weight:600; line-height:1.25; color:#201f1d; }
-.toc a.li{ font-size:13.5px; line-height:1.45; color:rgba(32,31,29,0.7); }
-.toc a:hover{ color:#2C5446; background:rgba(182,130,53,0.09); }
-.toc a.on{ color:#2C5446; border-left-color:#b68235; background:rgba(182,130,53,0.11); }
-.toc .hide{ display:none; }
-.hero{ padding:52px 0 34px; border-bottom:1px solid rgba(32,31,29,0.18); }
-.hero .k{ font-size:11px; letter-spacing:0.34em; }
-.hero h1{ font-family:var(--font-heading),Georgia,serif; font-size:clamp(46px,7vw,82px); font-weight:400; line-height:0.98; letter-spacing:-0.02em; color:#122E42; margin:18px 0 6px; }
-.hero .sub{ font-family:var(--font-heading),Georgia,serif; font-size:clamp(24px,3.4vw,36px); line-height:1.1; color:#0E3A52; margin-bottom:24px; }
-.hero .d{ display:flex; flex-direction:column; gap:6px; font-size:14.5px; line-height:1.6; color:#5A6B76; max-width:70ch; }
-.hero .m{ display:flex; flex-wrap:wrap; gap:22px; margin-top:26px; padding-top:16px; border-top:1px solid rgba(32,31,29,0.14); font-size:13px; letter-spacing:0.04em; color:#5A6B76; }
-@media print{ .top, aside{ display:none; } main{ border:0; padding:0; } }
-"""
 
 JS = """
 (function(){
@@ -97,10 +63,10 @@ page = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>2 over 1 · Moderne majorstøtte — Makker 2 &amp; mig</title>
 <!-- Genereret fra Claude Design-eksporten »2 over 1 - Moderne majorstotte.html« (udgave 3).
-     Opdatering: eksportér igen fra Claude Design og kør build_ff_page.py. -->
+     Opdatering: eksportér igen fra Claude Design og kør tools/import_design.py. -->
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Lora:wght@400;600&display=swap" rel="stylesheet">
-<style>""" + CSS + """</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/doc-sg.css">
 </head>
 <body>
 <header class="top"><div class="in">
@@ -118,7 +84,7 @@ page = """<!DOCTYPE html>
 """ + "\n".join(toc) + """
     </nav>
   </aside>
-  <main>
+  <main class="export">
     <header class="hero">
       <div class="k">Bridge · Parsystem · Makker 2 &amp; mig</div>
       <h1>2 over 1</h1>
@@ -127,7 +93,7 @@ page = """<!DOCTYPE html>
       <div>Femkorts major · Two over One udgangskrav · Bekkasin · omvendt minor · RKC 1430</div></div>
       <div class="m"><div>Bygger på Femfarve i major (Røn / Reinholdt)</div><div>Udgave 3</div></div>
     </header>
-""" + body + """
+""" + restyle(body) + """
   </main>
 </div>
 <script>""" + JS + """</script>

@@ -7,23 +7,24 @@
 <meta name="description" content="Træn bridgekonventioner med tilfældige meldeforløb – som indmelder, åbner og svarer – og slå op i vores aftaler og notater.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;1,400&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@800&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&text=%E2%99%A0%E2%99%A5%E2%99%A6%E2%99%A3&display=swap">
 <link rel="stylesheet" href="assets/site.css">
 <style>
-  .grouphead{ font-family:var(--sans); font-weight:800; font-size:1rem; color:var(--felt); margin:1.6rem 0 .2rem; }
-  .roles{ display:flex; gap:.35rem; flex-wrap:wrap; margin-top:.55rem; }
-  .roles span{ font-family:var(--sans); font-size:.8rem; font-weight:700; padding:.1rem .5rem; border-radius:999px; background:var(--panel); color:var(--muted); }
-  .tray{ display:flex; gap:.7rem; margin-top:1.4rem; }
-  .tray .bc{ font-size:1.6rem; min-width:2.3em; height:2.9em; }
-  .systabs{ display:flex; gap:.5rem; flex-wrap:wrap; margin:1rem 0 .4rem; }
-  .systabs button{ font-family:var(--sans); font-weight:800; font-size:1rem; padding:.5rem 1rem; border-radius:999px; cursor:pointer;
-                   border:1px solid var(--line-strong); background:var(--paper); color:var(--ink); }
-  .systabs button[aria-selected="true"]{ background:var(--felt-deep); border-color:transparent; color:#fff; }
-  .syskort{ font-family:var(--sans); font-size:1rem; color:var(--muted); margin:.4rem 0 0; }
-  .syskort a{ font-weight:700; }
-  .roles .shared{ background:var(--felt-deep); color:#fff; }
-  .tile .sys{ font-family:var(--sans); font-size:.8rem; font-weight:800; color:var(--gold); }
+  .grouphead{ font-weight:600; font-size:1.25rem; letter-spacing:-.01em; margin:var(--sg-space-2xl) 0 0; }
+  .roles{ display:flex; gap:var(--sg-space-xs); flex-wrap:wrap; margin-top:var(--sg-space-md); }
+  .roles span{ font-size:.75rem; line-height:1rem; font-weight:600; padding:var(--sg-space-xs) var(--sg-space-md); border-radius:var(--sg-radius-pill); background:var(--sg-canvas-soft); color:var(--sg-ink); }
+  .tray{ display:flex; gap:var(--sg-space-md); margin-top:var(--sg-space-2xl); }
+  .tray .bc{ font-size:1.6rem; min-width:2.3em; height:2.9em; border-radius:var(--sg-radius-md); }
+  .systabs{ display:flex; gap:var(--sg-space-sm); flex-wrap:wrap; margin:var(--sg-space-lg) 0 var(--sg-space-sm); }
+  .systabs button{ font:600 1rem/1.5 var(--sg-sans); padding:var(--sg-space-md) var(--sg-space-xl); border-radius:var(--sg-radius-xl); cursor:pointer;
+                   border:0; background:var(--sg-canvas); color:var(--sg-ink); }
+  .systabs button:hover{ box-shadow:inset 0 0 0 1px var(--sg-ink); }
+  .systabs button[aria-selected="true"]{ background:var(--sg-ink); color:var(--sg-canvas); }
+  .syskort{ font-size:1rem; color:var(--sg-body); margin:var(--sg-space-sm) 0 0; }
+  .syskort a{ font-weight:600; color:var(--sg-ink); }
+  .roles .shared{ background:var(--sg-primary-pale); color:var(--sg-ink); }
+  .tile .sys{ font-weight:600; color:var(--sg-body); }
 </style>
 </head>
 <body>

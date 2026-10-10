@@ -1,0 +1,81 @@
+/* Dokumentsiderne (systemkortene og Kampen om kontrakten) i Subtle Gradient:
+   topmenu, indholdsfortegnelse med søgning, hero og indhold i hvide kort på canvas-soft. */
+@import url("subtle-gradient.css");
+:root{ --font-heading:var(--sg-display); --font-body:var(--sg-sans); }
+*{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; }
+body{ margin:0; background:var(--sg-canvas-soft); color:var(--sg-ink); font-family:var(--sg-sans); font-size:16px; line-height:1.55; }
+a{ color:var(--sg-ink); text-underline-offset:.18em; } a:hover{ color:var(--sg-ink-deep); text-decoration-thickness:2px; }
+a:focus-visible, input:focus-visible{ outline:2px solid var(--sg-ink); outline-offset:2px; border-radius:var(--sg-radius-sm); }
+::selection{ background:var(--sg-primary-pale); }
+.su{ font-family:var(--sg-sym); font-style:normal; font-weight:400; } .su-h, .su-d{ color:var(--suit-red); }
+
+/* topmenu */
+.top{ background:var(--sg-canvas); }
+.top .in{ display:flex; align-items:center; justify-content:space-between; gap:20px; max-width:1560px; margin:0 auto; padding:var(--sg-space-md) clamp(16px,3vw,32px); }
+.top .brand{ font-family:var(--sg-display); font-size:1.1rem; font-weight:800; letter-spacing:-.01em; color:var(--sg-ink); text-decoration:none; }
+.top nav{ display:flex; gap:var(--sg-space-sm); font-size:.875rem; font-weight:600; }
+.top nav a{ padding:var(--sg-space-sm) var(--sg-space-lg); border-radius:var(--sg-radius-pill); color:var(--sg-ink); text-decoration:none; }
+.top nav a:hover{ background:var(--sg-canvas-soft); }
+.top nav a[aria-current]{ background:var(--sg-ink); color:var(--sg-canvas); }
+
+/* ramme: indholdsfortegnelse og indhold */
+.wrap{ display:flex; flex-wrap:wrap; align-items:flex-start; gap:var(--sg-space-lg); max-width:1560px; margin:0 auto; padding:var(--sg-space-lg) clamp(16px,3vw,32px) var(--sg-space-3xl); }
+aside{ flex:0 0 300px; min-width:0; background:var(--sg-canvas); border-radius:var(--sg-radius-xl); padding:var(--sg-space-xl); }
+main{ flex:1 1 620px; min-width:0; background:var(--sg-canvas); border-radius:var(--sg-radius-xl); padding:var(--sg-space-3xl) clamp(20px,4vw,56px); }
+@media (min-width:960px){ aside{ position:sticky; top:var(--sg-space-lg); max-height:calc(100vh - 2 * var(--sg-space-lg)); overflow:auto; } }
+@media (max-width:959px){ aside{ flex:1 1 100%; } .toc{ max-height:40vh; overflow:auto; } main{ padding:var(--sg-space-2xl) var(--sg-space-lg); } }
+.k{ font-size:.75rem; line-height:1rem; font-weight:600; color:var(--sg-body); margin-bottom:var(--sg-space-sm); }
+.t1{ font-family:var(--sg-display); font-weight:800; font-size:1.75rem; line-height:1; letter-spacing:-.02em; color:var(--sg-ink); }
+.t2{ font-size:1rem; line-height:1.4; color:var(--sg-body); margin:var(--sg-space-xs) 0 var(--sg-space-lg); }
+#q{ width:100%; padding:var(--sg-space-md) var(--sg-space-lg); font:400 1rem/1.5 var(--sg-sans); color:var(--sg-ink); background:var(--sg-canvas);
+    border:1px solid var(--sg-ink); border-radius:var(--sg-radius-md); margin-bottom:var(--sg-space-sm); }
+#q::placeholder{ color:var(--sg-body); }
+#cnt{ font-size:.75rem; line-height:1rem; color:var(--sg-body); padding:var(--sg-space-xs) 0 var(--sg-space-md); border-bottom:1px solid var(--sg-canvas-soft); }
+.toc{ display:flex; flex-direction:column; gap:2px; padding-top:var(--sg-space-md); }
+.tp{ display:flex; flex-direction:column; gap:1px; padding-bottom:var(--sg-space-sm); }
+.toc a{ display:block; text-decoration:none; padding:6px var(--sg-space-md); border-radius:var(--sg-radius-sm); }
+.toc a.lp{ font-size:.9375rem; font-weight:600; line-height:1.3; color:var(--sg-ink); }
+.toc a.li{ font-size:.875rem; line-height:1.4; color:var(--sg-body); }
+.toc a:hover{ color:var(--sg-ink); background:var(--sg-canvas-soft); }
+.toc a.on{ color:var(--sg-ink); background:var(--sg-primary-pale); box-shadow:inset 3px 0 0 var(--sg-primary); }
+.toc .hide{ display:none; }
+
+/* hero */
+.hero{ padding:0 0 var(--sg-space-2xl); }
+.hero .k{ font-size:.875rem; line-height:1.25rem; }
+.hero h1{ font-family:var(--sg-display); font-size:clamp(44px,7vw,80px); font-weight:800; line-height:.95; letter-spacing:-.025em; color:var(--sg-ink); margin:var(--sg-space-md) 0 var(--sg-space-sm); }
+.hero .sub{ font-size:clamp(20px,2.6vw,28px); line-height:1.25; color:var(--sg-body); margin-bottom:var(--sg-space-xl); }
+.hero .d{ display:flex; flex-direction:column; gap:var(--sg-space-xs); font-size:1rem; line-height:1.55; color:var(--sg-body); max-width:70ch; }
+.hero .m{ display:flex; flex-wrap:wrap; gap:var(--sg-space-sm); margin-top:var(--sg-space-xl); font-size:.875rem; font-weight:600; color:var(--sg-ink); }
+.hero .m > div{ background:var(--sg-canvas-soft); border-radius:var(--sg-radius-pill); padding:var(--sg-space-xs) var(--sg-space-md); }
+
+/* indhold fra pandoc (.doc) */
+.doc h1{ font-family:var(--sg-display); font-size:clamp(28px,4vw,40px); font-weight:800; line-height:1; letter-spacing:-.02em; color:var(--sg-ink); margin:0 0 var(--sg-space-xl); }
+.doc section.part{ padding:var(--sg-space-3xl) 0 var(--sg-space-sm); border-top:1px solid var(--sg-hairline); margin-top:var(--sg-space-2xl); }
+.doc header.hero + section.part{ border-top:0; margin-top:0; padding-top:var(--sg-space-lg); }
+.doc h2{ font-size:1.5rem; font-weight:600; line-height:1.3; letter-spacing:-.02em; color:var(--sg-ink); margin:var(--sg-space-2xl) 0 var(--sg-space-md); }
+.doc h3, .doc h4{ font-size:1.125rem; font-weight:600; line-height:1.35; color:var(--sg-ink); margin:var(--sg-space-xl) 0 var(--sg-space-sm); }
+.doc h1, .doc h2, .doc h3, .doc section{ scroll-margin-top:var(--sg-space-lg); }
+.doc p, .doc li{ line-height:1.65; max-width:75ch; }
+.doc p{ margin:0 0 var(--sg-space-md); text-wrap:pretty; }
+.doc table{ display:block; overflow-x:auto; width:100%; border-collapse:collapse; font-size:.875rem; line-height:1.5; margin:var(--sg-space-lg) 0 var(--sg-space-xl); }
+.doc table colgroup{ display:none; }
+.doc th{ text-align:left; vertical-align:bottom; padding:var(--sg-space-sm) var(--sg-space-lg); background:var(--sg-canvas-soft); font-size:.75rem; line-height:1rem; font-weight:600; color:var(--sg-body); }
+.doc th:first-child{ border-radius:var(--sg-radius-sm) 0 0 var(--sg-radius-sm); } .doc th:last-child{ border-radius:0 var(--sg-radius-sm) var(--sg-radius-sm) 0; }
+.doc th strong{ font-weight:600; }
+.doc td{ padding:var(--sg-space-md) var(--sg-space-lg); border-bottom:1px solid var(--sg-canvas-soft); vertical-align:top; }
+.doc td strong{ font-weight:600; color:var(--sg-ink); }
+.doc td em{ color:var(--sg-body); }
+/* enkeltcellede noter */
+.doc table:not(:has(thead)) td{ background:var(--sg-canvas-soft); border:0; border-radius:var(--sg-radius-md); padding:var(--sg-space-md) var(--sg-space-lg); font-size:.875rem; line-height:1.6; color:var(--sg-body); }
+.doc table:not(:has(thead)) td em{ font-style:normal; }
+.doc blockquote{ margin:var(--sg-space-lg) 0; padding:var(--sg-space-lg) var(--sg-space-xl); border-radius:var(--sg-radius-lg); background:var(--sg-primary-pale); font-size:1.125rem; font-weight:600; line-height:1.45; color:var(--sg-ink); }
+.doc blockquote p{ margin:0; }
+.doc code{ font-size:.8125rem; background:var(--sg-canvas-soft); padding:1px 6px; border-radius:6px; }
+.doc pre{ font-size:.8125rem; background:var(--sg-canvas-soft); padding:var(--sg-space-md) var(--sg-space-lg); border-radius:var(--sg-radius-md); overflow-x:auto; }
+
+/* indhold fra Claude Design-eksporten (systemet for Makker 2 & mig): inline-styles, derfor !important på skrift */
+main.export th{ font-family:var(--sg-sans) !important; font-size:.8125rem !important; font-weight:600 !important; }
+
+@media print{ body{ background:#fff; } .top, aside{ display:none; } main{ padding:0; border-radius:0; } }

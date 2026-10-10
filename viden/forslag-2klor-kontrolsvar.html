@@ -4,6 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>2♣ med kontrolsvar — Forslag</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&text=%E2%99%A0%E2%99%A5%E2%99%A6%E2%99%A3&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/subtle-gradient.css">
 <style>
 /* Notat: 2<span class="k">♣</span> med kontrolsvar — farver følger Word-versionen */
 :root {
@@ -19,16 +23,6 @@
   --konk: #a33b6b;       --konk-t: #f8ecf2;  --konk-r: #ebcfdc;
   --eks: #8f6c00;        --eks-t: #fbf5e3;   --eks-r: #eadfbf;
   --font: "Calibri", "Carlito", "Segoe UI", system-ui, -apple-system, sans-serif;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --ink: #e8e8e4; --muted: #a8a8a2; --paper: #17181a; --rule: #2c2e31; --red: #ff6b6b;
-    --title: #6fbf73; --kicker: #d9ac2b;
-    --abner: #7db4ea; --abner-t: #1b2736; --abner-r: #2c3f56;
-    --svarer: #6fbf73; --svarer-t: #1b2a1d; --svarer-r: #2f4a32;
-    --konk: #e68bb4; --konk-t: #301d27; --konk-r: #52303f;
-    --eks: #e0b64a; --eks-t: #2a2414; --eks-r: #4d4224;
-  }
 }
 * { box-sizing: border-box; }
 html { background: var(--paper); }
@@ -153,14 +147,39 @@ table.bid td { font-weight: 700; }
 
 </style>
 <style>
-/* Konventionstrænerens menu */
-.site-head{ border-bottom:1.5px solid var(--kicker); font-family:var(--font); background:var(--paper); }
-.site-head .in{ max-width:52rem; margin:0 auto; padding:.8rem 1.25rem; display:flex; align-items:baseline; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
-.site-head .brand{ font-weight:700; font-size:1rem; letter-spacing:.06em; text-transform:uppercase; color:var(--title); text-decoration:none; }
-.site-head nav{ display:flex; gap:1.2rem; font-weight:700; font-size:.95rem; }
-.site-head nav a{ color:var(--ink); text-decoration:none; padding-bottom:.15rem; border-bottom:2px solid transparent; }
-.site-head nav a:hover, .site-head nav a[aria-current="page"]{ color:var(--title); border-bottom-color:var(--title); }
+/* Konventionstrænerens menu og Subtle Gradient-laget (assets/subtle-gradient.css).
+   Notatets farvenøgle (åbner, svarer, konkurrence, eksempler) bevares – den betyder noget i teksten. */
+:root{ --ink:var(--sg-ink); --muted:var(--sg-body); --paper:var(--sg-canvas); --rule:var(--sg-canvas-soft); --red:var(--suit-red);
+       --title:var(--sg-ink); --kicker:var(--sg-hairline); --font:var(--sg-sans); }
+.site-head{ background:var(--sg-canvas); }
+.site-head .in{ max-width:64rem; margin:0 auto; padding:var(--sg-space-md) 1.25rem; display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
+.site-head .brand{ font-family:var(--sg-display); font-weight:800; font-size:1.1rem; letter-spacing:-.01em; color:var(--sg-ink); text-decoration:none; }
+.site-head nav{ display:flex; gap:var(--sg-space-sm); font-size:.875rem; font-weight:600; }
+.site-head nav a{ color:var(--sg-ink); text-decoration:none; padding:var(--sg-space-sm) var(--sg-space-lg); border-radius:var(--sg-radius-pill); }
+.site-head nav a:hover{ background:var(--sg-canvas-soft); }
+.site-head nav a[aria-current="page"]{ background:var(--sg-ink); color:var(--sg-canvas); }
 @media print{ .site-head{ display:none; } }
+
+html, body{ background:var(--sg-canvas-soft); }
+body{ font:16px/1.6 var(--sg-sans); }
+a{ color:var(--sg-ink); text-underline-offset:.18em; }
+.suit, .r, .k{ font-family:var(--sg-sym); }
+main{ max-width:56rem; margin:var(--sg-space-lg) auto var(--sg-space-3xl); background:var(--sg-canvas); border-radius:var(--sg-radius-xl);
+      padding:var(--sg-space-3xl) clamp(20px,4vw,48px); }
+@media (max-width:60rem){ main{ margin:var(--sg-space-lg) var(--sg-space-lg) var(--sg-space-3xl); } }
+@media (max-width:600px){ main{ padding:var(--sg-space-2xl) var(--sg-space-lg); } }
+.title{ border-bottom:0; padding-bottom:var(--sg-space-lg); }
+.kicker{ color:var(--sg-body); letter-spacing:0; text-transform:none; font-size:.875rem; font-weight:600; }
+h1{ font-family:var(--sg-display); font-weight:800; font-size:clamp(2.2rem,5vw,3rem); line-height:1; letter-spacing:-.025em; }
+h2{ font-family:var(--sg-display); font-weight:800; font-size:1.6rem; line-height:1.05; letter-spacing:-.015em; }
+.sub, .note{ font-style:normal; }
+.tag{ letter-spacing:.08em; }
+.legend li{ border-top:0; border-radius:var(--sg-radius-md); }
+thead th{ border-bottom-width:1px; font-weight:600; }
+.box{ border:0; border-radius:var(--sg-radius-md); padding:var(--sg-space-lg) var(--sg-space-xl) var(--sg-space-sm); }
+.example{ border-top:1px solid var(--sg-hairline); }
+.compass{ border-radius:var(--sg-radius-sm); }
+.konklusion{ border-left:0; border-radius:var(--sg-radius-md); padding:var(--sg-space-md) var(--sg-space-lg); }
 </style>
 </head>
 <body>
