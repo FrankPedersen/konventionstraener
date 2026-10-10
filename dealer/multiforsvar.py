@@ -1,459 +1,361 @@
 """
-Multiforsvar mod 1NT efter Jyderup Bridgeklubs oversigt (også svar på D, 2♠ og 2NT).
+Multiforsvar mod 1NT – Makker 1 & mig, systemkortet v1.7 afsnit 8.1.
 
-Puljen dækker hænder, hvor du enten er indmelder (1NT – ?, eller genmeldingen
-efter makkers 2NT-spørgsmål) eller svarer (1NT – X/2♣/2♦/2♥/2♠/2NT – pas – ?).
-Facit regnes ud af klassifikatorerne herunder. Grænser, som systemkortet ikke
-angiver, står som konstanter i afsnittet 'indmelding'.
+Indmelder (1NT – ?): D = stærk jævn hånd 15–17(+), forslag til straf · 2♣ = begge majorer 5-4 ·
+2♦ = multi, 6+ i en major, ca. 6–10 hp · 2♥/2♠ = 5 i majoren + 4–5 i en ukendt minor ·
+2NT = begge minorer · 3♣/3♦ = naturligt, spærrende. 2♣, 2♥/2♠ og 2NT er 10–16 hp.
+Indmelders næste melding: 2♣ – 2♦ (spørger efter femfarven), 2♥/2♠ – 2NT (spørger efter minoren),
+2♦ – 2♥ og 2♦ – 4♥ (pas eller korriger), 2♦ – 2NT (Plauken: 3♣ god multi, 3♦/3♥ dårlig multi som
+transfer) og 2♦ – 2NT – 3♣ – 3♦ (transfer: 3♠ = hjerter, 3♥ = spar).
+Svarer: på 2♣ præference eller 2♦ · på 2♦ 2♥ (pas eller korriger), 2♠ (udgangsopfordring, hvis makker
+har hjerter), 2NT (Plauken), 3♥/3♠ (egen major) og 4♥ (spærrende) · på 2♥/2♠ pas eller 2NT ·
+på 2NT præference · på D (mod svag sans) strafpas, scramble eller spring.
+
+Grænser, som systemkortet ikke angiver, står som konstanter herunder. Hænder, kortet ikke beskriver
+(fx 6+ major med 11–16 hp, 5-4-4-0 med begge majorer, stærke svarere efter 2♣ og 2♥/2♠), er ikke med.
 """
 import random
 
-from .core import (SUITS, SUIT_SYM, SUIT_NAME, deal_suit_lengths, fill_hand, fmt,
-                   lengths_of, longer, deal_random, template, rnd, tpl, either,
-                   two_suiter, export)
+from .core import (SUITS, SUIT_SYM, SUIT_NAME, deal_suit_lengths, fill_hand, lengths_of,
+                   rnd, tpl, either, build_pool)
 
-def gen_5_4_majors(hp_range=(10,16), sp_range=(0,37), shape_tries=20):
-    """Multi 2♣: begge majorer, 5-4 (den ene vej eller den anden).
-    Minorerne er højst 3 lange — 5-4-4-0 hører under marmic."""
-    for _ in range(shape_tries):
-        order = random.choice([('S','H'), ('H','S')])
-        long_s, short_s = order
-        fixed = {long_s: (5,5), short_s: (4,4), 'D': (0,3), 'C': (0,3)}
-        # split the remaining 4 cards across the minors: 3-1, 2-2 or 1-3
-        lengths = None
-        for _ in range(50):
-            lengths = deal_suit_lengths(fixed)
-            if lengths: break
-        if not lengths: continue
-        r = fill_hand(lengths, hp_range, sp_range)
-        if r: return r
+# --- Grænser, som systemkortet ikke giver tal for – ret dem her ------------------
+DOUBLE_HP = (15, 18)       # D: "15–17 hp eller lidt stærkere", jævn
+MULTI_HP = (6, 10)         # 2♦: "ca. 6–10 hp"
+MULTI_MAX = 8              # Plauken: 3♣ = god multi 8–10, 3♦/3♥ = dårlig multi 6–7
+OVERCALL_HP = (10, 16)     # 2♣, 2♥/2♠ og 2NT
+PREEMPT_MINOR_HP = (6, 11) # 3♣/3♦: naturligt og spærrende, 6+ farve
+ADV_2KL_MAX = 11           # svarer på 2♣: præference eller 2♦; stærkere hænder beskriver kortet ikke
+ADV_2M_MAX = 12            # svarer på 2♥/2♠: pas eller 2NT
+ADV_GAME = 14              # svarer på 2♦: udgangsinteresse
+ADV_4HJ_MAX = 9            # svarer på 2♦: 4♥ spærrende med fit i begge majorer
+ADV_2NT_MAX = 10           # svarer på 2NT: præference
+SCRAMBLE_MAX = 7           # svarer på D: 0–7 hp scrambler
+STRAF_MIN = 8              # svarer på D: strafpas med 8+ hp
+JUMP_HP = (9, 11)          # svarer på D: spring i farve med 5+ farve
+
+BALANCED = {(4, 3, 3, 3), (4, 4, 3, 2), (5, 3, 3, 2)}
+
+def shape(L):
+    return tuple(sorted(L.values(), reverse=True))
+
+def top_honours(cards):
+    return sum(1 for r in cards if r >= 12)
+
+def minor_of(L):
+    """Den entydige 4–5-korts minor, eller None."""
+    m = [x for x in ('D', 'C') if L[x] >= 4]
+    return m[0] if len(m) == 1 else None
+
+# --- Generatorer -------------------------------------------------------------------
+
+def gen_5_4_majors(hp_range=OVERCALL_HP):
+    """2♣: begge majorer 5-4 (den ene eller den anden vej), minorerne højst 3."""
+    for _ in range(20):
+        long_s, short_s = random.choice([('S', 'H'), ('H', 'S')])
+        lengths = deal_suit_lengths({long_s: (5, 5), short_s: (4, 4), 'D': (0, 3), 'C': (0, 3)})
+        if lengths:
+            r = fill_hand(lengths, hp_range, (0, 40))
+            if r:
+                return r
     return None
 
-def gen_marmic_majors(hp_range=(10,16), sp_range=(0,37), shape_tries=20):
-    """Multi 2♣: marmic med begge majorer — 4-4-4-1 eller 5-4-4-0,
-    hvor den korte/udeladte rolle går til én af minorerne."""
-    for _ in range(shape_tries):
-        pattern = random.choice(['4441','5440'])
-        short_minor = random.choice(['D','C'])
-        long_minor = 'C' if short_minor == 'D' else 'D'
-        if pattern == '4441':
-            lengths = {'S':4, 'H':4, long_minor:4, short_minor:1}
-        else:
-            five_suit = random.choice(['S','H',long_minor])
-            lengths = {'S':4, 'H':4, long_minor:4, short_minor:0}
-            lengths[five_suit] = 5
-        r = fill_hand(lengths, hp_range, sp_range)
-        if r: return r
+def gen_multi(hp_range=MULTI_HP, major=None):
+    """2♦: 6–7 kort i en major, ingen anden 4+ farve i majorerne."""
+    for _ in range(20):
+        M = major or random.choice(['S', 'H'])
+        fixed = {x: (0, 3) for x in SUITS}
+        fixed[M] = (6, 7)
+        lengths = deal_suit_lengths(fixed)
+        if lengths:
+            r = fill_hand(lengths, hp_range, (0, 40))
+            if r:
+                return r
     return None
 
-def gen_double_relay_hand(hp_range=(0,9), sp_range=(0,12)):
-    """Avancer efter makkers dobling, 2♣-relæ: ingen 5-farve, svag hånd."""
-    for _ in range(200):
-        lengths = deal_suit_lengths({'S':(0,4),'H':(0,4),'D':(0,4),'C':(0,4)})
-        if lengths and max(lengths.values()) <= 4:
-            r = fill_hand(lengths, hp_range, sp_range, max_tries=200)
-            if r: return r
-    return None
+def multi_major(L):
+    return 'S' if L['S'] >= 6 else 'H'
 
-def gen_one_suited_major(hp_range=(10,16), sp_range=(0,37), shape_tries=20):
-    """Multi 2♦: énfarvet major — 6-7 kort i majoren, ingen anden 4-farve."""
-    for _ in range(shape_tries):
-        major = random.choice(['S','H'])
-        fixed = {x: (0,3) for x in SUITS}
-        fixed[major] = (6,7)
-        lengths = None
-        for _ in range(50):
-            lengths = deal_suit_lengths(fixed)
-            if lengths: break
-        if not lengths: continue
-        r = fill_hand(lengths, hp_range, sp_range)
-        if r: return r
-    return None
-
-def gen_hearts_minor(hp_range=(10,16), sp_range=(0,37), shape_tries=20):
-    """Multi 2♥: 5 hjerter + 4-korts minor."""
-    return gen_major_minor('H', hp_range, sp_range, shape_tries)
-
-def gen_spades_minor(hp_range=(10,16), sp_range=(0,37), shape_tries=20):
-    """Multi 2♠: 5 spar + 4-korts minor."""
-    return gen_major_minor('S', hp_range, sp_range, shape_tries)
-
-def gen_major_minor(major, hp_range, sp_range, shape_tries):
-    for _ in range(shape_tries):
-        minor = random.choice(['D','C'])
-        fixed = {'S': (0,3), 'H': (0,3), 'D': (0,3), 'C': (0,3)}
-        fixed[major] = (5,5)
-        fixed[minor] = (4,4)
-        lengths = None
-        for _ in range(50):
-            lengths = deal_suit_lengths(fixed)
-            if lengths: break
-        if not lengths: continue
-        r = fill_hand(lengths, hp_range, sp_range)
-        if r: return r
-    return None
-
-# --- Facit: genmelding efter makkers 2NT-spørgsmål ------------------------
-
-MIN_RANGE, MAX_RANGE = (10, 13), (14, 16)
-
-def strength(hp):
-    if hp >= MAX_RANGE[0]:
-        return f"{hp} hp er maximum (14–16)"
-    return f"{hp} hp er minimum (10–13)"
-
-def answer_after_2kl(hand, hp):
-    """2kl – 2nt: 3kl min 5-4/4-5, 3ru min 4-4, 3hj max 4-5, 3sp max 5-4,
-    3nt max lige længde, 4mi renonce."""
-    L = lengths_of(hand)
-    voids = [m for m in ('D', 'C') if L[m] == 0]
-    if voids:
-        m = voids[0]
-        return f"4{SUIT_SYM[m]}", (f"Du har renonce i {SUIT_NAME[m]}. Efter 2♣ – 2NT viser "
-                                  f"4{SUIT_SYM[m]} renonce i farven.")
-    maximum = hp >= MAX_RANGE[0]
-    s, h = L['S'], L['H']
-    if s == h:
-        if maximum:
-            return "3NT", f"{strength(hp)}, og majorerne er lige lange ({s}-{h}). 3NT viser maximum med lige længde."
-        return "3♦", f"{strength(hp)}, og majorerne er lige lange ({s}-{h}). 3♦ viser minimum med 4-4."
-    if not maximum:
-        return "3♣", (f"{strength(hp)} med {s} spar og {h} hjerter. 3♣ viser minimum med 5-4 eller 4-5 "
-                      f"— makker kan derefter søge 5-farven med 3♦.")
-    if s > h:
-        return "3♠", f"{strength(hp)} med 5 spar og 4 hjerter. 3♠ viser maximum med 5-4."
-    return "3♥", f"{strength(hp)} med 4 spar og 5 hjerter. 3♥ viser maximum med 4-5."
-
-def answer_after_2ru(hand, hp):
-    """2ru – 2nt: 3kl min hjerter, 3ru min spar, 3hj max hjerter, 3sp max spar."""
-    L = lengths_of(hand)
-    major = 'S' if L['S'] >= 6 else 'H'
-    maximum = hp >= MAX_RANGE[0]
-    call = {('H', False): '3♣', ('S', False): '3♦', ('H', True): '3♥', ('S', True): '3♠'}[(major, maximum)]
-    return call, (f"{strength(hp)}, og din farve er {SUIT_NAME[major]}. Efter 2♦ – 2NT: 3♣ = min med hjerter, "
-                  f"3♦ = min med spar, 3♥ = max med hjerter, 3♠ = max med spar.")
-
-def answer_after_2hj(hand, hp):
-    """2hj – 2nt: 3kl min klør, 3ru min ruder, 3hj max klør, 3sp max ruder."""
-    return answer_major_minor(hand, hp, "2♥")
-
-def answer_after_2sp(hand, hp):
-    """2sp – 2nt: samme skema som efter 2hj."""
-    return answer_major_minor(hand, hp, "2♠")
-
-def answer_major_minor(hand, hp, overcall):
-    L = lengths_of(hand)
-    minor = 'C' if L['C'] == 4 else 'D'
-    maximum = hp >= MAX_RANGE[0]
-    call = {('C', False): '3♣', ('D', False): '3♦', ('C', True): '3♥', ('D', True): '3♠'}[(minor, maximum)]
-    return call, (f"{strength(hp)}, og din sidefarve er {SUIT_NAME[minor]}. Efter {overcall} – 2NT: 3♣ = min med klør, "
-                  f"3♦ = min med ruder, 3♥ = max med klør, 3♠ = max med ruder.")
-
-# --- Facit: indmelding over 1NT og svar på makkers indmelding ---------------
-# Grænser som dokumentet ikke giver tal for — ret dem her.
-
-DOUBLE_MIN = 15        # D: "mindst samme styrke som sansåbner"; 15–16 dobler kun uden fordelingsmelding
-PREEMPT_HP = (6, 9)    # 3M spær: 7+ major, under indmeldingsstyrke
-GAME_MAJOR_HP = 13     # 4M: 7+ major og 13–16 hp; 7+ major med 10–12 melder 2♦
-ADV_STRONG = 11        # svarer: 11+ hp = udgangsinteresse (2NT spørger, 3mi krav osv.)
-ADV_3NT = {"2kl": 13, "2ru": 14}   # svarer: 3NT for at spille uden majorfit
-ADV_INVITE = 8         # svarer efter 2♦: 2♠ = invit med hjerter, 8–10 hp
-ADV_PREEMPT_MAX = 7    # svarer efter 2♦: 3♥ = spær i makkers farve, 0–7 hp
-NILSLAND_MAX = 7       # svarer efter D (fjenden spiller Nilsland): svage hænder 0–7 hp
+# --- Indmelder: 1NT – ? ------------------------------------------------------------
 
 def classify_overcall(hand, hp):
-    """1NT – ? : multiforsvarets indmeldinger (10–16, fordeling kan kompensere)."""
     L = lengths_of(hand)
     S, H, D, C = L['S'], L['H'], L['D'], L['C']
-    major, minor = longer(L, 'S', 'H'), longer(L, 'D', 'C')
-    if hp > 16:
-        return "X", f"{hp} hp er over indmeldingsstyrke (10–16). D viser mindst samme styrke som sansåbneren."
-    if PREEMPT_HP[0] <= hp <= PREEMPT_HP[1] and L[major] >= 7:
-        return f"3{SUIT_SYM[major]}", f"{L[major]} {SUIT_NAME[major]} og kun {hp} hp: 3{SUIT_SYM[major]} er spær."
-    if hp < 10:
-        return "Pas", f"{hp} hp er under indmeldingsstyrke (10–16), og hånden har ikke en spærrefarve."
-    if L[major] >= 7 and hp >= GAME_MAJOR_HP:
-        return f"4{SUIT_SYM[major]}", f"{L[major]} {SUIT_NAME[major]} og {hp} hp: 4{SUIT_SYM[major]} for at spille."
-    if L[minor] >= 7 and {14, 13, 12} <= set(hand[minor]):
-        return "3NT", f"Gående {SUIT_NAME[minor]}farve (E K D + {L[minor] - 3}): 3NT for at spille."
-    if S >= 4 and H >= 4 and (max(S, H) >= 5 or min(D, C) <= 1):
-        kind = "5-4 i majorerne" if max(S, H) >= 5 else "marmic med begge majorer"
-        return "2♣", f"{hp} hp og {kind}: 2♣ viser begge majorer, typisk 5-4 eller god marmic."
-    if L[major] >= 6:
-        return "2♦", f"{L[major]} {SUIT_NAME[major]} og {hp} hp: 2♦ viser en énfarvet major."
-    for M in ('S', 'H'):
-        if L[M] == 5 and L[minor] >= 4:
-            return f"2{SUIT_SYM[M]}", (f"5 {SUIT_NAME[M]} og {L[minor]} {SUIT_NAME[minor]}: 2{SUIT_SYM[M]} viser "
-                                       f"{SUIT_NAME[M]} + minor 5-4.")
-    if D >= 4 and C >= 4 and max(D, C) >= 5:
-        return "2NT", f"{D} ruder og {C} klør: 2NT viser begge minorer, 5/4+."
-    if L[minor] >= 6:
-        return f"3{SUIT_SYM[minor]}", f"{L[minor]} {SUIT_NAME[minor]} og {hp} hp: 3{SUIT_SYM[minor]} er naturligt."
-    if hp >= DOUBLE_MIN:
-        return "X", f"{hp} hp uden en fordeling, der passer til en indmelding: D viser mindst samme styrke som sansåbneren."
-    return "Pas", f"{hp} hp, men ingen fordeling, der passer til en indmelding — og for svag til D."
+    if shape(L) in BALANCED and DOUBLE_HP[0] <= hp <= DOUBLE_HP[1]:
+        return "X", f"{hp} hp og jævn hånd: D er forslag til straf – mindst samme styrke som sansåbneren."
+    if hp > OVERCALL_HP[1]:
+        return None
+    major6 = [M for M in ('S', 'H') if L[M] >= 6]
+    if major6 and max(S, H) <= 7 and min(S, H) <= 3:
+        if MULTI_HP[0] <= hp <= MULTI_HP[1]:
+            M = major6[0]
+            return "2♦", f"{L[M]} {SUIT_NAME[M]} og {hp} hp: 2♦ (multi) viser en 6-farve i en major, ca. 6–10 hp."
+        if hp > MULTI_HP[1]:
+            return None
+    minor6 = [m for m in ('D', 'C') if L[m] >= 6]
+    if minor6 and max(S, H) <= 3 and PREEMPT_MINOR_HP[0] <= hp <= PREEMPT_MINOR_HP[1]:
+        m = minor6[0]
+        return f"3{SUIT_SYM[m]}", f"{L[m]} {SUIT_NAME[m]} og {hp} hp: 3{SUIT_SYM[m]} er naturligt og spærrende."
+    if hp >= OVERCALL_HP[0]:
+        if sorted((S, H)) == [4, 5]:
+            if max(D, C) >= 4:
+                return None   # 5-4-4-0 med begge majorer beskriver kortet ikke
+            return "2♣", f"{hp} hp med {S} spar og {H} hjerter: 2♣ viser begge majorer, 5-4."
+        for M, O in (('H', 'S'), ('S', 'H')):
+            m = minor_of(L)
+            if L[M] == 5 and L[O] <= 3 and m:
+                return f"2{SUIT_SYM[M]}", (f"5 {SUIT_NAME[M]} og {L[m]} {SUIT_NAME[m]}: 2{SUIT_SYM[M]} viser femfarven "
+                                           f"og 4–5 kort i en ukendt minor.")
+        if D >= 4 and C >= 4 and max(D, C) >= 5 and max(S, H) <= 3:
+            return "2NT", f"{D} ruder og {C} klør: 2NT viser begge minorer."
+        if minor6 or major6:
+            return None
+    return "Pas", f"{hp} hp og ingen fordeling, der passer til en indmelding – og ikke en stærk jævn hånd til D."
+
+# --- Indmelders næste melding ------------------------------------------------------
+
+def rebid_2kl_2ru(hand, hp):
+    """1NT – 2♣ – pas – 2♦ – pas – ? : makker spørger efter femfarven."""
+    L = lengths_of(hand)
+    M = 'S' if L['S'] == 5 else 'H'
+    return f"2{SUIT_SYM[M]}", f"2♦ spørger efter femfarven: du har 5 {SUIT_NAME[M]} og melder 2{SUIT_SYM[M]}."
+
+def rebid_2m_2nt(hand, hp):
+    """1NT – 2♥/2♠ – pas – 2NT – pas – ? : makker spørger efter minoren."""
+    L = lengths_of(hand)
+    m = minor_of(L)
+    return f"3{SUIT_SYM[m]}", f"2NT spørger efter minorfarven: du har {L[m]} {SUIT_NAME[m]} og melder 3{SUIT_SYM[m]}."
+
+def rebid_2ru_2hj(hand, hp):
+    """1NT – 2♦ – pas – 2♥ – pas – ? : pas eller korriger."""
+    M = multi_major(lengths_of(hand))
+    if M == 'H':
+        return "Pas", "2♥ er pas eller korriger. Din farve er hjerter, så du passer."
+    return "2♠", "2♥ er pas eller korriger. Din farve er spar, så du retter til 2♠."
+
+def rebid_2ru_4hj(hand, hp):
+    """1NT – 2♦ – pas – 4♥ – pas – ? : pas eller korriger, spærrende."""
+    M = multi_major(lengths_of(hand))
+    if M == 'H':
+        return "Pas", "4♥ er pas eller korriger (spærrende). Din farve er hjerter, så du passer."
+    return "4♠", "4♥ er pas eller korriger (spærrende). Din farve er spar, så du retter til 4♠."
+
+def rebid_plauken(hand, hp):
+    """1NT – 2♦ – pas – 2NT – pas – ? : Plauken."""
+    M = multi_major(lengths_of(hand))
+    if hp >= MULTI_MAX:
+        return "3♣", f"{hp} hp er god multi (8–10): 3♣. Makker kan spørge efter farven med 3♦."
+    call = "3♦" if M == 'H' else "3♥"
+    return call, (f"{hp} hp er dårlig multi (6–7): {call} er transfer til {SUIT_NAME[M]} – "
+                  f"3♦ viser hjerter, 3♥ viser spar.")
+
+def rebid_plauken_relay(hand, hp):
+    """1NT – 2♦ – pas – 2NT – pas – 3♣ – pas – 3♦ – pas – ? : transfer."""
+    M = multi_major(lengths_of(hand))
+    call = "3♠" if M == 'H' else "3♥"
+    return call, f"3♦ beder om farven. Svaret er transfer: 3♠ = hjerter, 3♥ = spar. Din farve er {SUIT_NAME[M]}: {call}."
+
+# --- Svarer --------------------------------------------------------------------------
 
 def classify_after_2kl(hand, hp):
-    """1NT – 2♣ – pas – ? : makker har begge majorer."""
+    """1NT – 2♣ – pas – ? : begge majorer 5-4."""
+    if hp > ADV_2KL_MAX:
+        return None
     L = lengths_of(hand)
     S, H = L['S'], L['H']
-    major, minor = longer(L, 'S', 'H'), longer(L, 'D', 'C')
-    if hp >= ADV_STRONG:
-        if max(S, H) <= 3 and L[minor] >= 5:
-            return f"3{SUIT_SYM[minor]}", f"{hp} hp og {L[minor]} {SUIT_NAME[minor]} uden majorfit: 3{SUIT_SYM[minor]} er naturligt, 5+ farve og krav."
-        if max(S, H) <= 3 and hp >= ADV_3NT["2kl"]:
-            return "3NT", f"{hp} hp uden majorfit: 3NT for at spille."
-        return "2NT", f"{hp} hp giver udgangsinteresse: 2NT spørger om makkers styrke og fordeling."
-    if L[major] >= 5:
-        return f"3{SUIT_SYM[major]}", f"Svag hånd med {L[major]} {SUIT_NAME[major]} — mindst 9 kort sammen: 3{SUIT_SYM[major]} er spær."
     if S == H:
-        return "2♦", f"Svag hånd med lige mange spar og hjerter ({S}-{H}): 2♦ beder makker vælge farve."
-    return f"2{SUIT_SYM[major]}", f"Svag hånd med flest {SUIT_NAME[major]} ({S} spar, {H} hjerter): 2{SUIT_SYM[major]} for at spille."
+        return "2♦", f"Lige mange spar og hjerter ({S}-{H}): 2♦ spørger efter makkers femfarve, så I lander i 5-{S}-fittet."
+    M = 'S' if S > H else 'H'
+    return f"2{SUIT_SYM[M]}", (f"Flest {SUIT_NAME[M]} ({S} spar, {H} hjerter): 2{SUIT_SYM[M]} er præference til den "
+                               f"bedste major – det sædvanlige svar.")
 
 def classify_after_2ru(hand, hp):
-    """1NT – 2♦ – pas – ? : makker har en énfarvet major."""
+    """1NT – 2♦ – pas – ? : multi, 6+ i en ukendt major, ca. 6–10 hp."""
     L = lengths_of(hand)
     S, H = L['S'], L['H']
-    major, minor = longer(L, 'S', 'H'), longer(L, 'D', 'C')
-    if hp >= ADV_STRONG:
-        if L[major] >= 6:
-            return f"4{SUIT_SYM[major]}", f"{hp} hp og {L[major]} {SUIT_NAME[major]}: 4{SUIT_SYM[major]} for at spille i egen farve."
-        if L[minor] >= 5:
-            return f"3{SUIT_SYM[minor]}", f"{hp} hp og {L[minor]} {SUIT_NAME[minor]}: 3{SUIT_SYM[minor]} er naturligt, 5+ farve og krav."
-        if hp >= ADV_3NT["2ru"]:
-            return "3NT", f"{hp} hp og ingen lang farve: 3NT for at spille."
-        return "2NT", f"{hp} hp giver udgangsinteresse: 2NT spørger."
-    if hp <= ADV_PREEMPT_MAX and S >= 3 and H >= 3 and max(S, H) >= 4:
-        return "3♥", f"Svag hånd med fit i begge majorer ({S} spar, {H} hjerter): 3♥ er spær i makkers farve."
-    if hp >= ADV_INVITE and H >= 3 and S >= 2:
-        return "2♠", f"{hp} hp med {H} hjerter: 2♠ er invit med hjerter — makker passer, hvis farven er spar."
-    return "2♥", (f"Svag hånd ({hp} hp): 2♥ søger makkers farve for at spille — makker passer med hjerter "
-                   f"og retter til 2♠ med spar.")
+    if hp >= ADV_GAME:
+        for M, O in (('H', 'S'), ('S', 'H')):
+            if L[M] >= 6 and top_honours(hand[M]) >= 2 and L[O] <= 2:
+                sym = SUIT_SYM[M]
+                return f"3{sym}", (f"{hp} hp og egen {SUIT_NAME[M]}farve ({L[M]} kort): 3{sym} viser styrke i farven, ingen "
+                                   f"interesse for den anden major og udgangsinteresse. Makker støtter med xxx eller Hx.")
+        if S >= 3 and H >= 3:
+            return "2NT", f"{hp} hp og plads i begge majorer: 2NT (Plauken) er stærkt relæ – udgangsinteresse, uanset hvilken major makker har."
+        if H >= 3:
+            return "2♠", (f"{hp} hp med {H} hjerter, men kun {S} spar: 2♠ er udgangsopfordring, hvis makker har hjerter. "
+                          f"Har makker spar, passer han.")
+        if S >= 3:
+            return "2♥", (f"{hp} hp med {S} spar, men kun {H} hjerter: 2♥ er pas eller korriger. Retter makker til 2♠, "
+                          f"kan du støtte til udgang.")
+        return None
+    if hp <= ADV_4HJ_MAX and S >= 3 and H >= 3 and max(S, H) >= 4:
+        return "4♥", f"Svag hånd med fit til begge majorer ({S} spar, {H} hjerter): 4♥ er pas eller korriger og spærrende."
+    return "2♥", (f"Svag hånd ({hp} hp): 2♥ er pas eller korriger – makker passer med hjerter og retter til 2♠ "
+                  f"med spar. Alle svage hænder melder 2♥.")
 
-def classify_after_2hj(hand, hp):
-    """1NT – 2♥ – pas – ? : makker har hjerter + minor 5-4."""
-    L = lengths_of(hand)
-    S, H, D, C = L['S'], L['H'], L['D'], L['C']
-    if hp >= ADV_STRONG:
-        if S >= 5 and H <= 2:
-            return "2♠", f"{hp} hp og {S} spar uden hjertefit: 2♠ er naturligt og krav."
-        if D >= 5 and H <= 2:
-            return "3♦", f"{hp} hp og {D} ruder uden hjertefit: 3♦ er egen minorfarve og krav."
-        return "2NT", f"{hp} hp giver udgangsinteresse: 2NT spørger."
-    return weak_after_major_minor(L, hp, 'H')
-
-def classify_after_2sp(hand, hp):
-    """1NT – 2♠ – pas – ? : makker har spar + minor 5-4."""
-    L = lengths_of(hand)
-    S, H, D = L['S'], L['H'], L['D']
-    if hp >= ADV_STRONG:
-        if H >= 5 and S <= 2:
-            return "3♥", f"{hp} hp og {H} hjerter uden sparfit: 3♥ er naturligt og krav."
-        if D >= 5 and S <= 2:
-            return "3♦", f"{hp} hp og {D} ruder uden sparfit: 3♦ er egen minorfarve og krav."
-        return "2NT", f"{hp} hp giver udgangsinteresse: 2NT spørger."
-    return weak_after_major_minor(L, hp, 'S')
-
-def weak_after_major_minor(L, hp, M):
-    """Svag svarer over 2♥/2♠ (major + ukendt minor)."""
+def after_major_minor(M):
+    """1NT – 2♥/2♠ – pas – ? : 5 i majoren + 4–5 i en ukendt minor."""
     sym, name = SUIT_SYM[M], SUIT_NAME[M]
-    if L[M] >= 4:
-        return f"3{sym}", f"Svag hånd med {L[M]} {name}: 3{sym} er spær."
-    if L[M] <= 1 and L['D'] >= 3 and L['C'] >= 3:
-        return "3♣", (f"Svag hånd med kun {L[M]} {name}, men plads i begge minorer: 3♣ søger makkers minorfarve "
-                      f"— makker passer med klør og retter til 3♦ med ruder.")
-    return "Pas", f"Svag hånd ({hp} hp) med {L[M]} {name}: pas og spil 2{sym}."
+    def classify(hand, hp):
+        if hp > ADV_2M_MAX:
+            return None
+        L = lengths_of(hand)
+        if L[M] >= 2:
+            return "Pas", f"{L[M]} {name}: pas er det sædvanlige svar – I spiller 2{sym}."
+        if L['D'] >= 3 and L['C'] >= 3:
+            return "2NT", (f"Kun {L[M]} {name}, men {L['D']} ruder og {L['C']} klør: 2NT spørger efter makkers minor, "
+                           f"så I lander i et sikkert fit.")
+        return None
+    return classify
 
 def classify_after_2nt(hand, hp):
-    """1NT – 2NT – pas – ? : makker har begge minorer, 5/4+."""
+    """1NT – 2NT – pas – ? : begge minorer. Kortet beskriver ikke svarene – præference til den længste."""
+    if hp > ADV_2NT_MAX:
+        return None
     L = lengths_of(hand)
-    major = longer(L, 'S', 'H')
-    if hp >= ADV_STRONG:
-        if L[major] >= 5:
-            return f"3{SUIT_SYM[major]}", f"{hp} hp og {L[major]} {SUIT_NAME[major]}: 3{SUIT_SYM[major]} er naturligt og krav."
-        return None   # stærke hænder uden egen major beskriver dokumentet ikke
     if L['D'] > L['C']:
-        return "3♦", f"Svag hånd med flest ruder ({L['D']} ruder, {L['C']} klør): 3♦ til spil."
-    return "3♣", (f"Svag hånd med {L['C']} klør og {L['D']} ruder: 3♣ til spil — makker må rette til 3♦, "
-                  f"hvis ruderne er længst eller bedst.")
+        return "3♦", f"Flest ruder ({L['D']} ruder, {L['C']} klør): 3♦ – præference til den længste minor."
+    return "3♣", f"{L['C']} klør og {L['D']} ruder: 3♣ – præference til klør, når den er mindst lige så lang."
 
 def classify_after_double(hand, hp):
-    """1NT – D – pas – ? (fjenden spiller Nilsland): svage hænder."""
+    """1NT – D – pas – ? : modstanderne spiller svag sans (12–14)."""
     L = lengths_of(hand)
-    if hp > NILSLAND_MAX:
-        return None
-    long_suits = [s for s in SUITS if L[s] >= 4]
-    if len(long_suits) == 1 and L[long_suits[0]] >= 5:
-        s = long_suits[0]
-        return f"2{SUIT_SYM[s]}", f"Svag énfarvet hånd med {L[s]} {SUIT_NAME[s]}: 1NT – D – pas – 2{SUIT_SYM[s]}."
-    if len(long_suits) == 2:
-        a, b = long_suits
-        return "Pas", (f"Svag tofarvet hånd ({SUIT_NAME[a]} og {SUIT_NAME[b]}): pas nu, og efter RD – pas – pas "
-                       f"meldes 2 i den laveste farve.")
+    long5 = [s for s in SUITS if L[s] >= 5]
+    if JUMP_HP[0] <= hp <= JUMP_HP[1] and len(long5) > 1:
+        return None   # to 5-farver: kortet siger ikke, hvilken der springes i
+    if JUMP_HP[0] <= hp <= JUMP_HP[1] and long5:
+        s = long5[0]
+        return f"3{SUIT_SYM[s]}", (f"{hp} hp og {L[s]} {SUIT_NAME[s]}: spring til 3{SUIT_SYM[s]} er udgangsforslag i farven "
+                                   f"eller sans (mindst 5-farve, ca. 9–11 hp).")
+    if hp >= STRAF_MIN:
+        if long5 and hp > JUMP_HP[1]:
+            return None
+        return "Pas", f"{hp} hp: strafpas (8+). Over for makkers stærke jævne hånd står 1NT doblet sandsynligvis flere ned."
+    for s in ('C', 'D', 'H', 'S'):
+        if L[s] >= 4:
+            return f"2{SUIT_SYM[s]}", (f"{hp} hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2{SUIT_SYM[s]}). "
+                                       f"Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit.")
     return None
 
-# --- Situationer ------------------------------------------------------------
+# --- Situationer ---------------------------------------------------------------------
 
 BONUS = {
-    "2kl": {"q": "Hvad viser 2♣-indmeldingen?",
-            "correct": "Begge majorer, typisk 5-4 eller god marmic",
-            "options": ["Begge majorer, typisk 5-4 eller god marmic", "Énfarvet major", "Begge minorer, 5/4+"],
-            "why": "2♣ viser begge majorer, typisk 5-4 eller god marmic — 10–16 hp, fordeling kan kompensere."},
-    "2ru": {"q": "Hvad viser 2♦-indmeldingen?",
-            "correct": "Énfarvet major",
-            "options": ["Énfarvet major", "Naturlig ruderfarve", "Begge majorer, typisk 5-4"],
-            "why": "2♦ viser en énfarvet major — 10–16 hp, fordeling kan kompensere."},
-    "2hj": {"q": "Hvad viser 2♥-indmeldingen?",
-            "correct": "Hjerter + minor, 5-4",
-            "options": ["Hjerter + minor, 5-4", "Énfarvet hjerter", "Begge majorer, typisk 5-4"],
-            "why": "2♥ viser hjerter + en minor, 5-4 — 10–16 hp, fordeling kan kompensere."},
-    "2sp": {"q": "Hvad viser 2♠-indmeldingen?",
-            "correct": "Spar + minor, 5-4",
-            "options": ["Spar + minor, 5-4", "Énfarvet spar", "Begge majorer, typisk 5-4"],
-            "why": "2♠ viser spar + en minor, 5-4 — 10–16 hp, fordeling kan kompensere."},
-    "2nt": {"q": "Hvad viser 2NT-indmeldingen?",
-            "correct": "Begge minorer, mindst 5/4",
-            "options": ["Begge minorer, mindst 5/4", "Jævn hånd, 15–17 hp", "Begge majorer, typisk 5-4"],
-            "why": "2NT viser begge minorer, mindst 5/4 — 10–16 hp, fordeling kan kompensere."},
-    "indmelding": {"q": "Hvilken styrke viser multiforsvarets indmeldinger (andre end D)?",
-            "correct": "10–16 hp, fordeling kan kompensere",
-            "options": ["10–16 hp, fordeling kan kompensere", "8–12 hp", "Mindst samme styrke som sansåbner"],
-            "why": "Alle meldinger i multiforsvaret viser 10–16 hp (fordeling kan kompensere) — undtagen D, som viser mindst samme styrke som sansåbneren."},
-    "dobling": {"q": "Hvad sker der, når makker dobler 1NT?",
-            "correct": "Der er etableret semikrav, og senere doblinger er straf",
-            "options": ["Der er etableret semikrav, og senere doblinger er straf", "Du skal altid melde en farve", "Doblingen er til udspil"],
-            "why": "Når makker dobler, er der etableret semikrav. I det videre meldeforløb benyttes strafdoblinger."},
+    "2kl": {"q": "Hvad viser makkers 2♣?", "correct": "Begge majorer 5–4, 10–16 hp",
+            "options": ["Begge majorer 5–4, 10–16 hp", "6+ i en major, ca. 6–10 hp", "Major + minor 5–4, 10–16 hp"],
+            "why": "2♣ viser begge majorer, 5–4. Svarer ved ikke, hvilken der er femfarven – derfor findes 2♦ som spørgsmål."},
+    "2ru": {"q": "Hvad viser 2♦ i Multiforsvar?", "correct": "6+ i en major, ca. 6–10 hp",
+            "options": ["6+ i en major, ca. 6–10 hp", "Begge majorer 5–4, 10–16 hp", "Naturlig ruderfarve"],
+            "why": "2♦ er multi: en 6-farve i en ukendt major og svagere end de øvrige indmeldinger, ca. 6–10 hp."},
+    "plauken": {"q": "Hvad er 2NT efter makkers 2♦ (Plauken)?", "correct": "Stærkt relæ med udgangsinteresse",
+                "options": ["Stærkt relæ med udgangsinteresse", "Naturligt, 11–12 hp", "Spørger efter minoren"],
+                "why": "2NT er stærkt relæ: udgangsinteresse, uanset hvilken major multi-melderen har. 3♣ viser god multi, 3♦/3♥ dårlig multi som transfer."},
+    "2hj": {"q": "Hvad viser 2♥ i Multiforsvar?", "correct": "5 hjerter + 4–5 i en ukendt minor, 10–16 hp",
+            "options": ["5 hjerter + 4–5 i en ukendt minor, 10–16 hp", "6+ hjerter, svag hånd", "Begge majorer 5–4"],
+            "why": "2♥/2♠ viser femfarven i den meldte major og en 4–5-farve i en minor, som 2NT kan spørge efter."},
+    "2sp": {"q": "Hvad viser 2♠ i Multiforsvar?", "correct": "5 spar + 4–5 i en ukendt minor, 10–16 hp",
+            "options": ["5 spar + 4–5 i en ukendt minor, 10–16 hp", "6+ spar, svag hånd", "Begge majorer 5–4"],
+            "why": "2♥/2♠ viser femfarven i den meldte major og en 4–5-farve i en minor, som 2NT kan spørge efter."},
+    "2nt": {"q": "Hvad viser 2NT i Multiforsvar?", "correct": "Begge minorer, 10–16 hp",
+            "options": ["Begge minorer, 10–16 hp", "Jævn hånd, 15–17 hp", "Begge majorer 5–4"],
+            "why": "2NT er usædvanlig 2NT: begge minorer, 10–16 hp."},
+    "indmelding": {"q": "Hvad viser doblingen af modstandernes 1NT?", "correct": "15–17+ hp jævn – forslag til straf",
+                   "options": ["15–17+ hp jævn – forslag til straf", "Mindst 15 hp, fri fordeling – semikrav", "Begge majorer, 10–16 hp"],
+                   "why": "Doblingen er forslag til straf med en jævn hånd af mindst samme styrke som åbningen. 2♣, 2♥/2♠ og 2NT viser 10–16 hp, 2♦ ca. 6–10."},
+    "dobling": {"q": "Hvad viser makkers dobling af 1NT?", "correct": "15–17+ hp jævn – forslag til straf",
+                "options": ["15–17+ hp jævn – forslag til straf", "Mindst 15 hp, fri fordeling – semikrav", "Begge majorer, 10–16 hp"],
+                "why": "Doblingen er forslag til straf. Derfor er strafpas med 8+ hp oftest det rigtige svar; med 0–7 hp scrambles der."},
 }
 
 PAS = ["Modstander", "Pas"]
+SVAG_SANS = "1NT = 12–14 hp (svag sans)"
 SITUATIONS = {
     "indmelding": {"rolle": "Indmelder", "auction": [["Modstander", "1NT"]], "allowX": True,
-                   "calls": ["X", "Pas", "2♣", "2♦", "2♥", "2♠", "2NT", "3♣", "3♦", "3♥", "3♠", "3NT", "4♥", "4♠"],
-                   "bonus": BONUS["indmelding"]},
-    "gen_2kl": {"rolle": "Indmelder", "auction": [["Modstander", "1NT"], ["Dig", "2♣"], PAS, ["Makker", "2NT"], PAS],
-                "calls": ["3♣", "3♦", "3♥", "3♠", "3NT", "4♣", "4♦"], "bonus": BONUS["2kl"]},
-    "gen_2ru": {"rolle": "Indmelder", "auction": [["Modstander", "1NT"], ["Dig", "2♦"], PAS, ["Makker", "2NT"], PAS],
-                "calls": ["3♣", "3♦", "3♥", "3♠"], "bonus": BONUS["2ru"]},
+                   "calls": ["X", "Pas", "2♣", "2♦", "2♥", "2♠", "2NT", "3♣", "3♦"], "bonus": BONUS["indmelding"]},
+    "gen_2kl": {"rolle": "Indmelder", "auction": [["Modstander", "1NT"], ["Dig", "2♣"], PAS, ["Makker", "2♦"], PAS],
+                "calls": ["2♥", "2♠", "2NT", "3♣"], "bonus": BONUS["2kl"]},
     "gen_2hj": {"rolle": "Indmelder", "auction": [["Modstander", "1NT"], ["Dig", "2♥"], PAS, ["Makker", "2NT"], PAS],
-                "calls": ["3♣", "3♦", "3♥", "3♠"], "bonus": BONUS["2hj"]},
+                "calls": ["3♣", "3♦", "3♥", "3NT"], "bonus": BONUS["2hj"]},
     "gen_2sp": {"rolle": "Indmelder", "auction": [["Modstander", "1NT"], ["Dig", "2♠"], PAS, ["Makker", "2NT"], PAS],
-                "calls": ["3♣", "3♦", "3♥", "3♠"], "bonus": BONUS["2sp"]},
+                "calls": ["3♣", "3♦", "3♠", "3NT"], "bonus": BONUS["2sp"]},
+    "gen_2ru_2hj": {"rolle": "Indmelder", "auction": [["Modstander", "1NT"], ["Dig", "2♦"], PAS, ["Makker", "2♥"], PAS],
+                    "calls": ["Pas", "2♠", "2NT", "3♥"], "bonus": BONUS["2ru"]},
+    "gen_2ru_4hj": {"rolle": "Indmelder", "auction": [["Modstander", "1NT"], ["Dig", "2♦"], PAS, ["Makker", "4♥"], PAS],
+                    "calls": ["Pas", "4♠", "4NT", "5♥"], "bonus": BONUS["2ru"]},
+    "gen_plauken": {"rolle": "Indmelder", "auction": [["Modstander", "1NT"], ["Dig", "2♦"], PAS, ["Makker", "2NT"], PAS],
+                    "calls": ["3♣", "3♦", "3♥", "3♠", "3NT"], "bonus": BONUS["plauken"]},
+    "gen_plauken_relae": {"rolle": "Indmelder", "auction": [["Modstander", "1NT"], ["Dig", "2♦"], PAS, ["Makker", "2NT"], PAS,
+                                                            ["Dig", "3♣"], PAS, ["Makker", "3♦"], PAS],
+                          "calls": ["3♥", "3♠", "3NT", "4♥"], "bonus": BONUS["plauken"]},
     "svar_2kl": {"rolle": "Svarer", "auction": [["Modstander", "1NT"], ["Makker", "2♣"], PAS],
-                 "calls": ["2♦", "2♥", "2♠", "2NT", "3♣", "3♦", "3♥", "3♠", "3NT"], "bonus": BONUS["2kl"]},
+                 "calls": ["Pas", "2♦", "2♥", "2♠", "2NT", "3♥", "3♠"], "bonus": BONUS["2kl"]},
     "svar_2ru": {"rolle": "Svarer", "auction": [["Modstander", "1NT"], ["Makker", "2♦"], PAS],
-                 "calls": ["2♥", "2♠", "2NT", "3♣", "3♦", "3♥", "3NT", "4♥", "4♠"], "bonus": BONUS["2ru"]},
+                 "calls": ["Pas", "2♥", "2♠", "2NT", "3♥", "3♠", "3NT", "4♥"], "bonus": BONUS["2ru"]},
     "svar_2hj": {"rolle": "Svarer", "auction": [["Modstander", "1NT"], ["Makker", "2♥"], PAS],
-                 "calls": ["Pas", "2♠", "2NT", "3♣", "3♦", "3♥"], "bonus": BONUS["2hj"]},
+                 "calls": ["Pas", "2♠", "2NT", "3♣", "3♥"], "bonus": BONUS["2hj"]},
     "svar_2sp": {"rolle": "Svarer", "auction": [["Modstander", "1NT"], ["Makker", "2♠"], PAS],
-                 "calls": ["Pas", "2NT", "3♣", "3♦", "3♥", "3♠"], "bonus": BONUS["2sp"]},
+                 "calls": ["Pas", "2NT", "3♣", "3♦", "3♠"], "bonus": BONUS["2sp"]},
     "svar_2nt": {"rolle": "Svarer", "auction": [["Modstander", "1NT"], ["Makker", "2NT"], PAS],
-                 "calls": ["3♣", "3♦", "3♥", "3♠"], "bonus": BONUS["2nt"]},
-    "svar_dobling": {"rolle": "Svarer", "auction": [["Modstander", "1NT"], ["Makker", "X"], PAS],
-                     "calls": ["Pas", "2♣", "2♦", "2♥", "2♠"], "bonus": BONUS["dobling"]},
+                 "calls": ["3♣", "3♦", "3♥", "3NT"], "bonus": BONUS["2nt"]},
+    "svar_dobling": {"rolle": "Svarer", "note": SVAG_SANS, "auction": [["Modstander", "1NT"], ["Makker", "X"], PAS],
+                     "calls": ["Pas", "2♣", "2♦", "2♥", "2♠", "3♣", "3♦", "3♥", "3♠", "2NT"], "bonus": BONUS["dobling"]},
 }
 
 CLASSIFIERS = {
     "indmelding": classify_overcall,
-    "gen_2kl": answer_after_2kl, "gen_2ru": answer_after_2ru, "gen_2hj": answer_after_2hj,
-    "gen_2sp": answer_after_2sp,
+    "gen_2kl": rebid_2kl_2ru, "gen_2hj": rebid_2m_2nt, "gen_2sp": rebid_2m_2nt,
+    "gen_2ru_2hj": rebid_2ru_2hj, "gen_2ru_4hj": rebid_2ru_4hj,
+    "gen_plauken": rebid_plauken, "gen_plauken_relae": rebid_plauken_relay,
     "svar_2kl": classify_after_2kl, "svar_2ru": classify_after_2ru,
-    "svar_2hj": classify_after_2hj, "svar_2sp": classify_after_2sp,
+    "svar_2hj": after_major_minor('H'), "svar_2sp": after_major_minor('S'),
     "svar_2nt": classify_after_2nt, "svar_dobling": classify_after_double,
 }
 
+def major_minor(M, hp=OVERCALL_HP):
+    return either(tpl(hp, **{M: (5, 5), 'D': (4, 5)}), tpl(hp, **{M: (5, 5), 'C': (4, 5)}))
+
 SAMPLERS = {
     "indmelding": {
-        "X": rnd((15, 19)), "Pas": rnd((4, 14)),
-        "2♣": either(gen_5_4_majors, gen_marmic_majors), "2♦": gen_one_suited_major,
-        "2♥": either(tpl((10, 16), H=(5, 5), D=(4, 5)), tpl((10, 16), H=(5, 5), C=(4, 5))),
-        "2♠": either(tpl((10, 16), S=(5, 5), D=(4, 5)), tpl((10, 16), S=(5, 5), C=(4, 5))),
-        "2NT": tpl((10, 16), D=(4, 6), C=(4, 6)),
-        "3♣": tpl((10, 16), C=(6, 7)), "3♦": tpl((10, 16), D=(6, 7)),
-        "3♥": tpl(PREEMPT_HP, H=(7, 8)), "3♠": tpl(PREEMPT_HP, S=(7, 8)),
-        "3NT": either(tpl((10, 16), C=(7, 8)), tpl((10, 16), D=(7, 8))),
-        "4♥": tpl((GAME_MAJOR_HP, 16), H=(7, 8)), "4♠": tpl((GAME_MAJOR_HP, 16), S=(7, 8)),
+        "X": either(tpl(DOUBLE_HP, S=(2, 4), H=(2, 4), D=(2, 4), C=(2, 4)),
+                    *[tpl(DOUBLE_HP, **{x: (5, 5) if x == s else (2, 3) for x in SUITS}) for s in SUITS]),
+        "Pas": rnd((3, 14)), "2♣": gen_5_4_majors, "2♦": gen_multi,
+        "2♥": major_minor('H'), "2♠": major_minor('S'),
+        "2NT": tpl(OVERCALL_HP, D=(4, 6), C=(4, 6)),
+        "3♣": tpl(PREEMPT_MINOR_HP, C=(6, 7)), "3♦": tpl(PREEMPT_MINOR_HP, D=(6, 7)),
     },
-    "svar_2kl": {
-        "2♦": rnd((0, 10)), "2♥": rnd((0, 10)), "2♠": rnd((0, 10)), "2NT": rnd((11, 16)),
-        "3♣": tpl((11, 16), C=(5, 6), D=(0, 4)), "3♦": tpl((11, 16), D=(5, 6), C=(0, 4)),
-        "3♥": tpl((0, 10), H=(5, 6), D=(0, 4), C=(0, 4)), "3♠": tpl((0, 10), S=(5, 6), D=(0, 4), C=(0, 4)),
-        "3NT": tpl((13, 17), S=(2, 3), H=(2, 3), D=(2, 4), C=(2, 4)),
-    },
-    "svar_2ru": {
-        "2♥": rnd((0, 10)), "2♠": rnd((ADV_INVITE, 10)), "2NT": rnd((11, 13)),
-        "3♣": tpl((11, 16), C=(5, 6), S=(0, 4), H=(0, 4), D=(0, 4)),
-        "3♦": tpl((11, 16), D=(5, 6), S=(0, 4), H=(0, 4), C=(0, 4)),
-        "3♥": tpl((0, ADV_PREEMPT_MAX), S=(3, 4), H=(3, 4), D=(0, 5), C=(0, 5)),
-        "3NT": tpl((14, 17), S=(2, 4), H=(2, 4), D=(2, 4), C=(2, 4)),
-        "4♥": tpl((11, 16), H=(6, 7)), "4♠": tpl((11, 16), S=(6, 7)),
-    },
-    "svar_2hj": {
-        "2♠": tpl((11, 16), S=(5, 6), H=(0, 2), D=(0, 4), C=(0, 4)), "2NT": rnd((11, 15)),
-        "3♣": tpl((0, 10), H=(0, 1), D=(3, 6), C=(3, 6), S=(0, 5)),
-        "3♦": tpl((11, 16), D=(5, 6), H=(0, 2), S=(0, 4), C=(0, 4)),
-        "3♥": tpl((0, 10), H=(4, 5), S=(0, 5), D=(0, 5), C=(0, 5)), "Pas": rnd((0, 10)),
-    },
-    "svar_2sp": {
-        "2NT": rnd((11, 15)),
-        "3♣": tpl((0, 10), S=(0, 1), D=(3, 6), C=(3, 6), H=(0, 5)),
-        "3♦": tpl((11, 16), D=(5, 6), S=(0, 2), H=(0, 4), C=(0, 4)),
-        "3♥": tpl((11, 16), H=(5, 6), S=(0, 2), D=(0, 4), C=(0, 4)),
-        "3♠": tpl((0, 10), S=(4, 5), H=(0, 5), D=(0, 5), C=(0, 5)), "Pas": rnd((0, 10)),
-    },
-    "svar_2nt": {
-        "3♣": rnd((0, 10)), "3♦": tpl((0, 10), D=(3, 6), C=(0, 3), S=(0, 5), H=(0, 5)),
-        "3♥": tpl((11, 16), H=(5, 6), S=(0, 4), D=(0, 4), C=(0, 4)),
-        "3♠": tpl((11, 16), S=(5, 6), H=(0, 4), D=(0, 4), C=(0, 4)),
-    },
+    "gen_2kl": {"2♥": lambda: gen_5_4_majors(), "2♠": lambda: gen_5_4_majors()},
+    "gen_2hj": {"3♣": tpl(OVERCALL_HP, H=(5, 5), C=(4, 5)), "3♦": tpl(OVERCALL_HP, H=(5, 5), D=(4, 5))},
+    "gen_2sp": {"3♣": tpl(OVERCALL_HP, S=(5, 5), C=(4, 5)), "3♦": tpl(OVERCALL_HP, S=(5, 5), D=(4, 5))},
+    "gen_2ru_2hj": {"Pas": lambda: gen_multi(major='H'), "2♠": lambda: gen_multi(major='S')},
+    "gen_2ru_4hj": {"Pas": lambda: gen_multi(major='H'), "4♠": lambda: gen_multi(major='S')},
+    "gen_plauken": {"3♣": lambda: gen_multi((MULTI_MAX, MULTI_HP[1])),
+                    "3♦": lambda: gen_multi((MULTI_HP[0], MULTI_MAX - 1), 'H'),
+                    "3♥": lambda: gen_multi((MULTI_HP[0], MULTI_MAX - 1), 'S')},
+    "gen_plauken_relae": {"3♠": lambda: gen_multi((MULTI_MAX, MULTI_HP[1]), 'H'),
+                          "3♥": lambda: gen_multi((MULTI_MAX, MULTI_HP[1]), 'S')},
+    "svar_2kl": {"2♦": tpl((0, ADV_2KL_MAX), S=(2, 4), H=(2, 4), D=(1, 5), C=(1, 5)),
+                 "2♥": rnd((0, ADV_2KL_MAX)), "2♠": rnd((0, ADV_2KL_MAX))},
+    "svar_2ru": {"2♥": either(rnd((0, 13)), tpl((ADV_GAME, 17), S=(3, 5), H=(0, 2), D=(1, 5), C=(1, 5))),
+                 "2♠": tpl((ADV_GAME, 17), H=(3, 5), S=(0, 2), D=(1, 5), C=(1, 5)),
+                 "2NT": tpl((ADV_GAME, 18), S=(3, 4), H=(3, 4), D=(2, 4), C=(2, 4)),
+                 "3♥": tpl((ADV_GAME + 1, 19), H=(6, 7), S=(0, 2), D=(1, 4), C=(1, 4)),
+                 "3♠": tpl((ADV_GAME + 1, 19), S=(6, 7), H=(0, 2), D=(1, 4), C=(1, 4)),
+                 "4♥": tpl((0, ADV_4HJ_MAX), S=(3, 4), H=(3, 4), D=(0, 5), C=(0, 5))},
+    "svar_2hj": {"Pas": rnd((0, ADV_2M_MAX)), "2NT": tpl((0, ADV_2M_MAX), H=(0, 1), D=(3, 6), C=(3, 6), S=(0, 5))},
+    "svar_2sp": {"Pas": rnd((0, ADV_2M_MAX)), "2NT": tpl((0, ADV_2M_MAX), S=(0, 1), D=(3, 6), C=(3, 6), H=(0, 5))},
+    "svar_2nt": {"3♣": rnd((0, ADV_2NT_MAX)), "3♦": tpl((0, ADV_2NT_MAX), D=(3, 6), C=(0, 3), S=(0, 5), H=(0, 5))},
     "svar_dobling": {
-        "2♣": tpl((0, NILSLAND_MAX), C=(5, 6)), "2♦": tpl((0, NILSLAND_MAX), D=(5, 6)),
-        "2♥": tpl((0, NILSLAND_MAX), H=(5, 6)), "2♠": tpl((0, NILSLAND_MAX), S=(5, 6)),
-        "Pas": two_suiter((0, NILSLAND_MAX)),
+        "Pas": rnd((STRAF_MIN, 14)),
+        "2♣": tpl((0, SCRAMBLE_MAX), C=(4, 6), D=(0, 4), H=(0, 4), S=(0, 4)),
+        "2♦": tpl((0, SCRAMBLE_MAX), D=(4, 6), C=(0, 3), H=(0, 4), S=(0, 4)),
+        "2♥": tpl((0, SCRAMBLE_MAX), H=(4, 6), C=(0, 3), D=(0, 3), S=(0, 4)),
+        "2♠": tpl((0, SCRAMBLE_MAX), S=(4, 6), C=(0, 3), D=(0, 3), H=(0, 3)),
+        **{f"3{SUIT_SYM[s]}": tpl(JUMP_HP, **{x: (5, 6) if x == s else (0, 4) for x in SUITS}) for s in SUITS},
     },
 }
 
-# Genmelding efter 2NT: situation, generator, antal (halvdelen minimum, halvdelen maximum)
-REBID_PLAN = [
-    ("gen_2kl", gen_5_4_majors, 8), ("gen_2kl", gen_marmic_majors, 6),
-    ("gen_2ru", gen_one_suited_major, 8), ("gen_2hj", gen_hearts_minor, 8),
-    ("gen_2sp", gen_spades_minor, 8),
-]
-# Hænder pr. melding i de øvrige situationer (indmelder 70 + 38 genmeldinger, svarer 112)
-PER_CALL = {"indmelding": 5, "svar_2kl": 3, "svar_2ru": 3, "svar_2hj": 3, "svar_2sp": 3,
-            "svar_2nt": 3, "svar_dobling": 2}
+PER_CALL = {"indmelding": 6, "gen_2kl": 5, "gen_2hj": 5, "gen_2sp": 5, "gen_2ru_2hj": 4, "gen_2ru_4hj": 4,
+            "gen_plauken": 4, "gen_plauken_relae": 4, "svar_2kl": 5, "svar_2ru": 4, "svar_2hj": 5,
+            "svar_2sp": 5, "svar_2nt": 4, "svar_dobling": 3}
 
 def export_pool(path):
-    hands, seen = [], set()
-
-    def add(situation, r, target=None):
-        if not r:
-            return False
-        hand, hp, sp = r
-        key = tuple(tuple(hand[s]) for s in SUITS)
-        if key in seen:
-            return False
-        res = CLASSIFIERS[situation](hand, hp)
-        if not res or (target and res[0] != target):
-            return False
-        seen.add(key)
-        hands.append({"situation": situation, "hand": {s: hand[s] for s in SUITS},
-                      "hp": hp, "sp": sp, "correct": res[0], "why": res[1]})
-        return True
-
-    for situation, n in PER_CALL.items():
-        for call, sampler in SAMPLERS[situation].items():
-            made = tries = 0
-            while made < n and tries < 20000:
-                tries += 1
-                made += add(situation, sampler(), call)
-            if made < n:
-                print(f"Advarsel: kun {made}/{n} hænder til {situation} {call}")
-
-    for situation, gen, count in REBID_PLAN:
-        for hp_range, n in ((MIN_RANGE, count // 2), (MAX_RANGE, count - count // 2)):
-            made = tries = 0
-            while made < n and tries < n * 30:
-                tries += 1
-                made += add(situation, gen(hp_range=hp_range))
-
-    return export(path, SITUATIONS, hands)
+    return build_pool(path, SITUATIONS, CLASSIFIERS, SAMPLERS, PER_CALL)

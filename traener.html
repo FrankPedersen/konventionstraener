@@ -39,6 +39,8 @@
   .auction .bc.them{ opacity:.7; }
   .auction .bc.ask{ opacity:.4; }
 
+  .sitnote{ font-family:var(--sans); font-size:.88rem; color:var(--muted); margin:-.35rem 0 .6rem; }
+  .sitnote:empty{ display:none; }
   .hand{ max-width:19rem; background:var(--card); border:1px solid var(--card-edge); border-radius:.5rem; box-shadow:var(--shadow);
          padding:.6rem .95rem; font-family:var(--sans); font-size:1.4rem; font-weight:700; line-height:1.45; }
   .hand .row{ display:flex; align-items:center; gap:.65rem; }
@@ -168,6 +170,7 @@
       <span class="rolechip" id="role"></span>
       <div class="auction" id="auction"></div>
       <div class="table-view" id="tableView" style="display:none"></div>
+      <p class="sitnote" id="sitnote"></p>
       <div class="hand" id="hand"></div>
       <div class="hintinfo" id="hintInfo"></div>
       <button class="next" id="nextBtn">Næste hånd →</button>
@@ -239,6 +242,7 @@ function buildQuestion(h, sit){
   const others = shuffle(sit.calls.filter(c => c !== h.correct)).slice(0, 3);
   return {
     role: sit.rolle || '',
+    note: sit.note || '',
     auction: sit.auction,
     lowest: Math.max(...sit.auction.map(([, call]) => callRank(call))) + 1,
     allowX: !!sit.allowX,
@@ -320,6 +324,7 @@ function render(){
   $('role').style.display = q.role ? '' : 'none';
   if (LAYOUT === 'bord'){ auctionEl.style.display = 'none'; $('tableView').style.display = ''; renderTable(q); }
   else renderAuction(q);
+  $('sitnote').textContent = q.note;
   handEl.innerHTML = q.hand.map(([s,c]) => `<div class="row"><span class="s ${suitClass(s)}">${s}</span><span>${c}</span></div>`).join('');
   $('hintInfo').className = 'hintinfo';
 
