@@ -97,6 +97,7 @@ page = """<!DOCTYPE html>
   </main>
 </div>
 <script>""" + JS + """</script>
+<script src="../assets/doc-export.js" defer></script>
 </body>
 </html>
 """
