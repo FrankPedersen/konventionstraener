@@ -3,23 +3,23 @@
 
   aab_*   – åbner efter 1♦ – 1♠ (uden 4 spar):
             1NT jævn 12–14 · 2NT jævn 18–19 · 2♦ 6-farve 12–15 · 3♦ god 6-farve 16–18 ·
-            2♣ 5-4 med klør 12–18 · 3♣ spring 19–21 (udgangskrav) · 2♥ 5-4 med hjerter 16–18 (rundekrav) ·
-            3♥ spring 19–21
+            2♣ 5-4 med klør 12–18 · 3♣ spring 19–21 (udgangskrav) · 2♥ 5-4 med hjerter 12–18 (naturlig,
+            ikke krav – foreløbig, bekræftes) · 3♥ spring 19–21 (udgangskrav)
   svar_*  – svarer efter 1♦ – 1♠ – 2NT (18–19): 3♣ checkback med 5 spar eller 4 hjerter · 3NT ellers
             (efter 1♣ – 1♥ – 2NT: 5 hjerter eller 4 spar)
   check_* – åbner svarer på 3♣: 3 i svarers major = 3 korts støtte · 3 i den anden major = 4-farve ·
             3♦ ingen af delene · 3NT som 3♦ med maksimum (19)
-Antagelser: »god 6-farve« = to af de tre øverste honnører; jævn = 4-3-3-3, 4-4-3-2 eller 5-3-3-2; 5-4 med
-hjerter og 12–15 (kan ikke vise hjerterne) og svarer med 6+ spar eller 13+ er ikke med.
+Antagelser: »god 6-farve« = to af de tre øverste honnører; jævn = 4-3-3-3, 4-4-3-2 eller 5-3-3-2; svarer
+med 6+ spar eller 13+ er ikke med. Revers (16+ rundekrav) er kun et forslag – se Bilag G – og trænes ikke her.
 """
 from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool
 
 PAS = ["Modstander", "Pas"]
 BONUS = {
     "aab": {"q": "Hvad er grænsen mellem ny farve og spring i ny farve?",
-            "correct": "Ny farve 16–18, spring 19+ (udgangskrav)",
-            "options": ["Ny farve 16–18, spring 19+ (udgangskrav)", "Ny farve 12–15, spring 16+", "Spring er altid spærrende"],
-            "why": "Med 16–18 og 5-4 meldes den nye farve uden spring; med 19+ springes. Kun springet er udgangskrav."},
+            "correct": "Ny farve 12–18 ikke krav, spring 19+ udgangskrav",
+            "options": ["Ny farve 12–18 ikke krav, spring 19+ udgangskrav", "Ny farve 12–15, spring 16+", "Spring er altid spærrende"],
+            "why": "Med 12–18 og 5-4 meldes den nye farve uden spring – naturlig og ikke krav (foreløbig – bekræftes); med 19+ springes. Kun springet er udgangskrav."},
     "check": {"q": "Hvad spørger 3♣ efter åbners 2NT-genmelding om?",
               "correct": "Åbners majorfordeling – krav til udgang",
               "options": ["Åbners majorfordeling – krav til udgang", "Naturlig klør", "Esser"],
@@ -49,8 +49,8 @@ def rebid(hand, hp):
             return "3♦", f"God {L['D']}-farve ruder og {hp} hp: 3♦ – inviterende (16–18)."
         return None
     if L['D'] >= 5 and L['H'] == 4 and L['C'] < 4:
-        if 16 <= hp <= 18:
-            return "2♥", f"5-4 med hjerter og {hp} hp: 2♥ – rundekrav (16+)."
+        if hp <= 18:
+            return "2♥", f"5-4 med hjerter og {hp} hp: 2♥ – naturlig, ikke krav (12–18, foreløbig – bekræftes)."
         if hp >= 19:
             return "3♥", f"5-4 med hjerter og {hp} hp: spring til 3♥ – udgangskrav (19–21)."
         return None
@@ -94,7 +94,7 @@ CLASSIFIERS["aab_1ru"] = rebid
 t = lambda hp, **b: tpl(hp, **{'S': (1, 3), 'H': (1, 3), 'D': (4, 5), 'C': (1, 3), **b})
 SAMPLERS["aab_1ru"] = {"1NT": t((12, 14)), "2NT": t((18, 19)), "2♦": t((12, 15), D=(6, 7)), "3♦": t((16, 18), D=(6, 6)),
                        "2♣": t((12, 18), D=(5, 6), C=(4, 4)), "3♣": t((19, 21), D=(5, 6), C=(4, 4)),
-                       "2♥": t((16, 18), D=(5, 6), H=(4, 4)), "3♥": t((19, 21), D=(5, 6), H=(4, 4))}
+                       "2♥": t((12, 18), D=(5, 6), H=(4, 4)), "3♥": t((19, 21), D=(5, 6), H=(4, 4))}
 PER_CALL["aab_1ru"] = 9
 for M, op, mk in (('S', 'D', 'sp'), ('H', 'C', 'hj')):
     sym, osym = SUIT_SYM[M], SUIT_SYM[op]

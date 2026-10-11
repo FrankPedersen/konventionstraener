@@ -223,7 +223,7 @@
   "system": "ff",
   "titel": "Åbners stærke genmeldinger og 3♣ checkback",
   "gruppe": "Videre meldeforløb",
-  "beskrivelse": "Spring viser styrke; 3♣ checkback efter åbners 2NT-genmelding.",
+  "beskrivelse": "Ny højere farve på 2-trinnet er naturlig, 5-4, 12–18 hp og ikke krav (foreløbig – bekræftes); spring i ny farve er 19–21 og udgangskrav. 3♣ checkback efter åbners 2NT-genmelding.",
   "roller": [
    "Åbner",
    "Svarer"
@@ -438,6 +438,19 @@
   ],
   "status": "kommer",
   "viden": "viden/2-over-1-makker2.html#afsnit-b4"
+ },
+ {
+  "id": "ff-revers",
+  "system": "forslag",
+  "titel": "Revers",
+  "gruppe": "Forslag (Makker 2 & mig, bilag G)",
+  "beskrivelse": "Diskussionsoplæg, ikke vedtaget: ny højere farve billigst muligt på nyt niveau som 16+ og rundekrav – og svarers anden melding.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "kommer",
+  "viden": "viden/2-over-1-makker2.html#afsnit-g"
  },
  {
   "id": "forslag-2kl-kontrolsvar",

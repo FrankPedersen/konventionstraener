@@ -91,7 +91,7 @@ page = """<!DOCTYPE html>
       <div class="sub">Moderne majorstøtte</div>
       <div class="d"><div>Trumfkontrakter · Sanskontrakter · Spærremeldinger · Indmeldinger · Modspil</div>
       <div>Femkorts major · Two over One udgangskrav · Bekkasin · omvendt minor · RKC 1430</div></div>
-      <div class="m"><div>Bygger på Femfarve i major (Røn / Reinholdt)</div><div>Udgave 3</div></div>
+      <div class="m"><div>Bygger på Femfarve i major (Røn / Reinholdt)</div><div>Udgave 3.1</div></div>
     </header>
 """ + restyle(body) + """
   </main>
