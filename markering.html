@@ -37,7 +37,7 @@
   /* Bridgebordet – BridgeTable fra designsystemet: Nord øverst, Syd nederst, Vest til venstre, Øst til højre,
      kompasset med N, Ø, S, V i midten. Ved hver plads står kortet, pladsen har spillet i stikket (med rækkefølgen). */
   .bt{ margin:0 0 var(--sg-space-sm); }
-  .bt-grid{ display:grid; grid-template-columns:minmax(112px,auto) 112px minmax(112px,auto); grid-template-rows:auto 112px auto;
+  .bt-grid{ display:grid; grid-template-columns:minmax(112px,auto) 112px minmax(112px,auto); grid-template-rows:auto minmax(112px,auto) auto;
             gap:var(--sg-space-lg); align-items:center; justify-items:center; justify-content:center; }
   .bt-info, .bt-notes{ align-self:start; justify-self:start; font-size:12px; line-height:16px; color:var(--sg-body); white-space:pre-line; }
   .bt-notes{ align-self:end; }
@@ -55,13 +55,23 @@
   .bt-line{ display:flex; align-items:baseline; gap:var(--sg-space-sm); }
   .bt-line .su{ width:1em; text-align:center; }
   .bt-cards{ font-weight:600; letter-spacing:.02em; } .bt-cards.is-void{ font-weight:400; color:var(--sg-body); }
+  .bt-cards .c.played{ color:var(--sg-mute); font-weight:400; text-decoration:line-through; text-decoration-thickness:1px; }
+
+  /* tidligere stik */
+  .lbl{ font-size:.75rem; line-height:1rem; font-weight:600; color:var(--sg-body); margin:0 0 var(--sg-space-xs); }
+  ol.hist{ list-style:none; margin:0 0 var(--sg-space-lg); padding:0; display:flex; flex-direction:column; gap:var(--sg-space-xs); }
+  ol.hist li{ display:flex; flex-wrap:wrap; align-items:baseline; gap:var(--sg-space-xs) var(--sg-space-md); font-size:.875rem; line-height:1.4;
+              background:var(--sg-canvas-soft); border-radius:var(--sg-radius-md); padding:var(--sg-space-sm) var(--sg-space-md); }
+  ol.hist .n{ font-weight:600; }
+  ol.hist .hc{ white-space:nowrap; font-weight:600; } ol.hist .hp{ font-weight:400; color:var(--sg-body); }
+  ol.hist .win{ color:var(--sg-body); }
   .bt-play{ display:inline-flex; align-items:center; gap:var(--sg-space-xs); }
   .bt-play .ord{ font-size:12px; line-height:16px; font-weight:600; color:var(--sg-body); }
   .bt-play .bc{ font-size:1rem; min-width:2.6em; padding:.3em .4em; }
   .bt-play .bc.ask{ background:var(--sg-canvas-soft); border-color:transparent; color:var(--sg-body); }
   .bt-play .bc.part{ box-shadow:inset 0 0 0 2px var(--sg-ink); border-color:transparent; }
   @media (max-width:520px){
-    .bt-grid{ grid-template-columns:minmax(0,auto) 72px minmax(0,auto); grid-template-rows:auto 72px auto; gap:var(--sg-space-sm); }
+    .bt-grid{ grid-template-columns:minmax(0,auto) 72px minmax(0,auto); grid-template-rows:auto minmax(72px,auto) auto; gap:var(--sg-space-sm); }
     .bt-compass{ width:72px; height:72px; }
     .bt-seat{ min-width:0; padding:var(--sg-space-xs) var(--sg-space-sm); }
     .bt-hand, .bt-seat.is-highlight .bt-hand{ font-size:15px; line-height:22px; }
@@ -130,6 +140,7 @@
     <div class="play">
       <div class="chips"><span class="chip" id="role"></span><span class="chip mode" id="mode"></span><span class="chip" id="sitname"></span></div>
       <p class="ctx" id="ctx"></p>
+      <div id="hist"></div>
       <figure class="bt" id="table"></figure>
       <button class="next" id="nextBtn">Næste hånd →</button>
     </div>
@@ -157,9 +168,10 @@ const suitSpan = s => `<span class="su ${s === 'H' || s === 'D' ? 'su-h' : 'su-s
 const cardHtml = c => suitSpan(c[0]) + (RN[+c.slice(1)] || c.slice(1));
 // Fritekst fra puljen: escapes og farver kulørsymbolerne
 const suits = t => esc(t).replace(/[♠♥♦♣]/g, c => `<span class="su ${c === '♥' || c === '♦' ? 'su-h' : 'su-s'}">${c}</span>`);
-// En hånd som fire linjer ♠ ♥ ♦ ♣ (BridgeHand): honnører E K D B, renonce som —
-const handHtml = h => `<div class="bt-hand">${'SHDC'.split('').map(s =>
-  `<div class="bt-line">${suitSpan(s)}<span class="bt-cards${h[s].length ? '' : ' is-void'}">${h[s].length ? h[s].map(r => RN[r] || r).join('') : '—'}</span></div>`).join('')}</div>`;
+// En hånd som fire linjer ♠ ♥ ♦ ♣ (BridgeHand): honnører E K D B, renonce som —. Spillede kort står gråtonet og overstreget.
+const handHtml = (h, played) => `<div class="bt-hand">${'SHDC'.split('').map(s =>
+  `<div class="bt-line">${suitSpan(s)}<span class="bt-cards${h[s].length ? '' : ' is-void'}">${h[s].length
+    ? h[s].map(r => `<span class="c${played.has(s + r) ? ' played' : ''}">${RN[r] || r}</span>`).join('') : '—'}</span></div>`).join('')}</div>`;
 const SEAT = { Nord: 'N', 'Øst': 'E', Syd: 'S', Vest: 'W' };
 const LETTER = { N: 'N', E: 'Ø', S: 'S', W: 'V' };
 
@@ -169,20 +181,33 @@ function tableHtml(q){
   const role = { Nord: 'bordet', Syd: 'spilfører', [q.du]: 'dig', [partner]: 'makker' };
   const plays = {};
   q.stik.forEach(([p, c], i) => { plays[p] = { c, i: i + 1 }; });
+  const played = new Set(q.spillet || []);
   const seat = p => {
     const hand = p === 'Nord' ? q.bordet : p === q.du ? q.haand : null;
     const pl = plays[p];
     let play = '';
     if (pl) play = `<span class="bt-play"><span class="ord">${pl.i}.</span><span class="bc${q.mode === 'laes' && p === partner ? ' part' : ''}">${cardHtml(pl.c)}</span></span>`;
     else if (q.mode === 'giv' && p === q.du) play = `<span class="bt-play"><span class="ord">${q.stik.length + 1}.</span><span class="bc ask">?</span></span>`;
-    return `<div class="bt-seat bt-seat-${SEAT[p]}${p === q.du ? ' is-highlight' : ''}"><span class="bt-name">${p} · ${role[p]}</span>${hand ? handHtml(hand) : ''}${play}</div>`;
+    return `<div class="bt-seat bt-seat-${SEAT[p]}${p === q.du ? ' is-highlight' : ''}"><span class="bt-name">${p} · ${role[p]}</span>${hand ? handHtml(hand, played) : ''}${play}</div>`;
   };
+  const nr = (q.historik || []).length + 1;
   const letter = k => `<span class="bt-letter bt-letter-${k}">${LETTER[k]}</span>`;
   return `<div class="bt-grid">`
     + `<div class="bt-info">Spilfører: Syd\nBordet: Nord</div>${seat('Nord')}<div></div>`
     + `${seat('Vest')}<div class="bt-compass" role="img" aria-label="Bridgebord: Nord, Øst, Syd, Vest">${letter('N')}${letter('W')}${letter('E')}${letter('S')}</div>${seat('Øst')}`
-    + `<div></div>${seat('Syd')}<div class="bt-notes">${suits('Kontrakt: ' + q.kontrakt + ' af Syd')}</div>`
+    + `<div></div>${seat('Syd')}<div class="bt-notes">${suits('Kontrakt: ' + q.kontrakt + ' af Syd')}\n${nr}. stik</div>`
     + `</div>`;
+}
+
+// De stik, der er spillet før stikket nu
+function historyHtml(q){
+  const h = q.historik || [];
+  if (!h.length) return '';
+  const partner = q.du === 'Øst' ? 'Vest' : 'Øst';
+  const who = p => p === q.du ? 'dig' : p === partner ? 'makker' : p === 'Nord' ? 'bordet' : 'spilfører';
+  return `<p class="lbl">Tidligere stik</p><ol class="hist">${h.map((t, i) =>
+    `<li><span class="n">${i + 1}. stik</span>${t.kort.map(([p, c]) => `<span class="hc"><span class="hp">${p}</span> ${cardHtml(c)}</span>`).join('')}`
+    + `<span class="win">– ${t.vinder} (${who(t.vinder)}) vinder</span></li>`).join('')}</ol>`;
 }
 function shuffle(a){ a = a.slice(); for (let i = a.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 
@@ -200,6 +225,7 @@ function render(){
   $('mode').textContent = q.mode === 'giv' ? 'Giv markering' : 'Læs markering';
   $('sitname').textContent = (SITS[q.situation] || {}).titel || '';
   $('ctx').innerHTML = suits(q.tekst);
+  $('hist').innerHTML = historyHtml(q);
   $('table').innerHTML = tableHtml(q);
   $('q').innerHTML = suits(q.spm);
 
