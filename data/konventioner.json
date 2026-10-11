@@ -623,5 +623,33 @@
   "viden": "viden/kampen-om-kontrakten.html#9-forsvar-mod-indmeldinger-efter-egen-1ut-aabning",
   "layout": "bord",
   "profiler": true
+ },
+ {
+  "id": "markeringer",
+  "titel": "Markeringer",
+  "gruppe": "Modspil",
+  "beskrivelse": "Lavt = kald efter es-udspil, antal efter konge-udspil og når spilfører spiller en ny farve (Malmø: lavt = lige), og første afkast mod farve og sans. Giv eller læs markeringen.",
+  "roller": [
+   "Modspiller"
+  ],
+  "status": "klar",
+  "system": "kf",
+  "side": "markering.html",
+  "viden": "viden/bridgesystem.html#9-udspil-og-markeringer"
+ },
+ {
+  "id": "lavinthal",
+  "titel": "Lavinthal",
+  "gruppe": "Modspil",
+  "beskrivelse": "Forslag – trænes, før det skrives ind i systemkortet. Stjæler og retur, død udspilsfarve og Lavinthal-afkast: højt beder om den højeste af de to farver, lavt om den laveste.",
+  "roller": [
+   "Modspiller"
+  ],
+  "status": "klar",
+  "system": [
+   "kf",
+   "forslag"
+  ],
+  "side": "markering.html"
  }
 ]

@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Markeringer — Konventionstræner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&text=%E2%99%A0%E2%99%A5%E2%99%A6%E2%99%A3&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  /* Markeringstræneren – samme opbygning som meldetræneren (traener.html), men med kort i stedet for meldeboks */
+  .trainer{ max-width:64rem; padding-bottom:var(--sg-space-3xl); }
+  .hero{ padding:var(--sg-space-2xl) 0 var(--sg-space-lg); margin-bottom:0; }
+  .hero .eyebrow{ margin:0 0 var(--sg-space-xs); }
+  .hero h1{ font-size:clamp(1.9rem,4.6vw,2.5rem); line-height:1; margin:0 0 var(--sg-space-sm); }
+  .hero .deck{ font-size:1rem; line-height:1.5; }
+  @media (max-width:600px){ .hero .deck{ display:none; } }
+
+  .progress{ display:flex; gap:6px; margin:0 0 var(--sg-space-lg); }
+  .progress i{ flex:1; height:6px; border-radius:var(--sg-radius-pill); background:var(--sg-hairline); position:relative; overflow:hidden; }
+  .progress i.done::after, .progress i.current::after{ content:""; position:absolute; inset:0; background:var(--sg-primary); }
+  .progress i.wrong::after{ background:var(--sg-negative-deep); }
+
+  .board{ display:flex; flex-direction:column; gap:var(--sg-space-lg); }
+  .play, .answer{ background:var(--sg-canvas); border-radius:var(--sg-radius-xl); padding:var(--sg-space-xl); }
+  @media (max-width:600px){ .play, .answer{ padding:var(--sg-space-lg); } }
+  @media (min-width:860px){ .board{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:start; } }
+
+  .chips{ display:flex; flex-wrap:wrap; gap:var(--sg-space-xs); margin-bottom:var(--sg-space-lg); }
+  .chip{ display:inline-block; font-size:.875rem; line-height:1.25rem; font-weight:600; color:var(--sg-ink); background:var(--sg-canvas-soft);
+         padding:var(--sg-space-xs) var(--sg-space-md); border-radius:var(--sg-radius-pill); }
+  .chip.mode{ background:var(--sg-primary-pale); }
+  .ctx{ font-size:1rem; line-height:1.5; margin:0 0 var(--sg-space-lg); }
+
+  .lbl{ font-size:.75rem; line-height:1rem; font-weight:600; color:var(--sg-body); margin:0 0 var(--sg-space-xs); }
+  .hand{ max-width:19rem; background:var(--sg-canvas-soft); border-radius:var(--sg-radius-lg);
+         padding:var(--sg-space-md) var(--sg-space-lg); font-size:1.4rem; font-weight:600; line-height:1.45; }
+  .hand.dummy{ font-size:1.05rem; padding:var(--sg-space-sm) var(--sg-space-lg); }
+  .hand .row{ display:flex; align-items:center; gap:.65rem; }
+  .hand .s{ width:1.25em; text-align:center; font-size:1.3em; line-height:1; }
+  .seat{ margin-bottom:var(--sg-space-lg); }
+
+  .trick{ display:flex; flex-wrap:wrap; gap:var(--sg-space-sm) var(--sg-space-md); align-items:flex-end; margin:0 0 var(--sg-space-lg); }
+  .trick .slot{ display:flex; flex-direction:column; align-items:center; gap:var(--sg-space-xs); }
+  .trick .who{ font-size:.75rem; line-height:1rem; color:var(--sg-body); }
+  .trick .bc{ font-size:1.1rem; min-width:2.6em; padding:.4em .45em; }
+  .trick .bc.ask{ background:var(--sg-canvas-soft); border-color:transparent; color:var(--sg-body); }
+  .trick .bc.part{ box-shadow:inset 0 0 0 2px var(--sg-ink); border-color:transparent; }
+
+  .qrow{ display:flex; align-items:center; justify-content:space-between; gap:var(--sg-space-md); margin:0 0 var(--sg-space-md); }
+  .qtext{ font-weight:600; font-size:1.125rem; line-height:1.4; margin:0; }
+  .hint-btn{ background:var(--sg-canvas-soft); border:0; color:var(--sg-ink); border-radius:var(--sg-radius-pill); width:2.5rem; height:2.5rem;
+             font-size:1.05rem; cursor:pointer; flex:none; }
+  .hint-btn:hover{ box-shadow:inset 0 0 0 1px var(--sg-ink); }
+  .hint-btn[aria-pressed="true"]{ background:var(--sg-primary); color:var(--sg-on-primary); }
+  .hintinfo{ font-size:.9375rem; line-height:1.45; color:var(--sg-ink); background:var(--sg-primary-pale);
+             border-radius:var(--sg-radius-md); padding:var(--sg-space-sm) var(--sg-space-lg); margin:0 0 var(--sg-space-md); display:none; }
+  .hintinfo.show{ display:block; }
+
+  .cardrow{ display:flex; flex-wrap:wrap; gap:var(--sg-space-sm); margin-bottom:var(--sg-space-sm); }
+  .card{ font:600 1.15rem/1 var(--sg-sans); min-width:3.2rem; padding:.7rem .6rem; background:var(--sg-canvas-soft); color:var(--sg-ink);
+         border:0; border-radius:var(--sg-radius-md); cursor:pointer; }
+  .card .su{ font-size:1.15em; margin-right:.08em; }
+  .opt{ display:block; width:100%; font:400 1rem/1.4 var(--sg-sans); text-align:left; background:var(--sg-canvas-soft); color:var(--sg-ink); border:0;
+        border-radius:var(--sg-radius-md); padding:var(--sg-space-md) var(--sg-space-lg); margin-bottom:var(--sg-space-sm); cursor:pointer; }
+  .card:hover:not(:disabled), .opt:hover:not(:disabled){ box-shadow:inset 0 0 0 1px var(--sg-ink); }
+  .card:disabled, .opt:disabled{ cursor:default; opacity:.45; }
+  .card.correct, .opt.correct{ opacity:1; background:var(--sg-primary-pale); color:var(--sg-positive-deep); box-shadow:inset 0 0 0 2px var(--sg-positive-deep); }
+  .card.incorrect, .opt.incorrect{ opacity:1; background:var(--sg-canvas); color:var(--sg-negative-deep); box-shadow:inset 0 0 0 2px var(--sg-negative-deep); }
+
+  .feedback{ margin-top:var(--sg-space-md); padding:var(--sg-space-lg); border-radius:var(--sg-radius-lg); font-size:.9375rem; line-height:1.5; display:none; }
+  .feedback.show{ display:block; }
+  .feedback.ok{ background:var(--sg-primary-pale); } .feedback.no{ background:var(--sg-canvas-soft); }
+  .feedback b{ display:block; margin-bottom:var(--sg-space-xs); font-weight:600; }
+  .feedback.ok b{ color:var(--sg-positive-deep); } .feedback.no b{ color:var(--sg-negative-deep); }
+
+  .next{ margin-top:var(--sg-space-sm); display:none; width:100%; max-width:19rem; background:var(--sg-primary); color:var(--sg-on-primary); border:0;
+         border-radius:var(--sg-radius-xl); padding:var(--sg-space-md) var(--sg-space-xl); font:600 1rem/1.5 var(--sg-sans); cursor:pointer; }
+  .next:hover{ background:var(--sg-primary-active); }
+  .next.show{ display:block; }
+
+  div.done{ text-align:center; background:var(--sg-canvas); border-radius:var(--sg-radius-xl); padding:var(--sg-space-3xl) var(--sg-space-xl); }
+  div.done .score{ font-family:var(--sg-display); font-weight:800; font-size:clamp(3rem,10vw,5rem); line-height:1; letter-spacing:-.02em; margin:var(--sg-space-md) 0; }
+  div.done .actions{ display:flex; gap:var(--sg-space-sm); justify-content:center; flex-wrap:wrap; margin-top:var(--sg-space-xl); }
+  .btn{ font:600 1rem/1.5 var(--sg-sans); border-radius:var(--sg-radius-xl); padding:var(--sg-space-md) var(--sg-space-xl); cursor:pointer; text-decoration:none;
+        border:0; background:var(--sg-canvas-soft); color:var(--sg-ink); }
+  .btn:hover{ box-shadow:inset 0 0 0 1px var(--sg-ink); }
+  .btn.primary{ background:var(--sg-primary); color:var(--sg-on-primary); }
+  .btn.primary:hover{ background:var(--sg-primary-active); box-shadow:none; }
+  .source{ margin-top:var(--sg-space-lg); }
+</style>
+</head>
+<body>
+<header class="site-head"><div class="in">
+  <a class="brand" href="./">Konventionstræner</a>
+  <nav><a href="./#traen" aria-current="page">Træn</a><a href="viden/">Viden</a></nav>
+</div></header>
+
+<div class="wrap trainer">
+  <section class="hero">
+    <p class="eyebrow" id="group"></p>
+    <h1 id="title">Markeringer</h1>
+    <p class="deck" id="desc"></p>
+  </section>
+
+  <div class="progress" id="progress"></div>
+
+  <div class="board" id="board">
+    <div class="play">
+      <div class="chips"><span class="chip" id="role"></span><span class="chip mode" id="mode"></span><span class="chip" id="sitname"></span></div>
+      <p class="ctx" id="ctx"></p>
+      <div class="seat"><p class="lbl">Bordet (Nord)</p><div class="hand dummy" id="dummy"></div></div>
+      <p class="lbl">Stikket</p>
+      <div class="trick" id="trick"></div>
+      <div class="seat"><p class="lbl" id="youLbl">Din hånd</p><div class="hand" id="hand"></div></div>
+      <button class="next" id="nextBtn">Næste hånd →</button>
+    </div>
+    <div class="answer">
+      <div class="qrow">
+        <p class="qtext" id="q"></p>
+        <button class="hint-btn" id="hintBtn" title="Vis reglen" aria-pressed="false">💡</button>
+      </div>
+      <div class="hintinfo" id="hintInfo"></div>
+      <div id="opts"></div>
+      <div class="feedback" id="feedback"></div>
+    </div>
+  </div>
+
+  <p class="small source" id="source"></p>
+</div>
+
+<script>
+const SYM = { S: '♠', H: '♥', D: '♦', C: '♣' };
+const RN = { 14: 'E', 13: 'K', 12: 'D', 11: 'B' };
+const ROUND_SIZE = 8;
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const suitSpan = s => `<span class="su ${s === 'H' || s === 'D' ? 'su-h' : 'su-s'}">${SYM[s]}</span>`;
+const cardHtml = c => suitSpan(c[0]) + (RN[+c.slice(1)] || c.slice(1));
+// Fritekst fra puljen: escapes og farver kulørsymbolerne
+const suits = t => esc(t).replace(/[♠♥♦♣]/g, c => `<span class="su ${c === '♥' || c === '♦' ? 'su-h' : 'su-s'}">${c}</span>`);
+const handHtml = h => 'SHDC'.split('').map(s =>
+  `<div class="row"><span class="s">${suitSpan(s)}</span><span>${h[s].length ? h[s].map(r => RN[r] || r).join(' ') : '—'}</span></div>`).join('');
+function shuffle(a){ a = a.slice(); for (let i = a.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+
+let POOL = null, SITS = {}, Q = [], idx = 0, score = 0, results = [], answered = false, backLink = './#traen';
+
+function renderProgress(){
+  $('progress').innerHTML = Q.map((_, i) => `<i class="${i < results.length ? (results[i] ? 'done' : 'done wrong') : i === idx ? 'current' : ''}"></i>`).join('');
+}
+
+function seatName(q, p){
+  const partner = q.du === 'Øst' ? 'Vest' : 'Øst';
+  return p === q.du ? 'Dig' : p === partner ? 'Makker' : p === 'Nord' ? 'Bordet' : 'Spilfører';
+}
+
+function render(){
+  answered = false;
+  const q = Q[idx];
+  renderProgress();
+  $('role').textContent = `Du er ${q.du}`;
+  $('mode').textContent = q.mode === 'giv' ? 'Giv markering' : 'Læs markering';
+  $('sitname').textContent = (SITS[q.situation] || {}).titel || '';
+  $('ctx').innerHTML = suits(q.tekst);
+  $('dummy').innerHTML = handHtml(q.bordet);
+  const partner = q.du === 'Øst' ? 'Vest' : 'Øst';
+  const slots = q.stik.map(([p, c]) =>
+    `<div class="slot"><span class="who">${seatName(q, p)}</span><span class="bc${q.mode === 'laes' && p === partner ? ' part' : ''}">${cardHtml(c)}</span></div>`);
+  if (q.mode === 'giv') slots.push(`<div class="slot"><span class="who">Dig</span><span class="bc ask">?</span></div>`);
+  $('trick').innerHTML = slots.join('');
+  $('youLbl').textContent = `Din hånd (${q.du})`;
+  $('hand').innerHTML = handHtml(q.haand);
+  $('q').innerHTML = suits(q.spm);
+
+  $('hintBtn').setAttribute('aria-pressed', 'false');
+  $('hintInfo').className = 'hintinfo';
+  $('hintInfo').innerHTML = suits((SITS[q.situation] || {}).regel || '');
+
+  const opts = $('opts');
+  if (q.mode === 'giv'){
+    const by = {};
+    q.valg.forEach(c => (by[c[0]] = by[c[0]] || []).push(c));
+    opts.innerHTML = 'SHDC'.split('').filter(s => by[s]).map(s =>
+      `<div class="cardrow">${by[s].map(c => `<button class="card" data-c="${c}">${cardHtml(c)}</button>`).join('')}</div>`).join('');
+  } else {
+    opts.innerHTML = q.valg.map(v => `<button class="opt" data-c="${esc(v)}">${suits(v)}</button>`).join('');
+  }
+  opts.querySelectorAll('button').forEach(b => b.addEventListener('click', () => choose(b)));
+
+  $('feedback').className = 'feedback';
+  $('feedback').innerHTML = '';
+  $('nextBtn').className = 'next';
+}
+
+function choose(btn){
+  if (answered) return;
+  answered = true;
+  const q = Q[idx];
+  const ok = q.rigtige.includes(btn.dataset.c);
+  results[idx] = ok;
+  if (ok) score++;
+  $('opts').querySelectorAll('button').forEach(b => {
+    if (q.rigtige.includes(b.dataset.c)) b.classList.add('correct');
+    b.disabled = true;
+  });
+  if (!ok) btn.classList.add('incorrect');
+  const facit = q.mode === 'giv' ? q.rigtige.map(cardHtml).join(' eller ') : suits(q.rigtige[0]);
+  $('feedback').className = 'feedback show ' + (ok ? 'ok' : 'no');
+  $('feedback').innerHTML = `<b>${ok ? 'Rigtigt — ' : 'Facit: '}${facit}</b>${suits(q.hvorfor)}`;
+  $('nextBtn').className = 'next show';
+  $('nextBtn').textContent = idx === Q.length - 1 ? 'Se resultat →' : 'Næste hånd →';
+  renderProgress();
+}
+
+$('hintBtn').addEventListener('click', () => {
+  const on = $('hintBtn').getAttribute('aria-pressed') !== 'true';
+  $('hintBtn').setAttribute('aria-pressed', on ? 'true' : 'false');
+  $('hintInfo').className = on ? 'hintinfo show' : 'hintinfo';
+});
+
+$('nextBtn').addEventListener('click', () => {
+  idx++;
+  if (idx >= Q.length){ renderDone(); return; }
+  render();
+});
+
+function renderDone(){
+  $('board').style.display = 'block';
+  $('board').innerHTML = `
+    <div class="done">
+      <p class="qtext">Du klarede</p>
+      <div class="score">${score} / ${Q.length}</div>
+      <p>${score === Q.length ? 'Markeringerne sidder.' : 'Gennemgå forklaringerne igen, og prøv en gang til.'}</p>
+      <div class="actions">
+        <button class="btn primary" id="restartBtn">Ny omgang</button>
+        <a class="btn" href="${backLink}">Vælg konvention</a>
+      </div>
+    </div>`;
+  $('restartBtn').addEventListener('click', () => location.reload());
+}
+
+function fail(msg){
+  $('board').innerHTML = `<p class="qtext">${msg}</p><p class="small"><a href="./#traen">← Tilbage til konventionerne</a></p>`;
+}
+
+const id = new URLSearchParams(location.search).get('k') || 'markeringer';
+Promise.all(['data/konventioner.json', 'data/systemer.json'].map(u => fetch(u).then(r => r.json())))
+  .then(([list, systems]) => {
+    const k = list.find(x => x.id === id);
+    if (!k || k.status !== 'klar' || k.side !== 'markering.html') throw new Error('ukendt');
+    const ids = Array.isArray(k.system) ? k.system : [k.system];
+    const names = ids.map(x => (systems.find(s => s.id === x) || {}).navn).filter(Boolean);
+    let current = null;
+    try { current = localStorage.getItem('system'); } catch (e) {}
+    backLink = `./?system=${ids.includes(current) ? current : ids[0]}#traen`;
+    document.title = `${k.titel} — Konventionstræner`;
+    $('group').innerHTML = suits(`${names.join(' · ')} · ${k.gruppe}`);
+    $('title').innerHTML = suits(k.titel);
+    $('desc').innerHTML = suits(k.beskrivelse);
+    $('source').innerHTML = k.viden
+      ? `Aftalerne står i <a href="${esc(k.viden)}">systemet for ${esc(names[0])}</a>, afsnit 9.`
+      : 'Lavinthal er et forslag og står endnu ikke i systemkortet. Reglerne følger <a href="viden/2-over-1-makker2.html#afsnit-20">beskrivelsen hos Makker 2 &amp; mig</a>: højt beder om den højeste af de to farver, lavt om den laveste.';
+    return fetch(`pools/${k.id}.json`).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+  })
+  .then(pool => {
+    POOL = pool; SITS = pool.situations;
+    Q = shuffle(pool.hands).slice(0, ROUND_SIZE);
+    render();
+  })
+  .catch(e => fail(e.message === 'ukendt'
+    ? 'Den træner findes ikke – eller den er ikke klar endnu.'
+    : 'Kunne ikke hente hånd-puljen. Åbn siden via GitHub Pages eller en lokal webserver — ikke direkte som fil.'));
+</script>
+</body>
+</html>

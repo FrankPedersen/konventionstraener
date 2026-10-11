@@ -17,7 +17,7 @@ from dealer import (ass, bekkasin, cuebids, dont, fjerde_farve, kontrolsvar, leb
                     ff_bergen, ff_trial, ff_fast, ff_2over1, ff_genmeld, ff_minor,
                     ff_transfer, ff_gerber, ff_2kl, ff_ogust, ff_rkc,
                     ff_michaels, ff_genaabning, ff_doblinger, ff_kravpas, ff_lebensohl,
-                    landy, kamp_stoette, kamp_konk)
+                    landy, kamp_stoette, kamp_konk, markering)
 
 CONVENTIONS = {
     "multiforsvar": multiforsvar,
@@ -61,6 +61,8 @@ CONVENTIONS = {
     "kamp-doblinger": SimpleNamespace(export_pool=kamp_konk.exporter("dobl")),
     "kamp-1ut-indmeldt": SimpleNamespace(export_pool=kamp_konk.exporter("ut8")),
     "kamp-1ut-forsvar": SimpleNamespace(export_pool=kamp_konk.exporter("ut9")),
+    "markeringer": SimpleNamespace(export_pool=markering.exporter("markeringer")),
+    "lavinthal": SimpleNamespace(export_pool=markering.exporter("lavinthal")),
 }
 
 def main(names):

@@ -1,0 +1,5382 @@
+{
+ "situations": {
+  "ruff_retur": {
+   "titel": "Stjæler og retur",
+   "regel": "Kortet, du spiller til makkers stjæler, viser returfarven: højt = den højeste af de to sidefarver, lavt = den laveste."
+  },
+  "doed_udspil": {
+   "titel": "Død udspilsfarve",
+   "regel": "Har bordet singleton i makkers es-udspil, er dit kort farveskift: højt = den højeste af de to sidefarver, lavt = den laveste."
+  },
+  "lav_afkast": {
+   "titel": "Lavinthal-afkast",
+   "regel": "Kast i en farve, du ikke vil have: højt kort beder om den højeste af de to andre farver, lavt kort om den laveste. Aldrig til trumf."
+  }
+ },
+ "hands": [
+  {
+   "situation": "ruff_retur",
+   "mode": "giv",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     11,
+     8,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     7,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     5
+    ],
+    "C": [
+     12,
+     11
+    ]
+   },
+   "haand": {
+    "S": [],
+    "H": [
+     14,
+     13,
+     12
+    ],
+    "D": [
+     6,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     9,
+     8,
+     6,
+     5,
+     3,
+     2
+    ]
+   },
+   "stik": [],
+   "tekst": "Kontrakten er 4♠ af Syd. Makker har vist renonce i klør, og du er inde. Du spiller klør, så makker kan stjæle.",
+   "spm": "Hvilket kort spiller du?",
+   "valg": [
+    "C14",
+    "C10",
+    "C9",
+    "C8",
+    "C6",
+    "C5",
+    "C3",
+    "C2"
+   ],
+   "rigtige": [
+    "C10"
+   ],
+   "hvorfor": "Du har ♥E og vil have makker til at spille hjerter tilbage, så du kommer ind og kan give en stjæler mere. Hjerter er den højeste af de to sidefarver (hjerter og ruder): spil et højt kort, ♣10."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "giv",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     12,
+     9
+    ],
+    "H": [
+     12,
+     9,
+     4,
+     3
+    ],
+    "D": [
+     9,
+     7,
+     5,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     5
+    ]
+   },
+   "haand": {
+    "S": [
+     14,
+     10,
+     8,
+     4
+    ],
+    "H": [
+     8,
+     7
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     14,
+     9,
+     8,
+     7,
+     6,
+     4
+    ]
+   },
+   "stik": [],
+   "tekst": "Kontrakten er 4♥ af Syd. Makker har vist renonce i klør, og du er inde. Du spiller klør, så makker kan stjæle.",
+   "spm": "Hvilket kort spiller du?",
+   "valg": [
+    "C14",
+    "C9",
+    "C8",
+    "C7",
+    "C6",
+    "C4"
+   ],
+   "rigtige": [
+    "C9"
+   ],
+   "hvorfor": "Du har ♠E og vil have makker til at spille spar tilbage, så du kommer ind og kan give en stjæler mere. Spar er den højeste af de to sidefarver (spar og ruder): spil et højt kort, ♣9."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "giv",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     7
+    ],
+    "H": [
+     12,
+     11,
+     8,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     6
+    ],
+    "C": [
+     13,
+     7,
+     4
+    ]
+   },
+   "haand": {
+    "S": [
+     10,
+     9,
+     5
+    ],
+    "H": [
+     14,
+     9,
+     7
+    ],
+    "D": [
+     12,
+     10,
+     8,
+     7,
+     5
+    ],
+    "C": [
+     14,
+     8
+    ]
+   },
+   "stik": [],
+   "tekst": "Kontrakten er 4♥ af Syd. Makker har vist renonce i ruder, og du er inde. Du spiller ruder, så makker kan stjæle.",
+   "spm": "Hvilket kort spiller du?",
+   "valg": [
+    "D12",
+    "D10",
+    "D8",
+    "D7",
+    "D5"
+   ],
+   "rigtige": [
+    "D5"
+   ],
+   "hvorfor": "Du har ♣E og vil have makker til at spille klør tilbage, så du kommer ind og kan give en stjæler mere. Klør er den laveste af de to sidefarver (spar og klør): spil et lavt kort, ♦5."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "giv",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     12,
+     11,
+     4
+    ],
+    "H": [
+     14,
+     10,
+     4
+    ],
+    "D": [
+     12,
+     10,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     9
+    ]
+   },
+   "haand": {
+    "S": [
+     2
+    ],
+    "H": [
+     12,
+     5
+    ],
+    "D": [
+     14,
+     11,
+     8,
+     7,
+     6,
+     4
+    ],
+    "C": [
+     14,
+     7,
+     5,
+     4
+    ]
+   },
+   "stik": [],
+   "tekst": "Kontrakten er 4♠ af Syd. Makker har vist renonce i ruder, og du er inde. Du spiller ruder, så makker kan stjæle.",
+   "spm": "Hvilket kort spiller du?",
+   "valg": [
+    "D14",
+    "D11",
+    "D8",
+    "D7",
+    "D6",
+    "D4"
+   ],
+   "rigtige": [
+    "D4"
+   ],
+   "hvorfor": "Du har ♣E og vil have makker til at spille klør tilbage, så du kommer ind og kan give en stjæler mere. Klør er den laveste af de to sidefarver (hjerter og klør): spil et lavt kort, ♦4."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "giv",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     14,
+     13,
+     12,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     10,
+     9
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     11,
+     8,
+     7,
+     4
+    ]
+   },
+   "haand": {
+    "S": [
+     11,
+     6
+    ],
+    "H": [
+     12,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     6,
+     2
+    ]
+   },
+   "stik": [],
+   "tekst": "Kontrakten er 4♠ af Syd. Makker har vist renonce i klør, og du er inde. Du spiller klør, så makker kan stjæle.",
+   "spm": "Hvilket kort spiller du?",
+   "valg": [
+    "C13",
+    "C6",
+    "C2"
+   ],
+   "rigtige": [
+    "C2"
+   ],
+   "hvorfor": "Du har ♦E og vil have makker til at spille ruder tilbage, så du kommer ind og kan give en stjæler mere. Ruder er den laveste af de to sidefarver (hjerter og ruder): spil et lavt kort, ♣2."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "giv",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     14,
+     8,
+     7,
+     5,
+     4
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     14,
+     13,
+     6,
+     2
+    ],
+    "C": [
+     8,
+     7,
+     5
+    ]
+   },
+   "haand": {
+    "S": [
+     12,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     4
+    ],
+    "D": [
+     9,
+     8,
+     7,
+     4,
+     3
+    ],
+    "C": [
+     13
+    ]
+   },
+   "stik": [],
+   "tekst": "Kontrakten er 4♠ af Syd. Makker har vist renonce i ruder, og du er inde. Du spiller ruder, så makker kan stjæle.",
+   "spm": "Hvilket kort spiller du?",
+   "valg": [
+    "D9",
+    "D8",
+    "D7",
+    "D4",
+    "D3"
+   ],
+   "rigtige": [
+    "D9"
+   ],
+   "hvorfor": "Du har ♥E og vil have makker til at spille hjerter tilbage, så du kommer ind og kan give en stjæler mere. Hjerter er den højeste af de to sidefarver (hjerter og klør): spil et højt kort, ♦9."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "giv",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     11,
+     8,
+     3
+    ],
+    "H": [
+     11,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     11,
+     6
+    ],
+    "C": [
+     14,
+     9,
+     7,
+     6
+    ]
+   },
+   "haand": {
+    "S": [
+     12,
+     6
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     6,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     5,
+     3
+    ],
+    "C": [
+     3,
+     2
+    ]
+   },
+   "stik": [],
+   "tekst": "Kontrakten er 4♠ af Syd. Makker har vist renonce i hjerter, og du er inde. Du spiller hjerter, så makker kan stjæle.",
+   "spm": "Hvilket kort spiller du?",
+   "valg": [
+    "H13",
+    "H10",
+    "H9",
+    "H6",
+    "H5"
+   ],
+   "rigtige": [
+    "H10"
+   ],
+   "hvorfor": "Du har ♦E og vil have makker til at spille ruder tilbage, så du kommer ind og kan give en stjæler mere. Ruder er den højeste af de to sidefarver (ruder og klør): spil et højt kort, ♥10."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "giv",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     14,
+     13,
+     9
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     2
+    ],
+    "C": [
+     13
+    ]
+   },
+   "haand": {
+    "S": [
+     11,
+     6,
+     2
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     11,
+     7,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     5,
+     4
+    ]
+   },
+   "stik": [],
+   "tekst": "Kontrakten er 4♥ af Syd. Makker har vist renonce i ruder, og du er inde. Du spiller ruder, så makker kan stjæle.",
+   "spm": "Hvilket kort spiller du?",
+   "valg": [
+    "D11",
+    "D7",
+    "D6",
+    "D5",
+    "D3"
+   ],
+   "rigtige": [
+    "D3"
+   ],
+   "hvorfor": "Du har ♣E og vil have makker til at spille klør tilbage, så du kommer ind og kan give en stjæler mere. Klør er den laveste af de to sidefarver (spar og klør): spil et lavt kort, ♦3."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "giv",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     14,
+     11,
+     10,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     11,
+     7
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     8
+    ]
+   },
+   "haand": {
+    "S": [
+     13,
+     12,
+     5
+    ],
+    "H": [
+     6,
+     2
+    ],
+    "D": [
+     14,
+     6,
+     3
+    ],
+    "C": [
+     11,
+     9,
+     7,
+     5,
+     3
+    ]
+   },
+   "stik": [],
+   "tekst": "Kontrakten er 4♠ af Syd. Makker har vist renonce i klør, og du er inde. Du spiller klør, så makker kan stjæle.",
+   "spm": "Hvilket kort spiller du?",
+   "valg": [
+    "C11",
+    "C9",
+    "C7",
+    "C5",
+    "C3"
+   ],
+   "rigtige": [
+    "C3"
+   ],
+   "hvorfor": "Du har ♦E og vil have makker til at spille ruder tilbage, så du kommer ind og kan give en stjæler mere. Ruder er den laveste af de to sidefarver (hjerter og ruder): spil et lavt kort, ♣3."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "giv",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     12,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     7,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     7,
+     5,
+     3
+    ],
+    "C": []
+   },
+   "haand": {
+    "S": [
+     11,
+     9
+    ],
+    "H": [
+     10,
+     9
+    ],
+    "D": [
+     14,
+     9,
+     6,
+     4
+    ],
+    "C": [
+     14,
+     9,
+     6,
+     5,
+     2
+    ]
+   },
+   "stik": [],
+   "tekst": "Kontrakten er 4♥ af Syd. Makker har vist renonce i ruder, og du er inde. Du spiller ruder, så makker kan stjæle.",
+   "spm": "Hvilket kort spiller du?",
+   "valg": [
+    "D14",
+    "D9",
+    "D6",
+    "D4"
+   ],
+   "rigtige": [
+    "D4"
+   ],
+   "hvorfor": "Du har ♣E og vil have makker til at spille klør tilbage, så du kommer ind og kan give en stjæler mere. Klør er den laveste af de to sidefarver (spar og klør): spil et lavt kort, ♦4."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "giv",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     14,
+     11,
+     8
+    ],
+    "H": [
+     14,
+     8,
+     4,
+     3
+    ],
+    "D": [
+     10,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     12,
+     11
+    ]
+   },
+   "haand": {
+    "S": [
+     13,
+     12,
+     5,
+     3
+    ],
+    "H": [],
+    "D": [
+     12,
+     11,
+     8,
+     7,
+     3
+    ],
+    "C": [
+     14,
+     10,
+     8,
+     3
+    ]
+   },
+   "stik": [],
+   "tekst": "Kontrakten er 4♥ af Syd. Makker har vist renonce i ruder, og du er inde. Du spiller ruder, så makker kan stjæle.",
+   "spm": "Hvilket kort spiller du?",
+   "valg": [
+    "D12",
+    "D11",
+    "D8",
+    "D7",
+    "D3"
+   ],
+   "rigtige": [
+    "D3"
+   ],
+   "hvorfor": "Du har ♣E og vil have makker til at spille klør tilbage, så du kommer ind og kan give en stjæler mere. Klør er den laveste af de to sidefarver (spar og klør): spil et lavt kort, ♦3."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "giv",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     12
+    ],
+    "H": [
+     12,
+     11,
+     9,
+     7
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     10,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "haand": {
+    "S": [
+     14,
+     3,
+     2
+    ],
+    "H": [
+     8,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     9,
+     7,
+     5,
+     4
+    ],
+    "C": [
+     13,
+     10
+    ]
+   },
+   "stik": [],
+   "tekst": "Kontrakten er 4♥ af Syd. Makker har vist renonce i ruder, og du er inde. Du spiller ruder, så makker kan stjæle.",
+   "spm": "Hvilket kort spiller du?",
+   "valg": [
+    "D13",
+    "D9",
+    "D7",
+    "D5",
+    "D4"
+   ],
+   "rigtige": [
+    "D9"
+   ],
+   "hvorfor": "Du har ♠E og vil have makker til at spille spar tilbage, så du kommer ind og kan give en stjæler mere. Spar er den højeste af de to sidefarver (spar og klør): spil et højt kort, ♦9."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "laes",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     12,
+     10,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     10,
+     8
+    ],
+    "C": [
+     14,
+     7,
+     6,
+     4
+    ]
+   },
+   "haand": {
+    "S": [
+     14,
+     11,
+     9,
+     3
+    ],
+    "H": [],
+    "D": [
+     12,
+     11,
+     7,
+     5,
+     3
+    ],
+    "C": [
+     10,
+     9,
+     5,
+     2
+    ]
+   },
+   "stik": [
+    [
+     "Øst",
+     "H8"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Du har vist renonce i hjerter, og makker spiller farven, så du kan stjæle.",
+   "spm": "Makker spiller ♥8. Hvilken farve skal du spille tilbage, når du har stjålet?",
+   "valg": [
+    "Spil ruder tilbage",
+    "Spil klør tilbage"
+   ],
+   "rigtige": [
+    "Spil ruder tilbage"
+   ],
+   "hvorfor": "♥8 er et højt kort: makker beder om den højeste af de to sidefarver, ruder – dér har makker sin indkomst til næste stjæler."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "laes",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     5
+    ],
+    "H": [
+     9,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     5
+    ],
+    "C": [
+     14,
+     10,
+     8,
+     5
+    ]
+   },
+   "haand": {
+    "S": [
+     13,
+     10,
+     9,
+     8,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     12,
+     5,
+     4
+    ],
+    "D": [],
+    "C": [
+     7,
+     4,
+     2
+    ]
+   },
+   "stik": [
+    [
+     "Øst",
+     "D9"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Du har vist renonce i ruder, og makker spiller farven, så du kan stjæle.",
+   "spm": "Makker spiller ♦9. Hvilken farve skal du spille tilbage, når du har stjålet?",
+   "valg": [
+    "Spil spar tilbage",
+    "Spil klør tilbage"
+   ],
+   "rigtige": [
+    "Spil spar tilbage"
+   ],
+   "hvorfor": "♦9 er et højt kort: makker beder om den højeste af de to sidefarver, spar – dér har makker sin indkomst til næste stjæler."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "laes",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     11,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     7,
+     5
+    ],
+    "D": [],
+    "C": [
+     14,
+     12,
+     11,
+     6
+    ]
+   },
+   "haand": {
+    "S": [
+     13,
+     9,
+     8,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     11,
+     3
+    ],
+    "D": [
+     9,
+     8,
+     6,
+     4,
+     3
+    ],
+    "C": []
+   },
+   "stik": [
+    [
+     "Øst",
+     "C10"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Du har vist renonce i klør, og makker spiller farven, så du kan stjæle.",
+   "spm": "Makker spiller ♣10. Hvilken farve skal du spille tilbage, når du har stjålet?",
+   "valg": [
+    "Spil spar tilbage",
+    "Spil ruder tilbage"
+   ],
+   "rigtige": [
+    "Spil spar tilbage"
+   ],
+   "hvorfor": "♣10 er et højt kort: makker beder om den højeste af de to sidefarver, spar – dér har makker sin indkomst til næste stjæler."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "laes",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     12,
+     11,
+     9,
+     6
+    ],
+    "H": [
+     9,
+     8,
+     6
+    ],
+    "D": [
+     14,
+     8
+    ],
+    "C": [
+     13,
+     9,
+     8,
+     7
+    ]
+   },
+   "haand": {
+    "S": [
+     13,
+     8,
+     7,
+     5
+    ],
+    "H": [
+     11,
+     7,
+     5
+    ],
+    "D": [],
+    "C": [
+     14,
+     12,
+     11,
+     10,
+     6,
+     3
+    ]
+   },
+   "stik": [
+    [
+     "Øst",
+     "D10"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Du har vist renonce i ruder, og makker spiller farven, så du kan stjæle.",
+   "spm": "Makker spiller ♦10. Hvilken farve skal du spille tilbage, når du har stjålet?",
+   "valg": [
+    "Spil spar tilbage",
+    "Spil klør tilbage"
+   ],
+   "rigtige": [
+    "Spil spar tilbage"
+   ],
+   "hvorfor": "♦10 er et højt kort: makker beder om den højeste af de to sidefarver, spar – dér har makker sin indkomst til næste stjæler."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "laes",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     12,
+     11,
+     9,
+     5,
+     4
+    ],
+    "H": [],
+    "D": [
+     14,
+     13,
+     12,
+     11,
+     10,
+     8,
+     6
+    ],
+    "C": [
+     13
+    ]
+   },
+   "haand": {
+    "S": [
+     13,
+     10,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     11,
+     10,
+     7
+    ],
+    "D": [],
+    "C": [
+     7,
+     6,
+     5,
+     4,
+     3
+    ]
+   },
+   "stik": [
+    [
+     "Øst",
+     "D9"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Du har vist renonce i ruder, og makker spiller farven, så du kan stjæle.",
+   "spm": "Makker spiller ♦9. Hvilken farve skal du spille tilbage, når du har stjålet?",
+   "valg": [
+    "Spil spar tilbage",
+    "Spil klør tilbage"
+   ],
+   "rigtige": [
+    "Spil spar tilbage"
+   ],
+   "hvorfor": "♦9 er et højt kort: makker beder om den højeste af de to sidefarver, spar – dér har makker sin indkomst til næste stjæler."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "laes",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     14,
+     10,
+     5
+    ],
+    "H": [
+     11,
+     10,
+     8,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     9,
+     8,
+     7
+    ]
+   },
+   "haand": {
+    "S": [
+     9,
+     7,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     7,
+     4
+    ],
+    "D": [
+     11,
+     10,
+     8,
+     4,
+     3,
+     2
+    ],
+    "C": []
+   },
+   "stik": [
+    [
+     "Øst",
+     "C2"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Du har vist renonce i klør, og makker spiller farven, så du kan stjæle.",
+   "spm": "Makker spiller ♣2. Hvilken farve skal du spille tilbage, når du har stjålet?",
+   "valg": [
+    "Spil spar tilbage",
+    "Spil ruder tilbage"
+   ],
+   "rigtige": [
+    "Spil ruder tilbage"
+   ],
+   "hvorfor": "♣2 er et lavt kort: makker beder om den laveste af de to sidefarver, ruder – dér har makker sin indkomst til næste stjæler."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "laes",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     13,
+     11,
+     3,
+     2
+    ],
+    "H": [
+     9,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     4
+    ],
+    "C": [
+     14,
+     8,
+     2
+    ]
+   },
+   "haand": {
+    "S": [
+     9,
+     4
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     6,
+     2
+    ],
+    "D": [],
+    "C": [
+     13,
+     11,
+     6,
+     5,
+     4,
+     3
+    ]
+   },
+   "stik": [
+    [
+     "Øst",
+     "D9"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Du har vist renonce i ruder, og makker spiller farven, så du kan stjæle.",
+   "spm": "Makker spiller ♦9. Hvilken farve skal du spille tilbage, når du har stjålet?",
+   "valg": [
+    "Spil hjerter tilbage",
+    "Spil klør tilbage"
+   ],
+   "rigtige": [
+    "Spil hjerter tilbage"
+   ],
+   "hvorfor": "♦9 er et højt kort: makker beder om den højeste af de to sidefarver, hjerter – dér har makker sin indkomst til næste stjæler."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "laes",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     11,
+     8,
+     5
+    ],
+    "H": [
+     13,
+     9
+    ],
+    "D": [
+     12,
+     9,
+     8,
+     7,
+     4
+    ],
+    "C": [
+     9,
+     6,
+     2
+    ]
+   },
+   "haand": {
+    "S": [
+     12,
+     9,
+     7,
+     6,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     11
+    ],
+    "D": [],
+    "C": [
+     10,
+     7,
+     5,
+     3
+    ]
+   },
+   "stik": [
+    [
+     "Øst",
+     "D10"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Du har vist renonce i ruder, og makker spiller farven, så du kan stjæle.",
+   "spm": "Makker spiller ♦10. Hvilken farve skal du spille tilbage, når du har stjålet?",
+   "valg": [
+    "Spil spar tilbage",
+    "Spil klør tilbage"
+   ],
+   "rigtige": [
+    "Spil spar tilbage"
+   ],
+   "hvorfor": "♦10 er et højt kort: makker beder om den højeste af de to sidefarver, spar – dér har makker sin indkomst til næste stjæler."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "laes",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     9,
+     6,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     11
+    ],
+    "C": [
+     14
+    ]
+   },
+   "haand": {
+    "S": [
+     12,
+     8
+    ],
+    "H": [],
+    "D": [
+     9,
+     8,
+     7,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     7,
+     5,
+     4,
+     3,
+     2
+    ]
+   },
+   "stik": [
+    [
+     "Øst",
+     "H10"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Du har vist renonce i hjerter, og makker spiller farven, så du kan stjæle.",
+   "spm": "Makker spiller ♥10. Hvilken farve skal du spille tilbage, når du har stjålet?",
+   "valg": [
+    "Spil ruder tilbage",
+    "Spil klør tilbage"
+   ],
+   "rigtige": [
+    "Spil ruder tilbage"
+   ],
+   "hvorfor": "♥10 er et højt kort: makker beder om den højeste af de to sidefarver, ruder – dér har makker sin indkomst til næste stjæler."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "laes",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     14,
+     13,
+     11,
+     10,
+     6
+    ],
+    "H": [
+     14,
+     2
+    ],
+    "D": [
+     11,
+     9,
+     7
+    ],
+    "C": [
+     9,
+     6,
+     3
+    ]
+   },
+   "haand": {
+    "S": [
+     9,
+     5,
+     4
+    ],
+    "H": [
+     13,
+     10,
+     7,
+     5,
+     3
+    ],
+    "D": [],
+    "C": [
+     13,
+     11,
+     10,
+     7,
+     5
+    ]
+   },
+   "stik": [
+    [
+     "Øst",
+     "D2"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Du har vist renonce i ruder, og makker spiller farven, så du kan stjæle.",
+   "spm": "Makker spiller ♦2. Hvilken farve skal du spille tilbage, når du har stjålet?",
+   "valg": [
+    "Spil hjerter tilbage",
+    "Spil klør tilbage"
+   ],
+   "rigtige": [
+    "Spil klør tilbage"
+   ],
+   "hvorfor": "♦2 er et lavt kort: makker beder om den laveste af de to sidefarver, klør – dér har makker sin indkomst til næste stjæler."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "laes",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     11,
+     5,
+     3
+    ],
+    "H": [
+     7,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     8,
+     7
+    ]
+   },
+   "haand": {
+    "S": [
+     13,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     10,
+     8,
+     2
+    ],
+    "D": [],
+    "C": [
+     12,
+     11,
+     10,
+     4
+    ]
+   },
+   "stik": [
+    [
+     "Øst",
+     "D2"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Du har vist renonce i ruder, og makker spiller farven, så du kan stjæle.",
+   "spm": "Makker spiller ♦2. Hvilken farve skal du spille tilbage, når du har stjålet?",
+   "valg": [
+    "Spil hjerter tilbage",
+    "Spil klør tilbage"
+   ],
+   "rigtige": [
+    "Spil klør tilbage"
+   ],
+   "hvorfor": "♦2 er et lavt kort: makker beder om den laveste af de to sidefarver, klør – dér har makker sin indkomst til næste stjæler."
+  },
+  {
+   "situation": "ruff_retur",
+   "mode": "laes",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     10,
+     4
+    ],
+    "H": [
+     9,
+     8,
+     2
+    ],
+    "D": [
+     11,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     7,
+     2
+    ]
+   },
+   "haand": {
+    "S": [],
+    "H": [
+     12,
+     11,
+     10,
+     5
+    ],
+    "D": [
+     13,
+     9,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     8,
+     6,
+     5,
+     3
+    ]
+   },
+   "stik": [
+    [
+     "Øst",
+     "S2"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Du har vist renonce i spar, og makker spiller farven, så du kan stjæle.",
+   "spm": "Makker spiller ♠2. Hvilken farve skal du spille tilbage, når du har stjålet?",
+   "valg": [
+    "Spil ruder tilbage",
+    "Spil klør tilbage"
+   ],
+   "rigtige": [
+    "Spil klør tilbage"
+   ],
+   "hvorfor": "♠2 er et lavt kort: makker beder om den laveste af de to sidefarver, klør – dér har makker sin indkomst til næste stjæler."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "giv",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     14,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     7,
+     6,
+     4
+    ],
+    "D": [
+     11,
+     8,
+     5
+    ],
+    "C": []
+   },
+   "haand": {
+    "S": [
+     12,
+     9,
+     2
+    ],
+    "H": [
+     10,
+     8,
+     5
+    ],
+    "D": [
+     14,
+     4
+    ],
+    "C": [
+     11,
+     10,
+     8,
+     6,
+     2
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "C14"
+    ],
+    [
+     "Nord",
+     "C12"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Makker spiller ♣E ud, og bordet har singleton ♣D. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Hvilket kort lægger du?",
+   "valg": [
+    "C11",
+    "C10",
+    "C8",
+    "C6",
+    "C2"
+   ],
+   "rigtige": [
+    "C2"
+   ],
+   "hvorfor": "Du vil have ruder (♦ E 4). Den er den laveste af de to sidefarver (hjerter og ruder): læg et lavt kort, ♣2."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "giv",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     11,
+     6
+    ],
+    "H": [
+     13,
+     10,
+     4,
+     2
+    ],
+    "D": [],
+    "C": [
+     12,
+     11,
+     10,
+     9,
+     8,
+     2
+    ]
+   },
+   "haand": {
+    "S": [
+     7,
+     5
+    ],
+    "H": [
+     11,
+     8,
+     6
+    ],
+    "D": [
+     9,
+     6,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     6,
+     3
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "D14"
+    ],
+    [
+     "Nord",
+     "D5"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Makker spiller ♦E ud, og bordet har singleton ♦5. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Hvilket kort lægger du?",
+   "valg": [
+    "D9",
+    "D6",
+    "D4",
+    "D3",
+    "D2"
+   ],
+   "rigtige": [
+    "D2"
+   ],
+   "hvorfor": "Du vil have klør (♣ E 6 3). Den er den laveste af de to sidefarver (spar og klør): læg et lavt kort, ♦2."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "giv",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     12,
+     11,
+     10,
+     9,
+     7,
+     6
+    ],
+    "H": [],
+    "D": [
+     10,
+     8,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     8
+    ]
+   },
+   "haand": {
+    "S": [
+     4
+    ],
+    "H": [
+     12,
+     10,
+     9,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     5,
+     3
+    ],
+    "C": [
+     10,
+     3,
+     2
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "H14"
+    ],
+    [
+     "Nord",
+     "H7"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Makker spiller ♥E ud, og bordet har singleton ♥7. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Hvilket kort lægger du?",
+   "valg": [
+    "H12",
+    "H10",
+    "H9",
+    "H3"
+   ],
+   "rigtige": [
+    "H10"
+   ],
+   "hvorfor": "Du vil have ruder (♦ K D 9 5 3). Den er den højeste af de to sidefarver (ruder og klør): læg et højt kort, ♥10."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "giv",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     13,
+     9,
+     8,
+     5,
+     2
+    ],
+    "H": [
+     4,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     10,
+     2
+    ],
+    "C": []
+   },
+   "haand": {
+    "S": [
+     14,
+     11,
+     10
+    ],
+    "H": [
+     14,
+     7,
+     5
+    ],
+    "D": [
+     8,
+     4
+    ],
+    "C": [
+     7,
+     6,
+     4,
+     3,
+     2
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "C14"
+    ],
+    [
+     "Nord",
+     "C12"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Makker spiller ♣E ud, og bordet har singleton ♣D. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Hvilket kort lægger du?",
+   "valg": [
+    "C7",
+    "C6",
+    "C4",
+    "C3",
+    "C2"
+   ],
+   "rigtige": [
+    "C7"
+   ],
+   "hvorfor": "Du vil have hjerter (♥ E 7 5). Den er den højeste af de to sidefarver (hjerter og ruder): læg et højt kort, ♣7."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "giv",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Øst",
+   "bordet": {
+    "S": [],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     10,
+     7,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     3,
+     2
+    ],
+    "C": [
+     8
+    ]
+   },
+   "haand": {
+    "S": [
+     11,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     8,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     7
+    ],
+    "C": [
+     11,
+     3
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "S14"
+    ],
+    [
+     "Nord",
+     "S12"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Makker spiller ♠E ud, og bordet har singleton ♠D. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Hvilket kort lægger du?",
+   "valg": [
+    "S11",
+    "S7",
+    "S3",
+    "S2"
+   ],
+   "rigtige": [
+    "S7"
+   ],
+   "hvorfor": "Du vil have ruder (♦ K D 9 7). Den er den højeste af de to sidefarver (ruder og klør): læg et højt kort, ♠7."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "giv",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Øst",
+   "bordet": {
+    "S": [],
+    "H": [
+     11,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     8
+    ],
+    "C": [
+     13,
+     12,
+     10,
+     8,
+     2
+    ]
+   },
+   "haand": {
+    "S": [
+     6,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     7,
+     6,
+     3
+    ],
+    "D": [
+     11,
+     7,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     11
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "S14"
+    ],
+    [
+     "Nord",
+     "S8"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Makker spiller ♠E ud, og bordet har singleton ♠8. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Hvilket kort lægger du?",
+   "valg": [
+    "S6",
+    "S4",
+    "S3",
+    "S2"
+   ],
+   "rigtige": [
+    "S2"
+   ],
+   "hvorfor": "Du vil have klør (♣ E B). Den er den laveste af de to sidefarver (ruder og klør): læg et lavt kort, ♠2."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "giv",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     14,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     9
+    ],
+    "D": [
+     14,
+     12,
+     8,
+     7,
+     5,
+     4
+    ],
+    "C": []
+   },
+   "haand": {
+    "S": [
+     10,
+     8,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     8
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     9,
+     8,
+     7,
+     4,
+     3
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "C14"
+    ],
+    [
+     "Nord",
+     "C10"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Makker spiller ♣E ud, og bordet har singleton ♣10. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Hvilket kort lægger du?",
+   "valg": [
+    "C9",
+    "C8",
+    "C7",
+    "C4",
+    "C3"
+   ],
+   "rigtige": [
+    "C9"
+   ],
+   "hvorfor": "Du vil have hjerter (♥ E D B 8). Den er den højeste af de to sidefarver (hjerter og ruder): læg et højt kort, ♣9."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "giv",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     8,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     9,
+     6,
+     2
+    ],
+    "C": []
+   },
+   "haand": {
+    "S": [
+     14,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     10,
+     7
+    ],
+    "D": [
+     13,
+     12,
+     7
+    ],
+    "C": [
+     11,
+     8,
+     5
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "C14"
+    ],
+    [
+     "Nord",
+     "C3"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Makker spiller ♣E ud, og bordet har singleton ♣3. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Hvilket kort lægger du?",
+   "valg": [
+    "C11",
+    "C8",
+    "C5"
+   ],
+   "rigtige": [
+    "C5"
+   ],
+   "hvorfor": "Du vil have ruder (♦ K D 7). Den er den laveste af de to sidefarver (hjerter og ruder): læg et lavt kort, ♣5."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "giv",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     13,
+     12,
+     11,
+     7,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     9,
+     6,
+     2
+    ],
+    "D": [
+     12,
+     4
+    ],
+    "C": []
+   },
+   "haand": {
+    "S": [
+     10,
+     4
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     5,
+     3
+    ],
+    "D": [
+     10,
+     8,
+     3,
+     2
+    ],
+    "C": [
+     10,
+     4
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "C14"
+    ],
+    [
+     "Nord",
+     "C3"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Makker spiller ♣E ud, og bordet har singleton ♣3. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Hvilket kort lægger du?",
+   "valg": [
+    "C10",
+    "C4"
+   ],
+   "rigtige": [
+    "C10"
+   ],
+   "hvorfor": "Du vil have hjerter (♥ E B 8 5 3). Den er den højeste af de to sidefarver (hjerter og ruder): læg et højt kort, ♣10."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "giv",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     14,
+     13,
+     12,
+     8,
+     7,
+     6
+    ],
+    "H": [
+     7,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     6
+    ],
+    "C": []
+   },
+   "haand": {
+    "S": [
+     4
+    ],
+    "H": [
+     14,
+     13,
+     6,
+     4
+    ],
+    "D": [
+     10,
+     9,
+     8,
+     4
+    ],
+    "C": [
+     10,
+     9,
+     6,
+     4
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "C14"
+    ],
+    [
+     "Nord",
+     "C8"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Makker spiller ♣E ud, og bordet har singleton ♣8. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Hvilket kort lægger du?",
+   "valg": [
+    "C10",
+    "C9",
+    "C6",
+    "C4"
+   ],
+   "rigtige": [
+    "C10"
+   ],
+   "hvorfor": "Du vil have hjerter (♥ E K 6 4). Den er den højeste af de to sidefarver (hjerter og ruder): læg et højt kort, ♣10."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "giv",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     14,
+     12,
+     8,
+     7,
+     5,
+     2
+    ],
+    "H": [],
+    "D": [
+     14,
+     5,
+     2
+    ],
+    "C": [
+     11,
+     8,
+     4
+    ]
+   },
+   "haand": {
+    "S": [
+     10,
+     9
+    ],
+    "H": [
+     10,
+     8,
+     7
+    ],
+    "D": [
+     12,
+     11,
+     10,
+     8,
+     7
+    ],
+    "C": [
+     14,
+     7,
+     6
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "H14"
+    ],
+    [
+     "Nord",
+     "H5"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Makker spiller ♥E ud, og bordet har singleton ♥5. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Hvilket kort lægger du?",
+   "valg": [
+    "H10",
+    "H8",
+    "H7"
+   ],
+   "rigtige": [
+    "H7"
+   ],
+   "hvorfor": "Du vil have klør (♣ E 7 6). Den er den laveste af de to sidefarver (ruder og klør): læg et lavt kort, ♥7."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "giv",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     13,
+     12,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     12,
+     10,
+     9,
+     7,
+     3
+    ],
+    "D": [
+     13,
+     2
+    ],
+    "C": []
+   },
+   "haand": {
+    "S": [
+     10,
+     8,
+     4,
+     2
+    ],
+    "H": [
+     11,
+     8,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     7
+    ],
+    "C": [
+     9,
+     6,
+     2
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "C14"
+    ],
+    [
+     "Nord",
+     "C8"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Makker spiller ♣E ud, og bordet har singleton ♣8. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Hvilket kort lægger du?",
+   "valg": [
+    "C9",
+    "C6",
+    "C2"
+   ],
+   "rigtige": [
+    "C2"
+   ],
+   "hvorfor": "Du vil have ruder (♦ E B 7). Den er den laveste af de to sidefarver (hjerter og ruder): læg et lavt kort, ♣2."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "laes",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     14,
+     13,
+     5,
+     3
+    ],
+    "H": [
+     9,
+     7,
+     3,
+     2
+    ],
+    "D": [],
+    "C": [
+     11,
+     9,
+     5,
+     2
+    ]
+   },
+   "haand": {
+    "S": [
+     12,
+     9,
+     2
+    ],
+    "H": [
+     13,
+     8,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     9,
+     8,
+     6
+    ],
+    "C": [
+     8
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "D14"
+    ],
+    [
+     "Nord",
+     "D7"
+    ],
+    [
+     "Øst",
+     "D2"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Du spiller ♦E ud, og bordet har singleton ♦7. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Makker lægger ♦2. Hvilken farve skal du skifte til?",
+   "valg": [
+    "Skift til spar",
+    "Skift til klør"
+   ],
+   "rigtige": [
+    "Skift til klør"
+   ],
+   "hvorfor": "♦2 er et lavt kort: makker beder om den laveste af de to sidefarver, klør."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "laes",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Vest",
+   "bordet": {
+    "S": [],
+    "H": [
+     14,
+     10,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     8,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     6,
+     4,
+     2
+    ]
+   },
+   "haand": {
+    "S": [
+     13,
+     4,
+     2
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     11,
+     5
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     8,
+     5,
+     3
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "S14"
+    ],
+    [
+     "Nord",
+     "S11"
+    ],
+    [
+     "Øst",
+     "S10"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Du spiller ♠E ud, og bordet har singleton ♠B. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Makker lægger ♠10. Hvilken farve skal du skifte til?",
+   "valg": [
+    "Skift til ruder",
+    "Skift til klør"
+   ],
+   "rigtige": [
+    "Skift til ruder"
+   ],
+   "hvorfor": "♠10 er et højt kort: makker beder om den højeste af de to sidefarver, ruder."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "laes",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     13,
+     10,
+     5
+    ],
+    "H": [
+     14,
+     11,
+     6
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     7,
+     6,
+     3
+    ],
+    "C": []
+   },
+   "haand": {
+    "S": [
+     11,
+     8,
+     6,
+     3
+    ],
+    "H": [
+     10,
+     9
+    ],
+    "D": [
+     9,
+     5
+    ],
+    "C": [
+     13,
+     8,
+     6,
+     3
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "C14"
+    ],
+    [
+     "Nord",
+     "C9"
+    ],
+    [
+     "Øst",
+     "C2"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Du spiller ♣E ud, og bordet har singleton ♣9. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Makker lægger ♣2. Hvilken farve skal du skifte til?",
+   "valg": [
+    "Skift til spar",
+    "Skift til ruder"
+   ],
+   "rigtige": [
+    "Skift til ruder"
+   ],
+   "hvorfor": "♣2 er et lavt kort: makker beder om den laveste af de to sidefarver, ruder."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "laes",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     14,
+     13,
+     12,
+     10,
+     5,
+     4,
+     2
+    ],
+    "H": [],
+    "D": [
+     14,
+     13,
+     6
+    ],
+    "C": [
+     9,
+     2
+    ]
+   },
+   "haand": {
+    "S": [
+     11,
+     7,
+     3
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     2
+    ],
+    "D": [
+     11,
+     10,
+     5,
+     3
+    ],
+    "C": [
+     10
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "H14"
+    ],
+    [
+     "Nord",
+     "H5"
+    ],
+    [
+     "Øst",
+     "H3"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Du spiller ♥E ud, og bordet har singleton ♥5. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Makker lægger ♥3. Hvilken farve skal du skifte til?",
+   "valg": [
+    "Skift til ruder",
+    "Skift til klør"
+   ],
+   "rigtige": [
+    "Skift til klør"
+   ],
+   "hvorfor": "♥3 er et lavt kort: makker beder om den laveste af de to sidefarver, klør."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "laes",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Vest",
+   "bordet": {
+    "S": [],
+    "H": [
+     13
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     8,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     5
+    ]
+   },
+   "haand": {
+    "S": [
+     13,
+     11,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     7,
+     3
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     8,
+     7,
+     4,
+     2
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "S14"
+    ],
+    [
+     "Nord",
+     "S7"
+    ],
+    [
+     "Øst",
+     "S2"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Du spiller ♠E ud, og bordet har singleton ♠7. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Makker lægger ♠2. Hvilken farve skal du skifte til?",
+   "valg": [
+    "Skift til ruder",
+    "Skift til klør"
+   ],
+   "rigtige": [
+    "Skift til klør"
+   ],
+   "hvorfor": "♠2 er et lavt kort: makker beder om den laveste af de to sidefarver, klør."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "laes",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Vest",
+   "bordet": {
+    "S": [],
+    "H": [
+     9,
+     7,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     10,
+     6,
+     4
+    ]
+   },
+   "haand": {
+    "S": [
+     13,
+     11,
+     6
+    ],
+    "H": [
+     11,
+     3
+    ],
+    "D": [
+     7,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     8,
+     5
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "S14"
+    ],
+    [
+     "Nord",
+     "S9"
+    ],
+    [
+     "Øst",
+     "S10"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Du spiller ♠E ud, og bordet har singleton ♠9. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Makker lægger ♠10. Hvilken farve skal du skifte til?",
+   "valg": [
+    "Skift til ruder",
+    "Skift til klør"
+   ],
+   "rigtige": [
+    "Skift til ruder"
+   ],
+   "hvorfor": "♠10 er et højt kort: makker beder om den højeste af de to sidefarver, ruder."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "laes",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Vest",
+   "bordet": {
+    "S": [],
+    "H": [
+     13,
+     11,
+     9,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     10
+    ],
+    "C": [
+     14,
+     12,
+     8,
+     7
+    ]
+   },
+   "haand": {
+    "S": [
+     13,
+     11,
+     10
+    ],
+    "H": [
+     14,
+     12,
+     7,
+     4
+    ],
+    "D": [
+     5,
+     3,
+     2
+    ],
+    "C": [
+     10,
+     4
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "S14"
+    ],
+    [
+     "Nord",
+     "S6"
+    ],
+    [
+     "Øst",
+     "S9"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Du spiller ♠E ud, og bordet har singleton ♠6. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Makker lægger ♠9. Hvilken farve skal du skifte til?",
+   "valg": [
+    "Skift til ruder",
+    "Skift til klør"
+   ],
+   "rigtige": [
+    "Skift til ruder"
+   ],
+   "hvorfor": "♠9 er et højt kort: makker beder om den højeste af de to sidefarver, ruder."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "laes",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     14,
+     13,
+     12,
+     10,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     4
+    ],
+    "D": [
+     14,
+     9
+    ],
+    "C": []
+   },
+   "haand": {
+    "S": [
+     11
+    ],
+    "H": [
+     11,
+     7,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     10,
+     6
+    ],
+    "C": [
+     13,
+     6,
+     5,
+     3
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "C14"
+    ],
+    [
+     "Nord",
+     "C7"
+    ],
+    [
+     "Øst",
+     "C2"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Du spiller ♣E ud, og bordet har singleton ♣7. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Makker lægger ♣2. Hvilken farve skal du skifte til?",
+   "valg": [
+    "Skift til hjerter",
+    "Skift til ruder"
+   ],
+   "rigtige": [
+    "Skift til ruder"
+   ],
+   "hvorfor": "♣2 er et lavt kort: makker beder om den laveste af de to sidefarver, ruder."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "laes",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     7,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     7,
+     5,
+     4
+    ],
+    "D": [],
+    "C": [
+     5,
+     4,
+     3,
+     2
+    ]
+   },
+   "haand": {
+    "S": [
+     11,
+     8,
+     5,
+     2
+    ],
+    "H": [
+     11,
+     8,
+     3
+    ],
+    "D": [
+     13,
+     5
+    ],
+    "C": [
+     11,
+     8,
+     7
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "D14"
+    ],
+    [
+     "Nord",
+     "D2"
+    ],
+    [
+     "Øst",
+     "D10"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Du spiller ♦E ud, og bordet har singleton ♦2. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Makker lægger ♦10. Hvilken farve skal du skifte til?",
+   "valg": [
+    "Skift til spar",
+    "Skift til klør"
+   ],
+   "rigtige": [
+    "Skift til spar"
+   ],
+   "hvorfor": "♦10 er et højt kort: makker beder om den højeste af de to sidefarver, spar."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "laes",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Vest",
+   "bordet": {
+    "S": [],
+    "H": [
+     14,
+     13,
+     10,
+     7,
+     4
+    ],
+    "D": [
+     11,
+     8,
+     2
+    ],
+    "C": [
+     14,
+     9,
+     8,
+     5
+    ]
+   },
+   "haand": {
+    "S": [
+     13,
+     10,
+     8,
+     5,
+     2
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     13,
+     12,
+     7,
+     3,
+     2
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "S14"
+    ],
+    [
+     "Nord",
+     "S6"
+    ],
+    [
+     "Øst",
+     "S9"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Du spiller ♠E ud, og bordet har singleton ♠6. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Makker lægger ♠9. Hvilken farve skal du skifte til?",
+   "valg": [
+    "Skift til ruder",
+    "Skift til klør"
+   ],
+   "rigtige": [
+    "Skift til ruder"
+   ],
+   "hvorfor": "♠9 er et højt kort: makker beder om den højeste af de to sidefarver, ruder."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "laes",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     13,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     6,
+     5
+    ],
+    "D": [],
+    "C": [
+     14,
+     10,
+     9,
+     6,
+     3
+    ]
+   },
+   "haand": {
+    "S": [
+     9,
+     8,
+     7,
+     4
+    ],
+    "H": [
+     10,
+     7,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     3
+    ],
+    "C": [
+     4
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "D14"
+    ],
+    [
+     "Nord",
+     "D10"
+    ],
+    [
+     "Øst",
+     "D8"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Du spiller ♦E ud, og bordet har singleton ♦10. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Makker lægger ♦8. Hvilken farve skal du skifte til?",
+   "valg": [
+    "Skift til spar",
+    "Skift til klør"
+   ],
+   "rigtige": [
+    "Skift til spar"
+   ],
+   "hvorfor": "♦8 er et højt kort: makker beder om den højeste af de to sidefarver, spar."
+  },
+  {
+   "situation": "doed_udspil",
+   "mode": "laes",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     10,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     7,
+     6,
+     5
+    ],
+    "D": [
+     11,
+     8,
+     3
+    ],
+    "C": []
+   },
+   "haand": {
+    "S": [
+     9,
+     4
+    ],
+    "H": [
+     10,
+     8,
+     3
+    ],
+    "D": [
+     12,
+     9
+    ],
+    "C": [
+     13,
+     10,
+     5,
+     4,
+     2
+    ]
+   },
+   "stik": [
+    [
+     "Vest",
+     "C14"
+    ],
+    [
+     "Nord",
+     "C3"
+    ],
+    [
+     "Øst",
+     "C9"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Du spiller ♣E ud, og bordet har singleton ♣3. At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.",
+   "spm": "Makker lægger ♣9. Hvilken farve skal du skifte til?",
+   "valg": [
+    "Skift til spar",
+    "Skift til ruder"
+   ],
+   "rigtige": [
+    "Skift til spar"
+   ],
+   "hvorfor": "♣9 er et højt kort: makker beder om den højeste af de to sidefarver, spar."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "giv",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     10,
+     9,
+     8
+    ],
+    "H": [
+     13,
+     12,
+     8,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     3
+    ],
+    "C": []
+   },
+   "haand": {
+    "S": [],
+    "H": [
+     11,
+     9,
+     5
+    ],
+    "D": [
+     6,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     11,
+     9,
+     6,
+     2
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "S13"
+    ],
+    [
+     "Vest",
+     "S4"
+    ],
+    [
+     "Nord",
+     "S2"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Spilfører spiller trumf, og du kan ikke bekende – det er dit første afkast.",
+   "spm": "Hvilket kort kaster du?",
+   "valg": [
+    "H11",
+    "H9",
+    "H5",
+    "D6",
+    "D5",
+    "D2",
+    "C14",
+    "C13",
+    "C12",
+    "C11",
+    "C9",
+    "C6",
+    "C2"
+   ],
+   "rigtige": [
+    "H5",
+    "D2"
+   ],
+   "hvorfor": "Du vil have klør (♣ E K D B 9 6 2). Kast i en farve, du ikke vil have, med et højt kort for den højeste af de to andre farver og et lavt for den laveste – ♥5: de to andre farver er klør og ruder, og klør er den laveste; ♦2: de to andre farver er klør og hjerter, og klør er den laveste."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "giv",
+   "kontrakt": "3NT",
+   "trumf": null,
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     9,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     10
+    ],
+    "C": [
+     13,
+     4,
+     3
+    ]
+   },
+   "haand": {
+    "S": [
+     14,
+     13,
+     12,
+     7,
+     2
+    ],
+    "H": [
+     10,
+     4,
+     3
+    ],
+    "D": [
+     8,
+     7,
+     6,
+     5,
+     2
+    ],
+    "C": []
+   },
+   "stik": [
+    [
+     "Syd",
+     "C14"
+    ],
+    [
+     "Vest",
+     "C5"
+    ],
+    [
+     "Nord",
+     "C2"
+    ]
+   ],
+   "tekst": "Kontrakten er 3NT af Syd. Spilfører spiller sin lange farve, klør, og du kan ikke bekende – det er dit første afkast.",
+   "spm": "Hvilket kort kaster du?",
+   "valg": [
+    "S14",
+    "S13",
+    "S12",
+    "S7",
+    "S2",
+    "H10",
+    "H4",
+    "H3",
+    "D8",
+    "D7",
+    "D6",
+    "D5",
+    "D2"
+   ],
+   "rigtige": [
+    "H10",
+    "D8"
+   ],
+   "hvorfor": "Du vil have spar (♠ E K D 7 2). Kast i en farve, du ikke vil have, med et højt kort for den højeste af de to andre farver og et lavt for den laveste – ♥10: de to andre farver er spar og ruder, og spar er den højeste; ♦8: de to andre farver er spar og hjerter, og spar er den højeste."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "giv",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     11,
+     10,
+     3
+    ],
+    "H": [
+     13,
+     10,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     10,
+     5
+    ],
+    "C": []
+   },
+   "haand": {
+    "S": [],
+    "H": [
+     11,
+     9,
+     7,
+     5
+    ],
+    "D": [
+     8,
+     7,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     4,
+     3,
+     2
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "S14"
+    ],
+    [
+     "Vest",
+     "S5"
+    ],
+    [
+     "Nord",
+     "S2"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Spilfører spiller trumf, og du kan ikke bekende – det er dit første afkast.",
+   "spm": "Hvilket kort kaster du?",
+   "valg": [
+    "H11",
+    "H9",
+    "H7",
+    "H5",
+    "D8",
+    "D7",
+    "D6",
+    "C14",
+    "C13",
+    "C10",
+    "C4",
+    "C3",
+    "C2"
+   ],
+   "rigtige": [
+    "H5",
+    "D6"
+   ],
+   "hvorfor": "Du vil have klør (♣ E K 10 4 3 2). Kast i en farve, du ikke vil have, med et højt kort for den højeste af de to andre farver og et lavt for den laveste – ♥5: de to andre farver er klør og ruder, og klør er den laveste; ♦6: de to andre farver er klør og hjerter, og klør er den laveste."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "giv",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     11,
+     5
+    ],
+    "H": [
+     12,
+     11,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     8,
+     5,
+     3
+    ],
+    "C": [
+     10
+    ]
+   },
+   "haand": {
+    "S": [
+     10,
+     7,
+     4,
+     2
+    ],
+    "H": [],
+    "D": [
+     6,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     8,
+     5,
+     4,
+     3
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "H14"
+    ],
+    [
+     "Vest",
+     "H7"
+    ],
+    [
+     "Nord",
+     "H2"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Spilfører spiller trumf, og du kan ikke bekende – det er dit første afkast.",
+   "spm": "Hvilket kort kaster du?",
+   "valg": [
+    "S10",
+    "S7",
+    "S4",
+    "S2",
+    "D6",
+    "D2",
+    "C14",
+    "C12",
+    "C9",
+    "C8",
+    "C5",
+    "C4",
+    "C3"
+   ],
+   "rigtige": [
+    "S2",
+    "D2"
+   ],
+   "hvorfor": "Du vil have klør (♣ E D 9 8 5 4 3). Kast i en farve, du ikke vil have, med et højt kort for den højeste af de to andre farver og et lavt for den laveste – ♠2: de to andre farver er klør og ruder, og klør er den laveste; ♦2: de to andre farver er klør og spar, og klør er den laveste."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "giv",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     13,
+     7,
+     5
+    ],
+    "H": [
+     9,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     9
+    ],
+    "C": [
+     7,
+     6,
+     2
+    ]
+   },
+   "haand": {
+    "S": [],
+    "H": [
+     14,
+     10,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     11,
+     7,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     5,
+     4
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "S14"
+    ],
+    [
+     "Vest",
+     "S2"
+    ],
+    [
+     "Nord",
+     "S3"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Spilfører spiller trumf, og du kan ikke bekende – det er dit første afkast.",
+   "spm": "Hvilket kort kaster du?",
+   "valg": [
+    "H14",
+    "H10",
+    "H8",
+    "H7",
+    "H6",
+    "D11",
+    "D7",
+    "D5",
+    "D3",
+    "D2",
+    "C11",
+    "C5",
+    "C4"
+   ],
+   "rigtige": [
+    "D7"
+   ],
+   "hvorfor": "Du vil have hjerter (♥ E 10 8 7 6). Kast i en farve, du ikke vil have, med et højt kort for den højeste af de to andre farver og et lavt for den laveste – ♦7: de to andre farver er hjerter og klør, og hjerter er den højeste."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "giv",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     10,
+     9,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     8
+    ],
+    "D": [
+     13,
+     10
+    ],
+    "C": [
+     14,
+     10,
+     7
+    ]
+   },
+   "haand": {
+    "S": [
+     11,
+     8,
+     7,
+     3
+    ],
+    "H": [],
+    "D": [
+     14,
+     8,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     9,
+     5,
+     4,
+     2
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "H13"
+    ],
+    [
+     "Vest",
+     "H2"
+    ],
+    [
+     "Nord",
+     "H6"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Spilfører spiller trumf, og du kan ikke bekende – det er dit første afkast.",
+   "spm": "Hvilket kort kaster du?",
+   "valg": [
+    "S11",
+    "S8",
+    "S7",
+    "S3",
+    "D14",
+    "D8",
+    "D6",
+    "D5",
+    "D2",
+    "C9",
+    "C5",
+    "C4",
+    "C2"
+   ],
+   "rigtige": [
+    "S8",
+    "C2"
+   ],
+   "hvorfor": "Du vil have ruder (♦ E 8 6 5 2). Kast i en farve, du ikke vil have, med et højt kort for den højeste af de to andre farver og et lavt for den laveste – ♠8: de to andre farver er ruder og klør, og ruder er den højeste; ♣2: de to andre farver er ruder og spar, og ruder er den laveste."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "giv",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     13,
+     7,
+     5
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     9,
+     6
+    ],
+    "D": [
+     12,
+     4
+    ],
+    "C": [
+     14,
+     5
+    ]
+   },
+   "haand": {
+    "S": [
+     11,
+     10,
+     9,
+     2
+    ],
+    "H": [],
+    "D": [
+     14,
+     9,
+     8,
+     6,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     8
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "H14"
+    ],
+    [
+     "Vest",
+     "H3"
+    ],
+    [
+     "Nord",
+     "H2"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Spilfører spiller trumf, og du kan ikke bekende – det er dit første afkast.",
+   "spm": "Hvilket kort kaster du?",
+   "valg": [
+    "S11",
+    "S10",
+    "S9",
+    "S2",
+    "D14",
+    "D9",
+    "D8",
+    "D6",
+    "D5",
+    "D3",
+    "D2",
+    "C11",
+    "C8"
+   ],
+   "rigtige": [
+    "S10",
+    "C8"
+   ],
+   "hvorfor": "Du vil have ruder (♦ E 9 8 6 5 3 2). Kast i en farve, du ikke vil have, med et højt kort for den højeste af de to andre farver og et lavt for den laveste – ♠10: de to andre farver er ruder og klør, og ruder er den højeste; ♣8: de to andre farver er ruder og spar, og ruder er den laveste."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "giv",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     2
+    ],
+    "H": [
+     14,
+     11,
+     7
+    ],
+    "D": [
+     14,
+     7,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     10,
+     7,
+     3
+    ]
+   },
+   "haand": {
+    "S": [
+     11,
+     8,
+     6,
+     5,
+     4
+    ],
+    "H": [],
+    "D": [
+     11,
+     8,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     6
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "H13"
+    ],
+    [
+     "Vest",
+     "H3"
+    ],
+    [
+     "Nord",
+     "H6"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Spilfører spiller trumf, og du kan ikke bekende – det er dit første afkast.",
+   "spm": "Hvilket kort kaster du?",
+   "valg": [
+    "S11",
+    "S8",
+    "S6",
+    "S5",
+    "S4",
+    "D11",
+    "D8",
+    "D3",
+    "D2",
+    "C14",
+    "C13",
+    "C9",
+    "C6"
+   ],
+   "rigtige": [
+    "S4",
+    "D2"
+   ],
+   "hvorfor": "Du vil have klør (♣ E K 9 6). Kast i en farve, du ikke vil have, med et højt kort for den højeste af de to andre farver og et lavt for den laveste – ♠4: de to andre farver er klør og ruder, og klør er den laveste; ♦2: de to andre farver er klør og spar, og klør er den laveste."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "giv",
+   "kontrakt": "3NT",
+   "trumf": null,
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     10,
+     9
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     8,
+     7,
+     6,
+     2
+    ],
+    "C": [
+     10,
+     3
+    ]
+   },
+   "haand": {
+    "S": [
+     8,
+     7,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     7,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     10,
+     4
+    ],
+    "C": []
+   },
+   "stik": [
+    [
+     "Syd",
+     "C14"
+    ],
+    [
+     "Vest",
+     "C4"
+    ],
+    [
+     "Nord",
+     "C2"
+    ]
+   ],
+   "tekst": "Kontrakten er 3NT af Syd. Spilfører spiller sin lange farve, klør, og du kan ikke bekende – det er dit første afkast.",
+   "spm": "Hvilket kort kaster du?",
+   "valg": [
+    "S8",
+    "S7",
+    "S6",
+    "S4",
+    "S3",
+    "H14",
+    "H11",
+    "H7",
+    "H4",
+    "H3",
+    "H2",
+    "D10",
+    "D4"
+   ],
+   "rigtige": [
+    "S8",
+    "D4"
+   ],
+   "hvorfor": "Du vil have hjerter (♥ E B 7 4 3 2). Kast i en farve, du ikke vil have, med et højt kort for den højeste af de to andre farver og et lavt for den laveste – ♠8: de to andre farver er hjerter og ruder, og hjerter er den højeste; ♦4: de to andre farver er hjerter og spar, og hjerter er den laveste."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "giv",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     12,
+     10,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     4,
+     3
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     14,
+     7
+    ]
+   },
+   "haand": {
+    "S": [],
+    "H": [
+     10
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     7,
+     6,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     11,
+     10,
+     6,
+     3
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "S13"
+    ],
+    [
+     "Vest",
+     "S3"
+    ],
+    [
+     "Nord",
+     "S5"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Spilfører spiller trumf, og du kan ikke bekende – det er dit første afkast.",
+   "spm": "Hvilket kort kaster du?",
+   "valg": [
+    "H10",
+    "D14",
+    "D13",
+    "D9",
+    "D7",
+    "D6",
+    "D5",
+    "D4",
+    "D2",
+    "C11",
+    "C10",
+    "C6",
+    "C3"
+   ],
+   "rigtige": [
+    "C3"
+   ],
+   "hvorfor": "Du vil have ruder (♦ E K 9 7 6 5 4 2). Kast i en farve, du ikke vil have, med et højt kort for den højeste af de to andre farver og et lavt for den laveste – ♣3: de to andre farver er ruder og hjerter, og ruder er den laveste."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "giv",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     12,
+     10,
+     5,
+     3
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     13,
+     11,
+     3,
+     2
+    ],
+    "C": [
+     7,
+     5,
+     2
+    ]
+   },
+   "haand": {
+    "S": [],
+    "H": [
+     11,
+     10,
+     7,
+     2
+    ],
+    "D": [
+     9,
+     7,
+     6,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     9,
+     3
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "S14"
+    ],
+    [
+     "Vest",
+     "S4"
+    ],
+    [
+     "Nord",
+     "S2"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Spilfører spiller trumf, og du kan ikke bekende – det er dit første afkast.",
+   "spm": "Hvilket kort kaster du?",
+   "valg": [
+    "H11",
+    "H10",
+    "H7",
+    "H2",
+    "D9",
+    "D7",
+    "D6",
+    "D5",
+    "C14",
+    "C13",
+    "C11",
+    "C9",
+    "C3"
+   ],
+   "rigtige": [
+    "H2",
+    "D5"
+   ],
+   "hvorfor": "Du vil have klør (♣ E K B 9 3). Kast i en farve, du ikke vil have, med et højt kort for den højeste af de to andre farver og et lavt for den laveste – ♥2: de to andre farver er klør og ruder, og klør er den laveste; ♦5: de to andre farver er klør og hjerter, og klør er den laveste."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "giv",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Øst",
+   "bordet": {
+    "S": [
+     11,
+     10,
+     9,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     7
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     13,
+     12,
+     2
+    ]
+   },
+   "haand": {
+    "S": [
+     4
+    ],
+    "H": [],
+    "D": [
+     14,
+     13,
+     11,
+     8,
+     7,
+     6,
+     4,
+     2
+    ],
+    "C": [
+     10,
+     9,
+     7,
+     6
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "H12"
+    ],
+    [
+     "Vest",
+     "H2"
+    ],
+    [
+     "Nord",
+     "H4"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Spilfører spiller trumf, og du kan ikke bekende – det er dit første afkast.",
+   "spm": "Hvilket kort kaster du?",
+   "valg": [
+    "S4",
+    "D14",
+    "D13",
+    "D11",
+    "D8",
+    "D7",
+    "D6",
+    "D4",
+    "D2",
+    "C10",
+    "C9",
+    "C7",
+    "C6"
+   ],
+   "rigtige": [
+    "C6"
+   ],
+   "hvorfor": "Du vil have ruder (♦ E K B 8 7 6 4 2). Kast i en farve, du ikke vil have, med et højt kort for den højeste af de to andre farver og et lavt for den laveste – ♣6: de to andre farver er ruder og spar, og ruder er den laveste."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "laes",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     12,
+     11,
+     9
+    ],
+    "H": [
+     7,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     11,
+     4
+    ],
+    "C": [
+     12,
+     10,
+     8
+    ]
+   },
+   "haand": {
+    "S": [
+     13,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     12
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     9,
+     6,
+     5
+    ],
+    "C": [
+     7
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "H13"
+    ],
+    [
+     "Vest",
+     "H10"
+    ],
+    [
+     "Nord",
+     "H2"
+    ],
+    [
+     "Øst",
+     "D2"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Spilfører spiller trumf, og makker kan ikke bekende – det er makkers første afkast.",
+   "spm": "Makker kaster ♦2. Hvad beder makker om?",
+   "valg": [
+    "Makker beder om spar",
+    "Makker beder om klør"
+   ],
+   "rigtige": [
+    "Makker beder om klør"
+   ],
+   "hvorfor": "Makker kaster i ruder, som han ikke vil have. ♦2 er et lavt kort: det beder om den laveste af de to andre farver, klør."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "laes",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     13,
+     12,
+     8,
+     6,
+     4
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     4
+    ]
+   },
+   "haand": {
+    "S": [
+     11,
+     10
+    ],
+    "H": [
+     13,
+     8,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     10,
+     7
+    ],
+    "C": [
+     13,
+     8,
+     3
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "S14"
+    ],
+    [
+     "Vest",
+     "S3"
+    ],
+    [
+     "Nord",
+     "S2"
+    ],
+    [
+     "Øst",
+     "C10"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Spilfører spiller trumf, og makker kan ikke bekende – det er makkers første afkast.",
+   "spm": "Makker kaster ♣10. Hvad beder makker om?",
+   "valg": [
+    "Makker beder om hjerter",
+    "Makker beder om ruder"
+   ],
+   "rigtige": [
+    "Makker beder om hjerter"
+   ],
+   "hvorfor": "Makker kaster i klør, som han ikke vil have. ♣10 er et højt kort: det beder om den højeste af de to andre farver, hjerter."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "laes",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     11,
+     8
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     4
+    ],
+    "D": [
+     14,
+     10,
+     3
+    ],
+    "C": [
+     13,
+     7,
+     6
+    ]
+   },
+   "haand": {
+    "S": [
+     14,
+     12,
+     10,
+     6
+    ],
+    "H": [
+     13,
+     7,
+     6,
+     5
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     11,
+     8,
+     5
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "S13"
+    ],
+    [
+     "Vest",
+     "S5"
+    ],
+    [
+     "Nord",
+     "S3"
+    ],
+    [
+     "Øst",
+     "D4"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Spilfører spiller trumf, og makker kan ikke bekende – det er makkers første afkast.",
+   "spm": "Makker kaster ♦4. Hvad beder makker om?",
+   "valg": [
+    "Makker beder om hjerter",
+    "Makker beder om klør"
+   ],
+   "rigtige": [
+    "Makker beder om klør"
+   ],
+   "hvorfor": "Makker kaster i ruder, som han ikke vil have. ♦4 er et lavt kort: det beder om den laveste af de to andre farver, klør."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "laes",
+   "kontrakt": "3NT",
+   "trumf": null,
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     12,
+     9
+    ],
+    "H": [
+     13,
+     12
+    ],
+    "D": [
+     12,
+     11,
+     9,
+     8,
+     7,
+     2
+    ],
+    "C": [
+     12,
+     3
+    ]
+   },
+   "haand": {
+    "S": [
+     11,
+     10,
+     8,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     11
+    ],
+    "D": [],
+    "C": [
+     11,
+     7,
+     6,
+     4,
+     2
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "S14"
+    ],
+    [
+     "Vest",
+     "S2"
+    ],
+    [
+     "Nord",
+     "S5"
+    ],
+    [
+     "Øst",
+     "D3"
+    ]
+   ],
+   "tekst": "Kontrakten er 3NT af Syd. Spilfører spiller sin lange farve, spar, og makker kan ikke bekende – det er makkers første afkast.",
+   "spm": "Makker kaster ♦3. Hvad beder makker om?",
+   "valg": [
+    "Makker beder om hjerter",
+    "Makker beder om klør"
+   ],
+   "rigtige": [
+    "Makker beder om klør"
+   ],
+   "hvorfor": "Makker kaster i ruder, som han ikke vil have. ♦3 er et lavt kort: det beder om den laveste af de to andre farver, klør."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "laes",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     14,
+     11,
+     10,
+     9,
+     7
+    ],
+    "H": [
+     10,
+     9,
+     7
+    ],
+    "D": [
+     9
+    ],
+    "C": [
+     14,
+     10,
+     9
+    ]
+   },
+   "haand": {
+    "S": [
+     13,
+     6,
+     5
+    ],
+    "H": [
+     13,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     4,
+     2
+    ],
+    "C": [
+     2
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "S12"
+    ],
+    [
+     "Vest",
+     "S2"
+    ],
+    [
+     "Nord",
+     "S3"
+    ],
+    [
+     "Øst",
+     "H8"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Spilfører spiller trumf, og makker kan ikke bekende – det er makkers første afkast.",
+   "spm": "Makker kaster ♥8. Hvad beder makker om?",
+   "valg": [
+    "Makker beder om ruder",
+    "Makker beder om klør"
+   ],
+   "rigtige": [
+    "Makker beder om ruder"
+   ],
+   "hvorfor": "Makker kaster i hjerter, som han ikke vil have. ♥8 er et højt kort: det beder om den højeste af de to andre farver, ruder."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "laes",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     14,
+     12,
+     6,
+     5
+    ],
+    "H": [
+     12,
+     11
+    ],
+    "D": [
+     11,
+     4
+    ],
+    "C": [
+     12,
+     11,
+     6,
+     2
+    ]
+   },
+   "haand": {
+    "S": [
+     13,
+     11,
+     10
+    ],
+    "H": [
+     6,
+     5
+    ],
+    "D": [
+     9,
+     7
+    ],
+    "C": [
+     13,
+     10,
+     8,
+     7,
+     3
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "S9"
+    ],
+    [
+     "Vest",
+     "S8"
+    ],
+    [
+     "Nord",
+     "S3"
+    ],
+    [
+     "Øst",
+     "D10"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Spilfører spiller trumf, og makker kan ikke bekende – det er makkers første afkast.",
+   "spm": "Makker kaster ♦10. Hvad beder makker om?",
+   "valg": [
+    "Makker beder om hjerter",
+    "Makker beder om klør"
+   ],
+   "rigtige": [
+    "Makker beder om hjerter"
+   ],
+   "hvorfor": "Makker kaster i ruder, som han ikke vil have. ♦10 er et højt kort: det beder om den højeste af de to andre farver, hjerter."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "laes",
+   "kontrakt": "3NT",
+   "trumf": null,
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     14,
+     13,
+     2
+    ],
+    "H": [],
+    "D": [
+     11,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     8,
+     7,
+     4,
+     3
+    ]
+   },
+   "haand": {
+    "S": [
+     12,
+     11,
+     6,
+     5
+    ],
+    "H": [
+     4,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     6,
+     5
+    ],
+    "C": [
+     10
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "C14"
+    ],
+    [
+     "Vest",
+     "C5"
+    ],
+    [
+     "Nord",
+     "C2"
+    ],
+    [
+     "Øst",
+     "S8"
+    ]
+   ],
+   "tekst": "Kontrakten er 3NT af Syd. Spilfører spiller sin lange farve, klør, og makker kan ikke bekende – det er makkers første afkast.",
+   "spm": "Makker kaster ♠8. Hvad beder makker om?",
+   "valg": [
+    "Makker beder om hjerter",
+    "Makker beder om ruder"
+   ],
+   "rigtige": [
+    "Makker beder om hjerter"
+   ],
+   "hvorfor": "Makker kaster i spar, som han ikke vil have. ♠8 er et højt kort: det beder om den højeste af de to andre farver, hjerter."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "laes",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     14,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     9,
+     8
+    ],
+    "C": [
+     7,
+     4,
+     3
+    ]
+   },
+   "haand": {
+    "S": [
+     11,
+     9,
+     6
+    ],
+    "H": [
+     13,
+     10,
+     9
+    ],
+    "D": [
+     10,
+     6
+    ],
+    "C": [
+     12,
+     11,
+     8,
+     5
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "H12"
+    ],
+    [
+     "Vest",
+     "H7"
+    ],
+    [
+     "Nord",
+     "H2"
+    ],
+    [
+     "Øst",
+     "C9"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Spilfører spiller trumf, og makker kan ikke bekende – det er makkers første afkast.",
+   "spm": "Makker kaster ♣9. Hvad beder makker om?",
+   "valg": [
+    "Makker beder om spar",
+    "Makker beder om ruder"
+   ],
+   "rigtige": [
+    "Makker beder om spar"
+   ],
+   "hvorfor": "Makker kaster i klør, som han ikke vil have. ♣9 er et højt kort: det beder om den højeste af de to andre farver, spar."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "laes",
+   "kontrakt": "4♥",
+   "trumf": "H",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     2
+    ],
+    "H": [
+     13,
+     11,
+     10
+    ],
+    "D": [
+     13,
+     10,
+     9
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     7,
+     4
+    ]
+   },
+   "haand": {
+    "S": [
+     6
+    ],
+    "H": [
+     7,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     8,
+     6,
+     4
+    ],
+    "C": [
+     10,
+     8,
+     5
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "H14"
+    ],
+    [
+     "Vest",
+     "H2"
+    ],
+    [
+     "Nord",
+     "H9"
+    ],
+    [
+     "Øst",
+     "C9"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♥ af Syd. Spilfører spiller trumf, og makker kan ikke bekende – det er makkers første afkast.",
+   "spm": "Makker kaster ♣9. Hvad beder makker om?",
+   "valg": [
+    "Makker beder om spar",
+    "Makker beder om ruder"
+   ],
+   "rigtige": [
+    "Makker beder om spar"
+   ],
+   "hvorfor": "Makker kaster i klør, som han ikke vil have. ♣9 er et højt kort: det beder om den højeste af de to andre farver, spar."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "laes",
+   "kontrakt": "3NT",
+   "trumf": null,
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     14,
+     11,
+     9,
+     7,
+     2
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     13,
+     9,
+     4,
+     3
+    ],
+    "C": [
+     10,
+     8
+    ]
+   },
+   "haand": {
+    "S": [
+     13,
+     8,
+     3
+    ],
+    "H": [
+     9,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     7,
+     5
+    ],
+    "C": [
+     9,
+     7,
+     3
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "C14"
+    ],
+    [
+     "Vest",
+     "C2"
+    ],
+    [
+     "Nord",
+     "C4"
+    ],
+    [
+     "Øst",
+     "S10"
+    ]
+   ],
+   "tekst": "Kontrakten er 3NT af Syd. Spilfører spiller sin lange farve, klør, og makker kan ikke bekende – det er makkers første afkast.",
+   "spm": "Makker kaster ♠10. Hvad beder makker om?",
+   "valg": [
+    "Makker beder om hjerter",
+    "Makker beder om ruder"
+   ],
+   "rigtige": [
+    "Makker beder om hjerter"
+   ],
+   "hvorfor": "Makker kaster i spar, som han ikke vil have. ♠10 er et højt kort: det beder om den højeste af de to andre farver, hjerter."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "laes",
+   "kontrakt": "4♠",
+   "trumf": "S",
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     14,
+     10,
+     9,
+     7,
+     4,
+     3
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     7,
+     6
+    ],
+    "C": []
+   },
+   "haand": {
+    "S": [
+     13,
+     12,
+     11
+    ],
+    "H": [
+     10,
+     8,
+     2
+    ],
+    "D": [
+     5,
+     3
+    ],
+    "C": [
+     12,
+     6,
+     5,
+     3
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "S6"
+    ],
+    [
+     "Vest",
+     "S8"
+    ],
+    [
+     "Nord",
+     "S2"
+    ],
+    [
+     "Øst",
+     "D9"
+    ]
+   ],
+   "tekst": "Kontrakten er 4♠ af Syd. Spilfører spiller trumf, og makker kan ikke bekende – det er makkers første afkast.",
+   "spm": "Makker kaster ♦9. Hvad beder makker om?",
+   "valg": [
+    "Makker beder om hjerter",
+    "Makker beder om klør"
+   ],
+   "rigtige": [
+    "Makker beder om hjerter"
+   ],
+   "hvorfor": "Makker kaster i ruder, som han ikke vil have. ♦9 er et højt kort: det beder om den højeste af de to andre farver, hjerter."
+  },
+  {
+   "situation": "lav_afkast",
+   "mode": "laes",
+   "kontrakt": "3NT",
+   "trumf": null,
+   "du": "Vest",
+   "bordet": {
+    "S": [
+     8,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     8
+    ],
+    "D": [
+     14,
+     9
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     5
+    ]
+   },
+   "haand": {
+    "S": [
+     10,
+     9,
+     5
+    ],
+    "H": [
+     11,
+     10,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     12,
+     8,
+     4
+    ],
+    "C": [
+     10
+    ]
+   },
+   "stik": [
+    [
+     "Syd",
+     "C14"
+    ],
+    [
+     "Vest",
+     "C8"
+    ],
+    [
+     "Nord",
+     "C3"
+    ],
+    [
+     "Øst",
+     "D10"
+    ]
+   ],
+   "tekst": "Kontrakten er 3NT af Syd. Spilfører spiller sin lange farve, klør, og makker kan ikke bekende – det er makkers første afkast.",
+   "spm": "Makker kaster ♦10. Hvad beder makker om?",
+   "valg": [
+    "Makker beder om spar",
+    "Makker beder om hjerter"
+   ],
+   "rigtige": [
+    "Makker beder om spar"
+   ],
+   "hvorfor": "Makker kaster i ruder, som han ikke vil have. ♦10 er et højt kort: det beder om den højeste af de to andre farver, spar."
+  }
+ ]
+}
