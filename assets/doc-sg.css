@@ -75,6 +75,13 @@ main{ flex:1 1 620px; min-width:0; background:var(--sg-canvas); border-radius:va
 .doc code{ font-size:.8125rem; background:var(--sg-canvas-soft); padding:1px 6px; border-radius:6px; }
 .doc pre{ font-size:.8125rem; background:var(--sg-canvas-soft); padding:var(--sg-space-md) var(--sg-space-lg); border-radius:var(--sg-radius-md); overflow-x:auto; }
 
+/* farvenøglen (samme farver som i systemet for Makker 2 & mig) */
+.k-gron{ background:#edf3e9; } .k-bla{ background:#e9eef6; } .k-gul{ background:#faf3e0; }
+.k-brun{ background:#f7ebe0; } .k-rosa{ background:#f4e3e3; } .k-gra{ background:#f2f2f2; }
+.doc ul.legend{ list-style:none; margin:0 0 var(--sg-space-xl); padding:0; display:flex; flex-wrap:wrap; gap:var(--sg-space-sm); max-width:none; }
+.doc ul.legend li{ padding:7px 11px; border-radius:var(--sg-radius-pill); border:1px solid rgba(26,26,26,.1); font-size:.875rem; line-height:1.3; }
+.doc ul.legend strong{ font-weight:600; margin-right:4px; }
+
 /* indhold fra Claude Design-eksporten (systemet for Makker 2 & mig): inline-styles, derfor !important på skrift */
 main.export th{ font-family:var(--sg-sans) !important; font-size:.8125rem !important; font-weight:600 !important; }
 
