@@ -17,6 +17,7 @@ COLORS = {
     '#555555': BODY, '#5a6b76': BODY, '#9a7b3f': BODY, '#7a5520': BODY,              # sekundær tekst
     '#b68235': MUTE,                                                                    # rammen om »alertér«
     '#f3f2f2': SOFT,
+    '#c00000': '#c62828',                                                               # kulørrød
 }
 
 def restyle(html):

@@ -44,7 +44,7 @@
       + 'h1{font-size:22pt;margin:12pt 0 6pt}h2{font-size:15pt;margin:14pt 0 6pt}h3,h4{font-size:12pt;margin:10pt 0 4pt}'
       + 'table{border-collapse:collapse;width:100%;margin:6pt 0 10pt}'
       + 'th,td{border:1px solid #c8c8c8;padding:4pt 6pt;vertical-align:top;text-align:left}th{background:#f2f3f4}'
-      + '.su-h,.su-d{color:#c00000}'
+      + '.su-h,.su-d{color:#c62828}'
       + '.k-gron{background:#edf3e9}.k-bla{background:#e9eef6}.k-gul{background:#faf3e0}'
       + '.k-brun{background:#f7ebe0}.k-rosa{background:#f4e3e3}.k-gra{background:#f2f2f2}';
     return '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">'

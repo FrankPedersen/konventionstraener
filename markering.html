@@ -34,20 +34,39 @@
   .chip.mode{ background:var(--sg-primary-pale); }
   .ctx{ font-size:1rem; line-height:1.5; margin:0 0 var(--sg-space-lg); }
 
-  .lbl{ font-size:.75rem; line-height:1rem; font-weight:600; color:var(--sg-body); margin:0 0 var(--sg-space-xs); }
-  .hand{ max-width:19rem; background:var(--sg-canvas-soft); border-radius:var(--sg-radius-lg);
-         padding:var(--sg-space-md) var(--sg-space-lg); font-size:1.4rem; font-weight:600; line-height:1.45; }
-  .hand.dummy{ font-size:1.05rem; padding:var(--sg-space-sm) var(--sg-space-lg); }
-  .hand .row{ display:flex; align-items:center; gap:.65rem; }
-  .hand .s{ width:1.25em; text-align:center; font-size:1.3em; line-height:1; }
-  .seat{ margin-bottom:var(--sg-space-lg); }
-
-  .trick{ display:flex; flex-wrap:wrap; gap:var(--sg-space-sm) var(--sg-space-md); align-items:flex-end; margin:0 0 var(--sg-space-lg); }
-  .trick .slot{ display:flex; flex-direction:column; align-items:center; gap:var(--sg-space-xs); }
-  .trick .who{ font-size:.75rem; line-height:1rem; color:var(--sg-body); }
-  .trick .bc{ font-size:1.1rem; min-width:2.6em; padding:.4em .45em; }
-  .trick .bc.ask{ background:var(--sg-canvas-soft); border-color:transparent; color:var(--sg-body); }
-  .trick .bc.part{ box-shadow:inset 0 0 0 2px var(--sg-ink); border-color:transparent; }
+  /* Bridgebordet – BridgeTable fra designsystemet: Nord øverst, Syd nederst, Vest til venstre, Øst til højre,
+     kompasset med N, Ø, S, V i midten. Ved hver plads står kortet, pladsen har spillet i stikket (med rækkefølgen). */
+  .bt{ margin:0 0 var(--sg-space-sm); }
+  .bt-grid{ display:grid; grid-template-columns:minmax(112px,auto) 112px minmax(112px,auto); grid-template-rows:auto 112px auto;
+            gap:var(--sg-space-lg); align-items:center; justify-items:center; justify-content:center; }
+  .bt-info, .bt-notes{ align-self:start; justify-self:start; font-size:12px; line-height:16px; color:var(--sg-body); white-space:pre-line; }
+  .bt-notes{ align-self:end; }
+  .bt-seat{ display:flex; flex-direction:column; gap:var(--sg-space-xs); min-width:96px; padding:var(--sg-space-sm); border-radius:var(--sg-radius-md); }
+  .bt-seat-N, .bt-seat-S{ justify-self:center; } .bt-seat-W{ justify-self:end; } .bt-seat-E{ justify-self:start; }
+  .bt-seat.is-highlight{ background:var(--sg-primary-pale); }
+  .bt-name{ font-size:12px; font-weight:600; line-height:16px; color:var(--sg-body); }
+  .bt-compass{ position:relative; width:112px; height:112px; border-radius:var(--sg-radius-md); background:var(--sg-table); color:var(--sg-table-text); }
+  .bt-letter{ position:absolute; display:inline-flex; align-items:center; justify-content:center; min-width:24px; height:24px;
+              border-radius:var(--sg-radius-sm); font-size:14px; font-weight:600; line-height:20px; }
+  .bt-letter-N{ top:4px; left:50%; transform:translateX(-50%); } .bt-letter-S{ bottom:4px; left:50%; transform:translateX(-50%); }
+  .bt-letter-W{ left:4px; top:50%; transform:translateY(-50%); } .bt-letter-E{ right:4px; top:50%; transform:translateY(-50%); }
+  .bt-hand{ display:flex; flex-direction:column; gap:2px; font-size:16px; line-height:24px; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .bt-seat.is-highlight .bt-hand{ font-size:18px; line-height:26px; }
+  .bt-line{ display:flex; align-items:baseline; gap:var(--sg-space-sm); }
+  .bt-line .su{ width:1em; text-align:center; }
+  .bt-cards{ font-weight:600; letter-spacing:.02em; } .bt-cards.is-void{ font-weight:400; color:var(--sg-body); }
+  .bt-play{ display:inline-flex; align-items:center; gap:var(--sg-space-xs); }
+  .bt-play .ord{ font-size:12px; line-height:16px; font-weight:600; color:var(--sg-body); }
+  .bt-play .bc{ font-size:1rem; min-width:2.6em; padding:.3em .4em; }
+  .bt-play .bc.ask{ background:var(--sg-canvas-soft); border-color:transparent; color:var(--sg-body); }
+  .bt-play .bc.part{ box-shadow:inset 0 0 0 2px var(--sg-ink); border-color:transparent; }
+  @media (max-width:520px){
+    .bt-grid{ grid-template-columns:minmax(0,auto) 72px minmax(0,auto); grid-template-rows:auto 72px auto; gap:var(--sg-space-sm); }
+    .bt-compass{ width:72px; height:72px; }
+    .bt-seat{ min-width:0; padding:var(--sg-space-xs) var(--sg-space-sm); }
+    .bt-hand, .bt-seat.is-highlight .bt-hand{ font-size:15px; line-height:22px; }
+    .bt-info, .bt-notes{ font-size:11px; }
+  }
 
   .qrow{ display:flex; align-items:center; justify-content:space-between; gap:var(--sg-space-md); margin:0 0 var(--sg-space-md); }
   .qtext{ font-weight:600; font-size:1.125rem; line-height:1.4; margin:0; }
@@ -111,10 +130,7 @@
     <div class="play">
       <div class="chips"><span class="chip" id="role"></span><span class="chip mode" id="mode"></span><span class="chip" id="sitname"></span></div>
       <p class="ctx" id="ctx"></p>
-      <div class="seat"><p class="lbl">Bordet (Nord)</p><div class="hand dummy" id="dummy"></div></div>
-      <p class="lbl">Stikket</p>
-      <div class="trick" id="trick"></div>
-      <div class="seat"><p class="lbl" id="youLbl">Din hånd</p><div class="hand" id="hand"></div></div>
+      <figure class="bt" id="table"></figure>
       <button class="next" id="nextBtn">Næste hånd →</button>
     </div>
     <div class="answer">
@@ -141,19 +157,39 @@ const suitSpan = s => `<span class="su ${s === 'H' || s === 'D' ? 'su-h' : 'su-s
 const cardHtml = c => suitSpan(c[0]) + (RN[+c.slice(1)] || c.slice(1));
 // Fritekst fra puljen: escapes og farver kulørsymbolerne
 const suits = t => esc(t).replace(/[♠♥♦♣]/g, c => `<span class="su ${c === '♥' || c === '♦' ? 'su-h' : 'su-s'}">${c}</span>`);
-const handHtml = h => 'SHDC'.split('').map(s =>
-  `<div class="row"><span class="s">${suitSpan(s)}</span><span>${h[s].length ? h[s].map(r => RN[r] || r).join(' ') : '—'}</span></div>`).join('');
+// En hånd som fire linjer ♠ ♥ ♦ ♣ (BridgeHand): honnører E K D B, renonce som —
+const handHtml = h => `<div class="bt-hand">${'SHDC'.split('').map(s =>
+  `<div class="bt-line">${suitSpan(s)}<span class="bt-cards${h[s].length ? '' : ' is-void'}">${h[s].length ? h[s].map(r => RN[r] || r).join('') : '—'}</span></div>`).join('')}</div>`;
+const SEAT = { Nord: 'N', 'Øst': 'E', Syd: 'S', Vest: 'W' };
+const LETTER = { N: 'N', E: 'Ø', S: 'S', W: 'V' };
+
+// Bridgebordet (BridgeTable): bordet og din hånd vises, makker og spilfører er skjult; ved hver plads står kortet i stikket
+function tableHtml(q){
+  const partner = q.du === 'Øst' ? 'Vest' : 'Øst';
+  const role = { Nord: 'bordet', Syd: 'spilfører', [q.du]: 'dig', [partner]: 'makker' };
+  const plays = {};
+  q.stik.forEach(([p, c], i) => { plays[p] = { c, i: i + 1 }; });
+  const seat = p => {
+    const hand = p === 'Nord' ? q.bordet : p === q.du ? q.haand : null;
+    const pl = plays[p];
+    let play = '';
+    if (pl) play = `<span class="bt-play"><span class="ord">${pl.i}.</span><span class="bc${q.mode === 'laes' && p === partner ? ' part' : ''}">${cardHtml(pl.c)}</span></span>`;
+    else if (q.mode === 'giv' && p === q.du) play = `<span class="bt-play"><span class="ord">${q.stik.length + 1}.</span><span class="bc ask">?</span></span>`;
+    return `<div class="bt-seat bt-seat-${SEAT[p]}${p === q.du ? ' is-highlight' : ''}"><span class="bt-name">${p} · ${role[p]}</span>${hand ? handHtml(hand) : ''}${play}</div>`;
+  };
+  const letter = k => `<span class="bt-letter bt-letter-${k}">${LETTER[k]}</span>`;
+  return `<div class="bt-grid">`
+    + `<div class="bt-info">Spilfører: Syd\nBordet: Nord</div>${seat('Nord')}<div></div>`
+    + `${seat('Vest')}<div class="bt-compass" role="img" aria-label="Bridgebord: Nord, Øst, Syd, Vest">${letter('N')}${letter('W')}${letter('E')}${letter('S')}</div>${seat('Øst')}`
+    + `<div></div>${seat('Syd')}<div class="bt-notes">${suits('Kontrakt: ' + q.kontrakt + ' af Syd')}</div>`
+    + `</div>`;
+}
 function shuffle(a){ a = a.slice(); for (let i = a.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 
 let POOL = null, SITS = {}, Q = [], idx = 0, score = 0, results = [], answered = false, backLink = './#traen';
 
 function renderProgress(){
   $('progress').innerHTML = Q.map((_, i) => `<i class="${i < results.length ? (results[i] ? 'done' : 'done wrong') : i === idx ? 'current' : ''}"></i>`).join('');
-}
-
-function seatName(q, p){
-  const partner = q.du === 'Øst' ? 'Vest' : 'Øst';
-  return p === q.du ? 'Dig' : p === partner ? 'Makker' : p === 'Nord' ? 'Bordet' : 'Spilfører';
 }
 
 function render(){
@@ -164,14 +200,7 @@ function render(){
   $('mode').textContent = q.mode === 'giv' ? 'Giv markering' : 'Læs markering';
   $('sitname').textContent = (SITS[q.situation] || {}).titel || '';
   $('ctx').innerHTML = suits(q.tekst);
-  $('dummy').innerHTML = handHtml(q.bordet);
-  const partner = q.du === 'Øst' ? 'Vest' : 'Øst';
-  const slots = q.stik.map(([p, c]) =>
-    `<div class="slot"><span class="who">${seatName(q, p)}</span><span class="bc${q.mode === 'laes' && p === partner ? ' part' : ''}">${cardHtml(c)}</span></div>`);
-  if (q.mode === 'giv') slots.push(`<div class="slot"><span class="who">Dig</span><span class="bc ask">?</span></div>`);
-  $('trick').innerHTML = slots.join('');
-  $('youLbl').textContent = `Din hånd (${q.du})`;
-  $('hand').innerHTML = handHtml(q.haand);
+  $('table').innerHTML = tableHtml(q);
   $('q').innerHTML = suits(q.spm);
 
   $('hintBtn').setAttribute('aria-pressed', 'false');

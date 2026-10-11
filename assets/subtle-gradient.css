@@ -1,8 +1,8 @@
 /* Subtle Gradient – farver, skrift, afstande og hjørner fra designsystemet i Claude Design
    (https://claude.ai/artifact/1hqGCpSbRroTLwm79Yr9q3). Kun lyst tema.
    Skrifterne hentes på hver side: Manrope 800 og Inter 400/600 fra Google Fonts.
-   Bridgefarverne (--suit-red, --suit-black, --bid-pas, --bid-dbl) er ikke en del af designsystemet:
-   røde og sorte kulører og grønne/røde meldekort er bridgens egne konventioner. */
+   Kulørfarverne (--suit-red, --suit-black) og bordet (--sg-table, --sg-table-text) er designsystemets egne;
+   de grønne og røde meldekort (--bid-pas, --bid-dbl) er bridgens konvention. */
 :root{
   color-scheme: light;
   --sg-primary:#ff9f4a; --sg-on-primary:#1a1a1a; --sg-primary-active:#ffc48f; --sg-primary-neutral:#f7b87a; --sg-primary-pale:#fff1e3;
@@ -22,6 +22,7 @@
   --sg-shadow-float:0 12px 32px -16px rgba(15,15,15,.35);
   --sg-hairline:rgba(26,26,26,.12);
 
-  --suit-red:#c00000; --suit-black:#1a1a1a;
+  --suit-red:#c62828; --suit-black:#1a1a1a;
+  --sg-table:#1f5c4a; --sg-table-text:#ffffff;
   --bid-pas:#054d28; --bid-dbl:#a72027;
 }

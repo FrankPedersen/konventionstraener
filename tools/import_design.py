@@ -29,7 +29,7 @@ nav = json.loads(js[js.index('=') + 1:i].strip().rstrip(';'))
 body = json.loads(js[js.index('=', i) + 1:].strip().rstrip(';'))
 
 toc = []
-red = lambda t: re.sub(r'([♥♦])', r'<span style="color:#C00000">\1</span>', H.escape(t))
+red = lambda t: re.sub(r'([♥♦])', r'<span style="color:#c62828">\1</span>', H.escape(t))
 for p in nav:
     toc.append('<div class="tp"><a class="lp" href="#%s">%s</a>' % (p['id'], red(p['title'])))
     for it in p['items']:

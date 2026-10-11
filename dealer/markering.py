@@ -8,7 +8,7 @@ Markeringer i modspillet – to puljer til markering.html:
     afkast_farve    første afkast mod farvekontrakt: lavt kort kalder farven, højt kort afviser den
     afkast_sans     første afkast mod sans: kast i den farve, du ikke er interesseret i
   lavinthal – forslag, trænes før det skrives ind i systemkortet (retning som hos Makker 2 & mig):
-    ruff_retur      kortet til makkers stjæler viser returfarven
+    ruff_retur      kortet til makkers trumfning viser returfarven
     doed_udspil     bordet har singleton i makkers es-udspil: kortet viser skiftefarven
     lav_afkast      afkast i en uønsket farve viser den ønskede af de to andre farver (mod sans og farvekontrakt)
   Højt beder om den højeste af de to farver, lavt om den laveste (♠ > ♥ > ♦ > ♣).
@@ -115,7 +115,7 @@ def es_kald(H, mode):
         if grund == 'damen':
             why = f"Du har damen ({holding(H['E'], X)}): kald med det laveste kort, {kort(X, card)} – lavt = kald."
         elif grund == 'doubleton':
-            why = f"Doubleton mod farvekontrakt – du kan stjæle i tredje runde: kald med det laveste kort, {kort(X, card)}."
+            why = f"Doubleton mod farvekontrakt – du kan trumfe i tredje runde: kald med det laveste kort, {kort(X, card)}."
         else:
             why = (f"Ingen dame{' og ingen doubleton' if T else ''} ({holding(H['E'], X)}): afvis med det højeste kort, "
                    f"du har råd til, {kort(X, card)} – højt = afvisning.")
@@ -287,10 +287,10 @@ def ruff_retur(H, mode):
     if hi and (card < 7 or card == lav(E)):
         return None
     tekst = (f"Kontrakten er {kon} af Syd. Makker har vist renonce i {navn(X)}, og du er inde. "
-             f"Du spiller {navn(X)}, så makker kan stjæle.")
+             f"Du spiller {navn(X)}, så makker kan trumfe.")
     hl = 'højeste' if hi else 'laveste'
     if mode == 'giv':
-        why = (f"Du har {kort(R, 14)} og vil have makker til at spille {navn(R)} tilbage, så du kommer ind og kan give en stjæler mere. "
+        why = (f"Du har {kort(R, 14)} og vil have makker til at spille {navn(R)} tilbage, så du kommer ind og kan give makker en trumfning mere. "
                f"{navn(R).capitalize()} er den {hl} af de to sidefarver ({navn(O[0])} og {navn(O[1])}): spil et {'højt' if hi else 'lavt'} kort, {kort(X, card)}.")
         return rec('ruff_retur', 'giv', kon, T, 'Øst', H['N'], H['E'], [], tekst, "Hvilket kort spiller du?",
                    [code(X, r) for r in E], [code(X, card)], why)
@@ -299,10 +299,10 @@ def ruff_retur(H, mode):
     hiS, loS = sorted(O, key=lambda s: -ORDEN[s])
     valg = [f"Spil {navn(hiS)} tilbage", f"Spil {navn(loS)} tilbage"]
     why = (f"{kort(X, card)} er et {'højt' if hi else 'lavt'} kort: makker beder om den {hl} af de to sidefarver, {navn(R)} – "
-           f"dér har makker sin indkomst til næste stjæler.")
+           f"dér har makker sin indkomst til næste trumfning.")
     return rec('ruff_retur', 'laes', kon, T, 'Vest', H['N'], H['W'], [['Øst', code(X, card)]],
-               f"Kontrakten er {kon} af Syd. Du har vist renonce i {navn(X)}, og makker spiller farven, så du kan stjæle.",
-               f"Makker spiller {kort(X, card)}. Hvilken farve skal du spille tilbage, når du har stjålet?",
+               f"Kontrakten er {kon} af Syd. Du har vist renonce i {navn(X)}, og makker spiller farven, så du kan trumfe.",
+               f"Makker spiller {kort(X, card)}. Hvilken farve skal du spille tilbage, når du har trumfet?",
                valg, [valg[0] if hi else valg[1]], why)
 
 def doed_udspil(H, mode):
@@ -330,7 +330,7 @@ def doed_udspil(H, mode):
     d = H['N'][X][0]
     stik = [['Vest', code(X, 14)], ['Nord', code(X, d)]]
     tekst = (f"Kontrakten er {kon} af Syd. Makker spiller {kort(X, 14)} ud, og bordet har singleton {kort(X, d)}. "
-             f"At fortsætte farven giver spilfører en stjæler, så kortet viser, hvilken farve makker skal skifte til.")
+             f"At fortsætte farven giver spilfører en trumfning eller et gratis afkast, så kortet viser i stedet, hvilken farve makker skal skifte til.")
     hl = 'højeste' if hi else 'laveste'
     if mode == 'giv':
         why = (f"Du vil have {navn(W)} ({holding(H['E'], W)}). Den er den {hl} af de to sidefarver ({navn(O[0])} og {navn(O[1])}): "
@@ -389,8 +389,8 @@ def lav_afkast(H, mode):
     if mode == 'giv':
         dele = [f"{kort(u, card)}: de to andre farver er {navn(W)} og {navn(u2)}, og {navn(W)} er den {'højeste' if hi else 'laveste'}"
                 for u, card, hi, u2 in forklar]
-        why = (f"Du vil have {navn(W)} ({holding(H['E'], W)}). Kast i en farve, du ikke vil have, med et højt kort for den højeste "
-               f"af de to andre farver og et lavt for den laveste – " + '; '.join(dele) + ".")
+        why = (f"Du vil have {navn(W)} ({holding(H['E'], W)}). Kast i en uønsket farve – et højt kort beder om den højeste "
+               f"af de to andre farver, et lavt kort om den laveste: " + '; '.join(dele) + ".")
         return rec('lav_afkast', 'giv', kon, T, 'Øst', without(H['N'], played[2]), H['E'], stik, tekst, "Hvilket kort kaster du?",
                    [code(s, r) for s in SUITS for r in H['E'][s]], rigtige, why)
     u, card, hi, u2 = random.choice(forklar)
@@ -398,7 +398,7 @@ def lav_afkast(H, mode):
         return None
     hiS, loS = sorted([W, u2], key=lambda s: -ORDEN[s])
     valg = [f"Makker beder om {navn(hiS)}", f"Makker beder om {navn(loS)}"]
-    why = (f"Makker kaster i {navn(u)}, som han ikke vil have. {kort(u, card)} er et {'højt' if hi else 'lavt'} kort: "
+    why = (f"Makker kaster i {navn(u)}, en uønsket farve. {kort(u, card)} er et {'højt' if hi else 'lavt'} kort: "
            f"det beder om den {'højeste' if hi else 'laveste'} af de to andre farver, {navn(W)}.")
     return rec('lav_afkast', 'laes', kon, T, 'Vest', without(H['N'], played[2]), without(H['W'], played[1]),
                stik + [['Øst', code(u, card)]], tekst.replace('du kan ikke bekende – det er dit', 'makker kan ikke bekende – det er makkers'),
@@ -415,9 +415,9 @@ SITUATIONER = {
         "afkast_sans": {"titel": "Første afkast mod sans", "regel": "Første afkast mod sans: kast i den farve, du ikke er interesseret i."},
     },
     "lavinthal": {
-        "ruff_retur": {"titel": "Stjæler og retur", "regel": "Kortet, du spiller til makkers stjæler, viser returfarven: højt = den højeste af de to sidefarver, lavt = den laveste."},
-        "doed_udspil": {"titel": "Død udspilsfarve", "regel": "Har bordet singleton i makkers es-udspil, er dit kort farveskift: højt = den højeste af de to sidefarver, lavt = den laveste."},
-        "lav_afkast": {"titel": "Lavinthal-afkast", "regel": "Kast i en farve, du ikke vil have: højt kort beder om den højeste af de to andre farver, lavt kort om den laveste. Aldrig til trumf."},
+        "ruff_retur": {"titel": "Trumfning og retur", "regel": "Kortet, du spiller til makkers trumfning, viser returfarven: højt = den højeste af de to sidefarver, lavt = den laveste."},
+        "doed_udspil": {"titel": "Død udspilsfarve", "regel": "Har bordet singleton i makkers es-udspil, er dit kort ikke kald eller afvisning, men farvevalg: højt = den højeste af de to sidefarver, lavt = den laveste."},
+        "lav_afkast": {"titel": "Lavinthal-afkast", "regel": "Første afkast i en uønsket farve: højt kort beder om den højeste af de to andre farver, lavt kort om den laveste. Aldrig til trumf."},
     },
 }
 GEN = {"es_kald": es_kald, "k_antal": k_antal, "ny_farve_antal": ny_farve_antal, "afkast_farve": afkast_farve,
