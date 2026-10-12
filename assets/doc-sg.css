@@ -116,6 +116,12 @@ main.export th{ font-family:var(--sg-sans) !important; font-size:.8125rem !impor
   main{ padding:0; border-radius:0; }
   .hero{ padding-bottom:12pt; } .hero h1{ font-size:30pt; }
   main table{ display:table !important; overflow:visible !important; }
+  /* sideskift: en tabel holdes samlet på én side, når den kan være der (doc-export.js lægger hver tabel i sin egen
+     blok, for Chrome overholder det ikke på selve tabellen); er den længere end en side, gentages kolonneoverskrifterne.
+     En overskrift står aldrig alene nederst på en side. */
+  main table, main div:has(> table){ break-inside:avoid; }
+  main div:has(> table){ overflow:visible !important; }
+  thead{ display:table-header-group; }
   tr{ break-inside:avoid; }
   h1, h2, h3, h4{ break-after:avoid; }
   a{ color:inherit; text-decoration:none; }

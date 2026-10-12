@@ -3,6 +3,16 @@
 (function () {
   const main = document.querySelector('main');
   if (!main) return;
+  // Udskrift: hver tabel ligger i sin egen blok, så printreglerne i doc-sg.css kan holde den samlet på én side –
+  // Chrome deler ellers en tabel, der står direkte i teksten. Tabeller, der allerede har deres egen blok, røres ikke.
+  main.querySelectorAll('table').forEach(t => {
+    const p = t.parentElement;
+    if (p && p.tagName === 'DIV' && p.children.length === 1) return;
+    const box = document.createElement('div');
+    box.className = 'tabel';
+    t.before(box);
+    box.appendChild(t);
+  });
   const name = document.title.split(' — ')[0].replace(/\s*·\s*/g, ' – ').replace(/&/g, 'og').replace(/[\\/:*?"<>|]/g, '').trim() || 'Aftaler';
 
   const bar = document.createElement('div');
@@ -39,9 +49,75 @@
   const esc = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
   /* ---------- Word ---------- */
+  // Sideskift i Word: ingen række deles over to sider, og hver række holdes sammen med den næste (Words »hold sammen
+  // med næste«), så tabellen står samlet på én side, når den kan være der.
+  // Word kender kun de gamle navne (page-break-…); browserens style-objekt skriver dem om til break-…, så de skrives
+  // direkte i style-attributten.
+  const KEEP = 'page-break-after:avoid';
+  const addStyle = (el, decl) => {
+    const cur = (el.getAttribute('style') || '').trim().replace(/;+$/, '');
+    el.setAttribute('style', cur ? cur + ';' + decl : decl);   // Word afviser en style, der starter med »;«
+  };
+  // En sammenflettet celle (rowspan) foldes ud til en celle pr. række med samme baggrund og uden streg imellem, så den
+  // stadig ser sammenhængende ud: Words egne fortsættelsesceller er tomme og bryder »hold sammen med næste«.
+  function unspan(t) {
+    const hold = [];
+    [...t.querySelectorAll('tr')].forEach(tr => {
+      const cells = [...tr.children].filter(c => c.tagName === 'TH' || c.tagName === 'TD');
+      const out = [];
+      let i = 0, ci = 0;
+      const pending = () => hold.some((h, k) => k >= i && h && h.left > 0);
+      while (ci < cells.length || pending()) {
+        const h = hold[i];
+        if (h && h.left > 0) {
+          const c = document.createElement(h.src.tagName);
+          c.className = h.src.className;
+          c.setAttribute('style', 'border-top:none;' + (h.left > 1 ? 'border-bottom:none;' : ''));
+          out.push(c);
+          h.left--; i++;
+        } else if (ci < cells.length) {
+          const c = cells[ci++];
+          const span = +c.getAttribute('rowspan') || 1;
+          if (span > 1) { hold[i] = { left: span - 1, src: c }; c.removeAttribute('rowspan'); addStyle(c, 'border-bottom:none'); }
+          out.push(c);
+          i += +c.getAttribute('colspan') || 1;
+        } else i++;
+      }
+      tr.replaceChildren(...out);
+    });
+  }
+  function keepTables(c) {
+    c.querySelectorAll('table').forEach(t => {
+      unspan(t);
+      const rows = [...t.querySelectorAll('tr')];
+      rows.forEach((tr, i) => {
+        addStyle(tr, 'page-break-inside:avoid');
+        const last = i === rows.length - 1;
+        [...tr.children].forEach(cell => {
+          // cellernes egne marginer og skriftstørrelse (fra designeksporten) erstattes af Word-filens, så tabellen fylder mindre
+          cell.style.removeProperty('padding');
+          cell.style.removeProperty('font-size');
+          // en tom celle får et hårdt mellemrum – ellers mister Word »hold sammen med næste« på cellens afsnit
+          if (!cell.textContent.trim()) cell.innerHTML = '&nbsp;';
+          const ps = [...cell.children].filter(x => x.tagName === 'P');
+          if (!ps.length) cell.innerHTML = `<p style="margin:0">${cell.innerHTML}</p>`;
+          // »hold linjer sammen« på hvert afsnit, så heller ikke sidste række deles; i sidste række holdes en celles
+          // afsnit også sammen indbyrdes (Word overholder ikke page-break-inside på selve rækken)
+          const cps = [...cell.querySelectorAll('p')];
+          cps.forEach((p, k) => {
+            addStyle(p, 'page-break-inside:avoid');
+            if (!last || k < cps.length - 1) addStyle(p, KEEP);
+          });
+        });
+      });
+    });
+    return c;
+  }
+
   function word() {
     const css = 'body{font-family:Calibri,Arial,sans-serif;font-size:11pt;color:#1a1a1a}'
       + 'h1{font-size:22pt;margin:12pt 0 6pt}h2{font-size:15pt;margin:14pt 0 6pt}h3,h4{font-size:12pt;margin:10pt 0 4pt}'
+      + 'h1,h2,h3,h4{' + KEEP + '}tr{page-break-inside:avoid}'
       + 'table{border-collapse:collapse;width:100%;margin:6pt 0 10pt}'
       + 'th,td{border:1px solid #c8c8c8;padding:4pt 6pt;vertical-align:top;text-align:left}th{background:#f2f3f4}'
       + '.su-h,.su-d{color:#c62828}'
@@ -50,7 +126,7 @@
     return '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">'
       + '<head><meta charset="utf-8"><title>' + esc(name) + '</title>'
       + '<!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View><w:Zoom>100</w:Zoom></w:WordDocument></xml><![endif]-->'
-      + '<style>' + css + '</style></head><body>' + content().innerHTML + '</body></html>';
+      + '<style>' + css + '</style></head><body>' + keepTables(content()).innerHTML + '</body></html>';
   }
 
   /* ---------- Markdown ---------- */
