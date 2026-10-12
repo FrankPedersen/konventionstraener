@@ -60,6 +60,7 @@
   };
   // En sammenflettet celle (rowspan) foldes ud til en celle pr. række med samme baggrund og uden streg imellem, så den
   // stadig ser sammenhængende ud: Words egne fortsættelsesceller er tomme og bryder »hold sammen med næste«.
+  // Teksten flyttes til den midterste række, så den står centreret som på siden.
   function unspan(t) {
     const hold = [];
     [...t.querySelectorAll('tr')].forEach(tr => {
@@ -72,13 +73,19 @@
         if (h && h.left > 0) {
           const c = document.createElement(h.src.tagName);
           c.className = h.src.className;
-          c.setAttribute('style', 'border-top:none;' + (h.left > 1 ? 'border-bottom:none;' : ''));
+          const bg = h.src.style.background;
+          c.setAttribute('style', (bg ? 'background:' + bg + ';' : '') + 'border-top:none;' + (h.left > 1 ? 'border-bottom:none;' : ''));
+          if (++h.row === h.mid) { c.innerHTML = h.src.innerHTML; h.src.innerHTML = ''; }
           out.push(c);
           h.left--; i++;
         } else if (ci < cells.length) {
           const c = cells[ci++];
           const span = +c.getAttribute('rowspan') || 1;
-          if (span > 1) { hold[i] = { left: span - 1, src: c }; c.removeAttribute('rowspan'); addStyle(c, 'border-bottom:none'); }
+          if (span > 1) {
+            hold[i] = { left: span - 1, src: c, row: 0, mid: Math.floor((span - 1) / 2) };
+            c.removeAttribute('rowspan');
+            addStyle(c, 'border-bottom:none');
+          }
           out.push(c);
           i += +c.getAttribute('colspan') || 1;
         } else i++;

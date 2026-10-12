@@ -67,8 +67,10 @@ main{ flex:1 1 620px; min-width:0; background:var(--sg-canvas); border-radius:va
 .doc td{ padding:var(--sg-space-md) var(--sg-space-lg); border-bottom:1px solid var(--sg-canvas-soft); vertical-align:top; }
 .doc td strong{ font-weight:600; color:var(--sg-ink); }
 .doc td em{ color:var(--sg-body); }
-/* svarskemaer: åbnercellen strækker sig over sine rækker (rowspan), og en ny åbnergruppe får en streg over sig */
-.doc tr.gruppe > td{ border-top:2px solid var(--sg-mute); }
+/* svarskemaer (begge systemer): åbnercellen strækker sig over sine rækker (rowspan) og står lodret centreret,
+   og en ny åbnergruppe får en streg over sig */
+main td[rowspan]{ vertical-align:middle; }
+main tr.gruppe > td{ border-top:2px solid var(--sg-mute); }
 /* markeringer: kolonnerne »Mod farve og sans«, »Mod farvekontrakt« og »Mod sanskontrakt« med streg imellem;
    en tom celle (–) er dæmpet. På smalle skærme kan tabellen rulles vandret. */
 .doc table.kontrakttype{ display:table; table-layout:fixed; }
