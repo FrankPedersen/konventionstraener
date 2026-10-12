@@ -66,7 +66,7 @@ page = """<!DOCTYPE html>
      Opdatering: eksportér igen fra Claude Design og kør tools/import_design.py. -->
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/doc-sg.css?v=2026-10-13">
+<link rel="stylesheet" href="../assets/doc-sg.css?v=2026-10-14">
 </head>
 <body>
 <header class="top"><div class="in">
@@ -97,7 +97,7 @@ page = """<!DOCTYPE html>
   </main>
 </div>
 <script>""" + JS + """</script>
-<script src="../assets/doc-export.js?v=2026-10-13" defer></script>
+<script src="../assets/doc-export.js?v=2026-10-14" defer></script>
 </body>
 </html>
 """
