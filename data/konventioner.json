@@ -555,17 +555,17 @@
   "system": "forslag",
   "titel": "Flannery",
   "gruppe": "2♦-åbninger (Makker 2 & mig, bilag B)",
-  "beskrivelse": "2♦ (eller 2♥ i B4-pakken) viser 5 hjerter og 4 spar, 11–15 hp.",
+  "beskrivelse": "2♦ viser præcis 5 hjerter og 4 spar, 11–15 hp (2♥ i B4-pakken). Træn åbningen, svarene på 2♦ og åbners svar på 2NT-spørgsmålet.",
   "roller": [
    "Åbner",
    "Svarer"
   ],
-  "status": "kommer",
+  "status": "klar",
   "viden": "viden/2-over-1-makker2.html#afsnit-b1",
   "en": {
    "titel": "Flannery",
    "gruppe": "2♦ openings (Partner 2 & me, appendix B)",
-   "beskrivelse": "2♦ (or 2♥ in the B4 package) shows 5 hearts and 4 spades, 11–15 HCP."
+   "beskrivelse": "2♦ shows exactly 5 hearts and 4 spades, 11–15 HCP (2♥ in the B4 package). Practise the opening, the responses to 2♦ and opener's answers to the 2NT ask."
   }
  },
  {
@@ -609,17 +609,17 @@
   "system": "forslag",
   "titel": "Revers",
   "gruppe": "Forslag (Makker 2 & mig, bilag G)",
-  "beskrivelse": "Diskussionsoplæg, ikke vedtaget: ny højere farve billigst muligt på nyt niveau som 16+ og rundekrav – og svarers anden melding.",
+  "beskrivelse": "Diskussionsoplæg, ikke vedtaget: ny højere farve billigst muligt på nyt niveau som 16+ og rundekrav. Træn åbners valg mellem revers og gentaget farve, og svarers anden melding efter 1♣/1♦ – 1♠ – 2♥.",
   "roller": [
    "Åbner",
    "Svarer"
   ],
-  "status": "kommer",
+  "status": "klar",
   "viden": "viden/2-over-1-makker2.html#afsnit-g",
   "en": {
    "titel": "Reverses",
    "gruppe": "Proposals (Partner 2 & me, appendix G)",
-   "beskrivelse": "A discussion paper, not adopted: a new higher suit at the cheapest level as 16+ and forcing for one round – and responder's second bid."
+   "beskrivelse": "A discussion paper, not adopted: a new higher suit at the cheapest level as 16+ and forcing for one round. Practise opener's choice between a reverse and a rebid suit, and responder's second bid after 1♣/1♦ – 1♠ – 2♥."
   }
  },
  {

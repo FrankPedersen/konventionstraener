@@ -1,0 +1,8496 @@
+{
+ "situations": {
+  "aabning": {
+   "rolle": "Åbner",
+   "auction": [],
+   "calls": [
+    "Pas",
+    "1♥",
+    "1♠",
+    "1NT",
+    "2♦",
+    "2♥"
+   ],
+   "bonus": {
+    "q": "Hvad viser Flannery 2♦?",
+    "correct": "Præcis 5 hjerter og 4 spar, 11–15 hp",
+    "options": [
+     "Præcis 5 hjerter og 4 spar, 11–15 hp",
+     "En svag 2 i ruder",
+     "En svag 2 i en ukendt major (Multi)"
+    ],
+    "why": "Flannery 2♦ viser præcis 5-4 i majorerne med 11–15 hp. Med 16+ åbner man 1♥ og melder spar bagefter, så 1♥ benægter fire spar under 16 hp."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does Flannery 2♦ show?",
+     "correct": "Exactly 5 hearts and 4 spades, 11–15 HCP",
+     "options": [
+      "Exactly 5 hearts and 4 spades, 11–15 HCP",
+      "A weak two in diamonds",
+      "A weak two in an unknown major (Multi)"
+     ],
+     "why": "Flannery 2♦ shows exactly 5-4 in the majors with 11–15 HCP. With 16+ you open 1♥ and bid spades later, so 1♥ denies four spades below 16 HCP."
+    }
+   }
+  },
+  "svar": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "2♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "Pas",
+    "2♥",
+    "2♠",
+    "2NT",
+    "3♣",
+    "3♦",
+    "3♥",
+    "3♠",
+    "4♥",
+    "4♠"
+   ],
+   "bonus": {
+    "q": "Hvornår må svarer passe Flannery 2♦?",
+    "correct": "Kun med lang ruder og svag hånd",
+    "options": [
+     "Kun med lang ruder og svag hånd",
+     "Med enhver svag hånd",
+     "Aldrig – 2♦ er krav"
+    ],
+    "why": "2♦ er ikke krav, men makker passer kun med ruderlængde. Med en svag hånd giver man præference til 2♥ eller 2♠, og 2NT spørger efter åbners fordeling."
+   },
+   "en": {
+    "bonus": {
+     "q": "When may responder pass Flannery 2♦?",
+     "correct": "Only with long diamonds and a weak hand",
+     "options": [
+      "Only with long diamonds and a weak hand",
+      "With any weak hand",
+      "Never – 2♦ is forcing"
+     ],
+     "why": "2♦ is not forcing, but partner passes only with diamond length. With a weak hand you give preference to 2♥ or 2♠, and 2NT asks for opener's shape."
+    }
+   }
+  },
+  "spm": {
+   "rolle": "Åbner",
+   "auction": [
+    [
+     "Dig",
+     "2♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "3♣",
+    "3♦",
+    "3♥",
+    "3♠",
+    "3NT",
+    "4♣",
+    "4♦"
+   ],
+   "bonus": {
+    "q": "Hvad viser 3♥ som svar på 2NT efter Flannery?",
+    "correct": "Minimum uden sidefarve – 5-4-2-2",
+    "options": [
+     "Minimum uden sidefarve – 5-4-2-2",
+     "Maksimum uden sidefarve",
+     "Fire kort i en minor, minimum"
+    ],
+    "why": "3♣/3♦ = fire kort i minoren og minimum · 3♥ = 5-4-2-2 med minimum · 3♠ = 5-4-2-2 med maksimum · 3NT = maksimum med hold i begge minorer · 4♣/4♦ = fire kort i minoren og maksimum."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does 3♥ in response to 2NT after Flannery show?",
+     "correct": "A minimum without a side suit – 5-4-2-2",
+     "options": [
+      "A minimum without a side suit – 5-4-2-2",
+      "A maximum without a side suit",
+      "Four cards in a minor, a minimum"
+     ],
+     "why": "3♣/3♦ = four cards in the minor and a minimum · 3♥ = 5-4-2-2 with a minimum · 3♠ = 5-4-2-2 with a maximum · 3NT = a maximum with stoppers in both minors · 4♣/4♦ = four cards in the minor and a maximum."
+    }
+   }
+  }
+ },
+ "hands": [
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     8,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     11,
+     7,
+     6
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 12 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 12 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     10,
+     8,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     8,
+     5
+    ],
+    "D": [
+     13,
+     5
+    ],
+    "C": [
+     13,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 11 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 11 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     9
+    ],
+    "H": [
+     14,
+     12,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     10,
+     9,
+     8
+    ],
+    "C": [
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 11 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 11 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     2
+    ],
+    "H": [
+     12,
+     10,
+     9,
+     8,
+     3
+    ],
+    "D": [],
+    "C": [
+     13,
+     12,
+     8,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 14 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 14 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     6,
+     4
+    ],
+    "D": [
+     9,
+     7,
+     5,
+     3
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 12 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 12 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     9
+    ],
+    "H": [
+     11,
+     10,
+     8,
+     4,
+     3
+    ],
+    "D": [
+     12,
+     10,
+     8,
+     6
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 12 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 12 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     7,
+     2
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     12,
+     8,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 12 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 12 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     13,
+     11,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     14,
+     7,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 12 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 12 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     11,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     7,
+     6
+    ],
+    "D": [
+     12,
+     9,
+     8,
+     5
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 12 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 12 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     10,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     9,
+     7,
+     4
+    ],
+    "C": []
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 13 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 13 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     13,
+     8,
+     6,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     3
+    ],
+    "C": [
+     12,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 14 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 14 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     10,
+     8,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     10,
+     2
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     7,
+     6,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 12 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 12 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     11,
+     9,
+     5,
+     3
+    ],
+    "H": [
+     12,
+     10,
+     8,
+     6,
+     5
+    ],
+    "D": [
+     11,
+     3
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 11 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 11 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     13,
+     12,
+     6,
+     4
+    ],
+    "H": [
+     12,
+     8,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     8,
+     3
+    ],
+    "C": [
+     13,
+     12
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 12 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 12 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     8,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     8
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 13 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 13 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     9
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     8,
+     6
+    ],
+    "D": [
+     10,
+     7,
+     6,
+     2
+    ],
+    "C": []
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 13 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 13 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     13,
+     10,
+     7,
+     4
+    ],
+    "H": [
+     14,
+     8,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     10,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 12 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 12 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     10
+    ],
+    "H": [
+     11,
+     9,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     9,
+     6
+    ],
+    "C": [
+     14,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 12 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 12 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     12,
+     10,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     10,
+     2
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     13,
+     12,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 15 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 15 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     9
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     4,
+     2
+    ],
+    "D": [
+     12,
+     9,
+     6
+    ],
+    "C": [
+     10
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 15 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 15 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     12,
+     9,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     13,
+     6,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 11 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 11 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     11,
+     10,
+     7,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     7
+    ],
+    "D": [
+     13,
+     5,
+     4
+    ],
+    "C": [
+     10
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 14 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 14 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     2
+    ],
+    "H": [
+     14,
+     9,
+     8,
+     7,
+     4
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     10,
+     7,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 13 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 13 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     3
+    ],
+    "H": [
+     13,
+     8,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     12,
+     8,
+     5,
+     4
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 12 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 12 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     9,
+     2
+    ],
+    "D": [
+     13,
+     7,
+     6,
+     3
+    ],
+    "C": []
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 15 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 15 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     2
+    ],
+    "H": [
+     12,
+     10,
+     7,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     7,
+     3
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 12 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 12 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     9,
+     7,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     7,
+     5
+    ],
+    "D": [],
+    "C": [
+     12,
+     8,
+     7,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 11 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 11 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     8,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     8,
+     2
+    ],
+    "D": [
+     5,
+     3
+    ],
+    "C": [
+     9,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 11 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 11 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     4,
+     2
+    ],
+    "D": [
+     7,
+     6,
+     3,
+     2
+    ],
+    "C": []
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 11 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 11 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     9,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     8,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     6,
+     4,
+     2
+    ],
+    "C": []
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 11 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 11 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     11,
+     6,
+     4
+    ],
+    "H": [
+     12,
+     9,
+     7,
+     6,
+     4
+    ],
+    "D": [
+     14,
+     9,
+     8
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 14 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 14 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10,
+     5
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     12,
+     10,
+     9
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 12 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 12 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     12,
+     9,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     5,
+     2
+    ],
+    "D": [
+     10,
+     7,
+     3
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "2♦",
+   "why": "5 hjerter, 4 spar og 11 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15.",
+   "en": {
+    "why": "5 hearts, 4 spades and 11 HCP: Flannery 2♦ – exactly 5-4 in the majors with 11–15."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     7
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     9,
+     5
+    ],
+    "D": [],
+    "C": [
+     13,
+     12,
+     11,
+     5
+    ]
+   },
+   "hp": 20,
+   "sp": 25,
+   "correct": "1♥",
+   "why": "5 hjerter, 4 spar og 20 hp: for stærk til Flannery – åbn 1♥ og meld spar bagefter. 1♥ benægter fire spar under 16 hp.",
+   "en": {
+    "why": "5 hearts, 4 spades and 20 HCP: too strong for Flannery – open 1♥ and bid spades later. 1♥ denies four spades below 16 HCP."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     7,
+     2
+    ],
+    "D": [],
+    "C": [
+     13,
+     10,
+     9,
+     8
+    ]
+   },
+   "hp": 16,
+   "sp": 21,
+   "correct": "1♥",
+   "why": "5 hjerter, 4 spar og 16 hp: for stærk til Flannery – åbn 1♥ og meld spar bagefter. 1♥ benægter fire spar under 16 hp.",
+   "en": {
+    "why": "5 hearts, 4 spades and 16 HCP: too strong for Flannery – open 1♥ and bid spades later. 1♥ denies four spades below 16 HCP."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     7,
+     4
+    ],
+    "C": [
+     11,
+     9,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "1♥",
+   "why": "5 hjerter, kun 1 spar og 12 hp: 1♥ – Flannery kræver præcis fire spar.",
+   "en": {
+    "why": "5 hearts, only 1 spades and 12 HCP: 1♥ – Flannery needs exactly four spades."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     13,
+     12,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     8,
+     7,
+     6,
+     3
+    ],
+    "D": [],
+    "C": [
+     14,
+     13,
+     8,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 21,
+   "correct": "1♥",
+   "why": "5 hjerter, 4 spar og 16 hp: for stærk til Flannery – åbn 1♥ og meld spar bagefter. 1♥ benægter fire spar under 16 hp.",
+   "en": {
+    "why": "5 hearts, 4 spades and 16 HCP: too strong for Flannery – open 1♥ and bid spades later. 1♥ denies four spades below 16 HCP."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     12,
+     8,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     6,
+     2
+    ],
+    "C": [
+     13,
+     11,
+     8,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "1♥",
+   "why": "5 hjerter, kun 1 spar og 13 hp: 1♥ – Flannery kræver præcis fire spar.",
+   "en": {
+    "why": "5 hearts, only 1 spades and 13 HCP: 1♥ – Flannery needs exactly four spades."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     13,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     8,
+     4
+    ],
+    "D": [
+     12,
+     7,
+     5
+    ],
+    "C": [
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "1♥",
+   "why": "5 hjerter, kun 2 spar og 12 hp: 1♥ – Flannery kræver præcis fire spar.",
+   "en": {
+    "why": "5 hearts, only 2 spades and 12 HCP: 1♥ – Flannery needs exactly four spades."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     13,
+     12,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     9,
+     7,
+     3
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "1♥",
+   "why": "5 hjerter, kun 3 spar og 16 hp: 1♥ – Flannery kræver præcis fire spar.",
+   "en": {
+    "why": "5 hearts, only 3 spades and 16 HCP: 1♥ – Flannery needs exactly four spades."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     8,
+     5,
+     2
+    ],
+    "H": [
+     9,
+     7,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     13
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 18,
+   "sp": 20,
+   "correct": "1♥",
+   "why": "5 hjerter, 4 spar og 18 hp: for stærk til Flannery – åbn 1♥ og meld spar bagefter. 1♥ benægter fire spar under 16 hp.",
+   "en": {
+    "why": "5 hearts, 4 spades and 18 HCP: too strong for Flannery – open 1♥ and bid spades later. 1♥ denies four spades below 16 HCP."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     12,
+     6
+    ],
+    "H": [
+     14,
+     7,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     4
+    ],
+    "C": [
+     4,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "1♥",
+   "why": "5 hjerter, kun 3 spar og 14 hp: 1♥ – Flannery kræver præcis fire spar.",
+   "en": {
+    "why": "5 hearts, only 3 spades and 14 HCP: 1♥ – Flannery needs exactly four spades."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     11,
+     6
+    ],
+    "H": [
+     12,
+     10,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     11
+    ],
+    "C": [
+     13,
+     8,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "1♥",
+   "why": "5 hjerter, kun 3 spar og 13 hp: 1♥ – Flannery kræver præcis fire spar.",
+   "en": {
+    "why": "5 hearts, only 3 spades and 13 HCP: 1♥ – Flannery needs exactly four spades."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     10,
+     8,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     10,
+     9,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "1♥",
+   "why": "5 hjerter, kun 2 spar og 14 hp: 1♥ – Flannery kræver præcis fire spar.",
+   "en": {
+    "why": "5 hearts, only 2 spades and 14 HCP: 1♥ – Flannery needs exactly four spades."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     13,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     11
+    ],
+    "C": [
+     10
+    ]
+   },
+   "hp": 20,
+   "sp": 23,
+   "correct": "1♥",
+   "why": "5 hjerter, 4 spar og 20 hp: for stærk til Flannery – åbn 1♥ og meld spar bagefter. 1♥ benægter fire spar under 16 hp.",
+   "en": {
+    "why": "5 hearts, 4 spades and 20 HCP: too strong for Flannery – open 1♥ and bid spades later. 1♥ denies four spades below 16 HCP."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     12,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     7
+    ],
+    "C": []
+   },
+   "hp": 18,
+   "sp": 23,
+   "correct": "1♥",
+   "why": "5 hjerter, 4 spar og 18 hp: for stærk til Flannery – åbn 1♥ og meld spar bagefter. 1♥ benægter fire spar under 16 hp.",
+   "en": {
+    "why": "5 hearts, 4 spades and 18 HCP: too strong for Flannery – open 1♥ and bid spades later. 1♥ denies four spades below 16 HCP."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     9
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 20,
+   "sp": 23,
+   "correct": "1♥",
+   "why": "5 hjerter, 4 spar og 20 hp: for stærk til Flannery – åbn 1♥ og meld spar bagefter. 1♥ benægter fire spar under 16 hp.",
+   "en": {
+    "why": "5 hearts, 4 spades and 20 HCP: too strong for Flannery – open 1♥ and bid spades later. 1♥ denies four spades below 16 HCP."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     2
+    ],
+    "H": [
+     13,
+     11,
+     8,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     3
+    ]
+   },
+   "hp": 18,
+   "sp": 21,
+   "correct": "1♥",
+   "why": "5 hjerter, kun 1 spar og 18 hp: 1♥ – Flannery kræver præcis fire spar.",
+   "en": {
+    "why": "5 hearts, only 1 spades and 18 HCP: 1♥ – Flannery needs exactly four spades."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     8,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "1♥",
+   "why": "5 hjerter, kun 1 spar og 12 hp: 1♥ – Flannery kræver præcis fire spar.",
+   "en": {
+    "why": "5 hearts, only 1 spades and 12 HCP: 1♥ – Flannery needs exactly four spades."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     5
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     8,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     7
+    ],
+    "C": []
+   },
+   "hp": 21,
+   "sp": 26,
+   "correct": "1♥",
+   "why": "5 hjerter, 4 spar og 21 hp: for stærk til Flannery – åbn 1♥ og meld spar bagefter. 1♥ benægter fire spar under 16 hp.",
+   "en": {
+    "why": "5 hearts, 4 spades and 21 HCP: too strong for Flannery – open 1♥ and bid spades later. 1♥ denies four spades below 16 HCP."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     10,
+     7
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     8,
+     4
+    ],
+    "D": [
+     13,
+     9
+    ],
+    "C": [
+     13,
+     12,
+     8,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "1♥",
+   "why": "5 hjerter, kun 2 spar og 13 hp: 1♥ – Flannery kræver præcis fire spar.",
+   "en": {
+    "why": "5 hearts, only 2 spades and 13 HCP: 1♥ – Flannery needs exactly four spades."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     7
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     3
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "1♥",
+   "why": "5 hjerter, 4 spar og 16 hp: for stærk til Flannery – åbn 1♥ og meld spar bagefter. 1♥ benægter fire spar under 16 hp.",
+   "en": {
+    "why": "5 hearts, 4 spades and 16 HCP: too strong for Flannery – open 1♥ and bid spades later. 1♥ denies four spades below 16 HCP."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     6,
+     3
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     10,
+     4,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "1♥",
+   "why": "5 hjerter, 4 spar og 16 hp: for stærk til Flannery – åbn 1♥ og meld spar bagefter. 1♥ benægter fire spar under 16 hp.",
+   "en": {
+    "why": "5 hearts, 4 spades and 16 HCP: too strong for Flannery – open 1♥ and bid spades later. 1♥ denies four spades below 16 HCP."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     8
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     8,
+     2
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     13,
+     11,
+     7
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "1♥",
+   "why": "5 hjerter, 4 spar og 17 hp: for stærk til Flannery – åbn 1♥ og meld spar bagefter. 1♥ benægter fire spar under 16 hp.",
+   "en": {
+    "why": "5 hearts, 4 spades and 17 HCP: too strong for Flannery – open 1♥ and bid spades later. 1♥ denies four spades below 16 HCP."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     5
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     8,
+     4
+    ],
+    "D": [
+     13,
+     10,
+     5
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "1♥",
+   "why": "5 hjerter, 4 spar og 16 hp: for stærk til Flannery – åbn 1♥ og meld spar bagefter. 1♥ benægter fire spar under 16 hp.",
+   "en": {
+    "why": "5 hearts, 4 spades and 16 HCP: too strong for Flannery – open 1♥ and bid spades later. 1♥ denies four spades below 16 HCP."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
+     14,
+     12,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     8,
+     4
+    ],
+    "C": [
+     14,
+     7,
+     3,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "1♥",
+   "why": "5 hjerter, kun 1 spar og 13 hp: 1♥ – Flannery kræver præcis fire spar.",
+   "en": {
+    "why": "5 hearts, only 1 spades and 13 HCP: 1♥ – Flannery needs exactly four spades."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     8,
+     6
+    ],
+    "H": [
+     13,
+     9,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     5,
+     4
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "1♥",
+   "why": "5 hjerter, kun 3 spar og 14 hp: 1♥ – Flannery kræver præcis fire spar.",
+   "en": {
+    "why": "5 hearts, only 3 spades and 14 HCP: 1♥ – Flannery needs exactly four spades."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10,
+     9
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     7,
+     3
+    ],
+    "D": [
+     14,
+     9,
+     6
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "1♥",
+   "why": "5 hjerter, 4 spar og 17 hp: for stærk til Flannery – åbn 1♥ og meld spar bagefter. 1♥ benægter fire spar under 16 hp.",
+   "en": {
+    "why": "5 hearts, 4 spades and 17 HCP: too strong for Flannery – open 1♥ and bid spades later. 1♥ denies four spades below 16 HCP."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     11,
+     7,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     8,
+     6,
+     5
+    ],
+    "D": [],
+    "C": [
+     14,
+     13,
+     11,
+     7
+    ]
+   },
+   "hp": 18,
+   "sp": 23,
+   "correct": "1♥",
+   "why": "5 hjerter, 4 spar og 18 hp: for stærk til Flannery – åbn 1♥ og meld spar bagefter. 1♥ benægter fire spar under 16 hp.",
+   "en": {
+    "why": "5 hearts, 4 spades and 18 HCP: too strong for Flannery – open 1♥ and bid spades later. 1♥ denies four spades below 16 HCP."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     12,
+     10,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     10
+    ],
+    "D": [
+     14,
+     3,
+     2
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "1♥",
+   "why": "5 hjerter, 4 spar og 16 hp: for stærk til Flannery – åbn 1♥ og meld spar bagefter. 1♥ benægter fire spar under 16 hp.",
+   "en": {
+    "why": "5 hearts, 4 spades and 16 HCP: too strong for Flannery – open 1♥ and bid spades later. 1♥ denies four spades below 16 HCP."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     6
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     4
+    ],
+    "C": [
+     13,
+     10,
+     8,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "1♥",
+   "why": "5 hjerter, kun 2 spar og 14 hp: 1♥ – Flannery kræver præcis fire spar.",
+   "en": {
+    "why": "5 hearts, only 2 spades and 14 HCP: 1♥ – Flannery needs exactly four spades."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     12,
+     8,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     5,
+     3
+    ],
+    "D": [],
+    "C": [
+     14,
+     13,
+     3,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 21,
+   "correct": "1♥",
+   "why": "5 hjerter, 4 spar og 16 hp: for stærk til Flannery – åbn 1♥ og meld spar bagefter. 1♥ benægter fire spar under 16 hp.",
+   "en": {
+    "why": "5 hearts, 4 spades and 16 HCP: too strong for Flannery – open 1♥ and bid spades later. 1♥ denies four spades below 16 HCP."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8
+    ],
+    "H": [
+     14,
+     10,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     8,
+     3
+    ],
+    "C": [
+     4,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "1♥",
+   "why": "5 hjerter, kun 3 spar og 13 hp: 1♥ – Flannery kræver præcis fire spar.",
+   "en": {
+    "why": "5 hearts, only 3 spades and 13 HCP: 1♥ – Flannery needs exactly four spades."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     9,
+     6
+    ],
+    "C": []
+   },
+   "hp": 19,
+   "sp": 24,
+   "correct": "1♥",
+   "why": "5 hjerter, 4 spar og 19 hp: for stærk til Flannery – åbn 1♥ og meld spar bagefter. 1♥ benægter fire spar under 16 hp.",
+   "en": {
+    "why": "5 hearts, 4 spades and 19 HCP: too strong for Flannery – open 1♥ and bid spades later. 1♥ denies four spades below 16 HCP."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     7,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     7,
+     3
+    ],
+    "D": [
+     9,
+     8,
+     5,
+     3
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "1♥",
+   "why": "5 hjerter, kun 3 spar og 12 hp: 1♥ – Flannery kræver præcis fire spar.",
+   "en": {
+    "why": "5 hearts, only 3 spades and 12 HCP: 1♥ – Flannery needs exactly four spades."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     12,
+     5,
+     3
+    ],
+    "D": [
+     11,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     6,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "4 hjerter (9 trumf sammen) og 9 hp: 2♥ – præference og slutmelding.",
+   "en": {
+    "why": "4 hearts (9 trumps together) and 9 HCP: 2♥ – preference and to play."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     10,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     2
+    ],
+    "D": [
+     7,
+     6
+    ],
+    "C": [
+     11,
+     10,
+     8,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2♥",
+   "why": "4 hjerter (9 trumf sammen) og 9 hp: 2♥ – præference og slutmelding.",
+   "en": {
+    "why": "4 hearts (9 trumps together) and 9 HCP: 2♥ – preference and to play."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     8,
+     7,
+     4
+    ],
+    "D": [
+     13,
+     8,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     10,
+     7,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "4 hjerter (9 trumf sammen) og 9 hp: 2♥ – præference og slutmelding.",
+   "en": {
+    "why": "4 hearts (9 trumps together) and 9 HCP: 2♥ – preference and to play."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     11,
+     10,
+     7,
+     2
+    ],
+    "D": [
+     10,
+     7,
+     5
+    ],
+    "C": [
+     14,
+     8,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "2♥",
+   "why": "4 hjerter (9 trumf sammen) og 9 hp: 2♥ – præference og slutmelding.",
+   "en": {
+    "why": "4 hearts (9 trumps together) and 9 HCP: 2♥ – preference and to play."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     10,
+     9
+    ],
+    "H": [
+     13,
+     10,
+     5,
+     2
+    ],
+    "D": [
+     12,
+     6,
+     4
+    ],
+    "C": [
+     8,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "2♥",
+   "why": "4 hjerter (9 trumf sammen) og 5 hp: 2♥ – præference og slutmelding.",
+   "en": {
+    "why": "4 hearts (9 trumps together) and 5 HCP: 2♥ – preference and to play."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     12,
+     4
+    ],
+    "H": [
+     12,
+     9,
+     5,
+     2
+    ],
+    "D": [
+     10,
+     7,
+     6,
+     5
+    ],
+    "C": [
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "2♥",
+   "why": "4 hjerter (9 trumf sammen) og 4 hp: 2♥ – præference og slutmelding.",
+   "en": {
+    "why": "4 hearts (9 trumps together) and 4 HCP: 2♥ – preference and to play."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     11,
+     9,
+     7,
+     4
+    ],
+    "D": [
+     11,
+     10,
+     6,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     6,
+     3
+    ]
+   },
+   "hp": 4,
+   "sp": 7,
+   "correct": "2♥",
+   "why": "4 hjerter (9 trumf sammen) og 4 hp: 2♥ – præference og slutmelding.",
+   "en": {
+    "why": "4 hearts (9 trumps together) and 4 HCP: 2♥ – preference and to play."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     9,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     6,
+     4,
+     3
+    ],
+    "C": [
+     9,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "2♥",
+   "why": "3 hjerter (8 trumf sammen) og 7 hp: 2♥ – præference og slutmelding.",
+   "en": {
+    "why": "3 hearts (8 trumps together) and 7 HCP: 2♥ – preference and to play."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     3
+    ],
+    "H": [
+     11,
+     9,
+     5
+    ],
+    "D": [
+     12,
+     7,
+     6,
+     5
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2♥",
+   "why": "3 hjerter (8 trumf sammen) og 9 hp: 2♥ – præference og slutmelding.",
+   "en": {
+    "why": "3 hearts (8 trumps together) and 9 HCP: 2♥ – preference and to play."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     11,
+     5
+    ],
+    "H": [
+     12,
+     10,
+     9
+    ],
+    "D": [
+     10,
+     6,
+     3
+    ],
+    "C": [
+     6,
+     5,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "correct": "2♥",
+   "why": "3 hjerter (8 trumf sammen) og 3 hp: 2♥ – præference og slutmelding.",
+   "en": {
+    "why": "3 hearts (8 trumps together) and 3 HCP: 2♥ – preference and to play."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     7
+    ],
+    "H": [],
+    "D": [
+     11,
+     10,
+     7,
+     4,
+     3
+    ],
+    "C": [
+     8,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 11,
+   "correct": "2♠",
+   "why": "4 spar (8 trumf sammen) og 6 hp: 2♠ – præference og slutmelding.",
+   "en": {
+    "why": "4 spades (8 trumps together) and 6 HCP: 2♠ – preference and to play."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     13,
+     10,
+     5,
+     2
+    ],
+    "H": [],
+    "D": [
+     11,
+     9,
+     5,
+     4
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     5,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "4 spar (8 trumf sammen) og 7 hp: 2♠ – præference og slutmelding.",
+   "en": {
+    "why": "4 spades (8 trumps together) and 7 HCP: 2♠ – preference and to play."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     11,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     12,
+     2
+    ],
+    "C": [
+     11,
+     8,
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "2♠",
+   "why": "5 spar (9 trumf sammen) og 9 hp: 2♠ – præference og slutmelding.",
+   "en": {
+    "why": "5 spades (9 trumps together) and 9 HCP: 2♠ – preference and to play."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     11,
+     9,
+     8,
+     7
+    ],
+    "H": [
+     12,
+     10
+    ],
+    "D": [
+     12,
+     7,
+     6,
+     2
+    ],
+    "C": [
+     5,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "2♠",
+   "why": "5 spar (9 trumf sammen) og 9 hp: 2♠ – præference og slutmelding.",
+   "en": {
+    "why": "5 spades (9 trumps together) and 9 HCP: 2♠ – preference and to play."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     12,
+     9,
+     8,
+     6,
+     4
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     12,
+     11,
+     4
+    ],
+    "C": [
+     11,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "2♠",
+   "why": "5 spar (9 trumf sammen) og 6 hp: 2♠ – præference og slutmelding.",
+   "en": {
+    "why": "5 spades (9 trumps together) and 6 HCP: 2♠ – preference and to play."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     6,
+     4
+    ],
+    "H": [],
+    "D": [
+     13,
+     9,
+     7,
+     4
+    ],
+    "C": [
+     10,
+     9,
+     3,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "5 spar (9 trumf sammen) og 9 hp: 2♠ – præference og slutmelding.",
+   "en": {
+    "why": "5 spades (9 trumps together) and 9 HCP: 2♠ – preference and to play."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     13,
+     7,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     10,
+     4
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     14,
+     9,
+     7,
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 11,
+   "correct": "2♠",
+   "why": "5 spar (9 trumf sammen) og 7 hp: 2♠ – præference og slutmelding.",
+   "en": {
+    "why": "5 spades (9 trumps together) and 7 HCP: 2♠ – preference and to play."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     13,
+     10,
+     7,
+     2
+    ],
+    "H": [
+     9,
+     6
+    ],
+    "D": [
+     13,
+     7
+    ],
+    "C": [
+     12,
+     11,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "2♠",
+   "why": "4 spar (8 trumf sammen) og 9 hp: 2♠ – præference og slutmelding.",
+   "en": {
+    "why": "4 spades (8 trumps together) and 9 HCP: 2♠ – preference and to play."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     10,
+     8,
+     4
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     6,
+     4,
+     2
+    ],
+    "C": [
+     10,
+     8,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 7,
+   "correct": "2♠",
+   "why": "4 spar (8 trumf sammen) og 4 hp: 2♠ – præference og slutmelding.",
+   "en": {
+    "why": "4 spades (8 trumps together) and 4 HCP: 2♠ – preference and to play."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     11,
+     10,
+     6,
+     2
+    ],
+    "H": [
+     12,
+     11
+    ],
+    "D": [
+     9,
+     8,
+     7,
+     3
+    ],
+    "C": [
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "2♠",
+   "why": "4 spar (8 trumf sammen) og 4 hp: 2♠ – præference og slutmelding.",
+   "en": {
+    "why": "4 spades (8 trumps together) and 4 HCP: 2♠ – preference and to play."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     13,
+     2
+    ],
+    "H": [
+     11,
+     10,
+     8,
+     5
+    ],
+    "D": [
+     12,
+     9,
+     8,
+     4,
+     3
+    ],
+    "C": [
+     9
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♥",
+   "why": "4 hjerter (9 trumf sammen) og 10 hp: 3♥ – invit med god støtte.",
+   "en": {
+    "why": "4 hearts (9 trumps together) and 10 HCP: 3♥ – invitational with good support."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     13,
+     10,
+     3
+    ],
+    "H": [
+     14,
+     10,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     9,
+     8,
+     7,
+     6
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♥",
+   "why": "4 hjerter (9 trumf sammen) og 11 hp: 3♥ – invit med god støtte.",
+   "en": {
+    "why": "4 hearts (9 trumps together) and 11 HCP: 3♥ – invitational with good support."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     12
+    ],
+    "H": [
+     9,
+     8,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     8
+    ],
+    "C": [
+     12,
+     9,
+     8,
+     5,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♥",
+   "why": "4 hjerter (9 trumf sammen) og 11 hp: 3♥ – invit med god støtte.",
+   "en": {
+    "why": "4 hearts (9 trumps together) and 11 HCP: 3♥ – invitational with good support."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     12,
+     11,
+     4
+    ],
+    "H": [
+     9,
+     6,
+     4
+    ],
+    "D": [
+     9,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     9,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "3♥",
+   "why": "3 hjerter (8 trumf sammen) og 12 hp: 3♥ – invit med god støtte.",
+   "en": {
+    "why": "3 hearts (8 trumps together) and 12 HCP: 3♥ – invitational with good support."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     12,
+     8,
+     2
+    ],
+    "H": [
+     10,
+     8,
+     3,
+     2
+    ],
+    "D": [
+     11,
+     9
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "3♥",
+   "why": "4 hjerter (9 trumf sammen) og 12 hp: 3♥ – invit med god støtte.",
+   "en": {
+    "why": "4 hearts (9 trumps together) and 12 HCP: 3♥ – invitational with good support."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     11,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11
+    ],
+    "D": [
+     11,
+     2
+    ],
+    "C": [
+     10,
+     7,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "3♥",
+   "why": "4 hjerter (9 trumf sammen) og 12 hp: 3♥ – invit med god støtte.",
+   "en": {
+    "why": "4 hearts (9 trumps together) and 12 HCP: 3♥ – invitational with good support."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     12,
+     5
+    ],
+    "H": [
+     13,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     7,
+     4,
+     2
+    ],
+    "C": [
+     10,
+     8,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "3♥",
+   "why": "3 hjerter (8 trumf sammen) og 12 hp: 3♥ – invit med god støtte.",
+   "en": {
+    "why": "3 hearts (8 trumps together) and 12 HCP: 3♥ – invitational with good support."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     3
+    ],
+    "H": [
+     13,
+     9,
+     7
+    ],
+    "D": [
+     12,
+     6,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "3♥",
+   "why": "3 hjerter (8 trumf sammen) og 12 hp: 3♥ – invit med god støtte.",
+   "en": {
+    "why": "3 hearts (8 trumps together) and 12 HCP: 3♥ – invitational with good support."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     12,
+     5,
+     4
+    ],
+    "H": [
+     11,
+     10,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "correct": "3♥",
+   "why": "4 hjerter (9 trumf sammen) og 11 hp: 3♥ – invit med god støtte.",
+   "en": {
+    "why": "4 hearts (9 trumps together) and 11 HCP: 3♥ – invitational with good support."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     12,
+     4
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     4
+    ],
+    "D": [
+     8,
+     6
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     5,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "3♥",
+   "why": "4 hjerter (9 trumf sammen) og 11 hp: 3♥ – invit med god støtte.",
+   "en": {
+    "why": "4 hearts (9 trumps together) and 11 HCP: 3♥ – invitational with good support."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     13,
+     11,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     5,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     5,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♠",
+   "why": "5 spar (9 trumf sammen) og 11 hp: 3♠ – invit med god støtte.",
+   "en": {
+    "why": "5 spades (9 trumps together) and 11 HCP: 3♠ – invitational with good support."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     13,
+     10,
+     5,
+     4
+    ],
+    "H": [],
+    "D": [
+     14,
+     9,
+     7,
+     2
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     8,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "4 spar (8 trumf sammen) og 11 hp: 3♠ – invit med god støtte.",
+   "en": {
+    "why": "4 spades (8 trumps together) and 11 HCP: 3♠ – invitational with good support."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     13,
+     9,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     13
+    ],
+    "D": [
+     8,
+     5
+    ],
+    "C": [
+     11,
+     10,
+     7,
+     3,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "3♠",
+   "why": "4 spar (8 trumf sammen) og 11 hp: 3♠ – invit med god støtte.",
+   "en": {
+    "why": "4 spades (8 trumps together) and 11 HCP: 3♠ – invitational with good support."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     5,
+     2
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     14,
+     9,
+     8,
+     5,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "3♠",
+   "why": "5 spar (9 trumf sammen) og 10 hp: 3♠ – invit med god støtte.",
+   "en": {
+    "why": "5 spades (9 trumps together) and 10 HCP: 3♠ – invitational with good support."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     8,
+     4
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     14,
+     10,
+     9,
+     5,
+     3
+    ],
+    "C": [
+     9,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "5 spar (9 trumf sammen) og 12 hp: 3♠ – invit med god støtte.",
+   "en": {
+    "why": "5 spades (9 trumps together) and 12 HCP: 3♠ – invitational with good support."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     6,
+     3
+    ],
+    "H": [
+     9,
+     4
+    ],
+    "D": [
+     13,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     9,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♠",
+   "why": "5 spar (9 trumf sammen) og 11 hp: 3♠ – invit med god støtte.",
+   "en": {
+    "why": "5 spades (9 trumps together) and 11 HCP: 3♠ – invitational with good support."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     2
+    ],
+    "H": [
+     12,
+     10
+    ],
+    "D": [
+     11,
+     10,
+     8
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "3♠",
+   "why": "4 spar (8 trumf sammen) og 12 hp: 3♠ – invit med god støtte.",
+   "en": {
+    "why": "4 spades (8 trumps together) and 12 HCP: 3♠ – invitational with good support."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7,
+     3
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     12,
+     7,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     9,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♠",
+   "why": "4 spar (8 trumf sammen) og 10 hp: 3♠ – invit med god støtte.",
+   "en": {
+    "why": "4 spades (8 trumps together) and 10 HCP: 3♠ – invitational with good support."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     3
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     12,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     5,
+     4,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♠",
+   "why": "4 spar (8 trumf sammen) og 10 hp: 3♠ – invit med god støtte.",
+   "en": {
+    "why": "4 spades (8 trumps together) and 10 HCP: 3♠ – invitational with good support."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     9,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     9,
+     5
+    ],
+    "C": [
+     12,
+     11,
+     6
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♠",
+   "why": "4 spar (8 trumf sammen) og 10 hp: 3♠ – invit med god støtte.",
+   "en": {
+    "why": "4 spades (8 trumps together) and 10 HCP: 3♠ – invitational with good support."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     4,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     10
+    ],
+    "D": [
+     12,
+     9,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     7,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "3 hjerter (8 trumf sammen) og 15 hp: 4♥ – udgang, din egen beslutning.",
+   "en": {
+    "why": "3 hearts (8 trumps together) and 15 HCP: 4♥ – game, your own decision."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     13,
+     4
+    ],
+    "H": [
+     10,
+     9,
+     3
+    ],
+    "D": [
+     13,
+     11,
+     9,
+     8,
+     6
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "3 hjerter (8 trumf sammen) og 15 hp: 4♥ – udgang, din egen beslutning.",
+   "en": {
+    "why": "3 hearts (8 trumps together) and 15 HCP: 4♥ – game, your own decision."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     13,
+     9,
+     8
+    ],
+    "H": [
+     14,
+     10,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     2
+    ],
+    "C": [
+     14,
+     8,
+     3,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "4 hjerter (9 trumf sammen) og 15 hp: 4♥ – udgang, din egen beslutning.",
+   "en": {
+    "why": "4 hearts (9 trumps together) and 15 HCP: 4♥ – game, your own decision."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     13,
+     11,
+     7
+    ],
+    "D": [
+     11,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     8,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "4♥",
+   "why": "4 hjerter (9 trumf sammen) og 15 hp: 4♥ – udgang, din egen beslutning.",
+   "en": {
+    "why": "4 hearts (9 trumps together) and 15 HCP: 4♥ – game, your own decision."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     4
+    ],
+    "D": [
+     13,
+     10,
+     9,
+     7,
+     4
+    ],
+    "C": [
+     12,
+     10
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "4♥",
+   "why": "3 hjerter (8 trumf sammen) og 14 hp: 4♥ – udgang, din egen beslutning.",
+   "en": {
+    "why": "3 hearts (8 trumps together) and 14 HCP: 4♥ – game, your own decision."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     8
+    ],
+    "H": [
+     13,
+     6,
+     3
+    ],
+    "D": [
+     12,
+     8,
+     7,
+     5
+    ],
+    "C": [
+     14,
+     7,
+     3,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "4♥",
+   "why": "3 hjerter (8 trumf sammen) og 13 hp: 4♥ – udgang, din egen beslutning.",
+   "en": {
+    "why": "3 hearts (8 trumps together) and 13 HCP: 4♥ – game, your own decision."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     10,
+     9,
+     6
+    ],
+    "D": [
+     13,
+     9,
+     7,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     11,
+     10
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "3 hjerter (8 trumf sammen) og 13 hp: 4♥ – udgang, din egen beslutning.",
+   "en": {
+    "why": "3 hearts (8 trumps together) and 13 HCP: 4♥ – game, your own decision."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     11,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     9,
+     7,
+     2
+    ],
+    "C": [
+     9,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "4♥",
+   "why": "4 hjerter (9 trumf sammen) og 13 hp: 4♥ – udgang, din egen beslutning.",
+   "en": {
+    "why": "4 hearts (9 trumps together) and 13 HCP: 4♥ – game, your own decision."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     14,
+     6,
+     4
+    ],
+    "D": [
+     11,
+     9,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     9,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "4♥",
+   "why": "3 hjerter (8 trumf sammen) og 15 hp: 4♥ – udgang, din egen beslutning.",
+   "en": {
+    "why": "3 hearts (8 trumps together) and 15 HCP: 4♥ – game, your own decision."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     9
+    ],
+    "D": [
+     11,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "4♥",
+   "why": "3 hjerter (8 trumf sammen) og 14 hp: 4♥ – udgang, din egen beslutning.",
+   "en": {
+    "why": "3 hearts (8 trumps together) and 14 HCP: 4♥ – game, your own decision."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7,
+     3
+    ],
+    "H": [],
+    "D": [
+     13,
+     12,
+     10,
+     9,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     7,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "4♠",
+   "why": "4 spar (8 trumf sammen) og 15 hp: 4♠ – udgang, din egen beslutning.",
+   "en": {
+    "why": "4 spades (8 trumps together) and 15 HCP: 4♠ – game, your own decision."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     13,
+     12,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     10
+    ],
+    "D": [
+     13,
+     7,
+     4
+    ],
+    "C": [
+     11,
+     6,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "4♠",
+   "why": "5 spar (9 trumf sammen) og 13 hp: 4♠ – udgang, din egen beslutning.",
+   "en": {
+    "why": "5 spades (9 trumps together) and 13 HCP: 4♠ – game, your own decision."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11,
+     9
+    ],
+    "H": [
+     2
+    ],
+    "D": [
+     12,
+     9,
+     4
+    ],
+    "C": [
+     11,
+     10,
+     9,
+     8
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "4♠",
+   "why": "5 spar (9 trumf sammen) og 13 hp: 4♠ – udgang, din egen beslutning.",
+   "en": {
+    "why": "5 spades (9 trumps together) and 13 HCP: 4♠ – game, your own decision."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     10,
+     6
+    ],
+    "H": [
+     9,
+     5
+    ],
+    "D": [
+     12,
+     8,
+     6,
+     4
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "4♠",
+   "why": "5 spar (9 trumf sammen) og 14 hp: 4♠ – udgang, din egen beslutning.",
+   "en": {
+    "why": "5 spades (9 trumps together) and 14 HCP: 4♠ – game, your own decision."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     3
+    ],
+    "H": [
+     12,
+     3
+    ],
+    "D": [
+     12,
+     9,
+     5
+    ],
+    "C": [
+     14,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♠",
+   "why": "4 spar (8 trumf sammen) og 15 hp: 4♠ – udgang, din egen beslutning.",
+   "en": {
+    "why": "4 spades (8 trumps together) and 15 HCP: 4♠ – game, your own decision."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     8
+    ],
+    "H": [
+     10,
+     9
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     4
+    ],
+    "C": [
+     11,
+     7,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "4♠",
+   "why": "4 spar (8 trumf sammen) og 14 hp: 4♠ – udgang, din egen beslutning.",
+   "en": {
+    "why": "4 spades (8 trumps together) and 14 HCP: 4♠ – game, your own decision."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     8
+    ],
+    "D": [
+     14,
+     9,
+     3
+    ],
+    "C": [
+     14,
+     7,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "4♠",
+   "why": "5 spar (9 trumf sammen) og 14 hp: 4♠ – udgang, din egen beslutning.",
+   "en": {
+    "why": "5 spades (9 trumps together) and 14 HCP: 4♠ – game, your own decision."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     13
+    ],
+    "D": [
+     11,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     9
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "4♠",
+   "why": "5 spar (9 trumf sammen) og 15 hp: 4♠ – udgang, din egen beslutning.",
+   "en": {
+    "why": "5 spades (9 trumps together) and 15 HCP: 4♠ – game, your own decision."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     10,
+     3
+    ],
+    "H": [],
+    "D": [
+     14,
+     12,
+     11
+    ],
+    "C": [
+     12,
+     9,
+     8,
+     6,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "4♠",
+   "why": "5 spar (9 trumf sammen) og 15 hp: 4♠ – udgang, din egen beslutning.",
+   "en": {
+    "why": "5 spades (9 trumps together) and 15 HCP: 4♠ – game, your own decision."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     6
+    ],
+    "H": [],
+    "D": [
+     13,
+     7,
+     6,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     10,
+     7,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♠",
+   "why": "4 spar (8 trumf sammen) og 14 hp: 4♠ – udgang, din egen beslutning.",
+   "en": {
+    "why": "4 spades (8 trumps together) and 14 HCP: 4♠ – game, your own decision."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     12,
+     9,
+     8
+    ],
+    "H": [
+     14,
+     8
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     7,
+     3
+    ],
+    "C": [
+     12,
+     8,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "15 hp uden fit i majorerne: 2NT spørger om åbners nøjagtige fordeling og styrke (krav).",
+   "en": {
+    "why": "15 HCP without a fit in the majors: 2NT asks for opener's exact shape and strength (forcing)."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     6,
+     5
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     7,
+     2
+    ],
+    "C": [
+     14,
+     8,
+     7,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "13 hp uden fit i majorerne: 2NT spørger om åbners nøjagtige fordeling og styrke (krav).",
+   "en": {
+    "why": "13 HCP without a fit in the majors: 2NT asks for opener's exact shape and strength (forcing)."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     13,
+     11,
+     4
+    ],
+    "H": [
+     8,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     8,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "13 hp uden fit i majorerne: 2NT spørger om åbners nøjagtige fordeling og styrke (krav).",
+   "en": {
+    "why": "13 HCP without a fit in the majors: 2NT asks for opener's exact shape and strength (forcing)."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     8,
+     4
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     14,
+     13,
+     7,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     8,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "2NT",
+   "why": "14 hp uden fit i majorerne: 2NT spørger om åbners nøjagtige fordeling og styrke (krav).",
+   "en": {
+    "why": "14 HCP without a fit in the majors: 2NT asks for opener's exact shape and strength (forcing)."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     5,
+     2
+    ],
+    "H": [
+     2
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     11,
+     9
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "2NT",
+   "why": "15 hp uden fit i majorerne: 2NT spørger om åbners nøjagtige fordeling og styrke (krav).",
+   "en": {
+    "why": "15 HCP without a fit in the majors: 2NT asks for opener's exact shape and strength (forcing)."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     13,
+     12
+    ],
+    "D": [
+     14,
+     11,
+     7,
+     3,
+     2
+    ],
+    "C": [
+     9,
+     8,
+     7,
+     6
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "2NT",
+   "why": "17 hp uden fit i majorerne: 2NT spørger om åbners nøjagtige fordeling og styrke (krav).",
+   "en": {
+    "why": "17 HCP without a fit in the majors: 2NT asks for opener's exact shape and strength (forcing)."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     13,
+     12,
+     4
+    ],
+    "H": [
+     14,
+     7
+    ],
+    "D": [
+     14,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     9,
+     7
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "2NT",
+   "why": "17 hp uden fit i majorerne: 2NT spørger om åbners nøjagtige fordeling og styrke (krav).",
+   "en": {
+    "why": "17 HCP without a fit in the majors: 2NT asks for opener's exact shape and strength (forcing)."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     10,
+     6,
+     3
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     9,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     9,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "13 hp uden fit i majorerne: 2NT spørger om åbners nøjagtige fordeling og styrke (krav).",
+   "en": {
+    "why": "13 HCP without a fit in the majors: 2NT asks for opener's exact shape and strength (forcing)."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     7
+    ],
+    "H": [
+     14,
+     12
+    ],
+    "D": [
+     7,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     8,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "14 hp uden fit i majorerne: 2NT spørger om åbners nøjagtige fordeling og styrke (krav).",
+   "en": {
+    "why": "14 HCP without a fit in the majors: 2NT asks for opener's exact shape and strength (forcing)."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     5,
+     3
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     8
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     6,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "14 hp uden fit i majorerne: 2NT spørger om åbners nøjagtige fordeling og styrke (krav).",
+   "en": {
+    "why": "14 HCP without a fit in the majors: 2NT asks for opener's exact shape and strength (forcing)."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     11,
+     3,
+     2
+    ],
+    "H": [],
+    "D": [
+     8,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     8,
+     5,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "God 7-farve i klør uden fit og 8 hp: 3♣ – naturligt, ikke krav.",
+   "en": {
+    "why": "A good 7-card club suit without a fit and 8 HCP: 3♣ – natural, non-forcing."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     7
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     8,
+     7,
+     5
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     9,
+     7,
+     3,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "God 7-farve i klør uden fit og 11 hp: 3♣ – naturligt, ikke krav.",
+   "en": {
+    "why": "A good 7-card club suit without a fit and 11 HCP: 3♣ – natural, non-forcing."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     11,
+     10
+    ],
+    "H": [
+     13,
+     9
+    ],
+    "D": [
+     5,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     10,
+     9,
+     5,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "God 7-farve i klør uden fit og 11 hp: 3♣ – naturligt, ikke krav.",
+   "en": {
+    "why": "A good 7-card club suit without a fit and 11 HCP: 3♣ – natural, non-forcing."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     6,
+     3
+    ],
+    "D": [
+     7,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     10,
+     9,
+     8,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "God 7-farve i klør uden fit og 9 hp: 3♣ – naturligt, ikke krav.",
+   "en": {
+    "why": "A good 7-card club suit without a fit and 9 HCP: 3♣ – natural, non-forcing."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     13,
+     9,
+     6
+    ],
+    "H": [
+     3,
+     2
+    ],
+    "D": [
+     7
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     8,
+     7,
+     3,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "God 7-farve i klør uden fit og 9 hp: 3♣ – naturligt, ikke krav.",
+   "en": {
+    "why": "A good 7-card club suit without a fit and 9 HCP: 3♣ – natural, non-forcing."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     11,
+     4,
+     3
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     10,
+     7,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     8,
+     6,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "God 6-farve i klør uden fit og 9 hp: 3♣ – naturligt, ikke krav.",
+   "en": {
+    "why": "A good 6-card club suit without a fit and 9 HCP: 3♣ – natural, non-forcing."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     12,
+     11,
+     6
+    ],
+    "H": [],
+    "D": [
+     7,
+     5,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     9,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "God 7-farve i klør uden fit og 9 hp: 3♣ – naturligt, ikke krav.",
+   "en": {
+    "why": "A good 7-card club suit without a fit and 9 HCP: 3♣ – natural, non-forcing."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     12,
+     9,
+     2
+    ],
+    "H": [],
+    "D": [
+     10,
+     9,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     10,
+     9,
+     7,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "God 7-farve i klør uden fit og 8 hp: 3♣ – naturligt, ikke krav.",
+   "en": {
+    "why": "A good 7-card club suit without a fit and 8 HCP: 3♣ – natural, non-forcing."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     8,
+     6
+    ],
+    "H": [
+     9,
+     5
+    ],
+    "D": [
+     12,
+     9
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     10,
+     8,
+     7,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "God 7-farve i klør uden fit og 11 hp: 3♣ – naturligt, ikke krav.",
+   "en": {
+    "why": "A good 7-card club suit without a fit and 11 HCP: 3♣ – natural, non-forcing."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     12,
+     10,
+     4
+    ],
+    "H": [],
+    "D": [
+     12,
+     9,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     9,
+     8,
+     4,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "God 7-farve i klør uden fit og 11 hp: 3♣ – naturligt, ikke krav.",
+   "en": {
+    "why": "A good 7-card club suit without a fit and 11 HCP: 3♣ – natural, non-forcing."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     10,
+     9,
+     8
+    ],
+    "H": [
+     7,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     9,
+     8,
+     3
+    ],
+    "C": [
+     11,
+     7
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "God 6-farve i ruder uden fit og 9 hp: 3♦ – naturligt, ikke krav.",
+   "en": {
+    "why": "A good 6-card diamond suit without a fit and 9 HCP: 3♦ – natural, non-forcing."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     6,
+     5,
+     3
+    ],
+    "H": [
+     9
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     9,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     10
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "God 7-farve i ruder uden fit og 11 hp: 3♦ – naturligt, ikke krav.",
+   "en": {
+    "why": "A good 7-card diamond suit without a fit and 11 HCP: 3♦ – natural, non-forcing."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     4,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "God 6-farve i ruder uden fit og 10 hp: 3♦ – naturligt, ikke krav.",
+   "en": {
+    "why": "A good 6-card diamond suit without a fit and 10 HCP: 3♦ – natural, non-forcing."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     7,
+     5
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     9,
+     7,
+     6,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "God 7-farve i ruder uden fit og 8 hp: 3♦ – naturligt, ikke krav.",
+   "en": {
+    "why": "A good 7-card diamond suit without a fit and 8 HCP: 3♦ – natural, non-forcing."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     12,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     10,
+     6,
+     4,
+     2
+    ],
+    "C": [
+     7,
+     5,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "God 7-farve i ruder uden fit og 8 hp: 3♦ – naturligt, ikke krav.",
+   "en": {
+    "why": "A good 7-card diamond suit without a fit and 8 HCP: 3♦ – natural, non-forcing."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     8,
+     6,
+     4
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     8,
+     7,
+     5
+    ],
+    "C": [
+     11,
+     8,
+     7
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "God 6-farve i ruder uden fit og 8 hp: 3♦ – naturligt, ikke krav.",
+   "en": {
+    "why": "A good 6-card diamond suit without a fit and 8 HCP: 3♦ – natural, non-forcing."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     10,
+     6,
+     3
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     7,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     9,
+     7
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "God 7-farve i ruder uden fit og 11 hp: 3♦ – naturligt, ikke krav.",
+   "en": {
+    "why": "A good 7-card diamond suit without a fit and 11 HCP: 3♦ – natural, non-forcing."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     12,
+     7,
+     4
+    ],
+    "H": [],
+    "D": [
+     13,
+     12,
+     10,
+     5,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     4,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "God 7-farve i ruder uden fit og 10 hp: 3♦ – naturligt, ikke krav.",
+   "en": {
+    "why": "A good 7-card diamond suit without a fit and 10 HCP: 3♦ – natural, non-forcing."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     8,
+     6,
+     5
+    ],
+    "H": [],
+    "D": [
+     13,
+     12,
+     11,
+     6,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     6,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 13,
+   "correct": "3♦",
+   "why": "God 7-farve i ruder uden fit og 8 hp: 3♦ – naturligt, ikke krav.",
+   "en": {
+    "why": "A good 7-card diamond suit without a fit and 8 HCP: 3♦ – natural, non-forcing."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     12
+    ],
+    "H": [
+     12,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     7,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     7,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "God 7-farve i ruder uden fit og 11 hp: 3♦ – naturligt, ikke krav.",
+   "en": {
+    "why": "A good 7-card diamond suit without a fit and 11 HCP: 3♦ – natural, non-forcing."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     13,
+     5,
+     3
+    ],
+    "H": [
+     4,
+     3
+    ],
+    "D": [
+     13,
+     11,
+     7,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     7,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "Pas",
+   "why": "6 ruder, ingen fit i majorerne og kun 7 hp: pas – 2♦ er den bedste kontrakt.",
+   "en": {
+    "why": "6 diamonds, no fit in the majors and only 7 HCP: pass – 2♦ is the best contract."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     12,
+     3
+    ],
+    "H": [
+     8,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     9,
+     8,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     9,
+     6
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "correct": "Pas",
+   "why": "7 ruder, ingen fit i majorerne og kun 5 hp: pas – 2♦ er den bedste kontrakt.",
+   "en": {
+    "why": "7 diamonds, no fit in the majors and only 5 HCP: pass – 2♦ is the best contract."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     8,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     9
+    ],
+    "D": [
+     12,
+     11,
+     10,
+     9,
+     8,
+     7,
+     4
+    ],
+    "C": [
+     10
+    ]
+   },
+   "hp": 7,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "7 ruder, ingen fit i majorerne og kun 7 hp: pas – 2♦ er den bedste kontrakt.",
+   "en": {
+    "why": "7 diamonds, no fit in the majors and only 7 HCP: pass – 2♦ is the best contract."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     11
+    ],
+    "H": [
+     11,
+     10
+    ],
+    "D": [
+     12,
+     11,
+     10,
+     9,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     10,
+     7,
+     6
+    ]
+   },
+   "hp": 5,
+   "sp": 9,
+   "correct": "Pas",
+   "why": "7 ruder, ingen fit i majorerne og kun 5 hp: pas – 2♦ er den bedste kontrakt.",
+   "en": {
+    "why": "7 diamonds, no fit in the majors and only 5 HCP: pass – 2♦ is the best contract."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     9,
+     8,
+     3
+    ],
+    "H": [],
+    "D": [
+     14,
+     13,
+     10,
+     9,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "correct": "Pas",
+   "why": "7 ruder, ingen fit i majorerne og kun 7 hp: pas – 2♦ er den bedste kontrakt.",
+   "en": {
+    "why": "7 diamonds, no fit in the majors and only 7 HCP: pass – 2♦ is the best contract."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     10,
+     8,
+     2
+    ],
+    "H": [
+     2
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     6,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     10,
+     9
+    ]
+   },
+   "hp": 6,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "7 ruder, ingen fit i majorerne og kun 6 hp: pas – 2♦ er den bedste kontrakt.",
+   "en": {
+    "why": "7 diamonds, no fit in the majors and only 6 HCP: pass – 2♦ is the best contract."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     14,
+     8,
+     2
+    ],
+    "H": [],
+    "D": [
+     11,
+     10,
+     6,
+     5,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     9,
+     7,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "7 ruder, ingen fit i majorerne og kun 5 hp: pas – 2♦ er den bedste kontrakt.",
+   "en": {
+    "why": "7 diamonds, no fit in the majors and only 5 HCP: pass – 2♦ is the best contract."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     8,
+     6
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     9,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     11,
+     7,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "7 ruder, ingen fit i majorerne og kun 7 hp: pas – 2♦ er den bedste kontrakt.",
+   "en": {
+    "why": "7 diamonds, no fit in the majors and only 7 HCP: pass – 2♦ is the best contract."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     4,
+     2
+    ],
+    "H": [
+     10,
+     6
+    ],
+    "D": [
+     13,
+     10,
+     7,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 3,
+   "sp": 5,
+   "correct": "Pas",
+   "why": "6 ruder, ingen fit i majorerne og kun 3 hp: pas – 2♦ er den bedste kontrakt.",
+   "en": {
+    "why": "6 diamonds, no fit in the majors and only 3 HCP: pass – 2♦ is the best contract."
+   }
+  },
+  {
+   "situation": "svar",
+   "hand": {
+    "S": [
+     11,
+     10,
+     3
+    ],
+    "H": [
+     12,
+     6
+    ],
+    "D": [
+     12,
+     10,
+     7,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     10
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "Pas",
+   "why": "6 ruder, ingen fit i majorerne og kun 7 hp: pas – 2♦ er den bedste kontrakt.",
+   "en": {
+    "why": "6 diamonds, no fit in the majors and only 7 HCP: pass – 2♦ is the best contract."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     10,
+     9,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     9,
+     5
+    ],
+    "D": [],
+    "C": [
+     14,
+     12,
+     5,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "Fire klør og 11 hp (minimum): 3♣.",
+   "en": {
+    "why": "Four clubs and 11 HCP (a minimum): 3♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     10,
+     9,
+     7,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     7,
+     2
+    ],
+    "D": [],
+    "C": [
+     13,
+     12,
+     7,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "3♣",
+   "why": "Fire klør og 12 hp (minimum): 3♣.",
+   "en": {
+    "why": "Four clubs and 12 HCP (a minimum): 3♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     11,
+     10,
+     8,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     6,
+     3
+    ],
+    "D": [],
+    "C": [
+     14,
+     10,
+     7,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "3♣",
+   "why": "Fire klør og 12 hp (minimum): 3♣.",
+   "en": {
+    "why": "Four clubs and 12 HCP (a minimum): 3♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     10,
+     6,
+     5
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     6,
+     4
+    ],
+    "D": [],
+    "C": [
+     13,
+     12,
+     6,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "3♣",
+   "why": "Fire klør og 13 hp (minimum): 3♣.",
+   "en": {
+    "why": "Four clubs and 13 HCP (a minimum): 3♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     13,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     9,
+     8,
+     6,
+     4
+    ],
+    "D": [],
+    "C": [
+     13,
+     12,
+     9,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "3♣",
+   "why": "Fire klør og 12 hp (minimum): 3♣.",
+   "en": {
+    "why": "Four clubs and 12 HCP (a minimum): 3♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     10,
+     8,
+     7,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     9,
+     7
+    ],
+    "D": [],
+    "C": [
+     13,
+     12,
+     10,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "Fire klør og 11 hp (minimum): 3♣.",
+   "en": {
+    "why": "Four clubs and 11 HCP (a minimum): 3♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     11,
+     7,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     6,
+     3
+    ],
+    "D": [],
+    "C": [
+     12,
+     10,
+     8,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "3♣",
+   "why": "Fire klør og 12 hp (minimum): 3♣.",
+   "en": {
+    "why": "Four clubs and 12 HCP (a minimum): 3♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     6
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     7,
+     3
+    ],
+    "D": [],
+    "C": [
+     14,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "Fire klør og 11 hp (minimum): 3♣.",
+   "en": {
+    "why": "Four clubs and 11 HCP (a minimum): 3♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     11,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     11,
+     7,
+     4,
+     3
+    ],
+    "D": [],
+    "C": [
+     13,
+     10,
+     9,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "Fire klør og 11 hp (minimum): 3♣.",
+   "en": {
+    "why": "Four clubs and 11 HCP (a minimum): 3♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     13,
+     9,
+     8,
+     4
+    ],
+    "H": [
+     14,
+     7,
+     4,
+     3,
+     2
+    ],
+    "D": [],
+    "C": [
+     14,
+     10,
+     9,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "Fire klør og 11 hp (minimum): 3♣.",
+   "en": {
+    "why": "Four clubs and 11 HCP (a minimum): 3♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8,
+     6
+    ],
+    "H": [
+     12,
+     6,
+     5,
+     3,
+     2
+    ],
+    "D": [],
+    "C": [
+     13,
+     12,
+     7,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "3♣",
+   "why": "Fire klør og 12 hp (minimum): 3♣.",
+   "en": {
+    "why": "Four clubs and 12 HCP (a minimum): 3♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     11,
+     7,
+     5
+    ],
+    "H": [
+     13,
+     11,
+     6,
+     4,
+     3
+    ],
+    "D": [],
+    "C": [
+     13,
+     9,
+     6,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "3♣",
+   "why": "Fire klør og 12 hp (minimum): 3♣.",
+   "en": {
+    "why": "Four clubs and 12 HCP (a minimum): 3♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     13,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     10,
+     6,
+     4,
+     3
+    ],
+    "D": [],
+    "C": [
+     12,
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "3♣",
+   "why": "Fire klør og 12 hp (minimum): 3♣.",
+   "en": {
+    "why": "Four clubs and 12 HCP (a minimum): 3♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     9
+    ],
+    "H": [
+     14,
+     8,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     8,
+     7,
+     4,
+     3
+    ],
+    "C": []
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "Fire ruder og 11 hp (minimum): 3♦.",
+   "en": {
+    "why": "Four diamonds and 11 HCP (a minimum): 3♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     7
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     10,
+     8
+    ],
+    "D": [
+     12,
+     11,
+     7,
+     3
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "3♦",
+   "why": "Fire ruder og 12 hp (minimum): 3♦.",
+   "en": {
+    "why": "Four diamonds and 12 HCP (a minimum): 3♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     6,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     6
+    ],
+    "C": []
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "Fire ruder og 11 hp (minimum): 3♦.",
+   "en": {
+    "why": "Four diamonds and 11 HCP (a minimum): 3♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     5,
+     3
+    ],
+    "D": [
+     12,
+     10,
+     7,
+     2
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "3♦",
+   "why": "Fire ruder og 12 hp (minimum): 3♦.",
+   "en": {
+    "why": "Four diamonds and 12 HCP (a minimum): 3♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     13,
+     11,
+     8,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     8,
+     3
+    ],
+    "D": [
+     13,
+     9,
+     8,
+     4
+    ],
+    "C": []
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "3♦",
+   "why": "Fire ruder og 13 hp (minimum): 3♦.",
+   "en": {
+    "why": "Four diamonds and 13 HCP (a minimum): 3♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     11,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     8,
+     6
+    ],
+    "D": [
+     12,
+     9,
+     5,
+     4
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "3♦",
+   "why": "Fire ruder og 12 hp (minimum): 3♦.",
+   "en": {
+    "why": "Four diamonds and 12 HCP (a minimum): 3♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     12,
+     8,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     4
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "3♦",
+   "why": "Fire ruder og 12 hp (minimum): 3♦.",
+   "en": {
+    "why": "Four diamonds and 12 HCP (a minimum): 3♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     9,
+     6
+    ],
+    "D": [
+     11,
+     10,
+     9,
+     7
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "3♦",
+   "why": "Fire ruder og 12 hp (minimum): 3♦.",
+   "en": {
+    "why": "Four diamonds and 12 HCP (a minimum): 3♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     12,
+     9,
+     7,
+     5
+    ],
+    "H": [
+     12,
+     9,
+     8,
+     6,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     4,
+     2
+    ],
+    "C": []
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "Fire ruder og 11 hp (minimum): 3♦.",
+   "en": {
+    "why": "Four diamonds and 11 HCP (a minimum): 3♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     12,
+     10,
+     6,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     8,
+     7,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     2
+    ],
+    "C": []
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "3♦",
+   "why": "Fire ruder og 13 hp (minimum): 3♦.",
+   "en": {
+    "why": "Four diamonds and 13 HCP (a minimum): 3♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     9,
+     7
+    ],
+    "D": [
+     10,
+     8,
+     4,
+     3
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "3♦",
+   "why": "Fire ruder og 12 hp (minimum): 3♦.",
+   "en": {
+    "why": "Four diamonds and 12 HCP (a minimum): 3♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     11,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     7
+    ],
+    "D": [
+     12,
+     10,
+     8,
+     6
+    ],
+    "C": []
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "3♦",
+   "why": "Fire ruder og 13 hp (minimum): 3♦.",
+   "en": {
+    "why": "Four diamonds and 13 HCP (a minimum): 3♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     7,
+     3
+    ],
+    "D": [
+     13,
+     9,
+     7,
+     2
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "3♦",
+   "why": "Fire ruder og 12 hp (minimum): 3♦.",
+   "en": {
+    "why": "Four diamonds and 12 HCP (a minimum): 3♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     6,
+     2
+    ],
+    "D": [],
+    "C": [
+     12,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "4♣",
+   "why": "Fire klør og 15 hp (maksimum): 4♣.",
+   "en": {
+    "why": "Four clubs and 15 HCP (a maximum): 4♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     7,
+     6,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10,
+     3
+    ],
+    "D": [],
+    "C": [
+     14,
+     12,
+     10,
+     9
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "4♣",
+   "why": "Fire klør og 15 hp (maksimum): 4♣.",
+   "en": {
+    "why": "Four clubs and 15 HCP (a maximum): 4♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     13,
+     9,
+     5,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     9,
+     3
+    ],
+    "D": [],
+    "C": [
+     14,
+     12,
+     8,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♣",
+   "why": "Fire klør og 14 hp (maksimum): 4♣.",
+   "en": {
+    "why": "Four clubs and 14 HCP (a maximum): 4♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     13,
+     12,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     6,
+     5,
+     4
+    ],
+    "D": [],
+    "C": [
+     12,
+     9,
+     7,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♣",
+   "why": "Fire klør og 14 hp (maksimum): 4♣.",
+   "en": {
+    "why": "Four clubs and 14 HCP (a maximum): 4♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     8,
+     7
+    ],
+    "D": [],
+    "C": [
+     12,
+     8,
+     5,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♣",
+   "why": "Fire klør og 14 hp (maksimum): 4♣.",
+   "en": {
+    "why": "Four clubs and 14 HCP (a maximum): 4♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     12,
+     10,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     8,
+     5
+    ],
+    "D": [],
+    "C": [
+     13,
+     12,
+     9,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♣",
+   "why": "Fire klør og 14 hp (maksimum): 4♣.",
+   "en": {
+    "why": "Four clubs and 14 HCP (a maximum): 4♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     9
+    ],
+    "H": [
+     13,
+     12,
+     8,
+     6,
+     2
+    ],
+    "D": [],
+    "C": [
+     13,
+     8,
+     5,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♣",
+   "why": "Fire klør og 14 hp (maksimum): 4♣.",
+   "en": {
+    "why": "Four clubs and 14 HCP (a maximum): 4♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     11,
+     7,
+     2
+    ],
+    "H": [
+     13,
+     10,
+     7,
+     5,
+     4
+    ],
+    "D": [],
+    "C": [
+     14,
+     12,
+     9,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♣",
+   "why": "Fire klør og 14 hp (maksimum): 4♣.",
+   "en": {
+    "why": "Four clubs and 14 HCP (a maximum): 4♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     12,
+     7,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     8,
+     2
+    ],
+    "D": [],
+    "C": [
+     13,
+     8,
+     7,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♣",
+   "why": "Fire klør og 14 hp (maksimum): 4♣.",
+   "en": {
+    "why": "Four clubs and 14 HCP (a maximum): 4♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     10
+    ],
+    "H": [
+     13,
+     11,
+     6,
+     4,
+     3
+    ],
+    "D": [],
+    "C": [
+     14,
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "4♣",
+   "why": "Fire klør og 15 hp (maksimum): 4♣.",
+   "en": {
+    "why": "Four clubs and 15 HCP (a maximum): 4♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     11,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     10,
+     7
+    ],
+    "D": [],
+    "C": [
+     12,
+     11,
+     7,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "4♣",
+   "why": "Fire klør og 15 hp (maksimum): 4♣.",
+   "en": {
+    "why": "Four clubs and 15 HCP (a maximum): 4♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     13,
+     11,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     7,
+     5,
+     2
+    ],
+    "D": [],
+    "C": [
+     13,
+     12,
+     3,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♣",
+   "why": "Fire klør og 14 hp (maksimum): 4♣.",
+   "en": {
+    "why": "Four clubs and 14 HCP (a maximum): 4♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     13,
+     11,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     7,
+     6
+    ],
+    "D": [],
+    "C": [
+     13,
+     8,
+     6,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♣",
+   "why": "Fire klør og 14 hp (maksimum): 4♣.",
+   "en": {
+    "why": "Four clubs and 14 HCP (a maximum): 4♣."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     10,
+     4
+    ],
+    "D": [
+     11,
+     10,
+     6,
+     3
+    ],
+    "C": []
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♦",
+   "why": "Fire ruder og 14 hp (maksimum): 4♦.",
+   "en": {
+    "why": "Four diamonds and 14 HCP (a maximum): 4♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     6,
+     5,
+     2
+    ],
+    "C": []
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "4♦",
+   "why": "Fire ruder og 15 hp (maksimum): 4♦.",
+   "en": {
+    "why": "Four diamonds and 15 HCP (a maximum): 4♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     13,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     9,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     7,
+     4
+    ],
+    "C": []
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♦",
+   "why": "Fire ruder og 14 hp (maksimum): 4♦.",
+   "en": {
+    "why": "Four diamonds and 14 HCP (a maximum): 4♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     7,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     9,
+     8
+    ],
+    "C": []
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♦",
+   "why": "Fire ruder og 14 hp (maksimum): 4♦.",
+   "en": {
+    "why": "Four diamonds and 14 HCP (a maximum): 4♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     4
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     7,
+     6,
+     4
+    ],
+    "C": []
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♦",
+   "why": "Fire ruder og 14 hp (maksimum): 4♦.",
+   "en": {
+    "why": "Four diamonds and 14 HCP (a maximum): 4♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7,
+     6
+    ],
+    "H": [
+     12,
+     11,
+     9,
+     7,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     8,
+     3
+    ],
+    "C": []
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "4♦",
+   "why": "Fire ruder og 15 hp (maksimum): 4♦.",
+   "en": {
+    "why": "Four diamonds and 15 HCP (a maximum): 4♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8,
+     5
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     9,
+     5
+    ],
+    "D": [
+     14,
+     7,
+     5,
+     3
+    ],
+    "C": []
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♦",
+   "why": "Fire ruder og 14 hp (maksimum): 4♦.",
+   "en": {
+    "why": "Four diamonds and 14 HCP (a maximum): 4♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     6,
+     4
+    ],
+    "D": [
+     9,
+     5,
+     4,
+     2
+    ],
+    "C": []
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "4♦",
+   "why": "Fire ruder og 15 hp (maksimum): 4♦.",
+   "en": {
+    "why": "Four diamonds and 15 HCP (a maximum): 4♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     8
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     8,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     5,
+     4
+    ],
+    "C": []
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♦",
+   "why": "Fire ruder og 14 hp (maksimum): 4♦.",
+   "en": {
+    "why": "Four diamonds and 14 HCP (a maximum): 4♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     12,
+     10,
+     9,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     9,
+     7
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     6
+    ],
+    "C": []
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♦",
+   "why": "Fire ruder og 14 hp (maksimum): 4♦.",
+   "en": {
+    "why": "Four diamonds and 14 HCP (a maximum): 4♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     13,
+     12,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     8,
+     4
+    ],
+    "D": [
+     14,
+     7,
+     4,
+     2
+    ],
+    "C": []
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "4♦",
+   "why": "Fire ruder og 15 hp (maksimum): 4♦.",
+   "en": {
+    "why": "Four diamonds and 15 HCP (a maximum): 4♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     13,
+     5,
+     2
+    ],
+    "H": [
+     11,
+     8,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     8,
+     3
+    ],
+    "C": []
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♦",
+   "why": "Fire ruder og 14 hp (maksimum): 4♦.",
+   "en": {
+    "why": "Four diamonds and 14 HCP (a maximum): 4♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     12,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     8,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     7,
+     6
+    ],
+    "C": []
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♦",
+   "why": "Fire ruder og 14 hp (maksimum): 4♦.",
+   "en": {
+    "why": "Four diamonds and 14 HCP (a maximum): 4♦."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     2
+    ],
+    "H": [
+     11,
+     8,
+     7,
+     6,
+     5
+    ],
+    "D": [
+     9,
+     3
+    ],
+    "C": [
+     14,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "3♥",
+   "why": "5-4-2-2 og 12 hp – minimum uden sidefarve: 3♥.",
+   "en": {
+    "why": "5-4-2-2 and 12 HCP – a minimum without a side suit: 3♥."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     12,
+     6,
+     5
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     5,
+     2
+    ],
+    "D": [
+     5,
+     4
+    ],
+    "C": [
+     12,
+     11
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "3♥",
+   "why": "5-4-2-2 og 12 hp – minimum uden sidefarve: 3♥.",
+   "en": {
+    "why": "5-4-2-2 and 12 HCP – a minimum without a side suit: 3♥."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     13,
+     10,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     11,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     5
+    ],
+    "C": [
+     9,
+     8
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "3♥",
+   "why": "5-4-2-2 og 11 hp – minimum uden sidefarve: 3♥.",
+   "en": {
+    "why": "5-4-2-2 and 11 HCP – a minimum without a side suit: 3♥."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     13,
+     7,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     4,
+     2
+    ],
+    "D": [
+     11,
+     6
+    ],
+    "C": [
+     11,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "5-4-2-2 og 13 hp – minimum uden sidefarve: 3♥.",
+   "en": {
+    "why": "5-4-2-2 and 13 HCP – a minimum without a side suit: 3♥."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     8,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     6,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     11
+    ],
+    "C": [
+     12,
+     11
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "3♥",
+   "why": "5-4-2-2 og 11 hp – minimum uden sidefarve: 3♥.",
+   "en": {
+    "why": "5-4-2-2 and 11 HCP – a minimum without a side suit: 3♥."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     13,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     7,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     4
+    ],
+    "C": [
+     14,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "3♥",
+   "why": "5-4-2-2 og 12 hp – minimum uden sidefarve: 3♥.",
+   "en": {
+    "why": "5-4-2-2 and 12 HCP – a minimum without a side suit: 3♥."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     4,
+     3
+    ],
+    "D": [
+     12,
+     3
+    ],
+    "C": [
+     8,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "5-4-2-2 og 13 hp – minimum uden sidefarve: 3♥.",
+   "en": {
+    "why": "5-4-2-2 and 13 HCP – a minimum without a side suit: 3♥."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     12,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     6,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     5
+    ],
+    "C": [
+     11,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "3♥",
+   "why": "5-4-2-2 og 11 hp – minimum uden sidefarve: 3♥.",
+   "en": {
+    "why": "5-4-2-2 and 11 HCP – a minimum without a side suit: 3♥."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8,
+     4
+    ],
+    "H": [
+     11,
+     8,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     7
+    ],
+    "C": [
+     14,
+     9
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "5-4-2-2 og 13 hp – minimum uden sidefarve: 3♥.",
+   "en": {
+    "why": "5-4-2-2 and 13 HCP – a minimum without a side suit: 3♥."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     10,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     4,
+     2
+    ],
+    "C": [
+     9,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "3♥",
+   "why": "5-4-2-2 og 11 hp – minimum uden sidefarve: 3♥.",
+   "en": {
+    "why": "5-4-2-2 and 11 HCP – a minimum without a side suit: 3♥."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     12,
+     8,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     6,
+     2
+    ],
+    "C": [
+     14,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "3♥",
+   "why": "5-4-2-2 og 11 hp – minimum uden sidefarve: 3♥.",
+   "en": {
+    "why": "5-4-2-2 and 11 HCP – a minimum without a side suit: 3♥."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     7,
+     2
+    ],
+    "D": [
+     12,
+     6
+    ],
+    "C": [
+     11,
+     10
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "5-4-2-2 og 13 hp – minimum uden sidefarve: 3♥.",
+   "en": {
+    "why": "5-4-2-2 and 13 HCP – a minimum without a side suit: 3♥."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     9,
+     8
+    ],
+    "D": [
+     9,
+     4
+    ],
+    "C": [
+     8,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "3♥",
+   "why": "5-4-2-2 og 11 hp – minimum uden sidefarve: 3♥.",
+   "en": {
+    "why": "5-4-2-2 and 11 HCP – a minimum without a side suit: 3♥."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8,
+     6
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     6
+    ],
+    "C": [
+     12,
+     6
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "5-4-2-2 og 15 hp – maksimum uden sidefarve, men ikke hold i begge minorer: 3♠.",
+   "en": {
+    "why": "5-4-2-2 and 15 HCP – a maximum without a side suit, but not stoppers in both minors: 3♠."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     3
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     8,
+     3
+    ],
+    "D": [
+     5,
+     3
+    ],
+    "C": [
+     13,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "5-4-2-2 og 14 hp – maksimum uden sidefarve, men ikke hold i begge minorer: 3♠.",
+   "en": {
+    "why": "5-4-2-2 and 14 HCP – a maximum without a side suit, but not stoppers in both minors: 3♠."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     12,
+     6,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     8,
+     3
+    ],
+    "D": [
+     7,
+     6
+    ],
+    "C": [
+     13,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "5-4-2-2 og 14 hp – maksimum uden sidefarve, men ikke hold i begge minorer: 3♠.",
+   "en": {
+    "why": "5-4-2-2 and 14 HCP – a maximum without a side suit, but not stoppers in both minors: 3♠."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     7
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     5,
+     4
+    ],
+    "D": [
+     12,
+     9
+    ],
+    "C": [
+     13,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "5-4-2-2 og 15 hp – maksimum uden sidefarve, men ikke hold i begge minorer: 3♠.",
+   "en": {
+    "why": "5-4-2-2 and 15 HCP – a maximum without a side suit, but not stoppers in both minors: 3♠."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     8,
+     3
+    ],
+    "D": [
+     9,
+     2
+    ],
+    "C": [
+     13,
+     10
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "5-4-2-2 og 14 hp – maksimum uden sidefarve, men ikke hold i begge minorer: 3♠.",
+   "en": {
+    "why": "5-4-2-2 and 14 HCP – a maximum without a side suit, but not stoppers in both minors: 3♠."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     4
+    ],
+    "C": [
+     11,
+     7
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "5-4-2-2 og 15 hp – maksimum uden sidefarve, men ikke hold i begge minorer: 3♠.",
+   "en": {
+    "why": "5-4-2-2 and 15 HCP – a maximum without a side suit, but not stoppers in both minors: 3♠."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     11,
+     9,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     9,
+     6
+    ],
+    "D": [
+     12,
+     11
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "5-4-2-2 og 15 hp – maksimum uden sidefarve, men ikke hold i begge minorer: 3♠.",
+   "en": {
+    "why": "5-4-2-2 and 15 HCP – a maximum without a side suit, but not stoppers in both minors: 3♠."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     9,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     9
+    ],
+    "D": [
+     14,
+     6
+    ],
+    "C": [
+     11,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "5-4-2-2 og 15 hp – maksimum uden sidefarve, men ikke hold i begge minorer: 3♠.",
+   "en": {
+    "why": "5-4-2-2 and 15 HCP – a maximum without a side suit, but not stoppers in both minors: 3♠."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     4
+    ],
+    "C": [
+     10,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "5-4-2-2 og 14 hp – maksimum uden sidefarve, men ikke hold i begge minorer: 3♠.",
+   "en": {
+    "why": "5-4-2-2 and 14 HCP – a maximum without a side suit, but not stoppers in both minors: 3♠."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     9,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     3
+    ],
+    "C": [
+     10,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "5-4-2-2 og 14 hp – maksimum uden sidefarve, men ikke hold i begge minorer: 3♠.",
+   "en": {
+    "why": "5-4-2-2 and 14 HCP – a maximum without a side suit, but not stoppers in both minors: 3♠."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     8
+    ],
+    "H": [
+     14,
+     10,
+     7,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     2
+    ],
+    "C": [
+     3,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "5-4-2-2 og 14 hp – maksimum uden sidefarve, men ikke hold i begge minorer: 3♠.",
+   "en": {
+    "why": "5-4-2-2 and 14 HCP – a maximum without a side suit, but not stoppers in both minors: 3♠."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     3
+    ],
+    "H": [
+     12,
+     8,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     8
+    ],
+    "C": [
+     12,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "5-4-2-2 og 15 hp – maksimum uden sidefarve, men ikke hold i begge minorer: 3♠.",
+   "en": {
+    "why": "5-4-2-2 and 15 HCP – a maximum without a side suit, but not stoppers in both minors: 3♠."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     11,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     8,
+     2
+    ],
+    "D": [
+     14,
+     2
+    ],
+    "C": [
+     10,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "5-4-2-2 og 14 hp – maksimum uden sidefarve, men ikke hold i begge minorer: 3♠.",
+   "en": {
+    "why": "5-4-2-2 and 14 HCP – a maximum without a side suit, but not stoppers in both minors: 3♠."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     13,
+     11,
+     8,
+     7
+    ],
+    "H": [
+     12,
+     8,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     13,
+     10
+    ],
+    "C": [
+     14,
+     11
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3NT",
+   "why": "5-4-2-2, 14 hp og hold i begge minorer: 3NT.",
+   "en": {
+    "why": "5-4-2-2, 14 HCP and stoppers in both minors: 3NT."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     10,
+     8,
+     7
+    ],
+    "H": [
+     13,
+     12,
+     7,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     8
+    ],
+    "C": [
+     13,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "5-4-2-2, 15 hp og hold i begge minorer: 3NT.",
+   "en": {
+    "why": "5-4-2-2, 15 HCP and stoppers in both minors: 3NT."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     9,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     7
+    ],
+    "C": [
+     14,
+     7
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "5-4-2-2, 15 hp og hold i begge minorer: 3NT.",
+   "en": {
+    "why": "5-4-2-2, 15 HCP and stoppers in both minors: 3NT."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     13,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     12,
+     11,
+     8,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     4
+    ],
+    "C": [
+     14,
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3NT",
+   "why": "5-4-2-2, 14 hp og hold i begge minorer: 3NT.",
+   "en": {
+    "why": "5-4-2-2, 14 HCP and stoppers in both minors: 3NT."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     11,
+     10,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     6,
+     4
+    ],
+    "D": [
+     13,
+     4
+    ],
+    "C": [
+     13,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3NT",
+   "why": "5-4-2-2, 14 hp og hold i begge minorer: 3NT.",
+   "en": {
+    "why": "5-4-2-2, 14 HCP and stoppers in both minors: 3NT."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     2
+    ],
+    "H": [
+     10,
+     9,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     11
+    ],
+    "C": [
+     13,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3NT",
+   "why": "5-4-2-2, 14 hp og hold i begge minorer: 3NT.",
+   "en": {
+    "why": "5-4-2-2, 14 HCP and stoppers in both minors: 3NT."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     11,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     8,
+     6
+    ],
+    "D": [
+     14,
+     11
+    ],
+    "C": [
+     13,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3NT",
+   "why": "5-4-2-2, 14 hp og hold i begge minorer: 3NT.",
+   "en": {
+    "why": "5-4-2-2, 14 HCP and stoppers in both minors: 3NT."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     11,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     9,
+     7,
+     6,
+     4
+    ],
+    "D": [
+     13,
+     5
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "5-4-2-2, 15 hp og hold i begge minorer: 3NT.",
+   "en": {
+    "why": "5-4-2-2, 15 HCP and stoppers in both minors: 3NT."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     7
+    ],
+    "H": [
+     12,
+     8,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     13,
+     9
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3NT",
+   "why": "5-4-2-2, 14 hp og hold i begge minorer: 3NT.",
+   "en": {
+    "why": "5-4-2-2, 14 HCP and stoppers in both minors: 3NT."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7,
+     3
+    ],
+    "H": [
+     10,
+     8,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     7
+    ],
+    "C": [
+     14,
+     6
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3NT",
+   "why": "5-4-2-2, 15 hp og hold i begge minorer: 3NT.",
+   "en": {
+    "why": "5-4-2-2, 15 HCP and stoppers in both minors: 3NT."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     9,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     4
+    ],
+    "C": [
+     14,
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3NT",
+   "why": "5-4-2-2, 14 hp og hold i begge minorer: 3NT.",
+   "en": {
+    "why": "5-4-2-2, 14 HCP and stoppers in both minors: 3NT."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     13,
+     8,
+     7,
+     3
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     9
+    ],
+    "C": [
+     14,
+     9
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3NT",
+   "why": "5-4-2-2, 14 hp og hold i begge minorer: 3NT.",
+   "en": {
+    "why": "5-4-2-2, 14 HCP and stoppers in both minors: 3NT."
+   }
+  },
+  {
+   "situation": "spm",
+   "hand": {
+    "S": [
+     14,
+     7,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     9,
+     7,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     2
+    ],
+    "C": [
+     13,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3NT",
+   "why": "5-4-2-2, 14 hp og hold i begge minorer: 3NT.",
+   "en": {
+    "why": "5-4-2-2, 14 HCP and stoppers in both minors: 3NT."
+   }
+  }
+ ]
+}

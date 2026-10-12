@@ -1,0 +1,10063 @@
+{
+ "situations": {
+  "aab_kl": {
+   "rolle": "Åbner",
+   "auction": [
+    [
+     "Dig",
+     "1♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "1NT",
+    "2♣",
+    "2♦",
+    "2♥",
+    "2♠",
+    "2NT",
+    "3♣"
+   ],
+   "bonus": {
+    "q": "Hvad viser en revers i forslaget?",
+    "correct": "16+ hp og rundekrav",
+    "options": [
+     "16+ hp og rundekrav",
+     "12–18 hp, ikke krav",
+     "19–21 hp, udgangskrav"
+    ],
+    "why": "Forslaget giver reversen en fast styrke: 16+ og rundekrav. I dag er den naturlig, 5-4, 12–18 hp og ikke krav. Med 19+ og 5-4 springer åbner i ny farve."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does a reverse show in the proposal?",
+     "correct": "16+ HCP and forcing for one round",
+     "options": [
+      "16+ HCP and forcing for one round",
+      "12–18 HCP, non-forcing",
+      "19–21 HCP, game forcing"
+     ],
+     "why": "The proposal gives the reverse a fixed strength: 16+ and forcing for one round. Today it is natural, 5-4, 12–18 HCP and non-forcing. With 19+ and 5-4 opener jumps in a new suit."
+    }
+   }
+  },
+  "aab_ru": {
+   "rolle": "Åbner",
+   "auction": [
+    [
+     "Dig",
+     "1♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "1NT",
+    "2♣",
+    "2♦",
+    "2♥",
+    "2♠",
+    "2NT",
+    "3♦"
+   ],
+   "bonus": {
+    "q": "Er 1♣ – 1♥ – 1♠ en revers?",
+    "correct": "Nej – spar meldes på samme niveau",
+    "options": [
+     "Nej – spar meldes på samme niveau",
+     "Ja – spar er højere end klør",
+     "Ja, hvis åbner har 16+ hp"
+    ],
+    "why": "En revers meldes billigst muligt på et nyt niveau: 1♣ – 1♥ – 2♦, 1♦ – 1♠ – 2♥ og 1♥ – 1NT – 2♠. 1♠ er på samme niveau som 1♥ og er derfor ikke revers."
+   },
+   "en": {
+    "bonus": {
+     "q": "Is 1♣ – 1♥ – 1♠ a reverse?",
+     "correct": "No – spades are bid at the same level",
+     "options": [
+      "No – spades are bid at the same level",
+      "Yes – spades rank above clubs",
+      "Yes, if opener has 16+ HCP"
+     ],
+     "why": "A reverse is bid at the cheapest level on a new level: 1♣ – 1♥ – 2♦, 1♦ – 1♠ – 2♥ and 1♥ – 1NT – 2♠. 1♠ is on the same level as 1♥, so it is not a reverse."
+    }
+   }
+  },
+  "aab_hj": {
+   "rolle": "Åbner",
+   "auction": [
+    [
+     "Dig",
+     "1♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "1NT"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "Pas",
+    "2♣",
+    "2♦",
+    "2♥",
+    "2♠",
+    "2NT",
+    "3♥"
+   ],
+   "bonus": {
+    "q": "Hvad viser en revers efter 2 over 1?",
+    "correct": "Kun fordeling – udgangskravet er der allerede",
+    "options": [
+     "Kun fordeling – udgangskravet er der allerede",
+     "16+ hp og rundekrav",
+     "Ikke krav"
+    ],
+    "why": "Efter 2 over 1 er der allerede udgangskrav, så reversen viser kun fordeling – følg afsnit 5 (15+ for ny farve på 3-trinnet). Efter forhåndspas er reversen ikke krav."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does a reverse show after a 2-over-1?",
+     "correct": "Only shape – the auction is already game forcing",
+     "options": [
+      "Only shape – the auction is already game forcing",
+      "16+ HCP and forcing for one round",
+      "Non-forcing"
+     ],
+     "why": "After a 2-over-1 the auction is already game forcing, so the reverse shows only shape – follow section 5 (15+ for a new suit at the three level). After a passed hand the reverse is non-forcing."
+    }
+   }
+  },
+  "svar_kl": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1♣"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "Pas",
+    "2♠",
+    "2NT",
+    "3♣",
+    "3♦",
+    "3♥",
+    "3♠",
+    "3NT",
+    "4♣",
+    "4♦",
+    "4♥"
+   ],
+   "bonus": {
+    "q": "Hvad er forskellen på 2NT og 3NT efter reversen?",
+    "correct": "3NT er den svagere udgangshånd, 2NT den stærkere",
+    "options": [
+     "3NT er den svagere udgangshånd, 2NT den stærkere",
+     "2NT er den svagere udgangshånd, 3NT den stærkere",
+     "2NT er svag og beder om 3♣"
+    ],
+    "why": "Begge lover hold i fjerde farve. 3NT er for at spille med en svagere udgangshånd uden slemambition; 2NT er stærkere og lader åbner vise sin fordeling. Ingberman (2NT som svagt relæ) er kun et alternativ til drøftelse."
+   },
+   "en": {
+    "bonus": {
+     "q": "What is the difference between 2NT and 3NT after the reverse?",
+     "correct": "3NT is the weaker game hand, 2NT the stronger",
+     "options": [
+      "3NT is the weaker game hand, 2NT the stronger",
+      "2NT is the weaker game hand, 3NT the stronger",
+      "2NT is weak and asks for 3♣"
+     ],
+     "why": "Both promise a stopper in the fourth suit. 3NT is to play with a weaker game hand without slam interest; 2NT is stronger and lets opener show their shape. Ingberman (2NT as a weak relay) is only an alternative for discussion."
+    }
+   }
+  },
+  "svar_ru": {
+   "rolle": "Svarer",
+   "auction": [
+    [
+     "Makker",
+     "1♦"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Dig",
+     "1♠"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ],
+    [
+     "Makker",
+     "2♥"
+    ],
+    [
+     "Modstander",
+     "Pas"
+    ]
+   ],
+   "calls": [
+    "Pas",
+    "2♠",
+    "2NT",
+    "3♣",
+    "3♦",
+    "3♥",
+    "3♠",
+    "3NT",
+    "4♣",
+    "4♦",
+    "4♥"
+   ],
+   "bonus": {
+    "q": "1♣ – 1♠ – 2♥ – (3♦): hvad betyder svarers pas?",
+    "correct": "Svagt – ikke kravpas",
+    "options": [
+     "Svagt – ikke kravpas",
+     "Kravpas – åbner skal melde",
+     "Ønske om at straffe"
+    ],
+    "why": "Efter indmelding over reversen er pas svagt (ikke kravpas), og dobling er straf."
+   },
+   "en": {
+    "bonus": {
+     "q": "1♣ – 1♠ – 2♥ – (3♦): what does responder's pass mean?",
+     "correct": "Weak – not a forcing pass",
+     "options": [
+      "Weak – not a forcing pass",
+      "A forcing pass – opener must bid",
+      "A wish to penalise"
+     ],
+     "why": "After an overcall over the reverse, pass is weak (not a forcing pass), and double is for penalties."
+    }
+   }
+  }
+ },
+ "hands": [
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     4
+    ],
+    "D": [
+     13,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     7,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     14,
+     13,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     9
+    ],
+    "C": [
+     13,
+     6,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     13,
+     10,
+     7,
+     4
+    ],
+    "D": [
+     11,
+     8,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     10,
+     4
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 17 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 17 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     13,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     7,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     7,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     2
+    ],
+    "H": [
+     13,
+     7,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     12
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     7,
+     4
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 17 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 17 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     7
+    ],
+    "D": [
+     14,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     8,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 18,
+   "sp": 21,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 18 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 18 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     11
+    ],
+    "H": [
+     14,
+     12,
+     3,
+     2
+    ],
+    "D": [
+     11,
+     10,
+     8
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     10,
+     6
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 17 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 17 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     2
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     6
+    ],
+    "D": [
+     13,
+     10,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 18,
+   "sp": 21,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 18 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 18 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     14,
+     11,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     8,
+     5
+    ]
+   },
+   "hp": 18,
+   "sp": 21,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 18 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 18 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     13,
+     12,
+     7,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     6
+    ],
+    "C": [
+     14,
+     11,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     2
+    ],
+    "D": [
+     12,
+     10,
+     9
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     6,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     14,
+     10,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     12,
+     2
+    ],
+    "C": [
+     14,
+     8,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 17 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 17 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     14,
+     12,
+     4,
+     3
+    ],
+    "D": [
+     12,
+     10,
+     9
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     10,
+     3
+    ]
+   },
+   "hp": 18,
+   "sp": 21,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 18 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 18 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     2
+    ],
+    "D": [
+     14,
+     8,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     13,
+     12,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     6
+    ],
+    "C": [
+     14,
+     10,
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     13,
+     7,
+     6,
+     5
+    ],
+    "D": [
+     14,
+     10,
+     8
+    ],
+    "C": [
+     13,
+     12,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     13,
+     10,
+     7,
+     5
+    ],
+    "D": [
+     12,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     8,
+     4,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     14,
+     8,
+     6,
+     4
+    ],
+    "D": [
+     12,
+     9,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     8,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     10
+    ],
+    "H": [
+     13,
+     12,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     7,
+     6
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     3
+    ],
+    "D": [
+     10,
+     9,
+     8
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     10,
+     7
+    ]
+   },
+   "hp": 18,
+   "sp": 21,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 18 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 18 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     10
+    ],
+    "H": [
+     13,
+     8,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     8,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     10,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     9
+    ],
+    "D": [
+     14,
+     7,
+     4
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     9,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     5
+    ],
+    "D": [
+     13,
+     8,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 klør, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 clubs, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     11,
+     7,
+     2
+    ],
+    "D": [
+     11,
+     9,
+     8
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     8,
+     7,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 14 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 14 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [],
+    "H": [
+     11,
+     10,
+     7,
+     4
+    ],
+    "D": [
+     13,
+     11,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     9,
+     8,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 14 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 14 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     4,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     9,
+     7
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 15 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 15 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [],
+    "H": [
+     12,
+     11,
+     7,
+     4
+    ],
+    "D": [
+     13,
+     9,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 12 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 12 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     12,
+     8,
+     7
+    ],
+    "D": [
+     13,
+     11,
+     10
+    ],
+    "C": [
+     14,
+     10,
+     9,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 14 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 14 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     12
+    ],
+    "H": [
+     13,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     10,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     10,
+     7,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 14 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 14 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [],
+    "H": [
+     10,
+     7,
+     6,
+     4
+    ],
+    "D": [
+     14,
+     8,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     9,
+     5,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 13 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 13 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     6
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     12,
+     11,
+     7,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 15 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 15 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     14,
+     11,
+     7,
+     5
+    ],
+    "D": [
+     14,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     7,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 14 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 14 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13,
+     9
+    ],
+    "H": [
+     14,
+     12,
+     7,
+     6
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     12,
+     9,
+     7,
+     5,
+     4,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 15 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 15 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     7,
+     6
+    ],
+    "H": [
+     10,
+     8,
+     7,
+     2
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     11,
+     8,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 13 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 13 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     8,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 12 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 12 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     12,
+     10
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     2
+    ],
+    "D": [
+     9
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 13 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 13 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     10,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     10,
+     8,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 12 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 12 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     12,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     7,
+     5
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     9,
+     5,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 13 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 13 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     11
+    ],
+    "H": [
+     13,
+     10,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     7
+    ],
+    "C": [
+     14,
+     10,
+     7,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 12 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 12 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13,
+     7
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     9
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     13,
+     10,
+     8,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 12 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 12 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     9,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     5,
+     4
+    ],
+    "D": [
+     7
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     9,
+     8,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 14 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 14 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     10,
+     9,
+     4
+    ],
+    "D": [
+     14,
+     7,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     8,
+     4,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 13 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 13 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     13,
+     11
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     5
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     12,
+     10,
+     8,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 12 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 12 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     10,
+     8,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     8
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 13 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 13 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     14,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     10
+    ],
+    "C": [
+     14,
+     9,
+     8,
+     7,
+     3,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 15 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 15 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_kl",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     12,
+     10,
+     7
+    ],
+    "D": [
+     14,
+     8,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     9,
+     7,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♣",
+   "why": "6 klør, 4 hjerter og kun 12 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 clubs, 4 hearts and only 12 HCP: 2♣ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     14,
+     10,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     9,
+     3
+    ],
+    "C": [
+     10,
+     9,
+     8
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     14,
+     7,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     9,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     5
+    ]
+   },
+   "hp": 18,
+   "sp": 21,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 18 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 18 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     12
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     5
+    ],
+    "D": [
+     13,
+     11,
+     9,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     7,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     11
+    ],
+    "H": [
+     13,
+     12,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     8,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     5
+    ],
+    "D": [
+     12,
+     11,
+     9,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     7
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     2
+    ],
+    "H": [
+     14,
+     12,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     8,
+     6
+    ],
+    "C": [
+     14,
+     8,
+     6
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     14,
+     13,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     8,
+     4
+    ],
+    "C": [
+     14,
+     10,
+     2
+    ]
+   },
+   "hp": 18,
+   "sp": 21,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 18 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 18 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     13,
+     12,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     8,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     5
+    ]
+   },
+   "hp": 18,
+   "sp": 21,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 18 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 18 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     14,
+     13,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     9,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     6,
+     3
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 17 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 17 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     7,
+     6,
+     3
+    ],
+    "C": [
+     13,
+     7,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     14,
+     10,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     7,
+     4
+    ],
+    "C": [
+     11,
+     9,
+     6
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     14,
+     11,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     8,
+     7
+    ],
+    "C": [
+     10,
+     8,
+     7
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     4
+    ],
+    "D": [
+     11,
+     9,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     9
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     7
+    ],
+    "D": [
+     12,
+     11,
+     9,
+     8,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     2
+    ]
+   },
+   "hp": 18,
+   "sp": 21,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 18 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 18 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     14,
+     11,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     9,
+     7,
+     6,
+     5
+    ],
+    "C": [
+     14,
+     4,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     11
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10
+    ],
+    "D": [
+     13,
+     12,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     4
+    ]
+   },
+   "hp": 18,
+   "sp": 21,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 18 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 18 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     2
+    ],
+    "H": [
+     14,
+     7,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     8,
+     6
+    ],
+    "C": [
+     14,
+     12,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     9,
+     3
+    ],
+    "C": [
+     8,
+     6,
+     5
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 17 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 17 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     14,
+     11,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     7,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     7
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     14,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     6,
+     2
+    ],
+    "C": [
+     12,
+     8,
+     4
+    ]
+   },
+   "hp": 18,
+   "sp": 21,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 18 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 18 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     14,
+     13,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     9,
+     4
+    ],
+    "C": [
+     9,
+     4,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 16 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     14,
+     10,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     9,
+     6
+    ],
+    "C": [
+     13,
+     12,
+     10
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 17 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 17 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     12,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     9,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     9
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "2♥",
+   "why": "5 ruder, 4 hjerter og 17 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 diamonds, 4 hearts and 17 HCP: reverse with 2♥ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     9
+    ],
+    "H": [
+     14,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     11,
+     9,
+     8,
+     7,
+     4
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 12 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 12 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     11
+    ],
+    "H": [
+     13,
+     12,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     11
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 15 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 15 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     3
+    ],
+    "H": [
+     13,
+     10,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     9,
+     8,
+     2
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 12 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 12 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     12,
+     9,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     10,
+     9,
+     4
+    ],
+    "C": [
+     10,
+     8,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 12 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 12 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     13,
+     12,
+     10
+    ],
+    "D": [
+     11,
+     8,
+     6,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     6,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 13 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 13 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13,
+     8
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     6
+    ],
+    "D": [
+     14,
+     8,
+     6,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 14 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 14 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     10,
+     9,
+     8
+    ],
+    "D": [
+     14,
+     13,
+     7,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     8
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 15 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 15 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     11,
+     9,
+     7
+    ],
+    "D": [
+     13,
+     11,
+     8,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 13 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 13 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     10,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     9,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     11
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 15 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 15 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     8,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     8,
+     7,
+     5,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 12 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 12 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [],
+    "H": [
+     12,
+     8,
+     7,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     10,
+     8,
+     5
+    ],
+    "C": [
+     13,
+     12,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 13 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 13 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     9,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     4
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 12 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 12 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     13,
+     7
+    ],
+    "H": [
+     12,
+     11,
+     9,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     7,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 13 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 13 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     11,
+     8
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     10,
+     8,
+     5
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 15 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 15 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     7
+    ],
+    "H": [
+     12,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     11,
+     9,
+     7,
+     4,
+     2
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 13 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 13 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     11,
+     10,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     7,
+     6,
+     3
+    ],
+    "C": [
+     13,
+     8,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 15 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 15 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     11,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     9,
+     7,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     7
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 15 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 15 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     13,
+     11,
+     9,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     9,
+     8,
+     6,
+     2
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 13 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 13 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [],
+    "H": [
+     7,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     10
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 12 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 12 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     13,
+     9,
+     7
+    ],
+    "D": [
+     12,
+     11,
+     9,
+     7,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     9
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 15 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 15 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     14,
+     11,
+     7,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     10,
+     8,
+     7,
+     6
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 14 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 14 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     9,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     9,
+     8,
+     7
+    ],
+    "C": [
+     13,
+     5,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 13 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 13 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_ru",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     12,
+     10,
+     3
+    ],
+    "D": [
+     13,
+     10,
+     8,
+     7,
+     6,
+     2
+    ],
+    "C": [
+     13,
+     10,
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "6 ruder, 4 hjerter og kun 12 hp: 2♦ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 diamonds, 4 hearts and only 12 HCP: 2♦ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     5,
+     2
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     12,
+     11,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 16 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 16 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     7,
+     6
+    ],
+    "D": [
+     12,
+     8,
+     6
+    ],
+    "C": [
+     9
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 16 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 16 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     6,
+     4
+    ],
+    "D": [
+     9
+    ],
+    "C": [
+     10,
+     7,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 16 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 16 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     7,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     2
+    ],
+    "C": [
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 17 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 17 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     7,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     14,
+     13,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 16 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 16 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     6
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     7,
+     2
+    ],
+    "D": [
+     9
+    ],
+    "C": [
+     14,
+     13,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 16 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 16 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     9
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     7,
+     5
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     14,
+     12,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 16 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 16 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     9,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10,
+     7
+    ],
+    "D": [
+     13,
+     3,
+     2
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 18,
+   "sp": 21,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 18 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 18 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     11,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     9
+    ],
+    "D": [
+     9,
+     5,
+     3
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 17 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 17 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     11,
+     9
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 16 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 16 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     10
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     12,
+     6,
+     3
+    ]
+   },
+   "hp": 18,
+   "sp": 21,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 18 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 18 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     13,
+     10,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10,
+     3
+    ],
+    "D": [
+     14,
+     7,
+     3
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 16 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 16 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     12,
+     11,
+     7,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     8,
+     7
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     14,
+     13,
+     12
+    ]
+   },
+   "hp": 18,
+   "sp": 21,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 18 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 18 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     12,
+     10,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     6
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 17 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 17 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     7,
+     2
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     13,
+     6,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 17 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 17 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     8,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     14,
+     11,
+     8
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 16 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 16 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     7,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     8,
+     6
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     11,
+     5,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 17 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 17 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     6,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     6,
+     2
+    ],
+    "D": [
+     7
+    ],
+    "C": [
+     14,
+     12,
+     2
+    ]
+   },
+   "hp": 18,
+   "sp": 21,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 18 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 18 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     7,
+     2
+    ],
+    "D": [
+     11,
+     9,
+     8
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 16 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 16 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     4,
+     2
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 17 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 17 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     7
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     7,
+     6
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     14,
+     7,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 16 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 16 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     8,
+     5
+    ],
+    "C": [
+     7
+    ]
+   },
+   "hp": 18,
+   "sp": 21,
+   "correct": "2♠",
+   "why": "5 hjerter, 4 spar og 18 hp: revers 2♠ – 16+ og rundekrav, så makker ved, at du har ekstra værdier.",
+   "en": {
+    "why": "5 hearts, 4 spades and 18 HCP: reverse with 2♠ – 16+ and forcing for one round, so partner knows you have extra values."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     10
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     8,
+     4,
+     2
+    ],
+    "D": [
+     7
+    ],
+    "C": [
+     10,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 12 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 12 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9,
+     7
+    ],
+    "H": [
+     13,
+     11,
+     9,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     8,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 12 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 12 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     11,
+     9,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     7,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     8
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 15 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 15 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     11,
+     9,
+     8,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     9,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 13 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 13 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     9,
+     8,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     7,
+     6
+    ],
+    "D": [],
+    "C": [
+     13,
+     6,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 13 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 13 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     7,
+     6,
+     5,
+     4
+    ],
+    "D": [],
+    "C": [
+     13,
+     12,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 13 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 13 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     7,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     8,
+     7,
+     5
+    ],
+    "D": [],
+    "C": [
+     12,
+     11,
+     9
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 15 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 15 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     9
+    ],
+    "H": [
+     13,
+     10,
+     7,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     11,
+     8
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 12 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 12 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     9,
+     7,
+     5
+    ],
+    "D": [],
+    "C": [
+     11,
+     7,
+     6
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 15 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 15 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     11,
+     5,
+     4
+    ],
+    "C": []
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 14 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 14 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8,
+     3
+    ],
+    "H": [
+     14,
+     9,
+     7,
+     6,
+     5,
+     4
+    ],
+    "D": [],
+    "C": [
+     13,
+     8,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 12 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 12 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     7
+    ],
+    "H": [
+     13,
+     11,
+     9,
+     6,
+     3,
+     2
+    ],
+    "D": [],
+    "C": [
+     14,
+     7,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 14 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 14 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     11,
+     10,
+     8,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     9,
+     5,
+     4,
+     3
+    ],
+    "D": [],
+    "C": [
+     14,
+     13,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 12 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 12 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     7,
+     4,
+     3
+    ],
+    "D": [
+     4,
+     2
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 12 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 12 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     10,
+     8,
+     3
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     9,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     8
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 12 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 12 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     10,
+     9,
+     8,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     10,
+     6,
+     5
+    ],
+    "D": [
+     14,
+     11,
+     10
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 12 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 12 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     11,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     9,
+     8,
+     7,
+     6,
+     4
+    ],
+    "D": [],
+    "C": [
+     14,
+     5,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 12 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 12 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     8,
+     5,
+     2
+    ],
+    "D": [],
+    "C": [
+     13,
+     6,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 12 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 12 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     8,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     8,
+     6,
+     2
+    ],
+    "D": [
+     12,
+     9,
+     5
+    ],
+    "C": []
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 15 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 15 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     10,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     8,
+     5,
+     4
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     11,
+     10
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 14 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 14 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     12,
+     11,
+     7,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     9,
+     8
+    ],
+    "D": [],
+    "C": [
+     11,
+     9,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 14 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 14 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     9,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     6,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     9
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "6 hjerter, 4 spar og kun 13 hp: 2♥ – med minimum må du ikke reversere, så du gentager din 6-farve.",
+   "en": {
+    "why": "6 hearts, 4 spades and only 13 HCP: 2♥ – with a minimum you may not reverse, so you rebid your six-card suit."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     11,
+     8,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     2
+    ],
+    "D": [
+     11,
+     10,
+     9,
+     3
+    ],
+    "C": [
+     8,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 8,
+   "correct": "2♠",
+   "why": "5 spar og kun 6 hp: 2♠ – svag med 5-farve. Pas findes ikke, for reversen er rundekrav.",
+   "en": {
+    "why": "5 spades and only 6 HCP: 2♠ – weak with a five-card suit. Pass does not exist, because the reverse is forcing for one round."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     9,
+     8
+    ],
+    "D": [
+     7,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     8
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♠",
+   "why": "5 spar og kun 8 hp: 2♠ – svag med 5-farve. Pas findes ikke, for reversen er rundekrav.",
+   "en": {
+    "why": "5 spades and only 8 HCP: 2♠ – weak with a five-card suit. Pass does not exist, because the reverse is forcing for one round."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     6,
+     4
+    ],
+    "H": [
+     3,
+     2
+    ],
+    "D": [
+     10,
+     8,
+     2
+    ],
+    "C": [
+     9,
+     4,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "2♠",
+   "why": "5 spar og kun 6 hp: 2♠ – svag med 5-farve. Pas findes ikke, for reversen er rundekrav.",
+   "en": {
+    "why": "5 spades and only 6 HCP: 2♠ – weak with a five-card suit. Pass does not exist, because the reverse is forcing for one round."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     10,
+     2
+    ],
+    "D": [
+     10,
+     9,
+     6,
+     5
+    ],
+    "C": [
+     9
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "2♠",
+   "why": "5 spar og kun 7 hp: 2♠ – svag med 5-farve. Pas findes ikke, for reversen er rundekrav.",
+   "en": {
+    "why": "5 spades and only 7 HCP: 2♠ – weak with a five-card suit. Pass does not exist, because the reverse is forcing for one round."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     7,
+     4
+    ],
+    "H": [
+     7,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     4
+    ],
+    "C": [
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♠",
+   "why": "5 spar og kun 8 hp: 2♠ – svag med 5-farve. Pas findes ikke, for reversen er rundekrav.",
+   "en": {
+    "why": "5 spades and only 8 HCP: 2♠ – weak with a five-card suit. Pass does not exist, because the reverse is forcing for one round."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     10,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     5,
+     4
+    ],
+    "D": [
+     7,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     7,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "2♠",
+   "why": "5 spar og kun 7 hp: 2♠ – svag med 5-farve. Pas findes ikke, for reversen er rundekrav.",
+   "en": {
+    "why": "5 spades and only 7 HCP: 2♠ – weak with a five-card suit. Pass does not exist, because the reverse is forcing for one round."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     12,
+     8,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     2
+    ],
+    "D": [
+     14,
+     9,
+     8,
+     7
+    ],
+    "C": [
+     11,
+     10,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "2♠",
+   "why": "5 spar og kun 7 hp: 2♠ – svag med 5-farve. Pas findes ikke, for reversen er rundekrav.",
+   "en": {
+    "why": "5 spades and only 7 HCP: 2♠ – weak with a five-card suit. Pass does not exist, because the reverse is forcing for one round."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     12,
+     10,
+     9,
+     6,
+     4
+    ],
+    "H": [
+     6,
+     2
+    ],
+    "D": [
+     12,
+     8,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♠",
+   "why": "5 spar og kun 8 hp: 2♠ – svag med 5-farve. Pas findes ikke, for reversen er rundekrav.",
+   "en": {
+    "why": "5 spades and only 8 HCP: 2♠ – weak with a five-card suit. Pass does not exist, because the reverse is forcing for one round."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     4,
+     2
+    ],
+    "H": [
+     9,
+     7,
+     5
+    ],
+    "D": [
+     12,
+     10,
+     2
+    ],
+    "C": [
+     10,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "2♠",
+   "why": "5 spar og kun 7 hp: 2♠ – svag med 5-farve. Pas findes ikke, for reversen er rundekrav.",
+   "en": {
+    "why": "5 spades and only 7 HCP: 2♠ – weak with a five-card suit. Pass does not exist, because the reverse is forcing for one round."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     12,
+     8,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     10,
+     8
+    ],
+    "D": [
+     13,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     10,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "3♣",
+   "why": "4 spar, 2 klør og kun 8 hp: 3♣ – svag præference, også med 2 klør.",
+   "en": {
+    "why": "4 spades, 2 clubs and only 8 HCP: 3♣ – weak preference, even with 2 clubs."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     9,
+     8,
+     6,
+     5
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     4
+    ],
+    "C": [
+     7,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "3♣",
+   "why": "4 spar, 4 klør og kun 7 hp: 3♣ – svag præference, også med 2 klør.",
+   "en": {
+    "why": "4 spades, 4 clubs and only 7 HCP: 3♣ – weak preference, even with 2 clubs."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     10,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     10,
+     8,
+     5
+    ],
+    "D": [
+     14,
+     9,
+     7
+    ],
+    "C": [
+     14,
+     4,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "correct": "3♣",
+   "why": "4 spar, 3 klør og kun 8 hp: 3♣ – svag præference, også med 2 klør.",
+   "en": {
+    "why": "4 spades, 3 clubs and only 8 HCP: 3♣ – weak preference, even with 2 clubs."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     10,
+     8,
+     6,
+     2
+    ],
+    "H": [],
+    "D": [
+     11,
+     10,
+     7,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     6,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "4 spar, 5 klør og kun 8 hp: 3♣ – svag præference, også med 2 klør.",
+   "en": {
+    "why": "4 spades, 5 clubs and only 8 HCP: 3♣ – weak preference, even with 2 clubs."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     12,
+     9,
+     4,
+     3
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     9,
+     7,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     7,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "3♣",
+   "why": "4 spar, 3 klør og kun 7 hp: 3♣ – svag præference, også med 2 klør.",
+   "en": {
+    "why": "4 spades, 3 clubs and only 7 HCP: 3♣ – weak preference, even with 2 clubs."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     10,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     8,
+     6,
+     4
+    ],
+    "C": [
+     4,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "3♣",
+   "why": "4 spar, 2 klør og kun 7 hp: 3♣ – svag præference, også med 2 klør.",
+   "en": {
+    "why": "4 spades, 2 clubs and only 7 HCP: 3♣ – weak preference, even with 2 clubs."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     10,
+     9,
+     7,
+     3
+    ],
+    "H": [
+     9
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     7
+    ],
+    "C": [
+     13,
+     9,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "4 spar, 4 klør og kun 8 hp: 3♣ – svag præference, også med 2 klør.",
+   "en": {
+    "why": "4 spades, 4 clubs and only 8 HCP: 3♣ – weak preference, even with 2 clubs."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     11,
+     7,
+     6,
+     2
+    ],
+    "H": [
+     9,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     12,
+     6,
+     3
+    ],
+    "C": [
+     8,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "3♣",
+   "why": "4 spar, 2 klør og kun 7 hp: 3♣ – svag præference, også med 2 klør.",
+   "en": {
+    "why": "4 spades, 2 clubs and only 7 HCP: 3♣ – weak preference, even with 2 clubs."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     11,
+     9,
+     8,
+     3
+    ],
+    "H": [
+     12,
+     6,
+     3
+    ],
+    "D": [
+     8,
+     7,
+     5,
+     4
+    ],
+    "C": [
+     12,
+     11
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "3♣",
+   "why": "4 spar, 2 klør og kun 6 hp: 3♣ – svag præference, også med 2 klør.",
+   "en": {
+    "why": "4 spades, 2 clubs and only 6 HCP: 3♣ – weak preference, even with 2 clubs."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     11,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     6,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "4♥",
+   "why": "4 hjerter og 11 hp: 4♥ – støtte, fast arrival. Den svagere støttemelding.",
+   "en": {
+    "why": "4 hearts and 11 HCP: 4♥ – support, fast arrival. The weaker raise."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     6,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     9,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     10,
+     6
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "4♥",
+   "why": "4 hjerter og 10 hp: 4♥ – støtte, fast arrival. Den svagere støttemelding.",
+   "en": {
+    "why": "4 hearts and 10 HCP: 4♥ – support, fast arrival. The weaker raise."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     9,
+     8,
+     2
+    ],
+    "D": [
+     9,
+     7,
+     5
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "4♥",
+   "why": "4 hjerter og 10 hp: 4♥ – støtte, fast arrival. Den svagere støttemelding.",
+   "en": {
+    "why": "4 hearts and 10 HCP: 4♥ – support, fast arrival. The weaker raise."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     9,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     5,
+     2
+    ],
+    "D": [
+     11,
+     6
+    ],
+    "C": [
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "4 hjerter og 12 hp: 4♥ – støtte, fast arrival. Den svagere støttemelding.",
+   "en": {
+    "why": "4 hearts and 12 HCP: 4♥ – support, fast arrival. The weaker raise."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10,
+     8,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     2
+    ],
+    "D": [],
+    "C": [
+     10,
+     9,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "4 hjerter og 11 hp: 4♥ – støtte, fast arrival. Den svagere støttemelding.",
+   "en": {
+    "why": "4 hearts and 11 HCP: 4♥ – support, fast arrival. The weaker raise."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     6,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     5,
+     2
+    ],
+    "D": [
+     7
+    ],
+    "C": [
+     14,
+     6,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "4♥",
+   "why": "4 hjerter og 10 hp: 4♥ – støtte, fast arrival. Den svagere støttemelding.",
+   "en": {
+    "why": "4 hearts and 10 HCP: 4♥ – support, fast arrival. The weaker raise."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     9,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     11,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     5
+    ],
+    "C": []
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "4♥",
+   "why": "4 hjerter og 10 hp: 4♥ – støtte, fast arrival. Den svagere støttemelding.",
+   "en": {
+    "why": "4 hearts and 10 HCP: 4♥ – support, fast arrival. The weaker raise."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10,
+     9,
+     7,
+     3
+    ],
+    "H": [
+     12,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     8
+    ],
+    "C": [
+     10
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "4♥",
+   "why": "4 hjerter og 10 hp: 4♥ – støtte, fast arrival. Den svagere støttemelding.",
+   "en": {
+    "why": "4 hearts and 10 HCP: 4♥ – support, fast arrival. The weaker raise."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     8,
+     3
+    ],
+    "H": [
+     10,
+     9,
+     8,
+     6
+    ],
+    "D": [
+     14,
+     11,
+     3
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "4♥",
+   "why": "4 hjerter og 10 hp: 4♥ – støtte, fast arrival. Den svagere støttemelding.",
+   "en": {
+    "why": "4 hearts and 10 HCP: 4♥ – support, fast arrival. The weaker raise."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     10,
+     5,
+     2
+    ],
+    "H": [
+     13,
+     10,
+     7,
+     4
+    ],
+    "D": [
+     13,
+     4
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "3♥",
+   "why": "4 hjerter og 15 hp: 3♥ – støtte, slow arrival. Stærkere end 4♥ og giver plads til slemundersøgelse.",
+   "en": {
+    "why": "4 hearts and 15 HCP: 3♥ – support, slow arrival. Stronger than 4♥ and leaves room to explore for slam."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     10,
+     9,
+     3
+    ],
+    "H": [
+     9,
+     6,
+     5,
+     2
+    ],
+    "D": [],
+    "C": [
+     14,
+     9,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "3♥",
+   "why": "4 hjerter og 13 hp: 3♥ – støtte, slow arrival. Stærkere end 4♥ og giver plads til slemundersøgelse.",
+   "en": {
+    "why": "4 hearts and 13 HCP: 3♥ – support, slow arrival. Stronger than 4♥ and leaves room to explore for slam."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     9,
+     7
+    ],
+    "H": [
+     13,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     3
+    ],
+    "C": [
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♥",
+   "why": "4 hjerter og 13 hp: 3♥ – støtte, slow arrival. Stærkere end 4♥ og giver plads til slemundersøgelse.",
+   "en": {
+    "why": "4 hearts and 13 HCP: 3♥ – support, slow arrival. Stronger than 4♥ and leaves room to explore for slam."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     5,
+     3
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     12,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "3♥",
+   "why": "4 hjerter og 15 hp: 3♥ – støtte, slow arrival. Stærkere end 4♥ og giver plads til slemundersøgelse.",
+   "en": {
+    "why": "4 hearts and 15 HCP: 3♥ – support, slow arrival. Stronger than 4♥ and leaves room to explore for slam."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     8,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     9,
+     6,
+     4
+    ],
+    "D": [
+     14,
+     3
+    ],
+    "C": [
+     14,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "4 hjerter og 15 hp: 3♥ – støtte, slow arrival. Stærkere end 4♥ og giver plads til slemundersøgelse.",
+   "en": {
+    "why": "4 hearts and 15 HCP: 3♥ – support, slow arrival. Stronger than 4♥ and leaves room to explore for slam."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     10,
+     5
+    ],
+    "H": [
+     13,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     9
+    ],
+    "C": [
+     9
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "4 hjerter og 14 hp: 3♥ – støtte, slow arrival. Stærkere end 4♥ og giver plads til slemundersøgelse.",
+   "en": {
+    "why": "4 hearts and 14 HCP: 3♥ – support, slow arrival. Stronger than 4♥ and leaves room to explore for slam."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     10,
+     9,
+     8
+    ],
+    "H": [
+     12,
+     11,
+     8,
+     2
+    ],
+    "D": [
+     12,
+     9,
+     8
+    ],
+    "C": []
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "3♥",
+   "why": "4 hjerter og 13 hp: 3♥ – støtte, slow arrival. Stærkere end 4♥ og giver plads til slemundersøgelse.",
+   "en": {
+    "why": "4 hearts and 13 HCP: 3♥ – support, slow arrival. Stronger than 4♥ and leaves room to explore for slam."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     11,
+     6,
+     5,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     7,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     8
+    ],
+    "C": []
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "3♥",
+   "why": "4 hjerter og 13 hp: 3♥ – støtte, slow arrival. Stærkere end 4♥ og giver plads til slemundersøgelse.",
+   "en": {
+    "why": "4 hearts and 13 HCP: 3♥ – support, slow arrival. Stronger than 4♥ and leaves room to explore for slam."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     12,
+     9,
+     8,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     8,
+     6,
+     4
+    ],
+    "D": [],
+    "C": [
+     14,
+     13,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "3♥",
+   "why": "4 hjerter og 13 hp: 3♥ – støtte, slow arrival. Stærkere end 4♥ og giver plads til slemundersøgelse.",
+   "en": {
+    "why": "4 hearts and 13 HCP: 3♥ – support, slow arrival. Stronger than 4♥ and leaves room to explore for slam."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     9,
+     8,
+     6,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     3
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     14,
+     9,
+     7
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "3♠",
+   "why": "7 spar, 10 hp og intet hold i ruder: 3♠ – udgangskrav med 6-farve.",
+   "en": {
+    "why": "7 spades, 10 HCP and no stopper in diamonds: 3♠ – game forcing with a six-card suit."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     12,
+     9
+    ],
+    "D": [
+     6,
+     4
+    ],
+    "C": [
+     8,
+     6,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♠",
+   "why": "6 spar, 10 hp og intet hold i ruder: 3♠ – udgangskrav med 6-farve.",
+   "en": {
+    "why": "6 spades, 10 HCP and no stopper in diamonds: 3♠ – game forcing with a six-card suit."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     10,
+     9,
+     7,
+     6
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     10,
+     4
+    ],
+    "C": [
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "3♠",
+   "why": "7 spar, 9 hp og intet hold i ruder: 3♠ – udgangskrav med 6-farve.",
+   "en": {
+    "why": "7 spades, 9 HCP and no stopper in diamonds: 3♠ – game forcing with a six-card suit."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     7,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     6
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     11,
+     9,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♠",
+   "why": "6 spar, 11 hp og intet hold i ruder: 3♠ – udgangskrav med 6-farve.",
+   "en": {
+    "why": "6 spades, 11 HCP and no stopper in diamonds: 3♠ – game forcing with a six-card suit."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     7,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     11,
+     3,
+     2
+    ],
+    "D": [],
+    "C": [
+     12,
+     9,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♠",
+   "why": "7 spar, 10 hp og intet hold i ruder: 3♠ – udgangskrav med 6-farve.",
+   "en": {
+    "why": "7 spades, 10 HCP and no stopper in diamonds: 3♠ – game forcing with a six-card suit."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10,
+     8,
+     7,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     11
+    ],
+    "D": [
+     4,
+     3
+    ],
+    "C": [
+     14,
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♠",
+   "why": "7 spar, 12 hp og intet hold i ruder: 3♠ – udgangskrav med 6-farve.",
+   "en": {
+    "why": "7 spades, 12 HCP and no stopper in diamonds: 3♠ – game forcing with a six-card suit."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9,
+     7,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     8,
+     2
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     13,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "7 spar, 14 hp og intet hold i ruder: 3♠ – udgangskrav med 6-farve.",
+   "en": {
+    "why": "7 spades, 14 HCP and no stopper in diamonds: 3♠ – game forcing with a six-card suit."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     7,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     7,
+     5
+    ],
+    "D": [],
+    "C": [
+     11,
+     6,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♠",
+   "why": "7 spar, 10 hp og intet hold i ruder: 3♠ – udgangskrav med 6-farve.",
+   "en": {
+    "why": "7 spades, 10 HCP and no stopper in diamonds: 3♠ – game forcing with a six-card suit."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     7,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     9
+    ],
+    "D": [
+     9,
+     5
+    ],
+    "C": [
+     13,
+     6,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "3♠",
+   "why": "6 spar, 11 hp og intet hold i ruder: 3♠ – udgangskrav med 6-farve.",
+   "en": {
+    "why": "6 spades, 11 HCP and no stopper in diamonds: 3♠ – game forcing with a six-card suit."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     9,
+     4
+    ],
+    "H": [
+     13,
+     7
+    ],
+    "D": [
+     7,
+     6
+    ],
+    "C": [
+     11,
+     7,
+     6,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "4♣",
+   "why": "4 klør og 13 hp: 4♣ – sleminvit med klørstøtte.",
+   "en": {
+    "why": "4 clubs and 13 HCP: 4♣ – a slam try with club support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     12,
+     8,
+     7,
+     6,
+     3
+    ],
+    "H": [],
+    "D": [
+     14,
+     13,
+     12
+    ],
+    "C": [
+     12,
+     8,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "4♣",
+   "why": "5 klør og 13 hp: 4♣ – sleminvit med klørstøtte.",
+   "en": {
+    "why": "5 clubs and 13 HCP: 4♣ – a slam try with club support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     4,
+     2
+    ],
+    "H": [
+     2
+    ],
+    "D": [
+     12,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     3,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "4♣",
+   "why": "5 klør og 14 hp: 4♣ – sleminvit med klørstøtte.",
+   "en": {
+    "why": "5 clubs and 14 HCP: 4♣ – a slam try with club support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     3,
+     2
+    ],
+    "H": [
+     9,
+     7,
+     6
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     10
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "4♣",
+   "why": "4 klør og 14 hp: 4♣ – sleminvit med klørstøtte.",
+   "en": {
+    "why": "4 clubs and 14 HCP: 4♣ – a slam try with club support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     8,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12
+    ],
+    "D": [
+     7
+    ],
+    "C": [
+     12,
+     10,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "4♣",
+   "why": "5 klør og 14 hp: 4♣ – sleminvit med klørstøtte.",
+   "en": {
+    "why": "5 clubs and 14 HCP: 4♣ – a slam try with club support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     11,
+     10,
+     7,
+     2
+    ],
+    "H": [
+     13,
+     3
+    ],
+    "D": [
+     13,
+     10,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     5,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "4♣",
+   "why": "4 klør og 14 hp: 4♣ – sleminvit med klørstøtte.",
+   "en": {
+    "why": "4 clubs and 14 HCP: 4♣ – a slam try with club support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     6,
+     4
+    ],
+    "H": [],
+    "D": [
+     9,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     9,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♣",
+   "why": "5 klør og 14 hp: 4♣ – sleminvit med klørstøtte.",
+   "en": {
+    "why": "5 clubs and 14 HCP: 4♣ – a slam try with club support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     4
+    ],
+    "D": [
+     11,
+     5
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "4♣",
+   "why": "4 klør og 13 hp: 4♣ – sleminvit med klørstøtte.",
+   "en": {
+    "why": "4 clubs and 13 HCP: 4♣ – a slam try with club support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     12,
+     10,
+     9,
+     3
+    ],
+    "H": [
+     14,
+     12
+    ],
+    "D": [
+     14,
+     5,
+     4
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♣",
+   "why": "4 klør og 15 hp: 4♣ – sleminvit med klørstøtte.",
+   "en": {
+    "why": "4 clubs and 15 HCP: 4♣ – a slam try with club support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     9,
+     2
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     11,
+     9,
+     8,
+     3,
+     2
+    ],
+    "C": [
+     8,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "3NT",
+   "why": "Hold i ruder, ingen fit og 10 hp: 3NT – for at spille. Den svagere udgangshånd uden slemambition.",
+   "en": {
+    "why": "A stopper in diamonds, no fit and 10 HCP: 3NT – to play. The weaker game hand without slam interest."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8,
+     3
+    ],
+    "H": [
+     13,
+     11
+    ],
+    "D": [
+     11,
+     10,
+     6,
+     4
+    ],
+    "C": [
+     13,
+     7,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "Hold i ruder, ingen fit og 12 hp: 3NT – for at spille. Den svagere udgangshånd uden slemambition.",
+   "en": {
+    "why": "A stopper in diamonds, no fit and 12 HCP: 3NT – to play. The weaker game hand without slam interest."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     10,
+     6,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     12,
+     10,
+     9,
+     8
+    ],
+    "C": [
+     14,
+     9,
+     8
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "Hold i ruder, ingen fit og 10 hp: 3NT – for at spille. Den svagere udgangshånd uden slemambition.",
+   "en": {
+    "why": "A stopper in diamonds, no fit and 10 HCP: 3NT – to play. The weaker game hand without slam interest."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     9,
+     3
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     11,
+     10,
+     7,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "Hold i ruder, ingen fit og 9 hp: 3NT – for at spille. Den svagere udgangshånd uden slemambition.",
+   "en": {
+    "why": "A stopper in diamonds, no fit and 9 HCP: 3NT – to play. The weaker game hand without slam interest."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     9,
+     6,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     9
+    ],
+    "D": [
+     13,
+     12,
+     4
+    ],
+    "C": [
+     12,
+     10,
+     7
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "correct": "3NT",
+   "why": "Hold i ruder, ingen fit og 11 hp: 3NT – for at spille. Den svagere udgangshånd uden slemambition.",
+   "en": {
+    "why": "A stopper in diamonds, no fit and 11 HCP: 3NT – to play. The weaker game hand without slam interest."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     8,
+     4
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     13,
+     9,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     10,
+     5,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "Hold i ruder, ingen fit og 10 hp: 3NT – for at spille. Den svagere udgangshånd uden slemambition.",
+   "en": {
+    "why": "A stopper in diamonds, no fit and 10 HCP: 3NT – to play. The weaker game hand without slam interest."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     10,
+     9,
+     5,
+     2
+    ],
+    "H": [
+     13,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     7
+    ],
+    "C": [
+     12,
+     7,
+     6
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3NT",
+   "why": "Hold i ruder, ingen fit og 10 hp: 3NT – for at spille. Den svagere udgangshånd uden slemambition.",
+   "en": {
+    "why": "A stopper in diamonds, no fit and 10 HCP: 3NT – to play. The weaker game hand without slam interest."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     12,
+     11,
+     8,
+     7,
+     3
+    ],
+    "H": [
+     10,
+     6
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     3
+    ],
+    "C": [
+     4,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "3NT",
+   "why": "Hold i ruder, ingen fit og 9 hp: 3NT – for at spille. Den svagere udgangshånd uden slemambition.",
+   "en": {
+    "why": "A stopper in diamonds, no fit and 9 HCP: 3NT – to play. The weaker game hand without slam interest."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     11,
+     9,
+     8,
+     7,
+     2
+    ],
+    "H": [
+     12,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     2
+    ],
+    "C": [
+     12,
+     11
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "Hold i ruder, ingen fit og 12 hp: 3NT – for at spille. Den svagere udgangshånd uden slemambition.",
+   "en": {
+    "why": "A stopper in diamonds, no fit and 12 HCP: 3NT – to play. The weaker game hand without slam interest."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     11,
+     8,
+     7,
+     6
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     14,
+     12,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     11,
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Hold i ruder, ingen fit og 13 hp: 2NT – udgangskrav og stærkere end 3NT, så åbner kan vise sin fordeling.",
+   "en": {
+    "why": "A stopper in diamonds, no fit and 13 HCP: 2NT – game forcing and stronger than 3NT, so opener can show their shape."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     5,
+     4
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     13,
+     10,
+     8,
+     6
+    ],
+    "C": [
+     13,
+     11,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "Hold i ruder, ingen fit og 14 hp: 2NT – udgangskrav og stærkere end 3NT, så åbner kan vise sin fordeling.",
+   "en": {
+    "why": "A stopper in diamonds, no fit and 14 HCP: 2NT – game forcing and stronger than 3NT, so opener can show their shape."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     12,
+     9,
+     3,
+     2
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     8,
+     6
+    ],
+    "C": [
+     13,
+     12,
+     11
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Hold i ruder, ingen fit og 13 hp: 2NT – udgangskrav og stærkere end 3NT, så åbner kan vise sin fordeling.",
+   "en": {
+    "why": "A stopper in diamonds, no fit and 13 HCP: 2NT – game forcing and stronger than 3NT, so opener can show their shape."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     8,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     11,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Hold i ruder, ingen fit og 14 hp: 2NT – udgangskrav og stærkere end 3NT, så åbner kan vise sin fordeling.",
+   "en": {
+    "why": "A stopper in diamonds, no fit and 14 HCP: 2NT – game forcing and stronger than 3NT, so opener can show their shape."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     10,
+     4
+    ],
+    "H": [
+     7,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     11,
+     5
+    ],
+    "C": [
+     10,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hold i ruder, ingen fit og 13 hp: 2NT – udgangskrav og stærkere end 3NT, så åbner kan vise sin fordeling.",
+   "en": {
+    "why": "A stopper in diamonds, no fit and 13 HCP: 2NT – game forcing and stronger than 3NT, so opener can show their shape."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     12,
+     9,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     13,
+     3
+    ],
+    "D": [
+     13,
+     9,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     12
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Hold i ruder, ingen fit og 13 hp: 2NT – udgangskrav og stærkere end 3NT, så åbner kan vise sin fordeling.",
+   "en": {
+    "why": "A stopper in diamonds, no fit and 13 HCP: 2NT – game forcing and stronger than 3NT, so opener can show their shape."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     8,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     8,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     9
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Hold i ruder, ingen fit og 14 hp: 2NT – udgangskrav og stærkere end 3NT, så åbner kan vise sin fordeling.",
+   "en": {
+    "why": "A stopper in diamonds, no fit and 14 HCP: 2NT – game forcing and stronger than 3NT, so opener can show their shape."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     6
+    ],
+    "H": [
+     7,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     8,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     9
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hold i ruder, ingen fit og 13 hp: 2NT – udgangskrav og stærkere end 3NT, så åbner kan vise sin fordeling.",
+   "en": {
+    "why": "A stopper in diamonds, no fit and 13 HCP: 2NT – game forcing and stronger than 3NT, so opener can show their shape."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     9,
+     7,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     10,
+     3
+    ],
+    "D": [
+     13,
+     9
+    ],
+    "C": [
+     14,
+     12,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "2NT",
+   "why": "Hold i ruder, ingen fit og 13 hp: 2NT – udgangskrav og stærkere end 3NT, så åbner kan vise sin fordeling.",
+   "en": {
+    "why": "A stopper in diamonds, no fit and 13 HCP: 2NT – game forcing and stronger than 3NT, so opener can show their shape."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     12,
+     9,
+     8,
+     2
+    ],
+    "H": [
+     14,
+     7,
+     6
+    ],
+    "D": [
+     11,
+     7,
+     6
+    ],
+    "C": [
+     13,
+     10,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "correct": "3♦",
+   "why": "Intet hold i ruder, ingen fit og 10 hp: 3♦ – fjerde farve og udgangskrav (efter en revers er fjerde farve altid udgangskrav).",
+   "en": {
+    "why": "No stopper in diamonds, no fit and 10 HCP: 3♦ – fourth suit and game forcing (after a reverse the fourth suit is always game forcing)."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     10,
+     5
+    ],
+    "H": [
+     14,
+     4,
+     2
+    ],
+    "D": [
+     11,
+     2
+    ],
+    "C": [
+     12,
+     8,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "Intet hold i ruder, ingen fit og 14 hp: 3♦ – fjerde farve og udgangskrav (efter en revers er fjerde farve altid udgangskrav).",
+   "en": {
+    "why": "No stopper in diamonds, no fit and 14 HCP: 3♦ – fourth suit and game forcing (after a reverse the fourth suit is always game forcing)."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     8,
+     3
+    ],
+    "H": [
+     14,
+     10
+    ],
+    "D": [
+     6,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     8,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "Intet hold i ruder, ingen fit og 15 hp: 3♦ – fjerde farve og udgangskrav (efter en revers er fjerde farve altid udgangskrav).",
+   "en": {
+    "why": "No stopper in diamonds, no fit and 15 HCP: 3♦ – fourth suit and game forcing (after a reverse the fourth suit is always game forcing)."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8,
+     6,
+     2
+    ],
+    "H": [
+     11,
+     3,
+     2
+    ],
+    "D": [
+     9,
+     8
+    ],
+    "C": [
+     13,
+     11,
+     10
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "Intet hold i ruder, ingen fit og 10 hp: 3♦ – fjerde farve og udgangskrav (efter en revers er fjerde farve altid udgangskrav).",
+   "en": {
+    "why": "No stopper in diamonds, no fit and 10 HCP: 3♦ – fourth suit and game forcing (after a reverse the fourth suit is always game forcing)."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     5
+    ],
+    "H": [
+     12,
+     10,
+     8
+    ],
+    "D": [
+     11,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     4,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "Intet hold i ruder, ingen fit og 12 hp: 3♦ – fjerde farve og udgangskrav (efter en revers er fjerde farve altid udgangskrav).",
+   "en": {
+    "why": "No stopper in diamonds, no fit and 12 HCP: 3♦ – fourth suit and game forcing (after a reverse the fourth suit is always game forcing)."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     3
+    ],
+    "H": [
+     10,
+     8,
+     4
+    ],
+    "D": [
+     8,
+     7,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "correct": "3♦",
+   "why": "Intet hold i ruder, ingen fit og 9 hp: 3♦ – fjerde farve og udgangskrav (efter en revers er fjerde farve altid udgangskrav).",
+   "en": {
+    "why": "No stopper in diamonds, no fit and 9 HCP: 3♦ – fourth suit and game forcing (after a reverse the fourth suit is always game forcing)."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     4,
+     3
+    ],
+    "D": [
+     11,
+     9,
+     8
+    ],
+    "C": [
+     13,
+     11,
+     7
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "3♦",
+   "why": "Intet hold i ruder, ingen fit og 9 hp: 3♦ – fjerde farve og udgangskrav (efter en revers er fjerde farve altid udgangskrav).",
+   "en": {
+    "why": "No stopper in diamonds, no fit and 9 HCP: 3♦ – fourth suit and game forcing (after a reverse the fourth suit is always game forcing)."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     11,
+     10,
+     8,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     7
+    ],
+    "D": [
+     9,
+     4
+    ],
+    "C": [
+     14,
+     9,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "3♦",
+   "why": "Intet hold i ruder, ingen fit og 9 hp: 3♦ – fjerde farve og udgangskrav (efter en revers er fjerde farve altid udgangskrav).",
+   "en": {
+    "why": "No stopper in diamonds, no fit and 9 HCP: 3♦ – fourth suit and game forcing (after a reverse the fourth suit is always game forcing)."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     4,
+     3
+    ],
+    "H": [
+     10,
+     7
+    ],
+    "D": [
+     10,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     7,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "Intet hold i ruder, ingen fit og 10 hp: 3♦ – fjerde farve og udgangskrav (efter en revers er fjerde farve altid udgangskrav).",
+   "en": {
+    "why": "No stopper in diamonds, no fit and 10 HCP: 3♦ – fourth suit and game forcing (after a reverse the fourth suit is always game forcing)."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     8,
+     7,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     3
+    ],
+    "D": [
+     11,
+     5
+    ],
+    "C": [
+     11,
+     10,
+     5,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 8,
+   "correct": "2♠",
+   "why": "5 spar og kun 6 hp: 2♠ – svag med 5-farve. Pas findes ikke, for reversen er rundekrav.",
+   "en": {
+    "why": "5 spades and only 6 HCP: 2♠ – weak with a five-card suit. Pass does not exist, because the reverse is forcing for one round."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     10,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     4,
+     2
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     9,
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "2♠",
+   "why": "5 spar og kun 6 hp: 2♠ – svag med 5-farve. Pas findes ikke, for reversen er rundekrav.",
+   "en": {
+    "why": "5 spades and only 6 HCP: 2♠ – weak with a five-card suit. Pass does not exist, because the reverse is forcing for one round."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     12,
+     9,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     14,
+     9,
+     2
+    ],
+    "C": [
+     10,
+     9,
+     6,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "2♠",
+   "why": "5 spar og kun 6 hp: 2♠ – svag med 5-farve. Pas findes ikke, for reversen er rundekrav.",
+   "en": {
+    "why": "5 spades and only 6 HCP: 2♠ – weak with a five-card suit. Pass does not exist, because the reverse is forcing for one round."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     9,
+     8
+    ],
+    "H": [
+     9,
+     8,
+     6
+    ],
+    "D": [
+     10,
+     3
+    ],
+    "C": [
+     13,
+     5,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♠",
+   "why": "5 spar og kun 8 hp: 2♠ – svag med 5-farve. Pas findes ikke, for reversen er rundekrav.",
+   "en": {
+    "why": "5 spades and only 8 HCP: 2♠ – weak with a five-card suit. Pass does not exist, because the reverse is forcing for one round."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     9,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     7,
+     5
+    ],
+    "D": [
+     8,
+     4
+    ],
+    "C": [
+     13,
+     11,
+     9,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "2♠",
+   "why": "5 spar og kun 7 hp: 2♠ – svag med 5-farve. Pas findes ikke, for reversen er rundekrav.",
+   "en": {
+    "why": "5 spades and only 7 HCP: 2♠ – weak with a five-card suit. Pass does not exist, because the reverse is forcing for one round."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     11,
+     5,
+     2
+    ],
+    "D": [
+     10,
+     9,
+     5
+    ],
+    "C": [
+     8,
+     7
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "2♠",
+   "why": "5 spar og kun 6 hp: 2♠ – svag med 5-farve. Pas findes ikke, for reversen er rundekrav.",
+   "en": {
+    "why": "5 spades and only 6 HCP: 2♠ – weak with a five-card suit. Pass does not exist, because the reverse is forcing for one round."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     6,
+     4
+    ],
+    "D": [
+     5,
+     4
+    ],
+    "C": [
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "2♠",
+   "why": "5 spar og kun 7 hp: 2♠ – svag med 5-farve. Pas findes ikke, for reversen er rundekrav.",
+   "en": {
+    "why": "5 spades and only 7 HCP: 2♠ – weak with a five-card suit. Pass does not exist, because the reverse is forcing for one round."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     8,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     7,
+     5
+    ],
+    "D": [
+     9
+    ],
+    "C": [
+     9,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "2♠",
+   "why": "5 spar og kun 7 hp: 2♠ – svag med 5-farve. Pas findes ikke, for reversen er rundekrav.",
+   "en": {
+    "why": "5 spades and only 7 HCP: 2♠ – weak with a five-card suit. Pass does not exist, because the reverse is forcing for one round."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     8,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     12,
+     11
+    ],
+    "D": [
+     12,
+     10,
+     2
+    ],
+    "C": [
+     8,
+     6,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♠",
+   "why": "5 spar og kun 8 hp: 2♠ – svag med 5-farve. Pas findes ikke, for reversen er rundekrav.",
+   "en": {
+    "why": "5 spades and only 8 HCP: 2♠ – weak with a five-card suit. Pass does not exist, because the reverse is forcing for one round."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     10,
+     9,
+     8,
+     7
+    ],
+    "H": [
+     13,
+     6
+    ],
+    "D": [
+     11,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "correct": "3♦",
+   "why": "4 spar, 2 ruder og kun 8 hp: 3♦ – svag præference, også med 2 ruder.",
+   "en": {
+    "why": "4 spades, 2 diamonds and only 8 HCP: 3♦ – weak preference, even with 2 diamonds."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     9,
+     4,
+     3
+    ],
+    "H": [],
+    "D": [
+     11,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     11,
+     10,
+     9,
+     3,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "4 spar, 4 ruder og kun 6 hp: 3♦ – svag præference, også med 2 ruder.",
+   "en": {
+    "why": "4 spades, 4 diamonds and only 6 HCP: 3♦ – weak preference, even with 2 diamonds."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     11,
+     6,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     2
+    ],
+    "D": [
+     5,
+     4
+    ],
+    "C": [
+     13,
+     11,
+     9,
+     5,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "correct": "3♦",
+   "why": "4 spar, 2 ruder og kun 8 hp: 3♦ – svag præference, også med 2 ruder.",
+   "en": {
+    "why": "4 spades, 2 diamonds and only 8 HCP: 3♦ – weak preference, even with 2 diamonds."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     7
+    ],
+    "H": [
+     11,
+     7,
+     4
+    ],
+    "D": [
+     13,
+     10
+    ],
+    "C": [
+     10,
+     8,
+     4,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "3♦",
+   "why": "4 spar, 2 ruder og kun 8 hp: 3♦ – svag præference, også med 2 ruder.",
+   "en": {
+    "why": "4 spades, 2 diamonds and only 8 HCP: 3♦ – weak preference, even with 2 diamonds."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     7,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     11
+    ],
+    "D": [
+     9,
+     6,
+     3
+    ],
+    "C": [
+     9,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "3♦",
+   "why": "4 spar, 3 ruder og kun 8 hp: 3♦ – svag præference, også med 2 ruder.",
+   "en": {
+    "why": "4 spades, 3 diamonds and only 8 HCP: 3♦ – weak preference, even with 2 diamonds."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     9,
+     8,
+     6,
+     4
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     13,
+     8,
+     6,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "3♦",
+   "why": "4 spar, 4 ruder og kun 7 hp: 3♦ – svag præference, også med 2 ruder.",
+   "en": {
+    "why": "4 spades, 4 diamonds and only 7 HCP: 3♦ – weak preference, even with 2 diamonds."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     6,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     8,
+     5
+    ],
+    "D": [
+     13,
+     6
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     7,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "correct": "3♦",
+   "why": "4 spar, 2 ruder og kun 8 hp: 3♦ – svag præference, også med 2 ruder.",
+   "en": {
+    "why": "4 spades, 2 diamonds and only 8 HCP: 3♦ – weak preference, even with 2 diamonds."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     3,
+     2
+    ],
+    "H": [
+     11,
+     5
+    ],
+    "D": [
+     10,
+     9,
+     6,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "correct": "3♦",
+   "why": "4 spar, 5 ruder og kun 8 hp: 3♦ – svag præference, også med 2 ruder.",
+   "en": {
+    "why": "4 spades, 5 diamonds and only 8 HCP: 3♦ – weak preference, even with 2 diamonds."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     6
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     12,
+     7,
+     6
+    ],
+    "C": [
+     11,
+     9,
+     7,
+     6,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "4 spar, 3 ruder og kun 8 hp: 3♦ – svag præference, også med 2 ruder.",
+   "en": {
+    "why": "4 spades, 3 diamonds and only 8 HCP: 3♦ – weak preference, even with 2 diamonds."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     9
+    ],
+    "C": [
+     14,
+     10,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "4♥",
+   "why": "4 hjerter og 10 hp: 4♥ – støtte, fast arrival. Den svagere støttemelding.",
+   "en": {
+    "why": "4 hearts and 10 HCP: 4♥ – support, fast arrival. The weaker raise."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     12,
+     9,
+     8,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     6
+    ],
+    "D": [],
+    "C": [
+     11,
+     10,
+     8
+    ]
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "4 hjerter og 11 hp: 4♥ – støtte, fast arrival. Den svagere støttemelding.",
+   "en": {
+    "why": "4 hearts and 11 HCP: 4♥ – support, fast arrival. The weaker raise."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     9,
+     6,
+     5
+    ],
+    "D": [
+     14,
+     5
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "4♥",
+   "why": "4 hjerter og 11 hp: 4♥ – støtte, fast arrival. Den svagere støttemelding.",
+   "en": {
+    "why": "4 hearts and 11 HCP: 4♥ – support, fast arrival. The weaker raise."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     11,
+     9,
+     8,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     9
+    ],
+    "D": [
+     14,
+     9,
+     7
+    ],
+    "C": []
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "4♥",
+   "why": "4 hjerter og 10 hp: 4♥ – støtte, fast arrival. Den svagere støttemelding.",
+   "en": {
+    "why": "4 hearts and 10 HCP: 4♥ – support, fast arrival. The weaker raise."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     11,
+     10,
+     5,
+     2
+    ],
+    "D": [
+     7,
+     5
+    ],
+    "C": [
+     11,
+     10
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "4♥",
+   "why": "4 hjerter og 9 hp: 4♥ – støtte, fast arrival. Den svagere støttemelding.",
+   "en": {
+    "why": "4 hearts and 9 HCP: 4♥ – support, fast arrival. The weaker raise."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     10,
+     4,
+     3
+    ],
+    "D": [],
+    "C": [
+     12,
+     8,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 14,
+   "correct": "4♥",
+   "why": "4 hjerter og 9 hp: 4♥ – støtte, fast arrival. Den svagere støttemelding.",
+   "en": {
+    "why": "4 hearts and 9 HCP: 4♥ – support, fast arrival. The weaker raise."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     3
+    ],
+    "D": [
+     9
+    ],
+    "C": [
+     12,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "4 hjerter og 12 hp: 4♥ – støtte, fast arrival. Den svagere støttemelding.",
+   "en": {
+    "why": "4 hearts and 12 HCP: 4♥ – support, fast arrival. The weaker raise."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     10,
+     8,
+     6
+    ],
+    "D": [],
+    "C": [
+     9,
+     4,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 14,
+   "correct": "4♥",
+   "why": "4 hjerter og 9 hp: 4♥ – støtte, fast arrival. Den svagere støttemelding.",
+   "en": {
+    "why": "4 hearts and 9 HCP: 4♥ – support, fast arrival. The weaker raise."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     8,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     4
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     5,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "4 hjerter og 12 hp: 4♥ – støtte, fast arrival. Den svagere støttemelding.",
+   "en": {
+    "why": "4 hearts and 12 HCP: 4♥ – support, fast arrival. The weaker raise."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     10,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     5
+    ],
+    "D": [
+     13,
+     11,
+     5
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♥",
+   "why": "4 hjerter og 13 hp: 3♥ – støtte, slow arrival. Stærkere end 4♥ og giver plads til slemundersøgelse.",
+   "en": {
+    "why": "4 hearts and 13 HCP: 3♥ – support, slow arrival. Stronger than 4♥ and leaves room to explore for slam."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     10,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     12,
+     7,
+     3
+    ],
+    "D": [
+     12,
+     9,
+     5
+    ],
+    "C": []
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "3♥",
+   "why": "4 hjerter og 14 hp: 3♥ – støtte, slow arrival. Stærkere end 4♥ og giver plads til slemundersøgelse.",
+   "en": {
+    "why": "4 hearts and 14 HCP: 3♥ – support, slow arrival. Stronger than 4♥ and leaves room to explore for slam."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9,
+     8,
+     7,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     7
+    ],
+    "C": []
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "3♥",
+   "why": "4 hjerter og 15 hp: 3♥ – støtte, slow arrival. Stærkere end 4♥ og giver plads til slemundersøgelse.",
+   "en": {
+    "why": "4 hearts and 15 HCP: 3♥ – support, slow arrival. Stronger than 4♥ and leaves room to explore for slam."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     10,
+     9,
+     8,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     2
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     13,
+     9,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "4 hjerter og 14 hp: 3♥ – støtte, slow arrival. Stærkere end 4♥ og giver plads til slemundersøgelse.",
+   "en": {
+    "why": "4 hearts and 14 HCP: 3♥ – support, slow arrival. Stronger than 4♥ and leaves room to explore for slam."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     11,
+     5,
+     4
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     11,
+     9,
+     8
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♥",
+   "why": "4 hjerter og 15 hp: 3♥ – støtte, slow arrival. Stærkere end 4♥ og giver plads til slemundersøgelse.",
+   "en": {
+    "why": "4 hearts and 15 HCP: 3♥ – support, slow arrival. Stronger than 4♥ and leaves room to explore for slam."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     5
+    ],
+    "D": [
+     11,
+     3
+    ],
+    "C": [
+     14,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "4 hjerter og 15 hp: 3♥ – støtte, slow arrival. Stærkere end 4♥ og giver plads til slemundersøgelse.",
+   "en": {
+    "why": "4 hearts and 15 HCP: 3♥ – support, slow arrival. Stronger than 4♥ and leaves room to explore for slam."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     7,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10
+    ],
+    "D": [
+     7,
+     3,
+     2
+    ],
+    "C": []
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "3♥",
+   "why": "4 hjerter og 14 hp: 3♥ – støtte, slow arrival. Stærkere end 4♥ og giver plads til slemundersøgelse.",
+   "en": {
+    "why": "4 hearts and 14 HCP: 3♥ – support, slow arrival. Stronger than 4♥ and leaves room to explore for slam."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     6,
+     4
+    ],
+    "H": [
+     13,
+     9,
+     8,
+     3
+    ],
+    "D": [
+     13,
+     10
+    ],
+    "C": [
+     6,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "4 hjerter og 15 hp: 3♥ – støtte, slow arrival. Stærkere end 4♥ og giver plads til slemundersøgelse.",
+   "en": {
+    "why": "4 hearts and 15 HCP: 3♥ – support, slow arrival. Stronger than 4♥ and leaves room to explore for slam."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     3
+    ],
+    "C": []
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "3♥",
+   "why": "4 hjerter og 14 hp: 3♥ – støtte, slow arrival. Stærkere end 4♥ og giver plads til slemundersøgelse.",
+   "en": {
+    "why": "4 hearts and 14 HCP: 3♥ – support, slow arrival. Stronger than 4♥ and leaves room to explore for slam."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     9,
+     6,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     9
+    ],
+    "D": [
+     13,
+     3,
+     2
+    ],
+    "C": [
+     6,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "3♠",
+   "why": "6 spar, 9 hp og intet hold i klør: 3♠ – udgangskrav med 6-farve.",
+   "en": {
+    "why": "6 spades, 9 HCP and no stopper in clubs: 3♠ – game forcing with a six-card suit."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     2
+    ],
+    "D": [
+     9,
+     8,
+     2
+    ],
+    "C": [
+     9,
+     7
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♠",
+   "why": "6 spar, 10 hp og intet hold i klør: 3♠ – udgangskrav med 6-farve.",
+   "en": {
+    "why": "6 spades, 10 HCP and no stopper in clubs: 3♠ – game forcing with a six-card suit."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     9,
+     7,
+     5,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     8
+    ],
+    "D": [
+     13,
+     11,
+     4
+    ],
+    "C": []
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "7 spar, 11 hp og intet hold i klør: 3♠ – udgangskrav med 6-farve.",
+   "en": {
+    "why": "7 spades, 11 HCP and no stopper in clubs: 3♠ – game forcing with a six-card suit."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     10,
+     4
+    ],
+    "D": [
+     13,
+     9,
+     6
+    ],
+    "C": [
+     10
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "7 spar, 13 hp og intet hold i klør: 3♠ – udgangskrav med 6-farve.",
+   "en": {
+    "why": "7 spades, 13 HCP and no stopper in clubs: 3♠ – game forcing with a six-card suit."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8,
+     7,
+     6,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     9
+    ],
+    "D": [
+     14,
+     11,
+     8
+    ],
+    "C": []
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "3♠",
+   "why": "7 spar, 15 hp og intet hold i klør: 3♠ – udgangskrav med 6-farve.",
+   "en": {
+    "why": "7 spades, 15 HCP and no stopper in clubs: 3♠ – game forcing with a six-card suit."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     8,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     10,
+     9
+    ],
+    "D": [
+     7,
+     2
+    ],
+    "C": [
+     5,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "3♠",
+   "why": "6 spar, 11 hp og intet hold i klør: 3♠ – udgangskrav med 6-farve.",
+   "en": {
+    "why": "6 spades, 11 HCP and no stopper in clubs: 3♠ – game forcing with a six-card suit."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     8,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     10
+    ],
+    "D": [
+     10,
+     7,
+     6
+    ],
+    "C": [
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "3♠",
+   "why": "7 spar, 10 hp og intet hold i klør: 3♠ – udgangskrav med 6-farve.",
+   "en": {
+    "why": "7 spades, 10 HCP and no stopper in clubs: 3♠ – game forcing with a six-card suit."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9,
+     8,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     4
+    ],
+    "D": [
+     10,
+     4
+    ],
+    "C": [
+     10
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "3♠",
+   "why": "7 spar, 9 hp og intet hold i klør: 3♠ – udgangskrav med 6-farve.",
+   "en": {
+    "why": "7 spades, 9 HCP and no stopper in clubs: 3♠ – game forcing with a six-card suit."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     11,
+     9,
+     6,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     9
+    ],
+    "D": [
+     13,
+     11,
+     9
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "6 spar, 13 hp og intet hold i klør: 3♠ – udgangskrav med 6-farve.",
+   "en": {
+    "why": "6 spades, 13 HCP and no stopper in clubs: 3♠ – game forcing with a six-card suit."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     11,
+     9,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     7,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     7,
+     5,
+     2
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "4♦",
+   "why": "5 ruder og 13 hp: 4♦ – sleminvit med ruderstøtte.",
+   "en": {
+    "why": "5 diamonds and 13 HCP: 4♦ – a slam try with diamond support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8,
+     4,
+     2
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     5,
+     2
+    ],
+    "C": [
+     6,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "4♦",
+   "why": "5 ruder og 15 hp: 4♦ – sleminvit med ruderstøtte.",
+   "en": {
+    "why": "5 diamonds and 15 HCP: 4♦ – a slam try with diamond support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     8
+    ],
+    "H": [
+     11,
+     8,
+     7
+    ],
+    "D": [
+     12,
+     11,
+     9,
+     5
+    ],
+    "C": [
+     7,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "4♦",
+   "why": "4 ruder og 13 hp: 4♦ – sleminvit med ruderstøtte.",
+   "en": {
+    "why": "4 diamonds and 13 HCP: 4♦ – a slam try with diamond support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     5,
+     4,
+     3
+    ],
+    "H": [],
+    "D": [
+     12,
+     10,
+     9,
+     7,
+     6
+    ],
+    "C": [
+     14,
+     9,
+     8
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "4♦",
+   "why": "5 ruder og 13 hp: 4♦ – sleminvit med ruderstøtte.",
+   "en": {
+    "why": "5 diamonds and 13 HCP: 4♦ – a slam try with diamond support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     7,
+     3
+    ],
+    "H": [
+     2
+    ],
+    "D": [
+     12,
+     10,
+     9,
+     6
+    ],
+    "C": [
+     14,
+     11,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "4♦",
+   "why": "4 ruder og 14 hp: 4♦ – sleminvit med ruderstøtte.",
+   "en": {
+    "why": "4 diamonds and 14 HCP: 4♦ – a slam try with diamond support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10,
+     8,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     4
+    ],
+    "D": [
+     13,
+     11,
+     9,
+     7,
+     6
+    ],
+    "C": []
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♦",
+   "why": "5 ruder og 14 hp: 4♦ – sleminvit med ruderstøtte.",
+   "en": {
+    "why": "5 diamonds and 14 HCP: 4♦ – a slam try with diamond support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     7
+    ],
+    "H": [
+     14,
+     11
+    ],
+    "D": [
+     11,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     7,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "4♦",
+   "why": "4 ruder og 13 hp: 4♦ – sleminvit med ruderstøtte.",
+   "en": {
+    "why": "4 diamonds and 13 HCP: 4♦ – a slam try with diamond support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     5,
+     4
+    ],
+    "C": [
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "4♦",
+   "why": "4 ruder og 13 hp: 4♦ – sleminvit med ruderstøtte.",
+   "en": {
+    "why": "4 diamonds and 13 HCP: 4♦ – a slam try with diamond support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     7,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     11
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "4♦",
+   "why": "5 ruder og 14 hp: 4♦ – sleminvit med ruderstøtte.",
+   "en": {
+    "why": "5 diamonds and 14 HCP: 4♦ – a slam try with diamond support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     6,
+     5
+    ],
+    "H": [
+     11,
+     7
+    ],
+    "D": [
+     9,
+     8
+    ],
+    "C": [
+     13,
+     11,
+     4,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "3NT",
+   "why": "Hold i klør, ingen fit og 12 hp: 3NT – for at spille. Den svagere udgangshånd uden slemambition.",
+   "en": {
+    "why": "A stopper in clubs, no fit and 12 HCP: 3NT – to play. The weaker game hand without slam interest."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     11,
+     10,
+     5,
+     2
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     14,
+     9,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     4,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "Hold i klør, ingen fit og 10 hp: 3NT – for at spille. Den svagere udgangshånd uden slemambition.",
+   "en": {
+    "why": "A stopper in clubs, no fit and 10 HCP: 3NT – to play. The weaker game hand without slam interest."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     12,
+     10,
+     9,
+     5,
+     2
+    ],
+    "H": [
+     2
+    ],
+    "D": [
+     13,
+     7
+    ],
+    "C": [
+     14,
+     9,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "Hold i klør, ingen fit og 9 hp: 3NT – for at spille. Den svagere udgangshånd uden slemambition.",
+   "en": {
+    "why": "A stopper in clubs, no fit and 9 HCP: 3NT – to play. The weaker game hand without slam interest."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8,
+     4
+    ],
+    "H": [
+     13,
+     8,
+     4
+    ],
+    "D": [
+     12,
+     2
+    ],
+    "C": [
+     12,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "Hold i klør, ingen fit og 12 hp: 3NT – for at spille. Den svagere udgangshånd uden slemambition.",
+   "en": {
+    "why": "A stopper in clubs, no fit and 12 HCP: 3NT – to play. The weaker game hand without slam interest."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10,
+     9
+    ],
+    "H": [
+     13,
+     3,
+     2
+    ],
+    "D": [
+     7,
+     2
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3NT",
+   "why": "Hold i klør, ingen fit og 11 hp: 3NT – for at spille. Den svagere udgangshånd uden slemambition.",
+   "en": {
+    "why": "A stopper in clubs, no fit and 11 HCP: 3NT – to play. The weaker game hand without slam interest."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     5,
+     3
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     6,
+     5
+    ],
+    "C": [
+     12,
+     9,
+     8,
+     6,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "Hold i klør, ingen fit og 9 hp: 3NT – for at spille. Den svagere udgangshånd uden slemambition.",
+   "en": {
+    "why": "A stopper in clubs, no fit and 9 HCP: 3NT – to play. The weaker game hand without slam interest."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     9,
+     4
+    ],
+    "H": [
+     11,
+     2
+    ],
+    "D": [
+     12,
+     9,
+     3
+    ],
+    "C": [
+     12,
+     7,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "Hold i klør, ingen fit og 12 hp: 3NT – for at spille. Den svagere udgangshånd uden slemambition.",
+   "en": {
+    "why": "A stopper in clubs, no fit and 12 HCP: 3NT – to play. The weaker game hand without slam interest."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     10,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     3
+    ],
+    "D": [
+     10,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3NT",
+   "why": "Hold i klør, ingen fit og 10 hp: 3NT – for at spille. Den svagere udgangshånd uden slemambition.",
+   "en": {
+    "why": "A stopper in clubs, no fit and 10 HCP: 3NT – to play. The weaker game hand without slam interest."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     9,
+     5,
+     3
+    ],
+    "H": [
+     8,
+     6,
+     3
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     13,
+     7,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "3NT",
+   "why": "Hold i klør, ingen fit og 9 hp: 3NT – for at spille. Den svagere udgangshånd uden slemambition.",
+   "en": {
+    "why": "A stopper in clubs, no fit and 9 HCP: 3NT – to play. The weaker game hand without slam interest."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     10,
+     6
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     5,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     7,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Hold i klør, ingen fit og 13 hp: 2NT – udgangskrav og stærkere end 3NT, så åbner kan vise sin fordeling.",
+   "en": {
+    "why": "A stopper in clubs, no fit and 13 HCP: 2NT – game forcing and stronger than 3NT, so opener can show their shape."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     10,
+     2
+    ],
+    "H": [
+     12,
+     9,
+     8
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     14,
+     11,
+     7,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "2NT",
+   "why": "Hold i klør, ingen fit og 15 hp: 2NT – udgangskrav og stærkere end 3NT, så åbner kan vise sin fordeling.",
+   "en": {
+    "why": "A stopper in clubs, no fit and 15 HCP: 2NT – game forcing and stronger than 3NT, so opener can show their shape."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10,
+     2
+    ],
+    "H": [
+     12,
+     10,
+     9
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     14,
+     11,
+     8,
+     7,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "Hold i klør, ingen fit og 14 hp: 2NT – udgangskrav og stærkere end 3NT, så åbner kan vise sin fordeling.",
+   "en": {
+    "why": "A stopper in clubs, no fit and 14 HCP: 2NT – game forcing and stronger than 3NT, so opener can show their shape."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     5,
+     4
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     14,
+     11,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     8,
+     6
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "2NT",
+   "why": "Hold i klør, ingen fit og 15 hp: 2NT – udgangskrav og stærkere end 3NT, så åbner kan vise sin fordeling.",
+   "en": {
+    "why": "A stopper in clubs, no fit and 15 HCP: 2NT – game forcing and stronger than 3NT, so opener can show their shape."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     8,
+     2
+    ],
+    "H": [
+     9,
+     7,
+     3
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Hold i klør, ingen fit og 13 hp: 2NT – udgangskrav og stærkere end 3NT, så åbner kan vise sin fordeling.",
+   "en": {
+    "why": "A stopper in clubs, no fit and 13 HCP: 2NT – game forcing and stronger than 3NT, so opener can show their shape."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     9,
+     6
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     13,
+     12,
+     7,
+     3,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Hold i klør, ingen fit og 13 hp: 2NT – udgangskrav og stærkere end 3NT, så åbner kan vise sin fordeling.",
+   "en": {
+    "why": "A stopper in clubs, no fit and 13 HCP: 2NT – game forcing and stronger than 3NT, so opener can show their shape."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     10,
+     7
+    ],
+    "H": [
+     8,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     5
+    ],
+    "C": [
+     13,
+     9,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Hold i klør, ingen fit og 15 hp: 2NT – udgangskrav og stærkere end 3NT, så åbner kan vise sin fordeling.",
+   "en": {
+    "why": "A stopper in clubs, no fit and 15 HCP: 2NT – game forcing and stronger than 3NT, so opener can show their shape."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8,
+     7,
+     5
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     14,
+     6
+    ],
+    "C": [
+     14,
+     7,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "Hold i klør, ingen fit og 13 hp: 2NT – udgangskrav og stærkere end 3NT, så åbner kan vise sin fordeling.",
+   "en": {
+    "why": "A stopper in clubs, no fit and 13 HCP: 2NT – game forcing and stronger than 3NT, so opener can show their shape."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     8,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     5,
+     2
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     8,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "Hold i klør, ingen fit og 14 hp: 2NT – udgangskrav og stærkere end 3NT, så åbner kan vise sin fordeling.",
+   "en": {
+    "why": "A stopper in clubs, no fit and 14 HCP: 2NT – game forcing and stronger than 3NT, so opener can show their shape."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     6,
+     2
+    ],
+    "H": [
+     13,
+     10,
+     2
+    ],
+    "D": [
+     10,
+     7,
+     5
+    ],
+    "C": [
+     5,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "3♣",
+   "why": "Intet hold i klør, ingen fit og 9 hp: 3♣ – fjerde farve og udgangskrav (efter en revers er fjerde farve altid udgangskrav).",
+   "en": {
+    "why": "No stopper in clubs, no fit and 9 HCP: 3♣ – fourth suit and game forcing (after a reverse the fourth suit is always game forcing)."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     9,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     12
+    ],
+    "D": [
+     14,
+     3,
+     2
+    ],
+    "C": [
+     10,
+     7,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "Intet hold i klør, ingen fit og 13 hp: 3♣ – fjerde farve og udgangskrav (efter en revers er fjerde farve altid udgangskrav).",
+   "en": {
+    "why": "No stopper in clubs, no fit and 13 HCP: 3♣ – fourth suit and game forcing (after a reverse the fourth suit is always game forcing)."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10,
+     7
+    ],
+    "H": [
+     13,
+     8,
+     7
+    ],
+    "D": [
+     12,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     9,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "correct": "3♣",
+   "why": "Intet hold i klør, ingen fit og 9 hp: 3♣ – fjerde farve og udgangskrav (efter en revers er fjerde farve altid udgangskrav).",
+   "en": {
+    "why": "No stopper in clubs, no fit and 9 HCP: 3♣ – fourth suit and game forcing (after a reverse the fourth suit is always game forcing)."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9,
+     6,
+     4
+    ],
+    "H": [
+     12,
+     11,
+     2
+    ],
+    "D": [
+     13,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "Intet hold i klør, ingen fit og 11 hp: 3♣ – fjerde farve og udgangskrav (efter en revers er fjerde farve altid udgangskrav).",
+   "en": {
+    "why": "No stopper in clubs, no fit and 11 HCP: 3♣ – fourth suit and game forcing (after a reverse the fourth suit is always game forcing)."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     9,
+     6
+    ],
+    "H": [
+     7,
+     6,
+     5
+    ],
+    "D": [
+     12,
+     10,
+     2
+    ],
+    "C": [
+     11,
+     7
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "3♣",
+   "why": "Intet hold i klør, ingen fit og 9 hp: 3♣ – fjerde farve og udgangskrav (efter en revers er fjerde farve altid udgangskrav).",
+   "en": {
+    "why": "No stopper in clubs, no fit and 9 HCP: 3♣ – fourth suit and game forcing (after a reverse the fourth suit is always game forcing)."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     9,
+     7
+    ],
+    "H": [
+     13,
+     9
+    ],
+    "D": [
+     8,
+     5,
+     4
+    ],
+    "C": [
+     10,
+     5,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "Intet hold i klør, ingen fit og 10 hp: 3♣ – fjerde farve og udgangskrav (efter en revers er fjerde farve altid udgangskrav).",
+   "en": {
+    "why": "No stopper in clubs, no fit and 10 HCP: 3♣ – fourth suit and game forcing (after a reverse the fourth suit is always game forcing)."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     9,
+     8,
+     2
+    ],
+    "H": [
+     13,
+     8
+    ],
+    "D": [
+     13,
+     8,
+     6
+    ],
+    "C": [
+     9,
+     8,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "Intet hold i klør, ingen fit og 11 hp: 3♣ – fjerde farve og udgangskrav (efter en revers er fjerde farve altid udgangskrav).",
+   "en": {
+    "why": "No stopper in clubs, no fit and 11 HCP: 3♣ – fourth suit and game forcing (after a reverse the fourth suit is always game forcing)."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     9,
+     7,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     11,
+     10
+    ],
+    "C": [
+     9,
+     8
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "Intet hold i klør, ingen fit og 11 hp: 3♣ – fjerde farve og udgangskrav (efter en revers er fjerde farve altid udgangskrav).",
+   "en": {
+    "why": "No stopper in clubs, no fit and 11 HCP: 3♣ – fourth suit and game forcing (after a reverse the fourth suit is always game forcing)."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     8,
+     7
+    ],
+    "H": [
+     12,
+     5
+    ],
+    "D": [
+     12,
+     4,
+     3
+    ],
+    "C": [
+     10,
+     9,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "3♣",
+   "why": "Intet hold i klør, ingen fit og 9 hp: 3♣ – fjerde farve og udgangskrav (efter en revers er fjerde farve altid udgangskrav).",
+   "en": {
+    "why": "No stopper in clubs, no fit and 9 HCP: 3♣ – fourth suit and game forcing (after a reverse the fourth suit is always game forcing)."
+   }
+  }
+ ]
+}
