@@ -30,6 +30,18 @@
      "Til 4-trinnet"
     ],
     "why": "Loven: meld til det antal stik, der svarer til antallet af trumf – 8 trumf 2-trinnet, 9 trumf 3-trinnet, 10 trumf 4-trinnet."
+   },
+   "en": {
+    "bonus": {
+     "q": "How high do you bid by the Law with 9 trumps between you?",
+     "correct": "To the three level",
+     "options": [
+      "To the three level",
+      "To the two level",
+      "To the four level"
+     ],
+     "why": "The Law: bid to the number of tricks that matches the number of trumps – 8 trumps the two level, 9 trumps the three level, 10 trumps the four level."
+    }
    }
   },
   "lov_svar_hj": {
@@ -62,6 +74,18 @@
      "Til 4-trinnet"
     ],
     "why": "Loven: meld til det antal stik, der svarer til antallet af trumf – 8 trumf 2-trinnet, 9 trumf 3-trinnet, 10 trumf 4-trinnet."
+   },
+   "en": {
+    "bonus": {
+     "q": "How high do you bid by the Law with 9 trumps between you?",
+     "correct": "To the three level",
+     "options": [
+      "To the three level",
+      "To the two level",
+      "To the four level"
+     ],
+     "why": "The Law: bid to the number of tricks that matches the number of trumps – 8 trumps the two level, 9 trumps the three level, 10 trumps the four level."
+    }
    }
   },
   "naese_hj": {
@@ -102,6 +126,18 @@
      "Åbner viser spar"
     ],
     "why": "Med negative doblinger kan makker ikke selv strafdoble 1♠. Er åbner kort i spar, genåbner han med dobling, så makker kan strafpasse."
+   },
+   "en": {
+    "bonus": {
+     "q": "Why does opener reopen with a double in 1♥ – (1♠) – pass – (pass)?",
+     "correct": "Partner may have good spades and want to double for penalty",
+     "options": [
+      "Partner may have good spades and want to double for penalty",
+      "Opener has 18+",
+      "Opener shows spades"
+     ],
+     "why": "With negative doubles, partner cannot double 1♠ for penalty. When opener is short in spades, opener reopens with a double so that partner can pass for penalty."
+    }
    }
   },
   "lov_aab_hj": {
@@ -142,6 +178,18 @@
      "Til 4-trinnet"
     ],
     "why": "Loven: meld til det antal stik, der svarer til antallet af trumf – 8 trumf 2-trinnet, 9 trumf 3-trinnet, 10 trumf 4-trinnet."
+   },
+   "en": {
+    "bonus": {
+     "q": "How high do you bid by the Law with 9 trumps between you?",
+     "correct": "To the three level",
+     "options": [
+      "To the three level",
+      "To the two level",
+      "To the four level"
+     ],
+     "why": "The Law: bid to the number of tricks that matches the number of trumps – 8 trumps the two level, 9 trumps the three level, 10 trumps the four level."
+    }
    }
   },
   "lov_aab_sp": {
@@ -182,6 +230,18 @@
      "Til 4-trinnet"
     ],
     "why": "Loven: meld til det antal stik, der svarer til antallet af trumf – 8 trumf 2-trinnet, 9 trumf 3-trinnet, 10 trumf 4-trinnet."
+   },
+   "en": {
+    "bonus": {
+     "q": "How high do you bid by the Law with 9 trumps between you?",
+     "correct": "To the three level",
+     "options": [
+      "To the three level",
+      "To the two level",
+      "To the four level"
+     ],
+     "why": "The Law: bid to the number of tricks that matches the number of trumps – 8 trumps the two level, 9 trumps the three level, 10 trumps the four level."
+    }
    }
   }
  },
@@ -190,2618 +250,1141 @@
    "situation": "lov_svar_sp",
    "hand": {
     "S": [
+     10,
+     5,
+     4
+    ],
+    "H": [
+     9
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     7,
+     3
+    ],
+    "C": [
+     8,
+     7,
+     4,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "correct": "2♠",
+   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠.",
+   "en": {
+    "why": "3 spades + partner's 5 = 8 trumps: the Law says the two level – 2♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     12,
+     9,
+     4
+    ],
+    "H": [
+     12,
+     10
+    ],
+    "D": [
+     13,
+     11,
      5,
      3,
      2
     ],
+    "C": [
+     10,
+     5,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♠",
+   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠.",
+   "en": {
+    "why": "3 spades + partner's 5 = 8 trumps: the Law says the two level – 2♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     10,
+     7,
+     5
+    ],
     "H": [
      8,
-     7
+     4
     ],
     "D": [
-     12,
+     14,
+     11,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "2♠",
+   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠.",
+   "en": {
+    "why": "3 spades + partner's 5 = 8 trumps: the Law says the two level – 2♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     14,
+     11,
+     2
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     10,
+     8,
      7,
      6
     ],
     "C": [
-     14,
+     11,
+     7,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "2♠",
+   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠.",
+   "en": {
+    "why": "3 spades + partner's 5 = 8 trumps: the Law says the two level – 2♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     10,
+     4,
+     2
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     13,
      10,
      9,
-     7,
+     5
+    ],
+    "C": [
+     9,
+     8,
+     6,
+     4,
      3
     ]
    },
    "hp": 6,
-   "sp": 7,
-   "correct": "2♠",
-   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     12,
-     5,
-     2
-    ],
-    "H": [
-     5
-    ],
-    "D": [
-     14,
-     10,
-     6,
-     3,
-     2
-    ],
-    "C": [
-     10,
-     9,
-     8,
-     4
-    ]
-   },
-   "hp": 6,
    "sp": 9,
    "correct": "2♠",
-   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠."
+   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠.",
+   "en": {
+    "why": "3 spades + partner's 5 = 8 trumps: the Law says the two level – 2♠."
+   }
   },
   {
    "situation": "lov_svar_sp",
    "hand": {
     "S": [
-     12,
      9,
-     5
-    ],
-    "H": [
      7,
-     5
-    ],
-    "D": [
-     13,
-     10,
-     7,
-     5
-    ],
-    "C": [
-     13,
-     6,
-     5,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "2♠",
-   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     12,
-     10,
-     5
-    ],
-    "H": [
-     14,
-     7
-    ],
-    "D": [
-     12,
-     10,
-     4,
-     3,
-     2
-    ],
-    "C": [
-     10,
-     9,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "2♠",
-   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     10,
-     5,
      2
     ],
     "H": [
-     14,
-     4
+     6
     ],
     "D": [
+     14,
      11,
      10,
-     6,
-     4,
-     2
+     7
     ],
     "C": [
-     9,
-     6,
-     4
+     10,
+     8,
+     5,
+     4,
+     2
     ]
    },
    "hp": 5,
-   "sp": 6,
-   "correct": "2♠",
-   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     7,
-     5,
-     3
-    ],
-    "H": [
-     10,
-     5
-    ],
-    "D": [
-     14,
-     6,
-     4
-    ],
-    "C": [
-     13,
-     7,
-     6,
-     4,
-     2
-    ]
-   },
-   "hp": 7,
    "sp": 8,
    "correct": "2♠",
-   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠."
+   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠.",
+   "en": {
+    "why": "3 spades + partner's 5 = 8 trumps: the Law says the two level – 2♠."
+   }
   },
   {
    "situation": "lov_svar_sp",
    "hand": {
     "S": [
-     13,
-     11,
-     8
-    ],
-    "H": [
-     10,
-     7
-    ],
-    "D": [
-     12,
      8,
-     7,
      6,
-     4
-    ],
-    "C": [
-     10,
-     6,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "2♠",
-   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     11,
-     9,
-     5
+     2
     ],
     "H": [
-     14,
      11
     ],
     "D": [
+     13,
      10,
-     8,
      7,
      5
     ],
     "C": [
-     9,
-     8,
-     6,
-     4
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "2♠",
-   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     13,
-     11,
-     10
-    ],
-    "H": [
-     9,
-     2
-    ],
-    "D": [
-     12,
-     10,
-     9,
-     4,
-     2
-    ],
-    "C": [
-     7,
-     4,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "2♠",
-   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     12,
-     9,
-     8
-    ],
-    "H": [],
-    "D": [
-     10,
-     9,
-     6,
-     4,
-     2
-    ],
-    "C": [
-     13,
-     11,
-     10,
-     8,
-     5
-    ]
-   },
-   "hp": 6,
-   "sp": 11,
-   "correct": "2♠",
-   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     14,
-     9,
-     8
-    ],
-    "H": [
-     8,
-     2
-    ],
-    "D": [
      11,
      7,
-     6,
-     5,
-     4
-    ],
-    "C": [
-     9,
-     5,
-     4
+     4,
+     3,
+     2
     ]
    },
    "hp": 5,
-   "sp": 6,
+   "sp": 8,
    "correct": "2♠",
-   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠."
+   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠.",
+   "en": {
+    "why": "3 spades + partner's 5 = 8 trumps: the Law says the two level – 2♠."
+   }
   },
   {
    "situation": "lov_svar_sp",
    "hand": {
     "S": [
-     11,
-     10,
-     4
+     9,
+     8,
+     2
     ],
     "H": [],
     "D": [
-     12,
      10,
      9,
-     8,
-     3
-    ],
-    "C": [
-     12,
-     8,
      7,
      6,
-     5
+     2
+    ],
+    "C": [
+     13,
+     12,
+     10,
+     4,
+     3
     ]
    },
    "hp": 5,
    "sp": 10,
    "correct": "2♠",
-   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠."
+   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠.",
+   "en": {
+    "why": "3 spades + partner's 5 = 8 trumps: the Law says the two level – 2♠."
+   }
   },
   {
    "situation": "lov_svar_sp",
    "hand": {
     "S": [
-     11,
-     4,
-     3
-    ],
-    "H": [],
-    "D": [
-     11,
-     10,
-     7,
-     6,
-     4
-    ],
-    "C": [
-     14,
-     8,
-     6,
-     5,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 11,
-   "correct": "2♠",
-   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     7,
-     6,
-     5,
-     3
-    ],
-    "H": [
-     10,
-     8
-    ],
-    "D": [
-     10,
-     7,
-     6,
-     5,
-     4
-    ],
-    "C": [
-     14,
-     10
-    ]
-   },
-   "hp": 4,
-   "sp": 6,
-   "correct": "3♠",
-   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     10,
+     13,
      9,
-     7,
-     2
-    ],
-    "H": [],
-    "D": [
-     10,
-     9,
-     7,
-     6,
-     5
-    ],
-    "C": [
-     13,
-     7,
-     3,
-     2
-    ]
-   },
-   "hp": 3,
-   "sp": 8,
-   "correct": "3♠",
-   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     13,
-     6,
-     5,
-     2
-    ],
-    "H": [
-     8,
-     2
-    ],
-    "D": [
-     8,
-     3
-    ],
-    "C": [
-     12,
-     11,
-     10,
-     3,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 8,
-   "correct": "3♠",
-   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     10,
-     8,
-     4,
-     3
-    ],
-    "H": [
-     7,
-     2
-    ],
-    "D": [
-     13,
-     10,
-     7,
      6
-    ],
-    "C": [
-     12,
-     8,
-     7
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "3♠",
-   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     14,
-     13,
-     6,
-     4
-    ],
-    "H": [
-     8,
-     3
-    ],
-    "D": [
-     11,
-     9,
-     6,
-     3
-    ],
-    "C": [
-     9,
-     8,
-     3
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "3♠",
-   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     11,
-     8,
-     5,
-     3
-    ],
-    "H": [
-     12,
-     4
-    ],
-    "D": [
-     13,
-     6,
-     4
-    ],
-    "C": [
-     10,
-     9,
-     7,
-     4
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "3♠",
-   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     12,
-     9,
-     8,
-     5
-    ],
-    "H": [
-     6,
-     3
-    ],
-    "D": [
-     8,
-     5
-    ],
-    "C": [
-     13,
-     10,
-     8,
-     7,
-     6
-    ]
-   },
-   "hp": 5,
-   "sp": 7,
-   "correct": "3♠",
-   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     11,
-     7,
-     5,
-     3
-    ],
-    "H": [
-     7,
-     2
-    ],
-    "D": [
-     12,
-     10,
-     9
-    ],
-    "C": [
-     14,
-     7,
-     6,
-     4
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "3♠",
-   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     12,
-     11,
-     5,
-     2
-    ],
-    "H": [
-     9,
-     7
-    ],
-    "D": [
-     13,
-     11,
-     9,
-     6,
-     2
-    ],
-    "C": [
-     10,
-     4
-    ]
-   },
-   "hp": 7,
-   "sp": 9,
-   "correct": "3♠",
-   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     13,
-     9,
-     8,
-     3
-    ],
-    "H": [
-     10,
-     5
-    ],
-    "D": [
-     7,
-     4
-    ],
-    "C": [
-     11,
-     10,
-     6,
-     4,
-     3
-    ]
-   },
-   "hp": 4,
-   "sp": 6,
-   "correct": "3♠",
-   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     11,
-     10,
-     8,
-     6
-    ],
-    "H": [
-     2
-    ],
-    "D": [
-     12,
-     9,
-     7,
-     4
-    ],
-    "C": [
-     7,
-     6,
-     4,
-     3
-    ]
-   },
-   "hp": 3,
-   "sp": 6,
-   "correct": "3♠",
-   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     13,
-     10,
-     8,
-     6
-    ],
-    "H": [
-     12,
-     5
-    ],
-    "D": [
-     11,
-     9,
-     6,
-     3
-    ],
-    "C": [
-     11,
-     5,
-     3
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "3♠",
-   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     13,
-     9,
-     6,
-     3
-    ],
-    "H": [
-     11,
-     9
-    ],
-    "D": [
-     12,
-     9,
-     8,
-     5
-    ],
-    "C": [
-     6,
-     4,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "3♠",
-   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     11,
-     10,
-     9,
-     7,
-     2
-    ],
-    "H": [
-     11
-    ],
-    "D": [
-     9,
-     4,
-     2
-    ],
-    "C": [
-     13,
-     9,
-     3,
-     2
-    ]
-   },
-   "hp": 5,
-   "sp": 8,
-   "correct": "4♠",
-   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     11,
-     9,
-     8,
-     3,
-     2
-    ],
-    "H": [
-     11
-    ],
-    "D": [
-     13,
-     8,
-     7,
-     6,
-     4
-    ],
-    "C": [
-     9,
-     2
-    ]
-   },
-   "hp": 5,
-   "sp": 9,
-   "correct": "4♠",
-   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     14,
-     11,
-     8,
-     6,
-     2
-    ],
-    "H": [
-     8
-    ],
-    "D": [
-     8,
-     7,
-     3,
-     2
-    ],
-    "C": [
-     9,
-     8,
-     3
-    ]
-   },
-   "hp": 5,
-   "sp": 8,
-   "correct": "4♠",
-   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     13,
-     10,
-     8,
-     7,
-     4
-    ],
-    "H": [
-     9,
-     3
-    ],
-    "D": [
-     9
-    ],
-    "C": [
-     10,
-     9,
-     7,
-     6,
-     5
-    ]
-   },
-   "hp": 3,
-   "sp": 7,
-   "correct": "4♠",
-   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     12,
-     9,
-     7,
-     3,
-     2
-    ],
-    "H": [
-     4
-    ],
-    "D": [
-     11,
-     8,
-     2
-    ],
-    "C": [
-     13,
-     9,
-     5,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 9,
-   "correct": "4♠",
-   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     9,
-     8,
-     7,
-     6,
-     2
     ],
     "H": [
      12
     ],
     "D": [
-     7,
-     6
+     9,
+     6,
+     4,
+     3
     ],
     "C": [
-     11,
      10,
      8,
      5,
-     4
-    ]
-   },
-   "hp": 3,
-   "sp": 7,
-   "correct": "4♠",
-   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     13,
-     9,
-     8,
-     6,
-     4
-    ],
-    "H": [
-     8
-    ],
-    "D": [
-     12,
-     9,
      4,
-     3,
      2
-    ],
-    "C": [
-     9,
-     4
     ]
    },
    "hp": 5,
-   "sp": 9,
-   "correct": "4♠",
-   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     12,
-     9,
-     6,
-     4,
-     2
-    ],
-    "H": [
-     10
-    ],
-    "D": [
-     11,
-     7,
-     4,
-     3,
-     2
-    ],
-    "C": [
-     8,
-     3
-    ]
-   },
-   "hp": 3,
-   "sp": 7,
-   "correct": "4♠",
-   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     13,
-     11,
-     10,
-     5,
-     4
-    ],
-    "H": [
-     6
-    ],
-    "D": [
-     10,
-     7,
-     5
-    ],
-    "C": [
-     10,
-     9,
-     5,
-     2
-    ]
-   },
-   "hp": 4,
-   "sp": 7,
-   "correct": "4♠",
-   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     12,
-     11,
-     9,
-     8,
-     7
-    ],
-    "H": [
-     12,
-     6
-    ],
-    "D": [
-     8
-    ],
-    "C": [
-     10,
-     7,
-     6,
-     4,
-     3
-    ]
-   },
-   "hp": 5,
-   "sp": 9,
-   "correct": "4♠",
-   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     14,
-     11,
-     10,
-     7,
-     2
-    ],
-    "H": [
-     9,
-     6
-    ],
-    "D": [
-     10,
-     9
-    ],
-    "C": [
-     12,
-     6,
-     5,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 9,
-   "correct": "4♠",
-   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     10,
-     9,
-     6,
-     5,
-     2
-    ],
-    "H": [
-     7
-    ],
-    "D": [
-     10,
-     9,
-     6,
-     5,
-     3
-    ],
-    "C": [
-     12,
-     11
-    ]
-   },
-   "hp": 3,
-   "sp": 7,
-   "correct": "4♠",
-   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     12,
-     8,
-     6,
-     4,
-     3
-    ],
-    "H": [
-     9,
-     2
-    ],
-    "D": [
-     7,
-     4
-    ],
-    "C": [
-     13,
-     10,
-     8,
-     7
-    ]
-   },
-   "hp": 5,
-   "sp": 7,
-   "correct": "4♠",
-   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     14,
-     8,
-     4
-    ],
-    "H": [
-     7,
-     4
-    ],
-    "D": [
-     10,
-     9,
-     8,
-     7,
-     4
-    ],
-    "C": [
-     8,
-     7,
-     4
-    ]
-   },
-   "hp": 4,
-   "sp": 5,
-   "correct": "Pas",
-   "why": "5 sp: pas."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     10,
-     8,
-     4
-    ],
-    "H": [
-     13,
-     11
-    ],
-    "D": [
-     10,
-     7,
-     5,
-     3,
-     2
-    ],
-    "C": [
-     10,
-     9,
-     6
-    ]
-   },
-   "hp": 4,
-   "sp": 5,
-   "correct": "Pas",
-   "why": "5 sp: pas."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     12,
-     10,
-     9
-    ],
-    "H": [
-     10,
-     3
-    ],
-    "D": [
-     5,
-     4,
-     3
-    ],
-    "C": [
-     11,
-     8,
-     7,
-     5,
-     4
-    ]
-   },
-   "hp": 3,
-   "sp": 4,
-   "correct": "Pas",
-   "why": "4 sp: pas."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     6,
-     5,
-     4
-    ],
-    "H": [
-     7
-    ],
-    "D": [
-     10,
-     9,
-     5,
-     4
-    ],
-    "C": [
-     12,
-     10,
-     9,
-     7,
-     6
-    ]
-   },
-   "hp": 2,
-   "sp": 5,
-   "correct": "Pas",
-   "why": "4 sp: pas."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     10,
-     4,
-     3
-    ],
-    "H": [
-     10,
-     9
-    ],
-    "D": [
-     14,
-     8,
-     6,
-     4,
-     3
-    ],
-    "C": [
-     9,
-     7,
-     2
-    ]
-   },
-   "hp": 4,
-   "sp": 5,
-   "correct": "Pas",
-   "why": "5 sp: pas."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     7,
-     6,
-     2
-    ],
-    "H": [
-     7
-    ],
-    "D": [
-     11,
-     8,
-     6,
-     5
-    ],
-    "C": [
-     12,
-     10,
-     9,
-     8,
-     3
-    ]
-   },
-   "hp": 3,
-   "sp": 6,
-   "correct": "Pas",
-   "why": "5 sp: pas."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     12,
-     4,
-     3
-    ],
-    "H": [
-     7,
-     3
-    ],
-    "D": [
-     11,
-     7,
-     5
-    ],
-    "C": [
-     10,
-     9,
-     8,
-     5,
-     2
-    ]
-   },
-   "hp": 3,
-   "sp": 4,
-   "correct": "Pas",
-   "why": "4 sp: pas."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     10,
-     5,
-     2
-    ],
-    "H": [
-     9,
-     5
-    ],
-    "D": [
-     12,
-     9,
-     2
-    ],
-    "C": [
-     11,
-     10,
-     9,
-     7,
-     5
-    ]
-   },
-   "hp": 3,
-   "sp": 4,
-   "correct": "Pas",
-   "why": "4 sp: pas."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     12,
-     6,
-     5
-    ],
-    "H": [
-     10,
-     7
-    ],
-    "D": [
-     12,
-     10,
-     9,
-     7,
-     5
-    ],
-    "C": [
-     9,
-     7,
-     2
-    ]
-   },
-   "hp": 4,
-   "sp": 5,
-   "correct": "Pas",
-   "why": "5 sp: pas."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     6,
-     3,
-     2
-    ],
-    "H": [
-     8
-    ],
-    "D": [
-     11,
-     9,
-     8,
-     4
-    ],
-    "C": [
-     7,
-     6,
-     5,
-     4,
-     3
-    ]
-   },
-   "hp": 1,
-   "sp": 4,
-   "correct": "Pas",
-   "why": "3 sp: pas."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     6,
-     5,
-     2
-    ],
-    "H": [
-     6
-    ],
-    "D": [
-     10,
-     9,
-     5,
-     4,
-     3
-    ],
-    "C": [
-     11,
-     10,
-     6,
-     3
-    ]
-   },
-   "hp": 1,
-   "sp": 4,
-   "correct": "Pas",
-   "why": "3 sp: pas."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     9,
-     7,
-     6
-    ],
-    "H": [
-     5
-    ],
-    "D": [
-     12,
-     9,
-     4,
-     3,
-     2
-    ],
-    "C": [
-     11,
-     8,
-     5,
-     4
-    ]
-   },
-   "hp": 3,
-   "sp": 6,
-   "correct": "Pas",
-   "why": "5 sp: pas."
-  },
-  {
-   "situation": "lov_svar_sp",
-   "hand": {
-    "S": [
-     9,
-     6,
-     3
-    ],
-    "H": [
-     6,
-     3
-    ],
-    "D": [
-     6,
-     5,
-     4,
-     2
-    ],
-    "C": [
-     11,
-     7,
-     6,
-     5
-    ]
-   },
-   "hp": 1,
-   "sp": 2,
-   "correct": "Pas",
-   "why": "2 sp: pas."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     8,
-     6
-    ],
-    "H": [
-     8,
-     6,
-     5
-    ],
-    "D": [
-     7,
-     5,
-     2
-    ],
-    "C": [
-     14,
-     13,
-     10,
-     7,
-     4
-    ]
-   },
-   "hp": 7,
    "sp": 8,
-   "correct": "2♥",
-   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥."
+   "correct": "2♠",
+   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠.",
+   "en": {
+    "why": "3 spades + partner's 5 = 8 trumps: the Law says the two level – 2♠."
+   }
   },
   {
-   "situation": "lov_svar_hj",
+   "situation": "lov_svar_sp",
    "hand": {
     "S": [
-     8
+     13,
+     8,
+     5
     ],
     "H": [
-     12,
-     11,
-     8
+     6,
+     3
     ],
     "D": [
-     12,
+     13,
      10,
-     7,
-     5
+     5,
+     4,
+     2
     ],
     "C": [
      12,
      10,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♠",
+   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠.",
+   "en": {
+    "why": "3 spades + partner's 5 = 8 trumps: the Law says the two level – 2♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     12,
+     9,
+     6
+    ],
+    "H": [
+     9,
+     8
+    ],
+    "D": [
+     12,
      8,
      4,
+     2
+    ],
+    "C": [
+     14,
+     9,
+     7,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♠",
+   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠.",
+   "en": {
+    "why": "3 spades + partner's 5 = 8 trumps: the Law says the two level – 2♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     6,
+     5,
+     3
+    ],
+    "H": [
+     9
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     6,
+     5
+    ],
+    "C": [
+     13,
+     10,
+     8,
      3
     ]
    },
    "hp": 7,
    "sp": 10,
-   "correct": "2♥",
-   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥."
+   "correct": "2♠",
+   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠.",
+   "en": {
+    "why": "3 spades + partner's 5 = 8 trumps: the Law says the two level – 2♠."
+   }
   },
   {
-   "situation": "lov_svar_hj",
+   "situation": "lov_svar_sp",
    "hand": {
     "S": [
-     6,
-     2
-    ],
-    "H": [
-     6,
-     5,
-     3
-    ],
-    "D": [
-     13,
-     9,
-     8,
-     3
-    ],
-    "C": [
-     13,
-     10,
-     7,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "2♥",
-   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     9,
-     6
-    ],
-    "H": [
-     11,
-     7,
-     6
-    ],
-    "D": [
-     13,
-     11,
-     9,
-     8,
-     3
-    ],
-    "C": [
-     10,
-     4,
-     3
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "2♥",
-   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     13,
-     10
-    ],
-    "H": [
-     6,
-     4,
-     3
-    ],
-    "D": [
      14,
-     10,
      9,
-     8,
-     4
-    ],
-    "C": [
-     9,
-     7,
-     5
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "2♥",
-   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [],
-    "H": [
-     12,
-     8,
-     7
-    ],
-    "D": [
-     13,
-     10,
-     6,
-     4,
-     2
-    ],
-    "C": [
-     10,
-     9,
-     8,
-     4,
-     2
-    ]
-   },
-   "hp": 5,
-   "sp": 10,
-   "correct": "2♥",
-   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [],
-    "H": [
-     10,
-     7,
-     2
-    ],
-    "D": [
-     13,
-     10,
-     9,
-     8,
-     6
-    ],
-    "C": [
-     13,
-     8,
-     7,
-     4,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 11,
-   "correct": "2♥",
-   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     10
-    ],
-    "H": [
-     11,
-     5,
-     2
-    ],
-    "D": [
-     12,
-     11,
-     9,
-     6,
-     4
-    ],
-    "C": [
-     11,
-     10,
-     3,
-     2
-    ]
-   },
-   "hp": 5,
-   "sp": 8,
-   "correct": "2♥",
-   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     10,
-     2
-    ],
-    "H": [
-     11,
-     7,
-     4
-    ],
-    "D": [
-     14,
-     10,
-     9,
-     3,
-     2
-    ],
-    "C": [
-     10,
-     6,
-     2
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "2♥",
-   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     10,
-     2
-    ],
-    "H": [
-     9,
-     6,
-     4
-    ],
-    "D": [
-     13,
-     10,
-     4
-    ],
-    "C": [
-     13,
-     12,
-     7,
-     6,
-     4
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "2♥",
-   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [],
-    "H": [
-     7,
-     6,
-     3
-    ],
-    "D": [
-     13,
-     10,
-     8,
-     7,
-     3
-    ],
-    "C": [
-     13,
-     9,
-     7,
-     5,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 11,
-   "correct": "2♥",
-   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     13,
-     8
-    ],
-    "H": [
-     11,
-     5,
-     4
-    ],
-    "D": [
-     13,
-     9,
-     8,
-     7,
-     4
-    ],
-    "C": [
-     10,
-     8,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "2♥",
-   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     8,
-     3
-    ],
-    "H": [
-     13,
-     10,
-     4
-    ],
-    "D": [
-     12,
-     7,
-     4,
-     3,
-     2
-    ],
-    "C": [
-     13,
-     10,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "2♥",
-   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     6,
-     3
-    ],
-    "H": [
-     12,
-     6,
-     3,
-     2
-    ],
-    "D": [
-     8,
-     5,
-     4
-    ],
-    "C": [
-     14,
-     7,
-     5,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "3♥",
-   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     8,
-     6
-    ],
-    "H": [
-     13,
-     7,
-     6,
-     3
-    ],
-    "D": [
-     13,
-     9,
-     6,
-     5,
-     2
-    ],
-    "C": [
-     7,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 8,
-   "correct": "3♥",
-   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [],
-    "H": [
-     10,
-     7,
-     4,
-     3
-    ],
-    "D": [
-     7,
-     6,
-     5,
-     3
-    ],
-    "C": [
-     13,
-     9,
-     8,
-     5,
-     2
-    ]
-   },
-   "hp": 3,
-   "sp": 8,
-   "correct": "3♥",
-   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
      7
     ],
     "H": [
-     12,
      8,
-     6,
-     4
-    ],
-    "D": [
-     11,
-     10,
-     6,
-     4
-    ],
-    "C": [
-     12,
-     11,
-     7,
-     6
-    ]
-   },
-   "hp": 6,
-   "sp": 9,
-   "correct": "3♥",
-   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     12,
-     2
-    ],
-    "H": [
-     11,
-     6,
-     3,
-     2
-    ],
-    "D": [
-     11,
-     9,
-     6,
-     4,
-     3
-    ],
-    "C": [
-     9,
-     5
-    ]
-   },
-   "hp": 4,
-   "sp": 6,
-   "correct": "3♥",
-   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     10,
-     7
-    ],
-    "H": [
-     10,
-     9,
-     8,
-     7
-    ],
-    "D": [
-     14,
-     12,
-     11,
-     10
-    ],
-    "C": [
-     5,
-     3,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "3♥",
-   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     10
-    ],
-    "H": [
-     12,
-     10,
-     9,
-     3
-    ],
-    "D": [
-     11,
-     8,
-     6,
-     2
-    ],
-    "C": [
-     10,
-     8,
-     6,
-     4
-    ]
-   },
-   "hp": 3,
-   "sp": 6,
-   "correct": "3♥",
-   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     13,
-     6
-    ],
-    "H": [
-     10,
-     9,
-     8,
-     3
-    ],
-    "D": [
-     7,
-     4,
-     3
-    ],
-    "C": [
-     13,
-     11,
-     9,
-     4
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "3♥",
-   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     10
-    ],
-    "H": [
-     11,
-     10,
-     7,
      5
     ],
     "D": [
-     12,
-     10,
-     8,
-     2
-    ],
-    "C": [
      13,
-     6,
      5,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 9,
-   "correct": "3♥",
-   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [],
-    "H": [
-     11,
-     8,
      4,
-     2
-    ],
-    "D": [
-     10,
-     9,
-     5,
-     2
+     3
     ],
     "C": [
-     13,
      10,
-     9,
      8,
-     7
+     5,
+     4
     ]
    },
-   "hp": 4,
-   "sp": 9,
-   "correct": "3♥",
-   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥."
+   "hp": 7,
+   "sp": 8,
+   "correct": "2♠",
+   "why": "3 spar + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♠.",
+   "en": {
+    "why": "3 spades + partner's 5 = 8 trumps: the Law says the two level – 2♠."
+   }
   },
   {
-   "situation": "lov_svar_hj",
+   "situation": "lov_svar_sp",
    "hand": {
     "S": [
+     12,
      11,
+     10,
+     6
+    ],
+    "H": [
+     9,
+     4
+    ],
+    "D": [
+     14,
      9
     ],
-    "H": [
-     13,
-     7,
-     3,
-     2
-    ],
-    "D": [
-     8,
-     2
-    ],
     "C": [
-     12,
      8,
-     6,
-     3,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 8,
-   "correct": "3♥",
-   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     8
-    ],
-    "H": [
-     11,
      7,
+     6,
      5,
      2
-    ],
-    "D": [
-     12,
-     10,
-     3,
-     2
-    ],
-    "C": [
-     11,
-     7,
-     6,
-     2
-    ]
-   },
-   "hp": 4,
-   "sp": 7,
-   "correct": "3♥",
-   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     2
-    ],
-    "H": [
-     11,
-     4,
-     3,
-     2
-    ],
-    "D": [
-     8,
-     7,
-     5
-    ],
-    "C": [
-     14,
-     10,
-     7,
-     6,
-     5
-    ]
-   },
-   "hp": 5,
-   "sp": 8,
-   "correct": "3♥",
-   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     6,
-     3
-    ],
-    "H": [
-     8,
-     7,
-     4,
-     3,
-     2
-    ],
-    "D": [
-     11,
-     5
-    ],
-    "C": [
-     14,
-     8,
-     7,
-     4
-    ]
-   },
-   "hp": 5,
-   "sp": 7,
-   "correct": "4♥",
-   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [],
-    "H": [
-     13,
-     11,
-     6,
-     4,
-     3
-    ],
-    "D": [
-     9,
-     7,
-     3
-    ],
-    "C": [
-     10,
-     9,
-     8,
-     7,
-     3
-    ]
-   },
-   "hp": 4,
-   "sp": 9,
-   "correct": "4♥",
-   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     11,
-     2
-    ],
-    "H": [
-     12,
-     10,
-     8,
-     5,
-     3
-    ],
-    "D": [
-     12,
-     11,
-     7,
-     6
-    ],
-    "C": [
-     11,
-     6
     ]
    },
    "hp": 7,
    "sp": 9,
-   "correct": "4♥",
-   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥."
+   "correct": "3♠",
+   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "4 spades + partner's 5 = 9 trumps: the Law says the three level – 3♠."
+   }
   },
   {
-   "situation": "lov_svar_hj",
+   "situation": "lov_svar_sp",
    "hand": {
-    "S": [],
-    "H": [
+    "S": [
      14,
-     7,
-     4,
+     5,
      3,
      2
     ],
-    "D": [
-     8,
-     4,
-     3,
-     2
-    ],
-    "C": [
-     8,
-     7,
-     4,
-     3
-    ]
-   },
-   "hp": 4,
-   "sp": 9,
-   "correct": "4♥",
-   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [],
     "H": [
-     14,
-     10,
-     8,
-     5,
-     3
+     10
     ],
     "D": [
-     7,
-     6,
-     5
-    ],
-    "C": [
      10,
-     9,
      7,
      4,
      2
-    ]
-   },
-   "hp": 4,
-   "sp": 9,
-   "correct": "4♥",
-   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     8
-    ],
-    "H": [
-     12,
-     11,
-     9,
-     8,
-     4
-    ],
-    "D": [
-     10,
-     9,
-     6,
-     2
     ],
     "C": [
-     10,
-     5,
-     2
-    ]
-   },
-   "hp": 3,
-   "sp": 6,
-   "correct": "4♥",
-   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     10,
-     7
-    ],
-    "H": [
      11,
-     10,
      9,
      7,
-     4
-    ],
-    "D": [
-     8,
-     4
-    ],
-    "C": [
-     13,
-     11,
-     6,
      4
     ]
    },
    "hp": 5,
-   "sp": 7,
-   "correct": "4♥",
-   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥."
+   "sp": 8,
+   "correct": "3♠",
+   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "4 spades + partner's 5 = 9 trumps: the Law says the three level – 3♠."
+   }
   },
   {
-   "situation": "lov_svar_hj",
+   "situation": "lov_svar_sp",
    "hand": {
     "S": [
-     10,
+     9,
+     6,
+     4,
      3
     ],
     "H": [
-     13,
-     12,
-     8,
-     7,
-     5
+     5,
+     4
     ],
     "D": [
-     11,
      10,
-     3,
-     2
+     8,
+     3
     ],
     "C": [
-     7,
-     5
+     14,
+     11,
+     8,
+     6
     ]
    },
-   "hp": 6,
-   "sp": 8,
-   "correct": "4♥",
-   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥."
+   "hp": 5,
+   "sp": 6,
+   "correct": "3♠",
+   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "4 spades + partner's 5 = 9 trumps: the Law says the three level – 3♠."
+   }
   },
   {
-   "situation": "lov_svar_hj",
+   "situation": "lov_svar_sp",
    "hand": {
-    "S": [],
-    "H": [
-     12,
+    "S": [
+     14,
+     11,
      9,
-     4,
-     3,
-     2
+     3
+    ],
+    "H": [
+     7
     ],
     "D": [
-     10,
+     9,
+     7,
      5,
      4
     ],
     "C": [
+     9,
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "correct": "3♠",
+   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "4 spades + partner's 5 = 9 trumps: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     10,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     8,
+     3
+    ],
+    "D": [
+     14,
+     7,
+     6
+    ],
+    "C": [
+     14,
      10,
      8,
-     6,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "3♠",
+   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "4 spades + partner's 5 = 9 trumps: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     10,
+     9,
      4,
+     3
+    ],
+    "H": [
+     13,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     5
+    ],
+    "C": [
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "3♠",
+   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "4 spades + partner's 5 = 9 trumps: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     7,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     11,
+     10
+    ],
+    "D": [
+     11,
+     7,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     7
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "3♠",
+   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "4 spades + partner's 5 = 9 trumps: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7,
+     4
+    ],
+    "H": [
+     13,
+     5
+    ],
+    "D": [
+     10,
+     4,
+     2
+    ],
+    "C": [
+     11,
+     9,
+     5,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "3♠",
+   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "4 spades + partner's 5 = 9 trumps: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     12,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     12,
+     6
+    ],
+    "D": [
+     13,
+     9,
+     7,
+     5,
+     2
+    ],
+    "C": [
+     9,
+     7
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "3♠",
+   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "4 spades + partner's 5 = 9 trumps: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     12,
+     11,
+     7,
+     4
+    ],
+    "H": [
+     6,
+     4
+    ],
+    "D": [
+     11,
+     9,
+     6
+    ],
+    "C": [
+     11,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "3♠",
+   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "4 spades + partner's 5 = 9 trumps: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     11,
+     10,
+     5,
+     2
+    ],
+    "H": [
+     12,
+     10
+    ],
+    "D": [
+     12,
+     10,
+     8,
+     3
+    ],
+    "C": [
+     11,
+     9,
+     8
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "3♠",
+   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "4 spades + partner's 5 = 9 trumps: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     6,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     10,
+     9,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     12,
+     11,
+     5
+    ]
+   },
+   "hp": 3,
+   "sp": 6,
+   "correct": "3♠",
+   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "4 spades + partner's 5 = 9 trumps: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     11,
+     9,
+     7,
+     6
+    ],
+    "H": [
+     8,
+     2
+    ],
+    "D": [
+     12,
+     8,
+     7,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "3♠",
+   "why": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "4 spades + partner's 5 = 9 trumps: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     6,
+     5
+    ],
+    "D": [
+     12,
+     8
+    ],
+    "C": [
+     10,
+     9,
+     7,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "4♠",
+   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠.",
+   "en": {
+    "why": "5 spades + partner's 5 = 10 trumps: the Law says the four level – 4♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     12,
+     10,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     8,
+     3
+    ],
+    "D": [
+     12,
+     10,
+     8,
+     6
+    ],
+    "C": [
+     12,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 8,
+   "correct": "4♠",
+   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠.",
+   "en": {
+    "why": "5 spades + partner's 5 = 10 trumps: the Law says the four level – 4♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     12,
+     8,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     11,
+     7
+    ],
+    "D": [
+     10,
+     8,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     2
+    ]
+   },
+   "hp": 3,
+   "sp": 7,
+   "correct": "4♠",
+   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠.",
+   "en": {
+    "why": "5 spades + partner's 5 = 10 trumps: the Law says the four level – 4♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     10
+    ],
+    "D": [
+     6,
+     3
+    ],
+    "C": [
+     10,
+     9,
+     7,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "4♠",
+   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠.",
+   "en": {
+    "why": "5 spades + partner's 5 = 10 trumps: the Law says the four level – 4♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     11,
+     10,
+     7,
+     4,
+     3
+    ],
+    "H": [
+     8,
+     3
+    ],
+    "D": [
+     11,
+     10,
+     9,
+     7,
+     4
+    ],
+    "C": [
      3
     ]
    },
    "hp": 2,
-   "sp": 7,
-   "correct": "4♥",
-   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥."
+   "sp": 6,
+   "correct": "4♠",
+   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠.",
+   "en": {
+    "why": "5 spades + partner's 5 = 10 trumps: the Law says the four level – 4♠."
+   }
   },
   {
-   "situation": "lov_svar_hj",
+   "situation": "lov_svar_sp",
    "hand": {
-    "S": [],
-    "H": [
+    "S": [
+     12,
+     11,
      9,
      8,
-     7,
-     4,
-     3
+     7
+    ],
+    "H": [
+     5
     ],
     "D": [
-     12,
+     13,
+     10,
+     6,
+     4
+    ],
+    "C": [
+     10,
+     6,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "4♠",
+   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠.",
+   "en": {
+    "why": "5 spades + partner's 5 = 10 trumps: the Law says the four level – 4♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     14,
      7,
+     6,
+     5,
      2
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     11,
+     10
+    ],
+    "C": [
+     10,
+     9,
+     8,
+     6,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 9,
+   "correct": "4♠",
+   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠.",
+   "en": {
+    "why": "5 spades + partner's 5 = 10 trumps: the Law says the four level – 4♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     9,
+     8,
+     4,
+     3,
+     2
+    ],
+    "H": [],
+    "D": [
+     13,
+     9,
+     7,
+     6
     ],
     "C": [
      11,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 9,
+   "correct": "4♠",
+   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠.",
+   "en": {
+    "why": "5 spades + partner's 5 = 10 trumps: the Law says the four level – 4♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     12,
+     10,
+     6,
+     3,
+     2
+    ],
+    "H": [],
+    "D": [
+     11,
+     10,
      9,
+     8
+    ],
+    "C": [
+     10,
      8,
      7,
      5
@@ -2809,180 +1392,362 @@
    },
    "hp": 3,
    "sp": 8,
-   "correct": "4♥",
-   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥."
+   "correct": "4♠",
+   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠.",
+   "en": {
+    "why": "5 spades + partner's 5 = 10 trumps: the Law says the four level – 4♠."
+   }
   },
   {
-   "situation": "lov_svar_hj",
+   "situation": "lov_svar_sp",
    "hand": {
     "S": [
+     10,
+     6,
+     4,
      3,
      2
     ],
     "H": [
-     10,
-     9,
-     7,
-     6,
-     5
+     8,
+     7
     ],
     "D": [
-     13,
-     10,
-     5
+     11,
+     8
     ],
     "C": [
-     12,
+     13,
      8,
+     4,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 6,
+   "correct": "4♠",
+   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠.",
+   "en": {
+    "why": "5 spades + partner's 5 = 10 trumps: the Law says the four level – 4♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     11,
+     9,
+     5,
+     3,
+     2
+    ],
+    "H": [],
+    "D": [
+     12,
+     5,
+     3
+    ],
+    "C": [
+     10,
+     9,
+     8,
+     4,
      3
     ]
    },
-   "hp": 5,
-   "sp": 6,
-   "correct": "4♥",
-   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥."
+   "hp": 3,
+   "sp": 8,
+   "correct": "4♠",
+   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠.",
+   "en": {
+    "why": "5 spades + partner's 5 = 10 trumps: the Law says the four level – 4♠."
+   }
   },
   {
-   "situation": "lov_svar_hj",
+   "situation": "lov_svar_sp",
    "hand": {
     "S": [
-     14,
-     10
-    ],
-    "H": [
      10,
-     9,
      8,
-     5,
-     2
-    ],
-    "D": [
+     7,
      4,
      3
     ],
+    "H": [
+     4,
+     2
+    ],
+    "D": [
+     14,
+     5
+    ],
     "C": [
-     12,
-     9,
+     11,
+     10,
      6,
+     5
+    ]
+   },
+   "hp": 5,
+   "sp": 7,
+   "correct": "4♠",
+   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠.",
+   "en": {
+    "why": "5 spades + partner's 5 = 10 trumps: the Law says the four level – 4♠."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     11,
+     10,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     2
+    ],
+    "D": [
+     12,
+     11,
+     7,
+     5,
+     4
+    ],
+    "C": [
+     9,
      4
     ]
    },
-   "hp": 6,
+   "hp": 4,
    "sp": 8,
-   "correct": "4♥",
-   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥."
+   "correct": "4♠",
+   "why": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠.",
+   "en": {
+    "why": "5 spades + partner's 5 = 10 trumps: the Law says the four level – 4♠."
+   }
   },
   {
-   "situation": "lov_svar_hj",
+   "situation": "lov_svar_sp",
    "hand": {
     "S": [
      8,
-     5
+     3,
+     2
     ],
     "H": [
+     6,
+     3
+    ],
+    "D": [
      13,
      11,
-     6,
-     5,
-     4
-    ],
-    "D": [
-     12,
      9,
-     3,
-     2
-    ],
-    "C": [
-     5,
-     4
-    ]
-   },
-   "hp": 6,
-   "sp": 8,
-   "correct": "4♥",
-   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     6,
-     2
-    ],
-    "H": [
-     5,
-     3,
-     2
-    ],
-    "D": [
-     9,
-     6,
      5
     ],
     "C": [
+     10,
+     8,
+     6,
+     3
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "Pas",
+   "why": "5 sp: pas.",
+   "en": {
+    "why": "5 support points: pass."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     12,
+     10,
+     9
+    ],
+    "H": [
+     7,
+     4
+    ],
+    "D": [
+     11,
+     5,
+     3
+    ],
+    "C": [
+     10,
+     9,
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "correct": "Pas",
+   "why": "4 sp: pas.",
+   "en": {
+    "why": "4 support points: pass."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     10,
+     7,
+     6
+    ],
+    "H": [
+     6,
+     5
+    ],
+    "D": [
+     11,
+     6,
+     3
+    ],
+    "C": [
+     12,
+     9,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "correct": "Pas",
+   "why": "4 sp: pas.",
+   "en": {
+    "why": "4 support points: pass."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     11,
+     9,
+     3
+    ],
+    "H": [
      13,
+     8
+    ],
+    "D": [
      9,
      7,
+     6,
+     4
+    ],
+    "C": [
+     10,
+     9,
      5,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "Pas",
+   "why": "5 sp: pas.",
+   "en": {
+    "why": "5 support points: pass."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     9,
+     8,
+     6
+    ],
+    "H": [
+     10,
+     8
+    ],
+    "D": [
+     5,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     8,
+     7,
      3
     ]
    },
    "hp": 3,
    "sp": 4,
    "correct": "Pas",
-   "why": "4 sp: pas."
+   "why": "4 sp: pas.",
+   "en": {
+    "why": "4 support points: pass."
+   }
   },
   {
-   "situation": "lov_svar_hj",
+   "situation": "lov_svar_sp",
    "hand": {
     "S": [
-     9
+     9,
+     7,
+     5
     ],
     "H": [
-     10,
-     9,
-     3
+     7,
+     5
     ],
     "D": [
-     11,
+     10,
+     8,
      7,
+     6,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     5
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "correct": "Pas",
+   "why": "4 sp: pas.",
+   "en": {
+    "why": "4 support points: pass."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     4,
+     3,
+     2
+    ],
+    "H": [
+     7,
+     5
+    ],
+    "D": [
+     10,
+     8,
+     6,
      5,
      4
     ],
     "C": [
      12,
-     10,
-     9,
-     8,
-     4
-    ]
-   },
-   "hp": 3,
-   "sp": 6,
-   "correct": "Pas",
-   "why": "5 sp: pas."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     9,
-     3
-    ],
-    "H": [
-     7,
-     3,
-     2
-    ],
-    "D": [
-     12,
-     9,
-     7,
-     5
-    ],
-    "C": [
-     10,
-     9,
      5,
      3
     ]
@@ -2990,67 +1755,1096 @@
    "hp": 2,
    "sp": 3,
    "correct": "Pas",
-   "why": "3 sp: pas."
+   "why": "3 sp: pas.",
+   "en": {
+    "why": "3 support points: pass."
+   }
   },
   {
-   "situation": "lov_svar_hj",
+   "situation": "lov_svar_sp",
    "hand": {
     "S": [
+     10,
      8,
-     6
+     4
     ],
     "H": [
-     10,
-     6,
+     5,
      4
     ],
     "D": [
-     9,
-     3,
-     2
+     8,
+     6,
+     3
     ],
     "C": [
-     13,
+     12,
+     11,
+     10,
+     7,
+     3
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "correct": "Pas",
+   "why": "4 sp: pas.",
+   "en": {
+    "why": "4 support points: pass."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     7,
+     5,
+     4
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     11,
      9,
      8,
      6,
+     4
+    ],
+    "C": [
+     11,
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 2,
+   "sp": 5,
+   "correct": "Pas",
+   "why": "4 sp: pas.",
+   "en": {
+    "why": "4 support points: pass."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     11,
+     8,
+     2
+    ],
+    "H": [
+     7,
+     6
+    ],
+    "D": [
+     12,
+     7,
+     5,
+     2
+    ],
+    "C": [
+     10,
+     9,
+     8,
      4
     ]
    },
    "hp": 3,
    "sp": 4,
    "correct": "Pas",
-   "why": "4 sp: pas."
+   "why": "4 sp: pas.",
+   "en": {
+    "why": "4 support points: pass."
+   }
   },
   {
-   "situation": "lov_svar_hj",
+   "situation": "lov_svar_sp",
    "hand": {
     "S": [
-     8,
-     7
+     7,
+     5,
+     2
     ],
     "H": [
-     10,
-     3,
-     2
+     7,
+     4
     ],
     "D": [
      13,
-     6,
-     3
-    ],
-    "C": [
      11,
      8,
      7,
-     4,
+     5
+    ],
+    "C": [
+     7,
+     6,
      3
     ]
    },
    "hp": 4,
    "sp": 5,
    "correct": "Pas",
-   "why": "5 sp: pas."
+   "why": "5 sp: pas.",
+   "en": {
+    "why": "5 support points: pass."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     9,
+     6,
+     5
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     6,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     10,
+     5,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 0,
+   "sp": 3,
+   "correct": "Pas",
+   "why": "2 sp: pas.",
+   "en": {
+    "why": "2 support points: pass."
+   }
+  },
+  {
+   "situation": "lov_svar_sp",
+   "hand": {
+    "S": [
+     8,
+     3,
+     2
+    ],
+    "H": [
+     9,
+     8
+    ],
+    "D": [
+     11,
+     9,
+     5,
+     3
+    ],
+    "C": [
+     7,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 1,
+   "sp": 2,
+   "correct": "Pas",
+   "why": "2 sp: pas.",
+   "en": {
+    "why": "2 support points: pass."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     7,
+     6,
+     3
+    ],
+    "D": [
+     9,
+     7,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     9,
+     6
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "2♥",
+   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥.",
+   "en": {
+    "why": "3 hearts + partner's 5 = 8 trumps: the Law says the two level – 2♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     7,
+     2
+    ],
+    "H": [
+     11,
+     10,
+     2
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     9
+    ],
+    "C": [
+     12,
+     10,
+     5,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "2♥",
+   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥.",
+   "en": {
+    "why": "3 hearts + partner's 5 = 8 trumps: the Law says the two level – 2♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     12,
+     8
+    ],
+    "H": [
+     6,
+     5,
+     3
+    ],
+    "D": [
+     12,
+     6,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     8,
+     7
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "2♥",
+   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥.",
+   "en": {
+    "why": "3 hearts + partner's 5 = 8 trumps: the Law says the two level – 2♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     13,
+     4
+    ],
+    "H": [
+     9,
+     4,
+     2
+    ],
+    "D": [
+     10,
+     9,
+     7,
+     5
+    ],
+    "C": [
+     12,
+     9,
+     6,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "2♥",
+   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥.",
+   "en": {
+    "why": "3 hearts + partner's 5 = 8 trumps: the Law says the two level – 2♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     8,
+     6
+    ],
+    "D": [
+     12,
+     10,
+     9,
+     8,
+     3
+    ],
+    "C": [
+     11,
+     7,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 11,
+   "correct": "2♥",
+   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥.",
+   "en": {
+    "why": "3 hearts + partner's 5 = 8 trumps: the Law says the two level – 2♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     7,
+     6
+    ],
+    "H": [
+     12,
+     8,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     8
+    ],
+    "C": [
+     7,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "2♥",
+   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥.",
+   "en": {
+    "why": "3 hearts + partner's 5 = 8 trumps: the Law says the two level – 2♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     12,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     9,
+     8,
+     5
+    ],
+    "C": [
+     10,
+     7,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "2♥",
+   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥.",
+   "en": {
+    "why": "3 hearts + partner's 5 = 8 trumps: the Law says the two level – 2♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
+     13,
+     5,
+     2
+    ],
+    "D": [
+     9,
+     7,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     6,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "2♥",
+   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥.",
+   "en": {
+    "why": "3 hearts + partner's 5 = 8 trumps: the Law says the two level – 2♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     4,
+     2
+    ],
+    "H": [
+     13,
+     9,
+     8
+    ],
+    "D": [
+     11,
+     8,
+     6
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     8,
+     7
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "2♥",
+   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥.",
+   "en": {
+    "why": "3 hearts + partner's 5 = 8 trumps: the Law says the two level – 2♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     9,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     9,
+     6
+    ],
+    "C": [
+     12,
+     10,
+     8,
+     7,
+     6
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "correct": "2♥",
+   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥.",
+   "en": {
+    "why": "3 hearts + partner's 5 = 8 trumps: the Law says the two level – 2♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     10
+    ],
+    "H": [
+     14,
+     10,
+     2
+    ],
+    "D": [
+     9,
+     6,
+     4,
+     3
+    ],
+    "C": [
+     11,
+     7,
+     5,
+     4,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "correct": "2♥",
+   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥.",
+   "en": {
+    "why": "3 hearts + partner's 5 = 8 trumps: the Law says the two level – 2♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     12,
+     10,
+     8
+    ],
+    "D": [
+     11,
+     5,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     8,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "2♥",
+   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥.",
+   "en": {
+    "why": "3 hearts + partner's 5 = 8 trumps: the Law says the two level – 2♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     12,
+     9
+    ],
+    "H": [
+     8,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     8,
+     7,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     6,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♥",
+   "why": "3 hjerter + makkers 5 = 8 trumf: Loven siger 2-trinnet – 2♥.",
+   "en": {
+    "why": "3 hearts + partner's 5 = 8 trumps: the Law says the two level – 2♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     9,
+     8,
+     6,
+     3
+    ],
+    "D": [
+     12,
+     10,
+     6,
+     4,
+     2
+    ],
+    "C": [
+     11,
+     5,
+     2
+    ]
+   },
+   "hp": 3,
+   "sp": 6,
+   "correct": "3♥",
+   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "4 hearts + partner's 5 = 9 trumps: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     10,
+     8
+    ],
+    "H": [
+     10,
+     8,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     5
+    ],
+    "C": [
+     7,
+     3,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "3♥",
+   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "4 hearts + partner's 5 = 9 trumps: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [],
+    "H": [
+     11,
+     10,
+     8,
+     7
+    ],
+    "D": [
+     10,
+     9,
+     8,
+     5,
+     2
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     5
+    ]
+   },
+   "hp": 4,
+   "sp": 9,
+   "correct": "3♥",
+   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "4 hearts + partner's 5 = 9 trumps: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [],
+    "H": [
+     12,
+     8,
+     5,
+     4
+    ],
+    "D": [
+     12,
+     10,
+     8,
+     5,
+     4
+    ],
+    "C": [
+     8,
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 9,
+   "correct": "3♥",
+   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "4 hearts + partner's 5 = 9 trumps: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     11,
+     9,
+     7,
+     5
+    ],
+    "D": [
+     11,
+     10,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     10,
+     8,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "3♥",
+   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "4 hearts + partner's 5 = 9 trumps: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     13,
+     6
+    ],
+    "H": [
+     11,
+     9,
+     8,
+     3
+    ],
+    "D": [
+     11,
+     6,
+     4
+    ],
+    "C": [
+     11,
+     10,
+     8,
+     6
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "3♥",
+   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "4 hearts + partner's 5 = 9 trumps: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     12,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     4,
+     2
+    ],
+    "D": [
+     11,
+     10,
+     4
+    ],
+    "C": [
+     10,
+     9,
+     7,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "3♥",
+   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "4 hearts + partner's 5 = 9 trumps: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     14,
+     7
+    ],
+    "H": [
+     14,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     8,
+     7,
+     3,
+     2
+    ],
+    "C": [
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "3♥",
+   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "4 hearts + partner's 5 = 9 trumps: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     12,
+     11
+    ],
+    "H": [
+     8,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     7
+    ],
+    "C": [
+     9,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "3♥",
+   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "4 hearts + partner's 5 = 9 trumps: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     14,
+     4
+    ],
+    "H": [
+     12,
+     11,
+     5,
+     2
+    ],
+    "D": [
+     10,
+     4,
+     3
+    ],
+    "C": [
+     10,
+     7,
+     5,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "3♥",
+   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "4 hearts + partner's 5 = 9 trumps: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     13,
+     2
+    ],
+    "H": [
+     12,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     11,
+     7,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     7,
+     4
+    ]
+   },
+   "hp": 6,
+   "sp": 8,
+   "correct": "3♥",
+   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "4 hearts + partner's 5 = 9 trumps: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     5,
+     3
+    ],
+    "H": [
+     10,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     6,
+     5
+    ],
+    "C": [
+     12,
+     10,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "3♥",
+   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "4 hearts + partner's 5 = 9 trumps: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     7,
+     5
+    ],
+    "H": [
+     14,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     9,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "3♥",
+   "why": "4 hjerter + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "4 hearts + partner's 5 = 9 trumps: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     13,
+     10
+    ],
+    "H": [
+     12,
+     8,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     10,
+     5,
+     3
+    ],
+    "C": [
+     10,
+     6,
+     5
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "4♥",
+   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥.",
+   "en": {
+    "why": "5 hearts + partner's 5 = 10 trumps: the Law says the four level – 4♥."
+   }
   },
   {
    "situation": "lov_svar_hj",
@@ -3058,238 +2852,984 @@
     "S": [],
     "H": [
      9,
-     7,
+     6,
+     5,
+     3,
      2
     ],
     "D": [
+     13,
+     8,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     10,
+     8,
+     3
+    ]
+   },
+   "hp": 3,
+   "sp": 8,
+   "correct": "4♥",
+   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥.",
+   "en": {
+    "why": "5 hearts + partner's 5 = 10 trumps: the Law says the four level – 4♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     13,
      12,
      9,
+     7,
+     4
+    ],
+    "D": [
+     10,
+     7,
+     5
+    ],
+    "C": [
+     11,
+     9,
+     6,
+     4
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "4♥",
+   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥.",
+   "en": {
+    "why": "5 hearts + partner's 5 = 10 trumps: the Law says the four level – 4♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     14,
+     10
+    ],
+    "H": [
+     10,
+     9,
+     8,
+     6,
+     5
+    ],
+    "D": [
+     11,
+     6
+    ],
+    "C": [
+     10,
+     8,
+     7,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 7,
+   "correct": "4♥",
+   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥.",
+   "en": {
+    "why": "5 hearts + partner's 5 = 10 trumps: the Law says the four level – 4♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     5,
+     4
+    ],
+    "D": [
+     8,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     6,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 9,
+   "correct": "4♥",
+   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥.",
+   "en": {
+    "why": "5 hearts + partner's 5 = 10 trumps: the Law says the four level – 4♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     2
+    ],
+    "H": [
+     13,
+     9,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     12,
      8,
      5,
+     2
+    ],
+    "C": [
+     9,
+     5,
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "correct": "4♥",
+   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥.",
+   "en": {
+    "why": "5 hearts + partner's 5 = 10 trumps: the Law says the four level – 4♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     6,
+     4
+    ],
+    "H": [
+     12,
+     10,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     11,
+     8,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 3,
+   "sp": 7,
+   "correct": "4♥",
+   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥.",
+   "en": {
+    "why": "5 hearts + partner's 5 = 10 trumps: the Law says the four level – 4♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
+     11,
+     10,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     6,
+     5
+    ],
+    "C": [
+     10,
+     7,
+     6
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "correct": "4♥",
+   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥.",
+   "en": {
+    "why": "5 hearts + partner's 5 = 10 trumps: the Law says the four level – 4♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     10
+    ],
+    "H": [
+     13,
+     11,
+     9,
+     5,
+     3
+    ],
+    "D": [
+     7,
      4
     ],
     "C": [
      9,
      8,
+     7,
      6,
-     3,
+     5
+    ]
+   },
+   "hp": 4,
+   "sp": 8,
+   "correct": "4♥",
+   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥.",
+   "en": {
+    "why": "5 hearts + partner's 5 = 10 trumps: the Law says the four level – 4♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [],
+    "H": [
+     10,
+     9,
+     8,
+     5,
+     4
+    ],
+    "D": [
+     10,
+     9,
+     5
+    ],
+    "C": [
+     14,
+     9,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 4,
+   "sp": 9,
+   "correct": "4♥",
+   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥.",
+   "en": {
+    "why": "5 hearts + partner's 5 = 10 trumps: the Law says the four level – 4♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     10,
+     4
+    ],
+    "H": [
+     12,
+     9,
+     7,
+     5,
+     2
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     12,
+     8,
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 4,
+   "sp": 8,
+   "correct": "4♥",
+   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥.",
+   "en": {
+    "why": "5 hearts + partner's 5 = 10 trumps: the Law says the four level – 4♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     7,
+     5
+    ],
+    "H": [
+     13,
+     10,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     12,
+     9,
+     8,
+     7,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 9,
+   "correct": "4♥",
+   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥.",
+   "en": {
+    "why": "5 hearts + partner's 5 = 10 trumps: the Law says the four level – 4♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [],
+    "H": [
+     12,
+     11,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     9,
+     7,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     8,
+     6,
+     2
+    ]
+   },
+   "hp": 3,
+   "sp": 8,
+   "correct": "4♥",
+   "why": "5 hjerter + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♥.",
+   "en": {
+    "why": "5 hearts + partner's 5 = 10 trumps: the Law says the four level – 4♥."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     10,
+     6
+    ],
+    "H": [
+     14,
+     6,
+     2
+    ],
+    "D": [
+     10,
+     8,
+     2
+    ],
+    "C": [
+     10,
+     7,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "Pas",
+   "why": "5 sp: pas.",
+   "en": {
+    "why": "5 support points: pass."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [],
+    "H": [
+     7,
+     5,
+     4
+    ],
+    "D": [
+     8,
+     6,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     8,
+     7,
      2
     ]
    },
    "hp": 2,
    "sp": 7,
    "correct": "Pas",
-   "why": "5 sp: pas."
+   "why": "5 sp: pas.",
+   "en": {
+    "why": "5 support points: pass."
+   }
   },
   {
    "situation": "lov_svar_hj",
    "hand": {
     "S": [
-     6,
-     4
+     3
     ],
     "H": [
-     5,
-     4,
+     10,
+     8,
      3
     ],
     "D": [
+     13,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     10,
+     8,
+     7,
+     3,
+     2
+    ]
+   },
+   "hp": 3,
+   "sp": 6,
+   "correct": "Pas",
+   "why": "5 sp: pas.",
+   "en": {
+    "why": "5 support points: pass."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [],
+    "H": [
+     11,
+     8,
+     2
+    ],
+    "D": [
+     6,
+     5,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     9,
      7,
      4,
+     3,
+     2
+    ]
+   },
+   "hp": 1,
+   "sp": 6,
+   "correct": "Pas",
+   "why": "4 sp: pas.",
+   "en": {
+    "why": "4 support points: pass."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
+     9,
+     6,
+     4
+    ],
+    "D": [
+     11,
+     9,
+     8,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     8,
+     5
+    ]
+   },
+   "hp": 3,
+   "sp": 6,
+   "correct": "Pas",
+   "why": "5 sp: pas.",
+   "en": {
+    "why": "5 support points: pass."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     12,
+     10,
+     4
+    ],
+    "D": [
+     9,
+     5,
+     3,
      2
     ],
     "C": [
      11,
      10,
      9,
-     3,
-     2
+     4,
+     3
     ]
    },
-   "hp": 1,
-   "sp": 2,
+   "hp": 3,
+   "sp": 6,
    "correct": "Pas",
-   "why": "2 sp: pas."
+   "why": "5 sp: pas.",
+   "en": {
+    "why": "5 support points: pass."
+   }
   },
   {
    "situation": "lov_svar_hj",
    "hand": {
     "S": [
      11,
-     2
+     7
     ],
     "H": [
-     11,
+     8,
      7,
-     6
+     2
     ],
     "D": [
-     12,
-     7,
-     6,
-     3
+     10,
+     8,
+     6
     ],
     "C": [
+     13,
+     9,
      8,
      5,
-     4,
      3
     ]
    },
    "hp": 4,
    "sp": 5,
    "correct": "Pas",
-   "why": "5 sp: pas."
+   "why": "5 sp: pas.",
+   "en": {
+    "why": "5 support points: pass."
+   }
   },
   {
    "situation": "lov_svar_hj",
    "hand": {
     "S": [
-     11,
-     5
-    ],
-    "H": [
-     10,
-     8,
-     7
-    ],
-    "D": [
-     12,
-     10,
-     7,
-     6
-    ],
-    "C": [
-     10,
-     9,
-     6,
-     3
-    ]
-   },
-   "hp": 3,
-   "sp": 4,
-   "correct": "Pas",
-   "why": "4 sp: pas."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     10
-    ],
-    "H": [
-     7,
      3,
      2
     ],
-    "D": [
-     8,
-     6,
-     5,
-     4,
-     3
-    ],
-    "C": [
-     13,
-     10,
+    "H": [
+     12,
      8,
      4
+    ],
+    "D": [
+     12,
+     9,
+     6,
+     2
+    ],
+    "C": [
+     10,
+     8,
+     6,
+     5
     ]
    },
-   "hp": 3,
-   "sp": 6,
+   "hp": 4,
+   "sp": 5,
    "correct": "Pas",
-   "why": "5 sp: pas."
+   "why": "5 sp: pas.",
+   "en": {
+    "why": "5 support points: pass."
+   }
   },
   {
    "situation": "lov_svar_hj",
    "hand": {
     "S": [
      7,
-     5
+     3
     ],
     "H": [
      12,
      10,
-     6
+     3
     ],
     "D": [
      9,
      6,
-     4,
-     3
+     3,
+     2
     ],
     "C": [
      10,
-     8,
-     5,
-     3
+     9,
+     6,
+     5
     ]
    },
    "hp": 2,
    "sp": 3,
    "correct": "Pas",
-   "why": "3 sp: pas."
+   "why": "3 sp: pas.",
+   "en": {
+    "why": "3 support points: pass."
+   }
   },
   {
    "situation": "lov_svar_hj",
    "hand": {
     "S": [
-     5
+     10
     ],
     "H": [
-     11,
-     8,
-     3
-    ],
-    "D": [
-     8,
      7,
-     6,
-     4,
-     3
-    ],
-    "C": [
-     11,
-     8,
-     7,
-     3
-    ]
-   },
-   "hp": 2,
-   "sp": 5,
-   "correct": "Pas",
-   "why": "4 sp: pas."
-  },
-  {
-   "situation": "lov_svar_hj",
-   "hand": {
-    "S": [
-     10,
-     8
-    ],
-    "H": [
-     8,
      3,
      2
     ],
     "D": [
+     10,
      8,
-     4,
+     7,
+     6,
      2
     ],
     "C": [
-     12,
-     11,
-     10,
+     9,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 0,
+   "sp": 3,
+   "correct": "Pas",
+   "why": "2 sp: pas.",
+   "en": {
+    "why": "2 support points: pass."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     9,
+     6,
+     5
+    ],
+    "D": [
+     9,
      8,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     7,
+     6,
+     5,
      2
     ]
    },
    "hp": 3,
-   "sp": 4,
+   "sp": 6,
    "correct": "Pas",
-   "why": "4 sp: pas."
+   "why": "5 sp: pas.",
+   "en": {
+    "why": "5 support points: pass."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     2
+    ],
+    "H": [
+     7,
+     6,
+     4
+    ],
+    "D": [
+     12,
+     11,
+     9,
+     8,
+     6
+    ],
+    "C": [
+     8,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 3,
+   "sp": 6,
+   "correct": "Pas",
+   "why": "5 sp: pas.",
+   "en": {
+    "why": "5 support points: pass."
+   }
+  },
+  {
+   "situation": "lov_svar_hj",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
+     9,
+     4,
+     2
+    ],
+    "D": [
+     7,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 3,
+   "sp": 6,
+   "correct": "Pas",
+   "why": "5 sp: pas.",
+   "en": {
+    "why": "5 support points: pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     12,
+     11
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     7,
+     5
+    ],
+    "D": [
+     12,
+     10,
+     9,
+     4,
+     3
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "X",
+   "why": "2 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
+   "en": {
+    "why": "2 spades: reopen with a double – partner may hold good spades and pass for penalty."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     7,
+     3
+    ],
+    "D": [
+     11,
+     10
+    ],
+    "C": [
+     9,
+     8,
+     7,
+     6,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "X",
+   "why": "1 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
+   "en": {
+    "why": "1 spade: reopen with a double – partner may hold good spades and pass for penalty."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     11,
+     8
+    ],
+    "H": [
+     12,
+     7,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     9,
+     6
+    ],
+    "C": [
+     14,
+     11
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "X",
+   "why": "2 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
+   "en": {
+    "why": "2 spades: reopen with a double – partner may hold good spades and pass for penalty."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     8,
+     5
+    ],
+    "D": [
+     13,
+     10
+    ],
+    "C": [
+     14,
+     12,
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "X",
+   "why": "1 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
+   "en": {
+    "why": "1 spade: reopen with a double – partner may hold good spades and pass for penalty."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     10
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     8,
+     5
+    ],
+    "D": [
+     13,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     3,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "X",
+   "why": "1 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
+   "en": {
+    "why": "1 spade: reopen with a double – partner may hold good spades and pass for penalty."
+   }
   },
   {
    "situation": "naese_hj",
@@ -3297,297 +3837,424 @@
     "S": [],
     "H": [
      14,
+     11,
      10,
-     6,
-     5,
-     2
+     8,
+     3
     ],
     "D": [
-     13,
+     14,
      10,
      3
     ],
     "C": [
-     14,
+     13,
      11,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "X",
+   "why": "0 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
+   "en": {
+    "why": "0 spades: reopen with a double – partner may hold good spades and pass for penalty."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     12,
+     10
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     9,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     8,
+     5,
+     4
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "X",
+   "why": "2 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
+   "en": {
+    "why": "2 spades: reopen with a double – partner may hold good spades and pass for penalty."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     11
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     9,
+     8,
+     7,
+     3
+    ],
+    "C": [
+     13,
+     11
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "X",
+   "why": "1 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
+   "en": {
+    "why": "1 spade: reopen with a double – partner may hold good spades and pass for penalty."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     9,
+     5
+    ],
+    "D": [
+     14,
+     11
+    ],
+    "C": [
+     10,
+     7,
      6,
      5,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "X",
+   "why": "1 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
+   "en": {
+    "why": "1 spade: reopen with a double – partner may hold good spades and pass for penalty."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     8,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     7,
+     5
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     6
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "X",
+   "why": "2 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
+   "en": {
+    "why": "2 spades: reopen with a double – partner may hold good spades and pass for penalty."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     12,
+     10,
+     5,
+     4
+    ],
+    "D": [
+     11,
+     10,
+     9,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     8,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "X",
+   "why": "0 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
+   "en": {
+    "why": "0 spades: reopen with a double – partner may hold good spades and pass for penalty."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     8,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     5,
+     4
+    ],
+    "D": [
+     7
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     9,
+     8
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "X",
+   "why": "2 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
+   "en": {
+    "why": "2 spades: reopen with a double – partner may hold good spades and pass for penalty."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     9,
+     7
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     7,
+     6
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     8,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "X",
+   "why": "2 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
+   "en": {
+    "why": "2 spades: reopen with a double – partner may hold good spades and pass for penalty."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     12,
+     8,
+     6,
      2
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     7,
+     4
+    ],
+    "C": [
+     12,
+     6,
+     5
     ]
    },
    "hp": 12,
    "sp": 17,
    "correct": "X",
-   "why": "0 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
+   "why": "0 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
+   "en": {
+    "why": "0 spades: reopen with a double – partner may hold good spades and pass for penalty."
+   }
   },
   {
    "situation": "naese_hj",
    "hand": {
     "S": [
-     7
+     14,
+     10
     ],
     "H": [
-     14,
-     11,
-     10,
-     8,
-     2
+     13,
+     12,
+     9,
+     5,
+     4
     ],
     "D": [
      14,
-     12,
-     11,
-     8,
-     2
-    ],
-    "C": [
-     10,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 16,
-   "correct": "X",
-   "why": "1 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     13,
-     12
-    ],
-    "H": [
-     14,
-     5,
+     7,
      4,
      3,
      2
     ],
-    "D": [
-     13,
-     10,
-     7,
-     6,
-     5
-    ],
     "C": [
-     7
+     6
     ]
    },
-   "hp": 12,
-   "sp": 16,
+   "hp": 13,
+   "sp": 17,
    "correct": "X",
-   "why": "2 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
+   "why": "2 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
+   "en": {
+    "why": "2 spades: reopen with a double – partner may hold good spades and pass for penalty."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     14,
+     10
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     8,
+     4
+    ],
+    "D": [
+     13,
+     9,
+     7
+    ],
+    "C": [
+     12,
+     11,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "X",
+   "why": "2 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
+   "en": {
+    "why": "2 spades: reopen with a double – partner may hold good spades and pass for penalty."
+   }
   },
   {
    "situation": "naese_hj",
    "hand": {
     "S": [],
     "H": [
-     14,
      13,
-     7,
+     6,
      4,
+     3,
      2
     ],
     "D": [
      14,
+     13,
      12,
-     8,
-     5
+     11,
+     4
     ],
     "C": [
      11,
-     10,
-     9,
-     5
+     6,
+     4
     ]
    },
    "hp": 14,
    "sp": 19,
    "correct": "X",
-   "why": "0 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
+   "why": "0 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
+   "en": {
+    "why": "0 spades: reopen with a double – partner may hold good spades and pass for penalty."
+   }
   },
   {
    "situation": "naese_hj",
    "hand": {
     "S": [
-     14,
-     10
-    ],
-    "H": [
-     11,
-     9,
-     7,
-     6,
-     2
-    ],
-    "D": [
-     12,
-     3,
-     2
-    ],
-    "C": [
-     13,
-     12,
      9
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "X",
-   "why": "2 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     11,
-     10
     ],
     "H": [
-     14,
      12,
-     11,
+     10,
      7,
-     6
+     5,
+     2
     ],
     "D": [
      14,
      11,
      10,
-     7,
-     3
+     6
     ],
     "C": [
-     11
+     14,
+     13,
+     9
     ]
    },
    "hp": 14,
-   "sp": 18,
-   "correct": "X",
-   "why": "2 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     3
-    ],
-    "H": [
-     12,
-     11,
-     10,
-     8,
-     7
-    ],
-    "D": [
-     12,
-     5
-    ],
-    "C": [
-     14,
-     13,
-     11,
-     8,
-     7
-    ]
-   },
-   "hp": 13,
    "sp": 17,
    "correct": "X",
-   "why": "1 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     2
-    ],
-    "H": [
-     14,
-     11,
-     9,
-     8,
-     4
-    ],
-    "D": [
-     13,
-     3
-    ],
-    "C": [
-     13,
-     11,
-     8,
-     7,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 16,
-   "correct": "X",
-   "why": "1 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     3
-    ],
-    "H": [
-     14,
-     11,
-     8,
-     7,
-     6
-    ],
-    "D": [
-     14,
-     8,
-     7,
-     3,
-     2
-    ],
-    "C": [
-     14,
-     8
-    ]
-   },
-   "hp": 13,
-   "sp": 17,
-   "correct": "X",
-   "why": "1 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     10,
-     6
-    ],
-    "H": [
-     14,
-     12,
-     11,
-     9,
-     8
-    ],
-    "D": [
-     10,
-     9
-    ],
-    "C": [
-     14,
-     11,
-     9,
-     5
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
-   "correct": "X",
-   "why": "2 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
+   "why": "1 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
+   "en": {
+    "why": "1 spade: reopen with a double – partner may hold good spades and pass for penalty."
+   }
   },
   {
    "situation": "naese_hj",
@@ -3595,88 +4262,31 @@
     "S": [],
     "H": [
      14,
+     13,
      12,
      11,
-     9,
      6
     ],
     "D": [
-     12,
+     13,
      5,
-     3,
+     4,
      2
     ],
     "C": [
-     13,
-     12,
-     6,
-     2
+     11,
+     8,
+     7,
+     4
     ]
    },
    "hp": 14,
    "sp": 19,
    "correct": "X",
-   "why": "0 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     5
-    ],
-    "H": [
-     14,
-     11,
-     9,
-     8,
-     6
-    ],
-    "D": [
-     13,
-     4
-    ],
-    "C": [
-     14,
-     11,
-     10,
-     7,
-     5
-    ]
-   },
-   "hp": 13,
-   "sp": 17,
-   "correct": "X",
-   "why": "1 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     10,
-     2
-    ],
-    "H": [
-     14,
-     12,
-     11,
-     7,
-     2
-    ],
-    "D": [
-     13,
-     9,
-     5
-    ],
-    "C": [
-     12,
-     5,
-     3
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "X",
-   "why": "2 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
+   "why": "0 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
+   "en": {
+    "why": "0 spades: reopen with a double – partner may hold good spades and pass for penalty."
+   }
   },
   {
    "situation": "naese_hj",
@@ -3684,354 +4294,64 @@
     "S": [],
     "H": [
      14,
-     13,
-     11,
+     9,
      7,
-     6
+     5,
+     4
     ],
     "D": [
-     12,
-     7,
-     5
-    ],
-    "C": [
-     12,
-     10,
-     8,
+     14,
+     9,
+     5,
      4,
      2
+    ],
+    "C": [
+     13,
+     11,
+     4
     ]
    },
    "hp": 12,
    "sp": 17,
    "correct": "X",
-   "why": "0 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
+   "why": "0 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
+   "en": {
+    "why": "0 spades: reopen with a double – partner may hold good spades and pass for penalty."
+   }
   },
   {
    "situation": "naese_hj",
    "hand": {
     "S": [
-     13,
-     4
-    ],
-    "H": [
-     13,
-     11,
-     6,
-     4,
-     3
-    ],
-    "D": [
-     14,
-     11,
-     8,
-     3
-    ],
-    "C": [
-     9,
-     8
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
-   "correct": "X",
-   "why": "2 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [],
-    "H": [
-     14,
-     13,
      10,
+     9,
      8,
      3
     ],
-    "D": [
-     7,
-     4,
-     3
-    ],
-    "C": [
+    "H": [
      14,
      13,
-     9,
-     6,
-     3
-    ]
-   },
-   "hp": 14,
-   "sp": 19,
-   "correct": "X",
-   "why": "0 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [],
-    "H": [
-     13,
-     11,
+     12,
      8,
-     4,
      2
     ],
     "D": [
-     14,
-     12,
-     8,
-     3
-    ],
-    "C": [
-     12,
-     11,
-     10,
-     7
-    ]
-   },
-   "hp": 13,
-   "sp": 18,
-   "correct": "X",
-   "why": "0 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     11
-    ],
-    "H": [
-     12,
-     9,
-     6,
-     5,
-     2
-    ],
-    "D": [
-     14,
-     8,
-     4,
-     3
-    ],
-    "C": [
      13,
-     12,
-     6
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "X",
-   "why": "1 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [],
-    "H": [
-     12,
-     11,
-     10,
-     3,
-     2
-    ],
-    "D": [
-     14,
-     13,
-     12
-    ],
-    "C": [
-     11,
-     10,
-     9,
-     8,
-     3
-    ]
-   },
-   "hp": 13,
-   "sp": 18,
-   "correct": "X",
-   "why": "0 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [],
-    "H": [
-     14,
-     12,
-     11,
-     9,
-     3
-    ],
-    "D": [
-     8,
-     7,
-     5
-    ],
-    "C": [
-     14,
-     11,
-     8,
-     6,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 17,
-   "correct": "X",
-   "why": "0 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
-     6
-    ],
-    "H": [
-     14,
-     11,
-     6,
-     5,
-     2
-    ],
-    "D": [
-     3
-    ],
-    "C": [
-     11,
-     6,
-     3
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     13,
-     11,
-     10,
-     4
-    ],
-    "H": [
-     14,
-     13,
-     10,
-     4,
-     3
-    ],
-    "D": [
-     12
-    ],
-    "C": [
-     9,
-     7,
-     4
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     13,
-     12,
-     5,
-     3
-    ],
-    "H": [
-     14,
-     13,
-     10,
-     7,
-     6
-    ],
-    "D": [
      10,
      6
     ],
     "C": [
-     11,
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     14,
-     12,
-     8,
      4
-    ],
-    "H": [
-     14,
-     11,
-     7,
-     4,
-     3
-    ],
-    "D": [
-     6,
-     2
-    ],
-    "C": [
-     12,
-     8
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     12,
-     10,
-     3,
-     2
-    ],
-    "H": [
-     14,
-     12,
-     9,
-     5,
-     2
-    ],
-    "D": [
-     14
-    ],
-    "C": [
-     10,
-     8,
-     2
     ]
    },
    "hp": 12,
    "sp": 15,
    "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas."
+   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "4 spades: you are long in their suit yourself – pass."
+   }
   },
   {
    "situation": "naese_hj",
@@ -4039,558 +4359,249 @@
     "S": [
      12,
      10,
-     8,
-     5
-    ],
-    "H": [
-     13,
-     12,
      7,
-     4,
      3
     ],
-    "D": [
+    "H": [
      14,
      13,
-     10
-    ],
-    "C": [
-     7
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     13,
      12,
-     9,
-     8
-    ],
-    "H": [
-     12,
-     9,
-     6,
-     5,
+     10,
      2
-    ],
-    "D": [
-     14,
-     11
-    ],
-    "C": [
-     11,
-     7
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     14,
-     13,
-     11,
-     8
-    ],
-    "H": [
-     12,
-     11,
-     8,
-     7,
-     5
-    ],
-    "D": [
-     12,
-     4
-    ],
-    "C": [
-     9,
-     5
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     11,
-     8,
-     4,
-     2
-    ],
-    "H": [
-     14,
-     12,
-     8,
-     6,
-     5
     ],
     "D": [
      13
     ],
     "C": [
+     10,
+     8,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "Pas",
+   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "4 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     11,
+     6,
+     3,
+     2
+    ],
+    "H": [
+     14,
      13,
-     4,
-     3
+     11,
+     5,
+     4
+    ],
+    "D": [
+     9
+    ],
+    "C": [
+     13,
+     11,
+     9
     ]
    },
    "hp": 13,
    "sp": 16,
    "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas."
+   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "4 spades: you are long in their suit yourself – pass."
+   }
   },
   {
    "situation": "naese_hj",
    "hand": {
     "S": [
+     14,
      13,
-     6,
-     5,
+     12,
      3
     ],
     "H": [
-     13,
      12,
+     11,
      9,
+     6,
+     2
+    ],
+    "D": [
+     8,
      5,
      2
     ],
-    "D": [
-     14,
-     7,
-     3
-    ],
     "C": [
-     7
+     6
     ]
    },
    "hp": 12,
    "sp": 15,
    "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas."
+   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "4 spades: you are long in their suit yourself – pass."
+   }
   },
   {
    "situation": "naese_hj",
    "hand": {
     "S": [
-     13,
-     8,
-     6,
-     5
-    ],
-    "H": [
-     14,
-     11,
-     10,
-     9,
-     8
-    ],
-    "D": [
-     11
-    ],
-    "C": [
      13,
      10,
-     7
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     13,
-     11,
-     9,
-     8
-    ],
-    "H": [
-     13,
-     8,
-     6,
-     5,
+     4,
      2
     ],
-    "D": [
-     6
-    ],
-    "C": [
-     13,
-     12,
-     7
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
+    "H": [
      14,
      11,
-     8,
-     2
-    ],
-    "H": [
-     14,
-     12,
-     9,
-     7,
-     2
-    ],
-    "D": [
-     13,
-     6
-    ],
-    "C": [
-     9,
-     7
-    ]
-   },
-   "hp": 14,
-   "sp": 16,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     14,
-     12,
-     9,
-     6
-    ],
-    "H": [
-     14,
-     13,
-     7,
+     4,
      3,
      2
     ],
     "D": [
-     5
+     13,
+     11,
+     7
     ],
     "C": [
-     11,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "Pas",
+   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "4 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     13,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     8,
+     6
+    ],
+    "D": [
      9,
+     7,
+     3
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "Pas",
+   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "4 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     8,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     7,
+     3
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     12,
+     8,
      5
     ]
    },
    "hp": 14,
    "sp": 17,
    "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas."
+   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "4 spades: you are long in their suit yourself – pass."
+   }
   },
   {
    "situation": "naese_hj",
    "hand": {
     "S": [
-     13,
      12,
-     8,
-     4
-    ],
-    "H": [
-     10,
-     8,
-     7,
-     6,
+     11,
+     5,
      2
     ],
-    "D": [
+    "H": [
      14,
-     11,
+     12,
+     9,
+     7,
+     6
+    ],
+    "D": [
+     13,
      8
     ],
     "C": [
-     12
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     13,
-     10,
-     9,
-     3
-    ],
-    "H": [
-     14,
      12,
-     11,
-     6,
-     5
-    ],
-    "D": [
-     6,
-     4
-    ],
-    "C": [
-     14,
-     10
+     8
     ]
    },
    "hp": 14,
    "sp": 16,
    "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas."
+   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "4 spades: you are long in their suit yourself – pass."
+   }
   },
   {
    "situation": "naese_hj",
    "hand": {
     "S": [
-     14,
-     11,
-     7,
-     2
-    ],
-    "H": [
-     14,
-     12,
-     10,
-     9,
-     8
-    ],
-    "D": [
-     6
-    ],
-    "C": [
-     11,
-     5,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     11,
-     8,
-     5,
-     3
-    ],
-    "H": [
-     13,
-     10,
-     9,
-     7,
-     3
-    ],
-    "D": [
-     14
-    ],
-    "C": [
-     14,
-     10,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     14,
-     10,
-     5,
-     4
-    ],
-    "H": [
-     13,
-     12,
-     9,
-     7,
-     4
-    ],
-    "D": [
-     14,
-     6,
-     3
-    ],
-    "C": [
-     10
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas."
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     14,
-     13,
-     9,
-     4
-    ],
-    "H": [
-     8,
-     7,
-     5,
-     3,
-     2
-    ],
-    "D": [
-     13,
-     8
-    ],
-    "C": [
-     13,
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     14,
-     5,
-     4
-    ],
-    "H": [
-     10,
-     7,
-     6,
-     3,
-     2
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     3
-    ],
-    "C": [
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     13,
-     12
-    ],
-    "H": [
-     13,
-     11,
-     10,
-     4,
-     3
-    ],
-    "D": [
      12,
      11,
-     7,
-     6
-    ],
-    "C": [
-     11,
-     7
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     10
-    ],
-    "H": [
-     14,
-     13,
-     6,
-     5,
-     4
-    ],
-    "D": [
-     13,
      9,
      6
     ],
-    "C": [
+    "H": [
+     14,
      12,
-     11,
-     4,
-     3
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     11,
-     10,
-     6,
+     9,
+     7,
      4
     ],
-    "H": [
-     12,
-     11,
-     8,
-     3,
-     2
-    ],
     "D": [
-     14,
+     9,
      6,
      2
     ],
@@ -4598,1720 +4609,1795 @@
      14
     ]
    },
-   "hp": 12,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     14,
-     9,
-     8,
-     7
-    ],
-    "H": [
-     14,
-     13,
-     11,
-     8,
-     2
-    ],
-    "D": [
-     11,
-     10
-    ],
-    "C": [
-     11,
-     8
-    ]
-   },
-   "hp": 14,
+   "hp": 13,
    "sp": 16,
    "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
+   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "4 spades: you are long in their suit yourself – pass."
+   }
   },
   {
-   "situation": "lov_aab_hj",
+   "situation": "naese_hj",
    "hand": {
     "S": [
-     14,
-     11,
-     9,
+     13,
+     12,
+     8,
      2
     ],
     "H": [
-     12,
+     14,
+     11,
      9,
-     8,
      3,
      2
     ],
     "D": [
-     14,
      11,
+     5
+    ],
+    "C": [
+     12,
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "Pas",
+   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "4 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     4
+    ],
+    "H": [
+     11,
+     9,
+     7,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     6,
      3
     ],
     "C": [
-     6
+     14
     ]
    },
-   "hp": 12,
-   "sp": 15,
+   "hp": 13,
+   "sp": 16,
    "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
+   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "4 spades: you are long in their suit yourself – pass."
+   }
   },
   {
-   "situation": "lov_aab_hj",
+   "situation": "naese_hj",
    "hand": {
     "S": [
      14,
+     13,
+     9,
+     5
+    ],
+    "H": [
      12,
+     8,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     5
+    ],
+    "C": [
      7,
      5
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "Pas",
+   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "4 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     6,
+     3
     ],
     "H": [
      12,
      11,
      10,
      6,
-     5
+     2
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     14,
+     7,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "Pas",
+   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "4 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     14,
+     9,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     4,
+     3
     ],
     "D": [
      4
     ],
     "C": [
-     13,
      10,
-     7
+     9,
+     3
     ]
    },
    "hp": 12,
    "sp": 15,
    "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
+   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "4 spades: you are long in their suit yourself – pass."
+   }
   },
   {
-   "situation": "lov_aab_hj",
+   "situation": "naese_hj",
    "hand": {
     "S": [
-     12,
+     13,
      10,
-     9,
-     2
+     5,
+     3
     ],
     "H": [
      14,
-     13,
-     8,
+     11,
+     9,
      7,
      6
     ],
     "D": [
-     6,
-     5
+     6
     ],
     "C": [
+     14,
+     12,
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "Pas",
+   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "4 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
      13,
+     11,
+     10,
+     2
+    ],
+    "H": [
+     13,
+     9,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     5,
      4
     ]
    },
    "hp": 12,
    "sp": 14,
    "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
+   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "4 spades: you are long in their suit yourself – pass."
+   }
   },
   {
-   "situation": "lov_aab_hj",
+   "situation": "naese_hj",
    "hand": {
     "S": [
      14,
      13,
-     11,
-     4
+     12,
+     7
     ],
     "H": [
-     13,
-     11,
+     14,
+     6,
+     5,
+     3,
+     2
+    ],
+    "D": [
      10,
+     9,
+     5
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "Pas",
+   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "4 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     10,
+     9,
      8,
      2
     ],
     "D": [
      11,
+     7,
+     5
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "Pas",
+   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "4 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     13,
+     10,
+     5,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     9,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     7
+    ],
+    "C": [
+     9
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "Pas",
+   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "4 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     6,
+     4
+    ],
+    "D": [
      6
     ],
     "C": [
+     12,
      7,
-     2
+     6
     ]
    },
-   "hp": 13,
-   "sp": 15,
+   "hp": 14,
+   "sp": 17,
    "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
+   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "4 spades: you are long in their suit yourself – pass."
+   }
   },
   {
    "situation": "lov_aab_hj",
    "hand": {
     "S": [
-     13,
-     12,
-     8
+     9,
+     7
     ],
     "H": [
      14,
-     10,
-     5,
-     4,
-     2
+     12,
+     11,
+     7,
+     6
     ],
     "D": [
-     10,
-     6,
-     4
+     13,
+     12,
+     6
     ],
     "C": [
-     13,
-     5
+     10,
+     5,
+     2
     ]
    },
    "hp": 12,
    "sp": 13,
    "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
   },
   {
    "situation": "lov_aab_hj",
    "hand": {
     "S": [
-     13,
-     3,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     11,
-     7,
-     5
-    ],
-    "D": [
-     11,
-     7,
-     5,
-     3
-    ],
-    "C": [
-     11
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     14,
-     13,
-     5
-    ],
-    "H": [
-     13,
-     12,
-     5,
-     3,
-     2
-    ],
-    "D": [
-     10,
-     5,
-     4,
-     3
-    ],
-    "C": [
-     9
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     14,
-     13,
-     6,
-     4
-    ],
-    "H": [
-     13,
-     7,
-     6,
-     3,
-     2
-    ],
-    "D": [
-     9,
-     6
-    ],
-    "C": [
-     13,
-     7
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     13,
-     9,
-     7
-    ],
-    "H": [
-     14,
-     11,
-     10,
-     7,
-     5
-    ],
-    "D": [
-     11
-    ],
-    "C": [
-     13,
-     12,
-     8,
-     2
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     8,
-     6,
-     5
-    ],
-    "H": [
-     14,
-     8,
-     7,
-     3,
-     2
-    ],
-    "D": [
-     13,
-     6,
-     4
-    ],
-    "C": [
-     14,
-     12
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     9,
-     2
-    ],
-    "H": [
-     13,
-     12,
-     7,
-     6,
-     4
-    ],
-    "D": [
-     14,
-     11,
-     9,
-     8
-    ],
-    "C": [
-     14,
-     10
-    ]
-   },
-   "hp": 14,
-   "sp": 16,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     14,
-     8
-    ],
-    "H": [
-     12,
-     10,
-     9,
-     6,
-     5
-    ],
-    "D": [
-     12,
-     4,
-     3,
-     2
-    ],
-    "C": [
-     14,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     10,
-     6
-    ],
-    "H": [
-     13,
-     12,
-     6,
-     4,
-     3
-    ],
-    "D": [
-     13,
-     11,
-     3
-    ],
-    "C": [
-     14,
-     3,
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     13,
-     8,
-     2
-    ],
-    "H": [
-     13,
-     11,
-     10,
-     5,
-     3
-    ],
-    "D": [
-     13,
-     6,
-     3
-    ],
-    "C": [
-     12,
-     11
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     3
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     10,
-     7
-    ],
-    "D": [
-     8,
-     7,
-     4,
-     3
-    ],
-    "C": [
-     13,
-     8,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     13,
-     9,
-     5
-    ],
-    "H": [
-     14,
-     12,
-     11,
-     10,
-     8,
-     2
-    ],
-    "D": [
-     4
-    ],
-    "C": [
-     14,
-     10,
-     9
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "3♥",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     11,
-     4
-    ],
-    "H": [
-     14,
-     12,
-     7,
-     5,
-     3,
-     2
-    ],
-    "D": [
-     11
-    ],
-    "C": [
-     14,
-     10,
-     8,
-     6
-    ]
-   },
-   "hp": 12,
-   "sp": 16,
-   "correct": "3♥",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     13,
-     7
-    ],
-    "H": [
-     14,
-     12,
-     11,
-     8,
-     6,
-     3
-    ],
-    "D": [
-     8
-    ],
-    "C": [
-     12,
      11,
      10,
      4
-    ]
-   },
-   "hp": 13,
-   "sp": 17,
-   "correct": "3♥",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     7,
-     4
     ],
     "H": [
-     13,
-     11,
-     10,
-     8,
-     4,
-     3
-    ],
-    "D": [
-     14,
-     11
-    ],
-    "C": [
-     14,
-     10,
-     8
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "3♥",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     13,
-     12
-    ],
-    "H": [
-     14,
-     12,
-     11,
-     10,
-     6,
-     2
-    ],
-    "D": [
-     10
-    ],
-    "C": [
-     10,
-     8,
-     6,
-     5
-    ]
-   },
-   "hp": 12,
-   "sp": 16,
-   "correct": "3♥",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
      12,
      10,
-     6
-    ],
-    "H": [
-     14,
-     13,
-     11,
-     7,
-     3,
-     2
-    ],
-    "D": [
-     11
-    ],
-    "C": [
-     11,
-     7,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♥",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     13,
-     11,
+     8,
      7,
      6
     ],
-    "H": [
-     13,
-     12,
-     9,
-     8,
-     5,
-     3
-    ],
     "D": [
-     13,
-     4
-    ],
-    "C": [
-     6
-    ]
-   },
-   "hp": 12,
-   "sp": 16,
-   "correct": "3♥",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     14,
-     13,
-     2
-    ],
-    "H": [
-     14,
-     12,
-     10,
-     9,
-     8,
-     2
-    ],
-    "D": [
-     7,
-     3,
-     2
-    ],
-    "C": [
-     8
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "3♥",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
      13
     ],
-    "H": [
-     13,
-     11,
-     10,
-     6,
-     3,
-     2
-    ],
-    "D": [
-     14,
-     12,
-     9,
-     7
-    ],
     "C": [
-     7,
-     5
-    ]
-   },
-   "hp": 13,
-   "sp": 17,
-   "correct": "3♥",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
      14,
-     5
-    ],
-    "H": [
      12,
-     10,
-     9,
-     8,
      5,
-     4
-    ],
-    "D": [
-     14,
-     8,
      2
-    ],
-    "C": [
-     13,
-     9
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "3♥",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     12,
-     10,
-     4
-    ],
-    "H": [
-     14,
-     13,
-     10,
-     8,
-     6,
-     4
-    ],
-    "D": [
-     3
-    ],
-    "C": [
-     14,
-     3,
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "3♥",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     14,
-     6,
-     5
-    ],
-    "H": [
-     13,
-     12,
-     7,
-     5,
-     4,
-     3
-    ],
-    "D": [
-     5
-    ],
-    "C": [
-     13,
-     10,
-     4
     ]
    },
    "hp": 12,
    "sp": 15,
-   "correct": "3♥",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     11
-    ],
-    "H": [
-     13,
-     9,
-     8,
-     7,
-     5,
-     4
-    ],
-    "D": [
-     14,
-     12,
-     9,
-     4
-    ],
-    "C": [
-     14,
-     5
-    ]
-   },
-   "hp": 14,
-   "sp": 18,
-   "correct": "3♥",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     10,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     10,
-     6,
-     5,
-     2
-    ],
-    "D": [
-     14,
-     9
-    ],
-    "C": [
-     12,
-     4,
-     3
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "3♥",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     5,
-     4
-    ],
-    "H": [
-     14,
-     13,
-     11,
-     9,
-     5,
-     4
-    ],
-    "D": [
-     13,
-     10
-    ],
-    "C": [
-     11,
-     5,
-     3
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
-   "correct": "3♥",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     13,
-     12,
-     10
-    ],
-    "H": [
-     14,
-     10,
-     6,
-     5,
-     3,
-     2
-    ],
-    "D": [
-     8
-    ],
-    "C": [
-     14,
-     8,
-     5
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "3♥",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     12,
-     7,
-     3
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     9,
-     4,
-     3
-    ],
-    "D": [
-     3,
-     2
-    ],
-    "C": [
-     13,
-     2
-    ]
-   },
-   "hp": 14,
-   "sp": 16,
-   "correct": "3♥",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     11
-    ],
-    "H": [
-     12,
-     11,
-     8,
-     5,
-     4,
-     2
-    ],
-    "D": [
-     12,
-     11,
-     7
-    ],
-    "C": [
-     14,
-     11,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♥",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     8,
-     6
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     10,
-     8,
-     7
-    ],
-    "D": [
-     14,
-     6,
-     5,
-     2
-    ],
-    "C": [
-     3
-    ]
-   },
-   "hp": 13,
-   "sp": 17,
-   "correct": "3♥",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     14,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     9,
-     8,
-     6,
-     5
-    ],
-    "D": [
-     11,
-     9,
-     3,
-     2
-    ],
-    "C": [
-     11
-    ]
-   },
-   "hp": 13,
-   "sp": 17,
-   "correct": "3♥",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     14,
-     13,
-     9,
-     7,
-     3
-    ],
-    "H": [
-     13
-    ],
-    "D": [
-     13,
-     6,
-     4
-    ],
-    "C": [
-     10,
-     9,
-     4,
-     3
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
    "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
   },
   {
-   "situation": "lov_aab_sp",
+   "situation": "lov_aab_hj",
    "hand": {
     "S": [
-     13,
-     10,
-     7,
-     6,
-     5
+     14,
+     3
     ],
     "H": [
+     13,
+     12,
+     11,
+     10,
      6
     ],
     "D": [
-     11,
-     6,
-     2
+     12,
+     4,
+     3
     ],
     "C": [
-     14,
-     13,
-     11,
-     5
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     12,
-     11,
-     10,
+     9,
      7,
-     3
-    ],
-    "H": [
-     14,
-     4
-    ],
-    "D": [
-     13,
-     10,
-     5,
-     4
-    ],
-    "C": [
-     13,
-     3
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     14,
-     12,
-     9,
-     6,
-     3
-    ],
-    "H": [
-     10,
-     3
-    ],
-    "D": [
-     13,
-     9,
-     7
-    ],
-    "C": [
-     13,
-     10,
-     4
+     6
     ]
    },
    "hp": 12,
    "sp": 13,
    "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
   },
   {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     14,
-     9,
-     7,
-     4,
-     3
-    ],
-    "H": [
-     9
-    ],
-    "D": [
-     13,
-     12,
-     6,
-     5
-    ],
-    "C": [
-     14,
-     10,
-     4
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
-     8,
-     4
-    ],
-    "H": [
-     14,
-     12,
-     11,
-     5
-    ],
-    "D": [
-     11,
-     5,
-     2
-    ],
-    "C": [
-     3
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     13,
-     12,
-     7,
-     6,
-     4
-    ],
-    "H": [
-     13,
-     6,
-     4,
-     2
-    ],
-    "D": [
-     13,
-     9,
-     6
-    ],
-    "C": [
-     13
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_sp",
+   "situation": "lov_aab_hj",
    "hand": {
     "S": [
      14,
      9,
      8,
-     6,
-     2
-    ],
-    "H": [
-     14,
-     12,
-     9,
      5
     ],
-    "D": [
-     12
-    ],
-    "C": [
-     12,
-     5,
-     4
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     14,
-     10,
-     7,
-     5,
-     2
-    ],
     "H": [
      14,
-     10,
+     12,
+     6,
+     5,
      3
     ],
     "D": [
-     14,
      12,
-     2
-    ],
-    "C": [
-     8,
-     2
-    ]
-   },
-   "hp": 14,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     11,
-     4
-    ],
-    "H": [
-     12,
-     9,
-     6,
-     4
-    ],
-    "D": [
      10,
-     8,
-     6
+     3
     ],
     "C": [
-     12
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
-     7,
-     6
-    ],
-    "H": [
-     11
-    ],
-    "D": [
-     13,
-     9,
-     5,
-     4
-    ],
-    "C": [
-     13,
-     11,
-     6
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     13,
-     12,
-     8,
-     6,
-     4
-    ],
-    "H": [
-     9,
-     8,
-     5
-    ],
-    "D": [
-     12
-    ],
-    "C": [
-     14,
-     11,
-     7,
      2
     ]
    },
    "hp": 12,
    "sp": 15,
    "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
   },
   {
-   "situation": "lov_aab_sp",
+   "situation": "lov_aab_hj",
    "hand": {
     "S": [
      14,
-     13,
      12,
+     11,
+     6
+    ],
+    "H": [
+     13,
+     7,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     13,
+     10,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     12,
+     9,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     5,
+     4
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     13,
+     10,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     13,
      8,
      7
     ],
     "H": [
+     13,
+     12,
      10,
      7,
+     2
+    ],
+    "D": [
+     9,
+     7,
+     2
+    ],
+    "C": [
+     14,
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     12,
+     9,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10,
+     3
+    ],
+    "D": [
+     11,
+     9,
+     3
+    ],
+    "C": [
+     12,
+     10
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     14,
+     9,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     9,
+     6
+    ],
+    "D": [
+     11,
+     9,
+     5
+    ],
+    "C": [
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     14,
+     8,
+     3
+    ],
+    "H": [
+     13,
+     8,
+     7,
+     6,
      5
     ],
     "D": [
+     13,
+     7,
+     4
+    ],
+    "C": [
      14,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     11,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     4,
+     2
+    ],
+    "D": [
+     12,
+     6
+    ],
+    "C": [
+     14,
+     11,
+     6,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     12,
+     11,
+     9,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     5,
+     2
+    ],
+    "C": [
+     13,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     6,
+     4
+    ],
+    "D": [
+     6,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     11
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10
+    ],
+    "H": [
+     11,
+     10,
+     8,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     11,
+     10
+    ],
+    "C": [
+     11,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     11,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     10,
+     7,
+     2
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     14,
+     10
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     8,
+     6
+    ],
+    "D": [
+     10,
      9
     ],
     "C": [
-     10,
+     12,
      9,
+     6,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     9,
+     5,
      4
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     6,
+     4
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     13,
+     7,
+     5,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     4
+    ],
+    "H": [
+     13,
+     11,
+     9,
+     7,
+     4
+    ],
+    "D": [
+     10,
+     7
+    ],
+    "C": [
+     14,
+     11,
+     8
     ]
    },
    "hp": 13,
    "sp": 14,
    "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
   },
   {
-   "situation": "lov_aab_sp",
+   "situation": "lov_aab_hj",
    "hand": {
     "S": [
-     13,
-     11,
-     10,
-     6,
-     2
-    ],
-    "H": [
      14,
-     5
-    ],
-    "D": [
-     13,
-     8,
-     6,
-     4
-    ],
-    "C": [
-     12,
-     8
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
      12,
      10,
-     9,
+     6
+    ],
+    "H": [
+     13,
      7,
-     5
-    ],
-    "H": [
-     14
-    ],
-    "D": [
-     12,
-     11,
-     8
-    ],
-    "C": [
-     13,
-     10,
-     9,
-     8
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
-     9,
-     2
-    ],
-    "H": [
+     5,
      3,
      2
     ],
     "D": [
-     14,
-     12,
-     9,
-     6
+     13
     ],
     "C": [
      12,
-     6
+     7,
+     4
     ]
    },
    "hp": 14,
-   "sp": 16,
+   "sp": 17,
    "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
   },
   {
-   "situation": "lov_aab_sp",
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     14,
+     12,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     9,
+     5
+    ],
+    "C": [
+     11,
+     8,
+     6,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     11,
+     9,
+     8,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     7,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     7,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     13,
+     11,
+     6,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "3♥",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     8,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     7,
+     4,
+     3
+    ],
+    "D": [
+     12,
+     3
+    ],
+    "C": [
+     14,
+     8
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     10,
+     7,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     7,
+     6,
+     5
+    ],
+    "D": [
+     12,
+     11,
+     5
+    ],
+    "C": [
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
    "hand": {
     "S": [
      13,
+     11,
+     10
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     8,
+     6,
+     4
+    ],
+    "D": [
+     12,
+     9
+    ],
+    "C": [
+     12,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     11,
+     10,
+     8,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     14,
      12,
      11,
+     9
+    ],
+    "C": [
+     13,
+     12
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
      9,
      6
     ],
     "H": [
-     12,
-     9
-    ],
-    "D": [
-     12,
-     8,
+     14,
+     13,
+     11,
+     9,
      6,
      2
     ],
+    "D": [
+     14,
+     8,
+     4
+    ],
     "C": [
-     12,
-     3
+     7,
+     6
     ]
    },
    "hp": 12,
    "sp": 14,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
+   "correct": "3♥",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♥."
+   }
   },
   {
-   "situation": "lov_aab_sp",
+   "situation": "lov_aab_hj",
    "hand": {
     "S": [
-     12,
-     11,
-     8,
-     7,
-     3
+     10,
+     8
     ],
     "H": [
-     12,
-     9
+     14,
+     11,
+     10,
+     6,
+     4,
+     2
     ],
     "D": [
      14,
+     13,
      3
     ],
     "C": [
+     10,
+     9
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "3♥",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     11
+    ],
+    "H": [
+     14,
      13,
      11,
+     10,
      7,
+     5
+    ],
+    "D": [
+     13,
+     9
+    ],
+    "C": [
+     11,
+     10,
+     9,
      3
     ]
    },
    "hp": 13,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
+   "sp": 17,
+   "correct": "3♥",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♥."
+   }
   },
   {
-   "situation": "lov_aab_sp",
+   "situation": "lov_aab_hj",
    "hand": {
     "S": [
-     13,
-     10,
-     9,
-     7,
-     3
+     14,
+     13
     ],
     "H": [
-     9,
-     8
-    ],
-    "D": [
-     13,
      12,
      11,
+     10,
+     9,
+     8,
+     6
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     13,
+     11,
+     7,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "3♥",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     4
+    ],
+    "H": [
+     14,
+     11,
+     7,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     12,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     2
+    ],
+    "H": [
+     14,
+     9,
+     8,
+     7,
+     5,
      3
+    ],
+    "D": [
+     6,
+     2
     ],
     "C": [
      14,
+     13,
+     12,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "3♥",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     11,
+     10,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     9,
+     7,
+     6
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     14,
+     11,
+     10
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♥",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9,
+     8
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     8,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     4
+    ],
+    "C": [
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "3♥",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     9,
+     8,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     9,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     4
+    ],
+    "C": [
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "3♥",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     6,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     9,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     4
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "3♥",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     13,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     12,
+     8,
+     5,
+     2
+    ],
+    "C": [
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "3♥",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     13,
+     9,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     9,
+     6,
+     4
+    ],
+    "D": [
+     11,
+     5
+    ],
+    "C": [
+     8,
      6
     ]
    },
    "hp": 13,
    "sp": 15,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
+   "correct": "3♥",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     7
+    ],
+    "C": [
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "3♥",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♥."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     10,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     10,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "3♥",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♥.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♥."
+   }
   },
   {
    "situation": "lov_aab_sp",
    "hand": {
     "S": [
-     10,
-     9,
+     14,
      8,
-     5,
-     2
+     7,
+     6,
+     5
     ],
     "H": [
      13
     ],
     "D": [
-     14,
-     13,
-     8
+     12,
+     11,
+     9,
+     5
     ],
     "C": [
-     12,
-     9,
-     6,
+     14,
+     7,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     13,
+     11,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     5,
      2
+    ],
+    "D": [
+     12,
+     11,
+     7,
+     6
+    ],
+    "C": [
+     14,
+     11
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8,
+     7,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     5
+    ],
+    "D": [
+     11,
+     8,
+     7
+    ],
+    "C": [
+     8
     ]
    },
    "hp": 12,
    "sp": 15,
    "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     14,
-     7,
-     6,
-     5,
-     4,
-     2
-    ],
-    "H": [
-     7,
-     4
-    ],
-    "D": [
-     14
-    ],
-    "C": [
-     14,
-     12,
-     5,
-     2
-    ]
-   },
-   "hp": 14,
-   "sp": 18,
-   "correct": "3♠",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠."
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
   },
   {
    "situation": "lov_aab_sp",
@@ -6319,359 +6405,164 @@
     "S": [
      14,
      11,
-     10,
      9,
      5,
      4
     ],
     "H": [
-     13,
-     5
+     14,
+     6
     ],
     "D": [
-     14,
-     5,
-     4,
+     12,
+     10,
+     7,
      3
     ],
     "C": [
-     2
+     11,
+     8
     ]
    },
    "hp": 12,
-   "sp": 16,
-   "correct": "3♠",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠."
+   "sp": 14,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
   },
   {
    "situation": "lov_aab_sp",
    "hand": {
     "S": [
      14,
-     12,
      11,
-     9,
      8,
-     7
-    ],
-    "H": [
-     9,
-     3
-    ],
-    "D": [
-     8
-    ],
-    "C": [
-     14,
-     12,
-     7,
-     5
-    ]
-   },
-   "hp": 13,
-   "sp": 17,
-   "correct": "3♠",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     14,
-     10,
-     7,
-     5,
      4,
      3
     ],
     "H": [
-     9
+     3
     ],
     "D": [
-     13,
-     8,
-     7,
-     6
+     11,
+     4,
+     2
     ],
     "C": [
      14,
+     12,
+     10,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     10,
+     9,
+     7,
+     6,
+     2
+    ],
+    "H": [
+     13,
+     8,
+     6
+    ],
+    "D": [
+     8,
+     5
+    ],
+    "C": [
+     14,
+     13,
      12
     ]
    },
-   "hp": 13,
-   "sp": 17,
-   "correct": "3♠",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠."
+   "hp": 12,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
   },
   {
    "situation": "lov_aab_sp",
    "hand": {
     "S": [
-     14,
-     11,
-     9,
-     6,
-     4,
-     3
-    ],
-    "H": [
-     14,
-     12,
-     8
-    ],
-    "D": [
-     12,
-     9
-    ],
-    "C": [
-     3,
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "3♠",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     11,
-     9,
-     7,
-     6,
-     5,
-     3
-    ],
-    "H": [
-     14
-    ],
-    "D": [
-     9,
-     5,
-     2
-    ],
-    "C": [
      14,
      13,
+     11,
+     7,
+     6
+    ],
+    "H": [
      5
+    ],
+    "D": [
+     13,
+     11,
+     6,
+     3
+    ],
+    "C": [
+     10,
+     9,
+     8
     ]
    },
    "hp": 12,
    "sp": 15,
-   "correct": "3♠",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠."
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
   },
   {
    "situation": "lov_aab_sp",
    "hand": {
     "S": [
      14,
-     13,
-     10,
-     8,
-     7,
-     2
-    ],
-    "H": [
-     13,
-     11,
-     4
-    ],
-    "D": [
-     11,
-     8,
-     5
-    ],
-    "C": [
-     12
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "3♠",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     13,
-     9,
-     8,
-     7,
-     5,
-     4
-    ],
-    "H": [
      12,
-     7,
-     6
-    ],
-    "D": [
-     14,
-     10,
-     9
-    ],
-    "C": [
-     14
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "3♠",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     14,
-     13,
      9,
      8,
+     4
+    ],
+    "H": [
+     11,
      6,
-     5
-    ],
-    "H": [
-     7
-    ],
-    "D": [
-     7,
-     2
-    ],
-    "C": [
-     14,
-     12,
-     11,
-     2
-    ]
-   },
-   "hp": 14,
-   "sp": 18,
-   "correct": "3♠",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     14,
-     13,
-     9,
-     8,
-     4,
-     2
-    ],
-    "H": [
-     12,
-     8,
-     6
-    ],
-    "D": [
-     7
-    ],
-    "C": [
-     14,
-     9,
-     8
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "3♠",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11,
-     9,
-     8,
-     3
-    ],
-    "H": [
-     11
-    ],
-    "D": [
-     13,
-     8,
-     7
-    ],
-    "C": [
-     11,
      5,
-     3
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♠",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
+     2
+    ],
+    "D": [
      14,
-     13,
-     11,
-     9,
-     8,
-     6
-    ],
-    "H": [
-     13,
-     2
-    ],
-    "D": [
-     8
-    ],
-    "C": [
-     13,
-     10,
-     6,
-     4
-    ]
-   },
-   "hp": 14,
-   "sp": 18,
-   "correct": "3♠",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     12,
-     7,
-     5,
-     4,
-     3,
-     2
-    ],
-    "H": [
-     12,
-     5
-    ],
-    "D": [
      12,
      10
     ],
     "C": [
-     14,
-     12,
-     7
+     8
     ]
    },
-   "hp": 12,
-   "sp": 14,
-   "correct": "3♠",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠."
+   "hp": 13,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
   },
   {
    "situation": "lov_aab_sp",
@@ -6680,28 +6571,955 @@
      14,
      11,
      10,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     10,
+     4
+    ],
+    "D": [
+     7
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     8
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     13,
+     12,
      8,
+     7,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     5
+    ],
+    "D": [
+     9,
+     7
+    ],
+    "C": [
+     12,
+     10
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8,
+     7,
+     5
+    ],
+    "H": [
+     13,
+     5,
+     2
+    ],
+    "D": [
+     11,
+     9,
+     5,
+     2
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     14,
+     9,
+     6,
      5,
      2
     ],
     "H": [
+     14,
      13,
-     4,
-     2
+     11,
+     10
     ],
     "D": [
      12,
+     4
+    ],
+    "C": [
+     9,
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10,
+     7,
+     2
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     14,
+     13,
+     9
+    ],
+    "C": [
+     12,
+     10,
+     8,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     14,
+     11,
+     9,
+     5,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     8,
+     3
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     14,
+     7,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     6
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     12,
+     10,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     12,
+     11,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     9,
+     6,
+     3
+    ],
+    "D": [
+     13,
+     8
+    ],
+    "C": [
+     13,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10,
+     7,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     5,
+     3
+    ],
+    "D": [
+     9
+    ],
+    "C": [
+     13,
+     8,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     13,
+     9,
+     8,
+     5,
+     4
+    ],
+    "H": [
+     8
+    ],
+    "D": [
+     14,
+     12,
+     7
+    ],
+    "C": [
+     12,
+     11,
+     6,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11,
+     4
+    ],
+    "H": [
+     8,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     12,
+     10,
+     3
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     13,
+     9,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     6,
+     5
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     12,
+     10,
+     8,
+     2
+    ],
+    "D": [
      11
     ],
     "C": [
      13,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     10,
+     6,
+     5
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     6
+    ],
+    "D": [
+     13,
+     11
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     11,
+     10,
+     8,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     9,
+     7,
+     2
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     4
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     13,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     10,
+     9
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     9,
+     6,
+     2
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     11,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♠",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     9,
+     8,
+     2
+    ],
+    "D": [
+     14,
+     7
+    ],
+    "C": [
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     9,
+     8,
+     2
+    ],
+    "H": [
+     12,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     7,
+     5
+    ],
+    "C": [
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     4,
+     3
+    ],
+    "D": [
+     12,
+     3
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     4,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     8,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     10
+    ],
+    "C": [
+     10
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♠",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     8,
+     5,
+     2
+    ],
+    "H": [
+     11,
+     10,
+     3
+    ],
+    "D": [
+     13,
+     6,
+     2
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     10
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     9,
+     7,
+     3
+    ],
+    "H": [
+     13,
+     9,
+     6,
+     5
+    ],
+    "D": [
+     12,
+     2
+    ],
+    "C": [
+     10
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "3♠",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11,
+     5,
+     2
+    ],
+    "H": [
+     13,
+     10,
+     5,
+     3
+    ],
+    "D": [
+     9,
+     7
+    ],
+    "C": [
+     10
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     9
+    ],
+    "D": [
+     14,
+     11,
+     4,
+     2
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     12,
+     9,
+     8,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     6,
+     2
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     14,
      9
     ]
    },
    "hp": 14,
-   "sp": 16,
+   "sp": 18,
    "correct": "3♠",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠."
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♠."
+   }
   },
   {
    "situation": "lov_aab_sp",
@@ -6709,179 +7527,98 @@
     "S": [
      14,
      12,
-     9,
-     6,
-     5,
-     4
-    ],
-    "H": [
-     14,
-     13,
-     2
-    ],
-    "D": [
-     11,
-     9,
-     5
-    ],
-    "C": [
-     2
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "3♠",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     14,
-     13,
-     11,
      8,
-     5,
-     4
-    ],
-    "H": [
-     8
-    ],
-    "D": [
-     6,
-     2
-    ],
-    "C": [
-     13,
-     11,
-     10,
-     6
-    ]
-   },
-   "hp": 12,
-   "sp": 16,
-   "correct": "3♠",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     13,
-     12,
-     10,
-     9,
-     7,
-     5
-    ],
-    "H": [
-     9,
      5,
      4,
      3
     ],
-    "D": [
+    "H": [
      13,
-     12
+     5
+    ],
+    "D": [
+     10,
+     2
     ],
     "C": [
-     13
+     14,
+     6,
+     5
     ]
    },
    "hp": 13,
-   "sp": 17,
+   "sp": 15,
    "correct": "3♠",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠."
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♠."
+   }
   },
   {
    "situation": "lov_aab_sp",
    "hand": {
     "S": [
      14,
-     13,
+     11,
+     10,
      7,
-     5,
-     4,
-     3
+     6,
+     5
     ],
     "H": [
-     10
+     13
     ],
     "D": [
-     9,
+     13,
+     12,
      6
     ],
     "C": [
-     13,
-     12,
-     8,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 16,
-   "correct": "3♠",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     10,
      9,
-     8,
-     5,
-     4,
-     3
-    ],
-    "H": [
-     8
-    ],
-    "D": [
-     14,
-     13
-    ],
-    "C": [
-     14,
-     11,
-     8,
-     3
-    ]
-   },
-   "hp": 12,
-   "sp": 16,
-   "correct": "3♠",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠."
-  },
-  {
-   "situation": "lov_aab_sp",
-   "hand": {
-    "S": [
-     12,
-     9,
-     8,
      7,
-     4,
-     2
-    ],
-    "H": [
-     8
-    ],
-    "D": [
-     12,
-     6,
-     2
-    ],
-    "C": [
-     14,
-     13,
-     12
+     5
     ]
    },
    "hp": 13,
    "sp": 16,
    "correct": "3♠",
-   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠."
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♠."
+   }
+  },
+  {
+   "situation": "lov_aab_sp",
+   "hand": {
+    "S": [
+     14,
+     11,
+     6,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     10,
+     6,
+     4
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     14,
+     11,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♠",
+   "why": "6 trumf + makkers 3 = 9: Loven siger 3-trinnet – 3♠.",
+   "en": {
+    "why": "6 trumps + partner's 3 = 9: the Law says the three level – 3♠."
+   }
   }
  ]
 }

@@ -10,15 +10,18 @@ Antagelser: åbner tæller støttepoint (hp + korthed 5/3/1 + 1 pr. trumf ud ove
 omvendt Bergen; tabere tælles på de tre øverste pladser (es, konge, dame er vindere); trial bid
 meldes billigst (over 1♥ – 2♥ er 2♠ trial bid). Svarers »ny farve = hjælp dér« er ikke med.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool
-from .omvendt_bergen import opener_sp, sp_detail
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, build_pool, tx
+from .omvendt_bergen import opener_sp, sp_detail, sp_detail_en
 
 ORDER = ['C', 'D', 'H', 'S']
 PAS = ["Modstander", "Pas"]
-BONUS = {"q": "Hvad beder et trial bid om?",
-         "correct": "Hjælp i den meldte farve",
-         "options": ["Hjælp i den meldte farve", "Støtte til en ny trumffarv", "Kontrol til slem"],
-         "why": "Trial bid meldes i en svag farve (3+ kort, 2–3 tabere). Makker melder 4M med hjælp dér – honnør, korthed eller 4 kort – og 3M uden."}
+C = tx("Hjælp i den meldte farve", "Help in the suit bid")
+BONUS = {"q": tx("Hvad beder et trial bid om?", "What does a trial bid ask for?"),
+         "correct": C,
+         "options": [C, tx("Støtte til en ny trumffarv", "Support for a new trump suit"), tx("Kontrol til slem", "Controls for slam")],
+         "why": tx("Trial bid meldes i en svag farve (3+ kort, 2–3 tabere). Makker melder 4M med hjælp dér – honnør, korthed eller 4 kort – og 3M uden.",
+                   "A trial bid is made in a weak suit (3+ cards, 2–3 losers). Partner bids 4M with help there – an honour, "
+                   "shortness or four cards – and 3M without.")}
 
 def losers(cards):
     top = cards[:3]
@@ -36,19 +39,22 @@ def opener(M):
             return None
         sp = opener_sp(hand, hp, M)
         pts = f"{sp} sp ({sp_detail(hand, hp, M)})" if sp != hp else f"{sp} sp"
+        pe = f"{sp} support points ({sp_detail_en(hand, hp, M)})" if sp != hp else f"{sp} support points"
         if sp > 20:
             return None
         if sp <= 14:
-            return "Pas", f"{pts}: pas – udgang er udelukket over for 6–9."
+            return "Pas", tx(f"{pts}: pas – udgang er udelukket over for 6–9.", f"{pe}: pass – game is out of reach opposite 6–9.")
         if sp >= 17:
-            return f"4{sym}", f"{pts}: 4{sym} direkte (17+)."
+            return f"4{sym}", tx(f"{pts}: 4{sym} direkte (17+).", f"{pe}: 4{sym} directly (17+).")
         weak = [s for s in SUITS if s != M and L[s] >= 3 and 2 <= losers(hand[s]) <= 3]
         if not weak:
-            return f"3{sym}", f"{pts}, men ingen sidefarve med 2–3 tabere: 3{sym} – invit."
+            return f"3{sym}", tx(f"{pts}, men ingen sidefarve med 2–3 tabere: 3{sym} – invit.",
+                                 f"{pe}, but no side suit with 2–3 losers: 3{sym} – invitational.")
         most = max(losers(hand[s]) for s in weak)
         s = min((x for x in weak if losers(hand[x]) == most), key=lambda x: (int(cheapest(M, x)[0]), ORDER.index(x)))
         call = cheapest(M, s)
-        return call, f"{pts} og {most} tabere i {SUIT_NAME[s]} – den svageste farve: {call} er trial bid og beder om hjælp dér."
+        return call, tx(f"{pts} og {most} tabere i {SUIT_NAME[s]} – den svageste farve: {call} er trial bid og beder om hjælp dér.",
+                        f"{pe} and {most} losers in {SUIT_NAME_EN[s]} – the weakest suit: {call} is a trial bid and asks for help there.")
     return classify
 
 def helps(cards):
@@ -63,8 +69,10 @@ def responder(M, s):
         cards = hand[s]
         if helps(cards):
             why = ("korthed" if len(cards) <= 1 else "4 kort" if len(cards) >= 4 else "honnør")
-            return f"4{sym}", f"Hjælp i {SUIT_NAME[s]} ({why}): 4{sym}."
-        return f"3{sym}", f"Ingen hjælp i {SUIT_NAME[s]} (ingen honnør, 2–3 små): 3{sym}."
+            why_en = ("shortness" if len(cards) <= 1 else "4 cards" if len(cards) >= 4 else "an honour")
+            return f"4{sym}", tx(f"Hjælp i {SUIT_NAME[s]} ({why}): 4{sym}.", f"Help in {SUIT_NAME_EN[s]} ({why_en}): 4{sym}.")
+        return f"3{sym}", tx(f"Ingen hjælp i {SUIT_NAME[s]} (ingen honnør, 2–3 små): 3{sym}.",
+                             f"No help in {SUIT_NAME_EN[s]} (no honour, 2–3 small cards): 3{sym}.")
     return classify
 
 SITUATIONS, CLASSIFIERS, SAMPLERS, PER_CALL = {}, {}, {}, {}

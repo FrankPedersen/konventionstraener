@@ -11,7 +11,7 @@ Efter Michaels over 1♣/1♦ er 2NT relæ med lige længde i majorerne.
 Antagelser: under 8 hp passer man; 16 hp (meldes naturligt) er ikke med; »god støtte« = 4+ kort;
 svar efter Michaels over 1♥/1♠ er ikke med (2NT-spørgsmålets styrke står ikke i kortet).
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, build_pool, tx
 
 ORDER = ['C', 'D', 'H', 'S']
 UNUSUAL = {'C': ('D', 'H'), 'D': ('C', 'H'), 'H': ('C', 'D'), 'S': ('C', 'D')}
@@ -29,25 +29,29 @@ def overcall(opening, convention):
             return None
         a, b = pair
         desc = f"{L[a]} {SUIT_NAME[a]} og {L[b]} {SUIT_NAME[b]}"
+        desc_en = f"{L[a]} {SUIT_NAME_EN[a]} and {L[b]} {SUIT_NAME_EN[b]}"
         if convention == 'michaels':
             if opening in ('C', 'D'):
                 ok = pair == ('H', 'S')
-                what = "begge majorer"
+                what, what_en = "begge majorer", "both majors"
             else:
                 other = 'S' if opening == 'H' else 'H'
                 ok = other in pair and (set(pair) - {other}) <= {'C', 'D'}
-                what = f"{SUIT_NAME[other]} og en minor"
+                what, what_en = f"{SUIT_NAME[other]} og en minor", f"{SUIT_NAME_EN[other]} and a minor"
             call = f"2{osym}"
         else:
             ok = pair == UNUSUAL[opening]
             what = f"{SUIT_NAME[UNUSUAL[opening][0]]} og {SUIT_NAME[UNUSUAL[opening][1]]}"
+            what_en = f"{SUIT_NAME_EN[UNUSUAL[opening][0]]} and {SUIT_NAME_EN[UNUSUAL[opening][1]]}"
             call = "2NT"
         if not ok:
             return None
         if hp < 8:
-            return "Pas", f"{desc}, men kun {hp} hp – kravet er 8–15 eller 17+. Pas."
+            return "Pas", tx(f"{desc}, men kun {hp} hp – kravet er 8–15 eller 17+. Pas.",
+                             f"{desc_en}, but only {hp} HCP – the requirement is 8–15 or 17+. Pass.")
         strength = "8–15" if hp <= 15 else "17+"
-        return call, f"{desc} og {hp} hp ({strength}): {call} viser {what}, mindst 5-5."
+        return call, tx(f"{desc} og {hp} hp ({strength}): {call} viser {what}, mindst 5-5.",
+                        f"{desc_en} and {hp} HCP ({strength}): {call} shows {what_en}, at least 5-5.")
     return classify
 
 def cheapest(after_rank, s):
@@ -70,34 +74,44 @@ def advance(opening, shown, after):
             own = [s for s in ORDER if s not in shown and s != opening and L[s] >= 6]
             if own and L[a] <= 2 and L[b] <= 2:
                 call = cheapest(after_rank, own[0])
-                return call, f"{hp} hp og god {L[own[0]]}-farve i {SUIT_NAME[own[0]]} uden tilpasning: {call} – naturligt, ikke krav."
+                return call, tx(f"{hp} hp og god {L[own[0]]}-farve i {SUIT_NAME[own[0]]} uden tilpasning: {call} – naturligt, ikke krav.",
+                                f"{hp} HCP and a good {L[own[0]]}-card suit in {SUIT_NAME_EN[own[0]]} without a fit: {call} – natural, non-forcing.")
             call = f"3{osym}"
-            return call, f"{hp} hp: cuebid i deres farve ({call}) er krav og beder makker beskrive videre."
+            return call, tx(f"{hp} hp: cuebid i deres farve ({call}) er krav og beder makker beskrive videre.",
+                            f"{hp} HCP: the cue-bid in their suit ({call}) is forcing and asks partner to describe further.")
         longer = a if L[a] > L[b] else b if L[b] > L[a] else None
         if max(L[a], L[b]) >= 4 and hp >= 6:
             if longer is None:
                 return None
             jump = cheapest(after_rank, longer)
             jump = f"{int(jump[0]) + 1}{jump[1:]}"
-            return jump, f"{L[longer]} {SUIT_NAME[longer]} og {hp} hp: spring til {jump} er spærrende med god støtte."
+            return jump, tx(f"{L[longer]} {SUIT_NAME[longer]} og {hp} hp: spring til {jump} er spærrende med god støtte.",
+                            f"{L[longer]} {SUIT_NAME_EN[longer]} and {hp} HCP: the jump to {jump} is preemptive with good support.")
         if longer is None:
             if after != "2NT" and set(shown) == {'H', 'S'}:
-                return "2NT", f"Lige mange hjerter og spar ({L['H']}-{L['S']}): 2NT er relæ."
+                return "2NT", tx(f"Lige mange hjerter og spar ({L['H']}-{L['S']}): 2NT er relæ.",
+                                 f"As many hearts as spades ({L['H']}-{L['S']}): 2NT is a relay.")
             call = cheapest(after_rank, a)
-            return call, f"Lige lange farver ({L[a]}-{L[b]}) og svag hånd: præference på laveste niveau – {call}."
+            return call, tx(f"Lige lange farver ({L[a]}-{L[b]}) og svag hånd: præference på laveste niveau – {call}.",
+                            f"Equal length ({L[a]}-{L[b]}) and a weak hand: preference at the lowest level – {call}.")
         call = cheapest(after_rank, longer)
-        return call, f"Svag hånd ({hp} hp) med flest {SUIT_NAME[longer]}: præference på laveste niveau – {call}."
+        return call, tx(f"Svag hånd ({hp} hp) med flest {SUIT_NAME[longer]}: præference på laveste niveau – {call}.",
+                        f"Weak hand ({hp} HCP) with more {SUIT_NAME_EN[longer]}: preference at the lowest level – {call}.")
     return classify
 
+C_MICH = tx("8–15 hp eller 17+", "8–15 HCP or 17+")
+C_SVAR = tx("Vælg farve med svag hånd, cuebid med god", "Choose a suit with a weak hand, cue-bid with a good one")
 BONUS = {
-    "michaels": {"q": "Hvilken styrke viser Michaels og usædvanlig 2NT?",
-                 "correct": "8–15 hp eller 17+",
-                 "options": ["8–15 hp eller 17+", "10–16 hp", "Altid under 10 hp"],
-                 "why": "Styrken er delt: 8–15 eller 17+. Med mellemstyrken (ca. 16) og 5-5 meldes den bedste farve naturligt."},
-    "svar": {"q": "Hvad er grundreglen for svarer?",
-             "correct": "Vælg farve med svag hånd, cuebid med god",
-             "options": ["Vælg farve med svag hånd, cuebid med god", "Pas med svag hånd", "Meld altid sans med hold"],
-             "why": "Indmelder har mindst ti kort i to farver: vælg farve på laveste niveau med en svag hånd, cuebid med 10+."},
+    "michaels": {"q": tx("Hvilken styrke viser Michaels og usædvanlig 2NT?", "What strength do Michaels and the Unusual 2NT show?"),
+                 "correct": C_MICH,
+                 "options": [C_MICH, tx("10–16 hp", "10–16 HCP"), tx("Altid under 10 hp", "Always below 10 HCP")],
+                 "why": tx("Styrken er delt: 8–15 eller 17+. Med mellemstyrken (ca. 16) og 5-5 meldes den bedste farve naturligt.",
+                           "The strength is split: 8–15 or 17+. With the middle strength (about 16) and 5-5, bid the best suit naturally.")},
+    "svar": {"q": tx("Hvad er grundreglen for svarer?", "What is the basic rule for the advancer?"),
+             "correct": C_SVAR,
+             "options": [C_SVAR, tx("Pas med svag hånd", "Pass with a weak hand"), tx("Meld altid sans med hold", "Always bid notrump with a stopper")],
+             "why": tx("Indmelder har mindst ti kort i to farver: vælg farve på laveste niveau med en svag hånd, cuebid med 10+.",
+                       "The overcaller has at least ten cards in two suits: choose a suit at the lowest level with a weak hand, cue-bid with 10+.")},
 }
 
 PAS = ["Modstander", "Pas"]

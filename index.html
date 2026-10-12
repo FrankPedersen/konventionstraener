@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@800&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&text=%E2%99%A0%E2%99%A5%E2%99%A6%E2%99%A3&display=swap">
 <link rel="stylesheet" href="assets/site.css">
+<script src="assets/lang.js"></script>
 <style>
   .grouphead{ font-weight:600; font-size:1.25rem; letter-spacing:-.01em; margin:var(--sg-space-2xl) 0 0; }
   .roles{ display:flex; gap:var(--sg-space-xs); flex-wrap:wrap; margin-top:var(--sg-space-md); }
@@ -30,31 +31,31 @@
 <body>
 <header class="site-head"><div class="in">
   <a class="brand" href="./">Konventionstræner</a>
-  <nav><a href="#traen">Træn</a><a href="viden/">Viden</a></nav>
+  <nav><a href="#traen" data-en="Train">Træn</a><a href="viden/" data-en="Reference">Viden</a><button class="lang" id="langBtn" type="button">English</button></nav>
 </div></header>
 
 <div class="wrap">
   <section class="hero">
-    <p class="eyebrow">Makker 1 &amp; mig · Makker 2 &amp; mig</p>
-    <h1>Træn konventionerne, til de sidder</h1>
-    <p class="deck">Vælg system og konvention, og få 8 tilfældige meldeforløb. Nogle gange melder du ind eller åbner, andre gange svarer du makker. Under <a href="viden/">Viden</a> ligger aftalerne og notaterne.</p>
+    <p class="eyebrow" data-en="Partner 1 &amp; me · Partner 2 &amp; me">Makker 1 &amp; mig · Makker 2 &amp; mig</p>
+    <h1 data-en="Practise the conventions until they stick">Træn konventionerne, til de sidder</h1>
+    <p class="deck" data-en="Choose a system and a convention, and get 8 random auctions. Sometimes you overcall or open, other times you respond to partner. Under &lt;a href=&quot;viden/&quot;&gt;Reference&lt;/a&gt; you will find the agreements and notes – in Danish.">Vælg system og konvention, og få 8 tilfældige meldeforløb. Nogle gange melder du ind eller åbner, andre gange svarer du makker. Under <a href="viden/">Viden</a> ligger aftalerne og notaterne.</p>
     <div class="tray" aria-hidden="true">
-      <span class="bc">1NT</span><span class="bc">2<span class="su su-c">♣</span></span><span class="bc pas">pas</span><span class="bc">?</span>
+      <span class="bc">1NT</span><span class="bc">2<span class="su su-c">♣</span></span><span class="bc pas" data-en="pass">pas</span><span class="bc">?</span>
     </div>
   </section>
 
   <section id="traen">
-    <h2>Træn</h2>
-    <p class="small">Systemerne har hver deres aftaler – også når konventionen hedder det samme, fx 2 over 1 og Bekkasin.</p>
+    <h2 data-en="Train">Træn</h2>
+    <p class="small" data-en="Each system has its own agreements – even when the convention has the same name, such as 2 over 1 and Bekkasin.">Systemerne har hver deres aftaler – også når konventionen hedder det samme, fx 2 over 1 og Bekkasin.</p>
     <div class="systabs" role="tablist" aria-label="System" id="systabs"></div>
     <p class="syskort" id="syskort"></p>
     <div id="konventioner"></div>
   </section>
 
   <section id="viden">
-    <h2>Viden</h2>
+    <h2 data-en="Reference">Viden</h2>
     <div class="tiles" id="videnTiles"></div>
-    <p><a href="viden/">Alle aftaler og notater – og forskellene mellem systemerne →</a></p>
+    <p><a href="viden/" data-en="All agreements and notes – and the differences between the systems (in Danish) →">Alle aftaler og notater – og forskellene mellem systemerne →</a></p>
   </section>
 </div>
 
@@ -78,7 +79,8 @@ function renderSystem(id){
     history.replaceState(null, '', `?system=${b.dataset.id}#traen`);
     renderSystem(b.dataset.id);
   }));
-  document.getElementById('syskort').innerHTML = `${suits(sys.kort)} · <a href="${esc(sys.viden)}">${sys.id === 'forslag' ? 'Læs forslagene' : 'Læs aftalerne'}</a>`;
+  document.getElementById('syskort').innerHTML = `${suits(sys.kort)} · <a href="${esc(sys.viden)}">${sys.id === 'forslag' ? T('Læs forslagene', 'Read the proposals')
+    : T('Læs aftalerne', 'Read the agreements')}</a>${T('', ' (in Danish)')}`;
 
   const groups = {};
   const systemsOf = k => Array.isArray(k.system) ? k.system : [k.system];
@@ -87,24 +89,25 @@ function renderSystem(id){
     <p class="grouphead">${esc(g)}</p>
     <div class="tiles">${ks.map(k => {
       const others = systemsOf(k).filter(x => x !== sys.id).map(x => (SYSTEMS.find(s => s.id === x) || {}).navn).filter(Boolean);
-      const shared = others.length ? `<span class="shared">Også i ${esc(others.join(' og '))}</span>` : '';
-      const roles = `<div class="roles">${k.roller.map(r => `<span>${esc(r)}</span>`).join('')}${shared}</div>`;
+      const shared = others.length ? `<span class="shared">${T('Også i', 'Also in')} ${esc(others.join(T(' og ', ' and ')))}</span>` : '';
+      const roles = `<div class="roles">${k.roller.map(r => `<span>${esc(W(r))}</span>`).join('')}${shared}</div>`;
       return k.status === 'klar'
-        ? `<a class="tile" href="${esc(k.side || 'traener.html')}?k=${encodeURIComponent(k.id)}"><h3>${suits(k.titel)}</h3><p>${suits(k.beskrivelse)}</p>${roles}<div class="meta">Træn 8 hænder →</div></a>`
-        : `<div class="tile soon"><h3>${suits(k.titel)}</h3><p>${suits(k.beskrivelse)}</p>${roles}<div class="meta">Kommer${k.viden ? ` · <a href="${esc(k.viden)}">Aftalen</a>` : ''}</div></div>`;
+        ? `<a class="tile" href="${esc(k.side || 'traener.html')}?k=${encodeURIComponent(k.id)}"><h3>${suits(k.titel)}</h3><p>${suits(k.beskrivelse)}</p>${roles}<div class="meta">${T('Træn 8 hænder →', 'Practise 8 hands →')}</div></a>`
+        : `<div class="tile soon"><h3>${suits(k.titel)}</h3><p>${suits(k.beskrivelse)}</p>${roles}<div class="meta">${T('Kommer', 'Coming')}${k.viden ? ` · <a href="${esc(k.viden)}">${T('Aftalen', 'The agreement')}</a>` : ''}</div></div>`;
     }).join('')}</div>`).join('');
 }
 
 Promise.all(['data/systemer.json', 'data/konventioner.json', 'data/viden.json'].map(u => fetch(u).then(r => r.json())))
   .then(([systems, conventions, docs]) => {
-    SYSTEMS = systems; CONVENTIONS = conventions;
+    SYSTEMS = L(systems); CONVENTIONS = L(conventions); docs = L(docs);
     renderSystem(new URLSearchParams(location.search).get('system') || stored() || systems[0].id);
-    const name = id => (systems.find(s => s.id === id) || {}).navn || '';
+    const name = id => (SYSTEMS.find(s => s.id === id) || {}).navn || '';
     document.getElementById('videnTiles').innerHTML = docs.map(d =>
-      `<a class="tile" href="${esc(d.href)}"><div class="grp">${esc(d.type)} · <span class="sys">${esc(name(d.system))}</span></div><h3>${suits(d.titel)}</h3><p>${suits(d.beskrivelse)}</p></a>`).join('');
+      `<a class="tile" href="${esc(d.href)}"><div class="grp">${esc(d.type)} · <span class="sys">${esc(name(d.system))}</span>${T('', ' · in Danish')}</div><h3>${suits(d.titel)}</h3><p>${suits(d.beskrivelse)}</p></a>`).join('');
   })
   .catch(() => {
-    document.getElementById('konventioner').innerHTML = '<p class="small">Kunne ikke hente listen over konventioner. Åbn siden via GitHub Pages eller en lokal webserver.</p>';
+    document.getElementById('konventioner').innerHTML = `<p class="small">${T('Kunne ikke hente listen over konventioner. Åbn siden via GitHub Pages eller en lokal webserver.',
+      'Could not load the list of conventions. Open the page via GitHub Pages or a local web server.')}</p>`;
   });
 </script>
 </body>

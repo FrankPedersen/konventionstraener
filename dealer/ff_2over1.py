@@ -10,14 +10,17 @@ Two over One udgangskrav – Makker 2 & mig, afsnit 1 og 5.
 Antagelser: svarer vælger sin længste farve, ved 5-5 den højeste, og 4 klør kun uden en 5-farve;
 jævne hænder med 13–15 over 1♥ og åbners 5-4 med minimum er ikke med (skemaet siger ikke hvad).
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, build_pool, tx
 
 ORDER = ['C', 'D', 'H', 'S']
 PAS = ["Modstander", "Pas"]
-BONUS = {"q": "Hvad lover Two over One hos Makker 2 & mig?",
-         "correct": "13+ hp og udgangskrav",
-         "options": ["13+ hp og udgangskrav", "10+ hp, rundekrav", "11–12 hp, invit"],
-         "why": "Ny farve på 2-trinnet fra en uforhåndspasset svarer er udgangskrav med 13+ hp (hos Makker 1 & mig er det 10+ og rundekrav)."}
+C = tx("13+ hp og udgangskrav", "13+ HCP and game forcing")
+BONUS = {"q": tx("Hvad lover Two over One hos Makker 2 & mig?", "What does Two over One promise for Partner 2 & me?"),
+         "correct": C,
+         "options": [C, tx("10+ hp, rundekrav", "10+ HCP, forcing for one round"), tx("11–12 hp, invit", "11–12 HCP, invitational")],
+         "why": tx("Ny farve på 2-trinnet fra en uforhåndspasset svarer er udgangskrav med 13+ hp (hos Makker 1 & mig er det 10+ og rundekrav).",
+                   "A new suit at the two level by an unpassed responder is game forcing with 13+ HCP "
+                   "(for Partner 1 & me it is 10+ and forcing for one round).")}
 
 def balanced(L):
     return sorted(L.values()) in ([3, 3, 3, 4], [2, 3, 4, 4], [2, 3, 3, 5])
@@ -29,24 +32,28 @@ def responder(M):
         if L[M] >= 3 or hp > 17:
             return None
         if hp < 6:
-            return "Pas", f"{hp} hp: pas."
+            return "Pas", tx(f"{hp} hp: pas.", f"{hp} HCP: pass.")
         if M == 'H' and L['S'] >= 4:
-            return "1♠", f"{L['S']} spar: 1♠ – naturligt rundekrav, før Two over One."
+            return "1♠", tx(f"{L['S']} spar: 1♠ – naturligt rundekrav, før Two over One.",
+                            f"{L['S']} spades: 1♠ – natural and forcing, before Two over One.")
         if hp <= 12:
-            return "1NT", f"{hp} hp uden støtte: 1NT (6–12, semikrav)."
+            return "1NT", tx(f"{hp} hp uden støtte: 1NT (6–12, semikrav).", f"{hp} HCP without support: 1NT (6–12, semi-forcing).")
         if balanced(L) and L[M] == 2 and hp <= 15:
             if M == 'S':
-                return "3NT", f"{hp} hp jævn med præcis 2 spar: 3NT (13–15) – slutmelding."
+                return "3NT", tx(f"{hp} hp jævn med præcis 2 spar: 3NT (13–15) – slutmelding.",
+                                 f"{hp} HCP balanced with exactly 2 spades: 3NT (13–15) – to play.")
             return None
         cands = [s for s in ORDER if ORDER.index(s) < ORDER.index(M) and L[s] >= 5]
         if not cands:
             if L['C'] >= 4 and all(L[s] < 5 for s in SUITS):
-                return "2♣", f"{hp} hp og {L['C']} klør: 2♣ – Two over One, udgangskrav (klør kan være 4)."
+                return "2♣", tx(f"{hp} hp og {L['C']} klør: 2♣ – Two over One, udgangskrav (klør kan være 4).",
+                                f"{hp} HCP and {L['C']} clubs: 2♣ – Two over One, game forcing (clubs may be 4).")
             return None
         top = max(L[s] for s in cands)
         s = max((x for x in cands if L[x] == top), key=ORDER.index)
         call = f"2{SUIT_SYM[s]}"
-        return call, f"{hp} hp og {L[s]} {SUIT_NAME[s]}: {call} – Two over One, 13+ og udgangskrav."
+        return call, tx(f"{hp} hp og {L[s]} {SUIT_NAME[s]}: {call} – Two over One, 13+ og udgangskrav.",
+                        f"{hp} HCP and {L[s]} {SUIT_NAME_EN[s]}: {call} – Two over One, 13+ and game forcing.")
     return classify
 
 def opener(M, X):
@@ -57,23 +64,25 @@ def opener(M, X):
             return None
         if balanced(L):
             if hp <= 14:
-                return "2NT", f"Jævn hånd, {hp} hp: 2NT (12–14)."
+                return "2NT", tx(f"Jævn hånd, {hp} hp: 2NT (12–14).", f"Balanced hand, {hp} HCP: 2NT (12–14).")
             if hp >= 18:
-                return "3NT", f"Jævn hånd, {hp} hp: 3NT (18–19)."
+                return "3NT", tx(f"Jævn hånd, {hp} hp: 3NT (18–19).", f"Balanced hand, {hp} HCP: 3NT (18–19).")
             return None
         if L[M] >= 6:
             if hp <= 14:
-                return f"2{sym}", f"{L[M]} {SUIT_NAME[M]} og {hp} hp: 2{sym} (12–14)."
+                return f"2{sym}", tx(f"{L[M]} {SUIT_NAME[M]} og {hp} hp: 2{sym} (12–14).", f"{L[M]} {SUIT_NAME_EN[M]} and {hp} HCP: 2{sym} (12–14).")
             good = sum(1 for r in hand[M][:3] if r >= 12) >= 2
-            return (f"3{sym}", f"God {L[M]}-farve og {hp} hp: 3{sym} (15+).") if good else None
+            return (f"3{sym}", tx(f"God {L[M]}-farve og {hp} hp: 3{sym} (15+).",
+                                  f"A good {L[M]}-card suit and {hp} HCP: 3{sym} (15+).")) if good else None
         if hp < 15:
             return None
         if M == 'H' and L['S'] >= 4:
-            return "2♠", f"4 spar ved siden af hjerterne og {hp} hp: 2♠ (15+)."
+            return "2♠", tx(f"4 spar ved siden af hjerterne og {hp} hp: 2♠ (15+).", f"4 spades beside the hearts and {hp} HCP: 2♠ (15+).")
         lower = [s for s in ORDER if ORDER.index(s) < ORDER.index(X) and L[s] >= 4 and s != M]
         if len(lower) == 1:
             call = f"3{SUIT_SYM[lower[0]]}"
-            return call, f"4 {SUIT_NAME[lower[0]]} og {hp} hp: ny farve på 3-trinnet, {call} (15+)."
+            return call, tx(f"4 {SUIT_NAME[lower[0]]} og {hp} hp: ny farve på 3-trinnet, {call} (15+).",
+                            f"4 {SUIT_NAME_EN[lower[0]]} and {hp} HCP: a new suit at the three level, {call} (15+).")
         return None
     return classify
 

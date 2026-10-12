@@ -6,6 +6,10 @@ Laver hånd-puljerne til konventionstræneren: pools/<konvention>.json.
 
 En ny konvention får sit eget modul i dealer/ med en export_pool(path) og
 tilføjes i CONVENTIONS herunder og i data/konventioner.json.
+
+Træningen er på dansk og engelsk (knappen på forsiden, assets/lang.js): al tekst, der vises i
+træneren, skrives som tx('dansk', 'English') fra dealer/core.py, og nye poster i data/*.json får
+et "en"-felt med de engelske tekster.
 """
 import os
 import sys

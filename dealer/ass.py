@@ -13,7 +13,7 @@ en 4-farve i major. Puljen dækker:
 Antagelser: åbners minimum er 15–16, maksimum 17; fit = 3+ kort i åbners 5-farve. Hænder med 5+ i major
 (overføring), 6+ i minor og 16+ hp (slem) er ikke med.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, build_pool, tx
 
 BALANCED = ([3, 3, 3, 4], [2, 3, 4, 4], [2, 3, 3, 5])
 MAX_OPENER = 17          # antagelse: 17 = maksimum, 15–16 = minimum
@@ -34,15 +34,19 @@ def classify_first(hand, hp):
     if four:
         if hp >= INVITE[0]:
             names = " og ".join(f"4 {SUIT_NAME[s]}" for s in four)
-            return "2♣", f"{names} og {hp} hp – mindst invit: 2♣ (ASS) undersøger åbners majorfordeling."
-        return "Pas", f"{hp} hp – ASS kræver mindst invit (9+). Pas."
+            names_en = " and ".join(f"4 {SUIT_NAME_EN[s]}" for s in four)
+            return "2♣", tx(f"{names} og {hp} hp – mindst invit: 2♣ (ASS) undersøger åbners majorfordeling.",
+                            f"{names_en} and {hp} HCP – at least invitational: 2♣ (ASS) explores opener's major-suit holding.")
+        return "Pas", tx(f"{hp} hp – ASS kræver mindst invit (9+). Pas.", f"{hp} HCP – ASS needs at least invitational values (9+). Pass.")
     if not balanced(L):
         return None
     if hp < INVITE[0]:
-        return "Pas", f"Jævn hånd med {hp} hp: sansstigen siger pas (0–8)."
+        return "Pas", tx(f"Jævn hånd med {hp} hp: sansstigen siger pas (0–8).", f"Balanced hand with {hp} HCP: the notrump ladder says pass (0–8).")
     if hp <= INVITE[1]:
-        return "2NT", f"Jævn hånd uden 4-farve i major og {hp} hp: 2NT er invit (9–10)."
-    return "3NT", f"Jævn hånd uden 4-farve i major og {hp} hp: 3NT (11–15)."
+        return "2NT", tx(f"Jævn hånd uden 4-farve i major og {hp} hp: 2NT er invit (9–10).",
+                         f"Balanced hand without a four-card major and {hp} HCP: 2NT is invitational (9–10).")
+    return "3NT", tx(f"Jævn hånd uden 4-farve i major og {hp} hp: 3NT (11–15).",
+                     f"Balanced hand without a four-card major and {hp} HCP: 3NT (11–15).")
 
 def classify_opener(hand, hp):
     L = lengths_of(hand)
@@ -52,13 +56,15 @@ def classify_opener(hand, hp):
     four = [s for s in ('H', 'S') if L[s] == 4]
     if five:
         s = five[0]
-        return f"2{SUIT_SYM[s]}", f"Præcis 5 {SUIT_NAME[s]}: 2{SUIT_SYM[s]}."
+        return f"2{SUIT_SYM[s]}", tx(f"Præcis 5 {SUIT_NAME[s]}: 2{SUIT_SYM[s]}.", f"Exactly 5 {SUIT_NAME_EN[s]}: 2{SUIT_SYM[s]}.")
     if four:
         names = " og ".join(SUIT_NAME[s] for s in four)
-        return "2♦", f"4-farve i {names}: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har."
+        names_en = " and ".join(SUIT_NAME_EN[s] for s in four)
+        return "2♦", tx(f"4-farve i {names}: 2♦ viser mindst én 4-farve i major – makker fortæller, hvilken han har.",
+                        f"Four cards in {names_en}: 2♦ shows at least one four-card major – partner tells which one they hold.")
     if hp < MAX_OPENER:
-        return "2NT", f"Ingen 4-farve i major og {hp} hp – minimum: 2NT."
-    return "3NT", f"Ingen 4-farve i major og {hp} hp – maksimum: 3NT."
+        return "2NT", tx(f"Ingen 4-farve i major og {hp} hp – minimum: 2NT.", f"No four-card major and {hp} HCP – a minimum: 2NT.")
+    return "3NT", tx(f"Ingen 4-farve i major og {hp} hp – maksimum: 3NT.", f"No four-card major and {hp} HCP – a maximum: 3NT.")
 
 def classify_after_2ru(hand, hp):
     L = lengths_of(hand)
@@ -66,11 +72,12 @@ def classify_after_2ru(hand, hp):
         return None
     if L['S'] == 4:
         extra = " – at du også har 4 hjerter, må makker gætte, for 2♥ benægter dem ikke" if L['H'] == 4 else ""
-        return "2♥", f"Krydsvendt: 2♥ viser 4 spar{extra}."
-    return "2♠", "Krydsvendt: 2♠ viser 4 hjerter og benægter 4 spar."
+        extra_en = " – partner must guess that you also have 4 hearts, as 2♥ does not deny them" if L['H'] == 4 else ""
+        return "2♥", tx(f"Krydsvendt: 2♥ viser 4 spar{extra}.", f"Crosswise: 2♥ shows 4 spades{extra_en}.")
+    return "2♠", tx("Krydsvendt: 2♠ viser 4 hjerter og benægter 4 spar.", "Crosswise: 2♠ shows 4 hearts and denies 4 spades.")
 
 def after_five(M):
-    sym, name = SUIT_SYM[M], SUIT_NAME[M]
+    sym, name, en = SUIT_SYM[M], SUIT_NAME[M], SUIT_NAME_EN[M]
     def classify(hand, hp):
         L = lengths_of(hand)
         if not responder_ok(L, hp) or hp < INVITE[0] or max(L['H'], L['S']) < 4:
@@ -78,11 +85,13 @@ def after_five(M):
         fit = L[M] >= 3
         if hp <= INVITE[1]:
             if fit:
-                return f"3{sym}", f"{L[M]} {name} giver fit med åbners 5-farve, og {hp} hp er invit: 3{sym}."
-            return "2NT", f"Kun {L[M]} {name} – intet fit – og {hp} hp er invit: 2NT."
+                return f"3{sym}", tx(f"{L[M]} {name} giver fit med åbners 5-farve, og {hp} hp er invit: 3{sym}.",
+                                     f"{L[M]} {en} give a fit with opener's five-card suit, and {hp} HCP is invitational: 3{sym}.")
+            return "2NT", tx(f"Kun {L[M]} {name} – intet fit – og {hp} hp er invit: 2NT.",
+                             f"Only {L[M]} {en} – no fit – and {hp} HCP is invitational: 2NT.")
         if fit:
-            return f"4{sym}", f"{L[M]} {name} giver fit, og {hp} hp er udgang: 4{sym}."
-        return "3NT", f"Kun {L[M]} {name} – intet fit – og {hp} hp er udgang: 3NT."
+            return f"4{sym}", tx(f"{L[M]} {name} giver fit, og {hp} hp er udgang: 4{sym}.", f"{L[M]} {en} give a fit, and {hp} HCP is game: 4{sym}.")
+        return "3NT", tx(f"Kun {L[M]} {name} – intet fit – og {hp} hp er udgang: 3NT.", f"Only {L[M]} {en} – no fit – and {hp} HCP is game: 3NT.")
     return classify
 
 def classify_after_2nt(hand, hp):
@@ -90,31 +99,43 @@ def classify_after_2nt(hand, hp):
     if not responder_ok(L, hp) or hp < INVITE[0] or max(L['H'], L['S']) < 4:
         return None
     if hp <= INVITE[1]:
-        return "Pas", f"Åbner har minimum og ingen 4-farve i major; med {hp} hp er der hverken fit eller styrke til mere: pas."
-    return "3NT", f"{hp} hp er udgang, selv over et minimum: 3NT."
+        return "Pas", tx(f"Åbner har minimum og ingen 4-farve i major; med {hp} hp er der hverken fit eller styrke til mere: pas.",
+                         f"Opener has a minimum and no four-card major; with {hp} HCP there is neither a fit nor the strength for more: pass.")
+    return "3NT", tx(f"{hp} hp er udgang, selv over et minimum: 3NT.", f"{hp} HCP is game, even opposite a minimum: 3NT.")
 
-NT_BONUS = {"q": "Hvad viser makkers 1NT-åbning?",
-            "correct": "15–17 hp jævn – kan rumme 5-farve i major",
-            "options": ["15–17 hp jævn – kan rumme 5-farve i major", "12–14 hp jævn", "15–17 hp jævn – aldrig 5-farve i major"],
-            "why": "1NT er 15–17 jævn, og alle jævne hænder åbnes 1NT – også med 5-farve i major. Derfor undersøger ASS hele majorfordelingen."}
+C_NT = tx("15–17 hp jævn – kan rumme 5-farve i major", "15–17 HCP balanced – may contain a five-card major")
+NT_BONUS = {"q": tx("Hvad viser makkers 1NT-åbning?", "What does partner's 1NT opening show?"),
+            "correct": C_NT,
+            "options": [C_NT, tx("12–14 hp jævn", "12–14 HCP balanced"), tx("15–17 hp jævn – aldrig 5-farve i major", "15–17 HCP balanced – never a five-card major")],
+            "why": tx("1NT er 15–17 jævn, og alle jævne hænder åbnes 1NT – også med 5-farve i major. Derfor undersøger ASS hele majorfordelingen.",
+                      "1NT is 15–17 balanced, and every balanced hand is opened 1NT – also with a five-card major. "
+                      "That is why ASS explores the whole major-suit holding.")}
+C_AAB = tx("Mindst invit – ikke nødvendigvis en 4-farve i major", "At least invitational – not necessarily a four-card major")
+C_2RU = tx("Mindst én 4-farve i major", "At least one four-card major")
+C_2M = tx("Præcis 5 kort i den viste major", "Exactly 5 cards in the major shown")
+C_2NT = tx("Ingen 4-farve i major, minimum", "No four-card major, a minimum")
 BONUS = {
     "svar": NT_BONUS,
-    "aabner": {"q": "Hvad lover makkers 2♣ (ASS)?",
-               "correct": "Mindst invit – ikke nødvendigvis en 4-farve i major",
-               "options": ["Mindst invit – ikke nødvendigvis en 4-farve i major", "Altid en 4-farve i major, ingen pointkrav", "Lang klør, svag hånd"],
-               "why": "ASS er mindst invitation til udgang og lover ikke nødvendigvis en 4-farve i major."},
-    "2ru": {"q": "Hvad viste åbners 2♦?",
-            "correct": "Mindst én 4-farve i major",
-            "options": ["Mindst én 4-farve i major", "Ingen 4-farve i major", "5 ruder"],
-            "why": "2♦ viser mindst én 4-farve i major. Svarer fortsætter krydsvendt: 2♥ = 4 spar, 2♠ = 4 hjerter."},
-    "2M": {"q": "Hvad viste åbners 2♥/2♠?",
-           "correct": "Præcis 5 kort i den viste major",
-           "options": ["Præcis 5 kort i den viste major", "4 kort i den viste major", "Maksimum og 4 kort i major"],
-           "why": "2♥/2♠ som svar på ASS viser præcis 5 kort i den viste major."},
-    "2nt": {"q": "Hvad viste åbners 2NT?",
-            "correct": "Ingen 4-farve i major, minimum",
-            "options": ["Ingen 4-farve i major, minimum", "Ingen 4-farve i major, maksimum", "Begge majorer"],
-            "why": "2NT viser ingen 4-farve i major og minimum; 3NT viser det samme med maksimum."},
+    "aabner": {"q": tx("Hvad lover makkers 2♣ (ASS)?", "What does partner's 2♣ (ASS) promise?"),
+               "correct": C_AAB,
+               "options": [C_AAB, tx("Altid en 4-farve i major, ingen pointkrav", "Always a four-card major, no point requirement"),
+                           tx("Lang klør, svag hånd", "Long clubs, a weak hand")],
+               "why": tx("ASS er mindst invitation til udgang og lover ikke nødvendigvis en 4-farve i major.",
+                         "ASS is at least a game invitation and does not necessarily promise a four-card major.")},
+    "2ru": {"q": tx("Hvad viste åbners 2♦?", "What did opener's 2♦ show?"),
+            "correct": C_2RU,
+            "options": [C_2RU, tx("Ingen 4-farve i major", "No four-card major"), tx("5 ruder", "5 diamonds")],
+            "why": tx("2♦ viser mindst én 4-farve i major. Svarer fortsætter krydsvendt: 2♥ = 4 spar, 2♠ = 4 hjerter.",
+                      "2♦ shows at least one four-card major. Responder continues crosswise: 2♥ = 4 spades, 2♠ = 4 hearts.")},
+    "2M": {"q": tx("Hvad viste åbners 2♥/2♠?", "What did opener's 2♥/2♠ show?"),
+           "correct": C_2M,
+           "options": [C_2M, tx("4 kort i den viste major", "4 cards in the major shown"), tx("Maksimum og 4 kort i major", "A maximum and four cards in the major")],
+           "why": tx("2♥/2♠ som svar på ASS viser præcis 5 kort i den viste major.", "2♥/2♠ in response to ASS shows exactly 5 cards in the major shown.")},
+    "2nt": {"q": tx("Hvad viste åbners 2NT?", "What did opener's 2NT show?"),
+            "correct": C_2NT,
+            "options": [C_2NT, tx("Ingen 4-farve i major, maksimum", "No four-card major, a maximum"), tx("Begge majorer", "Both majors")],
+            "why": tx("2NT viser ingen 4-farve i major og minimum; 3NT viser det samme med maksimum.",
+                      "2NT shows no four-card major and a minimum; 3NT shows the same with a maximum.")},
 }
 
 PAS = ["Modstander", "Pas"]

@@ -37,6 +37,18 @@
      "Kontrol til slem"
     ],
     "why": "Trial bid meldes i en svag farve (3+ kort, 2–3 tabere). Makker melder 4M med hjælp dér – honnør, korthed eller 4 kort – og 3M uden."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does a trial bid ask for?",
+     "correct": "Help in the suit bid",
+     "options": [
+      "Help in the suit bid",
+      "Support for a new trump suit",
+      "Controls for slam"
+     ],
+     "why": "A trial bid is made in a weak suit (3+ cards, 2–3 losers). Partner bids 4M with help there – an honour, shortness or four cards – and 3M without."
+    }
    }
   },
   "svar_hj_c": {
@@ -82,6 +94,18 @@
      "Kontrol til slem"
     ],
     "why": "Trial bid meldes i en svag farve (3+ kort, 2–3 tabere). Makker melder 4M med hjælp dér – honnør, korthed eller 4 kort – og 3M uden."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does a trial bid ask for?",
+     "correct": "Help in the suit bid",
+     "options": [
+      "Help in the suit bid",
+      "Support for a new trump suit",
+      "Controls for slam"
+     ],
+     "why": "A trial bid is made in a weak suit (3+ cards, 2–3 losers). Partner bids 4M with help there – an honour, shortness or four cards – and 3M without."
+    }
    }
   },
   "svar_hj_d": {
@@ -127,6 +151,18 @@
      "Kontrol til slem"
     ],
     "why": "Trial bid meldes i en svag farve (3+ kort, 2–3 tabere). Makker melder 4M med hjælp dér – honnør, korthed eller 4 kort – og 3M uden."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does a trial bid ask for?",
+     "correct": "Help in the suit bid",
+     "options": [
+      "Help in the suit bid",
+      "Support for a new trump suit",
+      "Controls for slam"
+     ],
+     "why": "A trial bid is made in a weak suit (3+ cards, 2–3 losers). Partner bids 4M with help there – an honour, shortness or four cards – and 3M without."
+    }
    }
   },
   "svar_hj_s": {
@@ -172,6 +208,18 @@
      "Kontrol til slem"
     ],
     "why": "Trial bid meldes i en svag farve (3+ kort, 2–3 tabere). Makker melder 4M med hjælp dér – honnør, korthed eller 4 kort – og 3M uden."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does a trial bid ask for?",
+     "correct": "Help in the suit bid",
+     "options": [
+      "Help in the suit bid",
+      "Support for a new trump suit",
+      "Controls for slam"
+     ],
+     "why": "A trial bid is made in a weak suit (3+ cards, 2–3 losers). Partner bids 4M with help there – an honour, shortness or four cards – and 3M without."
+    }
    }
   },
   "aab_sp": {
@@ -211,6 +259,18 @@
      "Kontrol til slem"
     ],
     "why": "Trial bid meldes i en svag farve (3+ kort, 2–3 tabere). Makker melder 4M med hjælp dér – honnør, korthed eller 4 kort – og 3M uden."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does a trial bid ask for?",
+     "correct": "Help in the suit bid",
+     "options": [
+      "Help in the suit bid",
+      "Support for a new trump suit",
+      "Controls for slam"
+     ],
+     "why": "A trial bid is made in a weak suit (3+ cards, 2–3 losers). Partner bids 4M with help there – an honour, shortness or four cards – and 3M without."
+    }
    }
   },
   "svar_sp_c": {
@@ -256,6 +316,18 @@
      "Kontrol til slem"
     ],
     "why": "Trial bid meldes i en svag farve (3+ kort, 2–3 tabere). Makker melder 4M med hjælp dér – honnør, korthed eller 4 kort – og 3M uden."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does a trial bid ask for?",
+     "correct": "Help in the suit bid",
+     "options": [
+      "Help in the suit bid",
+      "Support for a new trump suit",
+      "Controls for slam"
+     ],
+     "why": "A trial bid is made in a weak suit (3+ cards, 2–3 losers). Partner bids 4M with help there – an honour, shortness or four cards – and 3M without."
+    }
    }
   },
   "svar_sp_d": {
@@ -301,6 +373,18 @@
      "Kontrol til slem"
     ],
     "why": "Trial bid meldes i en svag farve (3+ kort, 2–3 tabere). Makker melder 4M med hjælp dér – honnør, korthed eller 4 kort – og 3M uden."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does a trial bid ask for?",
+     "correct": "Help in the suit bid",
+     "options": [
+      "Help in the suit bid",
+      "Support for a new trump suit",
+      "Controls for slam"
+     ],
+     "why": "A trial bid is made in a weak suit (3+ cards, 2–3 losers). Partner bids 4M with help there – an honour, shortness or four cards – and 3M without."
+    }
    }
   },
   "svar_sp_h": {
@@ -346,6 +430,18 @@
      "Kontrol til slem"
     ],
     "why": "Trial bid meldes i en svag farve (3+ kort, 2–3 tabere). Makker melder 4M med hjælp dér – honnør, korthed eller 4 kort – og 3M uden."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does a trial bid ask for?",
+     "correct": "Help in the suit bid",
+     "options": [
+      "Help in the suit bid",
+      "Support for a new trump suit",
+      "Controls for slam"
+     ],
+     "why": "A trial bid is made in a weak suit (3+ cards, 2–3 losers). Partner bids 4M with help there – an honour, shortness or four cards – and 3M without."
+    }
    }
   }
  },
@@ -355,240 +451,462 @@
    "hand": {
     "S": [
      12,
-     11,
-     3
-    ],
-    "H": [
-     13,
-     11,
-     10,
-     7,
-     4
-    ],
-    "D": [
-     13,
-     10,
-     3
-    ],
-    "C": [
-     11,
-     6
-    ]
-   },
-   "hp": 11,
-   "sp": 12,
-   "correct": "Pas",
-   "why": "12 sp (11 hp + double ♣ = 1): pas – udgang er udelukket over for 6–9."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     14,
-     8,
-     3
-    ],
-    "H": [
-     13,
-     8,
-     6,
-     5,
-     2
-    ],
-    "D": [
-     7,
-     2
-    ],
-    "C": [
-     14,
-     8,
-     3
-    ]
-   },
-   "hp": 11,
-   "sp": 12,
-   "correct": "Pas",
-   "why": "12 sp (11 hp + double ♦ = 1): pas – udgang er udelukket over for 6–9."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     13,
-     9,
-     4
-    ],
-    "H": [
-     11,
-     10,
-     7,
-     6,
-     2
-    ],
-    "D": [
-     10,
-     7,
-     6
-    ],
-    "C": [
-     14,
-     13
-    ]
-   },
-   "hp": 11,
-   "sp": 12,
-   "correct": "Pas",
-   "why": "12 sp (11 hp + double ♣ = 1): pas – udgang er udelukket over for 6–9."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     12,
-     10,
-     9,
-     3
-    ],
-    "H": [
-     14,
-     13,
-     10,
-     9,
-     5
-    ],
-    "D": [
-     13,
-     3
-    ],
-    "C": [
-     9,
-     8
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
-   "correct": "Pas",
-   "why": "14 sp (12 hp + double ♦ = 1 + double ♣ = 1): pas – udgang er udelukket over for 6–9."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     14,
-     9,
-     6,
-     3
-    ],
-    "H": [
-     14,
-     7,
-     6,
-     4,
-     3
-    ],
-    "D": [
-     4
-    ],
-    "C": [
-     13,
-     8,
-     4
-    ]
-   },
-   "hp": 11,
-   "sp": 14,
-   "correct": "Pas",
-   "why": "14 sp (11 hp + single ♦ = 3): pas – udgang er udelukket over for 6–9."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     9,
-     2
-    ],
-    "H": [
-     13,
-     11,
-     10,
-     8,
-     5,
-     4
-    ],
-    "D": [
-     13,
-     6,
-     2
-    ],
-    "C": [
-     13,
-     11
-    ]
-   },
-   "hp": 11,
-   "sp": 13,
-   "correct": "Pas",
-   "why": "14 sp (11 hp + double ♠ = 1 + double ♣ = 1 + 1 ekstra trumf): pas – udgang er udelukket over for 6–9."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     9,
      7
     ],
     "H": [
-     12,
+     14,
      11,
+     10,
      7,
-     3,
+     4,
      2
     ],
     "D": [
      12,
-     9,
-     3,
      2
     ],
     "C": [
-     14,
-     12
+     12,
+     6,
+     4
     ]
    },
    "hp": 11,
    "sp": 13,
    "correct": "Pas",
-   "why": "13 sp (11 hp + double ♠ = 1 + double ♣ = 1): pas – udgang er udelukket over for 6–9."
+   "why": "14 sp (11 hp + double ♠ = 1 + double ♦ = 1 + 1 ekstra trumf): pas – udgang er udelukket over for 6–9.",
+   "en": {
+    "why": "14 support points (11 HCP + doubleton ♠ = 1 + doubleton ♦ = 1 + 1 extra trump): pass – game is out of reach opposite 6–9."
+   }
   },
   {
    "situation": "aab_hj",
    "hand": {
     "S": [
-     14,
-     12
+     12,
+     11
     ],
     "H": [
-     11,
-     9,
-     8,
-     4,
-     3
+     12,
+     10,
+     7,
+     6,
+     4
     ],
     "D": [
-     13,
+     11,
      9,
-     7,
      2
     ],
     "C": [
-     12,
+     14,
+     13,
      4
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "Pas",
+   "why": "14 sp (13 hp + double ♠ = 1): pas – udgang er udelukket over for 6–9.",
+   "en": {
+    "why": "14 support points (13 HCP + doubleton ♠ = 1): pass – game is out of reach opposite 6–9."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     12,
+     8,
+     4
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     8,
+     6
+    ],
+    "D": [
+     13,
+     6
+    ],
+    "C": [
+     14,
+     6,
+     3
     ]
    },
    "hp": 12,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "13 sp (12 hp + double ♦ = 1): pas – udgang er udelukket over for 6–9.",
+   "en": {
+    "why": "13 support points (12 HCP + doubleton ♦ = 1): pass – game is out of reach opposite 6–9."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     4,
+     3
+    ],
+    "H": [
+     11,
+     8,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     13,
+     11,
+     6
+    ]
+   },
+   "hp": 11,
    "sp": 14,
    "correct": "Pas",
-   "why": "14 sp (12 hp + double ♠ = 1 + double ♣ = 1): pas – udgang er udelukket over for 6–9."
+   "why": "14 sp (11 hp + single ♦ = 3): pas – udgang er udelukket over for 6–9.",
+   "en": {
+    "why": "14 support points (11 HCP + singleton ♦ = 3): pass – game is out of reach opposite 6–9."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     12,
+     11,
+     3
+    ],
+    "H": [
+     14,
+     10,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     5,
+     4
+    ],
+    "C": [
+     4,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "Pas",
+   "why": "12 sp (11 hp + double ♣ = 1): pas – udgang er udelukket over for 6–9.",
+   "en": {
+    "why": "12 support points (11 HCP + doubleton ♣ = 1): pass – game is out of reach opposite 6–9."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     12,
+     6
+    ],
+    "H": [
+     12,
+     7,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     6,
+     3
+    ],
+    "C": [
+     13,
+     7,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "Pas",
+   "why": "12 sp (11 hp + double ♠ = 1): pas – udgang er udelukket over for 6–9.",
+   "en": {
+    "why": "12 support points (11 HCP + doubleton ♠ = 1): pass – game is out of reach opposite 6–9."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     9,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     8
+    ],
+    "C": [
+     12,
+     7
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "13 sp (11 hp + double ♦ = 1 + double ♣ = 1): pas – udgang er udelukket over for 6–9.",
+   "en": {
+    "why": "13 support points (11 HCP + doubleton ♦ = 1 + doubleton ♣ = 1): pass – game is out of reach opposite 6–9."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     12,
+     5,
+     4
+    ],
+    "H": [
+     13,
+     11,
+     9,
+     8,
+     5
+    ],
+    "D": [
+     14,
+     7,
+     3
+    ],
+    "C": [
+     13,
+     9
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "Pas",
+   "why": "14 sp (13 hp + double ♣ = 1): pas – udgang er udelukket over for 6–9.",
+   "en": {
+    "why": "14 support points (13 HCP + doubleton ♣ = 1): pass – game is out of reach opposite 6–9."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     11,
+     9
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     6,
+     5
+    ],
+    "D": [
+     8,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "15 sp (13 hp + double ♠ = 1 + double ♦ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit.",
+   "en": {
+    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♦ = 1), but no side suit with 2–3 losers: 3♥ – invitational."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     8,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     9,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     11
+    ],
+    "C": [
+     10,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "16 sp (13 hp + double ♠ = 1 + double ♣ = 1 + 1 ekstra trumf), men ingen sidefarve med 2–3 tabere: 3♥ – invit.",
+   "en": {
+    "why": "16 support points (13 HCP + doubleton ♠ = 1 + doubleton ♣ = 1 + 1 extra trump), but no side suit with 2–3 losers: 3♥ – invitational."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     6
+    ],
+    "H": [
+     13,
+     10,
+     8,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     7
+    ],
+    "C": [
+     10,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "16 sp (13 hp + double ♦ = 1 + double ♣ = 1 + 1 ekstra trumf), men ingen sidefarve med 2–3 tabere: 3♥ – invit.",
+   "en": {
+    "why": "16 support points (13 HCP + doubleton ♦ = 1 + doubleton ♣ = 1 + 1 extra trump), but no side suit with 2–3 losers: 3♥ – invitational."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     13,
+     9
+    ],
+    "H": [
+     13,
+     9,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     5
+    ],
+    "C": [
+     10,
+     8
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "15 sp (13 hp + double ♠ = 1 + double ♣ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit.",
+   "en": {
+    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♣ = 1), but no side suit with 2–3 losers: 3♥ – invitational."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     6
+    ],
+    "H": [
+     11,
+     8,
+     7,
+     4,
+     2
+    ],
+    "D": [
+     12,
+     5
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "15 sp (13 hp + double ♦ = 1 + double ♣ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit.",
+   "en": {
+    "why": "15 support points (13 HCP + doubleton ♦ = 1 + doubleton ♣ = 1), but no side suit with 2–3 losers: 3♥ – invitational."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     9,
+     6
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     6,
+     4
+    ],
+    "D": [
+     7,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♥",
+   "why": "16 sp (14 hp + double ♠ = 1 + double ♦ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit.",
+   "en": {
+    "why": "16 support points (14 HCP + doubleton ♠ = 1 + doubleton ♦ = 1), but no side suit with 2–3 losers: 3♥ – invitational."
+   }
   },
   {
    "situation": "aab_hj",
@@ -598,3610 +916,406 @@
      12
     ],
     "H": [
-     11,
+     10,
+     9,
      8,
-     7,
-     4,
+     6,
      3
     ],
     "D": [
-     10,
-     5
+     12,
+     6
     ],
     "C": [
-     14,
+     13,
      12,
-     5,
-     2
+     10,
+     7
     ]
    },
    "hp": 13,
    "sp": 15,
    "correct": "3♥",
-   "why": "15 sp (13 hp + double ♠ = 1 + double ♦ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit."
+   "why": "15 sp (13 hp + double ♠ = 1 + double ♦ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit.",
+   "en": {
+    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♦ = 1), but no side suit with 2–3 losers: 3♥ – invitational."
+   }
   },
   {
    "situation": "aab_hj",
    "hand": {
     "S": [
-     13,
-     8
-    ],
-    "H": [
-     13,
-     12,
-     10,
-     9,
-     5
-    ],
-    "D": [
-     13,
-     12,
-     9,
-     6
-    ],
-    "C": [
-     11,
-     3
-    ]
-   },
-   "hp": 14,
-   "sp": 16,
-   "correct": "3♥",
-   "why": "16 sp (14 hp + double ♠ = 1 + double ♣ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     13,
-     12,
-     6,
-     5
-    ],
-    "H": [
-     10,
-     9,
-     5,
-     4,
-     2
-    ],
-    "D": [
      14,
-     13,
-     9
-    ],
-    "C": [
-     11
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "3♥",
-   "why": "16 sp (13 hp + single ♣ = 3), men ingen sidefarve med 2–3 tabere: 3♥ – invit."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     10,
-     9
-    ],
-    "H": [
-     14,
-     11,
-     8,
-     6,
-     5
-    ],
-    "D": [
-     10,
+     12,
+     7,
      4
     ],
-    "C": [
-     14,
-     13,
-     12,
-     8
-    ]
-   },
-   "hp": 14,
-   "sp": 16,
-   "correct": "3♥",
-   "why": "16 sp (14 hp + double ♠ = 1 + double ♦ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     12,
-     5
-    ],
     "H": [
      13,
-     12,
-     6,
-     5,
-     2
-    ],
-    "D": [
-     14,
-     12,
-     4,
-     2
-    ],
-    "C": [
-     4,
+     11,
+     10,
+     7,
      3
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "3♥",
-   "why": "15 sp (13 hp + double ♠ = 1 + double ♣ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     13,
-     9
-    ],
-    "H": [
-     13,
-     11,
-     9,
-     4,
-     2
-    ],
-    "D": [
-     8,
-     2
-    ],
-    "C": [
-     14,
-     13,
-     10,
-     8
-    ]
-   },
-   "hp": 14,
-   "sp": 16,
-   "correct": "3♥",
-   "why": "16 sp (14 hp + double ♠ = 1 + double ♦ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     14,
-     2
-    ],
-    "H": [
-     12,
-     9,
-     8,
-     5,
-     2
-    ],
-    "D": [
-     9,
-     6
-    ],
-    "C": [
-     14,
-     13,
-     11,
-     10
-    ]
-   },
-   "hp": 14,
-   "sp": 16,
-   "correct": "3♥",
-   "why": "16 sp (14 hp + double ♠ = 1 + double ♦ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     12,
-     10
-    ],
-    "H": [
-     13,
-     11,
-     10,
-     9,
-     5
     ],
     "D": [
      7,
-     5
+     4
     ],
     "C": [
-     14,
      13,
-     4,
-     3
+     7
     ]
    },
    "hp": 13,
    "sp": 15,
    "correct": "3♥",
-   "why": "15 sp (13 hp + double ♠ = 1 + double ♦ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit."
+   "why": "15 sp (13 hp + double ♦ = 1 + double ♣ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit.",
+   "en": {
+    "why": "15 support points (13 HCP + doubleton ♦ = 1 + doubleton ♣ = 1), but no side suit with 2–3 losers: 3♥ – invitational."
+   }
   },
   {
    "situation": "aab_hj",
    "hand": {
     "S": [
-     14,
      12,
-     9,
-     3
+     7,
+     6,
+     2
     ],
     "H": [
-     13,
+     14,
      12,
-     11,
-     9,
-     6
+     8,
+     6,
+     2
     ],
     "D": [
-     9,
-     4
+     13,
+     10,
+     9
     ],
     "C": [
-     14,
-     9
-    ]
-   },
-   "hp": 16,
-   "sp": 18,
-   "correct": "4♥",
-   "why": "18 sp (16 hp + double ♦ = 1 + double ♣ = 1): 4♥ direkte (17+)."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
      14
-    ],
-    "H": [
-     12,
-     10,
-     8,
-     6,
-     4
-    ],
-    "D": [
-     14,
-     13,
-     2
-    ],
-    "C": [
-     14,
-     10,
-     4,
-     3
-    ]
-   },
-   "hp": 17,
-   "sp": 20,
-   "correct": "4♥",
-   "why": "20 sp (17 hp + single ♠ = 3): 4♥ direkte (17+)."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     14,
-     13,
-     5
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     10,
-     6
-    ],
-    "D": [
-     9,
-     7
-    ],
-    "C": [
-     12,
-     11,
-     7
-    ]
-   },
-   "hp": 19,
-   "sp": 20,
-   "correct": "4♥",
-   "why": "20 sp (19 hp + double ♦ = 1): 4♥ direkte (17+)."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     14,
-     13,
-     9,
-     4
-    ],
-    "H": [
-     14,
-     10,
-     8,
-     7,
-     5
-    ],
-    "D": [
-     14,
-     10,
-     2
-    ],
-    "C": [
-     6
     ]
    },
    "hp": 15,
    "sp": 18,
    "correct": "4♥",
-   "why": "18 sp (15 hp + single ♣ = 3): 4♥ direkte (17+)."
+   "why": "18 sp (15 hp + single ♣ = 3): 4♥ direkte (17+).",
+   "en": {
+    "why": "18 support points (15 HCP + singleton ♣ = 3): 4♥ directly (17+)."
+   }
   },
   {
    "situation": "aab_hj",
    "hand": {
     "S": [
-     7
-    ],
-    "H": [
-     14,
-     13,
-     6,
+     12,
      5,
-     2
-    ],
-    "D": [
-     12,
-     11,
-     7,
-     2
-    ],
-    "C": [
-     14,
-     12,
-     6
-    ]
-   },
-   "hp": 16,
-   "sp": 19,
-   "correct": "4♥",
-   "why": "19 sp (16 hp + single ♠ = 3): 4♥ direkte (17+)."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     6
-    ],
-    "H": [
-     14,
-     13,
-     11,
-     7,
-     4,
-     2
-    ],
-    "D": [
-     13,
-     11,
-     6
-    ],
-    "C": [
-     13,
-     11,
-     9
-    ]
-   },
-   "hp": 16,
-   "sp": 19,
-   "correct": "4♥",
-   "why": "20 sp (16 hp + single ♠ = 3 + 1 ekstra trumf): 4♥ direkte (17+)."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     12,
-     11,
-     5,
-     3
-    ],
-    "H": [
-     14,
-     8,
-     7,
-     6,
-     3,
-     2
-    ],
-    "D": [
-     14
-    ],
-    "C": [
-     14,
-     5
-    ]
-   },
-   "hp": 15,
-   "sp": 19,
-   "correct": "4♥",
-   "why": "20 sp (15 hp + single ♦ = 3 + double ♣ = 1 + 1 ekstra trumf): 4♥ direkte (17+)."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
      4
     ],
     "H": [
-     10,
+     14,
      9,
      8,
-     3,
-     2
+     5,
+     3
     ],
     "D": [
-     14,
      13,
+     6
+    ],
+    "C": [
+     14,
+     12,
      11
-    ],
-    "C": [
-     14,
-     13,
-     11,
-     4
-    ]
-   },
-   "hp": 16,
-   "sp": 19,
-   "correct": "4♥",
-   "why": "19 sp (16 hp + single ♠ = 3): 4♥ direkte (17+)."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     13,
-     8
-    ],
-    "H": [
-     13,
-     12,
-     11,
-     9,
-     6,
-     2
-    ],
-    "D": [
-     14,
-     2
-    ],
-    "C": [
-     9,
-     3,
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "3♣",
-   "why": "16 sp (13 hp + double ♠ = 1 + double ♦ = 1 + 1 ekstra trumf) og 3 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     10
-    ],
-    "H": [
-     14,
-     11,
-     6,
-     5,
-     4
-    ],
-    "D": [
-     14,
-     11,
-     9,
-     2
-    ],
-    "C": [
-     12,
-     9,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♣",
-   "why": "15 sp (12 hp + single ♠ = 3) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     11
-    ],
-    "H": [
-     14,
-     10,
-     9,
-     7,
-     2
-    ],
-    "D": [
-     14,
-     11,
-     3
-    ],
-    "C": [
-     12,
-     10,
-     7,
-     6
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♣",
-   "why": "15 sp (12 hp + single ♠ = 3) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     5
-    ],
-    "H": [
-     14,
-     13,
-     10,
-     8,
-     3
-    ],
-    "D": [
-     12,
-     8,
-     4
-    ],
-    "C": [
-     12,
-     11,
-     8,
-     7
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♣",
-   "why": "15 sp (12 hp + single ♠ = 3) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     13,
-     7
-    ],
-    "H": [
-     14,
-     13,
-     9,
-     5,
-     3
-    ],
-    "D": [
-     7,
-     4
-    ],
-    "C": [
-     14,
-     10,
-     8,
-     6
-    ]
-   },
-   "hp": 14,
-   "sp": 16,
-   "correct": "3♣",
-   "why": "16 sp (14 hp + double ♠ = 1 + double ♦ = 1) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     14
-    ],
-    "H": [
-     13,
-     11,
-     8,
-     7,
-     2
-    ],
-    "D": [
-     14,
-     5,
-     2
-    ],
-    "C": [
-     11,
-     9,
-     6,
-     3
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "3♣",
-   "why": "16 sp (13 hp + single ♠ = 3) og 3 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     4
-    ],
-    "H": [
-     13,
-     10,
-     8,
-     4,
-     2
-    ],
-    "D": [
-     13,
-     11,
-     3
-    ],
-    "C": [
-     14,
-     11,
-     9,
-     6
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♣",
-   "why": "15 sp (12 hp + single ♠ = 3) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     7
-    ],
-    "H": [
-     14,
-     11,
-     5,
-     3,
-     2
-    ],
-    "D": [
-     13,
-     11,
-     9,
-     6
-    ],
-    "C": [
-     12,
-     11,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♣",
-   "why": "15 sp (12 hp + single ♠ = 3) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     9,
-     8
-    ],
-    "H": [
-     13,
-     11,
-     10,
-     8,
-     4,
-     2
-    ],
-    "D": [
-     14,
-     10,
-     7
-    ],
-    "C": [
-     14,
-     10
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
-   "correct": "3♦",
-   "why": "15 sp (12 hp + double ♠ = 1 + double ♣ = 1 + 1 ekstra trumf) og 2 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     13,
-     7,
-     5,
-     3
-    ],
-    "H": [
-     14,
-     13,
-     10,
-     3,
-     2
-    ],
-    "D": [
-     5,
-     3,
-     2
-    ],
-    "C": [
-     12
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (12 hp + single ♣ = 3) og 3 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     14,
-     12,
-     7,
-     4
-    ],
-    "H": [
-     13,
-     9,
-     7,
-     5,
-     4
-    ],
-    "D": [
-     13,
-     8,
-     4
-    ],
-    "C": [
-     8
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (12 hp + single ♣ = 3) og 2 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     13
-    ],
-    "H": [
-     14,
-     11,
-     7,
-     5,
-     3,
-     2
-    ],
-    "D": [
-     10,
-     5,
-     2
-    ],
-    "C": [
-     13,
-     11,
-     3
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♦",
-   "why": "16 sp (12 hp + single ♠ = 3 + 1 ekstra trumf) og 3 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     5
-    ],
-    "H": [
-     14,
-     13,
-     11,
-     10,
-     7
-    ],
-    "D": [
-     9,
-     4,
-     3,
-     2
-    ],
-    "C": [
-     14,
-     10,
-     5
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (12 hp + single ♠ = 3) og 3 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     12,
-     10,
-     9,
-     5
-    ],
-    "H": [
-     14,
-     12,
-     10,
-     8,
-     7
-    ],
-    "D": [
-     11,
-     10,
-     2
-    ],
-    "C": [
-     14
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "3♦",
-   "why": "16 sp (13 hp + single ♣ = 3) og 3 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     13,
-     9,
-     7,
-     5
-    ],
-    "H": [
-     14,
-     13,
-     9,
-     7,
-     4
-    ],
-    "D": [
-     10,
-     6,
-     2
-    ],
-    "C": [
-     13
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "3♦",
-   "why": "16 sp (13 hp + single ♣ = 3) og 3 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     11
-    ],
-    "H": [
-     14,
-     13,
-     10,
-     5,
-     2
-    ],
-    "D": [
-     8,
-     6,
-     2
-    ],
-    "C": [
-     13,
-     12,
-     8,
-     6
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "3♦",
-   "why": "16 sp (13 hp + single ♠ = 3) og 3 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     12,
-     9,
-     6
-    ],
-    "H": [
-     14,
-     12,
-     9,
-     4,
-     2
-    ],
-    "D": [
-     13,
-     11,
-     9,
-     7
-    ],
-    "C": [
-     10
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "2♠",
-   "why": "15 sp (12 hp + single ♣ = 3) og 2 tabere i spar – den svageste farve: 2♠ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     14,
-     3,
-     2
-    ],
-    "H": [
-     12,
-     11,
-     8,
-     7,
-     5,
-     3
-    ],
-    "D": [
-     11
-    ],
-    "C": [
-     14,
-     10,
-     7
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "2♠",
-   "why": "16 sp (12 hp + single ♦ = 3 + 1 ekstra trumf) og 2 tabere i spar – den svageste farve: 2♠ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     12,
-     7,
-     6
-    ],
-    "H": [
-     14,
-     13,
-     9,
-     8,
-     7
-    ],
-    "D": [
-     14,
-     6,
-     4,
-     2
-    ],
-    "C": [
-     7
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "2♠",
-   "why": "16 sp (13 hp + single ♣ = 3) og 2 tabere i spar – den svageste farve: 2♠ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     13,
-     11,
-     10,
-     4
-    ],
-    "H": [
-     14,
-     12,
-     11,
-     10,
-     8
-    ],
-    "D": [
-     13,
-     7
-    ],
-    "C": [
-     9,
-     8
-    ]
-   },
-   "hp": 14,
-   "sp": 16,
-   "correct": "2♠",
-   "why": "16 sp (14 hp + double ♦ = 1 + double ♣ = 1) og 2 tabere i spar – den svageste farve: 2♠ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     8,
-     7,
-     2
-    ],
-    "H": [
-     14,
-     10,
-     9,
-     8,
-     2
-    ],
-    "D": [
-     14,
-     12,
-     11,
-     10
-    ],
-    "C": [
-     12
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "2♠",
-   "why": "16 sp (13 hp + single ♣ = 3) og 3 tabere i spar – den svageste farve: 2♠ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     13,
-     11,
-     5,
-     3
-    ],
-    "H": [
-     13,
-     9,
-     4,
-     3,
-     2
-    ],
-    "D": [
-     13
-    ],
-    "C": [
-     12,
-     11,
-     3
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "2♠",
-   "why": "16 sp (13 hp + single ♦ = 3) og 2 tabere i spar – den svageste farve: 2♠ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     11,
-     10,
-     4
-    ],
-    "H": [
-     14,
-     13,
-     11,
-     8,
-     3,
-     2
-    ],
-    "D": [
-     13
-    ],
-    "C": [
-     10,
-     6,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "2♠",
-   "why": "16 sp (12 hp + single ♦ = 3 + 1 ekstra trumf) og 3 tabere i spar – den svageste farve: 2♠ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     11,
-     8,
-     4
-    ],
-    "H": [
-     12,
-     7,
-     6,
-     5,
-     2
-    ],
-    "D": [
-     14
-    ],
-    "C": [
-     13,
-     12,
-     10,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "2♠",
-   "why": "15 sp (12 hp + single ♦ = 3) og 3 tabere i spar – den svageste farve: 2♠ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "svar_hj_c",
-   "hand": {
-    "S": [
-     9,
-     5,
-     4
-    ],
-    "H": [
-     12,
-     6,
-     2
-    ],
-    "D": [
-     14,
-     5,
-     3
-    ],
-    "C": [
-     10,
-     9,
-     6,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 6,
-   "correct": "4♥",
-   "why": "Hjælp i klør (4 kort): 4♥."
-  },
-  {
-   "situation": "svar_hj_c",
-   "hand": {
-    "S": [
-     10,
-     3
-    ],
-    "H": [
-     11,
-     6,
-     5
-    ],
-    "D": [
-     13,
-     10,
-     7,
-     6
-    ],
-    "C": [
-     13,
-     8,
-     7,
-     3
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "4♥",
-   "why": "Hjælp i klør (4 kort): 4♥."
-  },
-  {
-   "situation": "svar_hj_c",
-   "hand": {
-    "S": [
-     14,
-     9,
-     6,
-     2
-    ],
-    "H": [
-     9,
-     8,
-     7
-    ],
-    "D": [
-     10,
-     4
-    ],
-    "C": [
-     14,
-     8,
-     7,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "4♥",
-   "why": "Hjælp i klør (4 kort): 4♥."
-  },
-  {
-   "situation": "svar_hj_c",
-   "hand": {
-    "S": [
-     10,
-     7,
-     6
-    ],
-    "H": [
-     12,
-     8,
-     5
-    ],
-    "D": [
-     12,
-     9,
-     8,
-     4
-    ],
-    "C": [
-     13,
-     6,
-     3
-    ]
-   },
-   "hp": 7,
-   "sp": 7,
-   "correct": "4♥",
-   "why": "Hjælp i klør (honnør): 4♥."
-  },
-  {
-   "situation": "svar_hj_c",
-   "hand": {
-    "S": [
-     8,
-     7,
-     5,
-     3
-    ],
-    "H": [
-     13,
-     6,
-     2
-    ],
-    "D": [
-     9,
-     6,
-     3,
-     2
-    ],
-    "C": [
-     14,
-     3
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "4♥",
-   "why": "Hjælp i klør (honnør): 4♥."
-  },
-  {
-   "situation": "svar_hj_c",
-   "hand": {
-    "S": [
-     12,
-     10,
-     2
-    ],
-    "H": [
-     10,
-     6,
-     3
-    ],
-    "D": [
-     13,
-     11,
-     9,
-     3
-    ],
-    "C": [
-     12,
-     11,
-     2
-    ]
-   },
-   "hp": 9,
-   "sp": 9,
-   "correct": "4♥",
-   "why": "Hjælp i klør (honnør): 4♥."
-  },
-  {
-   "situation": "svar_hj_c",
-   "hand": {
-    "S": [
-     11,
-     4,
-     2
-    ],
-    "H": [
-     13,
-     8,
-     2
-    ],
-    "D": [
-     12,
-     9,
-     7
-    ],
-    "C": [
-     12,
-     7,
-     5,
-     4
-    ]
-   },
-   "hp": 8,
-   "sp": 8,
-   "correct": "4♥",
-   "why": "Hjælp i klør (4 kort): 4♥."
-  },
-  {
-   "situation": "svar_hj_c",
-   "hand": {
-    "S": [
-     10,
-     6,
-     2
-    ],
-    "H": [
-     10,
-     6,
-     3
-    ],
-    "D": [
-     14,
-     6,
-     4
-    ],
-    "C": [
-     13,
-     12,
-     5,
-     4
-    ]
-   },
-   "hp": 9,
-   "sp": 9,
-   "correct": "4♥",
-   "why": "Hjælp i klør (4 kort): 4♥."
-  },
-  {
-   "situation": "svar_hj_c",
-   "hand": {
-    "S": [
-     13,
-     7,
-     3,
-     2
-    ],
-    "H": [
-     7,
-     5,
-     2
-    ],
-    "D": [
-     12,
-     8,
-     6,
-     2
-    ],
-    "C": [
-     10,
-     5
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "3♥",
-   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_c",
-   "hand": {
-    "S": [
-     12,
-     9,
-     8,
-     2
-    ],
-    "H": [
-     12,
-     9,
-     5
-    ],
-    "D": [
-     11,
-     9,
-     6,
-     5
-    ],
-    "C": [
-     10,
-     2
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "3♥",
-   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_c",
-   "hand": {
-    "S": [
-     11,
-     9,
-     8,
-     3
-    ],
-    "H": [
-     12,
-     5,
-     2
-    ],
-    "D": [
-     14,
-     11,
-     6,
-     5
-    ],
-    "C": [
-     5,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "3♥",
-   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_c",
-   "hand": {
-    "S": [
-     13,
-     9,
-     3,
-     2
-    ],
-    "H": [
-     6,
-     5,
-     4
-    ],
-    "D": [
-     13,
-     10,
-     9,
-     7
-    ],
-    "C": [
-     11,
-     6
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "3♥",
-   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_c",
-   "hand": {
-    "S": [
-     6,
-     5,
-     3,
-     2
-    ],
-    "H": [
-     12,
-     11,
-     6
-    ],
-    "D": [
-     14,
-     4,
-     2
-    ],
-    "C": [
-     8,
-     5,
-     3
-    ]
-   },
-   "hp": 7,
-   "sp": 7,
-   "correct": "3♥",
-   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_c",
-   "hand": {
-    "S": [
-     13,
-     9,
-     7,
-     3
-    ],
-    "H": [
-     6,
-     5,
-     3
-    ],
-    "D": [
-     11,
-     10,
-     3,
-     2
-    ],
-    "C": [
-     11,
-     10
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "3♥",
-   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_c",
-   "hand": {
-    "S": [
-     8,
-     7,
-     4,
-     3
-    ],
-    "H": [
-     13,
-     9,
-     7
-    ],
-    "D": [
-     14,
-     10,
-     9,
-     2
-    ],
-    "C": [
-     9,
-     7
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "3♥",
-   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_c",
-   "hand": {
-    "S": [
-     14,
-     13,
-     4
-    ],
-    "H": [
-     9,
-     6,
-     5
-    ],
-    "D": [
-     11,
-     5,
-     4,
-     3
-    ],
-    "C": [
-     10,
-     8,
-     6
-    ]
-   },
-   "hp": 8,
-   "sp": 8,
-   "correct": "3♥",
-   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_d",
-   "hand": {
-    "S": [
-     7,
-     5,
-     3
-    ],
-    "H": [
-     9,
-     8,
-     4
-    ],
-    "D": [
-     13,
-     8,
-     5
-    ],
-    "C": [
-     14,
-     10,
-     3,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 7,
-   "correct": "4♥",
-   "why": "Hjælp i ruder (honnør): 4♥."
-  },
-  {
-   "situation": "svar_hj_d",
-   "hand": {
-    "S": [
-     8,
-     3,
-     2
-    ],
-    "H": [
-     13,
-     12,
-     7
-    ],
-    "D": [
-     11,
-     10,
-     3,
-     2
-    ],
-    "C": [
-     13,
-     7,
-     6
-    ]
-   },
-   "hp": 9,
-   "sp": 9,
-   "correct": "4♥",
-   "why": "Hjælp i ruder (4 kort): 4♥."
-  },
-  {
-   "situation": "svar_hj_d",
-   "hand": {
-    "S": [
-     12,
-     7,
-     4
-    ],
-    "H": [
-     12,
-     11,
-     6
-    ],
-    "D": [
-     9,
-     6,
-     5,
-     4
-    ],
-    "C": [
-     13,
-     6,
-     4
-    ]
-   },
-   "hp": 8,
-   "sp": 8,
-   "correct": "4♥",
-   "why": "Hjælp i ruder (4 kort): 4♥."
-  },
-  {
-   "situation": "svar_hj_d",
-   "hand": {
-    "S": [
-     13,
-     5,
-     4,
-     2
-    ],
-    "H": [
-     14,
-     6,
-     4
-    ],
-    "D": [
-     10,
-     8,
-     4,
-     3
-    ],
-    "C": [
-     11,
-     8
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "4♥",
-   "why": "Hjælp i ruder (4 kort): 4♥."
-  },
-  {
-   "situation": "svar_hj_d",
-   "hand": {
-    "S": [
-     10,
-     9,
-     8,
-     5
-    ],
-    "H": [
-     9,
-     6,
-     5
-    ],
-    "D": [
-     14,
-     12,
-     9,
-     8
-    ],
-    "C": [
-     7,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "4♥",
-   "why": "Hjælp i ruder (4 kort): 4♥."
-  },
-  {
-   "situation": "svar_hj_d",
-   "hand": {
-    "S": [
-     11,
-     4,
-     3,
-     2
-    ],
-    "H": [
-     14,
-     11,
-     3
-    ],
-    "D": [
-     7,
-     6,
-     5,
-     2
-    ],
-    "C": [
-     12,
-     3
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "4♥",
-   "why": "Hjælp i ruder (4 kort): 4♥."
-  },
-  {
-   "situation": "svar_hj_d",
-   "hand": {
-    "S": [
-     4,
-     2
-    ],
-    "H": [
-     7,
-     5,
-     2
-    ],
-    "D": [
-     14,
-     13,
-     5,
-     3
-    ],
-    "C": [
-     10,
-     7,
-     5,
-     4
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "4♥",
-   "why": "Hjælp i ruder (4 kort): 4♥."
-  },
-  {
-   "situation": "svar_hj_d",
-   "hand": {
-    "S": [
-     10,
-     9,
-     6
-    ],
-    "H": [
-     12,
-     9,
-     5
-    ],
-    "D": [
-     14,
-     13,
-     8,
-     4
-    ],
-    "C": [
-     10,
-     8,
-     2
-    ]
-   },
-   "hp": 9,
-   "sp": 9,
-   "correct": "4♥",
-   "why": "Hjælp i ruder (4 kort): 4♥."
-  },
-  {
-   "situation": "svar_hj_d",
-   "hand": {
-    "S": [
-     13,
-     12,
-     4
-    ],
-    "H": [
-     10,
-     5,
-     3
-    ],
-    "D": [
-     11,
-     6,
-     2
-    ],
-    "C": [
-     6,
-     5,
-     4,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 6,
-   "correct": "3♥",
-   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_d",
-   "hand": {
-    "S": [
-     13,
-     9,
-     7,
-     2
-    ],
-    "H": [
-     10,
-     5,
-     4
-    ],
-    "D": [
-     3,
-     2
-    ],
-    "C": [
-     12,
-     11,
-     10,
-     6
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "3♥",
-   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_d",
-   "hand": {
-    "S": [
-     12,
-     10,
-     5
-    ],
-    "H": [
-     12,
-     8,
-     4
-    ],
-    "D": [
-     10,
-     9,
-     4
-    ],
-    "C": [
-     14,
-     4,
-     3,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 8,
-   "correct": "3♥",
-   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_d",
-   "hand": {
-    "S": [
-     13,
-     12,
-     9,
-     7
-    ],
-    "H": [
-     7,
-     6,
-     4
-    ],
-    "D": [
-     11,
-     8,
-     7
-    ],
-    "C": [
-     11,
-     7,
-     4
-    ]
-   },
-   "hp": 7,
-   "sp": 7,
-   "correct": "3♥",
-   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_d",
-   "hand": {
-    "S": [
-     12,
-     9,
-     8
-    ],
-    "H": [
-     8,
-     5,
-     2
-    ],
-    "D": [
-     7,
-     6,
-     3
-    ],
-    "C": [
-     14,
-     11,
-     7,
-     4
-    ]
-   },
-   "hp": 7,
-   "sp": 7,
-   "correct": "3♥",
-   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_d",
-   "hand": {
-    "S": [
-     12,
-     9,
-     7,
-     5
-    ],
-    "H": [
-     14,
-     6,
-     2
-    ],
-    "D": [
-     7,
-     3,
-     2
-    ],
-    "C": [
-     13,
-     7,
-     3
-    ]
-   },
-   "hp": 9,
-   "sp": 9,
-   "correct": "3♥",
-   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_d",
-   "hand": {
-    "S": [
-     14,
-     11,
-     10,
-     4
-    ],
-    "H": [
-     13,
-     7,
-     3
-    ],
-    "D": [
-     8,
-     6
-    ],
-    "C": [
-     10,
-     9,
-     8,
-     6
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "3♥",
-   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_d",
-   "hand": {
-    "S": [
-     12,
-     7,
-     3,
-     2
-    ],
-    "H": [
-     12,
-     6,
-     2
-    ],
-    "D": [
-     11,
-     10,
-     5
-    ],
-    "C": [
-     14,
-     10,
-     7
-    ]
-   },
-   "hp": 9,
-   "sp": 9,
-   "correct": "3♥",
-   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_s",
-   "hand": {
-    "S": [
-     12,
-     10,
-     5
-    ],
-    "H": [
-     12,
-     10,
-     8
-    ],
-    "D": [
-     8,
-     6,
-     4
-    ],
-    "C": [
-     13,
-     9,
-     4,
-     3
-    ]
-   },
-   "hp": 7,
-   "sp": 7,
-   "correct": "4♥",
-   "why": "Hjælp i spar (honnør): 4♥."
-  },
-  {
-   "situation": "svar_hj_s",
-   "hand": {
-    "S": [
-     10,
-     9,
-     3,
-     2
-    ],
-    "H": [
-     11,
-     10,
-     5
-    ],
-    "D": [
-     9,
-     8,
-     7
-    ],
-    "C": [
-     14,
-     12,
-     9
-    ]
-   },
-   "hp": 7,
-   "sp": 7,
-   "correct": "4♥",
-   "why": "Hjælp i spar (4 kort): 4♥."
-  },
-  {
-   "situation": "svar_hj_s",
-   "hand": {
-    "S": [
-     14,
-     4
-    ],
-    "H": [
-     10,
-     7,
-     2
-    ],
-    "D": [
-     12,
-     11,
-     9,
-     4
-    ],
-    "C": [
-     7,
-     5,
-     4,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "4♥",
-   "why": "Hjælp i spar (honnør): 4♥."
-  },
-  {
-   "situation": "svar_hj_s",
-   "hand": {
-    "S": [
-     14,
-     13,
-     8,
-     7
-    ],
-    "H": [
-     10,
-     6,
-     3
-    ],
-    "D": [
-     10,
-     8,
-     3,
-     2
-    ],
-    "C": [
-     5,
-     3
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "4♥",
-   "why": "Hjælp i spar (4 kort): 4♥."
-  },
-  {
-   "situation": "svar_hj_s",
-   "hand": {
-    "S": [
-     14,
-     10,
-     5
-    ],
-    "H": [
-     12,
-     8,
-     7
-    ],
-    "D": [
-     12,
-     10,
-     5,
-     4
-    ],
-    "C": [
-     9,
-     5,
-     3
-    ]
-   },
-   "hp": 8,
-   "sp": 8,
-   "correct": "4♥",
-   "why": "Hjælp i spar (honnør): 4♥."
-  },
-  {
-   "situation": "svar_hj_s",
-   "hand": {
-    "S": [
-     14,
-     12,
-     8,
-     3
-    ],
-    "H": [
-     10,
-     8,
-     6
-    ],
-    "D": [
-     10,
-     9,
-     7
-    ],
-    "C": [
-     12,
-     11,
-     10
-    ]
-   },
-   "hp": 9,
-   "sp": 9,
-   "correct": "4♥",
-   "why": "Hjælp i spar (4 kort): 4♥."
-  },
-  {
-   "situation": "svar_hj_s",
-   "hand": {
-    "S": [
-     12,
-     8,
-     4,
-     3
-    ],
-    "H": [
-     12,
-     5,
-     2
-    ],
-    "D": [
-     10,
-     9,
-     6,
-     5
-    ],
-    "C": [
-     11,
-     6
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "4♥",
-   "why": "Hjælp i spar (4 kort): 4♥."
-  },
-  {
-   "situation": "svar_hj_s",
-   "hand": {
-    "S": [
-     7,
-     5,
-     4,
-     3
-    ],
-    "H": [
-     14,
-     5,
-     2
-    ],
-    "D": [
-     14,
-     9,
-     8,
-     2
-    ],
-    "C": [
-     8,
-     5
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "4♥",
-   "why": "Hjælp i spar (4 kort): 4♥."
-  },
-  {
-   "situation": "svar_hj_s",
-   "hand": {
-    "S": [
-     10,
-     2
-    ],
-    "H": [
-     12,
-     10,
-     6
-    ],
-    "D": [
-     14,
-     12,
-     7,
-     3
-    ],
-    "C": [
-     8,
-     6,
-     5,
-     3
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "3♥",
-   "why": "Ingen hjælp i spar (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_s",
-   "hand": {
-    "S": [
-     9,
-     7
-    ],
-    "H": [
-     11,
-     7,
-     5
-    ],
-    "D": [
-     9,
-     7,
-     5,
-     3
-    ],
-    "C": [
-     14,
-     7,
-     5,
-     4
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "3♥",
-   "why": "Ingen hjælp i spar (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_s",
-   "hand": {
-    "S": [
-     6,
-     2
-    ],
-    "H": [
-     10,
-     6,
-     2
-    ],
-    "D": [
-     11,
-     10,
-     7,
-     2
-    ],
-    "C": [
-     14,
-     10,
-     9,
-     8
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "3♥",
-   "why": "Ingen hjælp i spar (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_s",
-   "hand": {
-    "S": [
-     11,
-     6,
-     3
-    ],
-    "H": [
-     13,
-     6,
-     5
-    ],
-    "D": [
-     12,
-     9,
-     5,
-     4
-    ],
-    "C": [
-     13,
-     7,
-     6
-    ]
-   },
-   "hp": 9,
-   "sp": 9,
-   "correct": "3♥",
-   "why": "Ingen hjælp i spar (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_s",
-   "hand": {
-    "S": [
-     11,
-     10,
-     5
-    ],
-    "H": [
-     11,
-     8,
-     7
-    ],
-    "D": [
-     14,
-     12,
-     5
-    ],
-    "C": [
-     9,
-     7,
-     5,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 8,
-   "correct": "3♥",
-   "why": "Ingen hjælp i spar (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_s",
-   "hand": {
-    "S": [
-     5,
-     3,
-     2
-    ],
-    "H": [
-     9,
-     7,
-     3
-    ],
-    "D": [
-     13,
-     12,
-     9,
-     7
-    ],
-    "C": [
-     11,
-     10,
-     7
-    ]
-   },
-   "hp": 6,
-   "sp": 6,
-   "correct": "3♥",
-   "why": "Ingen hjælp i spar (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_s",
-   "hand": {
-    "S": [
-     9,
-     2
-    ],
-    "H": [
-     10,
-     8,
-     2
-    ],
-    "D": [
-     8,
-     7,
-     5,
-     4
-    ],
-    "C": [
-     13,
-     12,
-     9,
-     8
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "3♥",
-   "why": "Ingen hjælp i spar (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "svar_hj_s",
-   "hand": {
-    "S": [
-     9,
-     5
-    ],
-    "H": [
-     12,
-     4,
-     3
-    ],
-    "D": [
-     14,
-     7,
-     4,
-     2
-    ],
-    "C": [
-     10,
-     9,
-     8,
-     5
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "3♥",
-   "why": "Ingen hjælp i spar (ingen honnør, 2–3 små): 3♥."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     14,
-     9,
-     8,
-     6,
-     5
-    ],
-    "H": [
-     14,
-     9,
-     4,
-     2
-    ],
-    "D": [
-     9,
-     4
-    ],
-    "C": [
-     13,
-     4
-    ]
-   },
-   "hp": 11,
-   "sp": 13,
-   "correct": "Pas",
-   "why": "13 sp (11 hp + double ♦ = 1 + double ♣ = 1): pas – udgang er udelukket over for 6–9."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     12,
-     11,
-     9,
-     8,
-     4
-    ],
-    "H": [
-     14,
-     13,
-     6
-    ],
-    "D": [
-     12,
-     9
-    ],
-    "C": [
-     11,
-     6,
-     5
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "Pas",
-   "why": "14 sp (13 hp + double ♦ = 1): pas – udgang er udelukket over for 6–9."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11,
-     10,
-     9
-    ],
-    "H": [
-     8,
-     5
-    ],
-    "D": [
-     12,
-     6
-    ],
-    "C": [
-     12,
-     11,
-     10,
-     6
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
-   "correct": "Pas",
-   "why": "14 sp (12 hp + double ♥ = 1 + double ♦ = 1): pas – udgang er udelukket over for 6–9."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     13,
-     12,
-     10,
-     7,
-     4
-    ],
-    "H": [
-     14,
-     9,
-     7
-    ],
-    "D": [
-     12,
-     3,
-     2
-    ],
-    "C": [
-     7,
-     2
-    ]
-   },
-   "hp": 11,
-   "sp": 12,
-   "correct": "Pas",
-   "why": "12 sp (11 hp + double ♣ = 1): pas – udgang er udelukket over for 6–9."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     12,
-     11,
-     8,
-     4,
-     3
-    ],
-    "H": [
-     14
-    ],
-    "D": [
-     13,
-     11,
-     4
-    ],
-    "C": [
-     10,
-     9,
-     6,
-     4
-    ]
-   },
-   "hp": 11,
-   "sp": 14,
-   "correct": "Pas",
-   "why": "14 sp (11 hp + single ♥ = 3): pas – udgang er udelukket over for 6–9."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     14,
-     7,
-     5,
-     4,
-     3
-    ],
-    "H": [
-     14,
-     11,
-     9,
-     6
-    ],
-    "D": [
-     2
-    ],
-    "C": [
-     12,
-     9,
-     5
-    ]
-   },
-   "hp": 11,
-   "sp": 14,
-   "correct": "Pas",
-   "why": "14 sp (11 hp + single ♦ = 3): pas – udgang er udelukket over for 6–9."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     14,
-     8,
-     6,
-     5,
-     3
-    ],
-    "H": [
-     12,
-     11,
-     9,
-     4
-    ],
-    "D": [
-     14
-    ],
-    "C": [
-     10,
-     9,
-     8
-    ]
-   },
-   "hp": 11,
-   "sp": 14,
-   "correct": "Pas",
-   "why": "14 sp (11 hp + single ♦ = 3): pas – udgang er udelukket over for 6–9."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     14,
-     8,
-     7,
-     5,
-     3
-    ],
-    "H": [
-     11,
-     10,
-     7
-    ],
-    "D": [
-     10
-    ],
-    "C": [
-     14,
-     12,
-     9,
-     2
-    ]
-   },
-   "hp": 11,
-   "sp": 14,
-   "correct": "Pas",
-   "why": "14 sp (11 hp + single ♦ = 3): pas – udgang er udelukket over for 6–9."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     14,
-     10,
-     9,
-     6,
-     3
-    ],
-    "H": [
-     14,
-     13,
-     7,
-     4
-    ],
-    "D": [
-     9,
-     2
-    ],
-    "C": [
-     12,
-     3
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "3♠",
-   "why": "15 sp (13 hp + double ♦ = 1 + double ♣ = 1), men ingen sidefarve med 2–3 tabere: 3♠ – invit."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     14,
-     13,
-     10,
-     4,
-     3
-    ],
-    "H": [
-     13,
-     12,
-     9,
-     6
-    ],
-    "D": [
-     11,
-     10
-    ],
-    "C": [
-     7,
-     5
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "3♠",
-   "why": "15 sp (13 hp + double ♦ = 1 + double ♣ = 1), men ingen sidefarve med 2–3 tabere: 3♠ – invit."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     14,
-     9,
-     7,
-     4,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     8,
-     7
-    ],
-    "D": [
-     11,
-     9
-    ],
-    "C": [
-     12,
-     5
-    ]
-   },
-   "hp": 14,
-   "sp": 16,
-   "correct": "3♠",
-   "why": "16 sp (14 hp + double ♦ = 1 + double ♣ = 1), men ingen sidefarve med 2–3 tabere: 3♠ – invit."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     11,
-     10,
-     5,
-     4,
-     2
-    ],
-    "H": [
-     14,
-     13
-    ],
-    "D": [
-     14,
-     12,
-     8,
-     5
-    ],
-    "C": [
-     10,
-     6
-    ]
-   },
-   "hp": 14,
-   "sp": 16,
-   "correct": "3♠",
-   "why": "16 sp (14 hp + double ♥ = 1 + double ♣ = 1), men ingen sidefarve med 2–3 tabere: 3♠ – invit."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     10,
-     9,
-     8,
-     6,
-     4
-    ],
-    "H": [
-     14,
-     13,
-     11
-    ],
-    "D": [
-     6
-    ],
-    "C": [
-     13,
-     12,
-     7,
-     6
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "3♠",
-   "why": "16 sp (13 hp + single ♦ = 3), men ingen sidefarve med 2–3 tabere: 3♠ – invit."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     13,
-     11,
-     6,
-     5,
-     2
-    ],
-    "H": [
-     7,
-     6
-    ],
-    "D": [
-     12,
-     7
-    ],
-    "C": [
-     14,
-     13,
-     4,
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "3♠",
-   "why": "15 sp (13 hp + double ♥ = 1 + double ♦ = 1), men ingen sidefarve med 2–3 tabere: 3♠ – invit."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     13,
-     12,
-     9,
-     8,
-     2
-    ],
-    "H": [
-     14,
-     12,
-     9,
-     5
-    ],
-    "D": [
-     4,
-     2
-    ],
-    "C": [
-     12,
-     4
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "3♠",
-   "why": "15 sp (13 hp + double ♦ = 1 + double ♣ = 1), men ingen sidefarve med 2–3 tabere: 3♠ – invit."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     12,
-     9,
-     8,
-     7,
-     4
-    ],
-    "H": [
-     9,
-     3
-    ],
-    "D": [
-     14,
-     13,
-     4,
-     3
-    ],
-    "C": [
-     13,
-     12
-    ]
-   },
-   "hp": 14,
-   "sp": 16,
-   "correct": "3♠",
-   "why": "16 sp (14 hp + double ♥ = 1 + double ♣ = 1), men ingen sidefarve med 2–3 tabere: 3♠ – invit."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     14,
-     13,
-     11,
-     8,
-     7,
-     3
-    ],
-    "H": [
-     14,
-     7
-    ],
-    "D": [
-     13
-    ],
-    "C": [
-     10,
-     6,
-     5,
-     3
-    ]
-   },
-   "hp": 15,
-   "sp": 19,
-   "correct": "4♠",
-   "why": "20 sp (15 hp + double ♥ = 1 + single ♦ = 3 + 1 ekstra trumf): 4♠ direkte (17+)."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     13,
-     11,
-     10,
-     6,
-     4
-    ],
-    "H": [
-     14,
-     10,
-     8
-    ],
-    "D": [
-     12,
-     7
-    ],
-    "C": [
-     14,
-     12,
-     7
     ]
    },
    "hp": 16,
    "sp": 17,
-   "correct": "4♠",
-   "why": "17 sp (16 hp + double ♦ = 1): 4♠ direkte (17+)."
+   "correct": "4♥",
+   "why": "17 sp (16 hp + double ♦ = 1): 4♥ direkte (17+).",
+   "en": {
+    "why": "17 support points (16 HCP + doubleton ♦ = 1): 4♥ directly (17+)."
+   }
   },
   {
-   "situation": "aab_sp",
+   "situation": "aab_hj",
    "hand": {
     "S": [
-     12,
-     11,
-     10,
-     7,
-     4
+     13,
+     2
     ],
     "H": [
      14,
-     6
-    ],
-    "D": [
      13,
      11,
-     8,
-     6
-    ],
-    "C": [
-     14,
-     6
-    ]
-   },
-   "hp": 15,
-   "sp": 17,
-   "correct": "4♠",
-   "why": "17 sp (15 hp + double ♥ = 1 + double ♣ = 1): 4♠ direkte (17+)."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     14,
-     12,
-     9,
      7,
-     3
-    ],
-    "H": [
-     12,
-     11,
      5,
      3
     ],
     "D": [
-     14,
-     10
+     12
     ],
     "C": [
+     12,
+     9,
+     7,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "4♥",
+   "why": "20 sp (15 hp + double ♠ = 1 + single ♦ = 3 + 1 ekstra trumf): 4♥ direkte (17+).",
+   "en": {
+    "why": "20 support points (15 HCP + doubleton ♠ = 1 + singleton ♦ = 3 + 1 extra trump): 4♥ directly (17+)."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     11,
+     5,
+     3,
+     2
+    ],
+    "H": [
      14,
-     10
+     12,
+     9,
+     8,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     6
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "4♥",
+   "why": "20 sp (15 hp + double ♦ = 1 + single ♣ = 3 + 1 ekstra trumf): 4♥ direkte (17+).",
+   "en": {
+    "why": "20 support points (15 HCP + doubleton ♦ = 1 + singleton ♣ = 3 + 1 extra trump): 4♥ directly (17+)."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     12,
+     11
+    ],
+    "H": [
+     13,
+     11,
+     7,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     5
+    ],
+    "C": [
+     13,
+     12
     ]
    },
    "hp": 17,
    "sp": 19,
-   "correct": "4♠",
-   "why": "19 sp (17 hp + double ♦ = 1 + double ♣ = 1): 4♠ direkte (17+)."
+   "correct": "4♥",
+   "why": "19 sp (17 hp + double ♠ = 1 + double ♣ = 1): 4♥ direkte (17+).",
+   "en": {
+    "why": "19 support points (17 HCP + doubleton ♠ = 1 + doubleton ♣ = 1): 4♥ directly (17+)."
+   }
   },
   {
-   "situation": "aab_sp",
+   "situation": "aab_hj",
    "hand": {
     "S": [
      13,
      12,
-     7,
-     6,
-     3,
-     2
-    ],
-    "H": [
-     12
-    ],
-    "D": [
-     12,
-     7,
-     6
-    ],
-    "C": [
-     14,
-     12,
-     10
-    ]
-   },
-   "hp": 15,
-   "sp": 18,
-   "correct": "4♠",
-   "why": "19 sp (15 hp + single ♥ = 3 + 1 ekstra trumf): 4♠ direkte (17+)."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     14,
-     13,
-     5,
-     3,
-     2
-    ],
-    "H": [
-     2
-    ],
-    "D": [
-     13,
-     12,
-     6,
-     3
-    ],
-    "C": [
-     14,
-     8,
      5
-    ]
-   },
-   "hp": 16,
-   "sp": 19,
-   "correct": "4♠",
-   "why": "19 sp (16 hp + single ♥ = 3): 4♠ direkte (17+)."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     12,
-     11,
-     7,
-     5,
-     2
     ],
     "H": [
-     14,
-     11,
+     13,
+     12,
+     8,
+     3,
+     2
+    ],
+    "D": [
      9
     ],
-    "D": [
-     8
-    ],
     "C": [
      14,
-     13,
-     8,
-     2
-    ]
-   },
-   "hp": 15,
-   "sp": 18,
-   "correct": "4♠",
-   "why": "18 sp (15 hp + single ♦ = 3): 4♠ direkte (17+)."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     12,
-     11,
-     5,
-     4,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     3
-    ],
-    "D": [
-     13
-    ],
-    "C": [
-     8,
-     4,
-     3
-    ]
-   },
-   "hp": 15,
-   "sp": 18,
-   "correct": "4♠",
-   "why": "18 sp (15 hp + single ♦ = 3): 4♠ direkte (17+)."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     12,
      11,
      10,
-     9,
-     8,
-     5
-    ],
-    "H": [
-     10
-    ],
-    "D": [
-     14,
-     13,
-     6
-    ],
-    "C": [
-     12,
-     10,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♣",
-   "why": "16 sp (12 hp + single ♥ = 3 + 1 ekstra trumf) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     13,
-     10,
-     6,
-     5,
-     4,
-     3
-    ],
-    "H": [
-     12
-    ],
-    "D": [
-     14,
-     9,
-     5
-    ],
-    "C": [
-     13,
-     9,
      7
     ]
    },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♣",
-   "why": "16 sp (12 hp + single ♥ = 3 + 1 ekstra trumf) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér."
+   "hp": 15,
+   "sp": 18,
+   "correct": "4♥",
+   "why": "18 sp (15 hp + single ♦ = 3): 4♥ direkte (17+).",
+   "en": {
+    "why": "18 support points (15 HCP + singleton ♦ = 3): 4♥ directly (17+)."
+   }
   },
   {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     13,
-     11,
-     7,
-     3,
-     2
-    ],
-    "H": [
-     2
-    ],
-    "D": [
-     13,
-     12,
-     7,
-     4
-    ],
-    "C": [
-     12,
-     11,
-     5
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♣",
-   "why": "15 sp (12 hp + single ♥ = 3) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_sp",
+   "situation": "aab_hj",
    "hand": {
     "S": [
      14,
-     13,
-     11,
-     7,
-     5
+     10
     ],
     "H": [
-     12
-    ],
-    "D": [
-     12,
-     10,
-     2
-    ],
-    "C": [
+     14,
+     11,
      9,
-     6,
-     5,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♣",
-   "why": "15 sp (12 hp + single ♥ = 3) og 3 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11,
-     8,
      7,
      3
     ],
-    "H": [
-     14
-    ],
     "D": [
-     8,
-     5,
-     4
+     14,
+     13,
+     12,
+     8
     ],
     "C": [
-     11,
      10,
-     3
+     8
     ]
    },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♣",
-   "why": "16 sp (12 hp + single ♥ = 3 + 1 ekstra trumf) og 3 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér."
+   "hp": 18,
+   "sp": 20,
+   "correct": "4♥",
+   "why": "20 sp (18 hp + double ♠ = 1 + double ♣ = 1): 4♥ direkte (17+).",
+   "en": {
+    "why": "20 support points (18 HCP + doubleton ♠ = 1 + doubleton ♣ = 1): 4♥ directly (17+)."
+   }
   },
   {
-   "situation": "aab_sp",
+   "situation": "aab_hj",
    "hand": {
     "S": [
      14,
-     9,
-     8,
-     4,
-     3
+     2
     ],
     "H": [
-     14
-    ],
-    "D": [
-     13,
-     11,
-     6,
-     2
-    ],
-    "C": [
-     6,
-     4,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♣",
-   "why": "15 sp (12 hp + single ♥ = 3) og 3 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
      14,
-     13,
+     12,
      11,
      10,
-     2
-    ],
-    "H": [
      9
     ],
     "D": [
-     12,
-     10,
-     3
+     14,
+     9,
+     7,
+     2
     ],
     "C": [
-     13,
-     10,
-     7,
-     6
+     9,
+     2
     ]
    },
-   "hp": 13,
-   "sp": 16,
-   "correct": "3♣",
-   "why": "16 sp (13 hp + single ♥ = 3) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér."
+   "hp": 15,
+   "sp": 17,
+   "correct": "4♥",
+   "why": "17 sp (15 hp + double ♠ = 1 + double ♣ = 1): 4♥ direkte (17+).",
+   "en": {
+    "why": "17 support points (15 HCP + doubleton ♠ = 1 + doubleton ♣ = 1): 4♥ directly (17+)."
+   }
   },
   {
-   "situation": "aab_sp",
+   "situation": "aab_hj",
    "hand": {
     "S": [
      13,
      12,
      10,
-     6,
-     4
+     6
     ],
     "H": [
-     14,
+     13,
+     10,
+     9,
+     8,
+     2
+    ],
+    "D": [
      11
     ],
-    "D": [
-     6,
-     3
-    ],
     "C": [
-     14,
-     9,
-     7,
-     4
+     13,
+     11,
+     7
     ]
    },
-   "hp": 14,
+   "hp": 13,
    "sp": 16,
    "correct": "3♣",
-   "why": "16 sp (14 hp + double ♥ = 1 + double ♦ = 1) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér."
+   "why": "16 sp (13 hp + single ♦ = 3) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (13 HCP + singleton ♦ = 3) and 2 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
+   }
   },
   {
-   "situation": "aab_sp",
+   "situation": "aab_hj",
    "hand": {
     "S": [
-     14,
-     10,
-     7,
-     5,
-     2
+     9
     ],
     "H": [
-     14
+     14,
+     13,
+     10,
+     5,
+     4
+    ],
+    "D": [
+     12,
+     9,
+     8,
+     6
+    ],
+    "C": [
+     12,
+     11,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "15 sp (12 hp + single ♠ = 3) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + singleton ♠ = 3) and 2 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     5
     ],
     "D": [
      9,
@@ -4209,35 +1323,38 @@
      6
     ],
     "C": [
-     14,
-     11,
+     7,
      6,
+     4,
      3
     ]
    },
    "hp": 13,
    "sp": 16,
-   "correct": "3♦",
-   "why": "16 sp (13 hp + single ♥ = 3) og 3 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér."
+   "correct": "3♣",
+   "why": "16 sp (13 hp + single ♠ = 3) og 3 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (13 HCP + singleton ♠ = 3) and 3 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
+   }
   },
   {
-   "situation": "aab_sp",
+   "situation": "aab_hj",
    "hand": {
     "S": [
-     14,
-     13,
-     11,
-     7,
+     6,
      3
     ],
     "H": [
-     7
+     14,
+     10,
+     9,
+     7,
+     5,
+     4
     ],
     "D": [
-     9,
-     8,
-     6,
-     3
+     14,
+     8
     ],
     "C": [
      14,
@@ -4246,1791 +1363,3984 @@
     ]
    },
    "hp": 12,
-   "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (12 hp + single ♥ = 3) og 3 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér."
+   "sp": 14,
+   "correct": "3♣",
+   "why": "15 sp (12 hp + double ♠ = 1 + double ♦ = 1 + 1 ekstra trumf) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + doubleton ♠ = 1 + doubleton ♦ = 1 + 1 extra trump) and 2 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
+   }
   },
   {
-   "situation": "aab_sp",
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     8
+    ],
+    "H": [
+     14,
+     11,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     6,
+     5
+    ],
+    "C": [
+     14,
+     10,
+     8,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "15 sp (13 hp + double ♠ = 1 + double ♦ = 1) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♦ = 1) and 2 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_hj",
    "hand": {
     "S": [
      13,
+     6
+    ],
+    "H": [
+     14,
+     9,
      8,
      5,
      3,
      2
     ],
-    "H": [
+    "D": [
      14,
+     5
+    ],
+    "C": [
      12,
-     10,
-     2
+     8,
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "16 sp (13 hp + double ♠ = 1 + double ♦ = 1 + 1 ekstra trumf) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (13 HCP + doubleton ♠ = 1 + doubleton ♦ = 1 + 1 extra trump) and 2 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     13,
+     12,
+     7,
+     5,
+     4
     ],
     "D": [
      13,
-     7,
-     6
+     11,
+     2
     ],
     "C": [
+     10,
+     7,
+     5,
      4
     ]
    },
    "hp": 12,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (12 hp + single ♣ = 3) og 2 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér."
+   "correct": "3♣",
+   "why": "15 sp (12 hp + single ♠ = 3) og 3 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + singleton ♠ = 3) and 3 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
+   }
   },
   {
-   "situation": "aab_sp",
+   "situation": "aab_hj",
    "hand": {
     "S": [
+     12,
+     11,
+     8,
+     7
+    ],
+    "H": [
      13,
      12,
      11,
-     6,
+     8,
      4
-    ],
-    "H": [
-     14,
-     9,
-     6,
-     5
     ],
     "D": [
-     13,
-     7,
-     4
+     14
     ],
     "C": [
-     6
+     6,
+     4,
+     2
     ]
    },
    "hp": 13,
    "sp": 16,
-   "correct": "3♦",
-   "why": "16 sp (13 hp + single ♣ = 3) og 2 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér."
+   "correct": "3♣",
+   "why": "16 sp (13 hp + single ♦ = 3) og 3 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (13 HCP + singleton ♦ = 3) and 3 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
+   }
   },
   {
-   "situation": "aab_sp",
+   "situation": "aab_hj",
    "hand": {
     "S": [
+     13,
+     3
+    ],
+    "H": [
      14,
-     12,
      11,
-     7,
+     10,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     9
+    ],
+    "C": [
      6,
      3
-    ],
-    "H": [
-     12,
-     8,
-     6
-    ],
-    "D": [
-     13,
-     10,
-     2
-    ],
-    "C": [
-     8
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♦",
-   "why": "16 sp (12 hp + single ♣ = 3 + 1 ekstra trumf) og 2 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
-     8,
-     6
-    ],
-    "H": [
-     14,
-     11,
-     4
-    ],
-    "D": [
-     11,
-     9,
-     8,
-     3
-    ],
-    "C": [
-     3
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (12 hp + single ♣ = 3) og 3 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     13,
-     11,
-     5,
-     4,
-     2
-    ],
-    "H": [
-     13,
-     10,
-     9,
-     8
-    ],
-    "D": [
-     14,
-     5,
-     2
-    ],
-    "C": [
-     12
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "3♦",
-   "why": "16 sp (13 hp + single ♣ = 3) og 2 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
-     14,
-     12,
-     9,
-     5,
-     4,
-     2
-    ],
-    "H": [
-     7,
-     5
-    ],
-    "D": [
-     11,
-     10,
-     6
-    ],
-    "C": [
-     13,
-     12
     ]
    },
    "hp": 12,
    "sp": 14,
    "correct": "3♦",
-   "why": "15 sp (12 hp + double ♥ = 1 + double ♣ = 1 + 1 ekstra trumf) og 3 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér."
+   "why": "15 sp (12 hp + double ♠ = 1 + double ♣ = 1 + 1 ekstra trumf) og 2 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + doubleton ♠ = 1 + doubleton ♣ = 1 + 1 extra trump) and 2 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
+   }
   },
   {
-   "situation": "aab_sp",
+   "situation": "aab_hj",
    "hand": {
     "S": [
+     9
+    ],
+    "H": [
      14,
+     13,
+     10,
+     8,
+     5
+    ],
+    "D": [
+     5,
+     4,
+     3
+    ],
+    "C": [
      13,
      12,
      4,
-     3,
-     2
-    ],
-    "H": [
-     10,
-     6,
-     4
-    ],
-    "D": [
-     13,
-     10,
-     9
-    ],
-    "C": [
      2
     ]
    },
    "hp": 12,
    "sp": 15,
-   "correct": "3♥",
-   "why": "16 sp (12 hp + single ♣ = 3 + 1 ekstra trumf) og 3 tabere i hjerter – den svageste farve: 3♥ er trial bid og beder om hjælp dér."
+   "correct": "3♦",
+   "why": "15 sp (12 hp + single ♠ = 3) og 3 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + singleton ♠ = 3) and 3 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
+   }
   },
   {
-   "situation": "aab_sp",
+   "situation": "aab_hj",
    "hand": {
     "S": [
-     13,
-     12,
-     10,
-     9,
-     3
+     9
     ],
     "H": [
-     14,
-     10,
-     9,
-     5
-    ],
-    "D": [
-     13,
-     11
-    ],
-    "C": [
-     9,
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "3♥",
-   "why": "15 sp (13 hp + double ♦ = 1 + double ♣ = 1) og 2 tabere i hjerter – den svageste farve: 3♥ er trial bid og beder om hjælp dér."
-  },
-  {
-   "situation": "aab_sp",
-   "hand": {
-    "S": [
      14,
      12,
      11,
+     6,
+     2
+    ],
+    "D": [
      9,
+     5,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     10
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "16 sp (13 hp + single ♠ = 3) og 3 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (13 HCP + singleton ♠ = 3) and 3 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     3,
+     2
+    ],
+    "D": [
+     10,
+     7,
+     5
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "15 sp (12 hp + single ♣ = 3) og 3 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + singleton ♣ = 3) and 3 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10,
+     8
+    ],
+    "D": [
+     11,
+     5,
+     4
+    ],
+    "C": [
+     13,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "16 sp (13 hp + single ♠ = 3) og 3 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (13 HCP + singleton ♠ = 3) and 3 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
      5
     ],
     "H": [
+     12,
+     11,
+     9,
+     7,
+     3
+    ],
+    "D": [
+     13,
+     5,
+     4
+    ],
+    "C": [
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "16 sp (13 hp + single ♣ = 3) og 2 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (13 HCP + singleton ♣ = 3) and 2 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     4
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     7,
+     5
+    ],
+    "D": [
+     12,
+     7,
+     4
+    ],
+    "C": [
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "15 sp (12 hp + single ♣ = 3) og 2 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + singleton ♣ = 3) and 2 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     9
+    ],
+    "H": [
+     13,
+     10,
      8,
      7,
      6
     ],
     "D": [
      14,
-     7
+     8,
+     3,
+     2
     ],
     "C": [
-     14,
-     9,
-     7
+     12,
+     9
     ]
    },
-   "hp": 15,
-   "sp": 16,
-   "correct": "3♥",
-   "why": "16 sp (15 hp + double ♦ = 1) og 3 tabere i hjerter – den svageste farve: 3♥ er trial bid og beder om hjælp dér."
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "15 sp (13 hp + double ♠ = 1 + double ♣ = 1) og 2 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♣ = 1) and 2 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
+   }
   },
   {
-   "situation": "aab_sp",
+   "situation": "aab_hj",
    "hand": {
     "S": [
-     13,
      12,
-     10,
-     7,
-     4
+     3,
+     2
     ],
     "H": [
-     9,
-     5,
+     14,
+     11,
+     8,
+     7,
      2
     ],
     "D": [
-     14,
-     11,
-     5
+     12,
+     11
     ],
     "C": [
      14,
+     7,
      2
     ]
    },
    "hp": 14,
    "sp": 15,
-   "correct": "3♥",
-   "why": "15 sp (14 hp + double ♣ = 1) og 3 tabere i hjerter – den svageste farve: 3♥ er trial bid og beder om hjælp dér."
+   "correct": "2♠",
+   "why": "15 sp (14 hp + double ♦ = 1) og 2 tabere i spar – den svageste farve: 2♠ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (14 HCP + doubleton ♦ = 1) and 2 losers in spades – the weakest suit: 2♠ is a trial bid and asks for help there."
+   }
   },
   {
-   "situation": "aab_sp",
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     10,
+     5
+    ],
+    "D": [
+     14,
+     11,
+     3
+    ],
+    "C": [
+     7,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "16 sp (15 hp + double ♣ = 1) og 2 tabere i spar – den svageste farve: 2♠ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (15 HCP + doubleton ♣ = 1) and 2 losers in spades – the weakest suit: 2♠ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     8,
+     7,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     8
+    ],
+    "D": [
+     13,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "16 sp (13 hp + single ♣ = 3) og 3 tabere i spar – den svageste farve: 2♠ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (13 HCP + singleton ♣ = 3) and 3 losers in spades – the weakest suit: 2♠ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     9,
+     4
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     8,
+     6,
+     4
+    ],
+    "D": [
+     13,
+     11,
+     8
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2♠",
+   "why": "16 sp (12 hp + single ♣ = 3 + 1 ekstra trumf) og 2 tabere i spar – den svageste farve: 2♠ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (12 HCP + singleton ♣ = 3 + 1 extra trump) and 2 losers in spades – the weakest suit: 2♠ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     12,
+     10,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     8,
+     7,
+     5
+    ],
+    "D": [
+     12,
+     10,
+     2
+    ],
+    "C": [
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2♠",
+   "why": "16 sp (12 hp + single ♣ = 3 + 1 ekstra trumf) og 2 tabere i spar – den svageste farve: 2♠ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (12 HCP + singleton ♣ = 3 + 1 extra trump) and 2 losers in spades – the weakest suit: 2♠ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_hj",
    "hand": {
     "S": [
      13,
-     12,
+     11,
+     9
+    ],
+    "H": [
+     13,
+     10,
+     8,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     2
+    ],
+    "C": [
+     11,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "15 sp (12 hp + double ♦ = 1 + double ♣ = 1 + 1 ekstra trumf) og 2 tabere i spar – den svageste farve: 2♠ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + doubleton ♦ = 1 + doubleton ♣ = 1 + 1 extra trump) and 2 losers in spades – the weakest suit: 2♠ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
      11,
      10,
      9
     ],
     "H": [
+     14,
+     13,
+     11,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     8,
+     7,
+     2
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2♠",
+   "why": "15 sp (12 hp + single ♣ = 3) og 3 tabere i spar – den svageste farve: 2♠ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + singleton ♣ = 3) and 3 losers in spades – the weakest suit: 2♠ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     10
+    ],
+    "D": [
+     12,
+     10,
+     4
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "16 sp (13 hp + single ♣ = 3) og 3 tabere i spar – den svageste farve: 2♠ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (13 HCP + singleton ♣ = 3) and 3 losers in spades – the weakest suit: 2♠ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "svar_hj_c",
+   "hand": {
+    "S": [
+     9,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     5,
+     3,
+     2
+    ],
+    "D": [
+     12,
      8,
      6,
+     4
+    ],
+    "C": [
+     14,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "4♥",
+   "why": "Hjælp i klør (honnør): 4♥.",
+   "en": {
+    "why": "Help in clubs (an honour): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_c",
+   "hand": {
+    "S": [
+     7,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     9,
+     7
+    ],
+    "D": [
+     9,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     6
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "4♥",
+   "why": "Hjælp i klør (honnør): 4♥.",
+   "en": {
+    "why": "Help in clubs (an honour): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_c",
+   "hand": {
+    "S": [
+     5,
+     3,
+     2
+    ],
+    "H": [
+     8,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     7,
+     5
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "correct": "4♥",
+   "why": "Hjælp i klør (4 kort): 4♥.",
+   "en": {
+    "why": "Help in clubs (4 cards): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_c",
+   "hand": {
+    "S": [
+     11,
+     9,
+     8,
+     3
+    ],
+    "H": [
+     10,
+     7,
+     5
+    ],
+    "D": [
+     12,
+     10,
+     5
+    ],
+    "C": [
+     14,
+     10,
+     6
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "4♥",
+   "why": "Hjælp i klør (honnør): 4♥.",
+   "en": {
+    "why": "Help in clubs (an honour): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_c",
+   "hand": {
+    "S": [
+     12,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     12,
+     9,
+     4
+    ],
+    "D": [
+     7,
+     6,
+     5
+    ],
+    "C": [
+     13,
+     7,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "4♥",
+   "why": "Hjælp i klør (honnør): 4♥.",
+   "en": {
+    "why": "Help in clubs (an honour): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_c",
+   "hand": {
+    "S": [
+     8,
+     5
+    ],
+    "H": [
+     12,
+     11,
+     4
+    ],
+    "D": [
+     14,
+     7,
+     5,
+     3
+    ],
+    "C": [
+     9,
+     7,
+     5,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "4♥",
+   "why": "Hjælp i klør (4 kort): 4♥.",
+   "en": {
+    "why": "Help in clubs (4 cards): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_c",
+   "hand": {
+    "S": [
+     13,
+     12,
+     4
+    ],
+    "H": [
+     8,
+     6,
+     5
+    ],
+    "D": [
+     7,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     8,
+     4,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "4♥",
+   "why": "Hjælp i klør (4 kort): 4♥.",
+   "en": {
+    "why": "Help in clubs (4 cards): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_c",
+   "hand": {
+    "S": [
+     10,
+     6,
+     2
+    ],
+    "H": [
+     8,
+     7,
+     5
+    ],
+    "D": [
+     14,
+     8,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     6
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "4♥",
+   "why": "Hjælp i klør (4 kort): 4♥.",
+   "en": {
+    "why": "Help in clubs (4 cards): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_c",
+   "hand": {
+    "S": [
+     12,
+     8,
+     6,
+     2
+    ],
+    "H": [
+     12,
+     10,
+     6
+    ],
+    "D": [
+     12,
+     10,
+     9,
+     7
+    ],
+    "C": [
+     7,
+     6
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "3♥",
+   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in clubs (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "svar_hj_c",
+   "hand": {
+    "S": [
+     11,
+     7,
+     3
+    ],
+    "H": [
+     10,
+     8,
+     7
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     6
+    ],
+    "C": [
+     10,
+     9,
+     7
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "3♥",
+   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in clubs (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "svar_hj_c",
+   "hand": {
+    "S": [
+     12,
+     10,
+     8
+    ],
+    "H": [
+     11,
+     6,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     7,
+     5
+    ],
+    "C": [
+     11,
+     6,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "correct": "3♥",
+   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in clubs (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "svar_hj_c",
+   "hand": {
+    "S": [
+     12,
+     9,
+     4,
+     2
+    ],
+    "H": [
+     12,
+     4,
      3
     ],
     "D": [
      13,
      11,
      7,
-     4
+     6
     ],
     "C": [
-     12
+     7,
+     4
     ]
    },
-   "hp": 12,
-   "sp": 15,
+   "hp": 8,
+   "sp": 9,
    "correct": "3♥",
-   "why": "15 sp (12 hp + single ♣ = 3) og 3 tabere i hjerter – den svageste farve: 3♥ er trial bid og beder om hjælp dér."
+   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in clubs (no honour, 2–3 small cards): 3♥."
+   }
   },
   {
-   "situation": "aab_sp",
+   "situation": "svar_hj_c",
    "hand": {
     "S": [
-     14,
-     13,
+     12,
      11,
-     10,
+     6,
      4
     ],
     "H": [
      11,
+     9,
+     8
+    ],
+    "D": [
+     13,
+     7,
+     6
+    ],
+    "C": [
+     11,
+     9,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "correct": "3♥",
+   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in clubs (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "svar_hj_c",
+   "hand": {
+    "S": [
+     12,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     12,
      8,
      6
     ],
     "D": [
-     3
+     11,
+     6,
+     5,
+     2
     ],
     "C": [
-     13,
-     8,
      4,
      2
     ]
    },
-   "hp": 12,
-   "sp": 15,
+   "hp": 5,
+   "sp": 6,
    "correct": "3♥",
-   "why": "15 sp (12 hp + single ♦ = 3) og 3 tabere i hjerter – den svageste farve: 3♥ er trial bid og beder om hjælp dér."
+   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in clubs (no honour, 2–3 small cards): 3♥."
+   }
   },
   {
-   "situation": "aab_sp",
+   "situation": "svar_hj_c",
    "hand": {
     "S": [
-     14,
-     12,
-     11,
+     13,
      10,
-     3
+     8,
+     5
     ],
     "H": [
      9,
-     4,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     10,
+     9,
+     6
+    ],
+    "C": [
+     8,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "3♥",
+   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in clubs (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "svar_hj_c",
+   "hand": {
+    "S": [
+     14,
+     10,
+     8
+    ],
+    "H": [
+     11,
+     10,
+     8
+    ],
+    "D": [
+     12,
+     10,
+     9,
+     3
+    ],
+    "C": [
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "3♥",
+   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in clubs (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "svar_hj_d",
+   "hand": {
+    "S": [
+     6,
+     4
+    ],
+    "H": [
+     11,
+     9,
      2
     ],
     "D": [
-     13
+     12,
+     10,
+     9,
+     5
     ],
     "C": [
+     13,
      12,
-     8,
      5,
      4
     ]
    },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♥",
-   "why": "15 sp (12 hp + single ♦ = 3) og 3 tabere i hjerter – den svageste farve: 3♥ er trial bid og beder om hjælp dér."
+   "hp": 8,
+   "sp": 9,
+   "correct": "4♥",
+   "why": "Hjælp i ruder (4 kort): 4♥.",
+   "en": {
+    "why": "Help in diamonds (4 cards): 4♥."
+   }
   },
   {
-   "situation": "aab_sp",
+   "situation": "svar_hj_d",
    "hand": {
     "S": [
-     11,
-     10,
-     9,
+     5,
      4,
      2
     ],
     "H": [
+     10,
+     7,
+     2
+    ],
+    "D": [
      14,
+     7,
+     2
+    ],
+    "C": [
+     14,
+     9,
+     4,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "correct": "4♥",
+   "why": "Hjælp i ruder (honnør): 4♥.",
+   "en": {
+    "why": "Help in diamonds (an honour): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_d",
+   "hand": {
+    "S": [
+     13,
+     6
+    ],
+    "H": [
+     7,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     10,
      8,
+     7
+    ],
+    "C": [
+     11,
+     8,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "4♥",
+   "why": "Hjælp i ruder (4 kort): 4♥.",
+   "en": {
+    "why": "Help in diamonds (4 cards): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_d",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9,
+     2
+    ],
+    "H": [
+     11,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     11,
+     2
+    ],
+    "C": [
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "correct": "4♥",
+   "why": "Hjælp i ruder (honnør): 4♥.",
+   "en": {
+    "why": "Help in diamonds (an honour): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_d",
+   "hand": {
+    "S": [
+     10,
+     8,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     9,
+     4
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     7
+    ],
+    "C": [
+     9,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "4♥",
+   "why": "Hjælp i ruder (4 kort): 4♥.",
+   "en": {
+    "why": "Help in diamonds (4 cards): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_d",
+   "hand": {
+    "S": [
+     12,
+     10,
+     9,
+     2
+    ],
+    "H": [
+     9,
+     8,
+     2
+    ],
+    "D": [
+     12,
+     8,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     8
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "4♥",
+   "why": "Hjælp i ruder (4 kort): 4♥.",
+   "en": {
+    "why": "Help in diamonds (4 cards): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_d",
+   "hand": {
+    "S": [
+     10,
+     6,
+     5
+    ],
+    "H": [
+     11,
+     10,
+     6
+    ],
+    "D": [
+     10,
+     8,
+     7,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 6,
+   "correct": "4♥",
+   "why": "Hjælp i ruder (4 kort): 4♥.",
+   "en": {
+    "why": "Help in diamonds (4 cards): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_d",
+   "hand": {
+    "S": [
+     13,
+     8,
+     7,
+     6
+    ],
+    "H": [
+     8,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     7,
+     6,
+     2
+    ],
+    "C": [
+     12,
+     9
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "4♥",
+   "why": "Hjælp i ruder (4 kort): 4♥.",
+   "en": {
+    "why": "Help in diamonds (4 cards): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_d",
+   "hand": {
+    "S": [
+     13,
+     11,
+     4
+    ],
+    "H": [
+     9,
+     8,
+     2
+    ],
+    "D": [
+     10,
+     8,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     7,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 6,
+   "correct": "3♥",
+   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in diamonds (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "svar_hj_d",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     3
+    ],
+    "H": [
+     7,
+     5,
+     2
+    ],
+    "D": [
+     11,
+     10,
+     6
+    ],
+    "C": [
+     13,
+     9,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "3♥",
+   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in diamonds (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "svar_hj_d",
+   "hand": {
+    "S": [
+     10,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     10,
+     7,
+     5
+    ],
+    "D": [
+     8,
+     5
+    ],
+    "C": [
+     14,
+     11,
+     6,
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "3♥",
+   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in diamonds (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "svar_hj_d",
+   "hand": {
+    "S": [
+     12,
+     10,
+     7
+    ],
+    "H": [
+     11,
+     8,
+     5
+    ],
+    "D": [
+     11,
+     9,
+     7
+    ],
+    "C": [
+     13,
+     12,
+     6,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "correct": "3♥",
+   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in diamonds (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "svar_hj_d",
+   "hand": {
+    "S": [
+     11,
+     6,
+     3,
+     2
+    ],
+    "H": [
+     11,
+     7,
+     6
+    ],
+    "D": [
+     11,
+     2
+    ],
+    "C": [
+     12,
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "3♥",
+   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in diamonds (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "svar_hj_d",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10
+    ],
+    "H": [
+     6,
+     3,
+     2
+    ],
+    "D": [
+     5,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     8
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "correct": "3♥",
+   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in diamonds (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "svar_hj_d",
+   "hand": {
+    "S": [
+     12,
+     8,
+     5
+    ],
+    "H": [
+     12,
+     7,
+     6
+    ],
+    "D": [
+     10,
+     8,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     3,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 6,
+   "correct": "3♥",
+   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in diamonds (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "svar_hj_d",
+   "hand": {
+    "S": [
+     14,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     13,
+     8,
+     6
+    ],
+    "D": [
+     10,
+     7,
+     2
+    ],
+    "C": [
+     9,
+     4,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "3♥",
+   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in diamonds (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "svar_hj_s",
+   "hand": {
+    "S": [
+     14,
+     10
+    ],
+    "H": [
+     11,
      5,
      4
     ],
     "D": [
-     13
+     12,
+     8,
+     7,
+     5
     ],
     "C": [
+     11,
+     10,
+     5,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "4♥",
+   "why": "Hjælp i spar (honnør): 4♥.",
+   "en": {
+    "why": "Help in spades (an honour): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_s",
+   "hand": {
+    "S": [
+     11,
+     9,
+     8,
+     6
+    ],
+    "H": [
      13,
+     11,
+     9
+    ],
+    "D": [
+     10,
+     7
+    ],
+    "C": [
+     11,
+     9,
+     7,
+     4
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "4♥",
+   "why": "Hjælp i spar (4 kort): 4♥.",
+   "en": {
+    "why": "Help in spades (4 cards): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_s",
+   "hand": {
+    "S": [
+     14,
      12,
      7
+    ],
+    "H": [
+     10,
+     9,
+     3
+    ],
+    "D": [
+     10,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 6,
+   "correct": "4♥",
+   "why": "Hjælp i spar (honnør): 4♥.",
+   "en": {
+    "why": "Help in spades (an honour): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_s",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9,
+     6
+    ],
+    "H": [
+     10,
+     9,
+     2
+    ],
+    "D": [
+     13,
+     11,
+     8,
+     5
+    ],
+    "C": [
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "4♥",
+   "why": "Hjælp i spar (4 kort): 4♥.",
+   "en": {
+    "why": "Help in spades (4 cards): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_s",
+   "hand": {
+    "S": [
+     8,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     12,
+     9,
+     2
+    ],
+    "D": [
+     12,
+     8,
+     2
+    ],
+    "C": [
+     13,
+     10,
+     7
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "4♥",
+   "why": "Hjælp i spar (4 kort): 4♥.",
+   "en": {
+    "why": "Help in spades (4 cards): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_s",
+   "hand": {
+    "S": [
+     13,
+     11,
+     7,
+     4
+    ],
+    "H": [
+     8,
+     5,
+     4
+    ],
+    "D": [
+     8,
+     6,
+     2
+    ],
+    "C": [
+     13,
+     10,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "4♥",
+   "why": "Hjælp i spar (4 kort): 4♥.",
+   "en": {
+    "why": "Help in spades (4 cards): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_s",
+   "hand": {
+    "S": [
+     14,
+     7,
+     4,
+     2
+    ],
+    "H": [
+     11,
+     7,
+     5
+    ],
+    "D": [
+     11,
+     10,
+     6,
+     2
+    ],
+    "C": [
+     11,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "4♥",
+   "why": "Hjælp i spar (4 kort): 4♥.",
+   "en": {
+    "why": "Help in spades (4 cards): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_s",
+   "hand": {
+    "S": [
+     13,
+     11,
+     7,
+     5
+    ],
+    "H": [
+     9,
+     8,
+     3
+    ],
+    "D": [
+     13,
+     8,
+     5,
+     3
+    ],
+    "C": [
+     10,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "4♥",
+   "why": "Hjælp i spar (4 kort): 4♥.",
+   "en": {
+    "why": "Help in spades (4 cards): 4♥."
+   }
+  },
+  {
+   "situation": "svar_hj_s",
+   "hand": {
+    "S": [
+     11,
+     10,
+     3
+    ],
+    "H": [
+     6,
+     4,
+     2
+    ],
+    "D": [
+     7,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "3♥",
+   "why": "Ingen hjælp i spar (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in spades (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "svar_hj_s",
+   "hand": {
+    "S": [
+     8,
+     7
+    ],
+    "H": [
+     11,
+     9,
+     5
+    ],
+    "D": [
+     12,
+     10,
+     9,
+     8
+    ],
+    "C": [
+     14,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "3♥",
+   "why": "Ingen hjælp i spar (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in spades (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "svar_hj_s",
+   "hand": {
+    "S": [
+     11,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     8,
+     6,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "correct": "3♥",
+   "why": "Ingen hjælp i spar (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in spades (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "svar_hj_s",
+   "hand": {
+    "S": [
+     10,
+     8,
+     3
+    ],
+    "H": [
+     8,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     9,
+     4
+    ],
+    "C": [
+     14,
+     10,
+     9,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "3♥",
+   "why": "Ingen hjælp i spar (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in spades (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "svar_hj_s",
+   "hand": {
+    "S": [
+     10,
+     8,
+     4
+    ],
+    "H": [
+     8,
+     5,
+     3
+    ],
+    "D": [
+     10,
+     9,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     6,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "3♥",
+   "why": "Ingen hjælp i spar (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in spades (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "svar_hj_s",
+   "hand": {
+    "S": [
+     11,
+     9,
+     4
+    ],
+    "H": [
+     12,
+     6,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     4
+    ],
+    "C": [
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "correct": "3♥",
+   "why": "Ingen hjælp i spar (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in spades (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "svar_hj_s",
+   "hand": {
+    "S": [
+     9,
+     3
+    ],
+    "H": [
+     11,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     9,
+     6,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "3♥",
+   "why": "Ingen hjælp i spar (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in spades (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "svar_hj_s",
+   "hand": {
+    "S": [
+     9,
+     2
+    ],
+    "H": [
+     13,
+     8,
+     6
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     2
+    ],
+    "C": [
+     8,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "3♥",
+   "why": "Ingen hjælp i spar (ingen honnør, 2–3 små): 3♥.",
+   "en": {
+    "why": "No help in spades (no honour, 2–3 small cards): 3♥."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10,
+     9,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     7
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     11,
+     9,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "Pas",
+   "why": "14 sp (11 hp + single ♦ = 3): pas – udgang er udelukket over for 6–9.",
+   "en": {
+    "why": "14 support points (11 HCP + singleton ♦ = 3): pass – game is out of reach opposite 6–9."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     8,
+     6
+    ],
+    "H": [
+     13,
+     7,
+     2
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     11,
+     10,
+     6,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "Pas",
+   "why": "14 sp (11 hp + single ♦ = 3): pas – udgang er udelukket over for 6–9.",
+   "en": {
+    "why": "14 support points (11 HCP + singleton ♦ = 3): pass – game is out of reach opposite 6–9."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     10,
+     7
+    ],
+    "H": [
+     12,
+     11,
+     3
+    ],
+    "D": [
+     8,
+     7
+    ],
+    "C": [
+     12,
+     4,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "Pas",
+   "why": "12 sp (11 hp + double ♦ = 1): pas – udgang er udelukket over for 6–9.",
+   "en": {
+    "why": "12 support points (11 HCP + doubleton ♦ = 1): pass – game is out of reach opposite 6–9."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     9,
+     2
+    ],
+    "H": [
+     5,
+     2
+    ],
+    "D": [
+     14,
+     8,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     9
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "13 sp (11 hp + double ♥ = 1 + double ♣ = 1): pas – udgang er udelukket over for 6–9.",
+   "en": {
+    "why": "13 support points (11 HCP + doubleton ♥ = 1 + doubleton ♣ = 1): pass – game is out of reach opposite 6–9."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     4,
+     2
+    ],
+    "H": [
+     7,
+     6
+    ],
+    "D": [
+     14,
+     8,
+     6
+    ],
+    "C": [
+     14,
+     10,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "Pas",
+   "why": "14 sp (13 hp + double ♥ = 1): pas – udgang er udelukket over for 6–9.",
+   "en": {
+    "why": "14 support points (13 HCP + doubleton ♥ = 1): pass – game is out of reach opposite 6–9."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     6,
+     3
+    ],
+    "H": [
+     12,
+     11
+    ],
+    "D": [
+     12,
+     10,
+     7,
+     5
+    ],
+    "C": [
+     10,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "Pas",
+   "why": "14 sp (12 hp + double ♥ = 1 + double ♣ = 1): pas – udgang er udelukket over for 6–9.",
+   "en": {
+    "why": "14 support points (12 HCP + doubleton ♥ = 1 + doubleton ♣ = 1): pass – game is out of reach opposite 6–9."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     8,
+     7
+    ],
+    "H": [
+     4,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     8
+    ],
+    "C": [
+     14,
+     7,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "Pas",
+   "why": "14 sp (13 hp + double ♥ = 1): pas – udgang er udelukket over for 6–9.",
+   "en": {
+    "why": "14 support points (13 HCP + doubleton ♥ = 1): pass – game is out of reach opposite 6–9."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     10,
+     8
+    ],
+    "D": [
+     14,
+     9,
+     8
+    ],
+    "C": [
+     10,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "14 sp (11 hp + double ♥ = 1 + double ♣ = 1 + 1 ekstra trumf): pas – udgang er udelukket over for 6–9.",
+   "en": {
+    "why": "14 support points (11 HCP + doubleton ♥ = 1 + doubleton ♣ = 1 + 1 extra trump): pass – game is out of reach opposite 6–9."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     11,
+     9,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     6,
+     3
+    ],
+    "D": [
+     13,
+     6
+    ],
+    "C": [
+     7,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "16 sp (14 hp + double ♦ = 1 + double ♣ = 1), men ingen sidefarve med 2–3 tabere: 3♠ – invit.",
+   "en": {
+    "why": "16 support points (14 HCP + doubleton ♦ = 1 + doubleton ♣ = 1), but no side suit with 2–3 losers: 3♠ – invitational."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     9,
+     6,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     11,
+     8
+    ],
+    "D": [
+     14,
+     13,
+     8
+    ],
+    "C": [
+     11,
+     8
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♠",
+   "why": "16 sp (13 hp + double ♥ = 1 + double ♣ = 1 + 1 ekstra trumf), men ingen sidefarve med 2–3 tabere: 3♠ – invit.",
+   "en": {
+    "why": "16 support points (13 HCP + doubleton ♥ = 1 + doubleton ♣ = 1 + 1 extra trump), but no side suit with 2–3 losers: 3♠ – invitational."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9,
+     5,
+     2
+    ],
+    "H": [
+     9,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     7
+    ],
+    "C": [
+     14,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♠",
+   "why": "15 sp (13 hp + double ♥ = 1 + double ♣ = 1), men ingen sidefarve med 2–3 tabere: 3♠ – invit.",
+   "en": {
+    "why": "15 support points (13 HCP + doubleton ♥ = 1 + doubleton ♣ = 1), but no side suit with 2–3 losers: 3♠ – invitational."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     13,
+     9,
+     8,
+     7,
+     3
+    ],
+    "H": [
+     13,
+     6
+    ],
+    "D": [
+     13,
+     12,
+     6,
+     4
+    ],
+    "C": [
+     13,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "16 sp (14 hp + double ♥ = 1 + double ♣ = 1), men ingen sidefarve med 2–3 tabere: 3♠ – invit.",
+   "en": {
+    "why": "16 support points (14 HCP + doubleton ♥ = 1 + doubleton ♣ = 1), but no side suit with 2–3 losers: 3♠ – invitational."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     5
+    ],
+    "D": [
+     13,
+     11
+    ],
+    "C": [
+     10,
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♠",
+   "why": "16 sp (13 hp + double ♦ = 1 + double ♣ = 1 + 1 ekstra trumf), men ingen sidefarve med 2–3 tabere: 3♠ – invit.",
+   "en": {
+    "why": "16 support points (13 HCP + doubleton ♦ = 1 + doubleton ♣ = 1 + 1 extra trump), but no side suit with 2–3 losers: 3♠ – invitational."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     13,
+     9,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     8
+    ],
+    "D": [
+     14,
+     12,
+     8,
+     7
+    ],
+    "C": [
+     11,
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "16 sp (14 hp + double ♥ = 1 + double ♣ = 1), men ingen sidefarve med 2–3 tabere: 3♠ – invit.",
+   "en": {
+    "why": "16 support points (14 HCP + doubleton ♥ = 1 + doubleton ♣ = 1), but no side suit with 2–3 losers: 3♠ – invitational."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     4,
+     2
+    ],
+    "H": [
+     10,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     6
+    ],
+    "C": [
+     11,
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♠",
+   "why": "15 sp (13 hp + double ♥ = 1 + double ♣ = 1), men ingen sidefarve med 2–3 tabere: 3♠ – invit.",
+   "en": {
+    "why": "15 support points (13 HCP + doubleton ♥ = 1 + doubleton ♣ = 1), but no side suit with 2–3 losers: 3♠ – invitational."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     8,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     6
+    ],
+    "D": [
+     5,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♠",
+   "why": "16 sp (14 hp + double ♥ = 1 + double ♦ = 1), men ingen sidefarve med 2–3 tabere: 3♠ – invit.",
+   "en": {
+    "why": "16 support points (14 HCP + doubleton ♥ = 1 + doubleton ♦ = 1), but no side suit with 2–3 losers: 3♠ – invitational."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     9,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     6,
+     4
+    ],
+    "D": [
+     11,
+     9,
+     3
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "4♠",
+   "why": "18 sp (15 hp + single ♣ = 3): 4♠ direkte (17+).",
+   "en": {
+    "why": "18 support points (15 HCP + singleton ♣ = 3): 4♠ directly (17+)."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     7,
+     3
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     13,
+     10,
+     6
+    ],
+    "C": [
+     13,
+     7,
+     4,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "4♠",
+   "why": "18 sp (15 hp + single ♥ = 3): 4♠ direkte (17+).",
+   "en": {
+    "why": "18 support points (15 HCP + singleton ♥ = 3): 4♠ directly (17+)."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     6
+    ],
+    "C": [
+     13,
+     12,
+     11
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "4♠",
+   "why": "20 sp (17 hp + single ♥ = 3): 4♠ direkte (17+).",
+   "en": {
+    "why": "20 support points (17 HCP + singleton ♥ = 3): 4♠ directly (17+)."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     7,
+     6
+    ],
+    "H": [
+     13,
+     8,
+     5,
+     3
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     13,
+     6,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "4♠",
+   "why": "18 sp (15 hp + single ♦ = 3): 4♠ direkte (17+).",
+   "en": {
+    "why": "18 support points (15 HCP + singleton ♦ = 3): 4♠ directly (17+)."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     6,
+     4
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     14,
+     7,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "4♠",
+   "why": "19 sp (15 hp + single ♦ = 3 + 1 ekstra trumf): 4♠ direkte (17+).",
+   "en": {
+    "why": "19 support points (15 HCP + singleton ♦ = 3 + 1 extra trump): 4♠ directly (17+)."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     10,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     9
+    ],
+    "D": [
+     14,
+     9,
+     8
+    ],
+    "C": [
+     12,
+     6
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "4♠",
+   "why": "18 sp (17 hp + double ♣ = 1): 4♠ direkte (17+).",
+   "en": {
+    "why": "18 support points (17 HCP + doubleton ♣ = 1): 4♠ directly (17+)."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     5
+    ],
+    "D": [
+     14,
+     9,
+     7,
+     2
+    ],
+    "C": [
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 20,
+   "correct": "4♠",
+   "why": "20 sp (17 hp + single ♣ = 3): 4♠ direkte (17+).",
+   "en": {
+    "why": "20 support points (17 HCP + singleton ♣ = 3): 4♠ directly (17+)."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     7,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     8
+    ],
+    "D": [
+     10,
+     7
+    ],
+    "C": [
+     14,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 18,
+   "correct": "4♠",
+   "why": "18 sp (16 hp + double ♦ = 1 + double ♣ = 1): 4♠ direkte (17+).",
+   "en": {
+    "why": "18 support points (16 HCP + doubleton ♦ = 1 + doubleton ♣ = 1): 4♠ directly (17+)."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     12,
+     10,
+     6,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     3,
+     2
+    ],
+    "D": [
+     7
+    ],
+    "C": [
+     13,
+     9,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "15 sp (12 hp + single ♦ = 3) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + singleton ♦ = 3) and 2 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     12,
+     7,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     14,
+     3,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "15 sp (14 hp + double ♦ = 1) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (14 HCP + doubleton ♦ = 1) and 2 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     7,
+     6
+    ],
+    "H": [
+     13,
+     8,
+     3
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     13,
+     8,
+     4,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "16 sp (13 hp + single ♦ = 3) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (13 HCP + singleton ♦ = 3) and 2 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     3
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     11,
+     10,
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "15 sp (12 hp + single ♦ = 3) og 3 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + singleton ♦ = 3) and 3 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     9,
+     5
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     11,
+     10,
+     9
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "16 sp (12 hp + single ♦ = 3 + 1 ekstra trumf) og 3 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (12 HCP + singleton ♦ = 3 + 1 extra trump) and 3 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     14,
+     11,
+     5,
+     3
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     13,
+     10,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "15 sp (12 hp + single ♦ = 3) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + singleton ♦ = 3) and 2 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     8,
+     7,
+     6
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     14,
+     10,
+     5
+    ],
+    "C": [
+     9,
+     7,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "16 sp (12 hp + single ♥ = 3 + 1 ekstra trumf) og 3 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (12 HCP + singleton ♥ = 3 + 1 extra trump) and 3 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     9,
+     7
+    ],
+    "H": [
+     12,
+     10,
+     6,
+     4
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     13,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "15 sp (12 hp + single ♦ = 3) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + singleton ♦ = 3) and 2 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     13,
+     10,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     6
+    ],
+    "D": [
+     13,
+     8,
+     7,
+     3
+    ],
+    "C": [
+     13,
+     8
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "15 sp (13 hp + double ♥ = 1 + double ♣ = 1) og 2 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (13 HCP + doubleton ♥ = 1 + doubleton ♣ = 1) and 2 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     11,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     6,
+     4
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "15 sp (12 hp + single ♣ = 3) og 2 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + singleton ♣ = 3) and 2 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     12,
+     11,
+     8,
+     7,
+     4
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     13,
+     9,
+     8,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "16 sp (13 hp + single ♥ = 3) og 2 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (13 HCP + singleton ♥ = 3) and 2 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     10
+    ],
+    "D": [
+     9,
+     8,
+     2
+    ],
+    "C": [
+     13,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "3♦",
+   "why": "15 sp (12 hp + double ♥ = 1 + double ♣ = 1 + 1 ekstra trumf) og 3 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + doubleton ♥ = 1 + doubleton ♣ = 1 + 1 extra trump) and 3 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     8,
+     6
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     12,
+     9,
+     5
+    ],
+    "C": [
+     13,
+     12,
+     7,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "15 sp (12 hp + single ♥ = 3) og 2 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + singleton ♥ = 3) and 2 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     13,
+     9,
+     7,
+     6
+    ],
+    "D": [
+     8,
+     3,
+     2
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "15 sp (12 hp + single ♣ = 3) og 3 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + singleton ♣ = 3) and 3 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     5
+    ],
+    "D": [
+     6,
+     5,
+     3
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "16 sp (13 hp + single ♣ = 3) og 3 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (13 HCP + singleton ♣ = 3) and 3 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     8,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     11,
+     8
+    ],
+    "D": [
+     11,
+     7,
+     2
+    ],
+    "C": [
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "16 sp (12 hp + single ♣ = 3 + 1 ekstra trumf) og 3 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (12 HCP + singleton ♣ = 3 + 1 extra trump) and 3 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     9,
+     6
+    ],
+    "H": [
+     11,
+     8,
+     4
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     13,
+     9,
+     5,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "15 sp (12 hp + single ♦ = 3) og 3 tabere i hjerter – den svageste farve: 3♥ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + singleton ♦ = 3) and 3 losers in hearts – the weakest suit: 3♥ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     10,
+     8,
+     7
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "15 sp (12 hp + single ♦ = 3) og 3 tabere i hjerter – den svageste farve: 3♥ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + singleton ♦ = 3) and 3 losers in hearts – the weakest suit: 3♥ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     7,
+     5
+    ],
+    "H": [
+     9,
+     5,
+     4
+    ],
+    "D": [
+     12,
+     11,
+     2
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "15 sp (14 hp + double ♣ = 1) og 3 tabere i hjerter – den svageste farve: 3♥ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (14 HCP + doubleton ♣ = 1) and 3 losers in hearts – the weakest suit: 3♥ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     12,
+     10,
+     8,
+     6,
+     4
+    ],
+    "H": [
+     13,
+     11,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     5
+    ],
+    "C": [
+     3
     ]
    },
    "hp": 13,
    "sp": 16,
    "correct": "3♥",
-   "why": "16 sp (13 hp + single ♦ = 3) og 2 tabere i hjerter – den svageste farve: 3♥ er trial bid og beder om hjælp dér."
+   "why": "16 sp (13 hp + single ♣ = 3) og 2 tabere i hjerter – den svageste farve: 3♥ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (13 HCP + singleton ♣ = 3) and 2 losers in hearts – the weakest suit: 3♥ is a trial bid and asks for help there."
+   }
   },
   {
-   "situation": "svar_sp_c",
+   "situation": "aab_sp",
    "hand": {
     "S": [
      13,
-     6,
-     4
-    ],
-    "H": [
-     8,
-     5
-    ],
-    "D": [
-     10,
-     7,
-     5,
-     4
-    ],
-    "C": [
-     13,
-     11,
-     7,
-     3
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "4♠",
-   "why": "Hjælp i klør (4 kort): 4♠."
-  },
-  {
-   "situation": "svar_sp_c",
-   "hand": {
-    "S": [
-     11,
-     10,
-     8
-    ],
-    "H": [
-     11,
-     5
-    ],
-    "D": [
-     11,
-     10,
-     8,
-     3
-    ],
-    "C": [
-     14,
-     11,
-     10,
-     5
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "4♠",
-   "why": "Hjælp i klør (4 kort): 4♠."
-  },
-  {
-   "situation": "svar_sp_c",
-   "hand": {
-    "S": [
-     10,
-     8,
-     7
-    ],
-    "H": [
-     9,
-     8,
-     5,
-     4
-    ],
-    "D": [
-     9,
-     8
-    ],
-    "C": [
-     14,
      12,
-     8,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "4♠",
-   "why": "Hjælp i klør (4 kort): 4♠."
-  },
-  {
-   "situation": "svar_sp_c",
-   "hand": {
-    "S": [
-     7,
-     6,
-     3
-    ],
-    "H": [
-     9,
-     8,
-     7,
-     3
-    ],
-    "D": [
-     12,
-     2
-    ],
-    "C": [
-     14,
-     9,
      5,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "4♠",
-   "why": "Hjælp i klør (4 kort): 4♠."
-  },
-  {
-   "situation": "svar_sp_c",
-   "hand": {
-    "S": [
-     9,
-     7,
-     5
-    ],
-    "H": [
-     12,
-     9,
-     5,
-     3
-    ],
-    "D": [
-     12,
-     9,
-     6,
-     4
-    ],
-    "C": [
-     14,
-     10
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "4♠",
-   "why": "Hjælp i klør (honnør): 4♠."
-  },
-  {
-   "situation": "svar_sp_c",
-   "hand": {
-    "S": [
-     9,
-     8,
-     3
-    ],
-    "H": [
-     10,
-     8,
-     7
-    ],
-    "D": [
-     8,
-     7,
      3,
      2
     ],
-    "C": [
-     14,
-     13,
-     5
-    ]
-   },
-   "hp": 7,
-   "sp": 7,
-   "correct": "4♠",
-   "why": "Hjælp i klør (honnør): 4♠."
-  },
-  {
-   "situation": "svar_sp_c",
-   "hand": {
-    "S": [
+    "H": [
      11,
-     6,
+     10,
      4
     ],
-    "H": [
-     9,
-     7,
-     3,
-     2
-    ],
     "D": [
-     10,
-     7
-    ],
-    "C": [
-     14,
-     9,
-     7,
-     2
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "4♠",
-   "why": "Hjælp i klør (4 kort): 4♠."
-  },
-  {
-   "situation": "svar_sp_c",
-   "hand": {
-    "S": [
-     11,
-     8,
-     5
-    ],
-    "H": [
-     10,
-     8
-    ],
-    "D": [
-     14,
-     11,
-     8,
-     3
-    ],
-    "C": [
-     9,
-     8,
-     6,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "4♠",
-   "why": "Hjælp i klør (4 kort): 4♠."
-  },
-  {
-   "situation": "svar_sp_c",
-   "hand": {
-    "S": [
-     12,
-     7,
-     3
-    ],
-    "H": [
-     7,
-     4,
-     2
-    ],
-    "D": [
-     14,
-     11,
-     10,
-     7
-    ],
-    "C": [
-     10,
-     9,
-     6
-    ]
-   },
-   "hp": 7,
-   "sp": 7,
-   "correct": "3♠",
-   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♠."
-  },
-  {
-   "situation": "svar_sp_c",
-   "hand": {
-    "S": [
-     7,
-     5,
-     4
-    ],
-    "H": [
-     13,
-     6,
-     4,
-     2
-    ],
-    "D": [
-     12,
-     11,
-     6,
-     2
-    ],
-    "C": [
-     5,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "3♠",
-   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♠."
-  },
-  {
-   "situation": "svar_sp_c",
-   "hand": {
-    "S": [
-     12,
-     9,
-     8
-    ],
-    "H": [
-     10,
-     5,
-     2
-    ],
-    "D": [
-     14,
-     9,
-     4,
-     2
-    ],
-    "C": [
-     10,
-     6,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 6,
-   "correct": "3♠",
-   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♠."
-  },
-  {
-   "situation": "svar_sp_c",
-   "hand": {
-    "S": [
-     9,
-     6,
-     5
-    ],
-    "H": [
-     11,
-     10,
-     5,
-     2
-    ],
-    "D": [
-     13,
-     12,
-     9,
-     8
-    ],
-    "C": [
-     9,
-     7
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "3♠",
-   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♠."
-  },
-  {
-   "situation": "svar_sp_c",
-   "hand": {
-    "S": [
-     10,
-     6,
-     4
-    ],
-    "H": [
-     11,
-     8,
-     6,
-     2
-    ],
-    "D": [
-     14,
-     13,
-     9,
-     3
-    ],
-    "C": [
-     6,
-     5
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "3♠",
-   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♠."
-  },
-  {
-   "situation": "svar_sp_c",
-   "hand": {
-    "S": [
-     13,
-     10,
-     7
-    ],
-    "H": [
-     11,
-     10,
-     8,
-     2
-    ],
-    "D": [
-     13,
-     11,
-     6,
-     2
-    ],
-    "C": [
-     7,
-     4
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "3♠",
-   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♠."
-  },
-  {
-   "situation": "svar_sp_c",
-   "hand": {
-    "S": [
-     14,
-     8,
-     4
-    ],
-    "H": [
-     13,
-     3,
-     2
-    ],
-    "D": [
-     12,
-     6,
-     5,
-     3
-    ],
-    "C": [
-     10,
-     6,
-     3
-    ]
-   },
-   "hp": 9,
-   "sp": 9,
-   "correct": "3♠",
-   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♠."
-  },
-  {
-   "situation": "svar_sp_c",
-   "hand": {
-    "S": [
-     12,
-     5,
-     4
-    ],
-    "H": [
-     12,
-     6,
-     3
-    ],
-    "D": [
-     13,
-     11,
-     10,
-     8
-    ],
-    "C": [
-     10,
-     6,
-     5
-    ]
-   },
-   "hp": 8,
-   "sp": 8,
-   "correct": "3♠",
-   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♠."
-  },
-  {
-   "situation": "svar_sp_d",
-   "hand": {
-    "S": [
-     13,
-     6,
-     2
-    ],
-    "H": [
-     12,
-     9
-    ],
-    "D": [
-     10,
-     8,
-     6,
-     4
-    ],
-    "C": [
-     11,
-     8,
-     6,
-     5
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "4♠",
-   "why": "Hjælp i ruder (4 kort): 4♠."
-  },
-  {
-   "situation": "svar_sp_d",
-   "hand": {
-    "S": [
-     14,
-     5,
-     4
-    ],
-    "H": [
-     8,
-     7,
-     5,
-     3
-    ],
-    "D": [
-     10,
-     8,
-     7,
-     4
-    ],
-    "C": [
-     11,
-     10
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "4♠",
-   "why": "Hjælp i ruder (4 kort): 4♠."
-  },
-  {
-   "situation": "svar_sp_d",
-   "hand": {
-    "S": [
-     11,
-     4,
-     3
-    ],
-    "H": [
-     12,
-     8,
-     7,
-     6
-    ],
-    "D": [
-     11,
-     10,
-     7,
-     5
-    ],
-    "C": [
-     12,
      11
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "4♠",
-   "why": "Hjælp i ruder (4 kort): 4♠."
-  },
-  {
-   "situation": "svar_sp_d",
-   "hand": {
-    "S": [
-     7,
-     4,
-     2
-    ],
-    "H": [
-     13,
-     12,
-     10,
-     6
-    ],
-    "D": [
-     12,
-     8,
-     4
-    ],
-    "C": [
-     8,
-     7,
-     4
-    ]
-   },
-   "hp": 7,
-   "sp": 7,
-   "correct": "4♠",
-   "why": "Hjælp i ruder (honnør): 4♠."
-  },
-  {
-   "situation": "svar_sp_d",
-   "hand": {
-    "S": [
-     12,
-     10,
-     8
-    ],
-    "H": [
-     6,
-     5,
-     2
-    ],
-    "D": [
-     12,
-     4,
-     3,
-     2
     ],
     "C": [
      13,
      12,
-     10
-    ]
-   },
-   "hp": 9,
-   "sp": 9,
-   "correct": "4♠",
-   "why": "Hjælp i ruder (4 kort): 4♠."
-  },
-  {
-   "situation": "svar_sp_d",
-   "hand": {
-    "S": [
-     12,
-     4,
-     2
-    ],
-    "H": [
-     14,
-     10,
-     7
-    ],
-    "D": [
-     12,
-     9,
-     7
-    ],
-    "C": [
-     8,
      7,
-     6,
-     5
-    ]
-   },
-   "hp": 8,
-   "sp": 8,
-   "correct": "4♠",
-   "why": "Hjælp i ruder (honnør): 4♠."
-  },
-  {
-   "situation": "svar_sp_d",
-   "hand": {
-    "S": [
-     10,
-     7,
-     4
-    ],
-    "H": [
-     13,
-     4,
-     3
-    ],
-    "D": [
-     14,
-     7,
-     5,
-     3
-    ],
-    "C": [
-     9,
-     5,
      2
     ]
    },
-   "hp": 7,
-   "sp": 7,
-   "correct": "4♠",
-   "why": "Hjælp i ruder (4 kort): 4♠."
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "15 sp (12 hp + single ♦ = 3) og 3 tabere i hjerter – den svageste farve: 3♥ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + singleton ♦ = 3) and 3 losers in hearts – the weakest suit: 3♥ is a trial bid and asks for help there."
+   }
   },
   {
-   "situation": "svar_sp_d",
-   "hand": {
-    "S": [
-     13,
-     8,
-     7
-    ],
-    "H": [
-     12,
-     11,
-     7
-    ],
-    "D": [
-     8,
-     5,
-     3,
-     2
-    ],
-    "C": [
-     8,
-     4,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 6,
-   "correct": "4♠",
-   "why": "Hjælp i ruder (4 kort): 4♠."
-  },
-  {
-   "situation": "svar_sp_d",
+   "situation": "aab_sp",
    "hand": {
     "S": [
      14,
-     6,
-     2
-    ],
-    "H": [
-     12,
-     10,
-     9,
-     3
-    ],
-    "D": [
-     6,
-     4,
-     2
-    ],
-    "C": [
-     13,
-     10,
-     6
-    ]
-   },
-   "hp": 9,
-   "sp": 9,
-   "correct": "3♠",
-   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♠."
-  },
-  {
-   "situation": "svar_sp_d",
-   "hand": {
-    "S": [
-     12,
-     10,
-     2
-    ],
-    "H": [
-     9,
-     8,
-     7,
-     2
-    ],
-    "D": [
-     9,
-     8,
-     2
-    ],
-    "C": [
-     14,
-     7,
-     5
-    ]
-   },
-   "hp": 6,
-   "sp": 6,
-   "correct": "3♠",
-   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♠."
-  },
-  {
-   "situation": "svar_sp_d",
-   "hand": {
-    "S": [
      11,
      10,
-     9
-    ],
-    "H": [
      9,
-     8,
-     7,
-     2
-    ],
-    "D": [
-     11,
-     4
-    ],
-    "C": [
-     12,
-     11,
-     10,
-     4
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "3♠",
-   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♠."
-  },
-  {
-   "situation": "svar_sp_d",
-   "hand": {
-    "S": [
-     7,
      6,
-     4
+     2
     ],
     "H": [
      13,
      11,
-     8,
-     2
-    ],
-    "D": [
-     11,
-     7,
-     3
-    ],
-    "C": [
-     11,
-     9,
-     5
-    ]
-   },
-   "hp": 6,
-   "sp": 6,
-   "correct": "3♠",
-   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♠."
-  },
-  {
-   "situation": "svar_sp_d",
-   "hand": {
-    "S": [
-     13,
-     10,
-     9
-    ],
-    "H": [
-     13,
-     12,
-     8,
-     4
-    ],
-    "D": [
-     9,
-     6,
      5
     ],
-    "C": [
-     8,
-     5,
-     4
-    ]
-   },
-   "hp": 8,
-   "sp": 8,
-   "correct": "3♠",
-   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♠."
-  },
-  {
-   "situation": "svar_sp_d",
-   "hand": {
-    "S": [
-     11,
-     8,
-     4
-    ],
-    "H": [
-     13,
-     10,
-     9
-    ],
     "D": [
-     4,
-     3,
-     2
-    ],
-    "C": [
-     14,
-     10,
-     7,
-     3
-    ]
-   },
-   "hp": 8,
-   "sp": 8,
-   "correct": "3♠",
-   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♠."
-  },
-  {
-   "situation": "svar_sp_d",
-   "hand": {
-    "S": [
-     11,
-     6,
-     2
-    ],
-    "H": [
-     11,
-     8,
-     5,
-     3
-    ],
-    "D": [
-     11,
-     4
-    ],
-    "C": [
      13,
-     12,
-     5,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "3♠",
-   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♠."
-  },
-  {
-   "situation": "svar_sp_d",
-   "hand": {
-    "S": [
-     14,
-     12,
-     8
-    ],
-    "H": [
-     12,
-     10,
-     4,
-     2
-    ],
-    "D": [
-     8,
-     5,
-     3
-    ],
-    "C": [
-     8,
-     4,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 8,
-   "correct": "3♠",
-   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♠."
-  },
-  {
-   "situation": "svar_sp_h",
-   "hand": {
-    "S": [
-     13,
-     11,
      10
     ],
-    "H": [
-     13,
-     9,
-     8,
-     2
-    ],
-    "D": [
-     9,
-     7,
-     3
-    ],
-    "C": [
-     12,
-     9,
-     3
-    ]
-   },
-   "hp": 9,
-   "sp": 9,
-   "correct": "4♠",
-   "why": "Hjælp i hjerter (4 kort): 4♠."
-  },
-  {
-   "situation": "svar_sp_h",
-   "hand": {
-    "S": [
-     14,
-     11,
-     6
-    ],
-    "H": [
-     12,
-     6,
-     2
-    ],
-    "D": [
-     10,
-     5,
-     3
-    ],
-    "C": [
-     9,
-     8,
-     5,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 7,
-   "correct": "4♠",
-   "why": "Hjælp i hjerter (honnør): 4♠."
-  },
-  {
-   "situation": "svar_sp_h",
-   "hand": {
-    "S": [
-     9,
-     8,
-     5
-    ],
-    "H": [
-     14,
-     12,
-     6,
-     3
-    ],
-    "D": [
-     9,
-     8
-    ],
     "C": [
      11,
-     8,
-     6,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "4♠",
-   "why": "Hjælp i hjerter (4 kort): 4♠."
-  },
-  {
-   "situation": "svar_sp_h",
-   "hand": {
-    "S": [
-     11,
-     7,
-     3
-    ],
-    "H": [
-     12,
-     9,
-     8,
-     7
-    ],
-    "D": [
-     12,
-     2
-    ],
-    "C": [
-     11,
-     10,
-     6,
      4
     ]
    },
-   "hp": 6,
-   "sp": 7,
-   "correct": "4♠",
-   "why": "Hjælp i hjerter (4 kort): 4♠."
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "16 sp (13 hp + double ♦ = 1 + double ♣ = 1 + 1 ekstra trumf) og 2 tabere i hjerter – den svageste farve: 3♥ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (13 HCP + doubleton ♦ = 1 + doubleton ♣ = 1 + 1 extra trump) and 2 losers in hearts – the weakest suit: 3♥ is a trial bid and asks for help there."
+   }
   },
   {
-   "situation": "svar_sp_h",
-   "hand": {
-    "S": [
-     14,
-     10,
-     4
-    ],
-    "H": [
-     11,
-     9,
-     8,
-     4
-    ],
-    "D": [
-     10,
-     8,
-     3
-    ],
-    "C": [
-     13,
-     9,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 8,
-   "correct": "4♠",
-   "why": "Hjælp i hjerter (4 kort): 4♠."
-  },
-  {
-   "situation": "svar_sp_h",
-   "hand": {
-    "S": [
-     8,
-     6,
-     4
-    ],
-    "H": [
-     13,
-     9,
-     7,
-     4
-    ],
-    "D": [
-     14,
-     10,
-     5,
-     3
-    ],
-    "C": [
-     11,
-     8
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "4♠",
-   "why": "Hjælp i hjerter (4 kort): 4♠."
-  },
-  {
-   "situation": "svar_sp_h",
+   "situation": "aab_sp",
    "hand": {
     "S": [
      12,
-     5,
-     4
-    ],
-    "H": [
-     11,
-     8,
-     7,
-     5
-    ],
-    "D": [
-     13,
-     9,
-     7
-    ],
-    "C": [
-     13,
-     5,
-     4
-    ]
-   },
-   "hp": 9,
-   "sp": 9,
-   "correct": "4♠",
-   "why": "Hjælp i hjerter (4 kort): 4♠."
-  },
-  {
-   "situation": "svar_sp_h",
-   "hand": {
-    "S": [
      9,
      6,
-     2
-    ],
-    "H": [
-     12,
-     7,
-     6
-    ],
-    "D": [
-     12,
-     7,
-     5,
-     3
-    ],
-    "C": [
-     13,
-     7,
-     6
-    ]
-   },
-   "hp": 7,
-   "sp": 7,
-   "correct": "4♠",
-   "why": "Hjælp i hjerter (honnør): 4♠."
-  },
-  {
-   "situation": "svar_sp_h",
-   "hand": {
-    "S": [
-     11,
-     10,
-     4
-    ],
-    "H": [
-     11,
-     8,
-     2
-    ],
-    "D": [
-     13,
-     11,
-     8,
-     2
-    ],
-    "C": [
      4,
+     3
+    ],
+    "H": [
+     7,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     3
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "15 sp (12 hp + single ♣ = 3) og 3 tabere i hjerter – den svageste farve: 3♥ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + singleton ♣ = 3) and 3 losers in hearts – the weakest suit: 3♥ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     9,
+     8,
+     7
+    ],
+    "H": [
+     9,
      3,
      2
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     13,
+     10,
+     8
     ]
    },
-   "hp": 6,
-   "sp": 6,
-   "correct": "3♠",
-   "why": "Ingen hjælp i hjerter (ingen honnør, 2–3 små): 3♠."
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "16 sp (12 hp + single ♦ = 3 + 1 ekstra trumf) og 3 tabere i hjerter – den svageste farve: 3♥ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (12 HCP + singleton ♦ = 3 + 1 extra trump) and 3 losers in hearts – the weakest suit: 3♥ is a trial bid and asks for help there."
+   }
   },
   {
-   "situation": "svar_sp_h",
+   "situation": "svar_sp_c",
    "hand": {
     "S": [
-     9,
-     8,
-     2
+     11,
+     10,
+     5
     ],
     "H": [
-     8,
-     6,
-     5
+     10,
+     2
     ],
     "D": [
      12,
-     6,
-     5,
-     2
-    ],
-    "C": [
-     14,
      11,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 7,
-   "correct": "3♠",
-   "why": "Ingen hjælp i hjerter (ingen honnør, 2–3 små): 3♠."
-  },
-  {
-   "situation": "svar_sp_h",
-   "hand": {
-    "S": [
-     11,
-     10,
-     6
-    ],
-    "H": [
-     10,
-     5,
-     4
-    ],
-    "D": [
-     14,
-     13,
-     8,
-     6
-    ],
-    "C": [
-     11,
-     6,
-     2
-    ]
-   },
-   "hp": 9,
-   "sp": 9,
-   "correct": "3♠",
-   "why": "Ingen hjælp i hjerter (ingen honnør, 2–3 små): 3♠."
-  },
-  {
-   "situation": "svar_sp_h",
-   "hand": {
-    "S": [
-     9,
-     5,
-     2
-    ],
-    "H": [
-     10,
-     5
-    ],
-    "D": [
-     8,
-     7,
      4,
      2
     ],
     "C": [
-     13,
      12,
-     8,
-     6
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "3♠",
-   "why": "Ingen hjælp i hjerter (ingen honnør, 2–3 små): 3♠."
-  },
-  {
-   "situation": "svar_sp_h",
-   "hand": {
-    "S": [
-     10,
-     9,
-     2
-    ],
-    "H": [
-     11,
-     7,
-     2
-    ],
-    "D": [
      7,
      6,
      5
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "4♠",
+   "why": "Hjælp i klør (4 kort): 4♠.",
+   "en": {
+    "why": "Help in clubs (4 cards): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_c",
+   "hand": {
+    "S": [
+     11,
+     9,
+     8
+    ],
+    "H": [
+     13,
+     8,
+     6,
+     5
+    ],
+    "D": [
+     9,
+     5
     ],
     "C": [
-     14,
      13,
+     10,
+     8,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "4♠",
+   "why": "Hjælp i klør (4 kort): 4♠.",
+   "en": {
+    "why": "Help in clubs (4 cards): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_c",
+   "hand": {
+    "S": [
+     13,
+     12,
+     4
+    ],
+    "H": [
+     8,
+     7
+    ],
+    "D": [
+     12,
+     11,
+     10,
+     3
+    ],
+    "C": [
      9,
-     2
+     6,
+     5,
+     3
     ]
    },
    "hp": 8,
-   "sp": 8,
-   "correct": "3♠",
-   "why": "Ingen hjælp i hjerter (ingen honnør, 2–3 små): 3♠."
+   "sp": 9,
+   "correct": "4♠",
+   "why": "Hjælp i klør (4 kort): 4♠.",
+   "en": {
+    "why": "Help in clubs (4 cards): 4♠."
+   }
   },
   {
-   "situation": "svar_sp_h",
+   "situation": "svar_sp_c",
    "hand": {
     "S": [
-     8,
-     5,
-     2
+     7,
+     6,
+     4
     ],
     "H": [
      11,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     11,
      3
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     6
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "4♠",
+   "why": "Hjælp i klør (4 kort): 4♠.",
+   "en": {
+    "why": "Help in clubs (4 cards): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_c",
+   "hand": {
+    "S": [
+     13,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     4
     ],
     "D": [
      11,
@@ -6039,19 +5349,253 @@
      2
     ],
     "C": [
-     14,
-     11,
-     10,
-     3
+     9,
+     8,
+     5,
+     2
     ]
    },
    "hp": 7,
    "sp": 8,
-   "correct": "3♠",
-   "why": "Ingen hjælp i hjerter (ingen honnør, 2–3 små): 3♠."
+   "correct": "4♠",
+   "why": "Hjælp i klør (4 kort): 4♠.",
+   "en": {
+    "why": "Help in clubs (4 cards): 4♠."
+   }
   },
   {
-   "situation": "svar_sp_h",
+   "situation": "svar_sp_c",
+   "hand": {
+    "S": [
+     8,
+     6,
+     3
+    ],
+    "H": [
+     10,
+     4
+    ],
+    "D": [
+     13,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     6,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "4♠",
+   "why": "Hjælp i klør (4 kort): 4♠.",
+   "en": {
+    "why": "Help in clubs (4 cards): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_c",
+   "hand": {
+    "S": [
+     11,
+     9,
+     2
+    ],
+    "H": [
+     12,
+     10,
+     8,
+     5
+    ],
+    "D": [
+     6,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     7
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "4♠",
+   "why": "Hjælp i klør (honnør): 4♠.",
+   "en": {
+    "why": "Help in clubs (an honour): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_c",
+   "hand": {
+    "S": [
+     11,
+     6,
+     4
+    ],
+    "H": [
+     12,
+     9,
+     8
+    ],
+    "D": [
+     14,
+     6,
+     4
+    ],
+    "C": [
+     8,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "4♠",
+   "why": "Hjælp i klør (4 kort): 4♠.",
+   "en": {
+    "why": "Help in clubs (4 cards): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_c",
+   "hand": {
+    "S": [
+     10,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     8,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     9
+    ],
+    "C": [
+     9,
+     8,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "correct": "3♠",
+   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in clubs (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_c",
+   "hand": {
+    "S": [
+     6,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     8,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     7,
+     4
+    ],
+    "C": [
+     8,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "3♠",
+   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in clubs (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_c",
+   "hand": {
+    "S": [
+     9,
+     8,
+     6
+    ],
+    "H": [
+     12,
+     5,
+     4
+    ],
+    "D": [
+     12,
+     11,
+     5,
+     2
+    ],
+    "C": [
+     11,
+     8,
+     6
+    ]
+   },
+   "hp": 6,
+   "sp": 6,
+   "correct": "3♠",
+   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in clubs (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_c",
+   "hand": {
+    "S": [
+     10,
+     9,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     2
+    ],
+    "D": [
+     13,
+     9,
+     3
+    ],
+    "C": [
+     11,
+     6,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "correct": "3♠",
+   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in clubs (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_c",
    "hand": {
     "S": [
      12,
@@ -6059,26 +5603,1118 @@
      3
     ],
     "H": [
+     12,
      10,
+     8
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     6
+    ],
+    "C": [
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "correct": "3♠",
+   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in clubs (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_c",
+   "hand": {
+    "S": [
+     10,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     8,
+     3
+    ],
+    "D": [
+     12,
+     11,
      4,
      3
+    ],
+    "C": [
+     9,
+     7,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "3♠",
+   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in clubs (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_c",
+   "hand": {
+    "S": [
+     12,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     7
+    ],
+    "D": [
+     9,
+     5,
+     3
+    ],
+    "C": [
+     9,
+     6,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "correct": "3♠",
+   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in clubs (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_c",
+   "hand": {
+    "S": [
+     9,
+     6,
+     3
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     2
     ],
     "D": [
      14,
      5,
-     4
+     3
     ],
     "C": [
-     12,
+     11,
      8,
-     5,
      4
     ]
    },
    "hp": 8,
    "sp": 8,
    "correct": "3♠",
-   "why": "Ingen hjælp i hjerter (ingen honnør, 2–3 små): 3♠."
+   "why": "Ingen hjælp i klør (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in clubs (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_d",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10
+    ],
+    "H": [
+     14,
+     8,
+     4,
+     2
+    ],
+    "D": [
+     9,
+     6,
+     4,
+     2
+    ],
+    "C": [
+     8,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "4♠",
+   "why": "Hjælp i ruder (4 kort): 4♠.",
+   "en": {
+    "why": "Help in diamonds (4 cards): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_d",
+   "hand": {
+    "S": [
+     12,
+     10,
+     2
+    ],
+    "H": [
+     7,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     8,
+     7,
+     5
+    ],
+    "C": [
+     13,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "4♠",
+   "why": "Hjælp i ruder (4 kort): 4♠.",
+   "en": {
+    "why": "Help in diamonds (4 cards): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_d",
+   "hand": {
+    "S": [
+     10,
+     7,
+     2
+    ],
+    "H": [
+     13,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     9,
+     3
+    ],
+    "C": [
+     10,
+     8,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "correct": "4♠",
+   "why": "Hjælp i ruder (4 kort): 4♠.",
+   "en": {
+    "why": "Help in diamonds (4 cards): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_d",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7
+    ],
+    "H": [
+     9,
+     8,
+     6
+    ],
+    "D": [
+     12,
+     11,
+     8,
+     4
+    ],
+    "C": [
+     9,
+     7,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "4♠",
+   "why": "Hjælp i ruder (4 kort): 4♠.",
+   "en": {
+    "why": "Help in diamonds (4 cards): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_d",
+   "hand": {
+    "S": [
+     7,
+     6,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     9,
+     7
+    ],
+    "D": [
+     11,
+     8,
+     5,
+     4
+    ],
+    "C": [
+     13,
+     8
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "4♠",
+   "why": "Hjælp i ruder (4 kort): 4♠.",
+   "en": {
+    "why": "Help in diamonds (4 cards): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_d",
+   "hand": {
+    "S": [
+     11,
+     7,
+     4
+    ],
+    "H": [
+     13,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     6,
+     5
+    ],
+    "C": [
+     12,
+     9,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "correct": "4♠",
+   "why": "Hjælp i ruder (4 kort): 4♠.",
+   "en": {
+    "why": "Help in diamonds (4 cards): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_d",
+   "hand": {
+    "S": [
+     12,
+     10,
+     6
+    ],
+    "H": [
+     13,
+     11,
+     7
+    ],
+    "D": [
+     13,
+     10,
+     8,
+     4
+    ],
+    "C": [
+     10,
+     4,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "correct": "4♠",
+   "why": "Hjælp i ruder (4 kort): 4♠.",
+   "en": {
+    "why": "Help in diamonds (4 cards): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_d",
+   "hand": {
+    "S": [
+     9,
+     8,
+     2
+    ],
+    "H": [
+     14,
+     12
+    ],
+    "D": [
+     11,
+     9,
+     6,
+     5
+    ],
+    "C": [
+     7,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "4♠",
+   "why": "Hjælp i ruder (4 kort): 4♠.",
+   "en": {
+    "why": "Help in diamonds (4 cards): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_d",
+   "hand": {
+    "S": [
+     13,
+     9,
+     6
+    ],
+    "H": [
+     11,
+     8,
+     3
+    ],
+    "D": [
+     5,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     7,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 6,
+   "correct": "3♠",
+   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in diamonds (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_d",
+   "hand": {
+    "S": [
+     13,
+     11,
+     8
+    ],
+    "H": [
+     9,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     10,
+     8,
+     2
+    ],
+    "C": [
+     13,
+     7,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "3♠",
+   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in diamonds (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_d",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9
+    ],
+    "H": [
+     11,
+     7,
+     3
+    ],
+    "D": [
+     11,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     9,
+     5,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "correct": "3♠",
+   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in diamonds (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_d",
+   "hand": {
+    "S": [
+     12,
+     10,
+     6
+    ],
+    "H": [
+     14,
+     10,
+     3
+    ],
+    "D": [
+     11,
+     9,
+     2
+    ],
+    "C": [
+     11,
+     10,
+     9,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "correct": "3♠",
+   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in diamonds (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_d",
+   "hand": {
+    "S": [
+     13,
+     10,
+     4
+    ],
+    "H": [
+     8,
+     7,
+     4,
+     3
+    ],
+    "D": [
+     6,
+     4
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     7
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "3♠",
+   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in diamonds (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_d",
+   "hand": {
+    "S": [
+     11,
+     8,
+     3
+    ],
+    "H": [
+     13,
+     10,
+     8,
+     7
+    ],
+    "D": [
+     10,
+     6
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     7
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "3♠",
+   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in diamonds (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_d",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8
+    ],
+    "H": [
+     12,
+     11,
+     9,
+     5
+    ],
+    "D": [
+     10,
+     8,
+     3
+    ],
+    "C": [
+     10,
+     6,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 6,
+   "correct": "3♠",
+   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in diamonds (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_d",
+   "hand": {
+    "S": [
+     13,
+     10,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     7
+    ],
+    "D": [
+     9,
+     2
+    ],
+    "C": [
+     10,
+     9,
+     7,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "3♠",
+   "why": "Ingen hjælp i ruder (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in diamonds (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_h",
+   "hand": {
+    "S": [
+     10,
+     9,
+     8
+    ],
+    "H": [
+     13,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     12,
+     9,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     6
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "4♠",
+   "why": "Hjælp i hjerter (4 kort): 4♠.",
+   "en": {
+    "why": "Help in hearts (4 cards): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_h",
+   "hand": {
+    "S": [
+     10,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     8
+    ],
+    "D": [
+     10,
+     6
+    ],
+    "C": [
+     7,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "4♠",
+   "why": "Hjælp i hjerter (4 kort): 4♠.",
+   "en": {
+    "why": "Help in hearts (4 cards): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_h",
+   "hand": {
+    "S": [
+     12,
+     6,
+     4
+    ],
+    "H": [
+     9,
+     8,
+     7,
+     4
+    ],
+    "D": [
+     11,
+     8,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     6
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "4♠",
+   "why": "Hjælp i hjerter (4 kort): 4♠.",
+   "en": {
+    "why": "Help in hearts (4 cards): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_h",
+   "hand": {
+    "S": [
+     12,
+     11,
+     4
+    ],
+    "H": [
+     13,
+     8,
+     6,
+     3
+    ],
+    "D": [
+     11,
+     10,
+     9
+    ],
+    "C": [
+     12,
+     10,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "correct": "4♠",
+   "why": "Hjælp i hjerter (4 kort): 4♠.",
+   "en": {
+    "why": "Help in hearts (4 cards): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_h",
+   "hand": {
+    "S": [
+     12,
+     6,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     8,
+     7
+    ],
+    "D": [
+     10,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "4♠",
+   "why": "Hjælp i hjerter (4 kort): 4♠.",
+   "en": {
+    "why": "Help in hearts (4 cards): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_h",
+   "hand": {
+    "S": [
+     9,
+     8,
+     3
+    ],
+    "H": [
+     14,
+     8,
+     5,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     3
+    ],
+    "C": [
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "4♠",
+   "why": "Hjælp i hjerter (4 kort): 4♠.",
+   "en": {
+    "why": "Help in hearts (4 cards): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_h",
+   "hand": {
+    "S": [
+     10,
+     4,
+     2
+    ],
+    "H": [
+     11,
+     10,
+     6,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     9
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "4♠",
+   "why": "Hjælp i hjerter (4 kort): 4♠.",
+   "en": {
+    "why": "Help in hearts (4 cards): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_h",
+   "hand": {
+    "S": [
+     5,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     7,
+     6,
+     4
+    ],
+    "D": [
+     5,
+     3
+    ],
+    "C": [
+     14,
+     9,
+     8,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "4♠",
+   "why": "Hjælp i hjerter (4 kort): 4♠.",
+   "en": {
+    "why": "Help in hearts (4 cards): 4♠."
+   }
+  },
+  {
+   "situation": "svar_sp_h",
+   "hand": {
+    "S": [
+     14,
+     5,
+     3
+    ],
+    "H": [
+     10,
+     9
+    ],
+    "D": [
+     10,
+     9,
+     7,
+     4
+    ],
+    "C": [
+     14,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "3♠",
+   "why": "Ingen hjælp i hjerter (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in hearts (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_h",
+   "hand": {
+    "S": [
+     11,
+     5,
+     2
+    ],
+    "H": [
+     11,
+     10,
+     9
+    ],
+    "D": [
+     9,
+     7,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     9
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "correct": "3♠",
+   "why": "Ingen hjælp i hjerter (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in hearts (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_h",
+   "hand": {
+    "S": [
+     14,
+     11,
+     7
+    ],
+    "H": [
+     9,
+     5
+    ],
+    "D": [
+     11,
+     9,
+     3,
+     2
+    ],
+    "C": [
+     10,
+     8,
+     7,
+     6
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "3♠",
+   "why": "Ingen hjælp i hjerter (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in hearts (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_h",
+   "hand": {
+    "S": [
+     11,
+     9,
+     2
+    ],
+    "H": [
+     9,
+     6
+    ],
+    "D": [
+     12,
+     11,
+     8,
+     2
+    ],
+    "C": [
+     13,
+     10,
+     7,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "3♠",
+   "why": "Ingen hjælp i hjerter (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in hearts (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_h",
+   "hand": {
+    "S": [
+     10,
+     5,
+     3
+    ],
+    "H": [
+     5,
+     4
+    ],
+    "D": [
+     13,
+     9,
+     8,
+     5
+    ],
+    "C": [
+     13,
+     12,
+     8,
+     7
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "3♠",
+   "why": "Ingen hjælp i hjerter (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in hearts (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_h",
+   "hand": {
+    "S": [
+     12,
+     6,
+     2
+    ],
+    "H": [
+     10,
+     8
+    ],
+    "D": [
+     12,
+     8,
+     7,
+     6
+    ],
+    "C": [
+     13,
+     11,
+     9,
+     8
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "3♠",
+   "why": "Ingen hjælp i hjerter (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in hearts (no honour, 2–3 small cards): 3♠."
+   }
   },
   {
    "situation": "svar_sp_h",
@@ -6086,29 +6722,65 @@
     "S": [
      14,
      10,
-     8
+     3
     ],
     "H": [
      10,
-     8,
-     4
+     9
     ],
     "D": [
-     13,
-     7,
+     9,
      6,
-     5
+     4,
+     2
     ],
     "C": [
+     12,
      9,
-     8,
-     2
+     6,
+     4
     ]
    },
-   "hp": 7,
+   "hp": 6,
    "sp": 7,
    "correct": "3♠",
-   "why": "Ingen hjælp i hjerter (ingen honnør, 2–3 små): 3♠."
+   "why": "Ingen hjælp i hjerter (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in hearts (no honour, 2–3 small cards): 3♠."
+   }
+  },
+  {
+   "situation": "svar_sp_h",
+   "hand": {
+    "S": [
+     13,
+     10,
+     4
+    ],
+    "H": [
+     9,
+     6
+    ],
+    "D": [
+     14,
+     8,
+     6,
+     2
+    ],
+    "C": [
+     11,
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "3♠",
+   "why": "Ingen hjælp i hjerter (ingen honnør, 2–3 små): 3♠.",
+   "en": {
+    "why": "No help in hearts (no honour, 2–3 small cards): 3♠."
+   }
   }
  ]
 }

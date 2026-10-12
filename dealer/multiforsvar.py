@@ -16,8 +16,8 @@ Grænser, som systemkortet ikke angiver, står som konstanter herunder. Hænder,
 """
 import random
 
-from .core import (SUITS, SUIT_SYM, SUIT_NAME, deal_suit_lengths, fill_hand, lengths_of,
-                   rnd, tpl, either, build_pool)
+from .core import (SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, deal_suit_lengths, fill_hand, lengths_of,
+                   rnd, tpl, either, build_pool, tx)
 
 # --- Grænser, som systemkortet ikke giver tal for – ret dem her ------------------
 DOUBLE_HP = (15, 18)       # D: "15–17 hp eller lidt stærkere", jævn
@@ -82,35 +82,42 @@ def classify_overcall(hand, hp):
     L = lengths_of(hand)
     S, H, D, C = L['S'], L['H'], L['D'], L['C']
     if shape(L) in BALANCED and DOUBLE_HP[0] <= hp <= DOUBLE_HP[1]:
-        return "X", f"{hp} hp og jævn hånd: D er forslag til straf – mindst samme styrke som sansåbneren."
+        return "X", tx(f"{hp} hp og jævn hånd: D er forslag til straf – mindst samme styrke som sansåbneren.",
+                       f"{hp} HCP and a balanced hand: X suggests penalty – at least the same strength as the notrump opener.")
     if hp > OVERCALL_HP[1]:
         return None
     major6 = [M for M in ('S', 'H') if L[M] >= 6]
     if major6 and max(S, H) <= 7 and min(S, H) <= 3:
         if MULTI_HP[0] <= hp <= MULTI_HP[1]:
             M = major6[0]
-            return "2♦", f"{L[M]} {SUIT_NAME[M]} og {hp} hp: 2♦ (multi) viser en 6-farve i en major, ca. 6–10 hp."
+            return "2♦", tx(f"{L[M]} {SUIT_NAME[M]} og {hp} hp: 2♦ (multi) viser en 6-farve i en major, ca. 6–10 hp.",
+                            f"{L[M]} {SUIT_NAME_EN[M]} and {hp} HCP: 2♦ (multi) shows a six-card major, about 6–10 HCP.")
         if hp > MULTI_HP[1]:
             return None
     minor6 = [m for m in ('D', 'C') if L[m] >= 6]
     if minor6 and max(S, H) <= 3 and PREEMPT_MINOR_HP[0] <= hp <= PREEMPT_MINOR_HP[1]:
         m = minor6[0]
-        return f"3{SUIT_SYM[m]}", f"{L[m]} {SUIT_NAME[m]} og {hp} hp: 3{SUIT_SYM[m]} er naturligt og spærrende."
+        return f"3{SUIT_SYM[m]}", tx(f"{L[m]} {SUIT_NAME[m]} og {hp} hp: 3{SUIT_SYM[m]} er naturligt og spærrende.",
+                                     f"{L[m]} {SUIT_NAME_EN[m]} and {hp} HCP: 3{SUIT_SYM[m]} is natural and preemptive.")
     if hp >= OVERCALL_HP[0]:
         if sorted((S, H)) == [4, 5]:
             if max(D, C) >= 4:
                 return None   # 5-4-4-0 med begge majorer beskriver kortet ikke
-            return "2♣", f"{hp} hp med {S} spar og {H} hjerter: 2♣ viser begge majorer, 5-4."
+            return "2♣", tx(f"{hp} hp med {S} spar og {H} hjerter: 2♣ viser begge majorer, 5-4.",
+                            f"{hp} HCP with {S} spades and {H} hearts: 2♣ shows both majors, 5-4.")
         for M, O in (('H', 'S'), ('S', 'H')):
             m = minor_of(L)
             if L[M] == 5 and L[O] <= 3 and m:
-                return f"2{SUIT_SYM[M]}", (f"5 {SUIT_NAME[M]} og {L[m]} {SUIT_NAME[m]}: 2{SUIT_SYM[M]} viser femfarven "
-                                           f"og 4–5 kort i en ukendt minor.")
+                return f"2{SUIT_SYM[M]}", tx(f"5 {SUIT_NAME[M]} og {L[m]} {SUIT_NAME[m]}: 2{SUIT_SYM[M]} viser femfarven "
+                                             f"og 4–5 kort i en ukendt minor.",
+                                             f"5 {SUIT_NAME_EN[M]} and {L[m]} {SUIT_NAME_EN[m]}: 2{SUIT_SYM[M]} shows the five-card suit "
+                                             f"and 4–5 cards in an unknown minor.")
         if D >= 4 and C >= 4 and max(D, C) >= 5 and max(S, H) <= 3:
-            return "2NT", f"{D} ruder og {C} klør: 2NT viser begge minorer."
+            return "2NT", tx(f"{D} ruder og {C} klør: 2NT viser begge minorer.", f"{D} diamonds and {C} clubs: 2NT shows both minors.")
         if minor6 or major6:
             return None
-    return "Pas", f"{hp} hp og ingen fordeling, der passer til en indmelding – og ikke en stærk jævn hånd til D."
+    return "Pas", tx(f"{hp} hp og ingen fordeling, der passer til en indmelding – og ikke en stærk jævn hånd til D.",
+                     f"{hp} HCP and no shape that suits an overcall – and not a strong balanced hand for X.")
 
 # --- Indmelders næste melding ------------------------------------------------------
 
@@ -118,42 +125,50 @@ def rebid_2kl_2ru(hand, hp):
     """1NT – 2♣ – pas – 2♦ – pas – ? : makker spørger efter femfarven."""
     L = lengths_of(hand)
     M = 'S' if L['S'] == 5 else 'H'
-    return f"2{SUIT_SYM[M]}", f"2♦ spørger efter femfarven: du har 5 {SUIT_NAME[M]} og melder 2{SUIT_SYM[M]}."
+    return f"2{SUIT_SYM[M]}", tx(f"2♦ spørger efter femfarven: du har 5 {SUIT_NAME[M]} og melder 2{SUIT_SYM[M]}.",
+                                 f"2♦ asks for the five-card suit: you have 5 {SUIT_NAME_EN[M]} and bid 2{SUIT_SYM[M]}.")
 
 def rebid_2m_2nt(hand, hp):
     """1NT – 2♥/2♠ – pas – 2NT – pas – ? : makker spørger efter minoren."""
     L = lengths_of(hand)
     m = minor_of(L)
-    return f"3{SUIT_SYM[m]}", f"2NT spørger efter minorfarven: du har {L[m]} {SUIT_NAME[m]} og melder 3{SUIT_SYM[m]}."
+    return f"3{SUIT_SYM[m]}", tx(f"2NT spørger efter minorfarven: du har {L[m]} {SUIT_NAME[m]} og melder 3{SUIT_SYM[m]}.",
+                                 f"2NT asks for the minor: you have {L[m]} {SUIT_NAME_EN[m]} and bid 3{SUIT_SYM[m]}.")
 
 def rebid_2ru_2hj(hand, hp):
     """1NT – 2♦ – pas – 2♥ – pas – ? : pas eller korriger."""
     M = multi_major(lengths_of(hand))
     if M == 'H':
-        return "Pas", "2♥ er pas eller korriger. Din farve er hjerter, så du passer."
-    return "2♠", "2♥ er pas eller korriger. Din farve er spar, så du retter til 2♠."
+        return "Pas", tx("2♥ er pas eller korriger. Din farve er hjerter, så du passer.", "2♥ is pass or correct. Your suit is hearts, so you pass.")
+    return "2♠", tx("2♥ er pas eller korriger. Din farve er spar, så du retter til 2♠.", "2♥ is pass or correct. Your suit is spades, so you correct to 2♠.")
 
 def rebid_2ru_4hj(hand, hp):
     """1NT – 2♦ – pas – 4♥ – pas – ? : pas eller korriger, spærrende."""
     M = multi_major(lengths_of(hand))
     if M == 'H':
-        return "Pas", "4♥ er pas eller korriger (spærrende). Din farve er hjerter, så du passer."
-    return "4♠", "4♥ er pas eller korriger (spærrende). Din farve er spar, så du retter til 4♠."
+        return "Pas", tx("4♥ er pas eller korriger (spærrende). Din farve er hjerter, så du passer.",
+                         "4♥ is pass or correct (preemptive). Your suit is hearts, so you pass.")
+    return "4♠", tx("4♥ er pas eller korriger (spærrende). Din farve er spar, så du retter til 4♠.",
+                    "4♥ is pass or correct (preemptive). Your suit is spades, so you correct to 4♠.")
 
 def rebid_plauken(hand, hp):
     """1NT – 2♦ – pas – 2NT – pas – ? : Plauken."""
     M = multi_major(lengths_of(hand))
     if hp >= MULTI_MAX:
-        return "3♣", f"{hp} hp er god multi (8–10): 3♣. Makker kan spørge efter farven med 3♦."
+        return "3♣", tx(f"{hp} hp er god multi (8–10): 3♣. Makker kan spørge efter farven med 3♦.",
+                        f"{hp} HCP is a good multi (8–10): 3♣. Partner can ask for the suit with 3♦.")
     call = "3♦" if M == 'H' else "3♥"
-    return call, (f"{hp} hp er dårlig multi (6–7): {call} er transfer til {SUIT_NAME[M]} – "
-                  f"3♦ viser hjerter, 3♥ viser spar.")
+    return call, tx(f"{hp} hp er dårlig multi (6–7): {call} er transfer til {SUIT_NAME[M]} – "
+                    f"3♦ viser hjerter, 3♥ viser spar.",
+                    f"{hp} HCP is a poor multi (6–7): {call} is a transfer to {SUIT_NAME_EN[M]} – "
+                    f"3♦ shows hearts, 3♥ shows spades.")
 
 def rebid_plauken_relay(hand, hp):
     """1NT – 2♦ – pas – 2NT – pas – 3♣ – pas – 3♦ – pas – ? : transfer."""
     M = multi_major(lengths_of(hand))
     call = "3♠" if M == 'H' else "3♥"
-    return call, f"3♦ beder om farven. Svaret er transfer: 3♠ = hjerter, 3♥ = spar. Din farve er {SUIT_NAME[M]}: {call}."
+    return call, tx(f"3♦ beder om farven. Svaret er transfer: 3♠ = hjerter, 3♥ = spar. Din farve er {SUIT_NAME[M]}: {call}.",
+                    f"3♦ asks for the suit. The answer is a transfer: 3♠ = hearts, 3♥ = spades. Your suit is {SUIT_NAME_EN[M]}: {call}.")
 
 # --- Svarer --------------------------------------------------------------------------
 
@@ -164,10 +179,13 @@ def classify_after_2kl(hand, hp):
     L = lengths_of(hand)
     S, H = L['S'], L['H']
     if S == H:
-        return "2♦", f"Lige mange spar og hjerter ({S}-{H}): 2♦ spørger efter makkers femfarve, så I lander i 5-{S}-fittet."
+        return "2♦", tx(f"Lige mange spar og hjerter ({S}-{H}): 2♦ spørger efter makkers femfarve, så I lander i 5-{S}-fittet.",
+                        f"As many spades as hearts ({S}-{H}): 2♦ asks for partner's five-card suit, so you land in the 5-{S} fit.")
     M = 'S' if S > H else 'H'
-    return f"2{SUIT_SYM[M]}", (f"Flest {SUIT_NAME[M]} ({S} spar, {H} hjerter): 2{SUIT_SYM[M]} er præference til den "
-                               f"bedste major – det sædvanlige svar.")
+    return f"2{SUIT_SYM[M]}", tx(f"Flest {SUIT_NAME[M]} ({S} spar, {H} hjerter): 2{SUIT_SYM[M]} er præference til den "
+                                 f"bedste major – det sædvanlige svar.",
+                                 f"More {SUIT_NAME_EN[M]} ({S} spades, {H} hearts): 2{SUIT_SYM[M]} is a preference for the "
+                                 f"better major – the usual response.")
 
 def classify_after_2ru(hand, hp):
     """1NT – 2♦ – pas – ? : multi, 6+ i en ukendt major, ca. 6–10 hp."""
@@ -177,34 +195,46 @@ def classify_after_2ru(hand, hp):
         for M, O in (('H', 'S'), ('S', 'H')):
             if L[M] >= 6 and top_honours(hand[M]) >= 2 and L[O] <= 2:
                 sym = SUIT_SYM[M]
-                return f"3{sym}", (f"{hp} hp og egen {SUIT_NAME[M]}farve ({L[M]} kort): 3{sym} viser styrke i farven, ingen "
-                                   f"interesse for den anden major og udgangsinteresse. Makker støtter med xxx eller Hx.")
+                return f"3{sym}", tx(f"{hp} hp og egen {SUIT_NAME[M]}farve ({L[M]} kort): 3{sym} viser styrke i farven, ingen "
+                                     f"interesse for den anden major og udgangsinteresse. Makker støtter med xxx eller Hx.",
+                                     f"{hp} HCP and your own {SUIT_NAME_EN[M][:-1]} suit ({L[M]} cards): 3{sym} shows strength in the suit, no "
+                                     f"interest in the other major and game interest. Partner raises with xxx or Hx.")
         if S >= 3 and H >= 3:
-            return "2NT", f"{hp} hp og plads i begge majorer: 2NT (Plauken) er stærkt relæ – udgangsinteresse, uanset hvilken major makker har."
+            return "2NT", tx(f"{hp} hp og plads i begge majorer: 2NT (Plauken) er stærkt relæ – udgangsinteresse, uanset hvilken major makker har.",
+                             f"{hp} HCP and room in both majors: 2NT (Plauken) is a strong relay – game interest whichever major partner holds.")
         if H >= 3:
-            return "2♠", (f"{hp} hp med {H} hjerter, men kun {S} spar: 2♠ er udgangsopfordring, hvis makker har hjerter. "
-                          f"Har makker spar, passer han.")
+            return "2♠", tx(f"{hp} hp med {H} hjerter, men kun {S} spar: 2♠ er udgangsopfordring, hvis makker har hjerter. "
+                            f"Har makker spar, passer han.",
+                            f"{hp} HCP with {H} hearts, but only {S} spades: 2♠ invites game if partner has hearts. "
+                            f"If partner has spades, partner passes.")
         if S >= 3:
-            return "2♥", (f"{hp} hp med {S} spar, men kun {H} hjerter: 2♥ er pas eller korriger. Retter makker til 2♠, "
-                          f"kan du støtte til udgang.")
+            return "2♥", tx(f"{hp} hp med {S} spar, men kun {H} hjerter: 2♥ er pas eller korriger. Retter makker til 2♠, "
+                            f"kan du støtte til udgang.",
+                            f"{hp} HCP with {S} spades, but only {H} hearts: 2♥ is pass or correct. If partner corrects to 2♠, "
+                            f"you can raise to game.")
         return None
     if hp <= ADV_4HJ_MAX and S >= 3 and H >= 3 and max(S, H) >= 4:
-        return "4♥", f"Svag hånd med fit til begge majorer ({S} spar, {H} hjerter): 4♥ er pas eller korriger og spærrende."
-    return "2♥", (f"Svag hånd ({hp} hp): 2♥ er pas eller korriger – makker passer med hjerter og retter til 2♠ "
-                  f"med spar. Alle svage hænder melder 2♥.")
+        return "4♥", tx(f"Svag hånd med fit til begge majorer ({S} spar, {H} hjerter): 4♥ er pas eller korriger og spærrende.",
+                        f"Weak hand with a fit for both majors ({S} spades, {H} hearts): 4♥ is pass or correct and preemptive.")
+    return "2♥", tx(f"Svag hånd ({hp} hp): 2♥ er pas eller korriger – makker passer med hjerter og retter til 2♠ "
+                    f"med spar. Alle svage hænder melder 2♥.",
+                    f"Weak hand ({hp} HCP): 2♥ is pass or correct – partner passes with hearts and corrects to 2♠ "
+                    f"with spades. Every weak hand bids 2♥.")
 
 def after_major_minor(M):
     """1NT – 2♥/2♠ – pas – ? : 5 i majoren + 4–5 i en ukendt minor."""
-    sym, name = SUIT_SYM[M], SUIT_NAME[M]
+    sym, name, en = SUIT_SYM[M], SUIT_NAME[M], SUIT_NAME_EN[M]
     def classify(hand, hp):
         if hp > ADV_2M_MAX:
             return None
         L = lengths_of(hand)
         if L[M] >= 2:
-            return "Pas", f"{L[M]} {name}: pas er det sædvanlige svar – I spiller 2{sym}."
+            return "Pas", tx(f"{L[M]} {name}: pas er det sædvanlige svar – I spiller 2{sym}.", f"{L[M]} {en}: pass is the usual response – you play 2{sym}.")
         if L['D'] >= 3 and L['C'] >= 3:
-            return "2NT", (f"Kun {L[M]} {name}, men {L['D']} ruder og {L['C']} klør: 2NT spørger efter makkers minor, "
-                           f"så I lander i et sikkert fit.")
+            return "2NT", tx(f"Kun {L[M]} {name}, men {L['D']} ruder og {L['C']} klør: 2NT spørger efter makkers minor, "
+                             f"så I lander i et sikkert fit.",
+                             f"Only {L[M]} {en}, but {L['D']} diamonds and {L['C']} clubs: 2NT asks for partner's minor, "
+                             f"so you land in a safe fit.")
         return None
     return classify
 
@@ -214,8 +244,10 @@ def classify_after_2nt(hand, hp):
         return None
     L = lengths_of(hand)
     if L['D'] > L['C']:
-        return "3♦", f"Flest ruder ({L['D']} ruder, {L['C']} klør): 3♦ – præference til den længste minor."
-    return "3♣", f"{L['C']} klør og {L['D']} ruder: 3♣ – præference til klør, når den er mindst lige så lang."
+        return "3♦", tx(f"Flest ruder ({L['D']} ruder, {L['C']} klør): 3♦ – præference til den længste minor.",
+                        f"More diamonds ({L['D']} diamonds, {L['C']} clubs): 3♦ – preference for the longer minor.")
+    return "3♣", tx(f"{L['C']} klør og {L['D']} ruder: 3♣ – præference til klør, når den er mindst lige så lang.",
+                    f"{L['C']} clubs and {L['D']} diamonds: 3♣ – preference for clubs when they are at least as long.")
 
 def classify_after_double(hand, hp):
     """1NT – D – pas – ? : modstanderne spiller svag sans (12–14)."""
@@ -225,49 +257,73 @@ def classify_after_double(hand, hp):
         return None   # to 5-farver: kortet siger ikke, hvilken der springes i
     if JUMP_HP[0] <= hp <= JUMP_HP[1] and long5:
         s = long5[0]
-        return f"3{SUIT_SYM[s]}", (f"{hp} hp og {L[s]} {SUIT_NAME[s]}: spring til 3{SUIT_SYM[s]} er udgangsforslag i farven "
-                                   f"eller sans (mindst 5-farve, ca. 9–11 hp).")
+        return f"3{SUIT_SYM[s]}", tx(f"{hp} hp og {L[s]} {SUIT_NAME[s]}: spring til 3{SUIT_SYM[s]} er udgangsforslag i farven "
+                                     f"eller sans (mindst 5-farve, ca. 9–11 hp).",
+                                     f"{hp} HCP and {L[s]} {SUIT_NAME_EN[s]}: the jump to 3{SUIT_SYM[s]} invites game in the suit "
+                                     f"or notrump (at least a five-card suit, about 9–11 HCP).")
     if hp >= STRAF_MIN:
         if long5 and hp > JUMP_HP[1]:
             return None
-        return "Pas", f"{hp} hp: strafpas (8+). Over for makkers stærke jævne hånd står 1NT doblet sandsynligvis flere ned."
+        return "Pas", tx(f"{hp} hp: strafpas (8+). Over for makkers stærke jævne hånd står 1NT doblet sandsynligvis flere ned.",
+                         f"{hp} HCP: pass for penalty (8+). Opposite partner's strong balanced hand, 1NT doubled will probably go several down.")
     for s in ('C', 'D', 'H', 'S'):
         if L[s] >= 4:
-            return f"2{SUIT_SYM[s]}", (f"{hp} hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2{SUIT_SYM[s]}). "
-                                       f"Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit.")
+            return f"2{SUIT_SYM[s]}", tx(f"{hp} hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2{SUIT_SYM[s]}). "
+                                         f"Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit.",
+                                         f"{hp} HCP: with 0–7 HCP you scramble – bid your lowest four-card suit (2{SUIT_SYM[s]}). "
+                                         f"Without three-card support, partner bids the next four-card suit up until you have a 4-3 fit.")
     return None
 
 # --- Situationer ---------------------------------------------------------------------
 
+M54 = tx("Begge majorer 5–4, 10–16 hp", "Both majors 5–4, 10–16 HCP")
+MULTI = tx("6+ i en major, ca. 6–10 hp", "6+ cards in a major, about 6–10 HCP")
+MM54 = tx("Major + minor 5–4, 10–16 hp", "Major + minor 5–4, 10–16 HCP")
+RELAE = tx("Stærkt relæ med udgangsinteresse", "A strong relay with game interest")
+HJ = tx("5 hjerter + 4–5 i en ukendt minor, 10–16 hp", "5 hearts + 4–5 cards in an unknown minor, 10–16 HCP")
+SP = tx("5 spar + 4–5 i en ukendt minor, 10–16 hp", "5 spades + 4–5 cards in an unknown minor, 10–16 HCP")
+BM = tx("Begge minorer, 10–16 hp", "Both minors, 10–16 HCP")
+DBL = tx("15–17+ hp jævn – forslag til straf", "15–17+ HCP balanced – suggests penalty")
+FRI = tx("Mindst 15 hp, fri fordeling – semikrav", "At least 15 HCP, any shape – semi-forcing")
+BM5 = tx("Begge majorer 5–4", "Both majors 5–4")
+MM_WHY = tx("2♥/2♠ viser femfarven i den meldte major og en 4–5-farve i en minor, som 2NT kan spørge efter.",
+            "2♥/2♠ shows five cards in the major bid and a 4–5-card minor, which 2NT can ask for.")
 BONUS = {
-    "2kl": {"q": "Hvad viser makkers 2♣?", "correct": "Begge majorer 5–4, 10–16 hp",
-            "options": ["Begge majorer 5–4, 10–16 hp", "6+ i en major, ca. 6–10 hp", "Major + minor 5–4, 10–16 hp"],
-            "why": "2♣ viser begge majorer, 5–4. Svarer ved ikke, hvilken der er femfarven – derfor findes 2♦ som spørgsmål."},
-    "2ru": {"q": "Hvad viser 2♦ i Multiforsvar?", "correct": "6+ i en major, ca. 6–10 hp",
-            "options": ["6+ i en major, ca. 6–10 hp", "Begge majorer 5–4, 10–16 hp", "Naturlig ruderfarve"],
-            "why": "2♦ er multi: en 6-farve i en ukendt major og svagere end de øvrige indmeldinger, ca. 6–10 hp."},
-    "plauken": {"q": "Hvad er 2NT efter makkers 2♦ (Plauken)?", "correct": "Stærkt relæ med udgangsinteresse",
-                "options": ["Stærkt relæ med udgangsinteresse", "Naturligt, 11–12 hp", "Spørger efter minoren"],
-                "why": "2NT er stærkt relæ: udgangsinteresse, uanset hvilken major multi-melderen har. 3♣ viser god multi, 3♦/3♥ dårlig multi som transfer."},
-    "2hj": {"q": "Hvad viser 2♥ i Multiforsvar?", "correct": "5 hjerter + 4–5 i en ukendt minor, 10–16 hp",
-            "options": ["5 hjerter + 4–5 i en ukendt minor, 10–16 hp", "6+ hjerter, svag hånd", "Begge majorer 5–4"],
-            "why": "2♥/2♠ viser femfarven i den meldte major og en 4–5-farve i en minor, som 2NT kan spørge efter."},
-    "2sp": {"q": "Hvad viser 2♠ i Multiforsvar?", "correct": "5 spar + 4–5 i en ukendt minor, 10–16 hp",
-            "options": ["5 spar + 4–5 i en ukendt minor, 10–16 hp", "6+ spar, svag hånd", "Begge majorer 5–4"],
-            "why": "2♥/2♠ viser femfarven i den meldte major og en 4–5-farve i en minor, som 2NT kan spørge efter."},
-    "2nt": {"q": "Hvad viser 2NT i Multiforsvar?", "correct": "Begge minorer, 10–16 hp",
-            "options": ["Begge minorer, 10–16 hp", "Jævn hånd, 15–17 hp", "Begge majorer 5–4"],
-            "why": "2NT er usædvanlig 2NT: begge minorer, 10–16 hp."},
-    "indmelding": {"q": "Hvad viser doblingen af modstandernes 1NT?", "correct": "15–17+ hp jævn – forslag til straf",
-                   "options": ["15–17+ hp jævn – forslag til straf", "Mindst 15 hp, fri fordeling – semikrav", "Begge majorer, 10–16 hp"],
-                   "why": "Doblingen er forslag til straf med en jævn hånd af mindst samme styrke som åbningen. 2♣, 2♥/2♠ og 2NT viser 10–16 hp, 2♦ ca. 6–10."},
-    "dobling": {"q": "Hvad viser makkers dobling af 1NT?", "correct": "15–17+ hp jævn – forslag til straf",
-                "options": ["15–17+ hp jævn – forslag til straf", "Mindst 15 hp, fri fordeling – semikrav", "Begge majorer, 10–16 hp"],
-                "why": "Doblingen er forslag til straf. Derfor er strafpas med 8+ hp oftest det rigtige svar; med 0–7 hp scrambles der."},
+    "2kl": {"q": tx("Hvad viser makkers 2♣?", "What does partner's 2♣ show?"), "correct": M54,
+            "options": [M54, MULTI, MM54],
+            "why": tx("2♣ viser begge majorer, 5–4. Svarer ved ikke, hvilken der er femfarven – derfor findes 2♦ som spørgsmål.",
+                      "2♣ shows both majors, 5–4. The advancer does not know which is the five-card suit – hence 2♦ as an ask.")},
+    "2ru": {"q": tx("Hvad viser 2♦ i Multiforsvar?", "What does 2♦ show in the Multi defence?"), "correct": MULTI,
+            "options": [MULTI, M54, tx("Naturlig ruderfarve", "A natural diamond suit")],
+            "why": tx("2♦ er multi: en 6-farve i en ukendt major og svagere end de øvrige indmeldinger, ca. 6–10 hp.",
+                      "2♦ is multi: a six-card suit in an unknown major, weaker than the other overcalls, about 6–10 HCP.")},
+    "plauken": {"q": tx("Hvad er 2NT efter makkers 2♦ (Plauken)?", "What is 2NT after partner's 2♦ (Plauken)?"), "correct": RELAE,
+                "options": [RELAE, tx("Naturligt, 11–12 hp", "Natural, 11–12 HCP"), tx("Spørger efter minoren", "Asks for the minor")],
+                "why": tx("2NT er stærkt relæ: udgangsinteresse, uanset hvilken major multi-melderen har. 3♣ viser god multi, 3♦/3♥ dårlig multi som transfer.",
+                          "2NT is a strong relay: game interest whichever major the multi bidder holds. "
+                          "3♣ shows a good multi, 3♦/3♥ a poor multi as a transfer.")},
+    "2hj": {"q": tx("Hvad viser 2♥ i Multiforsvar?", "What does 2♥ show in the Multi defence?"), "correct": HJ,
+            "options": [HJ, tx("6+ hjerter, svag hånd", "6+ hearts, a weak hand"), BM5],
+            "why": MM_WHY},
+    "2sp": {"q": tx("Hvad viser 2♠ i Multiforsvar?", "What does 2♠ show in the Multi defence?"), "correct": SP,
+            "options": [SP, tx("6+ spar, svag hånd", "6+ spades, a weak hand"), BM5],
+            "why": MM_WHY},
+    "2nt": {"q": tx("Hvad viser 2NT i Multiforsvar?", "What does 2NT show in the Multi defence?"), "correct": BM,
+            "options": [BM, tx("Jævn hånd, 15–17 hp", "A balanced hand, 15–17 HCP"), BM5],
+            "why": tx("2NT er usædvanlig 2NT: begge minorer, 10–16 hp.", "2NT is the Unusual 2NT: both minors, 10–16 HCP.")},
+    "indmelding": {"q": tx("Hvad viser doblingen af modstandernes 1NT?", "What does the double of the opponents' 1NT show?"), "correct": DBL,
+                   "options": [DBL, FRI, tx("Begge majorer, 10–16 hp", "Both majors, 10–16 HCP")],
+                   "why": tx("Doblingen er forslag til straf med en jævn hånd af mindst samme styrke som åbningen. 2♣, 2♥/2♠ og 2NT viser 10–16 hp, 2♦ ca. 6–10.",
+                             "The double suggests penalty with a balanced hand at least as strong as the opening. "
+                             "2♣, 2♥/2♠ and 2NT show 10–16 HCP, 2♦ about 6–10.")},
+    "dobling": {"q": tx("Hvad viser makkers dobling af 1NT?", "What does partner's double of 1NT show?"), "correct": DBL,
+                "options": [DBL, FRI, tx("Begge majorer, 10–16 hp", "Both majors, 10–16 HCP")],
+                "why": tx("Doblingen er forslag til straf. Derfor er strafpas med 8+ hp oftest det rigtige svar; med 0–7 hp scrambles der.",
+                          "The double suggests penalty. So passing for penalty with 8+ HCP is usually right; with 0–7 HCP you scramble.")},
 }
 
 PAS = ["Modstander", "Pas"]
-SVAG_SANS = "1NT = 12–14 hp (svag sans)"
+SVAG_SANS = tx("1NT = 12–14 hp (svag sans)", "1NT = 12–14 HCP (weak notrump)")
 SITUATIONS = {
     "indmelding": {"rolle": "Indmelder", "auction": [["Modstander", "1NT"]], "allowX": True,
                    "calls": ["X", "Pas", "2♣", "2♦", "2♥", "2♠", "2NT", "3♣", "3♦"], "bonus": BONUS["indmelding"]},

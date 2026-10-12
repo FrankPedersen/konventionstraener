@@ -10,7 +10,12 @@
   ],
   "status": "klar",
   "viden": "viden/bridgesystem.html#multiforsvar",
-  "system": "kf"
+  "system": "kf",
+  "en": {
+   "titel": "Multi defence against 1NT",
+   "gruppe": "Competition",
+   "beskrivelse": "The opponents open 1NT. Overcall with X (penalty), 2♣–2NT or 3♣/3♦ – or respond to partner's overcall."
+  }
  },
  {
   "id": "michaels",
@@ -23,7 +28,12 @@
   ],
   "status": "klar",
   "system": "kf",
-  "viden": "viden/bridgesystem.html#6-4-michaels-cuebid"
+  "viden": "viden/bridgesystem.html#6-4-michaels-cuebid",
+  "en": {
+   "titel": "Michaels cue-bid",
+   "gruppe": "Competition",
+   "beskrivelse": "A cue-bid in opener's suit: over 1♣/1♦ both majors, over 1♥/1♠ the other major and a minor – at least 5-5, 8–15 or 17+. And the advancer's choice."
+  }
  },
  {
   "id": "usaedvanlig-2nt",
@@ -36,7 +46,12 @@
   ],
   "status": "klar",
   "system": "kf",
-  "viden": "viden/bridgesystem.html#6-5-usaedvanlig-2nt"
+  "viden": "viden/bridgesystem.html#6-5-usaedvanlig-2nt",
+  "en": {
+   "titel": "Unusual 2NT",
+   "gruppe": "Competition",
+   "beskrivelse": "2NT shows the two lowest unbid suits, at least 5-5, 8–15 or 17+. The advancer picks a suit with a weak hand and cue-bids with a good one."
+  }
  },
  {
   "id": "lebensohl",
@@ -48,7 +63,12 @@
   ],
   "status": "klar",
   "system": "kf",
-  "viden": "viden/bridgesystem.html#8-2-mod-modstandernes-spaerremeldinger"
+  "viden": "viden/bridgesystem.html#8-2-mod-modstandernes-spaerremeldinger",
+  "en": {
+   "titel": "Lebensohl",
+   "gruppe": "Competition",
+   "beskrivelse": "Partner has doubled their weak two: the two level is weak, 2NT a relay with a lower suit, the three level invitational, 3NT with a stopper, the cue-bid game forcing."
+  }
  },
  {
   "id": "omvendt-bergen",
@@ -61,7 +81,12 @@
   ],
   "status": "klar",
   "system": "kf",
-  "viden": "viden/bridgesystem.html#4-3-majorstoette-omvendt-bergen"
+  "viden": "viden/bridgesystem.html#4-3-majorstoette-omvendt-bergen",
+  "en": {
+   "titel": "Reverse Bergen",
+   "gruppe": "Major-suit raises",
+   "beskrivelse": "Raising 1♥/1♠: 3♦ 7–10 and 3♣ 10–11 support points with four-card support · 3M and 4M preemptive. As opener: sign off, ask or bid game by the rule of 25."
+  }
  },
  {
   "id": "bekkasin",
@@ -77,7 +102,12 @@
   "system": [
    "kf",
    "ff"
-  ]
+  ],
+  "en": {
+   "titel": "Bekkasin 2NT",
+   "gruppe": "Major-suit raises",
+   "beskrivelse": "13+ support points and four-card support. As opener: a minimum, extra values or shortness. As responder: the 3♦ ask or a cue-bid with slam ambitions."
+  }
  },
  {
   "id": "xy-sans",
@@ -93,7 +123,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-makker2.html#afsnit-6a"
+  "viden": "viden/2-over-1-makker2.html#afsnit-6a",
+  "en": {
+   "titel": "xy notrump",
+   "gruppe": "Further bidding",
+   "beskrivelse": "After 1♣/1♦ – 1♠ – 1NT: pass, sign-off, the 2♣ relay or 2♦ game forcing – responder's description after the relay and opener's step responses to 2♦."
+  }
  },
  {
   "id": "cuebids",
@@ -109,7 +144,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-makker2.html#afsnit-7"
+  "viden": "viden/2-over-1-makker2.html#afsnit-7",
+  "en": {
+   "titel": "Cue-bids",
+   "gruppe": "Slam",
+   "beskrivelse": "Any control – ace, king, singleton or void – as cheaply as possible. Responder cue-bids after opener's extra values in Bekkasin, and opener answers with the cheapest control."
+  }
  },
  {
   "id": "fjerde-farve",
@@ -125,7 +165,12 @@
    "kf",
    "ff"
   ],
-  "viden": "viden/2-over-1-makker2.html#afsnit-5a"
+  "viden": "viden/2-over-1-makker2.html#afsnit-5a",
+  "en": {
+   "titel": "Fourth suit forcing",
+   "gruppe": "Further bidding",
+   "beskrivelse": "After 1♣/1♦ – 1♥ – 1♠: responder uses the fourth suit without a fit or a stopper, and opener answers in the order support, notrump, own suit, fourth suit."
+  }
  },
  {
   "id": "stayman",
@@ -138,7 +183,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/bridgesystem.html#3-svar-paa-1nt"
+  "viden": "viden/bridgesystem.html#3-svar-paa-1nt",
+  "en": {
+   "titel": "Stayman",
+   "gruppe": "Responding to 1NT",
+   "beskrivelse": "2♣ over partner's 1NT asks for a four-card major; opener bids a five-card major as if it were a four-card suit."
+  }
  },
  {
   "id": "transfer",
@@ -151,7 +201,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/bridgesystem.html#3-svar-paa-1nt"
+  "viden": "viden/bridgesystem.html#3-svar-paa-1nt",
+  "en": {
+   "titel": "Transfers",
+   "gruppe": "Responding to 1NT",
+   "beskrivelse": "2♦/2♥ transfer to a major (super-accept with four-card support and 17 HCP), 2♠ minor-suit transfer to clubs, 3♣ to diamonds."
+  }
  },
  {
   "id": "1430",
@@ -164,7 +219,12 @@
   ],
   "status": "klar",
   "system": "kf",
-  "viden": "viden/bridgesystem.html#5-slemudforskning-1430"
+  "viden": "viden/bridgesystem.html#5-slemudforskning-1430",
+  "en": {
+   "titel": "1430 and the trump queen",
+   "gruppe": "Slam",
+   "beskrivelse": "Responses to 4NT (1430) and to the trump queen ask: the cheapest rebid, the cheapest king or 5NT (queen without kings)."
+  }
  },
  {
   "id": "ff-revideret-omvendt-bergen",
@@ -177,7 +237,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-makker2.html#afsnit-1"
+  "viden": "viden/2-over-1-makker2.html#afsnit-1",
+  "en": {
+   "titel": "Revised Reverse Bergen",
+   "gruppe": "Major-suit raises",
+   "beskrivelse": "Raising 1♥/1♠: 2M 6–9 support points · 3♣ 10–12 with exactly 3 cards · 3♦ 10–12 with 4+ · 3M and 4M preemptive."
+  }
  },
  {
   "id": "ff-trial-bids",
@@ -190,7 +255,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-makker2.html#afsnit-3"
+  "viden": "viden/2-over-1-makker2.html#afsnit-3",
+  "en": {
+   "titel": "Long-suit trial bids",
+   "gruppe": "Major-suit raises",
+   "beskrivelse": "A new suit after 1M – 2M asks for help in the suit."
+  }
  },
  {
   "id": "ff-two-over-one",
@@ -203,7 +273,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-makker2.html#afsnit-5"
+  "viden": "viden/2-over-1-makker2.html#afsnit-5",
+  "en": {
+   "titel": "Two over One game forcing",
+   "gruppe": "Further bidding",
+   "beskrivelse": "A new suit at the two level: 13+ HCP and game forcing – not 10+ as for Partner 1 & me."
+  }
  },
  {
   "id": "ff-fast-arrival",
@@ -216,7 +291,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-makker2.html#afsnit-5b"
+  "viden": "viden/2-over-1-makker2.html#afsnit-5b",
+  "en": {
+   "titel": "Fast and slow arrival",
+   "gruppe": "Further bidding",
+   "beskrivelse": "In a game-forcing auction, a fast jump to game shows a minimum and a slow arrival extra values."
+  }
  },
  {
   "id": "ff-staerke-genmeldinger",
@@ -229,7 +309,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-makker2.html#afsnit-4"
+  "viden": "viden/2-over-1-makker2.html#afsnit-4",
+  "en": {
+   "titel": "Opener's strong rebids and 3♣ checkback",
+   "gruppe": "Further bidding",
+   "beskrivelse": "A new higher suit at the two level is natural, 5-4, 12–18 HCP and non-forcing (provisional – to be confirmed); a jump in a new suit is 19–21 and game forcing. 3♣ checkback after opener's 2NT rebid."
+  }
  },
  {
   "id": "ff-omvendt-minor",
@@ -242,7 +327,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-makker2.html#afsnit-6"
+  "viden": "viden/2-over-1-makker2.html#afsnit-6",
+  "en": {
+   "titel": "Inverted minors",
+   "gruppe": "Further bidding",
+   "beskrivelse": "Two of the opened suit is strong support (10+ support points), three of the suit preemptive."
+  }
  },
  {
   "id": "ff-ass",
@@ -255,7 +345,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-makker2.html#afsnit-9"
+  "viden": "viden/2-over-1-makker2.html#afsnit-9",
+  "en": {
+   "titel": "American Stayman (ASS)",
+   "gruppe": "Responding to 1NT",
+   "beskrivelse": "2♣ over 1NT is at least invitational and explores opener's whole major-suit holding: 2♦ a four-card major, 2♥/2♠ exactly five, 2NT/3NT none – and responder's crosswise continuation."
+  }
  },
  {
   "id": "ff-overfoeringer",
@@ -268,7 +363,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-makker2.html#afsnit-10"
+  "viden": "viden/2-over-1-makker2.html#afsnit-10",
+  "en": {
+   "titel": "Transfers",
+   "gruppe": "Responding to 1NT",
+   "beskrivelse": "2♦/2♥ to a major with super-accept, 2♠/3♣ to a minor as an escape – and responder's second bid: pass, 2NT/3M invitational or game."
+  }
  },
  {
   "id": "ff-gerber",
@@ -281,7 +381,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-makker2.html#afsnit-11"
+  "viden": "viden/2-over-1-makker2.html#afsnit-11",
+  "en": {
+   "titel": "Gerber and the notrump ladder",
+   "gruppe": "Responding to 1NT",
+   "beskrivelse": "Responder's notrump ladder over 1NT (pass, 2NT, 3NT, 4NT, 6NT, 5NT, 7NT) and opener's responses to Gerber 4♣ and the 5♣ king ask."
+  }
  },
  {
   "id": "ff-2kl",
@@ -294,7 +399,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-makker2.html#afsnit-14"
+  "viden": "viden/2-over-1-makker2.html#afsnit-14",
+  "en": {
+   "titel": "2♣ strong opening and 2♦ waiting",
+   "gruppe": "Openings",
+   "beskrivelse": "20+ HCP; 2♦ waiting or a positive response, opener's rebid and responder's second bid with the second negative."
+  }
  },
  {
   "id": "ff-ogust",
@@ -307,7 +417,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-makker2.html#afsnit-13"
+  "viden": "viden/2-over-1-makker2.html#afsnit-13",
+  "en": {
+   "titel": "Ogust 2NT and responding to a weak two",
+   "gruppe": "Openings",
+   "beskrivelse": "Opener's responses to Ogust (1-2-1-2-3) and responder's choice over a weak two: Ogust, a new suit or a preempt by the Law."
+  }
  },
  {
   "id": "ff-dont",
@@ -320,7 +435,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-makker2.html#afsnit-15a"
+  "viden": "viden/2-over-1-makker2.html#afsnit-15a",
+  "en": {
+   "titel": "DONT against 1NT",
+   "gruppe": "Competition",
+   "beskrivelse": "X = one long suit, 2♣/2♦ = the suit + a higher one, 2♥ = the majors, 2NT = the minors."
+  }
  },
  {
   "id": "ff-michaels",
@@ -333,7 +453,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-makker2.html#afsnit-15b"
+  "viden": "viden/2-over-1-makker2.html#afsnit-15b",
+  "en": {
+   "titel": "Michaels cue-bid and Unusual 2NT",
+   "gruppe": "Competition",
+   "beskrivelse": "Two-suited overcalls, at least 5-5, 8–15 HCP or 17+."
+  }
  },
  {
   "id": "ff-genaabning",
@@ -346,7 +471,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-makker2.html#afsnit-15c"
+  "viden": "viden/2-over-1-makker2.html#afsnit-15c",
+  "en": {
+   "titel": "Balancing in fourth seat",
+   "gruppe": "Competition",
+   "beskrivelse": "Borrow about 3 HCP from partner: double, a new suit, 1NT 11–14, 2NT or a cue-bid – and partner's response after devaluing."
+  }
  },
  {
   "id": "ff-doblinger",
@@ -359,7 +489,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-makker2.html#afsnit-17"
+  "viden": "viden/2-over-1-makker2.html#afsnit-17",
+  "en": {
+   "titel": "Negative double, support double and redouble",
+   "gruppe": "Competition",
+   "beskrivelse": "The negative double and opener's response, the support double and responder's bids after a double of partner's opening (redouble, Jordan 2NT)."
+  }
  },
  {
   "id": "ff-kravpas",
@@ -372,7 +507,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-makker2.html#afsnit-18"
+  "viden": "viden/2-over-1-makker2.html#afsnit-18",
+  "en": {
+   "titel": "Forcing pass and the Law",
+   "gruppe": "Competition",
+   "beskrivelse": "The Law of total tricks in raising and competitive auctions – and the trap pass, where opener reopens with a double."
+  }
  },
  {
   "id": "ff-lebensohl",
@@ -385,7 +525,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-makker2.html#afsnit-c4"
+  "viden": "viden/2-over-1-makker2.html#afsnit-c4",
+  "en": {
+   "titel": "Lebensohl against weak twos",
+   "gruppe": "Competition",
+   "beskrivelse": "Against a weak 2♥/2♠: a higher suit is weak, 2NT a relay to 3♣ (a weak lower suit – or invitational with spades over 2♥), a lower suit directly at the three level invitational, a direct 3♠ game forcing, 3NT natural."
+  }
  },
  {
   "id": "ff-1430",
@@ -398,7 +543,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/2-over-1-makker2.html#afsnit-7"
+  "viden": "viden/2-over-1-makker2.html#afsnit-7",
+  "en": {
+   "titel": "RKC 1430, trump queen and kings",
+   "gruppe": "Slam",
+   "beskrivelse": "Responses to 4NT (5 keycards as 5♥/5♠), the queen ask and the 5NT king ask."
+  }
  },
  {
   "id": "ff-flannery",
@@ -411,7 +561,12 @@
    "Svarer"
   ],
   "status": "kommer",
-  "viden": "viden/2-over-1-makker2.html#afsnit-b1"
+  "viden": "viden/2-over-1-makker2.html#afsnit-b1",
+  "en": {
+   "titel": "Flannery",
+   "gruppe": "2♦ openings (Partner 2 & me, appendix B)",
+   "beskrivelse": "2♦ (or 2♥ in the B4 package) shows 5 hearts and 4 spades, 11–15 HCP."
+  }
  },
  {
   "id": "ff-multi-2ru",
@@ -424,7 +579,12 @@
    "Svarer"
   ],
   "status": "kommer",
-  "viden": "viden/2-over-1-makker2.html#afsnit-b2"
+  "viden": "viden/2-over-1-makker2.html#afsnit-b2",
+  "en": {
+   "titel": "Multi 2♦",
+   "gruppe": "2♦ openings (Partner 2 & me, appendix B)",
+   "beskrivelse": "A weak two in an unknown major; responder bids pass-or-correct."
+  }
  },
  {
   "id": "ff-muiderberg",
@@ -437,7 +597,12 @@
    "Svarer"
   ],
   "status": "kommer",
-  "viden": "viden/2-over-1-makker2.html#afsnit-b4"
+  "viden": "viden/2-over-1-makker2.html#afsnit-b4",
+  "en": {
+   "titel": "Muiderberg 2♠",
+   "gruppe": "2♦ openings (Partner 2 & me, appendix B)",
+   "beskrivelse": "5 spades and a 4+ minor, 5–10 HCP."
+  }
  },
  {
   "id": "ff-revers",
@@ -450,7 +615,12 @@
    "Svarer"
   ],
   "status": "kommer",
-  "viden": "viden/2-over-1-makker2.html#afsnit-g"
+  "viden": "viden/2-over-1-makker2.html#afsnit-g",
+  "en": {
+   "titel": "Reverses",
+   "gruppe": "Proposals (Partner 2 & me, appendix G)",
+   "beskrivelse": "A discussion paper, not adopted: a new higher suit at the cheapest level as 16+ and forcing for one round – and responder's second bid."
+  }
  },
  {
   "id": "forslag-2kl-kontrolsvar",
@@ -463,7 +633,12 @@
    "Svarer"
   ],
   "status": "klar",
-  "viden": "viden/forslag-2klor-kontrolsvar.html"
+  "viden": "viden/forslag-2klor-kontrolsvar.html",
+  "en": {
+   "titel": "2♣ with control responses",
+   "gruppe": "Openings",
+   "beskrivelse": "Count controls (ace = 2, king = 1) and respond to partner's 2♣ – or show a good suit with a transfer. Opener's notrump rebids, control showing and responses after an overcall."
+  }
  },
  {
   "id": "kamp-landy",
@@ -477,7 +652,12 @@
   ],
   "status": "klar",
   "viden": "viden/kampen-om-kontrakten.html#13-forsvar-mod-modstandernes-1ut-aftale",
-  "layout": "bord"
+  "layout": "bord",
+  "en": {
+   "titel": "Landy",
+   "gruppe": "Defence against 1NT",
+   "beskrivelse": "2♣ = both majors (at least 5-4), X penalty, other suits natural – and partner's response: pick a major, 2♦ with equal length, 2NT asks, 3M invitational."
+  }
  },
  {
   "id": "kamp-forsvar-1ut",
@@ -506,7 +686,13 @@
     "id": "multiforsvar",
     "navn": "Multi"
    }
-  ]
+  ],
+  "en": {
+   "titel": "Defence against 1NT",
+   "gruppe": "Defence against 1NT",
+   "beskrivelse": "Choose your defence against the opponents' 1NT – Landy, DONT or Multi – before the hands are shown. You are alternately the overcaller and the advancer.",
+   "valg": "Which defence against 1NT do you play?"
+  }
  },
  {
   "id": "kamp-stoette-def",
@@ -520,7 +706,12 @@
   "status": "klar",
   "viden": "viden/kampen-om-kontrakten.html#5-1-defensiven-svar-paa-makkers-simple-indmelding",
   "layout": "bord",
-  "profiler": true
+  "profiler": true,
+  "en": {
+   "titel": "Raising partner's overcall",
+   "gruppe": "Modern raises",
+   "beskrivelse": "A simple raise with 3 trumps, a jump with 4, game with 5 – all 6–9. With 10+ and support, bid the opponents' suit. A jump in a new suit is game forcing."
+  }
  },
  {
   "id": "kamp-stoette-off",
@@ -534,7 +725,12 @@
   "status": "klar",
   "viden": "viden/kampen-om-kontrakten.html#5-2-offensiven-makker-har-aabnet-modparten-meldt-ind",
   "layout": "bord",
-  "profiler": true
+  "profiler": true,
+  "en": {
+   "titel": "Raising after an overcall of partner's opening",
+   "gruppe": "Modern raises",
+   "beskrivelse": "2M, 3M and 4M show 3, 4 and 5 trumps (6–9), the opponents' suit 10+ with support, the negative double – and Stenberg 2NT in Tournament."
+  }
  },
  {
   "id": "kamp-stoette-minor",
@@ -548,7 +744,12 @@
   "status": "klar",
   "viden": "viden/kampen-om-kontrakten.html#5-4-stoette-i-minor-i-offensiven",
   "layout": "bord",
-  "profiler": true
+  "profiler": true,
+  "en": {
+   "titel": "Minor-suit raises and the negative double",
+   "gruppe": "Modern raises",
+   "beskrivelse": "One more trump than in a major at every level, and the major is shown first. After 1♦ (1♠) the double promises four or more hearts."
+  }
  },
  {
   "id": "kamp-efter-od",
@@ -562,7 +763,12 @@
   "status": "klar",
   "viden": "viden/kampen-om-kontrakten.html#5-3-efter-modpartens-oplysende-dobling",
   "layout": "bord",
-  "profiler": true
+  "profiler": true,
+  "en": {
+   "titel": "After the opponents' takeout double",
+   "gruppe": "Modern raises",
+   "beskrivelse": "The raises show the number of trumps, 2NT four-card support 10+, XX 10+ without four-card support, 1♠ forcing and a constructive six-card minor."
+  }
  },
  {
   "id": "kamp-gif",
@@ -576,7 +782,12 @@
   "status": "klar",
   "viden": "viden/kampen-om-kontrakten.html#7-gif-genaabning-i-fjerde-haand",
   "layout": "bord",
-  "profiler": true
+  "profiler": true,
+  "en": {
+   "titel": "GIF – balancing in fourth seat",
+   "gruppe": "Competition",
+   "beskrivelse": "Borrow 3–4 HCP with unbalanced hands: double from 9 HCP, a suit 7–14, constructive jumps. Balanced hands: pass below 11, 1NT 11–14, X 15–18, 2NT 19–21."
+  }
  },
  {
   "id": "kamp-2020",
@@ -591,7 +802,12 @@
   "status": "klar",
   "viden": "viden/kampen-om-kontrakten.html#4-20-20-situationer",
   "layout": "bord",
-  "profiler": true
+  "profiler": true,
+  "en": {
+   "titel": "20-20 – the part-score battle",
+   "gruppe": "Competition",
+   "beskrivelse": "Do not sell out below 2♠ when they have found a fit – and bid by the trump rule and the vulnerability when you compete further."
+  }
  },
  {
   "id": "kamp-doblinger",
@@ -607,7 +823,12 @@
   "status": "klar",
   "viden": "viden/kampen-om-kontrakten.html#6-doblinger-tag-makker-med-paa-raad",
   "layout": "bord",
-  "profiler": true
+  "profiler": true,
+  "en": {
+   "titel": "Doubles – position and takeout",
+   "gruppe": "Competition",
+   "beskrivelse": "A takeout double in second seat needs 12–17, doubles are for takeout when they have raised each other, and with one unbid suit the double shows it and tolerance for partner."
+  }
  },
  {
   "id": "kamp-1ut-indmeldt",
@@ -621,7 +842,12 @@
   "status": "klar",
   "viden": "viden/kampen-om-kontrakten.html#8-fjenden-indmelder-1ut-efter-makkers-aabning",
   "layout": "bord",
-  "profiler": true
+  "profiler": true,
+  "en": {
+   "titel": "The opponents overcall 1NT",
+   "gruppe": "Notrump",
+   "beskrivelse": "After partner's opening and their 1NT: double is penalty and strongest (9+), raises are natural, jumps preemptive and a new suit is the weakest bid."
+  }
  },
  {
   "id": "kamp-1ut-forsvar",
@@ -635,7 +861,12 @@
   "status": "klar",
   "viden": "viden/kampen-om-kontrakten.html#9-forsvar-mod-indmeldinger-efter-egen-1ut-aabning",
   "layout": "bord",
-  "profiler": true
+  "profiler": true,
+  "en": {
+   "titel": "Overcalls over our 1NT",
+   "gruppe": "Notrump",
+   "beskrivelse": "Stayman and transfers are off: a new suit at the cheapest level = to play, a jump = forcing, the opponents' suit asks for a stopper – and Lebensohl in Tournament. Plus escaping after a penalty double."
+  }
  },
  {
   "id": "markeringer",
@@ -648,7 +879,12 @@
   "status": "klar",
   "system": "kf",
   "side": "markering.html",
-  "viden": "viden/bridgesystem.html#9-udspil-og-markeringer"
+  "viden": "viden/bridgesystem.html#9-udspil-og-markeringer",
+  "en": {
+   "titel": "Signals",
+   "gruppe": "Defence",
+   "beskrivelse": "Low = encourage after an ace lead, count after a king lead and when declarer plays a new suit (Malmö: low = even), and the first discard against suit and notrump contracts. Give or read the signal."
+  }
  },
  {
   "id": "lavinthal",
@@ -663,6 +899,11 @@
    "kf",
    "forslag"
   ],
-  "side": "markering.html"
+  "side": "markering.html",
+  "en": {
+   "titel": "Lavinthal",
+   "gruppe": "Defence",
+   "beskrivelse": "A proposal – to be practised before it goes into the system card. Ruff and return, dead lead suit and Lavinthal discards: high asks for the higher of the two suits, low for the lower."
+  }
  }
 ]

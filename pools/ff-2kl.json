@@ -30,6 +30,18 @@
      "Ruderfarve"
     ],
     "why": "2♦ er waiting: alt, der ikke er et positivt svar. Den helt tomme hånd vises senere med det andet negative."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does 2♦ over partner's 2♣ show?",
+     "correct": "Waiting – says nothing about strength",
+     "options": [
+      "Waiting – says nothing about strength",
+      "0–4 HCP, negative",
+      "A diamond suit"
+     ],
+     "why": "2♦ is waiting: everything that is not a positive response. The truly empty hand is shown later with the second negative."
+    }
    }
   },
   "aab_2ru": {
@@ -69,6 +81,18 @@
      "Begge minorer"
     ],
     "why": "Efter 2♣ – 2♦ viser 2NT 22–24 og 3NT 25–27 jævn. ASS, overføring og Gerber gælder ét trin højere."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does 2♣ – 2♦ – 2NT show?",
+     "correct": "Balanced 22–24 HCP",
+     "options": [
+      "Balanced 22–24 HCP",
+      "Balanced 20–21 HCP",
+      "Both minors"
+     ],
+     "why": "After 2♣ – 2♦, 2NT shows 22–24 and 3NT 25–27 balanced. ASS, transfers and Gerber apply one step higher."
+    }
    }
   },
   "svar_2_hj": {
@@ -116,6 +140,18 @@
      "Pas"
     ],
     "why": "Svarers billigste sansmelding er det andet negative. Med 3-korts støtte støtter man – også med 0–4."
+   },
+   "en": {
+    "bonus": {
+     "q": "What is the second negative after 2♣ – 2♦ – 2♥?",
+     "correct": "2NT – 0–4 HCP without support and without a suit of your own",
+     "options": [
+      "2NT – 0–4 HCP without support and without a suit of your own",
+      "3♣",
+      "Pass"
+     ],
+     "why": "Responder's cheapest notrump bid is the second negative. With three-card support you raise – even with 0–4."
+    }
    }
   },
   "svar_2_sp": {
@@ -163,6 +199,18 @@
      "Pas"
     ],
     "why": "Svarers billigste sansmelding er det andet negative. Med 3-korts støtte støtter man – også med 0–4."
+   },
+   "en": {
+    "bonus": {
+     "q": "What is the second negative after 2♣ – 2♦ – 2♥?",
+     "correct": "2NT – 0–4 HCP without support and without a suit of your own",
+     "options": [
+      "2NT – 0–4 HCP without support and without a suit of your own",
+      "3♣",
+      "Pass"
+     ],
+     "why": "Responder's cheapest notrump bid is the second negative. With three-card support you raise – even with 0–4."
+    }
    }
   }
  },
@@ -171,286 +219,346 @@
    "situation": "svar_2kl",
    "hand": {
     "S": [
+     12,
      6
     ],
     "H": [
-     12,
+     13,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     9,
      8,
      6,
      2
     ],
-    "D": [
-     13,
-     12,
-     11,
-     8
-    ],
     "C": [
-     13,
-     10,
-     5,
-     2
+     11,
+     8,
+     4
     ]
    },
-   "hp": 11,
-   "sp": 14,
+   "hp": 6,
+   "sp": 7,
    "correct": "2♦",
-   "why": "11 hp, men ingen god 5-farve og ikke jævn 4-farvet: 2♦ waiting."
+   "why": "6 hp: 2♦ waiting.",
+   "en": {
+    "why": "6 HCP: 2♦ waiting."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
-     12,
-     9,
-     6,
-     4
+     11,
+     10,
+     8,
+     6
     ],
     "H": [
-     14,
      13,
      9,
+     3
+    ],
+    "D": [
+     11,
+     10,
+     7,
+     6
+    ],
+    "C": [
+     10,
+     9
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "2♦",
+   "why": "5 hp: 2♦ waiting.",
+   "en": {
+    "why": "5 HCP: 2♦ waiting."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     2
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     9,
+     2
+    ],
+    "D": [
+     11,
+     5
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     8,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "correct": "2♦",
+   "why": "8 hp, men ingen god 5-farve og ikke jævn 4-farvet: 2♦ waiting.",
+   "en": {
+    "why": "8 HCP, but no good five-card suit and not balanced: 2♦ waiting."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     6,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     10,
      7
     ],
     "D": [
      12,
-     6,
-     5,
-     3
+     9,
+     7
     ],
     "C": [
-     9
-    ]
-   },
-   "hp": 11,
-   "sp": 14,
-   "correct": "2♦",
-   "why": "11 hp, men ingen god 5-farve og ikke jævn 4-farvet: 2♦ waiting."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     14,
+     12,
      11,
-     10,
-     7,
-     3
-    ],
-    "H": [
-     14,
-     9,
-     2
-    ],
-    "D": [
-     9
-    ],
-    "C": [
-     11,
-     9,
-     6,
+     8,
      4
     ]
    },
-   "hp": 10,
-   "sp": 13,
+   "hp": 7,
+   "sp": 7,
    "correct": "2♦",
-   "why": "10 hp, men ingen god 5-farve og ikke jævn 4-farvet: 2♦ waiting."
+   "why": "7 hp: 2♦ waiting.",
+   "en": {
+    "why": "7 HCP: 2♦ waiting."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
-     13,
-     9,
-     6,
-     4,
-     2
-    ],
-    "H": [
-     2
-    ],
-    "D": [
-     11,
-     8,
-     7,
-     3
-    ],
-    "C": [
-     14,
-     10,
-     3
-    ]
-   },
-   "hp": 8,
-   "sp": 11,
-   "correct": "2♦",
-   "why": "8 hp, men ingen god 5-farve og ikke jævn 4-farvet: 2♦ waiting."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     10,
-     8,
-     7,
-     3
-    ],
-    "H": [
-     8,
-     5,
-     3
-    ],
-    "D": [
-     4,
-     2
-    ],
-    "C": [
-     12,
-     11,
-     9,
-     8
-    ]
-   },
-   "hp": 3,
-   "sp": 4,
-   "correct": "2♦",
-   "why": "3 hp: 2♦ waiting."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     12,
-     11,
      6
     ],
     "H": [
+     14,
+     10,
      9,
      8,
      5
     ],
     "D": [
-     10,
-     6,
-     2
+     13,
+     12,
+     7,
+     6
     ],
     "C": [
      11,
      8,
-     6,
-     4
-    ]
-   },
-   "hp": 4,
-   "sp": 4,
-   "correct": "2♦",
-   "why": "4 hp: 2♦ waiting."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     13,
-     10,
-     7,
-     4
-    ],
-    "H": [
-     12,
-     6
-    ],
-    "D": [
-     12,
-     10,
-     9,
-     7,
-     6
-    ],
-    "C": [
-     13,
-     2
+     5
     ]
    },
    "hp": 10,
-   "sp": 12,
+   "sp": 13,
    "correct": "2♦",
-   "why": "10 hp, men ingen god 5-farve og ikke jævn 4-farvet: 2♦ waiting."
+   "why": "10 hp, men ingen god 5-farve og ikke jævn 4-farvet: 2♦ waiting.",
+   "en": {
+    "why": "10 HCP, but no good five-card suit and not balanced: 2♦ waiting."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
-     9,
-     6,
-     5,
+     10,
      4
     ],
     "H": [
-     5,
-     4
+     14,
+     10,
+     6
     ],
     "D": [
+     9,
+     8,
      6,
-     3,
+     4
+    ],
+    "C": [
+     12,
+     10,
+     5,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "2♦",
+   "why": "6 hp: 2♦ waiting.",
+   "en": {
+    "why": "6 HCP: 2♦ waiting."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     5,
+     3
+    ],
+    "H": [
+     10,
+     7,
+     6,
+     5
+    ],
+    "D": [
+     14,
+     7,
+     4,
      2
     ],
     "C": [
-     14,
      13,
-     8,
-     2
+     7,
+     6
     ]
    },
    "hp": 7,
    "sp": 8,
    "correct": "2♦",
-   "why": "7 hp: 2♦ waiting."
+   "why": "7 hp: 2♦ waiting.",
+   "en": {
+    "why": "7 HCP: 2♦ waiting."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
-     11,
-     10,
-     8
-    ],
-    "H": [
-     14,
      12,
      11,
      10,
+     5,
+     4
+    ],
+    "H": [
+     13,
+     6,
+     3
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     13,
+     9,
+     6,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "2♦",
+   "why": "9 hp, men ingen god 5-farve og ikke jævn 4-farvet: 2♦ waiting.",
+   "en": {
+    "why": "9 HCP, but no good five-card suit and not balanced: 2♦ waiting."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     8,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     6,
      4
     ],
     "D": [
      10,
      8,
-     2
+     3
     ],
     "C": [
-     7,
+     12,
      2
     ]
    },
-   "hp": 8,
-   "sp": 9,
+   "hp": 10,
+   "sp": 11,
    "correct": "2♥",
-   "why": "8 hp og god 5-farve i hjerter: 2♥ – positivt svar."
+   "why": "10 hp og god 5-farve i hjerter: 2♥ – positivt svar.",
+   "en": {
+    "why": "10 HCP and a good 5-card suit in hearts: 2♥ – a positive response."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
+     10,
+     9
+    ],
+    "H": [
      14,
-     4
+     12,
+     8,
+     6,
+     5
+    ],
+    "D": [
+     10,
+     8,
+     6,
+     2
+    ],
+    "C": [
+     12,
+     7
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "correct": "2♥",
+   "why": "8 hp og god 5-farve i hjerter: 2♥ – positivt svar.",
+   "en": {
+    "why": "8 HCP and a good 5-card suit in hearts: 2♥ – a positive response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     3,
+     2
     ],
     "H": [
      13,
      12,
-     10,
      7,
-     6,
-     3
+     5,
+     4,
+     2
     ],
     "D": [
      12,
@@ -458,224 +566,215 @@
      4
     ],
     "C": [
+     12,
+     11
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "2♥",
+   "why": "10 hp og god 6-farve i hjerter: 2♥ – positivt svar.",
+   "en": {
+    "why": "10 HCP and a good 6-card suit in hearts: 2♥ – a positive response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     14,
+     10,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     4,
+     2
+    ],
+    "D": [
+     3,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     7
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2♥",
+   "why": "11 hp og god 5-farve i hjerter: 2♥ – positivt svar.",
+   "en": {
+    "why": "11 HCP and a good 5-card suit in hearts: 2♥ – a positive response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     10,
+     9,
+     8,
+     2
+    ],
+    "H": [
+     13,
+     12,
      11,
-     6
+     10,
+     7
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     5,
+     3
     ]
    },
    "hp": 12,
    "sp": 14,
    "correct": "2♥",
-   "why": "12 hp og god 6-farve i hjerter: 2♥ – positivt svar."
+   "why": "12 hp og god 5-farve i hjerter: 2♥ – positivt svar.",
+   "en": {
+    "why": "12 HCP and a good 5-card suit in hearts: 2♥ – a positive response."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
      9,
-     5
+     7
     ],
     "H": [
      14,
-     12,
+     13,
+     10,
      8,
      7,
-     3,
-     2
+     4
     ],
     "D": [
+     13,
      9,
-     3,
-     2
+     4
     ],
     "C": [
-     13,
-     5
-    ]
-   },
-   "hp": 9,
-   "sp": 11,
-   "correct": "2♥",
-   "why": "9 hp og god 6-farve i hjerter: 2♥ – positivt svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
      11,
-     10,
-     9
-    ],
-    "H": [
-     13,
-     12,
-     10,
-     4,
-     2
-    ],
-    "D": [
-     13,
-     2
-    ],
-    "C": [
-     7,
-     6,
      2
     ]
    },
-   "hp": 9,
-   "sp": 10,
+   "hp": 11,
+   "sp": 13,
    "correct": "2♥",
-   "why": "9 hp og god 5-farve i hjerter: 2♥ – positivt svar."
+   "why": "11 hp og god 6-farve i hjerter: 2♥ – positivt svar.",
+   "en": {
+    "why": "11 HCP and a good 6-card suit in hearts: 2♥ – a positive response."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
-     6,
+     10,
+     8,
+     7,
      4
     ],
     "H": [
      14,
      13,
-     9,
-     6,
+     11,
+     7,
      5
     ],
     "D": [
-     8,
-     6
+     4,
+     3
     ],
     "C": [
-     12,
-     9,
-     8,
-     7
+     14,
+     8
     ]
    },
-   "hp": 9,
-   "sp": 11,
+   "hp": 12,
+   "sp": 14,
    "correct": "2♥",
-   "why": "9 hp og god 5-farve i hjerter: 2♥ – positivt svar."
+   "why": "12 hp og god 5-farve i hjerter: 2♥ – positivt svar.",
+   "en": {
+    "why": "12 HCP and a good 5-card suit in hearts: 2♥ – a positive response."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
-     9,
-     5
+     14,
+     6,
+     5,
+     3
     ],
     "H": [
+     13,
+     12,
+     11,
+     4,
+     3
+    ],
+    "D": [
+     11,
+     3
+    ],
+    "C": [
+     11,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "12 hp og god 5-farve i hjerter: 2♥ – positivt svar.",
+   "en": {
+    "why": "12 HCP and a good 5-card suit in hearts: 2♥ – a positive response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
      14,
      12,
      11,
-     9,
-     5,
+     6,
+     3,
+     2
+    ],
+    "H": [
+     10,
      3
     ],
     "D": [
      13,
-     7
+     10,
+     3
     ],
     "C": [
-     9,
-     7,
-     4
+     10,
+     3
     ]
    },
    "hp": 10,
    "sp": 12,
-   "correct": "2♥",
-   "why": "10 hp og god 6-farve i hjerter: 2♥ – positivt svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     13,
-     8
-    ],
-    "H": [
-     13,
-     12,
-     10,
-     6,
-     4,
-     3
-    ],
-    "D": [
-     10,
-     9
-    ],
-    "C": [
-     11,
-     8,
-     4
-    ]
-   },
-   "hp": 9,
-   "sp": 11,
-   "correct": "2♥",
-   "why": "9 hp og god 6-farve i hjerter: 2♥ – positivt svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     9,
-     8
-    ],
-    "H": [
-     13,
-     12,
-     8,
-     5,
-     3
-    ],
-    "D": [
-     8,
-     2
-    ],
-    "C": [
-     14,
-     9,
-     7,
-     4
-    ]
-   },
-   "hp": 9,
-   "sp": 11,
-   "correct": "2♥",
-   "why": "9 hp og god 5-farve i hjerter: 2♥ – positivt svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     14,
-     12,
-     10,
-     9,
-     2
-    ],
-    "H": [
-     13,
-     6,
-     4
-    ],
-    "D": [
-     9,
-     5
-    ],
-    "C": [
-     8,
-     6,
-     4
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
    "correct": "2♠",
-   "why": "9 hp og god 5-farve i spar: 2♠ – positivt svar."
+   "why": "10 hp og god 6-farve i spar: 2♠ – positivt svar.",
+   "en": {
+    "why": "10 HCP and a good 6-card suit in spades: 2♠ – a positive response."
+   }
   },
   {
    "situation": "svar_2kl",
@@ -683,9 +782,10 @@
     "S": [
      14,
      13,
-     12,
-     6,
-     4
+     8,
+     7,
+     5,
+     2
     ],
     "H": [
      8,
@@ -693,49 +793,87 @@
      2
     ],
     "D": [
-     9,
-     5,
-     3
+     8,
+     4
     ],
     "C": [
-     11,
-     9
+     12,
+     6
     ]
    },
-   "hp": 10,
+   "hp": 9,
    "sp": 11,
    "correct": "2♠",
-   "why": "10 hp og god 5-farve i spar: 2♠ – positivt svar."
+   "why": "9 hp og god 6-farve i spar: 2♠ – positivt svar.",
+   "en": {
+    "why": "9 HCP and a good 6-card suit in spades: 2♠ – a positive response."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
      14,
-     12,
-     8,
+     13,
+     11,
      7,
-     6,
-     2
+     4,
+     3
+    ],
+    "H": [
+     10,
+     8,
+     6
+    ],
+    "D": [
+     11,
+     3
+    ],
+    "C": [
+     11,
+     10
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "10 hp og god 6-farve i spar: 2♠ – positivt svar.",
+   "en": {
+    "why": "10 HCP and a good 6-card suit in spades: 2♠ – a positive response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     7,
+     4,
+     3
     ],
     "H": [
      9,
-     8,
-     7
+     2
     ],
     "D": [
-     12,
-     8
+     10,
+     4
     ],
     "C": [
      13,
-     4
+     12,
+     2
     ]
    },
    "hp": 11,
    "sp": 13,
    "correct": "2♠",
-   "why": "11 hp og god 6-farve i spar: 2♠ – positivt svar."
+   "why": "11 hp og god 6-farve i spar: 2♠ – positivt svar.",
+   "en": {
+    "why": "11 HCP and a good 6-card suit in spades: 2♠ – a positive response."
+   }
   },
   {
    "situation": "svar_2kl",
@@ -743,231 +881,384 @@
     "S": [
      14,
      13,
-     10,
-     5,
+     7,
+     4,
      2
     ],
     "H": [
+     8,
+     5,
+     4
+    ],
+    "D": [
+     12,
+     6,
+     4
+    ],
+    "C": [
+     7,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2♠",
+   "why": "9 hp og god 5-farve i spar: 2♠ – positivt svar.",
+   "en": {
+    "why": "9 HCP and a good 5-card suit in spades: 2♠ – a positive response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7,
+     4,
+     3
+    ],
+    "H": [
+     8,
+     6,
+     5
+    ],
+    "D": [
+     5,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     10
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2♠",
+   "why": "10 hp og god 5-farve i spar: 2♠ – positivt svar.",
+   "en": {
+    "why": "10 HCP and a good 5-card suit in spades: 2♠ – a positive response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     8,
+     3
+    ],
+    "H": [
+     7,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     9,
+     8
+    ],
+    "C": [
+     5,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "12 hp og god 5-farve i spar: 2♠ – positivt svar.",
+   "en": {
+    "why": "12 HCP and a good 5-card suit in spades: 2♠ – a positive response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     9,
+     8
+    ],
+    "H": [
+     13,
+     2
+    ],
+    "D": [
+     10,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     5,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "correct": "2♠",
+   "why": "8 hp og god 5-farve i spar: 2♠ – positivt svar.",
+   "en": {
+    "why": "8 HCP and a good 5-card suit in spades: 2♠ – a positive response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     7,
+     4
+    ],
+    "H": [
+     13,
+     5,
+     4
+    ],
+    "D": [
+     9,
+     7
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "10 hp og god 6-farve i klør: 3♣ – positivt svar.",
+   "en": {
+    "why": "10 HCP and a good 6-card suit in clubs: 3♣ – a positive response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
      9,
      6,
      3
     ],
+    "H": [
+     8,
+     4
+    ],
     "D": [
-     11,
+     12,
      9,
-     3
+     6
     ],
     "C": [
+     14,
+     13,
+     11,
      7,
-     5
+     2
     ]
    },
-   "hp": 8,
-   "sp": 9,
-   "correct": "2♠",
-   "why": "8 hp og god 5-farve i spar: 2♠ – positivt svar."
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "10 hp og god 5-farve i klør: 3♣ – positivt svar.",
+   "en": {
+    "why": "10 HCP and a good 5-card suit in clubs: 3♣ – a positive response."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
-     14,
-     12,
-     11,
-     10,
-     2
+     13,
+     5
     ],
     "H": [
-     7,
-     3
+     12,
+     10
     ],
     "D": [
-     11,
-     10,
+     6,
+     5,
      2
     ],
     "C": [
+     14,
      13,
+     10,
      8,
-     6
+     3,
+     2
     ]
    },
-   "hp": 11,
-   "sp": 12,
-   "correct": "2♠",
-   "why": "11 hp og god 5-farve i spar: 2♠ – positivt svar."
+   "hp": 12,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "12 hp og god 6-farve i klør: 3♣ – positivt svar.",
+   "en": {
+    "why": "12 HCP and a good 6-card suit in clubs: 3♣ – a positive response."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
+     13,
+     10,
+     7
+    ],
+    "H": [
+     4,
+     2
+    ],
+    "D": [
+     6,
+     3,
+     2
+    ],
+    "C": [
      14,
      13,
      12,
-     10,
-     7,
-     3
+     9,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "12 hp og god 5-farve i klør: 3♣ – positivt svar.",
+   "en": {
+    "why": "12 HCP and a good 5-card suit in clubs: 3♣ – a positive response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     5,
+     4
     ],
     "H": [
      11,
      10
     ],
     "D": [
-     6,
-     3
+     12,
+     10,
+     7,
+     2
     ],
     "C": [
+     14,
+     13,
      9,
-     6,
-     2
+     8,
+     6
     ]
    },
    "hp": 10,
    "sp": 12,
-   "correct": "2♠",
-   "why": "10 hp og god 6-farve i spar: 2♠ – positivt svar."
+   "correct": "3♣",
+   "why": "10 hp og god 5-farve i klør: 3♣ – positivt svar.",
+   "en": {
+    "why": "10 HCP and a good 5-card suit in clubs: 3♣ – a positive response."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
      14,
-     13,
-     12,
      7,
-     5,
-     3
+     4
     ],
     "H": [
-     8,
-     2
-    ],
-    "D": [
      9,
      8
     ],
-    "C": [
-     12,
+    "D": [
      6,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     8,
      3
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "3♣",
+   "why": "9 hp og god 5-farve i klør: 3♣ – positivt svar.",
+   "en": {
+    "why": "9 HCP and a good 5-card suit in clubs: 3♣ – a positive response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     11,
+     5
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     3
+    ],
+    "D": [
+     9,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     10,
+     8
     ]
    },
    "hp": 11,
    "sp": 13,
-   "correct": "2♠",
-   "why": "11 hp og god 6-farve i spar: 2♠ – positivt svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     14,
-     13,
-     10,
-     7,
-     5,
-     4
-    ],
-    "H": [
-     13,
-     8
-    ],
-    "D": [
-     5,
-     4,
-     2
-    ],
-    "C": [
-     12,
-     7
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
-   "correct": "2♠",
-   "why": "12 hp og god 6-farve i spar: 2♠ – positivt svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     9,
-     4,
-     2
-    ],
-    "H": [
-     9,
-     4
-    ],
-    "D": [
-     14,
-     10,
-     9
-    ],
-    "C": [
-     13,
-     12,
-     11,
-     7,
-     6
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
    "correct": "3♣",
-   "why": "10 hp og god 5-farve i klør: 3♣ – positivt svar."
+   "why": "11 hp og god 5-farve i klør: 3♣ – positivt svar.",
+   "en": {
+    "why": "11 HCP and a good 5-card suit in clubs: 3♣ – a positive response."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
-     8,
-     2
-    ],
-    "H": [
      13,
      8,
-     5,
-     4
-    ],
-    "D": [
-     12,
-     7
-    ],
-    "C": [
-     14,
-     13,
-     9,
      4,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
-   "correct": "3♣",
-   "why": "12 hp og god 5-farve i klør: 3♣ – positivt svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     8,
-     4
-    ],
-    "H": [
-     12,
-     5,
      3
     ],
+    "H": [
+     9,
+     6
+    ],
     "D": [
-     6,
-     5
+     8,
+     6
     ],
     "C": [
-     14,
+     13,
      12,
-     8,
-     6,
+     7,
      4,
      2
     ]
@@ -975,577 +1266,439 @@
    "hp": 8,
    "sp": 10,
    "correct": "3♣",
-   "why": "8 hp og god 6-farve i klør: 3♣ – positivt svar."
+   "why": "8 hp og god 5-farve i klør: 3♣ – positivt svar.",
+   "en": {
+    "why": "8 HCP and a good 5-card suit in clubs: 3♣ – a positive response."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
-     11,
-     8,
-     4
-    ],
-    "H": [
-     9,
+     12,
      5
     ],
-    "D": [
-     10,
+    "H": [
+     11,
+     9,
+     5,
      2
     ],
-    "C": [
-     14,
+    "D": [
      13,
+     12,
      11,
-     7,
-     3,
-     2
+     8,
+     5
+    ],
+    "C": [
+     5,
+     3
     ]
    },
    "hp": 9,
    "sp": 11,
-   "correct": "3♣",
-   "why": "9 hp og god 6-farve i klør: 3♣ – positivt svar."
+   "correct": "3♦",
+   "why": "9 hp og god 5-farve i ruder: 3♦ – positivt svar.",
+   "en": {
+    "why": "9 HCP and a good 5-card suit in diamonds: 3♦ – a positive response."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
-     11,
+     10,
+     5
+    ],
+    "H": [
+     6,
      4,
      2
     ],
+    "D": [
+     13,
+     12,
+     9,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     11
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "10 hp og god 6-farve i ruder: 3♦ – positivt svar.",
+   "en": {
+    "why": "10 HCP and a good 6-card suit in diamonds: 3♦ – a positive response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     13,
+     8,
+     3
+    ],
     "H": [
+     9,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     8,
+     5,
+     4
+    ],
+    "C": [
+     5,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "10 hp og god 6-farve i ruder: 3♦ – positivt svar.",
+   "en": {
+    "why": "10 HCP and a good 6-card suit in diamonds: 3♦ – a positive response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     6,
+     2
+    ],
+    "H": [
+     11,
      8,
      2
     ],
     "D": [
-     9,
-     8
-    ],
-    "C": [
      14,
      12,
+     9,
+     4,
+     3
+    ],
+    "C": [
+     13,
      11,
-     7,
-     6,
-     2
+     8
     ]
    },
-   "hp": 8,
-   "sp": 10,
-   "correct": "3♣",
-   "why": "8 hp og god 6-farve i klør: 3♣ – positivt svar."
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "11 hp og god 5-farve i ruder: 3♦ – positivt svar.",
+   "en": {
+    "why": "11 HCP and a good 5-card suit in diamonds: 3♦ – a positive response."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
+     9,
      8,
      6
     ],
     "H": [
+     13,
+     8
+    ],
+    "D": [
      14,
      12,
+     11,
+     7,
+     5
+    ],
+    "C": [
+     12,
+     7,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "3♦",
+   "why": "12 hp og god 5-farve i ruder: 3♦ – positivt svar.",
+   "en": {
+    "why": "12 HCP and a good 5-card suit in diamonds: 3♦ – a positive response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9,
+     8
+    ],
+    "H": [
+     9,
+     8
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     10,
+     7
+    ],
+    "C": [
+     9,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "9 hp og god 5-farve i ruder: 3♦ – positivt svar.",
+   "en": {
+    "why": "9 HCP and a good 5-card suit in diamonds: 3♦ – a positive response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     12,
+     9
+    ],
+    "H": [
+     14,
+     9
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     9,
+     8,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "3♦",
+   "why": "12 hp og god 6-farve i ruder: 3♦ – positivt svar.",
+   "en": {
+    "why": "12 HCP and a good 6-card suit in diamonds: 3♦ – a positive response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     9,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     14,
      10
     ],
     "D": [
-     10,
-     4
-    ],
-    "C": [
-     14,
-     12,
-     10,
-     9,
-     6,
-     3
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
-   "correct": "3♣",
-   "why": "12 hp og god 6-farve i klør: 3♣ – positivt svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     7,
-     3
-    ],
-    "H": [
+     13,
      12,
      11,
+     8,
      7
     ],
-    "D": [
-     7,
-     3
-    ],
     "C": [
-     14,
-     13,
-     10,
      8,
-     4,
-     2
-    ]
-   },
-   "hp": 10,
-   "sp": 12,
-   "correct": "3♣",
-   "why": "10 hp og god 6-farve i klør: 3♣ – positivt svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     11,
-     9,
-     3
-    ],
-    "H": [
-     13,
-     11,
-     8
-    ],
-    "D": [
-     12,
-     9
-    ],
-    "C": [
-     13,
-     12,
-     8,
-     7,
      5
     ]
    },
-   "hp": 12,
-   "sp": 13,
-   "correct": "3♣",
-   "why": "12 hp og god 5-farve i klør: 3♣ – positivt svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     10,
-     9,
-     6
-    ],
-    "H": [
-     4,
-     2
-    ],
-    "D": [
-     14,
-     13,
-     11,
-     8,
-     7
-    ],
-    "C": [
-     8,
-     5,
-     3
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "3♦",
-   "why": "8 hp og god 5-farve i ruder: 3♦ – positivt svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     14,
-     7
-    ],
-    "H": [
-     6,
-     2
-    ],
-    "D": [
-     14,
-     12,
-     6,
-     4,
-     2
-    ],
-    "C": [
-     10,
-     9,
-     5,
-     3
-    ]
-   },
    "hp": 10,
    "sp": 12,
    "correct": "3♦",
-   "why": "10 hp og god 5-farve i ruder: 3♦ – positivt svar."
+   "why": "10 hp og god 5-farve i ruder: 3♦ – positivt svar.",
+   "en": {
+    "why": "10 HCP and a good 5-card suit in diamonds: 3♦ – a positive response."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
+     12,
+     8,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     9,
+     3
+    ],
+    "D": [
      3,
      2
     ],
-    "H": [
-     9,
-     4,
-     3
-    ],
-    "D": [
-     14,
-     12,
-     11,
-     8,
-     6,
-     4
-    ],
-    "C": [
-     13,
-     9
-    ]
-   },
-   "hp": 10,
-   "sp": 12,
-   "correct": "3♦",
-   "why": "10 hp og god 6-farve i ruder: 3♦ – positivt svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     11,
-     7
-    ],
-    "H": [
-     8,
-     7
-    ],
-    "D": [
-     13,
-     12,
-     8,
-     6,
-     4
-    ],
     "C": [
      14,
      10,
-     7,
+     8,
      2
     ]
    },
    "hp": 10,
-   "sp": 12,
-   "correct": "3♦",
-   "why": "10 hp og god 5-farve i ruder: 3♦ – positivt svar."
+   "sp": 11,
+   "correct": "2NT",
+   "why": "10 hp jævn uden 5-farve: 2NT – positivt svar.",
+   "en": {
+    "why": "10 HCP balanced without a five-card suit: 2NT – a positive response."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
+     13,
      11,
-     9
+     6,
+     2
     ],
     "H": [
-     7,
-     4
-    ],
-    "D": [
-     14,
-     13,
-     12,
      11,
-     7,
-     5
-    ],
-    "C": [
-     10,
-     4,
-     3
-    ]
-   },
-   "hp": 11,
-   "sp": 13,
-   "correct": "3♦",
-   "why": "11 hp og god 6-farve i ruder: 3♦ – positivt svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     13,
      9,
-     4
-    ],
-    "H": [
-     11,
-     4
-    ],
-    "D": [
-     14,
-     13,
-     9,
-     8,
-     5
-    ],
-    "C": [
-     11,
-     10,
      3
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "3♦",
-   "why": "12 hp og god 5-farve i ruder: 3♦ – positivt svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     10,
-     9
-    ],
-    "H": [
-     7,
-     5
     ],
     "D": [
-     14,
-     13,
-     8,
-     7,
-     4
+     10,
+     8
     ],
     "C": [
-     13,
-     7,
+     14,
+     9,
      5,
      3
-    ]
-   },
-   "hp": 10,
-   "sp": 12,
-   "correct": "3♦",
-   "why": "10 hp og god 5-farve i ruder: 3♦ – positivt svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     6,
-     5
-    ],
-    "H": [
-     10,
-     9
-    ],
-    "D": [
-     14,
-     12,
-     10,
-     8,
-     4
-    ],
-    "C": [
-     13,
-     12,
-     11,
-     9
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
-   "correct": "3♦",
-   "why": "12 hp og god 5-farve i ruder: 3♦ – positivt svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     12,
-     10,
-     7,
-     3
-    ],
-    "H": [
-     14,
-     13,
-     3
-    ],
-    "D": [
-     9,
-     8,
-     6,
-     5
-    ],
-    "C": [
-     8,
-     5
     ]
    },
    "hp": 9,
    "sp": 10,
    "correct": "2NT",
-   "why": "9 hp jævn uden 5-farve: 2NT – positivt svar."
+   "why": "9 hp jævn uden 5-farve: 2NT – positivt svar.",
+   "en": {
+    "why": "9 HCP balanced without a five-card suit: 2NT – a positive response."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
-     13,
-     9,
-     4,
+     6,
+     3,
      2
     ],
     "H": [
      12,
-     6,
-     4
+     9,
+     7,
+     2
     ],
     "D": [
      14,
-     4
+     10,
+     9,
+     8
     ],
     "C": [
-     9,
-     7,
-     6,
-     2
+     13,
+     4
     ]
    },
    "hp": 9,
    "sp": 10,
    "correct": "2NT",
-   "why": "9 hp jævn uden 5-farve: 2NT – positivt svar."
+   "why": "9 hp jævn uden 5-farve: 2NT – positivt svar.",
+   "en": {
+    "why": "9 HCP balanced without a five-card suit: 2NT – a positive response."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
+     10,
+     9,
+     5
+    ],
+    "H": [
+     10,
+     7,
+     3
+    ],
+    "D": [
+     14,
      13,
      5,
-     3,
-     2
-    ],
-    "H": [
-     7,
-     5,
-     3,
-     2
-    ],
-    "D": [
-     14,
-     2
-    ],
-    "C": [
-     11,
-     7,
-     6
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "2NT",
-   "why": "8 hp jævn uden 5-farve: 2NT – positivt svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     11,
-     5,
-     2
-    ],
-    "H": [
-     12,
-     11,
-     8,
      3
     ],
-    "D": [
-     12,
-     8
-    ],
     "C": [
-     12,
-     10,
-     3,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "2NT",
-   "why": "8 hp jævn uden 5-farve: 2NT – positivt svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
      14,
-     10,
-     9
-    ],
-    "H": [
-     9,
-     7,
-     2
-    ],
-    "D": [
-     14,
-     9,
-     8
-    ],
-    "C": [
-     11,
-     9,
-     6,
-     3
-    ]
-   },
-   "hp": 9,
-   "sp": 9,
-   "correct": "2NT",
-   "why": "9 hp jævn uden 5-farve: 2NT – positivt svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11,
-     3
-    ],
-    "H": [
-     9,
      6,
      4
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "correct": "2NT",
+   "why": "11 hp jævn uden 5-farve: 2NT – positivt svar.",
+   "en": {
+    "why": "11 HCP balanced without a five-card suit: 2NT – a positive response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     7,
+     3
+    ],
+    "H": [
+     9,
+     5,
+     3
     ],
     "D": [
-     10,
-     8,
-     6,
-     2
+     13,
+     12
     ],
     "C": [
-     14,
-     4
+     11,
+     9,
+     3,
+     2
     ]
    },
    "hp": 11,
    "sp": 12,
    "correct": "2NT",
-   "why": "11 hp jævn uden 5-farve: 2NT – positivt svar."
+   "why": "11 hp jævn uden 5-farve: 2NT – positivt svar.",
+   "en": {
+    "why": "11 HCP balanced without a five-card suit: 2NT – a positive response."
+   }
   },
   {
    "situation": "svar_2kl",
@@ -1553,260 +1706,119 @@
     "S": [
      13,
      6,
-     4
+     4,
+     3
     ],
     "H": [
-     13,
-     10,
-     2
+     12,
+     5,
+     4,
+     3
     ],
     "D": [
-     12,
-     10,
-     7,
+     14,
+     9,
      4
     ],
     "C": [
-     9,
-     6,
-     4
+     13,
+     9
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "12 hp jævn uden 5-farve: 2NT – positivt svar.",
+   "en": {
+    "why": "12 HCP balanced without a five-card suit: 2NT – a positive response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9
+    ],
+    "H": [
+     11,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     10,
+     7
+    ],
+    "C": [
+     13,
+     10,
+     3,
+     2
     ]
    },
    "hp": 8,
    "sp": 8,
    "correct": "2NT",
-   "why": "8 hp jævn uden 5-farve: 2NT – positivt svar."
+   "why": "8 hp jævn uden 5-farve: 2NT – positivt svar.",
+   "en": {
+    "why": "8 HCP balanced without a five-card suit: 2NT – a positive response."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
-     10,
+     12,
      6,
-     3
+     4
     ],
     "H": [
-     12,
-     8,
-     5
-    ],
-    "D": [
-     11,
-     5,
-     4,
+     13,
+     6,
      2
     ],
+    "D": [
+     13,
+     10,
+     5
+    ],
     "C": [
-     14,
      11,
-     10
+     8,
+     4,
+     3
     ]
    },
-   "hp": 8,
-   "sp": 8,
+   "hp": 9,
+   "sp": 9,
    "correct": "2NT",
-   "why": "8 hp jævn uden 5-farve: 2NT – positivt svar."
+   "why": "9 hp jævn uden 5-farve: 2NT – positivt svar.",
+   "en": {
+    "why": "9 HCP balanced without a five-card suit: 2NT – a positive response."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
-     10,
-     8,
-     4
+     8
     ],
     "H": [
-     9,
-     2
-    ],
-    "D": [
-     4
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     10,
-     8,
-     7,
-     4
-    ]
-   },
-   "hp": 9,
-   "sp": 13,
-   "correct": "3NT",
-   "why": "Gående 7-farve i klør med E-K-D: 3NT."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     9
-    ],
-    "H": [
-     10,
-     4,
-     3
-    ],
-    "D": [
-     8,
-     3
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     8,
-     6,
-     4,
-     3
-    ]
-   },
-   "hp": 9,
-   "sp": 13,
-   "correct": "3NT",
-   "why": "Gående 7-farve i klør med E-K-D: 3NT."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     6,
-     5
-    ],
-    "H": [
-     10,
-     7,
-     3
-    ],
-    "D": [
-     6
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     7,
-     6,
-     4,
-     3
-    ]
-   },
-   "hp": 9,
-   "sp": 13,
-   "correct": "3NT",
-   "why": "Gående 7-farve i klør med E-K-D: 3NT."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     8,
-     6
-    ],
-    "H": [
-     8,
-     6
-    ],
-    "D": [
-     6,
-     4
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     8,
-     5,
-     4,
-     3
-    ]
-   },
-   "hp": 9,
-   "sp": 12,
-   "correct": "3NT",
-   "why": "Gående 7-farve i klør med E-K-D: 3NT."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     10,
-     4,
-     2
-    ],
-    "H": [
-     6,
-     5
-    ],
-    "D": [
-     6
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     9,
-     4,
-     3,
-     2
-    ]
-   },
-   "hp": 9,
-   "sp": 13,
-   "correct": "3NT",
-   "why": "Gående 7-farve i klør med E-K-D: 3NT."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     10,
-     4,
-     3
-    ],
-    "H": [
-     10
-    ],
-    "D": [
-     4,
-     3
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     10,
-     9,
-     8,
-     5
-    ]
-   },
-   "hp": 9,
-   "sp": 13,
-   "correct": "3NT",
-   "why": "Gående 7-farve i klør med E-K-D: 3NT."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     10,
-     6,
-     2
-    ],
-    "H": [
-     5
-    ],
-    "D": [
-     8,
-     7
-    ],
-    "C": [
-     14,
-     13,
-     12,
      11,
+     7,
+     6
+    ],
+    "D": [
+     9,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     10,
      8,
      7,
      6
@@ -1815,19 +1827,187 @@
    "hp": 10,
    "sp": 14,
    "correct": "3NT",
-   "why": "Gående 7-farve i klør med E-K-D: 3NT."
+   "why": "Gående 7-farve i klør med E-K-D: 3NT.",
+   "en": {
+    "why": "A solid 7-card club suit with A-K-Q: 3NT."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     7,
+     5
+    ],
+    "H": [
+     4,
+     3
+    ],
+    "D": [
+     10,
+     8
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     11,
+     9,
+     4,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "Gående 7-farve i klør med E-K-D: 3NT.",
+   "en": {
+    "why": "A solid 7-card club suit with A-K-Q: 3NT."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     7,
+     2
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     8,
+     7,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     9,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "Gående 7-farve i klør med E-K-D: 3NT.",
+   "en": {
+    "why": "A solid 7-card club suit with A-K-Q: 3NT."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
+     6,
+     4,
+     2
+    ],
+    "D": [
+     10,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     9,
+     7,
+     6,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "Gående 7-farve i klør med E-K-D: 3NT.",
+   "en": {
+    "why": "A solid 7-card club suit with A-K-Q: 3NT."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     8,
+     4
+    ],
+    "D": [
+     8,
+     7,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     10,
+     9,
+     6,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "Gående 7-farve i klør med E-K-D: 3NT.",
+   "en": {
+    "why": "A solid 7-card club suit with A-K-Q: 3NT."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     9,
+     8,
+     5
+    ],
+    "D": [
+     6,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     11,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "3NT",
+   "why": "Gående 7-farve i klør med E-K-D: 3NT.",
+   "en": {
+    "why": "A solid 7-card club suit with A-K-Q: 3NT."
+   }
   },
   {
    "situation": "svar_2kl",
    "hand": {
     "S": [
      8,
-     5,
-     3
+     5
     ],
     "H": [
-     10,
-     6
+     8,
+     7,
+     3
     ],
     "D": [
      5
@@ -1836,136 +2016,151 @@
      14,
      13,
      12,
-     8,
-     7,
-     5,
+     10,
+     9,
+     6,
      2
     ]
    },
    "hp": 9,
    "sp": 13,
    "correct": "3NT",
-   "why": "Gående 7-farve i klør med E-K-D: 3NT."
+   "why": "Gående 7-farve i klør med E-K-D: 3NT.",
+   "en": {
+    "why": "A solid 7-card club suit with A-K-Q: 3NT."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     11,
+     7,
+     6
+    ],
+    "H": [
+     4,
+     3
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     10,
+     9,
+     8,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "3NT",
+   "why": "Gående 7-farve i klør med E-K-D: 3NT.",
+   "en": {
+    "why": "A solid 7-card club suit with A-K-Q: 3NT."
+   }
   },
   {
    "situation": "aab_2ru",
    "hand": {
     "S": [
-     14,
-     12,
-     11,
-     6
+     13,
+     9
     ],
     "H": [
      14,
-     5
+     12,
+     2
     ],
     "D": [
      13,
      11,
-     9,
-     3
+     6,
+     5
     ],
     "C": [
      14,
      13,
-     2
+     12,
+     5
     ]
    },
    "hp": 22,
    "sp": 23,
    "correct": "2NT",
-   "why": "Jævn hånd, 22 hp: 2NT (22–24)."
+   "why": "Jævn hånd, 22 hp: 2NT (22–24).",
+   "en": {
+    "why": "Balanced hand, 22 HCP: 2NT (22–24)."
+   }
   },
   {
    "situation": "aab_2ru",
    "hand": {
     "S": [
      14,
-     12,
-     7,
-     5
+     13,
+     10,
+     3
     ],
     "H": [
      14,
+     12,
+     2
+    ],
+    "D": [
      13,
-     10
+     12,
+     7,
+     2
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "2NT",
+   "why": "Jævn hånd, 22 hp: 2NT (22–24).",
+   "en": {
+    "why": "Balanced hand, 22 HCP: 2NT (22–24)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     12,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     13
     ],
     "D": [
      14,
-     13,
-     10,
-     9
+     12,
+     9,
+     7
     ],
     "C": [
+     14,
      13,
-     11
+     12,
+     6
     ]
    },
    "hp": 24,
    "sp": 25,
    "correct": "2NT",
-   "why": "Jævn hånd, 24 hp: 2NT (22–24)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     9,
-     5,
-     4
-    ],
-    "H": [
-     14,
-     13,
-     11,
-     7
-    ],
-    "D": [
-     14,
-     12,
-     3
-    ],
-    "C": [
-     14,
-     8
-    ]
-   },
-   "hp": 22,
-   "sp": 23,
-   "correct": "2NT",
-   "why": "Jævn hånd, 22 hp: 2NT (22–24)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     7
-    ],
-    "H": [
-     9,
-     8,
-     5,
-     4
-    ],
-    "D": [
-     14,
-     13
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     10
-    ]
-   },
-   "hp": 23,
-   "sp": 24,
-   "correct": "2NT",
-   "why": "Jævn hånd, 23 hp: 2NT (22–24)."
+   "why": "Jævn hånd, 24 hp: 2NT (22–24).",
+   "en": {
+    "why": "Balanced hand, 24 HCP: 2NT (22–24)."
+   }
   },
   {
    "situation": "aab_2ru",
@@ -1973,929 +2168,527 @@
     "S": [
      14,
      12,
-     10
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     3
-    ],
-    "D": [
-     14,
-     11,
-     10,
-     2
-    ],
-    "C": [
-     12,
-     11
-    ]
-   },
-   "hp": 23,
-   "sp": 24,
-   "correct": "2NT",
-   "why": "Jævn hånd, 23 hp: 2NT (22–24)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
-     4
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     9
-    ],
-    "D": [
-     14,
-     12,
-     2
-    ],
-    "C": [
-     11,
-     5
-    ]
-   },
-   "hp": 22,
-   "sp": 23,
-   "correct": "2NT",
-   "why": "Jævn hånd, 22 hp: 2NT (22–24)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     3
-    ],
-    "H": [
-     14,
-     10,
-     2
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     10
-    ],
-    "C": [
-     7,
-     3
-    ]
-   },
-   "hp": 22,
-   "sp": 23,
-   "correct": "2NT",
-   "why": "Jævn hånd, 22 hp: 2NT (22–24)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     11,
-     5,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     6
-    ],
-    "D": [
-     13,
-     12
-    ],
-    "C": [
-     12,
-     11,
-     10
-    ]
-   },
-   "hp": 22,
-   "sp": 23,
-   "correct": "2NT",
-   "why": "Jævn hånd, 22 hp: 2NT (22–24)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     5,
-     4
-    ],
-    "H": [
-     14,
-     13,
-     12
-    ],
-    "D": [
-     14,
-     7,
-     6,
-     4
-    ],
-    "C": [
-     12,
-     8
-    ]
-   },
-   "hp": 22,
-   "sp": 23,
-   "correct": "2NT",
-   "why": "Jævn hånd, 22 hp: 2NT (22–24)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     9,
-     4
-    ],
-    "H": [
-     13,
-     12,
-     11,
-     7
-    ],
-    "D": [
-     14,
-     12
-    ],
-    "C": [
-     14,
-     13,
-     6,
-     3
-    ]
-   },
-   "hp": 23,
-   "sp": 24,
-   "correct": "2NT",
-   "why": "Jævn hånd, 23 hp: 2NT (22–24)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     12,
-     6
-    ],
-    "H": [
-     14,
-     7,
      6,
      2
     ],
-    "D": [
-     14,
-     13,
-     7
-    ],
-    "C": [
-     14,
-     13,
-     10
-    ]
-   },
-   "hp": 24,
-   "sp": 24,
-   "correct": "2NT",
-   "why": "Jævn hånd, 24 hp: 2NT (22–24)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     3
-    ],
-    "H": [
-     14,
-     11,
-     9,
-     4
-    ],
-    "D": [
-     14,
-     12,
-     9,
-     5
-    ],
-    "C": [
-     14,
-     11
-    ]
-   },
-   "hp": 23,
-   "sp": 24,
-   "correct": "2NT",
-   "why": "Jævn hånd, 23 hp: 2NT (22–24)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     7,
-     3
-    ],
-    "H": [
-     11,
-     7
-    ],
-    "D": [
-     14,
-     13,
-     11
-    ],
-    "C": [
-     14,
-     13,
-     5,
-     4
-    ]
-   },
-   "hp": 23,
-   "sp": 24,
-   "correct": "2NT",
-   "why": "Jævn hånd, 23 hp: 2NT (22–24)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13
-    ],
-    "H": [
-     14,
-     13,
-     6,
-     3
-    ],
-    "D": [
-     7,
-     5,
-     4
-    ],
-    "C": [
-     14,
-     13,
-     11,
-     5
-    ]
-   },
-   "hp": 22,
-   "sp": 23,
-   "correct": "2NT",
-   "why": "Jævn hånd, 22 hp: 2NT (22–24)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     10
-    ],
-    "H": [
-     14,
-     13,
-     6,
-     3
-    ],
-    "D": [
-     13,
-     12,
-     3
-    ],
-    "C": [
-     11,
-     8
-    ]
-   },
-   "hp": 22,
-   "sp": 23,
-   "correct": "2NT",
-   "why": "Jævn hånd, 22 hp: 2NT (22–24)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     11,
-     7,
-     6
-    ],
     "H": [
      14,
      13
     ],
     "D": [
-     14,
-     5,
-     2
-    ],
-    "C": [
-     14,
-     13,
-     8,
-     6
-    ]
-   },
-   "hp": 23,
-   "sp": 24,
-   "correct": "2NT",
-   "why": "Jævn hånd, 23 hp: 2NT (22–24)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     13,
-     12,
-     6
-    ],
-    "H": [
-     12,
-     5
-    ],
-    "D": [
-     14,
-     13,
-     11,
-     4
-    ],
-    "C": [
-     14,
-     13,
-     7,
-     4
-    ]
-   },
-   "hp": 22,
-   "sp": 23,
-   "correct": "2NT",
-   "why": "Jævn hånd, 22 hp: 2NT (22–24)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     10,
-     3
-    ],
-    "H": [
-     14,
-     12,
-     8,
-     2
-    ],
-    "D": [
-     14,
-     13
-    ],
-    "C": [
-     13,
-     12,
-     7,
-     5
-    ]
-   },
-   "hp": 22,
-   "sp": 23,
-   "correct": "2NT",
-   "why": "Jævn hånd, 22 hp: 2NT (22–24)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     11
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     3
-    ],
-    "D": [
-     13,
-     4,
-     3
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     5
-    ]
-   },
-   "hp": 26,
-   "sp": 27,
-   "correct": "3NT",
-   "why": "Jævn hånd, 26 hp: 3NT (25–27)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     11,
-     10,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     9,
-     7
-    ],
-    "D": [
-     14,
-     13,
-     12
-    ],
-    "C": [
-     14,
-     9
-    ]
-   },
-   "hp": 25,
-   "sp": 26,
-   "correct": "3NT",
-   "why": "Jævn hånd, 25 hp: 3NT (25–27)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     13,
-     8,
-     4
-    ],
-    "H": [
-     14,
-     13,
-     11,
-     4
-    ],
-    "D": [
-     14,
-     13
-    ],
-    "C": [
-     14,
-     13,
-     11,
-     10
-    ]
-   },
-   "hp": 26,
-   "sp": 27,
-   "correct": "3NT",
-   "why": "Jævn hånd, 26 hp: 3NT (25–27)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     11,
-     10,
-     8
-    ],
-    "H": [
-     14,
-     13,
-     7
-    ],
-    "D": [
-     14,
-     7
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     5
-    ]
-   },
-   "hp": 25,
-   "sp": 26,
-   "correct": "3NT",
-   "why": "Jævn hånd, 25 hp: 3NT (25–27)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     12,
-     10,
-     7
-    ],
-    "H": [
-     14,
-     12,
-     2
-    ],
-    "D": [
-     14,
-     11
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     9
-    ]
-   },
-   "hp": 26,
-   "sp": 27,
-   "correct": "3NT",
-   "why": "Jævn hånd, 26 hp: 3NT (25–27)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     12,
-     8
-    ],
-    "H": [
-     14,
-     13,
-     8
-    ],
-    "D": [
-     13,
-     9,
-     6
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     5
-    ]
-   },
-   "hp": 25,
-   "sp": 25,
-   "correct": "3NT",
-   "why": "Jævn hånd, 25 hp: 3NT (25–27)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     9,
-     8,
-     2
-    ],
-    "H": [
-     14,
-     13
-    ],
-    "D": [
-     14,
-     13,
-     8
-    ],
-    "C": [
-     14,
-     12,
-     11,
-     3
-    ]
-   },
-   "hp": 25,
-   "sp": 26,
-   "correct": "3NT",
-   "why": "Jævn hånd, 25 hp: 3NT (25–27)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     9
-    ],
-    "H": [
-     14,
-     12,
-     11,
-     4
-    ],
-    "D": [
-     14,
-     13
-    ],
-    "C": [
-     13,
-     6,
-     3
-    ]
-   },
-   "hp": 26,
-   "sp": 27,
-   "correct": "3NT",
-   "why": "Jævn hånd, 26 hp: 3NT (25–27)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     11
-    ],
-    "H": [
-     13,
-     12,
-     10,
-     5
-    ],
-    "D": [
-     14,
-     13,
-     7
-    ],
-    "C": [
-     13,
-     12,
-     8
-    ]
-   },
-   "hp": 25,
-   "sp": 25,
-   "correct": "3NT",
-   "why": "Jævn hånd, 25 hp: 3NT (25–27)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     13,
-     12,
-     5
-    ],
-    "H": [
-     14,
-     13,
-     7,
-     6
-    ],
-    "D": [
-     14,
-     13
-    ],
-    "C": [
-     14,
-     12,
-     4,
-     3
-    ]
-   },
-   "hp": 25,
-   "sp": 26,
-   "correct": "3NT",
-   "why": "Jævn hånd, 25 hp: 3NT (25–27)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11
-    ],
-    "H": [
-     14,
-     13,
-     4
-    ],
-    "D": [
-     13,
-     12,
-     11
-    ],
-    "C": [
-     14,
-     13,
-     7,
-     4
-    ]
-   },
-   "hp": 27,
-   "sp": 27,
-   "correct": "3NT",
-   "why": "Jævn hånd, 27 hp: 3NT (25–27)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     12,
-     11
-    ],
-    "H": [
-     14,
-     13,
-     11,
-     9
-    ],
-    "D": [
-     14,
-     12,
-     11,
-     10
-    ],
-    "C": [
-     14,
-     12,
-     11
-    ]
-   },
-   "hp": 25,
-   "sp": 26,
-   "correct": "3NT",
-   "why": "Jævn hånd, 25 hp: 3NT (25–27)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     5
-    ],
-    "H": [
-     14,
-     12,
-     5
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     4
-    ],
-    "C": [
-     14,
-     13,
-     10,
-     4
-    ]
-   },
-   "hp": 26,
-   "sp": 27,
-   "correct": "3NT",
-   "why": "Jævn hånd, 26 hp: 3NT (25–27)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     5
-    ],
-    "H": [
-     14,
-     13,
-     6
-    ],
-    "D": [
-     13,
-     12,
-     2
-    ],
-    "C": [
-     14,
-     7,
-     6
-    ]
-   },
-   "hp": 25,
-   "sp": 25,
-   "correct": "3NT",
-   "why": "Jævn hånd, 25 hp: 3NT (25–27)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12
-    ],
-    "H": [
-     13,
-     11,
-     8
-    ],
-    "D": [
-     14,
-     13,
-     8
-    ],
-    "C": [
-     14,
-     12,
-     10,
-     8
-    ]
-   },
-   "hp": 26,
-   "sp": 26,
-   "correct": "3NT",
-   "why": "Jævn hånd, 26 hp: 3NT (25–27)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     12
-    ],
-    "H": [
-     14,
-     12,
-     9,
-     3
-    ],
-    "D": [
-     14,
-     13,
-     6
-    ],
-    "C": [
-     13,
-     12,
-     11,
-     4
-    ]
-   },
-   "hp": 25,
-   "sp": 26,
-   "correct": "3NT",
-   "why": "Jævn hånd, 25 hp: 3NT (25–27)."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12
-    ],
-    "H": [
-     13,
-     12
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     6
-    ],
-    "C": [
      14,
      6,
      4,
      3
+    ],
+    "C": [
+     13,
+     12,
+     2
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "2NT",
+   "why": "Jævn hånd, 22 hp: 2NT (22–24).",
+   "en": {
+    "why": "Balanced hand, 22 HCP: 2NT (22–24)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     13,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     7
+    ],
+    "C": [
+     13,
+     12,
+     11
+    ]
+   },
+   "hp": 22,
+   "sp": 22,
+   "correct": "2NT",
+   "why": "Jævn hånd, 22 hp: 2NT (22–24).",
+   "en": {
+    "why": "Balanced hand, 22 HCP: 2NT (22–24)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7,
+     6
+    ],
+    "H": [
+     13,
+     12,
+     8
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     11
+    ],
+    "C": [
+     10,
+     4
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "2NT",
+   "why": "Jævn hånd, 22 hp: 2NT (22–24).",
+   "en": {
+    "why": "Balanced hand, 22 HCP: 2NT (22–24)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     12,
+     10,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     8
+    ],
+    "D": [
+     14,
+     13
+    ],
+    "C": [
+     14,
+     12,
+     7
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "2NT",
+   "why": "Jævn hånd, 22 hp: 2NT (22–24).",
+   "en": {
+    "why": "Balanced hand, 22 HCP: 2NT (22–24)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     3
+    ],
+    "C": [
+     13,
+     7,
+     3
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "2NT",
+   "why": "Jævn hånd, 22 hp: 2NT (22–24).",
+   "en": {
+    "why": "Balanced hand, 22 HCP: 2NT (22–24)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     3
+    ],
+    "D": [
+     14,
+     7,
+     6
+    ],
+    "C": [
+     14,
+     12,
+     6
+    ]
+   },
+   "hp": 22,
+   "sp": 22,
+   "correct": "2NT",
+   "why": "Jævn hånd, 22 hp: 2NT (22–24).",
+   "en": {
+    "why": "Balanced hand, 22 HCP: 2NT (22–24)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     2
+    ],
+    "D": [
+     13,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     5
+    ]
+   },
+   "hp": 22,
+   "sp": 22,
+   "correct": "2NT",
+   "why": "Jævn hånd, 22 hp: 2NT (22–24).",
+   "en": {
+    "why": "Balanced hand, 22 HCP: 2NT (22–24)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     7
+    ],
+    "H": [
+     14,
+     13
+    ],
+    "D": [
+     13,
+     9,
+     7
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     6
+    ]
+   },
+   "hp": 23,
+   "sp": 24,
+   "correct": "2NT",
+   "why": "Jævn hånd, 23 hp: 2NT (22–24).",
+   "en": {
+    "why": "Balanced hand, 23 HCP: 2NT (22–24)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     10,
+     5
+    ],
+    "H": [
+     13,
+     12,
+     6
+    ],
+    "D": [
+     14,
+     12,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     11
+    ]
+   },
+   "hp": 23,
+   "sp": 23,
+   "correct": "2NT",
+   "why": "Jævn hånd, 23 hp: 2NT (22–24).",
+   "en": {
+    "why": "Balanced hand, 23 HCP: 2NT (22–24)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     9
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     9
+    ],
+    "C": [
+     14,
+     4,
+     3
+    ]
+   },
+   "hp": 23,
+   "sp": 23,
+   "correct": "2NT",
+   "why": "Jævn hånd, 23 hp: 2NT (22–24).",
+   "en": {
+    "why": "Balanced hand, 23 HCP: 2NT (22–24)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     5
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     6
+    ],
+    "D": [
+     14,
+     10
+    ],
+    "C": [
+     13,
+     11,
+     2
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "2NT",
+   "why": "Jævn hånd, 22 hp: 2NT (22–24).",
+   "en": {
+    "why": "Balanced hand, 22 HCP: 2NT (22–24)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     12,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     8
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     4
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "2NT",
+   "why": "Jævn hånd, 22 hp: 2NT (22–24).",
+   "en": {
+    "why": "Balanced hand, 22 HCP: 2NT (22–24)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12
+    ],
+    "H": [
+     13,
+     9,
+     7,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     7
+    ]
+   },
+   "hp": 22,
+   "sp": 22,
+   "correct": "2NT",
+   "why": "Jævn hånd, 22 hp: 2NT (22–24).",
+   "en": {
+    "why": "Balanced hand, 22 HCP: 2NT (22–24)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     12,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     8,
+     2
+    ]
+   },
+   "hp": 23,
+   "sp": 24,
+   "correct": "2NT",
+   "why": "Jævn hånd, 23 hp: 2NT (22–24).",
+   "en": {
+    "why": "Balanced hand, 23 HCP: 2NT (22–24)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     4
+    ],
+    "H": [
+     14,
+     13
+    ],
+    "D": [
+     13,
+     12,
+     7,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     8,
+     2
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "2NT",
+   "why": "Jævn hånd, 22 hp: 2NT (22–24).",
+   "en": {
+    "why": "Balanced hand, 22 HCP: 2NT (22–24)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     13
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     10
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     2
     ]
    },
    "hp": 27,
    "sp": 28,
    "correct": "3NT",
-   "why": "Jævn hånd, 27 hp: 3NT (25–27)."
+   "why": "Jævn hånd, 27 hp: 3NT (25–27).",
+   "en": {
+    "why": "Balanced hand, 27 HCP: 3NT (25–27)."
+   }
   },
   {
    "situation": "aab_2ru",
@@ -2903,1949 +2696,2210 @@
     "S": [
      14,
      13,
-     11,
-     7
+     10
     ],
     "H": [
      14,
-     13
+     12,
+     7,
+     6
     ],
     "D": [
      14,
-     9,
-     5
+     12
     ],
     "C": [
      14,
      13,
-     4,
-     2
+     10,
+     7
     ]
    },
    "hp": 26,
    "sp": 27,
    "correct": "3NT",
-   "why": "Jævn hånd, 26 hp: 3NT (25–27)."
+   "why": "Jævn hånd, 26 hp: 3NT (25–27).",
+   "en": {
+    "why": "Balanced hand, 26 HCP: 3NT (25–27)."
+   }
   },
   {
    "situation": "aab_2ru",
    "hand": {
     "S": [
-     14,
      13,
-     12,
-     11,
-     8,
-     6,
-     3
-    ],
-    "H": [
-     13,
-     11
-    ],
-    "D": [
-     13,
-     3
-    ],
-    "C": [
-     14,
-     5
-    ]
-   },
-   "hp": 21,
-   "sp": 24,
-   "correct": "2♠",
-   "why": "Ujævn hånd med 7 spar: 2♠ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     11,
-     9,
-     7,
      5
     ],
     "H": [
-     14,
-     12,
-     2
-    ],
-    "D": [
-     14,
-     13
-    ],
-    "C": [
-     7,
-     6
-    ]
-   },
-   "hp": 21,
-   "sp": 23,
-   "correct": "2♠",
-   "why": "Ujævn hånd med 6 spar: 2♠ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     10,
-     3
-    ],
-    "H": [
-     14,
-     8
-    ],
-    "D": [
-     14,
-     11,
-     7,
-     6
-    ],
-    "C": [
-     13,
-     8
-    ]
-   },
-   "hp": 21,
-   "sp": 23,
-   "correct": "2♠",
-   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     12,
-     10,
-     9,
-     8,
-     4
-    ],
-    "H": [
-     14,
-     11,
-     10,
-     7
-    ],
-    "D": [
-     14,
-     12
-    ],
-    "C": [
-     14,
-     13
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "2♠",
-   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     11,
-     10,
-     3
-    ],
-    "H": [
-     13,
-     5,
-     2
-    ],
-    "D": [
-     14,
-     9
-    ],
-    "C": [
-     13,
-     7
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "2♠",
-   "why": "Ujævn hånd med 6 spar: 2♠ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     6,
-     5
-    ],
-    "H": [
-     11,
-     7
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     3
-    ],
-    "C": [
-     12,
-     5
-    ]
-   },
-   "hp": 21,
-   "sp": 23,
-   "correct": "2♠",
-   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11,
-     5,
-     4
-    ],
-    "H": [
-     14,
-     13,
-     4,
-     2
-    ],
-    "D": [
-     11,
-     10
-    ],
-    "C": [
-     13,
-     12
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "2♠",
-   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
-     8,
-     3
-    ],
-    "H": [
-     3,
-     2
-    ],
-    "D": [
      14,
      13,
      12,
      9
     ],
-    "C": [
-     13,
-     12
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "2♠",
-   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11,
-     9,
-     4
-    ],
-    "H": [
-     14,
-     13
-    ],
-    "D": [
-     10,
-     9
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     9
-    ]
-   },
-   "hp": 23,
-   "sp": 25,
-   "correct": "2♠",
-   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     11,
-     6,
-     5
-    ],
-    "H": [
-     12,
-     11
-    ],
-    "D": [
-     13,
-     7
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     10
-    ]
-   },
-   "hp": 23,
-   "sp": 25,
-   "correct": "2♠",
-   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     10,
-     8,
-     7,
-     5
-    ],
-    "H": [
-     13,
-     3
-    ],
-    "D": [
-     14,
-     9
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     6
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "2♠",
-   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     12,
-     7,
-     6,
-     5,
-     3
-    ],
-    "H": [
-     14,
-     13
-    ],
-    "D": [
-     14,
-     7
-    ],
-    "C": [
-     13,
-     12,
-     9
-    ]
-   },
-   "hp": 22,
-   "sp": 24,
-   "correct": "2♠",
-   "why": "Ujævn hånd med 6 spar: 2♠ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     12,
-     9,
-     8,
-     4
-    ],
-    "H": [
-     7,
-     3
-    ],
-    "D": [
-     14,
-     13
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     11
-    ]
-   },
-   "hp": 23,
-   "sp": 25,
-   "correct": "2♠",
-   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     10,
-     5,
-     2
-    ],
-    "H": [
-     12,
-     11
-    ],
-    "D": [
-     12,
-     11,
-     4
-    ],
-    "C": [
-     13,
-     12
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "2♠",
-   "why": "Ujævn hånd med 6 spar: 2♠ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     11,
-     9,
-     5
-    ],
-    "H": [
-     13,
-     12
-    ],
-    "D": [
-     12,
-     11
-    ],
-    "C": [
-     13,
-     11,
-     7,
-     2
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "2♠",
-   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     7,
-     5,
-     4
-    ],
-    "H": [
-     14,
-     3
-    ],
-    "D": [
-     13,
-     12
-    ],
-    "C": [
-     13,
-     7,
-     5
-    ]
-   },
-   "hp": 21,
-   "sp": 23,
-   "correct": "2♠",
-   "why": "Ujævn hånd med 6 spar: 2♠ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     11,
-     8,
-     4,
-     3
-    ],
-    "H": [
-     14,
-     9,
-     7
-    ],
-    "D": [
-     14,
-     6
-    ],
-    "C": [
-     14,
-     2
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "2♠",
-   "why": "Ujævn hånd med 6 spar: 2♠ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     12,
-     10,
-     7,
-     5,
-     2
-    ],
-    "H": [
-     13,
-     7
-    ],
-    "D": [
-     14,
-     2
-    ],
-    "C": [
-     14,
-     13,
-     10
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "2♠",
-   "why": "Ujævn hånd med 6 spar: 2♠ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13
-    ],
-    "H": [
-     14,
-     13,
-     8,
-     4,
-     3,
-     2
-    ],
-    "D": [
-     14,
-     4,
-     2
-    ],
-    "C": [
-     14,
-     9
-    ]
-   },
-   "hp": 22,
-   "sp": 24,
-   "correct": "2♥",
-   "why": "Ujævn hånd med 6 hjerter: 2♥ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     13,
-     8
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     11,
-     10,
-     9,
-     3
-    ],
-    "D": [
-     14,
-     5
-    ],
-    "C": [
-     13,
-     12
-    ]
-   },
-   "hp": 22,
-   "sp": 25,
-   "correct": "2♥",
-   "why": "Ujævn hånd med 7 hjerter: 2♥ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     11
-    ],
-    "H": [
-     14,
-     13,
-     9,
-     8,
-     6,
-     3
-    ],
-    "D": [
-     13,
-     8,
-     4
-    ],
-    "C": [
-     14,
-     13
-    ]
-   },
-   "hp": 22,
-   "sp": 24,
-   "correct": "2♥",
-   "why": "Ujævn hånd med 6 hjerter: 2♥ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     8,
-     7
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     8,
-     6,
-     3
-    ],
-    "D": [
-     14,
-     11
-    ],
-    "C": [
-     14,
-     12,
-     7
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "2♥",
-   "why": "Ujævn hånd med 6 hjerter: 2♥ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     7,
-     3,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     11,
-     10,
-     6,
-     3
-    ],
-    "D": [
-     13,
-     12
-    ],
-    "C": [
-     14,
-     13
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "2♥",
-   "why": "Ujævn hånd med 6 hjerter: 2♥ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     13,
-     12,
-     7,
-     3
-    ],
-    "H": [
-     14,
-     12,
-     10,
-     9,
-     8
-    ],
-    "D": [
-     14,
-     11
-    ],
-    "C": [
-     14,
-     3
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "2♥",
-   "why": "Ujævn hånd med 5 hjerter: 2♥ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     11,
-     8,
-     4
-    ],
-    "H": [
-     14,
-     13,
-     8,
-     6,
-     3
-    ],
-    "D": [
-     13,
-     6
-    ],
-    "C": [
-     14,
-     13
-    ]
-   },
-   "hp": 22,
-   "sp": 24,
-   "correct": "2♥",
-   "why": "Ujævn hånd med 5 hjerter: 2♥ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     5
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     11,
-     5
-    ],
-    "D": [
-     11,
-     7
-    ],
-    "C": [
-     13,
-     3
-    ]
-   },
-   "hp": 23,
-   "sp": 25,
-   "correct": "2♥",
-   "why": "Ujævn hånd med 5 hjerter: 2♥ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     13,
-     5
-    ],
-    "H": [
-     14,
-     12,
-     11,
-     10,
-     8,
-     6
-    ],
-    "D": [
-     14,
-     12,
-     2
-    ],
-    "C": [
-     14,
-     6
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "2♥",
-   "why": "Ujævn hånd med 6 hjerter: 2♥ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     13,
-     10
-    ],
-    "H": [
-     14,
-     12,
-     11,
-     8,
-     7,
-     6,
-     5
-    ],
-    "D": [
-     14,
-     13
-    ],
-    "C": [
-     14,
-     8
-    ]
-   },
-   "hp": 21,
-   "sp": 24,
-   "correct": "2♥",
-   "why": "Ujævn hånd med 7 hjerter: 2♥ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     4
-    ],
-    "H": [
-     14,
-     13,
-     11,
-     10,
-     4
-    ],
-    "D": [
-     14,
-     11
-    ],
-    "C": [
-     13,
-     9,
-     7,
-     5
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "2♥",
-   "why": "Ujævn hånd med 5 hjerter: 2♥ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     13,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     10,
-     6,
-     5,
-     3
-    ],
-    "D": [
-     14,
-     13
-    ],
-    "C": [
-     13,
-     8
-    ]
-   },
-   "hp": 22,
-   "sp": 25,
-   "correct": "2♥",
-   "why": "Ujævn hånd med 7 hjerter: 2♥ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     11,
-     7,
-     5,
-     3
-    ],
-    "D": [
-     13,
-     3
-    ],
-    "C": [
-     10,
-     3
-    ]
-   },
-   "hp": 20,
-   "sp": 23,
-   "correct": "2♥",
-   "why": "Ujævn hånd med 7 hjerter: 2♥ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     11
-    ],
-    "H": [
-     14,
-     13,
-     11,
-     9,
-     2
-    ],
-    "D": [
-     14,
-     2
-    ],
-    "C": [
-     7,
-     4
-    ]
-   },
-   "hp": 22,
-   "sp": 24,
-   "correct": "2♥",
-   "why": "Ujævn hånd med 5 hjerter: 2♥ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     8
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     9,
-     7
-    ],
-    "D": [
-     13,
-     10,
-     7,
-     6
-    ],
-    "C": [
-     14,
-     3
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "2♥",
-   "why": "Ujævn hånd med 5 hjerter: 2♥ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     5
-    ],
-    "H": [
-     14,
-     13,
-     10,
-     8,
-     6,
-     2
-    ],
-    "D": [
-     12,
-     11
-    ],
-    "C": [
-     13,
-     3
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "2♥",
-   "why": "Ujævn hånd med 6 hjerter: 2♥ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13
-    ],
-    "H": [
-     14,
-     12,
-     10,
-     7,
-     2
-    ],
-    "D": [
-     14,
-     12
-    ],
-    "C": [
-     12,
-     11,
-     10,
-     5
-    ]
-   },
-   "hp": 22,
-   "sp": 24,
-   "correct": "2♥",
-   "why": "Ujævn hånd med 5 hjerter: 2♥ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     9,
-     7,
-     3
-    ],
-    "D": [
-     14,
-     4,
-     2
-    ],
-    "C": [
-     14,
-     11
-    ]
-   },
-   "hp": 22,
-   "sp": 24,
-   "correct": "2♥",
-   "why": "Ujævn hånd med 6 hjerter: 2♥ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     8
-    ],
-    "H": [
-     14,
-     12
-    ],
-    "D": [
-     13,
-     12,
-     8,
-     7,
-     6
-    ],
-    "C": [
-     13,
-     12,
-     11,
-     9
-    ]
-   },
-   "hp": 21,
-   "sp": 23,
-   "correct": "3♦",
-   "why": "Ujævn hånd med 5 ruder: 3♦ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     6
-    ],
-    "H": [
-     14,
-     12
-    ],
-    "D": [
-     14,
-     13,
-     9,
-     8,
-     7
-    ],
-    "C": [
-     13,
-     12,
-     11,
-     7
-    ]
-   },
-   "hp": 23,
-   "sp": 25,
-   "correct": "3♦",
-   "why": "Ujævn hånd med 5 ruder: 3♦ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     12,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     11,
-     10
-    ],
-    "D": [
-     14,
-     13,
-     11,
-     7,
-     6
-    ],
-    "C": [
-     12,
-     3
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "3♦",
-   "why": "Ujævn hånd med 5 ruder: 3♦ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11,
-     2
-    ],
-    "H": [
-     14,
-     12
-    ],
     "D": [
      14,
      9,
-     8,
-     5,
-     3
-    ],
-    "C": [
-     14,
-     4
-    ]
-   },
-   "hp": 21,
-   "sp": 23,
-   "correct": "3♦",
-   "why": "Ujævn hånd med 5 ruder: 3♦ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     12
-    ],
-    "H": [
-     14,
-     13
-    ],
-    "D": [
-     13,
-     12,
-     11,
-     10,
-     9,
-     8,
-     6
-    ],
-    "C": [
-     12,
-     6
-    ]
-   },
-   "hp": 21,
-   "sp": 24,
-   "correct": "3♦",
-   "why": "Ujævn hånd med 7 ruder: 3♦ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     13,
-     12
-    ],
-    "H": [
-     14,
-     11
-    ],
-    "D": [
-     14,
-     11,
-     9,
-     8,
-     7,
-     6,
-     2
-    ],
-    "C": [
-     13,
-     12
-    ]
-   },
-   "hp": 20,
-   "sp": 23,
-   "correct": "3♦",
-   "why": "Ujævn hånd med 7 ruder: 3♦ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     13,
-     7
-    ],
-    "H": [
-     14,
-     12,
-     10,
-     6
-    ],
-    "D": [
-     14,
-     12,
-     11,
-     7,
-     2
-    ],
-    "C": [
-     14,
-     11
-    ]
-   },
-   "hp": 21,
-   "sp": 23,
-   "correct": "3♦",
-   "why": "Ujævn hånd med 5 ruder: 3♦ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     9,
-     4,
-     2
-    ],
-    "H": [
-     14,
-     11
-    ],
-    "D": [
-     14,
-     13,
-     11,
-     8,
-     2
-    ],
-    "C": [
-     14,
-     8
-    ]
-   },
-   "hp": 21,
-   "sp": 23,
-   "correct": "3♦",
-   "why": "Ujævn hånd med 5 ruder: 3♦ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13
-    ],
-    "H": [
-     13,
-     7
-    ],
-    "D": [
-     14,
-     13,
-     11,
-     10,
-     8
-    ],
-    "C": [
-     13,
-     12,
-     10,
-     9
-    ]
-   },
-   "hp": 23,
-   "sp": 25,
-   "correct": "3♦",
-   "why": "Ujævn hånd med 5 ruder: 3♦ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     8
-    ],
-    "H": [
-     13,
-     10
-    ],
-    "D": [
-     13,
-     12,
-     8,
-     6,
-     5
-    ],
-    "C": [
-     14,
-     9
-    ]
-   },
-   "hp": 21,
-   "sp": 23,
-   "correct": "3♦",
-   "why": "Ujævn hånd med 5 ruder: 3♦ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     13,
-     9
-    ],
-    "H": [
-     13,
-     12
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     10,
-     6,
-     4,
-     2
-    ],
-    "C": [
-     13,
-     8
-    ]
-   },
-   "hp": 20,
-   "sp": 23,
-   "correct": "3♦",
-   "why": "Ujævn hånd med 7 ruder: 3♦ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     12,
-     8,
-     2
-    ],
-    "H": [
-     14,
-     13
-    ],
-    "D": [
-     14,
-     13,
-     11,
-     6,
-     5,
-     2
-    ],
-    "C": [
-     13,
-     6
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "3♦",
-   "why": "Ujævn hånd med 6 ruder: 3♦ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     2
-    ],
-    "H": [
-     13,
-     10
-    ],
-    "D": [
-     13,
-     9,
-     7,
-     5,
-     3
-    ],
-    "C": [
-     14,
-     13
-    ]
-   },
-   "hp": 22,
-   "sp": 24,
-   "correct": "3♦",
-   "why": "Ujævn hånd med 5 ruder: 3♦ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11,
-     7
-    ],
-    "H": [
-     13,
-     7
-    ],
-    "D": [
-     14,
-     12,
-     10,
-     5,
-     2
-    ],
-    "C": [
-     14,
-     7
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "3♦",
-   "why": "Ujævn hånd med 5 ruder: 3♦ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     8
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     6
-    ],
-    "D": [
-     12,
-     11,
-     9,
-     7,
-     6
-    ],
-    "C": [
-     13,
-     11
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "3♦",
-   "why": "Ujævn hånd med 5 ruder: 3♦ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     13,
-     10,
-     3
-    ],
-    "H": [
-     14,
-     13
-    ],
-    "D": [
-     13,
-     12,
-     11,
-     10,
-     9,
-     2
-    ],
-    "C": [
-     14,
-     7
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "3♦",
-   "why": "Ujævn hånd med 6 ruder: 3♦ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     13,
-     11,
-     10,
-     5
-    ],
-    "H": [
-     14,
-     12
-    ],
-    "D": [
-     13,
-     12,
-     11,
-     7,
-     5
-    ],
-    "C": [
-     14,
-     5
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "3♦",
-   "why": "Ujævn hånd med 5 ruder: 3♦ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     6,
-     3
-    ],
-    "H": [
-     8,
-     4
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     8,
      7
     ],
     "C": [
      14,
-     6
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "3♦",
-   "why": "Ujævn hånd med 5 ruder: 3♦ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     5
-    ],
-    "H": [
-     13,
-     8
-    ],
-    "D": [
-     14,
-     9
-    ],
-    "C": [
-     14,
      13,
      12,
-     11,
-     8,
-     7,
-     4
-    ]
-   },
-   "hp": 21,
-   "sp": 24,
-   "correct": "3♣",
-   "why": "Ujævn hånd med 7 klør: 3♣ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     12
-    ],
-    "H": [
-     14,
-     13
-    ],
-    "D": [
-     14,
-     9,
-     5,
-     2
-    ],
-    "C": [
-     12,
-     11,
-     8,
-     5,
-     3
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "3♣",
-   "why": "Ujævn hånd med 5 klør: 3♣ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     13,
-     12,
-     10,
-     7
-    ],
-    "H": [
-     14,
-     5
-    ],
-    "D": [
-     14,
-     11
-    ],
-    "C": [
-     14,
-     12,
-     8,
-     4,
-     3
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "3♣",
-   "why": "Ujævn hånd med 5 klør: 3♣ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     12,
-     7
-    ],
-    "H": [
-     14,
-     13,
-     6,
-     5
-    ],
-    "D": [
-     11,
-     8
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     11,
      7
     ]
    },
-   "hp": 20,
-   "sp": 22,
-   "correct": "3♣",
-   "why": "Ujævn hånd med 5 klør: 3♣ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     13,
-     7
-    ],
-    "H": [
-     14,
-     12
-    ],
-    "D": [
-     14,
-     10,
-     6
-    ],
-    "C": [
-     14,
-     12,
-     11,
-     10,
-     9,
-     7
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "3♣",
-   "why": "Ujævn hånd med 6 klør: 3♣ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     12,
-     11
-    ],
-    "H": [
-     13,
-     11,
-     10,
-     6
-    ],
-    "D": [
-     14,
-     6
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     11,
-     10
-    ]
-   },
-   "hp": 21,
-   "sp": 23,
-   "correct": "3♣",
-   "why": "Ujævn hånd med 5 klør: 3♣ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     11
-    ],
-    "H": [
-     14,
-     11,
-     9,
-     4
-    ],
-    "D": [
-     8,
-     6
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     11,
-     7
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "3♣",
-   "why": "Ujævn hånd med 5 klør: 3♣ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13
-    ],
-    "H": [
-     14,
-     12,
-     11,
-     7
-    ],
-    "D": [
-     10,
-     5
-    ],
-    "C": [
-     14,
-     12,
-     10,
-     8,
-     3
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "3♣",
-   "why": "Ujævn hånd med 5 klør: 3♣ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13
-    ],
-    "H": [
-     14,
-     13
-    ],
-    "D": [
-     8,
-     5
-    ],
-    "C": [
-     14,
-     12,
-     8,
-     6,
-     4,
-     3,
-     2
-    ]
-   },
-   "hp": 20,
-   "sp": 23,
-   "correct": "3♣",
-   "why": "Ujævn hånd med 7 klør: 3♣ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     5
-    ],
-    "H": [
-     14,
-     13
-    ],
-    "D": [
-     12,
-     6
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     11,
-     8,
-     6,
-     4
-    ]
-   },
-   "hp": 23,
+   "hp": 25,
    "sp": 26,
-   "correct": "3♣",
-   "why": "Ujævn hånd med 7 klør: 3♣ – naturligt."
+   "correct": "3NT",
+   "why": "Jævn hånd, 25 hp: 3NT (25–27).",
+   "en": {
+    "why": "Balanced hand, 25 HCP: 3NT (25–27)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8
+    ],
+    "H": [
+     14,
+     11,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     11
+    ],
+    "C": [
+     13,
+     12,
+     9
+    ]
+   },
+   "hp": 26,
+   "sp": 26,
+   "correct": "3NT",
+   "why": "Jævn hånd, 26 hp: 3NT (25–27).",
+   "en": {
+    "why": "Balanced hand, 26 HCP: 3NT (25–27)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8
+    ],
+    "H": [
+     14,
+     12,
+     6,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     5
+    ],
+    "C": [
+     14,
+     10
+    ]
+   },
+   "hp": 26,
+   "sp": 27,
+   "correct": "3NT",
+   "why": "Jævn hånd, 26 hp: 3NT (25–27).",
+   "en": {
+    "why": "Balanced hand, 26 HCP: 3NT (25–27)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     10
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     8
+    ],
+    "C": [
+     13,
+     12,
+     4
+    ]
+   },
+   "hp": 25,
+   "sp": 26,
+   "correct": "3NT",
+   "why": "Jævn hånd, 25 hp: 3NT (25–27).",
+   "en": {
+    "why": "Balanced hand, 25 HCP: 3NT (25–27)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     4
+    ],
+    "C": [
+     13,
+     5,
+     2
+    ]
+   },
+   "hp": 26,
+   "sp": 26,
+   "correct": "3NT",
+   "why": "Jævn hånd, 26 hp: 3NT (25–27).",
+   "en": {
+    "why": "Balanced hand, 26 HCP: 3NT (25–27)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     9
+    ],
+    "D": [
+     14,
+     13,
+     11
+    ],
+    "C": [
+     14,
+     12,
+     5,
+     4
+    ]
+   },
+   "hp": 25,
+   "sp": 26,
+   "correct": "3NT",
+   "why": "Jævn hånd, 25 hp: 3NT (25–27).",
+   "en": {
+    "why": "Balanced hand, 25 HCP: 3NT (25–27)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     8
+    ],
+    "H": [
+     14,
+     13
+    ],
+    "D": [
+     14,
+     13,
+     7
+    ],
+    "C": [
+     13,
+     12,
+     10,
+     8
+    ]
+   },
+   "hp": 25,
+   "sp": 26,
+   "correct": "3NT",
+   "why": "Jævn hånd, 25 hp: 3NT (25–27).",
+   "en": {
+    "why": "Balanced hand, 25 HCP: 3NT (25–27)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     7,
+     5
+    ],
+    "D": [
+     14,
+     11,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     12
+    ]
+   },
+   "hp": 25,
+   "sp": 25,
+   "correct": "3NT",
+   "why": "Jævn hånd, 25 hp: 3NT (25–27).",
+   "en": {
+    "why": "Balanced hand, 25 HCP: 3NT (25–27)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     2
+    ],
+    "H": [
+     12,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     11
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
+   "hp": 25,
+   "sp": 26,
+   "correct": "3NT",
+   "why": "Jævn hånd, 25 hp: 3NT (25–27).",
+   "en": {
+    "why": "Balanced hand, 25 HCP: 3NT (25–27)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     8
+    ],
+    "C": [
+     14,
+     13,
+     5
+    ]
+   },
+   "hp": 25,
+   "sp": 26,
+   "correct": "3NT",
+   "why": "Jævn hånd, 25 hp: 3NT (25–27).",
+   "en": {
+    "why": "Balanced hand, 25 HCP: 3NT (25–27)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     11
+    ],
+    "H": [
+     14,
+     13,
+     6,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     7
+    ],
+    "C": [
+     14,
+     12,
+     6,
+     5
+    ]
+   },
+   "hp": 25,
+   "sp": 26,
+   "correct": "3NT",
+   "why": "Jævn hånd, 25 hp: 3NT (25–27).",
+   "en": {
+    "why": "Balanced hand, 25 HCP: 3NT (25–27)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10
+    ],
+    "D": [
+     14,
+     10
+    ],
+    "C": [
+     14,
+     12,
+     6,
+     4
+    ]
+   },
+   "hp": 26,
+   "sp": 27,
+   "correct": "3NT",
+   "why": "Jævn hånd, 26 hp: 3NT (25–27).",
+   "en": {
+    "why": "Balanced hand, 26 HCP: 3NT (25–27)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     7
+    ],
+    "D": [
+     14,
+     13,
+     2
+    ],
+    "C": [
+     14,
+     4
+    ]
+   },
+   "hp": 27,
+   "sp": 28,
+   "correct": "3NT",
+   "why": "Jævn hånd, 27 hp: 3NT (25–27).",
+   "en": {
+    "why": "Balanced hand, 27 HCP: 3NT (25–27)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     11
+    ],
+    "H": [
+     14,
+     12,
+     9
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     10
+    ]
+   },
+   "hp": 27,
+   "sp": 28,
+   "correct": "3NT",
+   "why": "Jævn hånd, 27 hp: 3NT (25–27).",
+   "en": {
+    "why": "Balanced hand, 27 HCP: 3NT (25–27)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12
+    ],
+    "D": [
+     11,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     10
+    ]
+   },
+   "hp": 25,
+   "sp": 26,
+   "correct": "3NT",
+   "why": "Jævn hånd, 25 hp: 3NT (25–27).",
+   "en": {
+    "why": "Balanced hand, 25 HCP: 3NT (25–27)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11
+    ],
+    "H": [
+     14,
+     13,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     6
+    ],
+    "C": [
+     14,
+     9,
+     8
+    ]
+   },
+   "hp": 25,
+   "sp": 25,
+   "correct": "3NT",
+   "why": "Jævn hånd, 25 hp: 3NT (25–27).",
+   "en": {
+    "why": "Balanced hand, 25 HCP: 3NT (25–27)."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     10
+    ],
+    "D": [
+     14,
+     12,
+     5
+    ],
+    "C": [
+     13,
+     9
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "2♠",
+   "why": "Ujævn hånd med 6 spar: 2♠ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 6 spades: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     2
+    ],
+    "D": [
+     14,
+     10
+    ],
+    "C": [
+     13,
+     12
+    ]
+   },
+   "hp": 23,
+   "sp": 25,
+   "correct": "2♠",
+   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 spades: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     13
+    ],
+    "D": [
+     14,
+     7
+    ],
+    "C": [
+     14,
+     9,
+     4,
+     3
+    ]
+   },
+   "hp": 24,
+   "sp": 26,
+   "correct": "2♠",
+   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 spades: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     8
+    ],
+    "D": [
+     14,
+     5
+    ],
+    "C": [
+     14,
+     12,
+     6,
+     4
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "2♠",
+   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 spades: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     10,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     3
+    ],
+    "C": [
+     14,
+     5
+    ]
+   },
+   "hp": 22,
+   "sp": 24,
+   "correct": "2♠",
+   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 spades: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     13,
+     12,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     11
+    ],
+    "D": [
+     14,
+     13
+    ],
+    "C": [
+     13,
+     12,
+     7,
+     2
+    ]
+   },
+   "hp": 22,
+   "sp": 24,
+   "correct": "2♠",
+   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 spades: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     3
+    ],
+    "D": [
+     14,
+     13
+    ],
+    "C": [
+     11,
+     4
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "2♠",
+   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 spades: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     8,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     3
+    ],
+    "D": [
+     13,
+     8
+    ],
+    "C": [
+     14,
+     9
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "2♠",
+   "why": "Ujævn hånd med 6 spar: 2♠ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 6 spades: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     10,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     11,
+     2
+    ],
+    "D": [
+     14,
+     13
+    ],
+    "C": [
+     13,
+     6
+    ]
+   },
+   "hp": 20,
+   "sp": 23,
+   "correct": "2♠",
+   "why": "Ujævn hånd med 7 spar: 2♠ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 7 spades: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11
+    ],
+    "D": [
+     14,
+     11
+    ],
+    "C": [
+     10,
+     3
+    ]
+   },
+   "hp": 24,
+   "sp": 26,
+   "correct": "2♠",
+   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 spades: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     7,
+     6
+    ],
+    "H": [
+     13,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     4
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "2♠",
+   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 spades: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     8,
+     6,
+     5
+    ],
+    "H": [
+     13,
+     8
+    ],
+    "D": [
+     14,
+     13,
+     8
+    ],
+    "C": [
+     14,
+     5
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "2♠",
+   "why": "Ujævn hånd med 6 spar: 2♠ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 6 spades: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     7,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     10
+    ],
+    "D": [
+     14,
+     11
+    ],
+    "C": [
+     13,
+     7
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "2♠",
+   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 spades: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     10,
+     4,
+     3
+    ],
+    "D": [
+     12,
+     5
+    ],
+    "C": [
+     14,
+     11
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "2♠",
+   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 spades: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11,
+     5
+    ],
+    "H": [
+     12,
+     3
+    ],
+    "D": [
+     13,
+     9,
+     6,
+     4
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "2♠",
+   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 spades: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     12
+    ],
+    "D": [
+     13,
+     11,
+     6,
+     5
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "2♠",
+   "why": "Ujævn hånd med 5 spar: 2♠ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 spades: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     11
+    ],
+    "C": [
+     13,
+     6
+    ]
+   },
+   "hp": 22,
+   "sp": 24,
+   "correct": "2♠",
+   "why": "Ujævn hånd med 6 spar: 2♠ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 6 spades: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     7
+    ],
+    "D": [
+     14,
+     13,
+     9
+    ],
+    "C": [
+     13,
+     4
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "2♠",
+   "why": "Ujævn hånd med 6 spar: 2♠ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 6 spades: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     8,
+     3
+    ],
+    "D": [
+     7,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     3
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "2♥",
+   "why": "Ujævn hånd med 5 hjerter: 2♥ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 hearts: 2♥ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     4,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     2
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "2♥",
+   "why": "Ujævn hånd med 5 hjerter: 2♥ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 hearts: 2♥ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     8,
+     3
+    ],
+    "D": [
+     13,
+     11
+    ],
+    "C": [
+     14,
+     11
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "2♥",
+   "why": "Ujævn hånd med 5 hjerter: 2♥ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 hearts: 2♥ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     12,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     7,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     12,
+     11
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 21,
+   "sp": 24,
+   "correct": "2♥",
+   "why": "Ujævn hånd med 7 hjerter: 2♥ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 7 hearts: 2♥ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     6,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     8,
+     4
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
+   "hp": 22,
+   "sp": 25,
+   "correct": "2♥",
+   "why": "Ujævn hånd med 7 hjerter: 2♥ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 7 hearts: 2♥ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     10,
+     8,
+     7,
+     5
+    ],
+    "D": [
+     13,
+     9
+    ],
+    "C": [
+     13,
+     3
+    ]
+   },
+   "hp": 20,
+   "sp": 23,
+   "correct": "2♥",
+   "why": "Ujævn hånd med 7 hjerter: 2♥ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 7 hearts: 2♥ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     7,
+     3
+    ],
+    "D": [
+     14,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     2
+    ]
+   },
+   "hp": 23,
+   "sp": 25,
+   "correct": "2♥",
+   "why": "Ujævn hånd med 5 hjerter: 2♥ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 hearts: 2♥ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     8,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     8,
+     7
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 21,
+   "sp": 24,
+   "correct": "2♥",
+   "why": "Ujævn hånd med 7 hjerter: 2♥ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 7 hearts: 2♥ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     10
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     8,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     7
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
+   "hp": 24,
+   "sp": 27,
+   "correct": "2♥",
+   "why": "Ujævn hånd med 7 hjerter: 2♥ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 7 hearts: 2♥ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     11,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     3
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
+   "hp": 20,
+   "sp": 23,
+   "correct": "2♥",
+   "why": "Ujævn hånd med 7 hjerter: 2♥ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 7 hearts: 2♥ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     13,
+     12
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10,
+     9,
+     7
+    ],
+    "D": [
+     13,
+     11,
+     5
+    ],
+    "C": [
+     12,
+     2
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "2♥",
+   "why": "Ujævn hånd med 6 hjerter: 2♥ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 6 hearts: 2♥ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     11,
+     10
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     8,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     3
+    ],
+    "C": [
+     14,
+     6
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "2♥",
+   "why": "Ujævn hånd med 5 hjerter: 2♥ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 hearts: 2♥ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     9,
+     8,
+     7
+    ],
+    "D": [
+     14,
+     2
+    ],
+    "C": [
+     14,
+     4
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "2♥",
+   "why": "Ujævn hånd med 6 hjerter: 2♥ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 6 hearts: 2♥ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     9
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
+   "hp": 24,
+   "sp": 26,
+   "correct": "2♥",
+   "why": "Ujævn hånd med 5 hjerter: 2♥ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 hearts: 2♥ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     8
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     3
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "2♥",
+   "why": "Ujævn hånd med 5 hjerter: 2♥ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 hearts: 2♥ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     8,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     7
+    ],
+    "C": [
+     11,
+     2
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "2♥",
+   "why": "Ujævn hånd med 6 hjerter: 2♥ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 6 hearts: 2♥ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     10,
+     8,
+     5
+    ],
+    "D": [
+     12,
+     9
+    ],
+    "C": [
+     13,
+     12
+    ]
+   },
+   "hp": 21,
+   "sp": 24,
+   "correct": "2♥",
+   "why": "Ujævn hånd med 7 hjerter: 2♥ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 7 hearts: 2♥ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     13,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     7,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     13
+    ],
+    "C": [
+     14,
+     13,
+     2
+    ]
+   },
+   "hp": 24,
+   "sp": 26,
+   "correct": "2♥",
+   "why": "Ujævn hånd med 6 hjerter: 2♥ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 6 hearts: 2♥ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     13,
+     9
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     5
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "3♦",
+   "why": "Ujævn hånd med 5 ruder: 3♦ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 diamonds: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     14,
+     11
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     9,
+     8,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     10
+    ]
+   },
+   "hp": 22,
+   "sp": 25,
+   "correct": "3♦",
+   "why": "Ujævn hånd med 7 ruder: 3♦ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 7 diamonds: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     13,
+     11
+    ],
+    "H": [
+     14,
+     12
+    ],
+    "D": [
+     12,
+     11,
+     10,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     3
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "3♦",
+   "why": "Ujævn hånd med 6 ruder: 3♦ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 6 diamonds: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     14,
+     7
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     10,
+     9,
+     6,
+     5
+    ],
+    "C": [
+     9,
+     2
+    ]
+   },
+   "hp": 20,
+   "sp": 23,
+   "correct": "3♦",
+   "why": "Ujævn hånd med 7 ruder: 3♦ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 7 diamonds: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     6
+    ],
+    "H": [
+     14,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     8,
+     5,
+     3
+    ],
+    "C": [
+     9,
+     4
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "3♦",
+   "why": "Ujævn hånd med 6 ruder: 3♦ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 6 diamonds: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     8,
+     3
+    ],
+    "H": [
+     14,
+     13
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     11,
+     9,
+     7,
+     2
+    ],
+    "C": [
+     13,
+     6
+    ]
+   },
+   "hp": 20,
+   "sp": 23,
+   "correct": "3♦",
+   "why": "Ujævn hånd med 7 ruder: 3♦ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 7 diamonds: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     13,
+     11
+    ],
+    "H": [
+     13,
+     9,
+     8
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     9,
+     8,
+     7
+    ],
+    "C": [
+     14,
+     11
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "3♦",
+   "why": "Ujævn hånd med 6 ruder: 3♦ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 6 diamonds: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     14,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     7,
+     5
+    ]
+   },
+   "hp": 22,
+   "sp": 24,
+   "correct": "3♦",
+   "why": "Ujævn hånd med 5 ruder: 3♦ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 diamonds: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     11,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     7,
+     6,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     4
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "3♦",
+   "why": "Ujævn hånd med 6 ruder: 3♦ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 6 diamonds: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     11,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     11,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     7
+    ]
+   },
+   "hp": 22,
+   "sp": 25,
+   "correct": "3♦",
+   "why": "Ujævn hånd med 7 ruder: 3♦ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 7 diamonds: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11
+    ],
+    "H": [
+     8,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     10,
+     9
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
+   "hp": 23,
+   "sp": 25,
+   "correct": "3♦",
+   "why": "Ujævn hånd med 5 ruder: 3♦ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 diamonds: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     13
+    ],
+    "D": [
+     13,
+     12,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     11
+    ]
+   },
+   "hp": 22,
+   "sp": 24,
+   "correct": "3♦",
+   "why": "Ujævn hånd med 5 ruder: 3♦ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 diamonds: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     14,
+     13
+    ],
+    "D": [
+     14,
+     9,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     7,
+     4,
+     2
+    ]
+   },
+   "hp": 22,
+   "sp": 24,
+   "correct": "3♦",
+   "why": "Ujævn hånd med 5 ruder: 3♦ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 diamonds: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     9
+    ],
+    "D": [
+     13,
+     12,
+     8,
+     6,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "3♦",
+   "why": "Ujævn hånd med 6 ruder: 3♦ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 6 diamonds: 3♦ – natural."
+   }
   },
   {
    "situation": "aab_2ru",
@@ -4855,27 +4909,162 @@
      7
     ],
     "H": [
-     14,
-     11,
-     4
+     13,
+     10,
+     8
     ],
     "D": [
      14,
+     13,
+     12,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
+   "hp": 22,
+   "sp": 24,
+   "correct": "3♦",
+   "why": "Ujævn hånd med 6 ruder: 3♦ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 6 diamonds: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     13,
+     6
+    ],
+    "H": [
+     13,
+     12
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     11,
+     9,
+     6,
      5
+    ],
+    "C": [
+     12,
+     4
+    ]
+   },
+   "hp": 20,
+   "sp": 23,
+   "correct": "3♦",
+   "why": "Ujævn hånd med 7 ruder: 3♦ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 7 diamonds: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     4
+    ],
+    "H": [
+     14,
+     8
+    ],
+    "D": [
+     14,
+     12,
+     8,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     2
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "3♦",
+   "why": "Ujævn hånd med 5 ruder: 3♦ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 diamonds: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     13,
+     10,
+     6
+    ],
+    "D": [
+     13,
+     11,
+     9,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "3♦",
+   "why": "Ujævn hånd med 6 ruder: 3♦ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 6 diamonds: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     13,
+     12
+    ],
+    "H": [
+     13,
+     12,
+     3
+    ],
+    "D": [
+     14,
+     7
     ],
     "C": [
      14,
      13,
-     12,
-     8,
-     7,
+     11,
+     10,
+     5,
      3
     ]
    },
    "hp": 22,
    "sp": 24,
    "correct": "3♣",
-   "why": "Ujævn hånd med 6 klør: 3♣ – naturligt."
+   "why": "Ujævn hånd med 6 klør: 3♣ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 6 clubs: 3♣ – natural."
+   }
   },
   {
    "situation": "aab_2ru",
@@ -4883,12 +5072,78 @@
     "S": [
      14,
      13,
+     5
+    ],
+    "H": [
+     8,
+     6
+    ],
+    "D": [
+     14,
+     5
+    ],
+    "C": [
+     14,
+     13,
      12,
-     8
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "3♣",
+   "why": "Ujævn hånd med 6 klør: 3♣ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 6 clubs: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8,
+     5
+    ],
+    "H": [
+     12,
+     4
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     7,
+     6
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "3♣",
+   "why": "Ujævn hånd med 5 klør: 3♣ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 clubs: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     12,
+     3
     ],
     "H": [
      14,
-     9
+     13,
+     8,
+     5
     ],
     "D": [
      13,
@@ -4896,8 +5151,107 @@
     ],
     "C": [
      14,
-     10,
+     13,
+     11,
      7,
+     6
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "3♣",
+   "why": "Ujævn hånd med 5 klør: 3♣ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 clubs: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     5
+    ],
+    "D": [
+     5,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     6,
+     3
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "3♣",
+   "why": "Ujævn hånd med 5 klør: 3♣ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 clubs: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     13,
+     11,
+     2
+    ],
+    "H": [
+     14,
+     13
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "3♣",
+   "why": "Ujævn hånd med 6 klør: 3♣ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 6 clubs: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     8,
+     3
+    ],
+    "H": [
+     14,
+     6
+    ],
+    "D": [
+     14,
+     11
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     9,
      5,
      4
     ]
@@ -4905,621 +5259,389 @@
    "hp": 20,
    "sp": 22,
    "correct": "3♣",
-   "why": "Ujævn hånd med 5 klør: 3♣ – naturligt."
+   "why": "Ujævn hånd med 6 klør: 3♣ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 6 clubs: 3♣ – natural."
+   }
   },
   {
    "situation": "aab_2ru",
    "hand": {
     "S": [
-     14,
-     13,
-     10,
-     9
+     11,
+     6
     ],
     "H": [
      14,
-     11
+     13
     ],
     "D": [
-     13,
+     14,
      10
     ],
     "C": [
      14,
-     12,
-     10,
-     9,
-     8
-    ]
-   },
-   "hp": 21,
-   "sp": 23,
-   "correct": "3♣",
-   "why": "Ujævn hånd med 5 klør: 3♣ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     9,
-     8
-    ],
-    "H": [
-     14,
-     11
-    ],
-    "D": [
-     3,
-     2
-    ],
-    "C": [
-     14,
      13,
      11,
-     4,
-     2
-    ]
-   },
-   "hp": 20,
-   "sp": 22,
-   "correct": "3♣",
-   "why": "Ujævn hånd med 5 klør: 3♣ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     13
-    ],
-    "H": [
-     11,
      10,
+     9,
      6,
-     5
-    ],
-    "D": [
-     14,
-     13
-    ],
-    "C": [
-     13,
-     12,
-     11,
-     7,
-     3
-    ]
-   },
-   "hp": 21,
-   "sp": 23,
-   "correct": "3♣",
-   "why": "Ujævn hånd med 5 klør: 3♣ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     9
-    ],
-    "H": [
-     12,
-     4
-    ],
-    "D": [
-     14,
-     11
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     9,
-     7,
-     4,
      2
     ]
    },
    "hp": 20,
    "sp": 23,
    "correct": "3♣",
-   "why": "Ujævn hånd med 7 klør: 3♣ – naturligt."
+   "why": "Ujævn hånd med 7 klør: 3♣ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 7 clubs: 3♣ – natural."
+   }
   },
   {
    "situation": "aab_2ru",
    "hand": {
     "S": [
      13,
-     9,
+     11,
+     6,
      4
     ],
     "H": [
-     14,
-     13
-    ],
-    "D": [
-     14,
-     5
-    ],
-    "C": [
-     14,
      13,
-     10,
-     9,
-     8,
-     7
-    ]
-   },
-   "hp": 21,
-   "sp": 23,
-   "correct": "3♣",
-   "why": "Ujævn hånd med 6 klør: 3♣ – naturligt."
-  },
-  {
-   "situation": "aab_2ru",
-   "hand": {
-    "S": [
-     14,
-     12,
-     7,
-     2
-    ],
-    "H": [
-     14,
-     11
-    ],
-    "D": [
-     13,
-     5
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     10,
-     5
-    ]
-   },
-   "hp": 23,
-   "sp": 25,
-   "correct": "3♣",
-   "why": "Ujævn hånd med 5 klør: 3♣ – naturligt."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     11,
-     10,
-     7,
-     4
-    ],
-    "H": [
-     11,
-     8,
-     5
-    ],
-    "D": [
-     11,
-     7,
-     5,
-     3
-    ],
-    "C": [
-     11,
-     4
-    ]
-   },
-   "hp": 4,
-   "sp": 5,
-   "correct": "3♥",
-   "why": "3 hjerter: 3♥ – støtte, også med 4 hp. Åbner er kaptajn."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     8,
-     7
-    ],
-    "H": [
-     9,
-     4,
-     2
-    ],
-    "D": [
-     12,
-     11,
-     7,
-     5
-    ],
-    "C": [
-     11,
-     5,
-     4,
-     2
-    ]
-   },
-   "hp": 4,
-   "sp": 5,
-   "correct": "3♥",
-   "why": "3 hjerter: 3♥ – støtte, også med 4 hp. Åbner er kaptajn."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     13,
-     9,
-     5
-    ],
-    "H": [
-     9,
-     6,
-     5
-    ],
-    "D": [
-     7,
-     5,
-     4
-    ],
-    "C": [
-     10,
-     8,
-     7,
-     2
-    ]
-   },
-   "hp": 3,
-   "sp": 3,
-   "correct": "3♥",
-   "why": "3 hjerter: 3♥ – støtte, også med 3 hp. Åbner er kaptajn."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     12,
-     11,
-     2
-    ],
-    "H": [
-     11,
-     8,
-     7
-    ],
-    "D": [
-     10,
-     8,
-     4,
-     3
-    ],
-    "C": [
-     10,
-     5,
-     3
-    ]
-   },
-   "hp": 4,
-   "sp": 4,
-   "correct": "3♥",
-   "why": "3 hjerter: 3♥ – støtte, også med 4 hp. Åbner er kaptajn."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     8,
-     7,
-     5
-    ],
-    "H": [
-     13,
-     8,
-     2
-    ],
-    "D": [
-     6,
-     5,
-     3
-    ],
-    "C": [
-     13,
-     8,
-     7,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 6,
-   "correct": "3♥",
-   "why": "3 hjerter: 3♥ – støtte, også med 6 hp. Åbner er kaptajn."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     11,
-     10,
-     4,
-     2
-    ],
-    "H": [
-     6,
-     3
-    ],
-    "D": [
-     11,
-     9,
-     6
-    ],
-    "C": [
-     10,
-     7,
-     3,
-     2
-    ]
-   },
-   "hp": 2,
-   "sp": 3,
-   "correct": "2NT",
-   "why": "2 hp uden støtte: 2NT – det andet negative."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     11,
-     8,
-     6,
-     5
-    ],
-    "H": [
-     4,
-     2
-    ],
-    "D": [
-     11,
-     10,
-     9,
-     2
-    ],
-    "C": [
-     12,
-     10,
-     2
-    ]
-   },
-   "hp": 4,
-   "sp": 5,
-   "correct": "2NT",
-   "why": "4 hp uden støtte: 2NT – det andet negative."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     8,
-     7,
-     5,
-     2
-    ],
-    "H": [
      12
     ],
     "D": [
-     9,
-     8,
-     3,
-     2
-    ],
-    "C": [
-     11,
-     10,
-     9,
-     7
-    ]
-   },
-   "hp": 3,
-   "sp": 6,
-   "correct": "2NT",
-   "why": "3 hp uden støtte: 2NT – det andet negative."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     9,
-     5,
-     4,
-     3
-    ],
-    "H": [
-     10,
-     5
-    ],
-    "D": [
-     12,
-     10,
-     4
-    ],
-    "C": [
-     12,
-     9,
-     7,
-     3
-    ]
-   },
-   "hp": 4,
-   "sp": 5,
-   "correct": "2NT",
-   "why": "4 hp uden støtte: 2NT – det andet negative."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     12,
-     11,
-     9,
-     8
-    ],
-    "H": [
-     11,
-     7
-    ],
-    "D": [
-     8,
-     7,
-     6,
-     3
-    ],
-    "C": [
-     9,
-     7,
-     6
-    ]
-   },
-   "hp": 4,
-   "sp": 5,
-   "correct": "2NT",
-   "why": "4 hp uden støtte: 2NT – det andet negative."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     11,
-     10,
-     9
-    ],
-    "H": [
-     5,
-     4
-    ],
-    "D": [
-     14,
-     9,
-     5,
-     2
-    ],
-    "C": [
-     10,
-     7,
-     6,
-     3
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "3NT",
-   "why": "5 hp jævn uden støtte: 3NT – sans med hold."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     10,
-     9,
-     6,
-     2
-    ],
-    "H": [
      13,
-     4
-    ],
-    "D": [
-     10,
-     6,
-     2
-    ],
-    "C": [
-     13,
-     9,
-     5,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "3NT",
-   "why": "6 hp jævn uden støtte: 3NT – sans med hold."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     12,
-     10,
-     7,
-     6
-    ],
-    "H": [
-     13,
-     5
-    ],
-    "D": [
-     12,
-     10,
      9
     ],
     "C": [
-     10,
-     8,
-     5,
-     3
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "3NT",
-   "why": "7 hp jævn uden støtte: 3NT – sans med hold."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
+     14,
+     13,
      11,
      8,
+     6
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "3♣",
+   "why": "Ujævn hånd med 5 klør: 3♣ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 clubs: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     13,
+     11,
      4,
      2
     ],
     "H": [
-     7,
+     14,
      5
     ],
     "D": [
-     11,
-     6,
-     4
+     14,
+     3
     ],
     "C": [
+     14,
      13,
+     11,
      10,
-     5,
-     2
+     5
     ]
    },
-   "hp": 5,
-   "sp": 6,
-   "correct": "3NT",
-   "why": "5 hp jævn uden støtte: 3NT – sans med hold."
+   "hp": 20,
+   "sp": 22,
+   "correct": "3♣",
+   "why": "Ujævn hånd med 5 klør: 3♣ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 clubs: 3♣ – natural."
+   }
   },
   {
-   "situation": "svar_2_hj",
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     7,
+     3
+    ],
+    "D": [
+     14,
+     7,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     11,
+     5
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "3♣",
+   "why": "Ujævn hånd med 5 klør: 3♣ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 clubs: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     12,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     5,
+     3
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "3♣",
+   "why": "Ujævn hånd med 5 klør: 3♣ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 clubs: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
    "hand": {
     "S": [
      13,
-     12,
-     3
+     4
     ],
     "H": [
+     14,
+     13,
+     9,
+     2
+    ],
+    "D": [
+     14,
+     10
+    ],
+    "C": [
+     14,
+     12,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 20,
+   "sp": 22,
+   "correct": "3♣",
+   "why": "Ujævn hånd med 5 klør: 3♣ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 clubs: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     4
+    ],
+    "H": [
+     12,
+     6
+    ],
+    "D": [
+     14,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     12,
      11,
+     9,
+     8,
+     4
+    ]
+   },
+   "hp": 20,
+   "sp": 23,
+   "correct": "3♣",
+   "why": "Ujævn hånd med 7 klør: 3♣ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 7 clubs: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     14,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     13,
+     12,
+     8,
+     6,
+     3
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "3♣",
+   "why": "Ujævn hånd med 5 klør: 3♣ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 clubs: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     13,
+     10
+    ],
+    "H": [
+     14,
      8
     ],
     "D": [
+     14,
+     8
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     8,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 20,
+   "sp": 23,
+   "correct": "3♣",
+   "why": "Ujævn hånd med 7 klør: 3♣ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 7 clubs: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     12,
+     10
+    ],
+    "H": [
+     12,
+     11
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     4,
+     3
+    ]
+   },
+   "hp": 21,
+   "sp": 23,
+   "correct": "3♣",
+   "why": "Ujævn hånd med 5 klør: 3♣ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 5 clubs: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "aab_2ru",
+   "hand": {
+    "S": [
+     14,
+     11
+    ],
+    "H": [
+     13,
+     12
+    ],
+    "D": [
+     14,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     9,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 21,
+   "sp": 24,
+   "correct": "3♣",
+   "why": "Ujævn hånd med 7 klør: 3♣ – naturligt.",
+   "en": {
+    "why": "Unbalanced hand with 7 clubs: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     9,
+     8,
+     2
+    ],
+    "H": [
+     12,
+     10,
+     7,
+     2
+    ],
+    "D": [
      11,
      10,
      8,
@@ -5527,913 +5649,1689 @@
     ],
     "C": [
      7,
-     6,
-     4,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "3NT",
-   "why": "7 hp jævn uden støtte: 3NT – sans med hold."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     8,
-     6,
-     2
-    ],
-    "H": [
-     3
-    ],
-    "D": [
-     11,
-     9,
      4
-    ],
-    "C": [
-     14,
-     12,
-     9,
-     7,
-     6,
-     4
-    ]
-   },
-   "hp": 7,
-   "sp": 10,
-   "correct": "3♣",
-   "why": "God 6-farve i klør og 7 hp: 3♣ – naturligt."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     9,
-     7,
-     6,
-     2
-    ],
-    "H": [],
-    "D": [
-     10,
-     5,
-     2
-    ],
-    "C": [
-     14,
-     12,
-     11,
-     10,
-     8,
-     6
-    ]
-   },
-   "hp": 7,
-   "sp": 12,
-   "correct": "3♣",
-   "why": "God 6-farve i klør og 7 hp: 3♣ – naturligt."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     11,
-     10
-    ],
-    "H": [
-     10
-    ],
-    "D": [
-     8,
-     7,
-     6,
-     4
-    ],
-    "C": [
-     14,
-     12,
-     9,
-     8,
-     6,
-     4
-    ]
-   },
-   "hp": 7,
-   "sp": 11,
-   "correct": "3♣",
-   "why": "God 6-farve i klør og 7 hp: 3♣ – naturligt."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     12,
-     8,
-     4,
-     3
-    ],
-    "H": [
-     6,
-     3
-    ],
-    "D": [
-     5,
-     4
-    ],
-    "C": [
-     13,
-     12,
-     10,
-     7,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 9,
-   "correct": "3♣",
-   "why": "God 5-farve i klør og 7 hp: 3♣ – naturligt."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     9,
-     8,
-     5,
-     4
-    ],
-    "H": [
-     11
-    ],
-    "D": [
-     10,
-     8,
-     3
-    ],
-    "C": [
-     14,
-     12,
-     10,
-     6,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 10,
-   "correct": "3♣",
-   "why": "God 5-farve i klør og 7 hp: 3♣ – naturligt."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     9,
-     5,
-     3
-    ],
-    "H": [
-     7,
-     6
-    ],
-    "D": [
-     14,
-     12,
-     9,
-     7,
-     3,
-     2
-    ],
-    "C": [
-     11,
-     6
-    ]
-   },
-   "hp": 7,
-   "sp": 9,
-   "correct": "3♦",
-   "why": "God 6-farve i ruder og 7 hp: 3♦ – naturligt."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     9,
-     8,
-     7,
-     4
-    ],
-    "H": [
-     11
-    ],
-    "D": [
-     13,
-     12,
-     6,
-     5,
-     3,
-     2
-    ],
-    "C": [
-     5,
-     4
-    ]
-   },
-   "hp": 6,
-   "sp": 10,
-   "correct": "3♦",
-   "why": "God 6-farve i ruder og 6 hp: 3♦ – naturligt."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     11,
-     10
-    ],
-    "H": [
-     6,
-     2
-    ],
-    "D": [
-     14,
-     12,
-     7,
-     6,
-     4
-    ],
-    "C": [
-     7,
-     5,
-     3,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 9,
-   "correct": "3♦",
-   "why": "God 5-farve i ruder og 7 hp: 3♦ – naturligt."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     8,
-     3,
-     2
-    ],
-    "H": [
-     2
-    ],
-    "D": [
-     13,
-     12,
-     8,
-     3,
-     2
-    ],
-    "C": [
-     10,
-     8,
-     7,
-     4
-    ]
-   },
-   "hp": 5,
-   "sp": 8,
-   "correct": "3♦",
-   "why": "God 5-farve i ruder og 5 hp: 3♦ – naturligt."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     9,
-     6,
-     4,
-     3
-    ],
-    "H": [
-     5,
-     2
-    ],
-    "D": [
-     13,
-     12,
-     8,
-     7,
-     5
-    ],
-    "C": [
-     5,
-     4
-    ]
-   },
-   "hp": 5,
-   "sp": 7,
-   "correct": "3♦",
-   "why": "God 5-farve i ruder og 5 hp: 3♦ – naturligt."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     14,
-     13,
-     10,
-     9,
-     3
-    ],
-    "H": [
-     4,
-     2
-    ],
-    "D": [
-     8,
-     6,
-     3
-    ],
-    "C": [
-     10,
-     8,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "2♠",
-   "why": "God 5-farve i spar og 7 hp: 2♠ – naturligt."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11,
-     9,
-     6
-    ],
-    "H": [
-     7,
-     2
-    ],
-    "D": [
-     10,
-     7,
-     5,
-     4
-    ],
-    "C": [
-     5,
-     3
-    ]
-   },
-   "hp": 7,
-   "sp": 9,
-   "correct": "2♠",
-   "why": "God 5-farve i spar og 7 hp: 2♠ – naturligt."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     14,
-     12,
-     6,
-     5,
-     4,
-     3
-    ],
-    "H": [
-     6
-    ],
-    "D": [
-     11,
-     3,
-     2
-    ],
-    "C": [
-     9,
-     4,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 10,
-   "correct": "2♠",
-   "why": "God 6-farve i spar og 7 hp: 2♠ – naturligt."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     14,
-     13,
-     10,
-     9,
-     7,
-     3
-    ],
-    "H": [],
-    "D": [
-     5,
-     4,
-     3
-    ],
-    "C": [
-     9,
-     6,
-     4,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 12,
-   "correct": "2♠",
-   "why": "God 6-farve i spar og 7 hp: 2♠ – naturligt."
-  },
-  {
-   "situation": "svar_2_hj",
-   "hand": {
-    "S": [
-     13,
-     12,
-     10,
-     8,
-     6,
-     4
-    ],
-    "H": [
-     5
-    ],
-    "D": [
-     12,
-     7,
-     3
-    ],
-    "C": [
-     9,
-     5,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 10,
-   "correct": "2♠",
-   "why": "God 6-farve i spar og 7 hp: 2♠ – naturligt."
-  },
-  {
-   "situation": "svar_2_sp",
-   "hand": {
-    "S": [
-     7,
-     6,
-     4
-    ],
-    "H": [
-     13,
-     9,
-     6,
-     2
-    ],
-    "D": [
-     13,
-     5,
-     3,
-     2
-    ],
-    "C": [
-     10,
-     7
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "3♠",
-   "why": "3 spar: 3♠ – støtte, også med 6 hp. Åbner er kaptajn."
-  },
-  {
-   "situation": "svar_2_sp",
-   "hand": {
-    "S": [
-     7,
-     6,
-     5,
-     4
-    ],
-    "H": [
-     12,
-     5,
-     4,
-     3
-    ],
-    "D": [
-     7,
-     6,
-     2
-    ],
-    "C": [
-     9,
-     6
-    ]
-   },
-   "hp": 2,
-   "sp": 3,
-   "correct": "3♠",
-   "why": "4 spar: 3♠ – støtte, også med 2 hp. Åbner er kaptajn."
-  },
-  {
-   "situation": "svar_2_sp",
-   "hand": {
-    "S": [
-     9,
-     7,
-     6
-    ],
-    "H": [
-     11,
-     8,
-     6,
-     2
-    ],
-    "D": [
-     7,
-     5,
-     4
-    ],
-    "C": [
-     12,
-     10,
-     3
     ]
    },
    "hp": 3,
-   "sp": 3,
-   "correct": "3♠",
-   "why": "3 spar: 3♠ – støtte, også med 3 hp. Åbner er kaptajn."
-  },
-  {
-   "situation": "svar_2_sp",
-   "hand": {
-    "S": [
-     8,
-     5,
-     4
-    ],
-    "H": [
-     14,
-     10,
-     3
-    ],
-    "D": [
-     9,
-     6,
-     3,
-     2
-    ],
-    "C": [
-     8,
-     7,
-     2
-    ]
-   },
-   "hp": 4,
    "sp": 4,
-   "correct": "3♠",
-   "why": "3 spar: 3♠ – støtte, også med 4 hp. Åbner er kaptajn."
+   "correct": "3♥",
+   "why": "4 hjerter: 3♥ – støtte, også med 3 hp. Åbner er kaptajn.",
+   "en": {
+    "why": "4 hearts: 3♥ – support, even with 3 HCP. Opener is captain."
+   }
   },
   {
-   "situation": "svar_2_sp",
+   "situation": "svar_2_hj",
    "hand": {
     "S": [
      9,
-     6,
-     5
+     7,
+     3,
+     2
     ],
     "H": [
-     6,
-     4,
+     11,
+     8,
      3
     ],
     "D": [
-     14,
-     13,
      9,
-     6
+     7,
+     3
     ],
     "C": [
-     10,
+     14,
      6,
      5
+    ]
+   },
+   "hp": 5,
+   "sp": 5,
+   "correct": "3♥",
+   "why": "3 hjerter: 3♥ – støtte, også med 5 hp. Åbner er kaptajn.",
+   "en": {
+    "why": "3 hearts: 3♥ – support, even with 5 HCP. Opener is captain."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     9
+    ],
+    "H": [
+     8,
+     6,
+     3
+    ],
+    "D": [
+     4,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     3
     ]
    },
    "hp": 7,
-   "sp": 7,
-   "correct": "3♠",
-   "why": "3 spar: 3♠ – støtte, også med 7 hp. Åbner er kaptajn."
+   "sp": 8,
+   "correct": "3♥",
+   "why": "3 hjerter: 3♥ – støtte, også med 7 hp. Åbner er kaptajn.",
+   "en": {
+    "why": "3 hearts: 3♥ – support, even with 7 HCP. Opener is captain."
+   }
   },
   {
-   "situation": "svar_2_sp",
+   "situation": "svar_2_hj",
    "hand": {
     "S": [
+     10,
+     8,
+     5,
      3
     ],
     "H": [
-     12,
-     10,
-     7,
-     5
-    ],
-    "D": [
-     10,
      9,
-     7,
+     4,
      2
     ],
+    "D": [
+     14,
+     8
+    ],
     "C": [
-     9,
+     12,
      8,
-     6,
-     5
+     5,
+     4
     ]
    },
-   "hp": 2,
-   "sp": 5,
-   "correct": "2NT",
-   "why": "2 hp uden støtte: 2NT – det andet negative."
+   "hp": 6,
+   "sp": 7,
+   "correct": "3♥",
+   "why": "3 hjerter: 3♥ – støtte, også med 6 hp. Åbner er kaptajn.",
+   "en": {
+    "why": "3 hearts: 3♥ – support, even with 6 HCP. Opener is captain."
+   }
   },
   {
-   "situation": "svar_2_sp",
+   "situation": "svar_2_hj",
    "hand": {
     "S": [
      12,
-     8
+     10,
+     8,
+     2
     ],
     "H": [
-     10,
-     9,
-     6,
+     7,
+     5,
+     3,
      2
     ],
     "D": [
-     10,
+     9,
      8,
-     6,
+     3
+    ],
+    "C": [
+     14,
+     6
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "3♥",
+   "why": "4 hjerter: 3♥ – støtte, også med 6 hp. Åbner er kaptajn.",
+   "en": {
+    "why": "4 hearts: 3♥ – support, even with 6 HCP. Opener is captain."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     9,
+     8,
+     5,
+     4
+    ],
+    "H": [
+     3,
+     2
+    ],
+    "D": [
+     12,
+     5,
      2
     ],
     "C": [
      9,
-     6,
-     5
+     5,
+     3,
+     2
     ]
    },
    "hp": 2,
    "sp": 3,
    "correct": "2NT",
-   "why": "2 hp uden støtte: 2NT – det andet negative."
+   "why": "2 hp uden støtte: 2NT – det andet negative.",
+   "en": {
+    "why": "2 HCP without support: 2NT – the second negative."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     10,
+     9,
+     5,
+     2
+    ],
+    "H": [
+     12,
+     8
+    ],
+    "D": [
+     10,
+     7,
+     2
+    ],
+    "C": [
+     11,
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "correct": "2NT",
+   "why": "3 hp uden støtte: 2NT – det andet negative.",
+   "en": {
+    "why": "3 HCP without support: 2NT – the second negative."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     10,
+     9,
+     8,
+     2
+    ],
+    "H": [
+     13,
+     8
+    ],
+    "D": [
+     7,
+     6,
+     2
+    ],
+    "C": [
+     11,
+     10,
+     8,
+     3
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "2NT",
+   "why": "4 hp uden støtte: 2NT – det andet negative.",
+   "en": {
+    "why": "4 HCP without support: 2NT – the second negative."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     8,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     8,
+     5
+    ],
+    "D": [
+     12,
+     11,
+     7,
+     3
+    ],
+    "C": [
+     11,
+     9,
+     3
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "2NT",
+   "why": "4 hp uden støtte: 2NT – det andet negative.",
+   "en": {
+    "why": "4 HCP without support: 2NT – the second negative."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     12,
+     10,
+     6,
+     3
+    ],
+    "H": [
+     9,
+     3
+    ],
+    "D": [
+     11,
+     10,
+     5
+    ],
+    "C": [
+     11,
+     9,
+     6,
+     3
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "2NT",
+   "why": "4 hp uden støtte: 2NT – det andet negative.",
+   "en": {
+    "why": "4 HCP without support: 2NT – the second negative."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     11,
+     9,
+     8,
+     3
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     11,
+     7,
+     4,
+     3
+    ],
+    "C": [
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "3NT",
+   "why": "6 hp jævn uden støtte: 3NT – sans med hold.",
+   "en": {
+    "why": "6 HCP balanced without support: 3NT – notrump with stoppers."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     9,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     9,
+     4
+    ],
+    "D": [
+     13,
+     9,
+     6,
+     3
+    ],
+    "C": [
+     13,
+     10,
+     8
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "3NT",
+   "why": "6 hp jævn uden støtte: 3NT – sans med hold.",
+   "en": {
+    "why": "6 HCP balanced without support: 3NT – notrump with stoppers."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     11,
+     9,
+     5,
+     4
+    ],
+    "H": [
+     13,
+     5
+    ],
+    "D": [
+     9,
+     5,
+     2
+    ],
+    "C": [
+     11,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "3NT",
+   "why": "5 hp jævn uden støtte: 3NT – sans med hold.",
+   "en": {
+    "why": "5 HCP balanced without support: 3NT – notrump with stoppers."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     13,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     10,
+     9
+    ],
+    "D": [
+     8,
+     6,
+     5
+    ],
+    "C": [
+     12,
+     11,
+     7,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "3NT",
+   "why": "6 hp jævn uden støtte: 3NT – sans med hold.",
+   "en": {
+    "why": "6 HCP balanced without support: 3NT – notrump with stoppers."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     11,
+     7,
+     4,
+     2
+    ],
+    "H": [
+     11,
+     7
+    ],
+    "D": [
+     7,
+     6,
+     3
+    ],
+    "C": [
+     14,
+     10,
+     9,
+     8
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "3NT",
+   "why": "6 hp jævn uden støtte: 3NT – sans med hold.",
+   "en": {
+    "why": "6 HCP balanced without support: 3NT – notrump with stoppers."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     12,
+     9,
+     8,
+     6
+    ],
+    "H": [
+     8
+    ],
+    "D": [
+     9,
+     8
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "God 6-farve i klør og 7 hp: 3♣ – naturligt.",
+   "en": {
+    "why": "A good 6-card suit in clubs and 7 HCP: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     11,
+     5
+    ],
+    "H": [
+     9,
+     5
+    ],
+    "D": [
+     9,
+     8,
+     5
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     9,
+     4,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "3♣",
+   "why": "God 6-farve i klør og 7 hp: 3♣ – naturligt.",
+   "en": {
+    "why": "A good 6-card suit in clubs and 7 HCP: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     9,
+     2
+    ],
+    "H": [
+     9,
+     3
+    ],
+    "D": [
+     11,
+     10,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     8,
+     7,
+     6,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "3♣",
+   "why": "God 6-farve i klør og 7 hp: 3♣ – naturligt.",
+   "en": {
+    "why": "A good 6-card suit in clubs and 7 HCP: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     6,
+     5,
+     3,
+     2
+    ],
+    "H": [],
+    "D": [
+     9,
+     8,
+     6
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     9,
+     6,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "God 6-farve i klør og 6 hp: 3♣ – naturligt.",
+   "en": {
+    "why": "A good 6-card suit in clubs and 6 HCP: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     7,
+     6
+    ],
+    "H": [
+     10,
+     4
+    ],
+    "D": [
+     12,
+     8,
+     6,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     10,
+     8,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "3♣",
+   "why": "God 5-farve i klør og 7 hp: 3♣ – naturligt.",
+   "en": {
+    "why": "A good 5-card suit in clubs and 7 HCP: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     7,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     10,
+     7,
+     5
+    ],
+    "C": [
+     8,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "God 6-farve i ruder og 7 hp: 3♦ – naturligt.",
+   "en": {
+    "why": "A good 6-card suit in diamonds and 7 HCP: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     10,
+     7,
+     3,
+     2
+    ],
+    "H": [],
+    "D": [
+     14,
+     13,
+     7,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     9,
+     7,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "God 6-farve i ruder og 7 hp: 3♦ – naturligt.",
+   "en": {
+    "why": "A good 6-card suit in diamonds and 7 HCP: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     11,
+     7,
+     6,
+     2
+    ],
+    "H": [],
+    "D": [
+     13,
+     12,
+     8,
+     5,
+     2
+    ],
+    "C": [
+     10,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "God 5-farve i ruder og 6 hp: 3♦ – naturligt.",
+   "en": {
+    "why": "A good 5-card suit in diamonds and 6 HCP: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     10,
+     9,
+     5,
+     3
+    ],
+    "H": [],
+    "D": [
+     13,
+     12,
+     9,
+     8,
+     4
+    ],
+    "C": [
+     11,
+     10,
+     6,
+     4
+    ]
+   },
+   "hp": 6,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "God 5-farve i ruder og 6 hp: 3♦ – naturligt.",
+   "en": {
+    "why": "A good 5-card suit in diamonds and 6 HCP: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9,
+     4
+    ],
+    "H": [
+     9,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     7,
+     5,
+     4
+    ],
+    "C": [
+     7,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "3♦",
+   "why": "God 5-farve i ruder og 7 hp: 3♦ – naturligt.",
+   "en": {
+    "why": "A good 5-card suit in diamonds and 7 HCP: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     5,
+     3,
+     2
+    ],
+    "H": [],
+    "D": [
+     11,
+     10,
+     6,
+     4
+    ],
+    "C": [
+     11,
+     10,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "God 6-farve i spar og 7 hp: 2♠ – naturligt.",
+   "en": {
+    "why": "A good 6-card suit in spades and 7 HCP: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     6,
+     4,
+     3
+    ],
+    "H": [],
+    "D": [
+     11,
+     7,
+     4
+    ],
+    "C": [
+     6,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "God 6-farve i spar og 7 hp: 2♠ – naturligt.",
+   "en": {
+    "why": "A good 6-card suit in spades and 7 HCP: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     8,
+     6
+    ],
+    "H": [],
+    "D": [
+     10,
+     8,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     9,
+     4,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "God 5-farve i spar og 7 hp: 2♠ – naturligt.",
+   "en": {
+    "why": "A good 5-card suit in spades and 7 HCP: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     7,
+     5
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     12,
+     8,
+     5,
+     4
+    ],
+    "C": [
+     10,
+     8,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "2♠",
+   "why": "God 5-farve i spar og 7 hp: 2♠ – naturligt.",
+   "en": {
+    "why": "A good 5-card suit in spades and 7 HCP: 2♠ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     10,
+     2
+    ],
+    "H": [
+     9,
+     7
+    ],
+    "D": [
+     5,
+     3
+    ],
+    "C": [
+     8,
+     7,
+     6,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "2♠",
+   "why": "God 5-farve i spar og 7 hp: 2♠ – naturligt.",
+   "en": {
+    "why": "A good 5-card suit in spades and 7 HCP: 2♠ – natural."
+   }
   },
   {
    "situation": "svar_2_sp",
    "hand": {
     "S": [
-     14
+     11,
+     9,
+     8
     ],
     "H": [
      10,
-     8,
-     6,
-     4
+     9,
+     3
     ],
     "D": [
-     8,
-     7,
-     4,
-     2
+     13,
+     11,
+     9,
+     4
     ],
     "C": [
      10,
      8,
-     7,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 5,
+   "correct": "3♠",
+   "why": "3 spar: 3♠ – støtte, også med 5 hp. Åbner er kaptajn.",
+   "en": {
+    "why": "3 spades: 3♠ – support, even with 5 HCP. Opener is captain."
+   }
+  },
+  {
+   "situation": "svar_2_sp",
+   "hand": {
+    "S": [
+     10,
+     6,
+     4
+    ],
+    "H": [
+     11,
+     10,
+     9,
+     8
+    ],
+    "D": [
+     11,
+     5,
+     4
+    ],
+    "C": [
+     10,
+     6,
      4
     ]
    },
-   "hp": 4,
-   "sp": 7,
-   "correct": "2NT",
-   "why": "4 hp uden støtte: 2NT – det andet negative."
+   "hp": 2,
+   "sp": 2,
+   "correct": "3♠",
+   "why": "3 spar: 3♠ – støtte, også med 2 hp. Åbner er kaptajn.",
+   "en": {
+    "why": "3 spades: 3♠ – support, even with 2 HCP. Opener is captain."
+   }
   },
   {
    "situation": "svar_2_sp",
    "hand": {
     "S": [
      12,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     10,
+     9,
+     5
+    ],
+    "D": [
+     13,
+     10,
+     7,
+     5
+    ],
+    "C": [
+     4,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "3♠",
+   "why": "4 spar: 3♠ – støtte, også med 5 hp. Åbner er kaptajn.",
+   "en": {
+    "why": "4 spades: 3♠ – support, even with 5 HCP. Opener is captain."
+   }
+  },
+  {
+   "situation": "svar_2_sp",
+   "hand": {
+    "S": [
+     11,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     13,
+     8
+    ],
+    "D": [
+     11,
+     9,
+     7,
+     3
+    ],
+    "C": [
+     11,
+     6,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "3♠",
+   "why": "4 spar: 3♠ – støtte, også med 6 hp. Åbner er kaptajn.",
+   "en": {
+    "why": "4 spades: 3♠ – support, even with 6 HCP. Opener is captain."
+   }
+  },
+  {
+   "situation": "svar_2_sp",
+   "hand": {
+    "S": [
+     9,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     12,
+     3
+    ],
+    "D": [
+     12,
+     10,
+     9
+    ],
+    "C": [
+     8,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "3♠",
+   "why": "4 spar: 3♠ – støtte, også med 4 hp. Åbner er kaptajn.",
+   "en": {
+    "why": "4 spades: 3♠ – support, even with 4 HCP. Opener is captain."
+   }
+  },
+  {
+   "situation": "svar_2_sp",
+   "hand": {
+    "S": [
+     5,
+     2
+    ],
+    "H": [
+     11,
+     10,
+     6
+    ],
+    "D": [
+     9,
+     7,
+     5,
+     3
+    ],
+    "C": [
+     9,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 1,
+   "sp": 2,
+   "correct": "2NT",
+   "why": "1 hp uden støtte: 2NT – det andet negative.",
+   "en": {
+    "why": "1 HCP without support: 2NT – the second negative."
+   }
+  },
+  {
+   "situation": "svar_2_sp",
+   "hand": {
+    "S": [
+     11,
+     3
+    ],
+    "H": [
+     10,
+     9,
+     8,
+     7
+    ],
+    "D": [
+     8,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 1,
+   "sp": 2,
+   "correct": "2NT",
+   "why": "1 hp uden støtte: 2NT – det andet negative.",
+   "en": {
+    "why": "1 HCP without support: 2NT – the second negative."
+   }
+  },
+  {
+   "situation": "svar_2_sp",
+   "hand": {
+    "S": [
+     9,
+     5
+    ],
+    "H": [
+     12,
+     3,
+     2
+    ],
+    "D": [
+     9,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     9,
+     4,
+     3
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "correct": "2NT",
+   "why": "3 hp uden støtte: 2NT – det andet negative.",
+   "en": {
+    "why": "3 HCP without support: 2NT – the second negative."
+   }
+  },
+  {
+   "situation": "svar_2_sp",
+   "hand": {
+    "S": [
      10
     ],
     "H": [
      10,
-     5,
-     4,
-     2
+     7,
+     6,
+     5
     ],
     "D": [
-     12,
      10,
      9,
-     8
+     7,
+     4
     ],
     "C": [
-     6,
-     3,
+     10,
+     7,
+     4,
      2
     ]
    },
-   "hp": 4,
-   "sp": 5,
+   "hp": 0,
+   "sp": 3,
    "correct": "2NT",
-   "why": "4 hp uden støtte: 2NT – det andet negative."
+   "why": "0 hp uden støtte: 2NT – det andet negative.",
+   "en": {
+    "why": "0 HCP without support: 2NT – the second negative."
+   }
   },
   {
    "situation": "svar_2_sp",
    "hand": {
     "S": [
-     12,
-     8
+     10,
+     9
     ],
     "H": [
-     6,
-     5,
+     11,
+     7,
      4,
-     3
+     2
     ],
     "D": [
-     12,
-     8,
-     4,
-     3
+     11,
+     10,
+     6
     ],
     "C": [
-     9,
-     4,
-     3
+     11,
+     10,
+     7,
+     2
     ]
    },
-   "hp": 4,
-   "sp": 5,
+   "hp": 3,
+   "sp": 4,
    "correct": "2NT",
-   "why": "4 hp uden støtte: 2NT – det andet negative."
+   "why": "3 hp uden støtte: 2NT – det andet negative.",
+   "en": {
+    "why": "3 HCP without support: 2NT – the second negative."
+   }
+  },
+  {
+   "situation": "svar_2_sp",
+   "hand": {
+    "S": [
+     10,
+     3
+    ],
+    "H": [
+     11,
+     10,
+     8
+    ],
+    "D": [
+     11,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     7,
+     4,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "3NT",
+   "why": "6 hp jævn uden støtte: 3NT – sans med hold.",
+   "en": {
+    "why": "6 HCP balanced without support: 3NT – notrump with stoppers."
+   }
   },
   {
    "situation": "svar_2_sp",
    "hand": {
     "S": [
      11,
+     6
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     7
+    ],
+    "D": [
+     9,
+     6,
+     2
+    ],
+    "C": [
+     11,
+     9,
+     8,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "3NT",
+   "why": "5 hp jævn uden støtte: 3NT – sans med hold.",
+   "en": {
+    "why": "5 HCP balanced without support: 3NT – notrump with stoppers."
+   }
+  },
+  {
+   "situation": "svar_2_sp",
+   "hand": {
+    "S": [
+     13,
      5
     ],
     "H": [
+     10,
      9,
-     7,
-     5,
-     2
+     4
     ],
     "D": [
      14,
-     11,
-     3,
-     2
-    ],
-    "C": [
-     6,
-     3,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "3NT",
-   "why": "6 hp jævn uden støtte: 3NT – sans med hold."
-  },
-  {
-   "situation": "svar_2_sp",
-   "hand": {
-    "S": [
-     9,
-     8
-    ],
-    "H": [
-     13,
-     10,
-     9,
-     8
-    ],
-    "D": [
-     11,
-     10,
-     3
-    ],
-    "C": [
-     12,
-     10,
      7,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "3NT",
-   "why": "6 hp jævn uden støtte: 3NT – sans med hold."
-  },
-  {
-   "situation": "svar_2_sp",
-   "hand": {
-    "S": [
-     11,
-     7
+     6,
+     4
     ],
-    "H": [
-     13,
+    "C": [
      7,
      5,
-     3
-    ],
-    "D": [
-     12,
-     11,
-     9,
-     5
-    ],
-    "C": [
-     10,
-     7,
+     4,
      3
     ]
    },
    "hp": 7,
    "sp": 8,
    "correct": "3NT",
-   "why": "7 hp jævn uden støtte: 3NT – sans med hold."
+   "why": "7 hp jævn uden støtte: 3NT – sans med hold.",
+   "en": {
+    "why": "7 HCP balanced without support: 3NT – notrump with stoppers."
+   }
   },
   {
    "situation": "svar_2_sp",
    "hand": {
     "S": [
-     14,
-     11
+     8,
+     4
     ],
     "H": [
-     9,
+     12,
+     8,
      7,
      6
     ],
     "D": [
-     11,
-     7,
-     5,
+     14,
+     10,
+     9,
      4
     ],
     "C": [
-     9,
-     8,
-     7,
-     2
+     10,
+     6,
+     5
     ]
    },
    "hp": 6,
    "sp": 7,
    "correct": "3NT",
-   "why": "6 hp jævn uden støtte: 3NT – sans med hold."
+   "why": "6 hp jævn uden støtte: 3NT – sans med hold.",
+   "en": {
+    "why": "6 HCP balanced without support: 3NT – notrump with stoppers."
+   }
   },
   {
    "situation": "svar_2_sp",
    "hand": {
     "S": [
-     11,
-     8
+     6,
+     5
     ],
     "H": [
      12,
      8,
+     6,
+     2
+    ],
+    "D": [
+     6,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "3NT",
+   "why": "7 hp jævn uden støtte: 3NT – sans med hold.",
+   "en": {
+    "why": "7 HCP balanced without support: 3NT – notrump with stoppers."
+   }
+  },
+  {
+   "situation": "svar_2_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     10,
+     8,
+     3,
+     2
+    ],
+    "D": [
+     11,
+     7,
+     6
+    ],
+    "C": [
+     13,
+     12,
+     6,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "God 6-farve i klør og 6 hp: 3♣ – naturligt.",
+   "en": {
+    "why": "A good 6-card suit in clubs and 6 HCP: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     11,
+     10,
+     7,
+     6
+    ],
+    "D": [
+     9,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     10,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "God 5-farve i klør og 7 hp: 3♣ – naturligt.",
+   "en": {
+    "why": "A good 5-card suit in clubs and 7 HCP: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_sp",
+   "hand": {
+    "S": [
+     9,
+     8
+    ],
+    "H": [
+     10,
+     6,
+     5
+    ],
+    "D": [
+     8,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "3♣",
+   "why": "God 6-farve i klør og 7 hp: 3♣ – naturligt.",
+   "en": {
+    "why": "A good 6-card suit in clubs and 7 HCP: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_sp",
+   "hand": {
+    "S": [
+     7,
+     6
+    ],
+    "H": [
+     8,
+     4,
+     2
+    ],
+    "D": [
+     11,
+     6
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     10,
+     8,
+     6
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "3♣",
+   "why": "God 6-farve i klør og 7 hp: 3♣ – naturligt.",
+   "en": {
+    "why": "A good 6-card suit in clubs and 7 HCP: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_sp",
+   "hand": {
+    "S": [
+     8,
+     2
+    ],
+    "H": [
+     10,
+     2
+    ],
+    "D": [
+     6,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 7,
+   "correct": "3♣",
+   "why": "God 6-farve i klør og 5 hp: 3♣ – naturligt.",
+   "en": {
+    "why": "A good 6-card suit in clubs and 5 HCP: 3♣ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_sp",
+   "hand": {
+    "S": [
+     8,
+     6
+    ],
+    "H": [
+     11,
+     10,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     8,
+     7,
+     2
+    ],
+    "C": [
+     10,
+     4
+    ]
+   },
+   "hp": 6,
+   "sp": 8,
+   "correct": "3♦",
+   "why": "God 6-farve i ruder og 6 hp: 3♦ – naturligt.",
+   "en": {
+    "why": "A good 6-card suit in diamonds and 6 HCP: 3♦ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     8,
+     7,
      5,
      3
     ],
     "D": [
+     13,
+     12,
      8,
-     5,
-     2
+     7,
+     5
     ],
     "C": [
-     12,
+     11,
      10,
-     7,
-     6
+     5,
+     4
     ]
    },
-   "hp": 5,
-   "sp": 6,
-   "correct": "3NT",
-   "why": "5 hp jævn uden støtte: 3NT – sans med hold."
+   "hp": 6,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "God 5-farve i ruder og 6 hp: 3♦ – naturligt.",
+   "en": {
+    "why": "A good 5-card suit in diamonds and 6 HCP: 3♦ – natural."
+   }
   },
   {
    "situation": "svar_2_sp",
@@ -6442,444 +7340,261 @@
      9
     ],
     "H": [
-     9,
      7,
-     3,
+     6,
+     4,
      2
     ],
     "D": [
+     14,
      12,
+     11,
+     8,
+     7,
      4
     ],
     "C": [
-     13,
-     12,
-     7,
-     6,
-     5,
+     10,
      4
     ]
    },
    "hp": 7,
    "sp": 11,
-   "correct": "3♣",
-   "why": "God 6-farve i klør og 7 hp: 3♣ – naturligt."
+   "correct": "3♦",
+   "why": "God 6-farve i ruder og 7 hp: 3♦ – naturligt.",
+   "en": {
+    "why": "A good 6-card suit in diamonds and 7 HCP: 3♦ – natural."
+   }
   },
   {
    "situation": "svar_2_sp",
    "hand": {
     "S": [
-     11,
-     4
+     8,
+     3
     ],
     "H": [
-     9,
-     7
+     11,
+     8
     ],
     "D": [
-     6,
-     5,
-     3,
-     2
-    ],
-    "C": [
      13,
      12,
-     10,
-     6,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 8,
-   "correct": "3♣",
-   "why": "God 5-farve i klør og 6 hp: 3♣ – naturligt."
-  },
-  {
-   "situation": "svar_2_sp",
-   "hand": {
-    "S": [
-     7,
+     11,
+     9,
      5
     ],
-    "H": [
-     4,
-     2
-    ],
-    "D": [
-     10,
-     8,
-     4,
-     3
-    ],
     "C": [
-     14,
-     12,
      7,
      6,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 8,
-   "correct": "3♣",
-   "why": "God 5-farve i klør og 6 hp: 3♣ – naturligt."
-  },
-  {
-   "situation": "svar_2_sp",
-   "hand": {
-    "S": [
-     5,
-     3
-    ],
-    "H": [
-     9,
-     3
-    ],
-    "D": [
-     9,
-     6,
-     5,
-     2
-    ],
-    "C": [
-     14,
-     13,
-     4,
      3,
      2
     ]
    },
    "hp": 7,
    "sp": 9,
-   "correct": "3♣",
-   "why": "God 5-farve i klør og 7 hp: 3♣ – naturligt."
+   "correct": "3♦",
+   "why": "God 5-farve i ruder og 7 hp: 3♦ – naturligt.",
+   "en": {
+    "why": "A good 5-card suit in diamonds and 7 HCP: 3♦ – natural."
+   }
   },
   {
    "situation": "svar_2_sp",
    "hand": {
     "S": [
-     7,
      2
     ],
     "H": [
-     7,
-     6,
-     3
-    ],
-    "D": [
-     8,
-     3
-    ],
-    "C": [
-     13,
      12,
-     11,
-     10,
-     9,
-     5
-    ]
-   },
-   "hp": 6,
-   "sp": 8,
-   "correct": "3♣",
-   "why": "God 6-farve i klør og 6 hp: 3♣ – naturligt."
-  },
-  {
-   "situation": "svar_2_sp",
-   "hand": {
-    "S": [],
-    "H": [
-     8,
-     7,
      6,
-     4
+     3,
+     2
     ],
     "D": [
      13,
      12,
      10,
-     7,
-     2
-    ],
-    "C": [
-     12,
-     8,
-     4,
-     3
-    ]
-   },
-   "hp": 7,
-   "sp": 12,
-   "correct": "3♦",
-   "why": "God 5-farve i ruder og 7 hp: 3♦ – naturligt."
-  },
-  {
-   "situation": "svar_2_sp",
-   "hand": {
-    "S": [],
-    "H": [
-     9,
-     7,
-     5,
-     2
-    ],
-    "D": [
-     13,
-     12,
-     6,
-     4,
      3,
      2
     ],
     "C": [
-     11,
-     6,
-     4
-    ]
-   },
-   "hp": 6,
-   "sp": 11,
-   "correct": "3♦",
-   "why": "God 6-farve i ruder og 6 hp: 3♦ – naturligt."
-  },
-  {
-   "situation": "svar_2_sp",
-   "hand": {
-    "S": [],
-    "H": [
-     8,
-     7,
-     6,
-     2
-    ],
-    "D": [
-     14,
-     12,
-     10,
+     9,
      8,
      4
-    ],
-    "C": [
-     10,
-     7,
-     5,
-     4
-    ]
-   },
-   "hp": 6,
-   "sp": 11,
-   "correct": "3♦",
-   "why": "God 5-farve i ruder og 6 hp: 3♦ – naturligt."
-  },
-  {
-   "situation": "svar_2_sp",
-   "hand": {
-    "S": [
-     2
-    ],
-    "H": [
-     10,
-     8,
-     7,
-     4
-    ],
-    "D": [
-     14,
-     13,
-     10,
-     8,
-     5
-    ],
-    "C": [
-     8,
-     4,
-     2
     ]
    },
    "hp": 7,
    "sp": 10,
    "correct": "3♦",
-   "why": "God 5-farve i ruder og 7 hp: 3♦ – naturligt."
+   "why": "God 5-farve i ruder og 7 hp: 3♦ – naturligt.",
+   "en": {
+    "why": "A good 5-card suit in diamonds and 7 HCP: 3♦ – natural."
+   }
   },
   {
    "situation": "svar_2_sp",
    "hand": {
     "S": [
-     7
-    ],
-    "H": [
-     10,
-     7,
-     6,
-     4
-    ],
-    "D": [
-     13,
-     12,
-     10,
-     8,
-     5,
-     3
-    ],
-    "C": [
-     11,
-     6
-    ]
-   },
-   "hp": 6,
-   "sp": 10,
-   "correct": "3♦",
-   "why": "God 6-farve i ruder og 6 hp: 3♦ – naturligt."
-  },
-  {
-   "situation": "svar_2_sp",
-   "hand": {
-    "S": [
-     7
-    ],
-    "H": [
-     13,
-     12,
      9,
-     7,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     9,
      5,
      4
     ],
     "D": [
-     10,
+     6,
      5
     ],
     "C": [
-     10,
      9,
-     6,
-     4
+     4,
+     3
     ]
    },
-   "hp": 5,
+   "hp": 7,
    "sp": 9,
    "correct": "3♥",
-   "why": "God 6-farve i hjerter og 5 hp: 3♥ – naturligt."
+   "why": "God 6-farve i hjerter og 7 hp: 3♥ – naturligt.",
+   "en": {
+    "why": "A good 6-card suit in hearts and 7 HCP: 3♥ – natural."
+   }
   },
   {
    "situation": "svar_2_sp",
    "hand": {
     "S": [
-     10,
+     5,
      4
     ],
     "H": [
+     14,
      13,
-     12,
-     11,
-     4,
-     3,
-     2
-    ],
-    "D": [
      10,
-     6
-    ],
-    "C": [
-     4,
      3,
      2
-    ]
-   },
-   "hp": 6,
-   "sp": 8,
-   "correct": "3♥",
-   "why": "God 6-farve i hjerter og 6 hp: 3♥ – naturligt."
-  },
-  {
-   "situation": "svar_2_sp",
-   "hand": {
-    "S": [
-     6
-    ],
-    "H": [
-     13,
-     12,
-     9,
-     7,
-     6,
-     3
     ],
     "D": [
-     6,
      5,
      4
     ],
     "C": [
-     9,
+     10,
      7,
-     3
+     5,
+     4
     ]
    },
-   "hp": 5,
-   "sp": 8,
+   "hp": 7,
+   "sp": 9,
    "correct": "3♥",
-   "why": "God 6-farve i hjerter og 5 hp: 3♥ – naturligt."
+   "why": "God 5-farve i hjerter og 7 hp: 3♥ – naturligt.",
+   "en": {
+    "why": "A good 5-card suit in hearts and 7 HCP: 3♥ – natural."
+   }
   },
   {
    "situation": "svar_2_sp",
    "hand": {
     "S": [
-     3
+     10
     ],
     "H": [
      14,
      12,
-     9,
-     8,
+     11,
+     7,
      5,
-     3
+     2
     ],
     "D": [
      10,
+     6,
+     5,
      2
     ],
     "C": [
      8,
-     6,
-     5,
-     2
+     5
     ]
    },
-   "hp": 6,
-   "sp": 10,
+   "hp": 7,
+   "sp": 11,
    "correct": "3♥",
-   "why": "God 6-farve i hjerter og 6 hp: 3♥ – naturligt."
+   "why": "God 6-farve i hjerter og 7 hp: 3♥ – naturligt.",
+   "en": {
+    "why": "A good 6-card suit in hearts and 7 HCP: 3♥ – natural."
+   }
   },
   {
    "situation": "svar_2_sp",
    "hand": {
     "S": [],
     "H": [
-     13,
+     14,
      12,
-     10,
-     7,
-     4,
-     2
+     9,
+     8,
+     6,
+     4
     ],
     "D": [
-     12,
+     8,
      6,
-     4,
      2
     ],
     "C": [
+     6,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 11,
+   "correct": "3♥",
+   "why": "God 6-farve i hjerter og 6 hp: 3♥ – naturligt.",
+   "en": {
+    "why": "A good 6-card suit in hearts and 6 HCP: 3♥ – natural."
+   }
+  },
+  {
+   "situation": "svar_2_sp",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     7,
+     3
+    ],
+    "C": [
+     11,
+     10,
      9,
-     5,
      4
     ]
    },
    "hp": 7,
-   "sp": 12,
+   "sp": 11,
    "correct": "3♥",
-   "why": "God 6-farve i hjerter og 7 hp: 3♥ – naturligt."
+   "why": "God 6-farve i hjerter og 7 hp: 3♥ – naturligt.",
+   "en": {
+    "why": "A good 6-card suit in hearts and 7 HCP: 3♥ – natural."
+   }
   }
  ]
 }

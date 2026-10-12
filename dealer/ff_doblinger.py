@@ -14,29 +14,38 @@ Negativ dobling, støttedobling og redobling – Makker 2 & mig, afsnit 17.
 Antagelser: støttepoint 5/3/1 med 4+ trumf og 3/2/1 med 3; hold = es, K-x, D-x-x eller B-x-x-x;
 »god 6-farve« = to af de tre øverste. Hænder, hvor skemaet ikke giver én melding, er ikke med.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, build_pool, tx
 from .lebensohl import stopper
 from .omvendt_bergen import support_points
 
 ORDER = ['C', 'D', 'H', 'S']
 PAS = ["Modstander", "Pas"]
+C_NEG = tx("4-farve i den uviste major", "Four cards in the unbid major")
+C_AAB = tx("Ja – med 4+ kort og styrke bag indmelderen", "Yes – with 4+ cards and strength behind the overcaller")
+C_STOETTE = tx("Præcis 3 spar – enhver styrke", "Exactly 3 spades – any strength")
+C_REDOBL = tx("10+ hp uden primær støtte", "10+ HCP without primary support")
 BONUS = {
-    "neg": {"q": "Hvad viser en negativ dobling?",
-            "correct": "4-farve i den uviste major",
-            "options": ["4-farve i den uviste major", "Straf i deres farve", "Mindst 13 hp"],
-            "why": "Negativ dobling: 4-farve i uvist major, 6+ hp efter indmelding på 1-trinnet og 8+ på 2-trinnet. Med 5+ spar meldes 1♠."},
-    "aab": {"q": "Må åbner passe makkers negative dobling?",
-            "correct": "Ja – med 4+ kort og styrke bag indmelderen",
-            "options": ["Ja – med 4+ kort og styrke bag indmelderen", "Nej – den er krav til en farve", "Kun med 18+"],
-            "why": "Åbner behandler den negative dobling som en farvemelding, men pas er en reel mulighed med længde bag indmelderen."},
-    "stoette": {"q": "Hvad viser åbners dobling i 1♥ – (pas) – 1♠ – (2♣)?",
-                "correct": "Præcis 3 spar – enhver styrke",
-                "options": ["Præcis 3 spar – enhver styrke", "Straf i klør", "4 spar og tillæg"],
-                "why": "Støttedobling: præcis 3 kort i svarers major. Støtte i farven viser 4 kort. Gælder til og med 2♠."},
-    "redobl": {"q": "Hvad viser redobling efter dobling af makkers åbning?",
-               "correct": "10+ hp uden primær støtte",
-               "options": ["10+ hp uden primær støtte", "Straf af deres dobling", "SOS – flugt"],
-               "why": "Redoblingen viser 10+ hp og benægter støtte. Med 10+ sp og støtte meldes 2NT (Bekkasin/Jordan)."},
+    "neg": {"q": tx("Hvad viser en negativ dobling?", "What does a negative double show?"),
+            "correct": C_NEG,
+            "options": [C_NEG, tx("Straf i deres farve", "Penalty in their suit"), tx("Mindst 13 hp", "At least 13 HCP")],
+            "why": tx("Negativ dobling: 4-farve i uvist major, 6+ hp efter indmelding på 1-trinnet og 8+ på 2-trinnet. Med 5+ spar meldes 1♠.",
+                      "Negative double: four cards in the unbid major, 6+ HCP after a one-level overcall and 8+ at the two level. "
+                      "With 5+ spades, bid 1♠.")},
+    "aab": {"q": tx("Må åbner passe makkers negative dobling?", "May opener pass partner's negative double?"),
+            "correct": C_AAB,
+            "options": [C_AAB, tx("Nej – den er krav til en farve", "No – it forces a suit bid"), tx("Kun med 18+", "Only with 18+")],
+            "why": tx("Åbner behandler den negative dobling som en farvemelding, men pas er en reel mulighed med længde bag indmelderen.",
+                      "Opener treats the negative double like a suit bid, but pass is a real option with length behind the overcaller.")},
+    "stoette": {"q": tx("Hvad viser åbners dobling i 1♥ – (pas) – 1♠ – (2♣)?", "What does opener's double in 1♥ – (pass) – 1♠ – (2♣) show?"),
+                "correct": C_STOETTE,
+                "options": [C_STOETTE, tx("Straf i klør", "Penalty in clubs"), tx("4 spar og tillæg", "4 spades and extra values")],
+                "why": tx("Støttedobling: præcis 3 kort i svarers major. Støtte i farven viser 4 kort. Gælder til og med 2♠.",
+                          "Support double: exactly three cards in responder's major. Raising the suit shows four. Applies up to and including 2♠.")},
+    "redobl": {"q": tx("Hvad viser redobling efter dobling af makkers åbning?", "What does a redouble after a double of partner's opening show?"),
+               "correct": C_REDOBL,
+               "options": [C_REDOBL, tx("Straf af deres dobling", "Penalty of their double"), tx("SOS – flugt", "SOS – rescue")],
+               "why": tx("Redoblingen viser 10+ hp og benægter støtte. Med 10+ sp og støtte meldes 2NT (Bekkasin/Jordan).",
+                         "The redouble shows 10+ HCP and denies support. With 10+ support points and support, bid 2NT (Bekkasin/Jordan).")},
 }
 order = lambda c: (0, 0) if c in ("Pas", "X", "XX") else (int(c[0]), ['♣', '♦', '♥', '♠', 'NT'].index(c[1:]))
 
@@ -52,13 +61,14 @@ def negative(open_, over, need, other_major):
         if L[open_] >= (3 if open_ in ('H', 'S') else 4) or hp > 11:
             return None
         if over == '1H' and L['S'] >= 5:
-            return ("1♠", f"{L['S']} spar og {hp} hp: 1♠ – naturligt.") if hp >= 6 else None
+            return ("1♠", tx(f"{L['S']} spar og {hp} hp: 1♠ – naturligt.", f"{L['S']} spades and {hp} HCP: 1♠ – natural.")) if hp >= 6 else None
         if L[other_major] == 4:
             if hp >= need:
-                return "X", f"4 {SUIT_NAME[other_major]} og {hp} hp: negativ dobling ({need}+)."
-            return "Pas", f"4 {SUIT_NAME[other_major]}, men kun {hp} hp: pas."
+                return "X", tx(f"4 {SUIT_NAME[other_major]} og {hp} hp: negativ dobling ({need}+).",
+                               f"4 {SUIT_NAME_EN[other_major]} and {hp} HCP: negative double ({need}+).")
+            return "Pas", tx(f"4 {SUIT_NAME[other_major]}, men kun {hp} hp: pas.", f"4 {SUIT_NAME_EN[other_major]}, but only {hp} HCP: pass.")
         if L[other_major] < 4 and hp < 6:
-            return "Pas", f"{hp} hp uden 4 {SUIT_NAME[other_major]}: pas."
+            return "Pas", tx(f"{hp} hp uden 4 {SUIT_NAME[other_major]}: pas.", f"{hp} HCP without 4 {SUIT_NAME_EN[other_major]}: pass.")
         return None
     return classify
 
@@ -68,23 +78,24 @@ def after_negative(hand, hp):
         return None
     if L['S'] == 4:
         if hp <= 15:
-            return "1♠", f"4 spar og {hp} hp: 1♠ – billigst (12–15)."
+            return "1♠", tx(f"4 spar og {hp} hp: 1♠ – billigst (12–15).", f"4 spades and {hp} HCP: 1♠ – as cheaply as possible (12–15).")
         if hp <= 18:
-            return "2♠", f"4 spar og {hp} hp: spring til 2♠ (16–18)."
-        return "4♠", f"4 spar og {hp} hp: udgang direkte, 4♠ (19+)."
+            return "2♠", tx(f"4 spar og {hp} hp: spring til 2♠ (16–18).", f"4 spades and {hp} HCP: jump to 2♠ (16–18).")
+        return "4♠", tx(f"4 spar og {hp} hp: udgang direkte, 4♠ (19+).", f"4 spades and {hp} HCP: game directly, 4♠ (19+).")
     if L['S'] > 4:
         return None
     if L['H'] >= 4 and hp <= 14:
-        return "Pas", f"{L['H']} hjerter bag indmelderen og {hp} hp: pas – vi spiller dem hjem."
+        return "Pas", tx(f"{L['H']} hjerter bag indmelderen og {hp} hp: pas – vi spiller dem hjem.",
+                         f"{L['H']} hearts behind the overcaller and {hp} HCP: pass – we defend for penalty.")
     if balanced(L) and stopper(hand, 'H'):
         if hp <= 14:
-            return "1NT", f"{hp} hp jævn med hold i hjerter: 1NT."
+            return "1NT", tx(f"{hp} hp jævn med hold i hjerter: 1NT.", f"{hp} HCP balanced with a heart stopper: 1NT.")
         if 18 <= hp <= 19:
-            return "2NT", f"{hp} hp jævn med hold i hjerter: 2NT med spring."
+            return "2NT", tx(f"{hp} hp jævn med hold i hjerter: 2NT med spring.", f"{hp} HCP balanced with a heart stopper: a jump to 2NT.")
     if L['D'] >= 6 and hp <= 15 and L['H'] < 4:
-        return "2♦", f"{L['D']} ruder og {hp} hp: genmeld farven, 2♦."
+        return "2♦", tx(f"{L['D']} ruder og {hp} hp: genmeld farven, 2♦.", f"{L['D']} diamonds and {hp} HCP: rebid the suit, 2♦.")
     if hp >= 18 and not balanced(L) and L['D'] < 6:
-        return "2♥", f"{hp} hp uden naturlig melding: cuebid 2♥ – krav."
+        return "2♥", tx(f"{hp} hp uden naturlig melding: cuebid 2♥ – krav.", f"{hp} HCP without a natural bid: the cue-bid 2♥ – forcing.")
     return None
 
 def support_double(hand, hp):
@@ -92,18 +103,18 @@ def support_double(hand, hp):
     if L['H'] < 5 or not (12 <= hp <= 18):
         return None
     if L['S'] == 3:
-        return "X", f"Præcis 3 spar: støttedobling – enhver styrke ({hp} hp)."
+        return "X", tx(f"Præcis 3 spar: støttedobling – enhver styrke ({hp} hp).", f"Exactly 3 spades: support double – any strength ({hp} HCP).")
     if L['S'] >= 4:
         if hp <= 15:
-            return "2♠", f"4 spar og {hp} hp: 2♠ (præcis 4 kort, 12–15)."
-        return "3♠", f"4 spar og {hp} hp: 3♠ (16–18)."
+            return "2♠", tx(f"4 spar og {hp} hp: 2♠ (præcis 4 kort, 12–15).", f"4 spades and {hp} HCP: 2♠ (exactly four cards, 12–15).")
+        return "3♠", tx(f"4 spar og {hp} hp: 3♠ (16–18).", f"4 spades and {hp} HCP: 3♠ (16–18).")
     if hp > 14:
         return None
     if L['H'] >= 6:
-        return "2♥", f"Ikke 3 spar, men {L['H']} hjerter: 2♥."
+        return "2♥", tx(f"Ikke 3 spar, men {L['H']} hjerter: 2♥.", f"Not 3 spades, but {L['H']} hearts: 2♥.")
     if L['D'] >= 4 or L['C'] >= 4:
         return None
-    return "Pas", "Ikke 3 spar og minimum: pas – benægter 3 korts støtte."
+    return "Pas", tx("Ikke 3 spar og minimum: pas – benægter 3 korts støtte.", "Not 3 spades and a minimum: pass – denies three-card support.")
 
 def redouble(M):
     sym = SUIT_SYM[M]
@@ -114,24 +125,30 @@ def redouble(M):
         if L[M] >= 3:
             sp = support_points(hand, hp, M)
             if sp < 6:
-                return ("Pas", f"{sp} sp: pas.") if hp < 6 else None
+                return ("Pas", tx(f"{sp} sp: pas.", f"{sp} support points: pass.")) if hp < 6 else None
             if sp >= 10:
-                return "2NT", f"{L[M]} {SUIT_NAME[M]} og {sp} sp: 2NT – støtte med 10+ sp (erstatter cuebiddet)."
+                return "2NT", tx(f"{L[M]} {SUIT_NAME[M]} og {sp} sp: 2NT – støtte med 10+ sp (erstatter cuebiddet).",
+                                 f"{L[M]} {SUIT_NAME_EN[M]} and {sp} support points: 2NT – support with 10+ (replaces the cue-bid).")
             if L[M] == 3:
-                return f"2{sym}", f"3 {SUIT_NAME[M]} og {sp} sp: 2{sym} – konstruktiv støtte."
-            return f"3{sym}", f"{L[M]} {SUIT_NAME[M]} og {sp} sp: 3{sym} – spærrende."
+                return f"2{sym}", tx(f"3 {SUIT_NAME[M]} og {sp} sp: 2{sym} – konstruktiv støtte.",
+                                     f"3 {SUIT_NAME_EN[M]} and {sp} support points: 2{sym} – constructive support.")
+            return f"3{sym}", tx(f"{L[M]} {SUIT_NAME[M]} og {sp} sp: 3{sym} – spærrende.",
+                                 f"{L[M]} {SUIT_NAME_EN[M]} and {sp} support points: 3{sym} – preemptive.")
         if hp < 6:
-            return "Pas", f"{hp} hp uden støtte: pas – åbner får en ny chance."
+            return "Pas", tx(f"{hp} hp uden støtte: pas – åbner får en ny chance.", f"{hp} HCP without support: pass – opener gets another chance.")
         if hp >= 10:
-            return "XX", f"{hp} hp uden støtte: redobling (10+)."
+            return "XX", tx(f"{hp} hp uden støtte: redobling (10+).", f"{hp} HCP without support: redouble (10+).")
         if M == 'H' and L['S'] >= 4:
-            return "1♠", f"{L['S']} spar og {hp} hp: 1♠ (6–9, ikke krav efter dobling)."
+            return "1♠", tx(f"{L['S']} spar og {hp} hp: 1♠ (6–9, ikke krav efter dobling).",
+                            f"{L['S']} spades and {hp} HCP: 1♠ (6–9, non-forcing after the double).")
         six = [s for s in SUITS if s != M and good6(hand[s])]
         if six:
             s = six[0]
-            return f"2{SUIT_SYM[s]}", f"God {L[s]}-farve i {SUIT_NAME[s]} og {hp} hp: 2{SUIT_SYM[s]} – spærrende."
+            return f"2{SUIT_SYM[s]}", tx(f"God {L[s]}-farve i {SUIT_NAME[s]} og {hp} hp: 2{SUIT_SYM[s]} – spærrende.",
+                                         f"A good {L[s]}-card suit in {SUIT_NAME_EN[s]} and {hp} HCP: 2{SUIT_SYM[s]} – preemptive.")
         if balanced(L):
-            return "1NT", f"{hp} hp jævn uden støtte og uden brugbar farve: 1NT."
+            return "1NT", tx(f"{hp} hp jævn uden støtte og uden brugbar farve: 1NT.",
+                             f"{hp} HCP balanced without support and without a useful suit: 1NT.")
         return None
     return classify
 

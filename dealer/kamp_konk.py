@@ -18,7 +18,7 @@ Konkurrencemeldinger – Kampen om kontrakten §2, §4, §6, §7, §8, §9 og §
                Makker 1NT (X) ?: XX 7+ · 0–6 med femfarve: flygt i femfarven · ellers pas
 Antagelser: hold = es, K-x, D-x-x eller B-x-x-x; hænder, hvor dokumentet ikke giver én melding, er ikke med.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, tx
 from .kamp import build_pool as kbuild, we_vul
 from .lebensohl import stopper
 
@@ -39,10 +39,13 @@ def sort_calls(calls):
     return sorted(set(calls), key=K)
 
 # ---------------- GIF ----------------
-B_GIF = {"q": "Hvad låner du ved genåbning i fjerde hånd?",
-         "correct": "3–4 hp af makker – men ikke på jævne hænder",
-         "options": ["3–4 hp af makker – men ikke på jævne hænder", "Intet – samme krav som direkte", "3–4 hp, også på jævne hænder"],
-         "why": "Lånet kompenserer for fordeling, ikke for point. Jævne hænder melder efter rene hp: pas under 11, 1NT 11–14, X 15–18, 2NT 19–21."}
+C_GIF = tx("3–4 hp af makker – men ikke på jævne hænder", "3–4 HCP from partner – but not with balanced hands")
+B_GIF = {"q": tx("Hvad låner du ved genåbning i fjerde hånd?", "What do you borrow when balancing in fourth seat?"),
+         "correct": C_GIF,
+         "options": [C_GIF, tx("Intet – samme krav som direkte", "Nothing – the same requirements as in direct seat"),
+                     tx("3–4 hp, også på jævne hænder", "3–4 HCP, also with balanced hands")],
+         "why": tx("Lånet kompenserer for fordeling, ikke for point. Jævne hænder melder efter rene hp: pas under 11, 1NT 11–14, X 15–18, 2NT 19–21.",
+                   "The loan compensates for shape, not for points. Balanced hands bid on plain HCP: pass below 11, 1NT 11–14, X 15–18, 2NT 19–21.")}
 
 def gif(O):
     def classify(hand, hp, zone):
@@ -52,41 +55,50 @@ def gif(O):
         if balanced(L) and max(L[s] for s in ('H', 'S') if s != O) <= 4:
             if hp < 11:
                 if hp < 8:
-                    return "Pas", f"Jævn hånd med {hp} hp: pas – for lidt til at genåbne."
-                return "Pas", f"Jævn hånd med {hp} hp: pas – ved GIF låner du ikke på jævne hænder (under 11).", AFT
+                    return "Pas", tx(f"Jævn hånd med {hp} hp: pas – for lidt til at genåbne.", f"Balanced hand with {hp} HCP: pass – too little to balance.")
+                return "Pas", tx(f"Jævn hånd med {hp} hp: pas – ved GIF låner du ikke på jævne hænder (under 11).",
+                                 f"Balanced hand with {hp} HCP: pass – when balancing you do not borrow with balanced hands (below 11)."), AFT
             if hp <= 14:
-                return "1NT", f"Jævn hånd med {hp} hp: 1NT (11–14)."
+                return "1NT", tx(f"Jævn hånd med {hp} hp: 1NT (11–14).", f"Balanced hand with {hp} HCP: 1NT (11–14).")
             if hp <= 18:
-                return "X", f"Jævn hånd med {hp} hp: dobling – og sans billigst bagefter (15–18)."
-            return "2NT", f"Jævn hånd med {hp} hp: 2NT (19–21)."
+                return "X", tx(f"Jævn hånd med {hp} hp: dobling – og sans billigst bagefter (15–18).",
+                               f"Balanced hand with {hp} HCP: double – and the cheapest notrump afterwards (15–18).")
+            return "2NT", tx(f"Jævn hånd med {hp} hp: 2NT (19–21).", f"Balanced hand with {hp} HCP: 2NT (19–21).")
         if balanced(L):
             return None
         five = [s for s in ORDER if s != O and L[s] >= 5]
         if hp >= 15:
-            return ("X", f"{hp} hp: dobling – med ny farve bagefter viser du 15+.") if hp <= 18 else None
+            return ("X", tx(f"{hp} hp: dobling – med ny farve bagefter viser du 15+.",
+                            f"{hp} HCP: double – a new suit afterwards shows 15+.")) if hp <= 18 else None
         if five:
             s = max(five, key=lambda x: (L[x], ORDER.index(x)))
             c = cheapest(f"1{SUIT_SYM[O]}", s)
             if L[s] >= 6 and 11 <= hp <= 14:
                 j = f"{int(c[0]) + 1}{c[1:]}"
                 if j[0] == '2':
-                    return j, f"Seksfarve og {hp} hp: spring til {j} – efter to passer er spring konstruktive (11–14)."
+                    return j, tx(f"Seksfarve og {hp} hp: spring til {j} – efter to passer er spring konstruktive (11–14).",
+                                 f"A six-card suit and {hp} HCP: jump to {j} – after two passes, jumps are constructive (11–14).")
                 return None
             if 7 <= hp <= 14:
-                return c, f"{L[s]} {SUIT_NAME[s]} og {hp} hp: {c} – farvemelding i fjerde hånd (ca. 7–14)."
-            return ("Pas", f"Kun {hp} hp: pas.") if hp < 7 else None
+                return c, tx(f"{L[s]} {SUIT_NAME[s]} og {hp} hp: {c} – farvemelding i fjerde hånd (ca. 7–14).",
+                             f"{L[s]} {SUIT_NAME_EN[s]} and {hp} HCP: {c} – a suit bid in fourth seat (about 7–14).")
+            return ("Pas", tx(f"Kun {hp} hp: pas.", f"Only {hp} HCP: pass.")) if hp < 7 else None
         if L[O] <= 2 and hp >= 9:
-            return "X", f"{hp} hp og kort i {SUIT_NAME[O]}: dobling – du låner 3–4 hp af makker (nedre grænse ca. 9)."
+            return "X", tx(f"{hp} hp og kort i {SUIT_NAME[O]}: dobling – du låner 3–4 hp af makker (nedre grænse ca. 9).",
+                           f"{hp} HCP and short in {SUIT_NAME_EN[O]}: double – you borrow 3–4 HCP from partner (lower limit about 9).")
         if hp < 9:
-            return "Pas", f"{hp} hp uden femfarve: pas."
+            return "Pas", tx(f"{hp} hp uden femfarve: pas.", f"{hp} HCP without a five-card suit: pass.")
         return None
     return classify
 
 # ---------------- 20-20 ----------------
-B_2020 = {"q": "Hvor mange stik forpligter I jer til i en delkontraktkamp?",
-          "correct": "Lige så mange som jeres fælles trumf",
-          "options": ["Lige så mange som jeres fælles trumf", "Det afhænger af honnørpointene", "Altid kun to-trinnet"],
-          "why": "Trumfreglen: 8 trumf – 2-trinnet, 9 – 3-trinnet, 10 – 4-trinnet. Og sælg aldrig ud under 2♠, når modparten har fundet tilpasning."}
+C_2020 = tx("Lige så mange som jeres fælles trumf", "As many as your combined trumps")
+B_2020 = {"q": tx("Hvor mange stik forpligter I jer til i en delkontraktkamp?", "How many tricks do you contract for in a part-score battle?"),
+          "correct": C_2020,
+          "options": [C_2020, tx("Det afhænger af honnørpointene", "It depends on the high-card points"), tx("Altid kun to-trinnet", "Always only the two level")],
+          "why": tx("Trumfreglen: 8 trumf – 2-trinnet, 9 – 3-trinnet, 10 – 4-trinnet. Og sælg aldrig ud under 2♠, når modparten har fundet tilpasning.",
+                    "The trump rule: 8 trumps – the two level, 9 – the three level, 10 – the four level. And never sell out below 2♠ "
+                    "when the opponents have found a fit.")}
 
 def balance(O):
     osym = SUIT_SYM[O]
@@ -95,14 +107,17 @@ def balance(O):
         if hp > 11:
             return None
         if L[O] >= 3:
-            return ("Pas", f"{L[O]} {SUIT_NAME[O]}: makker er kort, og du har ingen fordeling at kæmpe med – pas.") if balanced(L) else None
+            return ("Pas", tx(f"{L[O]} {SUIT_NAME[O]}: makker er kort, og du har ingen fordeling at kæmpe med – pas.",
+                              f"{L[O]} {SUIT_NAME_EN[O]}: partner is short, and you have no shape to compete with – pass.")) if balanced(L) else None
         five = [s for s in ORDER if s != O and L[s] >= 5]
         if len(five) == 1:
             s = five[0]
             c = cheapest(f"2{osym}", s)
-            return c, f"{L[s]} {SUIT_NAME[s]} og kort i {SUIT_NAME[O]}: {c} – sælg ikke ud på 2-trinnet, de har fundet tilpasning."
+            return c, tx(f"{L[s]} {SUIT_NAME[s]} og kort i {SUIT_NAME[O]}: {c} – sælg ikke ud på 2-trinnet, de har fundet tilpasning.",
+                         f"{L[s]} {SUIT_NAME_EN[s]} and short in {SUIT_NAME_EN[O]}: {c} – do not sell out at the two level, they have found a fit.")
         if not five and all(L[s] >= 3 for s in ORDER if s != O):
-            return "X", f"Kort i {SUIT_NAME[O]} og plads til alle de andre: dobling – tag makker med på råd. I har omtrent halvdelen af pointene."
+            return "X", tx(f"Kort i {SUIT_NAME[O]} og plads til alle de andre: dobling – tag makker med på råd. I har omtrent halvdelen af pointene.",
+                           f"Short in {SUIT_NAME_EN[O]} with room for all the others: double – consult partner. You have about half the points.")
         return None
     return classify
 
@@ -113,32 +128,41 @@ def compete(hand, hp, zone):
     t = L['S'] + 3
     vul = we_vul(zone)
     zw = "I er i zonen" if vul else "I er uden for zonen"
-    grund = ("3♠", f"{t} trumf: trumfreglen siger 3-trinnet – 3♠.") if t == 9 else ("Pas", "8 trumf: trumfreglen siger 2-trinnet – pas.")
+    zw_en = "you are vulnerable" if vul else "you are not vulnerable"
+    grund = (("3♠", tx(f"{t} trumf: trumfreglen siger 3-trinnet – 3♠.", f"{t} trumps: the trump rule says the three level – 3♠.")) if t == 9
+             else ("Pas", tx("8 trumf: trumfreglen siger 2-trinnet – pas.", "8 trumps: the trump rule says the two level – pass.")))
     if t == 9:
-        klub = ("3♠", f"9 trumf: 3♠ – {zw}, og ni trumf bærer 3-trinnet.")
+        klub = ("3♠", tx(f"9 trumf: 3♠ – {zw}, og ni trumf bærer 3-trinnet.", f"9 trumps: 3♠ – {zw_en}, and nine trumps carry the three level."))
     elif vul:
-        klub = ("Pas", "8 trumf og I er i zonen: pas – i zonen kræves én trumf mere for det sidste trin.")
+        klub = ("Pas", tx("8 trumf og I er i zonen: pas – i zonen kræves én trumf mere for det sidste trin.",
+                          "8 trumps and you are vulnerable: pass – vulnerable, you need one more trump for the last level."))
     else:
-        klub = ("3♠", "8 trumf, men uden for zonen og mod deres tilpasning på 2-trinnet: 3♠ – en lille offermelding (−50 slår −140).")
+        klub = ("3♠", tx("8 trumf, men uden for zonen og mod deres tilpasning på 2-trinnet: 3♠ – en lille offermelding (−50 slår −140).",
+                         "8 trumps, but not vulnerable and against their fit at the two level: 3♠ – a small sacrifice (−50 beats −140)."))
     extra = {"aftale": True} if klub[0] != grund[0] else {}
     if klub[0] != grund[0]:
         extra["grund"] = {"correct": grund[0], "why": grund[1]}
     return klub[0], klub[1], extra
 
 # ---------------- doblinger ----------------
-B_DOB = {"q": "Hvad betyder en dobling, når modparten har meldt og støttet hinanden?",
-         "correct": "Oplysende – tag makker med på råd",
-         "options": ["Oplysende – tag makker med på råd", "Straf", "Viser en stærk jævn hånd"],
-         "why": "Så snart modparten har fundet tilpasning, er alle doblinger i de tidlige runder oplysende – også højt oppe. Grænsen går over 4 i major."}
+C_DOB = tx("Oplysende – tag makker med på råd", "Takeout – consult partner")
+B_DOB = {"q": tx("Hvad betyder en dobling, når modparten har meldt og støttet hinanden?", "What does a double mean when the opponents have bid and raised?"),
+         "correct": C_DOB,
+         "options": [C_DOB, tx("Straf", "Penalty"), tx("Viser en stærk jævn hånd", "Shows a strong balanced hand")],
+         "why": tx("Så snart modparten har fundet tilpasning, er alle doblinger i de tidlige runder oplysende – også højt oppe. Grænsen går over 4 i major.",
+                   "As soon as the opponents have found a fit, all doubles in the early rounds are for takeout – even at a high level. "
+                   "The limit is above four of a major.")}
 
 def od_direct(hand, hp, zone):
     L = lengths_of(hand)
     if L['D'] > 2 or min(L['C'], L['H'], L['S']) < 3 or max(L.values()) >= 5:
         return None
     if 12 <= hp <= 17:
-        return "X", f"{hp} hp og kort i ruder: oplysningsdobling – i anden hånd skal du selv have værdierne (12–17)."
+        return "X", tx(f"{hp} hp og kort i ruder: oplysningsdobling – i anden hånd skal du selv have værdierne (12–17).",
+                       f"{hp} HCP and short in diamonds: takeout double – in second seat you need the values yourself (12–17).")
     if 8 <= hp <= 11:
-        return "Pas", f"Kun {hp} hp: pas – direkte i anden hånd kræver dobling 12–17. (I fjerde hånd efter to passer kunne du låne.)"
+        return "Pas", tx(f"Kun {hp} hp: pas – direkte i anden hånd kræver dobling 12–17. (I fjerde hånd efter to passer kunne du låne.)",
+                         f"Only {hp} HCP: pass – a direct double in second seat needs 12–17. (In fourth seat after two passes you could borrow.)")
     return None
 
 def od_high(hand, hp, zone):
@@ -146,9 +170,10 @@ def od_high(hand, hp, zone):
     if max(L.values()) >= 6 or hp > 17:
         return None
     if L['S'] <= 1 and min(L['C'], L['D'], L['H']) >= 3 and hp >= 12:
-        return "X", f"Kort i spar og plads til de tre andre farver ({hp} hp): dobling er oplysende – de har meldt og støttet."
+        return "X", tx(f"Kort i spar og plads til de tre andre farver ({hp} hp): dobling er oplysende – de har meldt og støttet.",
+                       f"Short in spades with room for the other three suits ({hp} HCP): the double is for takeout – they have bid and raised.")
     if hp <= 9:
-        return "Pas", f"{hp} hp: pas."
+        return "Pas", tx(f"{hp} hp: pas.", f"{hp} HCP: pass.")
     return None
 
 def one_unbid(hand, hp, zone):
@@ -157,45 +182,57 @@ def one_unbid(hand, hp, zone):
         return None
     h = hand['H']
     if L['H'] >= 3 and hp <= 9:
-        return "2♥", f"{L['H']} hjerter og {hp} hp: 2♥ – støt med støtte."
+        return "2♥", tx(f"{L['H']} hjerter og {hp} hp: 2♥ – støt med støtte.", f"{L['H']} hearts and {hp} HCP: 2♥ – raise with support.")
     if L['D'] >= 4 and L['H'] == 2 and h[0] >= 11:
-        return "X", f"Ruder og H-x i hjerter: dobling viser den sidste farve med lidt medløb i makkers farve."
+        return "X", tx(f"Ruder og H-x i hjerter: dobling viser den sidste farve med lidt medløb i makkers farve.",
+                       f"Diamonds and H-x in hearts: the double shows the last suit with some tolerance for partner's suit.")
     if L['D'] >= 6 and L['H'] <= 1:
-        return "2♦", f"{L['D']} ruder uden medløb i hjerter: 2♦ – meld din egen farve naturligt."
+        return "2♦", tx(f"{L['D']} ruder uden medløb i hjerter: 2♦ – meld din egen farve naturligt.",
+                        f"{L['D']} diamonds without tolerance for hearts: 2♦ – bid your own suit naturally.")
     return None
 
 # ---------------- §8 fjenden melder 1NT ind ----------------
-B_UT8 = {"q": "Hvad er den stærkeste melding, når fjenden melder 1NT ind over makkers åbning?",
-         "correct": "Dobling – straf, 9+",
-         "options": ["Dobling – straf, 9+", "Ny farve – krav", "2NT – invit"],
-         "why": "Dobling er straf og den stærkeste melding (9+). Ny farve er den svageste – 2 over 1 gælder ikke her."}
+C_UT8 = tx("Dobling – straf, 9+", "Double – penalty, 9+")
+B_UT8 = {"q": tx("Hvad er den stærkeste melding, når fjenden melder 1NT ind over makkers åbning?",
+                 "What is the strongest bid when the opponents overcall 1NT over partner's opening?"),
+         "correct": C_UT8,
+         "options": [C_UT8, tx("Ny farve – krav", "A new suit – forcing"), tx("2NT – invit", "2NT – invitational")],
+         "why": tx("Dobling er straf og den stærkeste melding (9+). Ny farve er den svageste – 2 over 1 gælder ikke her.",
+                   "Double is for penalty and the strongest bid (9+). A new suit is the weakest – 2 over 1 does not apply here.")}
 
 def ut8(hand, hp, zone):
     L = lengths_of(hand)
     if hp > 15:
         return None
     if hp >= 9:
-        return "X", f"{hp} hp: dobling – straf og den stærkeste melding (9+)."
+        return "X", tx(f"{hp} hp: dobling – straf og den stærkeste melding (9+).", f"{hp} HCP: double – penalty and the strongest bid (9+).")
     short = min(L[s] for s in SUITS if s != 'H')
     if L['H'] >= 4 and short <= 1 and 4 <= hp <= 8:
-        return "3♥", f"{L['H']} trumf og korthed: 3♥ – springstøtten er destruktiv."
+        return "3♥", tx(f"{L['H']} trumf og korthed: 3♥ – springstøtten er destruktiv.", f"{L['H']} trumps and shortness: 3♥ – the jump raise is preemptive.")
     if L['H'] >= 3 and 6 <= hp <= 8:
-        return ("2♥", f"{L['H']} hjerter og {hp} hp: 2♥ – naturlig støtte.") if not (L['H'] >= 4 and short <= 1) else None
+        return ("2♥", tx(f"{L['H']} hjerter og {hp} hp: 2♥ – naturlig støtte.",
+                         f"{L['H']} hearts and {hp} HCP: 2♥ – natural support.")) if not (L['H'] >= 4 and short <= 1) else None
     if L['C'] >= 5 and L['D'] >= 5 and L['H'] <= 1 and hp <= 8:
-        return "2NT", f"{L['C']}-{L['D']} i minorerne: 2NT – spillestærk, men honnørsvag."
+        return "2NT", tx(f"{L['C']}-{L['D']} i minorerne: 2NT – spillestærk, men honnørsvag.",
+                         f"{L['C']}-{L['D']} in the minors: 2NT – strong in playing tricks, but weak in honours.")
     six = [s for s in ('C', 'D', 'S') if L[s] >= 6]
     if six and L['H'] <= 2 and 4 <= hp <= 8:
         s = six[0]
-        return f"2{SUIT_SYM[s]}", f"{L[s]} {SUIT_NAME[s]} og {hp} hp: 2{SUIT_SYM[s]} – svag og ikke krav (ny farve er den svageste melding her)."
+        return f"2{SUIT_SYM[s]}", tx(f"{L[s]} {SUIT_NAME[s]} og {hp} hp: 2{SUIT_SYM[s]} – svag og ikke krav (ny farve er den svageste melding her).",
+                                     f"{L[s]} {SUIT_NAME_EN[s]} and {hp} HCP: 2{SUIT_SYM[s]} – weak and non-forcing (a new suit is the weakest bid here).")
     if L['H'] <= 2 and max(L.values()) <= 4 and hp <= 8:
-        return "Pas", f"{hp} hp uden støtte og uden lang farve: pas."
+        return "Pas", tx(f"{hp} hp uden støtte og uden lang farve: pas.", f"{hp} HCP without support and without a long suit: pass.")
     return None
 
 # ---------------- §9 de melder ind over vores 1NT ----------------
-B_UT9 = {"q": "Gælder Stayman og overføringer, når modparten melder ind over makkers 1NT?",
-         "correct": "Nej – de bortfalder",
-         "options": ["Nej – de bortfalder", "Ja, uændret", "Kun Stayman"],
-         "why": "Stayman og transfers bortfalder efter en indmelding. Ny farve billigst er ønske om at spille, spring er krav, og overmelding i fjendens farve søger hold."}
+C_UT9 = tx("Nej – de bortfalder", "No – they are off")
+B_UT9 = {"q": tx("Gælder Stayman og overføringer, når modparten melder ind over makkers 1NT?",
+                 "Do Stayman and transfers apply when the opponents overcall partner's 1NT?"),
+         "correct": C_UT9,
+         "options": [C_UT9, tx("Ja, uændret", "Yes, unchanged"), tx("Kun Stayman", "Only Stayman")],
+         "why": tx("Stayman og transfers bortfalder efter en indmelding. Ny farve billigst er ønske om at spille, spring er krav, og overmelding i fjendens farve søger hold.",
+                   "Stayman and transfers are off after an overcall. A new suit at the cheapest level is to play, a jump is forcing, "
+                   "and a cue-bid in the opponents' suit asks for a stopper.")}
 
 def ut9(hand, hp, zone):
     L = lengths_of(hand)
@@ -203,33 +240,37 @@ def ut9(hand, hp, zone):
         return None
     if L['S'] >= 5:
         if 5 <= hp <= 9:
-            return "2♠", f"{L['S']} spar og {hp} hp: 2♠ – ønske om at spille."
+            return "2♠", tx(f"{L['S']} spar og {hp} hp: 2♠ – ønske om at spille.", f"{L['S']} spades and {hp} HCP: 2♠ – to play.")
         if hp >= 10:
-            return "3♠", f"{L['S']} spar og {hp} hp: 3♠ – spring er krav, mindst femfarve."
+            return "3♠", tx(f"{L['S']} spar og {hp} hp: 3♠ – spring er krav, mindst femfarve.",
+                            f"{L['S']} spades and {hp} HCP: 3♠ – the jump is forcing, at least a five-card suit.")
         return None
     six = [s for s in ('C', 'D') if L[s] >= 6]
     if six:
         s = six[0]
         c = f"3{SUIT_SYM[s]}"
         if 5 <= hp <= 9:
-            return (c, f"{L[s]} {SUIT_NAME[s]} og {hp} hp: {c} – ønske om at spille.",
-                    {"turnering": {"correct": "2NT", "why": f"Svag hånd med {L[s]} {SUIT_NAME[s]}: 2NT – Lebensohl-relæ til 3♣, så du stopper i {c}."}})
+            return (c, tx(f"{L[s]} {SUIT_NAME[s]} og {hp} hp: {c} – ønske om at spille.", f"{L[s]} {SUIT_NAME_EN[s]} and {hp} HCP: {c} – to play."),
+                    {"turnering": {"correct": "2NT", "why": tx(f"Svag hånd med {L[s]} {SUIT_NAME[s]}: 2NT – Lebensohl-relæ til 3♣, så du stopper i {c}.",
+                                                               f"Weak hand with {L[s]} {SUIT_NAME_EN[s]}: 2NT – the Lebensohl relay to 3♣, so you stop in {c}.")}})
         if hp >= 10:
-            return (c, f"{L[s]} {SUIT_NAME[s]} og {hp} hp: {c} direkte – i Lebensohl er den direkte 3-melding krav.",
+            return (c, tx(f"{L[s]} {SUIT_NAME[s]} og {hp} hp: {c} direkte – i Lebensohl er den direkte 3-melding krav.",
+                          f"{L[s]} {SUIT_NAME_EN[s]} and {hp} HCP: {c} directly – in Lebensohl the direct three-level bid is forcing."),
                     {"only": ["turnering"]})
         return None
     if L['S'] == 4 and L['H'] <= 2 and 6 <= hp <= 9 and max(L.values()) <= 4:
-        return "X", f"4 spar og kort i hjerter ({hp} hp): dobling – oplysende."
+        return "X", tx(f"4 spar og kort i hjerter ({hp} hp): dobling – oplysende.", f"4 spades and short in hearts ({hp} HCP): double – takeout.")
     if balanced(L) and L['S'] <= 3:
         st = stopper(hand, 'H')
         if 8 <= hp <= 9 and st:
-            return "2NT", f"{hp} hp og hold i hjerter: 2NT – invit.", {"only": ["grund", "klub"]}
+            return "2NT", tx(f"{hp} hp og hold i hjerter: 2NT – invit.", f"{hp} HCP and a heart stopper: 2NT – invitational."), {"only": ["grund", "klub"]}
         if hp >= 10:
             if st:
-                return "3NT", f"{hp} hp og hold i hjerter: 3NT."
-            return "3♥", f"{hp} hp uden hold i hjerter: 3♥ – overmelding i fjendens farve, udgangskrav og søger hold."
+                return "3NT", tx(f"{hp} hp og hold i hjerter: 3NT.", f"{hp} HCP and a heart stopper: 3NT.")
+            return "3♥", tx(f"{hp} hp uden hold i hjerter: 3♥ – overmelding i fjendens farve, udgangskrav og søger hold.",
+                            f"{hp} HCP without a heart stopper: 3♥ – a cue-bid in the opponents' suit, game forcing and asking for a stopper.")
     if hp <= 5 and max(L.values()) <= 4:
-        return "Pas", f"{hp} hp: pas."
+        return "Pas", tx(f"{hp} hp: pas.", f"{hp} HCP: pass.")
     return None
 
 def ut9x(hand, hp, zone):
@@ -237,13 +278,15 @@ def ut9x(hand, hp, zone):
     if hp > 12:
         return None
     if hp >= 7:
-        return "XX", f"{hp} hp: redobling – vi har flest point, og flygter de, kan vi strafdoble."
+        return "XX", tx(f"{hp} hp: redobling – vi har flest point, og flygter de, kan vi strafdoble.",
+                        f"{hp} HCP: redouble – we have the majority of the points, and if they run we can double for penalty.")
     five = [s for s in ORDER if L[s] >= 5]
     if len(five) == 1:
         s = five[0]
-        return f"2{SUIT_SYM[s]}", f"{hp} hp og {L[s]} {SUIT_NAME[s]}: 2{SUIT_SYM[s]} – flygt altid i femfarven."
+        return f"2{SUIT_SYM[s]}", tx(f"{hp} hp og {L[s]} {SUIT_NAME[s]}: 2{SUIT_SYM[s]} – flygt altid i femfarven.",
+                                     f"{hp} HCP and {L[s]} {SUIT_NAME_EN[s]}: 2{SUIT_SYM[s]} – always run to the five-card suit.")
     if not five and max(L.values()) <= 4:
-        return "Pas", f"{hp} hp uden femfarve: pas."
+        return "Pas", tx(f"{hp} hp uden femfarve: pas.", f"{hp} HCP without a five-card suit: pass.")
     return None
 
 t = lambda hp, **b: tpl(hp, **{**{s: (1, 4) for s in SUITS}, **b})

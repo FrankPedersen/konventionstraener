@@ -9,7 +9,7 @@ Superaccept (som hos Makker 2 & mig): med 4-korts støtte og maksimum (17 hp) sp
 Antagelser: transfer bruges uanset styrke; minortransfer kun uden 4-farve i major; hænder med 5-5 eller
 5-4 i majorerne er ikke med (kortet siger ikke, om Stayman eller transfer går først).
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, build_pool
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, build_pool, tx
 
 TRANSFER = {'H': "2♦", 'S': "2♥", 'C': "2♠", 'D': "3♣"}
 COMPLETE = {"2♦": "2♥", "2♥": "2♠", "2♠": "3♣", "3♣": "3♦"}
@@ -24,11 +24,13 @@ def responder(hand, hp):
         if len(majors) > 1 or L['H'] >= 4 and L['S'] >= 4:
             return None
         s = majors[0]
-        return TRANSFER[s], f"{L[s]} {SUIT_NAME[s]}: {TRANSFER[s]} er transfer – makker melder {COMPLETE[TRANSFER[s]]}."
+        return TRANSFER[s], tx(f"{L[s]} {SUIT_NAME[s]}: {TRANSFER[s]} er transfer – makker melder {COMPLETE[TRANSFER[s]]}.",
+                               f"{L[s]} {SUIT_NAME_EN[s]}: {TRANSFER[s]} is a transfer – partner bids {COMPLETE[TRANSFER[s]]}.")
     minors = [s for s in ('C', 'D') if L[s] >= 6]
     if len(minors) == 1 and L['H'] < 4 and L['S'] < 4:
         s = minors[0]
-        return TRANSFER[s], f"{L[s]} {SUIT_NAME[s]} og ingen 4-farve i major: {TRANSFER[s]} er minortransfer til {SUIT_NAME[s]}."
+        return TRANSFER[s], tx(f"{L[s]} {SUIT_NAME[s]} og ingen 4-farve i major: {TRANSFER[s]} er minortransfer til {SUIT_NAME[s]}.",
+                               f"{L[s]} {SUIT_NAME_EN[s]} and no four-card major: {TRANSFER[s]} is a minor-suit transfer to {SUIT_NAME_EN[s]}.")
     return None
 
 def opener(call):
@@ -39,21 +41,31 @@ def opener(call):
         done, T = COMPLETE[call], TARGET[call]
         if T in ('H', 'S') and L[T] == 4 and hp == 17:
             jump = f"3{SUIT_SYM[T]}"
-            return jump, f"4 {SUIT_NAME[T]} og maksimum (17 hp): superaccept – spring til {jump}."
+            return jump, tx(f"4 {SUIT_NAME[T]} og maksimum (17 hp): superaccept – spring til {jump}.",
+                            f"4 {SUIT_NAME_EN[T]} and a maximum (17 HCP): super-accept – jump to {jump}.")
         if T in ('H', 'S') and L[T] == 4:
-            return done, f"4 {SUIT_NAME[T]}, men ikke maksimum ({hp} hp): ingen superaccept – du melder {done}."
-        return done, f"Makkers {call} er transfer til {SUIT_NAME[TARGET[call]]}: du melder {done}."
+            return done, tx(f"4 {SUIT_NAME[T]}, men ikke maksimum ({hp} hp): ingen superaccept – du melder {done}.",
+                            f"4 {SUIT_NAME_EN[T]}, but not a maximum ({hp} HCP): no super-accept – you bid {done}.")
+        return done, tx(f"Makkers {call} er transfer til {SUIT_NAME[TARGET[call]]}: du melder {done}.",
+                        f"Partner's {call} is a transfer to {SUIT_NAME_EN[TARGET[call]]}: you bid {done}.")
     return classify
 
+C_SVAR = tx("Minortransfer til klør", "Minor-suit transfer to clubs")
+C_AAB = tx("Melde farven – med 4-korts støtte og 17 hp springe (superaccept)",
+           "Bid the suit – with four-card support and 17 HCP, jump (super-accept)")
 BONUS = {
-    "svar": {"q": "Hvad viser 2♠ over makkers 1NT?",
-             "correct": "Minortransfer til klør",
-             "options": ["Minortransfer til klør", "Naturlig spar", "Stayman"],
-             "why": "2♠ er minortransfer til klør og 3♣ minortransfer til ruder. 2♦/2♥ er transfer til hjerter/spar."},
-    "aabner": {"q": "Hvad skal du gøre efter makkers transfer?",
-               "correct": "Melde farven – med 4-korts støtte og 17 hp springe (superaccept)",
-               "options": ["Melde farven – med 4-korts støtte og 17 hp springe (superaccept)", "Passe", "Melde din egen længste farve"],
-               "why": "Transferen beder åbner melde den viste farve. Kun med 4-korts støtte og maksimum må åbner springe et trin – superaccept. Minortransfer fuldføres altid."},
+    "svar": {"q": tx("Hvad viser 2♠ over makkers 1NT?", "What does 2♠ over partner's 1NT show?"),
+             "correct": C_SVAR,
+             "options": [C_SVAR, tx("Naturlig spar", "Natural spades"), "Stayman"],
+             "why": tx("2♠ er minortransfer til klør og 3♣ minortransfer til ruder. 2♦/2♥ er transfer til hjerter/spar.",
+                       "2♠ is a minor-suit transfer to clubs and 3♣ a minor-suit transfer to diamonds. 2♦/2♥ are transfers to hearts/spades.")},
+    "aabner": {"q": tx("Hvad skal du gøre efter makkers transfer?", "What should you do after partner's transfer?"),
+               "correct": C_AAB,
+               "options": [C_AAB, tx("Passe", "Pass"), tx("Melde din egen længste farve", "Bid your own longest suit")],
+               "why": tx("Transferen beder åbner melde den viste farve. Kun med 4-korts støtte og maksimum må åbner springe et trin – "
+                         "superaccept. Minortransfer fuldføres altid.",
+                         "The transfer asks opener to bid the suit shown. Only with four-card support and a maximum may opener jump a level – "
+                         "a super-accept. A minor-suit transfer is always completed.")},
 }
 
 PAS = ["Modstander", "Pas"]

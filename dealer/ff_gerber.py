@@ -7,18 +7,22 @@ Gerber og sansstigen – Makker 2 & mig, afsnit 8 og 11.
   aab_konge – åbner svarer på 5♣ (kongespørgsmål): 5♦ 0/4 konger · 5♥ 1 · 5♠ 2 · 5NT 3
 Antagelse: jævn = 4-3-3-3, 4-4-3-2 eller 5-3-3-2 med 5-farven i minor.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool
+from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool, tx
 
 PAS = ["Modstander", "Pas"]
+C_SVAR = tx("Invit til 6NT (16–17 hp)", "Invitation to 6NT (16–17 HCP)")
+C_AAB = tx("0 eller 4 esser", "0 or 4 aces")
 BONUS = {
-    "svar": {"q": "Hvad betyder 4NT direkte over makkers 1NT?",
-             "correct": "Invit til 6NT (16–17 hp)",
-             "options": ["Invit til 6NT (16–17 hp)", "Esspørgsmål", "Slutmelding"],
-             "why": "4NT over 1NT er kvantitativ: 16–17 hp, invit til 6NT. Esserne spørges med Gerber 4♣."},
-    "aab": {"q": "Hvad viser 4♦ som svar på Gerber?",
-            "correct": "0 eller 4 esser",
-            "options": ["0 eller 4 esser", "1 es", "Ruderfarve"],
-            "why": "Gerber: 4♦ 0/4 · 4♥ 1 · 4♠ 2 · 4NT 3. Efter 5♣ (konger) samme trin ét niveau højere."},
+    "svar": {"q": tx("Hvad betyder 4NT direkte over makkers 1NT?", "What does a direct 4NT over partner's 1NT mean?"),
+             "correct": C_SVAR,
+             "options": [C_SVAR, tx("Esspørgsmål", "Ace-asking"), tx("Slutmelding", "To play")],
+             "why": tx("4NT over 1NT er kvantitativ: 16–17 hp, invit til 6NT. Esserne spørges med Gerber 4♣.",
+                       "4NT over 1NT is quantitative: 16–17 HCP, inviting 6NT. Aces are asked with Gerber 4♣.")},
+    "aab": {"q": tx("Hvad viser 4♦ som svar på Gerber?", "What does 4♦ show in response to Gerber?"),
+            "correct": C_AAB,
+            "options": [C_AAB, tx("1 es", "1 ace"), tx("Ruderfarve", "A diamond suit")],
+            "why": tx("Gerber: 4♦ 0/4 · 4♥ 1 · 4♠ 2 · 4NT 3. Efter 5♣ (konger) samme trin ét niveau højere.",
+                      "Gerber: 4♦ 0/4 · 4♥ 1 · 4♠ 2 · 4NT 3. After 5♣ (kings), the same steps one level higher.")},
 }
 STEPS = {0: 0, 1: 1, 2: 2, 3: 3, 4: 0}
 
@@ -29,10 +33,12 @@ def ladder(hand, hp):
     L = lengths_of(hand)
     if not balanced(L) or L['H'] >= 4 or L['S'] >= 4:
         return None
-    for top, call, txt in ((8, "Pas", "0–8"), (10, "2NT", "9–10, invit"), (15, "3NT", "11–15"), (17, "4NT", "16–17, invit til 6NT"),
-                           (19, "6NT", "18–19"), (21, "5NT", "20–21, invit til 7NT"), (40, "7NT", "22+")):
+    for top, call, txt, txt_en in ((8, "Pas", "0–8", "0–8"), (10, "2NT", "9–10, invit", "9–10, invitational"), (15, "3NT", "11–15", "11–15"),
+                                   (17, "4NT", "16–17, invit til 6NT", "16–17, inviting 6NT"), (19, "6NT", "18–19", "18–19"),
+                                   (21, "5NT", "20–21, invit til 7NT", "20–21, inviting 7NT"), (40, "7NT", "22+", "22+")):
         if hp <= top:
-            return call, f"Jævn hånd uden 4-farve i major og {hp} hp: {call} ({txt})."
+            return call, tx(f"Jævn hånd uden 4-farve i major og {hp} hp: {call} ({txt}).",
+                            f"Balanced hand without a four-card major and {hp} HCP: {'Pass' if call == 'Pas' else call} ({txt_en}).")
 
 def answer(rank, level):
     word = "esser" if rank == 14 else "konger"
@@ -42,7 +48,9 @@ def answer(rank, level):
             return None
         n = sum(1 for s in SUITS if rank in hand[s])
         call = calls[STEPS[n]]
-        return call, f"{n} {word}: {call} ({['0 eller 4', '1', '2', '3'][STEPS[n]]})."
+        word_en = ("ace" if rank == 14 else "king") + ("" if n == 1 else "s")
+        return call, tx(f"{n} {word}: {call} ({['0 eller 4', '1', '2', '3'][STEPS[n]]}).",
+                        f"{n} {word_en}: {call} ({['0 or 4', '1', '2', '3'][STEPS[n]]}).")
     return classify
 
 SITUATIONS = {

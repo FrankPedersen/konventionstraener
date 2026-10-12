@@ -12,20 +12,24 @@ Antagelser: »god 5-farve« = to af de tre øverste honnører; hænder med 6+ i 
 5-5 uden for minorerne og 15+ jævne hænder er ikke med; svarer har 0–11 hp (har passet), højst 3 i
 deres farve og mindst én 4-farve; svarer med hold i deres farve og 9+ hp (sans) er ikke med.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, build_pool, tx
 from .lebensohl import stopper
 
 ORDER = ['C', 'D', 'H', 'S']
 PAS = ["Modstander", "Pas"]
+C_GEN = tx("Ca. 3 hp", "About 3 HCP")
+C_SVAR = tx("Træk 3 hp fra – makker har lånt dem", "Subtract 3 HCP – partner has borrowed them")
 BONUS = {
-    "gen": {"q": "Hvor mange point lånes af makker ved genåbning?",
-            "correct": "Ca. 3 hp",
-            "options": ["Ca. 3 hp", "Ingen – samme krav som direkte", "Ca. 6 hp"],
-            "why": "Makker kan sidde med 8–11 hp uden en brugbar melding. Genåbneren låner ca. 3 hp – derfor dobling fra 8 hp og 1NT 11–14."},
-    "svar": {"q": "Hvordan vurderer du hånden efter makkers genåbning?",
-             "correct": "Træk 3 hp fra – makker har lånt dem",
-             "options": ["Træk 3 hp fra – makker har lånt dem", "Læg 3 hp til", "Som efter en direkte dobling"],
-             "why": "Genåbning sker på lånte point. Svar som om du har 3 hp færre – ellers straffer du makker for at genåbne."},
+    "gen": {"q": tx("Hvor mange point lånes af makker ved genåbning?", "How many points are borrowed from partner when balancing?"),
+            "correct": C_GEN,
+            "options": [C_GEN, tx("Ingen – samme krav som direkte", "None – the same requirements as in direct seat"), tx("Ca. 6 hp", "About 6 HCP")],
+            "why": tx("Makker kan sidde med 8–11 hp uden en brugbar melding. Genåbneren låner ca. 3 hp – derfor dobling fra 8 hp og 1NT 11–14.",
+                      "Partner may hold 8–11 HCP without a useful bid. The balancer borrows about 3 HCP – hence a double from 8 HCP and 1NT 11–14.")},
+    "svar": {"q": tx("Hvordan vurderer du hånden efter makkers genåbning?", "How do you value your hand after partner balances?"),
+             "correct": C_SVAR,
+             "options": [C_SVAR, tx("Læg 3 hp til", "Add 3 HCP"), tx("Som efter en direkte dobling", "As after a direct double")],
+             "why": tx("Genåbning sker på lånte point. Svar som om du har 3 hp færre – ellers straffer du makker for at genåbne.",
+                       "Balancing is done on borrowed points. Respond as if you had 3 HCP fewer – otherwise you punish partner for balancing.")},
 }
 
 def good5(cards):
@@ -44,23 +48,28 @@ def reopen(O):
         if max(L.values()) >= 6 or hp > 18:
             return None
         if L['C'] >= 5 and L['D'] >= 5:
-            return ("2NT", f"5-5 i minorerne og {hp} hp: 2NT – usædvanlig, som i direkte position.") if 8 <= hp <= 14 else None
+            return ("2NT", tx(f"5-5 i minorerne og {hp} hp: 2NT – usædvanlig, som i direkte position.",
+                              f"5-5 in the minors and {hp} HCP: 2NT – unusual, as in direct seat.")) if 8 <= hp <= 14 else None
         if sum(1 for s in SUITS if L[s] >= 5) >= 2:
             return None
         if hp >= 15:
-            return None if balanced(L) else (f"2{osym}", f"{hp} hp: cuebid 2{osym} – den stærke hånd, krav (15+).")
+            return None if balanced(L) else (f"2{osym}", tx(f"{hp} hp: cuebid 2{osym} – den stærke hånd, krav (15+).",
+                                                            f"{hp} HCP: the cue-bid 2{osym} – the strong hand, forcing (15+)."))
         if 11 <= hp <= 14 and balanced(L) and stopper(hand, O):
-            return "1NT", f"{hp} hp jævn med hold i {SUIT_NAME[O]}: 1NT (11–14 i genåbning)."
+            return "1NT", tx(f"{hp} hp jævn med hold i {SUIT_NAME[O]}: 1NT (11–14 i genåbning).",
+                             f"{hp} HCP balanced with a stopper in {SUIT_NAME_EN[O]}: 1NT (11–14 when balancing).")
         five = [s for s in SUITS if s != O and good5(hand[s])]
         if five and 6 <= hp <= 13:
             c = cheapest(O, five[0])
-            return c, f"God 5-farve i {SUIT_NAME[five[0]]} og {hp} hp: {c} – genåbning i farve (6–13)."
+            return c, tx(f"God 5-farve i {SUIT_NAME[five[0]]} og {hp} hp: {c} – genåbning i farve (6–13).",
+                         f"A good five-card suit in {SUIT_NAME_EN[five[0]]} and {hp} HCP: {c} – balancing in a suit (6–13).")
         if hp >= 8 and L[O] <= 2:
-            return "X", f"{hp} hp og højst 2 {SUIT_NAME[O]}: dobling – hovedmeldingen i genåbning (8+)."
+            return "X", tx(f"{hp} hp og højst 2 {SUIT_NAME[O]}: dobling – hovedmeldingen i genåbning (8+).",
+                           f"{hp} HCP and at most 2 {SUIT_NAME_EN[O]}: double – the main balancing action (8+).")
         if hp < 8:
-            return "Pas", f"{hp} hp uden god 5-farve: pas."
+            return "Pas", tx(f"{hp} hp uden god 5-farve: pas.", f"{hp} HCP without a good five-card suit: pass.")
         if L[O] >= 3:
-            return "Pas", f"{L[O]} {SUIT_NAME[O]}: længde i deres farve – pas."
+            return "Pas", tx(f"{L[O]} {SUIT_NAME[O]}: længde i deres farve – pas.", f"{L[O]} {SUIT_NAME_EN[O]}: length in their suit – pass.")
         return None
     return classify
 
@@ -81,9 +90,11 @@ def advance(O):
         c = cheapest(O, s)
         dev = hp - 3
         if dev <= 6:
-            return c, f"{hp} hp – devalueret {max(dev, 0)}: {L[s]} {SUIT_NAME[s]} billigst, {c}."
+            return c, tx(f"{hp} hp – devalueret {max(dev, 0)}: {L[s]} {SUIT_NAME[s]} billigst, {c}.",
+                         f"{hp} HCP – devalued to {max(dev, 0)}: {L[s]} {SUIT_NAME_EN[s]} as cheaply as possible, {c}.")
         j = f"{int(c[0]) + 1}{c[1:]}"
-        return j, f"{hp} hp – devalueret {dev} (7–10): spring til {j} i {SUIT_NAME[s]}."
+        return j, tx(f"{hp} hp – devalueret {dev} (7–10): spring til {j} i {SUIT_NAME[s]}.",
+                     f"{hp} HCP – devalued to {dev} (7–10): jump to {j} in {SUIT_NAME_EN[s]}.")
     return classify
 
 SITUATIONS, CLASSIFIERS, SAMPLERS, PER_CALL = {}, {}, {}, {}

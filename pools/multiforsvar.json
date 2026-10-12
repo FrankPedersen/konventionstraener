@@ -29,6 +29,18 @@
      "Begge majorer, 10–16 hp"
     ],
     "why": "Doblingen er forslag til straf med en jævn hånd af mindst samme styrke som åbningen. 2♣, 2♥/2♠ og 2NT viser 10–16 hp, 2♦ ca. 6–10."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does the double of the opponents' 1NT show?",
+     "correct": "15–17+ HCP balanced – suggests penalty",
+     "options": [
+      "15–17+ HCP balanced – suggests penalty",
+      "At least 15 HCP, any shape – semi-forcing",
+      "Both majors, 10–16 HCP"
+     ],
+     "why": "The double suggests penalty with a balanced hand at least as strong as the opening. 2♣, 2♥/2♠ and 2NT show 10–16 HCP, 2♦ about 6–10."
+    }
    }
   },
   "gen_2kl": {
@@ -70,6 +82,18 @@
      "Major + minor 5–4, 10–16 hp"
     ],
     "why": "2♣ viser begge majorer, 5–4. Svarer ved ikke, hvilken der er femfarven – derfor findes 2♦ som spørgsmål."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does partner's 2♣ show?",
+     "correct": "Both majors 5–4, 10–16 HCP",
+     "options": [
+      "Both majors 5–4, 10–16 HCP",
+      "6+ cards in a major, about 6–10 HCP",
+      "Major + minor 5–4, 10–16 HCP"
+     ],
+     "why": "2♣ shows both majors, 5–4. The advancer does not know which is the five-card suit – hence 2♦ as an ask."
+    }
    }
   },
   "gen_2hj": {
@@ -111,6 +135,18 @@
      "Begge majorer 5–4"
     ],
     "why": "2♥/2♠ viser femfarven i den meldte major og en 4–5-farve i en minor, som 2NT kan spørge efter."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does 2♥ show in the Multi defence?",
+     "correct": "5 hearts + 4–5 cards in an unknown minor, 10–16 HCP",
+     "options": [
+      "5 hearts + 4–5 cards in an unknown minor, 10–16 HCP",
+      "6+ hearts, a weak hand",
+      "Both majors 5–4"
+     ],
+     "why": "2♥/2♠ shows five cards in the major bid and a 4–5-card minor, which 2NT can ask for."
+    }
    }
   },
   "gen_2sp": {
@@ -152,6 +188,18 @@
      "Begge majorer 5–4"
     ],
     "why": "2♥/2♠ viser femfarven i den meldte major og en 4–5-farve i en minor, som 2NT kan spørge efter."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does 2♠ show in the Multi defence?",
+     "correct": "5 spades + 4–5 cards in an unknown minor, 10–16 HCP",
+     "options": [
+      "5 spades + 4–5 cards in an unknown minor, 10–16 HCP",
+      "6+ spades, a weak hand",
+      "Both majors 5–4"
+     ],
+     "why": "2♥/2♠ shows five cards in the major bid and a 4–5-card minor, which 2NT can ask for."
+    }
    }
   },
   "gen_2ru_2hj": {
@@ -193,6 +241,18 @@
      "Naturlig ruderfarve"
     ],
     "why": "2♦ er multi: en 6-farve i en ukendt major og svagere end de øvrige indmeldinger, ca. 6–10 hp."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does 2♦ show in the Multi defence?",
+     "correct": "6+ cards in a major, about 6–10 HCP",
+     "options": [
+      "6+ cards in a major, about 6–10 HCP",
+      "Both majors 5–4, 10–16 HCP",
+      "A natural diamond suit"
+     ],
+     "why": "2♦ is multi: a six-card suit in an unknown major, weaker than the other overcalls, about 6–10 HCP."
+    }
    }
   },
   "gen_2ru_4hj": {
@@ -234,6 +294,18 @@
      "Naturlig ruderfarve"
     ],
     "why": "2♦ er multi: en 6-farve i en ukendt major og svagere end de øvrige indmeldinger, ca. 6–10 hp."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does 2♦ show in the Multi defence?",
+     "correct": "6+ cards in a major, about 6–10 HCP",
+     "options": [
+      "6+ cards in a major, about 6–10 HCP",
+      "Both majors 5–4, 10–16 HCP",
+      "A natural diamond suit"
+     ],
+     "why": "2♦ is multi: a six-card suit in an unknown major, weaker than the other overcalls, about 6–10 HCP."
+    }
    }
   },
   "gen_plauken": {
@@ -276,6 +348,18 @@
      "Spørger efter minoren"
     ],
     "why": "2NT er stærkt relæ: udgangsinteresse, uanset hvilken major multi-melderen har. 3♣ viser god multi, 3♦/3♥ dårlig multi som transfer."
+   },
+   "en": {
+    "bonus": {
+     "q": "What is 2NT after partner's 2♦ (Plauken)?",
+     "correct": "A strong relay with game interest",
+     "options": [
+      "A strong relay with game interest",
+      "Natural, 11–12 HCP",
+      "Asks for the minor"
+     ],
+     "why": "2NT is a strong relay: game interest whichever major the multi bidder holds. 3♣ shows a good multi, 3♦/3♥ a poor multi as a transfer."
+    }
    }
   },
   "gen_plauken_relae": {
@@ -333,6 +417,18 @@
      "Spørger efter minoren"
     ],
     "why": "2NT er stærkt relæ: udgangsinteresse, uanset hvilken major multi-melderen har. 3♣ viser god multi, 3♦/3♥ dårlig multi som transfer."
+   },
+   "en": {
+    "bonus": {
+     "q": "What is 2NT after partner's 2♦ (Plauken)?",
+     "correct": "A strong relay with game interest",
+     "options": [
+      "A strong relay with game interest",
+      "Natural, 11–12 HCP",
+      "Asks for the minor"
+     ],
+     "why": "2NT is a strong relay: game interest whichever major the multi bidder holds. 3♣ shows a good multi, 3♦/3♥ a poor multi as a transfer."
+    }
    }
   },
   "svar_2kl": {
@@ -369,6 +465,18 @@
      "Major + minor 5–4, 10–16 hp"
     ],
     "why": "2♣ viser begge majorer, 5–4. Svarer ved ikke, hvilken der er femfarven – derfor findes 2♦ som spørgsmål."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does partner's 2♣ show?",
+     "correct": "Both majors 5–4, 10–16 HCP",
+     "options": [
+      "Both majors 5–4, 10–16 HCP",
+      "6+ cards in a major, about 6–10 HCP",
+      "Major + minor 5–4, 10–16 HCP"
+     ],
+     "why": "2♣ shows both majors, 5–4. The advancer does not know which is the five-card suit – hence 2♦ as an ask."
+    }
    }
   },
   "svar_2ru": {
@@ -406,6 +514,18 @@
      "Naturlig ruderfarve"
     ],
     "why": "2♦ er multi: en 6-farve i en ukendt major og svagere end de øvrige indmeldinger, ca. 6–10 hp."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does 2♦ show in the Multi defence?",
+     "correct": "6+ cards in a major, about 6–10 HCP",
+     "options": [
+      "6+ cards in a major, about 6–10 HCP",
+      "Both majors 5–4, 10–16 HCP",
+      "A natural diamond suit"
+     ],
+     "why": "2♦ is multi: a six-card suit in an unknown major, weaker than the other overcalls, about 6–10 HCP."
+    }
    }
   },
   "svar_2hj": {
@@ -440,6 +560,18 @@
      "Begge majorer 5–4"
     ],
     "why": "2♥/2♠ viser femfarven i den meldte major og en 4–5-farve i en minor, som 2NT kan spørge efter."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does 2♥ show in the Multi defence?",
+     "correct": "5 hearts + 4–5 cards in an unknown minor, 10–16 HCP",
+     "options": [
+      "5 hearts + 4–5 cards in an unknown minor, 10–16 HCP",
+      "6+ hearts, a weak hand",
+      "Both majors 5–4"
+     ],
+     "why": "2♥/2♠ shows five cards in the major bid and a 4–5-card minor, which 2NT can ask for."
+    }
    }
   },
   "svar_2sp": {
@@ -474,6 +606,18 @@
      "Begge majorer 5–4"
     ],
     "why": "2♥/2♠ viser femfarven i den meldte major og en 4–5-farve i en minor, som 2NT kan spørge efter."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does 2♠ show in the Multi defence?",
+     "correct": "5 spades + 4–5 cards in an unknown minor, 10–16 HCP",
+     "options": [
+      "5 spades + 4–5 cards in an unknown minor, 10–16 HCP",
+      "6+ spades, a weak hand",
+      "Both majors 5–4"
+     ],
+     "why": "2♥/2♠ shows five cards in the major bid and a 4–5-card minor, which 2NT can ask for."
+    }
    }
   },
   "svar_2nt": {
@@ -507,6 +651,18 @@
      "Begge majorer 5–4"
     ],
     "why": "2NT er usædvanlig 2NT: begge minorer, 10–16 hp."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does 2NT show in the Multi defence?",
+     "correct": "Both minors, 10–16 HCP",
+     "options": [
+      "Both minors, 10–16 HCP",
+      "A balanced hand, 15–17 HCP",
+      "Both majors 5–4"
+     ],
+     "why": "2NT is the Unusual 2NT: both minors, 10–16 HCP."
+    }
    }
   },
   "svar_dobling": {
@@ -547,6 +703,19 @@
      "Begge majorer, 10–16 hp"
     ],
     "why": "Doblingen er forslag til straf. Derfor er strafpas med 8+ hp oftest det rigtige svar; med 0–7 hp scrambles der."
+   },
+   "en": {
+    "note": "1NT = 12–14 HCP (weak notrump)",
+    "bonus": {
+     "q": "What does partner's double of 1NT show?",
+     "correct": "15–17+ HCP balanced – suggests penalty",
+     "options": [
+      "15–17+ HCP balanced – suggests penalty",
+      "At least 15 HCP, any shape – semi-forcing",
+      "Both majors, 10–16 HCP"
+     ],
+     "why": "The double suggests penalty. So passing for penalty with 8+ HCP is usually right; with 0–7 HCP you scramble."
+    }
    }
   }
  },
@@ -555,816 +724,826 @@
    "situation": "indmelding",
    "hand": {
     "S": [
-     14,
-     12,
-     3
-    ],
-    "H": [
-     13,
-     10
-    ],
-    "D": [
-     14,
-     10,
-     6,
-     4
-    ],
-    "C": [
-     14,
-     10,
-     8,
-     5
-    ]
-   },
-   "hp": 17,
-   "sp": 18,
-   "correct": "X",
-   "why": "17 hp og jævn hånd: D er forslag til straf – mindst samme styrke som sansåbneren."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     14,
-     10,
-     5
-    ],
-    "H": [
-     12,
-     2
-    ],
-    "D": [
-     12,
-     11,
-     9,
-     7,
-     5
-    ],
-    "C": [
-     14,
-     12,
-     2
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "X",
-   "why": "15 hp og jævn hånd: D er forslag til straf – mindst samme styrke som sansåbneren."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     10,
-     5
-    ],
-    "H": [
-     14,
-     9,
-     2
-    ],
-    "D": [
-     14,
-     13,
-     10,
-     3,
-     2
-    ],
-    "C": [
-     14,
-     7,
-     5
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "X",
-   "why": "15 hp og jævn hånd: D er forslag til straf – mindst samme styrke som sansåbneren."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     14,
-     12,
-     7,
      5,
      2
     ],
     "H": [
-     14,
+     12,
      9,
      6
     ],
     "D": [
      14,
      12,
-     11
-    ],
-    "C": [
-     5,
-     3
-    ]
-   },
-   "hp": 17,
-   "sp": 18,
-   "correct": "X",
-   "why": "17 hp og jævn hånd: D er forslag til straf – mindst samme styrke som sansåbneren."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     12,
      11,
-     10,
-     9,
-     5
-    ],
-    "H": [
-     12,
+     7,
      2
     ],
-    "D": [
-     14,
-     11,
-     8
-    ],
     "C": [
-     13,
+     14,
      12,
-     5
+     6
     ]
    },
    "hp": 15,
    "sp": 16,
    "correct": "X",
-   "why": "15 hp og jævn hånd: D er forslag til straf – mindst samme styrke som sansåbneren."
+   "why": "15 hp og jævn hånd: D er forslag til straf – mindst samme styrke som sansåbneren.",
+   "en": {
+    "why": "15 HCP and a balanced hand: X suggests penalty – at least the same strength as the notrump opener."
+   }
   },
   {
    "situation": "indmelding",
    "hand": {
     "S": [
      13,
-     7,
-     3,
-     2
+     12,
+     10
     ],
     "H": [
-     11,
+     13,
+     12,
      5,
-     4
+     4,
+     3
     ],
     "D": [
      14,
+     12,
      9
     ],
     "C": [
+     6,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "X",
+   "why": "16 hp og jævn hånd: D er forslag til straf – mindst samme styrke som sansåbneren.",
+   "en": {
+    "why": "16 HCP and a balanced hand: X suggests penalty – at least the same strength as the notrump opener."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     13,
+     8,
+     7
+    ],
+    "H": [
      14,
      13,
      9,
-     8
+     8,
+     6
+    ],
+    "D": [
+     14,
+     10,
+     9
+    ],
+    "C": [
+     12,
+     10
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "X",
+   "why": "16 hp og jævn hånd: D er forslag til straf – mindst samme styrke som sansåbneren.",
+   "en": {
+    "why": "16 HCP and a balanced hand: X suggests penalty – at least the same strength as the notrump opener."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     13,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     8,
+     3
+    ],
+    "D": [
+     14,
+     9,
+     7,
+     5,
+     4
+    ],
+    "C": [
+     13,
+     11
     ]
    },
    "hp": 15,
    "sp": 16,
    "correct": "X",
-   "why": "15 hp og jævn hånd: D er forslag til straf – mindst samme styrke som sansåbneren."
+   "why": "15 hp og jævn hånd: D er forslag til straf – mindst samme styrke som sansåbneren.",
+   "en": {
+    "why": "15 HCP and a balanced hand: X suggests penalty – at least the same strength as the notrump opener."
+   }
   },
   {
    "situation": "indmelding",
    "hand": {
     "S": [
+     13,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     6
+    ],
+    "C": [
+     14,
+     9
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "X",
+   "why": "17 hp og jævn hånd: D er forslag til straf – mindst samme styrke som sansåbneren.",
+   "en": {
+    "why": "17 HCP and a balanced hand: X suggests penalty – at least the same strength as the notrump opener."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     14,
      11,
-     10,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     9,
      7,
+     4
+    ],
+    "D": [
+     12,
+     5
+    ],
+    "C": [
+     14,
+     10,
+     6
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "correct": "X",
+   "why": "18 hp og jævn hånd: D er forslag til straf – mindst samme styrke som sansåbneren.",
+   "en": {
+    "why": "18 HCP and a balanced hand: X suggests penalty – at least the same strength as the notrump opener."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     6,
+     5,
      3
     ],
     "H": [
-     12,
-     10
-    ],
-    "D": [
+     14,
      13,
-     11,
-     7,
-     3
-    ],
-    "C": [
-     10,
-     5,
-     4
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "Pas",
-   "why": "7 hp og ingen fordeling, der passer til en indmelding – og ikke en stærk jævn hånd til D."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     11,
-     9,
      3,
      2
     ],
-    "H": [
-     13,
-     9,
-     5,
-     4
-    ],
-    "D": [
-     14,
-     8,
-     6
-    ],
-    "C": [
-     7,
-     4
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "Pas",
-   "why": "8 hp og ingen fordeling, der passer til en indmelding – og ikke en stærk jævn hånd til D."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     12
-    ],
-    "H": [
-     13,
-     9,
-     8,
-     4
-    ],
-    "D": [
-     11,
-     9,
-     8,
-     3
-    ],
-    "C": [
-     12,
-     10,
-     9,
-     5
-    ]
-   },
-   "hp": 8,
-   "sp": 11,
-   "correct": "Pas",
-   "why": "8 hp og ingen fordeling, der passer til en indmelding – og ikke en stærk jævn hånd til D."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     7,
-     5,
-     4
-    ],
-    "H": [
-     6
-    ],
     "D": [
      10,
-     6,
-     4,
+     9,
+     5,
      2
     ],
     "C": [
      13,
-     11,
-     8,
-     5,
-     3
+     9
     ]
    },
-   "hp": 4,
-   "sp": 7,
+   "hp": 10,
+   "sp": 11,
    "correct": "Pas",
-   "why": "4 hp og ingen fordeling, der passer til en indmelding – og ikke en stærk jævn hånd til D."
+   "why": "10 hp og ingen fordeling, der passer til en indmelding – og ikke en stærk jævn hånd til D.",
+   "en": {
+    "why": "10 HCP and no shape that suits an overcall – and not a strong balanced hand for X."
+   }
   },
   {
    "situation": "indmelding",
    "hand": {
     "S": [
-     12,
+     9,
      5
     ],
     "H": [
      11,
-     10,
      8,
-     7
+     3
     ],
     "D": [
      14,
-     9,
-     4
+     13,
+     12,
+     11,
+     3
     ],
     "C": [
-     14,
      13,
-     10,
-     5
+     8,
+     4
     ]
    },
    "hp": 14,
    "sp": 15,
    "correct": "Pas",
-   "why": "14 hp og ingen fordeling, der passer til en indmelding – og ikke en stærk jævn hånd til D."
+   "why": "14 hp og ingen fordeling, der passer til en indmelding – og ikke en stærk jævn hånd til D.",
+   "en": {
+    "why": "14 HCP and no shape that suits an overcall – and not a strong balanced hand for X."
+   }
   },
   {
    "situation": "indmelding",
    "hand": {
     "S": [
      14,
-     11,
-     6,
-     5
+     10,
+     9
     ],
     "H": [
+     12,
+     5,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     8
+    ],
+    "C": [
+     14,
      10,
-     6,
-     2
+     8,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "13 hp og ingen fordeling, der passer til en indmelding – og ikke en stærk jævn hånd til D.",
+   "en": {
+    "why": "13 HCP and no shape that suits an overcall – and not a strong balanced hand for X."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     13,
+     8,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     7,
+     5,
+     4
     ],
     "D": [
      13,
-     9,
-     8,
-     7
+     11,
+     5,
+     3
     ],
     "C": [
-     9,
-     8
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "Pas",
+   "why": "9 hp og ingen fordeling, der passer til en indmelding – og ikke en stærk jævn hånd til D.",
+   "en": {
+    "why": "9 HCP and no shape that suits an overcall – and not a strong balanced hand for X."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     13,
+     8,
+     5,
+     4
+    ],
+    "H": [
+     11,
+     4
+    ],
+    "D": [
+     7,
+     6,
+     5
+    ],
+    "C": [
+     13,
+     11,
+     6,
+     3
     ]
    },
    "hp": 8,
    "sp": 9,
    "correct": "Pas",
-   "why": "8 hp og ingen fordeling, der passer til en indmelding – og ikke en stærk jævn hånd til D."
+   "why": "8 hp og ingen fordeling, der passer til en indmelding – og ikke en stærk jævn hånd til D.",
+   "en": {
+    "why": "8 HCP and no shape that suits an overcall – and not a strong balanced hand for X."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     8,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "Pas",
+   "why": "9 hp og ingen fordeling, der passer til en indmelding – og ikke en stærk jævn hånd til D.",
+   "en": {
+    "why": "9 HCP and no shape that suits an overcall – and not a strong balanced hand for X."
+   }
   },
   {
    "situation": "indmelding",
    "hand": {
     "S": [
      14,
-     12,
+     8,
      7,
-     2
+     5,
+     3
     ],
     "H": [
-     9,
+     12,
      7,
-     6,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     12,
+     11
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "2♣",
+   "why": "15 hp med 5 spar og 4 hjerter: 2♣ viser begge majorer, 5-4.",
+   "en": {
+    "why": "15 HCP with 5 spades and 4 hearts: 2♣ shows both majors, 5-4."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     10
+    ],
+    "H": [
+     13,
+     8,
+     4,
      3,
      2
     ],
     "D": [
+     11,
      8
     ],
     "C": [
      14,
-     10,
-     7
+     2
     ]
    },
-   "hp": 10,
-   "sp": 13,
+   "hp": 16,
+   "sp": 18,
    "correct": "2♣",
-   "why": "10 hp med 4 spar og 5 hjerter: 2♣ viser begge majorer, 5-4."
+   "why": "16 hp med 4 spar og 5 hjerter: 2♣ viser begge majorer, 5-4.",
+   "en": {
+    "why": "16 HCP with 4 spades and 5 hearts: 2♣ shows both majors, 5-4."
+   }
   },
   {
    "situation": "indmelding",
    "hand": {
     "S": [
-     13,
-     12,
-     10,
-     6,
-     2
-    ],
-    "H": [
-     13,
-     10,
-     3,
-     2
-    ],
-    "D": [
-     10,
-     5
-    ],
-    "C": [
-     12,
-     10
-    ]
-   },
-   "hp": 10,
-   "sp": 12,
-   "correct": "2♣",
-   "why": "10 hp med 5 spar og 4 hjerter: 2♣ viser begge majorer, 5-4."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     14,
-     11,
      9,
+     5,
      4,
      2
     ],
     "H": [
+     14,
      13,
-     9,
-     4,
-     3
-    ],
-    "D": [
-     14,
-     9,
-     2
-    ],
-    "C": [
-     7
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "2♣",
-   "why": "12 hp med 5 spar og 4 hjerter: 2♣ viser begge majorer, 5-4."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     14,
-     10,
      8,
-     3
-    ],
-    "H": [
-     14,
-     12,
-     10,
-     7,
-     2
+     6,
+     4
     ],
     "D": [
-     9,
-     4,
-     3
+     4
     ],
     "C": [
-     3
+     14,
+     9,
+     5
     ]
    },
-   "hp": 10,
-   "sp": 13,
+   "hp": 11,
+   "sp": 14,
    "correct": "2♣",
-   "why": "10 hp med 4 spar og 5 hjerter: 2♣ viser begge majorer, 5-4."
+   "why": "11 hp med 4 spar og 5 hjerter: 2♣ viser begge majorer, 5-4.",
+   "en": {
+    "why": "11 HCP with 4 spades and 5 hearts: 2♣ shows both majors, 5-4."
+   }
   },
   {
    "situation": "indmelding",
    "hand": {
     "S": [
      14,
-     10,
+     8,
      7,
-     2
+     4
     ],
     "H": [
-     13,
      12,
-     7,
-     6,
-     5
-    ],
-    "D": [
-     11,
+     10,
+     9,
      5,
      3
     ],
+    "D": [
+     14,
+     12
+    ],
     "C": [
+     10,
      6
     ]
    },
-   "hp": 10,
-   "sp": 13,
+   "hp": 12,
+   "sp": 14,
    "correct": "2♣",
-   "why": "10 hp med 4 spar og 5 hjerter: 2♣ viser begge majorer, 5-4."
+   "why": "12 hp med 4 spar og 5 hjerter: 2♣ viser begge majorer, 5-4.",
+   "en": {
+    "why": "12 HCP with 4 spades and 5 hearts: 2♣ shows both majors, 5-4."
+   }
   },
   {
    "situation": "indmelding",
    "hand": {
     "S": [
+     14,
      11,
-     6,
-     5,
+     9,
+     7,
      2
     ],
     "H": [
-     14,
      13,
      12,
-     11,
-     10
+     6,
+     3
     ],
     "D": [
-     10
+     14,
+     12,
+     7
     ],
     "C": [
-     13,
-     12,
-     2
+     6
     ]
    },
    "hp": 16,
    "sp": 19,
    "correct": "2♣",
-   "why": "16 hp med 4 spar og 5 hjerter: 2♣ viser begge majorer, 5-4."
+   "why": "16 hp med 5 spar og 4 hjerter: 2♣ viser begge majorer, 5-4.",
+   "en": {
+    "why": "16 HCP with 5 spades and 4 hearts: 2♣ shows both majors, 5-4."
+   }
   },
   {
    "situation": "indmelding",
    "hand": {
     "S": [
-     10,
+     14,
      9,
-     5
+     6,
+     4,
+     2
+    ],
+    "H": [
+     12,
+     10,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     9
+    ],
+    "C": [
+     9
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "2♣",
+   "why": "11 hp med 5 spar og 4 hjerter: 2♣ viser begge majorer, 5-4.",
+   "en": {
+    "why": "11 HCP with 5 spades and 4 hearts: 2♣ shows both majors, 5-4."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     7,
+     4,
+     2
     ],
     "H": [
      13,
      11,
+     9,
+     8,
      7,
      5,
-     4,
      3
     ],
     "D": [
-     11,
-     5,
+     13,
+     12,
      4
     ],
-    "C": [
-     13
-    ]
+    "C": []
    },
-   "hp": 8,
-   "sp": 11,
+   "hp": 9,
+   "sp": 14,
    "correct": "2♦",
-   "why": "6 hjerter og 8 hp: 2♦ (multi) viser en 6-farve i en major, ca. 6–10 hp."
+   "why": "7 hjerter og 9 hp: 2♦ (multi) viser en 6-farve i en major, ca. 6–10 hp.",
+   "en": {
+    "why": "7 hearts and 9 HCP: 2♦ (multi) shows a six-card major, about 6–10 HCP."
+   }
   },
   {
    "situation": "indmelding",
    "hand": {
     "S": [
-     13,
+     11,
      10,
-     9,
      7,
+     6,
      5,
-     4,
+     3,
+     2
+    ],
+    "H": [],
+    "D": [
+     10,
+     8,
      3
     ],
-    "H": [
-     10,
-     6
-    ],
-    "D": [
-     7
-    ],
     "C": [
      14,
      11,
-     7
+     4
     ]
    },
-   "hp": 8,
-   "sp": 12,
+   "hp": 6,
+   "sp": 11,
    "correct": "2♦",
-   "why": "7 spar og 8 hp: 2♦ (multi) viser en 6-farve i en major, ca. 6–10 hp."
+   "why": "7 spar og 6 hp: 2♦ (multi) viser en 6-farve i en major, ca. 6–10 hp.",
+   "en": {
+    "why": "7 spades and 6 HCP: 2♦ (multi) shows a six-card major, about 6–10 HCP."
+   }
   },
   {
    "situation": "indmelding",
    "hand": {
     "S": [
-     14,
-     13,
+     6,
+     2
+    ],
+    "H": [
+     12,
      11,
+     7,
      6,
      3,
      2
     ],
-    "H": [
-     8
-    ],
     "D": [
-     8,
-     7,
-     5
+     14,
+     7
     ],
     "C": [
-     11,
-     8,
-     3
+     13,
+     10,
+     4
     ]
    },
-   "hp": 9,
+   "hp": 10,
    "sp": 12,
    "correct": "2♦",
-   "why": "6 spar og 9 hp: 2♦ (multi) viser en 6-farve i en major, ca. 6–10 hp."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     13,
-     6,
-     2
-    ],
-    "H": [
-     13,
-     12,
-     9,
-     8,
-     4,
-     2
-    ],
-    "D": [
-     10,
-     5,
-     2
-    ],
-    "C": [
-     8
-    ]
-   },
-   "hp": 8,
-   "sp": 11,
-   "correct": "2♦",
-   "why": "6 hjerter og 8 hp: 2♦ (multi) viser en 6-farve i en major, ca. 6–10 hp."
+   "why": "6 hjerter og 10 hp: 2♦ (multi) viser en 6-farve i en major, ca. 6–10 hp.",
+   "en": {
+    "why": "6 hearts and 10 HCP: 2♦ (multi) shows a six-card major, about 6–10 HCP."
+   }
   },
   {
    "situation": "indmelding",
    "hand": {
     "S": [],
     "H": [
-     12,
-     11,
-     10,
-     8,
-     6,
-     4,
-     2
-    ],
-    "D": [
-     13,
-     9,
-     6
-    ],
-    "C": [
-     12,
-     5,
-     3
-    ]
-   },
-   "hp": 8,
-   "sp": 13,
-   "correct": "2♦",
-   "why": "7 hjerter og 8 hp: 2♦ (multi) viser en 6-farve i en major, ca. 6–10 hp."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     9,
-     3
-    ],
-    "H": [
      14,
+     13,
      12,
-     11,
      10,
      9,
-     7,
+     6,
      4
     ],
     "D": [
-     12,
-     7
-    ],
-    "C": [
+     11,
      8,
      4
-    ]
-   },
-   "hp": 9,
-   "sp": 12,
-   "correct": "2♦",
-   "why": "7 hjerter og 9 hp: 2♦ (multi) viser en 6-farve i en major, ca. 6–10 hp."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     13,
-     12,
-     9
     ],
-    "H": [
-     12,
-     11,
-     7,
-     6,
-     5
-    ],
-    "D": [],
     "C": [
-     12,
      10,
-     9,
-     8,
-     3
+     7,
+     6
     ]
    },
    "hp": 10,
    "sp": 15,
-   "correct": "2♥",
-   "why": "5 hjerter og 5 klør: 2♥ viser femfarven og 4–5 kort i en ukendt minor."
+   "correct": "2♦",
+   "why": "7 hjerter og 10 hp: 2♦ (multi) viser en 6-farve i en major, ca. 6–10 hp.",
+   "en": {
+    "why": "7 hearts and 10 HCP: 2♦ (multi) shows a six-card major, about 6–10 HCP."
+   }
   },
   {
    "situation": "indmelding",
    "hand": {
-    "S": [
-     12,
-     4
-    ],
+    "S": [],
     "H": [
      14,
-     12,
-     9,
+     13,
+     10,
+     8,
      7,
-     6
+     5,
+     2
     ],
     "D": [
-     13,
-     11,
-     7,
-     6,
-     5
+     10,
+     9,
+     4
     ],
     "C": [
-     6
+     7,
+     6,
+     3
     ]
    },
-   "hp": 12,
-   "sp": 16,
-   "correct": "2♥",
-   "why": "5 hjerter og 5 ruder: 2♥ viser femfarven og 4–5 kort i en ukendt minor."
+   "hp": 7,
+   "sp": 12,
+   "correct": "2♦",
+   "why": "7 hjerter og 7 hp: 2♦ (multi) viser en 6-farve i en major, ca. 6–10 hp.",
+   "en": {
+    "why": "7 hearts and 7 HCP: 2♦ (multi) shows a six-card major, about 6–10 HCP."
+   }
   },
   {
    "situation": "indmelding",
    "hand": {
     "S": [
+     11,
+     8,
+     7
+    ],
+    "H": [
+     12,
+     9,
+     8,
+     7,
+     6,
+     4,
+     3
+    ],
+    "D": [
      14,
+     12,
+     9
+    ],
+    "C": []
+   },
+   "hp": 9,
+   "sp": 14,
+   "correct": "2♦",
+   "why": "7 hjerter og 9 hp: 2♦ (multi) viser en 6-farve i en major, ca. 6–10 hp.",
+   "en": {
+    "why": "7 hearts and 9 HCP: 2♦ (multi) shows a six-card major, about 6–10 HCP."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     13,
      4,
      2
     ],
     "H": [
-     14,
-     11,
-     10,
+     13,
+     12,
      9,
-     7
+     4,
+     2
     ],
     "D": [
      14,
-     11,
+     13,
      6,
-     5
+     5,
+     2
     ],
-    "C": [
-     8
-    ]
+    "C": []
    },
-   "hp": 14,
-   "sp": 17,
+   "hp": 15,
+   "sp": 20,
    "correct": "2♥",
-   "why": "5 hjerter og 4 ruder: 2♥ viser femfarven og 4–5 kort i en ukendt minor."
+   "why": "5 hjerter og 5 ruder: 2♥ viser femfarven og 4–5 kort i en ukendt minor.",
+   "en": {
+    "why": "5 hearts and 5 diamonds: 2♥ shows the five-card suit and 4–5 cards in an unknown minor."
+   }
   },
   {
    "situation": "indmelding",
    "hand": {
     "S": [
-     14,
-     13
+     9
     ],
     "H": [
      11,
@@ -1374,347 +1553,24 @@
      2
     ],
     "D": [
-     13,
-     12,
-     11,
-     10,
-     7
-    ],
-    "C": [
-     11
-    ]
-   },
-   "hp": 15,
-   "sp": 19,
-   "correct": "2♥",
-   "why": "5 hjerter og 5 ruder: 2♥ viser femfarven og 4–5 kort i en ukendt minor."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     13,
-     10
-    ],
-    "H": [
-     14,
-     11,
      8,
-     5,
      2
     ],
-    "D": [
-     8
-    ],
-    "C": [
-     13,
-     12,
-     11,
-     8,
-     5
-    ]
-   },
-   "hp": 14,
-   "sp": 18,
-   "correct": "2♥",
-   "why": "5 hjerter og 5 klør: 2♥ viser femfarven og 4–5 kort i en ukendt minor."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [],
-    "H": [
-     13,
-     12,
-     7,
-     6,
-     2
-    ],
-    "D": [
-     9,
-     8,
-     7,
-     6,
-     5
-    ],
     "C": [
      14,
      13,
-     12
-    ]
-   },
-   "hp": 14,
-   "sp": 19,
-   "correct": "2♥",
-   "why": "5 hjerter og 5 ruder: 2♥ viser femfarven og 4–5 kort i en ukendt minor."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     14,
-     10,
-     8,
+     12,
      7,
-     5
-    ],
-    "H": [
-     12,
-     5
-    ],
-    "D": [
-     10,
-     6,
-     5,
-     4
-    ],
-    "C": [
-     13,
-     12
-    ]
-   },
-   "hp": 11,
-   "sp": 13,
-   "correct": "2♠",
-   "why": "5 spar og 4 ruder: 2♠ viser femfarven og 4–5 kort i en ukendt minor."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     14,
-     10,
-     7,
-     4,
-     3
-    ],
-    "H": [
-     10,
-     6,
-     3
-    ],
-    "D": [
-     14,
-     13,
-     11,
-     6,
-     2
-    ],
-    "C": []
-   },
-   "hp": 12,
-   "sp": 17,
-   "correct": "2♠",
-   "why": "5 spar og 5 ruder: 2♠ viser femfarven og 4–5 kort i en ukendt minor."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     13,
-     12,
-     6,
-     5,
-     3
-    ],
-    "H": [
-     11
-    ],
-    "D": [
-     12,
-     9
-    ],
-    "C": [
-     12,
-     9,
-     8,
-     4,
      2
     ]
    },
    "hp": 10,
    "sp": 14,
-   "correct": "2♠",
-   "why": "5 spar og 5 klør: 2♠ viser femfarven og 4–5 kort i en ukendt minor."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     14,
-     9,
-     7,
-     6,
-     4
-    ],
-    "H": [
-     10
-    ],
-    "D": [
-     13,
-     11,
-     8,
-     2
-    ],
-    "C": [
-     14,
-     13,
-     10
-    ]
-   },
-   "hp": 15,
-   "sp": 18,
-   "correct": "2♠",
-   "why": "5 spar og 4 ruder: 2♠ viser femfarven og 4–5 kort i en ukendt minor."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
-     10,
-     7
-    ],
-    "H": [
-     14,
-     13,
-     6
-    ],
-    "D": [
-     11,
-     10,
-     9,
-     5
-    ],
-    "C": [
-     9
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "2♠",
-   "why": "5 spar og 4 ruder: 2♠ viser femfarven og 4–5 kort i en ukendt minor."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     14,
-     10,
-     9,
-     3,
-     2
-    ],
-    "H": [
-     14,
-     8
-    ],
-    "D": [
-     5
-    ],
-    "C": [
-     12,
-     11,
-     9,
-     8,
-     2
-    ]
-   },
-   "hp": 11,
-   "sp": 15,
-   "correct": "2♠",
-   "why": "5 spar og 5 klør: 2♠ viser femfarven og 4–5 kort i en ukendt minor."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     13,
-     9
-    ],
-    "H": [
-     12
-    ],
-    "D": [
-     14,
-     12,
-     11,
-     4
-    ],
-    "C": [
-     14,
-     7,
-     6,
-     4,
-     3,
-     2
-    ]
-   },
-   "hp": 16,
-   "sp": 20,
-   "correct": "2NT",
-   "why": "4 ruder og 6 klør: 2NT viser begge minorer."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     11,
-     6,
-     5
-    ],
-    "H": [
-     12
-    ],
-    "D": [
-     14,
-     11,
-     8,
-     2
-    ],
-    "C": [
-     12,
-     9,
-     6,
-     5,
-     2
-    ]
-   },
-   "hp": 10,
-   "sp": 13,
-   "correct": "2NT",
-   "why": "4 ruder og 5 klør: 2NT viser begge minorer."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [],
-    "H": [
-     13,
-     11,
-     3
-    ],
-    "D": [
-     12,
-     10,
-     8,
-     7,
-     6,
-     3
-    ],
-    "C": [
-     14,
-     12,
-     6,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 17,
-   "correct": "2NT",
-   "why": "6 ruder og 4 klør: 2NT viser begge minorer."
+   "correct": "2♥",
+   "why": "5 hjerter og 5 klør: 2♥ viser femfarven og 4–5 kort i en ukendt minor.",
+   "en": {
+    "why": "5 hearts and 5 clubs: 2♥ shows the five-card suit and 4–5 cards in an unknown minor."
+   }
   },
   {
    "situation": "indmelding",
@@ -1724,4013 +1580,3294 @@
     ],
     "H": [
      12,
-     4,
-     2
-    ],
-    "D": [
-     13,
+     10,
      7,
-     6,
      5,
-     2
-    ],
-    "C": [
-     12,
-     9,
-     8,
-     2
-    ]
-   },
-   "hp": 11,
-   "sp": 14,
-   "correct": "2NT",
-   "why": "5 ruder og 4 klør: 2NT viser begge minorer."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     14,
-     13,
      4
     ],
-    "H": [],
     "D": [
-     11,
-     10,
-     8,
-     7,
-     6
-    ],
-    "C": [
-     14,
-     9,
-     8,
-     7,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 17,
-   "correct": "2NT",
-   "why": "5 ruder og 5 klør: 2NT viser begge minorer."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     11,
-     8,
-     2
-    ],
-    "H": [],
-    "D": [
-     14,
      13,
-     12,
      9,
-     8,
+     7,
      5
     ],
     "C": [
-     14,
+     13,
      11,
-     9,
-     5
-    ]
-   },
-   "hp": 15,
-   "sp": 20,
-   "correct": "2NT",
-   "why": "6 ruder og 4 klør: 2NT viser begge minorer."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     12,
-     10,
-     6
-    ],
-    "H": [
-     10
-    ],
-    "D": [
-     14,
-     12,
      9
-    ],
-    "C": [
-     12,
-     11,
-     10,
-     9,
-     6,
-     5
     ]
    },
-   "hp": 11,
-   "sp": 14,
-   "correct": "3♣",
-   "why": "6 klør og 11 hp: 3♣ er naturligt og spærrende."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     4,
-     2
-    ],
-    "H": [
-     10,
-     5,
-     4
-    ],
-    "D": [
-     7
-    ],
-    "C": [
-     14,
-     12,
-     9,
-     8,
-     6,
-     5,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 10,
-   "correct": "3♣",
-   "why": "7 klør og 6 hp: 3♣ er naturligt og spærrende."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     5,
-     2
-    ],
-    "H": [
-     12,
-     11
-    ],
-    "D": [
-     5,
-     4,
-     2
-    ],
-    "C": [
-     14,
-     12,
-     11,
-     6,
-     3,
-     2
-    ]
-   },
-   "hp": 10,
-   "sp": 12,
-   "correct": "3♣",
-   "why": "6 klør og 10 hp: 3♣ er naturligt og spærrende."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     14,
-     9,
-     2
-    ],
-    "H": [],
-    "D": [
-     10,
-     6,
-     3
-    ],
-    "C": [
-     14,
-     13,
-     10,
-     8,
-     7,
-     6,
-     5
-    ]
-   },
-   "hp": 11,
+   "hp": 13,
    "sp": 16,
-   "correct": "3♣",
-   "why": "7 klør og 11 hp: 3♣ er naturligt og spærrende."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     13,
-     6,
-     5
-    ],
-    "H": [
-     12,
-     11,
-     2
-    ],
-    "D": [
-     3
-    ],
-    "C": [
-     11,
-     10,
-     9,
-     7,
-     6,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 10,
-   "correct": "3♣",
-   "why": "6 klør og 7 hp: 3♣ er naturligt og spærrende."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     13,
-     5
-    ],
-    "H": [
-     7,
-     5
-    ],
-    "D": [
-     9,
-     2
-    ],
-    "C": [
-     14,
-     13,
-     11,
-     8,
-     7,
-     3,
-     2
-    ]
-   },
-   "hp": 11,
-   "sp": 14,
-   "correct": "3♣",
-   "why": "7 klør og 11 hp: 3♣ er naturligt og spærrende."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     9,
-     3
-    ],
-    "H": [
-     10,
-     9,
-     5
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     11,
-     7,
-     5
-    ],
-    "C": [
-     7,
-     6
-    ]
-   },
-   "hp": 10,
-   "sp": 12,
-   "correct": "3♦",
-   "why": "6 ruder og 10 hp: 3♦ er naturligt og spærrende."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     4
-    ],
-    "H": [
-     10,
-     6
-    ],
-    "D": [
-     14,
-     10,
-     8,
-     7,
-     5,
-     3,
-     2
-    ],
-    "C": [
-     14,
-     11,
-     4
-    ]
-   },
-   "hp": 9,
-   "sp": 13,
-   "correct": "3♦",
-   "why": "7 ruder og 9 hp: 3♦ er naturligt og spærrende."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     5
-    ],
-    "H": [
-     8,
-     5,
-     4
-    ],
-    "D": [
-     14,
-     11,
-     10,
-     9,
-     8,
-     3
-    ],
-    "C": [
-     13,
-     9,
-     3
-    ]
-   },
-   "hp": 8,
-   "sp": 11,
-   "correct": "3♦",
-   "why": "6 ruder og 8 hp: 3♦ er naturligt og spærrende."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     13,
-     6
-    ],
-    "H": [
-     8
-    ],
-    "D": [
-     12,
-     11,
-     10,
-     7,
-     6,
-     3,
-     2
-    ],
-    "C": [
-     9,
-     8,
-     4
-    ]
-   },
-   "hp": 6,
-   "sp": 10,
-   "correct": "3♦",
-   "why": "7 ruder og 6 hp: 3♦ er naturligt og spærrende."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     11,
-     9,
-     2
-    ],
-    "H": [
-     12
-    ],
-    "D": [
-     11,
-     9,
-     8,
-     7,
-     6,
-     3,
-     2
-    ],
-    "C": [
-     14,
-     3
-    ]
-   },
-   "hp": 8,
-   "sp": 12,
-   "correct": "3♦",
-   "why": "7 ruder og 8 hp: 3♦ er naturligt og spærrende."
-  },
-  {
-   "situation": "indmelding",
-   "hand": {
-    "S": [
-     8,
-     7
-    ],
-    "H": [
-     14,
-     4
-    ],
-    "D": [
-     14,
-     9,
-     8,
-     7,
-     6,
-     4,
-     2
-    ],
-    "C": [
-     12,
-     10
-    ]
-   },
-   "hp": 10,
-   "sp": 13,
-   "correct": "3♦",
-   "why": "7 ruder og 10 hp: 3♦ er naturligt og spærrende."
-  },
-  {
-   "situation": "gen_2kl",
-   "hand": {
-    "S": [
-     9,
-     7,
-     3,
-     2
-    ],
-    "H": [
-     13,
-     11,
-     7,
-     6,
-     5
-    ],
-    "D": [
-     13,
-     3
-    ],
-    "C": [
-     14,
-     11
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
    "correct": "2♥",
-   "why": "2♦ spørger efter femfarven: du har 5 hjerter og melder 2♥."
+   "why": "5 hjerter og 4 ruder: 2♥ viser femfarven og 4–5 kort i en ukendt minor.",
+   "en": {
+    "why": "5 hearts and 4 diamonds: 2♥ shows the five-card suit and 4–5 cards in an unknown minor."
+   }
   },
   {
-   "situation": "gen_2kl",
+   "situation": "indmelding",
    "hand": {
     "S": [
      13,
-     11,
-     6,
-     3
-    ],
-    "H": [
-     13,
-     12,
-     11,
-     9,
-     2
-    ],
-    "D": [
-     10,
-     2
-    ],
-    "C": [
-     12,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
-   "correct": "2♥",
-   "why": "2♦ spørger efter femfarven: du har 5 hjerter og melder 2♥."
-  },
-  {
-   "situation": "gen_2kl",
-   "hand": {
-    "S": [
-     13,
-     11,
-     7,
-     6
-    ],
-    "H": [
-     14,
-     12,
-     8,
-     4,
-     3
-    ],
-    "D": [
-     14,
-     7,
-     2
-    ],
-    "C": [
-     7
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "2♥",
-   "why": "2♦ spørger efter femfarven: du har 5 hjerter og melder 2♥."
-  },
-  {
-   "situation": "gen_2kl",
-   "hand": {
-    "S": [
-     14,
-     9,
-     3,
-     2
-    ],
-    "H": [
-     14,
-     11,
-     10,
-     9,
-     7
-    ],
-    "D": [
-     8,
-     6,
-     4
-    ],
-    "C": [
-     12
-    ]
-   },
-   "hp": 11,
-   "sp": 14,
-   "correct": "2♥",
-   "why": "2♦ spørger efter femfarven: du har 5 hjerter og melder 2♥."
-  },
-  {
-   "situation": "gen_2kl",
-   "hand": {
-    "S": [
-     14,
-     12,
      11,
      8
     ],
     "H": [
-     13,
      11,
+     8,
      6,
      5,
-     4
-    ],
-    "D": [
-     7
-    ],
-    "C": [
-     13,
-     9,
-     2
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "2♥",
-   "why": "2♦ spørger efter femfarven: du har 5 hjerter og melder 2♥."
-  },
-  {
-   "situation": "gen_2kl",
-   "hand": {
-    "S": [
-     13,
-     9,
-     5,
-     3,
-     2
-    ],
-    "H": [
-     14,
-     11,
-     9,
      3
     ],
     "D": [
      14
     ],
     "C": [
-     13,
-     6,
-     2
-    ]
-   },
-   "hp": 15,
-   "sp": 18,
-   "correct": "2♠",
-   "why": "2♦ spørger efter femfarven: du har 5 spar og melder 2♠."
-  },
-  {
-   "situation": "gen_2kl",
-   "hand": {
-    "S": [
-     14,
      12,
      11,
-     6,
-     5
+     9,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2♥",
+   "why": "5 hjerter og 4 klør: 2♥ viser femfarven og 4–5 kort i en ukendt minor.",
+   "en": {
+    "why": "5 hearts and 4 clubs: 2♥ shows the five-card suit and 4–5 cards in an unknown minor."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     9
     ],
     "H": [
-     13,
-     7,
+     14,
+     9,
+     6,
      3,
      2
     ],
     "D": [
+     14,
+     11,
+     8,
      5,
      2
     ],
     "C": [
-     6,
+     11,
      5
     ]
    },
    "hp": 10,
-   "sp": 12,
-   "correct": "2♠",
-   "why": "2♦ spørger efter femfarven: du har 5 spar og melder 2♠."
+   "sp": 14,
+   "correct": "2♥",
+   "why": "5 hjerter og 5 ruder: 2♥ viser femfarven og 4–5 kort i en ukendt minor.",
+   "en": {
+    "why": "5 hearts and 5 diamonds: 2♥ shows the five-card suit and 4–5 cards in an unknown minor."
+   }
   },
   {
-   "situation": "gen_2kl",
+   "situation": "indmelding",
    "hand": {
     "S": [
-     11,
-     8,
-     6,
-     4,
-     2
+     14
     ],
     "H": [
+     14,
+     9,
+     7,
+     4,
+     3
+    ],
+    "D": [
      12,
-     11,
-     10,
+     4
+    ],
+    "C": [
+     13,
+     9,
+     8,
+     3,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "5 hjerter og 5 klør: 2♥ viser femfarven og 4–5 kort i en ukendt minor.",
+   "en": {
+    "why": "5 hearts and 5 clubs: 2♥ shows the five-card suit and 4–5 cards in an unknown minor."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     14,
+     13,
+     5,
+     4,
+     3
+    ],
+    "H": [
      8
     ],
     "D": [
-     12
-    ],
-    "C": [
-     14,
+     12,
      8,
-     4
-    ]
-   },
-   "hp": 10,
-   "sp": 13,
-   "correct": "2♠",
-   "why": "2♦ spørger efter femfarven: du har 5 spar og melder 2♠."
-  },
-  {
-   "situation": "gen_2kl",
-   "hand": {
-    "S": [
-     14,
-     11,
-     10,
-     9,
-     2
-    ],
-    "H": [
-     14,
-     8,
-     7,
      6
     ],
-    "D": [
-     4,
-     2
-    ],
     "C": [
      14,
-     13
-    ]
-   },
-   "hp": 16,
-   "sp": 18,
-   "correct": "2♠",
-   "why": "2♦ spørger efter femfarven: du har 5 spar og melder 2♠."
-  },
-  {
-   "situation": "gen_2kl",
-   "hand": {
-    "S": [
-     14,
-     12,
-     9,
-     5,
-     2
-    ],
-    "H": [
-     14,
-     12,
-     10,
-     2
-    ],
-    "D": [
      11,
-     8
-    ],
-    "C": [
-     12,
-     8
+     3,
+     2
     ]
    },
-   "hp": 15,
+   "hp": 14,
    "sp": 17,
    "correct": "2♠",
-   "why": "2♦ spørger efter femfarven: du har 5 spar og melder 2♠."
+   "why": "5 spar og 4 klør: 2♠ viser femfarven og 4–5 kort i en ukendt minor.",
+   "en": {
+    "why": "5 spades and 4 clubs: 2♠ shows the five-card suit and 4–5 cards in an unknown minor."
+   }
   },
   {
-   "situation": "gen_2hj",
+   "situation": "indmelding",
    "hand": {
     "S": [
      13,
-     9,
+     10,
+     8,
+     7,
      2
     ],
     "H": [
+     14,
      13,
+     4
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     12,
      11,
+     6,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "5 spar og 4 klør: 2♠ viser femfarven og 4–5 kort i en ukendt minor.",
+   "en": {
+    "why": "5 spades and 4 clubs: 2♠ shows the five-card suit and 4–5 cards in an unknown minor."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     14,
      10,
      8,
-     4
+     7,
+     2
+    ],
+    "H": [
+     12,
+     10,
+     8
     ],
     "D": [],
     "C": [
      13,
      12,
-     10,
-     5,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 17,
-   "correct": "3♣",
-   "why": "2NT spørger efter minorfarven: du har 5 klør og melder 3♣."
-  },
-  {
-   "situation": "gen_2hj",
-   "hand": {
-    "S": [],
-    "H": [
-     13,
-     9,
-     7,
-     6,
-     2
-    ],
-    "D": [
-     14,
-     7,
-     6
-    ],
-    "C": [
-     13,
-     12,
      8,
-     5,
-     3
-    ]
-   },
-   "hp": 12,
-   "sp": 17,
-   "correct": "3♣",
-   "why": "2NT spørger efter minorfarven: du har 5 klør og melder 3♣."
-  },
-  {
-   "situation": "gen_2hj",
-   "hand": {
-    "S": [
-     10,
-     3
-    ],
-    "H": [
-     13,
-     12,
-     10,
-     8,
-     3
-    ],
-    "D": [
-     11,
-     6
-    ],
-    "C": [
-     13,
-     11,
-     10,
-     2
-    ]
-   },
-   "hp": 10,
-   "sp": 12,
-   "correct": "3♣",
-   "why": "2NT spørger efter minorfarven: du har 4 klør og melder 3♣."
-  },
-  {
-   "situation": "gen_2hj",
-   "hand": {
-    "S": [
-     11,
-     5
-    ],
-    "H": [
-     14,
-     12,
-     11,
-     10,
-     6
-    ],
-    "D": [
-     12,
-     9
-    ],
-    "C": [
-     13,
-     12,
-     10,
-     7
-    ]
-   },
-   "hp": 15,
-   "sp": 17,
-   "correct": "3♣",
-   "why": "2NT spørger efter minorfarven: du har 4 klør og melder 3♣."
-  },
-  {
-   "situation": "gen_2hj",
-   "hand": {
-    "S": [
-     13,
-     10,
-     5
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     11,
-     10
-    ],
-    "D": [
-     4
-    ],
-    "C": [
-     13,
-     9,
-     8,
-     7
-    ]
-   },
-   "hp": 16,
-   "sp": 19,
-   "correct": "3♣",
-   "why": "2NT spørger efter minorfarven: du har 4 klør og melder 3♣."
-  },
-  {
-   "situation": "gen_2hj",
-   "hand": {
-    "S": [
-     14,
-     6
-    ],
-    "H": [
-     14,
-     12,
-     8,
-     7,
-     3
-    ],
-    "D": [
-     12,
-     9,
      6,
      4
-    ],
-    "C": [
+    ]
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "5 spar og 5 klør: 2♠ viser femfarven og 4–5 kort i en ukendt minor.",
+   "en": {
+    "why": "5 spades and 5 clubs: 2♠ shows the five-card suit and 4–5 cards in an unknown minor."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
      13,
-     11
-    ]
-   },
-   "hp": 16,
-   "sp": 18,
-   "correct": "3♦",
-   "why": "2NT spørger efter minorfarven: du har 4 ruder og melder 3♦."
-  },
-  {
-   "situation": "gen_2hj",
-   "hand": {
-    "S": [
-     3
-    ],
-    "H": [
-     14,
-     8,
-     7,
-     6,
-     2
-    ],
-    "D": [
-     14,
      10,
-     8,
-     6
-    ],
-    "C": [
-     14,
-     10,
-     6
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♦",
-   "why": "2NT spørger efter minorfarven: du har 4 ruder og melder 3♦."
-  },
-  {
-   "situation": "gen_2hj",
-   "hand": {
-    "S": [
-     12,
-     9,
-     8
-    ],
-    "H": [
-     12,
-     9,
      7,
      3,
      2
     ],
-    "D": [
-     14,
-     13,
-     11,
-     9,
-     8
-    ],
-    "C": []
-   },
-   "hp": 12,
-   "sp": 17,
-   "correct": "3♦",
-   "why": "2NT spørger efter minorfarven: du har 5 ruder og melder 3♦."
-  },
-  {
-   "situation": "gen_2hj",
-   "hand": {
-    "S": [
-     12
-    ],
     "H": [
      14,
-     10,
      9,
-     5,
      3
     ],
     "D": [
-     13,
      12,
+     9,
      8,
-     4
+     3
     ],
     "C": [
-     12,
-     11,
-     8
+     11
     ]
    },
-   "hp": 14,
-   "sp": 17,
-   "correct": "3♦",
-   "why": "2NT spørger efter minorfarven: du har 4 ruder og melder 3♦."
+   "hp": 10,
+   "sp": 13,
+   "correct": "2♠",
+   "why": "5 spar og 4 ruder: 2♠ viser femfarven og 4–5 kort i en ukendt minor.",
+   "en": {
+    "why": "5 spades and 4 diamonds: 2♠ shows the five-card suit and 4–5 cards in an unknown minor."
+   }
   },
   {
-   "situation": "gen_2hj",
-   "hand": {
-    "S": [],
-    "H": [
-     13,
-     11,
-     7,
-     6,
-     5
-    ],
-    "D": [
-     14,
-     13,
-     9,
-     6,
-     2
-    ],
-    "C": [
-     11,
-     9,
-     8
-    ]
-   },
-   "hp": 12,
-   "sp": 17,
-   "correct": "3♦",
-   "why": "2NT spørger efter minorfarven: du har 5 ruder og melder 3♦."
-  },
-  {
-   "situation": "gen_2sp",
+   "situation": "indmelding",
    "hand": {
     "S": [
      13,
      12,
-     9,
+     10,
      8,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     6
+    ],
+    "D": [],
+    "C": [
+     14,
+     12,
+     10,
+     7,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "2♠",
+   "why": "5 spar og 5 klør: 2♠ viser femfarven og 4–5 kort i en ukendt minor.",
+   "en": {
+    "why": "5 spades and 5 clubs: 2♠ shows the five-card suit and 4–5 cards in an unknown minor."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     11,
+     9,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     14,
+     13
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     8,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 20,
+   "correct": "2♠",
+   "why": "5 spar og 5 klør: 2♠ viser femfarven og 4–5 kort i en ukendt minor.",
+   "en": {
+    "why": "5 spades and 5 clubs: 2♠ shows the five-card suit and 4–5 cards in an unknown minor."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     12,
+     7,
      4
     ],
     "H": [],
     "D": [
-     8,
-     5,
-     3
+     14,
+     11,
+     9,
+     8
     ],
     "C": [
      14,
      13,
      11,
      10,
-     4
+     7,
+     6
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "2NT",
+   "why": "4 ruder og 6 klør: 2NT viser begge minorer.",
+   "en": {
+    "why": "4 diamonds and 6 clubs: 2NT shows both minors."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     10,
+     5
+    ],
+    "D": [
+     12,
+     8,
+     7,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     9,
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2NT",
+   "why": "5 ruder og 5 klør: 2NT viser begge minorer.",
+   "en": {
+    "why": "5 diamonds and 5 clubs: 2NT shows both minors."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     10,
+     6
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     10,
+     8,
+     7
+    ],
+    "C": [
+     12,
+     10,
+     8,
+     7
     ]
    },
    "hp": 13,
    "sp": 18,
-   "correct": "3♣",
-   "why": "2NT spørger efter minorfarven: du har 5 klør og melder 3♣."
+   "correct": "2NT",
+   "why": "6 ruder og 4 klør: 2NT viser begge minorer.",
+   "en": {
+    "why": "6 diamonds and 4 clubs: 2NT shows both minors."
+   }
   },
   {
-   "situation": "gen_2sp",
+   "situation": "indmelding",
    "hand": {
     "S": [
-     13,
-     12,
-     11,
-     10,
-     5
-    ],
-    "H": [
-     12,
      4
     ],
+    "H": [
+     13,
+     7
+    ],
     "D": [
-     8
+     14,
+     12,
+     8,
+     5,
+     4
     ],
     "C": [
      13,
+     12,
      11,
-     8,
      6,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "2NT",
+   "why": "5 ruder og 5 klør: 2NT viser begge minorer.",
+   "en": {
+    "why": "5 diamonds and 5 clubs: 2NT shows both minors."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
+     12,
+     8,
+     4
+    ],
+    "D": [
+     14,
+     11,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     5,
      4
     ]
    },
-   "hp": 12,
-   "sp": 16,
-   "correct": "3♣",
-   "why": "2NT spørger efter minorfarven: du har 5 klør og melder 3♣."
+   "hp": 10,
+   "sp": 13,
+   "correct": "2NT",
+   "why": "4 ruder og 5 klør: 2NT viser begge minorer.",
+   "en": {
+    "why": "4 diamonds and 5 clubs: 2NT shows both minors."
+   }
   },
   {
-   "situation": "gen_2sp",
+   "situation": "indmelding",
    "hand": {
-    "S": [
-     12,
+    "S": [],
+    "H": [
      11,
      10,
-     5,
-     2
+     7
     ],
-    "H": [],
     "D": [
      12,
      11,
+     10,
+     6,
      2
     ],
     "C": [
      14,
+     12,
      10,
-     9,
-     5,
-     3
+     8,
+     2
     ]
    },
    "hp": 10,
    "sp": 15,
-   "correct": "3♣",
-   "why": "2NT spørger efter minorfarven: du har 5 klør og melder 3♣."
+   "correct": "2NT",
+   "why": "5 ruder og 5 klør: 2NT viser begge minorer.",
+   "en": {
+    "why": "5 diamonds and 5 clubs: 2NT shows both minors."
+   }
   },
   {
-   "situation": "gen_2sp",
+   "situation": "indmelding",
    "hand": {
     "S": [
-     13,
-     12,
-     11,
-     6,
-     3
-    ],
-    "H": [],
-    "D": [
-     14,
-     8,
-     3
-    ],
-    "C": [
-     12,
-     10,
-     7,
-     6,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 17,
-   "correct": "3♣",
-   "why": "2NT spørger efter minorfarven: du har 5 klør og melder 3♣."
-  },
-  {
-   "situation": "gen_2sp",
-   "hand": {
-    "S": [
-     14,
-     12,
-     7,
-     5,
-     3
-    ],
-    "H": [
-     11,
-     9,
-     4
-    ],
-    "D": [],
-    "C": [
-     13,
-     8,
-     5,
-     4,
-     3
-    ]
-   },
-   "hp": 10,
-   "sp": 15,
-   "correct": "3♣",
-   "why": "2NT spørger efter minorfarven: du har 5 klør og melder 3♣."
-  },
-  {
-   "situation": "gen_2sp",
-   "hand": {
-    "S": [
-     11,
-     8,
-     7,
-     5,
-     3
-    ],
-    "H": [
-     9,
-     3
-    ],
-    "D": [
-     12,
-     10,
-     8,
-     2
-    ],
-    "C": [
-     14,
-     13
-    ]
-   },
-   "hp": 10,
-   "sp": 12,
-   "correct": "3♦",
-   "why": "2NT spørger efter minorfarven: du har 4 ruder og melder 3♦."
-  },
-  {
-   "situation": "gen_2sp",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
      9,
      7
     ],
     "H": [
-     3,
-     2
+     12,
+     8
     ],
     "D": [
+     14,
      12,
-     9,
-     5,
-     2
+     6
     ],
     "C": [
-     14,
-     9
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
-   "correct": "3♦",
-   "why": "2NT spørger efter minorfarven: du har 4 ruder og melder 3♦."
-  },
-  {
-   "situation": "gen_2sp",
-   "hand": {
-    "S": [
      12,
-     11,
-     6,
-     5,
-     4
-    ],
-    "H": [],
-    "D": [
-     14,
-     13,
-     12,
-     6,
-     4
-    ],
-    "C": [
+     10,
      9,
-     6,
+     8,
+     5,
      3
     ]
    },
-   "hp": 12,
-   "sp": 17,
-   "correct": "3♦",
-   "why": "2NT spørger efter minorfarven: du har 5 ruder og melder 3♦."
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "6 klør og 10 hp: 3♣ er naturligt og spærrende.",
+   "en": {
+    "why": "6 clubs and 10 HCP: 3♣ is natural and preemptive."
+   }
   },
   {
-   "situation": "gen_2sp",
+   "situation": "indmelding",
    "hand": {
     "S": [
-     14,
      10,
-     7,
-     3,
-     2
+     5
     ],
     "H": [
-     13
-    ],
-    "D": [
-     11,
-     9,
-     7,
-     4
-    ],
-    "C": [
-     13,
      7,
      6
+    ],
+    "D": [
+     12,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     9,
+     7,
+     5,
+     3
     ]
    },
    "hp": 11,
    "sp": 14,
+   "correct": "3♣",
+   "why": "7 klør og 11 hp: 3♣ er naturligt og spærrende.",
+   "en": {
+    "why": "7 clubs and 11 HCP: 3♣ is natural and preemptive."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     14,
+     13,
+     3
+    ],
+    "H": [
+     5,
+     2
+    ],
+    "D": [
+     13,
+     4
+    ],
+    "C": [
+     9,
+     8,
+     7,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "6 klør og 10 hp: 3♣ er naturligt og spærrende.",
+   "en": {
+    "why": "6 clubs and 10 HCP: 3♣ is natural and preemptive."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [],
+    "H": [
+     9,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     9,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     9,
+     8,
+     3,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "7 klør og 9 hp: 3♣ er naturligt og spærrende.",
+   "en": {
+    "why": "7 clubs and 9 HCP: 3♣ is natural and preemptive."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     11,
+     3
+    ],
+    "H": [
+     11,
+     7,
+     6
+    ],
+    "D": [
+     5,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     8,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "correct": "3♣",
+   "why": "6 klør og 8 hp: 3♣ er naturligt og spærrende.",
+   "en": {
+    "why": "6 clubs and 8 HCP: 3♣ is natural and preemptive."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     11,
+     9
+    ],
+    "H": [
+     11,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     6
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     7,
+     4,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "3♣",
+   "why": "6 klør og 7 hp: 3♣ er naturligt og spærrende.",
+   "en": {
+    "why": "6 clubs and 7 HCP: 3♣ is natural and preemptive."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     12,
+     11,
+     7
+    ],
+    "H": [
+     13,
+     9,
+     7
+    ],
+    "D": [
+     13,
+     9,
+     7,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
    "correct": "3♦",
-   "why": "2NT spørger efter minorfarven: du har 4 ruder og melder 3♦."
+   "why": "6 ruder og 9 hp: 3♦ er naturligt og spærrende.",
+   "en": {
+    "why": "6 diamonds and 9 HCP: 3♦ is natural and preemptive."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     13,
+     3
+    ],
+    "H": [
+     11,
+     9,
+     5
+    ],
+    "D": [
+     13,
+     11,
+     9,
+     8,
+     7,
+     6,
+     4
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "7 ruder og 8 hp: 3♦ er naturligt og spærrende.",
+   "en": {
+    "why": "7 diamonds and 8 HCP: 3♦ is natural and preemptive."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     11,
+     8
+    ],
+    "H": [
+     9,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     7,
+     5,
+     4
+    ],
+    "C": [
+     12,
+     10,
+     7
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "6 ruder og 9 hp: 3♦ er naturligt og spærrende.",
+   "en": {
+    "why": "6 diamonds and 9 HCP: 3♦ is natural and preemptive."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     5,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     10,
+     7
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     8,
+     7,
+     6,
+     2
+    ],
+    "C": []
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "7 ruder og 11 hp: 3♦ er naturligt og spærrende.",
+   "en": {
+    "why": "7 diamonds and 11 HCP: 3♦ is natural and preemptive."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     14,
+     8,
+     2
+    ],
+    "H": [
+     9,
+     6,
+     5
+    ],
+    "D": [
+     12,
+     9,
+     8,
+     7,
+     3,
+     2
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "3♦",
+   "why": "6 ruder og 6 hp: 3♦ er naturligt og spærrende.",
+   "en": {
+    "why": "6 diamonds and 6 HCP: 3♦ is natural and preemptive."
+   }
+  },
+  {
+   "situation": "indmelding",
+   "hand": {
+    "S": [
+     11,
+     6,
+     3
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     8,
+     7,
+     4,
+     3
+    ],
+    "C": [
+     9,
+     7
+    ]
+   },
+   "hp": 7,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "7 ruder og 7 hp: 3♦ er naturligt og spærrende.",
+   "en": {
+    "why": "7 diamonds and 7 HCP: 3♦ is natural and preemptive."
+   }
+  },
+  {
+   "situation": "gen_2kl",
+   "hand": {
+    "S": [
+     13,
+     9,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     8,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     6
+    ],
+    "C": [
+     12,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "2♦ spørger efter femfarven: du har 5 hjerter og melder 2♥.",
+   "en": {
+    "why": "2♦ asks for the five-card suit: you have 5 hearts and bid 2♥."
+   }
+  },
+  {
+   "situation": "gen_2kl",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     5
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     5,
+     2
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     12,
+     10,
+     8
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "2♦ spørger efter femfarven: du har 5 hjerter og melder 2♥.",
+   "en": {
+    "why": "2♦ asks for the five-card suit: you have 5 hearts and bid 2♥."
+   }
+  },
+  {
+   "situation": "gen_2kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     8,
+     7
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     12,
+     7,
+     6
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "2♦ spørger efter femfarven: du har 5 hjerter og melder 2♥.",
+   "en": {
+    "why": "2♦ asks for the five-card suit: you have 5 hearts and bid 2♥."
+   }
+  },
+  {
+   "situation": "gen_2kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     3
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     10,
+     9,
+     8
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "2♥",
+   "why": "2♦ spørger efter femfarven: du har 5 hjerter og melder 2♥.",
+   "en": {
+    "why": "2♦ asks for the five-card suit: you have 5 hearts and bid 2♥."
+   }
+  },
+  {
+   "situation": "gen_2kl",
+   "hand": {
+    "S": [
+     11,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     12,
+     10,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     7
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "2♦ spørger efter femfarven: du har 5 hjerter og melder 2♥.",
+   "en": {
+    "why": "2♦ asks for the five-card suit: you have 5 hearts and bid 2♥."
+   }
+  },
+  {
+   "situation": "gen_2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     7,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     4,
+     3
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     9,
+     5,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "2♦ spørger efter femfarven: du har 5 spar og melder 2♠.",
+   "en": {
+    "why": "2♦ asks for the five-card suit: you have 5 spades and bid 2♠."
+   }
+  },
+  {
+   "situation": "gen_2kl",
+   "hand": {
+    "S": [
+     14,
+     10,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     11,
+     3,
+     2
+    ],
+    "D": [
+     9
+    ],
+    "C": [
+     13,
+     12,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "2♦ spørger efter femfarven: du har 5 spar og melder 2♠.",
+   "en": {
+    "why": "2♦ asks for the five-card suit: you have 5 spades and bid 2♠."
+   }
+  },
+  {
+   "situation": "gen_2kl",
+   "hand": {
+    "S": [
+     10,
+     6,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     8
+    ],
+    "D": [
+     14,
+     12,
+     4
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "2♠",
+   "why": "2♦ spørger efter femfarven: du har 5 spar og melder 2♠.",
+   "en": {
+    "why": "2♦ asks for the five-card suit: you have 5 spades and bid 2♠."
+   }
+  },
+  {
+   "situation": "gen_2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     6
+    ],
+    "D": [
+     10,
+     5
+    ],
+    "C": [
+     10,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "2♦ spørger efter femfarven: du har 5 spar og melder 2♠.",
+   "en": {
+    "why": "2♦ asks for the five-card suit: you have 5 spades and bid 2♠."
+   }
+  },
+  {
+   "situation": "gen_2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     10,
+     3
+    ],
+    "H": [
+     12,
+     8,
+     7,
+     5
+    ],
+    "D": [
+     7,
+     3
+    ],
+    "C": [
+     14,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "2♠",
+   "why": "2♦ spørger efter femfarven: du har 5 spar og melder 2♠.",
+   "en": {
+    "why": "2♦ asks for the five-card suit: you have 5 spades and bid 2♠."
+   }
+  },
+  {
+   "situation": "gen_2hj",
+   "hand": {
+    "S": [
+     14,
+     13
+    ],
+    "H": [
+     12,
+     6,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     11,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     4,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3♣",
+   "why": "2NT spørger efter minorfarven: du har 4 klør og melder 3♣.",
+   "en": {
+    "why": "2NT asks for the minor: you have 4 clubs and bid 3♣."
+   }
+  },
+  {
+   "situation": "gen_2hj",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     11,
+     10,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     6
+    ],
+    "C": [
+     14,
+     7,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "2NT spørger efter minorfarven: du har 5 klør og melder 3♣.",
+   "en": {
+    "why": "2NT asks for the minor: you have 5 clubs and bid 3♣."
+   }
+  },
+  {
+   "situation": "gen_2hj",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     11,
+     10,
+     8,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     6
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     5,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "3♣",
+   "why": "2NT spørger efter minorfarven: du har 5 klør og melder 3♣.",
+   "en": {
+    "why": "2NT asks for the minor: you have 5 clubs and bid 3♣."
+   }
+  },
+  {
+   "situation": "gen_2hj",
+   "hand": {
+    "S": [
+     8,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     6,
+     2
+    ],
+    "D": [
+     12,
+     11
+    ],
+    "C": [
+     13,
+     10,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "2NT spørger efter minorfarven: du har 4 klør og melder 3♣.",
+   "en": {
+    "why": "2NT asks for the minor: you have 4 clubs and bid 3♣."
+   }
+  },
+  {
+   "situation": "gen_2hj",
+   "hand": {
+    "S": [
+     12,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     5,
+     2
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     8,
+     7,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "2NT spørger efter minorfarven: du har 4 klør og melder 3♣.",
+   "en": {
+    "why": "2NT asks for the minor: you have 4 clubs and bid 3♣."
+   }
+  },
+  {
+   "situation": "gen_2hj",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     12,
+     10,
+     6,
+     4
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     9,
+     5
+    ],
+    "C": [
+     9,
+     5,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "2NT spørger efter minorfarven: du har 5 ruder og melder 3♦.",
+   "en": {
+    "why": "2NT asks for the minor: you have 5 diamonds and bid 3♦."
+   }
+  },
+  {
+   "situation": "gen_2hj",
+   "hand": {
+    "S": [
+     6,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     14,
+     7,
+     4,
+     2
+    ],
+    "C": [
+     11,
+     8
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "2NT spørger efter minorfarven: du har 4 ruder og melder 3♦.",
+   "en": {
+    "why": "2NT asks for the minor: you have 4 diamonds and bid 3♦."
+   }
+  },
+  {
+   "situation": "gen_2hj",
+   "hand": {
+    "S": [
+     13,
+     11
+    ],
+    "H": [
+     10,
+     8,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     5
+    ],
+    "C": [
+     12,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3♦",
+   "why": "2NT spørger efter minorfarven: du har 4 ruder og melder 3♦.",
+   "en": {
+    "why": "2NT asks for the minor: you have 4 diamonds and bid 3♦."
+   }
+  },
+  {
+   "situation": "gen_2hj",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     10,
+     3
+    ],
+    "D": [
+     13,
+     9,
+     4,
+     3
+    ],
+    "C": [
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♦",
+   "why": "2NT spørger efter minorfarven: du har 4 ruder og melder 3♦.",
+   "en": {
+    "why": "2NT asks for the minor: you have 4 diamonds and bid 3♦."
+   }
+  },
+  {
+   "situation": "gen_2hj",
+   "hand": {
+    "S": [
+     14,
+     11,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     11,
+     9,
+     7,
+     5
+    ],
+    "C": []
+   },
+   "hp": 16,
+   "sp": 21,
+   "correct": "3♦",
+   "why": "2NT spørger efter minorfarven: du har 5 ruder og melder 3♦.",
+   "en": {
+    "why": "2NT asks for the minor: you have 5 diamonds and bid 3♦."
+   }
   },
   {
    "situation": "gen_2sp",
    "hand": {
     "S": [
+     14,
+     12,
+     10,
+     7,
+     2
+    ],
+    "H": [
+     13,
+     9,
+     2
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     12,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "2NT spørger efter minorfarven: du har 4 klør og melder 3♣.",
+   "en": {
+    "why": "2NT asks for the minor: you have 4 clubs and bid 3♣."
+   }
+  },
+  {
+   "situation": "gen_2sp",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10,
+     9,
+     3
+    ],
+    "H": [],
+    "D": [
+     4,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "2NT spørger efter minorfarven: du har 5 klør og melder 3♣.",
+   "en": {
+    "why": "2NT asks for the minor: you have 5 clubs and bid 3♣."
+   }
+  },
+  {
+   "situation": "gen_2sp",
+   "hand": {
+    "S": [
+     13,
+     11,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     11,
+     6
+    ],
+    "D": [],
+    "C": [
+     12,
+     7,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "2NT spørger efter minorfarven: du har 5 klør og melder 3♣.",
+   "en": {
+    "why": "2NT asks for the minor: you have 5 clubs and bid 3♣."
+   }
+  },
+  {
+   "situation": "gen_2sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     8,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     6
+    ],
+    "D": [],
+    "C": [
      12,
      11,
      9,
      7,
-     3
-    ],
-    "H": [
-     14,
-     7
-    ],
-    "D": [
-     14,
-     9,
-     8,
-     5
-    ],
-    "C": [
-     13,
-     7
+     4
     ]
    },
    "hp": 14,
-   "sp": 16,
-   "correct": "3♦",
-   "why": "2NT spørger efter minorfarven: du har 4 ruder og melder 3♦."
+   "sp": 19,
+   "correct": "3♣",
+   "why": "2NT spørger efter minorfarven: du har 5 klør og melder 3♣.",
+   "en": {
+    "why": "2NT asks for the minor: you have 5 clubs and bid 3♣."
+   }
   },
   {
-   "situation": "gen_2ru_2hj",
+   "situation": "gen_2sp",
    "hand": {
     "S": [
-     9,
-     8
-    ],
-    "H": [
-     14,
-     12,
-     10,
-     6,
-     5,
-     4
-    ],
-    "D": [
-     12,
-     10,
-     6
-    ],
-    "C": [
-     7,
-     6
-    ]
-   },
-   "hp": 8,
-   "sp": 10,
-   "correct": "Pas",
-   "why": "2♥ er pas eller korriger. Din farve er hjerter, så du passer."
-  },
-  {
-   "situation": "gen_2ru_2hj",
-   "hand": {
-    "S": [],
-    "H": [
-     14,
      10,
      9,
-     5,
-     4,
-     3,
-     2
-    ],
-    "D": [
-     12,
-     9,
-     3
-    ],
-    "C": [
-     9,
-     5,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 11,
-   "correct": "Pas",
-   "why": "2♥ er pas eller korriger. Din farve er hjerter, så du passer."
-  },
-  {
-   "situation": "gen_2ru_2hj",
-   "hand": {
-    "S": [
-     13,
-     6,
-     3
-    ],
-    "H": [
-     14,
-     13,
-     8,
-     7,
-     6,
-     3
-    ],
-    "D": [
-     9,
-     4,
-     2
-    ],
-    "C": [
-     6
-    ]
-   },
-   "hp": 10,
-   "sp": 13,
-   "correct": "Pas",
-   "why": "2♥ er pas eller korriger. Din farve er hjerter, så du passer."
-  },
-  {
-   "situation": "gen_2ru_2hj",
-   "hand": {
-    "S": [],
-    "H": [
-     14,
-     12,
-     8,
-     7,
-     6,
-     4,
-     3
-    ],
-    "D": [
-     12,
-     9,
-     8
-    ],
-    "C": [
-     10,
-     7,
-     5
-    ]
-   },
-   "hp": 8,
-   "sp": 13,
-   "correct": "Pas",
-   "why": "2♥ er pas eller korriger. Din farve er hjerter, så du passer."
-  },
-  {
-   "situation": "gen_2ru_2hj",
-   "hand": {
-    "S": [
-     13,
-     11,
-     10,
-     8,
      7,
      5,
-     4
-    ],
-    "H": [
-     11,
-     5
-    ],
-    "D": [
-     4
-    ],
-    "C": [
-     13,
-     8,
-     4
-    ]
-   },
-   "hp": 8,
-   "sp": 12,
-   "correct": "2♠",
-   "why": "2♥ er pas eller korriger. Din farve er spar, så du retter til 2♠."
-  },
-  {
-   "situation": "gen_2ru_2hj",
-   "hand": {
-    "S": [
-     14,
-     11,
-     10,
-     8,
-     6,
-     5
-    ],
-    "H": [
-     13,
-     4,
      3
     ],
-    "D": [
-     11,
-     6
-    ],
-    "C": [
-     10,
-     8
-    ]
-   },
-   "hp": 9,
-   "sp": 11,
-   "correct": "2♠",
-   "why": "2♥ er pas eller korriger. Din farve er spar, så du retter til 2♠."
-  },
-  {
-   "situation": "gen_2ru_2hj",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     9,
-     8,
-     7,
-     5
-    ],
     "H": [
-     11
-    ],
-    "D": [
-     10,
-     9,
-     7
-    ],
-    "C": [
-     10,
-     6
-    ]
-   },
-   "hp": 10,
-   "sp": 14,
-   "correct": "2♠",
-   "why": "2♥ er pas eller korriger. Din farve er spar, så du retter til 2♠."
-  },
-  {
-   "situation": "gen_2ru_2hj",
-   "hand": {
-    "S": [
-     12,
-     11,
-     6,
-     4,
-     3,
-     2
-    ],
-    "H": [
-     14,
-     10,
-     8
-    ],
-    "D": [
-     10,
-     4
-    ],
-    "C": [
-     9,
-     5
-    ]
-   },
-   "hp": 7,
-   "sp": 9,
-   "correct": "2♠",
-   "why": "2♥ er pas eller korriger. Din farve er spar, så du retter til 2♠."
-  },
-  {
-   "situation": "gen_2ru_4hj",
-   "hand": {
-    "S": [
-     11,
-     5
-    ],
-    "H": [
-     13,
-     12,
-     11,
-     10,
-     8,
-     4,
-     3
-    ],
-    "D": [
-     7
-    ],
-    "C": [
-     12,
-     7,
-     5
-    ]
-   },
-   "hp": 9,
-   "sp": 13,
-   "correct": "Pas",
-   "why": "4♥ er pas eller korriger (spærrende). Din farve er hjerter, så du passer."
-  },
-  {
-   "situation": "gen_2ru_4hj",
-   "hand": {
-    "S": [
-     13
-    ],
-    "H": [
-     12,
-     10,
-     8,
-     7,
-     6,
-     3,
-     2
-    ],
-    "D": [
-     8,
-     5
-    ],
-    "C": [
-     12,
-     7,
-     4
-    ]
-   },
-   "hp": 7,
-   "sp": 11,
-   "correct": "Pas",
-   "why": "4♥ er pas eller korriger (spærrende). Din farve er hjerter, så du passer."
-  },
-  {
-   "situation": "gen_2ru_4hj",
-   "hand": {
-    "S": [
-     9,
-     6,
-     5
-    ],
-    "H": [
-     14,
-     11,
-     9,
-     8,
-     6,
-     5
-    ],
-    "D": [
-     13,
-     7,
-     5
-    ],
-    "C": [
-     7
-    ]
-   },
-   "hp": 8,
-   "sp": 11,
-   "correct": "Pas",
-   "why": "4♥ er pas eller korriger (spærrende). Din farve er hjerter, så du passer."
-  },
-  {
-   "situation": "gen_2ru_4hj",
-   "hand": {
-    "S": [
-     14,
-     11,
-     4
-    ],
-    "H": [
-     13,
-     11,
-     9,
-     6,
-     4,
-     3
-    ],
-    "D": [
-     7,
-     6,
-     3
-    ],
-    "C": [
-     2
-    ]
-   },
-   "hp": 9,
-   "sp": 12,
-   "correct": "Pas",
-   "why": "4♥ er pas eller korriger (spærrende). Din farve er hjerter, så du passer."
-  },
-  {
-   "situation": "gen_2ru_4hj",
-   "hand": {
-    "S": [
-     9,
-     8,
-     6,
-     5,
-     4,
-     2
-    ],
-    "H": [
-     13,
-     8,
-     4
-    ],
-    "D": [
-     2
-    ],
-    "C": [
-     14,
-     3,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 10,
-   "correct": "4♠",
-   "why": "4♥ er pas eller korriger (spærrende). Din farve er spar, så du retter til 4♠."
-  },
-  {
-   "situation": "gen_2ru_4hj",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
-     9,
-     6,
-     5,
-     4
-    ],
-    "H": [
-     6,
-     4
-    ],
-    "D": [
      14
     ],
-    "C": [
-     10,
-     8,
-     6
-    ]
-   },
-   "hp": 10,
-   "sp": 14,
-   "correct": "4♠",
-   "why": "4♥ er pas eller korriger (spærrende). Din farve er spar, så du retter til 4♠."
-  },
-  {
-   "situation": "gen_2ru_4hj",
-   "hand": {
-    "S": [
-     12,
-     11,
-     9,
-     7,
-     6,
-     2
-    ],
-    "H": [
-     11,
-     10,
-     8
-    ],
     "D": [
-     14,
-     8,
-     5
-    ],
-    "C": [
-     10
-    ]
-   },
-   "hp": 8,
-   "sp": 11,
-   "correct": "4♠",
-   "why": "4♥ er pas eller korriger (spærrende). Din farve er spar, så du retter til 4♠."
-  },
-  {
-   "situation": "gen_2ru_4hj",
-   "hand": {
-    "S": [
-     14,
-     11,
-     10,
-     9,
-     6,
-     5,
+     13,
      3
     ],
-    "H": [
-     4,
-     3
-    ],
-    "D": [
-     9
-    ],
     "C": [
      14,
+     13,
      10,
+     9,
      4
     ]
    },
-   "hp": 9,
-   "sp": 13,
-   "correct": "4♠",
-   "why": "4♥ er pas eller korriger (spærrende). Din farve er spar, så du retter til 4♠."
-  },
-  {
-   "situation": "gen_plauken",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
-     10,
-     9,
-     4,
-     3
-    ],
-    "H": [
-     9
-    ],
-    "D": [
-     13,
-     10,
-     2
-    ],
-    "C": [
-     11,
-     9
-    ]
-   },
-   "hp": 10,
-   "sp": 14,
+   "hp": 14,
+   "sp": 18,
    "correct": "3♣",
-   "why": "10 hp er god multi (8–10): 3♣. Makker kan spørge efter farven med 3♦."
+   "why": "2NT spørger efter minorfarven: du har 5 klør og melder 3♣.",
+   "en": {
+    "why": "2NT asks for the minor: you have 5 clubs and bid 3♣."
+   }
   },
   {
-   "situation": "gen_plauken",
+   "situation": "gen_2sp",
    "hand": {
     "S": [
-     13,
-     6
+     9,
+     8,
+     6,
+     4,
+     2
     ],
     "H": [
      14,
-     12,
-     6,
-     5,
-     4,
-     2
+     9
     ],
     "D": [
-     7,
-     5
-    ],
-    "C": [
+     14,
      11,
      9,
-     8
-    ]
-   },
-   "hp": 10,
-   "sp": 12,
-   "correct": "3♣",
-   "why": "10 hp er god multi (8–10): 3♣. Makker kan spørge efter farven med 3♦."
-  },
-  {
-   "situation": "gen_plauken",
-   "hand": {
-    "S": [
-     13,
-     9,
-     5
-    ],
-    "H": [
-     13,
-     12,
-     10,
-     6,
-     3,
-     2
-    ],
-    "D": [
-     9,
-     6
-    ],
-    "C": [
-     9,
-     5
-    ]
-   },
-   "hp": 8,
-   "sp": 10,
-   "correct": "3♣",
-   "why": "8 hp er god multi (8–10): 3♣. Makker kan spørge efter farven med 3♦."
-  },
-  {
-   "situation": "gen_plauken",
-   "hand": {
-    "S": [
-     10,
      6,
      4
     ],
-    "H": [
-     14,
-     11,
-     8,
-     7,
-     5,
-     3
-    ],
-    "D": [
+    "C": [
      13
-    ],
-    "C": [
-     11,
-     7,
-     2
     ]
    },
-   "hp": 9,
-   "sp": 12,
-   "correct": "3♣",
-   "why": "9 hp er god multi (8–10): 3♣. Makker kan spørge efter farven med 3♦."
-  },
-  {
-   "situation": "gen_plauken",
-   "hand": {
-    "S": [
-     8,
-     2
-    ],
-    "H": [
-     13,
-     9,
-     8,
-     4,
-     3,
-     2
-    ],
-    "D": [
-     12,
-     8
-    ],
-    "C": [
-     11,
-     6,
-     5
-    ]
-   },
-   "hp": 6,
-   "sp": 8,
+   "hp": 12,
+   "sp": 16,
    "correct": "3♦",
-   "why": "6 hp er dårlig multi (6–7): 3♦ er transfer til hjerter – 3♦ viser hjerter, 3♥ viser spar."
+   "why": "2NT spørger efter minorfarven: du har 5 ruder og melder 3♦.",
+   "en": {
+    "why": "2NT asks for the minor: you have 5 diamonds and bid 3♦."
+   }
   },
   {
-   "situation": "gen_plauken",
-   "hand": {
-    "S": [
-     4
-    ],
-    "H": [
-     14,
-     11,
-     10,
-     7,
-     6,
-     5
-    ],
-    "D": [
-     10,
-     7,
-     4
-    ],
-    "C": [
-     11,
-     3,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 9,
-   "correct": "3♦",
-   "why": "6 hp er dårlig multi (6–7): 3♦ er transfer til hjerter – 3♦ viser hjerter, 3♥ viser spar."
-  },
-  {
-   "situation": "gen_plauken",
-   "hand": {
-    "S": [
-     10,
-     9,
-     7
-    ],
-    "H": [
-     13,
-     7,
-     6,
-     5,
-     4,
-     2
-    ],
-    "D": [
-     5,
-     2
-    ],
-    "C": [
-     12,
-     11
-    ]
-   },
-   "hp": 6,
-   "sp": 8,
-   "correct": "3♦",
-   "why": "6 hp er dårlig multi (6–7): 3♦ er transfer til hjerter – 3♦ viser hjerter, 3♥ viser spar."
-  },
-  {
-   "situation": "gen_plauken",
-   "hand": {
-    "S": [],
-    "H": [
-     13,
-     12,
-     10,
-     9,
-     4,
-     3,
-     2
-    ],
-    "D": [
-     7,
-     4,
-     2
-    ],
-    "C": [
-     11,
-     5,
-     4
-    ]
-   },
-   "hp": 6,
-   "sp": 11,
-   "correct": "3♦",
-   "why": "6 hp er dårlig multi (6–7): 3♦ er transfer til hjerter – 3♦ viser hjerter, 3♥ viser spar."
-  },
-  {
-   "situation": "gen_plauken",
+   "situation": "gen_2sp",
    "hand": {
     "S": [
      14,
      13,
-     10,
-     9,
-     8,
-     6,
-     2
+     11,
+     4,
+     3
     ],
     "H": [
-     2
+     5,
+     3
     ],
     "D": [
+     13,
+     8,
      7,
+     4,
+     3
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "3♦",
+   "why": "2NT spørger efter minorfarven: du har 5 ruder og melder 3♦.",
+   "en": {
+    "why": "2NT asks for the minor: you have 5 diamonds and bid 3♦."
+   }
+  },
+  {
+   "situation": "gen_2sp",
+   "hand": {
+    "S": [
+     14,
+     9,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     3
+    ],
+    "D": [
+     14,
+     5,
+     3,
      2
     ],
     "C": [
-     8,
-     7,
+     4,
      3
     ]
    },
-   "hp": 7,
-   "sp": 11,
-   "correct": "3♥",
-   "why": "7 hp er dårlig multi (6–7): 3♥ er transfer til spar – 3♦ viser hjerter, 3♥ viser spar."
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "2NT spørger efter minorfarven: du har 4 ruder og melder 3♦.",
+   "en": {
+    "why": "2NT asks for the minor: you have 4 diamonds and bid 3♦."
+   }
   },
   {
-   "situation": "gen_plauken",
+   "situation": "gen_2sp",
    "hand": {
     "S": [
-     12,
-     10,
+     14,
+     13,
      8,
      7,
-     6,
+     3
+    ],
+    "H": [
+     13,
+     10,
+     2
+    ],
+    "D": [
+     12,
+     10,
+     7,
      3,
      2
     ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "3♦",
+   "why": "2NT spørger efter minorfarven: du har 5 ruder og melder 3♦.",
+   "en": {
+    "why": "2NT asks for the minor: you have 5 diamonds and bid 3♦."
+   }
+  },
+  {
+   "situation": "gen_2sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     9,
+     5
+    ],
     "H": [
-     10,
-     8,
+     6,
      4
     ],
     "D": [
+     9,
+     5,
+     4,
+     2
+    ],
+    "C": [
      14,
      2
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "2NT spørger efter minorfarven: du har 4 ruder og melder 3♦.",
+   "en": {
+    "why": "2NT asks for the minor: you have 4 diamonds and bid 3♦."
+   }
+  },
+  {
+   "situation": "gen_2ru_2hj",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     8,
+     6,
+     2
+    ],
+    "D": [
+     10,
+     9,
+     6
+    ],
+    "C": [
+     12,
+     7,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "2♥ er pas eller korriger. Din farve er hjerter, så du passer.",
+   "en": {
+    "why": "2♥ is pass or correct. Your suit is hearts, so you pass."
+   }
+  },
+  {
+   "situation": "gen_2ru_2hj",
+   "hand": {
+    "S": [
+     7,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     9,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     12,
+     10,
+     6
     ],
     "C": [
      10
     ]
    },
-   "hp": 6,
-   "sp": 10,
-   "correct": "3♥",
-   "why": "6 hp er dårlig multi (6–7): 3♥ er transfer til spar – 3♦ viser hjerter, 3♥ viser spar."
+   "hp": 9,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "2♥ er pas eller korriger. Din farve er hjerter, så du passer.",
+   "en": {
+    "why": "2♥ is pass or correct. Your suit is hearts, so you pass."
+   }
   },
   {
-   "situation": "gen_plauken",
+   "situation": "gen_2ru_2hj",
    "hand": {
     "S": [
-     11,
-     10,
-     8,
-     7,
-     4,
-     2
-    ],
-    "H": [
+     6,
      5
     ],
+    "H": [
+     14,
+     12,
+     7,
+     6,
+     5,
+     4,
+     3
+    ],
     "D": [
+     11,
      9,
-     3,
      2
     ],
     "C": [
-     14,
-     11,
-     3
+     11
     ]
    },
-   "hp": 6,
-   "sp": 9,
-   "correct": "3♥",
-   "why": "6 hp er dårlig multi (6–7): 3♥ er transfer til spar – 3♦ viser hjerter, 3♥ viser spar."
+   "hp": 8,
+   "sp": 12,
+   "correct": "Pas",
+   "why": "2♥ er pas eller korriger. Din farve er hjerter, så du passer.",
+   "en": {
+    "why": "2♥ is pass or correct. Your suit is hearts, so you pass."
+   }
   },
   {
-   "situation": "gen_plauken",
+   "situation": "gen_2ru_2hj",
    "hand": {
     "S": [
-     12,
      11,
-     10,
-     8,
      7,
      6
     ],
     "H": [
+     13,
+     12,
+     9,
+     8,
+     7,
+     6,
+     5
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     13,
+     10
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "Pas",
+   "why": "2♥ er pas eller korriger. Din farve er hjerter, så du passer.",
+   "en": {
+    "why": "2♥ is pass or correct. Your suit is hearts, so you pass."
+   }
+  },
+  {
+   "situation": "gen_2ru_2hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     6,
+     5,
      4,
      3
     ],
-    "D": [
-     8,
-     5
-    ],
-    "C": [
-     14,
-     6,
-     5
-    ]
-   },
-   "hp": 7,
-   "sp": 9,
-   "correct": "3♥",
-   "why": "7 hp er dårlig multi (6–7): 3♥ er transfer til spar – 3♦ viser hjerter, 3♥ viser spar."
-  },
-  {
-   "situation": "gen_plauken_relae",
-   "hand": {
-    "S": [
-     13,
-     9,
-     4
-    ],
     "H": [
-     13,
-     9,
-     8,
-     7,
-     6,
-     3
-    ],
-    "D": [
      8
     ],
-    "C": [
-     12,
-     8,
-     4
-    ]
-   },
-   "hp": 8,
-   "sp": 11,
-   "correct": "3♠",
-   "why": "3♦ beder om farven. Svaret er transfer: 3♠ = hjerter, 3♥ = spar. Din farve er hjerter: 3♠."
-  },
-  {
-   "situation": "gen_plauken_relae",
-   "hand": {
-    "S": [
-     14,
-     3,
-     2
-    ],
-    "H": [
+    "D": [
      13,
-     11,
-     10,
-     8,
+     12,
+     4
+    ],
+    "C": [
      7,
      5
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "2♠",
+   "why": "2♥ er pas eller korriger. Din farve er spar, så du retter til 2♠.",
+   "en": {
+    "why": "2♥ is pass or correct. Your suit is spades, so you correct to 2♠."
+   }
+  },
+  {
+   "situation": "gen_2ru_2hj",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9,
+     7,
+     5,
+     4
+    ],
+    "H": [
+     10,
+     5,
+     4
     ],
     "D": [
-     12
+     13,
+     12,
+     5
     ],
     "C": [
-     9,
-     8,
-     4
+     12
     ]
    },
    "hp": 10,
    "sp": 13,
-   "correct": "3♠",
-   "why": "3♦ beder om farven. Svaret er transfer: 3♠ = hjerter, 3♥ = spar. Din farve er hjerter: 3♠."
+   "correct": "2♠",
+   "why": "2♥ er pas eller korriger. Din farve er spar, så du retter til 2♠.",
+   "en": {
+    "why": "2♥ is pass or correct. Your suit is spades, so you correct to 2♠."
+   }
   },
   {
-   "situation": "gen_plauken_relae",
+   "situation": "gen_2ru_2hj",
    "hand": {
     "S": [
-     11,
-     9
+     14,
+     12,
+     10,
+     9,
+     8,
+     7,
+     4
     ],
     "H": [
+     12,
+     7,
+     2
+    ],
+    "D": [
+     8,
+     7,
+     4
+    ],
+    "C": []
+   },
+   "hp": 8,
+   "sp": 13,
+   "correct": "2♠",
+   "why": "2♥ er pas eller korriger. Din farve er spar, så du retter til 2♠.",
+   "en": {
+    "why": "2♥ is pass or correct. Your suit is spades, so you correct to 2♠."
+   }
+  },
+  {
+   "situation": "gen_2ru_2hj",
+   "hand": {
+    "S": [
      14,
-     13,
-     11,
+     12,
      9,
      5,
      4,
      2
     ],
-    "D": [
-     8,
-     7
-    ],
-    "C": [
-     10,
-     9
-    ]
-   },
-   "hp": 9,
-   "sp": 12,
-   "correct": "3♠",
-   "why": "3♦ beder om farven. Svaret er transfer: 3♠ = hjerter, 3♥ = spar. Din farve er hjerter: 3♠."
-  },
-  {
-   "situation": "gen_plauken_relae",
-   "hand": {
-    "S": [
-     12,
-     11
-    ],
     "H": [
-     13,
-     12,
-     10,
-     9,
-     7,
-     5,
-     4
-    ],
-    "D": [
-     4
-    ],
-    "C": [
-     10,
-     6,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 12,
-   "correct": "3♠",
-   "why": "3♦ beder om farven. Svaret er transfer: 3♠ = hjerter, 3♥ = spar. Din farve er hjerter: 3♠."
-  },
-  {
-   "situation": "gen_plauken_relae",
-   "hand": {
-    "S": [
-     12,
-     11,
-     9,
-     8,
-     6,
-     3
-    ],
-    "H": [
-     14,
-     9
-    ],
-    "D": [
      8,
      3
     ],
-    "C": [
-     11,
+    "D": [
+     12,
      9,
-     7
+     5
+    ],
+    "C": [
+     9,
+     4
     ]
    },
    "hp": 8,
    "sp": 10,
-   "correct": "3♥",
-   "why": "3♦ beder om farven. Svaret er transfer: 3♠ = hjerter, 3♥ = spar. Din farve er spar: 3♥."
+   "correct": "2♠",
+   "why": "2♥ er pas eller korriger. Din farve er spar, så du retter til 2♠.",
+   "en": {
+    "why": "2♥ is pass or correct. Your suit is spades, so you correct to 2♠."
+   }
   },
   {
-   "situation": "gen_plauken_relae",
+   "situation": "gen_2ru_4hj",
    "hand": {
     "S": [
-     12,
-     11,
-     8,
-     7,
-     6,
-     5,
+     9,
+     4,
      2
     ],
     "H": [
-     10,
-     7,
+     14,
+     12,
+     11,
+     6,
+     5,
+     4,
      3
     ],
     "D": [
-     14,
      13,
-     4
+     7,
+     2
     ],
     "C": []
    },
    "hp": 10,
    "sp": 15,
-   "correct": "3♥",
-   "why": "3♦ beder om farven. Svaret er transfer: 3♠ = hjerter, 3♥ = spar. Din farve er spar: 3♥."
+   "correct": "Pas",
+   "why": "4♥ er pas eller korriger (spærrende). Din farve er hjerter, så du passer.",
+   "en": {
+    "why": "4♥ is pass or correct (preemptive). Your suit is hearts, so you pass."
+   }
   },
   {
-   "situation": "gen_plauken_relae",
+   "situation": "gen_2ru_4hj",
+   "hand": {
+    "S": [
+     13,
+     8,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "4♥ er pas eller korriger (spærrende). Din farve er hjerter, så du passer.",
+   "en": {
+    "why": "4♥ is pass or correct (preemptive). Your suit is hearts, so you pass."
+   }
+  },
+  {
+   "situation": "gen_2ru_4hj",
+   "hand": {
+    "S": [
+     12,
+     8,
+     2
+    ],
+    "H": [
+     12,
+     7,
+     6,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     12,
+     9,
+     8
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "Pas",
+   "why": "4♥ er pas eller korriger (spærrende). Din farve er hjerter, så du passer.",
+   "en": {
+    "why": "4♥ is pass or correct (preemptive). Your suit is hearts, so you pass."
+   }
+  },
+  {
+   "situation": "gen_2ru_4hj",
+   "hand": {
+    "S": [
+     8,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     10,
+     8,
+     6,
+     3
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     8,
+     7
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "correct": "Pas",
+   "why": "4♥ er pas eller korriger (spærrende). Din farve er hjerter, så du passer.",
+   "en": {
+    "why": "4♥ is pass or correct (preemptive). Your suit is hearts, so you pass."
+   }
+  },
+  {
+   "situation": "gen_2ru_4hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     9,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     3
+    ],
+    "D": [
+     9,
+     8,
+     5
+    ],
+    "C": [
+     10
+    ]
+   },
+   "hp": 9,
+   "sp": 13,
+   "correct": "4♠",
+   "why": "4♥ er pas eller korriger (spærrende). Din farve er spar, så du retter til 4♠.",
+   "en": {
+    "why": "4♥ is pass or correct (preemptive). Your suit is spades, so you correct to 4♠."
+   }
+  },
+  {
+   "situation": "gen_2ru_4hj",
+   "hand": {
+    "S": [
+     12,
+     11,
+     8,
+     6,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     6
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     10,
+     9,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 10,
+   "correct": "4♠",
+   "why": "4♥ er pas eller korriger (spærrende). Din farve er spar, så du retter til 4♠.",
+   "en": {
+    "why": "4♥ is pass or correct (preemptive). Your suit is spades, so you correct to 4♠."
+   }
+  },
+  {
+   "situation": "gen_2ru_4hj",
    "hand": {
     "S": [
      13,
      12,
      8,
      7,
-     5,
      3,
      2
     ],
     "H": [
-     11,
-     9,
-     2
+     11
     ],
     "D": [
-     13,
+     12,
+     5,
      4
     ],
     "C": [
+     10,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "correct": "4♠",
+   "why": "4♥ er pas eller korriger (spærrende). Din farve er spar, så du retter til 4♠.",
+   "en": {
+    "why": "4♥ is pass or correct (preemptive). Your suit is spades, so you correct to 4♠."
+   }
+  },
+  {
+   "situation": "gen_2ru_4hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     7,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     10,
+     6,
+     2
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     11,
+     10,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "4♠",
+   "why": "4♥ er pas eller korriger (spærrende). Din farve er spar, så du retter til 4♠.",
+   "en": {
+    "why": "4♥ is pass or correct (preemptive). Your suit is spades, so you correct to 4♠."
+   }
+  },
+  {
+   "situation": "gen_plauken",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     9,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     11,
+     9,
+     6
+    ],
+    "D": [],
+    "C": [
+     12,
+     8,
+     7
+    ]
+   },
+   "hp": 9,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "9 hp er god multi (8–10): 3♣. Makker kan spørge efter farven med 3♦.",
+   "en": {
+    "why": "9 HCP is a good multi (8–10): 3♣. Partner can ask for the suit with 3♦."
+   }
+  },
+  {
+   "situation": "gen_plauken",
+   "hand": {
+    "S": [
+     9,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     8,
+     7,
+     5,
+     2
+    ],
+    "D": [
+     11,
+     10,
      3
+    ],
+    "C": [
+     11
     ]
    },
    "hp": 9,
    "sp": 13,
-   "correct": "3♥",
-   "why": "3♦ beder om farven. Svaret er transfer: 3♠ = hjerter, 3♥ = spar. Din farve er spar: 3♥."
+   "correct": "3♣",
+   "why": "9 hp er god multi (8–10): 3♣. Makker kan spørge efter farven med 3♦.",
+   "en": {
+    "why": "9 HCP is a good multi (8–10): 3♣. Partner can ask for the suit with 3♦."
+   }
   },
   {
-   "situation": "gen_plauken_relae",
+   "situation": "gen_plauken",
    "hand": {
     "S": [
-     14,
-     13,
-     9,
-     6,
      3,
      2
     ],
     "H": [
-     9,
+     14,
      8,
-     5
+     6,
+     5,
+     4,
+     2
     ],
     "D": [
-     3
+     14,
+     12,
+     10
     ],
     "C": [
-     13,
-     7,
+     8,
      3
     ]
    },
    "hp": 10,
-   "sp": 13,
-   "correct": "3♥",
-   "why": "3♦ beder om farven. Svaret er transfer: 3♠ = hjerter, 3♥ = spar. Din farve er spar: 3♥."
+   "sp": 12,
+   "correct": "3♣",
+   "why": "10 hp er god multi (8–10): 3♣. Makker kan spørge efter farven med 3♦.",
+   "en": {
+    "why": "10 HCP is a good multi (8–10): 3♣. Partner can ask for the suit with 3♦."
+   }
   },
   {
-   "situation": "svar_2kl",
+   "situation": "gen_plauken",
    "hand": {
     "S": [
-     11,
-     6
-    ],
-    "H": [
-     9,
-     5
-    ],
-    "D": [
-     11,
-     8,
-     7,
-     6,
-     4
-    ],
-    "C": [
-     8,
-     5,
-     3,
-     2
-    ]
-   },
-   "hp": 2,
-   "sp": 4,
-   "correct": "2♦",
-   "why": "Lige mange spar og hjerter (2-2): 2♦ spørger efter makkers femfarve, så I lander i 5-2-fittet."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
+     14,
+     13,
+     12,
      10,
      5,
      4
     ],
     "H": [
-     7,
-     3,
-     2
+     11,
+     3
     ],
     "D": [
-     14,
-     12,
-     5,
-     4,
+     10,
+     6,
      3
     ],
     "C": [
      9,
-     3
+     4
     ]
    },
-   "hp": 6,
-   "sp": 7,
-   "correct": "2♦",
-   "why": "Lige mange spar og hjerter (3-3): 2♦ spørger efter makkers femfarve, så I lander i 5-3-fittet."
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "10 hp er god multi (8–10): 3♣. Makker kan spørge efter farven med 3♦.",
+   "en": {
+    "why": "10 HCP is a good multi (8–10): 3♣. Partner can ask for the suit with 3♦."
+   }
   },
   {
-   "situation": "svar_2kl",
+   "situation": "gen_plauken",
    "hand": {
     "S": [
-     8,
-     7
+     4,
+     2
     ],
     "H": [
-     8,
-     3
-    ],
-    "D": [
-     14,
+     13,
+     12,
      11,
      10,
      9,
      8
     ],
-    "C": [
-     10,
-     7,
-     6,
-     5
-    ]
-   },
-   "hp": 5,
-   "sp": 7,
-   "correct": "2♦",
-   "why": "Lige mange spar og hjerter (2-2): 2♦ spørger efter makkers femfarve, så I lander i 5-2-fittet."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
+    "D": [
      11,
+     9
+    ],
+    "C": [
      10,
      5,
      4
-    ],
-    "H": [
-     14,
-     12,
-     10,
-     2
-    ],
-    "D": [
-     5,
-     3,
-     2
-    ],
-    "C": [
-     14,
-     10
-    ]
-   },
-   "hp": 11,
-   "sp": 12,
-   "correct": "2♦",
-   "why": "Lige mange spar og hjerter (4-4): 2♦ spørger efter makkers femfarve, så I lander i 5-4-fittet."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     14,
-     6
-    ],
-    "H": [
-     8,
-     3
-    ],
-    "D": [
-     12,
-     9,
-     4,
-     3
-    ],
-    "C": [
-     11,
-     9,
-     7,
-     4,
-     2
     ]
    },
    "hp": 7,
    "sp": 9,
-   "correct": "2♦",
-   "why": "Lige mange spar og hjerter (2-2): 2♦ spørger efter makkers femfarve, så I lander i 5-2-fittet."
+   "correct": "3♦",
+   "why": "7 hp er dårlig multi (6–7): 3♦ er transfer til hjerter – 3♦ viser hjerter, 3♥ viser spar.",
+   "en": {
+    "why": "7 HCP is a poor multi (6–7): 3♦ is a transfer to hearts – 3♦ shows hearts, 3♥ shows spades."
+   }
   },
   {
-   "situation": "svar_2kl",
+   "situation": "gen_plauken",
    "hand": {
     "S": [
+     13,
      11,
      10
     ],
     "H": [
      12,
-     11,
+     10,
      9,
-     8,
-     7
-    ],
-    "D": [
-     12,
-     8,
-     6,
-     3
-    ],
-    "C": [
-     14,
-     4
-    ]
-   },
-   "hp": 10,
-   "sp": 12,
-   "correct": "2♥",
-   "why": "Flest hjerter (2 spar, 5 hjerter): 2♥ er præference til den bedste major – det sædvanlige svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     11,
-     9
-    ],
-    "H": [
-     13,
-     8,
-     7,
+     5,
      4,
      3
     ],
     "D": [
-     12,
-     6,
-     2
-    ],
-    "C": [
-     14,
-     4,
-     3
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "correct": "2♥",
-   "why": "Flest hjerter (2 spar, 5 hjerter): 2♥ er præference til den bedste major – det sædvanlige svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     14,
-     11,
-     6
-    ],
-    "H": [
-     11,
-     10,
-     5,
-     3,
-     2
-    ],
-    "D": [
-     5,
-     3
-    ],
-    "C": [
-     13,
      7,
-     6
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "correct": "2♥",
-   "why": "Flest hjerter (3 spar, 5 hjerter): 2♥ er præference til den bedste major – det sædvanlige svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     11,
-     3
-    ],
-    "H": [
-     12,
-     11,
-     6,
-     5
-    ],
-    "D": [
-     13,
-     10,
-     7,
-     3
-    ],
-    "C": [
-     12,
-     8,
-     6
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "correct": "2♥",
-   "why": "Flest hjerter (2 spar, 4 hjerter): 2♥ er præference til den bedste major – det sædvanlige svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     13,
-     2
-    ],
-    "H": [
-     8,
-     6,
-     3
-    ],
-    "D": [
-     13,
-     10,
-     9,
-     7,
-     6
-    ],
-    "C": [
-     12,
-     11,
-     10
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "correct": "2♥",
-   "why": "Flest hjerter (2 spar, 3 hjerter): 2♥ er præference til den bedste major – det sædvanlige svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     10,
-     8,
-     4
-    ],
-    "H": [
-     9,
-     5
-    ],
-    "D": [
-     12,
-     9,
-     8,
-     7
-    ],
-    "C": [
-     14,
-     13,
-     10,
-     5
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "correct": "2♠",
-   "why": "Flest spar (3 spar, 2 hjerter): 2♠ er præference til den bedste major – det sædvanlige svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11,
-     7,
-     5,
-     3
-    ],
-    "H": [
-     7,
-     6
-    ],
-    "D": [
-     9,
-     5
-    ],
-    "C": [
-     13,
-     10,
-     3
-    ]
-   },
-   "hp": 10,
-   "sp": 12,
-   "correct": "2♠",
-   "why": "Flest spar (6 spar, 2 hjerter): 2♠ er præference til den bedste major – det sædvanlige svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     13,
-     8,
-     4,
-     2
-    ],
-    "H": [
-     13,
-     12,
-     10
-    ],
-    "D": [
-     12,
-     10,
-     5,
      4
     ],
     "C": [
-     8,
-     5
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "correct": "2♠",
-   "why": "Flest spar (4 spar, 3 hjerter): 2♠ er præference til den bedste major – det sædvanlige svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     10,
-     8,
-     6,
-     3
-    ],
-    "H": [
-     6,
-     2
-    ],
-    "D": [
-     11,
-     10,
-     7
-    ],
-    "C": [
-     10,
-     8,
-     7,
-     5
-    ]
-   },
-   "hp": 1,
-   "sp": 2,
-   "correct": "2♠",
-   "why": "Flest spar (4 spar, 2 hjerter): 2♠ er præference til den bedste major – det sædvanlige svar."
-  },
-  {
-   "situation": "svar_2kl",
-   "hand": {
-    "S": [
-     7,
-     5,
-     4,
-     2
-    ],
-    "H": [
-     13,
-     6,
-     4
-    ],
-    "D": [
-     12,
-     6,
-     2
-    ],
-    "C": [
-     14,
      9,
-     5
-    ]
-   },
-   "hp": 9,
-   "sp": 9,
-   "correct": "2♠",
-   "why": "Flest spar (4 spar, 3 hjerter): 2♠ er præference til den bedste major – det sædvanlige svar."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [
-     12,
-     7,
-     6
-    ],
-    "H": [
-     8,
-     6,
-     4
-    ],
-    "D": [
-     10
-    ],
-    "C": [
-     14,
-     13,
-     9,
-     8,
-     6,
-     2
-    ]
-   },
-   "hp": 9,
-   "sp": 12,
-   "correct": "2♥",
-   "why": "Svag hånd (9 hp): 2♥ er pas eller korriger – makker passer med hjerter og retter til 2♠ med spar. Alle svage hænder melder 2♥."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [
-     13,
-     11,
-     8,
-     7,
-     6
-    ],
-    "H": [
-     7,
-     3
-    ],
-    "D": [
-     14,
-     12,
-     10,
-     2
-    ],
-    "C": [
-     14,
-     13
-    ]
-   },
-   "hp": 17,
-   "sp": 19,
-   "correct": "2♥",
-   "why": "17 hp med 5 spar, men kun 2 hjerter: 2♥ er pas eller korriger. Retter makker til 2♠, kan du støtte til udgang."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [
-     14,
-     11,
-     7
-    ],
-    "H": [
-     10,
-     7
-    ],
-    "D": [
-     12,
-     4,
-     2
-    ],
-    "C": [
-     14,
-     13,
-     8,
-     3,
-     2
-    ]
-   },
-   "hp": 14,
-   "sp": 15,
-   "correct": "2♥",
-   "why": "14 hp med 3 spar, men kun 2 hjerter: 2♥ er pas eller korriger. Retter makker til 2♠, kan du støtte til udgang."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [
-     9,
-     7,
-     6,
-     5,
-     4,
-     2
-    ],
-    "H": [
-     10
-    ],
-    "D": [
-     11,
-     8,
-     2
-    ],
-    "C": [
-     10,
-     8,
-     2
-    ]
-   },
-   "hp": 1,
-   "sp": 4,
-   "correct": "2♥",
-   "why": "Svag hånd (1 hp): 2♥ er pas eller korriger – makker passer med hjerter og retter til 2♠ med spar. Alle svage hænder melder 2♥."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [
-     8
-    ],
-    "H": [
-     14,
-     13,
-     7,
-     5,
-     2
-    ],
-    "D": [
-     14,
-     12
-    ],
-    "C": [
-     13,
-     10,
-     9,
-     7,
-     3
-    ]
-   },
-   "hp": 16,
-   "sp": 20,
-   "correct": "2♠",
-   "why": "16 hp med 5 hjerter, men kun 1 spar: 2♠ er udgangsopfordring, hvis makker har hjerter. Har makker spar, passer han."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [
-     9
-    ],
-    "H": [
-     14,
-     12,
-     10,
-     9,
-     7
-    ],
-    "D": [
-     14,
-     12,
-     9
-    ],
-    "C": [
-     14,
-     10,
-     6,
-     5
-    ]
-   },
-   "hp": 16,
-   "sp": 19,
-   "correct": "2♠",
-   "why": "16 hp med 5 hjerter, men kun 1 spar: 2♠ er udgangsopfordring, hvis makker har hjerter. Har makker spar, passer han."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [
-     12,
-     11
-    ],
-    "H": [
-     14,
-     13,
-     4
-    ],
-    "D": [
-     14,
-     11,
-     10,
-     6,
-     4
-    ],
-    "C": [
-     11,
-     8,
-     7
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "2♠",
-   "why": "16 hp med 3 hjerter, men kun 2 spar: 2♠ er udgangsopfordring, hvis makker har hjerter. Har makker spar, passer han."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [
-     13,
-     7
-    ],
-    "H": [
-     14,
-     10,
-     6,
-     5
-    ],
-    "D": [
-     13,
-     11,
-     10,
-     7,
-     6
-    ],
-    "C": [
-     14,
-     3
-    ]
-   },
-   "hp": 15,
-   "sp": 17,
-   "correct": "2♠",
-   "why": "15 hp med 4 hjerter, men kun 2 spar: 2♠ er udgangsopfordring, hvis makker har hjerter. Har makker spar, passer han."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [
-     10,
-     9,
-     4,
-     3
-    ],
-    "H": [
-     14,
-     13,
-     12
-    ],
-    "D": [
-     14,
-     13,
-     9,
-     3
-    ],
-    "C": [
-     8,
-     5
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "2NT",
-   "why": "16 hp og plads i begge majorer: 2NT (Plauken) er stærkt relæ – udgangsinteresse, uanset hvilken major makker har."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [
-     14,
-     11,
-     6,
-     3
-    ],
-    "H": [
-     14,
-     7,
-     5,
-     4
-    ],
-    "D": [
-     13,
-     5
-    ],
-    "C": [
-     14,
-     9,
-     6
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "2NT",
-   "why": "16 hp og plads i begge majorer: 2NT (Plauken) er stærkt relæ – udgangsinteresse, uanset hvilken major makker har."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [
-     14,
-     10,
-     6,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     4
-    ],
-    "D": [
-     13,
-     6,
-     5,
-     4
-    ],
-    "C": [
-     11,
-     3
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "2NT",
-   "why": "15 hp og plads i begge majorer: 2NT (Plauken) er stærkt relæ – udgangsinteresse, uanset hvilken major makker har."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [
-     14,
-     10,
-     7
-    ],
-    "H": [
-     13,
-     12,
-     9
-    ],
-    "D": [
-     11,
-     9,
-     5
-    ],
-    "C": [
-     14,
-     10,
-     8,
-     7
-    ]
-   },
-   "hp": 14,
-   "sp": 14,
-   "correct": "2NT",
-   "why": "14 hp og plads i begge majorer: 2NT (Plauken) er stærkt relæ – udgangsinteresse, uanset hvilken major makker har."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [
-     5
-    ],
-    "H": [
-     14,
-     13,
-     11,
-     10,
-     9,
-     8,
-     3
-    ],
-    "D": [
-     14
-    ],
-    "C": [
-     14,
-     11,
-     6,
-     3
-    ]
-   },
-   "hp": 17,
-   "sp": 23,
-   "correct": "3♥",
-   "why": "17 hp og egen hjerterfarve (7 kort): 3♥ viser styrke i farven, ingen interesse for den anden major og udgangsinteresse. Makker støtter med xxx eller Hx."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [],
-    "H": [
-     14,
-     13,
-     8,
-     7,
-     6,
-     4,
-     2
-    ],
-    "D": [
-     14,
-     13
-    ],
-    "C": [
-     12,
-     9,
-     7,
-     5
-    ]
-   },
-   "hp": 16,
-   "sp": 22,
-   "correct": "3♥",
-   "why": "16 hp og egen hjerterfarve (7 kort): 3♥ viser styrke i farven, ingen interesse for den anden major og udgangsinteresse. Makker støtter med xxx eller Hx."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [],
-    "H": [
-     14,
-     13,
-     12,
-     7,
-     6,
-     4,
-     2
-    ],
-    "D": [
-     11,
-     8,
-     7,
-     6
-    ],
-    "C": [
-     14,
-     12
-    ]
-   },
-   "hp": 16,
-   "sp": 22,
-   "correct": "3♥",
-   "why": "16 hp og egen hjerterfarve (7 kort): 3♥ viser styrke i farven, ingen interesse for den anden major og udgangsinteresse. Makker støtter med xxx eller Hx."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [
-     6
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     11,
-     7,
-     5,
-     3
-    ],
-    "D": [
-     14,
-     5,
-     3
-    ],
-    "C": [
-     14,
-     3
-    ]
-   },
-   "hp": 18,
-   "sp": 22,
-   "correct": "3♥",
-   "why": "18 hp og egen hjerterfarve (7 kort): 3♥ viser styrke i farven, ingen interesse for den anden major og udgangsinteresse. Makker støtter med xxx eller Hx."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     11,
-     8,
-     6,
-     2
-    ],
-    "H": [
-     12,
-     5
-    ],
-    "D": [
-     14,
-     5,
-     3
-    ],
-    "C": [
-     13
-    ]
-   },
-   "hp": 19,
-   "sp": 23,
-   "correct": "3♠",
-   "why": "19 hp og egen sparfarve (7 kort): 3♠ viser styrke i farven, ingen interesse for den anden major og udgangsinteresse. Makker støtter med xxx eller Hx."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     11,
-     10,
-     7,
-     6
-    ],
-    "H": [],
-    "D": [
-     14,
-     11,
-     9,
-     6
-    ],
-    "C": [
-     10,
-     2
-    ]
-   },
-   "hp": 15,
-   "sp": 21,
-   "correct": "3♠",
-   "why": "15 hp og egen sparfarve (7 kort): 3♠ viser styrke i farven, ingen interesse for den anden major og udgangsinteresse. Makker støtter med xxx eller Hx."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     11,
-     9,
-     4,
-     2
-    ],
-    "H": [],
-    "D": [
-     13,
-     6,
-     5
-    ],
-    "C": [
-     14,
-     7,
-     2
-    ]
-   },
-   "hp": 17,
-   "sp": 22,
-   "correct": "3♠",
-   "why": "17 hp og egen sparfarve (7 kort): 3♠ viser styrke i farven, ingen interesse for den anden major og udgangsinteresse. Makker støtter med xxx eller Hx."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     7,
-     6,
-     5
-    ],
-    "H": [
-     12,
-     7
-    ],
-    "D": [
-     5
-    ],
-    "C": [
-     14,
-     10,
-     9,
-     5
-    ]
-   },
-   "hp": 15,
-   "sp": 19,
-   "correct": "3♠",
-   "why": "15 hp og egen sparfarve (6 kort): 3♠ viser styrke i farven, ingen interesse for den anden major og udgangsinteresse. Makker støtter med xxx eller Hx."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [
-     10,
-     8,
-     6
-    ],
-    "H": [
-     14,
-     5,
-     3,
-     2
-    ],
-    "D": [
-     11,
-     10,
-     8,
-     6,
-     5
-    ],
-    "C": [
-     5
-    ]
-   },
-   "hp": 5,
-   "sp": 8,
-   "correct": "4♥",
-   "why": "Svag hånd med fit til begge majorer (3 spar, 4 hjerter): 4♥ er pas eller korriger og spærrende."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [
-     12,
-     10,
-     5
-    ],
-    "H": [
-     13,
-     9,
-     3,
-     2
-    ],
-    "D": [
-     9,
-     7
-    ],
-    "C": [
-     14,
-     9,
-     5,
-     2
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "correct": "4♥",
-   "why": "Svag hånd med fit til begge majorer (3 spar, 4 hjerter): 4♥ er pas eller korriger og spærrende."
-  },
-  {
-   "situation": "svar_2ru",
-   "hand": {
-    "S": [
-     13,
-     11,
-     7,
-     5
-    ],
-    "H": [
-     12,
-     9,
-     5
-    ],
-    "D": [
-     10,
-     8,
-     5
-    ],
-    "C": [
-     10,
-     7,
      6
     ]
    },
    "hp": 6,
-   "sp": 6,
-   "correct": "4♥",
-   "why": "Svag hånd med fit til begge majorer (4 spar, 3 hjerter): 4♥ er pas eller korriger og spærrende."
+   "sp": 8,
+   "correct": "3♦",
+   "why": "6 hp er dårlig multi (6–7): 3♦ er transfer til hjerter – 3♦ viser hjerter, 3♥ viser spar.",
+   "en": {
+    "why": "6 HCP is a poor multi (6–7): 3♦ is a transfer to hearts – 3♦ shows hearts, 3♥ shows spades."
+   }
   },
   {
-   "situation": "svar_2ru",
+   "situation": "gen_plauken",
    "hand": {
     "S": [
-     9,
-     5,
-     4,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     11,
-     7
-    ],
-    "D": [
-     9,
-     8,
-     6,
-     3
-    ],
-    "C": [
-     4
-    ]
-   },
-   "hp": 8,
-   "sp": 11,
-   "correct": "4♥",
-   "why": "Svag hånd med fit til begge majorer (4 spar, 4 hjerter): 4♥ er pas eller korriger og spærrende."
-  },
-  {
-   "situation": "svar_2hj",
-   "hand": {
-    "S": [
-     11,
-     4
-    ],
-    "H": [
-     11,
-     10,
-     4,
-     2
-    ],
-    "D": [
-     7,
-     6,
-     4,
-     2
-    ],
-    "C": [
-     11,
-     7,
-     4
-    ]
-   },
-   "hp": 3,
-   "sp": 4,
-   "correct": "Pas",
-   "why": "4 hjerter: pas er det sædvanlige svar – I spiller 2♥."
-  },
-  {
-   "situation": "svar_2hj",
-   "hand": {
-    "S": [
-     11,
-     6,
-     5,
-     2
-    ],
-    "H": [
-     13,
      12
     ],
-    "D": [
-     12,
+    "H": [
+     11,
+     10,
+     9,
      8,
-     5,
-     2
-    ],
-    "C": [
-     14,
-     10,
-     5
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "Pas",
-   "why": "2 hjerter: pas er det sædvanlige svar – I spiller 2♥."
-  },
-  {
-   "situation": "svar_2hj",
-   "hand": {
-    "S": [
-     13,
-     11,
-     5,
-     3
-    ],
-    "H": [
-     12,
      4,
+     3,
      2
     ],
     "D": [
-     6,
-     3
-    ],
-    "C": [
-     14,
-     12,
-     10,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "correct": "Pas",
-   "why": "3 hjerter: pas er det sædvanlige svar – I spiller 2♥."
-  },
-  {
-   "situation": "svar_2hj",
-   "hand": {
-    "S": [
      13,
-     11,
      4,
      2
     ],
-    "H": [
-     7,
-     5,
+    "C": [
+     9,
      4
-    ],
-    "D": [
-     7,
-     5,
-     3
-    ],
-    "C": [
-     9,
-     5,
-     3
     ]
    },
-   "hp": 4,
-   "sp": 4,
-   "correct": "Pas",
-   "why": "3 hjerter: pas er det sædvanlige svar – I spiller 2♥."
-  },
-  {
-   "situation": "svar_2hj",
-   "hand": {
-    "S": [
-     13,
-     10,
-     9,
-     4,
-     3
-    ],
-    "H": [
-     10,
-     8
-    ],
-    "D": [
-     7,
-     5
-    ],
-    "C": [
-     10,
-     8,
-     7,
-     5
-    ]
-   },
-   "hp": 3,
-   "sp": 5,
-   "correct": "Pas",
-   "why": "2 hjerter: pas er det sædvanlige svar – I spiller 2♥."
-  },
-  {
-   "situation": "svar_2hj",
-   "hand": {
-    "S": [
-     12,
-     9,
-     6,
-     4,
-     3
-    ],
-    "H": [],
-    "D": [
-     10,
-     7,
-     6
-    ],
-    "C": [
-     12,
-     11,
-     8,
-     4,
-     2
-    ]
-   },
-   "hp": 5,
+   "hp": 6,
    "sp": 10,
-   "correct": "2NT",
-   "why": "Kun 0 hjerter, men 3 ruder og 5 klør: 2NT spørger efter makkers minor, så I lander i et sikkert fit."
+   "correct": "3♦",
+   "why": "6 hp er dårlig multi (6–7): 3♦ er transfer til hjerter – 3♦ viser hjerter, 3♥ viser spar.",
+   "en": {
+    "why": "6 HCP is a poor multi (6–7): 3♦ is a transfer to hearts – 3♦ shows hearts, 3♥ shows spades."
+   }
   },
   {
-   "situation": "svar_2hj",
+   "situation": "gen_plauken",
    "hand": {
     "S": [
-     3
+     11,
+     8,
+     6
     ],
-    "H": [],
-    "D": [
+    "H": [
+     13,
      12,
      9,
+     8,
      7,
-     6,
      3,
      2
     ],
+    "D": [
+     10
+    ],
     "C": [
-     14,
+     6,
+     4
+    ]
+   },
+   "hp": 6,
+   "sp": 10,
+   "correct": "3♦",
+   "why": "6 hp er dårlig multi (6–7): 3♦ er transfer til hjerter – 3♦ viser hjerter, 3♥ viser spar.",
+   "en": {
+    "why": "6 HCP is a poor multi (6–7): 3♦ is a transfer to hearts – 3♦ shows hearts, 3♥ shows spades."
+   }
+  },
+  {
+   "situation": "gen_plauken",
+   "hand": {
+    "S": [
+     13,
+     9,
+     8,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     11,
+     8,
+     3
+    ],
+    "C": [
      12,
      10,
+     6
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "3♥",
+   "why": "6 hp er dårlig multi (6–7): 3♥ er transfer til spar – 3♦ viser hjerter, 3♥ viser spar.",
+   "en": {
+    "why": "6 HCP is a poor multi (6–7): 3♥ is a transfer to spades – 3♦ shows hearts, 3♥ shows spades."
+   }
+  },
+  {
+   "situation": "gen_plauken",
+   "hand": {
+    "S": [
+     13,
+     12,
      9,
-     3,
+     8,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     5,
+     3
+    ],
+    "D": [
+     6,
+     5
+    ],
+    "C": [
+     12,
+     8
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "3♥",
+   "why": "7 hp er dårlig multi (6–7): 3♥ er transfer til spar – 3♦ viser hjerter, 3♥ viser spar.",
+   "en": {
+    "why": "7 HCP is a poor multi (6–7): 3♥ is a transfer to spades – 3♦ shows hearts, 3♥ shows spades."
+   }
+  },
+  {
+   "situation": "gen_plauken",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10,
+     7,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     11,
+     3
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     9,
      2
     ]
    },
-   "hp": 8,
-   "sp": 16,
-   "correct": "2NT",
-   "why": "Kun 0 hjerter, men 6 ruder og 6 klør: 2NT spørger efter makkers minor, så I lander i et sikkert fit."
+   "hp": 7,
+   "sp": 11,
+   "correct": "3♥",
+   "why": "7 hp er dårlig multi (6–7): 3♥ er transfer til spar – 3♦ viser hjerter, 3♥ viser spar.",
+   "en": {
+    "why": "7 HCP is a poor multi (6–7): 3♥ is a transfer to spades – 3♦ shows hearts, 3♥ shows spades."
+   }
   },
   {
-   "situation": "svar_2hj",
+   "situation": "gen_plauken",
    "hand": {
     "S": [
      14,
-     9,
-     4
-    ],
-    "H": [
+     12,
+     11,
+     7,
+     6,
+     4,
      3
     ],
+    "H": [
+     10,
+     9,
+     6
+    ],
     "D": [
-     13,
-     12,
-     8,
      6,
      5,
      4
     ],
-    "C": [
-     12,
-     7,
-     2
-    ]
+    "C": []
    },
-   "hp": 11,
-   "sp": 14,
-   "correct": "2NT",
-   "why": "Kun 1 hjerter, men 6 ruder og 3 klør: 2NT spørger efter makkers minor, så I lander i et sikkert fit."
+   "hp": 7,
+   "sp": 12,
+   "correct": "3♥",
+   "why": "7 hp er dårlig multi (6–7): 3♥ er transfer til spar – 3♦ viser hjerter, 3♥ viser spar.",
+   "en": {
+    "why": "7 HCP is a poor multi (6–7): 3♥ is a transfer to spades – 3♦ shows hearts, 3♥ shows spades."
+   }
   },
   {
-   "situation": "svar_2hj",
+   "situation": "gen_plauken_relae",
    "hand": {
     "S": [
-     11,
-     7,
-     3
+     13,
+     9,
+     6
     ],
     "H": [
-     8
-    ],
-    "D": [
-     13,
-     12,
+     14,
      10,
-     9,
-     7,
-     6
-    ],
-    "C": [
-     12,
-     10,
-     6
-    ]
-   },
-   "hp": 8,
-   "sp": 11,
-   "correct": "2NT",
-   "why": "Kun 1 hjerter, men 6 ruder og 3 klør: 2NT spørger efter makkers minor, så I lander i et sikkert fit."
-  },
-  {
-   "situation": "svar_2hj",
-   "hand": {
-    "S": [
-     13,
-     11,
-     7
-    ],
-    "H": [],
-    "D": [
-     13,
-     9,
-     8,
-     7
-    ],
-    "C": [
-     12,
-     11,
      9,
      5,
      4,
+     2
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     12,
+     7,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "3♠",
+   "why": "3♦ beder om farven. Svaret er transfer: 3♠ = hjerter, 3♥ = spar. Din farve er hjerter: 3♠.",
+   "en": {
+    "why": "3♦ asks for the suit. The answer is a transfer: 3♠ = hearts, 3♥ = spades. Your suit is hearts: 3♠."
+   }
+  },
+  {
+   "situation": "gen_plauken_relae",
+   "hand": {
+    "S": [
+     10,
+     6
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     9,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     8
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♠",
+   "why": "3♦ beder om farven. Svaret er transfer: 3♠ = hjerter, 3♥ = spar. Din farve er hjerter: 3♠.",
+   "en": {
+    "why": "3♦ asks for the suit. The answer is a transfer: 3♠ = hearts, 3♥ = spades. Your suit is hearts: 3♠."
+   }
+  },
+  {
+   "situation": "gen_plauken_relae",
+   "hand": {
+    "S": [
+     4,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     9,
+     7,
+     5
+    ],
+    "D": [
+     9,
+     3
+    ],
+    "C": [
+     11,
+     10,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♠",
+   "why": "3♦ beder om farven. Svaret er transfer: 3♠ = hjerter, 3♥ = spar. Din farve er hjerter: 3♠.",
+   "en": {
+    "why": "3♦ asks for the suit. The answer is a transfer: 3♠ = hearts, 3♥ = spades. Your suit is hearts: 3♠."
+   }
+  },
+  {
+   "situation": "gen_plauken_relae",
+   "hand": {
+    "S": [
+     14,
+     5,
+     4
+    ],
+    "H": [
+     13,
+     9,
+     8,
+     6,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     11,
+     4
+    ],
+    "C": [
+     7
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "correct": "3♠",
+   "why": "3♦ beder om farven. Svaret er transfer: 3♠ = hjerter, 3♥ = spar. Din farve er hjerter: 3♠.",
+   "en": {
+    "why": "3♦ asks for the suit. The answer is a transfer: 3♠ = hearts, 3♥ = spades. Your suit is hearts: 3♠."
+   }
+  },
+  {
+   "situation": "gen_plauken_relae",
+   "hand": {
+    "S": [
+     12,
+     11,
+     8,
+     5,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     2
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     3,
      2
     ]
    },
    "hp": 10,
-   "sp": 15,
-   "correct": "2NT",
-   "why": "Kun 0 hjerter, men 4 ruder og 6 klør: 2NT spørger efter makkers minor, så I lander i et sikkert fit."
+   "sp": 14,
+   "correct": "3♥",
+   "why": "3♦ beder om farven. Svaret er transfer: 3♠ = hjerter, 3♥ = spar. Din farve er spar: 3♥.",
+   "en": {
+    "why": "3♦ asks for the suit. The answer is a transfer: 3♠ = hearts, 3♥ = spades. Your suit is spades: 3♥."
+   }
   },
   {
-   "situation": "svar_2sp",
+   "situation": "gen_plauken_relae",
    "hand": {
     "S": [
-     11,
+     12,
+     10,
+     9,
+     8,
      7,
-     4
+     6,
+     2
     ],
     "H": [
-     7,
-     4
+     11,
+     9,
+     8
     ],
     "D": [
      14,
-     13,
-     8,
-     7,
-     5,
-     3
+     12,
+     9
     ],
-    "C": [
-     6,
-     2
-    ]
+    "C": []
    },
-   "hp": 8,
-   "sp": 10,
-   "correct": "Pas",
-   "why": "3 spar: pas er det sædvanlige svar – I spiller 2♠."
+   "hp": 9,
+   "sp": 14,
+   "correct": "3♥",
+   "why": "3♦ beder om farven. Svaret er transfer: 3♠ = hjerter, 3♥ = spar. Din farve er spar: 3♥.",
+   "en": {
+    "why": "3♦ asks for the suit. The answer is a transfer: 3♠ = hearts, 3♥ = spades. Your suit is spades: 3♥."
+   }
   },
   {
-   "situation": "svar_2sp",
+   "situation": "gen_plauken_relae",
    "hand": {
     "S": [
-     8,
-     3
+     14,
+     12,
+     11,
+     9,
+     7,
+     6,
+     2
     ],
     "H": [
-     11,
-     6,
-     5
+     12,
+     3
     ],
     "D": [
-     11,
-     10,
-     4,
-     2
+     6,
+     3
     ],
     "C": [
-     12,
-     9,
-     8,
-     2
+     10,
+     6
     ]
    },
-   "hp": 4,
-   "sp": 5,
-   "correct": "Pas",
-   "why": "2 spar: pas er det sædvanlige svar – I spiller 2♠."
+   "hp": 9,
+   "sp": 12,
+   "correct": "3♥",
+   "why": "3♦ beder om farven. Svaret er transfer: 3♠ = hjerter, 3♥ = spar. Din farve er spar: 3♥.",
+   "en": {
+    "why": "3♦ asks for the suit. The answer is a transfer: 3♠ = hearts, 3♥ = spades. Your suit is spades: 3♥."
+   }
   },
   {
-   "situation": "svar_2sp",
+   "situation": "gen_plauken_relae",
    "hand": {
     "S": [
+     14,
      13,
-     9,
+     12,
+     11,
+     10,
+     8,
+     3
+    ],
+    "H": [],
+    "D": [
+     6,
+     5,
+     4
+    ],
+    "C": [
+     10,
+     7,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "3♦ beder om farven. Svaret er transfer: 3♠ = hjerter, 3♥ = spar. Din farve er spar: 3♥.",
+   "en": {
+    "why": "3♦ asks for the suit. The answer is a transfer: 3♠ = hearts, 3♥ = spades. Your suit is spades: 3♥."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
      6
     ],
     "H": [
+     10,
      9,
-     4,
-     2
+     6,
+     5
     ],
     "D": [
-     10,
-     4,
+     9,
+     5,
+     4
+    ],
+    "C": [
+     7,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2♦",
+   "why": "Lige mange spar og hjerter (4-4): 2♦ spørger efter makkers femfarve, så I lander i 5-4-fittet.",
+   "en": {
+    "why": "As many spades as hearts (4-4): 2♦ asks for partner's five-card suit, so you land in the 5-4 fit."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     7,
      3,
      2
     ],
+    "H": [
+     9,
+     8,
+     4
+    ],
+    "D": [
+     13,
+     8,
+     7,
+     3
+    ],
     "C": [
      8,
-     6,
-     5
+     7,
+     6
     ]
    },
    "hp": 3,
    "sp": 3,
-   "correct": "Pas",
-   "why": "3 spar: pas er det sædvanlige svar – I spiller 2♠."
+   "correct": "2♦",
+   "why": "Lige mange spar og hjerter (3-3): 2♦ spørger efter makkers femfarve, så I lander i 5-3-fittet.",
+   "en": {
+    "why": "As many spades as hearts (3-3): 2♦ asks for partner's five-card suit, so you land in the 5-3 fit."
+   }
   },
   {
-   "situation": "svar_2sp",
+   "situation": "svar_2kl",
    "hand": {
     "S": [
-     12,
-     6,
-     4,
-     3,
-     2
-    ],
-    "H": [
-     10,
-     7,
-     6,
-     4
-    ],
-    "D": [
-     14,
-     4
-    ],
-    "C": [
-     3,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 8,
-   "correct": "Pas",
-   "why": "5 spar: pas er det sædvanlige svar – I spiller 2♠."
-  },
-  {
-   "situation": "svar_2sp",
-   "hand": {
-    "S": [
-     14,
      9,
-     5
+     8,
+     2
     ],
     "H": [
      11,
      10,
-     9,
+     2
+    ],
+    "D": [
      7,
+     5
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     8,
+     7
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "2♦",
+   "why": "Lige mange spar og hjerter (3-3): 2♦ spørger efter makkers femfarve, så I lander i 5-3-fittet.",
+   "en": {
+    "why": "As many spades as hearts (3-3): 2♦ asks for partner's five-card suit, so you land in the 5-3 fit."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     14,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     8,
      6
     ],
     "D": [
+     11,
+     3,
+     2
+    ],
+    "C": [
+     10,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "2♦",
+   "why": "Lige mange spar og hjerter (4-4): 2♦ spørger efter makkers femfarve, så I lander i 5-4-fittet.",
+   "en": {
+    "why": "As many spades as hearts (4-4): 2♦ asks for partner's five-card suit, so you land in the 5-4 fit."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
      13,
+     11,
+     7,
+     3
+    ],
+    "H": [
+     13,
+     10,
+     7,
+     3
+    ],
+    "D": [
      12,
+     6,
+     5
+    ],
+    "C": [
+     5,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2♦",
+   "why": "Lige mange spar og hjerter (4-4): 2♦ spørger efter makkers femfarve, så I lander i 5-4-fittet.",
+   "en": {
+    "why": "As many spades as hearts (4-4): 2♦ asks for partner's five-card suit, so you land in the 5-4 fit."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     11,
+     9,
+     6,
+     3
+    ],
+    "D": [
+     10,
+     9
+    ],
+    "C": [
+     13,
+     10,
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "2♥",
+   "why": "Flest hjerter (2 spar, 4 hjerter): 2♥ er præference til den bedste major – det sædvanlige svar.",
+   "en": {
+    "why": "More hearts (2 spades, 4 hearts): 2♥ is a preference for the better major – the usual response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     10,
+     7,
+     6,
+     4,
+     2
+    ],
+    "D": [
      9
     ],
     "C": [
@@ -5738,98 +4875,1592 @@
      3
     ]
    },
-   "hp": 11,
+   "hp": 8,
    "sp": 12,
-   "correct": "Pas",
-   "why": "3 spar: pas er det sædvanlige svar – I spiller 2♠."
+   "correct": "2♥",
+   "why": "Flest hjerter (4 spar, 6 hjerter): 2♥ er præference til den bedste major – det sædvanlige svar.",
+   "en": {
+    "why": "More hearts (4 spades, 6 hearts): 2♥ is a preference for the better major – the usual response."
+   }
   },
   {
-   "situation": "svar_2sp",
+   "situation": "svar_2kl",
    "hand": {
-    "S": [],
+    "S": [
+     8,
+     6,
+     5
+    ],
     "H": [
-     13,
+     14,
+     12,
      11,
-     10,
-     6
+     3
     ],
     "D": [
-     9,
+     12,
+     8,
      7,
+     4,
+     2
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "2♥",
+   "why": "Flest hjerter (3 spar, 4 hjerter): 2♥ er præference til den bedste major – det sædvanlige svar.",
+   "en": {
+    "why": "More hearts (3 spades, 4 hearts): 2♥ is a preference for the better major – the usual response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     10,
+     8,
+     5,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     12,
+     9,
+     6,
      5
+    ],
+    "C": []
+   },
+   "hp": 7,
+   "sp": 12,
+   "correct": "2♥",
+   "why": "Flest hjerter (4 spar, 5 hjerter): 2♥ er præference til den bedste major – det sædvanlige svar.",
+   "en": {
+    "why": "More hearts (4 spades, 5 hearts): 2♥ is a preference for the better major – the usual response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     9,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     5,
+     3
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     13,
+     9,
+     8,
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 14,
+   "correct": "2♥",
+   "why": "Flest hjerter (2 spar, 4 hjerter): 2♥ er præference til den bedste major – det sædvanlige svar.",
+   "en": {
+    "why": "More hearts (2 spades, 4 hearts): 2♥ is a preference for the better major – the usual response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     5
+    ],
+    "H": [
+     10,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     7,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     8,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "Flest spar (3 spar, 2 hjerter): 2♠ er præference til den bedste major – det sædvanlige svar.",
+   "en": {
+    "why": "More spades (3 spades, 2 hearts): 2♠ is a preference for the better major – the usual response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     14,
+     8,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     12,
+     6,
+     3
+    ],
+    "D": [
+     11,
+     7,
+     6
+    ],
+    "C": [
+     11,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♠",
+   "why": "Flest spar (5 spar, 3 hjerter): 2♠ er præference til den bedste major – det sædvanlige svar.",
+   "en": {
+    "why": "More spades (5 spades, 3 hearts): 2♠ is a preference for the better major – the usual response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     11,
+     9,
+     3
+    ],
+    "H": [
+     13,
+     3
+    ],
+    "D": [
+     11,
+     9,
+     5,
+     4
     ],
     "C": [
      14,
      10,
+     7,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2♠",
+   "why": "Flest spar (3 spar, 2 hjerter): 2♠ er præference til den bedste major – det sædvanlige svar.",
+   "en": {
+    "why": "More spades (3 spades, 2 hearts): 2♠ is a preference for the better major – the usual response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     13,
+     7,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     6,
+     5,
+     2
+    ],
+    "D": [
+     10,
      9,
-     8,
+     5
+    ],
+    "C": [
+     13,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "2♠",
+   "why": "Flest spar (5 spar, 3 hjerter): 2♠ er præference til den bedste major – det sædvanlige svar.",
+   "en": {
+    "why": "More spades (5 spades, 3 hearts): 2♠ is a preference for the better major – the usual response."
+   }
+  },
+  {
+   "situation": "svar_2kl",
+   "hand": {
+    "S": [
+     10,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     9,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     5,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "correct": "2♠",
+   "why": "Flest spar (4 spar, 3 hjerter): 2♠ er præference til den bedste major – det sædvanlige svar.",
+   "en": {
+    "why": "More spades (4 spades, 3 hearts): 2♠ is a preference for the better major – the usual response."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     13,
+     6,
+     5
+    ],
+    "H": [
+     13,
+     7
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     7,
+     5
+    ],
+    "C": [
+     10,
      7,
      4
     ]
    },
-   "hp": 8,
-   "sp": 13,
-   "correct": "2NT",
-   "why": "Kun 0 spar, men 3 ruder og 6 klør: 2NT spørger efter makkers minor, så I lander i et sikkert fit."
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♥",
+   "why": "15 hp med 3 spar, men kun 2 hjerter: 2♥ er pas eller korriger. Retter makker til 2♠, kan du støtte til udgang.",
+   "en": {
+    "why": "15 HCP with 3 spades, but only 2 hearts: 2♥ is pass or correct. If partner corrects to 2♠, you can raise to game."
+   }
   },
   {
-   "situation": "svar_2sp",
+   "situation": "svar_2ru",
    "hand": {
     "S": [],
+    "H": [
+     11,
+     6,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     7,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     8
+    ]
+   },
+   "hp": 8,
+   "sp": 13,
+   "correct": "2♥",
+   "why": "Svag hånd (8 hp): 2♥ er pas eller korriger – makker passer med hjerter og retter til 2♠ med spar. Alle svage hænder melder 2♥.",
+   "en": {
+    "why": "Weak hand (8 HCP): 2♥ is pass or correct – partner passes with hearts and corrects to 2♠ with spades. Every weak hand bids 2♥."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     6
+    ],
+    "H": [
+     14,
+     11
+    ],
+    "D": [
+     12,
+     10,
+     9,
+     5
+    ],
+    "C": [
+     14,
+     12,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "16 hp med 4 spar, men kun 2 hjerter: 2♥ er pas eller korriger. Retter makker til 2♠, kan du støtte til udgang.",
+   "en": {
+    "why": "16 HCP with 4 spades, but only 2 hearts: 2♥ is pass or correct. If partner corrects to 2♠, you can raise to game."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     9,
+     6
+    ],
+    "H": [
+     11,
+     3
+    ],
+    "D": [
+     10,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     8,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "2♥",
+   "why": "14 hp med 5 spar, men kun 2 hjerter: 2♥ er pas eller korriger. Retter makker til 2♠, kan du støtte til udgang.",
+   "en": {
+    "why": "14 HCP with 5 spades, but only 2 hearts: 2♥ is pass or correct. If partner corrects to 2♠, you can raise to game."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     14,
+     7
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     8,
+     6
+    ],
+    "D": [
+     13,
+     12,
+     5,
+     3
+    ],
+    "C": [
+     9,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "2♠",
+   "why": "15 hp med 5 hjerter, men kun 2 spar: 2♠ er udgangsopfordring, hvis makker har hjerter. Har makker spar, passer han.",
+   "en": {
+    "why": "15 HCP with 5 hearts, but only 2 spades: 2♠ invites game if partner has hearts. If partner has spades, partner passes."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     11,
+     9
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     8,
+     4
+    ],
+    "D": [
+     14,
+     11,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "15 hp med 5 hjerter, men kun 2 spar: 2♠ er udgangsopfordring, hvis makker har hjerter. Har makker spar, passer han.",
+   "en": {
+    "why": "15 HCP with 5 hearts, but only 2 spades: 2♠ invites game if partner has hearts. If partner has spades, partner passes."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     11,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     10
+    ],
+    "D": [
+     13,
+     10,
+     8,
+     7,
+     6
+    ],
+    "C": [
+     14,
+     11,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2♠",
+   "why": "14 hp med 3 hjerter, men kun 2 spar: 2♠ er udgangsopfordring, hvis makker har hjerter. Har makker spar, passer han.",
+   "en": {
+    "why": "14 HCP with 3 hearts, but only 2 spades: 2♠ invites game if partner has hearts. If partner has spades, partner passes."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     10,
+     9,
+     4
+    ],
+    "D": [
+     14,
+     9,
+     7,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     10,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "2♠",
+   "why": "16 hp med 3 hjerter, men kun 1 spar: 2♠ er udgangsopfordring, hvis makker har hjerter. Har makker spar, passer han.",
+   "en": {
+    "why": "16 HCP with 3 hearts, but only 1 spades: 2♠ invites game if partner has hearts. If partner has spades, partner passes."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     5,
+     2
+    ],
+    "H": [
+     11,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     9,
+     5
+    ],
+    "C": [
+     13,
+     11,
+     10
+    ]
+   },
+   "hp": 16,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "16 hp og plads i begge majorer: 2NT (Plauken) er stærkt relæ – udgangsinteresse, uanset hvilken major makker har.",
+   "en": {
+    "why": "16 HCP and room in both majors: 2NT (Plauken) is a strong relay – game interest whichever major partner holds."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11
+    ],
+    "H": [
+     12,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     10,
+     7
+    ],
+    "C": [
+     14,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "14 hp og plads i begge majorer: 2NT (Plauken) er stærkt relæ – udgangsinteresse, uanset hvilken major makker har.",
+   "en": {
+    "why": "14 HCP and room in both majors: 2NT (Plauken) is a strong relay – game interest whichever major partner holds."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     5
+    ],
+    "H": [
+     13,
+     8,
+     4
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     5
+    ],
+    "C": [
+     9,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "14 hp og plads i begge majorer: 2NT (Plauken) er stærkt relæ – udgangsinteresse, uanset hvilken major makker har.",
+   "en": {
+    "why": "14 HCP and room in both majors: 2NT (Plauken) is a strong relay – game interest whichever major partner holds."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     10
+    ],
+    "D": [
+     12,
+     6,
+     3
+    ],
+    "C": [
+     11,
+     7,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "15 hp og plads i begge majorer: 2NT (Plauken) er stærkt relæ – udgangsinteresse, uanset hvilken major makker har.",
+   "en": {
+    "why": "15 HCP and room in both majors: 2NT (Plauken) is a strong relay – game interest whichever major partner holds."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     6,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     6
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 17,
+   "sp": 23,
+   "correct": "3♥",
+   "why": "17 hp og egen hjerterfarve (7 kort): 3♥ viser styrke i farven, ingen interesse for den anden major og udgangsinteresse. Makker støtter med xxx eller Hx.",
+   "en": {
+    "why": "17 HCP and your own heart suit (7 cards): 3♥ shows strength in the suit, no interest in the other major and game interest. Partner raises with xxx or Hx."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     7,
+     5
+    ],
+    "D": [
+     14,
+     10,
+     7
+    ],
+    "C": [
+     13,
+     7,
+     6,
+     4
+    ]
+   },
+   "hp": 17,
+   "sp": 22,
+   "correct": "3♥",
+   "why": "17 hp og egen hjerterfarve (6 kort): 3♥ viser styrke i farven, ingen interesse for den anden major og udgangsinteresse. Makker støtter med xxx eller Hx.",
+   "en": {
+    "why": "17 HCP and your own heart suit (6 cards): 3♥ shows strength in the suit, no interest in the other major and game interest. Partner raises with xxx or Hx."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     10,
+     8,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     2
+    ],
+    "C": [
+     7
+    ]
+   },
+   "hp": 15,
+   "sp": 21,
+   "correct": "3♥",
+   "why": "15 hp og egen hjerterfarve (7 kort): 3♥ viser styrke i farven, ingen interesse for den anden major og udgangsinteresse. Makker støtter med xxx eller Hx.",
+   "en": {
+    "why": "15 HCP and your own heart suit (7 cards): 3♥ shows strength in the suit, no interest in the other major and game interest. Partner raises with xxx or Hx."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     13,
+     11
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     10,
+     9
+    ],
+    "D": [
+     13,
+     8,
+     3
+    ],
+    "C": [
+     12,
+     4
+    ]
+   },
+   "hp": 19,
+   "sp": 21,
+   "correct": "3♥",
+   "why": "19 hp og egen hjerterfarve (6 kort): 3♥ viser styrke i farven, ingen interesse for den anden major og udgangsinteresse. Makker støtter med xxx eller Hx.",
+   "en": {
+    "why": "19 HCP and your own heart suit (6 cards): 3♥ shows strength in the suit, no interest in the other major and game interest. Partner raises with xxx or Hx."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     9,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     4
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     11,
+     8,
+     6
+    ]
+   },
+   "hp": 17,
+   "sp": 19,
+   "correct": "3♠",
+   "why": "17 hp og egen sparfarve (6 kort): 3♠ viser styrke i farven, ingen interesse for den anden major og udgangsinteresse. Makker støtter med xxx eller Hx.",
+   "en": {
+    "why": "17 HCP and your own spade suit (6 cards): 3♠ shows strength in the suit, no interest in the other major and game interest. Partner raises with xxx or Hx."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     10,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     13,
+     11,
+     8,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "3♠",
+   "why": "15 hp og egen sparfarve (6 kort): 3♠ viser styrke i farven, ingen interesse for den anden major og udgangsinteresse. Makker støtter med xxx eller Hx.",
+   "en": {
+    "why": "15 HCP and your own spade suit (6 cards): 3♠ shows strength in the suit, no interest in the other major and game interest. Partner raises with xxx or Hx."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     2
+    ],
+    "C": [
+     7,
+     6
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3♠",
+   "why": "15 hp og egen sparfarve (6 kort): 3♠ viser styrke i farven, ingen interesse for den anden major og udgangsinteresse. Makker støtter med xxx eller Hx.",
+   "en": {
+    "why": "15 HCP and your own spade suit (6 cards): 3♠ shows strength in the suit, no interest in the other major and game interest. Partner raises with xxx or Hx."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     9,
+     6,
+     2
+    ],
+    "H": [
+     14,
+     9
+    ],
+    "D": [
+     13,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     10
+    ]
+   },
+   "hp": 18,
+   "sp": 20,
+   "correct": "3♠",
+   "why": "18 hp og egen sparfarve (6 kort): 3♠ viser styrke i farven, ingen interesse for den anden major og udgangsinteresse. Makker støtter med xxx eller Hx.",
+   "en": {
+    "why": "18 HCP and your own spade suit (6 cards): 3♠ shows strength in the suit, no interest in the other major and game interest. Partner raises with xxx or Hx."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     10,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     11,
+     5,
+     2
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     4,
+     3
+    ]
+   },
+   "hp": 4,
+   "sp": 7,
+   "correct": "4♥",
+   "why": "Svag hånd med fit til begge majorer (4 spar, 3 hjerter): 4♥ er pas eller korriger og spærrende.",
+   "en": {
+    "why": "Weak hand with a fit for both majors (4 spades, 3 hearts): 4♥ is pass or correct and preemptive."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     12,
+     5,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     3
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     10,
+     8,
+     7,
+     6,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "correct": "4♥",
+   "why": "Svag hånd med fit til begge majorer (3 spar, 4 hjerter): 4♥ er pas eller korriger og spærrende.",
+   "en": {
+    "why": "Weak hand with a fit for both majors (3 spades, 4 hearts): 4♥ is pass or correct and preemptive."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     9,
+     8,
+     5
+    ],
+    "H": [
+     14,
+     10,
+     8,
+     6
+    ],
+    "D": [
+     11,
+     10,
+     2
+    ],
+    "C": [
+     13,
+     8,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "correct": "4♥",
+   "why": "Svag hånd med fit til begge majorer (3 spar, 4 hjerter): 4♥ er pas eller korriger og spærrende.",
+   "en": {
+    "why": "Weak hand with a fit for both majors (3 spades, 4 hearts): 4♥ is pass or correct and preemptive."
+   }
+  },
+  {
+   "situation": "svar_2ru",
+   "hand": {
+    "S": [
+     11,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     7,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     4,
+     3
+    ],
+    "C": [
+     9,
+     6
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "4♥",
+   "why": "Svag hånd med fit til begge majorer (4 spar, 3 hjerter): 4♥ er pas eller korriger og spærrende.",
+   "en": {
+    "why": "Weak hand with a fit for both majors (4 spades, 3 hearts): 4♥ is pass or correct and preemptive."
+   }
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     5
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     10
+    ],
+    "D": [
+     13,
+     8,
+     3
+    ],
+    "C": [
+     7,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "4 hjerter: pas er det sædvanlige svar – I spiller 2♥.",
+   "en": {
+    "why": "4 hearts: pass is the usual response – you play 2♥."
+   }
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     13,
+     8
+    ],
+    "H": [
+     13,
+     12,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     8,
+     7,
+     2
+    ],
+    "C": [
+     11,
+     10,
+     9
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "5 hjerter: pas er det sædvanlige svar – I spiller 2♥.",
+   "en": {
+    "why": "5 hearts: pass is the usual response – you play 2♥."
+   }
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     7,
+     2
+    ],
+    "H": [
+     9,
+     6
+    ],
+    "D": [
+     13,
+     11,
+     8,
+     5
+    ],
+    "C": [
+     13,
+     12,
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "2 hjerter: pas er det sædvanlige svar – I spiller 2♥.",
+   "en": {
+    "why": "2 hearts: pass is the usual response – you play 2♥."
+   }
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     11,
+     9
+    ],
+    "H": [
+     14,
+     5,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     8,
+     6,
+     5,
+     4
+    ],
+    "C": [
+     11,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "3 hjerter: pas er det sædvanlige svar – I spiller 2♥.",
+   "en": {
+    "why": "3 hearts: pass is the usual response – you play 2♥."
+   }
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     11,
+     10,
+     7
+    ],
+    "H": [
+     13,
+     11,
+     4
+    ],
+    "D": [
+     12,
+     11,
+     7,
+     4,
+     3
+    ],
+    "C": [
+     5,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "Pas",
+   "why": "3 hjerter: pas er det sædvanlige svar – I spiller 2♥.",
+   "en": {
+    "why": "3 hearts: pass is the usual response – you play 2♥."
+   }
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     11,
+     7,
+     6,
+     3
+    ],
+    "H": [],
+    "D": [
+     14,
+     12,
+     10,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     10,
+     9,
+     6
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "correct": "2NT",
+   "why": "Kun 0 hjerter, men 6 ruder og 3 klør: 2NT spørger efter makkers minor, så I lander i et sikkert fit.",
+   "en": {
+    "why": "Only 0 hearts, but 6 diamonds and 3 clubs: 2NT asks for partner's minor, so you land in a safe fit."
+   }
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     11,
+     6,
+     4,
+     3,
+     2
+    ],
     "H": [
      8
     ],
     "D": [
      14,
-     12,
-     11,
-     8,
-     7,
-     4
+     10,
+     2
     ],
     "C": [
+     12,
+     9,
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "2NT",
+   "why": "Kun 1 hjerter, men 3 ruder og 4 klør: 2NT spørger efter makkers minor, så I lander i et sikkert fit.",
+   "en": {
+    "why": "Only 1 hearts, but 3 diamonds and 4 clubs: 2NT asks for partner's minor, so you land in a safe fit."
+   }
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
      13,
+     12,
+     11
+    ],
+    "H": [
+     9
+    ],
+    "D": [
      11,
-     8,
+     10,
+     9,
+     2
+    ],
+    "C": [
+     14,
+     9,
      7,
-     5,
-     4
+     3,
+     2
     ]
    },
    "hp": 11,
-   "sp": 19,
+   "sp": 14,
    "correct": "2NT",
-   "why": "Kun 0 spar, men 6 ruder og 6 klør: 2NT spørger efter makkers minor, så I lander i et sikkert fit."
+   "why": "Kun 1 hjerter, men 4 ruder og 5 klør: 2NT spørger efter makkers minor, så I lander i et sikkert fit.",
+   "en": {
+    "why": "Only 1 hearts, but 4 diamonds and 5 clubs: 2NT asks for partner's minor, so you land in a safe fit."
+   }
   },
   {
-   "situation": "svar_2sp",
+   "situation": "svar_2hj",
    "hand": {
     "S": [
-     4
+     11,
+     9,
+     7,
+     4,
+     2
     ],
     "H": [
      7
     ],
     "D": [
      11,
+     9,
+     8,
+     4
+    ],
+    "C": [
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 2,
+   "sp": 5,
+   "correct": "2NT",
+   "why": "Kun 1 hjerter, men 4 ruder og 3 klør: 2NT spørger efter makkers minor, så I lander i et sikkert fit.",
+   "en": {
+    "why": "Only 1 hearts, but 4 diamonds and 3 clubs: 2NT asks for partner's minor, so you land in a safe fit."
+   }
+  },
+  {
+   "situation": "svar_2hj",
+   "hand": {
+    "S": [
+     12,
+     8,
+     7,
+     5
+    ],
+    "H": [],
+    "D": [
+     11,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     11,
      10,
+     6,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "2NT",
+   "why": "Kun 0 hjerter, men 3 ruder og 6 klør: 2NT spørger efter makkers minor, så I lander i et sikkert fit.",
+   "en": {
+    "why": "Only 0 hearts, but 3 diamonds and 6 clubs: 2NT asks for partner's minor, so you land in a safe fit."
+   }
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     10,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     10,
+     8,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     8,
+     5,
+     2
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "Pas",
+   "why": "3 spar: pas er det sædvanlige svar – I spiller 2♠.",
+   "en": {
+    "why": "3 spades: pass is the usual response – you play 2♠."
+   }
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     8,
+     7,
+     5
+    ],
+    "H": [
+     13,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     7
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "3 spar: pas er det sædvanlige svar – I spiller 2♠.",
+   "en": {
+    "why": "3 spades: pass is the usual response – you play 2♠."
+   }
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     14,
+     11,
+     4
+    ],
+    "H": [
      7,
      6,
      3,
      2
     ],
+    "D": [
+     5,
+     4,
+     3
+    ],
     "C": [
-     14,
+     12,
+     10,
+     8
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "Pas",
+   "why": "3 spar: pas er det sædvanlige svar – I spiller 2♠.",
+   "en": {
+    "why": "3 spades: pass is the usual response – you play 2♠."
+   }
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     12,
+     10,
+     5
+    ],
+    "H": [
      13,
      12,
-     11,
-     4
+     2
+    ],
+    "D": [
+     10,
+     9
+    ],
+    "C": [
+     14,
+     10,
+     5,
+     4,
+     2
     ]
    },
    "hp": 11,
-   "sp": 17,
+   "sp": 12,
+   "correct": "Pas",
+   "why": "3 spar: pas er det sædvanlige svar – I spiller 2♠.",
+   "en": {
+    "why": "3 spades: pass is the usual response – you play 2♠."
+   }
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     11,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     4
+    ],
+    "D": [
+     12,
+     10,
+     7
+    ],
+    "C": [
+     11,
+     8,
+     4,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "Pas",
+   "why": "2 spar: pas er det sædvanlige svar – I spiller 2♠.",
+   "en": {
+    "why": "2 spades: pass is the usual response – you play 2♠."
+   }
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     8,
+     7,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     11,
+     9,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     9,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
    "correct": "2NT",
-   "why": "Kun 1 spar, men 6 ruder og 5 klør: 2NT spørger efter makkers minor, så I lander i et sikkert fit."
+   "why": "Kun 1 spar, men 4 ruder og 3 klør: 2NT spørger efter makkers minor, så I lander i et sikkert fit.",
+   "en": {
+    "why": "Only 1 spades, but 4 diamonds and 3 clubs: 2NT asks for partner's minor, so you land in a safe fit."
+   }
   },
   {
    "situation": "svar_2sp",
@@ -5837,328 +6468,1179 @@
     "S": [],
     "H": [
      13,
-     7,
+     11,
+     8,
      6,
-     4,
-     3
+     4
     ],
     "D": [
-     7,
-     6,
-     5,
-     2
+     14,
+     13,
+     11,
+     9,
+     5
     ],
     "C": [
      10,
-     8,
-     6,
+     7,
      5
     ]
    },
-   "hp": 3,
-   "sp": 8,
+   "hp": 12,
+   "sp": 17,
    "correct": "2NT",
-   "why": "Kun 0 spar, men 4 ruder og 4 klør: 2NT spørger efter makkers minor, så I lander i et sikkert fit."
+   "why": "Kun 0 spar, men 5 ruder og 3 klør: 2NT spørger efter makkers minor, så I lander i et sikkert fit.",
+   "en": {
+    "why": "Only 0 spades, but 5 diamonds and 3 clubs: 2NT asks for partner's minor, so you land in a safe fit."
+   }
   },
   {
    "situation": "svar_2sp",
    "hand": {
     "S": [
-     7
+     6
     ],
     "H": [
-     14,
-     13,
-     9,
-     4,
-     2
+     5
     ],
     "D": [
-     11,
+     14,
+     13,
+     10,
      9,
      3
     ],
     "C": [
+     12,
+     11,
      10,
-     7,
-     3,
-     2
+     6,
+     4,
+     3
     ]
    },
-   "hp": 8,
-   "sp": 11,
+   "hp": 10,
+   "sp": 16,
    "correct": "2NT",
-   "why": "Kun 1 spar, men 3 ruder og 4 klør: 2NT spørger efter makkers minor, så I lander i et sikkert fit."
+   "why": "Kun 1 spar, men 5 ruder og 6 klør: 2NT spørger efter makkers minor, så I lander i et sikkert fit.",
+   "en": {
+    "why": "Only 1 spades, but 5 diamonds and 6 clubs: 2NT asks for partner's minor, so you land in a safe fit."
+   }
   },
   {
-   "situation": "svar_2nt",
+   "situation": "svar_2sp",
    "hand": {
     "S": [
-     11,
-     2
+     12
     ],
     "H": [
-     12,
-     6
-    ],
-    "D": [
      10,
      9,
      8,
      2
     ],
-    "C": [
+    "D": [
      10,
+     9,
+     7,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "correct": "2NT",
+   "why": "Kun 1 spar, men 4 ruder og 4 klør: 2NT spørger efter makkers minor, så I lander i et sikkert fit.",
+   "en": {
+    "why": "Only 1 spades, but 4 diamonds and 4 clubs: 2NT asks for partner's minor, so you land in a safe fit."
+   }
+  },
+  {
+   "situation": "svar_2sp",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     10,
+     8
+    ],
+    "D": [
+     14,
+     13,
+     8,
      5,
-     4,
-     3,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     6,
+     5,
      2
     ]
    },
-   "hp": 3,
-   "sp": 5,
-   "correct": "3♣",
-   "why": "5 klør og 4 ruder: 3♣ – præference til klør, når den er mindst lige så lang."
+   "hp": 12,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "Kun 1 spar, men 5 ruder og 5 klør: 2NT spørger efter makkers minor, så I lander i et sikkert fit.",
+   "en": {
+    "why": "Only 1 spades, but 5 diamonds and 5 clubs: 2NT asks for partner's minor, so you land in a safe fit."
+   }
   },
   {
    "situation": "svar_2nt",
    "hand": {
     "S": [
      13,
-     10,
-     6,
-     5
+     8,
+     5,
+     4
     ],
     "H": [
-     12,
-     10,
-     9
+     7
     ],
     "D": [
-     9,
-     7,
+     10,
+     3,
      2
     ],
     "C": [
-     14,
      11,
-     10
+     9,
+     7,
+     6,
+     4
     ]
    },
-   "hp": 10,
-   "sp": 10,
+   "hp": 4,
+   "sp": 7,
    "correct": "3♣",
-   "why": "3 klør og 3 ruder: 3♣ – præference til klør, når den er mindst lige så lang."
+   "why": "5 klør og 3 ruder: 3♣ – præference til klør, når den er mindst lige så lang.",
+   "en": {
+    "why": "5 clubs and 3 diamonds: 3♣ – preference for clubs when they are at least as long."
+   }
   },
   {
    "situation": "svar_2nt",
    "hand": {
     "S": [
-     7
+     4,
+     3,
+     2
     ],
     "H": [
-     11,
-     7,
-     3
+     12,
+     9
     ],
     "D": [
+     10,
+     9,
+     6,
+     4
+    ],
+    "C": [
      14,
-     11,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "3♣",
+   "why": "4 klør og 4 ruder: 3♣ – præference til klør, når den er mindst lige så lang.",
+   "en": {
+    "why": "4 clubs and 4 diamonds: 3♣ – preference for clubs when they are at least as long."
+   }
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
+     13,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     9
+    ],
+    "D": [
+     13,
+     8,
      5,
      2
     ],
     "C": [
+     13,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "4 klør og 4 ruder: 3♣ – præference til klør, når den er mindst lige så lang.",
+   "en": {
+    "why": "4 clubs and 4 diamonds: 3♣ – preference for clubs when they are at least as long."
+   }
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
      11,
      10,
+     7
+    ],
+    "H": [
+     13,
+     11,
+     3
+    ],
+    "D": [
+     11,
+     9,
+     8
+    ],
+    "C": [
+     13,
+     9,
+     8,
+     7
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "correct": "3♣",
+   "why": "4 klør og 3 ruder: 3♣ – præference til klør, når den er mindst lige så lang.",
+   "en": {
+    "why": "4 clubs and 3 diamonds: 3♣ – preference for clubs when they are at least as long."
+   }
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
+     11,
+     9,
+     8,
      7,
+     3
+    ],
+    "H": [
+     10,
+     8
+    ],
+    "D": [
+     11,
+     9,
+     8,
+     5,
+     3,
+     2
+    ],
+    "C": []
+   },
+   "hp": 2,
+   "sp": 8,
+   "correct": "3♦",
+   "why": "Flest ruder (6 ruder, 0 klør): 3♦ – præference til den længste minor.",
+   "en": {
+    "why": "More diamonds (6 diamonds, 0 clubs): 3♦ – preference for the longer minor."
+   }
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
+     11,
+     10,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     9,
+     8
+    ],
+    "D": [
+     12,
+     9,
+     8,
+     7,
+     3,
+     2
+    ],
+    "C": []
+   },
+   "hp": 6,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "Flest ruder (6 ruder, 0 klør): 3♦ – præference til den længste minor.",
+   "en": {
+    "why": "More diamonds (6 diamonds, 0 clubs): 3♦ – preference for the longer minor."
+   }
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
+     9,
+     8
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     8
+    ],
+    "D": [
+     12,
+     10,
+     9,
+     8,
+     5,
+     3
+    ],
+    "C": [
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "Flest ruder (6 ruder, 1 klør): 3♦ – præference til den længste minor.",
+   "en": {
+    "why": "More diamonds (6 diamonds, 1 clubs): 3♦ – preference for the longer minor."
+   }
+  },
+  {
+   "situation": "svar_2nt",
+   "hand": {
+    "S": [
+     14,
+     9,
+     3
+    ],
+    "H": [
+     14,
+     9,
+     4
+    ],
+    "D": [
+     12,
+     9,
+     7,
+     6,
+     4,
+     3
+    ],
+    "C": [
+     7
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♦",
+   "why": "Flest ruder (6 ruder, 1 klør): 3♦ – præference til den længste minor.",
+   "en": {
+    "why": "More diamonds (6 diamonds, 1 clubs): 3♦ – preference for the longer minor."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     8,
+     5,
+     3
+    ],
+    "H": [
+     12,
+     10,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     10,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     7
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "11 hp: strafpas (8+). Over for makkers stærke jævne hånd står 1NT doblet sandsynligvis flere ned.",
+   "en": {
+    "why": "11 HCP: pass for penalty (8+). Opposite partner's strong balanced hand, 1NT doubled will probably go several down."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     6,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     10,
+     6
+    ],
+    "D": [
+     10,
+     9,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     12
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "11 hp: strafpas (8+). Over for makkers stærke jævne hånd står 1NT doblet sandsynligvis flere ned.",
+   "en": {
+    "why": "11 HCP: pass for penalty (8+). Opposite partner's strong balanced hand, 1NT doubled will probably go several down."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     10,
+     9,
+     6
+    ],
+    "H": [
+     14,
+     9,
+     6,
+     5
+    ],
+    "D": [
+     13,
+     8,
+     5
+    ],
+    "C": [
+     14,
+     12,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "13 hp: strafpas (8+). Over for makkers stærke jævne hånd står 1NT doblet sandsynligvis flere ned.",
+   "en": {
+    "why": "13 HCP: pass for penalty (8+). Opposite partner's strong balanced hand, 1NT doubled will probably go several down."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     8,
+     7,
+     4
+    ],
+    "H": [
+     12,
+     9,
+     6,
+     4
+    ],
+    "D": [],
+    "C": [
+     11,
+     10,
+     9,
+     8,
+     7,
+     5
+    ]
+   },
+   "hp": 3,
+   "sp": 8,
+   "correct": "2♣",
+   "why": "3 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♣). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit.",
+   "en": {
+    "why": "3 HCP: with 0–7 HCP you scramble – bid your lowest four-card suit (2♣). Without three-card support, partner bids the next four-card suit up until you have a 4-3 fit."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     5,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     9,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     7,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "correct": "2♣",
+   "why": "5 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♣). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit.",
+   "en": {
+    "why": "5 HCP: with 0–7 HCP you scramble – bid your lowest four-card suit (2♣). Without three-card support, partner bids the next four-card suit up until you have a 4-3 fit."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     9,
+     8,
+     2
+    ],
+    "H": [],
+    "D": [
+     13,
+     12,
+     10,
+     3
+    ],
+    "C": [
+     12,
+     9,
+     7,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "correct": "2♣",
+   "why": "7 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♣). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit.",
+   "en": {
+    "why": "7 HCP: with 0–7 HCP you scramble – bid your lowest four-card suit (2♣). Without three-card support, partner bids the next four-card suit up until you have a 4-3 fit."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     13,
+     9,
+     8,
+     6
+    ],
+    "H": [],
+    "D": [
+     10,
+     7,
+     6,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     3,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 10,
+   "correct": "2♦",
+   "why": "5 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♦). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit.",
+   "en": {
+    "why": "5 HCP: with 0–7 HCP you scramble – bid your lowest four-card suit (2♦). Without three-card support, partner bids the next four-card suit up until you have a 4-3 fit."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     11,
+     7,
+     4
+    ],
+    "D": [
+     12,
+     8,
+     7,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     8,
+     6
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "correct": "2♦",
+   "why": "5 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♦). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit.",
+   "en": {
+    "why": "5 HCP: with 0–7 HCP you scramble – bid your lowest four-card suit (2♦). Without three-card support, partner bids the next four-card suit up until you have a 4-3 fit."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     9,
+     4
+    ],
+    "H": [
+     10,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     8,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     7,
+     5,
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 7,
+   "correct": "2♦",
+   "why": "5 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♦). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit.",
+   "en": {
+    "why": "5 HCP: with 0–7 HCP you scramble – bid your lowest four-card suit (2♦). Without three-card support, partner bids the next four-card suit up until you have a 4-3 fit."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     7,
+     6,
+     5
+    ],
+    "D": [
+     10,
+     6,
+     4
+    ],
+    "C": [
+     10,
+     6,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "2♥",
+   "why": "6 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♥). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit.",
+   "en": {
+    "why": "6 HCP: with 0–7 HCP you scramble – bid your lowest four-card suit (2♥). Without three-card support, partner bids the next four-card suit up until you have a 4-3 fit."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     11,
+     10
+    ],
+    "H": [
+     10,
+     8,
+     7,
+     4,
+     3
+    ],
+    "D": [
+     10,
+     8,
+     4
+    ],
+    "C": [
+     13,
+     6,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "2♥",
+   "why": "4 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♥). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit.",
+   "en": {
+    "why": "4 HCP: with 0–7 HCP you scramble – bid your lowest four-card suit (2♥). Without three-card support, partner bids the next four-card suit up until you have a 4-3 fit."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     13,
+     11,
+     8,
+     6
+    ],
+    "H": [
+     11,
+     9,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     12,
      4,
      2
     ]
    },
    "hp": 7,
    "sp": 10,
-   "correct": "3♣",
-   "why": "5 klør og 4 ruder: 3♣ – præference til klør, når den er mindst lige så lang."
+   "correct": "2♥",
+   "why": "7 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♥). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit.",
+   "en": {
+    "why": "7 HCP: with 0–7 HCP you scramble – bid your lowest four-card suit (2♥). Without three-card support, partner bids the next four-card suit up until you have a 4-3 fit."
+   }
   },
   {
-   "situation": "svar_2nt",
+   "situation": "svar_dobling",
    "hand": {
     "S": [
-     11,
-     10,
-     9,
-     3
-    ],
-    "H": [
-     10,
-     9,
-     8,
-     5,
-     2
-    ],
-    "D": [
-     11,
-     7
-    ],
-    "C": [
-     13,
-     9
-    ]
-   },
-   "hp": 5,
-   "sp": 7,
-   "correct": "3♣",
-   "why": "2 klør og 2 ruder: 3♣ – præference til klør, når den er mindst lige så lang."
-  },
-  {
-   "situation": "svar_2nt",
-   "hand": {
-    "S": [
-     13,
-     3
-    ],
-    "H": [
-     13,
-     8,
-     5,
-     4
-    ],
-    "D": [
-     13,
-     5,
-     4,
-     3
-    ],
-    "C": [
-     9,
-     6,
-     3
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "correct": "3♦",
-   "why": "Flest ruder (4 ruder, 3 klør): 3♦ – præference til den længste minor."
-  },
-  {
-   "situation": "svar_2nt",
-   "hand": {
-    "S": [
-     8,
-     6,
-     4,
-     3
-    ],
-    "H": [
      14,
-     13,
-     7
-    ],
-    "D": [
-     12,
-     11,
-     10,
-     5,
-     4
-    ],
-    "C": [
-     2
-    ]
-   },
-   "hp": 10,
-   "sp": 13,
-   "correct": "3♦",
-   "why": "Flest ruder (5 ruder, 1 klør): 3♦ – præference til den længste minor."
-  },
-  {
-   "situation": "svar_2nt",
-   "hand": {
-    "S": [
-     12,
-     10,
-     8,
+     9,
      3,
      2
     ],
     "H": [
-     3,
-     2
+     10,
+     6,
+     3
     ],
     "D": [
-     13,
-     7,
-     6,
-     2
+     12,
+     10,
+     6
     ],
     "C": [
+     11,
+     10,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "correct": "2♠",
+   "why": "7 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♠). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit.",
+   "en": {
+    "why": "7 HCP: with 0–7 HCP you scramble – bid your lowest four-card suit (2♠). Without three-card support, partner bids the next four-card suit up until you have a 4-3 fit."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     13,
+     11,
      7,
+     2
+    ],
+    "H": [
+     10,
+     9,
+     5
+    ],
+    "D": [
+     8,
+     7,
+     5
+    ],
+    "C": [
+     13,
+     8,
      6
     ]
    },
-   "hp": 5,
+   "hp": 7,
    "sp": 7,
-   "correct": "3♦",
-   "why": "Flest ruder (4 ruder, 2 klør): 3♦ – præference til den længste minor."
-  },
-  {
-   "situation": "svar_2nt",
-   "hand": {
-    "S": [
-     13,
-     9,
-     6,
-     4,
-     2
-    ],
-    "H": [
-     2
-    ],
-    "D": [
-     12,
-     10,
-     9,
-     7,
-     5,
-     3
-    ],
-    "C": [
-     8
-    ]
-   },
-   "hp": 5,
-   "sp": 11,
-   "correct": "3♦",
-   "why": "Flest ruder (6 ruder, 1 klør): 3♦ – præference til den længste minor."
+   "correct": "2♠",
+   "why": "7 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♠). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit.",
+   "en": {
+    "why": "7 HCP: with 0–7 HCP you scramble – bid your lowest four-card suit (2♠). Without three-card support, partner bids the next four-card suit up until you have a 4-3 fit."
+   }
   },
   {
    "situation": "svar_dobling",
    "hand": {
     "S": [
      12,
-     8,
+     10,
+     7,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     7,
      3,
      2
+    ],
+    "D": [
+     9,
+     6,
+     3
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 2,
+   "sp": 5,
+   "correct": "2♠",
+   "why": "2 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♠). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit.",
+   "en": {
+    "why": "2 HCP: with 0–7 HCP you scramble – bid your lowest four-card suit (2♠). Without three-card support, partner bids the next four-card suit up until you have a 4-3 fit."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     14,
+     13,
+     6,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     11,
+     9,
+     6
+    ],
+    "C": [
+     12,
+     6,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♠",
+   "why": "10 hp og 6 spar: spring til 3♠ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp).",
+   "en": {
+    "why": "10 HCP and 6 spades: the jump to 3♠ invites game in the suit or notrump (at least a five-card suit, about 9–11 HCP)."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     7,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     8,
+     3
+    ],
+    "D": [
+     10,
+     7,
+     6,
+     3
+    ],
+    "C": []
+   },
+   "hp": 9,
+   "sp": 14,
+   "correct": "3♠",
+   "why": "9 hp og 5 spar: spring til 3♠ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp).",
+   "en": {
+    "why": "9 HCP and 5 spades: the jump to 3♠ invites game in the suit or notrump (at least a five-card suit, about 9–11 HCP)."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     8,
+     5
     ],
     "H": [
      13,
      8
     ],
     "D": [
+     13,
+     6
+    ],
+    "C": [
+     11,
+     9,
+     6,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "3♠",
+   "why": "11 hp og 5 spar: spring til 3♠ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp).",
+   "en": {
+    "why": "11 HCP and 5 spades: the jump to 3♠ invites game in the suit or notrump (at least a five-card suit, about 9–11 HCP)."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
      14,
      13,
+     12,
+     9,
+     3,
+     2
+    ],
+    "D": [
+     7,
+     3
+    ],
+    "C": [
+     12,
+     9,
+     5,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "11 hp og 6 hjerter: spring til 3♥ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp).",
+   "en": {
+    "why": "11 HCP and 6 hearts: the jump to 3♥ invites game in the suit or notrump (at least a five-card suit, about 9–11 HCP)."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     13,
+     8,
+     7
+    ],
+    "H": [
+     13,
+     12,
      11,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     10,
+     9,
+     6
+    ],
+    "C": [
+     7
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "3♥",
+   "why": "9 hp og 6 hjerter: spring til 3♥ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp).",
+   "en": {
+    "why": "9 HCP and 6 hearts: the jump to 3♥ invites game in the suit or notrump (at least a five-card suit, about 9–11 HCP)."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     8,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     9,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     5,
      2
     ],
     "C": [
-     8,
-     6,
      5
     ]
    },
-   "hp": 13,
+   "hp": 10,
    "sp": 14,
-   "correct": "Pas",
-   "why": "13 hp: strafpas (8+). Over for makkers stærke jævne hånd står 1NT doblet sandsynligvis flere ned."
+   "correct": "3♥",
+   "why": "10 hp og 6 hjerter: spring til 3♥ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp).",
+   "en": {
+    "why": "10 HCP and 6 hearts: the jump to 3♥ invites game in the suit or notrump (at least a five-card suit, about 9–11 HCP)."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [],
+    "H": [
+     9,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     9,
+     8,
+     5
+    ],
+    "C": [
+     14,
+     12,
+     8,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "11 hp og 6 ruder: spring til 3♦ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp).",
+   "en": {
+    "why": "11 HCP and 6 diamonds: the jump to 3♦ invites game in the suit or notrump (at least a five-card suit, about 9–11 HCP)."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     7,
+     5,
+     4
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     7,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "3♦",
+   "why": "9 hp og 6 ruder: spring til 3♦ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp).",
+   "en": {
+    "why": "9 HCP and 6 diamonds: the jump to 3♦ invites game in the suit or notrump (at least a five-card suit, about 9–11 HCP)."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     10
+    ],
+    "H": [
+     7,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     6,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     10,
+     8,
+     7
+    ]
+   },
+   "hp": 11,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "11 hp og 6 ruder: spring til 3♦ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp).",
+   "en": {
+    "why": "11 HCP and 6 diamonds: the jump to 3♦ invites game in the suit or notrump (at least a five-card suit, about 9–11 HCP)."
+   }
   },
   {
    "situation": "svar_dobling",
@@ -6168,772 +7650,96 @@
     ],
     "H": [
      14,
-     7,
-     5,
-     3
-    ],
-    "D": [
-     11,
-     10,
-     9,
-     7,
-     4,
-     3
-    ],
-    "C": [
-     12,
-     3
-    ]
-   },
-   "hp": 8,
-   "sp": 12,
-   "correct": "Pas",
-   "why": "8 hp: strafpas (8+). Over for makkers stærke jævne hånd står 1NT doblet sandsynligvis flere ned."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     13,
-     9,
-     3
-    ],
-    "H": [
-     13,
-     8,
-     7,
-     4
-    ],
-    "D": [
-     14,
      10,
      8,
      7
     ],
-    "C": [
-     13,
-     4
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "Pas",
-   "why": "13 hp: strafpas (8+). Over for makkers stærke jævne hånd står 1NT doblet sandsynligvis flere ned."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     9,
-     2
-    ],
-    "H": [
-     13,
-     6,
-     5
-    ],
-    "D": [
-     13,
-     8,
-     4
-    ],
-    "C": [
-     11,
-     7,
-     5,
-     4,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "2♣",
-   "why": "7 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♣). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     9,
-     5,
-     4
-    ],
-    "H": [
-     3
-    ],
     "D": [
      9,
-     7,
-     6,
-     2
-    ],
-    "C": [
-     13,
-     12,
-     11,
-     9,
-     6
-    ]
-   },
-   "hp": 6,
-   "sp": 9,
-   "correct": "2♣",
-   "why": "6 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♣). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     13,
-     10
-    ],
-    "H": [
-     7,
-     6,
-     2
-    ],
-    "D": [
-     8,
-     5,
-     4
-    ],
-    "C": [
-     12,
-     9,
-     8,
-     6,
-     3
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "2♣",
-   "why": "5 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♣). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     10,
-     9,
-     7
-    ],
-    "H": [
-     14,
-     5,
-     3
-    ],
-    "D": [
-     12,
-     11,
-     9,
-     6,
-     5
-    ],
-    "C": [
-     9,
-     5
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "2♦",
-   "why": "7 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♦). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     10,
-     8,
-     7,
-     4
-    ],
-    "H": [
-     6,
-     3
-    ],
-    "D": [
-     14,
-     10,
-     7,
-     6,
-     3
-    ],
-    "C": [
-     11,
-     6
-    ]
-   },
-   "hp": 5,
-   "sp": 7,
-   "correct": "2♦",
-   "why": "5 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♦). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [],
-    "H": [
-     10,
-     7,
-     6,
-     2
-    ],
-    "D": [
-     12,
-     9,
-     8,
-     5,
-     3,
-     2
-    ],
-    "C": [
-     13,
-     12,
-     10
-    ]
-   },
-   "hp": 7,
-   "sp": 12,
-   "correct": "2♦",
-   "why": "7 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♦). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     12,
-     5
-    ],
-    "H": [
-     13,
-     11,
-     9,
-     7,
-     3
-    ],
-    "D": [
-     11,
-     8,
-     3
-    ],
-    "C": [
-     10,
-     7,
-     5
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "2♥",
-   "why": "7 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♥). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     10,
-     9,
-     6,
-     2
-    ],
-    "H": [
-     11,
-     10,
-     9,
-     6,
-     2
-    ],
-    "D": [
-     11,
-     7,
-     2
-    ],
-    "C": [
-     6
-    ]
-   },
-   "hp": 2,
-   "sp": 5,
-   "correct": "2♥",
-   "why": "2 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♥). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     8,
-     5
-    ],
-    "H": [
-     11,
-     10,
-     7,
-     4,
-     2
-    ],
-    "D": [
-     12,
-     8,
-     5
-    ],
-    "C": [
-     12,
-     10,
-     9
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "correct": "2♥",
-   "why": "5 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♥). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     13,
-     7,
-     5,
-     2
-    ],
-    "H": [
-     5,
-     3,
-     2
-    ],
-    "D": [
-     12,
-     6,
-     3
-    ],
-    "C": [
-     9,
-     8,
-     2
-    ]
-   },
-   "hp": 5,
-   "sp": 5,
-   "correct": "2♠",
-   "why": "5 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♠). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     14,
-     11,
-     9,
-     8,
-     6,
-     3
-    ],
-    "H": [
-     10,
-     8
-    ],
-    "D": [
-     6,
-     2
-    ],
-    "C": [
-     12,
-     7,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 9,
-   "correct": "2♠",
-   "why": "7 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♠). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     12,
-     11,
-     9,
-     4,
-     3,
-     2
-    ],
-    "H": [
-     9,
-     6,
-     3
-    ],
-    "D": [
-     10
-    ],
-    "C": [
-     12,
-     5,
-     2
-    ]
-   },
-   "hp": 5,
-   "sp": 8,
-   "correct": "2♠",
-   "why": "5 hp: med 0–7 hp scrambles der – meld din laveste 4-farve (2♠). Uden 3-kortstøtte melder makker sin laveste 4-farve over, til I har et 4-3-fit."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     14,
-     9,
-     5,
-     3,
-     2
-    ],
-    "H": [
-     14,
-     11,
-     8,
-     2
-    ],
-    "D": [
-     11,
-     10,
-     6,
-     5
-    ],
-    "C": []
-   },
-   "hp": 10,
-   "sp": 15,
-   "correct": "3♠",
-   "why": "10 hp og 5 spar: spring til 3♠ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp)."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     12,
-     10,
-     6,
-     5,
-     2
-    ],
-    "H": [
-     14,
-     12,
-     9,
-     2
-    ],
-    "D": [
-     11,
-     10
-    ],
-    "C": [
-     9,
-     4
-    ]
-   },
-   "hp": 9,
-   "sp": 11,
-   "correct": "3♠",
-   "why": "9 hp og 5 spar: spring til 3♠ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp)."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     14,
-     11,
-     9,
-     7,
-     4,
-     2
-    ],
-    "H": [],
-    "D": [
-     11,
-     7,
-     3
-    ],
-    "C": [
-     13,
-     10,
-     9,
-     4
-    ]
-   },
-   "hp": 9,
-   "sp": 14,
-   "correct": "3♠",
-   "why": "9 hp og 6 spar: spring til 3♠ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp)."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     12,
-     9,
-     8,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     6,
-     5,
-     3,
-     2
-    ],
-    "D": [],
-    "C": [
-     11,
-     5,
-     2
-    ]
-   },
-   "hp": 10,
-   "sp": 15,
-   "correct": "3♥",
-   "why": "10 hp og 6 hjerter: spring til 3♥ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp)."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     9,
-     7,
-     6,
-     2
-    ],
-    "H": [
-     12,
-     11,
-     9,
-     7,
-     6,
-     2
-    ],
-    "D": [
-     14,
-     9
-    ],
-    "C": [
-     13
-    ]
-   },
-   "hp": 10,
-   "sp": 14,
-   "correct": "3♥",
-   "why": "10 hp og 6 hjerter: spring til 3♥ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp)."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     4
-    ],
-    "H": [
-     13,
-     12,
-     9,
-     6,
-     5,
-     2
-    ],
-    "D": [
-     10,
-     9,
-     4
-    ],
-    "C": [
-     13,
-     11,
-     6
-    ]
-   },
-   "hp": 9,
-   "sp": 12,
-   "correct": "3♥",
-   "why": "9 hp og 6 hjerter: spring til 3♥ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp)."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     11,
-     10,
-     9,
-     7
-    ],
-    "H": [],
-    "D": [
-     14,
-     13,
-     9,
-     6,
-     5,
-     3
-    ],
-    "C": [
-     13,
-     8,
-     7
-    ]
-   },
-   "hp": 11,
-   "sp": 16,
-   "correct": "3♦",
-   "why": "11 hp og 6 ruder: spring til 3♦ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp)."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     7,
-     6
-    ],
-    "H": [
-     14,
-     10,
-     3,
-     2
-    ],
-    "D": [
-     13,
-     11,
-     7,
-     3,
-     2
-    ],
-    "C": [
-     11,
-     2
-    ]
-   },
-   "hp": 9,
-   "sp": 11,
-   "correct": "3♦",
-   "why": "9 hp og 5 ruder: spring til 3♦ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp)."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     13,
-     2
-    ],
-    "H": [
-     10
-    ],
-    "D": [
-     13,
-     10,
-     9,
-     7,
-     3,
-     2
-    ],
-    "C": [
-     13,
-     11,
-     10,
-     6
-    ]
-   },
-   "hp": 10,
-   "sp": 14,
-   "correct": "3♦",
-   "why": "10 hp og 6 ruder: spring til 3♦ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp)."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     8
-    ],
-    "H": [
-     10,
-     9,
-     4
-    ],
-    "D": [
-     13,
-     5,
-     4,
-     3
-    ],
-    "C": [
-     14,
-     12,
-     8,
-     5,
-     4
-    ]
-   },
-   "hp": 9,
-   "sp": 12,
-   "correct": "3♣",
-   "why": "9 hp og 5 klør: spring til 3♣ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp)."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     14,
-     12,
-     9,
-     2
-    ],
-    "H": [
-     3
-    ],
-    "D": [
-     12,
-     10,
      5
     ],
     "C": [
      13,
-     9,
-     6,
-     4,
-     2
-    ]
-   },
-   "hp": 11,
-   "sp": 14,
-   "correct": "3♣",
-   "why": "11 hp og 5 klør: spring til 3♣ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp)."
-  },
-  {
-   "situation": "svar_dobling",
-   "hand": {
-    "S": [
-     12,
-     8,
-     6,
-     3
-    ],
-    "H": [
-     10
-    ],
-    "D": [
-     13,
-     8
-    ],
-    "C": [
-     14,
+     11,
      10,
-     9,
-     8,
-     4,
-     3
+     6,
+     5,
+     2
     ]
    },
    "hp": 9,
    "sp": 13,
    "correct": "3♣",
-   "why": "9 hp og 6 klør: spring til 3♣ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp)."
+   "why": "9 hp og 6 klør: spring til 3♣ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp).",
+   "en": {
+    "why": "9 HCP and 6 clubs: the jump to 3♣ invites game in the suit or notrump (at least a five-card suit, about 9–11 HCP)."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     11,
+     8,
+     6,
+     5
+    ],
+    "H": [
+     9,
+     7
+    ],
+    "D": [
+     9,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     10,
+     7
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "3♣",
+   "why": "9 hp og 5 klør: spring til 3♣ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp).",
+   "en": {
+    "why": "9 HCP and 5 clubs: the jump to 3♣ invites game in the suit or notrump (at least a five-card suit, about 9–11 HCP)."
+   }
+  },
+  {
+   "situation": "svar_dobling",
+   "hand": {
+    "S": [
+     9,
+     6,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     2
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "10 hp og 6 klør: spring til 3♣ er udgangsforslag i farven eller sans (mindst 5-farve, ca. 9–11 hp).",
+   "en": {
+    "why": "10 HCP and 6 clubs: the jump to 3♣ invites game in the suit or notrump (at least a five-card suit, about 9–11 HCP)."
+   }
   }
  ]
 }

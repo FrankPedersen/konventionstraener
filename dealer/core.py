@@ -67,6 +67,47 @@ def fmt(hand):
 
 SUIT_SYM = {'S': '♠', 'H': '♥', 'D': '♦', 'C': '♣'}
 SUIT_NAME = {'S': 'spar', 'H': 'hjerter', 'D': 'ruder', 'C': 'klør'}
+SUIT_NAME_EN = {'S': 'spades', 'H': 'hearts', 'D': 'diamonds', 'C': 'clubs'}
+
+# --- To sprog -------------------------------------------------------------------
+# Tekster, der vises i træneren, skrives som tx('dansk', 'English'). Værdien er den danske tekst, så koden
+# i øvrigt er uændret; export() lægger de engelske tekster i et "en"-felt ved siden af de danske.
+
+class Tx(str):
+    def __new__(cls, da, en):
+        o = str.__new__(cls, da)
+        o.en = en
+        return o
+
+def tx(da, en):
+    return Tx(da, en)
+
+def _split(o):
+    """(dansk, engelsk) udgave af en struktur med Tx-tekster."""
+    if isinstance(o, Tx):
+        return str(o), str(o.en)
+    if isinstance(o, dict):
+        pairs = {k: _split(v) for k, v in o.items()}
+        return {k: p[0] for k, p in pairs.items()}, {k: p[1] for k, p in pairs.items()}
+    if isinstance(o, (list, tuple)):
+        pairs = [_split(v) for v in o]
+        return [p[0] for p in pairs], [p[1] for p in pairs]
+    return o, o
+
+def _diff(da, en):
+    """Kun det, der er anderledes på engelsk; lister erstattes i deres helhed."""
+    if isinstance(da, dict):
+        d = {k: _diff(da[k], en[k]) for k in da}
+        return {k: v for k, v in d.items() if v is not None} or None
+    return None if da == en else en
+
+def bilingual(o):
+    """Dansk struktur med et "en"-felt, som træneren lægger ovenpå, når siden er på engelsk."""
+    da, en = _split(o)
+    d = _diff(da, en)
+    if d:
+        da["en"] = d
+    return da
 
 def lengths_of(hand):
     return {s: len(hand[s]) for s in SUITS}
@@ -115,6 +156,8 @@ def export(path, situations, hands):
     """Write a pool file: {"situations": {...}, "hands": [...]}. Returns counts per situation."""
     import json
     os.makedirs(os.path.dirname(path), exist_ok=True)
+    situations = {k: bilingual(v) for k, v in situations.items()}
+    hands = [bilingual(h) for h in hands]
     with open(path, 'w', encoding='utf-8') as f:
         json.dump({"situations": situations, "hands": hands}, f, ensure_ascii=False, indent=1)
     counts = {}

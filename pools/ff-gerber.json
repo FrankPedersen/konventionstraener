@@ -31,6 +31,18 @@
      "Slutmelding"
     ],
     "why": "4NT over 1NT er kvantitativ: 16–17 hp, invit til 6NT. Esserne spørges med Gerber 4♣."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does a direct 4NT over partner's 1NT mean?",
+     "correct": "Invitation to 6NT (16–17 HCP)",
+     "options": [
+      "Invitation to 6NT (16–17 HCP)",
+      "Ace-asking",
+      "To play"
+     ],
+     "why": "4NT over 1NT is quantitative: 16–17 HCP, inviting 6NT. Aces are asked with Gerber 4♣."
+    }
    }
   },
   "aab_es": {
@@ -69,6 +81,18 @@
      "Ruderfarve"
     ],
     "why": "Gerber: 4♦ 0/4 · 4♥ 1 · 4♠ 2 · 4NT 3. Efter 5♣ (konger) samme trin ét niveau højere."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does 4♦ show in response to Gerber?",
+     "correct": "0 or 4 aces",
+     "options": [
+      "0 or 4 aces",
+      "1 ace",
+      "A diamond suit"
+     ],
+     "why": "Gerber: 4♦ 0/4 · 4♥ 1 · 4♠ 2 · 4NT 3. After 5♣ (kings), the same steps one level higher."
+    }
    }
   },
   "aab_konge_hj": {
@@ -123,6 +147,18 @@
      "Ruderfarve"
     ],
     "why": "Gerber: 4♦ 0/4 · 4♥ 1 · 4♠ 2 · 4NT 3. Efter 5♣ (konger) samme trin ét niveau højere."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does 4♦ show in response to Gerber?",
+     "correct": "0 or 4 aces",
+     "options": [
+      "0 or 4 aces",
+      "1 ace",
+      "A diamond suit"
+     ],
+     "why": "Gerber: 4♦ 0/4 · 4♥ 1 · 4♠ 2 · 4NT 3. After 5♣ (kings), the same steps one level higher."
+    }
    }
   },
   "aab_konge_sp": {
@@ -177,6 +213,18 @@
      "Ruderfarve"
     ],
     "why": "Gerber: 4♦ 0/4 · 4♥ 1 · 4♠ 2 · 4NT 3. Efter 5♣ (konger) samme trin ét niveau højere."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does 4♦ show in response to Gerber?",
+     "correct": "0 or 4 aces",
+     "options": [
+      "0 or 4 aces",
+      "1 ace",
+      "A diamond suit"
+     ],
+     "why": "Gerber: 4♦ 0/4 · 4♥ 1 · 4♠ 2 · 4NT 3. After 5♣ (kings), the same steps one level higher."
+    }
    }
   },
   "aab_konge_nt": {
@@ -231,6 +279,18 @@
      "Ruderfarve"
     ],
     "why": "Gerber: 4♦ 0/4 · 4♥ 1 · 4♠ 2 · 4NT 3. Efter 5♣ (konger) samme trin ét niveau højere."
+   },
+   "en": {
+    "bonus": {
+     "q": "What does 4♦ show in response to Gerber?",
+     "correct": "0 or 4 aces",
+     "options": [
+      "0 or 4 aces",
+      "1 ace",
+      "A diamond suit"
+     ],
+     "why": "Gerber: 4♦ 0/4 · 4♥ 1 · 4♠ 2 · 4NT 3. After 5♣ (kings), the same steps one level higher."
+    }
    }
   }
  },
@@ -239,983 +299,1343 @@
    "situation": "svar_1nt",
    "hand": {
     "S": [
-     12,
-     5,
-     2
+     11,
+     9,
+     8
     ],
     "H": [
-     6,
-     2
+     10,
+     9,
+     7
     ],
     "D": [
      13,
-     8,
-     3,
-     2
+     6
     ],
     "C": [
-     11,
+     12,
      9,
      7,
-     4
+     6,
+     5
     ]
    },
    "hp": 6,
    "sp": 7,
    "correct": "Pas",
-   "why": "Jævn hånd uden 4-farve i major og 6 hp: Pas (0–8)."
+   "why": "Jævn hånd uden 4-farve i major og 6 hp: Pas (0–8).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 6 HCP: Pass (0–8)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
+     9,
+     8,
+     6
+    ],
+    "H": [
+     11,
+     4,
+     3
+    ],
+    "D": [
+     11,
+     10,
      8,
      5,
      3
     ],
-    "H": [
-     12,
-     2
-    ],
-    "D": [
-     13,
-     9,
-     7,
-     5
-    ],
     "C": [
-     12,
-     9,
-     6,
-     4
+     14,
+     5
     ]
    },
-   "hp": 7,
-   "sp": 8,
+   "hp": 6,
+   "sp": 7,
    "correct": "Pas",
-   "why": "Jævn hånd uden 4-farve i major og 7 hp: Pas (0–8)."
+   "why": "Jævn hånd uden 4-farve i major og 6 hp: Pas (0–8).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 6 HCP: Pass (0–8)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
      9,
-     7,
-     3
+     6,
+     2
     ],
     "H": [
-     9,
-     8
+     11,
+     8,
+     7
     ],
     "D": [
-     11,
-     9,
-     7,
-     2
+     13,
+     8
     ],
     "C": [
      12,
+     8,
+     7,
+     4,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "Pas",
+   "why": "Jævn hånd uden 4-farve i major og 6 hp: Pas (0–8).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 6 HCP: Pass (0–8)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
+     3
+    ],
+    "H": [
+     10,
+     6,
+     3
+    ],
+    "D": [
      11,
-     5,
+     8,
      4
+    ],
+    "C": [
+     10,
+     7,
+     6,
+     4,
+     2
     ]
    },
    "hp": 4,
    "sp": 5,
    "correct": "Pas",
-   "why": "Jævn hånd uden 4-farve i major og 4 hp: Pas (0–8)."
+   "why": "Jævn hånd uden 4-farve i major og 4 hp: Pas (0–8).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 4 HCP: Pass (0–8)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
-     11,
-     8,
+     6,
      5
     ],
     "H": [
-     10,
-     6,
-     3
+     14,
+     8,
+     2
     ],
     "D": [
      13,
-     11,
-     6
+     10,
+     8,
+     4
     ],
     "C": [
-     10,
+     7,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "Pas",
+   "why": "Jævn hånd uden 4-farve i major og 7 hp: Pas (0–8).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 7 HCP: Pass (0–8)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     8,
+     2
+    ],
+    "H": [
+     11,
+     9,
+     7
+    ],
+    "D": [
+     12,
+     8,
+     5
+    ],
+    "C": [
+     14,
+     9,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "Pas",
+   "why": "Jævn hånd uden 4-farve i major og 7 hp: Pas (0–8).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 7 HCP: Pass (0–8)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     12,
+     6,
+     2
+    ],
+    "H": [
+     12,
+     9,
+     8
+    ],
+    "D": [
+     11,
      7,
      6,
+     3
+    ],
+    "C": [
+     8,
+     4,
      3
     ]
    },
    "hp": 5,
    "sp": 5,
    "correct": "Pas",
-   "why": "Jævn hånd uden 4-farve i major og 5 hp: Pas (0–8)."
+   "why": "Jævn hånd uden 4-farve i major og 5 hp: Pas (0–8).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 5 HCP: Pass (0–8)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
      13,
-     10,
-     9
+     6,
+     2
     ],
     "H": [
-     12,
-     10,
-     7
+     5,
+     4
     ],
     "D": [
+     12,
+     11,
+     9,
+     5,
+     4
+    ],
+    "C": [
+     12,
+     7,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "Pas",
+   "why": "Jævn hånd uden 4-farve i major og 8 hp: Pas (0–8).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 8 HCP: Pass (0–8)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
      11,
      10,
+     2
+    ],
+    "H": [
+     11,
+     9
+    ],
+    "D": [
+     13,
      5,
-     3,
      2
     ],
     "C": [
-     11,
-     2
+     12,
+     9,
+     8,
+     5,
+     3
     ]
    },
    "hp": 7,
    "sp": 8,
    "correct": "Pas",
-   "why": "Jævn hånd uden 4-farve i major og 7 hp: Pas (0–8)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     13,
-     6,
-     5
-    ],
-    "H": [
-     9,
-     2
-    ],
-    "D": [
-     9,
-     8,
-     7,
-     4,
-     3
-    ],
-    "C": [
-     10,
-     6,
-     4
-    ]
-   },
-   "hp": 3,
-   "sp": 4,
-   "correct": "Pas",
-   "why": "Jævn hånd uden 4-farve i major og 3 hp: Pas (0–8)."
+   "why": "Jævn hånd uden 4-farve i major og 7 hp: Pas (0–8).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 7 HCP: Pass (0–8)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
      5,
+     3
+    ],
+    "H": [
+     11,
+     9,
+     5
+    ],
+    "D": [
+     13,
+     10,
+     5
+    ],
+    "C": [
+     12,
+     11,
+     8,
+     6,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "Pas",
+   "why": "Jævn hånd uden 4-farve i major og 7 hp: Pas (0–8).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 7 HCP: Pass (0–8)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     6,
      4
     ],
     "H": [
-     7,
-     3,
+     8,
+     6,
      2
     ],
     "D": [
-     11,
      9,
-     2
-    ],
-    "C": [
-     13,
      8,
      6,
-     4,
-     2
+     3
+    ],
+    "C": [
+     14,
+     7,
+     5,
+     4
     ]
    },
    "hp": 4,
    "sp": 5,
    "correct": "Pas",
-   "why": "Jævn hånd uden 4-farve i major og 4 hp: Pas (0–8)."
+   "why": "Jævn hånd uden 4-farve i major og 4 hp: Pas (0–8).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 4 HCP: Pass (0–8)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     12,
+     6,
+     2
+    ],
+    "H": [
+     12,
+     9,
+     5
+    ],
+    "D": [
+     10,
+     9,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     11,
+     9
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "Pas",
+   "why": "Jævn hånd uden 4-farve i major og 5 hp: Pas (0–8).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 5 HCP: Pass (0–8)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
      11,
-     5,
-     2
+     10,
+     3
     ],
     "H": [
      14,
      12,
-     2
+     5
     ],
     "D": [
-     11,
-     10,
-     9,
+     8,
+     7,
      5,
-     3
+     3,
+     2
     ],
     "C": [
-     10,
-     8
+     11,
+     6
     ]
    },
    "hp": 8,
    "sp": 9,
    "correct": "Pas",
-   "why": "Jævn hånd uden 4-farve i major og 8 hp: Pas (0–8)."
+   "why": "Jævn hånd uden 4-farve i major og 8 hp: Pas (0–8).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 8 HCP: Pass (0–8)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
-     6,
-     5,
-     3
+     4,
+     3,
+     2
     ],
     "H": [
-     12,
+     14,
+     10,
      7
     ],
     "D": [
-     9,
-     4,
-     3,
-     2
-    ],
-    "C": [
-     14,
-     11,
+     10,
      7,
-     3
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "Pas",
-   "why": "Jævn hånd uden 4-farve i major og 7 hp: Pas (0–8)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     8,
-     7,
-     3
-    ],
-    "H": [
-     12,
-     4,
-     2
-    ],
-    "D": [
-     11,
-     8,
-     4,
-     3,
-     2
-    ],
-    "C": [
-     14,
-     6
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "Pas",
-   "why": "Jævn hånd uden 4-farve i major og 7 hp: Pas (0–8)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     11,
      6,
      3
-    ],
-    "H": [
-     9,
-     6,
-     2
-    ],
-    "D": [
-     7,
-     4
     ],
     "C": [
      13,
-     12,
-     5,
-     4,
-     2
+     9,
+     4
     ]
    },
-   "hp": 6,
+   "hp": 7,
    "sp": 7,
    "correct": "Pas",
-   "why": "Jævn hånd uden 4-farve i major og 6 hp: Pas (0–8)."
+   "why": "Jævn hånd uden 4-farve i major og 7 hp: Pas (0–8).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 7 HCP: Pass (0–8)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
-     10,
-     7,
+     6,
      3
     ],
     "H": [
+     9,
+     5,
+     3
+    ],
+    "D": [
      14,
-     7,
+     12,
+     10,
      2
     ],
-    "D": [
-     12,
-     11,
-     10,
-     7,
-     4
-    ],
     "C": [
-     9,
-     4
-    ]
-   },
-   "hp": 7,
-   "sp": 8,
-   "correct": "Pas",
-   "why": "Jævn hånd uden 4-farve i major og 7 hp: Pas (0–8)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     7,
-     6
-    ],
-    "H": [
-     10,
-     6
-    ],
-    "D": [
-     14,
-     10,
-     5,
-     4
-    ],
-    "C": [
-     10,
-     8,
+     13,
+     6,
      4,
      3
     ]
    },
-   "hp": 8,
-   "sp": 9,
-   "correct": "Pas",
-   "why": "Jævn hånd uden 4-farve i major og 8 hp: Pas (0–8)."
+   "hp": 9,
+   "sp": 10,
+   "correct": "2NT",
+   "why": "Jævn hånd uden 4-farve i major og 9 hp: 2NT (9–10, invit).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 9 HCP: 2NT (9–10, invitational)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
-     5,
-     3,
-     2
+     14,
+     8,
+     5
     ],
     "H": [
-     7,
-     6,
-     3
+     10,
+     9,
+     5
     ],
     "D": [
-     14,
-     7,
-     6,
+     12,
+     8,
      5
     ],
     "C": [
      14,
-     6,
-     3
-    ]
-   },
-   "hp": 8,
-   "sp": 8,
-   "correct": "Pas",
-   "why": "Jævn hånd uden 4-farve i major og 8 hp: Pas (0–8)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     12,
-     8
-    ],
-    "H": [
      10,
-     9,
-     6
-    ],
-    "D": [
-     13,
-     12,
-     9,
-     6
-    ],
-    "C": [
-     13,
-     4,
-     3,
+     6,
      2
     ]
    },
    "hp": 10,
-   "sp": 11,
+   "sp": 10,
    "correct": "2NT",
-   "why": "Jævn hånd uden 4-farve i major og 10 hp: 2NT (9–10, invit)."
+   "why": "Jævn hånd uden 4-farve i major og 10 hp: 2NT (9–10, invit).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 10 HCP: 2NT (9–10, invitational)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
-     11,
-     4,
-     2
-    ],
-    "H": [
-     11,
+     12,
      7
     ],
+    "H": [
+     10,
+     5,
+     4
+    ],
     "D": [
      13,
      10,
-     4
+     9,
+     4,
+     2
     ],
     "C": [
      14,
+     10,
+     8
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2NT",
+   "why": "Jævn hånd uden 4-farve i major og 9 hp: 2NT (9–10, invit).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 9 HCP: 2NT (9–10, invitational)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     7,
+     5
+    ],
+    "H": [
+     5,
+     3
+    ],
+    "D": [
+     13,
+     10,
+     9,
+     7,
+     6
+    ],
+    "C": [
+     12,
+     10,
+     7
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2NT",
+   "why": "Jævn hånd uden 4-farve i major og 9 hp: 2NT (9–10, invit).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 9 HCP: 2NT (9–10, invitational)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     10,
+     8,
+     3
+    ],
+    "H": [
+     12,
+     9,
+     6
+    ],
+    "D": [
+     9,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "correct": "2NT",
+   "why": "Jævn hånd uden 4-farve i major og 9 hp: 2NT (9–10, invit).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 9 HCP: 2NT (9–10, invitational)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     11,
+     8,
+     5
+    ],
+    "H": [
+     13,
+     10,
+     3
+    ],
+    "D": [
+     14,
+     9
+    ],
+    "C": [
      11,
      10,
+     9,
      6,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2NT",
+   "why": "Jævn hånd uden 4-farve i major og 9 hp: 2NT (9–10, invit).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 9 HCP: 2NT (9–10, invitational)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     12,
+     8,
+     4
+    ],
+    "H": [
+     14,
+     9,
+     3
+    ],
+    "D": [
+     8,
+     4
+    ],
+    "C": [
+     13,
+     11,
+     9,
+     8,
      5
     ]
    },
    "hp": 10,
    "sp": 11,
    "correct": "2NT",
-   "why": "Jævn hånd uden 4-farve i major og 10 hp: 2NT (9–10, invit)."
+   "why": "Jævn hånd uden 4-farve i major og 10 hp: 2NT (9–10, invit).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 10 HCP: 2NT (9–10, invitational)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
+     11,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     7,
+     6
+    ],
+    "D": [
+     9,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     9,
+     7,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2NT",
+   "why": "Jævn hånd uden 4-farve i major og 9 hp: 2NT (9–10, invit).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 9 HCP: 2NT (9–10, invitational)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11
+    ],
+    "H": [
+     11,
+     6,
+     2
+    ],
+    "D": [
+     4,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     3,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2NT",
+   "why": "Jævn hånd uden 4-farve i major og 9 hp: 2NT (9–10, invit).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 9 HCP: 2NT (9–10, invitational)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     10,
+     7,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     2
+    ],
+    "D": [
+     12,
+     9,
      8,
      5,
      2
     ],
+    "C": [
+     12,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2NT",
+   "why": "Jævn hånd uden 4-farve i major og 9 hp: 2NT (9–10, invit).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 9 HCP: 2NT (9–10, invitational)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     2
+    ],
     "H": [
+     11,
+     6,
+     2
+    ],
+    "D": [
+     11,
+     8,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     7
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2NT",
+   "why": "Jævn hånd uden 4-farve i major og 9 hp: 2NT (9–10, invit).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 9 HCP: 2NT (9–10, invitational)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     10
+    ],
+    "H": [
+     11,
+     8,
+     6
+    ],
+    "D": [
+     11,
+     7,
+     4,
+     3
+    ],
+    "C": [
      13,
-     9,
+     10,
+     7,
      4
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2NT",
+   "why": "Jævn hånd uden 4-farve i major og 9 hp: 2NT (9–10, invit).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 9 HCP: 2NT (9–10, invitational)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     10,
+     7
+    ],
+    "H": [
+     8,
+     4,
+     2
     ],
     "D": [
      14,
-     13,
+     12,
      9,
      8,
-     4
+     5
     ],
     "C": [
+     13,
      10,
-     8
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2NT",
+   "why": "Jævn hånd uden 4-farve i major og 9 hp: 2NT (9–10, invit).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 9 HCP: 2NT (9–10, invitational)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     12,
+     3
+    ],
+    "H": [
+     14,
+     10,
+     3
+    ],
+    "D": [
+     10,
+     9,
+     6,
+     4,
+     2
+    ],
+    "C": [
+     5,
+     2
     ]
    },
    "hp": 10,
    "sp": 11,
    "correct": "2NT",
-   "why": "Jævn hånd uden 4-farve i major og 10 hp: 2NT (9–10, invit)."
+   "why": "Jævn hånd uden 4-farve i major og 10 hp: 2NT (9–10, invit).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 10 HCP: 2NT (9–10, invitational)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
-     9,
-     4
+     13,
+     5,
+     2
     ],
     "H": [
+     13,
+     5
+    ],
+    "D": [
+     6,
+     5,
+     4,
+     3,
+     2
+    ],
+    "C": [
      14,
+     13,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "3NT",
+   "why": "Jævn hånd uden 4-farve i major og 13 hp: 3NT (11–15).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 13 HCP: 3NT (11–15)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
      10,
      9
     ],
-    "D": [
-     7,
-     6,
-     2
-    ],
-    "C": [
-     13,
-     12,
-     11,
-     5,
-     3
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "correct": "2NT",
-   "why": "Jævn hånd uden 4-farve i major og 10 hp: 2NT (9–10, invit)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     8,
-     7
-    ],
     "H": [
-     13,
-     12,
-     5
-    ],
-    "D": [
-     14,
-     10,
-     7,
-     6,
-     5
-    ],
-    "C": [
-     8,
-     4,
-     2
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "correct": "2NT",
-   "why": "Jævn hånd uden 4-farve i major og 9 hp: 2NT (9–10, invit)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     6,
-     5
-    ],
-    "H": [
-     14,
-     11,
-     10
-    ],
-    "D": [
-     14,
-     8,
-     6,
-     3
-    ],
-    "C": [
-     7,
-     5,
-     4,
-     2
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "correct": "2NT",
-   "why": "Jævn hånd uden 4-farve i major og 9 hp: 2NT (9–10, invit)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     7,
-     6
-    ],
-    "H": [
-     6,
-     5,
-     3
-    ],
-    "D": [
-     13,
-     8,
-     4,
-     3
-    ],
-    "C": [
-     13,
-     7,
-     4
-    ]
-   },
-   "hp": 10,
-   "sp": 10,
-   "correct": "2NT",
-   "why": "Jævn hånd uden 4-farve i major og 10 hp: 2NT (9–10, invit)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     9,
-     7,
-     4
-    ],
-    "H": [
-     14,
-     12,
-     3
-    ],
-    "D": [
-     9,
-     6
-    ],
-    "C": [
-     13,
-     10,
-     6,
-     5,
-     4
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "correct": "2NT",
-   "why": "Jævn hånd uden 4-farve i major og 9 hp: 2NT (9–10, invit)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     10,
-     9,
-     8
-    ],
-    "H": [
-     10,
-     6
-    ],
-    "D": [
-     14,
-     10,
-     2
-    ],
-    "C": [
-     14,
-     11,
-     9,
-     8,
-     5
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "correct": "2NT",
-   "why": "Jævn hånd uden 4-farve i major og 9 hp: 2NT (9–10, invit)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     11,
-     10,
-     2
-    ],
-    "H": [
-     13,
-     11,
-     2
-    ],
-    "D": [
-     10,
-     9,
-     8,
-     2
-    ],
-    "C": [
-     13,
-     11,
-     2
-    ]
-   },
-   "hp": 9,
-   "sp": 9,
-   "correct": "2NT",
-   "why": "Jævn hånd uden 4-farve i major og 9 hp: 2NT (9–10, invit)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     6,
-     5,
-     2
-    ],
-    "H": [
-     14,
-     11
-    ],
-    "D": [
-     13,
-     12,
-     9,
-     6,
-     4
-    ],
-    "C": [
-     9,
-     7,
-     6
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "correct": "2NT",
-   "why": "Jævn hånd uden 4-farve i major og 10 hp: 2NT (9–10, invit)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     7,
-     6
-    ],
-    "H": [
-     14,
-     10,
-     4
-    ],
-    "D": [
      12,
      10,
-     9,
-     8,
-     2
-    ],
-    "C": [
-     13,
-     3,
-     2
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "correct": "2NT",
-   "why": "Jævn hånd uden 4-farve i major og 9 hp: 2NT (9–10, invit)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     11,
-     5,
-     4
-    ],
-    "H": [
-     13,
-     11,
      5
     ],
     "D": [
-     9,
-     8
-    ],
-    "C": [
-     14,
-     11,
-     9,
-     7,
-     6
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "correct": "2NT",
-   "why": "Jævn hånd uden 4-farve i major og 10 hp: 2NT (9–10, invit)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     8,
-     7
-    ],
-    "H": [
-     10,
-     8,
-     3
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     6
-    ],
-    "C": [
-     11,
-     9,
-     7,
-     4
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "correct": "2NT",
-   "why": "Jævn hånd uden 4-farve i major og 10 hp: 2NT (9–10, invit)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     5,
-     2
-    ],
-    "H": [
-     10,
-     4
-    ],
-    "D": [
      14,
      13,
      7,
-     5
-    ],
-    "C": [
-     14,
-     8,
-     6,
-     4
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "3NT",
-   "why": "Jævn hånd uden 4-farve i major og 15 hp: 3NT (11–15)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     13,
-     6
-    ],
-    "H": [
-     10,
-     6,
-     5
-    ],
-    "D": [
-     11,
-     7,
-     3
-    ],
-    "C": [
-     14,
-     13,
-     10,
-     5
-    ]
-   },
-   "hp": 15,
-   "sp": 15,
-   "correct": "3NT",
-   "why": "Jævn hånd uden 4-farve i major og 15 hp: 3NT (11–15)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     8,
-     4,
-     3
-    ],
-    "H": [
-     7,
-     4
-    ],
-    "D": [
-     14,
-     11,
-     8
-    ],
-    "C": [
-     14,
-     13,
-     9,
      5,
      3
+    ],
+    "C": [
+     7,
+     2
     ]
    },
    "hp": 12,
    "sp": 13,
    "correct": "3NT",
-   "why": "Jævn hånd uden 4-farve i major og 12 hp: 3NT (11–15)."
+   "why": "Jævn hånd uden 4-farve i major og 12 hp: 3NT (11–15).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 12 HCP: 3NT (11–15)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
-     13,
-     7,
-     6
-    ],
-    "H": [
-     14,
-     9,
-     7
-    ],
-    "D": [
-     14,
      12,
      11,
-     6,
-     2
-    ],
-    "C": [
-     7,
-     4
-    ]
-   },
-   "hp": 14,
-   "sp": 15,
-   "correct": "3NT",
-   "why": "Jævn hånd uden 4-farve i major og 14 hp: 3NT (11–15)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     13,
-     11
+     7
     ],
     "H": [
-     12,
-     6,
-     2
+     11,
+     5,
+     4
     ],
     "D": [
      10,
+     9,
+     7,
      5,
      3
     ],
     "C": [
      14,
+     13
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3NT",
+   "why": "Jævn hånd uden 4-farve i major og 11 hp: 3NT (11–15).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 11 HCP: 3NT (11–15)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     8,
+     2
+    ],
+    "H": [
+     7,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     9,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3NT",
+   "why": "Jævn hånd uden 4-farve i major og 11 hp: 3NT (11–15).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 11 HCP: 3NT (11–15)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     2
+    ],
+    "H": [
+     7,
+     4,
+     2
+    ],
+    "D": [
+     12,
+     10,
+     6,
+     5
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "Jævn hånd uden 4-farve i major og 12 hp: 3NT (11–15).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 12 HCP: 3NT (11–15)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     12,
+     10,
+     8
+    ],
+    "H": [
+     7,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     12,
      11,
      9,
+     3
+    ],
+    "C": [
+     14,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "Jævn hånd uden 4-farve i major og 12 hp: 3NT (11–15).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 12 HCP: 3NT (11–15)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
+     8,
+     4
+    ],
+    "H": [
+     12,
+     7
+    ],
+    "D": [
+     12,
+     11,
+     7,
+     6,
+     5
+    ],
+    "C": [
+     14,
+     8,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "3NT",
+   "why": "Jævn hånd uden 4-farve i major og 12 hp: 3NT (11–15).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 12 HCP: 3NT (11–15)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     9,
+     8,
+     5
+    ],
+    "H": [
+     12,
+     8,
+     5
+    ],
+    "D": [
+     13,
+     10,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "correct": "3NT",
+   "why": "Jævn hånd uden 4-farve i major og 11 hp: 3NT (11–15).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 11 HCP: 3NT (11–15)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     12,
+     2
+    ],
+    "H": [
+     13,
+     7,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     9
+    ],
+    "C": [
+     13,
+     9,
+     8,
+     4,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3NT",
+   "why": "Jævn hånd uden 4-farve i major og 11 hp: 3NT (11–15).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 11 HCP: 3NT (11–15)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     7,
+     5
+    ],
+    "H": [
+     14,
+     11,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     7,
+     3
+    ],
+    "C": [
+     9,
+     7,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "correct": "3NT",
+   "why": "Jævn hånd uden 4-farve i major og 13 hp: 3NT (11–15).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 13 HCP: 3NT (11–15)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     13,
+     6
+    ],
+    "H": [
+     13,
+     8,
+     3
+    ],
+    "D": [
+     10,
+     8,
+     4
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 15,
+   "correct": "3NT",
+   "why": "Jævn hånd uden 4-farve i major og 15 hp: 3NT (11–15).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 15 HCP: 3NT (11–15)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     12,
+     10,
+     2
+    ],
+    "H": [
+     13,
+     3
+    ],
+    "D": [
+     12,
+     10,
+     4
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     5,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3NT",
+   "why": "Jævn hånd uden 4-farve i major og 11 hp: 3NT (11–15).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 11 HCP: 3NT (11–15)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
+     10,
+     4
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     14,
+     9,
+     8,
+     3
+    ],
+    "C": [
+     9,
+     8,
      4,
      3
     ]
@@ -1223,337 +1643,274 @@
    "hp": 11,
    "sp": 12,
    "correct": "3NT",
-   "why": "Jævn hånd uden 4-farve i major og 11 hp: 3NT (11–15)."
+   "why": "Jævn hånd uden 4-farve i major og 11 hp: 3NT (11–15).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 11 HCP: 3NT (11–15)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
-     13,
-     12,
-     9
-    ],
-    "H": [
-     11,
-     10,
-     2
-    ],
-    "D": [
      14,
-     7,
-     5,
-     3,
-     2
-    ],
-    "C": [
-     11,
-     9
-    ]
-   },
-   "hp": 11,
-   "sp": 12,
-   "correct": "3NT",
-   "why": "Jævn hånd uden 4-farve i major og 11 hp: 3NT (11–15)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     13,
-     11,
-     5
-    ],
-    "H": [
-     14,
-     13,
-     6
-    ],
-    "D": [
-     12,
-     11,
-     10,
-     9,
-     5
-    ],
-    "C": [
      9,
      8
-    ]
-   },
-   "hp": 14,
-   "sp": 15,
-   "correct": "3NT",
-   "why": "Jævn hånd uden 4-farve i major og 14 hp: 3NT (11–15)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     13,
-     8
     ],
     "H": [
-     6,
-     4
+     13,
+     11,
+     7
     ],
     "D": [
-     14,
-     11,
-     10,
-     7,
-     4
-    ],
-    "C": [
-     12,
-     7,
-     3
-    ]
-   },
-   "hp": 14,
-   "sp": 15,
-   "correct": "3NT",
-   "why": "Jævn hånd uden 4-farve i major og 14 hp: 3NT (11–15)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     11,
      8,
-     3
-    ],
-    "H": [
-     14,
-     12
-    ],
-    "D": [
-     13,
-     12,
-     10,
      7
     ],
     "C": [
+     13,
      11,
-     9,
-     3,
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "3NT",
-   "why": "Jævn hånd uden 4-farve i major og 13 hp: 3NT (11–15)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     11,
-     3
-    ],
-    "H": [
-     14,
-     12,
-     2
-    ],
-    "D": [
-     11,
-     3,
-     2
-    ],
-    "C": [
-     12,
-     11,
+     5,
      4,
-     3
-    ]
-   },
-   "hp": 15,
-   "sp": 15,
-   "correct": "3NT",
-   "why": "Jævn hånd uden 4-farve i major og 15 hp: 3NT (11–15)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     12,
-     11
-    ],
-    "H": [
-     14,
-     11,
-     6
-    ],
-    "D": [
-     13,
-     10,
-     8,
-     6,
      2
-    ],
-    "C": [
-     12,
-     6,
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "correct": "3NT",
-   "why": "Jævn hånd uden 4-farve i major og 13 hp: 3NT (11–15)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     10,
-     3
-    ],
-    "H": [
-     14,
-     12,
-     7
-    ],
-    "D": [
-     14,
-     12,
-     4
-    ],
-    "C": [
-     12,
-     11,
-     9,
-     5,
-     3
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "3NT",
-   "why": "Jævn hånd uden 4-farve i major og 15 hp: 3NT (11–15)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     13,
-     12,
-     4
-    ],
-    "H": [
-     8,
-     2
-    ],
-    "D": [
-     12,
-     10,
-     9
-    ],
-    "C": [
-     13,
-     12,
-     9,
-     8,
-     3
     ]
    },
    "hp": 12,
    "sp": 13,
    "correct": "3NT",
-   "why": "Jævn hånd uden 4-farve i major og 12 hp: 3NT (11–15)."
+   "why": "Jævn hånd uden 4-farve i major og 12 hp: 3NT (11–15).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 12 HCP: 3NT (11–15)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
-     14,
-     13,
-     4
+     10,
+     8
     ],
     "H": [
-     9,
-     7,
-     4
+     13,
+     12,
+     2
     ],
     "D": [
      14,
      13,
-     3,
-     2
+     12,
+     10,
+     9
     ],
     "C": [
+     12,
      11,
-     9,
-     2
+     9
     ]
    },
-   "hp": 15,
-   "sp": 15,
-   "correct": "3NT",
-   "why": "Jævn hånd uden 4-farve i major og 15 hp: 3NT (11–15)."
+   "hp": 17,
+   "sp": 18,
+   "correct": "4NT",
+   "why": "Jævn hånd uden 4-farve i major og 17 hp: 4NT (16–17, invit til 6NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 17 HCP: 4NT (16–17, inviting 6NT)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
-     14,
-     13
+     13,
+     6,
+     5
     ],
     "H": [
-     12,
-     7,
-     6
+     13,
+     6,
+     4
     ],
     "D": [
-     14,
-     9,
-     8,
+     4,
      3
     ],
     "C": [
+     14,
      13,
-     7,
-     6,
+     12,
+     11,
      3
     ]
    },
    "hp": 16,
    "sp": 17,
    "correct": "4NT",
-   "why": "Jævn hånd uden 4-farve i major og 16 hp: 4NT (16–17, invit til 6NT)."
+   "why": "Jævn hånd uden 4-farve i major og 16 hp: 4NT (16–17, invit til 6NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 16 HCP: 4NT (16–17, inviting 6NT)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11
+    ],
+    "H": [
+     11,
+     6,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     7,
+     5
+    ],
+    "C": [
+     13,
+     10
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "4NT",
+   "why": "Jævn hånd uden 4-farve i major og 17 hp: 4NT (16–17, invit til 6NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 17 HCP: 4NT (16–17, inviting 6NT)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
      14,
-     10
+     13,
+     5
     ],
     "H": [
-     13,
-     6,
-     3
+     12,
+     7
     ],
     "D": [
-     14,
-     13,
-     11,
-     2
-    ],
-    "C": [
      12,
      9,
-     5,
-     3
+     8,
+     7
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     5
     ]
    },
    "hp": 17,
    "sp": 18,
    "correct": "4NT",
-   "why": "Jævn hånd uden 4-farve i major og 17 hp: 4NT (16–17, invit til 6NT)."
+   "why": "Jævn hånd uden 4-farve i major og 17 hp: 4NT (16–17, invit til 6NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 17 HCP: 4NT (16–17, inviting 6NT)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     12,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     10
+    ],
+    "D": [
+     13,
+     9,
+     8,
+     6
+    ],
+    "C": [
+     14,
+     8,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 16,
+   "correct": "4NT",
+   "why": "Jævn hånd uden 4-farve i major og 16 hp: 4NT (16–17, invit til 6NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 16 HCP: 4NT (16–17, inviting 6NT)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     14,
+     9,
+     4
+    ],
+    "D": [
+     13,
+     8,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     11,
+     4
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "4NT",
+   "why": "Jævn hånd uden 4-farve i major og 17 hp: 4NT (16–17, invit til 6NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 17 HCP: 4NT (16–17, inviting 6NT)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10
+    ],
+    "H": [
+     14,
+     12,
+     9
+    ],
+    "D": [
+     4,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     9,
+     8,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4NT",
+   "why": "Jævn hånd uden 4-farve i major og 16 hp: 4NT (16–17, invit til 6NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 16 HCP: 4NT (16–17, inviting 6NT)."
+   }
   },
   {
    "situation": "svar_1nt",
@@ -1564,104 +1921,80 @@
     ],
     "H": [
      14,
-     13,
-     4
-    ],
-    "D": [
      12,
-     10,
-     8,
-     2
-    ],
-    "C": [
-     12,
-     11,
-     9,
-     5
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4NT",
-   "why": "Jævn hånd uden 4-farve i major og 16 hp: 4NT (16–17, invit til 6NT)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     13,
-     8,
-     4
-    ],
-    "H": [
-     12,
-     5,
-     2
-    ],
-    "D": [
-     13,
-     11,
-     7,
-     3
-    ],
-    "C": [
-     14,
-     13,
-     4
-    ]
-   },
-   "hp": 16,
-   "sp": 16,
-   "correct": "4NT",
-   "why": "Jævn hånd uden 4-farve i major og 16 hp: 4NT (16–17, invit til 6NT)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     11,
-     4
-    ],
-    "H": [
-     12,
-     11,
-     4
-    ],
-    "D": [
-     13,
-     11,
-     7
-    ],
-    "C": [
-     14,
-     13,
-     11,
-     6,
-     5
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4NT",
-   "why": "Jævn hånd uden 4-farve i major og 16 hp: 4NT (16–17, invit til 6NT)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
      9
     ],
-    "H": [
+    "D": [
      13,
-     11,
+     12,
+     10,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     8,
+     7
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "4NT",
+   "why": "Jævn hånd uden 4-farve i major og 17 hp: 4NT (16–17, invit til 6NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 17 HCP: 4NT (16–17, inviting 6NT)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
+     8,
+     7
+    ],
+    "H": [
+     4,
      3
     ],
     "D": [
+     14,
+     13,
      12,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     7,
+     5
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "4NT",
+   "why": "Jævn hånd uden 4-farve i major og 17 hp: 4NT (16–17, invit til 6NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 17 HCP: 4NT (16–17, inviting 6NT)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     7,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     4
+    ],
+    "D": [
+     13,
+     11,
      10,
-     9,
-     4,
+     6,
      2
     ],
     "C": [
@@ -1673,659 +2006,461 @@
    "hp": 16,
    "sp": 17,
    "correct": "4NT",
-   "why": "Jævn hånd uden 4-farve i major og 16 hp: 4NT (16–17, invit til 6NT)."
+   "why": "Jævn hånd uden 4-farve i major og 16 hp: 4NT (16–17, invit til 6NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 16 HCP: 4NT (16–17, inviting 6NT)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
-     12,
-     9,
-     7
-    ],
-    "H": [
-     14,
-     7
-    ],
-    "D": [
      14,
      11,
-     10,
-     6,
-     2
-    ],
-    "C": [
-     13,
-     12,
-     10
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4NT",
-   "why": "Jævn hånd uden 4-farve i major og 16 hp: 4NT (16–17, invit til 6NT)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     13,
-     12,
-     2
+     9
     ],
     "H": [
-     12,
-     11,
-     6
-    ],
-    "D": [
-     12,
-     6,
-     5
-    ],
-    "C": [
-     14,
      13,
      9,
-     2
-    ]
-   },
-   "hp": 17,
-   "sp": 17,
-   "correct": "4NT",
-   "why": "Jævn hånd uden 4-farve i major og 17 hp: 4NT (16–17, invit til 6NT)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     8,
-     7
-    ],
-    "H": [
-     14,
-     8,
-     4
-    ],
-    "D": [
-     13,
-     12,
-     9,
-     6
-    ],
-    "C": [
-     14,
-     7,
-     4
-    ]
-   },
-   "hp": 17,
-   "sp": 17,
-   "correct": "4NT",
-   "why": "Jævn hånd uden 4-farve i major og 17 hp: 4NT (16–17, invit til 6NT)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     13,
-     7
-    ],
-    "H": [
-     13,
-     4,
      3
-    ],
-    "D": [
-     12,
-     11,
-     6,
-     4,
-     3
-    ],
-    "C": [
-     14,
-     13,
-     7
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4NT",
-   "why": "Jævn hånd uden 4-farve i major og 16 hp: 4NT (16–17, invit til 6NT)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     8,
-     3
-    ],
-    "H": [
-     13,
-     5
-    ],
-    "D": [
-     14,
-     13,
-     11,
-     8,
-     3
-    ],
-    "C": [
-     11,
-     7,
-     6
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4NT",
-   "why": "Jævn hånd uden 4-farve i major og 16 hp: 4NT (16–17, invit til 6NT)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     13,
-     8,
-     7
-    ],
-    "H": [
-     14,
-     12,
-     2
     ],
     "D": [
      14,
      10,
+     9,
+     7,
      3
     ],
     "C": [
-     14,
-     8,
-     7,
-     2
+     13,
+     11
     ]
    },
-   "hp": 17,
+   "hp": 16,
    "sp": 17,
    "correct": "4NT",
-   "why": "Jævn hånd uden 4-farve i major og 17 hp: 4NT (16–17, invit til 6NT)."
+   "why": "Jævn hånd uden 4-farve i major og 16 hp: 4NT (16–17, invit til 6NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 16 HCP: 4NT (16–17, inviting 6NT)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
-     14,
-     12,
-     7
-    ],
-    "H": [
-     12,
-     8,
+     4,
      3
     ],
+    "H": [
+     14,
+     11,
+     6
+    ],
     "D": [
+     13,
      8,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     8,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4NT",
+   "why": "Jævn hånd uden 4-farve i major og 16 hp: 4NT (16–17, invit til 6NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 16 HCP: 4NT (16–17, inviting 6NT)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     6,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     5
+    ],
+    "D": [
+     14,
      5,
-     3
+     4,
+     2
     ],
     "C": [
-     14,
      13,
+     12,
      11,
-     7
+     8
     ]
    },
    "hp": 16,
-   "sp": 16,
+   "sp": 17,
    "correct": "4NT",
-   "why": "Jævn hånd uden 4-farve i major og 16 hp: 4NT (16–17, invit til 6NT)."
+   "why": "Jævn hånd uden 4-farve i major og 16 hp: 4NT (16–17, invit til 6NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 16 HCP: 4NT (16–17, inviting 6NT)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
+     13,
      12,
+     2
+    ],
+    "H": [
+     11,
+     8
+    ],
+    "D": [
+     12,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     6,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4NT",
+   "why": "Jævn hånd uden 4-farve i major og 16 hp: 4NT (16–17, invit til 6NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 16 HCP: 4NT (16–17, inviting 6NT)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11
+    ],
+    "H": [
+     11,
+     7
+    ],
+    "D": [
+     7,
+     6,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     6,
+     5
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "correct": "6NT",
+   "why": "Jævn hånd uden 4-farve i major og 18 hp: 6NT (18–19).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 18 HCP: 6NT (18–19)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     11,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     8,
+     7
+    ],
+    "C": [
+     12,
+     2
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "correct": "6NT",
+   "why": "Jævn hånd uden 4-farve i major og 18 hp: 6NT (18–19).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 18 HCP: 6NT (18–19)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     10,
      8
     ],
     "H": [
-     13,
-     5,
-     3
+     12,
+     10,
+     4
     ],
     "D": [
      14,
-     13,
-     10,
-     7,
-     4
+     13
     ],
     "C": [
      14,
+     11,
      8,
+     7,
      2
     ]
    },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4NT",
-   "why": "Jævn hånd uden 4-farve i major og 16 hp: 4NT (16–17, invit til 6NT)."
+   "hp": 18,
+   "sp": 19,
+   "correct": "6NT",
+   "why": "Jævn hånd uden 4-farve i major og 18 hp: 6NT (18–19).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 18 HCP: 6NT (18–19)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
      14,
-     13,
      12
     ],
     "H": [
-     11,
-     6
-    ],
-    "D": [
-     13,
-     12,
-     11,
-     7,
-     6
-    ],
-    "C": [
-     12,
-     11,
-     4
-    ]
-   },
-   "hp": 19,
-   "sp": 20,
-   "correct": "6NT",
-   "why": "Jævn hånd uden 4-farve i major og 19 hp: 6NT (18–19)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     13,
-     6,
-     4
-    ],
-    "H": [
      14,
-     13,
-     2
-    ],
-    "D": [
-     13,
-     9,
-     4,
-     3
-    ],
-    "C": [
-     14,
-     11,
-     6
-    ]
-   },
-   "hp": 18,
-   "sp": 18,
-   "correct": "6NT",
-   "why": "Jævn hånd uden 4-farve i major og 18 hp: 6NT (18–19)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     13,
-     12,
-     8
-    ],
-    "H": [
-     14,
-     11,
-     4
-    ],
-    "D": [
-     14,
-     3
-    ],
-    "C": [
-     14,
-     10,
-     9,
-     5,
-     2
-    ]
-   },
-   "hp": 18,
-   "sp": 19,
-   "correct": "6NT",
-   "why": "Jævn hånd uden 4-farve i major og 18 hp: 6NT (18–19)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     7,
-     4
-    ],
-    "H": [
-     12,
-     7,
-     3
-    ],
-    "D": [
-     14,
-     13,
-     8,
-     7
-    ],
-    "C": [
-     14,
-     12,
-     5
-    ]
-   },
-   "hp": 19,
-   "sp": 19,
-   "correct": "6NT",
-   "why": "Jævn hånd uden 4-farve i major og 19 hp: 6NT (18–19)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     13,
-     7,
-     6
-    ],
-    "H": [
-     14,
-     13,
-     12
-    ],
-    "D": [
-     12,
-     11,
-     9,
-     5
-    ],
-    "C": [
-     13,
-     9,
-     6
-    ]
-   },
-   "hp": 18,
-   "sp": 18,
-   "correct": "6NT",
-   "why": "Jævn hånd uden 4-farve i major og 18 hp: 6NT (18–19)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     12,
-     2
-    ],
-    "H": [
-     14,
-     12,
-     10
-    ],
-    "D": [
-     13,
-     11,
-     9,
-     3
-    ],
-    "C": [
-     14,
-     13,
-     9,
-     4
-    ]
-   },
-   "hp": 19,
-   "sp": 20,
-   "correct": "6NT",
-   "why": "Jævn hånd uden 4-farve i major og 19 hp: 6NT (18–19)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     9
-    ],
-    "H": [
-     13,
-     11,
-     6
-    ],
-    "D": [
-     14,
-     13,
-     11,
-     3
-    ],
-    "C": [
-     12,
-     8,
-     7,
-     4
-    ]
-   },
-   "hp": 18,
-   "sp": 19,
-   "correct": "6NT",
-   "why": "Jævn hånd uden 4-farve i major og 18 hp: 6NT (18–19)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     13,
-     7
-    ],
-    "H": [
-     13,
-     9,
-     5
-    ],
-    "D": [
-     13,
-     3
-    ],
-    "C": [
-     14,
-     12,
-     10,
-     8,
-     7
-    ]
-   },
-   "hp": 19,
-   "sp": 20,
-   "correct": "6NT",
-   "why": "Jævn hånd uden 4-farve i major og 19 hp: 6NT (18–19)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     13,
-     7,
-     2
-    ],
-    "H": [
-     14,
-     12,
-     9
-    ],
-    "D": [
-     12,
-     8
-    ],
-    "C": [
-     14,
-     13,
-     4,
      3,
      2
-    ]
-   },
-   "hp": 18,
-   "sp": 19,
-   "correct": "6NT",
-   "why": "Jævn hånd uden 4-farve i major og 18 hp: 6NT (18–19)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     11,
-     10,
-     8
-    ],
-    "H": [
-     14,
-     10
     ],
     "D": [
      14,
-     12,
-     8,
-     2
-    ],
-    "C": [
-     14,
-     12,
-     11,
-     5
-    ]
-   },
-   "hp": 18,
-   "sp": 19,
-   "correct": "6NT",
-   "why": "Jævn hånd uden 4-farve i major og 18 hp: 6NT (18–19)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
      13,
-     12,
-     9
-    ],
-    "H": [
-     14,
-     11,
-     3
-    ],
-    "D": [
-     13,
-     12,
-     10,
-     3
-    ],
-    "C": [
-     12,
-     11,
-     5
-    ]
-   },
-   "hp": 18,
-   "sp": 18,
-   "correct": "6NT",
-   "why": "Jævn hånd uden 4-farve i major og 18 hp: 6NT (18–19)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     11,
-     3
-    ],
-    "H": [
-     13,
-     12
-    ],
-    "D": [
-     14,
-     11,
-     7
-    ],
-    "C": [
-     13,
-     11,
-     10,
      9,
+     6
+    ],
+    "C": [
+     12,
+     10,
+     7,
      3
     ]
    },
    "hp": 19,
    "sp": 20,
    "correct": "6NT",
-   "why": "Jævn hånd uden 4-farve i major og 19 hp: 6NT (18–19)."
+   "why": "Jævn hånd uden 4-farve i major og 19 hp: 6NT (18–19).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 19 HCP: 6NT (18–19)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
      14,
-     10,
+     6,
      5
     ],
     "H": [
-     13,
-     9,
+     14,
      4
     ],
     "D": [
      14,
      13,
-     5,
-     3
+     8
     ],
     "C": [
      13,
      11,
-     8
+     10,
+     8,
+     4
     ]
    },
-   "hp": 18,
-   "sp": 18,
+   "hp": 19,
+   "sp": 20,
    "correct": "6NT",
-   "why": "Jævn hånd uden 4-farve i major og 18 hp: 6NT (18–19)."
+   "why": "Jævn hånd uden 4-farve i major og 19 hp: 6NT (18–19).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 19 HCP: 6NT (18–19)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
      14,
-     9
+     13,
+     4
     ],
     "H": [
+     13,
+     11,
+     2
+    ],
+    "D": [
+     13,
+     10
+    ],
+    "C": [
+     13,
      12,
-     7,
+     10,
+     4,
+     2
+    ]
+   },
+   "hp": 19,
+   "sp": 20,
+   "correct": "6NT",
+   "why": "Jævn hånd uden 4-farve i major og 19 hp: 6NT (18–19).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 19 HCP: 6NT (18–19)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
+     10,
+     7
+    ],
+    "H": [
+     13,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     9
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     10,
+     2
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "correct": "6NT",
+   "why": "Jævn hånd uden 4-farve i major og 18 hp: 6NT (18–19).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 18 HCP: 6NT (18–19)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
+     4
+    ],
+    "H": [
+     14,
+     11,
      6
+    ],
+    "D": [
+     14,
+     12,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 19,
+   "sp": 20,
+   "correct": "6NT",
+   "why": "Jævn hånd uden 4-farve i major og 19 hp: 6NT (18–19).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 19 HCP: 6NT (18–19)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     9,
+     4
+    ],
+    "H": [
+     14,
+     9
     ],
     "D": [
      14,
      13,
      10,
-     8
+     6,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     4
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "correct": "6NT",
+   "why": "Jævn hånd uden 4-farve i major og 18 hp: 6NT (18–19).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 18 HCP: 6NT (18–19)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
+     10,
+     4
+    ],
+    "H": [
+     13,
+     11
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     4
     ],
     "C": [
      13,
-     12,
+     11,
      9,
      7
     ]
@@ -2333,7 +2468,109 @@
    "hp": 18,
    "sp": 19,
    "correct": "6NT",
-   "why": "Jævn hånd uden 4-farve i major og 18 hp: 6NT (18–19)."
+   "why": "Jævn hånd uden 4-farve i major og 18 hp: 6NT (18–19).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 18 HCP: 6NT (18–19)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
+     9
+    ],
+    "H": [
+     12,
+     7,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     9,
+     7
+    ],
+    "C": [
+     14,
+     12,
+     3
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "correct": "6NT",
+   "why": "Jævn hånd uden 4-farve i major og 18 hp: 6NT (18–19).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 18 HCP: 6NT (18–19)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     8,
+     4
+    ],
+    "H": [
+     11,
+     8,
+     4
+    ],
+    "D": [
+     13,
+     11,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     8
+    ]
+   },
+   "hp": 18,
+   "sp": 18,
+   "correct": "6NT",
+   "why": "Jævn hånd uden 4-farve i major og 18 hp: 6NT (18–19).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 18 HCP: 6NT (18–19)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     9
+    ],
+    "D": [
+     13,
+     9,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 18,
+   "sp": 19,
+   "correct": "6NT",
+   "why": "Jævn hånd uden 4-farve i major og 18 hp: 6NT (18–19).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 18 HCP: 6NT (18–19)."
+   }
   },
   {
    "situation": "svar_1nt",
@@ -2341,719 +2578,461 @@
     "S": [
      14,
      13,
-     3
+     12
     ],
     "H": [
-     14,
-     8,
-     7
+     13,
+     9,
+     3
     ],
     "D": [
      14,
-     13,
      12,
-     8,
-     3
+     11,
+     7,
+     2
     ],
     "C": [
-     3,
-     2
+     9,
+     7
+    ]
+   },
+   "hp": 19,
+   "sp": 20,
+   "correct": "6NT",
+   "why": "Jævn hånd uden 4-farve i major og 19 hp: 6NT (18–19).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 19 HCP: 6NT (18–19)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     12,
+     11,
+     6
+    ],
+    "H": [
+     14,
+     13
+    ],
+    "D": [
+     13,
+     10,
+     8
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     7,
+     3
     ]
    },
    "hp": 20,
    "sp": 21,
    "correct": "5NT",
-   "why": "Jævn hånd uden 4-farve i major og 20 hp: 5NT (20–21, invit til 7NT)."
+   "why": "Jævn hånd uden 4-farve i major og 20 hp: 5NT (20–21, invit til 7NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 20 HCP: 5NT (20–21, inviting 7NT)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
      14,
-     12
+     13,
+     7
     ],
     "H": [
-     10,
+     14,
+     12,
+     6
+    ],
+    "D": [
+     14,
+     8,
+     6
+    ],
+    "C": [
+     13,
+     8,
      7,
-     2
+     5
+    ]
+   },
+   "hp": 20,
+   "sp": 20,
+   "correct": "5NT",
+   "why": "Jævn hånd uden 4-farve i major og 20 hp: 5NT (20–21, invit til 7NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 20 HCP: 5NT (20–21, inviting 7NT)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     11,
+     9,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     4
     ],
     "D": [
      14,
      13,
-     12,
-     9
+     5,
+     2
     ],
     "C": [
+     14,
+     11,
+     6
+    ]
+   },
+   "hp": 20,
+   "sp": 20,
+   "correct": "5NT",
+   "why": "Jævn hånd uden 4-farve i major og 20 hp: 5NT (20–21, invit til 7NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 20 HCP: 5NT (20–21, inviting 7NT)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10
+    ],
+    "H": [
      13,
      12,
+     3
+    ],
+    "D": [
      11,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     9,
+     4
+    ]
+   },
+   "hp": 21,
+   "sp": 22,
+   "correct": "5NT",
+   "why": "Jævn hånd uden 4-farve i major og 21 hp: 5NT (20–21, invit til 7NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 21 HCP: 5NT (20–21, inviting 7NT)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11
+    ],
+    "H": [
+     11,
+     7
+    ],
+    "D": [
+     14,
+     13,
+     7,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     9,
      7
     ]
    },
    "hp": 21,
    "sp": 22,
    "correct": "5NT",
-   "why": "Jævn hånd uden 4-farve i major og 21 hp: 5NT (20–21, invit til 7NT)."
+   "why": "Jævn hånd uden 4-farve i major og 21 hp: 5NT (20–21, invit til 7NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 21 HCP: 5NT (20–21, inviting 7NT)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
-     13,
-     10,
-     4
+     12,
+     11,
+     10
     ],
     "H": [
+     14,
      13,
+     12
+    ],
+    "D": [
+     13,
+     11,
      3
+    ],
+    "C": [
+     14,
+     10,
+     3,
+     2
+    ]
+   },
+   "hp": 20,
+   "sp": 20,
+   "correct": "5NT",
+   "why": "Jævn hånd uden 4-farve i major og 20 hp: 5NT (20–21, invit til 7NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 20 HCP: 5NT (20–21, inviting 7NT)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     11,
+     10,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     10
     ],
     "D": [
      14,
      13,
+     12,
+     3,
      2
     ],
     "C": [
      14,
-     13,
-     11,
-     10,
-     5
+     8
     ]
    },
    "hp": 21,
    "sp": 22,
    "correct": "5NT",
-   "why": "Jævn hånd uden 4-farve i major og 21 hp: 5NT (20–21, invit til 7NT)."
+   "why": "Jævn hånd uden 4-farve i major og 21 hp: 5NT (20–21, invit til 7NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 21 HCP: 5NT (20–21, inviting 7NT)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
-     14,
-     13,
-     11
-    ],
-    "H": [
-     14,
-     6
-    ],
-    "D": [
-     12,
      11,
-     10,
-     6,
-     2
-    ],
-    "C": [
-     13,
-     12,
-     4
-    ]
-   },
-   "hp": 20,
-   "sp": 21,
-   "correct": "5NT",
-   "why": "Jævn hånd uden 4-farve i major og 20 hp: 5NT (20–21, invit til 7NT)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11
-    ],
-    "H": [
-     14,
-     13
-    ],
-    "D": [
-     14,
-     12,
-     11,
-     10,
-     2
-    ],
-    "C": [
      7,
-     6,
-     3
-    ]
-   },
-   "hp": 20,
-   "sp": 21,
-   "correct": "5NT",
-   "why": "Jævn hånd uden 4-farve i major og 20 hp: 5NT (20–21, invit til 7NT)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     12,
      6
     ],
     "H": [
-     14,
      13,
-     10
+     12
     ],
     "D": [
-     9,
-     7,
-     4
-    ],
-    "C": [
      14,
      13,
-     11,
-     2
-    ]
-   },
-   "hp": 21,
-   "sp": 21,
-   "correct": "5NT",
-   "why": "Jævn hånd uden 4-farve i major og 21 hp: 5NT (20–21, invit til 7NT)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     2
-    ],
-    "H": [
      10,
-     9,
-     7
-    ],
-    "D": [
-     14,
-     12,
-     3
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     11,
-     3
-    ]
-   },
-   "hp": 20,
-   "sp": 21,
-   "correct": "5NT",
-   "why": "Jævn hånd uden 4-farve i major og 20 hp: 5NT (20–21, invit til 7NT)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     10
-    ],
-    "H": [
-     14,
-     13,
-     6
-    ],
-    "D": [
-     11,
-     4,
-     3
-    ],
-    "C": [
-     14,
-     13,
-     11,
-     4,
-     3
-    ]
-   },
-   "hp": 20,
-   "sp": 21,
-   "correct": "5NT",
-   "why": "Jævn hånd uden 4-farve i major og 20 hp: 5NT (20–21, invit til 7NT)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     12,
-     8
-    ],
-    "H": [
-     14,
-     9,
-     2
-    ],
-    "D": [
-     14,
-     12,
      8,
-     4
+     5
     ],
     "C": [
      14,
      13,
+     3
+    ]
+   },
+   "hp": 20,
+   "sp": 21,
+   "correct": "5NT",
+   "why": "Jævn hånd uden 4-farve i major og 20 hp: 5NT (20–21, invit til 7NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 20 HCP: 5NT (20–21, inviting 7NT)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10
+    ],
+    "H": [
+     14,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     6,
+     4
+    ],
+    "C": [
      12,
+     6
+    ]
+   },
+   "hp": 20,
+   "sp": 21,
+   "correct": "5NT",
+   "why": "Jævn hånd uden 4-farve i major og 20 hp: 5NT (20–21, invit til 7NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 20 HCP: 5NT (20–21, inviting 7NT)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
      2
+    ],
+    "H": [
+     14,
+     13,
+     11
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     6,
+     4
+    ],
+    "C": [
+     12,
+     9,
+     3
     ]
    },
    "hp": 21,
    "sp": 22,
    "correct": "5NT",
-   "why": "Jævn hånd uden 4-farve i major og 21 hp: 5NT (20–21, invit til 7NT)."
+   "why": "Jævn hånd uden 4-farve i major og 21 hp: 5NT (20–21, invit til 7NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 21 HCP: 5NT (20–21, inviting 7NT)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
+     14,
      13,
-     10,
-     2
+     5
     ],
     "H": [
-     14,
-     9
-    ],
-    "D": [
-     14,
      13,
-     10,
-     4,
-     2
-    ],
-    "C": [
-     14,
-     12,
-     4
-    ]
-   },
-   "hp": 20,
-   "sp": 21,
-   "correct": "5NT",
-   "why": "Jævn hånd uden 4-farve i major og 20 hp: 5NT (20–21, invit til 7NT)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     12,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     6
-    ],
-    "D": [
-     13,
-     12,
-     3,
-     2
-    ],
-    "C": [
-     13,
-     12,
-     11,
+     8,
      3
-    ]
-   },
-   "hp": 20,
-   "sp": 21,
-   "correct": "5NT",
-   "why": "Jævn hånd uden 4-farve i major og 20 hp: 5NT (20–21, invit til 7NT)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     5,
+     3
+    ],
+    "C": [
      13,
      11
-    ],
-    "H": [
-     13,
-     11,
-     7
-    ],
-    "D": [
-     14,
-     13,
-     11,
-     7,
-     6
-    ],
-    "C": [
-     14,
-     8,
-     4
     ]
    },
    "hp": 20,
    "sp": 21,
    "correct": "5NT",
-   "why": "Jævn hånd uden 4-farve i major og 20 hp: 5NT (20–21, invit til 7NT)."
+   "why": "Jævn hånd uden 4-farve i major og 20 hp: 5NT (20–21, invit til 7NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 20 HCP: 5NT (20–21, inviting 7NT)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
-     14,
      12,
-     5
-    ],
-    "H": [
-     13,
-     11,
      9
     ],
-    "D": [
-     13,
-     12,
-     11,
-     6,
-     4
-    ],
-    "C": [
-     14,
-     2
-    ]
-   },
-   "hp": 20,
-   "sp": 21,
-   "correct": "5NT",
-   "why": "Jævn hånd uden 4-farve i major og 20 hp: 5NT (20–21, invit til 7NT)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     13,
-     3,
-     2
-    ],
     "H": [
-     14,
-     3
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     4,
-     3
-    ],
-    "C": [
-     14,
-     9,
-     7
-    ]
-   },
-   "hp": 20,
-   "sp": 21,
-   "correct": "5NT",
-   "why": "Jævn hånd uden 4-farve i major og 20 hp: 5NT (20–21, invit til 7NT)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
      14,
      13,
      7
     ],
-    "H": [
-     14,
-     7,
-     6
-    ],
     "D": [
      14,
      12,
-     11,
-     9,
-     2
+     9
     ],
     "C": [
      14,
-     7
-    ]
-   },
-   "hp": 22,
-   "sp": 23,
-   "correct": "7NT",
-   "why": "Jævn hånd uden 4-farve i major og 22 hp: 7NT (22+)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     11,
-     3
-    ],
-    "H": [
-     14,
-     13,
-     6
-    ],
-    "D": [
+     12,
      8,
-     4
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     11,
-     10
-    ]
-   },
-   "hp": 22,
-   "sp": 23,
-   "correct": "7NT",
-   "why": "Jævn hånd uden 4-farve i major og 22 hp: 7NT (22+)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     8
-    ],
-    "H": [
-     14,
-     6,
-     5
-    ],
-    "D": [
-     14,
-     13,
-     10,
-     4
-    ],
-    "C": [
-     14,
-     13,
-     11,
-     9
-    ]
-   },
-   "hp": 23,
-   "sp": 24,
-   "correct": "7NT",
-   "why": "Jævn hånd uden 4-farve i major og 23 hp: 7NT (22+)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     13
-    ],
-    "H": [
-     12,
-     10,
-     5
-    ],
-    "D": [
-     14,
-     10,
-     3
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     11,
-     4
-    ]
-   },
-   "hp": 23,
-   "sp": 24,
-   "correct": "7NT",
-   "why": "Jævn hånd uden 4-farve i major og 23 hp: 7NT (22+)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     13,
-     12,
-     6
-    ],
-    "H": [
-     14,
-     9
-    ],
-    "D": [
-     14,
-     7,
-     6
-    ],
-    "C": [
-     14,
-     13,
-     12,
      7,
      6
     ]
    },
-   "hp": 22,
-   "sp": 23,
-   "correct": "7NT",
-   "why": "Jævn hånd uden 4-farve i major og 22 hp: 7NT (22+)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     13,
-     10
-    ],
-    "H": [
-     14,
-     13,
-     2
-    ],
-    "D": [
-     14,
-     13,
-     6,
-     4
-    ],
-    "C": [
-     14,
-     12,
-     5,
-     4
-    ]
-   },
-   "hp": 23,
-   "sp": 24,
-   "correct": "7NT",
-   "why": "Jævn hånd uden 4-farve i major og 23 hp: 7NT (22+)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     13,
-     3
-    ],
-    "H": [
-     14,
-     12,
-     7
-    ],
-    "D": [
-     14,
-     13
-    ],
-    "C": [
-     12,
-     5,
-     4,
-     3,
-     2
-    ]
-   },
-   "hp": 22,
-   "sp": 23,
-   "correct": "7NT",
-   "why": "Jævn hånd uden 4-farve i major og 22 hp: 7NT (22+)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12
-    ],
-    "H": [
-     13,
-     4
-    ],
-    "D": [
-     11,
-     9,
-     2
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     7,
-     5
-    ]
-   },
-   "hp": 22,
-   "sp": 23,
-   "correct": "7NT",
-   "why": "Jævn hånd uden 4-farve i major og 22 hp: 7NT (22+)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     13,
-     2
-    ],
-    "H": [
-     14,
-     12
-    ],
-    "D": [
-     12,
-     9,
-     8,
-     2
-    ],
-    "C": [
-     14,
-     13,
-     5,
-     3
-    ]
-   },
-   "hp": 22,
-   "sp": 23,
-   "correct": "7NT",
-   "why": "Jævn hånd uden 4-farve i major og 22 hp: 7NT (22+)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     14,
-     13,
-     11
-    ],
-    "H": [
-     11,
-     7,
-     2
-    ],
-    "D": [
-     14,
-     13,
-     12
-    ],
-    "C": [
-     13,
-     11,
-     4,
-     3
-    ]
-   },
-   "hp": 22,
+   "hp": 21,
    "sp": 22,
-   "correct": "7NT",
-   "why": "Jævn hånd uden 4-farve i major og 22 hp: 7NT (22+)."
+   "correct": "5NT",
+   "why": "Jævn hånd uden 4-farve i major og 21 hp: 5NT (20–21, invit til 7NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 21 HCP: 5NT (20–21, inviting 7NT)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     12,
+     9,
+     5
+    ],
+    "H": [
+     14,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     8
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     10,
+     2
+    ]
+   },
+   "hp": 20,
+   "sp": 21,
+   "correct": "5NT",
+   "why": "Jævn hånd uden 4-farve i major og 20 hp: 5NT (20–21, invit til 7NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 20 HCP: 5NT (20–21, inviting 7NT)."
+   }
   },
   {
    "situation": "svar_1nt",
@@ -3064,26 +3043,29 @@
     ],
     "H": [
      14,
-     11,
-     2
+     12,
+     3
     ],
     "D": [
-     14,
      13,
-     12,
-     10,
-     3
+     11,
+     2
     ],
     "C": [
      14,
      13,
-     10
+     10,
+     9,
+     6
     ]
    },
-   "hp": 24,
-   "sp": 25,
-   "correct": "7NT",
-   "why": "Jævn hånd uden 4-farve i major og 24 hp: 7NT (22+)."
+   "hp": 20,
+   "sp": 21,
+   "correct": "5NT",
+   "why": "Jævn hånd uden 4-farve i major og 20 hp: 5NT (20–21, invit til 7NT).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 20 HCP: 5NT (20–21, inviting 7NT)."
+   }
   },
   {
    "situation": "svar_1nt",
@@ -3091,1993 +3073,1498 @@
     "S": [
      14,
      8,
-     6
+     2
     ],
     "H": [
      14,
-     8,
-     6
+     13,
+     5
     ],
     "D": [
      14,
      13,
-     11,
+     8,
      3,
      2
     ],
     "C": [
      14,
+     9
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "7NT",
+   "why": "Jævn hånd uden 4-farve i major og 22 hp: 7NT (22+).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 22 HCP: 7NT (22+)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     6,
+     2
+    ],
+    "H": [
+     14,
      13
+    ],
+    "D": [
+     14,
+     13,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     8,
+     4,
+     2
     ]
    },
    "hp": 23,
    "sp": 24,
    "correct": "7NT",
-   "why": "Jævn hånd uden 4-farve i major og 23 hp: 7NT (22+)."
-  },
-  {
-   "situation": "svar_1nt",
-   "hand": {
-    "S": [
-     13,
-     12,
-     8
-    ],
-    "H": [
-     14,
-     13,
-     6
-    ],
-    "D": [
-     14,
-     13
-    ],
-    "C": [
-     13,
-     11,
-     9,
-     6,
-     5
-    ]
-   },
-   "hp": 23,
-   "sp": 24,
-   "correct": "7NT",
-   "why": "Jævn hånd uden 4-farve i major og 23 hp: 7NT (22+)."
+   "why": "Jævn hånd uden 4-farve i major og 23 hp: 7NT (22+).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 23 HCP: 7NT (22+)."
+   }
   },
   {
    "situation": "svar_1nt",
    "hand": {
     "S": [
      14,
-     7,
-     4
+     12
     ],
     "H": [
      14,
-     13
+     13,
+     4
     ],
     "D": [
      14,
-     11,
-     9,
-     5
+     13,
+     5,
+     4
     ],
     "C": [
-     14,
      13,
-     6,
+     8,
+     5,
      2
     ]
    },
    "hp": 23,
    "sp": 24,
    "correct": "7NT",
-   "why": "Jævn hånd uden 4-farve i major og 23 hp: 7NT (22+)."
+   "why": "Jævn hånd uden 4-farve i major og 23 hp: 7NT (22+).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 23 HCP: 7NT (22+)."
+   }
   },
   {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     13,
-     12,
-     9,
-     5
-    ],
-    "H": [
-     13,
-     12,
-     11,
-     5
-    ],
-    "D": [
-     13,
-     11,
-     5
-    ],
-    "C": [
-     10,
-     5
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "4♦",
-   "why": "0 esser: 4♦ (0 eller 4)."
-  },
-  {
-   "situation": "aab_es",
+   "situation": "svar_1nt",
    "hand": {
     "S": [
      13,
      11,
-     9
-    ],
-    "H": [
-     13,
-     12,
-     11
-    ],
-    "D": [
-     11,
-     10,
-     2
-    ],
-    "C": [
-     13,
-     11,
-     5,
-     2
-    ]
-   },
-   "hp": 15,
-   "sp": 15,
-   "correct": "4♦",
-   "why": "0 esser: 4♦ (0 eller 4)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     13,
-     12,
-     8,
-     3
-    ],
-    "H": [
-     13,
-     12,
-     5
-    ],
-    "D": [
-     13,
-     9
-    ],
-    "C": [
-     12,
-     7,
-     4,
-     2
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "4♦",
-   "why": "0 esser: 4♦ (0 eller 4)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     12,
      7
     ],
     "H": [
+     14,
+     13,
+     11
+    ],
+    "D": [
      13,
      12,
+     11,
+     10,
+     3
+    ],
+    "C": [
+     14,
+     7
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "7NT",
+   "why": "Jævn hånd uden 4-farve i major og 22 hp: 7NT (22+).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 22 HCP: 7NT (22+)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11
+    ],
+    "H": [
+     14,
+     8,
+     3
+    ],
+    "D": [
+     14,
+     13,
      9,
      8,
      2
     ],
-    "D": [
-     13,
-     12,
-     3
-    ],
     "C": [
-     12,
-     11,
-     10
+     13,
+     8
     ]
    },
-   "hp": 15,
-   "sp": 16,
-   "correct": "4♦",
-   "why": "0 esser: 4♦ (0 eller 4)."
+   "hp": 22,
+   "sp": 23,
+   "correct": "7NT",
+   "why": "Jævn hånd uden 4-farve i major og 22 hp: 7NT (22+).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 22 HCP: 7NT (22+)."
+   }
   },
   {
-   "situation": "aab_es",
+   "situation": "svar_1nt",
    "hand": {
     "S": [
-     13,
-     8,
+     14,
+     12,
      3
     ],
     "H": [
-     13,
-     12,
+     14,
      10
     ],
     "D": [
+     14,
      13,
-     12,
-     11
+     11,
+     8,
+     6
     ],
     "C": [
+     14,
+     10,
+     8
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "7NT",
+   "why": "Jævn hånd uden 4-farve i major og 22 hp: 7NT (22+).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 22 HCP: 7NT (22+)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     13,
      11,
-     7,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     9
+    ],
+    "D": [
+     12,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     12,
      6,
-     4
+     5
     ]
    },
-   "hp": 15,
-   "sp": 15,
-   "correct": "4♦",
-   "why": "0 esser: 4♦ (0 eller 4)."
+   "hp": 22,
+   "sp": 23,
+   "correct": "7NT",
+   "why": "Jævn hånd uden 4-farve i major og 22 hp: 7NT (22+).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 22 HCP: 7NT (22+)."
+   }
   },
   {
-   "situation": "aab_es",
+   "situation": "svar_1nt",
    "hand": {
     "S": [
      13,
-     12,
-     8,
-     7
+     4
     ],
     "H": [
+     14,
      13,
      12
     ],
     "D": [
-     12,
-     10,
-     7,
-     6
-    ],
-    "C": [
-     13,
-     12,
-     10
-    ]
-   },
-   "hp": 17,
-   "sp": 18,
-   "correct": "4♦",
-   "why": "0 esser: 4♦ (0 eller 4)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     12,
+     14,
      11,
-     6
-    ],
-    "H": [
-     13,
-     12,
-     6,
-     2
-    ],
-    "D": [
-     12,
-     10,
-     2
-    ],
-    "C": [
-     13,
-     12,
-     8
-    ]
-   },
-   "hp": 15,
-   "sp": 15,
-   "correct": "4♦",
-   "why": "0 esser: 4♦ (0 eller 4)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     12,
-     7
-    ],
-    "H": [
-     13,
-     12,
      8,
-     7,
-     2
-    ],
-    "D": [
-     13,
-     12,
-     9
+     6,
+     5
     ],
     "C": [
-     12,
+     14,
      11,
      8
     ]
    },
-   "hp": 15,
-   "sp": 16,
-   "correct": "4♦",
-   "why": "0 esser: 4♦ (0 eller 4)."
+   "hp": 22,
+   "sp": 23,
+   "correct": "7NT",
+   "why": "Jævn hånd uden 4-farve i major og 22 hp: 7NT (22+).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 22 HCP: 7NT (22+)."
+   }
   },
   {
-   "situation": "aab_es",
+   "situation": "svar_1nt",
    "hand": {
     "S": [
-     11,
-     9,
-     7
-    ],
-    "H": [
-     13,
-     12,
-     6,
-     4
-    ],
-    "D": [
-     13,
-     12,
-     10,
-     5
-    ],
-    "C": [
-     13,
-     12
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4♦",
-   "why": "0 esser: 4♦ (0 eller 4)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     13,
      12,
      11,
-     7,
-     5
-    ],
-    "H": [
-     13,
-     11,
-     4
-    ],
-    "D": [
-     13,
-     9
-    ],
-    "C": [
-     13,
-     6,
-     3
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4♦",
-   "why": "0 esser: 4♦ (0 eller 4)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     12,
-     7
-    ],
-    "H": [
-     13,
-     12,
-     11
-    ],
-    "D": [
-     12,
-     11,
-     10,
-     6,
-     2
-    ],
-    "C": [
-     13,
-     12,
-     6
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4♦",
-   "why": "0 esser: 4♦ (0 eller 4)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     12,
-     6,
-     3
-    ],
-    "H": [
-     12,
-     11
-    ],
-    "D": [
-     13,
-     12,
-     10,
-     4
-    ],
-    "C": [
-     13,
-     12,
-     11,
-     7
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4♦",
-   "why": "0 esser: 4♦ (0 eller 4)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     13,
-     10,
-     8
-    ],
-    "H": [
-     13,
-     11,
-     7
-    ],
-    "D": [
-     13,
-     3
-    ],
-    "C": [
-     13,
-     12,
-     10,
-     6,
-     2
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "4♦",
-   "why": "0 esser: 4♦ (0 eller 4)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11
-    ],
-    "H": [
-     13,
-     7,
-     6
-    ],
-    "D": [
-     13,
-     12,
-     8,
-     4,
-     2
-    ],
-    "C": [
-     12,
-     5
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4♦",
-   "why": "0 esser: 4♦ (0 eller 4)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     14,
-     6
-    ],
-    "H": [
-     12,
-     9,
-     7
-    ],
-    "D": [
-     13,
-     12,
-     9,
-     8,
-     6
-    ],
-    "C": [
-     13,
-     12,
-     5
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4♥",
-   "why": "1 esser: 4♥ (1)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     14,
-     12,
-     8,
-     4
-    ],
-    "H": [
-     13,
-     3
-    ],
-    "D": [
-     10,
-     9,
-     7,
-     5
-    ],
-    "C": [
-     13,
-     12,
-     11
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "4♥",
-   "why": "1 esser: 4♥ (1)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     13,
-     12,
-     3
-    ],
-    "H": [
-     14,
-     13,
-     3,
-     2
-    ],
-    "D": [
-     13,
-     10,
-     9
-    ],
-    "C": [
-     10,
-     9,
-     4
-    ]
-   },
-   "hp": 15,
-   "sp": 15,
-   "correct": "4♥",
-   "why": "1 esser: 4♥ (1)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     14,
-     12,
-     9
-    ],
-    "H": [
-     11,
-     8,
-     7,
-     6,
-     3
-    ],
-    "D": [
-     13,
-     12,
-     11
-    ],
-    "C": [
-     13,
-     11
-    ]
-   },
-   "hp": 17,
-   "sp": 18,
-   "correct": "4♥",
-   "why": "1 esser: 4♥ (1)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     14,
-     13,
-     9,
-     6,
-     5
-    ],
-    "H": [
-     13,
-     12,
-     4
-    ],
-    "D": [
-     11,
-     4,
-     3
-    ],
-    "C": [
-     13,
-     6
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4♥",
-   "why": "1 esser: 4♥ (1)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     12,
-     7,
-     4,
-     3
-    ],
-    "H": [
-     13,
-     4,
-     3
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     4
-    ],
-    "C": [
-     11,
-     5
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "4♥",
-   "why": "1 esser: 4♥ (1)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     13,
-     12,
-     7,
-     5,
-     3
-    ],
-    "H": [
-     13,
-     12,
-     9
-    ],
-    "D": [
-     8,
-     6
-    ],
-    "C": [
-     14,
-     12,
-     9
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4♥",
-   "why": "1 esser: 4♥ (1)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
-     2
-    ],
-    "H": [
-     6,
-     2
-    ],
-    "D": [
-     13,
-     11,
-     6
-    ],
-    "C": [
-     14,
-     12,
-     11,
-     10
-    ]
-   },
-   "hp": 17,
-   "sp": 18,
-   "correct": "4♥",
-   "why": "1 esser: 4♥ (1)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     5,
-     3
-    ],
-    "H": [
-     14,
-     13,
-     3
-    ],
-    "D": [
-     13,
-     12,
-     10,
-     5,
-     4
-    ],
-    "C": [
-     13,
-     9,
-     4
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "4♥",
-   "why": "1 esser: 4♥ (1)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     14,
-     13,
-     9
-    ],
-    "H": [
-     11,
-     2
-    ],
-    "D": [
-     13,
-     9,
-     7,
-     6,
-     4
-    ],
-    "C": [
-     13,
-     12,
-     9
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4♥",
-   "why": "1 esser: 4♥ (1)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     14,
-     5,
-     4
-    ],
-    "H": [
-     13,
-     4,
-     3
-    ],
-    "D": [
-     13,
-     9
-    ],
-    "C": [
-     13,
-     12,
-     10,
-     6,
-     4
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "4♥",
-   "why": "1 esser: 4♥ (1)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     11,
-     10,
-     8,
      6
     ],
     "H": [
      14,
      13,
-     8
-    ],
-    "D": [
-     13,
-     11,
-     8,
-     2
-    ],
-    "C": [
-     13,
-     2
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "4♥",
-   "why": "1 esser: 4♥ (1)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     13,
-     6
-    ],
-    "H": [
-     12,
-     10,
-     9,
-     6
-    ],
-    "D": [
-     14,
-     13,
-     11
-    ],
-    "C": [
-     13,
-     8,
-     7,
-     3
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4♥",
-   "why": "1 esser: 4♥ (1)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     14,
-     13,
-     6,
-     4
-    ],
-    "H": [
-     12,
-     9,
-     8
-    ],
-    "D": [
-     12,
-     11
-    ],
-    "C": [
-     13,
-     11,
-     10,
-     8
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4♥",
-   "why": "1 esser: 4♥ (1)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     14,
-     13,
-     11
-    ],
-    "H": [
-     13,
-     8
-    ],
-    "D": [
-     8,
-     3,
-     2
-    ],
-    "C": [
-     14,
-     11,
-     6,
-     5,
-     4
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4♠",
-   "why": "2 esser: 4♠ (2)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     14,
-     13,
-     9,
-     5
-    ],
-    "H": [
-     12,
-     10,
-     6,
-     2
-    ],
-    "D": [
-     11,
-     10
-    ],
-    "C": [
-     14,
-     12,
-     2
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4♠",
-   "why": "2 esser: 4♠ (2)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     14,
-     10,
-     7,
-     5
-    ],
-    "H": [
-     13,
-     9,
-     5
-    ],
-    "D": [
-     14,
-     13,
-     9,
-     2
-    ],
-    "C": [
-     12,
-     5
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4♠",
-   "why": "2 esser: 4♠ (2)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     11,
-     6,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     9
-    ],
-    "D": [
-     14,
-     13,
-     3
-    ],
-    "C": [
-     10,
-     9,
-     5,
-     2
-    ]
-   },
-   "hp": 15,
-   "sp": 15,
-   "correct": "4♠",
-   "why": "2 esser: 4♠ (2)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     14,
-     13,
-     11,
-     6,
-     2
-    ],
-    "H": [
-     13,
-     4,
-     3
-    ],
-    "D": [
-     8,
-     6,
-     2
-    ],
-    "C": [
-     14,
-     11
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4♠",
-   "why": "2 esser: 4♠ (2)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     12,
-     11,
-     10,
-     3
-    ],
-    "H": [
-     14,
-     9,
-     8,
-     6
-    ],
-    "D": [
-     13,
-     7,
-     2
-    ],
-    "C": [
-     14,
-     12
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4♠",
-   "why": "2 esser: 4♠ (2)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     12,
-     11
-    ],
-    "H": [
-     12,
-     10,
-     3
-    ],
-    "D": [
-     14,
-     12,
-     8
-    ],
-    "C": [
-     14,
-     9,
-     8,
-     6,
-     4
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "4♠",
-   "why": "2 esser: 4♠ (2)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     14,
-     4,
-     2
-    ],
-    "H": [
-     13,
-     11,
-     7,
-     4,
-     2
-    ],
-    "D": [
-     14,
-     12,
-     11
-    ],
-    "C": [
-     11,
-     9
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4♠",
-   "why": "2 esser: 4♠ (2)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     11,
-     9,
-     7
-    ],
-    "H": [
-     14,
-     12,
-     3
-    ],
-    "D": [
-     12,
-     4,
-     3,
-     2
-    ],
-    "C": [
-     14,
-     12,
-     11
-    ]
-   },
-   "hp": 16,
-   "sp": 16,
-   "correct": "4♠",
-   "why": "2 esser: 4♠ (2)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     11,
-     8
-    ],
-    "H": [
-     7,
-     3,
-     2
-    ],
-    "D": [
-     14,
-     13,
-     6
-    ],
-    "C": [
-     14,
-     12,
-     11,
-     7,
-     2
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "4♠",
-   "why": "2 esser: 4♠ (2)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     14,
-     11,
-     7
-    ],
-    "H": [
-     13,
-     11,
      10
     ],
     "D": [
-     12,
-     10,
-     6,
-     2
+     14,
+     13,
+     9,
+     3
     ],
     "C": [
      14,
-     8,
-     6
+     12,
+     4
     ]
    },
-   "hp": 15,
-   "sp": 15,
-   "correct": "4♠",
-   "why": "2 esser: 4♠ (2)."
+   "hp": 23,
+   "sp": 23,
+   "correct": "7NT",
+   "why": "Jævn hånd uden 4-farve i major og 23 hp: 7NT (22+).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 23 HCP: 7NT (22+)."
+   }
   },
   {
-   "situation": "aab_es",
+   "situation": "svar_1nt",
    "hand": {
     "S": [
-     12,
-     7
-    ],
-    "H": [
-     13,
-     8,
-     7
-    ],
-    "D": [
      14,
      11,
      6
     ],
-    "C": [
-     14,
-     13,
-     10,
-     9,
-     4
-    ]
-   },
-   "hp": 17,
-   "sp": 18,
-   "correct": "4♠",
-   "why": "2 esser: 4♠ (2)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     14,
-     13,
-     9
-    ],
     "H": [
      14,
-     11,
-     8,
-     3
+     11
     ],
     "D": [
-     12,
-     11,
-     4,
-     2
+     13,
+     10,
+     5
     ],
     "C": [
-     8,
-     3
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "4♠",
-   "why": "2 esser: 4♠ (2)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     13,
-     3
-    ],
-    "H": [
      14,
-     8,
+     13,
+     12,
      6,
+     2
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "7NT",
+   "why": "Jævn hånd uden 4-farve i major og 22 hp: 7NT (22+).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 22 HCP: 7NT (22+)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     8,
      4
     ],
-    "D": [
-     12,
-     8,
-     5
-    ],
-    "C": [
-     14,
-     12,
-     8,
-     7
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "4♠",
-   "why": "2 esser: 4♠ (2)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     14,
-     12,
-     9
-    ],
     "H": [
-     14,
-     5
-    ],
-    "D": [
-     14,
-     8,
-     5,
+     13,
+     12,
      3
     ],
-    "C": [
-     12,
-     10,
-     9,
-     5
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4NT",
-   "why": "3 esser: 4NT (3)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     14,
-     8,
-     5
-    ],
-    "H": [
-     10,
-     7,
-     5
-    ],
-    "D": [
-     14,
-     13,
-     12
-    ],
-    "C": [
-     14,
-     10,
-     8,
-     7
-    ]
-   },
-   "hp": 17,
-   "sp": 17,
-   "correct": "4NT",
-   "why": "3 esser: 4NT (3)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     14,
-     9,
-     7,
-     2
-    ],
-    "H": [
-     14,
-     8
-    ],
     "D": [
      14,
      12,
+     9,
+     8,
      6
     ],
     "C": [
-     13,
-     9,
-     5,
-     2
-    ]
-   },
-   "hp": 17,
-   "sp": 18,
-   "correct": "4NT",
-   "why": "3 esser: 4NT (3)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     12,
-     10,
-     9
-    ],
-    "H": [
-     14,
-     12,
-     10,
-     6,
-     5
-    ],
-    "D": [
-     14,
-     7,
-     3
-    ],
-    "C": [
-     14,
-     4
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4NT",
-   "why": "3 esser: 4NT (3)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
      14,
      13
+    ]
+   },
+   "hp": 22,
+   "sp": 23,
+   "correct": "7NT",
+   "why": "Jævn hånd uden 4-farve i major og 22 hp: 7NT (22+).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 22 HCP: 7NT (22+)."
+   }
+  },
+  {
+   "situation": "svar_1nt",
+   "hand": {
+    "S": [
+     14,
+     11,
+     3
     ],
     "H": [
-     14,
-     8,
-     7,
-     5
+     13,
+     9,
+     8
     ],
     "D": [
-     11,
-     6,
+     14,
+     13,
+     12,
      4
     ],
     "C": [
      14,
-     10,
-     6,
-     5
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4NT",
-   "why": "3 esser: 4NT (3)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     14,
-     2
-    ],
-    "H": [
-     14,
-     10,
-     4,
-     3
-    ],
-    "D": [
-     14,
-     13,
-     8
-    ],
-    "C": [
      12,
-     6,
-     5,
-     3
+     7
     ]
    },
-   "hp": 17,
-   "sp": 18,
-   "correct": "4NT",
-   "why": "3 esser: 4NT (3)."
+   "hp": 23,
+   "sp": 23,
+   "correct": "7NT",
+   "why": "Jævn hånd uden 4-farve i major og 23 hp: 7NT (22+).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 23 HCP: 7NT (22+)."
+   }
   },
   {
-   "situation": "aab_es",
+   "situation": "svar_1nt",
    "hand": {
     "S": [
-     13,
-     11,
-     6
+     14,
+     12
     ],
     "H": [
-     14,
-     2
-    ],
-    "D": [
-     14,
+     12,
      11,
-     10,
-     9,
-     8
-    ],
-    "C": [
-     14,
-     6,
      5
-    ]
-   },
-   "hp": 17,
-   "sp": 18,
-   "correct": "4NT",
-   "why": "3 esser: 4NT (3)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     13,
-     7
-    ],
-    "H": [
-     14,
-     7,
-     6,
-     3
     ],
     "D": [
      14,
-     5,
+     13,
+     10,
+     9,
      3
     ],
     "C": [
      14,
-     10,
-     7,
-     3
+     13,
+     10
     ]
    },
-   "hp": 15,
-   "sp": 16,
-   "correct": "4NT",
-   "why": "3 esser: 4NT (3)."
+   "hp": 23,
+   "sp": 24,
+   "correct": "7NT",
+   "why": "Jævn hånd uden 4-farve i major og 23 hp: 7NT (22+).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 23 HCP: 7NT (22+)."
+   }
   },
   {
-   "situation": "aab_es",
+   "situation": "svar_1nt",
    "hand": {
     "S": [
-     11,
+     12,
+     8,
+     5
+    ],
+    "H": [
+     14,
+     13,
      7
     ],
-    "H": [
-     14,
-     8,
-     6,
-     3
-    ],
     "D": [
      14,
      13,
-     8,
-     2
-    ],
-    "C": [
-     14,
-     8,
-     2
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "4NT",
-   "why": "3 esser: 4NT (3)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     14,
-     8
-    ],
-    "H": [
-     13,
-     10,
-     9,
-     8
-    ],
-    "D": [
-     14,
-     9,
+     12,
      6
     ],
     "C": [
      14,
-     10,
-     8,
-     3
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "4NT",
-   "why": "3 esser: 4NT (3)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
-     8,
-     3
-    ],
-    "H": [
-     14,
-     13,
-     8,
-     4
-    ],
-    "D": [
-     14,
-     10,
-     7,
+     11,
      5
-    ],
-    "C": [
-     14,
-     9,
-     4
     ]
    },
-   "hp": 15,
-   "sp": 16,
-   "correct": "4NT",
-   "why": "3 esser: 4NT (3)."
+   "hp": 23,
+   "sp": 23,
+   "correct": "7NT",
+   "why": "Jævn hånd uden 4-farve i major og 23 hp: 7NT (22+).",
+   "en": {
+    "why": "Balanced hand without a four-card major and 23 HCP: 7NT (22+)."
+   }
   },
   {
    "situation": "aab_es",
    "hand": {
     "S": [
-     14,
      12,
-     7,
-     6,
-     4
+     11,
+     9
     ],
     "H": [
-     8,
-     6,
-     4
-    ],
-    "D": [
-     14,
-     8
-    ],
-    "C": [
-     14,
-     13,
-     8
-    ]
-   },
-   "hp": 17,
-   "sp": 18,
-   "correct": "4NT",
-   "why": "3 esser: 4NT (3)."
-  },
-  {
-   "situation": "aab_es",
-   "hand": {
-    "S": [
      13,
      9,
-     7
-    ],
-    "H": [
-     14,
-     8,
+     5,
      3,
      2
     ],
     "D": [
-     14,
-     10,
+     13,
+     12,
+     9
+    ],
+    "C": [
+     13,
+     11
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♦",
+   "why": "0 esser: 4♦ (0 eller 4).",
+   "en": {
+    "why": "0 aces: 4♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     12,
+     11,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     8,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     10
+    ],
+    "C": [
+     11,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♦",
+   "why": "0 esser: 4♦ (0 eller 4).",
+   "en": {
+    "why": "0 aces: 4♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     13,
+     12
+    ],
+    "H": [
+     13,
+     11,
      9,
+     7,
+     3
+    ],
+    "D": [
+     13,
+     11,
      3
     ],
     "C": [
+     13,
+     10,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4♦",
+   "why": "0 esser: 4♦ (0 eller 4).",
+   "en": {
+    "why": "0 aces: 4♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
      14,
+     6,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     5
+    ],
+    "D": [
+     14,
+     8
+    ],
+    "C": [
+     14,
+     7,
+     3
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "4♦",
+   "why": "4 esser: 4♦ (0 eller 4).",
+   "en": {
+    "why": "4 aces: 4♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     13,
+     11,
+     6
+    ],
+    "H": [
+     12,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     11
+    ],
+    "C": [
+     13,
+     9,
+     8,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 15,
+   "correct": "4♦",
+   "why": "0 esser: 4♦ (0 eller 4).",
+   "en": {
+    "why": "0 aces: 4♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     13,
+     10
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     10
+    ],
+    "D": [
+     12,
+     8,
+     7,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     6
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4♦",
+   "why": "0 esser: 4♦ (0 eller 4).",
+   "en": {
+    "why": "0 aces: 4♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7,
+     2
+    ],
+    "H": [
+     14,
+     8,
+     6,
+     5
+    ],
+    "D": [
+     14,
+     11,
+     9
+    ],
+    "C": [
+     14,
+     4
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "4♦",
+   "why": "4 esser: 4♦ (0 eller 4).",
+   "en": {
+    "why": "4 aces: 4♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     13,
+     11
+    ],
+    "H": [
+     12,
+     7,
+     4
+    ],
+    "D": [
+     13,
+     11,
+     10
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     8,
+     6
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♦",
+   "why": "0 esser: 4♦ (0 eller 4).",
+   "en": {
+    "why": "0 aces: 4♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11
+    ],
+    "H": [
+     13,
+     12,
+     6
+    ],
+    "D": [
+     11,
+     7,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     9
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♦",
+   "why": "0 esser: 4♦ (0 eller 4).",
+   "en": {
+    "why": "0 aces: 4♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     12,
+     5
+    ],
+    "H": [
+     13,
+     12,
+     7,
+     4
+    ],
+    "D": [
+     13,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4♦",
+   "why": "0 esser: 4♦ (0 eller 4).",
+   "en": {
+    "why": "0 aces: 4♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     13,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     9,
+     2
+    ],
+    "C": [
+     11,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♦",
+   "why": "0 esser: 4♦ (0 eller 4).",
+   "en": {
+    "why": "0 aces: 4♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     13,
+     12
+    ],
+    "H": [
+     13,
+     10,
+     8,
+     7,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     9
+    ],
+    "C": [
+     13,
+     12,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4♦",
+   "why": "0 esser: 4♦ (0 eller 4).",
+   "en": {
+    "why": "0 aces: 4♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     7
+    ],
+    "D": [
+     13,
+     12,
+     10
+    ],
+    "C": [
+     13,
+     11,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 15,
+   "correct": "4♦",
+   "why": "0 esser: 4♦ (0 eller 4).",
+   "en": {
+    "why": "0 aces: 4♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     12,
+     9,
+     8
+    ],
+    "H": [
+     13,
+     11,
+     9,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     6
+    ],
+    "C": [
+     13,
+     8
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♦",
+   "why": "0 esser: 4♦ (0 eller 4).",
+   "en": {
+    "why": "0 aces: 4♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     9,
+     8
+    ],
+    "H": [
+     13,
+     11,
+     3
+    ],
+    "D": [
+     12,
+     9
+    ],
+    "C": [
+     11,
+     9,
+     7
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "1 esser: 4♥ (1).",
+   "en": {
+    "why": "1 ace: 4♥ (1)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     14,
+     12,
+     6
+    ],
+    "H": [
+     13,
+     8,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     5
+    ],
+    "C": [
+     13,
+     10,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "1 esser: 4♥ (1).",
+   "en": {
+    "why": "1 ace: 4♥ (1)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     13,
+     10,
+     6,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     3
+    ],
+    "D": [
+     14,
+     6,
+     2
+    ],
+    "C": [
+     13,
      12
     ]
    },
    "hp": 17,
    "sp": 18,
-   "correct": "4NT",
-   "why": "3 esser: 4NT (3)."
+   "correct": "4♥",
+   "why": "1 esser: 4♥ (1).",
+   "en": {
+    "why": "1 ace: 4♥ (1)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     10,
+     5
+    ],
+    "H": [
+     12,
+     8,
+     6
+    ],
+    "D": [
+     13,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     11,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "1 esser: 4♥ (1).",
+   "en": {
+    "why": "1 ace: 4♥ (1)."
+   }
   },
   {
    "situation": "aab_es",
    "hand": {
     "S": [
      14,
+     13,
+     11,
+     4
+    ],
+    "H": [
+     12,
+     8
+    ],
+    "D": [
+     13,
+     10,
+     9
+    ],
+    "C": [
+     13,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4♥",
+   "why": "1 esser: 4♥ (1).",
+   "en": {
+    "why": "1 ace: 4♥ (1)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     13,
+     8,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     8
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "1 esser: 4♥ (1).",
+   "en": {
+    "why": "1 ace: 4♥ (1)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     13,
+     5
+    ],
+    "H": [
      12,
      10,
      6,
-     2
+     3
     ],
-    "H": [
+    "D": [
+     14,
      11,
-     10
-    ],
-    "D": [
-     14,
-     4,
-     3
-    ],
-    "C": [
-     14,
-     12,
-     2
-    ]
-   },
-   "hp": 17,
-   "sp": 18,
-   "correct": "4NT",
-   "why": "3 esser: 4NT (3)."
-  },
-  {
-   "situation": "aab_konge_hj",
-   "hand": {
-    "S": [
-     14,
-     13,
-     6
-    ],
-    "H": [
-     13,
-     5
-    ],
-    "D": [
-     13,
-     10,
-     8,
-     5,
-     4
-    ],
-    "C": [
-     13,
-     10,
-     3
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "5♦",
-   "why": "4 konger: 5♦ (0 eller 4)."
-  },
-  {
-   "situation": "aab_konge_hj",
-   "hand": {
-    "S": [
-     13,
-     7,
-     4
-    ],
-    "H": [
-     13,
-     8,
-     4
-    ],
-    "D": [
-     14,
-     13,
-     10,
-     7,
-     5
-    ],
-    "C": [
-     13,
-     3
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "5♦",
-   "why": "4 konger: 5♦ (0 eller 4)."
-  },
-  {
-   "situation": "aab_konge_hj",
-   "hand": {
-    "S": [
-     14,
-     13,
-     6
-    ],
-    "H": [
-     13,
-     5,
-     3,
-     2
-    ],
-    "D": [
-     13,
-     8,
+     9,
      7
     ],
     "C": [
      13,
-     10,
-     2
-    ]
-   },
-   "hp": 16,
-   "sp": 16,
-   "correct": "5♦",
-   "why": "4 konger: 5♦ (0 eller 4)."
-  },
-  {
-   "situation": "aab_konge_hj",
-   "hand": {
-    "S": [
-     14,
-     13,
-     4,
-     2
-    ],
-    "H": [
-     13,
-     10,
-     4
-    ],
-    "D": [
-     13,
-     2
-    ],
-    "C": [
-     13,
-     10,
-     3,
-     2
+     12,
+     11
     ]
    },
    "hp": 16,
    "sp": 17,
-   "correct": "5♦",
-   "why": "4 konger: 5♦ (0 eller 4)."
+   "correct": "4♥",
+   "why": "1 esser: 4♥ (1).",
+   "en": {
+    "why": "1 ace: 4♥ (1)."
+   }
   },
   {
-   "situation": "aab_konge_hj",
+   "situation": "aab_es",
    "hand": {
     "S": [
-     13,
-     10,
-     8
+     12,
+     6
     ],
     "H": [
-     14,
      13,
      9,
-     5,
+     8,
      3
     ],
     "D": [
      13,
-     5
-    ],
-    "C": [
-     13,
-     9,
+     5,
      4
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "5♦",
-   "why": "4 konger: 5♦ (0 eller 4)."
-  },
-  {
-   "situation": "aab_konge_hj",
-   "hand": {
-    "S": [
-     14,
-     12,
-     9,
-     7,
-     5
-    ],
-    "H": [
-     12,
-     11,
-     10
-    ],
-    "D": [
-     12,
-     11,
-     7
     ],
     "C": [
+     14,
      13,
+     10,
      2
     ]
    },
    "hp": 15,
    "sp": 16,
-   "correct": "5♥",
-   "why": "1 konger: 5♥ (1)."
+   "correct": "4♥",
+   "why": "1 esser: 4♥ (1).",
+   "en": {
+    "why": "1 ace: 4♥ (1)."
+   }
   },
   {
-   "situation": "aab_konge_hj",
+   "situation": "aab_es",
    "hand": {
     "S": [
-     12,
-     9,
-     6
+     13,
+     7
     ],
     "H": [
      13,
      12,
-     8
+     8,
+     2
+    ],
+    "D": [
+     10,
+     9,
+     4
+    ],
+    "C": [
+     14,
+     13,
+     4,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "1 esser: 4♥ (1).",
+   "en": {
+    "why": "1 ace: 4♥ (1)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     12,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     7,
+     3
     ],
     "D": [
      12,
      11
     ],
     "C": [
-     14,
      12,
-     7,
-     5,
-     4
+     9,
+     2
     ]
    },
-   "hp": 16,
-   "sp": 17,
-   "correct": "5♥",
-   "why": "1 konger: 5♥ (1)."
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "1 esser: 4♥ (1).",
+   "en": {
+    "why": "1 ace: 4♥ (1)."
+   }
   },
   {
-   "situation": "aab_konge_hj",
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     14,
+     10,
+     8,
+     5,
+     4
+    ],
+    "H": [
+     13,
+     12,
+     4
+    ],
+    "D": [
+     13,
+     8
+    ],
+    "C": [
+     13,
+     9,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "1 esser: 4♥ (1).",
+   "en": {
+    "why": "1 ace: 4♥ (1)."
+   }
+  },
+  {
+   "situation": "aab_es",
    "hand": {
     "S": [
      13,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     8,
+     4,
+     3
+    ],
+    "D": [
+     13,
      7,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     9
+    ]
+   },
+   "hp": 15,
+   "sp": 15,
+   "correct": "4♥",
+   "why": "1 esser: 4♥ (1).",
+   "en": {
+    "why": "1 ace: 4♥ (1)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     13,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     10,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     5
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "4♥",
+   "why": "1 esser: 4♥ (1).",
+   "en": {
+    "why": "1 ace: 4♥ (1)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     12,
+     10,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     8,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     12
+    ],
+    "C": [
+     12,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♥",
+   "why": "1 esser: 4♥ (1).",
+   "en": {
+    "why": "1 ace: 4♥ (1)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     9,
      5,
      2
     ],
     "H": [
-     12,
-     11,
+     14,
+     13,
+     3
+    ],
+    "D": [
+     13,
      2
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     3,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♠",
+   "why": "2 esser: 4♠ (2).",
+   "en": {
+    "why": "2 aces: 4♠ (2)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     9,
+     3
+    ],
+    "H": [
+     8,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     2
+    ],
+    "C": [
+     14,
+     6,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♠",
+   "why": "2 esser: 4♠ (2).",
+   "en": {
+    "why": "2 aces: 4♠ (2)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     14,
+     11,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     3
+    ],
+    "D": [
+     12,
+     8,
+     5
+    ],
+    "C": [
+     12,
+     7
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♠",
+   "why": "2 esser: 4♠ (2).",
+   "en": {
+    "why": "2 aces: 4♠ (2)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     14,
+     10,
+     6
+    ],
+    "H": [
+     13,
+     12,
+     9,
+     6
     ],
     "D": [
      14,
@@ -5085,45 +4572,975 @@
     ],
     "C": [
      12,
-     11,
-     7,
-     5
+     8,
+     4,
+     2
     ]
    },
-   "hp": 15,
-   "sp": 16,
-   "correct": "5♥",
-   "why": "1 konger: 5♥ (1)."
+   "hp": 17,
+   "sp": 18,
+   "correct": "4♠",
+   "why": "2 esser: 4♠ (2).",
+   "en": {
+    "why": "2 aces: 4♠ (2)."
+   }
   },
   {
-   "situation": "aab_konge_hj",
+   "situation": "aab_es",
    "hand": {
     "S": [
-     12,
-     7
+     11,
+     8
     ],
     "H": [
      14,
-     10,
-     8
+     11,
+     4
     ],
     "D": [
-     12,
+     13,
+     10,
+     5
+    ],
+    "C": [
+     14,
+     13,
      11,
-     7,
+     8,
+     4
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "4♠",
+   "why": "2 esser: 4♠ (2).",
+   "en": {
+    "why": "2 aces: 4♠ (2)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     10,
+     6
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     5
+    ],
+    "D": [
+     14,
+     11,
+     8,
      2
     ],
     "C": [
      13,
      12,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4♠",
+   "why": "2 esser: 4♠ (2).",
+   "en": {
+    "why": "2 aces: 4♠ (2)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
      11,
+     8
+    ],
+    "H": [
+     14,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     11,
+     4
+    ],
+    "C": [
+     12,
+     9,
+     7
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "4♠",
+   "why": "2 esser: 4♠ (2).",
+   "en": {
+    "why": "2 aces: 4♠ (2)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     14,
+     13,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     11,
+     9,
+     8
+    ],
+    "C": [
+     13,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4♠",
+   "why": "2 esser: 4♠ (2).",
+   "en": {
+    "why": "2 aces: 4♠ (2)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     13,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     7
+    ],
+    "D": [
+     13,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     3
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "4♠",
+   "why": "2 esser: 4♠ (2).",
+   "en": {
+    "why": "2 aces: 4♠ (2)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     13,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     9
+    ],
+    "D": [
+     14,
+     10,
+     2
+    ],
+    "C": [
+     13,
+     8,
+     5,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "4♠",
+   "why": "2 esser: 4♠ (2).",
+   "en": {
+    "why": "2 aces: 4♠ (2)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     13,
+     11,
+     7
+    ],
+    "H": [
+     14,
+     9,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     7
+    ],
+    "C": [
+     13,
+     5,
      4
     ]
    },
    "hp": 15,
    "sp": 16,
-   "correct": "5♥",
-   "why": "1 konger: 5♥ (1)."
+   "correct": "4♠",
+   "why": "2 esser: 4♠ (2).",
+   "en": {
+    "why": "2 aces: 4♠ (2)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     2
+    ],
+    "D": [
+     12,
+     5,
+     4
+    ],
+    "C": [
+     11,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4♠",
+   "why": "2 esser: 4♠ (2).",
+   "en": {
+    "why": "2 aces: 4♠ (2)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     13,
+     9,
+     6
+    ],
+    "H": [
+     11,
+     10,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     7
+    ],
+    "C": [
+     14,
+     9
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4♠",
+   "why": "2 esser: 4♠ (2).",
+   "en": {
+    "why": "2 aces: 4♠ (2)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     9,
+     8,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     9,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     11
+    ],
+    "C": [
+     13,
+     11
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4♠",
+   "why": "2 esser: 4♠ (2).",
+   "en": {
+    "why": "2 aces: 4♠ (2)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     14,
+     9,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     6
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     9,
+     7,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4NT",
+   "why": "3 esser: 4NT (3).",
+   "en": {
+    "why": "3 aces: 4NT (3)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8,
+     5
+    ],
+    "H": [
+     10,
+     9,
+     7
+    ],
+    "D": [
+     14,
+     11
+    ],
+    "C": [
+     14,
+     13,
+     6,
+     5
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "4NT",
+   "why": "3 esser: 4NT (3).",
+   "en": {
+    "why": "3 aces: 4NT (3)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     14,
+     7,
+     4
+    ],
+    "H": [
+     12,
+     11,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     7,
+     6
+    ],
+    "C": [
+     14,
+     12,
+     7
+    ]
+   },
+   "hp": 17,
+   "sp": 17,
+   "correct": "4NT",
+   "why": "3 esser: 4NT (3).",
+   "en": {
+    "why": "3 aces: 4NT (3)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     14,
+     9,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     5
+    ],
+    "D": [
+     13,
+     7,
+     6
+    ],
+    "C": [
+     14,
+     6,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4NT",
+   "why": "3 esser: 4NT (3).",
+   "en": {
+    "why": "3 aces: 4NT (3)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     13,
+     10,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     8,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     7,
+     3
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4NT",
+   "why": "3 esser: 4NT (3).",
+   "en": {
+    "why": "3 aces: 4NT (3)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     14,
+     7,
+     3
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     14,
+     10,
+     9,
+     8,
+     4
+    ],
+    "C": [
+     13,
+     7,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4NT",
+   "why": "3 esser: 4NT (3).",
+   "en": {
+    "why": "3 aces: 4NT (3)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     14,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     10,
+     6
+    ],
+    "D": [
+     8,
+     4
+    ],
+    "C": [
+     14,
+     7,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4NT",
+   "why": "3 esser: 4NT (3).",
+   "en": {
+    "why": "3 aces: 4NT (3)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     2
+    ],
+    "H": [
+     14,
+     8,
+     7
+    ],
+    "D": [
+     14,
+     9
+    ],
+    "C": [
+     11,
+     9,
+     4,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "4NT",
+   "why": "3 esser: 4NT (3).",
+   "en": {
+    "why": "3 aces: 4NT (3)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     14,
+     7
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     7,
+     5
+    ],
+    "D": [
+     14,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     11,
+     3
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "4NT",
+   "why": "3 esser: 4NT (3).",
+   "en": {
+    "why": "3 aces: 4NT (3)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     8
+    ],
+    "H": [
+     14,
+     11,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     10
+    ],
+    "C": [
+     11,
+     10
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4NT",
+   "why": "3 esser: 4NT (3).",
+   "en": {
+    "why": "3 aces: 4NT (3)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     7,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     6,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     5
+    ],
+    "C": [
+     14,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "4NT",
+   "why": "3 esser: 4NT (3).",
+   "en": {
+    "why": "3 aces: 4NT (3)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     13,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     8,
+     6
+    ],
+    "C": [
+     14,
+     10,
+     6,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 15,
+   "correct": "4NT",
+   "why": "3 esser: 4NT (3).",
+   "en": {
+    "why": "3 aces: 4NT (3)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     13,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     6
+    ],
+    "D": [
+     14,
+     5
+    ],
+    "C": [
+     14,
+     9,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "4NT",
+   "why": "3 esser: 4NT (3).",
+   "en": {
+    "why": "3 aces: 4NT (3)."
+   }
+  },
+  {
+   "situation": "aab_es",
+   "hand": {
+    "S": [
+     14,
+     9,
+     3
+    ],
+    "H": [
+     14,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     12,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     4,
+     3
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "4NT",
+   "why": "3 esser: 4NT (3).",
+   "en": {
+    "why": "3 aces: 4NT (3)."
+   }
+  },
+  {
+   "situation": "aab_konge_hj",
+   "hand": {
+    "S": [
+     13,
+     7,
+     3
+    ],
+    "H": [
+     13,
+     10
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     9,
+     4
+    ],
+    "C": [
+     13,
+     8,
+     6
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "5♦",
+   "why": "4 konger: 5♦ (0 eller 4).",
+   "en": {
+    "why": "4 kings: 5♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_konge_hj",
+   "hand": {
+    "S": [
+     13,
+     10
+    ],
+    "H": [
+     13,
+     8,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     7,
+     3
+    ],
+    "C": [
+     13,
+     9,
+     7
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "5♦",
+   "why": "4 konger: 5♦ (0 eller 4).",
+   "en": {
+    "why": "4 kings: 5♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_konge_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     5
+    ],
+    "H": [
+     13,
+     10
+    ],
+    "D": [
+     13,
+     10,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     7,
+     3
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "5♦",
+   "why": "4 konger: 5♦ (0 eller 4).",
+   "en": {
+    "why": "4 kings: 5♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_konge_hj",
+   "hand": {
+    "S": [
+     13,
+     10,
+     7,
+     6
+    ],
+    "H": [
+     13,
+     11,
+     5
+    ],
+    "D": [
+     13,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     3,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "5♦",
+   "why": "4 konger: 5♦ (0 eller 4).",
+   "en": {
+    "why": "4 kings: 5♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_konge_hj",
+   "hand": {
+    "S": [
+     13,
+     7
+    ],
+    "H": [
+     13,
+     9,
+     8
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     8,
+     6
+    ],
+    "C": [
+     13,
+     4,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "5♦",
+   "why": "4 konger: 5♦ (0 eller 4).",
+   "en": {
+    "why": "4 kings: 5♦ (0 or 4)."
+   }
   },
   {
    "situation": "aab_konge_hj",
@@ -5131,21 +5548,21 @@
     "S": [
      14,
      12,
-     2
+     10
     ],
     "H": [
+     12,
      11,
+     10,
      3
     ],
     "D": [
      13,
-     12,
      9
     ],
     "C": [
      12,
      11,
-     7,
      4,
      2
     ]
@@ -5153,157 +5570,274 @@
    "hp": 15,
    "sp": 16,
    "correct": "5♥",
-   "why": "1 konger: 5♥ (1)."
+   "why": "1 konger: 5♥ (1).",
+   "en": {
+    "why": "1 king: 5♥ (1)."
+   }
+  },
+  {
+   "situation": "aab_konge_hj",
+   "hand": {
+    "S": [
+     13,
+     12
+    ],
+    "H": [
+     11,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     5
+    ],
+    "C": [
+     12,
+     11,
+     3,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♥",
+   "why": "1 konger: 5♥ (1).",
+   "en": {
+    "why": "1 king: 5♥ (1)."
+   }
   },
   {
    "situation": "aab_konge_hj",
    "hand": {
     "S": [
      12,
+     9
+    ],
+    "H": [
+     12,
+     11,
+     6,
+     2
+    ],
+    "D": [
+     11,
+     8,
+     7
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♥",
+   "why": "1 konger: 5♥ (1).",
+   "en": {
+    "why": "1 king: 5♥ (1)."
+   }
+  },
+  {
+   "situation": "aab_konge_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11
+    ],
+    "H": [
+     13,
+     11
+    ],
+    "D": [
+     11,
+     5,
+     4
+    ],
+    "C": [
+     12,
+     11,
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♥",
+   "why": "1 konger: 5♥ (1).",
+   "en": {
+    "why": "1 king: 5♥ (1)."
+   }
+  },
+  {
+   "situation": "aab_konge_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
      3
     ],
     "H": [
-     14,
-     10,
-     8,
+     12,
+     9,
      4
     ],
     "D": [
-     13,
+     14,
      12,
+     11,
+     2
+    ],
+    "C": [
+     12,
+     6,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 16,
+   "correct": "5♥",
+   "why": "1 konger: 5♥ (1).",
+   "en": {
+    "why": "1 king: 5♥ (1)."
+   }
+  },
+  {
+   "situation": "aab_konge_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     8,
+     6
+    ],
+    "H": [
+     11,
+     8,
+     2
+    ],
+    "D": [
+     11,
      10,
      2
     ],
     "C": [
      13,
+     12
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♠",
+   "why": "2 konger: 5♠ (2).",
+   "en": {
+    "why": "2 kings: 5♠ (2)."
+   }
+  },
+  {
+   "situation": "aab_konge_hj",
+   "hand": {
+    "S": [
+     13,
      12,
-     2
+     3
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     8
+    ],
+    "D": [
+     13,
+     10,
+     8,
+     7
+    ],
+    "C": [
+     12,
+     6
     ]
    },
    "hp": 16,
    "sp": 17,
    "correct": "5♠",
-   "why": "2 konger: 5♠ (2)."
+   "why": "2 konger: 5♠ (2).",
+   "en": {
+    "why": "2 kings: 5♠ (2)."
+   }
   },
   {
    "situation": "aab_konge_hj",
    "hand": {
     "S": [
      12,
-     9,
      8,
-     7
-    ],
-    "H": [
-     12,
-     11,
-     5,
-     3
-    ],
-    "D": [
-     14,
-     13,
-     5
-    ],
-    "C": [
-     13,
-     9
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "5♠",
-   "why": "2 konger: 5♠ (2)."
-  },
-  {
-   "situation": "aab_konge_hj",
-   "hand": {
-    "S": [
-     7,
+     4,
      3
     ],
     "H": [
      13,
-     12,
-     5
+     11
     ],
     "D": [
-     14,
-     12,
-     10,
-     9,
+     13,
+     8,
+     3,
      2
     ],
     "C": [
-     13,
-     11,
-     7
+     14,
+     12,
+     3
     ]
    },
    "hp": 15,
    "sp": 16,
    "correct": "5♠",
-   "why": "2 konger: 5♠ (2)."
+   "why": "2 konger: 5♠ (2).",
+   "en": {
+    "why": "2 kings: 5♠ (2)."
+   }
   },
   {
    "situation": "aab_konge_hj",
    "hand": {
     "S": [
      13,
-     12,
-     9,
-     8
+     8,
+     4
     ],
     "H": [
-     11,
-     6
-    ],
-    "D": [
      12,
-     10,
-     9
-    ],
-    "C": [
-     14,
-     13,
-     9,
-     6
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "5♠",
-   "why": "2 konger: 5♠ (2)."
-  },
-  {
-   "situation": "aab_konge_hj",
-   "hand": {
-    "S": [
-     13,
-     12,
-     6,
-     5
-    ],
-    "H": [
-     14,
-     13,
-     12
-    ],
-    "D": [
-     7,
-     5,
+     8,
      3
     ],
-    "C": [
+    "D": [
+     14,
+     13,
      11,
-     9,
-     7
+     5
+    ],
+    "C": [
+     12,
+     4,
+     2
     ]
    },
    "hp": 15,
    "sp": 15,
    "correct": "5♠",
-   "why": "2 konger: 5♠ (2)."
+   "why": "2 konger: 5♠ (2).",
+   "en": {
+    "why": "2 kings: 5♠ (2)."
+   }
   },
   {
    "situation": "aab_konge_hj",
@@ -5311,269 +5845,362 @@
     "S": [
      13,
      9,
-     6
+     3
     ],
     "H": [
      12,
-     10,
      7
     ],
     "D": [
      14,
-     13,
-     10,
-     3,
-     2
-    ],
-    "C": [
-     13,
-     7
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "5NT",
-   "why": "3 konger: 5NT (3)."
-  },
-  {
-   "situation": "aab_konge_hj",
-   "hand": {
-    "S": [
-     9,
-     6,
-     4
-    ],
-    "H": [
-     13,
-     8
-    ],
-    "D": [
-     14,
-     13,
-     7
+     8,
+     3
     ],
     "C": [
      13,
      12,
      11,
+     9,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♠",
+   "why": "2 konger: 5♠ (2).",
+   "en": {
+    "why": "2 kings: 5♠ (2)."
+   }
+  },
+  {
+   "situation": "aab_konge_hj",
+   "hand": {
+    "S": [
+     13,
+     8
+    ],
+    "H": [
+     14,
+     12,
+     3
+    ],
+    "D": [
+     13,
      8,
-     5
+     7,
+     5,
+     2
+    ],
+    "C": [
+     13,
+     11,
+     3
     ]
    },
    "hp": 16,
    "sp": 17,
    "correct": "5NT",
-   "why": "3 konger: 5NT (3)."
+   "why": "3 konger: 5NT (3).",
+   "en": {
+    "why": "3 kings: 5NT (3)."
+   }
   },
   {
    "situation": "aab_konge_hj",
    "hand": {
     "S": [
-     12,
+     13,
      8,
-     6,
      5
     ],
     "H": [
-     13,
-     6,
+     14,
+     5,
      4
     ],
     "D": [
      13,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     9,
+     6,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5NT",
+   "why": "3 konger: 5NT (3).",
+   "en": {
+    "why": "3 kings: 5NT (3)."
+   }
+  },
+  {
+   "situation": "aab_konge_hj",
+   "hand": {
+    "S": [
+     13,
+     7
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     5
+    ],
+    "D": [
+     13,
+     10,
      7,
      6
     ],
     "C": [
      14,
-     13,
-     11
+     6,
+     3
     ]
    },
-   "hp": 16,
+   "hp": 15,
    "sp": 16,
    "correct": "5NT",
-   "why": "3 konger: 5NT (3)."
+   "why": "3 konger: 5NT (3).",
+   "en": {
+    "why": "3 kings: 5NT (3)."
+   }
   },
   {
    "situation": "aab_konge_hj",
    "hand": {
     "S": [
+     13,
+     11,
+     5
+    ],
+    "H": [
+     8,
+     7,
+     3
+    ],
+    "D": [
+     13,
+     5
+    ],
+    "C": [
+     14,
+     13,
      12,
-     10,
-     4
+     6,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "5NT",
+   "why": "3 konger: 5NT (3).",
+   "en": {
+    "why": "3 kings: 5NT (3)."
+   }
+  },
+  {
+   "situation": "aab_konge_hj",
+   "hand": {
+    "S": [
+     13,
+     9,
+     2
     ],
     "H": [
      13,
      6,
-     5
+     3
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     14,
+     7,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5NT",
+   "why": "3 konger: 5NT (3).",
+   "en": {
+    "why": "3 kings: 5NT (3)."
+   }
+  },
+  {
+   "situation": "aab_konge_sp",
+   "hand": {
+    "S": [
+     12,
+     11
+    ],
+    "H": [
+     12,
+     10,
+     9,
+     8,
+     4
     ],
     "D": [
      14,
-     13,
-     3
+     11,
+     6
     ],
     "C": [
-     13,
-     10,
-     7,
+     14,
+     11,
      4
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♦",
+   "why": "0 konger: 5♦ (0 eller 4).",
+   "en": {
+    "why": "0 kings: 5♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_konge_sp",
+   "hand": {
+    "S": [
+     14,
+     12,
+     3
+    ],
+    "H": [
+     14,
+     9,
+     4
+    ],
+    "D": [
+     12,
+     6,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     6,
+     2
     ]
    },
    "hp": 15,
    "sp": 15,
-   "correct": "5NT",
-   "why": "3 konger: 5NT (3)."
-  },
-  {
-   "situation": "aab_konge_hj",
-   "hand": {
-    "S": [
-     11,
-     8,
-     4
-    ],
-    "H": [
-     13,
-     9
-    ],
-    "D": [
-     14,
-     13,
-     11,
-     6,
-     3
-    ],
-    "C": [
-     13,
-     4,
-     2
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "5NT",
-   "why": "3 konger: 5NT (3)."
+   "correct": "5♦",
+   "why": "0 konger: 5♦ (0 eller 4).",
+   "en": {
+    "why": "0 kings: 5♦ (0 or 4)."
+   }
   },
   {
    "situation": "aab_konge_sp",
    "hand": {
     "S": [
      12,
-     11,
-     8,
-     7,
+     10,
      2
     ],
     "H": [
      14,
-     12,
-     11
+     12
     ],
     "D": [
-     14,
-     7,
-     5
+     12,
+     11,
+     6,
+     2
     ],
     "C": [
+     14,
      12,
-     11
+     8,
+     7
     ]
    },
    "hp": 17,
    "sp": 18,
    "correct": "5♦",
-   "why": "0 konger: 5♦ (0 eller 4)."
+   "why": "0 konger: 5♦ (0 eller 4).",
+   "en": {
+    "why": "0 kings: 5♦ (0 or 4)."
+   }
   },
   {
    "situation": "aab_konge_sp",
    "hand": {
     "S": [
      12,
-     9,
-     8,
-     4,
-     3
+     11,
+     6
     ],
     "H": [
-     12,
+     11,
      9
     ],
     "D": [
      14,
-     11,
-     8
+     5,
+     3,
+     2
     ],
     "C": [
      14,
      12,
+     11,
      10
     ]
    },
    "hp": 15,
    "sp": 16,
    "correct": "5♦",
-   "why": "0 konger: 5♦ (0 eller 4)."
+   "why": "0 konger: 5♦ (0 eller 4).",
+   "en": {
+    "why": "0 kings: 5♦ (0 or 4)."
+   }
   },
   {
    "situation": "aab_konge_sp",
    "hand": {
     "S": [
-     12,
-     10,
-     3
-    ],
-    "H": [
-     14,
-     12,
-     7
-    ],
-    "D": [
      14,
      12,
      11,
-     7,
-     5
-    ],
-    "C": [
-     10,
-     5
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "5♦",
-   "why": "0 konger: 5♦ (0 eller 4)."
-  },
-  {
-   "situation": "aab_konge_sp",
-   "hand": {
-    "S": [
-     10,
-     6
+     3
     ],
     "H": [
-     14,
      12,
      11
     ],
     "D": [
-     14,
      11,
-     4
+     6,
+     2
     ],
     "C": [
-     12,
-     11,
-     9,
+     14,
+     10,
      8,
-     2
+     3
     ]
    },
    "hp": 15,
    "sp": 16,
    "correct": "5♦",
-   "why": "0 konger: 5♦ (0 eller 4)."
+   "why": "0 konger: 5♦ (0 eller 4).",
+   "en": {
+    "why": "0 kings: 5♦ (0 or 4)."
+   }
   },
   {
    "situation": "aab_konge_sp",
@@ -5581,779 +6208,824 @@
     "S": [
      14,
      12,
-     8,
-     6
+     11,
+     4
     ],
     "H": [
      14,
-     12,
-     7,
-     5
+     10,
+     4
     ],
     "D": [
-     12,
-     7,
-     6
+     13,
+     11,
+     8,
+     5
     ],
     "C": [
-     12,
+     11,
      2
     ]
    },
    "hp": 16,
    "sp": 17,
-   "correct": "5♦",
-   "why": "0 konger: 5♦ (0 eller 4)."
+   "correct": "5♥",
+   "why": "1 konger: 5♥ (1).",
+   "en": {
+    "why": "1 king: 5♥ (1)."
+   }
   },
   {
    "situation": "aab_konge_sp",
    "hand": {
     "S": [
      14,
-     9,
-     5
-    ],
-    "H": [
-     11,
-     3,
-     2
-    ],
-    "D": [
-     14,
-     12
-    ],
-    "C": [
-     13,
      12,
-     7,
+     9,
      6,
      3
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "5♥",
-   "why": "1 konger: 5♥ (1)."
-  },
-  {
-   "situation": "aab_konge_sp",
-   "hand": {
-    "S": [
-     14,
-     12
-    ],
-    "H": [
-     12,
-     11,
-     9
-    ],
-    "D": [
-     13,
-     9,
-     4,
-     3,
-     2
-    ],
-    "C": [
-     14,
-     11,
-     9
-    ]
-   },
-   "hp": 17,
-   "sp": 18,
-   "correct": "5♥",
-   "why": "1 konger: 5♥ (1)."
-  },
-  {
-   "situation": "aab_konge_sp",
-   "hand": {
-    "S": [
-     11,
-     9
-    ],
-    "H": [
-     14,
-     12,
-     9
-    ],
-    "D": [
-     14,
-     13,
-     11,
-     6,
-     5
-    ],
-    "C": [
-     10,
-     9,
-     5
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "5♥",
-   "why": "1 konger: 5♥ (1)."
-  },
-  {
-   "situation": "aab_konge_sp",
-   "hand": {
-    "S": [
-     13,
-     9,
-     5,
-     2
-    ],
-    "H": [
-     14,
-     12,
-     7,
-     5
-    ],
-    "D": [
-     11,
-     5,
-     4
-    ],
-    "C": [
-     14,
-     12
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "5♥",
-   "why": "1 konger: 5♥ (1)."
-  },
-  {
-   "situation": "aab_konge_sp",
-   "hand": {
-    "S": [
-     13,
-     7
-    ],
-    "H": [
-     6,
-     5,
-     2
-    ],
-    "D": [
-     14,
-     12,
-     11,
-     8,
-     7
-    ],
-    "C": [
-     14,
-     11,
-     3
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "5♥",
-   "why": "1 konger: 5♥ (1)."
-  },
-  {
-   "situation": "aab_konge_sp",
-   "hand": {
-    "S": [
-     14,
-     9,
-     5
-    ],
-    "H": [
-     11,
-     4,
-     3,
-     2
-    ],
-    "D": [
-     13,
-     4
-    ],
-    "C": [
-     14,
-     13,
-     8,
-     4
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "5♠",
-   "why": "2 konger: 5♠ (2)."
-  },
-  {
-   "situation": "aab_konge_sp",
-   "hand": {
-    "S": [
-     9,
-     3,
-     2
-    ],
-    "H": [
-     13,
-     11,
-     10,
-     7
-    ],
-    "D": [
-     14,
-     13,
-     6
-    ],
-    "C": [
-     14,
-     10,
-     8
-    ]
-   },
-   "hp": 15,
-   "sp": 15,
-   "correct": "5♠",
-   "why": "2 konger: 5♠ (2)."
-  },
-  {
-   "situation": "aab_konge_sp",
-   "hand": {
-    "S": [
-     14,
-     9,
-     2
-    ],
-    "H": [
-     14,
-     12,
-     10,
-     5
-    ],
-    "D": [
-     13,
-     6
-    ],
-    "C": [
-     13,
-     10,
-     9,
-     2
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "5♠",
-   "why": "2 konger: 5♠ (2)."
-  },
-  {
-   "situation": "aab_konge_sp",
-   "hand": {
-    "S": [
-     13,
-     6,
-     5
-    ],
-    "H": [
-     14,
-     8
-    ],
-    "D": [
-     11,
-     10,
-     8,
-     4
-    ],
-    "C": [
-     14,
-     13,
-     12,
-     5
-    ]
-   },
-   "hp": 17,
-   "sp": 18,
-   "correct": "5♠",
-   "why": "2 konger: 5♠ (2)."
-  },
-  {
-   "situation": "aab_konge_sp",
-   "hand": {
-    "S": [
-     13,
-     11,
-     3
-    ],
-    "H": [
-     14,
-     13,
-     11,
-     4
-    ],
-    "D": [
-     14,
-     9
-    ],
-    "C": [
-     9,
-     6,
-     5,
-     2
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "5♠",
-   "why": "2 konger: 5♠ (2)."
-  },
-  {
-   "situation": "aab_konge_sp",
-   "hand": {
-    "S": [
-     14,
-     13,
-     10,
-     8,
-     5
     ],
     "H": [
      13,
      10
     ],
     "D": [
-     7,
-     4,
+     14,
+     12,
      2
     ],
     "C": [
-     14,
-     13,
-     2
+     10,
+     7,
+     6
     ]
    },
-   "hp": 17,
-   "sp": 18,
-   "correct": "5NT",
-   "why": "3 konger: 5NT (3)."
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♥",
+   "why": "1 konger: 5♥ (1).",
+   "en": {
+    "why": "1 king: 5♥ (1)."
+   }
   },
   {
    "situation": "aab_konge_sp",
    "hand": {
     "S": [
      14,
-     13,
+     7,
      6
     ],
     "H": [
-     13,
-     6
+     6,
+     2
     ],
     "D": [
+     14,
      13,
-     9,
-     6
+     12,
+     7,
+     5
     ],
     "C": [
-     14,
-     10,
-     5,
-     4,
-     2
+     12,
+     8,
+     5
     ]
    },
-   "hp": 17,
-   "sp": 18,
-   "correct": "5NT",
-   "why": "3 konger: 5NT (3)."
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♥",
+   "why": "1 konger: 5♥ (1).",
+   "en": {
+    "why": "1 king: 5♥ (1)."
+   }
   },
   {
    "situation": "aab_konge_sp",
    "hand": {
     "S": [
      14,
+     12,
+     9
+    ],
+    "H": [
+     14,
+     9,
+     6,
+     5
+    ],
+    "D": [
+     12,
+     10,
+     4,
+     3
+    ],
+    "C": [
      13,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♥",
+   "why": "1 konger: 5♥ (1).",
+   "en": {
+    "why": "1 king: 5♥ (1)."
+   }
+  },
+  {
+   "situation": "aab_konge_sp",
+   "hand": {
+    "S": [
+     12,
+     10,
+     9,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     10,
+     9,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     12
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♥",
+   "why": "1 konger: 5♥ (1).",
+   "en": {
+    "why": "1 king: 5♥ (1)."
+   }
+  },
+  {
+   "situation": "aab_konge_sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     6
+    ],
+    "H": [
+     14,
+     4
+    ],
+    "D": [
+     13,
+     10,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     6,
+     4
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "5♠",
+   "why": "2 konger: 5♠ (2).",
+   "en": {
+    "why": "2 kings: 5♠ (2)."
+   }
+  },
+  {
+   "situation": "aab_konge_sp",
+   "hand": {
+    "S": [
+     14,
      8,
+     5,
      4
     ],
     "H": [
+     14,
+     9
+    ],
+    "D": [
      13,
-     7,
+     11,
+     5
+    ],
+    "C": [
+     13,
+     9,
+     6,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♠",
+   "why": "2 konger: 5♠ (2).",
+   "en": {
+    "why": "2 kings: 5♠ (2)."
+   }
+  },
+  {
+   "situation": "aab_konge_sp",
+   "hand": {
+    "S": [
+     13,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     11,
+     8
+    ],
+    "D": [
      4,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     8,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♠",
+   "why": "2 konger: 5♠ (2).",
+   "en": {
+    "why": "2 kings: 5♠ (2)."
+   }
+  },
+  {
+   "situation": "aab_konge_sp",
+   "hand": {
+    "S": [
+     13,
+     10,
+     2
+    ],
+    "H": [
+     13,
+     8
+    ],
+    "D": [
+     14,
+     9,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     7,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "5♠",
+   "why": "2 konger: 5♠ (2).",
+   "en": {
+    "why": "2 kings: 5♠ (2)."
+   }
+  },
+  {
+   "situation": "aab_konge_sp",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7
+    ],
+    "H": [
+     13,
+     12,
+     7,
      2
     ],
     "D": [
+     14,
+     8
+    ],
+    "C": [
+     13,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "5♠",
+   "why": "2 konger: 5♠ (2).",
+   "en": {
+    "why": "2 kings: 5♠ (2)."
+   }
+  },
+  {
+   "situation": "aab_konge_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     8
+    ],
+    "D": [
+     13,
+     9
+    ],
+    "C": [
+     9,
+     4,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "5NT",
+   "why": "3 konger: 5NT (3).",
+   "en": {
+    "why": "3 kings: 5NT (3)."
+   }
+  },
+  {
+   "situation": "aab_konge_sp",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9
+    ],
+    "H": [
+     13,
+     9
+    ],
+    "D": [
+     13,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     8,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "5NT",
+   "why": "3 konger: 5NT (3).",
+   "en": {
+    "why": "3 kings: 5NT (3)."
+   }
+  },
+  {
+   "situation": "aab_konge_sp",
+   "hand": {
+    "S": [
+     13,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     4
+    ],
+    "D": [
+     14,
+     6,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     5
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "5NT",
+   "why": "3 konger: 5NT (3).",
+   "en": {
+    "why": "3 kings: 5NT (3)."
+   }
+  },
+  {
+   "situation": "aab_konge_sp",
+   "hand": {
+    "S": [
+     13,
+     9,
+     5
+    ],
+    "H": [
+     14,
+     7
+    ],
+    "D": [
+     13,
+     10,
+     9,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     8,
+     7
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "5NT",
+   "why": "3 konger: 5NT (3).",
+   "en": {
+    "why": "3 kings: 5NT (3)."
+   }
+  },
+  {
+   "situation": "aab_konge_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7
+    ],
+    "H": [
+     13,
+     10,
+     8,
+     4
+    ],
+    "D": [
+     14,
+     10,
+     6,
+     4
+    ],
+    "C": [
+     13,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 18,
+   "correct": "5NT",
+   "why": "3 konger: 5NT (3).",
+   "en": {
+    "why": "3 kings: 5NT (3)."
+   }
+  },
+  {
+   "situation": "aab_konge_nt",
+   "hand": {
+    "S": [
+     10,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     7
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     9
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♦",
+   "why": "0 konger: 5♦ (0 eller 4).",
+   "en": {
+    "why": "0 kings: 5♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_konge_nt",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8
+    ],
+    "H": [
+     8,
+     7
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     8,
+     4
+    ],
+    "C": [
+     14,
+     8,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♦",
+   "why": "0 konger: 5♦ (0 eller 4).",
+   "en": {
+    "why": "0 kings: 5♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_konge_nt",
+   "hand": {
+    "S": [
+     14,
+     10,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     10
+    ],
+    "D": [
+     14,
+     9,
+     8
+    ],
+    "C": [
+     14,
+     11,
+     6,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 16,
+   "correct": "5♦",
+   "why": "0 konger: 5♦ (0 eller 4).",
+   "en": {
+    "why": "0 kings: 5♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_konge_nt",
+   "hand": {
+    "S": [
+     14,
+     12,
+     7,
+     2
+    ],
+    "H": [
+     9,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     9
+    ],
+    "C": [
+     14,
+     9,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 16,
+   "correct": "5♦",
+   "why": "0 konger: 5♦ (0 eller 4).",
+   "en": {
+    "why": "0 kings: 5♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_konge_nt",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     9,
+     6
+    ],
+    "H": [
+     8,
+     3
+    ],
+    "D": [
+     14,
+     9,
+     4
+    ],
+    "C": [
+     14,
+     6,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♦",
+   "why": "0 konger: 5♦ (0 eller 4).",
+   "en": {
+    "why": "0 kings: 5♦ (0 or 4)."
+   }
+  },
+  {
+   "situation": "aab_konge_nt",
+   "hand": {
+    "S": [
+     14,
+     13,
+     3
+    ],
+    "H": [
+     14,
+     9,
+     4
+    ],
+    "D": [
+     14,
+     8
+    ],
+    "C": [
+     11,
+     10,
+     9,
+     6,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "5♥",
+   "why": "1 konger: 5♥ (1).",
+   "en": {
+    "why": "1 king: 5♥ (1)."
+   }
+  },
+  {
+   "situation": "aab_konge_nt",
+   "hand": {
+    "S": [
+     10,
+     9,
+     2
+    ],
+    "H": [
+     14,
+     6
+    ],
+    "D": [
+     14,
+     9,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     7,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♥",
+   "why": "1 konger: 5♥ (1).",
+   "en": {
+    "why": "1 king: 5♥ (1)."
+   }
+  },
+  {
+   "situation": "aab_konge_nt",
+   "hand": {
+    "S": [
+     14,
+     11,
+     9,
+     7,
+     5
+    ],
+    "H": [
+     9,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     9
+    ],
+    "C": [
+     14,
+     6,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 17,
+   "correct": "5♥",
+   "why": "1 konger: 5♥ (1).",
+   "en": {
+    "why": "1 king: 5♥ (1)."
+   }
+  },
+  {
+   "situation": "aab_konge_nt",
+   "hand": {
+    "S": [
+     14,
+     8,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     13,
+     10
+    ],
+    "D": [
+     14,
+     7,
+     3
+    ],
+    "C": [
+     14,
+     8,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "5♥",
+   "why": "1 konger: 5♥ (1).",
+   "en": {
+    "why": "1 king: 5♥ (1)."
+   }
+  },
+  {
+   "situation": "aab_konge_nt",
+   "hand": {
+    "S": [
      14,
      10
     ],
-    "C": [
-     13,
-     6,
-     5
-    ]
-   },
-   "hp": 17,
-   "sp": 18,
-   "correct": "5NT",
-   "why": "3 konger: 5NT (3)."
-  },
-  {
-   "situation": "aab_konge_sp",
-   "hand": {
-    "S": [
-     14,
-     13
-    ],
     "H": [
-     14,
-     13,
-     5,
-     3
-    ],
-    "D": [
-     13,
-     7,
-     5,
-     3
-    ],
-    "C": [
-     7,
-     6,
-     5
-    ]
-   },
-   "hp": 17,
-   "sp": 18,
-   "correct": "5NT",
-   "why": "3 konger: 5NT (3)."
-  },
-  {
-   "situation": "aab_konge_sp",
-   "hand": {
-    "S": [
-     13,
-     9,
-     8
-    ],
-    "H": [
-     14,
-     13,
-     10,
-     9,
-     2
-    ],
-    "D": [
-     4,
-     2
-    ],
-    "C": [
-     14,
-     13,
-     3
-    ]
-   },
-   "hp": 17,
-   "sp": 18,
-   "correct": "5NT",
-   "why": "3 konger: 5NT (3)."
-  },
-  {
-   "situation": "aab_konge_nt",
-   "hand": {
-    "S": [
-     14,
-     7,
-     4
-    ],
-    "H": [
-     14,
-     12
-    ],
-    "D": [
-     12,
-     7,
-     6
-    ],
-    "C": [
-     14,
      8,
-     7,
      6,
-     5
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "5♦",
-   "why": "0 konger: 5♦ (0 eller 4)."
-  },
-  {
-   "situation": "aab_konge_nt",
-   "hand": {
-    "S": [
-     12,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     3
+    ],
+    "C": [
+     14,
      9,
      7
-    ],
-    "H": [
-     14,
-     8
-    ],
-    "D": [
-     14,
-     11,
-     9,
-     8,
-     5
-    ],
-    "C": [
-     14,
-     9,
-     6
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "5♦",
-   "why": "0 konger: 5♦ (0 eller 4)."
-  },
-  {
-   "situation": "aab_konge_nt",
-   "hand": {
-    "S": [
-     11,
-     7,
-     5,
-     4,
-     2
-    ],
-    "H": [
-     14,
-     12
-    ],
-    "D": [
-     14,
-     10,
-     5
-    ],
-    "C": [
-     14,
-     10,
-     2
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "5♦",
-   "why": "0 konger: 5♦ (0 eller 4)."
-  },
-  {
-   "situation": "aab_konge_nt",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11,
-     4
-    ],
-    "H": [
-     14,
-     5,
-     2
-    ],
-    "D": [
-     14,
-     12,
-     8
-    ],
-    "C": [
-     5,
-     3,
-     2
-    ]
-   },
-   "hp": 17,
-   "sp": 17,
-   "correct": "5♦",
-   "why": "0 konger: 5♦ (0 eller 4)."
-  },
-  {
-   "situation": "aab_konge_nt",
-   "hand": {
-    "S": [
-     11,
-     10,
-     7,
-     6
-    ],
-    "H": [
-     14,
-     11,
-     10,
-     5
-    ],
-    "D": [
-     14,
-     11
-    ],
-    "C": [
-     14,
-     9,
-     8
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "5♦",
-   "why": "0 konger: 5♦ (0 eller 4)."
-  },
-  {
-   "situation": "aab_konge_nt",
-   "hand": {
-    "S": [
-     6,
-     5
-    ],
-    "H": [
-     14,
-     11,
-     10,
-     2
-    ],
-    "D": [
-     14,
-     8,
-     5
-    ],
-    "C": [
-     14,
-     13,
-     5,
-     4
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "5♥",
-   "why": "1 konger: 5♥ (1)."
-  },
-  {
-   "situation": "aab_konge_nt",
-   "hand": {
-    "S": [
-     14,
-     13,
-     8
-    ],
-    "H": [
-     9,
-     8
-    ],
-    "D": [
-     14,
-     8,
-     3,
-     2
-    ],
-    "C": [
-     14,
-     11,
-     5,
-     4
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "5♥",
-   "why": "1 konger: 5♥ (1)."
-  },
-  {
-   "situation": "aab_konge_nt",
-   "hand": {
-    "S": [
-     14,
-     11,
-     4
-    ],
-    "H": [
-     14,
-     10,
-     2
-    ],
-    "D": [
-     13,
-     6
-    ],
-    "C": [
-     14,
-     10,
-     8,
-     7,
-     5
-    ]
-   },
-   "hp": 16,
-   "sp": 17,
-   "correct": "5♥",
-   "why": "1 konger: 5♥ (1)."
-  },
-  {
-   "situation": "aab_konge_nt",
-   "hand": {
-    "S": [
-     13,
-     8,
-     4
-    ],
-    "H": [
-     14,
-     5,
-     3
-    ],
-    "D": [
-     14,
-     3
-    ],
-    "C": [
-     14,
-     12,
-     6,
-     4,
-     2
-    ]
-   },
-   "hp": 17,
-   "sp": 18,
-   "correct": "5♥",
-   "why": "1 konger: 5♥ (1)."
-  },
-  {
-   "situation": "aab_konge_nt",
-   "hand": {
-    "S": [
-     14,
-     5,
-     3
-    ],
-    "H": [
-     14,
-     13,
-     8,
-     7
-    ],
-    "D": [
-     14,
-     3
-    ],
-    "C": [
-     10,
-     5,
-     4,
-     3
     ]
    },
    "hp": 15,
    "sp": 16,
    "correct": "5♥",
-   "why": "1 konger: 5♥ (1)."
+   "why": "1 konger: 5♥ (1).",
+   "en": {
+    "why": "1 king: 5♥ (1)."
+   }
   }
  ]
 }

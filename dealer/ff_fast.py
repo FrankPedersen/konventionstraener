@@ -9,13 +9,16 @@ I et udgangskrævende forløb betyder hurtig udgang minimum og langsom ankomst t
 Antagelser: kontrol = es, konge, singleton eller renonce; åbner cuebidder i klør eller ruder (3♠ i
 egen farve er ikke med); tillæg uden kontrol i klør og ruder er ikke med; svarer med 17+ (slem) er ikke med.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, build_pool, tx
 
 PAS = ["Modstander", "Pas"]
-BONUS = {"q": "Hvad viser den hurtige udgang i et udgangskrævende forløb?",
-         "correct": "Minimum – intet at tilføje",
-         "options": ["Minimum – intet at tilføje", "Tillæg – stærkeste vej", "Slemambition"],
-         "why": "Fast arrival: ingen af jer kan passe under udgang, så den hurtige udgang viser minimum. Den langsomme vej (3M, cuebid) viser tillæg."}
+C = tx("Minimum – intet at tilføje", "A minimum – nothing to add")
+BONUS = {"q": tx("Hvad viser den hurtige udgang i et udgangskrævende forløb?", "What does the fast jump to game show in a game-forcing auction?"),
+         "correct": C,
+         "options": [C, tx("Tillæg – stærkeste vej", "Extra values – the strongest route"), tx("Slemambition", "Slam ambitions")],
+         "why": tx("Fast arrival: ingen af jer kan passe under udgang, så den hurtige udgang viser minimum. Den langsomme vej (3M, cuebid) viser tillæg.",
+                   "Fast arrival: neither of you can pass below game, so the fast route to game shows a minimum. "
+                   "The slow route (3M, cue-bid) shows extra values.")}
 
 def control(cards):
     return len(cards) <= 1 or cards[0] >= 13
@@ -27,8 +30,10 @@ def responder(M, X):
         if L[M] != 3 or not (13 <= hp <= 16) or L[X] < (4 if X == 'C' else 5):
             return None
         if hp <= 14:
-            return f"4{sym}", f"Fit og {hp} hp – minimum for Two over One: 4{sym} direkte (fast arrival)."
-        return f"3{sym}", f"Fit og {hp} hp – ekstra værdier: 3{sym} lader plads til cuebids (slow arrival)."
+            return f"4{sym}", tx(f"Fit og {hp} hp – minimum for Two over One: 4{sym} direkte (fast arrival).",
+                                 f"A fit and {hp} HCP – a minimum for Two over One: 4{sym} directly (fast arrival).")
+        return f"3{sym}", tx(f"Fit og {hp} hp – ekstra værdier: 3{sym} lader plads til cuebids (slow arrival).",
+                             f"A fit and {hp} HCP – extra values: 3{sym} leaves room for cue-bids (slow arrival).")
     return classify
 
 def opener(X):
@@ -37,11 +42,13 @@ def opener(X):
         if L['S'] != 5 or L['H'] != 4 or not (12 <= hp <= 18):
             return None
         if hp <= 14:
-            return "4♥", f"{hp} hp – minimum: 4♥ direkte (fast arrival)."
+            return "4♥", tx(f"{hp} hp – minimum: 4♥ direkte (fast arrival).", f"{hp} HCP – a minimum: 4♥ directly (fast arrival).")
         for s, call in (('C', '4♣'), ('D', '4♦')):
             if control(hand[s]):
                 w = "renonce" if not hand[s] else "singleton" if len(hand[s]) == 1 else "es" if hand[s][0] == 14 else "konge"
-                return call, f"{hp} hp – tillæg: cuebid {call} viser kontrol ({w}) i {SUIT_NAME[s]} – billigste først."
+                w_en = "void" if not hand[s] else "singleton" if len(hand[s]) == 1 else "ace" if hand[s][0] == 14 else "king"
+                return call, tx(f"{hp} hp – tillæg: cuebid {call} viser kontrol ({w}) i {SUIT_NAME[s]} – billigste først.",
+                                f"{hp} HCP – extra values: the cue-bid {call} shows a control ({w_en}) in {SUIT_NAME_EN[s]} – cheapest first.")
         return None
     return classify
 

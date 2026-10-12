@@ -12,18 +12,24 @@
 Antagelser: »god 6-farve« = to af de tre øverste honnører; jævn = 4-3-3-3, 4-4-3-2 eller 5-3-3-2; svarer
 med 6+ spar eller 13+ er ikke med. Revers (16+ rundekrav) er kun et forslag – se Bilag G – og trænes ikke her.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, build_pool, tx
 
 PAS = ["Modstander", "Pas"]
+C_AAB = tx("Ny farve 12–18 ikke krav, spring 19+ udgangskrav", "New suit 12–18 non-forcing, jump 19+ game forcing")
+C_CHECK = tx("Åbners majorfordeling – krav til udgang", "Opener's major-suit holding – forcing to game")
 BONUS = {
-    "aab": {"q": "Hvad er grænsen mellem ny farve og spring i ny farve?",
-            "correct": "Ny farve 12–18 ikke krav, spring 19+ udgangskrav",
-            "options": ["Ny farve 12–18 ikke krav, spring 19+ udgangskrav", "Ny farve 12–15, spring 16+", "Spring er altid spærrende"],
-            "why": "Med 12–18 og 5-4 meldes den nye farve uden spring – naturlig og ikke krav (foreløbig – bekræftes); med 19+ springes. Kun springet er udgangskrav."},
-    "check": {"q": "Hvad spørger 3♣ efter åbners 2NT-genmelding om?",
-              "correct": "Åbners majorfordeling – krav til udgang",
-              "options": ["Åbners majorfordeling – krav til udgang", "Naturlig klør", "Esser"],
-              "why": "3♣ checkback er kunstig: 3 i svarers major = 3 korts støtte, 3 i den anden major = 4-farve, 3♦ = ingen af delene."},
+    "aab": {"q": tx("Hvad er grænsen mellem ny farve og spring i ny farve?", "Where is the boundary between a new suit and a jump in a new suit?"),
+            "correct": C_AAB,
+            "options": [C_AAB, tx("Ny farve 12–15, spring 16+", "New suit 12–15, jump 16+"), tx("Spring er altid spærrende", "A jump is always preemptive")],
+            "why": tx("Med 12–18 og 5-4 meldes den nye farve uden spring – naturlig og ikke krav (foreløbig – bekræftes); med 19+ springes. Kun springet er udgangskrav.",
+                      "With 12–18 and 5-4, the new suit is bid without a jump – natural and non-forcing (provisional – to be confirmed); "
+                      "with 19+ you jump. Only the jump is game forcing.")},
+    "check": {"q": tx("Hvad spørger 3♣ efter åbners 2NT-genmelding om?", "What does 3♣ after opener's 2NT rebid ask?"),
+              "correct": C_CHECK,
+              "options": [C_CHECK, tx("Naturlig klør", "Natural clubs"), tx("Esser", "Aces")],
+              "why": tx("3♣ checkback er kunstig: 3 i svarers major = 3 korts støtte, 3 i den anden major = 4-farve, 3♦ = ingen af delene.",
+                        "3♣ checkback is artificial: three of responder's major = three-card support, three of the other major = "
+                        "a four-card suit, 3♦ = neither.")},
 }
 
 def balanced(L):
@@ -38,26 +44,30 @@ def rebid(hand, hp):
         return None
     if balanced(L):
         if hp <= 14:
-            return "1NT", f"Jævn hånd, {hp} hp: 1NT (12–14)."
+            return "1NT", tx(f"Jævn hånd, {hp} hp: 1NT (12–14).", f"Balanced hand, {hp} HCP: 1NT (12–14).")
         if 18 <= hp <= 19:
-            return "2NT", f"Jævn hånd, {hp} hp: 2NT (18–19)."
+            return "2NT", tx(f"Jævn hånd, {hp} hp: 2NT (18–19).", f"Balanced hand, {hp} HCP: 2NT (18–19).")
         return None
     if L['D'] >= 6 and L['H'] < 4 and L['C'] < 4:
         if hp <= 15:
-            return "2♦", f"{L['D']} ruder og {hp} hp: 2♦ (12–15)."
+            return "2♦", tx(f"{L['D']} ruder og {hp} hp: 2♦ (12–15).", f"{L['D']} diamonds and {hp} HCP: 2♦ (12–15).")
         if hp <= 18 and good(hand['D']):
-            return "3♦", f"God {L['D']}-farve ruder og {hp} hp: 3♦ – inviterende (16–18)."
+            return "3♦", tx(f"God {L['D']}-farve ruder og {hp} hp: 3♦ – inviterende (16–18).",
+                            f"A good {L['D']}-card diamond suit and {hp} HCP: 3♦ – invitational (16–18).")
         return None
     if L['D'] >= 5 and L['H'] == 4 and L['C'] < 4:
         if hp <= 18:
-            return "2♥", f"5-4 med hjerter og {hp} hp: 2♥ – naturlig, ikke krav (12–18, foreløbig – bekræftes)."
+            return "2♥", tx(f"5-4 med hjerter og {hp} hp: 2♥ – naturlig, ikke krav (12–18, foreløbig – bekræftes).",
+                            f"5-4 with hearts and {hp} HCP: 2♥ – natural, non-forcing (12–18, provisional – to be confirmed).")
         if hp >= 19:
-            return "3♥", f"5-4 med hjerter og {hp} hp: spring til 3♥ – udgangskrav (19–21)."
+            return "3♥", tx(f"5-4 med hjerter og {hp} hp: spring til 3♥ – udgangskrav (19–21).",
+                            f"5-4 with hearts and {hp} HCP: jump to 3♥ – game forcing (19–21).")
         return None
     if L['D'] >= 5 and L['C'] == 4 and L['H'] < 4:
         if hp <= 18:
-            return "2♣", f"5-4 med klør og {hp} hp: 2♣ – ny lavere farve (12–18)."
-        return "3♣", f"5-4 med klør og {hp} hp: spring til 3♣ – udgangskrav (19–21)."
+            return "2♣", tx(f"5-4 med klør og {hp} hp: 2♣ – ny lavere farve (12–18).", f"5-4 with clubs and {hp} HCP: 2♣ – a new lower suit (12–18).")
+        return "3♣", tx(f"5-4 med klør og {hp} hp: spring til 3♣ – udgangskrav (19–21).",
+                        f"5-4 with clubs and {hp} HCP: jump to 3♣ – game forcing (19–21).")
     return None
 
 def checkback(M):
@@ -68,8 +78,11 @@ def checkback(M):
             return None
         if L[M] >= 5 or L[O] >= 4:
             why = f"{L[M]} {SUIT_NAME[M]}" if L[M] >= 5 else f"4 {SUIT_NAME[O]}"
-            return "3♣", f"{why} og {hp} hp: 3♣ checkback – spørg om åbners majorfordeling."
-        return "3NT", f"Kun 4 {SUIT_NAME[M]} og ingen 4 {SUIT_NAME[O]}: intet at spørge om – 3NT."
+            why_en = f"{L[M]} {SUIT_NAME_EN[M]}" if L[M] >= 5 else f"4 {SUIT_NAME_EN[O]}"
+            return "3♣", tx(f"{why} og {hp} hp: 3♣ checkback – spørg om åbners majorfordeling.",
+                            f"{why_en} and {hp} HCP: 3♣ checkback – ask about opener's major-suit holding.")
+        return "3NT", tx(f"Kun 4 {SUIT_NAME[M]} og ingen 4 {SUIT_NAME[O]}: intet at spørge om – 3NT.",
+                         f"Only 4 {SUIT_NAME_EN[M]} and not 4 {SUIT_NAME_EN[O]}: nothing to ask about – 3NT.")
     return classify
 
 def answer(M):
@@ -79,12 +92,14 @@ def answer(M):
         if not balanced(L) or not (18 <= hp <= 19) or L[M] >= 4:
             return None
         if L[M] == 3:
-            return f"3{sym}", f"3 {SUIT_NAME[M]}: 3{sym} – 3 korts støtte, fittet er fundet."
+            return f"3{sym}", tx(f"3 {SUIT_NAME[M]}: 3{sym} – 3 korts støtte, fittet er fundet.",
+                                 f"3 {SUIT_NAME_EN[M]}: 3{sym} – three-card support, the fit is found.")
         if L[O] >= 4:
-            return f"3{osym}", f"4 {SUIT_NAME[O]}, men ikke 3 {SUIT_NAME[M]}: 3{osym}."
+            return f"3{osym}", tx(f"4 {SUIT_NAME[O]}, men ikke 3 {SUIT_NAME[M]}: 3{osym}.", f"4 {SUIT_NAME_EN[O]}, but not 3 {SUIT_NAME_EN[M]}: 3{osym}.")
         if hp == 18:
-            return "3♦", "Hverken 3 korts støtte eller 4-farve i den anden major: 3♦."
-        return "3NT", "Hverken støtte eller 4-farve, men maksimum (19): 3NT."
+            return "3♦", tx("Hverken 3 korts støtte eller 4-farve i den anden major: 3♦.",
+                            "Neither three-card support nor four cards in the other major: 3♦.")
+        return "3NT", tx("Hverken støtte eller 4-farve, men maksimum (19): 3NT.", "Neither support nor a four-card suit, but a maximum (19): 3NT.")
     return classify
 
 SITUATIONS, CLASSIFIERS, SAMPLERS, PER_CALL = {}, {}, {}, {}

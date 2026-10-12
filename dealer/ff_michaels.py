@@ -11,35 +11,40 @@ Antagelser: 16 hp (meldes naturligt) er ikke med; præference ved lige længde g
 svarer med 10 hp uden egen 6-farve og svag hånd uden 3 kort i den kendte major (efter Michaels
 i major) er ikke med; pas med længde i deres farve er ikke med.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, build_pool, tx
 
 ORDER = ['C', 'D', 'H', 'S']
 KEY = {'C': 'kl', 'D': 'ru', 'H': 'hj', 'S': 'sp'}
 UNUSUAL = {'C': ('D', 'H'), 'D': ('C', 'H'), 'H': ('C', 'D'), 'S': ('C', 'D')}
 PAS = ["Modstander", "Pas"]
+C_IND = tx("8–15 hp eller 17+", "8–15 HCP or 17+")
+C_SVAR = tx("Spørger om minoren – 11+ og krav", "Asks for the minor – 11+ and forcing")
 BONUS = {
-    "ind": {"q": "Hvilken styrke viser Michaels og usædvanlig 2NT?",
-            "correct": "8–15 hp eller 17+",
-            "options": ["8–15 hp eller 17+", "10–16 hp", "Altid under 10 hp"],
-            "why": "Styrken er delt: 8–15 eller 17+. Med mellemstyrken og 5-5 meldes den bedste farve naturligt."},
-    "svar": {"q": "Hvad viser 2NT efter makkers Michaels i en major?",
-             "correct": "Spørger om minoren – 11+ og krav",
-             "options": ["Spørger om minoren – 11+ og krav", "Naturligt, hold i deres farve", "Svag præference"],
-             "why": "Over 1♥/1♠ viser Michaels den anden major og en uvist minor. 2NT spørger om minoren (11+); cuebid viser god støtte til majoren."},
+    "ind": {"q": tx("Hvilken styrke viser Michaels og usædvanlig 2NT?", "What strength do Michaels and the Unusual 2NT show?"),
+            "correct": C_IND,
+            "options": [C_IND, tx("10–16 hp", "10–16 HCP"), tx("Altid under 10 hp", "Always below 10 HCP")],
+            "why": tx("Styrken er delt: 8–15 eller 17+. Med mellemstyrken og 5-5 meldes den bedste farve naturligt.",
+                      "The strength is split: 8–15 or 17+. With the middle strength and 5-5, bid the best suit naturally.")},
+    "svar": {"q": tx("Hvad viser 2NT efter makkers Michaels i en major?", "What does 2NT show after partner's Michaels over a major?"),
+             "correct": C_SVAR,
+             "options": [C_SVAR, tx("Naturligt, hold i deres farve", "Natural, a stopper in their suit"), tx("Svag præference", "A weak preference")],
+             "why": tx("Over 1♥/1♠ viser Michaels den anden major og en uvist minor. 2NT spørger om minoren (11+); cuebid viser god støtte til majoren.",
+                       "Over 1♥/1♠, Michaels shows the other major and an unknown minor. 2NT asks for the minor (11+); "
+                       "the cue-bid shows good support for the major.")},
 }
 
 def pair_call(O, pair):
     pair = set(pair)
     if O in ('C', 'D'):
         if pair == {'H', 'S'}:
-            return f"2{SUIT_SYM[O]}", "begge majorer"
+            return f"2{SUIT_SYM[O]}", "begge majorer", "both majors"
     else:
         om = 'S' if O == 'H' else 'H'
         if om in pair and len(pair & {'C', 'D'}) == 1:
-            return f"2{SUIT_SYM[O]}", f"{SUIT_NAME[om]} og en minor"
+            return f"2{SUIT_SYM[O]}", f"{SUIT_NAME[om]} og en minor", f"{SUIT_NAME_EN[om]} and a minor"
     if pair == set(UNUSUAL[O]):
         a, b = UNUSUAL[O]
-        return "2NT", f"{SUIT_NAME[a]} og {SUIT_NAME[b]} (de to laveste umeldte)"
+        return "2NT", f"{SUIT_NAME[a]} og {SUIT_NAME[b]} (de to laveste umeldte)", f"{SUIT_NAME_EN[a]} and {SUIT_NAME_EN[b]} (the two lowest unbid suits)"
     return None
 
 def overcall(O):
@@ -51,10 +56,11 @@ def overcall(O):
         r = pair_call(O, pair)
         if not r:
             return None
-        call, what = r
+        call, what, what_en = r
         if hp < 8:
-            return "Pas", f"5-5, men kun {hp} hp – kravet er 8–15 eller 17+. Pas."
-        return call, f"5-5 og {hp} hp ({'8–15' if hp <= 15 else '17+'}): {call} viser {what}."
+            return "Pas", tx(f"5-5, men kun {hp} hp – kravet er 8–15 eller 17+. Pas.", f"5-5, but only {hp} HCP – the requirement is 8–15 or 17+. Pass.")
+        return call, tx(f"5-5 og {hp} hp ({'8–15' if hp <= 15 else '17+'}): {call} viser {what}.",
+                        f"5-5 and {hp} HCP ({'8–15' if hp <= 15 else '17+'}): {call} shows {what_en}.")
     return classify
 
 def cheapest(after, s):
@@ -73,39 +79,46 @@ def advance(O, shown, after_call):
             M = shown[0]
             if hp >= 11:
                 if L[M] >= 3:
-                    return f"3{SUIT_SYM[O]}", f"{hp} hp og {L[M]} {SUIT_NAME[M]}: cuebid 3{SUIT_SYM[O]} – god støtte, krav."
-                return "2NT", f"{hp} hp uden støtte til {SUIT_NAME[M]}: 2NT spørger om minoren (11+, krav)."
+                    return f"3{SUIT_SYM[O]}", tx(f"{hp} hp og {L[M]} {SUIT_NAME[M]}: cuebid 3{SUIT_SYM[O]} – god støtte, krav.",
+                                                 f"{hp} HCP and {L[M]} {SUIT_NAME_EN[M]}: the cue-bid 3{SUIT_SYM[O]} – good support, forcing.")
+                return "2NT", tx(f"{hp} hp uden støtte til {SUIT_NAME[M]}: 2NT spørger om minoren (11+, krav).",
+                                 f"{hp} HCP without support for {SUIT_NAME_EN[M]}: 2NT asks for the minor (11+, forcing).")
             own = [s for s in ORDER if s not in (O, M) and L[s] >= 6]
             if hp == 10 and own and L[M] <= 2:
                 c = cheapest(after, own[0])
-                return c, f"{hp} hp og god {L[own[0]]}-farve uden tilpasning: {c} – naturligt, ikke krav."
+                return c, tx(f"{hp} hp og god {L[own[0]]}-farve uden tilpasning: {c} – naturligt, ikke krav.",
+                             f"{hp} HCP and a good {L[own[0]]}-card suit without a fit: {c} – natural, non-forcing.")
             if hp >= 10 or L[M] < 3:
                 return None
             if L[M] >= 4 and hp >= 6:
                 c = cheapest(after, M)
                 c = f"{int(c[0]) + 1}{c[1:]}"
-                return c, f"{L[M]} {SUIT_NAME[M]} og {hp} hp: spring til {c} – spærrende."
+                return c, tx(f"{L[M]} {SUIT_NAME[M]} og {hp} hp: spring til {c} – spærrende.", f"{L[M]} {SUIT_NAME_EN[M]} and {hp} HCP: jump to {c} – preemptive.")
             c = cheapest(after, M)
-            return c, f"{L[M]} {SUIT_NAME[M]} og {hp} hp: præference på laveste niveau – {c}."
+            return c, tx(f"{L[M]} {SUIT_NAME[M]} og {hp} hp: præference på laveste niveau – {c}.",
+                         f"{L[M]} {SUIT_NAME_EN[M]} and {hp} HCP: preference at the lowest level – {c}.")
         a, b = shown
         if hp >= 10:
             own = [s for s in ORDER if s not in shown and s != O and L[s] >= 6]
             if own and L[a] <= 2 and L[b] <= 2:
                 c = cheapest(after, own[0])
-                return c, f"{hp} hp og god {L[own[0]]}-farve uden tilpasning: {c} – naturligt, ikke krav."
+                return c, tx(f"{hp} hp og god {L[own[0]]}-farve uden tilpasning: {c} – naturligt, ikke krav.",
+                             f"{hp} HCP and a good {L[own[0]]}-card suit without a fit: {c} – natural, non-forcing.")
             if hp >= 11:
-                return f"3{SUIT_SYM[O]}", f"{hp} hp: cuebid 3{SUIT_SYM[O]} – krav, beder makker beskrive videre."
+                return f"3{SUIT_SYM[O]}", tx(f"{hp} hp: cuebid 3{SUIT_SYM[O]} – krav, beder makker beskrive videre.",
+                                             f"{hp} HCP: the cue-bid 3{SUIT_SYM[O]} – forcing, asks partner to describe further.")
             return None
         top = max(L[a], L[b])
         s = min((x for x in shown if L[x] == top), key=ORDER.index)
         if top >= 4 and hp >= 6 and L[a] != L[b]:
             c = cheapest(after, s)
             c = f"{int(c[0]) + 1}{c[1:]}"
-            return c, f"{L[s]} {SUIT_NAME[s]} og {hp} hp: spring til {c} – spærrende."
+            return c, tx(f"{L[s]} {SUIT_NAME[s]} og {hp} hp: spring til {c} – spærrende.", f"{L[s]} {SUIT_NAME_EN[s]} and {hp} HCP: jump to {c} – preemptive.")
         if top >= 4 and hp >= 6:
             return None
         c = cheapest(after, s)
-        return c, f"Svag hånd ({hp} hp) med flest {SUIT_NAME[s]}: præference på laveste niveau – {c}."
+        return c, tx(f"Svag hånd ({hp} hp) med flest {SUIT_NAME[s]}: præference på laveste niveau – {c}.",
+                     f"Weak hand ({hp} HCP) with more {SUIT_NAME_EN[s]}: preference at the lowest level – {c}.")
     return classify
 
 SITUATIONS, CLASSIFIERS, SAMPLERS, PER_CALL = {}, {}, {}, {}

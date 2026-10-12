@@ -10,19 +10,25 @@ Kravpas og Loven – Makker 2 & mig, afsnit 18 og 18a.
 Antagelser: zonen er neutral og der justeres ikke for dobbeltfit og korthed; støttepoint 5/3/1 med
 4+ trumf og 3/2/1 med 3; åbner har minimum (12–14); næsekravpas med præcis 3 spar er ikke med.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, build_pool, tx
 from .omvendt_bergen import support_points
 
 PAS = ["Modstander", "Pas"]
+C_LOV = tx("Til 3-trinnet", "To the three level")
+C_NAESE = tx("Makker kan have gode spar og ville strafdoble", "Partner may have good spades and want to double for penalty")
 BONUS = {
-    "lov": {"q": "Hvor højt melder du efter Loven med 9 trumf tilsammen?",
-            "correct": "Til 3-trinnet",
-            "options": ["Til 3-trinnet", "Til 2-trinnet", "Til 4-trinnet"],
-            "why": "Loven: meld til det antal stik, der svarer til antallet af trumf – 8 trumf 2-trinnet, 9 trumf 3-trinnet, 10 trumf 4-trinnet."},
-    "naese": {"q": "Hvorfor genåbner åbner med dobling i 1♥ – (1♠) – pas – (pas)?",
-              "correct": "Makker kan have gode spar og ville strafdoble",
-              "options": ["Makker kan have gode spar og ville strafdoble", "Åbner har 18+", "Åbner viser spar"],
-              "why": "Med negative doblinger kan makker ikke selv strafdoble 1♠. Er åbner kort i spar, genåbner han med dobling, så makker kan strafpasse."},
+    "lov": {"q": tx("Hvor højt melder du efter Loven med 9 trumf tilsammen?", "How high do you bid by the Law with 9 trumps between you?"),
+            "correct": C_LOV,
+            "options": [C_LOV, tx("Til 2-trinnet", "To the two level"), tx("Til 4-trinnet", "To the four level")],
+            "why": tx("Loven: meld til det antal stik, der svarer til antallet af trumf – 8 trumf 2-trinnet, 9 trumf 3-trinnet, 10 trumf 4-trinnet.",
+                      "The Law: bid to the number of tricks that matches the number of trumps – 8 trumps the two level, "
+                      "9 trumps the three level, 10 trumps the four level.")},
+    "naese": {"q": tx("Hvorfor genåbner åbner med dobling i 1♥ – (1♠) – pas – (pas)?", "Why does opener reopen with a double in 1♥ – (1♠) – pass – (pass)?"),
+              "correct": C_NAESE,
+              "options": [C_NAESE, tx("Åbner har 18+", "Opener has 18+"), tx("Åbner viser spar", "Opener shows spades")],
+              "why": tx("Med negative doblinger kan makker ikke selv strafdoble 1♠. Er åbner kort i spar, genåbner han med dobling, så makker kan strafpasse.",
+                        "With negative doubles, partner cannot double 1♠ for penalty. When opener is short in spades, opener reopens "
+                        "with a double so that partner can pass for penalty.")},
 }
 
 def law_responder(M, O):
@@ -36,11 +42,13 @@ def law_responder(M, O):
             return None
         sp = support_points(hand, hp, M)
         if sp < 6:
-            return ("Pas", f"{sp} sp: pas.") if hp <= 5 else None
+            return ("Pas", tx(f"{sp} sp: pas.", f"{sp} support points: pass.")) if hp <= 5 else None
         if sp > 9:
             return None
         call = {3: f"2{sym}", 4: f"3{sym}"}.get(n, f"4{sym}")
-        return call, f"{n} {SUIT_NAME[M]} + makkers 5 = {n + 5} trumf: Loven siger {call[0]}-trinnet – {call}."
+        lvl = {"2": "two", "3": "three", "4": "four"}[call[0]]
+        return call, tx(f"{n} {SUIT_NAME[M]} + makkers 5 = {n + 5} trumf: Loven siger {call[0]}-trinnet – {call}.",
+                        f"{n} {SUIT_NAME_EN[M]} + partner's 5 = {n + 5} trumps: the Law says the {lvl} level – {call}.")
     return classify
 
 def law_opener(M):
@@ -51,8 +59,10 @@ def law_opener(M):
             return None
         total = L[M] + 3
         if total == 8:
-            return "Pas", f"{L[M]} trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
-        return f"3{sym}", f"{L[M]} trumf + makkers 3 = 9: Loven siger 3-trinnet – 3{sym}."
+            return "Pas", tx(f"{L[M]} trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+                             f"{L[M]} trumps + partner's 3 = 8: the Law says the two level – pass.")
+        return f"3{sym}", tx(f"{L[M]} trumf + makkers 3 = 9: Loven siger 3-trinnet – 3{sym}.",
+                             f"{L[M]} trumps + partner's 3 = 9: the Law says the three level – 3{sym}.")
     return classify
 
 def nose(hand, hp):
@@ -60,8 +70,9 @@ def nose(hand, hp):
     if not (12 <= hp <= 14) or L['H'] != 5 or L['S'] == 3:
         return None
     if L['S'] <= 2:
-        return "X", f"{L['S']} spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
-    return "Pas", f"{L['S']} spar: du er selv lang i deres farve – pas."
+        return "X", tx(f"{L['S']} spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
+                       f"{L['S']} spade{'' if L['S'] == 1 else 's'}: reopen with a double – partner may hold good spades and pass for penalty.")
+    return "Pas", tx(f"{L['S']} spar: du er selv lang i deres farve – pas.", f"{L['S']} spades: you are long in their suit yourself – pass.")
 
 SITUATIONS = {
     "lov_svar_sp": {"rolle": "Svarer", "auction": [["Makker", "1♠"], ["Modstander", "2♥"]], "allowX": True,

@@ -9,14 +9,17 @@ Forløbet er Bekkasin: 1M – 2NT – 3♦ (åbners tillæg uden korthed):
             ingen af jer har kontrol i en farve, svarer sprang over, eller hvis du ingen kontrol kan vise
 Antagelse: åbner med tillæg samarbejder altid om slemundersøgelsen.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, build_pool
-from .bekkasin import cue_bids, has_control, control_word, responder_after_extra, rank
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, build_pool, tx
+from .bekkasin import cue_bids, has_control, control_word, control_word_en, responder_after_extra, rank
 
 PAS = ["Modstander", "Pas"]
-BONUS = {"q": "Hvad betyder det, når makker springer en farve over i sit cuebid?",
-         "correct": "Makker har ikke kontrol i den farve",
-         "options": ["Makker har ikke kontrol i den farve", "Makker har renonce dér", "Ingenting – cuebids kan meldes i vilkårlig rækkefølge"],
-         "why": "Man cuebidder billigst muligt; springer man en farve over, benægter man kontrol dér. Kontrol = es, konge, singleton eller renonce."}
+C = tx("Makker har ikke kontrol i den farve", "Partner has no control in that suit")
+BONUS = {"q": tx("Hvad betyder det, når makker springer en farve over i sit cuebid?", "What does it mean when partner skips a suit in a cue-bid?"),
+         "correct": C,
+         "options": [C, tx("Makker har renonce dér", "Partner has a void there"),
+                     tx("Ingenting – cuebids kan meldes i vilkårlig rækkefølge", "Nothing – cue-bids can be made in any order")],
+         "why": tx("Man cuebidder billigst muligt; springer man en farve over, benægter man kontrol dér. Kontrol = es, konge, singleton eller renonce.",
+                   "Cue-bids are made as cheaply as possible; skipping a suit denies a control there. Control = ace, king, singleton or void.")}
 
 def opener_after_cue(M, cue):
     sym = SUIT_SYM[M]
@@ -29,11 +32,14 @@ def opener_after_cue(M, cue):
         lacking = [s for s in skipped if not has_control(hand, s)]
         if lacking:
             names = ", ".join(SUIT_NAME[s] for s in lacking)
-            return f"4{sym}", f"Makker sprang {names} over, og du har heller ikke kontrol dér: afmeld i 4{sym}."
+            names_en = ", ".join(SUIT_NAME_EN[s] for s in lacking)
+            return f"4{sym}", tx(f"Makker sprang {names} over, og du har heller ikke kontrol dér: afmeld i 4{sym}.",
+                                 f"Partner skipped {names_en}, and you have no control there either: sign off in 4{sym}.")
         for c, s in cue_bids(M, cue):
             if has_control(hand, s):
-                return c, f"Billigste egen kontrol over makkers {cue}: {c} viser {control_word(hand, s)} i {SUIT_NAME[s]}."
-        return f"4{sym}", f"Ingen kontrol at vise under 4{sym}: afmeld."
+                return c, tx(f"Billigste egen kontrol over makkers {cue}: {c} viser {control_word(hand, s)} i {SUIT_NAME[s]}.",
+                             f"Your cheapest control above partner's {cue}: {c} shows {control_word_en(hand, s)} in {SUIT_NAME_EN[s]}.")
+        return f"4{sym}", tx(f"Ingen kontrol at vise under 4{sym}: afmeld.", f"No control to show below 4{sym}: sign off.")
     return classify
 
 SITUATIONS, CLASSIFIERS, SAMPLERS, PER_CALL = {}, {}, {}, {}

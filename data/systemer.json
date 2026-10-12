@@ -3,24 +3,40 @@
   "id": "kf",
   "navn": "Makker 1 & mig",
   "kort": "2 over 1 med 10+ hp (rundekrav) · Omvendt Bergen · Multiforsvar mod 1NT",
-  "viden": "viden/bridgesystem.html"
+  "viden": "viden/bridgesystem.html",
+  "en": {
+   "navn": "Partner 1 & me",
+   "kort": "2 over 1 with 10+ HCP (forcing for one round) · Reverse Bergen · Multi defence against 1NT"
+  }
  },
  {
   "id": "ff",
   "navn": "Makker 2 & mig",
   "kort": "Two over One udgangskrav 13+ · Revideret omvendt Bergen · DONT mod 1NT · ASS",
-  "viden": "viden/2-over-1-makker2.html"
+  "viden": "viden/2-over-1-makker2.html",
+  "en": {
+   "navn": "Partner 2 & me",
+   "kort": "Two over One game forcing 13+ · Revised Reverse Bergen · DONT against 1NT · ASS"
+  }
  },
  {
   "id": "kamp",
   "navn": "Kampen om kontrakten",
   "kort": "Forsvar og indmelding · trumfreglen · moderne støtter · GIF · doblinger · forsvar mod 1NT",
-  "viden": "viden/kampen-om-kontrakten.html"
+  "viden": "viden/kampen-om-kontrakten.html",
+  "en": {
+   "navn": "The battle for the contract",
+   "kort": "Defence and overcalls · the trump rule · modern raises · GIF · doubles · defence against 1NT"
+  }
  },
  {
   "id": "forslag",
   "navn": "Forslag",
   "kort": "Diskussionsoplæg, som endnu ikke er vedtaget i noget system – træn dem, før I beslutter jer",
-  "viden": "viden/#forslag"
+  "viden": "viden/#forslag",
+  "en": {
+   "navn": "Proposals",
+   "kort": "Discussion papers not yet adopted in any system – practise them before you decide"
+  }
  }
 ]

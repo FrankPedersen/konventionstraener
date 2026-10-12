@@ -13,19 +13,25 @@ med spar kræver 5+ spar; 8+ hænder med kun 4 spar og 12+ hænder med en lavere
 (hverken skemaet eller arket siger hvad). Doblers stærke meldinger trænes ikke – arket siger ikke hvilke;
 dobler-hænderne holdes på 12–16 hp.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, build_pool, tx
 from .lebensohl import stopper
 
 ORDER = ['C', 'D', 'H', 'S']
 PAS = ["Modstander", "Pas"]
-BONUS = {"q": "Hvad viser 2NT, når makker har doblet deres svage 2?",
-         "correct": "Relæ – svag hånd med en farve lavere end deres",
-         "options": ["Relæ – svag hånd med en farve lavere end deres", "Naturligt, 11–12 hp med hold", "Begge minorer"],
-         "why": "2NT er relæ: dobler melder 3♣, og svarer passer eller retter til sin farve – stadig svagt. Samme farve direkte på 3-trinnet viser invit (8–11)."}
-BONUS_HJ = {"q": "Hvad viser 3♠ direkte, når makker har doblet deres svage 2♥?",
-            "correct": "Udgangskrav med 5+ spar",
-            "options": ["Udgangskrav med 5+ spar", "Invit med 5+ spar (8–11 hp)", "Svag hånd med spar"],
-            "why": "3♠ direkte er udgangskrav. Med invit går du via 2NT og melder 3♠ efter makkers 3♣; med en svag hånd melder du bare 2♠."}
+C = tx("Relæ – svag hånd med en farve lavere end deres", "Relay – a weak hand with a suit lower than theirs")
+BONUS = {"q": tx("Hvad viser 2NT, når makker har doblet deres svage 2?", "What does 2NT show when partner has doubled their weak two?"),
+         "correct": C,
+         "options": [C, tx("Naturligt, 11–12 hp med hold", "Natural, 11–12 HCP with a stopper"), tx("Begge minorer", "Both minors")],
+         "why": tx("2NT er relæ: dobler melder 3♣, og svarer passer eller retter til sin farve – stadig svagt. Samme farve direkte på 3-trinnet viser invit (8–11).",
+                   "2NT is a relay: the doubler bids 3♣, and the advancer passes or corrects to the suit – still weak. "
+                   "The same suit directly at the three level is invitational (8–11).")}
+C_HJ = tx("Udgangskrav med 5+ spar", "Game forcing with 5+ spades")
+BONUS_HJ = {"q": tx("Hvad viser 3♠ direkte, når makker har doblet deres svage 2♥?", "What does a direct 3♠ show when partner has doubled their weak 2♥?"),
+            "correct": C_HJ,
+            "options": [C_HJ, tx("Invit med 5+ spar (8–11 hp)", "Invitational with 5+ spades (8–11 HCP)"), tx("Svag hånd med spar", "A weak hand with spades")],
+            "why": tx("3♠ direkte er udgangskrav. Med invit går du via 2NT og melder 3♠ efter makkers 3♣; med en svag hånd melder du bare 2♠.",
+                      "A direct 3♠ is game forcing. With an invitation you go via 2NT and bid 3♠ after partner's 3♣; "
+                      "with a weak hand you simply bid 2♠.")}
 
 def long_suit(L, X):
     """Svarers længste farve uden for deres (4+), eller None, hvis den ikke er entydig."""
@@ -44,31 +50,41 @@ def advance(X):
         s = long_suit(L, X)
         if hp >= 12:
             if X == 'H' and s == 'S' and L['S'] >= 5:
-                return "3♠", f"{hp} hp og {L['S']} spar: 3♠ direkte er udgangskrav. Invit ville gå via 2NT-relæet."
+                return "3♠", tx(f"{hp} hp og {L['S']} spar: 3♠ direkte er udgangskrav. Invit ville gå via 2NT-relæet.",
+                                f"{hp} HCP and {L['S']} spades: a direct 3♠ is game forcing. An invitation would go via the 2NT relay.")
             if stopper(hand, X) and not any(L[m] >= 4 for m in ('H', 'S') if m != X):
-                return "3NT", f"{hp} hp og hold i {SUIT_NAME[X]}: 3NT – naturligt."
+                return "3NT", tx(f"{hp} hp og hold i {SUIT_NAME[X]}: 3NT – naturligt.", f"{hp} HCP and a stopper in {SUIT_NAME_EN[X]}: 3NT – natural.")
             return None
         if not s:
             return None
         ss = SUIT_SYM[s]
         if ORDER.index(s) > ORDER.index(X):
             if hp <= 7:
-                return f"2{ss}", f"Svag hånd ({hp} hp) med {L[s]} {SUIT_NAME[s]} – højere end deres: 2{ss}, naturligt."
+                return f"2{ss}", tx(f"Svag hånd ({hp} hp) med {L[s]} {SUIT_NAME[s]} – højere end deres: 2{ss}, naturligt.",
+                                    f"Weak hand ({hp} HCP) with {L[s]} {SUIT_NAME_EN[s]} – higher than theirs: 2{ss}, natural.")
             if L[s] >= 5:
-                return "2NT", (f"{hp} hp og {L[s]} {SUIT_NAME[s]} – invit med en farve højere end deres: 2NT relæ først. "
-                               f"Makker melder 3♣, og du melder 3{ss} (invit). 3{ss} direkte ville være udgangskrav.")
+                return "2NT", tx(f"{hp} hp og {L[s]} {SUIT_NAME[s]} – invit med en farve højere end deres: 2NT relæ først. "
+                                 f"Makker melder 3♣, og du melder 3{ss} (invit). 3{ss} direkte ville være udgangskrav.",
+                                 f"{hp} HCP and {L[s]} {SUIT_NAME_EN[s]} – invitational with a suit higher than theirs: the 2NT relay first. "
+                                 f"Partner bids 3♣, and you bid 3{ss} (invitational). A direct 3{ss} would be game forcing.")
             return None
         if hp <= 7:
-            return "2NT", (f"Svag hånd ({hp} hp) med {L[s]} {SUIT_NAME[s]} – lavere end deres farve: 2NT relæ. "
-                           + ("Makker melder 3♣, og du passer." if s == 'C' else f"Makker melder 3♣, og du retter til 3{ss}."))
-        return f"3{ss}", f"{hp} hp og {L[s]} {SUIT_NAME[s]}: 3{ss} direkte – invit (8–11)."
+            return "2NT", tx(f"Svag hånd ({hp} hp) med {L[s]} {SUIT_NAME[s]} – lavere end deres farve: 2NT relæ. "
+                             + ("Makker melder 3♣, og du passer." if s == 'C' else f"Makker melder 3♣, og du retter til 3{ss}."),
+                             f"Weak hand ({hp} HCP) with {L[s]} {SUIT_NAME_EN[s]} – lower than their suit: 2NT relay. "
+                             + ("Partner bids 3♣, and you pass." if s == 'C' else f"Partner bids 3♣, and you correct to 3{ss}."))
+        return f"3{ss}", tx(f"{hp} hp og {L[s]} {SUIT_NAME[s]}: 3{ss} direkte – invit (8–11).",
+                            f"{hp} HCP and {L[s]} {SUIT_NAME_EN[s]}: a direct 3{ss} – invitational (8–11).")
     return classify
 
 def doubler(X):
     after = "passer, retter til sin farve eller melder 3♠ som invit" if X == 'H' else "passer eller retter til sin farve"
+    after_en = "passes, corrects to the suit or bids 3♠ as an invitation" if X == 'H' else "passes or corrects to the suit"
     def classify(hand, hp):
-        return "3♣", (f"Makkers 2NT er relæ: med en normal dobling ({hp} hp) melder du 3♣. Makker {after}. "
-                      "Andet end 3♣ ville vise ekstra styrke og være udgangskrav.")
+        return "3♣", tx(f"Makkers 2NT er relæ: med en normal dobling ({hp} hp) melder du 3♣. Makker {after}. "
+                        "Andet end 3♣ ville vise ekstra styrke og være udgangskrav.",
+                        f"Partner's 2NT is a relay: with a normal double ({hp} HCP) you bid 3♣. Partner {after_en}. "
+                        "Anything other than 3♣ would show extra strength and be game forcing.")
     return classify
 
 def relay(X):
@@ -81,10 +97,13 @@ def relay(X):
         s = long_suit(L, X)
         ss = SUIT_SYM[s]
         if hp >= 8:
-            return f"3{ss}", f"{hp} hp og {L[s]} {SUIT_NAME[s]}: 3{ss} efter relæet er invit (8–11). 3{ss} direkte ville have været udgangskrav."
+            return f"3{ss}", tx(f"{hp} hp og {L[s]} {SUIT_NAME[s]}: 3{ss} efter relæet er invit (8–11). 3{ss} direkte ville have været udgangskrav.",
+                                f"{hp} HCP and {L[s]} {SUIT_NAME_EN[s]}: 3{ss} after the relay is invitational (8–11). A direct 3{ss} would have been game forcing.")
         if s == 'C':
-            return "Pas", f"Svag hånd ({hp} hp) med {L[s]} klør: 2NT var relæ, og makker har meldt din farve – du passer."
-        return f"3{ss}", f"Svag hånd ({hp} hp) med {L[s]} {SUIT_NAME[s]}: du retter til 3{ss} – stadig svagt."
+            return "Pas", tx(f"Svag hånd ({hp} hp) med {L[s]} klør: 2NT var relæ, og makker har meldt din farve – du passer.",
+                             f"Weak hand ({hp} HCP) with {L[s]} clubs: 2NT was a relay, and partner has bid your suit – you pass.")
+        return f"3{ss}", tx(f"Svag hånd ({hp} hp) med {L[s]} {SUIT_NAME[s]}: du retter til 3{ss} – stadig svagt.",
+                            f"Weak hand ({hp} HCP) with {L[s]} {SUIT_NAME_EN[s]}: you correct to 3{ss} – still weak.")
     return classify
 
 SITUATIONS, CLASSIFIERS, SAMPLERS, PER_CALL = {}, {}, {}, {}

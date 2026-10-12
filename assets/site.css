@@ -33,6 +33,10 @@ a:focus-visible, button:focus-visible{ outline:2px solid var(--sg-ink); outline-
 .site-head nav a{ color:var(--sg-ink); text-decoration:none; padding:var(--sg-space-sm) var(--sg-space-lg); border-radius:var(--sg-radius-pill); }
 .site-head nav a:hover{ background:var(--sg-canvas-soft); }
 .site-head nav a[aria-current="page"]{ background:var(--sg-ink); color:var(--sg-canvas); }
+/* sprogknappen (assets/lang.js): English / Dansk */
+.site-head nav .lang{ font:inherit; color:var(--sg-ink); background:transparent; border:0; cursor:pointer; padding:var(--sg-space-sm) var(--sg-space-lg);
+  border-radius:var(--sg-radius-pill); box-shadow:inset 0 0 0 1px var(--sg-hairline); }
+.site-head nav .lang:hover{ background:var(--sg-canvas-soft); box-shadow:inset 0 0 0 1px var(--sg-ink); }
 
 /* ---------- side (hero-band og indhold) ---------- */
 .wrap{ max-width:64rem; margin:0 auto; padding:0 var(--sg-space-xl) var(--sg-space-3xl); }

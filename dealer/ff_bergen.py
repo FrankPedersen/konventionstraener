@@ -11,20 +11,26 @@ Antagelser: 2M lover 3 kort og 3M 4 kort (skemaet giver 3–4 hhv. 4+); med 5 tr
 støttepoint 5/3/1 med 4+ trumf og 3/2/1 med 3 trumf. 3 korts støtte med 13+ (Two over One først),
 4+ trumf med 0–3 sp og cuebid/slem efter 3♣/3♦ er ikke med.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool
-from .omvendt_bergen import support_points, opener_sp, sp_detail
+from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool, tx
+from .omvendt_bergen import support_points, opener_sp, sp_detail, sp_detail_en
 
 GAME = 26
 PAS = ["Modstander", "Pas"]
+C_SVAR = tx("3♣ = præcis 3 kort, 3♦ = 4+ kort – begge 10–12 sp", "3♣ = exactly 3 cards, 3♦ = 4+ cards – both 10–12 support points")
+C_AAB = tx("Åbner – han vælger 3M, udgang eller cuebid", "Opener – choosing 3M, game or a cue-bid")
 BONUS = {
-    "svar": {"q": "Hvad er forskellen på 3♣ og 3♦ hos Makker 2 & mig?",
-             "correct": "3♣ = præcis 3 kort, 3♦ = 4+ kort – begge 10–12 sp",
-             "options": ["3♣ = præcis 3 kort, 3♦ = 4+ kort – begge 10–12 sp", "3♣ = 10–11 sp, 3♦ = 7–10 sp", "3♣ er naturlig klør"],
-             "why": "I revideret omvendt Bergen viser 3♣ og 3♦ samme styrke (10–12 sp). Forskellen er trumflængden: 3♣ præcis 3, 3♦ 4+."},
-    "aab": {"q": "Hvem er kaptajn efter 1M – 3♣/3♦?",
-            "correct": "Åbner – han vælger 3M, udgang eller cuebid",
-            "options": ["Åbner – han vælger 3M, udgang eller cuebid", "Svarer", "Ingen – 3♣/3♦ er udgangskrav"],
-            "why": "Svarer har beskrevet sin hånd præcist (10–12 sp). Åbner er kaptajn: 3M med minimum, 4M med tillæg, cuebid ved slem."},
+    "svar": {"q": tx("Hvad er forskellen på 3♣ og 3♦ hos Makker 2 & mig?", "What is the difference between 3♣ and 3♦ for Partner 2 & me?"),
+             "correct": C_SVAR,
+             "options": [C_SVAR, tx("3♣ = 10–11 sp, 3♦ = 7–10 sp", "3♣ = 10–11, 3♦ = 7–10 support points"), tx("3♣ er naturlig klør", "3♣ is natural clubs")],
+             "why": tx("I revideret omvendt Bergen viser 3♣ og 3♦ samme styrke (10–12 sp). Forskellen er trumflængden: 3♣ præcis 3, 3♦ 4+.",
+                       "In revised Reverse Bergen, 3♣ and 3♦ show the same strength (10–12 support points). The difference is "
+                       "the trump length: 3♣ exactly 3, 3♦ 4+.")},
+    "aab": {"q": tx("Hvem er kaptajn efter 1M – 3♣/3♦?", "Who is captain after 1M – 3♣/3♦?"),
+            "correct": C_AAB,
+            "options": [C_AAB, tx("Svarer", "Responder"), tx("Ingen – 3♣/3♦ er udgangskrav", "Nobody – 3♣/3♦ is game forcing")],
+            "why": tx("Svarer har beskrevet sin hånd præcist (10–12 sp). Åbner er kaptajn: 3M med minimum, 4M med tillæg, cuebid ved slem.",
+                      "Responder has described the hand precisely (10–12 support points). Opener is captain: 3M with a minimum, "
+                      "4M with extra values, a cue-bid with slam interest.")},
 }
 
 def responder(M):
@@ -34,35 +40,42 @@ def responder(M):
         n = L[M]
         sp = support_points(hand, hp, M)
         if n >= 5 and 4 <= sp <= 9:
-            return f"4{sym}", f"{n} trumf og {sp} sp: 4{sym} – spærrende (4–9 sp, 5+ støtte)."
+            return f"4{sym}", tx(f"{n} trumf og {sp} sp: 4{sym} – spærrende (4–9 sp, 5+ støtte).",
+                                 f"{n} trumps and {sp} support points: 4{sym} – preemptive (4–9, five-card support or better).")
         if n >= 3 and sp < 6:
             if hp > 5 or n >= 5:
                 return None
-            return "Pas", f"{hp} hp og kun {sp} sp: pas (0–5)."
+            return "Pas", tx(f"{hp} hp og kun {sp} sp: pas (0–5).", f"{hp} HCP and only {sp} support points: pass (0–5).")
         if n >= 5:
             if sp <= 9:
-                return f"4{sym}", f"{n} trumf og {sp} sp: 4{sym} – spærrende (4–9 sp, 5+ støtte)."
+                return f"4{sym}", tx(f"{n} trumf og {sp} sp: 4{sym} – spærrende (4–9 sp, 5+ støtte).",
+                                     f"{n} trumps and {sp} support points: 4{sym} – preemptive (4–9, five-card support or better).")
             if sp <= 12:
-                return "3♦", f"{n} trumf og {sp} sp: 3♦ – 10–12 sp med 4+ støtte."
-            return "2NT", f"{n} trumf og {sp} sp: 2NT Bekkasin (13+)."
+                return "3♦", tx(f"{n} trumf og {sp} sp: 3♦ – 10–12 sp med 4+ støtte.",
+                                f"{n} trumps and {sp} support points: 3♦ – 10–12 with four-card support or better.")
+            return "2NT", tx(f"{n} trumf og {sp} sp: 2NT Bekkasin (13+).", f"{n} trumps and {sp} support points: 2NT Bekkasin (13+).")
         if n == 4:
             if sp <= 9:
-                return f"3{sym}", f"4 trumf og {sp} sp: 3{sym} – spærrende (6–9 sp, 4+ støtte)."
+                return f"3{sym}", tx(f"4 trumf og {sp} sp: 3{sym} – spærrende (6–9 sp, 4+ støtte).",
+                                     f"4 trumps and {sp} support points: 3{sym} – preemptive (6–9, four-card support or better).")
             if sp <= 12:
-                return "3♦", f"4 trumf og {sp} sp: 3♦ – 10–12 sp med 4+ støtte."
-            return "2NT", f"4 trumf og {sp} sp: 2NT Bekkasin (13+)."
+                return "3♦", tx(f"4 trumf og {sp} sp: 3♦ – 10–12 sp med 4+ støtte.",
+                                f"4 trumps and {sp} support points: 3♦ – 10–12 with four-card support or better.")
+            return "2NT", tx(f"4 trumf og {sp} sp: 2NT Bekkasin (13+).", f"4 trumps and {sp} support points: 2NT Bekkasin (13+).")
         if n == 3:
             if sp <= 9:
-                return f"2{sym}", f"3 trumf og {sp} sp: 2{sym} (6–9 sp)."
+                return f"2{sym}", tx(f"3 trumf og {sp} sp: 2{sym} (6–9 sp).", f"3 trumps and {sp} support points: 2{sym} (6–9).")
             if sp <= 12:
-                return "3♣", f"Præcis 3 trumf og {sp} sp: 3♣ (10–12 sp)."
+                return "3♣", tx(f"Præcis 3 trumf og {sp} sp: 3♣ (10–12 sp).", f"Exactly 3 trumps and {sp} support points: 3♣ (10–12).")
             return None
         if hp < 6:
-            return "Pas", f"{hp} hp uden støtte: pas."
+            return "Pas", tx(f"{hp} hp uden støtte: pas.", f"{hp} HCP without support: pass.")
         if M == 'H' and L['S'] >= 4:
-            return "1♠", f"Ingen støtte, men {L['S']} spar: 1♠ – naturligt rundekrav."
+            return "1♠", tx(f"Ingen støtte, men {L['S']} spar: 1♠ – naturligt rundekrav.",
+                            f"No support, but {L['S']} spades: 1♠ – natural and forcing.")
         if hp <= 12:
-            return "1NT", f"{hp} hp uden 3 korts støtte: 1NT (6–12, semikrav)."
+            return "1NT", tx(f"{hp} hp uden 3 korts støtte: 1NT (6–12, semikrav).",
+                             f"{hp} HCP without three-card support: 1NT (6–12, semi-forcing).")
         return None
     return classify
 
@@ -76,9 +89,12 @@ def opener(M, bid):
         if sp > 20:
             return None
         pts = f"{sp} sp ({sp_detail(hand, hp, M)})" if sp != hp else f"{sp} sp"
+        pe = f"{sp} support points ({sp_detail_en(hand, hp, M)})" if sp != hp else f"{sp} support points"
         if sp + 11 >= GAME:
-            return f"4{sym}", f"{pts} + 11 (midt i makkers 10–12) når {GAME}: du er kaptajn – 4{sym}."
-        return f"3{sym}", f"{pts} + 11 (midt i makkers 10–12) er under {GAME}: 3{sym} med minimum."
+            return f"4{sym}", tx(f"{pts} + 11 (midt i makkers 10–12) når {GAME}: du er kaptajn – 4{sym}.",
+                                 f"{pe} + 11 (the middle of partner's 10–12) reaches {GAME}: you are captain – 4{sym}.")
+        return f"3{sym}", tx(f"{pts} + 11 (midt i makkers 10–12) er under {GAME}: 3{sym} med minimum.",
+                             f"{pe} + 11 (the middle of partner's 10–12) is below {GAME}: 3{sym} with a minimum.")
     return classify
 
 SITUATIONS, CLASSIFIERS, SAMPLERS, PER_CALL = {}, {}, {}, {}

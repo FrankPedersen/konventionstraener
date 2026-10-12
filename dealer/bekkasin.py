@@ -10,7 +10,7 @@ Bekkasin 2NT – fælles for begge systemer, efter afsnit 2 og 7 hos Makker 2 & 
 Korthed = singleton eller renonce. Cuebids (afsnit 7, gælder for begge systemer): kontrol = es, konge,
 singleton eller renonce; billigste kontrolfarve først; en oversprunget farve benægter kontrol.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, build_pool
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, build_pool, tx
 
 OTHER = {'H': 'S', 'S': 'H'}
 MIN_HP = (12, 15)
@@ -43,6 +43,12 @@ def control_word(hand, s):
     if n == 1: return "singleton"
     return {14: "es", 13: "konge"}[hand[s][0]]
 
+def control_word_en(hand, s):
+    n = len(hand[s])
+    if n == 0: return "a void"
+    if n == 1: return "a singleton"
+    return {14: "the ace", 13: "the king"}[hand[s][0]]
+
 # --- Åbner ------------------------------------------------------------------
 
 def opener_rebid(M):
@@ -55,11 +61,14 @@ def opener_rebid(M):
             return None      # to korte farver beskriver skemaet ikke
         if hp <= MIN_HP[1]:
             extra = f" Makker kan spørge efter din korthed i {SUIT_NAME[short[0]]} med 3♦." if short else ""
-            return "3♣", f"{hp} hp er minimum (højst 15): 3♣ – med eller uden korthed.{extra}"
+            extra_en = f" Partner can ask about your shortness in {SUIT_NAME_EN[short[0]]} with 3♦." if short else ""
+            return "3♣", tx(f"{hp} hp er minimum (højst 15): 3♣ – med eller uden korthed.{extra}",
+                            f"{hp} HCP is a minimum (at most 15): 3♣ – with or without shortness.{extra_en}")
         if not short:
-            return "3♦", f"{hp} hp er tillæg (16+) uden korthed: 3♦."
+            return "3♦", tx(f"{hp} hp er tillæg (16+) uden korthed: 3♦.", f"{hp} HCP is extra values (16+) without shortness: 3♦.")
         s = short[0]
-        return step_for(s), f"{hp} hp er tillæg (16+) med korthed i {SUIT_NAME[s]}: {step_for(s)}."
+        return step_for(s), tx(f"{hp} hp er tillæg (16+) med korthed i {SUIT_NAME[s]}: {step_for(s)}.",
+                               f"{hp} HCP is extra values (16+) with shortness in {SUIT_NAME_EN[s]}: {step_for(s)}.")
     return classify
 
 def opener_answer_to_ask(M):
@@ -71,9 +80,11 @@ def opener_answer_to_ask(M):
         if len(short) > 1:
             return None
         if not short:
-            return f"4{SUIT_SYM[M]}", f"Ingen korthed – helt jævn minimumshånd: 4{SUIT_SYM[M]}. Svarer passer normalt."
+            return f"4{SUIT_SYM[M]}", tx(f"Ingen korthed – helt jævn minimumshånd: 4{SUIT_SYM[M]}. Svarer passer normalt.",
+                                         f"No shortness – a completely balanced minimum: 4{SUIT_SYM[M]}. Responder normally passes.")
         s = short[0]
-        return step_for(s), f"Korthed i {SUIT_NAME[s]}: {step_for(s)}. Du har stadig minimum."
+        return step_for(s), tx(f"Korthed i {SUIT_NAME[s]}: {step_for(s)}. Du har stadig minimum.",
+                               f"Shortness in {SUIT_NAME_EN[s]}: {step_for(s)}. You still have a minimum.")
     return classify
 
 # --- Svarer -------------------------------------------------------------------
@@ -89,8 +100,10 @@ def responder_after_min(M):
             return None
         sp = support_sp(hand, hp, M)
         if sp >= ASK_SP:
-            return "3♦", f"{sp} sp giver slemambition over et minimum: 3♦ spørger, om åbner alligevel har en korthed."
-        return f"4{sym}", f"{sp} sp og åbner har minimum: 4{sym} som afmelding."
+            return "3♦", tx(f"{sp} sp giver slemambition over et minimum: 3♦ spørger, om åbner alligevel har en korthed.",
+                            f"{sp} support points give slam ambitions opposite a minimum: 3♦ asks whether opener has a shortness after all.")
+        return f"4{sym}", tx(f"{sp} sp og åbner har minimum: 4{sym} som afmelding.",
+                             f"{sp} support points and opener has a minimum: 4{sym} as a sign-off.")
     return classify
 
 def cue_bids(M, after):
@@ -121,30 +134,44 @@ def responder_after_extra(M, after):
             return None
         sp = support_sp(hand, hp, M)
         if sp < SLAM_SP:
-            return f"4{sym}", f"{sp} sp – ikke nok til slem over åbners tillæg: 4{sym} som afmelding."
+            return f"4{sym}", tx(f"{sp} sp – ikke nok til slem over åbners tillæg: 4{sym} som afmelding.",
+                                 f"{sp} support points – not enough for slam opposite opener's extra values: 4{sym} as a sign-off.")
         cue = cheapest_cuebid(hand, M, after)
         if not cue:
             return None      # ingen kontrol under udgang – skemaet dækker ikke situationen
         call, s = cue
-        skipped = [SUIT_NAME[x] for c, x in cue_bids(M, after) if rank(c) < rank(call)]
-        skip = f" Farver, du springer over ({', '.join(skipped)}), benægter kontrol." if skipped else ""
-        return call, (f"{sp} sp giver slemambition: cuebid i billigste kontrolfarve – {call} viser "
-                      f"{control_word(hand, s)} i {SUIT_NAME[s]}.{skip}")
+        skipped = [x for c, x in cue_bids(M, after) if rank(c) < rank(call)]
+        skip = f" Farver, du springer over ({', '.join(SUIT_NAME[x] for x in skipped)}), benægter kontrol." if skipped else ""
+        skip_en = f" Suits you skip ({', '.join(SUIT_NAME_EN[x] for x in skipped)}) deny a control." if skipped else ""
+        return call, tx(f"{sp} sp giver slemambition: cuebid i billigste kontrolfarve – {call} viser "
+                        f"{control_word(hand, s)} i {SUIT_NAME[s]}.{skip}",
+                        f"{sp} support points give slam ambitions: cue-bid the cheapest suit with a control – {call} shows "
+                        f"{control_word_en(hand, s)} in {SUIT_NAME_EN[s]}.{skip_en}")
     return classify
 
+C_AAB = tx("13+ sp og 4+ korts støtte – Bekkasin", "13+ support points and four-card support or better – Bekkasin")
+C_SPM = tx("Om dit minimum alligevel har en korthed", "Whether your minimum has a shortness after all")
+C_SVAR = tx("Es, konge, singleton eller renonce", "Ace, king, singleton or void")
 BONUS = {
-    "aabner": {"q": "Hvad viser makkers 2NT?",
-               "correct": "13+ sp og 4+ korts støtte – Bekkasin",
-               "options": ["13+ sp og 4+ korts støtte – Bekkasin", "11–12 hp jævn, invit", "10–12 sp med præcis 3 korts støtte"],
-               "why": "2NT er Bekkasin: 13+ støttepoint og mindst 4 korts støtte. Åbner beskriver i ét træk: minimum, tillæg uden korthed eller tillæg med korthed."},
-    "spm": {"q": "Hvad spørger makkers 3♦ om?",
-            "correct": "Om dit minimum alligevel har en korthed",
-            "options": ["Om dit minimum alligevel har en korthed", "Om du har tillæg", "Om du har hold i ruder"],
-            "why": "Efter 3♣ (minimum) er 3♦ krav og spørger efter korthed. Trinene er de samme som ved tillæg, og 4 i trumffarven viser en helt jævn hånd."},
-    "svar": {"q": "Hvad er en kontrol, når I cuebidder?",
-             "correct": "Es, konge, singleton eller renonce",
-             "options": ["Es, konge, singleton eller renonce", "Kun esser og renoncer", "Es eller konge – aldrig korthed"],
-             "why": "Vi viser enhver kontrol – es, konge, singleton eller renonce – uden at skelne mellem 1. og 2. rundes kontrol. Billigste kontrolfarve først; en oversprunget farve benægter kontrol."},
+    "aabner": {"q": tx("Hvad viser makkers 2NT?", "What does partner's 2NT show?"),
+               "correct": C_AAB,
+               "options": [C_AAB, tx("11–12 hp jævn, invit", "11–12 HCP balanced, invitational"),
+                           tx("10–12 sp med præcis 3 korts støtte", "10–12 support points with exactly three-card support")],
+               "why": tx("2NT er Bekkasin: 13+ støttepoint og mindst 4 korts støtte. Åbner beskriver i ét træk: minimum, tillæg uden korthed eller tillæg med korthed.",
+                         "2NT is Bekkasin: 13+ support points and at least four-card support. Opener describes the hand in one bid: "
+                         "a minimum, extra values without shortness, or extra values with shortness.")},
+    "spm": {"q": tx("Hvad spørger makkers 3♦ om?", "What does partner's 3♦ ask?"),
+            "correct": C_SPM,
+            "options": [C_SPM, tx("Om du har tillæg", "Whether you have extra values"), tx("Om du har hold i ruder", "Whether you have a diamond stopper")],
+            "why": tx("Efter 3♣ (minimum) er 3♦ krav og spørger efter korthed. Trinene er de samme som ved tillæg, og 4 i trumffarven viser en helt jævn hånd.",
+                      "After 3♣ (minimum), 3♦ is forcing and asks about shortness. The steps are the same as with extra values, "
+                      "and four of the trump suit shows a completely balanced hand.")},
+    "svar": {"q": tx("Hvad er en kontrol, når I cuebidder?", "What counts as a control when you cue-bid?"),
+             "correct": C_SVAR,
+             "options": [C_SVAR, tx("Kun esser og renoncer", "Only aces and voids"), tx("Es eller konge – aldrig korthed", "Ace or king – never shortness")],
+             "why": tx("Vi viser enhver kontrol – es, konge, singleton eller renonce – uden at skelne mellem 1. og 2. rundes kontrol. Billigste kontrolfarve først; en oversprunget farve benægter kontrol.",
+                       "We show any control – ace, king, singleton or void – without distinguishing first- and second-round controls. "
+                       "Cheapest control first; a skipped suit denies a control.")},
 }
 
 PAS = ["Modstander", "Pas"]

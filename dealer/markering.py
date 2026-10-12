@@ -28,10 +28,11 @@ Spilfører er Syd, bordet Nord, du Øst (giv) eller Vest (læs). Kontrakten er 4
 """
 import random
 
-from .core import SUITS, SUIT_SYM, SUIT_NAME, export
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, export, tx, Tx
 
 ORDEN = {'S': 4, 'H': 3, 'D': 2, 'C': 1}
 RN = {14: 'E', 13: 'K', 12: 'D', 11: 'B'}
+RN_EN = {14: 'A', 13: 'K', 12: 'Q', 11: 'J'}
 HP = {14: 4, 13: 3, 12: 2, 11: 1}
 SEAT = {'Nord': 'N', 'Øst': 'E', 'Syd': 'S', 'Vest': 'W'}
 
@@ -41,6 +42,12 @@ def code(s, r): return f"{s}{r}"
 def uncode(c): return c[0], int(c[1:])
 def holding(h, s): return SUIT_SYM[s] + ' ' + ' '.join(rn(r) for r in h[s])
 def navn(s): return SUIT_NAME[s]
+def kort_en(s, r): return f"{SUIT_SYM[s]}{RN_EN.get(r, str(r))}"
+def holding_en(h, s): return SUIT_SYM[s] + ' ' + ' '.join(RN_EN.get(r, str(r)) for r in h[s])
+def name(s): return SUIT_NAME_EN[s]
+def swap(t, da, en):
+    """Samme omskrivning af den danske og den engelske tekst."""
+    return tx(t.replace(*da), t.en.replace(*en)) if isinstance(t, Tx) else t.replace(*da)
 
 def deal():
     deck = [(s, r) for s in SUITS for r in range(2, 15)]
@@ -132,7 +139,9 @@ def laesbar(card, suit, seen):
     return None
 
 def cards_of(h): return [code(s, r) for s in SUITS for r in h[s]]
-def laes_tekst(t): return t.replace('du kan ikke bekende – det er dit', 'makker kan ikke bekende – det er makkers')
+def laes_tekst(t): return swap(t, ('du kan ikke bekende – det er dit', 'makker kan ikke bekende – det er makkers'),
+                               ('you cannot follow suit – it is your', "partner cannot follow suit – it is partner's"))
+def du_spiller(t): return swap(t, ('Makker spiller', 'Du spiller'), ('Partner leads', 'You lead'))
 
 # ---------- Makker 1 & mig ----------
 
@@ -155,27 +164,36 @@ def es_kald(H0, mode):
         return None
     d = min(H['N'][X])
     stik = [['Vest', code(X, 14)], ['Nord', code(X, d)]]
-    tekst = f"Kontrakten er {kon} af Syd. Makker spiller {kort(X, 14)} ud, og bordet lægger {kort(X, d)}."
+    tekst = tx(f"Kontrakten er {kon} af Syd. Makker spiller {kort(X, 14)} ud, og bordet lægger {kort(X, d)}.",
+               f"The contract is {kon} by South. Partner leads {kort_en(X, 14)}, and dummy plays {kort_en(X, d)}.")
     if mode == 'giv':
         if grund == 'damen':
-            why = f"Du har damen ({holding(H['E'], X)}): kald med det laveste kort, {kort(X, card)} – lavt = kald."
+            why = tx(f"Du har damen ({holding(H['E'], X)}): kald med det laveste kort, {kort(X, card)} – lavt = kald.",
+                     f"You have the queen ({holding_en(H['E'], X)}): encourage with your lowest card, {kort_en(X, card)} – low = encourage.")
         elif grund == 'doubleton':
-            why = f"Doubleton mod farvekontrakt – du kan trumfe i tredje runde: kald med det laveste kort, {kort(X, card)}."
+            why = tx(f"Doubleton mod farvekontrakt – du kan trumfe i tredje runde: kald med det laveste kort, {kort(X, card)}.",
+                     f"A doubleton against a suit contract – you can ruff the third round: encourage with your lowest card, {kort_en(X, card)}.")
         else:
-            why = (f"Ingen dame{' og ingen doubleton' if T else ''} ({holding(H['E'], X)}): afvis med det højeste kort, "
-                   f"du har råd til, {kort(X, card)} – højt = afvisning.")
-        return sp.rec('es_kald', 'giv', kon, T, 'Øst', stik, tekst, "Hvilket kort lægger du?",
+            why = tx(f"Ingen dame{' og ingen doubleton' if T else ''} ({holding(H['E'], X)}): afvis med det højeste kort, "
+                     f"du har råd til, {kort(X, card)} – højt = afvisning.",
+                     f"No queen{' and no doubleton' if T else ''} ({holding_en(H['E'], X)}): discourage with the highest card "
+                     f"you can afford, {kort_en(X, card)} – high = discourage.")
+        return sp.rec('es_kald', 'giv', kon, T, 'Øst', stik, tekst, tx("Hvilket kort lægger du?", "Which card do you play?"),
                       [code(X, r) for r in E], [code(X, card)], why)
     if laesbar(card, X, sp.seen('Vest', stik)) != ('lav' if grund else 'hoej'):
         return None
-    valg = ["Kald – fortsæt farven", "Afvisning – skift farve"]
+    valg = [tx("Kald – fortsæt farven", "Encourage – continue the suit"), tx("Afvisning – skift farve", "Discourage – switch suits")]
     if grund:
-        why = (f"{kort(X, card)} er det laveste kort, du ikke selv kan se: lavt = kald. Makker har damen"
-               f"{' eller en doubleton' if T else ''} – fortsæt med {kort(X, 13)}.")
+        why = tx(f"{kort(X, card)} er det laveste kort, du ikke selv kan se: lavt = kald. Makker har damen"
+                 f"{' eller en doubleton' if T else ''} – fortsæt med {kort(X, 13)}.",
+                 f"{kort_en(X, card)} is the lowest card you cannot see yourself: low = encourage. Partner has the queen"
+                 f"{' or a doubleton' if T else ''} – continue with {kort_en(X, 13)}.")
     else:
-        why = f"{kort(X, card)} er et højt kort: højt = afvisning. Makker har ikke damen{' og ingen doubleton' if T else ''} – skift farve."
-    return sp.rec('es_kald', 'laes', kon, T, 'Vest', stik + [['Øst', code(X, card)]], tekst.replace('Makker spiller', 'Du spiller'),
-                  f"Makker lægger {kort(X, card)}. Hvad viser kortet?", valg, [valg[0] if grund else valg[1]], why)
+        why = tx(f"{kort(X, card)} er et højt kort: højt = afvisning. Makker har ikke damen{' og ingen doubleton' if T else ''} – skift farve.",
+                 f"{kort_en(X, card)} is a high card: high = discourage. Partner has neither the queen{' nor a doubleton' if T else ''} – switch suits.")
+    return sp.rec('es_kald', 'laes', kon, T, 'Vest', stik + [['Øst', code(X, card)]], du_spiller(tekst),
+                  tx(f"Makker lægger {kort(X, card)}. Hvad viser kortet?", f"Partner plays {kort_en(X, card)}. What does the card show?"),
+                  valg, [valg[0] if grund else valg[1]], why)
 
 def antal(sp, sit, X, mode, kon, T, stik, tekst, laes_tekst_):
     E = sp.R['E'][X]
@@ -184,17 +202,23 @@ def antal(sp, sit, X, mode, kon, T, stik, tekst, laes_tekst_):
     card = lav(E) if lige else hoej(E)
     if not lige and (card < 7 or card == lav(E)):
         return None
-    valg = ["Lige antal (2 eller 4)", "Ulige antal (3 eller 5)"]
+    valg = [tx("Lige antal (2 eller 4)", "Even number (2 or 4)"), tx("Ulige antal (3 eller 5)", "Odd number (3 or 5)")]
     if mode == 'giv':
-        why = (f"Du har {n} {navn(X)} – lige antal: læg det laveste, {kort(X, card)} (lavt = lige)." if lige else
-               f"Du har {n} {navn(X)} – ulige antal: læg det højeste, {kort(X, card)} (højt = ulige).")
-        return sp.rec(sit, 'giv', kon, T, 'Øst', stik, tekst, "Hvilket kort lægger du?", [code(X, r) for r in E], [code(X, card)], why)
+        why = (tx(f"Du har {n} {navn(X)} – lige antal: læg det laveste, {kort(X, card)} (lavt = lige).",
+                  f"You have {n} {name(X)} – an even number: play the lowest, {kort_en(X, card)} (low = even).") if lige else
+               tx(f"Du har {n} {navn(X)} – ulige antal: læg det højeste, {kort(X, card)} (højt = ulige).",
+                  f"You have {n} {name(X)} – an odd number: play the highest, {kort_en(X, card)} (high = odd)."))
+        return sp.rec(sit, 'giv', kon, T, 'Øst', stik, tekst, tx("Hvilket kort lægger du?", "Which card do you play?"),
+                      [code(X, r) for r in E], [code(X, card)], why)
     if laesbar(card, X, sp.seen('Vest', stik)) != ('lav' if lige else 'hoej'):
         return None
-    why = (f"{kort(X, card)} er det laveste kort, du ikke selv kan se: lavt = lige antal (2 eller 4)." if lige else
-           f"{kort(X, card)} er et højt kort: højt = ulige antal (3 eller 5).")
+    why = (tx(f"{kort(X, card)} er det laveste kort, du ikke selv kan se: lavt = lige antal (2 eller 4).",
+              f"{kort_en(X, card)} is the lowest card you cannot see yourself: low = an even number (2 or 4).") if lige else
+           tx(f"{kort(X, card)} er et højt kort: højt = ulige antal (3 eller 5).",
+              f"{kort_en(X, card)} is a high card: high = an odd number (3 or 5)."))
     return sp.rec(sit, 'laes', kon, T, 'Vest', stik + [['Øst', code(X, card)]], laes_tekst_,
-                  f"Makker lægger {kort(X, card)}. Hvad viser kortet?", valg, [valg[0] if lige else valg[1]], why)
+                  tx(f"Makker lægger {kort(X, card)}. Hvad viser kortet?", f"Partner plays {kort_en(X, card)}. What does the card show?"),
+                  valg, [valg[0] if lige else valg[1]], why)
 
 def k_antal(H0, mode):
     c = contract(H0, random.choice(['farve', 'sans']))
@@ -211,8 +235,9 @@ def k_antal(H0, mode):
     X = random.choice(cands)
     d = min(H['N'][X])
     stik = [['Vest', code(X, 13)], ['Nord', code(X, d)]]
-    tekst = f"Kontrakten er {kon} af Syd. Makker spiller {kort(X, 13)} ud, og bordet lægger {kort(X, d)}. Konge-udspil beder om antal."
-    return antal(sp, 'k_antal', X, mode, kon, T, stik, tekst, tekst.replace('Makker spiller', 'Du spiller'))
+    tekst = tx(f"Kontrakten er {kon} af Syd. Makker spiller {kort(X, 13)} ud, og bordet lægger {kort(X, d)}. Konge-udspil beder om antal.",
+               f"The contract is {kon} by South. Partner leads {kort_en(X, 13)}, and dummy plays {kort_en(X, d)}. A king lead asks for count.")
+    return antal(sp, 'k_antal', X, mode, kon, T, stik, tekst, du_spiller(tekst))
 
 def ny_farve_antal(H0, mode):
     c = contract(H0, random.choice(['farve', 'sans']))
@@ -228,7 +253,8 @@ def ny_farve_antal(H0, mode):
         return None
     d = min(sp.R['N'][X])
     stik = [['Nord', code(X, d)]]
-    tekst = f"Kontrakten er {kon} af Syd. Bordet vandt udspillet og spiller nu en ny farve: {kort(X, d)}."
+    tekst = tx(f"Kontrakten er {kon} af Syd. Bordet vandt udspillet og spiller nu en ny farve: {kort(X, d)}.",
+               f"The contract is {kon} by South. Dummy won the opening lead and now plays a new suit: {kort_en(X, d)}.")
     return antal(sp, 'ny_farve_antal', X, mode, kon, T, stik, tekst, tekst)
 
 def void_trick(R, L):
@@ -254,22 +280,31 @@ def afkast_farve(H0, mode):
     kald = code(W, lav(H['E'][W]))
     afvis = [code(u, hoej(H['E'][u])) for u in U if len(H['E'][u]) >= 2 and 8 <= hoej(H['E'][u]) <= 10]
     stik = void_trick(H, T)
-    tekst = f"Kontrakten er {kon} af Syd. Spilfører vandt udspillet og spiller trumf, og du kan ikke bekende – det er dit første afkast."
+    tekst = tx(f"Kontrakten er {kon} af Syd. Spilfører vandt udspillet og spiller trumf, og du kan ikke bekende – det er dit første afkast.",
+               f"The contract is {kon} by South. Declarer won the opening lead and plays trumps, and you cannot follow suit – it is your first discard.")
     if mode == 'giv':
         why = f"Du vil have {navn(W)} spillet ({holding(H['E'], W)}): kald med et lavt kort i farven, {kort(W, lav(H['E'][W]))} – lavt = kald."
+        why_en = (f"You want {name(W)} played ({holding_en(H['E'], W)}): encourage with a low card in the suit, "
+                  f"{kort_en(W, lav(H['E'][W]))} – low = encourage.")
         if afvis:
             why += " Du kan også afvise en farve, du ikke vil have, med et højt kort, fx " + ' eller '.join(kort(*uncode(x)) for x in afvis) + "."
-        return sp.rec('afkast_farve', 'giv', kon, T, 'Øst', stik, tekst, "Hvilket kort kaster du?", cards_of(H['E']), [kald] + afvis, why)
+            why_en += " You can also discourage a suit you do not want with a high card, e.g. " + ' or '.join(kort_en(*uncode(x)) for x in afvis) + "."
+        return sp.rec('afkast_farve', 'giv', kon, T, 'Øst', stik, tekst, tx("Hvilket kort kaster du?", "Which card do you discard?"),
+                      cards_of(H['E']), [kald] + afvis, tx(why, why_en))
     pick = random.choice([kald] + afvis)
     s, r = uncode(pick)
     is_kald = pick == kald
     if laesbar(r, s, sp.seen('Vest', stik)) != ('lav' if is_kald else 'hoej'):
         return None
-    valg = [f"Makker vil have {navn(s)} spillet", f"Makker vil ikke have {navn(s)}"]
-    why = (f"{kort(s, r)} er lavt: lavt = kald – makker vil have {navn(s)}." if is_kald else
-           f"{kort(s, r)} er højt: højt = afvisning – makker vil ikke have {navn(s)}.")
+    valg = [tx(f"Makker vil have {navn(s)} spillet", f"Partner wants {name(s)} played"),
+            tx(f"Makker vil ikke have {navn(s)}", f"Partner does not want {name(s)}")]
+    why = (tx(f"{kort(s, r)} er lavt: lavt = kald – makker vil have {navn(s)}.",
+              f"{kort_en(s, r)} is low: low = encourage – partner wants {name(s)}.") if is_kald else
+           tx(f"{kort(s, r)} er højt: højt = afvisning – makker vil ikke have {navn(s)}.",
+              f"{kort_en(s, r)} is high: high = discourage – partner does not want {name(s)}."))
     return sp.rec('afkast_farve', 'laes', kon, T, 'Vest', stik + [['Øst', pick]], laes_tekst(tekst),
-                  f"Makker kaster {kort(s, r)}. Hvad viser kortet?", valg, [valg[0] if is_kald else valg[1]], why)
+                  tx(f"Makker kaster {kort(s, r)}. Hvad viser kortet?", f"Partner discards {kort_en(s, r)}. What does the card show?"),
+                  valg, [valg[0] if is_kald else valg[1]], why)
 
 def lang_farve(H0):
     """Spilførers lange farve mod sans: Øst er renonce, Syd har 4+, Vest og bordet har kort i den."""
@@ -294,19 +329,26 @@ def afkast_sans(H0, mode):
         return None
     U = U[0]
     stik = void_trick(H, L)
-    tekst = (f"Kontrakten er 3NT af Syd. Spilfører vandt udspillet og spiller sin lange farve, {navn(L)}, "
-             f"og du kan ikke bekende – det er dit første afkast.")
+    tekst = tx(f"Kontrakten er 3NT af Syd. Spilfører vandt udspillet og spiller sin lange farve, {navn(L)}, "
+               f"og du kan ikke bekende – det er dit første afkast.",
+               f"The contract is 3NT by South. Declarer won the opening lead and plays the long suit, {name(L)}, "
+               f"and you cannot follow suit – it is your first discard.")
     keep = [s for s in others if s != U]
     if mode == 'giv':
-        why = (f"{navn(U).capitalize()} er din uinteressante farve – ingen honnører ({holding(H['E'], U)}). Mod sans kaster du i den, "
-               f"og beholder {navn(keep[0])} og {navn(keep[1])}, hvor du har værdier.")
-        return sp.rec('afkast_sans', 'giv', kon, T, 'Øst', stik, tekst, "Hvilket kort kaster du?", cards_of(H['E']),
-                      [code(U, r) for r in H['E'][U]], why)
+        why = tx(f"{navn(U).capitalize()} er din uinteressante farve – ingen honnører ({holding(H['E'], U)}). Mod sans kaster du i den, "
+                 f"og beholder {navn(keep[0])} og {navn(keep[1])}, hvor du har værdier.",
+                 f"{name(U).capitalize()} is your uninteresting suit – no honours ({holding_en(H['E'], U)}). Against notrump you discard in it "
+                 f"and keep {name(keep[0])} and {name(keep[1])}, where you have values.")
+        return sp.rec('afkast_sans', 'giv', kon, T, 'Øst', stik, tekst, tx("Hvilket kort kaster du?", "Which card do you discard?"),
+                      cards_of(H['E']), [code(U, r) for r in H['E'][U]], why)
     r = random.choice(H['E'][U])
-    valg = [f"Makker er ikke interesseret i {navn(U)}", f"Makker vil have {navn(U)} spillet"]
-    why = f"Mod sans kaster makker i den farve, han ikke er interesseret i: {kort(U, r)} siger nej tak til {navn(U)}."
+    valg = [tx(f"Makker er ikke interesseret i {navn(U)}", f"Partner is not interested in {name(U)}"),
+            tx(f"Makker vil have {navn(U)} spillet", f"Partner wants {name(U)} played")]
+    why = tx(f"Mod sans kaster makker i den farve, han ikke er interesseret i: {kort(U, r)} siger nej tak til {navn(U)}.",
+             f"Against notrump, partner discards in the suit partner is not interested in: {kort_en(U, r)} says no thanks to {name(U)}.")
     return sp.rec('afkast_sans', 'laes', kon, T, 'Vest', stik + [['Øst', code(U, r)]], laes_tekst(tekst),
-                  f"Makker kaster {kort(U, r)}. Hvad viser kortet?", valg, [valg[0]], why)
+                  tx(f"Makker kaster {kort(U, r)}. Hvad viser kortet?", f"Partner discards {kort_en(U, r)}. What does the card show?"),
+                  valg, [valg[0]], why)
 
 # ---------- Lavinthal (forslag) ----------
 
@@ -343,23 +385,34 @@ def ruff_retur(H0, mode):
     if hi and (card < 7 or card == lav(E)):
         return None
     hl = 'højeste' if hi else 'laveste'
+    hl_en = 'higher' if hi else 'lower'
     if mode == 'giv':
-        tekst = (f"Kontrakten er {kon} af Syd. Du vandt udspillet og indkasserede {kort(X, 14)}, og makker kunne ikke bekende. "
-                 f"Nu spiller du {navn(X)}, så makker kan trumfe.")
-        why = (f"Du har {kort(R, 14)} og vil have makker til at spille {navn(R)} tilbage, så du kommer ind og kan give makker en trumfning mere. "
-               f"{navn(R).capitalize()} er den {hl} af de to sidefarver ({navn(O[0])} og {navn(O[1])}): spil et {'højt' if hi else 'lavt'} kort, {kort(X, card)}.")
-        return sp.rec('ruff_retur', 'giv', kon, T, 'Øst', [], tekst, "Hvilket kort spiller du?", [code(X, r) for r in E], [code(X, card)], why)
+        tekst = tx(f"Kontrakten er {kon} af Syd. Du vandt udspillet og indkasserede {kort(X, 14)}, og makker kunne ikke bekende. "
+                   f"Nu spiller du {navn(X)}, så makker kan trumfe.",
+                   f"The contract is {kon} by South. You won the opening lead and cashed {kort_en(X, 14)}, and partner could not follow suit. "
+                   f"Now you play {name(X)} so that partner can ruff.")
+        why = tx(f"Du har {kort(R, 14)} og vil have makker til at spille {navn(R)} tilbage, så du kommer ind og kan give makker en trumfning mere. "
+                 f"{navn(R).capitalize()} er den {hl} af de to sidefarver ({navn(O[0])} og {navn(O[1])}): spil et {'højt' if hi else 'lavt'} kort, {kort(X, card)}.",
+                 f"You have {kort_en(R, 14)} and want partner to return {name(R)}, so that you get in and can give partner another ruff. "
+                 f"{name(R).capitalize()} is the {hl_en} of the two side suits ({name(O[0])} and {name(O[1])}): play a {'high' if hi else 'low'} card, {kort_en(X, card)}.")
+        return sp.rec('ruff_retur', 'giv', kon, T, 'Øst', [], tekst, tx("Hvilket kort spiller du?", "Which card do you play?"),
+                      [code(X, r) for r in E], [code(X, card)], why)
     stik = [['Øst', code(X, card)]]
     if laesbar(card, X, sp.seen('Vest', stik)) != ('hoej' if hi else 'lav'):
         return None
     hiS, loS = sorted(O, key=lambda s: -ORDEN[s])
-    valg = [f"Spil {navn(hiS)} tilbage", f"Spil {navn(loS)} tilbage"]
-    why = (f"{kort(X, card)} er et {'højt' if hi else 'lavt'} kort: makker beder om den {hl} af de to sidefarver, {navn(R)} – "
-           f"dér har makker sin indkomst til næste trumfning.")
-    tekst = (f"Kontrakten er {kon} af Syd. Makker vandt udspillet og indkasserede {kort(X, 14)}, og du kunne ikke bekende. "
-             f"Nu spiller makker {navn(X)}, så du kan trumfe.")
+    valg = [tx(f"Spil {navn(hiS)} tilbage", f"Return {name(hiS)}"), tx(f"Spil {navn(loS)} tilbage", f"Return {name(loS)}")]
+    why = tx(f"{kort(X, card)} er et {'højt' if hi else 'lavt'} kort: makker beder om den {hl} af de to sidefarver, {navn(R)} – "
+             f"dér har makker sin indkomst til næste trumfning.",
+             f"{kort_en(X, card)} is a {'high' if hi else 'low'} card: partner asks for the {hl_en} of the two side suits, {name(R)} – "
+             f"that is where partner has the entry for the next ruff.")
+    tekst = tx(f"Kontrakten er {kon} af Syd. Makker vandt udspillet og indkasserede {kort(X, 14)}, og du kunne ikke bekende. "
+               f"Nu spiller makker {navn(X)}, så du kan trumfe.",
+               f"The contract is {kon} by South. Partner won the opening lead and cashed {kort_en(X, 14)}, and you could not follow suit. "
+               f"Now partner plays {name(X)} so that you can ruff.")
     return sp.rec('ruff_retur', 'laes', kon, T, 'Vest', stik, tekst,
-                  f"Makker spiller {kort(X, card)}. Hvilken farve skal du spille tilbage, når du har trumfet?",
+                  tx(f"Makker spiller {kort(X, card)}. Hvilken farve skal du spille tilbage, når du har trumfet?",
+                     f"Partner plays {kort_en(X, card)}. Which suit should you return after ruffing?"),
                   valg, [valg[0] if hi else valg[1]], why)
 
 def doed_udspil(H0, mode):
@@ -388,20 +441,30 @@ def doed_udspil(H0, mode):
         return None
     d = H['N'][X][0]
     stik = [['Vest', code(X, 14)], ['Nord', code(X, d)]]
-    tekst = (f"Kontrakten er {kon} af Syd. Makker spiller {kort(X, 14)} ud, og bordet har singleton {kort(X, d)}. "
-             f"At fortsætte farven giver spilfører en trumfning eller et gratis afkast, så kortet viser i stedet, hvilken farve makker skal skifte til.")
+    tekst = tx(f"Kontrakten er {kon} af Syd. Makker spiller {kort(X, 14)} ud, og bordet har singleton {kort(X, d)}. "
+               f"At fortsætte farven giver spilfører en trumfning eller et gratis afkast, så kortet viser i stedet, hvilken farve makker skal skifte til.",
+               f"The contract is {kon} by South. Partner leads {kort_en(X, 14)}, and dummy has a singleton {kort_en(X, d)}. "
+               f"Continuing the suit gives declarer a ruff or a free discard, so the card shows instead which suit partner should switch to.")
     hl = 'højeste' if hi else 'laveste'
+    hl_en = 'higher' if hi else 'lower'
     if mode == 'giv':
-        why = (f"Du vil have {navn(W)} ({holding(H['E'], W)}). Den er den {hl} af de to sidefarver ({navn(O[0])} og {navn(O[1])}): "
-               f"læg et {'højt' if hi else 'lavt'} kort, {kort(X, card)}.")
-        return sp.rec('doed_udspil', 'giv', kon, T, 'Øst', stik, tekst, "Hvilket kort lægger du?", [code(X, r) for r in E], [code(X, card)], why)
+        why = tx(f"Du vil have {navn(W)} ({holding(H['E'], W)}). Den er den {hl} af de to sidefarver ({navn(O[0])} og {navn(O[1])}): "
+                 f"læg et {'højt' if hi else 'lavt'} kort, {kort(X, card)}.",
+                 f"You want {name(W)} ({holding_en(H['E'], W)}). It is the {hl_en} of the two side suits ({name(O[0])} and {name(O[1])}): "
+                 f"play a {'high' if hi else 'low'} card, {kort_en(X, card)}.")
+        return sp.rec('doed_udspil', 'giv', kon, T, 'Øst', stik, tekst, tx("Hvilket kort lægger du?", "Which card do you play?"),
+                      [code(X, r) for r in E], [code(X, card)], why)
     if laesbar(card, X, sp.seen('Vest', stik)) != ('hoej' if hi else 'lav'):
         return None
     hiS, loS = sorted(O, key=lambda s: -ORDEN[s])
-    valg = [f"Skift til {navn(hiS)}", f"Skift til {navn(loS)}"]
-    why = f"{kort(X, card)} er et {'højt' if hi else 'lavt'} kort: makker beder om den {hl} af de to sidefarver, {navn(W)}."
-    return sp.rec('doed_udspil', 'laes', kon, T, 'Vest', stik + [['Øst', code(X, card)]], tekst.replace('Makker spiller', 'Du spiller'),
-                  f"Makker lægger {kort(X, card)}. Hvilken farve skal du skifte til?", valg, [valg[0] if hi else valg[1]], why)
+    valg = [tx(f"Skift til {navn(hiS)}", f"Switch to {name(hiS)}"), tx(f"Skift til {navn(loS)}", f"Switch to {name(loS)}")]
+    why = tx(f"{kort(X, card)} er et {'højt' if hi else 'lavt'} kort: makker beder om den {hl} af de to sidefarver, {navn(W)}.",
+             f"{kort_en(X, card)} is a {'high' if hi else 'low'} card: partner asks for the {hl_en} of the two side suits, {name(W)}.")
+    laes = swap(du_spiller(tekst), ('hvilken farve makker skal skifte til', 'hvilken farve du skal skifte til'),
+                ('which suit partner should switch to', 'which suit you should switch to'))
+    return sp.rec('doed_udspil', 'laes', kon, T, 'Vest', stik + [['Øst', code(X, card)]], laes,
+                  tx(f"Makker lægger {kort(X, card)}. Hvilken farve skal du skifte til?", f"Partner plays {kort_en(X, card)}. Which suit should you switch to?"),
+                  valg, [valg[0] if hi else valg[1]], why)
 
 def lav_afkast(H0, mode):
     c = contract(H0, random.choice(['farve', 'sans']))
@@ -412,13 +475,16 @@ def lav_afkast(H0, mode):
         L = T
         if H0['E'][T] or not H0['W'][T] or not H0['N'][T] or not H0['S'][T]:
             return None
-        tekst = f"Kontrakten er {kon} af Syd. Spilfører vandt udspillet og spiller trumf, og du kan ikke bekende – det er dit første afkast."
+        tekst = tx(f"Kontrakten er {kon} af Syd. Spilfører vandt udspillet og spiller trumf, og du kan ikke bekende – det er dit første afkast.",
+                   f"The contract is {kon} by South. Declarer won the opening lead and plays trumps, and you cannot follow suit – it is your first discard.")
     else:
         L = lang_farve(H0)
         if not L:
             return None
-        tekst = (f"Kontrakten er 3NT af Syd. Spilfører vandt udspillet og spiller sin lange farve, {navn(L)}, "
-                 f"og du kan ikke bekende – det er dit første afkast.")
+        tekst = tx(f"Kontrakten er 3NT af Syd. Spilfører vandt udspillet og spiller sin lange farve, {navn(L)}, "
+                   f"og du kan ikke bekende – det er dit første afkast.",
+                   f"The contract is 3NT by South. Declarer won the opening lead and plays the long suit, {name(L)}, "
+                   f"and you cannot follow suit – it is your first discard.")
     sp = Spil(H0)
     if not sp.udspil('Syd', {L}):
         return None
@@ -447,33 +513,60 @@ def lav_afkast(H0, mode):
     if mode == 'giv':
         dele = [f"{kort(u, card)}: de to andre farver er {navn(W)} og {navn(u2)}, og {navn(W)} er den {'højeste' if hi else 'laveste'}"
                 for u, card, hi, u2 in forklar]
-        why = (f"Du vil have {navn(W)} ({holding(H['E'], W)}). Kast i en uønsket farve – et højt kort beder om den højeste "
-               f"af de to andre farver, et lavt kort om den laveste: " + '; '.join(dele) + ".")
-        return sp.rec('lav_afkast', 'giv', kon, T, 'Øst', stik, tekst, "Hvilket kort kaster du?", cards_of(H['E']), rigtige, why)
+        dele_en = [f"{kort_en(u, card)}: the two other suits are {name(W)} and {name(u2)}, and {name(W)} is the {'higher' if hi else 'lower'}"
+                   for u, card, hi, u2 in forklar]
+        why = tx(f"Du vil have {navn(W)} ({holding(H['E'], W)}). Kast i en uønsket farve – et højt kort beder om den højeste "
+                 f"af de to andre farver, et lavt kort om den laveste: " + '; '.join(dele) + ".",
+                 f"You want {name(W)} ({holding_en(H['E'], W)}). Discard in an unwanted suit – a high card asks for the higher "
+                 f"of the two other suits, a low card for the lower: " + '; '.join(dele_en) + ".")
+        return sp.rec('lav_afkast', 'giv', kon, T, 'Øst', stik, tekst, tx("Hvilket kort kaster du?", "Which card do you discard?"),
+                      cards_of(H['E']), rigtige, why)
     u, card, hi, u2 = random.choice(forklar)
     if laesbar(card, u, sp.seen('Vest', stik)) != ('hoej' if hi else 'lav'):
         return None
     hiS, loS = sorted([W, u2], key=lambda s: -ORDEN[s])
-    valg = [f"Makker beder om {navn(hiS)}", f"Makker beder om {navn(loS)}"]
-    why = (f"Makker kaster i {navn(u)}, en uønsket farve. {kort(u, card)} er et {'højt' if hi else 'lavt'} kort: "
-           f"det beder om den {'højeste' if hi else 'laveste'} af de to andre farver, {navn(W)}.")
+    valg = [tx(f"Makker beder om {navn(hiS)}", f"Partner asks for {name(hiS)}"), tx(f"Makker beder om {navn(loS)}", f"Partner asks for {name(loS)}")]
+    why = tx(f"Makker kaster i {navn(u)}, en uønsket farve. {kort(u, card)} er et {'højt' if hi else 'lavt'} kort: "
+             f"det beder om den {'højeste' if hi else 'laveste'} af de to andre farver, {navn(W)}.",
+             f"Partner discards in {name(u)}, an unwanted suit. {kort_en(u, card)} is a {'high' if hi else 'low'} card: "
+             f"it asks for the {'higher' if hi else 'lower'} of the two other suits, {name(W)}.")
     return sp.rec('lav_afkast', 'laes', kon, T, 'Vest', stik + [['Øst', code(u, card)]], laes_tekst(tekst),
-                  f"Makker kaster {kort(u, card)}. Hvad beder makker om?", valg, [valg[0] if hi else valg[1]], why)
+                  tx(f"Makker kaster {kort(u, card)}. Hvad beder makker om?", f"Partner discards {kort_en(u, card)}. What is partner asking for?"),
+                  valg, [valg[0] if hi else valg[1]], why)
 
 # ---------- puljer ----------
 
 SITUATIONER = {
     "markeringer": {
-        "es_kald": {"titel": "Es-udspil", "regel": "Es-udspil beder om kald: lavt kort = kald (fortsæt), højt kort = afvisning. Kald med damen – mod farvekontrakt også med doubleton."},
-        "k_antal": {"titel": "Konge-udspil", "regel": "Konge-udspil beder om antal (Malmø): lavt kort = lige antal, højt kort = ulige antal."},
-        "ny_farve_antal": {"titel": "Spilfører spiller ny farve", "regel": "Spilfører spiller en ny farve: Malmø – lavt kort = lige antal, højt kort = ulige antal."},
-        "afkast_farve": {"titel": "Første afkast mod farve", "regel": "Første afkast mod farvekontrakt: kald/afvisning – et lavt kort kalder farven, et højt kort afviser den."},
-        "afkast_sans": {"titel": "Første afkast mod sans", "regel": "Første afkast mod sans: kast i den farve, du ikke er interesseret i."},
+        "es_kald": {"titel": tx("Es-udspil", "Ace lead"),
+                    "regel": tx("Es-udspil beder om kald: lavt kort = kald (fortsæt), højt kort = afvisning. Kald med damen – mod farvekontrakt også med doubleton.",
+                                "An ace lead asks for attitude: low card = encourage (continue), high card = discourage. "
+                                "Encourage with the queen – against a suit contract also with a doubleton.")},
+        "k_antal": {"titel": tx("Konge-udspil", "King lead"),
+                    "regel": tx("Konge-udspil beder om antal (Malmø): lavt kort = lige antal, højt kort = ulige antal.",
+                                "A king lead asks for count (Malmö): low card = even number, high card = odd number.")},
+        "ny_farve_antal": {"titel": tx("Spilfører spiller ny farve", "Declarer plays a new suit"),
+                           "regel": tx("Spilfører spiller en ny farve: Malmø – lavt kort = lige antal, højt kort = ulige antal.",
+                                       "Declarer plays a new suit: Malmö – low card = even number, high card = odd number.")},
+        "afkast_farve": {"titel": tx("Første afkast mod farve", "First discard against a suit contract"),
+                         "regel": tx("Første afkast mod farvekontrakt: kald/afvisning – et lavt kort kalder farven, et højt kort afviser den.",
+                                     "First discard against a suit contract: attitude – a low card encourages the suit, a high card discourages it.")},
+        "afkast_sans": {"titel": tx("Første afkast mod sans", "First discard against notrump"),
+                        "regel": tx("Første afkast mod sans: kast i den farve, du ikke er interesseret i.",
+                                    "First discard against notrump: discard in the suit you are not interested in.")},
     },
     "lavinthal": {
-        "ruff_retur": {"titel": "Trumfning og retur", "regel": "Kortet, du spiller til makkers trumfning, viser returfarven: højt = den højeste af de to sidefarver, lavt = den laveste."},
-        "doed_udspil": {"titel": "Død udspilsfarve", "regel": "Har bordet singleton i makkers es-udspil, er dit kort ikke kald eller afvisning, men farvevalg: højt = den højeste af de to sidefarver, lavt = den laveste."},
-        "lav_afkast": {"titel": "Lavinthal-afkast", "regel": "Første afkast i en uønsket farve: højt kort beder om den højeste af de to andre farver, lavt kort om den laveste. Aldrig til trumf."},
+        "ruff_retur": {"titel": tx("Trumfning og retur", "Ruff and return"),
+                       "regel": tx("Kortet, du spiller til makkers trumfning, viser returfarven: højt = den højeste af de to sidefarver, lavt = den laveste.",
+                                   "The card you play for partner's ruff shows the return suit: high = the higher of the two side suits, low = the lower.")},
+        "doed_udspil": {"titel": tx("Død udspilsfarve", "Dead lead suit"),
+                        "regel": tx("Har bordet singleton i makkers es-udspil, er dit kort ikke kald eller afvisning, men farvevalg: højt = den højeste af de to sidefarver, lavt = den laveste.",
+                                    "When dummy has a singleton in partner's ace lead, your card is not attitude but suit preference: "
+                                    "high = the higher of the two side suits, low = the lower.")},
+        "lav_afkast": {"titel": tx("Lavinthal-afkast", "Lavinthal discard"),
+                       "regel": tx("Første afkast i en uønsket farve: højt kort beder om den højeste af de to andre farver, lavt kort om den laveste. Aldrig til trumf.",
+                                   "First discard in an unwanted suit: a high card asks for the higher of the two other suits, a low card for the lower. "
+                                   "Never for trumps.")},
     },
 }
 GEN = {"es_kald": es_kald, "k_antal": k_antal, "ny_farve_antal": ny_farve_antal, "afkast_farve": afkast_farve,

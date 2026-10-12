@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@800&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&text=%E2%99%A0%E2%99%A5%E2%99%A6%E2%99%A3&display=swap">
 <link rel="stylesheet" href="assets/site.css">
+<script src="assets/lang.js"></script>
 <style>
   .trainer{ max-width:64rem; padding-bottom:var(--sg-space-3xl); }
   .hero{ padding:var(--sg-space-2xl) 0 var(--sg-space-lg); margin-bottom:0; }
@@ -158,15 +159,15 @@
 <body>
 <header class="site-head"><div class="in">
   <a class="brand" href="./">Konventionstræner</a>
-  <nav><a href="./#traen" aria-current="page">Træn</a><a href="viden/">Viden</a></nav>
+  <nav><a href="./#traen" aria-current="page" data-en="Train">Træn</a><a href="viden/" data-en="Reference">Viden</a></nav>
 </div></header>
 
 <div class="wrap trainer">
   <section class="hero">
     <p class="eyebrow" id="group"></p>
-    <h1 id="title">Træning</h1>
+    <h1 id="title" data-en="Training">Træning</h1>
     <p class="deck" id="desc"></p>
-    <div class="profiles" id="profiles"><span class="lbl">Profil:</span></div>
+    <div class="profiles" id="profiles"><span class="lbl" data-en="Profile:">Profil:</span></div>
   </section>
 
   <div class="chooser" id="chooser" style="display:none"></div>
@@ -181,19 +182,19 @@
       <p class="sitnote" id="sitnote"></p>
       <div class="hand" id="hand"></div>
       <div class="hintinfo" id="hintInfo"></div>
-      <button class="next" id="nextBtn">Næste hånd →</button>
+      <button class="next" id="nextBtn" data-en="Next hand →">Næste hånd →</button>
     </div>
     <div class="bidding">
       <div class="qrow">
-        <p class="qtext">Hvad melder du?</p>
-        <button class="hint-btn" id="hintBtn" title="Vis fire mulige meldinger" aria-pressed="false">💡</button>
+        <p class="qtext" data-en="What do you bid?">Hvad melder du?</p>
+        <button class="hint-btn" id="hintBtn" title="Vis fire mulige meldinger" data-en-title="Show four possible bids" aria-pressed="false">💡</button>
       </div>
       <div class="box" id="box"></div>
       <div class="specialrow" id="special"></div>
       <div class="feedback" id="feedback"></div>
     </div>
     <div class="bonus">
-      <p class="label">Bonusspørgsmål</p>
+      <p class="label" data-en="Bonus question">Bonusspørgsmål</p>
       <p class="bq" id="bonusQ"></p>
       <div class="opts" id="bonusOpts"></div>
       <div class="bfeedback" id="bonusFeedback"></div>
@@ -226,7 +227,7 @@ function callRank(call){
 // Each round draws ROUND_SIZE random hands from pools/<konvention>.json (made by build_pools.py)
 const ROUND_SIZE = 8;
 const POOL_SUITS = [['S','♠'],['H','♥'],['D','♦'],['C','♣']];
-const RANK_NAMES = { 14: 'E', 13: 'K', 12: 'D', 11: 'B' };
+const RANK_NAMES = T({ 14: 'E', 13: 'K', 12: 'D', 11: 'B' }, { 14: 'A', 13: 'K', 12: 'Q', 11: 'J' });
 
 function shuffle(arr){
   const a = arr.slice();
@@ -239,7 +240,7 @@ function shuffle(arr){
 
 // Profiler (Kampen om kontrakten): Grund = kun bogens regler, Klub = + faste aftaler, Turnering = + toggles
 const PROFILES = ['grund','klub','turnering'];
-const PROFILE_NAMES = { grund:'Grund', klub:'Klub', turnering:'Turnering' };
+const PROFILE_NAMES = T({ grund:'Grund', klub:'Klub', turnering:'Turnering' }, { grund:'Basic', klub:'Club', turnering:'Tournament' });
 function resolveForProfile(h, profile){
   if (h.only && !h.only.includes(profile)) return null;
   if (h[profile]) return { ...h, correct: h[profile].correct, why: h[profile].why, aftale: profile !== 'grund' && !!h.aftale };
@@ -273,7 +274,7 @@ const progressEl = $('progress'), auctionEl = $('auction'), handEl = $('hand'), 
       boardEl = $('board');
 
 function fmtCall(call){
-  if (call === 'X' || call === 'XX' || call === 'Pas') return call;
+  if (call === 'X' || call === 'XX' || call === 'Pas') return W(call);
   const p = parseCall(call);
   return p.strain === 'NT' ? `${p.level}NT` : `${p.level}<span class="su ${suitClass(p.strain)}">${p.strain}</span>`;
 }
@@ -291,36 +292,37 @@ function renderProgress(){
 
 function renderAuction(q){
   const slots = q.auction.map(([who, call]) =>
-    `<div class="slot"><span class="who">${who}</span><span class="bc${callClass(call)}${who === 'Modstander' && call !== 'Pas' ? ' them' : ''}">${fmtCall(call)}</span></div>`);
-  slots.push(`<div class="slot"><span class="who">Dig</span><span class="bc ask">?</span></div>`);
+    `<div class="slot"><span class="who">${W(who)}</span><span class="bc${callClass(call)}${who === 'Modstander' && call !== 'Pas' ? ' them' : ''}">${fmtCall(call)}</span></div>`);
+  slots.push(`<div class="slot"><span class="who">${W('Dig')}</span><span class="bc ask">?</span></div>`);
   auctionEl.innerHTML = slots.join('');
 }
 
 // Bord: Dig sidder Syd. Sæderne regnes baglæns fra Syd ud fra meldingernes rækkefølge.
-const SEATS = ['N','Ø','S','V'];
-const SEAT_NAMES = ['Nord','Øst','Syd','Vest'];
+const SEATS = T(['N','Ø','S','V'], ['N','E','S','W']);
+const SEAT_NAMES = T(['Nord','Øst','Syd','Vest'], ['North','East','South','West']);
 function renderTable(q){
   const n = q.auction.length;
   const seatOf = i => ((2 - (n - i)) % 4 + 4) % 4;          // indeks i meldeforløbet -> sæde (N=0, Ø=1, S=2, V=3)
   const dealer = seatOf(0);
   const zone = q.zone || null;
   const zcls = zone === 'ns' ? ' vns' : zone === 'ov' ? ' vov' : zone === 'alle' ? ' valle' : '';
-  const zname = { ingen:'Ingen', ns:'Nord-Syd', ov:'Øst-Vest', alle:'Alle' }[zone];
-  const zrel = { ingen:'ingen i zonen', ns:'I er i zonen', ov:'de er i zonen', alle:'alle i zonen' }[zone];
+  const zname = T({ ingen:'Ingen', ns:'Nord-Syd', ov:'Øst-Vest', alle:'Alle' }, { ingen:'None', ns:'North-South', ov:'East-West', alle:'All' })[zone];
+  const zrel = T({ ingen:'ingen i zonen', ns:'I er i zonen', ov:'de er i zonen', alle:'alle i zonen' },
+                 { ingen:'nobody vulnerable', ns:'you are vulnerable', ov:'they are vulnerable', alle:'everybody vulnerable' })[zone];
   const seatSpan = (k, cls) => `<span class="${cls}${dealer === SEATS.indexOf(k) ? ' giver' : ''}">${k}</span>`;
-  const felt = `<div><div class="felt${zcls}" role="img" aria-label="Giver ${SEAT_NAMES[dealer]}${zone ? ', zone ' + zname : ''}">${seatSpan('N','n')}${seatSpan('Ø','e')}${seatSpan('S','s')}${seatSpan('V','w')}</div>
-    <div class="tinfo">Giver: ${SEAT_NAMES[dealer]}${zone ? `<br>Zone: ${zname}<br><b>${zrel}</b>` : ''}<br>Du er Syd</div></div>`;
+  const felt = `<div><div class="felt${zcls}" role="img" aria-label="${T('Giver', 'Dealer')} ${SEAT_NAMES[dealer]}${zone ? ', ' + T('zone', 'vulnerability') + ' ' + zname : ''}">${seatSpan(SEATS[0],'n')}${seatSpan(SEATS[1],'e')}${seatSpan(SEATS[2],'s')}${seatSpan(SEATS[3],'w')}</div>
+    <div class="tinfo">${T('Giver', 'Dealer')}: ${SEAT_NAMES[dealer]}${zone ? `<br>${T('Zone', 'Vulnerability')}: ${zname}<br><b>${zrel}</b>` : ''}<br>${T('Du er Syd', 'You are South')}</div></div>`;
   const col = seat => (seat + 1) % 4;                         // kolonner V N Ø S
   const cells = [];
   for (let c = 0; c < col(dealer); c++) cells.push('<td></td>');
   q.auction.forEach(([who, call]) => {
     const cls = call === 'Pas' ? 'pas' : (call === 'X' || call === 'XX') ? 'x' : who === 'Dig' ? 'me' : '';
-    cells.push(`<td class="${cls}">${call === 'Pas' ? 'pas' : fmtCall(call)}</td>`);
+    cells.push(`<td class="${cls}">${call === 'Pas' ? T('pas', 'pass') : fmtCall(call)}</td>`);
   });
   cells.push('<td class="ask">?</td>');
   let rows = '';
   for (let i = 0; i < cells.length; i += 4) rows += '<tr>' + cells.slice(i, i + 4).join('') + '</tr>';
-  $('tableView').innerHTML = felt + `<table class="auc"><thead><tr><th>V</th><th>N</th><th>Ø</th><th>S</th></tr></thead><tbody>${rows}</tbody></table>`;
+  $('tableView').innerHTML = felt + `<table class="auc"><thead><tr><th>${SEATS[3]}</th><th>${SEATS[0]}</th><th>${SEATS[1]}</th><th>${SEATS[2]}</th></tr></thead><tbody>${rows}</tbody></table>`;
 }
 
 function render(){
@@ -328,7 +330,7 @@ function render(){
   hintBtn.setAttribute('aria-pressed','false');
   const q = Q[idx];
   renderProgress();
-  $('role').textContent = q.role ? `Du er ${q.role.toLowerCase()}` : '';
+  $('role').textContent = q.role ? youAre(q.role) : '';
   $('role').style.display = q.role ? '' : 'none';
   if (LAYOUT === 'bord'){ auctionEl.style.display = 'none'; $('tableView').style.display = ''; renderTable(q); }
   else renderAuction(q);
@@ -356,7 +358,7 @@ function render(){
     const btn = document.createElement('button');
     btn.className = 'cell' + callClass(call);
     btn.dataset.call = call;
-    btn.textContent = call;
+    btn.textContent = W(call);
     const legal = call === 'Pas' || (call === 'X' && q.allowX) || (call === 'XX' && q.allowXX);
     btn.disabled = !legal;
     if (legal) btn.addEventListener('click', () => choose(call, btn));
@@ -390,7 +392,7 @@ hintBtn.addEventListener('click', () => {
   hintBtn.setAttribute('aria-pressed', hintOn ? 'true' : 'false');
   const q = Q[idx];
   allCells().forEach(b => b.classList.toggle('hinted', hintOn && q.hints.includes(b.dataset.call)));
-  $('hintInfo').textContent = `Din hånd: ${q.hp} hp / ${q.sp} sp`;
+  $('hintInfo').textContent = T(`Din hånd: ${q.hp} hp / ${q.sp} sp`, `Your hand: ${q.hp} HCP / ${q.sp} support points`);
   $('hintInfo').className = hintOn ? 'hintinfo show' : 'hintinfo';
 });
 
@@ -407,9 +409,10 @@ function choose(call, btn){
   });
   if (!isCorrect) btn.classList.add('incorrect');
   feedbackEl.className = 'feedback show ' + (isCorrect ? 'ok' : 'no');
-  feedbackEl.innerHTML = `<b>${isCorrect ? 'Rigtigt — ' + fmtCall(q.correct) : 'Facit: ' + fmtCall(q.correct)}${q.aftale ? '<span class="aftale" title="Facit hviler på jeres aftale, ikke bogens regel">Aftale</span>' : ''}</b>${suits(q.why)}`;
+  feedbackEl.innerHTML = `<b>${isCorrect ? T('Rigtigt — ', 'Correct — ') + fmtCall(q.correct) : T('Facit: ', 'Answer: ') + fmtCall(q.correct)}${q.aftale
+    ? `<span class="aftale" title="${T('Facit hviler på jeres aftale, ikke bogens regel', 'The answer rests on your agreement, not on the book rule')}">${T('Aftale', 'Agreement')}</span>` : ''}</b>${suits(q.why)}`;
   nextBtn.className = 'next show';
-  nextBtn.textContent = idx === Q.length - 1 ? 'Se resultat →' : 'Næste hånd →';
+  nextBtn.textContent = idx === Q.length - 1 ? T('Se resultat →', 'See the result →') : T('Næste hånd →', 'Next hand →');
   renderProgress();
 }
 
@@ -436,19 +439,19 @@ function renderDone(){
   boardEl.style.display = 'block';
   boardEl.innerHTML = `
     <div class="done">
-      <p class="qtext">Du klarede</p>
+      <p class="qtext">${T('Du klarede', 'You got')}</p>
       <div class="score">${score} / ${Q.length}</div>
-      <p>${score === Q.length ? 'Hele svarstrukturen sidder.' : 'Gennemgå forklaringerne igen, og prøv en gang til.'}</p>
+      <p>${score === Q.length ? T('Hele svarstrukturen sidder.', 'The whole structure has stuck.') : T('Gennemgå forklaringerne igen, og prøv en gang til.', 'Go through the explanations again and have another go.')}</p>
       <div class="actions">
-        <button class="btn primary" id="restartBtn">Ny omgang</button>
-        <a class="btn" href="${backLink}">Vælg konvention</a>
+        <button class="btn primary" id="restartBtn">${T('Ny omgang', 'New round')}</button>
+        <a class="btn" href="${backLink}">${T('Vælg konvention', 'Choose a convention')}</a>
       </div>
     </div>`;
   $('restartBtn').addEventListener('click', () => location.reload());
 }
 
 function fail(msg){
-  boardEl.innerHTML = `<p class="qtext">${msg}</p><p class="small"><a href="./#traen">← Tilbage til konventionerne</a></p>`;
+  boardEl.innerHTML = `<p class="qtext">${msg}</p><p class="small"><a href="./#traen">${T('← Tilbage til konventionerne', '← Back to the conventions')}</a></p>`;
 }
 
 const id = new URLSearchParams(location.search).get('k') || 'multiforsvar';
@@ -462,7 +465,8 @@ function setupProfiles(){
     const b = document.createElement('button');
     b.textContent = PROFILE_NAMES[p];
     b.setAttribute('aria-pressed', p === PROFILE ? 'true' : 'false');
-    b.title = { grund:'Kun bogens entydige regler', klub:'Bogen + jeres faste aftaler', turnering:'Klub + Stenberg og Lebensohl' }[p];
+    b.title = T({ grund:'Kun bogens entydige regler', klub:'Bogen + jeres faste aftaler', turnering:'Klub + Stenberg og Lebensohl' },
+                { grund:'Only the book\'s unambiguous rules', klub:'The book + your fixed agreements', turnering:'Club + Stenberg and Lebensohl' })[p];
     b.addEventListener('click', () => { try { localStorage.setItem('profil', p); } catch (e) {} location.reload(); });
     el.appendChild(b);
   });
@@ -475,8 +479,8 @@ function setupChooser(k, list, systems){
   $('progress').style.display = 'none'; boardEl.style.display = 'none';
   const ch = $('chooser');
   ch.style.display = '';
-  ch.innerHTML = `<h2>${k.valg || 'Vælg metode'}</h2><div class="opts3">${vars.map(v =>
-    `<button data-id="${v.id}" class="${v.id === last ? 'last' : ''}"><b>${v.navn}</b><span>${suits(v.k.beskrivelse)}</span>${v.id === last ? '<div class="lastnote">Sidst valgt</div>' : ''}</button>`).join('')}</div>`;
+  ch.innerHTML = `<h2>${k.valg || T('Vælg metode', 'Choose a method')}</h2><div class="opts3">${vars.map(v =>
+    `<button data-id="${v.id}" class="${v.id === last ? 'last' : ''}"><b>${v.navn}</b><span>${suits(v.k.beskrivelse)}</span>${v.id === last ? `<div class="lastnote">${T('Sidst valgt', 'Last chosen')}</div>` : ''}</button>`).join('')}</div>`;
   ch.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
     const v = vars.find(x => x.id === b.dataset.id);
     try { localStorage.setItem('variant-' + k.id, v.id); } catch (e) {}
@@ -484,11 +488,12 @@ function setupChooser(k, list, systems){
     $('progress').style.display = ''; boardEl.style.display = '';
     $('title').innerHTML = suits(`${k.titel}: ${v.navn}`);
     document.title = `${k.titel}: ${v.navn} — Konventionstræner`;
-    $('desc').innerHTML = `${suits(v.k.beskrivelse)} <span class="switch">· <a href="${location.href}">Skift forsvar</a></span>`;
-    if (v.k.viden) $('source').innerHTML = `Aftalerne står i <a href="${v.k.viden}">${v.navn}-aftalen</a>.`;
+    $('desc').innerHTML = `${suits(v.k.beskrivelse)} <span class="switch">· <a href="${location.href}">${T('Skift forsvar', 'Change defence')}</a></span>`;
+    if (v.k.viden) $('source').innerHTML = T(`Aftalerne står i <a href="${v.k.viden}">${v.navn}-aftalen</a>.`,
+                                             `The agreements are in <a href="${v.k.viden}">the ${v.navn} agreement</a> (in Danish).`);
     fetch(`pools/${v.id}.json`).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-      .then(pool => { POOL = pool; startRound(); })
-      .catch(() => fail('Kunne ikke hente hånd-puljen.'));
+      .then(pool => { POOL = L(pool); startRound(); })
+      .catch(() => fail(T('Kunne ikke hente hånd-puljen.', 'Could not load the hand pool.')));
   }));
 }
 function startRound(){
@@ -499,10 +504,11 @@ function startRound(){
 }
 Promise.all(['data/konventioner.json', 'data/systemer.json'].map(u => fetch(u).then(r => r.json())))
   .then(([list, systems]) => {
+    list = L(list); systems = L(systems);
     const k = list.find(x => x.id === id);
     if (!k || k.status !== 'klar') throw new Error('ukendt');
     const ids = Array.isArray(k.system) ? k.system : [k.system];
-    const sys = ids.length > 1 ? { navn: 'Fælles' } : systems.find(x => x.id === ids[0]);
+    const sys = ids.length > 1 ? { navn: T('Fælles', 'Shared') } : systems.find(x => x.id === ids[0]);
     let current = null;
     try { current = localStorage.getItem('system'); } catch (e) {}
     backLink = `./?system=${ids.includes(current) ? current : ids[0]}#traen`;
@@ -513,13 +519,16 @@ Promise.all(['data/konventioner.json', 'data/systemer.json'].map(u => fetch(u).t
     if (k.layout === 'bord'){ LAYOUT = 'bord'; boardEl.classList.add('compact'); }
     if (k.profiler){ PROFILE = getProfile(); setupProfiles(); }
     if (k.varianter){ setupChooser(k, list, systems); return null; }
-    if (k.viden) $('source').innerHTML = `Aftalerne står i <a href="${k.viden}">${ids.length > 1 ? 'systemdokumentet' : sys && sys.id === 'kamp' ? 'referencelaget Kampen om kontrakten' : sys ? 'systemet for ' + sys.navn : 'vores system'}</a>.`;
+    if (k.viden) $('source').innerHTML = T(
+      `Aftalerne står i <a href="${k.viden}">${ids.length > 1 ? 'systemdokumentet' : sys && sys.id === 'kamp' ? 'referencelaget Kampen om kontrakten' : sys ? 'systemet for ' + sys.navn : 'vores system'}</a>.`,
+      `The agreements are in <a href="${k.viden}">${ids.length > 1 ? 'the system document' : sys && sys.id === 'kamp' ? 'the reference layer The battle for the contract' : sys ? 'the system for ' + sys.navn : 'our system'}</a> (in Danish).`);
     return fetch(`pools/${k.id}.json`).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
   })
-  .then(pool => { if (pool){ POOL = pool; startRound(); } })
+  .then(pool => { if (pool){ POOL = L(pool); startRound(); } })
   .catch(e => fail(e.message === 'ukendt'
-    ? 'Den konvention findes ikke – eller den er ikke klar endnu.'
-    : 'Kunne ikke hente hånd-puljen. Åbn siden via GitHub Pages eller en lokal webserver — ikke direkte som fil.'));
+    ? T('Den konvention findes ikke – eller den er ikke klar endnu.', 'That convention does not exist – or it is not ready yet.')
+    : T('Kunne ikke hente hånd-puljen. Åbn siden via GitHub Pages eller en lokal webserver — ikke direkte som fil.',
+        'Could not load the hand pool. Open the page via GitHub Pages or a local web server — not directly as a file.')));
 </script>
 </body>
 </html>

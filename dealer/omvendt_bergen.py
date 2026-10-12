@@ -20,7 +20,7 @@ Ikke med: præcis 10 sp med 4-korts støtte (svarer vælger selv), 12 sp (hverke
 3-korts støtte med 10+ sp (meldes 2 over 1 først). Cuebid efter 3♣ kræver 22+ (33 samlet), hvilket
 åbner på 1-trinnet ikke har.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool
+from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool, tx
 
 OTHER = {'H': 'S', 'S': 'H'}
 
@@ -40,20 +40,26 @@ def responder(M):
             return None
         if L[M] == 3:
             if hp <= 5:
-                return "Pas", f"{hp} hp – 0–5 hp er pas."
+                return "Pas", tx(f"{hp} hp – 0–5 hp er pas.", f"{hp} HCP – 0–5 HCP is a pass.")
             if 6 <= sp <= 9:
-                return f"2{sym}", f"3-korts støtte og {sp} sp: 2{sym} – konstruktivt (6–9 sp)."
+                return f"2{sym}", tx(f"3-korts støtte og {sp} sp: 2{sym} – konstruktivt (6–9 sp).",
+                                     f"Three-card support and {sp} support points: 2{sym} – constructive (6–9).")
             return None
         if L[M] >= 5 and sp <= 9:
-            return f"4{sym}", f"{L[M]}-korts støtte og {sp} sp: 4{sym} – destruktivt (0–9 sp)."
+            return f"4{sym}", tx(f"{L[M]}-korts støtte og {sp} sp: 4{sym} – destruktivt (0–9 sp).",
+                                 f"{L[M]}-card support and {sp} support points: 4{sym} – preemptive (0–9).")
         if sp <= 6:
-            return f"3{sym}", f"4-korts støtte og {sp} sp: 3{sym} – destruktivt (0–6 sp)."
+            return f"3{sym}", tx(f"4-korts støtte og {sp} sp: 3{sym} – destruktivt (0–6 sp).",
+                                 f"Four-card support and {sp} support points: 3{sym} – preemptive (0–6).")
         if sp <= 9:
-            return "3♦", f"4+ korts støtte og {sp} sp: 3♦ – Omvendt Bergen, 7–10 sp."
+            return "3♦", tx(f"4+ korts støtte og {sp} sp: 3♦ – Omvendt Bergen, 7–10 sp.",
+                            f"Four-card support or better and {sp} support points: 3♦ – Reverse Bergen, 7–10.")
         if sp == 11:
-            return "3♣", f"4+ korts støtte og {sp} sp: 3♣ – Omvendt Bergen, 10–11 sp."
+            return "3♣", tx(f"4+ korts støtte og {sp} sp: 3♣ – Omvendt Bergen, 10–11 sp.",
+                            f"Four-card support or better and {sp} support points: 3♣ – Reverse Bergen, 10–11.")
         if sp >= 13:
-            return "2NT", f"4+ korts støtte og {sp} sp: 2NT – Bekkasin (13+)."
+            return "2NT", tx(f"4+ korts støtte og {sp} sp: 2NT – Bekkasin (13+).",
+                             f"Four-card support or better and {sp} support points: 2NT – Bekkasin (13+).")
         return None
     return classify
 
@@ -65,9 +71,9 @@ def answer_3kl(M):
             return None
         sp = support_points(hand, hp, M)
         if sp == 10:
-            return f"3{sym}", f"{sp} sp er minimum for 3♣: 3{sym}."
+            return f"3{sym}", tx(f"{sp} sp er minimum for 3♣: 3{sym}.", f"{sp} support points is a minimum for 3♣: 3{sym}.")
         if sp == 11:
-            return f"4{sym}", f"{sp} sp er maksimum for 3♣: 4{sym}."
+            return f"4{sym}", tx(f"{sp} sp er maksimum for 3♣: 4{sym}.", f"{sp} support points is a maximum for 3♣: 4{sym}.")
         return None
     return classify
 
@@ -77,20 +83,26 @@ def answer_3ru(hand, hp):
         return None
     sp = support_points(hand, hp, 'S')
     if sp in (7, 8):
-        return "3♠", f"{sp} sp er minimum for 3♦ (7–8): 3♠."
+        return "3♠", tx(f"{sp} sp er minimum for 3♦ (7–8): 3♠.", f"{sp} support points is a minimum for 3♦ (7–8): 3♠.")
     if sp in (9, 10):
-        return "4♠", f"{sp} sp er maksimum for 3♦ (9–10): 4♠."
+        return "4♠", tx(f"{sp} sp er maksimum for 3♦ (9–10): 4♠.", f"{sp} support points is a maximum for 3♦ (9–10): 4♠.")
     return None
 
+C_SVAR = tx("4+ korts støtte og 7–10 sp", "Four-card support or better and 7–10 support points")
+C_SPM = tx("Minimum eller maksimum", "Minimum or maximum")
 BONUS = {
-    "svar": {"q": "Hvad viser 3♦ over makkers 1♥/1♠?",
-             "correct": "4+ korts støtte og 7–10 sp",
-             "options": ["4+ korts støtte og 7–10 sp", "Naturlig ruderfarve", "4+ korts støtte og 10–11 sp"],
-             "why": "Omvendt Bergen: 3♦ = 7–10 sp og 3♣ = 10–11 sp, begge med 4+ korts støtte. Med præcis 10 sp vælger svarer selv."},
-    "spm": {"q": "Hvad spørger åbner om?",
-            "correct": "Minimum eller maksimum",
-            "options": ["Minimum eller maksimum", "Kortfarve", "Antal esser"],
-            "why": "Åbners næste trin spørger, om svarer har minimum eller maksimum for sin støttemelding: 3M = minimum, 4M = maksimum."},
+    "svar": {"q": tx("Hvad viser 3♦ over makkers 1♥/1♠?", "What does 3♦ over partner's 1♥/1♠ show?"),
+             "correct": C_SVAR,
+             "options": [C_SVAR, tx("Naturlig ruderfarve", "A natural diamond suit"),
+                         tx("4+ korts støtte og 10–11 sp", "Four-card support or better and 10–11 support points")],
+             "why": tx("Omvendt Bergen: 3♦ = 7–10 sp og 3♣ = 10–11 sp, begge med 4+ korts støtte. Med præcis 10 sp vælger svarer selv.",
+                       "Reverse Bergen: 3♦ = 7–10 and 3♣ = 10–11 support points, both with four-card support or better. "
+                       "With exactly 10, responder chooses.")},
+    "spm": {"q": tx("Hvad spørger åbner om?", "What is opener asking?"),
+            "correct": C_SPM,
+            "options": [C_SPM, tx("Kortfarve", "A short suit"), tx("Antal esser", "The number of aces")],
+            "why": tx("Åbners næste trin spørger, om svarer har minimum eller maksimum for sin støttemelding: 3M = minimum, 4M = maksimum.",
+                      "Opener's next step asks whether responder has a minimum or a maximum for the raise: 3M = minimum, 4M = maximum.")},
 }
 
 PAS = ["Modstander", "Pas"]
@@ -138,6 +150,16 @@ def sp_detail(hand, hp, M):
         parts.append(f"{L[M] - 5} ekstra trumf")
     return " + ".join(parts)
 
+def sp_detail_en(hand, hp, M):
+    L = lengths_of(hand)
+    parts = [f"{hp} HCP"]
+    for s in SUITS:
+        if s != M and L[s] <= 2:
+            parts.append(f"{['void', 'singleton', 'doubleton'][L[s]]} {SUIT_SYM[s]} = {[5, 3, 1][L[s]]}")
+    if L[M] > 5:
+        parts.append(f"{L[M] - 5} extra trump{'s' if L[M] - 5 > 1 else ''}")
+    return " + ".join(parts)
+
 def opener_first(M, bid):
     sym = SUIT_SYM[M]
     lo, hi = SUPPORT[bid]
@@ -148,16 +170,22 @@ def opener_first(M, bid):
             return None
         sp = opener_sp(hand, hp, M)
         pts = f"{sp} sp ({sp_detail(hand, hp, M)})" if sp != hp else f"{sp} sp"
+        pe = f"{sp} support points ({sp_detail_en(hand, hp, M)})" if sp != hp else f"{sp} support points"
         if sp + hi < GAME:
-            return f"3{sym}", f"{pts} + højst {hi} hos makker er under {GAME}: afmeld i 3{sym}."
+            return f"3{sym}", tx(f"{pts} + højst {hi} hos makker er under {GAME}: afmeld i 3{sym}.",
+                                 f"{pe} + at most {hi} from partner is below {GAME}: sign off in 3{sym}.")
         if sp + lo >= GAME:
-            return f"4{sym}", f"{pts} + mindst {lo} hos makker giver {GAME}+: udgang, 4{sym}."
+            return f"4{sym}", tx(f"{pts} + mindst {lo} hos makker giver {GAME}+: udgang, 4{sym}.",
+                                 f"{pe} + at least {lo} from partner gives {GAME}+: game, 4{sym}.")
         if ask:
-            return ask, f"{pts}: udgang afhænger af, om makker har minimum eller maksimum – {ask} spørger."
+            return ask, tx(f"{pts}: udgang afhænger af, om makker har minimum eller maksimum – {ask} spørger.",
+                           f"{pe}: game depends on whether partner has a minimum or a maximum – {ask} asks.")
         mid = (lo + hi + 1) // 2
         if sp + mid >= GAME:
-            return f"4{sym}", f"{pts}, og der er ikke plads til at spørge: {sp} + {mid} (midt i makkers {lo}–{hi}) – meld 4{sym}."
-        return f"3{sym}", f"{pts}, og der er ikke plads til at spørge: {sp} + {mid} (midt i makkers {lo}–{hi}) – afmeld i 3{sym}."
+            return f"4{sym}", tx(f"{pts}, og der er ikke plads til at spørge: {sp} + {mid} (midt i makkers {lo}–{hi}) – meld 4{sym}.",
+                                 f"{pe}, and there is no room to ask: {sp} + {mid} (the middle of partner's {lo}–{hi}) – bid 4{sym}.")
+        return f"3{sym}", tx(f"{pts}, og der er ikke plads til at spørge: {sp} + {mid} (midt i makkers {lo}–{hi}) – afmeld i 3{sym}.",
+                             f"{pe}, and there is no room to ask: {sp} + {mid} (the middle of partner's {lo}–{hi}) – sign off in 3{sym}.")
     return classify
 
 def opener_after_min(M, bid):
@@ -169,14 +197,20 @@ def opener_after_min(M, bid):
             return None      # åbner har kun spurgt med de point, der giver spørgsmålet
         sp = opener_sp(hand, hp, M)
         if sp + hi >= GAME:
-            return f"4{sym}", f"Makker har minimum ({lo}–{hi}): {sp} sp + {hi} = {sp + hi} – udgang, 4{sym}."
-        return "Pas", f"Makker har minimum ({lo}–{hi}): {sp} sp + højst {hi} = {sp + hi} – under {GAME}, pas."
+            return f"4{sym}", tx(f"Makker har minimum ({lo}–{hi}): {sp} sp + {hi} = {sp + hi} – udgang, 4{sym}.",
+                                 f"Partner has a minimum ({lo}–{hi}): {sp} support points + {hi} = {sp + hi} – game, 4{sym}.")
+        return "Pas", tx(f"Makker har minimum ({lo}–{hi}): {sp} sp + højst {hi} = {sp + hi} – under {GAME}, pas.",
+                         f"Partner has a minimum ({lo}–{hi}): {sp} support points + at most {hi} = {sp + hi} – below {GAME}, pass.")
     return classify
 
-BONUS["aab"] = {"q": "Må åbner tælle støttepoint efter makkers 3♣/3♦?",
-                "correct": "Ja – meldingerne viser støtte til majoren",
-                "options": ["Ja – meldingerne viser støtte til majoren", "Nej – de er kunstige, så kun honnørpoint", "Kun hvis makker har vist maksimum"],
-                "why": "3♣ og 3♦ er kunstige, men de viser 4+ korts støtte. Åbner tæller derfor støttepoint i sin anden melding. Udgang ved 26 (25 med gode mellemkort)."}
+C_AAB = tx("Ja – meldingerne viser støtte til majoren", "Yes – the bids show support for the major")
+BONUS["aab"] = {"q": tx("Må åbner tælle støttepoint efter makkers 3♣/3♦?", "May opener count support points after partner's 3♣/3♦?"),
+                "correct": C_AAB,
+                "options": [C_AAB, tx("Nej – de er kunstige, så kun honnørpoint", "No – they are artificial, so only high-card points"),
+                            tx("Kun hvis makker har vist maksimum", "Only if partner has shown a maximum")],
+                "why": tx("3♣ og 3♦ er kunstige, men de viser 4+ korts støtte. Åbner tæller derfor støttepoint i sin anden melding. Udgang ved 26 (25 med gode mellemkort).",
+                          "3♣ and 3♦ are artificial, but they show four-card support or better. Opener therefore counts support points "
+                          "in the second bid. Game at 26 (25 with good intermediates).")}
 
 for M, key in (('H', 'hj'), ('S', 'sp')):
     sym, om = SUIT_SYM[M], OTHER[M]

@@ -10,30 +10,38 @@ Svarerens og åbnerens første melding trænes som i Transfer (samme regler som 
 Antagelser: invit = 8–9 hp over 15–17; svarerhænder med en 4-farve ved siden af (ny farve =
 udgangskrav) er ikke med i 2. melding.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, build_pool, tx
 from . import transfer
 
 PAS = ["Modstander", "Pas"]
-BONUS_2 = {"q": "Hvad viser 1NT – 2♦ – 2♥ – 2NT?",
-           "correct": "5 hjerter og invit (8–9 hp)",
-           "options": ["5 hjerter og invit (8–9 hp)", "6 hjerter og invit", "Udgangskrav uden hjerter"],
-           "why": "Med 5-farve: 2NT invit, 3NT udgang (åbner vælger). Med 6-farve: 3M invit, 4M udgang. Svag hånd passer."}
+C2 = tx("5 hjerter og invit (8–9 hp)", "5 hearts and invitational (8–9 HCP)")
+BONUS_2 = {"q": tx("Hvad viser 1NT – 2♦ – 2♥ – 2NT?", "What does 1NT – 2♦ – 2♥ – 2NT show?"),
+           "correct": C2,
+           "options": [C2, tx("6 hjerter og invit", "6 hearts and invitational"),
+                       tx("Udgangskrav uden hjerter", "Game forcing without hearts")],
+           "why": tx("Med 5-farve: 2NT invit, 3NT udgang (åbner vælger). Med 6-farve: 3M invit, 4M udgang. Svag hånd passer.",
+                     "With a five-card suit: 2NT invites, 3NT is game (opener chooses). With a six-card suit: 3M invites, "
+                     "4M is game. A weak hand passes.")}
 
 def second(M):
     sym = SUIT_SYM[M]
+    da, en = SUIT_NAME[M], SUIT_NAME_EN[M]
     def classify(hand, hp):
         L = lengths_of(hand)
         if L[M] not in (5, 6) or any(L[s] >= 4 for s in SUITS if s != M) or hp > 15:
             return None
         if hp <= 7:
-            return "Pas", f"{L[M]} {SUIT_NAME[M]} og {hp} hp: pas – overføringen har fundet kontrakten."
+            return "Pas", tx(f"{L[M]} {da} og {hp} hp: pas – overføringen har fundet kontrakten.",
+                             f"{L[M]} {en} and {hp} HCP: pass – the transfer has found the contract.")
         if L[M] == 5:
             if hp <= 9:
-                return "2NT", f"5 {SUIT_NAME[M]} og {hp} hp: 2NT – invit."
-            return "3NT", f"5 {SUIT_NAME[M]} og {hp} hp: 3NT – åbner vælger mellem 3NT og 4{sym}."
+                return "2NT", tx(f"5 {da} og {hp} hp: 2NT – invit.", f"5 {en} and {hp} HCP: 2NT – invitational.")
+            return "3NT", tx(f"5 {da} og {hp} hp: 3NT – åbner vælger mellem 3NT og 4{sym}.",
+                             f"5 {en} and {hp} HCP: 3NT – opener chooses between 3NT and 4{sym}.")
         if hp <= 9:
-            return f"3{sym}", f"6 {SUIT_NAME[M]} og {hp} hp: 3{sym} – invit med 6-farve."
-        return f"4{sym}", f"6 {SUIT_NAME[M]} og {hp} hp: 4{sym}."
+            return f"3{sym}", tx(f"6 {da} og {hp} hp: 3{sym} – invit med 6-farve.",
+                                 f"6 {en} and {hp} HCP: 3{sym} – invitational with a six-card suit.")
+        return f"4{sym}", tx(f"6 {da} og {hp} hp: 4{sym}.", f"6 {en} and {hp} HCP: 4{sym}.")
     return classify
 
 SITUATIONS, CLASSIFIERS, SAMPLERS, PER_CALL = dict(transfer.SITUATIONS), dict(transfer.CLASSIFIERS), dict(transfer.SAMPLERS), dict(transfer.PER_CALL)

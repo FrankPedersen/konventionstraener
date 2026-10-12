@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@800&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&text=%E2%99%A0%E2%99%A5%E2%99%A6%E2%99%A3&display=swap">
 <link rel="stylesheet" href="assets/site.css">
+<script src="assets/lang.js"></script>
 <style>
   /* Markeringstræneren – samme opbygning som meldetræneren (traener.html), men med kort i stedet for meldeboks */
   .trainer{ max-width:64rem; padding-bottom:var(--sg-space-3xl); }
@@ -124,13 +125,13 @@
 <body>
 <header class="site-head"><div class="in">
   <a class="brand" href="./">Konventionstræner</a>
-  <nav><a href="./#traen" aria-current="page">Træn</a><a href="viden/">Viden</a></nav>
+  <nav><a href="./#traen" aria-current="page" data-en="Train">Træn</a><a href="viden/" data-en="Reference">Viden</a></nav>
 </div></header>
 
 <div class="wrap trainer">
   <section class="hero">
     <p class="eyebrow" id="group"></p>
-    <h1 id="title">Markeringer</h1>
+    <h1 id="title" data-en="Signals">Markeringer</h1>
     <p class="deck" id="desc"></p>
   </section>
 
@@ -142,12 +143,12 @@
       <p class="ctx" id="ctx"></p>
       <div id="hist"></div>
       <figure class="bt" id="table"></figure>
-      <button class="next" id="nextBtn">Næste hånd →</button>
+      <button class="next" id="nextBtn" data-en="Next hand →">Næste hånd →</button>
     </div>
     <div class="answer">
       <div class="qrow">
         <p class="qtext" id="q"></p>
-        <button class="hint-btn" id="hintBtn" title="Vis reglen" aria-pressed="false">💡</button>
+        <button class="hint-btn" id="hintBtn" title="Vis reglen" data-en-title="Show the rule" aria-pressed="false">💡</button>
       </div>
       <div class="hintinfo" id="hintInfo"></div>
       <div id="opts"></div>
@@ -160,7 +161,7 @@
 
 <script>
 const SYM = { S: '♠', H: '♥', D: '♦', C: '♣' };
-const RN = { 14: 'E', 13: 'K', 12: 'D', 11: 'B' };
+const RN = T({ 14: 'E', 13: 'K', 12: 'D', 11: 'B' }, { 14: 'A', 13: 'K', 12: 'Q', 11: 'J' });
 const ROUND_SIZE = 8;
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -168,17 +169,18 @@ const suitSpan = s => `<span class="su ${s === 'H' || s === 'D' ? 'su-h' : 'su-s
 const cardHtml = c => suitSpan(c[0]) + (RN[+c.slice(1)] || c.slice(1));
 // Fritekst fra puljen: escapes og farver kulørsymbolerne
 const suits = t => esc(t).replace(/[♠♥♦♣]/g, c => `<span class="su ${c === '♥' || c === '♦' ? 'su-h' : 'su-s'}">${c}</span>`);
-// En hånd som fire linjer ♠ ♥ ♦ ♣ (BridgeHand): honnører E K D B, renonce som —. Spillede kort står gråtonet og overstreget.
+// En hånd som fire linjer ♠ ♥ ♦ ♣ (BridgeHand): honnører E K D B (på engelsk A K Q J), renonce som —. Spillede kort står gråtonet og overstreget.
 const handHtml = (h, played) => `<div class="bt-hand">${'SHDC'.split('').map(s =>
   `<div class="bt-line">${suitSpan(s)}<span class="bt-cards${h[s].length ? '' : ' is-void'}">${h[s].length
     ? h[s].map(r => `<span class="c${played.has(s + r) ? ' played' : ''}">${RN[r] || r}</span>`).join('') : '—'}</span></div>`).join('')}</div>`;
 const SEAT = { Nord: 'N', 'Øst': 'E', Syd: 'S', Vest: 'W' };
-const LETTER = { N: 'N', E: 'Ø', S: 'S', W: 'V' };
+const LETTER = T({ N: 'N', E: 'Ø', S: 'S', W: 'V' }, { N: 'N', E: 'E', S: 'S', W: 'W' });
 
 // Bridgebordet (BridgeTable): bordet og din hånd vises, makker og spilfører er skjult; ved hver plads står kortet i stikket
 function tableHtml(q){
   const partner = q.du === 'Øst' ? 'Vest' : 'Øst';
-  const role = { Nord: 'bordet', Syd: 'spilfører', [q.du]: 'dig', [partner]: 'makker' };
+  const role = T({ Nord: 'bordet', Syd: 'spilfører', [q.du]: 'dig', [partner]: 'makker' },
+                 { Nord: 'dummy', Syd: 'declarer', [q.du]: 'you', [partner]: 'partner' });
   const plays = {};
   q.stik.forEach(([p, c], i) => { plays[p] = { c, i: i + 1 }; });
   const played = new Set(q.spillet || []);
@@ -188,14 +190,14 @@ function tableHtml(q){
     let play = '';
     if (pl) play = `<span class="bt-play"><span class="ord">${pl.i}.</span><span class="bc${q.mode === 'laes' && p === partner ? ' part' : ''}">${cardHtml(pl.c)}</span></span>`;
     else if (q.mode === 'giv' && p === q.du) play = `<span class="bt-play"><span class="ord">${q.stik.length + 1}.</span><span class="bc ask">?</span></span>`;
-    return `<div class="bt-seat bt-seat-${SEAT[p]}${p === q.du ? ' is-highlight' : ''}"><span class="bt-name">${p} · ${role[p]}</span>${hand ? handHtml(hand, played) : ''}${play}</div>`;
+    return `<div class="bt-seat bt-seat-${SEAT[p]}${p === q.du ? ' is-highlight' : ''}"><span class="bt-name">${W(p)} · ${role[p]}</span>${hand ? handHtml(hand, played) : ''}${play}</div>`;
   };
   const nr = (q.historik || []).length + 1;
   const letter = k => `<span class="bt-letter bt-letter-${k}">${LETTER[k]}</span>`;
   return `<div class="bt-grid">`
-    + `<div class="bt-info">Spilfører: Syd\nBordet: Nord</div>${seat('Nord')}<div></div>`
-    + `${seat('Vest')}<div class="bt-compass" role="img" aria-label="Bridgebord: Nord, Øst, Syd, Vest">${letter('N')}${letter('W')}${letter('E')}${letter('S')}</div>${seat('Øst')}`
-    + `<div></div>${seat('Syd')}<div class="bt-notes">${suits('Kontrakt: ' + q.kontrakt + ' af Syd')}\n${nr}. stik</div>`
+    + `<div class="bt-info">${T('Spilfører: Syd\nBordet: Nord', 'Declarer: South\nDummy: North')}</div>${seat('Nord')}<div></div>`
+    + `${seat('Vest')}<div class="bt-compass" role="img" aria-label="${T('Bridgebord: Nord, Øst, Syd, Vest', 'Bridge table: North, East, South, West')}">${letter('N')}${letter('W')}${letter('E')}${letter('S')}</div>${seat('Øst')}`
+    + `<div></div>${seat('Syd')}<div class="bt-notes">${suits(T('Kontrakt: ' + q.kontrakt + ' af Syd', 'Contract: ' + q.kontrakt + ' by South'))}\n${T(nr + '. stik', 'Trick ' + nr)}</div>`
     + `</div>`;
 }
 
@@ -204,10 +206,10 @@ function historyHtml(q){
   const h = q.historik || [];
   if (!h.length) return '';
   const partner = q.du === 'Øst' ? 'Vest' : 'Øst';
-  const who = p => p === q.du ? 'dig' : p === partner ? 'makker' : p === 'Nord' ? 'bordet' : 'spilfører';
-  return `<p class="lbl">Tidligere stik</p><ol class="hist">${h.map((t, i) =>
-    `<li><span class="n">${i + 1}. stik</span>${t.kort.map(([p, c]) => `<span class="hc"><span class="hp">${p}</span> ${cardHtml(c)}</span>`).join('')}`
-    + `<span class="win">– ${t.vinder} (${who(t.vinder)}) vinder</span></li>`).join('')}</ol>`;
+  const who = p => p === q.du ? T('dig', 'you') : p === partner ? T('makker', 'partner') : p === 'Nord' ? T('bordet', 'dummy') : T('spilfører', 'declarer');
+  return `<p class="lbl">${T('Tidligere stik', 'Previous tricks')}</p><ol class="hist">${h.map((t, i) =>
+    `<li><span class="n">${T(`${i + 1}. stik`, `Trick ${i + 1}`)}</span>${t.kort.map(([p, c]) => `<span class="hc"><span class="hp">${W(p)}</span> ${cardHtml(c)}</span>`).join('')}`
+    + `<span class="win">– ${W(t.vinder)} (${who(t.vinder)}) ${T('vinder', 'wins')}</span></li>`).join('')}</ol>`;
 }
 function shuffle(a){ a = a.slice(); for (let i = a.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 
@@ -221,8 +223,8 @@ function render(){
   answered = false;
   const q = Q[idx];
   renderProgress();
-  $('role').textContent = `Du er ${q.du}`;
-  $('mode').textContent = q.mode === 'giv' ? 'Giv markering' : 'Læs markering';
+  $('role').textContent = T(`Du er ${q.du}`, `You are ${W(q.du)}`);
+  $('mode').textContent = q.mode === 'giv' ? T('Giv markering', 'Give the signal') : T('Læs markering', 'Read the signal');
   $('sitname').textContent = (SITS[q.situation] || {}).titel || '';
   $('ctx').innerHTML = suits(q.tekst);
   $('hist').innerHTML = historyHtml(q);
@@ -261,11 +263,11 @@ function choose(btn){
     b.disabled = true;
   });
   if (!ok) btn.classList.add('incorrect');
-  const facit = q.mode === 'giv' ? q.rigtige.map(cardHtml).join(' eller ') : suits(q.rigtige[0]);
+  const facit = q.mode === 'giv' ? q.rigtige.map(cardHtml).join(T(' eller ', ' or ')) : suits(q.rigtige[0]);
   $('feedback').className = 'feedback show ' + (ok ? 'ok' : 'no');
-  $('feedback').innerHTML = `<b>${ok ? 'Rigtigt — ' : 'Facit: '}${facit}</b>${suits(q.hvorfor)}`;
+  $('feedback').innerHTML = `<b>${ok ? T('Rigtigt — ', 'Correct — ') : T('Facit: ', 'Answer: ')}${facit}</b>${suits(q.hvorfor)}`;
   $('nextBtn').className = 'next show';
-  $('nextBtn').textContent = idx === Q.length - 1 ? 'Se resultat →' : 'Næste hånd →';
+  $('nextBtn').textContent = idx === Q.length - 1 ? T('Se resultat →', 'See the result →') : T('Næste hånd →', 'Next hand →');
   renderProgress();
 }
 
@@ -285,24 +287,25 @@ function renderDone(){
   $('board').style.display = 'block';
   $('board').innerHTML = `
     <div class="done">
-      <p class="qtext">Du klarede</p>
+      <p class="qtext">${T('Du klarede', 'You got')}</p>
       <div class="score">${score} / ${Q.length}</div>
-      <p>${score === Q.length ? 'Markeringerne sidder.' : 'Gennemgå forklaringerne igen, og prøv en gang til.'}</p>
+      <p>${score === Q.length ? T('Markeringerne sidder.', 'The signals have stuck.') : T('Gennemgå forklaringerne igen, og prøv en gang til.', 'Go through the explanations again and have another go.')}</p>
       <div class="actions">
-        <button class="btn primary" id="restartBtn">Ny omgang</button>
-        <a class="btn" href="${backLink}">Vælg konvention</a>
+        <button class="btn primary" id="restartBtn">${T('Ny omgang', 'New round')}</button>
+        <a class="btn" href="${backLink}">${T('Vælg konvention', 'Choose a convention')}</a>
       </div>
     </div>`;
   $('restartBtn').addEventListener('click', () => location.reload());
 }
 
 function fail(msg){
-  $('board').innerHTML = `<p class="qtext">${msg}</p><p class="small"><a href="./#traen">← Tilbage til konventionerne</a></p>`;
+  $('board').innerHTML = `<p class="qtext">${msg}</p><p class="small"><a href="./#traen">${T('← Tilbage til konventionerne', '← Back to the conventions')}</a></p>`;
 }
 
 const id = new URLSearchParams(location.search).get('k') || 'markeringer';
 Promise.all(['data/konventioner.json', 'data/systemer.json'].map(u => fetch(u).then(r => r.json())))
   .then(([list, systems]) => {
+    list = L(list); systems = L(systems);
     const k = list.find(x => x.id === id);
     if (!k || k.status !== 'klar' || k.side !== 'markering.html') throw new Error('ukendt');
     const ids = Array.isArray(k.system) ? k.system : [k.system];
@@ -315,18 +318,21 @@ Promise.all(['data/konventioner.json', 'data/systemer.json'].map(u => fetch(u).t
     $('title').innerHTML = suits(k.titel);
     $('desc').innerHTML = suits(k.beskrivelse);
     $('source').innerHTML = k.viden
-      ? `Aftalerne står i <a href="${esc(k.viden)}">systemet for ${esc(names[0])}</a>, afsnit 9.`
-      : 'Lavinthal er et forslag og står endnu ikke i systemkortet. Reglerne følger <a href="viden/2-over-1-makker2.html#afsnit-20">beskrivelsen hos Makker 2 &amp; mig</a>: højt beder om den højeste af de to farver, lavt om den laveste.';
+      ? T(`Aftalerne står i <a href="${esc(k.viden)}">systemet for ${esc(names[0])}</a>, afsnit 9.`,
+          `The agreements are in <a href="${esc(k.viden)}">the system for ${esc(names[0])}</a>, section 9 (in Danish).`)
+      : T('Lavinthal er et forslag og står endnu ikke i systemkortet. Reglerne følger <a href="viden/2-over-1-makker2.html#afsnit-20">beskrivelsen hos Makker 2 &amp; mig</a>: højt beder om den højeste af de to farver, lavt om den laveste.',
+          'Lavinthal is a proposal and is not yet in the system card. The rules follow <a href="viden/2-over-1-makker2.html#afsnit-20">the description for Partner 2 &amp; me</a> (in Danish): high asks for the higher of the two suits, low for the lower.');
     return fetch(`pools/${k.id}.json`).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
   })
   .then(pool => {
-    POOL = pool; SITS = pool.situations;
-    Q = shuffle(pool.hands).slice(0, ROUND_SIZE);
+    POOL = L(pool); SITS = POOL.situations;
+    Q = shuffle(POOL.hands).slice(0, ROUND_SIZE);
     render();
   })
   .catch(e => fail(e.message === 'ukendt'
-    ? 'Den træner findes ikke – eller den er ikke klar endnu.'
-    : 'Kunne ikke hente hånd-puljen. Åbn siden via GitHub Pages eller en lokal webserver — ikke direkte som fil.'));
+    ? T('Den træner findes ikke – eller den er ikke klar endnu.', 'That trainer does not exist – or it is not ready yet.')
+    : T('Kunne ikke hente hånd-puljen. Åbn siden via GitHub Pages eller en lokal webserver — ikke direkte som fil.',
+        'Could not load the hand pool. Open the page via GitHub Pages or a local web server — not directly as a file.')));
 </script>
 </body>
 </html>

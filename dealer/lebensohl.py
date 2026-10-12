@@ -11,7 +11,7 @@ Antagelser: 3NT og cuebid kræver 13+ hp; cuebid bruges med en 4-farve i umeldt 
 hold = es, K-x, D-x-x eller B-x-x-x; farven er svarers længste (4+), og hænder med to lige lange
 kandidater er ikke med.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, build_pool, tx
 
 ORDER = ['C', 'D', 'H', 'S']
 
@@ -29,9 +29,11 @@ def advance(X):
             majors = [s for s in ('H', 'S') if s != X and L[s] >= 4]
             st = stopper(hand, X)
             if majors and not st:
-                return f"3{xs}", f"{hp} hp og 4 {SUIT_NAME[majors[0]]}: cuebid 3{xs} er udgangskrav og beder om 4-farve i major."
+                return f"3{xs}", tx(f"{hp} hp og 4 {SUIT_NAME[majors[0]]}: cuebid 3{xs} er udgangskrav og beder om 4-farve i major.",
+                                    f"{hp} HCP and 4 {SUIT_NAME_EN[majors[0]]}: the cue-bid 3{xs} is game forcing and asks for a four-card major.")
             if st and not majors:
-                return "3NT", f"{hp} hp og hold i {SUIT_NAME[X]}: 3NT – naturligt."
+                return "3NT", tx(f"{hp} hp og hold i {SUIT_NAME[X]}: 3NT – naturligt.",
+                                 f"{hp} HCP and a stopper in {SUIT_NAME_EN[X]}: 3NT – natural.")
             return None
         cand = [s for s in ORDER if s != X and L[s] >= 4]
         if not cand:
@@ -43,17 +45,24 @@ def advance(X):
         s = longest[0]
         ss = SUIT_SYM[s]
         if hp >= 9:
-            return f"3{ss}", f"{hp} hp og {L[s]} {SUIT_NAME[s]}: 3{ss} direkte er invit (9–12)."
+            return f"3{ss}", tx(f"{hp} hp og {L[s]} {SUIT_NAME[s]}: 3{ss} direkte er invit (9–12).",
+                                f"{hp} HCP and {L[s]} {SUIT_NAME_EN[s]}: a direct 3{ss} is invitational (9–12).")
         if ORDER.index(s) > ORDER.index(X):
-            return f"2{ss}", f"Svag hånd ({hp} hp) med {L[s]} {SUIT_NAME[s]} – højere end deres farve: 2{ss}, naturligt og svagt."
-        return "2NT", (f"Svag hånd ({hp} hp) med {L[s]} {SUIT_NAME[s]} – lavere end deres farve: 2NT relæ. "
-                       + ("Makker melder 3♣, og du passer." if s == 'C' else f"Makker melder 3♣, og du retter til 3{ss}."))
+            return f"2{ss}", tx(f"Svag hånd ({hp} hp) med {L[s]} {SUIT_NAME[s]} – højere end deres farve: 2{ss}, naturligt og svagt.",
+                                f"Weak hand ({hp} HCP) with {L[s]} {SUIT_NAME_EN[s]} – higher than their suit: 2{ss}, natural and weak.")
+        return "2NT", tx(f"Svag hånd ({hp} hp) med {L[s]} {SUIT_NAME[s]} – lavere end deres farve: 2NT relæ. "
+                         + ("Makker melder 3♣, og du passer." if s == 'C' else f"Makker melder 3♣, og du retter til 3{ss}."),
+                         f"Weak hand ({hp} HCP) with {L[s]} {SUIT_NAME_EN[s]} – lower than their suit: 2NT relay. "
+                         + ("Partner bids 3♣, and you pass." if s == 'C' else f"Partner bids 3♣, and you correct to 3{ss}."))
     return classify
 
-BONUS = {"q": "Hvad betyder 2NT, når makker har doblet deres svage 2?",
-         "correct": "Relæ – svag hånd med en farve lavere end deres",
-         "options": ["Relæ – svag hånd med en farve lavere end deres", "Naturligt, 11–12 hp med hold", "Begge minorer"],
-         "why": "2NT er relæ: dobler melder 3♣, og svarer passer eller retter til sin farve. Samme farve meldt direkte på 3-trinnet viser invit."}
+C = tx("Relæ – svag hånd med en farve lavere end deres", "Relay – a weak hand with a suit lower than theirs")
+BONUS = {"q": tx("Hvad betyder 2NT, når makker har doblet deres svage 2?", "What does 2NT mean when partner has doubled their weak two?"),
+         "correct": C,
+         "options": [C, tx("Naturligt, 11–12 hp med hold", "Natural, 11–12 HCP with a stopper"), tx("Begge minorer", "Both minors")],
+         "why": tx("2NT er relæ: dobler melder 3♣, og svarer passer eller retter til sin farve. Samme farve meldt direkte på 3-trinnet viser invit.",
+                   "2NT is a relay: the doubler bids 3♣, and the advancer passes or corrects to the suit. "
+                   "The same suit bid directly at the three level is invitational.")}
 
 PAS = ["Modstander", "Pas"]
 SITUATIONS, CLASSIFIERS, SAMPLERS, PER_CALL = {}, {}, {}, {}

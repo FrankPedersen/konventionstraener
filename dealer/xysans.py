@@ -10,7 +10,7 @@ Forløbet 1♣/1♦ – 1♠ – 1NT (12–14 jævn). Puljen dækker:
 12 hp er ikke med: dokumentet overlapper dér (relæ 10–12, udgangskrav 12+). Direkte 2NT og 3NT er heller
 ikke med, fordi de konkurrerer med relæet på samme hænder.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, build_pool
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, build_pool, tx
 
 WEAK_HP = (6, 9)
 INVITE_HP = (10, 11)
@@ -36,10 +36,12 @@ def opener_answer(minor):
             return None      # 4 spar havde støttet; 5 hjerter havde åbnet 1♥
         if L['H'] == 4:
             extra = " – du har også tre spar, men hjerterne kommer først" if L['S'] == 3 else ""
-            return "2♥", f"Fire hjerter{extra}: 2♥."
+            extra_en = " – you also have three spades, but the hearts come first" if L['S'] == 3 else ""
+            return "2♥", tx(f"Fire hjerter{extra}: 2♥.", f"Four hearts{extra_en}: 2♥.")
         if L['S'] == 3:
-            return "2♠", "Tre spar og ikke fire hjerter: 2♠."
-        return "2NT", f"Hverken tre spar ({L['S']}) eller fire hjerter ({L['H']}): 2NT."
+            return "2♠", tx("Tre spar og ikke fire hjerter: 2♠.", "Three spades and not four hearts: 2♠.")
+        return "2NT", tx(f"Hverken tre spar ({L['S']}) eller fire hjerter ({L['H']}): 2NT.",
+                         f"Neither three spades ({L['S']}) nor four hearts ({L['H']}): 2NT.")
     return classify
 
 def responder_first(hand, hp):
@@ -48,16 +50,21 @@ def responder_first(hand, hp):
         return None          # med 4 hjerter havde svarer meldt 1♥ først
     if WEAK_HP[0] <= hp <= WEAK_HP[1]:
         if L['S'] >= 6 and max(L['H'], L['D'], L['C']) <= 3:
-            return "2♠", f"Svag hånd med {L['S']} spar: 2♠ – stop, du afslutter i din lange farve."
+            return "2♠", tx(f"Svag hånd med {L['S']} spar: 2♠ – stop, du afslutter i din lange farve.",
+                            f"Weak hand with {L['S']} spades: 2♠ – to play, you sign off in your long suit.")
         if L['S'] == 4 and L['C'] >= 6:
-            return "3♣", f"Svag hånd med {L['C']} klør: 3♣ – stop, du afslutter i din lange farve."
+            return "3♣", tx(f"Svag hånd med {L['C']} klør: 3♣ – stop, du afslutter i din lange farve.",
+                            f"Weak hand with {L['C']} clubs: 3♣ – to play, you sign off in your long suit.")
         if L['S'] == 4 and max(L.values()) <= 4:
-            return "Pas", f"{hp} hp og ingen lang farve: pas – 1NT er en fin kontrakt."
+            return "Pas", tx(f"{hp} hp og ingen lang farve: pas – 1NT er en fin kontrakt.",
+                             f"{hp} HCP and no long suit: pass – 1NT is a fine contract.")
         return None
     if INVITE_HP[0] <= hp <= INVITE_HP[1]:
-        return "2♣", f"{hp} hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
+        return "2♣", tx(f"{hp} hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter.",
+                        f"{hp} HCP is an invitational hand: 2♣ relay – opener bids 2♦, and you describe the hand afterwards.")
     if hp >= GF_HP:
-        return "2♦", f"{hp} hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin."
+        return "2♦", tx(f"{hp} hp er udgangskrav: 2♦ – åbner beskriver sin fordeling i trin.",
+                        f"{hp} HCP is game forcing: 2♦ – opener describes the shape in steps.")
     return None
 
 def responder_after_relay(hand, hp):
@@ -69,26 +76,33 @@ def responder_after_relay(hand, hp):
     if L['S'] >= 5 and fives:
         s = fives[0]
         call = f"3{SUIT_SYM[s]}"
-        return call, f"5 spar og 5 {SUIT_NAME[s]}: {call} viser 5-5, invit eller bedre."
+        return call, tx(f"5 spar og 5 {SUIT_NAME[s]}: {call} viser 5-5, invit eller bedre.",
+                        f"5 spades and 5 {SUIT_NAME_EN[s]}: {call} shows 5-5, invitational or better.")
     if L['S'] >= 5:
-        return "2♠", f"{L['S']} spar og {hp} hp: 2♠ viser 5-farven, invit."
+        return "2♠", tx(f"{L['S']} spar og {hp} hp: 2♠ viser 5-farven, invit.", f"{L['S']} spades and {hp} HCP: 2♠ shows the five-card suit, invitational.")
     if not fives:
-        return "2NT", f"{hp} hp uden 5-farve: 2NT er invit."
+        return "2NT", tx(f"{hp} hp uden 5-farve: 2NT er invit.", f"{hp} HCP without a five-card suit: 2NT is invitational.")
     return None
 
+C_AAB = tx("Udgangskrav – beder dig vise fordelingen i trin", "Game forcing – asks you to show your shape in steps")
+C_RELAE = tx("Tvunget relæsvar – siger intet om hånden", "A forced relay response – says nothing about the hand")
+C_SVAR = tx("12–14 hp, jævn", "12–14 HCP, balanced")
 BONUS = {
-    "aabner": {"q": "Hvad viser makkers 2♦?",
-               "correct": "Udgangskrav – beder dig vise fordelingen i trin",
-               "options": ["Udgangskrav – beder dig vise fordelingen i trin", "Naturligt, ruderfarve", "Relæ – beder dig melde 2♥"],
-               "why": "Efter 1-farve – 1-farve – 1NT er 2♦ udgangskrav og alerteres. Åbner beskriver fordelingen i trin."},
-    "relae": {"q": "Hvad viste åbners 2♦?",
-              "correct": "Tvunget relæsvar – siger intet om hånden",
-              "options": ["Tvunget relæsvar – siger intet om hånden", "Naturlig ruderfarve", "Udgangskrav"],
-              "why": "2♣ er relæ og tvinger åbner til 2♦, som intet siger. Nu beskriver svarer sin invitationshånd på lavt niveau."},
-    "svar": {"q": "Hvad viser åbners 1NT-genmelding?",
-             "correct": "12–14 hp, jævn",
-             "options": ["12–14 hp, jævn", "15–17 hp, jævn", "18–19 hp, jævn"],
-             "why": "1NT-genmeldingen viser 12–14 jævn – med 15–17 havde åbner åbnet 1NT. Det brede interval er grunden til relæet."},
+    "aabner": {"q": tx("Hvad viser makkers 2♦?", "What does partner's 2♦ show?"),
+               "correct": C_AAB,
+               "options": [C_AAB, tx("Naturligt, ruderfarve", "Natural, a diamond suit"), tx("Relæ – beder dig melde 2♥", "A relay – asks you to bid 2♥")],
+               "why": tx("Efter 1-farve – 1-farve – 1NT er 2♦ udgangskrav og alerteres. Åbner beskriver fordelingen i trin.",
+                         "After one of a suit – one of a suit – 1NT, 2♦ is game forcing and alerted. Opener describes the shape in steps.")},
+    "relae": {"q": tx("Hvad viste åbners 2♦?", "What did opener's 2♦ show?"),
+              "correct": C_RELAE,
+              "options": [C_RELAE, tx("Naturlig ruderfarve", "A natural diamond suit"), tx("Udgangskrav", "Game forcing")],
+              "why": tx("2♣ er relæ og tvinger åbner til 2♦, som intet siger. Nu beskriver svarer sin invitationshånd på lavt niveau.",
+                        "2♣ is a relay and forces opener to bid 2♦, which says nothing. Now responder describes the invitational hand at a low level.")},
+    "svar": {"q": tx("Hvad viser åbners 1NT-genmelding?", "What does opener's 1NT rebid show?"),
+             "correct": C_SVAR,
+             "options": [C_SVAR, tx("15–17 hp, jævn", "15–17 HCP, balanced"), tx("18–19 hp, jævn", "18–19 HCP, balanced")],
+             "why": tx("1NT-genmeldingen viser 12–14 jævn – med 15–17 havde åbner åbnet 1NT. Det brede interval er grunden til relæet.",
+                       "The 1NT rebid shows 12–14 balanced – with 15–17 opener would have opened 1NT. The wide range is the reason for the relay.")},
 }
 
 PAS = ["Modstander", "Pas"]

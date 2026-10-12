@@ -8,23 +8,26 @@ Antagelser: kongespørgsmålet stilles af svarer efter Bekkasin (1M – 2NT – 
 hænder med en konge, der kun kan vises over 6 i trumf (♠K med hjerter som trumf), er ikke med.
 """
 import random
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, build_pool, tx
 from . import rkc1430
 from .rkc1430 import keycards, rank, ORDER
 
 PAS = ["Modstander", "Pas"]
-BONUS_KONGE = {"q": "Hvad garanterer 5NT efter RKC-svaret?",
-               "correct": "Alle fem nøglekort – invitation til storeslem",
-               "options": ["Alle fem nøglekort – invitation til storeslem", "Trumfdamen", "Invit til 6NT"],
-               "why": "5NT spørger om konger og garanterer, at parret har alle fem nøglekort. Svar: 6 i billigste farve med konge, 6 i trumf uden konger."}
+C_KONGE = tx("Alle fem nøglekort – invitation til storeslem", "All five keycards – a grand slam invitation")
+BONUS_KONGE = {"q": tx("Hvad garanterer 5NT efter RKC-svaret?", "What does 5NT after the RKC response guarantee?"),
+               "correct": C_KONGE,
+               "options": [C_KONGE, tx("Trumfdamen", "The trump queen"), tx("Invit til 6NT", "An invitation to 6NT")],
+               "why": tx("5NT spørger om konger og garanterer, at parret har alle fem nøglekort. Svar: 6 i billigste farve med konge, 6 i trumf uden konger.",
+                         "5NT asks for kings and guarantees that the partnership holds all five keycards. Responses: six of the cheapest "
+                         "suit with a king, six of trumps without kings.")}
 
 def answer_4nt(M):
     base = rkc1430.answer_4nt(M)
     def classify(hand, hp):
         if keycards(hand, M) == 5:
             if 12 in hand[M]:
-                return "5♠", "5 nøglekort og trumfdamen: 5♠ (2 eller 5 med dame)."
-            return "5♥", "5 nøglekort uden trumfdamen: 5♥ (2 eller 5 uden dame)."
+                return "5♠", tx("5 nøglekort og trumfdamen: 5♠ (2 eller 5 med dame).", "5 keycards and the trump queen: 5♠ (2 or 5 with the queen).")
+            return "5♥", tx("5 nøglekort uden trumfdamen: 5♥ (2 eller 5 uden dame).", "5 keycards without the trump queen: 5♥ (2 or 5 without the queen).")
         return base(hand, hp)
     return classify
 
@@ -40,9 +43,10 @@ def answer_kings(M, shown):
         if kings and not below:
             return None
         if not below:
-            return f"6{sym}", f"Ingen konger uden for trumf: 6{sym}."
+            return f"6{sym}", tx(f"Ingen konger uden for trumf: 6{sym}.", f"No kings outside trumps: 6{sym}.")
         s = min(below, key=ORDER.index)
-        return f"6{SUIT_SYM[s]}", f"Konge i {SUIT_NAME[s]}: 6{SUIT_SYM[s]} – billigste konge først."
+        return f"6{SUIT_SYM[s]}", tx(f"Konge i {SUIT_NAME[s]}: 6{SUIT_SYM[s]} – billigste konge først.",
+                                     f"The king of {SUIT_NAME_EN[s]}: 6{SUIT_SYM[s]} – cheapest king first.")
     return classify
 
 def five_kc(M, gen):

@@ -9,23 +9,29 @@ Stærkåbning 2♣ og 2♦ waiting – Makker 2 & mig, afsnit 14.
 Antagelser: »god 5-farve« = to af de tre øverste honnører; jævn = 4-3-3-3, 4-4-3-2 eller 5-3-3-2;
 åbner med to lige lange farver melder den højeste; jævne 20–21 (åbnes 2NT) er ikke med.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, build_pool, tx
 
 ORDER = ['C', 'D', 'H', 'S']
 PAS = ["Modstander", "Pas"]
+C_SVAR = tx("Waiting – intet om styrken", "Waiting – says nothing about strength")
+C_AAB = tx("Jævn 22–24 hp", "Balanced 22–24 HCP")
+C_NEG = tx("2NT – 0–4 hp uden støtte og uden egen farve", "2NT – 0–4 HCP without support and without a suit of your own")
 BONUS = {
-    "svar": {"q": "Hvad viser 2♦ over makkers 2♣?",
-             "correct": "Waiting – intet om styrken",
-             "options": ["Waiting – intet om styrken", "0–4 hp, negativ", "Ruderfarve"],
-             "why": "2♦ er waiting: alt, der ikke er et positivt svar. Den helt tomme hånd vises senere med det andet negative."},
-    "aab": {"q": "Hvad viser 2♣ – 2♦ – 2NT?",
-            "correct": "Jævn 22–24 hp",
-            "options": ["Jævn 22–24 hp", "Jævn 20–21 hp", "Begge minorer"],
-            "why": "Efter 2♣ – 2♦ viser 2NT 22–24 og 3NT 25–27 jævn. ASS, overføring og Gerber gælder ét trin højere."},
-    "neg": {"q": "Hvad er det andet negative efter 2♣ – 2♦ – 2♥?",
-            "correct": "2NT – 0–4 hp uden støtte og uden egen farve",
-            "options": ["2NT – 0–4 hp uden støtte og uden egen farve", "3♣", "Pas"],
-            "why": "Svarers billigste sansmelding er det andet negative. Med 3-korts støtte støtter man – også med 0–4."},
+    "svar": {"q": tx("Hvad viser 2♦ over makkers 2♣?", "What does 2♦ over partner's 2♣ show?"),
+             "correct": C_SVAR,
+             "options": [C_SVAR, tx("0–4 hp, negativ", "0–4 HCP, negative"), tx("Ruderfarve", "A diamond suit")],
+             "why": tx("2♦ er waiting: alt, der ikke er et positivt svar. Den helt tomme hånd vises senere med det andet negative.",
+                       "2♦ is waiting: everything that is not a positive response. The truly empty hand is shown later with the second negative.")},
+    "aab": {"q": tx("Hvad viser 2♣ – 2♦ – 2NT?", "What does 2♣ – 2♦ – 2NT show?"),
+            "correct": C_AAB,
+            "options": [C_AAB, tx("Jævn 20–21 hp", "Balanced 20–21 HCP"), tx("Begge minorer", "Both minors")],
+            "why": tx("Efter 2♣ – 2♦ viser 2NT 22–24 og 3NT 25–27 jævn. ASS, overføring og Gerber gælder ét trin højere.",
+                      "After 2♣ – 2♦, 2NT shows 22–24 and 3NT 25–27 balanced. ASS, transfers and Gerber apply one step higher.")},
+    "neg": {"q": tx("Hvad er det andet negative efter 2♣ – 2♦ – 2♥?", "What is the second negative after 2♣ – 2♦ – 2♥?"),
+            "correct": C_NEG,
+            "options": [C_NEG, "3♣", tx("Pas", "Pass")],
+            "why": tx("Svarers billigste sansmelding er det andet negative. Med 3-korts støtte støtter man – også med 0–4.",
+                      "Responder's cheapest notrump bid is the second negative. With three-card support you raise – even with 0–4.")},
 }
 
 def balanced(L):
@@ -48,17 +54,19 @@ def first(hand, hp):
         return None
     m = solid_minor(hand, L)
     if m:
-        return "3NT", f"Gående {L[m]}-farve i {SUIT_NAME[m]} med E-K-D: 3NT."
+        return "3NT", tx(f"Gående {L[m]}-farve i {SUIT_NAME[m]} med E-K-D: 3NT.", f"A solid {L[m]}-card {SUIT_NAME_EN[m][:-1]} suit with A-K-Q: 3NT.")
     if hp >= 8:
         goods = [s for s in SUITS if good(hand[s])]
         if goods:
             s = max(goods, key=lambda x: (L[x], ORDER.index(x)))
             call = f"{2 if s in ('H', 'S') else 3}{SUIT_SYM[s]}"
-            return call, f"{hp} hp og god {L[s]}-farve i {SUIT_NAME[s]}: {call} – positivt svar."
+            return call, tx(f"{hp} hp og god {L[s]}-farve i {SUIT_NAME[s]}: {call} – positivt svar.",
+                            f"{hp} HCP and a good {L[s]}-card suit in {SUIT_NAME_EN[s]}: {call} – a positive response.")
         if balanced(L) and max(L.values()) <= 4:
-            return "2NT", f"{hp} hp jævn uden 5-farve: 2NT – positivt svar."
-        return "2♦", f"{hp} hp, men ingen god 5-farve og ikke jævn 4-farvet: 2♦ waiting."
-    return "2♦", f"{hp} hp: 2♦ waiting."
+            return "2NT", tx(f"{hp} hp jævn uden 5-farve: 2NT – positivt svar.", f"{hp} HCP balanced without a five-card suit: 2NT – a positive response.")
+        return "2♦", tx(f"{hp} hp, men ingen god 5-farve og ikke jævn 4-farvet: 2♦ waiting.",
+                        f"{hp} HCP, but no good five-card suit and not balanced: 2♦ waiting.")
+    return "2♦", tx(f"{hp} hp: 2♦ waiting.", f"{hp} HCP: 2♦ waiting.")
 
 def rebid(hand, hp):
     L = lengths_of(hand)
@@ -66,14 +74,14 @@ def rebid(hand, hp):
         return None
     if balanced(L):
         if 22 <= hp <= 24:
-            return "2NT", f"Jævn hånd, {hp} hp: 2NT (22–24)."
+            return "2NT", tx(f"Jævn hånd, {hp} hp: 2NT (22–24).", f"Balanced hand, {hp} HCP: 2NT (22–24).")
         if hp >= 25:
-            return "3NT", f"Jævn hånd, {hp} hp: 3NT (25–27)."
+            return "3NT", tx(f"Jævn hånd, {hp} hp: 3NT (25–27).", f"Balanced hand, {hp} HCP: 3NT (25–27).")
         return None
     top = max(L.values())
     s = max((x for x in SUITS if L[x] == top), key=ORDER.index)
     call = f"{2 if s in ('H', 'S') else 3}{SUIT_SYM[s]}"
-    return call, f"Ujævn hånd med {L[s]} {SUIT_NAME[s]}: {call} – naturligt."
+    return call, tx(f"Ujævn hånd med {L[s]} {SUIT_NAME[s]}: {call} – naturligt.", f"Unbalanced hand with {L[s]} {SUIT_NAME_EN[s]}: {call} – natural.")
 
 def second(M):
     sym = SUIT_SYM[M]
@@ -82,16 +90,18 @@ def second(M):
         if hp > 7 or first(hand, hp) is None or first(hand, hp)[0] != "2♦":
             return None
         if L[M] >= 3:
-            return f"3{sym}", f"{L[M]} {SUIT_NAME[M]}: 3{sym} – støtte, også med {hp} hp. Åbner er kaptajn."
+            return f"3{sym}", tx(f"{L[M]} {SUIT_NAME[M]}: 3{sym} – støtte, også med {hp} hp. Åbner er kaptajn.",
+                                 f"{L[M]} {SUIT_NAME_EN[M]}: 3{sym} – support, even with {hp} HCP. Opener is captain.")
         if hp <= 4:
-            return "2NT", f"{hp} hp uden støtte: 2NT – det andet negative."
+            return "2NT", tx(f"{hp} hp uden støtte: 2NT – det andet negative.", f"{hp} HCP without support: 2NT – the second negative.")
         goods = [s for s in SUITS if s != M and good(hand[s])]
         if goods:
             s = max(goods, key=lambda x: (L[x], ORDER.index(x)))
             lv = 2 if ORDER.index(s) > ORDER.index(M) else 3
-            return f"{lv}{SUIT_SYM[s]}", f"God {L[s]}-farve i {SUIT_NAME[s]} og {hp} hp: {lv}{SUIT_SYM[s]} – naturligt."
+            return f"{lv}{SUIT_SYM[s]}", tx(f"God {L[s]}-farve i {SUIT_NAME[s]} og {hp} hp: {lv}{SUIT_SYM[s]} – naturligt.",
+                                            f"A good {L[s]}-card suit in {SUIT_NAME_EN[s]} and {hp} HCP: {lv}{SUIT_SYM[s]} – natural.")
         if balanced(L):
-            return "3NT", f"{hp} hp jævn uden støtte: 3NT – sans med hold."
+            return "3NT", tx(f"{hp} hp jævn uden støtte: 3NT – sans med hold.", f"{hp} HCP balanced without support: 3NT – notrump with stoppers.")
         return None
     return classify
 
