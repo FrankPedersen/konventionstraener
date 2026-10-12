@@ -52,64 +52,30 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     14,
-     13,
-     3
-    ],
-    "H": [
-     13,
-     8,
-     6,
-     4
-    ],
-    "D": [
-     9,
-     8,
-     5
-    ],
-    "C": [
-     13,
      10,
-     4
-    ]
-   },
-   "hp": 13,
-   "sp": 13,
-   "zone": "ov",
-   "correct": "X",
-   "why": "13 hp: dobling – straf og den stærkeste melding (9+).",
-   "en": {
-    "why": "13 HCP: double – penalty and the strongest bid (9+)."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     9
+     7
     ],
     "H": [
+     13,
      12,
-     11,
-     9,
-     3
+     5,
+     2
     ],
     "D": [
-     12,
      7,
-     4,
-     3
+     3,
+     2
     ],
     "C": [
-     14,
-     11,
-     10,
-     9
+     13,
+     12,
+     8,
+     7
     ]
    },
    "hp": 10,
-   "sp": 13,
-   "zone": "ov",
+   "sp": 11,
+   "zone": "ingen",
    "correct": "X",
    "why": "10 hp: dobling – straf og den stærkeste melding (9+).",
    "en": {
@@ -120,30 +86,98 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     13,
-     11,
-     9,
-     6
+     14,
+     12,
+     7
     ],
     "H": [
-     14,
-     10,
      6,
-     5
+     5,
+     3
     ],
     "D": [
      13,
-     8,
+     12,
+     7,
      3
     ],
     "C": [
-     11,
-     9
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "X",
+   "why": "11 hp: dobling – straf og den stærkeste melding (9+).",
+   "en": {
+    "why": "11 HCP: double – penalty and the strongest bid (9+)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     10,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     12,
+     8,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     4
+    ],
+    "C": [
+     13,
+     8,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "X",
+   "why": "9 hp: dobling – straf og den stærkeste melding (9+).",
+   "en": {
+    "why": "9 HCP: double – penalty and the strongest bid (9+)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     13,
+     12,
+     6,
+     5
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     5
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     12,
+     10,
+     7,
+     2
     ]
    },
    "hp": 12,
-   "sp": 13,
-   "zone": "ingen",
+   "sp": 15,
+   "zone": "ns",
    "correct": "X",
    "why": "12 hp: dobling – straf og den stærkeste melding (9+).",
    "en": {
@@ -156,28 +190,96 @@
     "S": [
      14,
      13,
-     8,
-     2
+     10,
+     7
     ],
     "H": [
-     9,
-     5,
-     3,
+     13,
+     10,
      2
     ],
     "D": [
      13,
-     12,
-     8
+     8,
+     7,
+     6
     ],
     "C": [
      8,
      7
     ]
    },
-   "hp": 12,
-   "sp": 13,
+   "hp": 13,
+   "sp": 14,
    "zone": "ingen",
+   "correct": "X",
+   "why": "13 hp: dobling – straf og den stærkeste melding (9+).",
+   "en": {
+    "why": "13 HCP: double – penalty and the strongest bid (9+)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     9
+    ],
+    "H": [
+     12,
+     4,
+     2
+    ],
+    "D": [
+     11,
+     8
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "zone": "alle",
+   "correct": "X",
+   "why": "13 hp: dobling – straf og den stærkeste melding (9+).",
+   "en": {
+    "why": "13 HCP: double – penalty and the strongest bid (9+)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     5
+    ],
+    "H": [
+     13,
+     12,
+     7,
+     4
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     7,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "zone": "ns",
    "correct": "X",
    "why": "12 hp: dobling – straf og den stærkeste melding (9+).",
    "en": {
@@ -189,22 +291,192 @@
    "hand": {
     "S": [
      13,
+     6,
+     4
+    ],
+    "H": [
+     11,
+     9
+    ],
+    "D": [
+     14,
+     9,
+     5,
+     4
+    ],
+    "C": [
      12,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "10 hp: dobling – straf og den stærkeste melding (9+).",
+   "en": {
+    "why": "10 HCP: double – penalty and the strongest bid (9+)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     9,
+     7,
+     6
+    ],
+    "H": [
+     13,
+     11,
      10,
+     4
+    ],
+    "D": [
+     11,
+     8
+    ],
+    "C": [
+     14,
+     8,
+     4,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "X",
+   "why": "9 hp: dobling – straf og den stærkeste melding (9+).",
+   "en": {
+    "why": "9 HCP: double – penalty and the strongest bid (9+)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
      8
     ],
     "H": [
      13,
      12,
-     6,
-     2
+     5,
+     4
     ],
     "D": [
-     4
+     14,
+     12,
+     5,
+     3
     ],
     "C": [
      13,
-     11,
+     10,
+     4,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "zone": "ov",
+   "correct": "X",
+   "why": "14 hp: dobling – straf og den stærkeste melding (9+).",
+   "en": {
+    "why": "14 HCP: double – penalty and the strongest bid (9+)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     10,
+     6,
+     5
+    ],
+    "H": [
+     8,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     5
+    ],
+    "C": [
+     13,
+     10,
+     6,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ov",
+   "correct": "X",
+   "why": "9 hp: dobling – straf og den stærkeste melding (9+).",
+   "en": {
+    "why": "9 HCP: double – penalty and the strongest bid (9+)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     13,
+     10,
+     3,
+     2
+    ],
+    "H": [
+     10,
+     8,
+     2
+    ],
+    "D": [
+     12,
+     6,
+     5
+    ],
+    "C": [
+     14,
+     12,
+     7
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "zone": "ov",
+   "correct": "X",
+   "why": "11 hp: dobling – straf og den stærkeste melding (9+).",
+   "en": {
+    "why": "11 HCP: double – penalty and the strongest bid (9+)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     13,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     12,
+     7,
+     5,
+     2
+    ],
+    "C": [
+     13,
+     12,
      7,
      4
     ]
@@ -222,30 +494,30 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     12,
+     13,
      10,
-     9,
-     3
+     9
     ],
     "H": [
-     3
-    ],
-    "D": [
-     13,
-     9,
-     5,
-     4
-    ],
-    "C": [
-     13,
-     12,
+     14,
+     11,
      9,
      6
+    ],
+    "D": [
+     12,
+     8,
+     6
+    ],
+    "C": [
+     9,
+     7,
+     2
     ]
    },
    "hp": 10,
-   "sp": 13,
-   "zone": "ns",
+   "sp": 10,
+   "zone": "ov",
    "correct": "X",
    "why": "10 hp: dobling – straf og den stærkeste melding (9+).",
    "en": {
@@ -256,132 +528,98 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     11,
-     9,
-     8
+     13,
+     10
     ],
     "H": [
-     13,
+     14,
      9,
-     5,
-     3
+     6,
+     4
     ],
     "D": [
-     13,
-     12,
-     10,
-     5
+     8,
+     6,
+     4
     ],
     "C": [
-     8,
-     4
+     14,
+     12,
+     11,
+     8
     ]
    },
-   "hp": 9,
-   "sp": 10,
-   "zone": "ov",
+   "hp": 14,
+   "sp": 15,
+   "zone": "ns",
    "correct": "X",
-   "why": "9 hp: dobling – straf og den stærkeste melding (9+).",
+   "why": "14 hp: dobling – straf og den stærkeste melding (9+).",
    "en": {
-    "why": "9 HCP: double – penalty and the strongest bid (9+)."
+    "why": "14 HCP: double – penalty and the strongest bid (9+)."
    }
   },
   {
    "situation": "ut8",
    "hand": {
     "S": [
-     12,
-     10,
-     5
+     14,
+     13,
+     9,
+     7
     ],
     "H": [
      13,
-     8,
      7,
-     5
-    ],
-    "D": [
      4,
      2
     ],
-    "C": [
-     14,
-     7,
-     6,
-     3
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "zone": "alle",
-   "correct": "X",
-   "why": "9 hp: dobling – straf og den stærkeste melding (9+).",
-   "en": {
-    "why": "9 HCP: double – penalty and the strongest bid (9+)."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     13,
-     8,
-     2
-    ],
-    "H": [
-     13,
-     9,
-     3,
-     2
-    ],
     "D": [
-     10,
-     7
+     12,
+     4,
+     3
     ],
     "C": [
-     13,
-     10,
-     6,
+     12,
      4
     ]
    },
-   "hp": 9,
-   "sp": 10,
-   "zone": "alle",
+   "hp": 14,
+   "sp": 15,
+   "zone": "ns",
    "correct": "X",
-   "why": "9 hp: dobling – straf og den stærkeste melding (9+).",
+   "why": "14 hp: dobling – straf og den stærkeste melding (9+).",
    "en": {
-    "why": "9 HCP: double – penalty and the strongest bid (9+)."
+    "why": "14 HCP: double – penalty and the strongest bid (9+)."
    }
   },
   {
    "situation": "ut8",
    "hand": {
     "S": [
+     14,
+     11,
      9,
-     8,
-     6,
      3
     ],
     "H": [
-     3
+     9
     ],
     "D": [
-     14,
+     13,
+     12,
      6,
-     3,
-     2
+     4
     ],
     "C": [
-     14,
-     13,
-     8,
-     6
+     11,
+     10,
+     4,
+     2
     ]
    },
    "hp": 11,
    "sp": 14,
-   "zone": "ingen",
+   "zone": "ov",
    "correct": "X",
    "why": "11 hp: dobling – straf og den stærkeste melding (9+).",
    "en": {
@@ -392,163 +630,369 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     14,
      8,
-     4
+     7,
+     4,
+     3
     ],
     "H": [
+     5
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     10
+    ],
+    "C": [
+     13,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 13,
+   "zone": "ov",
+   "correct": "X",
+   "why": "10 hp: dobling – straf og den stærkeste melding (9+).",
+   "en": {
+    "why": "10 HCP: double – penalty and the strongest bid (9+)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     12,
      10,
+     3
+    ],
+    "H": [
+     12,
      7,
      3
     ],
     "D": [
+     14,
      12,
-     7,
+     8
+    ],
+    "C": [
+     10,
+     9,
+     4,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "zone": "ov",
+   "correct": "X",
+   "why": "10 hp: dobling – straf og den stærkeste melding (9+).",
+   "en": {
+    "why": "10 HCP: double – penalty and the strongest bid (9+)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     14,
+     5,
      4
+    ],
+    "H": [
+     13,
+     6,
+     2
+    ],
+    "D": [
+     8,
+     7,
+     5
+    ],
+    "C": [
+     14,
+     7,
+     3,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "zone": "alle",
+   "correct": "X",
+   "why": "11 hp: dobling – straf og den stærkeste melding (9+).",
+   "en": {
+    "why": "11 HCP: double – penalty and the strongest bid (9+)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     12,
+     11,
+     8
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     2
+    ],
+    "D": [
+     10,
+     8,
+     7
+    ],
+    "C": [
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 10,
+   "zone": "ov",
+   "correct": "X",
+   "why": "10 hp: dobling – straf og den stærkeste melding (9+).",
+   "en": {
+    "why": "10 HCP: double – penalty and the strongest bid (9+)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     14,
+     9,
+     5,
+     3
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     14,
+     8,
+     4,
+     2
     ],
     "C": [
      14,
      12,
+     4,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "zone": "alle",
+   "correct": "X",
+   "why": "14 hp: dobling – straf og den stærkeste melding (9+).",
+   "en": {
+    "why": "14 HCP: double – penalty and the strongest bid (9+)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
      11,
+     9,
+     8,
+     4
+    ],
+    "H": [
+     13,
+     9,
+     7
+    ],
+    "D": [
+     14,
+     12,
+     6,
+     2
+    ],
+    "C": [
+     12,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "zone": "ov",
+   "correct": "X",
+   "why": "12 hp: dobling – straf og den stærkeste melding (9+).",
+   "en": {
+    "why": "12 HCP: double – penalty and the strongest bid (9+)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     14,
+     12,
+     5,
+     2
+    ],
+    "H": [
+     11,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     11,
+     10
+    ],
+    "C": [
+     11,
+     9,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "9 hp: dobling – straf og den stærkeste melding (9+).",
+   "en": {
+    "why": "9 HCP: double – penalty and the strongest bid (9+)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     13,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     4
+    ],
+    "D": [
+     12,
+     10,
+     9,
+     3
+    ],
+    "C": [
+     11,
+     7
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "ov",
+   "correct": "X",
+   "why": "11 hp: dobling – straf og den stærkeste melding (9+).",
+   "en": {
+    "why": "11 HCP: double – penalty and the strongest bid (9+)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     10,
      9
-    ]
-   },
-   "hp": 13,
-   "sp": 13,
-   "zone": "alle",
-   "correct": "X",
-   "why": "13 hp: dobling – straf og den stærkeste melding (9+).",
-   "en": {
-    "why": "13 HCP: double – penalty and the strongest bid (9+)."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     12,
-     8,
-     5
     ],
     "H": [
-     14,
-     9,
-     7,
-     2
+     12,
+     11,
+     10,
+     9
     ],
     "D": [
-     13,
-     8,
-     7,
-     2
+     11,
+     9,
+     6,
+     3
     ],
     "C": [
-     6,
+     14,
+     12,
      4
     ]
    },
-   "hp": 9,
-   "sp": 10,
-   "zone": "ns",
+   "hp": 10,
+   "sp": 11,
+   "zone": "alle",
    "correct": "X",
-   "why": "9 hp: dobling – straf og den stærkeste melding (9+).",
+   "why": "10 hp: dobling – straf og den stærkeste melding (9+).",
    "en": {
-    "why": "9 HCP: double – penalty and the strongest bid (9+)."
+    "why": "10 HCP: double – penalty and the strongest bid (9+)."
    }
   },
   {
    "situation": "ut8",
    "hand": {
     "S": [
-     4,
-     3
+     2
     ],
-    "H": [
-     9,
-     8,
-     5
-    ],
-    "D": [
-     14,
-     10,
-     8,
-     5
-    ],
-    "C": [
-     14,
-     11,
-     8,
-     7
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "zone": "alle",
-   "correct": "X",
-   "why": "9 hp: dobling – straf og den stærkeste melding (9+).",
-   "en": {
-    "why": "9 HCP: double – penalty and the strongest bid (9+)."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [],
     "H": [
      12,
      10,
-     9,
-     7,
-     5
-    ],
-    "D": [
-     11,
-     6,
      5,
+     2
+    ],
+    "D": [
+     12,
+     9,
+     7,
      3
     ],
     "C": [
      13,
-     12,
-     10,
+     8,
+     5,
      4
     ]
    },
-   "hp": 8,
-   "sp": 13,
-   "zone": "ns",
+   "hp": 7,
+   "sp": 10,
+   "zone": "alle",
    "correct": "3♥",
-   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
+   "why": "4 trumf og korthed: 3♥ – springstøtten er destruktiv.",
    "en": {
-    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
+    "why": "4 trumps and shortness: 3♥ – the jump raise is preemptive."
    }
   },
   {
    "situation": "ut8",
    "hand": {
-    "S": [],
+    "S": [
+     7
+    ],
     "H": [
      11,
      9,
-     8,
-     4,
-     2
-    ],
-    "D": [
-     14,
-     13,
-     9,
-     7
-    ],
-    "C": [
-     10,
      6,
      5,
      2
+    ],
+    "D": [
+     12,
+     11,
+     6,
+     2
+    ],
+    "C": [
+     10,
+     7,
+     2
     ]
    },
-   "hp": 8,
-   "sp": 13,
+   "hp": 4,
+   "sp": 7,
    "zone": "ov",
    "correct": "3♥",
    "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
@@ -560,58 +1004,58 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     6
+     2
     ],
     "H": [
      12,
-     7,
-     5,
-     4,
-     2
+     11,
+     8,
+     5
     ],
     "D": [
-     9,
+     12,
+     7,
      5,
-     3,
      2
     ],
     "C": [
-     13,
+     10,
      9,
-     6
+     4,
+     3
     ]
    },
    "hp": 5,
    "sp": 8,
-   "zone": "ns",
+   "zone": "alle",
    "correct": "3♥",
-   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
+   "why": "4 trumf og korthed: 3♥ – springstøtten er destruktiv.",
    "en": {
-    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
+    "why": "4 trumps and shortness: 3♥ – the jump raise is preemptive."
    }
   },
   {
    "situation": "ut8",
    "hand": {
     "S": [
-     12
+     10
     ],
     "H": [
-     13,
      11,
-     8,
-     7,
-     5
-    ],
-    "D": [
      10,
-     7,
-     4,
+     8,
+     3,
      2
     ],
+    "D": [
+     11,
+     9,
+     8,
+     6
+    ],
     "C": [
-     7,
-     4,
+     14,
+     5,
      2
     ]
    },
@@ -628,25 +1072,25 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     13
+     6
     ],
     "H": [
-     10,
-     5,
-     4,
-     3,
-     2
-    ],
-    "D": [
      13,
      12,
-     6,
-     5
+     11,
+     7,
+     3
+    ],
+    "D": [
+     12,
+     8,
+     4
     ],
     "C": [
-     9,
-     3,
-     2
+     10,
+     7,
+     4,
+     3
     ]
    },
    "hp": 8,
@@ -661,25 +1105,597 @@
   {
    "situation": "ut8",
    "hand": {
-    "S": [
-     2
-    ],
+    "S": [],
     "H": [
-     14,
+     11,
      10,
      8,
+     7,
+     4
+    ],
+    "D": [
+     12,
+     11,
+     6,
+     4
+    ],
+    "C": [
+     11,
+     10,
+     7,
+     5
+    ]
+   },
+   "hp": 5,
+   "sp": 10,
+   "zone": "ov",
+   "correct": "3♥",
+   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
+   "en": {
+    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [],
+    "H": [
+     11,
+     7,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     11,
+     5,
      4,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     6,
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "3♥",
+   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
+   "en": {
+    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     10,
+     7,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     13,
+     9,
+     8,
+     6
+    ],
+    "C": [
+     12,
+     8,
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "zone": "ns",
+   "correct": "3♥",
+   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
+   "en": {
+    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     10
+    ],
+    "H": [
+     13,
+     11,
+     8,
+     7,
+     4
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     5
+    ],
+    "C": [
+     9,
+     6,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "zone": "ingen",
+   "correct": "3♥",
+   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
+   "en": {
+    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [],
+    "H": [
+     11,
+     10,
+     7,
+     6,
+     3
+    ],
+    "D": [
+     13,
+     10,
+     7,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     5,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "3♥",
+   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
+   "en": {
+    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     10
+    ],
+    "H": [
+     13,
+     10,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     11,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     10,
+     6,
+     4
+    ]
+   },
+   "hp": 4,
+   "sp": 7,
+   "zone": "ov",
+   "correct": "3♥",
+   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
+   "en": {
+    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [],
+    "H": [
+     12,
+     11,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     10,
+     9,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     7,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "zone": "ov",
+   "correct": "3♥",
+   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
+   "en": {
+    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     7,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     9,
+     7,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "zone": "alle",
+   "correct": "3♥",
+   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
+   "en": {
+    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
+     13,
+     10,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     9,
+     7,
+     4,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "zone": "ns",
+   "correct": "3♥",
+   "why": "4 trumf og korthed: 3♥ – springstøtten er destruktiv.",
+   "en": {
+    "why": "4 trumps and shortness: 3♥ – the jump raise is preemptive."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [],
+    "H": [
+     12,
+     10,
+     8,
+     5,
      3
     ],
     "D": [
      12,
      8,
-     7
+     6,
+     4
+    ],
+    "C": [
+     14,
+     10,
+     7,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 13,
+   "zone": "ov",
+   "correct": "3♥",
+   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
+   "en": {
+    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     6,
+     2
+    ],
+    "D": [
+     8,
+     7,
+     2
+    ],
+    "C": [
+     14,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "zone": "ingen",
+   "correct": "3♥",
+   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
+   "en": {
+    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     11,
+     9,
+     8,
+     7,
+     2
+    ],
+    "D": [
+     10,
+     7,
+     3
+    ],
+    "C": [
+     13,
+     9,
+     7,
+     3
+    ]
+   },
+   "hp": 4,
+   "sp": 7,
+   "zone": "alle",
+   "correct": "3♥",
+   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
+   "en": {
+    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11
+    ],
+    "H": [
+     13,
+     9,
+     8,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     8,
+     5
     ],
     "C": [
      11,
-     10,
      6,
+     4,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "zone": "ov",
+   "correct": "3♥",
+   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
+   "en": {
+    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     13,
+     12,
+     6,
+     3,
+     2
+    ],
+    "D": [
+     7,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     7,
+     6
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "zone": "ov",
+   "correct": "3♥",
+   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
+   "en": {
+    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11
+    ],
+    "H": [
+     11,
+     7,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     11,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     8,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "3♥",
+   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
+   "en": {
+    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     12
+    ],
+    "H": [
+     11,
+     9,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     6
+    ],
+    "C": [
+     11,
+     8,
+     7,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "zone": "alle",
+   "correct": "3♥",
+   "why": "4 trumf og korthed: 3♥ – springstøtten er destruktiv.",
+   "en": {
+    "why": "4 trumps and shortness: 3♥ – the jump raise is preemptive."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11
+    ],
+    "H": [
+     10,
+     8,
+     7,
+     4
+    ],
+    "D": [
+     12,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     10,
+     8,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "3♥",
+   "why": "4 trumf og korthed: 3♥ – springstøtten er destruktiv.",
+   "en": {
+    "why": "4 trumps and shortness: 3♥ – the jump raise is preemptive."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     2
+    ],
+    "H": [
+     12,
+     8,
+     7,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     10,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     9,
      4
     ]
    },
@@ -696,230 +1712,30 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     4
+     11
     ],
     "H": [
-     14,
-     11,
-     8,
-     6,
-     5
-    ],
-    "D": [
      12,
-     8,
-     2
-    ],
-    "C": [
-     11,
-     8,
      7,
-     3
-    ]
-   },
-   "hp": 8,
-   "sp": 11,
-   "zone": "alle",
-   "correct": "3♥",
-   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
-   "en": {
-    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     14
-    ],
-    "H": [
-     12,
-     8,
-     7,
-     4,
-     2
-    ],
-    "D": [
-     9,
-     7,
-     6,
-     4
-    ],
-    "C": [
-     8,
-     6,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 9,
-   "zone": "ns",
-   "correct": "3♥",
-   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
-   "en": {
-    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     2
-    ],
-    "H": [
-     13,
-     10,
-     9,
-     5,
-     2
-    ],
-    "D": [
-     12,
-     9,
-     7
-    ],
-    "C": [
-     13,
-     10,
-     6,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 11,
-   "zone": "ingen",
-   "correct": "3♥",
-   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
-   "en": {
-    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [],
-    "H": [
-     13,
-     12,
-     4,
-     3,
-     2
-    ],
-    "D": [
-     11,
-     10,
-     9,
-     7
-    ],
-    "C": [
-     12,
-     8,
-     5,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 13,
-   "zone": "alle",
-   "correct": "3♥",
-   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
-   "en": {
-    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [],
-    "H": [
-     14,
-     10,
-     8,
-     3,
-     2
-    ],
-    "D": [
-     11,
-     10,
-     9,
-     7
-    ],
-    "C": [
      6,
      5,
-     4,
-     2
-    ]
-   },
-   "hp": 5,
-   "sp": 10,
-   "zone": "alle",
-   "correct": "3♥",
-   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
-   "en": {
-    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [],
-    "H": [
-     11,
-     10,
-     7,
-     6,
-     2
-    ],
-    "D": [
-     14,
-     10,
-     9,
      4
     ],
-    "C": [
-     13,
-     8,
-     4,
-     3
-    ]
-   },
-   "hp": 8,
-   "sp": 13,
-   "zone": "alle",
-   "correct": "3♥",
-   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
-   "en": {
-    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [],
-    "H": [
-     11,
-     9,
-     8,
-     7,
-     2
-    ],
     "D": [
-     11,
-     8,
+     7,
      3,
      2
     ],
     "C": [
-     12,
-     9,
-     6,
-     5
+     11,
+     8,
+     4,
+     2
     ]
    },
    "hp": 4,
-   "sp": 9,
-   "zone": "ov",
+   "sp": 7,
+   "zone": "ns",
    "correct": "3♥",
    "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
    "en": {
@@ -930,59 +1746,262 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     6,
-     5,
-     4
+     3
     ],
     "H": [
-     10,
+     12,
+     9,
+     6,
+     5
+    ],
+    "D": [
+     12,
+     7,
      6,
      2
     ],
-    "D": [
-     13,
-     10,
-     9,
-     5
-    ],
     "C": [
-     13,
-     8,
-     7
+     9,
+     7,
+     5,
+     2
     ]
    },
-   "hp": 6,
-   "sp": 6,
-   "zone": "ns",
-   "correct": "2♥",
-   "why": "3 hjerter og 6 hp: 2♥ – naturlig støtte.",
+   "hp": 4,
+   "sp": 7,
+   "zone": "ov",
+   "correct": "3♥",
+   "why": "4 trumf og korthed: 3♥ – springstøtten er destruktiv.",
    "en": {
-    "why": "3 hearts and 6 HCP: 2♥ – natural support."
+    "why": "4 trumps and shortness: 3♥ – the jump raise is preemptive."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [],
+    "H": [
+     12,
+     9,
+     8,
+     7,
+     5
+    ],
+    "D": [
+     13,
+     12,
+     6,
+     3
+    ],
+    "C": [
+     11,
+     8,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 13,
+   "zone": "alle",
+   "correct": "3♥",
+   "why": "5 trumf og korthed: 3♥ – springstøtten er destruktiv.",
+   "en": {
+    "why": "5 trumps and shortness: 3♥ – the jump raise is preemptive."
    }
   },
   {
    "situation": "ut8",
    "hand": {
     "S": [
-     8,
-     3,
-     2
+     13,
+     11,
+     10,
+     4
     ],
     "H": [
      12,
      9,
-     8
+     7
     ],
     "D": [
+     12,
+     6
+    ],
+    "C": [
+     10,
      9,
-     5,
-     3,
+     7,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "2♥",
+   "why": "3 hjerter og 8 hp: 2♥ – naturlig støtte.",
+   "en": {
+    "why": "3 hearts and 8 HCP: 2♥ – natural support."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     9,
+     6
+    ],
+    "H": [
+     13,
+     9,
+     3
+    ],
+    "D": [
+     14,
+     10,
+     8,
      2
     ],
     "C": [
-     14,
+     8,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "ingen",
+   "correct": "2♥",
+   "why": "3 hjerter og 7 hp: 2♥ – naturlig støtte.",
+   "en": {
+    "why": "3 hearts and 7 HCP: 2♥ – natural support."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     12,
+     11
+    ],
+    "H": [
+     8,
+     7,
+     2
+    ],
+    "D": [
      11,
+     10,
+     6,
+     3
+    ],
+    "C": [
+     14,
+     9,
+     6,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "3 hjerter og 8 hp: 2♥ – naturlig støtte.",
+   "en": {
+    "why": "3 hearts and 8 HCP: 2♥ – natural support."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11,
+     9,
+     7
+    ],
+    "H": [
+     14,
+     10,
+     7
+    ],
+    "D": [
+     11,
+     10,
+     9,
+     4
+    ],
+    "C": [
+     11,
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "3 hjerter og 7 hp: 2♥ – naturlig støtte.",
+   "en": {
+    "why": "3 hearts and 7 HCP: 2♥ – natural support."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     12,
+     4,
+     2
+    ],
+    "H": [
+     12,
+     10,
+     2
+    ],
+    "D": [
+     14,
+     6,
+     3
+    ],
+    "C": [
+     10,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "zone": "ingen",
+   "correct": "2♥",
+   "why": "3 hjerter og 8 hp: 2♥ – naturlig støtte.",
+   "en": {
+    "why": "3 hearts and 8 HCP: 2♥ – natural support."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     14,
+     12,
+     6,
+     3
+    ],
+    "H": [
+     8,
+     5,
+     2
+    ],
+    "D": [
+     10,
+     7,
      5
+    ],
+    "C": [
+     11,
+     7,
+     3
     ]
    },
    "hp": 7,
@@ -998,59 +2017,93 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     13,
+     12,
      8,
-     7,
-     5
+     4,
+     2
     ],
     "H": [
-     8,
-     7,
-     3
+     14,
+     11,
+     5
     ],
     "D": [
-     13,
-     2
+     9,
+     6,
+     3
     ],
     "C": [
      10,
-     5,
-     4,
-     2
+     7,
+     4
     ]
    },
-   "hp": 6,
+   "hp": 7,
    "sp": 7,
-   "zone": "ingen",
+   "zone": "alle",
    "correct": "2♥",
-   "why": "3 hjerter og 6 hp: 2♥ – naturlig støtte.",
+   "why": "3 hjerter og 7 hp: 2♥ – naturlig støtte.",
    "en": {
-    "why": "3 hearts and 6 HCP: 2♥ – natural support."
+    "why": "3 hearts and 7 HCP: 2♥ – natural support."
    }
   },
   {
    "situation": "ut8",
    "hand": {
     "S": [
-     12,
+     11,
+     10,
+     7,
+     4
+    ],
+    "H": [
+     8,
+     5,
+     3
+    ],
+    "D": [
      9,
+     5,
      4,
      3
     ],
-    "H": [
-     6,
-     5,
-     4
-    ],
-    "D": [
-     6,
-     5
-    ],
     "C": [
      14,
-     12,
+     12
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "alle",
+   "correct": "2♥",
+   "why": "3 hjerter og 7 hp: 2♥ – naturlig støtte.",
+   "en": {
+    "why": "3 hearts and 7 HCP: 2♥ – natural support."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     9,
      8,
-     7
+     5,
+     2
+    ],
+    "H": [
+     13,
+     6,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     6
+    ],
+    "C": [
+     9,
+     5
     ]
    },
    "hp": 8,
@@ -1066,161 +2119,59 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     12,
-     9,
-     8
-    ],
-    "H": [
-     9,
-     6,
-     2
-    ],
-    "D": [
-     14,
-     12,
-     5
-    ],
-    "C": [
      9,
      8,
-     5,
-     3
-    ]
-   },
-   "hp": 8,
-   "sp": 8,
-   "zone": "ov",
-   "correct": "2♥",
-   "why": "3 hjerter og 8 hp: 2♥ – naturlig støtte.",
-   "en": {
-    "why": "3 hearts and 8 HCP: 2♥ – natural support."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     10,
-     6,
+     7,
      4
     ],
     "H": [
      14,
-     11,
-     10
+     8,
+     5
     ],
     "D": [
-     11,
-     10,
-     7
+     4,
+     2
     ],
     "C": [
-     8,
-     4,
-     3,
-     2
+     12,
+     11,
+     9,
+     5
     ]
    },
-   "hp": 6,
-   "sp": 6,
+   "hp": 7,
+   "sp": 8,
    "zone": "ingen",
    "correct": "2♥",
-   "why": "3 hjerter og 6 hp: 2♥ – naturlig støtte.",
+   "why": "3 hjerter og 7 hp: 2♥ – naturlig støtte.",
    "en": {
-    "why": "3 hearts and 6 HCP: 2♥ – natural support."
+    "why": "3 hearts and 7 HCP: 2♥ – natural support."
    }
   },
   {
    "situation": "ut8",
    "hand": {
     "S": [
-     13,
-     8,
-     3
-    ],
-    "H": [
-     9,
      8,
      6
     ],
+    "H": [
+     13,
+     9,
+     3
+    ],
     "D": [
-     10,
-     7,
+     12,
+     9,
      6,
-     2
+     5
     ],
     "C": [
-     13,
+     11,
+     8,
      6,
      4
-    ]
-   },
-   "hp": 6,
-   "sp": 6,
-   "zone": "alle",
-   "correct": "2♥",
-   "why": "3 hjerter og 6 hp: 2♥ – naturlig støtte.",
-   "en": {
-    "why": "3 hearts and 6 HCP: 2♥ – natural support."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     12,
-     11,
-     4,
-     2
-    ],
-    "H": [
-     10,
-     8,
-     6
-    ],
-    "D": [
-     10,
-     9,
-     5
-    ],
-    "C": [
-     13,
-     12,
-     7
-    ]
-   },
-   "hp": 8,
-   "sp": 8,
-   "zone": "ov",
-   "correct": "2♥",
-   "why": "3 hjerter og 8 hp: 2♥ – naturlig støtte.",
-   "en": {
-    "why": "3 hearts and 8 HCP: 2♥ – natural support."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     14,
-     10,
-     9,
-     5
-    ],
-    "H": [
-     10,
-     8,
-     5
-    ],
-    "D": [
-     12,
-     10,
-     8,
-     3
-    ],
-    "C": [
-     8,
-     7
     ]
    },
    "hp": 6,
@@ -1236,30 +2187,64 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     14,
-     9,
-     2
-    ],
-    "H": [
-     10,
      8,
      5
     ],
+    "H": [
+     12,
+     9,
+     6
+    ],
     "D": [
-     6,
-     4,
-     3
+     11,
+     9,
+     7,
+     2
     ],
     "C": [
-     12,
-     4,
+     14,
+     9,
      3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "alle",
+   "correct": "2♥",
+   "why": "3 hjerter og 7 hp: 2♥ – naturlig støtte.",
+   "en": {
+    "why": "3 hearts and 7 HCP: 2♥ – natural support."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     13,
+     6,
+     3
+    ],
+    "H": [
+     11,
+     9,
+     2
+    ],
+    "D": [
+     12,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     6,
+     5,
      2
     ]
    },
    "hp": 6,
    "sp": 6,
-   "zone": "alle",
+   "zone": "ns",
    "correct": "2♥",
    "why": "3 hjerter og 6 hp: 2♥ – naturlig støtte.",
    "en": {
@@ -1270,29 +2255,97 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     13,
-     9,
-     7,
-     2
+     12,
+     11
     ],
     "H": [
+     10,
+     9,
+     7
+    ],
+    "D": [
+     10,
+     7,
+     5,
+     2
+    ],
+    "C": [
+     13,
+     9,
      6,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "ingen",
+   "correct": "2♥",
+   "why": "3 hjerter og 6 hp: 2♥ – naturlig støtte.",
+   "en": {
+    "why": "3 hearts and 6 HCP: 2♥ – natural support."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     8
+    ],
+    "H": [
+     12,
+     6,
+     5
+    ],
+    "D": [
+     9,
+     8,
      4,
      3
     ],
+    "C": [
+     9,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "3 hjerter og 7 hp: 2♥ – naturlig støtte.",
+   "en": {
+    "why": "3 hearts and 7 HCP: 2♥ – natural support."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     3
+    ],
+    "H": [
+     6,
+     5,
+     2
+    ],
     "D": [
-     11,
-     7,
+     6,
      4
     ],
     "C": [
      14,
-     8,
-     5
+     6,
+     4,
+     3
     ]
    },
    "hp": 8,
-   "sp": 8,
+   "sp": 9,
    "zone": "ns",
    "correct": "2♥",
    "why": "3 hjerter og 8 hp: 2♥ – naturlig støtte.",
@@ -1304,30 +2357,132 @@
    "situation": "ut8",
    "hand": {
     "S": [
+     14,
      11,
-     10,
-     6,
-     3
+     3,
+     2
     ],
     "H": [
-     9,
-     5,
-     4
-    ],
-    "D": [
-     14,
-     9,
-     7
-    ],
-    "C": [
-     13,
+     11,
      10,
      9
+    ],
+    "D": [
+     10,
+     8,
+     5,
+     4
+    ],
+    "C": [
+     11,
+     8
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "alle",
+   "correct": "2♥",
+   "why": "3 hjerter og 7 hp: 2♥ – naturlig støtte.",
+   "en": {
+    "why": "3 hearts and 7 HCP: 2♥ – natural support."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     8,
+     6,
+     2
+    ],
+    "H": [
+     13,
+     6,
+     5
+    ],
+    "D": [
+     10,
+     9,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     7,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 6,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "3 hjerter og 6 hp: 2♥ – naturlig støtte.",
+   "en": {
+    "why": "3 hearts and 6 HCP: 2♥ – natural support."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     13,
+     12,
+     3
+    ],
+    "H": [
+     11,
+     10,
+     5
+    ],
+    "D": [
+     7,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 6,
+   "zone": "ov",
+   "correct": "2♥",
+   "why": "3 hjerter og 6 hp: 2♥ – naturlig støtte.",
+   "en": {
+    "why": "3 hearts and 6 HCP: 2♥ – natural support."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     8,
+     2
+    ],
+    "D": [
+     9,
+     7
+    ],
+    "C": [
+     12,
+     11,
+     5,
+     3
     ]
    },
    "hp": 8,
-   "sp": 8,
-   "zone": "alle",
+   "sp": 9,
+   "zone": "ov",
    "correct": "2♥",
    "why": "3 hjerter og 8 hp: 2♥ – naturlig støtte.",
    "en": {
@@ -1338,29 +2493,63 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     4,
-     3,
-     2
+     13,
+     12,
+     11,
+     3
     ],
     "H": [
-     12,
-     3,
+     7,
+     6,
      2
     ],
     "D": [
-     11,
-     9,
+     7,
      6,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "zone": "ov",
+   "correct": "2♥",
+   "why": "3 hjerter og 8 hp: 2♥ – naturlig støtte.",
+   "en": {
+    "why": "3 hearts and 8 HCP: 2♥ – natural support."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     10,
+     9
+    ],
+    "H": [
+     14,
+     10,
+     7
+    ],
+    "D": [
+     12,
+     8,
+     5,
      3
     ],
     "C": [
-     13,
-     8,
+     9,
+     7,
+     4,
      2
     ]
    },
    "hp": 6,
-   "sp": 6,
+   "sp": 7,
    "zone": "alle",
    "correct": "2♥",
    "why": "3 hjerter og 6 hp: 2♥ – naturlig støtte.",
@@ -1372,130 +2561,200 @@
    "situation": "ut8",
    "hand": {
     "S": [
+     10,
      8,
-     7
-    ],
-    "H": [],
-    "D": [
-     13,
-     8,
-     7,
-     5,
-     4,
+     6,
      2
     ],
-    "C": [
+    "H": [
      11,
-     9,
      6,
-     4,
      3
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     8,
+     7,
+     6,
+     2
     ]
    },
-   "hp": 4,
-   "sp": 10,
-   "zone": "ns",
-   "correct": "2NT",
-   "why": "5-6 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "hp": 7,
+   "sp": 8,
+   "zone": "ov",
+   "correct": "2♥",
+   "why": "3 hjerter og 7 hp: 2♥ – naturlig støtte.",
    "en": {
-    "why": "5-6 in the minors: 2NT – strong in playing tricks, but weak in honours."
+    "why": "3 hearts and 7 HCP: 2♥ – natural support."
    }
   },
   {
    "situation": "ut8",
    "hand": {
     "S": [
-     10,
+     7,
      5
     ],
     "H": [
-     7
+     11,
+     7,
+     3
     ],
     "D": [
-     11,
+     13,
+     12,
      10,
-     5,
-     3,
-     2
+     4
     ],
     "C": [
-     13,
-     10,
+     11,
      9,
+     4,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "ingen",
+   "correct": "2♥",
+   "why": "3 hjerter og 7 hp: 2♥ – naturlig støtte.",
+   "en": {
+    "why": "3 hearts and 7 HCP: 2♥ – natural support."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     9,
+     7,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     7,
+     2
+    ],
+    "D": [
+     8,
+     7,
+     6,
+     4
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "3 hjerter og 6 hp: 2♥ – naturlig støtte.",
+   "en": {
+    "why": "3 hearts and 6 HCP: 2♥ – natural support."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     7,
+     4
+    ],
+    "H": [
+     9,
+     8,
+     5
+    ],
+    "D": [
+     14,
+     11,
      8,
      6
+    ],
+    "C": [
+     11,
+     9,
+     7,
+     2
     ]
    },
-   "hp": 4,
-   "sp": 8,
-   "zone": "alle",
-   "correct": "2NT",
-   "why": "5-5 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "hp": 6,
+   "sp": 7,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "3 hjerter og 6 hp: 2♥ – naturlig støtte.",
    "en": {
-    "why": "5-5 in the minors: 2NT – strong in playing tricks, but weak in honours."
+    "why": "3 hearts and 6 HCP: 2♥ – natural support."
    }
   },
   {
    "situation": "ut8",
    "hand": {
     "S": [
-     9
+     8
     ],
-    "H": [],
+    "H": [
+     3
+    ],
     "D": [
+     11,
+     6,
+     5,
+     4,
+     2
+    ],
+    "C": [
      14,
      12,
-     10,
-     8,
-     3,
-     2
+     11,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 14,
+   "zone": "ingen",
+   "correct": "2NT",
+   "why": "6-5 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "en": {
+    "why": "6-5 in the minors: 2NT – strong in playing tricks, but weak in honours."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     9,
+     6,
+     5
     ],
     "C": [
      10,
      8,
      7,
-     4,
      3,
      2
-    ]
-   },
-   "hp": 6,
-   "sp": 14,
-   "zone": "ns",
-   "correct": "2NT",
-   "why": "6-6 i minorerne: 2NT – spillestærk, men honnørsvag.",
-   "en": {
-    "why": "6-6 in the minors: 2NT – strong in playing tricks, but weak in honours."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     5
-    ],
-    "H": [
-     9
-    ],
-    "D": [
-     14,
-     10,
-     8,
-     6,
-     5,
-     3
-    ],
-    "C": [
-     13,
-     9,
-     8,
-     6,
-     5
     ]
    },
    "hp": 7,
    "sp": 13,
-   "zone": "ingen",
+   "zone": "ov",
    "correct": "2NT",
    "why": "5-6 i minorerne: 2NT – spillestærk, men honnørsvag.",
    "en": {
@@ -1507,24 +2766,24 @@
    "hand": {
     "S": [
      10,
-     5
+     9
     ],
     "H": [
-     3
+     9
     ],
     "D": [
-     11,
+     13,
      9,
-     8,
-     7,
-     4
+     6,
+     3,
+     2
     ],
     "C": [
      13,
-     12,
-     9,
-     8,
-     3
+     10,
+     7,
+     3,
+     2
     ]
    },
    "hp": 6,
@@ -1539,95 +2798,62 @@
   {
    "situation": "ut8",
    "hand": {
-    "S": [],
-    "H": [
-     8
+    "S": [
+     8,
+     7
     ],
+    "H": [],
     "D": [
      12,
-     10,
+     9,
      8,
      7,
-     6,
-     2
+     6
     ],
     "C": [
      13,
-     12,
-     11,
-     10,
-     7,
-     6
-    ]
-   },
-   "hp": 8,
-   "sp": 16,
-   "zone": "alle",
-   "correct": "2NT",
-   "why": "6-6 i minorerne: 2NT – spillestærk, men honnørsvag.",
-   "en": {
-    "why": "6-6 in the minors: 2NT – strong in playing tricks, but weak in honours."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [],
-    "H": [
-     10
-    ],
-    "D": [
-     14,
-     10,
-     9,
-     7,
-     6,
-     2
-    ],
-    "C": [
-     9,
-     7,
+     8,
      6,
      5,
      4,
      3
     ]
    },
-   "hp": 4,
-   "sp": 12,
-   "zone": "alle",
+   "hp": 5,
+   "sp": 11,
+   "zone": "ns",
    "correct": "2NT",
-   "why": "6-6 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "why": "6-5 i minorerne: 2NT – spillestærk, men honnørsvag.",
    "en": {
-    "why": "6-6 in the minors: 2NT – strong in playing tricks, but weak in honours."
+    "why": "6-5 in the minors: 2NT – strong in playing tricks, but weak in honours."
    }
   },
   {
    "situation": "ut8",
    "hand": {
     "S": [
-     9,
+     10,
      4
     ],
     "H": [],
     "D": [
-     7,
+     10,
+     9,
+     8,
      6,
      5,
-     4,
-     3,
-     2
+     3
     ],
     "C": [
      14,
-     11,
      10,
+     8,
      6,
-     4
+     5
     ]
    },
-   "hp": 5,
-   "sp": 11,
+   "hp": 4,
+   "sp": 10,
    "zone": "ingen",
    "correct": "2NT",
    "why": "5-6 i minorerne: 2NT – spillestærk, men honnørsvag.",
@@ -1639,24 +2865,458 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     8,
+     5,
      2
     ],
-    "H": [
+    "H": [],
+    "D": [
+     13,
+     11,
+     10,
+     5,
+     4,
      3
     ],
+    "C": [
+     13,
+     8,
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 13,
+   "zone": "ov",
+   "correct": "2NT",
+   "why": "5-6 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "en": {
+    "why": "5-6 in the minors: 2NT – strong in playing tricks, but weak in honours."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     12,
+     11,
+     9,
+     6,
+     4
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 12,
+   "zone": "alle",
+   "correct": "2NT",
+   "why": "6-5 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "en": {
+    "why": "6-5 in the minors: 2NT – strong in playing tricks, but weak in honours."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     14,
+     5
+    ],
+    "H": [],
     "D": [
      11,
-     8,
-     6,
+     10,
+     7,
      5,
+     4,
      2
     ],
     "C": [
      13,
+     9,
+     8,
+     6,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 14,
+   "zone": "alle",
+   "correct": "2NT",
+   "why": "5-6 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "en": {
+    "why": "5-6 in the minors: 2NT – strong in playing tricks, but weak in honours."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     11,
+     10,
+     9,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     10,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 12,
+   "zone": "alle",
+   "correct": "2NT",
+   "why": "5-6 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "en": {
+    "why": "5-6 in the minors: 2NT – strong in playing tricks, but weak in honours."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     10
+    ],
+    "H": [],
+    "D": [
+     11,
+     10,
+     9,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     9,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 13,
+   "zone": "ingen",
+   "correct": "2NT",
+   "why": "6-6 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "en": {
+    "why": "6-6 in the minors: 2NT – strong in playing tricks, but weak in honours."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     3,
+     2
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     13,
+     10,
+     9,
+     5,
+     4
+    ],
+    "C": [
+     13,
+     9,
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 11,
+   "zone": "alle",
+   "correct": "2NT",
+   "why": "5-5 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "en": {
+    "why": "5-5 in the minors: 2NT – strong in playing tricks, but weak in honours."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     6,
+     5
+    ],
+    "H": [],
+    "D": [
+     13,
      10,
      8,
      5,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     10,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 10,
+   "zone": "ingen",
+   "correct": "2NT",
+   "why": "5-6 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "en": {
+    "why": "5-6 in the minors: 2NT – strong in playing tricks, but weak in honours."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [],
+    "H": [
+     5
+    ],
+    "D": [
+     13,
+     11,
+     8,
+     7,
+     6,
+     4
+    ],
+    "C": [
+     14,
+     10,
+     8,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 16,
+   "zone": "ns",
+   "correct": "2NT",
+   "why": "6-6 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "en": {
+    "why": "6-6 in the minors: 2NT – strong in playing tricks, but weak in honours."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [],
+    "D": [
+     13,
+     10,
+     6,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     11,
+     8,
+     5,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "2NT",
+   "why": "6-6 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "en": {
+    "why": "6-6 in the minors: 2NT – strong in playing tricks, but weak in honours."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11,
+     3
+    ],
+    "H": [],
+    "D": [
+     12,
+     10,
+     8,
+     6,
+     5
+    ],
+    "C": [
+     11,
+     9,
+     8,
+     7,
+     6,
+     4
+    ]
+   },
+   "hp": 4,
+   "sp": 10,
+   "zone": "ov",
+   "correct": "2NT",
+   "why": "6-5 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "en": {
+    "why": "6-5 in the minors: 2NT – strong in playing tricks, but weak in honours."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     8,
+     3
+    ],
+    "H": [],
+    "D": [
+     11,
+     9,
+     8,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     8,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 14,
+   "zone": "ingen",
+   "correct": "2NT",
+   "why": "5-6 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "en": {
+    "why": "5-6 in the minors: 2NT – strong in playing tricks, but weak in honours."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     12,
+     11,
+     7,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 12,
+   "zone": "ns",
+   "correct": "2NT",
+   "why": "5-6 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "en": {
+    "why": "5-6 in the minors: 2NT – strong in playing tricks, but weak in honours."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     8,
+     5
+    ],
+    "C": [
+     11,
+     9,
+     7,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "2NT",
+   "why": "6-5 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "en": {
+    "why": "6-5 in the minors: 2NT – strong in playing tricks, but weak in honours."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11,
+     7
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     12,
+     10,
+     9,
+     4,
+     3
+    ],
+    "C": [
+     11,
+     10,
+     7,
+     3,
      2
     ]
    },
@@ -1672,25 +3332,192 @@
   {
    "situation": "ut8",
    "hand": {
+    "S": [],
+    "H": [
+     6
+    ],
+    "D": [
+     11,
+     10,
+     9,
+     8,
+     7,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     10,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 14,
+   "zone": "alle",
+   "correct": "2NT",
+   "why": "6-6 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "en": {
+    "why": "6-6 in the minors: 2NT – strong in playing tricks, but weak in honours."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
     "S": [
      13,
-     10
+     11
     ],
     "H": [],
     "D": [
      12,
-     8,
+     10,
+     9,
      7,
+     4
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 14,
+   "zone": "alle",
+   "correct": "2NT",
+   "why": "6-5 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "en": {
+    "why": "6-5 in the minors: 2NT – strong in playing tricks, but weak in honours."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     8,
+     4
+    ],
+    "H": [],
+    "D": [
+     11,
+     10,
+     8,
+     6,
      4,
-     3,
-     2
+     3
     ],
     "C": [
      13,
+     12,
      8,
-     7,
      6,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 12,
+   "zone": "ov",
+   "correct": "2NT",
+   "why": "5-6 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "en": {
+    "why": "5-6 in the minors: 2NT – strong in playing tricks, but weak in honours."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     10,
+     2
+    ],
+    "H": [],
+    "D": [
+     10,
+     6,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     8,
+     6,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 10,
+   "zone": "ingen",
+   "correct": "2NT",
+   "why": "6-5 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "en": {
+    "why": "6-5 in the minors: 2NT – strong in playing tricks, but weak in honours."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     13,
+     10,
+     7,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     8,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 14,
+   "zone": "ingen",
+   "correct": "2NT",
+   "why": "6-5 i minorerne: 2NT – spillestærk, men honnørsvag.",
+   "en": {
+    "why": "6-5 in the minors: 2NT – strong in playing tricks, but weak in honours."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
      4
+    ],
+    "D": [
+     11,
+     10,
+     9,
+     8,
+     6,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     9,
+     6
     ]
    },
    "hp": 8,
@@ -1707,96 +3534,28 @@
    "hand": {
     "S": [
      11,
-     4
-    ],
-    "H": [
-     9
-    ],
-    "D": [
-     13,
-     11,
-     9,
-     6,
-     4
-    ],
-    "C": [
-     11,
-     9,
-     5,
-     4,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 10,
-   "zone": "ov",
-   "correct": "2NT",
-   "why": "5-5 i minorerne: 2NT – spillestærk, men honnørsvag.",
-   "en": {
-    "why": "5-5 in the minors: 2NT – strong in playing tricks, but weak in honours."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     7,
-     3
+     5
     ],
     "H": [],
     "D": [
-     12,
-     11,
-     9,
-     4,
-     3
-    ],
-    "C": [
-     11,
-     6,
-     5,
-     4,
-     3,
-     2
-    ]
-   },
-   "hp": 4,
-   "sp": 10,
-   "zone": "alle",
-   "correct": "2NT",
-   "why": "6-5 i minorerne: 2NT – spillestærk, men honnørsvag.",
-   "en": {
-    "why": "6-5 in the minors: 2NT – strong in playing tricks, but weak in honours."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     10
-    ],
-    "H": [
-     12
-    ],
-    "D": [
-     13,
-     12,
-     10,
-     9,
-     5
-    ],
-    "C": [
+     14,
      11,
      9,
      8,
-     6,
+     7
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     5,
      4,
      2
     ]
    },
    "hp": 8,
    "sp": 14,
-   "zone": "ns",
+   "zone": "ov",
    "correct": "2NT",
    "why": "6-5 i minorerne: 2NT – spillestærk, men honnørsvag.",
    "en": {
@@ -1807,131 +3566,30 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     5,
-     2
+     13,
+     4,
+     3
     ],
     "H": [
      8
     ],
     "D": [
      10,
-     6,
-     4,
      2
     ],
     "C": [
-     14,
-     11,
+     12,
+     9,
+     8,
+     7,
+     6,
      5,
-     4,
-     3,
-     2
-    ]
-   },
-   "hp": 5,
-   "sp": 9,
-   "zone": "ov",
-   "correct": "2♣",
-   "why": "6 klør og 5 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
-   "en": {
-    "why": "6 clubs and 5 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     8,
-     7
-    ],
-    "H": [
-     13
-    ],
-    "D": [
-     10,
-     5,
-     2
-    ],
-    "C": [
-     12,
-     11,
-     10,
-     8,
-     6,
-     4,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 10,
-   "zone": "ns",
-   "correct": "2♣",
-   "why": "7 klør og 6 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
-   "en": {
-    "why": "7 clubs and 6 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     12,
-     3,
-     2
-    ],
-    "H": [
-     10
-    ],
-    "D": [
-     9,
-     3
-    ],
-    "C": [
-     13,
-     12,
-     9,
-     8,
-     7,
-     6,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 11,
-   "zone": "alle",
-   "correct": "2♣",
-   "why": "7 klør og 7 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
-   "en": {
-    "why": "7 clubs and 7 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     11,
-     9,
-     7,
-     6
-    ],
-    "H": [],
-    "D": [
-     6,
-     2
-    ],
-    "C": [
-     14,
-     10,
-     9,
-     8,
-     7,
-     6,
      4
     ]
    },
    "hp": 5,
-   "sp": 11,
-   "zone": "ov",
+   "sp": 9,
+   "zone": "alle",
    "correct": "2♣",
    "why": "7 klør og 5 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
    "en": {
@@ -1942,156 +3600,57 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     8,
-     5,
-     4,
-     2
-    ],
-    "H": [],
-    "D": [
-     13,
-     2
-    ],
-    "C": [
-     14,
      11,
-     9,
      8,
-     4,
-     3,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 14,
-   "zone": "alle",
-   "correct": "2♣",
-   "why": "7 klør og 8 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
-   "en": {
-    "why": "7 clubs and 8 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     14
+     6,
+     5
     ],
     "H": [
-     5,
-     4
+     5
     ],
     "D": [
-     9,
-     8,
      7,
-     2
-    ],
-    "C": [
-     12,
-     11,
-     10,
-     7,
-     4,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 11,
-   "zone": "ov",
-   "correct": "2♣",
-   "why": "6 klør og 7 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
-   "en": {
-    "why": "6 clubs and 7 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     10,
-     9,
-     3
-    ],
-    "H": [],
-    "D": [
-     14,
-     11,
-     7
-    ],
-    "C": [
-     12,
-     10,
-     9,
-     6,
-     5,
-     4,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 12,
-   "zone": "alle",
-   "correct": "2♣",
-   "why": "7 klør og 7 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
-   "en": {
-    "why": "7 clubs and 7 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     8,
-     7,
-     3
-    ],
-    "H": [],
-    "D": [
-     8,
-     7,
-     3
+     6
     ],
     "C": [
      14,
-     12,
-     11,
+     10,
      9,
-     5,
-     4,
+     8,
+     7,
      3
     ]
    },
-   "hp": 7,
-   "sp": 12,
+   "hp": 5,
+   "sp": 9,
    "zone": "ingen",
    "correct": "2♣",
-   "why": "7 klør og 7 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
+   "why": "6 klør og 5 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
    "en": {
-    "why": "7 clubs and 7 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
+    "why": "6 clubs and 5 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
    }
   },
   {
    "situation": "ut8",
    "hand": {
     "S": [
-     13
+     14,
+     5
     ],
     "H": [
-     10,
-     8
+     6
     ],
     "D": [
-     12,
      10,
+     8,
      6,
-     3
+     5
     ],
     "C": [
-     11,
+     12,
      10,
      9,
-     8,
+     6,
      5,
      4
     ]
@@ -2109,24 +3668,595 @@
    "situation": "ut8",
    "hand": {
     "S": [
+     9,
+     4
+    ],
+    "H": [
+     13,
+     4
+    ],
+    "D": [
      7,
+     3
+    ],
+    "C": [
+     14,
+     11,
+     8,
+     7,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "zone": "ov",
+   "correct": "2♣",
+   "why": "7 klør og 8 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 clubs and 8 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     8,
      5,
      4,
+     2
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     8,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 13,
+   "zone": "ov",
+   "correct": "2♣",
+   "why": "7 klør og 7 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 clubs and 7 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     12,
+     7,
+     5,
+     2
+    ],
+    "H": [],
+    "D": [
+     10,
+     9
+    ],
+    "C": [
+     13,
+     10,
+     8,
+     7,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 11,
+   "zone": "ov",
+   "correct": "2♣",
+   "why": "7 klør og 5 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 clubs and 5 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     10,
+     5,
+     4
+    ],
+    "H": [],
+    "D": [
+     12,
+     10,
+     6,
+     3
+    ],
+    "C": [
+     13,
+     10,
+     7,
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 10,
+   "zone": "ns",
+   "correct": "2♣",
+   "why": "6 klør og 5 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 clubs and 5 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     8,
+     7,
+     6,
+     5
+    ],
+    "H": [],
+    "D": [
+     11,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     8,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 14,
+   "zone": "ov",
+   "correct": "2♣",
+   "why": "7 klør og 8 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 clubs and 8 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
      3
     ],
     "H": [
-     14
+     10,
+     8
+    ],
+    "D": [
+     11,
+     7,
+     6,
+     5
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "zone": "ns",
+   "correct": "2♣",
+   "why": "6 klør og 8 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 clubs and 8 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     8,
+     5,
+     3
+    ],
+    "H": [
+     8
+    ],
+    "D": [
+     12,
+     4
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     9,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 10,
+   "zone": "ns",
+   "correct": "2♣",
+   "why": "7 klør og 6 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 clubs and 6 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     7,
+     5
+    ],
+    "H": [],
+    "D": [
+     9,
+     8,
+     6,
+     4
+    ],
+    "C": [
+     13,
+     11,
+     8,
+     7,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "7 klør og 4 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 clubs and 4 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     12,
+     5
+    ],
+    "D": [
+     11,
+     10,
+     8,
+     6
+    ],
+    "C": [
+     11,
+     10,
+     9,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 8,
+   "zone": "ov",
+   "correct": "2♣",
+   "why": "6 klør og 4 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 clubs and 4 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     13,
+     9,
+     4,
+     3
+    ],
+    "H": [],
+    "D": [
+     11,
+     2
+    ],
+    "C": [
+     13,
+     11,
+     9,
+     7,
+     5,
+     4,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 14,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "7 klør og 8 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 clubs and 8 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     12,
+     3
+    ],
+    "H": [],
+    "D": [
+     13,
+     10,
+     8,
+     6
+    ],
+    "C": [
+     13,
+     10,
+     8,
+     6,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 14,
+   "zone": "ov",
+   "correct": "2♣",
+   "why": "7 klør og 8 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 clubs and 8 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11
+    ],
+    "H": [
+     9,
+     8
+    ],
+    "D": [
+     9,
+     8,
+     7,
+     6
+    ],
+    "C": [
+     14,
+     10,
+     9,
+     8,
+     6,
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "6 klør og 5 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 clubs and 5 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11,
+     2
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     11,
+     9,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     6,
+     5,
+     4,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 8,
+   "zone": "ingen",
+   "correct": "2♣",
+   "why": "6 klør og 4 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 clubs and 4 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11,
+     10,
+     5
+    ],
+    "H": [
+     10,
+     5
     ],
     "D": [
      13,
      7
     ],
     "C": [
-     9,
+     11,
      8,
+     7,
      6,
      5,
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 7,
+   "zone": "ns",
+   "correct": "2♣",
+   "why": "6 klør og 5 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 clubs and 5 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
+     6,
+     4
+    ],
+    "D": [
+     12,
+     8,
+     6,
+     5
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     8,
+     7,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "6 klør og 6 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 clubs and 6 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     13,
+     7,
+     6,
+     5
+    ],
+    "H": [],
+    "D": [
+     8,
+     6
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     9,
+     8,
+     7,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 14,
+   "zone": "ingen",
+   "correct": "2♣",
+   "why": "7 klør og 8 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 clubs and 8 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     7,
+     2
+    ],
+    "H": [
+     7,
+     4
+    ],
+    "D": [
+     6,
      4,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     9,
+     7,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 8,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "6 klør og 6 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 clubs and 6 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9,
+     4
+    ],
+    "H": [
+     8,
+     5
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     14,
+     9,
+     8,
+     7,
+     6,
      2
     ]
    },
@@ -2143,59 +4273,25 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     8,
-     7
-    ],
-    "H": [
-     9,
-     5
-    ],
-    "D": [
-     14,
-     5,
-     2
-    ],
-    "C": [
-     9,
-     8,
-     6,
-     5,
-     4,
-     2
-    ]
-   },
-   "hp": 4,
-   "sp": 6,
-   "zone": "ov",
-   "correct": "2♣",
-   "why": "6 klør og 4 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
-   "en": {
-    "why": "6 clubs and 4 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     11
-    ],
-    "H": [
-     14,
-     2
-    ],
-    "D": [
-     9,
-     8,
-     4,
-     2
-    ],
-    "C": [
-     12,
      11,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     2
+    ],
+    "D": [
      10,
-     9,
+     4
+    ],
+    "C": [
+     14,
+     13,
      5,
-     3
+     4,
+     3,
+     2
     ]
    },
    "hp": 8,
@@ -2211,68 +4307,101 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     10
+     11,
+     9,
+     5
     ],
-    "H": [
-     13,
-     10
-    ],
+    "H": [],
     "D": [
-     12,
-     5,
-     4,
-     2
+     10,
+     8,
+     7
     ],
     "C": [
+     13,
      12,
      11,
-     8,
      7,
-     6,
-     4
+     4,
+     3,
+     2
     ]
    },
-   "hp": 8,
+   "hp": 7,
    "sp": 12,
    "zone": "ov",
    "correct": "2♣",
-   "why": "6 klør og 8 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
+   "why": "7 klør og 7 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
    "en": {
-    "why": "6 clubs and 8 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
+    "why": "7 clubs and 7 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
    }
   },
   {
    "situation": "ut8",
    "hand": {
     "S": [
-     4
-    ],
-    "H": [
+     10,
+     9,
+     7,
      6
     ],
+    "H": [
+     5
+    ],
     "D": [
+     4
+    ],
+    "C": [
+     14,
+     12,
+     7,
+     5,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 12,
+   "zone": "alle",
+   "correct": "2♣",
+   "why": "7 klør og 6 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 clubs and 6 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     13,
+     8
+    ],
+    "D": [
+     11,
+     9,
+     8,
+     2
+    ],
+    "C": [
      12,
      10,
-     8,
      6,
      5,
      4,
      2
-    ],
-    "C": [
-     13,
-     9,
-     8,
-     7
     ]
    },
-   "hp": 5,
-   "sp": 11,
+   "hp": 6,
+   "sp": 10,
    "zone": "ns",
-   "correct": "2♦",
-   "why": "7 ruder og 5 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
+   "correct": "2♣",
+   "why": "6 klør og 6 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her).",
    "en": {
-    "why": "7 diamonds and 5 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
+    "why": "6 clubs and 6 HCP: 2♣ – weak and non-forcing (a new suit is the weakest bid here)."
    }
   },
   {
@@ -2280,15 +4409,48 @@
    "hand": {
     "S": [
      14,
-     8,
-     3
+     7
     ],
     "H": [
+     7,
      5
     ],
     "D": [
      12,
+     9,
+     8,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     8,
+     7,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 8,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "6 ruder og 6 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 diamonds and 6 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     13,
      10,
+     8,
+     2
+    ],
+    "H": [],
+    "D": [
+     13,
+     11,
      8,
      6,
      5,
@@ -2296,13 +4458,13 @@
      2
     ],
     "C": [
-     11,
+     5,
      4
     ]
    },
    "hp": 7,
-   "sp": 11,
-   "zone": "ingen",
+   "sp": 13,
+   "zone": "ov",
    "correct": "2♦",
    "why": "7 ruder og 7 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
    "en": {
@@ -2313,131 +4475,29 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     11,
      10,
-     8,
-     5
-    ],
-    "H": [
-     12,
      3
-    ],
-    "D": [
-     14,
-     9,
-     8,
-     5,
-     3,
-     2
-    ],
-    "C": [
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 11,
-   "zone": "alle",
-   "correct": "2♦",
-   "why": "6 ruder og 7 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
-   "en": {
-    "why": "6 diamonds and 7 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     9,
-     8,
-     5,
-     4
-    ],
-    "H": [
-     3,
-     2
-    ],
-    "D": [
-     14,
-     12,
-     11,
-     7,
-     3,
-     2
-    ],
-    "C": [
-     7
-    ]
-   },
-   "hp": 7,
-   "sp": 11,
-   "zone": "alle",
-   "correct": "2♦",
-   "why": "6 ruder og 7 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
-   "en": {
-    "why": "6 diamonds and 7 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     13,
-     5,
-     3,
-     2
-    ],
-    "H": [
-     5,
-     4
-    ],
-    "D": [
-     14,
-     10,
-     8,
-     7,
-     3,
-     2
-    ],
-    "C": [
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 11,
-   "zone": "ov",
-   "correct": "2♦",
-   "why": "6 ruder og 7 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
-   "en": {
-    "why": "6 diamonds and 7 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     10,
-     9,
-     4
     ],
     "H": [],
     "D": [
+     12,
      11,
-     10,
-     9,
+     8,
      7,
-     4,
-     3,
-     2
+     6,
+     5,
+     3
     ],
     "C": [
      13,
-     12,
-     4
+     10,
+     6,
+     3
     ]
    },
    "hp": 6,
-   "sp": 11,
-   "zone": "ingen",
+   "sp": 12,
+   "zone": "ov",
    "correct": "2♦",
    "why": "7 ruder og 6 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
    "en": {
@@ -2448,62 +4508,29 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     10,
-     8
-    ],
-    "H": [],
-    "D": [
-     14,
-     13,
-     10,
-     8,
-     5,
-     3,
-     2
-    ],
-    "C": [
-     10,
-     7,
-     6,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 13,
-   "zone": "alle",
-   "correct": "2♦",
-   "why": "7 ruder og 7 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
-   "en": {
-    "why": "7 diamonds and 7 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     11,
-     3
+     10
     ],
     "H": [
-     14,
-     4
+     11,
+     5
     ],
     "D": [
      12,
      11,
-     8,
-     7,
+     10,
      6,
+     5,
      2
     ],
     "C": [
-     10,
+     14,
      9,
-     7
+     7,
+     6
     ]
    },
    "hp": 8,
-   "sp": 10,
+   "sp": 12,
    "zone": "ns",
    "correct": "2♦",
    "why": "6 ruder og 8 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
@@ -2515,20 +4542,20 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     13,
-     9,
-     7,
-     5
+     6,
+     3
     ],
     "H": [
-     10
+     13,
+     6
     ],
     "D": [
-     11,
-     10,
-     9,
-     8,
+     13,
+     12,
+     6,
      5,
+     4,
+     3,
      2
     ],
     "C": [
@@ -2536,9 +4563,246 @@
      4
     ]
    },
+   "hp": 8,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "7 ruder og 8 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 diamonds and 8 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     8,
+     2
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     13,
+     11,
+     8,
+     7,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     9,
+     5,
+     4
+    ]
+   },
    "hp": 4,
    "sp": 8,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "7 ruder og 4 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 diamonds and 4 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     10,
+     8
+    ],
+    "H": [
+     6,
+     5
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     9,
+     6,
+     4,
+     3
+    ],
+    "C": [
+     7,
+     6
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
    "zone": "ov",
+   "correct": "2♦",
+   "why": "7 ruder og 5 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 diamonds and 5 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     12,
+     3
+    ],
+    "H": [
+     8
+    ],
+    "D": [
+     12,
+     11,
+     6,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     10,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "6 ruder og 5 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 diamonds and 5 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11,
+     9,
+     3
+    ],
+    "H": [],
+    "D": [
+     13,
+     10,
+     9,
+     7,
+     6,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     7,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "7 ruder og 7 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 diamonds and 7 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     8,
+     3
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     6,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "7 ruder og 6 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 diamonds and 6 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11,
+     9,
+     4,
+     3
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     12,
+     11,
+     10,
+     9,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     10
+    ]
+   },
+   "hp": 7,
+   "sp": 11,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "6 ruder og 7 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 diamonds and 7 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     9,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     7
+    ],
+    "D": [
+     12,
+     8,
+     7,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 4,
+   "sp": 8,
+   "zone": "ns",
    "correct": "2♦",
    "why": "6 ruder og 4 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
    "en": {
@@ -2549,34 +4813,68 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     11
+     6,
+     5,
+     3
     ],
     "H": [
-     9
+     6
+    ],
+    "D": [
+     14,
+     12,
+     7,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     8,
+     5,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "6 ruder og 6 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 diamonds and 6 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11,
+     3
+    ],
+    "H": [
+     9,
+     5
     ],
     "D": [
      12,
-     10,
-     9,
      8,
-     7,
-     6,
-     4
+     5,
+     4,
+     3,
+     2
     ],
     "C": [
      12,
-     10,
-     4,
-     3
+     5,
+     2
     ]
    },
    "hp": 5,
-   "sp": 11,
-   "zone": "alle",
+   "sp": 7,
+   "zone": "ov",
    "correct": "2♦",
-   "why": "7 ruder og 5 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
+   "why": "6 ruder og 5 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
    "en": {
-    "why": "7 diamonds and 5 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
+    "why": "6 diamonds and 5 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
    }
   },
   {
@@ -2584,29 +4882,95 @@
    "hand": {
     "S": [
      12,
-     9
+     10,
+     4
     ],
     "H": [
-     9
+     4
     ],
     "D": [
      14,
+     10,
      9,
+     8,
      7,
      6,
-     4,
      2
     ],
     "C": [
+     11,
+     9
+    ]
+   },
+   "hp": 7,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "7 ruder og 7 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 diamonds and 7 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
      12,
      9,
+     8,
+     5
+    ],
+    "H": [],
+    "D": [
+     13,
+     12,
+     10,
+     8,
      7,
-     6
+     6,
+     4
+    ],
+    "C": [
+     11,
+     9
     ]
    },
    "hp": 8,
-   "sp": 12,
-   "zone": "ov",
+   "sp": 14,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "7 ruder og 8 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 diamonds and 8 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11,
+     10,
+     8,
+     3
+    ],
+    "H": [],
+    "D": [
+     13,
+     12,
+     11,
+     10,
+     8,
+     7
+    ],
+    "C": [
+     11,
+     10,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 13,
+   "zone": "ns",
    "correct": "2♦",
    "why": "6 ruder og 8 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
    "en": {
@@ -2617,30 +4981,63 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     5,
-     3
+     14,
+     8,
+     4,
+     2
     ],
     "H": [
-     11,
-     5
+     12,
+     10
     ],
     "D": [
-     13,
-     11,
-     9,
+     12,
+     10,
      8,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "6 ruder og 8 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 diamonds and 8 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     9,
      5,
      4,
      3
     ],
-    "C": [
+    "H": [],
+    "D": [
+     12,
+     11,
+     10,
      8,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     12,
      5
     ]
    },
    "hp": 5,
-   "sp": 8,
-   "zone": "ov",
+   "sp": 11,
+   "zone": "ingen",
    "correct": "2♦",
    "why": "7 ruder og 5 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
    "en": {
@@ -2651,25 +5048,91 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     14
-    ],
-    "H": [
-     5
-    ],
-    "D": [
-     12,
-     11,
      9,
-     6,
+     7,
+     5,
+     2
+    ],
+    "H": [],
+    "D": [
+     14,
+     13,
+     10,
+     8,
      5,
      4,
      3
     ],
     "C": [
-     10,
-     9,
-     8,
+     3,
      2
+    ]
+   },
+   "hp": 7,
+   "sp": 13,
+   "zone": "ov",
+   "correct": "2♦",
+   "why": "7 ruder og 7 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 diamonds and 7 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     6,
+     5,
+     2
+    ],
+    "H": [
+     8,
+     6
+    ],
+    "D": [
+     14,
+     11,
+     8,
+     7,
+     5,
+     2
+    ],
+    "C": [
+     9,
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 7,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "6 ruder og 5 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 diamonds and 5 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     12,
+     8,
+     6,
+     5
+    ],
+    "H": [],
+    "D": [
+     12,
+     11,
+     10,
+     8,
+     7,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     5
     ]
    },
    "hp": 7,
@@ -2685,34 +5148,168 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     14,
-     13,
-     10,
-     9,
+     7,
      6,
-     4,
-     3
+     3,
+     2
     ],
     "H": [
+     9,
+     8
+    ],
+    "D": [
+     12,
+     11,
+     8,
+     5,
      4,
      2
     ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 4,
+   "sp": 8,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "6 ruder og 4 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 diamonds and 4 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     9,
+     8
+    ],
+    "H": [
+     3
+    ],
     "D": [
-     10
+     14,
+     9,
+     8,
+     7,
+     5,
+     4
+    ],
+    "C": [
+     11,
+     10,
+     8,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "2♦",
+   "why": "6 ruder og 5 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 diamonds and 5 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     13,
+     11,
+     8,
+     2
+    ],
+    "H": [],
+    "D": [
+     12,
+     11,
+     9,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     8,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 13,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "6 ruder og 8 hp: 2♦ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 diamonds and 8 HCP: 2♦ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     8,
+     6,
+     4,
+     2
+    ],
+    "H": [],
+    "D": [
+     13,
+     6
     ],
     "C": [
      8,
-     4,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 14,
+   "zone": "ov",
+   "correct": "2♠",
+   "why": "7 spar og 8 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 spades and 8 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11,
+     9,
+     8,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     12,
+     8,
+     6
+    ],
+    "C": [
+     14,
+     8,
      3
     ]
    },
    "hp": 7,
-   "sp": 11,
+   "sp": 10,
    "zone": "ns",
    "correct": "2♠",
-   "why": "7 spar og 7 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
+   "why": "6 spar og 7 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
    "en": {
-    "why": "7 spades and 7 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
+    "why": "6 spades and 7 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
    }
   },
   {
@@ -2721,62 +5318,28 @@
     "S": [
      11,
      10,
-     9,
-     6,
-     5,
-     3
-    ],
-    "H": [
-     10,
-     5
-    ],
-    "D": [
-     13,
-     6,
-     3
-    ],
-    "C": [
-     5,
-     2
-    ]
-   },
-   "hp": 4,
-   "sp": 6,
-   "zone": "ov",
-   "correct": "2♠",
-   "why": "6 spar og 4 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
-   "en": {
-    "why": "6 spades and 4 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     9,
      8,
      7,
      6,
-     4,
-     2
+     5
     ],
     "H": [
-     14,
-     11
+     5
     ],
     "D": [
-     2
+     14,
+     5,
+     4
     ],
     "C": [
-     9,
-     7,
-     5,
-     2
+     10,
+     4,
+     3
     ]
    },
    "hp": 5,
-   "sp": 9,
-   "zone": "ns",
+   "sp": 8,
+   "zone": "ingen",
    "correct": "2♠",
    "why": "6 spar og 5 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
    "en": {
@@ -2787,62 +5350,198 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     13,
+     11,
+     10,
+     9,
      7,
-     6,
      5,
-     4,
-     3,
-     2
+     3
     ],
     "H": [],
     "D": [
+     14,
      10,
-     6
+     8
     ],
     "C": [
-     12,
      10,
-     9,
-     4
+     8,
+     7,
+     6
     ]
    },
    "hp": 5,
-   "sp": 11,
+   "sp": 10,
    "zone": "ov",
    "correct": "2♠",
-   "why": "7 spar og 5 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
+   "why": "6 spar og 5 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
    "en": {
-    "why": "7 spades and 5 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
+    "why": "6 spades and 5 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
    }
   },
   {
    "situation": "ut8",
    "hand": {
     "S": [
-     11,
-     10,
-     7,
+     14,
+     6,
      5,
+     4,
      3,
      2
     ],
+    "H": [
+     14
+    ],
+    "D": [
+     9,
+     8,
+     7,
+     3
+    ],
+    "C": [
+     7,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "2♠",
+   "why": "6 spar og 8 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 spades and 8 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     11,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     8,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "2♠",
+   "why": "6 spar og 7 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 spades and 7 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     13,
+     8,
+     7,
+     6,
+     5,
+     4
+    ],
     "H": [],
     "D": [
-     13,
+     10,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 10,
+   "zone": "ov",
+   "correct": "2♠",
+   "why": "6 spar og 5 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 spades and 5 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     9,
      8,
      7,
      2
     ],
+    "H": [
+     2
+    ],
+    "D": [
+     11,
+     8,
+     5,
+     2
+    ],
     "C": [
+     8
+    ]
+   },
+   "hp": 6,
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "2♠",
+   "why": "7 spar og 6 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 spades and 6 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     14,
+     10,
      9,
+     6,
      4,
+     3
+    ],
+    "H": [
+     7,
+     5
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     8,
+     6,
+     3,
      2
     ]
    },
    "hp": 4,
-   "sp": 9,
-   "zone": "ns",
+   "sp": 8,
+   "zone": "alle",
    "correct": "2♠",
    "why": "6 spar og 4 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
    "en": {
@@ -2853,24 +5552,24 @@
    "situation": "ut8",
    "hand": {
     "S": [
+     13,
      12,
      11,
-     10,
-     9,
      5,
-     2
+     4,
+     3
     ],
     "H": [
-     13,
-     12
-    ],
-    "D": [
+     12,
      6
     ],
+    "D": [
+     10
+    ],
     "C": [
-     10,
-     8,
+     9,
      7,
+     6,
      2
     ]
    },
@@ -2887,98 +5586,30 @@
    "situation": "ut8",
    "hand": {
     "S": [
+     13,
      11,
      10,
      9,
      8,
-     6,
-     3
-    ],
-    "H": [
-     4
-    ],
-    "D": [
-     12,
-     10
-    ],
-    "C": [
-     14,
-     9,
-     5,
-     3
-    ]
-   },
-   "hp": 7,
-   "sp": 11,
-   "zone": "ns",
-   "correct": "2♠",
-   "why": "6 spar og 7 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
-   "en": {
-    "why": "6 spades and 7 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     13,
-     11,
-     9,
-     8,
-     5,
-     3,
-     2
-    ],
-    "H": [
-     8,
-     6
-    ],
-    "D": [
-     13,
      7,
      3
     ],
-    "C": [
-     9
-    ]
-   },
-   "hp": 7,
-   "sp": 11,
-   "zone": "ingen",
-   "correct": "2♠",
-   "why": "7 spar og 7 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
-   "en": {
-    "why": "7 spades and 7 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     14,
-     12,
+    "H": [
+     12
+    ],
+    "D": [
      10,
-     8,
-     6,
-     4,
-     2
-    ],
-    "H": [
-     9
-    ],
-    "D": [
-     7,
-     6,
-     4
+     9,
+     3
     ],
     "C": [
-     7,
-     3
+     6,
+     4
     ]
    },
    "hp": 6,
    "sp": 10,
-   "zone": "alle",
+   "zone": "ov",
    "correct": "2♠",
    "why": "7 spar og 6 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
    "en": {
@@ -2990,28 +5621,61 @@
    "hand": {
     "S": [
      14,
-     13,
+     11,
      10,
+     9,
      7,
-     6,
-     5,
-     4
+     4,
+     2
     ],
-    "H": [
-     3
-    ],
+    "H": [],
     "D": [
-     6
+     13,
+     6,
+     2
     ],
     "C": [
      10,
-     9,
-     8,
+     3,
      2
     ]
    },
-   "hp": 7,
+   "hp": 8,
    "sp": 13,
+   "zone": "ns",
+   "correct": "2♠",
+   "why": "7 spar og 8 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 spades and 8 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     10,
+     9,
+     8,
+     7,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     8,
+     6
+    ],
+    "D": [
+     7
+    ],
+    "C": [
+     14,
+     13,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 11,
    "zone": "ns",
    "correct": "2♠",
    "why": "7 spar og 7 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
@@ -3023,34 +5687,167 @@
    "situation": "ut8",
    "hand": {
     "S": [
+     11,
+     7,
+     5,
+     4,
+     3,
+     2
+    ],
+    "H": [],
+    "D": [
+     12,
+     8,
+     6,
+     4
+    ],
+    "C": [
+     12,
+     10,
+     9
+    ]
+   },
+   "hp": 5,
+   "sp": 10,
+   "zone": "ingen",
+   "correct": "2♠",
+   "why": "6 spar og 5 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 spades and 5 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
      13,
+     11,
      10,
      9,
-     8,
+     7,
+     6,
+     4
+    ],
+    "H": [],
+    "D": [
+     10,
+     2
+    ],
+    "C": [
+     12,
+     7,
+     6,
+     4
+    ]
+   },
+   "hp": 6,
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "2♠",
+   "why": "7 spar og 6 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 spades and 6 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10,
+     9,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     5,
+     2
+    ],
+    "D": [
+     13,
+     6
+    ],
+    "C": [
+     6,
+     4
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "2♠",
+   "why": "7 spar og 6 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 spades and 6 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     13,
+     11,
+     7,
+     6,
      4,
      3
     ],
     "H": [
-     10
+     5,
+     4
     ],
     "D": [
-     12,
      11,
-     3
+     9,
+     5,
+     4
     ],
     "C": [
-     11,
-     7,
-     5
+     3
     ]
    },
-   "hp": 7,
-   "sp": 10,
-   "zone": "ns",
+   "hp": 5,
+   "sp": 9,
+   "zone": "ov",
    "correct": "2♠",
-   "why": "6 spar og 7 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
+   "why": "6 spar og 5 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
    "en": {
-    "why": "6 spades and 7 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
+    "why": "6 spades and 5 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     8,
+     6,
+     4,
+     3
+    ],
+    "H": [],
+    "D": [
+     9,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     9
+    ]
+   },
+   "hp": 6,
+   "sp": 12,
+   "zone": "ov",
+   "correct": "2♠",
+   "why": "7 spar og 6 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 spades and 6 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
    }
   },
   {
@@ -3058,63 +5855,196 @@
    "hand": {
     "S": [
      13,
+     10,
+     8,
+     6,
+     4,
+     3,
+     2
+    ],
+    "H": [],
+    "D": [
+     7,
+     4
+    ],
+    "C": [
      12,
+     9,
+     6,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 11,
+   "zone": "ov",
+   "correct": "2♠",
+   "why": "7 spar og 5 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 spades and 5 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     14,
+     10,
      9,
      8,
      6,
      5,
-     3
+     4
     ],
-    "H": [
-     8,
-     2
-    ],
+    "H": [],
     "D": [
-     8
-    ],
-    "C": [
-     13,
-     3,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 12,
-   "zone": "ingen",
-   "correct": "2♠",
-   "why": "7 spar og 8 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
-   "en": {
-    "why": "7 spades and 8 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     13,
-     11,
-     10,
-     6,
-     3,
-     2
-    ],
-    "H": [
-     5
-    ],
-    "D": [
-     12,
      8,
      7,
      6
     ],
     "C": [
+     12,
+     10,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 11,
+   "zone": "ov",
+   "correct": "2♠",
+   "why": "7 spar og 6 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "7 spades and 6 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     8,
+     7,
+     6,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     7,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "2♠",
+   "why": "6 spar og 6 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 spades and 6 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     13,
      11,
-     9
+     7,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     9,
+     4
+    ],
+    "D": [
+     5,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     7
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "zone": "ingen",
+   "correct": "2♠",
+   "why": "6 spar og 8 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 spades and 8 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     9,
+     8,
+     4,
+     3
+    ],
+    "C": [
+     10,
+     7
+    ]
+   },
+   "hp": 5,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "2♠",
+   "why": "6 spar og 5 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
+   "en": {
+    "why": "6 spades and 5 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     4,
+     3,
+     2
+    ],
+    "H": [],
+    "D": [
+     6,
+     5,
+     2
+    ],
+    "C": [
+     11,
+     9,
+     7,
+     4
     ]
    },
    "hp": 7,
-   "sp": 11,
-   "zone": "ns",
+   "sp": 12,
+   "zone": "ingen",
    "correct": "2♠",
    "why": "6 spar og 7 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
    "en": {
@@ -3125,194 +6055,91 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     13,
+     14,
+     12,
+     7,
+     6,
      5,
-     4,
-     2
-    ],
-    "H": [
-     6,
-     3
-    ],
-    "D": [
-     13,
-     6,
      4
     ],
+    "H": [],
+    "D": [
+     10,
+     8,
+     7,
+     6
+    ],
     "C": [
-     9,
-     5,
-     4,
-     2
+     12,
+     7,
+     6
     ]
    },
-   "hp": 6,
-   "sp": 7,
-   "zone": "ingen",
-   "correct": "Pas",
-   "why": "6 hp uden støtte og uden lang farve: pas.",
+   "hp": 8,
+   "sp": 13,
+   "zone": "ov",
+   "correct": "2♠",
+   "why": "6 spar og 8 hp: 2♠ – svag og ikke krav (ny farve er den svageste melding her).",
    "en": {
-    "why": "6 HCP without support and without a long suit: pass."
+    "why": "6 spades and 8 HCP: 2♠ – weak and non-forcing (a new suit is the weakest bid here)."
    }
   },
   {
    "situation": "ut8",
    "hand": {
     "S": [
-     8,
+     11,
      7,
-     5,
-     3
+     3,
+     2
     ],
     "H": [
-     12,
      11
     ],
     "D": [
-     12,
-     8,
-     5,
-     4
-    ],
-    "C": [
-     11,
-     8,
-     4
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "zone": "ingen",
-   "correct": "Pas",
-   "why": "6 hp uden støtte og uden lang farve: pas.",
-   "en": {
-    "why": "6 HCP without support and without a long suit: pass."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     14,
-     12,
-     6,
-     2
-    ],
-    "H": [
-     4
-    ],
-    "D": [
-     10,
-     5,
+     13,
+     7,
      3,
      2
     ],
     "C": [
+     12,
      10,
      8,
-     7,
-     4
-    ]
-   },
-   "hp": 6,
-   "sp": 9,
-   "zone": "ingen",
-   "correct": "Pas",
-   "why": "6 hp uden støtte og uden lang farve: pas.",
-   "en": {
-    "why": "6 HCP without support and without a long suit: pass."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     11,
-     10,
-     5
-    ],
-    "H": [
-     11,
-     9
-    ],
-    "D": [
-     9,
-     8,
-     7,
      3
-    ],
-    "C": [
-     14,
-     7,
-     6,
-     2
     ]
    },
-   "hp": 6,
-   "sp": 7,
-   "zone": "ingen",
-   "correct": "Pas",
-   "why": "6 hp uden støtte og uden lang farve: pas.",
-   "en": {
-    "why": "6 HCP without support and without a long suit: pass."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     11,
-     8,
-     7,
-     5
-    ],
-    "H": [
-     5
-    ],
-    "D": [
-     14,
-     9,
-     8,
-     4
-    ],
-    "C": [
-     11,
-     10,
-     6,
-     5
-    ]
-   },
-   "hp": 6,
-   "sp": 9,
+   "hp": 7,
+   "sp": 10,
    "zone": "alle",
    "correct": "Pas",
-   "why": "6 hp uden støtte og uden lang farve: pas.",
+   "why": "7 hp uden støtte og uden lang farve: pas.",
    "en": {
-    "why": "6 HCP without support and without a long suit: pass."
+    "why": "7 HCP without support and without a long suit: pass."
    }
   },
   {
    "situation": "ut8",
    "hand": {
     "S": [
-     14,
-     10,
-     8,
-     4
+     11,
+     7,
+     6,
+     2
     ],
     "H": [
-     4,
+     8,
      3
     ],
     "D": [
-     10,
-     9,
-     4
+     13,
+     4,
+     3,
+     2
     ],
     "C": [
      9,
-     8,
-     3,
+     4,
      2
     ]
    },
@@ -3329,63 +6156,63 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     8,
-     7,
-     6,
-     5
+     10,
+     4,
+     3,
+     2
     ],
     "H": [
-     11,
-     5
+     12,
+     4
     ],
     "D": [
-     12,
-     7,
-     6,
-     3
+     8,
+     5,
+     2
     ],
     "C": [
-     12,
      10,
-     4
+     9,
+     5,
+     2
     ]
    },
-   "hp": 5,
-   "sp": 6,
-   "zone": "ingen",
+   "hp": 2,
+   "sp": 3,
+   "zone": "ov",
    "correct": "Pas",
-   "why": "5 hp uden støtte og uden lang farve: pas.",
+   "why": "2 hp uden støtte og uden lang farve: pas.",
    "en": {
-    "why": "5 HCP without support and without a long suit: pass."
+    "why": "2 HCP without support and without a long suit: pass."
    }
   },
   {
    "situation": "ut8",
    "hand": {
     "S": [
-     14,
-     10,
+     9,
      8,
+     3,
      2
     ],
     "H": [
-     9,
-     2
+     11
     ],
     "D": [
-     11,
-     4,
-     2
+     13,
+     10,
+     9,
+     3
     ],
     "C": [
-     13,
-     9,
+     14,
      6,
+     5,
      4
     ]
    },
    "hp": 8,
-   "sp": 9,
+   "sp": 11,
    "zone": "ingen",
    "correct": "Pas",
    "why": "8 hp uden støtte og uden lang farve: pas.",
@@ -3397,25 +6224,433 @@
    "situation": "ut8",
    "hand": {
     "S": [
-     14,
-     12,
-     8,
+     10,
+     6,
      3
     ],
     "H": [
      6,
+     4
+    ],
+    "D": [
+     11,
+     9,
+     7,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     10,
+     7
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "6 hp uden støtte og uden lang farve: pas.",
+   "en": {
+    "why": "6 HCP without support and without a long suit: pass."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11,
+     7,
+     4,
+     2
+    ],
+    "H": [
+     11,
+     7
+    ],
+    "D": [
+     12,
+     11,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     7
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "7 hp uden støtte og uden lang farve: pas.",
+   "en": {
+    "why": "7 HCP without support and without a long suit: pass."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     13,
+     6,
+     5
+    ],
+    "H": [
+     7,
      5
     ],
     "D": [
+     11,
+     9,
+     8,
+     6
+    ],
+    "C": [
+     13,
+     11,
      6,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "8 hp uden støtte og uden lang farve: pas.",
+   "en": {
+    "why": "8 HCP without support and without a long suit: pass."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     13,
+     8,
+     3
+    ],
+    "H": [
+     11,
+     5
+    ],
+    "D": [
+     10,
+     7,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     8,
+     5,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "7 hp uden støtte og uden lang farve: pas.",
+   "en": {
+    "why": "7 HCP without support and without a long suit: pass."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11,
+     10,
+     3
+    ],
+    "H": [
+     7,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     8,
+     7
+    ],
+    "C": [
+     9,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "4 hp uden støtte og uden lang farve: pas.",
+   "en": {
+    "why": "4 HCP without support and without a long suit: pass."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     9,
+     7,
+     5,
+     4
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     10,
+     9,
+     6,
+     2
+    ],
+    "C": [
+     7,
      5,
      4,
+     2
+    ]
+   },
+   "hp": 0,
+   "sp": 3,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "0 hp uden støtte og uden lang farve: pas.",
+   "en": {
+    "why": "0 HCP without support and without a long suit: pass."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     10,
+     9,
+     6,
+     3
+    ],
+    "H": [
+     11,
+     10
+    ],
+    "D": [
+     12,
+     10,
+     4
+    ],
+    "C": [
+     10,
+     9,
+     5,
+     3
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "3 hp uden støtte og uden lang farve: pas.",
+   "en": {
+    "why": "3 HCP without support and without a long suit: pass."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     5,
+     4,
+     2
+    ],
+    "H": [
+     5,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     10,
      2
     ],
     "C": [
      11,
      8,
+     5,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "8 hp uden støtte og uden lang farve: pas.",
+   "en": {
+    "why": "8 HCP without support and without a long suit: pass."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     12,
+     11,
+     5
+    ],
+    "H": [
+     7,
      6
+    ],
+    "D": [
+     12,
+     8,
+     7,
+     4
+    ],
+    "C": [
+     10,
+     7,
+     6,
+     5
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "5 hp uden støtte og uden lang farve: pas.",
+   "en": {
+    "why": "5 HCP without support and without a long suit: pass."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     9,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     10,
+     7,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     7,
+     6,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "6 hp uden støtte og uden lang farve: pas.",
+   "en": {
+    "why": "6 HCP without support and without a long suit: pass."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     12,
+     8,
+     7
+    ],
+    "H": [
+     10,
+     9
+    ],
+    "D": [
+     13,
+     7,
+     5,
+     3
+    ],
+    "C": [
+     9,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "5 hp uden støtte og uden lang farve: pas.",
+   "en": {
+    "why": "5 HCP without support and without a long suit: pass."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     13,
+     10,
+     7,
+     3
+    ],
+    "H": [
+     14,
+     3
+    ],
+    "D": [
+     11,
+     6,
+     3
+    ],
+    "C": [
+     10,
+     7,
+     4,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "8 hp uden støtte og uden lang farve: pas.",
+   "en": {
+    "why": "8 HCP without support and without a long suit: pass."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11,
+     6,
+     2
+    ],
+    "H": [
+     8,
+     7
+    ],
+    "D": [
+     13,
+     8,
+     7,
+     6
+    ],
+    "C": [
+     12,
+     11,
+     8,
+     2
     ]
    },
    "hp": 7,
@@ -3432,135 +6667,271 @@
    "hand": {
     "S": [
      13,
-     11,
-     6,
-     3
-    ],
-    "H": [
-     9,
-     6
-    ],
-    "D": [
-     11,
-     8,
-     3
-    ],
-    "C": [
-     10,
-     7,
-     6,
-     3
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "zone": "alle",
-   "correct": "Pas",
-   "why": "5 hp uden støtte og uden lang farve: pas.",
-   "en": {
-    "why": "5 HCP without support and without a long suit: pass."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     14,
-     8,
-     7,
-     4
-    ],
-    "H": [
-     9,
-     6
-    ],
-    "D": [
-     10,
-     5,
-     4,
-     3
-    ],
-    "C": [
-     11,
-     10,
-     6
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "zone": "alle",
-   "correct": "Pas",
-   "why": "5 hp uden støtte og uden lang farve: pas.",
-   "en": {
-    "why": "5 HCP without support and without a long suit: pass."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     10,
-     7,
-     6,
-     5
-    ],
-    "H": [
-     9,
-     6
-    ],
-    "D": [
-     12,
      8,
      2
     ],
-    "C": [
-     9,
-     7,
-     4,
-     3
-    ]
-   },
-   "hp": 2,
-   "sp": 3,
-   "zone": "alle",
-   "correct": "Pas",
-   "why": "2 hp uden støtte og uden lang farve: pas.",
-   "en": {
-    "why": "2 HCP without support and without a long suit: pass."
-   }
-  },
-  {
-   "situation": "ut8",
-   "hand": {
-    "S": [
-     10,
-     7,
-     4
-    ],
     "H": [
-     7,
+     9,
      4
     ],
     "D": [
-     14,
-     7,
-     4,
+     11,
+     10,
+     9,
      2
     ],
     "C": [
      14,
      8,
      6,
-     5
+     4
     ]
    },
    "hp": 8,
    "sp": 9,
-   "zone": "ov",
+   "zone": "alle",
    "correct": "Pas",
    "why": "8 hp uden støtte og uden lang farve: pas.",
    "en": {
     "why": "8 HCP without support and without a long suit: pass."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     8,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     10,
+     7,
+     6,
+     4
+    ],
+    "C": [
+     14,
+     11,
+     6,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "6 hp uden støtte og uden lang farve: pas.",
+   "en": {
+    "why": "6 HCP without support and without a long suit: pass."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     6,
+     5,
+     4
+    ],
+    "H": [
+     10,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     6,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     7,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "7 hp uden støtte og uden lang farve: pas.",
+   "en": {
+    "why": "7 HCP without support and without a long suit: pass."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     9,
+     8,
+     7,
+     5
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     11,
+     9,
+     6,
+     5
+    ],
+    "C": [
+     13,
+     9,
+     8,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 7,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "4 hp uden støtte og uden lang farve: pas.",
+   "en": {
+    "why": "4 HCP without support and without a long suit: pass."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     13,
+     8,
+     3
+    ],
+    "H": [
+     6,
+     2
+    ],
+    "D": [
+     9,
+     8,
+     5,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     8
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "6 hp uden støtte og uden lang farve: pas.",
+   "en": {
+    "why": "6 HCP without support and without a long suit: pass."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11,
+     8,
+     4,
+     2
+    ],
+    "H": [
+     8
+    ],
+    "D": [
+     12,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     5,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "5 hp uden støtte og uden lang farve: pas.",
+   "en": {
+    "why": "5 HCP without support and without a long suit: pass."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     10,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     11,
+     9
+    ],
+    "D": [
+     12,
+     11,
+     10,
+     8
+    ],
+    "C": [
+     14,
+     7,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "8 hp uden støtte og uden lang farve: pas.",
+   "en": {
+    "why": "8 HCP without support and without a long suit: pass."
+   }
+  },
+  {
+   "situation": "ut8",
+   "hand": {
+    "S": [
+     11,
+     9,
+     7,
+     6
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     10,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     6,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "7 hp uden støtte og uden lang farve: pas.",
+   "en": {
+    "why": "7 HCP without support and without a long suit: pass."
    }
   }
  ]

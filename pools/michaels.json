@@ -258,33 +258,32 @@
    "situation": "ind_kl",
    "hand": {
     "S": [
-     14,
      13,
-     12,
-     7,
+     10,
+     9,
      4,
      2
     ],
     "H": [
-     13,
-     11,
-     10,
-     6,
-     5
+     12,
+     8,
+     7,
+     4,
+     3,
+     2
     ],
     "D": [
-     8
+     13,
+     9
     ],
-    "C": [
-     14
-    ]
+    "C": []
    },
-   "hp": 17,
-   "sp": 23,
+   "hp": 8,
+   "sp": 14,
    "correct": "2♣",
-   "why": "5 hjerter og 6 spar og 17 hp (17+): 2♣ viser begge majorer, mindst 5-5.",
+   "why": "6 hjerter og 5 spar og 8 hp (8–15): 2♣ viser begge majorer, mindst 5-5.",
    "en": {
-    "why": "5 hearts and 6 spades and 17 HCP (17+): 2♣ shows both majors, at least 5-5."
+    "why": "6 hearts and 5 spades and 8 HCP (8–15): 2♣ shows both majors, at least 5-5."
    }
   },
   {
@@ -292,92 +291,27 @@
    "hand": {
     "S": [
      14,
-     12,
+     13,
      10,
-     8,
+     9,
      7
     ],
     "H": [
-     14,
      13,
-     11,
-     9,
-     7
+     8,
+     7,
+     4,
+     3
     ],
     "D": [],
     "C": [
      14,
-     6,
-     2
-    ]
-   },
-   "hp": 18,
-   "sp": 23,
-   "correct": "2♣",
-   "why": "5 hjerter og 5 spar og 18 hp (17+): 2♣ viser begge majorer, mindst 5-5.",
-   "en": {
-    "why": "5 hearts and 5 spades and 18 HCP (17+): 2♣ shows both majors, at least 5-5."
-   }
-  },
-  {
-   "situation": "ind_kl",
-   "hand": {
-    "S": [
-     14,
      13,
-     12,
-     8,
-     5,
-     4
-    ],
-    "H": [
-     14,
-     10,
-     9,
-     5,
-     2
-    ],
-    "D": [
-     14,
-     12
-    ],
-    "C": []
-   },
-   "hp": 19,
-   "sp": 25,
-   "correct": "2♣",
-   "why": "5 hjerter og 6 spar og 19 hp (17+): 2♣ viser begge majorer, mindst 5-5.",
-   "en": {
-    "why": "5 hearts and 6 spades and 19 HCP (17+): 2♣ shows both majors, at least 5-5."
-   }
-  },
-  {
-   "situation": "ind_kl",
-   "hand": {
-    "S": [
-     14,
-     13,
-     6,
-     4,
-     2
-    ],
-    "H": [
-     13,
-     11,
-     8,
-     7,
-     2
-    ],
-    "D": [
-     12
-    ],
-    "C": [
-     14,
-     10
+     8
     ]
    },
    "hp": 17,
-   "sp": 21,
+   "sp": 22,
    "correct": "2♣",
    "why": "5 hjerter og 5 spar og 17 hp (17+): 2♣ viser begge majorer, mindst 5-5.",
    "en": {
@@ -390,31 +324,30 @@
     "S": [
      14,
      13,
-     12,
      9,
-     5,
-     4
-    ],
-    "H": [
-     13,
-     12,
-     8,
-     5,
+     6,
+     3,
      2
     ],
-    "D": [
-     14
+    "H": [
+     14,
+     11,
+     10,
+     7,
+     6,
+     3
     ],
+    "D": [],
     "C": [
-     8
+     3
     ]
    },
-   "hp": 18,
-   "sp": 24,
+   "hp": 12,
+   "sp": 20,
    "correct": "2♣",
-   "why": "5 hjerter og 6 spar og 18 hp (17+): 2♣ viser begge majorer, mindst 5-5.",
+   "why": "6 hjerter og 6 spar og 12 hp (8–15): 2♣ viser begge majorer, mindst 5-5.",
    "en": {
-    "why": "5 hearts and 6 spades and 18 HCP (17+): 2♣ shows both majors, at least 5-5."
+    "why": "6 hearts and 6 spades and 12 HCP (8–15): 2♣ shows both majors, at least 5-5."
    }
   },
   {
@@ -422,22 +355,22 @@
    "hand": {
     "S": [
      14,
-     10,
-     9,
-     7,
-     3
+     12,
+     11,
+     5,
+     2
     ],
     "H": [
      13,
-     12,
-     11,
-     8,
+     10,
+     7,
+     5,
      3
     ],
     "D": [
      14,
-     5,
-     4
+     10,
+     5
     ],
     "C": []
    },
@@ -455,62 +388,31 @@
     "S": [
      13,
      12,
-     6,
-     5,
-     4
-    ],
-    "H": [
-     13,
-     12,
-     9,
-     8,
-     2
-    ],
-    "D": [],
-    "C": [
-     8,
-     7,
-     2
-    ]
-   },
-   "hp": 10,
-   "sp": 15,
-   "correct": "2♣",
-   "why": "5 hjerter og 5 spar og 10 hp (8–15): 2♣ viser begge majorer, mindst 5-5.",
-   "en": {
-    "why": "5 hearts and 5 spades and 10 HCP (8–15): 2♣ shows both majors, at least 5-5."
-   }
-  },
-  {
-   "situation": "ind_kl",
-   "hand": {
-    "S": [
-     14,
-     12,
-     9,
-     4,
+     11,
+     10,
      2
     ],
     "H": [
      14,
      13,
      11,
-     8,
-     2
+     10,
+     9,
+     4
     ],
-    "D": [],
+    "D": [
+     13
+    ],
     "C": [
-     14,
-     5,
-     2
+     11
     ]
    },
    "hp": 18,
-   "sp": 23,
+   "sp": 24,
    "correct": "2♣",
-   "why": "5 hjerter og 5 spar og 18 hp (17+): 2♣ viser begge majorer, mindst 5-5.",
+   "why": "6 hjerter og 5 spar og 18 hp (17+): 2♣ viser begge majorer, mindst 5-5.",
    "en": {
-    "why": "5 hearts and 5 spades and 18 HCP (17+): 2♣ shows both majors, at least 5-5."
+    "why": "6 hearts and 5 spades and 18 HCP (17+): 2♣ shows both majors, at least 5-5."
    }
   },
   {
@@ -518,32 +420,63 @@
    "hand": {
     "S": [
      14,
-     13,
-     7,
+     11,
+     10,
+     9,
      6,
      5
     ],
     "H": [
+     14,
+     13,
      12,
-     9,
-     6,
      5,
      4,
      3
     ],
     "D": [
-     7
+     3
     ],
+    "C": []
+   },
+   "hp": 14,
+   "sp": 22,
+   "correct": "2♣",
+   "why": "6 hjerter og 6 spar og 14 hp (8–15): 2♣ viser begge majorer, mindst 5-5.",
+   "en": {
+    "why": "6 hearts and 6 spades and 14 HCP (8–15): 2♣ shows both majors, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     9,
+     7,
+     2
+    ],
+    "D": [],
     "C": [
-     10
+     6,
+     4,
+     3
     ]
    },
-   "hp": 9,
-   "sp": 15,
+   "hp": 8,
+   "sp": 13,
    "correct": "2♣",
-   "why": "6 hjerter og 5 spar og 9 hp (8–15): 2♣ viser begge majorer, mindst 5-5.",
+   "why": "5 hjerter og 5 spar og 8 hp (8–15): 2♣ viser begge majorer, mindst 5-5.",
    "en": {
-    "why": "6 hearts and 5 spades and 9 HCP (8–15): 2♣ shows both majors, at least 5-5."
+    "why": "5 hearts and 5 spades and 8 HCP (8–15): 2♣ shows both majors, at least 5-5."
    }
   },
   {
@@ -552,23 +485,23 @@
     "S": [
      14,
      13,
-     11,
      9,
-     8,
-     5
+     6,
+     4,
+     3
     ],
     "H": [
      14,
      13,
-     10,
+     11,
      5,
-     4
+     2
     ],
-    "D": [],
-    "C": [
+    "D": [
      13,
-     10
-    ]
+     8
+    ],
+    "C": []
    },
    "hp": 18,
    "sp": 24,
@@ -582,57 +515,476 @@
    "situation": "ind_kl",
    "hand": {
     "S": [
-     14,
-     12,
+     13,
+     8,
      5,
      4,
-     3,
      2
     ],
     "H": [
+     14,
+     13,
      11,
-     9,
-     7,
      6,
-     3,
+     5
+    ],
+    "D": [
+     11,
+     7,
      2
     ],
-    "D": [],
-    "C": [
-     2
-    ]
+    "C": []
    },
-   "hp": 7,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "6 hjerter og 6 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♣",
+   "why": "5 hjerter og 5 spar og 12 hp (8–15): 2♣ viser begge majorer, mindst 5-5.",
    "en": {
-    "why": "6 hearts and 6 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
+    "why": "5 hearts and 5 spades and 12 HCP (8–15): 2♣ shows both majors, at least 5-5."
    }
   },
   {
    "situation": "ind_kl",
    "hand": {
     "S": [
+     14,
+     10,
+     9,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     6,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     2
+    ],
+    "C": []
+   },
+   "hp": 11,
+   "sp": 19,
+   "correct": "2♣",
+   "why": "6 hjerter og 6 spar og 11 hp (8–15): 2♣ viser begge majorer, mindst 5-5.",
+   "en": {
+    "why": "6 hearts and 6 spades and 11 HCP (8–15): 2♣ shows both majors, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     9,
+     5,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     10,
+     8,
+     3
+    ],
+    "D": [
+     10
+    ],
+    "C": []
+   },
+   "hp": 17,
+   "sp": 25,
+   "correct": "2♣",
+   "why": "6 hjerter og 6 spar og 17 hp (17+): 2♣ viser begge majorer, mindst 5-5.",
+   "en": {
+    "why": "6 hearts and 6 spades and 17 HCP (17+): 2♣ shows both majors, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     8,
+     6,
+     4
+    ],
+    "H": [
+     13,
+     11,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     9
+    ],
+    "C": []
+   },
+   "hp": 15,
+   "sp": 21,
+   "correct": "2♣",
+   "why": "5 hjerter og 6 spar og 15 hp (8–15): 2♣ viser begge majorer, mindst 5-5.",
+   "en": {
+    "why": "5 hearts and 6 spades and 15 HCP (8–15): 2♣ shows both majors, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
      8,
      7,
-     6,
-     4,
-     3
+     4
     ],
     "H": [
      14,
      9,
      8,
      7,
-     5,
-     3
+     2
     ],
     "D": [
-     4
+     14,
+     8
+    ],
+    "C": []
+   },
+   "hp": 17,
+   "sp": 23,
+   "correct": "2♣",
+   "why": "5 hjerter og 6 spar og 17 hp (17+): 2♣ viser begge majorer, mindst 5-5.",
+   "en": {
+    "why": "5 hearts and 6 spades and 17 HCP (17+): 2♣ shows both majors, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     8,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     6
+    ],
+    "D": [
+     8
     ],
     "C": [
+     9
+    ]
+   },
+   "hp": 17,
+   "sp": 23,
+   "correct": "2♣",
+   "why": "5 hjerter og 6 spar og 17 hp (17+): 2♣ viser begge majorer, mindst 5-5.",
+   "en": {
+    "why": "5 hearts and 6 spades and 17 HCP (17+): 2♣ shows both majors, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_kl",
+   "hand": {
+    "S": [
+     12,
+     11,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     7,
+     4,
+     2
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     7
+    ]
+   },
+   "hp": 8,
+   "sp": 14,
+   "correct": "2♣",
+   "why": "6 hjerter og 5 spar og 8 hp (8–15): 2♣ viser begge majorer, mindst 5-5.",
+   "en": {
+    "why": "6 hearts and 5 spades and 8 HCP (8–15): 2♣ shows both majors, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     10,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     8,
+     5,
+     2
+    ],
+    "D": [],
+    "C": [
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 22,
+   "correct": "2♣",
+   "why": "6 hjerter og 6 spar og 14 hp (8–15): 2♣ viser begge majorer, mindst 5-5.",
+   "en": {
+    "why": "6 hearts and 6 spades and 14 HCP (8–15): 2♣ shows both majors, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_kl",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9,
+     7,
      5
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     7,
+     4
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     7,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "5 hjerter og 5 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 hearts and 5 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_kl",
+   "hand": {
+    "S": [
+     13,
+     7,
+     6,
+     3,
+     2
+    ],
+    "H": [
+     11,
+     10,
+     9,
+     7,
+     6
+    ],
+    "D": [],
+    "C": [
+     8,
+     3,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 9,
+   "correct": "Pas",
+   "why": "5 hjerter og 5 spar, men kun 4 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 hearts and 5 spades, but only 4 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_kl",
+   "hand": {
+    "S": [
+     12,
+     11,
+     10,
+     9,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     10,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     7,
+     5
+    ],
+    "C": []
+   },
+   "hp": 6,
+   "sp": 12,
+   "correct": "Pas",
+   "why": "5 hjerter og 6 spar, men kun 6 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 hearts and 6 spades, but only 6 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     7,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     10,
+     8,
+     7,
+     4,
+     2
+    ],
+    "D": [
+     6,
+     4
+    ],
+    "C": []
+   },
+   "hp": 5,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "5 hjerter og 6 spar, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 hearts and 6 spades, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_kl",
+   "hand": {
+    "S": [
+     10,
+     8,
+     6,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     8,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     7
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 4,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "5 hjerter og 6 spar, men kun 4 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 hearts and 6 spades, but only 4 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_kl",
+   "hand": {
+    "S": [
+     10,
+     8,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     6,
+     4
+    ],
+    "D": [
+     8,
+     6,
+     4
+    ],
+    "C": []
+   },
+   "hp": 6,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "5 hjerter og 5 spar, men kun 6 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 hearts and 5 spades, but only 6 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_kl",
+   "hand": {
+    "S": [
+     11,
+     10,
+     6,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     9,
+     8,
+     7,
+     6,
+     2
+    ],
+    "D": [],
+    "C": [
+     6,
+     2
     ]
    },
    "hp": 4,
@@ -647,217 +999,184 @@
    "situation": "ind_kl",
    "hand": {
     "S": [
+     13,
      12,
-     11,
+     9,
      8,
      6,
-     3
+     5
     ],
     "H": [
-     11,
-     10,
      8,
      7,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     8,
      4
     ],
-    "D": [],
-    "C": [
-     12,
-     8,
-     5
-    ]
+    "C": []
    },
-   "hp": 6,
+   "hp": 5,
    "sp": 11,
    "correct": "Pas",
-   "why": "5 hjerter og 5 spar, men kun 6 hp – kravet er 8–15 eller 17+. Pas.",
+   "why": "5 hjerter og 6 spar, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
    "en": {
-    "why": "5 hearts and 5 spades, but only 6 HCP – the requirement is 8–15 or 17+. Pass."
+    "why": "5 hearts and 6 spades, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
    }
   },
   {
    "situation": "ind_kl",
    "hand": {
     "S": [
-     12,
-     8,
-     5,
-     4,
-     2
-    ],
-    "H": [
-     12,
      11,
-     10,
-     9,
-     6
-    ],
-    "D": [
-     12,
+     6,
+     5,
      4,
      3
-    ],
-    "C": []
-   },
-   "hp": 7,
-   "sp": 12,
-   "correct": "Pas",
-   "why": "5 hjerter og 5 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
-   "en": {
-    "why": "5 hearts and 5 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_kl",
-   "hand": {
-    "S": [
-     14,
-     10,
-     9,
-     7,
-     5,
-     4
     ],
     "H": [
      13,
-     6,
-     4,
-     3,
-     2
-    ],
-    "D": [
-     3
-    ],
-    "C": [
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 13,
-   "correct": "Pas",
-   "why": "5 hjerter og 6 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
-   "en": {
-    "why": "5 hearts and 6 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_kl",
-   "hand": {
-    "S": [
-     12,
-     7,
-     5,
-     4,
-     2
-    ],
-    "H": [
-     12,
-     11,
-     9,
-     6,
-     5
-    ],
-    "D": [
-     9
-    ],
-    "C": [
      8,
-     6
-    ]
-   },
-   "hp": 5,
-   "sp": 9,
-   "correct": "Pas",
-   "why": "5 hjerter og 5 spar, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
-   "en": {
-    "why": "5 hearts and 5 spades, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_kl",
-   "hand": {
-    "S": [
-     11,
-     10,
-     9,
      7,
-     6
-    ],
-    "H": [
-     13,
-     11,
      6,
      5,
      4
     ],
     "D": [
-     10,
-     9,
-     3
-    ],
-    "C": []
-   },
-   "hp": 5,
-   "sp": 10,
-   "correct": "Pas",
-   "why": "5 hjerter og 5 spar, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
-   "en": {
-    "why": "5 hearts and 5 spades, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_kl",
-   "hand": {
-    "S": [
-     10,
-     9,
-     8,
-     7,
      4
-    ],
-    "H": [
-     9,
-     7,
-     6,
-     4,
-     2
-    ],
-    "D": [
-     14,
-     11
     ],
     "C": [
      8
     ]
    },
-   "hp": 5,
-   "sp": 9,
+   "hp": 4,
+   "sp": 10,
    "correct": "Pas",
-   "why": "5 hjerter og 5 spar, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
+   "why": "6 hjerter og 5 spar, men kun 4 hp – kravet er 8–15 eller 17+. Pas.",
    "en": {
-    "why": "5 hearts and 5 spades, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
+    "why": "6 hearts and 5 spades, but only 4 HCP – the requirement is 8–15 or 17+. Pass."
    }
   },
   {
    "situation": "ind_kl",
    "hand": {
     "S": [
-     11,
-     10,
+     13,
      8,
+     7,
      5,
-     4
+     4,
+     2
     ],
     "H": [
-     12,
      11,
-     7,
+     9,
+     5,
      4,
      2
     ],
     "D": [
+     6,
+     4
+    ],
+    "C": []
+   },
+   "hp": 4,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "5 hjerter og 6 spar, men kun 4 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 hearts and 6 spades, but only 4 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_kl",
+   "hand": {
+    "S": [
+     13,
+     7,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     11,
+     10,
+     9,
      7,
      4,
+     3
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     10
+    ]
+   },
+   "hp": 5,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "6 hjerter og 5 spar, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "6 hearts and 5 spades, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_kl",
+   "hand": {
+    "S": [
+     10,
+     9,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     12,
+     4
+    ],
+    "C": []
+   },
+   "hp": 7,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "6 hjerter og 5 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "6 hearts and 5 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_kl",
+   "hand": {
+    "S": [
+     12,
+     10,
+     6,
+     3,
+     2
+    ],
+    "H": [
+     11,
+     9,
+     7,
+     5,
+     2
+    ],
+    "D": [
+     11,
+     9,
      2
     ],
     "C": []
@@ -874,61 +1193,125 @@
    "situation": "ind_kl",
    "hand": {
     "S": [
-     12,
      9,
+     5,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     3,
+     2
+    ],
+    "D": [],
+    "C": [
+     12,
+     10,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "correct": "Pas",
+   "why": "5 hjerter og 5 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 hearts and 5 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_kl",
+   "hand": {
+    "S": [
+     12,
+     10,
      8,
-     7,
-     4
+     3,
+     2
     ],
     "H": [
      12,
-     11,
-     7,
+     8,
+     5,
      4,
      2
     ],
     "D": [
-     10,
-     3,
-     2
+     13,
+     8,
+     7
     ],
     "C": []
    },
-   "hp": 5,
-   "sp": 10,
+   "hp": 7,
+   "sp": 12,
    "correct": "Pas",
-   "why": "5 hjerter og 5 spar, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
+   "why": "5 hjerter og 5 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
    "en": {
-    "why": "5 hearts and 5 spades, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
+    "why": "5 hearts and 5 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_kl",
+   "hand": {
+    "S": [
+     12,
+     10,
+     9,
+     8,
+     5,
+     4
+    ],
+    "H": [
+     13,
+     10,
+     8,
+     6,
+     5
+    ],
+    "D": [],
+    "C": [
+     12,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "5 hjerter og 6 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 hearts and 6 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
    }
   },
   {
    "situation": "svar_kl",
    "hand": {
     "S": [
-     2
+     8,
+     7
     ],
     "H": [
-     11,
-     9,
-     8
+     7,
+     4,
+     2
     ],
     "D": [
-     12,
-     11,
-     10,
-     9,
+     8,
+     6,
+     5,
+     4,
      3
     ],
     "C": [
-     10,
-     9,
+     14,
      8,
-     5
+     7
     ]
    },
    "hp": 4,
-   "sp": 7,
+   "sp": 5,
    "correct": "2♥",
    "why": "Svag hånd (4 hp) med flest hjerter: præference på laveste niveau – 2♥.",
    "en": {
@@ -939,161 +1322,95 @@
    "situation": "svar_kl",
    "hand": {
     "S": [
-     10,
-     6
+     6,
+     2
     ],
     "H": [
-     12,
-     8,
-     3
-    ],
-    "D": [
-     12,
-     11,
+     10,
+     7,
      5
     ],
-    "C": [
-     13,
-     11,
-     10,
-     4,
-     3
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "correct": "2♥",
-   "why": "Svag hånd (9 hp) med flest hjerter: præference på laveste niveau – 2♥.",
-   "en": {
-    "why": "Weak hand (9 HCP) with more hearts: preference at the lowest level – 2♥."
-   }
-  },
-  {
-   "situation": "svar_kl",
-   "hand": {
-    "S": [
-     6
-    ],
-    "H": [
-     6,
-     5,
-     3
-    ],
     "D": [
-     10,
+     11,
      8,
-     4,
-     2
+     7,
+     5,
+     3
     ],
     "C": [
+     11,
      9,
-     8,
-     5,
-     3,
-     2
+     4
     ]
    },
-   "hp": 0,
+   "hp": 2,
    "sp": 3,
    "correct": "2♥",
-   "why": "Svag hånd (0 hp) med flest hjerter: præference på laveste niveau – 2♥.",
+   "why": "Svag hånd (2 hp) med flest hjerter: præference på laveste niveau – 2♥.",
    "en": {
-    "why": "Weak hand (0 HCP) with more hearts: preference at the lowest level – 2♥."
+    "why": "Weak hand (2 HCP) with more hearts: preference at the lowest level – 2♥."
    }
   },
   {
    "situation": "svar_kl",
    "hand": {
     "S": [
-     4,
-     3
-    ],
-    "H": [
-     10,
      7,
-     2
-    ],
-    "D": [
-     10,
-     9,
-     7,
-     6,
-     2
-    ],
-    "C": [
-     9,
-     6,
-     5
-    ]
-   },
-   "hp": 0,
-   "sp": 1,
-   "correct": "2♥",
-   "why": "Svag hånd (0 hp) med flest hjerter: præference på laveste niveau – 2♥.",
-   "en": {
-    "why": "Weak hand (0 HCP) with more hearts: preference at the lowest level – 2♥."
-   }
-  },
-  {
-   "situation": "svar_kl",
-   "hand": {
-    "S": [
-     13,
-     7
-    ],
-    "H": [
-     14,
-     11,
-     5
-    ],
-    "D": [
-     11,
-     10,
-     8,
-     6,
-     5
-    ],
-    "C": [
-     9,
-     5,
-     2
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "correct": "2♥",
-   "why": "Svag hånd (9 hp) med flest hjerter: præference på laveste niveau – 2♥.",
-   "en": {
-    "why": "Weak hand (9 HCP) with more hearts: preference at the lowest level – 2♥."
-   }
-  },
-  {
-   "situation": "svar_kl",
-   "hand": {
-    "S": [
-     12,
      6
     ],
     "H": [
-     11,
-     6,
+     10,
+     8,
      4
     ],
     "D": [
      14,
+     12,
      11,
-     9,
+     8,
+     4
+    ],
+    "C": [
+     10,
+     8,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "2♥",
+   "why": "Svag hånd (7 hp) med flest hjerter: præference på laveste niveau – 2♥.",
+   "en": {
+    "why": "Weak hand (7 HCP) with more hearts: preference at the lowest level – 2♥."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     13,
+     12,
+     5
+    ],
+    "D": [
+     10,
+     8,
+     5,
      4,
      2
     ],
     "C": [
-     9,
+     13,
+     10,
      8,
-     3
+     5
     ]
    },
    "hp": 8,
-   "sp": 9,
+   "sp": 11,
    "correct": "2♥",
    "why": "Svag hånd (8 hp) med flest hjerter: præference på laveste niveau – 2♥.",
    "en": {
@@ -1104,23 +1421,56 @@
    "situation": "svar_kl",
    "hand": {
     "S": [
-     3
+     6
     ],
     "H": [
-     9,
-     6,
-     3
+     14,
+     7,
+     5
     ],
     "D": [
      12,
      9,
-     3,
+     6,
+     5,
      2
     ],
     "C": [
-     13,
      12,
+     10,
+     6,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "correct": "2♥",
+   "why": "Svag hånd (8 hp) med flest hjerter: præference på laveste niveau – 2♥.",
+   "en": {
+    "why": "Weak hand (8 HCP) with more hearts: preference at the lowest level – 2♥."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     14,
      9,
+     7
+    ],
+    "D": [
+     13,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     9,
+     8,
+     7,
      4,
      2
     ]
@@ -1137,24 +1487,123 @@
    "situation": "svar_kl",
    "hand": {
     "S": [
-     14,
-     6
+     4
+    ],
+    "H": [
+     12,
+     11,
+     10
+    ],
+    "D": [
+     10,
+     8,
+     6,
+     5
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     5,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "2♥",
+   "why": "Svag hånd (6 hp) med flest hjerter: præference på laveste niveau – 2♥.",
+   "en": {
+    "why": "Weak hand (6 HCP) with more hearts: preference at the lowest level – 2♥."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     4
     ],
     "H": [
      13,
-     11,
-     3
+     10,
+     6
     ],
     "D": [
      11,
      10,
-     7,
+     5,
      4,
      3
     ],
     "C": [
+     11,
+     10,
+     8,
+     7
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "correct": "2♥",
+   "why": "Svag hånd (5 hp) med flest hjerter: præference på laveste niveau – 2♥.",
+   "en": {
+    "why": "Weak hand (5 HCP) with more hearts: preference at the lowest level – 2♥."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     11,
+     3
+    ],
+    "H": [
+     10,
      9,
+     5
+    ],
+    "D": [
+     12,
+     6,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     8,
      7,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2♥",
+   "why": "Svag hånd (9 hp) med flest hjerter: præference på laveste niveau – 2♥.",
+   "en": {
+    "why": "Weak hand (9 HCP) with more hearts: preference at the lowest level – 2♥."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     9,
+     2
+    ],
+    "H": [
+     14,
+     9,
+     5
+    ],
+    "D": [
+     12,
+     8,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     10,
+     8,
      2
     ]
    },
@@ -1170,62 +1619,128 @@
    "situation": "svar_kl",
    "hand": {
     "S": [
-     10,
-     7,
-     2
+     12,
+     5
     ],
     "H": [
-     9,
+     8,
+     6,
      3
     ],
     "D": [
      12,
-     9,
-     7,
-     6,
-     5
+     11,
+     10,
+     8,
+     6
     ],
     "C": [
      11,
-     8,
-     2
+     9,
+     3
     ]
    },
-   "hp": 3,
-   "sp": 4,
-   "correct": "2♠",
-   "why": "Svag hånd (3 hp) med flest spar: præference på laveste niveau – 2♠.",
+   "hp": 6,
+   "sp": 7,
+   "correct": "2♥",
+   "why": "Svag hånd (6 hp) med flest hjerter: præference på laveste niveau – 2♥.",
    "en": {
-    "why": "Weak hand (3 HCP) with more spades: preference at the lowest level – 2♠."
+    "why": "Weak hand (6 HCP) with more hearts: preference at the lowest level – 2♥."
    }
   },
   {
    "situation": "svar_kl",
    "hand": {
     "S": [
-     11,
-     10,
-     4
+     6,
+     2
     ],
     "H": [
-     12,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     7,
+     5,
+     4
+    ],
+    "C": [
+     11,
+     8,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 1,
+   "sp": 2,
+   "correct": "2♥",
+   "why": "Svag hånd (1 hp) med flest hjerter: præference på laveste niveau – 2♥.",
+   "en": {
+    "why": "Weak hand (1 HCP) with more hearts: preference at the lowest level – 2♥."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
+     9,
+     7,
      6
     ],
     "D": [
-     11,
-     8,
-     6,
+     14,
+     10,
+     9,
+     7,
+     4
+    ],
+    "C": [
+     14,
+     10,
+     7,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "correct": "2♥",
+   "why": "Svag hånd (8 hp) med flest hjerter: præference på laveste niveau – 2♥.",
+   "en": {
+    "why": "Weak hand (8 HCP) with more hearts: preference at the lowest level – 2♥."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     12,
+     5,
      3
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     12,
+     7,
+     6,
+     5,
+     4
     ],
     "C": [
      14,
      11,
-     10,
-     3
+     7,
+     6
     ]
    },
    "hp": 9,
-   "sp": 10,
+   "sp": 12,
    "correct": "2♠",
    "why": "Svag hånd (9 hp) med flest spar: præference på laveste niveau – 2♠.",
    "en": {
@@ -1236,24 +1751,57 @@
    "situation": "svar_kl",
    "hand": {
     "S": [
-     11,
-     7,
+     13,
+     5,
      2
     ],
     "H": [
-     10,
-     7
+     9
     ],
     "D": [
-     14,
      11,
-     10,
      9,
-     4
+     4,
+     3,
+     2
     ],
     "C": [
-     9,
+     14,
+     10,
+     6,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "correct": "2♠",
+   "why": "Svag hånd (8 hp) med flest spar: præference på laveste niveau – 2♠.",
+   "en": {
+    "why": "Weak hand (8 HCP) with more spades: preference at the lowest level – 2♠."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
      7,
+     5,
+     2
+    ],
+    "H": [
+     9,
+     8
+    ],
+    "D": [
+     11,
+     8,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     11,
      3
     ]
    },
@@ -1269,124 +1817,25 @@
    "situation": "svar_kl",
    "hand": {
     "S": [
-     11,
+     7,
      3,
      2
     ],
     "H": [
-     4,
-     2
+     7
     ],
     "D": [
      14,
-     13,
-     7,
-     5,
-     4
-    ],
-    "C": [
      11,
-     9,
-     7
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "correct": "2♠",
-   "why": "Svag hånd (9 hp) med flest spar: præference på laveste niveau – 2♠.",
-   "en": {
-    "why": "Weak hand (9 HCP) with more spades: preference at the lowest level – 2♠."
-   }
-  },
-  {
-   "situation": "svar_kl",
-   "hand": {
-    "S": [
-     14,
-     11,
+     6,
      5
     ],
-    "H": [
-     11,
-     2
-    ],
-    "D": [
-     13,
-     8,
-     5,
-     3
-    ],
     "C": [
-     8,
-     6,
-     3,
-     2
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "correct": "2♠",
-   "why": "Svag hånd (9 hp) med flest spar: præference på laveste niveau – 2♠.",
-   "en": {
-    "why": "Weak hand (9 HCP) with more spades: preference at the lowest level – 2♠."
-   }
-  },
-  {
-   "situation": "svar_kl",
-   "hand": {
-    "S": [
-     6,
-     5,
-     3
-    ],
-    "H": [
-     7,
-     3
-    ],
-    "D": [
-     10,
-     6,
-     4,
-     3,
-     2
-    ],
-    "C": [
-     12,
-     11,
-     10
-    ]
-   },
-   "hp": 3,
-   "sp": 4,
-   "correct": "2♠",
-   "why": "Svag hånd (3 hp) med flest spar: præference på laveste niveau – 2♠.",
-   "en": {
-    "why": "Weak hand (3 HCP) with more spades: preference at the lowest level – 2♠."
-   }
-  },
-  {
-   "situation": "svar_kl",
-   "hand": {
-    "S": [
-     14,
-     6,
-     4
-    ],
-    "H": [
-     10
-    ],
-    "D": [
      11,
      10,
      7,
-     5,
-     3
-    ],
-    "C": [
-     11,
-     10,
-     9,
-     7
+     3,
+     2
     ]
    },
    "hp": 6,
@@ -1401,25 +1850,91 @@
    "situation": "svar_kl",
    "hand": {
     "S": [
-     9,
      6,
-     3
+     3,
+     2
     ],
     "H": [
      11,
-     5
+     2
     ],
     "D": [
-     13,
      12,
      10,
-     4
+     8,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     10
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "2♠",
+   "why": "Svag hånd (6 hp) med flest spar: præference på laveste niveau – 2♠.",
+   "en": {
+    "why": "Weak hand (6 HCP) with more spades: preference at the lowest level – 2♠."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     10,
+     5,
+     2
+    ],
+    "H": [
+     8,
+     3
+    ],
+    "D": [
+     12,
+     7,
+     5,
+     3
     ],
     "C": [
      12,
      10,
-     7,
-     4
+     5,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "2♠",
+   "why": "Svag hånd (4 hp) med flest spar: præference på laveste niveau – 2♠.",
+   "en": {
+    "why": "Weak hand (4 HCP) with more spades: preference at the lowest level – 2♠."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     10,
+     6
+    ],
+    "H": [
+     9,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     7
+    ],
+    "C": [
+     10,
+     8,
+     6,
+     2
     ]
    },
    "hp": 8,
@@ -1434,33 +1949,458 @@
    "situation": "svar_kl",
    "hand": {
     "S": [
-     13
+     10,
+     7,
+     4
     ],
     "H": [
-     10,
-     8,
-     7,
-     2
+     3
     ],
     "D": [
      13,
-     6,
+     10,
+     7,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     8,
+     7,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "2♠",
+   "why": "Svag hånd (7 hp) med flest spar: præference på laveste niveau – 2♠.",
+   "en": {
+    "why": "Weak hand (7 HCP) with more spades: preference at the lowest level – 2♠."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     9,
+     6
+    ],
+    "H": [
+     6
+    ],
+    "D": [
+     8,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     7,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "2♠",
+   "why": "Svag hånd (9 hp) med flest spar: præference på laveste niveau – 2♠.",
+   "en": {
+    "why": "Weak hand (9 HCP) with more spades: preference at the lowest level – 2♠."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     11,
+     10,
+     5
+    ],
+    "H": [
+     14,
+     2
+    ],
+    "D": [
+     12,
+     9,
+     7,
      3,
      2
     ],
     "C": [
      10,
      9,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "2♠",
+   "why": "Svag hånd (7 hp) med flest spar: præference på laveste niveau – 2♠.",
+   "en": {
+    "why": "Weak hand (7 HCP) with more spades: preference at the lowest level – 2♠."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     8,
+     6,
+     4
+    ],
+    "H": [
+     13,
+     8
+    ],
+    "D": [
+     12,
+     10,
+     8,
+     7,
+     4
+    ],
+    "C": [
+     8,
+     6,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "2♠",
+   "why": "Svag hånd (5 hp) med flest spar: præference på laveste niveau – 2♠.",
+   "en": {
+    "why": "Weak hand (5 HCP) with more spades: preference at the lowest level – 2♠."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     11,
+     7,
+     3
+    ],
+    "H": [
+     2
+    ],
+    "D": [
+     13,
+     7,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     11,
+     9,
+     5,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "correct": "2♠",
+   "why": "Svag hånd (5 hp) med flest spar: præference på laveste niveau – 2♠.",
+   "en": {
+    "why": "Weak hand (5 HCP) with more spades: preference at the lowest level – 2♠."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     6,
+     3
+    ],
+    "H": [
+     8,
+     6
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     9,
+     4
+    ],
+    "C": [
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2♠",
+   "why": "Svag hånd (9 hp) med flest spar: præference på laveste niveau – 2♠.",
+   "en": {
+    "why": "Weak hand (9 HCP) with more spades: preference at the lowest level – 2♠."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [],
+    "H": [
+     10,
+     7,
+     4,
+     2
+    ],
+    "D": [
+     12,
+     8,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     8,
+     7
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "correct": "3♥",
+   "why": "4 hjerter og 7 hp: spring til 3♥ er spærrende med god støtte.",
+   "en": {
+    "why": "4 hearts and 7 HCP: the jump to 3♥ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     12,
+     8,
+     7
+    ],
+    "D": [
+     12,
+     10,
+     8,
+     6,
+     4
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 14,
+   "correct": "3♥",
+   "why": "4 hjerter og 9 hp: spring til 3♥ er spærrende med god støtte.",
+   "en": {
+    "why": "4 hearts and 9 HCP: the jump to 3♥ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     8
+    ],
+    "H": [
+     10,
+     9,
+     8,
+     6,
+     4
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     14,
+     10,
+     7,
      6,
      5
     ]
    },
-   "hp": 6,
-   "sp": 9,
+   "hp": 7,
+   "sp": 11,
    "correct": "3♥",
-   "why": "4 hjerter og 6 hp: spring til 3♥ er spærrende med god støtte.",
+   "why": "5 hjerter og 7 hp: spring til 3♥ er spærrende med god støtte.",
    "en": {
-    "why": "4 hearts and 6 HCP: the jump to 3♥ is preemptive with good support."
+    "why": "5 hearts and 7 HCP: the jump to 3♥ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     14,
+     7,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     10,
+     9,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     11,
+     10
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "correct": "3♥",
+   "why": "5 hjerter og 8 hp: spring til 3♥ er spærrende med god støtte.",
+   "en": {
+    "why": "5 hearts and 8 HCP: the jump to 3♥ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     7,
+     3
+    ],
+    "H": [
+     11,
+     8,
+     7,
+     5,
+     3
+    ],
+    "D": [
+     11,
+     9
+    ],
+    "C": [
+     13,
+     11,
+     5,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 8,
+   "correct": "3♥",
+   "why": "5 hjerter og 6 hp: spring til 3♥ er spærrende med god støtte.",
+   "en": {
+    "why": "5 hearts and 6 HCP: the jump to 3♥ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     11
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     3
+    ],
+    "D": [
+     10,
+     9,
+     8,
+     7,
+     6
+    ],
+    "C": [
+     11,
+     9,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "3♥",
+   "why": "4 hjerter og 9 hp: spring til 3♥ er spærrende med god støtte.",
+   "en": {
+    "why": "4 hearts and 9 HCP: the jump to 3♥ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     9,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     9,
+     4
+    ],
+    "D": [
+     11,
+     8,
+     6,
+     5,
+     4
+    ],
+    "C": []
+   },
+   "hp": 8,
+   "sp": 13,
+   "correct": "3♥",
+   "why": "5 hjerter og 8 hp: spring til 3♥ er spærrende med god støtte.",
+   "en": {
+    "why": "5 hearts and 8 HCP: the jump to 3♥ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     10,
+     9,
+     5
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     7,
+     5
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     9,
+     3
+    ],
+    "C": []
+   },
+   "hp": 9,
+   "sp": 14,
+   "correct": "3♥",
+   "why": "5 hjerter og 9 hp: spring til 3♥ er spærrende med god støtte.",
+   "en": {
+    "why": "5 hearts and 9 HCP: the jump to 3♥ is preemptive with good support."
    }
   },
   {
@@ -1468,24 +2408,56 @@
    "hand": {
     "S": [
      4,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     8,
+     5,
+     4
+    ],
+    "D": [],
+    "C": [
+     14,
+     7,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "correct": "3♥",
+   "why": "5 hjerter og 7 hp: spring til 3♥ er spærrende med god støtte.",
+   "en": {
+    "why": "5 hearts and 7 HCP: the jump to 3♥ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     7,
      3
     ],
     "H": [
-     14,
-     9,
-     6,
-     4
-    ],
-    "D": [
-     13,
+     12,
      10,
-     8,
      7,
      5
     ],
+    "D": [
+     14,
+     11
+    ],
     "C": [
      12,
-     8
+     10,
+     9,
+     6,
+     4
     ]
    },
    "hp": 9,
@@ -1500,95 +2472,60 @@
    "situation": "svar_kl",
    "hand": {
     "S": [
-     11,
-     9
+     13,
+     8,
+     7
     ],
     "H": [
-     12,
-     5,
-     4,
-     3
+     13,
+     10,
+     8,
+     7,
+     4
     ],
-    "D": [
+    "D": [],
+    "C": [
      13,
      10,
      9,
      7,
-     4
-    ],
-    "C": [
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 14,
+   "correct": "3♥",
+   "why": "5 hjerter og 9 hp: spring til 3♥ er spærrende med god støtte.",
+   "en": {
+    "why": "5 hearts and 9 HCP: the jump to 3♥ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     11,
      8,
+     7
+    ],
+    "H": [
+     12,
+     11,
+     7,
+     6,
      5
-    ]
-   },
-   "hp": 6,
-   "sp": 8,
-   "correct": "3♥",
-   "why": "4 hjerter og 6 hp: spring til 3♥ er spærrende med god støtte.",
-   "en": {
-    "why": "4 hearts and 6 HCP: the jump to 3♥ is preemptive with good support."
-   }
-  },
-  {
-   "situation": "svar_kl",
-   "hand": {
-    "S": [
-     2
     ],
-    "H": [
-     11,
-     9,
-     6,
-     2
-    ],
-    "D": [
-     11,
-     6,
-     3,
-     2
-    ],
+    "D": [],
     "C": [
-     14,
-     8,
-     7,
-     4
-    ]
-   },
-   "hp": 6,
-   "sp": 9,
-   "correct": "3♥",
-   "why": "4 hjerter og 6 hp: spring til 3♥ er spærrende med god støtte.",
-   "en": {
-    "why": "4 hearts and 6 HCP: the jump to 3♥ is preemptive with good support."
-   }
-  },
-  {
-   "situation": "svar_kl",
-   "hand": {
-    "S": [
-     10
-    ],
-    "H": [
-     11,
-     10,
-     8,
-     7,
-     2
-    ],
-    "D": [
-     7,
-     4,
-     3
-    ],
-    "C": [
-     13,
      12,
      8,
-     4
+     6,
+     5,
+     3
     ]
    },
    "hp": 6,
-   "sp": 9,
+   "sp": 11,
    "correct": "3♥",
    "why": "5 hjerter og 6 hp: spring til 3♥ er spærrende med god støtte.",
    "en": {
@@ -1598,132 +2535,98 @@
   {
    "situation": "svar_kl",
    "hand": {
-    "S": [
-     11,
-     6,
-     4
-    ],
+    "S": [],
     "H": [
-     14,
-     13,
-     8,
-     5
+     12,
+     11,
+     7,
+     6,
+     2
     ],
     "D": [
-     10,
-     8,
-     5
+     7,
+     6,
+     3,
+     2
     ],
     "C": [
-     6,
+     13,
+     12,
      3,
      2
     ]
    },
    "hp": 8,
-   "sp": 8,
+   "sp": 13,
    "correct": "3♥",
-   "why": "4 hjerter og 8 hp: spring til 3♥ er spærrende med god støtte.",
+   "why": "5 hjerter og 8 hp: spring til 3♥ er spærrende med god støtte.",
    "en": {
-    "why": "4 hearts and 8 HCP: the jump to 3♥ is preemptive with good support."
+    "why": "5 hearts and 8 HCP: the jump to 3♥ is preemptive with good support."
    }
   },
   {
    "situation": "svar_kl",
    "hand": {
     "S": [
-     10,
-     7
-    ],
-    "H": [
-     10,
      9,
+     8,
      5,
      3
-    ],
-    "D": [
-     12,
-     10,
-     3
-    ],
-    "C": [
-     14,
-     9,
-     8,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 7,
-   "correct": "3♥",
-   "why": "4 hjerter og 6 hp: spring til 3♥ er spærrende med god støtte.",
-   "en": {
-    "why": "4 hearts and 6 HCP: the jump to 3♥ is preemptive with good support."
-   }
-  },
-  {
-   "situation": "svar_kl",
-   "hand": {
-    "S": [
-     12,
-     9,
-     8
-    ],
-    "H": [
-     14,
-     10,
-     8,
-     2
-    ],
-    "D": [
-     12,
-     9,
-     7,
-     6
-    ],
-    "C": [
-     10,
-     3
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "correct": "3♥",
-   "why": "4 hjerter og 8 hp: spring til 3♥ er spærrende med god støtte.",
-   "en": {
-    "why": "4 hearts and 8 HCP: the jump to 3♥ is preemptive with good support."
-   }
-  },
-  {
-   "situation": "svar_kl",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11,
-     10,
-     5
     ],
     "H": [],
     "D": [
      12,
+     11,
      10,
-     8,
-     4,
-     3
+     5,
+     4
     ],
     "C": [
-     9,
+     14,
+     11,
      8,
-     2
+     7
     ]
    },
-   "hp": 9,
-   "sp": 14,
+   "hp": 8,
+   "sp": 13,
    "correct": "3♠",
-   "why": "5 spar og 9 hp: spring til 3♠ er spærrende med god støtte.",
+   "why": "4 spar og 8 hp: spring til 3♠ er spærrende med god støtte.",
    "en": {
-    "why": "5 spades and 9 HCP: the jump to 3♠ is preemptive with good support."
+    "why": "4 spades and 8 HCP: the jump to 3♠ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     7,
+     3
+    ],
+    "H": [
+     10,
+     9
+    ],
+    "D": [
+     13,
+     9,
+     7,
+     6,
+     4
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "correct": "3♠",
+   "why": "5 spar og 8 hp: spring til 3♠ er spærrende med god støtte.",
+   "en": {
+    "why": "5 spades and 8 HCP: the jump to 3♠ is preemptive with good support."
    }
   },
   {
@@ -1731,28 +2634,61 @@
    "hand": {
     "S": [
      11,
-     10,
-     9,
-     7
+     8,
+     7,
+     5,
+     2
     ],
     "H": [
-     12,
-     4
+     7,
+     5
     ],
     "D": [
      14,
-     11
+     10,
+     7,
+     4
+    ],
+    "C": [
+     13,
+     8
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "correct": "3♠",
+   "why": "5 spar og 8 hp: spring til 3♠ er spærrende med god støtte.",
+   "en": {
+    "why": "5 spades and 8 HCP: the jump to 3♠ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     8,
+     5
+    ],
+    "H": [
+     12,
+     2
+    ],
+    "D": [
+     12,
+     6,
+     4
     ],
     "C": [
      11,
+     10,
      9,
-     8,
-     7,
      6
     ]
    },
    "hp": 9,
-   "sp": 11,
+   "sp": 10,
    "correct": "3♠",
    "why": "4 spar og 9 hp: spring til 3♠ er spærrende med god støtte.",
    "en": {
@@ -1764,24 +2700,122 @@
    "hand": {
     "S": [
      11,
+     8,
      7,
      6,
+     3
+    ],
+    "H": [],
+    "D": [
+     12,
+     10,
+     8,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     4
+    ]
+   },
+   "hp": 6,
+   "sp": 11,
+   "correct": "3♠",
+   "why": "5 spar og 6 hp: spring til 3♠ er spærrende med god støtte.",
+   "en": {
+    "why": "5 spades and 6 HCP: the jump to 3♠ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     9,
+     8,
+     6,
+     5,
      4
     ],
     "H": [
-     5
+     11,
+     2
     ],
     "D": [
      13,
+     8
+    ],
+    "C": [
+     14,
      11,
+     10,
+     9
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "3♠",
+   "why": "5 spar og 9 hp: spring til 3♠ er spærrende med god støtte.",
+   "en": {
+    "why": "5 spades and 9 HCP: the jump to 3♠ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     9,
+     8,
      7,
+     4
+    ],
+    "H": [
+     5,
      4,
+     2
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     6,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "3♠",
+   "why": "4 spar og 9 hp: spring til 3♠ er spærrende med god støtte.",
+   "en": {
+    "why": "4 spades and 9 HCP: the jump to 3♠ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     12,
+     9,
+     7,
+     3
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     10,
+     9,
+     7,
      3
     ],
     "C": [
-     12,
+     11,
      9,
-     4
+     8,
+     5
     ]
    },
    "hp": 7,
@@ -1797,87 +2831,21 @@
    "hand": {
     "S": [
      11,
+     9,
      8,
-     5,
-     3
+     6
     ],
     "H": [
-     9,
-     5
-    ],
-    "D": [
-     12,
-     2
-    ],
-    "C": [
-     12,
      11,
      10,
-     9,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 8,
-   "correct": "3♠",
-   "why": "4 spar og 6 hp: spring til 3♠ er spærrende med god støtte.",
-   "en": {
-    "why": "4 spades and 6 HCP: the jump to 3♠ is preemptive with good support."
-   }
-  },
-  {
-   "situation": "svar_kl",
-   "hand": {
-    "S": [
-     12,
-     8,
-     4,
-     3
-    ],
-    "H": [
      4
     ],
     "D": [
-     13,
-     10,
-     7,
-     3
+     12
     ],
     "C": [
-     14,
-     10,
-     8,
-     4
-    ]
-   },
-   "hp": 9,
-   "sp": 12,
-   "correct": "3♠",
-   "why": "4 spar og 9 hp: spring til 3♠ er spærrende med god støtte.",
-   "en": {
-    "why": "4 spades and 9 HCP: the jump to 3♠ is preemptive with good support."
-   }
-  },
-  {
-   "situation": "svar_kl",
-   "hand": {
-    "S": [
-     14,
+     13,
      11,
-     4,
-     3
-    ],
-    "H": [
-     5
-    ],
-    "D": [
-     13,
-     10,
-     8,
-     5,
-     3
-    ],
-    "C": [
      9,
      7,
      3
@@ -1896,64 +2864,163 @@
    "hand": {
     "S": [
      13,
+     9,
+     6,
+     3
+    ],
+    "H": [
+     9,
      8,
+     3
+    ],
+    "D": [
+     13,
+     12,
      3,
+     2
+    ],
+    "C": [
+     11,
+     10
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "3♠",
+   "why": "4 spar og 9 hp: spring til 3♠ er spærrende med god støtte.",
+   "en": {
+    "why": "4 spades and 9 HCP: the jump to 3♠ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     8,
+     6,
+     4,
      2
     ],
     "H": [],
     "D": [
-     12,
-     11,
-     10,
-     4,
-     3
-    ],
-    "C": [
-     12,
-     6,
-     5,
-     4
-    ]
-   },
-   "hp": 8,
-   "sp": 13,
-   "correct": "3♠",
-   "why": "4 spar og 8 hp: spring til 3♠ er spærrende med god støtte.",
-   "en": {
-    "why": "4 spades and 8 HCP: the jump to 3♠ is preemptive with good support."
-   }
-  },
-  {
-   "situation": "svar_kl",
-   "hand": {
-    "S": [
-     10,
-     7,
-     4,
-     3
-    ],
-    "H": [
-     13,
-     10,
-     4
-    ],
-    "D": [
-     10,
-     9
-    ],
-    "C": [
-     13,
-     11,
+     14,
      9,
-     8
+     4,
+     3
+    ],
+    "C": [
+     9,
+     8,
+     6,
+     3
     ]
    },
    "hp": 7,
-   "sp": 8,
+   "sp": 12,
    "correct": "3♠",
-   "why": "4 spar og 7 hp: spring til 3♠ er spærrende med god støtte.",
+   "why": "5 spar og 7 hp: spring til 3♠ er spærrende med god støtte.",
    "en": {
-    "why": "4 spades and 7 HCP: the jump to 3♠ is preemptive with good support."
+    "why": "5 spades and 7 HCP: the jump to 3♠ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     6,
+     2
+    ],
+    "H": [
+     12,
+     9,
+     5
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     11,
+     10,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "3♠",
+   "why": "4 spar og 9 hp: spring til 3♠ er spærrende med god støtte.",
+   "en": {
+    "why": "4 spades and 9 HCP: the jump to 3♠ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     11,
+     8,
+     7,
+     6
+    ],
+    "H": [
+     12,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     6,
+     3
+    ],
+    "C": [
+     11,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "3♠",
+   "why": "4 spar og 9 hp: spring til 3♠ er spærrende med god støtte.",
+   "en": {
+    "why": "4 spades and 9 HCP: the jump to 3♠ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     6
+    ],
+    "H": [
+     14,
+     11,
+     10
+    ],
+    "D": [
+     10,
+     8,
+     6
+    ],
+    "C": [
+     13,
+     9,
+     8,
+     6,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "12 hp: cuebid i deres farve (3♣) er krav og beder makker beskrive videre.",
+   "en": {
+    "why": "12 HCP: the cue-bid in their suit (3♣) is forcing and asks partner to describe further."
    }
   },
   {
@@ -1961,24 +3028,24 @@
    "hand": {
     "S": [
      13,
-     9,
-     4,
-     2
+     12,
+     3
     ],
     "H": [
-     10,
-     9,
-     8,
-     4
+     13,
+     12,
+     11,
+     10
     ],
     "D": [
-     14,
-     12,
-     7,
-     2
+     5
     ],
     "C": [
-     13
+     11,
+     10,
+     9,
+     7,
+     5
     ]
    },
    "hp": 12,
@@ -1993,57 +3060,25 @@
    "situation": "svar_kl",
    "hand": {
     "S": [
-     13,
-     5,
-     3,
-     2
-    ],
-    "H": [
      14,
      12,
      11,
-     5
-    ],
-    "D": [
-     10,
-     8,
-     4,
-     3,
-     2
-    ],
-    "C": []
-   },
-   "hp": 10,
-   "sp": 15,
-   "correct": "3♣",
-   "why": "10 hp: cuebid i deres farve (3♣) er krav og beder makker beskrive videre.",
-   "en": {
-    "why": "10 HCP: the cue-bid in their suit (3♣) is forcing and asks partner to describe further."
-   }
-  },
-  {
-   "situation": "svar_kl",
-   "hand": {
-    "S": [
-     12,
-     9,
-     7,
-     4
+     6
     ],
     "H": [
-     14,
-     12,
-     9,
-     8
-    ],
-    "D": [
-     6,
-     3,
+     8,
+     5,
+     4,
      2
     ],
-    "C": [
+    "D": [
      14,
-     12
+     9
+    ],
+    "C": [
+     13,
+     8,
+     2
     ]
    },
    "hp": 14,
@@ -2058,90 +3093,58 @@
    "situation": "svar_kl",
    "hand": {
     "S": [
-     13,
-     12,
-     11,
-     7
-    ],
-    "H": [
-     11,
-     8,
-     6,
+     7,
+     3,
      2
     ],
-    "D": [],
-    "C": [
-     14,
-     13,
-     11,
-     8,
-     3
-    ]
-   },
-   "hp": 15,
-   "sp": 20,
-   "correct": "3♣",
-   "why": "15 hp: cuebid i deres farve (3♣) er krav og beder makker beskrive videre.",
-   "en": {
-    "why": "15 HCP: the cue-bid in their suit (3♣) is forcing and asks partner to describe further."
-   }
-  },
-  {
-   "situation": "svar_kl",
-   "hand": {
-    "S": [
-     14,
-     9
-    ],
     "H": [
-     4,
-     2
-    ],
-    "D": [
-     12,
-     10,
-     6,
-     5
-    ],
-    "C": [
-     14,
-     9,
-     5,
-     4,
-     3
-    ]
-   },
-   "hp": 10,
-   "sp": 12,
-   "correct": "3♣",
-   "why": "10 hp: cuebid i deres farve (3♣) er krav og beder makker beskrive videre.",
-   "en": {
-    "why": "10 HCP: the cue-bid in their suit (3♣) is forcing and asks partner to describe further."
-   }
-  },
-  {
-   "situation": "svar_kl",
-   "hand": {
-    "S": [
-     14,
-     11,
-     9,
-     6
-    ],
-    "H": [
-     14,
-     6,
-     4
-    ],
-    "D": [
      12,
      7,
-     6,
-     5,
      4
     ],
+    "D": [
+     11,
+     8
+    ],
     "C": [
-     7
+     14,
+     13,
+     11,
+     9,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "11 hp: cuebid i deres farve (3♣) er krav og beder makker beskrive videre.",
+   "en": {
+    "why": "11 HCP: the cue-bid in their suit (3♣) is forcing and asks partner to describe further."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     4
+    ],
+    "H": [
+     11,
+     9,
+     5
+    ],
+    "D": [
+     14,
+     9,
+     7,
+     4,
+     3
+    ],
+    "C": [
+     8
     ]
    },
    "hp": 11,
@@ -2157,28 +3160,28 @@
    "hand": {
     "S": [
      13,
-     5
+     7,
+     4
     ],
     "H": [
-     14,
-     5
-    ],
-    "D": [
-     11,
-     8,
-     6,
-     3
-    ],
-    "C": [
      13,
      10,
+     4
+    ],
+    "D": [
+     12,
+     5
+    ],
+    "C": [
+     12,
+     11,
      8,
      5,
      3
     ]
    },
    "hp": 11,
-   "sp": 13,
+   "sp": 12,
    "correct": "3♣",
    "why": "11 hp: cuebid i deres farve (3♣) er krav og beder makker beskrive videre.",
    "en": {
@@ -2189,33 +3192,33 @@
    "situation": "svar_kl",
    "hand": {
     "S": [
-     7,
-     6,
-     3
+     13,
+     8,
+     5
     ],
     "H": [
-     14,
-     4
+     10,
+     8,
+     3,
+     2
     ],
     "D": [
-     14,
-     13,
-     12
+     11
     ],
     "C": [
+     13,
      12,
-     10,
-     7,
-     6,
-     5
+     11,
+     4,
+     2
     ]
    },
-   "hp": 15,
-   "sp": 16,
+   "hp": 10,
+   "sp": 13,
    "correct": "3♣",
-   "why": "15 hp: cuebid i deres farve (3♣) er krav og beder makker beskrive videre.",
+   "why": "10 hp: cuebid i deres farve (3♣) er krav og beder makker beskrive videre.",
    "en": {
-    "why": "15 HCP: the cue-bid in their suit (3♣) is forcing and asks partner to describe further."
+    "why": "10 HCP: the cue-bid in their suit (3♣) is forcing and asks partner to describe further."
    }
   },
   {
@@ -2223,28 +3226,193 @@
    "hand": {
     "S": [
      12,
-     9,
-     4
-    ],
-    "H": [
-     14,
-     10,
+     11,
      5
     ],
-    "D": [
+    "H": [
      13,
+     12,
+     11,
+     7
+    ],
+    "D": [
+     8,
      6
     ],
     "C": [
-     10,
-     9,
+     13,
+     8,
      6,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "3♣",
+   "why": "12 hp: cuebid i deres farve (3♣) er krav og beder makker beskrive videre.",
+   "en": {
+    "why": "12 HCP: the cue-bid in their suit (3♣) is forcing and asks partner to describe further."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     8,
+     7
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     5
+    ],
+    "D": [
+     14,
+     12,
+     9,
+     7
+    ],
+    "C": [
+     9,
+     8,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "11 hp: cuebid i deres farve (3♣) er krav og beder makker beskrive videre.",
+   "en": {
+    "why": "11 HCP: the cue-bid in their suit (3♣) is forcing and asks partner to describe further."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     13,
+     6,
+     3
+    ],
+    "H": [
+     12,
+     4
+    ],
+    "D": [
+     13,
+     9,
+     8,
+     3
+    ],
+    "C": [
+     13,
+     9,
+     7,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "correct": "3♣",
+   "why": "11 hp: cuebid i deres farve (3♣) er krav og beder makker beskrive videre.",
+   "en": {
+    "why": "11 HCP: the cue-bid in their suit (3♣) is forcing and asks partner to describe further."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     12
+    ],
+    "H": [
+     9,
+     4
+    ],
+    "D": [
+     12,
+     9,
+     7,
+     5,
+     4
+    ],
+    "C": [
+     13,
+     11,
      5,
      3
     ]
    },
-   "hp": 9,
-   "sp": 10,
+   "hp": 12,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "12 hp: cuebid i deres farve (3♣) er krav og beder makker beskrive videre.",
+   "en": {
+    "why": "12 HCP: the cue-bid in their suit (3♣) is forcing and asks partner to describe further."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     11,
+     5
+    ],
+    "H": [
+     12,
+     2
+    ],
+    "D": [
+     14,
+     7,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     7,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "3♣",
+   "why": "12 hp: cuebid i deres farve (3♣) er krav og beder makker beskrive videre.",
+   "en": {
+    "why": "12 HCP: the cue-bid in their suit (3♣) is forcing and asks partner to describe further."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     12,
+     10,
+     9
+    ],
+    "H": [
+     7,
+     6,
+     2
+    ],
+    "D": [
+     10,
+     9,
+     8,
+     5,
+     4
+    ],
+    "C": [
+     12,
+     6
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
    "correct": "2NT",
    "why": "Lige mange hjerter og spar (3-3): 2NT er relæ.",
    "en": {
@@ -2255,24 +3423,222 @@
    "situation": "svar_kl",
    "hand": {
     "S": [
-     4,
-     2
+     11,
+     5,
+     3
     ],
     "H": [
      13,
+     8,
+     4
+    ],
+    "D": [
+     13,
+     10,
+     9,
+     3
+    ],
+    "C": [
+     11,
+     4,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "correct": "2NT",
+   "why": "Lige mange hjerter og spar (3-3): 2NT er relæ.",
+   "en": {
+    "why": "As many hearts as spades (3-3): 2NT is a relay."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     11,
+     7,
+     3
+    ],
+    "H": [
+     8,
+     4,
+     3
+    ],
+    "D": [
+     8,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     8,
+     5,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 5,
+   "correct": "2NT",
+   "why": "Lige mange hjerter og spar (3-3): 2NT er relæ.",
+   "en": {
+    "why": "As many hearts as spades (3-3): 2NT is a relay."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     8,
+     5
+    ],
+    "H": [
+     4,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     10,
+     8,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     4,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "correct": "2NT",
+   "why": "Lige mange hjerter og spar (2-2): 2NT er relæ.",
+   "en": {
+    "why": "As many hearts as spades (2-2): 2NT is a relay."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     8,
+     7,
+     4
+    ],
+    "H": [
+     8,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     6,
+     4,
+     3
+    ],
+    "C": [
+     7,
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "2NT",
+   "why": "Lige mange hjerter og spar (3-3): 2NT er relæ.",
+   "en": {
+    "why": "As many hearts as spades (3-3): 2NT is a relay."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     14,
+     7
+    ],
+    "H": [
+     13,
+     11
+    ],
+    "D": [
+     10,
+     7,
+     6,
+     3
+    ],
+    "C": [
+     11,
+     10,
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "2NT",
+   "why": "Lige mange hjerter og spar (2-2): 2NT er relæ.",
+   "en": {
+    "why": "As many hearts as spades (2-2): 2NT is a relay."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     5,
+     3
+    ],
+    "H": [
+     13,
+     5
+    ],
+    "D": [
+     9,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     9,
+     8
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "2NT",
+   "why": "Lige mange hjerter og spar (2-2): 2NT er relæ.",
+   "en": {
+    "why": "As many hearts as spades (2-2): 2NT is a relay."
+   }
+  },
+  {
+   "situation": "svar_kl",
+   "hand": {
+    "S": [
+     8,
      6
+    ],
+    "H": [
+     4,
+     2
     ],
     "D": [
      11,
-     4,
+     10,
      3,
      2
     ],
     "C": [
-     10,
+     13,
+     9,
+     8,
      7,
-     6,
-     4,
      2
     ]
    },
@@ -2288,25 +3654,25 @@
    "situation": "svar_kl",
    "hand": {
     "S": [
-     11,
-     8,
-     4
+     4,
+     3,
+     2
     ],
     "H": [
+     10,
      8,
-     5,
-     4
+     2
     ],
     "D": [
      9,
-     8,
-     7,
-     4,
-     3
+     8
     ],
     "C": [
+     11,
      10,
-     4
+     7,
+     5,
+     2
     ]
    },
    "hp": 1,
@@ -2322,60 +3688,27 @@
    "hand": {
     "S": [
      10,
-     4,
+     5,
      2
     ],
     "H": [
-     13,
+     9,
      3,
      2
     ],
     "D": [
-     8,
+     11,
      7
     ],
     "C": [
-     13,
-     12,
+     14,
      11,
-     6,
-     4
+     8,
+     7,
+     2
     ]
    },
-   "hp": 9,
-   "sp": 10,
-   "correct": "2NT",
-   "why": "Lige mange hjerter og spar (3-3): 2NT er relæ.",
-   "en": {
-    "why": "As many hearts as spades (3-3): 2NT is a relay."
-   }
-  },
-  {
-   "situation": "svar_kl",
-   "hand": {
-    "S": [
-     9,
-     5,
-     3
-    ],
-    "H": [
-     12,
-     5,
-     2
-    ],
-    "D": [
-     13,
-     10,
-     2
-    ],
-    "C": [
-     12,
-     10,
-     6,
-     3
-    ]
-   },
-   "hp": 7,
+   "hp": 6,
    "sp": 7,
    "correct": "2NT",
    "why": "Lige mange hjerter og spar (3-3): 2NT er relæ.",
@@ -2387,95 +3720,62 @@
    "situation": "svar_kl",
    "hand": {
     "S": [
-     8,
-     6
+     13,
+     6,
+     5
     ],
     "H": [
-     11,
-     7
+     14,
+     5,
+     4
     ],
     "D": [
-     11,
-     10,
-     6,
-     3
+     8,
+     4
     ],
     "C": [
-     14,
      10,
-     6,
+     5,
      4,
+     3,
      2
     ]
    },
-   "hp": 6,
+   "hp": 7,
    "sp": 8,
    "correct": "2NT",
-   "why": "Lige mange hjerter og spar (2-2): 2NT er relæ.",
+   "why": "Lige mange hjerter og spar (3-3): 2NT er relæ.",
    "en": {
-    "why": "As many hearts as spades (2-2): 2NT is a relay."
+    "why": "As many hearts as spades (3-3): 2NT is a relay."
    }
   },
   {
    "situation": "svar_kl",
    "hand": {
     "S": [
-     7,
+     11,
      6
     ],
     "H": [
-     12,
-     9
-    ],
-    "D": [
-     12,
-     11,
-     7,
-     6
-    ],
-    "C": [
-     11,
-     10,
-     9,
-     7,
-     6
-    ]
-   },
-   "hp": 6,
-   "sp": 8,
-   "correct": "2NT",
-   "why": "Lige mange hjerter og spar (2-2): 2NT er relæ.",
-   "en": {
-    "why": "As many hearts as spades (2-2): 2NT is a relay."
-   }
-  },
-  {
-   "situation": "svar_kl",
-   "hand": {
-    "S": [
-     10,
-     9
-    ],
-    "H": [
-     5,
-     3
+     6,
+     5
     ],
     "D": [
      13,
-     10,
+     12,
      7,
-     3
+     2
     ],
     "C": [
+     12,
      10,
      8,
-     7,
-     5,
-     3
+     6,
+     2
     ]
    },
-   "hp": 3,
-   "sp": 5,
+   "hp": 8,
+   "sp": 10,
    "correct": "2NT",
    "why": "Lige mange hjerter og spar (2-2): 2NT er relæ.",
    "en": {
@@ -2488,27 +3788,58 @@
     "S": [
      14,
      12,
-     10,
      9,
-     3
+     7,
+     6
     ],
     "H": [
      13,
+     11,
      9,
-     6,
-     4,
-     2
-    ],
-    "D": [
-     12,
-     10
-    ],
-    "C": [
+     8,
+     7,
      4
+    ],
+    "D": [],
+    "C": [
+     9,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "6 hjerter og 5 spar og 10 hp (8–15): 2♦ viser begge majorer, mindst 5-5.",
+   "en": {
+    "why": "6 hearts and 5 spades and 10 HCP (8–15): 2♦ shows both majors, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     8,
+     6
+    ],
+    "H": [
+     12,
+     10,
+     7,
+     6,
+     4
+    ],
+    "D": [],
+    "C": [
+     12,
+     9,
+     3
     ]
    },
    "hp": 11,
-   "sp": 15,
+   "sp": 16,
    "correct": "2♦",
    "why": "5 hjerter og 5 spar og 11 hp (8–15): 2♦ viser begge majorer, mindst 5-5.",
    "en": {
@@ -2519,32 +3850,160 @@
    "situation": "ind_ru",
    "hand": {
     "S": [
+     14,
+     10,
+     9,
+     8,
+     3
+    ],
+    "H": [
      13,
-     12,
-     11,
-     5,
+     10,
+     8,
+     6,
+     4,
      2
+    ],
+    "D": [
+     12,
+     5
+    ],
+    "C": []
+   },
+   "hp": 9,
+   "sp": 15,
+   "correct": "2♦",
+   "why": "6 hjerter og 5 spar og 9 hp (8–15): 2♦ viser begge majorer, mindst 5-5.",
+   "en": {
+    "why": "6 hearts and 5 spades and 9 HCP (8–15): 2♦ shows both majors, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_ru",
+   "hand": {
+    "S": [
+     10,
+     7,
+     5,
+     4,
+     3
     ],
     "H": [
      12,
+     8,
+     7,
+     6,
+     5
+    ],
+    "D": [],
+    "C": [
+     14,
+     12,
+     9
+    ]
+   },
+   "hp": 8,
+   "sp": 13,
+   "correct": "2♦",
+   "why": "5 hjerter og 5 spar og 8 hp (8–15): 2♦ viser begge majorer, mindst 5-5.",
+   "en": {
+    "why": "5 hearts and 5 spades and 8 HCP (8–15): 2♦ shows both majors, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_ru",
+   "hand": {
+    "S": [
      11,
-     9,
+     10,
+     8,
+     7,
      6,
      4
     ],
-    "D": [
+    "H": [
+     14,
      13,
      7,
+     4,
+     2
+    ],
+    "D": [
+     13,
      6
     ],
     "C": []
    },
-   "hp": 12,
+   "hp": 11,
    "sp": 17,
    "correct": "2♦",
-   "why": "5 hjerter og 5 spar og 12 hp (8–15): 2♦ viser begge majorer, mindst 5-5.",
+   "why": "5 hjerter og 6 spar og 11 hp (8–15): 2♦ viser begge majorer, mindst 5-5.",
    "en": {
-    "why": "5 hearts and 5 spades and 12 HCP (8–15): 2♦ shows both majors, at least 5-5."
+    "why": "5 hearts and 6 spades and 11 HCP (8–15): 2♦ shows both majors, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     8,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     6,
+     5,
+     4
+    ],
+    "D": [],
+    "C": [
+     13,
+     6
+    ]
+   },
+   "hp": 17,
+   "sp": 23,
+   "correct": "2♦",
+   "why": "6 hjerter og 5 spar og 17 hp (17+): 2♦ viser begge majorer, mindst 5-5.",
+   "en": {
+    "why": "6 hearts and 5 spades and 17 HCP (17+): 2♦ shows both majors, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_ru",
+   "hand": {
+    "S": [
+     14,
+     10,
+     6,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     7,
+     2
+    ],
+    "D": [
+     10,
+     4
+    ],
+    "C": []
+   },
+   "hp": 11,
+   "sp": 17,
+   "correct": "2♦",
+   "why": "5 hjerter og 6 spar og 11 hp (8–15): 2♦ viser begge majorer, mindst 5-5.",
+   "en": {
+    "why": "5 hearts and 6 spades and 11 HCP (8–15): 2♦ shows both majors, at least 5-5."
    }
   },
   {
@@ -2555,19 +4014,212 @@
      12,
      9,
      8,
+     6,
      4
     ],
     "H": [
+     14,
+     13,
+     12,
+     9,
+     5,
+     4
+    ],
+    "D": [],
+    "C": [
+     13
+    ]
+   },
+   "hp": 18,
+   "sp": 26,
+   "correct": "2♦",
+   "why": "6 hjerter og 6 spar og 18 hp (17+): 2♦ viser begge majorer, mindst 5-5.",
+   "en": {
+    "why": "6 hearts and 6 spades and 18 HCP (17+): 2♦ shows both majors, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     7,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     9,
+     8
+    ],
+    "D": [],
+    "C": [
+     14,
+     7,
+     5
+    ]
+   },
+   "hp": 17,
+   "sp": 22,
+   "correct": "2♦",
+   "why": "5 hjerter og 5 spar og 17 hp (17+): 2♦ viser begge majorer, mindst 5-5.",
+   "en": {
+    "why": "5 hearts and 5 spades and 17 HCP (17+): 2♦ shows both majors, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_ru",
+   "hand": {
+    "S": [
+     14,
      12,
      11,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     8,
+     2
+    ],
+    "D": [],
+    "C": [
+     13,
+     11,
+     9
+    ]
+   },
+   "hp": 18,
+   "sp": 23,
+   "correct": "2♦",
+   "why": "5 hjerter og 5 spar og 18 hp (17+): 2♦ viser begge majorer, mindst 5-5.",
+   "en": {
+    "why": "5 hearts and 5 spades and 18 HCP (17+): 2♦ shows both majors, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
      5,
      3,
      2
     ],
+    "H": [
+     13,
+     10,
+     9,
+     8,
+     7,
+     2
+    ],
+    "D": [],
+    "C": [
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 16,
+   "correct": "2♦",
+   "why": "6 hjerter og 6 spar og 8 hp (8–15): 2♦ viser begge majorer, mindst 5-5.",
+   "en": {
+    "why": "6 hearts and 6 spades and 8 HCP (8–15): 2♦ shows both majors, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     6,
+     5,
+     2
+    ],
     "D": [
+     13,
+     2
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "2♦",
+   "why": "5 hjerter og 5 spar og 15 hp (8–15): 2♦ viser begge majorer, mindst 5-5.",
+   "en": {
+    "why": "5 hearts and 5 spades and 15 HCP (8–15): 2♦ shows both majors, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_ru",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     9,
+     3
+    ],
+    "D": [],
+    "C": [
+     14,
+     9,
+     2
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "2♦",
+   "why": "5 hjerter og 5 spar og 14 hp (8–15): 2♦ viser begge majorer, mindst 5-5.",
+   "en": {
+    "why": "5 hearts and 5 spades and 14 HCP (8–15): 2♦ shows both majors, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_ru",
+   "hand": {
+    "S": [
+     14,
+     11,
      6,
      4,
      3
+    ],
+    "H": [
+     11,
+     10,
+     8,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     4,
+     2
     ],
     "C": []
    },
@@ -2585,23 +4237,55 @@
     "S": [
      14,
      13,
-     12,
      10,
-     4
+     7,
+     4,
+     3
     ],
     "H": [
      14,
-     7,
-     6,
-     5,
-     4,
-     2
+     13,
+     12,
+     10,
+     6
     ],
     "D": [
-     9
+     11
     ],
     "C": [
-     14
+     8
+    ]
+   },
+   "hp": 17,
+   "sp": 23,
+   "correct": "2♦",
+   "why": "5 hjerter og 6 spar og 17 hp (17+): 2♦ viser begge majorer, mindst 5-5.",
+   "en": {
+    "why": "5 hearts and 6 spades and 17 HCP (17+): 2♦ shows both majors, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11,
+     6
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     9,
+     8,
+     2
+    ],
+    "D": [],
+    "C": [
+     13,
+     4
     ]
    },
    "hp": 17,
@@ -2616,33 +4300,33 @@
    "situation": "ind_ru",
    "hand": {
     "S": [
-     14,
-     13,
+     12,
+     11,
      10,
+     9,
      4,
      2
     ],
     "H": [
-     13,
-     12,
      11,
-     5,
-     3
+     8,
+     7,
+     6,
+     4
     ],
     "D": [
-     14,
      6
     ],
     "C": [
-     10
+     4
     ]
    },
-   "hp": 17,
-   "sp": 21,
-   "correct": "2♦",
-   "why": "5 hjerter og 5 spar og 17 hp (17+): 2♦ viser begge majorer, mindst 5-5.",
+   "hp": 4,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "5 hjerter og 6 spar, men kun 4 hp – kravet er 8–15 eller 17+. Pas.",
    "en": {
-    "why": "5 hearts and 5 spades and 17 HCP (17+): 2♦ shows both majors, at least 5-5."
+    "why": "5 hearts and 6 spades, but only 4 HCP – the requirement is 8–15 or 17+. Pass."
    }
   },
   {
@@ -2650,63 +4334,64 @@
    "hand": {
     "S": [
      14,
-     12,
+     9,
      7,
-     5,
-     3
+     3,
+     2
     ],
     "H": [
      12,
-     11,
-     10,
-     7,
-     3
+     9,
+     6,
+     5,
+     2
     ],
-    "D": [],
+    "D": [
+     2
+    ],
     "C": [
-     12,
-     11,
-     8
+     8,
+     2
     ]
    },
-   "hp": 12,
-   "sp": 17,
-   "correct": "2♦",
-   "why": "5 hjerter og 5 spar og 12 hp (8–15): 2♦ viser begge majorer, mindst 5-5.",
+   "hp": 6,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "5 hjerter og 5 spar, men kun 6 hp – kravet er 8–15 eller 17+. Pas.",
    "en": {
-    "why": "5 hearts and 5 spades and 12 HCP (8–15): 2♦ shows both majors, at least 5-5."
+    "why": "5 hearts and 5 spades, but only 6 HCP – the requirement is 8–15 or 17+. Pass."
    }
   },
   {
    "situation": "ind_ru",
    "hand": {
     "S": [
-     14,
-     13,
-     7,
+     10,
+     8,
      6,
      4,
      2
     ],
     "H": [
      13,
-     9,
-     7,
+     12,
+     10,
      6,
      2
     ],
     "D": [],
     "C": [
-     3,
-     2
+     8,
+     7,
+     6
     ]
    },
-   "hp": 10,
-   "sp": 16,
-   "correct": "2♦",
-   "why": "5 hjerter og 6 spar og 10 hp (8–15): 2♦ viser begge majorer, mindst 5-5.",
+   "hp": 5,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "5 hjerter og 5 spar, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
    "en": {
-    "why": "5 hearts and 6 spades and 10 HCP (8–15): 2♦ shows both majors, at least 5-5."
+    "why": "5 hearts and 5 spades, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
    }
   },
   {
@@ -2714,37 +4399,70 @@
    "hand": {
     "S": [
      12,
-     7,
+     11,
+     8,
      6,
+     4,
+     3
+    ],
+    "H": [
+     10,
+     9,
+     8,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     7
+    ],
+    "C": []
+   },
+   "hp": 6,
+   "sp": 12,
+   "correct": "Pas",
+   "why": "5 hjerter og 6 spar, men kun 6 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 hearts and 6 spades, but only 6 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_ru",
+   "hand": {
+    "S": [
+     12,
+     10,
+     9,
+     8,
+     6,
+     3
+    ],
+    "H": [
+     12,
+     9,
+     8,
      3,
      2
     ],
-    "H": [
-     14,
-     13,
-     12,
-     8,
-     6,
-     5
-    ],
     "D": [],
     "C": [
-     8,
+     5,
      3
     ]
    },
-   "hp": 11,
-   "sp": 17,
-   "correct": "2♦",
-   "why": "6 hjerter og 5 spar og 11 hp (8–15): 2♦ viser begge majorer, mindst 5-5.",
+   "hp": 4,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "5 hjerter og 6 spar, men kun 4 hp – kravet er 8–15 eller 17+. Pas.",
    "en": {
-    "why": "6 hearts and 5 spades and 11 HCP (8–15): 2♦ shows both majors, at least 5-5."
+    "why": "5 hearts and 6 spades, but only 4 HCP – the requirement is 8–15 or 17+. Pass."
    }
   },
   {
    "situation": "ind_ru",
    "hand": {
     "S": [
+     11,
      10,
      9,
      8,
@@ -2752,146 +4470,79 @@
      4
     ],
     "H": [
-     14,
-     9,
-     8,
+     12,
+     11,
+     6,
      5,
      3
     ],
-    "D": [
-     14,
+    "D": [],
+    "C": [
+     5,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "5 hjerter og 6 spar, men kun 4 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 hearts and 6 spades, but only 4 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_ru",
+   "hand": {
+    "S": [
+     12,
+     7,
+     6,
+     5,
      3
     ],
-    "C": [
-     5
-    ]
-   },
-   "hp": 8,
-   "sp": 12,
-   "correct": "2♦",
-   "why": "5 hjerter og 5 spar og 8 hp (8–15): 2♦ viser begge majorer, mindst 5-5.",
-   "en": {
-    "why": "5 hearts and 5 spades and 8 HCP (8–15): 2♦ shows both majors, at least 5-5."
-   }
-  },
-  {
-   "situation": "ind_ru",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
-     9,
-     8
-    ],
     "H": [
-     14,
-     13,
-     9,
-     7,
-     5
-    ],
-    "D": [
-     11,
-     7
-    ],
-    "C": [
-     13
-    ]
-   },
-   "hp": 17,
-   "sp": 21,
-   "correct": "2♦",
-   "why": "5 hjerter og 5 spar og 17 hp (17+): 2♦ viser begge majorer, mindst 5-5.",
-   "en": {
-    "why": "5 hearts and 5 spades and 17 HCP (17+): 2♦ shows both majors, at least 5-5."
-   }
-  },
-  {
-   "situation": "ind_ru",
-   "hand": {
-    "S": [
      12,
-     11,
      10,
      8,
-     7
+     6,
+     4
     ],
-    "H": [
+    "D": [
+     8,
+     5,
+     4
+    ],
+    "C": []
+   },
+   "hp": 4,
+   "sp": 9,
+   "correct": "Pas",
+   "why": "5 hjerter og 5 spar, men kun 4 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 hearts and 5 spades, but only 4 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_ru",
+   "hand": {
+    "S": [
      12,
      11,
-     7,
      5,
      3,
      2
     ],
-    "D": [],
-    "C": [
-     10,
-     4
-    ]
-   },
-   "hp": 6,
-   "sp": 12,
-   "correct": "Pas",
-   "why": "6 hjerter og 5 spar, men kun 6 hp – kravet er 8–15 eller 17+. Pas.",
-   "en": {
-    "why": "6 hearts and 5 spades, but only 6 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_ru",
-   "hand": {
-    "S": [
-     12,
-     10,
-     7,
-     6,
-     3
-    ],
     "H": [
      12,
-     10,
      9,
-     8,
-     7,
-     5
-    ],
-    "D": [],
-    "C": [
-     12,
-     9
-    ]
-   },
-   "hp": 6,
-   "sp": 12,
-   "correct": "Pas",
-   "why": "6 hjerter og 5 spar, men kun 6 hp – kravet er 8–15 eller 17+. Pas.",
-   "en": {
-    "why": "6 hearts and 5 spades, but only 6 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_ru",
-   "hand": {
-    "S": [
-     12,
-     9,
-     7,
      6,
+     5,
+     4,
      2
-    ],
-    "H": [
-     12,
-     11,
-     10,
-     7,
-     6,
-     3
     ],
     "D": [
      10,
-     5
+     3
     ],
     "C": []
    },
@@ -2907,23 +4558,216 @@
    "situation": "ind_ru",
    "hand": {
     "S": [
-     12,
-     10,
+     11,
      9,
      8,
-     7,
-     2
+     4,
+     3
     ],
     "H": [
-     12,
+     13,
+     9,
+     8,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 4,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "6 hjerter og 5 spar, men kun 4 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "6 hearts and 5 spades, but only 4 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_ru",
+   "hand": {
+    "S": [
      11,
      9,
      8,
      7,
      4
     ],
+    "H": [
+     13,
+     10,
+     8,
+     5,
+     4,
+     2
+    ],
+    "D": [],
+    "C": [
+     8,
+     7
+    ]
+   },
+   "hp": 4,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "6 hjerter og 5 spar, men kun 4 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "6 hearts and 5 spades, but only 4 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     6,
+     5,
+     4
+    ],
+    "H": [
+     11,
+     9,
+     8,
+     5,
+     3
+    ],
     "D": [
-     11
+     3,
+     2
+    ],
+    "C": []
+   },
+   "hp": 6,
+   "sp": 12,
+   "correct": "Pas",
+   "why": "5 hjerter og 6 spar, men kun 6 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 hearts and 6 spades, but only 6 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_ru",
+   "hand": {
+    "S": [
+     12,
+     10,
+     8,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     5,
+     4,
+     3,
+     2
+    ],
+    "D": [],
+    "C": [
+     6,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "6 hjerter og 5 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "6 hearts and 5 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_ru",
+   "hand": {
+    "S": [
+     11,
+     6,
+     5,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     10
+    ],
+    "C": []
+   },
+   "hp": 5,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "6 hjerter og 6 spar, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "6 hearts and 6 spades, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_ru",
+   "hand": {
+    "S": [
+     10,
+     7,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     9,
+     8,
+     7,
+     3
+    ],
+    "D": [
+     14,
+     4,
+     2
+    ],
+    "C": []
+   },
+   "hp": 6,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "5 hjerter og 5 spar, men kun 6 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 hearts and 5 spades, but only 6 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9,
+     7,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     9,
+     8,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     3
     ],
     "C": []
    },
@@ -2939,201 +4783,74 @@
    "situation": "ind_ru",
    "hand": {
     "S": [
-     14,
-     11,
-     9,
-     8,
-     2
-    ],
-    "H": [
-     11,
-     9,
-     7,
-     6,
-     5,
-     2
-    ],
-    "D": [],
-    "C": [
-     11,
-     9
-    ]
-   },
-   "hp": 7,
-   "sp": 13,
-   "correct": "Pas",
-   "why": "6 hjerter og 5 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
-   "en": {
-    "why": "6 hearts and 5 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_ru",
-   "hand": {
-    "S": [
-     12,
      10,
      6,
      5,
-     3
-    ],
-    "H": [
-     12,
-     10,
-     7,
-     6,
-     2
-    ],
-    "D": [],
-    "C": [
-     11,
-     5,
-     3
-    ]
-   },
-   "hp": 5,
-   "sp": 10,
-   "correct": "Pas",
-   "why": "5 hjerter og 5 spar, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
-   "en": {
-    "why": "5 hearts and 5 spades, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_ru",
-   "hand": {
-    "S": [
-     11,
-     8,
-     7,
      4,
-     3,
-     2
-    ],
-    "H": [
-     13,
-     12,
-     11,
-     7,
-     5,
      3
     ],
-    "D": [],
-    "C": [
-     9
-    ]
-   },
-   "hp": 7,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "6 hjerter og 6 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
-   "en": {
-    "why": "6 hearts and 6 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_ru",
-   "hand": {
-    "S": [
-     13,
-     8,
-     7,
-     6,
-     5
-    ],
     "H": [
+     13,
      12,
-     8,
-     7,
+     10,
+     9,
      4,
      2
-    ],
-    "D": [],
-    "C": [
-     12,
-     9,
-     8
-    ]
-   },
-   "hp": 7,
-   "sp": 12,
-   "correct": "Pas",
-   "why": "5 hjerter og 5 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
-   "en": {
-    "why": "5 hearts and 5 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_ru",
-   "hand": {
-    "S": [
-     10,
-     9,
-     8,
-     6,
-     3
-    ],
-    "H": [
-     13,
-     10,
-     8,
-     6,
-     4
     ],
     "D": [
      9
     ],
     "C": [
-     14,
-     6
+     11
     ]
    },
-   "hp": 7,
-   "sp": 11,
+   "hp": 6,
+   "sp": 12,
    "correct": "Pas",
-   "why": "5 hjerter og 5 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
+   "why": "6 hjerter og 5 spar, men kun 6 hp – kravet er 8–15 eller 17+. Pas.",
    "en": {
-    "why": "5 hearts and 5 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_ru",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11,
-     9,
-     7,
-     6
-    ],
-    "H": [
-     9,
-     8,
-     7,
-     5,
-     4,
-     3
-    ],
-    "D": [],
-    "C": [
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "6 hjerter og 6 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
-   "en": {
-    "why": "6 hearts and 6 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
+    "why": "6 hearts and 5 spades, but only 6 HCP – the requirement is 8–15 or 17+. Pass."
    }
   },
   {
    "situation": "svar_ru",
    "hand": {
     "S": [
+     2
+    ],
+    "H": [
+     11,
      10,
-     4
+     3
+    ],
+    "D": [
+     10,
+     8,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 3,
+   "sp": 6,
+   "correct": "2♥",
+   "why": "Svag hånd (3 hp) med flest hjerter: præference på laveste niveau – 2♥.",
+   "en": {
+    "why": "Weak hand (3 HCP) with more hearts: preference at the lowest level – 2♥."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     7,
+     6
     ],
     "H": [
      5,
@@ -3143,18 +4860,51 @@
     "D": [
      13,
      12,
-     7,
-     6,
-     5
+     4,
+     3
     ],
     "C": [
-     14,
-     9,
-     5
+     11,
+     8,
+     7,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "correct": "2♥",
+   "why": "Svag hånd (6 hp) med flest hjerter: præference på laveste niveau – 2♥.",
+   "en": {
+    "why": "Weak hand (6 HCP) with more hearts: preference at the lowest level – 2♥."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     12,
+     8,
+     7
+    ],
+    "D": [
+     12,
+     8,
+     7,
+     6,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     10,
+     7
     ]
    },
    "hp": 9,
-   "sp": 10,
+   "sp": 12,
    "correct": "2♥",
    "why": "Svag hånd (9 hp) med flest hjerter: præference på laveste niveau – 2♥.",
    "en": {
@@ -3165,25 +4915,25 @@
    "situation": "svar_ru",
    "hand": {
     "S": [
-     10
+     13
     ],
     "H": [
-     11,
-     10,
+     8,
+     4,
      2
     ],
     "D": [
      12,
-     9,
      8,
-     7,
-     6
+     6,
+     2
     ],
     "C": [
-     13,
+     11,
      9,
-     7,
-     4
+     8,
+     5,
+     3
     ]
    },
    "hp": 6,
@@ -3198,58 +4948,58 @@
    "situation": "svar_ru",
    "hand": {
     "S": [
-     9,
-     7
+     11,
+     9
     ],
     "H": [
-     14,
-     7,
-     4
+     13,
+     6,
+     5
     ],
     "D": [
-     9,
-     8,
+     12,
+     10,
+     7,
      4
     ],
     "C": [
      13,
-     10,
      7,
      6,
-     5
+     2
     ]
    },
-   "hp": 7,
-   "sp": 8,
+   "hp": 9,
+   "sp": 10,
    "correct": "2♥",
-   "why": "Svag hånd (7 hp) med flest hjerter: præference på laveste niveau – 2♥.",
+   "why": "Svag hånd (9 hp) med flest hjerter: præference på laveste niveau – 2♥.",
    "en": {
-    "why": "Weak hand (7 HCP) with more hearts: preference at the lowest level – 2♥."
+    "why": "Weak hand (9 HCP) with more hearts: preference at the lowest level – 2♥."
    }
   },
   {
    "situation": "svar_ru",
    "hand": {
     "S": [
-     2
-    ],
-    "H": [
-     9,
-     7,
-     5
-    ],
-    "D": [
-     12,
-     11,
-     10,
-     8,
      7
     ],
-    "C": [
-     14,
-     11,
-     5,
+    "H": [
+     13,
+     8,
      4
+    ],
+    "D": [
+     13,
+     10,
+     8,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     8,
+     5,
+     3
     ]
    },
    "hp": 8,
@@ -3264,29 +5014,29 @@
    "situation": "svar_ru",
    "hand": {
     "S": [
-     4
+     11,
+     7
     ],
     "H": [
-     12,
-     5,
-     3
+     14,
+     9,
+     8
     ],
     "D": [
-     13,
-     8,
+     10,
+     9,
      5,
      4
     ],
     "C": [
      9,
      8,
-     6,
-     4,
-     2
+     7,
+     5
     ]
    },
    "hp": 5,
-   "sp": 8,
+   "sp": 6,
    "correct": "2♥",
    "why": "Svag hånd (5 hp) med flest hjerter: præference på laveste niveau – 2♥.",
    "en": {
@@ -3297,157 +5047,190 @@
    "situation": "svar_ru",
    "hand": {
     "S": [
-     14
+     7
     ],
     "H": [
-     7,
-     5,
-     4
-    ],
-    "D": [
-     14,
      10,
      6,
-     3
-    ],
-    "C": [
-     11,
-     10,
-     9,
-     6,
-     3
-    ]
-   },
-   "hp": 9,
-   "sp": 12,
-   "correct": "2♥",
-   "why": "Svag hånd (9 hp) med flest hjerter: præference på laveste niveau – 2♥.",
-   "en": {
-    "why": "Weak hand (9 HCP) with more hearts: preference at the lowest level – 2♥."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     9,
-     6
-    ],
-    "H": [
-     14,
-     9,
-     4
-    ],
-    "D": [
-     14,
-     5,
-     4
-    ],
-    "C": [
-     11,
-     9,
-     7,
-     6,
-     2
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "correct": "2♥",
-   "why": "Svag hånd (9 hp) med flest hjerter: præference på laveste niveau – 2♥.",
-   "en": {
-    "why": "Weak hand (9 HCP) with more hearts: preference at the lowest level – 2♥."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     10
-    ],
-    "H": [
-     11,
-     8,
      4
     ],
     "D": [
      13,
-     10,
-     9,
-     8,
-     2
+     12,
+     7,
+     6,
+     5
     ],
     "C": [
-     13,
-     8,
-     7,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 10,
-   "correct": "2♥",
-   "why": "Svag hånd (7 hp) med flest hjerter: præference på laveste niveau – 2♥.",
-   "en": {
-    "why": "Weak hand (7 HCP) with more hearts: preference at the lowest level – 2♥."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     13,
-     10,
-     8
-    ],
-    "H": [
-     10
-    ],
-    "D": [
-     9,
+     12,
+     11,
      4,
-     3,
-     2
-    ],
-    "C": [
-     11,
-     9,
-     8,
-     7,
-     5
+     3
     ]
    },
-   "hp": 4,
-   "sp": 7,
-   "correct": "2♠",
-   "why": "Svag hånd (4 hp) med flest spar: præference på laveste niveau – 2♠.",
+   "hp": 8,
+   "sp": 11,
+   "correct": "2♥",
+   "why": "Svag hånd (8 hp) med flest hjerter: præference på laveste niveau – 2♥.",
    "en": {
-    "why": "Weak hand (4 HCP) with more spades: preference at the lowest level – 2♠."
+    "why": "Weak hand (8 HCP) with more hearts: preference at the lowest level – 2♥."
    }
   },
   {
    "situation": "svar_ru",
    "hand": {
     "S": [
-     13,
-     6,
+     12
+    ],
+    "H": [
+     7,
+     4,
+     2
+    ],
+    "D": [
+     11,
+     9,
+     7,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     8,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "correct": "2♥",
+   "why": "Svag hånd (6 hp) med flest hjerter: præference på laveste niveau – 2♥.",
+   "en": {
+    "why": "Weak hand (6 HCP) with more hearts: preference at the lowest level – 2♥."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     4,
      3
     ],
     "H": [
-     13,
-     5
+     10,
+     7,
+     4
     ],
     "D": [
      12,
-     8,
+     7,
      5
+    ],
+    "C": [
+     13,
+     10,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "2♥",
+   "why": "Svag hånd (5 hp) med flest hjerter: præference på laveste niveau – 2♥.",
+   "en": {
+    "why": "Weak hand (5 HCP) with more hearts: preference at the lowest level – 2♥."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     5,
+     3
+    ],
+    "H": [
+     6,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     8,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     7,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2♥",
+   "why": "Svag hånd (9 hp) med flest hjerter: præference på laveste niveau – 2♥.",
+   "en": {
+    "why": "Weak hand (9 HCP) with more hearts: preference at the lowest level – 2♥."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     6
+    ],
+    "H": [
+     11,
+     8,
+     4
+    ],
+    "D": [
+     10,
+     8,
+     5,
+     2
     ],
     "C": [
      10,
      9,
-     8,
-     6,
+     7,
+     3,
+     2
+    ]
+   },
+   "hp": 1,
+   "sp": 4,
+   "correct": "2♥",
+   "why": "Svag hånd (1 hp) med flest hjerter: præference på laveste niveau – 2♥.",
+   "en": {
+    "why": "Weak hand (1 HCP) with more hearts: preference at the lowest level – 2♥."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     12,
+     9,
      3
+    ],
+    "H": [
+     10,
+     9
+    ],
+    "D": [
+     12,
+     10,
+     9
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     6,
+     5
     ]
    },
    "hp": 8,
@@ -3463,14 +5246,279 @@
    "hand": {
     "S": [
      10,
-     8,
+     5,
+     4
+    ],
+    "H": [
+     10,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     5,
      3
+    ],
+    "C": [
+     9,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "correct": "2♠",
+   "why": "Svag hånd (8 hp) med flest spar: præference på laveste niveau – 2♠.",
+   "en": {
+    "why": "Weak hand (8 HCP) with more spades: preference at the lowest level – 2♠."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     11,
+     6,
+     2
+    ],
+    "H": [
+     7,
+     2
+    ],
+    "D": [
+     14,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     11,
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "correct": "2♠",
+   "why": "Svag hånd (9 hp) med flest spar: præference på laveste niveau – 2♠.",
+   "en": {
+    "why": "Weak hand (9 HCP) with more spades: preference at the lowest level – 2♠."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     5,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     3
+    ],
+    "D": [
+     10,
+     9,
+     8,
+     7,
+     3
+    ],
+    "C": [
+     12,
+     7,
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "2♠",
+   "why": "Svag hånd (5 hp) med flest spar: præference på laveste niveau – 2♠.",
+   "en": {
+    "why": "Weak hand (5 HCP) with more spades: preference at the lowest level – 2♠."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     10,
+     4,
+     2
     ],
     "H": [
      10,
      8
     ],
     "D": [
+     13,
+     9,
+     8,
+     6,
+     4
+    ],
+    "C": [
+     9,
+     8,
+     5
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "correct": "2♠",
+   "why": "Svag hånd (3 hp) med flest spar: præference på laveste niveau – 2♠.",
+   "en": {
+    "why": "Weak hand (3 HCP) with more spades: preference at the lowest level – 2♠."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     11,
+     6,
+     4
+    ],
+    "H": [
+     7,
+     3
+    ],
+    "D": [
+     12,
+     3,
+     2
+    ],
+    "C": [
+     9,
+     7,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "correct": "2♠",
+   "why": "Svag hånd (3 hp) med flest spar: præference på laveste niveau – 2♠.",
+   "en": {
+    "why": "Weak hand (3 HCP) with more spades: preference at the lowest level – 2♠."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     6,
+     4,
+     2
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     12,
+     7,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "correct": "2♠",
+   "why": "Svag hånd (8 hp) med flest spar: præference på laveste niveau – 2♠.",
+   "en": {
+    "why": "Weak hand (8 HCP) with more spades: preference at the lowest level – 2♠."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     8,
+     6,
+     2
+    ],
+    "H": [
+     10,
+     8
+    ],
+    "D": [
+     8,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     10,
+     9,
+     7,
+     2
+    ]
+   },
+   "hp": 0,
+   "sp": 1,
+   "correct": "2♠",
+   "why": "Svag hånd (0 hp) med flest spar: præference på laveste niveau – 2♠.",
+   "en": {
+    "why": "Weak hand (0 HCP) with more spades: preference at the lowest level – 2♠."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     10,
+     8,
+     7
+    ],
+    "H": [
+     9,
+     4
+    ],
+    "D": [
+     13,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "2♠",
+   "why": "Svag hånd (7 hp) med flest spar: præference på laveste niveau – 2♠.",
+   "en": {
+    "why": "Weak hand (7 HCP) with more spades: preference at the lowest level – 2♠."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     4,
+     2
+    ],
+    "H": [
+     9,
+     4
+    ],
+    "D": [
+     10,
      9,
      7,
      5
@@ -3479,12 +5527,44 @@
      13,
      11,
      9,
+     6
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "2♠",
+   "why": "Svag hånd (7 hp) med flest spar: præference på laveste niveau – 2♠.",
+   "en": {
+    "why": "Weak hand (7 HCP) with more spades: preference at the lowest level – 2♠."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     8,
      7,
-     5
+     2
+    ],
+    "H": [
+     9
+    ],
+    "D": [
+     13,
+     7,
+     5,
+     4
+    ],
+    "C": [
+     11,
+     9,
+     8,
+     3,
+     2
     ]
    },
    "hp": 4,
-   "sp": 5,
+   "sp": 7,
    "correct": "2♠",
    "why": "Svag hånd (4 hp) med flest spar: præference på laveste niveau – 2♠.",
    "en": {
@@ -3495,223 +5575,58 @@
    "situation": "svar_ru",
    "hand": {
     "S": [
-     14,
-     8,
-     6
-    ],
-    "H": [
-     4
-    ],
-    "D": [
-     12,
-     11,
      6,
+     4,
      3
-    ],
-    "C": [
-     12,
-     8,
-     7,
-     5,
-     3
-    ]
-   },
-   "hp": 9,
-   "sp": 12,
-   "correct": "2♠",
-   "why": "Svag hånd (9 hp) med flest spar: præference på laveste niveau – 2♠.",
-   "en": {
-    "why": "Weak hand (9 HCP) with more spades: preference at the lowest level – 2♠."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     13,
-     9,
-     4
     ],
     "H": [
+     12,
      10
     ],
     "D": [
-     12,
-     5,
+     6,
      4,
      2
     ],
     "C": [
-     13,
-     11,
-     8,
-     4,
-     2
-    ]
-   },
-   "hp": 9,
-   "sp": 12,
-   "correct": "2♠",
-   "why": "Svag hånd (9 hp) med flest spar: præference på laveste niveau – 2♠.",
-   "en": {
-    "why": "Weak hand (9 HCP) with more spades: preference at the lowest level – 2♠."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     9,
-     7,
-     4
-    ],
-    "H": [
-     9
-    ],
-    "D": [
-     12,
-     6,
-     5,
-     2
-    ],
-    "C": [
-     10,
-     9,
-     7,
-     6,
-     3
-    ]
-   },
-   "hp": 2,
-   "sp": 5,
-   "correct": "2♠",
-   "why": "Svag hånd (2 hp) med flest spar: præference på laveste niveau – 2♠.",
-   "en": {
-    "why": "Weak hand (2 HCP) with more spades: preference at the lowest level – 2♠."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     7,
-     6,
-     4
-    ],
-    "H": [
-     8
-    ],
-    "D": [
-     12,
-     6,
-     5,
-     4,
-     2
-    ],
-    "C": [
-     10,
-     8,
-     6,
-     2
-    ]
-   },
-   "hp": 2,
-   "sp": 5,
-   "correct": "2♠",
-   "why": "Svag hånd (2 hp) med flest spar: præference på laveste niveau – 2♠.",
-   "en": {
-    "why": "Weak hand (2 HCP) with more spades: preference at the lowest level – 2♠."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     8,
-     7,
-     6
-    ],
-    "H": [
-     14
-    ],
-    "D": [
-     12,
-     10,
-     8,
-     7
-    ],
-    "C": [
-     13,
-     10,
-     9,
-     7,
-     6
-    ]
-   },
-   "hp": 9,
-   "sp": 12,
-   "correct": "2♠",
-   "why": "Svag hånd (9 hp) med flest spar: præference på laveste niveau – 2♠.",
-   "en": {
-    "why": "Weak hand (9 HCP) with more spades: preference at the lowest level – 2♠."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     8
-    ],
-    "H": [
      14,
-     10,
-     6,
-     4,
-     3
-    ],
-    "D": [
      9,
-     8
-    ],
-    "C": [
-     12,
-     10,
-     5,
+     7,
      3,
      2
     ]
    },
    "hp": 6,
-   "sp": 10,
-   "correct": "3♥",
-   "why": "5 hjerter og 6 hp: spring til 3♥ er spærrende med god støtte.",
+   "sp": 7,
+   "correct": "2♠",
+   "why": "Svag hånd (6 hp) med flest spar: præference på laveste niveau – 2♠.",
    "en": {
-    "why": "5 hearts and 6 HCP: the jump to 3♥ is preemptive with good support."
+    "why": "Weak hand (6 HCP) with more spades: preference at the lowest level – 2♠."
    }
   },
   {
    "situation": "svar_ru",
    "hand": {
     "S": [
-     7
-    ],
-    "H": [
-     12,
-     11,
-     10,
-     6,
-     3
-    ],
-    "D": [
-     9,
-     5,
      4
     ],
-    "C": [
-     13,
-     12,
+    "H": [
+     14,
+     10,
+     4,
      3,
      2
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     6
+    ],
+    "C": [
+     8,
+     7,
+     3
     ]
    },
    "hp": 8,
@@ -3726,33 +5641,33 @@
    "situation": "svar_ru",
    "hand": {
     "S": [
+     13,
      11,
-     7
+     5
     ],
     "H": [
-     13,
-     12,
-     7,
-     2
+     10,
+     9,
+     8,
+     6
     ],
     "D": [
      12,
-     11,
-     10,
-     6,
-     2
+     7,
+     6
     ],
     "C": [
-     7,
+     11,
+     5,
      3
     ]
    },
-   "hp": 9,
-   "sp": 11,
+   "hp": 7,
+   "sp": 7,
    "correct": "3♥",
-   "why": "4 hjerter og 9 hp: spring til 3♥ er spærrende med god støtte.",
+   "why": "4 hjerter og 7 hp: spring til 3♥ er spærrende med god støtte.",
    "en": {
-    "why": "4 hearts and 9 HCP: the jump to 3♥ is preemptive with good support."
+    "why": "4 hearts and 7 HCP: the jump to 3♥ is preemptive with good support."
    }
   },
   {
@@ -3760,27 +5675,192 @@
    "hand": {
     "S": [],
     "H": [
-     14,
-     11,
-     7,
-     3
+     9,
+     8,
+     6,
+     2
     ],
     "D": [
      14,
+     10,
+     7,
      6,
-     5,
      3
     ],
     "C": [
-     10,
+     13,
      9,
      7,
+     6
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "correct": "3♥",
+   "why": "4 hjerter og 7 hp: spring til 3♥ er spærrende med god støtte.",
+   "en": {
+    "why": "4 hearts and 7 HCP: the jump to 3♥ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     13,
+     7,
      5,
+     4,
+     3
+    ],
+    "D": [
+     4,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     4,
      2
     ]
    },
    "hp": 9,
-   "sp": 14,
+   "sp": 13,
+   "correct": "3♥",
+   "why": "5 hjerter og 9 hp: spring til 3♥ er spærrende med god støtte.",
+   "en": {
+    "why": "5 hearts and 9 HCP: the jump to 3♥ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     5,
+     3
+    ],
+    "H": [
+     13,
+     9,
+     8,
+     7
+    ],
+    "D": [
+     11,
+     6
+    ],
+    "C": [
+     12,
+     10,
+     6,
+     5,
+     4
+    ]
+   },
+   "hp": 6,
+   "sp": 8,
+   "correct": "3♥",
+   "why": "4 hjerter og 6 hp: spring til 3♥ er spærrende med god støtte.",
+   "en": {
+    "why": "4 hearts and 6 HCP: the jump to 3♥ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     11
+    ],
+    "H": [
+     11,
+     8,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     5,
+     4
+    ],
+    "C": [
+     12,
+     8,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "3♥",
+   "why": "5 hjerter og 7 hp: spring til 3♥ er spærrende med god støtte.",
+   "en": {
+    "why": "5 hearts and 7 HCP: the jump to 3♥ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     10,
+     9,
+     6
+    ],
+    "H": [
+     13,
+     11,
+     9,
+     7,
+     5
+    ],
+    "D": [
+     7,
+     6
+    ],
+    "C": [
+     13,
+     5,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "3♥",
+   "why": "5 hjerter og 7 hp: spring til 3♥ er spærrende med god støtte.",
+   "en": {
+    "why": "5 hearts and 7 HCP: the jump to 3♥ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     4
+    ],
+    "H": [
+     14,
+     13,
+     6,
+     4
+    ],
+    "D": [
+     8,
+     6,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     7,
+     5,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
    "correct": "3♥",
    "why": "4 hjerter og 9 hp: spring til 3♥ er spærrende med god støtte.",
    "en": {
@@ -3791,25 +5871,25 @@
    "situation": "svar_ru",
    "hand": {
     "S": [
-     12,
-     10,
-     4
+     10
     ],
     "H": [
-     13,
-     12,
-     11,
+     14,
      8,
-     4
+     7,
+     3,
+     2
     ],
     "D": [
      11,
      10,
-     5,
-     4
+     6
     ],
     "C": [
-     3
+     14,
+     10,
+     8,
+     2
     ]
    },
    "hp": 9,
@@ -3824,62 +5904,62 @@
    "situation": "svar_ru",
    "hand": {
     "S": [
-     10,
-     5,
-     2
+     11,
+     9
     ],
     "H": [
-     14,
      11,
-     7,
+     10,
+     6,
      4
     ],
     "D": [
-     14,
+     11,
      10,
      7,
-     5,
-     4
+     3,
+     2
     ],
     "C": [
-     3
+     13,
+     12
     ]
    },
-   "hp": 9,
-   "sp": 12,
+   "hp": 8,
+   "sp": 10,
    "correct": "3♥",
-   "why": "4 hjerter og 9 hp: spring til 3♥ er spærrende med god støtte.",
+   "why": "4 hjerter og 8 hp: spring til 3♥ er spærrende med god støtte.",
    "en": {
-    "why": "4 hearts and 9 HCP: the jump to 3♥ is preemptive with good support."
+    "why": "4 hearts and 8 HCP: the jump to 3♥ is preemptive with good support."
    }
   },
   {
    "situation": "svar_ru",
    "hand": {
     "S": [
+     9,
+     7,
+     3
+    ],
+    "H": [
+     14,
+     12,
      11,
      10
     ],
-    "H": [
-     11,
-     10,
-     9,
-     3
-    ],
     "D": [
-     13,
-     8
+     12,
+     6,
+     5,
+     4,
+     2
     ],
     "C": [
-     14,
-     10,
-     9,
-     7,
      6
     ]
    },
    "hp": 9,
-   "sp": 11,
+   "sp": 12,
    "correct": "3♥",
    "why": "4 hjerter og 9 hp: spring til 3♥ er spærrende med god støtte.",
    "en": {
@@ -3890,252 +5970,58 @@
    "situation": "svar_ru",
    "hand": {
     "S": [
-     13,
-     4
+     10,
+     7,
+     3
     ],
     "H": [
-     13,
+     12,
      7,
      6,
-     5
+     2
     ],
     "D": [
-     11,
-     9,
+     13,
      8,
-     6,
-     5
+     5,
+     4
     ],
     "C": [
-     10,
-     5
+     13,
+     10
     ]
    },
-   "hp": 7,
+   "hp": 8,
    "sp": 9,
    "correct": "3♥",
-   "why": "4 hjerter og 7 hp: spring til 3♥ er spærrende med god støtte.",
+   "why": "4 hjerter og 8 hp: spring til 3♥ er spærrende med god støtte.",
    "en": {
-    "why": "4 hearts and 7 HCP: the jump to 3♥ is preemptive with good support."
+    "why": "4 hearts and 8 HCP: the jump to 3♥ is preemptive with good support."
    }
   },
   {
    "situation": "svar_ru",
    "hand": {
     "S": [
-     13,
-     11,
-     9,
-     4,
-     3
-    ],
-    "H": [
      14,
-     11,
-     4
-    ],
-    "D": [
-     9,
      8,
-     7,
-     4
-    ],
-    "C": [
-     6
-    ]
-   },
-   "hp": 9,
-   "sp": 12,
-   "correct": "3♠",
-   "why": "5 spar og 9 hp: spring til 3♠ er spærrende med god støtte.",
-   "en": {
-    "why": "5 spades and 9 HCP: the jump to 3♠ is preemptive with good support."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     13,
-     12,
-     10,
-     7,
-     5
-    ],
-    "H": [],
-    "D": [
-     13,
-     10,
-     9,
-     8,
-     7
-    ],
-    "C": [
-     11,
-     7,
-     3
-    ]
-   },
-   "hp": 9,
-   "sp": 14,
-   "correct": "3♠",
-   "why": "5 spar og 9 hp: spring til 3♠ er spærrende med god støtte.",
-   "en": {
-    "why": "5 spades and 9 HCP: the jump to 3♠ is preemptive with good support."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     11,
-     7,
+     6,
      5,
-     2
-    ],
-    "H": [
-     9,
-     2
-    ],
-    "D": [
-     4,
-     2
-    ],
-    "C": [
-     13,
-     12,
-     8,
-     7,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 8,
-   "correct": "3♠",
-   "why": "4 spar og 6 hp: spring til 3♠ er spærrende med god støtte.",
-   "en": {
-    "why": "4 spades and 6 HCP: the jump to 3♠ is preemptive with good support."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     14,
-     9,
-     6,
-     3,
-     2
-    ],
-    "H": [],
-    "D": [
-     12,
-     8,
-     7
-    ],
-    "C": [
-     13,
-     9,
-     7,
-     6,
-     2
-    ]
-   },
-   "hp": 9,
-   "sp": 14,
-   "correct": "3♠",
-   "why": "5 spar og 9 hp: spring til 3♠ er spærrende med god støtte.",
-   "en": {
-    "why": "5 spades and 9 HCP: the jump to 3♠ is preemptive with good support."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     10,
-     9,
-     7,
-     6,
      4
     ],
     "H": [],
     "D": [
-     12,
-     8,
-     7
-    ],
-    "C": [
-     14,
-     13,
-     8,
-     4,
-     3
-    ]
-   },
-   "hp": 9,
-   "sp": 14,
-   "correct": "3♠",
-   "why": "5 spar og 9 hp: spring til 3♠ er spærrende med god støtte.",
-   "en": {
-    "why": "5 spades and 9 HCP: the jump to 3♠ is preemptive with good support."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     13,
-     8,
+     6,
      5,
      3
     ],
-    "H": [],
-    "D": [
-     10,
-     9,
-     7,
-     4,
-     3
-    ],
     "C": [
      14,
      9,
      8,
+     5,
      3
     ]
-   },
-   "hp": 7,
-   "sp": 12,
-   "correct": "3♠",
-   "why": "4 spar og 7 hp: spring til 3♠ er spærrende med god støtte.",
-   "en": {
-    "why": "4 spades and 7 HCP: the jump to 3♠ is preemptive with good support."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     11,
-     8,
-     4,
-     3,
-     2
-    ],
-    "H": [
-     14,
-     10,
-     7
-    ],
-    "D": [
-     13,
-     9,
-     8,
-     4,
-     3
-    ],
-    "C": []
    },
    "hp": 8,
    "sp": 13,
@@ -4149,29 +6035,95 @@
    "situation": "svar_ru",
    "hand": {
     "S": [
-     14,
-     12,
+     13,
+     11,
      10,
-     4
-    ],
-    "H": [
-     10,
-     8,
      6
     ],
+    "H": [
+     6,
+     5,
+     4
+    ],
     "D": [
+     12,
+     11,
+     8,
      6
     ],
     "C": [
-     9,
-     8,
      7,
-     4,
-     3
+     6
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "3♠",
+   "why": "4 spar og 7 hp: spring til 3♠ er spærrende med god støtte.",
+   "en": {
+    "why": "4 spades and 7 HCP: the jump to 3♠ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10,
+     3,
+     2
+    ],
+    "H": [
+     9,
+     4
+    ],
+    "D": [
+     14,
+     6,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     9
+    ]
+   },
+   "hp": 8,
+   "sp": 12,
+   "correct": "3♠",
+   "why": "5 spar og 8 hp: spring til 3♠ er spærrende med god støtte.",
+   "en": {
+    "why": "5 spades and 8 HCP: the jump to 3♠ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     10,
+     9,
+     6,
+     2
+    ],
+    "H": [
+     12,
+     8
+    ],
+    "D": [
+     11,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     13,
+     8,
+     4
     ]
    },
    "hp": 6,
-   "sp": 9,
+   "sp": 7,
    "correct": "3♠",
    "why": "4 spar og 6 hp: spring til 3♠ er spærrende med god støtte.",
    "en": {
@@ -4182,25 +6134,483 @@
    "situation": "svar_ru",
    "hand": {
     "S": [
+     13,
+     11,
      10,
+     6,
+     4
+    ],
+    "H": [
+     12,
+     9,
+     6
+    ],
+    "D": [
+     13,
+     10,
+     8,
+     4,
+     2
+    ],
+    "C": []
+   },
+   "hp": 9,
+   "sp": 14,
+   "correct": "3♠",
+   "why": "5 spar og 9 hp: spring til 3♠ er spærrende med god støtte.",
+   "en": {
+    "why": "5 spades and 9 HCP: the jump to 3♠ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     4,
+     2
+    ],
+    "H": [],
+    "D": [
+     10,
+     7,
+     4,
+     2
+    ],
+    "C": [
+     10,
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 13,
+   "correct": "3♠",
+   "why": "5 spar og 8 hp: spring til 3♠ er spærrende med god støtte.",
+   "en": {
+    "why": "5 spades and 8 HCP: the jump to 3♠ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     8,
+     3
+    ],
+    "H": [],
+    "D": [
+     9,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     11,
+     9,
+     6,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 13,
+   "correct": "3♠",
+   "why": "4 spar og 8 hp: spring til 3♠ er spærrende med god støtte.",
+   "en": {
+    "why": "4 spades and 8 HCP: the jump to 3♠ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     6,
+     5
+    ],
+    "H": [
+     12,
+     2
+    ],
+    "D": [
+     11,
+     9,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     10,
+     8
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "correct": "3♠",
+   "why": "4 spar og 8 hp: spring til 3♠ er spærrende med god støtte.",
+   "en": {
+    "why": "4 spades and 8 HCP: the jump to 3♠ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     6,
+     5
+    ],
+    "H": [],
+    "D": [
+     10,
+     9,
+     8,
+     2
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     8,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 14,
+   "correct": "3♠",
+   "why": "4 spar og 9 hp: spring til 3♠ er spærrende med god støtte.",
+   "en": {
+    "why": "4 spades and 9 HCP: the jump to 3♠ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     8,
+     4,
+     2
+    ],
+    "H": [
+     8,
+     5
+    ],
+    "D": [
+     14,
+     10,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     9,
+     8
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "3♠",
+   "why": "4 spar og 7 hp: spring til 3♠ er spærrende med god støtte.",
+   "en": {
+    "why": "4 spades and 7 HCP: the jump to 3♠ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9,
+     8,
+     7
+    ],
+    "H": [
+     10,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     8,
+     7
+    ],
+    "C": [
+     12,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "3♠",
+   "why": "5 spar og 7 hp: spring til 3♠ er spærrende med god støtte.",
+   "en": {
+    "why": "5 spades and 7 HCP: the jump to 3♠ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     11,
+     9,
+     3
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     9,
+     6,
+     5
+    ],
+    "C": [
+     11,
+     9,
+     8,
+     7,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "correct": "3♠",
+   "why": "4 spar og 8 hp: spring til 3♠ er spærrende med god støtte.",
+   "en": {
+    "why": "4 spades and 8 HCP: the jump to 3♠ is preemptive with good support."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     9,
+     6,
      4
     ],
     "H": [
      14,
-     12,
      6,
-     4
+     5
     ],
     "D": [
-     14,
-     11,
-     6,
+     13,
+     10,
+     5,
+     3,
      2
     ],
     "C": [
+     14
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♦",
+   "why": "14 hp: cuebid i deres farve (3♦) er krav og beder makker beskrive videre.",
+   "en": {
+    "why": "14 HCP: the cue-bid in their suit (3♦) is forcing and asks partner to describe further."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     7,
      6,
+     4
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     2
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     11,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "3♦",
+   "why": "14 hp: cuebid i deres farve (3♦) er krav og beder makker beskrive videre.",
+   "en": {
+    "why": "14 HCP: the cue-bid in their suit (3♦) is forcing and asks partner to describe further."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     4
+    ],
+    "H": [
+     12,
+     8,
+     2
+    ],
+    "D": [
+     8,
+     7,
+     2
+    ],
+    "C": [
+     14,
+     9,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "correct": "3♦",
+   "why": "10 hp: cuebid i deres farve (3♦) er krav og beder makker beskrive videre.",
+   "en": {
+    "why": "10 HCP: the cue-bid in their suit (3♦) is forcing and asks partner to describe further."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     11,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     2
+    ],
+    "D": [
+     9,
+     6,
+     5,
      4,
      2
+    ],
+    "C": [
+     13,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "13 hp: cuebid i deres farve (3♦) er krav og beder makker beskrive videre.",
+   "en": {
+    "why": "13 HCP: the cue-bid in their suit (3♦) is forcing and asks partner to describe further."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     9
+    ],
+    "H": [
+     13,
+     9,
+     8,
+     7
+    ],
+    "D": [
+     14,
+     12
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     8,
+     4
+    ]
+   },
+   "hp": 15,
+   "sp": 17,
+   "correct": "3♦",
+   "why": "15 hp: cuebid i deres farve (3♦) er krav og beder makker beskrive videre.",
+   "en": {
+    "why": "15 HCP: the cue-bid in their suit (3♦) is forcing and asks partner to describe further."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     10
+    ],
+    "H": [
+     10,
+     3
+    ],
+    "D": [
+     13,
+     7,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "3♦",
+   "why": "11 hp: cuebid i deres farve (3♦) er krav og beder makker beskrive videre.",
+   "en": {
+    "why": "11 HCP: the cue-bid in their suit (3♦) is forcing and asks partner to describe further."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     11
+    ],
+    "H": [
+     9,
+     7,
+     5
+    ],
+    "D": [
+     14,
+     9,
+     8
+    ],
+    "C": [
+     13,
+     10,
+     8,
+     7,
+     4
     ]
    },
    "hp": 11,
@@ -4215,58 +6625,58 @@
    "situation": "svar_ru",
    "hand": {
     "S": [
-     12,
-     9,
-     8,
-     7
+     14,
+     13,
+     12
     ],
     "H": [
-     14,
-     12,
-     8
+     9,
+     3
     ],
     "D": [
-     14,
-     9,
-     7,
+     13,
+     12,
+     10,
      5,
-     4
+     2
     ],
     "C": [
+     10,
+     7,
      2
     ]
    },
-   "hp": 12,
+   "hp": 14,
    "sp": 15,
    "correct": "3♦",
-   "why": "12 hp: cuebid i deres farve (3♦) er krav og beder makker beskrive videre.",
+   "why": "14 hp: cuebid i deres farve (3♦) er krav og beder makker beskrive videre.",
    "en": {
-    "why": "12 HCP: the cue-bid in their suit (3♦) is forcing and asks partner to describe further."
+    "why": "14 HCP: the cue-bid in their suit (3♦) is forcing and asks partner to describe further."
    }
   },
   {
    "situation": "svar_ru",
    "hand": {
     "S": [
-     13,
-     8
+     11,
+     8,
+     3
     ],
     "H": [
-     10,
-     7,
-     4
+     14,
+     3
     ],
     "D": [
-     14,
-     6,
-     5
+     13,
+     11,
+     9,
+     8
     ],
     "C": [
-     14,
-     11,
-     6,
-     5,
-     4
+     13,
+     8,
+     4,
+     3
     ]
    },
    "hp": 12,
@@ -4281,161 +6691,29 @@
    "situation": "svar_ru",
    "hand": {
     "S": [
-     14,
-     8,
-     3,
-     2
-    ],
-    "H": [
-     14,
      10,
-     5,
-     3
-    ],
-    "D": [
-     14,
-     5
-    ],
-    "C": [
-     13,
-     7,
-     6
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "3♦",
-   "why": "15 hp: cuebid i deres farve (3♦) er krav og beder makker beskrive videre.",
-   "en": {
-    "why": "15 HCP: the cue-bid in their suit (3♦) is forcing and asks partner to describe further."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     10,
-     6
+     9,
+     7
     ],
     "H": [
-     13,
-     12,
-     9
-    ],
-    "D": [
-     14,
-     7,
-     6
-    ],
-    "C": [
-     13,
-     12,
-     7,
-     6,
-     3
-    ]
-   },
-   "hp": 14,
-   "sp": 15,
-   "correct": "3♦",
-   "why": "14 hp: cuebid i deres farve (3♦) er krav og beder makker beskrive videre.",
-   "en": {
-    "why": "14 HCP: the cue-bid in their suit (3♦) is forcing and asks partner to describe further."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11,
-     2
-    ],
-    "H": [
-     11,
-     7,
-     6,
-     4
-    ],
-    "D": [
-     11
-    ],
-    "C": [
-     14,
-     11,
-     7,
-     2
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "3♦",
-   "why": "14 hp: cuebid i deres farve (3♦) er krav og beder makker beskrive videre.",
-   "en": {
-    "why": "14 HCP: the cue-bid in their suit (3♦) is forcing and asks partner to describe further."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     13,
      9,
      4
     ],
-    "H": [
-     13,
-     8,
-     4
-    ],
     "D": [
-     14,
-     10,
-     5,
-     3,
-     2
-    ],
-    "C": [
-     13,
-     12
-    ]
-   },
-   "hp": 15,
-   "sp": 16,
-   "correct": "3♦",
-   "why": "15 hp: cuebid i deres farve (3♦) er krav og beder makker beskrive videre.",
-   "en": {
-    "why": "15 HCP: the cue-bid in their suit (3♦) is forcing and asks partner to describe further."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     8,
-     6,
-     4,
-     2
-    ],
-    "H": [
-     13,
+     12,
      11,
-     6,
-     4
-    ],
-    "D": [
-     10
+     5,
+     2
     ],
     "C": [
      14,
      12,
-     3,
+     11,
      2
     ]
    },
    "hp": 10,
-   "sp": 13,
+   "sp": 11,
    "correct": "3♦",
    "why": "10 hp: cuebid i deres farve (3♦) er krav og beder makker beskrive videre.",
    "en": {
@@ -4446,25 +6724,321 @@
    "situation": "svar_ru",
    "hand": {
     "S": [
-     10,
+     14,
+     13,
+     9,
+     6
+    ],
+    "H": [
+     12,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     11,
+     8,
+     6,
+     3,
+     2
+    ],
+    "C": []
+   },
+   "hp": 10,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "10 hp: cuebid i deres farve (3♦) er krav og beder makker beskrive videre.",
+   "en": {
+    "why": "10 HCP: the cue-bid in their suit (3♦) is forcing and asks partner to describe further."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11
+    ],
+    "H": [
+     13,
+     9,
+     5
+    ],
+    "D": [
+     12,
+     9
+    ],
+    "C": [
+     12,
+     11,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "15 hp: cuebid i deres farve (3♦) er krav og beder makker beskrive videre.",
+   "en": {
+    "why": "15 HCP: the cue-bid in their suit (3♦) is forcing and asks partner to describe further."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     9,
+     7,
      4
     ],
     "H": [
-     7,
-     6
+     12,
+     9,
+     7
     ],
     "D": [
-     13,
-     12,
      11,
      10,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "correct": "2NT",
+   "why": "Lige mange hjerter og spar (3-3): 2NT er relæ.",
+   "en": {
+    "why": "As many hearts as spades (3-3): 2NT is a relay."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     9,
+     6,
+     4
+    ],
+    "H": [
+     9,
+     8,
+     4
+    ],
+    "D": [
+     12,
      9
+    ],
+    "C": [
+     12,
+     11,
+     9,
+     7,
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "2NT",
+   "why": "Lige mange hjerter og spar (3-3): 2NT er relæ.",
+   "en": {
+    "why": "As many hearts as spades (3-3): 2NT is a relay."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     8,
+     2
+    ],
+    "H": [
+     14,
+     5
+    ],
+    "D": [
+     14,
+     10,
+     4,
+     3,
+     2
     ],
     "C": [
      9,
      8,
      4,
      3
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "correct": "2NT",
+   "why": "Lige mange hjerter og spar (2-2): 2NT er relæ.",
+   "en": {
+    "why": "As many hearts as spades (2-2): 2NT is a relay."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     10,
+     8,
+     3
+    ],
+    "H": [
+     12,
+     11,
+     4
+    ],
+    "D": [
+     12,
+     6
+    ],
+    "C": [
+     10,
+     9,
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "correct": "2NT",
+   "why": "Lige mange hjerter og spar (3-3): 2NT er relæ.",
+   "en": {
+    "why": "As many hearts as spades (3-3): 2NT is a relay."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     10,
+     8
+    ],
+    "H": [
+     14,
+     8
+    ],
+    "D": [
+     11,
+     10,
+     6,
+     3
+    ],
+    "C": [
+     12,
+     8,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "2NT",
+   "why": "Lige mange hjerter og spar (2-2): 2NT er relæ.",
+   "en": {
+    "why": "As many hearts as spades (2-2): 2NT is a relay."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     12,
+     9
+    ],
+    "H": [
+     9,
+     4
+    ],
+    "D": [
+     13,
+     10,
+     9,
+     8,
+     4
+    ],
+    "C": [
+     12,
+     11,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "correct": "2NT",
+   "why": "Lige mange hjerter og spar (2-2): 2NT er relæ.",
+   "en": {
+    "why": "As many hearts as spades (2-2): 2NT is a relay."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     9,
+     8,
+     5
+    ],
+    "H": [
+     11,
+     9,
+     4
+    ],
+    "D": [
+     13,
+     5
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     6,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "correct": "2NT",
+   "why": "Lige mange hjerter og spar (3-3): 2NT er relæ.",
+   "en": {
+    "why": "As many hearts as spades (3-3): 2NT is a relay."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     10,
+     8
+    ],
+    "H": [
+     14,
+     6
+    ],
+    "D": [
+     10,
+     8,
+     4,
+     3
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     4,
+     2
     ]
    },
    "hp": 6,
@@ -4479,157 +7053,91 @@
    "situation": "svar_ru",
    "hand": {
     "S": [
-     6,
-     4
-    ],
-    "H": [
-     10,
-     8
-    ],
-    "D": [
-     14,
-     9,
-     8,
-     3
-    ],
-    "C": [
-     12,
      11,
-     10,
-     8,
-     3
-    ]
-   },
-   "hp": 7,
-   "sp": 9,
-   "correct": "2NT",
-   "why": "Lige mange hjerter og spar (2-2): 2NT er relæ.",
-   "en": {
-    "why": "As many hearts as spades (2-2): 2NT is a relay."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     9,
-     4
-    ],
-    "H": [
-     11,
-     8
-    ],
-    "D": [
-     13,
-     10,
-     8,
-     3,
-     2
-    ],
-    "C": [
-     13,
-     10,
      6,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 9,
-   "correct": "2NT",
-   "why": "Lige mange hjerter og spar (2-2): 2NT er relæ.",
-   "en": {
-    "why": "As many hearts as spades (2-2): 2NT is a relay."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     14,
-     3
-    ],
-    "H": [
-     10,
-     6
-    ],
-    "D": [
-     8,
-     7,
-     6,
-     4,
-     2
-    ],
-    "C": [
-     14,
-     8,
-     5,
-     4
-    ]
-   },
-   "hp": 8,
-   "sp": 10,
-   "correct": "2NT",
-   "why": "Lige mange hjerter og spar (2-2): 2NT er relæ.",
-   "en": {
-    "why": "As many hearts as spades (2-2): 2NT is a relay."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     8,
-     7
-    ],
-    "H": [
-     13,
-     9
-    ],
-    "D": [
-     12,
-     9,
-     7,
-     2
-    ],
-    "C": [
-     12,
-     9,
-     6,
-     4,
-     3
-    ]
-   },
-   "hp": 7,
-   "sp": 9,
-   "correct": "2NT",
-   "why": "Lige mange hjerter og spar (2-2): 2NT er relæ.",
-   "en": {
-    "why": "As many hearts as spades (2-2): 2NT is a relay."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     8,
      5
     ],
     "H": [
+     6,
+     5,
+     2
+    ],
+    "D": [
+     11,
+     10,
+     6,
+     2
+    ],
+    "C": [
      8,
-     6
+     7,
+     2
+    ]
+   },
+   "hp": 2,
+   "sp": 2,
+   "correct": "2NT",
+   "why": "Lige mange hjerter og spar (3-3): 2NT er relæ.",
+   "en": {
+    "why": "As many hearts as spades (3-3): 2NT is a relay."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     13,
+     9
+    ],
+    "H": [
+     13,
+     3
+    ],
+    "D": [
+     12,
+     9,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     11,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "correct": "2NT",
+   "why": "Lige mange hjerter og spar (2-2): 2NT er relæ.",
+   "en": {
+    "why": "As many hearts as spades (2-2): 2NT is a relay."
+   }
+  },
+  {
+   "situation": "svar_ru",
+   "hand": {
+    "S": [
+     10,
+     8
+    ],
+    "H": [
+     12,
+     7
     ],
     "D": [
      13,
      11,
-     8,
-     7,
-     4
+     10,
+     6
     ],
     "C": [
-     14,
+     12,
+     9,
+     7,
      6,
-     5,
-     2
+     3
     ]
    },
    "hp": 8,
@@ -4645,65 +7153,32 @@
    "hand": {
     "S": [
      9,
-     5,
-     2
+     5
     ],
     "H": [
-     10,
-     8,
-     2
+     14,
+     5
     ],
     "D": [
-     13,
+     10,
+     9,
+     8,
+     7,
+     6
+    ],
+    "C": [
+     12,
      11,
      9,
      7
-    ],
-    "C": [
-     6,
-     4,
-     3
     ]
    },
-   "hp": 4,
-   "sp": 4,
+   "hp": 7,
+   "sp": 9,
    "correct": "2NT",
-   "why": "Lige mange hjerter og spar (3-3): 2NT er relæ.",
+   "why": "Lige mange hjerter og spar (2-2): 2NT er relæ.",
    "en": {
-    "why": "As many hearts as spades (3-3): 2NT is a relay."
-   }
-  },
-  {
-   "situation": "svar_ru",
-   "hand": {
-    "S": [
-     10,
-     7,
-     6
-    ],
-    "H": [
-     12,
-     9,
-     6
-    ],
-    "D": [
-     11,
-     6,
-     3,
-     2
-    ],
-    "C": [
-     8,
-     7,
-     2
-    ]
-   },
-   "hp": 3,
-   "sp": 3,
-   "correct": "2NT",
-   "why": "Lige mange hjerter og spar (3-3): 2NT er relæ.",
-   "en": {
-    "why": "As many hearts as spades (3-3): 2NT is a relay."
+    "why": "As many hearts as spades (2-2): 2NT is a relay."
    }
   },
   {
@@ -4712,63 +7187,96 @@
     "S": [
      14,
      13,
-     8,
-     6,
+     9,
+     7,
+     5,
      2
     ],
-    "H": [],
+    "H": [
+     10
+    ],
     "D": [
-     13,
-     8
+     4
     ],
     "C": [
      14,
+     13,
      12,
      11,
-     9,
-     8,
-     2
+     6
     ]
    },
    "hp": 17,
    "sp": 23,
    "correct": "2♥",
-   "why": "6 klør og 5 spar og 17 hp (17+): 2♥ viser spar og en minor, mindst 5-5.",
+   "why": "5 klør og 6 spar og 17 hp (17+): 2♥ viser spar og en minor, mindst 5-5.",
    "en": {
-    "why": "6 clubs and 5 spades and 17 HCP (17+): 2♥ shows spades and a minor, at least 5-5."
+    "why": "5 clubs and 6 spades and 17 HCP (17+): 2♥ shows spades and a minor, at least 5-5."
    }
   },
   {
    "situation": "ind_hj",
    "hand": {
     "S": [
-     14,
-     9,
-     7,
-     5,
-     3
-    ],
-    "H": [
-     7,
-     4
-    ],
-    "D": [
-     8
-    ],
-    "C": [
      14,
      13,
      12,
-     7,
-     6
+     10,
+     7
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     14,
+     11,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     9
     ]
    },
-   "hp": 13,
-   "sp": 17,
+   "hp": 18,
+   "sp": 22,
    "correct": "2♥",
-   "why": "5 klør og 5 spar og 13 hp (8–15): 2♥ viser spar og en minor, mindst 5-5.",
+   "why": "5 ruder og 5 spar og 18 hp (17+): 2♥ viser spar og en minor, mindst 5-5.",
    "en": {
-    "why": "5 clubs and 5 spades and 13 HCP (8–15): 2♥ shows spades and a minor, at least 5-5."
+    "why": "5 diamonds and 5 spades and 18 HCP (17+): 2♥ shows spades and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     8,
+     7
+    ],
+    "C": []
+   },
+   "hp": 17,
+   "sp": 22,
+   "correct": "2♥",
+   "why": "5 ruder og 5 spar og 17 hp (17+): 2♥ viser spar og en minor, mindst 5-5.",
+   "en": {
+    "why": "5 diamonds and 5 spades and 17 HCP (17+): 2♥ shows spades and a minor, at least 5-5."
    }
   },
   {
@@ -4777,128 +7285,62 @@
     "S": [
      14,
      13,
+     12,
+     10,
+     7
+    ],
+    "H": [
      10,
      4,
      3
     ],
-    "H": [],
     "D": [
-     12,
-     4
-    ],
-    "C": [
      14,
-     13,
      12,
+     10,
      9,
-     7,
-     6
-    ]
+     2
+    ],
+    "C": []
    },
-   "hp": 18,
-   "sp": 24,
+   "hp": 15,
+   "sp": 20,
    "correct": "2♥",
-   "why": "6 klør og 5 spar og 18 hp (17+): 2♥ viser spar og en minor, mindst 5-5.",
+   "why": "5 ruder og 5 spar og 15 hp (8–15): 2♥ viser spar og en minor, mindst 5-5.",
    "en": {
-    "why": "6 clubs and 5 spades and 18 HCP (17+): 2♥ shows spades and a minor, at least 5-5."
+    "why": "5 diamonds and 5 spades and 15 HCP (8–15): 2♥ shows spades and a minor, at least 5-5."
    }
   },
   {
    "situation": "ind_hj",
    "hand": {
     "S": [
-     14,
-     12,
-     9,
-     8,
-     7
+     10,
+     7,
+     5,
+     4,
+     3,
+     2
     ],
     "H": [
-     5,
-     4
+     14,
+     8
     ],
     "D": [],
     "C": [
      14,
-     11,
      9,
-     6,
-     4,
-     3
-    ]
-   },
-   "hp": 11,
-   "sp": 17,
-   "correct": "2♥",
-   "why": "6 klør og 5 spar og 11 hp (8–15): 2♥ viser spar og en minor, mindst 5-5.",
-   "en": {
-    "why": "6 clubs and 5 spades and 11 HCP (8–15): 2♥ shows spades and a minor, at least 5-5."
-   }
-  },
-  {
-   "situation": "ind_hj",
-   "hand": {
-    "S": [
-     14,
-     13,
      8,
      6,
-     4,
-     3
-    ],
-    "H": [
-     14
-    ],
-    "D": [
-     7
-    ],
-    "C": [
-     14,
-     13,
-     11,
-     5,
      4
-    ]
-   },
-   "hp": 19,
-   "sp": 25,
-   "correct": "2♥",
-   "why": "5 klør og 6 spar og 19 hp (17+): 2♥ viser spar og en minor, mindst 5-5.",
-   "en": {
-    "why": "5 clubs and 6 spades and 19 HCP (17+): 2♥ shows spades and a minor, at least 5-5."
-   }
-  },
-  {
-   "situation": "ind_hj",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
-     9,
-     7
-    ],
-    "H": [
-     2
-    ],
-    "D": [
-     6
-    ],
-    "C": [
-     12,
-     10,
-     6,
-     5,
-     3,
-     2
     ]
    },
    "hp": 8,
    "sp": 14,
    "correct": "2♥",
-   "why": "6 klør og 5 spar og 8 hp (8–15): 2♥ viser spar og en minor, mindst 5-5.",
+   "why": "5 klør og 6 spar og 8 hp (8–15): 2♥ viser spar og en minor, mindst 5-5.",
    "en": {
-    "why": "6 clubs and 5 spades and 8 HCP (8–15): 2♥ shows spades and a minor, at least 5-5."
+    "why": "5 clubs and 6 spades and 8 HCP (8–15): 2♥ shows spades and a minor, at least 5-5."
    }
   },
   {
@@ -4907,30 +7349,62 @@
     "S": [
      14,
      13,
-     12,
-     8,
+     11,
+     10,
+     6,
      4
+    ],
+    "H": [],
+    "D": [
+     6
+    ],
+    "C": [
+     13,
+     11,
+     9,
+     8,
+     5,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 20,
+   "correct": "2♥",
+   "why": "6 klør og 6 spar og 12 hp (8–15): 2♥ viser spar og en minor, mindst 5-5.",
+   "en": {
+    "why": "6 clubs and 6 spades and 12 HCP (8–15): 2♥ shows spades and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_hj",
+   "hand": {
+    "S": [
+     12,
+     11,
+     9,
+     3,
+     2
     ],
     "H": [
      13,
-     6
+     6,
+     2
     ],
     "D": [],
     "C": [
+     14,
      13,
-     12,
-     10,
-     6,
-     3,
+     11,
+     4,
      2
     ]
    },
-   "hp": 17,
-   "sp": 23,
+   "hp": 14,
+   "sp": 19,
    "correct": "2♥",
-   "why": "6 klør og 5 spar og 17 hp (17+): 2♥ viser spar og en minor, mindst 5-5.",
+   "why": "5 klør og 5 spar og 14 hp (8–15): 2♥ viser spar og en minor, mindst 5-5.",
    "en": {
-    "why": "6 clubs and 5 spades and 17 HCP (17+): 2♥ shows spades and a minor, at least 5-5."
+    "why": "5 clubs and 5 spades and 14 HCP (8–15): 2♥ shows spades and a minor, at least 5-5."
    }
   },
   {
@@ -4939,23 +7413,120 @@
     "S": [
      13,
      12,
-     11,
-     10,
-     7
+     8,
+     6,
+     2
     ],
     "H": [
-     14
+     7
     ],
     "D": [
-     14
+     14,
+     13,
+     9,
+     7,
+     5,
+     4
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 15,
+   "sp": 21,
+   "correct": "2♥",
+   "why": "6 ruder og 5 spar og 15 hp (8–15): 2♥ viser spar og en minor, mindst 5-5.",
+   "en": {
+    "why": "6 diamonds and 5 spades and 15 HCP (8–15): 2♥ shows spades and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_hj",
+   "hand": {
+    "S": [
+     14,
+     11,
+     9,
+     7,
+     6,
+     4
+    ],
+    "H": [],
+    "D": [
+     13,
+     11,
+     8,
+     7,
+     3
     ],
     "C": [
      13,
+     11
+    ]
+   },
+   "hp": 13,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "5 ruder og 6 spar og 13 hp (8–15): 2♥ viser spar og en minor, mindst 5-5.",
+   "en": {
+    "why": "5 diamonds and 6 spades and 13 HCP (8–15): 2♥ shows spades and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_hj",
+   "hand": {
+    "S": [
+     13,
      11,
+     10,
+     8,
      7,
-     6,
-     5,
      3
+    ],
+    "H": [],
+    "D": [
+     5
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     10,
+     9,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 20,
+   "correct": "2♥",
+   "why": "6 klør og 6 spar og 12 hp (8–15): 2♥ viser spar og en minor, mindst 5-5.",
+   "en": {
+    "why": "6 clubs and 6 spades and 12 HCP (8–15): 2♥ shows spades and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     10,
+     2
+    ],
+    "H": [
+     13
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     9,
+     8,
+     7
     ]
    },
    "hp": 18,
@@ -4970,226 +7541,193 @@
    "situation": "ind_hj",
    "hand": {
     "S": [
-     13,
+     14,
      11,
+     10,
      8,
-     6,
+     5,
+     3
+    ],
+    "H": [
+     12,
+     10
+    ],
+    "D": [
+     14,
+     8,
+     7,
+     5,
+     2
+    ],
+    "C": []
+   },
+   "hp": 11,
+   "sp": 17,
+   "correct": "2♥",
+   "why": "5 ruder og 6 spar og 11 hp (8–15): 2♥ viser spar og en minor, mindst 5-5.",
+   "en": {
+    "why": "5 diamonds and 6 spades and 11 HCP (8–15): 2♥ shows spades and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     10,
+     8,
      4,
      2
     ],
-    "H": [],
-    "D": [
-     12,
-     11,
-     10,
-     9,
-     7,
-     3
-    ],
-    "C": [
-     12
-    ]
-   },
-   "hp": 9,
-   "sp": 17,
-   "correct": "2♥",
-   "why": "6 ruder og 6 spar og 9 hp (8–15): 2♥ viser spar og en minor, mindst 5-5.",
-   "en": {
-    "why": "6 diamonds and 6 spades and 9 HCP (8–15): 2♥ shows spades and a minor, at least 5-5."
-   }
-  },
-  {
-   "situation": "ind_hj",
-   "hand": {
-    "S": [
-     14,
-     10,
-     9,
-     6,
-     2
-    ],
     "H": [
-     11,
-     6
-    ],
-    "D": [
-     14,
-     9,
-     7,
-     6,
-     3
-    ],
-    "C": [
      14
-    ]
-   },
-   "hp": 13,
-   "sp": 17,
-   "correct": "2♥",
-   "why": "5 ruder og 5 spar og 13 hp (8–15): 2♥ viser spar og en minor, mindst 5-5.",
-   "en": {
-    "why": "5 diamonds and 5 spades and 13 HCP (8–15): 2♥ shows spades and a minor, at least 5-5."
-   }
-  },
-  {
-   "situation": "ind_hj",
-   "hand": {
-    "S": [
-     13,
-     12,
-     8,
-     7,
-     6
-    ],
-    "H": [
-     10,
-     8,
-     2
     ],
     "D": [],
     "C": [
-     9,
-     6,
-     5,
-     4,
-     2
-    ]
-   },
-   "hp": 5,
-   "sp": 10,
-   "correct": "Pas",
-   "why": "5 klør og 5 spar, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
-   "en": {
-    "why": "5 clubs and 5 spades, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_hj",
-   "hand": {
-    "S": [
-     13,
-     10,
-     9,
-     7,
-     5
-    ],
-    "H": [],
-    "D": [
-     13,
-     8,
-     7,
-     5,
-     3,
-     2
-    ],
-    "C": [
-     8,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 12,
-   "correct": "Pas",
-   "why": "6 ruder og 5 spar, men kun 6 hp – kravet er 8–15 eller 17+. Pas.",
-   "en": {
-    "why": "6 diamonds and 5 spades, but only 6 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_hj",
-   "hand": {
-    "S": [
      12,
      10,
+     8,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 19,
+   "correct": "2♥",
+   "why": "6 klør og 6 spar og 11 hp (8–15): 2♥ viser spar og en minor, mindst 5-5.",
+   "en": {
+    "why": "6 clubs and 6 spades and 11 HCP (8–15): 2♥ shows spades and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_hj",
+   "hand": {
+    "S": [
+     11,
+     10,
+     9,
+     6,
+     3
+    ],
+    "H": [
+     13,
+     9,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     10,
+     6,
+     4
+    ],
+    "C": []
+   },
+   "hp": 11,
+   "sp": 16,
+   "correct": "2♥",
+   "why": "5 ruder og 5 spar og 11 hp (8–15): 2♥ viser spar og en minor, mindst 5-5.",
+   "en": {
+    "why": "5 diamonds and 5 spades and 11 HCP (8–15): 2♥ shows spades and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_hj",
+   "hand": {
+    "S": [
+     14,
+     11,
      9,
      7,
-     3,
      2
     ],
     "H": [
-     9
-    ],
-    "D": [
-     13,
+     14,
      9,
-     5,
-     3,
-     2
+     7
     ],
+    "D": [],
     "C": [
-     8
+     14,
+     13,
+     12,
+     11,
+     6
     ]
    },
-   "hp": 5,
-   "sp": 11,
-   "correct": "Pas",
-   "why": "5 ruder og 6 spar, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
+   "hp": 19,
+   "sp": 24,
+   "correct": "2♥",
+   "why": "5 klør og 5 spar og 19 hp (17+): 2♥ viser spar og en minor, mindst 5-5.",
    "en": {
-    "why": "5 diamonds and 6 spades, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
+    "why": "5 clubs and 5 spades and 19 HCP (17+): 2♥ shows spades and a minor, at least 5-5."
    }
   },
   {
    "situation": "ind_hj",
    "hand": {
     "S": [
+     14,
+     13,
      11,
-     7,
-     6,
-     3,
-     2
+     5,
+     4
     ],
     "H": [],
     "D": [
      13,
+     12,
+     11,
+     7,
+     6,
+     4
+    ],
+    "C": [
+     14,
+     10
+    ]
+   },
+   "hp": 18,
+   "sp": 24,
+   "correct": "2♥",
+   "why": "6 ruder og 5 spar og 18 hp (17+): 2♥ viser spar og en minor, mindst 5-5.",
+   "en": {
+    "why": "6 diamonds and 5 spades and 18 HCP (17+): 2♥ shows spades and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_hj",
+   "hand": {
+    "S": [
+     12,
      9,
+     7,
+     6,
+     2
+    ],
+    "H": [
+     3
+    ],
+    "D": [
+     7,
      2
     ],
     "C": [
      12,
-     11,
-     5,
-     4,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 12,
-   "correct": "Pas",
-   "why": "5 klør og 5 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
-   "en": {
-    "why": "5 clubs and 5 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_hj",
-   "hand": {
-    "S": [
-     13,
-     11,
-     10,
-     9,
      7,
-     6
-    ],
-    "H": [],
-    "D": [
-     7,
-     5
-    ],
-    "C": [
-     10,
-     8,
      6,
      5,
-     4
+     2
     ]
    },
    "hp": 4,
-   "sp": 10,
+   "sp": 8,
    "correct": "Pas",
-   "why": "5 klør og 6 spar, men kun 4 hp – kravet er 8–15 eller 17+. Pas.",
+   "why": "5 klør og 5 spar, men kun 4 hp – kravet er 8–15 eller 17+. Pas.",
    "en": {
-    "why": "5 clubs and 6 spades, but only 4 HCP – the requirement is 8–15 or 17+. Pass."
+    "why": "5 clubs and 5 spades, but only 4 HCP – the requirement is 8–15 or 17+. Pass."
    }
   },
   {
@@ -5197,24 +7735,24 @@
    "hand": {
     "S": [
      12,
-     9,
+     11,
+     10,
      6,
-     5,
      2
     ],
     "H": [
-     2
+     8
     ],
     "D": [
-     13,
+     12,
      10,
-     7,
-     6,
-     5
+     4,
+     3,
+     2
     ],
     "C": [
-     10,
-     5
+     6,
+     4
     ]
    },
    "hp": 5,
@@ -5229,32 +7767,96 @@
    "situation": "ind_hj",
    "hand": {
     "S": [
-     13,
-     11,
+     12,
+     10,
      9,
      8,
-     6,
-     5
+     2
     ],
     "H": [
-     5
+     12,
+     11,
+     9
     ],
     "D": [],
     "C": [
+     12,
+     10,
+     9,
+     5,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "correct": "Pas",
+   "why": "5 klør og 5 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 clubs and 5 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_hj",
+   "hand": {
+    "S": [
+     12,
+     10,
+     8,
+     4,
+     3
+    ],
+    "H": [],
+    "D": [
+     14,
+     11,
+     10,
+     9,
+     6,
+     3
+    ],
+    "C": [
+     8,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "6 ruder og 5 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "6 diamonds and 5 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_hj",
+   "hand": {
+    "S": [
+     12,
+     10,
+     8,
+     6,
+     5
+    ],
+    "H": [],
+    "D": [
+     13,
+     12,
      8,
      7,
      6,
-     5,
-     4,
-     3
+     5
+    ],
+    "C": [
+     6,
+     2
     ]
    },
-   "hp": 4,
-   "sp": 12,
+   "hp": 7,
+   "sp": 13,
    "correct": "Pas",
-   "why": "6 klør og 6 spar, men kun 4 hp – kravet er 8–15 eller 17+. Pas.",
+   "why": "6 ruder og 5 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
    "en": {
-    "why": "6 clubs and 6 spades, but only 4 HCP – the requirement is 8–15 or 17+. Pass."
+    "why": "6 diamonds and 5 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
    }
   },
   {
@@ -5262,27 +7864,318 @@
    "hand": {
     "S": [
      14,
-     11,
-     7,
-     5,
+     10,
+     8,
+     6,
+     4,
      3
     ],
     "H": [
-     10,
-     8,
-     3
+     9,
+     7
     ],
-    "D": [
-     12,
+    "D": [],
+    "C": [
+     11,
+     8,
+     6,
+     3,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "5 klør og 6 spar, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 clubs and 6 spades, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_hj",
+   "hand": {
+    "S": [
+     9,
      8,
      7,
+     5,
+     2
+    ],
+    "H": [
+     9,
+     4
+    ],
+    "D": [
+     13,
+     12,
+     9,
+     8,
+     7,
+     4
+    ],
+    "C": []
+   },
+   "hp": 5,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "6 ruder og 5 spar, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "6 diamonds and 5 spades, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_hj",
+   "hand": {
+    "S": [
+     10,
+     9,
+     7,
+     6,
+     5,
+     3
+    ],
+    "H": [],
+    "D": [
+     13
+    ],
+    "C": [
+     13,
+     9,
+     8,
+     6,
      4,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 14,
+   "correct": "Pas",
+   "why": "6 klør og 6 spar, men kun 6 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "6 clubs and 6 spades, but only 6 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_hj",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     6,
+     5,
+     4
+    ],
+    "H": [],
+    "D": [
+     9
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     7,
+     5,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 15,
+   "correct": "Pas",
+   "why": "6 klør og 6 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "6 clubs and 6 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_hj",
+   "hand": {
+    "S": [
+     10,
+     8,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     11
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     9,
+     7,
+     4
+    ],
+    "C": [
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "6 ruder og 5 spar, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "6 diamonds and 5 spades, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_hj",
+   "hand": {
+    "S": [
+     7,
+     6,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     9
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     13,
+     11,
+     5,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "6 klør og 5 spar, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "6 clubs and 5 spades, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_hj",
+   "hand": {
+    "S": [
+     9,
+     7,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     7,
+     4
+    ],
+    "D": [
+     14,
+     12,
+     11,
+     9,
+     8,
+     4
+    ],
+    "C": []
+   },
+   "hp": 7,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "6 ruder og 5 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "6 diamonds and 5 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     5,
+     2
+    ],
+    "H": [
+     3,
+     2
+    ],
+    "D": [
+     10,
+     9,
+     7,
+     6,
+     5,
      2
     ],
     "C": []
    },
    "hp": 7,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "6 ruder og 5 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "6 diamonds and 5 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_hj",
+   "hand": {
+    "S": [
+     13,
+     9,
+     7,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     2
+    ],
+    "D": [
+     11,
+     10,
+     7,
+     6,
+     5,
+     4
+    ],
+    "C": []
+   },
+   "hp": 4,
    "sp": 12,
+   "correct": "Pas",
+   "why": "6 ruder og 6 spar, men kun 4 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "6 diamonds and 6 spades, but only 4 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     8,
+     6,
+     2
+    ],
+    "H": [
+     11,
+     7
+    ],
+    "D": [
+     9,
+     7,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     12
+    ]
+   },
+   "hp": 7,
+   "sp": 11,
    "correct": "Pas",
    "why": "5 ruder og 5 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
    "en": {
@@ -5296,94 +8189,29 @@
      12,
      11,
      9,
-     8,
-     5
+     7,
+     6,
+     4
     ],
     "H": [],
     "D": [
-     12,
-     8,
-     6,
-     5,
-     4
+     2
     ],
     "C": [
-     6,
-     5,
-     4
-    ]
-   },
-   "hp": 5,
-   "sp": 10,
-   "correct": "Pas",
-   "why": "5 ruder og 5 spar, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
-   "en": {
-    "why": "5 diamonds and 5 spades, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_hj",
-   "hand": {
-    "S": [
-     14,
-     12,
+     13,
      11,
-     5,
-     2
-    ],
-    "H": [
-     10,
-     2
-    ],
-    "D": [
-     7
-    ],
-    "C": [
      10,
      9,
-     8,
-     7,
-     5
+     4,
+     2
     ]
    },
    "hp": 7,
-   "sp": 11,
+   "sp": 15,
    "correct": "Pas",
-   "why": "5 klør og 5 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
+   "why": "6 klør og 6 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
    "en": {
-    "why": "5 clubs and 5 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_sp",
-   "hand": {
-    "S": [
-     13,
-     12
-    ],
-    "H": [
-     14,
-     12,
-     9,
-     7,
-     5,
-     2
-    ],
-    "D": [
-     13,
-     12,
-     11,
-     9,
-     5
-    ],
-    "C": []
-   },
-   "hp": 17,
-   "sp": 23,
-   "correct": "2♠",
-   "why": "5 ruder og 6 hjerter og 17 hp (17+): 2♠ viser hjerter og en minor, mindst 5-5.",
-   "en": {
-    "why": "5 diamonds and 6 hearts and 17 HCP (17+): 2♠ shows hearts and a minor, at least 5-5."
+    "why": "6 clubs and 6 spades, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
    }
   },
   {
@@ -5393,80 +8221,16 @@
     "H": [
      14,
      13,
-     12,
-     7,
-     3
-    ],
-    "D": [
-     14,
-     13,
-     10,
-     8,
-     5,
-     2
-    ],
-    "C": [
-     12,
-     5
-    ]
-   },
-   "hp": 18,
-   "sp": 24,
-   "correct": "2♠",
-   "why": "6 ruder og 5 hjerter og 18 hp (17+): 2♠ viser hjerter og en minor, mindst 5-5.",
-   "en": {
-    "why": "6 diamonds and 5 hearts and 18 HCP (17+): 2♠ shows hearts and a minor, at least 5-5."
-   }
-  },
-  {
-   "situation": "ind_sp",
-   "hand": {
-    "S": [
-     7,
-     5
-    ],
-    "H": [
-     13,
-     7,
-     6,
+     11,
+     9,
      5,
      4
     ],
-    "D": [],
-    "C": [
-     14,
-     11,
-     9,
-     7,
-     6,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 14,
-   "correct": "2♠",
-   "why": "6 klør og 5 hjerter og 8 hp (8–15): 2♠ viser hjerter og en minor, mindst 5-5.",
-   "en": {
-    "why": "6 clubs and 5 hearts and 8 HCP (8–15): 2♠ shows hearts and a minor, at least 5-5."
-   }
-  },
-  {
-   "situation": "ind_sp",
-   "hand": {
-    "S": [],
-    "H": [
-     13,
-     12,
-     11,
-     10,
-     7
-    ],
     "D": [
      14,
      13,
-     10,
-     8,
-     6,
+     12,
+     11,
      5
     ],
     "C": [
@@ -5474,12 +8238,45 @@
      8
     ]
    },
-   "hp": 13,
-   "sp": 19,
+   "hp": 18,
+   "sp": 24,
    "correct": "2♠",
-   "why": "6 ruder og 5 hjerter og 13 hp (8–15): 2♠ viser hjerter og en minor, mindst 5-5.",
+   "why": "5 ruder og 6 hjerter og 18 hp (17+): 2♠ viser hjerter og en minor, mindst 5-5.",
    "en": {
-    "why": "6 diamonds and 5 hearts and 13 HCP (8–15): 2♠ shows hearts and a minor, at least 5-5."
+    "why": "5 diamonds and 6 hearts and 18 HCP (17+): 2♠ shows hearts and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     9,
+     8
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     8,
+     4,
+     3
+    ],
+    "C": [
+     4
+    ]
+   },
+   "hp": 17,
+   "sp": 23,
+   "correct": "2♠",
+   "why": "6 ruder og 5 hjerter og 17 hp (17+): 2♠ viser hjerter og en minor, mindst 5-5.",
+   "en": {
+    "why": "6 diamonds and 5 hearts and 17 HCP (17+): 2♠ shows hearts and a minor, at least 5-5."
    }
   },
   {
@@ -5487,23 +8284,440 @@
    "hand": {
     "S": [
      14,
+     13,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     8,
+     4
+    ],
+    "D": [],
+    "C": [
+     13,
+     12,
+     11,
+     10,
+     5
+    ]
+   },
+   "hp": 18,
+   "sp": 23,
+   "correct": "2♠",
+   "why": "5 klør og 5 hjerter og 18 hp (17+): 2♠ viser hjerter og en minor, mindst 5-5.",
+   "en": {
+    "why": "5 clubs and 5 hearts and 18 HCP (17+): 2♠ shows hearts and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [
+     14,
+     11,
      10
     ],
     "H": [
+     14,
      13,
      11,
+     3,
+     2
+    ],
+    "D": [],
+    "C": [
+     14,
+     12,
      10,
+     8,
+     7
+    ]
+   },
+   "hp": 19,
+   "sp": 24,
+   "correct": "2♠",
+   "why": "5 klør og 5 hjerter og 19 hp (17+): 2♠ viser hjerter og en minor, mindst 5-5.",
+   "en": {
+    "why": "5 clubs and 5 hearts and 19 HCP (17+): 2♠ shows hearts and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     13,
+     8,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     12
+    ],
+    "C": [
+     14,
+     12,
+     8,
+     6,
+     5,
+     2
+    ]
+   },
+   "hp": 18,
+   "sp": 24,
+   "correct": "2♠",
+   "why": "6 klør og 5 hjerter og 18 hp (17+): 2♠ viser hjerter og en minor, mindst 5-5.",
+   "en": {
+    "why": "6 clubs and 5 hearts and 18 HCP (17+): 2♠ shows hearts and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     8,
+     5,
+     3,
+     2
+    ],
+    "D": [
      9,
+     5,
+     3
+    ],
+    "C": [
+     13,
+     11,
+     9,
+     7,
      5
+    ]
+   },
+   "hp": 8,
+   "sp": 13,
+   "correct": "2♠",
+   "why": "5 klør og 5 hjerter og 8 hp (8–15): 2♠ viser hjerter og en minor, mindst 5-5.",
+   "en": {
+    "why": "5 clubs and 5 hearts and 8 HCP (8–15): 2♠ shows hearts and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [
+     13,
+     8
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     10,
+     2
     ],
     "D": [],
     "C": [
      14,
      13,
      12,
+     11,
+     6,
+     5
+    ]
+   },
+   "hp": 19,
+   "sp": 25,
+   "correct": "2♠",
+   "why": "6 klør og 5 hjerter og 19 hp (17+): 2♠ viser hjerter og en minor, mindst 5-5.",
+   "en": {
+    "why": "6 clubs and 5 hearts and 19 HCP (17+): 2♠ shows hearts and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     13,
+     10,
+     8,
+     5,
+     2
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     13,
+     12,
+     9,
      8,
      7,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 20,
+   "correct": "2♠",
+   "why": "6 klør og 6 hjerter og 12 hp (8–15): 2♠ viser hjerter og en minor, mindst 5-5.",
+   "en": {
+    "why": "6 clubs and 6 hearts and 12 HCP (8–15): 2♠ shows hearts and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     13,
+     12,
+     10,
+     8,
+     4
+    ],
+    "D": [
+     9,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     9,
+     8,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 20,
+   "correct": "2♠",
+   "why": "6 klør og 5 hjerter og 14 hp (8–15): 2♠ viser hjerter og en minor, mindst 5-5.",
+   "en": {
+    "why": "6 clubs and 5 hearts and 14 HCP (8–15): 2♠ shows hearts and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [
+     9,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     9,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     7,
+     5,
      2
+    ],
+    "C": []
+   },
+   "hp": 12,
+   "sp": 17,
+   "correct": "2♠",
+   "why": "5 ruder og 5 hjerter og 12 hp (8–15): 2♠ viser hjerter og en minor, mindst 5-5.",
+   "en": {
+    "why": "5 diamonds and 5 hearts and 12 HCP (8–15): 2♠ shows hearts and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
+     11,
+     9,
+     8,
+     6,
+     5
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     14,
+     13,
+     8,
+     7,
+     6,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 15,
+   "correct": "2♠",
+   "why": "6 klør og 5 hjerter og 9 hp (8–15): 2♠ viser hjerter og en minor, mindst 5-5.",
+   "en": {
+    "why": "6 clubs and 5 hearts and 9 HCP (8–15): 2♠ shows hearts and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [
+     13,
+     9,
+     4
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     8,
+     7
+    ],
+    "D": [
+     12,
+     9,
+     8,
+     5,
+     3
+    ],
+    "C": []
+   },
+   "hp": 8,
+   "sp": 13,
+   "correct": "2♠",
+   "why": "5 ruder og 5 hjerter og 8 hp (8–15): 2♠ viser hjerter og en minor, mindst 5-5.",
+   "en": {
+    "why": "5 diamonds and 5 hearts and 8 HCP (8–15): 2♠ shows hearts and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     11,
+     10,
+     9,
+     7,
+     2
+    ],
+    "D": [
+     13
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     5,
+     4,
+     2
+    ]
+   },
+   "hp": 17,
+   "sp": 25,
+   "correct": "2♠",
+   "why": "6 klør og 6 hjerter og 17 hp (17+): 2♠ viser hjerter og en minor, mindst 5-5.",
+   "en": {
+    "why": "6 clubs and 6 hearts and 17 HCP (17+): 2♠ shows hearts and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     11,
+     10,
+     8,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     11,
+     8,
+     6
+    ],
+    "C": [
+     14,
+     2
+    ]
+   },
+   "hp": 19,
+   "sp": 25,
+   "correct": "2♠",
+   "why": "6 ruder og 5 hjerter og 19 hp (17+): 2♠ viser hjerter og en minor, mindst 5-5.",
+   "en": {
+    "why": "6 diamonds and 5 hearts and 19 HCP (17+): 2♠ shows hearts and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [
+     12
+    ],
+    "H": [
+     12,
+     9,
+     8,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     9,
+     7,
+     2
+    ],
+    "C": []
+   },
+   "hp": 13,
+   "sp": 21,
+   "correct": "2♠",
+   "why": "6 ruder og 6 hjerter og 13 hp (8–15): 2♠ viser hjerter og en minor, mindst 5-5.",
+   "en": {
+    "why": "6 diamonds and 6 hearts and 13 HCP (8–15): 2♠ shows hearts and a minor, at least 5-5."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [
+     12,
+     9
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     9,
+     5
+    ],
+    "D": [],
+    "C": [
+     13,
+     12,
+     11,
+     10,
+     9,
+     7
     ]
    },
    "hp": 17,
@@ -5519,96 +8733,64 @@
    "hand": {
     "S": [],
     "H": [
-     10,
-     7,
-     5,
-     3,
-     2
-    ],
-    "D": [
-     14,
-     7
-    ],
-    "C": [
      13,
      12,
-     11,
-     7,
-     3,
-     2
-    ]
-   },
-   "hp": 10,
-   "sp": 16,
-   "correct": "2♠",
-   "why": "6 klør og 5 hjerter og 10 hp (8–15): 2♠ viser hjerter og en minor, mindst 5-5.",
-   "en": {
-    "why": "6 clubs and 5 hearts and 10 HCP (8–15): 2♠ shows hearts and a minor, at least 5-5."
-   }
-  },
-  {
-   "situation": "ind_sp",
-   "hand": {
-    "S": [
-     12
-    ],
-    "H": [
-     14,
-     9,
+     8,
      6,
-     5,
-     3
-    ],
-    "D": [
-     13,
      4
     ],
+    "D": [
+     11,
+     10,
+     9,
+     6,
+     5
+    ],
     "C": [
      11,
-     9,
-     8,
-     6,
-     2
+     7,
+     3
     ]
    },
-   "hp": 10,
-   "sp": 14,
-   "correct": "2♠",
-   "why": "5 klør og 5 hjerter og 10 hp (8–15): 2♠ viser hjerter og en minor, mindst 5-5.",
+   "hp": 7,
+   "sp": 12,
+   "correct": "Pas",
+   "why": "5 ruder og 5 hjerter, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
    "en": {
-    "why": "5 clubs and 5 hearts and 10 HCP (8–15): 2♠ shows hearts and a minor, at least 5-5."
+    "why": "5 diamonds and 5 hearts, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
    }
   },
   {
    "situation": "ind_sp",
    "hand": {
     "S": [
-     14
+     4
     ],
     "H": [
-     14,
-     13,
      11,
-     5,
-     4,
+     10,
+     7,
+     3,
      2
     ],
     "D": [
-     14,
      12,
      11,
-     8,
+     10,
      5,
+     4,
      3
     ],
-    "C": []
+    "C": [
+     5
+    ]
    },
-   "hp": 19,
-   "sp": 27,
-   "correct": "2♠",
-   "why": "6 ruder og 6 hjerter og 19 hp (17+): 2♠ viser hjerter og en minor, mindst 5-5.",
+   "hp": 4,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "6 ruder og 5 hjerter, men kun 4 hp – kravet er 8–15 eller 17+. Pas.",
    "en": {
-    "why": "6 diamonds and 6 hearts and 19 HCP (17+): 2♠ shows hearts and a minor, at least 5-5."
+    "why": "6 diamonds and 5 hearts, but only 4 HCP – the requirement is 8–15 or 17+. Pass."
    }
   },
   {
@@ -5616,281 +8798,88 @@
    "hand": {
     "S": [],
     "H": [
-     14,
-     12,
-     10,
-     8,
+     13,
+     6,
+     5,
+     3,
      2
     ],
     "D": [
      14,
-     11,
      10,
-     9,
-     7,
      6
     ],
     "C": [
-     3,
-     2
+     8,
+     7,
+     6,
+     4,
+     3
     ]
    },
-   "hp": 11,
-   "sp": 17,
-   "correct": "2♠",
-   "why": "6 ruder og 5 hjerter og 11 hp (8–15): 2♠ viser hjerter og en minor, mindst 5-5.",
+   "hp": 7,
+   "sp": 12,
+   "correct": "Pas",
+   "why": "5 klør og 5 hjerter, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
    "en": {
-    "why": "6 diamonds and 5 hearts and 11 HCP (8–15): 2♠ shows hearts and a minor, at least 5-5."
+    "why": "5 clubs and 5 hearts, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
    }
   },
   {
    "situation": "ind_sp",
    "hand": {
-    "S": [],
-    "H": [
-     10,
-     9,
+    "S": [
+     7,
      6,
-     5,
-     4,
      2
     ],
-    "D": [
+    "H": [
+     14,
+     9,
+     8,
+     5,
+     3
+    ],
+    "D": [],
+    "C": [
      13,
+     10,
+     9,
+     8,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "correct": "Pas",
+   "why": "5 klør og 5 hjerter, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 clubs and 5 hearts, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [
      7
     ],
-    "C": [
-     14,
-     12,
-     8,
-     5,
-     3
-    ]
-   },
-   "hp": 9,
-   "sp": 15,
-   "correct": "2♠",
-   "why": "5 klør og 6 hjerter og 9 hp (8–15): 2♠ viser hjerter og en minor, mindst 5-5.",
-   "en": {
-    "why": "5 clubs and 6 hearts and 9 HCP (8–15): 2♠ shows hearts and a minor, at least 5-5."
-   }
-  },
-  {
-   "situation": "ind_sp",
-   "hand": {
-    "S": [
-     12
-    ],
     "H": [
-     11,
-     10,
-     9,
-     6,
-     5,
-     3
-    ],
-    "D": [
-     10
-    ],
-    "C": [
-     12,
-     11,
-     10,
-     8,
-     5
-    ]
-   },
-   "hp": 6,
-   "sp": 12,
-   "correct": "Pas",
-   "why": "5 klør og 6 hjerter, men kun 6 hp – kravet er 8–15 eller 17+. Pas.",
-   "en": {
-    "why": "5 clubs and 6 hearts, but only 6 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_sp",
-   "hand": {
-    "S": [
-     12,
-     10,
-     2
-    ],
-    "H": [
-     10,
-     8,
-     4,
-     3,
-     2
-    ],
-    "D": [
-     13,
-     9,
-     8,
-     6,
-     5
-    ],
-    "C": []
-   },
-   "hp": 5,
-   "sp": 10,
-   "correct": "Pas",
-   "why": "5 ruder og 5 hjerter, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
-   "en": {
-    "why": "5 diamonds and 5 hearts, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_sp",
-   "hand": {
-    "S": [],
-    "H": [
-     11,
-     8,
-     7,
-     6,
-     5,
-     2
-    ],
-    "D": [
      14,
      11,
-     9,
-     6,
-     2
-    ],
-    "C": [
      10,
-     5
-    ]
-   },
-   "hp": 6,
-   "sp": 12,
-   "correct": "Pas",
-   "why": "5 ruder og 6 hjerter, men kun 6 hp – kravet er 8–15 eller 17+. Pas.",
-   "en": {
-    "why": "5 diamonds and 6 hearts, but only 6 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_sp",
-   "hand": {
-    "S": [],
-    "H": [
-     12,
-     9,
      8,
      7,
-     6
-    ],
-    "D": [
-     5,
      4
     ],
-    "C": [
-     13,
-     10,
-     7,
-     6,
-     4,
-     2
-    ]
-   },
-   "hp": 5,
-   "sp": 11,
-   "correct": "Pas",
-   "why": "6 klør og 5 hjerter, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
-   "en": {
-    "why": "6 clubs and 5 hearts, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_sp",
-   "hand": {
-    "S": [
-     13,
-     9,
-     7
-    ],
-    "H": [
-     9,
+    "D": [
      8,
      7,
      6,
-     3
-    ],
-    "D": [
-     12,
-     11,
-     6,
-     4,
-     3
-    ],
-    "C": []
-   },
-   "hp": 6,
-   "sp": 11,
-   "correct": "Pas",
-   "why": "5 ruder og 5 hjerter, men kun 6 hp – kravet er 8–15 eller 17+. Pas.",
-   "en": {
-    "why": "5 diamonds and 5 hearts, but only 6 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_sp",
-   "hand": {
-    "S": [
-     13,
-     3
-    ],
-    "H": [
-     10,
-     9,
-     7,
-     6,
-     3
-    ],
-    "D": [
-     7
-    ],
-    "C": [
-     13,
-     10,
-     8,
      5,
      3
-    ]
-   },
-   "hp": 6,
-   "sp": 10,
-   "correct": "Pas",
-   "why": "5 klør og 5 hjerter, men kun 6 hp – kravet er 8–15 eller 17+. Pas.",
-   "en": {
-    "why": "5 clubs and 5 hearts, but only 6 HCP – the requirement is 8–15 or 17+. Pass."
-   }
-  },
-  {
-   "situation": "ind_sp",
-   "hand": {
-    "S": [],
-    "H": [
-     9,
-     8,
-     6,
-     5,
-     4,
-     3
-    ],
-    "D": [
-     13,
-     7,
-     6,
-     3,
-     2
     ],
     "C": [
-     12,
-     9
+     6
     ]
    },
    "hp": 5,
@@ -5905,61 +8894,158 @@
    "situation": "ind_sp",
    "hand": {
     "S": [
-     8,
-     7
+     3
     ],
     "H": [
-     12,
-     7,
-     6,
+     13,
+     9,
      5,
      4,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     10,
+     9,
+     5,
+     3
+    ],
+    "C": [
+     9
+    ]
+   },
+   "hp": 5,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "5 ruder og 6 hjerter, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 diamonds and 6 hearts, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     10,
+     9,
+     6,
+     5,
      3
     ],
     "D": [
-     14,
+     12,
      11,
-     7,
+     6,
      5,
+     4
+    ],
+    "C": [
+     14,
+     5,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "correct": "Pas",
+   "why": "5 ruder og 5 hjerter, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 diamonds and 5 hearts, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     12,
+     5,
+     4,
+     3,
      2
     ],
-    "C": []
+    "D": [
+     13,
+     9
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     6,
+     4,
+     2
+    ]
    },
    "hp": 7,
    "sp": 13,
    "correct": "Pas",
-   "why": "5 ruder og 6 hjerter, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
+   "why": "6 klør og 5 hjerter, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
    "en": {
-    "why": "5 diamonds and 6 hearts, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
+    "why": "6 clubs and 5 hearts, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
    }
   },
   {
    "situation": "ind_sp",
    "hand": {
     "S": [
-     5,
-     2
+     9,
+     4
     ],
     "H": [
      13,
-     12,
+     10,
      8,
-     5,
-     2
+     6,
+     3
     ],
     "D": [
      4
     ],
     "C": [
      12,
-     8,
+     11,
+     10,
      6,
-     5,
-     2
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "5 klør og 5 hjerter, men kun 6 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 clubs and 5 hearts, but only 6 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [
+     10,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     7,
+     3
+    ],
+    "D": [],
+    "C": [
+     11,
+     9,
+     7,
+     6,
+     5
     ]
    },
    "hp": 7,
-   "sp": 11,
+   "sp": 12,
    "correct": "Pas",
    "why": "5 klør og 5 hjerter, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
    "en": {
@@ -5969,33 +9055,193 @@
   {
    "situation": "ind_sp",
    "hand": {
-    "S": [
-     11,
-     9,
-     8
-    ],
+    "S": [],
     "H": [
-     13,
-     11,
      10,
      9,
-     6
+     6,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     6,
+     5
+    ],
+    "C": [
+     13,
+     11,
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 4,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "5 klør og 6 hjerter, men kun 4 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 clubs and 6 hearts, but only 4 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [
+     9,
+     4
+    ],
+    "H": [
+     12,
+     10,
+     7,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     10,
+     9,
+     5,
+     4,
+     3
+    ],
+    "C": []
+   },
+   "hp": 5,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "6 ruder og 5 hjerter, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "6 diamonds and 5 hearts, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     9,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     6,
+     3,
+     2
+    ],
+    "C": [
+     10,
+     7,
+     5,
+     4,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 9,
+   "correct": "Pas",
+   "why": "5 klør og 5 hjerter, men kun 4 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 clubs and 5 hearts, but only 4 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     10,
+     9,
+     8,
+     5
     ],
     "D": [
      11,
      10,
      9,
-     3,
+     7,
+     5,
+     2
+    ],
+    "C": [
+     9,
+     8
+    ]
+   },
+   "hp": 5,
+   "sp": 11,
+   "correct": "Pas",
+   "why": "6 ruder og 5 hjerter, men kun 5 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "6 diamonds and 5 hearts, but only 5 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [
+     11,
+     10,
+     3
+    ],
+    "H": [
+     13,
+     8,
+     6,
+     5,
+     4
+    ],
+    "D": [
+     12,
+     11,
+     8,
+     5,
      2
     ],
     "C": []
    },
-   "hp": 6,
-   "sp": 11,
+   "hp": 7,
+   "sp": 12,
    "correct": "Pas",
-   "why": "5 ruder og 5 hjerter, men kun 6 hp – kravet er 8–15 eller 17+. Pas.",
+   "why": "5 ruder og 5 hjerter, men kun 7 hp – kravet er 8–15 eller 17+. Pas.",
    "en": {
-    "why": "5 diamonds and 5 hearts, but only 6 HCP – the requirement is 8–15 or 17+. Pass."
+    "why": "5 diamonds and 5 hearts, but only 7 HCP – the requirement is 8–15 or 17+. Pass."
+   }
+  },
+  {
+   "situation": "ind_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     12,
+     10,
+     9,
+     8,
+     5,
+     4
+    ],
+    "D": [
+     10,
+     8,
+     7,
+     6,
+     3
+    ],
+    "C": [
+     12,
+     10
+    ]
+   },
+   "hp": 4,
+   "sp": 10,
+   "correct": "Pas",
+   "why": "5 ruder og 6 hjerter, men kun 4 hp – kravet er 8–15 eller 17+. Pas.",
+   "en": {
+    "why": "5 diamonds and 6 hearts, but only 4 HCP – the requirement is 8–15 or 17+. Pass."
    }
   }
  ]

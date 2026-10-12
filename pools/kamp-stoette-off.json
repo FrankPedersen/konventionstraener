@@ -99,126 +99,58 @@
    "situation": "off_hj_kl",
    "hand": {
     "S": [
-     8,
-     5,
-     3
-    ],
-    "H": [
      13,
-     8,
+     12,
      2
     ],
-    "D": [
-     13,
-     5,
-     2
-    ],
-    "C": [
-     10,
-     6,
-     5,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 6,
-   "zone": "ingen",
-   "correct": "2♥",
-   "why": "3 trumf og 6 hp: 2♥ – støtten viser antallet af trumf (6–9).",
-   "en": {
-    "why": "3 trumps and 6 HCP: 2♥ – the raise shows the number of trumps (6–9)."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     9,
-     6
-    ],
     "H": [
-     9,
-     8,
-     4
-    ],
-    "D": [
-     13,
-     12,
      10,
-     6
-    ],
-    "C": [
-     12,
-     11,
-     7,
-     4
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "zone": "ingen",
-   "correct": "2♥",
-   "why": "3 trumf og 8 hp: 2♥ – støtten viser antallet af trumf (6–9).",
-   "en": {
-    "why": "3 trumps and 8 HCP: 2♥ – the raise shows the number of trumps (6–9)."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     10,
-     7,
-     5
-    ],
-    "H": [
-     12,
-     9,
-     6
-    ],
-    "D": [
-     14,
-     7,
-     6
-    ],
-    "C": [
-     8,
-     7,
-     5,
-     4
-    ]
-   },
-   "hp": 6,
-   "sp": 6,
-   "zone": "alle",
-   "correct": "2♥",
-   "why": "3 trumf og 6 hp: 2♥ – støtten viser antallet af trumf (6–9).",
-   "en": {
-    "why": "3 trumps and 6 HCP: 2♥ – the raise shows the number of trumps (6–9)."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     12,
-     10,
-     7
-    ],
-    "H": [
-     7,
      3,
      2
     ],
     "D": [
+     14,
+     10,
      9,
-     8,
-     7
+     6
     ],
     "C": [
-     13,
-     11,
      10,
+     5,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "3 trumf og 9 hp: 2♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "3 trumps and 9 HCP: 2♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     10,
+     9,
+     8
+    ],
+    "H": [
+     13,
+     6,
+     4
+    ],
+    "D": [
+     13,
+     7,
+     6,
+     5
+    ],
+    "C": [
+     10,
+     9,
      4
     ]
    },
@@ -236,24 +168,92 @@
    "hand": {
     "S": [
      11,
-     10
+     8,
+     2
     ],
     "H": [
      14,
-     7,
-     5
+     9,
+     2
     ],
     "D": [
+     11,
+     9,
      7,
+     3
+    ],
+    "C": [
+     13,
+     10,
+     8
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "2♥",
+   "why": "3 trumf og 9 hp: 2♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "3 trumps and 9 HCP: 2♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     10,
+     9,
+     5
+    ],
+    "H": [
+     14,
+     4,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     9,
+     6
+    ],
+    "C": [
+     9,
      6,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "zone": "alle",
+   "correct": "2♥",
+   "why": "3 trumf og 7 hp: 2♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "3 trumps and 7 HCP: 2♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     12,
+     6
+    ],
+    "H": [
+     14,
+     8,
+     3
+    ],
+    "D": [
+     10,
+     8,
      4,
      2
     ],
     "C": [
-     14,
-     7,
-     5,
-     3
+     13,
+     6,
+     3,
+     2
     ]
    },
    "hp": 9,
@@ -269,30 +269,64 @@
    "situation": "off_hj_kl",
    "hand": {
     "S": [
-     12,
-     8,
-     4
+     11,
+     6,
+     3
     ],
     "H": [
-     8,
-     7,
-     3
+     4,
+     3,
+     2
     ],
     "D": [
      13,
      7,
      6,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 6,
+   "zone": "alle",
+   "correct": "2♥",
+   "why": "3 trumf og 6 hp: 2♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "3 trumps and 6 HCP: 2♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     6,
+     5,
      3
+    ],
+    "H": [
+     7,
+     4,
+     3
+    ],
+    "D": [
+     12,
+     8,
+     2
     ],
     "C": [
      13,
-     7,
-     3
+     12,
+     11,
+     10
     ]
    },
    "hp": 8,
    "sp": 8,
-   "zone": "ns",
+   "zone": "alle",
    "correct": "2♥",
    "why": "3 trumf og 8 hp: 2♥ – støtten viser antallet af trumf (6–9).",
    "en": {
@@ -303,30 +337,98 @@
    "situation": "off_hj_kl",
    "hand": {
     "S": [
-     7,
-     4,
+     8,
+     4
+    ],
+    "H": [
+     11,
+     5,
      2
+    ],
+    "D": [
+     13,
+     11,
+     8,
+     6
+    ],
+    "C": [
+     14,
+     9,
+     5,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "3 trumf og 9 hp: 2♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "3 trumps and 9 HCP: 2♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     2
+    ],
+    "H": [
+     9,
+     8,
+     6
+    ],
+    "D": [
+     9,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     8,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "2♥",
+   "why": "3 trumf og 9 hp: 2♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "3 trumps and 9 HCP: 2♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     12,
+     4
     ],
     "H": [
      6,
      5,
-     3
+     4
     ],
     "D": [
      14,
-     13,
      6,
-     3
+     3,
+     2
     ],
     "C": [
-     10,
-     4,
+     11,
+     9,
+     5,
      3
     ]
    },
    "hp": 7,
-   "sp": 7,
-   "zone": "ns",
+   "sp": 8,
+   "zone": "alle",
    "correct": "2♥",
    "why": "3 trumf og 7 hp: 2♥ – støtten viser antallet af trumf (6–9).",
    "en": {
@@ -338,58 +440,160 @@
    "hand": {
     "S": [
      13,
-     12,
-     6
+     5
     ],
     "H": [
-     13,
-     10,
-     8,
+     9,
+     6,
      3
     ],
     "D": [
-     9,
-     7,
-     5
+     11,
+     8,
+     5,
+     4
     ],
     "C": [
-     10,
-     6,
-     4
+     12,
+     11,
+     9,
+     8
     ]
    },
-   "hp": 8,
+   "hp": 7,
    "sp": 8,
-   "zone": "ingen",
-   "correct": "3♥",
-   "why": "4 trumf og 8 hp: 3♥ – støtten viser antallet af trumf (6–9).",
+   "zone": "alle",
+   "correct": "2♥",
+   "why": "3 trumf og 7 hp: 2♥ – støtten viser antallet af trumf (6–9).",
    "en": {
-    "why": "4 trumps and 8 HCP: 3♥ – the raise shows the number of trumps (6–9)."
+    "why": "3 trumps and 7 HCP: 2♥ – the raise shows the number of trumps (6–9)."
    }
   },
   {
    "situation": "off_hj_kl",
    "hand": {
     "S": [
-     5,
-     3
+     14,
+     8,
+     4
     ],
     "H": [
      11,
-     6,
-     4,
+     7,
      3
     ],
     "D": [
-     14,
+     12,
+     4,
+     2
+    ],
+    "C": [
+     11,
+     10,
      9,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "zone": "ingen",
+   "correct": "2♥",
+   "why": "3 trumf og 8 hp: 2♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "3 trumps and 8 HCP: 2♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     4,
+     2
+    ],
+    "H": [
+     13,
      7,
      3
+    ],
+    "D": [
+     11,
+     10,
+     9,
+     5
+    ],
+    "C": [
+     13,
+     8,
+     4,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "ns",
+   "correct": "2♥",
+   "why": "3 trumf og 7 hp: 2♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "3 trumps and 7 HCP: 2♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     9,
+     3
+    ],
+    "H": [
+     9,
+     4,
+     2
+    ],
+    "D": [
+     10,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     12,
+     10,
+     9
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "ingen",
+   "correct": "2♥",
+   "why": "3 trumf og 6 hp: 2♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "3 trumps and 6 HCP: 2♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     11,
+     10
+    ],
+    "H": [
+     14,
+     10,
+     8,
+     7
+    ],
+    "D": [
+     10,
+     7,
+     6
     ],
     "C": [
      12,
      10,
-     5
+     7,
+     6
     ]
    },
    "hp": 7,
@@ -405,204 +609,68 @@
    "situation": "off_hj_kl",
    "hand": {
     "S": [
-     11,
      10,
-     7
-    ],
-    "H": [
-     13,
-     8,
-     5,
-     2
-    ],
-    "D": [
-     10,
-     7,
-     3
-    ],
-    "C": [
-     14,
-     11,
-     10
-    ]
-   },
-   "hp": 9,
-   "sp": 9,
-   "zone": "alle",
-   "correct": "3♥",
-   "why": "4 trumf og 9 hp: 3♥ – støtten viser antallet af trumf (6–9).",
-   "en": {
-    "why": "4 trumps and 9 HCP: 3♥ – the raise shows the number of trumps (6–9)."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     13,
-     3,
-     2
-    ],
-    "H": [
-     14,
-     11,
-     3,
-     2
-    ],
-    "D": [
-     10,
-     9
-    ],
-    "C": [
-     11,
-     10,
-     6,
-     3
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "zone": "ns",
-   "correct": "3♥",
-   "why": "4 trumf og 9 hp: 3♥ – støtten viser antallet af trumf (6–9).",
-   "en": {
-    "why": "4 trumps and 9 HCP: 3♥ – the raise shows the number of trumps (6–9)."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     9,
-     7
-    ],
-    "H": [
-     13,
-     11,
-     8,
-     3
-    ],
-    "D": [
-     14,
-     8,
-     7,
-     2
-    ],
-    "C": [
-     10,
-     9,
      8
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "zone": "ingen",
-   "correct": "3♥",
-   "why": "4 trumf og 8 hp: 3♥ – støtten viser antallet af trumf (6–9).",
-   "en": {
-    "why": "4 trumps and 8 HCP: 3♥ – the raise shows the number of trumps (6–9)."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     9,
-     5
     ],
     "H": [
-     12,
-     10,
+     14,
+     9,
      4,
      2
     ],
     "D": [
-     12,
-     11,
-     5,
-     3
+     13,
+     8,
+     7,
+     2
     ],
     "C": [
-     13,
+     8,
      6,
-     5
+     3
     ]
    },
-   "hp": 8,
-   "sp": 9,
-   "zone": "ingen",
+   "hp": 7,
+   "sp": 8,
+   "zone": "ov",
    "correct": "3♥",
-   "why": "4 trumf og 8 hp: 3♥ – støtten viser antallet af trumf (6–9).",
+   "why": "4 trumf og 7 hp: 3♥ – støtten viser antallet af trumf (6–9).",
    "en": {
-    "why": "4 trumps and 8 HCP: 3♥ – the raise shows the number of trumps (6–9)."
+    "why": "4 trumps and 7 HCP: 3♥ – the raise shows the number of trumps (6–9)."
    }
   },
   {
    "situation": "off_hj_kl",
    "hand": {
     "S": [
-     5,
-     4,
+     12,
+     9,
      3
     ],
     "H": [
      14,
-     11,
-     10,
-     4
+     13,
+     6,
+     2
     ],
     "D": [
-     13,
-     9,
-     6,
+     5,
      4
     ],
     "C": [
-     4,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "zone": "alle",
-   "correct": "3♥",
-   "why": "4 trumf og 8 hp: 3♥ – støtten viser antallet af trumf (6–9).",
-   "en": {
-    "why": "4 trumps and 8 HCP: 3♥ – the raise shows the number of trumps (6–9)."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     13,
-     9
-    ],
-    "H": [
-     13,
-     10,
-     9,
-     7,
-     2
-    ],
-    "D": [
      7,
      5,
-     4,
-     3
-    ],
-    "C": [
-     13,
-     9
+     3,
+     2
     ]
    },
    "hp": 9,
-   "sp": 11,
+   "sp": 10,
    "zone": "alle",
-   "correct": "4♥",
-   "why": "5 trumf og 9 hp: 4♥ – støtten viser antallet af trumf (6–9).",
+   "correct": "3♥",
+   "why": "4 trumf og 9 hp: 3♥ – støtten viser antallet af trumf (6–9).",
    "en": {
-    "why": "5 trumps and 9 HCP: 4♥ – the raise shows the number of trumps (6–9)."
+    "why": "4 trumps and 9 HCP: 3♥ – the raise shows the number of trumps (6–9)."
    }
   },
   {
@@ -610,96 +678,537 @@
    "hand": {
     "S": [
      11,
-     6
-    ],
-    "H": [
-     12,
-     8,
-     7,
-     4,
-     3
-    ],
-    "D": [
-     12,
-     8,
-     5,
-     2
-    ],
-    "C": [
-     13,
-     5
-    ]
-   },
-   "hp": 8,
-   "sp": 10,
-   "zone": "ingen",
-   "correct": "4♥",
-   "why": "5 trumf og 8 hp: 4♥ – støtten viser antallet af trumf (6–9).",
-   "en": {
-    "why": "5 trumps and 8 HCP: 4♥ – the raise shows the number of trumps (6–9)."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     13,
-     10
-    ],
-    "H": [
-     10,
-     6,
-     4,
      3,
      2
     ],
-    "D": [
-     14,
-     12,
-     4,
-     3
-    ],
-    "C": [
-     9,
-     7
-    ]
-   },
-   "hp": 9,
-   "sp": 11,
-   "zone": "ns",
-   "correct": "4♥",
-   "why": "5 trumf og 9 hp: 4♥ – støtten viser antallet af trumf (6–9).",
-   "en": {
-    "why": "5 trumps and 9 HCP: 4♥ – the raise shows the number of trumps (6–9)."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     6,
-     2
-    ],
     "H": [
-     13,
-     10,
-     8,
-     7,
-     5
-    ],
-    "D": [
-     8,
-     7,
+     9,
+     6,
      5,
      3
     ],
-    "C": [
+    "D": [
      13,
-     4
+     11,
+     5,
+     2
+    ],
+    "C": [
+     11,
+     10
     ]
    },
    "hp": 6,
+   "sp": 7,
+   "zone": "ov",
+   "correct": "3♥",
+   "why": "4 trumf og 6 hp: 3♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "4 trumps and 6 HCP: 3♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     13,
+     4
+    ],
+    "H": [
+     11,
+     10,
+     8,
+     6
+    ],
+    "D": [
+     14,
+     9,
+     5
+    ],
+    "C": [
+     11,
+     7,
+     5,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "3♥",
+   "why": "4 trumf og 9 hp: 3♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "4 trumps and 9 HCP: 3♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     6,
+     3
+    ],
+    "H": [
+     13,
+     8,
+     7,
+     2
+    ],
+    "D": [
+     10,
+     6,
+     5
+    ],
+    "C": [
+     14,
+     9,
+     6,
+     2
+    ]
+   },
+   "hp": 7,
    "sp": 8,
+   "zone": "ov",
+   "correct": "3♥",
+   "why": "4 trumf og 7 hp: 3♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "4 trumps and 7 HCP: 3♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     12,
+     3,
+     2
+    ],
+    "H": [
+     12,
+     9,
+     8,
+     5
+    ],
+    "D": [
+     10,
+     8,
+     4
+    ],
+    "C": [
+     12,
+     7,
+     5
+    ]
+   },
+   "hp": 6,
+   "sp": 6,
+   "zone": "ov",
+   "correct": "3♥",
+   "why": "4 trumf og 6 hp: 3♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "4 trumps and 6 HCP: 3♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     9,
+     8,
+     6
+    ],
+    "H": [
+     9,
+     7,
+     4,
+     3
+    ],
+    "D": [
+     12,
+     2
+    ],
+    "C": [
+     13,
+     11,
+     4,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "ingen",
+   "correct": "3♥",
+   "why": "4 trumf og 6 hp: 3♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "4 trumps and 6 HCP: 3♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     11,
+     10,
+     6
+    ],
+    "H": [
+     9,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     11,
+     8
+    ],
+    "C": [
+     14,
+     12,
+     4,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "3♥",
+   "why": "4 trumf og 8 hp: 3♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "4 trumps and 8 HCP: 3♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     14,
+     10,
+     4
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     4
+    ],
+    "D": [
+     8,
+     5,
+     4
+    ],
+    "C": [
+     9,
+     8,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "zone": "ingen",
+   "correct": "3♥",
+   "why": "4 trumf og 7 hp: 3♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "4 trumps and 7 HCP: 3♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     12,
+     9,
+     2
+    ],
+    "H": [
+     7,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     12,
+     3
+    ],
+    "C": [
+     13,
+     8,
+     4,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "ov",
+   "correct": "3♥",
+   "why": "4 trumf og 7 hp: 3♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "4 trumps and 7 HCP: 3♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     14,
+     11,
+     6,
+     5
+    ],
+    "D": [
+     14,
+     10,
+     8,
+     5
+    ],
+    "C": [
+     9,
+     7,
+     5,
+     4
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "3♥",
+   "why": "4 trumf og 9 hp: 3♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "4 trumps and 9 HCP: 3♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     9,
+     3
+    ],
+    "H": [
+     12,
+     10,
+     5,
+     2
+    ],
+    "D": [
+     5,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     6,
+     4,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "alle",
+   "correct": "3♥",
+   "why": "4 trumf og 6 hp: 3♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "4 trumps and 6 HCP: 3♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     11,
+     9,
+     3
+    ],
+    "H": [
+     13,
+     11,
+     9,
+     7
+    ],
+    "D": [
+     14,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     10,
+     9
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ingen",
+   "correct": "3♥",
+   "why": "4 trumf og 9 hp: 3♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "4 trumps and 9 HCP: 3♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     12,
+     9,
+     4
+    ],
+    "H": [
+     14,
+     11,
+     8,
+     4,
+     2
+    ],
+    "D": [
+     8,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "zone": "ns",
+   "correct": "4♥",
+   "why": "5 trumf og 7 hp: 4♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "5 trumps and 7 HCP: 4♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     12,
+     10
+    ],
+    "H": [
+     14,
+     10,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     5,
+     3
+    ],
+    "C": [
+     11,
+     10,
+     7,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "4♥",
+   "why": "5 trumf og 7 hp: 4♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "5 trumps and 7 HCP: 4♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     13,
+     10,
+     7
+    ],
+    "H": [
+     13,
+     9,
+     8,
+     5,
+     4
+    ],
+    "D": [
+     10,
+     9,
+     4
+    ],
+    "C": [
+     11,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
+   "zone": "ingen",
+   "correct": "4♥",
+   "why": "5 trumf og 7 hp: 4♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "5 trumps and 7 HCP: 4♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [],
+    "H": [
+     12,
+     10,
+     8,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     7,
+     5
+    ],
+    "C": [
+     8,
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "zone": "ov",
+   "correct": "4♥",
+   "why": "5 trumf og 7 hp: 4♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "5 trumps and 7 HCP: 4♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     13,
+     8,
+     5
+    ],
+    "H": [
+     13,
+     10,
+     8,
+     6,
+     2
+    ],
+    "D": [
+     10,
+     9,
+     2
+    ],
+    "C": [
+     9,
+     6
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
    "zone": "ingen",
    "correct": "4♥",
    "why": "5 trumf og 6 hp: 4♥ – støtten viser antallet af trumf (6–9).",
@@ -711,93 +1220,93 @@
    "situation": "off_hj_kl",
    "hand": {
     "S": [
-     8
-    ],
-    "H": [
-     12,
-     8,
-     6,
+     14,
      5,
      3
     ],
+    "H": [
+     13,
+     12,
+     10,
+     9,
+     4
+    ],
     "D": [
-     14,
-     11,
-     5
+     8
     ],
     "C": [
-     9,
-     8,
+     10,
+     7,
      6,
-     2
+     4
     ]
    },
-   "hp": 7,
-   "sp": 10,
-   "zone": "ingen",
+   "hp": 9,
+   "sp": 12,
+   "zone": "alle",
    "correct": "4♥",
-   "why": "5 trumf og 7 hp: 4♥ – støtten viser antallet af trumf (6–9).",
+   "why": "5 trumf og 9 hp: 4♥ – støtten viser antallet af trumf (6–9).",
    "en": {
-    "why": "5 trumps and 7 HCP: 4♥ – the raise shows the number of trumps (6–9)."
+    "why": "5 trumps and 9 HCP: 4♥ – the raise shows the number of trumps (6–9)."
    }
   },
   {
    "situation": "off_hj_kl",
    "hand": {
     "S": [
-     4
+     10
     ],
     "H": [
-     12,
+     14,
+     13,
      11,
-     7,
-     6,
-     4
+     4,
+     3
     ],
     "D": [
-     12,
-     7,
+     11,
      5,
      2
     ],
     "C": [
-     12,
-     10,
-     7
+     7,
+     5,
+     4,
+     2
     ]
    },
-   "hp": 7,
-   "sp": 10,
-   "zone": "ov",
+   "hp": 9,
+   "sp": 12,
+   "zone": "ingen",
    "correct": "4♥",
-   "why": "5 trumf og 7 hp: 4♥ – støtten viser antallet af trumf (6–9).",
+   "why": "5 trumf og 9 hp: 4♥ – støtten viser antallet af trumf (6–9).",
    "en": {
-    "why": "5 trumps and 7 HCP: 4♥ – the raise shows the number of trumps (6–9)."
+    "why": "5 trumps and 9 HCP: 4♥ – the raise shows the number of trumps (6–9)."
    }
   },
   {
    "situation": "off_hj_kl",
    "hand": {
     "S": [
-     13,
-     8,
-     7
+     7,
+     5,
+     2
     ],
     "H": [
-     12,
+     14,
      9,
      8,
-     6,
-     5
+     3,
+     2
     ],
     "D": [
-     14,
-     5
+     13,
+     4
     ],
     "C": [
-     9,
+     12,
      7,
-     4
+     3
     ]
    },
    "hp": 9,
@@ -813,65 +1322,228 @@
    "situation": "off_hj_kl",
    "hand": {
     "S": [
-     5
-    ],
-    "H": [
-     13,
-     12,
-     10,
-     8
-    ],
-    "D": [
-     11,
      6,
      5,
      4
     ],
+    "H": [
+     13,
+     10,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     2
+    ],
     "C": [
      14,
-     13,
-     8,
-     5
+     7,
+     5,
+     2
     ]
    },
-   "hp": 13,
-   "sp": 16,
-   "zone": "ov",
-   "correct": "3♣",
-   "why": "4 trumf og 13 hp: overmelding i fjendens farve – støtte og 10+.",
-   "turnering": {
-    "correct": "2NT",
-    "why": "4 trumf og 13 hp: 2NT – Stenberg, firkortstøtte og udgangskrav."
-   },
+   "hp": 7,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "4♥",
+   "why": "5 trumf og 7 hp: 4♥ – støtten viser antallet af trumf (6–9).",
    "en": {
-    "why": "4 trumps and 13 HCP: a cue-bid in the opponents' suit – support and 10+.",
-    "turnering": {
-     "why": "4 trumps and 13 HCP: 2NT – Stenberg, four-card support and game forcing."
-    }
+    "why": "5 trumps and 7 HCP: 4♥ – the raise shows the number of trumps (6–9)."
    }
   },
   {
    "situation": "off_hj_kl",
    "hand": {
     "S": [
-     9,
+     13,
+     10,
      7
     ],
     "H": [
-     14,
-     12,
-     5,
+     13,
+     8,
+     7,
+     4,
      2
     ],
     "D": [
+     11,
+     9,
      8,
+     7
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "4♥",
+   "why": "5 trumf og 8 hp: 4♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "5 trumps and 8 HCP: 4♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     8,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     9,
+     6
+    ],
+    "C": [
+     8,
+     5,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "4♥",
+   "why": "5 trumf og 8 hp: 4♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "5 trumps and 8 HCP: 4♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     5,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     9,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     14,
      7,
+     2
+    ],
+    "C": [
+     7,
+     3
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "ns",
+   "correct": "4♥",
+   "why": "5 trumf og 6 hp: 4♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "5 trumps and 6 HCP: 4♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     13,
+     7,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     9,
      6,
      4
     ],
     "C": [
-     14,
+     11,
+     8,
+     3,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "zone": "ov",
+   "correct": "4♥",
+   "why": "5 trumf og 7 hp: 4♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "5 trumps and 7 HCP: 4♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     10,
+     9
+    ],
+    "H": [
+     13,
+     10,
      7,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     10
+    ],
+    "C": [
+     13,
+     10,
+     8,
+     5
+    ]
+   },
+   "hp": 9,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "4♥",
+   "why": "5 trumf og 9 hp: 4♥ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "5 trumps and 9 HCP: 4♥ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     7,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     7
+    ],
+    "D": [
+     11,
+     8
+    ],
+    "C": [
+     13,
+     10,
+     9,
      3
     ]
    },
@@ -888,98 +1560,327 @@
    "situation": "off_hj_kl",
    "hand": {
     "S": [
-     12
-    ],
-    "H": [
-     13,
-     12,
-     10,
-     7
-    ],
-    "D": [
-     10,
-     6,
-     5,
-     4
-    ],
-    "C": [
-     14,
-     11,
-     5,
-     3
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "zone": "ns",
-   "correct": "3♣",
-   "why": "4 trumf og 12 hp: overmelding i fjendens farve – støtte og 10+ (i Turnering præcis invit 10–12).",
-   "en": {
-    "why": "4 trumps and 12 HCP: a cue-bid in the opponents' suit – support and 10+ (in Tournament exactly invitational, 10–12)."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     11,
-     6
-    ],
-    "H": [
-     9,
-     8,
-     7
-    ],
-    "D": [
-     13,
-     11,
      7,
-     3
-    ],
-    "C": [
-     14,
-     13,
-     9,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "zone": "ingen",
-   "correct": "3♣",
-   "why": "3 trumf og 12 hp: overmelding i fjendens farve – støtte og 10+ (i Turnering præcis invit 10–12).",
-   "en": {
-    "why": "3 trumps and 12 HCP: a cue-bid in the opponents' suit – support and 10+ (in Tournament exactly invitational, 10–12)."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     14,
-     9,
-     3
+     2
     ],
     "H": [
-     13,
-     8,
+     14,
+     10,
      4,
      2
     ],
     "D": [
+     13,
+     7,
+     6,
+     2
+    ],
+    "C": [
      12,
+     11,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "3♣",
+   "why": "4 trumf og 10 hp: overmelding i fjendens farve – støtte og 10+ (i Turnering præcis invit 10–12).",
+   "en": {
+    "why": "4 trumps and 10 HCP: a cue-bid in the opponents' suit – support and 10+ (in Tournament exactly invitational, 10–12)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     12,
+     4
+    ],
+    "H": [
+     10,
+     9,
+     7
+    ],
+    "D": [
+     13,
+     10,
+     6,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     8
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "ns",
+   "correct": "3♣",
+   "why": "3 trumf og 11 hp: overmelding i fjendens farve – støtte og 10+ (i Turnering præcis invit 10–12).",
+   "en": {
+    "why": "3 trumps and 11 HCP: a cue-bid in the opponents' suit – support and 10+ (in Tournament exactly invitational, 10–12)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     8
+    ],
+    "H": [
+     13,
+     7,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     11,
+     8,
+     6
+    ],
+    "C": [
+     7,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "zone": "ns",
+   "correct": "3♣",
+   "why": "4 trumf og 15 hp: overmelding i fjendens farve – støtte og 10+.",
+   "turnering": {
+    "correct": "2NT",
+    "why": "4 trumf og 15 hp: 2NT – Stenberg, firkortstøtte og udgangskrav."
+   },
+   "en": {
+    "why": "4 trumps and 15 HCP: a cue-bid in the opponents' suit – support and 10+.",
+    "turnering": {
+     "why": "4 trumps and 15 HCP: 2NT – Stenberg, four-card support and game forcing."
+    }
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     12,
+     7
+    ],
+    "H": [
+     13,
+     12,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     5,
+     4
+    ],
+    "C": [
+     13,
+     10,
+     7,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "zone": "ov",
+   "correct": "3♣",
+   "why": "3 trumf og 14 hp: overmelding i fjendens farve – støtte og 10+.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "3 trumps and 14 HCP: a cue-bid in the opponents' suit – support and 10+."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     7,
+     5
+    ],
+    "H": [
+     14,
+     10,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     7,
+     6
+    ],
+    "C": [
+     14,
+     13,
+     10,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "zone": "ingen",
+   "correct": "3♣",
+   "why": "4 trumf og 15 hp: overmelding i fjendens farve – støtte og 10+.",
+   "turnering": {
+    "correct": "2NT",
+    "why": "4 trumf og 15 hp: 2NT – Stenberg, firkortstøtte og udgangskrav."
+   },
+   "en": {
+    "why": "4 trumps and 15 HCP: a cue-bid in the opponents' suit – support and 10+.",
+    "turnering": {
+     "why": "4 trumps and 15 HCP: 2NT – Stenberg, four-card support and game forcing."
+    }
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     13,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     11,
+     7,
+     3
+    ],
+    "D": [
+     13,
+     8,
+     5,
+     2
+    ],
+    "C": [
+     10,
+     6
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "alle",
+   "correct": "3♣",
+   "why": "4 trumf og 11 hp: overmelding i fjendens farve – støtte og 10+ (i Turnering præcis invit 10–12).",
+   "en": {
+    "why": "4 trumps and 11 HCP: a cue-bid in the opponents' suit – support and 10+ (in Tournament exactly invitational, 10–12)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     2
+    ],
+    "D": [
+     7,
+     3
+    ],
+    "C": [
+     13,
+     12,
+     7,
+     6
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "zone": "alle",
+   "correct": "3♣",
+   "why": "4 trumf og 15 hp: overmelding i fjendens farve – støtte og 10+.",
+   "turnering": {
+    "correct": "2NT",
+    "why": "4 trumf og 15 hp: 2NT – Stenberg, firkortstøtte og udgangskrav."
+   },
+   "en": {
+    "why": "4 trumps and 15 HCP: a cue-bid in the opponents' suit – support and 10+.",
+    "turnering": {
+     "why": "4 trumps and 15 HCP: 2NT – Stenberg, four-card support and game forcing."
+    }
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     10,
+     7,
+     6
+    ],
+    "H": [
+     10,
+     9,
+     8,
+     3
+    ],
+    "D": [
      11,
      8
     ],
     "C": [
      14,
-     5,
+     13,
+     12,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ov",
+   "correct": "3♣",
+   "why": "4 trumf og 10 hp: overmelding i fjendens farve – støtte og 10+ (i Turnering præcis invit 10–12).",
+   "en": {
+    "why": "4 trumps and 10 HCP: a cue-bid in the opponents' suit – support and 10+ (in Tournament exactly invitational, 10–12)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     14,
      4
+    ],
+    "H": [
+     12,
+     11,
+     9,
+     5
+    ],
+    "D": [
+     12,
+     11,
+     8,
+     7
+    ],
+    "C": [
+     14,
+     6,
+     5
     ]
    },
    "hp": 14,
-   "sp": 14,
-   "zone": "alle",
+   "sp": 15,
+   "zone": "ingen",
    "correct": "3♣",
    "why": "4 trumf og 14 hp: overmelding i fjendens farve – støtte og 10+.",
    "turnering": {
@@ -997,40 +1898,40 @@
    "situation": "off_hj_kl",
    "hand": {
     "S": [
-     11,
-     9
+     14,
+     5
     ],
     "H": [
-     11,
+     12,
      10,
-     6,
-     3
+     7,
+     6
     ],
     "D": [
-     14,
-     8,
+     13,
+     12,
      7,
-     4
+     2
     ],
     "C": [
      14,
-     13,
-     4
+     6,
+     2
     ]
    },
-   "hp": 13,
-   "sp": 14,
-   "zone": "ov",
+   "hp": 15,
+   "sp": 16,
+   "zone": "ingen",
    "correct": "3♣",
-   "why": "4 trumf og 13 hp: overmelding i fjendens farve – støtte og 10+.",
+   "why": "4 trumf og 15 hp: overmelding i fjendens farve – støtte og 10+.",
    "turnering": {
     "correct": "2NT",
-    "why": "4 trumf og 13 hp: 2NT – Stenberg, firkortstøtte og udgangskrav."
+    "why": "4 trumf og 15 hp: 2NT – Stenberg, firkortstøtte og udgangskrav."
    },
    "en": {
-    "why": "4 trumps and 13 HCP: a cue-bid in the opponents' suit – support and 10+.",
+    "why": "4 trumps and 15 HCP: a cue-bid in the opponents' suit – support and 10+.",
     "turnering": {
-     "why": "4 trumps and 13 HCP: 2NT – Stenberg, four-card support and game forcing."
+     "why": "4 trumps and 15 HCP: 2NT – Stenberg, four-card support and game forcing."
     }
    }
   },
@@ -1038,173 +1939,143 @@
    "situation": "off_hj_kl",
    "hand": {
     "S": [
-     9,
-     5
-    ],
-    "H": [
-     13,
-     10,
-     9,
-     5
-    ],
-    "D": [
-     14,
-     11,
-     5
-    ],
-    "C": [
-     13,
-     12,
-     7,
-     3
-    ]
-   },
-   "hp": 13,
-   "sp": 14,
-   "zone": "ingen",
-   "correct": "3♣",
-   "why": "4 trumf og 13 hp: overmelding i fjendens farve – støtte og 10+.",
-   "turnering": {
-    "correct": "2NT",
-    "why": "4 trumf og 13 hp: 2NT – Stenberg, firkortstøtte og udgangskrav."
-   },
-   "en": {
-    "why": "4 trumps and 13 HCP: a cue-bid in the opponents' suit – support and 10+.",
-    "turnering": {
-     "why": "4 trumps and 13 HCP: 2NT – Stenberg, four-card support and game forcing."
-    }
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     12,
-     7,
-     6,
-     2
-    ],
-    "H": [
-     14,
-     8
-    ],
-    "D": [
-     12,
-     5,
-     4,
-     3
-    ],
-    "C": [
-     13,
-     10,
-     4
-    ]
-   },
-   "hp": 11,
-   "sp": 12,
-   "zone": "ingen",
-   "correct": "X",
-   "why": "4 spar og 11 hp: negativ dobling.",
-   "en": {
-    "why": "4 spades and 11 HCP: negative double."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     12,
-     7,
-     6,
-     3
-    ],
-    "H": [
-     3
-    ],
-    "D": [
-     13,
-     12,
-     10,
-     4
-    ],
-    "C": [
-     14,
-     11,
-     8,
-     5
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "zone": "ingen",
-   "correct": "X",
-   "why": "4 spar og 12 hp: negativ dobling.",
-   "en": {
-    "why": "4 spades and 12 HCP: negative double."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     9,
-     8,
-     6,
-     5
-    ],
-    "H": [
-     12,
-     3
-    ],
-    "D": [
-     13,
-     10,
-     2
-    ],
-    "C": [
-     14,
-     13,
-     10,
-     7
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "zone": "ns",
-   "correct": "X",
-   "why": "4 spar og 12 hp: negativ dobling.",
-   "en": {
-    "why": "4 spades and 12 HCP: negative double."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     14,
-     10,
-     4,
-     3
-    ],
-    "H": [
      14
     ],
-    "D": [
-     12,
+    "H": [
+     11,
      10,
+     5,
+     3
+    ],
+    "D": [
+     14,
+     13,
      8,
-     2
+     5
     ],
     "C": [
-     7,
-     6,
-     5,
+     13,
+     11,
+     4,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "zone": "ov",
+   "correct": "3♣",
+   "why": "4 trumf og 16 hp: overmelding i fjendens farve – støtte og 10+.",
+   "turnering": {
+    "correct": "2NT",
+    "why": "4 trumf og 16 hp: 2NT – Stenberg, firkortstøtte og udgangskrav."
+   },
+   "en": {
+    "why": "4 trumps and 16 HCP: a cue-bid in the opponents' suit – support and 10+.",
+    "turnering": {
+     "why": "4 trumps and 16 HCP: 2NT – Stenberg, four-card support and game forcing."
+    }
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     10,
+     3
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     6
+    ],
+    "D": [
+     12,
+     11,
+     3
+    ],
+    "C": [
+     11,
+     4,
+     3,
      2
     ]
    },
    "hp": 10,
-   "sp": 13,
-   "zone": "ingen",
+   "sp": 11,
+   "zone": "alle",
+   "correct": "3♣",
+   "why": "4 trumf og 10 hp: overmelding i fjendens farve – støtte og 10+ (i Turnering præcis invit 10–12).",
+   "en": {
+    "why": "4 trumps and 10 HCP: a cue-bid in the opponents' suit – support and 10+ (in Tournament exactly invitational, 10–12)."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     14,
+     9
+    ],
+    "H": [
+     14,
+     12,
+     6
+    ],
+    "D": [
+     11,
+     10,
+     8,
+     2
+    ],
+    "C": [
+     13,
+     11,
+     7,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "zone": "alle",
+   "correct": "3♣",
+   "why": "3 trumf og 15 hp: overmelding i fjendens farve – støtte og 10+.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "3 trumps and 15 HCP: a cue-bid in the opponents' suit – support and 10+."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     8
+    ],
+    "H": [
+     9,
+     8
+    ],
+    "D": [
+     11,
+     10,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     9,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ov",
    "correct": "X",
    "why": "4 spar og 10 hp: negativ dobling.",
    "en": {
@@ -1215,25 +2086,93 @@
    "situation": "off_hj_kl",
    "hand": {
     "S": [
-     14,
-     5,
-     3,
-     2
-    ],
-    "H": [
-     7
-    ],
-    "D": [
-     14,
      12,
      9,
+     8,
+     7
+    ],
+    "H": [
+     13,
+     6
+    ],
+    "D": [
+     11,
+     10,
+     6,
      5
     ],
     "C": [
+     13,
      12,
+     10
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "ns",
+   "correct": "X",
+   "why": "4 spar og 11 hp: negativ dobling.",
+   "en": {
+    "why": "4 spades and 11 HCP: negative double."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
      8,
-     7,
+     4
+    ],
+    "H": [
+     9
+    ],
+    "D": [
+     12,
+     4,
+     3,
      2
+    ],
+    "C": [
+     12,
+     10,
+     4,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "4 spar og 11 hp: negativ dobling.",
+   "en": {
+    "why": "4 spades and 11 HCP: negative double."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     14,
+     10,
+     5,
+     2
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     14,
+     8,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     6,
+     4
     ]
    },
    "hp": 12,
@@ -1250,33 +2189,33 @@
    "hand": {
     "S": [
      14,
-     6,
+     7,
      4,
-     2
+     3
     ],
     "H": [
-     13,
-     10
+     11,
+     9
     ],
     "D": [
-     10,
-     9,
-     8,
+     13,
+     11,
+     6,
      4
     ],
     "C": [
-     14,
-     5,
-     3
+     7,
+     6,
+     4
     ]
    },
-   "hp": 11,
-   "sp": 12,
+   "hp": 9,
+   "sp": 10,
    "zone": "ov",
    "correct": "X",
-   "why": "4 spar og 11 hp: negativ dobling.",
+   "why": "4 spar og 9 hp: negativ dobling.",
    "en": {
-    "why": "4 spades and 11 HCP: negative double."
+    "why": "4 spades and 9 HCP: negative double."
    }
   },
   {
@@ -1285,23 +2224,57 @@
     "S": [
      14,
      12,
-     3,
-     2
-    ],
-    "H": [
-     10,
-     5
-    ],
-    "D": [
-     12,
-     10,
+     7,
      6
     ],
-    "C": [
-     5,
-     4,
+    "H": [
      3,
      2
+    ],
+    "D": [
+     14,
+     9,
+     6,
+     5
+    ],
+    "C": [
+     12,
+     6,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "zone": "ns",
+   "correct": "X",
+   "why": "4 spar og 12 hp: negativ dobling.",
+   "en": {
+    "why": "4 spades and 12 HCP: negative double."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     10,
+     8,
+     4,
+     3
+    ],
+    "H": [
+     12,
+     6
+    ],
+    "D": [
+     14,
+     12,
+     7,
+     2
+    ],
+    "C": [
+     8,
+     5,
+     3
     ]
    },
    "hp": 8,
@@ -1317,152 +2290,34 @@
    "situation": "off_hj_kl",
    "hand": {
     "S": [
-     14,
      13,
+     12,
+     9,
+     3
+    ],
+    "H": [
+     10,
      8
     ],
-    "H": [
-     5,
-     3
-    ],
-    "D": [
-     12,
-     10,
-     4,
-     3
-    ],
-    "C": [
-     11,
-     10,
-     9,
-     2
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "zone": "ov",
-   "correct": "2NT",
-   "why": "10 hp og hold i klør: 2NT – naturlig invit.",
-   "only": [
-    "grund",
-    "klub"
-   ],
-   "en": {
-    "why": "10 HCP and a stopper in clubs: 2NT – a natural invitation."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     13,
-     12,
-     7
-    ],
-    "H": [
-     11,
-     5
-    ],
     "D": [
      13,
-     7,
-     5,
-     3
-    ],
-    "C": [
      11,
-     8,
-     7,
-     2
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "zone": "ov",
-   "correct": "2NT",
-   "why": "10 hp og hold i klør: 2NT – naturlig invit.",
-   "only": [
-    "grund",
-    "klub"
-   ],
-   "en": {
-    "why": "10 HCP and a stopper in clubs: 2NT – a natural invitation."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     11,
-     8,
-     2
-    ],
-    "H": [
-     13,
-     10
-    ],
-    "D": [
-     13,
-     9,
-     8,
      5
     ],
     "C": [
      13,
-     11,
      6,
-     4
-    ]
-   },
-   "hp": 11,
-   "sp": 12,
-   "zone": "ov",
-   "correct": "2NT",
-   "why": "11 hp og hold i klør: 2NT – naturlig invit.",
-   "only": [
-    "grund",
-    "klub"
-   ],
-   "en": {
-    "why": "11 HCP and a stopper in clubs: 2NT – a natural invitation."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     13,
-     8,
+     4,
      2
-    ],
-    "H": [
-     9,
-     8
-    ],
-    "D": [
-     13,
-     11,
-     8,
-     6
-    ],
-    "C": [
-     14,
-     11,
-     7,
-     5
     ]
    },
    "hp": 12,
    "sp": 13,
    "zone": "ingen",
-   "correct": "2NT",
-   "why": "12 hp og hold i klør: 2NT – naturlig invit.",
-   "only": [
-    "grund",
-    "klub"
-   ],
+   "correct": "X",
+   "why": "4 spar og 12 hp: negativ dobling.",
    "en": {
-    "why": "12 HCP and a stopper in clubs: 2NT – a natural invitation."
+    "why": "4 spades and 12 HCP: negative double."
    }
   },
   {
@@ -1470,62 +2325,266 @@
    "hand": {
     "S": [
      14,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     8,
+     6
+    ],
+    "D": [
+     12,
+     11,
+     4
+    ],
+    "C": [
+     11,
+     8,
+     4,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "4 spar og 8 hp: negativ dobling.",
+   "en": {
+    "why": "4 spades and 8 HCP: negative double."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     6,
+     5
+    ],
+    "H": [
+     10,
+     6
+    ],
+    "D": [
      13,
+     7,
+     6,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "zone": "ns",
+   "correct": "X",
+   "why": "4 spar og 12 hp: negativ dobling.",
+   "en": {
+    "why": "4 spades and 12 HCP: negative double."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     4,
+     3
+    ],
+    "H": [
+     6,
+     4
+    ],
+    "D": [
+     12,
+     7,
+     4
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "ns",
+   "correct": "X",
+   "why": "4 spar og 11 hp: negativ dobling.",
+   "en": {
+    "why": "4 spades and 11 HCP: negative double."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     12,
+     5,
+     4,
+     3
+    ],
+    "H": [
+     12
+    ],
+    "D": [
+     14,
+     9,
+     6,
+     2
+    ],
+    "C": [
+     13,
+     7,
+     6,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "zone": "ov",
+   "correct": "X",
+   "why": "4 spar og 11 hp: negativ dobling.",
+   "en": {
+    "why": "4 spades and 11 HCP: negative double."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     14,
+     11,
+     6,
+     2
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     5
+    ],
+    "C": [
+     13,
+     9,
+     6,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "zone": "ns",
+   "correct": "X",
+   "why": "4 spar og 12 hp: negativ dobling.",
+   "en": {
+    "why": "4 spades and 12 HCP: negative double."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     9,
+     6,
+     4,
+     3
+    ],
+    "H": [
+     14,
      9
+    ],
+    "D": [
+     8,
+     6,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     8,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "ov",
+   "correct": "X",
+   "why": "4 spar og 11 hp: negativ dobling.",
+   "en": {
+    "why": "4 spades and 11 HCP: negative double."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     12,
+     5,
+     4
     ],
     "H": [
      9,
      3
     ],
     "D": [
-     10,
-     6,
-     4,
-     2
+     14,
+     12,
+     7,
+     4
     ],
     "C": [
-     12,
-     11,
-     7,
-     5
+     13,
+     6,
+     5,
+     4
     ]
    },
-   "hp": 10,
-   "sp": 11,
-   "zone": "alle",
+   "hp": 11,
+   "sp": 12,
+   "zone": "ingen",
    "correct": "2NT",
-   "why": "10 hp og hold i klør: 2NT – naturlig invit.",
+   "why": "11 hp og hold i klør: 2NT – naturlig invit.",
    "only": [
     "grund",
     "klub"
    ],
    "en": {
-    "why": "10 HCP and a stopper in clubs: 2NT – a natural invitation."
+    "why": "11 HCP and a stopper in clubs: 2NT – a natural invitation."
    }
   },
   {
    "situation": "off_hj_kl",
    "hand": {
     "S": [
+     13,
      12,
-     9,
-     4
+     5
     ],
     "H": [
-     10,
-     6
+     7,
+     4
     ],
     "D": [
-     14,
-     11,
-     6,
+     13,
+     9,
+     5,
      4
     ],
     "C": [
      13,
-     11,
-     8,
-     6
+     10,
+     4,
+     3
     ]
    },
    "hp": 11,
@@ -1546,29 +2605,447 @@
    "hand": {
     "S": [
      14,
-     9,
+     3,
      2
     ],
     "H": [
-     8,
+     14,
+     3
+    ],
+    "D": [
+     11,
+     10,
+     7,
+     4
+    ],
+    "C": [
+     11,
+     10,
+     6,
      2
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "2NT",
+   "why": "10 hp og hold i klør: 2NT – naturlig invit.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "10 HCP and a stopper in clubs: 2NT – a natural invitation."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11
+    ],
+    "H": [
+     9,
+     8
+    ],
+    "D": [
+     11,
+     8,
+     7,
+     6
+    ],
+    "C": [
+     12,
+     7,
+     6,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ov",
+   "correct": "2NT",
+   "why": "10 hp og hold i klør: 2NT – naturlig invit.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "10 HCP and a stopper in clubs: 2NT – a natural invitation."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     8,
+     5,
+     3
+    ],
+    "H": [
+     6,
+     5
     ],
     "D": [
      14,
+     13,
+     7,
+     3
+    ],
+    "C": [
+     13,
      8,
+     5,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ingen",
+   "correct": "2NT",
+   "why": "10 hp og hold i klør: 2NT – naturlig invit.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "10 HCP and a stopper in clubs: 2NT – a natural invitation."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     12,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     9
+    ],
+    "D": [
+     12,
+     10,
+     6,
+     5
+    ],
+    "C": [
+     13,
+     10,
+     7,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "2NT",
+   "why": "10 hp og hold i klør: 2NT – naturlig invit.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "10 HCP and a stopper in clubs: 2NT – a natural invitation."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11
+    ],
+    "H": [
+     13,
+     9
+    ],
+    "D": [
+     8,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     11,
+     10,
+     8,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "2NT",
+   "why": "11 hp og hold i klør: 2NT – naturlig invit.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "11 HCP and a stopper in clubs: 2NT – a natural invitation."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     12,
+     8,
+     3
+    ],
+    "H": [
+     11,
+     4
+    ],
+    "D": [
+     13,
+     10,
      6,
      5
     ],
     "C": [
      14,
-     8,
+     11,
+     5,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "ov",
+   "correct": "2NT",
+   "why": "11 hp og hold i klør: 2NT – naturlig invit.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "11 HCP and a stopper in clubs: 2NT – a natural invitation."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     11,
+     10,
+     3
+    ],
+    "H": [
+     14,
+     11
+    ],
+    "D": [
+     12,
+     10,
+     9,
+     3
+    ],
+    "C": [
+     12,
+     7,
      4,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "2NT",
+   "why": "10 hp og hold i klør: 2NT – naturlig invit.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "10 HCP and a stopper in clubs: 2NT – a natural invitation."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     13,
+     7,
+     3
+    ],
+    "H": [
+     13,
+     8
+    ],
+    "D": [
+     13,
+     9,
+     8,
+     7
+    ],
+    "C": [
+     12,
+     10,
+     6,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "ov",
+   "correct": "2NT",
+   "why": "11 hp og hold i klør: 2NT – naturlig invit.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "11 HCP and a stopper in clubs: 2NT – a natural invitation."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     10,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     11
+    ],
+    "D": [
+     12,
+     11,
+     9,
+     7
+    ],
+    "C": [
+     12,
+     11,
+     10,
+     5
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "alle",
+   "correct": "2NT",
+   "why": "11 hp og hold i klør: 2NT – naturlig invit.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "11 HCP and a stopper in clubs: 2NT – a natural invitation."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     14,
+     10,
+     5
+    ],
+    "H": [
+     14,
+     7
+    ],
+    "D": [
+     10,
+     8,
+     6,
+     4
+    ],
+    "C": [
+     12,
+     10,
+     6,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ov",
+   "correct": "2NT",
+   "why": "10 hp og hold i klør: 2NT – naturlig invit.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "10 HCP and a stopper in clubs: 2NT – a natural invitation."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     8,
+     3,
+     2
+    ],
+    "H": [
+     6,
+     4
+    ],
+    "D": [
+     11,
+     10,
+     9,
+     5
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     4
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "2NT",
+   "why": "10 hp og hold i klør: 2NT – naturlig invit.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "10 HCP and a stopper in clubs: 2NT – a natural invitation."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     11,
+     7,
+     2
+    ],
+    "H": [
+     8,
+     3
+    ],
+    "D": [
+     14,
+     12,
+     10,
+     9
+    ],
+    "C": [
+     14,
+     11,
+     5,
      3
     ]
    },
    "hp": 12,
    "sp": 13,
-   "zone": "alle",
+   "zone": "ov",
    "correct": "2NT",
    "why": "12 hp og hold i klør: 2NT – naturlig invit.",
    "only": [
@@ -1584,29 +3061,63 @@
    "hand": {
     "S": [
      11,
-     6,
+     10,
+     4
+    ],
+    "H": [
+     4,
      3
+    ],
+    "D": [
+     12,
+     8,
+     7,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     8,
+     6
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "5 hp: pas.",
+   "en": {
+    "why": "5 HCP: pass."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     13,
+     8,
+     2
     ],
     "H": [
      10,
      6
     ],
     "D": [
-     10,
+     7,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     9,
      8,
      7,
      5
-    ],
-    "C": [
-     12,
-     7,
-     5,
-     3
     ]
    },
    "hp": 3,
    "sp": 4,
-   "zone": "alle",
+   "zone": "ingen",
    "correct": "Pas",
    "why": "3 hp: pas.",
    "en": {
@@ -1617,59 +3128,263 @@
    "situation": "off_hj_kl",
    "hand": {
     "S": [
-     11,
-     3,
+     9,
+     7,
      2
     ],
     "H": [
-     9,
-     7
+     12,
+     8
     ],
     "D": [
+     13,
      10,
-     9,
-     8,
+     7,
      2
     ],
     "C": [
-     10,
-     8,
-     7,
+     9,
+     6,
+     5,
      2
     ]
    },
-   "hp": 1,
-   "sp": 2,
-   "zone": "ingen",
+   "hp": 5,
+   "sp": 6,
+   "zone": "alle",
    "correct": "Pas",
-   "why": "1 hp: pas.",
+   "why": "5 hp: pas.",
    "en": {
-    "why": "1 HCP: pass."
+    "why": "5 HCP: pass."
    }
   },
   {
    "situation": "off_hj_kl",
    "hand": {
     "S": [
-     14,
+     7,
+     4,
+     3
+    ],
+    "H": [
      9,
-     5
+     6
+    ],
+    "D": [
+     10,
+     9,
+     7,
+     6
+    ],
+    "C": [
+     13,
+     11,
+     10,
+     3
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "4 hp: pas.",
+   "en": {
+    "why": "4 HCP: pass."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     9,
+     5,
+     4
+    ],
+    "H": [
+     10,
+     7
+    ],
+    "D": [
+     8,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     14,
+     8,
+     5,
+     4
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "4 hp: pas.",
+   "en": {
+    "why": "4 HCP: pass."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     13,
+     9,
+     8
+    ],
+    "H": [
+     3,
+     2
+    ],
+    "D": [
+     9,
+     8,
+     7,
+     4
+    ],
+    "C": [
+     11,
+     10,
+     6,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "4 hp: pas.",
+   "en": {
+    "why": "4 HCP: pass."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     12,
+     4,
+     2
+    ],
+    "H": [
+     11,
+     7
+    ],
+    "D": [
+     12,
+     10,
+     6,
+     3
+    ],
+    "C": [
+     10,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "5 hp: pas.",
+   "en": {
+    "why": "5 HCP: pass."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     8,
+     7,
+     3
     ],
     "H": [
      8,
      5
     ],
     "D": [
-     11,
-     10,
-     8,
-     4
+     14,
+     7,
+     3,
+     2
     ],
     "C": [
+     10,
      7,
      6,
+     3
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "4 hp: pas.",
+   "en": {
+    "why": "4 HCP: pass."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     9,
+     7,
+     6
+    ],
+    "H": [
      4,
      3
+    ],
+    "D": [
+     10,
+     9,
+     6,
+     2
+    ],
+    "C": [
+     12,
+     4,
+     3,
+     2
+    ]
+   },
+   "hp": 2,
+   "sp": 3,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "2 hp: pas.",
+   "en": {
+    "why": "2 HCP: pass."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     8,
+     5,
+     2
+    ],
+    "H": [
+     5,
+     2
+    ],
+    "D": [
+     14,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     10,
+     6,
+     4
     ]
    },
    "hp": 5,
@@ -1685,127 +3400,25 @@
    "situation": "off_hj_kl",
    "hand": {
     "S": [
-     10,
-     6,
-     2
-    ],
-    "H": [
-     11,
-     3
-    ],
-    "D": [
-     7,
-     6,
      5,
-     4
-    ],
-    "C": [
-     11,
-     10,
-     7,
-     6
-    ]
-   },
-   "hp": 2,
-   "sp": 3,
-   "zone": "alle",
-   "correct": "Pas",
-   "why": "2 hp: pas.",
-   "en": {
-    "why": "2 HCP: pass."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     9,
-     8,
-     3
-    ],
-    "H": [
-     11,
-     8
-    ],
-    "D": [
-     11,
-     8,
      3,
      2
     ],
-    "C": [
-     12,
-     9,
-     6,
-     3
-    ]
-   },
-   "hp": 4,
-   "sp": 5,
-   "zone": "ingen",
-   "correct": "Pas",
-   "why": "4 hp: pas.",
-   "en": {
-    "why": "4 HCP: pass."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     10,
-     6,
-     5
-    ],
     "H": [
-     10,
-     4
+     12,
+     11
     ],
     "D": [
      11,
-     8,
-     7,
-     4
-    ],
-    "C": [
-     11,
-     9,
-     6,
-     5
-    ]
-   },
-   "hp": 2,
-   "sp": 3,
-   "zone": "ns",
-   "correct": "Pas",
-   "why": "2 hp: pas.",
-   "en": {
-    "why": "2 HCP: pass."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     11,
      10,
-     7
-    ],
-    "H": [
-     11,
-     10
-    ],
-    "D": [
-     7,
-     6,
-     4,
-     2
+     9,
+     5
     ],
     "C": [
-     12,
-     8,
-     5,
-     3
+     9,
+     7,
+     6,
+     4
     ]
    },
    "hp": 4,
@@ -1821,64 +3434,336 @@
    "situation": "off_hj_kl",
    "hand": {
     "S": [
-     8,
-     7,
-     3
+     11,
+     9,
+     5
     ],
     "H": [
-     13
+     8,
+     7
     ],
     "D": [
-     13,
-     12,
-     11,
-     10,
-     7,
-     3
+     8,
+     6,
+     5,
+     4
     ],
     "C": [
-     11,
+     12,
+     8,
      6,
-     2
+     4
     ]
    },
-   "hp": 10,
-   "sp": 13,
+   "hp": 3,
+   "sp": 4,
    "zone": "ingen",
-   "correct": "2♦",
-   "why": "6 ruder og 10 hp: ny farve på 2-trinnet – 10+.",
+   "correct": "Pas",
+   "why": "3 hp: pas.",
    "en": {
-    "why": "6 diamonds and 10 HCP: a new suit at the two level – 10+."
+    "why": "3 HCP: pass."
    }
   },
   {
    "situation": "off_hj_kl",
    "hand": {
     "S": [
+     11,
+     4,
+     2
+    ],
+    "H": [
+     5,
+     2
+    ],
+    "D": [
+     11,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     13,
+     8,
+     4,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "5 hp: pas.",
+   "en": {
+    "why": "5 HCP: pass."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     6,
+     4,
      2
     ],
     "H": [
      11,
-     5
+     2
     ],
     "D": [
      13,
-     12,
+     9,
+     8,
+     7
+    ],
+    "C": [
      10,
+     9,
      5,
-     3,
+     4
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "4 hp: pas.",
+   "en": {
+    "why": "4 HCP: pass."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     13,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     6
+    ],
+    "D": [
+     12,
+     8,
+     5,
+     4,
      2
     ],
     "C": [
+     13,
+     8,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "5 ruder og 12 hp: ny farve på 2-trinnet – 10+.",
+   "en": {
+    "why": "5 diamonds and 12 HCP: a new suit at the two level – 10+."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     12,
+     10,
+     9
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     10,
+     8,
+     6
+    ],
+    "C": [
+     12,
+     10,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "6 ruder og 12 hp: ny farve på 2-trinnet – 10+.",
+   "en": {
+    "why": "6 diamonds and 12 HCP: a new suit at the two level – 10+."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     9,
+     8
+    ],
+    "H": [
+     13,
+     11
+    ],
+    "D": [
+     14,
+     11,
+     10,
+     7,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     8,
+     7
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "zone": "ingen",
+   "correct": "2♦",
+   "why": "5 ruder og 11 hp: ny farve på 2-trinnet – 10+.",
+   "en": {
+    "why": "5 diamonds and 11 HCP: a new suit at the two level – 10+."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     14,
+     12
+    ],
+    "D": [
      14,
      10,
+     9,
+     8,
+     7,
+     5
+    ],
+    "C": [
+     9,
+     8,
      6,
      2
     ]
    },
    "hp": 10,
    "sp": 14,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "6 ruder og 10 hp: ny farve på 2-trinnet – 10+.",
+   "en": {
+    "why": "6 diamonds and 10 HCP: a new suit at the two level – 10+."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     14,
+     13,
+     7
+    ],
+    "H": [
+     8
+    ],
+    "D": [
+     14,
+     12,
+     8,
+     6,
+     4
+    ],
+    "C": [
+     10,
+     9,
+     8,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "5 ruder og 13 hp: ny farve på 2-trinnet – 10+.",
+   "en": {
+    "why": "5 diamonds and 13 HCP: a new suit at the two level – 10+."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     13,
+     12,
+     7
+    ],
+    "H": [
+     7,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     7,
+     6,
+     4
+    ],
+    "C": [
+     12,
+     6
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
    "zone": "ov",
+   "correct": "2♦",
+   "why": "6 ruder og 13 hp: ny farve på 2-trinnet – 10+.",
+   "en": {
+    "why": "6 diamonds and 13 HCP: a new suit at the two level – 10+."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     13,
+     9,
+     4
+    ],
+    "H": [
+     12,
+     11
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     6,
+     4,
+     3
+    ],
+    "C": [
+     9,
+     5
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "zone": "alle",
    "correct": "2♦",
    "why": "6 ruder og 10 hp: ny farve på 2-trinnet – 10+.",
    "en": {
@@ -1890,128 +3775,29 @@
    "hand": {
     "S": [
      13,
+     7,
+     4
+    ],
+    "H": [
      6,
      3
     ],
-    "H": [],
     "D": [
      14,
+     13,
      11,
      9,
-     5,
-     4,
-     3
-    ],
-    "C": [
-     14,
-     12,
-     8,
-     4
-    ]
-   },
-   "hp": 14,
-   "sp": 19,
-   "zone": "alle",
-   "correct": "2♦",
-   "why": "6 ruder og 14 hp: ny farve på 2-trinnet – 10+.",
-   "en": {
-    "why": "6 diamonds and 14 HCP: a new suit at the two level – 10+."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     11
-    ],
-    "H": [
-     12,
+     7,
      2
     ],
-    "D": [
-     13,
-     12,
-     10,
-     8,
-     5,
-     4
-    ],
     "C": [
-     14,
-     12,
-     8,
+     7,
      6
     ]
    },
-   "hp": 14,
-   "sp": 18,
-   "zone": "ov",
-   "correct": "2♦",
-   "why": "6 ruder og 14 hp: ny farve på 2-trinnet – 10+.",
-   "en": {
-    "why": "6 diamonds and 14 HCP: a new suit at the two level – 10+."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     12,
-     7,
-     5
-    ],
-    "H": [],
-    "D": [
-     13,
-     12,
-     11,
-     6,
-     5,
-     4
-    ],
-    "C": [
-     14,
-     12,
-     9,
-     3
-    ]
-   },
-   "hp": 14,
-   "sp": 19,
-   "zone": "ingen",
-   "correct": "2♦",
-   "why": "6 ruder og 14 hp: ny farve på 2-trinnet – 10+.",
-   "en": {
-    "why": "6 diamonds and 14 HCP: a new suit at the two level – 10+."
-   }
-  },
-  {
-   "situation": "off_hj_kl",
-   "hand": {
-    "S": [
-     14,
-     5,
-     2
-    ],
-    "H": [],
-    "D": [
-     14,
-     11,
-     10,
-     7,
-     6,
-     5
-    ],
-    "C": [
-     12,
-     7,
-     4,
-     3
-    ]
-   },
    "hp": 11,
-   "sp": 16,
-   "zone": "alle",
+   "sp": 13,
+   "zone": "ingen",
    "correct": "2♦",
    "why": "6 ruder og 11 hp: ny farve på 2-trinnet – 10+.",
    "en": {
@@ -2022,12 +3808,12 @@
    "situation": "off_hj_kl",
    "hand": {
     "S": [
-     8,
-     7,
+     13,
      3
     ],
     "H": [
-     12
+     14,
+     7
     ],
     "D": [
      13,
@@ -2035,186 +3821,288 @@
      11,
      10,
      7,
-     5
+     4
     ],
     "C": [
-     14,
-     8,
-     4
+     10,
+     7,
+     5
     ]
    },
-   "hp": 12,
+   "hp": 13,
    "sp": 15,
-   "zone": "ns",
+   "zone": "ov",
    "correct": "2♦",
-   "why": "6 ruder og 12 hp: ny farve på 2-trinnet – 10+.",
+   "why": "6 ruder og 13 hp: ny farve på 2-trinnet – 10+.",
    "en": {
-    "why": "6 diamonds and 12 HCP: a new suit at the two level – 10+."
+    "why": "6 diamonds and 13 HCP: a new suit at the two level – 10+."
    }
   },
   {
-   "situation": "off_sp_ru",
+   "situation": "off_hj_kl",
    "hand": {
     "S": [
-     7,
+     14,
+     13,
+     6
+    ],
+    "H": [
      5,
      3
     ],
-    "H": [
+    "D": [
+     14,
      12,
-     6
+     9,
+     6,
+     4,
+     3
+    ],
+    "C": [
+     5,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "6 ruder og 13 hp: ny farve på 2-trinnet – 10+.",
+   "en": {
+    "why": "6 diamonds and 13 HCP: a new suit at the two level – 10+."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     13,
+     9,
+     7
+    ],
+    "H": [
+     11,
+     3
     ],
     "D": [
      14,
-     9,
+     8,
+     7,
      4,
      2
     ],
     "C": [
-     12,
+     13,
      9,
-     8,
-     3
+     4
     ]
    },
-   "hp": 8,
-   "sp": 9,
-   "zone": "ov",
-   "correct": "2♠",
-   "why": "3 trumf og 8 hp: 2♠ – støtten viser antallet af trumf (6–9).",
+   "hp": 11,
+   "sp": 12,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "5 ruder og 11 hp: ny farve på 2-trinnet – 10+.",
    "en": {
-    "why": "3 trumps and 8 HCP: 2♠ – the raise shows the number of trumps (6–9)."
+    "why": "5 diamonds and 11 HCP: a new suit at the two level – 10+."
    }
   },
   {
-   "situation": "off_sp_ru",
+   "situation": "off_hj_kl",
    "hand": {
     "S": [
-     9,
-     8,
-     4
+     13,
+     11,
+     2
     ],
     "H": [
-     13,
-     8,
-     3
+     10,
+     8
     ],
     "D": [
+     14,
      12,
      8,
-     6,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     7,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 15,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "5 ruder og 14 hp: ny farve på 2-trinnet – 10+.",
+   "en": {
+    "why": "5 diamonds and 14 HCP: a new suit at the two level – 10+."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     14,
+     9
+    ],
+    "H": [
+     9,
+     7
+    ],
+    "D": [
+     11,
+     5,
+     4,
+     3,
      2
     ],
     "C": [
      13,
+     12,
      10,
-     3
+     9
     ]
    },
-   "hp": 8,
-   "sp": 8,
-   "zone": "ns",
-   "correct": "2♠",
-   "why": "3 trumf og 8 hp: 2♠ – støtten viser antallet af trumf (6–9).",
+   "hp": 10,
+   "sp": 12,
+   "zone": "alle",
+   "correct": "2♦",
+   "why": "5 ruder og 10 hp: ny farve på 2-trinnet – 10+.",
    "en": {
-    "why": "3 trumps and 8 HCP: 2♠ – the raise shows the number of trumps (6–9)."
+    "why": "5 diamonds and 10 HCP: a new suit at the two level – 10+."
+   }
+  },
+  {
+   "situation": "off_hj_kl",
+   "hand": {
+    "S": [
+     10,
+     4,
+     2
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     14,
+     13,
+     12,
+     11,
+     7,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     8
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "zone": "ns",
+   "correct": "2♦",
+   "why": "6 ruder og 13 hp: ny farve på 2-trinnet – 10+.",
+   "en": {
+    "why": "6 diamonds and 13 HCP: a new suit at the two level – 10+."
    }
   },
   {
    "situation": "off_sp_ru",
    "hand": {
     "S": [
+     10,
+     8,
+     2
+    ],
+    "H": [
+     13,
+     4,
+     2
+    ],
+    "D": [
+     11,
      10,
      9,
      8
     ],
-    "H": [
-     11,
-     3
-    ],
-    "D": [
+    "C": [
      14,
-     8,
-     6,
-     4
-    ],
-    "C": [
-     13,
-     4,
-     3,
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 9,
-   "zone": "ingen",
-   "correct": "2♠",
-   "why": "3 trumf og 8 hp: 2♠ – støtten viser antallet af trumf (6–9).",
-   "en": {
-    "why": "3 trumps and 8 HCP: 2♠ – the raise shows the number of trumps (6–9)."
-   }
-  },
-  {
-   "situation": "off_sp_ru",
-   "hand": {
-    "S": [
-     13,
-     9,
-     7
-    ],
-    "H": [
-     9,
-     4
-    ],
-    "D": [
-     13,
-     8,
      7,
-     5
-    ],
-    "C": [
-     12,
-     11,
-     8,
-     7
-    ]
-   },
-   "hp": 9,
-   "sp": 10,
-   "zone": "alle",
-   "correct": "2♠",
-   "why": "3 trumf og 9 hp: 2♠ – støtten viser antallet af trumf (6–9).",
-   "en": {
-    "why": "3 trumps and 9 HCP: 2♠ – the raise shows the number of trumps (6–9)."
-   }
-  },
-  {
-   "situation": "off_sp_ru",
-   "hand": {
-    "S": [
-     13,
-     10,
-     2
-    ],
-    "H": [
-     9,
-     5,
-     3
-    ],
-    "D": [
-     12,
-     9,
-     8,
-     5
-    ],
-    "C": [
-     13,
-     4,
-     3
+     4
     ]
    },
    "hp": 8,
    "sp": 8,
+   "zone": "ns",
+   "correct": "2♠",
+   "why": "3 trumf og 8 hp: 2♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "3 trumps and 8 HCP: 2♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     13,
+     6,
+     3
+    ],
+    "H": [
+     13,
+     11
+    ],
+    "D": [
+     8,
+     4,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     7,
+     6,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "2♠",
+   "why": "3 trumf og 8 hp: 2♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "3 trumps and 8 HCP: 2♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     10,
+     8,
+     6
+    ],
+    "H": [
+     8,
+     6
+    ],
+    "D": [
+     12,
+     10,
+     7,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     9,
+     5
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
    "zone": "alle",
    "correct": "2♠",
    "why": "3 trumf og 8 hp: 2♠ – støtten viser antallet af trumf (6–9).",
@@ -2227,63 +4115,63 @@
    "hand": {
     "S": [
      11,
-     6,
-     5
+     9,
+     3
     ],
     "H": [
-     9,
+     14,
      6,
-     2
+     3
     ],
     "D": [
-     14,
      11,
-     10,
-     5
+     8,
+     7,
+     6
     ],
     "C": [
-     13,
-     5,
-     3
+     9,
+     7,
+     2
     ]
    },
-   "hp": 9,
-   "sp": 9,
-   "zone": "ingen",
+   "hp": 6,
+   "sp": 6,
+   "zone": "ov",
    "correct": "2♠",
-   "why": "3 trumf og 9 hp: 2♠ – støtten viser antallet af trumf (6–9).",
+   "why": "3 trumf og 6 hp: 2♠ – støtten viser antallet af trumf (6–9).",
    "en": {
-    "why": "3 trumps and 9 HCP: 2♠ – the raise shows the number of trumps (6–9)."
+    "why": "3 trumps and 6 HCP: 2♠ – the raise shows the number of trumps (6–9)."
    }
   },
   {
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     11,
-     10,
-     5
+     8,
+     6,
+     2
     ],
     "H": [
-     12,
-     5,
+     8,
      3
     ],
     "D": [
      13,
-     5,
-     3
+     12,
+     9,
+     8
     ],
     "C": [
-     11,
-     10,
-     8,
-     3
+     12,
+     7,
+     6,
+     4
     ]
    },
    "hp": 7,
-   "sp": 7,
-   "zone": "ov",
+   "sp": 8,
+   "zone": "ns",
    "correct": "2♠",
    "why": "3 trumf og 7 hp: 2♠ – støtten viser antallet af trumf (6–9).",
    "en": {
@@ -2294,64 +4182,404 @@
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     13,
-     7,
-     5,
+     8,
+     4,
      3
     ],
     "H": [
-     9
+     6,
+     5,
+     2
     ],
     "D": [
-     14,
-     12,
+     13,
+     11,
      10,
-     3
+     5
     ],
     "C": [
-     10,
-     9,
+     12,
      6,
-     3
+     2
     ]
    },
-   "hp": 9,
-   "sp": 12,
-   "zone": "ingen",
-   "correct": "3♠",
-   "why": "4 trumf og 9 hp: 3♠ – støtten viser antallet af trumf (6–9).",
+   "hp": 6,
+   "sp": 6,
+   "zone": "alle",
+   "correct": "2♠",
+   "why": "3 trumf og 6 hp: 2♠ – støtten viser antallet af trumf (6–9).",
    "en": {
-    "why": "4 trumps and 9 HCP: 3♠ – the raise shows the number of trumps (6–9)."
+    "why": "3 trumps and 6 HCP: 2♠ – the raise shows the number of trumps (6–9)."
    }
   },
   {
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     13,
-     11,
-     7,
-     2
+     10,
+     9,
+     6
     ],
     "H": [
-     12,
-     11,
-     10
+     14,
+     5
     ],
     "D": [
+     9,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     3,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "2♠",
+   "why": "3 trumf og 8 hp: 2♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "3 trumps and 8 HCP: 2♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     12,
+     7,
+     3
+    ],
+    "H": [
      8,
      6,
+     5
+    ],
+    "D": [
+     12,
+     5,
+     2
+    ],
+    "C": [
+     13,
+     7,
+     4,
+     2
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "zone": "ns",
+   "correct": "2♠",
+   "why": "3 trumf og 7 hp: 2♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "3 trumps and 7 HCP: 2♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     6,
+     4,
      3
+    ],
+    "H": [
+     13,
+     9,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     9,
+     8
     ],
     "C": [
      12,
-     10,
+     7,
      2
     ]
    },
    "hp": 9,
    "sp": 9,
+   "zone": "alle",
+   "correct": "2♠",
+   "why": "3 trumf og 9 hp: 2♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "3 trumps and 9 HCP: 2♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     7,
+     5,
+     2
+    ],
+    "H": [
+     12,
+     2
+    ],
+    "D": [
+     9,
+     8,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     8,
+     3,
+     2
+    ]
+   },
+   "hp": 6,
+   "sp": 7,
+   "zone": "ov",
+   "correct": "2♠",
+   "why": "3 trumf og 6 hp: 2♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "3 trumps and 6 HCP: 2♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     11,
+     6,
+     3
+    ],
+    "H": [
+     11,
+     6,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     5,
+     2
+    ],
+    "C": [
+     10,
+     8,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "zone": "ingen",
+   "correct": "2♠",
+   "why": "3 trumf og 7 hp: 2♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "3 trumps and 7 HCP: 2♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     12,
+     5,
+     4
+    ],
+    "H": [
+     6,
+     5,
+     2
+    ],
+    "D": [
+     11,
+     9,
+     7,
+     4
+    ],
+    "C": [
+     14,
+     11,
+     8
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "zone": "ingen",
+   "correct": "2♠",
+   "why": "3 trumf og 8 hp: 2♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "3 trumps and 8 HCP: 2♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     11,
+     9,
+     5
+    ],
+    "H": [
+     12,
+     6,
+     4
+    ],
+    "D": [
+     13,
+     10,
+     9
+    ],
+    "C": [
+     12,
+     10,
+     9,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "zone": "alle",
+   "correct": "2♠",
+   "why": "3 trumf og 8 hp: 2♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "3 trumps and 8 HCP: 2♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     12,
+     9,
+     2
+    ],
+    "H": [
+     12,
+     9,
+     4
+    ],
+    "D": [
+     13,
+     11,
+     10,
+     2
+    ],
+    "C": [
+     9,
+     5,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "zone": "alle",
+   "correct": "2♠",
+   "why": "3 trumf og 8 hp: 2♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "3 trumps and 8 HCP: 2♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     10,
+     9,
+     6,
+     3
+    ],
+    "H": [
+     13,
+     10,
+     8
+    ],
+    "D": [
+     12,
+     11
+    ],
+    "C": [
+     11,
+     5,
+     4,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 8,
    "zone": "ns",
+   "correct": "3♠",
+   "why": "4 trumf og 7 hp: 3♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "4 trumps and 7 HCP: 3♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     10,
+     7,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     6
+    ],
+    "D": [
+     13,
+     10,
+     9,
+     3
+    ],
+    "C": [
+     11,
+     6
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ns",
+   "correct": "3♠",
+   "why": "4 trumf og 9 hp: 3♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "4 trumps and 9 HCP: 3♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     11,
+     4,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     8,
+     2
+    ],
+    "C": [
+     9,
+     7
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ov",
    "correct": "3♠",
    "why": "4 trumf og 9 hp: 3♠ – støtten viser antallet af trumf (6–9).",
    "en": {
@@ -2364,57 +4592,91 @@
     "S": [
      13,
      11,
-     7,
-     6
+     10,
+     4
     ],
     "H": [
-     2
+     12,
+     3
     ],
     "D": [
-     13,
-     12,
-     8,
+     9,
+     5,
      2
     ],
     "C": [
+     12,
      7,
      6,
-     4,
-     3
+     5
     ]
    },
-   "hp": 9,
-   "sp": 12,
-   "zone": "ns",
+   "hp": 8,
+   "sp": 9,
+   "zone": "ingen",
    "correct": "3♠",
-   "why": "4 trumf og 9 hp: 3♠ – støtten viser antallet af trumf (6–9).",
+   "why": "4 trumf og 8 hp: 3♠ – støtten viser antallet af trumf (6–9).",
    "en": {
-    "why": "4 trumps and 9 HCP: 3♠ – the raise shows the number of trumps (6–9)."
+    "why": "4 trumps and 8 HCP: 3♠ – the raise shows the number of trumps (6–9)."
    }
   },
   {
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     14,
+     12,
      10,
-     4,
-     2
+     7,
+     4
     ],
     "H": [
-     9,
-     5
-    ],
-    "D": [
      12,
      10,
      5
     ],
-    "C": [
+    "D": [
+     12,
      8,
-     7,
-     5,
      4
+    ],
+    "C": [
+     11,
+     8,
+     3
+    ]
+   },
+   "hp": 7,
+   "sp": 7,
+   "zone": "ingen",
+   "correct": "3♠",
+   "why": "4 trumf og 7 hp: 3♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "4 trumps and 7 HCP: 3♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     13,
+     11,
+     5,
+     2
+    ],
+    "H": [
+     11,
+     6
+    ],
+    "D": [
+     9,
+     8,
+     6,
+     5
+    ],
+    "C": [
+     11,
+     8,
+     3
     ]
    },
    "hp": 6,
@@ -2430,29 +4692,29 @@
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     12,
+     14,
+     10,
      9,
-     4,
      2
     ],
     "H": [
-     14,
+     7,
+     3,
      2
     ],
     "D": [
+     12,
      10,
-     8,
-     5
+     4
     ],
     "C": [
      11,
-     7,
-     6,
-     4
+     9,
+     8
     ]
    },
    "hp": 7,
-   "sp": 8,
+   "sp": 7,
    "zone": "ov",
    "correct": "3♠",
    "why": "4 trumf og 7 hp: 3♠ – støtten viser antallet af trumf (6–9).",
@@ -2464,30 +4726,200 @@
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     13,
-     10,
+     14,
      8,
+     3,
+     2
+    ],
+    "H": [
+     9,
+     6,
      3
+    ],
+    "D": [
+     9,
+     6,
+     3
+    ],
+    "C": [
+     14,
+     4,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "zone": "alle",
+   "correct": "3♠",
+   "why": "4 trumf og 8 hp: 3♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "4 trumps and 8 HCP: 3♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     11,
+     8,
+     7,
+     2
     ],
     "H": [
      11,
-     4,
-     2
+     8,
+     5
     ],
     "D": [
+     12,
+     8,
+     5
+    ],
+    "C": [
+     14,
+     9,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 8,
+   "zone": "ingen",
+   "correct": "3♠",
+   "why": "4 trumf og 8 hp: 3♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "4 trumps and 8 HCP: 3♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     14,
      8,
      5,
      4
     ],
+    "H": [
+     10,
+     8,
+     2
+    ],
+    "D": [
+     9,
+     7,
+     5
+    ],
     "C": [
+     13,
+     12,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "3♠",
+   "why": "4 trumf og 9 hp: 3♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "4 trumps and 9 HCP: 3♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
      12,
      9,
+     6,
+     4
+    ],
+    "H": [
+     14
+    ],
+    "D": [
+     10,
+     7,
+     6,
      5
+    ],
+    "C": [
+     12,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "zone": "alle",
+   "correct": "3♠",
+   "why": "4 trumf og 8 hp: 3♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "4 trumps and 8 HCP: 3♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     13,
+     9,
+     7,
+     2
+    ],
+    "H": [
+     12,
+     3
+    ],
+    "D": [
+     9,
+     5,
+     2
+    ],
+    "C": [
+     13,
+     8,
+     6,
+     2
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ns",
+   "correct": "3♠",
+   "why": "4 trumf og 8 hp: 3♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "4 trumps and 8 HCP: 3♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     12,
+     10,
+     4,
+     3
+    ],
+    "H": [
+     13,
+     7,
+     6
+    ],
+    "D": [
+     11,
+     4
+    ],
+    "C": [
+     10,
+     5,
+     4,
+     3
     ]
    },
    "hp": 6,
-   "sp": 6,
-   "zone": "ns",
+   "sp": 7,
+   "zone": "ingen",
    "correct": "3♠",
    "why": "4 trumf og 6 hp: 3♠ – støtten viser antallet af trumf (6–9).",
    "en": {
@@ -2498,34 +4930,34 @@
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     11,
+     13,
      9,
-     8,
+     7,
      6
     ],
     "H": [
-     2
+     10,
+     5,
+     4
     ],
     "D": [
-     9,
-     6,
-     4,
-     3
+     3,
+     2
     ],
     "C": [
      14,
-     12,
+     11,
      8,
-     6
+     3
     ]
    },
-   "hp": 7,
-   "sp": 10,
-   "zone": "alle",
+   "hp": 8,
+   "sp": 9,
+   "zone": "ov",
    "correct": "3♠",
-   "why": "4 trumf og 7 hp: 3♠ – støtten viser antallet af trumf (6–9).",
+   "why": "4 trumf og 8 hp: 3♠ – støtten viser antallet af trumf (6–9).",
    "en": {
-    "why": "4 trumps and 7 HCP: 3♠ – the raise shows the number of trumps (6–9)."
+    "why": "4 trumps and 8 HCP: 3♠ – the raise shows the number of trumps (6–9)."
    }
   },
   {
@@ -2533,29 +4965,131 @@
    "hand": {
     "S": [
      14,
-     12,
+     10,
+     7,
+     5,
+     4
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     11,
+     4,
+     3
+    ],
+    "C": [
+     11,
      9,
      8,
+     4
+    ]
+   },
+   "hp": 6,
+   "sp": 9,
+   "zone": "ingen",
+   "correct": "4♠",
+   "why": "5 trumf og 6 hp: 4♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "5 trumps and 6 HCP: 4♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     12,
+     10,
+     7,
+     6,
      5
     ],
     "H": [
-     8,
-     6
+     12,
+     10,
+     4
     ],
     "D": [
+     14,
+     8,
+     2
+    ],
+    "C": [
+     5,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ingen",
+   "correct": "4♠",
+   "why": "5 trumf og 8 hp: 4♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "5 trumps and 8 HCP: 4♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     7,
+     5
+    ],
+    "H": [
      10,
-     9,
-     6,
+     7,
+     2
+    ],
+    "D": [
      4
     ],
     "C": [
-     13,
-     7
+     9,
+     7,
+     5,
+     3
     ]
    },
    "hp": 9,
-   "sp": 11,
-   "zone": "ov",
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "4♠",
+   "why": "5 trumf og 9 hp: 4♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "5 trumps and 9 HCP: 4♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     11,
+     9,
+     8,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     8,
+     5
+    ],
+    "D": [
+     7,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     8
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "ns",
    "correct": "4♠",
    "why": "5 trumf og 9 hp: 4♠ – støtten viser antallet af trumf (6–9).",
    "en": {
@@ -2567,28 +5101,27 @@
    "hand": {
     "S": [
      13,
-     12,
+     11,
      10,
-     5,
-     3
+     7,
+     6
     ],
-    "H": [
-     10,
-     7
-    ],
+    "H": [],
     "D": [
-     10,
-     9
+     9,
+     8,
+     7,
+     2
     ],
     "C": [
-     13,
+     14,
      10,
-     8,
-     5
+     6,
+     2
     ]
    },
    "hp": 8,
-   "sp": 10,
+   "sp": 13,
    "zone": "alle",
    "correct": "4♠",
    "why": "5 trumf og 8 hp: 4♠ – støtten viser antallet af trumf (6–9).",
@@ -2600,63 +5133,29 @@
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     12,
-     8,
-     7,
+     13,
+     9,
      6,
-     5
-    ],
-    "H": [
-     8,
-     4
-    ],
-    "D": [
-     13,
-     9
-    ],
-    "C": [
-     12,
-     7,
-     3,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 9,
-   "zone": "ns",
-   "correct": "4♠",
-   "why": "5 trumf og 7 hp: 4♠ – støtten viser antallet af trumf (6–9).",
-   "en": {
-    "why": "5 trumps and 7 HCP: 4♠ – the raise shows the number of trumps (6–9)."
-   }
-  },
-  {
-   "situation": "off_sp_ru",
-   "hand": {
-    "S": [
-     13,
-     10,
-     8,
-     7,
+     5,
      3
     ],
     "H": [],
     "D": [
-     11,
-     10,
-     9,
-     5
+     13,
+     4,
+     3,
+     2
     ],
     "C": [
-     13,
-     8,
+     11,
+     9,
      5,
-     4
+     3
     ]
    },
    "hp": 7,
    "sp": 12,
-   "zone": "ingen",
+   "zone": "ov",
    "correct": "4♠",
    "why": "5 trumf og 7 hp: 4♠ – støtten viser antallet af trumf (6–9).",
    "en": {
@@ -2667,34 +5166,136 @@
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     12,
+     14,
+     10,
+     9,
+     7,
+     3
+    ],
+    "H": [
+     7,
+     6
+    ],
+    "D": [
+     8,
+     6
+    ],
+    "C": [
+     14,
+     10,
+     9,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "zone": "ingen",
+   "correct": "4♠",
+   "why": "5 trumf og 8 hp: 4♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "5 trumps and 8 HCP: 4♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     13,
+     10,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     7,
+     4
+    ],
+    "D": [
+     11,
      10,
      8,
+     4
+    ],
+    "C": [
+     14,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 10,
+   "zone": "ov",
+   "correct": "4♠",
+   "why": "5 trumf og 8 hp: 4♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "5 trumps and 8 HCP: 4♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     12,
+     9,
      7,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     11,
+     7
+    ],
+    "D": [
+     6,
      2
+    ],
+    "C": [
+     12,
+     11,
+     7
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "alle",
+   "correct": "4♠",
+   "why": "5 trumf og 8 hp: 4♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "5 trumps and 8 HCP: 4♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     10,
+     9,
+     8,
+     7,
+     5
     ],
     "H": [
      14,
-     10,
-     8
+     5,
+     2
     ],
     "D": [
-     10,
-     3
+     13,
+     11,
+     7,
+     6
     ],
     "C": [
-     13,
-     10,
-     9
+     3
     ]
    },
-   "hp": 9,
-   "sp": 10,
-   "zone": "ingen",
+   "hp": 8,
+   "sp": 11,
+   "zone": "ns",
    "correct": "4♠",
-   "why": "5 trumf og 9 hp: 4♠ – støtten viser antallet af trumf (6–9).",
+   "why": "5 trumf og 8 hp: 4♠ – støtten viser antallet af trumf (6–9).",
    "en": {
-    "why": "5 trumps and 9 HCP: 4♠ – the raise shows the number of trumps (6–9)."
+    "why": "5 trumps and 8 HCP: 4♠ – the raise shows the number of trumps (6–9)."
    }
   },
   {
@@ -2702,28 +5303,28 @@
    "hand": {
     "S": [
      13,
-     12,
      10,
      9,
-     6
+     8,
+     5
     ],
     "H": [
-     11,
-     9,
+     13,
+     10,
      2
     ],
     "D": [
-     13,
-     3
+     8
     ],
     "C": [
-     5,
-     4,
-     2
+     13,
+     9,
+     6,
+     3
     ]
    },
    "hp": 9,
-   "sp": 10,
+   "sp": 12,
    "zone": "ns",
    "correct": "4♠",
    "why": "5 trumf og 9 hp: 4♠ – støtten viser antallet af trumf (6–9).",
@@ -2735,29 +5336,62 @@
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     12,
+     14,
      11,
      10,
+     9,
+     6
+    ],
+    "H": [],
+    "D": [
+     10,
+     8,
+     5,
+     3
+    ],
+    "C": [
+     12,
      7,
-     4
+     6,
+     5
+    ]
+   },
+   "hp": 7,
+   "sp": 12,
+   "zone": "ns",
+   "correct": "4♠",
+   "why": "5 trumf og 7 hp: 4♠ – støtten viser antallet af trumf (6–9).",
+   "en": {
+    "why": "5 trumps and 7 HCP: 4♠ – the raise shows the number of trumps (6–9)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     7,
+     3
     ],
     "H": [
      12,
-     7,
+     10,
      2
     ],
     "D": [
-     11,
-     6
+     10,
+     9,
+     8,
+     2
     ],
     "C": [
-     13,
-     5,
-     2
+     6
     ]
    },
    "hp": 9,
-   "sp": 10,
+   "sp": 12,
    "zone": "ingen",
    "correct": "4♠",
    "why": "5 trumf og 9 hp: 4♠ – støtten viser antallet af trumf (6–9).",
@@ -2769,41 +5403,34 @@
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     14,
-     12,
-     9,
-     7
+     13,
+     8,
+     4,
+     2
     ],
     "H": [
-     12,
-     11,
-     8
-    ],
-    "D": [
-     14,
      11,
      4
     ],
+    "D": [
+     13,
+     5,
+     4
+    ],
     "C": [
-     10,
-     9,
-     6
+     14,
+     7,
+     5,
+     4
     ]
    },
-   "hp": 14,
-   "sp": 14,
-   "zone": "ov",
+   "hp": 11,
+   "sp": 12,
+   "zone": "alle",
    "correct": "3♦",
-   "why": "4 trumf og 14 hp: overmelding i fjendens farve – støtte og 10+.",
-   "turnering": {
-    "correct": "2NT",
-    "why": "4 trumf og 14 hp: 2NT – Stenberg, firkortstøtte og udgangskrav."
-   },
+   "why": "4 trumf og 11 hp: overmelding i fjendens farve – støtte og 10+ (i Turnering præcis invit 10–12).",
    "en": {
-    "why": "4 trumps and 14 HCP: a cue-bid in the opponents' suit – support and 10+.",
-    "turnering": {
-     "why": "4 trumps and 14 HCP: 2NT – Stenberg, four-card support and game forcing."
-    }
+    "why": "4 trumps and 11 HCP: a cue-bid in the opponents' suit – support and 10+ (in Tournament exactly invitational, 10–12)."
    }
   },
   {
@@ -2811,80 +5438,115 @@
    "hand": {
     "S": [
      14,
-     11,
-     4,
+     13,
      2
     ],
     "H": [
+     7,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     12,
+     11,
      10
     ],
-    "D": [
-     13,
-     11,
-     7,
-     3
-    ],
     "C": [
-     14,
-     11,
-     10,
-     6
+     12,
+     6,
+     2
     ]
    },
-   "hp": 14,
-   "sp": 17,
-   "zone": "ns",
+   "hp": 16,
+   "sp": 16,
+   "zone": "ov",
    "correct": "3♦",
-   "why": "4 trumf og 14 hp: overmelding i fjendens farve – støtte og 10+.",
-   "turnering": {
-    "correct": "2NT",
-    "why": "4 trumf og 14 hp: 2NT – Stenberg, firkortstøtte og udgangskrav."
-   },
+   "why": "3 trumf og 16 hp: overmelding i fjendens farve – støtte og 10+.",
+   "only": [
+    "grund",
+    "klub"
+   ],
    "en": {
-    "why": "4 trumps and 14 HCP: a cue-bid in the opponents' suit – support and 10+.",
-    "turnering": {
-     "why": "4 trumps and 14 HCP: 2NT – Stenberg, four-card support and game forcing."
-    }
+    "why": "3 trumps and 16 HCP: a cue-bid in the opponents' suit – support and 10+."
    }
   },
   {
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     13,
-     9,
-     5,
-     3
+     11,
+     7,
+     2
     ],
     "H": [
-     5,
-     3
+     14,
+     6
     ],
     "D": [
-     14,
-     13,
-     7
+     11,
+     10,
+     4,
+     2
     ],
     "C": [
+     14,
      13,
      10,
-     5,
-     4
+     6
     ]
    },
    "hp": 13,
    "sp": 14,
-   "zone": "ingen",
+   "zone": "ns",
    "correct": "3♦",
-   "why": "4 trumf og 13 hp: overmelding i fjendens farve – støtte og 10+.",
+   "why": "3 trumf og 13 hp: overmelding i fjendens farve – støtte og 10+.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "3 trumps and 13 HCP: a cue-bid in the opponents' suit – support and 10+."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     14,
+     10,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     9
+    ],
+    "D": [
+     9,
+     8,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     9,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "zone": "ov",
+   "correct": "3♦",
+   "why": "4 trumf og 15 hp: overmelding i fjendens farve – støtte og 10+.",
    "turnering": {
     "correct": "2NT",
-    "why": "4 trumf og 13 hp: 2NT – Stenberg, firkortstøtte og udgangskrav."
+    "why": "4 trumf og 15 hp: 2NT – Stenberg, firkortstøtte og udgangskrav."
    },
    "en": {
-    "why": "4 trumps and 13 HCP: a cue-bid in the opponents' suit – support and 10+.",
+    "why": "4 trumps and 15 HCP: a cue-bid in the opponents' suit – support and 10+.",
     "turnering": {
-     "why": "4 trumps and 13 HCP: 2NT – Stenberg, four-card support and game forcing."
+     "why": "4 trumps and 15 HCP: 2NT – Stenberg, four-card support and game forcing."
     }
    }
   },
@@ -2892,30 +5554,30 @@
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     10,
-     7,
-     6,
-     4
+     9,
+     5,
+     3,
+     2
     ],
     "H": [
+     13,
+     5,
+     2
+    ],
+    "D": [
      13,
      12
     ],
-    "D": [
-     14,
-     9,
-     3
-    ],
     "C": [
-     13,
+     14,
      11,
-     6,
-     4
+     4,
+     2
     ]
    },
    "hp": 13,
    "sp": 14,
-   "zone": "ingen",
+   "zone": "alle",
    "correct": "3♦",
    "why": "4 trumf og 13 hp: overmelding i fjendens farve – støtte og 10+.",
    "turnering": {
@@ -2933,30 +5595,184 @@
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     13,
+     14,
+     11,
      10,
+     4
+    ],
+    "H": [
+     7
+    ],
+    "D": [
+     14,
+     11,
+     5,
+     2
+    ],
+    "C": [
+     11,
+     9,
+     8,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "zone": "ns",
+   "correct": "3♦",
+   "why": "4 trumf og 11 hp: overmelding i fjendens farve – støtte og 10+ (i Turnering præcis invit 10–12).",
+   "en": {
+    "why": "4 trumps and 11 HCP: a cue-bid in the opponents' suit – support and 10+ (in Tournament exactly invitational, 10–12)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     13,
+     12,
      7,
      3
     ],
     "H": [
-     14,
-     2
+     12,
+     9,
+     4
     ],
     "D": [
-     11,
      8,
-     7,
      4
     ],
     "C": [
+     14,
      12,
+     6,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "zone": "ov",
+   "correct": "3♦",
+   "why": "4 trumf og 13 hp: overmelding i fjendens farve – støtte og 10+.",
+   "turnering": {
+    "correct": "2NT",
+    "why": "4 trumf og 13 hp: 2NT – Stenberg, firkortstøtte og udgangskrav."
+   },
+   "en": {
+    "why": "4 trumps and 13 HCP: a cue-bid in the opponents' suit – support and 10+.",
+    "turnering": {
+     "why": "4 trumps and 13 HCP: 2NT – Stenberg, four-card support and game forcing."
+    }
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     14,
+     7,
      4,
+     2
+    ],
+    "H": [
+     14,
+     8
+    ],
+    "D": [
+     13,
+     12,
+     7,
+     5
+    ],
+    "C": [
+     5,
+     3,
+     2
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "zone": "ov",
+   "correct": "3♦",
+   "why": "4 trumf og 13 hp: overmelding i fjendens farve – støtte og 10+.",
+   "turnering": {
+    "correct": "2NT",
+    "why": "4 trumf og 13 hp: 2NT – Stenberg, firkortstøtte og udgangskrav."
+   },
+   "en": {
+    "why": "4 trumps and 13 HCP: a cue-bid in the opponents' suit – support and 10+.",
+    "turnering": {
+     "why": "4 trumps and 13 HCP: 2NT – Stenberg, four-card support and game forcing."
+    }
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     9,
+     7,
+     4
+    ],
+    "H": [
+     14,
+     7
+    ],
+    "D": [
+     12,
+     11,
+     8,
+     6
+    ],
+    "C": [
+     13,
+     12,
+     11,
+     7
+    ]
+   },
+   "hp": 13,
+   "sp": 14,
+   "zone": "ns",
+   "correct": "3♦",
+   "why": "3 trumf og 13 hp: overmelding i fjendens farve – støtte og 10+.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "3 trumps and 13 HCP: a cue-bid in the opponents' suit – support and 10+."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     12,
+     11,
+     6,
+     4
+    ],
+    "H": [
+     12,
+     10,
+     5
+    ],
+    "D": [
+     13,
+     11,
+     8,
      3
+    ],
+    "C": [
+     11,
+     5
     ]
    },
    "hp": 10,
    "sp": 11,
-   "zone": "ingen",
+   "zone": "alle",
    "correct": "3♦",
    "why": "4 trumf og 10 hp: overmelding i fjendens farve – støtte og 10+ (i Turnering præcis invit 10–12).",
    "en": {
@@ -2968,194 +5784,167 @@
    "hand": {
     "S": [
      14,
-     11,
-     7,
-     6
-    ],
-    "H": [
-     14,
-     12,
-     8
-    ],
-    "D": [
-     7,
-     4
-    ],
-    "C": [
-     11,
-     7,
-     5,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "zone": "ns",
-   "correct": "3♦",
-   "why": "4 trumf og 12 hp: overmelding i fjendens farve – støtte og 10+ (i Turnering præcis invit 10–12).",
-   "en": {
-    "why": "4 trumps and 12 HCP: a cue-bid in the opponents' suit – support and 10+ (in Tournament exactly invitational, 10–12)."
-   }
-  },
-  {
-   "situation": "off_sp_ru",
-   "hand": {
-    "S": [
-     14,
-     12,
-     9
-    ],
-    "H": [
-     5,
-     4
-    ],
-    "D": [
-     9,
-     7,
-     6,
-     3
-    ],
-    "C": [
-     14,
-     12,
-     9,
-     7
-    ]
-   },
-   "hp": 12,
-   "sp": 13,
-   "zone": "alle",
-   "correct": "3♦",
-   "why": "3 trumf og 12 hp: overmelding i fjendens farve – støtte og 10+ (i Turnering præcis invit 10–12).",
-   "en": {
-    "why": "3 trumps and 12 HCP: a cue-bid in the opponents' suit – support and 10+ (in Tournament exactly invitational, 10–12)."
-   }
-  },
-  {
-   "situation": "off_sp_ru",
-   "hand": {
-    "S": [
-     12,
-     10
-    ],
-    "H": [
-     12,
-     9,
-     4,
-     2
-    ],
-    "D": [
-     12,
-     11,
-     7,
-     6
-    ],
-    "C": [
      13,
-     8,
-     3
-    ]
-   },
-   "hp": 10,
-   "sp": 11,
-   "zone": "ns",
-   "correct": "X",
-   "why": "4 hjerter og 10 hp: negativ dobling.",
-   "en": {
-    "why": "4 hearts and 10 HCP: negative double."
-   }
-  },
-  {
-   "situation": "off_sp_ru",
-   "hand": {
-    "S": [
-     14,
-     3
+     9,
+     4
     ],
     "H": [
+     14,
+     2
+    ],
+    "D": [
+     12,
+     3,
+     2
+    ],
+    "C": [
      10,
-     9,
-     4,
+     8,
+     7,
      3
-    ],
-    "D": [
-     12,
-     6,
-     4,
-     2
-    ],
-    "C": [
-     12,
-     11,
-     5
     ]
    },
-   "hp": 9,
-   "sp": 10,
+   "hp": 13,
+   "sp": 14,
    "zone": "ns",
-   "correct": "X",
-   "why": "4 hjerter og 9 hp: negativ dobling.",
+   "correct": "3♦",
+   "why": "4 trumf og 13 hp: overmelding i fjendens farve – støtte og 10+.",
+   "turnering": {
+    "correct": "2NT",
+    "why": "4 trumf og 13 hp: 2NT – Stenberg, firkortstøtte og udgangskrav."
+   },
    "en": {
-    "why": "4 hearts and 9 HCP: negative double."
+    "why": "4 trumps and 13 HCP: a cue-bid in the opponents' suit – support and 10+.",
+    "turnering": {
+     "why": "4 trumps and 13 HCP: 2NT – Stenberg, four-card support and game forcing."
+    }
    }
   },
   {
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     13,
-     11
+     14,
+     11,
+     7,
+     5
     ],
     "H": [
-     9,
-     6,
+     8,
      3,
      2
     ],
     "D": [
-     14,
-     11,
-     7,
-     6
+     13,
+     9,
+     5,
+     3
     ],
     "C": [
-     10,
-     4,
-     2
+     13,
+     8
     ]
    },
-   "hp": 9,
-   "sp": 10,
-   "zone": "ingen",
-   "correct": "X",
-   "why": "4 hjerter og 9 hp: negativ dobling.",
+   "hp": 11,
+   "sp": 12,
+   "zone": "ov",
+   "correct": "3♦",
+   "why": "4 trumf og 11 hp: overmelding i fjendens farve – støtte og 10+ (i Turnering præcis invit 10–12).",
    "en": {
-    "why": "4 hearts and 9 HCP: negative double."
+    "why": "4 trumps and 11 HCP: a cue-bid in the opponents' suit – support and 10+ (in Tournament exactly invitational, 10–12)."
    }
   },
   {
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     10
+     11,
+     8,
+     7
     ],
     "H": [
+     14,
      10,
-     6,
-     5,
-     4
+     2
     ],
     "D": [
-     14,
      13,
+     12,
+     3
+    ],
+    "C": [
+     11,
+     10,
+     5,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
+   "zone": "ov",
+   "correct": "3♦",
+   "why": "3 trumf og 11 hp: overmelding i fjendens farve – støtte og 10+ (i Turnering præcis invit 10–12).",
+   "en": {
+    "why": "3 trumps and 11 HCP: a cue-bid in the opponents' suit – support and 10+ (in Tournament exactly invitational, 10–12)."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     12,
+     11,
      7,
      2
     ],
+    "D": [
+     14,
+     5,
+     4,
+     2
+    ],
     "C": [
+     14,
+     11,
+     5,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "4 hjerter og 12 hp: negativ dobling.",
+   "en": {
+    "why": "4 hearts and 12 HCP: negative double."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
      13,
      11,
      9,
      8
+    ],
+    "D": [
+     14,
+     11,
+     9,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     6,
+     2
     ]
    },
    "hp": 11,
@@ -3171,30 +5960,30 @@
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     14,
-     10
+     7,
+     6
     ],
     "H": [
-     11,
-     10,
-     4,
+     14,
+     13,
+     5,
      3
     ],
     "D": [
-     11,
-     4,
-     3
+     13,
+     7,
+     5,
+     4
     ],
     "C": [
-     13,
-     12,
-     8,
-     5
+     11,
+     5,
+     3
     ]
    },
    "hp": 11,
    "sp": 12,
-   "zone": "alle",
+   "zone": "ingen",
    "correct": "X",
    "why": "4 hjerter og 11 hp: negativ dobling.",
    "en": {
@@ -3205,29 +5994,97 @@
    "situation": "off_sp_ru",
    "hand": {
     "S": [
+     14,
      13
     ],
     "H": [
      9,
-     6,
-     4,
+     8,
+     5,
      2
     ],
     "D": [
+     8,
+     5,
+     2
+    ],
+    "C": [
+     13,
+     10,
+     5,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "alle",
+   "correct": "X",
+   "why": "4 hjerter og 10 hp: negativ dobling.",
+   "en": {
+    "why": "4 hearts and 10 HCP: negative double."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     10
+    ],
+    "H": [
+     13,
+     9,
+     5,
+     4
+    ],
+    "D": [
+     14,
      12,
-     11,
-     7,
-     6
+     3,
+     2
     ],
     "C": [
      12,
-     9,
+     11,
      5,
      3
     ]
    },
+   "hp": 12,
+   "sp": 15,
+   "zone": "alle",
+   "correct": "X",
+   "why": "4 hjerter og 12 hp: negativ dobling.",
+   "en": {
+    "why": "4 hearts and 12 HCP: negative double."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     9,
+     6
+    ],
+    "H": [
+     12,
+     10,
+     4,
+     2
+    ],
+    "D": [
+     11,
+     10,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     4,
+     3
+    ]
+   },
    "hp": 8,
-   "sp": 11,
+   "sp": 9,
    "zone": "alle",
    "correct": "X",
    "why": "4 hjerter og 8 hp: negativ dobling.",
@@ -3239,30 +6096,30 @@
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     13,
-     5
+     4
     ],
     "H": [
-     14,
-     11,
-     9,
-     6
+     13,
+     10,
+     6,
+     4
     ],
     "D": [
-     8,
-     3,
+     11,
+     10,
+     6,
      2
     ],
     "C": [
-     12,
-     11,
-     9,
-     3
+     14,
+     13,
+     7,
+     2
     ]
    },
    "hp": 11,
-   "sp": 12,
-   "zone": "ns",
+   "sp": 14,
+   "zone": "ingen",
    "correct": "X",
    "why": "4 hjerter og 11 hp: negativ dobling.",
    "en": {
@@ -3273,25 +6130,267 @@
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     10,
-     2
+     8,
+     3
     ],
     "H": [
-     13,
-     5,
-     4
+     14,
+     12,
+     6,
+     5
     ],
     "D": [
+     10,
+     6,
+     4
+    ],
+    "C": [
+     13,
      12,
+     11,
+     9
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "zone": "ingen",
+   "correct": "X",
+   "why": "4 hjerter og 12 hp: negativ dobling.",
+   "en": {
+    "why": "4 hearts and 12 HCP: negative double."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     8,
+     5
+    ],
+    "H": [
+     14,
+     9,
      5,
+     2
+    ],
+    "D": [
+     13,
+     9,
+     6,
+     3
+    ],
+    "C": [
+     12,
      4,
+     2
+    ]
+   },
+   "hp": 9,
+   "sp": 10,
+   "zone": "alle",
+   "correct": "X",
+   "why": "4 hjerter og 9 hp: negativ dobling.",
+   "en": {
+    "why": "4 hearts and 9 HCP: negative double."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     9,
+     3
+    ],
+    "H": [
+     12,
+     9,
+     4,
+     3
+    ],
+    "D": [
+     10,
+     7,
+     5,
      3
     ],
     "C": [
      14,
      12,
-     10,
      5
+    ]
+   },
+   "hp": 8,
+   "sp": 9,
+   "zone": "ov",
+   "correct": "X",
+   "why": "4 hjerter og 8 hp: negativ dobling.",
+   "en": {
+    "why": "4 hearts and 8 HCP: negative double."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     11,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     10,
+     5,
+     3
+    ],
+    "C": [
+     12,
+     11,
+     6,
+     3
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "zone": "ov",
+   "correct": "X",
+   "why": "4 hjerter og 8 hp: negativ dobling.",
+   "en": {
+    "why": "4 hearts and 8 HCP: negative double."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     5
+    ],
+    "H": [
+     14,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     8,
+     2
+    ],
+    "C": [
+     12,
+     11,
+     7,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "zone": "alle",
+   "correct": "X",
+   "why": "4 hjerter og 12 hp: negativ dobling.",
+   "en": {
+    "why": "4 hearts and 12 HCP: negative double."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     13,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     13,
+     6,
+     5,
+     2
+    ],
+    "C": [
+     12,
+     10,
+     8,
+     4
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "X",
+   "why": "4 hjerter og 8 hp: negativ dobling.",
+   "en": {
+    "why": "4 hearts and 8 HCP: negative double."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     9,
+     6
+    ],
+    "H": [
+     12,
+     5,
+     2
+    ],
+    "D": [
+     13,
+     9,
+     5,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     6,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "zone": "ingen",
+   "correct": "2NT",
+   "why": "12 hp og hold i ruder: 2NT – naturlig invit.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "12 HCP and a stopper in diamonds: 2NT – a natural invitation."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     9,
+     8
+    ],
+    "H": [
+     10,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     7,
+     3
     ]
    },
    "hp": 11,
@@ -3311,25 +6410,253 @@
    "situation": "off_sp_ru",
    "hand": {
     "S": [
+     9,
+     3
+    ],
+    "H": [
      7,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     12,
+     11,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "alle",
+   "correct": "2NT",
+   "why": "11 hp og hold i ruder: 2NT – naturlig invit.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "11 HCP and a stopper in diamonds: 2NT – a natural invitation."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     10,
      4
     ],
     "H": [
      14,
      13,
-     8
+     7
+    ],
+    "D": [
+     14,
+     9,
+     6,
+     4
+    ],
+    "C": [
+     11,
+     9,
+     6,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "zone": "ingen",
+   "correct": "2NT",
+   "why": "12 hp og hold i ruder: 2NT – naturlig invit.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "12 HCP and a stopper in diamonds: 2NT – a natural invitation."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     14,
+     5
+    ],
+    "H": [
+     10,
+     8,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     6
+    ],
+    "C": [
+     10,
+     9,
+     6,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "ingen",
+   "correct": "2NT",
+   "why": "11 hp og hold i ruder: 2NT – naturlig invit.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "11 HCP and a stopper in diamonds: 2NT – a natural invitation."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     11,
+     3
+    ],
+    "H": [
+     14,
+     10,
+     6
+    ],
+    "D": [
+     13,
+     12,
+     3,
+     2
+    ],
+    "C": [
+     11,
+     9,
+     5,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "ov",
+   "correct": "2NT",
+   "why": "11 hp og hold i ruder: 2NT – naturlig invit.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "11 HCP and a stopper in diamonds: 2NT – a natural invitation."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     14,
+     11
+    ],
+    "H": [
+     8,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     11,
+     4
+    ],
+    "C": [
+     9,
+     7,
+     4,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 12,
+   "zone": "alle",
+   "correct": "2NT",
+   "why": "11 hp og hold i ruder: 2NT – naturlig invit.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "11 HCP and a stopper in diamonds: 2NT – a natural invitation."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     13,
+     11
+    ],
+    "H": [
+     12,
+     10,
+     6
     ],
     "D": [
      11,
      10,
-     9,
-     8
+     8,
+     5
     ],
     "C": [
+     13,
+     6,
+     5,
+     3
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "2NT",
+   "why": "10 hp og hold i ruder: 2NT – naturlig invit.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "10 HCP and a stopper in diamonds: 2NT – a natural invitation."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
      14,
+     7
+    ],
+    "H": [
      10,
-     8,
-     4
+     6,
+     5
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     9
+    ],
+    "C": [
+     10,
+     7,
+     5,
+     3
     ]
    },
    "hp": 12,
@@ -3349,30 +6676,30 @@
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     12,
-     6
+     14,
+     9
     ],
     "H": [
-     11,
      9,
-     5
+     6,
+     3
     ],
     "D": [
+     13,
+     12,
      11,
-     8,
-     6,
-     4
+     9
     ],
     "C": [
-     14,
-     12,
      10,
-     3
+     7,
+     5,
+     2
     ]
    },
    "hp": 10,
    "sp": 11,
-   "zone": "ov",
+   "zone": "ns",
    "correct": "2NT",
    "why": "10 hp og hold i ruder: 2NT – naturlig invit.",
    "only": [
@@ -3387,250 +6714,144 @@
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     11,
-     7
-    ],
-    "H": [
-     13,
-     10,
-     6
-    ],
-    "D": [
-     14,
-     13,
-     3,
+     6,
      2
     ],
-    "C": [
+    "H": [
      7,
-     6,
-     5,
-     2
-    ]
-   },
-   "hp": 11,
-   "sp": 12,
-   "zone": "ingen",
-   "correct": "2NT",
-   "why": "11 hp og hold i ruder: 2NT – naturlig invit.",
-   "only": [
-    "grund",
-    "klub"
-   ],
-   "en": {
-    "why": "11 HCP and a stopper in diamonds: 2NT – a natural invitation."
-   }
-  },
-  {
-   "situation": "off_sp_ru",
-   "hand": {
-    "S": [
-     11,
-     3
-    ],
-    "H": [
-     14,
-     6,
-     5
-    ],
-    "D": [
-     14,
-     8,
      5,
      4
     ],
-    "C": [
-     12,
-     10,
-     9,
-     7
-    ]
-   },
-   "hp": 11,
-   "sp": 12,
-   "zone": "ingen",
-   "correct": "2NT",
-   "why": "11 hp og hold i ruder: 2NT – naturlig invit.",
-   "only": [
-    "grund",
-    "klub"
-   ],
-   "en": {
-    "why": "11 HCP and a stopper in diamonds: 2NT – a natural invitation."
-   }
-  },
-  {
-   "situation": "off_sp_ru",
-   "hand": {
-    "S": [
-     14,
-     10
-    ],
-    "H": [
-     9,
-     8,
-     5
-    ],
     "D": [
-     12,
-     7,
+     14,
+     11,
      6,
-     3
+     2
     ],
     "C": [
      14,
-     11,
-     9,
-     3
-    ]
-   },
-   "hp": 11,
-   "sp": 12,
-   "zone": "ov",
-   "correct": "2NT",
-   "why": "11 hp og hold i ruder: 2NT – naturlig invit.",
-   "only": [
-    "grund",
-    "klub"
-   ],
-   "en": {
-    "why": "11 HCP and a stopper in diamonds: 2NT – a natural invitation."
-   }
-  },
-  {
-   "situation": "off_sp_ru",
-   "hand": {
-    "S": [
-     12,
-     2
-    ],
-    "H": [
-     11,
-     7,
-     3
-    ],
-    "D": [
-     12,
-     10,
-     8,
-     6
-    ],
-    "C": [
      13,
-     12,
-     11,
-     2
+     10,
+     4
     ]
    },
-   "hp": 11,
-   "sp": 12,
+   "hp": 12,
+   "sp": 13,
    "zone": "ingen",
    "correct": "2NT",
-   "why": "11 hp og hold i ruder: 2NT – naturlig invit.",
+   "why": "12 hp og hold i ruder: 2NT – naturlig invit.",
    "only": [
     "grund",
     "klub"
    ],
    "en": {
-    "why": "11 HCP and a stopper in diamonds: 2NT – a natural invitation."
+    "why": "12 HCP and a stopper in diamonds: 2NT – a natural invitation."
    }
   },
   {
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     12,
+     9,
      8
     ],
     "H": [
      10,
-     7,
-     5
+     9,
+     4
     ],
     "D": [
-     11,
-     10,
-     7,
-     5
+     14,
+     13,
+     5,
+     2
     ],
     "C": [
-     10,
-     9,
+     12,
+     11,
+     3,
+     2
+    ]
+   },
+   "hp": 10,
+   "sp": 11,
+   "zone": "ns",
+   "correct": "2NT",
+   "why": "10 hp og hold i ruder: 2NT – naturlig invit.",
+   "only": [
+    "grund",
+    "klub"
+   ],
+   "en": {
+    "why": "10 HCP and a stopper in diamonds: 2NT – a natural invitation."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     14,
+     4
+    ],
+    "H": [
+     12,
+     7,
+     2
+    ],
+    "D": [
+     14,
+     8,
+     5,
+     3
+    ],
+    "C": [
+     11,
+     8,
      5,
      3
     ]
    },
-   "hp": 3,
-   "sp": 4,
-   "zone": "ov",
-   "correct": "Pas",
-   "why": "3 hp: pas.",
+   "hp": 11,
+   "sp": 12,
+   "zone": "ns",
+   "correct": "2NT",
+   "why": "11 hp og hold i ruder: 2NT – naturlig invit.",
+   "only": [
+    "grund",
+    "klub"
+   ],
    "en": {
-    "why": "3 HCP: pass."
+    "why": "11 HCP and a stopper in diamonds: 2NT – a natural invitation."
    }
   },
   {
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     12,
-     11
-    ],
-    "H": [
-     11,
-     10,
-     4
-    ],
-    "D": [
-     11,
-     10,
-     9,
-     5
-    ],
-    "C": [
-     10,
-     9,
      5,
      2
-    ]
-   },
-   "hp": 5,
-   "sp": 6,
-   "zone": "ov",
-   "correct": "Pas",
-   "why": "5 hp: pas.",
-   "en": {
-    "why": "5 HCP: pass."
-   }
-  },
-  {
-   "situation": "off_sp_ru",
-   "hand": {
-    "S": [
-     11,
-     6
     ],
     "H": [
-     9,
-     8,
-     5
+     10,
+     7,
+     4
     ],
     "D": [
-     10,
+     11,
+     9,
      8,
-     6,
-     5
+     4
     ],
     "C": [
      10,
-     7,
-     5,
-     4
+     8,
+     4,
+     2
     ]
    },
    "hp": 1,
    "sp": 2,
-   "zone": "ns",
+   "zone": "ingen",
    "correct": "Pas",
    "why": "1 hp: pas.",
    "en": {
@@ -3641,24 +6862,262 @@
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     10,
-     5
+     11,
+     2
     ],
     "H": [
-     9,
-     8,
-     7
+     7,
+     5,
+     3
     ],
     "D": [
-     14,
+     12,
+     7,
+     3,
+     2
+    ],
+    "C": [
+     12,
      6,
+     4,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "5 hp: pas.",
+   "en": {
+    "why": "5 HCP: pass."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     8,
+     4
+    ],
+    "H": [
+     10,
+     4,
+     2
+    ],
+    "D": [
+     9,
+     5,
+     4,
+     3
+    ],
+    "C": [
+     13,
+     8,
+     6,
+     5
+    ]
+   },
+   "hp": 3,
+   "sp": 4,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "3 hp: pas.",
+   "en": {
+    "why": "3 HCP: pass."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     8,
+     2
+    ],
+    "H": [
+     12,
+     7,
+     2
+    ],
+    "D": [
+     10,
+     5,
      4,
      2
     ],
     "C": [
+     9,
+     8,
+     7,
+     3
+    ]
+   },
+   "hp": 2,
+   "sp": 3,
+   "zone": "ns",
+   "correct": "Pas",
+   "why": "2 hp: pas.",
+   "en": {
+    "why": "2 HCP: pass."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     10,
+     9
+    ],
+    "H": [
+     8,
+     6,
+     2
+    ],
+    "D": [
+     11,
+     10,
+     8,
+     4
+    ],
+    "C": [
+     10,
+     9,
+     7,
+     4
+    ]
+   },
+   "hp": 1,
+   "sp": 2,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "1 hp: pas.",
+   "en": {
+    "why": "1 HCP: pass."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     6,
+     5
+    ],
+    "H": [
+     13,
+     11,
+     6
+    ],
+    "D": [
+     9,
+     7,
+     4,
+     2
+    ],
+    "C": [
+     10,
+     7,
+     3,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "4 hp: pas.",
+   "en": {
+    "why": "4 HCP: pass."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     11,
+     9
+    ],
+    "H": [
+     9,
+     5,
+     4
+    ],
+    "D": [
+     11,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     9,
+     3,
+     2
+    ]
+   },
+   "hp": 4,
+   "sp": 5,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "4 hp: pas.",
+   "en": {
+    "why": "4 HCP: pass."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     5,
+     4
+    ],
+    "H": [
      11,
      8,
+     2
+    ],
+    "D": [
+     14,
+     5,
      4,
+     2
+    ],
+    "C": [
+     8,
+     7,
+     5,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "zone": "alle",
+   "correct": "Pas",
+   "why": "5 hp: pas.",
+   "en": {
+    "why": "5 HCP: pass."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     10,
+     4
+    ],
+    "H": [
+     4,
+     3,
+     2
+    ],
+    "D": [
+     11,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     8,
+     7,
      2
     ]
    },
@@ -3675,98 +7134,132 @@
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     7,
+     11,
      6
     ],
     "H": [
-     7,
-     5,
-     2
-    ],
-    "D": [
-     7,
-     6,
+     9,
      5,
      4
     ],
-    "C": [
+    "D": [
+     11,
+     9,
      8,
-     7,
-     4,
-     3
+     4
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     8
     ]
    },
-   "hp": 0,
-   "sp": 1,
+   "hp": 5,
+   "sp": 6,
    "zone": "ingen",
    "correct": "Pas",
-   "why": "0 hp: pas.",
+   "why": "5 hp: pas.",
    "en": {
-    "why": "0 HCP: pass."
+    "why": "5 HCP: pass."
    }
   },
   {
    "situation": "off_sp_ru",
    "hand": {
     "S": [
-     8,
+     12,
      7
     ],
     "H": [
+     11,
+     10,
+     8
+    ],
+    "D": [
+     7,
+     5,
+     4,
+     2
+    ],
+    "C": [
+     12,
+     8,
+     6,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "zone": "ingen",
+   "correct": "Pas",
+   "why": "5 hp: pas.",
+   "en": {
+    "why": "5 HCP: pass."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     7,
+     2
+    ],
+    "H": [
+     14,
+     10,
+     7
+    ],
+    "D": [
+     9,
      7,
      6,
      5
     ],
-    "D": [
-     13,
+    "C": [
+     11,
+     6,
      5,
-     3,
+     3
+    ]
+   },
+   "hp": 5,
+   "sp": 6,
+   "zone": "ov",
+   "correct": "Pas",
+   "why": "5 hp: pas.",
+   "en": {
+    "why": "5 HCP: pass."
+   }
+  },
+  {
+   "situation": "off_sp_ru",
+   "hand": {
+    "S": [
+     12,
      2
+    ],
+    "H": [
+     7,
+     4,
+     2
+    ],
+    "D": [
+     11,
+     9,
+     8,
+     4
     ],
     "C": [
      11,
      9,
      4,
-     2
+     3
     ]
    },
    "hp": 4,
    "sp": 5,
-   "zone": "ns",
-   "correct": "Pas",
-   "why": "4 hp: pas.",
-   "en": {
-    "why": "4 HCP: pass."
-   }
-  },
-  {
-   "situation": "off_sp_ru",
-   "hand": {
-    "S": [
-     9,
-     2
-    ],
-    "H": [
-     10,
-     7,
-     2
-    ],
-    "D": [
-     10,
-     7,
-     6,
-     2
-    ],
-    "C": [
-     14,
-     9,
-     5,
-     4
-    ]
-   },
-   "hp": 4,
-   "sp": 5,
-   "zone": "ns",
+   "zone": "ov",
    "correct": "Pas",
    "why": "4 hp: pas.",
    "en": {

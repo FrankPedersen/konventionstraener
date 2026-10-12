@@ -28,7 +28,7 @@ Spilfører er Syd, bordet Nord, du Øst (giv) eller Vest (læs). Kontrakten er 4
 """
 import random
 
-from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, export, tx, Tx
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, export, targets, tx, Tx
 
 ORDEN = {'S': 4, 'H': 3, 'D': 2, 'C': 1}
 RN = {14: 'E', 13: 'K', 12: 'D', 11: 'B'}
@@ -571,21 +571,23 @@ SITUATIONER = {
 }
 GEN = {"es_kald": es_kald, "k_antal": k_antal, "ny_farve_antal": ny_farve_antal, "afkast_farve": afkast_farve,
        "afkast_sans": afkast_sans, "ruff_retur": ruff_retur, "doed_udspil": doed_udspil, "lav_afkast": lav_afkast}
-PER = 12   # hænder pr. situation og øvelsestype
+PER = 12   # hænder pr. situation og øvelsestype – plus puljens andel af core.EKSTRA
 
 def exporter(pool):
     def export_pool(path):
         hands = []
+        want = targets([((sit, mode), PER) for sit in SITUATIONER[pool] for mode in ('giv', 'laes')])
         for sit in SITUATIONER[pool]:
             for mode in ('giv', 'laes'):
+                n = want[(sit, mode)]
                 made = tries = 0
-                while made < PER and tries < 300000:
+                while made < n and tries < 600000:
                     tries += 1
                     r = GEN[sit](deal(), mode)
                     if r:
                         hands.append(r)
                         made += 1
-                if made < PER:
-                    print(f"Advarsel: kun {made}/{PER} hænder til {sit} {mode}")
+                if made < n:
+                    print(f"Advarsel: kun {made}/{n} hænder til {sit} {mode}")
         return export(path, SITUATIONER[pool], hands)
     return export_pool

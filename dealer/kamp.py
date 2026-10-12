@@ -10,7 +10,7 @@ Forskelle fra core.build_pool:
       grund / turnering: {"correct", "why"} – afvigende facit i den profil (fx Stenberg, Lebensohl)
 """
 import random
-from .core import SUITS, export
+from .core import SUITS, export, targets
 
 ZONES = ["ingen", "ns", "ov", "alle"]
 
@@ -25,10 +25,12 @@ def zone_word(zone):
 
 def build_pool(path, situations, classifiers, samplers, per_call):
     hands, seen = [], set()
-    for situation, n in per_call.items():
+    want = targets([((s, c), n) for s, n in per_call.items() for c in samplers[s]])
+    for situation in per_call:
         for call, sampler in samplers[situation].items():
+            n = want[(situation, call)]
             made = tries = 0
-            while made < n and tries < 20000:
+            while made < n and tries < 40000:
                 tries += 1
                 r = sampler()
                 if not r:

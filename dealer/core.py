@@ -165,14 +165,33 @@ def export(path, situations, hands):
         counts[h["situation"]] = counts.get(h["situation"], 0) + 1
     return counts
 
+# Hver pulje får EKSTRA hænder ud over modulernes PER_CALL, fordelt forholdsmæssigt på situationer og meldinger
+EKSTRA = 100
+
+def targets(slots, extra=None):
+    """slots: [(nøgle, antal)] → {nøgle: antal + sin andel af EKSTRA}. Største rest-metoden, så puljen får præcis
+    EKSTRA hænder mere."""
+    extra = EKSTRA if extra is None else extra
+    total = sum(n for _, n in slots)
+    if not total:
+        return dict(slots)
+    shares = [(k, n, extra * n / total) for k, n in slots]
+    out = {k: n + int(s) for k, n, s in shares}
+    rest = extra - sum(int(s) for _, _, s in shares)
+    for k, _, _ in sorted(shares, key=lambda x: x[2] - int(x[2]), reverse=True)[:rest]:
+        out[k] += 1
+    return out
+
 def build_pool(path, situations, classifiers, samplers, per_call):
-    """Draw hands per target call until each call has per_call[situation] distinct hands whose
-    classifier agrees with the target, then write the pool file."""
+    """Draw hands per target call until each call has its target number of distinct hands (per_call[situation]
+    plus its share of EKSTRA) whose classifier agrees with the target, then write the pool file."""
     hands, seen = [], set()
-    for situation, n in per_call.items():
+    want = targets([((s, c), n) for s, n in per_call.items() for c in samplers[s]])
+    for situation in per_call:
         for call, sampler in samplers[situation].items():
+            n = want[(situation, call)]
             made = tries = 0
-            while made < n and tries < 20000:
+            while made < n and tries < 40000:
                 tries += 1
                 r = sampler()
                 if not r:
