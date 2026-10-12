@@ -67,6 +67,11 @@ main{ flex:1 1 620px; min-width:0; background:var(--sg-canvas); border-radius:va
 .doc td{ padding:var(--sg-space-md) var(--sg-space-lg); border-bottom:1px solid var(--sg-canvas-soft); vertical-align:top; }
 .doc td strong{ font-weight:600; color:var(--sg-ink); }
 .doc td em{ color:var(--sg-body); }
+/* svarskemaer: åbnercellen strækker sig over sine rækker (rowspan), og en ny åbnergruppe får en streg over sig */
+.doc tr.gruppe > td{ border-top:2px solid var(--sg-mute); }
+/* markeringer: én kolonne pr. kontrakttype; en regel, der gælder begge, strækker sig over begge kolonner (colspan) */
+.doc table.kontrakttype th:nth-child(n+2), .doc table.kontrakttype td:nth-child(n+2):not([colspan]){ min-width:11rem; }
+.doc table.kontrakttype th:nth-child(3), .doc table.kontrakttype td:nth-child(3){ border-left:1px solid var(--sg-hairline); }
 /* enkeltcellede noter */
 .doc table:not(:has(thead)) td{ background:var(--sg-canvas-soft); border:0; border-radius:var(--sg-radius-md); padding:var(--sg-space-md) var(--sg-space-lg); font-size:.875rem; line-height:1.6; color:var(--sg-body); }
 .doc table:not(:has(thead)) td em{ font-style:normal; }

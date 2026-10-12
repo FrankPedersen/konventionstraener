@@ -86,7 +86,25 @@
   }
 
   function table(n) {
-    const rows = [...n.querySelectorAll('tr')].map(tr => [...tr.children].filter(c => c.tagName === 'TH' || c.tagName === 'TD'));
+    // Celler med rowspan (fx åbnercellen i systemkortets skemaer) fylder også rækkerne under; dér står en tom celle.
+    // Celler med colspan (fx en regel, der gælder både mod farve og sans) gentages i hver kolonne, de dækker.
+    const hold = [];
+    const rows = [...n.querySelectorAll('tr')].map(tr => {
+      const line = [];
+      let i = 0;
+      const skip = () => { while (hold[i] > 0) { hold[i]--; line[i++] = null; } };
+      [...tr.children].filter(c => c.tagName === 'TH' || c.tagName === 'TD').forEach(c => {
+        skip();
+        const span = +c.getAttribute('rowspan') || 1, cols = +c.getAttribute('colspan') || 1;
+        for (let k = 0; k < cols; k++) {
+          line[i] = c;
+          if (span > 1) hold[i] = span - 1;
+          i++;
+        }
+      });
+      for (; i < hold.length; i++) if (hold[i] > 0) { hold[i]--; line[i] = null; }
+      return line;
+    });
     if (!rows.length) return '';
     if (rows.length === 1 && rows[0].length === 1) return '> ' + cell(rows[0][0]).replace(/<br>/g, '\n> ') + '\n\n';
     const width = Math.max(...rows.map(r => r.length));
