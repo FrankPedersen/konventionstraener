@@ -69,15 +69,17 @@ main{ flex:1 1 620px; min-width:0; background:var(--sg-canvas); border-radius:va
 .doc td em{ color:var(--sg-body); }
 /* svarskemaer: åbnercellen strækker sig over sine rækker (rowspan), og en ny åbnergruppe får en streg over sig */
 .doc tr.gruppe > td{ border-top:2px solid var(--sg-mute); }
-/* markeringer: én kolonne pr. kontrakttype med streg imellem; en regel, der gælder begge, strækker sig over begge
-   kolonner (colspan), står centreret og får mærket »Mod farve og sans« */
+/* markeringer: kolonnerne »Mod farve og sans«, »Mod farvekontrakt« og »Mod sanskontrakt« med streg imellem;
+   en tom celle (–) er dæmpet. På smalle skærme kan tabellen rulles vandret. */
 .doc table.kontrakttype{ display:table; table-layout:fixed; }
-.doc table.kontrakttype th:first-child{ width:30%; }
+.doc table.kontrakttype th:first-child{ width:28%; }
 .doc table.kontrakttype th:nth-child(n+2), .doc table.kontrakttype td:nth-child(n+2){ border-left:2px solid var(--sg-hairline); }
 .doc table.kontrakttype th:nth-child(n+2){ color:var(--sg-ink); font-size:.8125rem; }
-.doc table.kontrakttype td[colspan]{ text-align:center; }
-.doc table.kontrakttype td[colspan]::before{ content:"Mod farve og sans"; display:block; width:max-content; margin:0 auto var(--sg-space-xs);
-  padding:1px var(--sg-space-sm); border-radius:var(--sg-radius-pill); background:var(--sg-canvas-soft); color:var(--sg-body); font-size:.6875rem; font-weight:600; }
+.doc table.kontrakttype td.tom{ color:var(--sg-mute); }
+@media (max-width:700px){
+  .doc table.kontrakttype{ display:block; table-layout:auto; }
+  .doc table.kontrakttype th, .doc table.kontrakttype td{ min-width:9rem; }
+}
 /* enkeltcellede noter */
 .doc table:not(:has(thead)) td{ background:var(--sg-canvas-soft); border:0; border-radius:var(--sg-radius-md); padding:var(--sg-space-md) var(--sg-space-lg); font-size:.875rem; line-height:1.6; color:var(--sg-body); }
 .doc table:not(:has(thead)) td em{ font-style:normal; }
