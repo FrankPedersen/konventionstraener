@@ -1,0 +1,88 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "ff-gerber",
+  "navn": "Gerber og sansstigen",
+  "undertitel": "Sanstrinnene over 1NT og esspørgsmålet 4♣",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 11 og 11a · træneren pools/ff-gerber.json",
+  "kategori": "svar",
+  "noegle": "brun",
+  "formaal": "At vælge det rigtige sanstrin med en jævn hånd og at spørge efter esser og konger, før der meldes slem i sans.",
+  "situation": {
+    "auction": [["Makker", "1NT"], ["Modstander", "Pas"], ["Dig", "?"]],
+    "tekst": "Makker åbner 1NT, og du har en jævn hånd uden 4-farve i major.",
+    "gaelderFor": "Sansstigen over 1NT. Gerber 4♣ efter 1NT og 2NT"
+  },
+  "kortfortalt": "Sansstigen: pas 0–8, 2NT 9–10, 3NT 11–15, 4NT 16–17, 6NT 18–19, 5NT 20–21 og 7NT 22+. 4♣ (Gerber) spørger efter esser, og 5♣ derefter efter konger.",
+  "meldinger": [
+    {"bud": "Pas", "noegle": "gra", "styrke": "0–8 hp", "viser": "Ingen udgangschance"},
+    {"bud": "2NT", "noegle": "brun", "styrke": "9–10 hp", "viser": "Invit til 3NT"},
+    {"bud": "3NT", "noegle": "brun", "styrke": "11–15 hp", "viser": "Slutmelding"},
+    {"bud": "4♣", "noegle": "gul", "viser": "Gerber: spørger efter esser"},
+    {"bud": "4NT", "noegle": "brun", "styrke": "16–17 hp", "viser": "Kvantitativ: invit til 6NT"},
+    {"bud": "6NT", "noegle": "brun", "styrke": "18–19 hp", "viser": "Slutmelding"},
+    {"bud": "5NT", "noegle": "brun", "styrke": "20–21 hp", "viser": "Invit til 7NT"},
+    {"bud": "7NT", "noegle": "brun", "styrke": "22+ hp", "viser": "Slutmelding"}
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Åbner efter 4♣: esser",
+      "auction": [["Dig", "1NT"], ["Modstander", "Pas"], ["Makker", "4♣"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "meldinger": [
+        {"bud": "4♦", "noegle": "gul", "viser": "0 eller 4 esser"},
+        {"bud": "4♥", "noegle": "gul", "viser": "1 es"},
+        {"bud": "4♠", "noegle": "gul", "viser": "2 esser"},
+        {"bud": "4NT", "noegle": "gul", "viser": "3 esser"}
+      ]
+    },
+    {
+      "titel": "Åbner efter 5♣: konger",
+      "auction": [["Dig", "1NT"], ["Modstander", "Pas"], ["Makker", "4♣"], ["Modstander", "Pas"], ["Dig", "4♥"], ["Modstander", "Pas"], ["Makker", "5♣"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "meldinger": [
+        {"bud": "5♦", "noegle": "gul", "viser": "0 eller 4 konger"},
+        {"bud": "5♥", "noegle": "gul", "viser": "1 konge"},
+        {"bud": "5♠", "noegle": "gul", "viser": "2 konger"},
+        {"bud": "5NT", "noegle": "gul", "viser": "3 konger"}
+      ],
+      "note": "Med fundet trumf bruges RKC 1430 i stedet for Gerber."
+    }
+  ],
+  "indmelding": [
+    {"situation": "Modparten melder ind over 1NT", "noegle": "gra", "regel": "Systemet bortfalder: Gerber gælder ikke. Alle meldinger er naturlige."}
+  ],
+  "eksempler": [
+    {
+      "auction": [["Makker", "1NT"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "haand": {"S": [14, 12, 2], "H": [9, 5], "D": [14, 13, 10, 5], "C": [13, 6, 4, 3]},
+      "svar": "4NT",
+      "forklaring": "Jævn hånd uden 4-farve i major og 16 hp: 4NT er invit til 6NT."
+    },
+    {
+      "auction": [["Makker", "1NT"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "haand": {"S": [14, 3], "H": [14, 6, 5], "D": [14, 13, 10, 7], "C": [13, 8, 7, 6]},
+      "svar": "6NT",
+      "forklaring": "Jævn hånd uden 4-farve i major og 18 hp: 6NT."
+    },
+    {
+      "auction": [["Dig", "1NT"], ["Modstander", "Pas"], ["Makker", "4♣"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "haand": {"S": [8, 4, 3, 2], "H": [13, 10, 8], "D": [14, 13, 9], "C": [14, 12, 6]},
+      "svar": "4♠",
+      "forklaring": "2 esser: 4♠."
+    },
+    {
+      "auction": [["Dig", "1NT"], ["Modstander", "Pas"], ["Makker", "4♣"], ["Modstander", "Pas"], ["Dig", "4♥"], ["Modstander", "Pas"], ["Makker", "5♣"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "haand": {"S": [13, 12, 10], "H": [12, 4, 2], "D": [13, 2], "C": [14, 11, 10, 7, 6]},
+      "svar": "5♠",
+      "forklaring": "2 konger: 5♠."
+    }
+  ],
+  "faldgruber": [
+    "4NT direkte over 1NT er kvantitativ (16–17 hp), ikke esspørgsmål. Esserne spørges med 4♣.",
+    "Stigen er ikke i rækkefølge: 6NT er slutmelding med 18–19 hp, mens 5NT er invit til 7NT med 20–21 hp.",
+    "4♦ viser 0 eller 4 esser. Spørgeren må afgøre det ud fra styrken.",
+    "Med fundet trumf bruges 1430, ikke Gerber."
+  ],
+  "aabne": [],
+  "relaterede": ["Amerikansk Stayman", "Overføringer"],
+  "traener": {"url": "traener.html?k=ff-gerber", "pool": "pools/ff-gerber.json"}
+}

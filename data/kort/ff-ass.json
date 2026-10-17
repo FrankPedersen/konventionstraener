@@ -1,0 +1,108 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "ff-ass",
+  "navn": "Amerikansk Stayman (ASS)",
+  "undertitel": "Undersøger åbners hele majorfordeling over 1NT",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 9 og 11a · træneren pools/ff-ass.json",
+  "kategori": "svar",
+  "noegle": "gul",
+  "alert": "2♣ alerteres",
+  "formaal": "At finde fit i major, når 1NT-åbningen også kan rumme en 5-farve i major.",
+  "situation": {
+    "auction": [["Makker", "1NT"], ["Modstander", "Pas"], ["Dig", "?"]],
+    "tekst": "Makker åbner 1NT (15–17 hp jævn, kan rumme en 5-farve i major), og modparten passer.",
+    "gaelderFor": "Uforstyrret 1NT-åbning"
+  },
+  "kortfortalt": "2♣ er mindst invit og lover ikke nødvendigvis en 4-farve i major. Åbner viser 4-farve (2♦), præcis 5-farve (2♥/2♠) eller ingen (2NT minimum, 3NT maksimum), og efter 2♦ viser svarer sin major krydsvendt.",
+  "meldinger": [
+    {"bud": "Pas", "noegle": "gra", "styrke": "0–8 hp", "viser": "Sansstigen siger pas"},
+    {"bud": "2♣", "noegle": "gul", "styrke": "9+ hp", "viser": "ASS: mindst invit til udgang, undersøger åbners majorer"},
+    {"bud": "2NT", "noegle": "brun", "styrke": "9–10 hp", "viser": "Jævn uden 4-farve i major, invit"},
+    {"bud": "3NT", "noegle": "brun", "styrke": "11–15 hp", "viser": "Jævn uden 4-farve i major, slutmelding"}
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Åbner efter 2♣",
+      "auction": [["Dig", "1NT"], ["Modstander", "Pas"], ["Makker", "2♣"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "meldinger": [
+        {"bud": "2♦", "noegle": "gul", "viser": "Mindst én 4-farve i major"},
+        {"bud": "2♥", "noegle": "gron", "viser": "Præcis 5 hjerter"},
+        {"bud": "2♠", "noegle": "gron", "viser": "Præcis 5 spar"},
+        {"bud": "2NT", "noegle": "brun", "styrke": "15–16 hp", "viser": "Ingen 4-farve i major, minimum"},
+        {"bud": "3NT", "noegle": "brun", "styrke": "17 hp", "viser": "Ingen 4-farve i major, maksimum"}
+      ]
+    },
+    {
+      "titel": "Svarer efter 2♦: krydsvendt",
+      "auction": [["Makker", "1NT"], ["Modstander", "Pas"], ["Dig", "2♣"], ["Modstander", "Pas"], ["Makker", "2♦"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "meldinger": [
+        {"bud": "2♥", "noegle": "gul", "viser": "4 spar (kan også have 4 hjerter)"},
+        {"bud": "2♠", "noegle": "gul", "viser": "4 hjerter, benægter 4 spar"},
+        {"bud": "2NT", "noegle": "brun", "viser": "Invit uden 4-farve i major"},
+        {"bud": "3NT", "noegle": "brun", "viser": "Slutmelding"}
+      ]
+    },
+    {
+      "titel": "Svarer efter 2♥ / 2♠",
+      "auction": [["Makker", "1NT"], ["Modstander", "Pas"], ["Dig", "2♣"], ["Modstander", "Pas"], ["Makker", "2♥"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "meldinger": [
+        {"bud": "2NT", "noegle": "brun", "viser": "Invit uden fit"},
+        {"bud": "3 i åbners farve", "noegle": "gron", "viser": "Invit med fit"},
+        {"bud": "3NT", "noegle": "brun", "viser": "Slutmelding uden fit"},
+        {"bud": "4 i åbners farve", "noegle": "gron", "viser": "Slutmelding med fit"}
+      ]
+    },
+    {
+      "titel": "Svarer efter 2NT / 3NT",
+      "auction": [["Makker", "1NT"], ["Modstander", "Pas"], ["Dig", "2♣"], ["Modstander", "Pas"], ["Makker", "2NT"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "meldinger": [
+        {"bud": "Pas", "noegle": "gra", "viser": "Slutmelding: hverken fit eller styrke til mere"},
+        {"bud": "3NT", "noegle": "brun", "viser": "Slutmelding"}
+      ]
+    }
+  ],
+  "indmelding": [
+    {"situation": "Modparten melder ind over 1NT", "noegle": "gra", "regel": "Systemet bortfalder: ASS gælder ikke. Alle meldinger er naturlige."},
+    {"situation": "Ny farve på 2-trinnet", "noegle": "gron", "regel": "Naturlig 5+ farve, 0–9 hp, ikke krav."},
+    {"situation": "Spring i ny farve", "noegle": "bla", "regel": "Udgangskrav, 10+ hp og mindst en god 5-farve."},
+    {"situation": "Dobling", "noegle": "gra", "regel": "Straf, 8+ hp med værdier. Åbner passer som udgangspunkt."},
+    {"situation": "Overmelding i fjendens farve", "noegle": "bla", "regel": "Stærk hånd, 10+ hp, krav. Åbner melder sin 4-farve i major, ellers 3NT med hold."}
+  ],
+  "eksempler": [
+    {
+      "auction": [["Makker", "1NT"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "haand": {"S": [14, 9, 8, 5], "H": [10], "D": [9, 8, 6], "C": [14, 11, 7, 5, 4]},
+      "svar": "2♣",
+      "forklaring": "4 spar og 9 hp, mindst invit: 2♣ undersøger åbners majorfordeling."
+    },
+    {
+      "auction": [["Dig", "1NT"], ["Modstander", "Pas"], ["Makker", "2♣"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "haand": {"S": [12, 8, 7, 3], "H": [13, 5], "D": [14, 13, 6, 4], "C": [14, 5, 2]},
+      "svar": "2♦",
+      "forklaring": "4 spar: 2♦ viser mindst én 4-farve i major, og makker fortæller, hvilken han har."
+    },
+    {
+      "auction": [["Makker", "1NT"], ["Modstander", "Pas"], ["Dig", "2♣"], ["Modstander", "Pas"], ["Makker", "2♦"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "haand": {"S": [5, 4], "H": [13, 9, 8, 2], "D": [13, 11, 7, 2], "C": [14, 12, 10]},
+      "svar": "2♠",
+      "forklaring": "Krydsvendt: 2♠ viser 4 hjerter og benægter 4 spar."
+    },
+    {
+      "auction": [["Makker", "1NT"], ["Modstander", "Pas"], ["Dig", "2♣"], ["Modstander", "Pas"], ["Makker", "2♥"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "haand": {"S": [14, 8, 6, 5], "H": [14, 10, 8, 6], "D": [9, 7, 5], "C": [12, 6]},
+      "svar": "3♥",
+      "forklaring": "4 hjerter giver fit med åbners 5-farve, og 10 hp er invit: 3♥."
+    }
+  ],
+  "faldgruber": [
+    "2♣ lover ikke en 4-farve i major, men mindst invit (9+ hp).",
+    "Efter 2♦ viser svarer sin major krydsvendt: 2♥ = 4 spar, 2♠ = 4 hjerter.",
+    "2♥ benægter ikke 4 hjerter. Med begge majorer melder svarer 2♥.",
+    "Med ASS findes almindelig Stayman ikke: 2♣ over 1NT betyder altid ASS."
+  ],
+  "aabne": [],
+  "relaterede": ["Overføringer", "Gerber"],
+  "forveksles": ["Stayman"],
+  "traener": {"url": "traener.html?k=ff-ass", "pool": "pools/ff-ass.json"}
+}

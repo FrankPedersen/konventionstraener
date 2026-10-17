@@ -1,0 +1,75 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "stayman",
+  "navn": "Stayman",
+  "undertitel": "Spørger efter en 4-farve i major over makkers 1NT",
+  "kilde": "Bridgesystem v1.7 · afsnit 3 og 8 · træneren pools/stayman.json",
+  "kategori": "svar",
+  "noegle": "gul",
+  "formaal": "At finde en 4-4-tilpasning i major, når makker har åbnet 1NT.",
+  "situation": {
+    "auction": [["Makker", "1NT"], ["Modstander", "Pas"], ["Dig", "?"]],
+    "tekst": "Makker åbner 1NT (15–17 hp, kan rumme en 5-farve i major), og modparten passer.",
+    "gaelderFor": "Uforstyrret 1NT-åbning"
+  },
+  "kortfortalt": "2♣ spørger efter åbners 4-farve i major og kræver 8+ hp. Åbner svarer 2♦ uden, ellers 2♥ eller 2♠ – en 5-farve meldes, som var det en 4-farve.",
+  "meldinger": [
+    {"bud": "Pas", "noegle": "gra", "viser": "For svag til Stayman"},
+    {"bud": "2♣", "noegle": "gul", "styrke": "8+ hp", "viser": "Stayman: mindst én 4-farve i major"},
+    {"bud": "2NT", "noegle": "brun", "styrke": "8–9 hp", "viser": "Jævn uden 4-farve i major, naturlig invit"},
+    {"bud": "3NT", "noegle": "brun", "styrke": "10+ hp", "viser": "Jævn uden 4-farve i major, slutmelding"}
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Åbner efter 2♣",
+      "auction": [["Dig", "1NT"], ["Modstander", "Pas"], ["Makker", "2♣"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "meldinger": [
+        {"bud": "2♦", "noegle": "gul", "viser": "Ingen 4-farve i major"},
+        {"bud": "2♥", "noegle": "gron", "viser": "4 eller 5 hjerter – med begge majorer meldes 2♥ først"},
+        {"bud": "2♠", "noegle": "gron", "viser": "4 eller 5 spar, ikke 4 hjerter"}
+      ],
+      "note": "En 5-farve i major meldes, som var det en 4-farve."
+    }
+  ],
+  "indmelding": [
+    {"situation": "Modparten dobler 1NT", "noegle": "gul", "regel": "Stayman gælder fortsat."},
+    {"situation": "Modparten melder ind i farve", "noegle": "gra", "regel": "Stayman frafalder. Med 10+ hp uden hold i deres farve dobler svarer; åbner melder 3NT med hold, ellers melder begge de fire farver nedefra, til der er fundet fit."}
+  ],
+  "eksempler": [
+    {
+      "auction": [["Makker", "1NT"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "haand": {"S": [14, 9, 7], "H": [11, 9, 4, 2], "D": [13, 9, 8, 4], "C": [11, 4]},
+      "svar": "2♣",
+      "forklaring": "4 hjerter og 9 hp: 2♣ spørger efter åbners 4-farve i major."
+    },
+    {
+      "auction": [["Makker", "1NT"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "haand": {"S": [13, 5, 4], "H": [11, 3, 2], "D": [14, 2], "C": [9, 8, 7, 4, 3]},
+      "svar": "2NT",
+      "forklaring": "Jævn hånd uden 4-farve i major og 8 hp: 2NT er naturlig invit."
+    },
+    {
+      "auction": [["Dig", "1NT"], ["Modstander", "Pas"], ["Makker", "2♣"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "haand": {"S": [13, 12, 9, 6, 5], "H": [14, 9, 3], "D": [13, 3], "C": [13, 7, 2]},
+      "svar": "2♠",
+      "forklaring": "5 spar og ikke 4 hjerter: 2♠. 5-farven meldes, som var det en 4-farve."
+    },
+    {
+      "auction": [["Dig", "1NT"], ["Modstander", "Pas"], ["Makker", "2♣"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "haand": {"S": [14, 13, 11, 6], "H": [10, 6, 4, 2], "D": [14, 3], "C": [14, 10, 7]},
+      "svar": "2♥",
+      "forklaring": "4 hjerter og 4 spar: med begge majorer svarer åbner 2♥ først."
+    }
+  ],
+  "faldgruber": [
+    "Stayman kræver 8+ hp. Med færre passer svarer, også med en 4-farve i major.",
+    "Med begge majorer svarer åbner 2♥ først.",
+    "En 5-farve i major har ingen særlig melding: den meldes som en 4-farve.",
+    "2NT direkte over 1NT er naturlig invit uden 4-farve i major, ikke et spørgsmål."
+  ],
+  "aabne": [],
+  "relaterede": ["Transfer"],
+  "forveksles": ["Amerikansk Stayman"],
+  "traener": {"url": "traener.html?k=stayman", "pool": "pools/stayman.json"}
+}

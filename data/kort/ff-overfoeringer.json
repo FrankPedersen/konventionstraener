@@ -1,0 +1,96 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "ff-overfoeringer",
+  "navn": "Overføringer",
+  "undertitel": "Overføring til major og minor over 1NT – og svarers anden melding",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 10 og 11b · træneren pools/ff-overfoeringer.json",
+  "kategori": "svar",
+  "noegle": "gul",
+  "alert": "2♦, 2♥, 2♠ og 3♣ alerteres",
+  "formaal": "At gøre den stærke hånd til spilfører og give svarer en ekstra melderunde til at vise styrken.",
+  "situation": {
+    "auction": [["Makker", "1NT"], ["Modstander", "Pas"], ["Dig", "?"]],
+    "tekst": "Makker åbner 1NT, og hånden foran dig har passet.",
+    "gaelderFor": "1NT. Efter 2NT gælder de samme meldinger ét trin højere"
+  },
+  "kortfortalt": "2♦ og 2♥ beder åbner melde farven lige over; 2♠ og 3♣ er svage flugtmeldinger i minor. Efter majoroverføringen viser svarer styrken: pas, invit eller udgang.",
+  "meldinger": [
+    {"bud": "2♦", "noegle": "gul", "viser": "Overføring til hjerter: 5+ hjerter, intet pointkrav"},
+    {"bud": "2♥", "noegle": "gul", "viser": "Overføring til spar: 5+ spar, intet pointkrav"},
+    {"bud": "2♠", "noegle": "gul", "viser": "Overføring til klør: 6+ klør, svag"},
+    {"bud": "3♣", "noegle": "gul", "viser": "Overføring til ruder: 6+ ruder, svag"}
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Åbner efter 2♦ / 2♥",
+      "auction": [["Dig", "1NT"], ["Modstander", "Pas"], ["Makker", "2♦"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "meldinger": [
+        {"bud": "2♥ / 2♠", "noegle": "gron", "viser": "Tvunget: melder farven"},
+        {"bud": "3♥ / 3♠", "noegle": "gron", "styrke": "17 hp", "viser": "Superaccept: 4-korts støtte og maksimum"}
+      ],
+      "note": "Superaccept er den eneste situation, hvor åbner må afvige fra den tvungne melding."
+    },
+    {
+      "titel": "Åbner efter 2♠ / 3♣",
+      "auction": [["Dig", "1NT"], ["Modstander", "Pas"], ["Makker", "2♠"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "meldinger": [
+        {"bud": "3♣ / 3♦", "noegle": "gron", "viser": "Tvunget. Svarer passer altid"}
+      ]
+    },
+    {
+      "titel": "Svarer efter 1NT – 2♦ – 2♥",
+      "auction": [["Makker", "1NT"], ["Modstander", "Pas"], ["Dig", "2♦"], ["Modstander", "Pas"], ["Makker", "2♥"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "meldinger": [
+        {"bud": "Pas", "noegle": "gra", "viser": "Svag: overføringen har fundet kontrakten"},
+        {"bud": "2NT", "noegle": "brun", "styrke": "8–9 hp", "viser": "5 hjerter, invit"},
+        {"bud": "3♥", "noegle": "gron", "styrke": "8–9 hp", "viser": "6 hjerter, invit"},
+        {"bud": "3NT", "noegle": "brun", "viser": "5 hjerter, udgang – åbner vælger mellem 3NT og 4♥"},
+        {"bud": "4♥", "noegle": "gron", "viser": "6 hjerter, udgang"},
+        {"bud": "Ny farve", "noegle": "bla", "viser": "Udgangskrav"}
+      ],
+      "note": "Efter 1NT – 2♥ – 2♠ gælder det samme i spar."
+    }
+  ],
+  "indmelding": [
+    {"situation": "Indmelding over 1NT, før svarer har meldt", "noegle": "gra", "regel": "Overføringerne bortfalder. Alle meldinger er naturlige."},
+    {"situation": "Indmelding efter overføringen: åbner melder 3 i svarers farve", "noegle": "gron", "regel": "Frivillig støtte: tillæg og god støtte til farven."},
+    {"situation": "Indmelding efter overføringen: åbner dobler", "noegle": "bla", "regel": "Straf med gode trumf i den indmeldte farve. Ikke oplysning."},
+    {"situation": "Indmelding efter overføringen: åbner passer", "noegle": "gra", "regel": "Minimum eller ingen særlig støtte. Svarer melder videre efter eget skøn."}
+  ],
+  "eksempler": [
+    {
+      "auction": [["Makker", "1NT"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "haand": {"S": [11, 10, 8], "H": [3], "D": [3, 2], "C": [14, 12, 11, 8, 6, 5, 2]},
+      "svar": "2♠",
+      "forklaring": "7 klør og ingen 4-farve i major: 2♠ er overføring til klør, og du passer makkers 3♣."
+    },
+    {
+      "auction": [["Dig", "1NT"], ["Modstander", "Pas"], ["Makker", "2♦"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "haand": {"S": [13, 12, 11, 3], "H": [13, 7, 6, 2], "D": [14, 7, 6], "C": [14, 6]},
+      "svar": "3♥",
+      "forklaring": "4 hjerter og maksimum (17 hp): superaccept, spring til 3♥."
+    },
+    {
+      "auction": [["Makker", "1NT"], ["Modstander", "Pas"], ["Dig", "2♦"], ["Modstander", "Pas"], ["Makker", "2♥"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "haand": {"S": [14, 9, 3], "H": [11, 10, 7, 5, 4], "D": [12, 10], "C": [12, 9, 8]},
+      "svar": "2NT",
+      "forklaring": "5 hjerter og 9 hp: 2NT er invit."
+    },
+    {
+      "auction": [["Makker", "1NT"], ["Modstander", "Pas"], ["Dig", "2♦"], ["Modstander", "Pas"], ["Makker", "2♥"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "haand": {"S": [10, 3], "H": [13, 12, 9, 6, 4, 2], "D": [10, 7, 3], "C": [14, 12]},
+      "svar": "4♥",
+      "forklaring": "6 hjerter og 11 hp: 4♥."
+    }
+  ],
+  "faldgruber": [
+    "Minoroverføringerne er flugtmeldinger: svarer passer altid åbners svar.",
+    "Superaccept kræver både 4-korts støtte og maksimum.",
+    "Med 5-farve inviterer svarer med 2NT, med 6-farve med 3 i farven.",
+    "Efter en indmelding er åbners støtte frivillig og viser tillæg."
+  ],
+  "aabne": [],
+  "relaterede": ["Amerikansk Stayman", "Gerber"],
+  "traener": {"url": "traener.html?k=ff-overfoeringer", "pool": "pools/ff-overfoeringer.json"}
+}

@@ -1,0 +1,79 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "transfer",
+  "navn": "Transfer",
+  "undertitel": "Overføring til major og minor over makkers 1NT",
+  "kilde": "Bridgesystem v1.7 · afsnit 3 og 8 · træneren pools/transfer.json",
+  "kategori": "svar",
+  "noegle": "gul",
+  "formaal": "At gøre 1NT-åbneren til spilfører i svarers lange farve.",
+  "situation": {
+    "auction": [["Makker", "1NT"], ["Modstander", "Pas"], ["Dig", "?"]],
+    "tekst": "Makker åbner 1NT, og modparten passer.",
+    "gaelderFor": "Uforstyrret 1NT-åbning"
+  },
+  "kortfortalt": "2♦ og 2♥ beder åbner melde farven lige over; 2♠ og 3♣ er minortransfer til klør og ruder. Med 4-korts støtte og 17 hp springer åbner i majoren (superaccept).",
+  "meldinger": [
+    {"bud": "2♦", "noegle": "gul", "viser": "Transfer til hjerter: 5+ hjerter"},
+    {"bud": "2♥", "noegle": "gul", "viser": "Transfer til spar: 5+ spar"},
+    {"bud": "2♠", "noegle": "gul", "viser": "Minortransfer til klør: 6+ klør"},
+    {"bud": "3♣", "noegle": "gul", "viser": "Minortransfer til ruder: 6+ ruder"}
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Åbner efter 2♦ / 2♥",
+      "auction": [["Dig", "1NT"], ["Modstander", "Pas"], ["Makker", "2♦"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "meldinger": [
+        {"bud": "2♥ / 2♠", "noegle": "gron", "viser": "Melder farven"},
+        {"bud": "3♥ / 3♠", "noegle": "gron", "styrke": "17 hp", "viser": "Superaccept: 4-korts støtte og maksimum"}
+      ],
+      "note": "Superaccept viser mindst 9 trumf sammen og maksimum, så svarer kan gå i udgang med færre point."
+    },
+    {
+      "titel": "Åbner efter 2♠ / 3♣",
+      "auction": [["Dig", "1NT"], ["Modstander", "Pas"], ["Makker", "2♠"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "meldinger": [
+        {"bud": "3♣ / 3♦", "noegle": "gron", "viser": "Fuldfører altid minortransferen"}
+      ]
+    }
+  ],
+  "indmelding": [
+    {"situation": "Modparten dobler 1NT", "noegle": "gul", "regel": "Transfer gælder fortsat."},
+    {"situation": "Modparten melder ind i farve", "noegle": "gra", "regel": "Transfer frafalder. Med 10+ hp uden hold i deres farve dobler svarer; åbner melder 3NT med hold, ellers melder begge de fire farver nedefra, til der er fundet fit."}
+  ],
+  "eksempler": [
+    {
+      "auction": [["Makker", "1NT"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "haand": {"S": [7], "H": [12, 11, 8, 6, 5, 3], "D": [14, 11, 10, 2], "C": [11, 9]},
+      "svar": "2♦",
+      "forklaring": "6 hjerter: 2♦ er transfer, og makker melder 2♥."
+    },
+    {
+      "auction": [["Makker", "1NT"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "haand": {"S": [10, 7], "H": [13, 10], "D": [5, 4, 2], "C": [13, 12, 8, 7, 4, 3]},
+      "svar": "2♠",
+      "forklaring": "6 klør og ingen 4-farve i major: 2♠ er minortransfer til klør."
+    },
+    {
+      "auction": [["Dig", "1NT"], ["Modstander", "Pas"], ["Makker", "2♦"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "haand": {"S": [14, 2], "H": [14, 11, 9, 6], "D": [13, 8, 5, 4], "C": [14, 11, 8]},
+      "svar": "3♥",
+      "forklaring": "4 hjerter og maksimum (17 hp): superaccept, spring til 3♥."
+    },
+    {
+      "auction": [["Dig", "1NT"], ["Modstander", "Pas"], ["Makker", "2♦"], ["Modstander", "Pas"], ["Dig", "?"]],
+      "haand": {"S": [14, 13, 10, 5], "H": [14, 9, 8, 3], "D": [13, 12, 2], "C": [10, 3]},
+      "svar": "2♥",
+      "forklaring": "4 hjerter, men ikke maksimum (16 hp): ingen superaccept, åbner melder 2♥."
+    }
+  ],
+  "faldgruber": [
+    "Superaccept kræver både 4-korts støtte og maksimum (17 hp). Med 16 hp melder åbner bare farven.",
+    "Minortransferen fuldføres altid. Der er ingen superaccept i minor.",
+    "2♠ er ikke naturlig: den er transfer til klør."
+  ],
+  "aabne": [],
+  "relaterede": ["Stayman"],
+  "traener": {"url": "traener.html?k=transfer", "pool": "pools/transfer.json"}
+}

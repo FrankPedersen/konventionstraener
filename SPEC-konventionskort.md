@@ -54,3 +54,11 @@ Kræver noget alligevel en ændring ud over tabellen, skal Claude Code stoppe og
 11. **Centreret tekst i kompaktvisningen:** kildens regel `.ramme p` er ment for noten under kortet, men rammer også kortets egne afsnit. Derfor står undertitel, situation og kort fortalt centreret i en smal spalte. Rettet i kilden til `.ramme > p` og i artifactet (Franks valg, 17. oktober 2026), så siden og ⓘ viser det samme. Fra nu af er siden ikke længere byte for byte som leverancen; forskellen er kun denne regel (Claude Codes fund).
 12. **Feltet på Viden** står øverst under overskriften "Alle konventioner" / "All conventions" med mærket "Opslag" / "Reference · in Danish". Siden SPEC-traen-side, Afklaret 26, står makkerskabernes systemer ikke længere på Viden, så "over systemerne" i trin 4 betyder øverst.
 13. **Knappen står inde i overskriften**, så den følger titlen på alle skærmbredder. Overskriftens tekst (`textContent`) indeholder derfor også "i". Skriver variantvælgeren i `traener.html` titlen om, sætter komponenten knappen ind igen.
+
+De øvrige kort – Franks svar (17. oktober 2026):
+
+14. **Ét kort pr. træner** (Franks valg): kortet har trænerens `id`, også når samme konvention trænes i begge makkerskaber (fx `michaels` og `ff-michaels`). Kortets tekst nævner ikke makkerskabet; `id` er kun en nøgle.
+15. **Ét emne ad gangen** (Franks valg): hvert emne skrives på sin egen gren (`kort-<emne>`), og Frank læser kortene igennem, før de flettes ind. Rækkefølgen begynder med Svar på 1NT. Trænerne fra Kampen om kontrakten får også kort, men til sidst (Franks valg).
+16. **Kilder:** kortet skrives ud fra systemdokumentet, som træneren henviser til (feltet `viden` i `data/konventioner.json`), og ud fra trænerens pulje. Eksemplerne er hænder fra puljen med samme meldeforløb og samme svar. Tal, som hverken dokumentet eller puljen angiver, skrives ikke ind. Fx har overføringernes udgangsmeldinger ingen pointgrænse, fordi kilden kun siger "udgang".
+17. **Svar på 1NT** (5 kort): `stayman`, `transfer`, `ff-ass`, `ff-overfoeringer` og `ff-gerber`. Bridgesystemet angiver ikke farvelængden ved transfer. "5+" i major og "6+" i minor svarer til trænerens hænder (5–6 og 6–7 kort) og til det andet systemdokument. Staymans 3NT med "10+ hp" følger af, at 2NT er 8–9 hp. Afsnit 3 bygger på Bridgesystem 8.3–8.4 og på 11a–11b i det andet dokument.
+

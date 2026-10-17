@@ -15,4 +15,10 @@ Siden `viden/konventionskort.html` viser kortene; `viden/konventionskort.html#<i
 
 Trænerne viser kortets kompaktvisning bag et ⓘ ved titlen, når der findes et kort med trænerens `id`. Komponenten `assets/konventionskort-hint.js` bygges af det samme script fra `tools/konventionskort.src.html` og `tools/konventionskort-hint-shell.js`. Ret aldrig i den direkte (SPEC-konventionskort.md, Afklaret 5–13).
 
-Et kort har samme `id` som konventionen i `data/konventioner.json`, når der findes en træner til den.
+Et kort har samme `id` som konventionen i `data/konventioner.json`, når der findes en træner til den. Hver træner får sit eget kort, også når samme konvention trænes i begge makkerskaber; kortet nævner ikke makkerskabet.
+
+### Nye kort – arbejdsgang
+
+- Ét emne ad gangen på en gren `kort-<emne>`. Frank godkender kortene, før de flettes ind (SPEC-konventionskort.md, Afklaret 14–16).
+- Kilder: systemdokumentet i trænerens felt `viden` og trænerens pulje i `pools/`. Eksempler er hænder fra puljen med samme meldeforløb og svar.
+- Tilføj filen i `data/kort/index.json`, kør `python3 tools/tjek_konventionskort.py` og `python3 tools/tjek_kort_eksempler.py <id>`, og byg siden. Træneren får sin ⓘ af sig selv.
