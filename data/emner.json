@@ -1,0 +1,45 @@
+[
+ {
+  "id": "aabninger-og-svar",
+  "navn": "Åbninger og svar",
+  "linje": "Åbninger, svar, støtte og videre meldeforløb – flere af trænerne tager også modpartens indmeldinger med.",
+  "emner": [
+   { "id": "aabninger", "navn": "Åbninger", "en": { "navn": "Openings" } },
+   { "id": "svar-1nt", "navn": "Svar på 1NT", "en": { "navn": "Responses to 1NT" } },
+   { "id": "stoette", "navn": "Støtte", "en": { "navn": "Raises" } },
+   { "id": "videre", "navn": "Videre meldeforløb", "en": { "navn": "Continuations" } }
+  ],
+  "en": {
+   "navn": "Openings and responses",
+   "linje": "Openings, responses, raises and continuations – several of the trainers also include the opponents' overcalls."
+  }
+ },
+ {
+  "id": "konkurrence",
+  "navn": "Konkurrence",
+  "linje": "Når modparten melder med – før eller efter os.",
+  "emner": [
+   { "id": "nt-konkurrence", "navn": "1NT i konkurrence", "en": { "navn": "1NT in competition" } },
+   { "id": "indmeldinger", "navn": "Indmeldinger og genåbning", "en": { "navn": "Overcalls and balancing" } },
+   { "id": "doblinger", "navn": "Doblinger", "en": { "navn": "Doubles" } },
+   { "id": "stoette-konkurrence", "navn": "Støtte i konkurrence", "en": { "navn": "Raises in competition" } }
+  ],
+  "en": {
+   "navn": "Competition",
+   "linje": "When the opponents join in – before or after us."
+  }
+ },
+ {
+  "id": "slem-og-modspil",
+  "navn": "Slem og modspil",
+  "linje": "Nøglekort, kontroller og markeringer.",
+  "emner": [
+   { "id": "slem", "navn": "Slem", "en": { "navn": "Slam" } },
+   { "id": "modspil", "navn": "Modspil", "en": { "navn": "Defence" } }
+  ],
+  "en": {
+   "navn": "Slam and defence",
+   "linje": "Key cards, controls and signals."
+  }
+ }
+]

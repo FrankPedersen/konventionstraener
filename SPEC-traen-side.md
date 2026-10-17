@@ -144,7 +144,9 @@ Claude Codes gennemgang og Franks svar (17. oktober 2026):
 6. **Mobil:** rækkerne i én hvid boks bruges under 600 px, samme grænse som i `assets/site.css` (Kortene).
 7. **`#traen`** står på boksen "Find en træner", så tilbage-linket fra træneren lander dér (Filter og adresse).
 8. **Søgningen** søger i titel og beskrivelse på sidens sprog.
-9. **Systemlinjen for Forslag:** "Viser trænerne for Forslag. Læs forslagene →" / "Showing the trainers for Proposals. Read the proposals →", fordi "Aftalerne for Forslag" lyder skævt.
+9. **Systemlinjen for Forslag:** "Viser trænerne for Forslag. Læs forslagene →" / "Showing the trainers for Proposals. Read the proposals (in Danish) →", fordi "Aftalerne for Forslag" lyder skævt. På engelsk får alle links til aftalerne "(in Danish)" som i dag.
 10. **Sidefoden og Word-eksporten:** sidefoden står uden for `<main>`, så `doc-export.js` ikke tager den med i Word-filen (Sidefoden).
 11. **Relative links i sidefoden:** `assets/footer.js` finder sitets rod ud fra sin egen adresse, så linkene til aftalerne virker både fra roden og fra `viden/` (Sidefoden).
 12. **Data:** alle 47 viste konventioner står i emnetabellen præcis én gang; kun `kamp-landy` mangler og får `nt-konkurrence` som beskrevet (Dele og emner).
+13. **Sidefodens stil** står i `assets/footer.js` og ikke i `assets/site.css`, fordi Viden-dokumenterne ikke indlæser `site.css`. Reglerne har `#sidefod` foran, så dokumenternes egne regler for `h2`, `p` og `a` ikke slår igennem (Claude Codes valg ved bygningen) (Sidefoden).
+14. **Navnene Konventionstræner og Kontraktbridge** oversættes ikke på engelsk, ligesom navnet i topmenuen. Det er den eneste danske tekst på den engelske forside.

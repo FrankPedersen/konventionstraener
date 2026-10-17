@@ -3,6 +3,7 @@
   "id": "multiforsvar",
   "titel": "Multiforsvar mod 1NT",
   "gruppe": "Konkurrence",
+  "emne": "nt-konkurrence",
   "beskrivelse": "Modstanderen åbner 1NT. Meld ind med D (straf), 2♣–2NT eller 3♣/3♦ – eller svar på makkers indmelding.",
   "roller": [
    "Indmelder",
@@ -21,6 +22,7 @@
   "id": "michaels",
   "titel": "Michaels cuebid",
   "gruppe": "Konkurrence",
+  "emne": "indmeldinger",
   "beskrivelse": "Overmelding i åbners farve: over 1♣/1♦ begge majorer, over 1♥/1♠ den anden major og en minor – mindst 5-5, 8–15 eller 17+. Og svarerens valg.",
   "roller": [
    "Indmelder",
@@ -39,6 +41,7 @@
   "id": "usaedvanlig-2nt",
   "titel": "Usædvanlig 2NT",
   "gruppe": "Konkurrence",
+  "emne": "indmeldinger",
   "beskrivelse": "2NT viser de to laveste umeldte farver, mindst 5-5, 8–15 eller 17+. Svarer vælger farve med svag hånd og cuebidder med god.",
   "roller": [
    "Indmelder",
@@ -57,6 +60,7 @@
   "id": "lebensohl",
   "titel": "Lebensohl",
   "gruppe": "Konkurrence",
+  "emne": "doblinger",
   "beskrivelse": "Makker har doblet deres svage 2: 2-trinnet svagt, 2NT relæ med lavere farve, 3-trinnet invit, 3NT med hold, cuebid udgangskrav.",
   "roller": [
    "Svarer"
@@ -74,6 +78,7 @@
   "id": "omvendt-bergen",
   "titel": "Omvendt Bergen",
   "gruppe": "Majorstøtte",
+  "emne": "stoette",
   "beskrivelse": "Støtte til 1♥/1♠: 3♦ 7–10 sp og 3♣ 10–11 sp med 4+ · 3M og 4M destruktive. Som åbner: afmeld, spørg eller meld udgang efter 25-reglen.",
   "roller": [
    "Åbner",
@@ -92,6 +97,7 @@
   "id": "bekkasin",
   "titel": "Bekkasin 2NT",
   "gruppe": "Majorstøtte",
+  "emne": "stoette",
   "beskrivelse": "13+ sp og 4+ korts støtte. Som åbner: minimum, tillæg eller korthed. Som svarer: 3♦-spørgsmål eller cuebid ved slemambition.",
   "roller": [
    "Åbner",
@@ -117,6 +123,7 @@
   ],
   "titel": "xy sans",
   "gruppe": "Videre meldeforløb",
+  "emne": "videre",
   "beskrivelse": "Efter 1♣/1♦ – 1♠ – 1NT: pas, stop, 2♣ relæ eller 2♦ udgangskrav – svarers beskrivelse efter relæet og åbners trinsvar på 2♦.",
   "roller": [
    "Åbner",
@@ -138,6 +145,7 @@
   ],
   "titel": "Cuebids",
   "gruppe": "Slem",
+  "emne": "slem",
   "beskrivelse": "Enhver kontrol – es, konge, singleton eller renonce – billigst muligt. Svarer cuebidder efter åbners tillæg i Bekkasin, og åbner svarer med sin billigste kontrol.",
   "roller": [
    "Åbner",
@@ -155,6 +163,7 @@
   "id": "fjerde-farve",
   "titel": "Fjerde farve krav",
   "gruppe": "Videre meldeforløb",
+  "emne": "videre",
   "beskrivelse": "Efter 1♣/1♦ – 1♥ – 1♠: svarer bruger fjerde farve uden fit og hold, og åbner svarer i rækkefølgen støtte, sans, egen farve, fjerde farve.",
   "roller": [
    "Åbner",
@@ -177,6 +186,7 @@
   "system": "kf",
   "titel": "Stayman",
   "gruppe": "Svar på 1NT",
+  "emne": "svar-1nt",
   "beskrivelse": "2♣ over makkers 1NT spørger efter en 4-farve i major; åbner melder en 5-farve, som var det en 4-farve.",
   "roller": [
    "Åbner",
@@ -195,6 +205,7 @@
   "system": "kf",
   "titel": "Transfer",
   "gruppe": "Svar på 1NT",
+  "emne": "svar-1nt",
   "beskrivelse": "2♦/2♥ transfer til major (superaccept med 4-korts støtte og 17 hp), 2♠ minortransfer til klør, 3♣ til ruder.",
   "roller": [
    "Åbner",
@@ -212,6 +223,7 @@
   "id": "1430",
   "titel": "1430 og trumfdame",
   "gruppe": "Slem",
+  "emne": "slem",
   "beskrivelse": "Svar på 4NT (1430) og på spørgsmålet efter trumfdamen: billigste genmelding, billigste konge eller 5NT (dame uden konger).",
   "roller": [
    "Åbner",
@@ -231,6 +243,7 @@
   "system": "ff",
   "titel": "Revideret omvendt Bergen",
   "gruppe": "Majorstøtte",
+  "emne": "stoette",
   "beskrivelse": "Støtte til 1♥/1♠: 2M 6–9 sp · 3♣ 10–12 sp med præcis 3 kort · 3♦ 10–12 sp med 4+ · 3M og 4M spærrende.",
   "roller": [
    "Åbner",
@@ -249,6 +262,7 @@
   "system": "ff",
   "titel": "Longsuit trial bids",
   "gruppe": "Majorstøtte",
+  "emne": "stoette",
   "beskrivelse": "Ny farve efter 1M – 2M beder om hjælp i farven.",
   "roller": [
    "Åbner",
@@ -267,6 +281,7 @@
   "system": "ff",
   "titel": "Two over One udgangskrav",
   "gruppe": "Videre meldeforløb",
+  "emne": "videre",
   "beskrivelse": "Ny farve på 2-trinnet: 13+ hp og udgangskrav – ikke 10+ som hos Makker 1 & mig.",
   "roller": [
    "Åbner",
@@ -285,6 +300,7 @@
   "system": "ff",
   "titel": "Fast og slow arrival",
   "gruppe": "Videre meldeforløb",
+  "emne": "videre",
   "beskrivelse": "I udgangskrav betyder hurtig udgang minimum, langsom ankomst tillæg.",
   "roller": [
    "Åbner",
@@ -303,6 +319,7 @@
   "system": "ff",
   "titel": "Åbners stærke genmeldinger og 3♣ checkback",
   "gruppe": "Videre meldeforløb",
+  "emne": "videre",
   "beskrivelse": "Ny højere farve på 2-trinnet er naturlig, 5-4, 12–18 hp og ikke krav (foreløbig – bekræftes); spring i ny farve er 19–21 og udgangskrav. 3♣ checkback efter åbners 2NT-genmelding.",
   "roller": [
    "Åbner",
@@ -321,6 +338,7 @@
   "system": "ff",
   "titel": "Omvendt minor",
   "gruppe": "Videre meldeforløb",
+  "emne": "stoette",
   "beskrivelse": "2 i åbningsfarven er stærk støtte (10+ sp), 3 i farven spærrende.",
   "roller": [
    "Åbner",
@@ -339,6 +357,7 @@
   "system": "ff",
   "titel": "Amerikansk Stayman (ASS)",
   "gruppe": "Svar på 1NT",
+  "emne": "svar-1nt",
   "beskrivelse": "2♣ over 1NT er mindst invit og undersøger åbners hele majorfordeling: 2♦ 4-farve, 2♥/2♠ præcis 5-farve, 2NT/3NT ingen – og svarers krydsvendte fortsættelse.",
   "roller": [
    "Åbner",
@@ -357,6 +376,7 @@
   "system": "ff",
   "titel": "Overføringer",
   "gruppe": "Svar på 1NT",
+  "emne": "svar-1nt",
   "beskrivelse": "2♦/2♥ til major med superaccept, 2♠/3♣ til minor som flugt – og svarers 2. melding: pas, 2NT/3M invit eller udgang.",
   "roller": [
    "Åbner",
@@ -375,6 +395,7 @@
   "system": "ff",
   "titel": "Gerber og sansstigen",
   "gruppe": "Svar på 1NT",
+  "emne": "svar-1nt",
   "beskrivelse": "Svarers sansstige over 1NT (pas, 2NT, 3NT, 4NT, 6NT, 5NT, 7NT) og åbners svar på Gerber 4♣ og kongespørgsmålet 5♣.",
   "roller": [
    "Spørger",
@@ -393,6 +414,7 @@
   "system": "ff",
   "titel": "2♣ stærkåbning og 2♦ waiting",
   "gruppe": "Åbninger",
+  "emne": "aabninger",
   "beskrivelse": "20+ hp; 2♦ waiting eller positivt svar, åbners genmelding og svarers 2. melding med det andet negative.",
   "roller": [
    "Åbner",
@@ -411,6 +433,7 @@
   "system": "ff",
   "titel": "Ogust 2NT og svar på svag 2",
   "gruppe": "Åbninger",
+  "emne": "aabninger",
   "beskrivelse": "Åbners svar på Ogust (1-2-1-2-3) og svarers valg over svag 2: Ogust, ny farve eller spærring efter Loven.",
   "roller": [
    "Åbner",
@@ -429,6 +452,7 @@
   "system": "ff",
   "titel": "DONT mod 1NT",
   "gruppe": "Konkurrence",
+  "emne": "nt-konkurrence",
   "beskrivelse": "D = én lang farve, 2♣/2♦ = farven + en højere, 2♥ = majorerne, 2NT = minorerne.",
   "roller": [
    "Indmelder",
@@ -447,6 +471,7 @@
   "system": "ff",
   "titel": "Michaels cuebid og usædvanlig 2NT",
   "gruppe": "Konkurrence",
+  "emne": "indmeldinger",
   "beskrivelse": "To-farvede indmeldinger, mindst 5-5, 8–15 hp eller 17+.",
   "roller": [
    "Indmelder",
@@ -465,6 +490,7 @@
   "system": "ff",
   "titel": "Genåbning i 4. hånd",
   "gruppe": "Konkurrence",
+  "emne": "indmeldinger",
   "beskrivelse": "Lån ca. 3 hp af makker: dobling, ny farve, 1NT 11–14, 2NT eller cuebid – og makkers svar efter devaluering.",
   "roller": [
    "Genåbner",
@@ -483,6 +509,7 @@
   "system": "ff",
   "titel": "Negativ dobling, støttedobling og redobling",
   "gruppe": "Konkurrence",
+  "emne": "doblinger",
   "beskrivelse": "Negativ dobling og åbners svar, støttedobling og svarerens meldinger efter dobling af makkers åbning (redobling, Jordan 2NT).",
   "roller": [
    "Åbner",
@@ -501,6 +528,7 @@
   "system": "ff",
   "titel": "Kravpas og Loven",
   "gruppe": "Konkurrence",
+  "emne": "doblinger",
   "beskrivelse": "Loven om det samlede antal stik i støtte- og konkurrenceforløb – og næsekravpas, hvor åbner genåbner med dobling.",
   "roller": [
    "Åbner",
@@ -519,6 +547,7 @@
   "system": "ff",
   "titel": "Lebensohl mod svag 2",
   "gruppe": "Konkurrence",
+  "emne": "doblinger",
   "beskrivelse": "Mod svag 2♥/2♠: højere farve svagt, 2NT relæ til 3♣ (svag lavere farve – eller invit med spar over 2♥), lavere farve direkte på 3-trinnet invit, 3♠ direkte udgangskrav, 3NT naturligt.",
   "roller": [
    "Dobler",
@@ -537,6 +566,7 @@
   "system": "ff",
   "titel": "RKC 1430, trumfdame og konger",
   "gruppe": "Slem",
+  "emne": "slem",
   "beskrivelse": "Svar på 4NT (5 nøglekort som 5♥/5♠), damespørgsmålet og 5NT-kongespørgsmålet.",
   "roller": [
    "Spørger",
@@ -555,6 +585,7 @@
   "system": "forslag",
   "titel": "Flannery",
   "gruppe": "2♦-åbninger (Makker 2 & mig, bilag B)",
+  "emne": "aabninger",
   "beskrivelse": "2♦ viser præcis 5 hjerter og 4 spar, 11–15 hp (2♥ i B4-pakken). Træn åbningen, svarene på 2♦ og åbners svar på 2NT-spørgsmålet.",
   "roller": [
    "Åbner",
@@ -573,6 +604,7 @@
   "system": "forslag",
   "titel": "Multi 2♦",
   "gruppe": "2♦-åbninger (Makker 2 & mig, bilag B)",
+  "emne": "aabninger",
   "beskrivelse": "Svag 2 i en ukendt major; svarer melder pas-eller-ret.",
   "roller": [
    "Åbner",
@@ -591,6 +623,7 @@
   "system": "forslag",
   "titel": "Muiderberg 2♠",
   "gruppe": "2♦-åbninger (Makker 2 & mig, bilag B)",
+  "emne": "aabninger",
   "beskrivelse": "5 spar og en 4+ minor, 5–10 hp.",
   "roller": [
    "Åbner",
@@ -609,6 +642,7 @@
   "system": "forslag",
   "titel": "Revers",
   "gruppe": "Forslag (Makker 2 & mig, bilag G)",
+  "emne": "videre",
   "beskrivelse": "Diskussionsoplæg, ikke vedtaget: ny højere farve billigst muligt på nyt niveau som 16+ og rundekrav. Træn åbners valg mellem revers og gentaget farve, og svarers anden melding efter 1♣/1♦ – 1♠ – 2♥.",
   "roller": [
    "Åbner",
@@ -627,6 +661,7 @@
   "system": "forslag",
   "titel": "2♣ med kontrolsvar",
   "gruppe": "Åbninger",
+  "emne": "aabninger",
   "beskrivelse": "Tæl kontroller (es = 2, konge = 1) og svar på makkers 2♣ – eller vis en god farve med overføring. Åbners sansmeldinger, kontrolvisning og svar efter indmelding.",
   "roller": [
    "Åbner",
@@ -645,6 +680,7 @@
   "system": [],
   "titel": "Landy",
   "gruppe": "Forsvar mod 1NT",
+  "emne": "nt-konkurrence",
   "beskrivelse": "2♣ = begge majorer (mindst 5-4), X straf, øvrige farver naturlige – og makkers svar: vælg major, 2♦ lige lange, 2NT spørger, 3M invit.",
   "roller": [
    "Indmelder",
@@ -664,6 +700,7 @@
   "system": "kamp",
   "titel": "Forsvar mod 1NT",
   "gruppe": "Forsvar mod 1NT",
+  "emne": "nt-konkurrence",
   "beskrivelse": "Vælg jeres forsvar mod modstandernes 1NT – Landy, DONT eller Multi – før hænderne vises. Du er skiftevis indmelder og svarer.",
   "roller": [
    "Indmelder",
@@ -699,6 +736,7 @@
   "system": "kamp",
   "titel": "Støtte efter makkers indmelding",
   "gruppe": "Moderne støtter",
+  "emne": "stoette-konkurrence",
   "beskrivelse": "Enkeltstøtte 3 trumf, spring 4 trumf, udgang 5 trumf – alle 6–9. Med 10+ og støtte meldes fjendens farve. Spring i ny farve er udgangskrav.",
   "roller": [
    "Fortsætter"
@@ -718,6 +756,7 @@
   "system": "kamp",
   "titel": "Støtte efter indmelding over makkers åbning",
   "gruppe": "Moderne støtter",
+  "emne": "stoette-konkurrence",
   "beskrivelse": "2M, 3M og 4M viser 3, 4 og 5 trumf (6–9), fjendens farve 10+ med støtte, negativ dobling – og Stenberg 2NT i Turnering.",
   "roller": [
    "Svarer"
@@ -737,6 +776,7 @@
   "system": "kamp",
   "titel": "Minorstøtte og negativ dobling",
   "gruppe": "Moderne støtter",
+  "emne": "stoette-konkurrence",
   "beskrivelse": "Én trumf mere end i major på hvert trin, og majoren vises først. Efter 1♦ (1♠) lover doblingen fire eller flere hjerter.",
   "roller": [
    "Svarer"
@@ -756,6 +796,7 @@
   "system": "kamp",
   "titel": "Efter modpartens oplysningsdobling",
   "gruppe": "Moderne støtter",
+  "emne": "stoette-konkurrence",
   "beskrivelse": "Støtterne viser antal trumf, 2NT firkortstøtte 10+, XX 10+ uden firkortstøtte, 1♠ rundekrav og konstruktiv seksfarve i minor.",
   "roller": [
    "Svarer"
@@ -775,6 +816,7 @@
   "system": "kamp",
   "titel": "GIF – genåbning i fjerde hånd",
   "gruppe": "Konkurrence",
+  "emne": "indmeldinger",
   "beskrivelse": "Lån 3–4 hp på ujævne hænder: dobling fra 9 hp, farve 7–14, konstruktive spring. Jævne hænder: pas under 11, 1NT 11–14, X 15–18, 2NT 19–21.",
   "roller": [
    "Genåbner"
@@ -794,6 +836,7 @@
   "system": "kamp",
   "titel": "20-20 – kampen om delkontrakten",
   "gruppe": "Konkurrence",
+  "emne": "indmeldinger",
   "beskrivelse": "Sælg ikke ud under 2♠, når de har fundet tilpasning – og meld efter trumfreglen og zonen, når I selv kæmper videre.",
   "roller": [
    "Fjerde hånd",
@@ -814,6 +857,7 @@
   "system": "kamp",
   "titel": "Doblinger – position og oplysende",
   "gruppe": "Konkurrence",
+  "emne": "doblinger",
   "beskrivelse": "Oplysningsdobling i anden hånd kræver 12–17, doblinger er oplysende når de har støttet hinanden, og med én umeldt farve viser doblingen den og medløb.",
   "roller": [
    "Anden hånd",
@@ -835,6 +879,7 @@
   "system": "kamp",
   "titel": "Fjenden melder 1NT ind",
   "gruppe": "Sans",
+  "emne": "nt-konkurrence",
   "beskrivelse": "Efter makkers åbning og deres 1NT: dobling er straf og stærkest (9+), støtte naturlig, spring destruktivt og ny farve den svageste melding.",
   "roller": [
    "Svarer"
@@ -854,6 +899,7 @@
   "system": "kamp",
   "titel": "Indmelding over vores 1NT",
   "gruppe": "Sans",
+  "emne": "nt-konkurrence",
   "beskrivelse": "Stayman og transfers bortfalder: ny farve billigst = at spille, spring = krav, fjendens farve søger hold – og Lebensohl i Turnering. Plus flugt efter strafdobling.",
   "roller": [
    "Svarer"
@@ -872,6 +918,7 @@
   "id": "markeringer",
   "titel": "Markeringer",
   "gruppe": "Modspil",
+  "emne": "modspil",
   "beskrivelse": "Lavt = kald efter es-udspil, antal efter konge-udspil og når spilfører spiller en ny farve (Malmø: lavt = lige), og første afkast mod farve og sans. Giv eller læs markeringen.",
   "roller": [
    "Modspiller"
@@ -890,6 +937,7 @@
   "id": "lavinthal",
   "titel": "Lavinthal",
   "gruppe": "Modspil",
+  "emne": "modspil",
   "beskrivelse": "Forslag – trænes, før det skrives ind i systemkortet. Trumfning og retur, død udspilsfarve og Lavinthal-afkast: højt beder om den højeste af de to farver, lavt om den laveste.",
   "roller": [
    "Modspiller"

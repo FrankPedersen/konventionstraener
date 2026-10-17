@@ -11,22 +11,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&text=%E2%99%A0%E2%99%A5%E2%99%A6%E2%99%A3&display=swap">
 <link rel="stylesheet" href="assets/site.css">
 <script src="assets/lang.js"></script>
-<style>
-  .grouphead{ font-weight:600; font-size:1.25rem; letter-spacing:-.01em; margin:var(--sg-space-2xl) 0 0; }
-  .roles{ display:flex; gap:var(--sg-space-xs); flex-wrap:wrap; margin-top:var(--sg-space-md); }
-  .roles span{ font-size:.75rem; line-height:1rem; font-weight:600; padding:var(--sg-space-xs) var(--sg-space-md); border-radius:var(--sg-radius-pill); background:var(--sg-canvas-soft); color:var(--sg-ink); }
-  .tray{ display:flex; gap:var(--sg-space-md); margin-top:var(--sg-space-2xl); }
-  .tray .bc{ font-size:1.6rem; min-width:2.3em; height:2.9em; border-radius:var(--sg-radius-md); }
-  .systabs{ display:flex; gap:var(--sg-space-sm); flex-wrap:wrap; margin:var(--sg-space-lg) 0 var(--sg-space-sm); }
-  .systabs button{ font:600 1rem/1.5 var(--sg-sans); padding:var(--sg-space-md) var(--sg-space-xl); border-radius:var(--sg-radius-xl); cursor:pointer;
-                   border:0; background:var(--sg-canvas); color:var(--sg-ink); }
-  .systabs button:hover{ box-shadow:inset 0 0 0 1px var(--sg-ink); }
-  .systabs button[aria-selected="true"]{ background:var(--sg-ink); color:var(--sg-canvas); }
-  .syskort{ font-size:1rem; color:var(--sg-body); margin:var(--sg-space-sm) 0 0; }
-  .syskort a{ font-weight:600; color:var(--sg-ink); }
-  .roles .shared{ background:var(--sg-primary-pale); color:var(--sg-ink); }
-  .tile .sys{ font-weight:600; color:var(--sg-body); }
-</style>
 </head>
 <body>
 <header class="site-head"><div class="in">
@@ -34,30 +18,44 @@
   <nav><a href="#traen" data-en="Train">Træn</a><a href="viden/" data-en="Reference">Viden</a><button class="lang" id="langBtn" type="button">English</button></nav>
 </div></header>
 
-<div class="wrap">
+<div class="wrap forside">
   <section class="hero">
-    <p class="eyebrow" data-en="Partner 1 &amp; me · Partner 2 &amp; me">Makker 1 &amp; mig · Makker 2 &amp; mig</p>
+    <p class="eyebrow" id="optaelling">&nbsp;</p>
     <h1 data-en="Practise the conventions until they stick">Træn konventionerne, til de sidder</h1>
-    <p class="deck" data-en="Choose a system and a convention, and get 8 random auctions. Sometimes you overcall or open, other times you respond to partner. Under &lt;a href=&quot;viden/&quot;&gt;Reference&lt;/a&gt; you will find the agreements and notes – in Danish.">Vælg system og konvention, og få 8 tilfældige meldeforløb. Nogle gange melder du ind eller åbner, andre gange svarer du makker. Under <a href="viden/">Viden</a> ligger aftalerne og notaterne.</p>
-    <div class="tray" aria-hidden="true">
-      <span class="bc">1NT</span><span class="bc">2<span class="su su-c">♣</span></span><span class="bc pas" data-en="pass">pas</span><span class="bc">?</span>
+    <p class="deck" data-en="Choose a convention and get 8 random auctions. Sometimes you open or overcall, other times you respond to partner.">Vælg en konvention og få 8 tilfældige meldeforløb. Nogle gange åbner eller melder du ind, andre gange svarer du makker.</p>
+  </section>
+
+  <section class="find" id="traen" aria-labelledby="find-titel">
+    <h2 class="sr-only" id="find-titel" data-en="Find a trainer">Find en træner</h2>
+    <div class="find-sog">
+      <label for="sog" data-en="Search">Søg</label>
+      <input id="sog" type="search" placeholder="Stayman, Bergen, 2♣ …" autocomplete="off" spellcheck="false">
     </div>
+    <div class="filter" role="group" id="filter"></div>
+    <p class="sysline" id="sysline" hidden></p>
   </section>
 
-  <section id="traen">
-    <h2 data-en="Train">Træn</h2>
-    <p class="small" data-en="Each system has its own agreements – even when the convention has the same name, such as 2 over 1 and Bekkasin.">Systemerne har hver deres aftaler – også når konventionen hedder det samme, fx 2 over 1 og Bekkasin.</p>
-    <div class="systabs" role="tablist" aria-label="System" id="systabs"></div>
-    <p class="syskort" id="syskort"></p>
-    <div id="konventioner"></div>
+  <section class="senest" id="senest" aria-labelledby="senest-titel" hidden>
+    <h2 id="senest-titel" data-en="Recently practised">Senest trænet</h2>
+    <div class="pills" id="senestListe"></div>
   </section>
 
-  <section id="viden">
-    <h2 data-en="Reference">Viden</h2>
-    <div class="tiles" id="videnTiles"></div>
-    <p><a href="viden/" data-en="All agreements and notes – and the differences between the systems (in Danish) →">Alle aftaler og notater – og forskellene mellem systemerne →</a></p>
+  <nav class="gaatil" id="gaatil" aria-labelledby="gaatil-titel">
+    <span id="gaatil-titel" data-en="Go to">Gå til</span>
+    <div class="pills" id="gaatilListe"></div>
+  </nav>
+
+  <section class="tomt" id="tomt" aria-labelledby="tomt-titel" hidden>
+    <h2 id="tomt-titel" data-en="No trainers match">Ingen trænere passer</h2>
+    <p data-en="Try another word, or choose All.">Prøv et andet ord, eller vælg Alle.</p>
+    <button class="knap" type="button" id="nulstil" data-en="Show all trainers">Vis alle trænere</button>
   </section>
+
+  <div id="dele"></div>
 </div>
+
+<footer id="sidefod"></footer>
+<script src="assets/footer.js"></script>
 
 <script>
 function esc(s){ return String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c])); }
@@ -65,48 +63,95 @@ function esc(s){ return String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;', '<':'&
 function suits(s){
   return esc(s).replace(/[♠♥♦♣]/g, c => `<span class="su ${c === '♥' || c === '♦' ? 'su-h' : 'su-s'}">${c}</span>`);
 }
-function stored(){ try { return localStorage.getItem('system'); } catch (e) { return null; } }
 function store(v){ try { localStorage.setItem('system', v); } catch (e) {} }
+function recent(){ try { const a = JSON.parse(localStorage.getItem('senest') || '[]'); return Array.isArray(a) ? a : []; } catch (e) { return []; } }
 
-let SYSTEMS = [], CONVENTIONS = [];
+const ROUND_SIZE = 8;
+let SYSTEMS = [], SHOWN = [], PARTS = [], SYS = 'alle';
+const $ = id => document.getElementById(id);
+const systemsOf = k => (Array.isArray(k.system) ? k.system : [k.system]).filter(Boolean);
+const sysById = id => SYSTEMS.find(s => s.id === id);
+// Mærket på kortet: systemets navn uden » & mig« (Makker 1, Makker 2, Kampen om kontrakten, Forslag)
+const badge = id => ((sysById(id) || {}).navn || '').replace(/ & (mig|me)$/, '');
+const href = k => `${k.side || 'traener.html'}?k=${encodeURIComponent(k.id)}`;
+const count = n => n === 1 ? T('1 træner', '1 trainer') : `${n} ${T('trænere', 'trainers')}`;
+const query = () => $('sog').value.trim().toLowerCase();
+const inSystem = (k, id) => id === 'alle' || systemsOf(k).includes(id);
+const matches = (k, q) => inSystem(k, SYS) && (!q || `${k.titel} ${k.beskrivelse}`.toLowerCase().includes(q));
 
-function renderSystem(id){
-  const sys = SYSTEMS.find(s => s.id === id) || SYSTEMS[0];
-  store(sys.id);
-  document.getElementById('systabs').innerHTML = SYSTEMS.map(s =>
-    `<button role="tab" data-id="${s.id}" aria-selected="${s.id === sys.id}">${esc(s.navn)}</button>`).join('');
-  document.querySelectorAll('#systabs button').forEach(b => b.addEventListener('click', () => {
-    history.replaceState(null, '', `?system=${b.dataset.id}#traen`);
-    renderSystem(b.dataset.id);
-  }));
-  document.getElementById('syskort').innerHTML = `${suits(sys.kort)} · <a href="${esc(sys.viden)}">${sys.id === 'forslag' ? T('Læs forslagene', 'Read the proposals')
-    : T('Læs aftalerne', 'Read the agreements')}</a>${T('', ' (in Danish)')}`;
-
-  const groups = {};
-  const systemsOf = k => Array.isArray(k.system) ? k.system : [k.system];
-  CONVENTIONS.filter(k => systemsOf(k).includes(sys.id)).forEach(k => (groups[k.gruppe] = groups[k.gruppe] || []).push(k));
-  document.getElementById('konventioner').innerHTML = Object.entries(groups).map(([g, ks]) => `
-    <p class="grouphead">${esc(g)}</p>
-    <div class="tiles">${ks.map(k => {
-      const others = systemsOf(k).filter(x => x !== sys.id).map(x => (SYSTEMS.find(s => s.id === x) || {}).navn).filter(Boolean);
-      const shared = others.length ? `<span class="shared">${T('Også i', 'Also in')} ${esc(others.join(T(' og ', ' and ')))}</span>` : '';
-      const roles = `<div class="roles">${k.roller.map(r => `<span>${esc(W(r))}</span>`).join('')}${shared}</div>`;
-      return k.status === 'klar'
-        ? `<a class="tile" href="${esc(k.side || 'traener.html')}?k=${encodeURIComponent(k.id)}"><h3>${suits(k.titel)}</h3><p>${suits(k.beskrivelse)}</p>${roles}<div class="meta">${T('Træn 8 hænder →', 'Practise 8 hands →')}</div></a>`
-        : `<div class="tile soon"><h3>${suits(k.titel)}</h3><p>${suits(k.beskrivelse)}</p>${roles}<div class="meta">${T('Kommer', 'Coming')}${k.viden ? ` · <a href="${esc(k.viden)}">${T('Aftalen', 'The agreement')}</a>` : ''}</div></div>`;
-    }).join('')}</div>`).join('');
+function card(k){
+  const tags = systemsOf(k).map(id => `<span class="badge${id === 'forslag' ? ' forslag' : ''}">${esc(badge(id))}</span>`).join('');
+  const body = `<span class="kort-tags">${tags}</span><h4 class="kort-titel">${suits(k.titel)}</h4>`
+    + `<p class="kort-tekst">${suits(k.beskrivelse)}</p><span class="kort-roller">${k.roller.map(r => esc(W(r))).join(' · ')}</span>`;
+  return k.status === 'klar'
+    ? `<a class="kort" href="${esc(href(k))}">${body}<span class="kort-cta"><span class="tekst">${T('Træn 8', 'Practise 8')} </span><span aria-hidden="true">→</span></span></a>`
+    : `<div class="kort kommer">${body}<span class="kort-cta">${T('Kommer', 'Coming')}</span></div>`;
 }
 
-Promise.all(['data/systemer.json', 'data/konventioner.json', 'data/viden.json'].map(u => fetch(u).then(r => r.json())))
-  .then(([systems, conventions, docs]) => {
-    SYSTEMS = L(systems); CONVENTIONS = L(conventions); docs = L(docs);
-    renderSystem(new URLSearchParams(location.search).get('system') || stored() || systems[0].id);
-    const name = id => (SYSTEMS.find(s => s.id === id) || {}).navn || '';
-    document.getElementById('videnTiles').innerHTML = docs.map(d =>
-      `<a class="tile" href="${esc(d.href)}"><div class="grp">${esc(d.type)} · <span class="sys">${esc(name(d.system))}</span>${T('', ' · in Danish')}</div><h3>${suits(d.titel)}</h3><p>${suits(d.beskrivelse)}</p></a>`).join('');
+function renderFilter(){
+  const all = [{ id: 'alle', navn: T('Alle', 'All') }].concat(SYSTEMS);
+  $('filter').innerHTML = all.map(s => `<button type="button" class="chip" data-id="${esc(s.id)}" aria-pressed="${s.id === SYS}">`
+    + `${esc(s.navn)}<span class="n">${SHOWN.filter(k => inSystem(k, s.id)).length}</span></button>`).join('');
+  const sys = sysById(SYS);
+  $('sysline').hidden = !sys;
+  if (sys) $('sysline').innerHTML = `${T('Viser trænerne for', 'Showing the trainers for')} ${esc(sys.navn)}. <a href="${esc(sys.viden)}">`
+    + `${sys.id === 'forslag' ? T('Læs forslagene', 'Read the proposals') : T('Aftalerne for ', 'The agreements for ') + esc(sys.navn)}${T('', ' (in Danish)')} →</a>`;
+}
+
+function renderRecent(){
+  const ks = recent().map(id => SHOWN.find(k => k.id === id)).filter(k => k && k.status === 'klar').slice(0, 3);
+  $('senest').hidden = !ks.length;
+  $('senestListe').innerHTML = ks.map(k => `<a class="pill" href="${esc(href(k))}">${suits(k.titel)}<span class="sys">${esc(badge(systemsOf(k)[0]))}</span></a>`).join('');
+}
+
+function renderTrainers(){
+  const q = query();
+  const parts = PARTS.map(p => ({ ...p, emner: p.emner.map(e => ({ ...e, items: SHOWN.filter(k => e.match(k) && matches(k, q)) })).filter(e => e.items.length) }))
+    .filter(p => p.emner.length);
+  const topics = parts.flatMap(p => p.emner);
+  $('tomt').hidden = topics.length > 0;
+  $('gaatil').hidden = !topics.length;
+  $('gaatilListe').innerHTML = topics.map(e => `<a class="pill" href="#${esc(e.id)}">${esc(e.navn)}</a>`).join('');
+  $('dele').innerHTML = parts.map(p => `
+    <section class="del" aria-labelledby="del-${esc(p.id)}">
+      <div class="del-head"><h2 id="del-${esc(p.id)}">${esc(p.navn)}</h2>${p.linje ? `<p>${esc(p.linje)}</p>` : ''}</div>
+      ${p.emner.map(e => `
+      <div class="emne" id="${esc(e.id)}">
+        <div class="emne-head"><h3>${esc(e.navn)}</h3><span>${count(e.items.length)}</span></div>
+        <div class="kortgrid">${e.items.map(card).join('')}</div>
+      </div>`).join('')}
+    </section>`).join('');
+}
+
+function render(){ renderFilter(); renderTrainers(); }
+
+Promise.all(['data/systemer.json', 'data/konventioner.json', 'data/emner.json'].map(u => fetch(u).then(r => r.json())))
+  .then(([systems, conventions, parts]) => {
+    SYSTEMS = L(systems);
+    // Kun konventioner med et system vises; kamp-landy har intet system og vises ikke, som før
+    SHOWN = L(conventions).filter(k => systemsOf(k).length);
+    const known = new Set();
+    PARTS = L(parts).map(p => ({ ...p, emner: p.emner.map(e => (known.add(e.id), { ...e, match: k => k.emne === e.id })) }));
+    // En konvention uden et kendt emne står under en sidste del, så den aldrig forsvinder
+    PARTS.push({ id: 'andet', navn: T('Andet', 'Other'), linje: '', emner: [{ id: 'andet-emne', navn: T('Uden emne', 'Without a topic'), match: k => !known.has(k.emne) }] });
+    const p = new URLSearchParams(location.search).get('system');
+    if (sysById(p)) SYS = p;
+    $('optaelling').textContent = `${count(SHOWN.filter(k => k.status === 'klar').length)} · ${ROUND_SIZE} ${T('meldeforløb pr. runde', 'auctions per round')}`;
+    $('filter').setAttribute('aria-label', T('Vis trænere fra', 'Show trainers from'));
+    $('filter').addEventListener('click', e => {
+      const b = e.target.closest('button[data-id]');
+      if (!b) return;
+      SYS = b.dataset.id;
+      if (SYS !== 'alle') store(SYS);
+      render();
+    });
+    $('sog').addEventListener('input', renderTrainers);
+    $('nulstil').addEventListener('click', () => { SYS = 'alle'; $('sog').value = ''; render(); $('sog').focus(); });
+    render();
+    renderRecent();
   })
   .catch(() => {
-    document.getElementById('konventioner').innerHTML = `<p class="small">${T('Kunne ikke hente listen over konventioner. Åbn siden via GitHub Pages eller en lokal webserver.',
+    $('dele').innerHTML = `<p class="small">${T('Kunne ikke hente listen over konventioner. Åbn siden via GitHub Pages eller en lokal webserver.',
       'Could not load the list of conventions. Open the page via GitHub Pages or a local web server.')}</p>`;
   });
 </script>

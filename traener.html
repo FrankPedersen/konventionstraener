@@ -496,7 +496,15 @@ function setupChooser(k, list, systems){
       .catch(() => fail(T('Kunne ikke hente hånd-puljen.', 'Could not load the hand pool.')));
   }));
 }
+// "Senest trænet" på forsiden: højst tre konventioner, nyeste først, uden dubletter
+function remember(k){
+  try {
+    const a = JSON.parse(localStorage.getItem('senest') || '[]');
+    localStorage.setItem('senest', JSON.stringify([k].concat(Array.isArray(a) ? a.filter(x => x !== k) : []).slice(0, 3)));
+  } catch (e) {}
+}
 function startRound(){
+  remember(id);
   let hands = POOL.hands;
   if (PROFILE) hands = hands.map(h => resolveForProfile(h, PROFILE)).filter(Boolean);
   Q = shuffle(hands).slice(0, ROUND_SIZE).map(h => buildQuestion(h, POOL.situations[h.situation]));
@@ -530,5 +538,7 @@ Promise.all(['data/konventioner.json', 'data/systemer.json'].map(u => fetch(u).t
     : T('Kunne ikke hente hånd-puljen. Åbn siden via GitHub Pages eller en lokal webserver — ikke direkte som fil.',
         'Could not load the hand pool. Open the page via GitHub Pages or a local web server — not directly as a file.')));
 </script>
+<footer id="sidefod"></footer>
+<script src="assets/footer.js"></script>
 </body>
 </html>

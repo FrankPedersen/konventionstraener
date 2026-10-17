@@ -298,6 +298,13 @@ function renderDone(){
   $('restartBtn').addEventListener('click', () => location.reload());
 }
 
+// "Senest trænet" på forsiden: højst tre konventioner, nyeste først, uden dubletter
+function remember(k){
+  try {
+    const a = JSON.parse(localStorage.getItem('senest') || '[]');
+    localStorage.setItem('senest', JSON.stringify([k].concat(Array.isArray(a) ? a.filter(x => x !== k) : []).slice(0, 3)));
+  } catch (e) {}
+}
 function fail(msg){
   $('board').innerHTML = `<p class="qtext">${msg}</p><p class="small"><a href="./#traen">${T('← Tilbage til konventionerne', '← Back to the conventions')}</a></p>`;
 }
@@ -327,6 +334,7 @@ Promise.all(['data/konventioner.json', 'data/systemer.json'].map(u => fetch(u).t
   .then(pool => {
     POOL = L(pool); SITS = POOL.situations;
     Q = shuffle(POOL.hands).slice(0, ROUND_SIZE);
+    remember(id);
     render();
   })
   .catch(e => fail(e.message === 'ukendt'
@@ -334,5 +342,7 @@ Promise.all(['data/konventioner.json', 'data/systemer.json'].map(u => fetch(u).t
     : T('Kunne ikke hente hånd-puljen. Åbn siden via GitHub Pages eller en lokal webserver — ikke direkte som fil.',
         'Could not load the hand pool. Open the page via GitHub Pages or a local web server — not directly as a file.')));
 </script>
+<footer id="sidefod"></footer>
+<script src="assets/footer.js"></script>
 </body>
 </html>

@@ -906,7 +906,14 @@ function renderDone(){
   document.getElementById('restartBtn').addEventListener('click', () => location.reload());
 }
 
+// "Senest trænet" på forsiden: multitræneren står som Multiforsvar mod 1NT (SPEC-traen-side.md, Afklaret punkt 2)
+try {
+  const a = JSON.parse(localStorage.getItem('senest') || '[]');
+  localStorage.setItem('senest', JSON.stringify(['multiforsvar'].concat(Array.isArray(a) ? a.filter(x => x !== 'multiforsvar') : []).slice(0, 3)));
+} catch (e) {}
 render();
 </script>
+<footer id="sidefod"></footer>
+<script src="assets/footer.js"></script>
 </body>
 </html>
