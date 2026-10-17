@@ -320,7 +320,7 @@ ul.liste{margin:0;padding-left:1.2rem;display:grid;gap:6px;max-width:62ch}
 .kompakt td.bud{width:5.5rem}
 .kompakt .mere{font-size:.85rem;color:var(--accent-ink);font-weight:600;text-decoration:none}
 .ramme{display:grid;gap:10px;justify-items:center}
-.ramme p{margin:0;color:var(--mute);font-size:.88rem;text-align:center;max-width:44ch}
+.ramme > p{margin:0;color:var(--mute);font-size:.88rem;text-align:center;max-width:44ch}
 
 /* skabelon */
 .felt td:first-child{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86rem;white-space:nowrap}
@@ -344,10 +344,8 @@ button.chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 @media (prefers-reduced-motion:no-preference){ .tabs button{transition:background .15s,color .15s} }
 @media (max-width:520px){ td.styrke{white-space:normal} td.bud{width:auto} }
 `;
-  // Kortet står til venstre under titlen i stedet for centreret som på Viden. Kildens .ramme p er ment for noten under
-  // kortet, men rammer også kortets egne afsnit; her står de til venstre i fuld bredde.
+  // Kortet står til venstre under titlen i stedet for centreret som på Viden, og uden noten under kortet
   var HINT_CSS = '.kk-body{padding:0}.ramme{justify-items:start}.ramme > p{display:none}.kompakt{justify-self:start;max-width:40rem}'
-    + '.kompakt p{text-align:left;max-width:none}'
     + '.kk-sprog{margin:0 0 8px;font-size:.85rem;color:var(--mute)}';
 
   var style = document.createElement('style');

@@ -11,10 +11,8 @@
 /*SCRIPT*/
 
   var CSS = `/*CSS*/`;
-  // Kortet står til venstre under titlen i stedet for centreret som på Viden. Kildens .ramme p er ment for noten under
-  // kortet, men rammer også kortets egne afsnit; her står de til venstre i fuld bredde.
+  // Kortet står til venstre under titlen i stedet for centreret som på Viden, og uden noten under kortet
   var HINT_CSS = '.kk-body{padding:0}.ramme{justify-items:start}.ramme > p{display:none}.kompakt{justify-self:start;max-width:40rem}'
-    + '.kompakt p{text-align:left;max-width:none}'
     + '.kk-sprog{margin:0 0 8px;font-size:.85rem;color:var(--mute)}';
 
   var style = document.createElement('style');
