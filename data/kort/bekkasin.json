@@ -1,0 +1,538 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "bekkasin",
+  "navn": "Bekkasin 2NT",
+  "undertitel": "Stærk støtte til 1♥/1♠: 13+ sp og 4+ trumf",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 2 · Bridgesystem v1.7 · afsnit 4.5 og 8.4 · træneren pools/bekkasin.json",
+  "kategori": "svar",
+  "noegle": "bla",
+  "alert": "2NT alerteres",
+  "formaal": "At vise udgangsstøtte og lade åbner beskrive minimum, tillæg eller korthed i ét træk, så slem kan vurderes.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "1♥"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Makker åbner 1♥ eller 1♠, og du har 13+ sp og mindst 4 korts støtte.",
+    "gaelderFor": "Svar på 1♥/1♠ uden indmelding i farve"
+  },
+  "kortfortalt": "2NT lover 13+ sp og 4+ korts støtte. Åbner viser minimum (3♣), tillæg uden korthed (3♦) eller tillæg med korthed (3♥, 3♠, 3NT), og svarer er kaptajn.",
+  "meldinger": [
+    {
+      "gruppe": "Svarer"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "bla",
+      "styrke": "13+ sp",
+      "viser": "4+ korts støtte. Svarer er kaptajn resten af forløbet"
+    },
+    {
+      "gruppe": "Åbners svar"
+    },
+    {
+      "bud": "3♣",
+      "noegle": "gul",
+      "styrke": "12–15 hp",
+      "viser": "Minimum, med eller uden korthed"
+    },
+    {
+      "bud": "3♦",
+      "noegle": "gul",
+      "styrke": "16+ hp",
+      "viser": "Tillæg uden korthed"
+    },
+    {
+      "bud": "3♥",
+      "noegle": "gul",
+      "styrke": "16+ hp",
+      "viser": "Tillæg og korthed i klør"
+    },
+    {
+      "bud": "3♠",
+      "noegle": "gul",
+      "styrke": "16+ hp",
+      "viser": "Tillæg og korthed i ruder"
+    },
+    {
+      "bud": "3NT",
+      "noegle": "gul",
+      "styrke": "16+ hp",
+      "viser": "Tillæg og korthed i den modsatte major"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Svarer efter åbners svar",
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "4 i trumf",
+          "noegle": "gron",
+          "viser": "Afmelding"
+        },
+        {
+          "bud": "Cuebid",
+          "noegle": "gul",
+          "styrke": "17+ sp",
+          "viser": "Slemambition: billigste kontrolfarve, derefter 1430"
+        }
+      ],
+      "note": "Efter 3♥/3♠/3NT kan svarer devaluere honnører i kortfarven. I træneren giver 17 sp slemambition over åbners tillæg."
+    },
+    {
+      "titel": "Svarer efter 3♣: spørg om korthed",
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "3♦",
+          "noegle": "bla",
+          "styrke": "15+ sp",
+          "viser": "Spørger, om åbner alligevel har en kortfarve. Krav"
+        },
+        {
+          "bud": "4 i trumf",
+          "noegle": "gron",
+          "viser": "Afmelding"
+        }
+      ]
+    },
+    {
+      "titel": "Åbner efter 3♦-spørgsmålet",
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "3♥",
+          "noegle": "gul",
+          "viser": "Korthed i klør, stadig minimum"
+        },
+        {
+          "bud": "3♠",
+          "noegle": "gul",
+          "viser": "Korthed i ruder, stadig minimum"
+        },
+        {
+          "bud": "3NT",
+          "noegle": "gul",
+          "viser": "Korthed i den modsatte major, stadig minimum"
+        },
+        {
+          "bud": "4 i trumf",
+          "noegle": "gron",
+          "styrke": "12–15 hp",
+          "viser": "Ingen korthed: helt jævn minimum. Svarer passer normalt"
+        }
+      ],
+      "note": "Trinene er de samme som ved tillæg, blot ét niveau lavere."
+    }
+  ],
+  "indmelding": [
+    {
+      "situation": "Modparten melder ind i farve",
+      "noegle": "gra",
+      "regel": "Bekkasin er slået fra. Cuebid af modpartens farve er den stærke støttemelding."
+    }
+  ],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          10,
+          8,
+          7
+        ],
+        "H": [
+          14,
+          13,
+          11,
+          10,
+          7
+        ],
+        "D": [
+          9,
+          5,
+          4
+        ],
+        "C": [
+          5
+        ]
+      },
+      "svar": "3♣",
+      "forklaring": "12 hp er minimum (højst 15): 3♣ – med eller uden korthed. Makker kan spørge efter din korthed i klør med 3♦."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          11,
+          5,
+          2
+        ],
+        "H": [
+          14,
+          12,
+          7,
+          5,
+          3,
+          2
+        ],
+        "D": [
+          14,
+          13,
+          4
+        ],
+        "C": []
+      },
+      "svar": "3♥",
+      "forklaring": "16 hp er tillæg (16+) med korthed i klør: 3♥."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          3
+        ],
+        "H": [
+          14,
+          12,
+          6,
+          4
+        ],
+        "D": [
+          13,
+          12,
+          5,
+          2
+        ],
+        "C": [
+          12,
+          11,
+          5,
+          3
+        ]
+      },
+      "svar": "3♦",
+      "forklaring": "17 sp giver slemambition over et minimum: 3♦ spørger, om åbner alligevel har en korthed."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          11,
+          6,
+          4
+        ],
+        "H": [
+          12,
+          9,
+          8,
+          3,
+          2
+        ],
+        "D": [
+          12,
+          11
+        ],
+        "C": [
+          13,
+          2
+        ]
+      },
+      "svar": "4♥",
+      "forklaring": "Ingen korthed – helt jævn minimumshånd: 4♥. Svarer passer normalt."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          7,
+          4
+        ],
+        "H": [
+          14,
+          6,
+          4,
+          3
+        ],
+        "D": [
+          13,
+          12,
+          4,
+          2
+        ],
+        "C": [
+          13,
+          12
+        ]
+      },
+      "svar": "4♣",
+      "forklaring": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♣ viser konge i klør. Farver, du springer over (spar), benægter kontrol."
+    }
+  ],
+  "faldgruber": [
+    "Bekkasin bruges på alle hænder med 13+ sp og 4+ trumf, også uden kortfarve.",
+    "3♣ siger kun minimum. Kortfarven kan stadig findes med 3♦.",
+    "Svarer er kaptajn: åbner beskriver kun sin hånd.",
+    "Efter åbners korthed er honnører i kortfarven mindre værd."
+  ],
+  "aabne": [
+    "Efter modpartens dobling: gælder Bekkasin fortsat, eller bruges Jordan 2NT (invit og opad) med redobling som 10+ hp uden støtte? Kilderne er ikke enige."
+  ],
+  "relaterede": [
+    "Omvendt Bergen",
+    "Revideret omvendt Bergen",
+    "Cuebids"
+  ],
+  "traener": {
+    "url": "traener.html?k=bekkasin",
+    "pool": "pools/bekkasin.json"
+  }
+}

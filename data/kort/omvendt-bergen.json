@@ -1,0 +1,481 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "omvendt-bergen",
+  "navn": "Omvendt Bergen",
+  "undertitel": "Støtte til 1♥/1♠ med 4+ trumf: 3♦ og 3♣",
+  "kilde": "Bridgesystem v1.7 · afsnit 4.1, 4.3–4.4 og 8.4 · træneren pools/omvendt-bergen.json",
+  "kategori": "svar",
+  "noegle": "gul",
+  "alert": "3♣ og 3♦ alerteres",
+  "formaal": "At vise 4-korts støtte og styrken i ét træk, så åbner kan vælge delkontrakt eller udgang.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "1♥"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Makker åbner 1♥ eller 1♠, og modparten passer. Du har støtte til majoren.",
+    "gaelderFor": "Svar på 1♥/1♠ uden indmelding i farve"
+  },
+  "kortfortalt": "Med 4+ korts støtte viser 3♦ 7–10 sp og 3♣ 10–11 sp; 3M og 4M er destruktive, og 2NT er Bekkasin. Åbner tæller støttepoint og melder udgang, når parret når 26.",
+  "meldinger": [
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "styrke": "0–5 hp",
+      "viser": "For svag til at melde"
+    },
+    {
+      "bud": "2M",
+      "noegle": "gron",
+      "styrke": "6–9 sp",
+      "viser": "3-korts støtte, konstruktivt"
+    },
+    {
+      "bud": "3♦",
+      "noegle": "gul",
+      "styrke": "7–10 sp",
+      "viser": "4+ korts støtte"
+    },
+    {
+      "bud": "3♣",
+      "noegle": "gul",
+      "styrke": "10–11 sp",
+      "viser": "4+ korts støtte"
+    },
+    {
+      "bud": "3M",
+      "noegle": "rosa",
+      "styrke": "0–6 sp",
+      "viser": "4-korts støtte, destruktivt"
+    },
+    {
+      "bud": "4M",
+      "noegle": "rosa",
+      "styrke": "0–9 sp",
+      "viser": "5-korts støtte, destruktivt"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "bla",
+      "styrke": "13+ sp",
+      "viser": "Bekkasin: 4+ korts støtte"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Åbner efter 3♦",
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "3M",
+          "noegle": "gron",
+          "viser": "Afmelding: parret når ikke 26"
+        },
+        {
+          "bud": "4M",
+          "noegle": "gron",
+          "viser": "Udgang: parret når 26"
+        },
+        {
+          "bud": "3♥ over 1♠",
+          "noegle": "gul",
+          "viser": "Spørger: minimum (7–8 sp) eller maksimum (9–10 sp)?"
+        }
+      ],
+      "note": "Over 1♥ er der ikke plads til at spørge: 3♥ er afmelding, og åbner regner med 9 sp (midt i 7–10) hos makker."
+    },
+    {
+      "titel": "Åbner efter 3♣",
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "3♦",
+          "noegle": "gul",
+          "viser": "Spørger: minimum (10 sp) eller maksimum (11 sp)?"
+        },
+        {
+          "bud": "3M",
+          "noegle": "gron",
+          "viser": "Afmelding"
+        },
+        {
+          "bud": "4M",
+          "noegle": "gron",
+          "viser": "Udgang"
+        },
+        {
+          "bud": "Cuebid",
+          "noegle": "gul",
+          "viser": "Sleminteresse"
+        }
+      ]
+    },
+    {
+      "titel": "Svarer efter spørgsmålet",
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "3M",
+          "noegle": "gron",
+          "viser": "Minimum: 10 sp efter 3♣, 7–8 sp efter 3♦"
+        },
+        {
+          "bud": "4M",
+          "noegle": "gron",
+          "viser": "Maksimum: 11 sp efter 3♣, 9–10 sp efter 3♦"
+        }
+      ],
+      "note": "Åbner tæller støttepoint, når makker har vist støtte: doubleton 1, singleton 3, renonce 5 og 1 for en 6. trumf."
+    }
+  ],
+  "indmelding": [
+    {
+      "situation": "Modparten dobler",
+      "noegle": "gul",
+      "regel": "Omvendt Bergen gælder fortsat."
+    },
+    {
+      "situation": "Modparten melder ind i farve",
+      "noegle": "gra",
+      "regel": "Omvendt Bergen frafalder."
+    }
+  ],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          10,
+          7
+        ],
+        "H": [
+          14,
+          7,
+          5,
+          3
+        ],
+        "D": [
+          14,
+          10,
+          8,
+          5
+        ],
+        "C": [
+          5,
+          4,
+          3
+        ]
+      },
+      "svar": "3♦",
+      "forklaring": "4+ korts støtte og 9 sp: 3♦ – Omvendt Bergen, 7–10 sp."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11,
+          7,
+          2
+        ],
+        "H": [
+          9,
+          8,
+          6,
+          4
+        ],
+        "D": [
+          14,
+          12,
+          11,
+          8,
+          5
+        ],
+        "C": [
+          5
+        ]
+      },
+      "svar": "3♣",
+      "forklaring": "4+ korts støtte og 11 sp: 3♣ – Omvendt Bergen, 10–11 sp."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          9,
+          8,
+          5
+        ],
+        "H": [
+          14,
+          13,
+          9,
+          5
+        ],
+        "D": [
+          11,
+          9,
+          6,
+          4,
+          2
+        ],
+        "C": [
+          5
+        ]
+      },
+      "svar": "4♥",
+      "forklaring": "11 sp er maksimum for 3♣: 4♥."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14
+        ],
+        "H": [
+          12,
+          10,
+          9,
+          6,
+          5
+        ],
+        "D": [
+          12,
+          4,
+          2
+        ],
+        "C": [
+          14,
+          9,
+          4,
+          3
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "15 sp (12 hp + single ♠ = 3) + højst 10 hos makker er under 26: afmeld i 3♥."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          4,
+          2
+        ],
+        "H": [
+          13,
+          11,
+          9,
+          8,
+          2
+        ],
+        "D": [
+          14,
+          13,
+          9,
+          4
+        ],
+        "C": [
+          12,
+          2
+        ]
+      },
+      "svar": "3♦",
+      "forklaring": "15 sp (13 hp + double ♠ = 1 + double ♣ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger."
+    }
+  ],
+  "faldgruber": [
+    "3♣ og 3♦ er kunstige: de viser støtte til majoren, ikke farven.",
+    "Over 1♥ er 3♥ efter 3♦ afmelding, ikke et spørgsmål.",
+    "Med præcis 10 sp vælger svarer selv mellem 3♦ og 3♣.",
+    "Omvendt Bergen lover 4 trumf. Med 3-korts støtte meldes 2M eller 2-over-1 først."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "Bekkasin"
+  ],
+  "forveksles": [
+    "Revideret omvendt Bergen"
+  ],
+  "traener": {
+    "url": "traener.html?k=omvendt-bergen",
+    "pool": "pools/omvendt-bergen.json"
+  }
+}

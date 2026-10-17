@@ -1,0 +1,366 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "ff-revideret-omvendt-bergen",
+  "navn": "Revideret omvendt Bergen",
+  "undertitel": "Støtte til 1♥/1♠: 3♣ med præcis 3 trumf, 3♦ med 4+",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 1 · træneren pools/ff-revideret-omvendt-bergen.json",
+  "kategori": "svar",
+  "noegle": "gul",
+  "alert": "3♣ og 3♦ alerteres",
+  "formaal": "At skille 3- og 4-korts støtte ad i den inviterende zone, så åbner ved, hvor mange trumf parret har.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "1♥"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Makker åbner 1♥ eller 1♠ (12–21 hp, 5+ kort), og modparten passer.",
+    "gaelderFor": "Svar på 1♥/1♠ uden indblanding"
+  },
+  "kortfortalt": "3♣ og 3♦ viser begge 10–12 sp – 3♣ med præcis 3 trumf, 3♦ med 4+. 2M er 6–9 sp, 3M og 4M er spærrende, og 2NT er Bekkasin.",
+  "meldinger": [
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "styrke": "0–5 hp",
+      "viser": "For svag til at melde"
+    },
+    {
+      "bud": "1NT",
+      "noegle": "brun",
+      "styrke": "6–12 hp",
+      "viser": "Benægter 3-korts støtte (over 1♥ også 4 spar). Semikrav"
+    },
+    {
+      "bud": "2M",
+      "noegle": "gron",
+      "styrke": "6–9 sp",
+      "viser": "3–4 korts støtte"
+    },
+    {
+      "bud": "3♣",
+      "noegle": "gul",
+      "styrke": "10–12 sp",
+      "viser": "Præcis 3 korts støtte"
+    },
+    {
+      "bud": "3♦",
+      "noegle": "gul",
+      "styrke": "10–12 sp",
+      "viser": "4+ korts støtte"
+    },
+    {
+      "bud": "3M",
+      "noegle": "rosa",
+      "styrke": "6–9 sp",
+      "viser": "4+ korts støtte, spærrende"
+    },
+    {
+      "bud": "4M",
+      "noegle": "rosa",
+      "styrke": "4–9 sp",
+      "viser": "5+ korts støtte, spærrende, ingen sleminteresse"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "bla",
+      "styrke": "13+ sp",
+      "viser": "Bekkasin: mindst 4 korts støtte"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Åbner efter 3♣ / 3♦",
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "3M",
+          "noegle": "gron",
+          "viser": "Minimum: parret når ikke 26"
+        },
+        {
+          "bud": "4M",
+          "noegle": "gron",
+          "viser": "Tillæg: parret når 26"
+        },
+        {
+          "bud": "Cuebid",
+          "noegle": "gul",
+          "viser": "Sleminteresse"
+        }
+      ],
+      "note": "Åbner er kaptajn og regner med 11 sp (midt i 10–12) hos makker."
+    },
+    {
+      "titel": "Åbner efter 2M",
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "Pas",
+          "noegle": "gra",
+          "viser": "Minimum"
+        },
+        {
+          "bud": "3M",
+          "noegle": "gron",
+          "styrke": "15–16 sp",
+          "viser": "Invit"
+        },
+        {
+          "bud": "4M",
+          "noegle": "gron",
+          "styrke": "17+ sp",
+          "viser": "Udgang"
+        },
+        {
+          "bud": "Ny farve",
+          "noegle": "gul",
+          "viser": "Trial bid: beder om hjælp i farven"
+        }
+      ]
+    }
+  ],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          10,
+          8,
+          6
+        ],
+        "H": [
+          13,
+          9,
+          8
+        ],
+        "D": [
+          11,
+          3
+        ],
+        "C": [
+          14,
+          12,
+          8,
+          6,
+          4
+        ]
+      },
+      "svar": "3♣",
+      "forklaring": "Præcis 3 trumf og 11 sp: 3♣ (10–12 sp)."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          3
+        ],
+        "H": [
+          14,
+          7,
+          6,
+          2
+        ],
+        "D": [
+          9,
+          8,
+          6,
+          3
+        ],
+        "C": [
+          14,
+          11,
+          10,
+          5
+        ]
+      },
+      "svar": "3♦",
+      "forklaring": "4 trumf og 12 sp: 3♦ – 10–12 sp med 4+ støtte."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          10,
+          6,
+          5
+        ],
+        "H": [
+          13,
+          9,
+          4,
+          2
+        ],
+        "D": [
+          13,
+          9,
+          7,
+          6,
+          4
+        ],
+        "C": [
+          4
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "4 trumf og 9 sp: 3♥ – spærrende (6–9 sp, 4+ støtte)."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          9,
+          4,
+          3
+        ],
+        "H": [
+          14,
+          13,
+          8,
+          7,
+          6
+        ],
+        "D": [
+          14,
+          11,
+          7,
+          5,
+          4
+        ],
+        "C": []
+      },
+      "svar": "4♥",
+      "forklaring": "17 sp (12 hp + renonce ♣ = 5) + 11 (midt i makkers 10–12) når 26: du er kaptajn – 4♥."
+    }
+  ],
+  "faldgruber": [
+    "3♣ og 3♦ viser samme styrke. Forskellen er antallet af trumf.",
+    "3M er spærrende (6–9 sp), ikke inviterende.",
+    "Efter 3♣/3♦ er åbner kaptajn."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "Bekkasin",
+    "Longsuit trial bids"
+  ],
+  "forveksles": [
+    "Omvendt Bergen"
+  ],
+  "traener": {
+    "url": "traener.html?k=ff-revideret-omvendt-bergen",
+    "pool": "pools/ff-revideret-omvendt-bergen.json"
+  }
+}

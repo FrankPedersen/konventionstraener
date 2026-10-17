@@ -66,4 +66,10 @@ De øvrige kort – Franks svar (17. oktober 2026):
 20. **Puljefund (ikke rettet):** i 8 af 22 opgaver om første afkast mod sans i `pools/markeringer.json` mangler det laveste kort i afkastfarven både i `valg` og i forklaringen. Fx har hånd 182 ♥B632, men kortrækken og forklaringen viser ♥ B 6 3. Hånden står derfor med 12 kort. Bedømmelsen er rigtig, så det er en skønhedsfejl. Den rettes kun efter aftale med Frank.
 21. **Markeringer er godkendt og flettet ind** (Frank, 17. oktober 2026). Puljefundet i punkt 20 er ikke rettet.
 22. **Slem** (3 kort: `cuebids`, `1430`, `ff-1430`): Bridgesystemet angiver ikke svarene på 4NT. De står på 1430-kortet efter puljen (5♣ 1/4, 5♦ 0/3, 5♥/5♠ 2 uden/med dame), og kf-puljen har ingen hænder med 5 nøglekort. RKC-kortet har "2 eller 5" og kongespørgsmålets svar efter det andet dokument. Cuebids følger dokumentets regler; grænsen på 17 sp for slemambition over åbners tillæg står i puljen. Afsnit 3 (indmelding) er tomt på alle tre kort, fordi kilderne ikke beskriver det. 1430 og RKC 1430 er samme konvention og står derfor under "Spiller sammen med".
+23. **Slem er godkendt og flettet ind** (Frank, 17. oktober 2026).
+24. **Støtte** (5 kort: `omvendt-bergen`, `bekkasin`, `ff-revideret-omvendt-bergen`, `ff-trial-bids`, `ff-omvendt-minor`). Kilderne er uenige fire steder. Kortene følger trænerne og nævner uenigheden under Åbne spørgsmål, hvor det er relevant:
+    - Bekkasin efter modpartens dobling: Bridgesystem 8.4 siger "gælder fortsat", det andet dokument siger "slået fra" og bruger Jordan 2NT.
+    - Trial bids: skemaet og træneren regner 4 små kort som hjælp; dokumentets eksempel siger, at x-x-x-x uden honnør giver for mange tabere. Styrken for trial bid er 15–17 sp i dokumentet og 14–16 sp i træneren (4M direkte med 17+).
+    - Omvendt Bergen: trænerens beskrivelse i `data/konventioner.json` siger "25-reglen", men puljen regner med 26. Kortet bruger 26.
+    - Bonusspørgsmålene i tre puljer (`ff-omvendt-minor`, `ff-revideret-omvendt-bergen`, `ff-two-over-one`) nævner makkerskaberne, fx "hos Makker 2 & mig". Ikke rettet.
 

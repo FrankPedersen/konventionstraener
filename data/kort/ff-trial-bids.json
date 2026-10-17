@@ -1,0 +1,348 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "ff-trial-bids",
+  "navn": "Longsuit trial bids",
+  "undertitel": "Ny farve efter 1M – 2M beder om hjælp i farven",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 1 og 3 · træneren pools/ff-trial-bids.json",
+  "kategori": "genmelding",
+  "noegle": "gul",
+  "formaal": "At finde ud af, om makkers hånd passer til en svag sidefarve, før der meldes udgang.",
+  "situation": {
+    "auction": [
+      [
+        "Dig",
+        "1♥"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Makker",
+        "2♥"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Majorfit er fundet på 2-trinnet (makker har 6–9 sp), og du har udgangsambition, men en svag sidefarve.",
+    "gaelderFor": "1♥/1♠ – 2 i farven"
+  },
+  "kortfortalt": "En ny farve er invit og beder om hjælp i en farve med 3+ kort og 2–3 tabere. Makker melder 4M med hjælp – honnør, korthed eller 4 kort – og 3M uden.",
+  "meldinger": [
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "viser": "Minimum: udgang er udelukket over for 6–9 sp"
+    },
+    {
+      "bud": "Ny farve",
+      "noegle": "gul",
+      "styrke": "15–16 sp",
+      "viser": "Trial bid: den svageste farve med 3+ kort og 2–3 tabere"
+    },
+    {
+      "bud": "3M",
+      "noegle": "gron",
+      "styrke": "15–16 sp",
+      "viser": "Invit uden en svag sidefarve"
+    },
+    {
+      "bud": "4M",
+      "noegle": "gron",
+      "styrke": "17+ sp",
+      "viser": "Udgang direkte"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Makker svarer på trial bid",
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "4M",
+          "noegle": "gron",
+          "viser": "Hjælp i farven: honnør, singleton eller renonce, eller 4 kort"
+        },
+        {
+          "bud": "3M",
+          "noegle": "gron",
+          "viser": "Ingen hjælp: ingen honnør, 2–3 små"
+        },
+        {
+          "bud": "Ny farve",
+          "noegle": "gul",
+          "viser": "Hjælp dér og maksimum"
+        }
+      ],
+      "note": "Typisk har svarer 8–9 sp, når han melder 4M, og 6–7 sp uden hjælp."
+    }
+  ],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          5,
+          4
+        ],
+        "H": [
+          14,
+          11,
+          9,
+          7,
+          5
+        ],
+        "D": [
+          14,
+          11,
+          9
+        ],
+        "C": [
+          13,
+          11,
+          6
+        ]
+      },
+      "svar": "3♣",
+      "forklaring": "15 sp (14 hp + double ♠ = 1) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          3
+        ],
+        "H": [
+          14,
+          10,
+          8,
+          6,
+          3
+        ],
+        "D": [
+          7,
+          3
+        ],
+        "C": [
+          14,
+          12,
+          11,
+          10
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "16 sp (14 hp + double ♠ = 1 + double ♦ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          10,
+          2
+        ],
+        "H": [
+          11,
+          8,
+          2
+        ],
+        "D": [
+          14,
+          8,
+          7,
+          6
+        ],
+        "C": [
+          10,
+          8,
+          5,
+          3
+        ]
+      },
+      "svar": "4♥",
+      "forklaring": "Hjælp i klør (4 kort): 4♥."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          10,
+          8,
+          3
+        ],
+        "H": [
+          14,
+          12,
+          5
+        ],
+        "D": [
+          10,
+          8,
+          6,
+          4
+        ],
+        "C": [
+          8,
+          3,
+          2
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "Ingen hjælp i spar (ingen honnør, 2–3 små): 3♥."
+    }
+  ],
+  "faldgruber": [
+    "Trial bid er en hjælpeanmodning, ikke en farvemelding.",
+    "Meld trial bid i den svageste farve – aldrig i en stærk farve.",
+    "Uden en sidefarve med 2–3 tabere inviterer åbner med 3M.",
+    "Over 1♥ – 2♥ er 2♠ også trial bid."
+  ],
+  "aabne": [
+    "Tæller 4 små kort som hjælp? Skemaet og træneren siger ja, men kildens eksempel siger, at x-x-x-x uden honnør giver for mange tabere.",
+    "Styrken for trial bid: kilden siger 15–17 sp, træneren bruger 14–16 sp og melder 4M direkte med 17+."
+  ],
+  "relaterede": [
+    "Revideret omvendt Bergen"
+  ],
+  "traener": {
+    "url": "traener.html?k=ff-trial-bids",
+    "pool": "pools/ff-trial-bids.json"
+  }
+}

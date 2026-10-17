@@ -1,0 +1,398 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "ff-omvendt-minor",
+  "navn": "Omvendt minor",
+  "undertitel": "Stærk støtte på 2-trinnet, svag på 3-trinnet efter 1♣/1♦",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 6 · træneren pools/ff-omvendt-minor.json",
+  "kategori": "svar",
+  "noegle": "gul",
+  "alert": "2 i åbningsfarven alerteres",
+  "formaal": "At vise stærk minorstøtte billigt, så parret kan lede efter 3NT, og at spærre med svag støtte.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "1♦"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Makker åbner 1♣ (2+ kort) eller 1♦ (4+ kort), og modparten passer.",
+    "gaelderFor": "Svar på 1♣/1♦ uden indmelding i farve"
+  },
+  "kortfortalt": "2 i åbningsfarven er stærk støtte (10+ sp), og 3 i farven er spærrende (6–9 sp). En 4-farve i major meldes først.",
+  "meldinger": [
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "viser": "Svag"
+    },
+    {
+      "bud": "1 i major",
+      "noegle": "gron",
+      "styrke": "6+ hp",
+      "viser": "4+ farve – meldes før minorstøtten"
+    },
+    {
+      "bud": "1NT",
+      "noegle": "brun",
+      "styrke": "6–10 hp",
+      "viser": "Benægter 4-farve i major og støtte"
+    },
+    {
+      "bud": "2 i åbningsfarven",
+      "noegle": "gul",
+      "styrke": "10+ sp",
+      "viser": "Stærk støtte: 4+ ruder / 5+ klør"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "brun",
+      "styrke": "11–12 hp",
+      "viser": "Naturlig invit uden 4-farve i major"
+    },
+    {
+      "bud": "3 i åbningsfarven",
+      "noegle": "rosa",
+      "styrke": "6–9 sp",
+      "viser": "Spærrende: 4+ ruder / 5+ klør"
+    },
+    {
+      "bud": "4 i åbningsfarven",
+      "noegle": "bla",
+      "styrke": "13–16 sp",
+      "viser": "Sleminvit med god støtte og ingen kortfarve – beder åbner cuebidde"
+    },
+    {
+      "bud": "3NT",
+      "noegle": "brun",
+      "styrke": "13–15 hp",
+      "viser": "Jævn uden 4-farve i major, hold i begge majorer"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Åbner efter 1♦ – 2♦",
+      "auction": [
+        [
+          "Dig",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "2NT",
+          "noegle": "brun",
+          "styrke": "12–14 hp",
+          "viser": "Minimum, jævn, hold i de tre umeldte farver"
+        },
+        {
+          "bud": "Ny farve",
+          "noegle": "gul",
+          "viser": "Hold i farven, benægter hold i farverne under"
+        },
+        {
+          "bud": "3NT",
+          "noegle": "brun",
+          "viser": "Sikkert hold i alle umeldte farver"
+        },
+        {
+          "bud": "3 i farven",
+          "noegle": "gron",
+          "viser": "Minimum uden hold overalt"
+        }
+      ],
+      "note": "Efter den stærke støtte leder parret efter 3NT: ny farve viser hold, billigste først."
+    },
+    {
+      "titel": "Svarer efter åbners svar",
+      "meldinger": [
+        {
+          "bud": "4 i farven",
+          "noegle": "gul",
+          "viser": "Invit til udgang"
+        },
+        {
+          "bud": "5 i farven",
+          "noegle": "gron",
+          "styrke": "15–18 sp",
+          "viser": "Uden sleminteresse"
+        },
+        {
+          "bud": "3NT",
+          "noegle": "brun",
+          "viser": "Slutmelding"
+        }
+      ]
+    }
+  ],
+  "indmelding": [
+    {
+      "situation": "Modparten dobler",
+      "noegle": "gul",
+      "regel": "Intet ændres: 2 i åbningsfarven viser stadig 10+ sp med stærk støtte."
+    }
+  ],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11,
+          9,
+          8
+        ],
+        "H": [
+          9,
+          8,
+          2
+        ],
+        "D": [
+          14,
+          13,
+          12,
+          8,
+          7
+        ],
+        "C": [
+          9,
+          6
+        ]
+      },
+      "svar": "2♦",
+      "forklaring": "5 ruder og 11 sp: 2♦ – stærk støtte (10+)."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          5,
+          2
+        ],
+        "H": [
+          11,
+          10,
+          3
+        ],
+        "D": [
+          14,
+          11,
+          9,
+          7,
+          3
+        ],
+        "C": [
+          11,
+          8,
+          2
+        ]
+      },
+      "svar": "3♦",
+      "forklaring": "5 ruder og 8 sp: 3♦ – spærrende (6–9)."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          11,
+          4
+        ],
+        "H": [
+          14,
+          9,
+          6,
+          5,
+          3
+        ],
+        "D": [
+          11,
+          9,
+          8,
+          2
+        ],
+        "C": [
+          5
+        ]
+      },
+      "svar": "1♥",
+      "forklaring": "5 hjerter: 4-farven i major meldes først – 1♥."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          9,
+          3
+        ],
+        "H": [
+          14,
+          10,
+          2
+        ],
+        "D": [
+          14,
+          8,
+          7,
+          6
+        ],
+        "C": [
+          12,
+          4,
+          2
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "Minimum (13 hp), jævn og hold i klør, hjerter, spar: 2NT."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          13,
+          9,
+          6
+        ],
+        "H": [
+          11,
+          7
+        ],
+        "D": [
+          13,
+          10,
+          5,
+          3,
+          2
+        ],
+        "C": [
+          13,
+          12
+        ]
+      },
+      "svar": "2♠",
+      "forklaring": "Tillæg (16 hp): 2♠ viser hold i spar og benægter hold i hjerter."
+    }
+  ],
+  "faldgruber": [
+    "Strukturen er omvendt af majorens: 2-trinnet er stærkt, 3-trinnet svagt.",
+    "En 4-farve i major meldes før minorstøtten.",
+    "1♣ lover kun 2+ kort. Derfor kræver støtte i klør 5+ kort.",
+    "Efter den stærke støtte søges 3NT: ny farve viser hold, ikke længde."
+  ],
+  "aabne": [
+    "Efter en indmelding i farve: er den stærke støttemelding slået fra, så cuebid af modpartens farve bruges i stedet?"
+  ],
+  "relaterede": [
+    "Cuebids"
+  ],
+  "traener": {
+    "url": "traener.html?k=ff-omvendt-minor",
+    "pool": "pools/ff-omvendt-minor.json"
+  }
+}
