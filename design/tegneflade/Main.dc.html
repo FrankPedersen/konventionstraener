@@ -50,7 +50,7 @@ a{color:#1a1a1a}a:hover{color:#0f0f0f}
       </sc-for>
     </div>
     <sc-if value="{{showSysLink}}" hint-placeholder-val="{{false}}">
-      <p style="flex: 1 1 100%; margin: 0; font-size: 14px; line-height: 20px; color: var(--body);">Viser trænerne for {{sysName}}. <a href="{{sysHref}}" target="_blank" rel="noopener" style="font-weight: 600; color: var(--ink);">Aftalerne for {{sysName}} →</a></p>
+      <p style="flex: 1 1 100%; margin: 0; font-size: 14px; line-height: 20px; color: var(--body);">Viser trænerne for {{sysName}}. <a href="{{sysHref}}" style="font-weight: 600; color: var(--ink);">{{sysLinkText}} →</a></p>
     </sc-if>
   </section>
 
@@ -58,7 +58,7 @@ a{color:#1a1a1a}a:hover{color:#0f0f0f}
     <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px;">
       <span style="font-size: 14px; line-height: 20px; font-weight: 600; color: var(--ink); margin-right: 4px;">Senest trænet</span>
       <sc-for list="{{recent}}" as="r" hint-placeholder-count="3">
-        <a href="{{r.href}}" target="_blank" rel="noopener" class="kt-jump" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 9999px; background: var(--canvas); color: var(--ink); text-decoration: none; font-size: 14px; line-height: 20px; font-weight: 600;"><x-import component-from-global-scope="SubtleGradient.SuitText">{{r.t}}</x-import><span style="font-weight: 400; color: var(--body);">{{r.sys}}</span></a>
+        <a href="{{r.href}}" class="kt-jump" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 9999px; background: var(--canvas); color: var(--ink); text-decoration: none; font-size: 14px; line-height: 20px; font-weight: 600;"><x-import component-from-global-scope="SubtleGradient.SuitText">{{r.t}}</x-import><span style="font-weight: 400; color: var(--body);">{{r.sys}}</span></a>
       </sc-for>
     </div>
   </x-import>
@@ -91,7 +91,7 @@ a{color:#1a1a1a}a:hover{color:#0f0f0f}
             <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 16px;">
               <sc-for list="{{tp.items}}" as="it" hint-placeholder-count="3">
                 <sc-if value="{{it.klar}}" hint-placeholder-val="{{true}}">
-                  <x-import component-from-global-scope="SubtleGradient.Card" as="a" href="{{it.href}}" target="_blank" rel="noopener" class="kt-card" style="display: flex;">
+                  <x-import component-from-global-scope="SubtleGradient.Card" as="a" href="{{it.href}}" class="kt-card" style="display: flex;">
                     <div style="display: flex; flex-direction: column; gap: 12px; flex: 1 1 auto;">
                       <div style="display: flex; flex-wrap: wrap; gap: 6px;">
                         <sc-for list="{{it.tags}}" as="tag" hint-placeholder-count="1">
@@ -130,7 +130,7 @@ a{color:#1a1a1a}a:hover{color:#0f0f0f}
             <div style="display: flex; flex-direction: column; gap: 2px; padding: 8px; background: var(--canvas); border-radius: 24px;">
               <sc-for list="{{tp.items}}" as="it" hint-placeholder-count="3">
                 <sc-if value="{{it.klar}}" hint-placeholder-val="{{true}}">
-                  <a href="{{it.href}}" target="_blank" rel="noopener" class="kt-row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 12px 16px; border-radius: 16px; color: var(--ink); text-decoration: none;">
+                  <a href="{{it.href}}" class="kt-row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 12px 16px; border-radius: 16px; color: var(--ink); text-decoration: none;">
                     <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column;">
                       <span style="font-size: 16px; line-height: 24px; font-weight: 600;"><x-import component-from-global-scope="SubtleGradient.SuitText">{{it.t}}</x-import></span>
                       <span style="font-size: 14px; line-height: 20px; color: var(--body); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><x-import component-from-global-scope="SubtleGradient.SuitText">{{it.d}}</x-import></span>
@@ -175,19 +175,19 @@ a{color:#1a1a1a}a:hover{color:#0f0f0f}
       <div class="sg-footer-cols">
         <div class="sg-footer-col">
           <span class="sg-footer-col-title">Trænere</span>
-          <a class="sg-footer-link" href="https://frankpedersen.github.io/konventionstraener/">Konventionstræner</a>
-          <a class="sg-footer-link" href="https://frankpedersen.github.io/fordelingstraeneren/">Fordeling</a>
-          <a class="sg-footer-link" href="https://frankpedersen.github.io/fordelingstraeneren/">Pointregnskab</a>
-          <a class="sg-footer-link" href="https://frankpedersen.github.io/fordelingstraeneren/">Farvebehandling</a>
-          <a class="sg-footer-link" href="https://frankpedersen.github.io/fordelingstraeneren/">Håndevaluering</a>
+          <a class="sg-footer-link" href="https://www.kontraktbridge.dk/konventionstraener/">Konventionstræner</a>
+          <a class="sg-footer-link" href="https://www.kontraktbridge.dk/fordelingstraeneren/">Fordeling</a>
+          <a class="sg-footer-link" href="https://www.kontraktbridge.dk/fordelingstraeneren/">Pointregnskab</a>
+          <a class="sg-footer-link" href="https://www.kontraktbridge.dk/fordelingstraeneren/">Farvebehandling</a>
+          <a class="sg-footer-link" href="https://www.kontraktbridge.dk/fordelingstraeneren/">Håndevaluering</a>
         </div>
         <div class="sg-footer-col">
           <span class="sg-footer-col-title">Aftaler og notater</span>
-          <a class="sg-footer-link" href="https://frankpedersen.github.io/konventionstraener/viden/bridgesystem.html">Makker 1 &amp; mig</a>
-          <a class="sg-footer-link" href="https://frankpedersen.github.io/konventionstraener/viden/2-over-1-makker2.html">Makker 2 &amp; mig</a>
-          <a class="sg-footer-link" href="https://frankpedersen.github.io/konventionstraener/viden/kampen-om-kontrakten.html">Kampen om kontrakten</a>
-          <a class="sg-footer-link" href="https://frankpedersen.github.io/konventionstraener/viden/#forslag">Forslag</a>
-          <a class="sg-footer-link" href="https://frankpedersen.github.io/konventionstraener/viden/#forskelle">Forskelle mellem systemerne</a>
+          <a class="sg-footer-link" href="https://www.kontraktbridge.dk/konventionstraener/viden/bridgesystem.html">Makker 1 &amp; mig</a>
+          <a class="sg-footer-link" href="https://www.kontraktbridge.dk/konventionstraener/viden/2-over-1-makker2.html">Makker 2 &amp; mig</a>
+          <a class="sg-footer-link" href="https://www.kontraktbridge.dk/konventionstraener/viden/kampen-om-kontrakten.html">Kampen om kontrakten</a>
+          <a class="sg-footer-link" href="https://www.kontraktbridge.dk/konventionstraener/viden/#forslag">Forslag</a>
+          <a class="sg-footer-link" href="https://www.kontraktbridge.dk/konventionstraener/viden/#forskelle">Forskelle mellem systemerne</a>
         </div>
         <div class="sg-footer-col" style="max-width: 240px;">
           <span class="sg-footer-col-title">Kontakt</span>
@@ -208,7 +208,7 @@ class Component extends DCLogic {
     this.state = Object.assign({ sys: 'alle', q: '' }, this.state || {});
   }
   renderVals() {
-    const BASE = 'https://frankpedersen.github.io/konventionstraener/';
+    const BASE = 'https://www.kontraktbridge.dk/konventionstraener/';
     const SYS = {
       kf: { badge: 'Makker 1', name: 'Makker 1 & mig', doc: 'viden/bridgesystem.html' },
       ff: { badge: 'Makker 2', name: 'Makker 2 & mig', doc: 'viden/2-over-1-makker2.html' },
@@ -335,11 +335,12 @@ class Component extends DCLogic {
       chips,
       showSysLink: sys !== 'alle',
       sysName: sys !== 'alle' ? SYS[sys].name : '',
+      sysLinkText: sys === 'forslag' ? 'Læs forslagene' : (sys !== 'alle' ? 'Aftalerne for ' + SYS[sys].name : ''),
       sysHref: sys !== 'alle' ? BASE + SYS[sys].doc : BASE + 'viden/',
       recent: [
         { t: 'Revideret omvendt Bergen', sys: 'Makker 2', href: BASE + 'traener.html?k=ff-revideret-omvendt-bergen' },
         { t: 'Multiforsvar mod 1NT', sys: 'Makker 1', href: BASE + 'traener.html?k=multiforsvar' },
-        { t: 'Flannery 2♦', sys: 'Forslag', href: BASE + 'traener.html?k=ff-flannery' }
+        { t: 'Flannery', sys: 'Forslag', href: BASE + 'traener.html?k=ff-flannery' }
       ],
       jump: topics.map((tp) => ({ id: tp.id, name: tp.name })),
       sections,
@@ -356,7 +357,7 @@ class Component extends DCLogic {
           { label: 'Forskelle mellem systemerne', href: BASE + 'viden/#forskelle' }
         ] },
         { title: 'Flere trænere', links: [
-          { label: 'Fordelingstræneren', href: 'https://frankpedersen.github.io/fordelingstraeneren/' }
+          { label: 'Fordelingstræneren', href: 'https://www.kontraktbridge.dk/fordelingstraeneren/' }
         ] }
       ]
     };

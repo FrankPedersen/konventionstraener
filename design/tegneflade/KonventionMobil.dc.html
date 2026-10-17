@@ -30,7 +30,7 @@ a{color:#1a1a1a}a:hover{color:#0f0f0f}
   <header style="display: flex; flex-direction: column; gap: 8px; padding-top: 4px;">
     <span style="font-size: 14px; line-height: 20px; font-weight: 600; color: var(--body);">45 trænere · 8 meldeforløb pr. runde</span>
     <h1 style="margin: 0; font-family: var(--font-display); font-weight: 800; font-size: 34px; line-height: 1.05; letter-spacing: -0.02em; color: var(--ink);">Træn konventionerne, til de sidder</h1>
-    <p style="margin: 0; font-size: 16px; line-height: 24px; color: var(--body);">Vælg en konvention og få 8 tilfældige meldeforløb.</p>
+    <p style="margin: 0; font-size: 16px; line-height: 24px; color: var(--body);">Vælg en konvention og få 8 tilfældige meldeforløb. Nogle gange åbner eller melder du ind, andre gange svarer du makker.</p>
   </header>
 
   <section aria-label="Find en træner" style="display: flex; flex-direction: column; gap: 12px; padding: 16px; background: var(--canvas); border-radius: 24px;">
@@ -106,29 +106,35 @@ a{color:#1a1a1a}a:hover{color:#0f0f0f}
     </sc-for>
   </section>
 
-  <footer class="sg-footer" style="margin-top: 12px;">
+  <footer class="sg-footer" style="margin-top: 12px; padding: 32px 20px;">
     <div class="sg-footer-top">
       <div style="display: flex; flex-direction: column; gap: 10px;">
-        <span class="sg-footer-name">Kontraktbridge</span>
+        <a class="sg-footer-name" href="https://www.kontraktbridge.dk/" style="text-decoration: none;">Kontraktbridge</a>
         <h2 style="margin: 8px 0 0; font-size: 18px; line-height: 24px; font-weight: 600; color: var(--canvas-soft);">Om mig</h2>
         <p style="margin: 0; font-size: 16px; line-height: 24px; color: var(--canvas-soft);">Jeg er bridgeentusiast med forkærlighed for spillets kognitive udfordringer og det gode fællesskab omkring bordet. Jeg elsker at skabe og forbedre ting – og med AI som ny medspiller har jeg bygget et digitalt bridge-univers, der kombinerer logik, læring og spilleglæde.</p>
       </div>
-      <div class="sg-footer-col">
-        <span class="sg-footer-col-title">Kontakt</span>
-        <span>Har du fundet en fejl, eller har du en idé til en ny træner? Skriv til mig.</span>
-        <a class="sg-footer-link" href="mailto:frank.steen.pedersen@gmail.com" style="color: var(--primary); font-weight: 600;">frank.steen.pedersen@gmail.com</a>
-      </div>
-      <div class="sg-footer-col">
-        <span class="sg-footer-col-title">Aftaler og notater</span>
-        <a class="sg-footer-link" href="#">Makker 1 &amp; mig</a>
-        <a class="sg-footer-link" href="#">Makker 2 &amp; mig</a>
-        <a class="sg-footer-link" href="#">Kampen om kontrakten</a>
-        <a class="sg-footer-link" href="#">Forslag</a>
-      </div>
-      <div class="sg-footer-col">
-        <span class="sg-footer-col-title">Trænere</span>
-        <a class="sg-footer-link" href="#">Konventionstræner</a>
-        <a class="sg-footer-link" href="#">Fordelingstræneren</a>
+      <div class="sg-footer-cols">
+        <div class="sg-footer-col">
+          <span class="sg-footer-col-title">Trænere</span>
+          <a class="sg-footer-link" href="https://www.kontraktbridge.dk/konventionstraener/">Konventionstræner</a>
+          <a class="sg-footer-link" href="https://www.kontraktbridge.dk/fordelingstraeneren/">Fordeling</a>
+          <a class="sg-footer-link" href="https://www.kontraktbridge.dk/fordelingstraeneren/">Pointregnskab</a>
+          <a class="sg-footer-link" href="https://www.kontraktbridge.dk/fordelingstraeneren/">Farvebehandling</a>
+          <a class="sg-footer-link" href="https://www.kontraktbridge.dk/fordelingstraeneren/">Håndevaluering</a>
+        </div>
+        <div class="sg-footer-col">
+          <span class="sg-footer-col-title">Aftaler og notater</span>
+          <a class="sg-footer-link" href="https://www.kontraktbridge.dk/konventionstraener/viden/bridgesystem.html">Makker 1 &amp; mig</a>
+          <a class="sg-footer-link" href="https://www.kontraktbridge.dk/konventionstraener/viden/2-over-1-makker2.html">Makker 2 &amp; mig</a>
+          <a class="sg-footer-link" href="https://www.kontraktbridge.dk/konventionstraener/viden/kampen-om-kontrakten.html">Kampen om kontrakten</a>
+          <a class="sg-footer-link" href="https://www.kontraktbridge.dk/konventionstraener/viden/#forslag">Forslag</a>
+          <a class="sg-footer-link" href="https://www.kontraktbridge.dk/konventionstraener/viden/#forskelle">Forskelle mellem systemerne</a>
+        </div>
+        <div class="sg-footer-col">
+          <span class="sg-footer-col-title">Kontakt</span>
+          <span>Har du fundet en fejl, eller har du en idé til en ny træner? Skriv til mig.</span>
+          <a class="sg-footer-link" href="mailto:frank.steen.pedersen@gmail.com" style="color: var(--primary); font-weight: 600;">frank.steen.pedersen@gmail.com</a>
+        </div>
       </div>
     </div>
     <div class="sg-footer-legal">© 2026 Frank Pedersen</div>
@@ -156,7 +162,7 @@ class Component extends DCLogic {
       recent: [
         { t: 'Revideret omvendt Bergen', sys: 'Makker 2' },
         { t: 'Multiforsvar mod 1NT', sys: 'Makker 1' },
-        { t: 'Flannery 2♦', sys: 'Forslag' }
+        { t: 'Flannery', sys: 'Forslag' }
       ],
       jump: ['Åbninger', 'Svar på 1NT', 'Støtte', 'Videre meldeforløb', '1NT i konkurrence', 'Indmeldinger og genåbning', 'Doblinger', 'Støtte i konkurrence', 'Slem', 'Modspil'],
       topics: [
