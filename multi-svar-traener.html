@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/subtle-gradient.css">
 <script src="assets/lang.js"></script>
+<script src="assets/konventionskort-hint.js"></script>
 <style>
   :root {
     /* Light — "on paper": the system card's own cream and navy */
@@ -1074,6 +1075,8 @@ try {
   localStorage.setItem('senest', JSON.stringify(['multiforsvar'].concat(Array.isArray(a) ? a.filter(x => x !== 'multiforsvar') : []).slice(0, 3)));
 } catch (e) {}
 render();
+// ⓘ ved titlen: konventionskortet for Multiforsvar (SPEC-konventionskort, Afklaret 5)
+konventionskortHint('multiforsvar', document.querySelector('.wrap > h1'), document.querySelector('.wrap > p.sub'));
 </script>
 <footer id="sidefod"></footer>
 <script src="assets/footer.js"></script>

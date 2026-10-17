@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&text=%E2%99%A0%E2%99%A5%E2%99%A6%E2%99%A3&display=swap">
 <link rel="stylesheet" href="assets/site.css">
 <script src="assets/lang.js"></script>
+<script src="assets/konventionskort-hint.js"></script>
 <style>
   /* Markeringstræneren – samme opbygning som meldetræneren (traener.html), men med kort i stedet for meldeboks */
   .trainer{ max-width:64rem; padding-bottom:var(--sg-space-3xl); }
@@ -319,6 +320,8 @@ Promise.all(['data/konventioner.json', 'data/systemer.json'].map(u => fetch(u).t
     $('group').innerHTML = suits(k.gruppe);
     $('title').innerHTML = suits(k.titel);
     $('desc').innerHTML = suits(k.beskrivelse);
+    // ⓘ ved titlen, når konventionen har et konventionskort (SPEC-konventionskort, Afklaret 5)
+    konventionskortHint(k.id, $('title'), $('desc'));
     $('source').innerHTML = k.viden
       ? T(`Aftalerne står i <a href="${esc(k.viden)}">systemet for ${esc(names[0])}</a>, afsnit 9.`,
           `The agreements are in <a href="${esc(k.viden)}">the system for ${esc(names[0])}</a>, section 9 (in Danish).`)

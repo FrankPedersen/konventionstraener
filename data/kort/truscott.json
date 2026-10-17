@@ -1,0 +1,323 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "truscott",
+  "navn": "Truscott 2NT",
+  "undertitel": "Svar efter oplysningsdobling af makkers åbning",
+  "kilde": "Kromann: Truscott 2 UT + redobling (2012)",
+  "kategori": "konkurrence",
+  "noegle": "gul",
+  "alert": "2NT alerteres",
+  "formaal": "At vise styrke og eventuel støtte til makker, når modparten har doblet makkers åbning.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "1♥"
+      ],
+      [
+        "Modstander",
+        "X"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Makker åbner 1 i farve, og modparten dobler til oplysning.",
+    "gaelderFor": "Alle almindelige farveåbninger på 1-trinnet"
+  },
+  "kortfortalt": "Redobling viser styrke uden støtte, 2NT viser styrke med støtte. Direkte støtte er svag og spærrende.",
+  "meldinger": [
+    {
+      "gruppe": "Uden støtte"
+    },
+    {
+      "bud": "XX",
+      "noegle": "bla",
+      "styrke": "10+ hp",
+      "viser": "Gode værdier, ingen støtte til åbningsfarven"
+    },
+    {
+      "bud": "Ny farve",
+      "noegle": "gron",
+      "styrke": "5–8 hp",
+      "viser": "5+ farve, ingen støtte",
+      "krav": "Ikke krav"
+    },
+    {
+      "bud": "Spring i ny farve",
+      "noegle": "rosa",
+      "viser": "Spærremelding, ingen støtte"
+    },
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "styrke": "0–5 hp",
+      "viser": "Svag hånd, ingen støtte"
+    },
+    {
+      "gruppe": "Med støtte"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "gul",
+      "styrke": "10+ hp",
+      "viser": "Støtte til åbningsfarven, mindst invit"
+    },
+    {
+      "bud": "2 i farven",
+      "noegle": "gron",
+      "styrke": "0–9 hp",
+      "viser": "3-kortstøtte"
+    },
+    {
+      "bud": "3 i farven",
+      "noegle": "rosa",
+      "styrke": "0–9 hp",
+      "viser": "4-kortstøtte, spærrende"
+    },
+    {
+      "bud": "4 i farven",
+      "noegle": "rosa",
+      "styrke": "0–9 hp",
+      "viser": "5+ kortstøtte, spærrende"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Åbner efter 2NT",
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "X"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "3 i farven",
+          "noegle": "gron",
+          "viser": "Minimum, afslag"
+        },
+        {
+          "bud": "Ny farve",
+          "noegle": "bla",
+          "viser": "Udgangsforsøg"
+        },
+        {
+          "bud": "4 i farven",
+          "noegle": "gron",
+          "viser": "Udgang"
+        }
+      ],
+      "note": "Efter 2NT kan der fortsættes med Limit Stenberg eller Bekkasin, hvis det spilles."
+    },
+    {
+      "titel": "Åbner efter redobling",
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "X"
+        ],
+        [
+          "Makker",
+          "XX"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "Pas",
+          "noegle": "gra",
+          "viser": "Normalmeldingen. Svarer får lov at vise sin hånd"
+        },
+        {
+          "bud": "Dobling",
+          "noegle": "bla",
+          "viser": "Straf, når modparten flygter"
+        }
+      ],
+      "note": "Efter redoblingen har vi flertallet af styrken. Målet er ofte at straffe modparten."
+    }
+  ],
+  "indmelding": [
+    {
+      "situation": "Doblers makker melder efter 2NT",
+      "noegle": "gron",
+      "regel": "3 i åbningsfarven = minimum. Dobling = straf. Pas = minimum uden ønske om at konkurrere."
+    },
+    {
+      "situation": "Doblers makker melder efter XX",
+      "noegle": "bla",
+      "regel": "Dobling fra åbner eller svarer = straf. Pas lader makker beslutte."
+    }
+  ],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "X"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          5
+        ],
+        "H": [
+          12,
+          10,
+          7,
+          4
+        ],
+        "D": [
+          14,
+          9,
+          6,
+          3
+        ],
+        "C": [
+          13,
+          8,
+          2
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "12 hp og 4-kortstøtte. 2NT viser styrke med støtte."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "X"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          12,
+          8,
+          4
+        ],
+        "H": [
+          5,
+          3
+        ],
+        "D": [
+          13,
+          11,
+          9,
+          2
+        ],
+        "C": [
+          12,
+          7,
+          4
+        ]
+      },
+      "svar": "XX",
+      "forklaring": "12 hp uden støtte. Redobling viser styrken og lægger op til straf."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "X"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          7,
+          3
+        ],
+        "H": [
+          13,
+          9,
+          6,
+          2
+        ],
+        "D": [
+          11,
+          8,
+          5,
+          4,
+          2
+        ],
+        "C": [
+          6,
+          3
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "4 hp og 4-kortstøtte. Spring i farven er spærrende efter dobling."
+    }
+  ],
+  "faldgruber": [
+    "2NT er ikke naturlig sans. Den lover støtte.",
+    "Redobling benægter støtte til åbningsfarven.",
+    "Direkte støtte er svagere end uden dobling: 3 i farven er spærrende, ikke invit."
+  ],
+  "aabne": [
+    "Støttemeldinger kan i stedet spilles med Bergen-struktur."
+  ],
+  "relaterede": [
+    "Bergen",
+    "Limit Stenberg",
+    "Bekkasin"
+  ],
+  "forveksles": [
+    "Truscott-forsvar"
+  ]
+}

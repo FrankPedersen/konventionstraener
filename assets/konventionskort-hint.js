@@ -1,0 +1,409 @@
+/* ⓘ i trænerne: et tryk folder konventionskortets kompaktvisning ud under titlen (SPEC-konventionskort, Afklaret 5–9).
+   Genereret af tools/build_konventionskort.py fra tools/konventionskort.src.html og tools/konventionskort-hint-shell.js – ret dér, ikke her.
+   Brug: konventionskortHint(id, titel, efter) – knappen sættes i titel-elementet og kortet efter elementet efter.
+   Findes der intet kort med det id i data/kort/index.json, sker der ingenting. */
+(function () {
+  var me = document.currentScript;
+  var root = (me && me.getAttribute('src') || '').replace(/assets\/konventionskort-hint\.js.*$/, '');
+  var t = function (da, en) { return typeof T === 'function' ? T(da, en) : da; };
+
+  // Visningsfunktionerne fra tools/konventionskort.src.html (de samme som på viden/konventionskort.html)
+const KATEGORI = { aabning:'Åbning', svar:'Svar', genmelding:'Genmelding', konkurrence:'Konkurrence', forsvar:'Forsvar', slem:'Slem', modspil:'Modspil' };
+const ROLLE = { Modstander:'Modst.', Dig:'Dig', Makker:'Makker' };
+const RANG = {14:'E',13:'K',12:'D',11:'B'};
+const HP = {14:4,13:3,12:2,11:1};
+
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const kort = s => esc(s).replace(/♥|♦/g, m => `<span class="rd">${m}</span>`).replace(/♠|♣/g, m => `<span class="bk">${m}</span>`);
+
+function seq(auction){
+  return `<div class="seq">${auction.map(([who, bid]) => {
+    const cls = bid === '?' ? 'q' : who === 'Modstander' ? 'op' : 'os';
+    const vis = who === 'Modstander' && bid !== 'Pas' ? `(${bid})` : bid;
+    return `<div class="call ${cls}"><b>${kort(vis)}</b><small>${ROLLE[who] || esc(who)}</small></div>`;
+  }).join('')}</div>`;
+}
+
+/* Modspil har sin egen farvenøgle; værdierne genbruger de samme seks farver. */
+const FARVE = { kald:'gron', afvis:'rosa', antal:'bla', farvevalg:'gul', udspil:'brun' };
+const kcls = n => 'k-' + (FARVE[n] || n || 'gra');
+
+function tabel(rows, {styrke = true, krav = true, type = 'melding', forste, sidste = 'Viser'} = {}){
+  const fs = rows.some(r => r.farve || r.sans);
+  const harStyrke = !fs && styrke && rows.some(r => r.styrke);
+  const n = fs || harStyrke ? 3 : 2;
+  const h1 = forste || (type === 'modspil' ? 'Kort' : 'Melding');
+  const head = fs ? `<th>${h1}</th><th>Mod farve</th><th>Mod sans</th>` : `<th>${h1}</th>${harStyrke ? '<th>Styrke</th>' : ''}<th>${sidste}</th>`;
+  return `<div class="tw"><table><thead><tr>${head}</tr></thead><tbody>${
+    rows.map(r => r.gruppe ? `<tr class="grp"><td colspan="${n}">${kort(r.gruppe)}</td></tr>` : `<tr><td class="bud ${kcls(r.noegle)}">${kort(r.bud ?? r.kort)}</td>${
+      fs ? `<td>${kort(r.farve || '—')}</td><td>${kort(r.sans || '—')}</td>` :
+      `${harStyrke ? `<td class="styrke">${kort(r.styrke || '—')}</td>` : ''}<td>${kort(r.viser)}${
+      krav && r.krav ? `<span class="krav">${esc(r.krav)}</span>` : ''}</td>`}</tr>`).join('')
+  }</tbody></table></div>`;
+}
+
+function hand(h, visHp = true){
+  const order = [['S','♠','bk'],['H','♥','rd'],['D','♦','rd'],['C','♣','bk']];
+  let hp = 0;
+  const lines = order.map(([k, sym, c]) => {
+    const cards = (h[k] || []).slice().sort((a,b) => b-a);
+    cards.forEach(r => hp += HP[r] || 0);
+    return `<div><span class="sym ${c}">${sym}</span><span>${cards.length ? cards.map(r => RANG[r] || r).join(' ') : '—'}</span></div>`;
+  });
+  return `<div class="hand">${lines.join('')}${visHp ? `<div class="hp">${hp} hp</div>` : ''}</div>`;
+}
+
+const SYM = { S:'♠', H:'♥', D:'♦', C:'♣' };
+const kortkode = c => kort(SYM[c[0]] + (RANG[+c.slice(1)] || c.slice(1)));
+function stikVis(stik){
+  if (!stik?.length) return '';
+  return `<div class="seq">${stik.map(([who, c]) => `<div class="call os"><b>${kortkode(c)}</b><small>${esc(who)}</small></div>`).join('')}</div>`;
+}
+function exMelding(e){
+  return `<div class="ex">${seq(e.auction)}${hand(e.haand)}<div class="svar">Meld <b>${kort(e.svar)}</b></div><p>${kort(e.forklaring)}</p></div>`;
+}
+function exModspil(e){
+  const udspil = !e.bordet && !e.stik?.length;
+  const kast = e.stik?.length && e.stik[0][1][0] !== e.svar[0];
+  const verbum = udspil ? 'Spil ud' : kast ? 'Kast' : e.stik?.length ? 'Læg' : 'Spil';
+  return `<div class="ex"><p class="ctx">${kort(e.tekst)}</p><div class="haender">${
+    e.bordet ? `<div><span class="lbl">Bordet</span>${hand(e.bordet, false)}</div>` : ''}<div><span class="lbl">Din hånd${e.du ? ' · ' + esc(e.du) : ''}</span>${hand(e.haand, false)}</div></div>${
+    stikVis(e.stik)}<div class="svar">${verbum} <b>${kortkode(e.svar)}</b></div><p>${kort(e.forklaring)}</p></div>`;
+}
+
+const tom = t => `<p class="tom">${t}</p>`;
+
+const NOEGLER = {
+  melding: [['gron','Naturlig / støtte'],['bla','Kaptajn / rundekrav'],['gul','Specialaftale, alertér'],['brun','Sans / jævn'],['rosa','Spærrende / advarsel'],['gra','Definition / pas']],
+  modspil: [['kald','Kald / opmuntrende'],['afvis','Afvisning / advarsel'],['antal','Antal'],['farvevalg','Farvevalg'],['udspil','Udspilskort'],['gra','Definition / regel']],
+};
+const NOEGLE = NOEGLER.melding;
+const TYPE = k => k.type === 'modspil' ? 'modspil' : 'melding';
+const TITLER = {
+  melding: { meldinger:'Meldingerne', fortsaettelser:'Fortsættelser', indmelding:'Ved modpartens indmelding' },
+  modspil: { meldinger:'Kortene', fortsaettelser:'Makkers læsning', indmelding:'Forrang og undtagelser' },
+};
+function brugte(k){
+  const s = new Set();
+  const add = rows => (rows || []).forEach(r => { if (!r.gruppe) s.add(r.noegle || 'gra'); });
+  add(k.meldinger); (k.fortsaettelser || []).forEach(f => add(f.meldinger)); add(k.indmelding);
+  return s;
+}
+function forklaring(k, kun){
+  const b = brugte(k);
+  const t = TYPE(k);
+  const liste = NOEGLER[t].filter(([n]) => !kun || b.has(n));
+  return `<div class="forkl"><span class="forkl-t">${t === 'modspil' ? 'Farverne i tabellen' : 'Farverne i meldingen'}</span><ul class="legend">${
+    liste.map(([n,t]) => `<li class="${kcls(n)}">${t}</li>`).join('')}</ul></div>`;
+}
+
+/* De faste afsnit. Rækkefølge og numre er de samme for alle konventioner. */
+const FASTE = { eksempler:'Eksempler', faldgruber:'Faldgruber', aabne:'Åbne spørgsmål' };
+const afsnitTitel = (id, k) => TITLER[TYPE(k)][id] || FASTE[id];
+const AFSNIT = [
+  ['meldinger', k => k.meldinger?.length ? forklaring(k, true) + tabel(k.meldinger, {type:TYPE(k)}) : tom('Ikke udfyldt')],
+  ['fortsaettelser', k => k.fortsaettelser?.length ? `<div class="afs" style="gap:8px">${
+      k.fortsaettelser.map((f, i) => `<details class="gren"${i === 0 ? ' open' : ''}><summary><span>${kort(f.titel)}</span></summary><div class="indhold">${
+        f.auction ? seq(f.auction) : ''}${tabel(f.meldinger, {type:TYPE(k)})}${f.note ? `<p class="note">${kort(f.note)}</p>` : ''}</div></details>`).join('')}</div>`
+    : tom('Ingen aftale endnu.')],
+  ['indmelding', k => k.indmelding?.length ? tabel(k.indmelding.map(x => ({bud:x.situation, noegle:x.noegle, viser:x.regel})), {styrke:false, forste:'Situation', sidste:'Regel'})
+    : tom('Ingen aftale endnu.')],
+  ['eksempler', k => k.eksempler?.length ? `<div class="eks${TYPE(k) === 'modspil' ? ' ms' : ''}">${
+      k.eksempler.map(TYPE(k) === 'modspil' ? exModspil : exMelding).join('')}</div>`
+    : tom('Ingen eksempler endnu')],
+  ['faldgruber', k => k.faldgruber?.length ? `<ul class="liste">${k.faldgruber.map(f => `<li>${kort(f)}</li>`).join('')}</ul>` : tom('Ingen noteret')],
+  ['aabne', k => k.aabne?.length ? `<ul class="liste">${k.aabne.map(f => `<li>${kort(f)}</li>`).join('')}</ul>` : tom('Ingen')],
+];
+
+function hoved(k, compact){
+  return `<div class="head">
+    <span class="eyebrow">${esc(KATEGORI[k.kategori] || k.kategori)}${k.type === 'modspil' && k.kategori !== 'modspil' ? ' · Modspil' : ''}</span>
+    <h2>${kort(k.navn)}</h2>
+    ${k.undertitel ? `<p class="sub">${kort(k.undertitel)}</p>` : ''}
+    ${k.alert ? `<div class="chips"><span class="chip alert">Alertér</span></div>` : ''}
+  </div>`;
+}
+
+function links(liste, label, cls=''){
+  if (!liste?.length) return '';
+  return `<div class="rel ${cls}"><b class="lbl">${label}</b>${liste.map(r => {
+    const m = ALLE.find(x => x.navn.toLowerCase().startsWith(r.toLowerCase()));
+    return m ? `<button class="chip lnk" data-k="${esc(m.id)}">${kort(m.navn)}</button>` : `<span class="chip">${kort(r)}</span>`; }).join('')}</div>`;
+}
+
+function fuld(k){
+  return `<article class="kort">
+    ${hoved(k)}
+    ${links(k.forveksles, 'Ikke at forveksle med', 'forv')}
+    <div class="sit">${k.situation.auction ? seq(k.situation.auction) : ''}<p>${kort(k.situation.tekst)}${k.alert ? ' ' + esc(k.alert) + '.' : ''}</p>${
+      k.situation.gaelderFor ? `<p><b class="lbl">Gælder for</b> ${kort(k.situation.gaelderFor)}</p>` : ''}</div>
+    <div class="intro"><p><b class="lbl">Formål</b> ${kort(k.formaal || '')}</p><p class="lead">${kort(k.kortfortalt)}</p></div>
+    ${AFSNIT.map(([id, fn], i) => `<section class="afs" id="a-${id}"><header><span class="nr">${i+1}</span><h3>${afsnitTitel(id, k)}</h3></header>${fn(k)}</section>`).join('')}
+    ${links(k.relaterede, 'Spiller sammen med')}
+    <footer class="fod"><span>${k.kilde ? 'Kilde: ' + esc(k.kilde) : ''}</span><span>Træner: <code>${esc(k.traener?.url || '—')}</code></span></footer>
+  </article>`;
+}
+
+function kompakt(k){
+  return `<div class="ramme"><article class="kort kompakt">
+    ${hoved(k, true)}
+    ${k.situation.auction ? seq(k.situation.auction) : `<p style="margin:0;color:var(--body)">${kort(k.situation.tekst)}</p>`}
+    <p style="margin:0;color:var(--body)">${kort(k.kortfortalt)}</p>
+    ${tabel(k.meldinger, {krav:false, type:TYPE(k)})}
+    ${forklaring({type:k.type, meldinger:k.meldinger}, true)}
+    <a class="mere" href="#a-meldinger" data-goto="fuld">Hele konventionen</a>
+  </article><p>Bruges som hint i træneren: kun hoved, situation, kort fortalt og afsnit 1. Alt kommer fra den samme fil.</p></div>`;
+}
+
+const FELTER = [
+  ['skabelon','fast','Skabelonens version: konvention/2. Siden og tjekket afviser filer med ukendt version.'],
+  ['type','fast','melding eller modspil. Styrer afsnitstitler, farvenøgle, tabelkolonner og eksemplernes form.'],
+  ['id','fast','Kort nøgle uden mellemrum. Bruges i URL og filnavn.'],
+  ['navn','fast','Konventionens navn.'],
+  ['undertitel','valgfri','Én linje om hvornår den bruges.'],
+  ['kategori','fast','aabning, svar, genmelding, konkurrence, forsvar, slem eller modspil.'],
+  ['noegle','fast','Farvenøglen for konventionen som helhed, fra nøglen for kortets type.'],
+  ['alert','valgfri','Tekst om alertering. Tomt = ingen alert.'],
+  ['kilde','valgfri','Hvor beskrivelsen stammer fra.'],
+  ['formaal','fast','Hvorfor konventionen findes. Én sætning.'],
+  ['situation','fast','tekst og gaelderFor. Melding: også auction (som i træner-puljerne). Modspil: ingen auction; gaelderFor nævner situationerne (udspil, afkast osv.).'],
+  ['kortfortalt','fast','Princippet i højst to sætninger. Det er det, kompaktvisningen viser.'],
+  ['meldinger','afsnit 1','Melding: bud, noegle, styrke, viser, evt. krav. Modspil: kort, noegle og viser – eller farve og sans, når svaret afhænger af kontrakten. En række med kun gruppe laver en mellemoverskrift.'],
+  ['fortsaettelser','afsnit 2','Grene med titel, meldinger og evt. note. Melding: også auction. Hedder "Makkers læsning" ved modspil.'],
+  ['indmelding','afsnit 3','Rækker med situation, noegle og regel, efter bedste praksis. Hedder "Forrang og undtagelser" ved modspil.'],
+  ['eksempler','afsnit 4','Melding: auction, haand, svar og forklaring. Modspil: kontrakt, trumf, du, bordet, haand, stik, tekst, svar (kortkode som S10) og forklaring – samme format som markeringstræneren.'],
+  ['faldgruber','afsnit 5','Liste af korte sætninger.'],
+  ['aabne','afsnit 6','Punkter, hvor konventionen spilles forskelligt.'],
+  ['forveksles','valgfri','Konventioner med samme eller lignende navn. Vises øverst på kortet.'],
+  ['relaterede','valgfri','Konventioner, den spiller sammen med. Bliver til links, når de har et kort.'],
+  ['traener','valgfri','url og pool til den tilhørende træner.'],
+];
+function skabelon(){
+  return `<article class="kort">
+    <div class="head"><span class="eyebrow">Skabelon konvention/2</span><h2>Felterne</h2>
+    <p class="sub">Alle seks afsnit vises altid, også når de er tomme. Et tomt afsnit står som "Ingen aftale endnu", så hullerne bliver synlige.</p></div>
+    <div class="tw"><table class="felt"><thead><tr><th>Felt</th><th>Type</th><th>Indhold</th></tr></thead><tbody>${
+      FELTER.map(([f,t,d]) => `<tr><td>${f}</td><td>${t}</td><td>${kort(d)}</td></tr>`).join('')}</tbody></table></div>
+    <section class="afs"><header><h3>Farvenøglen for meldinger</h3></header>
+      <ul class="legend">${NOEGLER.melding.map(([k,t]) => `<li class="${kcls(k)}"><b>${k}</b> ${t.toLowerCase()}</li>`).join('')}</ul></section>
+    <section class="afs"><header><h3>Farvenøglen for modspil</h3></header>
+      <ul class="legend">${NOEGLER.modspil.map(([k,t]) => `<li class="${kcls(k)}"><b>${k}</b> ${t.toLowerCase()}</li>`).join('')}</ul>
+      <p class="tom" style="font-style:normal">På kortet vises kun de farver, konventionen bruger, lige over afsnit 1.</p>
+      <p class="tom" style="font-style:normal">Den samme nøgle som i systemdokumenterne.</p></section>
+    <section class="afs"><header><h3>Regler for ensretning</h3></header>
+      <ul class="liste">
+        <li>Tabellerne bærer beskrivelsen. Tekst bruges kun til det, en tabel ikke kan vise, og gentager aldrig tabellen.</li>
+        <li>Formål og kort fortalt er højst én og to sætninger.</li>
+        <li>Ingen fritekst-afsnit. Alt, der ikke passer i et af de seks afsnit, skal ind som fortsættelse, faldgrube eller åbent spørgsmål.</li>
+        <li>Meldeforløb skrives altid som auction med roller (Modstander, Dig, Makker), aldrig som løs tekst.</li>
+        <li>Modspilseksempler bruger markeringstrænerens format, så kort og træner kan dele hænder.</li>
+        <li>Udspilsaftaler samles på ét kort, Udspil. Hver markeringsaftale med eget navn, fx Lavinthal, får sit eget kort.</li>
+        <li>Styrke angives i hp eller sp med tankestreg, fx 10–16 hp.</li>
+        <li>Kort skrives med E K D B 10. Spar og klør sort, hjerter og ruder rød.</li>
+        <li>Tal, som kilden ikke angiver, skrives ikke ind. Feltet står tomt.</li>
+        <li>Kortet er uafhængigt af makker. Hvem man spiller konventionen med, og om den er aftalt, hører ikke til her.</li>
+      </ul></section>
+  </article>`;
+}
+
+
+  var CSS = `
+/* Layout: én konvention = ét kort med faste, nummererede afsnit; samme rækkefølge i alle konventioner. */
+:host{display:block;
+  --canvas:var(--sg-canvas-soft,#f2f3f4); --card:#ffffff; --ink:#1c1c1b; --body:#55554f; --mute:#8b8a84; --line:#e3e2de;
+  --accent:#ff9f4a; --accent-ink:#8a4a10; --accent-soft:#fff1e3;
+  --red:#c62828; --black:#1c1c1b;
+  --k-gron:#e2f1e5; --k-bla:#dde8f6; --k-gul:#fff0bd; --k-brun:#f0e3d2; --k-rosa:#fadbe5; --k-gra:#eceeed;
+  --kb-gron:#5fae78; --kb-bla:#5f8fcf; --kb-gul:#d9ae2c; --kb-brun:#b0875c; --kb-rosa:#d27397; --kb-gra:#9aa39e;
+  --display:"Manrope",system-ui,sans-serif; --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r-xl:24px; --r-md:12px; --r-sm:8px;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+.kk-body{color:var(--ink);font:16px/1.6 var(--sans);padding:24px 0 64px}
+.wrap{max-width:52rem;margin:0 auto;display:grid;gap:20px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;color:var(--ink)}
+.s,.su{font-family:var(--sans)} .rd{color:var(--red)} .bk{color:var(--black)}
+.rd,.bk{font-family:var(--sg-sym,inherit);font-variant-emoji:text}
+
+/* top bar */
+.top{display:flex;flex-wrap:wrap;gap:12px;align-items:end;justify-content:space-between}
+.top h1{font-size:clamp(1.4rem,3.5vw,1.8rem);font-weight:800;letter-spacing:-.02em}
+.top p{margin:2px 0 0;color:var(--body);font-size:.92rem}
+.tabs{display:flex;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px}
+.tabs button{font:600 .86rem var(--sans);border:0;background:none;color:var(--body);padding:7px 14px;border-radius:999px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--card)}
+.tabs button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* kort */
+.kort{background:var(--card);border-radius:var(--r-xl);padding:clamp(20px,4vw,40px);display:grid;gap:28px;min-width:0}
+.head{display:grid;gap:10px}
+.eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+.head h2{font-size:clamp(2rem,6vw,2.8rem);font-weight:800;line-height:1;letter-spacing:-.03em}
+.head .sub{color:var(--body);font-size:1.05rem;margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:.78rem;font-weight:600;padding:3px 10px;border-radius:999px;border:1px solid var(--line);color:var(--body);white-space:nowrap}
+.chip.aftalt{background:var(--k-gron);border-color:transparent;color:var(--ink)}
+.chip.forslag{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink)}
+.chip.aaben{background:var(--k-rosa);border-color:transparent;color:var(--ink)}
+.chip.alert{background:var(--k-gul);border-color:transparent;color:var(--ink)}
+
+/* meldeforløb */
+.seq{display:flex;flex-wrap:wrap;gap:6px;align-items:flex-start}
+.call{display:grid;justify-items:center;gap:2px;min-width:3.2rem}
+.call b{font:700 1rem var(--sans);padding:5px 10px;border-radius:var(--r-sm);border:1px solid var(--line);min-width:3.2rem;text-align:center;font-variant-numeric:tabular-nums}
+.call.os b{background:var(--canvas);border-color:transparent}
+.call.op b{color:var(--mute)}
+.call.q b{background:var(--accent);border-color:var(--accent);color:#1c1c1b}
+.call small{font-size:.68rem;color:var(--mute);letter-spacing:.02em}
+.sit{display:grid;gap:10px;padding:16px;border-radius:var(--r-md);background:var(--canvas)}
+.sit p{margin:0;color:var(--body);font-size:.95rem}
+.lead{font-size:1.12rem;line-height:1.55;margin:0;max-width:62ch}
+
+/* afsnit */
+.afs{display:grid;gap:12px;min-width:0}
+.afs > header{display:flex;gap:10px;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:8px}
+.afs .nr{font:700 .8rem var(--sans);color:var(--accent-ink);font-variant-numeric:tabular-nums}
+.afs h3{font-size:1.2rem;font-weight:800;letter-spacing:-.01em}
+.tom{color:var(--mute);font-style:italic;margin:0;font-size:.95rem}
+
+/* tabel */
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.95rem}
+th{text-align:left;font:600 .76rem var(--sans);letter-spacing:.05em;text-transform:uppercase;color:var(--mute);padding:0 12px 6px;border-bottom:1px solid var(--line)}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+td.bud{font-weight:700;white-space:nowrap;border-left:4px solid transparent;width:7.5rem}
+td.styrke{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--body);width:7.5rem}
+td .krav.fs{background:var(--accent-soft);color:var(--accent-ink);border:1px solid var(--accent)}
+.afs .fs-chip{margin-left:auto;font-size:.74rem;font-weight:600;padding:1px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent-ink);border:1px solid var(--accent)}
+td .krav{display:inline-block;margin-left:6px;font-size:.74rem;font-weight:600;padding:1px 8px;border-radius:999px;background:var(--canvas);color:var(--body)}
+.k-gron{background:var(--k-gron);border-left-color:var(--kb-gron)!important}
+.k-bla{background:var(--k-bla);border-left-color:var(--kb-bla)!important}
+.k-gul{background:var(--k-gul);border-left-color:var(--kb-gul)!important}
+.k-brun{background:var(--k-brun);border-left-color:var(--kb-brun)!important}
+.k-rosa{background:var(--k-rosa);border-left-color:var(--kb-rosa)!important}
+.k-gra{background:var(--k-gra);border-left-color:var(--kb-gra)!important}
+
+/* fortsættelser */
+details.gren{border:1px solid var(--line);border-radius:var(--r-md);min-width:0}
+details.gren summary{cursor:pointer;padding:12px 16px;font-weight:600;display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;list-style:none}
+details.gren summary::-webkit-details-marker{display:none}
+details.gren summary::after{content:"+";font:600 1.1rem var(--sans);color:var(--mute)}
+details.gren[open] summary::after{content:"–"}
+details.gren summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:var(--r-md)}
+.gren .indhold{padding:0 16px 16px;display:grid;gap:12px}
+.note{font-size:.9rem;color:var(--body);margin:0;padding-left:12px;border-left:2px solid var(--line)}
+
+/* eksempler */
+.eks{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:12px}
+.ex{border:1px solid var(--line);border-radius:var(--r-md);padding:14px;display:grid;gap:10px;align-content:start}
+.hand{display:grid;gap:1px;font-variant-numeric:tabular-nums}
+.hand div{display:flex;gap:10px}
+.hand .sym{width:1rem;text-align:center}
+.hand .hp{font-size:.8rem;color:var(--mute);margin-top:4px}
+.svar{display:flex;gap:8px;align-items:center;font-size:.9rem;color:var(--body)}
+.svar b{font-size:1rem;color:var(--ink);background:var(--accent-soft);padding:2px 10px;border-radius:var(--r-sm)}
+.ex p{margin:0;font-size:.9rem;color:var(--body)}
+.eks.ms{grid-template-columns:repeat(auto-fit,minmax(17rem,1fr))}
+.ex .ctx{color:var(--ink)}
+.haender{display:flex;flex-wrap:wrap;gap:12px 28px}
+.haender > div{display:grid;gap:4px}
+
+ul.liste{margin:0;padding-left:1.2rem;display:grid;gap:6px;max-width:62ch}
+.fod{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;font-size:.85rem;color:var(--mute);border-top:1px solid var(--line);padding-top:14px}
+.fod code{font-size:.82rem}
+
+/* kompakt */
+.kompakt{max-width:26rem;width:100%;justify-self:center;padding:20px;gap:16px;border:1px solid var(--line)}
+.kompakt .head h2{font-size:1.5rem}
+.kompakt table{font-size:.9rem}
+.kompakt td.bud{width:5.5rem}
+.kompakt .mere{font-size:.85rem;color:var(--accent-ink);font-weight:600;text-decoration:none}
+.ramme{display:grid;gap:10px;justify-items:center}
+.ramme p{margin:0;color:var(--mute);font-size:.88rem;text-align:center;max-width:44ch}
+
+/* skabelon */
+.felt td:first-child{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86rem;white-space:nowrap}
+.felt td:nth-child(2){white-space:nowrap;color:var(--body)}
+.legend{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:0}
+.forkl{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}
+.forkl-t{font-size:.76rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--mute)}
+tr.grp td{font-size:.76rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--mute);padding-top:16px;border-bottom:1px solid var(--line)}
+.lbl{font-size:.74rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--mute);margin-right:6px}
+.intro{display:grid;gap:8px}.intro p{margin:0}
+.rel{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.rel.forv{margin-top:-14px}
+.valg{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+button.chip{font-family:var(--sans);background:var(--card);cursor:pointer}
+button.chip[aria-pressed="true"]{background:var(--ink);color:var(--card);border-color:var(--ink)}
+button.chip[aria-pressed="true"] .rd,button.chip[aria-pressed="true"] .bk{color:inherit}
+button.chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.legend li{color:var(--ink);font-size:.82rem;padding:3px 10px;border-radius:var(--r-sm);border-left:4px solid}
+.prose{display:grid;gap:10px;max-width:64ch}
+.prose p{margin:0;color:var(--body)}
+@media (prefers-reduced-motion:no-preference){ .tabs button{transition:background .15s,color .15s} }
+@media (max-width:520px){ td.styrke{white-space:normal} td.bud{width:auto} }
+`;
+  // Kortet står til venstre under titlen i stedet for centreret som på Viden. Kildens .ramme p er ment for noten under
+  // kortet, men rammer også kortets egne afsnit; her står de til venstre i fuld bredde.
+  var HINT_CSS = '.kk-body{padding:0}.ramme{justify-items:start}.ramme > p{display:none}.kompakt{justify-self:start;max-width:40rem}'
+    + '.kompakt p{text-align:left;max-width:none}'
+    + '.kk-sprog{margin:0 0 8px;font-size:.85rem;color:var(--mute)}';
+
+  var style = document.createElement('style');
+  style.textContent = '.kk-i{position:relative;display:inline-flex;align-items:center;justify-content:center;width:1.75rem;height:1.75rem;'
+    + 'margin-left:.35em;padding:0;border:2px solid currentColor;border-radius:50%;background:transparent;color:var(--sg-body,#55554f);'
+    + 'font:italic 700 1.05rem/1 Georgia,"Times New Roman",serif;vertical-align:middle;cursor:pointer}'
+    + '.kk-i::before{content:"";position:absolute;inset:-8px}'
+    + '.kk-i:hover{color:var(--sg-ink,#1c1c1b)}'
+    + '.kk-i[aria-expanded="true"]{background:var(--sg-ink,#1c1c1b);border-color:var(--sg-ink,#1c1c1b);color:#fff}'
+    + '.kk-i:focus-visible{outline:2px solid #ff9f4a;outline-offset:2px}'
+    + '.kk-hint{margin:16px 0 0}'
+    + '@media print{.kk-i,.kk-hint{display:none}}';
+  document.head.appendChild(style);
+
+  function panel(k) {
+    var ydre = document.createElement('div');
+    ydre.className = 'kk-hint';
+    ydre.id = 'kk-hint-' + k.id;
+    ydre.hidden = true;
+    var vaert = document.createElement('div');
+    ydre.appendChild(vaert);
+    var R = vaert.attachShadow({ mode: 'open' });
+    R.innerHTML = '<style>' + CSS + HINT_CSS + '</style><div class="kk-body">'
+      + (document.documentElement.lang === 'en' ? '<p class="kk-sprog">The convention card is in Danish.</p>' : '') + kompakt(k) + '</div>';
+    var mere = R.querySelector('.mere');
+    mere.removeAttribute('data-goto');
+    mere.href = root + 'viden/konventionskort.html#' + encodeURIComponent(k.id);
+    mere.textContent = 'Hele konventionen →';
+    return ydre;
+  }
+
+  window.konventionskortHint = function (id, titel, efter) {
+    if (!id || !titel || !efter) return;
+    fetch(root + 'data/kort/index.json').then(function (r) { return r.json(); })
+      .then(function (idx) { return idx.indexOf(id + '.json') < 0 ? null : fetch(root + 'data/kort/' + id + '.json').then(function (r) { return r.json(); }); })
+      .then(function (k) {
+        if (!k) return;
+        var ydre = panel(k);
+        efter.insertAdjacentElement('afterend', ydre);
+        var knap = document.createElement('button');
+        knap.type = 'button';
+        knap.className = 'kk-i';
+        knap.setAttribute('aria-expanded', 'false');
+        knap.setAttribute('aria-controls', ydre.id);
+        knap.setAttribute('aria-label', t('Om konventionen', 'About the convention (in Danish)'));
+        knap.title = knap.getAttribute('aria-label');
+        knap.innerHTML = '<span aria-hidden="true">i</span>';
+        knap.addEventListener('click', function () {
+          var aaben = ydre.hidden;
+          ydre.hidden = !aaben;
+          knap.setAttribute('aria-expanded', String(aaben));
+        });
+        titel.appendChild(knap);
+        // Variantvælgeren i traener.html skriver titlen om; så sættes knappen ind igen
+        new MutationObserver(function () { if (!titel.contains(knap)) titel.appendChild(knap); }).observe(titel, { childList: true });
+      })
+      .catch(function () {});
+  };
+})();

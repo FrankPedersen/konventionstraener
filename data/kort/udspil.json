@@ -1,0 +1,291 @@
+{
+  "skabelon": "konvention/2",
+  "type": "modspil",
+  "id": "udspil",
+  "navn": "Udspil",
+  "undertitel": "Hvilket kort der spilles ud fra farven",
+  "kilde": "Bridgesystem v1.7 · afsnit 9.1",
+  "kategori": "modspil",
+  "noegle": "udspil",
+  "formaal": "At give makker det bedste billede af farven med det første kort.",
+  "situation": {
+    "tekst": "Første udspil, før bordet er lagt.",
+    "gaelderFor": "Farve- og sanskontrakter"
+  },
+  "kortfortalt": "4. højeste fra en farve med honnør, 2. højeste fra en svag farve og højeste fra en honnørsekvens. Es beder om kald, konge om antal.",
+  "meldinger": [
+    {
+      "gruppe": "Honnørsekvenser"
+    },
+    {
+      "kort": "E K x(x)",
+      "noegle": "kald",
+      "farve": "E",
+      "sans": "E"
+    },
+    {
+      "kort": "E K doubleton",
+      "noegle": "udspil",
+      "farve": "K, derefter E",
+      "sans": "Sjældent udspil"
+    },
+    {
+      "kort": "K D B (x)",
+      "noegle": "antal",
+      "farve": "K",
+      "sans": "K"
+    },
+    {
+      "kort": "D B 10 (x)",
+      "noegle": "udspil",
+      "farve": "D",
+      "sans": "D"
+    },
+    {
+      "kort": "B 10 9 (x)",
+      "noegle": "udspil",
+      "farve": "B",
+      "sans": "B"
+    },
+    {
+      "kort": "10 9 8 (x)",
+      "noegle": "udspil",
+      "farve": "10",
+      "sans": "10"
+    },
+    {
+      "gruppe": "Brudte sekvenser"
+    },
+    {
+      "kort": "K D x(x)",
+      "noegle": "antal",
+      "farve": "K",
+      "sans": "4. højeste"
+    },
+    {
+      "kort": "E D B (x)",
+      "noegle": "kald",
+      "farve": "E",
+      "sans": "D"
+    },
+    {
+      "kort": "K B 10 (x)",
+      "noegle": "antal",
+      "farve": "K",
+      "sans": "B"
+    },
+    {
+      "kort": "D 10 9 (x)",
+      "noegle": "udspil",
+      "farve": "D",
+      "sans": "10"
+    },
+    {
+      "gruppe": "Uden sekvens"
+    },
+    {
+      "kort": "E x x x",
+      "noegle": "afvis",
+      "farve": "E eller lille, helst en anden farve",
+      "sans": "Undgå, spil fra en anden farve"
+    },
+    {
+      "kort": "K x x x / D x x x",
+      "noegle": "udspil",
+      "farve": "4. højeste",
+      "sans": "4. højeste"
+    },
+    {
+      "kort": "x x x",
+      "noegle": "udspil",
+      "farve": "2. højeste",
+      "sans": "2. højeste"
+    },
+    {
+      "kort": "x x x x",
+      "noegle": "udspil",
+      "farve": "2. højeste",
+      "sans": "2. højeste"
+    },
+    {
+      "kort": "x x",
+      "noegle": "udspil",
+      "farve": "Højeste",
+      "sans": "Højeste"
+    },
+    {
+      "kort": "Singleton",
+      "noegle": "udspil",
+      "farve": "Ofte stærkt",
+      "sans": "Sjældent godt"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Makker efter es-udspil",
+      "meldinger": [
+        {
+          "kort": "Lavt kort",
+          "noegle": "kald",
+          "viser": "Kald: fortsæt farven"
+        },
+        {
+          "kort": "Højt kort",
+          "noegle": "afvis",
+          "viser": "Afvisning"
+        }
+      ],
+      "note": "Kald med damen. Mod farvekontrakt også med doubleton."
+    },
+    {
+      "titel": "Makker efter konge-udspil",
+      "meldinger": [
+        {
+          "kort": "Lavt kort",
+          "noegle": "antal",
+          "viser": "Lige antal"
+        },
+        {
+          "kort": "Højt kort",
+          "noegle": "antal",
+          "viser": "Ulige antal"
+        }
+      ]
+    },
+    {
+      "titel": "Makker efter 4. højeste",
+      "meldinger": [
+        {
+          "kort": "Reglen om 11",
+          "noegle": "gra",
+          "viser": "11 minus udspilskortets værdi = antal højere kort hos de tre andre hænder"
+        }
+      ]
+    }
+  ],
+  "indmelding": [
+    {
+      "situation": "Makker har meldt farven",
+      "noegle": "udspil",
+      "regel": "Højeste fra to, lille fra tre med honnør, 2. højeste fra tre små. Gælder mod farve og sans."
+    },
+    {
+      "situation": "Mod farvekontrakt",
+      "noegle": "gra",
+      "regel": "Søg stik hurtigt: es, honnørsekvenser og korte farver med mulighed for trumfning."
+    },
+    {
+      "situation": "Mod sanskontrakt",
+      "noegle": "gra",
+      "regel": "Byg en lang farve op: 4. højeste fra længden."
+    }
+  ],
+  "eksempler": [
+    {
+      "kontrakt": "4♠",
+      "trumf": "S",
+      "du": "Vest",
+      "haand": {
+        "S": [
+          7,
+          3
+        ],
+        "H": [
+          13,
+          12,
+          11,
+          4
+        ],
+        "D": [
+          10,
+          8,
+          6,
+          2
+        ],
+        "C": [
+          9,
+          5,
+          3
+        ]
+      },
+      "stik": [],
+      "tekst": "Kontrakten er 4♠ af Syd. Du skal spille ud.",
+      "svar": "H13",
+      "forklaring": "Honnørsekvens: spil kongen. Konge-udspil beder makker om antal."
+    },
+    {
+      "kontrakt": "3NT",
+      "trumf": null,
+      "du": "Vest",
+      "haand": {
+        "S": [
+          8,
+          6
+        ],
+        "H": [
+          9,
+          5,
+          3
+        ],
+        "D": [
+          13,
+          10,
+          7,
+          4,
+          2
+        ],
+        "C": [
+          12,
+          8,
+          3
+        ]
+      },
+      "stik": [],
+      "tekst": "Kontrakten er 3NT af Syd. Du skal spille ud.",
+      "svar": "D4",
+      "forklaring": "Mod sans spilles der fra den lange farve: 4. højeste fra K 10 7 4 2 er ♦4."
+    },
+    {
+      "kontrakt": "3NT",
+      "trumf": null,
+      "du": "Vest",
+      "haand": {
+        "S": [
+          14,
+          10,
+          7,
+          2
+        ],
+        "H": [
+          9,
+          6,
+          3
+        ],
+        "D": [
+          11,
+          8
+        ],
+        "C": [
+          7,
+          5,
+          4,
+          2
+        ]
+      },
+      "stik": [],
+      "tekst": "Kontrakten er 3NT af Syd. Du skal spille ud.",
+      "svar": "C5",
+      "forklaring": "Spil ikke væk fra E x x x mod sans. Fra fire små spilles 2. højeste: ♣5."
+    }
+  ],
+  "faldgruber": [
+    "Konge-udspil beder om antal, ikke kald.",
+    "Spil ikke væk fra E x x x mod sans.",
+    "Fra E K doubleton spilles K før E. Omvendt rækkefølge viser doubleton."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "Markeringer",
+    "Lavinthal"
+  ]
+}

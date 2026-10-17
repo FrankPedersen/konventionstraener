@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&text=%E2%99%A0%E2%99%A5%E2%99%A6%E2%99%A3&display=swap">
 <link rel="stylesheet" href="assets/site.css">
 <script src="assets/lang.js"></script>
+<script src="assets/konventionskort-hint.js"></script>
 <style>
   .trainer{ max-width:64rem; padding-bottom:var(--sg-space-3xl); }
   .hero{ padding:var(--sg-space-2xl) 0 var(--sg-space-lg); margin-bottom:0; }
@@ -519,6 +520,8 @@ Promise.all(['data/konventioner.json', 'data/systemer.json'].map(u => fetch(u).t
     $('group').innerHTML = suits(k.gruppe);
     $('title').innerHTML = suits(k.titel);
     $('desc').innerHTML = suits(k.beskrivelse);
+    // ⓘ ved titlen, når konventionen har et konventionskort (SPEC-konventionskort, Afklaret 5)
+    konventionskortHint(k.id, $('title'), $('desc'));
     if (k.layout === 'bord'){ LAYOUT = 'bord'; boardEl.classList.add('compact'); }
     if (k.profiler){ PROFILE = getProfile(); setupProfiles(); }
     if (k.varianter){ setupChooser(k, list, systems); return null; }

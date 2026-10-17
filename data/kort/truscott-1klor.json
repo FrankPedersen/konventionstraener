@@ -1,0 +1,301 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "truscott-1klor",
+  "navn": "Truscott-forsvar mod 1♣",
+  "undertitel": "Tofarvede indmeldinger mod stærk klør",
+  "kilde": "BridgeBum: Truscott Defense to 1C",
+  "kategori": "forsvar",
+  "noegle": "gul",
+  "alert": "Alle indmeldinger alerteres",
+  "formaal": "At forstyrre modpartens stærke kløråbning med tofarvede hænder på lavt trin.",
+  "situation": {
+    "auction": [
+      [
+        "Modstander",
+        "1♣"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Modparten åbner med en kunstig stærk 1♣.",
+    "gaelderFor": "Kunstig stærk 1♣ og efter det negative 1♦-svar"
+  },
+  "kortfortalt": "Hver indmelding viser to bestemte farver. Makker passer eller retter til den anden farve.",
+  "meldinger": [
+    {
+      "bud": "X",
+      "noegle": "gul",
+      "viser": "Klør og hjerter"
+    },
+    {
+      "bud": "1♦",
+      "noegle": "gul",
+      "viser": "Ruder og hjerter"
+    },
+    {
+      "bud": "1♥",
+      "noegle": "gul",
+      "viser": "Hjerter og spar"
+    },
+    {
+      "bud": "1♠",
+      "noegle": "gul",
+      "viser": "Spar og klør"
+    },
+    {
+      "bud": "1NT",
+      "noegle": "gul",
+      "viser": "Ruder og spar"
+    },
+    {
+      "bud": "2♣",
+      "noegle": "gul",
+      "viser": "Klør og ruder"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Efter det negative 1♦-svar",
+      "auction": [
+        [
+          "Modstander",
+          "1♣"
+        ],
+        [
+          "Makker",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "1♦"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "X",
+          "noegle": "gul",
+          "viser": "Ruder og spar"
+        },
+        {
+          "bud": "1♥",
+          "noegle": "gul",
+          "viser": "Hjerter og spar"
+        },
+        {
+          "bud": "1♠",
+          "noegle": "gul",
+          "viser": "Spar og klør"
+        },
+        {
+          "bud": "1NT",
+          "noegle": "gul",
+          "viser": "Klør og hjerter"
+        },
+        {
+          "bud": "2♣",
+          "noegle": "gul",
+          "viser": "Klør og ruder"
+        },
+        {
+          "bud": "2♦",
+          "noegle": "gul",
+          "viser": "Ruder og hjerter"
+        }
+      ],
+      "note": "Strukturen skifter efter 1♦. Dobling viser nu ruder og spar."
+    },
+    {
+      "titel": "Makker efter indmeldingen",
+      "auction": [
+        [
+          "Modstander",
+          "1♣"
+        ],
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "Pas",
+          "noegle": "gra",
+          "viser": "Tilfreds med den første farve"
+        },
+        {
+          "bud": "Den anden farve",
+          "noegle": "gron",
+          "viser": "Pas eller ret: foretrækker den anden farve"
+        },
+        {
+          "bud": "Ny farve",
+          "noegle": "gron",
+          "viser": "Egen 5+ farve uden fit"
+        }
+      ]
+    }
+  ],
+  "indmelding": [
+    {
+      "situation": "Svarer dobler vores indmelding",
+      "noegle": "gul",
+      "regel": "Pas = tilfreds med den meldte farve. Redobling = ingen præference, indmelder vælger. Den anden farve = præference."
+    },
+    {
+      "situation": "Svarer melder en farve",
+      "noegle": "gron",
+      "regel": "Støtte til en af indmelderens farver er konkurrerende. Dobling = værdier."
+    }
+  ],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♣"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          11,
+          9,
+          8,
+          4
+        ],
+        "H": [
+          12,
+          11,
+          10,
+          6,
+          5
+        ],
+        "D": [
+          4
+        ],
+        "C": [
+          7,
+          3
+        ]
+      },
+      "svar": "1♥",
+      "forklaring": "Begge majorer 5–5. 1♥ viser hjerter og spar."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♣"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          5
+        ],
+        "H": [
+          13,
+          12,
+          9,
+          8,
+          3
+        ],
+        "D": [
+          3
+        ],
+        "C": [
+          14,
+          11,
+          10,
+          8,
+          6,
+          2
+        ]
+      },
+      "svar": "X",
+      "forklaring": "Klør og hjerter. Doblingen er tofarvet, ikke oplysning."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♣"
+        ],
+        [
+          "Makker",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "1♦"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          12,
+          10,
+          7,
+          4
+        ],
+        "H": [
+          4
+        ],
+        "D": [
+          13,
+          11,
+          9,
+          6,
+          3
+        ],
+        "C": [
+          8,
+          2
+        ]
+      },
+      "svar": "X",
+      "forklaring": "Ruder og spar. Efter det negative 1♦ viser dobling netop de to farver."
+    }
+  ],
+  "faldgruber": [
+    "Ingen indmelding viser kun den meldte farve. Dobling er klør og hjerter.",
+    "Strukturen er en anden efter det negative 1♦-svar.",
+    "Kun mod kunstig stærk klør. Mod naturlig 1♣ gælder det almindelige forsvar."
+  ],
+  "aabne": [
+    "Styrkekravet til indmeldingerne varierer mellem par. Kilden angiver ingen grænse."
+  ],
+  "relaterede": [
+    "CRASH",
+    "Mathe"
+  ],
+  "forveksles": [
+    "Truscott 2NT"
+  ]
+}

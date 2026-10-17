@@ -1,0 +1,496 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "konvention/2",
+  "title": "Konventionskort",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "skabelon",
+    "type",
+    "id",
+    "navn",
+    "kategori",
+    "noegle",
+    "formaal",
+    "situation",
+    "kortfortalt",
+    "meldinger"
+  ],
+  "properties": {
+    "skabelon": {
+      "const": "konvention/2"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "navn": {
+      "type": "string",
+      "minLength": 1
+    },
+    "undertitel": {
+      "type": "string"
+    },
+    "kilde": {
+      "type": "string"
+    },
+    "kategori": {
+      "enum": [
+        "aabning",
+        "svar",
+        "genmelding",
+        "konkurrence",
+        "forsvar",
+        "slem",
+        "modspil"
+      ]
+    },
+    "noegle": {
+      "$ref": "#/$defs/anyNoegle"
+    },
+    "alert": {
+      "type": "string"
+    },
+    "formaal": {
+      "type": "string",
+      "minLength": 1
+    },
+    "situation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tekst"
+      ],
+      "properties": {
+        "auction": {
+          "$ref": "#/$defs/auction"
+        },
+        "tekst": {
+          "type": "string"
+        },
+        "gaelderFor": {
+          "type": "string"
+        }
+      }
+    },
+    "kortfortalt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "meldinger": {
+      "$ref": "#/$defs/raekker"
+    },
+    "fortsaettelser": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "titel",
+          "meldinger"
+        ],
+        "properties": {
+          "titel": {
+            "type": "string"
+          },
+          "auction": {
+            "$ref": "#/$defs/auction"
+          },
+          "meldinger": {
+            "$ref": "#/$defs/raekker"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "indmelding": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "situation",
+          "regel"
+        ],
+        "properties": {
+          "situation": {
+            "type": "string"
+          },
+          "noegle": {
+            "$ref": "#/$defs/anyNoegle"
+          },
+          "regel": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "eksempler": {
+      "type": "array"
+    },
+    "faldgruber": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "aabne": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "relaterede": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "forveksles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "traener": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "pool": {
+          "type": "string"
+        }
+      }
+    },
+    "type": {
+      "enum": [
+        "melding",
+        "modspil"
+      ]
+    }
+  },
+  "$defs": {
+    "noegle": {
+      "enum": [
+        "gron",
+        "bla",
+        "gul",
+        "brun",
+        "rosa",
+        "gra"
+      ]
+    },
+    "auction": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "array",
+        "prefixItems": [
+          {
+            "enum": [
+              "Modstander",
+              "Dig",
+              "Makker"
+            ]
+          },
+          {
+            "type": "string"
+          }
+        ],
+        "minItems": 2,
+        "maxItems": 2
+      }
+    },
+    "farve": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 2,
+        "maximum": 14
+      },
+      "uniqueItems": true
+    },
+    "raekker": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "gruppe"
+            ],
+            "properties": {
+              "gruppe": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "noegle"
+            ],
+            "properties": {
+              "bud": {
+                "type": "string"
+              },
+              "kort": {
+                "type": "string"
+              },
+              "noegle": {
+                "$ref": "#/$defs/anyNoegle"
+              },
+              "styrke": {
+                "type": "string"
+              },
+              "viser": {
+                "type": "string"
+              },
+              "krav": {
+                "type": "string"
+              },
+              "farve": {
+                "type": "string"
+              },
+              "sans": {
+                "type": "string"
+              }
+            },
+            "oneOf": [
+              {
+                "required": [
+                  "bud"
+                ]
+              },
+              {
+                "required": [
+                  "kort"
+                ]
+              }
+            ],
+            "anyOf": [
+              {
+                "required": [
+                  "viser"
+                ]
+              },
+              {
+                "required": [
+                  "farve",
+                  "sans"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "anyNoegle": {
+      "enum": [
+        "gron",
+        "bla",
+        "gul",
+        "brun",
+        "rosa",
+        "gra",
+        "kald",
+        "afvis",
+        "antal",
+        "farvevalg",
+        "udspil"
+      ]
+    },
+    "haand": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "S",
+        "H",
+        "D",
+        "C"
+      ],
+      "properties": {
+        "S": {
+          "$ref": "#/$defs/farve"
+        },
+        "H": {
+          "$ref": "#/$defs/farve"
+        },
+        "D": {
+          "$ref": "#/$defs/farve"
+        },
+        "C": {
+          "$ref": "#/$defs/farve"
+        }
+      }
+    },
+    "kortkode": {
+      "type": "string",
+      "pattern": "^[SHDC](1[0-4]|[2-9])$"
+    },
+    "exMelding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "auction",
+        "haand",
+        "svar",
+        "forklaring"
+      ],
+      "properties": {
+        "auction": {
+          "$ref": "#/$defs/auction"
+        },
+        "haand": {
+          "$ref": "#/$defs/haand"
+        },
+        "svar": {
+          "type": "string"
+        },
+        "forklaring": {
+          "type": "string"
+        }
+      }
+    },
+    "exModspil": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kontrakt",
+        "du",
+        "haand",
+        "stik",
+        "tekst",
+        "svar",
+        "forklaring"
+      ],
+      "properties": {
+        "kontrakt": {
+          "type": "string"
+        },
+        "trumf": {
+          "enum": [
+            "S",
+            "H",
+            "D",
+            "C",
+            null
+          ]
+        },
+        "du": {
+          "enum": [
+            "Nord",
+            "Øst",
+            "Syd",
+            "Vest"
+          ]
+        },
+        "bordet": {
+          "$ref": "#/$defs/haand"
+        },
+        "haand": {
+          "$ref": "#/$defs/haand"
+        },
+        "stik": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "enum": [
+                  "Nord",
+                  "Øst",
+                  "Syd",
+                  "Vest"
+                ]
+              },
+              {
+                "$ref": "#/$defs/kortkode"
+              }
+            ],
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "tekst": {
+          "type": "string"
+        },
+        "svar": {
+          "$ref": "#/$defs/kortkode"
+        },
+        "forklaring": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "melding"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "situation": {
+            "required": [
+              "auction"
+            ]
+          },
+          "eksempler": {
+            "items": {
+              "$ref": "#/$defs/exMelding"
+            }
+          },
+          "noegle": {
+            "enum": [
+              "gron",
+              "bla",
+              "gul",
+              "brun",
+              "rosa",
+              "gra"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "modspil"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "eksempler": {
+            "items": {
+              "$ref": "#/$defs/exModspil"
+            }
+          },
+          "noegle": {
+            "enum": [
+              "kald",
+              "afvis",
+              "antal",
+              "farvevalg",
+              "udspil",
+              "gra"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

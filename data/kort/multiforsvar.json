@@ -1,0 +1,445 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "multiforsvar",
+  "navn": "Multiforsvar",
+  "undertitel": "Forsvar mod modstandernes 1NT",
+  "kategori": "forsvar",
+  "noegle": "gul",
+  "alert": "Alle meldinger på 2-trinnet alerteres",
+  "formaal": "At konkurrere mod modstandernes 1NT med både stærke jævne hænder og fordelingshænder.",
+  "situation": {
+    "auction": [
+      [
+        "Modstander",
+        "1NT"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Modstanderne åbner 1NT, og du melder direkte efter åbneren.",
+    "gaelderFor": "Direkte efter modstandernes 1NT-åbning"
+  },
+  "kortfortalt": "Samler Landy, multi 2♦ og tofarvede indmeldinger i ét skema. Doblingen er straf, ikke oplysning.",
+  "meldinger": [
+    {
+      "bud": "X",
+      "noegle": "brun",
+      "styrke": "15–17+ hp",
+      "viser": "Jævn hånd, mindst samme styrke som åbneren",
+      "krav": "Forslag til straf"
+    },
+    {
+      "bud": "2♣",
+      "noegle": "gul",
+      "styrke": "10–16 hp",
+      "viser": "Begge majorer, 5–4 den ene eller den anden vej"
+    },
+    {
+      "bud": "2♦",
+      "noegle": "gul",
+      "styrke": "ca. 6–10 hp",
+      "viser": "Multi: 6+ farve i en ukendt major"
+    },
+    {
+      "bud": "2♥ / 2♠",
+      "noegle": "gul",
+      "styrke": "10–16 hp",
+      "viser": "5 i den meldte major og 4–5 i en ukendt minor"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "gul",
+      "styrke": "10–16 hp",
+      "viser": "Begge minorer"
+    },
+    {
+      "bud": "3♣ / 3♦",
+      "noegle": "rosa",
+      "viser": "Naturligt og spærrende, 6+ farve"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Svarer efter 2♣",
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "2♥ / 2♠",
+          "noegle": "gron",
+          "viser": "Præference"
+        },
+        {
+          "bud": "2♦",
+          "noegle": "gul",
+          "viser": "Spørger efter femfarven"
+        }
+      ]
+    },
+    {
+      "titel": "Svarer efter 2♦ (multi)",
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "2♥",
+          "noegle": "gul",
+          "viser": "Pas eller korriger"
+        },
+        {
+          "bud": "2♠",
+          "noegle": "gul",
+          "viser": "Udgangsopfordring, hvis makker har hjerter"
+        },
+        {
+          "bud": "2NT",
+          "noegle": "bla",
+          "viser": "Plauken: stærkt relæ med udgangsinteresse"
+        },
+        {
+          "bud": "3♥ / 3♠",
+          "noegle": "gron",
+          "viser": "Egen major"
+        },
+        {
+          "bud": "4♥",
+          "noegle": "rosa",
+          "viser": "Spærrende, pas eller korriger"
+        }
+      ]
+    },
+    {
+      "titel": "Indmelder efter Plauken",
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Dig",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "3♣",
+          "noegle": "gul",
+          "viser": "God multi"
+        },
+        {
+          "bud": "3♦ / 3♥",
+          "noegle": "gul",
+          "viser": "Dårlig multi, som transfer"
+        }
+      ],
+      "note": "Efter 3♣ spørger svarer med 3♦. Indmelder svarer med transfer: 3♠ = hjerter, 3♥ = spar."
+    },
+    {
+      "titel": "Svarer efter 2♥ / 2♠",
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Makker",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "Pas",
+          "noegle": "gra",
+          "viser": "Tilfreds med majoren"
+        },
+        {
+          "bud": "2NT",
+          "noegle": "gul",
+          "viser": "Spørger efter minoren"
+        }
+      ]
+    },
+    {
+      "titel": "Svarer efter 2NT",
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "3♣ / 3♦",
+          "noegle": "gron",
+          "viser": "Præference"
+        }
+      ]
+    },
+    {
+      "titel": "Svarer efter doblingen",
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "Pas",
+          "noegle": "gra",
+          "styrke": "8+ hp",
+          "viser": "Strafpas"
+        },
+        {
+          "bud": "Farve",
+          "noegle": "gron",
+          "styrke": "0–7 hp",
+          "viser": "Scramble: flugt til bedste farve"
+        },
+        {
+          "bud": "Spring",
+          "noegle": "gron",
+          "viser": "Spring i farve"
+        }
+      ],
+      "note": "Gælder mod svag sans (1NT = 12–14 hp)."
+    }
+  ],
+  "indmelding": [
+    {
+      "situation": "Dobling af 2♣",
+      "noegle": "gul",
+      "regel": "Systemet gælder uændret. Pas = klørlængde, vil spille 2♣ doblet. Redobling = ingen præference, makker vælger major."
+    },
+    {
+      "situation": "Dobling af 2♦ (multi)",
+      "noegle": "gul",
+      "regel": "Systemet gælder uændret: 2♥ er stadig pas eller korriger. Pas = beder indmelder melde sin major. Redobling = værdier og ønske om straf."
+    },
+    {
+      "situation": "Farve ind efter vores indmelding",
+      "noegle": "gron",
+      "regel": "Pas = intet at tilføje. Dobling = værdier, forslag til straf. Ny farve og støtte er naturlige og konkurrerende."
+    },
+    {
+      "situation": "Redobling af vores dobling (1NT – X – XX)",
+      "noegle": "rosa",
+      "regel": "Svarer med svag hånd flygter som ved scramble. Pas = værdier, villig til at spille 1NT redoblet."
+    },
+    {
+      "situation": "Flugt efter vores dobling (1NT – X – 2♣)",
+      "noegle": "brun",
+      "regel": "Doblinger fra begge er straf. Pas = intet at tilføje."
+    }
+  ],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          12,
+          3
+        ],
+        "H": [
+          13,
+          10
+        ],
+        "D": [
+          14,
+          10,
+          6,
+          4
+        ],
+        "C": [
+          14,
+          10,
+          8,
+          5
+        ]
+      },
+      "svar": "X",
+      "forklaring": "17 hp og jævn hånd. Doblingen er forslag til straf med mindst samme styrke som sansåbneren."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          12,
+          10,
+          6,
+          5
+        ],
+        "H": [
+          13,
+          11,
+          8,
+          4
+        ],
+        "D": [
+          7,
+          2
+        ],
+        "C": [
+          9,
+          3
+        ]
+      },
+      "svar": "2♣",
+      "forklaring": "10 hp og begge majorer 5–4. Makker kan spørge efter femfarven med 2♦."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          11,
+          10,
+          8,
+          7,
+          4
+        ],
+        "H": [
+          5,
+          2
+        ],
+        "D": [
+          12,
+          6,
+          3
+        ],
+        "C": [
+          7,
+          4
+        ]
+      },
+      "svar": "2♦",
+      "forklaring": "6 hp og en god spar-sekser. Multi skjuler hvilken major."
+    }
+  ],
+  "faldgruber": [
+    "Doblingen er straf, ikke oplysning. Med 8+ hp passer svarer.",
+    "2♦ er svagere end de andre indmeldinger: ca. 6–10 hp mod 10–16 hp.",
+    "Efter 2♣ ved svarer ikke, hvilken major der er femfarven. Derfor findes 2♦ som spørgsmål."
+  ],
+  "aabne": [],
+  "traener": {
+    "url": "multi-svar-traener.html",
+    "pool": "pools/multiforsvar.json"
+  },
+  "kilde": "Systemkortet v1.7 · afsnit 8.1",
+  "relaterede": [
+    "Landy"
+  ]
+}

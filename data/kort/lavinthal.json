@@ -1,0 +1,289 @@
+{
+  "skabelon": "konvention/2",
+  "type": "modspil",
+  "id": "lavinthal",
+  "navn": "Lavinthal",
+  "undertitel": "Farvevalg med kortets højde",
+  "kilde": "Markeringstræneren, pools/lavinthal.json",
+  "kategori": "modspil",
+  "noegle": "farvevalg",
+  "formaal": "At vise makker, hvilken farve du vil have spillet, når kald og antal ikke er det vigtige.",
+  "situation": {
+    "tekst": "Tre situationer, hvor kortets højde viser farvevalg i stedet for kald eller antal.",
+    "gaelderFor": "Trumfning og retur, død udspilsfarve og første afkast"
+  },
+  "kortfortalt": "Højt kort beder om den højeste af de to andre farver, lavt kort om den laveste. Trumf tæller aldrig med.",
+  "meldinger": [
+    {
+      "gruppe": "Trumfning og retur"
+    },
+    {
+      "kort": "Højt kort",
+      "noegle": "farvevalg",
+      "viser": "Retur i den højeste af de to sidefarver"
+    },
+    {
+      "kort": "Lavt kort",
+      "noegle": "farvevalg",
+      "viser": "Retur i den laveste af de to sidefarver"
+    },
+    {
+      "gruppe": "Død udspilsfarve: bordet har singleton i makkers es-udspil"
+    },
+    {
+      "kort": "Højt kort",
+      "noegle": "farvevalg",
+      "viser": "Skift til den højeste af de to sidefarver"
+    },
+    {
+      "kort": "Lavt kort",
+      "noegle": "farvevalg",
+      "viser": "Skift til den laveste af de to sidefarver"
+    },
+    {
+      "gruppe": "Første afkast i en uønsket farve"
+    },
+    {
+      "kort": "Højt kort",
+      "noegle": "farvevalg",
+      "viser": "Ønsker den højeste af de to andre farver"
+    },
+    {
+      "kort": "Lavt kort",
+      "noegle": "farvevalg",
+      "viser": "Ønsker den laveste af de to andre farver"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Makker læser signalet",
+      "meldinger": [
+        {
+          "kort": "Højt kort",
+          "noegle": "farvevalg",
+          "viser": "Spil den højeste af de to farver"
+        },
+        {
+          "kort": "Lavt kort",
+          "noegle": "farvevalg",
+          "viser": "Spil den laveste af de to farver"
+        }
+      ],
+      "note": "De to farver er dem, der er tilbage, når trumf og den farve, signalet gives i, er trukket fra."
+    }
+  ],
+  "indmelding": [
+    {
+      "situation": "Uden for de tre situationer",
+      "noegle": "gra",
+      "regel": "Almindelige markeringer gælder: kald/afvisning og antal."
+    },
+    {
+      "situation": "Trumf",
+      "noegle": "gra",
+      "regel": "Trumffarven tæller aldrig med som en af de to farver."
+    }
+  ],
+  "eksempler": [
+    {
+      "kontrakt": "4♠",
+      "trumf": "S",
+      "du": "Øst",
+      "bordet": {
+        "S": [
+          13,
+          11,
+          10,
+          7,
+          3
+        ],
+        "H": [
+          12
+        ],
+        "D": [
+          12,
+          11,
+          7,
+          4
+        ],
+        "C": [
+          14,
+          9,
+          6
+        ]
+      },
+      "haand": {
+        "S": [
+          9,
+          6
+        ],
+        "H": [
+          14,
+          5,
+          3
+        ],
+        "D": [
+          14,
+          10,
+          9,
+          3,
+          2
+        ],
+        "C": [
+          8,
+          4,
+          3
+        ]
+      },
+      "stik": [],
+      "tekst": "Kontrakten er 4♠ af Syd. Du vandt udspillet og indkasserede ♦E, og makker kunne ikke bekende. Nu spiller du ruder, så makker kan trumfe.",
+      "svar": "D10",
+      "forklaring": "Du har ♥E og vil have makker til at spille hjerter tilbage, så du kommer ind og kan give makker en trumfning mere. Hjerter er den højeste af de to sidefarver (hjerter og klør): spil et højt kort, ♦10."
+    },
+    {
+      "kontrakt": "4♠",
+      "trumf": "S",
+      "du": "Øst",
+      "bordet": {
+        "S": [
+          14,
+          13,
+          11,
+          8,
+          7,
+          3,
+          2
+        ],
+        "H": [
+          12
+        ],
+        "D": [
+          11,
+          5,
+          2
+        ],
+        "C": [
+          11,
+          5
+        ]
+      },
+      "haand": {
+        "S": [
+          12
+        ],
+        "H": [
+          9,
+          8,
+          5
+        ],
+        "D": [
+          9,
+          7,
+          4,
+          3
+        ],
+        "C": [
+          13,
+          12,
+          9,
+          7,
+          4
+        ]
+      },
+      "stik": [
+        [
+          "Vest",
+          "H14"
+        ],
+        [
+          "Nord",
+          "H12"
+        ]
+      ],
+      "tekst": "Kontrakten er 4♠ af Syd. Makker spiller ♥E ud, og bordet har singleton ♥D. At fortsætte farven giver spilfører en trumfning eller et gratis afkast, så kortet viser i stedet, hvilken farve makker skal skifte til.",
+      "svar": "H5",
+      "forklaring": "Du vil have klør (♣ K D 9 7 4). Den er den laveste af de to sidefarver (ruder og klør): læg et lavt kort, ♥5."
+    },
+    {
+      "kontrakt": "4♠",
+      "trumf": "S",
+      "du": "Øst",
+      "bordet": {
+        "S": [
+          13,
+          8,
+          3,
+          2
+        ],
+        "H": [
+          12,
+          10,
+          8
+        ],
+        "D": [
+          14,
+          13,
+          9,
+          7,
+          2
+        ],
+        "C": [
+          14
+        ]
+      },
+      "haand": {
+        "S": [],
+        "H": [
+          9,
+          7,
+          6,
+          4,
+          2
+        ],
+        "D": [
+          8,
+          5,
+          4
+        ],
+        "C": [
+          13,
+          12,
+          11,
+          8,
+          3
+        ]
+      },
+      "stik": [
+        [
+          "Syd",
+          "S14"
+        ],
+        [
+          "Vest",
+          "S4"
+        ],
+        [
+          "Nord",
+          "S2"
+        ]
+      ],
+      "tekst": "Kontrakten er 4♠ af Syd. Spilfører vandt udspillet og spiller trumf, og du kan ikke bekende – det er dit første afkast.",
+      "svar": "H2",
+      "forklaring": "Du vil have klør (♣ K D B 8 3). Kast i en uønsket farve – et højt kort beder om den højeste af de to andre farver, et lavt kort om den laveste: ♥2: de to andre farver er klør og ruder, og klør er den laveste; ♦5: de to andre farver er klør og hjerter, og klør er den laveste."
+    }
+  ],
+  "faldgruber": [
+    "På et es-udspil er kortet normalt kald eller afvisning. Først når bordet har singleton, bliver det farvevalg.",
+    "Et lavt afkast beder ikke om den farve, der kastes i, men om den laveste af de to andre.",
+    "Trumf er aldrig en af de to farver."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "Markeringer",
+    "Udspil"
+  ],
+  "traener": {
+    "url": "markering.html?k=lavinthal",
+    "pool": "pools/lavinthal.json"
+  }
+}
