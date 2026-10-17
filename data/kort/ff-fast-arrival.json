@@ -1,0 +1,416 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "ff-fast-arrival",
+  "navn": "Fast og slow arrival",
+  "undertitel": "I et udgangskrav betyder hurtig udgang minimum",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 5b · træneren pools/ff-fast-arrival.json",
+  "kategori": "genmelding",
+  "noegle": "gron",
+  "formaal": "At bruge pladsen under udgang til at vise styrke, når ingen af makkerne må passe.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "1♠"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "2♦"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Makker",
+        "2♠"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Forløbet er udgangskrævende (her Two over One), og fittet er fundet.",
+    "gaelderFor": "Udgangskrævende forløb under udgang – ikke inviterende sekvenser"
+  },
+  "kortfortalt": "Hurtig ankomst til udgang viser minimum: intet at tilføje. Langsom ankomst – 3 i majoren, ny farve eller cuebid – viser tillæg og giver plads til slemundersøgelse.",
+  "meldinger": [
+    {
+      "gruppe": "Svarer"
+    },
+    {
+      "bud": "4 i majoren direkte",
+      "noegle": "gron",
+      "viser": "Minimum for Two over One – åbner passer"
+    },
+    {
+      "bud": "3 i majoren",
+      "noegle": "gron",
+      "viser": "Ekstra værdier – inviterer åbner til at fortsætte"
+    },
+    {
+      "bud": "Ny farve under udgang",
+      "noegle": "bla",
+      "viser": "Beskriver videre og er stadig krav"
+    },
+    {
+      "bud": "Cuebid",
+      "noegle": "gul",
+      "viser": "Slemambition"
+    },
+    {
+      "bud": "4NT",
+      "noegle": "bla",
+      "viser": "RKC 1430 – svarer tager kommandoen"
+    },
+    {
+      "gruppe": "Åbner"
+    },
+    {
+      "bud": "4 i majoren direkte",
+      "noegle": "gron",
+      "viser": "Minimum: luk kontrakten"
+    },
+    {
+      "bud": "3 i majoren",
+      "noegle": "gron",
+      "viser": "Tillæg – hånden kan bære en undersøgelse"
+    },
+    {
+      "bud": "Ny farve på 3-trinnet",
+      "noegle": "gron",
+      "styrke": "15+ hp",
+      "viser": "Tillæg med beskrivelse, 4+ kort"
+    },
+    {
+      "bud": "Cuebid under udgang",
+      "noegle": "gul",
+      "viser": "Kontrol i farven og slemambition"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Åbner efter svarers slow arrival",
+      "auction": [
+        [
+          "Dig",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "4 i trumf",
+          "noegle": "gron",
+          "viser": "Minimum (fast arrival)"
+        },
+        {
+          "bud": "Cuebid",
+          "noegle": "gul",
+          "viser": "Tillæg: billigste kontrol først"
+        }
+      ]
+    }
+  ],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          5,
+          2
+        ],
+        "H": [
+          13,
+          11,
+          7,
+          3
+        ],
+        "D": [
+          14,
+          11,
+          9,
+          5,
+          3
+        ],
+        "C": [
+          7
+        ]
+      },
+      "svar": "4♠",
+      "forklaring": "Fit og 13 hp – minimum for Two over One: 4♠ direkte (fast arrival)."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          8,
+          5
+        ],
+        "H": [
+          13,
+          9,
+          3
+        ],
+        "D": [
+          14,
+          13,
+          12,
+          6,
+          5,
+          4
+        ],
+        "C": [
+          4
+        ]
+      },
+      "svar": "3♠",
+      "forklaring": "Fit og 15 hp – ekstra værdier: 3♠ lader plads til cuebids (slow arrival)."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          11,
+          4,
+          3,
+          2
+        ],
+        "H": [
+          14,
+          12,
+          11,
+          9
+        ],
+        "D": [
+          9,
+          5
+        ],
+        "C": [
+          12,
+          3
+        ]
+      },
+      "svar": "4♥",
+      "forklaring": "14 hp – minimum: 4♥ direkte (fast arrival)."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          9,
+          8,
+          7,
+          2
+        ],
+        "H": [
+          14,
+          7,
+          6,
+          3
+        ],
+        "D": [
+          13,
+          12,
+          2
+        ],
+        "C": [
+          12
+        ]
+      },
+      "svar": "4♣",
+      "forklaring": "15 hp – tillæg: cuebid 4♣ viser kontrol (singleton) i klør – billigste først."
+    }
+  ],
+  "faldgruber": [
+    "Hurtig udgang er ikke styrke – det er minimum.",
+    "Reglen gælder kun i udgangskrævende forløb. I inviterende sekvenser viser springet stadig styrke.",
+    "Ingen af makkerne må passe under udgang i et kravforløb."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "Two over One udgangskrav",
+    "Cuebids"
+  ],
+  "traener": {
+    "url": "traener.html?k=ff-fast-arrival",
+    "pool": "pools/ff-fast-arrival.json"
+  }
+}

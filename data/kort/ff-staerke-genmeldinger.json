@@ -1,0 +1,487 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "ff-staerke-genmeldinger",
+  "navn": "Åbners stærke genmeldinger og 3♣ checkback",
+  "undertitel": "Springet viser styrken efter svar på 1-trinnet",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 4 og 6 · træneren pools/ff-staerke-genmeldinger.json",
+  "kategori": "genmelding",
+  "noegle": "bla",
+  "alert": "3♣ checkback alerteres",
+  "formaal": "At skelne mellem almindelige og stærke genmeldinger, og at finde majorfit efter åbners 2NT.",
+  "situation": {
+    "auction": [
+      [
+        "Dig",
+        "1♦"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Makker",
+        "1♠"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Du har åbnet, og makker har svaret på 1-trinnet.",
+    "gaelderFor": "Åbners genmelding efter svar på 1-trinnet"
+  },
+  "kortfortalt": "Jo større spring, jo stærkere hånd: ny farve på 2-trinnet er naturlig og ikke krav (12–18), spring i ny farve er 19–21 og udgangskrav. Efter åbners 2NT (18–19) spørger 3♣ efter åbners majorfordeling.",
+  "meldinger": [
+    {
+      "bud": "1NT",
+      "noegle": "brun",
+      "styrke": "12–14 hp",
+      "viser": "Jævn"
+    },
+    {
+      "bud": "2 i egen farve",
+      "noegle": "gron",
+      "styrke": "12–15 hp",
+      "viser": "6-farve"
+    },
+    {
+      "bud": "Ny farve på 2-trinnet",
+      "noegle": "gron",
+      "styrke": "12–18 hp",
+      "viser": "Naturlig, 5-4, ikke krav"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "brun",
+      "styrke": "18–19 hp",
+      "viser": "Jævn. Ikke krav, men næsten"
+    },
+    {
+      "bud": "Dobbeltspring i egen farve",
+      "noegle": "gron",
+      "styrke": "16–18 hp",
+      "viser": "God 6-farve, inviterende"
+    },
+    {
+      "bud": "Spring i ny farve",
+      "noegle": "bla",
+      "styrke": "19–21 hp",
+      "viser": "Ubalanceret, 5-4 eller bedre. Udgangskrav"
+    },
+    {
+      "bud": "3NT",
+      "noegle": "brun",
+      "styrke": "19–20 hp",
+      "viser": "Jævn med god egen farve og hold overalt – slutmelding"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Svarer efter 2NT: 3♣ checkback",
+      "auction": [
+        [
+          "Makker",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "3♣",
+          "noegle": "gul",
+          "viser": "Spørger om åbners majorfordeling. Krav til udgang"
+        },
+        {
+          "bud": "3NT",
+          "noegle": "brun",
+          "viser": "Intet at spørge om – slutmelding"
+        },
+        {
+          "bud": "Pas",
+          "noegle": "gra",
+          "viser": "Svag hånd – også med lang klør"
+        }
+      ]
+    },
+    {
+      "titel": "Åbner svarer på 3♣",
+      "auction": [
+        [
+          "Dig",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "3♦",
+          "noegle": "gul",
+          "viser": "Hverken 3 korts støtte eller 4-farve i den anden major"
+        },
+        {
+          "bud": "3 i svarers major",
+          "noegle": "gron",
+          "viser": "3 korts støtte – fittet er fundet"
+        },
+        {
+          "bud": "3 i den anden major",
+          "noegle": "gron",
+          "viser": "4-farve dér, ikke 3 korts støtte"
+        },
+        {
+          "bud": "3NT",
+          "noegle": "brun",
+          "viser": "Som 3♦, men maksimum og god sansfordeling"
+        }
+      ],
+      "note": "Alle svar er krav til udgang. Bagefter: 4 i majoren med fit, ny farve på 4-trinnet er cuebid, og 4NT er RKC 1430."
+    }
+  ],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          9
+        ],
+        "H": [
+          14,
+          11,
+          5
+        ],
+        "D": [
+          14,
+          13,
+          12,
+          11,
+          8
+        ],
+        "C": [
+          14,
+          10,
+          8,
+          6
+        ]
+      },
+      "svar": "3♣",
+      "forklaring": "5-4 med klør og 19 hp: spring til 3♣ – udgangskrav (19–21)."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          9,
+          6
+        ],
+        "H": [
+          13
+        ],
+        "D": [
+          14,
+          13,
+          12,
+          11,
+          10,
+          3
+        ],
+        "C": [
+          6,
+          4,
+          2
+        ]
+      },
+      "svar": "3♦",
+      "forklaring": "God 6-farve ruder og 16 hp: 3♦ – inviterende (16–18)."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          5,
+          2
+        ],
+        "H": [
+          14,
+          11,
+          5
+        ],
+        "D": [
+          14,
+          13,
+          12,
+          3,
+          2
+        ],
+        "C": [
+          14,
+          11,
+          10
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "Jævn hånd, 19 hp: 2NT (18–19)."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          11,
+          10,
+          8,
+          4
+        ],
+        "H": [
+          12,
+          7,
+          5
+        ],
+        "D": [
+          10
+        ],
+        "C": [
+          14,
+          12,
+          9,
+          6
+        ]
+      },
+      "svar": "3♣",
+      "forklaring": "5 spar og 12 hp: 3♣ checkback – spørg om åbners majorfordeling."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          10
+        ],
+        "H": [
+          12,
+          8,
+          5,
+          3
+        ],
+        "D": [
+          14,
+          12,
+          10,
+          6
+        ],
+        "C": [
+          14,
+          12,
+          6
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "4 hjerter, men ikke 3 spar: 3♥."
+    }
+  ],
+  "faldgruber": [
+    "Kun springet i ny farve er udgangskrav. Med 19+ og 5-4 springes; under 19 meldes den nye farve naturligt.",
+    "3♣ checkback er kunstig og krav til udgang – ikke en flugt til klør.",
+    "Splinter indgår ikke: kortfarver vises først via cuebid, når trumf er fastlagt."
+  ],
+  "aabne": [
+    "Er ny højere farve på 2-trinnet naturlig og ikke krav (12–18 hp), eller revers med 16+ og rundekrav?"
+  ],
+  "relaterede": [
+    "Revers",
+    "RKC 1430"
+  ],
+  "traener": {
+    "url": "traener.html?k=ff-staerke-genmeldinger",
+    "pool": "pools/ff-staerke-genmeldinger.json"
+  }
+}

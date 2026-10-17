@@ -1,0 +1,460 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "ff-revers",
+  "navn": "Revers",
+  "undertitel": "Ny højere farve på nyt niveau: 16+ og rundekrav",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · bilag G · træneren pools/ff-revers.json",
+  "kategori": "genmelding",
+  "noegle": "bla",
+  "formaal": "At give åbners nye højere farve en fast styrke, så svarer altid ved, om åbner har ekstra værdier.",
+  "situation": {
+    "auction": [
+      [
+        "Dig",
+        "1♣"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Makker",
+        "1♠"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Åbner har en ny farve, der er højere end åbningsfarven og skal meldes på et nyt niveau, fx 1♣ – 1♠ – 2♥.",
+    "gaelderFor": "Efter 1-over-1 og efter 1NT-svaret. 1♣ – 1♥ – 1♠ er ikke revers"
+  },
+  "kortfortalt": "Revers viser 16+ hp og er rundekrav. Med minimum gentager åbner i stedet sin farve; svarer er svag op til ca. 8 hp og har udgangskrav fra ca. 9 hp.",
+  "meldinger": [
+    {
+      "bud": "Revers",
+      "noegle": "bla",
+      "styrke": "16+ hp",
+      "viser": "Ny højere farve på nyt niveau, rundekrav"
+    },
+    {
+      "bud": "Gentag egen farve",
+      "noegle": "gron",
+      "viser": "Minimum – reversér ikke"
+    },
+    {
+      "bud": "Revers efter 2 over 1",
+      "noegle": "gra",
+      "viser": "Viser kun fordeling – udgangskravet er der allerede"
+    },
+    {
+      "bud": "Revers efter forhåndspas",
+      "noegle": "gra",
+      "viser": "Ikke krav"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Svarers anden melding efter 1♣ – 1♠ – 2♥",
+      "auction": [
+        [
+          "Makker",
+          "1♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "Pas",
+          "noegle": "gra",
+          "viser": "Findes ikke – reversen er rundekrav"
+        },
+        {
+          "bud": "2♠",
+          "noegle": "gron",
+          "viser": "Svag, kun 5-farve"
+        },
+        {
+          "bud": "3♣",
+          "noegle": "gron",
+          "viser": "Svag præference – også med 2 klør"
+        },
+        {
+          "bud": "2NT",
+          "noegle": "brun",
+          "viser": "Udgangskrav med hold i ruder – stærkere end 3NT"
+        },
+        {
+          "bud": "3♦",
+          "noegle": "gul",
+          "viser": "Fjerde farve, udgangskrav"
+        },
+        {
+          "bud": "3♥",
+          "noegle": "gron",
+          "viser": "Støtte, slow arrival – stærkere end 4♥"
+        },
+        {
+          "bud": "4♥",
+          "noegle": "gron",
+          "viser": "Støtte, fast arrival – svagere end 3♥"
+        },
+        {
+          "bud": "3♠",
+          "noegle": "gron",
+          "viser": "Udgangskrav med 6-farve"
+        },
+        {
+          "bud": "3NT",
+          "noegle": "brun",
+          "viser": "For at spille med hold i ruder – svagere udgangshånd"
+        },
+        {
+          "bud": "4♣",
+          "noegle": "bla",
+          "viser": "Sleminvit med klørstøtte"
+        }
+      ],
+      "note": "Svarer er svag op til ca. 8 hp og har udgangskrav fra ca. 9 hp. Hævning af åbners minor (fx 1♣ – 1♠ – 2♦ – 3♦) er naturlig og krav."
+    }
+  ],
+  "indmelding": [
+    {
+      "situation": "1♣ – 1♠ – (2♦) – 2♥",
+      "noegle": "gra",
+      "regel": "Ny farve i konkurrence (15+) – ikke revers."
+    },
+    {
+      "situation": "1♣ – (1♠) – X – 2♥",
+      "noegle": "gron",
+      "regel": "Hævning af de hjerter, doblingen viste – ikke revers."
+    },
+    {
+      "situation": "1♣ – (X) – 1♠ – 2♥ og 1♣ – (1♦) – 1♠ – 2♥",
+      "noegle": "bla",
+      "regel": "Revers som normalt."
+    },
+    {
+      "situation": "1♣ – 1♠ – 2♥ – (3♦)",
+      "noegle": "gra",
+      "regel": "Pas er svagt (ikke kravpas). Dobling er straf."
+    }
+  ],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14
+        ],
+        "H": [
+          14,
+          12,
+          9,
+          4
+        ],
+        "D": [
+          13,
+          3,
+          2
+        ],
+        "C": [
+          13,
+          7,
+          5,
+          4,
+          3
+        ]
+      },
+      "svar": "2♥",
+      "forklaring": "5 klør, 4 hjerter og 16 hp: revers 2♥ – 16+ og rundekrav, så makker ved, at du har ekstra værdier."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [],
+        "H": [
+          13,
+          11,
+          7,
+          2
+        ],
+        "D": [
+          11,
+          9,
+          8
+        ],
+        "C": [
+          14,
+          13,
+          12,
+          8,
+          7,
+          6
+        ]
+      },
+      "svar": "2♣",
+      "forklaring": "6 klør, 4 hjerter og kun 14 hp: 2♣ – med minimum må du ikke reversere, så du gentager din 6-farve."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          12,
+          9,
+          6,
+          5,
+          4
+        ],
+        "H": [
+          11,
+          7,
+          6,
+          2
+        ],
+        "D": [
+          14
+        ],
+        "C": [
+          6,
+          2
+        ]
+      },
+      "svar": "4♥",
+      "forklaring": "4 hjerter og 11 hp: 4♥ – støtte, fast arrival. Den svagere støttemelding."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11,
+          8,
+          7,
+          6
+        ],
+        "H": [
+          11
+        ],
+        "D": [
+          14,
+          12,
+          6,
+          5,
+          4
+        ],
+        "C": [
+          14,
+          11,
+          7
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "Hold i ruder, ingen fit og 13 hp: 2NT – udgangskrav og stærkere end 3NT, så åbner kan vise sin fordeling."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          9,
+          8,
+          2
+        ],
+        "H": [
+          14,
+          7,
+          6
+        ],
+        "D": [
+          11,
+          7,
+          6
+        ],
+        "C": [
+          13,
+          10,
+          2
+        ]
+      },
+      "svar": "3♦",
+      "forklaring": "Intet hold i ruder, ingen fit og 10 hp: 3♦ – fjerde farve og udgangskrav (efter en revers er fjerde farve altid udgangskrav)."
+    }
+  ],
+  "faldgruber": [
+    "Med minimum reverserer åbner ikke – gentag farven i stedet.",
+    "Pas findes ikke efter en revers.",
+    "3♥ er stærkere end 4♥: slow arrival viser tillæg.",
+    "Efter en revers er fjerde farve udgangskrav."
+  ],
+  "aabne": [
+    "Spilles revers (16+, rundekrav), eller er ny højere farve på 2-trinnet naturlig, 5-4, 12–18 hp og ikke krav?",
+    "Ingberman 2NT: 2NT som svagt relæ til 3♣ i stedet for udgangskrav med hold?"
+  ],
+  "relaterede": [
+    "Åbners stærke genmeldinger",
+    "Fjerde farve krav",
+    "Fast og slow arrival"
+  ],
+  "traener": {
+    "url": "traener.html?k=ff-revers",
+    "pool": "pools/ff-revers.json"
+  }
+}

@@ -1,0 +1,466 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "fjerde-farve",
+  "navn": "Fjerde farve krav",
+  "undertitel": "Den fjerde, umeldte farve er kunstig og krav",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 5a · Bridgesystem v1.7 · afsnit 4.8 · træneren pools/fjerde-farve.json",
+  "kategori": "genmelding",
+  "noegle": "gul",
+  "alert": "Fjerde farve alerteres",
+  "formaal": "At skabe et krav, når begge har meldt hver sin farve uden fit, så svarer kan spørge først og bestemme kontrakten bagefter.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "1♦"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "1♥"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Makker",
+        "1♠"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Tre farver er meldt, og der er ikke fundet fit. Svarer har 11+ hp, men ingen naturlig kravmelding.",
+    "gaelderFor": "Når begge makkere har meldt hver sin farve, og den fjerde farve er umeldt"
+  },
+  "kortfortalt": "Den fjerde farve siger intet om farven, men beder åbner beskrive hånden: på 2-trinnet rundekrav (11+ hp), på 3-trinnet udgangskrav (13+ hp). Åbner svarer i rækkefølgen støtte, sans, egen farve, fjerde farve.",
+  "meldinger": [
+    {
+      "bud": "Fjerde farve på 2-trinnet",
+      "noegle": "gul",
+      "styrke": "11+ hp",
+      "viser": "Rundekrav. Åbner må ikke passe"
+    },
+    {
+      "bud": "Fjerde farve på 3-trinnet",
+      "noegle": "bla",
+      "styrke": "13+ hp",
+      "viser": "Udgangskrav"
+    },
+    {
+      "bud": "2NT med hold",
+      "noegle": "brun",
+      "viser": "Naturlig invit – fjerde farve er ikke nødvendig"
+    },
+    {
+      "bud": "3NT med hold",
+      "noegle": "brun",
+      "viser": "For at spille"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Åbners svar – i denne rækkefølge",
+      "auction": [
+        [
+          "Dig",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "1. Støtte",
+          "noegle": "gron",
+          "viser": "3 korts støtte til svarers første farve – går forud for alt andet"
+        },
+        {
+          "bud": "2. Sans",
+          "noegle": "brun",
+          "viser": "Hold i den fjerde farve. Billigst med minimum, spring med tillæg"
+        },
+        {
+          "bud": "3. Egen farve",
+          "noegle": "gron",
+          "viser": "6-farve, intet hold i den fjerde farve, ingen støtte"
+        },
+        {
+          "bud": "4. Fjerde farve",
+          "noegle": "gra",
+          "viser": "Fire kort dér – sidste udvej, benægter alt ovenstående"
+        }
+      ],
+      "note": "Eksempel: 1♦ – 1♥ – 1♠ – 2♣. Åbner viser 2♥ med tre hjerter, 2NT med klørhold eller 2♦ med lang ruder."
+    }
+  ],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          8
+        ],
+        "H": [
+          13,
+          12,
+          11,
+          7,
+          6
+        ],
+        "D": [
+          14,
+          8,
+          3
+        ],
+        "C": [
+          10,
+          7,
+          3
+        ]
+      },
+      "svar": "2♣",
+      "forklaring": "13 hp, intet fit og intet hold i klør: 2♣ – fjerde farve, rundekrav."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          4,
+          2
+        ],
+        "H": [
+          14,
+          10,
+          9,
+          8,
+          7
+        ],
+        "D": [
+          9,
+          3
+        ],
+        "C": [
+          12,
+          11,
+          4
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "Hold i klør og 11 hp: 2NT er naturligt (invit) – fjerde farve er ikke nødvendig."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          11,
+          8,
+          6
+        ],
+        "H": [
+          11,
+          7,
+          6
+        ],
+        "D": [
+          14,
+          10,
+          9,
+          6,
+          3
+        ],
+        "C": [
+          14
+        ]
+      },
+      "svar": "2♥",
+      "forklaring": "3 hjerter: støtten til svarers første farve går forud for alt andet – 2♥."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          12,
+          5,
+          4
+        ],
+        "H": [
+          13,
+          6
+        ],
+        "D": [
+          14,
+          11,
+          10,
+          8,
+          7,
+          6
+        ],
+        "C": [
+          12
+        ]
+      },
+      "svar": "2♦",
+      "forklaring": "6 ruder, intet hold og ingen støtte: gentag farven – 2♦."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          13,
+          11,
+          7
+        ],
+        "H": [
+          8
+        ],
+        "D": [
+          14,
+          11,
+          9,
+          5
+        ],
+        "C": [
+          10,
+          7,
+          4,
+          3
+        ]
+      },
+      "svar": "3♣",
+      "forklaring": "4 klør: meld den fjerde farve naturligt – 3♣ (sidste udvej)."
+    }
+  ],
+  "faldgruber": [
+    "Den fjerde farve siger intet om farvens længde.",
+    "Har svarer en naturlig kravmelding eller hold til sans, bruges fjerde farve ikke.",
+    "Åbner må ikke passe: fjerde farve er mindst rundekrav.",
+    "Støtte til svarers første farve går forud for alt andet."
+  ],
+  "aabne": [
+    "Er fjerde farve udgangskrav efter en revers fra åbner, og ikke kun rundekrav?"
+  ],
+  "relaterede": [
+    "xy sans",
+    "Revers"
+  ],
+  "traener": {
+    "url": "traener.html?k=fjerde-farve",
+    "pool": "pools/fjerde-farve.json"
+  }
+}

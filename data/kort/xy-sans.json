@@ -1,0 +1,494 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "xy-sans",
+  "navn": "xy sans",
+  "undertitel": "Relæ efter åbners 1NT-genmelding: 2♣ invit, 2♦ udgangskrav",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 6a–6b · Bridgesystem v1.7 · afsnit 4.7 og 8.4 · træneren pools/xy-sans.json",
+  "kategori": "genmelding",
+  "noegle": "gul",
+  "alert": "2♣ og 2♦ alerteres",
+  "formaal": "At købe en ekstra melderunde på 2-trinnet, så svarer kan beskrive en invitations- eller udgangshånd præcist efter åbners 1NT-genmelding.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "1♣"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "1♠"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Makker",
+        "1NT"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Åbner har genmeldt 1NT (12–14 hp jævn) efter 1 i minor – 1 i major.",
+    "gaelderFor": "1♣/1♦ – 1♥/1♠ – 1NT"
+  },
+  "kortfortalt": "2♣ er relæ til 2♦ med en invitationshånd (10–12 hp), og 2♦ er udgangskrav (12+ hp), hvor åbner beskriver sin fordeling i trin. Ny farve på 2-trinnet og 3♣ er stop med en svag hånd og lang farve.",
+  "meldinger": [
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "viser": "Svag hånd uden lang farve – 1NT er en fin kontrakt"
+    },
+    {
+      "bud": "2♣",
+      "noegle": "gul",
+      "styrke": "10–12 hp",
+      "viser": "Relæ: åbner skal melde 2♦, og svarer beskriver bagefter"
+    },
+    {
+      "bud": "2♦",
+      "noegle": "bla",
+      "styrke": "12+ hp",
+      "viser": "Udgangskrav: åbner beskriver sin fordeling i trin"
+    },
+    {
+      "bud": "2♥ / 2♠ / 3♣",
+      "noegle": "gra",
+      "viser": "Stop: svag hånd med egen lang farve. Åbner passer"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "brun",
+      "viser": "Invit uden uviste majorfarver"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Svarer efter 2♣ – 2♦",
+      "auction": [
+        [
+          "Makker",
+          "1♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "2♥ / 2♠",
+          "noegle": "gron",
+          "viser": "5-farve i den meldte farve, invit"
+        },
+        {
+          "bud": "2NT",
+          "noegle": "brun",
+          "viser": "Invit uden 5-farve"
+        },
+        {
+          "bud": "3 i ny farve",
+          "noegle": "gron",
+          "viser": "5-5, invit eller bedre"
+        }
+      ]
+    },
+    {
+      "titel": "Åbner efter 2♦ (svarer har meldt 1♠)",
+      "auction": [
+        [
+          "Dig",
+          "1♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "1NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "2♥",
+          "noegle": "gron",
+          "viser": "4 hjerter, måske også 3 spar"
+        },
+        {
+          "bud": "2♠",
+          "noegle": "gron",
+          "viser": "3 spar, ikke 4 hjerter"
+        },
+        {
+          "bud": "2NT",
+          "noegle": "brun",
+          "viser": "Hverken 3 spar eller 4 hjerter"
+        },
+        {
+          "bud": "3♣",
+          "noegle": "gron",
+          "viser": "4-4 eller 5-5 i minorerne"
+        },
+        {
+          "bud": "3♦",
+          "noegle": "gron",
+          "viser": "Naturlig 4-farve i den anden minor"
+        }
+      ],
+      "note": "Svarers 3NT bagefter viser 5-farve i den anden major. Efter de øvrige kombinationer følger trinene samme mønster: støtte til svarers farve, den anden major og minorerne."
+    }
+  ],
+  "indmelding": [
+    {
+      "situation": "Modparten dobler eller melder ind efter 1NT-genmeldingen",
+      "noegle": "gul",
+      "regel": "xy sans gælder fortsat: 2♣ og 2♦ bruges som beskrevet."
+    },
+    {
+      "situation": "Modparten melder ind, før åbner har genmeldt",
+      "noegle": "gra",
+      "regel": "xy sans er ikke i spil. Almindelig konkurrencemelding og negativ dobling."
+    }
+  ],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          13,
+          12,
+          7,
+          6,
+          3
+        ],
+        "H": [
+          7
+        ],
+        "D": [
+          11,
+          10
+        ],
+        "C": [
+          11,
+          6,
+          4,
+          2
+        ]
+      },
+      "svar": "2♣",
+      "forklaring": "11 hp er en invitationshånd: 2♣ relæ – åbner melder 2♦, og du beskriver hånden bagefter."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          10,
+          7,
+          5,
+          4,
+          2
+        ],
+        "H": [
+          8,
+          3,
+          2
+        ],
+        "D": [
+          14,
+          13
+        ],
+        "C": [
+          6,
+          4
+        ]
+      },
+      "svar": "2♠",
+      "forklaring": "Svag hånd med 6 spar: 2♠ – stop, du afslutter i din lange farve."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          9,
+          7,
+          2
+        ],
+        "H": [
+          8,
+          5,
+          4
+        ],
+        "D": [
+          13,
+          9,
+          8,
+          7
+        ],
+        "C": [
+          13,
+          12
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "11 hp uden 5-farve: 2NT er invit."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "1NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          10,
+          6
+        ],
+        "H": [
+          12,
+          7,
+          3
+        ],
+        "D": [
+          14,
+          9
+        ],
+        "C": [
+          12,
+          10,
+          5,
+          4,
+          2
+        ]
+      },
+      "svar": "2♠",
+      "forklaring": "Tre spar og ikke fire hjerter: 2♠."
+    }
+  ],
+  "faldgruber": [
+    "2♣ siger intet om klør: det er et relæ, og åbner skal melde 2♦.",
+    "Åbners 2♦ efter relæet siger intet om hånden.",
+    "Med en svag hånd og lang farve melder svarer farven direkte (stop) – ikke over relæet."
+  ],
+  "aabne": [
+    "Gælder relæet også, når åbner genmelder en ny farve på 1-trinnet (XYZ), fx 1♣ – 1♥ – 1♠?"
+  ],
+  "relaterede": [
+    "Fjerde farve krav"
+  ],
+  "traener": {
+    "url": "traener.html?k=xy-sans",
+    "pool": "pools/xy-sans.json"
+  }
+}

@@ -1,0 +1,412 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "ff-two-over-one",
+  "navn": "Two over One udgangskrav",
+  "undertitel": "Ny farve på 2-trinnet over 1♥/1♠: 13+ hp og udgangskrav",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 1, 5 og 5a · træneren pools/ff-two-over-one.json",
+  "kategori": "svar",
+  "noegle": "bla",
+  "alert": "Two over One alerteres",
+  "formaal": "At skabe et udgangskrav tidligt, så begge kan beskrive hånden roligt og lede efter slem.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "1♥"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Makker åbner 1♥ eller 1♠, modparten passer, og du har ikke passet i forvejen.",
+    "gaelderFor": "Svar på 1♥/1♠ fra en uforhåndspasset svarer, når modparten tier"
+  },
+  "kortfortalt": "Ny farve på 2-trinnet viser 13+ hp og 5+ kort (4+ klør) og er udgangskrav. Åbner beskriver fordelingen, og trumf fastlægges senest i 3. melding, derefter cuebid og 1430.",
+  "meldinger": [
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "styrke": "0–5 hp",
+      "viser": "For svag til at melde"
+    },
+    {
+      "bud": "1♠ over 1♥",
+      "noegle": "gron",
+      "styrke": "6+ hp",
+      "viser": "4+ spar, naturligt rundekrav – før Two over One"
+    },
+    {
+      "bud": "1NT",
+      "noegle": "brun",
+      "styrke": "6–12 hp",
+      "viser": "Benægter 3 korts støtte (over 1♥ også 4 spar). Semikrav"
+    },
+    {
+      "bud": "2♣ / 2♦ / 2♥",
+      "noegle": "bla",
+      "styrke": "13+ hp",
+      "viser": "Two over One: 5+ i farven (4+ klør), udgangskrav. 2♥ kun over 1♠"
+    },
+    {
+      "bud": "3NT over 1♠",
+      "noegle": "brun",
+      "styrke": "13–15 hp",
+      "viser": "Jævn, præcis 2 kort i åbningsfarven – slutmelding"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Åbner efter Two over One",
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "2 i åbningsfarven",
+          "noegle": "gron",
+          "styrke": "12–14 hp",
+          "viser": "Kan være 6-farve – afventende"
+        },
+        {
+          "bud": "2NT",
+          "noegle": "brun",
+          "styrke": "12–14 hp",
+          "viser": "Jævn"
+        },
+        {
+          "bud": "2♠ efter 1♥",
+          "noegle": "gron",
+          "styrke": "15+ hp",
+          "viser": "4+ spar og 5+ hjerter"
+        },
+        {
+          "bud": "3NT",
+          "noegle": "brun",
+          "styrke": "18–19 hp",
+          "viser": "Jævn"
+        },
+        {
+          "bud": "Ny farve på 3-trinnet",
+          "noegle": "gron",
+          "styrke": "15+ hp",
+          "viser": "Normalt 4+ kort – viser tillæg"
+        },
+        {
+          "bud": "3 i åbningsfarven",
+          "noegle": "gron",
+          "styrke": "15+ hp",
+          "viser": "God farve med højst én taber"
+        },
+        {
+          "bud": "Spring i ny farve",
+          "noegle": "gul",
+          "viser": "Korthed dér og støtte til svarers farve"
+        },
+        {
+          "bud": "4 i svarers farve",
+          "noegle": "bla",
+          "viser": "Sleminvit med 4+ støtte og ingen kortfarve"
+        },
+        {
+          "bud": "4 i åbningsfarven",
+          "noegle": "gron",
+          "styrke": "11–13 hp",
+          "viser": "Selvspillende 7-farve"
+        }
+      ],
+      "note": "Farven fastlægges senest i 3. melding. Derefter er alle meldinger under udgang cuebids; 4NT er RKC 1430, og 3NT afslutter uden fit."
+    }
+  ],
+  "indmelding": [
+    {
+      "situation": "Modparten melder ind",
+      "noegle": "gra",
+      "regel": "Udgangskravet bortfalder: 2-meldingen er naturlig og stærk, men ikke krav til udgang."
+    },
+    {
+      "situation": "Modparten dobler",
+      "noegle": "gra",
+      "regel": "Udgangskravet bortfalder. Svarer kan redoble i stedet."
+    },
+    {
+      "situation": "Svarer har passet i forvejen",
+      "noegle": "gra",
+      "regel": "Ikke udgangskrav: 2-meldingen er naturlig."
+    }
+  ],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          10,
+          3
+        ],
+        "H": [
+          13,
+          6
+        ],
+        "D": [
+          14,
+          11,
+          6,
+          5,
+          3,
+          2
+        ],
+        "C": [
+          12,
+          5
+        ]
+      },
+      "svar": "2♦",
+      "forklaring": "14 hp og 6 ruder: 2♦ – Two over One, 13+ og udgangskrav."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11,
+          9,
+          7,
+          3
+        ],
+        "H": [
+          14,
+          8
+        ],
+        "D": [
+          10,
+          7
+        ],
+        "C": [
+          12,
+          7,
+          6,
+          4,
+          3
+        ]
+      },
+      "svar": "1♠",
+      "forklaring": "4 spar: 1♠ – naturligt rundekrav, før Two over One."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          4,
+          2
+        ],
+        "H": [
+          14,
+          13,
+          10,
+          9,
+          3
+        ],
+        "D": [
+          11,
+          6
+        ],
+        "C": [
+          13,
+          7,
+          3
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "Jævn hånd, 14 hp: 2NT (12–14)."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          11,
+          8,
+          4
+        ],
+        "H": [
+          14,
+          13,
+          10,
+          3,
+          2
+        ],
+        "D": [
+          3
+        ],
+        "C": [
+          14,
+          11,
+          4
+        ]
+      },
+      "svar": "2♠",
+      "forklaring": "4 spar ved siden af hjerterne og 17 hp: 2♠ (15+)."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          2
+        ],
+        "H": [
+          13,
+          12,
+          10,
+          9,
+          4,
+          3
+        ],
+        "D": [
+          14
+        ],
+        "C": [
+          13,
+          12,
+          11,
+          3
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "God 6-farve og 18 hp: 3♥ (15+)."
+    }
+  ],
+  "faldgruber": [
+    "Two over One kræver 13+ hp. Med færre og uden støtte meldes 1NT.",
+    "En 4-farve i spar over 1♥ meldes på 1-trinnet først.",
+    "Udgangskravet gælder kun, når modparten tier, og svarer ikke har passet.",
+    "Åbners 2 i farven og 2NT viser minimum – hurtig udgang er ikke styrke."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "Fast og slow arrival",
+    "Cuebids",
+    "RKC 1430"
+  ],
+  "forveksles": [
+    "2 over 1 som rundekrav (10+ hp)"
+  ],
+  "traener": {
+    "url": "traener.html?k=ff-two-over-one",
+    "pool": "pools/ff-two-over-one.json"
+  }
+}
