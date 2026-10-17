@@ -72,4 +72,9 @@ De øvrige kort – Franks svar (17. oktober 2026):
     - Trial bids: skemaet og træneren regner 4 små kort som hjælp; dokumentets eksempel siger, at x-x-x-x uden honnør giver for mange tabere. Styrken for trial bid er 15–17 sp i dokumentet og 14–16 sp i træneren (4M direkte med 17+).
     - Omvendt Bergen: trænerens beskrivelse i `data/konventioner.json` siger "25-reglen", men puljen regner med 26. Kortet bruger 26.
     - Bonusspørgsmålene i tre puljer (`ff-omvendt-minor`, `ff-revideret-omvendt-bergen`, `ff-two-over-one`) nævner makkerskaberne, fx "hos Makker 2 & mig". Ikke rettet.
+25. **Franks afgørelser om Støtte** (17. oktober 2026). Godkendt med disse rettelser:
+    - **Bekkasin efter dobling:** Bridgesystemets regel gælder: Bekkasin gælder fortsat. Det andet systemdokument er rettet i afsnit 2 og i oversigten over indblanding; Jordan 2NT og noten "(Forslag — ikke afprøvet)" i samme afsnit er fjernet. Kortet viser reglen under afsnit 3.
+    - **Trial bids:** 4 små kort uden honnør er ikke hjælp, som i dokumentets eksempel. Hjælp er honnør (E, K, D) eller korthed. Skemaet i afsnit 3, puljen (26 hænder ændret til 3M og bonusteksten) og kortet er rettet.
+    - **Trial bids:** styrken er 15–17 sp. Med 17 sp og en svag sidefarve meldes trial bid (3 hænder ændret); 4M direkte er 18+ eller 17 uden svag sidefarve.
+    - **Omvendt Bergen bruger 25-reglen:** udgang, når parret har mindst 25 støttepoint. Puljen er beregnet på ny (83 hænder fik nyt svar, 20 hænder med 18 sp efter makkers minimum er fjernet, fordi åbner da melder 4♠ direkte), og forklaringerne og bonusteksten siger "25-reglen". Kortet viser grænserne: efter 3♣ afmeld højst 13, spørg med 14, udgang med 15+; efter 1♠ – 3♦ afmeld højst 14, spørg 15–17, udgang 18+; efter 1♥ – 3♦ 4♥ med 16+.
 

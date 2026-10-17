@@ -293,7 +293,7 @@
      "Nej – de er kunstige, så kun honnørpoint",
      "Kun hvis makker har vist maksimum"
     ],
-    "why": "3♣ og 3♦ er kunstige, men de viser 4+ korts støtte. Åbner tæller derfor støttepoint i sin anden melding. Udgang ved 26 (25 med gode mellemkort)."
+    "why": "3♣ og 3♦ er kunstige, men de viser 4+ korts støtte. Åbner tæller derfor støttepoint i sin anden melding. Udgang efter 25-reglen: mindst 25 støttepoint tilsammen."
    },
    "en": {
     "bonus": {
@@ -304,7 +304,7 @@
       "No – they are artificial, so only high-card points",
       "Only if partner has shown a maximum"
      ],
-     "why": "3♣ and 3♦ are artificial, but they show four-card support or better. Opener therefore counts support points in the second bid. Game at 26 (25 with good intermediates)."
+     "why": "3♣ and 3♦ are artificial, but they show four-card support or better. Opener therefore counts support points in the second bid. Game by the rule of 25: at least 25 support points together."
     }
    }
   },
@@ -342,7 +342,7 @@
      "Nej – de er kunstige, så kun honnørpoint",
      "Kun hvis makker har vist maksimum"
     ],
-    "why": "3♣ og 3♦ er kunstige, men de viser 4+ korts støtte. Åbner tæller derfor støttepoint i sin anden melding. Udgang ved 26 (25 med gode mellemkort)."
+    "why": "3♣ og 3♦ er kunstige, men de viser 4+ korts støtte. Åbner tæller derfor støttepoint i sin anden melding. Udgang efter 25-reglen: mindst 25 støttepoint tilsammen."
    },
    "en": {
     "bonus": {
@@ -353,7 +353,7 @@
       "No – they are artificial, so only high-card points",
       "Only if partner has shown a maximum"
      ],
-     "why": "3♣ and 3♦ are artificial, but they show four-card support or better. Opener therefore counts support points in the second bid. Game at 26 (25 with good intermediates)."
+     "why": "3♣ and 3♦ are artificial, but they show four-card support or better. Opener therefore counts support points in the second bid. Game by the rule of 25: at least 25 support points together."
     }
    }
   },
@@ -391,7 +391,7 @@
      "Nej – de er kunstige, så kun honnørpoint",
      "Kun hvis makker har vist maksimum"
     ],
-    "why": "3♣ og 3♦ er kunstige, men de viser 4+ korts støtte. Åbner tæller derfor støttepoint i sin anden melding. Udgang ved 26 (25 med gode mellemkort)."
+    "why": "3♣ og 3♦ er kunstige, men de viser 4+ korts støtte. Åbner tæller derfor støttepoint i sin anden melding. Udgang efter 25-reglen: mindst 25 støttepoint tilsammen."
    },
    "en": {
     "bonus": {
@@ -402,7 +402,7 @@
       "No – they are artificial, so only high-card points",
       "Only if partner has shown a maximum"
      ],
-     "why": "3♣ and 3♦ are artificial, but they show four-card support or better. Opener therefore counts support points in the second bid. Game at 26 (25 with good intermediates)."
+     "why": "3♣ and 3♦ are artificial, but they show four-card support or better. Opener therefore counts support points in the second bid. Game by the rule of 25: at least 25 support points together."
     }
    }
   },
@@ -456,7 +456,7 @@
      "Nej – de er kunstige, så kun honnørpoint",
      "Kun hvis makker har vist maksimum"
     ],
-    "why": "3♣ og 3♦ er kunstige, men de viser 4+ korts støtte. Åbner tæller derfor støttepoint i sin anden melding. Udgang ved 26 (25 med gode mellemkort)."
+    "why": "3♣ og 3♦ er kunstige, men de viser 4+ korts støtte. Åbner tæller derfor støttepoint i sin anden melding. Udgang efter 25-reglen: mindst 25 støttepoint tilsammen."
    },
    "en": {
     "bonus": {
@@ -467,7 +467,7 @@
       "No – they are artificial, so only high-card points",
       "Only if partner has shown a maximum"
      ],
-     "why": "3♣ and 3♦ are artificial, but they show four-card support or better. Opener therefore counts support points in the second bid. Game at 26 (25 with good intermediates)."
+     "why": "3♣ and 3♦ are artificial, but they show four-card support or better. Opener therefore counts support points in the second bid. Game by the rule of 25: at least 25 support points together."
     }
    }
   },
@@ -505,7 +505,7 @@
      "Nej – de er kunstige, så kun honnørpoint",
      "Kun hvis makker har vist maksimum"
     ],
-    "why": "3♣ og 3♦ er kunstige, men de viser 4+ korts støtte. Åbner tæller derfor støttepoint i sin anden melding. Udgang ved 26 (25 med gode mellemkort)."
+    "why": "3♣ og 3♦ er kunstige, men de viser 4+ korts støtte. Åbner tæller derfor støttepoint i sin anden melding. Udgang efter 25-reglen: mindst 25 støttepoint tilsammen."
    },
    "en": {
     "bonus": {
@@ -516,7 +516,7 @@
       "No – they are artificial, so only high-card points",
       "Only if partner has shown a maximum"
      ],
-     "why": "3♣ and 3♦ are artificial, but they show four-card support or better. Opener therefore counts support points in the second bid. Game at 26 (25 with good intermediates)."
+     "why": "3♣ and 3♦ are artificial, but they show four-card support or better. Opener therefore counts support points in the second bid. Game by the rule of 25: at least 25 support points together."
     }
    }
   }
@@ -9611,10 +9611,10 @@
    },
    "hp": 13,
    "sp": 15,
-   "correct": "3♥",
-   "why": "16 sp (13 hp + double ♠ = 1 + double ♣ = 1 + 1 ekstra trumf), og der er ikke plads til at spørge: 16 + 9 (midt i makkers 7–10) – afmeld i 3♥.",
+   "correct": "4♥",
+   "why": "16 sp (13 hp + double ♠ = 1 + double ♣ = 1 + 1 ekstra trumf), og der er ikke plads til at spørge: 16 + 9 (midt i makkers 7–10) = 25 – 25-reglen: meld 4♥.",
    "en": {
-    "why": "16 support points (13 HCP + doubleton ♠ = 1 + doubleton ♣ = 1 + 1 extra trump), and there is no room to ask: 16 + 9 (the middle of partner's 7–10) – sign off in 3♥."
+    "why": "16 support points (13 HCP + doubleton ♠ = 1 + doubleton ♣ = 1 + 1 extra trump), and there is no room to ask: 16 + 9 (the middle of partner's 7–10) = 25 – rule of 25: bid 4♥."
    }
   },
   {
@@ -9645,9 +9645,9 @@
    "hp": 12,
    "sp": 15,
    "correct": "3♥",
-   "why": "15 sp (12 hp + single ♠ = 3) + højst 10 hos makker er under 26: afmeld i 3♥.",
+   "why": "15 sp (12 hp + single ♠ = 3), og der er ikke plads til at spørge: 15 + 9 (midt i makkers 7–10) = 24 – under 25: afmeld i 3♥.",
    "en": {
-    "why": "15 support points (12 HCP + singleton ♠ = 3) + at most 10 from partner is below 26: sign off in 3♥."
+    "why": "15 support points (12 HCP + singleton ♠ = 3), and there is no room to ask: 15 + 9 (the middle of partner's 7–10) = 24 – below 25: sign off in 3♥."
    }
   },
   {
@@ -9678,9 +9678,9 @@
    "hp": 12,
    "sp": 15,
    "correct": "3♥",
-   "why": "15 sp (12 hp + single ♣ = 3) + højst 10 hos makker er under 26: afmeld i 3♥.",
+   "why": "15 sp (12 hp + single ♣ = 3), og der er ikke plads til at spørge: 15 + 9 (midt i makkers 7–10) = 24 – under 25: afmeld i 3♥.",
    "en": {
-    "why": "15 support points (12 HCP + singleton ♣ = 3) + at most 10 from partner is below 26: sign off in 3♥."
+    "why": "15 support points (12 HCP + singleton ♣ = 3), and there is no room to ask: 15 + 9 (the middle of partner's 7–10) = 24 – below 25: sign off in 3♥."
    }
   },
   {
@@ -9710,10 +9710,10 @@
    },
    "hp": 14,
    "sp": 16,
-   "correct": "3♥",
-   "why": "16 sp (14 hp + double ♠ = 1 + double ♦ = 1), og der er ikke plads til at spørge: 16 + 9 (midt i makkers 7–10) – afmeld i 3♥.",
+   "correct": "4♥",
+   "why": "16 sp (14 hp + double ♠ = 1 + double ♦ = 1), og der er ikke plads til at spørge: 16 + 9 (midt i makkers 7–10) = 25 – 25-reglen: meld 4♥.",
    "en": {
-    "why": "16 support points (14 HCP + doubleton ♠ = 1 + doubleton ♦ = 1), and there is no room to ask: 16 + 9 (the middle of partner's 7–10) – sign off in 3♥."
+    "why": "16 support points (14 HCP + doubleton ♠ = 1 + doubleton ♦ = 1), and there is no room to ask: 16 + 9 (the middle of partner's 7–10) = 25 – rule of 25: bid 4♥."
    }
   },
   {
@@ -9743,10 +9743,10 @@
    },
    "hp": 14,
    "sp": 16,
-   "correct": "3♥",
-   "why": "16 sp (14 hp + double ♦ = 1 + double ♣ = 1), og der er ikke plads til at spørge: 16 + 9 (midt i makkers 7–10) – afmeld i 3♥.",
+   "correct": "4♥",
+   "why": "16 sp (14 hp + double ♦ = 1 + double ♣ = 1), og der er ikke plads til at spørge: 16 + 9 (midt i makkers 7–10) = 25 – 25-reglen: meld 4♥.",
    "en": {
-    "why": "16 support points (14 HCP + doubleton ♦ = 1 + doubleton ♣ = 1), and there is no room to ask: 16 + 9 (the middle of partner's 7–10) – sign off in 3♥."
+    "why": "16 support points (14 HCP + doubleton ♦ = 1 + doubleton ♣ = 1), and there is no room to ask: 16 + 9 (the middle of partner's 7–10) = 25 – rule of 25: bid 4♥."
    }
   },
   {
@@ -9777,9 +9777,9 @@
    "hp": 13,
    "sp": 15,
    "correct": "3♥",
-   "why": "15 sp (13 hp + double ♦ = 1 + double ♣ = 1) + højst 10 hos makker er under 26: afmeld i 3♥.",
+   "why": "15 sp (13 hp + double ♦ = 1 + double ♣ = 1), og der er ikke plads til at spørge: 15 + 9 (midt i makkers 7–10) = 24 – under 25: afmeld i 3♥.",
    "en": {
-    "why": "15 support points (13 HCP + doubleton ♦ = 1 + doubleton ♣ = 1) + at most 10 from partner is below 26: sign off in 3♥."
+    "why": "15 support points (13 HCP + doubleton ♦ = 1 + doubleton ♣ = 1), and there is no room to ask: 15 + 9 (the middle of partner's 7–10) = 24 – below 25: sign off in 3♥."
    }
   },
   {
@@ -9810,9 +9810,9 @@
    "hp": 13,
    "sp": 15,
    "correct": "3♥",
-   "why": "15 sp (13 hp + double ♠ = 1 + double ♦ = 1) + højst 10 hos makker er under 26: afmeld i 3♥.",
+   "why": "15 sp (13 hp + double ♠ = 1 + double ♦ = 1), og der er ikke plads til at spørge: 15 + 9 (midt i makkers 7–10) = 24 – under 25: afmeld i 3♥.",
    "en": {
-    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♦ = 1) + at most 10 from partner is below 26: sign off in 3♥."
+    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♦ = 1), and there is no room to ask: 15 + 9 (the middle of partner's 7–10) = 24 – below 25: sign off in 3♥."
    }
   },
   {
@@ -9843,9 +9843,9 @@
    "hp": 12,
    "sp": 15,
    "correct": "3♥",
-   "why": "15 sp (12 hp + single ♣ = 3) + højst 10 hos makker er under 26: afmeld i 3♥.",
+   "why": "15 sp (12 hp + single ♣ = 3), og der er ikke plads til at spørge: 15 + 9 (midt i makkers 7–10) = 24 – under 25: afmeld i 3♥.",
    "en": {
-    "why": "15 support points (12 HCP + singleton ♣ = 3) + at most 10 from partner is below 26: sign off in 3♥."
+    "why": "15 support points (12 HCP + singleton ♣ = 3), and there is no room to ask: 15 + 9 (the middle of partner's 7–10) = 24 – below 25: sign off in 3♥."
    }
   },
   {
@@ -9876,9 +9876,9 @@
    "hp": 13,
    "sp": 15,
    "correct": "3♥",
-   "why": "15 sp (13 hp + double ♠ = 1 + double ♦ = 1) + højst 10 hos makker er under 26: afmeld i 3♥.",
+   "why": "15 sp (13 hp + double ♠ = 1 + double ♦ = 1), og der er ikke plads til at spørge: 15 + 9 (midt i makkers 7–10) = 24 – under 25: afmeld i 3♥.",
    "en": {
-    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♦ = 1) + at most 10 from partner is below 26: sign off in 3♥."
+    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♦ = 1), and there is no room to ask: 15 + 9 (the middle of partner's 7–10) = 24 – below 25: sign off in 3♥."
    }
   },
   {
@@ -9909,9 +9909,9 @@
    "hp": 12,
    "sp": 14,
    "correct": "3♥",
-   "why": "14 sp (12 hp + double ♠ = 1 + double ♦ = 1) + højst 10 hos makker er under 26: afmeld i 3♥.",
+   "why": "14 sp (12 hp + double ♠ = 1 + double ♦ = 1) + højst 10 hos makker = 24 – under 25: afmeld i 3♥.",
    "en": {
-    "why": "14 support points (12 HCP + doubleton ♠ = 1 + doubleton ♦ = 1) + at most 10 from partner is below 26: sign off in 3♥."
+    "why": "14 support points (12 HCP + doubleton ♠ = 1 + doubleton ♦ = 1) + at most 10 from partner = 24 – below 25: sign off in 3♥."
    }
   },
   {
@@ -9941,10 +9941,10 @@
    },
    "hp": 13,
    "sp": 16,
-   "correct": "3♥",
-   "why": "16 sp (13 hp + single ♦ = 3), og der er ikke plads til at spørge: 16 + 9 (midt i makkers 7–10) – afmeld i 3♥.",
+   "correct": "4♥",
+   "why": "16 sp (13 hp + single ♦ = 3), og der er ikke plads til at spørge: 16 + 9 (midt i makkers 7–10) = 25 – 25-reglen: meld 4♥.",
    "en": {
-    "why": "16 support points (13 HCP + singleton ♦ = 3), and there is no room to ask: 16 + 9 (the middle of partner's 7–10) – sign off in 3♥."
+    "why": "16 support points (13 HCP + singleton ♦ = 3), and there is no room to ask: 16 + 9 (the middle of partner's 7–10) = 25 – rule of 25: bid 4♥."
    }
   },
   {
@@ -9974,10 +9974,10 @@
    },
    "hp": 13,
    "sp": 16,
-   "correct": "3♥",
-   "why": "16 sp (13 hp + single ♠ = 3), og der er ikke plads til at spørge: 16 + 9 (midt i makkers 7–10) – afmeld i 3♥.",
+   "correct": "4♥",
+   "why": "16 sp (13 hp + single ♠ = 3), og der er ikke plads til at spørge: 16 + 9 (midt i makkers 7–10) = 25 – 25-reglen: meld 4♥.",
    "en": {
-    "why": "16 support points (13 HCP + singleton ♠ = 3), and there is no room to ask: 16 + 9 (the middle of partner's 7–10) – sign off in 3♥."
+    "why": "16 support points (13 HCP + singleton ♠ = 3), and there is no room to ask: 16 + 9 (the middle of partner's 7–10) = 25 – rule of 25: bid 4♥."
    }
   },
   {
@@ -10008,9 +10008,9 @@
    "hp": 12,
    "sp": 15,
    "correct": "3♥",
-   "why": "15 sp (12 hp + single ♠ = 3) + højst 10 hos makker er under 26: afmeld i 3♥.",
+   "why": "15 sp (12 hp + single ♠ = 3), og der er ikke plads til at spørge: 15 + 9 (midt i makkers 7–10) = 24 – under 25: afmeld i 3♥.",
    "en": {
-    "why": "15 support points (12 HCP + singleton ♠ = 3) + at most 10 from partner is below 26: sign off in 3♥."
+    "why": "15 support points (12 HCP + singleton ♠ = 3), and there is no room to ask: 15 + 9 (the middle of partner's 7–10) = 24 – below 25: sign off in 3♥."
    }
   },
   {
@@ -10041,9 +10041,9 @@
    "hp": 12,
    "sp": 13,
    "correct": "3♥",
-   "why": "13 sp (12 hp + double ♦ = 1) + højst 10 hos makker er under 26: afmeld i 3♥.",
+   "why": "13 sp (12 hp + double ♦ = 1) + højst 10 hos makker = 23 – under 25: afmeld i 3♥.",
    "en": {
-    "why": "13 support points (12 HCP + doubleton ♦ = 1) + at most 10 from partner is below 26: sign off in 3♥."
+    "why": "13 support points (12 HCP + doubleton ♦ = 1) + at most 10 from partner = 23 – below 25: sign off in 3♥."
    }
   },
   {
@@ -10074,9 +10074,9 @@
    "hp": 12,
    "sp": 14,
    "correct": "3♥",
-   "why": "14 sp (12 hp + double ♠ = 1 + double ♣ = 1) + højst 10 hos makker er under 26: afmeld i 3♥.",
+   "why": "14 sp (12 hp + double ♠ = 1 + double ♣ = 1) + højst 10 hos makker = 24 – under 25: afmeld i 3♥.",
    "en": {
-    "why": "14 support points (12 HCP + doubleton ♠ = 1 + doubleton ♣ = 1) + at most 10 from partner is below 26: sign off in 3♥."
+    "why": "14 support points (12 HCP + doubleton ♠ = 1 + doubleton ♣ = 1) + at most 10 from partner = 24 – below 25: sign off in 3♥."
    }
   },
   {
@@ -10107,9 +10107,9 @@
    "hp": 12,
    "sp": 13,
    "correct": "3♥",
-   "why": "13 sp (12 hp + double ♠ = 1) + højst 10 hos makker er under 26: afmeld i 3♥.",
+   "why": "13 sp (12 hp + double ♠ = 1) + højst 10 hos makker = 23 – under 25: afmeld i 3♥.",
    "en": {
-    "why": "13 support points (12 HCP + doubleton ♠ = 1) + at most 10 from partner is below 26: sign off in 3♥."
+    "why": "13 support points (12 HCP + doubleton ♠ = 1) + at most 10 from partner = 23 – below 25: sign off in 3♥."
    }
   },
   {
@@ -10140,9 +10140,9 @@
    "hp": 12,
    "sp": 13,
    "correct": "3♥",
-   "why": "13 sp (12 hp + double ♠ = 1) + højst 10 hos makker er under 26: afmeld i 3♥.",
+   "why": "13 sp (12 hp + double ♠ = 1) + højst 10 hos makker = 23 – under 25: afmeld i 3♥.",
    "en": {
-    "why": "13 support points (12 HCP + doubleton ♠ = 1) + at most 10 from partner is below 26: sign off in 3♥."
+    "why": "13 support points (12 HCP + doubleton ♠ = 1) + at most 10 from partner = 23 – below 25: sign off in 3♥."
    }
   },
   {
@@ -10173,9 +10173,9 @@
    "hp": 15,
    "sp": 19,
    "correct": "4♥",
-   "why": "19 sp (15 hp + double ♠ = 1 + single ♣ = 3) + mindst 7 hos makker giver 26+: udgang, 4♥.",
+   "why": "19 sp (15 hp + double ♠ = 1 + single ♣ = 3) + mindst 7 hos makker = 26 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "19 support points (15 HCP + doubleton ♠ = 1 + singleton ♣ = 3) + at least 7 from partner gives 26+: game, 4♥."
+    "why": "19 support points (15 HCP + doubleton ♠ = 1 + singleton ♣ = 3) + at least 7 from partner = 26 – rule of 25: game, 4♥."
    }
   },
   {
@@ -10206,9 +10206,9 @@
    "hp": 18,
    "sp": 21,
    "correct": "4♥",
-   "why": "21 sp (18 hp + single ♣ = 3) + mindst 7 hos makker giver 26+: udgang, 4♥.",
+   "why": "21 sp (18 hp + single ♣ = 3) + mindst 7 hos makker = 28 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "21 support points (18 HCP + singleton ♣ = 3) + at least 7 from partner gives 26+: game, 4♥."
+    "why": "21 support points (18 HCP + singleton ♣ = 3) + at least 7 from partner = 28 – rule of 25: game, 4♥."
    }
   },
   {
@@ -10239,9 +10239,9 @@
    "hp": 13,
    "sp": 16,
    "correct": "4♥",
-   "why": "17 sp (13 hp + single ♠ = 3 + 1 ekstra trumf), og der er ikke plads til at spørge: 17 + 9 (midt i makkers 7–10) – meld 4♥.",
+   "why": "17 sp (13 hp + single ♠ = 3 + 1 ekstra trumf), og der er ikke plads til at spørge: 17 + 9 (midt i makkers 7–10) = 26 – 25-reglen: meld 4♥.",
    "en": {
-    "why": "17 support points (13 HCP + singleton ♠ = 3 + 1 extra trump), and there is no room to ask: 17 + 9 (the middle of partner's 7–10) – bid 4♥."
+    "why": "17 support points (13 HCP + singleton ♠ = 3 + 1 extra trump), and there is no room to ask: 17 + 9 (the middle of partner's 7–10) = 26 – rule of 25: bid 4♥."
    }
   },
   {
@@ -10272,9 +10272,9 @@
    "hp": 16,
    "sp": 19,
    "correct": "4♥",
-   "why": "20 sp (16 hp + single ♠ = 3 + 1 ekstra trumf) + mindst 7 hos makker giver 26+: udgang, 4♥.",
+   "why": "20 sp (16 hp + single ♠ = 3 + 1 ekstra trumf) + mindst 7 hos makker = 27 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "20 support points (16 HCP + singleton ♠ = 3 + 1 extra trump) + at least 7 from partner gives 26+: game, 4♥."
+    "why": "20 support points (16 HCP + singleton ♠ = 3 + 1 extra trump) + at least 7 from partner = 27 – rule of 25: game, 4♥."
    }
   },
   {
@@ -10305,9 +10305,9 @@
    "hp": 15,
    "sp": 19,
    "correct": "4♥",
-   "why": "19 sp (15 hp + single ♦ = 3 + double ♣ = 1) + mindst 7 hos makker giver 26+: udgang, 4♥.",
+   "why": "19 sp (15 hp + single ♦ = 3 + double ♣ = 1) + mindst 7 hos makker = 26 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "19 support points (15 HCP + singleton ♦ = 3 + doubleton ♣ = 1) + at least 7 from partner gives 26+: game, 4♥."
+    "why": "19 support points (15 HCP + singleton ♦ = 3 + doubleton ♣ = 1) + at least 7 from partner = 26 – rule of 25: game, 4♥."
    }
   },
   {
@@ -10337,9 +10337,9 @@
    "hp": 13,
    "sp": 19,
    "correct": "4♥",
-   "why": "19 sp (13 hp + renonce ♦ = 5 + double ♣ = 1) + mindst 7 hos makker giver 26+: udgang, 4♥.",
+   "why": "19 sp (13 hp + renonce ♦ = 5 + double ♣ = 1) + mindst 7 hos makker = 26 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "19 support points (13 HCP + void ♦ = 5 + doubleton ♣ = 1) + at least 7 from partner gives 26+: game, 4♥."
+    "why": "19 support points (13 HCP + void ♦ = 5 + doubleton ♣ = 1) + at least 7 from partner = 26 – rule of 25: game, 4♥."
    }
   },
   {
@@ -10370,9 +10370,9 @@
    "hp": 20,
    "sp": 23,
    "correct": "4♥",
-   "why": "23 sp (20 hp + single ♠ = 3) + mindst 7 hos makker giver 26+: udgang, 4♥.",
+   "why": "23 sp (20 hp + single ♠ = 3) + mindst 7 hos makker = 30 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "23 support points (20 HCP + singleton ♠ = 3) + at least 7 from partner gives 26+: game, 4♥."
+    "why": "23 support points (20 HCP + singleton ♠ = 3) + at least 7 from partner = 30 – rule of 25: game, 4♥."
    }
   },
   {
@@ -10403,9 +10403,9 @@
    "hp": 17,
    "sp": 19,
    "correct": "4♥",
-   "why": "20 sp (17 hp + double ♠ = 1 + double ♦ = 1 + 1 ekstra trumf) + mindst 7 hos makker giver 26+: udgang, 4♥.",
+   "why": "20 sp (17 hp + double ♠ = 1 + double ♦ = 1 + 1 ekstra trumf) + mindst 7 hos makker = 27 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "20 support points (17 HCP + doubleton ♠ = 1 + doubleton ♦ = 1 + 1 extra trump) + at least 7 from partner gives 26+: game, 4♥."
+    "why": "20 support points (17 HCP + doubleton ♠ = 1 + doubleton ♦ = 1 + 1 extra trump) + at least 7 from partner = 27 – rule of 25: game, 4♥."
    }
   },
   {
@@ -10436,9 +10436,9 @@
    "hp": 18,
    "sp": 20,
    "correct": "4♥",
-   "why": "21 sp (18 hp + double ♠ = 1 + double ♣ = 1 + 1 ekstra trumf) + mindst 7 hos makker giver 26+: udgang, 4♥.",
+   "why": "21 sp (18 hp + double ♠ = 1 + double ♣ = 1 + 1 ekstra trumf) + mindst 7 hos makker = 28 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "21 support points (18 HCP + doubleton ♠ = 1 + doubleton ♣ = 1 + 1 extra trump) + at least 7 from partner gives 26+: game, 4♥."
+    "why": "21 support points (18 HCP + doubleton ♠ = 1 + doubleton ♣ = 1 + 1 extra trump) + at least 7 from partner = 28 – rule of 25: game, 4♥."
    }
   },
   {
@@ -10469,9 +10469,9 @@
    "hp": 16,
    "sp": 19,
    "correct": "4♥",
-   "why": "19 sp (16 hp + single ♦ = 3) + mindst 7 hos makker giver 26+: udgang, 4♥.",
+   "why": "19 sp (16 hp + single ♦ = 3) + mindst 7 hos makker = 26 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "19 support points (16 HCP + singleton ♦ = 3) + at least 7 from partner gives 26+: game, 4♥."
+    "why": "19 support points (16 HCP + singleton ♦ = 3) + at least 7 from partner = 26 – rule of 25: game, 4♥."
    }
   },
   {
@@ -10502,9 +10502,9 @@
    "hp": 19,
    "sp": 20,
    "correct": "4♥",
-   "why": "20 sp (19 hp + double ♠ = 1) + mindst 7 hos makker giver 26+: udgang, 4♥.",
+   "why": "20 sp (19 hp + double ♠ = 1) + mindst 7 hos makker = 27 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "20 support points (19 HCP + doubleton ♠ = 1) + at least 7 from partner gives 26+: game, 4♥."
+    "why": "20 support points (19 HCP + doubleton ♠ = 1) + at least 7 from partner = 27 – rule of 25: game, 4♥."
    }
   },
   {
@@ -10535,9 +10535,9 @@
    "hp": 16,
    "sp": 20,
    "correct": "4♥",
-   "why": "21 sp (16 hp + single ♠ = 3 + double ♦ = 1 + 1 ekstra trumf) + mindst 7 hos makker giver 26+: udgang, 4♥.",
+   "why": "21 sp (16 hp + single ♠ = 3 + double ♦ = 1 + 1 ekstra trumf) + mindst 7 hos makker = 28 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "21 support points (16 HCP + singleton ♠ = 3 + doubleton ♦ = 1 + 1 extra trump) + at least 7 from partner gives 26+: game, 4♥."
+    "why": "21 support points (16 HCP + singleton ♠ = 3 + doubleton ♦ = 1 + 1 extra trump) + at least 7 from partner = 28 – rule of 25: game, 4♥."
    }
   },
   {
@@ -10568,9 +10568,9 @@
    "hp": 14,
    "sp": 17,
    "correct": "4♥",
-   "why": "17 sp (14 hp + single ♣ = 3), og der er ikke plads til at spørge: 17 + 9 (midt i makkers 7–10) – meld 4♥.",
+   "why": "17 sp (14 hp + single ♣ = 3), og der er ikke plads til at spørge: 17 + 9 (midt i makkers 7–10) = 26 – 25-reglen: meld 4♥.",
    "en": {
-    "why": "17 support points (14 HCP + singleton ♣ = 3), and there is no room to ask: 17 + 9 (the middle of partner's 7–10) – bid 4♥."
+    "why": "17 support points (14 HCP + singleton ♣ = 3), and there is no room to ask: 17 + 9 (the middle of partner's 7–10) = 26 – rule of 25: bid 4♥."
    }
   },
   {
@@ -10601,9 +10601,9 @@
    "hp": 20,
    "sp": 23,
    "correct": "4♥",
-   "why": "23 sp (20 hp + single ♦ = 3) + mindst 7 hos makker giver 26+: udgang, 4♥.",
+   "why": "23 sp (20 hp + single ♦ = 3) + mindst 7 hos makker = 30 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "23 support points (20 HCP + singleton ♦ = 3) + at least 7 from partner gives 26+: game, 4♥."
+    "why": "23 support points (20 HCP + singleton ♦ = 3) + at least 7 from partner = 30 – rule of 25: game, 4♥."
    }
   },
   {
@@ -10634,9 +10634,9 @@
    "hp": 14,
    "sp": 18,
    "correct": "4♥",
-   "why": "18 sp (14 hp + single ♠ = 3 + double ♣ = 1), og der er ikke plads til at spørge: 18 + 9 (midt i makkers 7–10) – meld 4♥.",
+   "why": "18 sp (14 hp + single ♠ = 3 + double ♣ = 1) + mindst 7 hos makker = 25 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "18 support points (14 HCP + singleton ♠ = 3 + doubleton ♣ = 1), and there is no room to ask: 18 + 9 (the middle of partner's 7–10) – bid 4♥."
+    "why": "18 support points (14 HCP + singleton ♠ = 3 + doubleton ♣ = 1) + at least 7 from partner = 25 – rule of 25: game, 4♥."
    }
   },
   {
@@ -10667,9 +10667,9 @@
    "hp": 14,
    "sp": 16,
    "correct": "4♥",
-   "why": "17 sp (14 hp + double ♠ = 1 + double ♣ = 1 + 1 ekstra trumf), og der er ikke plads til at spørge: 17 + 9 (midt i makkers 7–10) – meld 4♥.",
+   "why": "17 sp (14 hp + double ♠ = 1 + double ♣ = 1 + 1 ekstra trumf), og der er ikke plads til at spørge: 17 + 9 (midt i makkers 7–10) = 26 – 25-reglen: meld 4♥.",
    "en": {
-    "why": "17 support points (14 HCP + doubleton ♠ = 1 + doubleton ♣ = 1 + 1 extra trump), and there is no room to ask: 17 + 9 (the middle of partner's 7–10) – bid 4♥."
+    "why": "17 support points (14 HCP + doubleton ♠ = 1 + doubleton ♣ = 1 + 1 extra trump), and there is no room to ask: 17 + 9 (the middle of partner's 7–10) = 26 – rule of 25: bid 4♥."
    }
   },
   {
@@ -10700,9 +10700,9 @@
    "hp": 14,
    "sp": 17,
    "correct": "4♥",
-   "why": "17 sp (14 hp + single ♦ = 3), og der er ikke plads til at spørge: 17 + 9 (midt i makkers 7–10) – meld 4♥.",
+   "why": "17 sp (14 hp + single ♦ = 3), og der er ikke plads til at spørge: 17 + 9 (midt i makkers 7–10) = 26 – 25-reglen: meld 4♥.",
    "en": {
-    "why": "17 support points (14 HCP + singleton ♦ = 3), and there is no room to ask: 17 + 9 (the middle of partner's 7–10) – bid 4♥."
+    "why": "17 support points (14 HCP + singleton ♦ = 3), and there is no room to ask: 17 + 9 (the middle of partner's 7–10) = 26 – rule of 25: bid 4♥."
    }
   },
   {
@@ -10733,9 +10733,9 @@
    "hp": 12,
    "sp": 13,
    "correct": "3♥",
-   "why": "13 sp (12 hp + double ♣ = 1) + højst 11 hos makker er under 26: afmeld i 3♥.",
+   "why": "13 sp (12 hp + double ♣ = 1) + højst 11 hos makker = 24 – under 25: afmeld i 3♥.",
    "en": {
-    "why": "13 support points (12 HCP + doubleton ♣ = 1) + at most 11 from partner is below 26: sign off in 3♥."
+    "why": "13 support points (12 HCP + doubleton ♣ = 1) + at most 11 from partner = 24 – below 25: sign off in 3♥."
    }
   },
   {
@@ -10765,10 +10765,10 @@
    },
    "hp": 13,
    "sp": 14,
-   "correct": "3♥",
-   "why": "14 sp (13 hp + double ♦ = 1) + højst 11 hos makker er under 26: afmeld i 3♥.",
+   "correct": "3♦",
+   "why": "14 sp (13 hp + double ♦ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (13 HCP + doubleton ♦ = 1) + at most 11 from partner is below 26: sign off in 3♥."
+    "why": "14 support points (13 HCP + doubleton ♦ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -10798,10 +10798,10 @@
    },
    "hp": 12,
    "sp": 14,
-   "correct": "3♥",
-   "why": "14 sp (12 hp + double ♦ = 1 + double ♣ = 1) + højst 11 hos makker er under 26: afmeld i 3♥.",
+   "correct": "3♦",
+   "why": "14 sp (12 hp + double ♦ = 1 + double ♣ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (12 HCP + doubleton ♦ = 1 + doubleton ♣ = 1) + at most 11 from partner is below 26: sign off in 3♥."
+    "why": "14 support points (12 HCP + doubleton ♦ = 1 + doubleton ♣ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -10832,9 +10832,9 @@
    "hp": 12,
    "sp": 13,
    "correct": "3♥",
-   "why": "13 sp (12 hp + double ♠ = 1) + højst 11 hos makker er under 26: afmeld i 3♥.",
+   "why": "13 sp (12 hp + double ♠ = 1) + højst 11 hos makker = 24 – under 25: afmeld i 3♥.",
    "en": {
-    "why": "13 support points (12 HCP + doubleton ♠ = 1) + at most 11 from partner is below 26: sign off in 3♥."
+    "why": "13 support points (12 HCP + doubleton ♠ = 1) + at most 11 from partner = 24 – below 25: sign off in 3♥."
    }
   },
   {
@@ -10865,9 +10865,9 @@
    "hp": 12,
    "sp": 13,
    "correct": "3♥",
-   "why": "13 sp (12 hp + double ♦ = 1) + højst 11 hos makker er under 26: afmeld i 3♥.",
+   "why": "13 sp (12 hp + double ♦ = 1) + højst 11 hos makker = 24 – under 25: afmeld i 3♥.",
    "en": {
-    "why": "13 support points (12 HCP + doubleton ♦ = 1) + at most 11 from partner is below 26: sign off in 3♥."
+    "why": "13 support points (12 HCP + doubleton ♦ = 1) + at most 11 from partner = 24 – below 25: sign off in 3♥."
    }
   },
   {
@@ -10897,10 +10897,10 @@
    },
    "hp": 13,
    "sp": 14,
-   "correct": "3♥",
-   "why": "14 sp (13 hp + double ♠ = 1) + højst 11 hos makker er under 26: afmeld i 3♥.",
+   "correct": "3♦",
+   "why": "14 sp (13 hp + double ♠ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (13 HCP + doubleton ♠ = 1) + at most 11 from partner is below 26: sign off in 3♥."
+    "why": "14 support points (13 HCP + doubleton ♠ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -10930,10 +10930,10 @@
    },
    "hp": 12,
    "sp": 14,
-   "correct": "3♥",
-   "why": "14 sp (12 hp + double ♦ = 1 + double ♣ = 1) + højst 11 hos makker er under 26: afmeld i 3♥.",
+   "correct": "3♦",
+   "why": "14 sp (12 hp + double ♦ = 1 + double ♣ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (12 HCP + doubleton ♦ = 1 + doubleton ♣ = 1) + at most 11 from partner is below 26: sign off in 3♥."
+    "why": "14 support points (12 HCP + doubleton ♦ = 1 + doubleton ♣ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -10963,10 +10963,10 @@
    },
    "hp": 12,
    "sp": 14,
-   "correct": "3♥",
-   "why": "14 sp (12 hp + double ♠ = 1 + double ♣ = 1) + højst 11 hos makker er under 26: afmeld i 3♥.",
+   "correct": "3♦",
+   "why": "14 sp (12 hp + double ♠ = 1 + double ♣ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (12 HCP + doubleton ♠ = 1 + doubleton ♣ = 1) + at most 11 from partner is below 26: sign off in 3♥."
+    "why": "14 support points (12 HCP + doubleton ♠ = 1 + doubleton ♣ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -10996,10 +10996,10 @@
    },
    "hp": 13,
    "sp": 14,
-   "correct": "3♥",
-   "why": "14 sp (13 hp + double ♦ = 1) + højst 11 hos makker er under 26: afmeld i 3♥.",
+   "correct": "3♦",
+   "why": "14 sp (13 hp + double ♦ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (13 HCP + doubleton ♦ = 1) + at most 11 from partner is below 26: sign off in 3♥."
+    "why": "14 support points (13 HCP + doubleton ♦ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -11029,10 +11029,10 @@
    },
    "hp": 12,
    "sp": 14,
-   "correct": "3♥",
-   "why": "14 sp (12 hp + double ♠ = 1 + double ♦ = 1) + højst 11 hos makker er under 26: afmeld i 3♥.",
+   "correct": "3♦",
+   "why": "14 sp (12 hp + double ♠ = 1 + double ♦ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (12 HCP + doubleton ♠ = 1 + doubleton ♦ = 1) + at most 11 from partner is below 26: sign off in 3♥."
+    "why": "14 support points (12 HCP + doubleton ♠ = 1 + doubleton ♦ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -11062,10 +11062,10 @@
    },
    "hp": 12,
    "sp": 14,
-   "correct": "3♥",
-   "why": "14 sp (12 hp + double ♠ = 1 + double ♣ = 1) + højst 11 hos makker er under 26: afmeld i 3♥.",
+   "correct": "3♦",
+   "why": "14 sp (12 hp + double ♠ = 1 + double ♣ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (12 HCP + doubleton ♠ = 1 + doubleton ♣ = 1) + at most 11 from partner is below 26: sign off in 3♥."
+    "why": "14 support points (12 HCP + doubleton ♠ = 1 + doubleton ♣ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -11095,10 +11095,10 @@
    },
    "hp": 13,
    "sp": 14,
-   "correct": "3♥",
-   "why": "14 sp (13 hp + double ♣ = 1) + højst 11 hos makker er under 26: afmeld i 3♥.",
+   "correct": "3♦",
+   "why": "14 sp (13 hp + double ♣ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (13 HCP + doubleton ♣ = 1) + at most 11 from partner is below 26: sign off in 3♥."
+    "why": "14 support points (13 HCP + doubleton ♣ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -11129,9 +11129,9 @@
    "hp": 12,
    "sp": 13,
    "correct": "3♥",
-   "why": "13 sp (12 hp + double ♦ = 1) + højst 11 hos makker er under 26: afmeld i 3♥.",
+   "why": "13 sp (12 hp + double ♦ = 1) + højst 11 hos makker = 24 – under 25: afmeld i 3♥.",
    "en": {
-    "why": "13 support points (12 HCP + doubleton ♦ = 1) + at most 11 from partner is below 26: sign off in 3♥."
+    "why": "13 support points (12 HCP + doubleton ♦ = 1) + at most 11 from partner = 24 – below 25: sign off in 3♥."
    }
   },
   {
@@ -11161,10 +11161,10 @@
    },
    "hp": 12,
    "sp": 14,
-   "correct": "3♥",
-   "why": "14 sp (12 hp + double ♠ = 1 + double ♣ = 1) + højst 11 hos makker er under 26: afmeld i 3♥.",
+   "correct": "3♦",
+   "why": "14 sp (12 hp + double ♠ = 1 + double ♣ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (12 HCP + doubleton ♠ = 1 + doubleton ♣ = 1) + at most 11 from partner is below 26: sign off in 3♥."
+    "why": "14 support points (12 HCP + doubleton ♠ = 1 + doubleton ♣ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -11194,10 +11194,10 @@
    },
    "hp": 12,
    "sp": 14,
-   "correct": "3♥",
-   "why": "14 sp (12 hp + double ♠ = 1 + double ♣ = 1) + højst 11 hos makker er under 26: afmeld i 3♥.",
+   "correct": "3♦",
+   "why": "14 sp (12 hp + double ♠ = 1 + double ♣ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (12 HCP + doubleton ♠ = 1 + doubleton ♣ = 1) + at most 11 from partner is below 26: sign off in 3♥."
+    "why": "14 support points (12 HCP + doubleton ♠ = 1 + doubleton ♣ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -11227,10 +11227,10 @@
    },
    "hp": 13,
    "sp": 14,
-   "correct": "3♥",
-   "why": "14 sp (13 hp + double ♦ = 1) + højst 11 hos makker er under 26: afmeld i 3♥.",
+   "correct": "3♦",
+   "why": "14 sp (13 hp + double ♦ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (13 HCP + doubleton ♦ = 1) + at most 11 from partner is below 26: sign off in 3♥."
+    "why": "14 support points (13 HCP + doubleton ♦ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -11260,10 +11260,10 @@
    },
    "hp": 12,
    "sp": 14,
-   "correct": "3♥",
-   "why": "14 sp (12 hp + double ♠ = 1 + double ♦ = 1) + højst 11 hos makker er under 26: afmeld i 3♥.",
+   "correct": "3♦",
+   "why": "14 sp (12 hp + double ♠ = 1 + double ♦ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (12 HCP + doubleton ♠ = 1 + doubleton ♦ = 1) + at most 11 from partner is below 26: sign off in 3♥."
+    "why": "14 support points (12 HCP + doubleton ♠ = 1 + doubleton ♦ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -11294,9 +11294,9 @@
    "hp": 15,
    "sp": 19,
    "correct": "4♥",
-   "why": "20 sp (15 hp + double ♠ = 1 + single ♣ = 3 + 1 ekstra trumf) + mindst 10 hos makker giver 26+: udgang, 4♥.",
+   "why": "20 sp (15 hp + double ♠ = 1 + single ♣ = 3 + 1 ekstra trumf) + mindst 10 hos makker = 30 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "20 support points (15 HCP + doubleton ♠ = 1 + singleton ♣ = 3 + 1 extra trump) + at least 10 from partner gives 26+: game, 4♥."
+    "why": "20 support points (15 HCP + doubleton ♠ = 1 + singleton ♣ = 3 + 1 extra trump) + at least 10 from partner = 30 – rule of 25: game, 4♥."
    }
   },
   {
@@ -11327,9 +11327,9 @@
    "hp": 15,
    "sp": 18,
    "correct": "4♥",
-   "why": "18 sp (15 hp + single ♦ = 3) + mindst 10 hos makker giver 26+: udgang, 4♥.",
+   "why": "18 sp (15 hp + single ♦ = 3) + mindst 10 hos makker = 28 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "18 support points (15 HCP + singleton ♦ = 3) + at least 10 from partner gives 26+: game, 4♥."
+    "why": "18 support points (15 HCP + singleton ♦ = 3) + at least 10 from partner = 28 – rule of 25: game, 4♥."
    }
   },
   {
@@ -11360,9 +11360,9 @@
    "hp": 14,
    "sp": 18,
    "correct": "4♥",
-   "why": "18 sp (14 hp + double ♠ = 1 + single ♣ = 3) + mindst 10 hos makker giver 26+: udgang, 4♥.",
+   "why": "18 sp (14 hp + double ♠ = 1 + single ♣ = 3) + mindst 10 hos makker = 28 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "18 support points (14 HCP + doubleton ♠ = 1 + singleton ♣ = 3) + at least 10 from partner gives 26+: game, 4♥."
+    "why": "18 support points (14 HCP + doubleton ♠ = 1 + singleton ♣ = 3) + at least 10 from partner = 28 – rule of 25: game, 4♥."
    }
   },
   {
@@ -11392,9 +11392,9 @@
    "hp": 15,
    "sp": 20,
    "correct": "4♥",
-   "why": "20 sp (15 hp + renonce ♠ = 5) + mindst 10 hos makker giver 26+: udgang, 4♥.",
+   "why": "20 sp (15 hp + renonce ♠ = 5) + mindst 10 hos makker = 30 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "20 support points (15 HCP + void ♠ = 5) + at least 10 from partner gives 26+: game, 4♥."
+    "why": "20 support points (15 HCP + void ♠ = 5) + at least 10 from partner = 30 – rule of 25: game, 4♥."
    }
   },
   {
@@ -11424,9 +11424,9 @@
    "hp": 14,
    "sp": 20,
    "correct": "4♥",
-   "why": "21 sp (14 hp + double ♠ = 1 + renonce ♣ = 5 + 1 ekstra trumf) + mindst 10 hos makker giver 26+: udgang, 4♥.",
+   "why": "21 sp (14 hp + double ♠ = 1 + renonce ♣ = 5 + 1 ekstra trumf) + mindst 10 hos makker = 31 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "21 support points (14 HCP + doubleton ♠ = 1 + void ♣ = 5 + 1 extra trump) + at least 10 from partner gives 26+: game, 4♥."
+    "why": "21 support points (14 HCP + doubleton ♠ = 1 + void ♣ = 5 + 1 extra trump) + at least 10 from partner = 31 – rule of 25: game, 4♥."
    }
   },
   {
@@ -11456,9 +11456,9 @@
    "hp": 13,
    "sp": 19,
    "correct": "4♥",
-   "why": "20 sp (13 hp + double ♦ = 1 + renonce ♣ = 5 + 1 ekstra trumf) + mindst 10 hos makker giver 26+: udgang, 4♥.",
+   "why": "20 sp (13 hp + double ♦ = 1 + renonce ♣ = 5 + 1 ekstra trumf) + mindst 10 hos makker = 30 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "20 support points (13 HCP + doubleton ♦ = 1 + void ♣ = 5 + 1 extra trump) + at least 10 from partner gives 26+: game, 4♥."
+    "why": "20 support points (13 HCP + doubleton ♦ = 1 + void ♣ = 5 + 1 extra trump) + at least 10 from partner = 30 – rule of 25: game, 4♥."
    }
   },
   {
@@ -11489,9 +11489,9 @@
    "hp": 16,
    "sp": 19,
    "correct": "4♥",
-   "why": "19 sp (16 hp + single ♣ = 3) + mindst 10 hos makker giver 26+: udgang, 4♥.",
+   "why": "19 sp (16 hp + single ♣ = 3) + mindst 10 hos makker = 29 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "19 support points (16 HCP + singleton ♣ = 3) + at least 10 from partner gives 26+: game, 4♥."
+    "why": "19 support points (16 HCP + singleton ♣ = 3) + at least 10 from partner = 29 – rule of 25: game, 4♥."
    }
   },
   {
@@ -11522,9 +11522,9 @@
    "hp": 13,
    "sp": 16,
    "correct": "4♥",
-   "why": "16 sp (13 hp + single ♠ = 3) + mindst 10 hos makker giver 26+: udgang, 4♥.",
+   "why": "16 sp (13 hp + single ♠ = 3) + mindst 10 hos makker = 26 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "16 support points (13 HCP + singleton ♠ = 3) + at least 10 from partner gives 26+: game, 4♥."
+    "why": "16 support points (13 HCP + singleton ♠ = 3) + at least 10 from partner = 26 – rule of 25: game, 4♥."
    }
   },
   {
@@ -11554,9 +11554,9 @@
    "hp": 13,
    "sp": 18,
    "correct": "4♥",
-   "why": "19 sp (13 hp + renonce ♣ = 5 + 1 ekstra trumf) + mindst 10 hos makker giver 26+: udgang, 4♥.",
+   "why": "19 sp (13 hp + renonce ♣ = 5 + 1 ekstra trumf) + mindst 10 hos makker = 29 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "19 support points (13 HCP + void ♣ = 5 + 1 extra trump) + at least 10 from partner gives 26+: game, 4♥."
+    "why": "19 support points (13 HCP + void ♣ = 5 + 1 extra trump) + at least 10 from partner = 29 – rule of 25: game, 4♥."
    }
   },
   {
@@ -11587,9 +11587,9 @@
    "hp": 16,
    "sp": 20,
    "correct": "4♥",
-   "why": "21 sp (16 hp + double ♠ = 1 + single ♦ = 3 + 1 ekstra trumf) + mindst 10 hos makker giver 26+: udgang, 4♥.",
+   "why": "21 sp (16 hp + double ♠ = 1 + single ♦ = 3 + 1 ekstra trumf) + mindst 10 hos makker = 31 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "21 support points (16 HCP + doubleton ♠ = 1 + singleton ♦ = 3 + 1 extra trump) + at least 10 from partner gives 26+: game, 4♥."
+    "why": "21 support points (16 HCP + doubleton ♠ = 1 + singleton ♦ = 3 + 1 extra trump) + at least 10 from partner = 31 – rule of 25: game, 4♥."
    }
   },
   {
@@ -11619,9 +11619,9 @@
    "hp": 13,
    "sp": 19,
    "correct": "4♥",
-   "why": "19 sp (13 hp + renonce ♦ = 5 + double ♣ = 1) + mindst 10 hos makker giver 26+: udgang, 4♥.",
+   "why": "19 sp (13 hp + renonce ♦ = 5 + double ♣ = 1) + mindst 10 hos makker = 29 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "19 support points (13 HCP + void ♦ = 5 + doubleton ♣ = 1) + at least 10 from partner gives 26+: game, 4♥."
+    "why": "19 support points (13 HCP + void ♦ = 5 + doubleton ♣ = 1) + at least 10 from partner = 29 – rule of 25: game, 4♥."
    }
   },
   {
@@ -11652,9 +11652,9 @@
    "hp": 14,
    "sp": 17,
    "correct": "4♥",
-   "why": "17 sp (14 hp + single ♣ = 3) + mindst 10 hos makker giver 26+: udgang, 4♥.",
+   "why": "17 sp (14 hp + single ♣ = 3) + mindst 10 hos makker = 27 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "17 support points (14 HCP + singleton ♣ = 3) + at least 10 from partner gives 26+: game, 4♥."
+    "why": "17 support points (14 HCP + singleton ♣ = 3) + at least 10 from partner = 27 – rule of 25: game, 4♥."
    }
   },
   {
@@ -11685,9 +11685,9 @@
    "hp": 13,
    "sp": 16,
    "correct": "4♥",
-   "why": "16 sp (13 hp + single ♠ = 3) + mindst 10 hos makker giver 26+: udgang, 4♥.",
+   "why": "16 sp (13 hp + single ♠ = 3) + mindst 10 hos makker = 26 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "16 support points (13 HCP + singleton ♠ = 3) + at least 10 from partner gives 26+: game, 4♥."
+    "why": "16 support points (13 HCP + singleton ♠ = 3) + at least 10 from partner = 26 – rule of 25: game, 4♥."
    }
   },
   {
@@ -11717,9 +11717,9 @@
    "hp": 12,
    "sp": 18,
    "correct": "4♥",
-   "why": "18 sp (12 hp + double ♦ = 1 + renonce ♣ = 5) + mindst 10 hos makker giver 26+: udgang, 4♥.",
+   "why": "18 sp (12 hp + double ♦ = 1 + renonce ♣ = 5) + mindst 10 hos makker = 28 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "18 support points (12 HCP + doubleton ♦ = 1 + void ♣ = 5) + at least 10 from partner gives 26+: game, 4♥."
+    "why": "18 support points (12 HCP + doubleton ♦ = 1 + void ♣ = 5) + at least 10 from partner = 28 – rule of 25: game, 4♥."
    }
   },
   {
@@ -11750,9 +11750,9 @@
    "hp": 13,
    "sp": 17,
    "correct": "4♥",
-   "why": "18 sp (13 hp + single ♦ = 3 + double ♣ = 1 + 1 ekstra trumf) + mindst 10 hos makker giver 26+: udgang, 4♥.",
+   "why": "18 sp (13 hp + single ♦ = 3 + double ♣ = 1 + 1 ekstra trumf) + mindst 10 hos makker = 28 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "18 support points (13 HCP + singleton ♦ = 3 + doubleton ♣ = 1 + 1 extra trump) + at least 10 from partner gives 26+: game, 4♥."
+    "why": "18 support points (13 HCP + singleton ♦ = 3 + doubleton ♣ = 1 + 1 extra trump) + at least 10 from partner = 28 – rule of 25: game, 4♥."
    }
   },
   {
@@ -11783,9 +11783,9 @@
    "hp": 14,
    "sp": 17,
    "correct": "4♥",
-   "why": "17 sp (14 hp + single ♠ = 3) + mindst 10 hos makker giver 26+: udgang, 4♥.",
+   "why": "17 sp (14 hp + single ♠ = 3) + mindst 10 hos makker = 27 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "17 support points (14 HCP + singleton ♠ = 3) + at least 10 from partner gives 26+: game, 4♥."
+    "why": "17 support points (14 HCP + singleton ♠ = 3) + at least 10 from partner = 27 – rule of 25: game, 4♥."
    }
   },
   {
@@ -11816,9 +11816,9 @@
    "hp": 15,
    "sp": 19,
    "correct": "4♥",
-   "why": "20 sp (15 hp + double ♦ = 1 + single ♣ = 3 + 1 ekstra trumf) + mindst 10 hos makker giver 26+: udgang, 4♥.",
+   "why": "20 sp (15 hp + double ♦ = 1 + single ♣ = 3 + 1 ekstra trumf) + mindst 10 hos makker = 30 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "20 support points (15 HCP + doubleton ♦ = 1 + singleton ♣ = 3 + 1 extra trump) + at least 10 from partner gives 26+: game, 4♥."
+    "why": "20 support points (15 HCP + doubleton ♦ = 1 + singleton ♣ = 3 + 1 extra trump) + at least 10 from partner = 30 – rule of 25: game, 4♥."
    }
   },
   {
@@ -11848,10 +11848,10 @@
    },
    "hp": 13,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (13 hp + double ♠ = 1 + double ♣ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♥",
+   "why": "15 sp (13 hp + double ♠ = 1 + double ♣ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♣ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♣ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♥."
    }
   },
   {
@@ -11881,10 +11881,10 @@
    },
    "hp": 13,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (13 hp + double ♦ = 1 + double ♣ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♥",
+   "why": "15 sp (13 hp + double ♦ = 1 + double ♣ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "15 support points (13 HCP + doubleton ♦ = 1 + doubleton ♣ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (13 HCP + doubleton ♦ = 1 + doubleton ♣ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♥."
    }
   },
   {
@@ -11914,10 +11914,10 @@
    },
    "hp": 14,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (14 hp + double ♠ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♥",
+   "why": "15 sp (14 hp + double ♠ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "15 support points (14 HCP + doubleton ♠ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (14 HCP + doubleton ♠ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♥."
    }
   },
   {
@@ -11947,10 +11947,10 @@
    },
    "hp": 14,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (14 hp + double ♠ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♥",
+   "why": "15 sp (14 hp + double ♠ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "15 support points (14 HCP + doubleton ♠ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (14 HCP + doubleton ♠ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♥."
    }
   },
   {
@@ -11980,10 +11980,10 @@
    },
    "hp": 13,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (13 hp + double ♠ = 1 + double ♦ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♥",
+   "why": "15 sp (13 hp + double ♠ = 1 + double ♦ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♦ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♦ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♥."
    }
   },
   {
@@ -12013,10 +12013,10 @@
    },
    "hp": 13,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (13 hp + double ♦ = 1 + double ♣ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♥",
+   "why": "15 sp (13 hp + double ♦ = 1 + double ♣ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "15 support points (13 HCP + doubleton ♦ = 1 + doubleton ♣ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (13 HCP + doubleton ♦ = 1 + doubleton ♣ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♥."
    }
   },
   {
@@ -12046,10 +12046,10 @@
    },
    "hp": 13,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (13 hp + double ♠ = 1 + double ♦ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♥",
+   "why": "15 sp (13 hp + double ♠ = 1 + double ♦ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♦ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♦ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♥."
    }
   },
   {
@@ -12079,10 +12079,10 @@
    },
    "hp": 14,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (14 hp + double ♠ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♥",
+   "why": "15 sp (14 hp + double ♠ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "15 support points (14 HCP + doubleton ♠ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (14 HCP + doubleton ♠ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♥."
    }
   },
   {
@@ -12112,10 +12112,10 @@
    },
    "hp": 14,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (14 hp + double ♦ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♥",
+   "why": "15 sp (14 hp + double ♦ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "15 support points (14 HCP + doubleton ♦ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (14 HCP + doubleton ♦ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♥."
    }
   },
   {
@@ -12145,10 +12145,10 @@
    },
    "hp": 13,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (13 hp + double ♠ = 1 + double ♣ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♥",
+   "why": "15 sp (13 hp + double ♠ = 1 + double ♣ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♣ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♣ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♥."
    }
   },
   {
@@ -12178,10 +12178,10 @@
    },
    "hp": 13,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (13 hp + double ♠ = 1 + double ♦ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♥",
+   "why": "15 sp (13 hp + double ♠ = 1 + double ♦ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♦ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♦ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♥."
    }
   },
   {
@@ -12211,10 +12211,10 @@
    },
    "hp": 14,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (14 hp + double ♠ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♥",
+   "why": "15 sp (14 hp + double ♠ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "15 support points (14 HCP + doubleton ♠ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (14 HCP + doubleton ♠ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♥."
    }
   },
   {
@@ -12244,10 +12244,10 @@
    },
    "hp": 14,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (14 hp + double ♦ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♥",
+   "why": "15 sp (14 hp + double ♦ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "15 support points (14 HCP + doubleton ♦ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (14 HCP + doubleton ♦ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♥."
    }
   },
   {
@@ -12277,10 +12277,10 @@
    },
    "hp": 13,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (13 hp + double ♠ = 1 + double ♦ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♥",
+   "why": "15 sp (13 hp + double ♠ = 1 + double ♦ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♦ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♦ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♥."
    }
   },
   {
@@ -12310,10 +12310,10 @@
    },
    "hp": 13,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (13 hp + double ♦ = 1 + double ♣ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♥",
+   "why": "15 sp (13 hp + double ♦ = 1 + double ♣ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "15 support points (13 HCP + doubleton ♦ = 1 + doubleton ♣ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (13 HCP + doubleton ♦ = 1 + doubleton ♣ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♥."
    }
   },
   {
@@ -12343,10 +12343,10 @@
    },
    "hp": 14,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (14 hp + double ♠ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♥",
+   "why": "15 sp (14 hp + double ♠ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "15 support points (14 HCP + doubleton ♠ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (14 HCP + doubleton ♠ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♥."
    }
   },
   {
@@ -12376,10 +12376,10 @@
    },
    "hp": 13,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (13 hp + double ♠ = 1 + double ♦ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♥",
+   "why": "15 sp (13 hp + double ♠ = 1 + double ♦ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♥.",
    "en": {
-    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♦ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♦ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♥."
    }
   },
   {
@@ -12410,9 +12410,9 @@
    "hp": 12,
    "sp": 14,
    "correct": "3♠",
-   "why": "14 sp (12 hp + double ♦ = 1 + double ♣ = 1) + højst 10 hos makker er under 26: afmeld i 3♠.",
+   "why": "14 sp (12 hp + double ♦ = 1 + double ♣ = 1) + højst 10 hos makker = 24 – under 25: afmeld i 3♠.",
    "en": {
-    "why": "14 support points (12 HCP + doubleton ♦ = 1 + doubleton ♣ = 1) + at most 10 from partner is below 26: sign off in 3♠."
+    "why": "14 support points (12 HCP + doubleton ♦ = 1 + doubleton ♣ = 1) + at most 10 from partner = 24 – below 25: sign off in 3♠."
    }
   },
   {
@@ -12442,10 +12442,10 @@
    },
    "hp": 12,
    "sp": 15,
-   "correct": "3♠",
-   "why": "15 sp (12 hp + single ♣ = 3) + højst 10 hos makker er under 26: afmeld i 3♠.",
+   "correct": "3♥",
+   "why": "15 sp (12 hp + single ♣ = 3): 15 + 7 = 22, men 15 + 10 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♥ spørger.",
    "en": {
-    "why": "15 support points (12 HCP + singleton ♣ = 3) + at most 10 from partner is below 26: sign off in 3♠."
+    "why": "15 support points (12 HCP + singleton ♣ = 3): 15 + 7 = 22, but 15 + 10 = 25 – game depends on whether partner has a minimum or a maximum, so 3♥ asks."
    }
   },
   {
@@ -12476,9 +12476,9 @@
    "hp": 12,
    "sp": 14,
    "correct": "3♠",
-   "why": "14 sp (12 hp + double ♦ = 1 + double ♣ = 1) + højst 10 hos makker er under 26: afmeld i 3♠.",
+   "why": "14 sp (12 hp + double ♦ = 1 + double ♣ = 1) + højst 10 hos makker = 24 – under 25: afmeld i 3♠.",
    "en": {
-    "why": "14 support points (12 HCP + doubleton ♦ = 1 + doubleton ♣ = 1) + at most 10 from partner is below 26: sign off in 3♠."
+    "why": "14 support points (12 HCP + doubleton ♦ = 1 + doubleton ♣ = 1) + at most 10 from partner = 24 – below 25: sign off in 3♠."
    }
   },
   {
@@ -12509,9 +12509,9 @@
    "hp": 12,
    "sp": 13,
    "correct": "3♠",
-   "why": "13 sp (12 hp + double ♣ = 1) + højst 10 hos makker er under 26: afmeld i 3♠.",
+   "why": "13 sp (12 hp + double ♣ = 1) + højst 10 hos makker = 23 – under 25: afmeld i 3♠.",
    "en": {
-    "why": "13 support points (12 HCP + doubleton ♣ = 1) + at most 10 from partner is below 26: sign off in 3♠."
+    "why": "13 support points (12 HCP + doubleton ♣ = 1) + at most 10 from partner = 23 – below 25: sign off in 3♠."
    }
   },
   {
@@ -12541,10 +12541,10 @@
    },
    "hp": 12,
    "sp": 15,
-   "correct": "3♠",
-   "why": "15 sp (12 hp + single ♣ = 3) + højst 10 hos makker er under 26: afmeld i 3♠.",
+   "correct": "3♥",
+   "why": "15 sp (12 hp + single ♣ = 3): 15 + 7 = 22, men 15 + 10 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♥ spørger.",
    "en": {
-    "why": "15 support points (12 HCP + singleton ♣ = 3) + at most 10 from partner is below 26: sign off in 3♠."
+    "why": "15 support points (12 HCP + singleton ♣ = 3): 15 + 7 = 22, but 15 + 10 = 25 – game depends on whether partner has a minimum or a maximum, so 3♥ asks."
    }
   },
   {
@@ -12574,10 +12574,10 @@
    },
    "hp": 14,
    "sp": 15,
-   "correct": "3♠",
-   "why": "15 sp (14 hp + double ♣ = 1) + højst 10 hos makker er under 26: afmeld i 3♠.",
+   "correct": "3♥",
+   "why": "15 sp (14 hp + double ♣ = 1): 15 + 7 = 22, men 15 + 10 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♥ spørger.",
    "en": {
-    "why": "15 support points (14 HCP + doubleton ♣ = 1) + at most 10 from partner is below 26: sign off in 3♠."
+    "why": "15 support points (14 HCP + doubleton ♣ = 1): 15 + 7 = 22, but 15 + 10 = 25 – game depends on whether partner has a minimum or a maximum, so 3♥ asks."
    }
   },
   {
@@ -12608,9 +12608,9 @@
    "hp": 12,
    "sp": 14,
    "correct": "3♠",
-   "why": "14 sp (12 hp + double ♥ = 1 + double ♣ = 1) + højst 10 hos makker er under 26: afmeld i 3♠.",
+   "why": "14 sp (12 hp + double ♥ = 1 + double ♣ = 1) + højst 10 hos makker = 24 – under 25: afmeld i 3♠.",
    "en": {
-    "why": "14 support points (12 HCP + doubleton ♥ = 1 + doubleton ♣ = 1) + at most 10 from partner is below 26: sign off in 3♠."
+    "why": "14 support points (12 HCP + doubleton ♥ = 1 + doubleton ♣ = 1) + at most 10 from partner = 24 – below 25: sign off in 3♠."
    }
   },
   {
@@ -12640,10 +12640,10 @@
    },
    "hp": 12,
    "sp": 15,
-   "correct": "3♠",
-   "why": "15 sp (12 hp + single ♣ = 3) + højst 10 hos makker er under 26: afmeld i 3♠.",
+   "correct": "3♥",
+   "why": "15 sp (12 hp + single ♣ = 3): 15 + 7 = 22, men 15 + 10 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♥ spørger.",
    "en": {
-    "why": "15 support points (12 HCP + singleton ♣ = 3) + at most 10 from partner is below 26: sign off in 3♠."
+    "why": "15 support points (12 HCP + singleton ♣ = 3): 15 + 7 = 22, but 15 + 10 = 25 – game depends on whether partner has a minimum or a maximum, so 3♥ asks."
    }
   },
   {
@@ -12673,10 +12673,10 @@
    },
    "hp": 12,
    "sp": 15,
-   "correct": "3♠",
-   "why": "15 sp (12 hp + single ♥ = 3) + højst 10 hos makker er under 26: afmeld i 3♠.",
+   "correct": "3♥",
+   "why": "15 sp (12 hp + single ♥ = 3): 15 + 7 = 22, men 15 + 10 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♥ spørger.",
    "en": {
-    "why": "15 support points (12 HCP + singleton ♥ = 3) + at most 10 from partner is below 26: sign off in 3♠."
+    "why": "15 support points (12 HCP + singleton ♥ = 3): 15 + 7 = 22, but 15 + 10 = 25 – game depends on whether partner has a minimum or a maximum, so 3♥ asks."
    }
   },
   {
@@ -12707,9 +12707,9 @@
    "hp": 12,
    "sp": 14,
    "correct": "3♠",
-   "why": "14 sp (12 hp + double ♥ = 1 + double ♣ = 1) + højst 10 hos makker er under 26: afmeld i 3♠.",
+   "why": "14 sp (12 hp + double ♥ = 1 + double ♣ = 1) + højst 10 hos makker = 24 – under 25: afmeld i 3♠.",
    "en": {
-    "why": "14 support points (12 HCP + doubleton ♥ = 1 + doubleton ♣ = 1) + at most 10 from partner is below 26: sign off in 3♠."
+    "why": "14 support points (12 HCP + doubleton ♥ = 1 + doubleton ♣ = 1) + at most 10 from partner = 24 – below 25: sign off in 3♠."
    }
   },
   {
@@ -12739,10 +12739,10 @@
    },
    "hp": 12,
    "sp": 15,
-   "correct": "3♠",
-   "why": "15 sp (12 hp + single ♦ = 3) + højst 10 hos makker er under 26: afmeld i 3♠.",
+   "correct": "3♥",
+   "why": "15 sp (12 hp + single ♦ = 3): 15 + 7 = 22, men 15 + 10 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♥ spørger.",
    "en": {
-    "why": "15 support points (12 HCP + singleton ♦ = 3) + at most 10 from partner is below 26: sign off in 3♠."
+    "why": "15 support points (12 HCP + singleton ♦ = 3): 15 + 7 = 22, but 15 + 10 = 25 – game depends on whether partner has a minimum or a maximum, so 3♥ asks."
    }
   },
   {
@@ -12773,9 +12773,9 @@
    "hp": 12,
    "sp": 13,
    "correct": "3♠",
-   "why": "13 sp (12 hp + double ♥ = 1) + højst 10 hos makker er under 26: afmeld i 3♠.",
+   "why": "13 sp (12 hp + double ♥ = 1) + højst 10 hos makker = 23 – under 25: afmeld i 3♠.",
    "en": {
-    "why": "13 support points (12 HCP + doubleton ♥ = 1) + at most 10 from partner is below 26: sign off in 3♠."
+    "why": "13 support points (12 HCP + doubleton ♥ = 1) + at most 10 from partner = 23 – below 25: sign off in 3♠."
    }
   },
   {
@@ -12806,9 +12806,9 @@
    "hp": 13,
    "sp": 14,
    "correct": "3♠",
-   "why": "14 sp (13 hp + double ♣ = 1) + højst 10 hos makker er under 26: afmeld i 3♠.",
+   "why": "14 sp (13 hp + double ♣ = 1) + højst 10 hos makker = 24 – under 25: afmeld i 3♠.",
    "en": {
-    "why": "14 support points (13 HCP + doubleton ♣ = 1) + at most 10 from partner is below 26: sign off in 3♠."
+    "why": "14 support points (13 HCP + doubleton ♣ = 1) + at most 10 from partner = 24 – below 25: sign off in 3♠."
    }
   },
   {
@@ -12839,9 +12839,9 @@
    "hp": 12,
    "sp": 14,
    "correct": "3♠",
-   "why": "14 sp (12 hp + double ♦ = 1 + double ♣ = 1) + højst 10 hos makker er under 26: afmeld i 3♠.",
+   "why": "14 sp (12 hp + double ♦ = 1 + double ♣ = 1) + højst 10 hos makker = 24 – under 25: afmeld i 3♠.",
    "en": {
-    "why": "14 support points (12 HCP + doubleton ♦ = 1 + doubleton ♣ = 1) + at most 10 from partner is below 26: sign off in 3♠."
+    "why": "14 support points (12 HCP + doubleton ♦ = 1 + doubleton ♣ = 1) + at most 10 from partner = 24 – below 25: sign off in 3♠."
    }
   },
   {
@@ -12871,10 +12871,10 @@
    },
    "hp": 12,
    "sp": 14,
-   "correct": "3♠",
-   "why": "15 sp (12 hp + double ♥ = 1 + double ♣ = 1 + 1 ekstra trumf) + højst 10 hos makker er under 26: afmeld i 3♠.",
+   "correct": "3♥",
+   "why": "15 sp (12 hp + double ♥ = 1 + double ♣ = 1 + 1 ekstra trumf): 15 + 7 = 22, men 15 + 10 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♥ spørger.",
    "en": {
-    "why": "15 support points (12 HCP + doubleton ♥ = 1 + doubleton ♣ = 1 + 1 extra trump) + at most 10 from partner is below 26: sign off in 3♠."
+    "why": "15 support points (12 HCP + doubleton ♥ = 1 + doubleton ♣ = 1 + 1 extra trump): 15 + 7 = 22, but 15 + 10 = 25 – game depends on whether partner has a minimum or a maximum, so 3♥ asks."
    }
   },
   {
@@ -12905,9 +12905,9 @@
    "hp": 13,
    "sp": 14,
    "correct": "3♠",
-   "why": "14 sp (13 hp + double ♥ = 1) + højst 10 hos makker er under 26: afmeld i 3♠.",
+   "why": "14 sp (13 hp + double ♥ = 1) + højst 10 hos makker = 24 – under 25: afmeld i 3♠.",
    "en": {
-    "why": "14 support points (13 HCP + doubleton ♥ = 1) + at most 10 from partner is below 26: sign off in 3♠."
+    "why": "14 support points (13 HCP + doubleton ♥ = 1) + at most 10 from partner = 24 – below 25: sign off in 3♠."
    }
   },
   {
@@ -12938,9 +12938,9 @@
    "hp": 13,
    "sp": 14,
    "correct": "3♠",
-   "why": "14 sp (13 hp + double ♥ = 1) + højst 10 hos makker er under 26: afmeld i 3♠.",
+   "why": "14 sp (13 hp + double ♥ = 1) + højst 10 hos makker = 24 – under 25: afmeld i 3♠.",
    "en": {
-    "why": "14 support points (13 HCP + doubleton ♥ = 1) + at most 10 from partner is below 26: sign off in 3♠."
+    "why": "14 support points (13 HCP + doubleton ♥ = 1) + at most 10 from partner = 24 – below 25: sign off in 3♠."
    }
   },
   {
@@ -12970,9 +12970,9 @@
    "hp": 15,
    "sp": 21,
    "correct": "4♠",
-   "why": "21 sp (15 hp + renonce ♥ = 5 + double ♣ = 1) + mindst 7 hos makker giver 26+: udgang, 4♠.",
+   "why": "21 sp (15 hp + renonce ♥ = 5 + double ♣ = 1) + mindst 7 hos makker = 28 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "21 support points (15 HCP + void ♥ = 5 + doubleton ♣ = 1) + at least 7 from partner gives 26+: game, 4♠."
+    "why": "21 support points (15 HCP + void ♥ = 5 + doubleton ♣ = 1) + at least 7 from partner = 28 – rule of 25: game, 4♠."
    }
   },
   {
@@ -13002,9 +13002,9 @@
    "hp": 15,
    "sp": 21,
    "correct": "4♠",
-   "why": "22 sp (15 hp + renonce ♥ = 5 + double ♦ = 1 + 1 ekstra trumf) + mindst 7 hos makker giver 26+: udgang, 4♠.",
+   "why": "22 sp (15 hp + renonce ♥ = 5 + double ♦ = 1 + 1 ekstra trumf) + mindst 7 hos makker = 29 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "22 support points (15 HCP + void ♥ = 5 + doubleton ♦ = 1 + 1 extra trump) + at least 7 from partner gives 26+: game, 4♠."
+    "why": "22 support points (15 HCP + void ♥ = 5 + doubleton ♦ = 1 + 1 extra trump) + at least 7 from partner = 29 – rule of 25: game, 4♠."
    }
   },
   {
@@ -13035,9 +13035,9 @@
    "hp": 19,
    "sp": 20,
    "correct": "4♠",
-   "why": "20 sp (19 hp + double ♦ = 1) + mindst 7 hos makker giver 26+: udgang, 4♠.",
+   "why": "20 sp (19 hp + double ♦ = 1) + mindst 7 hos makker = 27 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "20 support points (19 HCP + doubleton ♦ = 1) + at least 7 from partner gives 26+: game, 4♠."
+    "why": "20 support points (19 HCP + doubleton ♦ = 1) + at least 7 from partner = 27 – rule of 25: game, 4♠."
    }
   },
   {
@@ -13067,9 +13067,9 @@
    "hp": 13,
    "sp": 19,
    "correct": "4♠",
-   "why": "19 sp (13 hp + renonce ♥ = 5 + double ♣ = 1) + mindst 7 hos makker giver 26+: udgang, 4♠.",
+   "why": "19 sp (13 hp + renonce ♥ = 5 + double ♣ = 1) + mindst 7 hos makker = 26 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "19 support points (13 HCP + void ♥ = 5 + doubleton ♣ = 1) + at least 7 from partner gives 26+: game, 4♠."
+    "why": "19 support points (13 HCP + void ♥ = 5 + doubleton ♣ = 1) + at least 7 from partner = 26 – rule of 25: game, 4♠."
    }
   },
   {
@@ -13100,9 +13100,9 @@
    "hp": 21,
    "sp": 24,
    "correct": "4♠",
-   "why": "24 sp (21 hp + single ♦ = 3) + mindst 7 hos makker giver 26+: udgang, 4♠.",
+   "why": "24 sp (21 hp + single ♦ = 3) + mindst 7 hos makker = 31 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "24 support points (21 HCP + singleton ♦ = 3) + at least 7 from partner gives 26+: game, 4♠."
+    "why": "24 support points (21 HCP + singleton ♦ = 3) + at least 7 from partner = 31 – rule of 25: game, 4♠."
    }
   },
   {
@@ -13133,9 +13133,9 @@
    "hp": 15,
    "sp": 19,
    "correct": "4♠",
-   "why": "19 sp (15 hp + single ♥ = 3 + double ♦ = 1) + mindst 7 hos makker giver 26+: udgang, 4♠.",
+   "why": "19 sp (15 hp + single ♥ = 3 + double ♦ = 1) + mindst 7 hos makker = 26 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "19 support points (15 HCP + singleton ♥ = 3 + doubleton ♦ = 1) + at least 7 from partner gives 26+: game, 4♠."
+    "why": "19 support points (15 HCP + singleton ♥ = 3 + doubleton ♦ = 1) + at least 7 from partner = 26 – rule of 25: game, 4♠."
    }
   },
   {
@@ -13165,9 +13165,9 @@
    "hp": 12,
    "sp": 18,
    "correct": "4♠",
-   "why": "19 sp (12 hp + renonce ♥ = 5 + double ♦ = 1 + 1 ekstra trumf) + mindst 7 hos makker giver 26+: udgang, 4♠.",
+   "why": "19 sp (12 hp + renonce ♥ = 5 + double ♦ = 1 + 1 ekstra trumf) + mindst 7 hos makker = 26 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "19 support points (12 HCP + void ♥ = 5 + doubleton ♦ = 1 + 1 extra trump) + at least 7 from partner gives 26+: game, 4♠."
+    "why": "19 support points (12 HCP + void ♥ = 5 + doubleton ♦ = 1 + 1 extra trump) + at least 7 from partner = 26 – rule of 25: game, 4♠."
    }
   },
   {
@@ -13198,9 +13198,9 @@
    "hp": 16,
    "sp": 19,
    "correct": "4♠",
-   "why": "19 sp (16 hp + single ♣ = 3) + mindst 7 hos makker giver 26+: udgang, 4♠.",
+   "why": "19 sp (16 hp + single ♣ = 3) + mindst 7 hos makker = 26 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "19 support points (16 HCP + singleton ♣ = 3) + at least 7 from partner gives 26+: game, 4♠."
+    "why": "19 support points (16 HCP + singleton ♣ = 3) + at least 7 from partner = 26 – rule of 25: game, 4♠."
    }
   },
   {
@@ -13231,9 +13231,9 @@
    "hp": 14,
    "sp": 18,
    "correct": "4♠",
-   "why": "19 sp (14 hp + single ♦ = 3 + double ♣ = 1 + 1 ekstra trumf) + mindst 7 hos makker giver 26+: udgang, 4♠.",
+   "why": "19 sp (14 hp + single ♦ = 3 + double ♣ = 1 + 1 ekstra trumf) + mindst 7 hos makker = 26 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "19 support points (14 HCP + singleton ♦ = 3 + doubleton ♣ = 1 + 1 extra trump) + at least 7 from partner gives 26+: game, 4♠."
+    "why": "19 support points (14 HCP + singleton ♦ = 3 + doubleton ♣ = 1 + 1 extra trump) + at least 7 from partner = 26 – rule of 25: game, 4♠."
    }
   },
   {
@@ -13264,9 +13264,9 @@
    "hp": 16,
    "sp": 19,
    "correct": "4♠",
-   "why": "20 sp (16 hp + single ♦ = 3 + 1 ekstra trumf) + mindst 7 hos makker giver 26+: udgang, 4♠.",
+   "why": "20 sp (16 hp + single ♦ = 3 + 1 ekstra trumf) + mindst 7 hos makker = 27 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "20 support points (16 HCP + singleton ♦ = 3 + 1 extra trump) + at least 7 from partner gives 26+: game, 4♠."
+    "why": "20 support points (16 HCP + singleton ♦ = 3 + 1 extra trump) + at least 7 from partner = 27 – rule of 25: game, 4♠."
    }
   },
   {
@@ -13297,9 +13297,9 @@
    "hp": 14,
    "sp": 18,
    "correct": "4♠",
-   "why": "19 sp (14 hp + double ♥ = 1 + single ♣ = 3 + 1 ekstra trumf) + mindst 7 hos makker giver 26+: udgang, 4♠.",
+   "why": "19 sp (14 hp + double ♥ = 1 + single ♣ = 3 + 1 ekstra trumf) + mindst 7 hos makker = 26 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "19 support points (14 HCP + doubleton ♥ = 1 + singleton ♣ = 3 + 1 extra trump) + at least 7 from partner gives 26+: game, 4♠."
+    "why": "19 support points (14 HCP + doubleton ♥ = 1 + singleton ♣ = 3 + 1 extra trump) + at least 7 from partner = 26 – rule of 25: game, 4♠."
    }
   },
   {
@@ -13329,9 +13329,9 @@
    "hp": 14,
    "sp": 19,
    "correct": "4♠",
-   "why": "20 sp (14 hp + renonce ♦ = 5 + 1 ekstra trumf) + mindst 7 hos makker giver 26+: udgang, 4♠.",
+   "why": "20 sp (14 hp + renonce ♦ = 5 + 1 ekstra trumf) + mindst 7 hos makker = 27 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "20 support points (14 HCP + void ♦ = 5 + 1 extra trump) + at least 7 from partner gives 26+: game, 4♠."
+    "why": "20 support points (14 HCP + void ♦ = 5 + 1 extra trump) + at least 7 from partner = 27 – rule of 25: game, 4♠."
    }
   },
   {
@@ -13361,9 +13361,9 @@
    "hp": 15,
    "sp": 21,
    "correct": "4♠",
-   "why": "22 sp (15 hp + double ♥ = 1 + renonce ♣ = 5 + 1 ekstra trumf) + mindst 7 hos makker giver 26+: udgang, 4♠.",
+   "why": "22 sp (15 hp + double ♥ = 1 + renonce ♣ = 5 + 1 ekstra trumf) + mindst 7 hos makker = 29 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "22 support points (15 HCP + doubleton ♥ = 1 + void ♣ = 5 + 1 extra trump) + at least 7 from partner gives 26+: game, 4♠."
+    "why": "22 support points (15 HCP + doubleton ♥ = 1 + void ♣ = 5 + 1 extra trump) + at least 7 from partner = 29 – rule of 25: game, 4♠."
    }
   },
   {
@@ -13393,9 +13393,9 @@
    "hp": 15,
    "sp": 20,
    "correct": "4♠",
-   "why": "20 sp (15 hp + renonce ♣ = 5) + mindst 7 hos makker giver 26+: udgang, 4♠.",
+   "why": "20 sp (15 hp + renonce ♣ = 5) + mindst 7 hos makker = 27 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "20 support points (15 HCP + void ♣ = 5) + at least 7 from partner gives 26+: game, 4♠."
+    "why": "20 support points (15 HCP + void ♣ = 5) + at least 7 from partner = 27 – rule of 25: game, 4♠."
    }
   },
   {
@@ -13426,9 +13426,9 @@
    "hp": 17,
    "sp": 21,
    "correct": "4♠",
-   "why": "22 sp (17 hp + single ♥ = 3 + double ♣ = 1 + 1 ekstra trumf) + mindst 7 hos makker giver 26+: udgang, 4♠.",
+   "why": "22 sp (17 hp + single ♥ = 3 + double ♣ = 1 + 1 ekstra trumf) + mindst 7 hos makker = 29 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "22 support points (17 HCP + singleton ♥ = 3 + doubleton ♣ = 1 + 1 extra trump) + at least 7 from partner gives 26+: game, 4♠."
+    "why": "22 support points (17 HCP + singleton ♥ = 3 + doubleton ♣ = 1 + 1 extra trump) + at least 7 from partner = 29 – rule of 25: game, 4♠."
    }
   },
   {
@@ -13458,9 +13458,9 @@
    "hp": 14,
    "sp": 19,
    "correct": "4♠",
-   "why": "19 sp (14 hp + renonce ♣ = 5) + mindst 7 hos makker giver 26+: udgang, 4♠.",
+   "why": "19 sp (14 hp + renonce ♣ = 5) + mindst 7 hos makker = 26 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "19 support points (14 HCP + void ♣ = 5) + at least 7 from partner gives 26+: game, 4♠."
+    "why": "19 support points (14 HCP + void ♣ = 5) + at least 7 from partner = 26 – rule of 25: game, 4♠."
    }
   },
   {
@@ -13490,9 +13490,9 @@
    "hp": 13,
    "sp": 19,
    "correct": "4♠",
-   "why": "20 sp (13 hp + double ♥ = 1 + renonce ♣ = 5 + 1 ekstra trumf) + mindst 7 hos makker giver 26+: udgang, 4♠.",
+   "why": "20 sp (13 hp + double ♥ = 1 + renonce ♣ = 5 + 1 ekstra trumf) + mindst 7 hos makker = 27 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "20 support points (13 HCP + doubleton ♥ = 1 + void ♣ = 5 + 1 extra trump) + at least 7 from partner gives 26+: game, 4♠."
+    "why": "20 support points (13 HCP + doubleton ♥ = 1 + void ♣ = 5 + 1 extra trump) + at least 7 from partner = 27 – rule of 25: game, 4♠."
    }
   },
   {
@@ -13523,9 +13523,9 @@
    "hp": 13,
    "sp": 16,
    "correct": "3♥",
-   "why": "16 sp (13 hp + single ♣ = 3): udgang afhænger af, om makker har minimum eller maksimum – 3♥ spørger.",
+   "why": "16 sp (13 hp + single ♣ = 3): 16 + 7 = 23, men 16 + 10 = 26 – udgang afhænger af, om makker har minimum eller maksimum, så 3♥ spørger.",
    "en": {
-    "why": "16 support points (13 HCP + singleton ♣ = 3): game depends on whether partner has a minimum or a maximum – 3♥ asks."
+    "why": "16 support points (13 HCP + singleton ♣ = 3): 16 + 7 = 23, but 16 + 10 = 26 – game depends on whether partner has a minimum or a maximum, so 3♥ asks."
    }
   },
   {
@@ -13556,9 +13556,9 @@
    "hp": 14,
    "sp": 17,
    "correct": "3♥",
-   "why": "17 sp (14 hp + single ♥ = 3): udgang afhænger af, om makker har minimum eller maksimum – 3♥ spørger.",
+   "why": "17 sp (14 hp + single ♥ = 3): 17 + 7 = 24, men 17 + 10 = 27 – udgang afhænger af, om makker har minimum eller maksimum, så 3♥ spørger.",
    "en": {
-    "why": "17 support points (14 HCP + singleton ♥ = 3): game depends on whether partner has a minimum or a maximum – 3♥ asks."
+    "why": "17 support points (14 HCP + singleton ♥ = 3): 17 + 7 = 24, but 17 + 10 = 27 – game depends on whether partner has a minimum or a maximum, so 3♥ asks."
    }
   },
   {
@@ -13589,9 +13589,9 @@
    "hp": 13,
    "sp": 16,
    "correct": "3♥",
-   "why": "16 sp (13 hp + single ♣ = 3): udgang afhænger af, om makker har minimum eller maksimum – 3♥ spørger.",
+   "why": "16 sp (13 hp + single ♣ = 3): 16 + 7 = 23, men 16 + 10 = 26 – udgang afhænger af, om makker har minimum eller maksimum, så 3♥ spørger.",
    "en": {
-    "why": "16 support points (13 HCP + singleton ♣ = 3): game depends on whether partner has a minimum or a maximum – 3♥ asks."
+    "why": "16 support points (13 HCP + singleton ♣ = 3): 16 + 7 = 23, but 16 + 10 = 26 – game depends on whether partner has a minimum or a maximum, so 3♥ asks."
    }
   },
   {
@@ -13622,9 +13622,9 @@
    "hp": 14,
    "sp": 17,
    "correct": "3♥",
-   "why": "17 sp (14 hp + single ♦ = 3): udgang afhænger af, om makker har minimum eller maksimum – 3♥ spørger.",
+   "why": "17 sp (14 hp + single ♦ = 3): 17 + 7 = 24, men 17 + 10 = 27 – udgang afhænger af, om makker har minimum eller maksimum, så 3♥ spørger.",
    "en": {
-    "why": "17 support points (14 HCP + singleton ♦ = 3): game depends on whether partner has a minimum or a maximum – 3♥ asks."
+    "why": "17 support points (14 HCP + singleton ♦ = 3): 17 + 7 = 24, but 17 + 10 = 27 – game depends on whether partner has a minimum or a maximum, so 3♥ asks."
    }
   },
   {
@@ -13655,9 +13655,9 @@
    "hp": 13,
    "sp": 16,
    "correct": "3♥",
-   "why": "16 sp (13 hp + single ♣ = 3): udgang afhænger af, om makker har minimum eller maksimum – 3♥ spørger.",
+   "why": "16 sp (13 hp + single ♣ = 3): 16 + 7 = 23, men 16 + 10 = 26 – udgang afhænger af, om makker har minimum eller maksimum, så 3♥ spørger.",
    "en": {
-    "why": "16 support points (13 HCP + singleton ♣ = 3): game depends on whether partner has a minimum or a maximum – 3♥ asks."
+    "why": "16 support points (13 HCP + singleton ♣ = 3): 16 + 7 = 23, but 16 + 10 = 26 – game depends on whether partner has a minimum or a maximum, so 3♥ asks."
    }
   },
   {
@@ -13687,10 +13687,10 @@
    },
    "hp": 15,
    "sp": 18,
-   "correct": "3♥",
-   "why": "18 sp (15 hp + single ♦ = 3): udgang afhænger af, om makker har minimum eller maksimum – 3♥ spørger.",
+   "correct": "4♠",
+   "why": "18 sp (15 hp + single ♦ = 3) + mindst 7 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "18 support points (15 HCP + singleton ♦ = 3): game depends on whether partner has a minimum or a maximum – 3♥ asks."
+    "why": "18 support points (15 HCP + singleton ♦ = 3) + at least 7 from partner = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -13721,9 +13721,9 @@
    "hp": 16,
    "sp": 17,
    "correct": "3♥",
-   "why": "17 sp (16 hp + double ♣ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♥ spørger.",
+   "why": "17 sp (16 hp + double ♣ = 1): 17 + 7 = 24, men 17 + 10 = 27 – udgang afhænger af, om makker har minimum eller maksimum, så 3♥ spørger.",
    "en": {
-    "why": "17 support points (16 HCP + doubleton ♣ = 1): game depends on whether partner has a minimum or a maximum – 3♥ asks."
+    "why": "17 support points (16 HCP + doubleton ♣ = 1): 17 + 7 = 24, but 17 + 10 = 27 – game depends on whether partner has a minimum or a maximum, so 3♥ asks."
    }
   },
   {
@@ -13754,9 +13754,9 @@
    "hp": 14,
    "sp": 17,
    "correct": "3♥",
-   "why": "17 sp (14 hp + single ♦ = 3): udgang afhænger af, om makker har minimum eller maksimum – 3♥ spørger.",
+   "why": "17 sp (14 hp + single ♦ = 3): 17 + 7 = 24, men 17 + 10 = 27 – udgang afhænger af, om makker har minimum eller maksimum, så 3♥ spørger.",
    "en": {
-    "why": "17 support points (14 HCP + singleton ♦ = 3): game depends on whether partner has a minimum or a maximum – 3♥ asks."
+    "why": "17 support points (14 HCP + singleton ♦ = 3): 17 + 7 = 24, but 17 + 10 = 27 – game depends on whether partner has a minimum or a maximum, so 3♥ asks."
    }
   },
   {
@@ -13787,9 +13787,9 @@
    "hp": 14,
    "sp": 17,
    "correct": "3♥",
-   "why": "17 sp (14 hp + single ♣ = 3): udgang afhænger af, om makker har minimum eller maksimum – 3♥ spørger.",
+   "why": "17 sp (14 hp + single ♣ = 3): 17 + 7 = 24, men 17 + 10 = 27 – udgang afhænger af, om makker har minimum eller maksimum, så 3♥ spørger.",
    "en": {
-    "why": "17 support points (14 HCP + singleton ♣ = 3): game depends on whether partner has a minimum or a maximum – 3♥ asks."
+    "why": "17 support points (14 HCP + singleton ♣ = 3): 17 + 7 = 24, but 17 + 10 = 27 – game depends on whether partner has a minimum or a maximum, so 3♥ asks."
    }
   },
   {
@@ -13820,9 +13820,9 @@
    "hp": 14,
    "sp": 17,
    "correct": "3♥",
-   "why": "17 sp (14 hp + single ♣ = 3): udgang afhænger af, om makker har minimum eller maksimum – 3♥ spørger.",
+   "why": "17 sp (14 hp + single ♣ = 3): 17 + 7 = 24, men 17 + 10 = 27 – udgang afhænger af, om makker har minimum eller maksimum, så 3♥ spørger.",
    "en": {
-    "why": "17 support points (14 HCP + singleton ♣ = 3): game depends on whether partner has a minimum or a maximum – 3♥ asks."
+    "why": "17 support points (14 HCP + singleton ♣ = 3): 17 + 7 = 24, but 17 + 10 = 27 – game depends on whether partner has a minimum or a maximum, so 3♥ asks."
    }
   },
   {
@@ -13853,9 +13853,9 @@
    "hp": 14,
    "sp": 16,
    "correct": "3♥",
-   "why": "16 sp (14 hp + double ♥ = 1 + double ♣ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♥ spørger.",
+   "why": "16 sp (14 hp + double ♥ = 1 + double ♣ = 1): 16 + 7 = 23, men 16 + 10 = 26 – udgang afhænger af, om makker har minimum eller maksimum, så 3♥ spørger.",
    "en": {
-    "why": "16 support points (14 HCP + doubleton ♥ = 1 + doubleton ♣ = 1): game depends on whether partner has a minimum or a maximum – 3♥ asks."
+    "why": "16 support points (14 HCP + doubleton ♥ = 1 + doubleton ♣ = 1): 16 + 7 = 23, but 16 + 10 = 26 – game depends on whether partner has a minimum or a maximum, so 3♥ asks."
    }
   },
   {
@@ -13886,9 +13886,9 @@
    "hp": 15,
    "sp": 17,
    "correct": "3♥",
-   "why": "17 sp (15 hp + double ♦ = 1 + double ♣ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♥ spørger.",
+   "why": "17 sp (15 hp + double ♦ = 1 + double ♣ = 1): 17 + 7 = 24, men 17 + 10 = 27 – udgang afhænger af, om makker har minimum eller maksimum, så 3♥ spørger.",
    "en": {
-    "why": "17 support points (15 HCP + doubleton ♦ = 1 + doubleton ♣ = 1): game depends on whether partner has a minimum or a maximum – 3♥ asks."
+    "why": "17 support points (15 HCP + doubleton ♦ = 1 + doubleton ♣ = 1): 17 + 7 = 24, but 17 + 10 = 27 – game depends on whether partner has a minimum or a maximum, so 3♥ asks."
    }
   },
   {
@@ -13918,10 +13918,10 @@
    },
    "hp": 13,
    "sp": 17,
-   "correct": "3♥",
-   "why": "18 sp (13 hp + single ♦ = 3 + double ♣ = 1 + 1 ekstra trumf): udgang afhænger af, om makker har minimum eller maksimum – 3♥ spørger.",
+   "correct": "4♠",
+   "why": "18 sp (13 hp + single ♦ = 3 + double ♣ = 1 + 1 ekstra trumf) + mindst 7 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "18 support points (13 HCP + singleton ♦ = 3 + doubleton ♣ = 1 + 1 extra trump): game depends on whether partner has a minimum or a maximum – 3♥ asks."
+    "why": "18 support points (13 HCP + singleton ♦ = 3 + doubleton ♣ = 1 + 1 extra trump) + at least 7 from partner = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -13951,10 +13951,10 @@
    },
    "hp": 13,
    "sp": 17,
-   "correct": "3♥",
-   "why": "18 sp (13 hp + double ♥ = 1 + single ♦ = 3 + 1 ekstra trumf): udgang afhænger af, om makker har minimum eller maksimum – 3♥ spørger.",
+   "correct": "4♠",
+   "why": "18 sp (13 hp + double ♥ = 1 + single ♦ = 3 + 1 ekstra trumf) + mindst 7 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "18 support points (13 HCP + doubleton ♥ = 1 + singleton ♦ = 3 + 1 extra trump): game depends on whether partner has a minimum or a maximum – 3♥ asks."
+    "why": "18 support points (13 HCP + doubleton ♥ = 1 + singleton ♦ = 3 + 1 extra trump) + at least 7 from partner = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -13984,10 +13984,10 @@
    },
    "hp": 17,
    "sp": 18,
-   "correct": "3♥",
-   "why": "18 sp (17 hp + double ♦ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♥ spørger.",
+   "correct": "4♠",
+   "why": "18 sp (17 hp + double ♦ = 1) + mindst 7 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "18 support points (17 HCP + doubleton ♦ = 1): game depends on whether partner has a minimum or a maximum – 3♥ asks."
+    "why": "18 support points (17 HCP + doubleton ♦ = 1) + at least 7 from partner = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -14017,10 +14017,10 @@
    },
    "hp": 17,
    "sp": 18,
-   "correct": "3♥",
-   "why": "18 sp (17 hp + double ♥ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♥ spørger.",
+   "correct": "4♠",
+   "why": "18 sp (17 hp + double ♥ = 1) + mindst 7 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "18 support points (17 HCP + doubleton ♥ = 1): game depends on whether partner has a minimum or a maximum – 3♥ asks."
+    "why": "18 support points (17 HCP + doubleton ♥ = 1) + at least 7 from partner = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -14051,9 +14051,9 @@
    "hp": 13,
    "sp": 16,
    "correct": "3♥",
-   "why": "16 sp (13 hp + single ♦ = 3): udgang afhænger af, om makker har minimum eller maksimum – 3♥ spørger.",
+   "why": "16 sp (13 hp + single ♦ = 3): 16 + 7 = 23, men 16 + 10 = 26 – udgang afhænger af, om makker har minimum eller maksimum, så 3♥ spørger.",
    "en": {
-    "why": "16 support points (13 HCP + singleton ♦ = 3): game depends on whether partner has a minimum or a maximum – 3♥ asks."
+    "why": "16 support points (13 HCP + singleton ♦ = 3): 16 + 7 = 23, but 16 + 10 = 26 – game depends on whether partner has a minimum or a maximum, so 3♥ asks."
    }
   },
   {
@@ -14084,9 +14084,9 @@
    "hp": 13,
    "sp": 16,
    "correct": "Pas",
-   "why": "Makker har minimum (7–8): 16 sp + højst 8 = 24 – under 26, pas.",
+   "why": "Makker har minimum (7–8): 16 sp + højst 8 = 24 – under 25, pas.",
    "en": {
-    "why": "Partner has a minimum (7–8): 16 support points + at most 8 = 24 – below 26, pass."
+    "why": "Partner has a minimum (7–8): 16 support points + at most 8 = 24 – below 25, pass."
    }
   },
   {
@@ -14116,10 +14116,10 @@
    },
    "hp": 15,
    "sp": 17,
-   "correct": "Pas",
-   "why": "Makker har minimum (7–8): 17 sp + højst 8 = 25 – under 26, pas.",
+   "correct": "4♠",
+   "why": "Makker har minimum (7–8): 17 sp + 8 = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "Partner has a minimum (7–8): 17 support points + at most 8 = 25 – below 26, pass."
+    "why": "Partner has a minimum (7–8): 17 support points + 8 = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -14149,10 +14149,10 @@
    },
    "hp": 14,
    "sp": 17,
-   "correct": "Pas",
-   "why": "Makker har minimum (7–8): 17 sp + højst 8 = 25 – under 26, pas.",
+   "correct": "4♠",
+   "why": "Makker har minimum (7–8): 17 sp + 8 = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "Partner has a minimum (7–8): 17 support points + at most 8 = 25 – below 26, pass."
+    "why": "Partner has a minimum (7–8): 17 support points + 8 = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -14183,9 +14183,9 @@
    "hp": 13,
    "sp": 16,
    "correct": "Pas",
-   "why": "Makker har minimum (7–8): 16 sp + højst 8 = 24 – under 26, pas.",
+   "why": "Makker har minimum (7–8): 16 sp + højst 8 = 24 – under 25, pas.",
    "en": {
-    "why": "Partner has a minimum (7–8): 16 support points + at most 8 = 24 – below 26, pass."
+    "why": "Partner has a minimum (7–8): 16 support points + at most 8 = 24 – below 25, pass."
    }
   },
   {
@@ -14216,9 +14216,9 @@
    "hp": 13,
    "sp": 15,
    "correct": "Pas",
-   "why": "Makker har minimum (7–8): 16 sp + højst 8 = 24 – under 26, pas.",
+   "why": "Makker har minimum (7–8): 16 sp + højst 8 = 24 – under 25, pas.",
    "en": {
-    "why": "Partner has a minimum (7–8): 16 support points + at most 8 = 24 – below 26, pass."
+    "why": "Partner has a minimum (7–8): 16 support points + at most 8 = 24 – below 25, pass."
    }
   },
   {
@@ -14249,9 +14249,9 @@
    "hp": 13,
    "sp": 16,
    "correct": "Pas",
-   "why": "Makker har minimum (7–8): 16 sp + højst 8 = 24 – under 26, pas.",
+   "why": "Makker har minimum (7–8): 16 sp + højst 8 = 24 – under 25, pas.",
    "en": {
-    "why": "Partner has a minimum (7–8): 16 support points + at most 8 = 24 – below 26, pass."
+    "why": "Partner has a minimum (7–8): 16 support points + at most 8 = 24 – below 25, pass."
    }
   },
   {
@@ -14282,9 +14282,9 @@
    "hp": 13,
    "sp": 16,
    "correct": "Pas",
-   "why": "Makker har minimum (7–8): 16 sp + højst 8 = 24 – under 26, pas.",
+   "why": "Makker har minimum (7–8): 16 sp + højst 8 = 24 – under 25, pas.",
    "en": {
-    "why": "Partner has a minimum (7–8): 16 support points + at most 8 = 24 – below 26, pass."
+    "why": "Partner has a minimum (7–8): 16 support points + at most 8 = 24 – below 25, pass."
    }
   },
   {
@@ -14314,10 +14314,10 @@
    },
    "hp": 13,
    "sp": 16,
-   "correct": "Pas",
-   "why": "Makker har minimum (7–8): 17 sp + højst 8 = 25 – under 26, pas.",
+   "correct": "4♠",
+   "why": "Makker har minimum (7–8): 17 sp + 8 = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "Partner has a minimum (7–8): 17 support points + at most 8 = 25 – below 26, pass."
+    "why": "Partner has a minimum (7–8): 17 support points + 8 = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -14348,9 +14348,9 @@
    "hp": 14,
    "sp": 16,
    "correct": "Pas",
-   "why": "Makker har minimum (7–8): 16 sp + højst 8 = 24 – under 26, pas.",
+   "why": "Makker har minimum (7–8): 16 sp + højst 8 = 24 – under 25, pas.",
    "en": {
-    "why": "Partner has a minimum (7–8): 16 support points + at most 8 = 24 – below 26, pass."
+    "why": "Partner has a minimum (7–8): 16 support points + at most 8 = 24 – below 25, pass."
    }
   },
   {
@@ -14380,10 +14380,10 @@
    },
    "hp": 13,
    "sp": 16,
-   "correct": "Pas",
-   "why": "Makker har minimum (7–8): 17 sp + højst 8 = 25 – under 26, pas.",
+   "correct": "4♠",
+   "why": "Makker har minimum (7–8): 17 sp + 8 = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "Partner has a minimum (7–8): 17 support points + at most 8 = 25 – below 26, pass."
+    "why": "Partner has a minimum (7–8): 17 support points + 8 = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -14414,9 +14414,9 @@
    "hp": 13,
    "sp": 16,
    "correct": "Pas",
-   "why": "Makker har minimum (7–8): 16 sp + højst 8 = 24 – under 26, pas.",
+   "why": "Makker har minimum (7–8): 16 sp + højst 8 = 24 – under 25, pas.",
    "en": {
-    "why": "Partner has a minimum (7–8): 16 support points + at most 8 = 24 – below 26, pass."
+    "why": "Partner has a minimum (7–8): 16 support points + at most 8 = 24 – below 25, pass."
    }
   },
   {
@@ -14446,10 +14446,10 @@
    },
    "hp": 16,
    "sp": 17,
-   "correct": "Pas",
-   "why": "Makker har minimum (7–8): 17 sp + højst 8 = 25 – under 26, pas.",
+   "correct": "4♠",
+   "why": "Makker har minimum (7–8): 17 sp + 8 = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "Partner has a minimum (7–8): 17 support points + at most 8 = 25 – below 26, pass."
+    "why": "Partner has a minimum (7–8): 17 support points + 8 = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -14480,9 +14480,9 @@
    "hp": 15,
    "sp": 16,
    "correct": "Pas",
-   "why": "Makker har minimum (7–8): 16 sp + højst 8 = 24 – under 26, pas.",
+   "why": "Makker har minimum (7–8): 16 sp + højst 8 = 24 – under 25, pas.",
    "en": {
-    "why": "Partner has a minimum (7–8): 16 support points + at most 8 = 24 – below 26, pass."
+    "why": "Partner has a minimum (7–8): 16 support points + at most 8 = 24 – below 25, pass."
    }
   },
   {
@@ -14512,10 +14512,10 @@
    },
    "hp": 16,
    "sp": 17,
-   "correct": "Pas",
-   "why": "Makker har minimum (7–8): 17 sp + højst 8 = 25 – under 26, pas.",
+   "correct": "4♠",
+   "why": "Makker har minimum (7–8): 17 sp + 8 = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "Partner has a minimum (7–8): 17 support points + at most 8 = 25 – below 26, pass."
+    "why": "Partner has a minimum (7–8): 17 support points + 8 = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -14545,10 +14545,10 @@
    },
    "hp": 14,
    "sp": 17,
-   "correct": "Pas",
-   "why": "Makker har minimum (7–8): 17 sp + højst 8 = 25 – under 26, pas.",
+   "correct": "4♠",
+   "why": "Makker har minimum (7–8): 17 sp + 8 = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "Partner has a minimum (7–8): 17 support points + at most 8 = 25 – below 26, pass."
+    "why": "Partner has a minimum (7–8): 17 support points + 8 = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -14579,9 +14579,9 @@
    "hp": 13,
    "sp": 16,
    "correct": "Pas",
-   "why": "Makker har minimum (7–8): 16 sp + højst 8 = 24 – under 26, pas.",
+   "why": "Makker har minimum (7–8): 16 sp + højst 8 = 24 – under 25, pas.",
    "en": {
-    "why": "Partner has a minimum (7–8): 16 support points + at most 8 = 24 – below 26, pass."
+    "why": "Partner has a minimum (7–8): 16 support points + at most 8 = 24 – below 25, pass."
    }
   },
   {
@@ -14611,10 +14611,10 @@
    },
    "hp": 16,
    "sp": 17,
-   "correct": "Pas",
-   "why": "Makker har minimum (7–8): 17 sp + højst 8 = 25 – under 26, pas.",
+   "correct": "4♠",
+   "why": "Makker har minimum (7–8): 17 sp + 8 = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "Partner has a minimum (7–8): 17 support points + at most 8 = 25 – below 26, pass."
+    "why": "Partner has a minimum (7–8): 17 support points + 8 = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -14644,10 +14644,10 @@
    },
    "hp": 14,
    "sp": 17,
-   "correct": "Pas",
-   "why": "Makker har minimum (7–8): 17 sp + højst 8 = 25 – under 26, pas.",
+   "correct": "4♠",
+   "why": "Makker har minimum (7–8): 17 sp + 8 = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "Partner has a minimum (7–8): 17 support points + at most 8 = 25 – below 26, pass."
+    "why": "Partner has a minimum (7–8): 17 support points + 8 = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -14677,10 +14677,10 @@
    },
    "hp": 13,
    "sp": 16,
-   "correct": "Pas",
-   "why": "Makker har minimum (7–8): 17 sp + højst 8 = 25 – under 26, pas.",
+   "correct": "4♠",
+   "why": "Makker har minimum (7–8): 17 sp + 8 = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "Partner has a minimum (7–8): 17 support points + at most 8 = 25 – below 26, pass."
+    "why": "Partner has a minimum (7–8): 17 support points + 8 = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -14710,670 +14710,10 @@
    },
    "hp": 14,
    "sp": 17,
-   "correct": "Pas",
-   "why": "Makker har minimum (7–8): 17 sp + højst 8 = 25 – under 26, pas.",
-   "en": {
-    "why": "Partner has a minimum (7–8): 17 support points + at most 8 = 25 – below 26, pass."
-   }
-  },
-  {
-   "situation": "aab_min_3ru_sp",
-   "hand": {
-    "S": [
-     14,
-     12,
-     8,
-     3,
-     2
-    ],
-    "H": [
-     12,
-     10,
-     8
-    ],
-    "D": [
-     14,
-     12,
-     5,
-     2
-    ],
-    "C": [
-     11
-    ]
-   },
-   "hp": 15,
-   "sp": 18,
    "correct": "4♠",
-   "why": "Makker har minimum (7–8): 18 sp + 8 = 26 – udgang, 4♠.",
+   "why": "Makker har minimum (7–8): 17 sp + 8 = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "Partner has a minimum (7–8): 18 support points + 8 = 26 – game, 4♠."
-   }
-  },
-  {
-   "situation": "aab_min_3ru_sp",
-   "hand": {
-    "S": [
-     13,
-     8,
-     7,
-     6,
-     4,
-     3
-    ],
-    "H": [
-     2
-    ],
-    "D": [
-     14,
-     12
-    ],
-    "C": [
-     14,
-     8,
-     4,
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 17,
-   "correct": "4♠",
-   "why": "Makker har minimum (7–8): 18 sp + 8 = 26 – udgang, 4♠.",
-   "en": {
-    "why": "Partner has a minimum (7–8): 18 support points + 8 = 26 – game, 4♠."
-   }
-  },
-  {
-   "situation": "aab_min_3ru_sp",
-   "hand": {
-    "S": [
-     14,
-     13,
-     9,
-     7,
-     6,
-     2
-    ],
-    "H": [
-     12,
-     5
-    ],
-    "D": [
-     14,
-     12
-    ],
-    "C": [
-     7,
-     5,
-     3
-    ]
-   },
-   "hp": 15,
-   "sp": 17,
-   "correct": "4♠",
-   "why": "Makker har minimum (7–8): 18 sp + 8 = 26 – udgang, 4♠.",
-   "en": {
-    "why": "Partner has a minimum (7–8): 18 support points + 8 = 26 – game, 4♠."
-   }
-  },
-  {
-   "situation": "aab_min_3ru_sp",
-   "hand": {
-    "S": [
-     14,
-     7,
-     6,
-     5,
-     2
-    ],
-    "H": [
-     3
-    ],
-    "D": [
-     14,
-     9,
-     7,
-     2
-    ],
-    "C": [
-     14,
-     13,
-     9
-    ]
-   },
-   "hp": 15,
-   "sp": 18,
-   "correct": "4♠",
-   "why": "Makker har minimum (7–8): 18 sp + 8 = 26 – udgang, 4♠.",
-   "en": {
-    "why": "Partner has a minimum (7–8): 18 support points + 8 = 26 – game, 4♠."
-   }
-  },
-  {
-   "situation": "aab_min_3ru_sp",
-   "hand": {
-    "S": [
-     14,
-     11,
-     10,
-     6,
-     4,
-     3
-    ],
-    "H": [
-     14,
-     11,
-     3,
-     2
-    ],
-    "D": [
-     12
-    ],
-    "C": [
-     11,
-     7
-    ]
-   },
-   "hp": 13,
-   "sp": 17,
-   "correct": "4♠",
-   "why": "Makker har minimum (7–8): 18 sp + 8 = 26 – udgang, 4♠.",
-   "en": {
-    "why": "Partner has a minimum (7–8): 18 support points + 8 = 26 – game, 4♠."
-   }
-  },
-  {
-   "situation": "aab_min_3ru_sp",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     11,
-     4,
-     3
-    ],
-    "H": [
-     10,
-     9
-    ],
-    "D": [
-     4
-    ],
-    "C": [
-     13,
-     7,
-     5,
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 17,
-   "correct": "4♠",
-   "why": "Makker har minimum (7–8): 18 sp + 8 = 26 – udgang, 4♠.",
-   "en": {
-    "why": "Partner has a minimum (7–8): 18 support points + 8 = 26 – game, 4♠."
-   }
-  },
-  {
-   "situation": "aab_min_3ru_sp",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11,
-     8,
-     5,
-     3
-    ],
-    "H": [
-     11,
-     10,
-     5,
-     3
-    ],
-    "D": [
-     3
-    ],
-    "C": [
-     13,
-     12
-    ]
-   },
-   "hp": 13,
-   "sp": 17,
-   "correct": "4♠",
-   "why": "Makker har minimum (7–8): 18 sp + 8 = 26 – udgang, 4♠.",
-   "en": {
-    "why": "Partner has a minimum (7–8): 18 support points + 8 = 26 – game, 4♠."
-   }
-  },
-  {
-   "situation": "aab_min_3ru_sp",
-   "hand": {
-    "S": [
-     11,
-     9,
-     8,
-     6,
-     4
-    ],
-    "H": [
-     14
-    ],
-    "D": [
-     12,
-     11,
-     7,
-     3
-    ],
-    "C": [
-     14,
-     13,
-     9
-    ]
-   },
-   "hp": 15,
-   "sp": 18,
-   "correct": "4♠",
-   "why": "Makker har minimum (7–8): 18 sp + 8 = 26 – udgang, 4♠.",
-   "en": {
-    "why": "Partner has a minimum (7–8): 18 support points + 8 = 26 – game, 4♠."
-   }
-  },
-  {
-   "situation": "aab_min_3ru_sp",
-   "hand": {
-    "S": [
-     14,
-     11,
-     10,
-     8,
-     2
-    ],
-    "H": [
-     14,
-     9,
-     4
-    ],
-    "D": [
-     11
-    ],
-    "C": [
-     14,
-     11,
-     4,
-     2
-    ]
-   },
-   "hp": 15,
-   "sp": 18,
-   "correct": "4♠",
-   "why": "Makker har minimum (7–8): 18 sp + 8 = 26 – udgang, 4♠.",
-   "en": {
-    "why": "Partner has a minimum (7–8): 18 support points + 8 = 26 – game, 4♠."
-   }
-  },
-  {
-   "situation": "aab_min_3ru_sp",
-   "hand": {
-    "S": [
-     14,
-     12,
-     9,
-     6,
-     4,
-     2
-    ],
-    "H": [
-     8,
-     7
-    ],
-    "D": [
-     14,
-     13,
-     9,
-     3
-    ],
-    "C": [
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 17,
-   "correct": "4♠",
-   "why": "Makker har minimum (7–8): 18 sp + 8 = 26 – udgang, 4♠.",
-   "en": {
-    "why": "Partner has a minimum (7–8): 18 support points + 8 = 26 – game, 4♠."
-   }
-  },
-  {
-   "situation": "aab_min_3ru_sp",
-   "hand": {
-    "S": [
-     14,
-     12,
-     8,
-     7,
-     2
-    ],
-    "H": [
-     13,
-     12,
-     11,
-     9
-    ],
-    "D": [
-     14,
-     8
-    ],
-    "C": [
-     10,
-     5
-    ]
-   },
-   "hp": 16,
-   "sp": 18,
-   "correct": "4♠",
-   "why": "Makker har minimum (7–8): 18 sp + 8 = 26 – udgang, 4♠.",
-   "en": {
-    "why": "Partner has a minimum (7–8): 18 support points + 8 = 26 – game, 4♠."
-   }
-  },
-  {
-   "situation": "aab_min_3ru_sp",
-   "hand": {
-    "S": [
-     14,
-     13,
-     11,
-     8,
-     5
-    ],
-    "H": [
-     7,
-     4,
-     3
-    ],
-    "D": [
-     12,
-     2
-    ],
-    "C": [
-     14,
-     13,
-     9
-    ]
-   },
-   "hp": 17,
-   "sp": 18,
-   "correct": "4♠",
-   "why": "Makker har minimum (7–8): 18 sp + 8 = 26 – udgang, 4♠.",
-   "en": {
-    "why": "Partner has a minimum (7–8): 18 support points + 8 = 26 – game, 4♠."
-   }
-  },
-  {
-   "situation": "aab_min_3ru_sp",
-   "hand": {
-    "S": [
-     14,
-     11,
-     10,
-     8,
-     6
-    ],
-    "H": [
-     12,
-     8
-    ],
-    "D": [
-     13,
-     12,
-     8,
-     2
-    ],
-    "C": [
-     14,
-     5
-    ]
-   },
-   "hp": 16,
-   "sp": 18,
-   "correct": "4♠",
-   "why": "Makker har minimum (7–8): 18 sp + 8 = 26 – udgang, 4♠.",
-   "en": {
-    "why": "Partner has a minimum (7–8): 18 support points + 8 = 26 – game, 4♠."
-   }
-  },
-  {
-   "situation": "aab_min_3ru_sp",
-   "hand": {
-    "S": [
-     14,
-     13,
-     8,
-     7,
-     5
-    ],
-    "H": [
-     10,
-     8,
-     6,
-     3
-    ],
-    "D": [
-     14
-    ],
-    "C": [
-     14,
-     3,
-     2
-    ]
-   },
-   "hp": 15,
-   "sp": 18,
-   "correct": "4♠",
-   "why": "Makker har minimum (7–8): 18 sp + 8 = 26 – udgang, 4♠.",
-   "en": {
-    "why": "Partner has a minimum (7–8): 18 support points + 8 = 26 – game, 4♠."
-   }
-  },
-  {
-   "situation": "aab_min_3ru_sp",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
-     10,
-     8,
-     2
-    ],
-    "H": [
-     13,
-     12,
-     6,
-     5
-    ],
-    "D": [
-     12
-    ],
-    "C": [
-     7,
-     5
-    ]
-   },
-   "hp": 13,
-   "sp": 17,
-   "correct": "4♠",
-   "why": "Makker har minimum (7–8): 18 sp + 8 = 26 – udgang, 4♠.",
-   "en": {
-    "why": "Partner has a minimum (7–8): 18 support points + 8 = 26 – game, 4♠."
-   }
-  },
-  {
-   "situation": "aab_min_3ru_sp",
-   "hand": {
-    "S": [
-     14,
-     13,
-     11,
-     10,
-     5
-    ],
-    "H": [
-     2
-    ],
-    "D": [
-     13,
-     10,
-     2
-    ],
-    "C": [
-     13,
-     11,
-     10,
-     7
-    ]
-   },
-   "hp": 15,
-   "sp": 18,
-   "correct": "4♠",
-   "why": "Makker har minimum (7–8): 18 sp + 8 = 26 – udgang, 4♠.",
-   "en": {
-    "why": "Partner has a minimum (7–8): 18 support points + 8 = 26 – game, 4♠."
-   }
-  },
-  {
-   "situation": "aab_min_3ru_sp",
-   "hand": {
-    "S": [
-     14,
-     13,
-     10,
-     9,
-     6,
-     5
-    ],
-    "H": [
-     14,
-     10,
-     6
-    ],
-    "D": [
-     13
-    ],
-    "C": [
-     10,
-     6,
-     4
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "4♠",
-   "why": "Makker har minimum (7–8): 18 sp + 8 = 26 – udgang, 4♠.",
-   "en": {
-    "why": "Partner has a minimum (7–8): 18 support points + 8 = 26 – game, 4♠."
-   }
-  },
-  {
-   "situation": "aab_min_3ru_sp",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
-     5,
-     3,
-     2
-    ],
-    "H": [
-     9,
-     4
-    ],
-    "D": [
-     13,
-     12,
-     5,
-     2
-    ],
-    "C": [
-     12
-    ]
-   },
-   "hp": 13,
-   "sp": 17,
-   "correct": "4♠",
-   "why": "Makker har minimum (7–8): 18 sp + 8 = 26 – udgang, 4♠.",
-   "en": {
-    "why": "Partner has a minimum (7–8): 18 support points + 8 = 26 – game, 4♠."
-   }
-  },
-  {
-   "situation": "aab_min_3ru_sp",
-   "hand": {
-    "S": [
-     14,
-     11,
-     9,
-     8,
-     5
-    ],
-    "H": [
-     12,
-     11
-    ],
-    "D": [
-     11,
-     10
-    ],
-    "C": [
-     14,
-     13,
-     9,
-     3
-    ]
-   },
-   "hp": 16,
-   "sp": 18,
-   "correct": "4♠",
-   "why": "Makker har minimum (7–8): 18 sp + 8 = 26 – udgang, 4♠.",
-   "en": {
-    "why": "Partner has a minimum (7–8): 18 support points + 8 = 26 – game, 4♠."
-   }
-  },
-  {
-   "situation": "aab_min_3ru_sp",
-   "hand": {
-    "S": [
-     14,
-     12,
-     8,
-     7,
-     4
-    ],
-    "H": [
-     14
-    ],
-    "D": [
-     14,
-     11,
-     9,
-     3
-    ],
-    "C": [
-     8,
-     4,
-     2
-    ]
-   },
-   "hp": 15,
-   "sp": 18,
-   "correct": "4♠",
-   "why": "Makker har minimum (7–8): 18 sp + 8 = 26 – udgang, 4♠.",
-   "en": {
-    "why": "Partner has a minimum (7–8): 18 support points + 8 = 26 – game, 4♠."
+    "why": "Partner has a minimum (7–8): 17 support points + 8 = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -15404,9 +14744,9 @@
    "hp": 12,
    "sp": 13,
    "correct": "3♠",
-   "why": "13 sp (12 hp + double ♦ = 1) + højst 11 hos makker er under 26: afmeld i 3♠.",
+   "why": "13 sp (12 hp + double ♦ = 1) + højst 11 hos makker = 24 – under 25: afmeld i 3♠.",
    "en": {
-    "why": "13 support points (12 HCP + doubleton ♦ = 1) + at most 11 from partner is below 26: sign off in 3♠."
+    "why": "13 support points (12 HCP + doubleton ♦ = 1) + at most 11 from partner = 24 – below 25: sign off in 3♠."
    }
   },
   {
@@ -15437,9 +14777,9 @@
    "hp": 12,
    "sp": 13,
    "correct": "3♠",
-   "why": "13 sp (12 hp + double ♣ = 1) + højst 11 hos makker er under 26: afmeld i 3♠.",
+   "why": "13 sp (12 hp + double ♣ = 1) + højst 11 hos makker = 24 – under 25: afmeld i 3♠.",
    "en": {
-    "why": "13 support points (12 HCP + doubleton ♣ = 1) + at most 11 from partner is below 26: sign off in 3♠."
+    "why": "13 support points (12 HCP + doubleton ♣ = 1) + at most 11 from partner = 24 – below 25: sign off in 3♠."
    }
   },
   {
@@ -15469,10 +14809,10 @@
    },
    "hp": 12,
    "sp": 14,
-   "correct": "3♠",
-   "why": "14 sp (12 hp + double ♥ = 1 + double ♣ = 1) + højst 11 hos makker er under 26: afmeld i 3♠.",
+   "correct": "3♦",
+   "why": "14 sp (12 hp + double ♥ = 1 + double ♣ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (12 HCP + doubleton ♥ = 1 + doubleton ♣ = 1) + at most 11 from partner is below 26: sign off in 3♠."
+    "why": "14 support points (12 HCP + doubleton ♥ = 1 + doubleton ♣ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -15503,9 +14843,9 @@
    "hp": 12,
    "sp": 13,
    "correct": "3♠",
-   "why": "13 sp (12 hp + double ♦ = 1) + højst 11 hos makker er under 26: afmeld i 3♠.",
+   "why": "13 sp (12 hp + double ♦ = 1) + højst 11 hos makker = 24 – under 25: afmeld i 3♠.",
    "en": {
-    "why": "13 support points (12 HCP + doubleton ♦ = 1) + at most 11 from partner is below 26: sign off in 3♠."
+    "why": "13 support points (12 HCP + doubleton ♦ = 1) + at most 11 from partner = 24 – below 25: sign off in 3♠."
    }
   },
   {
@@ -15536,9 +14876,9 @@
    "hp": 12,
    "sp": 13,
    "correct": "3♠",
-   "why": "13 sp (12 hp + double ♦ = 1) + højst 11 hos makker er under 26: afmeld i 3♠.",
+   "why": "13 sp (12 hp + double ♦ = 1) + højst 11 hos makker = 24 – under 25: afmeld i 3♠.",
    "en": {
-    "why": "13 support points (12 HCP + doubleton ♦ = 1) + at most 11 from partner is below 26: sign off in 3♠."
+    "why": "13 support points (12 HCP + doubleton ♦ = 1) + at most 11 from partner = 24 – below 25: sign off in 3♠."
    }
   },
   {
@@ -15568,10 +14908,10 @@
    },
    "hp": 13,
    "sp": 14,
-   "correct": "3♠",
-   "why": "14 sp (13 hp + double ♣ = 1) + højst 11 hos makker er under 26: afmeld i 3♠.",
+   "correct": "3♦",
+   "why": "14 sp (13 hp + double ♣ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (13 HCP + doubleton ♣ = 1) + at most 11 from partner is below 26: sign off in 3♠."
+    "why": "14 support points (13 HCP + doubleton ♣ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -15601,10 +14941,10 @@
    },
    "hp": 13,
    "sp": 14,
-   "correct": "3♠",
-   "why": "14 sp (13 hp + double ♦ = 1) + højst 11 hos makker er under 26: afmeld i 3♠.",
+   "correct": "3♦",
+   "why": "14 sp (13 hp + double ♦ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (13 HCP + doubleton ♦ = 1) + at most 11 from partner is below 26: sign off in 3♠."
+    "why": "14 support points (13 HCP + doubleton ♦ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -15634,10 +14974,10 @@
    },
    "hp": 12,
    "sp": 14,
-   "correct": "3♠",
-   "why": "14 sp (12 hp + double ♥ = 1 + double ♣ = 1) + højst 11 hos makker er under 26: afmeld i 3♠.",
+   "correct": "3♦",
+   "why": "14 sp (12 hp + double ♥ = 1 + double ♣ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (12 HCP + doubleton ♥ = 1 + doubleton ♣ = 1) + at most 11 from partner is below 26: sign off in 3♠."
+    "why": "14 support points (12 HCP + doubleton ♥ = 1 + doubleton ♣ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -15668,9 +15008,9 @@
    "hp": 12,
    "sp": 13,
    "correct": "3♠",
-   "why": "13 sp (12 hp + double ♣ = 1) + højst 11 hos makker er under 26: afmeld i 3♠.",
+   "why": "13 sp (12 hp + double ♣ = 1) + højst 11 hos makker = 24 – under 25: afmeld i 3♠.",
    "en": {
-    "why": "13 support points (12 HCP + doubleton ♣ = 1) + at most 11 from partner is below 26: sign off in 3♠."
+    "why": "13 support points (12 HCP + doubleton ♣ = 1) + at most 11 from partner = 24 – below 25: sign off in 3♠."
    }
   },
   {
@@ -15700,10 +15040,10 @@
    },
    "hp": 12,
    "sp": 14,
-   "correct": "3♠",
-   "why": "14 sp (12 hp + double ♥ = 1 + double ♣ = 1) + højst 11 hos makker er under 26: afmeld i 3♠.",
+   "correct": "3♦",
+   "why": "14 sp (12 hp + double ♥ = 1 + double ♣ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (12 HCP + doubleton ♥ = 1 + doubleton ♣ = 1) + at most 11 from partner is below 26: sign off in 3♠."
+    "why": "14 support points (12 HCP + doubleton ♥ = 1 + doubleton ♣ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -15734,9 +15074,9 @@
    "hp": 12,
    "sp": 13,
    "correct": "3♠",
-   "why": "13 sp (12 hp + double ♣ = 1) + højst 11 hos makker er under 26: afmeld i 3♠.",
+   "why": "13 sp (12 hp + double ♣ = 1) + højst 11 hos makker = 24 – under 25: afmeld i 3♠.",
    "en": {
-    "why": "13 support points (12 HCP + doubleton ♣ = 1) + at most 11 from partner is below 26: sign off in 3♠."
+    "why": "13 support points (12 HCP + doubleton ♣ = 1) + at most 11 from partner = 24 – below 25: sign off in 3♠."
    }
   },
   {
@@ -15767,9 +15107,9 @@
    "hp": 12,
    "sp": 13,
    "correct": "3♠",
-   "why": "13 sp (12 hp + double ♥ = 1) + højst 11 hos makker er under 26: afmeld i 3♠.",
+   "why": "13 sp (12 hp + double ♥ = 1) + højst 11 hos makker = 24 – under 25: afmeld i 3♠.",
    "en": {
-    "why": "13 support points (12 HCP + doubleton ♥ = 1) + at most 11 from partner is below 26: sign off in 3♠."
+    "why": "13 support points (12 HCP + doubleton ♥ = 1) + at most 11 from partner = 24 – below 25: sign off in 3♠."
    }
   },
   {
@@ -15799,10 +15139,10 @@
    },
    "hp": 13,
    "sp": 14,
-   "correct": "3♠",
-   "why": "14 sp (13 hp + double ♦ = 1) + højst 11 hos makker er under 26: afmeld i 3♠.",
+   "correct": "3♦",
+   "why": "14 sp (13 hp + double ♦ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (13 HCP + doubleton ♦ = 1) + at most 11 from partner is below 26: sign off in 3♠."
+    "why": "14 support points (13 HCP + doubleton ♦ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -15832,10 +15172,10 @@
    },
    "hp": 12,
    "sp": 14,
-   "correct": "3♠",
-   "why": "14 sp (12 hp + double ♥ = 1 + double ♣ = 1) + højst 11 hos makker er under 26: afmeld i 3♠.",
+   "correct": "3♦",
+   "why": "14 sp (12 hp + double ♥ = 1 + double ♣ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (12 HCP + doubleton ♥ = 1 + doubleton ♣ = 1) + at most 11 from partner is below 26: sign off in 3♠."
+    "why": "14 support points (12 HCP + doubleton ♥ = 1 + doubleton ♣ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -15866,9 +15206,9 @@
    "hp": 12,
    "sp": 13,
    "correct": "3♠",
-   "why": "13 sp (12 hp + double ♥ = 1) + højst 11 hos makker er under 26: afmeld i 3♠.",
+   "why": "13 sp (12 hp + double ♥ = 1) + højst 11 hos makker = 24 – under 25: afmeld i 3♠.",
    "en": {
-    "why": "13 support points (12 HCP + doubleton ♥ = 1) + at most 11 from partner is below 26: sign off in 3♠."
+    "why": "13 support points (12 HCP + doubleton ♥ = 1) + at most 11 from partner = 24 – below 25: sign off in 3♠."
    }
   },
   {
@@ -15898,10 +15238,10 @@
    },
    "hp": 13,
    "sp": 14,
-   "correct": "3♠",
-   "why": "14 sp (13 hp + double ♦ = 1) + højst 11 hos makker er under 26: afmeld i 3♠.",
+   "correct": "3♦",
+   "why": "14 sp (13 hp + double ♦ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (13 HCP + doubleton ♦ = 1) + at most 11 from partner is below 26: sign off in 3♠."
+    "why": "14 support points (13 HCP + doubleton ♦ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -15931,10 +15271,10 @@
    },
    "hp": 12,
    "sp": 14,
-   "correct": "3♠",
-   "why": "14 sp (12 hp + double ♥ = 1 + double ♦ = 1) + højst 11 hos makker er under 26: afmeld i 3♠.",
+   "correct": "3♦",
+   "why": "14 sp (12 hp + double ♥ = 1 + double ♦ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger.",
    "en": {
-    "why": "14 support points (12 HCP + doubleton ♥ = 1 + doubleton ♦ = 1) + at most 11 from partner is below 26: sign off in 3♠."
+    "why": "14 support points (12 HCP + doubleton ♥ = 1 + doubleton ♦ = 1): 14 + 10 = 24, but 14 + 11 = 25 – game depends on whether partner has a minimum or a maximum, so 3♦ asks."
    }
   },
   {
@@ -15964,9 +15304,9 @@
    "hp": 15,
    "sp": 21,
    "correct": "4♠",
-   "why": "22 sp (15 hp + renonce ♥ = 5 + double ♦ = 1 + 1 ekstra trumf) + mindst 10 hos makker giver 26+: udgang, 4♠.",
+   "why": "22 sp (15 hp + renonce ♥ = 5 + double ♦ = 1 + 1 ekstra trumf) + mindst 10 hos makker = 32 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "22 support points (15 HCP + void ♥ = 5 + doubleton ♦ = 1 + 1 extra trump) + at least 10 from partner gives 26+: game, 4♠."
+    "why": "22 support points (15 HCP + void ♥ = 5 + doubleton ♦ = 1 + 1 extra trump) + at least 10 from partner = 32 – rule of 25: game, 4♠."
    }
   },
   {
@@ -15997,9 +15337,9 @@
    "hp": 13,
    "sp": 17,
    "correct": "4♠",
-   "why": "17 sp (13 hp + single ♥ = 3 + double ♦ = 1) + mindst 10 hos makker giver 26+: udgang, 4♠.",
+   "why": "17 sp (13 hp + single ♥ = 3 + double ♦ = 1) + mindst 10 hos makker = 27 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "17 support points (13 HCP + singleton ♥ = 3 + doubleton ♦ = 1) + at least 10 from partner gives 26+: game, 4♠."
+    "why": "17 support points (13 HCP + singleton ♥ = 3 + doubleton ♦ = 1) + at least 10 from partner = 27 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16030,9 +15370,9 @@
    "hp": 18,
    "sp": 21,
    "correct": "4♠",
-   "why": "21 sp (18 hp + single ♦ = 3) + mindst 10 hos makker giver 26+: udgang, 4♠.",
+   "why": "21 sp (18 hp + single ♦ = 3) + mindst 10 hos makker = 31 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "21 support points (18 HCP + singleton ♦ = 3) + at least 10 from partner gives 26+: game, 4♠."
+    "why": "21 support points (18 HCP + singleton ♦ = 3) + at least 10 from partner = 31 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16063,9 +15403,9 @@
    "hp": 15,
    "sp": 18,
    "correct": "4♠",
-   "why": "18 sp (15 hp + single ♦ = 3) + mindst 10 hos makker giver 26+: udgang, 4♠.",
+   "why": "18 sp (15 hp + single ♦ = 3) + mindst 10 hos makker = 28 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "18 support points (15 HCP + singleton ♦ = 3) + at least 10 from partner gives 26+: game, 4♠."
+    "why": "18 support points (15 HCP + singleton ♦ = 3) + at least 10 from partner = 28 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16096,9 +15436,9 @@
    "hp": 13,
    "sp": 17,
    "correct": "4♠",
-   "why": "18 sp (13 hp + single ♥ = 3 + double ♦ = 1 + 1 ekstra trumf) + mindst 10 hos makker giver 26+: udgang, 4♠.",
+   "why": "18 sp (13 hp + single ♥ = 3 + double ♦ = 1 + 1 ekstra trumf) + mindst 10 hos makker = 28 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "18 support points (13 HCP + singleton ♥ = 3 + doubleton ♦ = 1 + 1 extra trump) + at least 10 from partner gives 26+: game, 4♠."
+    "why": "18 support points (13 HCP + singleton ♥ = 3 + doubleton ♦ = 1 + 1 extra trump) + at least 10 from partner = 28 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16128,9 +15468,9 @@
    "hp": 13,
    "sp": 19,
    "correct": "4♠",
-   "why": "19 sp (13 hp + double ♥ = 1 + renonce ♣ = 5) + mindst 10 hos makker giver 26+: udgang, 4♠.",
+   "why": "19 sp (13 hp + double ♥ = 1 + renonce ♣ = 5) + mindst 10 hos makker = 29 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "19 support points (13 HCP + doubleton ♥ = 1 + void ♣ = 5) + at least 10 from partner gives 26+: game, 4♠."
+    "why": "19 support points (13 HCP + doubleton ♥ = 1 + void ♣ = 5) + at least 10 from partner = 29 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16160,9 +15500,9 @@
    "hp": 12,
    "sp": 17,
    "correct": "4♠",
-   "why": "17 sp (12 hp + renonce ♦ = 5) + mindst 10 hos makker giver 26+: udgang, 4♠.",
+   "why": "17 sp (12 hp + renonce ♦ = 5) + mindst 10 hos makker = 27 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "17 support points (12 HCP + void ♦ = 5) + at least 10 from partner gives 26+: game, 4♠."
+    "why": "17 support points (12 HCP + void ♦ = 5) + at least 10 from partner = 27 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16192,9 +15532,9 @@
    "hp": 15,
    "sp": 20,
    "correct": "4♠",
-   "why": "20 sp (15 hp + renonce ♣ = 5) + mindst 10 hos makker giver 26+: udgang, 4♠.",
+   "why": "20 sp (15 hp + renonce ♣ = 5) + mindst 10 hos makker = 30 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "20 support points (15 HCP + void ♣ = 5) + at least 10 from partner gives 26+: game, 4♠."
+    "why": "20 support points (15 HCP + void ♣ = 5) + at least 10 from partner = 30 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16224,9 +15564,9 @@
    "hp": 15,
    "sp": 20,
    "correct": "4♠",
-   "why": "20 sp (15 hp + renonce ♥ = 5) + mindst 10 hos makker giver 26+: udgang, 4♠.",
+   "why": "20 sp (15 hp + renonce ♥ = 5) + mindst 10 hos makker = 30 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "20 support points (15 HCP + void ♥ = 5) + at least 10 from partner gives 26+: game, 4♠."
+    "why": "20 support points (15 HCP + void ♥ = 5) + at least 10 from partner = 30 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16257,9 +15597,9 @@
    "hp": 14,
    "sp": 16,
    "correct": "4♠",
-   "why": "16 sp (14 hp + double ♥ = 1 + double ♦ = 1) + mindst 10 hos makker giver 26+: udgang, 4♠.",
+   "why": "16 sp (14 hp + double ♥ = 1 + double ♦ = 1) + mindst 10 hos makker = 26 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "16 support points (14 HCP + doubleton ♥ = 1 + doubleton ♦ = 1) + at least 10 from partner gives 26+: game, 4♠."
+    "why": "16 support points (14 HCP + doubleton ♥ = 1 + doubleton ♦ = 1) + at least 10 from partner = 26 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16290,9 +15630,9 @@
    "hp": 15,
    "sp": 18,
    "correct": "4♠",
-   "why": "18 sp (15 hp + single ♥ = 3) + mindst 10 hos makker giver 26+: udgang, 4♠.",
+   "why": "18 sp (15 hp + single ♥ = 3) + mindst 10 hos makker = 28 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "18 support points (15 HCP + singleton ♥ = 3) + at least 10 from partner gives 26+: game, 4♠."
+    "why": "18 support points (15 HCP + singleton ♥ = 3) + at least 10 from partner = 28 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16322,9 +15662,9 @@
    "hp": 13,
    "sp": 18,
    "correct": "4♠",
-   "why": "19 sp (13 hp + renonce ♥ = 5 + 1 ekstra trumf) + mindst 10 hos makker giver 26+: udgang, 4♠.",
+   "why": "19 sp (13 hp + renonce ♥ = 5 + 1 ekstra trumf) + mindst 10 hos makker = 29 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "19 support points (13 HCP + void ♥ = 5 + 1 extra trump) + at least 10 from partner gives 26+: game, 4♠."
+    "why": "19 support points (13 HCP + void ♥ = 5 + 1 extra trump) + at least 10 from partner = 29 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16354,9 +15694,9 @@
    "hp": 13,
    "sp": 19,
    "correct": "4♠",
-   "why": "20 sp (13 hp + renonce ♥ = 5 + double ♣ = 1 + 1 ekstra trumf) + mindst 10 hos makker giver 26+: udgang, 4♠.",
+   "why": "20 sp (13 hp + renonce ♥ = 5 + double ♣ = 1 + 1 ekstra trumf) + mindst 10 hos makker = 30 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "20 support points (13 HCP + void ♥ = 5 + doubleton ♣ = 1 + 1 extra trump) + at least 10 from partner gives 26+: game, 4♠."
+    "why": "20 support points (13 HCP + void ♥ = 5 + doubleton ♣ = 1 + 1 extra trump) + at least 10 from partner = 30 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16387,9 +15727,9 @@
    "hp": 14,
    "sp": 18,
    "correct": "4♠",
-   "why": "19 sp (14 hp + double ♥ = 1 + single ♦ = 3 + 1 ekstra trumf) + mindst 10 hos makker giver 26+: udgang, 4♠.",
+   "why": "19 sp (14 hp + double ♥ = 1 + single ♦ = 3 + 1 ekstra trumf) + mindst 10 hos makker = 29 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "19 support points (14 HCP + doubleton ♥ = 1 + singleton ♦ = 3 + 1 extra trump) + at least 10 from partner gives 26+: game, 4♠."
+    "why": "19 support points (14 HCP + doubleton ♥ = 1 + singleton ♦ = 3 + 1 extra trump) + at least 10 from partner = 29 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16419,9 +15759,9 @@
    "hp": 13,
    "sp": 18,
    "correct": "4♠",
-   "why": "18 sp (13 hp + renonce ♦ = 5) + mindst 10 hos makker giver 26+: udgang, 4♠.",
+   "why": "18 sp (13 hp + renonce ♦ = 5) + mindst 10 hos makker = 28 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "18 support points (13 HCP + void ♦ = 5) + at least 10 from partner gives 26+: game, 4♠."
+    "why": "18 support points (13 HCP + void ♦ = 5) + at least 10 from partner = 28 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16451,9 +15791,9 @@
    "hp": 14,
    "sp": 20,
    "correct": "4♠",
-   "why": "21 sp (14 hp + double ♦ = 1 + renonce ♣ = 5 + 1 ekstra trumf) + mindst 10 hos makker giver 26+: udgang, 4♠.",
+   "why": "21 sp (14 hp + double ♦ = 1 + renonce ♣ = 5 + 1 ekstra trumf) + mindst 10 hos makker = 31 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "21 support points (14 HCP + doubleton ♦ = 1 + void ♣ = 5 + 1 extra trump) + at least 10 from partner gives 26+: game, 4♠."
+    "why": "21 support points (14 HCP + doubleton ♦ = 1 + void ♣ = 5 + 1 extra trump) + at least 10 from partner = 31 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16484,9 +15824,9 @@
    "hp": 18,
    "sp": 21,
    "correct": "4♠",
-   "why": "21 sp (18 hp + single ♦ = 3) + mindst 10 hos makker giver 26+: udgang, 4♠.",
+   "why": "21 sp (18 hp + single ♦ = 3) + mindst 10 hos makker = 31 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "21 support points (18 HCP + singleton ♦ = 3) + at least 10 from partner gives 26+: game, 4♠."
+    "why": "21 support points (18 HCP + singleton ♦ = 3) + at least 10 from partner = 31 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16516,10 +15856,10 @@
    },
    "hp": 14,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (14 hp + double ♦ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♠",
+   "why": "15 sp (14 hp + double ♦ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "15 support points (14 HCP + doubleton ♦ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (14 HCP + doubleton ♦ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16549,10 +15889,10 @@
    },
    "hp": 13,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (13 hp + double ♥ = 1 + double ♣ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♠",
+   "why": "15 sp (13 hp + double ♥ = 1 + double ♣ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "15 support points (13 HCP + doubleton ♥ = 1 + doubleton ♣ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (13 HCP + doubleton ♥ = 1 + doubleton ♣ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16582,10 +15922,10 @@
    },
    "hp": 14,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (14 hp + double ♣ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♠",
+   "why": "15 sp (14 hp + double ♣ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "15 support points (14 HCP + doubleton ♣ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (14 HCP + doubleton ♣ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16615,10 +15955,10 @@
    },
    "hp": 14,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (14 hp + double ♥ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♠",
+   "why": "15 sp (14 hp + double ♥ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "15 support points (14 HCP + doubleton ♥ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (14 HCP + doubleton ♥ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16648,10 +15988,10 @@
    },
    "hp": 13,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (13 hp + double ♥ = 1 + double ♣ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♠",
+   "why": "15 sp (13 hp + double ♥ = 1 + double ♣ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "15 support points (13 HCP + doubleton ♥ = 1 + doubleton ♣ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (13 HCP + doubleton ♥ = 1 + doubleton ♣ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16681,10 +16021,10 @@
    },
    "hp": 14,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (14 hp + double ♣ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♠",
+   "why": "15 sp (14 hp + double ♣ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "15 support points (14 HCP + doubleton ♣ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (14 HCP + doubleton ♣ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16714,10 +16054,10 @@
    },
    "hp": 14,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (14 hp + double ♦ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♠",
+   "why": "15 sp (14 hp + double ♦ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "15 support points (14 HCP + doubleton ♦ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (14 HCP + doubleton ♦ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16747,10 +16087,10 @@
    },
    "hp": 13,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (13 hp + double ♥ = 1 + double ♦ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♠",
+   "why": "15 sp (13 hp + double ♥ = 1 + double ♦ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "15 support points (13 HCP + doubleton ♥ = 1 + doubleton ♦ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (13 HCP + doubleton ♥ = 1 + doubleton ♦ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16780,10 +16120,10 @@
    },
    "hp": 13,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (13 hp + double ♥ = 1 + double ♣ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♠",
+   "why": "15 sp (13 hp + double ♥ = 1 + double ♣ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "15 support points (13 HCP + doubleton ♥ = 1 + doubleton ♣ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (13 HCP + doubleton ♥ = 1 + doubleton ♣ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16813,10 +16153,10 @@
    },
    "hp": 14,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (14 hp + double ♥ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♠",
+   "why": "15 sp (14 hp + double ♥ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "15 support points (14 HCP + doubleton ♥ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (14 HCP + doubleton ♥ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16846,10 +16186,10 @@
    },
    "hp": 13,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (13 hp + double ♥ = 1 + double ♦ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♠",
+   "why": "15 sp (13 hp + double ♥ = 1 + double ♦ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "15 support points (13 HCP + doubleton ♥ = 1 + doubleton ♦ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (13 HCP + doubleton ♥ = 1 + doubleton ♦ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16879,10 +16219,10 @@
    },
    "hp": 14,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (14 hp + double ♥ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♠",
+   "why": "15 sp (14 hp + double ♥ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "15 support points (14 HCP + doubleton ♥ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (14 HCP + doubleton ♥ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16912,10 +16252,10 @@
    },
    "hp": 13,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (13 hp + double ♥ = 1 + double ♦ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♠",
+   "why": "15 sp (13 hp + double ♥ = 1 + double ♦ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "15 support points (13 HCP + doubleton ♥ = 1 + doubleton ♦ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (13 HCP + doubleton ♥ = 1 + doubleton ♦ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16945,10 +16285,10 @@
    },
    "hp": 14,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (14 hp + double ♥ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♠",
+   "why": "15 sp (14 hp + double ♥ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "15 support points (14 HCP + doubleton ♥ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (14 HCP + doubleton ♥ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -16978,10 +16318,10 @@
    },
    "hp": 14,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (14 hp + double ♥ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♠",
+   "why": "15 sp (14 hp + double ♥ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "15 support points (14 HCP + doubleton ♥ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (14 HCP + doubleton ♥ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -17011,10 +16351,10 @@
    },
    "hp": 14,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (14 hp + double ♥ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♠",
+   "why": "15 sp (14 hp + double ♥ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "15 support points (14 HCP + doubleton ♥ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (14 HCP + doubleton ♥ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♠."
    }
   },
   {
@@ -17044,10 +16384,10 @@
    },
    "hp": 13,
    "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (13 hp + double ♥ = 1 + double ♦ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger.",
+   "correct": "4♠",
+   "why": "15 sp (13 hp + double ♥ = 1 + double ♦ = 1) + mindst 10 hos makker = 25 – 25-reglen: udgang, 4♠.",
    "en": {
-    "why": "15 support points (13 HCP + doubleton ♥ = 1 + doubleton ♦ = 1): game depends on whether partner has a minimum or a maximum – 3♦ asks."
+    "why": "15 support points (13 HCP + doubleton ♥ = 1 + doubleton ♦ = 1) + at least 10 from partner = 25 – rule of 25: game, 4♠."
    }
   }
  ]

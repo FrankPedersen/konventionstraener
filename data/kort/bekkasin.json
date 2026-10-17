@@ -234,6 +234,11 @@
   ],
   "indmelding": [
     {
+      "situation": "Modparten dobler",
+      "noegle": "bla",
+      "regel": "Bekkasin gælder fortsat: 2NT viser stadig 13+ sp og 4+ korts støtte."
+    },
+    {
       "situation": "Modparten melder ind i farve",
       "noegle": "gra",
       "regel": "Bekkasin er slået fra. Cuebid af modpartens farve er den stærke støttemelding."
@@ -523,9 +528,7 @@
     "Svarer er kaptajn: åbner beskriver kun sin hånd.",
     "Efter åbners korthed er honnører i kortfarven mindre værd."
   ],
-  "aabne": [
-    "Efter modpartens dobling: gælder Bekkasin fortsat, eller bruges Jordan 2NT (invit og opad) med redobling som 10+ hp uden støtte? Kilderne er ikke enige."
-  ],
+  "aabne": [],
   "relaterede": [
     "Omvendt Bergen",
     "Revideret omvendt Bergen",

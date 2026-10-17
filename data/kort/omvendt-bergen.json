@@ -27,7 +27,7 @@
     "tekst": "Makker åbner 1♥ eller 1♠, og modparten passer. Du har støtte til majoren.",
     "gaelderFor": "Svar på 1♥/1♠ uden indmelding i farve"
   },
-  "kortfortalt": "Med 4+ korts støtte viser 3♦ 7–10 sp og 3♣ 10–11 sp; 3M og 4M er destruktive, og 2NT er Bekkasin. Åbner tæller støttepoint og melder udgang, når parret når 26.",
+  "kortfortalt": "Med 4+ korts støtte viser 3♦ 7–10 sp og 3♣ 10–11 sp; 3M og 4M er destruktive, og 2NT er Bekkasin. Åbner tæller støttepoint og bruger 25-reglen: udgang, når parret har mindst 25 støttepoint tilsammen.",
   "meldinger": [
     {
       "bud": "Pas",
@@ -101,12 +101,14 @@
         {
           "bud": "3M",
           "noegle": "gron",
-          "viser": "Afmelding: parret når ikke 26"
+          "styrke": "Højst 14 sp",
+          "viser": "Afmelding: parret når ikke 25"
         },
         {
           "bud": "4M",
           "noegle": "gron",
-          "viser": "Udgang: parret når 26"
+          "styrke": "18+ sp",
+          "viser": "Udgang: parret når 25 selv over for 7 sp"
         },
         {
           "bud": "3♥ over 1♠",
@@ -114,7 +116,7 @@
           "viser": "Spørger: minimum (7–8 sp) eller maksimum (9–10 sp)?"
         }
       ],
-      "note": "Over 1♥ er der ikke plads til at spørge: 3♥ er afmelding, og åbner regner med 9 sp (midt i 7–10) hos makker."
+      "note": "25-reglen: over 1♠ spørger åbner med 15–17 sp. Over 1♥ er der ikke plads til at spørge: åbner regner med 9 sp (midt i 7–10) hos makker og melder 4♥ med 16+ sp (16 + 9 = 25), ellers 3♥."
     },
     {
       "titel": "Åbner efter 3♣",
@@ -144,17 +146,20 @@
         {
           "bud": "3♦",
           "noegle": "gul",
-          "viser": "Spørger: minimum (10 sp) eller maksimum (11 sp)?"
+          "styrke": "14 sp",
+          "viser": "Spørger: minimum (10 sp) eller maksimum (11 sp)? 14 + 10 = 24, men 14 + 11 = 25"
         },
         {
           "bud": "3M",
           "noegle": "gron",
-          "viser": "Afmelding"
+          "styrke": "Højst 13 sp",
+          "viser": "Afmelding: parret når ikke 25"
         },
         {
           "bud": "4M",
           "noegle": "gron",
-          "viser": "Udgang"
+          "styrke": "15+ sp",
+          "viser": "Udgang: 15 + 10 = 25"
         },
         {
           "bud": "Cuebid",
@@ -207,7 +212,7 @@
           "viser": "Maksimum: 11 sp efter 3♣, 9–10 sp efter 3♦"
         }
       ],
-      "note": "Åbner tæller støttepoint, når makker har vist støtte: doubleton 1, singleton 3, renonce 5 og 1 for en 6. trumf."
+      "note": "Åbner tæller støttepoint, når makker har vist støtte: doubleton 1, singleton 3, renonce 5 og 1 for en 6. trumf. Efter svaret melder åbner udgang, hvis parret når 25."
     }
   ],
   "indmelding": [
@@ -409,7 +414,56 @@
         ]
       },
       "svar": "3♥",
-      "forklaring": "15 sp (12 hp + single ♠ = 3) + højst 10 hos makker er under 26: afmeld i 3♥."
+      "forklaring": "15 sp (12 hp + single ♠ = 3), og der er ikke plads til at spørge: 15 + 9 (midt i makkers 7–10) = 24 – under 25: afmeld i 3♥."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11,
+          10
+        ],
+        "H": [
+          13,
+          10,
+          9,
+          6,
+          5,
+          4
+        ],
+        "D": [
+          12,
+          11,
+          5
+        ],
+        "C": [
+          14,
+          12
+        ]
+      },
+      "svar": "4♥",
+      "forklaring": "16 sp (13 hp + double ♠ = 1 + double ♣ = 1 + 1 ekstra trumf), og der er ikke plads til at spørge: 16 + 9 (midt i makkers 7–10) = 25 – 25-reglen: meld 4♥."
     },
     {
       "auction": [
@@ -436,32 +490,33 @@
       ],
       "haand": {
         "S": [
-          4,
-          2
-        ],
-        "H": [
-          13,
-          11,
-          9,
+          12,
           8,
           2
         ],
-        "D": [
+        "H": [
           14,
-          13,
-          9,
-          4
+          11,
+          10,
+          7,
+          2
+        ],
+        "D": [
+          11,
+          8
         ],
         "C": [
+          13,
           12,
-          2
+          8
         ]
       },
       "svar": "3♦",
-      "forklaring": "15 sp (13 hp + double ♠ = 1 + double ♣ = 1): udgang afhænger af, om makker har minimum eller maksimum – 3♦ spørger."
+      "forklaring": "14 sp (13 hp + double ♦ = 1): 14 + 10 = 24, men 14 + 11 = 25 – udgang afhænger af, om makker har minimum eller maksimum, så 3♦ spørger."
     }
   ],
   "faldgruber": [
+    "25-reglen, ikke 26: udgang, når parret har mindst 25 støttepoint tilsammen.",
     "3♣ og 3♦ er kunstige: de viser støtte til majoren, ikke farven.",
     "Over 1♥ er 3♥ efter 3♦ afmelding, ikke et spørgsmål.",
     "Med præcis 10 sp vælger svarer selv mellem 3♦ og 3♣.",
