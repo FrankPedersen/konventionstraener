@@ -60,11 +60,10 @@
     +     link('/fordelingstraeneren/', 'Håndevaluering', 'Hand evaluation')
     +   '</div>'
     +   '<div class="sf-kol"><h2>' + t('Aftaler og notater', 'Agreements and notes (in Danish)') + '</h2>'
-    +     link(root + 'viden/bridgesystem.html', 'Makker 1 &amp; mig', 'Partner 1 &amp; me')
-    +     link(root + 'viden/2-over-1-makker2.html', 'Makker 2 &amp; mig', 'Partner 2 &amp; me')
+    +     link(root + 'makkeraftaler.html', 'Mine makkeraftaler', 'My partnerships')
     +     link(root + 'viden/kampen-om-kontrakten.html', 'Kampen om kontrakten', 'The battle for the contract')
     +     link(root + 'viden/#forslag', 'Forslag', 'Proposals')
-    +     link(root + 'viden/#forskelle', 'Forskelle mellem systemerne', 'Differences between the systems')
+    +     link(root + 'makkeraftaler.html#forskelle', 'Forskelle mellem systemerne', 'Differences between the systems')
     +   '</div>'
     +   '<div class="sf-kol"><h2>' + t('Kontakt', 'Contact') + '</h2>'
     +     '<p>' + t('Har du fundet en fejl, eller har du en idé til en ny træner? Skriv til mig.',

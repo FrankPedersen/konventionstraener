@@ -315,18 +315,15 @@ Promise.all(['data/konventioner.json', 'data/systemer.json'].map(u => fetch(u).t
     if (!k || k.status !== 'klar' || k.side !== 'markering.html') throw new Error('ukendt');
     const ids = Array.isArray(k.system) ? k.system : [k.system];
     const names = ids.map(x => (systems.find(s => s.id === x) || {}).navn).filter(Boolean);
-    let current = null;
-    try { current = localStorage.getItem('system'); } catch (e) {}
-    backLink = `./?system=${ids.includes(current) ? current : ids[0]}#traen`;
     document.title = `${k.titel} — Konventionstræner`;
-    $('group').innerHTML = suits(`${names.join(' · ')} · ${k.gruppe}`);
+    $('group').innerHTML = suits(k.gruppe);
     $('title').innerHTML = suits(k.titel);
     $('desc').innerHTML = suits(k.beskrivelse);
     $('source').innerHTML = k.viden
       ? T(`Aftalerne står i <a href="${esc(k.viden)}">systemet for ${esc(names[0])}</a>, afsnit 9.`,
           `The agreements are in <a href="${esc(k.viden)}">the system for ${esc(names[0])}</a>, section 9 (in Danish).`)
-      : T('Lavinthal er et forslag og står endnu ikke i systemkortet. Reglerne følger <a href="viden/2-over-1-makker2.html#afsnit-20">beskrivelsen hos Makker 2 &amp; mig</a>: højt beder om den højeste af de to farver, lavt om den laveste.',
-          'Lavinthal is a proposal and is not yet in the system card. The rules follow <a href="viden/2-over-1-makker2.html#afsnit-20">the description for Partner 2 &amp; me</a> (in Danish): high asks for the higher of the two suits, low for the lower.');
+      : T('Reglerne følger <a href="viden/2-over-1-makker2.html#afsnit-20">beskrivelsen hos Makker 2 &amp; mig</a>: højt beder om den højeste af de to farver, lavt om den laveste.',
+          'The rules follow <a href="viden/2-over-1-makker2.html#afsnit-20">the description for Partner 2 &amp; me</a> (in Danish): high asks for the higher of the two suits, low for the lower.');
     return fetch(`pools/${k.id}.json`).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
   })
   .then(pool => {

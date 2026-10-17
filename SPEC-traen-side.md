@@ -2,7 +2,7 @@
 
 17. oktober 2026 · Frank
 
-Forsiden (`index.html`) får en ny struktur: alle trænere på én side, ordnet efter emne i stedet for system, med søgning og et filter pr. system. Henvisningen til aftalerne flyttes fra forsiden ned i en fælles sidefod. Alle sider får den samme sorte sidefod som www.kontraktbridge.dk. Designgrundlaget er tegnefladen "Ny struktur for trænerne" (https://claude.ai/artifact/Y9sKNd1KgmKQtHTVr2mMAw), skærmene "Konventionstræner · Træn (computer)" og "Konventionstræner · Træn (mobil)".
+Forsiden (`index.html`) får en ny struktur: alle trænere på én side, ordnet efter emne i stedet for system, med søgning. (Filteret pr. system er fjernet igen; makkerskaberne står på Mine makkeraftaler, Afklaret, punkt 24–25.) Henvisningen til aftalerne flyttes fra forsiden ned i en fælles sidefod. Alle sider får den samme sorte sidefod som www.kontraktbridge.dk. Designgrundlaget er tegnefladen "Ny struktur for trænerne" (https://claude.ai/artifact/Y9sKNd1KgmKQtHTVr2mMAw), skærmene "Konventionstræner · Træn (computer)" og "Konventionstræner · Træn (mobil)".
 
 Trænerne (`traener.html`, `markering.html`, `multi-svar-traener.html`), puljerne og hændernes data ændres ikke, bortset fra sidefoden og registreringen af "Senest trænet".
 
@@ -23,7 +23,7 @@ Før arbejdet starter:
 | `viden/` | topbjælken og sidefoden | ændre indholdet |
 | `assets/topbar.js` (ny) | topbjælken som fælles komponent (Topbjælken) | — |
 | `assets/site.css` | klasser til søgning, filter, kort og sidefod med eksisterende variabler | ændre værdien af eksisterende variabler |
-| Lagring | ny nøgle `senest` (se nedenfor); `system` læses og skrives som i dag | ændre andre nøgler |
+| Lagring | ny nøgle `senest` (se nedenfor); `system` bruges ikke længere (Afklaret, punkt 24) | ændre andre nøgler |
 | Sprog | al ny tekst på dansk og engelsk med `T()`, `data-en` og `en`-felter | dansk tekst på den engelske side |
 
 Kræver noget alligevel en ændring ud over tabellen, skal Claude Code stoppe og spørge.
@@ -36,14 +36,13 @@ Besked til Claude Code:
 
 Øverst til nederst:
 
-1. **Topbjælke** (se "Topbjælken" nedenfor): 7NT-logoet, "Kontraktbridge · Konventionstræner", Træn, Viden og English.
+1. **Topbjælke** (se "Topbjælken" nedenfor): 7NT-logoet, "Kontraktbridge · Konventionstræner", Træn, Viden, Mine makkeraftaler og English.
 2. **Indledning:** "45 trænere · 8 meldeforløb pr. runde" (tallet regnes ud fra data), overskriften "Træn konventionerne, til de sidder" og én linje: "Vælg en konvention og få 8 tilfældige meldeforløb. Nogle gange åbner eller melder du ind, andre gange svarer du makker." Linket til Viden i teksten fjernes.
 3. **Find en træner:** en hvid boks med
    - et søgefelt ("Søg", pladsholder "Stayman, Bergen, 2♣ …"), der søger i titel og beskrivelse uden forskel på store og små bogstaver
-   - filterknapper: Alle, Makker 1 & mig, Makker 2 & mig, Kampen om kontrakten og Forslag, hver med antal trænere. Den valgte er sort med hvid tekst og har `aria-pressed="true"`.
-   - når et system er valgt, en linje: "Viser trænerne for Makker 2 & mig. Aftalerne for Makker 2 & mig →" med link til systemets dokument.
-4. **Senest trænet:** en lys orange boks med op til tre knapper til de senest trænede konventioner (titel og system). Boksen vises ikke, før man har trænet noget.
-5. **Gå til:** en række knapper, ét pr. emne, der springer ned til emnet. Kun emner med trænere efter søgning og filter vises.
+   - ingen filterknapper og ingen systemlinje: Træn er neutral, og makkerskaberne står på Mine makkeraftaler (Afklaret, punkt 24–25).
+4. **Senest trænet:** en lys orange boks med op til tre knapper til de senest trænede konventioner (titlen). Boksen vises ikke, før man har trænet noget.
+5. **Gå til:** en række knapper, ét pr. emne, der springer ned til emnet. Kun emner med trænere efter søgningen vises.
 6. **Delene** med emner og kort (tabellen nedenfor). Hver del har en stor overskrift og én linje under. Hvert emne har en mellemoverskrift og antal trænere ("6 trænere").
 7. **Sidefoden** (se nedenfor).
 
@@ -51,16 +50,16 @@ Afsnittet "Viden" med kort nederst på forsiden fjernes. Viden findes stadig i t
 
 ### Kortene
 
-- Hvidt kort med hjørner 24px: mærker for systemerne øverst, titlen, to linjer af beskrivelsen og nederst rollerne til venstre ("Åbner · Svarer") og "Træn 8 →" til højre.
-- Mærkerne er "Makker 1", "Makker 2", "Kampen om kontrakten" og "Forslag". Forslag har gul baggrund, de andre grå. En konvention i flere systemer har et mærke for hvert.
+- Hvidt kort med hjørner 24px: titlen, to linjer af beskrivelsen og nederst rollerne til venstre ("Åbner · Svarer") og "Træn 8 →" til højre.
+- Kortene har ingen systemmærker (Afklaret, punkt 24).
 - Kulørerne farves som i dag (`suits()`).
 - En konvention med `status` "kommer" vises med tynd ramme, dæmpet tekst og "Kommer" i stedet for "Træn 8 →". Den er ikke et link.
 - Kortet fører til samme adresse som i dag: `side` eller `traener.html`, med `?k=<id>`.
-- Mobil: kortene vises som rækker i én hvid boks (titel, mærker og roller og en pil), som på mobilskærmen.
+- Mobil: kortene vises som rækker i én hvid boks (titel og roller og en pil), som på mobilskærmen.
 
 ### Ingen træner fundet
 
-Giver søgning og filter ingen trænere: "Ingen trænere passer. Prøv et andet ord, eller vælg Alle." og en knap "Vis alle trænere", der nulstiller begge.
+Giver søgningen ingen trænere: "Ingen trænere passer. Prøv et andet ord." og en knap "Vis alle trænere", der nulstiller søgningen.
 
 ## Dele og emner
 
@@ -90,20 +89,19 @@ Hver konvention i `data/konventioner.json` får feltet `emne`:
 - Inden for et emne står konventionerne i samme rækkefølge som i `konventioner.json`.
 - `kamp-landy` har intet system og vises ikke, som i dag. Den får `emne` `nt-konkurrence`, så den står rigtigt, hvis den senere får et system.
 - En ny konvention uden `emne` vises under en sidste del "Andet" / "Other", så den aldrig forsvinder.
-- Feltet `gruppe` bevares, fordi `traener.html` viser det i overskriften.
+- Feltet `gruppe` bevares, fordi `traener.html` viser det i overskriften (uden system, Afklaret, punkt 27).
 
-## Filter og adresse
+## Adresse
 
-- Standard er Alle.
-- `?system=kf` (eller ff, kamp, forslag) i adressen vælger systemet, så tilbage-linket fra træneren (`./?system=…#traen`) virker som i dag.
-- Valget skrives i `system` i localStorage som i dag, men forsiden starter kun med det valgte system, når det står i adressen.
-- Søgning og filter ændrer ikke adressen.
+- Tilbage-linket fra trænerne er `./#traen`. Et gammelt `?system=…` i adressen ignoreres, så gemte links stadig virker (Afklaret, punkt 24).
+- Nøglen `system` i localStorage læses og skrives ikke længere.
+- Søgningen ændrer ikke adressen.
 
 ## Senest trænet
 
 - Ny nøgle `senest` i localStorage: en liste med højst tre konvention-id'er, nyeste først, uden dubletter.
 - `traener.html` og `markering.html` skriver id'et, når en runde starter. Al adgang til localStorage står i `try/catch` som i dag.
-- Forsiden viser kun id'er, der findes og er klar. Systemet på knappen er konventionens første system.
+- Forsiden viser kun id'er, der findes og er klar. Knappen viser kun titlen (Afklaret, punkt 24).
 
 ## Topbjælken
 
@@ -111,7 +109,7 @@ Den samme sorte topbjælke øverst på alle sider: `index.html`, trænerne og si
 
 - **Fuld bredde** og helt oppe i toppen, uden afrundede hjørner og uden luft omkring. Indholdet under har sin egen margen og maks. bredde 1200 px. (På tegnefladen hedder klassen `kb-bar` uden `round`.)
 - **Venstre:** 7NT-logoet (orange meldekort, 36 × 36 px, hjørner 9 px, Manrope 800, tekst `--sg-ink`) og "Kontraktbridge" (Manrope 800, 19 px, hvid) som ét link til https://www.kontraktbridge.dk/. Derefter "· Konventionstræner" i lysegrå (#c9cdd2), som ikke er et link.
-- **Højre:** Træn og Viden som pille-links; den aktive side har `aria-current="page"` og en lys flade. Til sidst sprogknappen ("English" / "Dansk") med tynd hvid kant.
+- **Højre:** Træn, Viden og Mine makkeraftaler som pille-links; den aktive side har `aria-current="page"` og en lys flade. Til sidst sprogknappen ("English" / "Dansk") med tynd hvid kant.
 - Farver: baggrund #1a1a1a, tekst #f2f3f4, fokusring 2 px #ff9f4a.
 - **Mobil** (under 600 px): samme bjælke i den smalle udgave (`slim`): logo 30 px, navn 16 px, mindre luft. Links og sprogknap brydes ned på en ny linje, hvis der ikke er plads. Stadig fuld bredde.
 - Topbjælken vises ikke ved udskrift.
@@ -128,7 +126,7 @@ Samme sorte sidefod nederst på alle sider: `index.html`, trænerne og siderne u
 
 - **Venstre:** "Kontraktbridge" (orange, Manrope 800, link til https://www.kontraktbridge.dk/), mellemoverskriften "Om mig" og teksten: "Jeg er bridgeentusiast med forkærlighed for spillets kognitive udfordringer og det gode fællesskab omkring bordet. Jeg elsker at skabe og forbedre ting – og med AI som ny medspiller har jeg bygget et digitalt bridge-univers, der kombinerer logik, læring og spilleglæde."
 - **Kolonnen Trænere:** Konventionstræner, Fordeling, Pointregnskab, Farvebehandling og Håndevaluering. De fire sidste fører til `/fordelingstraeneren/`.
-- **Kolonnen Aftaler og notater:** Makker 1 & mig, Makker 2 & mig, Kampen om kontrakten, Forslag og Forskelle mellem systemerne (`viden/#forskelle`).
+- **Kolonnen Aftaler og notater:** Mine makkeraftaler (`makkeraftaler.html`), Kampen om kontrakten, Forslag og Forskelle mellem systemerne (`makkeraftaler.html#forskelle`) (Afklaret, punkt 25).
 - **Kolonnen Kontakt:** "Har du fundet en fejl, eller har du en idé til en ny træner? Skriv til mig." og frank.steen.pedersen@gmail.com som `mailto:`-link i orange.
 - **Nederst** under en streg: "© 2026 Frank Pedersen".
 - Farver: baggrund `--sg-ink`, tekst `--sg-canvas-soft`, navn og mail `--sg-primary`, hjørner 24px, margen 48px × 24px.
@@ -141,9 +139,9 @@ Samme sorte sidefod nederst på alle sider: `index.html`, trænerne og siderne u
 - [ ] Hvert kort fører til samme adresse som før (`traener.html?k=…` eller `markering.html?k=…`).
 - [ ] Alle konventioner, der vises i dag, vises stadig, og ingen vises to gange.
 - [ ] Hver konvention har et `emne`, og emnerne står i rækkefølgen i `data/emner.json`.
-- [ ] Filteret viser det rigtige antal pr. system, og en konvention i to systemer tæller i begge.
+- [ ] Træn har intet filter og ingen systemmærker; Mine makkeraftaler linker til alle klar-trænere i hvert makkerskab.
 - [ ] Søgning på "bergen" viser Omvendt Bergen og Revideret omvendt Bergen; søgning på "2♣" virker.
-- [ ] `?system=ff` vælger Makker 2 & mig, og tilbage-linket fra træneren virker.
+- [ ] Tilbage-linket fra træneren fører til `./#traen`, og et gammelt `?system=ff` giver den almindelige side.
 - [ ] "Senest trænet" viser de tre senest startede konventioner og vises ikke for en ny bruger.
 - [ ] Siden virker uden localStorage (privat vindue).
 - [ ] Sidefoden står ens på alle sider og vises ikke ved udskrift.
@@ -155,15 +153,15 @@ Samme sorte sidefod nederst på alle sider: `index.html`, trænerne og siderne u
 
 Claude Codes gennemgang og Franks svar (17. oktober 2026):
 
-1. **Tællingen:** indledningen tæller de konventioner, der er klar og har et system (45). Filterknapperne og emnernes antal tæller også dem med status "kommer" (Alle 47, Forslag 6, Åbninger 6), som på tegnefladen (Franks valg) (Opbygning af forsiden).
+1. **Tællingen:** indledningen tæller de konventioner, der er klar og har et system (45). Filterknapperne og emnernes antal tæller også dem med status "kommer" (Alle 47, Forslag 6, Åbninger 6), som på tegnefladen (Franks valg) (Opbygning af forsiden). Filterknapperne er fjernet igen (punkt 24); emnernes antal tæller stadig sådan.
 2. **Multitræneren** (`multi-svar-traener.html`) får sidefoden og skriver `multiforsvar` i `senest`, når en runde starter. På forsiden står den derfor som "Multiforsvar mod 1NT", og knappen åbner `traener.html?k=multiforsvar` (Franks valg). Siden er kun på dansk, så sidefoden står på dansk dér (Afgrænsning, Senest trænet).
 3. **Sidefoden pr. app:** udseendet er det samme som på www.kontraktbridge.dk, men kolonnerne følger hver apps spec. Konventionstræneren har Trænere med fem links og Aftaler og notater; Fordelingstræneren har kolonnerne i SPEC-forside-spor.md (Franks valg) (Sidefoden).
 4. **Tegnefladens mobilskærm:** sidefoden og den korte indledning dér er en ældre udgave. Computerskærmens sidefod og specens indledning gælder på begge skærme.
 5. **Kortene** åbner i samme vindue. Tegnefladens nye faner skyldes kun tegnefladen (Kortene).
 6. **Mobil:** rækkerne i én hvid boks bruges under 600 px, samme grænse som i `assets/site.css` (Kortene).
-7. **`#traen`** står på boksen "Find en træner", så tilbage-linket fra træneren lander dér (Filter og adresse).
+7. **`#traen`** står på boksen "Find en træner", så tilbage-linket fra træneren lander dér (Adresse).
 8. **Søgningen** søger i titel og beskrivelse på sidens sprog.
-9. **Systemlinjen for Forslag:** "Viser trænerne for Forslag. Læs forslagene →" / "Showing the trainers for Proposals. Read the proposals (in Danish) →", fordi "Aftalerne for Forslag" lyder skævt. På engelsk får alle links til aftalerne "(in Danish)" som i dag.
+9. **Systemlinjen for Forslag:** "Viser trænerne for Forslag. Læs forslagene →" / "Showing the trainers for Proposals. Read the proposals (in Danish) →", fordi "Aftalerne for Forslag" lyder skævt. På engelsk får alle links til aftalerne "(in Danish)" som i dag. Systemlinjen er fjernet igen (punkt 24).
 10. **Sidefoden og Word-eksporten:** sidefoden står uden for `<main>`, så `doc-export.js` ikke tager den med i Word-filen (Sidefoden).
 11. **Relative links i sidefoden:** `assets/footer.js` finder sitets rod ud fra sin egen adresse, så linkene til aftalerne virker både fra roden og fra `viden/` (Sidefoden).
 12. **Data:** alle 47 viste konventioner står i emnetabellen præcis én gang; kun `kamp-landy` mangler og får `nt-konkurrence` som beskrevet (Dele og emner).
@@ -184,3 +182,13 @@ Engelsk på de sidste sider – Franks beslutning (17. oktober 2026):
 
 22. **Viden-oversigten og multitræneren findes nu på engelsk** med sprogknap i topbjælken. Systemdokumenterne (ca. 32.000 ord) forbliver på dansk og står med "in Danish" i Viden-oversigten og "(in Danish)" ved links til aftalerne. Multitrænerens spørgsmål har `en`-felter i samme ordlyd som puljen `pools/multiforsvar.json` (HCP, support points, pass or correct, suggests penalty); meldingerne har et `data-call`, så knappen kan hedde "Pass" på engelsk.
 23. **Konventionstræneren hedder "Convention trainer"** i sidefodens link på engelsk, som på hubsiden og i Fordelingstræneren. I topbjælken står navnet "Konventionstræner" som appens navn på begge sprog (punkt 14).
+
+Neutral Træn-side og Mine makkeraftaler – Franks beslutning (17. oktober 2026):
+
+24. **Træn er neutral** og kan bruges af alle: ingen filterknapper, ingen systemlinje og ingen systemmærker på kortene. Alle 47 trænere står stadig under deres emner, også dem, der var forslag (Flannery, Revers, 2♣ med kontrolsvar, Lavinthal). "Senest trænet" viser kun titlen. Forsiden bruger ikke længere `system` i localStorage, og et `?system=` i adressen ignoreres (Franks valg: "Fjern filteret og mærket").
+25. **Mine makkeraftaler** (`makkeraftaler.html`) er en ny side og det tredje punkt i topmenuen ("My partnerships" på engelsk, med sprogknap). For hvert makkerskab (Makker 1 & mig, Makker 2 & mig) står navnet og kendetegnene fra `data/systemer.json`. Under "Aftaler og notater" står dokumenterne fra `data/viden.json`. Under "Trænere" står links til alle systemets trænere, grupperet efter emne; trænere med status "kommer" står uden link. Tabellen "Forskelle mellem systemerne" er flyttet hertil fra Viden (`#forskelle`) (Franks valg: "Egen side i topmenuen").
+26. **Viden** hedder nu "Referencer og notater" og viser Kampen om kontrakten, Forslag og Notater med et link til Mine makkeraftaler. Makkerskabernes systemdokumenter står kun på Mine makkeraftaler. Notatet "Standard 2 over 1 i dansk version" står begge steder. Kampen om kontrakten har ingen filtre på Træn (Franks valg: "Nej, ingen filtre"). Linket "Træn emnerne →" i dokumentet fører til `../#traen`.
+27. **Trænersiderne** viser kun gruppen øverst, fx "Modspil" i stedet for "Makker 1 & mig · Forslag · Modspil". Kildelinjen nederst ("Aftalerne står i systemet for Makker 2 & mig") bliver stående, fordi den fortæller, hvor reglerne kommer fra. Tilbage-linket er `./#traen` (Claude Codes valg, så trænerne også er neutrale).
+28. **Data:** tekster i `data/konventioner.json`, der nævnte makkerskab eller forslag, er gjort neutrale på dansk og engelsk. `gruppe` "2♦-åbninger (Makker 2 & mig, bilag B)" er blevet til "2♦-åbninger" og "Forslag (Makker 2 & mig, bilag G)" til "Videre meldeforløb". Beskrivelserne af Two over One udgangskrav ("– ikke 10+ som hos Makker 1 & mig"), Lavinthal ("Forslag – trænes, før det skrives ind i systemkortet.") og Revers ("Diskussionsoplæg, ikke vedtaget:") har mistet de dele. Sammenligningen står i Forskelle-tabellen. Feltet `system` er uændret, fordi Mine makkeraftaler og Viden bruger det (Claude Codes valg).
+29. **Systemdokumenterne** `viden/bridgesystem.html` og `viden/2-over-1-makker2.html` markerer Mine makkeraftaler som aktivt punkt i topbjælken. De øvrige dokumenter under `viden/` markerer Viden.
+30. **Mobil:** under 600 px har topbjælkens links og sprogknap lidt mindre luft, så de står på én linje ved 390 px på begge sprog. Under ca. 380 px brydes sprogknappen ned på en ny linje. Lange trænertitler på Mine makkeraftaler må bryde linjen, så intet ruller vandret ved 320 px.

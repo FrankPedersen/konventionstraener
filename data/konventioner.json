@@ -282,7 +282,7 @@
   "titel": "Two over One udgangskrav",
   "gruppe": "Videre meldeforløb",
   "emne": "videre",
-  "beskrivelse": "Ny farve på 2-trinnet: 13+ hp og udgangskrav – ikke 10+ som hos Makker 1 & mig.",
+  "beskrivelse": "Ny farve på 2-trinnet: 13+ hp og udgangskrav.",
   "roller": [
    "Åbner",
    "Svarer"
@@ -292,7 +292,7 @@
   "en": {
    "titel": "Two over One game forcing",
    "gruppe": "Further bidding",
-   "beskrivelse": "A new suit at the two level: 13+ HCP and game forcing – not 10+ as for Partner 1 & me."
+   "beskrivelse": "A new suit at the two level: 13+ HCP and game forcing."
   }
  },
  {
@@ -584,7 +584,7 @@
   "id": "ff-flannery",
   "system": "forslag",
   "titel": "Flannery",
-  "gruppe": "2♦-åbninger (Makker 2 & mig, bilag B)",
+  "gruppe": "2♦-åbninger",
   "emne": "aabninger",
   "beskrivelse": "2♦ viser præcis 5 hjerter og 4 spar, 11–15 hp (2♥ i B4-pakken). Træn åbningen, svarene på 2♦ og åbners svar på 2NT-spørgsmålet.",
   "roller": [
@@ -595,7 +595,7 @@
   "viden": "viden/2-over-1-makker2.html#afsnit-b1",
   "en": {
    "titel": "Flannery",
-   "gruppe": "2♦ openings (Partner 2 & me, appendix B)",
+   "gruppe": "2♦ openings",
    "beskrivelse": "2♦ shows exactly 5 hearts and 4 spades, 11–15 HCP (2♥ in the B4 package). Practise the opening, the responses to 2♦ and opener's answers to the 2NT ask."
   }
  },
@@ -603,7 +603,7 @@
   "id": "ff-multi-2ru",
   "system": "forslag",
   "titel": "Multi 2♦",
-  "gruppe": "2♦-åbninger (Makker 2 & mig, bilag B)",
+  "gruppe": "2♦-åbninger",
   "emne": "aabninger",
   "beskrivelse": "Svag 2 i en ukendt major; svarer melder pas-eller-ret.",
   "roller": [
@@ -614,7 +614,7 @@
   "viden": "viden/2-over-1-makker2.html#afsnit-b2",
   "en": {
    "titel": "Multi 2♦",
-   "gruppe": "2♦ openings (Partner 2 & me, appendix B)",
+   "gruppe": "2♦ openings",
    "beskrivelse": "A weak two in an unknown major; responder bids pass-or-correct."
   }
  },
@@ -622,7 +622,7 @@
   "id": "ff-muiderberg",
   "system": "forslag",
   "titel": "Muiderberg 2♠",
-  "gruppe": "2♦-åbninger (Makker 2 & mig, bilag B)",
+  "gruppe": "2♦-åbninger",
   "emne": "aabninger",
   "beskrivelse": "5 spar og en 4+ minor, 5–10 hp.",
   "roller": [
@@ -633,7 +633,7 @@
   "viden": "viden/2-over-1-makker2.html#afsnit-b4",
   "en": {
    "titel": "Muiderberg 2♠",
-   "gruppe": "2♦ openings (Partner 2 & me, appendix B)",
+   "gruppe": "2♦ openings",
    "beskrivelse": "5 spades and a 4+ minor, 5–10 HCP."
   }
  },
@@ -641,9 +641,9 @@
   "id": "ff-revers",
   "system": "forslag",
   "titel": "Revers",
-  "gruppe": "Forslag (Makker 2 & mig, bilag G)",
+  "gruppe": "Videre meldeforløb",
   "emne": "videre",
-  "beskrivelse": "Diskussionsoplæg, ikke vedtaget: ny højere farve billigst muligt på nyt niveau som 16+ og rundekrav. Træn åbners valg mellem revers og gentaget farve, og svarers anden melding efter 1♣/1♦ – 1♠ – 2♥.",
+  "beskrivelse": "Ny højere farve billigst muligt på nyt niveau som 16+ og rundekrav. Træn åbners valg mellem revers og gentaget farve, og svarers anden melding efter 1♣/1♦ – 1♠ – 2♥.",
   "roller": [
    "Åbner",
    "Svarer"
@@ -652,8 +652,8 @@
   "viden": "viden/2-over-1-makker2.html#afsnit-g",
   "en": {
    "titel": "Reverses",
-   "gruppe": "Proposals (Partner 2 & me, appendix G)",
-   "beskrivelse": "A discussion paper, not adopted: a new higher suit at the cheapest level as 16+ and forcing for one round. Practise opener's choice between a reverse and a rebid suit, and responder's second bid after 1♣/1♦ – 1♠ – 2♥."
+   "gruppe": "Further bidding",
+   "beskrivelse": "A new higher suit at the cheapest level as 16+ and forcing for one round. Practise opener's choice between a reverse and a rebid suit, and responder's second bid after 1♣/1♦ – 1♠ – 2♥."
   }
  },
  {
@@ -938,7 +938,7 @@
   "titel": "Lavinthal",
   "gruppe": "Modspil",
   "emne": "modspil",
-  "beskrivelse": "Forslag – trænes, før det skrives ind i systemkortet. Trumfning og retur, død udspilsfarve og Lavinthal-afkast: højt beder om den højeste af de to farver, lavt om den laveste.",
+  "beskrivelse": "Trumfning og retur, død udspilsfarve og Lavinthal-afkast: højt beder om den højeste af de to farver, lavt om den laveste.",
   "roller": [
    "Modspiller"
   ],
@@ -951,7 +951,7 @@
   "en": {
    "titel": "Lavinthal",
    "gruppe": "Defence",
-   "beskrivelse": "A proposal – to be practised before it goes into the system card. Ruff and return, dead lead suit and Lavinthal discards: high asks for the higher of the two suits, low for the lower."
+   "beskrivelse": "Ruff and return, dead lead suit and Lavinthal discards: high asks for the higher of the two suits, low for the lower."
   }
  }
 ]

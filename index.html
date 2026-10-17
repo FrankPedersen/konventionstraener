@@ -29,8 +29,6 @@
       <label for="sog" data-en="Search">Søg</label>
       <input id="sog" type="search" placeholder="Stayman, Bergen, 2♣ …" autocomplete="off" spellcheck="false">
     </div>
-    <div class="filter" role="group" id="filter"></div>
-    <p class="sysline" id="sysline" hidden></p>
   </section>
 
   <section class="senest" id="senest" aria-labelledby="senest-titel" hidden>
@@ -45,7 +43,7 @@
 
   <section class="tomt" id="tomt" aria-labelledby="tomt-titel" hidden>
     <h2 id="tomt-titel" data-en="No trainers match">Ingen trænere passer</h2>
-    <p data-en="Try another word, or choose All.">Prøv et andet ord, eller vælg Alle.</p>
+    <p data-en="Try another word.">Prøv et andet ord.</p>
     <button class="knap" type="button" id="nulstil" data-en="Show all trainers">Vis alle trænere</button>
   </section>
 
@@ -61,45 +59,31 @@ function esc(s){ return String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;', '<':'&
 function suits(s){
   return esc(s).replace(/[♠♥♦♣]/g, c => `<span class="su ${c === '♥' || c === '♦' ? 'su-h' : 'su-s'}">${c}</span>`);
 }
-function store(v){ try { localStorage.setItem('system', v); } catch (e) {} }
 function recent(){ try { const a = JSON.parse(localStorage.getItem('senest') || '[]'); return Array.isArray(a) ? a : []; } catch (e) { return []; } }
 
+// Træn er neutral (Afklaret 24): ingen filtre og ingen systemmærker; makkerskaberne står på Mine makkeraftaler.
 const ROUND_SIZE = 8;
-let SYSTEMS = [], SHOWN = [], PARTS = [], SYS = 'alle';
+let SHOWN = [], PARTS = [];
 const $ = id => document.getElementById(id);
 const systemsOf = k => (Array.isArray(k.system) ? k.system : [k.system]).filter(Boolean);
-const sysById = id => SYSTEMS.find(s => s.id === id);
-// Mærket på kortet: systemets navn uden » & mig« (Makker 1, Makker 2, Kampen om kontrakten, Forslag)
-const badge = id => ((sysById(id) || {}).navn || '').replace(/ & (mig|me)$/, '');
 const href = k => `${k.side || 'traener.html'}?k=${encodeURIComponent(k.id)}`;
 const count = n => n === 1 ? T('1 træner', '1 trainer') : `${n} ${T('trænere', 'trainers')}`;
 const query = () => $('sog').value.trim().toLowerCase();
-const inSystem = (k, id) => id === 'alle' || systemsOf(k).includes(id);
-const matches = (k, q) => inSystem(k, SYS) && (!q || `${k.titel} ${k.beskrivelse}`.toLowerCase().includes(q));
+const matches = (k, q) => !q || `${k.titel} ${k.beskrivelse}`.toLowerCase().includes(q);
 
 function card(k){
-  const tags = systemsOf(k).map(id => `<span class="badge${id === 'forslag' ? ' forslag' : ''}">${esc(badge(id))}</span>`).join('');
-  const body = `<span class="kort-tags">${tags}</span><h4 class="kort-titel">${suits(k.titel)}</h4>`
+  const body = `<h4 class="kort-titel">${suits(k.titel)}</h4>`
     + `<p class="kort-tekst">${suits(k.beskrivelse)}</p><span class="kort-roller">${k.roller.map(r => esc(W(r))).join(' · ')}</span>`;
   return k.status === 'klar'
     ? `<a class="kort" href="${esc(href(k))}">${body}<span class="kort-cta"><span class="tekst">${T('Træn 8', 'Practise 8')} </span><span aria-hidden="true">→</span></span></a>`
     : `<div class="kort kommer">${body}<span class="kort-cta">${T('Kommer', 'Coming')}</span></div>`;
 }
 
-function renderFilter(){
-  const all = [{ id: 'alle', navn: T('Alle', 'All') }].concat(SYSTEMS);
-  $('filter').innerHTML = all.map(s => `<button type="button" class="chip" data-id="${esc(s.id)}" aria-pressed="${s.id === SYS}">`
-    + `${esc(s.navn)}<span class="n">${SHOWN.filter(k => inSystem(k, s.id)).length}</span></button>`).join('');
-  const sys = sysById(SYS);
-  $('sysline').hidden = !sys;
-  if (sys) $('sysline').innerHTML = `${T('Viser trænerne for', 'Showing the trainers for')} ${esc(sys.navn)}. <a href="${esc(sys.viden)}">`
-    + `${sys.id === 'forslag' ? T('Læs forslagene', 'Read the proposals') : T('Aftalerne for ', 'The agreements for ') + esc(sys.navn)}${T('', ' (in Danish)')} →</a>`;
-}
-
 function renderRecent(){
   const ks = recent().map(id => SHOWN.find(k => k.id === id)).filter(k => k && k.status === 'klar').slice(0, 3);
   $('senest').hidden = !ks.length;
-  $('senestListe').innerHTML = ks.map(k => `<a class="pill" href="${esc(href(k))}">${suits(k.titel)}<span class="sys">${esc(badge(systemsOf(k)[0]))}</span></a>`).join('');
+  // Titlen i én span: ellers bliver hver farve et flex-element, og mellemrummene omkring den forsvinder
+  $('senestListe').innerHTML = ks.map(k => `<a class="pill" href="${esc(href(k))}"><span>${suits(k.titel)}</span></a>`).join('');
 }
 
 function renderTrainers(){
@@ -121,31 +105,18 @@ function renderTrainers(){
     </section>`).join('');
 }
 
-function render(){ renderFilter(); renderTrainers(); }
-
-Promise.all(['data/systemer.json', 'data/konventioner.json', 'data/emner.json'].map(u => fetch(u).then(r => r.json())))
-  .then(([systems, conventions, parts]) => {
-    SYSTEMS = L(systems);
+Promise.all(['data/konventioner.json', 'data/emner.json'].map(u => fetch(u).then(r => r.json())))
+  .then(([conventions, parts]) => {
     // Kun konventioner med et system vises; kamp-landy har intet system og vises ikke, som før
     SHOWN = L(conventions).filter(k => systemsOf(k).length);
     const known = new Set();
     PARTS = L(parts).map(p => ({ ...p, emner: p.emner.map(e => (known.add(e.id), { ...e, match: k => k.emne === e.id })) }));
     // En konvention uden et kendt emne står under en sidste del, så den aldrig forsvinder
     PARTS.push({ id: 'andet', navn: T('Andet', 'Other'), linje: '', emner: [{ id: 'andet-emne', navn: T('Uden emne', 'Without a topic'), match: k => !known.has(k.emne) }] });
-    const p = new URLSearchParams(location.search).get('system');
-    if (sysById(p)) SYS = p;
     $('optaelling').textContent = `${count(SHOWN.filter(k => k.status === 'klar').length)} · ${ROUND_SIZE} ${T('meldeforløb pr. runde', 'auctions per round')}`;
-    $('filter').setAttribute('aria-label', T('Vis trænere fra', 'Show trainers from'));
-    $('filter').addEventListener('click', e => {
-      const b = e.target.closest('button[data-id]');
-      if (!b) return;
-      SYS = b.dataset.id;
-      if (SYS !== 'alle') store(SYS);
-      render();
-    });
     $('sog').addEventListener('input', renderTrainers);
-    $('nulstil').addEventListener('click', () => { SYS = 'alle'; $('sog').value = ''; render(); $('sog').focus(); });
-    render();
+    $('nulstil').addEventListener('click', () => { $('sog').value = ''; renderTrainers(); $('sog').focus(); });
+    renderTrainers();
     renderRecent();
   })
   .catch(() => {

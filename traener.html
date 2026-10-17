@@ -515,11 +515,8 @@ Promise.all(['data/konventioner.json', 'data/systemer.json'].map(u => fetch(u).t
     if (!k || k.status !== 'klar') throw new Error('ukendt');
     const ids = Array.isArray(k.system) ? k.system : [k.system];
     const sys = ids.length > 1 ? { navn: T('Fælles', 'Shared') } : systems.find(x => x.id === ids[0]);
-    let current = null;
-    try { current = localStorage.getItem('system'); } catch (e) {}
-    backLink = `./?system=${ids.includes(current) ? current : ids[0]}#traen`;
     document.title = `${k.titel} — Konventionstræner`;
-    $('group').innerHTML = suits(sys ? `${sys.navn} · ${k.gruppe}` : k.gruppe);
+    $('group').innerHTML = suits(k.gruppe);
     $('title').innerHTML = suits(k.titel);
     $('desc').innerHTML = suits(k.beskrivelse);
     if (k.layout === 'bord'){ LAYOUT = 'bord'; boardEl.classList.add('compact'); }

@@ -1,6 +1,6 @@
 /* Topbjælken – den samme sorte bjælke øverst på alle sider i Konventionstræneren (SPEC-traen-side.md, Topbjælken).
    Siden har et tomt <header id="topbjaelke"> som første element i <body> og henter dette script lige efter:
-     data-aktiv="traen" | "viden"   hvilket menupunkt der er den aktive side
+     data-aktiv="traen" | "viden" | "makker"   hvilket menupunkt der er den aktive side
      data-sprog                     sprogknappen vises (kun sider, der findes på engelsk; lang.js giver den sin funktion)
      data-traen="#traen"            adressen på Træn, når siden selv er forsiden
    Al tekst og stil står kun her. Adresserne regnes relativt ud fra scriptets egen adresse som i footer.js. */
@@ -35,7 +35,7 @@
     + '#topbjaelke a:focus-visible,#topbjaelke button:focus-visible{outline:2px solid #ff9f4a;outline-offset:2px}'
     + '@media (max-width:600px){#topbjaelke .kb-bar{padding:8px 12px;gap:8px}'
     + '#topbjaelke .kb-logo{width:30px;height:30px;border-radius:8px;font-size:11px}#topbjaelke .kb-name{font-size:16px}'
-    + '#topbjaelke .kb-app::before{margin:0 6px 0 8px}#topbjaelke .kb-links a{padding:8px 12px}}'
+    + '#topbjaelke .kb-app::before{margin:0 6px 0 8px}#topbjaelke .kb-links{gap:2px}#topbjaelke .kb-links a{padding:8px 10px}#topbjaelke .kb-lang{margin-left:4px;padding:0 10px}}'
     + '@media print{#topbjaelke{display:none}}';
   var style = document.createElement('style');
   style.id = 'topbjaelke-stil';
@@ -53,6 +53,7 @@
     + '<div class="kb-links">'
     +   punkt('traen', traen, 'Træn', 'Train')
     +   punkt('viden', root + 'viden/', 'Viden', 'Reference')
+    +   punkt('makker', root + 'makkeraftaler.html', 'Mine makkeraftaler', 'My partnerships')
     +   (el.hasAttribute('data-sprog') ? '<button class="kb-lang" id="langBtn" type="button">' + t('English', 'Dansk') + '</button>' : '')
     + '</div></nav>';
 })();
