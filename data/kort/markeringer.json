@@ -1,0 +1,552 @@
+{
+  "skabelon": "konvention/2",
+  "type": "modspil",
+  "id": "markeringer",
+  "navn": "Markeringer",
+  "undertitel": "Kald, antal og afkast med kortets højde",
+  "kilde": "Bridgesystem v1.7 · afsnit 9.1–9.2 · træneren pools/markeringer.json",
+  "kategori": "modspil",
+  "noegle": "kald",
+  "formaal": "At fortælle makker med kortets højde, om farven skal fortsættes, hvor mange kort du har, og hvilken farve du ikke vil have.",
+  "situation": {
+    "tekst": "Når makker spiller ud eller skifter farve, når spilfører spiller en ny farve, og ved dit første afkast.",
+    "gaelderFor": "Es- og konge-udspil, spilførers nye farve og første afkast mod farve og sans"
+  },
+  "kortfortalt": "Lavt kort betyder kald efter es-udspil og ved første afkast mod farve, men lige antal efter konge-udspil og når spilfører spiller en ny farve (Malmø). Mod sans kaster du i den farve, du ikke er interesseret i.",
+  "meldinger": [
+    {
+      "gruppe": "Makker spiller ud eller skifter farve"
+    },
+    {
+      "kort": "Lavt kort",
+      "noegle": "kald",
+      "viser": "Kald: fortsæt farven. Kald med damen – mod farvekontrakt også med doubleton"
+    },
+    {
+      "kort": "Højt kort",
+      "noegle": "afvis",
+      "viser": "Afvisning: skift farve"
+    },
+    {
+      "gruppe": "Makker spiller konge ud"
+    },
+    {
+      "kort": "Lavt kort",
+      "noegle": "antal",
+      "viser": "Lige antal (2 eller 4)"
+    },
+    {
+      "kort": "Højt kort",
+      "noegle": "antal",
+      "viser": "Ulige antal (3 eller 5)"
+    },
+    {
+      "gruppe": "Spilfører spiller en ny farve (Malmø)"
+    },
+    {
+      "kort": "Lavt kort",
+      "noegle": "antal",
+      "viser": "Lige antal"
+    },
+    {
+      "kort": "Højt kort",
+      "noegle": "antal",
+      "viser": "Ulige antal"
+    },
+    {
+      "gruppe": "Første afkast mod farvekontrakt"
+    },
+    {
+      "kort": "Lavt kort",
+      "noegle": "kald",
+      "viser": "Kald: spil farven"
+    },
+    {
+      "kort": "Højt kort",
+      "noegle": "afvis",
+      "viser": "Afvisning: farven er uønsket"
+    },
+    {
+      "gruppe": "Første afkast mod sans"
+    },
+    {
+      "kort": "Afkast i en farve",
+      "noegle": "afvis",
+      "viser": "Farven er uinteressant – værdierne beholdes i de andre farver"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Udspilleren læser kaldet",
+      "meldinger": [
+        {
+          "kort": "Lavt kort",
+          "noegle": "kald",
+          "viser": "Makker har damen eller (mod farve) en doubleton: fortsæt farven"
+        },
+        {
+          "kort": "Højt kort",
+          "noegle": "afvis",
+          "viser": "Makker har hverken damen eller en doubleton: skift farve"
+        }
+      ],
+      "note": "Lavt og højt aflæses ud fra de kort, du ikke selv kan se."
+    },
+    {
+      "titel": "Makker læser antallet",
+      "meldinger": [
+        {
+          "kort": "Lavt kort",
+          "noegle": "antal",
+          "viser": "Lige antal (2 eller 4)"
+        },
+        {
+          "kort": "Højt kort",
+          "noegle": "antal",
+          "viser": "Ulige antal (3 eller 5)"
+        }
+      ]
+    },
+    {
+      "titel": "Makker læser afkastet",
+      "meldinger": [
+        {
+          "kort": "Lavt afkast mod farve",
+          "noegle": "kald",
+          "viser": "Makker vil have farven"
+        },
+        {
+          "kort": "Højt afkast mod farve",
+          "noegle": "afvis",
+          "viser": "Makker vil ikke have farven"
+        },
+        {
+          "kort": "Afkast mod sans",
+          "noegle": "afvis",
+          "viser": "Makker er ikke interesseret i farven"
+        }
+      ]
+    }
+  ],
+  "indmelding": [
+    {
+      "situation": "Konge-udspil",
+      "noegle": "antal",
+      "regel": "Antal i stedet for kald: lavt = lige, højt = ulige."
+    },
+    {
+      "situation": "Doubleton mod sans",
+      "noegle": "afvis",
+      "regel": "Ingen kald uden damen. Doubleton giver kun kald mod farvekontrakt, hvor du kan trumfe i tredje runde."
+    },
+    {
+      "situation": "Afvisning",
+      "noegle": "gra",
+      "regel": "Afvis med det højeste kort, du har råd til."
+    }
+  ],
+  "eksempler": [
+    {
+      "kontrakt": "4♥",
+      "trumf": "H",
+      "du": "Øst",
+      "bordet": {
+        "S": [
+          10,
+          7,
+          4,
+          3
+        ],
+        "H": [
+          14,
+          13,
+          10,
+          8,
+          4
+        ],
+        "D": [
+          4,
+          2
+        ],
+        "C": [
+          6,
+          5
+        ]
+      },
+      "haand": {
+        "S": [
+          9,
+          8,
+          6
+        ],
+        "H": [
+          12,
+          2
+        ],
+        "D": [
+          12,
+          8,
+          6,
+          3
+        ],
+        "C": [
+          11,
+          8,
+          7,
+          4
+        ]
+      },
+      "stik": [
+        [
+          "Vest",
+          "D14"
+        ],
+        [
+          "Nord",
+          "D2"
+        ]
+      ],
+      "tekst": "Kontrakten er 4♥ af Syd. Makker spiller ♦E ud, og bordet lægger ♦2.",
+      "svar": "D3",
+      "forklaring": "Du har damen (♦ D 8 6 3): kald med det laveste kort, ♦3 – lavt = kald."
+    },
+    {
+      "kontrakt": "4♠",
+      "trumf": "S",
+      "du": "Øst",
+      "bordet": {
+        "S": [
+          11,
+          10,
+          8,
+          4,
+          2
+        ],
+        "H": [
+          11,
+          8,
+          6
+        ],
+        "D": [
+          13,
+          11
+        ],
+        "C": [
+          14,
+          10,
+          6
+        ]
+      },
+      "haand": {
+        "S": [
+          13,
+          6,
+          5
+        ],
+        "H": [
+          9,
+          5
+        ],
+        "D": [
+          8,
+          7,
+          5,
+          2
+        ],
+        "C": [
+          9,
+          5,
+          4,
+          3
+        ]
+      },
+      "stik": [
+        [
+          "Vest",
+          "H14"
+        ],
+        [
+          "Nord",
+          "H6"
+        ]
+      ],
+      "tekst": "Kontrakten er 4♠ af Syd. Makker spiller ♥E ud, og bordet lægger ♥6.",
+      "svar": "H5",
+      "forklaring": "Doubleton mod farvekontrakt – du kan trumfe i tredje runde: kald med det laveste kort, ♥5."
+    },
+    {
+      "kontrakt": "4♠",
+      "trumf": "S",
+      "du": "Øst",
+      "bordet": {
+        "S": [
+          9,
+          4,
+          2
+        ],
+        "H": [
+          11,
+          5
+        ],
+        "D": [
+          9,
+          8,
+          7,
+          6,
+          5
+        ],
+        "C": [
+          10,
+          8,
+          5
+        ]
+      },
+      "haand": {
+        "S": [
+          11,
+          10
+        ],
+        "H": [
+          9,
+          8,
+          7,
+          6,
+          4
+        ],
+        "D": [
+          11,
+          2
+        ],
+        "C": [
+          13,
+          12,
+          9,
+          3
+        ]
+      },
+      "stik": [
+        [
+          "Vest",
+          "H13"
+        ],
+        [
+          "Nord",
+          "H5"
+        ]
+      ],
+      "tekst": "Kontrakten er 4♠ af Syd. Makker spiller ♥K ud, og bordet lægger ♥5. Konge-udspil beder om antal.",
+      "svar": "H9",
+      "forklaring": "Du har 5 hjerter – ulige antal: læg det højeste, ♥9 (højt = ulige)."
+    },
+    {
+      "kontrakt": "4♠",
+      "trumf": "S",
+      "du": "Øst",
+      "bordet": {
+        "S": [
+          14,
+          12,
+          7,
+          6,
+          4
+        ],
+        "H": [
+          13,
+          12,
+          10,
+          2
+        ],
+        "D": [
+          7,
+          4
+        ],
+        "C": [
+          8,
+          3
+        ]
+      },
+      "haand": {
+        "S": [
+          9,
+          2
+        ],
+        "H": [
+          11,
+          4
+        ],
+        "D": [
+          9,
+          5
+        ],
+        "C": [
+          14,
+          13,
+          12,
+          11,
+          9,
+          5,
+          2
+        ]
+      },
+      "stik": [
+        [
+          "Nord",
+          "D4"
+        ]
+      ],
+      "tekst": "Kontrakten er 4♠ af Syd. Bordet vandt udspillet og spiller nu en ny farve: ♦4.",
+      "svar": "D5",
+      "forklaring": "Du har 2 ruder – lige antal: læg det laveste, ♦5 (lavt = lige)."
+    },
+    {
+      "kontrakt": "4♠",
+      "trumf": "S",
+      "du": "Øst",
+      "bordet": {
+        "S": [
+          11,
+          7,
+          4
+        ],
+        "H": [
+          12,
+          11,
+          6,
+          2
+        ],
+        "D": [
+          12,
+          10,
+          8,
+          3
+        ],
+        "C": [
+          5,
+          2
+        ]
+      },
+      "haand": {
+        "S": [],
+        "H": [
+          14,
+          13,
+          10,
+          9,
+          7,
+          5
+        ],
+        "D": [
+          5,
+          2
+        ],
+        "C": [
+          9,
+          7,
+          6,
+          4,
+          3
+        ]
+      },
+      "stik": [
+        [
+          "Syd",
+          "S14"
+        ],
+        [
+          "Vest",
+          "S3"
+        ],
+        [
+          "Nord",
+          "S4"
+        ]
+      ],
+      "tekst": "Kontrakten er 4♠ af Syd. Spilfører vandt udspillet og spiller trumf, og du kan ikke bekende – det er dit første afkast.",
+      "svar": "H5",
+      "forklaring": "Du vil have hjerter spillet (♥ E K 10 9 7 5): kald med et lavt kort i farven, ♥5 – lavt = kald. Du kan også afvise en farve, du ikke vil have, med et højt kort, fx ♣9."
+    },
+    {
+      "kontrakt": "3NT",
+      "trumf": null,
+      "du": "Øst",
+      "bordet": {
+        "S": [
+          14,
+          13,
+          10,
+          9,
+          8
+        ],
+        "H": [],
+        "D": [
+          11,
+          3
+        ],
+        "C": [
+          14,
+          13,
+          12,
+          9,
+          8,
+          7
+        ]
+      },
+      "haand": {
+        "S": [
+          12,
+          5,
+          3
+        ],
+        "H": [
+          13,
+          12,
+          6,
+          5,
+          4,
+          3,
+          2
+        ],
+        "D": [],
+        "C": [
+          6,
+          4,
+          2
+        ]
+      },
+      "stik": [
+        [
+          "Syd",
+          "D12"
+        ],
+        [
+          "Vest",
+          "D2"
+        ],
+        [
+          "Nord",
+          "D3"
+        ]
+      ],
+      "tekst": "Kontrakten er 3NT af Syd. Spilfører vandt udspillet og spiller sin lange farve, ruder, og du kan ikke bekende – det er dit første afkast.",
+      "svar": "C2",
+      "forklaring": "Klør er din uinteressante farve – ingen honnører (♣ 6 4 2). Mod sans kaster du i den, og beholder spar og hjerter, hvor du har værdier."
+    }
+  ],
+  "faldgruber": [
+    "Konge-udspil beder om antal, ikke kald.",
+    "Doubleton giver kun kald mod farvekontrakt.",
+    "Mod sans er afkastet negativt: du kaster i den farve, du ikke vil have, og beholder værdierne.",
+    "Afvis med det højeste kort, du har råd til, så makker kan se det."
+  ],
+  "aabne": [
+    "Lavinthal kan erstatte kald og antal i bestemte situationer, så kortets højde viser farvevalg i stedet."
+  ],
+  "relaterede": [
+    "Udspil",
+    "Lavinthal"
+  ],
+  "traener": {
+    "url": "markering.html?k=markeringer",
+    "pool": "pools/markeringer.json"
+  }
+}
