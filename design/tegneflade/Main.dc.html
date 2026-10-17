@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Konventionstræner – Træn</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="ds/subtlegradient/tokens.css">
+<link rel="stylesheet" href="ds/subtlegradient/components/bundle.css">
+<script src="ds/subtlegradient/components/bundle.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#f2f3f4}
+a{color:#1a1a1a}a:hover{color:#0f0f0f}
+.kt-card{flex:1 1 auto;text-decoration:none;transition:box-shadow .12s ease}
+.kt-card:hover{box-shadow:inset 0 0 0 1px var(--ink)}
+.kt-card:focus-visible,.kt-row:focus-visible,.kt-chip:focus-visible,.kt-jump:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.kt-card .sg-card-body{flex:1 1 auto;display:flex;flex-direction:column}
+.kt-row:hover{background:var(--canvas-soft)}
+.kt-chip:hover,.kt-jump:hover{box-shadow:inset 0 0 0 1px var(--ink)}
+</style>
+</helmet>
+<div style="min-height: 100vh; box-sizing: border-box; background: var(--canvas-soft); color: var(--ink); font-family: var(--font-sans); font-size: 16px; line-height: 24px; padding: 24px clamp(16px, 3vw, 40px) 48px;">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px;">
+
+  <x-import component-from-global-scope="SubtleGradient.NavBar" brand="Konventionstræner" links="{{navLinks}}" aria-label="Hovedmenu">
+    <x-import component-from-global-scope="SubtleGradient.Button" variant="secondary" lang="en">English</x-import>
+  </x-import>
+
+  <header style="display: flex; flex-direction: column; gap: 12px; padding-top: 8px;">
+    <span style="font-size: 14px; line-height: 20px; font-weight: 600; color: var(--body);">45 trænere · 8 meldeforløb pr. runde</span>
+    <h1 style="margin: 0; font-family: var(--font-display); font-weight: 800; font-size: clamp(34px, 4.4vw, 56px); line-height: 1; letter-spacing: -0.02em; color: var(--ink);">Træn konventionerne, til de sidder</h1>
+    <p style="margin: 0; max-width: 640px; font-size: 18px; line-height: 28px; color: var(--body);">Vælg en konvention og få 8 tilfældige meldeforløb. Nogle gange åbner eller melder du ind, andre gange svarer du makker.</p>
+  </header>
+
+  <section aria-label="Find en træner" style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 16px 24px; padding: 24px; background: var(--canvas); border-radius: 24px;">
+    <x-import component-from-global-scope="SubtleGradient.TextInput" label="Søg" type="search" placeholder="Stayman, Bergen, 2♣ …" value="{{q}}" on-change="{{onSearch}}" style="flex: 1 1 260px; max-width: 360px;"></x-import>
+    <div role="group" aria-label="Vis trænere fra" style="display: flex; flex-wrap: wrap; gap: 8px; flex: 1 1 560px;">
+      <sc-for list="{{chips}}" as="chip" hint-placeholder-count="5">
+        <sc-if value="{{chip.on}}" hint-placeholder-val="{{false}}">
+          <button type="button" aria-pressed="true" onClick="{{chip.pick}}" class="kt-chip" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 0; border-radius: 9999px; background: var(--ink); color: var(--canvas); font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 600; cursor: pointer;">{{chip.label}}<span style="font-weight: 400; color: var(--primary-active);">{{chip.count}}</span></button>
+        </sc-if>
+        <sc-if value="{{chip.off}}" hint-placeholder-val="{{true}}">
+          <button type="button" aria-pressed="false" onClick="{{chip.pick}}" class="kt-chip" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 0; border-radius: 9999px; background: var(--canvas-soft); color: var(--ink); font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 600; cursor: pointer;">{{chip.label}}<span style="font-weight: 400; color: var(--body);">{{chip.count}}</span></button>
+        </sc-if>
+      </sc-for>
+    </div>
+    <sc-if value="{{showSysLink}}" hint-placeholder-val="{{false}}">
+      <p style="flex: 1 1 100%; margin: 0; font-size: 14px; line-height: 20px; color: var(--body);">Viser trænerne for {{sysName}}. <a href="{{sysHref}}" target="_blank" rel="noopener" style="font-weight: 600; color: var(--ink);">Aftalerne for {{sysName}} →</a></p>
+    </sc-if>
+  </section>
+
+  <x-import component-from-global-scope="SubtleGradient.Card" variant="warm" as="section" aria-label="Senest trænet" style="display: flex; flex-direction: column;">
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px;">
+      <span style="font-size: 14px; line-height: 20px; font-weight: 600; color: var(--ink); margin-right: 4px;">Senest trænet</span>
+      <sc-for list="{{recent}}" as="r" hint-placeholder-count="3">
+        <a href="{{r.href}}" target="_blank" rel="noopener" class="kt-jump" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 9999px; background: var(--canvas); color: var(--ink); text-decoration: none; font-size: 14px; line-height: 20px; font-weight: 600;"><x-import component-from-global-scope="SubtleGradient.SuitText">{{r.t}}</x-import><span style="font-weight: 400; color: var(--body);">{{r.sys}}</span></a>
+      </sc-for>
+    </div>
+  </x-import>
+
+  <nav aria-label="Emner" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px;">
+    <span style="font-size: 14px; line-height: 20px; color: var(--body); margin-right: 6px;">Gå til</span>
+    <sc-for list="{{jump}}" as="tp" hint-placeholder-count="10">
+      <a href="#{{tp.id}}" class="kt-jump" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border-radius: 9999px; background: var(--canvas); color: var(--ink); text-decoration: none; font-size: 14px; line-height: 20px; font-weight: 600;">{{tp.name}}</a>
+    </sc-for>
+  </nav>
+
+  <sc-if value="{{empty}}" hint-placeholder-val="{{false}}">
+    <x-import component-from-global-scope="SubtleGradient.EmptyState" title="Ingen trænere passer" action-label="Vis alle trænere" on-action="{{reset}}">Prøv et andet ord, eller vælg Alle.</x-import>
+  </sc-if>
+
+  <sc-for list="{{sections}}" as="sec" hint-placeholder-count="3">
+    <section aria-labelledby="{{sec.hid}}" style="display: flex; flex-direction: column; gap: 32px; padding-top: 16px;">
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <h2 id="{{sec.hid}}" style="margin: 0; font-family: var(--font-display); font-weight: 800; font-size: clamp(28px, 3.2vw, 40px); line-height: 1; letter-spacing: -0.015em; color: var(--ink);">{{sec.name}}</h2>
+        <p style="margin: 0; font-size: 16px; line-height: 24px; color: var(--body);">{{sec.lead}}</p>
+      </div>
+      <sc-for list="{{sec.topics}}" as="tp" hint-placeholder-count="4">
+        <div id="{{tp.id}}" style="display: flex; flex-direction: column; gap: 16px; scroll-margin-top: 24px;">
+          <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px;">
+            <h3 style="margin: 0; font-size: 20px; line-height: 28px; font-weight: 600; letter-spacing: -0.01em; color: var(--ink);">{{tp.name}}</h3>
+            <span style="font-size: 14px; line-height: 20px; color: var(--body);">{{tp.countText}}</span>
+          </div>
+
+          <sc-if value="{{cards}}" hint-placeholder-val="{{true}}">
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 16px;">
+              <sc-for list="{{tp.items}}" as="it" hint-placeholder-count="3">
+                <sc-if value="{{it.klar}}" hint-placeholder-val="{{true}}">
+                  <x-import component-from-global-scope="SubtleGradient.Card" as="a" href="{{it.href}}" target="_blank" rel="noopener" class="kt-card" style="display: flex;">
+                    <div style="display: flex; flex-direction: column; gap: 12px; flex: 1 1 auto;">
+                      <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                        <sc-for list="{{it.tags}}" as="tag" hint-placeholder-count="1">
+                          <x-import component-from-global-scope="SubtleGradient.Badge" tone="{{tag.tone}}">{{tag.label}}</x-import>
+                        </sc-for>
+                      </div>
+                      <h4 style="margin: 0; font-size: 18px; line-height: 24px; font-weight: 600; letter-spacing: -0.01em; color: var(--ink);"><x-import component-from-global-scope="SubtleGradient.SuitText">{{it.t}}</x-import></h4>
+                      <div style="font-size: 14px; line-height: 20px; color: var(--body); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;"><x-import component-from-global-scope="SubtleGradient.SuitText">{{it.d}}</x-import></div>
+                      <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; padding-top: 4px; font-size: 14px; line-height: 20px;">
+                        <span style="color: var(--body);">{{it.roles}}</span>
+                        <span style="font-weight: 600; color: var(--ink); white-space: nowrap;">Træn 8 →</span>
+                      </div>
+                    </div>
+                  </x-import>
+                </sc-if>
+                <sc-if value="{{it.soon}}" hint-placeholder-val="{{false}}">
+                  <div style="display: flex; flex-direction: column; gap: 12px; padding: 24px; border-radius: 24px; box-shadow: inset 0 0 0 1px rgba(26, 26, 26, 0.16);">
+                    <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                      <sc-for list="{{it.tags}}" as="tag" hint-placeholder-count="1">
+                        <x-import component-from-global-scope="SubtleGradient.Badge" tone="{{tag.tone}}">{{tag.label}}</x-import>
+                      </sc-for>
+                    </div>
+                    <h4 style="margin: 0; font-size: 18px; line-height: 24px; font-weight: 600; letter-spacing: -0.01em; color: var(--body);"><x-import component-from-global-scope="SubtleGradient.SuitText">{{it.t}}</x-import></h4>
+                    <div style="font-size: 14px; line-height: 20px; color: var(--body);"><x-import component-from-global-scope="SubtleGradient.SuitText">{{it.d}}</x-import></div>
+                    <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; padding-top: 4px; font-size: 14px; line-height: 20px; color: var(--body);">
+                      <span>{{it.roles}}</span>
+                      <span>Kommer</span>
+                    </div>
+                  </div>
+                </sc-if>
+              </sc-for>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{list}}" hint-placeholder-val="{{false}}">
+            <div style="display: flex; flex-direction: column; gap: 2px; padding: 8px; background: var(--canvas); border-radius: 24px;">
+              <sc-for list="{{tp.items}}" as="it" hint-placeholder-count="3">
+                <sc-if value="{{it.klar}}" hint-placeholder-val="{{true}}">
+                  <a href="{{it.href}}" target="_blank" rel="noopener" class="kt-row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 12px 16px; border-radius: 16px; color: var(--ink); text-decoration: none;">
+                    <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column;">
+                      <span style="font-size: 16px; line-height: 24px; font-weight: 600;"><x-import component-from-global-scope="SubtleGradient.SuitText">{{it.t}}</x-import></span>
+                      <span style="font-size: 14px; line-height: 20px; color: var(--body); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><x-import component-from-global-scope="SubtleGradient.SuitText">{{it.d}}</x-import></span>
+                    </div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                      <sc-for list="{{it.tags}}" as="tag" hint-placeholder-count="1">
+                        <x-import component-from-global-scope="SubtleGradient.Badge" tone="{{tag.tone}}">{{tag.label}}</x-import>
+                      </sc-for>
+                    </div>
+                    <span style="flex: 0 0 auto; min-width: 72px; text-align: right; font-size: 14px; line-height: 20px; font-weight: 600;">Træn 8 →</span>
+                  </a>
+                </sc-if>
+                <sc-if value="{{it.soon}}" hint-placeholder-val="{{false}}">
+                  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 12px 16px; border-radius: 16px; color: var(--body);">
+                    <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column;">
+                      <span style="font-size: 16px; line-height: 24px; font-weight: 600;"><x-import component-from-global-scope="SubtleGradient.SuitText">{{it.t}}</x-import></span>
+                      <span style="font-size: 14px; line-height: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><x-import component-from-global-scope="SubtleGradient.SuitText">{{it.d}}</x-import></span>
+                    </div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                      <sc-for list="{{it.tags}}" as="tag" hint-placeholder-count="1">
+                        <x-import component-from-global-scope="SubtleGradient.Badge" tone="{{tag.tone}}">{{tag.label}}</x-import>
+                      </sc-for>
+                    </div>
+                    <span style="flex: 0 0 auto; min-width: 72px; text-align: right; font-size: 14px; line-height: 20px;">Kommer</span>
+                  </div>
+                </sc-if>
+              </sc-for>
+            </div>
+          </sc-if>
+        </div>
+      </sc-for>
+    </section>
+  </sc-for>
+
+  <footer id="om-mig" class="sg-footer" style="margin-top: 32px;">
+    <div class="sg-footer-top">
+      <div style="display: flex; flex-direction: column; gap: 12px; max-width: 420px;">
+        <a class="sg-footer-name" href="https://www.kontraktbridge.dk/" style="text-decoration: none;">Kontraktbridge</a>
+        <h2 style="margin: 8px 0 0; font-size: 18px; line-height: 24px; font-weight: 600; color: var(--canvas-soft);">Om mig</h2>
+        <p style="margin: 0; font-size: 16px; line-height: 24px; color: var(--canvas-soft);">Jeg er bridgeentusiast med forkærlighed for spillets kognitive udfordringer og det gode fællesskab omkring bordet. Jeg elsker at skabe og forbedre ting – og med AI som ny medspiller har jeg bygget et digitalt bridge-univers, der kombinerer logik, læring og spilleglæde.</p>
+      </div>
+      <div class="sg-footer-cols">
+        <div class="sg-footer-col">
+          <span class="sg-footer-col-title">Trænere</span>
+          <a class="sg-footer-link" href="https://frankpedersen.github.io/konventionstraener/">Konventionstræner</a>
+          <a class="sg-footer-link" href="https://frankpedersen.github.io/fordelingstraeneren/">Fordeling</a>
+          <a class="sg-footer-link" href="https://frankpedersen.github.io/fordelingstraeneren/">Pointregnskab</a>
+          <a class="sg-footer-link" href="https://frankpedersen.github.io/fordelingstraeneren/">Farvebehandling</a>
+          <a class="sg-footer-link" href="https://frankpedersen.github.io/fordelingstraeneren/">Håndevaluering</a>
+        </div>
+        <div class="sg-footer-col">
+          <span class="sg-footer-col-title">Aftaler og notater</span>
+          <a class="sg-footer-link" href="https://frankpedersen.github.io/konventionstraener/viden/bridgesystem.html">Makker 1 &amp; mig</a>
+          <a class="sg-footer-link" href="https://frankpedersen.github.io/konventionstraener/viden/2-over-1-makker2.html">Makker 2 &amp; mig</a>
+          <a class="sg-footer-link" href="https://frankpedersen.github.io/konventionstraener/viden/kampen-om-kontrakten.html">Kampen om kontrakten</a>
+          <a class="sg-footer-link" href="https://frankpedersen.github.io/konventionstraener/viden/#forslag">Forslag</a>
+          <a class="sg-footer-link" href="https://frankpedersen.github.io/konventionstraener/viden/#forskelle">Forskelle mellem systemerne</a>
+        </div>
+        <div class="sg-footer-col" style="max-width: 240px;">
+          <span class="sg-footer-col-title">Kontakt</span>
+          <span>Har du fundet en fejl, eller har du en idé til en ny træner? Skriv til mig.</span>
+          <a class="sg-footer-link" href="mailto:frank.steen.pedersen@gmail.com" style="color: var(--primary); font-weight: 600;">frank.steen.pedersen@gmail.com</a>        </div>
+      </div>
+    </div>
+    <div class="sg-footer-legal">© 2026 Frank Pedersen</div>
+  </footer>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"visning":{"editor":"enum","options":["kort","liste"],"default":"kort","section":"Visning"},"$preview":{"width":1280,"height":6100}}'>
+class Component extends DCLogic {
+  constructor(...args) {
+    super(...args);
+    this.state = Object.assign({ sys: 'alle', q: '' }, this.state || {});
+  }
+  renderVals() {
+    const BASE = 'https://frankpedersen.github.io/konventionstraener/';
+    const SYS = {
+      kf: { badge: 'Makker 1', name: 'Makker 1 & mig', doc: 'viden/bridgesystem.html' },
+      ff: { badge: 'Makker 2', name: 'Makker 2 & mig', doc: 'viden/2-over-1-makker2.html' },
+      kamp: { badge: 'Kampen om kontrakten', name: 'Kampen om kontrakten', doc: 'viden/kampen-om-kontrakten.html' },
+      forslag: { badge: 'Forslag', name: 'Forslag', doc: 'viden/#forslag' }
+    };
+    const SECTIONS = [
+      { id: 'fred', name: 'Åbninger og svar', lead: 'Åbninger, svar, støtte og videre meldeforløb – flere af trænerne tager også modpartens indmeldinger med.' },
+      { id: 'konk', name: 'Konkurrence', lead: 'Når modparten melder med – før eller efter os.' },
+      { id: 'slem', name: 'Slem og modspil', lead: 'Nøglekort, kontroller og markeringer.' }
+    ];
+    const TOPICS = [
+      { sec: 'fred', id: 'aabninger', name: 'Åbninger', items: [
+        { id: 'ff-2kl', t: '2♣ stærkåbning og 2♦ waiting', d: '20+ hp; 2♦ waiting eller positivt svar, åbners genmelding og svarers 2. melding med det andet negative.', s: ['ff'], r: ['Åbner', 'Svarer'], k: true },
+        { id: 'ff-ogust', t: 'Ogust 2NT og svar på svag 2', d: 'Åbners svar på Ogust (1-2-1-2-3) og svarers valg over svag 2: Ogust, ny farve eller spærring efter Loven.', s: ['ff'], r: ['Åbner', 'Svarer'], k: true },
+        { id: 'forslag-2kl-kontrolsvar', t: '2♣ med kontrolsvar', d: 'Tæl kontroller (es = 2, konge = 1) og svar på makkers 2♣ – eller vis en god farve med overføring. Åbners sansmeldinger, kontrolvisning og svar efter indmelding.', s: ['forslag'], r: ['Åbner', 'Svarer'], k: true },
+        { id: 'ff-flannery', t: 'Flannery', d: '2♦ viser præcis 5 hjerter og 4 spar, 11–15 hp (2♥ i B4-pakken). Træn åbningen, svarene på 2♦ og åbners svar på 2NT-spørgsmålet.', s: ['forslag'], r: ['Åbner', 'Svarer'], k: true },
+        { id: 'ff-multi-2ru', t: 'Multi 2♦', d: 'Svag 2 i en ukendt major; svarer melder pas-eller-ret.', s: ['forslag'], r: ['Åbner', 'Svarer'], k: false },
+        { id: 'ff-muiderberg', t: 'Muiderberg 2♠', d: '5 spar og en 4+ minor, 5–10 hp.', s: ['forslag'], r: ['Åbner', 'Svarer'], k: false }
+      ] },
+      { sec: 'fred', id: 'svar-1nt', name: 'Svar på 1NT', items: [
+        { id: 'stayman', t: 'Stayman', d: '2♣ over makkers 1NT spørger efter en 4-farve i major; åbner melder en 5-farve, som var det en 4-farve.', s: ['kf'], r: ['Åbner', 'Svarer'], k: true },
+        { id: 'transfer', t: 'Transfer', d: '2♦/2♥ transfer til major (superaccept med 4-korts støtte og 17 hp), 2♠ minortransfer til klør, 3♣ til ruder.', s: ['kf'], r: ['Åbner', 'Svarer'], k: true },
+        { id: 'ff-ass', t: 'Amerikansk Stayman (ASS)', d: '2♣ over 1NT er mindst invit og undersøger åbners hele majorfordeling: 2♦ 4-farve, 2♥/2♠ præcis 5-farve, 2NT/3NT ingen – og svarers krydsvendte fortsættelse.', s: ['ff'], r: ['Åbner', 'Svarer'], k: true },
+        { id: 'ff-overfoeringer', t: 'Overføringer', d: '2♦/2♥ til major med superaccept, 2♠/3♣ til minor som flugt – og svarers 2. melding: pas, 2NT/3M invit eller udgang.', s: ['ff'], r: ['Åbner', 'Svarer'], k: true },
+        { id: 'ff-gerber', t: 'Gerber og sansstigen', d: 'Svarers sansstige over 1NT (pas, 2NT, 3NT, 4NT, 6NT, 5NT, 7NT) og åbners svar på Gerber 4♣ og kongespørgsmålet 5♣.', s: ['ff'], r: ['Spørger', 'Svarer'], k: true }
+      ] },
+      { sec: 'fred', id: 'stoette', name: 'Støtte', items: [
+        { id: 'omvendt-bergen', t: 'Omvendt Bergen', d: 'Støtte til 1♥/1♠: 3♦ 7–10 sp og 3♣ 10–11 sp med 4+ · 3M og 4M destruktive. Som åbner: afmeld, spørg eller meld udgang efter 25-reglen.', s: ['kf'], r: ['Åbner', 'Svarer'], k: true },
+        { id: 'ff-revideret-omvendt-bergen', t: 'Revideret omvendt Bergen', d: 'Støtte til 1♥/1♠: 2M 6–9 sp · 3♣ 10–12 sp med præcis 3 kort · 3♦ 10–12 sp med 4+ · 3M og 4M spærrende.', s: ['ff'], r: ['Åbner', 'Svarer'], k: true },
+        { id: 'bekkasin', t: 'Bekkasin 2NT', d: '13+ sp og 4+ korts støtte. Som åbner: minimum, tillæg eller korthed. Som svarer: 3♦-spørgsmål eller cuebid ved slemambition.', s: ['kf', 'ff'], r: ['Åbner', 'Svarer'], k: true },
+        { id: 'ff-trial-bids', t: 'Longsuit trial bids', d: 'Ny farve efter 1M – 2M beder om hjælp i farven.', s: ['ff'], r: ['Åbner', 'Svarer'], k: true },
+        { id: 'ff-omvendt-minor', t: 'Omvendt minor', d: '2 i åbningsfarven er stærk støtte (10+ sp), 3 i farven spærrende.', s: ['ff'], r: ['Åbner', 'Svarer'], k: true }
+      ] },
+      { sec: 'fred', id: 'videre', name: 'Videre meldeforløb', items: [
+        { id: 'ff-two-over-one', t: 'Two over One udgangskrav', d: 'Ny farve på 2-trinnet: 13+ hp og udgangskrav – ikke 10+ som hos Makker 1 & mig.', s: ['ff'], r: ['Åbner', 'Svarer'], k: true },
+        { id: 'ff-fast-arrival', t: 'Fast og slow arrival', d: 'I udgangskrav betyder hurtig udgang minimum, langsom ankomst tillæg.', s: ['ff'], r: ['Åbner', 'Svarer'], k: true },
+        { id: 'ff-staerke-genmeldinger', t: 'Åbners stærke genmeldinger og 3♣ checkback', d: 'Ny højere farve på 2-trinnet er naturlig, 5-4, 12–18 hp og ikke krav (foreløbig – bekræftes); spring i ny farve er 19–21 og udgangskrav. 3♣ checkback efter åbners 2NT-genmelding.', s: ['ff'], r: ['Åbner', 'Svarer'], k: true },
+        { id: 'xy-sans', t: 'xy sans', d: 'Efter 1♣/1♦ – 1♠ – 1NT: pas, stop, 2♣ relæ eller 2♦ udgangskrav – svarers beskrivelse efter relæet og åbners trinsvar på 2♦.', s: ['kf', 'ff'], r: ['Åbner', 'Svarer'], k: true },
+        { id: 'fjerde-farve', t: 'Fjerde farve krav', d: 'Efter 1♣/1♦ – 1♥ – 1♠: svarer bruger fjerde farve uden fit og hold, og åbner svarer i rækkefølgen støtte, sans, egen farve, fjerde farve.', s: ['kf', 'ff'], r: ['Åbner', 'Svarer'], k: true },
+        { id: 'ff-revers', t: 'Revers', d: 'Diskussionsoplæg, ikke vedtaget: ny højere farve billigst muligt på nyt niveau som 16+ og rundekrav. Træn åbners valg mellem revers og gentaget farve, og svarers anden melding efter 1♣/1♦ – 1♠ – 2♥.', s: ['forslag'], r: ['Åbner', 'Svarer'], k: true }
+      ] },
+      { sec: 'konk', id: 'nt-konkurrence', name: '1NT i konkurrence', items: [
+        { id: 'multiforsvar', t: 'Multiforsvar mod 1NT', d: 'Modstanderen åbner 1NT. Meld ind med D (straf), 2♣–2NT eller 3♣/3♦ – eller svar på makkers indmelding.', s: ['kf'], r: ['Indmelder', 'Svarer'], k: true },
+        { id: 'ff-dont', t: 'DONT mod 1NT', d: 'D = én lang farve, 2♣/2♦ = farven + en højere, 2♥ = majorerne, 2NT = minorerne.', s: ['ff'], r: ['Indmelder', 'Svarer'], k: true },
+        { id: 'kamp-forsvar-1ut', t: 'Forsvar mod 1NT', d: 'Vælg jeres forsvar mod modstandernes 1NT – Landy, DONT eller Multi – før hænderne vises. Du er skiftevis indmelder og svarer.', s: ['kamp'], r: ['Indmelder', 'Svarer'], k: true },
+        { id: 'kamp-1ut-indmeldt', t: 'Fjenden melder 1NT ind', d: 'Efter makkers åbning og deres 1NT: dobling er straf og stærkest (9+), støtte naturlig, spring destruktivt og ny farve den svageste melding.', s: ['kamp'], r: ['Svarer'], k: true },
+        { id: 'kamp-1ut-forsvar', t: 'Indmelding over vores 1NT', d: 'Stayman og transfers bortfalder: ny farve billigst = at spille, spring = krav, fjendens farve søger hold – og Lebensohl i Turnering. Plus flugt efter strafdobling.', s: ['kamp'], r: ['Svarer'], k: true }
+      ] },
+      { sec: 'konk', id: 'indmeldinger', name: 'Indmeldinger og genåbning', items: [
+        { id: 'michaels', t: 'Michaels cuebid', d: 'Overmelding i åbners farve: over 1♣/1♦ begge majorer, over 1♥/1♠ den anden major og en minor – mindst 5-5, 8–15 eller 17+. Og svarerens valg.', s: ['kf'], r: ['Indmelder', 'Svarer'], k: true },
+        { id: 'ff-michaels', t: 'Michaels cuebid og usædvanlig 2NT', d: 'To-farvede indmeldinger, mindst 5-5, 8–15 hp eller 17+.', s: ['ff'], r: ['Indmelder', 'Svarer'], k: true },
+        { id: 'usaedvanlig-2nt', t: 'Usædvanlig 2NT', d: '2NT viser de to laveste umeldte farver, mindst 5-5, 8–15 eller 17+. Svarer vælger farve med svag hånd og cuebidder med god.', s: ['kf'], r: ['Indmelder', 'Svarer'], k: true },
+        { id: 'ff-genaabning', t: 'Genåbning i 4. hånd', d: 'Lån ca. 3 hp af makker: dobling, ny farve, 1NT 11–14, 2NT eller cuebid – og makkers svar efter devaluering.', s: ['ff'], r: ['Genåbner', 'Svarer'], k: true },
+        { id: 'kamp-gif', t: 'GIF – genåbning i fjerde hånd', d: 'Lån 3–4 hp på ujævne hænder: dobling fra 9 hp, farve 7–14, konstruktive spring. Jævne hænder: pas under 11, 1NT 11–14, X 15–18, 2NT 19–21.', s: ['kamp'], r: ['Genåbner'], k: true },
+        { id: 'kamp-2020', t: '20-20 – kampen om delkontrakten', d: 'Sælg ikke ud under 2♠, når de har fundet tilpasning – og meld efter trumfreglen og zonen, når I selv kæmper videre.', s: ['kamp'], r: ['Fjerde hånd', 'Åbner'], k: true }
+      ] },
+      { sec: 'konk', id: 'doblinger', name: 'Doblinger', items: [
+        { id: 'ff-doblinger', t: 'Negativ dobling, støttedobling og redobling', d: 'Negativ dobling og åbners svar, støttedobling og svarerens meldinger efter dobling af makkers åbning (redobling, Jordan 2NT).', s: ['ff'], r: ['Åbner', 'Svarer'], k: true },
+        { id: 'kamp-doblinger', t: 'Doblinger – position og oplysende', d: 'Oplysningsdobling i anden hånd kræver 12–17, doblinger er oplysende når de har støttet hinanden, og med én umeldt farve viser doblingen den og medløb.', s: ['kamp'], r: ['Anden hånd', 'Fjerde hånd', 'Fortsætter'], k: true },
+        { id: 'lebensohl', t: 'Lebensohl', d: 'Makker har doblet deres svage 2: 2-trinnet svagt, 2NT relæ med lavere farve, 3-trinnet invit, 3NT med hold, cuebid udgangskrav.', s: ['kf'], r: ['Svarer'], k: true },
+        { id: 'ff-lebensohl', t: 'Lebensohl mod svag 2', d: 'Mod svag 2♥/2♠: højere farve svagt, 2NT relæ til 3♣ (svag lavere farve – eller invit med spar over 2♥), lavere farve direkte på 3-trinnet invit, 3♠ direkte udgangskrav, 3NT naturligt.', s: ['ff'], r: ['Dobler', 'Svarer'], k: true },
+        { id: 'ff-kravpas', t: 'Kravpas og Loven', d: 'Loven om det samlede antal stik i støtte- og konkurrenceforløb – og næsekravpas, hvor åbner genåbner med dobling.', s: ['ff'], r: ['Åbner', 'Svarer'], k: true }
+      ] },
+      { sec: 'konk', id: 'stoette-konkurrence', name: 'Støtte i konkurrence', items: [
+        { id: 'kamp-stoette-def', t: 'Støtte efter makkers indmelding', d: 'Enkeltstøtte 3 trumf, spring 4 trumf, udgang 5 trumf – alle 6–9. Med 10+ og støtte meldes fjendens farve. Spring i ny farve er udgangskrav.', s: ['kamp'], r: ['Fortsætter'], k: true },
+        { id: 'kamp-stoette-off', t: 'Støtte efter indmelding over makkers åbning', d: '2M, 3M og 4M viser 3, 4 og 5 trumf (6–9), fjendens farve 10+ med støtte, negativ dobling – og Stenberg 2NT i Turnering.', s: ['kamp'], r: ['Svarer'], k: true },
+        { id: 'kamp-stoette-minor', t: 'Minorstøtte og negativ dobling', d: 'Én trumf mere end i major på hvert trin, og majoren vises først. Efter 1♦ (1♠) lover doblingen fire eller flere hjerter.', s: ['kamp'], r: ['Svarer'], k: true },
+        { id: 'kamp-efter-od', t: 'Efter modpartens oplysningsdobling', d: 'Støtterne viser antal trumf, 2NT firkortstøtte 10+, XX 10+ uden firkortstøtte, 1♠ rundekrav og konstruktiv seksfarve i minor.', s: ['kamp'], r: ['Svarer'], k: true }
+      ] },
+      { sec: 'slem', id: 'slem', name: 'Slem', items: [
+        { id: 'cuebids', t: 'Cuebids', d: 'Enhver kontrol – es, konge, singleton eller renonce – billigst muligt. Svarer cuebidder efter åbners tillæg i Bekkasin, og åbner svarer med sin billigste kontrol.', s: ['kf', 'ff'], r: ['Åbner', 'Svarer'], k: true },
+        { id: '1430', t: '1430 og trumfdame', d: 'Svar på 4NT (1430) og på spørgsmålet efter trumfdamen: billigste genmelding, billigste konge eller 5NT (dame uden konger).', s: ['kf'], r: ['Åbner', 'Svarer'], k: true },
+        { id: 'ff-1430', t: 'RKC 1430, trumfdame og konger', d: 'Svar på 4NT (5 nøglekort som 5♥/5♠), damespørgsmålet og 5NT-kongespørgsmålet.', s: ['ff'], r: ['Spørger', 'Svarer'], k: true }
+      ] },
+      { sec: 'slem', id: 'modspil', name: 'Modspil', items: [
+        { id: 'markeringer', t: 'Markeringer', d: 'Lavt = kald efter es-udspil, antal efter konge-udspil og når spilfører spiller en ny farve (Malmø: lavt = lige), og første afkast mod farve og sans. Giv eller læs markeringen.', s: ['kf'], r: ['Modspiller'], k: true, u: 'markering.html' },
+        { id: 'lavinthal', t: 'Lavinthal', d: 'Forslag – trænes, før det skrives ind i systemkortet. Trumfning og retur, død udspilsfarve og Lavinthal-afkast: højt beder om den højeste af de to farver, lavt om den laveste.', s: ['kf', 'forslag'], r: ['Modspiller'], k: true, u: 'markering.html' }
+      ] }
+    ];
+
+    const st = this.state || {};
+    const sys = st.sys || 'alle';
+    const query = st.q || '';
+    const q = query.trim().toLowerCase();
+    const visning = this.props.visning ?? 'kort';
+
+    const all = TOPICS.reduce((acc, tp) => acc.concat(tp.items), []);
+    const inSys = (it, id) => id === 'alle' || it.s.indexOf(id) >= 0;
+    const matches = (it) => inSys(it, sys) && (!q || (it.t + ' ' + it.d).toLowerCase().indexOf(q) >= 0);
+    const view = (it) => ({
+      t: it.t,
+      d: it.d,
+      klar: it.k,
+      soon: !it.k,
+      roles: it.r.join(' · '),
+      href: BASE + (it.u || 'traener.html') + '?k=' + encodeURIComponent(it.id),
+      tags: it.s.map((id) => ({ label: SYS[id].badge, tone: id === 'forslag' ? 'warning' : 'neutral' }))
+    });
+    const topics = TOPICS.map((tp) => {
+      const items = tp.items.filter(matches).map(view);
+      return { sec: tp.sec, id: tp.id, name: tp.name, items, n: items.length, countText: items.length === 1 ? '1 træner' : items.length + ' trænere' };
+    }).filter((tp) => tp.n > 0);
+    const sections = SECTIONS.map((s) => ({ hid: 'sek-' + s.id, name: s.name, lead: s.lead, topics: topics.filter((tp) => tp.sec === s.id) }))
+      .filter((s) => s.topics.length > 0);
+
+    const chips = [['alle', 'Alle'], ['kf', 'Makker 1 & mig'], ['ff', 'Makker 2 & mig'], ['kamp', 'Kampen om kontrakten'], ['forslag', 'Forslag']]
+      .map(([id, label]) => ({
+        id,
+        label,
+        count: all.filter((it) => inSys(it, id)).length,
+        on: sys === id,
+        off: sys !== id,
+        pick: () => this.setState({ sys: id })
+      }));
+
+    return {
+      navLinks: [
+        { label: 'Træn', href: '#', current: true },
+        { label: 'Viden', href: BASE + 'viden/' }
+      ],
+      q: query,
+      onSearch: (e) => this.setState({ q: e && e.target ? e.target.value : '' }),
+      chips,
+      showSysLink: sys !== 'alle',
+      sysName: sys !== 'alle' ? SYS[sys].name : '',
+      sysHref: sys !== 'alle' ? BASE + SYS[sys].doc : BASE + 'viden/',
+      recent: [
+        { t: 'Revideret omvendt Bergen', sys: 'Makker 2', href: BASE + 'traener.html?k=ff-revideret-omvendt-bergen' },
+        { t: 'Multiforsvar mod 1NT', sys: 'Makker 1', href: BASE + 'traener.html?k=multiforsvar' },
+        { t: 'Flannery 2♦', sys: 'Forslag', href: BASE + 'traener.html?k=ff-flannery' }
+      ],
+      jump: topics.map((tp) => ({ id: tp.id, name: tp.name })),
+      sections,
+      empty: topics.length === 0,
+      reset: () => this.setState({ sys: 'alle', q: '' }),
+      cards: visning !== 'liste',
+      list: visning === 'liste',
+      footerColumns: [
+        { title: 'Aftaler og notater', links: [
+          { label: 'Makker 1 & mig', href: BASE + SYS.kf.doc },
+          { label: 'Makker 2 & mig', href: BASE + SYS.ff.doc },
+          { label: 'Kampen om kontrakten', href: BASE + SYS.kamp.doc },
+          { label: 'Forslag', href: BASE + SYS.forslag.doc },
+          { label: 'Forskelle mellem systemerne', href: BASE + 'viden/#forskelle' }
+        ] },
+        { title: 'Flere trænere', links: [
+          { label: 'Fordelingstræneren', href: 'https://frankpedersen.github.io/fordelingstraeneren/' }
+        ] }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

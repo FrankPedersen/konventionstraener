@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Konventionstræner – Træn på mobil</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="ds/subtlegradient/tokens.css">
+<link rel="stylesheet" href="ds/subtlegradient/components/bundle.css">
+<script src="ds/subtlegradient/components/bundle.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#f2f3f4}
+a{color:#1a1a1a}a:hover{color:#0f0f0f}
+.km-row:hover{background:var(--canvas-soft)}
+.km-scroll{scrollbar-width:none}
+.km-scroll::-webkit-scrollbar{display:none}
+</style>
+</helmet>
+<div style="width: 390px; min-height: 1880px; box-sizing: border-box; background: var(--canvas-soft); color: var(--ink); font-family: var(--font-sans); font-size: 16px; line-height: 24px; padding: 16px 16px 32px; display: flex; flex-direction: column; gap: 20px; overflow: hidden;">
+
+  <x-import component-from-global-scope="SubtleGradient.NavBar" brand="Konventionstræner" links="{{navLinks}}" aria-label="Hovedmenu">
+    <x-import component-from-global-scope="SubtleGradient.Button" variant="secondary" lang="en">English</x-import>
+  </x-import>
+
+  <header style="display: flex; flex-direction: column; gap: 8px; padding-top: 4px;">
+    <span style="font-size: 14px; line-height: 20px; font-weight: 600; color: var(--body);">45 trænere · 8 meldeforløb pr. runde</span>
+    <h1 style="margin: 0; font-family: var(--font-display); font-weight: 800; font-size: 34px; line-height: 1.05; letter-spacing: -0.02em; color: var(--ink);">Træn konventionerne, til de sidder</h1>
+    <p style="margin: 0; font-size: 16px; line-height: 24px; color: var(--body);">Vælg en konvention og få 8 tilfældige meldeforløb.</p>
+  </header>
+
+  <section aria-label="Find en træner" style="display: flex; flex-direction: column; gap: 12px; padding: 16px; background: var(--canvas); border-radius: 24px;">
+    <x-import component-from-global-scope="SubtleGradient.TextInput" label="Søg" type="search" placeholder="Stayman, Bergen, 2♣ …"></x-import>
+    <div role="group" aria-label="Vis trænere fra" class="km-scroll" style="display: flex; gap: 8px; overflow-x: auto; margin: 0 -16px; padding: 0 16px;">
+      <button type="button" aria-pressed="true" style="flex: none; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 0; border-radius: 9999px; background: var(--ink); color: var(--canvas); font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 600;">Alle<span style="font-weight: 400; color: var(--primary-active);">47</span></button>
+      <button type="button" aria-pressed="false" style="flex: none; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 0; border-radius: 9999px; background: var(--canvas-soft); color: var(--ink); font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 600;">Makker 1 &amp; mig<span style="font-weight: 400; color: var(--body);">14</span></button>
+      <button type="button" aria-pressed="false" style="flex: none; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 0; border-radius: 9999px; background: var(--canvas-soft); color: var(--ink); font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 600;">Makker 2 &amp; mig<span style="font-weight: 400; color: var(--body);">22</span></button>
+      <button type="button" aria-pressed="false" style="flex: none; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 0; border-radius: 9999px; background: var(--canvas-soft); color: var(--ink); font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 600;">Kampen om kontrakten<span style="font-weight: 400; color: var(--body);">10</span></button>
+      <button type="button" aria-pressed="false" style="flex: none; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 0; border-radius: 9999px; background: var(--canvas-soft); color: var(--ink); font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 600;">Forslag<span style="font-weight: 400; color: var(--body);">6</span></button>
+    </div>
+  </section>
+
+  <section aria-label="Senest trænet" style="display: flex; flex-direction: column; gap: 8px; padding: 16px; background: var(--primary-pale); border-radius: 24px;">
+    <span style="font-size: 14px; line-height: 20px; font-weight: 600; color: var(--ink);">Senest trænet</span>
+    <div class="km-scroll" style="display: flex; gap: 8px; overflow-x: auto; margin: 0 -16px; padding: 0 16px;">
+      <sc-for list="{{recent}}" as="r" hint-placeholder-count="3">
+        <a href="#" style="flex: none; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 9999px; background: var(--canvas); color: var(--ink); text-decoration: none; font-size: 14px; line-height: 20px; font-weight: 600; white-space: nowrap;"><x-import component-from-global-scope="SubtleGradient.SuitText">{{r.t}}</x-import><span style="font-weight: 400; color: var(--body);">{{r.sys}}</span></a>
+      </sc-for>
+    </div>
+  </section>
+
+  <nav aria-label="Emner" class="km-scroll" style="display: flex; align-items: center; gap: 6px; overflow-x: auto; margin: 0 -16px; padding: 0 16px;">
+    <sc-for list="{{jump}}" as="tp" hint-placeholder-count="10">
+      <a href="#" style="flex: none; display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; border-radius: 9999px; background: var(--canvas); color: var(--ink); text-decoration: none; font-size: 14px; line-height: 20px; font-weight: 600; white-space: nowrap;">{{tp}}</a>
+    </sc-for>
+  </nav>
+
+  <section aria-labelledby="m-sek-fred" style="display: flex; flex-direction: column; gap: 20px; padding-top: 8px;">
+    <div style="display: flex; flex-direction: column; gap: 4px;">
+      <h2 id="m-sek-fred" style="margin: 0; font-family: var(--font-display); font-weight: 800; font-size: 28px; line-height: 1.05; letter-spacing: -0.015em; color: var(--ink);">Åbninger og svar</h2>
+      <p style="margin: 0; font-size: 14px; line-height: 20px; color: var(--body);">Åbninger, svar, støtte og videre meldeforløb – flere af trænerne tager også modpartens indmeldinger med.</p>
+    </div>
+    <sc-for list="{{topics}}" as="tp" hint-placeholder-count="2">
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <div style="display: flex; align-items: baseline; gap: 10px;">
+          <h3 style="margin: 0; font-size: 18px; line-height: 24px; font-weight: 600; letter-spacing: -0.01em; color: var(--ink);">{{tp.name}}</h3>
+          <span style="font-size: 14px; line-height: 20px; color: var(--body);">{{tp.countText}}</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 2px; padding: 6px; background: var(--canvas); border-radius: 24px;">
+          <sc-for list="{{tp.items}}" as="it" hint-placeholder-count="5">
+            <sc-if value="{{it.klar}}" hint-placeholder-val="{{true}}">
+              <a href="#" class="km-row" style="display: flex; align-items: center; gap: 12px; padding: 12px; border-radius: 16px; color: var(--ink); text-decoration: none;">
+                <div style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px;">
+                  <span style="font-size: 16px; line-height: 22px; font-weight: 600;"><x-import component-from-global-scope="SubtleGradient.SuitText">{{it.t}}</x-import></span>
+                  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px;">
+                    <sc-for list="{{it.tags}}" as="tag" hint-placeholder-count="1">
+                      <x-import component-from-global-scope="SubtleGradient.Badge" tone="{{tag.tone}}">{{tag.label}}</x-import>
+                    </sc-for>
+                    <span style="font-size: 13px; line-height: 18px; color: var(--body);">{{it.roles}}</span>
+                  </div>
+                </div>
+                <span aria-hidden="true" style="flex: none; font-size: 18px; line-height: 24px; color: var(--body);">→</span>
+              </a>
+            </sc-if>
+            <sc-if value="{{it.soon}}" hint-placeholder-val="{{false}}">
+              <div style="display: flex; align-items: center; gap: 12px; padding: 12px; border-radius: 16px; color: var(--body);">
+                <div style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px;">
+                  <span style="font-size: 16px; line-height: 22px; font-weight: 600;"><x-import component-from-global-scope="SubtleGradient.SuitText">{{it.t}}</x-import></span>
+                  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px;">
+                    <sc-for list="{{it.tags}}" as="tag" hint-placeholder-count="1">
+                      <x-import component-from-global-scope="SubtleGradient.Badge" tone="{{tag.tone}}">{{tag.label}}</x-import>
+                    </sc-for>
+                    <span style="font-size: 13px; line-height: 18px;">{{it.roles}}</span>
+                  </div>
+                </div>
+                <span style="flex: none; font-size: 13px; line-height: 18px;">Kommer</span>
+              </div>
+            </sc-if>
+          </sc-for>
+        </div>
+      </div>
+    </sc-for>
+  </section>
+
+  <footer class="sg-footer" style="margin-top: 12px;">
+    <div class="sg-footer-top">
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <span class="sg-footer-name">Kontraktbridge</span>
+        <h2 style="margin: 8px 0 0; font-size: 18px; line-height: 24px; font-weight: 600; color: var(--canvas-soft);">Om mig</h2>
+        <p style="margin: 0; font-size: 16px; line-height: 24px; color: var(--canvas-soft);">Jeg er bridgeentusiast med forkærlighed for spillets kognitive udfordringer og det gode fællesskab omkring bordet. Jeg elsker at skabe og forbedre ting – og med AI som ny medspiller har jeg bygget et digitalt bridge-univers, der kombinerer logik, læring og spilleglæde.</p>
+      </div>
+      <div class="sg-footer-col">
+        <span class="sg-footer-col-title">Kontakt</span>
+        <span>Har du fundet en fejl, eller har du en idé til en ny træner? Skriv til mig.</span>
+        <a class="sg-footer-link" href="mailto:frank.steen.pedersen@gmail.com" style="color: var(--primary); font-weight: 600;">frank.steen.pedersen@gmail.com</a>
+      </div>
+      <div class="sg-footer-col">
+        <span class="sg-footer-col-title">Aftaler og notater</span>
+        <a class="sg-footer-link" href="#">Makker 1 &amp; mig</a>
+        <a class="sg-footer-link" href="#">Makker 2 &amp; mig</a>
+        <a class="sg-footer-link" href="#">Kampen om kontrakten</a>
+        <a class="sg-footer-link" href="#">Forslag</a>
+      </div>
+      <div class="sg-footer-col">
+        <span class="sg-footer-col-title">Trænere</span>
+        <a class="sg-footer-link" href="#">Konventionstræner</a>
+        <a class="sg-footer-link" href="#">Fordelingstræneren</a>
+      </div>
+    </div>
+    <div class="sg-footer-legal">© 2026 Frank Pedersen</div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1880}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const BADGE = { kf: 'Makker 1', ff: 'Makker 2', kamp: 'Kampen om kontrakten', forslag: 'Forslag' };
+    const view = (it) => ({
+      t: it.t,
+      klar: it.k,
+      soon: !it.k,
+      roles: it.r.join(' · '),
+      tags: it.s.map((id) => ({ label: BADGE[id], tone: id === 'forslag' ? 'warning' : 'neutral' }))
+    });
+    const topic = (name, items) => ({ name, countText: items.length + ' trænere', items: items.map(view) });
+    return {
+      navLinks: [
+        { label: 'Træn', href: '#', current: true },
+        { label: 'Viden', href: '#' }
+      ],
+      recent: [
+        { t: 'Revideret omvendt Bergen', sys: 'Makker 2' },
+        { t: 'Multiforsvar mod 1NT', sys: 'Makker 1' },
+        { t: 'Flannery 2♦', sys: 'Forslag' }
+      ],
+      jump: ['Åbninger', 'Svar på 1NT', 'Støtte', 'Videre meldeforløb', '1NT i konkurrence', 'Indmeldinger og genåbning', 'Doblinger', 'Støtte i konkurrence', 'Slem', 'Modspil'],
+      topics: [
+        topic('Åbninger', [
+          { t: '2♣ stærkåbning og 2♦ waiting', s: ['ff'], r: ['Åbner', 'Svarer'], k: true },
+          { t: 'Ogust 2NT og svar på svag 2', s: ['ff'], r: ['Åbner', 'Svarer'], k: true },
+          { t: '2♣ med kontrolsvar', s: ['forslag'], r: ['Åbner', 'Svarer'], k: true },
+          { t: 'Flannery', s: ['forslag'], r: ['Åbner', 'Svarer'], k: true },
+          { t: 'Multi 2♦', s: ['forslag'], r: ['Åbner', 'Svarer'], k: false },
+          { t: 'Muiderberg 2♠', s: ['forslag'], r: ['Åbner', 'Svarer'], k: false }
+        ]),
+        topic('Svar på 1NT', [
+          { t: 'Stayman', s: ['kf'], r: ['Åbner', 'Svarer'], k: true },
+          { t: 'Transfer', s: ['kf'], r: ['Åbner', 'Svarer'], k: true },
+          { t: 'Amerikansk Stayman (ASS)', s: ['ff'], r: ['Åbner', 'Svarer'], k: true },
+          { t: 'Overføringer', s: ['ff'], r: ['Åbner', 'Svarer'], k: true },
+          { t: 'Gerber og sansstigen', s: ['ff'], r: ['Spørger', 'Svarer'], k: true }
+        ])
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
