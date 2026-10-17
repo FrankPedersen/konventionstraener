@@ -1,4 +1,4 @@
-/* Sidefoden – den samme sorte sidefod som på www.kontraktbridge.dk, nederst på forsiden, trænerne og Viden.
+/* Sidefoden – den samme sorte sidefod som på www.kontraktbridge.dk (med 7NT-logoet), nederst på forsiden, trænerne og Viden.
    Siden har et tomt <footer id="sidefod"> uden for <main> (så doc-export.js ikke tager den med i Word-filen)
    og henter dette script lige efter. Al tekst og stil står kun her.
    Sproget følger lang.js; sider uden lang.js (Viden og multitræneren) er på dansk.
@@ -19,8 +19,10 @@
     + 'background:var(--sg-ink,#1a1a1a);color:var(--sg-canvas-soft,#f2f3f4);border-radius:var(--sg-radius-xl,24px)}'
     + '#sidefod .sf-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--sg-space-2xl,32px)}'
     + '#sidefod .sf-om{display:flex;flex-direction:column;gap:var(--sg-space-md,12px);max-width:420px}'
-    + '#sidefod .sf-navn{font-family:var(--sg-display,Manrope,Inter,system-ui,sans-serif);font-weight:800;font-size:24px;line-height:28px;'
+    + '#sidefod .sf-navn{display:inline-flex;align-items:center;gap:10px;font-family:var(--sg-display,Manrope,Inter,system-ui,sans-serif);font-weight:800;font-size:24px;line-height:28px;'
     + 'color:var(--sg-primary,#ff9f4a);text-decoration:none;align-self:flex-start}'
+    + '#sidefod .sf-logo{display:inline-flex;align-items:center;justify-content:center;flex:none;width:36px;height:36px;border-radius:9px;'
+    + 'background:#ff9f4a;color:#1a1a1a;font-size:13px;line-height:1;letter-spacing:-.02em}'
     + '#sidefod h2{margin:0;padding:0;border:0;font-family:inherit;font-size:14px;line-height:20px;font-weight:600;letter-spacing:normal;color:inherit;text-transform:none}'
     + '#sidefod .sf-om h2{margin-top:var(--sg-space-sm,8px);font-size:18px;line-height:24px}'
     + '#sidefod h2::before,#sidefod h2::after{content:none}'
@@ -44,7 +46,7 @@
   function link(href, da, en) { return '<a href="' + href + '">' + t(da, en) + '</a>'; }
   el.innerHTML = '<div class="sf"><div class="sf-top">'
     + '<div class="sf-om">'
-    +   '<a class="sf-navn" href="https://www.kontraktbridge.dk/">Kontraktbridge</a>'
+    +   '<a class="sf-navn" href="https://www.kontraktbridge.dk/"><span class="sf-logo" aria-hidden="true">7NT</span>Kontraktbridge</a>'
     +   '<h2>' + t('Om mig', 'About me') + '</h2>'
     +   '<p>' + t('Jeg er bridgeentusiast med forkærlighed for spillets kognitive udfordringer og det gode fællesskab omkring bordet. Jeg elsker at skabe og forbedre ting – og med AI som ny medspiller har jeg bygget et digitalt bridge-univers, der kombinerer logik, læring og spilleglæde.',
                'I am a bridge enthusiast with a soft spot for the cognitive challenges of the game and the good company around the table. I love creating and improving things – and with AI as a new partner, I have built a digital bridge universe that combines logic, learning and the joy of playing.') + '</p>'

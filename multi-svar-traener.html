@@ -206,9 +206,17 @@
   .done .score{ font-family:var(--sg-display); font-weight:800; color:var(--sg-ink); }
   .restart{ background:var(--sg-canvas-soft); border:0; border-radius:var(--sg-radius-xl); }
   .restart:hover{ color:var(--sg-ink); box-shadow:inset 0 0 0 1px var(--sg-ink); }
+
+  /* Topbjælken og sidefoden (SPEC-traen-side.md): siden står i en kolonne under den fuldbrede topbjælke,
+     og sidefoden står under træneren */
+  body{ flex-direction:column; justify-content:flex-start; align-items:center; padding:0 0 calc(48px + env(safe-area-inset-bottom, 0px)); }
+  #topbjaelke, #sidefod{ align-self:stretch; }
+  .wrap{ box-sizing:border-box; padding:28px 14px 0; }
 </style>
 </head>
 <body>
+<header id="topbjaelke" data-aktiv="traen"></header>
+<script src="assets/topbar.js"></script>
 <div class="wrap">
 
   <div class="brand"><span class="name">Bridgesystem</span><span class="part">Multiforsvar · version 1.7</span></div>
