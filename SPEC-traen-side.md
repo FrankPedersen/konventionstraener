@@ -119,7 +119,7 @@ Den samme sorte topbjælke øverst på alle sider: `index.html`, trænerne og si
 ## Fælles regler for alle sider på www.kontraktbridge.dk
 
 - **Topbjælke:** I appsene (Konventionstræner og Fordelingstræneren) er den fuld bredde øverst. På hubsiden www.kontraktbridge.dk står menuen i stedet inde i det sorte hero-felt, fordi feltet selv er sort. Det er bevidst.
-- **Sprogknap:** Kun på sider, der findes på engelsk, altså i de to apps. Hubsiden har ingen English-knap, fordi der ikke findes en engelsk udgave af den.
+- **Sprogknap:** På alle sider, der findes på engelsk: hubsiden, Konventionstræneren og Fordelingstræneren. Kun Konventionstrænerens systemdokumenter er på dansk og har ingen sprogknap (Franks beslutning 17. oktober 2026). På hubsiden og i Konventionstræneren gemmes valget under `lang` på www.kontraktbridge.dk, så det følger med mellem dem.
 - **Sidefod:** Om mig, Trænere (de 5 links nedenfor) og Kontakt på alle sider. Kun Konventionstrænerens sider har desuden kolonnen "Aftaler og notater".
 
 ## Sidefoden
@@ -173,9 +173,14 @@ Claude Codes gennemgang og Franks svar (17. oktober 2026):
 Topbjælken – Claude Codes gennemgang og Franks svar (17. oktober 2026):
 
 15. **Tabellen under Afgrænsning** havde kun sidefoden for trænerne og `viden/`. Topbjælken er tilføjet i de rækker, fordi afsnittet Topbjælken gælder alle sider. Multitræneren får den også, ligesom sidefoden (Afgrænsning).
-16. **Sprogknappen** står kun på sider, der findes på engelsk: forsiden, `traener.html` og `markering.html`. Viden-siderne og multitræneren har ingen sprogknap, som i dag. Tegnefladens English på Viden og Systemdokument gælder ikke (Franks valg) (Topbjælken, Fælles regler).
+16. **Sprogknappen** står kun på sider, der findes på engelsk: forsiden, `traener.html` og `markering.html` (fra 17. oktober også `viden/index.html` og multitræneren, punkt 22). Systemdokumenterne har ingen sprogknap. Tegnefladens English på Viden og Systemdokument gælder ikke (Franks valg) (Topbjælken, Fælles regler).
 17. **Bredden:** forsiden og trænerne beholder deres 64rem (1024 px), og systemdokumenterne deres egne bredder. "Maks. bredde 1200 px" betyder, at bjælken ikke rammer indholdet ind; kun topbjælken ændres (Franks valg) (Topbjælken).
 18. **Logo i sidefoden:** sidefoden får 7NT-logoet foran "Kontraktbridge" som på www.kontraktbridge.dk og tegnefladen (Franks valg) (Sidefoden).
 19. **De tre slags topmenu i dag** – `site-head` (forsiden, trænerne, `viden/index.html`, `2-over-1.html`, `forslag-2klor-kontrolsvar.html`), `header.top` i de tre systemdokumenter og navnepladen i multitræneren – erstattes af topbjælken. Multitrænerens navneplade "Bridgesystem · Multiforsvar · version 1.7" bliver stående under bjælken, fordi den er sidens titel. Sprogknappen beholder sin funktion fra `lang.js` (Topbjælken).
 20. **Multitrænerens sidefod** stod ved siden af træneren i stedet for under den, fordi siden er en vandret flex-boks. Rettet i sidens eget stilark med en kolonne under topbjælken; testen tjekker nu sidefodens placering på alle sider (Claude Codes fund ved bygningen).
 21. **Makker 2-dokumentet** (`viden/2-over-1-makker2.html`) ruller vandret på 390 px (413 px), fordi nogle tabeller er bredere end skærmen. Det var sådan før topbjælken, og indholdet under `viden/` må ikke ændres i denne opgave. Det kan tages i en senere opgave.
+
+Engelsk på de sidste sider – Franks beslutning (17. oktober 2026):
+
+22. **Viden-oversigten og multitræneren findes nu på engelsk** med sprogknap i topbjælken. Systemdokumenterne (ca. 32.000 ord) forbliver på dansk og står med "in Danish" i Viden-oversigten og "(in Danish)" ved links til aftalerne. Multitrænerens spørgsmål har `en`-felter i samme ordlyd som puljen `pools/multiforsvar.json` (HCP, support points, pass or correct, suggests penalty); meldingerne har et `data-call`, så knappen kan hedde "Pass" på engelsk.
+23. **Konventionstræneren hedder "Convention trainer"** i sidefodens link på engelsk, som på hubsiden og i Fordelingstræneren. I topbjælken står navnet "Konventionstræner" som appens navn på begge sprog (punkt 14).

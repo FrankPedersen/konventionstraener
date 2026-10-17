@@ -53,7 +53,7 @@
     + '</div>'
     + '<div class="sf-kolonner">'
     +   '<div class="sf-kol"><h2>' + t('Trænere', 'Trainers') + '</h2>'
-    +     link(root || './', 'Konventionstræner', 'Konventionstræner')
+    +     link(root || './', 'Konventionstræner', 'Convention trainer')
     +     link('/fordelingstraeneren/', 'Fordeling', 'Distribution')
     +     link('/fordelingstraeneren/', 'Pointregnskab', 'Point count')
     +     link('/fordelingstraeneren/', 'Farvebehandling', 'Suit combinations')

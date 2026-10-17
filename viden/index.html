@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@800&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&text=%E2%99%A0%E2%99%A5%E2%99%A6%E2%99%A3&display=swap">
 <link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/lang.js"></script>
 <style>
   table.cmp td:first-child{ font-weight:600; white-space:nowrap; }
   @media (max-width:640px){
@@ -23,47 +24,51 @@
 </style>
 </head>
 <body>
-<header id="topbjaelke" data-aktiv="viden"></header>
+<header id="topbjaelke" data-aktiv="viden" data-sprog></header>
 <script src="../assets/topbar.js"></script>
 <div class="wrap">
   <section class="hero">
-    <p class="eyebrow">Viden</p>
-    <h1>Aftaler og notater</h1>
-    <p class="deck">To makkerskaber, to systemer – og forslag, I endnu ikke har vedtaget. Systemerne ligner hinanden, men flere meldinger med samme navn betyder noget forskelligt – se tabellen nederst.</p>
+    <p class="eyebrow" data-en="Reference">Viden</p>
+    <h1 data-en="Agreements and notes">Aftaler og notater</h1>
+    <p class="deck" data-en="Two partnerships, two systems – and proposals you have not yet adopted. The systems are alike, but several calls with the same name mean different things – see the table at the bottom. The documents are in Danish.">To makkerskaber, to systemer – og forslag, I endnu ikke har vedtaget. Systemerne ligner hinanden, men flere meldinger med samme navn betyder noget forskelligt – se tabellen nederst.</p>
   </section>
 
   <div id="docs"></div>
 
-  <h2 id="forskelle">Forskelle mellem systemerne</h2>
-  <p class="small">De vigtigste steder, hvor samme situation meldes forskelligt.</p>
+  <h2 id="forskelle" data-en="Differences between the systems">Forskelle mellem systemerne</h2>
+  <p class="small" data-en="The most important places where the same situation is bid differently.">De vigtigste steder, hvor samme situation meldes forskelligt.</p>
   <div class="tw"><table class="t cmp">
-    <thead><tr><th scope="col"></th><th scope="col">Makker 1 &amp; mig</th><th scope="col">Makker 2 &amp; mig</th></tr></thead>
+    <thead><tr><th scope="col"></th><th scope="col" data-en="Partner 1 &amp;amp; me">Makker 1 &amp; mig</th><th scope="col" data-en="Partner 2 &amp;amp; me">Makker 2 &amp; mig</th></tr></thead>
     <tbody>
-      <tr><td>2 over 1</td><td data-l="Makker 1 &amp; mig">10+ hp, rundekrav – ikke udgangskrav</td><td data-l="Makker 2 &amp; mig">13+ hp, udgangskrav</td></tr>
-      <tr><td>1NT-svar på 1<span class="su su-h">♥</span>/1<span class="su su-s">♠</span></td><td data-l="Makker 1 &amp; mig">6–10 hp, semikrav</td><td data-l="Makker 2 &amp; mig">6–12 hp, semikrav</td></tr>
-      <tr><td>Støtte med 10–12 sp</td><td data-l="Makker 1 &amp; mig">Omvendt Bergen med 4+ støtte: 3<span class="su su-h">♦</span> 7–10 sp, 3<span class="su su-s">♣</span> 10–11 sp</td><td data-l="Makker 2 &amp; mig">Revideret omvendt Bergen: 3<span class="su su-s">♣</span> med præcis 3 kort, 3<span class="su su-h">♦</span> med 4+ kort – begge 10–12 sp</td></tr>
-      <tr><td>3 i makkers major</td><td data-l="Makker 1 &amp; mig">0–6 sp, 4-korts støtte – destruktivt</td><td data-l="Makker 2 &amp; mig">6–9 sp, 4+ korts støtte – spærrende</td></tr>
-      <tr><td>Forsvar mod 1NT</td><td data-l="Makker 1 &amp; mig">Multiforsvar – D er forslag til straf (15–17+ jævn)</td><td data-l="Makker 2 &amp; mig">DONT – D viser én lang farve</td></tr>
-      <tr><td>Svar på 1NT</td><td data-l="Makker 1 &amp; mig">Stayman og transfer</td><td data-l="Makker 2 &amp; mig">Amerikansk Stayman (ASS) og overføringer</td></tr>
-      <tr><td>2<span class="su su-s">♣</span>-åbning</td><td data-l="Makker 1 &amp; mig">22+ hp eller 9 stik i major / 10 i minor</td><td data-l="Makker 2 &amp; mig">20+ hp, 2<span class="su su-h">♦</span> waiting</td></tr>
-      <tr><td>Svage åbninger</td><td data-l="Makker 1 &amp; mig">6–10 hp</td><td data-l="Makker 2 &amp; mig">Svag 2: 5–11 hp, Ogust 2NT</td></tr>
-      <tr><td>Markering</td><td data-l="Makker 1 &amp; mig">Lavt kort = kald</td><td data-l="Makker 2 &amp; mig">Højt kort = kald</td></tr>
+      <tr><td data-en="2 over 1">2 over 1</td><td data-l="Makker 1 &amp; mig" data-en="10+ HCP, forcing for one round – not game forcing">10+ hp, rundekrav – ikke udgangskrav</td><td data-l="Makker 2 &amp; mig" data-en="13+ HCP, game forcing">13+ hp, udgangskrav</td></tr>
+      <tr><td data-en="1NT response to 1&lt;span class=&quot;su su-h&quot;&gt;♥&lt;/span&gt;/1&lt;span class=&quot;su su-s&quot;&gt;♠&lt;/span&gt;">1NT-svar på 1<span class="su su-h">♥</span>/1<span class="su su-s">♠</span></td><td data-l="Makker 1 &amp; mig" data-en="6–10 HCP, semi-forcing">6–10 hp, semikrav</td><td data-l="Makker 2 &amp; mig" data-en="6–12 HCP, semi-forcing">6–12 hp, semikrav</td></tr>
+      <tr><td data-en="Raises with 10–12 support points">Støtte med 10–12 sp</td><td data-l="Makker 1 &amp; mig" data-en="Reverse Bergen with 4+ support: 3&lt;span class=&quot;su su-h&quot;&gt;♦&lt;/span&gt; 7–10, 3&lt;span class=&quot;su su-s&quot;&gt;♣&lt;/span&gt; 10–11 support points">Omvendt Bergen med 4+ støtte: 3<span class="su su-h">♦</span> 7–10 sp, 3<span class="su su-s">♣</span> 10–11 sp</td><td data-l="Makker 2 &amp; mig" data-en="Revised Reverse Bergen: 3&lt;span class=&quot;su su-s&quot;&gt;♣&lt;/span&gt; with exactly 3 cards, 3&lt;span class=&quot;su su-h&quot;&gt;♦&lt;/span&gt; with 4+ cards – both 10–12 support points">Revideret omvendt Bergen: 3<span class="su su-s">♣</span> med præcis 3 kort, 3<span class="su su-h">♦</span> med 4+ kort – begge 10–12 sp</td></tr>
+      <tr><td data-en="3 of partner&#x27;s major">3 i makkers major</td><td data-l="Makker 1 &amp; mig" data-en="0–6 support points, four-card support – destructive">0–6 sp, 4-korts støtte – destruktivt</td><td data-l="Makker 2 &amp; mig" data-en="6–9 support points, 4+ card support – preemptive">6–9 sp, 4+ korts støtte – spærrende</td></tr>
+      <tr><td data-en="Defence against 1NT">Forsvar mod 1NT</td><td data-l="Makker 1 &amp; mig" data-en="Multi defence – X suggests penalty (15–17+ balanced)">Multiforsvar – D er forslag til straf (15–17+ jævn)</td><td data-l="Makker 2 &amp; mig" data-en="DONT – X shows one long suit">DONT – D viser én lang farve</td></tr>
+      <tr><td data-en="Responses to 1NT">Svar på 1NT</td><td data-l="Makker 1 &amp; mig" data-en="Stayman and transfers">Stayman og transfer</td><td data-l="Makker 2 &amp; mig" data-en="American Stayman (ASS) and transfers">Amerikansk Stayman (ASS) og overføringer</td></tr>
+      <tr><td data-en="2&lt;span class=&quot;su su-s&quot;&gt;♣&lt;/span&gt; opening">2<span class="su su-s">♣</span>-åbning</td><td data-l="Makker 1 &amp; mig" data-en="22+ HCP or 9 tricks in a major / 10 in a minor">22+ hp eller 9 stik i major / 10 i minor</td><td data-l="Makker 2 &amp; mig" data-en="20+ HCP, 2&lt;span class=&quot;su su-h&quot;&gt;♦&lt;/span&gt; waiting">20+ hp, 2<span class="su su-h">♦</span> waiting</td></tr>
+      <tr><td data-en="Weak openings">Svage åbninger</td><td data-l="Makker 1 &amp; mig" data-en="6–10 HCP">6–10 hp</td><td data-l="Makker 2 &amp; mig" data-en="Weak two: 5–11 HCP, Ogust 2NT">Svag 2: 5–11 hp, Ogust 2NT</td></tr>
+      <tr><td data-en="Signals">Markering</td><td data-l="Makker 1 &amp; mig" data-en="Low card = encouraging">Lavt kort = kald</td><td data-l="Makker 2 &amp; mig" data-en="High card = encouraging">Højt kort = kald</td></tr>
     </tbody>
   </table></div>
-  <div class="note"><p><strong>Fælles i træneren:</strong> Bekkasin og xy sans er ens i begge systemer. Bekkasin følger reglerne hos Makker 2 &amp; mig (13+ sp, 3<span class="su su-h">♥</span> kort klør, 3<span class="su su-s">♠</span> kort ruder); xy sans følger afsnit 6a hos Makker 2 &amp; mig. Fjerde farve krav er ens i begge dokumenter. Cuebids følger afsnit 7 hos Makker 2 &amp; mig i begge systemer. Begge systembeskrivelser er rettet til, så de siger det samme.</p></div>
+  <div class="note"><p data-en="&lt;strong&gt;Shared in the trainer:&lt;/strong&gt; Bekkasin and xy notrump are the same in both systems. Bekkasin follows the rules of Partner 2 &amp;amp; me (13+ support points, 3&lt;span class=&quot;su su-h&quot;&gt;♥&lt;/span&gt; short clubs, 3&lt;span class=&quot;su su-s&quot;&gt;♠&lt;/span&gt; short diamonds); xy notrump follows section 6a of Partner 2 &amp;amp; me. Fourth suit forcing is the same in both documents. Cue-bids follow section 7 of Partner 2 &amp;amp; me in both systems. Both system descriptions have been aligned so that they say the same."><strong>Fælles i træneren:</strong> Bekkasin og xy sans er ens i begge systemer. Bekkasin følger reglerne hos Makker 2 &amp; mig (13+ sp, 3<span class="su su-h">♥</span> kort klør, 3<span class="su su-s">♠</span> kort ruder); xy sans følger afsnit 6a hos Makker 2 &amp; mig. Fjerde farve krav er ens i begge dokumenter. Cuebids følger afsnit 7 hos Makker 2 &amp; mig i begge systemer. Begge systembeskrivelser er rettet til, så de siger det samme.</p></div>
 </div>
 <script>
 function esc(s){ return String(s).replace(/[&<>"]/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c])); }
 Promise.all(['../data/systemer.json', '../data/viden.json'].map(u => fetch(u).then(r => r.json())))
   .then(([systems, docs]) => {
+    systems = L(systems); docs = L(docs);
+    // Tabellens mærker på mobil (data-l) følger sproget.
+    const names = Object.fromEntries(systems.map(s => [s.id, s.navn]));
+    document.querySelectorAll('td[data-l]').forEach(td => { td.dataset.l = td.dataset.l.startsWith('Makker 1') ? names.kf : names.ff; });
     document.getElementById('docs').innerHTML = systems.map(s => `
       <h2 id="${esc(s.id)}">${esc(s.navn)}</h2>
       <div class="tiles">${docs.filter(d => d.system === s.id).map(d =>
-        `<a class="tile" href="../${esc(d.href)}"><div class="grp">${esc(d.type)}</div><h3>${esc(d.titel)}</h3><p>${esc(d.beskrivelse)}</p></a>`).join('')}
+        `<a class="tile" href="../${esc(d.href)}"><div class="grp">${esc(d.type)}${T('', ' · in Danish')}</div><h3>${esc(d.titel)}</h3><p>${esc(d.beskrivelse)}</p></a>`).join('')}
       </div>`).join('');
   })
   .catch(() => {
-    document.getElementById('docs').innerHTML = '<p class="small">Kunne ikke hente listen. Åbn siden via GitHub Pages eller en lokal webserver.</p>';
+    document.getElementById('docs').innerHTML = `<p class="small">${T('Kunne ikke hente listen. Åbn siden via GitHub Pages eller en lokal webserver.', 'Could not load the list. Open the page via GitHub Pages or a local web server.')}</p>`;
   });
 </script>
 <footer id="sidefod"></footer>

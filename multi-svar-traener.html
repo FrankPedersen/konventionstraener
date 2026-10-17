@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/subtle-gradient.css">
+<script src="assets/lang.js"></script>
 <style>
   :root {
     /* Light — "on paper": the system card's own cream and navy */
@@ -215,14 +216,14 @@
 </style>
 </head>
 <body>
-<header id="topbjaelke" data-aktiv="traen"></header>
+<header id="topbjaelke" data-aktiv="traen" data-sprog></header>
 <script src="assets/topbar.js"></script>
 <div class="wrap">
 
-  <div class="brand"><span class="name">Bridgesystem</span><span class="part">Multiforsvar · version 1.7</span></div>
+  <div class="brand"><span class="name" data-en="Bridge system">Bridgesystem</span><span class="part" data-en="Multi defence · version 1.7">Multiforsvar · version 1.7</span></div>
 
-  <h1>Hvad vil du melde?</h1>
-  <p class="sub">Modstanderen åbner 1NT, makker melder ind med Multiforsvar. Vælg dit svar i meldekassen — tryk på pæren for et hint, hvis du er i tvivl.</p>
+  <h1 data-en="What do you bid?">Hvad vil du melde?</h1>
+  <p class="sub" data-en="The opponent opens 1NT, and partner overcalls with Multi defence. Choose your response in the bidding box — tap the bulb for a hint if you are unsure.">Modstanderen åbner 1NT, makker melder ind med Multiforsvar. Vælg dit svar i meldekassen — tryk på pæren for et hint, hvis du er i tvivl.</p>
 
   <div class="progress" id="progress"></div>
 
@@ -231,27 +232,32 @@
     <div class="toprow">
       <div class="hand" id="hand"></div>
       <div class="bonus" id="bonus">
-        <p class="label">Bonusspørgsmål</p>
+        <p class="label" data-en="Bonus question">Bonusspørgsmål</p>
         <p class="bq" id="bonusQ"></p>
         <div class="opts" id="bonusOpts"></div>
         <div class="bfeedback" id="bonusFeedback"></div>
       </div>
     </div>
     <div class="qrow">
-      <p class="qtext">Hvad melder du?</p>
-      <button class="hint-btn" id="hintBtn" title="Vis fire mulige meldinger" aria-pressed="false">💡</button>
+      <p class="qtext" data-en="What do you bid?">Hvad melder du?</p>
+      <button class="hint-btn" id="hintBtn" title="Vis fire mulige meldinger" data-en-title="Show four possible calls" aria-pressed="false">💡</button>
     </div>
     <div class="hintinfo" id="hintInfo"></div>
     <div class="box" id="box"></div>
     <div class="specialrow" id="special"></div>
     <div class="feedback" id="feedback"></div>
-    <button class="next" id="nextBtn">Næste hånd →</button>
+    <button class="next" id="nextBtn" data-en="Next hand →">Næste hånd →</button>
   </div>
 
 </div>
 
 <script>
+document.title = T('Svar på doblingen — Multitræner', 'Responding to partner — Multi trainer');
 const STRAINS = ['♣','♦','♥','♠','NT'];
+/** Honnørerne: E K D B på dansk, A K Q J på engelsk. */
+const cards = (c) => T(c, c.replace(/\b[EDB]\b/g, (h) => ({ E: 'A', D: 'Q', B: 'J' })[h]));
+/** Meldingens tekst: Pas hedder Pass på engelsk; id'et er det samme. */
+const label = (call) => call === 'Pas' ? W('Pas') : call;
 function suitClass(s){ return (s === '♥' || s === '♦') ? 'red' : 'black'; }
 function rank(level, strainIdx){ return level*5 + strainIdx; }
 function parseCall(call){
@@ -265,7 +271,8 @@ function callRank(call){
   return p ? rank(p.level, p.idx) : -1;
 }
 
-const Q = [
+// Spørgsmålene på det aktuelle sprog: L() lægger en-felterne ovenpå (assets/lang.js).
+const Q = L([
  {
   "theirBid": "1NT",
   "partnerBid": "2♣",
@@ -307,6 +314,19 @@ const Q = [
     "Major + minor 5–4, 10–16 hp"
    ],
    "why": "2♣ viser begge majorer, mindst 5–4. Du ved ikke, hvilken der er femfarven – derfor findes 2♦ som spørgsmål."
+  },
+  "en": {
+   "why": "Preference for the major you hold more cards in. With four hearts the fit is certain, whether partner has five or four hearts. This is the usual response to 2♣.",
+   "bonus": {
+    "q": "What does partner's 2♣ show?",
+    "correct": "Both majors 5–4, 10–16 HCP",
+    "options": [
+     "6+ cards in a major, about 6–10 HCP",
+     "Both majors 5–4, 10–16 HCP",
+     "Major + minor 5–4, 10–16 HCP"
+    ],
+    "why": "2♣ shows both majors, at least 5–4. You don't know which is the five-card suit – hence 2♦ as an ask."
+   }
   }
  },
  {
@@ -350,6 +370,19 @@ const Q = [
     "Major + minor 5–4, 10–16 hp"
    ],
    "why": "2♣ viser begge majorer, mindst 5–4. Du ved ikke, hvilken der er femfarven – derfor findes 2♦ som spørgsmål."
+  },
+  "en": {
+   "why": "Three cards in both majors: you want to play in partner's five-card suit. 2♦ asks for it – so you land in a 5-3 fit instead of guessing at a 4-3.",
+   "bonus": {
+    "q": "What does partner's 2♣ show?",
+    "correct": "Both majors 5–4, 10–16 HCP",
+    "options": [
+     "6+ cards in a major, about 6–10 HCP",
+     "Both majors 5–4, 10–16 HCP",
+     "Major + minor 5–4, 10–16 HCP"
+    ],
+    "why": "2♣ shows both majors, at least 5–4. You don't know which is the five-card suit – hence 2♦ as an ask."
+   }
   }
  },
  {
@@ -393,6 +426,19 @@ const Q = [
     "Naturlig ruderfarve"
    ],
    "why": "2♦ er multi: en 6-farve i en ukendt major, svagere end de øvrige indmeldinger (ca. 6–10 hp)."
+  },
+  "en": {
+   "why": "2♥ is pass or correct. Even without hearts you bid 2♥: if partner has hearts, you are in the right suit, and if he has spades, he corrects to 2♠ – and then you can raise to game. The source's own example.",
+   "bonus": {
+    "q": "What does partner's 2♦ show?",
+    "correct": "6+ cards in a major, about 6–10 HCP",
+    "options": [
+     "Both majors 5–4, 10–16 HCP",
+     "6+ cards in a major, about 6–10 HCP",
+     "A natural diamond suit"
+    ],
+    "why": "2♦ is multi: a six-card suit in an unknown major, weaker than the other overcalls (about 6–10 HCP)."
+   }
   }
  },
  {
@@ -436,6 +482,19 @@ const Q = [
     "Naturlig ruderfarve"
    ],
    "why": "2♦ er multi: en 6-farve i en ukendt major, svagere end de øvrige indmeldinger (ca. 6–10 hp)."
+  },
+  "en": {
+   "why": "3♥ shows strength in hearts, no interest in spades and game interest. Partner raises to 4♥ with xxx or Hx in hearts. The source's own example.",
+   "bonus": {
+    "q": "What does partner's 2♦ show?",
+    "correct": "6+ cards in a major, about 6–10 HCP",
+    "options": [
+     "Both majors 5–4, 10–16 HCP",
+     "6+ cards in a major, about 6–10 HCP",
+     "A natural diamond suit"
+    ],
+    "why": "2♦ is multi: a six-card suit in an unknown major, weaker than the other overcalls (about 6–10 HCP)."
+   }
   }
  },
  {
@@ -479,6 +538,19 @@ const Q = [
     "Naturlig ruderfarve"
    ],
    "why": "2♦ er multi: en 6-farve i en ukendt major, svagere end de øvrige indmeldinger (ca. 6–10 hp)."
+  },
+  "en": {
+   "why": "4♥ is still pass or correct – preemptive. If partner has hearts, he passes; if he has spades, he corrects to 4♠. You have a fit for both and want to take space from the opponents.",
+   "bonus": {
+    "q": "What does partner's 2♦ show?",
+    "correct": "6+ cards in a major, about 6–10 HCP",
+    "options": [
+     "Both majors 5–4, 10–16 HCP",
+     "6+ cards in a major, about 6–10 HCP",
+     "A natural diamond suit"
+    ],
+    "why": "2♦ is multi: a six-card suit in an unknown major, weaker than the other overcalls (about 6–10 HCP)."
+   }
   }
  },
  {
@@ -522,6 +594,19 @@ const Q = [
     "Naturlig ruderfarve"
    ],
    "why": "2♦ er multi: en 6-farve i en ukendt major, svagere end de øvrige indmeldinger (ca. 6–10 hp)."
+  },
+  "en": {
+   "why": "Plauken: 2NT is a strong relay showing game interest, whichever major partner holds. Partner bids 3♣ with a maximum or a transfer with a minimum, so you can place the contract.",
+   "bonus": {
+    "q": "What does partner's 2♦ show?",
+    "correct": "6+ cards in a major, about 6–10 HCP",
+    "options": [
+     "Both majors 5–4, 10–16 HCP",
+     "6+ cards in a major, about 6–10 HCP",
+     "A natural diamond suit"
+    ],
+    "why": "2♦ is multi: a six-card suit in an unknown major, weaker than the other overcalls (about 6–10 HCP)."
+   }
   }
  },
  {
@@ -565,6 +650,19 @@ const Q = [
     "5 hjerter + 4–5 i ukendt minor, 10–16 hp"
    ],
    "why": "2♥/2♠ viser femfarven i den meldte major og en 4–5-farve i en minor, som 2NT kan spørge efter."
+  },
+  "en": {
+   "why": "A void in hearts, but good support for both minors. 2NT asks for partner's minor, and you land in a safe fit instead of a 5-0 fit in hearts.",
+   "bonus": {
+    "q": "What does partner's 2♥ show?",
+    "correct": "5 hearts + 4–5 in an unknown minor, 10–16 HCP",
+    "options": [
+     "6+ hearts, weak hand",
+     "Both majors 5–4",
+     "5 hearts + 4–5 in an unknown minor, 10–16 HCP"
+    ],
+    "why": "2♥/2♠ show the five-card suit in the major bid and a four- or five-card minor, which 2NT can ask for."
+   }
   }
  },
  {
@@ -608,6 +706,19 @@ const Q = [
     "5 hjerter + 4–5 i ukendt minor, 10–16 hp"
    ],
    "why": "2♥/2♠ viser femfarven i den meldte major og en 4–5-farve i en minor, som 2NT kan spørge efter."
+  },
+  "en": {
+   "why": "Pass is the usual response. You have heart support and no reason to look for the minor or to invite with only 6 HCP.",
+   "bonus": {
+    "q": "What does partner's 2♥ show?",
+    "correct": "5 hearts + 4–5 in an unknown minor, 10–16 HCP",
+    "options": [
+     "6+ hearts, weak hand",
+     "Both majors 5–4",
+     "5 hearts + 4–5 in an unknown minor, 10–16 HCP"
+    ],
+    "why": "2♥/2♠ show the five-card suit in the major bid and a four- or five-card minor, which 2NT can ask for."
+   }
   }
  },
  {
@@ -652,7 +763,21 @@ const Q = [
    ],
    "why": "Doblingen er forslag til straf med en jævn hånd af mindst samme styrke som åbningen. Derfor er strafpas med 8+ hp oftest det rigtige svar."
   },
-  "ctx": "1NT = 12–14 hp · svarer passer"
+  "ctx": "1NT = 12–14 hp · svarer passer",
+  "en": {
+   "ctx": "1NT = 12–14 HCP · responder passes",
+   "why": "A penalty pass with 8+ HCP. The double suggests penalty, and with 10 HCP and a balanced hand opposite partner's 15–17+, 1NT doubled is likely to go down several tricks.",
+   "bonus": {
+    "q": "What does partner's double show?",
+    "correct": "15–17+ HCP balanced – suggests penalty",
+    "options": [
+     "At least 15 HCP, any shape – semi-forcing",
+     "15–17+ HCP balanced – suggests penalty",
+     "Both majors, 10–16 HCP"
+    ],
+    "why": "The double suggests penalty with a balanced hand at least as strong as the opening. So a penalty pass with 8+ HCP is usually the right response."
+   }
+  }
  },
  {
   "theirBid": "1NT",
@@ -696,7 +821,21 @@ const Q = [
    ],
    "why": "Doblingen er forslag til straf med en jævn hånd af mindst samme styrke som åbningen. Derfor er strafpas med 8+ hp oftest det rigtige svar."
   },
-  "ctx": "1NT = 12–14 hp · svarer passer"
+  "ctx": "1NT = 12–14 hp · svarer passer",
+  "en": {
+   "ctx": "1NT = 12–14 HCP · responder passes",
+   "why": "With 0–7 HCP you scramble: bid your lowest four-card suit. Without three-card support, partner bids his lowest four-card suit above it, until you have at least a 4-3 fit at the two level. The source's own example.",
+   "bonus": {
+    "q": "What does partner's double show?",
+    "correct": "15–17+ HCP balanced – suggests penalty",
+    "options": [
+     "At least 15 HCP, any shape – semi-forcing",
+     "15–17+ HCP balanced – suggests penalty",
+     "Both majors, 10–16 HCP"
+    ],
+    "why": "The double suggests penalty with a balanced hand at least as strong as the opening. So a penalty pass with 8+ HCP is usually the right response."
+   }
+  }
  },
  {
   "theirBid": "1NT",
@@ -740,9 +879,23 @@ const Q = [
    ],
    "why": "Doblingen er forslag til straf med en jævn hånd af mindst samme styrke som åbningen. Derfor er strafpas med 8+ hp oftest det rigtige svar."
   },
-  "ctx": "1NT = 12–14 hp · svarer passer"
+  "ctx": "1NT = 12–14 hp · svarer passer",
+  "en": {
+   "ctx": "1NT = 12–14 HCP · responder passes",
+   "why": "A jump in a suit invites game in the suit or in notrump: at least a five-card suit and about 9–11 HCP. The source's own example.",
+   "bonus": {
+    "q": "What does partner's double show?",
+    "correct": "15–17+ HCP balanced – suggests penalty",
+    "options": [
+     "At least 15 HCP, any shape – semi-forcing",
+     "15–17+ HCP balanced – suggests penalty",
+     "Both majors, 10–16 HCP"
+    ],
+    "why": "The double suggests penalty with a balanced hand at least as strong as the opening. So a penalty pass with 8+ HCP is usually the right response."
+   }
+  }
  }
-];
+]);
 
 let idx = 0, score = 0, answered = false, results = [], hintOn = false;
 
@@ -758,7 +911,7 @@ const tableEl = document.querySelector('.table');
 
 function fmtCall(call){
   if (call === 'X' || call === 'XX') return `<span class="x">${call}</span>`;
-  if (call === 'Pas') return call;
+  if (call === 'Pas') return label(call);
   const p = parseCall(call);
   const cls = suitClass(p.strain) === 'red' ? 'r' : 'k';
   const strainHtml = p.strain === 'NT' ? '<span class="k">NT</span>' : `<span class="${cls}">${p.strain}</span>`;
@@ -777,11 +930,11 @@ function renderProgress(){
 
 function renderAuction(q){
   auctionEl.innerHTML = (q.ctx ? `<div class="ctx">${q.ctx}</div>` : '') + `
-    <div class="slot"><span class="who">Modstander</span><div class="bidcard them">${fmtCall(q.theirBid)}</div></div>
+    <div class="slot"><span class="who">${W('Modstander')}</span><div class="bidcard them">${fmtCall(q.theirBid)}</div></div>
     <span class="arrow">→</span>
-    <div class="slot"><span class="who">Makker</span><div class="bidcard">${fmtCall(q.partnerBid)}</div></div>
+    <div class="slot"><span class="who">${W('Makker')}</span><div class="bidcard">${fmtCall(q.partnerBid)}</div></div>
     <span class="arrow">→</span>
-    <div class="slot"><span class="who">Dig</span><div class="bidcard" style="opacity:.35;">?</div></div>
+    <div class="slot"><span class="who">${W('Dig')}</span><div class="bidcard" style="opacity:.35;">?</div></div>
   `;
 }
 
@@ -791,7 +944,7 @@ function render(){
   const q = Q[idx];
   renderProgress();
   renderAuction(q);
-  handEl.innerHTML = q.hand.map(([s,c]) => `<div class="row"><span class="suit ${suitClass(s)}">${s}</span><span>${c}</span></div>`).join('');
+  handEl.innerHTML = q.hand.map(([s,c]) => `<div class="row"><span class="suit ${suitClass(s)}">${s}</span><span>${cards(c)}</span></div>`).join('');
 
   document.getElementById('hintInfo').className = 'hintinfo';
 
@@ -812,7 +965,8 @@ function render(){
   ['Pas','X','XX'].forEach(call => {
     const btn = document.createElement('button');
     btn.className = 'cell';
-    btn.textContent = call;
+    btn.dataset.call = call;
+    btn.textContent = label(call);
     if (call !== 'Pas'){ btn.disabled = true; }
     else btn.addEventListener('click', () => choose(call, btn));
     specialEl.appendChild(btn);
@@ -850,8 +1004,8 @@ hintBtn.addEventListener('click', () => {
       const lvl = Math.floor(i/5) + 1, sIdx = i % 5, call = lvl + STRAINS[sIdx];
       if (q.hints.includes(call)) b.classList.add('hinted');
     });
-    [...specialEl.children].forEach(b => { if (q.hints.includes(b.textContent)) b.classList.add('hinted'); });
-    infoEl.textContent = `Din hånd: ${q.hp} hp / ${q.sp} sp`;
+    [...specialEl.children].forEach(b => { if (q.hints.includes(b.dataset.call)) b.classList.add('hinted'); });
+    infoEl.textContent = T(`Din hånd: ${q.hp} hp / ${q.sp} sp`, `Your hand: ${q.hp} HCP / ${q.sp} support points`);
     infoEl.className = 'hintinfo show';
   } else {
     infoEl.className = 'hintinfo';
@@ -869,16 +1023,16 @@ function choose(call, btn){
   [...boxEl.children, ...specialEl.children].forEach((b, i) => {
     let bCall;
     if (b.parentElement === boxEl){ const lvl = Math.floor(i/5)+1, sIdx = i%5; bCall = lvl+STRAINS[sIdx]; }
-    else bCall = b.textContent;
+    else bCall = b.dataset.call;
     if (bCall === q.correct) b.classList.add('correct');
     if (!b.disabled) b.disabled = true;
   });
   if (!isCorrect) btn.classList.add('incorrect');
 
   feedbackEl.className = 'feedback show ' + (isCorrect ? 'ok' : 'no');
-  feedbackEl.innerHTML = `<b>${isCorrect ? 'Rigtigt — ' + q.correct : 'Facit: ' + q.correct}</b>${q.why}`;
+  feedbackEl.innerHTML = `<b>${isCorrect ? T('Rigtigt — ', 'Right — ') + label(q.correct) : T('Facit: ', 'Answer: ') + label(q.correct)}</b>${q.why}`;
   nextBtn.className = 'next show';
-  nextBtn.textContent = idx === Q.length - 1 ? 'Se resultat →' : 'Næste hånd →';
+  nextBtn.textContent = idx === Q.length - 1 ? T('Se resultat →', 'See the result →') : T('Næste hånd →', 'Next hand →');
   renderProgress();
 }
 
@@ -906,10 +1060,10 @@ nextBtn.addEventListener('click', () => {
 function renderDone(){
   tableEl.innerHTML = `
     <div class="done">
-      <p class="qtext" style="margin-bottom:0;">Du klarede</p>
+      <p class="qtext" style="margin-bottom:0;">${T('Du klarede', 'You got')}</p>
       <div class="score">${score} / ${Q.length}</div>
-      <p>${score === Q.length ? 'Hele svarstrukturen sidder.' : 'Gennemgå forklaringerne igen, og prøv en gang til.'}</p>
-      <button class="restart" id="restartBtn">Forfra</button>
+      <p>${score === Q.length ? T('Hele svarstrukturen sidder.', 'The whole structure has stuck.') : T('Gennemgå forklaringerne igen, og prøv en gang til.', 'Go through the explanations again and have another go.')}</p>
+      <button class="restart" id="restartBtn">${T('Forfra', 'Start over')}</button>
     </div>`;
   document.getElementById('restartBtn').addEventListener('click', () => location.reload());
 }
