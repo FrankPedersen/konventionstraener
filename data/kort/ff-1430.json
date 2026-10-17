@@ -1,0 +1,521 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "ff-1430",
+  "navn": "RKC 1430, trumfdame og konger",
+  "undertitel": "Nøglekort, trumfdame og konger efter 4NT",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 7 · træneren pools/ff-1430.json",
+  "kategori": "slem",
+  "noegle": "bla",
+  "formaal": "At tælle nøglekortene, finde trumfdamen og se efter konger, før der meldes lille- eller storeslem.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "1♥"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "2NT"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Makker",
+        "4NT"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Sidst meldte farve er trumf, og makker spørger med 4NT efter de fem nøglekort: de fire esser og trumfkongen.",
+    "gaelderFor": "4NT med major som trumf. Ikke med minor som trumf"
+  },
+  "kortfortalt": "5♣ = 1 eller 4 nøglekort, 5♦ = 0 eller 3, 5♥ = 2 eller 5 uden og 5♠ = 2 eller 5 med trumfdamen. Efter 5♣/5♦ spørger billigste ikke-trumfmelding efter damen, og 5NT spørger efter konger, når alle nøglekort er på plads.",
+  "meldinger": [
+    {
+      "bud": "5♣",
+      "noegle": "gul",
+      "viser": "1 eller 4 nøglekort"
+    },
+    {
+      "bud": "5♦",
+      "noegle": "gul",
+      "viser": "0 eller 3 nøglekort"
+    },
+    {
+      "bud": "5♥",
+      "noegle": "gul",
+      "viser": "2 eller 5 nøglekort uden trumfdamen"
+    },
+    {
+      "bud": "5♠",
+      "noegle": "gul",
+      "viser": "2 eller 5 nøglekort med trumfdamen"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Damespørgsmålet efter 5♣ / 5♦",
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "4NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "5♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "5♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "Billigste genmelding i trumf",
+          "noegle": "gra",
+          "viser": "Har ikke trumfdamen"
+        },
+        {
+          "bud": "Billigste konge",
+          "noegle": "gul",
+          "viser": "Trumfdamen og kongen i den meldte farve"
+        },
+        {
+          "bud": "5NT",
+          "noegle": "gul",
+          "viser": "Trumfdamen, men ingen konger uden for trumf"
+        },
+        {
+          "bud": "6 i trumf",
+          "noegle": "gul",
+          "viser": "Trumfdamen, intet yderligere at vise"
+        }
+      ],
+      "note": "Spørgsmålet er billigste melding, der ikke er trumffarven: efter 5♣ spørges med 5♦, efter 5♦ med 5♥ (med hjerter som trumf 5♠). Efter 5♥/5♠ er damen allerede vist eller benægtet."
+    },
+    {
+      "titel": "Kongespørgsmålet 5NT",
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "4NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "5♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "5NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "6 i billigste farve med konge",
+          "noegle": "gul",
+          "viser": "Kongen i farven – billigste konge først"
+        },
+        {
+          "bud": "6 i trumf",
+          "noegle": "gra",
+          "viser": "Ingen konger uden for trumf"
+        },
+        {
+          "bud": "7 i trumf",
+          "noegle": "gron",
+          "viser": "Nok til storeslem selv"
+        }
+      ],
+      "note": "5NT garanterer alle fem nøglekort og solid trumf og er derfor altid en invitation til storeslem."
+    }
+  ],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "4NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          11,
+          7,
+          5
+        ],
+        "H": [
+          14,
+          13,
+          8,
+          7,
+          2
+        ],
+        "D": [
+          14,
+          9
+        ],
+        "C": [
+          14,
+          2
+        ]
+      },
+      "svar": "5♥",
+      "forklaring": "5 nøglekort uden trumfdamen: 5♥ (2 eller 5 uden dame)."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "4NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11,
+          10
+        ],
+        "H": [
+          13,
+          12,
+          10,
+          2
+        ],
+        "D": [
+          13,
+          9,
+          5,
+          3
+        ],
+        "C": [
+          12,
+          11,
+          3
+        ]
+      },
+      "svar": "5♣",
+      "forklaring": "1 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "4NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "5♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "5♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          12
+        ],
+        "H": [
+          14,
+          11,
+          10,
+          8,
+          5
+        ],
+        "D": [
+          13,
+          6
+        ],
+        "C": [
+          13,
+          10,
+          6,
+          4
+        ]
+      },
+      "svar": "5♥",
+      "forklaring": "Du har ikke trumfdamen: billigste genmelding, 5♥."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "4NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "5♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "5NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          11
+        ],
+        "H": [
+          14,
+          12,
+          11,
+          7,
+          5,
+          3
+        ],
+        "D": [
+          13,
+          12,
+          11
+        ],
+        "C": [
+          6,
+          3
+        ]
+      },
+      "svar": "6♦",
+      "forklaring": "Konge i ruder: 6♦ – billigste konge først."
+    }
+  ],
+  "faldgruber": [
+    "5♥ og 5♠ kan være 5 nøglekort. Styrken afgør, om det er 2 eller 5.",
+    "RKC bruges ikke med minor som trumf: svaret kommer let forbi 5♣/5♦. Meld slem på stikvurdering.",
+    "5NT må kun bruges, når alle nøglekort er på plads.",
+    "Med 10 trumfer tilsammen er damen normalt uinteressant. Spring spørgsmålet over.",
+    "Ligger meldingerne i sans, spørger 4NT om minimum eller maksimum: pas eller 6NT."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "Cuebids",
+    "1430",
+    "Gerber"
+  ],
+  "traener": {
+    "url": "traener.html?k=ff-1430",
+    "pool": "pools/ff-1430.json"
+  }
+}

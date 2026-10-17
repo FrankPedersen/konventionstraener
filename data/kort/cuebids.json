@@ -1,0 +1,449 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "cuebids",
+  "navn": "Cuebids",
+  "undertitel": "Kontrolvisning i sidefarverne, før nøglekortene tælles",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 7 · Bridgesystem v1.7 · afsnit 4 · træneren pools/cuebids.json",
+  "kategori": "slem",
+  "noegle": "gul",
+  "formaal": "At finde ud af, om der er en sidefarve med to hurtige tabere, før der meldes slem.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "1♥"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "2NT"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Makker",
+        "3♦"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Trumffarven er fastlagt (her hjerter efter 1♥ – 2NT), og åbner har vist tillæg med 3♦. Svarer har slemambition.",
+    "gaelderFor": "Fastlagt trumf og melding under udgang i trumffarven"
+  },
+  "kortfortalt": "En ny farve under udgang viser kontrol – es, konge, singleton eller renonce – i den billigste farve, hvor du har den. Springer du en farve over, benægter du kontrol dér; 4 i trumf afmelder, og 4NT tæller nøglekortene.",
+  "meldinger": [
+    {
+      "bud": "Cuebid",
+      "noegle": "gul",
+      "viser": "Kontrol i farven og sleminteresse. Fortæl mig mere"
+    },
+    {
+      "bud": "Spring forbi en farve",
+      "noegle": "rosa",
+      "viser": "Ingen kontrol i den oversprungne farve – der kan være to tabere dér"
+    },
+    {
+      "bud": "Afmelding i trumf",
+      "noegle": "gron",
+      "viser": "Intet ekstra. Makker skal normalt passe"
+    },
+    {
+      "bud": "4NT",
+      "noegle": "bla",
+      "viser": "RKC 1430: nu tælles nøglekortene"
+    },
+    {
+      "bud": "5 i trumf",
+      "noegle": "rosa",
+      "viser": "Interesseret, men mangler kontrol i den farve, makker sprang over"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Svarer efter åbners tillæg",
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "3♠",
+          "noegle": "gul",
+          "styrke": "17+ sp",
+          "viser": "Kontrol i spar"
+        },
+        {
+          "bud": "4♣",
+          "noegle": "gul",
+          "styrke": "17+ sp",
+          "viser": "Kontrol i klør, ingen i spar"
+        },
+        {
+          "bud": "4♦",
+          "noegle": "gul",
+          "styrke": "17+ sp",
+          "viser": "Kontrol i ruder, ingen i spar og klør"
+        },
+        {
+          "bud": "4♥",
+          "noegle": "gron",
+          "viser": "Afmelding: ikke nok til slem"
+        }
+      ],
+      "note": "I træneren giver 17 sp slemambition over åbners tillæg; med 16 sp eller mindre afmelder svarer."
+    },
+    {
+      "titel": "Åbner efter makkers cuebid",
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "Billigste egen kontrol",
+          "noegle": "gul",
+          "viser": "Cuebid tilbage, fx 4♣ eller 4♦"
+        },
+        {
+          "bud": "4♥",
+          "noegle": "gron",
+          "viser": "Afmelding: ingen kontrol at vise under 4 i trumf"
+        },
+        {
+          "bud": "4NT",
+          "noegle": "bla",
+          "viser": "RKC 1430"
+        }
+      ],
+      "note": "Har makker sprunget en farve over, og du heller ikke har kontrol dér, afmelder du."
+    }
+  ],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          7
+        ],
+        "H": [
+          14,
+          11,
+          10,
+          5
+        ],
+        "D": [
+          12,
+          9,
+          6
+        ],
+        "C": [
+          14,
+          13,
+          11,
+          10,
+          5
+        ]
+      },
+      "svar": "3♠",
+      "forklaring": "18 sp giver slemambition: cuebid i billigste kontrolfarve – 3♠ viser singleton i spar."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          9,
+          4,
+          2
+        ],
+        "H": [
+          14,
+          13,
+          12,
+          10,
+          6
+        ],
+        "D": [
+          14,
+          13,
+          4
+        ],
+        "C": [
+          5,
+          3
+        ]
+      },
+      "svar": "4♦",
+      "forklaring": "17 sp giver slemambition: cuebid i billigste kontrolfarve – 4♦ viser es i ruder. Farver, du springer over (spar, klør), benægter kontrol."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          3
+        ],
+        "H": [
+          12,
+          9,
+          8,
+          5,
+          4
+        ],
+        "D": [
+          14,
+          12,
+          2
+        ],
+        "C": [
+          14,
+          5,
+          4,
+          2
+        ]
+      },
+      "svar": "4♥",
+      "forklaring": "15 sp – ikke nok til slem over åbners tillæg: 4♥ som afmelding."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "4♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          6,
+          2
+        ],
+        "H": [
+          14,
+          11,
+          10,
+          7,
+          5,
+          3
+        ],
+        "D": [
+          14,
+          13,
+          3
+        ],
+        "C": [
+          14,
+          9
+        ]
+      },
+      "svar": "4♥",
+      "forklaring": "Makker sprang spar over, og du har heller ikke kontrol dér: afmeld i 4♥."
+    }
+  ],
+  "faldgruber": [
+    "Cuebid kræver fastlagt trumf. Uden fastlagt trumffarve er en ny farve naturlig.",
+    "Springer du en farve over, benægter du kontrol dér.",
+    "To konger over for to singletons kan ligne fire kontroller. Brug 1430 til at afklare esserne, før I går forbi udgang.",
+    "Cuebid først, spørg bagefter: 1430 tæller nøglekortene, men siger intet om, hvor de sidder."
+  ],
+  "aabne": [
+    "Skelnes der mellem 1. og 2. rundes kontrol? Her vises enhver kontrol – es, konge, singleton eller renonce – uden at skelne."
+  ],
+  "relaterede": [
+    "1430",
+    "RKC 1430"
+  ],
+  "traener": {
+    "url": "traener.html?k=cuebids",
+    "pool": "pools/cuebids.json"
+  }
+}

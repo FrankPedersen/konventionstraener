@@ -1,0 +1,447 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "1430",
+  "navn": "1430 og trumfdame",
+  "undertitel": "Nøglekortspørgsmål med 4NT, når trumf er fundet",
+  "kilde": "Bridgesystem v1.7 · afsnit 5 · træneren pools/1430.json",
+  "kategori": "slem",
+  "noegle": "bla",
+  "formaal": "At tælle nøglekortene og finde trumfdamen, før der meldes slem.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "1♥"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "2NT"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Makker",
+        "4NT"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Trumffarven er fundet, og makker spørger med 4NT efter de fem nøglekort: de fire esser og trumfkongen.",
+    "gaelderFor": "4NT, når trumffarven er fundet"
+  },
+  "kortfortalt": "5♣ = 1 eller 4 nøglekort, 5♦ = 0 eller 3, 5♥ = 2 uden og 5♠ = 2 med trumfdamen. Efter 5♣ og 5♦ spørger nærmeste trin efter trumfdamen.",
+  "meldinger": [
+    {
+      "bud": "5♣",
+      "noegle": "gul",
+      "viser": "1 eller 4 nøglekort"
+    },
+    {
+      "bud": "5♦",
+      "noegle": "gul",
+      "viser": "0 eller 3 nøglekort"
+    },
+    {
+      "bud": "5♥",
+      "noegle": "gul",
+      "viser": "2 nøglekort uden trumfdamen"
+    },
+    {
+      "bud": "5♠",
+      "noegle": "gul",
+      "viser": "2 nøglekort med trumfdamen"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Damespørgsmålet efter 5♣ / 5♦",
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "4NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "5♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "5♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "Billigste genmelding i trumf",
+          "noegle": "gra",
+          "viser": "Har ikke trumfdamen"
+        },
+        {
+          "bud": "Billigste konge",
+          "noegle": "gul",
+          "viser": "Trumfdamen og kongen i den meldte farve"
+        },
+        {
+          "bud": "5NT",
+          "noegle": "gul",
+          "viser": "Trumfdamen, men ingen konger uden for trumf"
+        },
+        {
+          "bud": "6 i trumf",
+          "noegle": "gul",
+          "viser": "Trumfdamen, intet yderligere at vise"
+        }
+      ],
+      "note": "Spørgsmålet er nærmeste trin over svaret: efter 5♣ er det 5♦, og efter 5♦ (med spar som trumf) 5♥."
+    },
+    {
+      "titel": "Kongespørgsmålet 5NT",
+      "meldinger": [
+        {
+          "bud": "5NT",
+          "noegle": "bla",
+          "viser": "Spørger efter konger. Garanterer alle nøglekort, og at trumffarven er solid"
+        }
+      ]
+    }
+  ],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "4NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11,
+          3
+        ],
+        "H": [
+          14,
+          13,
+          12,
+          4,
+          2
+        ],
+        "D": [
+          12,
+          3
+        ],
+        "C": [
+          11,
+          9,
+          5,
+          2
+        ]
+      },
+      "svar": "5♠",
+      "forklaring": "2 nøglekort og trumfdamen: 5♠."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "4NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          10,
+          8
+        ],
+        "H": [
+          14,
+          13,
+          11,
+          7,
+          6
+        ],
+        "D": [
+          12,
+          9,
+          6
+        ],
+        "C": [
+          14,
+          8
+        ]
+      },
+      "svar": "5♣",
+      "forklaring": "4 nøglekort (esser + trumfkonge): 5♣ viser 1 eller 4."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "4NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "5♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "5♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11,
+          7,
+          5
+        ],
+        "H": [
+          12,
+          10,
+          4,
+          3,
+          2
+        ],
+        "D": [
+          8,
+          6
+        ],
+        "C": [
+          14,
+          13,
+          12
+        ]
+      },
+      "svar": "6♣",
+      "forklaring": "Trumfdamen og klør konge: billigste konge, 6♣."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "4NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "5♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "5♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          12,
+          7,
+          6
+        ],
+        "H": [
+          14,
+          13,
+          12,
+          9,
+          8
+        ],
+        "D": [
+          12,
+          6
+        ],
+        "C": [
+          14,
+          7
+        ]
+      },
+      "svar": "5NT",
+      "forklaring": "Trumfdamen, men ingen konger uden for trumf: 5NT."
+    }
+  ],
+  "faldgruber": [
+    "Trumfkongen er et nøglekort på linje med esserne.",
+    "5♣ og 5♦ viser to mulige antal. Spørgeren afgør det ud fra resten af meldingerne.",
+    "Med 10 trumfer tilsammen behøver I ikke trumfdamen.",
+    "Har meldingerne lydt på sans, er 4NT kvantitativ: svaret er pas eller 6NT. 5NT spørger tilsvarende om 6NT eller 7NT."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "Cuebids",
+    "RKC 1430",
+    "Gerber"
+  ],
+  "traener": {
+    "url": "traener.html?k=1430",
+    "pool": "pools/1430.json"
+  }
+}
