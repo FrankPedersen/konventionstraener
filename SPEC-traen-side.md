@@ -18,9 +18,10 @@ Før arbejdet starter:
 | `index.html` | ny opbygning som beskrevet nedenfor | fjerne en træner eller ændre, hvor et kort fører hen |
 | `data/konventioner.json` | nyt felt `emne` på hver konvention (tabellen nedenfor) | ændre de eksisterende felter |
 | `data/emner.json` (ny) | dele, emner og deres rækkefølge på dansk og engelsk | — |
-| `traener.html`, `markering.html` | gemme konventionen i "Senest trænet", når en runde starter; sidefoden | ændre træningen, hænderne eller bedømmelsen |
-| `multi-svar-traener.html` | gemme `multiforsvar` i "Senest trænet", når en runde starter; sidefoden (Afklaret, punkt 2) | ændre træningen, hænderne eller bedømmelsen |
-| `viden/` | sidefoden | ændre indholdet |
+| `traener.html`, `markering.html` | gemme konventionen i "Senest trænet", når en runde starter; topbjælken og sidefoden | ændre træningen, hænderne eller bedømmelsen |
+| `multi-svar-traener.html` | gemme `multiforsvar` i "Senest trænet", når en runde starter; topbjælken og sidefoden (Afklaret, punkt 2 og 15) | ændre træningen, hænderne eller bedømmelsen |
+| `viden/` | topbjælken og sidefoden | ændre indholdet |
+| `assets/topbar.js` (ny) | topbjælken som fælles komponent (Topbjælken) | — |
 | `assets/site.css` | klasser til søgning, filter, kort og sidefod med eksisterende variabler | ændre værdien af eksisterende variabler |
 | Lagring | ny nøgle `senest` (se nedenfor); `system` læses og skrives som i dag | ændre andre nøgler |
 | Sprog | al ny tekst på dansk og engelsk med `T()`, `data-en` og `en`-felter | dansk tekst på den engelske side |
@@ -35,7 +36,7 @@ Besked til Claude Code:
 
 Øverst til nederst:
 
-1. **Topmenu** som i dag: Konventionstræner, Træn, Viden og sprogknappen.
+1. **Topbjælke** (se "Topbjælken" nedenfor): 7NT-logoet, "Kontraktbridge · Konventionstræner", Træn, Viden og English.
 2. **Indledning:** "45 trænere · 8 meldeforløb pr. runde" (tallet regnes ud fra data), overskriften "Træn konventionerne, til de sidder" og én linje: "Vælg en konvention og få 8 tilfældige meldeforløb. Nogle gange åbner eller melder du ind, andre gange svarer du makker." Linket til Viden i teksten fjernes.
 3. **Find en træner:** en hvid boks med
    - et søgefelt ("Søg", pladsholder "Stayman, Bergen, 2♣ …"), der søger i titel og beskrivelse uden forskel på store og små bogstaver
@@ -104,6 +105,23 @@ Hver konvention i `data/konventioner.json` får feltet `emne`:
 - `traener.html` og `markering.html` skriver id'et, når en runde starter. Al adgang til localStorage står i `try/catch` som i dag.
 - Forsiden viser kun id'er, der findes og er klar. Systemet på knappen er konventionens første system.
 
+## Topbjælken
+
+Den samme sorte topbjælke øverst på alle sider: `index.html`, trænerne og siderne under `viden/`. Den bygges som en fælles komponent, fx `assets/topbar.js`, ligesom sidefoden.
+
+- **Fuld bredde** og helt oppe i toppen, uden afrundede hjørner og uden luft omkring. Indholdet under har sin egen margen og maks. bredde 1200 px. (På tegnefladen hedder klassen `kb-bar` uden `round`.)
+- **Venstre:** 7NT-logoet (orange meldekort, 36 × 36 px, hjørner 9 px, Manrope 800, tekst `--sg-ink`) og "Kontraktbridge" (Manrope 800, 19 px, hvid) som ét link til https://www.kontraktbridge.dk/. Derefter "· Konventionstræner" i lysegrå (#c9cdd2), som ikke er et link.
+- **Højre:** Træn og Viden som pille-links; den aktive side har `aria-current="page"` og en lys flade. Til sidst sprogknappen ("English" / "Dansk") med tynd hvid kant.
+- Farver: baggrund #1a1a1a, tekst #f2f3f4, fokusring 2 px #ff9f4a.
+- **Mobil** (under 600 px): samme bjælke i den smalle udgave (`slim`): logo 30 px, navn 16 px, mindre luft. Links og sprogknap brydes ned på en ny linje, hvis der ikke er plads. Stadig fuld bredde.
+- Topbjælken vises ikke ved udskrift.
+
+## Fælles regler for alle sider på www.kontraktbridge.dk
+
+- **Topbjælke:** I appsene (Konventionstræner og Fordelingstræneren) er den fuld bredde øverst. På hubsiden www.kontraktbridge.dk står menuen i stedet inde i det sorte hero-felt, fordi feltet selv er sort. Det er bevidst.
+- **Sprogknap:** Kun på sider, der findes på engelsk, altså i de to apps. Hubsiden har ingen English-knap, fordi der ikke findes en engelsk udgave af den.
+- **Sidefod:** Om mig, Trænere (de 5 links nedenfor) og Kontakt på alle sider. Kun Konventionstrænerens sider har desuden kolonnen "Aftaler og notater".
+
 ## Sidefoden
 
 Samme sorte sidefod nederst på alle sider: `index.html`, trænerne og siderne under `viden/`. Den bygges som en fælles komponent, fx `assets/footer.js`, der indsætter sidefoden i et element `<footer id="sidefod">`, så teksten kun står ét sted.
@@ -129,6 +147,7 @@ Samme sorte sidefod nederst på alle sider: `index.html`, trænerne og siderne u
 - [ ] "Senest trænet" viser de tre senest startede konventioner og vises ikke for en ny bruger.
 - [ ] Siden virker uden localStorage (privat vindue).
 - [ ] Sidefoden står ens på alle sider og vises ikke ved udskrift.
+- [ ] Topbjælken går i fuld bredde på alle sider, også på mobil, og vises ikke ved udskrift.
 - [ ] På engelsk står der intet dansk på forsiden, bortset fra dokumenternes titler.
 - [ ] Ingen vandret rulning på en 390 px bred skærm.
 
@@ -150,3 +169,11 @@ Claude Codes gennemgang og Franks svar (17. oktober 2026):
 12. **Data:** alle 47 viste konventioner står i emnetabellen præcis én gang; kun `kamp-landy` mangler og får `nt-konkurrence` som beskrevet (Dele og emner).
 13. **Sidefodens stil** står i `assets/footer.js` og ikke i `assets/site.css`, fordi Viden-dokumenterne ikke indlæser `site.css`. Reglerne har `#sidefod` foran, så dokumenternes egne regler for `h2`, `p` og `a` ikke slår igennem (Claude Codes valg ved bygningen) (Sidefoden).
 14. **Navnene Konventionstræner og Kontraktbridge** oversættes ikke på engelsk, ligesom navnet i topmenuen. Det er den eneste danske tekst på den engelske forside.
+
+Topbjælken – Claude Codes gennemgang og Franks svar (17. oktober 2026):
+
+15. **Tabellen under Afgrænsning** havde kun sidefoden for trænerne og `viden/`. Topbjælken er tilføjet i de rækker, fordi afsnittet Topbjælken gælder alle sider. Multitræneren får den også, ligesom sidefoden (Afgrænsning).
+16. **Sprogknappen** står kun på sider, der findes på engelsk: forsiden, `traener.html` og `markering.html`. Viden-siderne og multitræneren har ingen sprogknap, som i dag. Tegnefladens English på Viden og Systemdokument gælder ikke (Franks valg) (Topbjælken, Fælles regler).
+17. **Bredden:** forsiden og trænerne beholder deres 64rem (1024 px), og systemdokumenterne deres egne bredder. "Maks. bredde 1200 px" betyder, at bjælken ikke rammer indholdet ind; kun topbjælken ændres (Franks valg) (Topbjælken).
+18. **Logo i sidefoden:** sidefoden får 7NT-logoet foran "Kontraktbridge" som på www.kontraktbridge.dk og tegnefladen (Franks valg) (Sidefoden).
+19. **De tre slags topmenu i dag** – `site-head` (forsiden, trænerne, `viden/index.html`, `2-over-1.html`, `forslag-2klor-kontrolsvar.html`), `header.top` i de tre systemdokumenter og navnepladen i multitræneren – erstattes af topbjælken. Multitrænerens navneplade "Bridgesystem · Multiforsvar · version 1.7" bliver stående under bjælken, fordi den er sidens titel. Sprogknappen beholder sin funktion fra `lang.js` (Topbjælken).
