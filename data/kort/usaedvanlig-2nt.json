@@ -1,0 +1,315 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "usaedvanlig-2nt",
+  "navn": "Usædvanlig 2NT",
+  "undertitel": "2NT-indmelding viser de to laveste umeldte farver, mindst 5-5",
+  "kilde": "Bridgesystem v1.7 · afsnit 6.5 · træneren pools/usaedvanlig-2nt.json",
+  "kategori": "konkurrence",
+  "noegle": "gul",
+  "alert": "2NT alerteres",
+  "formaal": "At vise to lave farver i ét træk og presse modparten på fordeling snarere end styrke.",
+  "situation": {
+    "auction": [
+      [
+        "Modstander",
+        "1♥"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Modparten åbner 1 i farve, og du har mindst 5-5 i de to laveste umeldte farver.",
+    "gaelderFor": "Direkte indmelding over en åbning på 1-trinnet"
+  },
+  "kortfortalt": "2NT viser de to laveste umeldte farver, mindst 5-5 og 8–15 hp eller 17+: over 1♥/1♠ minorerne, over 1♦ klør og hjerter, over 1♣ ruder og hjerter. Grundreglen: vælg farve med svag hånd, cuebid med god.",
+  "meldinger": [
+    {
+      "gruppe": "Indmelder"
+    },
+    {
+      "bud": "2NT over 1♥ / 1♠",
+      "noegle": "gul",
+      "styrke": "8–15 eller 17+ hp",
+      "viser": "Klør og ruder, mindst 5-5"
+    },
+    {
+      "bud": "2NT over 1♦",
+      "noegle": "gul",
+      "styrke": "8–15 eller 17+ hp",
+      "viser": "Klør og hjerter, mindst 5-5"
+    },
+    {
+      "bud": "2NT over 1♣",
+      "noegle": "gul",
+      "styrke": "8–15 eller 17+ hp",
+      "viser": "Ruder og hjerter, mindst 5-5"
+    },
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "viser": "5-5 med under 8 hp"
+    },
+    {
+      "gruppe": "Svarer"
+    },
+    {
+      "bud": "Præference",
+      "noegle": "gron",
+      "styrke": "0–9 hp",
+      "viser": "Svag hånd – laveste niveau"
+    },
+    {
+      "bud": "Spring i en vist farve",
+      "noegle": "rosa",
+      "styrke": "6–9 hp",
+      "viser": "Spærrende med god støtte. Ikke inviterende"
+    },
+    {
+      "bud": "Cuebid i deres farve",
+      "noegle": "bla",
+      "styrke": "10+ hp",
+      "viser": "Krav – beder indmelder beskrive videre"
+    },
+    {
+      "bud": "Egen ny farve",
+      "noegle": "gron",
+      "styrke": "10+ hp",
+      "viser": "God 6-farve uden tilpasning. Ikke krav"
+    }
+  ],
+  "fortsaettelser": [],
+  "indmelding": [
+    {
+      "situation": "Modparten melder imellem",
+      "noegle": "gra",
+      "regel": "Svarer må passe – ellers skal der vælges farve."
+    }
+  ],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♦"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          9,
+          7,
+          5
+        ],
+        "H": [
+          13,
+          12,
+          10,
+          8,
+          4
+        ],
+        "D": [],
+        "C": [
+          13,
+          12,
+          7,
+          4,
+          2
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "5 klør og 5 hjerter og 10 hp (8–15): 2NT viser klør og hjerter, mindst 5-5."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♦"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11
+        ],
+        "H": [
+          13,
+          12,
+          9,
+          7,
+          3
+        ],
+        "D": [
+          4,
+          2
+        ],
+        "C": [
+          10,
+          9,
+          6,
+          4,
+          3
+        ]
+      },
+      "svar": "Pas",
+      "forklaring": "5 klør og 5 hjerter, men kun 6 hp – kravet er 8–15 eller 17+. Pas."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♣"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          9,
+          8,
+          3
+        ],
+        "H": [
+          3
+        ],
+        "D": [
+          12,
+          6,
+          5
+        ],
+        "C": [
+          7,
+          6,
+          5,
+          3,
+          2
+        ]
+      },
+      "svar": "3♦",
+      "forklaring": "Svag hånd (5 hp) med flest ruder: præference på laveste niveau – 3♦."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♣"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11,
+          10,
+          7,
+          5
+        ],
+        "H": [
+          14,
+          7,
+          5,
+          3
+        ],
+        "D": [],
+        "C": [
+          12,
+          8,
+          6,
+          3,
+          2
+        ]
+      },
+      "svar": "4♥",
+      "forklaring": "4 hjerter og 7 hp: spring til 4♥ er spærrende med god støtte."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          11,
+          8,
+          6,
+          3
+        ],
+        "H": [
+          14,
+          7,
+          3,
+          2
+        ],
+        "D": [
+          11,
+          7
+        ],
+        "C": [
+          14,
+          9
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "13 hp: cuebid i deres farve (3♥) er krav og beder makker beskrive videre."
+    }
+  ],
+  "faldgruber": [
+    "2NT er ikke naturlig sans: den viser to farver.",
+    "Det er de to laveste umeldte farver – over 1♦ altså klør og hjerter.",
+    "Med mellemstyrken (ca. 16) og 5-5 meldes den bedste farve naturligt."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "Michaels cuebid"
+  ],
+  "forveksles": [
+    "Michaels cuebid og usædvanlig 2NT"
+  ],
+  "traener": {
+    "url": "traener.html?k=usaedvanlig-2nt",
+    "pool": "pools/usaedvanlig-2nt.json"
+  }
+}

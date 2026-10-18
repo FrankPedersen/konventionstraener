@@ -1,0 +1,322 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "ff-michaels",
+  "navn": "Michaels cuebid og usædvanlig 2NT",
+  "undertitel": "To-farvede indmeldinger: majorerne eller en major plus minor, og de to laveste",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 15b · træneren pools/ff-michaels.json",
+  "kategori": "konkurrence",
+  "noegle": "gul",
+  "alert": "Cuebid og 2NT alerteres",
+  "formaal": "At vise en 5-5-hånd i én indmelding, så den anden farve ikke går tabt.",
+  "situation": {
+    "auction": [
+      [
+        "Modstander",
+        "1♦"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Modparten åbner 1 i farve, og du har mindst 5-5 i to farver.",
+    "gaelderFor": "Direkte indmelding over en åbning på 1-trinnet – også over en forberedende 1♣"
+  },
+  "kortfortalt": "Cuebiddet viser begge majorer over minor og den anden major plus en uvist minor over major; 2NT viser de to laveste umeldte farver. Begge mindst 5-5 med 8–15 hp eller 17+.",
+  "meldinger": [
+    {
+      "gruppe": "Indmelder"
+    },
+    {
+      "bud": "Cuebid over 1♣ / 1♦",
+      "noegle": "gul",
+      "styrke": "8–15 eller 17+ hp",
+      "viser": "Begge majorer, mindst 5-5"
+    },
+    {
+      "bud": "Cuebid over 1♥ / 1♠",
+      "noegle": "gul",
+      "styrke": "8–15 eller 17+ hp",
+      "viser": "Den anden major og en uvist minor, mindst 5-5"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "gul",
+      "styrke": "8–15 eller 17+ hp",
+      "viser": "De to laveste umeldte farver, mindst 5-5"
+    },
+    {
+      "bud": "2♦ over 1♣",
+      "noegle": "gron",
+      "styrke": "10–17 hp",
+      "viser": "Naturlig: god 6-farve eller stærk 5-farve"
+    },
+    {
+      "gruppe": "Svarer"
+    },
+    {
+      "bud": "Præference",
+      "noegle": "gron",
+      "styrke": "0–9 hp",
+      "viser": "Svag hånd – laveste niveau"
+    },
+    {
+      "bud": "Spring i den viste farve",
+      "noegle": "rosa",
+      "styrke": "6–9 hp",
+      "viser": "Spærrende med god støtte"
+    },
+    {
+      "bud": "2NT efter Michaels i major",
+      "noegle": "bla",
+      "styrke": "11+ hp",
+      "viser": "Spørger om den uviste minor. Krav"
+    },
+    {
+      "bud": "Cuebid i deres farve",
+      "noegle": "bla",
+      "styrke": "11+ hp",
+      "viser": "Krav – beder indmelder beskrive videre"
+    },
+    {
+      "bud": "Egen ny farve",
+      "noegle": "gron",
+      "styrke": "10+ hp",
+      "viser": "God 6-farve uden tilpasning. Ikke krav"
+    },
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "viser": "Længde i deres farve, under 8 hp"
+    }
+  ],
+  "fortsaettelser": [],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♦"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          12,
+          11,
+          6,
+          4,
+          3
+        ],
+        "H": [
+          14,
+          13,
+          12,
+          3,
+          2
+        ],
+        "D": [
+          12,
+          5
+        ],
+        "C": []
+      },
+      "svar": "2♦",
+      "forklaring": "5-5 og 17 hp (17+): 2♦ viser begge majorer."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♣"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          4
+        ],
+        "H": [
+          12,
+          11,
+          7,
+          5,
+          4,
+          2
+        ],
+        "D": [
+          13,
+          12,
+          11,
+          9,
+          6,
+          4
+        ],
+        "C": []
+      },
+      "svar": "2NT",
+      "forklaring": "5-5 og 9 hp (8–15): 2NT viser ruder og hjerter (de to laveste umeldte)."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Makker",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          4
+        ],
+        "H": [
+          13,
+          8,
+          4,
+          2
+        ],
+        "D": [
+          14,
+          7,
+          6,
+          3
+        ],
+        "C": [
+          13,
+          12,
+          8,
+          4
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "12 hp uden støtte til spar: 2NT spørger om minoren (11+, krav)."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Makker",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          11,
+          9
+        ],
+        "H": [
+          6,
+          2
+        ],
+        "D": [
+          14,
+          12,
+          11,
+          7
+        ],
+        "C": [
+          10,
+          8,
+          6,
+          3
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "11 hp og 3 spar: cuebid 3♥ – god støtte, krav."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♣"
+        ],
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          12
+        ],
+        "H": [
+          10
+        ],
+        "D": [
+          12,
+          11,
+          10,
+          7,
+          4,
+          2
+        ],
+        "C": [
+          13,
+          9,
+          8,
+          5
+        ]
+      },
+      "svar": "2♦",
+      "forklaring": "11 hp og god 6-farve uden tilpasning: 2♦ – naturligt, ikke krav."
+    }
+  ],
+  "faldgruber": [
+    "Styrken er delt: 8–15 eller 17+. Med mellemstyrken 15–17 og 5-5 meldes den bedste farve naturligt.",
+    "Cuebiddet gælder også over den forberedende 1♣ – en naturlig klørindmelding findes ikke dér.",
+    "Svarer vælger farve med svag hånd og spørger eller cuebidder med god."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "DONT"
+  ],
+  "forveksles": [
+    "Michaels cuebid",
+    "Usædvanlig 2NT"
+  ],
+  "traener": {
+    "url": "traener.html?k=ff-michaels",
+    "pool": "pools/ff-michaels.json"
+  }
+}

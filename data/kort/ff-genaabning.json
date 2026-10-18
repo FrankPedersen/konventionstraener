@@ -1,0 +1,381 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "ff-genaabning",
+  "navn": "Genåbning i 4. hånd",
+  "undertitel": "Lån ca. 3 hp af makker, når 1 i farve går rundt til dig",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 15c · træneren pools/ff-genaabning.json",
+  "kategori": "konkurrence",
+  "noegle": "gron",
+  "formaal": "At kæmpe om delkontrakten, når modparten har stoppet lavt, og makker sidder med point, han ikke kunne bruge.",
+  "situation": {
+    "auction": [
+      [
+        "Modstander",
+        "1♥"
+      ],
+      [
+        "Makker",
+        "Pas"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Modparten åbner 1 i farve, og det går pas – pas til dig i 4. hånd.",
+    "gaelderFor": "Genåbning efter 1 i farve – pas – pas"
+  },
+  "kortfortalt": "Genåbn ca. 3 hp lettere end i direkte position, når du er kort i deres farve: dobling 8+, ny farve 6–13, 1NT 11–14, cuebid 15+. Makker trækker 3 hp fra sin hånd, før han melder.",
+  "meldinger": [
+    {
+      "bud": "Dobling",
+      "noegle": "bla",
+      "styrke": "8+ hp",
+      "viser": "Korthed i deres farve – hovedmeldingen i genåbning"
+    },
+    {
+      "bud": "Ny farve",
+      "noegle": "gron",
+      "styrke": "6–13 hp",
+      "viser": "God 5-farve"
+    },
+    {
+      "bud": "1NT",
+      "noegle": "brun",
+      "styrke": "11–14 hp",
+      "viser": "Hold i deres farve – en rigtig sanshånd"
+    },
+    {
+      "bud": "Cuebid i deres farve",
+      "noegle": "bla",
+      "styrke": "15+ hp",
+      "viser": "Den stærke hånd. Krav"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "gul",
+      "styrke": "8–14 hp",
+      "viser": "Begge minorer, mindst 5-5 – usædvanlig"
+    },
+    {
+      "bud": "Spring i farve",
+      "noegle": "rosa",
+      "styrke": "Højst 11 hp",
+      "viser": "Spærrende, som i direkte position"
+    },
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "viser": "Længde i deres farve eller under 8 hp"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Makker efter genåbningsdoblingen",
+      "auction": [
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Dig",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "Farve billigst",
+          "noegle": "gron",
+          "viser": "Devalueret under 7 hp"
+        },
+        {
+          "bud": "Spring i farve",
+          "noegle": "gron",
+          "viser": "Devalueret 7–10 hp – reelle værdier"
+        },
+        {
+          "bud": "Cuebid",
+          "noegle": "bla",
+          "styrke": "11+ hp",
+          "viser": "Krav – brug det sparsomt, makker kan have 8"
+        },
+        {
+          "bud": "Pas",
+          "noegle": "gra",
+          "viser": "Minimum og tilpasning – delkontrakten er gevinsten"
+        }
+      ],
+      "note": "Devaluér med 3 hp: genåbneren har lånt af dig. Straf ikke genåbneren for at have meldt."
+    }
+  ],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Makker",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          11,
+          5,
+          3
+        ],
+        "H": [
+          10,
+          5
+        ],
+        "D": [
+          12,
+          10,
+          8
+        ],
+        "C": [
+          12,
+          9,
+          8,
+          6
+        ]
+      },
+      "svar": "X",
+      "forklaring": "8 hp og højst 2 hjerter: dobling – hovedmeldingen i genåbning (8+)."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Makker",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          8
+        ],
+        "H": [
+          13,
+          9,
+          2
+        ],
+        "D": [
+          11,
+          9,
+          6,
+          4
+        ],
+        "C": [
+          14,
+          8,
+          6,
+          4
+        ]
+      },
+      "svar": "1NT",
+      "forklaring": "11 hp jævn med hold i hjerter: 1NT (11–14 i genåbning)."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Makker",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11,
+          8,
+          5,
+          4
+        ],
+        "H": [
+          13,
+          11,
+          4
+        ],
+        "D": [
+          7,
+          6,
+          2
+        ],
+        "C": [
+          14,
+          7,
+          3
+        ]
+      },
+      "svar": "Pas",
+      "forklaring": "3 hjerter: længde i deres farve – pas."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Makker",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          10,
+          9,
+          5
+        ],
+        "H": [],
+        "D": [
+          14,
+          9,
+          6,
+          4
+        ],
+        "C": [
+          14,
+          13,
+          11,
+          6,
+          2
+        ]
+      },
+      "svar": "2♥",
+      "forklaring": "16 hp: cuebid 2♥ – den stærke hånd, krav (15+)."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Dig",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          12,
+          11,
+          5
+        ],
+        "H": [
+          9,
+          8,
+          7
+        ],
+        "D": [
+          14,
+          11,
+          5
+        ],
+        "C": [
+          9,
+          5,
+          3
+        ]
+      },
+      "svar": "2♠",
+      "forklaring": "11 hp – devalueret 8 (7–10): spring til 2♠ i spar."
+    }
+  ],
+  "faldgruber": [
+    "1NT i genåbning er 11–14 – ikke den lave direkte 1NT-indmelding.",
+    "Med længde i deres farve passes – så har makker den ikke.",
+    "Makker skal trække 3 hp fra, før han vurderer hånden.",
+    "Over 2-trinnet og højere kræves reelle værdier."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "Michaels cuebid og usædvanlig 2NT"
+  ],
+  "traener": {
+    "url": "traener.html?k=ff-genaabning",
+    "pool": "pools/ff-genaabning.json"
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "michaels",
+  "navn": "Michaels cuebid",
+  "undertitel": "Overmelding i åbners farve viser en to-farvet hånd, mindst 5-5",
+  "kilde": "Bridgesystem v1.7 · afsnit 6.4–6.5 · træneren pools/michaels.json",
+  "kategori": "konkurrence",
+  "noegle": "gul",
+  "alert": "Cuebiddet alerteres",
+  "formaal": "At vise en to-farvet hånd i én indmelding, så den anden farve ikke går tabt.",
+  "situation": {
+    "auction": [
+      [
+        "Modstander",
+        "1♣"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Modparten åbner 1 i farve, og du har mindst 5-5 i to farver.",
+    "gaelderFor": "Direkte indmelding over en åbning på 1-trinnet"
+  },
+  "kortfortalt": "Over 1♣/1♦ viser cuebiddet begge majorer, over 1♥/1♠ den anden major og en minor – mindst 5-5 og 8–15 hp eller 17+. Svarer vælger farve med svag hånd og cuebidder med god.",
+  "meldinger": [
+    {
+      "gruppe": "Indmelder"
+    },
+    {
+      "bud": "2♣ over 1♣ / 2♦ over 1♦",
+      "noegle": "gul",
+      "styrke": "8–15 eller 17+ hp",
+      "viser": "Begge majorer, mindst 5-5"
+    },
+    {
+      "bud": "2♥ over 1♥ / 2♠ over 1♠",
+      "noegle": "gul",
+      "styrke": "8–15 eller 17+ hp",
+      "viser": "Den anden major og en minor, mindst 5-5"
+    },
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "viser": "5-5 med under 8 hp"
+    },
+    {
+      "gruppe": "Svarer"
+    },
+    {
+      "bud": "Præference",
+      "noegle": "gron",
+      "styrke": "0–9 hp",
+      "viser": "Svag hånd – farven med flest kort på laveste niveau"
+    },
+    {
+      "bud": "Spring i farven",
+      "noegle": "rosa",
+      "styrke": "6–9 hp",
+      "viser": "Spærrende med god støtte. Ikke inviterende"
+    },
+    {
+      "bud": "2NT over 1♣/1♦",
+      "noegle": "gul",
+      "viser": "Relæ med lige længde i majorerne"
+    },
+    {
+      "bud": "2NT over 1♥/1♠",
+      "noegle": "bla",
+      "viser": "Spørger efter minoren. Krav"
+    },
+    {
+      "bud": "Cuebid i deres farve",
+      "noegle": "bla",
+      "styrke": "10+ hp",
+      "viser": "Krav – beder indmelder beskrive videre"
+    }
+  ],
+  "fortsaettelser": [],
+  "indmelding": [
+    {
+      "situation": "Modparten melder imellem",
+      "noegle": "gra",
+      "regel": "Svarer må passe uden at vælge farve."
+    }
+  ],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♣"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          10,
+          9,
+          4,
+          2
+        ],
+        "H": [
+          12,
+          8,
+          7,
+          4,
+          3,
+          2
+        ],
+        "D": [
+          13,
+          9
+        ],
+        "C": []
+      },
+      "svar": "2♣",
+      "forklaring": "6 hjerter og 5 spar og 8 hp (8–15): 2♣ viser begge majorer, mindst 5-5."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          13,
+          9,
+          7,
+          5,
+          2
+        ],
+        "H": [
+          10
+        ],
+        "D": [
+          4
+        ],
+        "C": [
+          14,
+          13,
+          12,
+          11,
+          6
+        ]
+      },
+      "svar": "2♥",
+      "forklaring": "5 klør og 6 spar og 17 hp (17+): 2♥ viser spar og en minor, mindst 5-5."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♣"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11,
+          10,
+          9,
+          7,
+          5
+        ],
+        "H": [
+          14,
+          11,
+          8,
+          7,
+          4
+        ],
+        "D": [
+          11
+        ],
+        "C": [
+          7,
+          2
+        ]
+      },
+      "svar": "Pas",
+      "forklaring": "5 hjerter og 5 spar, men kun 7 hp – kravet er 8–15 eller 17+. Pas."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♣"
+        ],
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          8,
+          7
+        ],
+        "H": [
+          7,
+          4,
+          2
+        ],
+        "D": [
+          8,
+          6,
+          5,
+          4,
+          3
+        ],
+        "C": [
+          14,
+          8,
+          7
+        ]
+      },
+      "svar": "2♥",
+      "forklaring": "Svag hånd (4 hp) med flest hjerter: præference på laveste niveau – 2♥."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♣"
+        ],
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          10,
+          9
+        ],
+        "H": [
+          7,
+          6,
+          2
+        ],
+        "D": [
+          10,
+          9,
+          8,
+          5,
+          4
+        ],
+        "C": [
+          12,
+          6
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "Lige mange hjerter og spar (3-3): 2NT er relæ."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♣"
+        ],
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          6
+        ],
+        "H": [
+          14,
+          11,
+          10
+        ],
+        "D": [
+          10,
+          8,
+          6
+        ],
+        "C": [
+          13,
+          9,
+          8,
+          6,
+          4
+        ]
+      },
+      "svar": "3♣",
+      "forklaring": "12 hp: cuebid i deres farve (3♣) er krav og beder makker beskrive videre."
+    }
+  ],
+  "faldgruber": [
+    "Styrken er delt: 8–15 eller 17+. Med mellemstyrken (ca. 16) og 5-5 meldes den bedste farve naturligt.",
+    "Svarer skal vælge farve, også med en svag hånd og ingen point.",
+    "Præference gives på laveste niveau – et spring er spærring, ikke invit."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "Usædvanlig 2NT"
+  ],
+  "forveksles": [
+    "Michaels cuebid og usædvanlig 2NT"
+  ],
+  "traener": {
+    "url": "traener.html?k=michaels",
+    "pool": "pools/michaels.json"
+  }
+}
