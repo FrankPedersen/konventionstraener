@@ -99,6 +99,10 @@ main tr.gruppe > td{ border-top:2px solid var(--sg-mute); }
 
 /* indhold fra Claude Design-eksporten (systemet for Makker 2 & mig): inline-styles, derfor !important på skrift */
 main.export th{ font-family:var(--sg-sans) !important; font-size:.8125rem !important; font-weight:600 !important; }
+/* Lange ord i overskrifterne (fx »Alerteringsoversigt«) må bryde, så dokumenterne ikke ruller vandret på mobil.
+   Eksportens h2 har font-size:40px inline og gøres derfor mindre med !important under 480 px. */
+main h2, main h3, main h4{ overflow-wrap:anywhere; hyphens:auto; }
+@media (max-width:479px){ main.export h2{ font-size:30px !important; } }
 
 /* knapper: udskriv / Word / Markdown (assets/doc-export.js) */
 .export-bar{ display:flex; flex-wrap:wrap; gap:var(--sg-space-sm); margin-top:var(--sg-space-xl); }

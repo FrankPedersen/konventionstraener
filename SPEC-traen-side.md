@@ -203,3 +203,11 @@ Om mig og kontakt får sin egen side – Franks beslutning (18. oktober 2026):
     - **Topbjælken** er uændret (Franks valg).
     - **`makkeraftaler.html`** springer til ankeret (`#kf`, `#ff` eller `#forskelle`), når afsnittene er bygget. Ellers lander sidefodens links forkert, fordi afsnittene først tegnes efter indlæsningen (Claude Codes fund ved bygningen).
     - **Ikke rettet:** Makker 2-dokumentet ruller stadig vandret på 390 px (punkt 21).
+
+Makker 2-dokumentet på mobil – Franks opgave (18. oktober 2026):
+
+32. **Ingen vandret rulning i Makker 2-dokumentet.** Årsagen var ikke tabellerne, der ruller i deres egen boks, men tre h2-overskrifter med `font-size:40px` inline: "Del III · Spærremeldinger", "Bilag A · Alerteringsoversigt" og "Bilag E · Scoringsmetoder". Deres lange ord kunne ikke brydes.
+    - `assets/doc-sg.css` giver nu h2–h4 i dokumenterne `overflow-wrap:anywhere` og `hyphens:auto`. Under 480 px er eksportens h2 30 px (`!important` på grund af inline-stilen).
+    - `scrollWidth` er nu lig med skærmbredden ved 320, 360, 375 og 390 px. Det afløser punkt 21.
+    - Versionen på stylesheetet er hævet til `?v=2026-10-18` i de tre dokumenter og i `tools/import_design.py`.
+    - Bridgesystemet er 337 px bredt ved 320 px, ligesom før ændringen. Ved 360 px og derover passer det.
