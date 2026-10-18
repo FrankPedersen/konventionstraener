@@ -118,19 +118,19 @@ Den samme sorte topbjælke øverst på alle sider: `index.html`, trænerne og si
 
 - **Topbjælke:** I appsene (Konventionstræner og Fordelingstræneren) er den fuld bredde øverst. På hubsiden www.kontraktbridge.dk står menuen i stedet inde i det sorte hero-felt, fordi feltet selv er sort. Det er bevidst.
 - **Sprogknap:** På alle sider, der findes på engelsk: hubsiden, Konventionstræneren og Fordelingstræneren. Kun Konventionstrænerens systemdokumenter er på dansk og har ingen sprogknap (Franks beslutning 17. oktober 2026). På hubsiden og i Konventionstræneren gemmes valget under `lang` på www.kontraktbridge.dk, så det følger med mellem dem.
-- **Sidefod:** Om mig, Trænere (de 5 links nedenfor) og Kontakt på alle sider. Kun Konventionstrænerens sider har desuden kolonnen "Aftaler og notater".
+- **Sidefod:** 7NT-logoet, linjen "Gratis bridgetræning i browseren. Lavet af Frank Pedersen.", knappen "Om mig og kontakt →" og kolonnen Trænere (de 5 links nedenfor) på alle sider. Om mig og kontakt har sin egen side, https://www.kontraktbridge.dk/om-mig/ (SPEC-om-mig.md). Kun Konventionstrænerens sider har desuden kolonnen "Aftaler og notater".
 
 ## Sidefoden
 
 Samme sorte sidefod nederst på alle sider: `index.html`, trænerne og siderne under `viden/`. Den bygges som en fælles komponent, fx `assets/footer.js`, der indsætter sidefoden i et element `<footer id="sidefod">`, så teksten kun står ét sted.
 
-- **Venstre:** "Kontraktbridge" (orange, Manrope 800, link til https://www.kontraktbridge.dk/), mellemoverskriften "Om mig" og teksten: "Jeg er bridgeentusiast med forkærlighed for spillets kognitive udfordringer og det gode fællesskab omkring bordet. Jeg elsker at skabe og forbedre ting – og med AI som ny medspiller har jeg bygget et digitalt bridge-univers, der kombinerer logik, læring og spilleglæde."
+- **Venstre:** 7NT-logoet og "Kontraktbridge" som link til https://www.kontraktbridge.dk/, linjen "Gratis bridgetræning i browseren. Lavet af Frank Pedersen." og en orange knap "Om mig og kontakt →", der fører til https://www.kontraktbridge.dk/om-mig/. Teksten om mig og mailadressen står ikke længere i sidefoden (Afklaret, punkt 31).
 - **Kolonnen Trænere:** Konventionstræner, Fordeling, Pointregnskab, Farvebehandling og Håndevaluering. De fire sidste fører til `/fordelingstraeneren/`.
-- **Kolonnen Aftaler og notater:** Mine makkeraftaler (`makkeraftaler.html`), Kampen om kontrakten, Forslag og Forskelle mellem systemerne (`makkeraftaler.html#forskelle`) (Afklaret, punkt 25).
-- **Kolonnen Kontakt:** "Har du fundet en fejl, eller har du en idé til en ny træner? Skriv til mig." og frank.steen.pedersen@gmail.com som `mailto:`-link i orange.
-- **Nederst** under en streg: "© 2026 Frank Pedersen".
-- Farver: baggrund `--sg-ink`, tekst `--sg-canvas-soft`, navn og mail `--sg-primary`, hjørner 24px, margen 48px × 24px.
-- Engelsk: "About me", "Trainers", "Agreements and notes (in Danish)", "Contact" og en engelsk udgave af teksterne.
+- **Kolonnen Aftaler og notater:** Makker 1 & mig (`makkeraftaler.html#kf`), Makker 2 & mig (`makkeraftaler.html#ff`), Kampen om kontrakten, Forslag og Forskelle mellem systemerne (`makkeraftaler.html#forskelle`) (Afklaret, punkt 31).
+- **Overskrift og link skal kunne skelnes:** kolonneoverskrifterne er `<h2 class="kb-foot-title">` i små grå versaler (12 px, 600, bogstavafstand 0,08em, #9aa0a6). Linkene står i en `<ul>` og er hvide, 15 px og altid understregede (stregen rgba(255,255,255,.35), afstand 4 px, orange #ffc48f ved hover).
+- **Nederst** under en streg: "© 2026 Frank Pedersen" i grå.
+- Farver: baggrund `--sg-ink`, tekst `--sg-canvas-soft`, knappen `--sg-primary`, navnet hvidt som på www.kontraktbridge.dk, hjørner 24px, margen 48px × 24px.
+- Engelsk: "Trainers", "Agreements and notes (in Danish)", "About me and contact →", "Free bridge training in your browser. Made by Frank Pedersen." og "Partner 1 & me" / "Partner 2 & me".
 - Links til de andre trænere skrives med `/` foran (`/fordelingstraeneren/`), fordi siden ligger på www.kontraktbridge.dk. Alle andre links i siden forbliver relative.
 - Sidefoden vises ikke ved udskrift (`@media print`), så systemdokumenterne udskrives som i dag.
 
@@ -145,6 +145,7 @@ Samme sorte sidefod nederst på alle sider: `index.html`, trænerne og siderne u
 - [ ] "Senest trænet" viser de tre senest startede konventioner og vises ikke for en ny bruger.
 - [ ] Siden virker uden localStorage (privat vindue).
 - [ ] Sidefoden står ens på alle sider og vises ikke ved udskrift.
+- [ ] Sidefoden har ingen Om mig-tekst og ingen mailadresse, og knappen "Om mig og kontakt →" fører til https://www.kontraktbridge.dk/om-mig/.
 - [ ] Topbjælken går i fuld bredde på alle sider, også på mobil, og vises ikke ved udskrift.
 - [ ] På engelsk står der intet dansk på forsiden, bortset fra dokumenternes titler.
 - [ ] Ingen vandret rulning på en 390 px bred skærm.
@@ -192,3 +193,13 @@ Neutral Træn-side og Mine makkeraftaler – Franks beslutning (17. oktober 2026
 28. **Data:** tekster i `data/konventioner.json`, der nævnte makkerskab eller forslag, er gjort neutrale på dansk og engelsk. `gruppe` "2♦-åbninger (Makker 2 & mig, bilag B)" er blevet til "2♦-åbninger" og "Forslag (Makker 2 & mig, bilag G)" til "Videre meldeforløb". Beskrivelserne af Two over One udgangskrav ("– ikke 10+ som hos Makker 1 & mig"), Lavinthal ("Forslag – trænes, før det skrives ind i systemkortet.") og Revers ("Diskussionsoplæg, ikke vedtaget:") har mistet de dele. Sammenligningen står i Forskelle-tabellen. Feltet `system` er uændret, fordi Mine makkeraftaler og Viden bruger det (Claude Codes valg).
 29. **Systemdokumenterne** `viden/bridgesystem.html` og `viden/2-over-1-makker2.html` markerer Mine makkeraftaler som aktivt punkt i topbjælken. De øvrige dokumenter under `viden/` markerer Viden.
 30. **Mobil:** under 600 px har topbjælkens links og sprogknap lidt mindre luft, så de står på én linje ved 390 px på begge sprog. Under ca. 380 px brydes sprogknappen ned på en ny linje. Lange trænertitler på Mine makkeraftaler må bryde linjen, så intet ruller vandret ved 320 px.
+
+Om mig og kontakt får sin egen side – Franks beslutning (18. oktober 2026):
+
+31. **Sidefoden uden Om mig og Kontakt.** Teksten om mig, kolonnen Kontakt og mailadressen er flyttet til siden https://www.kontraktbridge.dk/om-mig/ (SPEC-om-mig.md).
+    - **Ny venstre del:** linjen "Gratis bridgetræning i browseren. Lavet af Frank Pedersen." og den orange knap "Om mig og kontakt →".
+    - **Aftaler og notater** har nu Makker 1 & mig og Makker 2 & mig hver for sig (`makkeraftaler.html#kf` og `#ff`) i stedet for Mine makkeraftaler. Forskelle mellem systemerne peger stadig på `makkeraftaler.html#forskelle`, hvor tabellen står. Det afløser sidefodens del af punkt 25 (Franks valg).
+    - **Udseendet** er det samme som på www.kontraktbridge.dk: kolonneoverskrifterne er små grå versaler, og linkene står i lister og er hvide og understregede.
+    - **Topbjælken** er uændret (Franks valg).
+    - **`makkeraftaler.html`** springer til ankeret (`#kf`, `#ff` eller `#forskelle`), når afsnittene er bygget. Ellers lander sidefodens links forkert, fordi afsnittene først tegnes efter indlæsningen (Claude Codes fund ved bygningen).
+    - **Ikke rettet:** Makker 2-dokumentet ruller stadig vandret på 390 px (punkt 21).

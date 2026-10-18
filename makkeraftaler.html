@@ -107,6 +107,8 @@ Promise.all(['data/systemer.json', 'data/viden.json', 'data/konventioner.json', 
       ${groups.map(g => `<div class="mk-emne"><h4>${esc(g.e.navn)}</h4><div class="pills">${g.items.map(pill).join('')}</div></div>`).join('')}
     </section>`;
     }).join('');
+    // Sidefodens links til #kf, #ff og #forskelle: afsnittene bygges først her, så siden springer selv hen til ankeret bagefter.
+    if (location.hash) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
   })
   .catch(() => {
     document.getElementById('makkere').innerHTML = `<p class="small">${T('Kunne ikke hente makkeraftalerne. Åbn siden via GitHub Pages eller en lokal webserver.', 'Could not load the partnership agreements. Open the page via GitHub Pages or a local web server.')}</p>`;
