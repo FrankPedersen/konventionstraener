@@ -63,7 +63,7 @@
       "bud": "2NT",
       "noegle": "gul",
       "styrke": "10+ sp",
-      "viser": "Støtte – erstatter den direkte overmelding"
+      "viser": "Truscott: støtte – erstatter den direkte overmelding"
     },
     {
       "bud": "Ny farve på 1-trinnet",
@@ -446,10 +446,10 @@
     "Den negative dobling er ikke straf: den viser den uviste major.",
     "Åbner må passe den negative dobling – men kun med 4+ kort og styrke bag indmelderen.",
     "Støttedoblingen viser præcis 3 kort. Med 4 kort støttes direkte.",
-    "Efter dobling af åbningen bortfalder Two over One."
+    "Efter dobling af åbningen bortfalder Two over One.",
+    "2NT efter dobling er Truscott (10+ sp med støtte) – ikke Bekkasin, som kun gælder uden indblanding."
   ],
   "aabne": [
-    "2NT efter modpartens dobling af vores 1M: 10+ sp med støtte (som her) eller Bekkasin med 13+ sp og 4+ trumf, der efter Afklaret 25 gælder fortsat ved dobling?",
     "Konkurrencedoblingens intervaller for makkers svar er endnu ikke fastlagt i kilden."
   ],
   "relaterede": [

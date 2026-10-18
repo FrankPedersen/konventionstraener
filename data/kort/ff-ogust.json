@@ -52,12 +52,12 @@
     {
       "bud": "3 i farven",
       "noegle": "rosa",
-      "viser": "Videre spærring: 3-korts støtte (9 trumf)"
+      "viser": "Videre spærring efter Loven: 3-korts støtte (9 trumf)"
     },
     {
       "bud": "4 i farven",
       "noegle": "rosa",
-      "viser": "Videre spærring: 4-korts støtte (10 trumf)"
+      "viser": "Videre spærring efter Loven: 4-korts støtte (10 trumf)"
     },
     {
       "gruppe": "Åbners svar på Ogust"
@@ -399,11 +399,9 @@
   "faldgruber": [
     "Mindste minorer: 3♣ og 3♦ er de dårlige hænder.",
     "Tophonnørerne tælles kun i trumffarven: E, K og D.",
-    "Med svag hånd og støtte spærres videre – ikke Ogust."
+    "Med svag hånd og støtte spærres videre efter Loven – ikke Ogust."
   ],
-  "aabne": [
-    "Videre spærring: kilden nævner 1-2-3-reglen, træneren bruger Loven (3 i farven med 9 trumf, 4 med 10)."
-  ],
+  "aabne": [],
   "relaterede": [
     "RKC 1430"
   ],

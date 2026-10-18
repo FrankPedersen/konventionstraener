@@ -24,7 +24,7 @@
     "4♥"
    ],
    "bonus": {
-    "q": "Hvad er forskellen på 3♣ og 3♦ hos Makker 2 & mig?",
+    "q": "Hvad er forskellen på 3♣ og 3♦?",
     "correct": "3♣ = præcis 3 kort, 3♦ = 4+ kort – begge 10–12 sp",
     "options": [
      "3♣ = præcis 3 kort, 3♦ = 4+ kort – begge 10–12 sp",
@@ -35,7 +35,7 @@
    },
    "en": {
     "bonus": {
-     "q": "What is the difference between 3♣ and 3♦ for Partner 2 & me?",
+     "q": "What is the difference between 3♣ and 3♦?",
      "correct": "3♣ = exactly 3 cards, 3♦ = 4+ cards – both 10–12 support points",
      "options": [
       "3♣ = exactly 3 cards, 3♦ = 4+ cards – both 10–12 support points",
@@ -170,7 +170,7 @@
     "4♠"
    ],
    "bonus": {
-    "q": "Hvad er forskellen på 3♣ og 3♦ hos Makker 2 & mig?",
+    "q": "Hvad er forskellen på 3♣ og 3♦?",
     "correct": "3♣ = præcis 3 kort, 3♦ = 4+ kort – begge 10–12 sp",
     "options": [
      "3♣ = præcis 3 kort, 3♦ = 4+ kort – begge 10–12 sp",
@@ -181,7 +181,7 @@
    },
    "en": {
     "bonus": {
-     "q": "What is the difference between 3♣ and 3♦ for Partner 2 & me?",
+     "q": "What is the difference between 3♣ and 3♦?",
      "correct": "3♣ = exactly 3 cards, 3♦ = 4+ cards – both 10–12 support points",
      "options": [
       "3♣ = exactly 3 cards, 3♦ = 4+ cards – both 10–12 support points",

@@ -30,25 +30,25 @@
     "3♣"
    ],
    "bonus": {
-    "q": "Hvad viser en revers i forslaget?",
+    "q": "Hvad viser en revers?",
     "correct": "16+ hp og rundekrav",
     "options": [
      "16+ hp og rundekrav",
      "12–18 hp, ikke krav",
      "19–21 hp, udgangskrav"
     ],
-    "why": "Forslaget giver reversen en fast styrke: 16+ og rundekrav. I dag er den naturlig, 5-4, 12–18 hp og ikke krav. Med 19+ og 5-4 springer åbner i ny farve."
+    "why": "Reversen har en fast styrke: 16+ og rundekrav. Med 19+ og 5-4 springer åbner i ny farve."
    },
    "en": {
     "bonus": {
-     "q": "What does a reverse show in the proposal?",
+     "q": "What does a reverse show?",
      "correct": "16+ HCP and forcing for one round",
      "options": [
       "16+ HCP and forcing for one round",
       "12–18 HCP, non-forcing",
       "19–21 HCP, game forcing"
      ],
-     "why": "The proposal gives the reverse a fixed strength: 16+ and forcing for one round. Today it is natural, 5-4, 12–18 HCP and non-forcing. With 19+ and 5-4 opener jumps in a new suit."
+     "why": "The reverse has a fixed strength: 16+ and forcing for one round. With 19+ and 5-4 opener jumps in a new suit."
     }
    }
   },

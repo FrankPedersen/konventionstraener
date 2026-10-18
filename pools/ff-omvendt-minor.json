@@ -23,7 +23,7 @@
     "3NT"
    ],
    "bonus": {
-    "q": "Hvad viser 1♦ – 2♦ hos Makker 2 & mig?",
+    "q": "Hvad viser 1♦ – 2♦?",
     "correct": "10+ sp med stærk støtte – udgangskrav",
     "options": [
      "10+ sp med stærk støtte – udgangskrav",
@@ -34,7 +34,7 @@
    },
    "en": {
     "bonus": {
-     "q": "What does 1♦ – 2♦ show for Partner 2 & me?",
+     "q": "What does 1♦ – 2♦ show?",
      "correct": "10+ support points with strong support – game forcing",
      "options": [
       "10+ support points with strong support – game forcing",
@@ -120,7 +120,7 @@
     "3NT"
    ],
    "bonus": {
-    "q": "Hvad viser 1♦ – 2♦ hos Makker 2 & mig?",
+    "q": "Hvad viser 1♦ – 2♦?",
     "correct": "10+ sp med stærk støtte – udgangskrav",
     "options": [
      "10+ sp med stærk støtte – udgangskrav",
@@ -131,7 +131,7 @@
    },
    "en": {
     "bonus": {
-     "q": "What does 1♦ – 2♦ show for Partner 2 & me?",
+     "q": "What does 1♦ – 2♦ show?",
      "correct": "10+ support points with strong support – game forcing",
      "options": [
       "10+ support points with strong support – game forcing",
