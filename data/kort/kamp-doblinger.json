@@ -1,0 +1,297 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "kamp-doblinger",
+  "navn": "Doblinger – position og oplysende",
+  "undertitel": "Dobling = tag makker med på råd; styrken afhænger af positionen",
+  "kilde": "Kampen om kontrakten (efter 20-20 – kampen om kontrakten) · §6 · træneren pools/kamp-doblinger.json",
+  "kategori": "konkurrence",
+  "noegle": "bla",
+  "formaal": "At vide, hvornår en dobling er oplysende, og hvor meget den kræver i hver position.",
+  "situation": {
+    "auction": [
+      [
+        "Modstander",
+        "1♦"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Du overvejer at doble. Har du ekstra længde i en farve, melder du farven; skal makker afgøre, dobler du.",
+    "gaelderFor": "Oplysningsdoblinger i konkurrence"
+  },
+  "kortfortalt": "Der findes ikke ét pointinterval: direkte i anden hånd 12–17, i fjerde hånd efter to passer ca. 9+, og i 20-20 ingen nedre grænse. Så snart modparten har meldt og støttet hinanden, er alle doblinger i tidlige runder oplysende.",
+  "meldinger": [
+    {
+      "gruppe": "Styrke efter position"
+    },
+    {
+      "bud": "Anden hånd, direkte",
+      "noegle": "bla",
+      "styrke": "12–17 hp",
+      "viser": "Makker er ubegrænset – du skal selv have værdierne"
+    },
+    {
+      "bud": "Fjerde hånd efter to passer",
+      "noegle": "bla",
+      "styrke": "Ca. 9+ hp",
+      "viser": "Du låner 3–4 hp af makker"
+    },
+    {
+      "bud": "Fjerde hånd i 20-20",
+      "noegle": "bla",
+      "viser": "Ingen nedre grænse – fordeling og fællesskabets værdier"
+    },
+    {
+      "gruppe": "Oplysende eller straf"
+    },
+    {
+      "bud": "Oplysende",
+      "noegle": "bla",
+      "viser": "Modparten har meldt og støttet hinanden, eller vi har ingen tilpasning, og der er en umeldt farve"
+    },
+    {
+      "bud": "Straf",
+      "noegle": "brun",
+      "viser": "Vi har meldt og støttet hinanden, modparten har vist begrænset styrke i sans, eller doblingen er over 4 i major"
+    },
+    {
+      "gruppe": "Én umeldt farve"
+    },
+    {
+      "bud": "X",
+      "noegle": "bla",
+      "viser": "Den sidste farve og lidt medløb (typisk H-x) i makkers farve"
+    }
+  ],
+  "fortsaettelser": [],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♦"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          8,
+          7,
+          3
+        ],
+        "H": [
+          13,
+          4,
+          3
+        ],
+        "D": [
+          14,
+          6
+        ],
+        "C": [
+          12,
+          11,
+          4,
+          3
+        ]
+      },
+      "svar": "X",
+      "forklaring": "12 hp og kort i ruder: oplysningsdobling – i anden hånd skal du selv have værdierne (12–17)."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♦"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11,
+          3,
+          2
+        ],
+        "H": [
+          14,
+          10,
+          9,
+          3
+        ],
+        "D": [
+          13,
+          9
+        ],
+        "C": [
+          10,
+          5,
+          4,
+          2
+        ]
+      },
+      "svar": "Pas",
+      "forklaring": "Kun 8 hp: pas – direkte i anden hånd kræver dobling 12–17. (I fjerde hånd efter to passer kunne du låne.)"
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♠"
+        ],
+        [
+          "Makker",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "4♠"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12
+        ],
+        "H": [
+          14,
+          11,
+          9,
+          6
+        ],
+        "D": [
+          13,
+          8,
+          6,
+          4,
+          3
+        ],
+        "C": [
+          14,
+          8,
+          5
+        ]
+      },
+      "svar": "X",
+      "forklaring": "Kort i spar og plads til de tre andre farver (14 hp): dobling er oplysende – de har meldt og støttet."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♣"
+        ],
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "1♠"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          9,
+          7,
+          2
+        ],
+        "H": [
+          11,
+          2
+        ],
+        "D": [
+          13,
+          12,
+          6,
+          5,
+          4
+        ],
+        "C": [
+          14,
+          8,
+          6
+        ]
+      },
+      "svar": "X",
+      "forklaring": "Ruder og H-x i hjerter: dobling viser den sidste farve med lidt medløb i makkers farve."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♣"
+        ],
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "1♠"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          12,
+          7
+        ],
+        "H": [],
+        "D": [
+          14,
+          11,
+          10,
+          8,
+          7,
+          5,
+          4
+        ],
+        "C": [
+          9,
+          7,
+          6
+        ]
+      },
+      "svar": "2♦",
+      "forklaring": "7 ruder uden medløb i hjerter: 2♦ – meld din egen farve naturligt."
+    }
+  ],
+  "faldgruber": [
+    "En 9-punkts dobling i fjerde hånd svarer til 12–13 i anden hånd – lånet er kalibreret derefter.",
+    "Uden præference for makkers farve melder du din egen farve i stedet for at doble.",
+    "Grænsen for oplysende doblinger ligger over 4 i major, ikke ved."
+  ],
+  "aabne": [
+    "Bogen udvider det oplysende område uden at sige, hvor det slutter; grænsen her er et valg."
+  ],
+  "relaterede": [
+    "GIF – genåbning i fjerde hånd",
+    "20-20 – kampen om delkontrakten"
+  ],
+  "traener": {
+    "url": "traener.html?k=kamp-doblinger",
+    "pool": "pools/kamp-doblinger.json"
+  }
+}

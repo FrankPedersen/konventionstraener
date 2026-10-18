@@ -1,0 +1,302 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "kamp-stoette-minor",
+  "navn": "Minorstøtte og negativ dobling",
+  "undertitel": "Én trumf mere end i major på hvert trin – majoren vises først",
+  "kilde": "Kampen om kontrakten (efter 20-20 – kampen om kontrakten) · §5.4 · træneren pools/kamp-stoette-minor.json",
+  "kategori": "konkurrence",
+  "noegle": "gron",
+  "formaal": "At støtte makkers minor efter indmelding uden at miste en 4-4-tilpasning i major.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "1♣"
+      ],
+      [
+        "Modstander",
+        "1♥"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Makker har åbnet i minor, og modparten har meldt ind.",
+    "gaelderFor": "Svar efter indmelding over makkers 1♣/1♦"
+  },
+  "kortfortalt": "Minorstøtte kræver én trumf mere end i major: 2-trinnet 4 trumf, 3-trinnet 5 trumf, begge 6–9. Den negative dobling lover firfarve i den umeldte major – præcis fire, når femfarven kan meldes på 1-trinnet.",
+  "meldinger": [
+    {
+      "bud": "X",
+      "noegle": "bla",
+      "styrke": "6+ hp",
+      "viser": "Negativ: firfarve i den umeldte major"
+    },
+    {
+      "bud": "1♠ efter 1♣ (1♥)",
+      "noegle": "gron",
+      "styrke": "6+ hp",
+      "viser": "5+ spar"
+    },
+    {
+      "bud": "1NT",
+      "noegle": "brun",
+      "styrke": "6–10 hp",
+      "viser": "Hold i deres farve, benægter firfarve i spar"
+    },
+    {
+      "bud": "2 i makkers minor",
+      "noegle": "gron",
+      "styrke": "6–9 hp",
+      "viser": "Firkortstøtte"
+    },
+    {
+      "bud": "3 i makkers minor",
+      "noegle": "rosa",
+      "styrke": "6–9 hp",
+      "viser": "Femkortstøtte"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "brun",
+      "styrke": "10–12 hp",
+      "viser": "Hold i deres farve – invit"
+    },
+    {
+      "bud": "Fjendens farve",
+      "noegle": "bla",
+      "styrke": "10+ hp",
+      "viser": "Minorstøtte, benægter firfarve i spar"
+    }
+  ],
+  "fortsaettelser": [],
+  "indmelding": [
+    {
+      "situation": "1♦ (1♠)",
+      "noegle": "bla",
+      "regel": "Ingen 1-trins hjertermelding findes, så doblingen lover fire eller flere hjerter; 2♥ er 10+."
+    }
+  ],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♣"
+        ],
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11,
+          9,
+          6,
+          5
+        ],
+        "H": [
+          13,
+          8,
+          4
+        ],
+        "D": [
+          10,
+          6,
+          5
+        ],
+        "C": [
+          12,
+          11,
+          6
+        ]
+      },
+      "svar": "X",
+      "forklaring": "Præcis fire spar og 7 hp: negativ dobling."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♣"
+        ],
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          7,
+          5,
+          2
+        ],
+        "H": [
+          13,
+          12,
+          2
+        ],
+        "D": [
+          10,
+          9,
+          6
+        ],
+        "C": [
+          11,
+          10,
+          8,
+          2
+        ]
+      },
+      "svar": "2♣",
+      "forklaring": "4 klør og 6 hp: 2♣ – firkortstøtte (én trumf mere end i major)."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♣"
+        ],
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          10,
+          2
+        ],
+        "H": [
+          7,
+          2
+        ],
+        "D": [
+          13,
+          11,
+          10,
+          2
+        ],
+        "C": [
+          14,
+          10,
+          6,
+          5,
+          2
+        ]
+      },
+      "svar": "3♣",
+      "forklaring": "5 klør og 8 hp: 3♣ – femkortstøtte (én trumf mere end i major)."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♣"
+        ],
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          7
+        ],
+        "H": [
+          13,
+          9,
+          5
+        ],
+        "D": [
+          8,
+          4,
+          2
+        ],
+        "C": [
+          13,
+          10,
+          7,
+          4,
+          3
+        ]
+      },
+      "svar": "2♥",
+      "forklaring": "5 klør og 10 hp: overmelding i fjendens farve – minorstøtte og 10+."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "1♠"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          8,
+          4
+        ],
+        "H": [
+          14,
+          9,
+          6,
+          4
+        ],
+        "D": [
+          7,
+          6,
+          4
+        ],
+        "C": [
+          9,
+          4,
+          3
+        ]
+      },
+      "svar": "X",
+      "forklaring": "4 hjerter og 7 hp: negativ dobling – efter 1♦ (1♠) lover den fire eller flere hjerter."
+    }
+  ],
+  "faldgruber": [
+    "Minorstøtte kræver én trumf mere end majorstøtte.",
+    "Majoren vises før minorstøtten.",
+    "Efter 1♦ (1♠) lover doblingen fire eller flere hjerter – ikke præcis fire."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "Støtte efter indmelding over makkers åbning"
+  ],
+  "traener": {
+    "url": "traener.html?k=kamp-stoette-minor",
+    "pool": "pools/kamp-stoette-minor.json"
+  }
+}

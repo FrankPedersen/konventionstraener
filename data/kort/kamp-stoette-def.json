@@ -1,0 +1,347 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "kamp-stoette-def",
+  "navn": "Støtte efter makkers indmelding",
+  "undertitel": "Defensiven: støtten viser antallet af trumf, 10+ går via fjendens farve",
+  "kilde": "Kampen om kontrakten (efter 20-20 – kampen om kontrakten) · §5.1 · træneren pools/kamp-stoette-def.json",
+  "kategori": "konkurrence",
+  "noegle": "gron",
+  "formaal": "At vise graden af støtte med det samme, så modparten får det sidste gæt.",
+  "situation": {
+    "auction": [
+      [
+        "Modstander",
+        "1♣"
+      ],
+      [
+        "Makker",
+        "1♥"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Modparten har åbnet, makker har meldt ind, og du er fortsætter.",
+    "gaelderFor": "Svar på makkers simple indmelding (indmelder 8–17 hp)"
+  },
+  "kortfortalt": "Alle direkte støtter er 6–9 og viser antallet af trumf: enkeltstøtte 3, springstøtte 4, udgang 5 (destruktiv, 0–9). Med 10+ og støtte meldes fjendens farve; spring i ny farve er udgangskrav.",
+  "meldinger": [
+    {
+      "bud": "Enkeltstøtte",
+      "noegle": "gron",
+      "styrke": "6–9 hp",
+      "viser": "Tre trumf"
+    },
+    {
+      "bud": "Springstøtte",
+      "noegle": "rosa",
+      "styrke": "6–9 hp",
+      "viser": "Fire trumf"
+    },
+    {
+      "bud": "4 i major",
+      "noegle": "rosa",
+      "styrke": "0–9 hp",
+      "viser": "Fem trumf – altid destruktiv"
+    },
+    {
+      "bud": "Fjendens farve",
+      "noegle": "bla",
+      "styrke": "10+ hp",
+      "viser": "Mindst trekortstøtte"
+    },
+    {
+      "bud": "1NT",
+      "noegle": "brun",
+      "styrke": "8–11 hp",
+      "viser": "Forbedring af kontrakten, hold"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "brun",
+      "styrke": "11–14 hp",
+      "viser": "Invit med hold (10–12 efter indmelding på 2-trinnet)"
+    },
+    {
+      "bud": "3NT",
+      "noegle": "brun",
+      "styrke": "15+ hp",
+      "viser": "For at spille"
+    },
+    {
+      "bud": "Ny farve",
+      "noegle": "gron",
+      "styrke": "8–14 hp",
+      "viser": "Mindst femfarve. Ikke krav"
+    },
+    {
+      "bud": "Spring i ny farve",
+      "noegle": "bla",
+      "viser": "Udgangskrav – så længe fjerde hånd ikke har meldt"
+    }
+  ],
+  "fortsaettelser": [],
+  "indmelding": [
+    {
+      "situation": "Efter to passer (fjerde hånd)",
+      "noegle": "gra",
+      "regel": "Spring er konstruktive, ikke krav."
+    },
+    {
+      "situation": "Alle fire melder",
+      "noegle": "gra",
+      "regel": "Ny farve skaber aldrig krav."
+    }
+  ],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♣"
+        ],
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          8,
+          7
+        ],
+        "H": [
+          7,
+          6,
+          2
+        ],
+        "D": [
+          12,
+          10,
+          5,
+          2
+        ],
+        "C": [
+          11,
+          7,
+          4
+        ]
+      },
+      "svar": "2♥",
+      "forklaring": "3 trumf og 7 hp: 2♥ – enkeltstøtte, 6–9."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♣"
+        ],
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          7,
+          6,
+          3
+        ],
+        "H": [
+          14,
+          11,
+          7,
+          3
+        ],
+        "D": [
+          6,
+          2
+        ],
+        "C": [
+          10,
+          8,
+          4
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "4 trumf og 9 hp: springstøtte 3♥ – 6–9 med fire trumf."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♣"
+        ],
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          9,
+          8,
+          3,
+          2
+        ],
+        "H": [
+          10,
+          9,
+          6,
+          5,
+          4,
+          3
+        ],
+        "D": [
+          6
+        ],
+        "C": [
+          14,
+          2
+        ]
+      },
+      "svar": "4♥",
+      "forklaring": "5 trumf og kun 4 hp: 4♥ – direkte udgang er destruktiv (0–9)."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♣"
+        ],
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          10,
+          9,
+          6,
+          2
+        ],
+        "H": [
+          12,
+          11,
+          9,
+          7
+        ],
+        "D": [
+          14,
+          7,
+          5,
+          4
+        ],
+        "C": [
+          13
+        ]
+      },
+      "svar": "2♣",
+      "forklaring": "4 hjerter og 10 hp: overmelding i fjendens farve – støtte og 10+."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♣"
+        ],
+        [
+          "Makker",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          9,
+          6,
+          2
+        ],
+        "H": [
+          14,
+          4,
+          2
+        ],
+        "D": [
+          11,
+          9,
+          5,
+          3
+        ],
+        "C": [
+          14,
+          4,
+          3
+        ]
+      },
+      "svar": "2♠",
+      "forklaring": "3 trumf og 9 hp: 2♠ – støtten går forud for 1NT (fit før sansforbedring)."
+    }
+  ],
+  "faldgruber": [
+    "Spring i makkers farve er svagt (6–9); spring i ny farve er udgangskrav.",
+    "Direkte udgang er altid destruktiv – konstruktive udgangshænder går via fjendens farve.",
+    "Tre-trins-raketten fra offensiven (6–9 / 10–12 / 13–15) bruges ikke her.",
+    "Med trekortstøtte og hold i 8–9-området vælges støtten frem for 1NT."
+  ],
+  "aabne": [
+    "4 i major: bogen siger 6–9; her 0–9, så 0–5 med femkortstøtte også har en melding.",
+    "Spring i ny farve: bogen definerer det ikke. Andre spiller fit-jump eller splinter."
+  ],
+  "relaterede": [
+    "Støtte efter indmelding over makkers åbning",
+    "Efter modpartens oplysningsdobling"
+  ],
+  "traener": {
+    "url": "traener.html?k=kamp-stoette-def",
+    "pool": "pools/kamp-stoette-def.json"
+  }
+}

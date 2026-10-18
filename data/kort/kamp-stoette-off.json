@@ -1,0 +1,313 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "kamp-stoette-off",
+  "navn": "Støtte efter indmelding over makkers åbning",
+  "undertitel": "Offensiven: 2M, 3M og 4M viser 3, 4 og 5 trumf",
+  "kilde": "Kampen om kontrakten (efter 20-20 – kampen om kontrakten) · §5.2 · træneren pools/kamp-stoette-off.json",
+  "kategori": "konkurrence",
+  "noegle": "gron",
+  "formaal": "At vise støtten fuldt ud med de små hænder, så modparten ikke får plads.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "1♥"
+      ],
+      [
+        "Modstander",
+        "2♣"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Makker har åbnet i major, og modparten har meldt ind.",
+    "gaelderFor": "Svar efter indmelding over makkers åbning"
+  },
+  "kortfortalt": "2M, 3M og 4M viser 3, 4 og 5 trumf, alle 6–9. Med 10+ og tilpasning meldes fjendens farve, og dobling er negativ.",
+  "meldinger": [
+    {
+      "bud": "2M",
+      "noegle": "gron",
+      "styrke": "6–9 hp",
+      "viser": "Trekortstøtte"
+    },
+    {
+      "bud": "3M",
+      "noegle": "rosa",
+      "styrke": "6–9 hp",
+      "viser": "Firkortstøtte"
+    },
+    {
+      "bud": "4M",
+      "noegle": "rosa",
+      "styrke": "6–9 hp",
+      "viser": "Femkortstøtte"
+    },
+    {
+      "bud": "Fjendens farve",
+      "noegle": "bla",
+      "styrke": "10+ hp",
+      "viser": "Tilpasning (i profil Turnering præcis invit, 10–12)"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "brun",
+      "viser": "Naturlig invit (i profil Turnering Stenberg: firkortstøtte og udgangskrav)"
+    },
+    {
+      "bud": "Ny farve på 1-trinnet",
+      "noegle": "gron",
+      "styrke": "6+ hp",
+      "viser": "Naturlig"
+    },
+    {
+      "bud": "Ny farve på 2-trinnet",
+      "noegle": "gron",
+      "styrke": "10+ hp",
+      "viser": "Naturlig"
+    },
+    {
+      "bud": "Ny farve på 3-trinnet billigst",
+      "noegle": "bla",
+      "viser": "Udgangskrav"
+    },
+    {
+      "bud": "X",
+      "noegle": "bla",
+      "viser": "Negativ dobling"
+    }
+  ],
+  "fortsaettelser": [],
+  "indmelding": [
+    {
+      "situation": "Alle fire melder",
+      "noegle": "gra",
+      "regel": "Ny farve skaber aldrig krav – heller ikke på 3-trinnet."
+    }
+  ],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "2♣"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          12,
+          2
+        ],
+        "H": [
+          10,
+          3,
+          2
+        ],
+        "D": [
+          14,
+          10,
+          9,
+          6
+        ],
+        "C": [
+          10,
+          5,
+          4
+        ]
+      },
+      "svar": "2♥",
+      "forklaring": "3 trumf og 9 hp: 2♥ – støtten viser antallet af trumf (6–9)."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "2♣"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11,
+          10
+        ],
+        "H": [
+          14,
+          10,
+          8,
+          7
+        ],
+        "D": [
+          10,
+          7,
+          6
+        ],
+        "C": [
+          12,
+          10,
+          7,
+          6
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "4 trumf og 7 hp: 3♥ – støtten viser antallet af trumf (6–9)."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "2♣"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          7,
+          6,
+          3
+        ],
+        "H": [
+          14,
+          12,
+          8,
+          7
+        ],
+        "D": [
+          11,
+          8
+        ],
+        "C": [
+          13,
+          10,
+          9,
+          3
+        ]
+      },
+      "svar": "3♣",
+      "forklaring": "4 trumf og 10 hp: overmelding i fjendens farve – støtte og 10+ (i Turnering præcis invit 10–12)."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "2♣"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          12,
+          9,
+          8
+        ],
+        "H": [
+          9,
+          8
+        ],
+        "D": [
+          11,
+          10,
+          2
+        ],
+        "C": [
+          14,
+          10,
+          9,
+          4
+        ]
+      },
+      "svar": "X",
+      "forklaring": "4 spar og 10 hp: negativ dobling."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "2♣"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          5,
+          4
+        ],
+        "H": [
+          9,
+          3
+        ],
+        "D": [
+          14,
+          12,
+          7,
+          4
+        ],
+        "C": [
+          13,
+          6,
+          5,
+          4
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "11 hp og hold i klør: 2NT – naturlig invit."
+    }
+  ],
+  "faldgruber": [
+    "Det er de små hænder med 6–9, der skal støtte fuldt ud – med 10+ er det sjældent vigtigt at spærre.",
+    "3M og 4M er ikke invitationer: de viser antallet af trumf."
+  ],
+  "aabne": [
+    "Stenberg 2NT (firkortstøtte og udgangskrav) eller naturlig 2NT? Træneren bruger Stenberg kun i profilen Turnering."
+  ],
+  "relaterede": [
+    "Støtte efter makkers indmelding",
+    "Minorstøtte og negativ dobling"
+  ],
+  "traener": {
+    "url": "traener.html?k=kamp-stoette-off",
+    "pool": "pools/kamp-stoette-off.json"
+  }
+}

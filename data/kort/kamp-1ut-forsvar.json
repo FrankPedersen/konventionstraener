@@ -1,0 +1,310 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "kamp-1ut-forsvar",
+  "navn": "Indmelding over vores 1NT",
+  "undertitel": "Stayman og overføringer bortfalder, når modparten melder ind",
+  "kilde": "Kampen om kontrakten (efter 20-20 – kampen om kontrakten) · §9 · træneren pools/kamp-1ut-forsvar.json",
+  "kategori": "konkurrence",
+  "noegle": "gron",
+  "formaal": "At finde den rigtige kontrakt, når modparten melder ind over vores 1NT-åbning.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "1NT"
+      ],
+      [
+        "Modstander",
+        "2♥"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Makker har åbnet 1NT, og modparten melder ind.",
+    "gaelderFor": "Svar efter indmelding eller strafdobling over makkers 1NT"
+  },
+  "kortfortalt": "Ny farve billigst er for at spille, spring er krav (5+), dobling er oplysende, og overmelding i fjendens farve er udgangskrav, der søger hold. Efter strafdobling af 1NT viser redobling 7+, og farverne er svage flugtmeldinger.",
+  "meldinger": [
+    {
+      "gruppe": "Efter indmelding i farve"
+    },
+    {
+      "bud": "Ny farve billigst",
+      "noegle": "gron",
+      "viser": "Ønske om at spille"
+    },
+    {
+      "bud": "Ny farve med spring",
+      "noegle": "bla",
+      "viser": "Krav, mindst femfarve"
+    },
+    {
+      "bud": "X",
+      "noegle": "bla",
+      "viser": "Oplysende"
+    },
+    {
+      "bud": "Fjendens farve",
+      "noegle": "bla",
+      "viser": "Udgangskrav, søger hold"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "brun",
+      "viser": "Invit"
+    },
+    {
+      "bud": "Udgang",
+      "noegle": "gron",
+      "viser": "Slutkontrakt"
+    },
+    {
+      "gruppe": "Efter strafdobling af 1NT"
+    },
+    {
+      "bud": "XX",
+      "noegle": "bla",
+      "styrke": "7+ hp",
+      "viser": "Lægger op til strafdobling, hvis de flygter"
+    },
+    {
+      "bud": "2♣ / 2♦ / 2♥ / 2♠",
+      "noegle": "gra",
+      "styrke": "0–6 hp",
+      "viser": "Svag med femfarve – flygt altid i femfarven"
+    }
+  ],
+  "fortsaettelser": [],
+  "indmelding": [
+    {
+      "situation": "Doblingen er konventionel",
+      "noegle": "gra",
+      "regel": "Sanssystemet fastholdes."
+    }
+  ],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Makker",
+          "1NT"
+        ],
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          10,
+          9,
+          8,
+          3
+        ],
+        "H": [
+          12,
+          9,
+          7
+        ],
+        "D": [
+          10
+        ],
+        "C": [
+          12,
+          6,
+          3,
+          2
+        ]
+      },
+      "svar": "2♠",
+      "forklaring": "5 spar og 8 hp: 2♠ – ønske om at spille."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1NT"
+        ],
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          8,
+          7,
+          6,
+          5,
+          4
+        ],
+        "H": [
+          13,
+          2
+        ],
+        "D": [
+          4
+        ],
+        "C": [
+          14,
+          10,
+          6,
+          4
+        ]
+      },
+      "svar": "3♠",
+      "forklaring": "6 spar og 10 hp: 3♠ – spring er krav, mindst femfarve."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1NT"
+        ],
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          9,
+          8,
+          6,
+          3
+        ],
+        "H": [
+          3
+        ],
+        "D": [
+          12,
+          9,
+          5,
+          2
+        ],
+        "C": [
+          14,
+          10,
+          6,
+          3
+        ]
+      },
+      "svar": "X",
+      "forklaring": "4 spar og kort i hjerter (6 hp): dobling – oplysende."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1NT"
+        ],
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          7,
+          6
+        ],
+        "H": [
+          10,
+          9
+        ],
+        "D": [
+          14,
+          12,
+          6,
+          4
+        ],
+        "C": [
+          13,
+          11,
+          8,
+          5
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "13 hp uden hold i hjerter: 3♥ – overmelding i fjendens farve, udgangskrav og søger hold."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1NT"
+        ],
+        [
+          "Modstander",
+          "X"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          7,
+          5,
+          4
+        ],
+        "H": [
+          12,
+          10,
+          4
+        ],
+        "D": [
+          13,
+          11,
+          7,
+          5,
+          2
+        ],
+        "C": [
+          6,
+          2
+        ]
+      },
+      "svar": "2♦",
+      "forklaring": "6 hp og 5 ruder: 2♦ – flygt altid i femfarven."
+    }
+  ],
+  "faldgruber": [
+    "Stayman og overføringer gælder ikke efter en indmelding.",
+    "Uden Lebensohl kan stopmeldinger og invitationer ikke skelnes."
+  ],
+  "aabne": [
+    "Lebensohl (2NT relæ til 3♣; direkte 3-melding krav) løser tvetydigheden. Træneren bruger den kun i profilen Turnering."
+  ],
+  "relaterede": [
+    "Fjenden melder 1NT ind",
+    "Lebensohl"
+  ],
+  "traener": {
+    "url": "traener.html?k=kamp-1ut-forsvar",
+    "pool": "pools/kamp-1ut-forsvar.json"
+  }
+}

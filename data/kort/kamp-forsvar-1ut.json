@@ -1,0 +1,384 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "kamp-forsvar-1ut",
+  "navn": "Forsvar mod 1NT",
+  "undertitel": "Landy, DONT eller Multiforsvar mod modstandernes 1NT",
+  "kilde": "Kampen om kontrakten (efter 20-20 – kampen om kontrakten) · §13 · træneren pools/kamp-landy.json",
+  "kategori": "forsvar",
+  "noegle": "gul",
+  "alert": "2♣ (Landy) alerteres",
+  "formaal": "At konkurrere mod modstandernes 1NT med en fast metode, valgt før hånden ses.",
+  "situation": {
+    "auction": [
+      [
+        "Modstander",
+        "1NT"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Modparten åbner 1NT. I træneren vælges metoden først: Landy, DONT eller Multiforsvar.",
+    "gaelderFor": "Direkte efter modpartens 1NT-åbning"
+  },
+  "kortfortalt": "Med Landy viser 2♣ begge majorer (mindst 5-4, 8–14 hp), dobling er straf (15+), og andre farver er naturlige 6-farver. DONT og Multiforsvar har hver deres kort.",
+  "meldinger": [
+    {
+      "gruppe": "Landy"
+    },
+    {
+      "bud": "X",
+      "noegle": "brun",
+      "styrke": "15+ hp",
+      "viser": "Straf"
+    },
+    {
+      "bud": "2♣",
+      "noegle": "gul",
+      "styrke": "8–14 hp",
+      "viser": "Begge majorer, mindst 5-4"
+    },
+    {
+      "bud": "2♦ / 2♥ / 2♠",
+      "noegle": "gron",
+      "styrke": "8–14 hp",
+      "viser": "Naturlig 6-farve"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "gul",
+      "viser": "Begge minorer, mindst 5-5"
+    },
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "viser": "Under 8 hp eller ingen melding"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Svar på Landy 2♣",
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "2♥ / 2♠",
+          "noegle": "gron",
+          "viser": "Længste major, svag – pas eller ret"
+        },
+        {
+          "bud": "2♦",
+          "noegle": "gul",
+          "viser": "Lige lange majorer – makker vælger"
+        },
+        {
+          "bud": "2NT",
+          "noegle": "bla",
+          "styrke": "12+ hp",
+          "viser": "Spørger – udgang er mulig"
+        },
+        {
+          "bud": "3♥ / 3♠",
+          "noegle": "gron",
+          "styrke": "9–11 hp",
+          "viser": "Invit med firkortstøtte"
+        },
+        {
+          "bud": "Pas",
+          "noegle": "gra",
+          "viser": "Lange klør og korte majorer"
+        }
+      ]
+    },
+    {
+      "titel": "Indmelder efter 2♣ – 2♦",
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Dig",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "2♥ / 2♠",
+          "noegle": "gron",
+          "viser": "Femfarven"
+        }
+      ]
+    }
+  ],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          13,
+          9,
+          3
+        ],
+        "H": [
+          14,
+          10,
+          7,
+          5,
+          3
+        ],
+        "D": [
+          12,
+          9,
+          7
+        ],
+        "C": [
+          6
+        ]
+      },
+      "svar": "2♣",
+      "forklaring": "5 hjerter og 4 spar: 2♣ – Landy, begge majorer (mindst 5-4)."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          9
+        ],
+        "H": [
+          14,
+          13,
+          12,
+          8,
+          2
+        ],
+        "D": [
+          8,
+          7,
+          4,
+          2
+        ],
+        "C": [
+          12,
+          3
+        ]
+      },
+      "svar": "X",
+      "forklaring": "15 hp: dobling er straf (15+) – du har lige så meget som åbneren."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          8,
+          3
+        ],
+        "H": [
+          9,
+          7,
+          3
+        ],
+        "D": [
+          10,
+          8,
+          5,
+          2
+        ],
+        "C": [
+          14,
+          7,
+          6
+        ]
+      },
+      "svar": "2♦",
+      "forklaring": "Lige mange hjerter og spar (3-3): 2♦ – makker vælger sin længste major."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          5
+        ],
+        "H": [
+          14,
+          10,
+          9,
+          3
+        ],
+        "D": [
+          13,
+          10,
+          8,
+          7
+        ],
+        "C": [
+          13,
+          8,
+          7,
+          6
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "4 hjerter og 10 hp: spring til 3♥ – invit med støtte."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Dig",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11,
+          7,
+          6,
+          5,
+          4
+        ],
+        "H": [
+          13,
+          11,
+          5,
+          3
+        ],
+        "D": [
+          11
+        ],
+        "C": [
+          13,
+          7,
+          3
+        ]
+      },
+      "svar": "2♠",
+      "forklaring": "Makker har lige lange majorer: vælg din femfarve – 2♠."
+    }
+  ],
+  "faldgruber": [
+    "Med Landy er doblingen straf (15+) – ikke oplysning.",
+    "Svarer vælger major på laveste niveau med en svag hånd – 2♦ viser lige lange majorer.",
+    "Metoden vælges før hånden – meldingerne betyder noget forskelligt i Landy, DONT og Multiforsvar."
+  ],
+  "aabne": [
+    "Bogen tager ikke stilling til forsvaret mod 1NT; metoden er et valg."
+  ],
+  "relaterede": [
+    "DONT",
+    "Multiforsvar"
+  ],
+  "traener": {
+    "url": "traener.html?k=kamp-forsvar-1ut",
+    "pool": "pools/kamp-landy.json"
+  }
+}

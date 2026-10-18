@@ -1,0 +1,288 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "kamp-1ut-indmeldt",
+  "navn": "Fjenden melder 1NT ind",
+  "undertitel": "Efter makkers åbning og deres 1NT: dobling er straf og stærkest",
+  "kilde": "Kampen om kontrakten (efter 20-20 – kampen om kontrakten) · §8 · træneren pools/kamp-1ut-indmeldt.json",
+  "kategori": "konkurrence",
+  "noegle": "brun",
+  "formaal": "At straffe modpartens 1NT-indmelding, når vi har flest point, og ellers konkurrere på fordeling.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "1♥"
+      ],
+      [
+        "Modstander",
+        "1NT"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Makker har åbnet, og modparten melder 1NT ind.",
+    "gaelderFor": "Svar efter modpartens 1NT-indmelding over makkers åbning"
+  },
+  "kortfortalt": "Dobling er straf og den stærkeste melding (9+). Simpel støtte er naturlig, springstøtte destruktiv, og ny farve er den svageste melding.",
+  "meldinger": [
+    {
+      "bud": "X",
+      "noegle": "brun",
+      "styrke": "9+ hp",
+      "viser": "Straf – den stærkeste melding"
+    },
+    {
+      "bud": "Simpel støtte",
+      "noegle": "gron",
+      "styrke": "6–9 hp",
+      "viser": "Naturlig"
+    },
+    {
+      "bud": "Springstøtte",
+      "noegle": "rosa",
+      "viser": "Destruktiv: 4+ trumf, skæv hånd"
+    },
+    {
+      "bud": "Ny farve",
+      "noegle": "gron",
+      "styrke": "Under 9 hp",
+      "viser": "Svag, ikke krav, ofte seksfarve"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "gul",
+      "viser": "Mindst 5-5, ofte 6-5 – spillestærk, men honnørsvag"
+    },
+    {
+      "bud": "X, derefter ny farve",
+      "noegle": "bla",
+      "viser": "Krav"
+    }
+  ],
+  "fortsaettelser": [],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          10,
+          7
+        ],
+        "H": [
+          13,
+          12,
+          5,
+          2
+        ],
+        "D": [
+          7,
+          3,
+          2
+        ],
+        "C": [
+          13,
+          12,
+          8,
+          7
+        ]
+      },
+      "svar": "X",
+      "forklaring": "10 hp: dobling – straf og den stærkeste melding (9+)."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          2
+        ],
+        "H": [
+          12,
+          10,
+          5,
+          2
+        ],
+        "D": [
+          12,
+          9,
+          7,
+          3
+        ],
+        "C": [
+          13,
+          8,
+          5,
+          4
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "4 trumf og korthed: 3♥ – springstøtten er destruktiv."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          11,
+          10,
+          4
+        ],
+        "H": [
+          12,
+          9,
+          7
+        ],
+        "D": [
+          12,
+          6
+        ],
+        "C": [
+          10,
+          9,
+          7,
+          3
+        ]
+      },
+      "svar": "2♥",
+      "forklaring": "3 hjerter og 8 hp: 2♥ – naturlig støtte."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          4,
+          3
+        ],
+        "H": [
+          8
+        ],
+        "D": [
+          10,
+          2
+        ],
+        "C": [
+          12,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4
+        ]
+      },
+      "svar": "2♣",
+      "forklaring": "7 klør og 5 hp: 2♣ – svag og ikke krav (ny farve er den svageste melding her)."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          8
+        ],
+        "H": [
+          3
+        ],
+        "D": [
+          11,
+          6,
+          5,
+          4,
+          2
+        ],
+        "C": [
+          14,
+          12,
+          11,
+          5,
+          4,
+          3
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "6-5 i minorerne: 2NT – spillestærk, men honnørsvag."
+    }
+  ],
+  "faldgruber": [
+    "2-over-1 gælder ikke her: ny farve er den svageste melding, ikke den stærkeste.",
+    "Doblingen er straf, ikke oplysende."
+  ],
+  "aabne": [
+    "Bogen har ingen kravmelding efter 1NT-indmeldingen; her er dobling efterfulgt af ny farve krav."
+  ],
+  "relaterede": [
+    "Indmelding over vores 1NT"
+  ],
+  "traener": {
+    "url": "traener.html?k=kamp-1ut-indmeldt",
+    "pool": "pools/kamp-1ut-indmeldt.json"
+  }
+}

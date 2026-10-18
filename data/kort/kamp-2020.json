@@ -1,0 +1,402 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "kamp-2020",
+  "navn": "20-20 – kampen om delkontrakten",
+  "undertitel": "Sælg ikke ud under 2♠, når modparten har fundet tilpasning",
+  "kilde": "Kampen om kontrakten (efter 20-20 – kampen om kontrakten) · §2, §4 og §11 · træneren pools/kamp-2020.json",
+  "kategori": "konkurrence",
+  "noegle": "gron",
+  "formaal": "At kæmpe om delkontrakten, når modparten har fundet tilpasning og stoppet lavt, og vi har omtrent halvdelen af pointene.",
+  "situation": {
+    "auction": [
+      [
+        "Modstander",
+        "1♥"
+      ],
+      [
+        "Dig",
+        "Pas"
+      ],
+      [
+        "Modstander",
+        "2♥"
+      ],
+      [
+        "Makker",
+        "Pas"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Modparten har fundet tilpasning og stoppet på 2-trinnet (typisk 18–22 hp tilsammen).",
+    "gaelderFor": "Delkontraktkampe, hvor begge sider har omkring halvdelen af pointene"
+  },
+  "kortfortalt": "Antal trumf, I har tilsammen, er antal stik, I forpligter jer til: 8 til 2-trinnet, 9 til 3, 10 til 4. Har modparten tilpasning, har I det også – meld på fordeling, og dobl for at tage makker med på råd.",
+  "meldinger": [
+    {
+      "gruppe": "Fjerde hånd efter (1♥) pas (2♥) pas (pas)"
+    },
+    {
+      "bud": "X",
+      "noegle": "bla",
+      "viser": "Kort i deres farve, plads til de andre – tag makker med på råd"
+    },
+    {
+      "bud": "Farve",
+      "noegle": "gron",
+      "viser": "5+ farve og kort i deres farve – sælg ikke ud på 2-trinnet"
+    },
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "viser": "Længde i deres farve og ingen fordeling at kæmpe med"
+    },
+    {
+      "gruppe": "Trumfreglen"
+    },
+    {
+      "bud": "8 trumf",
+      "noegle": "gron",
+      "viser": "2-trinnet"
+    },
+    {
+      "bud": "9 trumf",
+      "noegle": "gron",
+      "viser": "3-trinnet"
+    },
+    {
+      "bud": "10 trumf",
+      "noegle": "gron",
+      "viser": "4-trinnet"
+    },
+    {
+      "bud": "11 trumf",
+      "noegle": "gron",
+      "viser": "5-trinnet"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Åbner i kampen",
+      "auction": [
+        [
+          "Dig",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Makker",
+          "2♠"
+        ],
+        [
+          "Modstander",
+          "3♥"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "3♠",
+          "noegle": "gron",
+          "viser": "9 trumf bærer 3-trinnet"
+        },
+        {
+          "bud": "Pas",
+          "noegle": "gra",
+          "viser": "8 trumf i zonen – én trumf mere kræves for det sidste trin"
+        }
+      ],
+      "note": "Zonen: trumfreglen gælder uden for zonen. I zonen kræves én ekstra trumf eller klar fordelingsværdi for det sidste trin."
+    }
+  ],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Dig",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Makker",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          13,
+          7,
+          4
+        ],
+        "H": [
+          6,
+          3
+        ],
+        "D": [
+          13,
+          9,
+          6,
+          4
+        ],
+        "C": [
+          9,
+          8,
+          2
+        ]
+      },
+      "svar": "X",
+      "forklaring": "Kort i hjerter og plads til alle de andre: dobling – tag makker med på råd. I har omtrent halvdelen af pointene."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Dig",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Makker",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          10,
+          5,
+          2
+        ],
+        "H": [
+          5
+        ],
+        "D": [
+          12,
+          11,
+          7
+        ],
+        "C": [
+          13,
+          11,
+          10,
+          6,
+          3
+        ]
+      },
+      "svar": "3♣",
+      "forklaring": "5 klør og kort i hjerter: 3♣ – sælg ikke ud på 2-trinnet, de har fundet tilpasning."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Dig",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Makker",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          9,
+          8
+        ],
+        "H": [
+          12,
+          7,
+          6,
+          3
+        ],
+        "D": [
+          12,
+          11,
+          2
+        ],
+        "C": [
+          10,
+          5,
+          3
+        ]
+      },
+      "svar": "Pas",
+      "forklaring": "4 hjerter: makker er kort, og du har ingen fordeling at kæmpe med – pas."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Makker",
+          "2♠"
+        ],
+        [
+          "Modstander",
+          "3♥"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          12,
+          7,
+          6,
+          2
+        ],
+        "H": [
+          6,
+          4
+        ],
+        "D": [
+          12,
+          4,
+          2
+        ],
+        "C": [
+          14,
+          3,
+          2
+        ]
+      },
+      "svar": "Pas",
+      "forklaring": "8 trumf og I er i zonen: pas – i zonen kræves én trumf mere for det sidste trin."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Makker",
+          "2♠"
+        ],
+        [
+          "Modstander",
+          "3♥"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          10,
+          9,
+          7,
+          3,
+          2
+        ],
+        "H": [
+          13,
+          11
+        ],
+        "D": [
+          14,
+          12,
+          11,
+          4
+        ],
+        "C": [
+          4
+        ]
+      },
+      "svar": "3♠",
+      "forklaring": "9 trumf: 3♠ – I er i zonen, og ni trumf bærer 3-trinnet."
+    }
+  ],
+  "faldgruber": [
+    "Strafdobl ikke, blot fordi modparten melder en gang til – vinder 3♥ doblet, bliver −140 til −530/−730.",
+    "Straf ikke makker for at genåbne.",
+    "Det er hånden med fordelingen, der skal kæmpe."
+  ],
+  "aabne": [
+    "2-3-4-reglen kan give et andet svar end trumfreglen. Her gælder den kun for rene spærremeldinger i første melderunde."
+  ],
+  "relaterede": [
+    "GIF – genåbning i fjerde hånd",
+    "Doblinger – position og oplysende",
+    "Kravpas og Loven"
+  ],
+  "traener": {
+    "url": "traener.html?k=kamp-2020",
+    "pool": "pools/kamp-2020.json"
+  }
+}

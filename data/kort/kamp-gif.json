@@ -1,0 +1,391 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "kamp-gif",
+  "navn": "GIF – genåbning i fjerde hånd",
+  "undertitel": "Lån 3–4 hp af makker på ujævne hænder – jævne hænder låner ikke",
+  "kilde": "Kampen om kontrakten (efter 20-20 – kampen om kontrakten) · §7 · træneren pools/kamp-gif.json",
+  "kategori": "konkurrence",
+  "noegle": "gron",
+  "formaal": "At genåbne, når modparten stopper på 1-trinnet, og makker kan sidde med op til 17 hp uden naturlig melding.",
+  "situation": {
+    "auction": [
+      [
+        "Modstander",
+        "1♦"
+      ],
+      [
+        "Makker",
+        "Pas"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Modparten åbner 1 i farve, og det går pas – pas til dig. Højre modstander har vist 0–5 hp.",
+    "gaelderFor": "(1 i farve) – pas – (pas) – ?"
+  },
+  "kortfortalt": "Ujævne hænder låner 3–4 hp: dobling fra ca. 9 hp, farve 7–14, og spring er konstruktive. Jævne hænder låner ikke: pas under 11, 1NT 11–14, dobling og sans 15–18, 2NT 19–21.",
+  "meldinger": [
+    {
+      "gruppe": "Jævne hænder (intet lån)"
+    },
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "styrke": "Under 11 hp",
+      "viser": "For lidt til at genåbne"
+    },
+    {
+      "bud": "1NT",
+      "noegle": "brun",
+      "styrke": "11–14 hp",
+      "viser": "Jævn"
+    },
+    {
+      "bud": "X, derefter sans billigst",
+      "noegle": "brun",
+      "styrke": "15–18 hp",
+      "viser": "Jævn"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "brun",
+      "styrke": "19–21 hp",
+      "viser": "Jævn"
+    },
+    {
+      "bud": "X, derefter spring i sans",
+      "noegle": "brun",
+      "styrke": "22–24 hp",
+      "viser": "Jævn"
+    },
+    {
+      "gruppe": "Ujævne hænder (lån 3–4 hp)"
+    },
+    {
+      "bud": "X",
+      "noegle": "bla",
+      "styrke": "Ca. 9+ hp",
+      "viser": "Rigtig fordeling, kort i deres farve"
+    },
+    {
+      "bud": "Farve",
+      "noegle": "gron",
+      "styrke": "Ca. 7–14 hp",
+      "viser": "Naturlig"
+    },
+    {
+      "bud": "Spring på 2-trinnet",
+      "noegle": "gron",
+      "styrke": "11–14 hp",
+      "viser": "Seksfarve – konstruktivt, ikke spærrende"
+    },
+    {
+      "bud": "3 i minor",
+      "noegle": "gron",
+      "styrke": "14–16 hp",
+      "viser": "Seksfarve"
+    },
+    {
+      "bud": "3 i major",
+      "noegle": "gron",
+      "viser": "God seksfarve – stikpotentiale vejer tungere end hp"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Makker efter dobling i fjerde hånd",
+      "meldinger": [
+        {
+          "bud": "2 i major",
+          "noegle": "gron",
+          "viser": "9–12 hp efter fratræk af 3"
+        },
+        {
+          "bud": "Springstøtte 3 i major",
+          "noegle": "rosa",
+          "styrke": "8–9 hp",
+          "viser": "Firkortstøtte og kortfarve"
+        },
+        {
+          "bud": "Fjendens farve",
+          "noegle": "bla",
+          "styrke": "12–14 hp",
+          "viser": "Stærk jævn med tilpasning"
+        },
+        {
+          "bud": "1NT",
+          "noegle": "brun",
+          "viser": "Hold, op til 12–13 hp"
+        },
+        {
+          "bud": "2NT",
+          "noegle": "brun",
+          "styrke": "13–14 hp",
+          "viser": "Hold"
+        }
+      ],
+      "note": "Makker trækker 3 hp fra. Springstøtten lover færre point end simpel støtte, fordi den bygger på fordeling."
+    }
+  ],
+  "indmelding": [
+    {
+      "situation": "Tredje hånd har meldt",
+      "noegle": "gra",
+      "regel": "Undtagelsen gælder ikke: spring er spærrende som i anden hånd."
+    },
+    {
+      "situation": "Efter modpartens svage 2-åbning",
+      "noegle": "brun",
+      "regel": "2NT viser 14–17 hp med hold."
+    }
+  ],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♦"
+        ],
+        [
+          "Makker",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11,
+          7,
+          4,
+          3
+        ],
+        "H": [
+          14,
+          9,
+          6
+        ],
+        "D": [
+          12,
+          2
+        ],
+        "C": [
+          14,
+          9,
+          3,
+          2
+        ]
+      },
+      "svar": "1NT",
+      "forklaring": "Jævn hånd med 11 hp: 1NT (11–14)."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♦"
+        ],
+        [
+          "Makker",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          12,
+          11,
+          2
+        ],
+        "H": [
+          14,
+          10,
+          5,
+          3
+        ],
+        "D": [
+          13,
+          7
+        ],
+        "C": [
+          12,
+          11,
+          10
+        ]
+      },
+      "svar": "X",
+      "forklaring": "Jævn hånd med 16 hp: dobling – og sans billigst bagefter (15–18)."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♠"
+        ],
+        [
+          "Makker",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          10
+        ],
+        "H": [
+          14,
+          12,
+          10,
+          8
+        ],
+        "D": [
+          13,
+          11,
+          8,
+          3
+        ],
+        "C": [
+          13,
+          11,
+          8,
+          5
+        ]
+      },
+      "svar": "X",
+      "forklaring": "14 hp og kort i spar: dobling – du låner 3–4 hp af makker (nedre grænse ca. 9)."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♦"
+        ],
+        [
+          "Makker",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          11,
+          9,
+          5
+        ],
+        "H": [
+          12,
+          11,
+          9,
+          7,
+          5,
+          3
+        ],
+        "D": [
+          14,
+          13
+        ],
+        "C": [
+          10
+        ]
+      },
+      "svar": "2♥",
+      "forklaring": "Seksfarve og 14 hp: spring til 2♥ – efter to passer er spring konstruktive (11–14)."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1♦"
+        ],
+        [
+          "Makker",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          9,
+          7,
+          6,
+          3
+        ],
+        "H": [
+          13,
+          9,
+          3
+        ],
+        "D": [
+          9
+        ],
+        "C": [
+          14,
+          10,
+          8,
+          7,
+          3
+        ]
+      },
+      "svar": "2♣",
+      "forklaring": "5 klør og 7 hp: 2♣ – farvemelding i fjerde hånd (ca. 7–14)."
+    }
+  ],
+  "faldgruber": [
+    "Jævne hænder låner ikke: under 11 hp passes, også i fjerde hånd.",
+    "Efter to passer findes ingen spærremeldinger – spring er konstruktive.",
+    "Dobling efterfulgt af ny farve viser 15+ hp, oftest femfarve.",
+    "Makker skal trække 3 hp fra, før han vurderer."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "20-20 – kampen om delkontrakten",
+    "Doblinger – position og oplysende"
+  ],
+  "traener": {
+    "url": "traener.html?k=kamp-gif",
+    "pool": "pools/kamp-gif.json"
+  }
+}

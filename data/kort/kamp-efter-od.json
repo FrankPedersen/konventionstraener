@@ -1,0 +1,301 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "kamp-efter-od",
+  "navn": "Efter modpartens oplysningsdobling",
+  "undertitel": "Støtterne viser antal trumf; 2NT firkortstøtte 10+, XX 10+ uden",
+  "kilde": "Kampen om kontrakten (efter 20-20 – kampen om kontrakten) · §5.3 · træneren pools/kamp-efter-od.json",
+  "kategori": "konkurrence",
+  "noegle": "gron",
+  "formaal": "At vise trumflængden og styrken med det samme, når modparten har doblet makkers åbning.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "1♥"
+      ],
+      [
+        "Modstander",
+        "X"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Makker har åbnet i major, og modparten har oplysningsdoblet.",
+    "gaelderFor": "Svar efter oplysningsdobling af makkers åbning"
+  },
+  "kortfortalt": "2M, 3M og 4M viser 3, 4 og 5 trumf (6–9). 2NT viser firkortstøtte og 10+, redobling 10+ med højst trekortstøtte, og 2♣/2♦ er konstruktive seksfarver.",
+  "meldinger": [
+    {
+      "bud": "2M",
+      "noegle": "gron",
+      "styrke": "6–9 hp",
+      "viser": "Trekortstøtte"
+    },
+    {
+      "bud": "3M",
+      "noegle": "rosa",
+      "styrke": "6–9 hp",
+      "viser": "Firkortstøtte"
+    },
+    {
+      "bud": "4M",
+      "noegle": "rosa",
+      "styrke": "6–9 hp",
+      "viser": "Femkortstøtte"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "bla",
+      "styrke": "10+ hp",
+      "viser": "Firkortstøtte"
+    },
+    {
+      "bud": "XX",
+      "noegle": "bla",
+      "styrke": "10+ hp",
+      "viser": "Højst trekortstøtte – ofte interesseret i at straffe"
+    },
+    {
+      "bud": "1♠ over 1♥",
+      "noegle": "gron",
+      "viser": "Firfarve i spar, naturligt rundekrav"
+    },
+    {
+      "bud": "2♣ / 2♦",
+      "noegle": "gron",
+      "styrke": "5–9 hp",
+      "viser": "Konstruktiv, normalt seksfarve. Ikke krav"
+    },
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "viser": "Svag hånd"
+    }
+  ],
+  "fortsaettelser": [],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "X"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          2
+        ],
+        "H": [
+          11,
+          8,
+          3,
+          2
+        ],
+        "D": [
+          12,
+          7,
+          3
+        ],
+        "C": [
+          12,
+          10,
+          7,
+          3
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "4 trumf og 7 hp: 3♥ – støtten viser antallet af trumf."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "X"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          7,
+          3,
+          2
+        ],
+        "H": [
+          14,
+          10,
+          9,
+          6,
+          3
+        ],
+        "D": [
+          13,
+          6,
+          5
+        ],
+        "C": [
+          6
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "5 trumf og 11 hp: 2NT – firkortstøtte og mindst 10."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "X"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          8,
+          6,
+          4
+        ],
+        "H": [
+          14,
+          11,
+          7,
+          4
+        ],
+        "D": [
+          9,
+          2
+        ],
+        "C": [
+          13,
+          12,
+          11,
+          4
+        ]
+      },
+      "svar": "XX",
+      "forklaring": "3 trumf og 11 hp: redobling – 10+ med højst trekortstøtte."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "X"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          3
+        ],
+        "H": [
+          8,
+          5
+        ],
+        "D": [
+          14,
+          10,
+          3,
+          2
+        ],
+        "C": [
+          14,
+          10,
+          7,
+          6,
+          4,
+          2
+        ]
+      },
+      "svar": "2♣",
+      "forklaring": "6 klør og 8 hp: 2♣ – konstruktiv, ikke krav."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "X"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          10,
+          8,
+          6,
+          5
+        ],
+        "H": [],
+        "D": [
+          12,
+          11,
+          8,
+          7
+        ],
+        "C": [
+          13,
+          10,
+          8,
+          7
+        ]
+      },
+      "svar": "1♠",
+      "forklaring": "5 spar og 8 hp: 1♠ – naturligt rundekrav."
+    }
+  ],
+  "faldgruber": [
+    "Redobling lover højst trekortstøtte – med fire trumf og 10+ meldes 2NT.",
+    "2♣/2♦ er konstruktive på en lille hånd – pas ikke, for så springer fjerdemanden."
+  ],
+  "aabne": [
+    "Redobling: bogen siger \"uden støtte\"; her læses det som \"uden firkortstøtte\", så 10+ med præcis tre trumf også har en melding.",
+    "2♣/2♦ efter dobling: bogen nævner to varianter; her bruges den konstruktive."
+  ],
+  "relaterede": [
+    "Støtte efter indmelding over makkers åbning"
+  ],
+  "traener": {
+    "url": "traener.html?k=kamp-efter-od",
+    "pool": "pools/kamp-efter-od.json"
+  }
+}
