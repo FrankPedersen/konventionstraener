@@ -1,0 +1,371 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "ff-dont",
+  "navn": "DONT mod 1NT",
+  "undertitel": "Forsvar mod 1NT: dobling for én farve, to-farvede indmeldinger",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 15a · træneren pools/ff-dont.json",
+  "kategori": "forsvar",
+  "noegle": "gul",
+  "alert": "Dobling, 2♣, 2♦, 2♥ og 2NT alerteres",
+  "formaal": "At forstyrre modpartens 1NT med de to-farvede hænder, der kan vinde en delkontrakt.",
+  "situation": {
+    "auction": [
+      [
+        "Modstander",
+        "1NT"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Modparten åbner 1NT.",
+    "gaelderFor": "Direkte og i genåbning (ca. 2 hp lavere)"
+  },
+  "kortfortalt": "Dobling viser én ukendt 6-farve; 2♣/2♦ farven plus en højere, 2♥ begge majorer, 2♠ spar alene og 2NT begge minorer. Svarer passer med støtte og melder relæ uden.",
+  "meldinger": [
+    {
+      "gruppe": "Indmelder"
+    },
+    {
+      "bud": "X",
+      "noegle": "gul",
+      "styrke": "10–16 hp",
+      "viser": "Én ukendt farve, mindst 6 kort"
+    },
+    {
+      "bud": "2♣",
+      "noegle": "gul",
+      "styrke": "8–15 hp",
+      "viser": "Klør og en højere farve, mindst 5-4"
+    },
+    {
+      "bud": "2♦",
+      "noegle": "gul",
+      "styrke": "8–15 hp",
+      "viser": "Ruder og en højere farve, mindst 5-4"
+    },
+    {
+      "bud": "2♥",
+      "noegle": "gul",
+      "styrke": "8–15 hp",
+      "viser": "Hjerter og spar, mindst 5-4"
+    },
+    {
+      "bud": "2♠",
+      "noegle": "gron",
+      "styrke": "8–15 hp",
+      "viser": "Spar alene, 6+ kort – naturlig slutmelding"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "gul",
+      "styrke": "8–15 hp",
+      "viser": "Begge minorer, mindst 5-5"
+    },
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "viser": "Alt andet, også under 8 hp"
+    },
+    {
+      "gruppe": "Svarer"
+    },
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "viser": "Støtte til den viste farve – under 11 hp"
+    },
+    {
+      "bud": "Billigste relæ",
+      "noegle": "gul",
+      "styrke": "0–10 hp",
+      "viser": "»Vis din (anden) farve« – uden støtte"
+    },
+    {
+      "bud": "Ny farve",
+      "noegle": "gron",
+      "styrke": "10+ hp",
+      "viser": "Egen god 6-farve. Ikke krav"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "bla",
+      "styrke": "11+ hp",
+      "viser": "Invit – spørger om styrke og fordeling"
+    },
+    {
+      "bud": "3 i den viste farve",
+      "noegle": "rosa",
+      "viser": "Spærrende med god støtte"
+    },
+    {
+      "bud": "Udgang",
+      "noegle": "gron",
+      "styrke": "13+ hp",
+      "viser": "Egen beslutning"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Indmelder efter relæet",
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Dig",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "Pas",
+          "noegle": "gra",
+          "viser": "Relæet ramte netop den anden farve"
+        },
+        {
+          "bud": "Den anden farve",
+          "noegle": "gron",
+          "viser": "Viser den højere farve"
+        }
+      ],
+      "note": "Efter doblingen er makkers 2♣ et relæ, og dobler viser sin farve (passer med klør)."
+    }
+  ],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          8,
+          5
+        ],
+        "H": [
+          13,
+          8,
+          7
+        ],
+        "D": [
+          14,
+          13,
+          12,
+          9,
+          8,
+          5,
+          4
+        ],
+        "C": [
+          10
+        ]
+      },
+      "svar": "X",
+      "forklaring": "Én lang farve (7 ruder) og 12 hp: D viser én ukendt farve, mindst 6 kort."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          13,
+          12,
+          11,
+          9,
+          4
+        ],
+        "H": [],
+        "D": [
+          13,
+          5,
+          2
+        ],
+        "C": [
+          10,
+          9,
+          8,
+          4
+        ]
+      },
+      "svar": "2♣",
+      "forklaring": "4 klør og 6 spar: 2♣ viser klør og en højere farve, mindst 5-4."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          12,
+          11,
+          10,
+          5,
+          4
+        ],
+        "H": [
+          14,
+          10,
+          9,
+          7
+        ],
+        "D": [],
+        "C": [
+          13,
+          6,
+          5
+        ]
+      },
+      "svar": "2♥",
+      "forklaring": "4 hjerter og 6 spar: 2♥ viser hjerter og spar – begge farver er kendt med det samme."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          5
+        ],
+        "H": [
+          13,
+          11,
+          10,
+          3
+        ],
+        "D": [
+          8,
+          6,
+          3
+        ],
+        "C": [
+          13,
+          12,
+          11,
+          3
+        ]
+      },
+      "svar": "Pas",
+      "forklaring": "12 hp, men ingen DONT-fordeling (én 6-farve eller to farver 5-4)."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "1NT"
+        ],
+        [
+          "Dig",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          11,
+          8,
+          4,
+          2
+        ],
+        "H": [
+          12,
+          9,
+          4
+        ],
+        "D": [],
+        "C": [
+          12,
+          9,
+          4,
+          3,
+          2
+        ]
+      },
+      "svar": "2♠",
+      "forklaring": "Makker bad om din anden farve: 2♠ viser spar."
+    }
+  ],
+  "faldgruber": [
+    "Doblingen er ikke straf: den viser én lang farve.",
+    "Meldingen navngiver den laveste farve – kun 2♥ viser begge farver med det samme.",
+    "Svarer: pas med støtte, relæ uden. Opgaven er at finde stedet at spille, ikke at invitere."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "Michaels cuebid og usædvanlig 2NT"
+  ],
+  "forveksles": [
+    "Multiforsvar"
+  ],
+  "traener": {
+    "url": "traener.html?k=ff-dont",
+    "pool": "pools/ff-dont.json"
+  }
+}

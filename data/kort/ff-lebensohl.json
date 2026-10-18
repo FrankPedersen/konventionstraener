@@ -1,0 +1,430 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "ff-lebensohl",
+  "navn": "Lebensohl mod svag 2",
+  "undertitel": "Svar på makkers oplysningsdobling af svag 2♥/2♠",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · bilag C4 · træneren pools/ff-lebensohl.json",
+  "kategori": "konkurrence",
+  "noegle": "gul",
+  "alert": "2NT alerteres",
+  "formaal": "At skaffe plads til både svage hænder og invitationshænder, når makker har doblet en svag 2-åbning.",
+  "situation": {
+    "auction": [
+      [
+        "Modstander",
+        "2♥"
+      ],
+      [
+        "Makker",
+        "X"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Modparten åbner svag 2♥ eller 2♠, makker dobler for udtag, og den anden modstander passer.",
+    "gaelderFor": "Kun mod svag 2♥/2♠ – mod svag 3 er der ikke plads til relæet"
+  },
+  "kortfortalt": "Højere farve end deres er naturlig og svag; 2NT er relæ til 3♣ med en svag lavere farve (over 2♥ også invit med 5+ spar). Lavere farve direkte på 3-trinnet er invit, 3♠ direkte over 2♥ udgangskrav, og 3NT er naturligt.",
+  "meldinger": [
+    {
+      "bud": "Farve højere end deres",
+      "noegle": "gron",
+      "viser": "Naturligt og svagt, billigst muligt"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "gul",
+      "styrke": "0–7 hp",
+      "viser": "Relæ til 3♣: svag hånd med en lavere farve – over 2♥ også invit med 5+ spar"
+    },
+    {
+      "bud": "Lavere farve direkte på 3-trinnet",
+      "noegle": "gron",
+      "styrke": "8–11 hp",
+      "viser": "Invit"
+    },
+    {
+      "bud": "3♠ direkte over 2♥",
+      "noegle": "bla",
+      "viser": "Udgangskrav med 5+ spar"
+    },
+    {
+      "bud": "3NT",
+      "noegle": "brun",
+      "viser": "Naturligt, hold i deres farve, ingen 4-korts major at vise"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Dobler efter 2NT",
+      "auction": [
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Dig",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "3♣",
+          "noegle": "gul",
+          "viser": "Normal dobling"
+        },
+        {
+          "bud": "Andet end 3♣",
+          "noegle": "bla",
+          "viser": "Ekstra styrke, udgangskrav"
+        }
+      ]
+    },
+    {
+      "titel": "Svarer efter 2NT – 3♣",
+      "auction": [
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "Pas",
+          "noegle": "gra",
+          "viser": "Svag hånd med klør"
+        },
+        {
+          "bud": "Ret til egen farve",
+          "noegle": "gron",
+          "viser": "Svag hånd – stadig svagt"
+        },
+        {
+          "bud": "3♠ over 2♥",
+          "noegle": "gron",
+          "styrke": "8–11 hp",
+          "viser": "Invit med 5+ spar"
+        }
+      ]
+    }
+  ],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          8,
+          2
+        ],
+        "H": [
+          8,
+          6,
+          5
+        ],
+        "D": [
+          11,
+          7,
+          5,
+          4,
+          3,
+          2
+        ],
+        "C": [
+          6
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "Svag hånd (5 hp) med 6 ruder – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du retter til 3♦."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          9,
+          5
+        ],
+        "H": [
+          13,
+          9,
+          5
+        ],
+        "D": [
+          3,
+          2
+        ],
+        "C": [
+          14,
+          11,
+          10,
+          9,
+          5,
+          2
+        ]
+      },
+      "svar": "3♣",
+      "forklaring": "8 hp og 6 klør: 3♣ direkte – invit (8–11)."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          11,
+          9,
+          7,
+          6
+        ],
+        "H": [
+          12,
+          6,
+          3
+        ],
+        "D": [
+          14,
+          10,
+          6
+        ],
+        "C": [
+          13,
+          2
+        ]
+      },
+      "svar": "3♠",
+      "forklaring": "14 hp og 5 spar: 3♠ direkte er udgangskrav. Invit ville gå via 2NT-relæet."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          8,
+          7,
+          6,
+          2
+        ],
+        "H": [
+          13,
+          10,
+          9
+        ],
+        "D": [
+          12,
+          11
+        ],
+        "C": [
+          11,
+          10,
+          8
+        ]
+      },
+      "svar": "3♠",
+      "forklaring": "9 hp og 5 spar: 3♠ efter relæet er invit (8–11). 3♠ direkte ville have været udgangskrav."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Dig",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11,
+          9,
+          8,
+          5
+        ],
+        "H": [
+          12
+        ],
+        "D": [
+          14,
+          10,
+          7,
+          4
+        ],
+        "C": [
+          14,
+          12,
+          11,
+          10
+        ]
+      },
+      "svar": "3♣",
+      "forklaring": "Makkers 2NT er relæ: med en normal dobling (14 hp) melder du 3♣. Makker passer, retter til sin farve eller melder 3♠ som invit. Andet end 3♣ ville vise ekstra styrke og være udgangskrav."
+    }
+  ],
+  "faldgruber": [
+    "En lavere farve meldt direkte på 3-trinnet er invit, ikke svag.",
+    "Over 2♥ går invitten med spar via relæet, fordi 3♠ direkte er udgangskrav.",
+    "Dobler melder 3♣ efter 2NT med en normal dobling – alt andet viser ekstra styrke."
+  ],
+  "aabne": [
+    "Cuebid af modpartens farve som spilleafgørende krav (den fulde udgave af Lebensohl)?"
+  ],
+  "relaterede": [],
+  "forveksles": [
+    "Lebensohl"
+  ],
+  "traener": {
+    "url": "traener.html?k=ff-lebensohl",
+    "pool": "pools/ff-lebensohl.json"
+  }
+}

@@ -1,0 +1,463 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "ff-doblinger",
+  "navn": "Negativ dobling, støttedobling og redobling",
+  "undertitel": "Doblinger, når modparten blander sig i vores meldeforløb",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 17 · træneren pools/ff-doblinger.json",
+  "kategori": "konkurrence",
+  "noegle": "bla",
+  "alert": "Støttedobling alerteres",
+  "formaal": "At vise fordeling og styrke med dobling og redobling, når modparten har taget pladsen fra os.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "1♦"
+      ],
+      [
+        "Modstander",
+        "1♥"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Makker har åbnet, og modparten melder ind eller dobler.",
+    "gaelderFor": "Negativ dobling, åbners svar, støttedobling til og med 2♠, og svar efter dobling af makkers åbning"
+  },
+  "kortfortalt": "Den negative dobling viser 4-farve i uvist major (8+ hp, 6+ efter 1-over-1); åbner svarer som på en farvemelding og kan passe med længde bag indmelderen. Støttedoblingen viser præcis 3 kort i svarers major, og redobling efter dobling af åbningen viser 10+ hp uden primær støtte.",
+  "meldinger": [
+    {
+      "gruppe": "Svarer efter indmelding"
+    },
+    {
+      "bud": "Negativ dobling",
+      "noegle": "bla",
+      "styrke": "8+ hp",
+      "viser": "4-farve i uvist major (6+ hp efter 1-over-1)"
+    },
+    {
+      "gruppe": "Svarer efter dobling af makkers åbning"
+    },
+    {
+      "bud": "XX",
+      "noegle": "bla",
+      "styrke": "10+ hp",
+      "viser": "Uden primær støtte – vil gerne strafdoble"
+    },
+    {
+      "bud": "Støtte på 2-trinnet",
+      "noegle": "gron",
+      "styrke": "6–9 sp",
+      "viser": "3-korts støtte, konstruktivt"
+    },
+    {
+      "bud": "Støtte på 3-trinnet",
+      "noegle": "rosa",
+      "styrke": "6–9 sp",
+      "viser": "4-korts støtte, spærrende"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "gul",
+      "styrke": "10+ sp",
+      "viser": "Støtte – erstatter den direkte overmelding"
+    },
+    {
+      "bud": "Ny farve på 1-trinnet",
+      "noegle": "gron",
+      "styrke": "6–9 hp",
+      "viser": "4+ farve, ikke krav"
+    },
+    {
+      "bud": "Ny farve på 2-trinnet",
+      "noegle": "rosa",
+      "styrke": "Højst 9 hp",
+      "viser": "God 6-farve, spærrende"
+    },
+    {
+      "bud": "1NT",
+      "noegle": "brun",
+      "styrke": "6–9 hp",
+      "viser": "Jævn uden støtte og uden brugbar farve"
+    },
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "styrke": "Under 6 hp",
+      "viser": "Åbner får en ny chance"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Åbner efter den negative dobling",
+      "auction": [
+        [
+          "Dig",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "Pas",
+          "noegle": "gra",
+          "styrke": "12–14 hp",
+          "viser": "4+ kort og styrke bag indmelderen – vi spiller dem hjem"
+        },
+        {
+          "bud": "Major billigst",
+          "noegle": "gron",
+          "styrke": "12–15 hp",
+          "viser": "4 kort i den viste major"
+        },
+        {
+          "bud": "Major med spring",
+          "noegle": "gron",
+          "styrke": "16–18 hp",
+          "viser": "4 kort"
+        },
+        {
+          "bud": "Udgang i majoren",
+          "noegle": "gron",
+          "styrke": "19+ hp",
+          "viser": "4 kort"
+        },
+        {
+          "bud": "Egen farve",
+          "noegle": "gron",
+          "styrke": "12–15 hp",
+          "viser": "6-farve uden 4-korts støtte"
+        },
+        {
+          "bud": "Sans billigst",
+          "noegle": "brun",
+          "styrke": "12–15 hp",
+          "viser": "Jævn med hold"
+        },
+        {
+          "bud": "Sans med spring",
+          "noegle": "brun",
+          "styrke": "18–19 hp",
+          "viser": "Jævn med hold"
+        },
+        {
+          "bud": "Cuebid",
+          "noegle": "bla",
+          "styrke": "18+ hp",
+          "viser": "Ingen naturlig melding. Krav"
+        }
+      ]
+    },
+    {
+      "titel": "Støttedobling: 1♥ – (pas) – 1♠ – (2♣)",
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "2♣"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "X",
+          "noegle": "gul",
+          "viser": "Præcis 3 kort i svarers major – enhver styrke"
+        },
+        {
+          "bud": "Støtte",
+          "noegle": "gron",
+          "viser": "Præcis 4 kort; niveauet viser styrken"
+        },
+        {
+          "bud": "Alt andet",
+          "noegle": "gra",
+          "viser": "Benægter 3-korts støtte"
+        }
+      ],
+      "note": "Svarer kender nu trumflængden og bruger Loven: med ni trumfer meldes til tre, med otte kun til to. Gælder til og med 2♠."
+    }
+  ],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          12,
+          11,
+          3
+        ],
+        "H": [
+          12,
+          10,
+          6,
+          4
+        ],
+        "D": [
+          8,
+          6,
+          3
+        ],
+        "C": [
+          12,
+          7
+        ]
+      },
+      "svar": "X",
+      "forklaring": "4 spar og 10 hp: negativ dobling (6+)."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          6,
+          4
+        ],
+        "H": [
+          14,
+          13,
+          9,
+          8
+        ],
+        "D": [
+          13,
+          8,
+          5,
+          4,
+          2
+        ],
+        "C": [
+          11
+        ]
+      },
+      "svar": "Pas",
+      "forklaring": "4 hjerter bag indmelderen og 13 hp: pas – vi spiller dem hjem."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          12,
+          11,
+          8
+        ],
+        "H": [
+          14,
+          11,
+          10
+        ],
+        "D": [
+          14,
+          12,
+          10,
+          8,
+          4
+        ],
+        "C": [
+          3
+        ]
+      },
+      "svar": "2♠",
+      "forklaring": "4 spar og 18 hp: spring til 2♠ (16–18)."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "2♣"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11,
+          4,
+          2
+        ],
+        "H": [
+          13,
+          8,
+          5,
+          4,
+          3
+        ],
+        "D": [
+          14,
+          12
+        ],
+        "C": [
+          14,
+          8,
+          5
+        ]
+      },
+      "svar": "X",
+      "forklaring": "Præcis 3 spar: støttedobling – enhver styrke (14 hp)."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "X"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          10,
+          8,
+          3,
+          2
+        ],
+        "H": [
+          11,
+          6
+        ],
+        "D": [
+          14,
+          13,
+          10,
+          6
+        ],
+        "C": [
+          13,
+          10,
+          5
+        ]
+      },
+      "svar": "XX",
+      "forklaring": "11 hp uden støtte: redobling (10+)."
+    }
+  ],
+  "faldgruber": [
+    "Den negative dobling er ikke straf: den viser den uviste major.",
+    "Åbner må passe den negative dobling – men kun med 4+ kort og styrke bag indmelderen.",
+    "Støttedoblingen viser præcis 3 kort. Med 4 kort støttes direkte.",
+    "Efter dobling af åbningen bortfalder Two over One."
+  ],
+  "aabne": [
+    "2NT efter modpartens dobling af vores 1M: 10+ sp med støtte (som her) eller Bekkasin med 13+ sp og 4+ trumf, der efter Afklaret 25 gælder fortsat ved dobling?",
+    "Konkurrencedoblingens intervaller for makkers svar er endnu ikke fastlagt i kilden."
+  ],
+  "relaterede": [
+    "Kravpas og Loven",
+    "Bekkasin"
+  ],
+  "traener": {
+    "url": "traener.html?k=ff-doblinger",
+    "pool": "pools/ff-doblinger.json"
+  }
+}

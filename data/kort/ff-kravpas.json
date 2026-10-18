@@ -1,0 +1,348 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "ff-kravpas",
+  "navn": "Kravpas og Loven",
+  "undertitel": "Meld efter trumflængden – og genåbn med dobling, når makker kan strafpasse",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 18–18a · træneren pools/ff-kravpas.json",
+  "kategori": "konkurrence",
+  "noegle": "gron",
+  "formaal": "At ramme det rigtige niveau i delkontraktkampen og ikke miste en strafdobling, når makker ikke selv kan doble.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "1♠"
+      ],
+      [
+        "Modstander",
+        "2♥"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Begge sider melder om delkontrakten, og ingen af dem kan gøre udgang.",
+    "gaelderFor": "Delkontraktkampe og næsekravpas efter 1 i farve – indmelding – pas – pas"
+  },
+  "kortfortalt": "Loven: meld op til lige så mange stik, som parret har trumfer – 8 trumfer til 2-trinnet, 9 til 3, 10 til 4. Er åbner kort i indmelderens farve efter 1♥ – (1♠) – pas – (pas), genåbner han med dobling, så makker kan strafpasse.",
+  "meldinger": [
+    {
+      "gruppe": "Loven om det samlede antal stik"
+    },
+    {
+      "bud": "7 trumfer",
+      "noegle": "gra",
+      "viser": "1-trinnet – meld ikke frivilligt videre"
+    },
+    {
+      "bud": "8 trumfer",
+      "noegle": "gron",
+      "viser": "2-trinnet – konkurrér til 2, ikke til 3"
+    },
+    {
+      "bud": "9 trumfer",
+      "noegle": "gron",
+      "viser": "3-trinnet – også uden ekstra point"
+    },
+    {
+      "bud": "10 trumfer",
+      "noegle": "gron",
+      "viser": "4-trinnet – som spil eller ofring"
+    },
+    {
+      "gruppe": "Næsekravpas"
+    },
+    {
+      "bud": "Dobling",
+      "noegle": "bla",
+      "viser": "Åbner er kort (højst doubleton) i deres farve – makker kan strafpasse"
+    },
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "viser": "Åbner er selv lang i deres farve"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Justering af Loven",
+      "meldinger": [
+        {
+          "bud": "Op ét trin",
+          "noegle": "gron",
+          "viser": "Dobbeltfit, trumfhonnører i egne lange farver, korthed i deres farve"
+        },
+        {
+          "bud": "Ned ét trin",
+          "noegle": "rosa",
+          "viser": "Flad fordeling (4-3-3-3), honnører i deres farve, D og B uden ledsagelse"
+        }
+      ],
+      "note": "Zonen: i gunstig zone gerne ét trin over Loven, i ugunstig ét trin under."
+    },
+    {
+      "titel": "Kravpas i andre forløb",
+      "meldinger": [
+        {
+          "bud": "Pas efter vores redobling",
+          "noegle": "bla",
+          "viser": "Krav: makker strafdobler eller melder"
+        },
+        {
+          "bud": "Pas på højt niveau",
+          "noegle": "bla",
+          "viser": "Krav: makker afgør, om der skal dobles eller meldes videre"
+        }
+      ]
+    }
+  ],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          8,
+          6,
+          5,
+          2
+        ],
+        "H": [
+          12,
+          5
+        ],
+        "D": [
+          9,
+          6,
+          3
+        ],
+        "C": [
+          13,
+          10,
+          8,
+          7
+        ]
+      },
+      "svar": "3♠",
+      "forklaring": "4 spar + makkers 5 = 9 trumf: Loven siger 3-trinnet – 3♠."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11,
+          6,
+          4,
+          3,
+          2
+        ],
+        "H": [
+          12,
+          5
+        ],
+        "D": [
+          12,
+          7,
+          4,
+          3
+        ],
+        "C": [
+          12,
+          7
+        ]
+      },
+      "svar": "4♠",
+      "forklaring": "5 spar + makkers 5 = 10 trumf: Loven siger 4-trinnet – 4♠."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "1♠"
+        ],
+        [
+          "Makker",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "2♠"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          11,
+          9
+        ],
+        "H": [
+          14,
+          11,
+          8,
+          7,
+          3
+        ],
+        "D": [
+          8
+        ],
+        "C": [
+          13,
+          12,
+          5,
+          2
+        ]
+      },
+      "svar": "Pas",
+      "forklaring": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "1♠"
+        ],
+        [
+          "Makker",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12
+        ],
+        "H": [
+          13,
+          9,
+          8,
+          6,
+          2
+        ],
+        "D": [
+          13,
+          12,
+          11,
+          7,
+          5
+        ],
+        "C": [
+          12,
+          2
+        ]
+      },
+      "svar": "X",
+      "forklaring": "1 spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "1♠"
+        ],
+        [
+          "Makker",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          10,
+          7,
+          6,
+          3
+        ],
+        "H": [
+          13,
+          12,
+          11,
+          7,
+          4
+        ],
+        "D": [
+          11
+        ],
+        "C": [
+          14,
+          11,
+          7
+        ]
+      },
+      "svar": "Pas",
+      "forklaring": "4 spar: du er selv lang i deres farve – pas."
+    }
+  ],
+  "faldgruber": [
+    "Loven tæller trumfer, ikke point.",
+    "Med negative doblinger kan makker ikke selv strafdoble – derfor genåbner åbner med dobling, når han er kort.",
+    "En pas på 3-trinnet mod deres ni trumfer er sjældent en gevinst."
+  ],
+  "aabne": [
+    "Hvornår er en høj pas krav? Det skal aftales på forhånd."
+  ],
+  "relaterede": [
+    "Negativ dobling, støttedobling og redobling"
+  ],
+  "traener": {
+    "url": "traener.html?k=ff-kravpas",
+    "pool": "pools/ff-kravpas.json"
+  }
+}

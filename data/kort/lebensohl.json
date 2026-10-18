@@ -1,0 +1,357 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "lebensohl",
+  "navn": "Lebensohl",
+  "undertitel": "Svar på makkers oplysningsdobling af en svag 2-åbning",
+  "kilde": "Bridgesystem v1.7 · afsnit 8.2 · træneren pools/lebensohl.json",
+  "kategori": "konkurrence",
+  "noegle": "gul",
+  "alert": "2NT alerteres",
+  "formaal": "At skelne mellem svage hænder og invitationshænder, når makker har doblet en svag 2-åbning.",
+  "situation": {
+    "auction": [
+      [
+        "Modstander",
+        "2♥"
+      ],
+      [
+        "Makker",
+        "X"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Modparten åbner svag 2 (2♦, 2♥ eller 2♠), makker oplysningsdobler, og den anden modstander passer.",
+    "gaelderFor": "Svar på dobling af svag 2 – ikke over vores egen 1NT"
+  },
+  "kortfortalt": "2-trinnet er naturligt og svagt; 2NT er relæ med en svag hånd og en farve lavere end deres. Samme farve direkte på 3-trinnet er invit, 3NT er naturligt med hold, og cuebid er udgangskrav.",
+  "meldinger": [
+    {
+      "bud": "Farve på 2-trinnet",
+      "noegle": "gron",
+      "styrke": "0–8 hp",
+      "viser": "Naturligt og svagt"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "gul",
+      "viser": "Relæ: svag hånd med en farve lavere end deres. Dobler melder 3♣"
+    },
+    {
+      "bud": "Farve på 3-trinnet direkte",
+      "noegle": "gron",
+      "styrke": "9–12 hp",
+      "viser": "Invit – uden om relæet viser styrke"
+    },
+    {
+      "bud": "3NT",
+      "noegle": "brun",
+      "viser": "Naturligt med hold i deres farve"
+    },
+    {
+      "bud": "Cuebid i deres farve",
+      "noegle": "bla",
+      "viser": "Udgangskrav, beder om 4-farve i major"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Efter relæet",
+      "auction": [
+        [
+          "Modstander",
+          "2♠"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "Pas",
+          "noegle": "gra",
+          "viser": "Svag hånd med klør"
+        },
+        {
+          "bud": "Ret til egen farve",
+          "noegle": "gron",
+          "viser": "Svag hånd med farven – stadig svagt"
+        }
+      ]
+    }
+  ],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Modstander",
+          "2♦"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          10,
+          6
+        ],
+        "H": [
+          14,
+          8
+        ],
+        "D": [
+          9,
+          6,
+          2
+        ],
+        "C": [
+          13,
+          7,
+          6,
+          5,
+          4,
+          3
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "Svag hånd (7 hp) med 6 klør – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du passer."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "2♦"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          6,
+          3
+        ],
+        "H": [
+          8,
+          7,
+          3
+        ],
+        "D": [
+          3
+        ],
+        "C": [
+          14,
+          13,
+          9,
+          5,
+          3,
+          2
+        ]
+      },
+      "svar": "3♣",
+      "forklaring": "11 hp og 6 klør: 3♣ direkte er invit (9–12)."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "2♦"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          9,
+          8
+        ],
+        "H": [
+          11,
+          10,
+          7,
+          6,
+          5
+        ],
+        "D": [
+          12,
+          11,
+          9
+        ],
+        "C": [
+          9,
+          6
+        ]
+      },
+      "svar": "2♥",
+      "forklaring": "Svag hånd (6 hp) med 5 hjerter – højere end deres farve: 2♥, naturligt og svagt."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          11,
+          10,
+          7
+        ],
+        "H": [
+          7,
+          3
+        ],
+        "D": [
+          14,
+          13,
+          7,
+          2
+        ],
+        "C": [
+          12,
+          10,
+          6
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "13 hp og 4 spar: cuebid 3♥ er udgangskrav og beder om 4-farve i major."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "2♠"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          2
+        ],
+        "H": [
+          11,
+          8,
+          3
+        ],
+        "D": [
+          13,
+          10,
+          9,
+          8,
+          6,
+          5
+        ],
+        "C": [
+          12,
+          11,
+          10
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "Svag hånd (7 hp) med 6 ruder – lavere end deres farve: 2NT relæ. Makker melder 3♣, og du retter til 3♦."
+    }
+  ],
+  "faldgruber": [
+    "En farve, der er lavere end deres, kan ikke meldes svagt direkte – brug 2NT-relæet.",
+    "Samme farve direkte på 3-trinnet er invit, ikke svag.",
+    "Lebensohl gælder kun mod svage 2-åbninger – ikke over vores egen 1NT."
+  ],
+  "aabne": [],
+  "relaterede": [],
+  "forveksles": [
+    "Lebensohl mod svag 2"
+  ],
+  "traener": {
+    "url": "traener.html?k=lebensohl",
+    "pool": "pools/lebensohl.json"
+  }
+}
