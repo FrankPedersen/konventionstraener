@@ -319,5 +319,9 @@
   ],
   "forveksles": [
     "Truscott-forsvar"
-  ]
+  ],
+  "traener": {
+    "url": "traener.html?k=truscott",
+    "pool": "pools/truscott.json"
+  }
 }

@@ -525,7 +525,11 @@ Promise.all(['data/konventioner.json', 'data/systemer.json'].map(u => fetch(u).t
     if (k.layout === 'bord'){ LAYOUT = 'bord'; boardEl.classList.add('compact'); }
     if (k.profiler){ PROFILE = getProfile(); setupProfiles(); }
     if (k.varianter){ setupChooser(k, list, systems); return null; }
-    if (k.viden) $('source').innerHTML = T(
+    // En træner med system "generel" er ikke en makkeraftale: kilden er konventionskortet (SPEC-truscott-traener.md, Afklaret 4)
+    if (k.viden && ids[0] === 'generel') $('source').innerHTML = T(
+      `Beskrivelsen står i <a href="${k.viden}">konventionskortet</a>.`,
+      `The description is in <a href="${k.viden}">the convention card</a> (in Danish).`);
+    else if (k.viden) $('source').innerHTML = T(
       `Aftalerne står i <a href="${k.viden}">${ids.length > 1 ? 'systemdokumentet' : sys && sys.id === 'kamp' ? 'referencelaget Kampen om kontrakten' : sys && sys.id === 'forslag' ? 'forslaget' : sys ? 'systemet for ' + sys.navn : 'vores system'}</a>.`,
       `The agreements are in <a href="${k.viden}">${ids.length > 1 ? 'the system document' : sys && sys.id === 'kamp' ? 'the reference layer The battle for the contract' : sys && sys.id === 'forslag' ? 'the proposal' : sys ? 'the system for ' + sys.navn : 'our system'}</a> (in Danish).`);
     return fetch(`pools/${k.id}.json`).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });

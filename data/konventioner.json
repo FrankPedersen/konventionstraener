@@ -953,5 +953,23 @@
    "gruppe": "Defence",
    "beskrivelse": "Ruff and return, dead lead suit and Lavinthal discards: high asks for the higher of the two suits, low for the lower."
   }
+ },
+ {
+  "id": "truscott",
+  "titel": "Truscott 2NT",
+  "gruppe": "Konkurrence",
+  "emne": "stoette-konkurrence",
+  "beskrivelse": "Makker åbner, modparten dobler: XX 10+ uden støtte, 2NT 10+ med støtte, direkte støtte er svag og viser antallet af trumf.",
+  "roller": [
+   "Svarer"
+  ],
+  "status": "klar",
+  "system": "generel",
+  "viden": "viden/konventionskort.html#truscott",
+  "en": {
+   "titel": "Truscott 2NT",
+   "gruppe": "Competition",
+   "beskrivelse": "Partner opens, the opponents double: XX 10+ without support, 2NT 10+ with support, a direct raise is weak and shows the number of trumps."
+  }
  }
 ]
