@@ -81,12 +81,13 @@
   .cell.hinted:not(:disabled){ background:var(--sg-primary-pale); box-shadow:inset 0 0 0 2px var(--sg-ink); }
   .cell.pas{ background:var(--bid-pas); color:#fff; }
   .cell.dbl{ background:var(--bid-dbl); color:#fff; }
-  .cell.pas.hinted:not(:disabled), .cell.dbl.hinted:not(:disabled){ color:#fff; box-shadow:0 0 0 2px var(--sg-canvas), 0 0 0 4px var(--sg-ink); }
-  .cell.pas.hinted:not(:disabled){ background:var(--bid-pas); } .cell.dbl.hinted:not(:disabled){ background:var(--bid-dbl); }
-  .cell.pas.correct, .cell.dbl.correct{ color:#fff; box-shadow:0 0 0 2px var(--sg-canvas), 0 0 0 4px var(--sg-positive-deep); }
-  .cell.pas.correct{ background:var(--bid-pas); } .cell.dbl.correct{ background:var(--bid-dbl); }
-  .cell.pas.incorrect, .cell.dbl.incorrect{ color:#fff; box-shadow:0 0 0 2px var(--sg-canvas), 0 0 0 4px var(--sg-negative-deep); }
-  .cell.pas.incorrect{ background:var(--bid-pas); } .cell.dbl.incorrect{ background:var(--bid-dbl); }
+  .cell.rdbl{ background:var(--bid-rdbl); color:#fff; }
+  .cell.pas.hinted:not(:disabled), .cell.dbl.hinted:not(:disabled), .cell.rdbl.hinted:not(:disabled){ color:#fff; box-shadow:0 0 0 2px var(--sg-canvas), 0 0 0 4px var(--sg-ink); }
+  .cell.pas.hinted:not(:disabled){ background:var(--bid-pas); } .cell.dbl.hinted:not(:disabled){ background:var(--bid-dbl); } .cell.rdbl.hinted:not(:disabled){ background:var(--bid-rdbl); }
+  .cell.pas.correct, .cell.dbl.correct, .cell.rdbl.correct{ color:#fff; box-shadow:0 0 0 2px var(--sg-canvas), 0 0 0 4px var(--sg-positive-deep); }
+  .cell.pas.correct{ background:var(--bid-pas); } .cell.dbl.correct{ background:var(--bid-dbl); } .cell.rdbl.correct{ background:var(--bid-rdbl); }
+  .cell.pas.incorrect, .cell.dbl.incorrect, .cell.rdbl.incorrect{ color:#fff; box-shadow:0 0 0 2px var(--sg-canvas), 0 0 0 4px var(--sg-negative-deep); }
+  .cell.pas.incorrect{ background:var(--bid-pas); } .cell.dbl.incorrect{ background:var(--bid-dbl); } .cell.rdbl.incorrect{ background:var(--bid-rdbl); }
 
   .feedback{ margin-top:var(--sg-space-lg); padding:var(--sg-space-lg); border-radius:var(--sg-radius-lg); font-size:.9375rem; line-height:1.5; display:none; }
   .feedback.show{ display:block; }
@@ -151,6 +152,7 @@
   table.auc td{ padding:var(--sg-space-xs) var(--sg-space-lg) var(--sg-space-xs) var(--sg-space-xs); border-bottom:1px solid var(--sg-canvas-soft); min-width:2.4rem; }
   table.auc .pas{ color:var(--sg-body); }
   table.auc .x{ font-weight:600; color:var(--bid-dbl); }
+  table.auc .xx{ font-weight:600; color:var(--bid-rdbl); }
   table.auc .me{ font-weight:600; }
   table.auc .ask{ font-weight:600; }
   .compact .cell{ font-size:.8rem; padding:.3rem .1rem; }
@@ -277,7 +279,8 @@ function fmtCall(call){
   const p = parseCall(call);
   return p.strain === 'NT' ? `${p.level}NT` : `${p.level}<span class="su ${suitClass(p.strain)}">${p.strain}</span>`;
 }
-function callClass(call){ return call === 'Pas' ? ' pas' : (call === 'X' || call === 'XX') ? ' dbl' : ''; }
+// Meldekortenes farver: pas grøn, dobling rød, redobling blå
+function callClass(call){ return call === 'Pas' ? ' pas' : call === 'X' ? ' dbl' : call === 'XX' ? ' rdbl' : ''; }
 
 function renderProgress(){
   progressEl.innerHTML = '';
@@ -315,7 +318,7 @@ function renderTable(q){
   const cells = [];
   for (let c = 0; c < col(dealer); c++) cells.push('<td></td>');
   q.auction.forEach(([who, call]) => {
-    const cls = call === 'Pas' ? 'pas' : (call === 'X' || call === 'XX') ? 'x' : who === 'Dig' ? 'me' : '';
+    const cls = call === 'Pas' ? 'pas' : call === 'X' ? 'x' : call === 'XX' ? 'xx' : who === 'Dig' ? 'me' : '';
     cells.push(`<td class="${cls}">${call === 'Pas' ? T('pas', 'pass') : fmtCall(call)}</td>`);
   });
   cells.push('<td class="ask">?</td>');

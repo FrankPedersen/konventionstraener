@@ -7,7 +7,7 @@
   --felt:var(--sg-ink); --felt-deep:var(--sg-ink); --gold:var(--sg-body); --accent:var(--sg-primary);
   --red:var(--suit-red); --blk:var(--suit-black);
   --card:var(--sg-canvas); --card-edge:var(--sg-hairline); --shadow:none;
-  --pas:var(--bid-pas); --dbl:var(--bid-dbl);
+  --pas:var(--bid-pas); --dbl:var(--bid-dbl); --rdbl:var(--bid-rdbl);
   --good:var(--sg-positive-deep); --good-bg:var(--sg-primary-pale); --good-ink:var(--sg-positive-deep);
   --bad:var(--sg-negative-deep); --bad-bg:var(--sg-canvas-soft); --bad-ink:var(--sg-ink);
   --serif:var(--sg-sans); --sans:var(--sg-sans); --display:var(--sg-display); --sym:var(--sg-sym);
@@ -56,6 +56,7 @@ p{ margin:.7rem 0; }
      font-family:var(--sg-sans); font-weight:600; line-height:1.1; white-space:nowrap; }
 .bc.pas{ background:var(--bid-pas); color:#fff; border-color:transparent; }
 .bc.dbl{ background:var(--bid-dbl); color:#fff; border-color:transparent; }
+.bc.rdbl{ background:var(--bid-rdbl); color:#fff; border-color:transparent; }
 
 /* ---------- kort (forside, viden) ---------- */
 .tiles{ display:grid; grid-template-columns:repeat(auto-fill,minmax(16rem,1fr)); gap:var(--sg-space-lg); margin:var(--sg-space-lg) 0; }

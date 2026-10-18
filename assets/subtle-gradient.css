@@ -2,7 +2,7 @@
    (https://claude.ai/artifact/1hqGCpSbRroTLwm79Yr9q3). Kun lyst tema.
    Skrifterne hentes på hver side: Manrope 800 og Inter 400/600 fra Google Fonts.
    Kulørfarverne (--suit-red, --suit-black) og bordet (--sg-table, --sg-table-text) er designsystemets egne;
-   de grønne og røde meldekort (--bid-pas, --bid-dbl) er bridgens konvention. */
+   de grønne, røde og blå meldekort (--bid-pas, --bid-dbl, --bid-rdbl) er bridgens konvention. */
 :root{
   color-scheme: light;
   --sg-primary:#ff9f4a; --sg-on-primary:#1a1a1a; --sg-primary-active:#ffc48f; --sg-primary-neutral:#f7b87a; --sg-primary-pale:#fff1e3;
@@ -24,5 +24,5 @@
 
   --suit-red:#c62828; --suit-black:#1a1a1a;
   --sg-table:#1f5c4a; --sg-table-text:#ffffff;
-  --bid-pas:#054d28; --bid-dbl:#a72027;
+  --bid-pas:#054d28; --bid-dbl:#a72027; --bid-rdbl:#1f5bb5;
 }
