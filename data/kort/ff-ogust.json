@@ -1,0 +1,414 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "ff-ogust",
+  "navn": "Ogust 2NT og svar på svag 2",
+  "undertitel": "2NT over svag 2 spørger efter styrke og tophonnører",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 12–13 · træneren pools/ff-ogust.json",
+  "kategori": "svar",
+  "noegle": "gul",
+  "alert": "2NT alerteres",
+  "formaal": "At finde ud af, om en svag 2-åbning er god nok til udgang, og hvor gode trumfene er.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "2♥"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Makker åbner svag 2 (2♦, 2♥ eller 2♠): god 6-farve, 5–11 hp (8–11 i zonen).",
+    "gaelderFor": "Svar på svag 2 og på et svagt spring"
+  },
+  "kortfortalt": "2NT (Ogust) viser 15+ med udgangsinteresse og er rundekrav. Åbner svarer efter huskereglen »mindste minorer, 1-2-1-2-3«: 3♣/3♦ dårlig hånd, 3♥/3♠ god hånd med én eller to af de tre øverste honnører, 3NT E-K-D.",
+  "meldinger": [
+    {
+      "gruppe": "Svarer"
+    },
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "viser": "Ingen støtte og ingen udgangsinteresse"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "gul",
+      "styrke": "15+ hp",
+      "viser": "Ogust: udgangsinteresse, normalt med støtte. Rundekrav"
+    },
+    {
+      "bud": "Ny farve",
+      "noegle": "bla",
+      "styrke": "15+ hp",
+      "viser": "Egen 6-farve, rundekrav"
+    },
+    {
+      "bud": "3 i farven",
+      "noegle": "rosa",
+      "viser": "Videre spærring: 3-korts støtte (9 trumf)"
+    },
+    {
+      "bud": "4 i farven",
+      "noegle": "rosa",
+      "viser": "Videre spærring: 4-korts støtte (10 trumf)"
+    },
+    {
+      "gruppe": "Åbners svar på Ogust"
+    },
+    {
+      "bud": "3♣",
+      "noegle": "gul",
+      "styrke": "5–7 hp",
+      "viser": "Dårlig hånd, én af de tre øverste i trumf"
+    },
+    {
+      "bud": "3♦",
+      "noegle": "gul",
+      "styrke": "5–7 hp",
+      "viser": "Dårlig hånd, to af de tre øverste"
+    },
+    {
+      "bud": "3♥",
+      "noegle": "gul",
+      "styrke": "8–10 hp",
+      "viser": "God hånd, én af de tre øverste"
+    },
+    {
+      "bud": "3♠",
+      "noegle": "gul",
+      "styrke": "8–10 hp",
+      "viser": "God hånd, to af de tre øverste"
+    },
+    {
+      "bud": "3NT",
+      "noegle": "gul",
+      "styrke": "8–10 hp",
+      "viser": "God hånd med E-K-D i farven"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Svarer efter Ogust-svaret",
+      "auction": [
+        [
+          "Makker",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "3 i farven",
+          "noegle": "gron",
+          "viser": "Afmelding med minimum"
+        },
+        {
+          "bud": "Udgang",
+          "noegle": "gron",
+          "viser": "Ved passende svar"
+        },
+        {
+          "bud": "4NT",
+          "noegle": "bla",
+          "viser": "RKC 1430 ved slemambition"
+        }
+      ],
+      "note": "Alle meldinger er nu naturlige."
+    },
+    {
+      "titel": "Åbner efter svarers nye farve",
+      "meldinger": [
+        {
+          "bud": "Støtte",
+          "noegle": "gron",
+          "viser": "3-korts støtte"
+        },
+        {
+          "bud": "Gentag farven",
+          "noegle": "gron",
+          "viser": "Uden støtte"
+        }
+      ]
+    }
+  ],
+  "indmelding": [
+    {
+      "situation": "Ogust bliver doblet",
+      "noegle": "gul",
+      "regel": "Svarene gælder uændret."
+    },
+    {
+      "situation": "Overmelding efter Ogust",
+      "noegle": "gra",
+      "regel": "De konventionelle svar bortfalder: åbner kan strafdoble, passe med en dårlig hånd eller gentage farven, hvis den er det værd."
+    }
+  ],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Makker",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          8,
+          5
+        ],
+        "H": [
+          13,
+          11,
+          3
+        ],
+        "D": [
+          9,
+          6,
+          4
+        ],
+        "C": [
+          14,
+          13,
+          12,
+          3
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "15 hp og 3 hjerter: 2NT – Ogust."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          8,
+          7,
+          5
+        ],
+        "H": [
+          11,
+          10,
+          6
+        ],
+        "D": [
+          4,
+          2
+        ],
+        "C": [
+          14,
+          12,
+          4,
+          3
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "3 hjerter = 9 trumf: 3♥ efter Loven – spærrende."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11,
+          10,
+          8,
+          6
+        ],
+        "H": [
+          12,
+          11,
+          9,
+          3
+        ],
+        "D": [
+          14,
+          4
+        ],
+        "C": [
+          11,
+          5,
+          3
+        ]
+      },
+      "svar": "4♥",
+      "forklaring": "4 hjerter = 10 trumf: 4♥ efter Loven – spærrende."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          10,
+          9,
+          8
+        ],
+        "H": [
+          9,
+          5
+        ],
+        "D": [
+          14,
+          13,
+          8,
+          7,
+          6,
+          5
+        ],
+        "C": [
+          4,
+          3
+        ]
+      },
+      "svar": "3♦",
+      "forklaring": "Dårlig hånd (7 hp) med 2 af de tre øverste honnører: 3♦."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          9
+        ],
+        "H": [
+          7,
+          5,
+          4
+        ],
+        "D": [
+          14,
+          13,
+          12,
+          11,
+          10,
+          2
+        ],
+        "C": [
+          9,
+          8,
+          7
+        ]
+      },
+      "svar": "3NT",
+      "forklaring": "God hånd (10 hp) med 3 af de tre øverste honnører: 3NT."
+    }
+  ],
+  "faldgruber": [
+    "Mindste minorer: 3♣ og 3♦ er de dårlige hænder.",
+    "Tophonnørerne tælles kun i trumffarven: E, K og D.",
+    "Med svag hånd og støtte spærres videre – ikke Ogust."
+  ],
+  "aabne": [
+    "Videre spærring: kilden nævner 1-2-3-reglen, træneren bruger Loven (3 i farven med 9 trumf, 4 med 10)."
+  ],
+  "relaterede": [
+    "RKC 1430"
+  ],
+  "traener": {
+    "url": "traener.html?k=ff-ogust",
+    "pool": "pools/ff-ogust.json"
+  }
+}

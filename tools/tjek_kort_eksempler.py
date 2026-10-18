@@ -29,8 +29,8 @@ for kid in ids:
         tjekket += 1
         navn = f'{kid} eksempel {i}'
         hp = sum(HP.get(c, 0) for f in 'SHDC' for c in e['haand'][f])
-        # "(16–17)" og lignende er grænser, ikke hændens point
-        for n in re.findall(r'(?<![–(\d])(\d+) hp', e['forklaring']):
+        # "(16–17)", "under 16 hp" og lignende er grænser, ikke håndens point
+        for n in re.findall(r'(?<![–(\d])(?<!under )(?<!over )(?<!mindst )(?<!højst )(\d+) hp', e['forklaring']):
             if int(n) != hp:
                 fejl.append(f'{navn}: forklaringen siger {n} hp, hånden har {hp} hp')
         forloeb = [list(x) for x in e['auction'][:-1]]

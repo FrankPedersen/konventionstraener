@@ -1,0 +1,430 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "ff-2kl",
+  "navn": "2♣ stærkåbning og 2♦ waiting",
+  "undertitel": "Den eneste stærke åbning: 2♦ venter, positive svar viser god farve",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 14 · træneren pools/ff-2kl.json",
+  "kategori": "aabning",
+  "noegle": "bla",
+  "alert": "2♣ og 2♦ alerteres",
+  "formaal": "At åbne alle meget stærke hænder lavt, så åbner kan beskrive fordelingen, før esserne tælles.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "2♣"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Makker åbner 2♣: 20+ hp, eller 9 sikre stik i major / 10 i minor, eller jævn fra 22 hp. Kravmelding.",
+    "gaelderFor": "Svar på 2♣ og forløbet efter 2♦"
+  },
+  "kortfortalt": "2♦ er waiting og siger intet om styrken; 2♥/2♠/3♣/3♦ og 2NT er positive med 8+ hp. Efter 2♣ – 2♦ – farve viser svarers billigste sans det andet negative med 0–4 hp.",
+  "meldinger": [
+    {
+      "bud": "2♦",
+      "noegle": "gul",
+      "viser": "Waiting: alt, hvad der ikke er et positivt svar"
+    },
+    {
+      "bud": "2♥ / 2♠ / 3♣ / 3♦",
+      "noegle": "gron",
+      "styrke": "8+ hp",
+      "viser": "Positivt svar: mindst god 5-farve, der kan tåle at blive trumf"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "brun",
+      "styrke": "8+ hp",
+      "viser": "Positivt svar: jævn, ingen 5-farve, hold spredt"
+    },
+    {
+      "bud": "3NT",
+      "noegle": "gron",
+      "viser": "Gående 7-farve i minor med E-K-D, intet udenfor"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Åbner efter 2♣ – 2♦",
+      "auction": [
+        [
+          "Dig",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "Farve",
+          "noegle": "gron",
+          "viser": "Naturlig, 5+ kort"
+        },
+        {
+          "bud": "2NT",
+          "noegle": "brun",
+          "styrke": "22–24 hp",
+          "viser": "Jævn"
+        },
+        {
+          "bud": "3NT",
+          "noegle": "brun",
+          "styrke": "25–27 hp",
+          "viser": "Jævn"
+        }
+      ],
+      "note": "Efter 2NT/3NT gælder sanskonventionerne ét trin højere: ASS, overføring og Gerber 4♣. Med fundet trumf bruges RKC 1430."
+    },
+    {
+      "titel": "Svarer efter 2♣ – 2♦ – farve",
+      "auction": [
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "Billigste sans",
+          "noegle": "gra",
+          "styrke": "0–4 hp",
+          "viser": "Det andet negative: ingen støtte, ingen egen farve. Åbner må passe på udgangsniveau"
+        },
+        {
+          "bud": "Støtte",
+          "noegle": "gron",
+          "viser": "3-korts støtte – også med 0–4 hp. Åbner er kaptajn"
+        },
+        {
+          "bud": "Ny farve",
+          "noegle": "gron",
+          "styrke": "5+ hp",
+          "viser": "Egen god 5-farve, naturlig"
+        },
+        {
+          "bud": "Sans over sans",
+          "noegle": "brun",
+          "styrke": "5+ hp",
+          "viser": "Hold i de umeldte farver, jævn"
+        }
+      ],
+      "note": "Pas findes ikke under udgang."
+    }
+  ],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          4,
+          3,
+          2
+        ],
+        "H": [
+          13,
+          12,
+          10
+        ],
+        "D": [
+          8,
+          6,
+          4
+        ],
+        "C": [
+          11,
+          6,
+          3,
+          2
+        ]
+      },
+      "svar": "2♦",
+      "forklaring": "6 hp: 2♦ waiting."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          8,
+          3
+        ],
+        "H": [
+          14,
+          13,
+          10,
+          8,
+          7,
+          3
+        ],
+        "D": [
+          8,
+          5
+        ],
+        "C": [
+          5,
+          3
+        ]
+      },
+      "svar": "2♥",
+      "forklaring": "11 hp og god 6-farve i hjerter: 2♥ – positivt svar."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          13,
+          12,
+          8
+        ],
+        "H": [
+          12,
+          3
+        ],
+        "D": [
+          14,
+          13,
+          12,
+          8
+        ],
+        "C": [
+          14,
+          5,
+          2
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "Jævn hånd, 24 hp: 2NT (22–24)."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          9,
+          4,
+          2
+        ],
+        "H": [
+          9,
+          3
+        ],
+        "D": [
+          12,
+          10,
+          7,
+          4
+        ],
+        "C": [
+          11,
+          9,
+          8,
+          4
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "3 hp uden støtte: 2NT – det andet negative."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          11,
+          9,
+          4
+        ],
+        "H": [
+          13,
+          9,
+          4,
+          2
+        ],
+        "D": [
+          6,
+          2
+        ],
+        "C": [
+          11,
+          7,
+          3,
+          2
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "4 hjerter: 3♥ – støtte, også med 5 hp. Åbner er kaptajn."
+    }
+  ],
+  "faldgruber": [
+    "2♦ siger intet om styrken. Den helt tomme hånd vises først med det andet negative.",
+    "Et positivt svar kræver en god farve, der kan blive trumf – ikke bare 8 hp.",
+    "Støtte går forud for det andet negative: med 3-korts støtte støtter svarer også med 0–4 hp."
+  ],
+  "aabne": [
+    "Kontrolsvar (es = 2, konge = 1) i stedet for 2♦ waiting?"
+  ],
+  "relaterede": [
+    "Amerikansk Stayman",
+    "Overføringer",
+    "Gerber",
+    "RKC 1430"
+  ],
+  "forveksles": [
+    "2♣ med kontrolsvar"
+  ],
+  "traener": {
+    "url": "traener.html?k=ff-2kl",
+    "pool": "pools/ff-2kl.json"
+  }
+}

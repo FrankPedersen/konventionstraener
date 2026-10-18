@@ -1,0 +1,339 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "ff-flannery",
+  "navn": "Flannery",
+  "undertitel": "2♦ viser præcis 5 hjerter og 4 spar med 11–15 hp",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · bilag B1 · træneren pools/ff-flannery.json",
+  "kategori": "aabning",
+  "noegle": "gul",
+  "alert": "2♦ alerteres",
+  "formaal": "At vise 5-4 i majorerne i én melding fra start, så 1♥ bliver mere præcis.",
+  "situation": {
+    "auction": [
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Du skal åbne med præcis 5 hjerter og 4 spar.",
+    "gaelderFor": "Åbning med 5-4 i majorerne og 11–15 hp"
+  },
+  "kortfortalt": "2♦ viser præcis 5 hjerter og 4 spar med 11–15 hp; med 16+ åbnes 1♥, og spar meldes bagefter. 2NT spørger efter åbners nøjagtige fordeling og styrke.",
+  "meldinger": [
+    {
+      "gruppe": "Åbner"
+    },
+    {
+      "bud": "2♦",
+      "noegle": "gul",
+      "styrke": "11–15 hp",
+      "viser": "Præcis 5 hjerter og 4 spar. Ikke krav"
+    },
+    {
+      "bud": "1♥",
+      "noegle": "gron",
+      "styrke": "16+ hp",
+      "viser": "5-4 i majorerne er for stærk til Flannery – spar meldes bagefter"
+    },
+    {
+      "gruppe": "Svarer"
+    },
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "viser": "Lang ruder og svag hånd"
+    },
+    {
+      "bud": "2♥ / 2♠",
+      "noegle": "gron",
+      "viser": "Præference, svag hånd. Slutmelding"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "bla",
+      "viser": "Krav: spørger om åbners fordeling og styrke"
+    },
+    {
+      "bud": "3♥ / 3♠",
+      "noegle": "gron",
+      "viser": "Invit med god støtte"
+    },
+    {
+      "bud": "4♥ / 4♠",
+      "noegle": "gron",
+      "viser": "Udgang, egen beslutning"
+    },
+    {
+      "bud": "3♣ / 3♦",
+      "noegle": "gron",
+      "viser": "Egen god 6-farve, naturligt, ikke krav"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Åbner svarer på 2NT",
+      "auction": [
+        [
+          "Dig",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "3♣ / 3♦",
+          "noegle": "gron",
+          "styrke": "11–13 hp",
+          "viser": "Fire kort i den meldte minor, minimum"
+        },
+        {
+          "bud": "3♥",
+          "noegle": "gul",
+          "viser": "Minimum uden sidefarve: 5-4-2-2"
+        },
+        {
+          "bud": "3♠",
+          "noegle": "gul",
+          "styrke": "14–15 hp",
+          "viser": "Maksimum uden sidefarve"
+        },
+        {
+          "bud": "3NT",
+          "noegle": "brun",
+          "viser": "5-4-2-2, maksimum og hold i begge minorer"
+        },
+        {
+          "bud": "4♣ / 4♦",
+          "noegle": "gron",
+          "viser": "Fire kort i den meldte minor, maksimum"
+        }
+      ]
+    }
+  ],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          8,
+          7,
+          5,
+          2
+        ],
+        "H": [
+          14,
+          13,
+          11,
+          3,
+          2
+        ],
+        "D": [
+          13,
+          11,
+          7,
+          6
+        ],
+        "C": []
+      },
+      "svar": "2♦",
+      "forklaring": "5 hjerter, 4 spar og 12 hp: Flannery 2♦ – præcis 5-4 i majorerne med 11–15."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          13,
+          11,
+          7
+        ],
+        "H": [
+          14,
+          12,
+          10,
+          9,
+          5
+        ],
+        "D": [],
+        "C": [
+          13,
+          12,
+          11,
+          5
+        ]
+      },
+      "svar": "1♥",
+      "forklaring": "5 hjerter, 4 spar og 20 hp: for stærk til Flannery – åbn 1♥ og meld spar bagefter. 1♥ benægter fire spar under 16 hp."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          11,
+          10,
+          7
+        ],
+        "H": [],
+        "D": [
+          11,
+          10,
+          7,
+          4,
+          3
+        ],
+        "C": [
+          8,
+          5,
+          3,
+          2
+        ]
+      },
+      "svar": "2♠",
+      "forklaring": "4 spar (8 trumf sammen) og 6 hp: 2♠ – præference og slutmelding."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          9,
+          8
+        ],
+        "H": [
+          14,
+          8
+        ],
+        "D": [
+          14,
+          12,
+          11,
+          7,
+          3
+        ],
+        "C": [
+          12,
+          8,
+          4
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "15 hp uden fit i majorerne: 2NT spørger om åbners nøjagtige fordeling og styrke (krav)."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          12,
+          11,
+          2
+        ],
+        "H": [
+          11,
+          8,
+          7,
+          6,
+          5
+        ],
+        "D": [
+          9,
+          3
+        ],
+        "C": [
+          14,
+          4
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "5-4-2-2 og 12 hp – minimum uden sidefarve: 3♥."
+    }
+  ],
+  "faldgruber": [
+    "Flannery lover præcis 5-4 – ikke 5-5 og ikke 6-4.",
+    "Svarer passer kun 2♦ med lang ruder og en svag hånd.",
+    "Med Flannery lover 1♥ enten færre end 4 spar eller 16+ hp."
+  ],
+  "aabne": [
+    "Må åbner med 5-4 og minimum melde 2♠ over 1NT, når 1♥ er åbnet?"
+  ],
+  "relaterede": [],
+  "traener": {
+    "url": "traener.html?k=ff-flannery",
+    "pool": "pools/ff-flannery.json"
+  }
+}

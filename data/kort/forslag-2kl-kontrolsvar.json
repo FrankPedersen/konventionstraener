@@ -1,0 +1,497 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "forslag-2kl-kontrolsvar",
+  "navn": "2♣ med kontrolsvar",
+  "undertitel": "Svar på 2♣ efter antal kontroller: es = 2, konge = 1",
+  "kilde": "Notat: 2♣ med kontrolsvar (efter Michael Staub, 2019) · træneren pools/forslag-2kl-kontrolsvar.json",
+  "kategori": "svar",
+  "noegle": "gul",
+  "alert": "Overføringssvarene alerteres",
+  "formaal": "At vise kontrollerne i første svar, så åbner straks ved, om der skal undersøges slem eller findes den rigtige udgang.",
+  "situation": {
+    "auction": [
+      [
+        "Makker",
+        "2♣"
+      ],
+      [
+        "Modstander",
+        "Pas"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Makker åbner 2♣ (sanshånd 22+, enfarvet eller flerfarvet hånd med mindst 8½ spillestik).",
+    "gaelderFor": "Svar på 2♣, også efter indmelding"
+  },
+  "kortfortalt": "Svarer tæller kontroller (es = 2, konge = 1): 2♦ 0–1, 2♥ 2, 2♠ 3, 2NT 4, 3♣ 5+ – eller viser en god 6-farve med overføring. Efter 2♥ og højere vender sansintervallerne: 2NT 24+, 3NT 22–23.",
+  "meldinger": [
+    {
+      "gruppe": "Kontrolsvar"
+    },
+    {
+      "bud": "2♦",
+      "noegle": "gul",
+      "viser": "0–1 kontrol"
+    },
+    {
+      "bud": "2♥",
+      "noegle": "gul",
+      "viser": "Præcis 2: ét es eller to konger"
+    },
+    {
+      "bud": "2♠",
+      "noegle": "gul",
+      "viser": "Præcis 3: es og konge eller tre konger"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "gul",
+      "viser": "Præcis 4: to esser eller es og to konger"
+    },
+    {
+      "bud": "3♣",
+      "noegle": "bla",
+      "viser": "5+ kontroller – krav til mindst lilleslem"
+    },
+    {
+      "gruppe": "Overføring med god farve"
+    },
+    {
+      "bud": "3♦ / 3♥ / 3♠ / 3NT",
+      "noegle": "gul",
+      "viser": "To af de tre øverste sjette i hhv. hjerter / spar / klør / ruder – ikke gående"
+    },
+    {
+      "bud": "4♣ / 4♦ / 4♥ / 4♠",
+      "noegle": "gul",
+      "viser": "Gående farve i hhv. ruder / hjerter / spar / klør"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Åbners sansmeldinger",
+      "auction": [
+        [
+          "Dig",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "gruppe": "Efter 2♦ (0–1 kontrol)"
+        },
+        {
+          "bud": "2NT",
+          "noegle": "brun",
+          "styrke": "22–23 hp",
+          "viser": "Jævn"
+        },
+        {
+          "bud": "3NT",
+          "noegle": "brun",
+          "styrke": "24–25 hp",
+          "viser": "Jævn"
+        },
+        {
+          "bud": "4NT",
+          "noegle": "brun",
+          "styrke": "26–27 hp",
+          "viser": "Jævn"
+        },
+        {
+          "bud": "5NT",
+          "noegle": "brun",
+          "styrke": "28–29 hp",
+          "viser": "Jævn"
+        },
+        {
+          "gruppe": "Efter 2♥ og højere (2+ kontroller)"
+        },
+        {
+          "bud": "2NT",
+          "noegle": "brun",
+          "styrke": "24+ hp",
+          "viser": "Jævn – plads til slemundersøgelse"
+        },
+        {
+          "bud": "3NT",
+          "noegle": "brun",
+          "styrke": "22–23 hp",
+          "viser": "Jævn – fast arrival"
+        }
+      ]
+    },
+    {
+      "titel": "Svarer, når åbner har fastlagt trumf",
+      "auction": [
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "Ny farve",
+          "noegle": "gul",
+          "viser": "Kontrol i farven"
+        },
+        {
+          "bud": "Udgang i trumf",
+          "noegle": "gra",
+          "viser": "0 kontroller, negativ hånd"
+        },
+        {
+          "bud": "3NT",
+          "noegle": "brun",
+          "viser": "0 kontroller, men 4+ hp i damer og knægte"
+        },
+        {
+          "bud": "Spring i ny farve",
+          "noegle": "rosa",
+          "viser": "Splinter: singleton eller renonce og mindst x-x-x i trumf"
+        }
+      ]
+    },
+    {
+      "titel": "Svarer, når åbner har meldt farve uden at fastlægge trumf",
+      "meldinger": [
+        {
+          "bud": "Farven over åbners",
+          "noegle": "gra",
+          "viser": "Relæ: benægter egen meldbar farve – også med svag støtte"
+        },
+        {
+          "bud": "3NT i anden runde",
+          "noegle": "gul",
+          "viser": "Mindst hæderlig 5-farve i relæfarven"
+        },
+        {
+          "bud": "Ny farve på 4-trinnet",
+          "noegle": "gul",
+          "viser": "Cuebid"
+        }
+      ]
+    }
+  ],
+  "indmelding": [
+    {
+      "situation": "Pas efter indmelding på 2- eller 3-trinnet",
+      "noegle": "gul",
+      "regel": "0–1 kontrol – afløser 2♦."
+    },
+    {
+      "situation": "Dobling",
+      "noegle": "gul",
+      "regel": "Præcis 2 kontroller uden hæderlig langfarve – afløser 2♥, ikke straf."
+    },
+    {
+      "situation": "Laveste sans",
+      "noegle": "gul",
+      "regel": "Mindst 3 kontroller."
+    },
+    {
+      "situation": "Ny farve",
+      "noegle": "gron",
+      "regel": "Mindst hæderlig 5-farve og 1–2 kontroller; på 4-trinnet stærk 5-farve eller hæderlig 6-farve."
+    },
+    {
+      "situation": "Spring i farve",
+      "noegle": "gron",
+      "regel": "E K D x x x(x), ingen sidekontroller."
+    },
+    {
+      "situation": "Overmelding i deres farve",
+      "noegle": "gul",
+      "regel": "3-farvet hånd med singleton/renonce i deres farve, 1–2 kontroller."
+    },
+    {
+      "situation": "Indmelding på 4-trinnet",
+      "noegle": "gra",
+      "regel": "Pas = afmelding · dobling = mindst 2 kontroller og 7–8 hp · ny farve på 5-trinnet = to tophonnører sjette og 2+ kontroller · 4NT = 3-farvet hånd."
+    },
+    {
+      "situation": "Åbners dobling",
+      "noegle": "gra",
+      "regel": "Straf, typisk med sanshånd – også når svarer har passet. Åbners pas er krav: svarer skal som hovedregel doble."
+    }
+  ],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          9
+        ],
+        "H": [
+          10,
+          8,
+          7,
+          6,
+          4
+        ],
+        "D": [
+          11,
+          3
+        ],
+        "C": [
+          14,
+          6,
+          5,
+          4,
+          2
+        ]
+      },
+      "svar": "2♥",
+      "forklaring": "Du har 2 kontroller (es = 2, konge = 1): 2♥ viser præcis 2."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          8,
+          6,
+          5
+        ],
+        "H": [
+          11,
+          9,
+          7,
+          5,
+          4
+        ],
+        "D": [
+          14,
+          4
+        ],
+        "C": [
+          14,
+          3,
+          2
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "Du har 4 kontroller (es = 2, konge = 1): 2NT viser præcis 4."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          12,
+          8,
+          7,
+          5,
+          2
+        ],
+        "H": [
+          11
+        ],
+        "D": [
+          10,
+          3
+        ],
+        "C": [
+          8,
+          6,
+          5,
+          4
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "To af de tre øverste i spar (6 kort), men ikke gående: 3♥ er overføring til spar."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          10,
+          9
+        ],
+        "H": [
+          14,
+          11
+        ],
+        "D": [
+          14,
+          13,
+          10,
+          7,
+          6
+        ],
+        "C": [
+          14,
+          13,
+          8
+        ]
+      },
+      "svar": "3NT",
+      "forklaring": "23 hp efter et positivt svar: 3NT er fast arrival med 22–23 – intervallerne vender."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "2♣"
+        ],
+        [
+          "Modstander",
+          "2♦"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          7
+        ],
+        "H": [
+          10,
+          9,
+          8,
+          5
+        ],
+        "D": [
+          14,
+          12,
+          10,
+          4
+        ],
+        "C": [
+          9,
+          4,
+          3,
+          2
+        ]
+      },
+      "svar": "X",
+      "forklaring": "Præcis 2 kontroller uden hæderlig langfarve: dobling – den erstatter 2♥ og er ikke straf."
+    }
+  ],
+  "faldgruber": [
+    "Damer og knægte tæller ikke som kontroller.",
+    "Sansintervallerne vender efter 2♥ og højere: 2NT er den stærke (24+), 3NT fast arrival (22–23).",
+    "Efter indmelding er doblingen ikke straf: den afløser 2♥.",
+    "Overføring viser farven lige over den meldte."
+  ],
+  "aabne": [
+    "Kontrolsvar eller 2♦ waiting med det andet negative efter 2♣?"
+  ],
+  "relaterede": [
+    "RKC 1430",
+    "Fast og slow arrival"
+  ],
+  "forveksles": [
+    "2♣ stærkåbning og 2♦ waiting"
+  ],
+  "traener": {
+    "url": "traener.html?k=forslag-2kl-kontrolsvar",
+    "pool": "pools/forslag-2kl-kontrolsvar.json"
+  }
+}
