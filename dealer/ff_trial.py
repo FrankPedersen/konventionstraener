@@ -18,7 +18,7 @@ PAS = ["Modstander", "Pas"]
 C = tx("Hjælp i den meldte farve", "Help in the suit bid")
 BONUS = {"q": tx("Hvad beder et trial bid om?", "What does a trial bid ask for?"),
          "correct": C,
-         "options": [C, tx("Støtte til en ny trumffarv", "Support for a new trump suit"), tx("Kontrol til slem", "Controls for slam")],
+         "options": [C, tx("Støtte til en ny trumffarve", "Support for a new trump suit"), tx("Kontrol til slem", "Controls for slam")],
          "why": tx("Trial bid meldes i en svag farve (3+ kort, 2–3 tabere). Makker melder 4M med hjælp dér – honnør, korthed eller 4 kort – og 3M uden.",
                    "A trial bid is made in a weak suit (3+ cards, 2–3 losers). Partner bids 4M with help there – an honour, "
                    "shortness or four cards – and 3M without.")}
