@@ -25,6 +25,6 @@ Et kort har samme `id` som konventionen i `data/konventioner.json`, når der fin
 
 ## Sprog og fagord
 
-- Husets fagord i dansk tekst (SPEC-sprog-og-ordbog.md): bordet, kipning, forbindelser og slutspil (indspil kun om den særlige form), og hp, doubleton og fittet. Engelsk beholder HCP.
+- Husets fagord i dansk tekst (SPEC-sprog-og-ordbog.md): bordet, kipning, forbindelser og slutspil (indspil kun om den særlige form), og hp, doubleton og fittet (derfor et fit). Engelsk beholder HCP.
 - Kør `python3 tools/tjek_fagord.py` efter tekstændringer; den skal melde "i orden". `python3 tools/tjek_sprog.py` er specens accepttest.
 - Stavekontrol med hånden før udgivelse: `python3 tools/sprogtjek.py` (kræver `pip install spylls`; den danske ordbog hentes første gang). Rigtige ord, som hunspell ikke kender, står i `tools/ordliste.txt`; stavefejl rettes i teksten.

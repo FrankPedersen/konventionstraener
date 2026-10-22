@@ -98,10 +98,16 @@ def ord_i(tekst):
 
 
 def læs_ordliste():
+    """Ordlistens ord med små bogstaver; et ord som 11-pointshænder giver også ordet pointshænder, som tjekkes."""
     if not ORDLISTE.exists():
         return set()
-    return {linje.strip().lower() for linje in ORDLISTE.read_text(encoding='utf-8').splitlines()
-            if linje.strip() and not linje.startswith('#')}
+    ud = set()
+    for linje in ORDLISTE.read_text(encoding='utf-8').splitlines():
+        w = linje.strip().lower()
+        if w and not w.startswith('#'):
+            ud.add(w)
+            ud.update(ORD.findall(w))
+    return ud
 
 
 def ukendte(ordbog, kendte):

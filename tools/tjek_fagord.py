@@ -7,7 +7,7 @@ danske argument til tx) og docs/kampen-om-kontrakten.md (kilden til Viden-siden)
 data-en-attributter, det engelske argument til T(…), og "en"-felterne i JSON.
 Fejler, hvis et af husets "Ikke"-ord står i dansk tekst. "i snit" (gennemsnit) er tilladt.
 Husets ord: bordet, kipning, forbindelser og slutspil; og efter Franks svar på T1–T3: hp (ikke HCP), doubleton
-(ikke dobbeltton) og fittet (ikke fitten) i dansk tekst.
+(ikke dobbeltton) og fittet (ikke fitten) i dansk tekst, og derfor et fit (ikke en fit).
 """
 import ast
 import json
@@ -28,7 +28,9 @@ IKKE_ORD = [
     # T1–T3 (Franks svar)
     (re.compile(r'\bHCP\b'), 'hp'),
     (re.compile(r'\bdobbeltton\w*', re.I), 'doubleton'),
-    (re.compile(r'\bfitten\b', re.I), 'fittet'),
+    (re.compile(r'\bfitten(?:s)?\b', re.I), 'fittet'),
+    # Et fit, som passer med fittet (Franks valg 22. oktober 2026): en fit, en major-fit, en 8+ major-fit …
+    (re.compile(r'\ben\s+(?:\S+\s+)?(?:[0-9a-zæøå+]+-)*fit\b', re.I), 'et fit'),
 ]
 I_SNIT = re.compile(r'\bi\s+$', re.I)
 

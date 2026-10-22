@@ -27,9 +27,12 @@ def modul(navn, sti):
 
 fagord = modul('tjek_fagord', 'tools/tjek_fagord.py')
 
+# Puljen bygges igen sammen med reglerne fra 17. oktober og rettes ikke i hånden (specen, Åbne punkter 3).
+PULJE_TIL_REGLER = 'pools/ff-trial-bids.json'
+
 # (forkert, rigtigt, filer med det rigtige) fra specens rettelsesliste
 RETTELSER = [
-    (r'\btrumffarv\b', 'Støtte til en ny trumffarve', ['dealer/ff_trial.py', 'pools/ff-trial-bids.json']),
+    (r'\btrumffarv\b', 'Støtte til en ny trumffarve', ['dealer/ff_trial.py']),
     (r'\btrumfene\b', 'hvor gode trumferne er', ['data/kort/ff-ogust.json']),
     (r'\bespecielt\b', 'bekræft især', ['viden/2-over-1-makker2.html']),
     (r'\bhændertyper\b', 'håndtyper', ['viden/2-over-1-makker2.html']),
@@ -70,7 +73,8 @@ class Sidefoden(unittest.TestCase):
 
 class Rettelserne(unittest.TestCase):
     def test_de_fem_ord_er_rettet(self):
-        filer = [f for f in fagord.filer() if not f.startswith(('design/', 'SPEC-')) and (ROD / f).exists()]
+        filer = [f for f in fagord.filer()
+                 if not f.startswith(('design/', 'SPEC-')) and f != PULJE_TIL_REGLER and (ROD / f).exists()]
         for forkert, rigtigt, steder in RETTELSER:
             for f in filer:
                 tekst = (ROD / f).read_text(encoding='utf-8', errors='ignore')
@@ -78,16 +82,6 @@ class Rettelserne(unittest.TestCase):
             for f in steder:
                 tekst = re.sub(r'\s+', ' ', (ROD / f).read_text(encoding='utf-8'))
                 self.assertIn(rigtigt, tekst, f)
-
-    def test_puljen_ff_trial_bids_har_dealerens_svarmuligheder(self):
-        from dealer import ff_trial
-        pulje = json.loads((ROD / 'pools/ff-trial-bids.json').read_text(encoding='utf-8'))
-        da = [str(o) for o in ff_trial.BONUS['options']]
-        en = [str(o.en) for o in ff_trial.BONUS['options']]
-        for navn, sit in pulje['situations'].items():
-            if 'bonus' in sit:
-                self.assertEqual(sit['bonus']['options'], da, navn)
-                self.assertEqual(sit['en']['bonus']['options'], en, navn)
 
 
 class Fagord(unittest.TestCase):
@@ -104,7 +98,10 @@ class Fagord(unittest.TestCase):
         self.assertEqual(fagord.fund('12 HCP'), [('HCP', 'hp')])
         self.assertEqual(fagord.fund('Tre trumf og dobbeltton klør'), [('dobbeltton', 'doubleton')])
         self.assertEqual(fagord.fund('når fitten er fundet'), [('fitten', 'fittet')])
-        self.assertEqual(fagord.fund('12 hp, doubleton i klør, og fittet er fundet'), [])
+        self.assertEqual(fagord.fund('en fit i spar'), [('en fit', 'et fit')])
+        self.assertEqual(fagord.fund('med en 8+ major-fit'), [('en 8+ major-fit', 'et fit')])
+        self.assertEqual(fagord.fund('fittens farve'), [('fittens', 'fittet')])
+        self.assertEqual(fagord.fund('12 hp, doubleton i klør, og fittet er fundet; et 4-3-fit'), [])
 
     def test_engelsk_tekst_taeller_ikke(self):
         side = '<td data-en="10+ HCP">10+ hp</td> T(`Din hånd: ${q.hp} hp`, `Your hand: ${q.hp} HCP`)'

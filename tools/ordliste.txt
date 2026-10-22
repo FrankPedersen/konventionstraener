@@ -72,6 +72,9 @@ stærkåbning
 stærkåbningen
 stærkåbningens
 trekortsstøtte
+sanstrinene
+trinene
+Trinene
 trumfning
 udoblet
 uforhåndspasset
@@ -79,6 +82,9 @@ umeldt
 umeldte
 uviste
 énfarvet
+
+# Tal og sammensatte ord (som 3-værelseslejlighed)
+11-pointshænder
 
 # Konventioner, navne og kilder
 bridgebum
