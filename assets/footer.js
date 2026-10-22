@@ -2,6 +2,7 @@
    Siden har et tomt <footer id="sidefod"> uden for <main> (så doc-export.js ikke tager den med i Word-filen)
    og henter dette script lige efter. Al tekst og stil står kun her.
    Om mig og kontakt har sin egen side på www.kontraktbridge.dk/om-mig/; sidefoden har kun knappen dertil (SPEC-om-mig.md).
+   Kolonnen Opslag med Bridgeordbog (www.kontraktbridge.dk/ordbog/) står efter Trænere som på hele sitet (SPEC-sprog-og-ordbog.md).
    Sproget følger lang.js; sider uden lang.js (systemdokumenterne) er på dansk.
    Links til aftalerne regnes relativt ud fra scriptets egen adresse (assets/footer.js eller ../assets/footer.js),
    links til de andre trænere skrives med / foran, fordi siderne ligger på www.kontraktbridge.dk. */
@@ -66,6 +67,8 @@
         + link('/fordelingstraeneren/', 'Pointregnskab', 'Point count')
         + link('/fordelingstraeneren/', 'Farvebehandling', 'Suit combinations')
         + link('/fordelingstraeneren/', 'Håndevaluering', 'Hand evaluation'))
+    +   kolonne('opslag', 'Opslag', 'Reference',
+          link('/ordbog/', 'Bridgeordbog', 'Bridge dictionary'))
     +   kolonne('aftaler', 'Aftaler og notater', 'Agreements and notes (in Danish)',
           link(root + 'makkeraftaler.html#kf', 'Makker 1 & mig', 'Partner 1 & me')
         + link(root + 'makkeraftaler.html#ff', 'Makker 2 & mig', 'Partner 2 & me')

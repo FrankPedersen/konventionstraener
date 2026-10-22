@@ -47,7 +47,9 @@ def fund(tekst):
 # --- Dansk tekst ---
 
 STRENG = r'''(`[^`]*`|'(?:[^'\\\n]|\\.)*'|"(?:[^"\\\n]|\\.)*")'''
-T_KALD = re.compile(r'\bT\(\s*' + STRENG + r'\s*,\s*' + STRENG + r'\s*\)')
+# T('dansk', 'English') i lang.js og t(…) i footer.js; link(href, 'dansk', 'English') og kolonne(id, 'dansk', 'English', …)
+T_KALD = re.compile(r'\b[Tt]\(\s*' + STRENG + r'\s*,\s*' + STRENG + r'\s*\)')
+PAR_KALD = re.compile(r'\b(link|kolonne)\(\s*' + STRENG + r'\s*,\s*' + STRENG + r'\s*,\s*' + STRENG)
 
 
 def uden_en_objekter(tekst):
@@ -83,6 +85,7 @@ def dansk_side(tekst):
     tekst = re.sub(r'\sdata-en(?:-[a-z]+)?\s*=\s*"[^"]*"', ' ', tekst)
     tekst = re.sub(r"\sdata-en(?:-[a-z]+)?\s*=\s*'[^']*'", ' ', tekst)
     tekst = T_KALD.sub(lambda m: m.group(1), tekst)
+    tekst = PAR_KALD.sub(lambda m: f'{m.group(1)}({m.group(2)}, {m.group(3)}', tekst)
     return uden_en_objekter(tekst)
 
 

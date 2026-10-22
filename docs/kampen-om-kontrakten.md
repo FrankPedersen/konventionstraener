@@ -327,7 +327,7 @@ Dobling er her **straf**, ikke oplysende.
 - Overmelding i fjendens farve = udgangskrav, søger hold
 - 2ut = inviterende
 
-Bogen erkender selv, at der ikke er plads til at skelne stopmeldinger fra invitter.
+Bogen erkender selv, at der ikke er plads til at skelne stopmeldinger fra invitationer.
 
 **Lebensohl (kun i profil Turnering).** 2ut = relæ til 3♣. Direkte 3-melding = krav; via 2ut = stopmelding. Løser bogens erkendte hul fuldstændigt. Slået fra: bogens skema med den uløste tvetydighed.
 

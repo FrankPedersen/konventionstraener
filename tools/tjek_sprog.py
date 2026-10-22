@@ -115,9 +115,10 @@ class Fagord(unittest.TestCase):
 
 class Ordlisten(unittest.TestCase):
     def test_ordlisten_har_bridgeordene(self):
-        ord_ = (ROD / 'tools/ordliste.txt').read_text(encoding='utf-8').split()
+        linjer = (ROD / 'tools/ordliste.txt').read_text(encoding='utf-8').splitlines()
+        ord_ = {l.strip().lower() for l in linjer if l.strip() and not l.startswith('#')}
         for w in ('cuebid', 'sleminvit', 'Stayman', 'kipning'):
-            self.assertIn(w, ord_)
+            self.assertIn(w.lower(), ord_)
 
 
 if __name__ == '__main__':
