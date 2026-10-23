@@ -140,29 +140,29 @@
       ],
       "haand": {
         "S": [
-          5,
-          4
+          14,
+          12,
+          10,
+          9
         ],
         "H": [
           14,
           11,
-          9,
           7,
-          5
+          5,
+          2
         ],
         "D": [
-          14,
-          11,
-          9
+          4
         ],
         "C": [
-          13,
-          11,
-          6
+          12,
+          4,
+          2
         ]
       },
       "svar": "3♣",
-      "forklaring": "15 sp (14 hp + double ♠ = 1) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér."
+      "forklaring": "16 sp (13 hp + single ♦ = 3) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér."
     },
     {
       "auction": [
@@ -189,29 +189,29 @@
       ],
       "haand": {
         "S": [
-          13,
-          3
-        ],
-        "H": [
-          14,
-          10,
-          8,
-          6,
-          3
-        ],
-        "D": [
           7,
           3
         ],
+        "H": [
+          13,
+          10,
+          8,
+          6,
+          3,
+          2
+        ],
+        "D": [
+          13,
+          4
+        ],
         "C": [
           14,
-          12,
-          11,
-          10
+          13,
+          4
         ]
       },
       "svar": "3♥",
-      "forklaring": "16 sp (14 hp + double ♠ = 1 + double ♦ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit."
+      "forklaring": "16 sp (13 hp + double ♠ = 1 + double ♦ = 1 + 1 ekstra trumf), men ingen sidefarve med 2–3 tabere: 3♥ – invit."
     },
     {
       "auction": [
@@ -246,24 +246,24 @@
       ],
       "haand": {
         "S": [
-          10,
-          2
+          11,
+          10
         ],
         "H": [
-          11,
-          8,
-          2
+          13,
+          10,
+          4
         ],
         "D": [
-          14,
-          8,
+          12,
+          9,
           7,
           6
         ],
         "C": [
           10,
-          8,
-          5,
+          9,
+          7,
           3
         ]
       },
@@ -304,24 +304,24 @@
       "haand": {
         "S": [
           12,
-          7
+          10,
+          5
         ],
         "H": [
-          13,
-          9,
-          4
+          8,
+          3,
+          2
         ],
         "D": [
           11,
-          9,
+          10,
           8,
-          7
+          4
         ],
         "C": [
+          13,
           12,
-          10,
-          3,
-          2
+          7
         ]
       },
       "svar": "4♥",
@@ -360,25 +360,25 @@
       ],
       "haand": {
         "S": [
-          10,
+          11,
           8,
-          3
+          7
         ],
         "H": [
-          14,
-          12,
-          5
+          10,
+          4,
+          3
         ],
         "D": [
-          10,
-          8,
-          6,
-          4
+          13,
+          7,
+          2
         ],
         "C": [
+          14,
           8,
-          3,
-          2
+          6,
+          5
         ]
       },
       "svar": "3♥",

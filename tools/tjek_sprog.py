@@ -27,12 +27,9 @@ def modul(navn, sti):
 
 fagord = modul('tjek_fagord', 'tools/tjek_fagord.py')
 
-# Puljen bygges igen sammen med reglerne fra 17. oktober og rettes ikke i hånden (specen, Åbne punkter 3).
-PULJE_TIL_REGLER = 'pools/ff-trial-bids.json'
-
 # (forkert, rigtigt, filer med det rigtige) fra specens rettelsesliste
 RETTELSER = [
-    (r'\btrumffarv\b', 'Støtte til en ny trumffarve', ['dealer/ff_trial.py']),
+    (r'\btrumffarv\b', 'Støtte til en ny trumffarve', ['dealer/ff_trial.py', 'pools/ff-trial-bids.json']),
     (r'\btrumfene\b', 'hvor gode trumferne er', ['data/kort/ff-ogust.json']),
     (r'\bespecielt\b', 'bekræft især', ['viden/2-over-1-makker2.html']),
     (r'\bhændertyper\b', 'håndtyper', ['viden/2-over-1-makker2.html']),
@@ -74,7 +71,7 @@ class Sidefoden(unittest.TestCase):
 class Rettelserne(unittest.TestCase):
     def test_de_fem_ord_er_rettet(self):
         filer = [f for f in fagord.filer()
-                 if not f.startswith(('design/', 'SPEC-')) and f != PULJE_TIL_REGLER and (ROD / f).exists()]
+                 if not f.startswith(('design/', 'SPEC-')) and (ROD / f).exists()]
         for forkert, rigtigt, steder in RETTELSER:
             for f in filer:
                 tekst = (ROD / f).read_text(encoding='utf-8', errors='ignore')

@@ -2,10 +2,13 @@
 Longsuit trial bids – Makker 2 & mig, afsnit 1 og 3.
 
 Efter 1M – 2M (6–9 sp, 3 korts støtte):
-  aab_*  – åbner: pas 12–14 sp · trial bid 15–16 sp i en sidefarve med 3+ kort og 2–3 tabere (den
-           svageste – flest tabere, ved lighed den billigste) · 3M 15–16 uden en sådan farve · 4M 17+
-  svar_* – svarer efter trial bid: 4M med hjælp i farven (es, konge eller dame, singleton/renonce eller
-           4+ kort), 3M uden hjælp
+  aab_*  – åbner: pas 12–14 sp · trial bid 15–17 sp i en sidefarve med 3+ kort og 2–3 tabere (den
+           svageste – flest tabere, ved lighed den billigste) · 3M 15–16 uden en sådan farve · 4M 18+,
+           eller 17 uden en sådan farve
+  svar_* – svarer efter trial bid: 4M med hjælp i farven (es, konge eller dame, singleton/renonce), 3M uden
+           hjælp – også med 4 små
+Franks rettelser 17. oktober 2026 (SPEC-konventionskort.md, Afklaret 25): 4 små kort er ikke hjælp, og trial
+bid er 15–17 sp.
 Antagelser: åbner tæller støttepoint (hp + korthed 5/3/1 + 1 pr. trumf ud over fem), som i
 omvendt Bergen; tabere tælles på de tre øverste pladser (es, konge, dame er vindere); trial bid
 meldes billigst (over 1♥ – 2♥ er 2♠ trial bid). Svarers »ny farve = hjælp dér« er ikke med.
@@ -19,9 +22,10 @@ C = tx("Hjælp i den meldte farve", "Help in the suit bid")
 BONUS = {"q": tx("Hvad beder et trial bid om?", "What does a trial bid ask for?"),
          "correct": C,
          "options": [C, tx("Støtte til en ny trumffarve", "Support for a new trump suit"), tx("Kontrol til slem", "Controls for slam")],
-         "why": tx("Trial bid meldes i en svag farve (3+ kort, 2–3 tabere). Makker melder 4M med hjælp dér – honnør, korthed eller 4 kort – og 3M uden.",
-                   "A trial bid is made in a weak suit (3+ cards, 2–3 losers). Partner bids 4M with help there – an honour, "
-                   "shortness or four cards – and 3M without.")}
+         "why": tx("Trial bid meldes i en svag farve (3+ kort, 2–3 tabere). Makker melder 4M med hjælp dér – honnør eller korthed – og 3M uden. "
+                   "4 små kort er ikke hjælp.",
+                   "A trial bid is made in a weak suit (3+ cards, 2–3 losers). Partner bids 4M with help there – an honour or shortness – "
+                   "and 3M without. Four small cards are not help.")}
 
 def losers(cards):
     top = cards[:3]
@@ -44,9 +48,12 @@ def opener(M):
             return None
         if sp <= 14:
             return "Pas", tx(f"{pts}: pas – udgang er udelukket over for 6–9.", f"{pe}: pass – game is out of reach opposite 6–9.")
-        if sp >= 17:
-            return f"4{sym}", tx(f"{pts}: 4{sym} direkte (17+).", f"{pe}: 4{sym} directly (17+).")
+        if sp >= 18:
+            return f"4{sym}", tx(f"{pts}: 4{sym} direkte (18+).", f"{pe}: 4{sym} directly (18+).")
         weak = [s for s in SUITS if s != M and L[s] >= 3 and 2 <= losers(hand[s]) <= 3]
+        if not weak and sp == 17:
+            return f"4{sym}", tx(f"{pts} og ingen sidefarve med 2–3 tabere: 4{sym} direkte.",
+                                 f"{pe} and no side suit with 2–3 losers: 4{sym} directly.")
         if not weak:
             return f"3{sym}", tx(f"{pts}, men ingen sidefarve med 2–3 tabere: 3{sym} – invit.",
                                  f"{pe}, but no side suit with 2–3 losers: 3{sym} – invitational.")
@@ -58,7 +65,8 @@ def opener(M):
     return classify
 
 def helps(cards):
-    return len(cards) <= 1 or len(cards) >= 4 or any(r >= 12 for r in cards)
+    """Hjælp er honnør (es, konge eller dame) eller korthed; 4 små kort er ikke hjælp."""
+    return len(cards) <= 1 or any(r >= 12 for r in cards)
 
 def responder(M, s):
     sym = SUIT_SYM[M]
@@ -68,9 +76,12 @@ def responder(M, s):
             return None
         cards = hand[s]
         if helps(cards):
-            why = ("korthed" if len(cards) <= 1 else "4 kort" if len(cards) >= 4 else "honnør")
-            why_en = ("shortness" if len(cards) <= 1 else "4 cards" if len(cards) >= 4 else "an honour")
+            why = "korthed" if len(cards) <= 1 else "honnør"
+            why_en = "shortness" if len(cards) <= 1 else "an honour"
             return f"4{sym}", tx(f"Hjælp i {SUIT_NAME[s]} ({why}): 4{sym}.", f"Help in {SUIT_NAME_EN[s]} ({why_en}): 4{sym}.")
+        if len(cards) >= 4:
+            return f"3{sym}", tx(f"Ingen hjælp i {SUIT_NAME[s]} (ingen honnør – 4 små er ikke hjælp): 3{sym}.",
+                                 f"No help in {SUIT_NAME_EN[s]} (no honour – four small cards are not help): 3{sym}.")
         return f"3{sym}", tx(f"Ingen hjælp i {SUIT_NAME[s]} (ingen honnør, 2–3 små): 3{sym}.",
                              f"No help in {SUIT_NAME_EN[s]} (no honour, 2–3 small cards): 3{sym}.")
     return classify
@@ -101,7 +112,7 @@ for M, key in (('H', 'hj'), ('S', 'sp')):
                           "calls": ["Pas", f"3{sym}", "3NT", f"4{sym}"], "bonus": BONUS}
         CLASSIFIERS[sk] = responder(M, s)
         rs = lambda hp, M=M, **b: tpl(hp, **{M: (3, 3), **{x: (2, 4) for x in SUITS if x != M}, **b})
-        SAMPLERS[sk] = {f"4{sym}": either(rs((5, 9)), rs((4, 8), **{s: (1, 1)})), f"3{sym}": rs((5, 9), **{s: (2, 3)})}
+        SAMPLERS[sk] = {f"4{sym}": either(rs((5, 9)), rs((4, 8), **{s: (1, 1)})), f"3{sym}": rs((5, 9), **{s: (2, 4)})}
         PER_CALL[sk] = 8
 
 def export_pool(path):
