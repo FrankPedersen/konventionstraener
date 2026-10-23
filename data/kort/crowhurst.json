@@ -1,0 +1,537 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "crowhurst",
+  "navn": "Forsvar mod Multi 2♦ (Crowhurst)",
+  "undertitel": "Forsvar mod modpartens 2♦ (Multi eller Ekren), med Lebensohl",
+  "kilde": "Jyderup Bridgeklub: Crowhurst med Lebensohl (1 side) · docs/kilder/crowhurst_med_lebensohl.pdf",
+  "kategori": "forsvar",
+  "noegle": "gul",
+  "formaal": "At kunne konkurrere mod modpartens 2♦, selv om man ikke ved, hvilken major åbneren har.",
+  "situation": {
+    "auction": [
+      [
+        "Modstander",
+        "2♦"
+      ],
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Modparten åbner 2♦ som Multi (svag 2 i en ukendt major) eller Ekren (begge majorer), og du melder direkte efter åbneren.",
+    "gaelderFor": "Modpartens 2♦-åbning, når den er Multi eller Ekren"
+  },
+  "kortfortalt": "Dobling viser 12–16 jævn eller 17+, og farvemeldingerne er naturlige med 12–16. Dobler makker, og svarer melder 2♥, bruges Lebensohl: 2NT beder om 3♣.",
+  "meldinger": [
+    {
+      "bud": "X",
+      "noegle": "bla",
+      "styrke": "12–16 eller 17+ hp",
+      "viser": "Jævn hånd med 12–16, eller en hånd med 17+"
+    },
+    {
+      "bud": "2♥ / 2♠",
+      "noegle": "gron",
+      "styrke": "12–16 hp",
+      "viser": "Naturligt, 5+ farve"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "brun",
+      "styrke": "17–19 hp",
+      "viser": "Jævn hånd; svarer bruger amerikansk Stayman"
+    },
+    {
+      "bud": "3♣ / 3♦",
+      "noegle": "gron",
+      "styrke": "12–16 hp",
+      "viser": "Naturligt, 5+ farve"
+    },
+    {
+      "bud": "3NT",
+      "noegle": "brun",
+      "viser": "For at spille, typisk med minorlængde og styrke"
+    },
+    {
+      "bud": "4♣ / 4♦",
+      "noegle": "gul",
+      "viser": "5+ hjerter og 5+ i den meldte minor"
+    },
+    {
+      "bud": "4♥ / 4♠",
+      "noegle": "gron",
+      "viser": "For at spille"
+    },
+    {
+      "bud": "4NT",
+      "noegle": "gul",
+      "viser": "Begge minorer, styrke"
+    },
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "viser": "Tvivlsom minorindmelding eller trefarvet hånd med korthed i en major; man kommer om muligt igen senere"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Genåbning efter deres 2♥",
+      "auction": [
+        [
+          "Modstander",
+          "2♦"
+        ],
+        [
+          "Dig",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Makker",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "X",
+          "noegle": "bla",
+          "viser": "Oplysning, typisk 4 spar og korthed i hjerter"
+        },
+        {
+          "bud": "3♣ / 3♦",
+          "noegle": "gron",
+          "viser": "Den minorfarve, man ventede med"
+        }
+      ],
+      "note": "Med spar og en minor (i stedet for hjerter) venter man i første runde og melder 4 i minoren i næste melderunde."
+    },
+    {
+      "titel": "Svarer efter makkers dobling og deres 2♥",
+      "auction": [
+        [
+          "Modstander",
+          "2♦"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "X",
+          "noegle": "brun",
+          "viser": "Straf"
+        },
+        {
+          "bud": "2♠",
+          "noegle": "gron",
+          "viser": "For at spille"
+        },
+        {
+          "bud": "2NT",
+          "noegle": "gul",
+          "viser": "Lebensohl: beder om 3♣"
+        },
+        {
+          "bud": "3♣ / 3♦",
+          "noegle": "gron",
+          "viser": "Konstruktiv, invit"
+        },
+        {
+          "bud": "3 i major",
+          "noegle": "bla",
+          "viser": "5+ farve",
+          "krav": "Krav"
+        }
+      ],
+      "note": "Makker melder 3♣ efter 2NT, men bryder med 17+."
+    },
+    {
+      "titel": "Svarer efter 2NT – 3♣",
+      "auction": [
+        [
+          "Modstander",
+          "2♦"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Dig",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "Pas / 3♦",
+          "noegle": "gron",
+          "viser": "Svag hånd med minorfarven"
+        },
+        {
+          "bud": "3 i major",
+          "noegle": "gron",
+          "viser": "Invit med 5-farve"
+        }
+      ]
+    },
+    {
+      "titel": "Svarer efter 4♣",
+      "auction": [
+        [
+          "Modstander",
+          "2♦"
+        ],
+        [
+          "Makker",
+          "4♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "4♦",
+          "noegle": "bla",
+          "viser": "Hjerter som trumf",
+          "krav": "Krav"
+        },
+        {
+          "bud": "4♥",
+          "noegle": "gron",
+          "viser": "For at spille"
+        },
+        {
+          "bud": "4♠",
+          "noegle": "bla",
+          "viser": "Klør som trumf",
+          "krav": "Krav"
+        },
+        {
+          "bud": "4NT",
+          "noegle": "gul",
+          "viser": "Esspørgsmål med 6 esser"
+        }
+      ],
+      "note": "6 esser er normalt de fire esser og kongerne i hjerter og klør."
+    },
+    {
+      "titel": "Svarer efter 4♦",
+      "auction": [
+        [
+          "Modstander",
+          "2♦"
+        ],
+        [
+          "Makker",
+          "4♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "4♥",
+          "noegle": "gron",
+          "viser": "For at spille"
+        }
+      ]
+    }
+  ],
+  "indmelding": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Modstander",
+          "2♦"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          13,
+          12,
+          11
+        ],
+        "H": [
+          11,
+          10,
+          8,
+          5
+        ],
+        "D": [
+          12,
+          10,
+          9
+        ],
+        "C": [
+          13,
+          8
+        ]
+      },
+      "svar": "X",
+      "forklaring": "16 hp og jævn: X – 12–16 jævn eller 17+."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "2♦"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          10
+        ],
+        "H": [
+          14,
+          12,
+          9,
+          5,
+          4
+        ],
+        "D": [
+          6
+        ],
+        "C": [
+          14,
+          9,
+          8,
+          6,
+          4,
+          3
+        ]
+      },
+      "svar": "4♣",
+      "forklaring": "5 hjerter, 6 klør og 10 hp: 4♣ – 5+ hjerter og 5+ klør."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "2♦"
+        ],
+        [
+          "Dig",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Makker",
+          "Pas"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          10,
+          9,
+          8,
+          5
+        ],
+        "H": [
+          14
+        ],
+        "D": [
+          13,
+          11,
+          7,
+          6
+        ],
+        "C": [
+          14,
+          10,
+          9,
+          3
+        ]
+      },
+      "svar": "X",
+      "forklaring": "4 spar og en hjerter i genåbningen: X – oplysning, typisk 4 spar og korthed i hjerter."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "2♦"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "2♥"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          10,
+          3
+        ],
+        "H": [
+          8,
+          5,
+          2
+        ],
+        "D": [
+          13,
+          10,
+          9,
+          8,
+          4,
+          3
+        ],
+        "C": [
+          10,
+          7
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "6 ruder og 3 hp: 2NT – Lebensohl; du vil spille 3♣ eller 3♦."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "2♦"
+        ],
+        [
+          "Makker",
+          "4♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          10,
+          9,
+          2
+        ],
+        "H": [
+          14,
+          11,
+          7
+        ],
+        "D": [
+          13,
+          8,
+          6
+        ],
+        "C": [
+          14,
+          9,
+          5
+        ]
+      },
+      "svar": "4♦",
+      "forklaring": "3 hjerter og 16 hp: 4♦ – krav med hjerter som trumf."
+    }
+  ],
+  "faldgruber": [
+    "Doblingen af 2♦ er hverken straf eller oplysning med korthed i ruder.",
+    "Pas i første runde er ikke altid svagt: med en tvivlsom minor eller en trefarvet hånd kommer man igen.",
+    "Efter makkers dobling og deres 2♥ er 2NT ikke naturlig. En svag hånd med en minor går over 2NT; 3♣ og 3♦ direkte er invit."
+  ],
+  "aabne": [
+    "Kilden siger ikke, hvordan makker bryder 3♣ med 17+.",
+    "Kilden beskriver kun svarers 2♥ efter doblingen, ikke 2♠ eller pas.",
+    "3 i major efter doblingen og efter 2NT – 3♣ skelner ikke mellem hjerter og spar, selv om svarers 2♥ kan være pas eller ret.",
+    "Svarene på 4NT med 6 esser står ikke i kilden."
+  ],
+  "relaterede": [
+    "Lebensohl",
+    "Stayman"
+  ],
+  "forveksles": [
+    "Crowhurst (checkback efter åbners 1NT-genmelding)",
+    "Multiforsvar"
+  ],
+  "traener": {
+    "url": "traener.html?k=crowhurst",
+    "pool": "pools/crowhurst.json"
+  }
+}

@@ -971,5 +971,25 @@
    "gruppe": "Competition",
    "beskrivelse": "Partner opens, the opponents double: XX 10+ without support, 2NT 10+ with support, a direct raise is weak and shows the number of trumps."
   }
+ },
+ {
+  "id": "crowhurst",
+  "titel": "Forsvar mod Multi 2♦ (Crowhurst)",
+  "gruppe": "Konkurrence",
+  "emne": "indmeldinger",
+  "beskrivelse": "Modparten åbner 2♦ (Multi eller Ekren): X 12–16 jævn eller 17+, 2♥/2♠ og 3♣/3♦ naturligt 12–16, 2NT 17–19, 4♣/4♦ hjerter og minor, 4NT begge minorer – og Lebensohl efter makkers dobling.",
+  "roller": [
+   "Indmelder",
+   "Genåbner",
+   "Svarer"
+  ],
+  "status": "klar",
+  "system": "generel",
+  "viden": "viden/konventionskort.html#crowhurst",
+  "en": {
+   "titel": "Defence against Multi 2♦ (Crowhurst)",
+   "gruppe": "Competition",
+   "beskrivelse": "The opponents open 2♦ (Multi or Ekren): X 12–16 balanced or 17+, 2♥/2♠ and 3♣/3♦ natural 12–16, 2NT 17–19, 4♣/4♦ hearts and a minor, 4NT both minors – and Lebensohl after partner's double."
+  }
  }
 ]
