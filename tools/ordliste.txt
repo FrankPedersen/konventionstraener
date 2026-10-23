@@ -89,6 +89,7 @@ uviste
 # Konventioner, navne og kilder
 bridgebum
 bridgehands
+crowhurst
 ekren
 ellebye
 erlandsson
@@ -155,6 +156,7 @@ call
 club
 contract
 convention
+docs
 eren
 everybody
 fixed

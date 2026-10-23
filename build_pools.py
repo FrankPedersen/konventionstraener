@@ -21,7 +21,7 @@ from dealer import (ass, bekkasin, cuebids, dont, fjerde_farve, kontrolsvar, leb
                     ff_bergen, ff_trial, ff_fast, ff_2over1, ff_genmeld, ff_minor,
                     ff_transfer, ff_gerber, ff_2kl, ff_ogust, ff_rkc,
                     ff_michaels, ff_genaabning, ff_doblinger, ff_kravpas, ff_lebensohl, ff_flannery, ff_revers,
-                    landy, kamp_stoette, kamp_konk, markering, truscott)
+                    landy, kamp_stoette, kamp_konk, markering, truscott, crowhurst)
 
 CONVENTIONS = {
     "multiforsvar": multiforsvar,
@@ -70,6 +70,7 @@ CONVENTIONS = {
     "markeringer": SimpleNamespace(export_pool=markering.exporter("markeringer")),
     "lavinthal": SimpleNamespace(export_pool=markering.exporter("lavinthal")),
     "truscott": truscott,
+    "crowhurst": crowhurst,
 }
 
 def main(names):

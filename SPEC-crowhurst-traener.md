@@ -89,15 +89,15 @@ Bedømmelsen går reglerne igennem i rækkefølge; den første, der passer, er s
 | 2 | 5+ hjerter og 5+ i en minor, `TOFARVE_HP` | 4 i minoren |
 | 3 | 5-5 eller længere i minorerne, `MINOR_4NT_HP` | 4NT |
 | 4 | 7+ i en major med `MAJOR_4M_KVALITET`, `MAJOR_4M_HP` | 4 i majoren |
-| 5 | 17+ hp, som ikke er 17–19 jævn (og ingen regel ovenfor) | X |
-| 6 | 5+ i en major, 12–16 hp | 2 i den længste major; ved lige længde spar |
-| 7 | 6+ i en minor med `MINOR_3NT_KVALITET` og `MINOR_3NT_HP` | 3NT |
+| 5 | 6+ i en minor med `MINOR_3NT_KVALITET` og `MINOR_3NT_HP` | 3NT |
+| 6 | 17+ hp, som ikke er 17–19 jævn (og ingen regel ovenfor) | X |
+| 7 | 5+ i en major, 12–16 hp | 2 i den længste major; ved lige længde spar |
 | 8 | 5+ i en minor med `MINOR_KVALITET`, 12–16 hp | 3 i minoren |
 | 9 | 12–16 hp, jævn | X |
 | 10 | 12+ hp, trefarvet med korthed i en major, eller en minor uden `MINOR_KVALITET` | Pas |
 | 11 | højst 11 hp | Pas |
 
-Jævn = 4-3-3-3, 4-4-3-2 eller 5-3-3-2. En jævn hånd med en 5-farve major og 12–16 hp får 2 i majoren (regel 6 før regel 9).
+Jævn = 4-3-3-3, 4-4-3-2 eller 5-3-3-2. En jævn hånd med en 5-farve major og 12–16 hp får 2 i majoren (regel 7 før regel 9). 3NT-reglen står før X med 17+, så en god 6-farve minor med 16–19 hp får 3NT; ved 16 hp vinder 3NT over 3 i minoren (Franks rettelse, Afklaret 5).
 
 **`genaabning`** (hånden skal give Pas efter reglerne for `direkte`):
 
@@ -167,23 +167,23 @@ Hver situation får ét bonusspørgsmål, skiftevis blandt disse:
 | Hvad viser X direkte over 2♦? | 12–16 jævn eller 17+ | Straf af ruder · Oplysning med korthed i ruder |
 | Hvad viser 2NT fra makker efter (2♦) – X – (2♥)? | Lebensohl: beder om 3♣ | Naturligt, 10–12 jævn · Krav til udgang |
 | Hvad viser 4NT efter (2♦) – 4♣? | Esspørgsmål med 6 esser | Begge minorer · For at spille |
-| Hvad gør doblerens makker over 2NT – 3♣ med 17+? | Bryder i stedet for at melde 3♣ | Melder 3♣ og passer bagefter · Melder altid 3NT |
+| Hvad gør dobleren efter makkers 2NT med 17+? | Bryder i stedet for at melde 3♣ | Melder 3♣ og passer bagefter · Melder altid 3NT |
 
 ## Post i data/konventioner.json
 
 ```json
 {
   "id": "crowhurst",
-  "titel": "Crowhurst mod Multi 2♦",
+  "titel": "Forsvar mod Multi 2♦ (Crowhurst)",
   "gruppe": "Konkurrence",
   "emne": "indmeldinger",
   "beskrivelse": "Modparten åbner 2♦ (Multi eller Ekren): X 12–16 jævn eller 17+, 2♥/2♠ og 3♣/3♦ naturligt 12–16, 2NT 17–19, 4♣/4♦ hjerter og minor, 4NT begge minorer – og Lebensohl efter makkers dobling.",
   "roller": ["Indmelder", "Genåbner", "Svarer"],
   "status": "klar",
-  "system": "SPØRG FRANK",
+  "system": "generel",
   "viden": "viden/konventionskort.html#crowhurst",
   "en": {
-    "titel": "Crowhurst against Multi 2♦",
+    "titel": "Defence against Multi 2♦ (Crowhurst)",
     "gruppe": "Competition",
     "beskrivelse": "The opponents open 2♦ (Multi or Ekren): X 12–16 balanced or 17+, 2♥/2♠ and 3♣/3♦ natural 12–16, 2NT 17–19, 4♣/4♦ hearts and a minor, 4NT both minors – and Lebensohl after partner's double."
   }
@@ -204,10 +204,20 @@ Hver situation får ét bonusspørgsmål, skiftevis blandt disse:
 1. **Kortet er uafhængigt af makker** og nævner hverken Jyderup Bridgeklub eller makkerskab i teksten; kilden står i kortets kildefelt.
 2. **4NT efter (2♦) – 4♣** og **4♥ efter (2♦) – 4♦** står kun som bonusspørgsmål og på kortet, ikke som situationer, fordi kilden ikke giver grænser for, hvornår man spørger, og 4♦ kun har ét svar.
 
-Åbne punkter (Franks svar):
+Franks svar (23. oktober 2026):
 
-1. **System:** skal posten have `"kf"`, `"ff"`, begge eller `"generel"`?
-2. **Navnet:** "Crowhurst" bruges i bridgelitteraturen oftest om en checkback-konvention efter åbners 1NT-genmelding. Skal træneren hedde "Crowhurst mod Multi 2♦", som arket, eller fx "Forsvar mod Multi 2♦ (Crowhurst)"?
-3. **Konstanterne:** godkend eller ret tallene ovenfor, især `MINOR_KVALITET` ("tvivlsom minorindmelding") og 3NT.
-4. **3♥ efter 2NT – 3♣:** kilden siger "3 i major: invit med 5-farve major". Da 2♥ er pas-eller-ret og åbner kan have hjerter, er kun 3♠ med i træneren. Skal 3♥ også med?
-5. **Doblerens brud med 17+:** kilden siger, at makker bryder 3♣ med 17+, men ikke hvordan. Rollen Dobler er derfor ikke med; skal den komme senere?
+3. **System "generel"**: det er klubbens ark og ikke en makkeraftale. Træneren står på Træn med ⓘ og konventionskortet, men ikke under Mine makkeraftaler.
+4. **Navnet** er "Forsvar mod Multi 2♦ (Crowhurst)", både på kortet og i `data/konventioner.json`, så det ikke forveksles med Crowhurst som checkback efter åbners 1NT-genmelding.
+5. **Konstanterne** er godkendt. `MINOR_KVALITET`: en 5-farve kræver 2 af E, K og D, og en 6-farve er altid god nok. Rækkefølgen er rettet: 3NT-reglen står før X med 17+ (regel 5 og 6 i `direkte`), og `MINOR_3NT_HP` er stadig (16, 19).
+6. **3♥ efter 2NT – 3♣** er ikke med i træneren; kun 3♠. Kortet beholder kildens "3 i major" og har det som åbent spørgsmål.
+7. **Rollen Dobler** venter, til det er afklaret, hvordan dobleren bryder 3♣ med 17+.
+8. **Bonusspørgsmål 4** spørger om dobleren, ikke doblerens makker: det er dobleren, der har 17+ og bryder i stedet for at melde 3♣.
+9. **Kortet** er godkendt: noten om 6 esser siger "normalt", da forklaringen ikke står i kilden; efter doblingen står "2♠" og kildens "3 i major" (træneren bruger 2♠ og 3♠); direkte X og genåbnings-X er blå, straffedoblingen brun; ingen alertering, da kilden ikke nævner den. Eksemplerne hentes fra puljen.
+
+Claude Codes valg i træneren (23. oktober 2026):
+
+10. **"2♦ (Multi eller Ekren)"** står som situationens `note` under meldeforløbet, som i Multiforsvar-træneren; selve meldingen i `auction` er "2♦", så `traener.html` og kortets eksempler kan læse den.
+11. **Hænder med to lige lange minorer**, der begge giver 3 i minoren (`direkte` regel 8, `svar_d` regel 3 og `genaabning` regel 2), kommer ikke med i puljen, fordi reglerne ikke siger, hvilken der meldes.
+12. **Sammenhæng mellem runderne:** en hånd i `svar_relae` er en hånd, der meldte 2NT efter reglerne for `svar_d`, ligesom en hånd i `genaabning` passede efter reglerne for `direkte`.
+13. **Bonusspørgsmålene** passer til situationen: `direkte` og `genaabning` spørger om X over 2♦, `svar_d` om 2NT, `svar_relae` om doblerens brud og `svar_4kl` om 4NT.
+14. **Kortets fem eksempler** er hænder fra puljen (`tools/tjek_kort_eksempler.py crowhurst` finder dem alle), og kortet har fået `traener`-feltet. "Crowhurst" og mappenavnet "docs" (fra kildefeltet) står i `tools/ordliste.txt`, så `tools/sprogtjek.py` kender dem.
