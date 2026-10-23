@@ -97,10 +97,9 @@ def convert(md):
     return '\n'.join(out), nav
 
 def main():
-    import importlib.util
-    spec = importlib.util.spec_from_file_location('imp', os.path.join(os.path.dirname(__file__), 'import_design.py'))
-    src = open(spec.origin, encoding='utf-8').read()
-    CSS = re.search(r'CSS = """(.*?)"""', src, re.S).group(1)
+    # JS (indholdsfortegnelsens markering og søgning) deles med tools/import_design.py. Stilen ligger i
+    # assets/doc-sg.css (Subtle Gradient), fælles for dokumentsiderne, ligesom topbjælken og sidefoden.
+    src = open(os.path.join(os.path.dirname(__file__), 'import_design.py'), encoding='utf-8').read()
     JS = re.search(r'JS = """(.*?)"""', src, re.S).group(1)
     body, nav = convert(open(SRC, encoding='utf-8').read())
     total = sum(1 + len(p['items']) for p in nav)
@@ -111,42 +110,25 @@ def main():
         p['title'] = plain(p['title'])
         for it in p['items']:
             it['title'] = plain(it['title'])
-        toc.append('<div class="tp"><a class="lp" href="#%s">%s</a>' % (p['id'], re.sub(r'([♥♦])', r'<span class="su su-h"></span>', H.escape(p['title']))))
-        toc += ['<a class="li" href="#%s">%s</a>' % (it['id'], re.sub(r'([♥♦])', r'<span class="su su-h"></span>', H.escape(it['title']))) for it in p['items']]
+        toc.append('<div class="tp"><a class="lp" href="#%s">%s</a>' % (p['id'], re.sub(r'([♥♦])', r'<span class="su su-h">\1</span>', H.escape(p['title']))))
+        toc += ['<a class="li" href="#%s">%s</a>' % (it['id'], re.sub(r'([♥♦])', r'<span class="su su-h">\1</span>', H.escape(it['title']))) for it in p['items']]
         toc.append('</div>')
-    CSS += """
-.doc h1{ font-family:var(--font-heading),Georgia,serif; font-size:36px; font-weight:400; line-height:1.1; color:#2C5446; margin:0 0 18px; }
-.doc section.part{ padding:40px 0 8px; border-top:1px solid rgba(32,31,29,0.18); margin-top:36px; }
-.doc header.hero + section.part{ border-top:0; margin-top:0; }
-.doc h2{ font-family:var(--font-heading),Georgia,serif; font-size:26px; font-weight:400; line-height:1.15; color:#3D6E58; margin:30px 0 12px; }
-.doc h1, .doc h2{ scroll-margin-top:20px; }
-.doc p, .doc li{ line-height:1.75; max-width:78ch; }
-.doc p{ margin:0 0 14px; }
-.doc table{ display:block; overflow-x:auto; border-collapse:collapse; font-size:15px; line-height:1.55; margin:18px 0 24px; }
-.doc th{ text-align:left; padding:0 14px 9px; border-bottom:1.5px solid #2C5446; font-family:var(--font-heading),Georgia,serif; font-size:17px; font-weight:600; color:#2C5446; }
-.doc td{ padding:9px 14px; border-bottom:1px solid rgba(32,31,29,0.13); vertical-align:top; }
-.doc tbody tr:nth-child(odd) td{ background:rgba(237,243,233,0.55); }
-.doc blockquote{ margin:18px 0; padding:12px 18px; border-left:3px solid #b68235; background:rgba(182,130,53,0.08); font-family:var(--font-heading),Georgia,serif; font-size:21px; color:#122E42; }
-.doc code{ font-size:13px; background:rgba(32,31,29,0.06); padding:1px 5px; border-radius:3px; }
-.doc pre{ font-size:13px; background:rgba(32,31,29,0.05); padding:12px 14px; border-radius:4px; overflow-x:auto; }
-.su-h{ color:#C00000; }
-"""
     page = """<!DOCTYPE html>
 <html lang="da">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kampen om kontrakten — Konventionstræner</title>
+<link rel="canonical" href="https://www.kontraktbridge.dk/konventionstraener/viden/kampen-om-kontrakten.html">
 <!-- Genereret af tools/build_kamp_viden.py fra docs/kampen-om-kontrakten.md – ret i markdown-filen. -->
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Lora:wght@400;600&display=swap" rel="stylesheet">
-<style>""" + CSS + """</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&text=%E2%99%A0%E2%99%A5%E2%99%A6%E2%99%A3&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/doc-sg.css?v=2026-10-18">
 </head>
 <body>
-<header class="top"><div class="in">
-  <a class="brand" href="../">Konventionstræner</a>
-  <nav><a href="../?system=kamp#traen">Træn</a><a href="./" aria-current="page">Viden</a></nav>
-</div></header>
+<header id="topbjaelke" data-aktiv="viden"></header>
+<script src="../assets/topbar.js"></script>
 <div class="wrap">
   <aside>
     <div class="k">Referencelag · Forsvar og indmelding</div>
@@ -161,21 +143,25 @@ def main():
   <main class="doc">
     <header class="hero">
       <div class="k">Referencelag · konkurrerende meldeforløb</div>
-      <h1 style="font-size:clamp(42px,6.5vw,76px);line-height:0.98;letter-spacing:-0.02em;color:#122E42;margin:18px 0 6px">Kampen om kontrakten</h1>
+      <h1>Kampen om kontrakten</h1>
       <div class="sub">Forsvar og indmelding</div>
       <div class="d"><div>Kilde: <em>20-20 – kampen om kontrakten</em> (opfølger til <em>Kampen ved bridgebordet</em>, 2017), omskrevet til regelform.</div>
       <div>Profiler: Grund = bogens regler · Klub = + faste aftaler · Turnering = + Stenberg og Lebensohl</div>
       <div><strong>(aftale)</strong> = vores beslutning, hvor bogen ikke tager stilling · ⚠ = kendt fælde</div></div>
-      <div class="m"><div><a href="../?system=kamp#traen">Træn emnerne →</a></div></div>
+      <div class="m"><div><a href="../#traen">Træn emnerne →</a></div></div>
     </header>
 """ + body + """
   </main>
 </div>
 <script>""" + JS + """</script>
+<script src="../assets/doc-export.js?v=2026-10-14" defer></script>
+<footer id="sidefod"></footer>
+<script src="../assets/footer.js"></script>
 </body>
 </html>
 """
-    open(OUT, 'w', encoding='utf-8').write(page)
+    with open(OUT, 'w', encoding='utf-8', newline='\n') as f:
+        f.write(page)
     print(OUT, total)
 
 if __name__ == '__main__':
