@@ -308,27 +308,27 @@
         "S": [
           14,
           13,
-          12,
-          11
+          8,
+          2
         ],
         "H": [
-          11,
-          10,
-          8,
-          5
+          13,
+          7
         ],
         "D": [
-          12,
-          10,
-          9
+          14,
+          11,
+          3,
+          2
         ],
         "C": [
-          13,
-          8
+          9,
+          6,
+          3
         ]
       },
       "svar": "X",
-      "forklaring": "16 hp og jævn: X – 12–16 jævn eller 17+."
+      "forklaring": "15 hp og jævn: X – 12–16 jævn eller 17+."
     },
     {
       "auction": [
@@ -343,29 +343,29 @@
       ],
       "haand": {
         "S": [
-          10
+          2
         ],
         "H": [
           14,
-          12,
-          9,
+          13,
+          10,
+          6,
           5,
-          4
+          3
         ],
         "D": [
-          6
+          14
         ],
         "C": [
-          14,
-          9,
-          8,
+          13,
+          12,
           6,
-          4,
-          3
+          5,
+          2
         ]
       },
       "svar": "4♣",
-      "forklaring": "5 hjerter, 6 klør og 10 hp: 4♣ – 5+ hjerter og 5+ klør."
+      "forklaring": "6 hjerter, 5 klør og 16 hp: 4♣ – 5+ hjerter og 5+ klør."
     },
     {
       "auction": [
@@ -396,25 +396,25 @@
       ],
       "haand": {
         "S": [
-          10,
-          9,
-          8,
-          5
-        ],
-        "H": [
-          14
-        ],
-        "D": [
-          13,
-          11,
-          7,
-          6
-        ],
-        "C": [
           14,
           10,
           9,
           3
+        ],
+        "H": [
+          9
+        ],
+        "D": [
+          14,
+          12,
+          3,
+          2
+        ],
+        "C": [
+          13,
+          11,
+          7,
+          2
         ]
       },
       "svar": "X",
@@ -441,29 +441,29 @@
       ],
       "haand": {
         "S": [
+          11,
           10,
-          3
+          5
         ],
         "H": [
-          8,
-          5,
-          2
+          7,
+          5
         ],
         "D": [
-          13,
-          10,
-          9,
-          8,
+          7,
           4,
           3
         ],
         "C": [
-          10,
-          7
+          13,
+          11,
+          8,
+          7,
+          6
         ]
       },
       "svar": "2NT",
-      "forklaring": "6 ruder og 3 hp: 2NT – Lebensohl; du vil spille 3♣ eller 3♦."
+      "forklaring": "5 klør og 5 hp: 2NT – Lebensohl; du vil spille 3♣ eller 3♦."
     },
     {
       "auction": [
@@ -487,28 +487,28 @@
       "haand": {
         "S": [
           14,
-          10,
-          9,
-          2
-        ],
-        "H": [
-          14,
           11,
-          7
-        ],
-        "D": [
-          13,
-          8,
           6
         ],
-        "C": [
+        "H": [
+          12,
+          11,
+          3
+        ],
+        "D": [
           14,
+          10,
           9,
-          5
+          3
+        ],
+        "C": [
+          12,
+          8,
+          7
         ]
       },
       "svar": "4♦",
-      "forklaring": "3 hjerter og 16 hp: 4♦ – krav med hjerter som trumf."
+      "forklaring": "3 hjerter og 14 hp: 4♦ – krav med hjerter som trumf."
     }
   ],
   "faldgruber": [
