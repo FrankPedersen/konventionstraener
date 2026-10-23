@@ -11,9 +11,9 @@ direkte – (2♦) – ?
   2  5+ hjerter og 5+ i en minor, TOFARVE_HP                 → 4 i minoren
   3  5-5 eller længere i minorerne, MINOR_4NT_HP             → 4NT
   4  7+ i en major med MAJOR_4M_KVALITET, MAJOR_4M_HP        → 4 i majoren
-  5  6+ i en minor med MINOR_3NT_KVALITET, MINOR_3NT_HP      → 3NT
-  6  17+ hp                                                  → X
-  7  5+ i en major, 12–16 hp                                 → 2 i den længste major; ved lige længde spar
+  5  5+ i en major, 12–16 hp                                 → 2 i den længste major; ved lige længde spar
+  6  6+ i en minor med MINOR_3NT_KVALITET, MINOR_3NT_HP, uden 5-farve major → 3NT
+  7  17+ hp                                                  → X
   8  5+ i en minor med MINOR_KVALITET, 12–16 hp              → 3 i minoren
   9  12–16 hp, jævn                                          → X
  10  12+ hp, trefarvet med korthed i en major, eller en 5-farve minor uden MINOR_KVALITET → pas
@@ -92,17 +92,17 @@ def direkte(hand, hp):
     if M and inden(hp, MAJOR_4M_HP):
         return f"4{SUIT_SYM[M]}", tx(f"{L[M]} gode {SUIT_NAME[M]} og {hp} hp: 4{SUIT_SYM[M]} – for at spille.",
                                      f"{L[M]} good {SUIT_NAME_EN[M]} and {hp} HCP: 4{SUIT_SYM[M]} – to play.")
+    if 12 <= hp <= 16 and max(L['S'], L['H']) >= 5:
+        M = 'S' if L['S'] >= L['H'] else 'H'
+        return f"2{SUIT_SYM[M]}", tx(f"{L[M]} {SUIT_NAME[M]} og {hp} hp: 2{SUIT_SYM[M]} – naturligt, 5+ farve, 12–16.",
+                                     f"{L[M]} {SUIT_NAME_EN[M]} and {hp} HCP: 2{SUIT_SYM[M]} – natural, 5+ suit, 12–16.")
     m = next((m for m in MINORER if L[m] >= 6 and toppe(hand, m) >= MINOR_3NT_KVALITET), None)
-    if m and inden(hp, MINOR_3NT_HP):
+    if m and inden(hp, MINOR_3NT_HP) and max(L['S'], L['H']) < 5:
         return "3NT", tx(f"{L[m]} gode {SUIT_NAME[m]} og {hp} hp: 3NT – for at spille med minorlængde og styrke.",
                          f"{L[m]} good {SUIT_NAME_EN[m]} and {hp} HCP: 3NT – to play with minor length and strength.")
     if hp >= 17:
         return "X", tx(f"{hp} hp: X – 12–16 jævn eller 17+.",
                        f"{hp} HCP: X – 12–16 balanced or 17+.")
-    if 12 <= hp <= 16 and max(L['S'], L['H']) >= 5:
-        M = 'S' if L['S'] >= L['H'] else 'H'
-        return f"2{SUIT_SYM[M]}", tx(f"{L[M]} {SUIT_NAME[M]} og {hp} hp: 2{SUIT_SYM[M]} – naturligt, 5+ farve, 12–16.",
-                                     f"{L[M]} {SUIT_NAME_EN[M]} and {hp} HCP: 2{SUIT_SYM[M]} – natural, 5+ suit, 12–16.")
     if 12 <= hp <= 16:
         gode = [m for m in MINORER if god_minor(hand, L, m)]
         if gode:
