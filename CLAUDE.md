@@ -29,6 +29,10 @@ Et kort har samme `id` som konventionen i `data/konventioner.json`, når der fin
 - Kør `python3 tools/tjek_fagord.py` efter tekstændringer; den skal melde "i orden". `python3 tools/tjek_sprog.py` er specens accepttest.
 - Stavekontrol med hånden før udgivelse: `python3 tools/sprogtjek.py` (kræver `pip install spylls`; den danske ordbog hentes første gang). Rigtige ord, som hunspell ikke kender, står i `tools/ordliste.txt`; stavefejl rettes i teksten.
 
+## Vedligeholdelse
+
+- **Makker 2-dokumentet:** `viden/2-over-1-makker2.html` er kilden og rettes direkte i siden. Der importeres ikke længere fra Claude Design (Franks valg 25. oktober 2026); `tools/import_design.py` er kun til historik og stopper med en fejl, medmindre det køres med `--overskriv`.
+
 ## Systemdokumentation
 
 **Systemdokumentation:** `docs/SYSTEM.md` i forsidens repo (lokalt `../githubUpload/docs/SYSTEM.md`) beskriver hele www.kontraktbridge.dk (de tre repoer, Azure, drift, data og arbejdsgang). Filen er privat: den står i githubUploads `.gitignore` og ligger kun lokalt. Ændrer en opgave noget af det – en ny side eller app, en Azure-ressource, en app-indstilling, udrulning, data der gemmes, eller en beslutning Frank træffer – så opdatér `docs/SYSTEM.md` i samme omgang, også beslutningsloggen og datoen øverst. Hemmeligheder skrives aldrig i filen.
