@@ -28,3 +28,7 @@ Et kort har samme `id` som konventionen i `data/konventioner.json`, når der fin
 - Husets fagord i dansk tekst (SPEC-sprog-og-ordbog.md): bordet, kipning, forbindelser og slutspil (indspil kun om den særlige form), og hp, doubleton og fittet (derfor et fit). Engelsk beholder HCP.
 - Kør `python3 tools/tjek_fagord.py` efter tekstændringer; den skal melde "i orden". `python3 tools/tjek_sprog.py` er specens accepttest.
 - Stavekontrol med hånden før udgivelse: `python3 tools/sprogtjek.py` (kræver `pip install spylls`; den danske ordbog hentes første gang). Rigtige ord, som hunspell ikke kender, står i `tools/ordliste.txt`; stavefejl rettes i teksten.
+
+## Systemdokumentation
+
+**Systemdokumentation:** `docs/SYSTEM.md` i forsidens repo (lokalt `../githubUpload/docs/SYSTEM.md`) beskriver hele www.kontraktbridge.dk (de tre repoer, Azure, drift, data og arbejdsgang). Filen er privat: den står i githubUploads `.gitignore` og ligger kun lokalt. Ændrer en opgave noget af det – en ny side eller app, en Azure-ressource, en app-indstilling, udrulning, data der gemmes, eller en beslutning Frank træffer – så opdatér `docs/SYSTEM.md` i samme omgang, også beslutningsloggen og datoen øverst. Hemmeligheder skrives aldrig i filen.
