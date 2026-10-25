@@ -1,22 +1,29 @@
 """
-Importerer systemet for Makker 2 & mig fra en Claude Design-eksport til viden/2-over-1-makker2.html.
+Kun til historik: viden/2-over-1-makker2.html er kilden til Makker 2-dokumentet og rettes direkte i siden. Der importeres
+ikke længere fra Claude Design (Franks valg 25. oktober 2026).
 
-    python tools/import_design.py "C:/Users/frank/Downloads/2 over 1 - Moderne majorstotte.html"
+Scriptet importerede systemet for Makker 2 & mig fra en Claude Design-eksport til viden/2-over-1-makker2.html. En ny
+import overskriver siden og sletter alle rettelser, der er lavet i den siden eksporten. Derfor stopper scriptet med en
+fejl, medmindre det køres med --overskriv:
+
+    python tools/import_design.py --overskriv "C:/Users/frank/Downloads/2 over 1 - Moderne majorstotte.html" [ud.html]
 
 Eksporten er en »bundled page«: indholdet ligger gzip'et i manifestet (doc-content.js med nav og html).
 Scriptet pakker det ud og skriver en almindelig statisk side med sitets topmenu, indholdsfortegnelse og søgning.
 Ankrene (afsnit-1, bilag-b, afsnit-c4 …) skal bevares – trænerens »Læs aftalen«-links peger på dem.
 Layoutet er designsystemet Subtle Gradient: assets/doc-sg.css, og tools/sg_restyle.py oversætter eksportens farver.
-Rettelser lavet direkte i den færdige side (fx tilføjelserne i C4 · Lebensohl) skal også ind i Claude Design-
-dokumentet – ellers forsvinder de ved næste import.
 """
 import base64, gzip, json, os, re, sys, html as H
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from sg_restyle import restyle
 
-src = sys.argv[1]
-out = sys.argv[2] if len(sys.argv) > 2 else os.path.join(os.path.dirname(__file__), '..', 'viden', '2-over-1-makker2.html')
+if '--overskriv' not in sys.argv[1:]:
+    sys.exit('Stop: viden/2-over-1-makker2.html er kilden til Makker 2-dokumentet og rettes direkte i siden. En import fra '
+             'Claude Design overskriver den og sletter rettelserne. Kør kun med --overskriv, hvis det er meningen.')
+args = [a for a in sys.argv[1:] if a != '--overskriv']
+src = args[0]
+out = args[1] if len(args) > 1 else os.path.join(os.path.dirname(__file__), '..', 'viden', '2-over-1-makker2.html')
 bundle = open(src, encoding='utf-8').read()
 manifest = json.loads(re.search(r'<script type="__bundler/manifest">\s*(\{.*?\})\s*</script>', bundle, re.S).group(1))
 ext = json.loads(re.search(r'<script type="__bundler/ext_resources">\s*(\[.*?\])\s*</script>', bundle, re.S).group(1))
