@@ -64,8 +64,7 @@ page = """<!DOCTYPE html>
 <title>2 over 1 · Moderne majorstøtte — Makker 2 &amp; mig</title>
 <!-- Genereret fra Claude Design-eksporten »2 over 1 - Moderne majorstotte.html« (udgave 3).
      Opdatering: eksportér igen fra Claude Design og kør tools/import_design.py. -->
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/fonts/tekst.css">
 <link rel="stylesheet" href="../assets/doc-sg.css?v=2026-10-18">
 </head>
 <body>

@@ -2,7 +2,7 @@
 
 Kør fra repoets rod:  python3 tools/tjek_fagord.py
 
-Læser siderne (*.html uden design/ og tools/), assets/*.js, data/**.json, puljerne, teksterne i dealer/ (det
+Læser siderne (*.html uden _design/ og tools/), assets/*.js, data/**.json, puljerne, teksterne i dealer/ (det
 danske argument til tx) og docs/kampen-om-kontrakten.md (kilden til Viden-siden). Engelsk springes over:
 data-en-attributter, det engelske argument til T(…), og "en"-felterne i JSON.
 Fejler, hvis et af husets "Ikke"-ord står i dansk tekst. "i snit" (gennemsnit) er tilladt.
@@ -127,7 +127,7 @@ def dansk_tekst():
     ud = []
     for f in filer():
         sti = ROD / f
-        if f.startswith(('design/', 'tools/')) or not sti.exists():
+        if f.startswith(('_design/', 'tools/')) or not sti.exists():
             continue
         if f.endswith('.html') or (f.startswith('assets/') and f.endswith('.js')):
             ud.append((f, dansk_side(sti.read_text(encoding='utf-8'))))

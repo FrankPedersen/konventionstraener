@@ -121,9 +121,8 @@ def main():
 <title>Kampen om kontrakten — Konventionstræner</title>
 <link rel="canonical" href="https://www.kontraktbridge.dk/konventionstraener/viden/kampen-om-kontrakten.html">
 <!-- Genereret af tools/build_kamp_viden.py fra docs/kampen-om-kontrakten.md – ret i markdown-filen. -->
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&text=%E2%99%A0%E2%99%A5%E2%99%A6%E2%99%A3&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/fonts/tekst.css">
+<link rel="stylesheet" href="../assets/fonts/symboler.css">
 <link rel="stylesheet" href="../assets/doc-sg.css?v=2026-10-18">
 </head>
 <body>
