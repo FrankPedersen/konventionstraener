@@ -1,0 +1,5 @@
+# GitHub Pages (Jekyll): specerne og docs/ ligger på GitHub, men ikke på www.kontraktbridge.dk (Franks valg 27. oktober 2026).
+# Mapper, der begynder med _ (fx _design/), udgives ikke i forvejen.
+exclude:
+  - docs
+  - SPEC-*.md

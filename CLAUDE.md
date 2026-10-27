@@ -19,19 +19,20 @@ Et kort har samme `id` som konventionen i `data/konventioner.json`, når der fin
 
 ### Nye kort – arbejdsgang
 
-- Ét emne ad gangen på en gren `kort-<emne>`. Frank godkender kortene, før de flettes ind (SPEC-konventionskort.md, Afklaret 14–16).
+- Ét emne ad gangen på en gren `kort-<emne>`. Frank godkender kortene, før de flettes ind (`docs/specs/SPEC-konventionskort.md`, Afklaret 14–16).
 - Kilder: systemdokumentet i trænerens felt `viden` og trænerens pulje i `pools/`. Eksempler er hænder fra puljen med samme meldeforløb og svar.
 - Tilføj filen i `data/kort/index.json`, kør `python3 tools/tjek_konventionskort.py` og `python3 tools/tjek_kort_eksempler.py <id>`, og byg siden. Træneren får sin ⓘ af sig selv.
 
 ## Sprog og fagord
 
-- Husets fagord i dansk tekst (SPEC-sprog-og-ordbog.md): bordet, kipning, forbindelser og slutspil (indspil kun om den særlige form), og hp, doubleton og fittet (derfor et fit). Engelsk beholder HCP.
+- Husets fagord i dansk tekst (`docs/specs/SPEC-sprog-og-ordbog.md`): bordet, kipning, forbindelser og slutspil (indspil kun om den særlige form), og hp, doubleton og fittet (derfor et fit). Engelsk beholder HCP.
 - Kør `python3 tools/tjek_fagord.py` efter tekstændringer; den skal melde "i orden". `python3 tools/tjek_sprog.py` er specens accepttest.
 - Stavekontrol med hånden før udgivelse: `python3 tools/sprogtjek.py` (kræver `pip install spylls`; den danske ordbog hentes første gang). Rigtige ord, som hunspell ikke kender, står i `tools/ordliste.txt`; stavefejl rettes i teksten.
 
 ## Vedligeholdelse
 
 - **Makker 2-dokumentet:** `viden/2-over-1-makker2.html` er kilden og rettes direkte i siden. Der importeres ikke længere fra Claude Design (Franks valg 25. oktober 2026); `tools/import_design.py` er kun til historik og stopper med en fejl, medmindre det køres med `--overskriv`.
+- **Specerne** ligger i `docs/specs/` med én linje pr. spec i `docs/specs/README.md`. En ny spec kan ligge i roden, mens den er i arbejde, og flyttes dertil, når den er færdig. `_config.yml` udelukker `docs/` og `SPEC-*.md` fra GitHub Pages, så specerne ligger på GitHub, men ikke på www.kontraktbridge.dk (Franks valg 27. oktober 2026). Mapper, der begynder med `_`, udgives ikke.
 
 ## Systemdokumentation
 
