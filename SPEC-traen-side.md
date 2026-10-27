@@ -136,19 +136,21 @@ Samme sorte sidefod nederst på alle sider: `index.html`, trænerne og siderne u
 
 ## Accepttest
 
-- [ ] Hvert kort fører til samme adresse som før (`traener.html?k=…` eller `markering.html?k=…`).
-- [ ] Alle konventioner, der vises i dag, vises stadig, og ingen vises to gange.
-- [ ] Hver konvention har et `emne`, og emnerne står i rækkefølgen i `data/emner.json`.
-- [ ] Træn har intet filter og ingen systemmærker; Mine makkeraftaler linker til alle klar-trænere i hvert makkerskab.
-- [ ] Søgning på "bergen" viser Omvendt Bergen og Revideret omvendt Bergen; søgning på "2♣" virker.
-- [ ] Tilbage-linket fra træneren fører til `./#traen`, og et gammelt `?system=ff` giver den almindelige side.
-- [ ] "Senest trænet" viser de tre senest startede konventioner og vises ikke for en ny bruger.
-- [ ] Siden virker uden localStorage (privat vindue).
-- [ ] Sidefoden står ens på alle sider og vises ikke ved udskrift.
-- [ ] Sidefoden har ingen Om mig-tekst og ingen mailadresse, og knappen "Om mig og kontakt →" fører til https://www.kontraktbridge.dk/om-mig/.
-- [ ] Topbjælken går i fuld bredde på alle sider, også på mobil, og vises ikke ved udskrift.
-- [ ] På engelsk står der intet dansk på forsiden, bortset fra dokumenternes titler.
-- [ ] Ingen vandret rulning på en 390 px bred skærm.
+Afkrydset 27. oktober 2026 efter et tjek af den udgivne side i Chrome (390 og 1200 px): 47 klar-kort og 2 "Kommer" af 49, ingen dubletter, emnerne i rækkefølgen fra `data/emner.json`, søgningerne, `?system=ff`, Senest trænet, siden uden localStorage, samme sidefod på 10 sider, topbjælke og sidefod skjult ved udskrift og intet dansk på den engelske forside ud over navnet Konventionstræner.
+
+- [x] Hvert kort fører til samme adresse som før (`traener.html?k=…` eller `markering.html?k=…`).
+- [x] Alle konventioner, der vises i dag, vises stadig, og ingen vises to gange.
+- [x] Hver konvention har et `emne`, og emnerne står i rækkefølgen i `data/emner.json`.
+- [x] Træn har intet filter og ingen systemmærker; Mine makkeraftaler linker til alle klar-trænere i hvert makkerskab.
+- [x] Søgning på "bergen" viser Omvendt Bergen og Revideret omvendt Bergen; søgning på "2♣" virker.
+- [x] Tilbage-linket fra træneren fører til `./#traen`, og et gammelt `?system=ff` giver den almindelige side.
+- [x] "Senest trænet" viser de tre senest startede konventioner og vises ikke for en ny bruger.
+- [x] Siden virker uden localStorage (privat vindue).
+- [x] Sidefoden står ens på alle sider og vises ikke ved udskrift.
+- [x] Sidefoden har ingen Om mig-tekst og ingen mailadresse, og knappen "Om mig og kontakt →" fører til https://www.kontraktbridge.dk/om-mig/.
+- [x] Topbjælken går i fuld bredde på alle sider, også på mobil, og vises ikke ved udskrift.
+- [x] På engelsk står der intet dansk på forsiden, bortset fra dokumenternes titler.
+- [x] Ingen vandret rulning på en 390 px bred skærm.
 
 ## Afklaret
 

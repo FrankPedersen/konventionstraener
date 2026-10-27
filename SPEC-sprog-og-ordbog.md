@@ -132,5 +132,5 @@ Claude Codes valg i konventionstræneren (22. oktober 2026, grenen `sprog-og-ord
 Åbne punkter:
 
 1. **T1–T3:** besvaret, se Afklaret 5.
-2. **Ordbogens kvalitet** (Franks arbejde, ikke Claude Codes): 173 af 403 opslagsord er engelske (fx Appeal, Average, Nine (9)); 356 står i kategorien Grundlæggende begreber og 374 på niveau begynder, så filtrene siger ikke meget endnu; i 363 opslag er Forklaring den samme som Kort definition. Siden virker, men ordbogen bliver bedre med danske opslagsord, rigtige kategorier og niveauer og egentlige forklaringer i en version 1.2.
+2. **Ordbogens kvalitet** (Franks arbejde, ikke Claude Codes): opslagsordene er danske fra version 1.2 (forsidens spec, Afklaret 5). Af de 387 opslag står 340 i kategorien Grundlæggende begreber og 358 på niveau begynder, så filtrene siger ikke meget endnu; i 345 opslag er Forklaring den samme som Kort definition (talt 27. oktober 2026). Ordbogen bliver bedre med rigtige kategorier og niveauer og egentlige forklaringer.
 3. **Puljen ff-trial-bids:** løst, se Afklaret 14.
