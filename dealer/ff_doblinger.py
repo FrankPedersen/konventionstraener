@@ -9,11 +9,11 @@ Negativ dobling, støttedobling og redobling – Makker 2 & mig, afsnit 17.
   stoette – åbner efter 1♥ – (pas) – 1♠ – (2♣): X = præcis 3 spar · 2♠ 4 spar 12–15 · 3♠ 4 spar 16–18 ·
             uden 3 spar: 2♥ med 6 hjerter, ellers pas (minimum)
   redobl  – svarer efter 1♥/1♠ – (X): XX 10+ uden primær (4-korts) støtte · 2M 6–9 sp med 3 · 3M 6–9 sp med 4+ ·
-            2NT Bekkasin 13+ sp med 4+ (gælder fortsat efter dobling, afsnit 2 og 17) · 1♠ 6–9 med 4+ spar (over 1♥) ·
+            2NT Truscott 10+ sp med 4+ (Franks valg 27. oktober 2026, afsnit 2 og 17) · 1♠ 6–9 med 4+ spar (over 1♥) ·
             2 i ny farve højst 9 hp med god 6-farve · 1NT 6–9 jævn · pas under 6
 Antagelser: støttepoint 5/3/1 med 4+ trumf og 3/2/1 med 3; hold = es, K-x, D-x-x eller B-x-x-x;
 »god 6-farve« = to af de tre øverste. Hænder, hvor skemaet ikke giver én melding, er ikke med –
-fx 10–12 sp med 4+ trumf efter dobling, som dokumentet ikke beskriver.
+fx 3 trumf og 10+ sp med under 10 hp efter dobling, som dokumentet ikke beskriver.
 """
 from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, build_pool, tx
 from .lebensohl import stopper
@@ -45,9 +45,9 @@ BONUS = {
     "redobl": {"q": tx("Hvad viser redobling efter dobling af makkers åbning?", "What does a redouble after a double of partner's opening show?"),
                "correct": C_REDOBL,
                "options": [C_REDOBL, tx("Straf af deres dobling", "Penalty of their double"), tx("SOS – flugt", "SOS – rescue")],
-               "why": tx("Redoblingen viser 10+ hp uden primær støtte. Med 4+ trumf og 13+ sp meldes 2NT – Bekkasin gælder fortsat efter dobling.",
-                         "The redouble shows 10+ HCP without primary support. With 4+ trumps and 13+ support points, bid 2NT – "
-                         "Bekkasin still applies after the double.")},
+               "why": tx("Redoblingen viser 10+ hp uden primær støtte. Med 4+ trumf og 10+ sp meldes 2NT – Truscott efter dobling.",
+                         "The redouble shows 10+ HCP without primary support. With 4+ trumps and 10+ support points, bid 2NT – "
+                         "Truscott after the double.")},
 }
 order = lambda c: (0, 0) if c in ("Pas", "X", "XX") else (int(c[0]), ['♣', '♦', '♥', '♠', 'NT'].index(c[1:]))
 
@@ -128,9 +128,9 @@ def redouble(M):
             sp = support_points(hand, hp, M)
             if sp < 6:
                 return ("Pas", tx(f"{sp} sp: pas.", f"{sp} support points: pass.")) if hp < 6 else None
-            if L[M] >= 4 and sp >= 13:
-                return "2NT", tx(f"{L[M]} {SUIT_NAME[M]} og {sp} sp: 2NT – Bekkasin (13+, 4+ trumf), gælder fortsat efter dobling.",
-                                 f"{L[M]} {SUIT_NAME_EN[M]} and {sp} support points: 2NT – Bekkasin (13+, 4+ trumps), still on after the double.")
+            if L[M] >= 4 and sp >= 10:
+                return "2NT", tx(f"{L[M]} {SUIT_NAME[M]} og {sp} sp: 2NT – Truscott (10+, 4+ trumf) efter dobling.",
+                                 f"{L[M]} {SUIT_NAME_EN[M]} and {sp} support points: 2NT – Truscott (10+, 4+ trumps) after the double.")
             if L[M] == 3 and hp >= 10:
                 return "XX", tx(f"3 {SUIT_NAME[M]} og {hp} hp: redobling – 10+ uden primær støtte.",
                                 f"3 {SUIT_NAME_EN[M]} and {hp} HCP: redouble – 10+ without primary support.")
@@ -197,7 +197,7 @@ for M, key in (('H', 'hj'), ('S', 'sp')):
     CLASSIFIERS[sk] = redouble(M)
     r = lambda hp, **b: tpl(hp, **{**{s: (2, 4) for s in SUITS}, **b})
     SAMPLERS[sk] = {"Pas": r((0, 5), **{M: (0, 2)}), "XX": either(r((10, 14), **{M: (0, 2)}), r((10, 14), **{M: (3, 3)})),
-                    f"2{sym}": r((5, 9), **{M: (3, 3)}), f"3{sym}": r((4, 9), **{M: (4, 4)}), "2NT": r((11, 15), **{M: (4, 5)}), "1NT": r((6, 9), **{M: (2, 2), **({'S': (2, 3)} if M == 'H' else {})})}
+                    f"2{sym}": r((5, 9), **{M: (3, 3)}), f"3{sym}": r((4, 9), **{M: (4, 4)}), "2NT": r((8, 15), **{M: (4, 5)}), "1NT": r((6, 9), **{M: (2, 2), **({'S': (2, 3)} if M == 'H' else {})})}
     if M == 'H':
         SAMPLERS[sk]["1♠"] = r((6, 9), H=(0, 2), S=(4, 5))
     SAMPLERS[sk]["2♣" if M == 'S' else "2♦"] = r((5, 9), **{M: (0, 2), ('C' if M == 'S' else 'D'): (6, 6), **({'S': (0, 3)} if M == 'H' else {})})
