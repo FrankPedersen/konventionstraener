@@ -55,15 +55,19 @@ class Sidefoden(unittest.TestCase):
         js = (ROD / 'assets/footer.js').read_text(encoding='utf-8')
         self.assertIn("kolonne('opslag', 'Opslag', 'Reference',", js)
         self.assertIn("link('/ordbog/', 'Bridgeordbog', 'Bridge dictionary')", js)
+        # Scoring i bridge efter Bridgeordbog (SPEC-scoring.md, leverancetrin 4)
+        self.assertRegex(js, r"link\('/ordbog/', 'Bridgeordbog', 'Bridge dictionary'\)\s*"
+                             r"\+ link\('/scoring/', 'Scoring i bridge', 'Scoring in bridge'\)\)")
 
     @unittest.skipUnless(shutil.which('node'), 'kræver Node')
     def test_sidefoden_paa_dansk_og_engelsk(self):
         ud = json.loads(subprocess.run(['node', '-e', FODHARNESK], cwd=ROD, capture_output=True, check=True, text=True,
                                        encoding='utf-8').stdout)
-        for lang, titel, link in (('da', 'Opslag', 'Bridgeordbog'), ('en', 'Reference', 'Bridge dictionary')):
+        for lang, titel, link, scoring in (('da', 'Opslag', 'Bridgeordbog', 'Scoring i bridge'),
+                                           ('en', 'Reference', 'Bridge dictionary', 'Scoring in bridge')):
             html = ud[lang]
             self.assertIn(f'id="sf-opslag">{titel}</h2>', html, lang)
-            self.assertIn(f'<a href="/ordbog/">{link}</a>', html, lang)
+            self.assertIn(f'<li><a href="/ordbog/">{link}</a></li><li><a href="/scoring/">{scoring}</a></li></ul>', html, lang)
             self.assertLess(html.index('sf-traenere'), html.index('sf-opslag'), lang)
             self.assertLess(html.index('sf-opslag'), html.index('sf-aftaler'), lang)
 
