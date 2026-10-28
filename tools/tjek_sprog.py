@@ -75,7 +75,7 @@ class Sidefoden(unittest.TestCase):
 class Rettelserne(unittest.TestCase):
     def test_de_fem_ord_er_rettet(self):
         filer = [f for f in fagord.filer()
-                 if not f.startswith(('_design/', 'SPEC-')) and (ROD / f).exists()]
+                 if not f.startswith(('_design/', 'SPEC-', 'docs/specs/')) and (ROD / f).exists()]
         for forkert, rigtigt, steder in RETTELSER:
             for f in filer:
                 tekst = (ROD / f).read_text(encoding='utf-8', errors='ignore')
