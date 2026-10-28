@@ -198,28 +198,27 @@
       "haand": {
         "S": [
           13,
-          5
+          12,
+          3,
+          2
         ],
         "H": [
           12,
-          10,
+          11,
           7,
-          4
+          2
         ],
-        "D": [
-          14,
-          9,
-          6,
-          3
-        ],
+        "D": [],
         "C": [
           13,
-          8,
-          2
+          12,
+          11,
+          10,
+          9
         ]
       },
       "svar": "2NT",
-      "forklaring": "12 hp og 4-kortstøtte. 2NT viser styrke med støtte."
+      "forklaring": "4 kort i hjerter og 14 hp: 2NT – 10+ med støtte."
     },
     {
       "auction": [
@@ -238,29 +237,29 @@
       ],
       "haand": {
         "S": [
-          14,
           12,
-          8,
-          4
-        ],
-        "H": [
-          5,
-          3
-        ],
-        "D": [
-          13,
           11,
-          9,
+          8,
           2
         ],
+        "H": [
+          4
+        ],
+        "D": [
+          14,
+          7,
+          4
+        ],
         "C": [
+          13,
           12,
           7,
+          5,
           4
         ]
       },
       "svar": "XX",
-      "forklaring": "12 hp uden støtte. Redobling viser styrken og lægger op til straf."
+      "forklaring": "12 hp uden støtte: redobling – 10+, lægger op til straf."
     },
     {
       "auction": [
@@ -279,29 +278,29 @@
       ],
       "haand": {
         "S": [
-          7,
-          3
+          5
         ],
         "H": [
-          13,
+          12,
+          11,
           9,
-          6,
-          2
+          8
         ],
         "D": [
-          11,
-          8,
-          5,
-          4,
-          2
+          12,
+          10,
+          9,
+          3
         ],
         "C": [
-          6,
-          3
+          14,
+          9,
+          4,
+          2
         ]
       },
       "svar": "3♥",
-      "forklaring": "4 hp og 4-kortstøtte. Spring i farven er spærrende efter dobling."
+      "forklaring": "4 kort i hjerter og 9 hp: 3♥ – spærrende efter doblingen."
     }
   ],
   "faldgruber": [

@@ -329,29 +329,29 @@
       ],
       "haand": {
         "S": [
-          14,
-          12,
-          3
+          10,
+          9,
+          7,
+          6
         ],
         "H": [
           13,
-          10
+          8
         ],
         "D": [
           14,
-          10,
-          6,
-          4
+          13,
+          12,
+          7
         ],
         "C": [
-          14,
-          10,
-          8,
-          5
+          13,
+          11,
+          7
         ]
       },
       "svar": "X",
-      "forklaring": "17 hp og jævn hånd. Doblingen er forslag til straf med mindst samme styrke som sansåbneren."
+      "forklaring": "16 hp og jævn hånd: D er forslag til straf – mindst samme styrke som sansåbneren."
     },
     {
       "auction": [
@@ -367,28 +367,28 @@
       "haand": {
         "S": [
           14,
-          12,
-          10,
-          6,
-          5
-        ],
-        "H": [
-          13,
-          11,
           8,
+          7,
+          6,
           4
         ],
-        "D": [
+        "H": [
+          14,
+          10,
           7,
           2
         ],
+        "D": [
+          8,
+          6
+        ],
         "C": [
-          9,
-          3
+          13,
+          6
         ]
       },
       "svar": "2♣",
-      "forklaring": "10 hp og begge majorer 5–4. Makker kan spørge efter femfarven med 2♦."
+      "forklaring": "11 hp med 5 spar og 4 hjerter: 2♣ viser begge majorer, 5-4."
     },
     {
       "auction": [
@@ -404,28 +404,28 @@
       "haand": {
         "S": [
           13,
-          11,
+          12,
           10,
-          8,
-          7,
-          4
+          9,
+          6,
+          2
         ],
         "H": [
-          5,
-          2
+          10,
+          8,
+          7
         ],
         "D": [
           12,
-          6,
+          5,
           3
         ],
         "C": [
-          7,
-          4
+          5
         ]
       },
       "svar": "2♦",
-      "forklaring": "6 hp og en god spar-sekser. Multi skjuler hvilken major."
+      "forklaring": "6 spar og 7 hp: 2♦ (multi) viser en 6-farve i en major, ca. 6–10 hp."
     }
   ],
   "faldgruber": [
