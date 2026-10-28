@@ -21,9 +21,9 @@ På de samme sider ved 390 og 1280 px: intet hentes fra Google, skrifttyperne he
 
 ## Accepttest
 
-- [ ] `node tools/tjek_skrifttyper.mjs` er grøn to gange i træk; trænerne trækker tilfældige hænder, så det viser, at testen ikke afhænger af hænderne.
-- [ ] Testen bruger hverken git, tagget `v-foer-skrifttyper` eller skærmbilleder.
-- [ ] `python3 tools/tjek_skrifttyper.py`, `python3 tools/tjek_konventionskort.py` og repoets øvrige tjek er grønne.
+- [x] `node tools/tjek_skrifttyper.mjs` er grøn to gange i træk; trænerne trækker tilfældige hænder, så det viser, at testen ikke afhænger af hænderne.
+- [x] Testen bruger hverken git, tagget `v-foer-skrifttyper` eller skærmbilleder.
+- [x] `python3 tools/tjek_skrifttyper.py`, `python3 tools/tjek_konventionskort.py` og repoets øvrige tjek er grønne.
 
 ## Afklaret
 
