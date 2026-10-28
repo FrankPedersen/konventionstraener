@@ -20,22 +20,28 @@ direkte – (2♦) – ?
  11  højst 11 hp                                             → pas
 genaabning – (2♦) – pas – (2♥) – pas – (pas) – ?   (hånden har passet efter reglerne for direkte)
   1  4+ spar, højst 1 hjerter, 12+ hp → X;  2  5+ i en minor, 12–16 hp → 3 i minoren;  3  ellers → pas
-svar_d – (2♦) – X – (2♥) – ?
-  1  4+ hjerter og STRAF_HP → X;  2  5+ spar og KRAV_HP → 3♠;  3  5+ i en minor og INVIT_HP → 3 i minoren;
-  4  5 spar og INVIT_HP → 2NT;  5  INVIT_HP, højst 4 spar og ingen 5+ minor → 2NT;
-  6  4+ spar og højst SVAG_HP → 2♠;  7  5+ i en minor og højst SVAG_HP → 2NT;  8  ellers, højst SVAG_HP → pas
-svar_relae – (2♦) – X – (2♥) – 2NT – (pas) – 3♣ – (pas) – ?   (hånden har meldt 2NT efter reglerne for svar_d)
-  1  5 spar og INVIT_HP → 3♠;  2  INVIT_HP, højst 4 spar og ingen 5+ minor → 3♥ (invit til 3NT, beder om hjerterhold);
-  3  5+ ruder og højst SVAG_HP → 3♦;  4  5+ klør og højst SVAG_HP → pas
+svar_d – (2♦) – X – (2♥) – ?   og svar_d_sp – (2♦) – X – (2♠) – ?   (M = deres major, A = den anden; over 2♠ er det
+samme struktur med farverne byttet om, Franks valg 28. oktober 2026)
+  1  4+ i M og STRAF_HP → X;  2  6+ i A og KRAV_HP → 4A;  3  5 i A og KRAV_HP → 3A;  4  5+ i en minor og INVIT_HP → 3 i
+  minoren;  5  ellers INVIT_HP → 2NT;  6  over 2♥: 4+ spar og højst SVAG_HP → 2♠;  7  5+ i en minor og højst SVAG_HP →
+  2NT;  8  ellers, højst SVAG_HP → pas
+svar_relae og svar_relae_sp – (2♦) – X – (2M) – 2NT – (pas) – 3♣ – (pas) – ?   (hånden har meldt 2NT efter reglerne ovenfor)
+  1  5+ i A og INVIT_HP → 3A (invit);  2  ellers INVIT_HP → 3M (holdspørgsmål til 3NT);  3  5+ ruder og højst SVAG_HP → 3♦;
+  4  5+ klør og højst SVAG_HP → pas
+svar_pas – (2♦) – X – (pas) – ?   (Franks valg 28. oktober 2026)
+  1  RUDER_STRAF+ ruder og højst STRAF_HP[1] → pas (straf);  2  5+ i spar, hjerter eller klør og KRAV_HP → 3 i farven (krav);
+  3  4+ i en major og højst SVAG_HP → 2 i majoren;  4  5+ klør og højst SVAG_HP → 2NT
 svar_4kl – (2♦) – 4♣ – (pas) – ?   (makker har 5+ hjerter og 5+ klør)
   1  3+ klør, flere klør end hjerter, SLEM_HP → 4♠;  2  3+ hjerter, SLEM_HP → 4♦;  3  ellers med 2+ hjerter → 4♥
-dobler – (2♦) – X – (2♥) – 2NT – (pas) – ?   (hånden har doblet efter reglerne for direkte; Franks valg 27. oktober 2026)
-  1  12–16 hp, jævn → 3♣;  2  20–21 hp, jævn, med HJERTERHOLD → 3NT;  3  17+ og 5+ spar → 3♠;  4  17+ og 5+ ruder → 3♦;
-  5  17+ og 5+ klør → 4♣;  6  17+ uden egen farve → 3♥
+dobler – (2♦) – X – (2♥) – 2NT – (pas) – ?   og dobler_sp – (2♦) – X – (2♠) – 2NT – (pas) – ?   (hånden har doblet efter
+reglerne for direkte; M = deres major, A = den anden; Franks valg 27. og 28. oktober 2026)
+  1  12–16 hp, jævn → 3♣;  2  20–21 hp, jævn, med HOLD i M → 3NT;  3  17+ og 5+ i A → 3A;  4  17+ og 5+ ruder → 3♦;
+  5  17+ og 5+ klør → 4♣;  6  17+ uden egen farve → 3M
 
 Har en hånd to lige lange minorer, der begge giver 3 i minoren (direkte regel 8 og svar_d regel 3), siger reglerne
 ikke, hvilken der meldes, og hånden kommer ikke med i puljen. Det samme gælder dobleren med to lige lange 5-farver
-blandt spar, ruder og klør, med 17+ og 5+ hjerter uden at være jævn og med 22+ jævn.
+blandt A, ruder og klør, med 17+ og 5+ i M uden at være jævn og med 22+ jævn, og svaret over pas med to lige
+lange majorer eller to lige lange 5-farver; invitationer og hænder, som reglerne over pas ikke nævner, er heller ikke med.
 """
 from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, rnd, build_pool, tx
 
@@ -47,14 +53,15 @@ MAJOR_4M_KVALITET = 2        # 4M: mindst 2 af E, K, D i farven
 MINOR_3NT_HP = (16, 19)      # 3NT: "typisk minorlængde/styrke"
 MINOR_3NT_KVALITET = 2       # 3NT: mindst 2 af E, K, D i minoren
 MINOR_KVALITET = 2           # 3♣/3♦: mindst 2 af E, K, D, ellers 6+ kort; ellers "tvivlsom" → pas
-STRAF_HP = (8, 15)           # svar_d: X straf med 4+ hjerter
-SVAG_HP = 7                  # svar_d og svar_relae: højst 7 hp er svag
+STRAF_HP = (8, 15)           # svar_d: X straf med 4+ i deres major
+SVAG_HP = 7                  # svar_d, svar_relae og svar_pas: højst 7 hp er svag
 INVIT_HP = (8, 11)           # svar_d: konstruktiv invit
-KRAV_HP = (12, 17)           # svar_d: 3♠ krav
+KRAV_HP = (12, 17)           # svar_d: 3 i den anden major krav (4 med 6+); svar_pas: ny farve på 3-trinnet krav
+RUDER_STRAF = 5              # svar_pas: pas er straf med 5+ ruder og højst STRAF_HP[1] hp
 SLEM_HP = (14, 20)           # svar_4kl: krav (4♦/4♠) med sleminteresse
 DOBLER_HP_MAX = 22           # dobler: stærkere hænder genereres ikke
-# dobler: hjerterhold er es, konge med 1+ kort til, dame med 2+ eller knægt med 3+ (laveste længde for hver honnør)
-HJERTERHOLD = {14: 1, 13: 2, 12: 3, 11: 4}
+# dobler: hold i deres major er es, konge med 1+ kort til, dame med 2+ eller knægt med 3+ (laveste længde for hver honnør)
+HOLD = {14: 1, 13: 2, 12: 3, 11: 4}
 PER_CALL = 7
 
 MINORER = ('C', 'D')
@@ -161,12 +168,21 @@ def genaabning(hand, hp):
 
 # --- svar på makkers dobling ------------------------------------------------------
 
-def svar_d(hand, hp):
+HOLD_NAVN = {'H': ("hjerterhold", "a heart stopper"), 'S': ("sparhold", "a spade stopper")}
+
+def svar_efter(hand, hp, M):
+    """(2♦) – X – (2M) – ?  M er deres major og A den anden."""
+    A = 'S' if M == 'H' else 'H'
+    sM, sA = SUIT_SYM[M], SUIT_SYM[A]
     L = lengths_of(hand)
-    if L['H'] >= 4 and inden(hp, STRAF_HP):
-        return "X", tx(f"{L['H']} hjerter og {hp} hp: X – straf.", f"{L['H']} hearts and {hp} HCP: X – penalty.")
-    if L['S'] >= 5 and inden(hp, KRAV_HP):
-        return "3♠", tx(f"{L['S']} spar og {hp} hp: 3♠ – krav, 5+ farve.", f"{L['S']} spades and {hp} HCP: 3♠ – forcing, 5+ suit.")
+    if L[M] >= 4 and inden(hp, STRAF_HP):
+        return "X", tx(f"{L[M]} {SUIT_NAME[M]} og {hp} hp: X – straf.", f"{L[M]} {SUIT_NAME_EN[M]} and {hp} HCP: X – penalty.")
+    if L[A] >= 6 and inden(hp, KRAV_HP):
+        return f"4{sA}", tx(f"{L[A]} {SUIT_NAME[A]} og {hp} hp: 4{sA} – for at spille med 6+ kort og udgangsstyrke.",
+                            f"{L[A]} {SUIT_NAME_EN[A]} and {hp} HCP: 4{sA} – to play with 6+ cards and game values.")
+    if L[A] >= 5 and inden(hp, KRAV_HP):
+        return f"3{sA}", tx(f"{L[A]} {SUIT_NAME[A]} og {hp} hp: 3{sA} – krav, 5+ farve.",
+                            f"{L[A]} {SUIT_NAME_EN[A]} and {hp} HCP: 3{sA} – forcing, 5+ suit.")
     if inden(hp, INVIT_HP):
         lange = [m for m in MINORER if L[m] >= 5]
         if lange:
@@ -175,42 +191,75 @@ def svar_d(hand, hp):
                 return None
             return f"3{SUIT_SYM[m]}", tx(f"{L[m]} {SUIT_NAME[m]} og {hp} hp: 3{SUIT_SYM[m]} – konstruktiv, invit.",
                                          f"{L[m]} {SUIT_NAME_EN[m]} and {hp} HCP: 3{SUIT_SYM[m]} – constructive, invitational.")
-        if L['S'] == 5:
-            return "2NT", tx(f"5 spar og {hp} hp: 2NT – Lebensohl; efter makkers 3♣ inviterer du med 3♠.",
-                             f"5 spades and {hp} HCP: 2NT – Lebensohl; after partner's 3♣ you invite with 3♠.")
-        if L['S'] <= 4:
-            return "2NT", tx(f"{hp} hp uden 5-farve: 2NT – Lebensohl; efter makkers 3♣ inviterer du til 3NT med 3♥.",
-                             f"{hp} HCP without a five-card suit: 2NT – Lebensohl; after partner's 3♣ you invite to 3NT with 3♥.")
-        return None
+        if L[A] >= 5:
+            return "2NT", tx(f"{L[A]} {SUIT_NAME[A]} og {hp} hp: 2NT – Lebensohl; efter makkers 3♣ inviterer du med 3{sA}.",
+                             f"{L[A]} {SUIT_NAME_EN[A]} and {hp} HCP: 2NT – Lebensohl; after partner's 3♣ you invite with 3{sA}.")
+        return "2NT", tx(f"{hp} hp uden 5-farve: 2NT – Lebensohl; efter makkers 3♣ inviterer du til 3NT med 3{sM}.",
+                         f"{hp} HCP without a five-card suit: 2NT – Lebensohl; after partner's 3♣ you invite to 3NT with 3{sM}.")
     if hp > SVAG_HP:
         return None
-    if L['S'] >= 4:
+    if M == 'H' and L['S'] >= 4:
         return "2♠", tx(f"{L['S']} spar og {hp} hp: 2♠ – for at spille.", f"{L['S']} spades and {hp} HCP: 2♠ – to play.")
     m = next((m for m in MINORER if L[m] >= 5), None)
     if m:
         return "2NT", tx(f"{L[m]} {SUIT_NAME[m]} og {hp} hp: 2NT – Lebensohl; du vil spille 3♣ eller 3♦.",
                          f"{L[m]} {SUIT_NAME_EN[m]} and {hp} HCP: 2NT – Lebensohl; you want to play 3♣ or 3♦.")
-    return "Pas", tx(f"{hp} hp uden 4 spar og uden 5-farve i en minor: pas.",
-                     f"{hp} HCP without 4 spades and without a five-card minor: pass.")
+    if M == 'H':
+        return "Pas", tx(f"{hp} hp uden 4 spar og uden 5-farve i en minor: pas.",
+                         f"{hp} HCP without 4 spades and without a five-card minor: pass.")
+    return "Pas", tx(f"{hp} hp uden 5-farve i en minor: pas.", f"{hp} HCP without a five-card minor: pass.")
 
-def svar_relae(hand, hp):
-    r = svar_d(hand, hp)
+def relae_efter(hand, hp, M):
+    """(2♦) – X – (2M) – 2NT – (pas) – 3♣ – (pas) – ?"""
+    r = svar_efter(hand, hp, M)
     if not r or r[0] != "2NT":
         return None
+    A = 'S' if M == 'H' else 'H'
+    sM, sA = SUIT_SYM[M], SUIT_SYM[A]
     L = lengths_of(hand)
-    if L['S'] == 5 and inden(hp, INVIT_HP):
-        return "3♠", tx(f"5 spar og {hp} hp: 3♠ – invit med 5-farve major.",
-                        f"5 spades and {hp} HCP: 3♠ – invitational with a five-card major.")
-    if inden(hp, INVIT_HP) and L['S'] <= 4 and max(L['C'], L['D']) < 5:
-        return "3♥", tx(f"{hp} hp uden 5-farve: 3♥ – invit til 3NT, beder om hjerterhold. Med 4+ hjerter havde du doblet 2♥.",
-                        f"{hp} HCP without a five-card suit: 3♥ – invitation to 3NT, asks for a heart stopper. "
-                        f"With 4+ hearts you would have doubled 2♥.")
+    if L[A] >= 5 and inden(hp, INVIT_HP):
+        return f"3{sA}", tx(f"{L[A]} {SUIT_NAME[A]} og {hp} hp: 3{sA} – invit med 5+ kort.",
+                            f"{L[A]} {SUIT_NAME_EN[A]} and {hp} HCP: 3{sA} – invitational with 5+ cards.")
+    if inden(hp, INVIT_HP):
+        hold, hold_en = HOLD_NAVN[M]
+        return f"3{sM}", tx(f"{hp} hp uden 5-farve: 3{sM} – invit til 3NT, beder om {hold}. Med 4+ {SUIT_NAME[M]} havde du doblet 2{sM}.",
+                            f"{hp} HCP without a five-card suit: 3{sM} – invitation to 3NT, asks for {hold_en}. "
+                            f"With 4+ {SUIT_NAME_EN[M]} you would have doubled 2{sM}.")
     if L['D'] >= 5 and hp <= SVAG_HP:
         return "3♦", tx(f"{L['D']} ruder og {hp} hp: 3♦ – svag med minorfarven.",
                         f"{L['D']} diamonds and {hp} HCP: 3♦ – weak with the minor.")
     if L['C'] >= 5 and hp <= SVAG_HP:
         return "Pas", tx(f"{L['C']} klør og {hp} hp: pas – svag med minorfarven.",
                          f"{L['C']} clubs and {hp} HCP: pass – weak with the minor.")
+    return None
+
+def svar_pas(hand, hp):
+    """(2♦) – X – (pas) – ?"""
+    L = lengths_of(hand)
+    if L['D'] >= RUDER_STRAF and hp <= STRAF_HP[1]:
+        return "Pas", tx(f"{L['D']} ruder og {hp} hp: pas – straf med lange ruder.",
+                         f"{L['D']} diamonds and {hp} HCP: pass – penalty with long diamonds.")
+    if inden(hp, KRAV_HP):
+        farver = [s for s in ('S', 'H', 'C') if L[s] >= 5]
+        if not farver:
+            return None
+        s = entydig(farver, L)
+        if not s:
+            return None
+        return f"3{SUIT_SYM[s]}", tx(f"{L[s]} {SUIT_NAME[s]} og {hp} hp: 3{SUIT_SYM[s]} – krav, ny farve på 3-trinnet.",
+                                     f"{L[s]} {SUIT_NAME_EN[s]} and {hp} HCP: 3{SUIT_SYM[s]} – forcing, a new suit at the three level.")
+    if hp > SVAG_HP:
+        return None
+    major = [s for s in MAJORER if L[s] >= 4]
+    if major:
+        s = entydig(major, L)
+        if not s:
+            return None
+        return f"2{SUIT_SYM[s]}", tx(f"{L[s]} {SUIT_NAME[s]} og {hp} hp: 2{SUIT_SYM[s]} – for at spille.",
+                                     f"{L[s]} {SUIT_NAME_EN[s]} and {hp} HCP: 2{SUIT_SYM[s]} – to play.")
+    if L['C'] >= 5:
+        return "2NT", tx(f"{L['C']} klør og {hp} hp: 2NT – Lebensohl; du vil spille 3♣.",
+                         f"{L['C']} clubs and {hp} HCP: 2NT – Lebensohl; you want to play 3♣.")
     return None
 
 def svar_4kl(hand, hp):
@@ -225,39 +274,43 @@ def svar_4kl(hand, hp):
         return "4♥", tx(f"{L['H']} hjerter og {hp} hp: 4♥ – for at spille.", f"{L['H']} hearts and {hp} HCP: 4♥ – to play.")
     return None
 
-# --- dobleren efter makkers 2NT (Franks valg 27. oktober 2026) ----------------------
+# --- dobleren efter makkers 2NT (Franks valg 27. og 28. oktober 2026) -------------
 
-def hjerterhold(hand):
-    """Es, konge med 1+ kort til, dame med 2+ eller knægt med 3+ i hjerter (HJERTERHOLD)."""
-    return any(r in HJERTERHOLD and len(hand['H']) >= HJERTERHOLD[r] for r in hand['H'])
+def hold(hand, M):
+    """Es, konge med 1+ kort til, dame med 2+ eller knægt med 3+ i farve M (HOLD)."""
+    return any(r in HOLD and len(hand[M]) >= HOLD[r] for r in hand[M])
 
-def dobler(hand, hp):
+def dobler_efter(hand, hp, M):
+    """(2♦) – X – (2M) – 2NT – (pas) – ?  M er deres major og A den anden."""
     r = direkte(hand, hp)
     if not r or r[0] != "X":
         return None
+    A = 'S' if M == 'H' else 'H'
+    sM = SUIT_SYM[M]
+    navn, navn_en = HOLD_NAVN[M]
     L = lengths_of(hand)
     if 12 <= hp <= 16:
         return "3♣", tx(f"{hp} hp og jævn: 3♣ – som makker beder om; du har 12–16 jævn.",
                         f"{hp} HCP and balanced: 3♣ – as partner asks; you have 12–16 balanced.")
-    if jaevn(L) and 20 <= hp <= 21 and hjerterhold(hand):
-        return "3NT", tx(f"{hp} hp, jævn og hjerterhold: 3NT – 20–21 jævn med hjerterhold.",
-                         f"{hp} HCP, balanced with a heart stopper: 3NT – 20–21 balanced with a heart stopper.")
-    if (jaevn(L) and hp >= 22) or (not jaevn(L) and L['H'] >= 5):
+    if jaevn(L) and 20 <= hp <= 21 and hold(hand, M):
+        return "3NT", tx(f"{hp} hp, jævn og {navn}: 3NT – 20–21 jævn med {navn}.",
+                         f"{hp} HCP, balanced with {navn_en}: 3NT – 20–21 balanced with {navn_en}.")
+    if (jaevn(L) and hp >= 22) or (not jaevn(L) and L[M] >= 5):
         return None
-    farver = [s for s in ('S', 'D', 'C') if L[s] >= 5]
+    farver = [s for s in (A, 'D', 'C') if L[s] >= 5]
     if farver:
         s = entydig(farver, L)
         if not s:
             return None
-        bud = {'S': "3♠", 'D': "3♦", 'C': "4♣"}[s]
+        bud = "4♣" if s == 'C' else f"3{SUIT_SYM[s]}"
         krav, krav_en = (", krav", ", forcing") if s != 'C' else ("", "")
         return bud, tx(f"{L[s]} {SUIT_NAME[s]} og {hp} hp: {bud} – 5+ {SUIT_NAME[s]}, 17+{krav}.",
                        f"{L[s]} {SUIT_NAME_EN[s]} and {hp} HCP: {bud} – 5+ {SUIT_NAME_EN[s]}, 17+{krav_en}.")
     if jaevn(L):
-        return "3♥", tx(f"{hp} hp og jævn, men uden hjerterhold: 3♥ – 17+ uden egen farve; beder om hjerterhold.",
-                        f"{hp} HCP and balanced, but no heart stopper: 3♥ – 17+ without a suit of your own; asks for a heart stopper.")
-    return "3♥", tx(f"{hp} hp uden egen farve: 3♥ – 17+ uden egen farve; beder om hjerterhold.",
-                    f"{hp} HCP without a suit of your own: 3♥ – 17+ without a suit of your own; asks for a heart stopper.")
+        return f"3{sM}", tx(f"{hp} hp og jævn, men uden {navn}: 3{sM} – 17+ uden egen farve; beder om {navn}.",
+                            f"{hp} HCP and balanced, but without {navn_en}: 3{sM} – 17+ without a suit of your own; asks for {navn_en}.")
+    return f"3{sM}", tx(f"{hp} hp uden egen farve: 3{sM} – 17+ uden egen farve; beder om {navn}.",
+                        f"{hp} HCP without a suit of your own: 3{sM} – 17+ without a suit of your own; asks for {navn_en}.")
 
 # --- bonusspørgsmål ---------------------------------------------------------------
 
@@ -273,10 +326,10 @@ B_X = {"q": tx("Hvad viser X direkte over 2♦?", "What does X show directly ove
 B_2NT = {"q": tx("Hvad viser 2NT fra makker efter (2♦) – X – (2♥)?", "What does 2NT from partner show after (2♦) – X – (2♥)?"),
          "correct": C_2NT, "options": [C_2NT, tx("Naturligt, 10–12 jævn", "Natural, 10–12 balanced"),
                                        tx("Krav til udgang", "Game forcing")],
-         "why": tx("2NT er Lebensohl og beder dobleren melde 3♣: enten en svag hånd med en minor eller en invit med 5 spar. "
-                   "3♣ og 3♦ direkte er invit.",
-                   "2NT is Lebensohl and asks the doubler to bid 3♣: either a weak hand with a minor or an invitation with 5 spades. "
-                   "3♣ and 3♦ directly are invitational.")}
+         "why": tx("2NT er Lebensohl og beder dobleren melde 3♣: enten en svag hånd med en minor eller en invit, med 5+ spar "
+                   "3♠ bagefter og uden farve 3♥ (holdspørgsmål til 3NT). 3♣ og 3♦ direkte er invit.",
+                   "2NT is Lebensohl and asks the doubler to bid 3♣: either a weak hand with a minor or an invitation, with 5+ spades "
+                   "3♠ afterwards and without a suit 3♥ (asking for a stopper for 3NT). 3♣ and 3♦ directly are invitational.")}
 B_4NT = {"q": tx("Hvad viser 4NT efter (2♦) – 4♣?", "What does 4NT show after (2♦) – 4♣?"),
          "correct": C_4NT, "options": [C_4NT, tx("Begge minorer", "Both minors"), tx("For at spille", "To play")],
          "why": tx("Efter 4♣ (5+ hjerter og 5+ klør) er 4NT esspørgsmål med 6 esser, normalt de fire esser og kongerne i hjerter og klør.",
@@ -297,6 +350,39 @@ B_3H = {"q": tx("Hvad viser svarerens 3♥ efter 2NT – 3♣?", "What does resp
                   "og beder om hjerterhold.",
                   "3♥ cannot be natural, because responder doubles 2♥ for penalty with 4+ hearts. It invites to 3NT "
                   "and asks for a heart stopper.")}
+B_BRUD_SP = {"q": tx("Hvad gør dobleren efter (2♦) – X – (2♠) – 2NT med 17+?",
+                     "What does the doubler do after (2♦) – X – (2♠) – 2NT with 17+?"),
+             "correct": C_BRUD, "options": [C_BRUD, tx("Melder 3♣ og passer bagefter", "Bids 3♣ and passes afterwards"),
+                                            tx("Melder altid 3NT", "Always bids 3NT")],
+             "why": tx("Over 2♠ er det samme struktur som over 2♥ med farverne byttet om: 3♦ og 3♥ med 5+ farve (krav), 4♣ med "
+                       "5+ klør, 3♠ uden egen farve (beder om sparhold) og 3NT med 20–21 jævn og sparhold.",
+                       "Over 2♠ the structure is the same as over 2♥ with the suits swapped: 3♦ and 3♥ with a 5+ suit (forcing), "
+                       "4♣ with 5+ clubs, 3♠ without a suit of your own (asks for a spade stopper) and 3NT with 20–21 balanced "
+                       "and a spade stopper.")}
+C_X_SP = tx("Straf med 4+ spar", "Penalty with 4+ spades")
+B_X_SP = {"q": tx("Hvad viser svarerens X i (2♦) – X – (2♠)?", "What does responder's X show in (2♦) – X – (2♠)?"),
+          "correct": C_X_SP, "options": [C_X_SP, tx("Oplysning med hjerter", "Takeout with hearts"),
+                                         tx("12+ uden farve", "12+ without a suit")],
+          "why": tx("Over 2♠ er strukturen den samme som over 2♥ med farverne byttet om: X er straf med 4+ spar, 2NT er "
+                    "Lebensohl, 3♥ er krav med 5+ hjerter, og 3♣ og 3♦ er konstruktive og invit.",
+                    "Over 2♠ the structure is the same as over 2♥ with the suits swapped: X is penalty with 4+ spades, 2NT is "
+                    "Lebensohl, 3♥ is forcing with 5+ hearts, and 3♣ and 3♦ are constructive and invitational.")}
+C_3S_SP = tx("Invit til 3NT, beder om sparhold", "Invitation to 3NT, asks for a spade stopper")
+B_3S_SP = {"q": tx("Hvad viser svarerens 3♠ i (2♦) – X – (2♠) – 2NT – 3♣?", "What does responder's 3♠ show in (2♦) – X – (2♠) – 2NT – 3♣?"),
+           "correct": C_3S_SP, "options": [C_3S_SP, tx("Naturligt med 5 spar", "Natural with 5 spades"),
+                                           tx("Krav til udgang", "Game forcing")],
+           "why": tx("Efter 2NT – 3♣ er 3 i modpartens major et holdspørgsmål til 3NT: med 4+ spar havde svareren doblet 2♠ "
+                     "for straf. 3♥ er invit med 5+ hjerter.",
+                     "After 2NT – 3♣, three of the opponents' major asks for a stopper for 3NT: with 4+ spades responder would "
+                     "have doubled 2♠ for penalty. 3♥ is invitational with 5+ hearts.")}
+C_PAS = tx("Straf med lange ruder", "Penalty with long diamonds")
+B_PAS = {"q": tx("Hvad viser svarerens pas i (2♦) – X – (pas)?", "What does responder's pass show in (2♦) – X – (pass)?"),
+         "correct": C_PAS, "options": [C_PAS, tx("Svag hånd uden farve", "A weak hand without a suit"),
+                                       tx("Venter på makkers næste melding", "Waits for partner's next bid")],
+         "why": tx("Over pas er 2♥ og 2♠ for at spille, 2NT er Lebensohl, nye farver på 3-trinnet er krav, og pas er straf "
+                   "med lange ruder.",
+                   "Over a pass, 2♥ and 2♠ are to play, 2NT is Lebensohl, new suits at the three level are forcing, and pass is "
+                   "penalty with long diamonds.")}
 
 # --- situationer og hænder --------------------------------------------------------
 
@@ -312,7 +398,7 @@ SITUATIONS = {
                    "auction": [["Modstander", "2♦"], ["Dig", "Pas"], ["Modstander", "2♥"], ["Makker", "Pas"], ["Modstander", "Pas"]],
                    "allowX": True, "calls": ["Pas", "X", "2♠", "3♣", "3♦"], "bonus": B_X},
     "svar_d": {"rolle": "Svarer", "note": NOTE, "auction": [["Modstander", "2♦"], ["Makker", "X"], ["Modstander", "2♥"]],
-               "allowX": True, "calls": ["Pas", "X", "2♠", "2NT", "3♣", "3♦", "3♠"], "bonus": B_2NT},
+               "allowX": True, "calls": ["Pas", "X", "2♠", "2NT", "3♣", "3♦", "3♠", "4♠"], "bonus": B_2NT},
     "svar_relae": {"rolle": "Svarer", "note": NOTE,
                    "auction": [["Modstander", "2♦"], ["Makker", "X"], ["Modstander", "2♥"], ["Dig", "2NT"], ["Modstander", "Pas"],
                                ["Makker", "3♣"], ["Modstander", "Pas"]],
@@ -322,12 +408,25 @@ SITUATIONS = {
     "dobler": {"rolle": "Dobler", "note": NOTE,
                "auction": [["Modstander", "2♦"], ["Dig", "X"], ["Modstander", "2♥"], ["Makker", "2NT"], ["Modstander", "Pas"]],
                "calls": ["3♣", "3♦", "3♥", "3♠", "3NT", "4♣"], "bonus": B_BRUD},
+    "svar_d_sp": {"rolle": "Svarer", "note": NOTE, "auction": [["Modstander", "2♦"], ["Makker", "X"], ["Modstander", "2♠"]],
+                  "allowX": True, "calls": ["Pas", "X", "2NT", "3♣", "3♦", "3♥", "4♥"], "bonus": B_X_SP},
+    "svar_relae_sp": {"rolle": "Svarer", "note": NOTE,
+                      "auction": [["Modstander", "2♦"], ["Makker", "X"], ["Modstander", "2♠"], ["Dig", "2NT"], ["Modstander", "Pas"],
+                                  ["Makker", "3♣"], ["Modstander", "Pas"]],
+                      "calls": ["Pas", "3♦", "3♥", "3♠"], "bonus": B_3S_SP},
+    "svar_pas": {"rolle": "Svarer", "note": NOTE, "auction": [["Modstander", "2♦"], ["Makker", "X"], ["Modstander", "Pas"]],
+                 "calls": ["Pas", "2♥", "2♠", "2NT", "3♣", "3♥", "3♠"], "bonus": B_PAS},
+    "dobler_sp": {"rolle": "Dobler", "note": NOTE,
+                  "auction": [["Modstander", "2♦"], ["Dig", "X"], ["Modstander", "2♠"], ["Makker", "2NT"], ["Modstander", "Pas"]],
+                  "calls": ["3♣", "3♦", "3♥", "3♠", "3NT", "4♣"], "bonus": B_BRUD_SP},
 }
 for s in SITUATIONS.values():
     s["calls"] = sorted(s["calls"], key=K)
 
-CLASSIFIERS = {"direkte": direkte, "genaabning": genaabning, "svar_d": svar_d, "svar_relae": svar_relae, "svar_4kl": svar_4kl,
-               "dobler": dobler}
+CLASSIFIERS = {"direkte": direkte, "genaabning": genaabning, "svar_d": lambda h, hp: svar_efter(h, hp, 'H'),
+               "svar_relae": lambda h, hp: relae_efter(h, hp, 'H'), "svar_4kl": svar_4kl, "dobler": lambda h, hp: dobler_efter(h, hp, 'H'),
+               "svar_d_sp": lambda h, hp: svar_efter(h, hp, 'S'), "svar_relae_sp": lambda h, hp: relae_efter(h, hp, 'S'),
+               "svar_pas": svar_pas, "dobler_sp": lambda h, hp: dobler_efter(h, hp, 'S')}
 
 SAMPLERS = {
     "direkte": {
@@ -358,17 +457,18 @@ SAMPLERS = {
     },
     "svar_d": {
         "X": t(STRAF_HP, H=(4, 5)),
-        "3♠": t(KRAV_HP, S=(5, 6), H=(0, 3)),
+        "3♠": t(KRAV_HP, S=(5, 5), H=(0, 3)),
+        "4♠": t(KRAV_HP, S=(6, 7), H=(0, 3)),
         "3♣": t(INVIT_HP, C=(5, 6), H=(0, 3), D=(0, 4)),
         "3♦": t(INVIT_HP, D=(5, 6), H=(0, 3), C=(0, 4)),
-        "2NT": either(t(INVIT_HP, S=(5, 5), H=(0, 3), D=(0, 4), C=(0, 4)),
+        "2NT": either(t(INVIT_HP, S=(5, 5), H=(0, 3), D=(0, 4), C=(0, 4)), t(INVIT_HP, S=(6, 7), H=(0, 3), D=(0, 3), C=(0, 3)),
                       t(INVIT_HP, S=(0, 4), H=(0, 3), D=(0, 4), C=(0, 4)),
                       t((0, SVAG_HP), C=(5, 7), S=(0, 3)), t((0, SVAG_HP), D=(5, 7), S=(0, 3))),
         "2♠": t((0, SVAG_HP), S=(4, 6)),
         "Pas": t((0, SVAG_HP), S=(0, 3), D=(0, 4), C=(0, 4)),
     },
     "svar_relae": {
-        "3♠": t(INVIT_HP, S=(5, 5), H=(0, 3), D=(0, 4), C=(0, 4)),
+        "3♠": either(t(INVIT_HP, S=(5, 5), H=(0, 3), D=(0, 4), C=(0, 4)), t(INVIT_HP, S=(6, 7), H=(0, 3), D=(0, 3), C=(0, 3))),
         "3♥": t(INVIT_HP, S=(0, 4), H=(0, 3), D=(0, 4), C=(0, 4)),
         "3♦": t((0, SVAG_HP), D=(5, 7), S=(0, 3)),
         "Pas": t((0, SVAG_HP), C=(5, 7), S=(0, 3), D=(0, 4)),
@@ -386,6 +486,41 @@ SAMPLERS = {
         "4♣": t((17, DOBLER_HP_MAX), C=(5, 7), S=(0, 4), H=(0, 4), D=(0, 4)),
         "3♥": either(t((17, DOBLER_HP_MAX), S=(0, 4), H=(0, 4), D=(0, 4), C=(0, 4)),
                      t((20, 21), S=(2, 4), H=(2, 3), D=(2, 4), C=(2, 4))),
+    },
+    "svar_d_sp": {
+        "X": t(STRAF_HP, S=(4, 5)),
+        "3♥": t(KRAV_HP, H=(5, 5), S=(0, 3)),
+        "4♥": t(KRAV_HP, H=(6, 7), S=(0, 3)),
+        "3♣": t(INVIT_HP, C=(5, 6), S=(0, 3), D=(0, 4)),
+        "3♦": t(INVIT_HP, D=(5, 6), S=(0, 3), C=(0, 4)),
+        "2NT": either(t(INVIT_HP, H=(5, 5), S=(0, 3), D=(0, 4), C=(0, 4)), t(INVIT_HP, H=(6, 7), S=(0, 3), D=(0, 3), C=(0, 3)),
+                      t(INVIT_HP, H=(0, 4), S=(0, 3), D=(0, 4), C=(0, 4)),
+                      t((0, SVAG_HP), C=(5, 7), S=(0, 3)), t((0, SVAG_HP), D=(5, 7), S=(0, 3))),
+        "Pas": t((0, SVAG_HP), D=(0, 4), C=(0, 4)),
+    },
+    "svar_relae_sp": {
+        "3♥": either(t(INVIT_HP, H=(5, 5), S=(0, 3), D=(0, 4), C=(0, 4)), t(INVIT_HP, H=(6, 7), S=(0, 3), D=(0, 3), C=(0, 3))),
+        "3♠": t(INVIT_HP, H=(0, 4), S=(0, 3), D=(0, 4), C=(0, 4)),
+        "3♦": t((0, SVAG_HP), D=(5, 7), S=(0, 3)),
+        "Pas": t((0, SVAG_HP), C=(5, 7), S=(0, 3), D=(0, 4)),
+    },
+    "svar_pas": {
+        "Pas": t((0, STRAF_HP[1]), D=(RUDER_STRAF, 7)),
+        "3♣": t(KRAV_HP, C=(5, 7), S=(0, 4), H=(0, 4), D=(0, 4)),
+        "3♥": t(KRAV_HP, H=(5, 7), S=(0, 4), D=(0, 4), C=(0, 4)),
+        "3♠": t(KRAV_HP, S=(5, 7), H=(0, 4), D=(0, 4), C=(0, 4)),
+        "2♥": t((0, SVAG_HP), H=(4, 6), S=(0, 3), D=(0, 4)),
+        "2♠": t((0, SVAG_HP), S=(4, 6), H=(0, 3), D=(0, 4)),
+        "2NT": t((0, SVAG_HP), C=(5, 7), S=(0, 3), H=(0, 3), D=(0, 4)),
+    },
+    "dobler_sp": {
+        "3♣": t((12, 16), S=(2, 4), H=(2, 4), D=(2, 5), C=(2, 5)),
+        "3NT": t((20, 21), S=(3, 5), H=(2, 5), D=(2, 5), C=(2, 5)),
+        "3♥": t((17, DOBLER_HP_MAX), H=(5, 6), S=(0, 4), D=(0, 4), C=(0, 4)),
+        "3♦": t((17, DOBLER_HP_MAX), D=(5, 7), S=(0, 4), H=(0, 4), C=(0, 4)),
+        "4♣": t((17, DOBLER_HP_MAX), C=(5, 7), S=(0, 4), H=(0, 4), D=(0, 4)),
+        "3♠": either(t((17, DOBLER_HP_MAX), S=(0, 4), H=(0, 4), D=(0, 4), C=(0, 4)),
+                     t((20, 21), S=(2, 3), H=(2, 4), D=(2, 4), C=(2, 4))),
     },
 }
 PER = {k: PER_CALL for k in SITUATIONS}
