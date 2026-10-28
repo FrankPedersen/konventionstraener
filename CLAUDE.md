@@ -1,5 +1,7 @@
 # Konventionstræner — arbejdsregler
 
+Det, der gælder alle repoer – arbejdsgangen, husets ord, hemmeligheder og systemdokumentationen `../SYSTEM.md` – står i `../CLAUDE.md`.
+
 ## Konventionskort
 
 Alle konventioner beskrives som konventionskort efter den faste skabelon i `docs/konventionskort-skabelon.md`. Læs den, før du opretter eller ændrer en konvention.
@@ -25,15 +27,10 @@ Et kort har samme `id` som konventionen i `data/konventioner.json`, når der fin
 
 ## Sprog og fagord
 
-- Husets fagord i dansk tekst (`docs/specs/SPEC-sprog-og-ordbog.md`): bordet, kipning, forbindelser og slutspil (indspil kun om den særlige form), og hp, doubleton og fittet (derfor et fit). Engelsk beholder HCP.
-- Kør `python3 tools/tjek_fagord.py` efter tekstændringer; den skal melde "i orden". `python3 tools/tjek_sprog.py` er specens accepttest.
+- Husets fagord står i `../CLAUDE.md` (specen er `docs/specs/SPEC-sprog-og-ordbog.md`). Kør `python3 tools/tjek_fagord.py` efter tekstændringer; den skal melde "i orden". `python3 tools/tjek_sprog.py` er specens accepttest.
 - Stavekontrol med hånden før udgivelse: `python3 tools/sprogtjek.py` (kræver `pip install spylls`; den danske ordbog hentes første gang). Rigtige ord, som hunspell ikke kender, står i `tools/ordliste.txt`; stavefejl rettes i teksten.
 
 ## Vedligeholdelse
 
 - **Makker 2-dokumentet:** `viden/2-over-1-makker2.html` er kilden og rettes direkte i siden. Der importeres ikke længere fra Claude Design (Franks valg 25. oktober 2026); `tools/import_design.py` er kun til historik og stopper med en fejl, medmindre det køres med `--overskriv`.
 - **Specerne** ligger i `docs/specs/` med én linje pr. spec i `docs/specs/README.md`. En ny spec kan ligge i roden, mens den er i arbejde, og flyttes dertil, når den er færdig. `_config.yml` udelukker `docs/` og `SPEC-*.md` og udviklerfilerne `CLAUDE.md`, `build_pools.py`, `dealer/` og `tools/` fra GitHub Pages, så de ligger på GitHub, men ikke på www.kontraktbridge.dk (Franks valg 27. og 28. oktober 2026). Mapper, der begynder med `_`, udgives ikke. En ny mappe eller fil, som siderne skal hente, må ikke stå i `exclude`.
-
-## Systemdokumentation
-
-**Systemdokumentation:** `docs/SYSTEM.md` i forsidens repo (lokalt `../githubUpload/docs/SYSTEM.md`) beskriver hele www.kontraktbridge.dk (de tre repoer, Azure, drift, data og arbejdsgang). Filen er privat: den står i githubUploads `.gitignore` og ligger kun lokalt. Ændrer en opgave noget af det – en ny side eller app, en Azure-ressource, en app-indstilling, udrulning, data der gemmes, eller en beslutning Frank træffer – så opdatér `docs/SYSTEM.md` i samme omgang, også beslutningsloggen og datoen øverst. Hemmeligheder skrives aldrig i filen.
