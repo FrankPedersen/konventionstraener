@@ -5,7 +5,8 @@ Kør fra repoets rod:  python3 tools/tjek_skrifttyper.py
 Udgivet er alle filer i git, som GitHub Pages lægger på sitet: alt undtagen stier, hvor en mappe eller fil begynder med
 "_" eller "." (Jekyll springer dem over, fx _design/). Testen fejler, hvis en udgivet html-, css- eller js-fil eller en
 af sidegeneratorerne i tools/ henviser til fonts.googleapis.com eller fonts.gstatic.com, eller hvis en skrifttype, som
-assets/fonts/*.css nævner, mangler. At siderne ser ud som før, tjekkes i Chrome med `node tools/tjek_skrifttyper.mjs`.
+assets/fonts/*.css nævner, mangler. At Chrome tegner siderne med skrifttyperne fra sitet, tjekkes med
+`node tools/tjek_skrifttyper.mjs`.
 """
 import pathlib
 import re

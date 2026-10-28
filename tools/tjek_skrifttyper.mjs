@@ -1,11 +1,11 @@
-// Accepttest i en rigtig browser: skrifttyperne ligger på sitet selv, og siderne ser ud som før. Udgaven før ændringen
-// (tagget v-foer-skrifttyper, som henter fra Google Fonts) og den nye vises fra hver sin lokale webserver. På hver side
-// sammenlignes de skrifttyper, Chrome faktisk tegner med (overskriften, brødteksten, et Manrope-element og spillefarverne
-// ♠♥♦♣); sider uden tilfældige hænder sammenlignes også pixel for pixel. Den nye udgave må ikke hente noget fra Google.
-// Kræver Node 22+, git og Chrome eller Edge.
+// Fast test i en rigtig browser (SPEC-skrifttyper-fast.md): skrifttyperne ligger på sitet selv. Siderne vises fra en
+// lokal webserver ved 390 og 1280 px, og intet må hentes fra Google. Chrome skal tegne overskriften og et Manrope-element
+// med Manrope, brødteksten med Inter og spillefarverne ♠♥♦♣ med Noto Sans Symbols 2, hvor siden beder om den, alle fra
+// assets/fonts/ og ikke fra systemet. (Accepttesten for skrifttypeændringen sammenlignede også pixel for pixel med tagget v-foer-skrifttyper;
+// den er bestået.) Kræver Node 22+ og Chrome eller Edge.
 //
 //   node tools/tjek_skrifttyper.mjs
-import { spawn, spawnSync } from 'node:child_process';
+import { spawn } from 'node:child_process';
 import { existsSync, mkdtempSync, readFileSync, rmSync, statSync } from 'node:fs';
 import { createServer } from 'node:http';
 import { tmpdir } from 'node:os';
@@ -13,7 +13,6 @@ import { extname, join, normalize } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROD = fileURLToPath(new URL('..', import.meta.url));
-const FOER = 'v-foer-skrifttyper';
 const browser = [
   process.env.CHROME,
   'C:/Program Files/Google/Chrome/Application/chrome.exe',
@@ -27,21 +26,13 @@ if (!browser) {
   process.exit(2);
 }
 
-// [side, pixel for pixel?] – trænerne trækker tilfældige hænder, så dem sammenlignes kun på skrifttyperne
 const SIDER = [
-  ['index.html', true], ['makkeraftaler.html', true], ['traener.html?k=truscott', false], ['markering.html', false],
-  ['multi-svar-traener.html', false], ['viden/index.html', true], ['viden/2-over-1.html', true],
-  ['viden/2-over-1-makker2.html', true], ['viden/bridgesystem.html', true], ['viden/forslag-2klor-kontrolsvar.html', true],
-  ['viden/kampen-om-kontrakten.html', true], ['viden/konventionskort.html#truscott', true],
+  'index.html', 'makkeraftaler.html', 'traener.html?k=truscott', 'markering.html', 'multi-svar-traener.html',
+  'viden/index.html', 'viden/2-over-1.html', 'viden/2-over-1-makker2.html', 'viden/bridgesystem.html',
+  'viden/forslag-2klor-kontrolsvar.html', 'viden/kampen-om-kontrakten.html', 'viden/konventionskort.html#truscott',
 ];
-
-// Udgaven før ændringen pakkes ud fra tagget med et midlertidigt indeks, så repoets eget indeks ikke røres
-const gammel = mkdtempSync(join(tmpdir(), 'tjek-skrift-foer-'));
-const indeks = { ...process.env, GIT_INDEX_FILE: join(gammel, '.indeks') };
-for (const args of [['read-tree', FOER], ['checkout-index', '-a', `--prefix=${gammel.replaceAll('\\', '/')}/`]]) {
-  const r = spawnSync('git', args, { cwd: ROD, env: indeks });
-  if (r.status !== 0) { console.error(`git ${args[0]} fejlede: ${r.stderr}`); process.exit(2); }
-}
+// Den skrifttype, hvert element skal tegnes med
+const SKRIFT = { overskrift: 'Manrope', brødtekst: 'Inter', manrope: 'Manrope', spillefarver: 'Noto Sans Symbols 2' };
 
 const TYPER = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml',
   '.woff2': 'font/woff2', '.json': 'application/json', '.txt': 'text/plain; charset=utf-8', '.md': 'text/plain; charset=utf-8' };
@@ -56,12 +47,12 @@ async function webserver(mappe) {
   await new Promise((r) => s.listen(0, '127.0.0.1', r));
   return { s, url: `http://127.0.0.1:${s.address().port}/` };
 }
-const før = await webserver(gammel), nu = await webserver(ROD);
+const nu = await webserver(ROD);
 
 const port = 9600 + Math.floor(Math.random() * 90);
 const profil = mkdtempSync(join(tmpdir(), 'tjek-skrift-'));
 const proces = spawn(browser, ['--headless=new', `--remote-debugging-port=${port}`, `--user-data-dir=${profil}`, '--no-first-run',
-  '--hide-scrollbars', '--font-render-hinting=none', 'about:blank'], { stdio: 'ignore' });
+  'about:blank'], { stdio: 'ignore' });
 const vent = (ms) => new Promise((r) => setTimeout(r, ms));
 async function json(sti, metode = 'GET') {
   for (let i = 0; i < 50; i++) {
@@ -80,8 +71,10 @@ const tjek = (ok, navn, detalje = '') => {
   console.log(`${ok ? 'ok  ' : 'FEJL'} ${navn}${!ok && detalje ? ` – ${detalje}` : ''}`);
 };
 
-// Markerer de elementer, hvis skrifttyper sammenlignes: overskriften, første afsnit, første element i Manrope og første
-// element med en spillefarve i sin egen tekst. Samme regel på begge udgaver, så det er de samme elementer.
+// Markerer de elementer, hvis skrifttyper tjekkes: overskriften, første afsnit, første element i Manrope og første
+// element med en spillefarve i sin egen tekst, der beder om Noto Sans Symbols 2. Spillefarver i sidens almindelige
+// skrift (fx i Multi-træneren og Makker 2, der ikke henter symbolskriften) tegnes med systemets tegn, som før
+// skrifttyperne kom på sitet, og tjekkes ikke.
 const MARKER = `(() => {
   const ud = [];
   const sæt = (navn, el) => { if (el) { el.setAttribute('data-tjek-skrift', navn); ud.push(navn); } };
@@ -90,7 +83,8 @@ const MARKER = `(() => {
   sæt('manrope', [...document.querySelectorAll('body *')].find((el) => el.offsetParent && el.childNodes.length
     && [...el.childNodes].some((n) => n.nodeType === 3 && n.textContent.trim()) && getComputedStyle(el).fontFamily.startsWith('Manrope')));
   sæt('spillefarver', [...document.querySelectorAll('body *')].find((el) => el.offsetParent
-    && [...el.childNodes].some((n) => n.nodeType === 3 && /[♠♥♦♣]/.test(n.textContent))));
+    && [...el.childNodes].some((n) => n.nodeType === 3 && /[♠♥♦♣]/.test(n.textContent))
+    && getComputedStyle(el).fontFamily.includes('Noto Sans Symbols 2')));
   return ud;
 })()`;
 
@@ -112,7 +106,7 @@ async function fane() {
   const kør = async (expression) => (await send('Runtime.evaluate', { expression, awaitPromise: true, returnByValue: true })).result.result?.value;
   await send('Page.enable'); await send('Network.enable'); await send('DOM.enable'); await send('CSS.enable');
   return {
-    send, kør, kald,
+    kør, kald,
     async åbn(url, bredde) {
       await send('Emulation.setDeviceMetricsOverride', { width: bredde, height: 900, deviceScaleFactor: 1, mobile: bredde < 600 });
       const n = indlæst; kald.length = 0;
@@ -121,65 +115,41 @@ async function fane() {
       for (let i = 0; i < 150 && indlæst <= n; i++) await vent(100);
       await kør('document.fonts.ready.then(() => new Promise((r) => setTimeout(r, 600)))');
     },
-    async skrifter(navn, medAntal) {
+    // Skrifttyperne, Chrome tegner elementet med, som { familie, egen } (egen: fra sitet, ikke fra systemet)
+    async skrifter(navn) {
       const doc = await send('DOM.getDocument', { depth: -1 });
       const q = await send('DOM.querySelector', { nodeId: doc.result.root.nodeId, selector: `[data-tjek-skrift="${navn}"]` });
-      if (!q.result?.nodeId) return null;
+      if (!q.result?.nodeId) return [];
       const f = await send('CSS.getPlatformFontsForNode', { nodeId: q.result.nodeId });
-      return (f.result?.fonts ?? []).map((x) => `${x.familyName}${x.isCustomFont ? '' : ' (system)'}${medAntal ? ':' + x.glyphCount : ''}`).sort().join(', ');
-    },
-    async billede() {
-      const r = await send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: true });
-      return r.result.data;
+      return (f.result?.fonts ?? []).map((x) => ({ familie: x.familyName, egen: x.isCustomFont }));
     },
     luk: async () => { ws.close(); await json(`/json/close/${f.id}`).catch(() => {}); },
   };
 }
 
-// Sammenligner to PNG-billeder pixel for pixel i browseren
-async function forskel(t, a, b) {
-  return t.kør(`(async () => {
-    const læs = (d) => new Promise((ok) => { const i = new Image(); i.onload = () => ok(i); i.src = 'data:image/png;base64,' + d; });
-    const [x, y] = await Promise.all([læs(${JSON.stringify(a)}), læs(${JSON.stringify(b)})]);
-    if (x.width !== y.width || x.height !== y.height) return { størrelse: [x.width, x.height, y.width, y.height] };
-    const px = (i) => { const c = new OffscreenCanvas(i.width, i.height); const g = c.getContext('2d'); g.drawImage(i, 0, 0); return g.getImageData(0, 0, i.width, i.height).data; };
-    const p = px(x), q = px(y); let n = 0;
-    for (let k = 0; k < p.length; k += 4) if (p[k] !== q[k] || p[k + 1] !== q[k + 1] || p[k + 2] !== q[k + 2]) n++;
-    return { n, ialt: p.length / 4 };
-  })()`);
-}
-
 try {
   await json('/json/version');
   const t = await fane();
-  for (const [side, pixel] of SIDER) {
+  for (const side of SIDER) {
     for (const bredde of [390, 1280]) {
-      await t.åbn(før.url + side, bredde);
-      const bGammel = pixel ? await t.billede() : null;
-      const navne = await t.kør(MARKER);
-      const fGammel = {}; for (const n of navne) fGammel[n] = await t.skrifter(n, pixel);
       await t.åbn(nu.url + side, bredde);
       const google = t.kald.filter((u) => /fonts\.(googleapis|gstatic)\.com/.test(u));
       const egne = t.kald.filter((u) => u.includes('/assets/fonts/') && u.endsWith('.woff2'));
-      const bNu = pixel ? await t.billede() : null;
-      const navneNu = await t.kør(MARKER);
       tjek(google.length === 0 && egne.length > 0, `${side} ${bredde} px: intet hentes fra Google; ${egne.length} skrifttyper fra assets/fonts/`, google.join(' '));
-      tjek(navne.join() === navneNu.join(), `${side} ${bredde} px: samme elementer at sammenligne (${navne.join(', ')})`, navneNu.join(', '));
+      const navne = await t.kør(MARKER);
+      tjek(navne.includes('brødtekst'), `${side} ${bredde} px: der er brødtekst at tjekke (${navne.join(', ')})`);
       for (const n of navne) {
-        const s = await t.skrifter(n, pixel);
-        tjek(fGammel[n] && fGammel[n] === s, `${side} ${bredde} px: ${n} tegnes med ${s}`, `før: ${fGammel[n]}`);
-      }
-      if (pixel) {
-        const d = await forskel(t, bGammel, bNu);
-        tjek(d.n === 0, `${side} ${bredde} px: siden er pixel for pixel som før`, JSON.stringify(d));
+        const skrifter = await t.skrifter(n);
+        const vist = skrifter.map((s) => `${s.familie}${s.egen ? '' : ' (system)'}`).sort().join(', ');
+        tjek(skrifter.some((s) => s.egen && s.familie.startsWith(SKRIFT[n])), `${side} ${bredde} px: ${n} tegnes med ${SKRIFT[n]} fra sitet`, vist);
       }
     }
   }
   await t.luk();
 } finally {
   proces.kill();
-  før.s.close(); nu.s.close();
+  nu.s.close();
   await vent(300);
-  for (const m of [profil, gammel]) { try { rmSync(m, { recursive: true, force: true }); } catch {} }
+  try { rmSync(profil, { recursive: true, force: true }); } catch {}
 }
 process.exit(fejl ? 1 : 0);
