@@ -1,5 +1,10 @@
-# GitHub Pages (Jekyll): specerne og docs/ ligger på GitHub, men ikke på www.kontraktbridge.dk (Franks valg 27. oktober 2026).
+# GitHub Pages (Jekyll): kun siden udgives på www.kontraktbridge.dk. Specerne, docs/ og udviklerfilerne (CLAUDE.md,
+# build_pools.py, dealer/ og tools/) ligger på GitHub, men ikke på hjemmesiden (Franks valg 27. og 28. oktober 2026).
 # Mapper, der begynder med _ (fx _design/), udgives ikke i forvejen.
 exclude:
   - docs
   - SPEC-*.md
+  - CLAUDE.md
+  - build_pools.py
+  - dealer
+  - tools

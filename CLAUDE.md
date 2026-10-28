@@ -32,7 +32,7 @@ Et kort har samme `id` som konventionen i `data/konventioner.json`, når der fin
 ## Vedligeholdelse
 
 - **Makker 2-dokumentet:** `viden/2-over-1-makker2.html` er kilden og rettes direkte i siden. Der importeres ikke længere fra Claude Design (Franks valg 25. oktober 2026); `tools/import_design.py` er kun til historik og stopper med en fejl, medmindre det køres med `--overskriv`.
-- **Specerne** ligger i `docs/specs/` med én linje pr. spec i `docs/specs/README.md`. En ny spec kan ligge i roden, mens den er i arbejde, og flyttes dertil, når den er færdig. `_config.yml` udelukker `docs/` og `SPEC-*.md` fra GitHub Pages, så specerne ligger på GitHub, men ikke på www.kontraktbridge.dk (Franks valg 27. oktober 2026). Mapper, der begynder med `_`, udgives ikke.
+- **Specerne** ligger i `docs/specs/` med én linje pr. spec i `docs/specs/README.md`. En ny spec kan ligge i roden, mens den er i arbejde, og flyttes dertil, når den er færdig. `_config.yml` udelukker `docs/` og `SPEC-*.md` og udviklerfilerne `CLAUDE.md`, `build_pools.py`, `dealer/` og `tools/` fra GitHub Pages, så de ligger på GitHub, men ikke på www.kontraktbridge.dk (Franks valg 27. og 28. oktober 2026). Mapper, der begynder med `_`, udgives ikke. En ny mappe eller fil, som siderne skal hente, må ikke stå i `exclude`.
 
 ## Systemdokumentation
 
