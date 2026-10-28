@@ -161,33 +161,36 @@ def svar_4kl(h):
     return None
 
 
-def hjerterhold(h):
-    """Es, konge med 1+ kort til, dame med 2+ eller knægt med 3+ (Claude Codes valg, Afklaret 17)."""
+def hold(h, M):
+    """Hold i farve M: es, konge med 1+ kort til, dame med 2+ eller knægt med 3+ (Claude Codes valg, Afklaret 17)."""
     mindst = {14: 1, 13: 2, 12: 3, 11: 4}
-    return any(r in mindst and len(h['H']) >= mindst[r] for r in h['H'])
+    return any(r in mindst and len(h[M]) >= mindst[r] for r in h[M])
 
 
-def dobler(h):
-    """Dobleren efter (2♦) – X – (2♥) – 2NT – (pas) (Franks valg 27. oktober 2026, Afklaret 16)."""
+def dobler_efter(h, M):
+    """Dobleren efter (2♦) – X – (2M) – 2NT – (pas); over 2♠ med farverne byttet om (Franks valg 27. og 28. oktober 2026,
+    Afklaret 16 og 20)."""
     if direkte(h) != 'X':
         return None
     L, hp, top, jaevn = info(h)
     if mellem(hp, 12, 16):
         return '3♣'
-    if jaevn and mellem(hp, 20, 21) and hjerterhold(h):
+    if jaevn and mellem(hp, 20, 21) and hold(h, M):
         return '3NT'
-    if (jaevn and hp >= 22) or (not jaevn and L['H'] >= 5):
+    if (jaevn and hp >= 22) or (not jaevn and L[M] >= 5):
         return None
-    farver = [s for s in 'SDC' if L[s] >= 5]
+    A = 'S' if M == 'H' else 'H'
+    farver = [s for s in A + 'DC' if L[s] >= 5]
     if farver:
         s = laengste(farver, L)
-        return None if s == 'uafgjort' else {'S': '3♠', 'D': '3♦', 'C': '4♣'}[s]
-    return '3♥'
+        return None if s == 'uafgjort' else ('4♣' if s == 'C' else '3' + SYM[s])
+    return '3' + SYM[M]
 
 
 REGLER = {'direkte': direkte, 'genaabning': genaabning, 'svar_d': lambda h: svar_efter(h, 'H'),
-          'svar_relae': lambda h: relae_efter(h, 'H'), 'svar_4kl': svar_4kl, 'dobler': dobler,
-          'svar_d_sp': lambda h: svar_efter(h, 'S'), 'svar_relae_sp': lambda h: relae_efter(h, 'S'), 'svar_pas': svar_pas}
+          'svar_relae': lambda h: relae_efter(h, 'H'), 'svar_4kl': svar_4kl, 'dobler': lambda h: dobler_efter(h, 'H'),
+          'svar_d_sp': lambda h: svar_efter(h, 'S'), 'svar_relae_sp': lambda h: relae_efter(h, 'S'), 'svar_pas': svar_pas,
+          'dobler_sp': lambda h: dobler_efter(h, 'S')}
 SITUATIONER = {
     'dobler': ('Dobler', [['Modstander', '2♦'], ['Dig', 'X'], ['Modstander', '2♥'], ['Makker', '2NT'], ['Modstander', 'Pas']],
                ['3♣', '3♦', '3♥', '3♠', '3NT', '4♣']),
@@ -201,6 +204,8 @@ SITUATIONER = {
                                  ['Makker', '3♣'], ['Modstander', 'Pas']], ['Pas', '3♦', '3♥', '3♠']),
     'svar_pas': ('Svarer', [['Modstander', '2♦'], ['Makker', 'X'], ['Modstander', 'Pas']],
                  ['Pas', '2♥', '2♠', '2NT', '3♣', '3♥', '3♠']),
+    'dobler_sp': ('Dobler', [['Modstander', '2♦'], ['Dig', 'X'], ['Modstander', '2♠'], ['Makker', '2NT'], ['Modstander', 'Pas']],
+                  ['3♣', '3♦', '3♥', '3♠', '3NT', '4♣']),
 }
 # Svarerens invit med 6+ spar er nu med i puljen (Franks valg 28. oktober 2026)
 SKAL_FINDES = [('svar_d', '2NT', lambda L, hp: L['S'] >= 6), ('svar_relae', '3♠', lambda L, hp: L['S'] >= 6),
