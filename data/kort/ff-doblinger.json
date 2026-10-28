@@ -27,7 +27,7 @@
     "tekst": "Makker har åbnet, og modparten melder ind eller dobler.",
     "gaelderFor": "Negativ dobling, åbners svar, støttedobling til og med 2♠, og svar efter dobling af makkers åbning"
   },
-  "kortfortalt": "Den negative dobling viser 4-farve i uvist major (8+ hp, 6+ efter 1-over-1); åbner svarer som på en farvemelding og kan passe med længde bag indmelderen. Støttedoblingen viser præcis 3 kort i svarers major, og redobling efter dobling af åbningen viser 10+ hp uden primær støtte.",
+  "kortfortalt": "Den negative dobling viser 4-farve i uvist major (8+ hp, 6+ efter 1-over-1); åbner svarer som på en farvemelding og kan passe med længde bag indmelderen. Støttedoblingen viser præcis 3 kort i svarers major, og redobling efter dobling af åbningen viser 10+ hp uden primær støtte, mens 2NT er Truscott med 10+ sp og 4+ trumf.",
   "meldinger": [
     {
       "gruppe": "Svarer efter indmelding"
@@ -62,8 +62,8 @@
     {
       "bud": "2NT",
       "noegle": "gul",
-      "styrke": "13+ sp",
-      "viser": "Bekkasin: 4+ korts støtte – gælder fortsat efter dobling"
+      "styrke": "10+ sp",
+      "viser": "Truscott: 4+ korts støtte (Franks valg 27. oktober 2026)"
     },
     {
       "bud": "Ny farve på 1-trinnet",
@@ -229,127 +229,127 @@
       ],
       "haand": {
         "S": [
-          10,
+          14,
           9,
-          8,
-          7
-        ],
-        "H": [
-          11,
           7,
-          6,
-          3
-        ],
-        "D": [
-          13,
-          9,
           5
         ],
-        "C": [
-          14,
-          8
-        ]
-      },
-      "svar": "X",
-      "forklaring": "4 spar og 8 hp: negativ dobling (6+)."
-    },
-    {
-      "auction": [
-        [
-          "Dig",
-          "1♦"
-        ],
-        [
-          "Modstander",
-          "1♥"
-        ],
-        [
-          "Makker",
-          "X"
-        ],
-        [
-          "Modstander",
-          "Pas"
-        ],
-        [
-          "Dig",
-          "?"
-        ]
-      ],
-      "haand": {
-        "S": [
-          14,
-          13
-        ],
         "H": [
-          14,
-          5,
-          4,
-          2
-        ],
-        "D": [
-          13,
-          9,
-          6,
-          4,
-          2
-        ],
-        "C": [
-          9,
-          4
-        ]
-      },
-      "svar": "Pas",
-      "forklaring": "4 hjerter bag indmelderen og 14 hp: pas – vi spiller dem hjem."
-    },
-    {
-      "auction": [
-        [
-          "Dig",
-          "1♦"
-        ],
-        [
-          "Modstander",
-          "1♥"
-        ],
-        [
-          "Makker",
-          "X"
-        ],
-        [
-          "Modstander",
-          "Pas"
-        ],
-        [
-          "Dig",
-          "?"
-        ]
-      ],
-      "haand": {
-        "S": [
-          14,
-          10,
-          7,
-          6
-        ],
-        "H": [
-          14,
-          13,
-          2
-        ],
-        "D": [
-          14,
           12,
           10,
           6,
-          2
+          5
+        ],
+        "D": [
+          9
         ],
         "C": [
+          11,
+          10,
+          4,
+          2
+        ]
+      },
+      "svar": "X",
+      "forklaring": "4 spar og 7 hp: negativ dobling (6+)."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          8,
+          6,
+          5
+        ],
+        "H": [
+          14,
+          12,
+          11,
+          8
+        ],
+        "D": [
+          14,
+          9,
+          8,
+          7,
+          5
+        ],
+        "C": [
+          11
+        ]
+      },
+      "svar": "Pas",
+      "forklaring": "4 hjerter bag indmelderen og 12 hp: pas – vi spiller dem hjem."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "1♥"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          13,
+          5,
           4
+        ],
+        "H": [
+          5
+        ],
+        "D": [
+          14,
+          13,
+          12,
+          11,
+          3
+        ],
+        "C": [
+          11,
+          10,
+          8
         ]
       },
       "svar": "2♠",
-      "forklaring": "4 spar og 17 hp: spring til 2♠ (16–18)."
+      "forklaring": "4 spar og 18 hp: spring til 2♠ (16–18)."
     },
     {
       "auction": [
@@ -376,29 +376,29 @@
       ],
       "haand": {
         "S": [
+          14,
           13,
-          10,
-          4
+          11
         ],
         "H": [
           14,
           12,
           10,
-          9,
+          7,
           5
         ],
         "D": [
-          13,
-          9,
-          8
+          12,
+          2
         ],
         "C": [
-          13,
-          3
+          10,
+          6,
+          5
         ]
       },
       "svar": "X",
-      "forklaring": "Præcis 3 spar: støttedobling – enhver styrke (15 hp)."
+      "forklaring": "Præcis 3 spar: støttedobling – enhver styrke (16 hp)."
     },
     {
       "auction": [
@@ -417,24 +417,24 @@
       ],
       "haand": {
         "S": [
-          13,
-          12,
+          11,
           7,
-          5
+          6,
+          2
         ],
         "H": [
-          13,
-          8,
+          12,
+          9,
           2
         ],
         "D": [
-          7,
-          6
+          14,
+          11
         ],
         "C": [
           14,
           12,
-          4,
+          10,
           3
         ]
       },
@@ -458,29 +458,29 @@
       ],
       "haand": {
         "S": [
-          11,
+          13,
           10,
-          9,
-          8
+          5,
+          2
         ],
         "H": [
           13,
-          11,
-          9
+          10,
+          4
         ],
         "D": [
           13,
-          7
+          7,
+          5,
+          3
         ],
         "C": [
-          13,
-          11,
-          9,
-          2
+          10,
+          3
         ]
       },
       "svar": "2NT",
-      "forklaring": "4 spar og 13 sp: 2NT – Bekkasin (13+, 4+ trumf), gælder fortsat efter dobling."
+      "forklaring": "4 spar og 10 sp: 2NT – Truscott (10+, 4+ trumf) efter dobling."
     }
   ],
   "faldgruber": [
@@ -488,15 +488,15 @@
     "Åbner må passe den negative dobling – men kun med 4+ kort og styrke bag indmelderen.",
     "Støttedoblingen viser præcis 3 kort. Med 4 kort støttes direkte.",
     "Efter dobling af åbningen bortfalder Two over One.",
-    "2NT efter dobling er stadig Bekkasin (13+ sp, 4+ trumf). Med 3 trumf og 10+ hp redobles."
+    "2NT efter dobling er Truscott (10+ sp, 4+ trumf), ikke Bekkasin. Med 3 trumf og 10+ hp redobles."
   ],
   "aabne": [
-    "Konkurrencedoblingens intervaller for makkers svar er endnu ikke fastlagt i kilden.",
-    "10–12 sp med 4+ korts støtte efter dobling beskriver kilden ikke."
+    "Konkurrencedoblingens intervaller for makkers svar er endnu ikke fastlagt i kilden."
   ],
   "relaterede": [
     "Kravpas og Loven",
-    "Bekkasin"
+    "Bekkasin",
+    "Truscott"
   ],
   "traener": {
     "url": "traener.html?k=ff-doblinger",
