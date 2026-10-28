@@ -26,6 +26,7 @@ fitfinding
 fittet
 genmeld
 hjerterfarve
+hjerterhold
 hjertermelding
 imp
 invit
