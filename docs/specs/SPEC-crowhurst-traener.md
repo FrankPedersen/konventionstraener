@@ -71,12 +71,15 @@ Modstanderens 2♦ vises som "2♦ (Multi eller Ekren)". Kun den hånd, der skal
 | --- | --- | --- | --- |
 | `direkte` | Indmelder | `[["Modstander", "2♦"]]` | Pas, X, 2♥, 2♠, 2NT, 3♣, 3♦, 3NT, 4♣, 4♦, 4♥, 4♠, 4NT |
 | `genaabning` | Genåbner | `[["Modstander", "2♦"], ["Dig", "Pas"], ["Modstander", "2♥"], ["Makker", "Pas"], ["Modstander", "Pas"]]` | Pas, X, 2♠, 3♣, 3♦ |
-| `svar_d` | Svarer | `[["Modstander", "2♦"], ["Makker", "X"], ["Modstander", "2♥"]]` | Pas, X, 2♠, 2NT, 3♣, 3♦, 3♠ |
+| `svar_d` | Svarer | `[["Modstander", "2♦"], ["Makker", "X"], ["Modstander", "2♥"]]` | Pas, X, 2♠, 2NT, 3♣, 3♦, 3♠, 4♠ |
 | `svar_relae` | Svarer | `[["Modstander", "2♦"], ["Makker", "X"], ["Modstander", "2♥"], ["Dig", "2NT"], ["Modstander", "Pas"], ["Makker", "3♣"], ["Modstander", "Pas"]]` | Pas, 3♦, 3♥, 3♠ |
 | `dobler` | Dobler | `[["Modstander", "2♦"], ["Dig", "X"], ["Modstander", "2♥"], ["Makker", "2NT"], ["Modstander", "Pas"]]` | 3♣, 3♦, 3♥, 3♠, 3NT, 4♣ |
 | `svar_4kl` | Svarer | `[["Modstander", "2♦"], ["Makker", "4♣"], ["Modstander", "Pas"]]` | 4♦, 4♥, 4♠ |
+| `svar_d_sp` | Svarer | `[["Modstander", "2♦"], ["Makker", "X"], ["Modstander", "2♠"]]` | Pas, X, 2NT, 3♣, 3♦, 3♥, 4♥ |
+| `svar_relae_sp` | Svarer | `[["Modstander", "2♦"], ["Makker", "X"], ["Modstander", "2♠"], ["Dig", "2NT"], ["Modstander", "Pas"], ["Makker", "3♣"], ["Modstander", "Pas"]]` | Pas, 3♦, 3♥, 3♠ |
+| `svar_pas` | Svarer | `[["Modstander", "2♦"], ["Makker", "X"], ["Modstander", "Pas"]]` | Pas, 2♥, 2♠, 2NT, 3♣, 3♥, 3♠ |
 
-`direkte` og `genaabning` har `"allowX": true`, `svar_d` også (straf).
+`direkte` og `genaabning` har `"allowX": true`, `svar_d` og `svar_d_sp` også (straf).
 
 ## Regler
 
@@ -108,29 +111,41 @@ Jævn = 4-3-3-3, 4-4-3-2 eller 5-3-3-2. En jævn hånd med en 5-farve major og 1
 | 2 | 5+ i en minor, 12–16 hp | 3 i minoren |
 | 3 | ellers | Pas |
 
-**`svar_d`** (makker har 12–16 jævn eller 17+):
+**`svar_d` og `svar_d_sp`** (makker har 12–16 jævn eller 17+). M er deres major (hjerter i `svar_d`, spar i `svar_d_sp`), og A er den anden major. Over 2♠ er det samme struktur som over 2♥ med farverne byttet om (Franks valg 28. oktober 2026):
 
 | # | Hånd | Svar |
 | --- | --- | --- |
-| 1 | 4+ hjerter og `STRAF_HP` | X |
-| 2 | 5+ spar og `KRAV_HP` | 3♠ |
-| 3 | 5+ i en minor og `INVIT_HP` | 3 i minoren |
-| 4 | 5 spar og `INVIT_HP` | 2NT (for at invitere med 3♠ efter 3♣) |
-| 5 | `INVIT_HP`, højst 4 spar og ingen 5+ minor | 2NT (for at invitere til 3NT med 3♥ efter 3♣) |
-| 6 | 4+ spar og højst `SVAG_HP` | 2♠ |
-| 7 | 5+ i en minor og højst `SVAG_HP` | 2NT (for at spille 3♣ eller 3♦) |
-| 8 | ellers, højst `SVAG_HP` | Pas |
+| 1 | 4+ i M og `STRAF_HP` | X |
+| 2 | 6+ i A og `KRAV_HP` | 4A (for at spille) |
+| 3 | 5 i A og `KRAV_HP` | 3A (krav) |
+| 4 | 5+ i en minor og `INVIT_HP` | 3 i minoren |
+| 5 | 5+ i A og `INVIT_HP` | 2NT (for at invitere med 3A efter 3♣) |
+| 6 | `INVIT_HP`, højst 4 i A og ingen 5+ minor | 2NT (for at invitere til 3NT med 3M efter 3♣) |
+| 7 | over 2♥: 4+ spar og højst `SVAG_HP` | 2♠ |
+| 8 | 5+ i en minor og højst `SVAG_HP` | 2NT (for at spille 3♣ eller 3♦) |
+| 9 | ellers, højst `SVAG_HP` | Pas |
 
-**`svar_relae`** (efter 2NT – 3♣):
+**`svar_relae` og `svar_relae_sp`** (efter 2NT – 3♣):
 
 | # | Hånd | Svar |
 | --- | --- | --- |
-| 1 | 5 spar og `INVIT_HP` | 3♠ |
-| 2 | `INVIT_HP`, højst 4 spar og ingen 5+ minor | 3♥ (invit til 3NT, beder om hjerterhold) |
+| 1 | 5+ i A og `INVIT_HP` | 3A (invit med 5+ kort) |
+| 2 | `INVIT_HP`, højst 4 i A og ingen 5+ minor | 3M (holdspørgsmål til 3NT) |
 | 3 | 5+ ruder og højst `SVAG_HP` | 3♦ |
 | 4 | 5+ klør og højst `SVAG_HP` | Pas |
 
-3♥ kan ikke være naturlig, fordi svareren dobler 2♥ for straf med 4+ hjerter (Franks valg 27. oktober 2026).
+3 i deres major kan ikke være naturlig, fordi svareren dobler for straf med 4+ kort i den (Franks valg 27. oktober 2026).
+
+**`svar_pas`** (efter (2♦) – X – (pas); Franks valg 28. oktober 2026 med Claude Codes grænser, Afklaret 19):
+
+| # | Hånd | Svar |
+| --- | --- | --- |
+| 1 | `RUDER_STRAF`+ ruder og højst `STRAF_HP[1]` hp | Pas (straf med lange ruder) |
+| 2 | 5+ spar, hjerter eller klør og `KRAV_HP` | 3 i farven (krav) |
+| 3 | 4+ i en major og højst `SVAG_HP` | 2 i majoren (for at spille) |
+| 4 | 5+ klør og højst `SVAG_HP` | 2NT (Lebensohl; for at spille 3♣) |
+
+Har hånden to lige lange farver, der begge passer i regel 2 eller 3, kommer den ikke med i puljen. Hænder, som reglerne over pas ikke nævner (fx en invit med 8–11 hp uden lange ruder), kommer heller ikke med.
 
 **`dobler`** (dobleren efter makkers Lebensohl-2NT; hånden har doblet efter reglerne for `direkte`):
 
@@ -166,10 +181,11 @@ MAJOR_4M_KVALITET = 2        # 4M: mindst 2 af E, K, D i farven
 MINOR_3NT_HP = (16, 19)      # 3NT: "typisk minorlængde/styrke"
 MINOR_3NT_KVALITET = 2       # 3NT: mindst 2 af E, K, D i minoren
 MINOR_KVALITET = 2           # 3♣/3♦: mindst 2 af E, K, D, ellers 6+ kort; ellers "tvivlsom" → pas
-STRAF_HP = (8, 15)           # svar_d: X straf med 4+ hjerter
-SVAG_HP = 7                  # svar_d og svar_relae: højst 7 hp er svag
+STRAF_HP = (8, 15)           # svar_d: X straf med 4+ i deres major
+SVAG_HP = 7                  # svar_d, svar_relae og svar_pas: højst 7 hp er svag
 INVIT_HP = (8, 11)           # svar_d: konstruktiv invit
-KRAV_HP = (12, 17)           # svar_d: 3♠ krav
+KRAV_HP = (12, 17)           # svar_d: 3 i den anden major krav (4 med 6+); svar_pas: ny farve på 3-trinnet krav
+RUDER_STRAF = 5              # svar_pas: pas er straf med 5+ ruder og højst STRAF_HP[1] hp
 SLEM_HP = (14, 20)           # svar_4kl: krav (4♦/4♠) med sleminteresse
 DOBLER_HP_MAX = 22           # dobler: stærkere hænder genereres ikke
 # dobler: hjerterhold er es, konge med 1+ kort til, dame med 2+ eller knægt med 3+ (laveste længde for hver honnør)
@@ -190,8 +206,11 @@ Hver situation får ét bonusspørgsmål, skiftevis blandt disse:
 | Hvad viser 4NT efter (2♦) – 4♣? | Esspørgsmål med 6 esser | Begge minorer · For at spille |
 | Hvad gør dobleren efter makkers 2NT med 17+? | Bryder i stedet for at melde 3♣ | Melder 3♣ og passer bagefter · Melder altid 3NT |
 | Hvad viser svarerens 3♥ efter 2NT – 3♣? | Invit til 3NT, beder om hjerterhold | Naturligt med 5 hjerter · Krav til udgang |
+| Hvad viser svarerens X i (2♦) – X – (2♠)? | Straf med 4+ spar | Oplysning med hjerter · 12+ uden farve |
+| Hvad viser svarerens 3♠ i (2♦) – X – (2♠) – 2NT – 3♣? | Invit til 3NT, beder om sparhold | Naturligt med 5 spar · Krav til udgang |
+| Hvad viser svarerens pas i (2♦) – X – (pas)? | Straf med lange ruder | Svag hånd uden farve · Venter på makkers næste melding |
 
-`dobler` spørger om dobleren efter 2NT, og `svar_relae` om svarerens 3♥.
+`dobler` spørger om dobleren efter 2NT, `svar_relae` om svarerens 3♥, `svar_d_sp` om X over 2♠, `svar_relae_sp` om 3♠ efter 2NT – 3♣ over 2♠ og `svar_pas` om pas. Forklaringen til 4NT-spørgsmålet nævner svarene (Afklaret 18).
 
 ## Post i data/konventioner.json
 
@@ -254,3 +273,19 @@ Franks valg 27. oktober 2026 (grenen `crowhurst-dobler`, appen før er tagget `v
 
 16. **Dobleren efter (2♦) – X – (2♥) – 2NT – (pas):** 3♣ = 12–16 jævn, 3♦ = 5+ ruder og 17+ (krav), 3♥ = 17+ uden egen farve og beder om hjerterhold, 3♠ = 5+ spar og 17+ (krav), 3NT = 20–21 jævn med hjerterhold, 4♣ = 5+ klør og 17+. **Svarerens 3♥ efter 2NT – 3♣** er invit til 3NT og beder om hjerterhold; den kan ikke være naturlig, fordi svareren dobler 2♥ for straf med 4+ hjerter. Rollen Dobler (punkt 7) og 3♥ (punkt 6) er dermed med i træneren. Det står ikke i kilden og er markeret som Franks valg på kortet.
 17. **Claude Codes valg til punkt 16:** hjerterhold er es, konge med mindst ét kort til, dame med mindst to eller knægt med mindst tre. To lige lange 5-farver blandt spar, ruder og klør, en hånd med 17+ og 5+ hjerter, der ikke er jævn, og en jævn hånd med 22+ kommer ikke med i puljen. Svarerens invit uden farve (8–11 hp, højst 4 spar, ingen 5+ minor og højst 3 hjerter, da 4+ hjerter dobler) går over 2NT og melder 3♥ efter 3♣; en invit med 6+ spar beskriver reglerne stadig ikke. Puljen er bygget igen, kortets eksempler er hentet fra den nye pulje, og kortet har fået et eksempel på svarerens 3♥ og et på doblerens 3♥. "hjerterhold" står i ordlisten.
+
+Franks valg 28. oktober 2026 (grenen `crowhurst-dobler`, appen før er tagget `v-foer-crowhurst-svar`):
+
+18. **Svarerens meldinger efter doblingen og svarene på 4NT:**
+    - **Over (2♠)** gælder samme struktur som over (2♥) med farverne byttet om: X er straf med 4+ spar, 2NT er Lebensohl, 3♥ er krav med 5+ hjerter, og 3♣/3♦ er konstruktive og invit.
+    - **Over pas** er 2♥/2♠ for at spille, 2NT Lebensohl, nye farver på 3-trinnet krav og pas straf med lange ruder.
+    - **Efter 2NT – 3♣** er 3 i modpartens major et holdspørgsmål til 3NT, og 3 i den anden major er invit med 5+ kort.
+    - **4NT med 6 esser** besvares som RKC 1430: 5♣ = 1/4, 5♦ = 0/3/6, 5♥ = 2/5 uden trumfdame og 5♠ = 2/5 med trumfdame.
+    - **Invit med 6+ spar** går også over 2NT – 3♣ – 3♠: reglen er "5+ spar og `INVIT_HP`", og hænderne er med i træneren. Med 6+ spar og udgangsstyrke melder svareren 4♠ direkte.
+
+    Kortets tre åbne spørgsmål er dermed besvaret og fjernet: svarers 2♠ og pas efter doblingen, "3 i major" og svarene på 4NT. Situationerne `svar_d_sp`, `svar_relae_sp` og `svar_pas` er nye, og `svar_d` har 4♠.
+19. **Claude Codes valg til punkt 18:**
+    - Over 2♠ melder svareren 4♥ med 6+ hjerter og udgangsstyrke (`KRAV_HP`), som 4♠ over 2♥. En svag hånd med hjerter har ingen 2♥ at melde og passer.
+    - Over pas: pas er straf med 5+ ruder (`RUDER_STRAF`) og højst 15 hp (`STRAF_HP[1]`), uden nedre grænse. 2♥/2♠ er svage (højst `SVAG_HP`) med 4+ kort, nye farver på 3-trinnet har 5+ kort og `KRAV_HP`, og 2NT er en svag hånd med 5+ klør, der vil spille 3♣. To lige lange farver og hænder, reglerne ikke nævner (fx en invit med 8–11 hp), er ikke med i puljen.
+    - 4NT-svarene står på kortet og i forklaringen til bonusspørgsmålet om 4NT, men ikke som en situation med hænder, fordi trumfen ikke er aftalt, når 4NT meldes direkte over 4♣. Den situation kan bygges, når det er afgjort, hvilken dame der er trumfdamen.
+    - Puljen er bygget igen (492 hænder), kortets eksempler er hentet fra den nye pulje, og kortet har to nye eksempler: X over 2♠ og pas over pas.

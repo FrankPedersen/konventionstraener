@@ -22,7 +22,7 @@
     "tekst": "Modparten åbner 2♦ som Multi (svag 2 i en ukendt major) eller Ekren (begge majorer), og du melder direkte efter åbneren.",
     "gaelderFor": "Modpartens 2♦-åbning, når den er Multi eller Ekren"
   },
-  "kortfortalt": "Dobling viser 12–16 jævn eller 17+, og farvemeldingerne er naturlige med 12–16. Dobler makker, og svarer melder 2♥, bruges Lebensohl: 2NT beder om 3♣.",
+  "kortfortalt": "Dobling viser 12–16 jævn eller 17+, og farvemeldingerne er naturlige med 12–16. Dobler makker, bruges Lebensohl: 2NT beder om 3♣, både over deres 2♥, deres 2♠ og pas.",
   "meldinger": [
     {
       "bud": "X",
@@ -159,13 +159,108 @@
           "viser": "Konstruktiv, invit"
         },
         {
-          "bud": "3 i major",
+          "bud": "3♠",
           "noegle": "bla",
-          "viser": "5+ farve",
+          "viser": "5+ spar",
+          "krav": "Krav"
+        },
+        {
+          "bud": "4♠",
+          "noegle": "gron",
+          "viser": "6+ spar og udgangsstyrke, for at spille"
+        }
+      ],
+      "note": "Makker melder 3♣ efter 2NT, men bryder med 17+ (se Dobleren efter 2NT). 4♠ og invitten med 6+ spar over 2NT: Franks valg 28. oktober 2026; står ikke i kilden."
+    },
+    {
+      "titel": "Svarer efter makkers dobling og deres 2♠",
+      "auction": [
+        [
+          "Modstander",
+          "2♦"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "2♠"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "X",
+          "noegle": "brun",
+          "viser": "Straf med 4+ spar"
+        },
+        {
+          "bud": "2NT",
+          "noegle": "gul",
+          "viser": "Lebensohl: beder om 3♣"
+        },
+        {
+          "bud": "3♣ / 3♦",
+          "noegle": "gron",
+          "viser": "Konstruktiv, invit"
+        },
+        {
+          "bud": "3♥",
+          "noegle": "bla",
+          "viser": "5+ hjerter",
           "krav": "Krav"
         }
       ],
-      "note": "Makker melder 3♣ efter 2NT, men bryder med 17+ (se Dobleren efter 2NT)."
+      "note": "Samme struktur som over 2♥ med farverne byttet om. Franks valg 28. oktober 2026; står ikke i kilden."
+    },
+    {
+      "titel": "Svarer efter makkers dobling og deres pas",
+      "auction": [
+        [
+          "Modstander",
+          "2♦"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "2♥ / 2♠",
+          "noegle": "gron",
+          "viser": "For at spille"
+        },
+        {
+          "bud": "2NT",
+          "noegle": "gul",
+          "viser": "Lebensohl: beder om 3♣"
+        },
+        {
+          "bud": "Ny farve på 3-trinnet",
+          "noegle": "bla",
+          "viser": "Naturligt",
+          "krav": "Krav"
+        },
+        {
+          "bud": "Pas",
+          "noegle": "brun",
+          "viser": "Straf med lange ruder"
+        }
+      ],
+      "note": "Franks valg 28. oktober 2026; står ikke i kilden."
     },
     {
       "titel": "Svarer efter 2NT – 3♣",
@@ -210,17 +305,17 @@
           "viser": "Svag hånd med minorfarven"
         },
         {
-          "bud": "3♥",
+          "bud": "3 i deres major",
           "noegle": "gul",
-          "viser": "Invit til 3NT, beder om hjerterhold"
+          "viser": "Holdspørgsmål til 3NT (3♥ over 2♥, 3♠ over 2♠)"
         },
         {
-          "bud": "3♠",
+          "bud": "3 i den anden major",
           "noegle": "gron",
-          "viser": "Invit med 5-farve"
+          "viser": "Invit med 5+ kort"
         }
       ],
-      "note": "3♥ kan ikke være naturlig, fordi svarer dobler 2♥ for straf med 4+ hjerter. Franks valg 27. oktober 2026; står ikke i kilden."
+      "note": "3 i deres major kan ikke være naturlig, fordi svarer dobler for straf med 4+ kort i den. Franks valg 27. og 28. oktober 2026; står ikke i kilden."
     },
     {
       "titel": "Dobleren efter 2NT",
@@ -332,6 +427,58 @@
       "note": "6 esser er normalt de fire esser og kongerne i hjerter og klør."
     },
     {
+      "titel": "Svar på 4NT med 6 esser",
+      "auction": [
+        [
+          "Modstander",
+          "2♦"
+        ],
+        [
+          "Dig",
+          "4♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "4NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "5♣",
+          "noegle": "gul",
+          "viser": "1 eller 4 esser"
+        },
+        {
+          "bud": "5♦",
+          "noegle": "gul",
+          "viser": "0, 3 eller 6 esser"
+        },
+        {
+          "bud": "5♥",
+          "noegle": "gul",
+          "viser": "2 eller 5 esser uden trumfdame"
+        },
+        {
+          "bud": "5♠",
+          "noegle": "gul",
+          "viser": "2 eller 5 esser med trumfdame"
+        }
+      ],
+      "note": "Som RKC 1430. Franks valg 28. oktober 2026; står ikke i kilden."
+    },
+    {
       "titel": "Svarer efter 4♦",
       "auction": [
         [
@@ -375,29 +522,29 @@
       ],
       "haand": {
         "S": [
-          14,
-          13
+          12,
+          9,
+          6
         ],
         "H": [
-          13,
-          7,
-          3
+          14,
+          12,
+          2
         ],
         "D": [
-          13,
-          7,
-          5
-        ],
-        "C": [
-          11,
+          14,
           9,
           7,
-          4,
+          6,
           3
+        ],
+        "C": [
+          14,
+          7
         ]
       },
       "svar": "X",
-      "forklaring": "14 hp og jævn: X – 12–16 jævn eller 17+."
+      "forklaring": "16 hp og jævn: X – 12–16 jævn eller 17+."
     },
     {
       "auction": [
@@ -411,29 +558,29 @@
         ]
       ],
       "haand": {
-        "S": [
-          11,
-          6
-        ],
+        "S": [],
         "H": [
           13,
-          9,
-          7,
-          3,
+          12,
+          10,
+          5,
+          4,
           2
         ],
-        "D": [],
+        "D": [
+          7
+        ],
         "C": [
-          14,
           13,
+          12,
           10,
           8,
-          5,
-          2
+          4,
+          3
         ]
       },
       "svar": "4♣",
-      "forklaring": "5 hjerter, 6 klør og 11 hp: 4♣ – 5+ hjerter og 5+ klør."
+      "forklaring": "6 hjerter, 6 klør og 10 hp: 4♣ – 5+ hjerter og 5+ klør."
     },
     {
       "auction": [
@@ -464,23 +611,23 @@
       ],
       "haand": {
         "S": [
-          14,
+          13,
           11,
-          8,
-          3
+          7,
+          6
         ],
         "H": [],
         "D": [
-          13,
-          8,
-          7,
-          6,
-          3
-        ],
-        "C": [
           14,
           13,
-          9,
+          10,
+          7
+        ],
+        "C": [
+          12,
+          10,
+          8,
+          3,
           2
         ]
       },
@@ -508,29 +655,29 @@
       ],
       "haand": {
         "S": [
-          14,
-          12,
+          13,
+          9,
           8,
-          5,
-          2
+          7,
+          6,
+          5
         ],
         "H": [
-          9
+          14,
+          10,
+          8
         ],
         "D": [
-          12,
-          5,
-          2
+          4
         ],
         "C": [
-          12,
-          7,
-          5,
-          3
+          11,
+          6,
+          4
         ]
       },
       "svar": "2NT",
-      "forklaring": "5 spar og 10 hp: 2NT – Lebensohl; efter makkers 3♣ inviterer du med 3♠."
+      "forklaring": "6 spar og 8 hp: 2NT – Lebensohl; efter makkers 3♣ inviterer du med 3♠."
     },
     {
       "auction": [
@@ -553,29 +700,29 @@
       ],
       "haand": {
         "S": [
-          13,
-          11,
-          9,
-          7
+          12,
+          8,
+          7,
+          4
         ],
         "H": [
-          10,
-          8,
-          3
+          14,
+          3,
+          2
         ],
         "D": [
           14,
-          12,
-          9,
-          5
+          13,
+          11,
+          8,
+          7
         ],
         "C": [
-          14,
-          10
+          14
         ]
       },
       "svar": "4♦",
-      "forklaring": "3 hjerter og 14 hp: 4♦ – krav med hjerter som trumf."
+      "forklaring": "3 hjerter og 18 hp: 4♦ – krav med hjerter som trumf."
     },
     {
       "auction": [
@@ -614,29 +761,29 @@
       ],
       "haand": {
         "S": [
-          11,
-          6,
-          2
+          12,
+          9
         ],
         "H": [
-          14,
+          12,
           11,
-          8
+          10
         ],
         "D": [
-          7,
-          5,
-          4
+          12,
+          11,
+          9,
+          6
         ],
         "C": [
-          13,
           11,
-          5,
+          10,
+          3,
           2
         ]
       },
       "svar": "3♥",
-      "forklaring": "10 hp uden 5-farve: 3♥ – invit til 3NT, beder om hjerterhold. Med 4+ hjerter havde du doblet 2♥."
+      "forklaring": "9 hp uden 5-farve: 3♥ – invit til 3NT, beder om hjerterhold. Med 4+ hjerter havde du doblet 2♥."
     },
     {
       "auction": [
@@ -667,29 +814,119 @@
       ],
       "haand": {
         "S": [
-          4
-        ],
-        "H": [
           14,
           13,
-          10,
-          8
+          12,
+          9
+        ],
+        "H": [
+          12,
+          5,
+          3,
+          2
         ],
         "D": [
-          14,
-          11,
-          8,
-          7
+          12
         ],
         "C": [
           14,
-          11,
-          4,
-          3
+          10,
+          9,
+          2
         ]
       },
       "svar": "3♥",
       "forklaring": "17 hp uden egen farve: 3♥ – 17+ uden egen farve; beder om hjerterhold."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "2♦"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "2♠"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          11,
+          10,
+          6,
+          2
+        ],
+        "H": [
+          11
+        ],
+        "D": [
+          14,
+          12,
+          7
+        ],
+        "C": [
+          13,
+          8,
+          7,
+          4
+        ]
+      },
+      "svar": "X",
+      "forklaring": "5 spar og 14 hp: X – straf."
+    },
+    {
+      "auction": [
+        [
+          "Modstander",
+          "2♦"
+        ],
+        [
+          "Makker",
+          "X"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          7,
+          6,
+          3
+        ],
+        "H": [
+          12,
+          2
+        ],
+        "D": [
+          14,
+          13,
+          10,
+          9,
+          6
+        ],
+        "C": [
+          14,
+          11,
+          5
+        ]
+      },
+      "svar": "Pas",
+      "forklaring": "5 ruder og 14 hp: pas – straf med lange ruder."
     }
   ],
   "faldgruber": [
@@ -697,11 +934,7 @@
     "Pas i første runde er ikke altid svagt: med en tvivlsom minor eller en trefarvet hånd kommer man igen.",
     "Efter makkers dobling og deres 2♥ er 2NT ikke naturlig. En svag hånd med en minor går over 2NT; 3♣ og 3♦ direkte er invit."
   ],
-  "aabne": [
-    "Kilden beskriver kun svarers 2♥ efter doblingen, ikke 2♠ eller pas.",
-    "3 i major efter doblingen skelner ikke mellem hjerter og spar, selv om svarers 2♥ kan være pas eller ret.",
-    "Svarene på 4NT med 6 esser står ikke i kilden."
-  ],
+  "aabne": [],
   "relaterede": [
     "Lebensohl",
     "Stayman"
