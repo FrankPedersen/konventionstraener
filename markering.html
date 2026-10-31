@@ -287,7 +287,7 @@ function renderDone(){
     <div class="done">
       <p class="qtext">${T('Du klarede', 'You got')}</p>
       <div class="score">${score} / ${Q.length}</div>
-      <p>${score === Q.length ? T('Markeringerne sidder.', 'The signals have stuck.') : T('Gennemgå forklaringerne igen, og prøv en gang til.', 'Go through the explanations again and have another go.')}</p>
+      <p>${score === Q.length ? T('Markeringerne sidder.', 'The signals have stuck.') : T('Du kan gennemgå forklaringerne igen og prøve en gang til.', 'You can go through the explanations again and have another go.')}</p>
       <div class="actions">
         <button class="btn primary" id="restartBtn">${T('Ny omgang', 'New round')}</button>
         <a class="btn" href="${backLink}">${T('Vælg konvention', 'Choose a convention')}</a>
@@ -336,8 +336,8 @@ Promise.all(['data/konventioner.json', 'data/systemer.json'].map(u => fetch(u).t
   })
   .catch(e => fail(e.message === 'ukendt'
     ? T('Den træner findes ikke – eller den er ikke klar endnu.', 'That trainer does not exist – or it is not ready yet.')
-    : T('Kunne ikke hente hånd-puljen. Åbn siden via GitHub Pages eller en lokal webserver — ikke direkte som fil.',
-        'Could not load the hand pool. Open the page via GitHub Pages or a local web server — not directly as a file.')));
+    : T('Kunne ikke hente hånd-puljen. Siden skal åbnes via GitHub Pages eller en lokal webserver – ikke direkte som fil.',
+        'Could not load the hand pool. The page must be opened via GitHub Pages or a local web server – not directly as a file.')));
 </script>
 <footer id="sidefod"></footer>
 <script src="assets/footer.js"></script>

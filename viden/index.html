@@ -41,7 +41,7 @@ Promise.all(['../data/systemer.json', '../data/viden.json'].map(u => fetch(u).th
       <div class="tiles">${s.docs.map(tile).join('')}</div>`).join('');
   })
   .catch(() => {
-    document.getElementById('docs').innerHTML = `<p class="small">${T('Kunne ikke hente listen. Åbn siden via GitHub Pages eller en lokal webserver.', 'Could not load the list. Open the page via GitHub Pages or a local web server.')}</p>`;
+    document.getElementById('docs').innerHTML = `<p class="small">${T('Kunne ikke hente listen. Siden skal åbnes via GitHub Pages eller en lokal webserver.', 'Could not load the list. The page must be opened via GitHub Pages or a local web server.')}</p>`;
   });
 </script>
 <footer id="sidefod"></footer>

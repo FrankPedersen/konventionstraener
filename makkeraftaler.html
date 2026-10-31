@@ -110,7 +110,7 @@ Promise.all(['data/systemer.json', 'data/viden.json', 'data/konventioner.json', 
     if (location.hash) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
   })
   .catch(() => {
-    document.getElementById('makkere').innerHTML = `<p class="small">${T('Kunne ikke hente makkeraftalerne. Åbn siden via GitHub Pages eller en lokal webserver.', 'Could not load the partnership agreements. Open the page via GitHub Pages or a local web server.')}</p>`;
+    document.getElementById('makkere').innerHTML = `<p class="small">${T('Kunne ikke hente makkeraftalerne. Siden skal åbnes via GitHub Pages eller en lokal webserver.', 'Could not load the partnership agreements. The page must be opened via GitHub Pages or a local web server.')}</p>`;
   });
 </script>
 </body>

@@ -8,3 +8,4 @@ Konventionstrænerens specer. De ligger på GitHub, men ikke på www.kontraktbri
 - [SPEC-sprog-og-ordbog.md](SPEC-sprog-og-ordbog.md) – husets fagord, stavekontrollen og linket til Bridgeordbog; fælles for de tre repoer (22. oktober 2026).
 - [SPEC-crowhurst-traener.md](SPEC-crowhurst-traener.md) – Forsvar mod Multi 2♦ (Crowhurst): konventionskort og træner (23. oktober 2026).
 - [SPEC-skrifttyper-fast.md](SPEC-skrifttyper-fast.md) – `tools/tjek_skrifttyper.mjs` som fast test af skrifttyperne uden pixelsammenligning med `v-foer-skrifttyper` (28. oktober 2026).
+- [SPEC-beskrivende-form.md](SPEC-beskrivende-form.md) – instruktioner og forklaringer i beskrivende form på forsiden, i trænerne og i trænerbeskrivelserne, og testen `tools/tjek_bydeform.py`; listen står i `docs/beskrivende-form.md` (31. oktober 2026).

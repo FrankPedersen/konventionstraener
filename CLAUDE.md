@@ -28,6 +28,7 @@ Et kort har samme `id` som konventionen i `data/konventioner.json`, når der fin
 ## Sprog og fagord
 
 - Husets fagord står i `../CLAUDE.md` (specen er `docs/specs/SPEC-sprog-og-ordbog.md`). Kør `python3 tools/tjek_fagord.py` efter tekstændringer; den skal melde "i orden". `python3 tools/tjek_sprog.py` er specens accepttest.
+- Beskrivende form (`../CLAUDE.md`; `docs/specs/SPEC-beskrivende-form.md`, listen med de gamle og nye tekster i `docs/beskrivende-form.md`): `python3 tools/tjek_bydeform.py` fejler, hvis en dansk instruktion eller forklaring begynder med et udsagnsord i bydeform. Knapper, links og navne står på testens `UNDTAGELSER`; en ny knap i bydeform kommer på listen. Konventionskortene, puljerne, `dealer/` og systemdokumenterne i `viden/` følger kilderne, og testen springer dem over.
 - Stavekontrol med hånden før udgivelse: `python3 tools/sprogtjek.py` (kræver `pip install spylls`; den danske ordbog hentes første gang). Rigtige ord, som hunspell ikke kender, står i `tools/ordliste.txt`; stavefejl rettes i teksten.
 
 ## Vedligeholdelse
