@@ -107,7 +107,8 @@ function renderTrainers(){
 Promise.all(['data/konventioner.json', 'data/emner.json'].map(u => fetch(u).then(r => r.json())))
   .then(([conventions, parts]) => {
     // Kun konventioner med et system vises; kamp-landy har intet system og vises ikke, som før
-    SHOWN = L(conventions).filter(k => systemsOf(k).length);
+    // En fravalgt træner (revers, fravalgt i Makker 2-systemet) står ikke på Træn; siden og kortet findes stadig.
+    SHOWN = L(conventions).filter(k => systemsOf(k).length && !k.fravalgt);
     const known = new Set();
     PARTS = L(parts).map(p => ({ ...p, emner: p.emner.map(e => (known.add(e.id), { ...e, match: k => k.emne === e.id })) }));
     // En konvention uden et kendt emne står under en sidste del, så den aldrig forsvinder

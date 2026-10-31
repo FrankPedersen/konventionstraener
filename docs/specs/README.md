@@ -9,3 +9,4 @@ Konventionstrænerens specer. De ligger på GitHub, men ikke på www.kontraktbri
 - [SPEC-crowhurst-traener.md](SPEC-crowhurst-traener.md) – Forsvar mod Multi 2♦ (Crowhurst): konventionskort og træner (23. oktober 2026).
 - [SPEC-skrifttyper-fast.md](SPEC-skrifttyper-fast.md) – `tools/tjek_skrifttyper.mjs` som fast test af skrifttyperne uden pixelsammenligning med `v-foer-skrifttyper` (28. oktober 2026).
 - [SPEC-beskrivende-form.md](SPEC-beskrivende-form.md) – instruktioner og forklaringer i beskrivende form på forsiden, i trænerne og i trænerbeskrivelserne, og testen `tools/tjek_bydeform.py`; listen står i `docs/beskrivende-form.md` (31. oktober 2026).
+- [SPEC-makker2-aftaler.md](SPEC-makker2-aftaler.md) – to Makker 2-aftaler: ny højere farve på 2-trinnet 12–15 og spring 16+ (krav i én runde), 3♠ efter 1♥ – 1NT, revers fravalgt og taget af Træn, og svarene på makkers konkurrencedobling (31. oktober 2026).
