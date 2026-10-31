@@ -43,6 +43,7 @@ Det lukker de to Makker 2-punkter, der stod åbne: "foreløbig – bekræftes" (
 - [x] Konkurrencedoblingens svar (0–7 hp laveste farve, 8–11 hp spring i farven, 12+ hp cuebid) står i afsnit 17 og på kortet `ff-doblinger`, og det åbne spørgsmål er væk begge steder.
 - [x] `tjek_makker2_aftaler.py`, `tjek_konventionskort.py`, `tjek_kort_eksempler.py`, `tjek_fagord.py`, `tjek_sprog.py`, `tjek_bydeform.py`, `tjek_crowhurst.py`, `tjek_skrifttyper.py`, `tjek_skrifttyper.mjs` og `sprogtjek.py` består.
 - [x] SPEC-konventionskort (punkt 37 og 40) og `../SYSTEM.md` er opdateret.
+- [x] Flettet ind på `main` efter Franks godkendelse og udgivet.
 
 ## Afklaret
 
