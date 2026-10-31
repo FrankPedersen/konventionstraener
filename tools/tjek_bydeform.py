@@ -63,21 +63,6 @@ UNDTAGELSER = [
     re.compile(r'^Svar på 4NT\b'),
 ]
 
-# Fundet, da testen blev skrevet, og venter på Franks svar. K2's godkendte "Ingen træner passer på ordet." gentager
-# overskriften "Ingen trænere passer" (forslag i docs/beskrivende-form.md, Tillæg).
-VENTER = [
-    'Prøv et andet ord.',
-    # Overskriften over metodevalget i traener.html, når konventionen ikke har sit eget spørgsmål (forslag: "Hvilken
-    # metode spiller I?" som konventionernes "Hvilket forsvar mod 1NT spiller I?").
-    'Vælg metode',
-    # Trænernes slutskærm (traener.html, markering.html, multi-svar-traener.html) og tre beskrivelser i
-    # data/konventioner.json (ff-genaabning, kamp-gif, kamp-2020).
-    'Gennemgå forklaringerne igen, og prøv en gang til.',
-    'Lån ca. 3 hp af makker',
-    'Lån 3–4 hp på ujævne hænder',
-    'Sælg ikke ud under 2♠, når de har fundet tilpasning – og meld efter trumfreglen og zonen, når I selv kæmper videre.',
-]
-
 # Sætninger, der begynder med et af ordene, men ikke er bydeform: "spring" og "hold" som navneord.
 FALSKE_TRÆF = [
     re.compile(r'^Spring i ny farve er\b', re.I),
@@ -103,7 +88,7 @@ def undtaget(tekst):
 
 def bydeform(tekst):
     """Sætningerne i en dansk tekst, der begynder med et udsagnsord i bydeform, også efter kolon og semikolon. Knapper,
-    links og navne på undtagelseslisten, ventelisten og de falske træf tæller ikke."""
+    links og navne på undtagelseslisten og de falske træf tæller ikke."""
     if undtaget(tekst):
         return []
     ud = []
@@ -116,7 +101,7 @@ def bydeform(tekst):
         # Et ord med store bogstaver er en forkortelse (ØV, NS), ikke et udsagnsord.
         if not første or første.group(0).lower() not in BYDEFORMER or første.group(0).isupper():
             continue
-        if undtaget(s) or s in VENTER or any(r.search(led.strip()) or r.search(s) for r in FALSKE_TRÆF):
+        if undtaget(s) or any(r.search(led.strip()) or r.search(s) for r in FALSKE_TRÆF):
             continue
         ud.append(s)
     return ud
@@ -192,9 +177,6 @@ def main():
     for f, stykker in alle:
         for stykke in stykker:
             fejl += [f'{f}: {s[:120]}' for s in bydeform(stykke)]
-    # Når Frank har svaret, og en tekst er rettet, skal den af ventelisten.
-    står = {PREFIX.sub('', led).strip() for _, stykker in alle for stykke in stykker for led in SPLIT.split(stykke)}
-    fejl += [f'ventelisten: "{v}" står ikke længere i teksten' for v in VENTER if v not in står]
     if fejl:
         print('\n'.join(fejl))
         print(f'{len(fejl)} steder er i bydeform.')

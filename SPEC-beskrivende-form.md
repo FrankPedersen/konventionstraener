@@ -32,9 +32,16 @@ Kun ordlyd i dansk og engelsk tekst. Ingen ændringer i logik, data eller layout
 - [x] `python3 tools/tjek_bydeform.py`, `tjek_fagord.py`, `tjek_konventionskort.py` og `tjek_sprog.py` består.
 - [x] Et skærmbillede af konventionstrænerens forside ligger i `C:\Users\frank\Kontraktbridge\skaermbilleder\beskrivende-form\`.
 
+Efter Franks svar på listens Tillæg (31. oktober 2026):
+
+- [ ] T1–T4 står i beskrivende form på dansk og engelsk: søgningens besked uden træf, overskriften over metodevalget, trænernes slutskærm og de tre trænerbeskrivelser.
+- [ ] Testens venteliste er væk, så `tjek_bydeform.py` fejler på alle nye bydeformer, og den og de øvrige tests består.
+- [ ] Flettet og udgivet efter forsiden; de udgivne sider er tjekket.
+
 ## Afklaret
 
 1. **Reglen** er Franks valg 30. oktober 2026; den står i `../CLAUDE.md`.
 2. **Konventionskortenes meldinger og forklaringer følger kilderne** (Franks ord 30. oktober 2026); de står under Til afgørelse.
 3. **Listen er godkendt** (Frank, 30. oktober 2026): K1–K6 og A5 som foreslået; A2–A4 bliver, og testen springer dem over; A6 "Konventioner, der sidder på rygraden". K2's "Prøv et andet ord." er ikke rettet, fordi det godkendte forslag gentager overskriften; det står i listens Tillæg.
-4. **Venteliste:** tekster, testen fandt, og som ikke stod på listen, står i listens Tillæg og på testens `VENTER`, til Frank har svaret.
+4. **Venteliste:** tekster, testen fandt, og som ikke stod på listen, stod i listens Tillæg og på testens `VENTER`, til Frank havde svaret.
+5. **Tillægget er godkendt** (Frank, 31. oktober 2026): T1 "Et andet ord giver måske et træf.", T2 "Hvilken metode spiller I?" og T3 som foreslået. T4: "Lån …" og "Sælg ikke ud …" skulle blive som navne, hvis de var titler fra kildebogen. Det er de ikke: kapitlerne hedder "15c · Genåbning i 4. hånd", "4. 20-20-situationer" og "7. GIF — genåbning i fjerde hånd", og "Sælg 'aldrig' ud under 2♠ …" er en regel i bogens liste. De tre beskrivelser skrives derfor om; kortenes undertitler følger kilderne (A2) og bliver. Den engelske overskrift "Conventions that become second nature" er godkendt. Ventelisten fjernes. Når alle tests i de tre repoer er grønne, er fletningen godkendt; konventionstræneren udgives efter forsiden.
