@@ -26,12 +26,12 @@ Fordelingstræneren får et bredt layout fra 1000 px efter **bud A · Bordet til
 
 `node tools/tjek_bred_multi.mjs` (Chrome uden vindue; siden før vises fra tagget med `git show`):
 
-- [ ] Ved 1280 px står hånden til venstre og meldingerne til højre for den, og toppene flugter; hånden er 420 px.
-- [ ] Ved 1280 px står meldekassen og forklaringen i højre spalte, og indholdet er højst 1120 px bredt i midten.
-- [ ] Ved 1280 px står hånden fast, når der rulles.
-- [ ] Ved 1000 px er højre spalte mindst 400 px bred.
-- [ ] Ved 999 og 390 px er siden pixel for pixel som før, både ved første hånd og efter et svar.
-- [ ] `tjek_fagord.py`, `tjek_sprog.py`, `tjek_bydeform.py`, `tjek_konventionskort.py`, `tjek_skrifttyper.py` og `tjek_skrifttyper.mjs` består.
+- [x] Ved 1280 px står hånden til venstre og meldingerne til højre for den, og toppene flugter; hånden er 420 px.
+- [x] Ved 1280 px står meldekassen og forklaringen i højre spalte, og indholdet er højst 1120 px bredt i midten.
+- [x] Ved 1280 px står hånden fast, når der rulles.
+- [x] Ved 1000 px er højre spalte mindst 400 px bred.
+- [x] Ved 999 og 390 px er siden pixel for pixel som før, både ved første hånd og efter et svar.
+- [x] `tjek_fagord.py`, `tjek_sprog.py`, `tjek_bydeform.py`, `tjek_konventionskort.py`, `tjek_skrifttyper.py` og `tjek_skrifttyper.mjs` består.
 
 ## Afklaret
 
