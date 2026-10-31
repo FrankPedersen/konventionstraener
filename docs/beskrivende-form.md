@@ -78,6 +78,39 @@ Listen bygger på al dansk tekst, som `tools/tjek_fagord.py` læser: siderne, `a
 `tools/tjek_bydeform.py` læser samme tekst som `tools/tjek_fagord.py` og fejler, hvis en dansk sætning eller et led efter kolon eller semikolon begynder med et udsagnsord i bydeform. Knapper, links, navne og de falske træf står på en liste over undtagelser, og kortene, puljerne, `dealer/` og systemdokumenterne springes over, hvis A2–A4 bliver som foreslået.
 
 
+
+## Godkendelse (Frank, 30. oktober 2026)
+
+Listen er godkendt med disse valg, og teksterne er rettet på grenen `beskrivende-form`:
+
+- **K1–K6:** som foreslået, med én undtagelse i K2 (se Tillæg, T1).
+- **A1 Sidefoden:** `footer.js` er uændret (forsidens A1, valg a).
+- **A2–A4:** kortene, puljerne, skabelonerne og `viden/` bliver, og testen springer dem over.
+- **A5 kamp-landy:** "valg af major" / "choice of major".
+- **A6 Overskriften:** "Konventioner, der sidder på rygraden" / "Conventions that become second nature" (den engelske er Claude Codes oversættelse af Franks danske).
+
+Gruppe 1 har fået de links og knapper, testen fandt: Træn (topbaren) · Træn 8 → (trænerkortene) · Vælg konvention · Skift forsvar · Forfra · Udskriv eller hent (værktøjslinjen i dokumenterne) · Udskriv eller gem som PDF.
+
+## Tillæg: fundet, da testen blev skrevet (venter på Franks svar)
+
+Testen læser med flere udsagnsord end skanningen (gennemgå, lån, sælg). De her tekster er ikke rettet; de står på testens venteliste (`VENTER` i `tools/tjek_bydeform.py`), til du har svaret.
+
+**T1 · K2, beskeden uden træf** (`index.html`): under overskriften "Ingen trænere passer" ville det godkendte "Ingen træner passer på ordet." gentage overskriften. "Prøv et andet ord." står derfor uændret.
+- forslag: Et andet ord giver måske et træf. (EN: Another word may give a match.)
+
+**T2 · Overskriften over metodevalget** (`traener.html`, når konventionen ikke har sit eget spørgsmål)
+- nu: Vælg metode (EN: Choose a method)
+- forslag: Hvilken metode spiller I? (EN: Which method do you play?), som konventionernes eget "Hvilket forsvar mod 1NT spiller I?"
+
+**T3 · Trænernes slutskærm** (`traener.html`, `markering.html`, `multi-svar-traener.html`)
+- nu: Gennemgå forklaringerne igen, og prøv en gang til. (EN: Go through the explanations again and have another go.)
+- forslag: Du kan gennemgå forklaringerne igen og prøve en gang til. (EN: You can go through the explanations again and have another go.)
+
+**T4 · Tre trænerbeskrivelser** (`data/konventioner.json`)
+- ff-genaabning, nu: Lån ca. 3 hp af makker: … (EN: Borrow about 3 HCP from partner: …) → forslag: Genåbneren låner ca. 3 hp af makker: … (EN: The reopener borrows about 3 HCP from partner: …)
+- kamp-gif, nu: Lån 3–4 hp på ujævne hænder: … (EN: Borrow 3–4 HCP with unbalanced hands: …) → forslag: Du låner 3–4 hp på ujævne hænder: … (EN: You borrow 3–4 HCP with unbalanced hands: …)
+- kamp-2020, nu: Sælg ikke ud under 2♠, når de har fundet tilpasning – og meld efter trumfreglen og zonen, når I selv kæmper videre. (EN: Do not sell out below 2♠ … – and bid by the trump rule …) → forslag: I sælger ikke ud under 2♠, når de har fundet tilpasning – og melder efter trumfreglen og zonen, når I selv kæmper videre. (EN: You do not sell out below 2♠ when they have found a fit – and bid by the trump rule and the vulnerability when you compete further.)
+
 ## Bilag: alle sætninger under Til afgørelse
 
 Fra skanningen 30. oktober 2026: filen, antal forekomster (×n) og sætningen eller leddet, som det begynder. Markeringstrænerens svar ("Spil … tilbage", "Skift til …") står med i puljerne, men er knapper (gruppe 1).

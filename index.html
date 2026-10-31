@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Konventionstræner</title>
 <link rel="canonical" href="https://www.kontraktbridge.dk/konventionstraener/">
-<meta name="description" content="Træn bridgekonventioner med tilfældige meldeforløb – som indmelder, åbner og svarer – og slå op i vores aftaler og notater.">
+<meta name="description" content="Træning i bridgekonventioner med tilfældige meldeforløb – som indmelder, åbner og svarer – og opslag i vores aftaler og notater.">
 <link rel="stylesheet" href="assets/fonts/tekst.css">
 <link rel="stylesheet" href="assets/fonts/symboler.css">
 <link rel="stylesheet" href="assets/site.css">
@@ -18,12 +18,12 @@
 <div class="wrap forside">
   <section class="hero">
     <p class="eyebrow" id="optaelling">&nbsp;</p>
-    <h1 data-en="Practise the conventions until they stick">Træn konventionerne, til de sidder</h1>
-    <p class="deck" data-en="Choose a convention and get 8 random auctions. Sometimes you open or overcall, other times you respond to partner.">Vælg en konvention og få 8 tilfældige meldeforløb. Nogle gange åbner eller melder du ind, andre gange svarer du makker.</p>
+    <h1 data-en="Conventions that become second nature">Konventioner, der sidder på rygraden</h1>
+    <p class="deck" data-en="Each convention gives 8 random auctions. Sometimes you open or overcall, other times you respond to partner.">Hver konvention giver 8 tilfældige meldeforløb. Nogle gange åbner eller melder du ind, andre gange svarer du makker.</p>
   </section>
 
   <section class="find" id="traen" aria-labelledby="find-titel">
-    <h2 class="sr-only" id="find-titel" data-en="Find a trainer">Find en træner</h2>
+    <h2 class="sr-only" id="find-titel" data-en="Trainer search">Søgning efter en træner</h2>
     <div class="find-sog">
       <label for="sog" data-en="Search">Søg</label>
       <input id="sog" type="search" placeholder="Stayman, Bergen, 2♣ …" autocomplete="off" spellcheck="false">
@@ -119,8 +119,8 @@ Promise.all(['data/konventioner.json', 'data/emner.json'].map(u => fetch(u).then
     renderRecent();
   })
   .catch(() => {
-    $('dele').innerHTML = `<p class="small">${T('Kunne ikke hente listen over konventioner. Åbn siden via GitHub Pages eller en lokal webserver.',
-      'Could not load the list of conventions. Open the page via GitHub Pages or a local web server.')}</p>`;
+    $('dele').innerHTML = `<p class="small">${T('Kunne ikke hente listen over konventioner. Siden skal åbnes via GitHub Pages eller en lokal webserver.',
+      'Could not load the list of conventions. The page must be opened via GitHub Pages or a local web server.')}</p>`;
   });
 </script>
 </body>

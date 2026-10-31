@@ -26,12 +26,15 @@ Kun ordlyd i dansk og engelsk tekst. Ingen ændringer i logik, data eller layout
 
 ## Accepttest
 
-- [ ] Listen er godkendt af Frank.
-- [ ] De godkendte tekster står i beskrivende form på dansk og engelsk; knapper, links og navne er uændrede.
-- [ ] Sidefoden følger Franks valg i A1, samtidig med forsiden og Fordelingstræneren.
-- [ ] `python3 tools/tjek_bydeform.py`, `tjek_fagord.py`, `tjek_konventionskort.py` og `tjek_sprog.py` består.
+- [x] Listen er godkendt af Frank.
+- [x] De godkendte tekster står i beskrivende form på dansk og engelsk; knapper, links og navne er uændrede.
+- [x] Sidefoden følger Franks valg i A1, samtidig med forsiden og Fordelingstræneren.
+- [x] `python3 tools/tjek_bydeform.py`, `tjek_fagord.py`, `tjek_konventionskort.py` og `tjek_sprog.py` består.
+- [ ] Et skærmbillede af konventionstrænerens forside ligger i `C:\Users\frank\Kontraktbridge\skaermbilleder\beskrivende-form\`.
 
 ## Afklaret
 
 1. **Reglen** er Franks valg 30. oktober 2026; den står i `../CLAUDE.md`.
 2. **Konventionskortenes meldinger og forklaringer følger kilderne** (Franks ord 30. oktober 2026); de står under Til afgørelse.
+3. **Listen er godkendt** (Frank, 30. oktober 2026): K1–K6 og A5 som foreslået; A2–A4 bliver, og testen springer dem over; A6 "Konventioner, der sidder på rygraden". K2's "Prøv et andet ord." er ikke rettet, fordi det godkendte forslag gentager overskriften; det står i listens Tillæg.
+4. **Venteliste:** tekster, testen fandt, og som ikke stod på listen, står i listens Tillæg og på testens `VENTER`, til Frank har svaret.

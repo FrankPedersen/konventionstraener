@@ -4,7 +4,7 @@
   "titel": "Multiforsvar mod 1NT",
   "gruppe": "Konkurrence",
   "emne": "nt-konkurrence",
-  "beskrivelse": "Modstanderen åbner 1NT. Meld ind med D (straf), 2♣–2NT eller 3♣/3♦ – eller svar på makkers indmelding.",
+  "beskrivelse": "Modstanderen åbner 1NT. Du melder ind med D (straf), 2♣–2NT eller 3♣/3♦ – eller svarer på makkers indmelding.",
   "roller": [
    "Indmelder",
    "Svarer"
@@ -15,7 +15,7 @@
   "en": {
    "titel": "Multi defence against 1NT",
    "gruppe": "Competition",
-   "beskrivelse": "The opponents open 1NT. Overcall with X (penalty), 2♣–2NT or 3♣/3♦ – or respond to partner's overcall."
+   "beskrivelse": "The opponents open 1NT. You overcall with X (penalty), 2♣–2NT or 3♣/3♦ – or respond to partner's overcall."
   }
  },
  {
@@ -586,7 +586,7 @@
   "titel": "Flannery",
   "gruppe": "2♦-åbninger",
   "emne": "aabninger",
-  "beskrivelse": "2♦ viser præcis 5 hjerter og 4 spar, 11–15 hp (2♥ i B4-pakken). Træn åbningen, svarene på 2♦ og åbners svar på 2NT-spørgsmålet.",
+  "beskrivelse": "2♦ viser præcis 5 hjerter og 4 spar, 11–15 hp (2♥ i B4-pakken). Træneren øver åbningen, svarene på 2♦ og åbners svar på 2NT-spørgsmålet.",
   "roller": [
    "Åbner",
    "Svarer"
@@ -596,7 +596,7 @@
   "en": {
    "titel": "Flannery",
    "gruppe": "2♦ openings",
-   "beskrivelse": "2♦ shows exactly 5 hearts and 4 spades, 11–15 HCP (2♥ in the B4 package). Practise the opening, the responses to 2♦ and opener's answers to the 2NT ask."
+   "beskrivelse": "2♦ shows exactly 5 hearts and 4 spades, 11–15 HCP (2♥ in the B4 package). The trainer covers the opening, the responses to 2♦ and opener's answers to the 2NT ask."
   }
  },
  {
@@ -643,7 +643,7 @@
   "titel": "Revers",
   "gruppe": "Videre meldeforløb",
   "emne": "videre",
-  "beskrivelse": "Ny højere farve billigst muligt på nyt niveau som 16+ og rundekrav. Træn åbners valg mellem revers og gentaget farve, og svarers anden melding efter 1♣/1♦ – 1♠ – 2♥.",
+  "beskrivelse": "Ny højere farve billigst muligt på nyt niveau som 16+ og rundekrav. Træneren øver åbners valg mellem revers og gentaget farve og svarers anden melding efter 1♣/1♦ – 1♠ – 2♥.",
   "roller": [
    "Åbner",
    "Svarer"
@@ -653,7 +653,7 @@
   "en": {
    "titel": "Reverses",
    "gruppe": "Further bidding",
-   "beskrivelse": "A new higher suit at the cheapest level as 16+ and forcing for one round. Practise opener's choice between a reverse and a rebid suit, and responder's second bid after 1♣/1♦ – 1♠ – 2♥."
+   "beskrivelse": "A new higher suit at the cheapest level as 16+ and forcing for one round. The trainer covers opener's choice between a reverse and a rebid suit and responder's second bid after 1♣/1♦ – 1♠ – 2♥."
   }
  },
  {
@@ -662,7 +662,7 @@
   "titel": "2♣ med kontrolsvar",
   "gruppe": "Åbninger",
   "emne": "aabninger",
-  "beskrivelse": "Tæl kontroller (es = 2, konge = 1) og svar på makkers 2♣ – eller vis en god farve med overføring. Åbners sansmeldinger, kontrolvisning og svar efter indmelding.",
+  "beskrivelse": "Du tæller kontroller (es = 2, konge = 1) og svarer på makkers 2♣ – eller viser en god farve med overføring. Åbners sansmeldinger, kontrolvisning og svar efter indmelding.",
   "roller": [
    "Åbner",
    "Svarer"
@@ -672,7 +672,7 @@
   "en": {
    "titel": "2♣ with control responses",
    "gruppe": "Openings",
-   "beskrivelse": "Count controls (ace = 2, king = 1) and respond to partner's 2♣ – or show a good suit with a transfer. Opener's notrump rebids, control showing and responses after an overcall."
+   "beskrivelse": "You count controls (ace = 2, king = 1) and respond to partner's 2♣ – or show a good suit with a transfer. Opener's notrump rebids, control showing and responses after an overcall."
   }
  },
  {
@@ -681,7 +681,7 @@
   "titel": "Landy",
   "gruppe": "Forsvar mod 1NT",
   "emne": "nt-konkurrence",
-  "beskrivelse": "2♣ = begge majorer (mindst 5-4), X straf, øvrige farver naturlige – og makkers svar: vælg major, 2♦ lige lange, 2NT spørger, 3M invit.",
+  "beskrivelse": "2♣ = begge majorer (mindst 5-4), X straf, øvrige farver naturlige – og makkers svar: valg af major, 2♦ lige lange, 2NT spørger, 3M invit.",
   "roller": [
    "Indmelder",
    "Svarer"
@@ -692,7 +692,7 @@
   "en": {
    "titel": "Landy",
    "gruppe": "Defence against 1NT",
-   "beskrivelse": "2♣ = both majors (at least 5-4), X penalty, other suits natural – and partner's response: pick a major, 2♦ with equal length, 2NT asks, 3M invitational."
+   "beskrivelse": "2♣ = both majors (at least 5-4), X penalty, other suits natural – and partner's response: choice of major, 2♦ with equal length, 2NT asks, 3M invitational."
   }
  },
  {
@@ -701,7 +701,7 @@
   "titel": "Forsvar mod 1NT",
   "gruppe": "Forsvar mod 1NT",
   "emne": "nt-konkurrence",
-  "beskrivelse": "Vælg jeres forsvar mod modstandernes 1NT – Landy, DONT eller Multi – før hænderne vises. Du er skiftevis indmelder og svarer.",
+  "beskrivelse": "I vælger jeres forsvar mod modstandernes 1NT – Landy, DONT eller Multi – før hænderne vises. Du er skiftevis indmelder og svarer.",
   "roller": [
    "Indmelder",
    "Svarer"
@@ -727,7 +727,7 @@
   "en": {
    "titel": "Defence against 1NT",
    "gruppe": "Defence against 1NT",
-   "beskrivelse": "Choose your defence against the opponents' 1NT – Landy, DONT or Multi – before the hands are shown. You are alternately the overcaller and the advancer.",
+   "beskrivelse": "You choose your defence against the opponents' 1NT – Landy, DONT or Multi – before the hands are shown. You are alternately the overcaller and the advancer.",
    "valg": "Which defence against 1NT do you play?"
   }
  },
@@ -919,7 +919,7 @@
   "titel": "Markeringer",
   "gruppe": "Modspil",
   "emne": "modspil",
-  "beskrivelse": "Lavt = kald efter es-udspil, antal efter konge-udspil og når spilfører spiller en ny farve (Malmø: lavt = lige), og første afkast mod farve og sans. Giv eller læs markeringen.",
+  "beskrivelse": "Lavt = kald efter es-udspil, antal efter konge-udspil og når spilfører spiller en ny farve (Malmø: lavt = lige), og første afkast mod farve og sans. Du giver eller læser markeringen.",
   "roller": [
    "Modspiller"
   ],
@@ -930,7 +930,7 @@
   "en": {
    "titel": "Signals",
    "gruppe": "Defence",
-   "beskrivelse": "Low = encourage after an ace lead, count after a king lead and when declarer plays a new suit (Malmö: low = even), and the first discard against suit and notrump contracts. Give or read the signal."
+   "beskrivelse": "Low = encourage after an ace lead, count after a king lead and when declarer plays a new suit (Malmö: low = even), and the first discard against suit and notrump contracts. You give or read the signal."
   }
  },
  {

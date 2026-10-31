@@ -390,7 +390,7 @@ document.getElementById('v-skabelon').innerHTML = skabelon();
 (async () => {
   if (!ALLE) {
     try { ALLE = await hent(); }
-    catch(e){ document.getElementById('v-fuld').innerHTML = '<article class="kort"><p class="tom">Kortene kunne ikke indlæses. Tjek at data/kort/index.json findes, og åbn siden via GitHub Pages eller en lokal webserver.</p></article>'; return; }
+    catch(e){ document.getElementById('v-fuld').innerHTML = '<article class="kort"><p class="tom">Kortene kunne ikke indlæses. data/kort/index.json skal findes, og siden skal åbnes via GitHub Pages eller en lokal webserver.</p></article>'; return; }
   }
   let start = ALLE[0].id;
   try { start = localStorage.getItem('kk-konv') || start; } catch(e){}
