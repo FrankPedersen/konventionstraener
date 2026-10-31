@@ -287,7 +287,7 @@ function renderDone(){
     <div class="done">
       <p class="qtext">${T('Du klarede', 'You got')}</p>
       <div class="score">${score} / ${Q.length}</div>
-      <p>${score === Q.length ? T('Markeringerne sidder.', 'The signals have stuck.') : T('Gennemgå forklaringerne igen, og prøv en gang til.', 'Go through the explanations again and have another go.')}</p>
+      <p>${score === Q.length ? T('Markeringerne sidder.', 'The signals have stuck.') : T('Du kan gennemgå forklaringerne igen og prøve en gang til.', 'You can go through the explanations again and have another go.')}</p>
       <div class="actions">
         <button class="btn primary" id="restartBtn">${T('Ny omgang', 'New round')}</button>
         <a class="btn" href="${backLink}">${T('Vælg konvention', 'Choose a convention')}</a>

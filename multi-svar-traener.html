@@ -1063,7 +1063,7 @@ function renderDone(){
     <div class="done">
       <p class="qtext" style="margin-bottom:0;">${T('Du klarede', 'You got')}</p>
       <div class="score">${score} / ${Q.length}</div>
-      <p>${score === Q.length ? T('Hele svarstrukturen sidder.', 'The whole structure has stuck.') : T('Gennemgå forklaringerne igen, og prøv en gang til.', 'Go through the explanations again and have another go.')}</p>
+      <p>${score === Q.length ? T('Hele svarstrukturen sidder.', 'The whole structure has stuck.') : T('Du kan gennemgå forklaringerne igen og prøve en gang til.', 'You can go through the explanations again and have another go.')}</p>
       <button class="restart" id="restartBtn">${T('Forfra', 'Start over')}</button>
     </div>`;
   document.getElementById('restartBtn').addEventListener('click', () => location.reload());

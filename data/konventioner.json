@@ -491,7 +491,7 @@
   "titel": "Genåbning i 4. hånd",
   "gruppe": "Konkurrence",
   "emne": "indmeldinger",
-  "beskrivelse": "Lån ca. 3 hp af makker: dobling, ny farve, 1NT 11–14, 2NT eller cuebid – og makkers svar efter devaluering.",
+  "beskrivelse": "Genåbneren låner ca. 3 hp af makker: dobling, ny farve, 1NT 11–14, 2NT eller cuebid – og makkers svar efter devaluering.",
   "roller": [
    "Genåbner",
    "Svarer"
@@ -501,7 +501,7 @@
   "en": {
    "titel": "Balancing in fourth seat",
    "gruppe": "Competition",
-   "beskrivelse": "Borrow about 3 HCP from partner: double, a new suit, 1NT 11–14, 2NT or a cue-bid – and partner's response after devaluing."
+   "beskrivelse": "The balancer borrows about 3 HCP from partner: double, a new suit, 1NT 11–14, 2NT or a cue-bid – and partner's response after devaluing."
   }
  },
  {
@@ -817,7 +817,7 @@
   "titel": "GIF – genåbning i fjerde hånd",
   "gruppe": "Konkurrence",
   "emne": "indmeldinger",
-  "beskrivelse": "Lån 3–4 hp på ujævne hænder: dobling fra 9 hp, farve 7–14, konstruktive spring. Jævne hænder: pas under 11, 1NT 11–14, X 15–18, 2NT 19–21.",
+  "beskrivelse": "Du låner 3–4 hp på ujævne hænder: dobling fra 9 hp, farve 7–14, konstruktive spring. Jævne hænder: pas under 11, 1NT 11–14, X 15–18, 2NT 19–21.",
   "roller": [
    "Genåbner"
   ],
@@ -828,7 +828,7 @@
   "en": {
    "titel": "GIF – balancing in fourth seat",
    "gruppe": "Competition",
-   "beskrivelse": "Borrow 3–4 HCP with unbalanced hands: double from 9 HCP, a suit 7–14, constructive jumps. Balanced hands: pass below 11, 1NT 11–14, X 15–18, 2NT 19–21."
+   "beskrivelse": "You borrow 3–4 HCP with unbalanced hands: double from 9 HCP, a suit 7–14, constructive jumps. Balanced hands: pass below 11, 1NT 11–14, X 15–18, 2NT 19–21."
   }
  },
  {
@@ -837,7 +837,7 @@
   "titel": "20-20 – kampen om delkontrakten",
   "gruppe": "Konkurrence",
   "emne": "indmeldinger",
-  "beskrivelse": "Sælg ikke ud under 2♠, når de har fundet tilpasning – og meld efter trumfreglen og zonen, når I selv kæmper videre.",
+  "beskrivelse": "I sælger ikke ud under 2♠, når de har fundet tilpasning – og melder efter trumfreglen og zonen, når I selv kæmper videre.",
   "roller": [
    "Fjerde hånd",
    "Åbner"
@@ -849,7 +849,7 @@
   "en": {
    "titel": "20-20 – the part-score battle",
    "gruppe": "Competition",
-   "beskrivelse": "Do not sell out below 2♠ when they have found a fit – and bid by the trump rule and the vulnerability when you compete further."
+   "beskrivelse": "You do not sell out below 2♠ when they have found a fit – and bid by the trump rule and the vulnerability when you compete further."
   }
  },
  {

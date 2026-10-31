@@ -91,9 +91,11 @@ Listen er godkendt med disse valg, og teksterne er rettet på grenen `beskrivend
 
 Gruppe 1 har fået de links og knapper, testen fandt: Træn (topbaren) · Træn 8 → (trænerkortene) · Vælg konvention · Skift forsvar · Forfra · Udskriv eller hent (værktøjslinjen i dokumenterne) · Udskriv eller gem som PDF.
 
-## Tillæg: fundet, da testen blev skrevet (venter på Franks svar)
+## Tillæg: fundet, da testen blev skrevet
 
-Testen læser med flere udsagnsord end skanningen (gennemgå, lån, sælg). De her tekster er ikke rettet; de står på testens venteliste (`VENTER` i `tools/tjek_bydeform.py`), til du har svaret.
+Testen læser med flere udsagnsord end skanningen (gennemgå, lån, sælg). De her tekster stod på testens venteliste, til Frank svarede.
+
+**Godkendt** (Frank, 31. oktober 2026) og rettet som foreslået. T4 skulle blive som navne, hvis det var titler fra kildebogen; det er de ikke (kapitlerne hedder "15c · Genåbning i 4. hånd", "4. 20-20-situationer" og "7. GIF — genåbning i fjerde hånd", og "Sælg 'aldrig' ud under 2♠ …" er en regel i bogens liste), så de er skrevet om; på engelsk er ff-genaabning "The balancer borrows …" som i puljen. Kortenes undertitler følger kilderne (A2) og er uændrede. Ventelisten er fjernet, så testen fejler på alle nye bydeformer.
 
 **T1 · K2, beskeden uden træf** (`index.html`): under overskriften "Ingen trænere passer" ville det godkendte "Ingen træner passer på ordet." gentage overskriften. "Prøv et andet ord." står derfor uændret.
 - forslag: Et andet ord giver måske et træf. (EN: Another word may give a match.)
