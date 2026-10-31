@@ -214,6 +214,19 @@
   body{ flex-direction:column; justify-content:flex-start; align-items:center; padding:0 0 calc(48px + env(safe-area-inset-bottom, 0px)); }
   #topbjaelke, #sidefod{ align-self:stretch; }
   .wrap{ box-sizing:border-box; padding:28px 14px 0; }
+
+  /* Bredt layout fra 1000 px (SPEC-bred-layout.md, bud A · Bordet til venstre, opgaven til højre): højst 1120 px med
+     samme sidemargen som Fordelingstræneren; hånden står i en venstre spalte på 420 px, der står fast, og meldingerne,
+     svarknapperne og forklaringen i højre spalte. Rækkefølgen i HTML er uændret, og under 1000 px er siden som før. */
+  @media (min-width: 1000px) {
+    .wrap{ max-width:calc(1120px + 64px); padding-left:32px; padding-right:32px; }
+    .table{ display:grid; grid-template-columns:420px minmax(400px, 1fr); column-gap:24px; align-items:start; }
+    .table > *, .toprow > *{ grid-column:2; min-width:0; }
+    .toprow{ display:contents; }
+    .table .hand{ grid-column:1; grid-row:1 / span 20; max-width:none; position:sticky; top:16px; }
+    .table .bonus{ margin-bottom:18px; }
+    .table > .done{ grid-column:1 / -1; }
+  }
 </style>
 </head>
 <body>
