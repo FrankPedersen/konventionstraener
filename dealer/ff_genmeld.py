@@ -3,9 +3,10 @@
 
   aab_*   – åbner efter 1♦ – 1♠ (uden 4 spar):
             1NT jævn 12–14 · 2NT jævn 18–19 · 2♦ 6-farve 12–15 · 3♦ god 6-farve 16–18 ·
-            2♣ 5-4 med klør 12–15 · 3♣ spring 16–21 (krav i én runde; med 19+ viser åbner udgangskraft i næste
-            melding) · 2♥ 5-4 med hjerter 12–15 (naturlig, ikke krav) · 3♥ spring 16–21 (som 3♣)
-            (Franks valg 31. oktober 2026)
+            2♣ 5-4 med klør 12–18 · 3♣ spring 19–21 (udgangskrav) · 2♥ 5-4 med hjerter 12–15 (naturlig, ikke
+            krav) · 3♥ spring 16–21 (krav i én runde; med 19+ viser åbner udgangskraft i næste melding). Kun den nye
+            højere farve har de nye grænser: en ny lavere farve koster ikke plads, fordi svarer kan give præference på
+            2-trinnet (Franks valg 31. oktober 2026)
   svar_*  – svarer efter 1♦ – 1♠ – 2NT (18–19): 3♣ checkback med 5 spar eller 4 hjerter · 3NT ellers
             (efter 1♣ – 1♥ – 2NT: 5 hjerter eller 4 spar)
   check_* – åbner svarer på 3♣: 3 i svarers major = 3 korts støtte · 3 i den anden major = 4-farve ·
@@ -16,15 +17,18 @@ med 6+ spar eller 13+ er ikke med. Revers spilles ikke: den er overvejet og frav
 from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, build_pool, tx
 
 PAS = ["Modstander", "Pas"]
-C_AAB = tx("Ny farve 12–15 ikke krav, spring 16+ krav i én runde", "New suit 12–15 non-forcing, jump 16+ forcing for one round")
+C_AAB = tx("Ny højere farve 12–15 ikke krav, spring 16+ krav i én runde", "New higher suit 12–15 non-forcing, jump 16+ forcing for one round")
 C_CHECK = tx("Åbners majorfordeling – krav til udgang", "Opener's major-suit holding – forcing to game")
 BONUS = {
-    "aab": {"q": tx("Hvad er grænsen mellem ny farve og spring i ny farve?", "Where is the boundary between a new suit and a jump in a new suit?"),
+    "aab": {"q": tx("Hvad er grænsen mellem ny højere farve og spring i ny højere farve?", "Where is the boundary between a new higher suit and a jump in a new higher suit?"),
             "correct": C_AAB,
-            "options": [C_AAB, tx("Ny farve 12–18, spring 19+ udgangskrav", "New suit 12–18, jump 19+ game forcing"), tx("Spring er altid spærrende", "A jump is always preemptive")],
-            "why": tx("Med 12–15 og 5-4 meldes den nye farve uden spring – naturlig og ikke krav; med 16+ springes. Springet er krav i én runde, og med 19+ viser åbner udgangskraft i næste melding.",
-                      "With 12–15 and 5-4, the new suit is bid without a jump – natural and non-forcing; with 16+ you jump. "
-                      "The jump is forcing for one round, and with 19+ opener shows game-forcing values with the next bid.")},
+            "options": [C_AAB, tx("Ny højere farve 12–18, spring 19+ udgangskrav", "New higher suit 12–18, jump 19+ game forcing"), tx("Spring er altid spærrende", "A jump is always preemptive")],
+            "why": tx("Med 12–15 og 5-4 meldes den nye højere farve uden spring – naturlig og ikke krav; med 16+ springes. Springet er krav i én runde, og med 19+ viser åbner udgangskraft i næste melding. "
+                      "En ny lavere farve koster ikke plads, fordi svarer kan give præference på 2-trinnet: den er 12–18, og springet dér er 19+ og udgangskrav.",
+                      "With 12–15 and 5-4, the new higher suit is bid without a jump – natural and non-forcing; with 16+ you jump. "
+                      "The jump is forcing for one round, and with 19+ opener shows game-forcing values with the next bid. "
+                      "A new lower suit costs no space, because responder can give preference at the two level: it is 12–18, "
+                      "and the jump there is 19+ and game forcing.")},
     "check": {"q": tx("Hvad spørger 3♣ efter åbners 2NT-genmelding om?", "What does 3♣ after opener's 2NT rebid ask?"),
               "correct": C_CHECK,
               "options": [C_CHECK, tx("Naturlig klør", "Natural clubs"), tx("Esser", "Aces")],
@@ -38,15 +42,6 @@ def balanced(L):
 
 def good(cards):
     return sum(1 for r in cards[:3] if r >= 12) >= 2
-
-def jump(farve, suit, call, hp):
-    """Forklaringen på springet i ny farve: 16+ og krav i én runde; med 19+ viser åbner udgangskraft i næste melding."""
-    if hp <= 18:
-        return tx(f"5-4 med {farve} og {hp} hp: spring til {call} – krav i én runde (16+).",
-                  f"5-4 with {suit} and {hp} HCP: jump to {call} – forcing for one round (16+).")
-    return tx(f"5-4 med {farve} og {hp} hp: spring til {call} – krav i én runde; med 19+ viser du udgangskraft i næste melding.",
-              f"5-4 with {suit} and {hp} HCP: jump to {call} – forcing for one round; with 19+ you show game-forcing values "
-              f"with your next bid.")
 
 def rebid(hand, hp):
     L = lengths_of(hand)
@@ -69,11 +64,17 @@ def rebid(hand, hp):
         if hp <= 15:
             return "2♥", tx(f"5-4 med hjerter og {hp} hp: 2♥ – naturlig, ikke krav (12–15).",
                             f"5-4 with hearts and {hp} HCP: 2♥ – natural, non-forcing (12–15).")
-        return "3♥", jump("hjerter", "hearts", "3♥", hp)
+        if hp <= 18:
+            return "3♥", tx(f"5-4 med hjerter og {hp} hp: spring til 3♥ – krav i én runde (16+).",
+                            f"5-4 with hearts and {hp} HCP: jump to 3♥ – forcing for one round (16+).")
+        return "3♥", tx(f"5-4 med hjerter og {hp} hp: spring til 3♥ – krav i én runde; med 19+ viser du udgangskraft i næste melding.",
+                        f"5-4 with hearts and {hp} HCP: jump to 3♥ – forcing for one round; with 19+ you show game-forcing values "
+                        f"with your next bid.")
     if L['D'] >= 5 and L['C'] == 4 and L['H'] < 4:
-        if hp <= 15:
-            return "2♣", tx(f"5-4 med klør og {hp} hp: 2♣ – ny lavere farve (12–15).", f"5-4 with clubs and {hp} HCP: 2♣ – a new lower suit (12–15).")
-        return "3♣", jump("klør", "clubs", "3♣", hp)
+        if hp <= 18:
+            return "2♣", tx(f"5-4 med klør og {hp} hp: 2♣ – ny lavere farve (12–18).", f"5-4 with clubs and {hp} HCP: 2♣ – a new lower suit (12–18).")
+        return "3♣", tx(f"5-4 med klør og {hp} hp: spring til 3♣ – udgangskrav (19–21).",
+                        f"5-4 with clubs and {hp} HCP: jump to 3♣ – game forcing (19–21).")
     return None
 
 def checkback(M):
@@ -114,7 +115,7 @@ SITUATIONS["aab_1ru"] = {"rolle": "Åbner", "auction": [["Dig", "1♦"], PAS, ["
 CLASSIFIERS["aab_1ru"] = rebid
 t = lambda hp, **b: tpl(hp, **{'S': (1, 3), 'H': (1, 3), 'D': (4, 5), 'C': (1, 3), **b})
 SAMPLERS["aab_1ru"] = {"1NT": t((12, 14)), "2NT": t((18, 19)), "2♦": t((12, 15), D=(6, 7)), "3♦": t((16, 18), D=(6, 6)),
-                       "2♣": t((12, 15), D=(5, 6), C=(4, 4)), "3♣": t((16, 21), D=(5, 6), C=(4, 4)),
+                       "2♣": t((12, 18), D=(5, 6), C=(4, 4)), "3♣": t((19, 21), D=(5, 6), C=(4, 4)),
                        "2♥": t((12, 15), D=(5, 6), H=(4, 4)), "3♥": t((16, 21), D=(5, 6), H=(4, 4))}
 PER_CALL["aab_1ru"] = 9
 for M, op, mk in (('S', 'D', 'sp'), ('H', 'C', 'hj')):
