@@ -320,7 +320,7 @@
   "titel": "Åbners stærke genmeldinger og 3♣ checkback",
   "gruppe": "Videre meldeforløb",
   "emne": "videre",
-  "beskrivelse": "Ny højere farve på 2-trinnet er naturlig, 5-4, 12–18 hp og ikke krav (foreløbig – bekræftes); spring i ny farve er 19–21 og udgangskrav. 3♣ checkback efter åbners 2NT-genmelding.",
+  "beskrivelse": "Ny højere farve på 2-trinnet er naturlig, 5-4, 12–15 hp og ikke krav; spring i ny farve er 16+ og krav i én runde, og med 19+ viser åbner udgangskraft i næste melding. 3♣ checkback efter åbners 2NT-genmelding.",
   "roller": [
    "Åbner",
    "Svarer"
@@ -330,7 +330,7 @@
   "en": {
    "titel": "Opener's strong rebids and 3♣ checkback",
    "gruppe": "Further bidding",
-   "beskrivelse": "A new higher suit at the two level is natural, 5-4, 12–18 HCP and non-forcing (provisional – to be confirmed); a jump in a new suit is 19–21 and game forcing. 3♣ checkback after opener's 2NT rebid."
+   "beskrivelse": "A new higher suit at the two level is natural, 5-4, 12–15 HCP and non-forcing; a jump in a new suit is 16+ and forcing for one round, and with 19+ opener shows game-forcing values with the next bid. 3♣ checkback after opener's 2NT rebid."
   }
  },
  {

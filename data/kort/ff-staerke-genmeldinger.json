@@ -35,7 +35,7 @@
     "tekst": "Du har åbnet, og makker har svaret på 1-trinnet.",
     "gaelderFor": "Åbners genmelding efter svar på 1-trinnet"
   },
-  "kortfortalt": "Jo større spring, jo stærkere hånd: ny farve på 2-trinnet er naturlig og ikke krav (12–18), spring i ny farve er 19–21 og udgangskrav. Efter åbners 2NT (18–19) spørger 3♣ efter åbners majorfordeling.",
+  "kortfortalt": "Jo større spring, jo stærkere hånd: ny farve på 2-trinnet er naturlig og ikke krav (12–15), spring i ny farve er 16+ og krav i én runde, og med 19+ viser åbner udgangskraft i næste melding. Efter åbners 2NT (18–19) spørger 3♣ efter åbners majorfordeling.",
   "meldinger": [
     {
       "bud": "1NT",
@@ -52,7 +52,7 @@
     {
       "bud": "Ny farve på 2-trinnet",
       "noegle": "gron",
-      "styrke": "12–18 hp",
+      "styrke": "12–15 hp",
       "viser": "Naturlig, 5-4, ikke krav"
     },
     {
@@ -70,8 +70,8 @@
     {
       "bud": "Spring i ny farve",
       "noegle": "bla",
-      "styrke": "19–21 hp",
-      "viser": "Ubalanceret, 5-4 eller bedre. Udgangskrav"
+      "styrke": "16+ hp",
+      "viser": "Ubalanceret, 5-4 eller bedre. Krav i én runde; med 19+ udgangskraft i næste melding"
     },
     {
       "bud": "3NT",
@@ -223,29 +223,29 @@
       ],
       "haand": {
         "S": [
-          9
+          11,
+          4
         ],
         "H": [
-          14,
-          11,
-          5
+          12,
+          11
         ],
         "D": [
           14,
           13,
-          12,
           11,
+          9,
           8
         ],
         "C": [
           14,
-          10,
           8,
-          6
+          7,
+          2
         ]
       },
       "svar": "3♣",
-      "forklaring": "5-4 med klør og 19 hp: spring til 3♣ – udgangskrav (19–21)."
+      "forklaring": "5-4 med klør og 16 hp: spring til 3♣ – krav i én runde (16+)."
     },
     {
       "auction": [
@@ -273,24 +273,24 @@
       "haand": {
         "S": [
           13,
-          9,
           6
         ],
         "H": [
-          13
+          14,
+          8,
+          2
         ],
         "D": [
           14,
           13,
-          12,
-          11,
-          10,
-          3
+          9,
+          7,
+          3,
+          2
         ],
         "C": [
-          6,
-          4,
-          2
+          12,
+          6
         ]
       },
       "svar": "3♦",
@@ -321,25 +321,25 @@
       ],
       "haand": {
         "S": [
-          5,
-          2
+          13,
+          8,
+          7
         ],
         "H": [
-          14,
+          13,
           11,
-          5
+          6
         ],
         "D": [
           14,
           13,
-          12,
-          3,
-          2
+          10,
+          6,
+          3
         ],
         "C": [
-          14,
-          11,
-          10
+          13,
+          12
         ]
       },
       "svar": "2NT",
@@ -379,24 +379,24 @@
       "haand": {
         "S": [
           13,
+          12,
           11,
-          10,
           8,
-          4
+          7
         ],
         "H": [
-          12,
-          7,
-          5
+          11,
+          10,
+          7
         ],
         "D": [
-          10
+          12,
+          3
         ],
         "C": [
-          14,
           12,
-          9,
-          6
+          11,
+          10
         ]
       },
       "svar": "3♣",
@@ -444,24 +444,24 @@
       "haand": {
         "S": [
           14,
-          10
+          8
         ],
         "H": [
           12,
-          8,
-          5,
-          3
+          11,
+          6,
+          4
         ],
         "D": [
           14,
-          12,
-          10,
-          6
+          13,
+          9,
+          5
         ],
         "C": [
           14,
-          12,
-          6
+          9,
+          2
         ]
       },
       "svar": "3♥",
@@ -469,13 +469,11 @@
     }
   ],
   "faldgruber": [
-    "Kun springet i ny farve er udgangskrav. Med 19+ og 5-4 springes; under 19 meldes den nye farve naturligt.",
+    "Springet i ny farve er krav i én runde, ikke udgangskrav. Med 16+ og 5-4 springes; under 16 meldes den nye farve naturligt og ikke krav. Med 19+ viser åbner udgangskraft i næste melding.",
     "3♣ checkback er kunstig og krav til udgang – ikke en flugt til klør.",
     "Splinter indgår ikke: kortfarver vises først via cuebid, når trumf er fastlagt."
   ],
-  "aabne": [
-    "Er ny højere farve på 2-trinnet naturlig og ikke krav (12–18 hp), eller revers med 16+ og rundekrav?"
-  ],
+  "aabne": [],
   "relaterede": [
     "Revers",
     "RKC 1430"

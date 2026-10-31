@@ -32,13 +32,13 @@ Det lukker de to Makker 2-punkter, der stod åbne: "foreløbig – bekræftes" (
 
 ## Accepttest
 
-- [ ] `dealer/ff_genmeld.py`: 12–15 hp med 5-4 giver den nye farve (2♥ og 2♣), 16–18 hp giver spring (3♥ og 3♣, krav i én runde), og 19+ giver spring efterfulgt af udgangskrav i næste melding.
-- [ ] Puljen `ff-staerke-genmeldinger` er bygget igen og følger grænserne; bonusspørgsmålet har de nye grænser.
-- [ ] "foreløbig – bekræftes" (og "provisional – to be confirmed") findes ingen steder: Makker 2-dokumentet, `data/konventioner.json`, kortene, dealeren, puljen og tegnefladen.
-- [ ] Makker 2-dokumentet: afsnit 1, 4 og 6 og B1/B3 har de nye grænser, C1 har ikke længere spørgsmålet om revers, og Bilag G siger, at revers er overvejet og fravalgt.
-- [ ] Konkurrencedoblingens svar (0–7 hp laveste farve, 8–11 hp spring i farven, 12+ hp cuebid) står i afsnit 17 og på kortet `ff-doblinger`, og det åbne spørgsmål er væk begge steder.
-- [ ] `tjek_makker2_aftaler.py`, `tjek_konventionskort.py`, `tjek_kort_eksempler.py`, `tjek_fagord.py`, `tjek_sprog.py`, `tjek_bydeform.py`, `tjek_crowhurst.py`, `tjek_skrifttyper.py`, `tjek_skrifttyper.mjs` og `sprogtjek.py` består.
-- [ ] SPEC-konventionskort (punkt 37 og 40) og `../SYSTEM.md` er opdateret.
+- [x] `dealer/ff_genmeld.py`: 12–15 hp med 5-4 giver den nye farve (2♥ og 2♣), 16–18 hp giver spring (3♥ og 3♣, krav i én runde), og 19+ giver spring efterfulgt af udgangskrav i næste melding.
+- [x] Puljen `ff-staerke-genmeldinger` er bygget igen og følger grænserne; bonusspørgsmålet har de nye grænser.
+- [x] "foreløbig – bekræftes" (og "provisional – to be confirmed") findes ingen steder: Makker 2-dokumentet, `data/konventioner.json`, kortene, dealeren, puljen og tegnefladen.
+- [x] Makker 2-dokumentet: afsnit 1, 4 og 6 og B1/B3 har de nye grænser, C1 har ikke længere spørgsmålet om revers, og Bilag G siger, at revers er overvejet og fravalgt.
+- [x] Konkurrencedoblingens svar (0–7 hp laveste farve, 8–11 hp spring i farven, 12+ hp cuebid) står i afsnit 17 og på kortet `ff-doblinger`, og det åbne spørgsmål er væk begge steder.
+- [x] `tjek_makker2_aftaler.py`, `tjek_konventionskort.py`, `tjek_kort_eksempler.py`, `tjek_fagord.py`, `tjek_sprog.py`, `tjek_bydeform.py`, `tjek_crowhurst.py`, `tjek_skrifttyper.py`, `tjek_skrifttyper.mjs` og `sprogtjek.py` består.
+- [x] SPEC-konventionskort (punkt 37 og 40) og `../SYSTEM.md` er opdateret.
 
 ## Afklaret
 

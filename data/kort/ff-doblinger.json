@@ -25,9 +25,9 @@
       ]
     ],
     "tekst": "Makker har åbnet, og modparten melder ind eller dobler.",
-    "gaelderFor": "Negativ dobling, åbners svar, støttedobling til og med 2♠, og svar efter dobling af makkers åbning"
+    "gaelderFor": "Negativ dobling, åbners svar, støttedobling til og med 2♠, svar efter dobling af makkers åbning og svar på makkers konkurrencedobling"
   },
-  "kortfortalt": "Den negative dobling viser 4-farve i uvist major (8+ hp, 6+ efter 1-over-1); åbner svarer som på en farvemelding og kan passe med længde bag indmelderen. Støttedoblingen viser præcis 3 kort i svarers major, og redobling efter dobling af åbningen viser 10+ hp uden primær støtte, mens 2NT er Truscott med 10+ sp og 4+ trumf.",
+  "kortfortalt": "Den negative dobling viser 4-farve i uvist major (8+ hp, 6+ efter 1-over-1); åbner svarer som på en farvemelding og kan passe med længde bag indmelderen. Støttedoblingen viser præcis 3 kort i svarers major, og redobling efter dobling af åbningen viser 10+ hp uden primær støtte, mens 2NT er Truscott med 10+ sp og 4+ trumf. Efter makkers konkurrencedobling viser niveauet styrken: farve billigst muligt med 0–7 hp, spring med 8–11 (invit) og cuebid af modpartens farve med 12+ (krav).",
   "meldinger": [
     {
       "gruppe": "Svarer efter indmelding"
@@ -88,6 +88,32 @@
       "noegle": "gra",
       "styrke": "Under 6 hp",
       "viser": "Åbner får en ny chance"
+    },
+    {
+      "gruppe": "Svar på makkers konkurrencedobling"
+    },
+    {
+      "bud": "Farve billigst muligt",
+      "noegle": "gron",
+      "styrke": "0–7 hp",
+      "viser": "Længste farve – eller doblers senest viste farve med fit"
+    },
+    {
+      "bud": "Spring i farven",
+      "noegle": "gron",
+      "styrke": "8–11 hp",
+      "viser": "Invit"
+    },
+    {
+      "bud": "Cuebid i modpartens farve",
+      "noegle": "bla",
+      "styrke": "12+ hp",
+      "viser": "Krav"
+    },
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "viser": "Styrke i modpartens doblede farve – doblingen bliver straf"
     }
   ],
   "fortsaettelser": [
@@ -490,9 +516,7 @@
     "Efter dobling af åbningen bortfalder Two over One.",
     "2NT efter dobling er Truscott (10+ sp, 4+ trumf), ikke Bekkasin. Med 3 trumf og 10+ hp redobles."
   ],
-  "aabne": [
-    "Konkurrencedoblingens intervaller for makkers svar er endnu ikke fastlagt i kilden."
-  ],
+  "aabne": [],
   "relaterede": [
     "Kravpas og Loven",
     "Bekkasin",
