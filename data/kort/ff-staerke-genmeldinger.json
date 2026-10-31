@@ -35,7 +35,7 @@
     "tekst": "Du har åbnet, og makker har svaret på 1-trinnet.",
     "gaelderFor": "Åbners genmelding efter svar på 1-trinnet"
   },
-  "kortfortalt": "Jo større spring, jo stærkere hånd: ny farve på 2-trinnet er naturlig og ikke krav (12–15), spring i ny farve er 16+ og krav i én runde, og med 19+ viser åbner udgangskraft i næste melding. Efter åbners 2NT (18–19) spørger 3♣ efter åbners majorfordeling.",
+  "kortfortalt": "Jo større spring, jo stærkere hånd: ny højere farve på 2-trinnet er naturlig og ikke krav (12–15), og spring i den er 16+ og krav i én runde – med 19+ viser åbner udgangskraft i næste melding. Ny lavere farve er 12–18 og ikke krav, og spring i den er 19–21 og udgangskrav. Efter åbners 2NT (18–19) spørger 3♣ efter åbners majorfordeling.",
   "meldinger": [
     {
       "bud": "1NT",
@@ -50,7 +50,13 @@
       "viser": "6-farve"
     },
     {
-      "bud": "Ny farve på 2-trinnet",
+      "bud": "Ny lavere farve på 2-trinnet",
+      "noegle": "gron",
+      "styrke": "12–18 hp",
+      "viser": "Naturlig, ikke krav – koster ikke plads, svarer kan give præference på 2-trinnet"
+    },
+    {
+      "bud": "Ny højere farve på 2-trinnet",
       "noegle": "gron",
       "styrke": "12–15 hp",
       "viser": "Naturlig, 5-4, ikke krav"
@@ -68,10 +74,16 @@
       "viser": "God 6-farve, inviterende"
     },
     {
-      "bud": "Spring i ny farve",
+      "bud": "Spring i ny højere farve",
       "noegle": "bla",
       "styrke": "16+ hp",
       "viser": "Ubalanceret, 5-4 eller bedre. Krav i én runde; med 19+ udgangskraft i næste melding"
+    },
+    {
+      "bud": "Spring i ny lavere farve",
+      "noegle": "bla",
+      "styrke": "19–21 hp",
+      "viser": "Ubalanceret, 5-4 eller bedre. Udgangskrav"
     },
     {
       "bud": "3NT",
@@ -81,6 +93,52 @@
     }
   ],
   "fortsaettelser": [
+    {
+      "titel": "Åbner efter 1♥ – 1NT",
+      "auction": [
+        [
+          "Dig",
+          "1♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "2♠",
+          "noegle": "gron",
+          "styrke": "12–15 hp",
+          "viser": "Naturlig, 5-4, ikke krav"
+        },
+        {
+          "bud": "3♠",
+          "noegle": "bla",
+          "styrke": "16+ hp",
+          "viser": "5-4 eller 5-5. Krav i én runde"
+        },
+        {
+          "bud": "3♣ / 3♦",
+          "noegle": "bla",
+          "styrke": "15–18 hp",
+          "viser": "5-5. Rundekrav"
+        }
+      ],
+      "note": "Spar er højere end åbningsfarven, så 3♠ følger springet i ny højere farve. 3♣ og 3♦ er som før."
+    },
     {
       "titel": "Svarer efter 2NT: 3♣ checkback",
       "auction": [
@@ -223,29 +281,29 @@
       ],
       "haand": {
         "S": [
-          11,
-          4
+          14,
+          10
         ],
         "H": [
-          12,
-          11
+          3
         ],
         "D": [
           14,
           13,
           11,
-          9,
-          8
-        ],
-        "C": [
-          14,
           8,
           7,
           2
+        ],
+        "C": [
+          14,
+          13,
+          9,
+          6
         ]
       },
       "svar": "3♣",
-      "forklaring": "5-4 med klør og 16 hp: spring til 3♣ – krav i én runde (16+)."
+      "forklaring": "5-4 med klør og 19 hp: spring til 3♣ – udgangskrav (19–21)."
     },
     {
       "auction": [
@@ -273,24 +331,73 @@
       "haand": {
         "S": [
           13,
-          6
+          10
         ],
         "H": [
           14,
+          10,
+          6,
+          3
+        ],
+        "D": [
+          14,
+          13,
+          12,
+          10,
+          3
+        ],
+        "C": [
           8,
-          2
+          4
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "5-4 med hjerter og 16 hp: spring til 3♥ – krav i én runde (16+)."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "1♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "1♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          14,
+          5,
+          3
+        ],
+        "H": [
+          12,
+          4
         ],
         "D": [
           14,
           13,
           9,
-          7,
-          3,
+          6,
+          5,
           2
         ],
         "C": [
-          12,
-          6
+          13,
+          7
         ]
       },
       "svar": "3♦",
@@ -322,24 +429,24 @@
       "haand": {
         "S": [
           13,
-          8,
-          7
+          4,
+          2
         ],
         "H": [
-          13,
+          14,
           11,
-          6
+          10
         ],
         "D": [
           14,
           13,
-          10,
-          6,
-          3
+          5,
+          4
         ],
         "C": [
           13,
-          12
+          11,
+          7
         ]
       },
       "svar": "2NT",
@@ -379,24 +486,24 @@
       "haand": {
         "S": [
           13,
-          12,
           11,
-          8,
-          7
+          10,
+          7,
+          5
         ],
         "H": [
           11,
-          10,
-          7
+          10
         ],
         "D": [
-          12,
-          3
+          14,
+          13,
+          7,
+          4,
+          2
         ],
         "C": [
-          12,
-          11,
-          10
+          9
         ]
       },
       "svar": "3♣",
@@ -443,25 +550,25 @@
       ],
       "haand": {
         "S": [
-          14,
-          8
+          11,
+          10
         ],
         "H": [
-          12,
-          11,
+          14,
+          8,
           6,
           4
         ],
         "D": [
           14,
           13,
-          9,
+          12,
           5
         ],
         "C": [
           14,
-          9,
-          2
+          6,
+          3
         ]
       },
       "svar": "3♥",
@@ -469,7 +576,7 @@
     }
   ],
   "faldgruber": [
-    "Springet i ny farve er krav i én runde, ikke udgangskrav. Med 16+ og 5-4 springes; under 16 meldes den nye farve naturligt og ikke krav. Med 19+ viser åbner udgangskraft i næste melding.",
+    "Grænsen afhænger af farven: i en ny højere farve springes med 16+ (krav i én runde), i en ny lavere farve først med 19+ (udgangskrav). Med 16–18 og 5-4 i de to lave farver meldes bare 2♣.",
     "3♣ checkback er kunstig og krav til udgang – ikke en flugt til klør.",
     "Splinter indgår ikke: kortfarver vises først via cuebid, når trumf er fastlagt."
   ],
