@@ -34,9 +34,9 @@ Kun ordlyd i dansk og engelsk tekst. Ingen ændringer i logik, data eller layout
 
 Efter Franks svar på listens Tillæg (31. oktober 2026):
 
-- [ ] T1–T4 står i beskrivende form på dansk og engelsk: søgningens besked uden træf, overskriften over metodevalget, trænernes slutskærm og de tre trænerbeskrivelser.
-- [ ] Testens venteliste er væk, så `tjek_bydeform.py` fejler på alle nye bydeformer, og den og de øvrige tests består.
-- [ ] Flettet og udgivet efter forsiden; de udgivne sider er tjekket.
+- [x] T1–T4 står i beskrivende form på dansk og engelsk: søgningens besked uden træf, overskriften over metodevalget, trænernes slutskærm og de tre trænerbeskrivelser.
+- [x] Testens venteliste er væk, så `tjek_bydeform.py` fejler på alle nye bydeformer, og den og de øvrige tests består.
+- [x] Flettet ind på `main` efter Franks godkendelse og udgivet efter forsiden.
 
 ## Afklaret
 
