@@ -30,7 +30,7 @@ Kun ordlyd i dansk og engelsk tekst. Ingen ændringer i logik, data eller layout
 - [x] De godkendte tekster står i beskrivende form på dansk og engelsk; knapper, links og navne er uændrede.
 - [x] Sidefoden følger Franks valg i A1, samtidig med forsiden og Fordelingstræneren.
 - [x] `python3 tools/tjek_bydeform.py`, `tjek_fagord.py`, `tjek_konventionskort.py` og `tjek_sprog.py` består.
-- [ ] Et skærmbillede af konventionstrænerens forside ligger i `C:\Users\frank\Kontraktbridge\skaermbilleder\beskrivende-form\`.
+- [x] Et skærmbillede af konventionstrænerens forside ligger i `C:\Users\frank\Kontraktbridge\skaermbilleder\beskrivende-form\`.
 
 ## Afklaret
 
