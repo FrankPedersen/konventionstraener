@@ -16,9 +16,9 @@ Husets ord ændres i alle tre repoer (Franks valg 31. oktober 2026; `../CLAUDE.m
 
 ## Accepttest
 
-- [ ] Fagordstesten fejler på kip, kippe, kipper, kippes og kippet og på "Fald eller", "spil på fald" og "fald ="; kipning, kipningen, kipninger, toppe, toppes og falder går igennem.
-- [ ] Ingen af ordene står i konventionstrænerens danske tekst, og "frafald" bruges kun om hold-up.
-- [ ] `tjek_fagord.py`, `tjek_sprog.py`, `tjek_bydeform.py`, `tjek_konventionskort.py`, `tjek_kort_eksempler.py`, `tjek_crowhurst.py`, `tjek_makker2_aftaler.py`, `tjek_skrifttyper.py` og `sprogtjek.py` består.
+- [x] Fagordstesten fejler på kip, kippe, kipper, kippes og kippet og på "Fald eller", "spil på fald" og "fald ="; kipning, kipningen, kipninger, toppe, toppes og falder går igennem.
+- [x] Ingen af ordene står i konventionstrænerens danske tekst, og "frafald" bruges kun om hold-up.
+- [x] `tjek_fagord.py`, `tjek_sprog.py`, `tjek_bydeform.py`, `tjek_konventionskort.py`, `tjek_kort_eksempler.py`, `tjek_crowhurst.py`, `tjek_makker2_aftaler.py`, `tjek_skrifttyper.py` og `sprogtjek.py` består.
 
 ## Afklaret
 
