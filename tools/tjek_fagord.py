@@ -20,7 +20,10 @@ ROD = pathlib.Path(__file__).resolve().parent.parent
 
 IKKE_ORD = [
     (re.compile(r'\bdobbeltknib\w*', re.I), 'dobbelt kipning'),
-    (re.compile(r'\bknib\w*', re.I), 'kipning, kippe'),
+    (re.compile(r'\bknib\w*', re.I), 'kipning'),
+    # Kipning altid som navneord, og toppe farven i stedet for fald (Franks valg 31. oktober 2026)
+    (re.compile(r'\bkip(?:pe|per|pes|pet)?\b', re.I), 'kipning (som navneord)'),
+    (re.compile(r'\bfald\s+eller\b|\bpå\s+fald\b|\bfald\s*=', re.I), 'toppe farven'),
     (re.compile(r'\bsnit(?:tet|ter|tene)?\b', re.I), 'kipning'),
     (re.compile(r'\bblindemand\w*', re.I), 'bordet'),
     (re.compile(r'\bden blinde\b', re.I), 'bordet'),

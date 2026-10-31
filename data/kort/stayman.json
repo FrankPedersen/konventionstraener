@@ -34,7 +34,7 @@
   ],
   "indmelding": [
     {"situation": "Modparten dobler 1NT", "noegle": "gul", "regel": "Stayman gælder fortsat."},
-    {"situation": "Modparten melder ind i farve", "noegle": "gra", "regel": "Stayman frafalder. Med 10+ hp uden hold i deres farve dobler svarer; åbner melder 3NT med hold, ellers melder begge de fire farver nedefra, til der er fundet fit."}
+    {"situation": "Modparten melder ind i farve", "noegle": "gra", "regel": "Stayman bortfalder. Med 10+ hp uden hold i deres farve dobler svarer; åbner melder 3NT med hold, ellers melder begge de fire farver nedefra, til der er fundet fit."}
   ],
   "eksempler": [
     {

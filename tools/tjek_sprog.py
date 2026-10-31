@@ -91,9 +91,23 @@ class Fagord(unittest.TestCase):
             self.assertEqual(fagord.fund(tekst), [], f)
 
     def test_fejler_hvis_man_skriver_knibning(self):
-        self.assertEqual(fagord.fund('Spil en knibning mod damen.'), [('knibning', 'kipning, kippe')])
+        self.assertEqual(fagord.fund('Spil en knibning mod damen.'), [('knibning', 'kipning')])
         self.assertTrue(fagord.fund(fagord.dansk_side("T('Tag en knibning', 'Take a finesse')")))
         self.assertEqual(fagord.fund('I snit giver det 9 stik.'), [])
+
+    def test_kipning_som_navneord_og_toppe(self):
+        # Franks valg 31. oktober 2026 (SPEC-sprog-kipning-toppe.md)
+        for ord_ in ('kip', 'kippe', 'kipper', 'kippes', 'kippet', 'Kip'):
+            self.assertEqual(fagord.fund(f'Man skal {ord_} mod damen.'), [(ord_, 'kipning (som navneord)')], ord_)
+        for tekst in ('Fald eller kipning', 'Med 9 kort spil på fald.', 'fald = 53,1 %'):
+            self.assertEqual([h for _, h in fagord.fund(tekst)], ['toppe farven'], tekst)
+        self.assertEqual(fagord.fund('Kipning, kipningen og kipninger; toppe og toppes; damen falder; i givet fald.'), [])
+
+    def test_frafald_kun_om_hold_up(self):
+        # "frafald" og "falde fra" bruges kun om hold-up (Franks valg 31. oktober 2026)
+        for f, tekst in fagord.dansk_tekst():
+            for m in re.finditer(r'[^.!?]*\b(?:frafald\w*|falde(?:r)?\s+fra)\b[^.!?]*', tekst, re.I):
+                self.assertRegex(m.group(0), r'(?i)hold-?up', f'{f}: {m.group(0).strip()[:100]}')
 
     def test_husets_ord_t1_til_t3(self):
         self.assertEqual(fagord.fund('12 HCP'), [('HCP', 'hp')])
