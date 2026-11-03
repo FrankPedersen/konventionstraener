@@ -10,7 +10,7 @@ Makker 2 og Frank har taget stilling til alle punkter i Bilag C. Aftalerne skriv
 | --- | --- | --- |
 | `viden/2-over-1-makker2.html` | aftalerne nedenfor | andre aftaler |
 | `tools/tjek_makker2_bilag_c.py` (ny), `tools/tjek_makker2_aftaler.py` | accepttesten og den ændrede 2♠ efter 1♥ – 1NT | de andre tjek |
-| Puljer, kort, øvelser, `data/konventioner.json`, `dealer/` | **intet, før Frank har set listen over, hvad der bruger den svage 2♦, 2♦ waiting og det andet negative** | |
+| Puljer, kort, øvelser, `data/konventioner.json`, `data/viden.json`, `dealer/`, notatet om kontrolsvar | listen nedenfor under Træneren (Frank godkendte listen 3. november 2026) | puljen `bekkasin`, der deles med Makker 1 |
 
 ## Aftalerne
 
@@ -38,6 +38,26 @@ Makker 2 og Frank har taget stilling til alle punkter i Bilag C. Aftalerne skriv
 
 12. Alle emner er aftalt, så bilaget er én linje.
 
+## Træneren
+
+Frank fik listen, før noget blev ændret, og godkendte den 3. november 2026.
+
+| Hvad | Ændring |
+| --- | --- |
+| `ff-2kl` | Taget af Træn som `ff-revers`: `"fravalgt": "ff"` og `"system": "forslag"`. Pulje, dealer og kort bliver, og siden kan stadig åbnes. Kortets åbne spørgsmål er besvaret |
+| `forslag-2kl-kontrolsvar` | Hører nu til Makker 2 og linker til afsnit 14. Id'et bliver, så gemte links virker. Kortets krav til åbningen er dokumentets, og det åbne spørgsmål og henvisningen til waiting er væk. Svarmuligheden "Waiting" i bonusspørgsmålet er omskrevet |
+| Notatet `viden/forslag-2klor-kontrolsvar.html` | Står ikke længere som forslag; afsnit 7 siger, at kontrolsvar er aftalt, og at aftalens åbningskrav er dokumentets |
+| `ff-flannery` | Hører nu til Makker 2's åbninger. 5-5 i majorerne åbner 1♥ i puljen, kortet har aftalen efter indmelding, og det åbne spørgsmål er besvaret |
+| `ff-ogust` | Situationen med svag 2♦ er væk (55 hænder), og kortets to eksempler med 2♦ er skiftet til hænder i 2♥ og 2♠ fra puljen |
+| 1♥ med 5-4 under 16 hp | Udelukket i `ff-kravpas`, `ff-doblinger`, `ff-trial-bids`, `ff-revideret-omvendt-bergen` og `ff-two-over-one`, for de hænder åbner 2♦ |
+| `ff-kravpas`, næsekravpas | Pas med lange spar er nu 5-5, for 5-4 med 12–14 hp åbner 2♦ |
+| `ff-doblinger`, støttedobling | 2♠ med 4 spar og 12–15 hp er nu 6-4 |
+| `ff-two-over-one` | 2♠ efter 1♥ – 2♣/2♦ er 5-5 eller 16+ med 5-4, i dealer, pulje og kort |
+| `ff-lebensohl` | Kilden hedder afsnit 15d i stedet for bilag C4; linket virker uændret |
+| `data/viden.json` | Bilag B og notatet om kontrolsvar hører til Makker 2 og står ikke længere som forslag |
+
+Puljerne er ikke bygget helt forfra: kun hænder, der er blevet forkerte, er skiftet ud, så kortenes eksempler stadig findes i puljerne. Dealerne følger de nye regler, så en senere bygning giver det samme.
+
 ## Accepttest
 
 `python3 tools/tjek_makker2_bilag_c.py` (skrevet først):
@@ -51,6 +71,7 @@ Makker 2 og Frank har taget stilling til alle punkter i Bilag C. Aftalerne skriv
 - [x] Afsnit 4's grænser for ny højere farve (12–15 og spring 16+) er uændrede.
 - [x] Bilag B's overskrift siger, at Flannery er valgt, og B1's overskrift, at den er aftalt. B2 og B3 står der stadig.
 - [x] Bilag C er én linje, og indholdsfortegnelsen har hverken C1–C4 eller et link, der peger ud i ingenting.
+- [ ] Træneren følger listen ovenfor, og `python3 tools/tjek_kort_eksempler.py` finder kortenes eksempler i puljerne.
 
 Desuden: `tools/tjek_makker2_aftaler.py` med den ændrede 2♠, `tools/tjek_fagord.py`, `tools/tjek_bydeform.py`, `tools/tjek_sprog.py`, `tools/tjek_konventionskort.py` og `tools/sprogtjek.py`.
 
@@ -62,3 +83,5 @@ Desuden: `tools/tjek_makker2_aftaler.py` med den ændrede 2♠, `tools/tjek_fago
 4. **Følgerettelser:** afsnit 5's "2♠ efter 1♥ = 4+ spar, 5+ hjerter, 15+" følger Flannery, for 5-4 med 15 hp åbnes nu 2♦. Afsnit 4's "Splinter indgår ikke i systemet" nævner de to undtagelser (2/1-forløbet og spring efter 2♣). Afsnit 8's sanstrappe følger afsnit 14. Bilag F's række om Flannery 2♦ er udfyldt, og "17 · De fem doblingstyper" hedder nu "17 · Doblingstyper", fordi afsnittet har flere end fem.
 5. **Åbners farvemelding efter 2♣** følger notatet `viden/forslag-2klor-kontrolsvar.html`, der er kilden til kortet: naturlig med 5+ kort, og spring til 3♥, 3♠, 4♣ eller 4♦ fastlægger trumf.
 6. **Ankeret `#afsnit-c4`** følger Lebensohl-skemaet med ind i afsnit 15d, så linket fra `data/konventioner.json` virker uændret.
+7. **`ff-2kl`** er taget af Træn som `ff-revers` (Franks valg 3. november 2026). Waiting er ikke længere et åbent valg, så forslag ville give et forkert billede.
+8. **`bekkasin`** har 5 hænder med 1♥ og 5-4 under 16 hp, men puljen deles med Makker 1, hvor hænderne er rigtige. Den er ikke ændret; det står Frank frit for at vælge.

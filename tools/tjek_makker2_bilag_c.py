@@ -123,6 +123,107 @@ for s in ('C1 ·', 'C2 ·', 'C3 ·', 'C4 ·', 'waiting', 'fem doblingstyper'):
 if '15d · Forsvar mod svag 2 og 3' not in ren(indhold):
     fejl.append('indholdsfortegnelsen: 15d mangler')
 
+# ---------- Træneren (Franks godkendelse af listen 3. november 2026) ----------
+import json  # noqa: E402
+
+konv = json.loads((ROD / 'data' / 'konventioner.json').read_text(encoding='utf-8'))
+konv = {x['id']: x for x in (konv if isinstance(konv, list) else konv['konventioner'])}
+HP = {14: 4, 13: 3, 12: 2, 11: 1}
+
+
+def kort(i):
+    return json.loads((ROD / 'data' / 'kort' / f'{i}.json').read_text(encoding='utf-8'))
+
+
+def pulje(i):
+    return json.loads((ROD / 'pools' / f'{i}.json').read_text(encoding='utf-8'))
+
+
+def hp_af(h):
+    return sum(HP.get(k, 0) for f in h.values() for k in f)
+
+
+def krav(ok, besked):
+    if not ok:
+        fejl.append(besked)
+
+
+# ff-2kl er taget af Træn som ff-revers, men filerne bliver.
+k = konv['ff-2kl']
+krav(k.get('fravalgt') == 'ff' and k.get('system') == 'forslag', 'ff-2kl: skal være fravalgt i Makker 2 som ff-revers')
+krav('Fravalgt' in k['beskrivelse'] and 'Not adopted' in k['en']['beskrivelse'], 'ff-2kl: beskrivelsen siger ikke, at den er fravalgt')
+for f in ('pools/ff-2kl.json', 'data/kort/ff-2kl.json', 'dealer/ff_2kl.py'):
+    krav((ROD / f).exists(), f'{f}: filen skal blive')
+krav(not kort('ff-2kl').get('aabne'), 'kortet ff-2kl: det åbne spørgsmål er besvaret')
+
+# 2♣ med kontrolsvar er Makker 2's aftale.
+k = konv['forslag-2kl-kontrolsvar']
+krav(k.get('system') == 'ff' and not k.get('fravalgt'), 'forslag-2kl-kontrolsvar: skal høre til Makker 2-systemet')
+krav(k.get('viden', '').endswith('#afsnit-14'), 'forslag-2kl-kontrolsvar: skal linke til afsnit 14')
+c = kort('forslag-2kl-kontrolsvar')
+krav('waiting' not in json.dumps({n: c.get(n) for n in ('aabne', 'forveksles')}, ensure_ascii=False), 'kortet forslag-2kl-kontrolsvar: nævner stadig waiting')
+krav('20+ hp' in c['situation']['tekst'] and '8½' not in c['situation']['tekst'], 'kortet forslag-2kl-kontrolsvar: åbningskravet skal være dokumentets')
+krav('afsnit 14' in c['kilde'], 'kortet forslag-2kl-kontrolsvar: kilden skal være afsnit 14')
+krav('waiting' not in json.dumps(pulje('forslag-2kl-kontrolsvar'), ensure_ascii=False).lower(), 'puljen forslag-2kl-kontrolsvar: nævner stadig waiting')
+for h in pulje('forslag-2kl-kontrolsvar')['hands']:
+    pass
+notat = (ROD / 'viden' / 'forslag-2klor-kontrolsvar.html').read_text(encoding='utf-8')
+krav('Forslag' not in tekst(notat[:notat.index('</title>')]) and 'Notat · Forslag' not in notat, 'notatet om kontrolsvar: står stadig som forslag')
+krav('diskussionsoplæg' not in notat and 'andet negative' not in notat, 'notatet om kontrolsvar: afsnit 7 skal sige, at kontrolsvar er aftalt')
+krav('20+ hp' in notat and '3. november 2026' in notat, 'notatet om kontrolsvar: aftalen og åbningskravet skal stå i afsnit 7')
+
+# Flannery er Makker 2's aftale.
+k = konv['ff-flannery']
+krav(k.get('system') == 'ff' and k.get('gruppe') == 'Åbninger' and k['en'].get('gruppe') == 'Openings', 'ff-flannery: skal høre til Makker 2-systemets åbninger')
+krav('B4' not in k['beskrivelse'] and 'B4' not in k['en']['beskrivelse'], 'ff-flannery: beskrivelsen nævner stadig B4-pakken')
+c = kort('ff-flannery')
+krav(not c.get('aabne'), 'kortet ff-flannery: det åbne spørgsmål er besvaret')
+krav(c.get('indmelding'), 'kortet ff-flannery: aftalen efter indmelding mangler')
+krav(any('5-5' in f for f in c['faldgruber'][2:]), 'kortet ff-flannery: 1♥ skal nævne 5-5')
+p = pulje('ff-flannery')
+fem_fem = [h for h in p['hands'] if h['situation'] == 'aabning' and len(h['hand']['H']) == 5 and len(h['hand']['S']) == 5]
+krav(len(fem_fem) >= 5 and all(h['correct'] == '1♥' for h in fem_fem), 'puljen ff-flannery: 5-5 i majorerne skal åbne 1♥')
+krav(not [h for h in p['hands'] if h['situation'] == 'aabning' and len(h['hand']['H']) == 5 and len(h['hand']['S']) == 4 and h['correct'] != ('2♦' if h['hp'] <= 15 else '1♥')],
+     'puljen ff-flannery: 5-4 skal åbne 2♦ med 11–15 og 1♥ med 16+')
+
+# Den svage 2♦ er væk fra Ogust.
+p = pulje('ff-ogust')
+krav('aab_ru' not in p['situations'] and not [h for h in p['hands'] if h['situation'] == 'aab_ru'], 'puljen ff-ogust: svag 2♦ er der stadig')
+c = kort('ff-ogust')
+krav('2♦' not in c['situation']['tekst'], 'kortet ff-ogust: svag 2♦ står der stadig')
+krav(not [e for e in c['eksempler'] if e['auction'][0][1] == '2♦'], 'kortet ff-ogust: eksempler med svag 2♦')
+
+# 1♥ med 5-4 under 16 hp åbnes nu 2♦. bekkasin deles med Makker 1 og er ikke med.
+for i in ('ff-kravpas', 'ff-doblinger', 'ff-trial-bids', 'ff-revideret-omvendt-bergen', 'ff-two-over-one'):
+    p = pulje(i)
+    for h in p['hands']:
+        a = [b for b in p['situations'].get(h['situation'], {}).get('auction', []) if b[1] != 'Pas']
+        if a and a[0] == ['Dig', '1♥'] and len(h['hand']['H']) == 5 and len(h['hand']['S']) == 4 and h['hp'] < 16:
+            fejl.append(f'puljen {i}: {h["situation"]} åbner 1♥ med 5-4 og {h["hp"]} hp')
+            break
+
+# 2♠ efter 1♥ – 2♣/2♦.
+p = pulje('ff-two-over-one')
+spar = [h for h in p['hands'] if h['situation'] in ('aab_hj_c', 'aab_hj_d') and h['correct'] == '2♠']
+krav(spar and all(len(h['hand']['S']) == 5 or h['hp'] >= 16 for h in spar), 'puljen ff-two-over-one: 2♠ skal være 5-5 eller 16+ med 5-4')
+krav(any(len(h['hand']['S']) == 5 for h in spar), 'puljen ff-two-over-one: 5-5 mangler')
+krav('(15+)' not in ' '.join(h['why'] for h in spar), 'puljen ff-two-over-one: forklaringen siger stadig 15+')
+krav('2♠ (15+)' not in json.dumps(kort('ff-two-over-one'), ensure_ascii=False), 'kortet ff-two-over-one: siger stadig 15+')
+
+# Næsekravpas: pas med lange spar er nu 5-5.
+p = pulje('ff-kravpas')
+pas = [h for h in p['hands'] if h['situation'] == 'naese_hj' and h['correct'] == 'Pas']
+krav(pas and all(len(h['hand']['S']) == 5 for h in pas), 'puljen ff-kravpas: pas i næsekravpas skal være 5-5')
+
+# Lebensohl og vidensiden.
+krav('afsnit 15d' in kort('ff-lebensohl')['kilde'] and 'C4' not in kort('ff-lebensohl')['kilde'], 'kortet ff-lebensohl: kilden skal være afsnit 15d')
+viden = json.loads((ROD / 'data' / 'viden.json').read_text(encoding='utf-8'))
+for x in viden:
+    if x.get('href') == 'viden/forslag-2klor-kontrolsvar.html':
+        krav(x.get('system') == 'ff', 'data/viden.json: notatet om kontrolsvar skal høre til Makker 2')
+    if x.get('href') == 'viden/2-over-1-makker2.html#bilag-b':
+        krav(x.get('system') == 'ff' and 'Flannery er valgt' in x['titel'] + x['beskrivelse'] and 'Diskussionsoplæg' not in x['beskrivelse'], 'data/viden.json: Bilag B skal sige, at Flannery er valgt')
+
 if fejl:
     print('\n'.join(fejl))
     print(f'\n{len(fejl)} fejl')
