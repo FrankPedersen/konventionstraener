@@ -1,5 +1,5 @@
 """
-Forslag: 2♣ med kontrolsvar (notat efter Michael Staub, 2019).
+2♣ med kontrolsvar – Makker 2 & mig, afsnit 14 (aftalt 3. november 2026; notat efter Michael Staub, 2019).
 
 Kontroller: es = 2, konge = 1. Puljen dækker:
   svar_1     – svarers første melding på 2♣: 2♦ 0–1 · 2♥ 2 · 2♠ 3 · 2NT 4 · 3♣ 5+ kontroller ·
@@ -152,7 +152,7 @@ BONUS = {
                        "Ace = 2 controls, king = 1. Queens and jacks do not count – they rarely stop losers in slam.")},
     "2ru": {"q": tx("Hvad viste makkers 2♦?", "What did partner's 2♦ show?"),
             "correct": C_01,
-            "options": [C_01, tx("Waiting – intet om styrken", "Waiting – nothing about strength"), C_2],
+            "options": [C_01, tx("Intet om styrken", "Nothing about strength"), C_2],
             "why": tx("2♦ viser 0–1 kontrol: intet es og højst én konge.", "2♦ shows 0–1 controls: no ace and at most one king.")},
     "2hj": {"q": tx("Hvad viste makkers 2♥?", "What did partner's 2♥ show?"),
             "correct": C_2,

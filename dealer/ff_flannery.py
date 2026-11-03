@@ -1,9 +1,9 @@
 """
-Flannery 2♦ – forslag til Makker 2 & mig, bilag B1 (diskussionsoplæg, ikke vedtaget). Alertér 2♦ og 2NT.
+Flannery 2♦ – Makker 2 & mig, bilag B1 (aftalt 3. november 2026). Alertér 2♦ og 2NT.
 
 2♦ viser præcis 5 hjerter og 4 spar, 11–15 hp. Ikke krav, men makker passer kun med ruderlængde.
   aabning – åbner: 5♥ og 4♠ med 11–15 → 2♦ · med 16–21 → 1♥ (1♥ benægter herefter fire spar under 16 hp) ·
-            5♥ uden fire spar → 1♥
+            5♥ uden fire spar → 1♥ · 5-5 i majorerne → 1♥
   svar    – svarer efter 2♦: pas = lang ruder og svag · 2♥/2♠ = præference, svag (slutmelding) · 2NT = spørger (krav) ·
             3♥/3♠ = invit med god støtte · 4♥/4♠ = udgang · 3♣/3♦ = naturligt, egen god 6-farve, ikke krav
   spm     – åbner efter 2♦ – 2NT: 3♣/3♦ fire kort i minoren, minimum (11–13) · 3♥ minimum uden sidefarve (5-4-2-2) ·
@@ -11,7 +11,7 @@ Flannery 2♦ – forslag til Makker 2 & mig, bilag B1 (diskussionsoplæg, ikke 
             4♣/4♦ fire kort i minoren, maksimum
 Antagelser, som bilaget ikke giver tal for: fit = 3+ hjerter eller 4+ spar; svag = 0–9 hp, invit = 10–12, udgang =
 13–15; 2NT = 13–17 hp uden fit; pas = 6+ ruder og 0–7 hp uden fit; 3♣/3♦ = 8–11 hp, god 6-farve (to af de tre
-øverste) uden fit; hold = es, K-x, D-x-x eller B-x-x-x. Ikke med: 5-5 i majorerne (skal aftales), 5♥ med 15–17 jævn
+øverste) uden fit; hold = es, K-x, D-x-x eller B-x-x-x. Ikke med: 5♥ med 15–17 jævn
 (1NT kan rumme en 5-farve), svarer med fit i begge majorer eller 16+ og fit, og 5-4-3-1 efter 2NT – bilaget siger
 ikke hvad.
 """
@@ -28,9 +28,9 @@ BONUS = {
                 "options": [FLANNERY, tx("En svag 2 i ruder", "A weak two in diamonds"),
                             tx("En svag 2 i en ukendt major (Multi)", "A weak two in an unknown major (Multi)")],
                 "why": tx("Flannery 2♦ viser præcis 5-4 i majorerne med 11–15 hp. Med 16+ åbner man 1♥ og melder spar bagefter, "
-                          "så 1♥ benægter fire spar under 16 hp.",
+                          "så 1♥ benægter fire spar under 16 hp. Med 5-5 i majorerne åbner man også 1♥.",
                           "Flannery 2♦ shows exactly 5-4 in the majors with 11–15 HCP. With 16+ you open 1♥ and bid spades later, "
-                          "so 1♥ denies four spades below 16 HCP.")},
+                          "so 1♥ denies four spades below 16 HCP. With 5-5 in the majors you also open 1♥.")},
     "svar": {"q": tx("Hvornår må svarer passe Flannery 2♦?", "When may responder pass Flannery 2♦?"),
              "correct": PASSE,
              "options": [PASSE, tx("Med enhver svag hånd", "With any weak hand"), tx("Aldrig – 2♦ er krav", "Never – 2♦ is forcing")],
@@ -56,6 +56,11 @@ def good6(cards):
 
 def opening(hand, hp):
     L = lengths_of(hand)
+    if L['H'] == 5 and L['S'] == 5:
+        if 12 <= hp <= 21:
+            return "1♥", tx(f"5-5 i majorerne og {hp} hp: 1♥ – Flannery lover præcis 5-4.",
+                            f"5-5 in the majors and {hp} HCP: 1♥ – Flannery promises exactly 5-4.")
+        return None
     if L['H'] != 5 or L['S'] >= 5 or L['C'] > 4 or L['D'] > 4:
         return None
     if L['S'] == 4:
@@ -138,7 +143,7 @@ CLASSIFIERS = {"aabning": opening, "svar": answer, "spm": relay}
 fl = lambda hp, **b: tpl(hp, **{'H': (5, 5), 'S': (4, 4), 'D': (0, 4), 'C': (0, 4), **b})
 r = lambda hp, **b: tpl(hp, **{'H': (0, 2), 'S': (0, 3), 'D': (1, 5), 'C': (1, 5), **b})
 SAMPLERS = {
-    "aabning": {"2♦": fl((11, 15)), "1♥": either(fl((16, 21)), tpl((12, 21), H=(5, 5), S=(1, 3), D=(1, 4), C=(1, 4)))},
+    "aabning": {"2♦": fl((11, 15)), "1♥": either(fl((16, 21)), tpl((12, 21), H=(5, 5), S=(1, 3), D=(1, 4), C=(1, 4)), tpl((12, 21), H=(5, 5), S=(5, 5), D=(0, 3), C=(0, 3)))},
     "svar": {"2♥": r((0, 9), H=(3, 4)), "2♠": r((0, 9), S=(4, 5)), "3♥": r((10, 12), H=(3, 4)), "3♠": r((10, 12), S=(4, 5)),
              "4♥": r((13, 15), H=(3, 4)), "4♠": r((13, 15), S=(4, 5)), "2NT": r((13, 17)),
              "3♣": r((8, 11), C=(6, 7), D=(1, 3)), "3♦": r((8, 11), D=(6, 7), C=(1, 3)), "Pas": r((0, 7), D=(6, 7), C=(1, 3))},

@@ -483,39 +483,6 @@
    "situation": "aab_hj",
    "hand": {
     "S": [
-     14,
-     11,
-     9,
-     4
-    ],
-    "H": [
-     13,
-     11,
-     10,
-     8,
-     3
-    ],
-    "D": [
-     12,
-     8,
-     7
-    ],
-    "C": [
-     7
-    ]
-   },
-   "hp": 11,
-   "sp": 14,
-   "correct": "Pas",
-   "why": "14 sp (11 hp + single ♣ = 3): pas – udgang er udelukket over for 6–9.",
-   "en": {
-    "why": "14 support points (11 HCP + singleton ♣ = 3): pass – game is out of reach opposite 6–9."
-   }
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
      13,
      11,
      3
@@ -879,6 +846,39 @@
    "situation": "aab_hj",
    "hand": {
     "S": [
+     12,
+     3
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     8,
+     5,
+     3
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "14 sp (11 hp + double ♠ = 1 + double ♣ = 1 + 1 ekstra trumf): pas – udgang er udelukket over for 6–9.",
+   "en": {
+    "why": "14 support points (11 HCP + doubleton ♠ = 1 + doubleton ♣ = 1 + 1 extra trump): pass – game is out of reach opposite 6–9."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
      7,
      3
     ],
@@ -906,39 +906,6 @@
    "why": "16 sp (13 hp + double ♠ = 1 + double ♦ = 1 + 1 ekstra trumf), men ingen sidefarve med 2–3 tabere: 3♥ – invit.",
    "en": {
     "why": "16 support points (13 HCP + doubleton ♠ = 1 + doubleton ♦ = 1 + 1 extra trump), but no side suit with 2–3 losers: 3♥ – invitational."
-   }
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     14,
-     13,
-     12,
-     6
-    ],
-    "H": [
-     14,
-     9,
-     6,
-     4,
-     3
-    ],
-    "D": [
-     11,
-     3
-    ],
-    "C": [
-     8,
-     7
-    ]
-   },
-   "hp": 14,
-   "sp": 16,
-   "correct": "3♥",
-   "why": "16 sp (14 hp + double ♦ = 1 + double ♣ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit.",
-   "en": {
-    "why": "16 support points (14 HCP + doubleton ♦ = 1 + doubleton ♣ = 1), but no side suit with 2–3 losers: 3♥ – invitational."
    }
   },
   {
@@ -1071,72 +1038,6 @@
    "why": "16 sp (14 hp + double ♠ = 1 + double ♦ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit.",
    "en": {
     "why": "16 support points (14 HCP + doubleton ♠ = 1 + doubleton ♦ = 1), but no side suit with 2–3 losers: 3♥ – invitational."
-   }
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     13,
-     12,
-     8,
-     5
-    ],
-    "H": [
-     13,
-     12,
-     9,
-     6,
-     4
-    ],
-    "D": [
-     14,
-     6
-    ],
-    "C": [
-     9,
-     4
-    ]
-   },
-   "hp": 14,
-   "sp": 16,
-   "correct": "3♥",
-   "why": "16 sp (14 hp + double ♦ = 1 + double ♣ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit.",
-   "en": {
-    "why": "16 support points (14 HCP + doubleton ♦ = 1 + doubleton ♣ = 1), but no side suit with 2–3 losers: 3♥ – invitational."
-   }
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     13,
-     12,
-     7,
-     3
-    ],
-    "H": [
-     13,
-     12,
-     7,
-     5,
-     3
-    ],
-    "D": [
-     10,
-     3
-    ],
-    "C": [
-     13,
-     7
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "3♥",
-   "why": "15 sp (13 hp + double ♦ = 1 + double ♣ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit.",
-   "en": {
-    "why": "15 support points (13 HCP + doubleton ♦ = 1 + doubleton ♣ = 1), but no side suit with 2–3 losers: 3♥ – invitational."
    }
   },
   {
@@ -1302,6 +1203,105 @@
    "why": "15 sp (13 hp + double ♠ = 1 + double ♣ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit.",
    "en": {
     "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♣ = 1), but no side suit with 2–3 losers: 3♥ – invitational."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     4,
+     3
+    ],
+    "H": [
+     13,
+     6,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     10
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 16,
+   "correct": "3♥",
+   "why": "16 sp (14 hp + double ♠ = 1 + double ♦ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit.",
+   "en": {
+    "why": "16 support points (14 HCP + doubleton ♠ = 1 + doubleton ♦ = 1), but no side suit with 2–3 losers: 3♥ – invitational."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     12,
+     11
+    ],
+    "H": [
+     13,
+     12,
+     8,
+     7,
+     2
+    ],
+    "D": [
+     6,
+     4
+    ],
+    "C": [
+     13,
+     12,
+     8,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 15,
+   "correct": "3♥",
+   "why": "15 sp (13 hp + double ♠ = 1 + double ♦ = 1), men ingen sidefarve med 2–3 tabere: 3♥ – invit.",
+   "en": {
+    "why": "15 support points (13 HCP + doubleton ♠ = 1 + doubleton ♦ = 1), but no side suit with 2–3 losers: 3♥ – invitational."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     3
+    ],
+    "H": [
+     13,
+     8,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     3,
+     2
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "3♥",
+   "why": "16 sp (13 hp + single ♣ = 3), men ingen sidefarve med 2–3 tabere: 3♥ – invit.",
+   "en": {
+    "why": "16 support points (13 HCP + singleton ♣ = 3), but no side suit with 2–3 losers: 3♥ – invitational."
    }
   },
   {
@@ -1737,39 +1737,6 @@
    "situation": "aab_hj",
    "hand": {
     "S": [
-     14,
-     12,
-     10,
-     9
-    ],
-    "H": [
-     14,
-     11,
-     7,
-     5,
-     2
-    ],
-    "D": [
-     4
-    ],
-    "C": [
-     12,
-     4,
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "3♣",
-   "why": "16 sp (13 hp + single ♦ = 3) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
-   "en": {
-    "why": "16 support points (13 HCP + singleton ♦ = 3) and 2 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
-   }
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
      2
     ],
     "H": [
@@ -1869,39 +1836,6 @@
    "situation": "aab_hj",
    "hand": {
     "S": [
-     13,
-     12,
-     7,
-     2
-    ],
-    "H": [
-     11,
-     10,
-     6,
-     5,
-     2
-    ],
-    "D": [
-     14
-    ],
-    "C": [
-     12,
-     9,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♣",
-   "why": "15 sp (12 hp + single ♦ = 3) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
-   "en": {
-    "why": "15 support points (12 HCP + singleton ♦ = 3) and 2 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
-   }
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
      14,
      12,
      9
@@ -1929,39 +1863,6 @@
    "why": "15 sp (12 hp + single ♦ = 3) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
    "en": {
     "why": "15 support points (12 HCP + singleton ♦ = 3) and 2 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
-   }
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     13,
-     12,
-     9,
-     2
-    ],
-    "H": [
-     12,
-     11,
-     10,
-     6,
-     3
-    ],
-    "D": [
-     12
-    ],
-    "C": [
-     13,
-     10,
-     9
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "3♣",
-   "why": "16 sp (13 hp + single ♦ = 3) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
-   "en": {
-    "why": "16 support points (13 HCP + singleton ♦ = 3) and 2 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
    }
   },
   {
@@ -2028,39 +1929,6 @@
    "why": "17 sp (14 hp + single ♠ = 3) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
    "en": {
     "why": "17 support points (14 HCP + singleton ♠ = 3) and 2 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
-   }
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     14,
-     11,
-     9,
-     4
-    ],
-    "H": [
-     14,
-     10,
-     9,
-     8,
-     6
-    ],
-    "D": [
-     13
-    ],
-    "C": [
-     9,
-     7,
-     6
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♣",
-   "why": "15 sp (12 hp + single ♦ = 3) og 3 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
-   "en": {
-    "why": "15 support points (12 HCP + singleton ♦ = 3) and 3 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
    }
   },
   {
@@ -2160,6 +2028,138 @@
    "why": "15 sp (12 hp + single ♠ = 3) og 3 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
    "en": {
     "why": "15 support points (12 HCP + singleton ♠ = 3) and 3 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
+     12,
+     10,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     2
+    ],
+    "C": [
+     13,
+     9,
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "15 sp (12 hp + single ♠ = 3) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "15 support points (12 HCP + singleton ♠ = 3) and 2 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     10,
+     9,
+     6
+    ],
+    "D": [
+     2
+    ],
+    "C": [
+     11,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "16 sp (12 hp + single ♦ = 3 + 1 ekstra trumf) og 3 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (12 HCP + singleton ♦ = 3 + 1 extra trump) and 3 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     13,
+     11,
+     9,
+     8,
+     7,
+     4
+    ],
+    "D": [
+     14,
+     10
+    ],
+    "C": [
+     11,
+     10,
+     8,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "3♣",
+   "why": "17 sp (12 hp + single ♠ = 3 + double ♦ = 1 + 1 ekstra trumf) og 3 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "17 support points (12 HCP + singleton ♠ = 3 + doubleton ♦ = 1 + 1 extra trump) and 3 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     2
+    ],
+    "H": [
+     13,
+     12,
+     6,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     3,
+     2
+    ],
+    "C": [
+     14,
+     10,
+     4
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♣",
+   "why": "16 sp (12 hp + single ♠ = 3 + 1 ekstra trumf) og 2 tabere i klør – den svageste farve: 3♣ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (12 HCP + singleton ♠ = 3 + 1 extra trump) and 2 losers in clubs – the weakest suit: 3♣ is a trial bid and asks for help there."
    }
   },
   {
@@ -2298,39 +2298,6 @@
    "situation": "aab_hj",
    "hand": {
     "S": [
-     14,
-     13,
-     7,
-     3
-    ],
-    "H": [
-     11,
-     9,
-     7,
-     6,
-     4
-    ],
-    "D": [
-     14,
-     6,
-     3
-    ],
-    "C": [
-     8
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (12 hp + single ♣ = 3) og 2 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
-   "en": {
-    "why": "15 support points (12 HCP + singleton ♣ = 3) and 2 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
-   }
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
      10,
      5
     ],
@@ -2391,39 +2358,6 @@
    "why": "17 sp (14 hp + single ♠ = 3) og 3 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
    "en": {
     "why": "17 support points (14 HCP + singleton ♠ = 3) and 3 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
-   }
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     13,
-     12,
-     10,
-     4
-    ],
-    "H": [
-     13,
-     10,
-     9,
-     8,
-     7
-    ],
-    "D": [
-     13,
-     11,
-     2
-    ],
-    "C": [
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "3♦",
-   "why": "15 sp (12 hp + single ♣ = 3) og 2 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
-   "en": {
-    "why": "15 support points (12 HCP + singleton ♣ = 3) and 2 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
    }
   },
   {
@@ -2529,33 +2463,99 @@
    "situation": "aab_hj",
    "hand": {
     "S": [
-     14,
-     13,
-     9,
-     6
+     12,
+     3
     ],
     "H": [
      13,
      12,
      11,
+     10,
      8,
-     6
+     3
+    ],
+    "D": [
+     14,
+     10,
+     3,
+     2
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "3♦",
+   "why": "17 sp (12 hp + double ♠ = 1 + single ♣ = 3 + 1 ekstra trumf) og 2 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "17 support points (12 HCP + doubleton ♠ = 1 + singleton ♣ = 3 + 1 extra trump) and 2 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     13,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     8,
+     6,
+     5
     ],
     "D": [
      11,
-     5,
-     4
+     7,
+     3
     ],
     "C": [
-     6
+     12
     ]
    },
-   "hp": 14,
-   "sp": 17,
+   "hp": 12,
+   "sp": 15,
    "correct": "3♦",
-   "why": "17 sp (14 hp + single ♣ = 3) og 3 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
+   "why": "16 sp (12 hp + single ♣ = 3 + 1 ekstra trumf) og 3 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
    "en": {
-    "why": "17 support points (14 HCP + singleton ♣ = 3) and 3 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
+    "why": "16 support points (12 HCP + singleton ♣ = 3 + 1 extra trump) and 3 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9
+    ],
+    "H": [
+     14,
+     10,
+     8,
+     7,
+     6,
+     2
+    ],
+    "D": [
+     12,
+     11,
+     8
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "3♦",
+   "why": "16 sp (12 hp + single ♣ = 3 + 1 ekstra trumf) og 2 tabere i ruder – den svageste farve: 3♦ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "16 support points (12 HCP + singleton ♣ = 3 + 1 extra trump) and 2 losers in diamonds – the weakest suit: 3♦ is a trial bid and asks for help there."
    }
   },
   {
@@ -2893,39 +2893,6 @@
    "hand": {
     "S": [
      12,
-     9,
-     8,
-     6
-    ],
-    "H": [
-     13,
-     11,
-     10,
-     9,
-     6
-    ],
-    "D": [
-     11,
-     4
-    ],
-    "C": [
-     14,
-     12
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "2♠",
-   "why": "15 sp (13 hp + double ♦ = 1 + double ♣ = 1) og 2 tabere i spar – den svageste farve: 2♠ er trial bid og beder om hjælp dér.",
-   "en": {
-    "why": "15 support points (13 HCP + doubleton ♦ = 1 + doubleton ♣ = 1) and 2 losers in spades – the weakest suit: 2♠ is a trial bid and asks for help there."
-   }
-  },
-  {
-   "situation": "aab_hj",
-   "hand": {
-    "S": [
-     12,
      10,
      7,
      4
@@ -2952,6 +2919,39 @@
    "why": "17 sp (12 hp + double ♦ = 1 + single ♣ = 3 + 1 ekstra trumf) og 2 tabere i spar – den svageste farve: 2♠ er trial bid og beder om hjælp dér.",
    "en": {
     "why": "17 support points (12 HCP + doubleton ♦ = 1 + singleton ♣ = 3 + 1 extra trump) and 2 losers in spades – the weakest suit: 2♠ is a trial bid and asks for help there."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     14,
+     10,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     8,
+     4,
+     2
+    ],
+    "D": [
+     12,
+     7,
+     5
+    ],
+    "C": [
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "17 sp (13 hp + single ♣ = 3 + 1 ekstra trumf) og 2 tabere i spar – den svageste farve: 2♠ er trial bid og beder om hjælp dér.",
+   "en": {
+    "why": "17 support points (13 HCP + singleton ♣ = 3 + 1 extra trump) and 2 losers in spades – the weakest suit: 2♠ is a trial bid and asks for help there."
    }
   },
   {

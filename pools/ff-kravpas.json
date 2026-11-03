@@ -6137,132 +6137,66 @@
    "situation": "naese_hj",
    "hand": {
     "S": [
-     10,
-     7,
-     6,
-     3
-    ],
-    "H": [
-     13,
      12,
      11,
-     7,
-     4
-    ],
-    "D": [
-     11
-    ],
-    "C": [
-     14,
-     11,
-     7
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
-   "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
-   }
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     12,
-     9,
-     7,
-     2
-    ],
-    "H": [
-     12,
-     11,
-     9,
-     6,
-     4
-    ],
-    "D": [
-     14,
-     13,
-     10
-    ],
-    "C": [
-     5
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
-   "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
-   }
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     12,
-     8,
-     7,
-     5
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     5,
-     2
-    ],
-    "D": [
-     13,
-     7,
-     2
-    ],
-    "C": [
-     7
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
-   "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
-   }
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     14,
-     13,
-     5,
-     2
-    ],
-    "H": [
-     13,
-     12,
      9,
      8,
+     7
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     7,
      4
     ],
     "D": [
-     6,
-     3
+     4
     ],
     "C": [
-     11,
+     14,
      5
     ]
    },
    "hp": 13,
-   "sp": 15,
+   "sp": 17,
    "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
    "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
+    "why": "5 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     13,
+     9,
+     8,
+     6,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     14,
+     9
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "Pas",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "5 spades: you are long in their suit yourself – pass."
    }
   },
   {
@@ -6270,164 +6204,197 @@
    "hand": {
     "S": [
      14,
-     11,
-     8,
-     3
+     12,
+     10,
+     9,
+     6
     ],
     "H": [
      14,
+     12,
      10,
-     7,
-     4,
-     2
+     6,
+     4
     ],
     "D": [
-     13,
-     10,
-     4
+     12,
+     2
     ],
     "C": [
      9
     ]
    },
-   "hp": 12,
-   "sp": 15,
+   "hp": 14,
+   "sp": 18,
    "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
    "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
+    "why": "5 spades: you are long in their suit yourself – pass."
    }
   },
   {
    "situation": "naese_hj",
    "hand": {
     "S": [
-     12,
+     14,
+     13,
      11,
      10,
-     6
+     5
     ],
     "H": [
      13,
      12,
      9,
-     5,
+     6,
      2
     ],
     "D": [
-     13,
-     7,
-     2
+     10,
+     4
     ],
     "C": [
-     11
+     10
     ]
    },
-   "hp": 12,
-   "sp": 15,
+   "hp": 13,
+   "sp": 17,
    "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
    "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
+    "why": "5 spades: you are long in their suit yourself – pass."
    }
   },
   {
    "situation": "naese_hj",
    "hand": {
     "S": [
-     14,
-     12,
-     6,
-     3
+     13,
+     11,
+     10,
+     7,
+     4
     ],
     "H": [
      14,
-     10,
+     12,
      8,
-     7,
+     6,
      5
     ],
     "D": [
      12,
-     3
+     4
     ],
     "C": [
-     7,
-     3
+     12
     ]
    },
-   "hp": 12,
-   "sp": 14,
+   "hp": 14,
+   "sp": 18,
    "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
    "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
+    "why": "5 spades: you are long in their suit yourself – pass."
    }
   },
   {
    "situation": "naese_hj",
    "hand": {
     "S": [
+     13,
      12,
-     11,
-     8,
+     10,
+     7,
      2
     ],
     "H": [
+     14,
      13,
-     8,
-     6,
+     7,
      5,
      2
     ],
     "D": [
+     5
+    ],
+    "C": [
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "5 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     8,
+     5
+    ],
+    "H": [
+     11,
+     10,
+     8,
+     5,
+     4
+    ],
+    "D": [
+     7,
+     4
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "5 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     9,
+     6
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     8,
+     5
+    ],
+    "D": [
+     7,
+     6
+    ],
+    "C": [
      13
-    ],
-    "C": [
-     14,
-     4,
-     2
     ]
    },
-   "hp": 13,
+   "hp": 12,
    "sp": 16,
    "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
    "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
-   }
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     14,
-     12,
-     10,
-     8
-    ],
-    "H": [
-     14,
-     12,
-     11,
-     10,
-     9
-    ],
-    "D": [
-     6
-    ],
-    "C": [
-     11,
-     3,
-     2
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
-   "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
+    "why": "5 spades: you are long in their suit yourself – pass."
    }
   },
   {
@@ -6436,31 +6403,31 @@
     "S": [
      14,
      13,
-     5,
-     4
+     8,
+     6,
+     3
     ],
     "H": [
      14,
-     11,
+     12,
      9,
-     8,
-     7
+     3,
+     2
     ],
     "D": [
-     7
+     7,
+     4
     ],
     "C": [
-     9,
-     8,
-     4
+     7
     ]
    },
-   "hp": 12,
-   "sp": 15,
+   "hp": 13,
+   "sp": 17,
    "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
    "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
+    "why": "5 spades: you are long in their suit yourself – pass."
    }
   },
   {
@@ -6469,19 +6436,514 @@
     "S": [
      14,
      10,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     12,
+     11,
+     8,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     5
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "Pas",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "5 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     13,
      9,
+     7,
+     6,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "5 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     13,
+     10,
+     8,
+     7,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     9,
+     4
+    ],
+    "D": [
+     9
+    ],
+    "C": [
+     13,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "Pas",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "5 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     11,
+     7,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "5 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     11,
+     6,
+     5
+    ],
+    "H": [
+     13,
+     10,
+     8,
+     3,
+     2
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     13,
+     11
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "Pas",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "5 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     10,
+     7,
+     3
+    ],
+    "H": [
+     10,
+     8,
+     7,
+     6,
+     5
+    ],
+    "D": [
+     14,
+     8
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "5 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     7,
+     5,
+     2
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     12,
+     3
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "5 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     13,
+     10,
+     9,
+     5,
+     3
+    ],
+    "H": [
+     13,
+     10,
+     5,
+     4,
+     2
+    ],
+    "D": [
+     13,
+     6
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "5 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     14,
+     11,
+     10,
+     7,
      5
     ],
     "H": [
      14,
+     8,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     14,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "Pas",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "5 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     8,
+     3
+    ],
+    "H": [
+     11,
+     9,
+     8,
+     5,
+     2
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     14,
+     10
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "5 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     14,
      12,
      10,
+     9,
+     4
+    ],
+    "H": [
+     13,
+     11,
+     10,
+     8,
+     4
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "Pas",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "5 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     13,
+     11,
+     9,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     5,
+     4
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     8,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "5 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8,
+     6,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     9,
      7,
      3
     ],
     "D": [
+     6,
+     2
+    ],
+    "C": [
+     13
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "Pas",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "5 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     14,
      13,
      8,
+     5,
+     4
+    ],
+    "H": [
+     12,
+     10,
+     8,
+     5,
+     4
+    ],
+    "D": [
+     9,
+     6
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "Pas",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "5 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     4,
+     3
+    ],
+    "H": [
+     14,
+     9,
+     8,
+     6,
+     2
+    ],
+    "D": [
+     12,
+     10
+    ],
+    "C": [
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "5 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     9,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     12,
      7
     ],
     "C": [
@@ -6489,44 +6951,11 @@
     ]
    },
    "hp": 13,
-   "sp": 16,
+   "sp": 17,
    "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
    "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
-   }
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     14,
-     8,
-     7,
-     2
-    ],
-    "H": [
-     14,
-     12,
-     11,
-     10,
-     2
-    ],
-    "D": [
-     11,
-     9
-    ],
-    "C": [
-     8,
-     3
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
-   "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
+    "why": "5 spades: you are long in their suit yourself – pass."
    }
   },
   {
@@ -6534,560 +6963,131 @@
    "hand": {
     "S": [
      13,
-     11,
-     9,
-     6
+     6,
+     5,
+     3,
+     2
     ],
     "H": [
-     11,
-     9,
-     7,
+     14,
+     13,
      4,
+     3,
      2
     ],
     "D": [
-     14,
+     5,
+     3
+    ],
+    "C": [
      12
-    ],
-    "C": [
-     13,
-     3
     ]
    },
-   "hp": 14,
+   "hp": 12,
    "sp": 16,
    "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
    "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
+    "why": "5 spades: you are long in their suit yourself – pass."
    }
   },
   {
    "situation": "naese_hj",
    "hand": {
     "S": [
-     13,
-     6,
-     3,
-     2
-    ],
-    "H": [
      14,
-     13,
-     12,
-     4,
-     2
-    ],
-    "D": [
-     6
-    ],
-    "C": [
-     11,
-     5,
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
-   "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
-   }
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     13,
-     12,
-     9,
-     3
-    ],
-    "H": [
-     14,
-     10,
-     6,
-     5,
-     3
-    ],
-    "D": [
      13,
      8,
-     5
-    ],
-    "C": [
-     7
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
-   "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
-   }
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     14,
-     13,
-     9,
-     6
-    ],
-    "H": [
-     13,
-     11,
-     9,
-     7,
-     6
-    ],
-    "D": [
-     7,
-     6,
-     3
-    ],
-    "C": [
-     11
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
-   "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
-   }
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     14,
-     11,
-     10,
-     4
-    ],
-    "H": [
-     11,
-     10,
-     7,
-     5,
-     4
-    ],
-    "D": [
-     14,
-     13,
-     3
-    ],
-    "C": [
-     11
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
-   "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
-   }
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     12,
-     11,
      4,
      3
     ],
     "H": [
-     14,
      13,
-     10,
-     8,
-     7
+     12,
+     7,
+     6,
+     5
     ],
     "D": [
-     14,
-     3,
-     2
-    ],
-    "C": [
-     7
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
-   "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
-   }
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     14,
-     12,
-     11,
+     10,
      6
     ],
-    "H": [
-     14,
-     11,
-     10,
-     5,
-     4
-    ],
-    "D": [
-     6,
-     5
-    ],
     "C": [
-     7,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
-   "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
-   }
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     14,
-     12,
-     7,
-     3
-    ],
-    "H": [
-     14,
-     12,
-     10,
-     7,
-     5
-    ],
-    "D": [
-     8,
-     6,
-     3
-    ],
-    "C": [
-     3
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
-   "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
-   }
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     13,
-     7,
-     6,
-     3
-    ],
-    "H": [
-     12,
-     11,
-     10,
-     6,
-     3
-    ],
-    "D": [
-     14
-    ],
-    "C": [
-     13,
-     10,
-     6
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
-   "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
-   }
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     14,
-     10,
-     5,
-     3
-    ],
-    "H": [
-     14,
-     13,
-     7,
-     3,
-     2
-    ],
-    "D": [
-     7
-    ],
-    "C": [
-     11,
-     8,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
-   "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
-   }
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     14,
-     12,
-     7,
-     2
-    ],
-    "H": [
-     14,
-     6,
-     4,
-     3,
-     2
-    ],
-    "D": [
-     12,
-     8,
-     2
-    ],
-    "C": [
-     7
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
-   "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
-   }
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     11,
-     8,
-     4,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     10,
-     7
-    ],
-    "D": [
-     4
-    ],
-    "C": [
-     12,
-     10,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
-   "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
-   }
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     11,
-     10,
-     3,
-     2
-    ],
-    "H": [
-     14,
-     12,
-     9,
-     7,
-     2
-    ],
-    "D": [
-     14,
-     12,
-     7
-    ],
-    "C": [
-     10
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
-   "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
-   }
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     10,
-     9,
-     6,
-     5
-    ],
-    "H": [
-     13,
-     12,
-     11,
-     7,
-     5
-    ],
-    "D": [
-     14,
-     12
-    ],
-    "C": [
-     12,
-     7
-    ]
-   },
-   "hp": 14,
-   "sp": 16,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
-   "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
-   }
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     13,
-     12,
-     5,
-     4
-    ],
-    "H": [
-     13,
-     12,
-     8,
-     6,
-     2
-    ],
-    "D": [
-     12,
      9
-    ],
-    "C": [
-     11,
-     5
-    ]
-   },
-   "hp": 13,
-   "sp": 15,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
-   "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
-   }
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     14,
-     12,
-     4,
-     3
-    ],
-    "H": [
-     11,
-     7,
-     5,
-     4,
-     3
-    ],
-    "D": [
-     13,
-     7,
-     5
-    ],
-    "C": [
-     14
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
-   "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
-   }
-  },
-  {
-   "situation": "naese_hj",
-   "hand": {
-    "S": [
-     12,
-     6,
-     5,
-     3
-    ],
-    "H": [
-     12,
-     11,
-     7,
-     4,
-     3
-    ],
-    "D": [
-     12,
-     11
-    ],
-    "C": [
-     14,
-     6
     ]
    },
    "hp": 12,
-   "sp": 14,
+   "sp": 16,
    "correct": "Pas",
-   "why": "4 spar: du er selv lang i deres farve – pas.",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
    "en": {
-    "why": "4 spades: you are long in their suit yourself – pass."
+    "why": "5 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     8,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     9,
+     4,
+     2
+    ],
+    "D": [
+     9,
+     2
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "5 spades: you are long in their suit yourself – pass."
+   }
+  },
+  {
+   "situation": "naese_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     8,
+     6,
+     5,
+     2
+    ],
+    "D": [
+     12,
+     3
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "Pas",
+   "why": "5 spar: du er selv lang i deres farve – pas.",
+   "en": {
+    "why": "5 spades: you are long in their suit yourself – pass."
    }
   },
   {
@@ -7127,39 +7127,6 @@
    "situation": "lov_aab_hj",
    "hand": {
     "S": [
-     13,
-     11,
-     5,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     5,
-     4,
-     2
-    ],
-    "D": [
-     12,
-     4,
-     2
-    ],
-    "C": [
-     2
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
-   "en": {
-    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
-   }
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
      4
     ],
     "H": [
@@ -7183,72 +7150,6 @@
    },
    "hp": 13,
    "sp": 16,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
-   "en": {
-    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
-   }
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     11,
-     4,
-     3,
-     2
-    ],
-    "H": [
-     14,
-     12,
-     9,
-     8,
-     5
-    ],
-    "D": [
-     13,
-     7
-    ],
-    "C": [
-     12,
-     7
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
-   "en": {
-    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
-   }
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     6,
-     5,
-     4,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     7,
-     6
-    ],
-    "D": [
-     14,
-     11,
-     6
-    ],
-    "C": [
-     7
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
    "correct": "Pas",
    "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
    "en": {
@@ -7523,39 +7424,6 @@
    "situation": "lov_aab_hj",
    "hand": {
     "S": [
-     14,
-     12,
-     8,
-     2
-    ],
-    "H": [
-     14,
-     9,
-     7,
-     6,
-     2
-    ],
-    "D": [
-     7
-    ],
-    "C": [
-     14,
-     5,
-     3
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
-   "en": {
-    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
-   }
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
      13,
      11,
      5
@@ -7612,39 +7480,6 @@
    },
    "hp": 14,
    "sp": 15,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
-   "en": {
-    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
-   }
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     11,
-     8,
-     5,
-     4
-    ],
-    "H": [
-     14,
-     12,
-     11,
-     9,
-     6
-    ],
-    "D": [
-     14,
-     11,
-     6
-    ],
-    "C": [
-     11
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
    "correct": "Pas",
    "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
    "en": {
@@ -7754,105 +7589,6 @@
    "situation": "lov_aab_hj",
    "hand": {
     "S": [
-     14,
-     13,
-     9,
-     3
-    ],
-    "H": [
-     9,
-     7,
-     6,
-     5,
-     3
-    ],
-    "D": [
-     12,
-     3,
-     2
-    ],
-    "C": [
-     14
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
-   "en": {
-    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
-   }
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     12,
-     7,
-     5,
-     4
-    ],
-    "H": [
-     14,
-     10,
-     8,
-     6,
-     5
-    ],
-    "D": [
-     14,
-     12
-    ],
-    "C": [
-     10,
-     7
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
-   "en": {
-    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
-   }
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     14,
-     5,
-     3,
-     2
-    ],
-    "H": [
-     12,
-     9,
-     7,
-     4,
-     2
-    ],
-    "D": [
-     14
-    ],
-    "C": [
-     14,
-     7,
-     2
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
-   "en": {
-    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
-   }
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
      4
     ],
     "H": [
@@ -7876,39 +7612,6 @@
    },
    "hp": 13,
    "sp": 16,
-   "correct": "Pas",
-   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
-   "en": {
-    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
-   }
-  },
-  {
-   "situation": "lov_aab_hj",
-   "hand": {
-    "S": [
-     12,
-     11,
-     4,
-     3
-    ],
-    "H": [
-     13,
-     10,
-     7,
-     4,
-     3
-    ],
-    "D": [
-     13
-    ],
-    "C": [
-     13,
-     12,
-     10
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
    "correct": "Pas",
    "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
    "en": {
@@ -8041,6 +7744,303 @@
    },
    "hp": 12,
    "sp": 13,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     13
+    ],
+    "H": [
+     14,
+     8,
+     7,
+     4,
+     3
+    ],
+    "D": [
+     12,
+     11,
+     9
+    ],
+    "C": [
+     13,
+     10,
+     5,
+     4
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     12,
+     9,
+     7
+    ],
+    "H": [
+     14,
+     10,
+     9,
+     6,
+     3
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     14,
+     8,
+     6,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     10,
+     9,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     9,
+     4
+    ],
+    "C": [
+     14,
+     12,
+     4,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     12,
+     11
+    ],
+    "H": [
+     11,
+     9,
+     8,
+     6,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     7,
+     5
+    ],
+    "C": [
+     13,
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     13,
+     5
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     8,
+     7
+    ],
+    "D": [
+     12,
+     8,
+     4
+    ],
+    "C": [
+     8,
+     3,
+     2
+    ]
+   },
+   "hp": 12,
+   "sp": 13,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     3
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     9,
+     6
+    ],
+    "D": [
+     10,
+     9,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     7,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 16,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     7
+    ],
+    "H": [
+     13,
+     7,
+     6,
+     4,
+     2
+    ],
+    "D": [
+     14,
+     13,
+     8,
+     5
+    ],
+    "C": [
+     12,
+     9,
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     9
+    ],
+    "H": [
+     9,
+     8,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     14,
+     13,
+     5
+    ],
+    "C": [
+     14,
+     11,
+     10,
+     6
+    ]
+   },
+   "hp": 12,
+   "sp": 15,
+   "correct": "Pas",
+   "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
+   "en": {
+    "why": "5 trumps + partner's 3 = 8: the Law says the two level – pass."
+   }
+  },
+  {
+   "situation": "lov_aab_hj",
+   "hand": {
+    "S": [
+     8
+    ],
+    "H": [
+     12,
+     11,
+     10,
+     6,
+     4
+    ],
+    "D": [
+     13,
+     4,
+     3
+    ],
+    "C": [
+     14,
+     13,
+     11,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 17,
    "correct": "Pas",
    "why": "5 trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
    "en": {

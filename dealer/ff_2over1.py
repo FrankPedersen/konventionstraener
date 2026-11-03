@@ -6,11 +6,11 @@ Two over One udgangskrav – Makker 2 & mig, afsnit 1 og 5.
            præcis 2 spar · ny farve på 2-trinnet: 13+ hp og udgangskrav, 5+ kort (klør 4+)
   aab_*  – åbner efter Two over One, uden 3 korts støtte til svarers farve:
            2M 6-farve 12–14 · 2NT jævn 12–14 · 3M god 6-farve 15+ · 3NT jævn 18–19 ·
-           ny farve 15+ med 4 kort: 2♠ efter 1♥ – 2X, ellers en lavere farve på 3-trinnet
+           ny farve 15+ med 4 kort: en lavere farve på 3-trinnet; 2♠ efter 1♥ – 2X er 5-5 eller 16+ med 5-4 (Flannery)
 Antagelser: svarer vælger sin længste farve, ved 5-5 den højeste, og 4 klør kun uden en 5-farve;
 jævne hænder med 13–15 over 1♥ og åbners 5-4 med minimum er ikke med (skemaet siger ikke hvad).
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, build_pool, tx
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, flannery, tpl, either, build_pool, tx
 
 ORDER = ['C', 'D', 'H', 'S']
 PAS = ["Modstander", "Pas"]
@@ -60,8 +60,10 @@ def opener(M, X):
     sym = SUIT_SYM[M]
     def classify(hand, hp):
         L = lengths_of(hand)
-        if L[M] < 5 or L[X] >= 3 or not (12 <= hp <= 19):
+        if L[M] < 5 or L[X] >= 3 or not (12 <= hp <= 19) or (M == 'H' and flannery(L, hp)):
             return None
+        if M == 'H' and L['H'] == 5 and L['S'] == 5:
+            return "2♠", tx(f"5-5 i majorerne og {hp} hp: 2♠.", f"5-5 in the majors and {hp} HCP: 2♠.")
         if balanced(L):
             if hp <= 14:
                 return "2NT", tx(f"Jævn hånd, {hp} hp: 2NT (12–14).", f"Balanced hand, {hp} HCP: 2NT (12–14).")
@@ -77,7 +79,7 @@ def opener(M, X):
         if hp < 15:
             return None
         if M == 'H' and L['S'] >= 4:
-            return "2♠", tx(f"4 spar ved siden af hjerterne og {hp} hp: 2♠ (15+).", f"4 spades beside the hearts and {hp} HCP: 2♠ (15+).")
+            return "2♠", tx(f"4 spar ved siden af hjerterne og {hp} hp: 2♠ (16+ med 5-4).", f"4 spades beside the hearts and {hp} HCP: 2♠ (16+ with 5-4).")
         lower = [s for s in ORDER if ORDER.index(s) < ORDER.index(X) and L[s] >= 4 and s != M]
         if len(lower) == 1:
             call = f"3{SUIT_SYM[lower[0]]}"
@@ -121,7 +123,8 @@ for M, mk in (('H', 'hj'), ('S', 'sp')):
                         "3NT": o((18, 19), 5, **{X: (2, 2)})}
         for c in news:
             s = {'♠': 'S', '♣': 'C', '♦': 'D'}[c[1]]
-            SAMPLERS[sk][c] = o((15, 18), 5, **{s: (4, 4)})
+            SAMPLERS[sk][c] = (either(o((16, 18), 5, S=(4, 4)), o((12, 18), 5, S=(5, 5))) if c == "2♠"
+                               else o((15, 18), 5, **{s: (4, 4)}))
         PER_CALL[sk] = 6
 
 def export_pool(path):

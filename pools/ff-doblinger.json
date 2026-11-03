@@ -7142,128 +7142,29 @@
    "situation": "stoette",
    "hand": {
     "S": [
-     13,
-     12,
-     11,
-     8
-    ],
-    "H": [
      14,
-     10,
-     8,
+     9,
      7,
-     6
-    ],
-    "D": [
-     12,
-     7
-    ],
-    "C": [
-     12,
-     7
-    ]
-   },
-   "hp": 14,
-   "sp": 16,
-   "correct": "2♠",
-   "why": "4 spar og 14 hp: 2♠ (præcis 4 kort, 12–15).",
-   "en": {
-    "why": "4 spades and 14 HCP: 2♠ (exactly four cards, 12–15)."
-   }
-  },
-  {
-   "situation": "stoette",
-   "hand": {
-    "S": [
-     14,
-     11,
-     8,
-     2
-    ],
-    "H": [
-     14,
-     8,
-     7,
-     3,
-     2
-    ],
-    "D": [
-     12,
-     11,
-     10
-    ],
-    "C": [
-     6
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "2♠",
-   "why": "4 spar og 12 hp: 2♠ (præcis 4 kort, 12–15).",
-   "en": {
-    "why": "4 spades and 12 HCP: 2♠ (exactly four cards, 12–15)."
-   }
-  },
-  {
-   "situation": "stoette",
-   "hand": {
-    "S": [
-     14,
-     8,
-     5,
-     3
+     4
     ],
     "H": [
      14,
      13,
      12,
      9,
-     3
-    ],
-    "D": [
-     7
-    ],
-    "C": [
-     11,
-     10,
-     9
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "2♠",
-   "why": "4 spar og 14 hp: 2♠ (præcis 4 kort, 12–15).",
-   "en": {
-    "why": "4 spades and 14 HCP: 2♠ (exactly four cards, 12–15)."
-   }
-  },
-  {
-   "situation": "stoette",
-   "hand": {
-    "S": [
-     13,
-     7,
-     4,
+     6,
      2
     ],
-    "H": [
-     13,
-     12,
-     9,
-     7,
-     6
-    ],
     "D": [
-     13,
-     7,
+     8,
      3
     ],
     "C": [
-     12
+     7
     ]
    },
    "hp": 13,
-   "sp": 16,
+   "sp": 17,
    "correct": "2♠",
    "why": "4 spar og 13 hp: 2♠ (præcis 4 kort, 12–15).",
    "en": {
@@ -7276,126 +7177,159 @@
     "S": [
      14,
      13,
-     10,
-     3
-    ],
-    "H": [
-     14,
-     13,
-     7,
-     6,
-     2
-    ],
-    "D": [
-     4,
-     3
-    ],
-    "C": [
-     9,
-     4
-    ]
-   },
-   "hp": 14,
-   "sp": 16,
-   "correct": "2♠",
-   "why": "4 spar og 14 hp: 2♠ (præcis 4 kort, 12–15).",
-   "en": {
-    "why": "4 spades and 14 HCP: 2♠ (exactly four cards, 12–15)."
-   }
-  },
-  {
-   "situation": "stoette",
-   "hand": {
-    "S": [
-     14,
-     13,
      8,
      7
     ],
     "H": [
-     13,
-     12,
+     14,
      10,
      6,
-     4
+     5,
+     3,
+     2
     ],
     "D": [
-     5,
-     2
-    ],
-    "C": [
-     8,
-     2
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
-   "correct": "2♠",
-   "why": "4 spar og 12 hp: 2♠ (præcis 4 kort, 12–15).",
-   "en": {
-    "why": "4 spades and 12 HCP: 2♠ (exactly four cards, 12–15)."
-   }
-  },
-  {
-   "situation": "stoette",
-   "hand": {
-    "S": [
-     13,
-     12,
-     11,
-     10
-    ],
-    "H": [
-     13,
-     12,
-     10,
-     7,
      3
     ],
-    "D": [
-     5
-    ],
     "C": [
-     11,
-     9,
-     5
+     12,
+     2
     ]
    },
-   "hp": 12,
-   "sp": 15,
+   "hp": 13,
+   "sp": 17,
    "correct": "2♠",
-   "why": "4 spar og 12 hp: 2♠ (præcis 4 kort, 12–15).",
+   "why": "4 spar og 13 hp: 2♠ (præcis 4 kort, 12–15).",
    "en": {
-    "why": "4 spades and 12 HCP: 2♠ (exactly four cards, 12–15)."
+    "why": "4 spades and 13 HCP: 2♠ (exactly four cards, 12–15)."
    }
   },
   {
    "situation": "stoette",
    "hand": {
     "S": [
-     13,
-     12,
-     10,
-     4
+     14,
+     8,
+     6,
+     2
     ],
     "H": [
      14,
-     13,
-     11,
-     9,
-     2
+     12,
+     10,
+     6,
+     4,
+     3
     ],
     "D": [
      11
     ],
     "C": [
      11,
-     9,
      6
     ]
    },
+   "hp": 12,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "4 spar og 12 hp: 2♠ (præcis 4 kort, 12–15).",
+   "en": {
+    "why": "4 spades and 12 HCP: 2♠ (exactly four cards, 12–15)."
+   }
+  },
+  {
+   "situation": "stoette",
+   "hand": {
+    "S": [
+     12,
+     11,
+     4,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     8,
+     6,
+     3
+    ],
+    "D": [
+     12
+    ],
+    "C": [
+     5,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "2♠",
+   "why": "4 spar og 13 hp: 2♠ (præcis 4 kort, 12–15).",
+   "en": {
+    "why": "4 spades and 13 HCP: 2♠ (exactly four cards, 12–15)."
+   }
+  },
+  {
+   "situation": "stoette",
+   "hand": {
+    "S": [
+     7,
+     6,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     11,
+     9,
+     8,
+     4
+    ],
+    "D": [
+     14,
+     7
+    ],
+    "C": [
+     9
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "4 spar og 12 hp: 2♠ (præcis 4 kort, 12–15).",
+   "en": {
+    "why": "4 spades and 12 HCP: 2♠ (exactly four cards, 12–15)."
+   }
+  },
+  {
+   "situation": "stoette",
+   "hand": {
+    "S": [
+     13,
+     5,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     7
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
    "hp": 15,
-   "sp": 18,
+   "sp": 19,
    "correct": "2♠",
    "why": "4 spar og 15 hp: 2♠ (præcis 4 kort, 12–15).",
    "en": {
@@ -7407,292 +7341,193 @@
    "hand": {
     "S": [
      14,
-     9,
-     3,
-     2
-    ],
-    "H": [
-     14,
-     12,
-     10,
-     5,
-     2
-    ],
-    "D": [
-     8
-    ],
-    "C": [
-     14,
-     4,
-     3
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "2♠",
-   "why": "4 spar og 14 hp: 2♠ (præcis 4 kort, 12–15).",
-   "en": {
-    "why": "4 spades and 14 HCP: 2♠ (exactly four cards, 12–15)."
-   }
-  },
-  {
-   "situation": "stoette",
-   "hand": {
-    "S": [
-     12,
-     6,
-     5,
-     4
-    ],
-    "H": [
-     14,
      13,
-     9,
-     4,
-     2
-    ],
-    "D": [
-     13,
-     7,
-     6
-    ],
-    "C": [
-     5
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "2♠",
-   "why": "4 spar og 12 hp: 2♠ (præcis 4 kort, 12–15).",
-   "en": {
-    "why": "4 spades and 12 HCP: 2♠ (exactly four cards, 12–15)."
-   }
-  },
-  {
-   "situation": "stoette",
-   "hand": {
-    "S": [
-     13,
-     7,
-     5,
-     3
-    ],
-    "H": [
-     14,
-     12,
-     11,
      10,
-     2
-    ],
-    "D": [
-     12
-    ],
-    "C": [
-     10,
-     8,
-     6
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "2♠",
-   "why": "4 spar og 12 hp: 2♠ (præcis 4 kort, 12–15).",
-   "en": {
-    "why": "4 spades and 12 HCP: 2♠ (exactly four cards, 12–15)."
-   }
-  },
-  {
-   "situation": "stoette",
-   "hand": {
-    "S": [
-     11,
-     10,
-     8,
-     4
-    ],
-    "H": [
-     14,
-     11,
-     10,
-     7,
-     5
-    ],
-    "D": [
-     13,
-     12,
-     3
-    ],
-    "C": [
-     11
-    ]
-   },
-   "hp": 12,
-   "sp": 15,
-   "correct": "2♠",
-   "why": "4 spar og 12 hp: 2♠ (præcis 4 kort, 12–15).",
-   "en": {
-    "why": "4 spades and 12 HCP: 2♠ (exactly four cards, 12–15)."
-   }
-  },
-  {
-   "situation": "stoette",
-   "hand": {
-    "S": [
-     11,
-     10,
-     9,
-     7
-    ],
-    "H": [
-     14,
-     10,
-     8,
-     5,
-     3
-    ],
-    "D": [
-     14,
-     12,
-     7
-    ],
-    "C": [
-     12
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "2♠",
-   "why": "4 spar og 13 hp: 2♠ (præcis 4 kort, 12–15).",
-   "en": {
-    "why": "4 spades and 13 HCP: 2♠ (exactly four cards, 12–15)."
-   }
-  },
-  {
-   "situation": "stoette",
-   "hand": {
-    "S": [
-     14,
-     10,
-     9,
-     2
-    ],
-    "H": [
-     14,
-     11,
-     9,
-     6,
-     5
-    ],
-    "D": [
-     14,
-     8,
-     5
-    ],
-    "C": [
      9
-    ]
-   },
-   "hp": 13,
-   "sp": 16,
-   "correct": "2♠",
-   "why": "4 spar og 13 hp: 2♠ (præcis 4 kort, 12–15).",
-   "en": {
-    "why": "4 spades and 13 HCP: 2♠ (exactly four cards, 12–15)."
-   }
-  },
-  {
-   "situation": "stoette",
-   "hand": {
-    "S": [
-     14,
-     8,
-     4,
-     2
     ],
     "H": [
-     14,
      13,
-     8,
-     3,
-     2
-    ],
-    "D": [
      11,
-     10
-    ],
-    "C": [
+     9,
+     7,
      6,
      5
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
-   "correct": "2♠",
-   "why": "4 spar og 12 hp: 2♠ (præcis 4 kort, 12–15).",
-   "en": {
-    "why": "4 spades and 12 HCP: 2♠ (exactly four cards, 12–15)."
-   }
-  },
-  {
-   "situation": "stoette",
-   "hand": {
-    "S": [
-     13,
-     11,
-     10,
-     8
-    ],
-    "H": [
-     13,
-     11,
-     6,
-     3,
-     2
     ],
     "D": [
      13
     ],
     "C": [
-     14,
-     10,
-     4
+     8,
+     3
     ]
    },
-   "hp": 15,
+   "hp": 14,
    "sp": 18,
    "correct": "2♠",
-   "why": "4 spar og 15 hp: 2♠ (præcis 4 kort, 12–15).",
+   "why": "4 spar og 14 hp: 2♠ (præcis 4 kort, 12–15).",
    "en": {
-    "why": "4 spades and 15 HCP: 2♠ (exactly four cards, 12–15)."
+    "why": "4 spades and 14 HCP: 2♠ (exactly four cards, 12–15)."
    }
   },
   {
    "situation": "stoette",
    "hand": {
     "S": [
-     12,
-     10,
+     14,
+     9,
      5,
-     2
+     4
     ],
     "H": [
      14,
-     12,
-     8,
+     10,
+     9,
+     7,
      4,
      2
     ],
     "D": [
-     6
+     14,
+     5
     ],
     "C": [
-     13,
-     11,
-     6
+     10
     ]
    },
    "hp": 12,
-   "sp": 15,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "4 spar og 12 hp: 2♠ (præcis 4 kort, 12–15).",
+   "en": {
+    "why": "4 spades and 12 HCP: 2♠ (exactly four cards, 12–15)."
+   }
+  },
+  {
+   "situation": "stoette",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8,
+     7
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     13,
+     5
+    ],
+    "C": [
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "2♠",
+   "why": "4 spar og 14 hp: 2♠ (præcis 4 kort, 12–15).",
+   "en": {
+    "why": "4 spades and 14 HCP: 2♠ (exactly four cards, 12–15)."
+   }
+  },
+  {
+   "situation": "stoette",
+   "hand": {
+    "S": [
+     14,
+     13,
+     11,
+     6
+    ],
+    "H": [
+     12,
+     10,
+     9,
+     7,
+     4,
+     2
+    ],
+    "D": [
+     14
+    ],
+    "C": [
+     10,
+     4
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "2♠",
+   "why": "4 spar og 14 hp: 2♠ (præcis 4 kort, 12–15).",
+   "en": {
+    "why": "4 spades and 14 HCP: 2♠ (exactly four cards, 12–15)."
+   }
+  },
+  {
+   "situation": "stoette",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     5
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     7,
+     6,
+     4
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     13,
+     7
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "2♠",
+   "why": "4 spar og 14 hp: 2♠ (præcis 4 kort, 12–15).",
+   "en": {
+    "why": "4 spades and 14 HCP: 2♠ (exactly four cards, 12–15)."
+   }
+  },
+  {
+   "situation": "stoette",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     10,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     6,
+     4
+    ],
+    "C": [
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
    "correct": "2♠",
    "why": "4 spar og 12 hp: 2♠ (præcis 4 kort, 12–15).",
    "en": {
@@ -7704,28 +7539,193 @@
    "hand": {
     "S": [
      14,
+     10,
      7,
+     4
+    ],
+    "H": [
+     13,
+     10,
+     9,
+     5,
+     3,
+     2
+    ],
+    "D": [
+     5
+    ],
+    "C": [
+     14,
+     12
+    ]
+   },
+   "hp": 13,
+   "sp": 17,
+   "correct": "2♠",
+   "why": "4 spar og 13 hp: 2♠ (præcis 4 kort, 12–15).",
+   "en": {
+    "why": "4 spades and 13 HCP: 2♠ (exactly four cards, 12–15)."
+   }
+  },
+  {
+   "situation": "stoette",
+   "hand": {
+    "S": [
+     10,
      6,
+     3,
      2
     ],
     "H": [
      14,
-     13,
-     11,
+     12,
      8,
-     6
+     7,
+     6,
+     2
     ],
     "D": [
-     10,
-     5
+     14,
+     12
     ],
     "C": [
-     13,
      10
     ]
    },
+   "hp": 12,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "4 spar og 12 hp: 2♠ (præcis 4 kort, 12–15).",
+   "en": {
+    "why": "4 spades and 12 HCP: 2♠ (exactly four cards, 12–15)."
+   }
+  },
+  {
+   "situation": "stoette",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7,
+     5
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     7,
+     5,
+     4
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     14,
+     3
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "2♠",
+   "why": "4 spar og 14 hp: 2♠ (præcis 4 kort, 12–15).",
+   "en": {
+    "why": "4 spades and 14 HCP: 2♠ (exactly four cards, 12–15)."
+   }
+  },
+  {
+   "situation": "stoette",
+   "hand": {
+    "S": [
+     13,
+     8,
+     5,
+     3
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     7,
+     5,
+     2
+    ],
+    "D": [
+     7,
+     2
+    ],
+    "C": [
+     14
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "2♠",
+   "why": "4 spar og 14 hp: 2♠ (præcis 4 kort, 12–15).",
+   "en": {
+    "why": "4 spades and 14 HCP: 2♠ (exactly four cards, 12–15)."
+   }
+  },
+  {
+   "situation": "stoette",
+   "hand": {
+    "S": [
+     10,
+     8,
+     5,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     8,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     8
+    ],
+    "C": [
+     14,
+     13
+    ]
+   },
+   "hp": 12,
+   "sp": 16,
+   "correct": "2♠",
+   "why": "4 spar og 12 hp: 2♠ (præcis 4 kort, 12–15).",
+   "en": {
+    "why": "4 spades and 12 HCP: 2♠ (exactly four cards, 12–15)."
+   }
+  },
+  {
+   "situation": "stoette",
+   "hand": {
+    "S": [
+     14,
+     9,
+     8,
+     4
+    ],
+    "H": [
+     14,
+     13,
+     8,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     3
+    ],
+    "C": [
+     14,
+     2
+    ]
+   },
    "hp": 15,
-   "sp": 17,
+   "sp": 19,
    "correct": "2♠",
    "why": "4 spar og 15 hp: 2♠ (præcis 4 kort, 12–15).",
    "en": {
@@ -7736,33 +7736,33 @@
    "situation": "stoette",
    "hand": {
     "S": [
-     10,
+     14,
      8,
-     6,
-     5
+     7,
+     6
     ],
     "H": [
      14,
      13,
-     10,
-     8,
-     3
+     12,
+     9,
+     7,
+     2
     ],
     "D": [
-     4
+     8
     ],
     "C": [
-     13,
-     12,
-     10
+     8,
+     4
     ]
    },
-   "hp": 12,
-   "sp": 15,
+   "hp": 13,
+   "sp": 17,
    "correct": "2♠",
-   "why": "4 spar og 12 hp: 2♠ (præcis 4 kort, 12–15).",
+   "why": "4 spar og 13 hp: 2♠ (præcis 4 kort, 12–15).",
    "en": {
-    "why": "4 spades and 12 HCP: 2♠ (exactly four cards, 12–15)."
+    "why": "4 spades and 13 HCP: 2♠ (exactly four cards, 12–15)."
    }
   },
   {

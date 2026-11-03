@@ -24,7 +24,7 @@
     "4♥"
    ],
    "bonus": {
-    "q": "Hvad er forskellen på 3♣ og 3♦?",
+    "q": "Hvad er forskellen på 3♣ og 3♦ hos Makker 2 & mig?",
     "correct": "3♣ = præcis 3 kort, 3♦ = 4+ kort – begge 10–12 sp",
     "options": [
      "3♣ = præcis 3 kort, 3♦ = 4+ kort – begge 10–12 sp",
@@ -35,7 +35,7 @@
    },
    "en": {
     "bonus": {
-     "q": "What is the difference between 3♣ and 3♦?",
+     "q": "What is the difference between 3♣ and 3♦ for Partner 2 & me?",
      "correct": "3♣ = exactly 3 cards, 3♦ = 4+ cards – both 10–12 support points",
      "options": [
       "3♣ = exactly 3 cards, 3♦ = 4+ cards – both 10–12 support points",
@@ -170,7 +170,7 @@
     "4♠"
    ],
    "bonus": {
-    "q": "Hvad er forskellen på 3♣ og 3♦?",
+    "q": "Hvad er forskellen på 3♣ og 3♦ hos Makker 2 & mig?",
     "correct": "3♣ = præcis 3 kort, 3♦ = 4+ kort – begge 10–12 sp",
     "options": [
      "3♣ = præcis 3 kort, 3♦ = 4+ kort – begge 10–12 sp",
@@ -181,7 +181,7 @@
    },
    "en": {
     "bonus": {
-     "q": "What is the difference between 3♣ and 3♦?",
+     "q": "What is the difference between 3♣ and 3♦ for Partner 2 & me?",
      "correct": "3♣ = exactly 3 cards, 3♦ = 4+ cards – both 10–12 support points",
      "options": [
       "3♣ = exactly 3 cards, 3♦ = 4+ cards – both 10–12 support points",
@@ -4537,39 +4537,6 @@
    "situation": "aab_3kl_hj",
    "hand": {
     "S": [
-     14,
-     12,
-     11,
-     2
-    ],
-    "H": [
-     13,
-     12,
-     10,
-     9,
-     2
-    ],
-    "D": [
-     3
-    ],
-    "C": [
-     13,
-     6,
-     5
-    ]
-   },
-   "hp": 15,
-   "sp": 18,
-   "correct": "4♥",
-   "why": "18 sp (15 hp + single ♦ = 3) + 11 (midt i makkers 10–12) når 26: du er kaptajn – 4♥.",
-   "en": {
-    "why": "18 support points (15 HCP + singleton ♦ = 3) + 11 (the middle of partner's 10–12) reaches 26: you are captain – 4♥."
-   }
-  },
-  {
-   "situation": "aab_3kl_hj",
-   "hand": {
-    "S": [
      11,
      7
     ],
@@ -4663,72 +4630,6 @@
    "why": "18 sp (13 hp + single ♠ = 3 + double ♣ = 1 + 1 ekstra trumf) + 11 (midt i makkers 10–12) når 26: du er kaptajn – 4♥.",
    "en": {
     "why": "18 support points (13 HCP + singleton ♠ = 3 + doubleton ♣ = 1 + 1 extra trump) + 11 (the middle of partner's 10–12) reaches 26: you are captain – 4♥."
-   }
-  },
-  {
-   "situation": "aab_3kl_hj",
-   "hand": {
-    "S": [
-     13,
-     12,
-     7,
-     4
-    ],
-    "H": [
-     14,
-     13,
-     9,
-     5,
-     2
-    ],
-    "D": [
-     13,
-     8,
-     4
-    ],
-    "C": [
-     8
-    ]
-   },
-   "hp": 15,
-   "sp": 18,
-   "correct": "4♥",
-   "why": "18 sp (15 hp + single ♣ = 3) + 11 (midt i makkers 10–12) når 26: du er kaptajn – 4♥.",
-   "en": {
-    "why": "18 support points (15 HCP + singleton ♣ = 3) + 11 (the middle of partner's 10–12) reaches 26: you are captain – 4♥."
-   }
-  },
-  {
-   "situation": "aab_3kl_hj",
-   "hand": {
-    "S": [
-     11,
-     10,
-     9,
-     4
-    ],
-    "H": [
-     14,
-     13,
-     10,
-     7,
-     3
-    ],
-    "D": [
-     12,
-     11
-    ],
-    "C": [
-     13,
-     8
-    ]
-   },
-   "hp": 14,
-   "sp": 16,
-   "correct": "4♥",
-   "why": "16 sp (14 hp + double ♦ = 1 + double ♣ = 1) + 11 (midt i makkers 10–12) når 26: du er kaptajn – 4♥.",
-   "en": {
-    "why": "16 support points (14 HCP + doubleton ♦ = 1 + doubleton ♣ = 1) + 11 (the middle of partner's 10–12) reaches 26: you are captain – 4♥."
    }
   },
   {
@@ -4833,39 +4734,6 @@
    "situation": "aab_3kl_hj",
    "hand": {
     "S": [
-     13,
-     10,
-     5,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     8,
-     4,
-     2
-    ],
-    "D": [
-     13,
-     12,
-     2
-    ],
-    "C": [
-     6
-    ]
-   },
-   "hp": 15,
-   "sp": 18,
-   "correct": "4♥",
-   "why": "18 sp (15 hp + single ♣ = 3) + 11 (midt i makkers 10–12) når 26: du er kaptajn – 4♥.",
-   "en": {
-    "why": "18 support points (15 HCP + singleton ♣ = 3) + 11 (the middle of partner's 10–12) reaches 26: you are captain – 4♥."
-   }
-  },
-  {
-   "situation": "aab_3kl_hj",
-   "hand": {
-    "S": [
      6
     ],
     "H": [
@@ -4958,6 +4826,136 @@
    "why": "20 sp (15 hp + double ♠ = 1 + single ♣ = 3 + 1 ekstra trumf) + 11 (midt i makkers 10–12) når 26: du er kaptajn – 4♥.",
    "en": {
     "why": "20 support points (15 HCP + doubleton ♠ = 1 + singleton ♣ = 3 + 1 extra trump) + 11 (the middle of partner's 10–12) reaches 26: you are captain – 4♥."
+   }
+  },
+  {
+   "situation": "aab_3kl_hj",
+   "hand": {
+    "S": [
+     14,
+     9,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     12,
+     8,
+     6,
+     3
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     14,
+     11,
+     9
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "4♥",
+   "why": "19 sp (16 hp + single ♦ = 3) + 11 (midt i makkers 10–12) når 26: du er kaptajn – 4♥.",
+   "en": {
+    "why": "19 support points (16 HCP + singleton ♦ = 3) + 11 (the middle of partner's 10–12) reaches 26: you are captain – 4♥."
+   }
+  },
+  {
+   "situation": "aab_3kl_hj",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     8,
+     3
+    ],
+    "H": [
+     13,
+     10,
+     6,
+     4,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     6
+    ],
+    "C": []
+   },
+   "hp": 13,
+   "sp": 19,
+   "correct": "4♥",
+   "why": "20 sp (13 hp + double ♦ = 1 + renonce ♣ = 5 + 1 ekstra trumf) + 11 (midt i makkers 10–12) når 26: du er kaptajn – 4♥.",
+   "en": {
+    "why": "20 support points (13 HCP + doubleton ♦ = 1 + void ♣ = 5 + 1 extra trump) + 11 (the middle of partner's 10–12) reaches 26: you are captain – 4♥."
+   }
+  },
+  {
+   "situation": "aab_3kl_hj",
+   "hand": {
+    "S": [
+     14,
+     11,
+     8,
+     6,
+     5
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     5,
+     4
+    ],
+    "D": [],
+    "C": [
+     13,
+     9,
+     5
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "4♥",
+   "why": "18 sp (13 hp + renonce ♦ = 5) + 11 (midt i makkers 10–12) når 26: du er kaptajn – 4♥.",
+   "en": {
+    "why": "18 support points (13 HCP + void ♦ = 5) + 11 (the middle of partner's 10–12) reaches 26: you are captain – 4♥."
+   }
+  },
+  {
+   "situation": "aab_3kl_hj",
+   "hand": {
+    "S": [
+     13,
+     12,
+     9,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     9,
+     8,
+     7,
+     4
+    ],
+    "D": [
+     6
+    ],
+    "C": [
+     12,
+     5
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "4♥",
+   "why": "19 sp (14 hp + single ♦ = 3 + double ♣ = 1 + 1 ekstra trumf) + 11 (midt i makkers 10–12) når 26: du er kaptajn – 4♥.",
+   "en": {
+    "why": "19 support points (14 HCP + singleton ♦ = 3 + doubleton ♣ = 1 + 1 extra trump) + 11 (the middle of partner's 10–12) reaches 26: you are captain – 4♥."
    }
   },
   {
@@ -5525,39 +5523,6 @@
    "situation": "aab_3ru_hj",
    "hand": {
     "S": [
-     6,
-     5,
-     4,
-     2
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     10,
-     9
-    ],
-    "D": [
-     13,
-     5
-    ],
-    "C": [
-     10,
-     3
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
-   "correct": "3♥",
-   "why": "14 sp (12 hp + double ♦ = 1 + double ♣ = 1) + 11 (midt i makkers 10–12) er under 26: 3♥ med minimum.",
-   "en": {
-    "why": "14 support points (12 HCP + doubleton ♦ = 1 + doubleton ♣ = 1) + 11 (the middle of partner's 10–12) is below 26: 3♥ with a minimum."
-   }
-  },
-  {
-   "situation": "aab_3ru_hj",
-   "hand": {
-    "S": [
      12,
      7
     ],
@@ -5592,39 +5557,6 @@
    "hand": {
     "S": [
      14,
-     9,
-     8,
-     4
-    ],
-    "H": [
-     13,
-     10,
-     7,
-     6,
-     2
-    ],
-    "D": [
-     12,
-     11
-    ],
-    "C": [
-     12,
-     4
-    ]
-   },
-   "hp": 12,
-   "sp": 14,
-   "correct": "3♥",
-   "why": "14 sp (12 hp + double ♦ = 1 + double ♣ = 1) + 11 (midt i makkers 10–12) er under 26: 3♥ med minimum.",
-   "en": {
-    "why": "14 support points (12 HCP + doubleton ♦ = 1 + doubleton ♣ = 1) + 11 (the middle of partner's 10–12) is below 26: 3♥ with a minimum."
-   }
-  },
-  {
-   "situation": "aab_3ru_hj",
-   "hand": {
-    "S": [
-     14,
      12,
      8
     ],
@@ -5651,6 +5583,72 @@
    "why": "14 sp (13 hp + double ♦ = 1) + 11 (midt i makkers 10–12) er under 26: 3♥ med minimum.",
    "en": {
     "why": "14 support points (13 HCP + doubleton ♦ = 1) + 11 (the middle of partner's 10–12) is below 26: 3♥ with a minimum."
+   }
+  },
+  {
+   "situation": "aab_3ru_hj",
+   "hand": {
+    "S": [
+     10,
+     5
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     5,
+     2
+    ],
+    "D": [
+     14,
+     9,
+     8,
+     6
+    ],
+    "C": [
+     12,
+     7
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "3♥",
+   "why": "14 sp (12 hp + double ♠ = 1 + double ♣ = 1) + 11 (midt i makkers 10–12) er under 26: 3♥ med minimum.",
+   "en": {
+    "why": "14 support points (12 HCP + doubleton ♠ = 1 + doubleton ♣ = 1) + 11 (the middle of partner's 10–12) is below 26: 3♥ with a minimum."
+   }
+  },
+  {
+   "situation": "aab_3ru_hj",
+   "hand": {
+    "S": [
+     13,
+     4
+    ],
+    "H": [
+     14,
+     11,
+     9,
+     3,
+     2
+    ],
+    "D": [
+     12,
+     10,
+     6,
+     3
+    ],
+    "C": [
+     12,
+     8
+    ]
+   },
+   "hp": 12,
+   "sp": 14,
+   "correct": "3♥",
+   "why": "14 sp (12 hp + double ♠ = 1 + double ♣ = 1) + 11 (midt i makkers 10–12) er under 26: 3♥ med minimum.",
+   "en": {
+    "why": "14 support points (12 HCP + doubleton ♠ = 1 + doubleton ♣ = 1) + 11 (the middle of partner's 10–12) is below 26: 3♥ with a minimum."
    }
   },
   {
@@ -6082,39 +6080,6 @@
    "situation": "aab_3ru_hj",
    "hand": {
     "S": [
-     12,
-     9,
-     8,
-     3
-    ],
-    "H": [
-     14,
-     13,
-     12,
-     9,
-     5
-    ],
-    "D": [
-     9,
-     6,
-     4
-    ],
-    "C": [
-     13
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "4♥",
-   "why": "17 sp (14 hp + single ♣ = 3) + 11 (midt i makkers 10–12) når 26: du er kaptajn – 4♥.",
-   "en": {
-    "why": "17 support points (14 HCP + singleton ♣ = 3) + 11 (the middle of partner's 10–12) reaches 26: you are captain – 4♥."
-   }
-  },
-  {
-   "situation": "aab_3ru_hj",
-   "hand": {
-    "S": [
      13,
      12,
      8,
@@ -6181,39 +6146,6 @@
    "situation": "aab_3ru_hj",
    "hand": {
     "S": [
-     14,
-     11,
-     10,
-     9
-    ],
-    "H": [
-     13,
-     10,
-     9,
-     7,
-     4
-    ],
-    "D": [
-     12,
-     9,
-     6
-    ],
-    "C": [
-     14
-    ]
-   },
-   "hp": 14,
-   "sp": 17,
-   "correct": "4♥",
-   "why": "17 sp (14 hp + single ♣ = 3) + 11 (midt i makkers 10–12) når 26: du er kaptajn – 4♥.",
-   "en": {
-    "why": "17 support points (14 HCP + singleton ♣ = 3) + 11 (the middle of partner's 10–12) reaches 26: you are captain – 4♥."
-   }
-  },
-  {
-   "situation": "aab_3ru_hj",
-   "hand": {
-    "S": [
      10
     ],
     "H": [
@@ -6241,39 +6173,6 @@
    "why": "16 sp (12 hp + single ♠ = 3 + double ♦ = 1) + 11 (midt i makkers 10–12) når 26: du er kaptajn – 4♥.",
    "en": {
     "why": "16 support points (12 HCP + singleton ♠ = 3 + doubleton ♦ = 1) + 11 (the middle of partner's 10–12) reaches 26: you are captain – 4♥."
-   }
-  },
-  {
-   "situation": "aab_3ru_hj",
-   "hand": {
-    "S": [
-     14,
-     11,
-     4,
-     3
-    ],
-    "H": [
-     14,
-     12,
-     8,
-     7,
-     2
-    ],
-    "D": [
-     14,
-     10
-    ],
-    "C": [
-     5,
-     2
-    ]
-   },
-   "hp": 15,
-   "sp": 17,
-   "correct": "4♥",
-   "why": "17 sp (15 hp + double ♦ = 1 + double ♣ = 1) + 11 (midt i makkers 10–12) når 26: du er kaptajn – 4♥.",
-   "en": {
-    "why": "17 support points (15 HCP + doubleton ♦ = 1 + doubleton ♣ = 1) + 11 (the middle of partner's 10–12) reaches 26: you are captain – 4♥."
    }
   },
   {
@@ -6339,6 +6238,102 @@
    "why": "20 sp (17 hp + double ♦ = 1 + double ♣ = 1 + 1 ekstra trumf) + 11 (midt i makkers 10–12) når 26: du er kaptajn – 4♥.",
    "en": {
     "why": "20 support points (17 HCP + doubleton ♦ = 1 + doubleton ♣ = 1 + 1 extra trump) + 11 (the middle of partner's 10–12) reaches 26: you are captain – 4♥."
+   }
+  },
+  {
+   "situation": "aab_3ru_hj",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     12,
+     9,
+     7,
+     6
+    ],
+    "D": [
+     14,
+     8,
+     7,
+     4
+    ],
+    "C": [
+     13,
+     7,
+     6,
+     3
+    ]
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "4♥",
+   "why": "18 sp (13 hp + renonce ♠ = 5) + 11 (midt i makkers 10–12) når 26: du er kaptajn – 4♥.",
+   "en": {
+    "why": "18 support points (13 HCP + void ♠ = 5) + 11 (the middle of partner's 10–12) reaches 26: you are captain – 4♥."
+   }
+  },
+  {
+   "situation": "aab_3ru_hj",
+   "hand": {
+    "S": [
+     13,
+     8,
+     3
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     6,
+     5,
+     3
+    ],
+    "D": [
+     13,
+     11,
+     8,
+     5
+    ],
+    "C": []
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "4♥",
+   "why": "19 sp (13 hp + renonce ♣ = 5 + 1 ekstra trumf) + 11 (midt i makkers 10–12) når 26: du er kaptajn – 4♥.",
+   "en": {
+    "why": "19 support points (13 HCP + void ♣ = 5 + 1 extra trump) + 11 (the middle of partner's 10–12) reaches 26: you are captain – 4♥."
+   }
+  },
+  {
+   "situation": "aab_3ru_hj",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     9,
+     8,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     9,
+     2
+    ],
+    "C": [
+     14,
+     13,
+     7,
+     6
+    ]
+   },
+   "hp": 14,
+   "sp": 19,
+   "correct": "4♥",
+   "why": "20 sp (14 hp + renonce ♠ = 5 + 1 ekstra trumf) + 11 (midt i makkers 10–12) når 26: du er kaptajn – 4♥.",
+   "en": {
+    "why": "20 support points (14 HCP + void ♠ = 5 + 1 extra trump) + 11 (the middle of partner's 10–12) reaches 26: you are captain – 4♥."
    }
   },
   {

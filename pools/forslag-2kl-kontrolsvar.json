@@ -83,7 +83,7 @@
     "correct": "0–1 kontrol",
     "options": [
      "0–1 kontrol",
-     "Waiting – intet om styrken",
+     "Intet om styrken",
      "Præcis 2 kontroller"
     ],
     "why": "2♦ viser 0–1 kontrol: intet es og højst én konge."
@@ -94,7 +94,7 @@
      "correct": "0–1 controls",
      "options": [
       "0–1 controls",
-      "Waiting – nothing about strength",
+      "Nothing about strength",
       "Exactly 2 controls"
      ],
      "why": "2♦ shows 0–1 controls: no ace and at most one king."

@@ -71,7 +71,7 @@ Puljerne er ikke bygget helt forfra: kun hænder, der er blevet forkerte, er ski
 - [x] Afsnit 4's grænser for ny højere farve (12–15 og spring 16+) er uændrede.
 - [x] Bilag B's overskrift siger, at Flannery er valgt, og B1's overskrift, at den er aftalt. B2 og B3 står der stadig.
 - [x] Bilag C er én linje, og indholdsfortegnelsen har hverken C1–C4 eller et link, der peger ud i ingenting.
-- [ ] Træneren følger listen ovenfor, og `python3 tools/tjek_kort_eksempler.py` finder kortenes eksempler i puljerne.
+- [x] Træneren følger listen ovenfor, og `python3 tools/tjek_kort_eksempler.py` finder kortenes eksempler i puljerne.
 
 Desuden: `tools/tjek_makker2_aftaler.py` med den ændrede 2♠, `tools/tjek_fagord.py`, `tools/tjek_bydeform.py`, `tools/tjek_sprog.py`, `tools/tjek_konventionskort.py` og `tools/sprogtjek.py`.
 

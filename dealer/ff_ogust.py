@@ -1,7 +1,7 @@
 """
 Ogust 2NT og svar på svag 2 – Makker 2 & mig, afsnit 12 og 13.
 
-  aab_*  – åbner med svag 2 (6-farve, 5–11 hp) efter makkers 2NT:
+  aab_*  – åbner med svag 2♥/2♠ (6-farve, 5–11 hp) efter makkers 2NT (2♦ er Flannery):
            3♣ dårlig (5–7) med én af E-K-D · 3♦ dårlig med to · 3♥ god (8–11) med én · 3♠ god med to ·
            3NT god med alle tre
   svar_* – svarer over makkers svage 2♥/2♠:
@@ -75,7 +75,7 @@ def responder(M):
     return classify
 
 SITUATIONS, CLASSIFIERS, SAMPLERS, PER_CALL = {}, {}, {}, {}
-for M, mk in (('D', 'ru'), ('H', 'hj'), ('S', 'sp')):
+for M, mk in (('H', 'hj'), ('S', 'sp')):
     sym = SUIT_SYM[M]
     sk = f"aab_{mk}"
     SITUATIONS[sk] = {"rolle": "Åbner", "auction": [["Dig", f"2{sym}"], PAS, ["Makker", "2NT"], PAS],

@@ -19,7 +19,7 @@
     "tekst": "Du skal åbne med præcis 5 hjerter og 4 spar.",
     "gaelderFor": "Åbning med 5-4 i majorerne og 11–15 hp"
   },
-  "kortfortalt": "2♦ viser præcis 5 hjerter og 4 spar med 11–15 hp; med 16+ åbnes 1♥, og spar meldes bagefter. 2NT spørger efter åbners nøjagtige fordeling og styrke.",
+  "kortfortalt": "2♦ viser præcis 5 hjerter og 4 spar med 11–15 hp; med 16+ åbnes 1♥, og spar meldes bagefter, og med 5-5 i majorerne åbnes også 1♥. 2NT spørger efter åbners nøjagtige fordeling og styrke.",
   "meldinger": [
     {
       "gruppe": "Åbner"
@@ -126,7 +126,23 @@
       ]
     }
   ],
-  "indmelding": [],
+  "indmelding": [
+    {
+      "situation": "Dobling efter modpartens indmelding",
+      "noegle": "gul",
+      "regel": "Oplysning med kort ruder."
+    },
+    {
+      "situation": "Svar i major efter indmelding",
+      "noegle": "gron",
+      "regel": "Naturligt og svagt."
+    },
+    {
+      "situation": "2NT efter indmelding",
+      "noegle": "gul",
+      "regel": "Stadig krav."
+    }
+  ],
   "eksempler": [
     {
       "auction": [
@@ -326,11 +342,9 @@
   "faldgruber": [
     "Flannery lover præcis 5-4 – ikke 5-5 og ikke 6-4.",
     "Svarer passer kun 2♦ med lang ruder og en svag hånd.",
-    "Med Flannery lover 1♥ enten færre end 4 spar eller 16+ hp."
+    "Med Flannery lover 1♥ enten færre end 4 spar eller 16+ hp; undtagelsen er 5-5 i majorerne, der åbnes 1♥."
   ],
-  "aabne": [
-    "Må åbner med 5-4 og minimum melde 2♠ over 1NT, når 1♥ er åbnet?"
-  ],
+  "aabne": [],
   "relaterede": [],
   "traener": {
     "url": "traener.html?k=ff-flannery",

@@ -101,7 +101,7 @@
         {
           "bud": "2♠ efter 1♥",
           "noegle": "gron",
-          "styrke": "15+ hp",
+          "styrke": "16+ hp, eller 5-5",
           "viser": "4+ spar og 5+ hjerter"
         },
         {
@@ -338,7 +338,7 @@
         ]
       },
       "svar": "2♠",
-      "forklaring": "4 spar ved siden af hjerterne og 17 hp: 2♠ (15+)."
+      "forklaring": "4 spar ved siden af hjerterne og 17 hp: 2♠ (16+ med 5-4)."
     },
     {
       "auction": [

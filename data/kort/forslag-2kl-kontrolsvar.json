@@ -4,7 +4,7 @@
   "id": "forslag-2kl-kontrolsvar",
   "navn": "2♣ med kontrolsvar",
   "undertitel": "Svar på 2♣ efter antal kontroller: es = 2, konge = 1",
-  "kilde": "Notat: 2♣ med kontrolsvar (efter Michael Staub, 2019) · træneren pools/forslag-2kl-kontrolsvar.json",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 14 · notat efter Michael Staub, 2019 · træneren pools/forslag-2kl-kontrolsvar.json",
   "kategori": "svar",
   "noegle": "gul",
   "alert": "Overføringssvarene alerteres",
@@ -24,7 +24,7 @@
         "?"
       ]
     ],
-    "tekst": "Makker åbner 2♣ (sanshånd 22+, enfarvet eller flerfarvet hånd med mindst 8½ spillestik).",
+    "tekst": "Makker åbner 2♣: 20+ hp, eller 9 sikre stik i major / 10 i minor, eller jævn fra 22 hp. Kravmelding.",
     "gaelderFor": "Svar på 2♣, også efter indmelding"
   },
   "kortfortalt": "Svarer tæller kontroller (es = 2, konge = 1): 2♦ 0–1, 2♥ 2, 2♠ 3, 2NT 4, 3♣ 5+ – eller viser en god 6-farve med overføring. Efter 2♥ og højere vender sansintervallerne: 2NT 24+, 3NT 22–23.",
@@ -480,15 +480,10 @@
     "Efter indmelding er doblingen ikke straf: den afløser 2♥.",
     "Overføring viser farven lige over den meldte."
   ],
-  "aabne": [
-    "Kontrolsvar eller 2♦ waiting med det andet negative efter 2♣?"
-  ],
+  "aabne": [],
   "relaterede": [
     "RKC 1430",
     "Fast og slow arrival"
-  ],
-  "forveksles": [
-    "2♣ stærkåbning og 2♦ waiting"
   ],
   "traener": {
     "url": "traener.html?k=forslag-2kl-kontrolsvar",

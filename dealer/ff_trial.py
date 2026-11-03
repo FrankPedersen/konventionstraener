@@ -13,7 +13,7 @@ Antagelser: åbner tæller støttepoint (hp + korthed 5/3/1 + 1 pr. trumf ud ove
 omvendt Bergen; tabere tælles på de tre øverste pladser (es, konge, dame er vindere); trial bid
 meldes billigst (over 1♥ – 2♥ er 2♠ trial bid). Svarers »ny farve = hjælp dér« er ikke med.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, build_pool, tx
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, flannery, tpl, either, build_pool, tx
 from .omvendt_bergen import opener_sp, sp_detail, sp_detail_en
 
 ORDER = ['C', 'D', 'H', 'S']
@@ -39,7 +39,7 @@ def opener(M):
     sym = SUIT_SYM[M]
     def classify(hand, hp):
         L = lengths_of(hand)
-        if L[M] < 5 or hp < 11:
+        if L[M] < 5 or hp < 11 or (M == 'H' and flannery(L, hp)):
             return None
         sp = opener_sp(hand, hp, M)
         pts = f"{sp} sp ({sp_detail(hand, hp, M)})" if sp != hp else f"{sp} sp"

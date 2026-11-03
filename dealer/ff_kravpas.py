@@ -10,7 +10,7 @@ Kravpas og Loven – Makker 2 & mig, afsnit 18 og 18a.
 Antagelser: zonen er neutral og der justeres ikke for dobbeltfit og korthed; støttepoint 5/3/1 med
 4+ trumf og 3/2/1 med 3; åbner har minimum (12–14); næsekravpas med præcis 3 spar er ikke med.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, build_pool, tx
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, flannery, tpl, either, build_pool, tx
 from .omvendt_bergen import support_points
 
 PAS = ["Modstander", "Pas"]
@@ -57,6 +57,8 @@ def law_opener(M):
         L = lengths_of(hand)
         if not (12 <= hp <= 14) or L[M] not in (5, 6) or any(L[s] >= 5 for s in SUITS if s != M):
             return None
+        if M == 'H' and flannery(L, hp):
+            return None
         total = L[M] + 3
         if total == 8:
             return "Pas", tx(f"{L[M]} trumf + makkers 3 = 8: Loven siger 2-trinnet – pas.",
@@ -67,7 +69,7 @@ def law_opener(M):
 
 def nose(hand, hp):
     L = lengths_of(hand)
-    if not (12 <= hp <= 14) or L['H'] != 5 or L['S'] == 3:
+    if not (12 <= hp <= 14) or L['H'] != 5 or L['S'] == 3 or flannery(L, hp):
         return None
     if L['S'] <= 2:
         return "X", tx(f"{L['S']} spar: genåbn med dobling – makker kan sidde med gode spar og strafpasse.",
@@ -86,7 +88,7 @@ CLASSIFIERS = {"lov_svar_sp": law_responder('S', 'H'), "lov_svar_hj": law_respon
 r = lambda hp, M, O, n: tpl(hp, **{O: (0, 2), 'D': (1, 5), 'C': (1, 5), M: (n, n)})
 lov = lambda M, O: {f"2{SUIT_SYM[M]}": r((5, 9), M, O, 3), f"3{SUIT_SYM[M]}": r((3, 8), M, O, 4), f"4{SUIT_SYM[M]}": r((2, 7), M, O, 5), "Pas": r((0, 4), M, O, 3)}
 SAMPLERS = {"lov_svar_sp": lov('S', 'H'), "lov_svar_hj": lov('H', 'S'),
-            "naese_hj": {"X": tpl((12, 14), H=(5, 5), S=(0, 2), D=(1, 5), C=(1, 5)), "Pas": tpl((12, 14), H=(5, 5), S=(4, 4), D=(1, 3), C=(1, 3))}}
+            "naese_hj": {"X": tpl((12, 14), H=(5, 5), S=(0, 2), D=(1, 5), C=(1, 5)), "Pas": tpl((12, 14), H=(5, 5), S=(5, 5), D=(1, 3), C=(1, 3))}}
 PER_CALL = {"lov_svar_sp": 13, "lov_svar_hj": 13, "naese_hj": 20}
 for M, key, over, theirs in (('H', 'hj', "1♠", "2♠"), ('S', 'sp', "2♥", "3♥")):
     sym = SUIT_SYM[M]
