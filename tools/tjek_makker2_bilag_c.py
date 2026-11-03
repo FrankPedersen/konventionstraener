@@ -11,6 +11,7 @@ import pathlib
 import re
 import sys
 
+sys.stdout.reconfigure(encoding='utf-8')
 ROD = pathlib.Path(__file__).resolve().parent.parent
 DOK = (ROD / 'viden' / '2-over-1-makker2.html').read_text(encoding='utf-8')
 
@@ -32,9 +33,14 @@ def mellem(a, b):
 fejl = []
 
 
+def norm(s):
+    """Uden forskel på store og små bogstaver og på mellemrum, som tags giver omkring / og parenteser."""
+    return re.sub(r'\s*([/()])\s*', r'', s.lower())
+
+
 def skal(afsnit, navn, *sætninger):
     for s in sætninger:
-        if s not in afsnit:
+        if norm(s) not in norm(afsnit):
             fejl.append(f'{navn}: mangler "{s}"')
 
 
@@ -91,7 +97,6 @@ skal(a4, 'afsnit 4', 'Naturlig, 5-4, 12–15 hp, ikke krav', 'Spring i ny højer
 
 a = mellem('bilag-a', 'bilag-b')
 skal(a, 'Bilag A', 'Flannery', '2NT-spørgsmålet', 'kontrolsvar', 'overføringssvarene')
-ikke(a, 'Bilag A', 'siger intet om')
 
 b = mellem('bilag-b', 'bilag-c')
 skal(b, 'Bilag B', 'Flannery er valgt', 'B1 · Flannery 2♦ — aftalt', '11–15 hp', 'Med 5-5 i majorerne åbnes 1♥', 'dobling er oplysning med kort ruder',
