@@ -2,7 +2,7 @@
 
 3. november 2026 · Franks valg, skrevet ud af Claude Code
 
-Makker 2 og Frank har taget stilling til alle punkter i Bilag C. Aftalerne skrives ind i `viden/2-over-1-makker2.html`. `main` er tagget `v-foer-makker2-bilag-c`, og arbejdet sker på grenen `makker2-bilag-c`. Der flettes først efter Franks godkendelse.
+Makker 2 og Frank har taget stilling til alle punkter i Bilag C. Aftalerne skrives ind i `viden/2-over-1-makker2.html`. `main` er tagget `v-foer-makker2-bilag-c`, og arbejdet sker på grenen `makker2-bilag-c`. Godkendt af Frank og udgivet 3. november 2026.
 
 ## Afgrænsning
 
@@ -84,4 +84,5 @@ Desuden: `tools/tjek_makker2_aftaler.py` med den ændrede 2♠, `tools/tjek_fago
 5. **Åbners farvemelding efter 2♣** følger notatet `viden/forslag-2klor-kontrolsvar.html`, der er kilden til kortet: naturlig med 5+ kort, og spring til 3♥, 3♠, 4♣ eller 4♦ fastlægger trumf.
 6. **Ankeret `#afsnit-c4`** følger Lebensohl-skemaet med ind i afsnit 15d, så linket fra `data/konventioner.json` virker uændret.
 7. **`ff-2kl`** er taget af Træn som `ff-revers` (Franks valg 3. november 2026). Waiting er ikke længere et åbent valg, så forslag ville give et forkert billede.
-8. **`bekkasin`** har 5 hænder med 1♥ og 5-4 under 16 hp, men puljen deles med Makker 1, hvor hænderne er rigtige. Den er ikke ændret; det står Frank frit for at vælge.
+8. **`bekkasin`** har 5 hænder med 1♥ og 5-4 under 16 hp, men puljen deles med Makker 1, hvor hænderne er rigtige. Den bliver, som den er (Franks valg 3. november 2026: "en fejl, vi kan leve med").
+9. **Multi 2♦ og Muiderberg 2♠** bliver på Træn med "Kommer" (Franks valg 3. november 2026).
