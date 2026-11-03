@@ -42,15 +42,15 @@ Makker 2 og Frank har taget stilling til alle punkter i Bilag C. Aftalerne skriv
 
 `python3 tools/tjek_makker2_bilag_c.py` (skrevet først):
 
-- [ ] Afsnit 15d findes og har aftalerne mod svag 2 og 3 og Lebensohl-skemaet; ankeret `#afsnit-c4` virker stadig, så træneren `ff-lebensohl` linker rigtigt.
-- [ ] Afsnit 17 har responsiv dobling og maksimal-dobling, afsnit 15b forsvaret mod deres to-farvede, og afsnit 19 udspil mod slem og Lightner.
-- [ ] Afsnit 14 har kontrolsvarene, overføringerne, de vendte sansintervaller, svarers videre meldinger og skemaet efter indmelding. "Waiting" og "det andet negative" står ingen steder i dokumentet, og åbningskravet er uændret.
-- [ ] Sanstrappen i afsnit 8 følger afsnit 14.
-- [ ] Afsnit 12 har Flannery og ikke den svage 2♦. Bilag A har Flannery, 2NT-spørgsmålet og kontrolsvarene.
-- [ ] Afsnit 1 har 2♠ efter 1♥ som 5-5 med 12–15 og 3♠ som 16+; afsnit 5 har 2♠ efter 1♥ uden 15+. B1 siger det samme.
-- [ ] Afsnit 4's grænser for ny højere farve (12–15 og spring 16+) er uændrede.
-- [ ] Bilag B's overskrift siger, at Flannery er valgt, og B1's overskrift, at den er aftalt. B2 og B3 står der stadig.
-- [ ] Bilag C er én linje, og indholdsfortegnelsen har hverken C1–C4 eller et link, der peger ud i ingenting.
+- [x] Afsnit 15d findes og har aftalerne mod svag 2 og 3 og Lebensohl-skemaet; ankeret `#afsnit-c4` virker stadig, så træneren `ff-lebensohl` linker rigtigt.
+- [x] Afsnit 17 har responsiv dobling og maksimal-dobling, afsnit 15b forsvaret mod deres to-farvede, og afsnit 19 udspil mod slem og Lightner.
+- [x] Afsnit 14 har kontrolsvarene, overføringerne, de vendte sansintervaller, svarers videre meldinger og skemaet efter indmelding. "Waiting" og "det andet negative" står ingen steder i dokumentet, og åbningskravet er uændret.
+- [x] Sanstrappen i afsnit 8 følger afsnit 14.
+- [x] Afsnit 12 har Flannery og ikke den svage 2♦. Bilag A har Flannery, 2NT-spørgsmålet og kontrolsvarene.
+- [x] Afsnit 1 har 2♠ efter 1♥ som 5-5 med 12–15 og 3♠ som 16+; afsnit 5 har 2♠ efter 1♥ uden 15+. B1 siger det samme.
+- [x] Afsnit 4's grænser for ny højere farve (12–15 og spring 16+) er uændrede.
+- [x] Bilag B's overskrift siger, at Flannery er valgt, og B1's overskrift, at den er aftalt. B2 og B3 står der stadig.
+- [x] Bilag C er én linje, og indholdsfortegnelsen har hverken C1–C4 eller et link, der peger ud i ingenting.
 
 Desuden: `tools/tjek_makker2_aftaler.py` med den ændrede 2♠, `tools/tjek_fagord.py`, `tools/tjek_bydeform.py`, `tools/tjek_sprog.py`, `tools/tjek_konventionskort.py` og `tools/sprogtjek.py`.
 
