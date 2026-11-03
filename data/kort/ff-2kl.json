@@ -4,7 +4,7 @@
   "id": "ff-2kl",
   "navn": "2♣ stærkåbning og 2♦ waiting",
   "undertitel": "Den eneste stærke åbning: 2♦ venter, positive svar viser god farve",
-  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 · afsnit 14 · træneren pools/ff-2kl.json",
+  "kilde": "2 over 1 · Moderne majorstøtte, udgave 3.1 før 3. november 2026 · træneren pools/ff-2kl.json",
   "kategori": "aabning",
   "noegle": "bla",
   "alert": "2♣ og 2♦ alerteres",
@@ -411,9 +411,7 @@
     "Et positivt svar kræver en god farve, der kan blive trumf – ikke bare 8 hp.",
     "Støtte går forud for det andet negative: med 3-korts støtte støtter svarer også med 0–4 hp."
   ],
-  "aabne": [
-    "Kontrolsvar (es = 2, konge = 1) i stedet for 2♦ waiting?"
-  ],
+  "aabne": [],
   "relaterede": [
     "Amerikansk Stayman",
     "Overføringer",

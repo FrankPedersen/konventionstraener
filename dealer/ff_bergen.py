@@ -11,7 +11,7 @@ Antagelser: 2M lover 3 kort og 3M 4 kort (skemaet giver 3–4 hhv. 4+); med 5 tr
 støttepoint 5/3/1 med 4+ trumf og 3/2/1 med 3 trumf. 3 korts støtte med 13+ (Two over One først),
 4+ trumf med 0–3 sp og cuebid/slem efter 3♣/3♦ er ikke med.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, tpl, either, build_pool, tx
+from .core import SUITS, SUIT_SYM, SUIT_NAME, lengths_of, flannery, tpl, either, build_pool, tx
 from .omvendt_bergen import support_points, opener_sp, sp_detail, sp_detail_en
 
 GAME = 26
@@ -83,7 +83,7 @@ def opener(M, bid):
     sym = SUIT_SYM[M]
     def classify(hand, hp):
         L = lengths_of(hand)
-        if L[M] < 5 or not (12 <= hp <= 18):
+        if L[M] < 5 or not (12 <= hp <= 18) or (M == 'H' and flannery(L, hp)):
             return None
         sp = opener_sp(hand, hp, M)
         if sp > 20:

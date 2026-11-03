@@ -109,6 +109,10 @@ def bilingual(o):
         da["en"] = d
     return da
 
+def flannery(L, hp):
+    """Makker 2: 5 hjerter og 4 spar med højst 15 hp åbnes 2♦ (Flannery, bilag B1), ikke 1♥. 5-5 i majorerne åbnes 1♥."""
+    return L['H'] == 5 and L['S'] == 4 and hp <= 15
+
 def lengths_of(hand):
     return {s: len(hand[s]) for s in SUITS}
 

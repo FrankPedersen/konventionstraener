@@ -36,7 +36,7 @@
   }
  },
  {
-  "system": "forslag",
+  "system": "ff",
   "titel": "2♣ med kontrolsvar",
   "type": "Notat",
   "beskrivelse": "Svarstrukturen efter den stærke 2♣: kontrolsvar (es = 2, konge = 1), overføringer, åbners genmeldinger, konkurrence og fem eksempler. Bygger på Michael Staub.",
@@ -48,15 +48,15 @@
   }
  },
  {
-  "system": "forslag",
-  "titel": "Forslag til 2♦-åbninger",
+  "system": "ff",
+  "titel": "2♦-åbninger",
   "type": "Bilag B · Makker 2 & mig",
-  "beskrivelse": "Diskussionsoplæg om 2♦-åbningen: Flannery, Multi 2♦ og Muiderberg 2♠ – med fordele, ulemper og pakker.",
+  "beskrivelse": "Flannery er valgt (Franks valg 3. november 2026): aftalen står i B1. Multi 2♦ og Muiderberg 2♠ er baggrund, med fordele, ulemper og pakker.",
   "href": "viden/2-over-1-makker2.html#bilag-b",
   "en": {
-   "titel": "Proposals for 2♦ openings",
+   "titel": "2♦ openings",
    "type": "Appendix B · Partner 2 & me",
-   "beskrivelse": "A discussion paper on the 2♦ opening: Flannery, Multi 2♦ and Muiderberg 2♠ – with pros, cons and packages."
+   "beskrivelse": "Flannery is chosen (Frank's choice, 3 November 2026): the agreement is in B1. Multi 2♦ and Muiderberg 2♠ are background, with pros, cons and packages."
   }
  },
  {

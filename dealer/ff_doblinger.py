@@ -6,7 +6,7 @@ Negativ dobling, støttedobling og redobling – Makker 2 & mig, afsnit 17.
   aab_neg – åbner efter 1♦ – (1♥) – X – (pas) (X viser 4 spar): 1♠ 12–15 · 2♠ 16–18 · 4♠ 19+ med 4 spar ·
             pas med 4+ hjerter og 12–14 · 1NT 12–14 jævn med hjertehold · 2NT 18–19 · 2♦ 6-farve 12–15 ·
             2♥ cuebid 18+ uden naturlig melding
-  stoette – åbner efter 1♥ – (pas) – 1♠ – (2♣): X = præcis 3 spar · 2♠ 4 spar 12–15 · 3♠ 4 spar 16–18 ·
+  stoette – åbner efter 1♥ – (pas) – 1♠ – (2♣): X = præcis 3 spar · 2♠ 4 spar 12–15 (6-4; 5-4 er åbnet 2♦) · 3♠ 4 spar 16–18 ·
             uden 3 spar: 2♥ med 6 hjerter, ellers pas (minimum)
   redobl  – svarer efter 1♥/1♠ – (X): XX 10+ uden primær (4-korts) støtte · 2M 6–9 sp med 3 · 3M 6–9 sp med 4+ ·
             2NT Truscott 10+ sp med 4+ (Franks valg 27. oktober 2026, afsnit 2 og 17) · 1♠ 6–9 med 4+ spar (over 1♥) ·
@@ -15,7 +15,7 @@ Antagelser: støttepoint 5/3/1 med 4+ trumf og 3/2/1 med 3; hold = es, K-x, D-x-
 »god 6-farve« = to af de tre øverste. Hænder, hvor skemaet ikke giver én melding, er ikke med –
 fx 3 trumf og 10+ sp med under 10 hp efter dobling, som dokumentet ikke beskriver.
 """
-from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, tpl, either, build_pool, tx
+from .core import SUITS, SUIT_SYM, SUIT_NAME, SUIT_NAME_EN, lengths_of, flannery, tpl, either, build_pool, tx
 from .lebensohl import stopper
 from .omvendt_bergen import support_points
 
@@ -102,7 +102,7 @@ def after_negative(hand, hp):
 
 def support_double(hand, hp):
     L = lengths_of(hand)
-    if L['H'] < 5 or not (12 <= hp <= 18):
+    if L['H'] < 5 or not (12 <= hp <= 18) or flannery(L, hp):
         return None
     if L['S'] == 3:
         return "X", tx(f"Præcis 3 spar: støttedobling – enhver styrke ({hp} hp).", f"Exactly 3 spades: support double – any strength ({hp} HCP).")
@@ -185,7 +185,7 @@ SITUATIONS["stoette"] = {"rolle": "Åbner", "auction": [["Dig", "1♥"], PAS, ["
                          "calls": ["Pas", "X", "2♦", "2♥", "2♠", "2NT", "3♠"], "bonus": BONUS["stoette"]}
 CLASSIFIERS["stoette"] = support_double
 s_ = lambda hp, **b: tpl(hp, **{'H': (5, 5), 'S': (2, 3), 'D': (1, 3), 'C': (1, 3), **b})
-SAMPLERS["stoette"] = {"X": s_((12, 18), S=(3, 3)), "2♠": s_((12, 15), S=(4, 4)), "3♠": s_((16, 18), S=(4, 4)),
+SAMPLERS["stoette"] = {"X": s_((12, 18), S=(3, 3)), "2♠": s_((12, 15), H=(6, 6), S=(4, 4)), "3♠": s_((16, 18), S=(4, 4)),
                        "2♥": s_((12, 14), H=(6, 6), S=(0, 2)), "Pas": s_((12, 14), S=(1, 2), D=(2, 3), C=(2, 3))}
 PER_CALL["stoette"] = 14
 for M, key in (('H', 'hj'), ('S', 'sp')):

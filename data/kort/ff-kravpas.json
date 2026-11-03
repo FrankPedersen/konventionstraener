@@ -305,29 +305,29 @@
       ],
       "haand": {
         "S": [
-          10,
-          7,
-          6,
-          3
-        ],
-        "H": [
-          13,
           12,
           11,
+          9,
+          8,
+          7
+        ],
+        "H": [
+          14,
+          12,
+          9,
           7,
           4
         ],
         "D": [
-          11
+          4
         ],
         "C": [
           14,
-          11,
-          7
+          5
         ]
       },
       "svar": "Pas",
-      "forklaring": "4 spar: du er selv lang i deres farve – pas."
+      "forklaring": "5 spar: du er selv lang i deres farve – pas."
     }
   ],
   "faldgruber": [

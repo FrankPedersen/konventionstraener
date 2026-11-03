@@ -1,5 +1,5 @@
 """
-Lebensohl mod svag 2 – Makker 2 & mig, bilag C4, udvidet efter Jyderup Bridgeklubs Lebensohl-ark.
+Lebensohl mod svag 2 – Makker 2 & mig, afsnit 15d, udvidet efter Jyderup Bridgeklubs Lebensohl-ark.
 
 Modparten åbner svag 2♥/2♠, makker dobler, næste mand passer.
   svar_*   – svarer: farve højere end deres (billigst) = naturligt og svagt (0–7) · 2NT relæ = svag hånd (0–7)

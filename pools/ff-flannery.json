@@ -19,7 +19,7 @@
      "En svag 2 i ruder",
      "En svag 2 i en ukendt major (Multi)"
     ],
-    "why": "Flannery 2♦ viser præcis 5-4 i majorerne med 11–15 hp. Med 16+ åbner man 1♥ og melder spar bagefter, så 1♥ benægter fire spar under 16 hp."
+    "why": "Flannery 2♦ viser præcis 5-4 i majorerne med 11–15 hp. Med 16+ åbner man 1♥ og melder spar bagefter, så 1♥ benægter fire spar under 16 hp. Med 5-5 i majorerne åbner man også 1♥."
    },
    "en": {
     "bonus": {
@@ -30,7 +30,7 @@
       "A weak two in diamonds",
       "A weak two in an unknown major (Multi)"
      ],
-     "why": "Flannery 2♦ shows exactly 5-4 in the majors with 11–15 HCP. With 16+ you open 1♥ and bid spades later, so 1♥ denies four spades below 16 HCP."
+     "why": "Flannery 2♦ shows exactly 5-4 in the majors with 11–15 HCP. With 16+ you open 1♥ and bid spades later, so 1♥ denies four spades below 16 HCP. With 5-5 in the majors you also open 1♥."
     }
    }
   },
@@ -2257,6 +2257,267 @@
    "why": "5 hjerter, kun 3 spar og 12 hp: 1♥ – Flannery kræver præcis fire spar.",
    "en": {
     "why": "5 hearts, only 3 spades and 12 HCP: 1♥ – Flannery needs exactly four spades."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     11,
+     10,
+     5,
+     4,
+     2
+    ],
+    "H": [
+     13,
+     10,
+     6,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     13,
+     12
+    ],
+    "C": []
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "1♥",
+   "why": "5-5 i majorerne og 13 hp: 1♥ – Flannery lover præcis 5-4.",
+   "en": {
+    "why": "5-5 in the majors and 13 HCP: 1♥ – Flannery promises exactly 5-4."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     10,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     11,
+     2
+    ],
+    "D": [
+     14,
+     8
+    ],
+    "C": [
+     11
+    ]
+   },
+   "hp": 19,
+   "sp": 23,
+   "correct": "1♥",
+   "why": "5-5 i majorerne og 19 hp: 1♥ – Flannery lover præcis 5-4.",
+   "en": {
+    "why": "5-5 in the majors and 19 HCP: 1♥ – Flannery promises exactly 5-4."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     12,
+     10,
+     9,
+     2
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     6,
+     2
+    ],
+    "D": [
+     13,
+     6
+    ],
+    "C": [
+     4
+    ]
+   },
+   "hp": 18,
+   "sp": 22,
+   "correct": "1♥",
+   "why": "5-5 i majorerne og 18 hp: 1♥ – Flannery lover præcis 5-4.",
+   "en": {
+    "why": "5-5 in the majors and 18 HCP: 1♥ – Flannery promises exactly 5-4."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     10,
+     9,
+     7,
+     4
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     9,
+     6
+    ],
+    "D": [
+     14,
+     9
+    ],
+    "C": [
+     8
+    ]
+   },
+   "hp": 14,
+   "sp": 18,
+   "correct": "1♥",
+   "why": "5-5 i majorerne og 14 hp: 1♥ – Flannery lover præcis 5-4.",
+   "en": {
+    "why": "5-5 in the majors and 14 HCP: 1♥ – Flannery promises exactly 5-4."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     13,
+     9,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     10,
+     8,
+     6,
+     3
+    ],
+    "D": [
+     12,
+     9,
+     2
+    ],
+    "C": []
+   },
+   "hp": 13,
+   "sp": 18,
+   "correct": "1♥",
+   "why": "5-5 i majorerne og 13 hp: 1♥ – Flannery lover præcis 5-4.",
+   "en": {
+    "why": "5-5 in the majors and 13 HCP: 1♥ – Flannery promises exactly 5-4."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     7,
+     6
+    ],
+    "H": [
+     14,
+     12,
+     10,
+     9,
+     4
+    ],
+    "D": [],
+    "C": [
+     13,
+     12,
+     5
+    ]
+   },
+   "hp": 17,
+   "sp": 22,
+   "correct": "1♥",
+   "why": "5-5 i majorerne og 17 hp: 1♥ – Flannery lover præcis 5-4.",
+   "en": {
+    "why": "5-5 in the majors and 17 HCP: 1♥ – Flannery promises exactly 5-4."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     14,
+     12,
+     6,
+     5,
+     2
+    ],
+    "H": [
+     14,
+     11,
+     10,
+     8,
+     4
+    ],
+    "D": [
+     10
+    ],
+    "C": [
+     13,
+     12
+    ]
+   },
+   "hp": 16,
+   "sp": 20,
+   "correct": "1♥",
+   "why": "5-5 i majorerne og 16 hp: 1♥ – Flannery lover præcis 5-4.",
+   "en": {
+    "why": "5-5 in the majors and 16 HCP: 1♥ – Flannery promises exactly 5-4."
+   }
+  },
+  {
+   "situation": "aabning",
+   "hand": {
+    "S": [
+     13,
+     12,
+     11,
+     9,
+     7
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     8,
+     5
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     10,
+     9
+    ]
+   },
+   "hp": 15,
+   "sp": 19,
+   "correct": "1♥",
+   "why": "5-5 i majorerne og 15 hp: 1♥ – Flannery lover præcis 5-4.",
+   "en": {
+    "why": "5-5 in the majors and 15 HCP: 1♥ – Flannery promises exactly 5-4."
    }
   },
   {

@@ -1,55 +1,5 @@
 {
  "situations": {
-  "aab_ru": {
-   "rolle": "Åbner",
-   "auction": [
-    [
-     "Dig",
-     "2♦"
-    ],
-    [
-     "Modstander",
-     "Pas"
-    ],
-    [
-     "Makker",
-     "2NT"
-    ],
-    [
-     "Modstander",
-     "Pas"
-    ]
-   ],
-   "calls": [
-    "3♣",
-    "3♦",
-    "3♥",
-    "3♠",
-    "3NT"
-   ],
-   "bonus": {
-    "q": "Hvad viser 3♦ som svar på Ogust?",
-    "correct": "Dårlig hånd (5–7) med to af de tre øverste",
-    "options": [
-     "Dårlig hånd (5–7) med to af de tre øverste",
-     "God hånd med én af de tre øverste",
-     "Ruderfarve"
-    ],
-    "why": "Huskeregel »mindste minorer, 1-2-1-2-3«: 3♣ dårlig/1 · 3♦ dårlig/2 · 3♥ god/1 · 3♠ god/2 · 3NT E-K-D."
-   },
-   "en": {
-    "bonus": {
-     "q": "What does 3♦ show in response to Ogust?",
-     "correct": "A poor hand (5–7) with two of the top three honours",
-     "options": [
-      "A poor hand (5–7) with two of the top three honours",
-      "A good hand with one of the top three honours",
-      "A diamond suit"
-     ],
-     "why": "Memory aid »1-2-1-2-3«: 3♣ poor/1 · 3♦ poor/2 · 3♥ good/1 · 3♠ good/2 · 3NT A-K-Q."
-    }
-   }
-  },
   "aab_hj": {
    "rolle": "Åbner",
    "auction": [
@@ -241,1821 +191,6 @@
  },
  "hands": [
   {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     13,
-     9,
-     2
-    ],
-    "H": [
-     8,
-     7,
-     3
-    ],
-    "D": [
-     12,
-     10,
-     8,
-     7,
-     6,
-     3
-    ],
-    "C": [
-     3
-    ]
-   },
-   "hp": 5,
-   "sp": 8,
-   "correct": "3♣",
-   "why": "Dårlig hånd (5 hp) med 1 af de tre øverste honnører: 3♣.",
-   "en": {
-    "why": "Poor hand (5 HCP) with 1 of the top three honours: 3♣."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     6
-    ],
-    "H": [
-     7,
-     4,
-     3
-    ],
-    "D": [
-     12,
-     11,
-     10,
-     7,
-     4,
-     2
-    ],
-    "C": [
-     13,
-     9,
-     3
-    ]
-   },
-   "hp": 6,
-   "sp": 9,
-   "correct": "3♣",
-   "why": "Dårlig hånd (6 hp) med 1 af de tre øverste honnører: 3♣.",
-   "en": {
-    "why": "Poor hand (6 HCP) with 1 of the top three honours: 3♣."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     11,
-     7,
-     2
-    ],
-    "H": [
-     13,
-     5
-    ],
-    "D": [
-     13,
-     7,
-     6,
-     4,
-     3,
-     2
-    ],
-    "C": [
-     8,
-     4
-    ]
-   },
-   "hp": 7,
-   "sp": 9,
-   "correct": "3♣",
-   "why": "Dårlig hånd (7 hp) med 1 af de tre øverste honnører: 3♣.",
-   "en": {
-    "why": "Poor hand (7 HCP) with 1 of the top three honours: 3♣."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     12,
-     8,
-     3
-    ],
-    "H": [
-     7,
-     6,
-     4
-    ],
-    "D": [
-     13,
-     11,
-     9,
-     8,
-     4,
-     3
-    ],
-    "C": [
-     10
-    ]
-   },
-   "hp": 6,
-   "sp": 9,
-   "correct": "3♣",
-   "why": "Dårlig hånd (6 hp) med 1 af de tre øverste honnører: 3♣.",
-   "en": {
-    "why": "Poor hand (6 HCP) with 1 of the top three honours: 3♣."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     9,
-     3
-    ],
-    "H": [
-     13,
-     3
-    ],
-    "D": [
-     14,
-     7,
-     6,
-     5,
-     4,
-     2
-    ],
-    "C": [
-     9,
-     7,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 9,
-   "correct": "3♣",
-   "why": "Dårlig hånd (7 hp) med 1 af de tre øverste honnører: 3♣.",
-   "en": {
-    "why": "Poor hand (7 HCP) with 1 of the top three honours: 3♣."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     10,
-     9,
-     3
-    ],
-    "H": [
-     12
-    ],
-    "D": [
-     12,
-     10,
-     8,
-     7,
-     5,
-     3
-    ],
-    "C": [
-     13,
-     5,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 10,
-   "correct": "3♣",
-   "why": "Dårlig hånd (7 hp) med 1 af de tre øverste honnører: 3♣.",
-   "en": {
-    "why": "Poor hand (7 HCP) with 1 of the top three honours: 3♣."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     12,
-     5
-    ],
-    "H": [
-     10,
-     7
-    ],
-    "D": [
-     12,
-     10,
-     9,
-     8,
-     4,
-     2
-    ],
-    "C": [
-     13,
-     8,
-     2
-    ]
-   },
-   "hp": 7,
-   "sp": 9,
-   "correct": "3♣",
-   "why": "Dårlig hånd (7 hp) med 1 af de tre øverste honnører: 3♣.",
-   "en": {
-    "why": "Poor hand (7 HCP) with 1 of the top three honours: 3♣."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     10,
-     9
-    ],
-    "H": [
-     12,
-     10,
-     5
-    ],
-    "D": [
-     12,
-     11,
-     9,
-     7,
-     6,
-     3
-    ],
-    "C": [
-     8,
-     4
-    ]
-   },
-   "hp": 5,
-   "sp": 7,
-   "correct": "3♣",
-   "why": "Dårlig hånd (5 hp) med 1 af de tre øverste honnører: 3♣.",
-   "en": {
-    "why": "Poor hand (5 HCP) with 1 of the top three honours: 3♣."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     4,
-     2
-    ],
-    "H": [
-     5,
-     2
-    ],
-    "D": [
-     14,
-     10,
-     9,
-     8,
-     7,
-     2
-    ],
-    "C": [
-     11,
-     7,
-     6
-    ]
-   },
-   "hp": 5,
-   "sp": 7,
-   "correct": "3♣",
-   "why": "Dårlig hånd (5 hp) med 1 af de tre øverste honnører: 3♣.",
-   "en": {
-    "why": "Poor hand (5 HCP) with 1 of the top three honours: 3♣."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     11,
-     10,
-     3
-    ],
-    "H": [
-     8,
-     5,
-     4
-    ],
-    "D": [
-     14,
-     8,
-     7,
-     6,
-     5,
-     3
-    ],
-    "C": [
-     6
-    ]
-   },
-   "hp": 5,
-   "sp": 8,
-   "correct": "3♣",
-   "why": "Dårlig hånd (5 hp) med 1 af de tre øverste honnører: 3♣.",
-   "en": {
-    "why": "Poor hand (5 HCP) with 1 of the top three honours: 3♣."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     5
-    ],
-    "H": [
-     8,
-     7,
-     3
-    ],
-    "D": [
-     14,
-     11,
-     10,
-     9,
-     5,
-     2
-    ],
-    "C": [
-     11,
-     10,
-     5
-    ]
-   },
-   "hp": 6,
-   "sp": 9,
-   "correct": "3♣",
-   "why": "Dårlig hånd (6 hp) med 1 af de tre øverste honnører: 3♣.",
-   "en": {
-    "why": "Poor hand (6 HCP) with 1 of the top three honours: 3♣."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     10,
-     9,
-     8
-    ],
-    "H": [
-     9,
-     5
-    ],
-    "D": [
-     14,
-     13,
-     8,
-     7,
-     6,
-     5
-    ],
-    "C": [
-     4,
-     3
-    ]
-   },
-   "hp": 7,
-   "sp": 9,
-   "correct": "3♦",
-   "why": "Dårlig hånd (7 hp) med 2 af de tre øverste honnører: 3♦.",
-   "en": {
-    "why": "Poor hand (7 HCP) with 2 of the top three honours: 3♦."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     10,
-     8,
-     7
-    ],
-    "H": [
-     11,
-     6,
-     2
-    ],
-    "D": [
-     13,
-     12,
-     11,
-     8,
-     5,
-     4
-    ],
-    "C": [
-     4
-    ]
-   },
-   "hp": 7,
-   "sp": 10,
-   "correct": "3♦",
-   "why": "Dårlig hånd (7 hp) med 2 af de tre øverste honnører: 3♦.",
-   "en": {
-    "why": "Poor hand (7 HCP) with 2 of the top three honours: 3♦."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     7,
-     6,
-     5
-    ],
-    "H": [
-     11,
-     10,
-     4
-    ],
-    "D": [
-     13,
-     12,
-     10,
-     8,
-     3,
-     2
-    ],
-    "C": [
-     7
-    ]
-   },
-   "hp": 6,
-   "sp": 9,
-   "correct": "3♦",
-   "why": "Dårlig hånd (6 hp) med 2 af de tre øverste honnører: 3♦.",
-   "en": {
-    "why": "Poor hand (6 HCP) with 2 of the top three honours: 3♦."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     9,
-     8,
-     7
-    ],
-    "H": [
-     7,
-     6
-    ],
-    "D": [
-     14,
-     12,
-     9,
-     6,
-     5,
-     4
-    ],
-    "C": [
-     11,
-     8
-    ]
-   },
-   "hp": 7,
-   "sp": 9,
-   "correct": "3♦",
-   "why": "Dårlig hånd (7 hp) med 2 af de tre øverste honnører: 3♦.",
-   "en": {
-    "why": "Poor hand (7 HCP) with 2 of the top three honours: 3♦."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     10,
-     7
-    ],
-    "H": [
-     5,
-     3,
-     2
-    ],
-    "D": [
-     14,
-     12,
-     11,
-     10,
-     8,
-     7
-    ],
-    "C": [
-     10,
-     7
-    ]
-   },
-   "hp": 7,
-   "sp": 9,
-   "correct": "3♦",
-   "why": "Dårlig hånd (7 hp) med 2 af de tre øverste honnører: 3♦.",
-   "en": {
-    "why": "Poor hand (7 HCP) with 2 of the top three honours: 3♦."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     11,
-     5
-    ],
-    "H": [
-     7,
-     4,
-     3
-    ],
-    "D": [
-     13,
-     12,
-     9,
-     8,
-     4,
-     3
-    ],
-    "C": [
-     11,
-     5
-    ]
-   },
-   "hp": 7,
-   "sp": 9,
-   "correct": "3♦",
-   "why": "Dårlig hånd (7 hp) med 2 af de tre øverste honnører: 3♦.",
-   "en": {
-    "why": "Poor hand (7 HCP) with 2 of the top three honours: 3♦."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     10,
-     3,
-     2
-    ],
-    "H": [
-     10,
-     9,
-     4
-    ],
-    "D": [
-     14,
-     13,
-     10,
-     9,
-     7,
-     3
-    ],
-    "C": [
-     6
-    ]
-   },
-   "hp": 7,
-   "sp": 10,
-   "correct": "3♦",
-   "why": "Dårlig hånd (7 hp) med 2 af de tre øverste honnører: 3♦.",
-   "en": {
-    "why": "Poor hand (7 HCP) with 2 of the top three honours: 3♦."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     9
-    ],
-    "H": [
-     11,
-     8,
-     7
-    ],
-    "D": [
-     13,
-     12,
-     6,
-     5,
-     4,
-     2
-    ],
-    "C": [
-     11,
-     8,
-     7
-    ]
-   },
-   "hp": 7,
-   "sp": 10,
-   "correct": "3♦",
-   "why": "Dårlig hånd (7 hp) med 2 af de tre øverste honnører: 3♦.",
-   "en": {
-    "why": "Poor hand (7 HCP) with 2 of the top three honours: 3♦."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     10,
-     7,
-     4
-    ],
-    "H": [
-     11,
-     4
-    ],
-    "D": [
-     13,
-     12,
-     10,
-     7,
-     5,
-     2
-    ],
-    "C": [
-     6,
-     2
-    ]
-   },
-   "hp": 6,
-   "sp": 8,
-   "correct": "3♦",
-   "why": "Dårlig hånd (6 hp) med 2 af de tre øverste honnører: 3♦.",
-   "en": {
-    "why": "Poor hand (6 HCP) with 2 of the top three honours: 3♦."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     8,
-     6,
-     3
-    ],
-    "H": [
-     9,
-     8,
-     7
-    ],
-    "D": [
-     14,
-     13,
-     8,
-     6,
-     3,
-     2
-    ],
-    "C": [
-     9
-    ]
-   },
-   "hp": 7,
-   "sp": 10,
-   "correct": "3♦",
-   "why": "Dårlig hånd (7 hp) med 2 af de tre øverste honnører: 3♦.",
-   "en": {
-    "why": "Poor hand (7 HCP) with 2 of the top three honours: 3♦."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     6
-    ],
-    "H": [
-     12,
-     8,
-     2
-    ],
-    "D": [
-     13,
-     12,
-     10,
-     8,
-     5,
-     4
-    ],
-    "C": [
-     9,
-     7,
-     5
-    ]
-   },
-   "hp": 7,
-   "sp": 10,
-   "correct": "3♦",
-   "why": "Dårlig hånd (7 hp) med 2 af de tre øverste honnører: 3♦.",
-   "en": {
-    "why": "Poor hand (7 HCP) with 2 of the top three honours: 3♦."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     12,
-     6,
-     4
-    ],
-    "H": [
-     13,
-     9,
-     7
-    ],
-    "D": [
-     14,
-     10,
-     8,
-     6,
-     5,
-     3
-    ],
-    "C": [
-     2
-    ]
-   },
-   "hp": 9,
-   "sp": 12,
-   "correct": "3♥",
-   "why": "God hånd (9 hp) med 1 af de tre øverste honnører: 3♥.",
-   "en": {
-    "why": "Good hand (9 HCP) with 1 of the top three honours: 3♥."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     14,
-     10,
-     2
-    ],
-    "H": [
-     9,
-     8,
-     5
-    ],
-    "D": [
-     14,
-     9,
-     8,
-     5,
-     4,
-     2
-    ],
-    "C": [
-     2
-    ]
-   },
-   "hp": 8,
-   "sp": 11,
-   "correct": "3♥",
-   "why": "God hånd (8 hp) med 1 af de tre øverste honnører: 3♥.",
-   "en": {
-    "why": "Good hand (8 HCP) with 1 of the top three honours: 3♥."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     13
-    ],
-    "H": [
-     14,
-     4,
-     3
-    ],
-    "D": [
-     12,
-     11,
-     10,
-     9,
-     7,
-     4
-    ],
-    "C": [
-     9,
-     8,
-     4
-    ]
-   },
-   "hp": 10,
-   "sp": 13,
-   "correct": "3♥",
-   "why": "God hånd (10 hp) med 1 af de tre øverste honnører: 3♥.",
-   "en": {
-    "why": "Good hand (10 HCP) with 1 of the top three honours: 3♥."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     11,
-     10,
-     8
-    ],
-    "H": [
-     9,
-     5,
-     2
-    ],
-    "D": [
-     12,
-     11,
-     10,
-     9,
-     5,
-     3
-    ],
-    "C": [
-     14
-    ]
-   },
-   "hp": 8,
-   "sp": 11,
-   "correct": "3♥",
-   "why": "God hånd (8 hp) med 1 af de tre øverste honnører: 3♥.",
-   "en": {
-    "why": "Good hand (8 HCP) with 1 of the top three honours: 3♥."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     14,
-     12,
-     2
-    ],
-    "H": [
-     7,
-     6,
-     2
-    ],
-    "D": [
-     12,
-     10,
-     9,
-     8,
-     5,
-     2
-    ],
-    "C": [
-     12
-    ]
-   },
-   "hp": 10,
-   "sp": 13,
-   "correct": "3♥",
-   "why": "God hånd (10 hp) med 1 af de tre øverste honnører: 3♥.",
-   "en": {
-    "why": "Good hand (10 HCP) with 1 of the top three honours: 3♥."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     10,
-     9
-    ],
-    "H": [
-     13,
-     12,
-     6
-    ],
-    "D": [
-     14,
-     11,
-     9,
-     6,
-     4,
-     2
-    ],
-    "C": [
-     11,
-     8
-    ]
-   },
-   "hp": 11,
-   "sp": 13,
-   "correct": "3♥",
-   "why": "God hånd (11 hp) med 1 af de tre øverste honnører: 3♥.",
-   "en": {
-    "why": "Good hand (11 HCP) with 1 of the top three honours: 3♥."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     14,
-     13,
-     3
-    ],
-    "H": [
-     8,
-     2
-    ],
-    "D": [
-     13,
-     11,
-     9,
-     5,
-     4,
-     2
-    ],
-    "C": [
-     5,
-     2
-    ]
-   },
-   "hp": 11,
-   "sp": 13,
-   "correct": "3♥",
-   "why": "God hånd (11 hp) med 1 af de tre øverste honnører: 3♥.",
-   "en": {
-    "why": "Good hand (11 HCP) with 1 of the top three honours: 3♥."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     10,
-     7
-    ],
-    "H": [
-     14,
-     2
-    ],
-    "D": [
-     12,
-     10,
-     8,
-     7,
-     5,
-     3
-    ],
-    "C": [
-     13,
-     7,
-     3
-    ]
-   },
-   "hp": 9,
-   "sp": 11,
-   "correct": "3♥",
-   "why": "God hånd (9 hp) med 1 af de tre øverste honnører: 3♥.",
-   "en": {
-    "why": "Good hand (9 HCP) with 1 of the top three honours: 3♥."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     11,
-     5
-    ],
-    "H": [
-     13,
-     11,
-     8
-    ],
-    "D": [
-     13,
-     10,
-     6,
-     5,
-     3,
-     2
-    ],
-    "C": [
-     10,
-     8
-    ]
-   },
-   "hp": 8,
-   "sp": 10,
-   "correct": "3♥",
-   "why": "God hånd (8 hp) med 1 af de tre øverste honnører: 3♥.",
-   "en": {
-    "why": "Good hand (8 HCP) with 1 of the top three honours: 3♥."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     5,
-     2
-    ],
-    "H": [
-     14,
-     12,
-     9
-    ],
-    "D": [
-     13,
-     11,
-     10,
-     8,
-     4,
-     3
-    ],
-    "C": [
-     11,
-     6
-    ]
-   },
-   "hp": 11,
-   "sp": 13,
-   "correct": "3♥",
-   "why": "God hånd (11 hp) med 1 af de tre øverste honnører: 3♥.",
-   "en": {
-    "why": "Good hand (11 HCP) with 1 of the top three honours: 3♥."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     11
-    ],
-    "H": [
-     11,
-     10,
-     6
-    ],
-    "D": [
-     13,
-     9,
-     8,
-     7,
-     6,
-     3
-    ],
-    "C": [
-     13,
-     5,
-     3
-    ]
-   },
-   "hp": 8,
-   "sp": 11,
-   "correct": "3♥",
-   "why": "God hånd (8 hp) med 1 af de tre øverste honnører: 3♥.",
-   "en": {
-    "why": "Good hand (8 HCP) with 1 of the top three honours: 3♥."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     11,
-     9,
-     8
-    ],
-    "H": [
-     4
-    ],
-    "D": [
-     13,
-     12,
-     6,
-     5,
-     4,
-     2
-    ],
-    "C": [
-     14,
-     6,
-     3
-    ]
-   },
-   "hp": 10,
-   "sp": 13,
-   "correct": "3♠",
-   "why": "God hånd (10 hp) med 2 af de tre øverste honnører: 3♠.",
-   "en": {
-    "why": "Good hand (10 HCP) with 2 of the top three honours: 3♠."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     8,
-     4,
-     2
-    ],
-    "H": [
-     13,
-     9
-    ],
-    "D": [
-     13,
-     12,
-     7,
-     6,
-     3,
-     2
-    ],
-    "C": [
-     11,
-     3
-    ]
-   },
-   "hp": 9,
-   "sp": 11,
-   "correct": "3♠",
-   "why": "God hånd (9 hp) med 2 af de tre øverste honnører: 3♠.",
-   "en": {
-    "why": "Good hand (9 HCP) with 2 of the top three honours: 3♠."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     11,
-     9
-    ],
-    "H": [
-     10,
-     6,
-     2
-    ],
-    "D": [
-     14,
-     12,
-     11,
-     10,
-     4,
-     3
-    ],
-    "C": [
-     10,
-     8
-    ]
-   },
-   "hp": 8,
-   "sp": 10,
-   "correct": "3♠",
-   "why": "God hånd (8 hp) med 2 af de tre øverste honnører: 3♠.",
-   "en": {
-    "why": "Good hand (8 HCP) with 2 of the top three honours: 3♠."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     10,
-     6
-    ],
-    "H": [
-     11,
-     5,
-     2
-    ],
-    "D": [
-     13,
-     12,
-     11,
-     8,
-     7,
-     2
-    ],
-    "C": [
-     11,
-     10
-    ]
-   },
-   "hp": 8,
-   "sp": 10,
-   "correct": "3♠",
-   "why": "God hånd (8 hp) med 2 af de tre øverste honnører: 3♠.",
-   "en": {
-    "why": "Good hand (8 HCP) with 2 of the top three honours: 3♠."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     5
-    ],
-    "H": [
-     13,
-     8,
-     7
-    ],
-    "D": [
-     13,
-     12,
-     11,
-     9,
-     7,
-     3
-    ],
-    "C": [
-     8,
-     5,
-     3
-    ]
-   },
-   "hp": 9,
-   "sp": 12,
-   "correct": "3♠",
-   "why": "God hånd (9 hp) med 2 af de tre øverste honnører: 3♠.",
-   "en": {
-    "why": "Good hand (9 HCP) with 2 of the top three honours: 3♠."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     10,
-     7,
-     5
-    ],
-    "H": [
-     2
-    ],
-    "D": [
-     14,
-     12,
-     11,
-     10,
-     6,
-     2
-    ],
-    "C": [
-     14,
-     10,
-     9
-    ]
-   },
-   "hp": 11,
-   "sp": 14,
-   "correct": "3♠",
-   "why": "God hånd (11 hp) med 2 af de tre øverste honnører: 3♠.",
-   "en": {
-    "why": "Good hand (11 HCP) with 2 of the top three honours: 3♠."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     9,
-     3
-    ],
-    "H": [
-     11,
-     10,
-     7
-    ],
-    "D": [
-     13,
-     12,
-     11,
-     9,
-     8,
-     3
-    ],
-    "C": [
-     11,
-     6
-    ]
-   },
-   "hp": 8,
-   "sp": 10,
-   "correct": "3♠",
-   "why": "God hånd (8 hp) med 2 af de tre øverste honnører: 3♠.",
-   "en": {
-    "why": "Good hand (8 HCP) with 2 of the top three honours: 3♠."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     10,
-     8
-    ],
-    "H": [
-     4,
-     3
-    ],
-    "D": [
-     14,
-     12,
-     11,
-     9,
-     6,
-     3
-    ],
-    "C": [
-     11,
-     9,
-     5
-    ]
-   },
-   "hp": 8,
-   "sp": 10,
-   "correct": "3♠",
-   "why": "God hånd (8 hp) med 2 af de tre øverste honnører: 3♠.",
-   "en": {
-    "why": "Good hand (8 HCP) with 2 of the top three honours: 3♠."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     10
-    ],
-    "H": [
-     13,
-     9,
-     8
-    ],
-    "D": [
-     14,
-     12,
-     10,
-     8,
-     6,
-     3
-    ],
-    "C": [
-     11,
-     9,
-     3
-    ]
-   },
-   "hp": 10,
-   "sp": 13,
-   "correct": "3♠",
-   "why": "God hånd (10 hp) med 2 af de tre øverste honnører: 3♠.",
-   "en": {
-    "why": "Good hand (10 HCP) with 2 of the top three honours: 3♠."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     11,
-     10,
-     5
-    ],
-    "H": [
-     5
-    ],
-    "D": [
-     13,
-     12,
-     8,
-     4,
-     3,
-     2
-    ],
-    "C": [
-     14,
-     9,
-     2
-    ]
-   },
-   "hp": 10,
-   "sp": 13,
-   "correct": "3♠",
-   "why": "God hånd (10 hp) med 2 af de tre øverste honnører: 3♠.",
-   "en": {
-    "why": "Good hand (10 HCP) with 2 of the top three honours: 3♠."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     10,
-     7,
-     5
-    ],
-    "H": [
-     8
-    ],
-    "D": [
-     14,
-     13,
-     11,
-     9,
-     7,
-     2
-    ],
-    "C": [
-     9,
-     5,
-     4
-    ]
-   },
-   "hp": 8,
-   "sp": 11,
-   "correct": "3♠",
-   "why": "God hånd (8 hp) med 2 af de tre øverste honnører: 3♠.",
-   "en": {
-    "why": "Good hand (8 HCP) with 2 of the top three honours: 3♠."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     9
-    ],
-    "H": [
-     7,
-     5,
-     4
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     11,
-     10,
-     2
-    ],
-    "C": [
-     9,
-     8,
-     7
-    ]
-   },
-   "hp": 10,
-   "sp": 13,
-   "correct": "3NT",
-   "why": "God hånd (10 hp) med 3 af de tre øverste honnører: 3NT.",
-   "en": {
-    "why": "Good hand (10 HCP) with 3 of the top three honours: 3NT."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     8,
-     7
-    ],
-    "H": [
-     4,
-     2
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     11,
-     9,
-     3
-    ],
-    "C": [
-     9,
-     5,
-     3
-    ]
-   },
-   "hp": 10,
-   "sp": 12,
-   "correct": "3NT",
-   "why": "God hånd (10 hp) med 3 af de tre øverste honnører: 3NT.",
-   "en": {
-    "why": "Good hand (10 HCP) with 3 of the top three honours: 3NT."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     10,
-     8
-    ],
-    "H": [
-     10,
-     6,
-     5
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     9,
-     7,
-     3
-    ],
-    "C": [
-     11,
-     3
-    ]
-   },
-   "hp": 10,
-   "sp": 12,
-   "correct": "3NT",
-   "why": "God hånd (10 hp) med 3 af de tre øverste honnører: 3NT.",
-   "en": {
-    "why": "Good hand (10 HCP) with 3 of the top three honours: 3NT."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     6
-    ],
-    "H": [
-     10,
-     7,
-     6
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     10,
-     6,
-     2
-    ],
-    "C": [
-     11,
-     9,
-     3
-    ]
-   },
-   "hp": 10,
-   "sp": 13,
-   "correct": "3NT",
-   "why": "God hånd (10 hp) med 3 af de tre øverste honnører: 3NT.",
-   "en": {
-    "why": "Good hand (10 HCP) with 3 of the top three honours: 3NT."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     8,
-     7,
-     6
-    ],
-    "H": [
-     7
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     10,
-     5,
-     4
-    ],
-    "C": [
-     11,
-     4,
-     3
-    ]
-   },
-   "hp": 10,
-   "sp": 13,
-   "correct": "3NT",
-   "why": "God hånd (10 hp) med 3 af de tre øverste honnører: 3NT.",
-   "en": {
-    "why": "Good hand (10 HCP) with 3 of the top three honours: 3NT."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     10,
-     7,
-     3
-    ],
-    "H": [
-     10,
-     3,
-     2
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     10,
-     8,
-     7
-    ],
-    "C": [
-     4
-    ]
-   },
-   "hp": 9,
-   "sp": 12,
-   "correct": "3NT",
-   "why": "God hånd (9 hp) med 3 af de tre øverste honnører: 3NT.",
-   "en": {
-    "why": "Good hand (9 HCP) with 3 of the top three honours: 3NT."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     12,
-     4
-    ],
-    "H": [
-     8,
-     5
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     10,
-     6,
-     2
-    ],
-    "C": [
-     8,
-     5,
-     3
-    ]
-   },
-   "hp": 11,
-   "sp": 13,
-   "correct": "3NT",
-   "why": "God hånd (11 hp) med 3 af de tre øverste honnører: 3NT.",
-   "en": {
-    "why": "Good hand (11 HCP) with 3 of the top three honours: 3NT."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     8,
-     5
-    ],
-    "H": [
-     12,
-     8,
-     6
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     10,
-     9,
-     3
-    ],
-    "C": [
-     6,
-     5
-    ]
-   },
-   "hp": 11,
-   "sp": 13,
-   "correct": "3NT",
-   "why": "God hånd (11 hp) med 3 af de tre øverste honnører: 3NT.",
-   "en": {
-    "why": "Good hand (11 HCP) with 3 of the top three honours: 3NT."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     8,
-     7,
-     3
-    ],
-    "H": [
-     10,
-     9,
-     4
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     11,
-     10,
-     7
-    ],
-    "C": [
-     4
-    ]
-   },
-   "hp": 10,
-   "sp": 13,
-   "correct": "3NT",
-   "why": "God hånd (10 hp) med 3 af de tre øverste honnører: 3NT.",
-   "en": {
-    "why": "Good hand (10 HCP) with 3 of the top three honours: 3NT."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     12,
-     5,
-     3
-    ],
-    "H": [
-     8,
-     4
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     8,
-     7,
-     3
-    ],
-    "C": [
-     9,
-     8
-    ]
-   },
-   "hp": 11,
-   "sp": 13,
-   "correct": "3NT",
-   "why": "God hånd (11 hp) med 3 af de tre øverste honnører: 3NT.",
-   "en": {
-    "why": "Good hand (11 HCP) with 3 of the top three honours: 3NT."
-   }
-  },
-  {
-   "situation": "aab_ru",
-   "hand": {
-    "S": [
-     6,
-     3
-    ],
-    "H": [
-     9,
-     4,
-     2
-    ],
-    "D": [
-     14,
-     13,
-     12,
-     9,
-     5,
-     2
-    ],
-    "C": [
-     10,
-     9
-    ]
-   },
-   "hp": 9,
-   "sp": 11,
-   "correct": "3NT",
-   "why": "God hånd (9 hp) med 3 af de tre øverste honnører: 3NT.",
-   "en": {
-    "why": "Good hand (9 HCP) with 3 of the top three honours: 3NT."
-   }
-  },
-  {
    "situation": "aab_hj",
    "hand": {
     "S": [
@@ -2416,6 +551,39 @@
    "why": "Dårlig hånd (6 hp) med 1 af de tre øverste honnører: 3♣.",
    "en": {
     "why": "Poor hand (6 HCP) with 1 of the top three honours: 3♣."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     13,
+     9,
+     6
+    ],
+    "H": [
+     12,
+     10,
+     8,
+     7,
+     4,
+     3
+    ],
+    "D": [
+     4
+    ],
+    "C": [
+     9,
+     7,
+     2
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "correct": "3♣",
+   "why": "Dårlig hånd (5 hp) med 1 af de tre øverste honnører: 3♣.",
+   "en": {
+    "why": "Poor hand (5 HCP) with 1 of the top three honours: 3♣."
    }
   },
   {
@@ -2785,6 +953,39 @@
    "situation": "aab_hj",
    "hand": {
     "S": [
+     8,
+     7
+    ],
+    "H": [
+     13,
+     12,
+     10,
+     8,
+     6,
+     4
+    ],
+    "D": [
+     12,
+     2
+    ],
+    "C": [
+     8,
+     6,
+     4
+    ]
+   },
+   "hp": 7,
+   "sp": 9,
+   "correct": "3♦",
+   "why": "Dårlig hånd (7 hp) med 2 af de tre øverste honnører: 3♦.",
+   "en": {
+    "why": "Poor hand (7 HCP) with 2 of the top three honours: 3♦."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
      14,
      2
     ],
@@ -3149,6 +1350,39 @@
    "hand": {
     "S": [
      13,
+     2
+    ],
+    "H": [
+     12,
+     11,
+     6,
+     5,
+     4,
+     3
+    ],
+    "D": [
+     13,
+     12,
+     4
+    ],
+    "C": [
+     10,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 13,
+   "correct": "3♥",
+   "why": "God hånd (11 hp) med 1 af de tre øverste honnører: 3♥.",
+   "en": {
+    "why": "Good hand (11 HCP) with 1 of the top three honours: 3♥."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     13,
      6,
      3
     ],
@@ -3505,6 +1739,39 @@
    "why": "God hånd (8 hp) med 2 af de tre øverste honnører: 3♠.",
    "en": {
     "why": "Good hand (8 HCP) with 2 of the top three honours: 3♠."
+   }
+  },
+  {
+   "situation": "aab_hj",
+   "hand": {
+    "S": [
+     3,
+     2
+    ],
+    "H": [
+     13,
+     12,
+     11,
+     10,
+     4,
+     3
+    ],
+    "D": [
+     14,
+     4
+    ],
+    "C": [
+     10,
+     9,
+     7
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "3♠",
+   "why": "God hånd (10 hp) med 2 af de tre øverste honnører: 3♠.",
+   "en": {
+    "why": "Good hand (10 HCP) with 2 of the top three honours: 3♠."
    }
   },
   {
@@ -5294,6 +3561,39 @@
    "hand": {
     "S": [
      14,
+     11
+    ],
+    "H": [
+     12,
+     7,
+     3,
+     2
+    ],
+    "D": [
+     14,
+     11,
+     5
+    ],
+    "C": [
+     13,
+     10,
+     9,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "15 hp og 4 hjerter: 2NT – Ogust.",
+   "en": {
+    "why": "15 HCP and 4 hearts: 2NT – Ogust."
+   }
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     14,
      12,
      6,
      2
@@ -5618,6 +3918,38 @@
    "situation": "svar_hj",
    "hand": {
     "S": [
+     13,
+     11,
+     10,
+     5
+    ],
+    "H": [],
+    "D": [
+     12,
+     8
+    ],
+    "C": [
+     14,
+     13,
+     12,
+     11,
+     8,
+     5,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 22,
+   "correct": "3♣",
+   "why": "16 hp og egen 7-farve: 3♣ – ny farve er rundekrav.",
+   "en": {
+    "why": "16 HCP and your own 7-card suit: 3♣ – a new suit is forcing."
+   }
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
      14,
      11,
      9,
@@ -5928,6 +4260,39 @@
      10,
      5,
      3
+    ]
+   },
+   "hp": 16,
+   "sp": 19,
+   "correct": "3♦",
+   "why": "16 hp og egen 6-farve: 3♦ – ny farve er rundekrav.",
+   "en": {
+    "why": "16 HCP and your own 6-card suit: 3♦ – a new suit is forcing."
+   }
+  },
+  {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     14,
+     11,
+     5
+    ],
+    "H": [
+     8
+    ],
+    "D": [
+     14,
+     13,
+     11,
+     10,
+     6,
+     4
+    ],
+    "C": [
+     13,
+     8,
+     5
     ]
    },
    "hp": 16,
@@ -6262,6 +4627,38 @@
    }
   },
   {
+   "situation": "svar_hj",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     11,
+     9,
+     7
+    ],
+    "H": [],
+    "D": [
+     13,
+     6,
+     3,
+     2
+    ],
+    "C": [
+     12,
+     8,
+     3
+    ]
+   },
+   "hp": 15,
+   "sp": 20,
+   "correct": "2♠",
+   "why": "15 hp og egen 6-farve: 2♠ – ny farve er rundekrav.",
+   "en": {
+    "why": "15 HCP and your own 6-card suit: 2♠ – a new suit is forcing."
+   }
+  },
+  {
    "situation": "aab_sp",
    "hand": {
     "S": [
@@ -6595,6 +4992,39 @@
    "situation": "aab_sp",
    "hand": {
     "S": [
+     14,
+     10,
+     8,
+     7,
+     5,
+     2
+    ],
+    "H": [
+     5
+    ],
+    "D": [
+     11,
+     7,
+     4
+    ],
+    "C": [
+     7,
+     5,
+     4
+    ]
+   },
+   "hp": 5,
+   "sp": 8,
+   "correct": "3♣",
+   "why": "Dårlig hånd (5 hp) med 1 af de tre øverste honnører: 3♣.",
+   "en": {
+    "why": "Poor hand (5 HCP) with 1 of the top three honours: 3♣."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
      13,
      12,
      8,
@@ -6911,6 +5341,39 @@
     ],
     "C": [
      11
+    ]
+   },
+   "hp": 7,
+   "sp": 10,
+   "correct": "3♦",
+   "why": "Dårlig hånd (7 hp) med 2 af de tre øverste honnører: 3♦.",
+   "en": {
+    "why": "Poor hand (7 HCP) with 2 of the top three honours: 3♦."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     13,
+     12,
+     8,
+     7,
+     3,
+     2
+    ],
+    "H": [
+     10
+    ],
+    "D": [
+     8,
+     6,
+     5
+    ],
+    "C": [
+     12,
+     9,
+     3
     ]
    },
    "hp": 7,
@@ -7256,6 +5719,39 @@
    "hand": {
     "S": [
      14,
+     11,
+     10,
+     9,
+     4,
+     2
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     14,
+     10,
+     2
+    ],
+    "C": [
+     12,
+     8,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
+   "correct": "3♥",
+   "why": "God hånd (11 hp) med 1 af de tre øverste honnører: 3♥.",
+   "en": {
+    "why": "Good hand (11 HCP) with 1 of the top three honours: 3♥."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
      13,
      10,
      8,
@@ -7585,6 +6081,39 @@
    "situation": "aab_sp",
    "hand": {
     "S": [
+     13,
+     12,
+     8,
+     7,
+     6,
+     5
+    ],
+    "H": [
+     11,
+     6,
+     2
+    ],
+    "D": [
+     11
+    ],
+    "C": [
+     11,
+     9,
+     6
+    ]
+   },
+   "hp": 8,
+   "sp": 11,
+   "correct": "3♠",
+   "why": "God hånd (8 hp) med 2 af de tre øverste honnører: 3♠.",
+   "en": {
+    "why": "Good hand (8 HCP) with 2 of the top three honours: 3♠."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
      14,
      13,
      12,
@@ -7905,6 +6434,39 @@
    },
    "hp": 11,
    "sp": 13,
+   "correct": "3NT",
+   "why": "God hånd (11 hp) med 3 af de tre øverste honnører: 3NT.",
+   "en": {
+    "why": "Good hand (11 HCP) with 3 of the top three honours: 3NT."
+   }
+  },
+  {
+   "situation": "aab_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     12,
+     10,
+     9,
+     2
+    ],
+    "H": [
+     4
+    ],
+    "D": [
+     12,
+     9,
+     6
+    ],
+    "C": [
+     8,
+     7,
+     2
+    ]
+   },
+   "hp": 11,
+   "sp": 14,
    "correct": "3NT",
    "why": "God hånd (11 hp) med 3 af de tre øverste honnører: 3NT.",
    "en": {
@@ -8245,6 +6807,39 @@
    "situation": "svar_sp",
    "hand": {
     "S": [
+     7
+    ],
+    "H": [
+     14,
+     12,
+     11,
+     7
+    ],
+    "D": [
+     12,
+     9,
+     8,
+     4
+    ],
+    "C": [
+     7,
+     6,
+     4,
+     3
+    ]
+   },
+   "hp": 9,
+   "sp": 12,
+   "correct": "Pas",
+   "why": "9 hp og ingen støtte: pas.",
+   "en": {
+    "why": "9 HCP and no support: pass."
+   }
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
      12,
      6,
      3
@@ -8565,6 +7160,39 @@
    },
    "hp": 10,
    "sp": 10,
+   "correct": "3♠",
+   "why": "3 spar = 9 trumf: 3♠ efter Loven – spærrende.",
+   "en": {
+    "why": "3 spades = 9 trumps: 3♠ by the Law – preemptive."
+   }
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     14,
+     13,
+     10
+    ],
+    "H": [
+     11,
+     8,
+     7
+    ],
+    "D": [
+     6,
+     5,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     10,
+     4
+    ]
+   },
+   "hp": 11,
+   "sp": 11,
    "correct": "3♠",
    "why": "3 spar = 9 trumf: 3♠ efter Loven – spærrende.",
    "en": {
@@ -8905,6 +7533,39 @@
    "situation": "svar_sp",
    "hand": {
     "S": [
+     13,
+     11,
+     8,
+     5,
+     2
+    ],
+    "H": [
+     12,
+     9
+    ],
+    "D": [
+     10,
+     3
+    ],
+    "C": [
+     14,
+     8,
+     7,
+     6
+    ]
+   },
+   "hp": 10,
+   "sp": 12,
+   "correct": "4♠",
+   "why": "5 spar = 11 trumf: 4♠ efter Loven – spærrende.",
+   "en": {
+    "why": "5 spades = 11 trumps: 4♠ by the Law – preemptive."
+   }
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
      7,
      6,
      5
@@ -9235,6 +7896,39 @@
    "situation": "svar_sp",
    "hand": {
     "S": [
+     14,
+     12,
+     3
+    ],
+    "H": [
+     14,
+     9,
+     8,
+     2
+    ],
+    "D": [
+     13,
+     12,
+     11
+    ],
+    "C": [
+     10,
+     8,
+     2
+    ]
+   },
+   "hp": 16,
+   "sp": 16,
+   "correct": "2NT",
+   "why": "16 hp og 3 spar: 2NT – Ogust.",
+   "en": {
+    "why": "16 HCP and 3 spades: 2NT – Ogust."
+   }
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
      14
     ],
     "H": [
@@ -9553,6 +8247,38 @@
    "why": "17 hp og egen 6-farve: 3♣ – ny farve er rundekrav.",
    "en": {
     "why": "17 HCP and your own 6-card suit: 3♣ – a new suit is forcing."
+   }
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [],
+    "H": [
+     14,
+     13,
+     8
+    ],
+    "D": [
+     14,
+     8,
+     3,
+     2
+    ],
+    "C": [
+     13,
+     12,
+     8,
+     7,
+     6,
+     5
+    ]
+   },
+   "hp": 16,
+   "sp": 21,
+   "correct": "3♣",
+   "why": "16 hp og egen 6-farve: 3♣ – ny farve er rundekrav.",
+   "en": {
+    "why": "16 HCP and your own 6-card suit: 3♣ – a new suit is forcing."
    }
   },
   {
@@ -9885,6 +8611,39 @@
   {
    "situation": "svar_sp",
    "hand": {
+    "S": [
+     12
+    ],
+    "H": [
+     14,
+     11,
+     6
+    ],
+    "D": [
+     14,
+     13,
+     9,
+     6,
+     5,
+     3
+    ],
+    "C": [
+     11,
+     7,
+     5
+    ]
+   },
+   "hp": 15,
+   "sp": 18,
+   "correct": "3♦",
+   "why": "15 hp og egen 6-farve: 3♦ – ny farve er rundekrav.",
+   "en": {
+    "why": "15 HCP and your own 6-card suit: 3♦ – a new suit is forcing."
+   }
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
     "S": [],
     "H": [
      14,
@@ -10203,6 +8962,39 @@
    "why": "15 hp og egen 6-farve: 3♥ – ny farve er rundekrav.",
    "en": {
     "why": "15 HCP and your own 6-card suit: 3♥ – a new suit is forcing."
+   }
+  },
+  {
+   "situation": "svar_sp",
+   "hand": {
+    "S": [
+     14
+    ],
+    "H": [
+     14,
+     13,
+     12,
+     8,
+     7,
+     6
+    ],
+    "D": [
+     13,
+     8,
+     6,
+     5
+    ],
+    "C": [
+     5,
+     3
+    ]
+   },
+   "hp": 16,
+   "sp": 20,
+   "correct": "3♥",
+   "why": "16 hp og egen 6-farve: 3♥ – ny farve er rundekrav.",
+   "en": {
+    "why": "16 HCP and your own 6-card suit: 3♥ – a new suit is forcing."
    }
   }
  ]

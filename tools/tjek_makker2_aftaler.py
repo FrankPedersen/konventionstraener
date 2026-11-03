@@ -4,7 +4,7 @@ Kør fra repoets rod:  python3 tools/tjek_makker2_aftaler.py
 
 1. Åbners nye højere farve på 2-trinnet er naturlig, 5-4, 12–15 hp og ikke krav; spring i ny højere farve er 16+ og
    krav i én runde, og med 19+ viser åbner udgangskraft i næste melding. Ny lavere farve er uændret: 12–18 og ikke
-   krav, spring 19+ og udgangskrav. Efter 1♥ – 1NT er 2♠ 12–15, og 3♠ viser 5-4 eller 5-5 med 16+, krav i én runde;
+   krav, spring 19+ og udgangskrav. Efter 1♥ – 1NT er 2♠ 5-5 med 12–15 (Flannery; SPEC-makker2-bilag-c.md), og 3♠ viser 5-4 eller 5-5 med 16+, krav i én runde;
    3♣/3♦ er fortsat 5-5 med 15–18. Revers spilles ikke: træneren ff-revers er taget af Træn, men filerne og kortet
    bliver. Testen tjekker dealeren, puljen, Makker 2-dokumentet, beskrivelserne, tegnefladen, kortet og Træn, og at
    "foreløbig – bekræftes" er væk alle steder.
@@ -29,7 +29,7 @@ NYE = ('Ny farve på 2-trinnet, højere end åbningsfarven (fx 1♦ – 1♠ –
        'Ny farve på 2-trinnet, lavere end åbningsfarven (fx 1♦ – 1♠ – 2♣) Naturlig, 12–18 hp, ikke krav',
        'Spring i ny lavere farve (fx 1♦ – 1♠ – 3♣) 19–21 hp, ubalanceret, 5-4 eller bedre. Udgangskrav')
 # Afsnit 1, åbners genmelding efter 1NT-svaret
-EFTER_1NT = ('2 i ny højere farve · naturlig, 5-4, 12–15 hp, ikke krav',
+EFTER_1NT = ('2♠ efter 1♥ · 5-5, 12–15 hp, ikke krav',
              '3♠ efter 1♥ · 5-4 eller 5-5, 16+ hp, krav i én runde',
              '3♣ / 3♦ · 5-5, 15–18 hp, rundekrav')
 
@@ -124,9 +124,9 @@ def tjek_dokumentet():
     alt = tekst(dok)
     if 'ny højere farve på 2-trinnet er naturlig, 5-4, 12–18' in alt or '5-4, 12–18 hp' in alt:
         fejl.append('Makker 2-dokumentet: 12–18 for ny højere farve står der stadig')
-    c1 = afsnit(dok, 'c1', 'c2')
-    if 'Revers' in c1 or 'revers' in c1:
-        fejl.append('C1: spørgsmålet om revers står der stadig')
+    bilag_c = tekst(dok[dok.index('id="bilag-c"'):dok.index('id="bilag-d"')])
+    if 'Revers' in bilag_c or 'revers' in bilag_c:
+        fejl.append('Bilag C: spørgsmålet om revers står der stadig')
     g = afsnit(dok, 'g', None)
     if 'overvejet og fravalgt' not in g:
         fejl.append('Bilag G: siger ikke, at revers er overvejet og fravalgt')
