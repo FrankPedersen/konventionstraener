@@ -143,11 +143,11 @@ try {
   // Skærmbillederne: kun sidefoden.
   if (BILLEDER) {
     mkdirSync(BILLEDER, { recursive: true });
-    for (const bredde of [1280, 390]) {
-      await åbn('index.html', bredde);
+    for (const [lang, navn] of [['da', ''], ['en', '-en']]) for (const bredde of [1280, 390]) {
+      await åbn(`index.html?lang=${lang}`, bredde);
       const r = await kør(`(() => { const e = document.querySelector('#sidefod'); const k = e.getBoundingClientRect(); return { x: 0, y: k.top + scrollY - 16, width: innerWidth, height: k.height + 32, scale: 1 }; })()`);
       const b = await send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: true, clip: r });
-      writeFileSync(join(BILLEDER, `${bredde}-konventionstraener-sidefod.png`), Buffer.from(b.result.data, 'base64'));
+      writeFileSync(join(BILLEDER, `${bredde}-konventionstraener-sidefod${navn}.png`), Buffer.from(b.result.data, 'base64'));
     }
   }
 } catch (e) {
