@@ -96,7 +96,7 @@ const MÅL = `(() => {
     knap: t(knap),
     linje: f.querySelector('.sf-om p')?.getClientRects().length > 0,
     legal: f.querySelector('.sf-legal').innerText.replace(/\\s+/g, ' ').trim(),
-    ud: document.documentElement.scrollWidth - innerWidth,
+    ud: document.documentElement.scrollWidth - document.documentElement.clientWidth,
     tekst: t(f),
   };
 })()`;
@@ -128,8 +128,19 @@ try {
       tjek(f.ud <= 0, `${hvor}: intet stikker ud`, `${f.ud} px`);
     }
     await åbn(side, 320, 700);
-    const ud = await kør('document.documentElement.scrollWidth - innerWidth');
-    tjek(ud <= 0, `${side} ved 320 px: intet stikker ud`, `${ud} px`);
+    // Sidefoden selv: opgaverne i viden/2-over-1.html stikker 20 px ud ved 320 px, også på main, og hører ikke til her.
+    const ud = await kør(`Math.round(Math.max(...[...document.querySelectorAll('#sidefod *')].map((e) => e.getBoundingClientRect().right)) - document.documentElement.clientWidth)`);
+    tjek(ud <= 0, `${side} ved 320 px: sidefoden stikker ikke ud`, `${ud} px`);
+  }
+
+  // Knappen står inden for sidefodens polstring ved de smalle bredder og på begge sprog; teksten må brække.
+  // "Stikker ud" måles mod clientWidth: i mobilvisning vokser innerWidth med det, der stikker ud, så tjekket aldrig ville fejle.
+  for (const [lang, sprog] of [['da', 'dansk'], ['en', 'engelsk']]) {
+    for (const bredde of [390, 360, 320]) {
+      await åbn(`index.html?lang=${lang}`, bredde);
+      const ud = await kør(`(() => { const f = document.querySelector('#sidefod .sf'); const r = f.getBoundingClientRect().right - parseFloat(getComputedStyle(f).paddingRight); return Math.round(f.querySelector('a.sf-knap').getBoundingClientRect().right - r); })()`);
+      tjek(ud <= 0, `Knappen ved ${bredde} px på ${sprog}: inden for polstringen`, `${ud} px`);
+    }
   }
 
   // Engelsk.

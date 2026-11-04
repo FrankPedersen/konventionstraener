@@ -32,3 +32,4 @@ Giv Frank skærmbilleder ved 1280 og 390 px af sidefoden. Frank godkender, før 
 2. **Stilen står kun i `assets/footer.js`** som før, med `#sidefod` foran, så systemdokumenternes egne regler for h2, p, ul, li og a ikke slår igennem. Grænsen er 1000 px som på forsiden.
 3. **Linkene** til Fordelingstræneren går direkte til sporet (`/fordelingstraeneren/#fordeling` osv.) som på forsiden. Konventionstræner er en relativ adresse, så den også virker i en lokal kopi.
 4. **Bredden:** sidefoden står stadig i sidens kolonne på højst 64rem; målene inde i den er forsidens.
+5. **Knappens tekst må brække,** som på forsiden: ved 360 px står "Om mig og kontakt" på to linjer og ved 320 px på tre, og på engelsk er den på to linjer allerede ved 390 px. `tools/tjek_sidefod.mjs` tjekker, at knappen står inden for polstringen ved 390, 360 og 320 px på begge sprog.
