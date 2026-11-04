@@ -83,7 +83,7 @@ const MÅL = `(() => {
   const titel = f.querySelector('h2');
   return {
     højde: Math.round(k(f).height),
-    kolonner: [...f.querySelectorAll('nav')].map((n) => ({ titel: t(n.querySelector('h2')), links: [...n.querySelectorAll('a')].map((a) => [t(a), a.getAttribute('href').replace(/^(\\.\\.\\/|\\.\\/)+$/, './')]) })),
+    kolonner: [...f.querySelectorAll('nav')].map((n) => ({ titel: t(n.querySelector('h2')), links: [...n.querySelectorAll('a')].map((a) => [t(a), a.getAttribute('href')]) })),
     polstring: [cs.paddingTop, cs.paddingRight, cs.paddingBottom, cs.paddingLeft].join(' '),
     skrift: cs.fontSize + '/' + getComputedStyle(links[0]).lineHeight,
     hjørne: cs.borderTopLeftRadius,
@@ -95,7 +95,7 @@ const MÅL = `(() => {
     knapHøjde: Math.round(k(knap).height),
     knap: t(knap),
     linje: f.querySelector('.sf-om p')?.getClientRects().length > 0,
-    legal: t(f.querySelector('.sf-legal')),
+    legal: f.querySelector('.sf-legal').innerText.replace(/\\s+/g, ' ').trim(),
     ud: document.documentElement.scrollWidth - innerWidth,
     tekst: t(f),
   };

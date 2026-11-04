@@ -79,7 +79,8 @@ const MARKER = `(() => {
   const ud = [];
   const sæt = (navn, el) => { if (el) { el.setAttribute('data-tjek-skrift', navn); ud.push(navn); } };
   sæt('overskrift', document.querySelector('h1'));
-  sæt('brødtekst', [...document.querySelectorAll('p')].find((p) => p.textContent.trim().length > 20 && p.offsetParent));
+  // ©-linjen til sidst: sidefodens tekstlinje er skjult på mobil, og et konventionskort har ellers ingen p der (SPEC-sidefod.md).
+  sæt('brødtekst', [...document.querySelectorAll('p, .sf-legal')].find((p) => p.textContent.trim().length > 20 && p.offsetParent));
   sæt('manrope', [...document.querySelectorAll('body *')].find((el) => el.offsetParent && el.childNodes.length
     && [...el.childNodes].some((n) => n.nodeType === 3 && n.textContent.trim()) && getComputedStyle(el).fontFamily.startsWith('Manrope')));
   sæt('spillefarver', [...document.querySelectorAll('body *')].find((el) => el.offsetParent
