@@ -343,6 +343,8 @@ button.chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .prose p{margin:0;color:var(--body)}
 @media (prefers-reduced-motion:no-preference){ .tabs button{transition:background .15s,color .15s} }
 @media (max-width:520px){ td.styrke{white-space:normal} td.bud{width:auto} }
+@media (max-width:389px){ .chip{white-space:normal} .fod{overflow-wrap:anywhere} }
+@media (max-width:359px){ .tabs button{padding:7px 10px} .head h2{font-size:1.4rem} }
 `;
   // Kortet står til venstre under titlen i stedet for centreret som på Viden, og uden noten under kortet
   var HINT_CSS = '.kk-body{padding:0}.ramme{justify-items:start}.ramme > p{display:none}.kompakt{justify-self:start;max-width:40rem}'

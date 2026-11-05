@@ -121,7 +121,13 @@ async function fane(bredde, højde = 800) {
   let id = 0;
   const ventende = new Map();
   ws.onmessage = (m) => { const d = JSON.parse(m.data); if (d.id && ventende.has(d.id)) { ventende.get(d.id)(d); ventende.delete(d.id); } };
-  const send = (method, params = {}) => new Promise((r) => { const n = ++id; ventende.set(n, r); ws.send(JSON.stringify({ id: n, method, params })); });
+  // Et svar, der udebliver, bliver en fejl i stedet for en test, der aldrig slutter.
+  const send = (method, params = {}) => new Promise((r, x) => {
+    const n = ++id;
+    const ur = setTimeout(() => { ventende.delete(n); x(new Error(`${method} svarede ikke inden for 60 s`)); }, 60000);
+    ventende.set(n, (d) => { clearTimeout(ur); r(d); });
+    ws.send(JSON.stringify({ id: n, method, params }));
+  });
   const kør = async (expression) => {
     const d = await send('Runtime.evaluate', { expression, awaitPromise: true, returnByValue: true });
     if (d.result?.exceptionDetails) throw new Error(`${expression.slice(0, 80)}: ${d.result.exceptionDetails.exception?.description}`);
@@ -151,8 +157,10 @@ async function fane(bredde, højde = 800) {
       await kør(`(() => { const r = ${R}; r.querySelector(${JSON.stringify(`#valg [data-k="${id}"]`)}).click(); r.querySelector(${JSON.stringify(`.tabs button[data-v="${visning}"]`)}).click(); })()`);
       await vent(40);
     },
-    // Hele siden i bidder, så lange sider ikke rammer browserens grænse for et skærmbillede.
+    // Hele siden i bidder, så lange sider ikke rammer browserens grænse for et skærmbillede. Fanen bringes frem først:
+    // Chrome tegner ikke en fane, der ligger bagved, og så kommer skærmbilledet aldrig.
     async billeder() {
+      await send('Page.bringToFront');
       await kør('window.scrollTo(0, 0)');
       await vent(60);
       const h = await kør('Math.max(document.documentElement.scrollHeight, innerHeight)');
