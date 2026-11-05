@@ -2,7 +2,9 @@
 // for pixel som før. Alle sider tjekkes på dansk og engelsk med <details> lukket og åbne, og alle konventionskort i deres
 // visninger; kortene står i en shadow root, så målingen går også derind. "Stikker ud" måles mod clientWidth: i mobilvisning
 // vokser innerWidth med det, der stikker ud, så en måling mod den aldrig ville fejle. Siden før vises fra tagget (filerne
-// læses med git show). Kræver Node 22+, git og Chrome eller Edge.
+// læses med git show). Hver side åbnes i sin egen browserkontekst, som et nyt privat vindue: localStorage er tom, fanen er
+// den eneste i sit vindue, og der skiftes aldrig fane, så intet afhænger af, hvad testen viste før. Kræver Node 22+, git og
+// Chrome eller Edge.
 //
 //   node tools/tjek_viden_320.mjs                    tjekker
 //   node tools/tjek_viden_320.mjs ingen              springer pixelsammenligningen over
@@ -69,16 +71,30 @@ const profil = mkdtempSync(join(tmpdir(), 'tjek-viden-'));
 const proces = spawn(browser, ['--headless=new', `--remote-debugging-port=${port}`, `--user-data-dir=${profil}`, '--no-first-run',
   '--hide-scrollbars', '--force-color-profile=srgb', '--font-render-hinting=none', 'about:blank'], { stdio: 'ignore' });
 
-async function json(sti, metode = 'GET') {
+async function json(sti) {
   for (let i = 0; i < 50; i++) {
     try {
-      const svar = await fetch(`http://127.0.0.1:${port}${sti}`, { method: metode });
+      const svar = await fetch(`http://127.0.0.1:${port}${sti}`);
       if (svar.ok) return await svar.json();
     } catch {}
     await vent(200);
   }
   throw new Error(`Browseren svarer ikke på ${sti}`);
 }
+
+// Én forbindelse til browseren; hver fane har sin egen session på den.
+const forbindelse = new WebSocket((await json('/json/version')).webSocketDebuggerUrl);
+await new Promise((r, x) => { forbindelse.onopen = r; forbindelse.onerror = x; });
+let næste = 0;
+const ventende = new Map();
+forbindelse.onmessage = (m) => { const d = JSON.parse(m.data); if (d.id && ventende.has(d.id)) { ventende.get(d.id)(d); ventende.delete(d.id); } };
+// Et svar, der udebliver, bliver en fejl i stedet for en test, der aldrig slutter.
+const send = (method, params = {}, sessionId) => new Promise((r, x) => {
+  const n = ++næste;
+  const ur = setTimeout(() => { ventende.delete(n); x(new Error(`${method} svarede ikke inden for 60 s`)); }, 60000);
+  ventende.set(n, (d) => { clearTimeout(ur); if (d.error) x(new Error(`${method}: ${d.error.message}`)); else r(d.result); });
+  forbindelse.send(JSON.stringify(sessionId ? { id: n, method, params, sessionId } : { id: n, method, params }));
+});
 
 let fejl = 0;
 let antal = 0;
@@ -91,12 +107,12 @@ const tjek = (ok, navn, detalje = '') => {
 // Alle elementer, også i shadow roots; det, der står i en beholder med egen scroll, stikker ikke siden ud.
 const FÆLLES = `
   const alle = (rod) => [...rod.querySelectorAll('*')].flatMap((e) => e.shadowRoot ? [e, ...alle(e.shadowRoot)] : [e]);
-  const forælder = (e) => e.parentElement ?? e.getRootNode().host ?? null;`;
+  const forælder = (e) => e.parentElement ?? e.getRootNode().host ?? null;
+  const navn = (e) => e.tagName.toLowerCase() + (typeof e.className === 'string' && e.className ? '.' + e.className.trim().split(/\\s+/).join('.') : '');`;
 const MÅL = `(() => {${FÆLLES}
   const rod = document.documentElement;
   const cw = rod.clientWidth;
   const iScroll = (e) => { for (let a = forælder(e); a && a !== rod && a !== document.body; a = forælder(a)) if (getComputedStyle(a).overflowX !== 'visible') return true; return false; };
-  const navn = (e) => e.tagName.toLowerCase() + (typeof e.className === 'string' && e.className ? '.' + e.className.trim().split(/\\s+/).join('.') : '');
   const fund = [];
   for (const e of alle(document.body)) {
     if (!e.getClientRects().length || iScroll(e)) continue;
@@ -114,34 +130,25 @@ const MÅL = `(() => {${FÆLLES}
 const ÅBN = `(() => {${FÆLLES} for (const e of alle(document.body)) if (e.tagName === 'DETAILS') e.open = true; })()`;
 const R = `document.getElementById('kk-app').shadowRoot`;
 
+/** En fane i sin egen browserkontekst med tom localStorage; luk() kasserer konteksten. */
 async function fane(bredde, højde = 800) {
-  const f = await json('/json/new?about:blank', 'PUT');
-  const ws = new WebSocket(f.webSocketDebuggerUrl);
-  await new Promise((r, x) => { ws.onopen = r; ws.onerror = x; });
-  let id = 0;
-  const ventende = new Map();
-  ws.onmessage = (m) => { const d = JSON.parse(m.data); if (d.id && ventende.has(d.id)) { ventende.get(d.id)(d); ventende.delete(d.id); } };
-  // Et svar, der udebliver, bliver en fejl i stedet for en test, der aldrig slutter.
-  const send = (method, params = {}) => new Promise((r, x) => {
-    const n = ++id;
-    const ur = setTimeout(() => { ventende.delete(n); x(new Error(`${method} svarede ikke inden for 60 s`)); }, 60000);
-    ventende.set(n, (d) => { clearTimeout(ur); r(d); });
-    ws.send(JSON.stringify({ id: n, method, params }));
-  });
+  const { browserContextId } = await send('Target.createBrowserContext');
+  const { targetId } = await send('Target.createTarget', { url: 'about:blank', browserContextId, newWindow: true });
+  const { sessionId } = await send('Target.attachToTarget', { targetId, flatten: true });
+  const s = (method, params) => send(method, params, sessionId);
   const kør = async (expression) => {
-    const d = await send('Runtime.evaluate', { expression, awaitPromise: true, returnByValue: true });
-    if (d.result?.exceptionDetails) throw new Error(`${expression.slice(0, 80)}: ${d.result.exceptionDetails.exception?.description}`);
-    return d.result?.result?.value;
+    const d = await s('Runtime.evaluate', { expression, awaitPromise: true, returnByValue: true });
+    if (d.exceptionDetails) throw new Error(`${expression.slice(0, 80)}: ${d.exceptionDetails.exception?.description}`);
+    return d.result?.value;
   };
-  await send('Page.enable');
-  await send('Emulation.setDeviceMetricsOverride', { width: bredde, height: højde, deviceScaleFactor: 1, mobile: bredde < 600 });
-  await send('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-color-scheme', value: 'light' }, { name: 'prefers-reduced-motion', value: 'reduce' }] });
+  await s('Page.enable');
+  await s('Emulation.setDeviceMetricsOverride', { width: bredde, height: højde, deviceScaleFactor: 1, mobile: bredde < 600 });
+  await s('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-color-scheme', value: 'light' }, { name: 'prefers-reduced-motion', value: 'reduce' }] });
   return {
     kør,
-    send,
+    send: s,
     async gå(url) {
-      await send('Page.navigate', { url: 'about:blank' });
-      await send('Page.navigate', { url });
+      await s('Page.navigate', { url });
       for (let i = 0; i < 100; i++) { await vent(50); if ((await kør('document.readyState')) === 'complete') break; }
       await kør('document.fonts.ready.then(() => true)');
       await vent(150);
@@ -157,38 +164,82 @@ async function fane(bredde, højde = 800) {
       await kør(`(() => { const r = ${R}; r.querySelector(${JSON.stringify(`#valg [data-k="${id}"]`)}).click(); r.querySelector(${JSON.stringify(`.tabs button[data-v="${visning}"]`)}).click(); })()`);
       await vent(40);
     },
-    // Hele siden i bidder, så lange sider ikke rammer browserens grænse for et skærmbillede. Fanen bringes frem først:
-    // Chrome tegner ikke en fane, der ligger bagved, og så kommer skærmbilledet aldrig.
+    // Hele siden i bidder, så lange sider ikke rammer browserens grænse for et skærmbillede.
     async billeder() {
-      await send('Page.bringToFront');
       await kør('window.scrollTo(0, 0)');
       await vent(60);
       const h = await kør('Math.max(document.documentElement.scrollHeight, innerHeight)');
       const bidder = [];
       for (let y = 0; y < h; y += 6000) {
-        const r = await send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: true, clip: { x: 0, y, width: bredde, height: Math.min(6000, h - y), scale: 1 } });
-        bidder.push(r.result.data);
+        const r = await s('Page.captureScreenshot', { format: 'png', captureBeyondViewport: true, clip: { x: 0, y, width: bredde, height: Math.min(6000, h - y), scale: 1 } });
+        bidder.push(r.data);
       }
       return { h, bidder };
     },
-    luk: async () => { ws.close(); await json(`/json/close/${f.id}`).catch(() => {}); },
+    luk: () => send('Target.disposeBrowserContext', { browserContextId }).catch(() => {}),
   };
+}
+
+/** Siden før og siden nu, hver i sin egen kontekst; forskellen regnes ud i fanen med siden nu, så den kan sige, hvor den er. */
+async function sammenlign(bredde, urlFør, urlNu, forbered = async () => {}) {
+  const a = await fane(bredde);
+  await a.gå(urlFør);
+  await forbered(a);
+  const billedeFør = await a.billeder();
+  await a.luk();
+  const b = await fane(bredde);
+  try {
+    await b.gå(urlNu);
+    await forbered(b);
+    return await forskel(billedeFør, await b.billeder(), b);
+  } finally {
+    await b.luk();
+  }
+}
+
+/**
+ * Chrome tegner en sjælden gang én pixel en anelse anderledes på meget lange sider, også når filerne er de samme (målt 5. nov.
+ * 2026: før mod før og nu mod nu på 2-over-1-makker2 ved 1280 px gav én pixel forskel i én af fem runder). En ændring kommer
+ * igen hver gang, støj gør ikke, så en forskel skal være der i tre forsøg i træk, hvert med nye kontekster.
+ */
+async function somFør(bredde, urlFør, urlNu, forbered, navn) {
+  const støj = [];
+  for (let forsøg = 1; forsøg <= 3; forsøg++) {
+    const d = await sammenlign(bredde, urlFør, urlNu, forbered);
+    if (!d) {
+      for (const s of støj) console.log(`NB ${navn} ved ${bredde} px: ${s}, ens i forsøg ${forsøg}`);
+      return '';
+    }
+    støj.push(`forsøg ${forsøg}: ${d}`);
+  }
+  return `forskellig i tre forsøg i træk; ${støj.join('; ')}`;
 }
 
 async function forskel(a, b, side) {
   if (a.h !== b.h) return `højden er ${b.h} px, før ${a.h} px`;
   for (let i = 0; i < a.bidder.length; i++) {
     if (a.bidder[i] === b.bidder[i]) continue;
-    const d = await side.kør(`(async () => {
+    const d = await side.kør(`(async () => {${FÆLLES}
       const læs = (d) => new Promise((ok) => { const i = new Image(); i.onload = () => ok(i); i.src = 'data:image/png;base64,' + d; });
       const [x, y] = await Promise.all([læs(${JSON.stringify(a.bidder[i])}), læs(${JSON.stringify(b.bidder[i])})]);
       const px = (i) => { const c = new OffscreenCanvas(i.width, i.height); const g = c.getContext('2d'); g.drawImage(i, 0, 0); return g.getImageData(0, 0, i.width, i.height).data; };
       const p = px(x), q = px(y);
-      let n = 0;
-      for (let k = 0; k < p.length; k += 4) if (p[k] !== q[k] || p[k + 1] !== q[k + 1] || p[k + 2] !== q[k + 2]) n++;
-      return n;
+      let n = 0, x0 = 1e9, y0 = 1e9, x1 = -1, y1 = -1, først = '';
+      for (let k = 0; k < p.length; k += 4) {
+        if (p[k] === q[k] && p[k + 1] === q[k + 1] && p[k + 2] === q[k + 2]) continue;
+        const u = (k / 4) % x.width, v = Math.floor(k / 4 / x.width) + ${i * 6000};
+        if (!n) først = [p[k], p[k + 1], p[k + 2]].join('.') + ' før, ' + [q[k], q[k + 1], q[k + 2]].join('.') + ' nu';
+        n++; x0 = Math.min(x0, u); y0 = Math.min(y0, v); x1 = Math.max(x1, u); y1 = Math.max(y1, v);
+      }
+      if (!n) return '';
+      // Elementet ved den første forskel, også inde i en shadow root.
+      scrollTo(0, Math.max(0, y0 - 200));
+      let e = document.elementFromPoint(x0, y0 - scrollY);
+      while (e?.shadowRoot) { const f = e.shadowRoot.elementFromPoint(x0, y0 - scrollY); if (!f || f === e) break; e = f; }
+      const om = e ? navn(e) + ' "' + (e.textContent || '').trim().slice(0, 30) + '"' : '?';
+      return n + ' pixels er forskellige i ' + x0 + ',' + y0 + '–' + x1 + ',' + y1 + ' (' + først + '; ' + om + ')';
     })()`);
-    if (d) return `${d} pixels er forskellige i bid ${i + 1}`;
+    if (d) return d;
   }
   return '';
 }
@@ -201,27 +252,32 @@ const UDSNIT = [
   ['viden/forslag-2klor-kontrolsvar.html', 'forslag-tabel', `document.querySelector('table.abner')`, 420],
   ['viden/konventionskort.html', 'konventionskort-top', `document.getElementById('kk-app')`, 620],
 ];
-async function gemUdsnit(s, url, navn, vælger, højde) {
-  await s.gå(url);
-  await vent(500);
-  await s.kør(ÅBN);
-  const r = await s.kør(`(() => {
-    const rod = document.documentElement;
-    const e = ${vælger};
-    const k = e.getBoundingClientRect();
-    return { y: Math.max(0, k.top + scrollY - 20), sw: Math.max(320, rod.scrollWidth) };
-  })()`);
-  if (r.sw > 320) await s.kør(`document.body.insertAdjacentHTML('beforeend', '<div style="position:absolute;top:0;left:320px;width:2px;height:' + document.documentElement.scrollHeight + 'px;background:#e00;z-index:9999"></div>')`);
-  const b = await s.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: true, clip: { x: 0, y: r.y, width: r.sw, height: højde, scale: 1 } });
-  writeFileSync(join(BILLEDER, `320-${navn}.png`), Buffer.from(b.result.data, 'base64'));
+async function gemUdsnit(url, navn, vælger, højde) {
+  const s = await fane(320);
+  try {
+    await s.gå(url);
+    await vent(500);
+    await s.kør(ÅBN);
+    const r = await s.kør(`(() => {
+      const rod = document.documentElement;
+      const e = ${vælger};
+      const k = e.getBoundingClientRect();
+      return { y: Math.max(0, k.top + scrollY - 20), sw: Math.max(320, rod.scrollWidth) };
+    })()`);
+    if (r.sw > 320) await s.kør(`document.body.insertAdjacentHTML('beforeend', '<div style="position:absolute;top:0;left:320px;width:2px;height:' + document.documentElement.scrollHeight + 'px;background:#e00;z-index:9999"></div>')`);
+    const b = await s.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: true, clip: { x: 0, y: r.y, width: r.sw, height: højde, scale: 1 } });
+    writeFileSync(join(BILLEDER, `320-${navn}.png`), Buffer.from(b.data, 'base64'));
+  } finally {
+    await s.luk();
+  }
 }
 
 try {
   // Ingen vandret scroll.
   for (const bredde of SMALLE) {
-    const s = await fane(bredde);
     for (const side of SIDER) {
       for (const lang of ['da', 'en']) {
+        const s = await fane(bredde);
         await s.gå(`${nu.url}${side}?lang=${lang}`);
         if (side === KORT) await s.kortKlar();
         const lukket = await s.kør(MÅL);
@@ -231,15 +287,15 @@ try {
         await vent(60);
         const åben = await s.kør(MÅL);
         tjek(åben.ud <= 0 && !åben.fund.length, `${side} ved ${bredde} px på ${lang} med alt foldet ud: ingen vandret scroll`, `${åben.ud} px, ${åben.fund.join(', ')}`);
+        await s.luk();
       }
     }
-    await s.luk();
   }
 
   // Alle kort i alle visninger.
   for (const bredde of [320, 375]) {
-    const s = await fane(bredde);
     for (const lang of ['da', 'en']) {
+      const s = await fane(bredde);
       await s.gå(`${nu.url}${KORT}?lang=${lang}`);
       const ider = await s.kortKlar();
       tjek(ider.length === 49, `Konventionskortet ved ${bredde} px på ${lang}: alle kort er med`, String(ider.length));
@@ -253,53 +309,45 @@ try {
           tjek(m.ud <= 0 && !m.fund.length, `Kortet ${id}, ${visning}, ved ${bredde} px på ${lang}: ingen vandret scroll`, `${m.ud} px, ${m.fund.join(', ')}`);
         }
       }
+      await s.luk();
     }
-    await s.luk();
   }
 
-  // Ved 390 og 1280 px er alt pixel for pixel som før.
+  // Ved 390 og 1280 px er alt pixel for pixel som før; hvert skærmbillede tages i sin egen kontekst.
   if (!INGEN_PIXEL) {
     for (const bredde of [390, 1280]) {
-      const a = await fane(bredde);
-      const b = await fane(bredde);
       for (const side of SIDER) {
         for (const lang of ['da', 'en']) {
-          await a.gå(`${før.url}${side}?lang=${lang}`);
-          await b.gå(`${nu.url}${side}?lang=${lang}`);
-          if (side === KORT) { await a.kortKlar(); await b.kortKlar(); await vent(200); }
-          const d = await forskel(await a.billeder(), await b.billeder(), b);
+          const klar = async (s) => { if (side === KORT) { await s.kortKlar(); await vent(200); } };
+          const d = await somFør(bredde, `${før.url}${side}?lang=${lang}`, `${nu.url}${side}?lang=${lang}`, klar, `${side} på ${lang}`);
           tjek(!d, `${side} ved ${bredde} px på ${lang}: som før`, d);
         }
       }
-      await a.gå(`${før.url}${KORT}`);
-      await b.gå(`${nu.url}${KORT}`);
-      const ider = await a.kortKlar();
-      await b.kortKlar();
+      const s = await fane(bredde);
+      await s.gå(`${før.url}${KORT}`);
+      const ider = await s.kortKlar();
+      await s.luk();
       for (const id of ider) {
         for (const visning of ['fuld', 'kompakt']) {
-          await a.visKort(id, visning);
-          await b.visKort(id, visning);
-          const d = await forskel(await a.billeder(), await b.billeder(), b);
+          const vis = async (t) => { await t.kortKlar(); await t.visKort(id, visning); };
+          const d = await somFør(bredde, `${før.url}${KORT}`, `${nu.url}${KORT}`, vis, `Kortet ${id}, ${visning}`);
           tjek(!d, `Kortet ${id}, ${visning}, ved ${bredde} px: som før`, d);
         }
       }
-      await a.luk();
-      await b.luk();
     }
   }
 
   if (BILLEDER) {
     mkdirSync(BILLEDER, { recursive: true });
-    const s = await fane(320);
     for (const [side, navn, vælger, højde] of UDSNIT) {
-      await gemUdsnit(s, `${før.url}${side}`, `${navn}-foer`, vælger, højde);
-      await gemUdsnit(s, `${nu.url}${side}`, `${navn}-efter`, vælger, højde);
+      await gemUdsnit(`${før.url}${side}`, `${navn}-foer`, vælger, højde);
+      await gemUdsnit(`${nu.url}${side}`, `${navn}-efter`, vælger, højde);
     }
-    await s.luk();
   }
 } catch (e) {
   tjek(false, 'testen kørte færdig', e.message);
 } finally {
+  forbindelse.close();
   proces.kill();
   nu.s.close();
   før.s.close();
