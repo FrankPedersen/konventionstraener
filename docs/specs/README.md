@@ -13,3 +13,4 @@ Konventionstrænerens specer. De ligger på GitHub, men ikke på www.kontraktbri
 - [SPEC-sprog-kipning-toppe.md](SPEC-sprog-kipning-toppe.md) – kipning altid som navneord, toppe farven og frafald kun om hold-up; "frafalder" om konventioner er "bortfalder" (31. oktober 2026).
 - [SPEC-bred-layout.md](SPEC-bred-layout.md) – multi-svar-træneren fra 1000 px i højst 1120 px med hånden i en fast venstre spalte på 420 px og meldingerne, meldekassen og forklaringen til højre (bud A som i Fordelingstræneren); testen `tools/tjek_bred_multi.mjs` (31. oktober 2026).
 - [SPEC-makker2-bilag-c.md](SPEC-makker2-bilag-c.md) – Makker 2: aftalerne fra Bilag C, 2♣ med kontrolsvar og Flannery på 2♦, og træneren efter dem (udgivet 3. november 2026)
+- [SPEC-sidefod.md](SPEC-sidefod.md) – sidefoden ens med forsidens nye, kompakte sidefod: logo og Om mig og kontakt, Trænere, Opslag og ©-linjen, på begge sprog (udgivet 5. november 2026).
