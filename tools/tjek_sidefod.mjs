@@ -128,9 +128,8 @@ try {
       tjek(f.ud <= 0, `${hvor}: intet stikker ud`, `${f.ud} px`);
     }
     await åbn(side, 320, 700);
-    // Sidefoden selv: opgaverne i viden/2-over-1.html stikker 20 px ud ved 320 px, også på main, og hører ikke til her.
-    const ud = await kør(`Math.round(Math.max(...[...document.querySelectorAll('#sidefod *')].map((e) => e.getBoundingClientRect().right)) - document.documentElement.clientWidth)`);
-    tjek(ud <= 0, `${side} ved 320 px: sidefoden stikker ikke ud`, `${ud} px`);
+    const ud = await kør('document.documentElement.scrollWidth - document.documentElement.clientWidth');
+    tjek(ud <= 0, `${side} ved 320 px: intet stikker ud`, `${ud} px`);
   }
 
   // Knappen står inden for sidefodens polstring ved de smalle bredder og på begge sprog; teksten må brække.

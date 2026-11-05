@@ -194,6 +194,10 @@ table.cmp td{ width:36%; } table.cmp td:first-child{ width:28%; }
   .hand{ font-size:.94rem; }
   .felt{ width:4.4rem; height:4.4rem; font-size:.85rem; }
 }
+@media (max-width:359px){
+  /* Pladsen kommer fra afstanden mellem kolonnerne; kompasset beholder målene fra reglen for 430 px. */
+  .deal{ gap:.45rem .35rem; }
+}
 table.auc{ border-collapse:collapse; font-family:var(--sans); font-size:1.05rem; }
 table.auc th{ color:var(--felt); font-weight:800; border-bottom:2px solid var(--felt); padding:.3rem .95rem .3rem .2rem; text-align:left; }
 table.auc td{ padding:.26rem .95rem .26rem .2rem; border-bottom:1px solid var(--line); min-width:3rem; }
@@ -218,7 +222,7 @@ table.auc .x{ font-weight:800; }
 .gcard p{ font-size:.98rem; line-height:1.45; margin:.55rem 0 0; }
 
 /* ---------- quiz ---------- */
-.quiz{ display:grid; grid-template-columns:repeat(auto-fill,minmax(19rem,1fr)); gap:1rem; margin:1rem 0; }
+.quiz{ display:grid; grid-template-columns:repeat(auto-fill,minmax(min(19rem,100%),1fr)); gap:1rem; margin:1rem 0; }
 .q{ border:1px solid var(--line-strong); border-radius:.45rem; padding:.9rem 1rem; }
 .q .qn{ font-family:var(--sans); font-weight:800; color:var(--felt); }
 .q .seq{ font-family:var(--sans); font-weight:700; margin:.25rem 0 .5rem; }
