@@ -106,7 +106,8 @@ async function fane(bredde, højde = 900) {
     // Et svar (den sidste mulige melding i meldekassen) viser forklaringen og Næste hånd.
     svar: () => kør(`(() => { const c = [...document.querySelectorAll('#box .cell:not(:disabled)')]; c[c.length - 1]?.click(); return c.length; })()`),
     async billede() {
-      await kør('window.scrollTo(0, 0)');
+      // Sidefoden er ændret med vilje siden referencen (SPEC-sidefod.md), så den tæller ikke med; tools/tjek_sidefod.mjs tjekker den.
+      await kør(`window.scrollTo(0, 0); document.head.insertAdjacentHTML('beforeend', '<style>#sidefod { display: none !important; }</style>')`);
       await vent(200);
       const h = await kør('Math.max(document.documentElement.scrollHeight, innerHeight)');
       const r = await send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: true, clip: { x: 0, y: 0, width: bredde, height: h, scale: 1 } });

@@ -55,6 +55,8 @@ class Sidefoden(unittest.TestCase):
         js = (ROD / 'assets/footer.js').read_text(encoding='utf-8')
         self.assertIn("kolonne('opslag', 'Opslag', 'Reference',", js)
         self.assertIn("link('/ordbog/', 'Bridgeordbog', 'Bridge dictionary')", js)
+        # Analyse først under Opslag (SPEC-sidefod.md)
+        self.assertRegex(js, r"kolonne\('opslag', 'Opslag', 'Reference',\s*link\('/fordelingstraeneren/#analyse', 'Analyse', 'Analysis'\)")
         # Scoring i bridge efter Bridgeordbog (SPEC-scoring.md, leverancetrin 4)
         self.assertRegex(js, r"link\('/ordbog/', 'Bridgeordbog', 'Bridge dictionary'\)\s*"
                              r"\+ link\('/scoring/', 'Scoring i bridge', 'Scoring in bridge'\)\)")
@@ -69,7 +71,8 @@ class Sidefoden(unittest.TestCase):
             self.assertIn(f'id="sf-opslag">{titel}</h2>', html, lang)
             self.assertIn(f'<li><a href="/ordbog/">{link}</a></li><li><a href="/scoring/">{scoring}</a></li></ul>', html, lang)
             self.assertLess(html.index('sf-traenere'), html.index('sf-opslag'), lang)
-            self.assertLess(html.index('sf-opslag'), html.index('sf-aftaler'), lang)
+            # Kolonnen Aftaler og notater udgår (SPEC-sidefod.md).
+            self.assertNotIn('sf-aftaler', html, lang)
 
 
 class Rettelserne(unittest.TestCase):
