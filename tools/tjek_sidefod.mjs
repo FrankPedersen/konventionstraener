@@ -1,8 +1,10 @@
 // Accepttest (SPEC-sidefod.md): sidefoden er ens med forsidens efter målene under Afklaret i
-// ../Forside/docs/specs/SPEC-ny-forside.md. Siderne vises fra en lokal webserver i Chrome uden vindue.
+// ../Forside/docs/specs/SPEC-ny-forside.md. Siderne vises fra en lokal webserver i Chrome uden vindue, eller med --live
+// fra www.kontraktbridge.dk/konventionstraener/ (SPEC-tjek-live.md).
 //
-//   node tools/tjek_sidefod.mjs                    tjekker
-//   node tools/tjek_sidefod.mjs --billeder=mappe   gemmer også sidefoden ved 1280 og 390 px
+//   node tools/tjek_sidefod.mjs                    før fletning: tjekker siderne fra arbejdsmappen
+//   node tools/tjek_sidefod.mjs --live             efter en udgivelse: tjekker siderne på sitet
+//   node tools/tjek_sidefod.mjs --billeder=mappe   gemmer også sidefoden ved 1280 og 390 px (også med --live)
 //
 // Kræver Node 22+ og Chrome eller Edge.
 import { spawn } from 'node:child_process';
@@ -14,6 +16,8 @@ import { fileURLToPath } from 'node:url';
 
 const ROD = fileURLToPath(new URL('..', import.meta.url));
 const BILLEDER = process.argv.find((a) => a.startsWith('--billeder='))?.slice('--billeder='.length);
+const LIVE = process.argv.includes('--live');
+const SITE = 'https://www.kontraktbridge.dk/konventionstraener/';
 const SIDER = ['index.html', 'traener.html', 'multi-svar-traener.html', 'viden/index.html', 'makkeraftaler.html', 'viden/2-over-1.html'];
 const CHROME = [
   process.env.CHROME,
@@ -29,14 +33,16 @@ if (!CHROME) {
 }
 
 const TYPER = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.woff2': 'font/woff2', '.json': 'application/json', '.txt': 'text/plain; charset=utf-8', '.md': 'text/plain; charset=utf-8' };
-const server = createServer((req, res) => {
+// Siderne: arbejdsmappen fra en lokal webserver eller, med --live, sitet.
+const server = LIVE ? null : createServer((req, res) => {
   let sti = normalize(join(ROD, decodeURIComponent(new URL(req.url, 'http://x').pathname)));
   if (existsSync(sti) && statSync(sti).isDirectory()) sti = join(sti, 'index.html');
   if (!sti.startsWith(normalize(ROD)) || !existsSync(sti)) return res.writeHead(404).end();
   res.writeHead(200, { 'Content-Type': TYPER[extname(sti)] || 'application/octet-stream' }).end(readFileSync(sti));
 });
-await new Promise((ok) => server.listen(0, '127.0.0.1', ok));
-const UD = `http://127.0.0.1:${server.address().port}/`;
+if (server) await new Promise((ok) => server.listen(0, '127.0.0.1', ok));
+const UD = LIVE ? SITE : `http://127.0.0.1:${server.address().port}/`;
+if (LIVE) console.log(`Siderne: ${SITE} (GitHub Pages kan være op til 10 minutter om at vise den nye udgave)`);
 
 const vent = (ms) => new Promise((r) => setTimeout(r, ms));
 let fejl = 0;
@@ -68,6 +74,8 @@ const åbn = async (side, bredde, højde = 900) => {
   await send('Emulation.setDeviceMetricsOverride', { width: bredde, height: højde, deviceScaleFactor: 1, mobile: bredde < 600 });
   await send('Page.navigate', { url: UD + side });
   await vent(900);
+  // Fra sitet kan en side være længere om at komme end de 900 ms, en side fra arbejdsmappen bruger.
+  if (LIVE) for (let i = 0; i < 100 && (await kør('document.readyState')) !== 'complete'; i++) await vent(100);
   await kør('document.fonts.ready.then(() => true)');
 };
 const MÅL = `(() => {
@@ -146,6 +154,7 @@ try {
   await send('Emulation.setDeviceMetricsOverride', { width: 1280, height: 900, deviceScaleFactor: 1, mobile: false });
   await send('Page.navigate', { url: `${UD}index.html?lang=en` });
   await vent(900);
+  if (LIVE) for (let i = 0; i < 100 && (await kør('document.readyState')) !== 'complete'; i++) await vent(100);
   const en = await kør(MÅL);
   tjek(JSON.stringify(en.kolonner.map((k) => [k.titel, k.links.map((l) => l[0])])) === JSON.stringify([['Trainers', ['Convention trainer', 'Distribution', 'Point count', 'Suit combinations', 'Hand evaluation']], ['Reference', ['Analysis', 'Bridge dictionary', 'Scoring in bridge']]]), 'Engelsk: kolonnerne', JSON.stringify(en.kolonner));
   tjek(/Free bridge training in the browser\. Made by Frank Pedersen\./.test(en.tekst) && en.knap === 'About me and contact →', 'Engelsk: linjen og knappen', en.tekst.slice(0, 120));
@@ -164,7 +173,7 @@ try {
   tjek(false, 'testen kørte færdig', e.message);
 } finally {
   proc.kill();
-  server.close();
+  server?.close();
   try { rmSync(profil, { recursive: true, force: true }); } catch {}
 }
 console.log(fejl ? `\n${fejl} FEJL` : '\nAlt i orden');
