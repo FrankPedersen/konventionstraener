@@ -1,5 +1,5 @@
 // Accepttest (SPEC-viden-320.md): siderne i viden/ har ingen vandret scroll ved 320 px, og ved 390 og 1280 px er de pixel
-// for pixel som før. Alle sider tjekkes på dansk og engelsk med <details> lukket og åbne, og alle konventionskort i deres
+// for pixel som før, undtagen crowhurst-kortet i fuld visning ved 390 px (SPEC-crowhurst-390.md, se ÆNDRET). Alle sider tjekkes på dansk og engelsk med <details> lukket og åbne, og alle konventionskort i deres
 // visninger; kortene står i en shadow root, så målingen går også derind. "Stikker ud" måles mod clientWidth: i mobilvisning
 // vokser innerWidth med det, der stikker ud, så en måling mod den aldrig ville fejle. Siden før vises fra tagget (filerne
 // læses med git show). Hver side åbnes i sin egen browserkontekst, som et nyt privat vindue: localStorage er tom, fanen er
@@ -23,6 +23,9 @@ const BILLEDER = process.argv.find((a) => a.startsWith('--billeder='))?.slice('-
 const SIDER = readdirSync(join(ROD, 'viden')).filter((f) => f.endsWith('.html')).map((f) => `viden/${f}`);
 const KORT = 'viden/konventionskort.html';
 const SMALLE = [320, 340, 360, 375];
+// Crowhurst-kortet i fuld visning ændres bevidst ved 390 px (chippen brækker under 399 px, SPEC-crowhurst-390.md); det
+// sammenlignes ikke med tagget her, men tjekkes af tools/tjek_crowhurst_390.mjs.
+const ÆNDRET = new Set(['390:crowhurst:fuld']);
 const browser = [
   process.env.CHROME,
   'C:/Program Files/Google/Chrome/Application/chrome.exe',
@@ -329,6 +332,7 @@ try {
       await s.luk();
       for (const id of ider) {
         for (const visning of ['fuld', 'kompakt']) {
+          if (ÆNDRET.has(`${bredde}:${id}:${visning}`)) continue;
           const vis = async (t) => { await t.kortKlar(); await t.visKort(id, visning); };
           const d = await somFør(bredde, `${før.url}${KORT}`, `${nu.url}${KORT}`, vis, `Kortet ${id}, ${visning}`);
           tjek(!d, `Kortet ${id}, ${visning}, ved ${bredde} px: som før`, d);

@@ -239,8 +239,11 @@ async function forskel(a, b, side) {
   return '';
 }
 
-/** Crowhurst-kortet i fuld visning ved 390 px, med en rød streg, hvor skærmen slutter, når kortet stikker ud. */
-async function gemKort(url, fil) {
+/**
+ * Crowhurst-kortet i fuld visning ved 390 px, med en rød streg, hvor skærmen slutter, når kortet stikker ud: hele kortet
+ * (`<navn>-fuld-…`) og udsnittet omkring chippen (`<navn>-chip-…`).
+ */
+async function gemKort(url, navn) {
   const s = await fane(390);
   try {
     await s.gå(url);
@@ -248,10 +251,17 @@ async function gemKort(url, fil) {
     await s.visKort(ID, 'fuld');
     await s.kør(ÅBN);
     await vent(200);
-    const r = await s.kør(`(() => { const e = document.getElementById('kk-app'); const k = e.getBoundingClientRect(); return { y: Math.max(0, k.top + scrollY - 12), h: k.height + 24, sw: Math.max(390, document.documentElement.scrollWidth) }; })()`);
+    const r = await s.kør(`(() => {
+      const e = document.getElementById('kk-app'); const k = e.getBoundingClientRect();
+      const chip = [...${R}.querySelectorAll('.chip')].find((c) => c.textContent.includes('checkback efter'));
+      const c = chip.getBoundingClientRect();
+      return { y: Math.max(0, k.top + scrollY - 12), h: k.height + 24, cy: Math.max(0, c.top + scrollY - 160), sw: Math.max(390, document.documentElement.scrollWidth) };
+    })()`);
     if (r.sw > 390) await s.kør(`document.body.insertAdjacentHTML('beforeend', '<div style="position:absolute;top:0;left:390px;width:2px;height:' + document.documentElement.scrollHeight + 'px;background:#e00;z-index:9999"></div>')`);
-    const b = await s.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: true, clip: { x: 0, y: r.y, width: r.sw, height: r.h, scale: 1 } });
-    writeFileSync(join(BILLEDER, fil), Buffer.from(b.data, 'base64'));
+    for (const [del, y, h] of [['fuld', r.y, r.h], ['chip', r.cy, 340]]) {
+      const b = await s.send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: true, clip: { x: 0, y, width: r.sw, height: h, scale: 1 } });
+      writeFileSync(join(BILLEDER, navn.replace('DEL', del)), Buffer.from(b.data, 'base64'));
+    }
   } finally {
     await s.luk();
   }
@@ -328,8 +338,8 @@ try {
   if (BILLEDER) {
     mkdirSync(BILLEDER, { recursive: true });
     for (const lang of ['da', 'en']) {
-      await gemKort(`${før.url}${KORT}?lang=${lang}`, `390-${lang}-crowhurst-fuld-foer.png`);
-      await gemKort(`${nu.url}${KORT}?lang=${lang}`, `390-${lang}-crowhurst-fuld-efter.png`);
+      await gemKort(`${før.url}${KORT}?lang=${lang}`, `390-${lang}-crowhurst-DEL-foer.png`);
+      await gemKort(`${nu.url}${KORT}?lang=${lang}`, `390-${lang}-crowhurst-DEL-efter.png`);
     }
   }
 } catch (e) {
