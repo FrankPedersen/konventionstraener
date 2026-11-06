@@ -20,13 +20,21 @@
 
 `node tools/tjek_crowhurst_390.mjs` (ny) tjekker:
 
-- [ ] **Ingen vandret scroll** på crowhurst-kortet ved 390, 393, 395 og 398 px på dansk og engelsk, i fuld og kompakt visning og skabelonen, med alt foldet ud, og i hint-vinduet i `traener.html?k=crowhurst`.
-- [ ] **Ved 390 px** er de andre 48 kort i fuld og kompakt visning, crowhurst i kompakt visning og alle sider i `viden/` på begge sprog pixel for pixel som `v-foer-crowhurst-390`.
-- [ ] **Ved 399 og 1280 px** er alle sider i `viden/` på begge sprog og alle 49 kort i fuld og kompakt visning pixel for pixel som tagget.
-- [ ] **Billederne:** `--billeder=mappe` gemmer crowhurst-kortet i fuld visning ved 390 px før og efter på dansk og engelsk, med en rød streg, hvor skærmen slutter, når kortet stikker ud (`../skaermbilleder/crowhurst-390/`).
+- [x] **Ingen vandret scroll** på crowhurst-kortet ved 390, 393, 395 og 398 px på dansk og engelsk, i fuld og kompakt visning og skabelonen, med alt foldet ud, og i hint-vinduet i `traener.html?k=crowhurst`.
+- [x] **Ved 390 px** er de andre 48 kort i fuld og kompakt visning, crowhurst i kompakt visning og alle sider i `viden/` på begge sprog pixel for pixel som `v-foer-crowhurst-390`.
+- [x] **Ved 399 og 1280 px** er alle sider i `viden/` på begge sprog og alle 49 kort i fuld og kompakt visning pixel for pixel som tagget.
+- [x] **Billederne:** `--billeder=mappe` gemmer crowhurst-kortet i fuld visning ved 390 px før og efter på dansk og engelsk, med en rød streg, hvor skærmen slutter, når kortet stikker ud (`../skaermbilleder/crowhurst-390/`).
 
 Desuden er `node tools/tjek_viden_320.mjs` og repoets øvrige tjek grønne.
 
 ## Afklaret
 
-Udfyldes, når ændringen er bygget.
+Kørt 6. nov. 2026 på grenen: `tjek_crowhurst_390.mjs` 418 tjek i orden (15 minutter; fem forsøg med støj, se Afklaret 6), `tjek_viden_320.mjs` 791 tjek i orden (ét færre end før, se Afklaret 5), `tjek_sidefod.mjs`, `tjek_skrifttyper.mjs`, `tjek_bred_multi.mjs` og de ni Python-tjek (konventionskort, kort_eksempler, fagord, bydeform, sprog, skrifttyper, makker2_aftaler, makker2_bilag_c, crowhurst) i orden.
+
+1. **Årsagen er bekræftet** (målt på tagget med den nye test): fuld visning stak 9, 6, 4 og 1 px ud ved 390, 393, 395 og 398 px på begge sprog; kompakt visning, skabelonen og hint-vinduet var i orden (8 fejl ud af 80 tjek før rettelsen, 0 efter).
+2. **Chippen brækker ved bindestregen:** "Crowhurst (checkback efter åbners 1NT-" / "genmelding)". Hele kortet bliver 564 px længere ved 390 px (13.369 mod 12.805 px), fordi kortets kolonne før var 25 px bredere end siden (383 mod 358 px), så tekst og tabeller brækkede mindre. Nu passer kolonnen til siden.
+3. **Reglen er flyttet, ikke kopieret:** `.chip{white-space:normal}` står i `@media (max-width:398px)`, og `.fod{overflow-wrap:anywhere}` bliver i reglen med `max-width:389px`. Under 390 px er reglerne de samme som før.
+4. **Intet andet ændrer sig:** ved 390 px er de andre 48 kort, crowhurst i kompakt visning og alle sider pixel for pixel som tagget, så alle andre chips kan stå på én linje. Ved 399 og 1280 px er alt som tagget.
+5. **`tjek_viden_320.mjs`** sammenligner 390 px med `v-foer-viden-320`. Crowhurst i fuld visning er nu bevidst anderledes og står på testens liste `ÆNDRET`, så resten tjekkes som før; `tjek_crowhurst_390.mjs` tjekker crowhurst.
+6. **Støj:** fem sammenligninger havde 1–2 pixels ét farvetrin forskellige i første forsøg og var ens i andet (som Afklaret 9 i `docs/specs/SPEC-viden-320.md`). Testen bruger samme kode som `tjek_viden_320.mjs`: hver side i sin egen browserkontekst, og en forskel skal være der i tre forsøg i træk.
+7. **Billederne** (`../skaermbilleder/crowhurst-390/`): `390-<sprog>-crowhurst-fuld-<foer|efter>.png` er hele kortet med en rød streg ved 390 px, når det stikker ud, og `390-<sprog>-crowhurst-chip-<foer|efter>.png` udsnittet omkring chippen.
