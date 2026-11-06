@@ -15,3 +15,4 @@ Konventionstrænerens specer. De ligger på GitHub, men ikke på www.kontraktbri
 - [SPEC-makker2-bilag-c.md](SPEC-makker2-bilag-c.md) – Makker 2: aftalerne fra Bilag C, 2♣ med kontrolsvar og Flannery på 2♦, og træneren efter dem (udgivet 3. november 2026)
 - [SPEC-sidefod.md](SPEC-sidefod.md) – sidefoden ens med forsidens nye, kompakte sidefod: logo og Om mig og kontakt, Trænere, Opslag og ©-linjen, på begge sprog (udgivet 5. november 2026).
 - [SPEC-viden-320.md](SPEC-viden-320.md) – siderne i `viden/` og konventionskortene uden vandret scroll ved 320 px, med 390 og 1280 px pixel for pixel som før; crowhurst ved 390–398 px er et åbent punkt (udgivet 5. november 2026).
+- [SPEC-crowhurst-390.md](SPEC-crowhurst-390.md) – chips må brække under 399 px, så crowhurst-kortet ikke giver vandret scroll ved 390–398 px; de andre kort og siderne er uændrede ved 390 px, og alt er uændret fra 399 px (udgivet 6. november 2026).

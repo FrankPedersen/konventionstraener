@@ -1,6 +1,6 @@
 # SPEC-crowhurst-390
 
-6. november 2026 · Franks valg. Bygges på grenen `crowhurst-390`; `main` før er tagget `v-foer-crowhurst-390`. Frank godkender, før der flettes.
+6. november 2026 · Franks valg. Bygges på grenen `crowhurst-390`; `main` før er tagget `v-foer-crowhurst-390`. Godkendt af Frank, flettet og udgivet 6. november 2026 (`e8d4fc2`); den udgivne side er tjekket, og grenen er slettet.
 
 **Problemet:** crowhurst-kortet på `viden/konventionskort.html` giver vandret scroll ved 390–398 px i fuld visning: 9 px ved 390 px, 4 px ved 395 px og intet fra 399 px. Det står som forbehold i `../SYSTEM.md` (afsnit 8) og som åbent punkt i `docs/specs/SPEC-viden-320.md`. Årsagen er chippen "Crowhurst (checkback efter åbners 1NT-genmelding)" blandt kortets relaterede konventioner. Chips har `white-space:nowrap` og må kun brække under 390 px (`@media (max-width:389px)` fra viden-320). Chippen er 343 px bred, så kortets kolonne bliver bredere end siden.
 
@@ -38,3 +38,4 @@ Kørt 6. nov. 2026 på grenen: `tjek_crowhurst_390.mjs` 418 tjek i orden (15 min
 5. **`tjek_viden_320.mjs`** sammenligner 390 px med `v-foer-viden-320`. Crowhurst i fuld visning er nu bevidst anderledes og står på testens liste `ÆNDRET`, så resten tjekkes som før; `tjek_crowhurst_390.mjs` tjekker crowhurst.
 6. **Støj:** fem sammenligninger havde 1–2 pixels ét farvetrin forskellige i første forsøg og var ens i andet (som Afklaret 9 i `docs/specs/SPEC-viden-320.md`). Testen bruger samme kode som `tjek_viden_320.mjs`: hver side i sin egen browserkontekst, og en forskel skal være der i tre forsøg i træk.
 7. **Billederne** (`../skaermbilleder/crowhurst-390/`): `390-<sprog>-crowhurst-fuld-<foer|efter>.png` er hele kortet med en rød streg ved 390 px, når det stikker ud, og `390-<sprog>-crowhurst-chip-<foer|efter>.png` udsnittet omkring chippen.
+8. **Den udgivne side** (6. nov. 2026, efter GitHub Pages-udrulningen af `e8d4fc2`): `viden/konventionskort.html` og `assets/konventionskort-hint.js` på www.kontraktbridge.dk har reglen med `max-width:398px`, og testens tjek af vandret scroll (crowhurst i alle visninger og hint-vinduet ved 390, 393, 395 og 398 px på begge sprog) giver 80 tjek i orden mod sitet. Testen har ingen `--live`, så den blev kørt fra en kopi uden for repoet, hvor siden nu er www.kontraktbridge.dk/konventionstraener/.
