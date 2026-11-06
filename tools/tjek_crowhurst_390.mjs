@@ -3,9 +3,12 @@
 // og i hint-vinduet i traener.html?k=crowhurst. Ved 390 px er de andre 48 kort, crowhurst i kompakt visning og alle sider i
 // viden/ som tagget; ved 399 og 1280 px er alle sider og alle 49 kort som tagget. Siden før vises fra tagget (filerne læses
 // med git show). Hver side åbnes i sin egen browserkontekst med tom localStorage og uden faneskift, som i tjek_viden_320.mjs.
-// "Stikker ud" måles mod clientWidth, også inde i kortets shadow root. Kræver Node 22+, git og Chrome eller Edge.
+// "Stikker ud" måles mod clientWidth, også inde i kortets shadow root. Med --live åbnes siderne, kortene og træneren på
+// www.kontraktbridge.dk/konventionstraener/, og pixelsammenligningen med tagget, der kun giver mening lokalt, springes
+// over (SPEC-tjek-live.md). Kræver Node 22+, git og Chrome eller Edge.
 //
-//   node tools/tjek_crowhurst_390.mjs                    tjekker
+//   node tools/tjek_crowhurst_390.mjs                    før fletning: tjekker siderne fra arbejdsmappen
+//   node tools/tjek_crowhurst_390.mjs --live             efter en udgivelse: tjekker vandret scroll på sitet
 //   node tools/tjek_crowhurst_390.mjs ingen              springer pixelsammenligningen over
 //   node tools/tjek_crowhurst_390.mjs --billeder=mappe   gemmer også crowhurst-kortet ved 390 px før og efter
 import { spawn, spawnSync } from 'node:child_process';
@@ -18,6 +21,8 @@ import { fileURLToPath } from 'node:url';
 const ROD = fileURLToPath(new URL('..', import.meta.url));
 const TAG = 'v-foer-crowhurst-390';
 const INGEN_PIXEL = process.argv.includes('ingen');
+const LIVE = process.argv.includes('--live');
+const SITE = 'https://www.kontraktbridge.dk/konventionstraener/';
 const BILLEDER = process.argv.find((a) => a.startsWith('--billeder='))?.slice('--billeder='.length);
 const SIDER = readdirSync(join(ROD, 'viden')).filter((f) => f.endsWith('.html')).map((f) => `viden/${f}`);
 const KORT = 'viden/konventionskort.html';
@@ -64,8 +69,10 @@ async function webserver(tag) {
   await new Promise((r) => s.listen(0, '127.0.0.1', r));
   return { s, url: `http://127.0.0.1:${s.address().port}/` };
 }
-const nu = await webserver();
+// Siden nu: arbejdsmappen eller, med --live, sitet. Siden før kommer altid fra tagget.
+const nu = LIVE ? { s: { close() {} }, url: SITE } : await webserver();
 const før = await webserver(TAG);
+if (LIVE) console.log(`Siden nu: ${SITE} (GitHub Pages kan være op til 10 minutter om at vise den nye udgave)`);
 
 const port = 9600 + Math.floor(Math.random() * 90);
 const profil = mkdtempSync(join(tmpdir(), 'tjek-crowhurst-'));
@@ -98,6 +105,8 @@ const send = (method, params = {}, sessionId) => new Promise((r, x) => {
 
 let fejl = 0;
 let antal = 0;
+// Pixeltjek, der springes over med --live
+let sprunget = 0;
 const tjek = (ok, navn, detalje = '') => {
   antal++;
   if (!ok) fejl++;
@@ -309,11 +318,13 @@ try {
     }
   }
 
-  // 3. Pixel for pixel som tagget: ved 390 px alt undtagen crowhurst i fuld visning, ved 399 og 1280 px alt.
+  // 3. Pixel for pixel som tagget: ved 390 px alt undtagen crowhurst i fuld visning, ved 399 og 1280 px alt. Med --live
+  // tælles sammenligningerne kun, for sitet sammenlignes ikke med tagget.
   if (!INGEN_PIXEL) {
     for (const bredde of [390, 399, 1280]) {
       for (const side of SIDER) {
         for (const lang of ['da', 'en']) {
+          if (LIVE) { sprunget++; continue; }
           const klar = async (s) => { if (side === KORT) { await s.kortKlar(); await vent(200); } };
           const d = await somFør(bredde, `${før.url}${side}?lang=${lang}`, `${nu.url}${side}?lang=${lang}`, klar, `${side} på ${lang}`);
           tjek(!d, `${side} ved ${bredde} px på ${lang}: som før`, d);
@@ -327,12 +338,14 @@ try {
       for (const id of ider) {
         for (const visning of ['fuld', 'kompakt']) {
           if (bredde === 390 && id === ID && visning === 'fuld') continue;
+          if (LIVE) { sprunget++; continue; }
           const vis = async (t) => { await t.kortKlar(); await t.visKort(id, visning); };
           const d = await somFør(bredde, `${før.url}${KORT}`, `${nu.url}${KORT}`, vis, `Kortet ${id}, ${visning}`);
           tjek(!d, `Kortet ${id}, ${visning}, ved ${bredde} px: som før`, d);
         }
       }
     }
+    if (LIVE) console.log(`SPRUNGET OVER med --live: pixelsammenligningen med ${TAG} (${sprunget} tjek ved 390, 399 og 1280 px), for den giver kun mening lokalt.`);
   }
 
   if (BILLEDER) {
@@ -352,5 +365,6 @@ try {
   await vent(300);
   try { rmSync(profil, { recursive: true, force: true }); } catch {}
 }
-console.log(fejl ? `${fejl} FEJL ud af ${antal} tjek` : `Alt i orden: ${antal} tjek`);
+const live = LIVE ? ` på ${SITE}; ${sprunget} pixeltjek sprunget over` : '';
+console.log(fejl ? `${fejl} FEJL ud af ${antal} tjek${live}` : `Alt i orden: ${antal} tjek${live}`);
 process.exit(fejl ? 1 : 0);
