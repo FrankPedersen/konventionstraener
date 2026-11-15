@@ -4,7 +4,9 @@ Kør fra repoets rod:  python3 tools/tjek_makker2_markeringer.py
 
 Makker 2 spiller markeringerne som Bridgesystem og Kompendium over modspilsaftaler: lavt kort = kald, højt kort =
 afvisning, og lavt kort = lige antal, højt kort = ulige (lavt-højt = lige, højt-lavt = ulige). Lavinthal er uændret.
-Testen læser Makker 2-dokumentet og Mine makkeraftaler og sammenligner resten af dokumentet med tagget før ændringen.
+Franks tre ekstra rettelser samme dag: Multi-svaret 2♠ i B2, "et overstik" i Bilag E2 og top af intet fra to kort i
+grundreglen i afsnit 19. Testen læser Makker 2-dokumentet og Mine makkeraftaler, og dokumentet skal være tagget før
+ændringen med præcis de aftalte rettelser.
 """
 import html
 import pathlib
@@ -42,7 +44,8 @@ def tjek(betingelse, besked):
 
 a19 = tekst(afsnit(DOK, 'afsnit-19', 'afsnit-20'))
 attitude = a19[a19.index('Attitude — kald og afvisning'):a19.index('Rangorden')]
-rangorden = a19[a19.index('Rangorden'):a19.index('Reglen om 11')]
+rangorden = a19[a19.index('Rangorden'):a19.index('Reglen om 11', a19.index('Rangorden'))]  # "Reglen om 11" står også før
+tjek('2. Count (antal)' in rangorden, 'Rangorden blev ikke fundet')
 
 # 1. Attitude: reglen, tabellen og noten
 tjek('Lavt kort = kald (»fortsæt«), højt kort = afvisning (»skift«)' in attitude, 'reglen i Attitude')
@@ -62,16 +65,41 @@ for gammel in ('højt kort = kald', 'lavt kort = afvisning', 'højt-lavt = lige'
                'afvisning fra 9-8-6', 'højt kort (fx 8 fra 8-3-2) kald', 'lavt kort (fx 2 fra 8-3-2) afvisning'):
     tjek(gammel not in hele, f'den gamle retning står stadig: {gammel}')
 
-# 4. Uændret uden for afsnit 19, og Lavinthal tegn for tegn som i tagget
-start, slut = DOK.index('id="afsnit-19"'), DOK.index('id="afsnit-20"')
-start_f, slut_f = FOER.index('id="afsnit-19"'), FOER.index('id="afsnit-20"')
-tjek(DOK[:start] == FOER[:start_f], 'dokumentet før afsnit 19 er ændret')
-tjek(DOK[slut:] == FOER[slut_f:], 'dokumentet efter afsnit 19 (fra Lavinthal) er ændret')
-tjek(afsnit(DOK, 'afsnit-20', 'bilag-a') == afsnit(FOER, 'afsnit-20', 'bilag-a'), 'Lavinthal (afsnit 20) er ændret')
-uden_attitude = lambda d: re.sub(r'Attitude — kald og afvisning.*?Reglen om 11', '', tekst(afsnit(d, 'afsnit-19', 'afsnit-20')))
-tjek(uden_attitude(DOK) == uden_attitude(FOER), 'afsnit 19 er ændret uden for Attitude og Rangorden')
+# 4. Franks tre ekstra rettelser
+tjek('2. højeste fra en svag farve uden honnør; fra to kort spilles det højeste (»top af intet«)' in a19, 'grundreglen i afsnit 19')
+b2 = tekst(afsnit(DOK, 'afsnit-b2', 'afsnit-b3'))
+tjek('Pas eller ret den anden vej, med hjertertolerance: pas med spar, ret til 3 ♥ med hjerter.' in b2, 'Multi-svaret 2♠ i B2')
+tjek('bruges med længere spar end hjerter' not in b2, 'det gamle Multi-svar 2♠ står stadig i B2')
+tjek('vejer tungere end et overstik (1 imp)' in tekst(DOK) and 'fire overstik' not in DOK, 'Bilag E2: et overstik')
 
-# 5. Mine makkeraftaler: rækken Markering
+# 5. Dokumentet er tagget med præcis de aftalte rettelser; resten, også Lavinthal og B4, er tegn for tegn som før
+RETTELSER = [
+    ('<strong>Højt kort =\nkald</strong> (»fortsæt«), <strong>lavt kort = afvisning</strong>',
+     '<strong>Lavt kort =\nkald</strong> (»fortsæt«), <strong>højt kort = afvisning</strong>'),
+    ('<strong>Højt kort (fx 8 fra 8-3-2)</strong>', '<strong>¤1</strong>'),
+    ('<strong>Lavt kort (fx 2 fra 8-3-2)</strong>', '<strong>Højt kort (fx 8 fra 8-3-2)</strong>'),
+    ('<strong>¤1</strong>', '<strong>Lavt kort (fx 2 fra 8-3-2)</strong>'),
+    ('6’er kan være et kald fra 6-4-3 og en afvisning fra 9-8-6.', '6’er kan være en afvisning fra 6-4-3 og et kald fra 9-8-6.'),
+    ('<strong>højt-lavt = lige antal</strong>,\n<strong>lavt-højt = ulige antal</strong>',
+     '<strong>lavt kort = lige antal</strong> (lavt-højt),\n<strong>højt kort = ulige antal</strong> (højt-lavt)'),
+    ('fra en svag farve uden honnør (»top af\nintet«).', 'fra en svag farve uden honnør; fra to kort\nspilles det højeste (»top af intet«).'),
+    ('vejer tungere end fire overstik (1 imp).', 'vejer tungere end et overstik (1 imp).'),
+]
+forventet = FOER.replace('\r\n', '\n')
+for gammel, ny in RETTELSER:
+    tjek(forventet.count(gammel) == 1, f'rettelsen passer ikke til tagget: {gammel[:50]}')
+    forventet = forventet.replace(gammel, ny)
+gammel_2s = 'Pas-eller-ret den anden vej — bruges med længere spar end\nhjerter</td>'
+tjek(forventet.count(gammel_2s) == 2, 'Multi-svaret 2♠ står i B2 og B4 i tagget')
+i = forventet.index(gammel_2s, forventet.index('id="afsnit-b2"'))
+tjek(i < forventet.index('id="afsnit-b3"'), 'det første Multi-svar 2♠ efter B2 står i B2')
+forventet = (forventet[:i] + 'Pas eller ret den anden vej, med hjertertolerance: pas med spar, ret til\n'
+             '3<span style="color:#c62828">♥</span> med hjerter.</td>' + forventet[i + len(gammel_2s):])
+tjek(DOK.replace('\r\n', '\n') == forventet, 'dokumentet er ændret ud over de aftalte rettelser')
+tjek(afsnit(DOK, 'afsnit-20', 'bilag-a') == afsnit(FOER, 'afsnit-20', 'bilag-a'), 'Lavinthal (afsnit 20) er ændret')
+tjek(afsnit(DOK, 'afsnit-b4', 'bilag-c') == afsnit(FOER, 'afsnit-b4', 'bilag-c'), 'B4 er ændret')
+
+# 6. Mine makkeraftaler: rækken Markering
 række = re.search(r'<tr><td data-en="Signals">Markering</td>.*?</tr>', AFTALER, re.S)
 tjek(række is not None, 'rækken Markering findes ikke på Mine makkeraftaler')
 if række:

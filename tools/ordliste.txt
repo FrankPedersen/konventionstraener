@@ -28,6 +28,7 @@ genmeld
 hjerterfarve
 hjerterhold
 hjertermelding
+hjertertolerance
 imp
 invit
 invitten
