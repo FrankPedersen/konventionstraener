@@ -4,8 +4,8 @@ Kør fra repoets rod:  python3 tools/tjek_makker2_markeringer.py
 
 Makker 2 spiller markeringerne som Bridgesystem og Kompendium over modspilsaftaler: lavt kort = kald, højt kort =
 afvisning, og lavt kort = lige antal, højt kort = ulige (lavt-højt = lige, højt-lavt = ulige). Lavinthal er uændret.
-Franks tre ekstra rettelser samme dag: Multi-svaret 2♠ i B2, "et overstik" i Bilag E2 og top af intet fra to kort i
-grundreglen i afsnit 19. Testen læser Makker 2-dokumentet og Mine makkeraftaler, og dokumentet skal være tagget før
+Franks tre ekstra rettelser samme dag: Multi-svaret 2♠ i B2 (og før fletningen også i B4), "et overstik" i Bilag E2 og
+top af intet fra to kort i grundreglen i afsnit 19. Testen læser Makker 2-dokumentet og Mine makkeraftaler, og dokumentet skal være tagget før
 ændringen med præcis de aftalte rettelser.
 """
 import html
@@ -70,9 +70,12 @@ tjek('2. højeste fra en svag farve uden honnør; fra to kort spilles det højes
 b2 = tekst(afsnit(DOK, 'afsnit-b2', 'afsnit-b3'))
 tjek('Pas eller ret den anden vej, med hjertertolerance: pas med spar, ret til 3 ♥ med hjerter.' in b2, 'Multi-svaret 2♠ i B2')
 tjek('bruges med længere spar end hjerter' not in b2, 'det gamle Multi-svar 2♠ står stadig i B2')
+b4 = tekst(afsnit(DOK, 'afsnit-b4', 'bilag-c'))
+tjek('Pas eller ret den anden vej, med hjertertolerance: pas med spar, ret til 3 ♥ med hjerter.' in b4, 'Multi-svaret 2♠ i B4')
+tjek('bruges med længere spar end hjerter' not in tekst(DOK), 'det gamle Multi-svar 2♠ står stadig i dokumentet')
 tjek('vejer tungere end et overstik (1 imp)' in tekst(DOK) and 'fire overstik' not in DOK, 'Bilag E2: et overstik')
 
-# 5. Dokumentet er tagget med præcis de aftalte rettelser; resten, også Lavinthal og B4, er tegn for tegn som før
+# 5. Dokumentet er tagget med præcis de aftalte rettelser; resten, også Lavinthal, er tegn for tegn som før
 RETTELSER = [
     ('<strong>Højt kort =\nkald</strong> (»fortsæt«), <strong>lavt kort = afvisning</strong>',
      '<strong>Lavt kort =\nkald</strong> (»fortsæt«), <strong>højt kort = afvisning</strong>'),
@@ -91,13 +94,12 @@ for gammel, ny in RETTELSER:
     forventet = forventet.replace(gammel, ny)
 gammel_2s = 'Pas-eller-ret den anden vej — bruges med længere spar end\nhjerter</td>'
 tjek(forventet.count(gammel_2s) == 2, 'Multi-svaret 2♠ står i B2 og B4 i tagget')
-i = forventet.index(gammel_2s, forventet.index('id="afsnit-b2"'))
-tjek(i < forventet.index('id="afsnit-b3"'), 'det første Multi-svar 2♠ efter B2 står i B2')
-forventet = (forventet[:i] + 'Pas eller ret den anden vej, med hjertertolerance: pas med spar, ret til\n'
-             '3<span style="color:#c62828">♥</span> med hjerter.</td>' + forventet[i + len(gammel_2s):])
+tjek(forventet.index(gammel_2s) < forventet.index('id="afsnit-b3"') < forventet.index('id="afsnit-b4"')
+     < forventet.rindex(gammel_2s), 'Multi-svaret 2♠ står i B2 og B4')
+forventet = forventet.replace(gammel_2s, 'Pas eller ret den anden vej, med hjertertolerance: pas med spar, ret til\n'
+                              '3<span style="color:#c62828">♥</span> med hjerter.</td>')
 tjek(DOK.replace('\r\n', '\n') == forventet, 'dokumentet er ændret ud over de aftalte rettelser')
 tjek(afsnit(DOK, 'afsnit-20', 'bilag-a') == afsnit(FOER, 'afsnit-20', 'bilag-a'), 'Lavinthal (afsnit 20) er ændret')
-tjek(afsnit(DOK, 'afsnit-b4', 'bilag-c') == afsnit(FOER, 'afsnit-b4', 'bilag-c'), 'B4 er ændret')
 
 # 6. Mine makkeraftaler: rækken Markering
 række = re.search(r'<tr><td data-en="Signals">Markering</td>.*?</tr>', AFTALER, re.S)
