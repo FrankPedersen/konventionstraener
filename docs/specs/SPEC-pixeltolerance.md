@@ -17,10 +17,10 @@ Pixelsammenligningen i `tools/tjek_viden_320.mjs` og `tools/tjek_crowhurst_390.m
 
 ## Reglen
 
-1. **Loft over antal pixels, ikke over farvetrin.** En forskel på **højst 5 pixels i alt** i ét skærmbillede regnes som støj. Det gælder, uanset hvor meget farven afviger (et ♥ var 5 trin fra).
+1. **En pixel tæller kun, når den afviger mere end 5 farvetrin i mindst én kanal** (R, G eller B), og **højst 5 sådanne pixels** pr. skærmbillede regnes som støj (Franks valg (b) 15. nov. 2026 efter målingen i del 1; før stod der "loft over antal pixels, ikke over farvetrin" og højst 5 pixels i alt). Pixels, der afviger højst 5 trin, er altid støj, uanset hvor mange de er.
 2. **Støj** giver en NB-linje som i dag, med antal, område og element, og testen består.
 3. **Over loftet** gælder de tre forsøg i træk som nu. Er forskellen over loftet i alle tre forsøg, fejler testen med samme melding som i dag.
-4. Loftet står ét sted, som `LOFT = 5` i `tools/pixelstoej.mjs`, og begge scripts bruger modulet.
+4. Begge grænser står ét sted, som `TRIN = 5` og `LOFT = 5` i `tools/pixelstoej.mjs`, og begge scripts bruger modulet.
 
 ## Del 1: måling (før koden ændres)
 
@@ -32,9 +32,10 @@ Pixelsammenligningen i `tools/tjek_viden_320.mjs` og `tools/tjek_crowhurst_390.m
 ## Accepttest (skrives først, røde)
 
 1. **Enhedstest af `pixelstoej.mjs`:**
-   - 0–5 pixels er støj.
-   - 6 pixels er ikke støj.
-   - Loftet læses kun fra modulet.
+   - 0–5 tællende pixels er støj.
+   - 6 tællende pixels er ikke støj.
+   - 25 pixels med 1–5 trin er støj, og 6 pixels med 6 trin eller mere er ikke støj.
+   - Loftet og trinnet læses kun fra modulet.
 2. **Ægte ændring fanges:** I en midlertidig kopi af én side under `viden/` ændres ét ord i en overskrift. Begge scripts skal fejle ved 390 og 1280 px. Kopien rulles tilbage, og den kommer ikke i git.
 3. **Ingen falske fejl:** Begge scripts køres 5 gange i træk på grenen, uden andre ændringer end denne. De må ikke give FEJL. NB-linjer for støj er tilladt og noteres.
 4. **Uændret adfærd i øvrigt:** `--live` og `ingen` virker som før. Sammenligning af højde og vandret scroll fejler som før.
