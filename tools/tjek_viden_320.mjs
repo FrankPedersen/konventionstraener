@@ -1,5 +1,6 @@
 // Accepttest (SPEC-viden-320.md): siderne i viden/ har ingen vandret scroll ved 320 px, og ved 390 og 1280 px er de pixel
-// for pixel som før, undtagen crowhurst-kortet i fuld visning ved 390 px (SPEC-crowhurst-390.md, se ÆNDRET). Alle sider tjekkes på dansk og engelsk med <details> lukket og åbne, og alle konventionskort i deres
+// for pixel som før, undtagen crowhurst-kortet i fuld visning ved 390 px (SPEC-crowhurst-390.md, se ÆNDRET); Makker
+// 2-dokumentet sammenlignes med sin godkendte udgave fra SPEC-makker2-markeringer.md (se NYERE). Alle sider tjekkes på dansk og engelsk med <details> lukket og åbne, og alle konventionskort i deres
 // visninger; kortene står i en shadow root, så målingen går også derind. "Stikker ud" måles mod clientWidth: i mobilvisning
 // vokser innerWidth med det, der stikker ud, så en måling mod den aldrig ville fejle. Siden før vises fra tagget (filerne
 // læses med git show). Hver side åbnes i sin egen browserkontekst, som et nyt privat vindue: localStorage er tom, fanen er
@@ -20,6 +21,10 @@ import { fileURLToPath } from 'node:url';
 
 const ROD = fileURLToPath(new URL('..', import.meta.url));
 const TAG = 'v-foer-viden-320';
+// Filer, der bevidst er ændret efter tagget, sammenlignes med deres godkendte udgave i stedet. Makker 2-dokumentet fik
+// markeringerne rettet og tre rettelser mere (SPEC-makker2-markeringer.md, Franks afgørelse 15. november 2026); udgaven
+// i commit bca7e0c er den godkendte. Siderne henter de samme stilark og skrifter som før, og de kommer stadig fra tagget.
+const NYERE = { 'viden/2-over-1-makker2.html': 'bca7e0c446f14ebf86724675b336c9e7306f8303' };
 const INGEN_PIXEL = process.argv.includes('ingen');
 const LIVE = process.argv.includes('--live');
 const SITE = 'https://www.kontraktbridge.dk/konventionstraener/';
@@ -56,7 +61,7 @@ async function webserver(tag) {
     let indhold;
     if (tag) {
       if (!gemt.has(sti)) {
-        const r = spawnSync('git', ['show', `${tag}:${sti}`], { cwd: ROD, maxBuffer: 64 * 1024 * 1024 });
+        const r = spawnSync('git', ['show', `${NYERE[sti] ?? tag}:${sti}`], { cwd: ROD, maxBuffer: 64 * 1024 * 1024 });
         gemt.set(sti, r.status === 0 ? r.stdout : null);
       }
       indhold = gemt.get(sti);
