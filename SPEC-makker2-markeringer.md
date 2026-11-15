@@ -23,6 +23,7 @@ Makker 2-dokumentet (`viden/2-over-1-makker2.html`) har markeringerne forkert. M
 | `makkeraftaler.html` | rækken Markering i Forskelle mellem systemerne (dansk og engelsk) | andre rækker |
 | `tools/tjek_makker2_markeringer.py` | ny accepttest | |
 | `tools/ordliste.txt` | ordet hjertertolerance (fra B2), som hunspell ikke kender | andre ord |
+| `tools/tjek_viden_320.mjs` | Makker 2-dokumentet sammenlignes med sin godkendte udgave i stedet for tagget `v-foer-viden-320` (Franks valg før fletningen) | de andre siders og kortenes reference |
 | Konventionskortene, puljerne, `dealer/`, `markering.html`, Bridgesystem | intet: de følger Bridgesystem og bygger ikke på Makker 2's gamle retning | |
 
 ## Accepttest
@@ -51,4 +52,4 @@ Kørt 15. nov. 2026 på grenen: `python3 tools/tjek_makker2_markeringer.py`, `tj
 8. **B4 har samme Multi-række:** B4 (samlet pakke med Multi 2♦) havde "Pas-eller-ret den anden vej — bruges med længere spar end hjerter" for 2♠, ordret som B2. Frank besluttede før fletningen, at B4 får samme tekst som B2, og accepttesten kræver nu den nye tekst begge steder, og at den gamle ikke står nogen steder.
 9. **Stavekontrollen** kendte ikke hjertertolerance, som står i B2-teksten. Ordet er rigtigt og står nu i `tools/ordliste.txt` ved de andre hjerter-ord.
 10. **`tjek_viden_320.mjs` med pixelsammenligning** fejler for Makker 2-dokumentet ved 390 og 1280 px på dansk og engelsk, fordi teksten er ændret: forskellen ligger om de rettede linjer (fx "Lavt kort = kald"). Uden pixelsammenligning (`ingen`) er alle 568 tjek i orden, så der er ingen vandret scroll ved 320 px. Siderne i øvrigt og kortene var ens med tagget i den del, der nåede at køre.
-
+11. **Referencen for `tjek_viden_320.mjs` (Franks valg før fletningen):** testen sammenligner siderne ved 390 og 1280 px pixel for pixel med tagget `v-foer-viden-320` og fejlede for Makker 2-dokumentet, fordi teksten bevidst er ændret (punkt 10). Testen har nu en liste `NYERE` med filer, der sammenlignes med en nyere, godkendt udgave: `viden/2-over-1-makker2.html` hentes fra commit `bca7e0c` (grenens sidste ændring af dokumentet, med markeringerne, B2, B4, Bilag E2 og grundreglen), mens alle andre filer, også stilark og skrifter, stadig hentes fra tagget. Ændringen er én linje i webserveren (`git show ${NYERE[sti] ?? tag}:${sti}`) og en forklaring øverst i filen. Fletningen sker med `--no-ff`, så commit `bca7e0c` bliver i `main`s historik. Den fulde kørsel uden `ingen` er nu grøn: 791 tjek i orden, og Makker 2-dokumentet er ens med sin godkendte udgave ved 390 og 1280 px på dansk og engelsk (enkelte pixels' afrunding i første forsøg var ens i næste, som før).
