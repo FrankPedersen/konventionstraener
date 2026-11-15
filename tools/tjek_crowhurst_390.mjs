@@ -18,8 +18,14 @@ import { tmpdir } from 'node:os';
 import { extname, join, normalize } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import { LOFT, TRIN, erStøj } from './pixelstoej.mjs';
+
 const ROD = fileURLToPath(new URL('..', import.meta.url));
 const TAG = 'v-foer-crowhurst-390';
+// Filer, der bevidst er ændret efter tagget, sammenlignes med deres godkendte udgave i stedet, som i tjek_viden_320.mjs:
+// Makker 2-dokumentet fik markeringerne rettet og tre rettelser mere (SPEC-makker2-markeringer.md), og udgaven i commit
+// bca7e0c er den godkendte (Franks valg 15. november 2026, SPEC-pixeltolerance.md). Alt andet kommer fra tagget.
+const NYERE = { 'viden/2-over-1-makker2.html': 'bca7e0c446f14ebf86724675b336c9e7306f8303' };
 const INGEN_PIXEL = process.argv.includes('ingen');
 const LIVE = process.argv.includes('--live');
 const SITE = 'https://www.kontraktbridge.dk/konventionstraener/';
@@ -55,7 +61,7 @@ async function webserver(tag) {
     let indhold;
     if (tag) {
       if (!gemt.has(sti)) {
-        const r = spawnSync('git', ['show', `${tag}:${sti}`], { cwd: ROD, maxBuffer: 64 * 1024 * 1024 });
+        const r = spawnSync('git', ['show', `${NYERE[sti] ?? tag}:${sti}`], { cwd: ROD, maxBuffer: 64 * 1024 * 1024 });
         gemt.set(sti, r.status === 0 ? r.stdout : null);
       }
       indhold = gemt.get(sti);
@@ -208,44 +214,67 @@ async function sammenlign(bredde, urlFør, urlNu, forbered = async () => {}) {
 
 /** En forskel skal være der i tre forsøg i træk, hvert med nye kontekster; Chrome tegner en sjælden gang én pixel anderledes. */
 async function somFør(bredde, urlFør, urlNu, forbered, navn) {
-  const støj = [];
+  const forsøgene = [];
   for (let forsøg = 1; forsøg <= 3; forsøg++) {
     const d = await sammenlign(bredde, urlFør, urlNu, forbered);
-    if (!d) {
-      for (const s of støj) console.log(`NB ${navn} ved ${bredde} px: ${s}, ens i forsøg ${forsøg}`);
+    if (erStøj(d.n)) {
+      const slut = d.alle ? `støj i forsøg ${forsøg}` : `ens i forsøg ${forsøg}`;
+      for (const f of forsøgene) console.log(`NB ${navn} ved ${bredde} px: ${f}, ${slut}`);
+      if (d.alle) console.log(`NB ${navn} ved ${bredde} px: forsøg ${forsøg}: ${d.tekst} – støj (højst ${LOFT} pixels over ${TRIN} trin)`);
       return '';
     }
-    støj.push(`forsøg ${forsøg}: ${d}`);
+    forsøgene.push(`forsøg ${forsøg}: ${d.tekst}`);
   }
-  return `forskellig i tre forsøg i træk; ${støj.join('; ')}`;
+  return `forskellig i tre forsøg i træk; ${forsøgene.join('; ')}`;
 }
 
 async function forskel(a, b, side) {
-  if (a.h !== b.h) return `højden er ${b.h} px, før ${a.h} px`;
+  if (a.h !== b.h) return { n: Infinity, alle: Infinity, tekst: `højden er ${b.h} px, før ${a.h} px` };
+  let n = 0, alle = 0;
+  const områder = [];
+  let første = '';
   for (let i = 0; i < a.bidder.length; i++) {
     if (a.bidder[i] === b.bidder[i]) continue;
+    // En pixel tæller, når den afviger mere end TRIN farvetrin i én kanal (tools/pixelstoej.mjs); området og det første
+    // element gælder de tællende pixels, eller alle forskellige, når ingen tæller.
     const d = await side.kør(`(async () => {${FÆLLES}
       const læs = (d) => new Promise((ok) => { const i = new Image(); i.onload = () => ok(i); i.src = 'data:image/png;base64,' + d; });
       const [x, y] = await Promise.all([læs(${JSON.stringify(a.bidder[i])}), læs(${JSON.stringify(b.bidder[i])})]);
       const px = (i) => { const c = new OffscreenCanvas(i.width, i.height); const g = c.getContext('2d'); g.drawImage(i, 0, 0); return g.getImageData(0, 0, i.width, i.height).data; };
       const p = px(x), q = px(y);
-      let n = 0, x0 = 1e9, y0 = 1e9, x1 = -1, y1 = -1, først = '';
+      const fund = { n: 0, alle: 0 };
+      const felt = () => ({ x0: 1e9, y0: 1e9, x1: -1, y1: -1, først: '' });
+      const tællende = felt(), forskellige = felt();
+      const med = (f, k, u, v) => {
+        if (!f.først) f.først = [p[k], p[k + 1], p[k + 2]].join('.') + ' før, ' + [q[k], q[k + 1], q[k + 2]].join('.') + ' nu';
+        f.x0 = Math.min(f.x0, u); f.y0 = Math.min(f.y0, v); f.x1 = Math.max(f.x1, u); f.y1 = Math.max(f.y1, v);
+      };
       for (let k = 0; k < p.length; k += 4) {
-        if (p[k] === q[k] && p[k + 1] === q[k + 1] && p[k + 2] === q[k + 2]) continue;
+        const afvigelse = Math.max(Math.abs(p[k] - q[k]), Math.abs(p[k + 1] - q[k + 1]), Math.abs(p[k + 2] - q[k + 2]));
+        if (!afvigelse) continue;
         const u = (k / 4) % x.width, v = Math.floor(k / 4 / x.width) + ${i * 6000};
-        if (!n) først = [p[k], p[k + 1], p[k + 2]].join('.') + ' før, ' + [q[k], q[k + 1], q[k + 2]].join('.') + ' nu';
-        n++; x0 = Math.min(x0, u); y0 = Math.min(y0, v); x1 = Math.max(x1, u); y1 = Math.max(y1, v);
+        fund.alle++; med(forskellige, k, u, v);
+        if (afvigelse > ${TRIN}) { fund.n++; med(tællende, k, u, v); }
       }
-      if (!n) return '';
-      scrollTo(0, Math.max(0, y0 - 200));
-      let e = document.elementFromPoint(x0, y0 - scrollY);
-      while (e?.shadowRoot) { const f = e.shadowRoot.elementFromPoint(x0, y0 - scrollY); if (!f || f === e) break; e = f; }
+      if (!fund.alle) return null;
+      const f = fund.n ? tællende : forskellige;
+      // Elementet ved den første forskel, også inde i en shadow root.
+      scrollTo(0, Math.max(0, f.y0 - 200));
+      let e = document.elementFromPoint(f.x0, f.y0 - scrollY);
+      while (e?.shadowRoot) { const g = e.shadowRoot.elementFromPoint(f.x0, f.y0 - scrollY); if (!g || g === e) break; e = g; }
       const om = e ? navn(e) + ' "' + (e.textContent || '').trim().slice(0, 30) + '"' : '?';
-      return n + ' pixels er forskellige i ' + x0 + ',' + y0 + '–' + x1 + ',' + y1 + ' (' + først + '; ' + om + ')';
+      return { n: fund.n, alle: fund.alle, område: f.x0 + ',' + f.y0 + '–' + f.x1 + ',' + f.y1, først: f.først + '; ' + om };
     })()`);
-    if (d) return d;
+    if (!d) continue;
+    n += d.n;
+    alle += d.alle;
+    områder.push(d.område);
+    if (!første) første = d.først;
   }
-  return '';
+  // Tallene gælder hele skærmbilledet (alle bidder), så loftet gælder billedet, ikke én bid.
+  return alle
+    ? { n, alle, tekst: `${n} pixels over ${TRIN} trin, ${alle} forskellige i alt, i ${områder.join(' og ')} (${første})` }
+    : { n: 0, alle: 0, tekst: '' };
 }
 
 /**
