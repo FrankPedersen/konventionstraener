@@ -42,6 +42,47 @@ Pixelsammenligningen i `tools/tjek_viden_320.mjs` og `tools/tjek_crowhurst_390.m
 
 ## Afklaret
 
+### Efter Franks valg (b), 15.–17. nov. 2026
+
+**Bygget og stoppet før merge.** Frank valgte (b) 15. nov.: en pixel tæller kun, når den afviger mere end 5 farvetrin i mindst én kanal, og højst 5 tællende pixels pr. skærmbillede er støj. `tjek_crowhurst_390.mjs` skulle have samme reference til Makker 2-dokumentet som `tjek_viden_320.mjs`. Reglen og accepttest 1 ovenfor er rettet.
+
+1. **Commits på `pixeltolerance`:** `88d0971` (Reglen og enhedstesten, rød), `0d051bf` (modulet, de to scripts, referencen og én linje i `CLAUDE.md`) og denne Afklaret. Intet er pushet.
+2. **Koden:** `tools/pixelstoej.mjs` har `TRIN = 5` og `LOFT = 5` og funktionerne `tæller(før, nu)`, `erStøj(pixels)` og `afgør(forskelle)`. I begge scripts tæller `forskel` alle forskellige pixels og de tællende (over `TRIN` i én kanal) i hele skærmbilledet (alle bidder), og `somFør` lader en forskel med højst `LOFT` tællende pixels passere med en NB-linje ("… N pixels over 5 trin, M forskellige i alt, i område (farve; element) – støj (højst 5 pixels over 5 trin)"). Over loftet gælder de tre forsøg som før, og en forskel i højden er aldrig støj. `tjek_crowhurst_390.mjs` har fået `NYERE`, så Makker 2-dokumentet sammenlignes med commit `bca7e0c` (tagget er det samme). Tal for loft og trin står kun i modulet.
+3. **Accepttest 1 (enhedstesten):** `node --test tools/pixelstoej.test.mjs` var rød, før modulet fandtes, og gav derefter 1 fejl ("loftet og trinnet læses kun fra modulet"), til scripts brugte modulet. Nu er alle 7 tests grønne: grænserne er 5 og 5, en pixel tæller kun over 5 trin, 0–5 tællende pixels er støj, 6 og derover og en forskel i højden er ikke, 25 pixels med 1–5 trin er støj, 6 pixels med 6–229 trin er ikke støj (og 5 af dem sammen med 25 svage er), og loft og trin står kun i modulet.
+4. **Accepttest 2 og 4 (ægte ændringer), 15. nov.:** tre sider blev ændret midlertidigt i arbejdsmappen: ét ord i en overskrift i `viden/bridgesystem.html` ("2.2 Sansåbninger" → "2.2 Sansmeldinger"), en ekstra linje i `viden/forslag-2klor-kontrolsvar.html` og en 700 px bred blok i `viden/kampen-om-kontrakten.html`. `tjek_viden_320.mjs` gav 28 FEJL og `tjek_crowhurst_390.mjs` 18:
+   - ordet i overskriften: FEJL "som før" ved 390 og 1280 px (og 399 px i `tjek_crowhurst_390`) på dansk og engelsk, med 1472–1482 pixels over 5 trin;
+   - den ekstra linje: FEJL "højden er …, før …" ved alle bredder;
+   - den brede blok: FEJL "ingen vandret scroll" ved 320, 340, 360 og 375 px, lukket og foldet ud, og FEJL på højden ved 390 og 1280 px.
+   Ændringerne er rullet tilbage med `git checkout`, og arbejdsmappen var ren bagefter; de kom aldrig i git.
+5. **Accepttest 3 (ingen falske fejl):** 12 kørsler af begge scripts på en ren arbejdsmappe på `0d051bf`, de to scripts samtidig i hver kørsel.
+
+   | Kørsel | `tjek_viden_320` | `tjek_crowhurst_390` |
+   | --- | --- | --- |
+   | 1 | i orden, 2 NB | i orden, 8 NB |
+   | 2 | 1 FEJL: "Kortene kom ikke frem" (stoppet efter 611 af 791 tjek) | 1 FEJL: "Runtime.evaluate svarede ikke inden for 60 s" (183 af 418) |
+   | 3 | i orden, 9 NB | i orden, 19 NB |
+   | 4 | i orden, 4 NB | i orden, 17 NB |
+   | 5 | i orden, 13 NB | i orden, 16 NB |
+   | 6 | i orden, 9 NB | i orden, 21 NB |
+   | 7 | 1 FEJL: "Emulation.setEmulatedMedia svarede ikke inden for 60 s" (588 af 791) | 1 FEJL: "Target.createTarget svarede ikke inden for 60 s" (133 af 418) |
+   | 8 | i orden, 9 NB | i orden, 15 NB |
+   | 9 | i orden, 7 NB | i orden, 13 NB |
+   | 10 | i orden, 9 NB | i orden, 14 NB |
+   | 11 | i orden, 3 NB | i orden, 7 NB |
+   | 12 | i orden, 5 NB | i orden, 15 NB |
+
+   - **Kørsel 8–12 er fem i træk uden FEJL** (17. nov. kl. 05:24–06:31 UTC på en stille maskine). Det opfylder accepttest 3.
+   - **Ingen kørsel har haft FEJL på pixels.** De to afbrudte kørsler stoppede, fordi browseren ikke svarede inden for 60 s: kørsel 2, mens Modspil-agenten i Fordelingstræneren kørte tunge tests (15. nov. 17:41–17:48 UTC), og kørsel 7, mens maskinen sov (15. nov. 22:16 til 16. nov. 12:21 UTC). Begge stoppede, før de nåede alle tjek, og derfor står de som FEJL ("testen kørte færdig").
+   - **NB-linjerne:** 221 i alle kørsler. 210 har 0 tællende pixels (kun forskelle på højst 5 trin), 10 har 1 tællende pixel og 1 har 2. Den største forskel i én NB-linje er 48 pixels i alt. Ingen sammenligning skulle prøves igen: al støj lå under loftet i første forsøg. De enkelte tællende pixels ligger mest i Makker 2-dokumentet ved 1280 px.
+6. **Accepttest 4 (uændret adfærd i øvrigt):** `--live` gav 568 tjek i orden mod www.kontraktbridge.dk/konventionstraener/ i `tjek_viden_320` og 83 i `tjek_crowhurst_390` (223 og 335 pixeltjek sprunget over som før), og `ingen` gav 568 og 80 tjek i orden uden NB-linjer. Højden og vandret scroll fejler som før (punkt 4).
+7. **Fundet undervejs:** de to scripts' egne tidsgrænser (60 s pr. kald til browseren) kan give FEJL, når maskinen er travl eller sover. Det er ikke en pixelforskel og er uændret af denne spec; testene bør køres alene.
+8. **Tokenforbrug** (nye input, skrevet til cachen, læst fra cachen og output; fra Claude Codes logfil for sessionen; et svar hører til den opgave, der var i gang på dets tidspunkt):
+   - Bygningen og starten af accepttestene efter Franks valg (15. nov. 15:52–17:33 UTC): 12 svar; nye input 22, skrevet til cachen 813.344, læst fra cachen 7.505.745, output 16.043; i alt 8.335.154
+   - Koordineringen af kørslerne og status i `SYSTEM.md` for både pixeltolerance og Modspil (15. nov. 17:45 til 17. nov. 06:31 UTC; mest gentagelserne af accepttest 3): 20 svar; nye input 44, skrevet til cachen 915.218, læst fra cachen 15.560.184, output 14.493; i alt 16.489.939
+   - Selve kørslerne brugte ingen tokens. Denne Afklaret er skrevet bagefter og er ikke med i tallene.
+
+### Del 1 (målingen, 15. nov. 2026)
+
 **Målingen viser, at loftet på 5 pixels ikke holder. Arbejdet er stoppet efter del 1, før koden ændres (del 1, punkt 4); loftet skal besluttes på ny.** Grenen `pixeltolerance` (tag før: `v-foer-pixeltolerance`) har kun specen og enhedstesten, som er rød; `tools/pixelstoej.mjs` og ændringen i de to scripts er skrevet, men ikke lagt i repoet.
 
 1. **Sådan er der målt (15. nov. 2026, 13:03–14:59 UTC):** hvert script er kopieret til en målekopi uden for repoet, der kun adskiller sig ved, at siden nu og siden før begge hentes fra scriptets reference (`v-foer-viden-320` med Makker 2-dokumentet fra `NYERE`, og `v-foer-crowhurst-390`), at vandret scroll springes over, og at hver sammenligning tages én gang pr. runde uden de tre forsøg. Skærmbillederne tages som i scripts (samme Chrome-flag, egne kontekster, bidder på 6000 px). For hver forskel er antallet af forskellige pixels talt i hele skærmbilledet (alle bidder) og det største farvetrin i én kanal (R, G eller B). 10 runder i hvert script: 2230 sammenligninger i `tjek_viden_320.mjs` (223 pr. runde ved 390 og 1280 px) og 3350 i `tjek_crowhurst_390.mjs` (335 pr. runde ved 390, 399 og 1280 px). De to målinger kørte samtidig (runde 1–10 i `tjek_viden_320` og runde 1–7 i `tjek_crowhurst_390`); runde 8–10 i `tjek_crowhurst_390` kørte alene og havde også forskelle over 5 pixels (8 og 6).
