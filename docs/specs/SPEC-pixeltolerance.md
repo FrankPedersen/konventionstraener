@@ -1,6 +1,6 @@
 # SPEC – Pixeltolerance i tjek_viden_320 og tjek_crowhurst_390
 
-15. november 2026 · Konventionstræner · opgave S i `PLAN-aabne-opgaver.md` · gren `pixeltolerance`, tag før: `v-foer-pixeltolerance`.
+15. november 2026 · Konventionstræner · opgave S i `PLAN-aabne-opgaver.md` · gren `pixeltolerance`, tag før: `v-foer-pixeltolerance`. Godkendt af Frank og udgivet 17. november 2026 (`56e1613`); grenen er slettet.
 
 ## Formål
 
@@ -80,6 +80,7 @@ Pixelsammenligningen i `tools/tjek_viden_320.mjs` og `tools/tjek_crowhurst_390.m
    - Bygningen og starten af accepttestene efter Franks valg (15. nov. 15:52–17:33 UTC): 12 svar; nye input 22, skrevet til cachen 813.344, læst fra cachen 7.505.745, output 16.043; i alt 8.335.154
    - Koordineringen af kørslerne og status i `SYSTEM.md` for både pixeltolerance og Modspil (15. nov. 17:45 til 17. nov. 06:31 UTC; mest gentagelserne af accepttest 3): 20 svar; nye input 44, skrevet til cachen 915.218, læst fra cachen 15.560.184, output 14.493; i alt 16.489.939
    - Selve kørslerne brugte ingen tokens. Denne Afklaret er skrevet bagefter og er ikke med i tallene.
+9. **Udgivet 17. nov. 2026:** Frank godkendte ændringen. Enhedstesten var grøn (7 tests) på grenen og igen på `main` efter fletningen. `pixeltolerance` er flettet til `main` med `--no-ff` (`56e1613`) og pushet sammen med tagget `v-foer-pixeltolerance`, og GitHub Pages har bygget `56e1613` (06:48 UTC). Live-tjekkene mod www.kontraktbridge.dk/konventionstraener/, kørt én ad gangen: `tjek_viden_320.mjs --live` gav "Alt i orden: 568 tjek" (223 pixeltjek sprunget over), og `tjek_crowhurst_390.mjs --live` gav "Alt i orden: 83 tjek" (335 pixeltjek sprunget over), begge uden FEJL og som før ændringen. Grenen `pixeltolerance` er slettet lokalt; den lå aldrig på GitHub.
 
 ### Del 1 (målingen, 15. nov. 2026)
 
