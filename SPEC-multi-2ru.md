@@ -301,8 +301,8 @@ Desuden åbnes `traener.html?k=multi-2ru` via en lokal webserver på dansk og en
 
 Arbejdet deles i tre korte sessioner (Styring, punkt 7 og 8 i `PLAN-aabne-opgaver.md`). Ingen session venter på en anden.
 
-1. **Session 1:** Tag og gren. Skriv `tools/tjek_multi_2ru.py`, og vis, at den er rød. Skriv konventionskortet, og kør kortets tjek. Stop og rapportér.
-2. **Session 2:**
+1. **Session 1 (Opus):** Tag og gren. Skriv `tools/tjek_multi_2ru.py`, og vis, at den er rød. Skriv konventionskortet, og kør kortets tjek. Stop og rapportér.
+2. **Session 2 (Opus):**
    - Skriv `dealer/multi_2ru.py` efter reglerne og grænserne.
    - Tilføj modulet i `build_pools.py`.
    - Kør `python build_pools.py multi-2ru`.
@@ -310,9 +310,9 @@ Arbejdet deles i tre korte sessioner (Styring, punkt 7 og 8 i `PLAN-aabne-opgave
    - Byg kortsiden.
    - Kør `tools/tjek_multi_2ru.py`, til den er grøn.
    - Stop og rapportér. Hvis en grænse ikke kan give nok hænder, eller et eksempel kræver en anden grænse, stopper sessionen og spørger i stedet for at vælge selv.
-3. **Session 3:** Hele testsuiten én gang i forgrunden, i en ny session. Tag skærmbillederne, stop før fletning, og rapportér med tokenforbruget.
+3. **Session 3 (Sonnet, `/model`):** Hele testsuiten én gang i forgrunden, i en ny session. Tag skærmbillederne, stop før fletning, og rapportér med tokenforbruget.
 
-Efter Franks "godkendt": flet, push, live-tjek af `www.kontraktbridge.dk/konventionstraener/traener.html?k=multi-2ru`, arkivér specen i `docs/specs/` med en linje i `README.md`, og slet grenen.
+Efter Franks "godkendt" (Sonnet): flet, push, live-tjek af `www.kontraktbridge.dk/konventionstraener/traener.html?k=multi-2ru`, arkivér specen i `docs/specs/` med en linje i `README.md`, og slet grenen.
 
 ## Afklaret
 
