@@ -404,3 +404,9 @@ Tal står kun, når kilderne giver dem: 5–10 hp og W's tal. Grænserne fra gen
 - Session 2:
 - Session 3:
 - Efter godkendelsen:
+
+### Franks svar, 21. nov. 2026
+
+Ordret fra Franks besked til session 2:
+
+> "Læs SPEC-multi-2ru.md, og lav session 2. Svar på dine fire spørgsmål (Franks valg): (1) tjek_viden_320.mjs og tjek_crowhurst_390.mjs må rettes fra 49 til 50 kort; det nye kort multi-2ru tjekkes kun for vandret scroll, og de 49 andre sammenlignes med tagget som før. (2) Ja: over modpartens 4♥ er 4♠ 4+ spar og 7+ hp uden krav til hjerter. (3) Skriv 'Ekren' som på Crowhurst-kortet, og fjern 'ekrens' fra ordlisten. (4) Kortet får linjen '2♦ er kunstig og alerteres.' under Meldinger. Tag desuden én småting med: i assets/footer.js kommer Modspil med under 'Trænere' lige efter Håndevaluering, med link('/fordelingstraeneren/#modspil', 'Modspil', 'Defence'); kør node tools/tjek_sidefod.mjs bagefter. Stop derefter, og rapportér med tokenforbruget i fire tal."
