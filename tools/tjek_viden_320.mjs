@@ -4,7 +4,9 @@
 // visninger; kortene står i en shadow root, så målingen går også derind. "Stikker ud" måles mod clientWidth: i mobilvisning
 // vokser innerWidth med det, der stikker ud, så en måling mod den aldrig ville fejle. Siden før vises fra tagget (filerne
 // læses med git show). Hver side åbnes i sin egen browserkontekst, som et nyt privat vindue: localStorage er tom, fanen er
-// den eneste i sit vindue, og der skiftes aldrig fane, så intet afhænger af, hvad testen viste før. Med --live åbnes
+// den eneste i sit vindue, og der skiftes aldrig fane, så intet afhænger af, hvad testen viste før. Kortet multi-2ru
+// (SPEC-multi-2ru.md) er kommet til efter tagget og tjekkes kun for vandret scroll, også ved 390 og 1280 px (se NYE_KORT);
+// de 49 kort fra tagget sammenlignes med tagget som før. Med --live åbnes
 // siderne og kortene på www.kontraktbridge.dk/konventionstraener/, og pixelsammenligningen med tagget, der kun giver
 // mening lokalt, springes over (SPEC-tjek-live.md). Kræver Node 22+, git og Chrome eller Edge.
 //
@@ -37,6 +39,9 @@ const SMALLE = [320, 340, 360, 375];
 // Crowhurst-kortet i fuld visning ændres bevidst ved 390 px (chippen brækker under 399 px, SPEC-crowhurst-390.md); det
 // sammenlignes ikke med tagget her, men tjekkes af tools/tjek_crowhurst_390.mjs.
 const ÆNDRET = new Set(['390:crowhurst:fuld']);
+// Kort, der er kommet til efter tagget, findes ikke dér og tjekkes kun for vandret scroll: ved 320 og 375 px som de andre
+// kort og ved 390 og 1280 px i stedet for pixelsammenligningen (SPEC-multi-2ru.md, Franks svar 21. november 2026).
+const NYE_KORT = ['multi-2ru'];
 const browser = [
   process.env.CHROME,
   'C:/Program Files/Google/Chrome/Application/chrome.exe',
@@ -338,10 +343,31 @@ try {
       const s = await fane(bredde);
       await s.gå(`${nu.url}${KORT}?lang=${lang}`);
       const ider = await s.kortKlar();
-      tjek(ider.length === 49, `Konventionskortet ved ${bredde} px på ${lang}: alle kort er med`, String(ider.length));
+      tjek(ider.length === 50, `Konventionskortet ved ${bredde} px på ${lang}: alle kort er med`, String(ider.length));
       for (const id of ider) {
         for (const visning of ['fuld', 'kompakt', 'skabelon']) {
           if (visning === 'skabelon' && id !== ider[0]) continue;
+          await s.visKort(id, visning);
+          await s.kør(ÅBN);
+          await vent(30);
+          const m = await s.kør(MÅL);
+          tjek(m.ud <= 0 && !m.fund.length, `Kortet ${id}, ${visning}, ved ${bredde} px på ${lang}: ingen vandret scroll`, `${m.ud} px, ${m.fund.join(', ')}`);
+        }
+      }
+      await s.luk();
+    }
+  }
+
+  // De nye kort ved 390 og 1280 px: kun vandret scroll, for de findes ikke i tagget.
+  for (const bredde of [390, 1280]) {
+    for (const lang of ['da', 'en']) {
+      const s = await fane(bredde);
+      await s.gå(`${nu.url}${KORT}?lang=${lang}`);
+      const ider = await s.kortKlar();
+      for (const id of NYE_KORT) {
+        tjek(ider.includes(id), `Konventionskortet ved ${bredde} px på ${lang}: ${id} er med`);
+        if (!ider.includes(id)) continue;
+        for (const visning of ['fuld', 'kompakt']) {
           await s.visKort(id, visning);
           await s.kør(ÅBN);
           await vent(30);
@@ -369,7 +395,8 @@ try {
       await s.gå(`${før.url}${KORT}`);
       const ider = await s.kortKlar();
       await s.luk();
-      for (const id of ider) {
+      for (const id of ider) {  // kortene fra tagget; de nye kort er ikke med dér
+        if (NYE_KORT.includes(id)) continue;
         for (const visning of ['fuld', 'kompakt']) {
           if (ÆNDRET.has(`${bredde}:${id}:${visning}`)) continue;
           if (LIVE) { sprunget++; continue; }
