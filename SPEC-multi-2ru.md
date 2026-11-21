@@ -397,10 +397,10 @@ Tal står kun, når kilderne giver dem: 5–10 hp og W's tal. Grænserne fra gen
 
 **Session 3** kører hele testsuiten og tager skærmbillederne, og spørgsmål 1 skal være afklaret før da.
 
-**Tokenforbrug i session 1:** udfyldes nedenfor.
+**Tokenforbrug i session 1** (75 svar, 11:01–11:23 UTC, målt før den sidste commit): nye input 150 · skrevet til cachen 240.132 · læst fra cachen 11.994.692 · output 109.409; i alt 12.344.383.
 
 **Tokenforbrug** (udfyldes af hver session: nye input · skrevet til cachen · læst fra cachen · output):
-- Session 1:
+- Session 1: 150 · 240.132 · 11.994.692 · 109.409; i alt 12.344.383
 - Session 2:
 - Session 3:
 - Efter godkendelsen:
