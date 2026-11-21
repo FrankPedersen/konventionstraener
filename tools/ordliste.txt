@@ -94,6 +94,7 @@ bridgebum
 bridgehands
 crowhurst
 ekren
+ekrens
 ellebye
 erlandsson
 flannery
@@ -216,6 +217,7 @@ four
 fourteen
 goes
 going
+good
 hand
 howell
 interior

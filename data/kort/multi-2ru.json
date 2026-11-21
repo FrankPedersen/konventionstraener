@@ -1,0 +1,306 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "multi-2ru",
+  "navn": "Multi 2♦",
+  "undertitel": "2♦ viser en svag 2 i hjerter eller spar",
+  "kilde": "Jyderup Bridgeklub: Multi 2ru · hullerne udfyldt efter dokumentet Ruder Multi",
+  "kategori": "aabning",
+  "noegle": "gul",
+  "forveksles": [
+    "Forsvar mod Multi 2♦ (Crowhurst)",
+    "Multiforsvar"
+  ],
+  "formaal": "At frigøre 2♥ og 2♠ ved at samle den svage 2 i begge majorer i én melding.",
+  "situation": {
+    "auction": [
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Du åbner med en svag hånd og en seksfarve i hjerter eller spar.",
+    "gaelderFor": "Åbning med en seksfarve i en major og 5–10 hp"
+  },
+  "kortfortalt": "2♦ viser en seksfarve i hjerter eller spar med 5–10 hp, ingen firfarve i den anden major og højst ét es. Svarers 2♥ og 3♥/3♠ er pas eller ret, 2♠ er invit med hjerter, og 2NT spørger om styrken.",
+  "meldinger": [
+    {
+      "gruppe": "Åbner"
+    },
+    {
+      "bud": "2♦",
+      "noegle": "gul",
+      "styrke": "5–10 hp",
+      "viser": "Seksfarve i hjerter eller spar. Ingen firfarve i den anden major og højst ét es"
+    },
+    {
+      "gruppe": "Svarer"
+    },
+    {
+      "bud": "2♥",
+      "noegle": "gul",
+      "viser": "Søger farven (pas eller ret): åbner passer med hjerter og melder 2♠ med spar"
+    },
+    {
+      "bud": "2♠",
+      "noegle": "gul",
+      "viser": "Invit med hjerter: åbner passer med spar"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "bla",
+      "viser": "Spørger om styrken"
+    },
+    {
+      "bud": "3♣ / 3♦",
+      "noegle": "gron",
+      "viser": "Egen farve",
+      "krav": "Krav"
+    },
+    {
+      "bud": "3♥ / 3♠",
+      "noegle": "rosa",
+      "viser": "Pas eller ret: spærremelding i makkers farve"
+    },
+    {
+      "bud": "3NT",
+      "noegle": "brun",
+      "viser": "For at spille"
+    },
+    {
+      "bud": "4♣",
+      "noegle": "gul",
+      "viser": "Transfer: åbner melder farven under sin egen, 4♦ med hjerter og 4♥ med spar"
+    },
+    {
+      "bud": "4♦",
+      "noegle": "gul",
+      "viser": "Åbner melder sin farve"
+    },
+    {
+      "bud": "4♥ / 4♠",
+      "noegle": "gron",
+      "viser": "Egen farve, og åbner passer"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Åbner svarer på 2NT",
+      "auction": [
+        [
+          "Dig",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "3♣",
+          "noegle": "gul",
+          "viser": "Maksimum"
+        },
+        {
+          "bud": "3♦",
+          "noegle": "gul",
+          "viser": "Minimum og hjerter"
+        },
+        {
+          "bud": "3♥",
+          "noegle": "gul",
+          "viser": "Minimum og spar"
+        }
+      ]
+    },
+    {
+      "titel": "Svarer efter 3♣ (maksimum)",
+      "auction": [
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "3♦",
+          "noegle": "gul",
+          "viser": "Søger farven: åbner viser den med en krydsmelding"
+        },
+        {
+          "bud": "3♥ / 3♠",
+          "noegle": "gron",
+          "viser": "Egen farve",
+          "krav": "Krav"
+        }
+      ]
+    },
+    {
+      "titel": "Åbner viser farven med en krydsmelding",
+      "auction": [
+        [
+          "Dig",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "3♥",
+          "noegle": "gul",
+          "viser": "Spar"
+        },
+        {
+          "bud": "3♠",
+          "noegle": "gul",
+          "viser": "Hjerter"
+        }
+      ]
+    },
+    {
+      "titel": "Åbner efter 2♠ (invit med hjerter)",
+      "auction": [
+        [
+          "Dig",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "Pas",
+          "noegle": "gra",
+          "viser": "Spar"
+        },
+        {
+          "bud": "3♥",
+          "noegle": "gron",
+          "viser": "Hjerter og minimum"
+        },
+        {
+          "bud": "4♥",
+          "noegle": "gron",
+          "viser": "Hjerter og maksimum"
+        }
+      ]
+    }
+  ],
+  "indmelding": [
+    {
+      "situation": "Modparten dobler 2♦",
+      "noegle": "gul",
+      "regel": "Pas = svag hånd med ruder, for at spille. XX = styrke med interesse for straf. 2♥ = svag hånd med fit i begge majorer, pas eller ret. Andre meldinger: doblingen ignoreres, og der meldes som uden dobling."
+    },
+    {
+      "situation": "Modparten melder 2♠",
+      "noegle": "bla",
+      "regel": "Dobling = styrke (negativ dobling). Med spar passer åbner, så doblingen står som straf."
+    },
+    {
+      "situation": "Modparten melder 3♣, 3♦ eller 4♥",
+      "noegle": "gul",
+      "regel": "Pas = intet at tilføje. Dobling = straf. Hjerter eller spar = pas eller ret. Minor = naturligt og ikke krav."
+    }
+  ],
+  "eksempler": [],
+  "faldgruber": [
+    "2♥ er pas eller ret, men 2♠ er invit med hjerter: åbner passer kun 2♠ med spar.",
+    "Efter modpartens dobling er pas ruder til at spille, XX er styrke, og 2♥ er en svag hånd med fit i begge majorer.",
+    "3♣ på 2NT er maksimum uden at vise farven; farven vises bagefter med en krydsmelding (3♥ = spar og 3♠ = hjerter)."
+  ],
+  "aabne": [
+    "Hvornår svarer vælger 4♣ frem for 4♦: efter 4♣ bliver svarer selv spilfører, efter 4♦ bliver åbner det.",
+    "Hvad 3NT kræver.",
+    "Hvad en svag hånd uden ruder og uden fit i begge majorer melder, når modparten dobler 2♦, nu hvor XX viser styrke.",
+    "Hvad en hånd med 5–10 hp, en seksfarve og to esser åbner.",
+    "Hvad 2♥ og 2♠ bruges til, når Multi har frigjort dem: Good/Bad Multi (2♦ 3–7 hp og 2♥/2♠ 8–11 hp med en seksfarve), Bikini (2♥/2♠ 5–10 hp med en femfarve og en firfarve i en minor; 2NT spørger, 3♣/3♦ = minimum og 3♥/3♠ = maksimum) eller Ekrens (2♥ = 5-5 i majorerne og 2♠ = 5-5 i minorerne)."
+  ],
+  "relaterede": [],
+  "traener": {
+    "url": "traener.html?k=multi-2ru",
+    "pool": "pools/multi-2ru.json"
+  }
+}
