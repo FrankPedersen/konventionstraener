@@ -102,7 +102,7 @@ Mærkningen i tabellerne viser, hvor hver regel kommer fra: **J** er Jyderup-ark
 Word-dokumentet beskriver tre måder at bruge de frigjorte 2♥ og 2♠ på:
 - **Good/Bad Multi:** 2♦ 3–7 hp, og 2♥/2♠ 8–11 hp med en seksfarve.
 - **Bikini:** 2♥/2♠ 5–10 hp med femfarve og en firfarve i en minor, og 2NT-spørgsmålet giver 3♣/3♦ minimum og 3♥/3♠ maksimum.
-- **Ekrens:** 2♥ 55 i major og 2♠ 55 i minor.
+- **Ekren:** 2♥ 55 i major og 2♠ 55 i minor.
 
 De står på kortet under "Åbne spørgsmål" (Afklaret, punkt 3).
 
@@ -273,7 +273,7 @@ Hver situation får et bonusspørgsmål med tre svarmuligheder. Forklaringen næ
    - Hvad 3NT kræver.
    - Hvad en svag hånd uden ruder og uden fit melder efter dobling.
    - Hvad en hånd med 5–10 hp, seksfarve og to esser åbner.
-   - Hvad 2♥ og 2♠ bruges til (Good/Bad Multi, Bikini eller Ekrens, med tallene fra W).
+   - Hvad 2♥ og 2♠ bruges til (Good/Bad Multi, Bikini eller Ekren, med tallene fra W).
 
 `traener`-feltet er `{"url": "traener.html?k=multi-2ru", "pool": "pools/multi-2ru.json"}`.
 
@@ -318,7 +318,7 @@ Efter Franks "godkendt" (Sonnet): flet, push, live-tjek af `www.kontraktbridge.d
 
 1. **Ny generel træner i stedet for `ff-multi-2ru`.** Makker 2 spiller Flannery på 2♦ (aftalt 3. november 2026), og konventionskortene er uafhængige af makker. Multi bliver derfor en træner med system "generel" ligesom Truscott og Crowhurst. Den står på Træn og har ⓘ med konventionskortet. Posten "kommer" under Forslag fjernes. *(Rådgiverens forslag, bekræftet af Frank 21. november 2026.)*
 2. **Jyderup gælder, og W udfylder hullerne** (Franks valg 21. november 2026). Åbningen er 5–10 hp med højst ét es (Franks valg). Afsnit B2/B4 i Makker 2-dokumentet står uændret som Makker 2's forslag. Jyderups XX som styrke svarer til B2. Hvis Makker 2 en dag vælger Multi, rettes B2 i en egen spec.
-3. **Kun Multi i denne udgave.** Good/Bad Multi, Bikini og Ekrens står på kortet under "Åbne spørgsmål". Muiderberg (Bikini) 2♥/2♠ får sin egen træner efter denne (`SPEC-muiderberg.md`, to kørsler efter Franks spørgsmål 21. november 2026). Den afløser `ff-muiderberg` og retter Bikini-linjen på dette kort.
+3. **Kun Multi i denne udgave.** Good/Bad Multi, Bikini og Ekren står på kortet under "Åbne spørgsmål". Muiderberg (Bikini) 2♥/2♠ får sin egen træner efter denne (`SPEC-muiderberg.md`, to kørsler efter Franks spørgsmål 21. november 2026). Den afløser `ff-muiderberg` og retter Bikini-linjen på dette kort.
 4. **Et hul efter dobling.** J giver ingen melding til en svag hånd uden ruder og uden fit i begge majorer (W's XX = "meld din farve" er netop den hånd, men J bruger XX til styrke). Sådanne hænder genereres ikke, og spørgsmålet står på kortet.
 5. **4♣, 3NT og pas uden indblanding trænes ikke.** Kilderne siger ikke, hvornår svarer selv vil være spilfører (4♣ frem for 4♦), eller hvad 3NT kræver. Begge står som valgmuligheder, men er aldrig det rigtige svar. Pas uden indblanding nævnes ikke.
 6. **Grænserne er antagelser.** Tallene under Grænser er rådgiverens forslag, valgt så facit-eksemplerne giver kildens svar. Frank kan rette dem før session 2. *(Bekræftet af Frank 21. november 2026.)*

@@ -31,7 +31,7 @@
       "bud": "2♦",
       "noegle": "gul",
       "styrke": "5–10 hp",
-      "viser": "Seksfarve i hjerter eller spar. Ingen firfarve i den anden major og højst ét es"
+      "viser": "Seksfarve i hjerter eller spar. Ingen firfarve i den anden major og højst ét es. 2♦ er kunstig og alerteres."
     },
     {
       "gruppe": "Svarer"
@@ -285,7 +285,170 @@
       "regel": "Pas = intet at tilføje. Dobling = straf. Hjerter eller spar = pas eller ret. Minor = naturligt og ikke krav."
     }
   ],
-  "eksempler": [],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [],
+        "H": [
+          14,
+          13,
+          12,
+          10,
+          8,
+          3,
+          2
+        ],
+        "D": [
+          12,
+          8,
+          6
+        ],
+        "C": [
+          13,
+          11,
+          7
+        ]
+      },
+      "svar": "4♥",
+      "forklaring": "7 hjerter med 3 af de tre øverste honnører og 15 hp: 4♥ – svarers egen farve, og åbner passer."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          7,
+          6
+        ],
+        "H": [
+          14,
+          13,
+          12,
+          5
+        ],
+        "D": [
+          14,
+          7,
+          4,
+          3
+        ],
+        "C": [
+          13,
+          11
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "19 hp: 2NT – spørger om styrken. Åbner svarer 3♣ med maksimum, 3♦ med minimum og hjerter og 3♥ med minimum og spar."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "X"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          12,
+          11,
+          6
+        ],
+        "H": [
+          9,
+          7
+        ],
+        "D": [
+          14,
+          9,
+          7,
+          6,
+          5,
+          4,
+          3
+        ],
+        "C": [
+          9
+        ]
+      },
+      "svar": "Pas",
+      "forklaring": "7 ruder og 7 hp: pas – en svag hånd med ruder, for at spille 2♦ doblet."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "2♦"
+        ],
+        [
+          "Modstander",
+          "4♥"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          10,
+          5,
+          4,
+          2
+        ],
+        "H": [
+          10,
+          6,
+          4,
+          3
+        ],
+        "D": [
+          14,
+          13,
+          10,
+          9,
+          4
+        ],
+        "C": []
+      },
+      "svar": "4♠",
+      "forklaring": "4 spar og 7 hp: 4♠ – pas eller ret. Makker har sikkert spar, når modparten melder 4♥."
+    }
+  ],
   "faldgruber": [
     "2♥ er pas eller ret, men 2♠ er invit med hjerter: åbner passer kun 2♠ med spar.",
     "Efter modpartens dobling er pas ruder til at spille, XX er styrke, og 2♥ er en svag hånd med fit i begge majorer.",
@@ -296,7 +459,7 @@
     "Hvad 3NT kræver.",
     "Hvad en svag hånd uden ruder og uden fit i begge majorer melder, når modparten dobler 2♦, nu hvor XX viser styrke.",
     "Hvad en hånd med 5–10 hp, en seksfarve og to esser åbner.",
-    "Hvad 2♥ og 2♠ bruges til, når Multi har frigjort dem: Good/Bad Multi (2♦ 3–7 hp og 2♥/2♠ 8–11 hp med en seksfarve), Bikini (2♥/2♠ 5–10 hp med en femfarve og en firfarve i en minor; 2NT spørger, 3♣/3♦ = minimum og 3♥/3♠ = maksimum) eller Ekrens (2♥ = 5-5 i majorerne og 2♠ = 5-5 i minorerne)."
+    "Hvad 2♥ og 2♠ bruges til, når Multi har frigjort dem: Good/Bad Multi (2♦ 3–7 hp og 2♥/2♠ 8–11 hp med en seksfarve), Bikini (2♥/2♠ 5–10 hp med en femfarve og en firfarve i en minor; 2NT spørger, 3♣/3♦ = minimum og 3♥/3♠ = maksimum) eller Ekren (2♥ = 5-5 i majorerne og 2♠ = 5-5 i minorerne)."
   ],
   "relaterede": [],
   "traener": {
