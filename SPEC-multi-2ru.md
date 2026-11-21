@@ -410,3 +410,77 @@ Tal står kun, når kilderne giver dem: 5–10 hp og W's tal. Grænserne fra gen
 Ordret fra Franks besked til session 2:
 
 > "Læs SPEC-multi-2ru.md, og lav session 2. Svar på dine fire spørgsmål (Franks valg): (1) tjek_viden_320.mjs og tjek_crowhurst_390.mjs må rettes fra 49 til 50 kort; det nye kort multi-2ru tjekkes kun for vandret scroll, og de 49 andre sammenlignes med tagget som før. (2) Ja: over modpartens 4♥ er 4♠ 4+ spar og 7+ hp uden krav til hjerter. (3) Skriv 'Ekren' som på Crowhurst-kortet, og fjern 'ekrens' fra ordlisten. (4) Kortet får linjen '2♦ er kunstig og alerteres.' under Meldinger. Tag desuden én småting med: i assets/footer.js kommer Modspil med under 'Trænere' lige efter Håndevaluering, med link('/fordelingstraeneren/#modspil', 'Modspil', 'Defence'); kør node tools/tjek_sidefod.mjs bagefter. Stop derefter, og rapportér med tokenforbruget i fire tal."
+
+### Session 2 (21. nov. 2026)
+
+**Status:** Generatoren, puljen, posten, kortets eksempler, linjen om alertering, Ekren, Modspil i sidefoden og rettelserne af de to pixeltests er lavet, og accepttesten er grøn på 8 af 8 punkter. Sessionen stoppede før testsuiten og skærmbillederne (session 3). Intet er flettet eller pushet.
+
+**Commits på `multi-2ru`:**
+- `1c8bdec`: modellerne under Trin (Opus og Sonnet), som stod urettet i arbejdskopien;
+- `f170a22`: Franks svar ordret;
+- `3e1ac7e`: `dealer/multi_2ru.py`, `build_pools.py`, puljen og posten;
+- `97add44`: kortets eksempler, linjen om alertering, Ekren og ordlisten;
+- `425462f`: Modspil i sidefoden og `tjek_sidefod.mjs`;
+- `7357134`: de to pixeltests;
+- derefter dette afsnit og tokenforbruget.
+
+**Bygget:**
+- **Modulet** `dealer/multi_2ru.py` har grænserne ordret fra specen under overskriften og 15 situationer: `aabning`, `svar`, seks `ret_*` (efter 2♥, 2♠, 3♥, 3♠, 4♣ og 4♦), `spm`, `spm2`, `dobling` og fire `ind_*` (over 2♠, 3♣, 3♦ og 4♥). `PER_CALL` er 7 for hver situation, og `export_pool` tjekker først specens ti facit-hænder.
+- **Puljen** `pools/multi-2ru.json` er bygget med `python build_pools.py multi-2ru`: 499 hænder fordelt på 57 meldinger, 8–9 pr. melding (7 plus andelen af de 100 ekstra) og ingen "Advarsel: kun …".
+- **Posten** `multi-2ru` står ordret fra specen sidst i `data/konventioner.json`, og `ff-multi-2ru` er fjernet. De øvrige poster er uændrede.
+- **Kortets eksempler** kommer fra puljen med samme meldeforløb og svar som eksempel 3, 4, 5 og 9 og med puljens forklaring:
+  - 2♦ – pas – ?: ♠– ♥EKDT832 ♦D86 ♣KB7 (15 hp) → 4♥;
+  - 2♦ – pas – ?: ♠D76 ♥EKD5 ♦E743 ♣KB (19 hp) → 2NT;
+  - 2♦ – X – ?: ♠DB6 ♥97 ♦E976543 ♣9 (7 hp) → pas;
+  - 2♦ – (4♥) – ?: ♠T542 ♥T643 ♦EKT94 ♣– (7 hp) → 4♠.
+- **Kortsiden** er bygget med `tools/build_konventionskort.py`. Siden henter kortene fra `data/kort/`, så de byggede filer er uændrede.
+- **Svar 2 (4♠ over 4♥):** reglen er 4+ spar og 7+ hp uden krav til hjerter. Accepttesten tolkede det allerede sådan og er ikke rettet.
+- **Svar 3 (Ekren):** "Ekren" står på kortet og i specens tekst (Kilderne, Konventionskortet og Afklaret, punkt 3). Referatet fra session 1 og Franks svar står, som de blev skrevet. "ekrens" er fjernet fra `tools/ordliste.txt`.
+- **Svar 4 (alertering):** linjen står i 2♦-rækken under Meldinger (valg 2).
+
+**Rettelser af tests (Franks svar 1 og opgaven med sidefoden):**
+1. `tools/tjek_sidefod.mjs`: før forventede testen fem links under Trænere (til og med Håndevaluering), nu seks med Modspil (`/fordelingstraeneren/#modspil`) og "Defence" på engelsk. Før rettelsen fejlede kun de 13 tjek af listen over links (12 på dansk og 1 på engelsk); alle mål var i orden.
+2. `tools/tjek_viden_320.mjs`: før `ider.length === 49` på siden nu, nu 50. Nyt: `NYE_KORT = ['multi-2ru']` tjekkes for vandret scroll ved 390 og 1280 px (fuld og kompakt, dansk og engelsk) ud over 320 og 375 px, hvor alle kort tjekkes, og pixelsløjfen over tagets kort springer `NYE_KORT` over. De 49 kort sammenlignes med tagget som før.
+3. `tools/tjek_crowhurst_390.mjs`: før `ider.length === 49` på siden fra tagget, som altid har 49 kort, så 50 dér ville altid fejle. Nu tjekkes det, at siden nu har 50 kort, tagget 49, og at alle tagets kort findes på siden nu. Nyt afsnit 1b: `multi-2ru` tjekkes for vandret scroll ved 390, 393, 395, 398, 399 og 1280 px (fuld og kompakt, dansk og engelsk), og pixelsløjfen springer `NYE_KORT` over.
+
+`tools/tjek_multi_2ru.py` er ikke rettet. Pixeltestene er kun tjekket for syntaks (`node --check`): de kan ikke køre ét kort alene, så de køres i session 3.
+
+**Testresultater:**
+- `tjek_multi_2ru.py`: i orden (8 af 8 punkter);
+- `tjek_konventionskort.py`: "50 konventionskort er i orden";
+- `tjek_kort_eksempler.py multi-2ru`: "4 meldeeksempler er i orden (0 advarsler)", og for alle kort 223 i orden (0 advarsler);
+- `tjek_fagord.py` og `tjek_bydeform.py`: i orden; `tjek_sprog.py`: OK (10 tests);
+- `sprogtjek.py`: ingen ukendte ord;
+- `tjek_sidefod.mjs`: alt i orden.
+
+**Sidefoden:** Modspil står under Trænere lige efter Håndevaluering i `assets/footer.js`. Forsidens sidefod har ikke Modspil, så de to sidefødder er ikke længere ens (`SPEC-sidefod.md`); se spørgsmål 3.
+
+**Sidefoden og kortlisten rammer pixeltestene i session 3.** Begge tests viser siden før fra tagget med alle dens filer (kun Makker 2-dokumentet kommer fra en nyere commit, `NYERE`), og skærmbilledet tager hele siden med:
+- Sidefoden står på alle sider i `viden/` og på kortsiden. Med Modspil bliver Trænere én linje længere, så siderne bliver højere, og alle sammenligninger af sider og kort ved 390, 399 og 1280 px vil fejle ("højden er … px, før … px").
+- Kortsiden viser alle kort som knapper (`#valg`) over kortet. Knappen "Multi 2♦" kommer med, så kortsiden og alle 49 kort vil afvige fra tagget, også uden sidefoden.
+
+`tjek_bred_multi.mjs` skjuler allerede sidefoden (`SPEC-sidefod.md`) og rammes ikke. Intet er skjult i de to tests; mulige løsninger står i spørgsmål 1.
+
+**Valg, specen ikke afgør:**
+1. **Bonusspørgsmålene i `ret`:** punkt 3 kræver et helt engelsk bonusspørgsmål, og `bilingual` udelader tekster, der er ens på begge sprog (fx "2♠"). Svarene er derfor skrevet som tekst, der er forskellig på de to sprog, og spørgsmålet efter 2♥ er "Hvad betyder svarers 2♥ efter 2♦?". Specens seks spørgsmål står ordret.
+2. **Linjen om alertering:** skabelonen har ingen note under afsnit 1, og feltet `alert` vises i hovedet (mærket "Alertér") og i Situation, ikke under Meldinger. Linjen står derfor sidst i 2♦-rækkens "viser", så den også ses i kompaktvisningen bag ⓘ i træneren. Feltet `alert` er ikke brugt (spørgsmål 2).
+3. **Forklaringerne** nævner håndens tal (længder, honnører og hp) og kildens regel, men ikke grænserne fra generatoren. Over 2♠ er 3♥ forklaret som "støtte til hjerter. Når modparten melder spar, har åbner oftest hjerter." Det er Claude Codes begrundelse, ikke kildens.
+4. **Hænderne:** samplerne trækker fordelinger, der passer til reglen, og bedømmelsen afgør svaret. Åbners hånd har højst fire kort i hver minor. "Resten" (2♥) trækkes blandt tilfældige hænder med 0–12 hp og hænder med 13–15 hp, der mangler tre kort i en major.
+5. **Renonce og singleton i forklaringerne:** "ingen hjerter" og "1 hjerter" (engelsk "no hearts" og "1 heart").
+6. **Modellerne under Trin** stod urettet i arbejdskopien ved sessionens start og er committet for sig i `1c8bdec`.
+
+**Spørgsmål til Frank:**
+1. **Pixeltestene i session 3:** hvordan skal sidefoden og knappen "Multi 2♦" behandles i sammenligningen med tagget?
+   - (a) Som Makker 2-dokumentet (`NYERE`): siden før henter `assets/footer.js`, `data/kort/index.json` og `data/kort/multi-2ru.json` fra en godkendt commit på grenen, så kun utilsigtede ændringer tæller. Tagget har da også 50 kort, og `NYE_KORT` holder multi-2ru uden for pixelsammenligningen. Claude Codes forslag.
+   - (b) Sidefoden skjules som i `tjek_bred_multi.mjs`, og kortlisten `#valg` skjules også.
+   - (c) Ingen ændring: session 3 får røde pixeltjek og vurderer dem ud fra skærmbillederne.
+2. **Alertering:** skal kortet også have feltet `alert` ("2♦ alerteres"), så mærket "Alertér" står i hovedet som på fx Flannery-kortet?
+3. **Sidefoden på forsiden og i Fordelingstræneren:** skal de også have Modspil, så sidefødderne igen er ens (hver i sit repo)?
+4. **Forsidens tal:** "45 konventioner" i topbåndet hentes ikke automatisk. Med Multi går posterne med status "klar" i `data/konventioner.json` fra 48 til 49. Skal tallet rettes, når Multi udgives?
+5. **Teksterne:** forklaringerne og bonusspørgsmålene i `dealer/multi_2ru.py` venter på Franks godkendelse før fletningen (specen, Forklaringer og bonusspørgsmål).
+
+**Tilbage til session 3:**
+- svaret på spørgsmål 1, før pixeltestene køres;
+- hele testsuiten én gang i forgrunden, med de nye tjek af `multi-2ru` i `tjek_viden_320.mjs` og `tjek_crowhurst_390.mjs`;
+- skærmbillederne af `traener.html?k=multi-2ru` (specen, Accepttest) i `C:\Users\frank\Kontraktbridge\skaermbilleder\multi-2ru\`;
+- stop før fletning og en rapport med tokenforbruget.
