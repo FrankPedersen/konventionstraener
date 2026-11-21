@@ -108,8 +108,9 @@ const MÅL = `(() => {
     tekst: t(f),
   };
 })()`;
+// Modspil står under Trænere efter Håndevaluering (Franks svar 21. november 2026, SPEC-multi-2ru.md).
 const KOLONNER_DA = (rod) => JSON.stringify([
-  { titel: 'Trænere', links: [['Konventionstræner', rod], ['Fordeling', '/fordelingstraeneren/#fordeling'], ['Pointregnskab', '/fordelingstraeneren/#pointregnskab'], ['Farvebehandling', '/fordelingstraeneren/#farvebehandling'], ['Håndevaluering', '/fordelingstraeneren/#haandevaluering']] },
+  { titel: 'Trænere', links: [['Konventionstræner', rod], ['Fordeling', '/fordelingstraeneren/#fordeling'], ['Pointregnskab', '/fordelingstraeneren/#pointregnskab'], ['Farvebehandling', '/fordelingstraeneren/#farvebehandling'], ['Håndevaluering', '/fordelingstraeneren/#haandevaluering'], ['Modspil', '/fordelingstraeneren/#modspil']] },
   { titel: 'Opslag', links: [['Analyse', '/fordelingstraeneren/#analyse'], ['Bridgeordbog', '/ordbog/'], ['Scoring i bridge', '/scoring/']] },
 ]);
 
@@ -156,7 +157,7 @@ try {
   await vent(900);
   if (LIVE) for (let i = 0; i < 100 && (await kør('document.readyState')) !== 'complete'; i++) await vent(100);
   const en = await kør(MÅL);
-  tjek(JSON.stringify(en.kolonner.map((k) => [k.titel, k.links.map((l) => l[0])])) === JSON.stringify([['Trainers', ['Convention trainer', 'Distribution', 'Point count', 'Suit combinations', 'Hand evaluation']], ['Reference', ['Analysis', 'Bridge dictionary', 'Scoring in bridge']]]), 'Engelsk: kolonnerne', JSON.stringify(en.kolonner));
+  tjek(JSON.stringify(en.kolonner.map((k) => [k.titel, k.links.map((l) => l[0])])) === JSON.stringify([['Trainers', ['Convention trainer', 'Distribution', 'Point count', 'Suit combinations', 'Hand evaluation', 'Defence']], ['Reference', ['Analysis', 'Bridge dictionary', 'Scoring in bridge']]]), 'Engelsk: kolonnerne', JSON.stringify(en.kolonner));
   tjek(/Free bridge training in the browser\. Made by Frank Pedersen\./.test(en.tekst) && en.knap === 'About me and contact →', 'Engelsk: linjen og knappen', en.tekst.slice(0, 120));
 
   // Skærmbillederne: kun sidefoden.
