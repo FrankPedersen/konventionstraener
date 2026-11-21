@@ -401,7 +401,7 @@ Tal står kun, når kilderne giver dem: 5–10 hp og W's tal. Grænserne fra gen
 
 **Tokenforbrug** (udfyldes af hver session: nye input · skrevet til cachen · læst fra cachen · output):
 - Session 1: 150 · 240.132 · 11.994.692 · 109.409; i alt 12.344.383
-- Session 2:
+- Session 2: 194 · 309.681 · 19.760.828 · 116.651; i alt 20.187.354
 - Session 3:
 - Efter godkendelsen:
 
@@ -484,3 +484,5 @@ Ordret fra Franks besked til session 2:
 - hele testsuiten én gang i forgrunden, med de nye tjek af `multi-2ru` i `tjek_viden_320.mjs` og `tjek_crowhurst_390.mjs`;
 - skærmbillederne af `traener.html?k=multi-2ru` (specen, Accepttest) i `C:\Users\frank\Kontraktbridge\skaermbilleder\multi-2ru\`;
 - stop før fletning og en rapport med tokenforbruget.
+
+**Tokenforbrug i session 2** (97 svar, 14:37–14:59 UTC, målt før den sidste commit): nye input 194 · skrevet til cachen 309.681 · læst fra cachen 19.760.828 · output 116.651; i alt 20.187.354.
