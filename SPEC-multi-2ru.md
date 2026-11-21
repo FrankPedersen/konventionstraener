@@ -324,6 +324,81 @@ Efter Franks "godkendt": flet, push, live-tjek af `www.kontraktbridge.dk/konvent
 6. **Grænserne er antagelser.** Tallene under Grænser er rådgiverens forslag, valgt så facit-eksemplerne giver kildens svar. Frank kan rette dem før session 2. *(Bekræftet af Frank 21. november 2026.)*
 7. **Kilderne ligger uden for repoet** (`Kontraktbridge\Multi_2ru_Jyderup.pdf` og `Kontraktbridge\Ruder_Multi.docx`). Repoet er offentligt på GitHub, og kortet og specen gengiver reglerne med egne ord.
 
+### Session 1 (21. nov. 2026)
+
+**Status:** Tag og gren er lavet, accepttesten er skrevet og rød, og konventionskortet er skrevet. Sessionen stoppede før generatoren. Intet er flettet eller pushet.
+
+**Tag og commits:** `main` (`02cc549`, lig med `origin/main`) er tagget `v-foer-multi-2ru`. Grenen `multi-2ru` har:
+- `75c7be6`: specen;
+- `04a3d73`: Afklaret, punkt 1 og 6 bekræftet;
+- `acb1c74`: accepttesten, rød;
+- `5d4fb40`: kortet;
+- derefter dette afsnit og tokenforbruget.
+
+**Accepttesten** `tools/tjek_multi_2ru.py` skriver hvert af de otte punkter som "i orden" eller "RØD" med fejlene:
+- Reglerne er skrevet igen fra specen. Tallene læses fra kodeblokken under Grænser og sammenlignes med modulets konstanter og overskriften (punkt 1), så et tal rettes i specen og i modulet.
+- Situationerne findes ud fra meldeforløbet, ikke ud fra navnene.
+- Punkt 3 kører modulets `export_pool` til en midlertidig fil og fanger "Advarsel: kun …" uden at røre `pools/`.
+- Testen er prøvet mod en attrap (modul og pulje lavet af testens egne regler i en midlertidig worktree uden for grenen, nu slettet). Med attrappen var 8 af 8 punkter grønne, og fire indbyggede fejl gjorde punkt 1, 3, 4 og 5 røde.
+
+**Resultat:**
+- **Før kortet:** 7 af 8 punkter var røde. Punkt 1–5 var røde, fordi modulet og puljen mangler, punkt 6, fordi posten mangler, og punkt 7, fordi kortet mangler. Punkt 8 var grønt.
+- **Efter kortet:** stadig 7 af 8 røde. I punkt 7 er kortfilen, typen, `traener`-feltet, fem af seks afsnit og `tjek_konventionskort.py` ("50 konventionskort er i orden") grønne. Kun eksemplerne og `tjek_kort_eksempler.py multi-2ru` er røde, fordi de kræver puljen. Punkt 1–6 hører til session 2.
+
+**Kortet** (`data/kort/multi-2ru.json`, type `melding`, kategori `aabning`, nøgle `gul`) står i `index.json` efter crowhurst:
+- **Meldinger:** 2♦ med Jyderups krav og svarene på 2♦ i ni rækker som i specens tabel.
+- **Fortsættelser:** fire grene: åbners svar på 2NT, svarer efter 3♣, krydsmeldingen og åbner efter 2♠.
+- **Indmelding:** tre rækker: dobling, 2♠ og 3♣/3♦/4♥.
+- **Eksempler:** tomt, se valg 7.
+- **Faldgruber:** de tre fra specen.
+- **Åbne spørgsmål:** de fem fra specen, med W's tal for Good/Bad Multi, Bikini og Ekrens.
+
+Tal står kun, når kilderne giver dem: 5–10 hp og W's tal. Grænserne fra generatoren står ikke på kortet.
+
+**Øvrige tjek:**
+- `tjek_konventionskort.py`, `tjek_fagord.py` og `tjek_bydeform.py` melder "i orden", og `tjek_sprog.py` er OK (10 tests).
+- `sprogtjek.py` finder ingen ukendte ord, efter at "ekrens" og "good" (Good/Bad Multi) er kommet i `tools/ordliste.txt`.
+- Pixeltestene er ikke kørt (session 3).
+
+**Valg, specen ikke afgør:**
+1. **Én situation pr. meldeforløb:** `ret` og `indmelding` har én situation pr. svar og pr. indmelding (6 + 4), fordi `traener.html` tager meldeforløbet fra situationen. "Alle syv situationer" er de syv familier med i alt 15 meldeforløb.
+2. **Meldingerne i `ret`:** de lovlige af Pas, 2♠, 3♥, 3♠, 4♦, 4♥ og 4♠, fx efter 4♦ kun Pas, 4♥ og 4♠.
+3. **Meldingerne i `indmelding`:** Pas, X og det billigste bud i hver af de tre andre farver: over 2♠ 3♣ 3♦ 3♥, over 3♣ 3♦ 3♥ 3♠, over 3♦ 3♥ 3♠ 4♣ og over 4♥ 4♠ 5♣ 5♦. En situation med X eller XX har `allowX` eller `allowXX`.
+4. **Svarene i puljen:** puljen har netop de svar, reglerne kan give, hvert med mindst 7 hænder. Fx har `svar` ikke Pas, 3NT og 4♣ (Afklaret, punkt 5), og `dobling` har ikke 4♣.
+5. **Fortolkninger af reglerne:**
+   - Over 4♥ kræver 4♠ 4+ spar og 7+ hp, men intet i hjerter.
+   - Efter dobling kommer 2♥ kun fra `SVAG_FIT_X`. Svar-reglens "resten" gælder ikke dér, så de hænder genereres ikke.
+   - 1♥/1♠ og pas ved åbningen kræver præcis seks kort i én major, men intet om den anden major.
+   - `spm2` med minimum ligger uden for reglerne, og modulet giver dér ingen melding.
+   - To lige lange gode minorer under `svar` ligger uden for reglerne.
+6. **Bonusspørgsmålene og de fredede filer:**
+   - Specens seks bonusspørgsmål står ordret i mindst én situation i hver familie.
+   - Alle situationer har tre svarmuligheder på begge sprog.
+   - Punkt 6 tjekker også, at de øvrige poster og de fire fredede filer (`viden/2-over-1-makker2.html`, `traener.html`, `dealer/core.py`, `dealer/crowhurst.py`) er som i tagget.
+7. **Kortets eksempler:** afsnittet er tomt indtil session 2, fordi eksemplerne hentes fra puljen. Testen kræver eksempler med samme meldeforløb og svar som eksempel 3, 4, 5 og 9.
+8. **Kortets fod og forveksling:**
+   - `forveksles` er "Forsvar mod Multi 2♦ (Crowhurst)" og "Multiforsvar", og `relaterede` er tom.
+   - Der er ingen `alert`-linje.
+   - Kilden står som "Jyderup Bridgeklub: Multi 2ru · hullerne udfyldt efter dokumentet Ruder Multi".
+9. **Ordlisten:** "ekrens" og "good" står i `tools/ordliste.txt`. Afgrænsningen nævner ikke filen, men efter `CLAUDE.md` står rigtige ord dér.
+
+**Spørgsmål til Frank:**
+1. **Pixeltestene:** `tools/tjek_viden_320.mjs` og `tools/tjek_crowhurst_390.mjs` forventer præcis 49 kort (`ider.length === 49`). Med multi-2ru er der 50, og Afgrænsningen tillader ikke at rette dem. Må tallet rettes til 50? Og hvordan skal det nye kort sammenlignes med tagget, som ikke har det? Session 3 kører dem.
+2. **Over 4♥:** er 4♠ rigtigt forstået (4+ spar og 7+ hp, uden krav til hjerter)?
+3. **Ekrens:** kortet skriver "Ekrens" som specen, mens crowhurst-kortet kalder 2♦ med begge majorer "Ekren". Er det i orden?
+4. **Alert:** skal kortet have en `alert`-linje, fx "2♦ alerteres"?
+
+**Tilbage til session 2:**
+- `dealer/multi_2ru.py`: grænserne ordret fra specen under overskriften, `SITUATIONS`, `CLASSIFIERS`, `PER_CALL` (mindst 7) og `export_pool`.
+- Modulet i `build_pools.py`, og puljen bygget med `python build_pools.py multi-2ru`.
+- Posten i `data/konventioner.json` ordret fra specen, og `ff-multi-2ru` fjernet.
+- Fire eksempler på kortet fra puljen med forklaring, så `tjek_kort_eksempler.py multi-2ru` giver 0 advarsler. Indtil da fejler `tjek_kort_eksempler.py` for alle kort, fordi `pools/multi-2ru.json` mangler.
+- Kortsiden bygget, og `tjek_multi_2ru.py` grøn.
+
+**Session 3** kører hele testsuiten og tager skærmbillederne, og spørgsmål 1 skal være afklaret før da.
+
+**Tokenforbrug i session 1:** udfyldes nedenfor.
+
 **Tokenforbrug** (udfyldes af hver session: nye input · skrevet til cachen · læst fra cachen · output):
 - Session 1:
 - Session 2:
