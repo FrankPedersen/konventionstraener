@@ -587,3 +587,60 @@ Alle forklaringer og bonusspørgsmål i `dealer/multi_2ru.py`, som de står i pu
 3. **Pas over 3♣ og 3♦:** "uden tre kort i begge majorer" er specens grænse `PAS_RET` (3+ i begge majorer og 7+ hp, bekræftet af Frank, Afklaret 6). W siger kun "intet at tilføje". "Klør kan kun meldes på 4-trinnet" er W's begrundelse til eksempel 8.
 4. **Pas over 4♥:** "uden fire spar" bygger på Franks svar 21. nov. (4♠ er 4+ spar og 7+ hp).
 5. **1♥ og 1♠ ved åbningen:** 1♥/1♠ med 11–15 hp er specens regel (Regler, `aabning`). Kilden giver kun 5–10 hp for 2♦, og "for stærk til Multi 2♦" bygger på den.
+
+### Session 2b (24. nov. 2026)
+
+**Status:** Franks svar 2 står ordret, kortet har fået feltet `alert`, og teksterne står i tabellen ovenfor. Sessionen stoppede ved 3♥ over 2♠, fordi Jyderup-arket ikke afgør meldingens betydning (spørgsmål 1). Forklaringen og puljen er derfor ikke rettet. Pixeltestene har heller ikke fået hashen (punkt 5 i opgaven), for den skal pege på den commit, hvor kortet er færdigt efter svaret. Hele suiten og pixeltestene er ikke kørt. Intet er flettet eller pushet.
+
+**Commits på `multi-2ru`:**
+- `351d47f`: Franks svar 2 ordret;
+- `e06cd63`: feltet `alert` på kortet;
+- `2481da0`: tabellen med teksterne;
+- derefter dette afsnit og tokenforbruget.
+
+**`alert`:** 25 af de 49 kort i tagget bruger feltet med én kort tekst, fx Flannery ("2♦ alerteres"). Multi-2ru-kortet har nu `"alert": "2♦ alerteres"` lige efter `noegle`, som på de andre kort. Kortsiden viser mærket "Alertér" i hovedet og sætter "2♦ alerteres." efter teksten under Situation. Linjen "2♦ er kunstig og alerteres." står stadig i 2♦-rækken under Meldinger. `build_konventionskort.py` ændrede ikke de byggede filer, fordi siden henter kortene fra `data/kort/`.
+
+**3♥ over 2♠:** Jyderup-arket (`Kontraktbridge\Multi_2ru_Jyderup.pdf`, læst i denne session efter Franks svar 2) har kun én linje om indmeldingen over 2♠: "2ru – 2sp - ? D: styrke (negativ), beder makker strafpasse med sparfarve". Arket siger intet om 3♥ over 2♠:
+- uden indmelding er 3♥ "korriger (spær i makkers farve)";
+- efter dobling står "Ellers: doblingen ignoreres og der meldes efter systemet", men den linje gælder kun doblingen.
+
+I dag forklarer appen 3♥ som "støtte til hjerter. Når modparten melder spar, har åbner oftest hjerter." Betydningen er Claude Codes tolkning af grænsen `STOETTE_HJ`, og den sidste sætning er Claude Codes begrundelse. Begge er markeret som tilføjelse i tabellen (note 1 og 2).
+
+**Tabellen** står under "Tekster til gennemgang" ovenfor. Den har 72 rækker (57 forklaringer og 15 bonusspørgsmål), og 2 rækker er markeret som tilføjelse: 3♥ og pas over 2♠. Noterne 3–5 viser, hvor en tekst bygger på en grænse fra specen eller på Franks svar.
+
+**"45 konventioner"** på forsiden er antallet af trænere med status "klar" på Træn (`index.html` i Konventionstræneren). Siden tæller det selv i linjen "45 trænere · 8 meldeforløb pr. runde": posterne i `data/konventioner.json`, der har et system, ikke er fravalgt og har status "klar".
+- **I dag** (`main` og tagget `v-foer-multi-2ru`) er der 50 poster, og 48 har status "klar". Tre af dem står ikke på Træn: `ff-2kl` og `ff-revers` er fravalgt, og `kamp-landy` har intet system. Træn viser derfor 45.
+- **Da forsiden fik tallet** 17. okt. 2026, passede det også (48 poster og 46 "klar", minus `kamp-landy`).
+- **Med Multi 2♦** bliver tallet 46 (49 "klar" minus de samme tre).
+- Session 2's "fra 48 til 49" var de klare poster i alt, ikke det, forsiden tæller.
+
+**Testresultater:**
+- `tjek_multi_2ru.py`: i orden (8 af 8 punkter);
+- `tjek_konventionskort.py`: "50 konventionskort er i orden";
+- `tjek_kort_eksempler.py multi-2ru`: "4 meldeeksempler er i orden (0 advarsler)";
+- `tjek_fagord.py` og `tjek_bydeform.py`: i orden, og `tjek_sprog.py` er grøn som punkt 8 i accepttesten;
+- `sprogtjek.py`: ingen ukendte ord.
+
+**Spørgsmål til Frank:**
+1. **3♥ over 2♠:** hvad betyder 3♥ efter 2♦ – (2♠)? Arket giver kun doblingen.
+   - (a) Som uden indmelding: "korriger (spær i makkers farve)", altså pas eller ret. Det svarer til arkets regel efter dobling og til W over de andre indmeldinger. Med spar kan åbner dog kun rette til 3♠ i modpartens farve.
+   - (b) Støtte til hjerter som nu (grænsen `STOETTE_HJ`: 3+ hjerter og 6–9 hp), men uden Claude Codes begrundelse. Forklaringen siger så, at arket kun giver doblingen over 2♠, og at 3♥ er specens antagelse.
+   - (c) 3♥ trænes ikke over 2♠. Situationen har kun dobling og pas, som arket og specen giver, og 3♥ står kun som forkert valgmulighed.
+
+   Under alle tre rettes forklaringen af pas over 2♠ (note 2), og puljen bygges igen.
+2. **Teksterne:** tabellen venter på Franks godkendelse før fletningen.
+
+**Tilbage til session 2c (Opus):**
+- Franks svar på spørgsmål 1 ordret under Afklaret.
+- Forklaringen af 3♥ og pas over 2♠ rettes i `dealer/multi_2ru.py`, puljen bygges med `python build_pools.py multi-2ru`, og tabellen rettes.
+- **Punkt 5 (pixeltestene, Franks svar 2 (a)):**
+  - Sidefoden har været færdig siden `425462f`, og kortet står i `e06cd63`. Ændrer svaret ikke kortet, er `e06cd63` hashen; ellers bruges den commit, hvor kortet bliver færdigt.
+  - I `tools/tjek_viden_320.mjs` og `tools/tjek_crowhurst_390.mjs` kommer `assets/footer.js`, `data/kort/index.json` og `data/kort/multi-2ru.json` med i `NYERE` med den hash. Resten af siden før kommer stadig fra tagget.
+  - Siden før får dermed 50 kort, så tjekket "tagget 49" i `tjek_crowhurst_390.mjs` skal være 50. Pixelsløjfen springer stadig `NYE_KORT` over.
+  - Hashen og forklaringen skrives under Afklaret, og begge scripts tjekkes med `node --check`.
+- `tjek_multi_2ru.py`, kortets tjek, fagord, bydeform og `sprogtjek.py` køres.
+
+**Session 3 (Sonnet):**
+- hele testsuiten og de fulde pixeltests i forgrunden;
+- skærmbilleder af én side i `viden/` og af kortsiden med knappen "Multi 2♦", sammen med specens skærmbilleder af træneren, i `C:\Users\frank\Kontraktbridge\skaermbilleder\multi-2ru\`;
+- stop før fletning og en rapport med tokenforbruget.
