@@ -30,15 +30,15 @@ const TAG = 'v-foer-viden-320';
 // markeringerne rettet og tre rettelser mere (SPEC-makker2-markeringer.md, Franks afgørelse 15. november 2026); udgaven
 // i commit bca7e0c er den godkendte. Siderne henter de samme stilark og skrifter som før, og de kommer stadig fra tagget.
 // Sidefoden med Modspil (assets/footer.js) og kortlisten med Multi 2♦ og Muiderberg (data/kort/index.json,
-// data/kort/multi-2ru.json og data/kort/muiderberg.json) hentes fra commit H = 2d411fe på grenen muiderberg, den sidste
+// data/kort/multi-2ru.json og data/kort/muiderberg.json) hentes fra commit H = bc6c85a på grenen muiderberg, den sidste
 // commit, der ændrer dem (SPEC-muiderberg.md, Afklaret 10; som SPEC-multi-2ru.md, Franks svar 2 (a) og 3), så siden før
 // har samme sidefod, knapperne "Multi 2♦" og "Muiderberg (Bikini) 2♥/2♠" og 51 kort, og kun utilsigtede ændringer tæller.
 const NYERE = {
   'viden/2-over-1-makker2.html': 'bca7e0c446f14ebf86724675b336c9e7306f8303',
-  'assets/footer.js': '2d411fec58314ae1f5b2e792b69c5d794aa20a21',
-  'data/kort/index.json': '2d411fec58314ae1f5b2e792b69c5d794aa20a21',
-  'data/kort/multi-2ru.json': '2d411fec58314ae1f5b2e792b69c5d794aa20a21',
-  'data/kort/muiderberg.json': '2d411fec58314ae1f5b2e792b69c5d794aa20a21',
+  'assets/footer.js': 'bc6c85afa41378968f47932f8f5e4a23d48eefb6',
+  'data/kort/index.json': 'bc6c85afa41378968f47932f8f5e4a23d48eefb6',
+  'data/kort/multi-2ru.json': 'bc6c85afa41378968f47932f8f5e4a23d48eefb6',
+  'data/kort/muiderberg.json': 'bc6c85afa41378968f47932f8f5e4a23d48eefb6',
 };
 const INGEN_PIXEL = process.argv.includes('ingen');
 const LIVE = process.argv.includes('--live');
