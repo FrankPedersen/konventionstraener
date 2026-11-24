@@ -750,3 +750,5 @@ Kortsiden er bygget med `tools/build_konventionskort.py`, og de byggede filer er
 - Specens skærmbilleder af `traener.html?k=multi-2ru` (svar, ret efter 2♠, dobling, ⓘ og 320 px) er ikke taget, fordi opgaven til session 3 kun nævnte de tre ovenfor.
 
 Stoppet før fletning; venter på Franks godkendelse.
+
+**Tokenforbrug i session 3** (42 svar, 16:42–17:16 UTC, målt før den sidste commit): nye input 88 · skrevet til cachen 112.898 · læst fra cachen 3.193.036 · output 17.455; i alt 3.323.477.
