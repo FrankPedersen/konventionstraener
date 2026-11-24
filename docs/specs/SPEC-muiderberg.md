@@ -1,3 +1,5 @@
+Godkendt af Frank og udgivet 24. november 2026 (`512c486`); grenen er slettet.
+
 # SPEC-muiderberg
 
 21. november 2026 · Frank · rettet 24. november 2026 (rådgiverens forslag, se Afklaret 8–11)
@@ -411,3 +413,5 @@ Stoppet før fletning; venter på Franks gennemgang af tabellen og godkendelse.
 Frank, ordret: "Jeg har gennemgået tabellen 'Tekster til gennemgang' og billederne. Er alt grønt, er Muiderberg godkendt, også de tre rækker med (tilføjelse)."
 
 Før fletningen er `tjek_muiderberg.py` (7 af 7) og `tjek_multi_2ru.py` (8 af 8) kørt én gang på grenen og begge grønne.
+
+**Udgivelsen (24. nov. 2026):** `muiderberg` er flettet med `--no-ff` som `512c486` og pushet sammen med tagget `v-foer-muiderberg` (`f539056`). GitHub Pages har bygget `512c486` (grøn). Live-tjek mod www.kontraktbridge.dk/konventionstraener/: `node tools/tjek_sidefod.mjs --live` er "Alt i orden". `traener.html?k=muiderberg` ved 390 px på dansk og engelsk: titlen, meldekassen med valg, et svar giver facit, ⓘ åbner kortet og ingen vandret scroll. Kortsiden (`viden/konventionskort.html`): knappen "Muiderberg (Bikini) 2♥/2♠" åbner kortet med alertering, og der er ingen vandret scroll. `index.html` og `data/konventioner.json` har ikke `ff-muiderberg`, og Muiderberg står blandt de klare trænere (ikke "Kommer"); `viden/index.html` har ikke `ff-muiderberg` under Forslag. Grenen er slettet lokalt og på origin. Tallet 47 konventioner med status "klar" på forsiden rettes på næste Forside-gren.
