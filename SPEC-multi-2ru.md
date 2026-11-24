@@ -402,6 +402,7 @@ Tal står kun, når kilderne giver dem: 5–10 hp og W's tal. Grænserne fra gen
 **Tokenforbrug** (udfyldes af hver session: nye input · skrevet til cachen · læst fra cachen · output):
 - Session 1: 150 · 240.132 · 11.994.692 · 109.409; i alt 12.344.383
 - Session 2: 194 · 309.681 · 19.760.828 · 116.651; i alt 20.187.354
+- Session 2b: 106 · 202.515 · 7.340.705 · 50.038; i alt 7.593.364
 - Session 3:
 - Efter godkendelsen:
 
@@ -644,3 +645,5 @@ I dag forklarer appen 3♥ som "støtte til hjerter. Når modparten melder spar,
 - hele testsuiten og de fulde pixeltests i forgrunden;
 - skærmbilleder af én side i `viden/` og af kortsiden med knappen "Multi 2♦", sammen med specens skærmbilleder af træneren, i `C:\Users\frank\Kontraktbridge\skaermbilleder\multi-2ru\`;
 - stop før fletning og en rapport med tokenforbruget.
+
+**Tokenforbrug i session 2b** (53 svar, 16:18–16:27 UTC, målt før den sidste commit): nye input 106 · skrevet til cachen 202.515 · læst fra cachen 7.340.705 · output 50.038; i alt 7.593.364.
