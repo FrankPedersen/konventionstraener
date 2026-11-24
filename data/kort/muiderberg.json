@@ -1,0 +1,394 @@
+{
+  "skabelon": "konvention/2",
+  "type": "melding",
+  "id": "muiderberg",
+  "navn": "Muiderberg (Bikini) 2♥/2♠",
+  "undertitel": "2♥/2♠ viser en femfarve i majoren og en firfarve i en ukendt minor",
+  "kilde": "Franks tekst om Muiderberg (21. november 2026) · hullerne udfyldt efter dokumentet Ruder Multi",
+  "kategori": "aabning",
+  "noegle": "gul",
+  "alert": "2♥/2♠ alerteres",
+  "formaal": "At bruge 2♥ og 2♠ til svage hænder med en femfarve i majoren og en firfarve i en minor, når Multi 2♦ tager de svage hænder med en seksfarve i en major.",
+  "situation": {
+    "auction": [
+      [
+        "Dig",
+        "?"
+      ]
+    ],
+    "tekst": "Du åbner med en svag hånd, en femfarve i hjerter eller spar og mindst fire kort i en minor. Muiderberg forudsætter, at Multi 2♦ viser de svage hænder med en seksfarve i en major.",
+    "gaelderFor": "Åbning med en femfarve i en major, mindst fire kort i en minor og ca. 5–10 hp"
+  },
+  "kortfortalt": "2♥/2♠ viser en femfarve i majoren og mindst fire kort i en ukendt minor med ca. 5–10 hp. Pas og løft er præference, 3♣ er pas eller ret til åbners minor, og 2NT spørger om minor og styrke.",
+  "meldinger": [
+    {
+      "gruppe": "Åbner"
+    },
+    {
+      "bud": "2♥",
+      "noegle": "gul",
+      "styrke": "5–10 hp",
+      "viser": "5+ hjerter og 4+ kort i en ukendt minor"
+    },
+    {
+      "bud": "2♠",
+      "noegle": "gul",
+      "styrke": "5–10 hp",
+      "viser": "5+ spar og 4+ kort i en ukendt minor"
+    },
+    {
+      "gruppe": "Svarer"
+    },
+    {
+      "bud": "Pas",
+      "noegle": "gra",
+      "viser": "Præference til åbners major"
+    },
+    {
+      "bud": "2NT",
+      "noegle": "bla",
+      "viser": "Kunstigt, stærkt spørgebud: åbner viser minor og styrke"
+    },
+    {
+      "bud": "3♣",
+      "noegle": "gul",
+      "viser": "Pas eller ret: ønske om at spille i åbners minor. Åbner passer med klør og melder 3♦ med ruder"
+    },
+    {
+      "bud": "3♥ / 3♠",
+      "noegle": "rosa",
+      "viser": "Enkeltløft i åbners major (3♥ efter 2♥, 3♠ efter 2♠): spærrepræget og ikke krav (RONF)"
+    },
+    {
+      "bud": "4♥ / 4♠",
+      "noegle": "gron",
+      "viser": "Slutkontrakt i åbners major"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Åbner svarer på 2NT (det samme efter 2♠)",
+      "auction": [
+        [
+          "Dig",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "3♣",
+          "noegle": "gul",
+          "viser": "Minimum med klør"
+        },
+        {
+          "bud": "3♦",
+          "noegle": "gul",
+          "viser": "Minimum med ruder"
+        },
+        {
+          "bud": "3♥",
+          "noegle": "gul",
+          "viser": "Maksimum med klør"
+        },
+        {
+          "bud": "3♠",
+          "noegle": "gul",
+          "viser": "Maksimum med ruder"
+        }
+      ],
+      "note": "Efter svaret vælger makker mellem delkontrakt, udgang og slem."
+    },
+    {
+      "titel": "Åbner efter 3♣ (pas eller ret, det samme efter 2♠)",
+      "auction": [
+        [
+          "Dig",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "meldinger": [
+        {
+          "bud": "Pas",
+          "noegle": "gra",
+          "viser": "Sidefarve i klør"
+        },
+        {
+          "bud": "3♦",
+          "noegle": "gron",
+          "viser": "Sidefarve i ruder"
+        }
+      ]
+    }
+  ],
+  "indmelding": [
+    {
+      "situation": "Modparten dobler eller melder ind",
+      "noegle": "gra",
+      "regel": "Kilderne siger intet om meldingerne efter modpartens dobling eller indmelding. Spørgsmålet står under Åbne spørgsmål."
+    }
+  ],
+  "eksempler": [
+    {
+      "auction": [
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          11,
+          10,
+          7,
+          5
+        ],
+        "H": [
+          7,
+          3
+        ],
+        "D": [
+          9,
+          8
+        ],
+        "C": [
+          13,
+          12,
+          6,
+          5
+        ]
+      },
+      "svar": "2♠",
+      "forklaring": "5 spar, 4 klør og 9 hp: 2♠ – Muiderberg: en femfarve i spar og mindst fire kort i en ukendt minor med ca. 5–10 hp."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "2♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          5
+        ],
+        "H": [
+          12,
+          10,
+          9,
+          4,
+          2
+        ],
+        "D": [
+          9,
+          8,
+          4
+        ],
+        "C": [
+          14,
+          12,
+          6,
+          3
+        ]
+      },
+      "svar": "3♣",
+      "forklaring": "1 spar, 4 klør, 3 ruder og 8 hp: 3♣ – pas eller ret: ønske om at spille i åbners minor. Åbner passer med klør og melder 3♦ med ruder."
+    },
+    {
+      "auction": [
+        [
+          "Makker",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [],
+        "H": [
+          14,
+          11,
+          10,
+          7
+        ],
+        "D": [
+          14,
+          13,
+          9,
+          7
+        ],
+        "C": [
+          13,
+          12,
+          10,
+          6,
+          5
+        ]
+      },
+      "svar": "2NT",
+      "forklaring": "17 hp: 2NT – kunstigt, stærkt spørgebud. Åbner viser minor og styrke: 3♣ minimum med klør, 3♦ minimum med ruder, 3♥ maksimum med klør og 3♠ maksimum med ruder."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "2♠"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "2NT"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          10,
+          8,
+          6,
+          4
+        ],
+        "H": [
+          10
+        ],
+        "D": [
+          9,
+          5,
+          2
+        ],
+        "C": [
+          13,
+          12,
+          9,
+          5
+        ]
+      },
+      "svar": "3♥",
+      "forklaring": "5 spar, 4 klør og 8 hp (maksimum): 3♥ – maksimum med klør."
+    },
+    {
+      "auction": [
+        [
+          "Dig",
+          "2♥"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Makker",
+          "3♣"
+        ],
+        [
+          "Modstander",
+          "Pas"
+        ],
+        [
+          "Dig",
+          "?"
+        ]
+      ],
+      "haand": {
+        "S": [
+          13,
+          9
+        ],
+        "H": [
+          12,
+          11,
+          8,
+          3,
+          2
+        ],
+        "D": [
+          11,
+          9,
+          4,
+          2
+        ],
+        "C": [
+          13,
+          8
+        ]
+      },
+      "svar": "3♦",
+      "forklaring": "5 hjerter og 4 ruder: 3♦ – 3♣ er pas eller ret, og med ruder retter åbner til 3♦."
+    }
+  ],
+  "faldgruber": [
+    "3♣ er pas eller ret, ikke svarers egen farve: åbner passer med klør og melder 3♦ med ruder.",
+    "3♥/3♠ er et spærrepræget enkeltløft og ikke krav; det stærke spørgebud er 2NT.",
+    "Med seks kort i majoren åbnes Multi 2♦, ikke 2♥/2♠."
+  ],
+  "aabne": [
+    "Minorfarven ved ugunstig zonestilling: mange par kræver, at minoren normalt er mindst 5 kort.",
+    "Ny farve fra en stærk svarhånd, der er ligeglad med åbners farver: efter dokumentet Ruder Multi naturlig og krav i én runde, og derefter melder begge så naturligt som muligt.",
+    "Meldingerne efter modpartens dobling og indmelding.",
+    "Hænder med to minorer på 4+ kort (fx 5-0-4-4)"
+  ],
+  "relaterede": [
+    "Multi 2♦"
+  ],
+  "traener": {
+    "url": "traener.html?k=muiderberg",
+    "pool": "pools/muiderberg.json"
+  }
+}

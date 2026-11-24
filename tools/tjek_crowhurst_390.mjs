@@ -1,10 +1,10 @@
 // Accepttest (SPEC-crowhurst-390.md): crowhurst-kortet giver ingen vandret scroll ved 390–398 px, og alt andet er pixel for
 // pixel som før. Crowhurst-kortet tjekkes ved 390, 393, 395 og 398 px på dansk og engelsk i alle visninger med alt foldet ud
 // og i hint-vinduet i traener.html?k=crowhurst. Ved 390 px er de andre 48 kort, crowhurst i kompakt visning og alle sider i
-// viden/ som tagget; ved 399 og 1280 px er alle sider og alle 49 kort som tagget. Kortet multi-2ru (SPEC-multi-2ru.md) er
-// kommet til efter tagget, så der er 50 kort; det tjekkes kun for vandret scroll ved 390–399 og 1280 px (se NYE_KORT), og
-// de 49 andre kort sammenlignes som før. Siden før vises fra tagget (filerne læses med git show), men sidefoden og
-// kortlisten kommer fra grenen (se NYERE), så siden før også har 50 kort. Hver side åbnes i sin egen browserkontekst
+// viden/ som tagget; ved 399 og 1280 px er alle sider og alle 49 kort som tagget. Kortet muiderberg (SPEC-muiderberg.md) er
+// kommet til efter tagget, så der er 51 kort; det tjekkes kun for vandret scroll ved 390–399 og 1280 px (se NYE_KORT), og
+// de 50 andre kort sammenlignes som før. Siden før vises fra tagget (filerne læses med git show), men sidefoden og
+// kortlisten kommer fra grenen (se NYERE), så siden før også har 51 kort. Hver side åbnes i sin egen browserkontekst
 // med tom localStorage og uden faneskift, som i tjek_viden_320.mjs.
 // "Stikker ud" måles mod clientWidth, også inde i kortets shadow root. Med --live åbnes siderne, kortene og træneren på
 // www.kontraktbridge.dk/konventionstraener/, og pixelsammenligningen med tagget, der kun giver mening lokalt, springes
@@ -28,15 +28,17 @@ const TAG = 'v-foer-crowhurst-390';
 // Filer, der bevidst er ændret efter tagget, sammenlignes med deres godkendte udgave i stedet, som i tjek_viden_320.mjs:
 // Makker 2-dokumentet fik markeringerne rettet og tre rettelser mere (SPEC-makker2-markeringer.md), og udgaven i commit
 // bca7e0c er den godkendte (Franks valg 15. november 2026, SPEC-pixeltolerance.md).
-// Sidefoden med Modspil (assets/footer.js) og kortlisten med Multi 2♦ (data/kort/index.json og data/kort/multi-2ru.json)
-// er godkendt i commit e4e3936 på grenen multi-2ru (SPEC-multi-2ru.md, Franks svar 2 (a) og 3), så siden før har samme
-// sidefod, knappen "Multi 2♦" og 50 kort, og kun utilsigtede ændringer tæller.
+// Sidefoden med Modspil (assets/footer.js) og kortlisten med Multi 2♦ og Muiderberg (data/kort/index.json,
+// data/kort/multi-2ru.json og data/kort/muiderberg.json) hentes fra commit H = bc6c85a på grenen muiderberg, den sidste
+// commit, der ændrer dem (SPEC-muiderberg.md, Afklaret 10; som SPEC-multi-2ru.md, Franks svar 2 (a) og 3), så siden før
+// har samme sidefod, knapperne "Multi 2♦" og "Muiderberg (Bikini) 2♥/2♠" og 51 kort, og kun utilsigtede ændringer tæller.
 // Alt andet kommer fra tagget.
 const NYERE = {
   'viden/2-over-1-makker2.html': 'bca7e0c446f14ebf86724675b336c9e7306f8303',
-  'assets/footer.js': 'e4e3936d794ede1d21896eadd751bbcd18382a67',
-  'data/kort/index.json': 'e4e3936d794ede1d21896eadd751bbcd18382a67',
-  'data/kort/multi-2ru.json': 'e4e3936d794ede1d21896eadd751bbcd18382a67',
+  'assets/footer.js': 'bc6c85afa41378968f47932f8f5e4a23d48eefb6',
+  'data/kort/index.json': 'bc6c85afa41378968f47932f8f5e4a23d48eefb6',
+  'data/kort/multi-2ru.json': 'bc6c85afa41378968f47932f8f5e4a23d48eefb6',
+  'data/kort/muiderberg.json': 'bc6c85afa41378968f47932f8f5e4a23d48eefb6',
 };
 const INGEN_PIXEL = process.argv.includes('ingen');
 const LIVE = process.argv.includes('--live');
@@ -48,8 +50,8 @@ const ID = 'crowhurst';
 const BREDDER = [390, 393, 395, 398];
 const VISNINGER = ['fuld', 'kompakt', 'skabelon'];
 // Kort, der er kommet til efter tagget, findes ikke dér og tjekkes kun for vandret scroll, ved de bredder, hvor de andre kort
-// sammenlignes med tagget (SPEC-multi-2ru.md, Franks svar 21. november 2026).
-const NYE_KORT = ['multi-2ru'];
+// sammenlignes med tagget (SPEC-muiderberg.md, Afklaret 10; som SPEC-multi-2ru.md, Franks svar 21. november 2026).
+const NYE_KORT = ['muiderberg'];
 const browser = [
   process.env.CHROME,
   'C:/Program Files/Google/Chrome/Application/chrome.exe',
@@ -403,8 +405,8 @@ try {
       await t.gå(`${nu.url}${KORT}`);
       const iderNu = await t.kortKlar();
       await t.luk();
-      tjek(iderNu.length === 50 && ider.length === 50 && ider.every((id) => iderNu.includes(id)),
-        `Konventionskortet ved ${bredde} px: alle 50 kort er med nu og før, og de 49 uden de nye kort sammenlignes`, `${iderNu.length} nu, ${ider.length} før`);
+      tjek(iderNu.length === 51 && ider.length === 51 && ider.every((id) => iderNu.includes(id)),
+        `Konventionskortet ved ${bredde} px: alle 51 kort er med nu og før, og de 50 uden de nye kort sammenlignes`, `${iderNu.length} nu, ${ider.length} før`);
       for (const id of ider) {  // kortene før; de nye kort sammenlignes ikke
         if (NYE_KORT.includes(id)) continue;
         for (const visning of ['fuld', 'kompakt']) {
