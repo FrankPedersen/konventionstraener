@@ -405,3 +405,9 @@ Alle forklaringer og bonusspørgsmål i `dealer/muiderberg.py`, som de står i p
 Stoppet før fletning; venter på Franks gennemgang af tabellen og godkendelse.
 
 **Tokenforbrug i session 2** (73 svar, 17:59–18:31 UTC, målt før den sidste commit): nye input 148 · skrevet til cachen 131.592 · læst fra cachen 6.763.401 · output 19.982; i alt 6.915.123.
+
+### Franks godkendelse, 24. nov. 2026
+
+Frank, ordret: "Jeg har gennemgået tabellen 'Tekster til gennemgang' og billederne. Er alt grønt, er Muiderberg godkendt, også de tre rækker med (tilføjelse)."
+
+Før fletningen er `tjek_muiderberg.py` (7 af 7) og `tjek_multi_2ru.py` (8 af 8) kørt én gang på grenen og begge grønne.
