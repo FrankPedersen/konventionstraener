@@ -220,7 +220,7 @@ Efter Franks "godkendt" (Sonnet, medium effort): flet, push, live-tjek, arkivér
 
 **Tokenforbrug** (nye input · skrevet til cachen · læst fra cachen · output):
 - Session 1: 144 · 289.555 · 13.654.337 · 92.176; i alt 14.036.212
-- Session 2:
+- Session 2: 148 · 131.592 · 6.763.401 · 19.982; i alt 6.915.123
 - Efter godkendelsen:
 
 ### Session 1 (24. nov. 2026)
@@ -365,3 +365,43 @@ Alle forklaringer og bonusspørgsmål i `dealer/muiderberg.py`, som de står i p
 - stop før fletning og en rapport med tokenforbruget.
 
 **Tokenforbrug i session 1** (72 svar, 17:39–17:54 UTC, målt før den sidste commit): nye input 144 · skrevet til cachen 289.555 · læst fra cachen 13.654.337 · output 92.176; i alt 14.036.212.
+
+### Session 2 (24. nov. 2026)
+
+**Status:** Franks tre rettelser er lavet, og H er flyttet til den commit. Alle tjek, hele suiten og de to fulde pixeltests er grønne, og skærmbillederne er taget. Ingen tests fik tidsfejl, så ingen er kørt om. Intet er flettet eller pushet.
+
+**Commits på `muiderberg`:**
+- `bc6c85a` (= H): rettelserne af kortet, tabellen og `tjek_multi_2ru.py`;
+- `7923ee4`: H i `NYERE` i `tools/tjek_viden_320.mjs` og `tools/tjek_crowhurst_390.mjs` (fire filer og kommentaren; ellers uændrede);
+- derefter dette afsnit, `SYSTEM.md` (uden for repoet) og tokenforbruget.
+
+**H = `bc6c85a`** (`bc6c85afa41378968f47932f8f5e4a23d48eefb6`) er den sidste commit, der ændrer `assets/footer.js`, `data/kort/index.json`, `data/kort/multi-2ru.json` eller `data/kort/muiderberg.json` (tidligere `2d411fe`). Derefter er de fire filer ikke ændret.
+
+**Rettelserne** (Franks svar 24. november 2026):
+1. **`tools/tjek_multi_2ru.py` punkt 6.** Før: punktet sammenlignede tagget `v-foer-multi-2ru` med arbejdsmappen og var rødt på grenen, fordi posten `muiderberg` og de ændrede kort ikke findes i tagget. Nu: det sammenligner tagget med flettecommitten `9ce90ee` (`git show 9ce90ee:data/konventioner.json` og `git diff --name-only <tag> 9ce90ee -- <fredede filer>`), med de samme lister og påstande som før (posten multi-2ru som i specen, `ff-multi-2ru` væk, de øvrige poster og de fredede filer uændrede). Mangler tagget eller commitet, springes punktet over. Hvorfor: Multi 2♦ er flettet, og Muiderberg ændrer med vilje de samme filer bagefter, så arbejdsmappen er ikke længere det, specen for Multi 2♦ afgrænser.
+2. **Alert.** Før: kortet havde intet `alert`-felt (spørgsmål 2). Nu: `"alert": "2♥/2♠ alerteres"` efter `noegle`, som på multi-2ru-kortet, og rækken står i tabellen som `kortet<br>Alert` med kilden "(tilføjelse) (Franks svar 24. november 2026)". Hvorfor: Franks svar. Kortet viser chippen "Alertér".
+3. **To minorer på 4+ kort.** Før: kortet nævnte det ikke (spørgsmål 3). Nu: linjen "Hænder med to minorer på 4+ kort (fx 5-0-4-4)" er sidst under Åbne spørgsmål. Hvorfor: Franks svar; sådanne hænder trænes ikke i v1. Linjen står ikke som egen række i tabellen, fordi Frank kun bad om alert-rækken.
+4. Tabellen gennemgår Frank før fletningen (svar 4).
+
+**Tests** (alt på `7923ee4`, én gang, i forgrunden):
+- `tjek_muiderberg.py`: i orden (7 af 7 punkter), 15 s;
+- `tjek_multi_2ru.py`: i orden (8 af 8 punkter, punkt 6 grønt), 15 s;
+- `tjek_konventionskort.py`: "51 konventionskort er i orden", 0 s;
+- `tjek_kort_eksempler.py`: "228 meldeeksempler er i orden (0 advarsler)", 1 s;
+- `tjek_fagord.py`: i orden, 2 s; `tjek_bydeform.py`: i orden, 1 s; `tjek_sprog.py`: OK (10 tests), 10 s;
+- `tjek_crowhurst.py`: i orden (534 hænder, 50000 tilfældige hænder), 6 s;
+- `tjek_makker2_aftaler.py`, `tjek_makker2_bilag_c.py`, `tjek_makker2_markeringer.py`: i orden, 0-1 s hver;
+- `tjek_skrifttyper.py`: i orden, 0 s; `node tools/tjek_skrifttyper.mjs`: alle ok, 34 s;
+- `sprogtjek.py`: "ingen ukendte ord", 25 s;
+- `node tools/tjek_sidefod.mjs`: "Alt i orden", 24 s;
+- `node tools/tjek_bred_multi.mjs`: i orden (10 tjek ok, 0 fejl), 209 s;
+- `node --test tools/pixelstoej.test.mjs`: 7 af 7 bestået, 0 s;
+- `node tools/tjek_viden_320.mjs`: "Alt i orden: 825 tjek", 7 NB-linjer, 606 s;
+- `node tools/tjek_crowhurst_390.mjs`: "Alt i orden: 460 tjek", 22 NB-linjer, 759 s.
+- NB-linjerne er støj (0 eller 1 pixel over 5 trin, højst 5 tællende) i bl.a. `2-over-1-makker2.html`, `bridgesystem.html` og enkelte kort (fx ff-dont); ingen i muiderberg-kortet, multi-2ru eller sidefoden.
+
+**Skærmbilleder** i `C:\Users\frank\Kontraktbridge\skaermbilleder\muiderberg\` (lokal webserver og Chrome med CDP, hele siden, dansk og engelsk ved 1280, 390 og 320 px, 18 billeder): `svar-<sprog>-<bredde>px.png` (svar med forklaring), `spm-<sprog>-<bredde>px.png` (efter 2NT), `hint-<sprog>-<bredde>px.png` (ⓘ med kortet åbent). Ingen vandret scroll: `scrollWidth` er lig med bredden i alle 18 (også 320 px).
+
+Stoppet før fletning; venter på Franks gennemgang af tabellen og godkendelse.
+
+**Tokenforbrug i session 2** (73 svar, 17:59–18:31 UTC, målt før den sidste commit): nye input 148 · skrevet til cachen 131.592 · læst fra cachen 6.763.401 · output 19.982; i alt 6.915.123.
