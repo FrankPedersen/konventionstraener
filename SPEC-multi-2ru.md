@@ -653,3 +653,69 @@ I dag forklarer appen 3♥ som "støtte til hjerter. Når modparten melder spar,
 Ordret fra Franks besked til session 2c:
 
 > "3♥ over 2♠: Se først i Ruder_Multi.docx. Siger den, hvad 3♥ betyder efter 2♦–(2♠), så brug dens ord og angiv kilden i tabellen. Ellers vælger jeg (c): 3♥ trænes ikke over 2♠, og kun dobling og pas trænes dér. Ret forklaringen af pas over 2♠ efter kilden, så den ikke peger på 3♥. Byg puljen igen, og ret tabellen. Hashen til pixeltestene er sessionens sidste commit, og tallet for kortene sættes til 50. Session 3 må ikke ændre footer.js, index.json eller multi-2ru.json. Stop før fletning."
+
+### Session 2c (24. nov. 2026)
+
+**Status:** Franks svar 3 står ordret ovenfor. Ruder_Multi.docx siger, hvad 3♥ betyder over 2♠, så 3♥ trænes dér som pas eller ret efter dokumentet, ikke efter (c). Forklaringen af pas over 2♠ bygger nu på kilderne, puljen er bygget igen, tabellen er rettet, og pixeltestene har fået hashen H. Hele suiten og de fulde pixeltests er ikke kørt (session 3). Intet er flettet eller pushet.
+
+**Commits på `multi-2ru`:**
+- `9cacb6d`: Franks svar 3 ordret;
+- `af929e4`: `dealer/multi_2ru.py`, `tools/tjek_multi_2ru.py` og specens regel og grænser for 3♥ og pas over 2♠;
+- `e4e3936`: puljen bygget igen og kortet (eksemplerne fra den nye pulje og "3♥ = pas eller ret" over 2♠);
+- `6fe0d62`: tabellen under "Tekster til gennemgang";
+- `86420ed`: de to pixeltests (`NYERE` og 50 kort);
+- derefter dette afsnit, `SYSTEM.md` uden for repoet og tokenforbruget.
+
+**Ruder_Multi.docx** (`Kontraktbridge\Ruder_Multi.docx`, læst i denne session) har på første side afsnittet "Hvis fjenden melder ind:". Overskriften er "2♦ (2/3ny)", altså en indmelding i ny farve på 2- eller 3-trinnet, og under den står ordret:
+
+> | Melding | Betydning |
+> | --- | --- |
+> | pas | Intet at tilføje |
+> | D | Straf! |
+> | ♥/♠ | Pas eller korriger |
+> | minor | Naturligt og ikke krav |
+
+2♠ er en indmelding i ny farve på 2-trinnet, så reglen dækker 2♦ – (2♠), og 3♥ er "Pas eller korriger". Dokumentet nævner ikke 2♠ for sig. Jyderup-arket går forud for "D Straf!", fordi det giver doblingen over 2♠ (styrke), men arket siger intet om 3♥, så W udfylder hullet (Afklaret, punkt 2).
+
+**Valget for 3♥:** kildens ord, ikke (c). "Pas eller korriger" står som "pas eller ret", sådan som specen allerede gengiver "korriger" over 3♣ og 3♦ og i tabellen over svarene.
+- **Regel og grænse:** 3♥ over 2♠ kræver 3+ i begge majorer og 7+ hp, altså grænsen `PAS_RET` som over 3♣ og 3♦ (bekræftet af Frank, Afklaret 6). Dobling (10+ hp) prøves først, så 3♥ får hænder med 7–9 hp. `STOETTE_HJ` (3+ hjerter og 6–9 hp) er fjernet fra specens kodeblok, modulet og accepttesten, og specen siger under Kilderne, at 3♥ over 2♠ er pas eller ret efter W.
+- **3♥:** "3 hjerter, 4 spar og 9 hp: 3♥ – pas eller ret. Åbner passer med hjerter og melder 3♠ med spar." (engelsk "3 hearts, 4 spades and 9 HCP: 3♥ – pass or correct. Opener passes with hearts and bids 3♠ with spades.").
+- **Pas under 7 hp:** "1 hp: pas – hånden er for svag til at doble, og der er intet at tilføje." (engelsk "1 HCP: pass – the hand is too weak to double, and there is nothing to add.").
+- **Pas med 7–9 hp uden tre kort i begge majorer:** "4 hjerter, ingen spar og 7 hp: pas – hånden er for svag til at doble, og uden tre kort i begge majorer er der intet at tilføje." (engelsk "4 hearts, no spades and 7 HCP: pass – the hand is too weak to double, and without three cards in both majors there is nothing to add.").
+- Pas-teksterne nævner hverken 3♥ eller støtte til hjerter. "For svag til at doble" kommer fra arket, "intet at tilføje" fra W, og "uden tre kort i begge majorer" er grænsen `PAS_RET` som over 3♣ og 3♦.
+- **Kortet:** "Modparten melder 2♠" under Indmelding har fået "3♥ = pas eller ret." efter doblingen, så kortet bag ⓘ siger det samme som træneren. Ud over eksemplerne er det den eneste ændring på kortet.
+- **Ikke rettet:** W's regel giver også "minor – Naturligt og ikke krav" over 2♠. Det trænes ikke: 3♣ og 3♦ står kun som forkerte valgmuligheder, og hænderne over 2♠ har højst fem kort i hver minor, så ingen hånd rammer grænsen `MINOR_NAT` (spørgsmål 1).
+
+**Puljen:** `python build_pools.py multi-2ru` gav 499 hænder fordelt på 57 meldinger, 8–9 pr. melding og ingen advarsler. Over 2♠ er der 8 hænder med hver af X, 3♥ og pas. Puljen trækkes på ny ved hver bygning, så kortets fire eksempler er hentet igen med samme meldeforløb og svar som eksempel 3, 4, 5 og 9 (den hånd, hvis hp ligger nærmest W's eksempel) og med puljens forklaring:
+- 2♦ – pas – ?: ♠2 ♥EKDBT75 ♦D ♣K653 (15 hp) → 4♥;
+- 2♦ – pas – ?: ♠K7532 ♥EK ♦B3 ♣EK93 (18 hp) → 2NT;
+- 2♦ – X – ?: ♠B8 ♥65 ♦EKT9643 ♣98 (8 hp) → pas;
+- 2♦ – (4♥) – ?: ♠D8743 ♥KD32 ♦2 ♣B53 (8 hp) → 4♠.
+
+Kortsiden er bygget med `tools/build_konventionskort.py`, og de byggede filer er uændrede, fordi siden henter kortene fra `data/kort/`.
+
+**Tabellen** under "Tekster til gennemgang" har de nye tekster i rækkerne 3♥ og pas over 2♠, med kilden i 3♥-rækken, og noterne 1 og 2 er skrevet om. Ingen rækker står længere som tilføjelse. Indledningen siger, at de øvrige rækker har tal fra puljen fra session 2, og at koden bag dem er uændret.
+
+**Testresultater:**
+- `tjek_multi_2ru.py`: i orden (8 af 8 punkter);
+- `tjek_konventionskort.py`: "50 konventionskort er i orden";
+- `tjek_kort_eksempler.py multi-2ru`: "4 meldeeksempler er i orden (0 advarsler)";
+- `tjek_fagord.py` og `tjek_bydeform.py`: i orden, og `tjek_sprog.py`: OK (10 tests);
+- `sprogtjek.py`: ingen ukendte ord;
+- `node --check` på `tjek_viden_320.mjs` og `tjek_crowhurst_390.mjs`: i orden. De fulde pixeltests er ikke kørt.
+
+**H = `e4e3936`** (`e4e3936d794ede1d21896eadd751bbcd18382a67`) er den sidste commit, der ændrer `assets/footer.js`, `data/kort/index.json` eller `data/kort/multi-2ru.json` (Franks svar 2 (a) og 3). De senere commits ændrer ikke de tre filer, så de er de samme som i sessionens sidste commit.
+- Begge pixeltests har de tre filer i `NYERE` med H. Siden før henter dem fra H og resten fra tagget som før, så den har Modspil i sidefoden, knappen "Multi 2♦" og 50 kort.
+- `tjek_crowhurst_390.mjs`: tjekket, der hed "tagget 49", forventer nu 50 kort både nu og før, og alle kortene før skal findes nu.
+- `tjek_viden_320.mjs` havde intet tal for siden før. Testen tjekker nu også, at siden før har 50 kort, så det ses, hvis `NYERE` ikke virker.
+- Pixelsløjfen springer stadig `NYE_KORT` (multi-2ru) over i begge tests, så de 49 andre kort sammenlignes.
+
+**Spørgsmål til Frank:**
+1. **Minor over 2♠:** W's regel for "2/3ny" giver også "minor – Naturligt og ikke krav" over 2♠. Skal 3♣ og 3♦ over 2♠ trænes som over 3♣ (grænsen `MINOR_NAT`), eller skal de blive stående som forkerte valgmuligheder?
+2. **Teksterne:** tabellen venter stadig på Franks godkendelse før fletningen.
+
+**Til session 3 (Sonnet):**
+- Hele suiten og de fulde pixeltests (`node tools/tjek_viden_320.mjs` og `node tools/tjek_crowhurst_390.mjs`) køres én gang hver i forgrunden.
+- Skærmbilleder af én side i `viden/` og af kortsiden med knappen "Multi 2♦" gemmes i `C:\Users\frank\Kontraktbridge\skaermbilleder\multi-2ru\` sammen med specens skærmbilleder af træneren (Accepttest).
+- `assets/footer.js`, `data/kort/index.json` og `data/kort/multi-2ru.json` må ikke ændres (Franks svar 3), for så passer H ikke længere.
+- Der stoppes før fletning, og rapporten har tokenforbruget i fire tal.
