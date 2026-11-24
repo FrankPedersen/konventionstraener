@@ -86,7 +86,7 @@ Mærkningen i tabellerne viser, hvor hver regel kommer fra: **J** er Jyderup-ark
 
 ### Når modparten melder ind
 
-**Over 2♠ (2♦ – 2♠ – ?), J:** X viser styrke (negativ dobling) og beder åbner strafpasse med spar.
+**Over 2♠ (2♦ – 2♠ – ?), J:** X viser styrke (negativ dobling) og beder åbner strafpasse med spar. 3♥ er pas eller ret efter W, hvis regel for indmeldinger gælder indmeldinger på 2- og 3-trinnet og derfor også 2♠ (Franks svar 3 og Session 2c under Afklaret).
 
 **Over andre indmeldinger (2♦ – 3♣, 3♦ eller 4♥ – ?), W (arket siger intet):**
 
@@ -205,7 +205,7 @@ SVAG_FIT_X   = dict(begge=3, hp_max=5)          # 2♥: 3+ i begge majorer, høj
 
 # indmelding over 2♠: 2♦ – (2♠) – ?
 NEGATIV_X    = dict(hp=10)                      # X: 10+ hp
-STOETTE_HJ   = dict(hjerter=3, hp=(6, 9))       # 3♥: 3+ hjerter, 6–9 hp
+# 3♥ (W): pas eller ret med grænsen PAS_RET nedenfor (3+ i begge majorer, 7+ hp)
 # Pas: resten
 
 # indmelding over 3♣, 3♦ og 4♥ (W)

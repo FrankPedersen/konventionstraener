@@ -14,8 +14,8 @@ indmelding):
   spm      – 2♦ – pas – 2NT – pas – ?            3♣ maksimum · 3♦ minimum og hjerter · 3♥ minimum og spar
   spm2     – … 2NT – pas – 3♣ – pas – 3♦ – pas – ?   krydsmeldingen: 3♥ = spar og 3♠ = hjerter
   dobling  – 2♦ – (X) – ?                        pas ruder · XX styrke · 2♥ svag med fit i begge majorer · ellers som svar
-  ind_*    – 2♦ – (2♠ 3♣ 3♦ 4♥) – ?               over 2♠ efter J: X styrke · over 3♣, 3♦ og 4♥ efter W: X straf,
-                                                 ♥/♠ pas eller ret, minor naturligt
+  ind_*    – 2♦ – (2♠ 3♣ 3♦ 4♥) – ?               over 2♠ efter J: X styrke, og efter W: 3♥ pas eller ret ·
+                                                 over 3♣, 3♦ og 4♥ efter W: X straf, ♥/♠ pas eller ret, minor naturligt
 Ikke med i puljen (Afklaret, punkt 4 og 5): 4♣ og 3NT som svar, pas uden indblanding, svage hænder uden ruder og uden
 fit i begge majorer efter dobling, åbningshænder med 5–10 hp og to esser eller en firfarve i den anden major, spm2
 med minimum og to lige lange gode minorer under svar.
@@ -45,7 +45,7 @@ SVAG_FIT_X   = dict(begge=3, hp_max=5)          # 2♥: 3+ i begge majorer, høj
 
 # indmelding over 2♠: 2♦ – (2♠) – ?
 NEGATIV_X    = dict(hp=10)                      # X: 10+ hp
-STOETTE_HJ   = dict(hjerter=3, hp=(6, 9))       # 3♥: 3+ hjerter, 6–9 hp
+# 3♥ (W): pas eller ret med grænsen PAS_RET nedenfor (3+ i begge majorer, 7+ hp)
 # Pas: resten
 
 # indmelding over 3♣, 3♦ og 4♥ (W)
@@ -301,18 +301,17 @@ def indmelding_over(deres):
             return "X", tx(f"{hp} hp: X – styrke (negativ dobling). Med spar passer åbner, så doblingen står som straf.",
                            f"{hp} HCP: X – strength (negative double). With spades opener passes, so the double stands "
                            "for penalty.")
-        if L['H'] >= STOETTE_HJ['hjerter'] and inden(hp, STOETTE_HJ['hp']):
-            return "3♥", tx(f"{L['H']} hjerter og {hp} hp: 3♥ – støtte til hjerter. Når modparten melder spar, har åbner "
-                            "oftest hjerter.",
-                            f"{antal(L['H'], 'H').en} and {hp} HCP: 3♥ – support for hearts. When the opponents bid spades, "
-                            "opener usually has hearts.")
-        if L['H'] >= STOETTE_HJ['hjerter']:
-            return "Pas", tx(f"{L['H']} hjerter og {hp} hp: pas – hånden er for svag til at doble og til at støtte hjerter.",
-                             f"{antal(L['H'], 'H').en} and {hp} HCP: pass – the hand is too weak to double and to "
-                             "support hearts.")
-        return "Pas", tx(f"{antal(L['H'], 'H')} og {hp} hp: pas – hånden er for svag til at doble og har ikke støtte til hjerter.",
-                         f"{antal(L['H'], 'H').en} and {hp} HCP: pass – the hand is too weak to double and has no "
-                         "support for hearts.")
+        b = og(antal(L['H'], 'H'), antal(L['S'], 'S'), hp_tx(hp))
+        if hp >= PAS_RET['hp'] and L['H'] >= 3 and L['S'] >= 3:
+            return "3♥", tx(f"{b}: 3♥ – pas eller ret. Åbner passer med hjerter og melder 3♠ med spar.",
+                            f"{b.en}: 3♥ – pass or correct. Opener passes with hearts and bids 3♠ with spades.")
+        if hp < PAS_RET['hp']:
+            return "Pas", tx(f"{hp} hp: pas – hånden er for svag til at doble, og der er intet at tilføje.",
+                             f"{hp} HCP: pass – the hand is too weak to double, and there is nothing to add.")
+        return "Pas", tx(f"{b}: pas – hånden er for svag til at doble, og uden tre kort i begge majorer er der intet at "
+                         "tilføje.",
+                         f"{b.en}: pass – the hand is too weak to double, and without three cards in both majors there is "
+                         "nothing to add.")
 
     def over_andet(hand, hp):
         L = lengths_of(hand)
@@ -570,8 +569,9 @@ SAMPLERS = {
     },
     "ind_2s": {
         "X": t((10, 16), S=(0, 4)),
-        "3♥": t(STOETTE_HJ['hp'], H=(3, 5), S=(0, 3)),
-        "Pas": either(t((0, 9), H=(0, 2), S=(0, 4)), t((0, 5), H=(3, 5), S=(0, 4))),
+        "3♥": t((PAS_RET['hp'], NEGATIV_X['hp'] - 1), H=(3, 4), S=(3, 4)),
+        "Pas": either(t((0, PAS_RET['hp'] - 1), S=(0, 4)), t((PAS_RET['hp'], NEGATIV_X['hp'] - 1), H=(0, 2), S=(0, 4)),
+                      t((PAS_RET['hp'], NEGATIV_X['hp'] - 1), S=(0, 2), H=(0, 5))),
     },
     "ind_3c": {
         "X": t((12, 17), C=(4, 5), S=(0, 4), H=(0, 4), D=(0, 4)),

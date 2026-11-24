@@ -170,12 +170,12 @@ def dobling(h):
 
 
 def indmelding(h, deres):
-    """2♦ – (deres) – ?  Over 2♠ efter J, over 3♣, 3♦ og 4♥ efter W."""
+    """2♦ – (deres) – ?  Over 2♠ dobling efter J og 3♥ (pas eller ret) efter W, over 3♣, 3♦ og 4♥ efter W."""
     L, hp = info(h)
     if deres == '2♠':
         if hp >= g('NEGATIV_X', 'hp'):
             return 'X'
-        if L['H'] >= g('STOETTE_HJ', 'hjerter') and mellem(hp, g('STOETTE_HJ', 'hp')):
+        if hp >= g('PAS_RET', 'hp') and L['H'] >= 3 and L['S'] >= 3:
             return '3♥'
         return 'Pas'
     trin, f = int(deres[0]), FARVE[deres[1]]
