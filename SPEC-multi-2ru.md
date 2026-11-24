@@ -719,3 +719,5 @@ Kortsiden er bygget med `tools/build_konventionskort.py`, og de byggede filer er
 - Skærmbilleder af én side i `viden/` og af kortsiden med knappen "Multi 2♦" gemmes i `C:\Users\frank\Kontraktbridge\skaermbilleder\multi-2ru\` sammen med specens skærmbilleder af træneren (Accepttest).
 - `assets/footer.js`, `data/kort/index.json` og `data/kort/multi-2ru.json` må ikke ændres (Franks svar 3), for så passer H ikke længere.
 - Der stoppes før fletning, og rapporten har tokenforbruget i fire tal.
+
+**Tokenforbrug i session 2c** (61 svar, 16:31–16:42 UTC, målt før den sidste commit): nye input 122 · skrevet til cachen 167.521 · læst fra cachen 7.729.749 · output 56.012; i alt 7.953.404.
