@@ -752,3 +752,11 @@ Kortsiden er bygget med `tools/build_konventionskort.py`, og de byggede filer er
 Stoppet før fletning; venter på Franks godkendelse.
 
 **Tokenforbrug i session 3** (42 svar, 16:42–17:16 UTC, målt før den sidste commit): nye input 88 · skrevet til cachen 112.898 · læst fra cachen 3.193.036 · output 17.455; i alt 3.323.477.
+
+### Franks godkendelse, 24. nov. 2026
+
+Ordret:
+
+> Godkendt: multi 2♦ med tabellen 'Tekster til gennemgang', linjen '3♥ = pas eller ret.' på kortet og uden minor over 2♠ i denne version.
+
+Minor over 2♠ (naturligt og ikke krav efter Ruder_Multi.docx) trænes ikke i v1; mulig tilføjelse.
