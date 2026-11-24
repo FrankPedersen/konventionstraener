@@ -486,3 +486,15 @@ Ordret fra Franks besked til session 2:
 - stop før fletning og en rapport med tokenforbruget.
 
 **Tokenforbrug i session 2** (97 svar, 14:37–14:59 UTC, målt før den sidste commit): nye input 194 · skrevet til cachen 309.681 · læst fra cachen 19.760.828 · output 116.651; i alt 20.187.354.
+
+### Franks svar 2, 24. nov. 2026
+
+Ordret fra Franks besked til session 2b:
+
+> "Svar på session 2's spørgsmål:
+> Pixeltestene: (a). Siden før henter footer.js, index.json og multi-2ru.json fra commit <hash>, som skrives under Afklaret. Gem skærmbilleder af én side i viden/ og af kortsiden med knappen 'Multi 2♦'.
+> Kortet får også feltet alert, hvis andre kort bruger det. Linjen under Meldinger bliver stående.
+> Sidefoden i Forside og Fordelingstræneren kommer på næste gren i de repoer, ikke her.
+> Forsidens tal rettes på Forsides næste gren. Skriv i rapporten, hvad tallet '45 konventioner' tæller.
+> Læg alle forklaringer og bonusspørgsmål i en tabel til gennemgang, dansk og engelsk side om side. Forklaringen af 3♥ over 2♠ skal sige, hvad meldingen betyder efter Jyderup-arket. Agentens begrundelse markeres som tilføjelse.
+> Kør hele suiten og pixeltestene i forgrunden. Stop før fletning."
