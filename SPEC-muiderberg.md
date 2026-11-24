@@ -315,6 +315,7 @@ Alle forklaringer og bonusspørgsmål i `dealer/muiderberg.py`, som de står i p
 | kortet<br>Faldgruber | Faldgrube | 3♣ er pas eller ret, ikke svarers egen farve: åbner passer med klør og melder 3♦ med ruder. | 3♣ is pass or correct, not responder's own suit: opener passes with clubs and bids 3♦ with diamonds. | F/W (note 6) |
 | kortet<br>Faldgruber | Faldgrube | 3♥/3♠ er et spærrepræget enkeltløft og ikke krav; det stærke spørgebud er 2NT. | 3♥/3♠ is a preemptive single raise and non-forcing; the strong enquiry is 2NT. | F (note 6) |
 | kortet<br>Faldgruber | Faldgrube | Med seks kort i majoren åbnes Multi 2♦, ikke 2♥/2♠. | With six cards in the major the opening is Multi 2♦, not 2♥/2♠. | F (note 6) |
+| kortet<br>Alert | Alert | 2♥/2♠ alerteres | 2♥/2♠ is alerted | (tilføjelse) (Franks svar 24. november 2026) |
 
 **Noter:**
 1. **Pas og 1♥/1♠ ved åbningen:** 0–4 hp og 11–15 hp er specens regel (Regler, `aabning`). F giver kun "ca. 5–10 hp" for 2♥/2♠, og "kræver ca. 5–10 hp" og "for stærk til Muiderberg" bygger på den.

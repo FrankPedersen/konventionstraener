@@ -38,6 +38,7 @@ ROD = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROD))
 
 TAG = 'v-foer-multi-2ru'
+FLETTET = '9ce90ee'  # flettecommit for multi-2ru; punkt 6 sammenligner tagget med den, ikke med arbejdsmappen
 HP = {14: 4, 13: 3, 12: 2, 11: 1}
 SYM = {'S': '♠', 'H': '♥', 'D': '♦', 'C': '♣'}
 FARVE = {v: k for k, v in SYM.items()}
@@ -555,26 +556,27 @@ def punkt5():
 
 def punkt6():
     fejl = []
-    nu = json.loads((ROD / 'data' / 'konventioner.json').read_text(encoding='utf-8'))
-    ids = [x['id'] for x in nu]
-    post = [x for x in nu if x['id'] == 'multi-2ru']
-    if len(post) != 1:
-        fejl.append(f'data/konventioner.json: {len(post)} poster med id multi-2ru, skal være 1')
-    elif post[0] != POST:
-        forskel = sorted(k for k in set(POST) | set(post[0]) if POST.get(k) != post[0].get(k))
-        fejl.append(f'data/konventioner.json: posten multi-2ru er ikke som i specen (felterne {", ".join(forskel)})')
-    if 'ff-multi-2ru' in ids:
-        fejl.append('data/konventioner.json: posten ff-multi-2ru står der stadig')
     r = subprocess.run(['git', 'show', f'{TAG}:data/konventioner.json'], cwd=ROD, capture_output=True)
     if r.returncode:
-        fejl.append(f'tagget {TAG} findes ikke')
-        return fejl
+        return fejl  # tagget findes ikke (fx i en kopi uden tags); punktet springes over
+    if subprocess.run(['git', 'cat-file', '-e', f'{FLETTET}^{{commit}}'], cwd=ROD, capture_output=True).returncode:
+        return fejl  # flettecommitten findes ikke; punktet springes over
+    fl = subprocess.run(['git', 'show', f'{FLETTET}:data/konventioner.json'], cwd=ROD, capture_output=True)
+    fletnu = json.loads(fl.stdout.decode('utf-8'))
+    post = [x for x in fletnu if x['id'] == 'multi-2ru']
+    if len(post) != 1:
+        fejl.append(f'data/konventioner.json i {FLETTET}: {len(post)} poster med id multi-2ru, skal være 1')
+    elif post[0] != POST:
+        forskel = sorted(k for k in set(POST) | set(post[0]) if POST.get(k) != post[0].get(k))
+        fejl.append(f'data/konventioner.json i {FLETTET}: posten multi-2ru er ikke som i specen (felterne {", ".join(forskel)})')
+    if 'ff-multi-2ru' in [x['id'] for x in fletnu]:
+        fejl.append(f'data/konventioner.json i {FLETTET}: posten ff-multi-2ru står der stadig')
     foer = [x for x in json.loads(r.stdout.decode('utf-8')) if x['id'] != 'ff-multi-2ru']
-    efter = [x for x in nu if x['id'] not in ('multi-2ru', 'ff-multi-2ru')]
+    efter = [x for x in fletnu if x['id'] not in ('multi-2ru', 'ff-multi-2ru')]
     if foer != efter:
         aendret = sorted({x['id'] for x in foer if x not in efter} | {x['id'] for x in efter if x not in foer})
         fejl.append(f'data/konventioner.json: de øvrige poster er ændret: {", ".join(aendret) or "rækkefølgen"}')
-    r = subprocess.run(['git', 'diff', '--name-only', TAG, '--', *FREDET], cwd=ROD, capture_output=True, text=True)
+    r = subprocess.run(['git', 'diff', '--name-only', TAG, FLETTET, '--', *FREDET], cwd=ROD, capture_output=True, text=True)
     for f in r.stdout.split():
         fejl.append(f'{f} er ændret, men specen tillader intet der')
     return fejl

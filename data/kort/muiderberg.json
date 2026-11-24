@@ -7,6 +7,7 @@
   "kilde": "Franks tekst om Muiderberg (21. november 2026) · hullerne udfyldt efter dokumentet Ruder Multi",
   "kategori": "aabning",
   "noegle": "gul",
+  "alert": "2♥/2♠ alerteres",
   "formaal": "At bruge 2♥ og 2♠ til svage hænder med en femfarve i majoren og en firfarve i en minor, når Multi 2♦ tager de svage hænder med en seksfarve i en major.",
   "situation": {
     "auction": [
@@ -380,7 +381,8 @@
   "aabne": [
     "Minorfarven ved ugunstig zonestilling: mange par kræver, at minoren normalt er mindst 5 kort.",
     "Ny farve fra en stærk svarhånd, der er ligeglad med åbners farver: efter dokumentet Ruder Multi naturlig og krav i én runde, og derefter melder begge så naturligt som muligt.",
-    "Meldingerne efter modpartens dobling og indmelding."
+    "Meldingerne efter modpartens dobling og indmelding.",
+    "Hænder med to minorer på 4+ kort (fx 5-0-4-4)"
   ],
   "relaterede": [
     "Multi 2♦"
