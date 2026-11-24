@@ -3,8 +3,9 @@
 // og i hint-vinduet i traener.html?k=crowhurst. Ved 390 px er de andre 48 kort, crowhurst i kompakt visning og alle sider i
 // viden/ som tagget; ved 399 og 1280 px er alle sider og alle 49 kort som tagget. Kortet multi-2ru (SPEC-multi-2ru.md) er
 // kommet til efter tagget, så der er 50 kort; det tjekkes kun for vandret scroll ved 390–399 og 1280 px (se NYE_KORT), og
-// de 49 kort fra tagget sammenlignes med tagget som før. Siden før vises fra tagget (filerne læses
-// med git show). Hver side åbnes i sin egen browserkontekst med tom localStorage og uden faneskift, som i tjek_viden_320.mjs.
+// de 49 andre kort sammenlignes som før. Siden før vises fra tagget (filerne læses med git show), men sidefoden og
+// kortlisten kommer fra grenen (se NYERE), så siden før også har 50 kort. Hver side åbnes i sin egen browserkontekst
+// med tom localStorage og uden faneskift, som i tjek_viden_320.mjs.
 // "Stikker ud" måles mod clientWidth, også inde i kortets shadow root. Med --live åbnes siderne, kortene og træneren på
 // www.kontraktbridge.dk/konventionstraener/, og pixelsammenligningen med tagget, der kun giver mening lokalt, springes
 // over (SPEC-tjek-live.md). Kræver Node 22+, git og Chrome eller Edge.
@@ -26,8 +27,17 @@ const ROD = fileURLToPath(new URL('..', import.meta.url));
 const TAG = 'v-foer-crowhurst-390';
 // Filer, der bevidst er ændret efter tagget, sammenlignes med deres godkendte udgave i stedet, som i tjek_viden_320.mjs:
 // Makker 2-dokumentet fik markeringerne rettet og tre rettelser mere (SPEC-makker2-markeringer.md), og udgaven i commit
-// bca7e0c er den godkendte (Franks valg 15. november 2026, SPEC-pixeltolerance.md). Alt andet kommer fra tagget.
-const NYERE = { 'viden/2-over-1-makker2.html': 'bca7e0c446f14ebf86724675b336c9e7306f8303' };
+// bca7e0c er den godkendte (Franks valg 15. november 2026, SPEC-pixeltolerance.md).
+// Sidefoden med Modspil (assets/footer.js) og kortlisten med Multi 2♦ (data/kort/index.json og data/kort/multi-2ru.json)
+// er godkendt i commit e4e3936 på grenen multi-2ru (SPEC-multi-2ru.md, Franks svar 2 (a) og 3), så siden før har samme
+// sidefod, knappen "Multi 2♦" og 50 kort, og kun utilsigtede ændringer tæller.
+// Alt andet kommer fra tagget.
+const NYERE = {
+  'viden/2-over-1-makker2.html': 'bca7e0c446f14ebf86724675b336c9e7306f8303',
+  'assets/footer.js': 'e4e3936d794ede1d21896eadd751bbcd18382a67',
+  'data/kort/index.json': 'e4e3936d794ede1d21896eadd751bbcd18382a67',
+  'data/kort/multi-2ru.json': 'e4e3936d794ede1d21896eadd751bbcd18382a67',
+};
 const INGEN_PIXEL = process.argv.includes('ingen');
 const LIVE = process.argv.includes('--live');
 const SITE = 'https://www.kontraktbridge.dk/konventionstraener/';
@@ -393,9 +403,9 @@ try {
       await t.gå(`${nu.url}${KORT}`);
       const iderNu = await t.kortKlar();
       await t.luk();
-      tjek(iderNu.length === 50 && ider.length === 49 && ider.every((id) => iderNu.includes(id)),
-        `Konventionskortet ved ${bredde} px: alle 50 kort er med, og de 49 fra tagget sammenlignes`, `${iderNu.length} nu, ${ider.length} i tagget`);
-      for (const id of ider) {  // kortene fra tagget; de nye kort er ikke med dér
+      tjek(iderNu.length === 50 && ider.length === 50 && ider.every((id) => iderNu.includes(id)),
+        `Konventionskortet ved ${bredde} px: alle 50 kort er med nu og før, og de 49 uden de nye kort sammenlignes`, `${iderNu.length} nu, ${ider.length} før`);
+      for (const id of ider) {  // kortene før; de nye kort sammenlignes ikke
         if (NYE_KORT.includes(id)) continue;
         for (const visning of ['fuld', 'kompakt']) {
           if (bredde === 390 && id === ID && visning === 'fuld') continue;
