@@ -647,3 +647,9 @@ I dag forklarer appen 3♥ som "støtte til hjerter. Når modparten melder spar,
 - stop før fletning og en rapport med tokenforbruget.
 
 **Tokenforbrug i session 2b** (53 svar, 16:18–16:27 UTC, målt før den sidste commit): nye input 106 · skrevet til cachen 202.515 · læst fra cachen 7.340.705 · output 50.038; i alt 7.593.364.
+
+### Franks svar 3, 24. nov. 2026
+
+Ordret fra Franks besked til session 2c:
+
+> "3♥ over 2♠: Se først i Ruder_Multi.docx. Siger den, hvad 3♥ betyder efter 2♦–(2♠), så brug dens ord og angiv kilden i tabellen. Ellers vælger jeg (c): 3♥ trænes ikke over 2♠, og kun dobling og pas trænes dér. Ret forklaringen af pas over 2♠ efter kilden, så den ikke peger på 3♥. Byg puljen igen, og ret tabellen. Hashen til pixeltestene er sessionens sidste commit, og tallet for kortene sættes til 50. Session 3 må ikke ændre footer.js, index.json eller multi-2ru.json. Stop før fletning."
