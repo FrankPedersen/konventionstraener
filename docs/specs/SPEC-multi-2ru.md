@@ -1,3 +1,5 @@
+Godkendt af Frank og udgivet 24. november 2026 (`9ce90ee`); grenen er slettet.
+
 # SPEC-multi-2ru
 
 21. november 2026 · Frank
@@ -760,3 +762,5 @@ Ordret:
 > Godkendt: multi 2♦ med tabellen 'Tekster til gennemgang', linjen '3♥ = pas eller ret.' på kortet og uden minor over 2♠ i denne version.
 
 Minor over 2♠ (naturligt og ikke krav efter Ruder_Multi.docx) trænes ikke i v1; mulig tilføjelse.
+
+**Udgivelsen (24. nov. 2026):** `multi-2ru` er flettet med `--no-ff` som `9ce90ee` og pushet sammen med tagget `v-foer-multi-2ru` (`02cc549`). GitHub Pages har bygget `9ce90ee` (grøn). Live-tjek mod www.kontraktbridge.dk/konventionstraener/: `tjek_sidefod.mjs --live` i orden; `traener.html?k=multi-2ru` på dansk og engelsk ved 390 px (et meldeforløb besvaret til facit, ⓘ åbner kortet, ingen vandret scroll) og kortsiden med knappen "Multi 2♦" og Modspil i sidefoden. Grenen er slettet lokalt og på origin.
