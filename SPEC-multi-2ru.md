@@ -721,3 +721,32 @@ Kortsiden er bygget med `tools/build_konventionskort.py`, og de byggede filer er
 - Der stoppes før fletning, og rapporten har tokenforbruget i fire tal.
 
 **Tokenforbrug i session 2c** (61 svar, 16:31–16:42 UTC, målt før den sidste commit): nye input 122 · skrevet til cachen 167.521 · læst fra cachen 7.729.749 · output 56.012; i alt 7.953.404.
+
+### Session 3 (24. nov. 2026)
+
+**Status:** Hele testsuiten og de to fulde pixeltests er kørt én gang hver i forgrunden på H = `e4e3936`, og alt er grønt. Ingen kode, data eller tests er ændret (`assets/footer.js`, `data/kort/index.json` og `data/kort/multi-2ru.json` er urørt). Ingen pixeltest fik tidsfejl, så ingen er kørt om.
+
+**Tests:**
+- `tjek_multi_2ru.py`: i orden (8 af 8 punkter), 12 s;
+- `tjek_konventionskort.py`: "50 konventionskort er i orden", 0 s;
+- `tjek_kort_eksempler.py`: "223 meldeeksempler er i orden (0 advarsler)", 0 s;
+- `tjek_fagord.py`: i orden, 2 s; `tjek_bydeform.py`: i orden, 1 s;
+- `tjek_sprog.py`: OK (10 tests), 9 s;
+- `tjek_crowhurst.py`: i orden (534 hænder, 50000 tilfældige hænder), 5 s;
+- `tjek_makker2_aftaler.py`, `tjek_makker2_bilag_c.py` og `tjek_makker2_markeringer.py`: i orden, 0 s hver;
+- `tjek_skrifttyper.py`: i orden, 0 s; `node tools/tjek_skrifttyper.mjs`: alle ok, 36 s;
+- `sprogtjek.py`: "ingen ukendte ord", 23 s;
+- `node tools/tjek_sidefod.mjs`: "Alt i orden", 24 s;
+- `node tools/tjek_bred_multi.mjs`: i orden, 442 s;
+- `node --test tools/pixelstoej.test.mjs`: 7 af 7 bestået, 0 s;
+- `node tools/tjek_viden_320.mjs`: "Alt i orden: 813 tjek", 6 NB-linjer, 535 s;
+- `node tools/tjek_crowhurst_390.mjs`: "Alt i orden: 454 tjek", 18 NB-linjer, 734 s.
+- NB-linjerne er alle støj (højst 5 tællende pixels, 0 eller 1 over 5 trin) i bl.a. `2-over-1.html`, `2-over-1-makker2.html`, `bridgesystem.html` og enkelte kort (farvekanalen ændres med 1, fx li.k-gron); ingen rører multi-2ru, sidefoden eller kortknapperne.
+
+**Skærmbilleder** i `C:\Users\frank\Kontraktbridge\skaermbilleder\multi-2ru\` (lokal webserver og Chrome med CDP, hele siden; ingen vandret scroll: scrollWidth = bredden ved 390 og 1280 px):
+- `viden-index-390px-sidefod-modspil.png` og `viden-index-1280px-sidefod-modspil.png` (`viden/index.html` med Modspil i sidefoden);
+- `kortside-390px-knap-multi-2d.png` og `kortside-1280px-knap-multi-2d.png` (kortsiden med knappen "Multi 2♦");
+- `kort-multi-2d-aabent-390px.png` og `kort-multi-2d-aabent-1280px.png` (Multi-kortet åbent, `#multi-2ru`; højden er afskåret ved 4500 px).
+- Specens skærmbilleder af `traener.html?k=multi-2ru` (svar, ret efter 2♠, dobling, ⓘ og 320 px) er ikke taget, fordi opgaven til session 3 kun nævnte de tre ovenfor.
+
+Stoppet før fletning; venter på Franks godkendelse.
