@@ -81,7 +81,8 @@
         + link('/fordelingstraeneren/#fordeling', 'Fordeling', 'Distribution')
         + link('/fordelingstraeneren/#pointregnskab', 'Pointregnskab', 'Point count')
         + link('/fordelingstraeneren/#farvebehandling', 'Farvebehandling', 'Suit combinations')
-        + link('/fordelingstraeneren/#haandevaluering', 'Håndevaluering', 'Hand evaluation'))
+        + link('/fordelingstraeneren/#haandevaluering', 'Håndevaluering', 'Hand evaluation')
+        + link('/fordelingstraeneren/#modspil', 'Modspil', 'Defence'))
     +   kolonne('opslag', 'Opslag', 'Reference',
           link('/fordelingstraeneren/#analyse', 'Analyse', 'Analysis')
         + link('/ordbog/', 'Bridgeordbog', 'Bridge dictionary')
