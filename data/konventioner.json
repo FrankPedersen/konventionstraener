@@ -601,25 +601,6 @@
   }
  },
  {
-  "id": "ff-muiderberg",
-  "system": "forslag",
-  "titel": "Muiderberg 2♠",
-  "gruppe": "2♦-åbninger",
-  "emne": "aabninger",
-  "beskrivelse": "5 spar og en 4+ minor, 5–10 hp.",
-  "roller": [
-   "Åbner",
-   "Svarer"
-  ],
-  "status": "kommer",
-  "viden": "viden/2-over-1-makker2.html#afsnit-b4",
-  "en": {
-   "titel": "Muiderberg 2♠",
-   "gruppe": "2♦ openings",
-   "beskrivelse": "5 spades and a 4+ minor, 5–10 HCP."
-  }
- },
- {
   "id": "ff-revers",
   "system": "forslag",
   "titel": "Revers",
@@ -993,6 +974,25 @@
    "titel": "Multi 2♦",
    "gruppe": "Openings",
    "beskrivelse": "2♦ shows a weak two in hearts or spades (5–10 HCP, a six-card suit, at most one ace). 2♥ asks for the suit, 2♠ is an invitation in hearts, 2NT asks about strength, and 3♥/3♠ preempt in partner's suit – also when the opponents double or overcall."
+  }
+ },
+ {
+  "id": "muiderberg",
+  "titel": "Muiderberg (Bikini) 2♥/2♠",
+  "gruppe": "Åbninger",
+  "emne": "aabninger",
+  "beskrivelse": "2♥/2♠ viser en femfarve i majoren og en firfarve i en ukendt minor, ca. 5–10 hp. Pas og løft er præference, 3♣ er pas eller ret til åbners minor, og 2NT spørger om minor og styrke.",
+  "roller": [
+   "Åbner",
+   "Svarer"
+  ],
+  "status": "klar",
+  "system": "generel",
+  "viden": "viden/konventionskort.html#muiderberg",
+  "en": {
+   "titel": "Muiderberg (Bikini) 2♥/2♠",
+   "gruppe": "Openings",
+   "beskrivelse": "2♥/2♠ show five cards in the major and four in an unknown minor, about 5–10 HCP. Pass and raises are preference, 3♣ is pass-or-correct to opener's minor, and 2NT asks for the minor and strength."
   }
  }
 ]
