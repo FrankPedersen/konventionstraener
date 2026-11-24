@@ -219,7 +219,7 @@ Efter Franks "godkendt" (Sonnet, medium effort): flet, push, live-tjek, arkivér
 11. **Forsidens tal:** Muiderberg erstatter en "kommer"-post med en træner med status "klar", så tallet i forsidens topbånd bliver 47. Det rettes på næste gren i Forside sammen med sidefoden, ikke i denne opgave.
 
 **Tokenforbrug** (nye input · skrevet til cachen · læst fra cachen · output):
-- Session 1:
+- Session 1: 144 · 289.555 · 13.654.337 · 92.176; i alt 14.036.212
 - Session 2:
 - Efter godkendelsen:
 
@@ -362,3 +362,5 @@ Alle forklaringer og bonusspørgsmål i `dealer/muiderberg.py`, som de står i p
 - skærmbillederne af `traener.html?k=muiderberg` (specen, Accepttest) i `C:\Users\frank\Kontraktbridge\skaermbilleder\muiderberg\`;
 - `assets/footer.js`, `data/kort/index.json`, `data/kort/multi-2ru.json` og `data/kort/muiderberg.json` må ikke ændres, for så passer H ikke længere;
 - stop før fletning og en rapport med tokenforbruget.
+
+**Tokenforbrug i session 1** (72 svar, 17:39–17:54 UTC, målt før den sidste commit): nye input 144 · skrevet til cachen 289.555 · læst fra cachen 13.654.337 · output 92.176; i alt 14.036.212.
