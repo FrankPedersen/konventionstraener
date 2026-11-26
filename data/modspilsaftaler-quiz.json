@@ -1,0 +1,651 @@
+{
+  "kilde": "Aftalerne i data/modspilsaftaler.json (kopi af Modspils metoder.json); de forkerte svar er ikke påstande om aftalerne.",
+  "spoergsmaal": [
+    {
+      "id": "udspil-sans/fjerde-hoejeste/1",
+      "kategori": "udspil-sans",
+      "metode": "fjerde-hoejeste",
+      "q": "Hvilket kort spilles ud mod sans fra fire kort eller flere ved 4.-højeste?",
+      "qEn": "Which card is led against notrump from four or more cards with fourth highest?",
+      "correct": "Det fjerdehøjeste",
+      "correctEn": "The fourth highest",
+      "wrong": [
+        "Det tredjehøjeste",
+        "Det laveste"
+      ],
+      "wrongEn": [
+        "The third highest",
+        "The lowest"
+      ],
+      "why": "Ved 4.-højeste spilles det fjerdehøjeste kort ud fra fire kort eller flere.",
+      "whyEn": "With fourth highest the fourth highest card is led from four or more cards."
+    },
+    {
+      "id": "udspil-sans/fjerde-hoejeste/2",
+      "kategori": "udspil-sans",
+      "metode": "fjerde-hoejeste",
+      "q": "Hvilket kort spilles ud mod sans fra tre kort uden honnør ved 4.-højeste?",
+      "qEn": "Which card is led against notrump from three cards without an honour with fourth highest?",
+      "correct": "Det højeste",
+      "correctEn": "The highest",
+      "wrong": [
+        "Det laveste",
+        "Det midterste"
+      ],
+      "wrongEn": [
+        "The lowest",
+        "The middle one"
+      ],
+      "why": "Fra tre kort spilles det laveste med en honnør og ellers det højeste.",
+      "whyEn": "From three cards the lowest is led with an honour, otherwise the highest."
+    },
+    {
+      "id": "udspil-sans/tredje-femte/1",
+      "kategori": "udspil-sans",
+      "metode": "tredje-femte",
+      "q": "Hvilket kort spilles ud mod sans fra fem kort eller flere ved 3. og 5. højeste?",
+      "qEn": "Which card is led against notrump from five or more cards with third and fifth highest?",
+      "correct": "Det femtehøjeste",
+      "correctEn": "The fifth highest",
+      "wrong": [
+        "Det fjerdehøjeste",
+        "Det tredjehøjeste"
+      ],
+      "wrongEn": [
+        "The fourth highest",
+        "The third highest"
+      ],
+      "why": "Ved 3. og 5. højeste spilles det femtehøjeste kort ud fra fem kort eller flere.",
+      "whyEn": "With third and fifth highest the fifth highest card is led from five or more cards."
+    },
+    {
+      "id": "udspil-sans/tredje-femte/2",
+      "kategori": "udspil-sans",
+      "metode": "tredje-femte",
+      "q": "Hvilket kort spilles ud mod sans fra tre kort ved 3. og 5. højeste?",
+      "qEn": "Which card is led against notrump from three cards with third and fifth highest?",
+      "correct": "Det tredjehøjeste, altså det laveste",
+      "correctEn": "The third highest, that is the lowest",
+      "wrong": [
+        "Det højeste",
+        "Det midterste"
+      ],
+      "wrongEn": [
+        "The highest",
+        "The middle one"
+      ],
+      "why": "Fra tre og fire kort spilles det tredjehøjeste kort ud; fra tre kort er det det laveste.",
+      "whyEn": "From three and four cards the third highest is led; from three cards that is the lowest."
+    },
+    {
+      "id": "udspil-sans/kompendiets/1",
+      "kategori": "udspil-sans",
+      "metode": "kompendiets",
+      "q": "Hvilket kort spilles ud fra honnør tredje med Kompendiets udspil?",
+      "qEn": "Which card is led from honour third with the Compendium's leads?",
+      "correct": "Det laveste",
+      "correctEn": "The lowest",
+      "wrong": [
+        "Honnøren",
+        "Det midterste"
+      ],
+      "wrongEn": [
+        "The honour",
+        "The middle one"
+      ],
+      "why": "Med Kompendiets udspil spilles det laveste kort fra honnør tredje.",
+      "whyEn": "With the Compendium's leads the lowest card is led from honour third."
+    },
+    {
+      "id": "udspil-sans/kompendiets/2",
+      "kategori": "udspil-sans",
+      "metode": "kompendiets",
+      "q": "Hvilket kort spilles ud fra fire små kort (højst en 9'er) med Kompendiets udspil?",
+      "qEn": "Which card is led from four small cards (nine or lower) with the Compendium's leads?",
+      "correct": "Det næsthøjeste",
+      "correctEn": "The second highest",
+      "wrong": [
+        "Det højeste",
+        "Det laveste"
+      ],
+      "wrongEn": [
+        "The highest",
+        "The lowest"
+      ],
+      "why": "Fra småkort spilles det tredje laveste: fra fire små er det det næsthøjeste, fra tre små det højeste.",
+      "whyEn": "From small cards the third lowest is led: the second highest from four small, the highest from three small."
+    },
+    {
+      "id": "udspil-farve/fjerde-hoejeste/1",
+      "kategori": "udspil-farve",
+      "metode": "fjerde-hoejeste",
+      "q": "Hvilket kort spilles ud mod farve fra tre kort med en honnør ved 4.-højeste?",
+      "qEn": "Which card is led against a suit contract from three cards with an honour with fourth highest?",
+      "correct": "Det laveste",
+      "correctEn": "The lowest",
+      "wrong": [
+        "Honnøren",
+        "Det midterste"
+      ],
+      "wrongEn": [
+        "The honour",
+        "The middle one"
+      ],
+      "why": "Fra tre kort spilles det laveste med en honnør og ellers det højeste.",
+      "whyEn": "From three cards the lowest is led with an honour, otherwise the highest."
+    },
+    {
+      "id": "udspil-farve/fjerde-hoejeste/2",
+      "kategori": "udspil-farve",
+      "metode": "fjerde-hoejeste",
+      "q": "Hvor mange kort skal farven mindst have, før det fjerdehøjeste spilles ud ved 4.-højeste?",
+      "qEn": "How many cards must the suit have before the fourth highest is led with fourth highest?",
+      "correct": "Fire",
+      "correctEn": "Four",
+      "wrong": [
+        "Tre",
+        "Fem"
+      ],
+      "wrongEn": [
+        "Three",
+        "Five"
+      ],
+      "why": "Det fjerdehøjeste spilles ud fra fire kort eller flere; fra tre kort gælder en anden regel.",
+      "whyEn": "The fourth highest is led from four or more cards; from three cards another rule applies."
+    },
+    {
+      "id": "udspil-farve/tredje-femte/1",
+      "kategori": "udspil-farve",
+      "metode": "tredje-femte",
+      "q": "Hvilket kort spilles ud mod farve fra fire kort ved 3. og 5. højeste?",
+      "qEn": "Which card is led against a suit contract from four cards with third and fifth highest?",
+      "correct": "Det tredjehøjeste",
+      "correctEn": "The third highest",
+      "wrong": [
+        "Det fjerdehøjeste",
+        "Det laveste"
+      ],
+      "wrongEn": [
+        "The fourth highest",
+        "The lowest"
+      ],
+      "why": "Fra tre og fire kort spilles det tredjehøjeste kort ud.",
+      "whyEn": "From three and four cards the third highest is led."
+    },
+    {
+      "id": "udspil-farve/tredje-femte/2",
+      "kategori": "udspil-farve",
+      "metode": "tredje-femte",
+      "q": "Hvilket kort spilles ud mod farve fra seks kort ved 3. og 5. højeste?",
+      "qEn": "Which card is led against a suit contract from six cards with third and fifth highest?",
+      "correct": "Det femtehøjeste",
+      "correctEn": "The fifth highest",
+      "wrong": [
+        "Det fjerdehøjeste",
+        "Det laveste"
+      ],
+      "wrongEn": [
+        "The fourth highest",
+        "The lowest"
+      ],
+      "why": "Fra fem kort eller flere spilles det femtehøjeste kort ud.",
+      "whyEn": "From five or more cards the fifth highest is led."
+    },
+    {
+      "id": "honnoerudspil/top-af-sekvens/1",
+      "kategori": "honnoerudspil",
+      "metode": "top-af-sekvens",
+      "q": "Hvilket kort spilles ud fra en honnørsekvens ved top af sekvens?",
+      "qEn": "Which card is led from an honour sequence with top of sequence?",
+      "correct": "Toppen af sekvensen",
+      "correctEn": "The top of the sequence",
+      "wrong": [
+        "Det laveste kort i sekvensen",
+        "Det næsthøjeste kort i sekvensen"
+      ],
+      "wrongEn": [
+        "The lowest card of the sequence",
+        "The second card of the sequence"
+      ],
+      "why": "Fra en honnørsekvens spilles toppen ud, fx esset fra E K.",
+      "whyEn": "From an honour sequence the top card is led, e.g. the ace from A K."
+    },
+    {
+      "id": "honnoerudspil/top-af-sekvens/2",
+      "kategori": "honnoerudspil",
+      "metode": "top-af-sekvens",
+      "q": "Hvad kræver et honnørudspil mod sans ved top af sekvens?",
+      "qEn": "What does an honour lead against notrump require with top of sequence?",
+      "correct": "Tre kort i træk eller en brudt sekvens (K D 10)",
+      "correctEn": "Three cards in a row or a broken sequence (K Q 10)",
+      "wrong": [
+        "To honnørkort i træk",
+        "Mindst fem kort i farven"
+      ],
+      "wrongEn": [
+        "Two touching honours",
+        "At least five cards in the suit"
+      ],
+      "why": "Mod sans kræver det tre kort i træk eller en brudt sekvens; to honnørkort i træk med små kort afgøres af \"table feeling\".",
+      "whyEn": "Against notrump it takes three cards in a row or a broken sequence; two touching honours with small cards are left to table feeling."
+    },
+    {
+      "id": "honnoerudspil/ala-mod-sans/1",
+      "kategori": "honnoerudspil",
+      "metode": "ala-mod-sans",
+      "q": "Hvad beder kongen om ved ALA mod sans?",
+      "qEn": "What does the king ask for with ALA against notrump?",
+      "correct": "Længdemarkering",
+      "correctEn": "Count",
+      "wrong": [
+        "Kald eller afvisning",
+        "Farvevalg mellem de to andre farver"
+      ],
+      "wrongEn": [
+        "Attitude",
+        "A choice between the two other suits"
+      ],
+      "why": "Ved ALA beder es og dame om kald eller afvisning og kongen om længdemarkering.",
+      "whyEn": "With ALA the ace and queen ask for attitude and the king for count."
+    },
+    {
+      "id": "honnoerudspil/ala-mod-sans/2",
+      "kategori": "honnoerudspil",
+      "metode": "ala-mod-sans",
+      "q": "Hvad beder es og dame om ved ALA mod sans?",
+      "qEn": "What do the ace and queen ask for with ALA against notrump?",
+      "correct": "Kald eller afvisning",
+      "correctEn": "Attitude",
+      "wrong": [
+        "Længdemarkering",
+        "Farvevalg mellem de to andre farver"
+      ],
+      "wrongEn": [
+        "Count",
+        "A choice between the two other suits"
+      ],
+      "why": "Ved ALA beder es og dame om kald eller afvisning og kongen om længdemarkering. Mod farve spilles toppen af sekvensen.",
+      "whyEn": "With ALA the ace and queen ask for attitude and the king for count. Against a suit contract the top of the sequence is led."
+    },
+    {
+      "id": "kald/hoejt-kald/1",
+      "kategori": "kald",
+      "metode": "hoejt-kald",
+      "q": "Hvad betyder et højt kort på makkers udspil ved højt = kald?",
+      "qEn": "What does a high card on partner's lead mean with high encourages?",
+      "correct": "Kald til udspilsfarven",
+      "correctEn": "Encouragement in the suit led",
+      "wrong": [
+        "Afvisning",
+        "Et lige antal kort"
+      ],
+      "wrongEn": [
+        "Discouragement",
+        "An even number of cards"
+      ],
+      "why": "Ved højt = kald kalder et højt kort til udspilsfarven, og et lavt kort afviser.",
+      "whyEn": "With high encourages a high card encourages the suit led and a low card discourages."
+    },
+    {
+      "id": "kald/hoejt-kald/2",
+      "kategori": "kald",
+      "metode": "hoejt-kald",
+      "q": "Hvad betyder et lavt kort på makkers udspil ved højt = kald?",
+      "qEn": "What does a low card on partner's lead mean with high encourages?",
+      "correct": "Afvisning",
+      "correctEn": "Discouragement",
+      "wrong": [
+        "Kald til udspilsfarven",
+        "Ønske om skift til den laveste af de to andre farver"
+      ],
+      "wrongEn": [
+        "Encouragement in the suit led",
+        "A request to switch to the lower of the two other suits"
+      ],
+      "why": "Ved højt = kald afviser et lavt kort. Det siger intet om, hvilken farve der ønskes.",
+      "whyEn": "With high encourages a low card discourages. It says nothing about which suit is wanted."
+    },
+    {
+      "id": "kald/lavt-kald/1",
+      "kategori": "kald",
+      "metode": "lavt-kald",
+      "q": "Hvad betyder et lavt kort på makkers udspil ved lavt = kald?",
+      "qEn": "What does a low card on partner's lead mean with low encourages?",
+      "correct": "Kald til udspilsfarven",
+      "correctEn": "Encouragement in the suit led",
+      "wrong": [
+        "Afvisning",
+        "Et ulige antal kort"
+      ],
+      "wrongEn": [
+        "Discouragement",
+        "An odd number of cards"
+      ],
+      "why": "Ved lavt = kald kalder et lavt kort til udspilsfarven, og et højt kort afviser.",
+      "whyEn": "With low encourages a low card encourages the suit led and a high card discourages."
+    },
+    {
+      "id": "kald/lavt-kald/2",
+      "kategori": "kald",
+      "metode": "lavt-kald",
+      "q": "Hvad betyder et højt kort på makkers udspil ved lavt = kald?",
+      "qEn": "What does a high card on partner's lead mean with low encourages?",
+      "correct": "Afvisning",
+      "correctEn": "Discouragement",
+      "wrong": [
+        "Kald til udspilsfarven",
+        "Ønske om skift til den højeste af de to andre farver"
+      ],
+      "wrongEn": [
+        "Encouragement in the suit led",
+        "A request to switch to the higher of the two other suits"
+      ],
+      "why": "Ved lavt = kald afviser et højt kort. Det siger intet om, hvilken farve der ønskes.",
+      "whyEn": "With low encourages a high card discourages. It says nothing about which suit is wanted."
+    },
+    {
+      "id": "kald/romersk-kald/1",
+      "kategori": "kald",
+      "metode": "romersk-kald",
+      "q": "Hvad betyder en lille lige ved romersk kald mod farve?",
+      "qEn": "What does a low even card mean with Roman signals against a suit contract?",
+      "correct": "Ønske om skift til den laveste af de to andre farver",
+      "correctEn": "A request to switch to the lower of the two other suits",
+      "wrong": [
+        "Ønske om skift til den højeste af de to andre farver",
+        "Kald til udspilsfarven"
+      ],
+      "wrongEn": [
+        "A request to switch to the higher of the two other suits",
+        "Encouragement in the suit led"
+      ],
+      "why": "Et ulige kort kalder, en lille lige foreslår skift til den laveste og en høj lige til den højeste af de to andre farver; trumf tæller ikke med.",
+      "whyEn": "An odd card encourages, a low even card suggests the lower and a high even card the higher of the two other suits; trumps do not count."
+    },
+    {
+      "id": "kald/romersk-kald/2",
+      "kategori": "kald",
+      "metode": "romersk-kald",
+      "q": "Hvilken aftale gælder mod sans, når makkerparret spiller romersk kald?",
+      "qEn": "Which agreement applies against notrump when the partnership plays Roman signals?",
+      "correct": "Lavt = kald",
+      "correctEn": "Low encourages",
+      "wrong": [
+        "Romersk kald som mod farve",
+        "Højt = kald"
+      ],
+      "wrongEn": [
+        "Roman signals as against a suit contract",
+        "High encourages"
+      ],
+      "why": "Romersk kald gælder mod farve; mod sans gælder lavt = kald.",
+      "whyEn": "Roman signals apply against a suit contract; against notrump low encourages."
+    },
+    {
+      "id": "laengde/hoejt-lavt-lige/1",
+      "kategori": "laengde",
+      "metode": "hoejt-lavt-lige",
+      "q": "Hvad viser højt-lavt ved højt-lavt = lige?",
+      "qEn": "What does high-low show with high-low = even?",
+      "correct": "Et lige antal kort",
+      "correctEn": "An even number of cards",
+      "wrong": [
+        "Et ulige antal kort",
+        "Kald til farven"
+      ],
+      "wrongEn": [
+        "An odd number of cards",
+        "Encouragement in the suit"
+      ],
+      "why": "Et højt kort efterfulgt af et lavt viser et lige antal kort.",
+      "whyEn": "A high card followed by a low one shows an even number of cards."
+    },
+    {
+      "id": "laengde/hoejt-lavt-lige/2",
+      "kategori": "laengde",
+      "metode": "hoejt-lavt-lige",
+      "q": "Hvad viser lavt-højt ved højt-lavt = lige?",
+      "qEn": "What does low-high show with high-low = even?",
+      "correct": "Et ulige antal kort",
+      "correctEn": "An odd number of cards",
+      "wrong": [
+        "Et lige antal kort",
+        "Afvisning af farven"
+      ],
+      "wrongEn": [
+        "An even number of cards",
+        "Discouragement in the suit"
+      ],
+      "why": "Ved højt-lavt = lige viser lavt-højt et ulige antal kort.",
+      "whyEn": "With high-low = even, low-high shows an odd number of cards."
+    },
+    {
+      "id": "laengde/lavt-hoejt-lige/1",
+      "kategori": "laengde",
+      "metode": "lavt-hoejt-lige",
+      "q": "Hvad viser lavt-højt ved lavt-højt = lige?",
+      "qEn": "What does low-high show with low-high = even?",
+      "correct": "Et lige antal kort",
+      "correctEn": "An even number of cards",
+      "wrong": [
+        "Et ulige antal kort",
+        "Afvisning af farven"
+      ],
+      "wrongEn": [
+        "An odd number of cards",
+        "Discouragement in the suit"
+      ],
+      "why": "Et lavt kort efterfulgt af et højt viser et lige antal kort.",
+      "whyEn": "A low card followed by a high one shows an even number of cards."
+    },
+    {
+      "id": "laengde/lavt-hoejt-lige/2",
+      "kategori": "laengde",
+      "metode": "lavt-hoejt-lige",
+      "q": "Hvad viser højt-lavt ved lavt-højt = lige?",
+      "qEn": "What does high-low show with low-high = even?",
+      "correct": "Et ulige antal kort",
+      "correctEn": "An odd number of cards",
+      "wrong": [
+        "Et lige antal kort",
+        "Kald til farven"
+      ],
+      "wrongEn": [
+        "An even number of cards",
+        "Encouragement in the suit"
+      ],
+      "why": "Ved lavt-højt = lige viser højt-lavt et ulige antal kort.",
+      "whyEn": "With low-high = even, high-low shows an odd number of cards."
+    },
+    {
+      "id": "afkast/som-kald-afvisning/1",
+      "kategori": "afkast",
+      "metode": "som-kald-afvisning",
+      "q": "Hvad siger et afvisende første afkast, når afkastet følger aftalen om kald eller afvisning?",
+      "qEn": "What does a discouraging first discard say when discards follow the attitude agreement?",
+      "correct": "Intet om de andre farver",
+      "correctEn": "Nothing about the other suits",
+      "wrong": [
+        "Styrke i den laveste af de to andre farver",
+        "Ønske om den højeste af de to andre farver"
+      ],
+      "wrongEn": [
+        "Strength in the lower of the two other suits",
+        "A request for the higher of the two other suits"
+      ],
+      "why": "Et kald viser afkastfarven; en afvisning siger intet om de andre farver.",
+      "whyEn": "An encouraging card shows the suit discarded; a discouraging card says nothing about the others."
+    },
+    {
+      "id": "afkast/som-kald-afvisning/2",
+      "kategori": "afkast",
+      "metode": "som-kald-afvisning",
+      "q": "Hvordan læses første afkast mod farve, når makkerparret også spiller romersk kald?",
+      "qEn": "How is the first discard read against a suit contract when the partnership also plays Roman signals?",
+      "correct": "Som O/E",
+      "correctEn": "As odd/even",
+      "wrong": [
+        "Som Lavinthal",
+        "Som højt = kald"
+      ],
+      "wrongEn": [
+        "As Lavinthal",
+        "As high encourages"
+      ],
+      "why": "Med romersk kald mod farve læses afkastet som O/E.",
+      "whyEn": "With Roman signals against a suit contract the discard is read as odd/even."
+    },
+    {
+      "id": "afkast/ulige-lige/1",
+      "kategori": "afkast",
+      "metode": "ulige-lige",
+      "q": "Hvad viser en stor lige som første afkast ved O/E?",
+      "qEn": "What does a high even card show as the first discard with odd/even?",
+      "correct": "Styrke i den højeste af de to andre farver",
+      "correctEn": "Strength in the higher of the two other suits",
+      "wrong": [
+        "Styrke i den laveste af de to andre farver",
+        "Kald til afkastfarven"
+      ],
+      "wrongEn": [
+        "Strength in the lower of the two other suits",
+        "Encouragement in the suit discarded"
+      ],
+      "why": "Et ulige kort kalder til afkastfarven, en lille lige viser styrke i den laveste og en stor lige i den højeste af de to andre farver.",
+      "whyEn": "An odd card encourages the suit discarded, a low even card shows strength in the lower and a high even card in the higher of the two other suits."
+    },
+    {
+      "id": "afkast/ulige-lige/2",
+      "kategori": "afkast",
+      "metode": "ulige-lige",
+      "q": "Hvad betyder et ulige kort som første afkast ved O/E?",
+      "qEn": "What does an odd card mean as the first discard with odd/even?",
+      "correct": "Kald til afkastfarven",
+      "correctEn": "Encouragement in the suit discarded",
+      "wrong": [
+        "Styrke i den laveste af de to andre farver",
+        "Et ulige antal kort i afkastfarven"
+      ],
+      "wrongEn": [
+        "Strength in the lower of the two other suits",
+        "An odd number of cards in the suit discarded"
+      ],
+      "why": "Første gang en modspiller ikke kan bekende, kalder et ulige kort til afkastfarven. I farvernes rækkefølge er klør lavest.",
+      "whyEn": "The first time a defender cannot follow suit an odd card encourages the suit discarded. In the order of the suits clubs are lowest."
+    },
+    {
+      "id": "afkast/lavinthal/1",
+      "kategori": "afkast",
+      "metode": "lavinthal",
+      "q": "Hvad beder et lavt afkast om ved Lavinthal?",
+      "qEn": "What does a low discard ask for with Lavinthal?",
+      "correct": "Den laveste af de to andre farver",
+      "correctEn": "The lower of the two other suits",
+      "wrong": [
+        "Den højeste af de to andre farver",
+        "Afkastfarven"
+      ],
+      "wrongEn": [
+        "The higher of the two other suits",
+        "The suit discarded"
+      ],
+      "why": "Ved Lavinthal beder et lavt afkast om den laveste og et højt om den højeste af de to andre farver.",
+      "whyEn": "With Lavinthal a low discard asks for the lower and a high discard for the higher of the two other suits."
+    },
+    {
+      "id": "afkast/lavinthal/2",
+      "kategori": "afkast",
+      "metode": "lavinthal",
+      "q": "Hvad beder et højt afkast om ved Lavinthal?",
+      "qEn": "What does a high discard ask for with Lavinthal?",
+      "correct": "Den højeste af de to andre farver",
+      "correctEn": "The higher of the two other suits",
+      "wrong": [
+        "Afkastfarven",
+        "Den laveste af de to andre farver"
+      ],
+      "wrongEn": [
+        "The suit discarded",
+        "The lower of the two other suits"
+      ],
+      "why": "Afkastet beder om en af de to andre farver; afkastfarven selv bliver ikke kaldt.",
+      "whyEn": "The discard asks for one of the two other suits; the suit discarded itself is not encouraged."
+    },
+    {
+      "id": "forsinket/intet-forsinket/1",
+      "kategori": "forsinket",
+      "metode": "intet-forsinket",
+      "q": "Hvad betyder rækkefølgen af kortene i spilførers første farve ved intet forsinket kald?",
+      "qEn": "What does the order of cards in declarer's first suit mean with no delayed signal?",
+      "correct": "Intet særligt",
+      "correctEn": "Nothing special",
+      "wrong": [
+        "Høj-lav beder om skift",
+        "Lav-høj viser et lige antal kort"
+      ],
+      "wrongEn": [
+        "High-low asks for a switch",
+        "Low-high shows an even number of cards"
+      ],
+      "why": "Uden forsinket kald betyder rækkefølgen i spilførers første farve intet særligt.",
+      "whyEn": "Without a delayed signal the order of cards in declarer's first suit has no special meaning."
+    },
+    {
+      "id": "forsinket/intet-forsinket/2",
+      "kategori": "forsinket",
+      "metode": "intet-forsinket",
+      "q": "Hvilken anden variant findes for spilførers første farve ud over intet forsinket kald?",
+      "qEn": "Which other variant exists for declarer's first suit besides no delayed signal?",
+      "correct": "Omvendt forsinket kald",
+      "correctEn": "Reverse delayed signal",
+      "wrong": [
+        "Romersk kald",
+        "Lavinthal"
+      ],
+      "wrongEn": [
+        "Roman signals",
+        "Lavinthal"
+      ],
+      "why": "Kategorien har to varianter: intet forsinket kald og omvendt forsinket kald.",
+      "whyEn": "The category has two variants: no delayed signal and reverse delayed signal."
+    },
+    {
+      "id": "forsinket/omvendt-forsinket/1",
+      "kategori": "forsinket",
+      "metode": "omvendt-forsinket",
+      "q": "Hvad betyder høj-lav i spilførers første farve ved omvendt forsinket kald?",
+      "qEn": "What does high-low in declarer's first suit mean with reverse delayed signal?",
+      "correct": "Ønske om skift og aktivt modspil",
+      "correctEn": "A request to switch and defend actively",
+      "wrong": [
+        "Ønske om at farven fortsættes, passivt",
+        "Et lige antal kort"
+      ],
+      "wrongEn": [
+        "A request to continue, passively",
+        "An even number of cards"
+      ],
+      "why": "Lav-høj betyder \"fortsæt i farven, intet vigtigere at fortælle\" (passivt), og høj-lav betyder \"skift farve, spil aktivt\".",
+      "whyEn": "Low-high means \"continue, nothing more important to tell\" (passive), and high-low means \"switch, play actively\"."
+    },
+    {
+      "id": "forsinket/omvendt-forsinket/2",
+      "kategori": "forsinket",
+      "metode": "omvendt-forsinket",
+      "q": "Hvem bruger omvendt forsinket kald?",
+      "qEn": "Who uses the reverse delayed signal?",
+      "correct": "Både udspiller og tilspiller",
+      "correctEn": "Both the opening leader and his partner",
+      "wrong": [
+        "Kun udspiller",
+        "Kun udspillers makker"
+      ],
+      "wrongEn": [
+        "Only the opening leader",
+        "Only the opening leader's partner"
+      ],
+      "why": "I den første farve, spilfører spiller, gælder aftalen for både udspiller og tilspiller.",
+      "whyEn": "In the first suit declarer plays, the agreement applies to both the opening leader and his partner."
+    }
+  ]
+}
