@@ -95,9 +95,9 @@ def dansk_side(tekst):
 
 
 def dansk_json(o):
-    """Alle strenge i en JSON-struktur uden "en"-felterne."""
+    """Alle strenge i en JSON-struktur uden "en"-felterne og felterne, hvis navn ender på En (fx aftaleEn i data/modspilsaftaler.json)."""
     if isinstance(o, dict):
-        return '\n'.join(dansk_json(v) for k, v in o.items() if k != 'en')
+        return '\n'.join(dansk_json(v) for k, v in o.items() if k != 'en' and not k.endswith('En'))
     if isinstance(o, list):
         return '\n'.join(dansk_json(v) for v in o)
     return o if isinstance(o, str) else ''
