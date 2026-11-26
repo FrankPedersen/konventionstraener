@@ -13,6 +13,9 @@ Modspilsaftalerne bliver konventionskort uden makker: hver aftale beskrives med 
 3. **Indstillingen er den samme som Modspils profiler** (rådgiverens anbefaling, fulgt af Frank 26. nov.): profilerne Standard, Omvendt og Kompendiet plus "egen", hvor hver kategori vælges for sig, med de samme id'er og navne som i Modspil.
 4. **Ét fælles valg for begge apper** (Franks valg 26. nov.): et skift i Konventionstræner ændrer også valget i Modspil (se Indstillingen).
 
+5. **Quizzen og indstillingen får sin egen side** `modspilsaftaler.html` (Franks valg 26. nov., session 2), som Markeringer har `markering.html`; `traener.html` ændres ikke.
+6. **De tre udspilskort beholdes** (Franks valg 26. nov., session 2): ét kort pr. kategori som i Modspil, selv om skabelonen samler udspilsaftaler på ét kort.
+
 Rådgiverens anbefaling om at dele B i B1 og B2 er trukket tilbage: med `metoder.json` som facit er alle 17 metoder ikke meget mere arbejde end de 6, der var tænkt til B1. Opgaven deles i stedet i sessioner (se Trin).
 
 ## Kilderne
@@ -206,3 +209,24 @@ Alle kortenes tekster ud over aftalerne (som er ordret fra `metoder.json`). Ekse
 | `ms-forsinket` | Eksempel (omvendt forsinket kald) | 7, derefter 3 (høj-lav) → Skift farve, spil aktivt | (tilføjelse) |
 | `ms-forsinket` | Forrang og undtagelser | Makker har brug for en markering: Der ses bort fra signalet, når det er tydeligt, at makker har brug for en længdemarkering. | Kompendiet s. 25 |
 | `ms-forsinket` | Faldgrube | Lægger begge modspillere lav-høj, er modspillet passivt; lægger begge høj-lav, skal der angribes. | Kompendiet s. 26 |
+| `modspilsaftaler.html` | Undertekst | Alle de varianter, Modspil træner. Valget af aftaler deles med Modspil i Fordelingstræneren, og quizzen spørger kun til, hvad aftalerne siger. | (tilføjelse) |
+| `modspilsaftaler.html` | Note ved ugyldige data | De gemte data fra Modspil kunne ikke læses. Standard vises, og valget gemmes ikke, så Modspils data ikke overskrives. | Specen, Indstillingen |
+| `modspilsaftaler.html` | Kilde | Kilde: aftalerne i Modspil (metoder.json) og Kompendium over modspilsaftaler. De forkerte svar i quizzen er ikke påstande om aftalerne. | Specen, Quizzen |
+| Kortsiden, `ms-*` | Linjen under Formål | Din aftale følger profilen <navn>, som deles med Modspil. | (tilføjelse) |
+| `data/modspilsaftaler-quiz.json` | 34 spørgsmål med rigtigt svar og forklaring (dansk og engelsk) | Spørgsmålene, de rigtige svar og forklaringerne gengiver metodens aftale. | metoder.json |
+| `data/modspilsaftaler-quiz.json` | De forkerte svar (68 pr. sprog) | Rådgiverens; de er ikke påstande om aftalerne. | (tilføjelse) |
+| `data/modspilsaftaler-quiz.json` | `afkast/ulige-lige/2`: forklaringen | "I farvernes rækkefølge er klør lavest" er hentet fra aftalens parentes. | metoder.json |
+
+### Session 2 (26. nov. 2026)
+
+Kørt i en ny rådgiverchat (Opus 5.5, high effort) via skallen på Franks computer, ikke i Claude Code. Grenen `modspilsaftaler`.
+
+1. **Franks to valg** står under Beslutninger, punkt 5 og 6: quizzen og indstillingen får siden `modspilsaftaler.html`, og de tre udspilskort beholdes.
+2. **Indstillingen** ligger i `assets/modspilsaftaler.js` (uden DOM; testes med `node --test tools/modspilsaftaler.test.mjs`, 8 tests). Den læser `modspil:v1` og skriver kun `profil` og `metoder`, med nøglernes rækkefølge og alle andre felter uændrede. Uden gemt tilstand vises Standard, og et valg skriver Modspils standardtilstand (som `defaultMsSaved`) med valget. Er de gemte data ikke gyldig JSON, eller mangler `profil` eller en gyldig metode i en kategori, vises Standard med en note, og intet skrives. Profilen regnes altid af metoderne, så en ændret metode giver "Egen" som i Modspil.
+3. **Siden `modspilsaftaler.html`**: profilerne Standard, Omvendt, Kompendiet og Egen (kan ikke vælges, men markeres), en rulleliste pr. kategori med aftalen under, og quizzen med runder på op til 8 spørgsmål, emnevalg og "Alle varianter". `?k=ms-<kategori>` vælger emnet. Siden har links til Modspil og konventionskortene. Er `localStorage` spærret, gælder valget kun, mens siden er åben.
+4. **Quizzen** `data/modspilsaftaler-quiz.json`: 34 spørgsmål (2 pr. metode) med felterne `q`, `correct`, `wrong`, `why` og `…En`. Spørgsmålene skrives af `_lab\modspilsaftaler\lav_quiz.py` (uden for repoet).
+5. **Kortsiden** (`tools/konventionskort.src.html`, bygget): på kortene `ms-*` står den valgte metode øverst med mærket "Din aftale" og de andre under "Andre varianter", og under Formål står linkene "Træn i Modspil" (`/fordelingstraeneren/#modspil`) og "Quiz og indstilling" samt profilens navn. Andre kort er uændrede. `tools/konventionskort-shell.html` henter `../assets/modspilsaftaler.js`; i trænernes ⓘ findes den ikke, og kortene vises som før.
+6. **Posterne** `ms-*` i `data/konventioner.json` har fået `"side": "modspilsaftaler.html"`, så forsidens kort åbner siden med emnet valgt.
+7. **Ændringer i testværktøjerne**, uden for Afgrænsningen (til Franks godkendelse): `tjek_fagord.py` springer felter over, hvis navn ender på `En` (ellers læste fagords-, bydeforms- og stavetestene den engelske aftale i `data/modspilsaftaler.json` som dansk, og stavekontrollen meldte 71 ukendte ord fra session 1); `tjek_bydeform.py` har linket "Træn i Modspil" under `UNDTAGELSER`; `tools/ordliste.txt` har ordet `feeling` ("table feeling").
+8. **Testene:** `python3 tools/tjek_modspilsaftaler.py` melder "Alle punkter er i orden". Stavekontrollen melder ingen ukendte ord. Siden og kortsiden er prøvet i jsdom (dansk og engelsk, gyldig og ugyldig `modspil:v1`, skift af metode, Din aftale på `ms-kald`). Pixeltestene, `tjek_sidefod.mjs` og skærmbillederne kræver Chrome og hører til session 3; `modspilsaftaler.html` er en ny side, som `tjek_sidefod.mjs` og `tjek_viden_320.mjs` måske skal have på listen (session 3 undersøger det).
+9. **Tokenforbrug:** sessionen kørte i rådgiverchatten, så de fire tal fra Claude Code findes ikke.
