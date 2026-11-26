@@ -35,7 +35,7 @@ function tabel(rows, {styrke = true, krav = true, type = 'melding', forste, sids
   const h1 = forste || (type === 'modspil' ? 'Kort' : 'Melding');
   const head = fs ? `<th>${h1}</th><th>Mod farve</th><th>Mod sans</th>` : `<th>${h1}</th>${harStyrke ? '<th>Styrke</th>' : ''}<th>${sidste}</th>`;
   return `<div class="tw"><table><thead><tr>${head}</tr></thead><tbody>${
-    rows.map(r => r.gruppe ? `<tr class="grp"><td colspan="${n}">${kort(r.gruppe)}</td></tr>` : `<tr><td class="bud ${kcls(r.noegle)}">${kort(r.bud ?? r.kort)}</td>${
+    rows.map(r => r.gruppe ? `<tr class="grp"><td colspan="${n}">${kort(r.gruppe)}${r.din ? '<span class="chip din">Din aftale</span>' : ''}</td></tr>` : `<tr><td class="bud ${kcls(r.noegle)}">${kort(r.bud ?? r.kort)}</td>${
       fs ? `<td>${kort(r.farve || '—')}</td><td>${kort(r.sans || '—')}</td>` :
       `${harStyrke ? `<td class="styrke">${kort(r.styrke || '—')}</td>` : ''}<td>${kort(r.viser)}${
       krav && r.krav ? `<span class="krav">${esc(r.krav)}</span>` : ''}</td>`}</tr>`).join('')
@@ -97,11 +97,30 @@ function forklaring(k, kun){
     liste.map(([n,t]) => `<li class="${kcls(n)}">${t}</li>`).join('')}</ul></div>`;
 }
 
+/* Modspilsaftalerne: kortet ms-<kategori> viser den valgte metode øverst som "Din aftale" og de andre under "Andre varianter". */
+function msDel(k){
+  const M = globalThis.Modspilsaftaler;
+  if (!M || !MSD || !MSV || !String(k.id).startsWith('ms-')) return null;
+  const v = M.valgtFor(MSD, k.id, MSV.metoder);
+  if (!v || !v.metode) return null;
+  const d = M.delKort(k.meldinger, v.metode.tekst);
+  if (!d.valgt.length) return null;
+  d.valgt = d.valgt.map((r, i) => i === 0 ? { ...r, din: true } : r);
+  return d;
+}
+function msLinks(k){
+  if (!String(k.id).startsWith('ms-')) return '';
+  const p = MSD && MSV ? (MSD.profiler.find(x => x.id === MSV.profil) || { tekst: 'Egen' }).tekst : '';
+  return `<div class="rel"><b class="lbl">Modspilsaftaler</b><a class="chip" href="/fordelingstraeneren/#modspil">Træn i Modspil</a><a class="chip" href="../modspilsaftaler.html?k=${esc(k.id)}">Quiz og indstilling</a></div>${
+    p ? `<p class="ms-note">Din aftale følger profilen ${esc(p)}, som deles med Modspil.${MSV.note ? ' De gemte data fra Modspil kunne ikke læses, så Standard vises.' : ''}</p>` : ''}`;
+}
+
 /* De faste afsnit. Rækkefølge og numre er de samme for alle konventioner. */
 const FASTE = { eksempler:'Eksempler', faldgruber:'Faldgruber', aabne:'Åbne spørgsmål' };
 const afsnitTitel = (id, k) => TITLER[TYPE(k)][id] || FASTE[id];
 const AFSNIT = [
-  ['meldinger', k => k.meldinger?.length ? forklaring(k, true) + tabel(k.meldinger, {type:TYPE(k)}) : tom('Ikke udfyldt')],
+  ['meldinger', k => !k.meldinger?.length ? tom('Ikke udfyldt') : forklaring(k, true) + (msDel(k) ? (d => tabel(d.valgt, {type:TYPE(k)}) +
+      (d.andre.length ? `<p class="ms-andre"><b class="lbl">Andre varianter</b></p>${tabel(d.andre, {type:TYPE(k)})}` : ''))(msDel(k)) : tabel(k.meldinger, {type:TYPE(k)}))],
   ['fortsaettelser', k => k.fortsaettelser?.length ? `<div class="afs" style="gap:8px">${
       k.fortsaettelser.map((f, i) => `<details class="gren"${i === 0 ? ' open' : ''}><summary><span>${kort(f.titel)}</span></summary><div class="indhold">${
         f.auction ? seq(f.auction) : ''}${tabel(f.meldinger, {type:TYPE(k)})}${f.note ? `<p class="note">${kort(f.note)}</p>` : ''}</div></details>`).join('')}</div>`
@@ -138,6 +157,7 @@ function fuld(k){
     <div class="sit">${k.situation.auction ? seq(k.situation.auction) : ''}<p>${kort(k.situation.tekst)}${k.alert ? ' ' + esc(k.alert) + '.' : ''}</p>${
       k.situation.gaelderFor ? `<p><b class="lbl">Gælder for</b> ${kort(k.situation.gaelderFor)}</p>` : ''}</div>
     <div class="intro"><p><b class="lbl">Formål</b> ${kort(k.formaal || '')}</p><p class="lead">${kort(k.kortfortalt)}</p></div>
+    ${msLinks(k)}
     ${AFSNIT.map(([id, fn], i) => `<section class="afs" id="a-${id}"><header><span class="nr">${i+1}</span><h3>${afsnitTitel(id, k)}</h3></header>${fn(k)}</section>`).join('')}
     ${links(k.relaterede, 'Spiller sammen med')}
     <footer class="fod"><span>${k.kilde ? 'Kilde: ' + esc(k.kilde) : ''}</span><span>Træner: <code>${esc(k.traener?.url || '—')}</code></span></footer>
@@ -335,6 +355,12 @@ tr.grp td{font-size:.76rem;font-weight:600;letter-spacing:.05em;text-transform:u
 .rel.forv{margin-top:-14px}
 .valg{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
 button.chip{font-family:var(--sans);background:var(--card);cursor:pointer}
+/* Modspilsaftalerne (SPEC-modspilsaftaler.md): den valgte variant og linkene til Modspil og quizzen */
+a.chip{text-decoration:none;color:var(--ink);background:var(--card)}
+a.chip:hover{border-color:var(--ink)}
+.chip.din{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink);letter-spacing:0;text-transform:none;margin-left:6px}
+.ms-andre{margin:14px 0 0}
+.ms-note{margin:0;font-size:.85rem;color:var(--body)}
 button.chip[aria-pressed="true"]{background:var(--ink);color:var(--card);border-color:var(--ink)}
 button.chip[aria-pressed="true"] .rd,button.chip[aria-pressed="true"] .bk{color:inherit}
 button.chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
