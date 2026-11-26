@@ -929,6 +929,7 @@
   ],
   "status": "klar",
   "system": "generel",
+  "side": "modspilsaftaler.html",
   "viden": "viden/konventionskort.html#ms-udspil-sans",
   "en": {
    "titel": "Opening lead against notrump, low card",
@@ -947,6 +948,7 @@
   ],
   "status": "klar",
   "system": "generel",
+  "side": "modspilsaftaler.html",
   "viden": "viden/konventionskort.html#ms-udspil-farve",
   "en": {
    "titel": "Opening lead against a suit contract, low card",
@@ -965,6 +967,7 @@
   ],
   "status": "klar",
   "system": "generel",
+  "side": "modspilsaftaler.html",
   "viden": "viden/konventionskort.html#ms-honnoerudspil",
   "en": {
    "titel": "Honour leads",
@@ -983,6 +986,7 @@
   ],
   "status": "klar",
   "system": "generel",
+  "side": "modspilsaftaler.html",
   "viden": "viden/konventionskort.html#ms-kald",
   "en": {
    "titel": "Attitude",
@@ -1001,6 +1005,7 @@
   ],
   "status": "klar",
   "system": "generel",
+  "side": "modspilsaftaler.html",
   "viden": "viden/konventionskort.html#ms-laengde",
   "en": {
    "titel": "Count",
@@ -1019,6 +1024,7 @@
   ],
   "status": "klar",
   "system": "generel",
+  "side": "modspilsaftaler.html",
   "viden": "viden/konventionskort.html#ms-afkast",
   "en": {
    "titel": "First discard",
@@ -1037,6 +1043,7 @@
   ],
   "status": "klar",
   "system": "generel",
+  "side": "modspilsaftaler.html",
   "viden": "viden/konventionskort.html#ms-forsinket",
   "en": {
    "titel": "Delayed signal",
