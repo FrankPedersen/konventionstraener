@@ -147,6 +147,8 @@ a.chip{text-decoration:none;color:var(--ink);background:var(--card)}
 a.chip:hover{border-color:var(--ink)}
 .chip.din{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink);letter-spacing:0;text-transform:none;margin-left:6px}
 .ms-andre{margin:14px 0 0}
+/* Kortene ms-* har lange rækkenavne (fx "Makker spiller E ud; du har D 8 3"): de brækker, så tabellen ikke skal rulles. */
+.tw.ms td.bud{white-space:normal;width:40%}
 .ms-note{margin:0;font-size:.85rem;color:var(--body)}
 button.chip[aria-pressed="true"]{background:var(--ink);color:var(--card);border-color:var(--ink)}
 button.chip[aria-pressed="true"] .rd,button.chip[aria-pressed="true"] .bk{color:inherit}
@@ -336,8 +338,10 @@ function links(liste, label, cls=''){
     return m ? `<button class="chip lnk" data-k="${esc(m.id)}">${kort(m.navn)}</button>` : `<span class="chip">${kort(r)}</span>`; }).join('')}</div>`;
 }
 
+/* Tabellerne på kortene ms-* får klassen ms. */
+const msTw = (k, html) => String(k.id).startsWith('ms-') ? html.split('<div class="tw">').join('<div class="tw ms">') : html;
 function fuld(k){
-  return `<article class="kort">
+  return msTw(k, `<article class="kort">
     ${hoved(k)}
     ${links(k.forveksles, 'Ikke at forveksle med', 'forv')}
     <div class="sit">${k.situation.auction ? seq(k.situation.auction) : ''}<p>${kort(k.situation.tekst)}${k.alert ? ' ' + esc(k.alert) + '.' : ''}</p>${
@@ -347,7 +351,7 @@ function fuld(k){
     ${AFSNIT.map(([id, fn], i) => `<section class="afs" id="a-${id}"><header><span class="nr">${i+1}</span><h3>${afsnitTitel(id, k)}</h3></header>${fn(k)}</section>`).join('')}
     ${links(k.relaterede, 'Spiller sammen med')}
     <footer class="fod"><span>${k.kilde ? 'Kilde: ' + esc(k.kilde) : ''}</span><span>Træner: <code>${esc(k.traener?.url || '—')}</code></span></footer>
-  </article>`;
+  </article>`);
 }
 
 function kompakt(k){
