@@ -65,7 +65,7 @@ De eksisterende kort `markeringer`, `udspil` og `lavinthal` følger Bridgesystem
 - Spørgsmålene handler kun om aftalens indhold, fx "Hvad betyder en lille lige ved romersk kald?" De viser ingen hånd og beder ikke brugeren vælge kort.
 - Quizzen bruger de valgte metoder; et valg "Alle varianter" tager alle 34.
 - De forkerte svar er Claude Codes og ikke påstande om aftalen (som bonusspørgsmålene i Muiderberg).
-- Session 1 undersøger, om `traener.html` kan vise et spørgsmål uden hånd. Hvis ikke, bygges den mindste ændring, der kan, og den beskrives under Afklaret.
+- Afklaret i session 1: quizzen og indstillingen har egen side, modspilsaftaler.html (Beslutning 5); traener.html ændres ikke.
 
 ## Afgrænsning
 
@@ -227,6 +227,32 @@ Kørt i en ny rådgiverchat (Opus 5.5, high effort) via skallen på Franks compu
 4. **Quizzen** `data/modspilsaftaler-quiz.json`: 34 spørgsmål (2 pr. metode) med felterne `q`, `correct`, `wrong`, `why` og `…En`. Spørgsmålene skrives af `_lab\modspilsaftaler\lav_quiz.py` (uden for repoet).
 5. **Kortsiden** (`tools/konventionskort.src.html`, bygget): på kortene `ms-*` står den valgte metode øverst med mærket "Din aftale" og de andre under "Andre varianter", og under Formål står linkene "Træn i Modspil" (`/fordelingstraeneren/#modspil`) og "Quiz og indstilling" samt profilens navn. Andre kort er uændrede. `tools/konventionskort-shell.html` henter `../assets/modspilsaftaler.js`; i trænernes ⓘ findes den ikke, og kortene vises som før.
 6. **Posterne** `ms-*` i `data/konventioner.json` har fået `"side": "modspilsaftaler.html"`, så forsidens kort åbner siden med emnet valgt.
-7. **Ændringer i testværktøjerne**, uden for Afgrænsningen (til Franks godkendelse): `tjek_fagord.py` springer felter over, hvis navn ender på `En` (ellers læste fagords-, bydeforms- og stavetestene den engelske aftale i `data/modspilsaftaler.json` som dansk, og stavekontrollen meldte 71 ukendte ord fra session 1); `tjek_bydeform.py` har linket "Træn i Modspil" under `UNDTAGELSER`; `tools/ordliste.txt` har ordet `feeling` ("table feeling").
+7. **Ændringer i testværktøjerne**, uden for Afgrænsningen (godkendt af Frank 26. nov.): `tjek_fagord.py` springer felter over, hvis navn ender på `En` (ellers læste fagords-, bydeforms- og stavetestene den engelske aftale i `data/modspilsaftaler.json` som dansk, og stavekontrollen meldte 71 ukendte ord fra session 1); `tjek_bydeform.py` har linket "Træn i Modspil" under `UNDTAGELSER`; `tools/ordliste.txt` har ordet `feeling` ("table feeling").
 8. **Testene:** `python3 tools/tjek_modspilsaftaler.py` melder "Alle punkter er i orden". Stavekontrollen melder ingen ukendte ord. Siden og kortsiden er prøvet i jsdom (dansk og engelsk, gyldig og ugyldig `modspil:v1`, skift af metode, Din aftale på `ms-kald`). Pixeltestene, `tjek_sidefod.mjs` og skærmbillederne kræver Chrome og hører til session 3; `modspilsaftaler.html` er en ny side, som `tjek_sidefod.mjs` og `tjek_viden_320.mjs` måske skal have på listen (session 3 undersøger det).
 9. **Tokenforbrug:** sessionen kørte i rådgiverchatten, så de fire tal fra Claude Code findes ikke.
+
+### Session 3 (26. nov. 2026)
+
+Kørt i Claude Code (Sonnet 5.5, medium effort) på grenen `modspilsaftaler`. Ingen testfil og intet andet i repoet er ændret; kun denne Afklaret er skrevet. Intet er committet, flettet eller pushet.
+
+1. **Accepttesterne:** `python tools/tjek_modspilsaftaler.py` melder "Alle punkter er i orden" (punkt 1–9), og `node --test tools/modspilsaftaler.test.mjs` har 8 af 8 grønne. (`python3` er på denne pc kun en Microsoft Store-genvej; `python` virker.)
+2. **Hele suiten, én gang i forgrunden:** `tjek_viden_320.mjs` alt i orden (965 tjek), `tjek_crowhurst_390.mjs` alt i orden (712 tjek), `tjek_sidefod.mjs` alt i orden. Pixeltestene viser kun støj under loftet (NB-linjer med 1–3 pixels, også på ældre kort). Desuden i orden: `tjek_konventionskort.py` (58 kort), `tjek_kort_eksempler.py` (228), `tjek_fagord.py`, `tjek_bydeform.py`, `tjek_sprog.py` og `pixelstoej.test.mjs` (7 af 7).
+3. **Skal `modspilsaftaler.html` på listerne?** Ikke ændret; til Franks beslutning.
+   - `tjek_viden_320.mjs` henter kun `viden/*.html` og kortene, så siden dækkes ikke, og der er ingen grund til at udvide den: pixelsammenligningen har ingen "før" for en ny side.
+   - `tjek_sidefod.mjs` har en fast liste `SIDER` uden `markering.html` og `modspilsaftaler.html`; sidens sidefod er den fælles `assets/footer.js`. Anbefaling: tilføj `modspilsaftaler.html` (og gerne `markering.html`) til `SIDER`.
+   - Et tjek af vandret scroll for den nye side ved 390 og 320 px mangler i alle testene, og ville have fundet fejlen i punkt 5.
+4. **Skærmbillederne** (18 stk. i `C:\Users\frank\Kontraktbridge\skaermbilleder\modspilsaftaler\`): `ms-kald-`, `indstilling-` og `quiz-` × da/en × 1280/390/320 px. `ms-kald` viser romersk kald øverst med "Din aftale" og profilen Egen, indstillingen viser profilen Egen (romersk kald, Kompendiets udspil mod sans, 3. og 5. højeste mod farve), og quizzen viser et spørgsmål med forklaring efter svaret. Kortsiden er dansk på den engelske side; det er som aftalt (kortene er på dansk, session 1 punkt 3).
+5. **Fund, ikke rettet: vandret scroll på `modspilsaftaler.html` under 399 px.** Rullelisten "Emne" i quizzen (`select#emne` og dens `label`) er for bred: siden er 8 px for bred ved 390 px på dansk (4 px på engelsk) og 78 px (74 px) for bred ved 320 px. Det bryder specens krav "320 px uden vandret scroll". Kortsiden `ms-*` har ingen vandret scroll ved nogen bredde. Forslag til en mindste rettelse til en ny session: `#emne { max-width: 100%; min-width: 0 }` og `flex-wrap`/`flex-direction: column` på rækken med emnet under 399 px. Skærmbillederne `indstilling-*` og `quiz-*` ved 390 og 320 px viser fejlen og skal tages igen efter rettelsen.
+6. **Kortsiden ved 390 og 320 px:** tabellerne på kortene (også de ældre, fx Truscott) klippes i højre kant uden vandret scroll på siden. Det er eksisterende opførsel og ikke ændret her.
+7. **Tokenforbrug (nye input, skrevet til cachen, læst fra cachen, output):** de fire tal kan ikke læses inde fra sessionen. Frank tager `/usage` (5 timer og uge) efter sessionen, som ved session 1 og 2.
+
+### Rettelse efter session 3 (26. nov. 2026)
+
+Frank sagde ja til begge forslag fra session 3 (Claude Code, Sonnet 5.5, medium effort).
+
+1. **Vandret scroll rettet** i `modspilsaftaler.html`: `.omfang label { max-width:100%; min-width:0 }`, `#emne { max-width:100%; min-width:0 }` og `@media (max-width:398px) { .omfang label { flex-wrap:wrap } }`, så rækken med Emne brækker. Rullelisterne i indstillingen (`.metode select`, `width:100%; max-width:100%`) holdt sig allerede inden for siden. Målt ved 1280, 390 og 320 px på dansk og engelsk: vandret scroll er 0 på kortsiden, indstillingen og quizzen. Reglerne ændrer ikke noget over 398 px (`max-width:100%` og `min-width:0` har ingen virkning, når indholdet er smallere end rækken); en pixelsammenligning ved 1280 px er ikke kørt, siden er ny og har intet "før".
+2. **`tools/tjek_sidefod.mjs`:** `modspilsaftaler.html` er tilføjet til `SIDER` (`markering.html` er ikke med). Testen melder alt i orden, 120 tjek, og siden er med ved 1280, 390 og 320 px på begge sprog.
+3. **Specen:** under session 2, punkt 7, står nu "(godkendt af Frank 26. nov.)", og sidste punkt i Quizzen er erstattet med afklaringen om `modspilsaftaler.html` (Beslutning 5).
+4. **Skærmbillederne** `indstilling-` og `quiz-` ved 390 og 320 px er taget igen; de viser Emne-listen inden for siden. De øvrige 14 billeder er genskabt med samme indhold som før.
+5. **Tests:** `tjek_modspilsaftaler.py` melder "Alle punkter er i orden". Scriptets tjek af teksten "Din aftale" på kortsiden melder fejlagtigt FEJL (fejl i selve scriptet); romersk kald øverst med "Din aftale" er set på skærmbillederne.
+6. **Tokenforbrug:** de fire tal kan ikke læses inde fra sessionen; Frank tager `/usage`.

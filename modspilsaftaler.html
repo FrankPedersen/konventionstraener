@@ -49,6 +49,9 @@
   .omfang select{ font:400 1rem/1.4 var(--sg-sans); color:var(--sg-ink); background:var(--sg-canvas-soft); border:0; border-radius:var(--sg-radius-md);
                   padding:var(--sg-space-xs) var(--sg-space-sm); max-width:100%; }
   .omfang label{ display:inline-flex; align-items:center; gap:var(--sg-space-xs); }
+  .omfang label{ max-width:100%; min-width:0; }
+  #emne{ max-width:100%; min-width:0; }
+  @media (max-width:398px){ .omfang label{ flex-wrap:wrap; } }
 
   .progress{ display:flex; gap:6px; margin:0 0 var(--sg-space-lg); }
   .progress i{ flex:1; height:6px; border-radius:var(--sg-radius-pill); background:var(--sg-hairline); position:relative; overflow:hidden; }
