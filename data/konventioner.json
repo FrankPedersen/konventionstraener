@@ -919,6 +919,139 @@
   }
  },
  {
+  "id": "ms-udspil-sans",
+  "titel": "Udspil mod sans, lavt kort",
+  "gruppe": "Modspil",
+  "emne": "modspil",
+  "beskrivelse": "Varianterne 4.-højeste, 3. og 5. højeste, Kompendiets udspil. Varianten vælges i indstillingen, som deles med Modspil, og quizzen spørger til aftalens indhold.",
+  "roller": [
+   "Modspiller"
+  ],
+  "status": "klar",
+  "system": "generel",
+  "side": "modspilsaftaler.html",
+  "viden": "viden/konventionskort.html#ms-udspil-sans",
+  "en": {
+   "titel": "Opening lead against notrump, low card",
+   "gruppe": "Defence",
+   "beskrivelse": "The variants fourth highest, third and fifth highest, the Compendium's leads. The variant is chosen in the setting shared with Defence, and the quiz asks about the agreement itself."
+  }
+ },
+ {
+  "id": "ms-udspil-farve",
+  "titel": "Udspil mod farve, lavt kort",
+  "gruppe": "Modspil",
+  "emne": "modspil",
+  "beskrivelse": "Varianterne 4.-højeste, 3. og 5. højeste. Varianten vælges i indstillingen, som deles med Modspil, og quizzen spørger til aftalens indhold.",
+  "roller": [
+   "Modspiller"
+  ],
+  "status": "klar",
+  "system": "generel",
+  "side": "modspilsaftaler.html",
+  "viden": "viden/konventionskort.html#ms-udspil-farve",
+  "en": {
+   "titel": "Opening lead against a suit contract, low card",
+   "gruppe": "Defence",
+   "beskrivelse": "The variants fourth highest, third and fifth highest. The variant is chosen in the setting shared with Defence, and the quiz asks about the agreement itself."
+  }
+ },
+ {
+  "id": "ms-honnoerudspil",
+  "titel": "Honnørudspil",
+  "gruppe": "Modspil",
+  "emne": "modspil",
+  "beskrivelse": "Varianterne top af sekvens, ALA mod sans. Varianten vælges i indstillingen, som deles med Modspil, og quizzen spørger til aftalens indhold.",
+  "roller": [
+   "Modspiller"
+  ],
+  "status": "klar",
+  "system": "generel",
+  "side": "modspilsaftaler.html",
+  "viden": "viden/konventionskort.html#ms-honnoerudspil",
+  "en": {
+   "titel": "Honour leads",
+   "gruppe": "Defence",
+   "beskrivelse": "The variants top of sequence, ALA against notrump. The variant is chosen in the setting shared with Defence, and the quiz asks about the agreement itself."
+  }
+ },
+ {
+  "id": "ms-kald",
+  "titel": "Kald eller afvisning",
+  "gruppe": "Modspil",
+  "emne": "modspil",
+  "beskrivelse": "Varianterne højt = kald, lavt = kald, romersk kald. Varianten vælges i indstillingen, som deles med Modspil, og quizzen spørger til aftalens indhold.",
+  "roller": [
+   "Modspiller"
+  ],
+  "status": "klar",
+  "system": "generel",
+  "side": "modspilsaftaler.html",
+  "viden": "viden/konventionskort.html#ms-kald",
+  "en": {
+   "titel": "Attitude",
+   "gruppe": "Defence",
+   "beskrivelse": "The variants high encourages, low encourages, Roman signals. The variant is chosen in the setting shared with Defence, and the quiz asks about the agreement itself."
+  }
+ },
+ {
+  "id": "ms-laengde",
+  "titel": "Længdemarkering",
+  "gruppe": "Modspil",
+  "emne": "modspil",
+  "beskrivelse": "Varianterne højt-lavt = lige, lavt-højt = lige. Varianten vælges i indstillingen, som deles med Modspil, og quizzen spørger til aftalens indhold.",
+  "roller": [
+   "Modspiller"
+  ],
+  "status": "klar",
+  "system": "generel",
+  "side": "modspilsaftaler.html",
+  "viden": "viden/konventionskort.html#ms-laengde",
+  "en": {
+   "titel": "Count",
+   "gruppe": "Defence",
+   "beskrivelse": "The variants high-low = even, low-high = even. The variant is chosen in the setting shared with Defence, and the quiz asks about the agreement itself."
+  }
+ },
+ {
+  "id": "ms-afkast",
+  "titel": "Første afkast",
+  "gruppe": "Modspil",
+  "emne": "modspil",
+  "beskrivelse": "Varianterne som kald eller afvisning, O/E, Lavinthal. Varianten vælges i indstillingen, som deles med Modspil, og quizzen spørger til aftalens indhold.",
+  "roller": [
+   "Modspiller"
+  ],
+  "status": "klar",
+  "system": "generel",
+  "side": "modspilsaftaler.html",
+  "viden": "viden/konventionskort.html#ms-afkast",
+  "en": {
+   "titel": "First discard",
+   "gruppe": "Defence",
+   "beskrivelse": "The variants as attitude, odd/even, Lavinthal. The variant is chosen in the setting shared with Defence, and the quiz asks about the agreement itself."
+  }
+ },
+ {
+  "id": "ms-forsinket",
+  "titel": "Forsinket kald",
+  "gruppe": "Modspil",
+  "emne": "modspil",
+  "beskrivelse": "Varianterne intet forsinket kald, omvendt forsinket kald. Varianten vælges i indstillingen, som deles med Modspil, og quizzen spørger til aftalens indhold.",
+  "roller": [
+   "Modspiller"
+  ],
+  "status": "klar",
+  "system": "generel",
+  "side": "modspilsaftaler.html",
+  "viden": "viden/konventionskort.html#ms-forsinket",
+  "en": {
+   "titel": "Delayed signal",
+   "gruppe": "Defence",
+   "beskrivelse": "The variants no delayed signal, reverse delayed signal. The variant is chosen in the setting shared with Defence, and the quiz asks about the agreement itself."
+  }
+ },
+ {
   "id": "truscott",
   "titel": "Truscott 2NT",
   "gruppe": "Konkurrence",

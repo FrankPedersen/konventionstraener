@@ -18,7 +18,7 @@ const ROD = fileURLToPath(new URL('..', import.meta.url));
 const BILLEDER = process.argv.find((a) => a.startsWith('--billeder='))?.slice('--billeder='.length);
 const LIVE = process.argv.includes('--live');
 const SITE = 'https://www.kontraktbridge.dk/konventionstraener/';
-const SIDER = ['index.html', 'traener.html', 'multi-svar-traener.html', 'viden/index.html', 'makkeraftaler.html', 'viden/2-over-1.html'];
+const SIDER = ['index.html', 'traener.html', 'multi-svar-traener.html', 'viden/index.html', 'makkeraftaler.html', 'modspilsaftaler.html', 'viden/2-over-1.html'];
 const CHROME = [
   process.env.CHROME,
   'C:/Program Files/Google/Chrome/Application/chrome.exe',

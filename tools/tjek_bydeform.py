@@ -48,6 +48,7 @@ UNDTAGELSER = [
     'Vis fire mulige meldinger',
     'Træn',
     'Træn 8',
+    'Træn i Modspil',
     'Vælg konvention',
     'Skift forsvar',
     'Forfra',

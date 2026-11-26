@@ -1,0 +1,100 @@
+{
+  "skabelon": "konvention/2",
+  "type": "modspil",
+  "id": "ms-afkast",
+  "navn": "Første afkast",
+  "undertitel": "Det første kort, når en modspiller ikke kan bekende",
+  "kilde": "Modspil i Fordelingstræneren (metoder.json) · Kompendium over modspilsaftaler",
+  "kategori": "modspil",
+  "noegle": "farvevalg",
+  "formaal": "At vise makker, hvilken farve du vil have spillet.",
+  "situation": {
+    "tekst": "Første gang en modspiller ikke kan bekende.",
+    "gaelderFor": "Første afkast mod farve og sans"
+  },
+  "kortfortalt": "Tre varianter: som kald eller afvisning, O/E og Lavinthal. Varianten vælges i indstillingen Modspilsaftaler, som deles med Modspil.",
+  "meldinger": [
+    {
+      "gruppe": "som kald eller afvisning"
+    },
+    {
+      "kort": "Aftalen",
+      "noegle": "gra",
+      "viser": "Første afkast følger aftalen om kald eller afvisning i afkastfarven: et kald viser farven, en afvisning siger intet om de andre. Med romersk kald mod farve læses afkastet som O/E."
+    },
+    {
+      "kort": "Med lavt = kald: ♦2 fra ♦K D 7 2",
+      "noegle": "kald",
+      "viser": "Kald til ruder"
+    },
+    {
+      "kort": "Med lavt = kald: ♦9 fra ♦9 7 4",
+      "noegle": "afvis",
+      "viser": "Afvisning af ruder"
+    },
+    {
+      "gruppe": "O/E"
+    },
+    {
+      "kort": "Aftalen",
+      "noegle": "gra",
+      "viser": "Første gang en modspiller ikke kan bekende: et ulige kort kalder til afkastfarven, en lille lige viser styrke i den laveste og en stor lige i den højeste af de to andre farver (klør er lavest)."
+    },
+    {
+      "kort": "Spilfører spiller ♥; afkast ♦7",
+      "noegle": "kald",
+      "viser": "Ulige: kald til ruder"
+    },
+    {
+      "kort": "Spilfører spiller ♥; afkast ♦2",
+      "noegle": "farvevalg",
+      "viser": "Lille lige: styrke i klør"
+    },
+    {
+      "kort": "Spilfører spiller ♥; afkast ♦8",
+      "noegle": "farvevalg",
+      "viser": "Stor lige: styrke i spar"
+    },
+    {
+      "gruppe": "Lavinthal"
+    },
+    {
+      "kort": "Aftalen",
+      "noegle": "gra",
+      "viser": "Afkastet beder om en af de to andre farver: et lavt kort om den laveste, et højt kort om den højeste."
+    },
+    {
+      "kort": "Spilfører spiller ♥; afkast ♦2",
+      "noegle": "farvevalg",
+      "viser": "Lavt: beder om klør"
+    },
+    {
+      "kort": "Spilfører spiller ♥; afkast ♦9",
+      "noegle": "farvevalg",
+      "viser": "Højt: beder om spar"
+    }
+  ],
+  "fortsaettelser": [],
+  "indmelding": [
+    {
+      "situation": "O/E og Lavinthal: farverne",
+      "noegle": "gra",
+      "regel": "Klør er lavest. Afkastet viser en af de to farver, der hverken er afkastfarven eller den farve, der spilles."
+    },
+    {
+      "situation": "Som kald eller afvisning med romersk kald mod farve",
+      "noegle": "gra",
+      "regel": "Afkastet læses som O/E."
+    }
+  ],
+  "eksempler": [],
+  "faldgruber": [
+    "Aftalen gælder kun første gang, en modspiller ikke kan bekende."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "Markeringer",
+    "Lavinthal",
+    "Kald eller afvisning"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "skabelon": "konvention/2",
+  "type": "modspil",
+  "id": "ms-udspil-farve",
+  "navn": "Udspil mod farve, lavt kort",
+  "undertitel": "Hvilket lavt kort der spilles ud mod en farvekontrakt",
+  "kilde": "Modspil i Fordelingstræneren (metoder.json) · Kompendium over modspilsaftaler",
+  "kategori": "modspil",
+  "noegle": "udspil",
+  "formaal": "At vise makker farvens længde, så makker kan regne ud, hvor mange stik farven kan give.",
+  "situation": {
+    "tekst": "Første udspil mod en farvekontrakt fra en farve uden honnørsekvens.",
+    "gaelderFor": "Udspil mod farve, lavt kort"
+  },
+  "kortfortalt": "To varianter: 4.-højeste og 3. og 5. højeste. Varianten vælges i indstillingen Modspilsaftaler, som deles med Modspil.",
+  "meldinger": [
+    {
+      "gruppe": "4.-højeste"
+    },
+    {
+      "kort": "Aftalen",
+      "noegle": "gra",
+      "viser": "Fra fire kort eller flere spilles det fjerdehøjeste kort ud. Fra tre kort spilles det laveste med en honnør og ellers det højeste."
+    },
+    {
+      "kort": "D 9 6 3 2",
+      "noegle": "udspil",
+      "viser": "3"
+    },
+    {
+      "kort": "9 6 3",
+      "noegle": "udspil",
+      "viser": "9"
+    },
+    {
+      "gruppe": "3. og 5. højeste"
+    },
+    {
+      "kort": "Aftalen",
+      "noegle": "gra",
+      "viser": "Fra tre og fire kort spilles det tredjehøjeste kort ud, fra fem kort eller flere det femtehøjeste."
+    },
+    {
+      "kort": "D 9 6 3 2",
+      "noegle": "udspil",
+      "viser": "2"
+    },
+    {
+      "kort": "D 9 6 3",
+      "noegle": "udspil",
+      "viser": "6"
+    }
+  ],
+  "fortsaettelser": [],
+  "indmelding": [
+    {
+      "situation": "Honnørsekvens",
+      "noegle": "gra",
+      "regel": "Mod farve spilles toppen af sekvensen (kortet Honnørudspil)."
+    },
+    {
+      "situation": "Doubleton",
+      "noegle": "gra",
+      "regel": "Fra doubleton spilles det højeste kort."
+    }
+  ],
+  "eksempler": [],
+  "faldgruber": [
+    "Med 3. og 5. højeste kan et højt kort fra tre kort ligne en doubleton."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "Udspil",
+    "Honnørudspil",
+    "Udspil mod sans, lavt kort"
+  ]
+}

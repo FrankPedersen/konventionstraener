@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Modspilsaftaler — Konventionstræner</title>
+<meta name="description" content="Modspilsaftalerne med alle Modspils varianter: valget af aftaler, som deles med Modspil, og en quiz om aftalernes indhold.">
+<link rel="canonical" href="https://www.kontraktbridge.dk/konventionstraener/modspilsaftaler.html">
+<link rel="stylesheet" href="assets/fonts/tekst.css">
+<link rel="stylesheet" href="assets/fonts/symboler.css">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/lang.js"></script>
+<script src="assets/modspilsaftaler.js"></script>
+<style>
+  /* Modspilsaftalerne (SPEC-modspilsaftaler.md, session 2): indstillingen, fælles med Modspil, og quizzen om aftalernes
+     indhold. Samme opbygning og klasser som markering.html. */
+  .trainer{ max-width:64rem; padding-bottom:var(--sg-space-3xl); }
+  .hero{ padding:var(--sg-space-2xl) 0 var(--sg-space-lg); margin-bottom:0; }
+  .hero .eyebrow{ margin:0 0 var(--sg-space-xs); }
+  .hero h1{ font-size:clamp(1.9rem,4.6vw,2.5rem); line-height:1; margin:0 0 var(--sg-space-sm); }
+  .hero .deck{ font-size:1rem; line-height:1.5; margin:0; }
+
+  .panel{ background:var(--sg-canvas); border-radius:var(--sg-radius-xl); padding:var(--sg-space-xl); margin:0 0 var(--sg-space-lg); }
+  @media (max-width:600px){ .panel{ padding:var(--sg-space-lg); } }
+  .panel h2{ font-size:1.25rem; line-height:1.3; margin:0 0 var(--sg-space-sm); }
+  .lbl{ font-size:.75rem; line-height:1rem; font-weight:600; color:var(--sg-body); margin:0 0 var(--sg-space-xs); }
+  .links{ display:flex; flex-wrap:wrap; gap:var(--sg-space-xs); margin:var(--sg-space-md) 0 0; }
+  .chip{ display:inline-block; font-size:.875rem; line-height:1.25rem; font-weight:600; color:var(--sg-ink); background:var(--sg-canvas-soft);
+         padding:var(--sg-space-xs) var(--sg-space-md); border-radius:var(--sg-radius-pill); text-decoration:none; }
+  a.chip:hover{ box-shadow:inset 0 0 0 1px var(--sg-ink); }
+  .chip.din{ background:var(--sg-primary-pale); }
+
+  .profiler{ border:0; margin:0 0 var(--sg-space-lg); padding:0; display:flex; flex-wrap:wrap; gap:var(--sg-space-xs); }
+  .profiler legend{ padding:0; margin:0 0 var(--sg-space-xs); }
+  .profiler label{ display:inline-flex; align-items:center; gap:var(--sg-space-xs); background:var(--sg-canvas-soft); border-radius:var(--sg-radius-pill);
+                   padding:var(--sg-space-xs) var(--sg-space-md); font-weight:600; font-size:.9375rem; cursor:pointer; }
+  .profiler label.egen{ cursor:default; }
+  .profiler input{ margin:0; accent-color:var(--sg-ink); }
+  .metoder{ display:grid; grid-template-columns:minmax(0,1fr); gap:var(--sg-space-md); }
+  @media (min-width:760px){ .metoder{ grid-template-columns:minmax(0,1fr) minmax(0,1fr); } }
+  .metode label{ display:block; font-weight:600; font-size:.9375rem; margin:0 0 var(--sg-space-xs); }
+  .metode select{ width:100%; max-width:100%; font:400 1rem/1.4 var(--sg-sans); color:var(--sg-ink); background:var(--sg-canvas-soft); border:0;
+                  border-radius:var(--sg-radius-md); padding:var(--sg-space-sm) var(--sg-space-md); }
+  .metode p{ margin:var(--sg-space-xs) 0 0; font-size:.875rem; line-height:1.45; color:var(--sg-body); }
+  .note{ font-size:.9375rem; line-height:1.45; background:var(--sg-primary-pale); border-radius:var(--sg-radius-md);
+         padding:var(--sg-space-sm) var(--sg-space-lg); margin:0 0 var(--sg-space-md); }
+
+  .omfang{ display:flex; flex-wrap:wrap; gap:var(--sg-space-sm) var(--sg-space-lg); align-items:center; margin:0 0 var(--sg-space-lg); font-size:.9375rem; }
+  .omfang select{ font:400 1rem/1.4 var(--sg-sans); color:var(--sg-ink); background:var(--sg-canvas-soft); border:0; border-radius:var(--sg-radius-md);
+                  padding:var(--sg-space-xs) var(--sg-space-sm); max-width:100%; }
+  .omfang label{ display:inline-flex; align-items:center; gap:var(--sg-space-xs); }
+  .omfang label{ max-width:100%; min-width:0; }
+  #emne{ max-width:100%; min-width:0; }
+  @media (max-width:398px){ .omfang label{ flex-wrap:wrap; } }
+
+  .progress{ display:flex; gap:6px; margin:0 0 var(--sg-space-lg); }
+  .progress i{ flex:1; height:6px; border-radius:var(--sg-radius-pill); background:var(--sg-hairline); position:relative; overflow:hidden; }
+  .progress i.done::after, .progress i.current::after{ content:""; position:absolute; inset:0; background:var(--sg-primary); }
+  .progress i.wrong::after{ background:var(--sg-negative-deep); }
+  .qtext{ font-weight:600; font-size:1.125rem; line-height:1.4; margin:0 0 var(--sg-space-md); }
+  .opt{ display:block; width:100%; font:400 1rem/1.4 var(--sg-sans); text-align:left; background:var(--sg-canvas-soft); color:var(--sg-ink); border:0;
+        border-radius:var(--sg-radius-md); padding:var(--sg-space-md) var(--sg-space-lg); margin-bottom:var(--sg-space-sm); cursor:pointer; }
+  .opt:hover:not(:disabled){ box-shadow:inset 0 0 0 1px var(--sg-ink); }
+  .opt:disabled{ cursor:default; opacity:.45; }
+  .opt.correct{ opacity:1; background:var(--sg-primary-pale); color:var(--sg-positive-deep); box-shadow:inset 0 0 0 2px var(--sg-positive-deep); }
+  .opt.incorrect{ opacity:1; background:var(--sg-canvas); color:var(--sg-negative-deep); box-shadow:inset 0 0 0 2px var(--sg-negative-deep); }
+  .feedback{ margin-top:var(--sg-space-md); padding:var(--sg-space-lg); border-radius:var(--sg-radius-lg); font-size:.9375rem; line-height:1.5; display:none; }
+  .feedback.show{ display:block; }
+  .feedback.ok{ background:var(--sg-primary-pale); } .feedback.no{ background:var(--sg-canvas-soft); }
+  .feedback b{ display:block; margin-bottom:var(--sg-space-xs); font-weight:600; }
+  .feedback.ok b{ color:var(--sg-positive-deep); } .feedback.no b{ color:var(--sg-negative-deep); }
+  .feedback .kat{ display:block; margin-top:var(--sg-space-sm); font-size:.875rem; color:var(--sg-body); }
+  .next, .btn{ margin-top:var(--sg-space-sm); width:100%; max-width:19rem; border:0; border-radius:var(--sg-radius-xl); padding:var(--sg-space-md) var(--sg-space-xl);
+               font:600 1rem/1.5 var(--sg-sans); cursor:pointer; }
+  .next{ display:none; background:var(--sg-primary); color:var(--sg-on-primary); }
+  .next:hover{ background:var(--sg-primary-active); }
+  .next.show{ display:block; }
+  .btn{ background:var(--sg-primary); color:var(--sg-on-primary); }
+  .done{ text-align:center; }
+  .done .score{ font-family:var(--sg-display); font-weight:800; font-size:clamp(3rem,10vw,5rem); line-height:1; letter-spacing:-.02em; margin:var(--sg-space-md) 0; }
+</style>
+</head>
+<body>
+<header id="topbjaelke" data-aktiv="traen" data-sprog></header>
+<script src="assets/topbar.js"></script>
+
+<div class="wrap trainer">
+  <section class="hero">
+    <p class="eyebrow" data-en="Defence">Modspil</p>
+    <h1 data-en="Defensive agreements">Modspilsaftaler</h1>
+    <p class="deck" data-en="All the variants Defence trains. The choice of agreements is shared with Defence in the Distribution trainer, and the quiz asks only about what the agreements say.">Alle de varianter, Modspil træner. Valget af aftaler deles med Modspil i Fordelingstræneren, og quizzen spørger kun til, hvad aftalerne siger.</p>
+    <div class="links">
+      <a class="chip" href="/fordelingstraeneren/#modspil" data-en="Train in Defence">Træn i Modspil</a>
+      <a class="chip" id="kortLink" href="viden/konventionskort.html" data-en="The convention cards">Konventionskortene</a>
+    </div>
+  </section>
+
+  <section class="panel" id="indstilling" aria-labelledby="indstillingTitel">
+    <h2 id="indstillingTitel" data-en="Your agreements">Dine aftaler</h2>
+    <p class="note" id="note" hidden></p>
+    <fieldset class="profiler" id="profiler"><legend class="lbl" data-en="Profile">Profil</legend></fieldset>
+    <div class="metoder" id="metoder"></div>
+  </section>
+
+  <section class="panel" id="quiz" aria-labelledby="quizTitel">
+    <h2 id="quizTitel" data-en="Quiz">Quiz</h2>
+    <div class="omfang">
+      <label><span data-en="Topic">Emne</span> <select id="emne"></select></label>
+      <label><input type="checkbox" id="alle"> <span data-en="All variants">Alle varianter</span></label>
+    </div>
+    <div id="runde">
+      <div class="progress" id="progress"></div>
+      <p class="qtext" id="q"></p>
+      <div id="opts"></div>
+      <div class="feedback" id="feedback"></div>
+      <button class="next" id="nextBtn" data-en="Next question →">Næste spørgsmål →</button>
+    </div>
+    <div class="done" id="done" hidden>
+      <p class="lbl" data-en="Correct answers">Rigtige svar</p>
+      <p class="score" id="score"></p>
+      <button class="btn" id="igen" data-en="New round">Ny runde</button>
+    </div>
+  </section>
+
+  <p class="small" data-en="Source: the agreements in Defence (metoder.json) and the Compendium of defensive agreements. The wrong answers in the quiz are not statements about the agreements.">Kilde: aftalerne i Modspil (metoder.json) og Kompendium over modspilsaftaler. De forkerte svar i quizzen er ikke påstande om aftalerne.</p>
+</div>
+
+<script>
+const M = window.Modspilsaftaler;
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const N = o => T(o.tekst, o.tekstEn);
+const RUNDE = 8;
+let DATA, QUIZ, valg, store;
+
+// Browserens lagring; er den spærret, gemmes valget kun i hukommelsen, og Modspils data røres ikke.
+function lager(){
+  try { localStorage.getItem('modspil:v1'); return localStorage; }
+  catch (e) { const m = new Map(); return { getItem: k => m.has(k) ? m.get(k) : null, setItem: (k, v) => m.set(k, String(v)) }; }
+}
+
+function visIndstilling(){
+  const note = $('note');
+  note.hidden = !valg.note;
+  note.textContent = T('De gemte data fra Modspil kunne ikke læses. Standard vises, og valget gemmes ikke, så Modspils data ikke overskrives.',
+    'The saved data from Defence could not be read. Standard is shown, and the choice is not saved, so that the data of Defence is not overwritten.');
+  const p = $('profiler');
+  p.querySelectorAll('label').forEach(l => l.remove());
+  DATA.profiler.concat([{ id: 'egen', tekst: 'Egen', tekstEn: 'Custom' }]).forEach(x => {
+    const l = document.createElement('label');
+    if (x.id === 'egen') l.className = 'egen';
+    l.innerHTML = `<input type="radio" name="profil" value="${x.id}"${valg.profil === x.id ? ' checked' : ''}${x.id === 'egen' ? ' disabled' : ''}> ${esc(N(x))}`;
+    p.appendChild(l);
+  });
+  $('metoder').innerHTML = DATA.kategorier.map(k => {
+    const m = k.metoder.find(x => x.id === valg.metoder[k.id]);
+    return `<div class="metode" id="m-${k.id}"><label for="s-${k.id}">${esc(N(k))}</label><select id="s-${k.id}" data-k="${k.id}">${
+      k.metoder.map(x => `<option value="${x.id}"${x.id === m.id ? ' selected' : ''}>${esc(N(x))}</option>`).join('')}</select><p>${esc(T(m.aftale, m.aftaleEn))}</p></div>`;
+  }).join('');
+}
+
+function skift(metoder){
+  valg = { ...valg, metoder, profil: M.profilId(DATA, metoder) };
+  if (!valg.note) M.gemValg(store, DATA, metoder);
+  visIndstilling();
+  nyRunde();
+}
+
+$('profiler').addEventListener('change', e => { const m = M.profilMetoder(DATA, e.target.value); if (m) skift(m); });
+$('metoder').addEventListener('change', e => { const s = e.target.closest('select'); if (s) skift(M.medMetode(valg.metoder, s.dataset.k, s.value)); });
+
+// Quizzen: en runde med op til 8 spørgsmål fra de valgte metoder (eller alle varianter), evt. kun ét emne.
+let runde = [], nr = 0, rigtige = 0, svarene = [];
+const bland = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+
+function nyRunde(){
+  const kat = $('emne').value || undefined;
+  runde = bland(M.spoergsmaal(QUIZ, valg.metoder, $('alle').checked, kat)).slice(0, RUNDE);
+  nr = 0; rigtige = 0; svarene = [];
+  $('done').hidden = true; $('runde').hidden = false;
+  visSpoergsmaal();
+}
+
+function visSpoergsmaal(){
+  $('progress').innerHTML = runde.map((_, i) => `<i class="${i < nr ? (svarene[i] ? 'done' : 'wrong') : i === nr ? 'current' : ''}"></i>`).join('');
+  const s = runde[nr];
+  $('q').textContent = T(s.q, s.qEn);
+  const valgmuligheder = bland([[T(s.correct, s.correctEn), true], ...T(s.wrong, s.wrongEn).map(w => [w, false])]);
+  $('opts').innerHTML = valgmuligheder.map(([t, ok]) => `<button class="opt" data-ok="${ok}">${esc(t)}</button>`).join('');
+  $('feedback').className = 'feedback'; $('feedback').innerHTML = '';
+  $('nextBtn').classList.remove('show');
+}
+
+$('opts').addEventListener('click', e => {
+  const b = e.target.closest('.opt');
+  if (!b || b.disabled) return;
+  const s = runde[nr], ok = b.dataset.ok === 'true';
+  $('opts').querySelectorAll('.opt').forEach(o => { o.disabled = true; if (o.dataset.ok === 'true') o.classList.add('correct'); });
+  if (!ok) b.classList.add('incorrect');
+  svarene[nr] = ok; if (ok) rigtige++;
+  const k = DATA.kategorier.find(x => x.id === s.kategori), m = k.metoder.find(x => x.id === s.metode);
+  $('feedback').className = 'feedback show ' + (ok ? 'ok' : 'no');
+  $('feedback').innerHTML = `<b>${ok ? T('Rigtigt', 'Correct') : T('Ikke rigtigt', 'Not quite')}</b>${esc(T(s.why, s.whyEn))}<span class="kat">${esc(N(k))} · ${esc(N(m))}</span>`;
+  $('nextBtn').textContent = nr + 1 < runde.length ? T('Næste spørgsmål →', 'Next question →') : T('Se resultat →', 'See result →');
+  $('nextBtn').classList.add('show');
+});
+
+$('nextBtn').addEventListener('click', () => {
+  nr++;
+  if (nr < runde.length) return visSpoergsmaal();
+  $('runde').hidden = true; $('done').hidden = false;
+  $('score').textContent = `${rigtige}/${runde.length}`;
+});
+$('igen').addEventListener('click', nyRunde);
+$('emne').addEventListener('change', nyRunde);
+$('alle').addEventListener('change', nyRunde);
+
+(async () => {
+  try {
+    [DATA, QUIZ] = await Promise.all(['data/modspilsaftaler.json', 'data/modspilsaftaler-quiz.json'].map(u => fetch(u).then(r => r.json())));
+  } catch (e) {
+    $('indstilling').innerHTML = `<p>${T('Aftalerne kunne ikke indlæses.', 'The agreements could not be loaded.')}</p>`;
+    return;
+  }
+  store = lager();
+  valg = M.laesValg(store, DATA);
+  const k = new URLSearchParams(location.search).get('k');
+  const kat = DATA.kategorier.find(x => 'ms-' + x.id === k);
+  $('emne').innerHTML = `<option value="">${T('Alle emner', 'All topics')}</option>` + DATA.kategorier.map(x => `<option value="${x.id}"${kat && kat.id === x.id ? ' selected' : ''}>${esc(N(x))}</option>`).join('');
+  if (kat) $('kortLink').href = 'viden/konventionskort.html#' + k;
+  visIndstilling();
+  nyRunde();
+})();
+</script>
+
+<footer id="sidefod"></footer>
+<script src="assets/footer.js"></script>
+</body>
+</html>

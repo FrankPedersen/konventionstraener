@@ -1,0 +1,66 @@
+{
+  "skabelon": "konvention/2",
+  "type": "modspil",
+  "id": "ms-forsinket",
+  "navn": "Forsinket kald",
+  "undertitel": "Rækkefølgen i spilførers første farve",
+  "kilde": "Modspil i Fordelingstræneren (metoder.json) · Kompendium over modspilsaftaler",
+  "kategori": "modspil",
+  "noegle": "kald",
+  "formaal": "At fortælle makker, om modspillet skal være passivt eller aktivt, og om et kald var ægte.",
+  "situation": {
+    "tekst": "I den første farve, spilfører spiller, efter udspillet.",
+    "gaelderFor": "Udspiller og tilspiller"
+  },
+  "kortfortalt": "To varianter: intet forsinket kald og omvendt forsinket kald. Varianten vælges i indstillingen Modspilsaftaler, som deles med Modspil.",
+  "meldinger": [
+    {
+      "gruppe": "intet forsinket kald"
+    },
+    {
+      "kort": "Aftalen",
+      "noegle": "gra",
+      "viser": "Rækkefølgen i spilførers første farve betyder intet særligt."
+    },
+    {
+      "kort": "3, derefter 7",
+      "noegle": "gra",
+      "viser": "Ingen særlig betydning"
+    },
+    {
+      "gruppe": "omvendt forsinket kald"
+    },
+    {
+      "kort": "Aftalen",
+      "noegle": "gra",
+      "viser": "I den første farve, spilfører spiller, gælder for både udspiller og tilspiller: lav-høj betyder \"fortsæt i farven, intet vigtigere at fortælle\" (passivt), og høj-lav betyder \"skift farve, spil aktivt\"."
+    },
+    {
+      "kort": "3, derefter 7 (lav-høj)",
+      "noegle": "kald",
+      "viser": "Fortsæt i udspilsfarven, intet vigtigere at fortælle (passivt)"
+    },
+    {
+      "kort": "7, derefter 3 (høj-lav)",
+      "noegle": "afvis",
+      "viser": "Skift farve, spil aktivt"
+    }
+  ],
+  "fortsaettelser": [],
+  "indmelding": [
+    {
+      "situation": "Makker har brug for en markering",
+      "noegle": "gra",
+      "regel": "Der ses bort fra signalet, når det er tydeligt, at makker har brug for en længdemarkering."
+    }
+  ],
+  "eksempler": [],
+  "faldgruber": [
+    "Lægger begge modspillere lav-høj, er modspillet passivt; lægger begge høj-lav, skal der angribes."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "Markeringer",
+    "Kald eller afvisning"
+  ]
+}
