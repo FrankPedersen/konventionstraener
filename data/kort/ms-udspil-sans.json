@@ -1,0 +1,95 @@
+{
+  "skabelon": "konvention/2",
+  "type": "modspil",
+  "id": "ms-udspil-sans",
+  "navn": "Udspil mod sans, lavt kort",
+  "undertitel": "Hvilket lavt kort der spilles ud mod sans",
+  "kilde": "Modspil i Fordelingstræneren (metoder.json) · Kompendium over modspilsaftaler",
+  "kategori": "modspil",
+  "noegle": "udspil",
+  "formaal": "At vise makker farvens længde og om der er en honnør, så makker kan regne farven ud.",
+  "situation": {
+    "tekst": "Første udspil mod en sanskontrakt fra en farve uden honnørsekvens.",
+    "gaelderFor": "Udspil mod sans, lavt kort"
+  },
+  "kortfortalt": "Tre varianter: 4.-højeste, 3. og 5. højeste og Kompendiets udspil. Varianten vælges i indstillingen Modspilsaftaler, som deles med Modspil.",
+  "meldinger": [
+    {
+      "gruppe": "4.-højeste"
+    },
+    {
+      "kort": "Aftalen",
+      "noegle": "gra",
+      "viser": "Fra fire kort eller flere spilles det fjerdehøjeste kort ud. Fra tre kort spilles det laveste med en honnør og ellers det højeste."
+    },
+    {
+      "kort": "K 9 6 3 2",
+      "noegle": "udspil",
+      "viser": "3"
+    },
+    {
+      "kort": "8 6 3 2",
+      "noegle": "udspil",
+      "viser": "2"
+    },
+    {
+      "gruppe": "3. og 5. højeste"
+    },
+    {
+      "kort": "Aftalen",
+      "noegle": "gra",
+      "viser": "Fra tre og fire kort spilles det tredjehøjeste kort ud, fra fem kort eller flere det femtehøjeste."
+    },
+    {
+      "kort": "K 9 6 3 2",
+      "noegle": "udspil",
+      "viser": "2"
+    },
+    {
+      "kort": "K 9 6 3",
+      "noegle": "udspil",
+      "viser": "6"
+    },
+    {
+      "gruppe": "Kompendiets udspil"
+    },
+    {
+      "kort": "Aftalen",
+      "noegle": "gra",
+      "viser": "Fra en farve med honnør og mindst fire kort spilles 4.-højeste ud, fra honnør tredje det laveste. Fra småkort (højst en 9'er) spilles det tredje laveste: fra tre små det højeste og fra fire små det næsthøjeste. Fra en tier spilles det næsthøjeste."
+    },
+    {
+      "kort": "K 9 6 3 2",
+      "noegle": "udspil",
+      "viser": "3"
+    },
+    {
+      "kort": "8 6 3 2",
+      "noegle": "udspil",
+      "viser": "6"
+    }
+  ],
+  "fortsaettelser": [],
+  "indmelding": [
+    {
+      "situation": "Honnørsekvens",
+      "noegle": "gra",
+      "regel": "Honnørudspillet følger kortet Honnørudspil, ikke reglen for det lave kort."
+    },
+    {
+      "situation": "Doubleton",
+      "noegle": "gra",
+      "regel": "Fra doubleton spilles det højeste kort."
+    }
+  ],
+  "eksempler": [],
+  "faldgruber": [
+    "Med Kompendiets udspil viser et lavt kort ikke altid en honnør: fra fire småkort spilles det næsthøjeste."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "Udspil",
+    "Honnørudspil",
+    "Udspil mod farve, lavt kort"
+  ]
+}

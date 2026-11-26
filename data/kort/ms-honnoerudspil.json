@@ -1,0 +1,98 @@
+{
+  "skabelon": "konvention/2",
+  "type": "modspil",
+  "id": "ms-honnoerudspil",
+  "navn": "Honnørudspil",
+  "undertitel": "Hvilken honnør der spilles ud fra en sekvens",
+  "kilde": "Modspil i Fordelingstræneren (metoder.json) · Kompendium over modspilsaftaler",
+  "kategori": "modspil",
+  "noegle": "udspil",
+  "formaal": "At vise makker sekvensen og bede om den markering, der hjælper mest.",
+  "situation": {
+    "tekst": "Første udspil fra en farve med en honnørsekvens.",
+    "gaelderFor": "Honnørudspil mod sans og farve"
+  },
+  "kortfortalt": "To varianter: top af sekvens og ALA mod sans. Varianten vælges i indstillingen Modspilsaftaler, som deles med Modspil.",
+  "meldinger": [
+    {
+      "gruppe": "top af sekvens"
+    },
+    {
+      "kort": "Aftalen",
+      "noegle": "gra",
+      "viser": "Fra en honnørsekvens spilles toppen ud, fx esset fra E K. Mod sans kræver det tre kort i træk eller en brudt sekvens (K D 10); to honnørkort i træk med små kort afgøres af \"table feeling\"."
+    },
+    {
+      "kort": "Mod farve: E K 7 5",
+      "noegle": "udspil",
+      "viser": "E"
+    },
+    {
+      "kort": "Mod sans: K D B 4",
+      "noegle": "udspil",
+      "viser": "K"
+    },
+    {
+      "gruppe": "ALA mod sans"
+    },
+    {
+      "kort": "Aftalen",
+      "noegle": "gra",
+      "viser": "Mod sans følger honnørudspillet ALA-tabellen: E K x x x(+) → K, E K x x → E, E K D x(x) → E, E K B 10(x) → K, K D B og K D 10 9(x) → K, K D x x(x) → D, D B 10 og D B 9 → D, B 10 9 og 10 9 8 → toppen. Es og dame beder om kald eller afvisning, kongen om længdemarkering. Mod farve spilles toppen af sekvensen."
+    },
+    {
+      "kort": "Mod sans: E K 7 5 3",
+      "noegle": "udspil",
+      "viser": "K"
+    },
+    {
+      "kort": "Mod sans: K D 7 5",
+      "noegle": "udspil",
+      "viser": "D"
+    },
+    {
+      "kort": "Mod farve: E K 7 5 3",
+      "noegle": "udspil",
+      "viser": "E"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Makker efter ALA-udspil mod sans",
+      "meldinger": [
+        {
+          "kort": "Es eller dame",
+          "noegle": "kald",
+          "viser": "Kald eller afvisning"
+        },
+        {
+          "kort": "Konge",
+          "noegle": "antal",
+          "viser": "Længdemarkering"
+        }
+      ]
+    }
+  ],
+  "indmelding": [
+    {
+      "situation": "ALA mod farve",
+      "noegle": "gra",
+      "regel": "Mod farve spilles toppen af sekvensen; Kompendiet bruger romersk kald mod farve og derfor ikke ALA."
+    },
+    {
+      "situation": "To honnørkort i træk med små kort mod sans",
+      "noegle": "gra",
+      "regel": "Med top af sekvens afgør \"table feeling\", om honnøren eller det lave kort spilles."
+    }
+  ],
+  "eksempler": [],
+  "faldgruber": [
+    "Med ALA beder kongen om længdemarkering og ikke om kald: E K x x x(+) spilles ud med kongen."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "Udspil",
+    "Udspil mod sans, lavt kort",
+    "Længdemarkering"
+  ]
+}

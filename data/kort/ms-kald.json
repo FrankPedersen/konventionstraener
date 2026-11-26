@@ -1,0 +1,128 @@
+{
+  "skabelon": "konvention/2",
+  "type": "modspil",
+  "id": "ms-kald",
+  "navn": "Kald eller afvisning",
+  "undertitel": "Makkers kort på dit udspil: fortsæt eller skift",
+  "kilde": "Modspil i Fordelingstræneren (metoder.json) · Kompendium over modspilsaftaler",
+  "kategori": "modspil",
+  "noegle": "kald",
+  "formaal": "At fortælle udspilleren, om udspilsfarven skal fortsættes.",
+  "situation": {
+    "tekst": "Makker spiller ud, og du lægger til.",
+    "gaelderFor": "Tilspil på makkers udspil"
+  },
+  "kortfortalt": "Tre varianter: højt = kald, lavt = kald og romersk kald. Varianten vælges i indstillingen Modspilsaftaler, som deles med Modspil.",
+  "meldinger": [
+    {
+      "gruppe": "højt = kald"
+    },
+    {
+      "kort": "Aftalen",
+      "noegle": "gra",
+      "viser": "Et højt kort kalder til udspilsfarven, et lavt kort afviser."
+    },
+    {
+      "kort": "Makker spiller E ud; du har D 8 3",
+      "noegle": "kald",
+      "viser": "8 (kald)"
+    },
+    {
+      "kort": "Makker spiller E ud; du har 8 6 3",
+      "noegle": "afvis",
+      "viser": "3 (afvisning)"
+    },
+    {
+      "gruppe": "lavt = kald"
+    },
+    {
+      "kort": "Aftalen",
+      "noegle": "gra",
+      "viser": "Et lavt kort kalder til udspilsfarven, et højt kort afviser."
+    },
+    {
+      "kort": "Makker spiller E ud; du har D 8 3",
+      "noegle": "kald",
+      "viser": "3 (kald)"
+    },
+    {
+      "kort": "Makker spiller E ud; du har 8 6 3",
+      "noegle": "afvis",
+      "viser": "8 (afvisning)"
+    },
+    {
+      "gruppe": "romersk kald"
+    },
+    {
+      "kort": "Aftalen",
+      "noegle": "gra",
+      "viser": "Mod farve, når hverken udspillets kort eller bordets kort stikkes: et ulige kort kalder til udspilsfarven (det mindste ulige kort), en lille lige foreslår skift til den laveste og en høj lige til den højeste af de to andre farver; trumf tæller ikke med. Uden lige kort kan en høj ulige (9 og op) vise ønske om skift. Mod sans gælder lavt = kald."
+    },
+    {
+      "kort": "Mod farve; du har D 7 3",
+      "noegle": "kald",
+      "viser": "3 (mindste ulige: kald)"
+    },
+    {
+      "kort": "Mod farve; du har 8 6 3",
+      "noegle": "farvevalg",
+      "viser": "6 (lille lige: skift til den laveste af de to andre farver)"
+    },
+    {
+      "kort": "Mod farve; du har 8 6 3",
+      "noegle": "farvevalg",
+      "viser": "8 (høj lige: skift til den højeste af de to andre farver)"
+    }
+  ],
+  "fortsaettelser": [
+    {
+      "titel": "Udspilleren læser et romersk kald",
+      "meldinger": [
+        {
+          "kort": "Ulige kort",
+          "noegle": "kald",
+          "viser": "Kald til udspilsfarven"
+        },
+        {
+          "kort": "Lille lige",
+          "noegle": "farvevalg",
+          "viser": "Skift til den laveste af de to andre farver"
+        },
+        {
+          "kort": "Høj lige",
+          "noegle": "farvevalg",
+          "viser": "Skift til den højeste af de to andre farver"
+        }
+      ],
+      "note": "Trumf tæller ikke med. En lav lige er sædvanligvis et af de to laveste lige kort, udspilleren ikke kan se."
+    }
+  ],
+  "indmelding": [
+    {
+      "situation": "Romersk kald mod sans",
+      "noegle": "gra",
+      "regel": "Mod sans gælder lavt = kald."
+    },
+    {
+      "situation": "Romersk kald, når et kort stikkes",
+      "noegle": "gra",
+      "regel": "Romersk kald gælder kun, når hverken udspillets kort eller bordets kort stikkes."
+    },
+    {
+      "situation": "Romersk kald uden lige kort",
+      "noegle": "gra",
+      "regel": "En høj ulige (9 og op) kan vise ønske om skift."
+    }
+  ],
+  "eksempler": [],
+  "faldgruber": [
+    "Tolkningen af et romersk kald må ikke erstatte sund fornuft: makkers kort kan være en singleton, og makker kan have kun lige eller kun ulige kort.",
+    "Jo længere udspilsfarven er, og jo flere kort bordet har i den, jo færre muligheder har makker for at vise det ønskede."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "Markeringer",
+    "Første afkast",
+    "Forsinket kald"
+  ]
+}

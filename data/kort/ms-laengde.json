@@ -1,0 +1,65 @@
+{
+  "skabelon": "konvention/2",
+  "type": "modspil",
+  "id": "ms-laengde",
+  "navn": "Længdemarkering",
+  "undertitel": "Lige eller ulige antal kort med rækkefølgen",
+  "kilde": "Modspil i Fordelingstræneren (metoder.json) · Kompendium over modspilsaftaler",
+  "kategori": "modspil",
+  "noegle": "antal",
+  "formaal": "At fortælle makker, hvor mange kort du har i farven.",
+  "situation": {
+    "tekst": "Når kald ikke er det vigtige, fx efter et konge-udspil med ALA, eller når spilfører spiller en farve.",
+    "gaelderFor": "Længdemarkering"
+  },
+  "kortfortalt": "To varianter: højt-lavt = lige og lavt-højt = lige. Varianten vælges i indstillingen Modspilsaftaler, som deles med Modspil.",
+  "meldinger": [
+    {
+      "gruppe": "højt-lavt = lige"
+    },
+    {
+      "kort": "Aftalen",
+      "noegle": "gra",
+      "viser": "Et højt kort efterfulgt af et lavt viser et lige antal kort, lavt-højt et ulige antal."
+    },
+    {
+      "kort": "8 3",
+      "noegle": "antal",
+      "viser": "8, derefter 3 (lige)"
+    },
+    {
+      "kort": "8 6 3",
+      "noegle": "antal",
+      "viser": "3, derefter 6 (ulige)"
+    },
+    {
+      "gruppe": "lavt-højt = lige"
+    },
+    {
+      "kort": "Aftalen",
+      "noegle": "gra",
+      "viser": "Et lavt kort efterfulgt af et højt viser et lige antal kort, højt-lavt et ulige antal."
+    },
+    {
+      "kort": "8 3",
+      "noegle": "antal",
+      "viser": "3, derefter 8 (lige)"
+    },
+    {
+      "kort": "8 6 3",
+      "noegle": "antal",
+      "viser": "8, derefter 6 (ulige)"
+    }
+  ],
+  "fortsaettelser": [],
+  "indmelding": [],
+  "eksempler": [],
+  "faldgruber": [
+    "Det første kort kan kun aflæses ud fra de kort, makker ikke selv kan se."
+  ],
+  "aabne": [],
+  "relaterede": [
+    "Markeringer",
+    "Honnørudspil"
+  ]
+}
