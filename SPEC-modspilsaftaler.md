@@ -113,3 +113,96 @@ Efter Franks "godkendt" (Sonnet, medium effort): flet, push, live-tjek (`tjek_si
 ## Afklaret
 
 (Udfyldes af Claude Code. Tokenforbruget i fire tal pr. session: nye input, skrevet til cachen, læst fra cachen og output.)
+
+### Session 1 (26. nov. 2026)
+
+Kørt i rådgiverchatten på Franks ønske (Opus 5.5) via skallen på Franks computer, ikke i Claude Code. Grenen `modspilsaftaler`, tagget `v-foer-modspilsaftaler` på `aeecc28`.
+
+1. **Accepttesten** `tools/tjek_modspilsaftaler.py` blev skrevet først og var rød med 28 fejl (`8e47b40`). Punkt 5 kontrollerer udspilseksemplerne mod Fordelingstrænerens model med `tools/kontrol_modspilsaftaler.mjs`; Node 22 fjerner selv typerne, og `tools/ts-hooks.mjs` giver importerne uden endelse `.ts` og indlæser JSON. Fordelingstræneren læses kun.
+2. **Kopien** `data/modspilsaftaler.json` er en byte-kopi af `metoder.json`. Punkt 1 sammenligner kategorier og profiler.
+3. **Kortene** (`a1b7cb4` = H): 7 kort `ms-<kategori>`, `type` og `kategori` modspil. Skabelonen og skemaet er uændrede: hver metode er en mellemoverskrift i Kortene med rækken "Aftalen" (aftalen ordret fra `metoder.json`) og metodens eksempler som rækker (holding → kort). Afsnittet Eksempler (fuld hånd) er tomt, fordi specens eksempler er farver og ikke hænder. Kortene er på dansk som alle andre kort; den engelske aftale bruges i indstillingen og quizzen (session 2). Skriptet, der skriver kortene, ligger i `_lab\modspilsaftaler\lav_kort.py` (uden for repoet).
+4. **Skabelonen siger** "Udspilsaftaler samles på ét kort, `udspil`". De tre udspilskort `ms-udspil-sans`, `ms-udspil-farve` og `ms-honnoerudspil` følger specen i stedet (ét kort pr. kategori); `udspil` (Bridgesystem) er uændret. Hvis Frank vil holde skabelonens regel, kan de tre slås sammen til ét kort `ms-udspil` i session 2.
+5. **Posterne** i `data/konventioner.json`: 7 poster efter `lavinthal`, gruppen Modspil, `system: "generel"`, `status: "klar"`; filen er ellers byte for byte som før. Posterne har endnu ingen træner, så `traener.html?k=ms-…` virker først efter session 2.
+6. **Pixeltestene** `tjek_viden_320.mjs` og `tjek_crowhurst_390.mjs` (`d52114b`): 58 kort, de 7 kort `ms-*` står i `NYE_KORT` og tjekkes kun for vandret scroll, og siden før henter `data/kort/index.json` og de 7 kort fra H = `a1b7cb4`. Testene kræver Chrome og er ikke kørt her (session 3).
+7. **Quizzen kan ikke ligge i `traener.html`:** træneren bygger hver runde af hænder fra `pools/<id>.json` med en melding og et bonusspørgsmål til hver hånd, så et spørgsmål uden hånd kræver en ny tilstand i hele træneren. Forslag til session 2: en lille side `modspilsaftaler.html` (quiz og indstilling), og posterne får `"side": "modspilsaftaler.html?k=ms-…"` som `markeringer` og `lavinthal` (`markering.html`). Spørgsmålene ligger i `data/modspilsaftaler-quiz.json`, og logikken i `assets/modspilsaftaler.js`, så den kan testes med `node --test`.
+8. **Status efter session 1:** `python3 tools/tjek_modspilsaftaler.py` har punkt 1, 2, 5 og 8 i orden; punkt 3 (linket "Træn i Modspil"), 4 (quizzen), 6–7 (indstillingen og "Din aftale") hører til session 2, og punkt 9 bliver grønt med tabellen nedenfor. `tjek_konventionskort.py` (58 kort), `tjek_kort_eksempler.py`, `tjek_fagord.py`, `tjek_bydeform.py` og `tjek_sprog.py` er i orden.
+9. **Tokenforbrug:** sessionen kørte i rådgiverchatten, så de fire tal fra Claude Code findes ikke. Frank kan tage `/usage` (5 timer og uge), når han er ved pc'en.
+
+#### Tekster til gennemgang
+
+Alle kortenes tekster ud over aftalerne (som er ordret fra `metoder.json`). Eksemplerne til udspil er kontrolleret mod modellen; de øvrige eksempler og "(tilføjelse)" er rådgiverens og skal godkendes af Frank.
+
+| Kort | Felt | Tekst | Kilde |
+| --- | --- | --- | --- |
+| `ms-udspil-sans` | Formål | At vise makker farvens længde og om der er en honnør, så makker kan regne farven ud. | (tilføjelse) |
+| `ms-udspil-sans` | Situation | Første udspil mod en sanskontrakt fra en farve uden honnørsekvens. · Udspil mod sans, lavt kort | (tilføjelse) |
+| `ms-udspil-sans` | Eksempel (4.-højeste) | K 9 6 3 2 → 3 | modellen i Fordelingstræneren (accepttest 5) |
+| `ms-udspil-sans` | Eksempel (4.-højeste) | 8 6 3 2 → 2 | modellen i Fordelingstræneren (accepttest 5) |
+| `ms-udspil-sans` | Eksempel (3. og 5. højeste) | K 9 6 3 2 → 2 | modellen i Fordelingstræneren (accepttest 5) |
+| `ms-udspil-sans` | Eksempel (3. og 5. højeste) | K 9 6 3 → 6 | modellen i Fordelingstræneren (accepttest 5) |
+| `ms-udspil-sans` | Eksempel (Kompendiets udspil) | K 9 6 3 2 → 3 | modellen i Fordelingstræneren (accepttest 5) |
+| `ms-udspil-sans` | Eksempel (Kompendiets udspil) | 8 6 3 2 → 6 | modellen i Fordelingstræneren (accepttest 5) |
+| `ms-udspil-sans` | Forrang og undtagelser | Honnørsekvens: Honnørudspillet følger kortet Honnørudspil, ikke reglen for det lave kort. | (tilføjelse) |
+| `ms-udspil-sans` | Forrang og undtagelser | Doubleton: Fra doubleton spilles det højeste kort. | Kompendiet s. 23 |
+| `ms-udspil-sans` | Faldgrube | Med Kompendiets udspil viser et lavt kort ikke altid en honnør: fra fire småkort spilles det næsthøjeste. | metoder.json (Kompendiets udspil); Kompendiet s. 23 |
+| `ms-udspil-farve` | Formål | At vise makker farvens længde, så makker kan regne ud, hvor mange stik farven kan give. | (tilføjelse) |
+| `ms-udspil-farve` | Situation | Første udspil mod en farvekontrakt fra en farve uden honnørsekvens. · Udspil mod farve, lavt kort | (tilføjelse) |
+| `ms-udspil-farve` | Eksempel (4.-højeste) | D 9 6 3 2 → 3 | modellen i Fordelingstræneren (accepttest 5) |
+| `ms-udspil-farve` | Eksempel (4.-højeste) | 9 6 3 → 9 | modellen i Fordelingstræneren (accepttest 5) |
+| `ms-udspil-farve` | Eksempel (3. og 5. højeste) | D 9 6 3 2 → 2 | modellen i Fordelingstræneren (accepttest 5) |
+| `ms-udspil-farve` | Eksempel (3. og 5. højeste) | D 9 6 3 → 6 | modellen i Fordelingstræneren (accepttest 5) |
+| `ms-udspil-farve` | Forrang og undtagelser | Honnørsekvens: Mod farve spilles toppen af sekvensen (kortet Honnørudspil). | metoder.json (top af sekvens) |
+| `ms-udspil-farve` | Forrang og undtagelser | Doubleton: Fra doubleton spilles det højeste kort. | (tilføjelse) |
+| `ms-udspil-farve` | Faldgrube | Med 3. og 5. højeste kan et højt kort fra tre kort ligne en doubleton. | (tilføjelse) |
+| `ms-honnoerudspil` | Formål | At vise makker sekvensen og bede om den markering, der hjælper mest. | (tilføjelse) |
+| `ms-honnoerudspil` | Situation | Første udspil fra en farve med en honnørsekvens. · Honnørudspil mod sans og farve | (tilføjelse) |
+| `ms-honnoerudspil` | Eksempel (top af sekvens) | Mod farve: E K 7 5 → E | modellen i Fordelingstræneren (accepttest 5) |
+| `ms-honnoerudspil` | Eksempel (top af sekvens) | Mod sans: K D B 4 → K | modellen i Fordelingstræneren (accepttest 5) |
+| `ms-honnoerudspil` | Eksempel (ALA mod sans) | Mod sans: E K 7 5 3 → K | modellen i Fordelingstræneren (accepttest 5) |
+| `ms-honnoerudspil` | Eksempel (ALA mod sans) | Mod sans: K D 7 5 → D | modellen i Fordelingstræneren (accepttest 5) |
+| `ms-honnoerudspil` | Eksempel (ALA mod sans) | Mod farve: E K 7 5 3 → E | modellen i Fordelingstræneren (accepttest 5) |
+| `ms-honnoerudspil` | Makkers læsning | Makker efter ALA-udspil mod sans: Es eller dame = Kald eller afvisning; Konge = Længdemarkering | Kompendiet s. 24 (ALA) |
+| `ms-honnoerudspil` | Forrang og undtagelser | ALA mod farve: Mod farve spilles toppen af sekvensen; Kompendiet bruger romersk kald mod farve og derfor ikke ALA. | Kompendiet s. 24 |
+| `ms-honnoerudspil` | Forrang og undtagelser | To honnørkort i træk med små kort mod sans: Med top af sekvens afgør "table feeling", om honnøren eller det lave kort spilles. | metoder.json (top af sekvens); Kompendiet s. 23 |
+| `ms-honnoerudspil` | Faldgrube | Med ALA beder kongen om længdemarkering og ikke om kald: E K x x x(+) spilles ud med kongen. | metoder.json (ALA-tabellen) |
+| `ms-kald` | Formål | At fortælle udspilleren, om udspilsfarven skal fortsættes. | (tilføjelse) |
+| `ms-kald` | Situation | Makker spiller ud, og du lægger til. · Tilspil på makkers udspil | (tilføjelse) |
+| `ms-kald` | Eksempel (højt = kald) | Makker spiller E ud; du har D 8 3 → 8 (kald) | (tilføjelse) |
+| `ms-kald` | Eksempel (højt = kald) | Makker spiller E ud; du har 8 6 3 → 3 (afvisning) | (tilføjelse) |
+| `ms-kald` | Eksempel (lavt = kald) | Makker spiller E ud; du har D 8 3 → 3 (kald) | (tilføjelse) |
+| `ms-kald` | Eksempel (lavt = kald) | Makker spiller E ud; du har 8 6 3 → 8 (afvisning) | (tilføjelse) |
+| `ms-kald` | Eksempel (romersk kald) | Mod farve; du har D 7 3 → 3 (mindste ulige: kald) | (tilføjelse) |
+| `ms-kald` | Eksempel (romersk kald) | Mod farve; du har 8 6 3 → 6 (lille lige: skift til den laveste af de to andre farver) | (tilføjelse) |
+| `ms-kald` | Eksempel (romersk kald) | Mod farve; du har 8 6 3 → 8 (høj lige: skift til den højeste af de to andre farver) | (tilføjelse) |
+| `ms-kald` | Makkers læsning | Udspilleren læser et romersk kald: Ulige kort = Kald til udspilsfarven; Lille lige = Skift til den laveste af de to andre farver; Høj lige = Skift til den højeste af de to andre farver. Trumf tæller ikke med. En lav lige er sædvanligvis et af de to laveste lige kort, udspilleren ikke kan se. | Kompendiet s. 25–26 |
+| `ms-kald` | Forrang og undtagelser | Romersk kald mod sans: Mod sans gælder lavt = kald. | metoder.json (romersk kald) |
+| `ms-kald` | Forrang og undtagelser | Romersk kald, når et kort stikkes: Romersk kald gælder kun, når hverken udspillets kort eller bordets kort stikkes. | metoder.json; Kompendiet s. 25 |
+| `ms-kald` | Forrang og undtagelser | Romersk kald uden lige kort: En høj ulige (9 og op) kan vise ønske om skift. | metoder.json; Kompendiet s. 25 |
+| `ms-kald` | Faldgrube | Tolkningen af et romersk kald må ikke erstatte sund fornuft: makkers kort kan være en singleton, og makker kan have kun lige eller kun ulige kort. | Kompendiet s. 25–26 |
+| `ms-kald` | Faldgrube | Jo længere udspilsfarven er, og jo flere kort bordet har i den, jo færre muligheder har makker for at vise det ønskede. | Kompendiet s. 25 |
+| `ms-laengde` | Formål | At fortælle makker, hvor mange kort du har i farven. | (tilføjelse) |
+| `ms-laengde` | Situation | Når kald ikke er det vigtige, fx efter et konge-udspil med ALA, eller når spilfører spiller en farve. · Længdemarkering | (tilføjelse) |
+| `ms-laengde` | Eksempel (højt-lavt = lige) | 8 3 → 8, derefter 3 (lige) | (tilføjelse) |
+| `ms-laengde` | Eksempel (højt-lavt = lige) | 8 6 3 → 3, derefter 6 (ulige) | (tilføjelse) |
+| `ms-laengde` | Eksempel (lavt-højt = lige) | 8 3 → 3, derefter 8 (lige) | (tilføjelse) |
+| `ms-laengde` | Eksempel (lavt-højt = lige) | 8 6 3 → 8, derefter 6 (ulige) | (tilføjelse) |
+| `ms-laengde` | Faldgrube | Det første kort kan kun aflæses ud fra de kort, makker ikke selv kan se. | (tilføjelse) |
+| `ms-afkast` | Formål | At vise makker, hvilken farve du vil have spillet. | (tilføjelse) |
+| `ms-afkast` | Situation | Første gang en modspiller ikke kan bekende. · Første afkast mod farve og sans | (tilføjelse) |
+| `ms-afkast` | Eksempel (som kald eller afvisning) | Med lavt = kald: ♦2 fra ♦K D 7 2 → Kald til ruder | (tilføjelse) |
+| `ms-afkast` | Eksempel (som kald eller afvisning) | Med lavt = kald: ♦9 fra ♦9 7 4 → Afvisning af ruder | (tilføjelse) |
+| `ms-afkast` | Eksempel (O/E) | Spilfører spiller ♥; afkast ♦7 → Ulige: kald til ruder | (tilføjelse) |
+| `ms-afkast` | Eksempel (O/E) | Spilfører spiller ♥; afkast ♦2 → Lille lige: styrke i klør | (tilføjelse) |
+| `ms-afkast` | Eksempel (O/E) | Spilfører spiller ♥; afkast ♦8 → Stor lige: styrke i spar | (tilføjelse) |
+| `ms-afkast` | Eksempel (Lavinthal) | Spilfører spiller ♥; afkast ♦2 → Lavt: beder om klør | (tilføjelse) |
+| `ms-afkast` | Eksempel (Lavinthal) | Spilfører spiller ♥; afkast ♦9 → Højt: beder om spar | (tilføjelse) |
+| `ms-afkast` | Forrang og undtagelser | O/E og Lavinthal: farverne: Klør er lavest. Afkastet viser en af de to farver, der hverken er afkastfarven eller den farve, der spilles. | Kompendiet s. 24 (klør er lavest); Lavinthal (tilføjelse) |
+| `ms-afkast` | Forrang og undtagelser | Som kald eller afvisning med romersk kald mod farve: Afkastet læses som O/E. | metoder.json (som kald eller afvisning) |
+| `ms-afkast` | Faldgrube | Aftalen gælder kun første gang, en modspiller ikke kan bekende. | Kompendiet s. 24 |
+| `ms-forsinket` | Formål | At fortælle makker, om modspillet skal være passivt eller aktivt, og om et kald var ægte. | (tilføjelse) |
+| `ms-forsinket` | Situation | I den første farve, spilfører spiller, efter udspillet. · Udspiller og tilspiller | (tilføjelse) |
+| `ms-forsinket` | Eksempel (intet forsinket kald) | 3, derefter 7 → Ingen særlig betydning | (tilføjelse) |
+| `ms-forsinket` | Eksempel (omvendt forsinket kald) | 3, derefter 7 (lav-høj) → Fortsæt i udspilsfarven, intet vigtigere at fortælle (passivt) | (tilføjelse) |
+| `ms-forsinket` | Eksempel (omvendt forsinket kald) | 7, derefter 3 (høj-lav) → Skift farve, spil aktivt | (tilføjelse) |
+| `ms-forsinket` | Forrang og undtagelser | Makker har brug for en markering: Der ses bort fra signalet, når det er tydeligt, at makker har brug for en længdemarkering. | Kompendiet s. 25 |
+| `ms-forsinket` | Faldgrube | Lægger begge modspillere lav-høj, er modspillet passivt; lægger begge høj-lav, skal der angribes. | Kompendiet s. 26 |
