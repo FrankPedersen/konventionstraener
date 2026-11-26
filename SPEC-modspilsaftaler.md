@@ -256,3 +256,13 @@ Frank sagde ja til begge forslag fra session 3 (Claude Code, Sonnet 5.5, medium 
 4. **Skærmbillederne** `indstilling-` og `quiz-` ved 390 og 320 px er taget igen; de viser Emne-listen inden for siden. De øvrige 14 billeder er genskabt med samme indhold som før.
 5. **Tests:** `tjek_modspilsaftaler.py` melder "Alle punkter er i orden". Scriptets tjek af teksten "Din aftale" på kortsiden melder fejlagtigt FEJL (fejl i selve scriptet); romersk kald øverst med "Din aftale" er set på skærmbillederne.
 6. **Tokenforbrug:** de fire tal kan ikke læses inde fra sessionen; Frank tager `/usage`.
+
+### Godkendelse og fletning (26. nov. 2026)
+
+Frank godkendte "Tekster til gennemgang" og fletningen 26. nov.: "Er alt grønt i punkt 1, er B Modspilsaftaler godkendt."
+
+**Punkt 1, tjekket på `d7221ed` (Claude Code, Sonnet 5.5):** alt er grønt.
+- `tjek_viden_320.mjs`: alt i orden, 965 tjek; `tjek_crowhurst_390.mjs`: alt i orden, 712 tjek. De andre kort er pixel for pixel som før (kun støj under loftet i NB-linjerne).
+- `tjek_sidefod.mjs`: alt i orden; `tjek_modspilsaftaler.py`: alle punkter i orden.
+- `ms-kald` på dansk og engelsk ved 1280, 390 og 320 px (skærmbillederne `ms-kald-<sprog>-<bredde>.png` er taget igen): ingen vandret scroll, "Din aftale" og romersk kald øverst, og alle seks tabeller på kortet, også dem under "Andre varianter" og "Forrang og undtagelser", ender inden for siden (højre kant højst 354 px ved 390 og 284 px ved 320) uden klippede eller for brede elementer; rækkenavnene brækker.
+- Kortene ligger i en shadow root; det forklarer, at skærmbilledscriptets tidligere tekst-tjek af "Din aftale" fejlede. Scriptet (uden for repoet) er rettet.
