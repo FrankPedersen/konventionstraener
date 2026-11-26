@@ -33,12 +33,21 @@ const TAG = 'v-foer-viden-320';
 // data/kort/multi-2ru.json og data/kort/muiderberg.json) hentes fra commit H = bc6c85a på grenen muiderberg, den sidste
 // commit, der ændrer dem (SPEC-muiderberg.md, Afklaret 10; som SPEC-multi-2ru.md, Franks svar 2 (a) og 3), så siden før
 // har samme sidefod, knapperne "Multi 2♦" og "Muiderberg (Bikini) 2♥/2♠" og 51 kort, og kun utilsigtede ændringer tæller.
+// Kortlisten med de 7 kort ms-* (SPEC-modspilsaftaler.md) hentes fra commit H = a1b7cb4 på grenen modspilsaftaler,
+// den sidste commit i session 1, der ændrer data/kort/index.json og kortene; de nye kort tjekkes kun for vandret scroll.
 const NYERE = {
   'viden/2-over-1-makker2.html': 'bca7e0c446f14ebf86724675b336c9e7306f8303',
   'assets/footer.js': 'bc6c85afa41378968f47932f8f5e4a23d48eefb6',
-  'data/kort/index.json': 'bc6c85afa41378968f47932f8f5e4a23d48eefb6',
+  'data/kort/index.json': 'a1b7cb4c69affefdfb4080344c4de72ad1dd45de',
   'data/kort/multi-2ru.json': 'bc6c85afa41378968f47932f8f5e4a23d48eefb6',
   'data/kort/muiderberg.json': 'bc6c85afa41378968f47932f8f5e4a23d48eefb6',
+  'data/kort/ms-udspil-sans.json': 'a1b7cb4c69affefdfb4080344c4de72ad1dd45de',
+  'data/kort/ms-udspil-farve.json': 'a1b7cb4c69affefdfb4080344c4de72ad1dd45de',
+  'data/kort/ms-honnoerudspil.json': 'a1b7cb4c69affefdfb4080344c4de72ad1dd45de',
+  'data/kort/ms-kald.json': 'a1b7cb4c69affefdfb4080344c4de72ad1dd45de',
+  'data/kort/ms-laengde.json': 'a1b7cb4c69affefdfb4080344c4de72ad1dd45de',
+  'data/kort/ms-afkast.json': 'a1b7cb4c69affefdfb4080344c4de72ad1dd45de',
+  'data/kort/ms-forsinket.json': 'a1b7cb4c69affefdfb4080344c4de72ad1dd45de',
 };
 const INGEN_PIXEL = process.argv.includes('ingen');
 const LIVE = process.argv.includes('--live');
@@ -52,7 +61,7 @@ const SMALLE = [320, 340, 360, 375];
 const ÆNDRET = new Set(['390:crowhurst:fuld']);
 // Kort, der er kommet til efter tagget, findes ikke dér og tjekkes kun for vandret scroll: ved 320 og 375 px som de andre
 // kort og ved 390 og 1280 px i stedet for pixelsammenligningen (SPEC-muiderberg.md, Afklaret 10; som SPEC-multi-2ru.md).
-const NYE_KORT = ['muiderberg'];
+const NYE_KORT = ['muiderberg', 'ms-udspil-sans', 'ms-udspil-farve', 'ms-honnoerudspil', 'ms-kald', 'ms-laengde', 'ms-afkast', 'ms-forsinket'];
 const browser = [
   process.env.CHROME,
   'C:/Program Files/Google/Chrome/Application/chrome.exe',
@@ -354,7 +363,7 @@ try {
       const s = await fane(bredde);
       await s.gå(`${nu.url}${KORT}?lang=${lang}`);
       const ider = await s.kortKlar();
-      tjek(ider.length === 51, `Konventionskortet ved ${bredde} px på ${lang}: alle kort er med`, String(ider.length));
+      tjek(ider.length === 58, `Konventionskortet ved ${bredde} px på ${lang}: alle kort er med`, String(ider.length));
       for (const id of ider) {
         for (const visning of ['fuld', 'kompakt', 'skabelon']) {
           if (visning === 'skabelon' && id !== ider[0]) continue;
@@ -406,7 +415,7 @@ try {
       await s.gå(`${før.url}${KORT}`);
       const ider = await s.kortKlar();
       await s.luk();
-      tjek(ider.length === 51, `Konventionskortet før ved ${bredde} px: alle 51 kort er med (se NYERE)`, String(ider.length));
+      tjek(ider.length === 58, `Konventionskortet før ved ${bredde} px: alle 58 kort er med (se NYERE)`, String(ider.length));
       for (const id of ider) {  // kortene før; de nye kort sammenlignes ikke
         if (NYE_KORT.includes(id)) continue;
         for (const visning of ['fuld', 'kompakt']) {
