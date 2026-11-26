@@ -1,3 +1,5 @@
+Godkendt af Frank og udgivet 26. november 2026 (`f0a717f`); grenen er slettet.
+
 # SPEC-modspilsaftaler
 
 26. november 2026 · Rådgiverens spec, **godkendt af Frank 26. nov.** Opgave B i `PLAN-aabne-opgaver.md`. Bygges i Konventionstræner på grenen `modspilsaftaler`; `main` før tagges `v-foer-modspilsaftaler`.
@@ -266,3 +268,5 @@ Frank godkendte "Tekster til gennemgang" og fletningen 26. nov.: "Er alt grønt 
 - `tjek_sidefod.mjs`: alt i orden; `tjek_modspilsaftaler.py`: alle punkter i orden.
 - `ms-kald` på dansk og engelsk ved 1280, 390 og 320 px (skærmbillederne `ms-kald-<sprog>-<bredde>.png` er taget igen): ingen vandret scroll, "Din aftale" og romersk kald øverst, og alle seks tabeller på kortet, også dem under "Andre varianter" og "Forrang og undtagelser", ender inden for siden (højre kant højst 354 px ved 390 og 284 px ved 320) uden klippede eller for brede elementer; rækkenavnene brækker.
 - Kortene ligger i en shadow root; det forklarer, at skærmbilledscriptets tidligere tekst-tjek af "Din aftale" fejlede. Scriptet (uden for repoet) er rettet.
+
+**Udgivelsen (26. nov. 2026):** `modspilsaftaler` er flettet med `--no-ff` som `f0a717f` og pushet sammen med tagget `v-foer-modspilsaftaler`. GitHub Pages har bygget `f0a717f` (grøn). Live-tjek mod www.kontraktbridge.dk/konventionstraener/: `node tools/tjek_sidefod.mjs --live` er "Alt i orden", og `node tools/tjek_viden_320.mjs --live` er "Alt i orden" (738 tjek, 227 pixeltjek sprunget over). `modspilsaftaler.html` (profilen Egen, quizspørgsmål med forklaring) og `viden/konventionskort.html#ms-kald` (Din aftale, Andre varianter og Forrang) er åbnet på sitet på dansk og engelsk ved 1280, 390 og 320 px: ingen vandret scroll, og alle seks tabeller på kortet ender inden for siden.
